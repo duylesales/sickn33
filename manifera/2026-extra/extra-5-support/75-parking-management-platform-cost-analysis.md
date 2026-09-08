@@ -86,6 +86,10 @@ Parkeringsplattform Bergen proceeded with a realistically scoped platform build 
 
 Before committing to a parking management platform budget, insist on a cost estimate modeled against your realistic projected facility count and actual target city geography, not single-facility pilot testing conditions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic parking management platform cost scoping exercise.
 
+## Where This Goes Wrong: Double-Selling a Space Between the App and the Gate
+
+The specific failure mode that most reliably damages a parking platform's credibility is a space sold twice — once through the mobile app's reservation flow and once through a walk-up driver at the physical gate — because the app's availability state and the gate hardware's occupancy signal are two separate sources of truth that don't reconcile in real time. If a reservation confirms a space as booked in the app's database while the gate hardware, driven by its own local sensor loop, independently allows a walk-up driver into the same space because its own occupancy count hasn't yet reflected the reservation, both drivers arrive expecting the same spot. This is a data-consistency problem, not a UI problem: the fix requires the gate hardware's local occupancy logic to check against the same authoritative reservation state the app writes to, with the two systems reconciled through a shared, low-latency state store rather than each maintaining an independent view that only syncs periodically. A facility with per-facility hardware vendor diversity makes this considerably harder, since each gate vendor's integration needs its own real-time write path into that shared state rather than a nightly batch sync. Platforms should specifically load-test this exact race — a reservation confirmed within seconds of a walk-up gate entry at the same facility — since average-load testing across a whole facility portfolio essentially never generates this precise timing collision, meaning it only ever surfaces after a real driver files a complaint.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial parking platform estimate) Why do parking platform cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ Genuine multi-city operation requires supporting per-city grace periods, exempti
 
 Availability accuracy directly depends on properly synchronized occupancy data across distributed, sometimes unreliable facility-side hardware, requiring genuinely distributed infrastructure with real ongoing operational complexity.
 
+### (Scenario: facility operator worried about a reservation conflicting with a walk-up driver) How do you prevent a mobile app reservation and a walk-up driver from both claiming the same space?
+
+The gate hardware's occupancy logic needs a real-time write path into the same authoritative reservation state the app uses, reconciled through a shared low-latency store rather than periodic batch sync, so a confirmed reservation is visible to the gate before a walk-up entry can claim the same space.
+
+### (Scenario: parking operator deciding between an established parking-guidance vendor and a custom platform) When does a custom parking management platform outperform an established parking-guidance system vendor?
+
+Once an operator's portfolio spans multiple cities with genuinely divergent grace-period and fine-structure ordinances, or gate hardware from more than two or three vendors, established parking-guidance vendors typically charge per-facility integration fees that make a custom, vendor-agnostic integration layer more cost-effective.
+
+### (Scenario: CTO estimating timeline before committing to a rollout date) How long does building a production-ready multi-facility parking platform typically take?
+
+A realistic timeline runs 6-9 months for an MVP covering the availability engine and payment integration for a single facility and hardware vendor, with multi-vendor hardware integration and a multi-city compliance-rules engine typically adding another 3-5 months before a multi-facility rollout is genuinely ready.
+
+### (Scenario: engineering lead sizing the integration team before committing budget) How many engineers does a production-ready multi-vendor hardware integration layer typically require?
+
+Roughly 3-5 dedicated engineers per two to three distinct gate-hardware or LPR vendor integrations, since each vendor's API, authentication scheme, and event-reliability characteristics require its own adapter and fallback logic rather than a shared abstraction.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Availability accuracy directly depends on properly synchronized occupancy data a
     { "@type": "Question", "name": "(Scenario: engineering lead scoping the availability engine) Why is the availability engine harder to scale correctly than it appears in single-facility testing?", "acceptedAnswer": { "@type": "Answer", "text": "Availability accuracy depends on reconciling occupancy signals across many facilities, requiring different architecture at scale." } },
     { "@type": "Question", "name": "(Scenario: product lead scoping hardware integration) Why does payment and enforcement integration require more than a one-time integration task?", "acceptedAnswer": { "@type": "Answer", "text": "Real facility portfolios run diverse hardware from multiple vendors, requiring robust integration and reconciliation handling." } },
     { "@type": "Question", "name": "(Scenario: CTO planning multi-city compliance capability) Why does a compliance-rules engine deserve substantial, ongoing engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Genuine multi-city operation requires configurable rules for grace periods and fines, more sophisticated than hardcoded branches." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for multi-site reach) Why does serving multiple facilities and cities add real infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Availability accuracy depends on synchronized occupancy data across distributed hardware, requiring real distributed infrastructure." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for multi-site reach) Why does serving multiple facilities and cities add real infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Availability accuracy depends on synchronized occupancy data across distributed hardware, requiring real distributed infrastructure." } },
+    { "@type": "Question", "name": "(Scenario: facility operator worried about a reservation conflicting with a walk-up driver) How do you prevent a mobile app reservation and a walk-up driver from both claiming the same space?", "acceptedAnswer": { "@type": "Answer", "text": "The gate hardware needs a real-time write path into the same authoritative reservation state the app uses, reconciled through a shared low-latency store rather than batch sync." } },
+    { "@type": "Question", "name": "(Scenario: parking operator deciding between an established parking-guidance vendor and a custom platform) When does a custom parking management platform outperform an established parking-guidance system vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Past multiple cities with divergent ordinances or gate hardware from more than two or three vendors, per-facility vendor integration fees make a custom vendor-agnostic layer more cost-effective." } },
+    { "@type": "Question", "name": "(Scenario: CTO estimating timeline before committing to a rollout date) How long does building a production-ready multi-facility parking platform typically take?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 6-9 months for a single-facility MVP, plus another 3-5 months for multi-vendor hardware integration and a multi-city compliance engine." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead sizing the integration team before committing budget) How many engineers does a production-ready multi-vendor hardware integration layer typically require?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 3-5 dedicated engineers per two to three distinct hardware vendor integrations, since each vendor needs its own adapter and fallback logic." } }
   ]
 }
 </script>

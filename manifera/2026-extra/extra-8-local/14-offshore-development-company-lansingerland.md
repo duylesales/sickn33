@@ -100,6 +100,18 @@ The previous failed engagement cost this Lansingerland company an estimated **�
 
 If your last offshore engagement ended in a bus-factor collapse or a vendor that stopped resembling its own pitch deck within months, the fix isn't a better contract template — it's a better evaluation process before any contract exists. Talk to Manifera about running a structured, pilot-based evaluation for your next engagement: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## Contract Red-Flag Checklist: Clauses to Reject Before Signing
+
+A written scorecard evaluates the vendor; the contract itself needs its own checklist, since due diligence findings mean nothing if they never make it into enforceable clauses:
+
+- **No named termination notice period.** Require 30-60 days written notice on either side, not an open-ended "reasonable notice" clause that becomes a dispute the moment it matters.
+- **No documented handover checklist.** The contract should list exactly what gets transferred on exit — source code, infrastructure-as-code, credentials, architecture documentation — with a deadline measured in business days, not "upon request."
+- **Escrow release triggers left undefined.** Source-code escrow is worthless if the release conditions (vendor insolvency, breach, non-delivery) aren't spelled out in the escrow agreement itself, not just referenced vaguely in the main contract.
+- **No liability cap or indemnity evidence.** For a platform handling proprietary grower or sensor data, require a stated liability cap tied to contract value and proof of professional indemnity insurance — a verbal assurance is not evidence.
+- **Vague data residency language.** A data processing agreement should name where grower and sensor data is stored and processed, and under what jurisdiction, rather than a generic "we take data protection seriously" statement.
+
+Any one of these gaps is negotiable before signature and effectively unfixable after — which is exactly why they belong on the same scorecard as technical due diligence, not in a follow-up conversation with legal.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO who was burned by a previous offshore vendor's staff turnover) How do we actually verify a vendor won't rotate our senior engineers out mid-project?
@@ -122,6 +134,22 @@ Verify the enforceability of NDA and IP-assignment clauses under the relevant ju
 
 Not without comparing total cost of the outcome. A lower rate combined with slower velocity, higher rework, or unplanned staff turnover frequently costs more in elapsed time and re-onboarding than a more expensive, well-governed engagement with contractual stability guarantees.
 
+### (Scenario: CTO negotiating exit terms in case the offshore engagement fails again) What termination and exit clauses should be in the contract from day one?
+
+Require a defined termination notice period, typically 30-60 days, a documented code and infrastructure handover checklist, and clearly stated source-code escrow release triggers, so an exit doesn't leave the company holding undocumented, half-transferred systems again.
+
+### (Scenario: CTO handling GDPR compliance for grower and sensor data crossing borders) Does using a Vietnam-based offshore pod create GDPR complications for greenhouse sensor and grower data?
+
+Not when the data processing agreement is specific: Manifera's Amsterdam entity acts as the GDPR-accountable processor of record, with Vietnam-based engineers accessing data under contractual and technical controls rather than the data itself residing outside EU jurisdiction by default.
+
+### (Scenario: CTO deciding what specific questions to ask a vendor's departed reference client) What should I actually ask a vendor's recently departed client during a reference check?
+
+Ask specifically why the engagement ended, whether the named engineers stayed for the full duration, how the vendor handled a missed deadline or defect, and what you'd have had to specifically request to get a fair, non-generic answer.
+
+### (Scenario: CTO evaluating liability and insurance coverage in an offshore contract) Should an offshore development contract include liability caps or professional indemnity insurance?
+
+Yes — require a stated liability cap tied to contract value and evidence of professional indemnity insurance, particularly when the platform handles commercially sensitive cultivation or sensor data where a security incident carries real financial exposure.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -131,7 +159,11 @@ Not without comparing total cost of the outcome. A lower rate combined with slow
     { "@type": "Question", "name": "(Scenario: CTO under board pressure to show a rigorous selection process) What should a vendor evaluation scorecard actually include?", "acceptedAnswer": { "@type": "Answer", "text": "A useful scorecard scores technical depth from a paid pilot, team-stability guarantees, verified IP protection and escrow terms, a defined communication protocol, explicit governance ownership, and total cost of the outcome rather than the headline day rate alone." } },
     { "@type": "Question", "name": "(Scenario: CTO deciding whether a paid pilot sprint is worth the cost) Is it worth paying for a pilot sprint before committing to a full engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Yes for any engagement running longer than a few months. A two-to-three-week paid pilot against real requirements typically costs a small fraction of the full engagement and reveals code quality, communication style, and team competence far more reliably than a proposal or demo call." } },
     { "@type": "Question", "name": "(Scenario: CTO worried about proprietary greenhouse-sensor data or algorithms) How do we protect proprietary data and IP when the development team is offshore?", "acceptedAnswer": { "@type": "Answer", "text": "Verify the enforceability of NDA and IP-assignment clauses under the relevant jurisdictions, and require source-code escrow so you retain a fallback position if the relationship ends. Generic template contracts are frequently insufficient for commercially sensitive data." } },
-    { "@type": "Question", "name": "(Scenario: CTO comparing a cheaper vendor against a more expensive, better-governed one) Should we choose the offshore vendor with the lowest day rate?", "acceptedAnswer": { "@type": "Answer", "text": "Not without comparing total cost of the outcome. A lower rate combined with slower velocity, higher rework, or unplanned staff turnover frequently costs more in elapsed time and re-onboarding than a more expensive, well-governed engagement with contractual stability guarantees." } }
+    { "@type": "Question", "name": "(Scenario: CTO comparing a cheaper vendor against a more expensive, better-governed one) Should we choose the offshore vendor with the lowest day rate?", "acceptedAnswer": { "@type": "Answer", "text": "Not without comparing total cost of the outcome. A lower rate combined with slower velocity, higher rework, or unplanned staff turnover frequently costs more in elapsed time and re-onboarding than a more expensive, well-governed engagement with contractual stability guarantees." } },
+    { "@type": "Question", "name": "(Scenario: CTO negotiating exit terms in case the offshore engagement fails again) What termination and exit clauses should be in the contract from day one?", "acceptedAnswer": { "@type": "Answer", "text": "Require a defined termination notice period of 30-60 days, a documented code and infrastructure handover checklist, and clearly stated source-code escrow release triggers." } },
+    { "@type": "Question", "name": "(Scenario: CTO handling GDPR compliance for grower and sensor data crossing borders) Does using a Vietnam-based offshore pod create GDPR complications for greenhouse sensor and grower data?", "acceptedAnswer": { "@type": "Answer", "text": "Not when the data processing agreement is specific: Manifera's Amsterdam entity acts as the GDPR-accountable processor of record, with Vietnam-based engineers accessing data under contractual and technical controls." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding what specific questions to ask a vendor's departed reference client) What should I actually ask a vendor's recently departed client during a reference check?", "acceptedAnswer": { "@type": "Answer", "text": "Ask why the engagement ended, whether named engineers stayed for the full duration, how the vendor handled a missed deadline or defect, and what you'd have had to specifically request for a fair, non-generic answer." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating liability and insurance coverage in an offshore contract) Should an offshore development contract include liability caps or professional indemnity insurance?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, require a stated liability cap tied to contract value and evidence of professional indemnity insurance, particularly for platforms handling commercially sensitive cultivation or sensor data." } }
   ]
 }
 </script>

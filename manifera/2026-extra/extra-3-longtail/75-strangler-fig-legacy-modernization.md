@@ -83,6 +83,12 @@ An underappreciated benefit of the incremental approach is that it also gives an
 
 Before committing to a full rewrite of a legacy system, identify its highest-friction module and evaluate whether an incremental, strangler fig approach could deliver real value sooner with meaningfully less risk. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about modernizing your legacy system incrementally.
 
+## Technical Deep-Dive: Three Ways to Implement the Routing Layer
+
+The routing layer can be built at three different technical levels, each with a real tradeoff worth naming specifically for a team evaluating this as a custom software solution. An API gateway or reverse proxy rule (nginx, an API gateway service) routes requests to old or new systems based on URL path or header, which is the simplest to implement and easiest to roll back but works best when legacy and new modules are cleanly separated by endpoint already. A feature-flag layer embedded in application code routes individual requests or specific users to the new module based on a runtime flag, which allows finer-grained rollout — a percentage of traffic, a specific customer segment — at the cost of adding conditional logic directly into the codebase that eventually needs cleanup once migration completes. An event-based or message-queue approach, where both old and new systems consume from the same event stream during a transition period, suits systems where data consistency between old and new during the migration window matters more than request-level routing simplicity, at the cost of being the most complex of the three to build correctly.
+
+Most bespoke software development services default to the API gateway approach for a first module migration specifically because it's fastest to build and simplest to roll back if the new module misbehaves under real production load — exactly the lower-risk profile this article recommends for an organization's first strangler fig migration. Reserve the feature-flag or event-based approaches for later migrations, once the team has direct, banked evidence that the pattern works for this specific system before taking on a more complex routing implementation.
+
 ## Frequently Asked Questions
 
 ### (Scenario: IT manager weighing a full rewrite against incremental modernization) When does the strangler fig pattern make more sense than a full system rewrite?
@@ -105,6 +111,22 @@ It works best where functionality can be reasonably isolated into distinct modul
 
 It varies by system complexity, but the total calendar time can be comparable to or longer than a rewrite — the key difference isn't total time, it's that real value gets delivered incrementally throughout, rather than only at a single distant finish line.
 
+### (Scenario: CTO deciding which routing implementation to use for the first migration) Should our first strangler fig migration use an API gateway, feature flags, or an event-based routing layer?
+
+Start with an API gateway or reverse proxy rule for a first migration — it's the fastest to build and easiest to roll back, and is the right choice while your team is still building confidence in the pattern on this specific system.
+
+### (Scenario: engineering lead worried about technical debt from feature flags) Does a feature-flag-based routing layer leave permanent technical debt in a custom software solution once migration is complete?
+
+It can, if the conditional routing logic isn't removed after the corresponding legacy module is retired — schedule flag cleanup as an explicit step in each migration, not an optional afterthought.
+
+### (Scenario: IT manager whose system has strict data consistency requirements) Which routing approach handles data consistency best during a legacy migration?
+
+An event-based or message-queue approach, where old and new systems consume from the same event stream during the transition, best preserves data consistency, at the cost of being the most complex of the three routing patterns to implement correctly.
+
+### (Scenario: procurement lead vetting bespoke software development services for a legacy project) What should I ask a bespoke software development services vendor about their routing layer plan before a strangler fig project starts?
+
+Ask them to name which of the three routing approaches they're proposing and why, and to describe the specific rollback plan if the new module misbehaves under real production traffic — a vendor without a specific answer hasn't planned the routing layer seriously.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -114,7 +136,11 @@ It varies by system complexity, but the total calendar time can be comparable to
     { "@type": "Question", "name": "(Scenario: CTO trying to choose which module to migrate first) How do I decide which part of a legacy system to modernize first?", "acceptedAnswer": { "@type": "Answer", "text": "Start with the highest-friction module with a relatively clean, isolatable boundary from the rest of the system." } },
     { "@type": "Question", "name": "(Scenario: IT director worried about running two systems at once) Doesn't running the old and new systems simultaneously create its own risk?", "acceptedAnswer": { "@type": "Answer", "text": "Some, but contained to each module's migration period rather than the entire system for the whole effort." } },
     { "@type": "Question", "name": "(Scenario: founder wondering if this pattern always applies) Does the strangler fig pattern work for every type of legacy system?", "acceptedAnswer": { "@type": "Answer", "text": "It works best where functionality can be isolated into distinct modules with definable boundaries." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to estimate the full modernization timeline) How long does a full strangler fig modernization typically take compared to a rewrite?", "acceptedAnswer": { "@type": "Answer", "text": "Total calendar time can be comparable, but real value is delivered incrementally throughout rather than only at one distant finish line." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to estimate the full modernization timeline) How long does a full strangler fig modernization typically take compared to a rewrite?", "acceptedAnswer": { "@type": "Answer", "text": "Total calendar time can be comparable, but real value is delivered incrementally throughout rather than only at one distant finish line." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding which routing implementation to use for the first migration) Should our first strangler fig migration use an API gateway, feature flags, or an event-based routing layer?", "acceptedAnswer": { "@type": "Answer", "text": "Start with an API gateway or reverse proxy rule — it's fastest to build and easiest to roll back while confidence in the pattern is still being established." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead worried about technical debt from feature flags) Does a feature-flag-based routing layer leave permanent technical debt in a custom software solution once migration is complete?", "acceptedAnswer": { "@type": "Answer", "text": "It can, if the conditional routing logic isn't removed after the legacy module is retired — schedule flag cleanup as an explicit step in each migration." } },
+    { "@type": "Question", "name": "(Scenario: IT manager whose system has strict data consistency requirements) Which routing approach handles data consistency best during a legacy migration?", "acceptedAnswer": { "@type": "Answer", "text": "An event-based or message-queue approach, where old and new systems consume the same event stream, best preserves consistency but is the most complex to implement." } },
+    { "@type": "Question", "name": "(Scenario: procurement lead vetting bespoke software development services for a legacy project) What should I ask a bespoke software development services vendor about their routing layer plan before a strangler fig project starts?", "acceptedAnswer": { "@type": "Answer", "text": "Ask which of the three routing approaches they're proposing and why, and for the specific rollback plan if the new module misbehaves under production traffic." } }
   ]
 }
 </script>

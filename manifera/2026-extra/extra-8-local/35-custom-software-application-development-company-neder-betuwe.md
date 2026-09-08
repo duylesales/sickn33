@@ -100,6 +100,17 @@ The pricing-to-inventory incident cost this Neder-Betuwe company an estimated **
 
 If your codebase has reached the point where every change requires archaeology before anyone can estimate it, the answer probably isn't a full rewrite — it's a structured rescue that fixes the actual coupling causing your incidents. Talk to Manifera about a legacy code assessment: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## Technical Deep-Dive: Detecting Dangerous Coupling Before It Breaks Production
+
+Manual code review rarely catches the coupling that caused the pricing-to-inventory incident — it takes structural analysis:
+
+- **Afferent/efferent coupling counts.** A static dependency-graph pass computes, per module, how many other modules depend on it (afferent) and how many it depends on (efferent). A module scoring high on both is the exact profile that caused this incident: heavily relied upon and itself entangled with everything around it.
+- **Instability metric (I = Ce / (Ca + Ce)).** Modules near 0.5 are the most dangerous — neither stable enough to be safely depended upon nor independent enough to change without ripple effects.
+- **Shared mutable state scans.** Static analysis tools flag global variables and shared objects written from more than one module, which is the specific pattern that let a pricing change silently corrupt inventory state.
+- **Change-frequency overlay.** Cross-referencing git commit history against the dependency graph surfaces which high-coupling modules are also frequently modified — the actual highest-risk intersection, not the messiest-looking code.
+
+Running this analysis before writing a single characterization test typically takes three to five days on a decade-old codebase and produces a prioritized extraction order backed by numbers, not intuition about which files "feel" risky.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO facing board pressure to rewrite a legacy system from scratch) Should we do a full rewrite of our legacy order management system?
@@ -122,6 +133,22 @@ Prioritize by business risk and change frequency, not by which code looks the me
 
 Treat documentation as a first-class deliverable of any rescue or refactoring project, recording each module's boundaries, dependencies, and business logic as it's extracted, so future incident response doesn't depend on whoever happens to still be employed.
 
+### (Scenario: CTO asking how technical debt and dangerous coupling get identified with tools rather than manual review) What tools or metrics identify dangerous coupling in a decade-old codebase before it causes an incident?
+
+Static dependency-graph analysis measuring afferent and efferent coupling per module flags high fan-in/fan-out modules as elevated risk; a module both heavily depended upon and itself entangled with others is exactly the profile that produced the original pricing-to-inventory incident.
+
+### (Scenario: CTO wanting to know when a strangler fig migration is actually finished) How do we know when a strangler fig migration is complete and the legacy system can be retired?
+
+The facade should route 100% of traffic to the modularized replacement with zero requests reaching the legacy code path for a sustained period, typically four to six weeks, before the legacy code is deleted rather than merely deprioritized.
+
+### (Scenario: CTO wanting a rollback plan if a newly extracted module misbehaves in production) What happens if a newly extracted module fails in production after cutover?
+
+The strangler-fig facade's routing is typically feature-flag controlled, so traffic can be reverted to the legacy code path within minutes without a full redeploy, while the failure is diagnosed against the characterization test suite that should have caught it pre-release.
+
+### (Scenario: CTO deciding how much test coverage characterization tests need before refactoring begins) What level of test coverage do characterization tests need before refactoring is considered safe?
+
+Coverage should target the module's actual executed code paths under representative production traffic, not an arbitrary line-coverage percentage, since untested rare-but-critical paths are exactly where undocumented behavior hides.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -131,7 +158,11 @@ Treat documentation as a first-class deliverable of any rescue or refactoring pr
     { "@type": "Question", "name": "(Scenario: CTO whose system has caused a production incident from an undocumented coupling) How do we prevent the same kind of coupling failure from happening again after a legacy rescue?", "acceptedAnswer": { "@type": "Answer", "text": "Extracted modules need enforced interface boundaries with explicit inputs and outputs, so shared mutable state can no longer silently cross module boundaries the way it did when the original incident occurred." } },
     { "@type": "Question", "name": "(Scenario: CTO worried about refactoring code nobody fully understands) How do you safely refactor code when nobody on the team fully understands what it does anymore?", "acceptedAnswer": { "@type": "Answer", "text": "Characterization tests are written first to capture the system's actual current behavior, including undocumented edge cases, so any subsequent refactor can be verified against that behavior rather than assumptions." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to decide which parts of a tangled codebase to fix first) How do we decide which part of a messy codebase to fix first?", "acceptedAnswer": { "@type": "Answer", "text": "Prioritize by business risk and change frequency, not by which code looks the messiest. A module that's ugly but stable and rarely touched is a lower priority than one that changes often and has already caused an incident." } },
-    { "@type": "Question", "name": "(Scenario: CTO concerned about losing institutional knowledge as developers leave) How do we stop losing institutional knowledge every time a developer who built part of this system leaves?", "acceptedAnswer": { "@type": "Answer", "text": "Treat documentation as a first-class deliverable of any rescue or refactoring project, recording each module's boundaries, dependencies, and business logic as it's extracted." } }
+    { "@type": "Question", "name": "(Scenario: CTO concerned about losing institutional knowledge as developers leave) How do we stop losing institutional knowledge every time a developer who built part of this system leaves?", "acceptedAnswer": { "@type": "Answer", "text": "Treat documentation as a first-class deliverable of any rescue or refactoring project, recording each module's boundaries, dependencies, and business logic as it's extracted." } },
+    { "@type": "Question", "name": "(Scenario: CTO asking how technical debt and dangerous coupling get identified with tools rather than manual review) What tools or metrics identify dangerous coupling in a decade-old codebase before it causes an incident?", "acceptedAnswer": { "@type": "Answer", "text": "Static dependency-graph analysis measuring afferent and efferent coupling per module flags high fan-in/fan-out modules as elevated risk, the same profile that produced the original pricing-to-inventory incident." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting to know when a strangler fig migration is actually finished) How do we know when a strangler fig migration is complete and the legacy system can be retired?", "acceptedAnswer": { "@type": "Answer", "text": "The facade should route 100% of traffic to the modularized replacement with zero requests reaching the legacy code path for four to six sustained weeks before the legacy code is deleted." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting a rollback plan if a newly extracted module misbehaves in production) What happens if a newly extracted module fails in production after cutover?", "acceptedAnswer": { "@type": "Answer", "text": "The strangler-fig facade's routing is typically feature-flag controlled, so traffic can be reverted to the legacy code path within minutes without a full redeploy." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding how much test coverage characterization tests need before refactoring begins) What level of test coverage do characterization tests need before refactoring is considered safe?", "acceptedAnswer": { "@type": "Answer", "text": "Coverage should target the module's actual executed code paths under representative production traffic, not an arbitrary line-coverage percentage." } }
   ]
 }
 </script>

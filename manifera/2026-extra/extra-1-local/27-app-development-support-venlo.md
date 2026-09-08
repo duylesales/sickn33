@@ -68,6 +68,10 @@ An unstructured support arrangement looks cheap on a monthly invoice and expensi
 
 The real comparison isn't freelancer day-rate versus support contract monthly fee. It's an unbounded, unpredictable downtime risk versus a capped, contractually enforced one. If your logistics operation's app support currently depends on one person answering their phone, talk to us on our [contact page](https://www.manifera.com/contact-us/) before the next OS update finds the gap for you.
 
+## SLA Tiers That Actually Match Warehouse Operational Risk
+
+A support contract worth signing defines at least three severity tiers with different response commitments, not one blanket "we'll get to it" promise. Tier 1 (production-down, active warehouse floor impact — the scanning outage scenario) should carry a response commitment of 15-30 minutes and an on-call engineer actively working the issue within one hour, 24/7 during operational hours. Tier 2 (degraded functionality, workaround available) should carry a same-business-day response and 48-hour resolution target. Tier 3 (cosmetic or non-blocking issues) can reasonably sit in a weekly batch-fix cycle. Monthly retainer cost for this level of coverage on a single warehouse-scanning app typically runs €2,500-€5,000 depending on device fleet size and on-call coverage window (24/5 vs. 24/7), a figure that should be benchmarked against crash-free session rate: a properly monitored app should maintain above 99.5% crash-free sessions measured via Crashlytics or Sentry, and any month that drops below 99% should trigger a mandatory root-cause review as a contractual deliverable, not an optional courtesy. For a Trade Port Noord operation running near-continuous inbound/outbound cycles, tier definitions tied to actual floor impact — not generic severity labels — are what separate a support contract that protects revenue from one that just protects the vendor's SLA metrics on paper.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO evaluating support contract cost vs freelancer rates) Isn't a support contract more expensive than paying a freelancer hourly?
@@ -90,6 +94,22 @@ Yes, and for a logistics operation this is one of the highest-value parts of the
 
 Every OS update is tested against a device compatibility matrix mirroring your actual hardware fleet in a staging environment first, with a staged rollout to production so any issue is caught on a small subset of devices before it reaches the whole operation.
 
+### (Scenario: CFO benchmarking app health against an industry standard) What crash-free session rate should a properly supported warehouse app maintain?
+
+Above 99.5%, measured through Crashlytics or Sentry, with any month that drops below 99% triggering a mandatory root-cause review as a contractual deliverable rather than an optional courtesy.
+
+### (Scenario: CFO budgeting a monthly support retainer) How much should a structured app support contract cost per month for a single warehouse-scanning app?
+
+Expect roughly €2,500-€5,000 per month depending on device fleet size and whether coverage is 24/5 or full 24/7, a fraction of what a single major downtime incident typically costs.
+
+### (Scenario: CFO defining severity tiers before signing an SLA) How many severity tiers should our app support SLA define, and what separates them?
+
+At minimum three: production-down floor-impact issues needing a 15-30 minute response, degraded-functionality issues on a same-day response, and cosmetic issues handled in a weekly batch cycle — tiers tied to actual operational impact, not generic labels.
+
+### (Scenario: CFO running a Venlo freight operation spanning German and Belgian border traffic) Does app support need to account for cross-border logistics data moving through Venlo's German and Belgian-adjacent freight corridors?
+
+Yes — monitoring should track performance and latency by region separately, since cross-border data handling and any regional connectivity differences can mask a localized problem inside an otherwise healthy aggregate uptime figure.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +119,11 @@ Every OS update is tested against a device compatibility matrix mirroring your a
     { "@type": "Question", "name": "(Scenario: CFO negotiating SLA terms) What response times should we expect in a proper app support SLA?", "acceptedAnswer": { "@type": "Answer", "text": "Critical production issues should carry a response commitment measured in minutes to a few hours depending on severity tier, unlike the open-ended terms typical of informal freelance arrangements." } },
     { "@type": "Question", "name": "(Scenario: CFO worried about a single point of failure) What happens to support continuity if our current developer becomes unavailable?", "acceptedAnswer": { "@type": "Answer", "text": "A structured support pod is staffed by a rotation rather than one individual, so coverage continues uninterrupted through holidays, illness, or turnover." } },
     { "@type": "Question", "name": "(Scenario: CFO planning around predictable peak periods) Can support contracts include proactive load testing ahead of known busy periods?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and this is one of the highest-value parts of a support contract for logistics operations, stress-testing the app against expected peak traffic weeks in advance." } },
-    { "@type": "Question", "name": "(Scenario: CFO assessing OS update risk) How do you prevent a routine Android or iOS update from breaking our production app?", "acceptedAnswer": { "@type": "Answer", "text": "Every OS update is tested against a device compatibility matrix mirroring the actual hardware fleet in staging first, with a staged production rollout so issues are caught before reaching the whole operation." } }
+    { "@type": "Question", "name": "(Scenario: CFO assessing OS update risk) How do you prevent a routine Android or iOS update from breaking our production app?", "acceptedAnswer": { "@type": "Answer", "text": "Every OS update is tested against a device compatibility matrix mirroring the actual hardware fleet in staging first, with a staged production rollout so issues are caught before reaching the whole operation." } },
+    { "@type": "Question", "name": "(Scenario: CFO benchmarking app health against an industry standard) What crash-free session rate should a properly supported warehouse app maintain?", "acceptedAnswer": { "@type": "Answer", "text": "Above 99.5% measured via Crashlytics or Sentry, with any month below 99% triggering a mandatory root-cause review." } },
+    { "@type": "Question", "name": "(Scenario: CFO budgeting a monthly support retainer) How much should a structured app support contract cost per month for a single warehouse-scanning app?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly €2,500-€5,000 per month depending on device fleet size and 24/5 versus 24/7 coverage, a fraction of a single major downtime incident's cost." } },
+    { "@type": "Question", "name": "(Scenario: CFO defining severity tiers before signing an SLA) How many severity tiers should our app support SLA define, and what separates them?", "acceptedAnswer": { "@type": "Answer", "text": "At minimum three: production-down floor-impact issues with a 15-30 minute response, degraded-functionality issues on a same-day response, and cosmetic issues in a weekly batch cycle." } },
+    { "@type": "Question", "name": "(Scenario: CFO running a Venlo freight operation spanning German and Belgian border traffic) Does app support need to account for cross-border logistics data moving through Venlo's German and Belgian-adjacent freight corridors?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, monitoring should track performance and latency by region separately, since regional connectivity differences can mask a localized problem inside an otherwise healthy aggregate uptime figure." } }
   ]
 }
 </script>

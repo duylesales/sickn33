@@ -99,6 +99,18 @@ A total-cost-of-ownership miscalculation on an outsourcing decision at Ooststell
 
 If your last outsourcing decision was made on a spreadsheet with only one number on it, the next one shouldn't be. Talk to a Manifera architect about building your total-cost-of-ownership model: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## Worked Example: Running the Numbers on a €55 vs. €28 Proposal
+
+Take the two actual quotes on the table: a Poland-based nearshore partner at €55/hour and a Vietnam-based offshore partner at €28/hour, both scoped for a 1,600-hour annual engagement.
+
+- **Headline comparison:** Nearshore totals €88,000; offshore totals €44,800 — a €43,200 apparent saving that drives most CFOs straight to the offshore column.
+- **Add governance overhead** (itemized separately in a properly structured offshore model, typically 12-18% of execution cost): offshore total rises to roughly €50,000-€52,900.
+- **Add a realistic ramp-up discount** for the first six to eight weeks at reduced output (both models incur this, but it's rarely disclosed upfront): add roughly 5-8% to either total in year one.
+- **Model a 20% calendar-delay risk** for an offshore engagement without a structured overlap window (per the time-zone data above): this doesn't add direct cost but extends time-to-value by two to three months if the overlap structure isn't contractually built in from day one.
+- **Net result:** a properly governed offshore engagement with overlap structure and itemized governance still lands at roughly €54,000-€58,000 — comfortably below the €88,000 nearshore quote, but nowhere near the naive €43,200 gap the headline rates suggested.
+
+The saving is real; it's just roughly 25-30% smaller than the spreadsheet implies once every variable is priced in.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO comparing two proposals with very different hourly rates) Why does the cheaper offshore rate sometimes end up costing more overall?
@@ -121,6 +133,22 @@ Insist that governance — architectural decisions and technical-debt ownership 
 
 Request a verifiable reference client and ask specifically for their actual delivery-timeline accuracy and rework rate against the original proposal, not just a general testimonial — a vendor confident in their track record will provide it.
 
+### (Scenario: CFO calculating a specific daily overlap window between Ooststellingwerf and a Ho Chi Minh City-based Vietnam pod) How many overlap hours should we require between a Netherlands-based team and a Vietnam-based offshore pod each day?
+
+Aim for a minimum three-to-four-hour daily overlap window, achievable by having the Vietnam pod start its day in the Vietnam afternoon to meet the Netherlands morning given the roughly five-to-six-hour time difference — genuine real-time collaboration during that window is what keeps decisions moving without adding calendar days.
+
+### (Scenario: CFO comparing GDPR standing between a Poland-based nearshore vendor and a Vietnam-based offshore vendor) Does GDPR compliance differ meaningfully between a Poland-based nearshore vendor and a Vietnam-based offshore vendor?
+
+A Poland-based vendor is inside the EU and GDPR-compliant by jurisdiction; a Vietnam-based vendor requires a properly structured data processing agreement with an EU-based controlling entity to achieve equivalent compliance — a contractual and governance question, not an inherent obstacle to offshore engagement.
+
+### (Scenario: CFO deciding contract length for an initial pilot before committing to a longer offshore engagement) How long should an initial pilot engagement run before deciding whether to scale up with an offshore or nearshore partner?
+
+Six to eight weeks is typically enough to validate ramp-up curve, seniority-mix quality, and overlap-window effectiveness against the modeled projections, without committing to a full annual contract before those variables are confirmed in practice.
+
+### (Scenario: CFO worried about currency risk between a EUR budget and a vendor quoting in USD) Does currency risk differ between a Poland nearshore quote and a Vietnam offshore quote if one is priced in USD?
+
+Request EUR-denominated contracts wherever possible to eliminate exchange-rate exposure entirely; if a vendor only quotes in USD, model a currency buffer of 5-8% into the budget to absorb realistic exchange-rate movement over a multi-quarter engagement.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -130,7 +158,11 @@ Request a verifiable reference client and ask specifically for their actual deli
     { "@type": "Question", "name": "(Scenario: Finance team building its first real outsourcing comparison) What should actually go into a total-cost-of-ownership model for outsourcing?", "acceptedAnswer": { "@type": "Answer", "text": "Hourly rate, verified seniority mix, time-zone overlap structure, governance ownership cost, contract-risk profile under realistic scope change, and the vendor's historical rework rate." } },
     { "@type": "Question", "name": "(Scenario: CFO deciding between fixed-price and time-and-materials contracts) Is a fixed-price contract safer than time-and-materials for an offshore engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Not automatically; fixed-price shifts risk to the vendor but usually carries a premium, while time-and-materials is often cheaper overall with disciplined internal scope governance." } },
     { "@type": "Question", "name": "(Scenario: CFO worried about losing architectural oversight offshore) How do we make sure quality doesn't degrade with an offshore team just because the rate is lower?", "acceptedAnswer": { "@type": "Answer", "text": "Insist governance is itemized and owned by a named team separate from execution, ideally based closer to your own time zone for architectural and technical-debt decisions." } },
-    { "@type": "Question", "name": "(Scenario: CFO who was burned by a bad offshore engagement before) How can we verify a vendor's claims before committing budget to them?", "acceptedAnswer": { "@type": "Answer", "text": "Request a verifiable reference client's actual delivery-timeline accuracy and rework rate against the original proposal, not just a general testimonial." } }
+    { "@type": "Question", "name": "(Scenario: CFO who was burned by a bad offshore engagement before) How can we verify a vendor's claims before committing budget to them?", "acceptedAnswer": { "@type": "Answer", "text": "Request a verifiable reference client's actual delivery-timeline accuracy and rework rate against the original proposal, not just a general testimonial." } },
+    { "@type": "Question", "name": "(Scenario: CFO calculating a specific daily overlap window between Ooststellingwerf and a Ho Chi Minh City-based Vietnam pod) How many overlap hours should we require between a Netherlands-based team and a Vietnam-based offshore pod each day?", "acceptedAnswer": { "@type": "Answer", "text": "Aim for a minimum three-to-four-hour daily overlap window, achievable by having the Vietnam pod start its day in the Vietnam afternoon to meet the Netherlands morning." } },
+    { "@type": "Question", "name": "(Scenario: CFO comparing GDPR standing between a Poland-based nearshore vendor and a Vietnam-based offshore vendor) Does GDPR compliance differ meaningfully between a Poland-based nearshore vendor and a Vietnam-based offshore vendor?", "acceptedAnswer": { "@type": "Answer", "text": "A Poland-based vendor is GDPR-compliant by EU jurisdiction; a Vietnam-based vendor requires a properly structured data processing agreement with an EU-based controlling entity to achieve equivalent compliance." } },
+    { "@type": "Question", "name": "(Scenario: CFO deciding contract length for an initial pilot before committing to a longer offshore engagement) How long should an initial pilot engagement run before deciding whether to scale up with an offshore or nearshore partner?", "acceptedAnswer": { "@type": "Answer", "text": "Six to eight weeks is typically enough to validate ramp-up curve, seniority-mix quality, and overlap-window effectiveness against the modeled projections." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried about currency risk between a EUR budget and a vendor quoting in USD) Does currency risk differ between a Poland nearshore quote and a Vietnam offshore quote if one is priced in USD?", "acceptedAnswer": { "@type": "Answer", "text": "Request EUR-denominated contracts wherever possible; if a vendor only quotes in USD, model a currency buffer of 5-8% into the budget." } }
   ]
 }
 </script>

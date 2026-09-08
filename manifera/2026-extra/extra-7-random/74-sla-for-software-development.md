@@ -70,6 +70,12 @@ Manifera's contract for the company's replatforming project included severity-ti
 
 An unenforceable SLA costs a company nothing until the exact moment it's needed, at which point the cost is measured in lost revenue during unaddressed downtime, missed client commitments, and negotiating leverage lost mid-crisis — a properly structured SLA costs modest additional negotiation time upfront and provides real, calculable protection when an incident actually occurs. [Talk to Manifera](https://www.manifera.com/contact-us/) about an SLA for software development built to hold up under real pressure, not just read well on signature day.
 
+## A Severity-Tier Reference Table for a Software Development SLA
+
+A CFO reviewing a proposed severity-tier structure can benchmark it against typical enforceable ranges: Critical (production down, data loss risk, revenue-blocking) should carry a 15-30 minute response commitment and a 4-hour resolution target; High (major feature broken, no workaround) should carry a 1-2 hour response and a 1 business-day resolution target; Medium (degraded but functional, workaround exists) should carry a 4-8 hour response and a 3 business-day resolution target; Low (cosmetic, minor) should carry a 1-2 business-day response with resolution scheduled into the next release cycle. Any service level agreement with a software vendor that collapses Critical and High into one tier, or defines "response" as merely acknowledging a ticket rather than an engineer actively working the issue, is quietly weakening the commitment that matters most.
+
+On remedies, a genuinely deterrent structure ties service credits to a percentage of the relevant billing period's fees — 5-10% per Critical breach, escalating with repeat breaches within a rolling 90-day window, capped in aggregate at a level still meaningful to the vendor's margin (typically 25-50% of the period's fees), not a flat 5% ceiling that a vendor can absorb without changing behavior. A CFO should ask a prospective vendor to run their own proposed remedy structure against a hypothetical breach scenario and confirm out loud what dollar amount actually changes hands — if the vendor hesitates to do this concretely, the clause was written to read well, not to pay out.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO reviewing an SLA that sounds protective but hasn't been tested) How can a CFO tell whether an SLA's language is actually enforceable?
@@ -92,6 +98,22 @@ Because a vague escalation promise leaves the CFO chasing accountability manuall
 
 Because it's the leverage that makes every other SLA clause meaningful — without a real right to terminate for sustained breach, a vendor has little structural incentive to treat the SLA as binding.
 
+### (Scenario: CFO trying to benchmark response and resolution times for a Critical severity incident) What response and resolution times are realistic for a Critical severity tier in a software development SLA?
+
+A properly structured SLA for software development typically commits to a 15-30 minute response and a 4-hour resolution target for Critical, production-down issues — anything looser effectively treats a revenue-blocking outage the same as a minor bug.
+
+### (Scenario: CFO trying to size a meaningful service credit percentage for an SLA breach) What percentage of fees should a service credit represent to actually deter SLA breaches?
+
+Typically 5-10% of the relevant billing period's fees per Critical breach, escalating with repeat breaches within a rolling 90-day window and capped in aggregate around 25-50% of the period's fees — well above a token 5% ceiling a vendor can absorb without changing behavior.
+
+### (Scenario: CFO negotiating an SLA with a vendor operating in a different time zone from headquarters) Does an SLA's response-time clock need to account for time zone differences with an offshore development vendor?
+
+Yes, an enforceable SLA should specify whether response times run on a 24/7 clock or a defined business-hours window per severity tier, and for Critical incidents specifically, the clock should run continuously regardless of the vendor's local time zone.
+
+### (Scenario: CFO evaluating whether Manifera's SLA commitments differ from a typical offshore vendor's) How does Manifera structure its service level agreement differently from a typical offshore software vendor?
+
+Amsterdam-based governance defines and stands behind severity-tiered response times, measurement methodology, and meaningful financial remedies as enforceable contractual commitments, while the Vietnam-based pod operates against those same targets as daily practice, not language invoked only when a dispute arises.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +123,11 @@ Because it's the leverage that makes every other SLA clause meaningful — witho
     { "@type": "Question", "name": "(Scenario: CFO negotiating uptime commitments in a vendor contract) Why isn't a headline uptime percentage like 99.9% sufficient on its own?", "acceptedAnswer": { "@type": "Answer", "text": "Without a defined measurement methodology, both parties may calculate compliance differently, making it effectively unenforceable." } },
     { "@type": "Question", "name": "(Scenario: CFO evaluating whether SLA financial remedies provide real incentive) Why do token service credits fail to incentivize SLA compliance?", "acceptedAnswer": { "@type": "Answer", "text": "A discount amounting to a rounding error provides little real deterrent compared to severity-scaled remedies." } },
     { "@type": "Question", "name": "(Scenario: CFO trying to understand what happens during an SLA escalation) Why does an SLA need named escalation roles rather than a generic reference to management?", "acceptedAnswer": { "@type": "Answer", "text": "Named roles and automatic timeframes prevent the CFO from having to chase accountability manually during an incident." } },
-    { "@type": "Question", "name": "(Scenario: CFO wondering what ultimate recourse exists if a vendor repeatedly misses SLA commitments) Why does a termination-for-cause clause matter even if a CFO never expects to use it?", "acceptedAnswer": { "@type": "Answer", "text": "It's the leverage that makes every other SLA clause meaningful and binding rather than aspirational." } }
+    { "@type": "Question", "name": "(Scenario: CFO wondering what ultimate recourse exists if a vendor repeatedly misses SLA commitments) Why does a termination-for-cause clause matter even if a CFO never expects to use it?", "acceptedAnswer": { "@type": "Answer", "text": "It's the leverage that makes every other SLA clause meaningful and binding rather than aspirational." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to benchmark response and resolution times for a Critical severity incident) What response and resolution times are realistic for a Critical severity tier in a software development SLA?", "acceptedAnswer": { "@type": "Answer", "text": "Typically a 15-30 minute response and a 4-hour resolution target for Critical, production-down issues." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to size a meaningful service credit percentage for an SLA breach) What percentage of fees should a service credit represent to actually deter SLA breaches?", "acceptedAnswer": { "@type": "Answer", "text": "Typically 5-10% of the billing period's fees per Critical breach, escalating with repeat breaches, capped around 25-50% in aggregate." } },
+    { "@type": "Question", "name": "(Scenario: CFO negotiating an SLA with a vendor operating in a different time zone from headquarters) Does an SLA's response-time clock need to account for time zone differences with an offshore development vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, response times should specify a 24/7 or business-hours clock per severity tier, with Critical incidents running continuously regardless of local time zone." } },
+    { "@type": "Question", "name": "(Scenario: CFO evaluating whether Manifera's SLA commitments differ from a typical offshore vendor's) How does Manifera structure its service level agreement differently from a typical offshore software vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Amsterdam-based governance stands behind enforceable severity tiers and remedies while the Vietnam-based pod operates against those targets as daily practice." } }
   ]
 }
 </script>

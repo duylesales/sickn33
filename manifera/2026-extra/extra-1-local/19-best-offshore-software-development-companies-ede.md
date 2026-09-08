@@ -72,6 +72,10 @@ Choosing the wrong offshore vendor at the decision stage rarely surfaces as a si
 
 If a shortlist finalist can't name the specific engineers who'll be on your project six months from now, they've already told you what will happen at month six. [Talk to Manifera and ask to meet the actual pod before you sign anything](https://www.manifera.com/contact-us/).
 
+## A Weighted Scorecard for the Final Shortlist Decision
+
+Most procurement scorecards weight rate and portfolio at 40-50% of the decision, which is backwards for a decision-stage evaluation where every finalist has already cleared the qualification bar. A more predictive weighting looks like this: team commitment and continuity (30%), scored on whether named engineers are contractually locked pre-signature; onboarding velocity (25%), scored against a documented week-by-week ramp plan rather than a vague promise; IP and legal protection (20%), scored on whether escrow and per-engineer NDAs are standard contract language versus a negotiated add-on; and working-hours overlap (15%), scored in actual overlapping hours, not "we're flexible." Rate itself should carry no more than 10% of the weighting at this stage, since it's the one variable every finalist has already converged on. Run each finalist through a structured reference call with a past client at a similar company size and ask one specific question: name the engineer who worked on your project eight months ago — are they still on it? A vendor whose reference can't answer that immediately has told you everything the spreadsheet couldn't.
+
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering finalizing a vendor shortlist) What's the single most important question to ask offshore vendors before signing?
@@ -94,6 +98,22 @@ Contractually require advance notice of any team changes and a defined handover 
 
 Enough genuine working-hours overlap to resolve blockers same-day rather than in 24-hour round trips — even a few hours of daily overlap meaningfully changes delivery velocity over a multi-month engagement.
 
+### (Scenario: VP of Engineering designing a shortlist scorecard) How much weight should day rate actually carry in a decision-stage vendor scorecard?
+
+No more than 10%. By the decision stage every finalist has already converged on comparable rates, so team commitment, onboarding velocity, and IP protection predict outcomes far better and should carry the bulk of the weighting.
+
+### (Scenario: VP of Engineering running reference calls on finalists) What's the single best reference-check question to ask a vendor's past client?
+
+Ask them to name the engineer who worked on the account eight months ago and confirm whether that person is still on it — a reference who can't answer immediately has revealed the vendor's real turnover rate.
+
+### (Scenario: VP of Engineering at an Ede-area agri-tech or Food Valley company) Do agri-tech and Food Valley companies around Ede need an offshore vendor with specific domain experience?
+
+Yes — ask for named prior work involving IoT sensor networks, agricultural data pipelines, or logistics-tech integrations, since Ede's cluster of Wageningen-adjacent agri-tech firms has data and hardware-integration patterns that generic web development portfolios don't cover.
+
+### (Scenario: VP of Engineering relying on review sites to build a shortlist) Are Clutch or G2 rankings a reliable way to identify the best offshore software development companies?
+
+Not on their own — those platforms measure review volume and marketing spend, not team continuity or onboarding discipline, so use them only to build an initial list and rely on direct reference calls to make the actual decision.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +123,11 @@ Enough genuine working-hours overlap to resolve blockers same-day rather than in
     { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating onboarding claims) How do we tell the difference between a vendor that 'ramps fast' and one that just says it does?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for a concrete week-by-week onboarding plan with defined milestones rather than a general assurance." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering comparing offshore vendors on paper) Why do offshore vendors that look identical on a comparison spreadsheet produce such different outcomes?", "acceptedAnswer": { "@type": "Answer", "text": "Rate cards and tech stack claims don't capture team topology, talent retention, or communication cadence, which actually determine project outcomes." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering worried about mid-contract vendor turnover) What should we do if our offshore team gets reshuffled after signing?", "acceptedAnswer": { "@type": "Answer", "text": "Contractually require advance notice of team changes and a defined handover process, and treat refusal to commit to this as a red flag during evaluation." } },
-    { "@type": "Question", "name": "(Scenario: VP of Engineering assessing working-hours compatibility) How much timezone overlap do we actually need with an offshore team?", "acceptedAnswer": { "@type": "Answer", "text": "Enough genuine working-hours overlap to resolve blockers same-day rather than in 24-hour round trips." } }
+    { "@type": "Question", "name": "(Scenario: VP of Engineering assessing working-hours compatibility) How much timezone overlap do we actually need with an offshore team?", "acceptedAnswer": { "@type": "Answer", "text": "Enough genuine working-hours overlap to resolve blockers same-day rather than in 24-hour round trips." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering designing a shortlist scorecard) How much weight should day rate actually carry in a decision-stage vendor scorecard?", "acceptedAnswer": { "@type": "Answer", "text": "No more than 10%, since every finalist has already converged on comparable rates; team commitment, onboarding velocity, and IP protection predict outcomes far better." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering running reference calls on finalists) What's the single best reference-check question to ask a vendor's past client?", "acceptedAnswer": { "@type": "Answer", "text": "Ask them to name the engineer who worked on the account eight months ago and confirm whether that person is still on it." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering at an Ede-area agri-tech or Food Valley company) Do agri-tech and Food Valley companies around Ede need an offshore vendor with specific domain experience?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, ask for named prior work involving IoT sensor networks, agricultural data pipelines, or logistics-tech integrations specific to the region's industry cluster." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering relying on review sites to build a shortlist) Are Clutch or G2 rankings a reliable way to identify the best offshore software development companies?", "acceptedAnswer": { "@type": "Answer", "text": "Not on their own, since those platforms measure review volume and marketing spend rather than team continuity or onboarding discipline." } }
   ]
 }
 </script>

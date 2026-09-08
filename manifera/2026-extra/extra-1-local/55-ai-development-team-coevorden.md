@@ -70,6 +70,10 @@ A stalled AI project doesn't just fail to deliver value — it actively burns fu
 
 If your AI project has been "almost done" for more than one board update, that's not a scheduling problem, it's a skills gap, and it's due for a decision. Talk to Manifera about an AI development team that can unblock what's already stalled: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## Building a Golden Test Set: The Step Most Stalled Teams Skip Entirely
+
+A golden test set is the single artifact that separates a team that can measure progress from one guessing by feel, and building one has a concrete recipe. Start with 50-150 real queries pulled from actual user behavior or support tickets, not invented examples, since invented queries tend to be easier than real ones and produce a false sense of retrieval quality. Each query needs a documented correct answer or acceptable answer range, verified by someone with actual domain expertise — for a Coevorden manufacturer, that's a technician who has used the maintenance documentation for years, not an engineer guessing at what "correct" looks like. Score retrieval and generation separately: retrieval precision (did the system pull the right source documents) and answer accuracy (did it generate a correct response from what it retrieved) are different failure modes requiring different fixes, and conflating them is exactly how a stalled team can spend months tweaking configuration without knowing whether retrieval or generation was the actual problem. Re-run the full golden set after every meaningful change — chunking strategy, embedding model, prompt template — and track the score over time as a single number a non-technical stakeholder can watch trend upward. A team without this in place isn't behind on AI development; they're flying with no instruments at all.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO deciding whether to bring in outside help or keep pushing internally) How do we know if our AI project is stalled because of a skills gap versus just needing more time?
@@ -92,6 +96,22 @@ Most engagements move from assessment to a working pilot within six to eight wee
 
 Not necessarily. Many clients choose to keep an embedded pod for ongoing AI feature work, but the specific goal of an unblocking engagement is to leave your internal team capable of maintaining and extending the system independently.
 
+### (Scenario: CTO wanting a concrete recipe for building a golden test set) How many queries does a golden test set need, and who should verify the correct answers?
+
+Fifty to 150 real queries pulled from actual usage or support tickets, each verified by someone with genuine domain expertise, such as a technician who has used the documentation for years, rather than an engineer guessing at what a correct answer looks like.
+
+### (Scenario: CTO choosing a vector database for a manufacturer's documentation scale) How do we choose between Pinecone, Weaviate, and pgvector for a mid-sized manufacturer's documentation search tool?
+
+It depends on query volume, metadata filtering needs, and existing infrastructure — pgvector is often the right call if you're already on Postgres at moderate scale, while a managed option makes more sense once query volume or filtering complexity outgrows what your team wants to operate itself.
+
+### (Scenario: CTO deciding a chunking strategy for decades of long technical maintenance manuals) What chunking strategy works best for decades of long technical maintenance documentation?
+
+Chunk by structural units, such as sections or procedures, rather than a fixed character count, and use an overlap window between chunks so context isn't lost at a boundary that splits a single instruction in half.
+
+### (Scenario: CTO at a Coevorden manufacturer with documentation in both German and Dutch) Does an AI search tool need special handling for maintenance documentation that mixes German and Dutch text?
+
+Yes — the embedding model needs genuine multilingual retrieval support, and the golden test set should include queries in both languages in roughly the proportion technicians actually use them, or retrieval quality in the less-represented language will silently lag.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +121,11 @@ Not necessarily. Many clients choose to keep an embedded pod for ongoing AI feat
     { "@type": "Question", "name": "(Scenario: Coevorden manufacturer with existing engineers assigned to the project) Will bringing in an external AI development team replace our current engineers?", "acceptedAnswer": { "@type": "Answer", "text": "No. Manifera typically embeds alongside your existing team rather than replacing them, which both unblocks the project faster and transfers the specialized skills your engineers were missing, so future AI work doesn't hit the same wall." } },
     { "@type": "Question", "name": "(Scenario: CTO worried about starting over) Do we have to scrap our current progress and start from zero?", "acceptedAnswer": { "@type": "Answer", "text": "Rarely. Most stalled projects have usable components, a partially built vector index, reusable document processing logic, that a specialized team can assess and build on rather than discard, which is typically faster than a full restart." } },
     { "@type": "Question", "name": "(Scenario: CTO under board pressure to show results quickly) How fast can a stalled AI project actually get back on track?", "acceptedAnswer": { "@type": "Answer", "text": "Most engagements move from assessment to a working pilot within six to eight weeks, once a proper vector database strategy and evaluation pipeline are in place, since the core blocker is usually specialized setup work rather than the underlying business logic." } },
-    { "@type": "Question", "name": "(Scenario: CTO concerned about long-term dependency on outside help) Once the project is unblocked, do we need to keep an external team involved indefinitely?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. Many clients choose to keep an embedded pod for ongoing AI feature work, but the specific goal of an unblocking engagement is to leave your internal team capable of maintaining and extending the system independently." } }
+    { "@type": "Question", "name": "(Scenario: CTO concerned about long-term dependency on outside help) Once the project is unblocked, do we need to keep an external team involved indefinitely?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. Many clients choose to keep an embedded pod for ongoing AI feature work, but the specific goal of an unblocking engagement is to leave your internal team capable of maintaining and extending the system independently." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting a concrete recipe for building a golden test set) How many queries does a golden test set need, and who should verify the correct answers?", "acceptedAnswer": { "@type": "Answer", "text": "Fifty to 150 real queries pulled from actual usage, each verified by someone with genuine domain expertise rather than an engineer guessing at correctness." } },
+    { "@type": "Question", "name": "(Scenario: CTO choosing a vector database for a manufacturer's documentation scale) How do we choose between Pinecone, Weaviate, and pgvector for a mid-sized manufacturer's documentation search tool?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on query volume, metadata filtering needs, and existing infrastructure; pgvector often fits if already on Postgres at moderate scale, while a managed option suits higher query volume or filtering complexity." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding a chunking strategy for decades of long technical maintenance manuals) What chunking strategy works best for decades of long technical maintenance documentation?", "acceptedAnswer": { "@type": "Answer", "text": "Chunk by structural units like sections or procedures rather than a fixed character count, with an overlap window so context isn't lost at a boundary." } },
+    { "@type": "Question", "name": "(Scenario: CTO at a Coevorden manufacturer with documentation in both German and Dutch) Does an AI search tool need special handling for maintenance documentation that mixes German and Dutch text?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the embedding model needs genuine multilingual retrieval support, and the golden test set should include queries in both languages proportional to actual usage." } }
   ]
 }
 </script>

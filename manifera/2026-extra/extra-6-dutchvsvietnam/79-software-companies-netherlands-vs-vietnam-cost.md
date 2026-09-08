@@ -71,6 +71,10 @@ The apparent 60-70% gap between a raw Netherlands quote and a raw Vietnam quote 
 
 If your current cost comparison doesn't price governance explicitly on both sides, it isn't ready for the board yet. [Talk to Manifera about a governance-held-constant comparison](https://www.manifera.com/contact-us/).
 
+## The Invoicing Line CFOs Miss: Currency, VAT, and Withholding Tax
+
+A cost comparison that stops at engineer rates misses a fourth line that changes the effective total by 3-8% depending on structure: how the engagement is invoiced. Contracting directly with a Vietnam-registered entity typically means invoices in USD, exposing the buyer to EUR/USD exchange-rate swings over a 12-month contract — a currency move of even 5% on a €300,000 annual engagement is €15,000 of unbudgeted variance a CFO has to explain at quarter-end. Contracting through an Amsterdam-headquartered entity instead means EUR-denominated invoicing with no FX exposure, and the engagement falls under the EU's standard reverse-charge VAT mechanism for cross-border B2B services rather than triggering Vietnamese withholding tax obligations, which can run 5-10% on cross-border service payments depending on treaty status. Netherlands software companies invoice this way by default; a raw Vietnam vendor quote frequently doesn't, and the withholding-tax or FX gap only becomes visible on the first invoice reconciliation, not in the original comparison. A CFO building a board-ready cost comparison should confirm invoicing currency and VAT treatment as a fifth line item, not an afterthought discovered in finance's first monthly close.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO suspicious of a large price gap between quotes) Why is the Vietnam quote so much lower than the Netherlands quote for the same scope?
@@ -93,6 +97,22 @@ Sometimes, but often it's assumed rather than documented. Ask the Netherlands ve
 
 Properly governed Vietnam delivery typically lands at 45-60% of the total comparable cost of a Netherlands engagement with an equivalent explicit governance commitment, for the same delivery risk profile.
 
+### (Scenario: CFO worried about FX exposure) Does contracting with a Vietnam-based vendor directly expose us to currency risk?
+
+Yes, if invoicing is in USD — a 5% EUR/USD swing over a 12-month contract can mean tens of thousands of euros in unbudgeted variance. Contracting through an Amsterdam-headquartered entity keeps invoicing in EUR and removes this exposure entirely.
+
+### (Scenario: CFO reconciling first invoice) Why did the first invoice from our offshore vendor include an unexpected withholding tax deduction?
+
+Cross-border service payments to a Vietnam entity can trigger withholding tax obligations of 5-10% depending on treaty status, a line that raw vendor quotes frequently omit. Routing the contract through an EU-domiciled governance entity avoids this exposure.
+
+### (Scenario: CFO comparing VAT treatment) How does VAT work on cross-border software development services between an EU company and an offshore vendor?
+
+An EU-domiciled contracting entity applies the standard reverse-charge VAT mechanism for B2B services, which a raw offshore vendor relationship typically doesn't offer, potentially creating VAT complications the finance team only discovers at reconciliation.
+
+### (Scenario: CFO building a five-line cost comparison) What's the fifth line item CFOs often miss when comparing a Netherlands vendor quote to a Vietnam vendor quote?
+
+Invoicing currency and VAT/withholding tax treatment. Beyond base engineering cost, governance overhead, and delivery risk premium, this fifth line can shift the effective total cost by 3-8% and typically only surfaces on the first invoice reconciliation if it isn't confirmed upfront.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -102,7 +122,11 @@ Properly governed Vietnam delivery typically lands at 45-60% of the total compar
     { "@type": "Question", "name": "(Scenario: CTO trying to build a board-ready comparison) What's the right way to structure a cost comparison a board will trust?", "acceptedAnswer": { "@type": "Answer", "text": "Break the comparison into base engineering cost, governance overhead, and delivery risk premium, and price governance explicitly on both the Netherlands and Vietnam sides rather than leaving it implicit on one and absent on the other." } },
     { "@type": "Question", "name": "(Scenario: CTO worried that cheap Vietnam pricing means cut corners) Does a low Vietnam quote necessarily mean something is being cut?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily, but it often means governance hasn't been priced in rather than that quality is inherently lower. Ask directly what architecture review and quality audit process is included." } },
     { "@type": "Question", "name": "(Scenario: CTO evaluating whether the Netherlands premium is justified) Is the higher Netherlands rate actually buying more governance?", "acceptedAnswer": { "@type": "Answer", "text": "Sometimes, but often it's assumed rather than documented. Ask the Netherlands vendor to name their specific architecture review process and escalation authority the same way you'd ask a Vietnam vendor." } },
-    { "@type": "Question", "name": "(Scenario: CTO wanting a defensible final number) What's a realistic total cost gap once governance is held constant on both sides?", "acceptedAnswer": { "@type": "Answer", "text": "Properly governed Vietnam delivery typically lands at 45-60% of the total comparable cost of a Netherlands engagement with an equivalent explicit governance commitment, for the same delivery risk profile." } }
+    { "@type": "Question", "name": "(Scenario: CTO wanting a defensible final number) What's a realistic total cost gap once governance is held constant on both sides?", "acceptedAnswer": { "@type": "Answer", "text": "Properly governed Vietnam delivery typically lands at 45-60% of the total comparable cost of a Netherlands engagement with an equivalent explicit governance commitment, for the same delivery risk profile." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried about FX exposure) Does contracting with a Vietnam-based vendor directly expose us to currency risk?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, if invoicing is in USD — a 5% EUR/USD swing over a year can mean tens of thousands of euros in unbudgeted variance. An Amsterdam-headquartered entity keeps invoicing in EUR and removes this exposure." } },
+    { "@type": "Question", "name": "(Scenario: CFO reconciling first invoice) Why did the first invoice from our offshore vendor include an unexpected withholding tax deduction?", "acceptedAnswer": { "@type": "Answer", "text": "Cross-border payments to a Vietnam entity can trigger withholding tax of 5-10% depending on treaty status, a line raw vendor quotes frequently omit. Routing through an EU-domiciled entity avoids it." } },
+    { "@type": "Question", "name": "(Scenario: CFO comparing VAT treatment) How does VAT work on cross-border software development services between an EU company and an offshore vendor?", "acceptedAnswer": { "@type": "Answer", "text": "An EU-domiciled contracting entity applies the standard reverse-charge VAT mechanism for B2B services, which a raw offshore vendor relationship typically doesn't offer." } },
+    { "@type": "Question", "name": "(Scenario: CFO building a five-line cost comparison) What's the fifth line item CFOs often miss when comparing a Netherlands vendor quote to a Vietnam vendor quote?", "acceptedAnswer": { "@type": "Answer", "text": "Invoicing currency and VAT/withholding tax treatment, which can shift the effective total cost by 3-8% and often only surfaces at first invoice reconciliation." } }
   ]
 }
 </script>

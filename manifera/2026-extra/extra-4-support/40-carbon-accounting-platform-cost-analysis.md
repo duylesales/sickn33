@@ -86,6 +86,10 @@ Industries Provençales completed its platform build with full Scope 1, 2, and 3
 
 Before committing to a carbon accounting platform budget, insist on a cost estimate that explicitly scopes Scope 3 data collection, emissions factor maintenance, and audit trail requirements — not one validated primarily against a demo-stage calculation engine using curated sample data. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic carbon accounting platform cost scoping exercise.
 
+## By the Numbers: A Realistic Carbon Accounting Budget Split
+
+For a mid-sized manufacturer or enterprise scoping a custom software development build covering full Scope 1-3 reporting, a realistic allocation looks roughly like: Scope 3 data collection and supplier engagement workflow, 30-40% of total cost (the largest and most spend-scaling category, since it depends directly on supplier count and tier); emissions factor database management, 10-15% upfront plus an ongoing 5-8% annually for currency maintenance; audit trail and methodology documentation infrastructure, 12-18%, higher for organizations anticipating formal third-party verification; operational and procurement system integration, 15-20% scaling with source system diversity; with the remainder covering the core calculation engine and reporting dashboard most initial demos emphasize. A useful diagnostic for any software system development proposal: if Scope 3 collection is quoted as a flat percentage add-on to Scope 1/2 calculation cost rather than scoped against your organization's actual supplier count and tier structure, the estimate almost certainly understates the real supplier-engagement effort. As a rough anchor, a mid-sized manufacturer with a moderately complex supply chain and an upcoming regulatory disclosure requirement typically budgets €180,000-€450,000 for a first phase covering its top supplier tier plus Scopes 1 and 2 in full; a quote well under that range for the same disclosure scope usually means Scope 3 supplier engagement or audit trail requirements were compressed rather than genuinely priced lower.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial carbon accounting cost estimate) Why do carbon accounting platform estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ Regulatory disclosure and third-party verification increasingly require a demons
 
 Ensure the estimate explicitly scopes Scope 3 data collection workflow, emissions factor maintenance, and audit trail requirements against your organization's actual supply chain and regulatory disclosure needs, not just calculation engine functionality.
 
+### (Scenario: CTO wanting a rough dollar figure) What's a realistic budget for a carbon accounting platform covering full Scope 1-3 reporting with an upcoming regulatory disclosure requirement?
+
+Typically €180,000-€450,000 for a first phase covering Scopes 1 and 2 in full plus Scope 3 data collection for the top supplier tier — a quote well under that range for the same disclosure scope usually means supplier engagement or audit trail work was compressed rather than genuinely priced lower.
+
+### (Scenario: CTO checking whether the Scope 3 line item is realistic) What percentage of total carbon accounting platform cost should Scope 3 data collection realistically represent?
+
+Roughly 30-40% of total project cost given how disproportionately larger and more supplier-dependent Scope 3 is compared to Scopes 1 and 2 — a flat percentage add-on quoted without reference to your actual supplier count and tier structure is a sign it wasn't scoped against your real supply chain.
+
+### (Scenario: sustainability lead deciding buy vs. build) Should we buy an existing carbon accounting software product or invest in a custom software engineering build?
+
+An existing software product can work well for Scope 1 and 2 reporting where activity data and methodology are relatively standardized, but Scope 3 supplier engagement workflows and audit trail requirements specific to your regulatory disclosure regime often still need custom configuration or engineering work layered on top.
+
+### (Scenario: CTO asking how supplier tiering affects cost) How does prioritizing our largest suppliers first change the cost of building Scope 3 tracking?
+
+Since a relatively small number of major suppliers typically account for a disproportionate share of total Scope 3 emissions, phasing supplier engagement by tier lets you capture most of the accounting value at a fraction of the cost and timeline of attempting full supplier-base coverage simultaneously.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Ensure the estimate explicitly scopes Scope 3 data collection workflow, emission
     { "@type": "Question", "name": "(Scenario: sustainability lead trying to understand Scope 3 cost) Why is Scope 3 emissions tracking more expensive to build than Scope 1 and 2?", "acceptedAnswer": { "@type": "Answer", "text": "Scope 3 depends on external supply chain data with varying maturity, requiring a genuine collection and engagement workflow." } },
     { "@type": "Question", "name": "(Scenario: engineering lead scoping emissions factor data) Why does emissions factor data require ongoing maintenance rather than a one-time integration?", "acceptedAnswer": { "@type": "Answer", "text": "Published factors are periodically revised, and accuracy depends on staying current, making this an ongoing responsibility." } },
     { "@type": "Question", "name": "(Scenario: compliance officer planning for regulatory disclosure) Why does audit trail capability need to be built into the platform structurally?", "acceptedAnswer": { "@type": "Answer", "text": "Regulatory disclosure increasingly requires a demonstrable, auditable calculation trail that informal documentation doesn't provide." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to get an accurate cost estimate) What's the most reliable way to get an accurate carbon accounting platform cost estimate?", "acceptedAnswer": { "@type": "Answer", "text": "Ensure Scope 3 collection, factor maintenance, and audit trail are explicitly scoped against your organization's actual needs." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to get an accurate cost estimate) What's the most reliable way to get an accurate carbon accounting platform cost estimate?", "acceptedAnswer": { "@type": "Answer", "text": "Ensure Scope 3 collection, factor maintenance, and audit trail are explicitly scoped against your organization's actual needs." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting a rough dollar figure) What's a realistic budget for a carbon accounting platform covering full Scope 1-3 reporting with an upcoming regulatory disclosure requirement?", "acceptedAnswer": { "@type": "Answer", "text": "Typically €180,000-€450,000 for a first phase; well under that for the same scope usually means work was compressed." } },
+    { "@type": "Question", "name": "(Scenario: CTO checking whether the Scope 3 line item is realistic) What percentage of total carbon accounting platform cost should Scope 3 data collection realistically represent?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 30-40% of total project cost, given how much larger and more supplier-dependent Scope 3 is than Scopes 1 and 2." } },
+    { "@type": "Question", "name": "(Scenario: sustainability lead deciding buy vs. build) Should we buy an existing carbon accounting software product or invest in a custom software engineering build?", "acceptedAnswer": { "@type": "Answer", "text": "An existing product can work for Scopes 1-2, but Scope 3 and audit trail requirements often still need custom work layered on top." } },
+    { "@type": "Question", "name": "(Scenario: CTO asking how supplier tiering affects cost) How does prioritizing our largest suppliers first change the cost of building Scope 3 tracking?", "acceptedAnswer": { "@type": "Answer", "text": "It captures most of the accounting value at a fraction of the cost of full supplier-base coverage, since major suppliers dominate the total." } }
   ]
 }
 </script>

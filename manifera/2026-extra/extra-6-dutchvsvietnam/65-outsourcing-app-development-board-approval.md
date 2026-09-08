@@ -76,6 +76,10 @@ A board that tables a proposal for "more information" doesn't just delay the dec
 
 If your board deck answers "how much does this save" but not "who is accountable if it goes wrong," it's not ready for the meeting yet. [Talk to Manifera about building a board-ready proposal](https://www.manifera.com/contact-us/).
 
+## The Warranty and Liability Clause Board Counsel Will Ask to See
+
+Beyond the six relationship-level questions, a board's legal counsel typically red-lines one specific contract clause before signing off on an outsourcing app development budget: the warranty and liability structure. A defensible contract includes a 90-day post-delivery warranty period covering defects traceable to delivered code, during which fixes are covered under the original engagement fee rather than billed as new work. Liability should be capped at a stated multiple of fees paid — Manifera's standard structure caps general liability at 12 months of fees, with a separate, uncapped carve-out for breaches of confidentiality or IP warranties, which is the split most European in-house counsel expect rather than a single blanket cap. Professional indemnity and cyber liability insurance, held at the Amsterdam entity level, should sit in the €1-2 million range for a mid-size app engagement — proof of which a CFO should request as a certificate of insurance attached to the contract, not a verbal assurance. Boards rarely ask about this clause directly in the meeting, but counsel reviewing the contract afterward will, and a CFO who has it ready avoids a second round of legal redlines delaying signature by two to three weeks.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO preparing for board questions on data protection) How do we answer a board director's GDPR concerns about outsourcing app development to Vietnam?
@@ -98,6 +102,22 @@ Yes. Manifera can provide reference clients across European industries, which is
 
 Return with the specific gaps addressed: named data protection agreement, documented IP structure, and a pilot-first ask rather than a full commitment. A second proposal that answers the exact questions raised the first time rebuilds credibility quickly.
 
+### (Scenario: CFO needing warranty terms for legal counsel) What warranty period should be standard for an outsourced app development contract?
+
+A 90-day post-delivery warranty covering defects traceable to delivered code, with fixes covered under the original engagement fee rather than billed separately. Counsel reviewing the contract will expect this stated explicitly, not implied.
+
+### (Scenario: CFO asked about liability cap) How is liability typically capped in an offshore app development contract, and should IP breaches be excluded from the cap?
+
+Standard structure caps general liability at 12 months of fees paid, with a separate uncapped carve-out for confidentiality or IP-warranty breaches — the split most European in-house counsel expect rather than one blanket cap covering everything.
+
+### (Scenario: CFO whose counsel wants proof of insurance) What insurance coverage should the vendor carry, and how is it verified?
+
+Professional indemnity and cyber liability insurance in the €1-2 million range for a mid-size app engagement, held at the accountable EU entity level, verified by a certificate of insurance attached to the contract rather than a verbal assurance.
+
+### (Scenario: CFO worried about legal review delaying signature) How do we avoid legal redlines delaying contract signature after board approval?
+
+Attach the warranty period, liability cap structure, and insurance certificate to the proposal before it reaches counsel, rather than after board approval — this is what typically saves two to three weeks of redline back-and-forth.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,7 +127,11 @@ Return with the specific gaps addressed: named data protection agreement, docume
     { "@type": "Question", "name": "(Scenario: CFO anticipating vendor continuity questions) What do we say if a board member asks what happens if the vendor disappears?", "acceptedAnswer": { "@type": "Answer", "text": "Point to the structural difference: an Amsterdam-headquartered entity with EU-jurisdiction contractual accountability is enforceable under Dutch law, unlike a Vietnam-only vendor with no European legal presence." } },
     { "@type": "Question", "name": "(Scenario: CFO wanting a lower-risk way to bring the proposal to the board) Should we ask the board to approve a full-year engagement or something smaller first?", "acceptedAnswer": { "@type": "Answer", "text": "A scoped pilot, typically four to six weeks, converts a high-stakes binary decision into a lower-risk first approval most boards approve more readily." } },
     { "@type": "Question", "name": "(Scenario: CFO needing to demonstrate credibility to skeptical directors) Can we offer the board a reference client they could independently verify?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Manifera can provide reference clients across European industries, turning an abstract vendor claim into something verifiable." } },
-    { "@type": "Question", "name": "(Scenario: CFO whose proposal was previously tabled for more information) Our board already tabled a similar proposal once — how do we bring it back without losing credibility?", "acceptedAnswer": { "@type": "Answer", "text": "Return with the specific gaps addressed: named data protection agreement, documented IP structure, and a pilot-first ask rather than a full commitment." } }
+    { "@type": "Question", "name": "(Scenario: CFO whose proposal was previously tabled for more information) Our board already tabled a similar proposal once — how do we bring it back without losing credibility?", "acceptedAnswer": { "@type": "Answer", "text": "Return with the specific gaps addressed: named data protection agreement, documented IP structure, and a pilot-first ask rather than a full commitment." } },
+    { "@type": "Question", "name": "(Scenario: CFO needing warranty terms for legal counsel) What warranty period should be standard for an outsourced app development contract?", "acceptedAnswer": { "@type": "Answer", "text": "A 90-day post-delivery warranty covering defects traceable to delivered code, with fixes covered under the original engagement fee rather than billed separately." } },
+    { "@type": "Question", "name": "(Scenario: CFO asked about liability cap) How is liability typically capped in an offshore app development contract, and should IP breaches be excluded from the cap?", "acceptedAnswer": { "@type": "Answer", "text": "General liability is typically capped at 12 months of fees paid, with a separate uncapped carve-out for confidentiality or IP-warranty breaches." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose counsel wants proof of insurance) What insurance coverage should the vendor carry, and how is it verified?", "acceptedAnswer": { "@type": "Answer", "text": "Professional indemnity and cyber liability insurance in the €1-2 million range, held at the accountable EU entity level and verified by a certificate of insurance attached to the contract." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried about legal review delaying signature) How do we avoid legal redlines delaying contract signature after board approval?", "acceptedAnswer": { "@type": "Answer", "text": "Attach the warranty period, liability cap structure, and insurance certificate to the proposal before it reaches counsel, saving two to three weeks of redline back-and-forth." } }
   ]
 }
 </script>

@@ -95,6 +95,12 @@ That pilot became the basis for an accurate fixed-price quote, and the Vietnam p
 
 A vendor that welcomes all six of these steps is signaling confidence in their own delivery. A vendor that resists more than one or two is asking you to take their word for something they could easily demonstrate instead. [Get a custom team proposal within 48 hours](https://www.manifera.com/contact-us/) — pilot sprint included.
 
+## Scoring the Six Signals: A Weighted Vetting Scorecard
+
+Not all six steps carry equal weight, and treating them as equally important is a common mistake when comparing multiple custom software development companies side by side. Industry surveys of failed software engagements consistently point to two root causes above all others: mismatched team seniority (cited in roughly 35% of failed vendor relationships) and undocumented scope-change handling (around 28%). That puts "confirm who specifically will work on your project" and "clarify the change-order process in writing" ahead of reference checks in practical weight, even though reference checks are the step founders default to first.
+
+A workable scoring approach: assign 25 points each to the pilot sprint and the named-team confirmation, 20 points to the change-order policy in writing, 15 points to the discovery-before-quoting step, 10 points to the code/architecture review, and 5 points to reference checks. A custom software development company scoring below 60 out of 100 on this weighting — meaning they resisted the pilot, wouldn't name the team, or wouldn't put change orders in writing — has failed the two highest-weighted signals regardless of how polished their references sound. Score every vendor on the same rubric before comparing quotes; a €15,000 cheaper proposal from a vendor scoring 40 is rarely actually cheaper once the first unplanned scope change arrives.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder unsure how much vetting is really necessary) Is a full six-step vetting process overkill for a smaller project?
@@ -117,6 +123,22 @@ Less than you'd think. A large agency can still assign a junior, shared team; a 
 
 Treat that reaction as data. A vendor confident in their delivery welcomes scrutiny before a large commitment; defensiveness at this stage is a preview of how they'll handle disagreements once the contract is signed.
 
+### (Scenario: founder comparing several custom software development companies on price alone) How do I compare quotes from different custom development companies when the numbers vary wildly?
+
+Normalize each quote against the six-step scorecard before comparing totals — a lower number from a vendor who resisted a pilot or wouldn't name the team is not actually the cheaper option once change-order costs are factored in.
+
+### (Scenario: founder about to sign with a software development company found through a marketplace listing) Should I trust vendor ratings on freelance marketplaces instead of running my own vetting?
+
+Marketplace ratings measure past client satisfaction on unrelated projects, not fit for your specific complexity or compliance needs — use them as a first filter, not a substitute for the six-step process.
+
+### (Scenario: founder worried a custom software development company is subcontracting the work) How do I find out if the company I'm vetting will actually build it themselves or subcontract it?
+
+Ask directly in writing whether any part of delivery will be subcontracted, and request the subcontractor's name and location if so — a vendor unwilling to answer this plainly is hiding a material fact about who controls your codebase.
+
+### (Scenario: founder needing a quick gut-check before a first sales call) What's the single fastest question to ask a custom software development company to gauge their honesty early?
+
+Ask what a recent project's biggest failure or delay was and how they handled it — a vendor with a specific, honest answer is far more trustworthy than one who claims to have never missed a deadline.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -126,7 +148,11 @@ Treat that reaction as data. A vendor confident in their delivery welcomes scrut
     { "@type": "Question", "name": "(Scenario: founder worried about the cost of a paid pilot) Is it worth paying for a pilot sprint before the full contract?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, in almost every case. A two-to-four week pilot typically costs a small fraction of the total project and prevents a much larger cost from a poor fit discovered later." } },
     { "@type": "Question", "name": "(Scenario: founder trying to compare team quality across vendors) How do I actually evaluate code quality if I'm not technical myself?", "acceptedAnswer": { "@type": "Answer", "text": "Bring in a technical advisor for a single paid review session, or ask the vendor's lead engineer to explain an architecture decision in plain language." } },
     { "@type": "Question", "name": "(Scenario: founder deciding between a large agency and a smaller boutique firm) Does company size matter more than the six vetting steps?", "acceptedAnswer": { "@type": "Answer", "text": "Less than you'd think. A large agency can still assign a junior, shared team; a smaller firm can still offer a dedicated, senior pod." } },
-    { "@type": "Question", "name": "(Scenario: founder wanting to avoid an awkward vendor conversation) What if a vendor gets defensive when I ask for references or a pilot?", "acceptedAnswer": { "@type": "Answer", "text": "Treat that reaction as data. Defensiveness at this stage is a preview of how they'll handle disagreements once the contract is signed." } }
+    { "@type": "Question", "name": "(Scenario: founder wanting to avoid an awkward vendor conversation) What if a vendor gets defensive when I ask for references or a pilot?", "acceptedAnswer": { "@type": "Answer", "text": "Treat that reaction as data. Defensiveness at this stage is a preview of how they'll handle disagreements once the contract is signed." } },
+    { "@type": "Question", "name": "(Scenario: founder comparing several custom software development companies on price alone) How do I compare quotes from different custom development companies when the numbers vary wildly?", "acceptedAnswer": { "@type": "Answer", "text": "Normalize each quote against the six-step scorecard before comparing totals — a lower number from a vendor who resisted a pilot or wouldn't name the team is not actually the cheaper option once change-order costs are factored in." } },
+    { "@type": "Question", "name": "(Scenario: founder about to sign with a software development company found through a marketplace listing) Should I trust vendor ratings on freelance marketplaces instead of running my own vetting?", "acceptedAnswer": { "@type": "Answer", "text": "Marketplace ratings measure past client satisfaction on unrelated projects, not fit for your specific complexity or compliance needs — use them as a first filter, not a substitute for the six-step process." } },
+    { "@type": "Question", "name": "(Scenario: founder worried a custom software development company is subcontracting the work) How do I find out if the company I'm vetting will actually build it themselves or subcontract it?", "acceptedAnswer": { "@type": "Answer", "text": "Ask directly in writing whether any part of delivery will be subcontracted, and request the subcontractor's name and location if so." } },
+    { "@type": "Question", "name": "(Scenario: founder needing a quick gut-check before a first sales call) What's the single fastest question to ask a custom software development company to gauge their honesty early?", "acceptedAnswer": { "@type": "Answer", "text": "Ask what a recent project's biggest failure or delay was and how they handled it — a specific, honest answer is far more trustworthy than a claim of never missing a deadline." } }
   ]
 }
 </script>

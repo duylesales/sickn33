@@ -82,6 +82,10 @@ Rheingau Assekuranz now requires actuarial sign-off on any claims system data mo
 
 Before commissioning a claims processing platform, involve actuarial expertise in the data model design and scope Solvency II reporting requirements from the start — retrofitting claim development tracking later can mean permanently losing data for claims already processed. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about scoping a claims platform with regulatory reporting built in.
 
+## By the Numbers: Budgeting the Solvency II Data Layer Into a Claims Software Product
+
+On a typical mid-market insurtech claims software product build, Manifera scopes the Solvency II-specific work as roughly 25-35% of total custom software development budget, broken down further as: data model design with actuarial categorization, 10-12%; claim development time-series tracking infrastructure (append-only reserve history rather than a single mutable field), 8-10%; the QRT export and mapping layer itself, 6-8%; and actuarial consulting hours embedded in the design phase, typically 80-120 hours for a mid-sized insurer's first platform. A useful gut-check for a web application development proposal: if Solvency II reporting appears as a single line item under 10% of total cost, the data model underneath it almost certainly hasn't been designed to capture claim development history correctly, since that architecture — append-only reserve snapshots, risk-taxonomy tagging at claim creation, versioned QRT template mapping — touches nearly every table in the claims schema, not just a reporting module bolted on top. EIOPA updates the underlying XBRL taxonomy roughly annually, so budget an ongoing maintenance retainer, not a one-time deliverable, for the reporting layer specifically — insurers who treat it as "done" after go-live typically find themselves out of compliance with the next taxonomy version within 12-18 months.
+
 ## Frequently Asked Questions
 
 ### (Scenario: insurtech COO scoping a claims platform budget) Why does Solvency II reporting add so much cost to a claims platform beyond the core workflow?
@@ -104,6 +108,22 @@ Accurately capturing claim development and reserve categories in a way that sati
 
 Yes — EIOPA periodically updates Solvency II's technical reporting standards, meaning the reporting layer needs standing maintenance capacity to stay compliant, not just a one-time build during initial development.
 
+### (Scenario: founder budgeting the percentage of total cost for compliance) What percentage of a claims platform's total development budget should Solvency II reporting realistically consume?
+
+Roughly 25-35% of total build cost for a first platform, covering actuarially-informed data model design, claim development time-series infrastructure, and the QRT export layer — a Solvency II line item quoted under 10% of total cost is a strong signal the underlying data model hasn't been properly designed for it.
+
+### (Scenario: founder asking about the XBRL/QRT technical format) What technical format does Solvency II quantitative reporting actually require, and does my claims platform need to generate it directly?
+
+Solvency II QRTs are submitted in XBRL format against an EIOPA-defined taxonomy, and your claims platform's reporting layer needs a mapping and export function that produces this format directly or feeds a regulatory reporting tool that does — manual reformatting from a generic export isn't a sustainable long-term approach.
+
+### (Scenario: founder asking how often reporting requirements change) How often does the Solvency II reporting taxonomy change, and what does that mean for our platform's maintenance budget?
+
+EIOPA updates the underlying XBRL taxonomy roughly annually, so the reporting layer needs an ongoing maintenance retainer rather than being treated as a one-time deliverable — insurers who skip this typically fall out of compliance with the newest taxonomy version within 12-18 months of going live.
+
+### (Scenario: founder deciding whether to build custom or buy a reporting module) Should we build a custom Solvency II reporting layer or buy an existing regulatory reporting software product?
+
+A third-party regulatory reporting product can handle the QRT generation step itself, but it still depends entirely on your claims platform capturing accurate, granular claim development data upstream — buying the reporting tool doesn't remove the need to design your own data model around Solvency II's categorization and time-series requirements.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -113,7 +133,11 @@ Yes — EIOPA periodically updates Solvency II's technical reporting standards, 
     { "@type": "Question", "name": "(Scenario: CFO discovering a reporting gap after launch) Can we add Solvency II-compliant reporting to our claims platform after it's already been running for a while?", "acceptedAnswer": { "@type": "Answer", "text": "Partially — going forward yes, but claim development history not captured at the time can't generally be reconstructed retroactively." } },
     { "@type": "Question", "name": "(Scenario: founder trying to understand what claim development means) What does 'claim development' mean in the context of insurance claims data?", "acceptedAnswer": { "@type": "Answer", "text": "How a claim's reserve estimate changes over time as more information becomes available, requiring the full history, not just the final amount." } },
     { "@type": "Question", "name": "(Scenario: product manager trying to involve the right expertise) Why does a claims platform's data model need actuarial input, not just engineering design?", "acceptedAnswer": { "@type": "Answer", "text": "Accurately capturing claim development and reserve categories for regulatory reporting needs actuarial expertise most engineering teams lack." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to plan for ongoing maintenance) Does Solvency II reporting require ongoing maintenance after the initial platform build?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — EIOPA periodically updates reporting standards, requiring standing maintenance capacity, not just a one-time build." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to plan for ongoing maintenance) Does Solvency II reporting require ongoing maintenance after the initial platform build?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — EIOPA periodically updates reporting standards, requiring standing maintenance capacity, not just a one-time build." } },
+    { "@type": "Question", "name": "(Scenario: founder budgeting the percentage of total cost for compliance) What percentage of a claims platform's total development budget should Solvency II reporting realistically consume?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 25-35% of total build cost, covering actuarial data model design, claim development tracking, and the QRT export layer." } },
+    { "@type": "Question", "name": "(Scenario: founder asking about the XBRL/QRT technical format) What technical format does Solvency II quantitative reporting actually require, and does my claims platform need to generate it directly?", "acceptedAnswer": { "@type": "Answer", "text": "XBRL format against an EIOPA-defined taxonomy, requiring a mapping and export function in the reporting layer itself." } },
+    { "@type": "Question", "name": "(Scenario: founder asking how often reporting requirements change) How often does the Solvency II reporting taxonomy change, and what does that mean for our platform's maintenance budget?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly annually, so budget an ongoing maintenance retainer rather than treating the reporting layer as a one-time deliverable." } },
+    { "@type": "Question", "name": "(Scenario: founder deciding whether to build custom or buy a reporting module) Should we build a custom Solvency II reporting layer or buy an existing regulatory reporting software product?", "acceptedAnswer": { "@type": "Answer", "text": "A third-party tool can handle QRT generation, but it still depends on your own platform capturing accurate claim development data upstream." } }
   ]
 }
 </script>

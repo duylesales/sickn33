@@ -72,6 +72,12 @@ Manifera's subsequent engagement provided an explicit best-case and most-likely 
 
 A CFO who builds downstream commitments around an unadjusted, optimistically-biased custom software development timeline estimate risks a cascading delay that costs both the direct expense of the overrun and the credibility cost of commitments that didn't hold. Requesting an explicit best-case and most-likely range, and planning against the latter, costs nothing beyond asking the right question upfront. [Talk to Manifera](https://www.manifera.com/contact-us/) about a custom software development timeline built on honest, most-likely estimation.
 
+## The Typical Overrun, By Project Phase
+
+Across custom software projects, the optimism bias isn't evenly distributed — it concentrates in three specific phases a CFO should budget against directly. Discovery and requirements typically overrun their estimate by 15-20%, because "requirements gathering" almost always uncovers at least one stakeholder disagreement that wasn't visible until people saw a concrete proposal. Integration with existing systems overruns by 25-35%, the largest single gap, because undocumented legacy behavior only surfaces once two systems are actually connected. QA and UAT overrun by 10-15%, mostly from stakeholder-requested changes discovered only once the software is functional enough to use, not just describe.
+
+Development itself — the phase most vendors and most CFOs focus estimating scrutiny on — is typically the most accurate phase, overrunning by just 5-10%, because it's the most mechanically predictable part of the work. The practical implication: a CFO reviewing a project timeline estimate should apply the least skepticism to the development-hours line and the most to the discovery and integration lines, since that's precisely backwards from where most timeline reviews focus their attention.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO evaluating a vendor's custom software development timeline estimate) Why do custom software development timeline estimates tend to be optimistic rather than randomly wrong?
@@ -94,6 +100,22 @@ Because integration problems are specifically the kind of unknown that's hard to
 
 A cascading delay that ripples through every downstream commitment built on top of the original estimate, costing both direct delay expense and credibility.
 
+### (Scenario: CFO trying to identify which phase of the project timeline is most likely to overrun) Which phase of a custom software development timeline overruns its estimate by the largest margin?
+
+Integration with existing systems, typically overrunning by 25-35% — the largest gap of any phase — because undocumented legacy system behavior only becomes visible once the new and old systems are actually connected.
+
+### (Scenario: CFO who assumes the development-hours line is the riskiest part of a project timeline estimate) Is the coding and development phase the part of a software project timeline most likely to run late?
+
+No, development is typically the most accurate phase, overrunning by only 5-10%, because it's the most mechanically predictable part of the work — discovery and integration carry far more schedule risk.
+
+### (Scenario: CFO trying to set a realistic buffer for a fixed launch date tied to a software project timeline) How much schedule buffer should a CFO add to a vendor's custom software development timeline before committing a launch date externally?
+
+Add roughly 20-25% on top of the vendor's most-likely estimate as a planning buffer before communicating any external launch date, reflecting the combined overrun risk concentrated in discovery, integration, and UAT phases.
+
+### (Scenario: CFO trying to understand how Manifera's delivery model affects project timeline reliability) Does splitting governance in Amsterdam from execution in Vietnam slow down or speed up a custom software development timeline?
+
+It improves reliability rather than raw speed — Amsterdam-based governance catches requirements ambiguity and integration risk earlier in discovery, which is precisely the phase where most timeline overruns originate, so the most-likely estimate holds more consistently even though headline velocity isn't the primary lever being pulled.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +125,11 @@ A cascading delay that ripples through every downstream commitment built on top 
     { "@type": "Question", "name": "(Scenario: CFO trying to get a more accurate timeline from a vendor) What question should a CFO ask a vendor to get a more accurate timeline?", "acceptedAnswer": { "@type": "Answer", "text": "Whether the estimate is best-case or most-likely, accounting for the near-certain probability of unknowns." } },
     { "@type": "Question", "name": "(Scenario: CFO building downstream commitments around a project timeline) Which number should a CFO build downstream commitments against, the best-case or most-likely estimate?", "acceptedAnswer": { "@type": "Answer", "text": "The most-likely estimate, treating the best-case number as an aspirational floor." } },
     { "@type": "Question", "name": "(Scenario: CFO trying to understand why integration time is often underestimated) Why is integration and testing time systematically underestimated in custom software timelines?", "acceptedAnswer": { "@type": "Answer", "text": "Integration problems are hard to anticipate until the actual systems are connected and tested together." } },
-    { "@type": "Question", "name": "(Scenario: CFO trying to understand the consequence of an unadjusted optimistic estimate) What happens when a CFO builds commitments around an unadjusted, optimistic timeline estimate?", "acceptedAnswer": { "@type": "Answer", "text": "A cascading delay ripples through every downstream commitment, costing both delay expense and credibility." } }
+    { "@type": "Question", "name": "(Scenario: CFO trying to understand the consequence of an unadjusted optimistic estimate) What happens when a CFO builds commitments around an unadjusted, optimistic timeline estimate?", "acceptedAnswer": { "@type": "Answer", "text": "A cascading delay ripples through every downstream commitment, costing both delay expense and credibility." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to identify which phase of the project timeline is most likely to overrun) Which phase of a custom software development timeline overruns its estimate by the largest margin?", "acceptedAnswer": { "@type": "Answer", "text": "Integration with existing systems, typically overrunning by 25-35%, since undocumented legacy behavior only surfaces once systems are actually connected." } },
+    { "@type": "Question", "name": "(Scenario: CFO who assumes the development-hours line is the riskiest part of a project timeline estimate) Is the coding and development phase the part of a software project timeline most likely to run late?", "acceptedAnswer": { "@type": "Answer", "text": "No, development typically overruns by only 5-10% since it's the most mechanically predictable phase; discovery and integration carry far more risk." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to set a realistic buffer for a fixed launch date tied to a software project timeline) How much schedule buffer should a CFO add to a vendor's custom software development timeline before committing a launch date externally?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 20-25% on top of the vendor's most-likely estimate, reflecting overrun risk concentrated in discovery, integration, and UAT." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to understand how Manifera's delivery model affects project timeline reliability) Does splitting governance in Amsterdam from execution in Vietnam slow down or speed up a custom software development timeline?", "acceptedAnswer": { "@type": "Answer", "text": "It improves reliability rather than raw speed, since Amsterdam-based governance catches requirements and integration risk earlier in discovery, the phase where most overruns originate." } }
   ]
 }
 </script>

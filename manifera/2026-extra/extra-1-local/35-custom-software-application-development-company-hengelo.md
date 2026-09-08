@@ -70,6 +70,10 @@ A codebase rescue is expensive to avoid and expensive to do badly, but the two c
 
 If your last three retrospectives all pointed at the same inherited codebase, another quote from another low-cost vendor is not the fix — a proper diagnosis is. Talk to us about what a rescue plan looks like on our [contact page](https://www.manifera.com/contact-us/).
 
+## Quantifying "How Bad Is It": A Severity Checklist Before Scoping the Rescue
+
+Before pricing a rescue engagement, a genuine diagnosis produces numbers, not adjectives. Four metrics separate a codebase that needs a six-week untangling from one that needs a twelve-week one: cyclomatic complexity per function (anything averaging above 15 signals functions doing too many things to safely modify in isolation), duplicate code percentage (tools like PMD's CPD or SonarQube typically flag anything above 15-20% duplication as the copy-paste-and-rename pattern seen in `processData2_FINAL_fixed`-style codebases), test coverage on business-critical paths specifically — not overall coverage, which can look deceptively healthy while the checkout flow sits at near-zero — and dependency freshness, since packages more than two major versions behind current typically carry unpatched security exposure alongside the maintainability problem. A Hengelo engineering-sector platform integrating with industrial or ERP systems should add a fifth check: undocumented external API calls, since each one is a silent coupling point that can break a downstream process the moment its interface changes. Running these checks during the initial dependency-mapping phase, before any pricing conversation, is what separates a defensible rescue quote from a guess dressed up as a scope.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO deciding between rewrite and rescue) Should we rewrite the platform from scratch or try to rescue the existing codebase?
@@ -92,6 +96,22 @@ Each module gets mapped and its behavior captured in documentation before it's t
 
 Yes for most cases — continuing to build on undocumented legacy code typically costs 2-3x the normal time on every feature, while a diagnosis-first rescue starts reducing that overhead within the first sprint.
 
+### (Scenario: CTO wanting objective proof of codebase severity before approving budget) What objective metrics prove a codebase qualifies as "spaghetti code" needing a rescue engagement?
+
+Cyclomatic complexity averaging above 15 per function, duplicate code above 15-20% as flagged by tools like SonarQube, and near-zero test coverage on business-critical paths specifically, rather than a deceptively healthy overall coverage number.
+
+### (Scenario: CTO at a Hengelo firm operating near Thales's defense-electronics supply chain) Does a legacy code rescue near a defense-electronics-adjacent supply chain need extra security scrutiny?
+
+Yes — the dependency-freshness audit should flag any package more than two major versions behind current, since unpatched dependencies carry both a maintainability and a security exposure risk that matters more when a platform touches supplier or ERP integrations in a sensitive industrial supply chain.
+
+### (Scenario: CTO estimating how long a rescue will take for a mid-sized platform) How long does a typical custom software application rescue take for a mid-sized platform?
+
+Dependency mapping and severity scoring typically take two weeks, followed by eight to sixteen weeks of module-by-module strangler fig work depending on how many duplicated or high-complexity modules the initial diagnosis surfaces.
+
+### (Scenario: CTO worried about scope expanding mid-rescue) What happens if the rescue uncovers more spaghetti code than the initial diagnosis found?
+
+The strangler fig approach absorbs new findings without blowing up the overall timeline, since each module is scoped and tested independently — a newly discovered duplicated function simply becomes another item in the sequence rather than a reason to reopen the whole plan.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +121,11 @@ Yes for most cases — continuing to build on undocumented legacy code typically
     { "@type": "Question", "name": "(Scenario: CTO worried about hiring another bad vendor) How do we avoid ending up with a second unusable codebase after this rescue?", "acceptedAnswer": { "@type": "Answer", "text": "Insist on a diagnosis-first engagement producing a dependency map and documentation before any rewrite work, plus a real test suite built alongside every rebuilt module." } },
     { "@type": "Question", "name": "(Scenario: CTO under pressure to show progress to the board) How quickly can we show the board tangible progress on a legacy rescue?", "acceptedAnswer": { "@type": "Answer", "text": "The strangler fig pattern ships tested, documented modules incrementally, so you typically have shippable evidence within the first two to three sprints." } },
     { "@type": "Question", "name": "(Scenario: CTO concerned about business logic getting lost) What happens to business logic buried in undocumented legacy code during a rescue?", "acceptedAnswer": { "@type": "Answer", "text": "Each module is mapped and its behavior documented before it's touched, preserving business logic rather than risking accidental deletion during rebuild." } },
-    { "@type": "Question", "name": "(Scenario: CTO evaluating cost of a rescue engagement) Is a legacy code rescue cheaper than continuing to patch the existing system?", "acceptedAnswer": { "@type": "Answer", "text": "Usually yes — continuing on undocumented legacy code typically costs 2-3x normal time per feature, while a diagnosis-first rescue reduces that overhead within the first sprint." } }
+    { "@type": "Question", "name": "(Scenario: CTO evaluating cost of a rescue engagement) Is a legacy code rescue cheaper than continuing to patch the existing system?", "acceptedAnswer": { "@type": "Answer", "text": "Usually yes — continuing on undocumented legacy code typically costs 2-3x normal time per feature, while a diagnosis-first rescue reduces that overhead within the first sprint." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting objective proof of codebase severity before approving budget) What objective metrics prove a codebase qualifies as \"spaghetti code\" needing a rescue engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Cyclomatic complexity above 15 per function, duplicate code above 15-20% as flagged by tools like SonarQube, and near-zero test coverage on business-critical paths specifically." } },
+    { "@type": "Question", "name": "(Scenario: CTO at a Hengelo firm operating near Thales's defense-electronics supply chain) Does a legacy code rescue near a defense-electronics-adjacent supply chain need extra security scrutiny?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the dependency-freshness audit should flag packages more than two major versions behind current, since unpatched dependencies carry security exposure alongside maintainability risk." } },
+    { "@type": "Question", "name": "(Scenario: CTO estimating how long a rescue will take for a mid-sized platform) How long does a typical custom software application rescue take for a mid-sized platform?", "acceptedAnswer": { "@type": "Answer", "text": "Two weeks for dependency mapping and severity scoring, followed by eight to sixteen weeks of module-by-module strangler fig work depending on scope." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about scope expanding mid-rescue) What happens if the rescue uncovers more spaghetti code than the initial diagnosis found?", "acceptedAnswer": { "@type": "Answer", "text": "The strangler fig approach absorbs new findings without blowing up the timeline, since each module is scoped and tested independently." } }
   ]
 }
 </script>

@@ -86,6 +86,10 @@ Manifera's Amsterdam team conducted a structured cost re-scoping explicitly mode
 
 Before committing to an airline operations platform budget, insist on a cost estimate modeled against your realistic fleet scale and actual operating jurisdictions, not small-scale internal testing conditions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic airline operations platform cost scoping exercise.
 
+## Where This Goes Wrong: Silent Duty-Time Violations From Delayed Re-Validation
+
+The specific failure mode that separates a compliance engine that survives a real disrupted operating day from one that doesn't is re-validation latency. A compliance engine that only checks duty-time limits when a roster is first published is technically compliant at publication time, but a 90-minute ground delay, a same-day reassignment, or a standby-crew activation each individually mutates a crew member's actual cumulative duty total, and if the engine doesn't re-run rolling-window validation within seconds of each mutation, a crew member can legally exceed FAA Part 117 or EASA FTL limits without the system — or dispatch — ever being alerted, because nothing re-checked after the schedule changed. This is a genuinely different engineering problem than validating a static roster: it requires an event-driven architecture where every delay, reassignment, and standby activation triggers immediate re-validation against that crew member's actual rolling 7-day and 28-day duty totals, not a nightly batch reconciliation job. A batch-based design that re-validates once every 24 hours will look correct in testing against a calm schedule and will silently accumulate real violations on a genuinely disrupted day, precisely the day a regulator is most likely to ask for the duty-time record. Engineering this correctly typically adds 10-15% to the compliance-engine budget over a batch-validated design, and it's the single highest-leverage line item for an airline that has ever had a regulatory finding tied to duty-time record-keeping.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial airline operations platform estimate) Why do airline operations platform cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ Genuine operational reliability requires integrating weather, ATC, and gate stat
 
 Duty-time limits, airworthiness directives, and reporting requirements differ meaningfully between regulators, requiring genuinely configurable compliance architecture with real ongoing operational complexity.
 
+### (Scenario: airline leadership deciding between an established crew-scheduling suite like Sabre or AIMS and a custom build) When does a custom airline operations platform outperform an established crew-scheduling and MRO suite?
+
+Once a fleet operates under more than one regulator or carries cross-leased aircraft, established suites typically charge per-module licensing for multi-regulator configurability that few packages support natively, making a custom compliance engine cost-competitive for any carrier whose fleet answers to two or more regulatory authorities simultaneously.
+
+### (Scenario: CTO estimating timeline before committing to a rollout date) How long does building a production-ready airline operations platform typically take?
+
+A realistic timeline runs 8-12 months for an MVP covering single-regulator crew-scheduling compliance and core MRO tracking, with event-driven re-validation architecture and a second regulator's ruleset typically adding another 3-5 months before the platform is genuinely disruption-ready.
+
+### (Scenario: compliance officer preparing for a regulatory audit) What duty-time and MRO audit trail does a regulator expect to see during a compliance review?
+
+A regulator expects a complete causal record showing which specific delay, reassignment, or standby activation triggered each re-validation and what the resulting duty total was at that moment, not just a final compliant-or-not status, which is why the compliance engine's event log needs to be queryable and retained for the full audit window the applicable regulator requires.
+
+### (Scenario: engineering lead sizing the team for a multi-regulator build) How many engineers does a production-ready multi-regulator airline operations platform typically require?
+
+Roughly 8-11 engineers split across the compliance engine, MRO and directive tracking, and real-time data integration workstreams, with the compliance engine alone typically requiring 3-4 dedicated engineers given the event-driven re-validation architecture real fleet scale requires.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Duty-time limits, airworthiness directives, and reporting requirements differ me
     { "@type": "Question", "name": "(Scenario: engineering lead scoping the compliance engine) Why is a compliance engine harder to build correctly at scale than it appears in small-scale testing?", "acceptedAnswer": { "@type": "Answer", "text": "Compliance validation must re-run continuously across an entire fleet, requiring different architecture at scale than a calm test schedule needs." } },
     { "@type": "Question", "name": "(Scenario: maintenance lead scoping MRO systems) Why does MRO and airworthiness-directive tracking require more than typical maintenance-record database design?", "acceptedAnswer": { "@type": "Answer", "text": "Correctly reflecting applicable directives per aircraft, especially cross-jurisdiction aircraft, requires robust, regulator-specific tracking." } },
     { "@type": "Question", "name": "(Scenario: CTO planning real-time data integration) Why does real-time operational data integration deserve substantial, ongoing engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Genuine reliability requires resilient integration with weather, ATC, and gate status data, including graceful degradation handling." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for multi-jurisdiction operations) Why does operating across multiple regulators add real platform cost?", "acceptedAnswer": { "@type": "Answer", "text": "Duty-time limits and directive requirements differ between regulators, requiring genuinely configurable compliance architecture." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for multi-jurisdiction operations) Why does operating across multiple regulators add real platform cost?", "acceptedAnswer": { "@type": "Answer", "text": "Duty-time limits and directive requirements differ between regulators, requiring genuinely configurable compliance architecture." } },
+    { "@type": "Question", "name": "(Scenario: airline leadership deciding between an established crew-scheduling suite like Sabre or AIMS and a custom build) When does a custom airline operations platform outperform an established crew-scheduling and MRO suite?", "acceptedAnswer": { "@type": "Answer", "text": "Once a fleet operates under more than one regulator or carries cross-leased aircraft, per-module licensing for multi-regulator configurability makes a custom compliance engine cost-competitive." } },
+    { "@type": "Question", "name": "(Scenario: CTO estimating timeline before committing to a rollout date) How long does building a production-ready airline operations platform typically take?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 8-12 months for a single-regulator MVP, with event-driven re-validation architecture and a second regulator's ruleset adding another 3-5 months." } },
+    { "@type": "Question", "name": "(Scenario: compliance officer preparing for a regulatory audit) What duty-time and MRO audit trail does a regulator expect to see during a compliance review?", "acceptedAnswer": { "@type": "Answer", "text": "A complete causal record showing which delay, reassignment, or standby activation triggered each re-validation and the resulting duty total, not just a final compliant-or-not status." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead sizing the team for a multi-regulator build) How many engineers does a production-ready multi-regulator airline operations platform typically require?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 8-11 engineers across the compliance engine, MRO tracking, and data integration, with 3-4 dedicated to the compliance engine alone." } }
   ]
 }
 </script>

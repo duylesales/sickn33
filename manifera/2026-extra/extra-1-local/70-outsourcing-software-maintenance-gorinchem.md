@@ -68,6 +68,10 @@ Manifera ran a structured four-week knowledge-transfer phase before the maintena
 
 Choosing a maintenance vendor on hourly rate alone, without a knowledge-transfer phase or defined SLA, routinely produces slow, improvised incident response on exactly the system the business can least afford to have go dark — an operational and safety exposure that a maintenance contract exists specifically to prevent. A structured continuity plan costs a defined knowledge-transfer investment upfront, a fraction of the cost of one extended outage. [Talk to Manifera about a continuity-first maintenance plan](https://www.manifera.com/contact-us/).
 
+## A Week-by-Week Breakdown of the Knowledge-Transfer Phase
+
+A knowledge-transfer phase that actually works follows a specific sequence, not an open-ended "getting familiar with the codebase" period. Week one focuses on system mapping: every module, integration point, and external data feed — AIS vessel-tracking feeds, port-authority APIs, customs systems — gets inventoried and cross-referenced against what little existing documentation survives. Weeks two and three shift to structured interviews with anyone who has ever touched the system, even informally, plus characterization testing that captures actual current behavior rather than assumed behavior, which for a vessel-tracking platform often surfaces edge cases around signal loss, AIS data gaps, and manual override procedures that were never written down anywhere. Week four produces the actual deliverable: a documented runbook covering common failure modes, escalation triggers, and step-by-step recovery procedures, validated against the incoming team's ability to follow it without the outgoing knowledge-holder present. Only after this four-week phase closes does the maintenance SLA clock formally start — a sequencing choice that matters, because starting SLA commitments before the incoming team genuinely understands the system is how a maintenance contract quietly becomes a series of missed response-time commitments during exactly the incidents it exists to prevent.
+
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering choosing a maintenance vendor for an undocumented legacy system) What should come before a maintenance contract formally starts on a poorly documented system?
@@ -90,6 +94,22 @@ Extended downtime on business-critical software, which for operationally sensiti
 
 Rarely, once the cost of slow, improvised incident response on an undocumented system is factored in — a structured knowledge-transfer investment upfront is typically far cheaper than one extended outage.
 
+### (Scenario: VP of Engineering wanting a concrete timeline for knowledge transfer) How long does a proper knowledge-transfer phase take before a maintenance SLA clock should start?
+
+A structured phase typically runs four weeks: system mapping in week one, structured interviews and characterization testing in weeks two and three, and a validated runbook deliverable in week four, before any SLA response-time clock formally begins.
+
+### (Scenario: VP of Engineering worried about vessel-tracking data feed integration risk) What integration points create the most maintenance risk for a vessel-tracking platform specifically?
+
+AIS feed handling, port-authority APIs, and customs system integrations carry the most risk, particularly the edge cases around signal loss, AIS data gaps, and manual override procedures that are rarely documented anywhere until a knowledge-transfer audit surfaces them explicitly.
+
+### (Scenario: VP of Engineering defining SLA response tiers for a safety-adjacent maritime system) What response-time tiers should a maintenance SLA define for a maritime-tracking system tied to safety and operational continuity?
+
+At minimum, a critical tier for production-down or safety-relevant tracking failures with a response inside 30-60 minutes, and a secondary tier for degraded-but-functional issues on a same-business-day response, with named escalation for both rather than a single blanket commitment.
+
+### (Scenario: VP of Engineering wanting proof the incoming team actually understands the system before go-live) How do we verify the incoming maintenance team actually understands the system before the knowledge-transfer phase ends?
+
+Run an acceptance test: have the incoming team walk through the documented runbook and resolve a simulated incident without the outgoing knowledge-holder present, and only sign off the transfer once they can do so independently.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +119,11 @@ Rarely, once the cost of slow, improvised incident response on an undocumented s
     { "@type": "Question", "name": "(Scenario: VP of Engineering worried about slow incident response) How do we ensure a maintenance vendor responds quickly to a critical incident?", "acceptedAnswer": { "@type": "Answer", "text": "Require a defined incident-response SLA with named escalation paths and accountable response times, agreed in writing beforehand." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering trying to reduce long-term system fragility) How does outsourced maintenance actually reduce a system's fragility over time rather than just keeping it running?", "acceptedAnswer": { "@type": "Answer", "text": "By treating documentation as an explicit, ongoing deliverable, so every fix closes a knowledge gap permanently instead of leaving the system undocumented." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering estimating the risk of an undocumented critical system) What's actually at risk if a maintenance vendor doesn't understand the system before an incident occurs?", "acceptedAnswer": { "@type": "Answer", "text": "Extended downtime on business-critical software, which for operationally sensitive systems carries direct operational and safety exposure." } },
-    { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating maintenance vendors on cost alone) Is the cheapest hourly maintenance rate usually the best choice for a critical legacy system?", "acceptedAnswer": { "@type": "Answer", "text": "Rarely, once the cost of slow, improvised incident response on an undocumented system is factored in against a structured knowledge-transfer investment upfront." } }
+    { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating maintenance vendors on cost alone) Is the cheapest hourly maintenance rate usually the best choice for a critical legacy system?", "acceptedAnswer": { "@type": "Answer", "text": "Rarely, once the cost of slow, improvised incident response on an undocumented system is factored in against a structured knowledge-transfer investment upfront." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering wanting a concrete timeline for knowledge transfer) How long does a proper knowledge-transfer phase take before a maintenance SLA clock should start?", "acceptedAnswer": { "@type": "Answer", "text": "Typically four weeks: system mapping, structured interviews and characterization testing, then a validated runbook deliverable before the SLA clock starts." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering worried about vessel-tracking data feed integration risk) What integration points create the most maintenance risk for a vessel-tracking platform specifically?", "acceptedAnswer": { "@type": "Answer", "text": "AIS feed handling, port-authority APIs, and customs integrations, particularly signal-loss and data-gap edge cases rarely documented until a knowledge-transfer audit surfaces them." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering defining SLA response tiers for a safety-adjacent maritime system) What response-time tiers should a maintenance SLA define for a maritime-tracking system tied to safety and operational continuity?", "acceptedAnswer": { "@type": "Answer", "text": "A critical tier for production-down or safety-relevant failures with a 30-60 minute response, and a secondary same-business-day tier for degraded-but-functional issues." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering wanting proof the incoming team actually understands the system before go-live) How do we verify the incoming maintenance team actually understands the system before the knowledge-transfer phase ends?", "acceptedAnswer": { "@type": "Answer", "text": "Run an acceptance test where the incoming team resolves a simulated incident using the documented runbook without the outgoing knowledge-holder present." } }
   ]
 }
 </script>

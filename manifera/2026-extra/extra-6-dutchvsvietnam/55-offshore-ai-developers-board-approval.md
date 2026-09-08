@@ -74,6 +74,20 @@ A board proposal that stalls on unanswered risk questions typically costs six to
 
 If your board proposal is still a week away, the fastest way to strengthen it is answering these five questions before someone in the room asks them. [Talk to Manifera about building a board-ready proposal](https://www.manifera.com/contact-us/).
 
+## Budget Structuring: Sizing the Pilot-to-Scale AI Engagement
+
+European boards approving offshore AI budgets for the first time consistently underestimate one line item: governance overhead, which should run 8-12% of total engagement cost, not the 2-3% CFOs typically pencil in from a standard staffing contract. A defensible budget for an offshore AI development engagement breaks into three bands: a six-to-eight week pilot at €35,000-€60,000 covering a scoped proof-of-concept with 2-3 Vietnam-based AI engineers and one Amsterdam-based governance lead; a scale-phase commitment released only after pilot success criteria are met, typically €15,000-€25,000 per month per 3-person pod; and a contingency reserve of 10% held back for model retraining or dataset licensing surprises that surface after month two.
+
+Checklist for the CFO building the line-item budget before the board meeting:
+1. Separate governance cost from execution cost — boards fund the former more readily once they understand it's what makes the latter enforceable.
+2. Price the pilot as a fixed-fee milestone, not time-and-materials — boards distrust open-ended AI spend.
+3. Include a named exit clause with pro-rated refund terms for unused pilot budget.
+4. Attach the DPA and IP transfer terms as budget appendices, not separate legal documents — boards approve faster when risk and cost sit on the same page.
+
+## After Approval: The 90-Day Governance Checkpoint Boards Should Mandate
+
+Approval isn't the finish line — it's the point where governance risk shifts from "will this get funded" to "will this get monitored." Boards that approve an offshore AI engagement without mandating a structured checkpoint schedule see scope drift start within the first 60 days in roughly a third of engagements, based on patterns Manifera has observed across pilot-to-scale AI programs. The fix is a written 90-day checkpoint clause built into the approval itself, not left to informal quarterly reporting: at day 30, the Amsterdam governance lead reports pilot velocity against the original success criteria and flags any dataset or compliance exceptions; at day 60, the CFO reviews cost variance against the fixed-fee pilot budget, with anything over 8% triggering a scope conversation before it compounds; at day 90, the board receives a go/no-go recommendation for scale-phase funding, backed by the same named-entity accountability structure used in the original proposal. Boards that build this cadence into the approval resolution — rather than trusting it to ad hoc check-ins — cut the rate of AI engagements that quietly stall post-approval by a wide margin, because the reporting obligation exists on paper before the first invoice is due, not as a favor the vendor agrees to later.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO preparing for a board meeting next week) What's the single most common reason offshore AI proposals get rejected by European boards?
@@ -96,6 +110,22 @@ Reframe the question: the board isn't approving outsourcing to Vietnam, they're 
 
 A named EU-jurisdiction accountable entity, a GDPR-structured Data Processing Agreement summary, explicit IP transfer terms, and a defined pilot-phase exit cost. Manifera provides all four as standard engagement documentation.
 
+### (Scenario: CFO who just secured board approval) What should the board mandate the CFO report back after approval, and on what schedule?
+
+A written 90-day checkpoint: pilot velocity and compliance exceptions at day 30, cost variance against the fixed-fee budget at day 60, and a go/no-go recommendation for scale-phase funding at day 90. Building this into the approval resolution prevents the engagement from stalling quietly once board attention moves elsewhere.
+
+### (Scenario: CFO comparing specialist AI rates to general offshore staffing) Do offshore AI developers in Vietnam cost more than general offshore software developers?
+
+Yes, typically 20-35% more per engineer, reflecting the narrower specialist pool for model development and evaluation work versus general application development. Boards should see this rate differential broken out as a separate line item, not blended into a single average day rate.
+
+### (Scenario: CFO worried about contingency spend after the pilot budget is committed) What happens if the AI model needs retraining after the pilot budget is already spent?
+
+A well-structured pilot budget holds back a 10% contingency reserve specifically for retraining or dataset licensing surprises that surface after month two, so this scenario is funded before it happens rather than requiring an emergency budget request back to the board.
+
+### (Scenario: CFO sizing the team before submitting the proposal) How many Vietnam-based AI engineers does a typical pilot-phase engagement actually need?
+
+Most six-to-eight week pilots run efficiently with 2-3 Vietnam-based AI engineers paired with one Amsterdam-based governance lead — enough to hit a scoped proof-of-concept without the overhead of a larger pod the board hasn't yet approved funding to scale.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +135,11 @@ A named EU-jurisdiction accountable entity, a GDPR-structured Data Processing Ag
     { "@type": "Question", "name": "(Scenario: CFO whose first proposal was already tabled) Our proposal was tabled once already. How do we rebuild it for a second attempt?", "acceptedAnswer": { "@type": "Answer", "text": "Rebuild around a governance structure that pre-answers the risk questions with named entities and documented terms, rather than reworking the cost case." } },
     { "@type": "Question", "name": "(Scenario: CFO wanting to limit downside exposure) How do we present the downside scenario so the board isn't approving an open-ended commitment?", "acceptedAnswer": { "@type": "Answer", "text": "Structure the engagement with a scoped pilot phase and defined success criteria before full budget release, so the board is approving a bounded initial cost." } },
     { "@type": "Question", "name": "(Scenario: CFO asked why Vietnam specifically) How do we answer a board member who asks \"why Vietnam\" without sounding defensive?", "acceptedAnswer": { "@type": "Answer", "text": "Reframe the question: the board is approving a Netherlands-governed initiative where execution happens to be efficiently delivered offshore, with accountability-bearing decisions retained in an EU jurisdiction." } },
-    { "@type": "Question", "name": "(Scenario: CFO needing documentation ready before the meeting) What documentation should be in hand before walking into the board meeting?", "acceptedAnswer": { "@type": "Answer", "text": "A named EU-jurisdiction accountable entity, a GDPR-structured Data Processing Agreement summary, explicit IP transfer terms, and a defined pilot-phase exit cost." } }
+    { "@type": "Question", "name": "(Scenario: CFO needing documentation ready before the meeting) What documentation should be in hand before walking into the board meeting?", "acceptedAnswer": { "@type": "Answer", "text": "A named EU-jurisdiction accountable entity, a GDPR-structured Data Processing Agreement summary, explicit IP transfer terms, and a defined pilot-phase exit cost." } },
+    { "@type": "Question", "name": "(Scenario: CFO who just secured board approval) What should the board mandate the CFO report back after approval, and on what schedule?", "acceptedAnswer": { "@type": "Answer", "text": "A written 90-day checkpoint: pilot velocity and compliance exceptions at day 30, cost variance at day 60, and a go/no-go recommendation for scale-phase funding at day 90." } },
+    { "@type": "Question", "name": "(Scenario: CFO comparing specialist AI rates to general offshore staffing) Do offshore AI developers in Vietnam cost more than general offshore software developers?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, typically 20-35% more per engineer, reflecting the narrower specialist pool for model development and evaluation work versus general application development." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried about contingency spend after the pilot budget is committed) What happens if the AI model needs retraining after the pilot budget is already spent?", "acceptedAnswer": { "@type": "Answer", "text": "A well-structured pilot budget holds back a 10% contingency reserve specifically for retraining or dataset licensing surprises that surface after month two." } },
+    { "@type": "Question", "name": "(Scenario: CFO sizing the team before submitting the proposal) How many Vietnam-based AI engineers does a typical pilot-phase engagement actually need?", "acceptedAnswer": { "@type": "Answer", "text": "Most six-to-eight week pilots run efficiently with 2-3 Vietnam-based AI engineers paired with one Amsterdam-based governance lead." } }
   ]
 }
 </script>

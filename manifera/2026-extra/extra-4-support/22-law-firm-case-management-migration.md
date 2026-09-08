@@ -78,6 +78,10 @@ Cabinet Juridique Alsacien completed its migration with zero ethical wall failur
 
 Before migrating a case management system, conduct a complete ethical wall audit and verify every restriction transfers correctly before any real client data moves — this isn't a general access control configuration task, it's a professional conduct requirement with real consequences if it fails silently. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a carefully verified legal case management migration.
 
+## Technical Deep-Dive: Modeling Ethical Walls as Attribute-Based, Not Role-Based, Access Control
+
+Most off-the-shelf case management platforms ship with role-based access control (RBAC) as the default and matter-specific exceptions bolted on as a secondary feature, which is precisely backwards for firms with more than a handful of active ethical walls. The technically correct model is attribute-based access control (ABAC): access is evaluated at query time against a combination of attributes — user identity, matter identity, and an explicit exclusion table — rather than baked into a static role assignment. In practice this means a dedicated matter-exclusions table (attorney, matter, reason, effective date, authorized by) checked on every single data access to that matter, not just at login, since a role-based system can correctly block a menu item while still leaving the underlying record accessible through a search result, a shared calendar entry, or a billing report that wasn't built with the same exclusion check. A custom software engineering team building or configuring this layer should also implement negative-result logging — recording every time an exclusion check actually blocks an access attempt, not just successful accesses — since an attorney's blocked attempt to open an excluded matter is itself a signal worth a conflicts counsel reviewing, whether the attempt was accidental or not. Web application development teams unfamiliar with legal-specific access patterns commonly implement exclusions only at the primary case file view, missing the search index, reporting layer, and calendar integration as separate leak points that need the identical check applied.
+
 ## Frequently Asked Questions
 
 ### (Scenario: IT manager planning a law firm system migration) Why does a law firm's case management migration need more care than a typical enterprise system migration?
@@ -100,6 +104,22 @@ Each specific restriction should be individually verified — confirming the spe
 
 Ethical wall verification should be treated as a non-negotiable gate in the migration sequence, with the timeline built around getting it right — compressing this specific verification step to save time is exactly the condition under which a silent, serious failure is most likely to occur.
 
+### (Scenario: IT director asking about RBAC vs ABAC) What's the difference between role-based and attribute-based access control for ethical walls, and which does our case management system need?
+
+Role-based access control alone can't represent matter-specific exceptions cleanly; attribute-based access control, checking user, matter, and an explicit exclusion table at every data access, is the correct model for firms with more than a few active ethical walls.
+
+### (Scenario: IT manager worried about leak points beyond the main case file view) Besides the main case file screen, where else can an ethical wall accidentally leak access in a case management system?
+
+Search indexes, shared calendars, billing reports, and document management integrations are common leak points, since each may query matter data independently of the primary case file view and needs the identical exclusion check applied, not just the main screen.
+
+### (Scenario: conflicts counsel asking about detecting attempted access) Should we track when an excluded attorney attempts to access a matter they're walled off from, even if the system correctly blocks it?
+
+Yes — logging blocked access attempts, not just successful ones, gives conflicts counsel a signal worth reviewing regardless of whether the attempt was accidental, and this negative-result logging is often missing from off-the-shelf case management platform configurations by default.
+
+### (Scenario: firm choosing between custom software and an off-the-shelf platform) Should a law firm with complex ethical wall needs use an off-the-shelf case management platform or invest in custom software engineering for its access control layer?
+
+An off-the-shelf platform can work if its access control model natively supports attribute-based, matter-specific exceptions checked at every access point — if it only offers role-based access, a firm with more than a handful of active walls should budget for custom engineering work on top of it rather than assume the default access model is sufficient.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -109,7 +129,11 @@ Ethical wall verification should be treated as a non-negotiable gate in the migr
     { "@type": "Question", "name": "(Scenario: managing partner worried about incomplete ethical wall documentation) What if our firm doesn't have a complete, current record of all our ethical walls?", "acceptedAnswer": { "@type": "Answer", "text": "A proper migration should include reconstructing and documenting the complete current list through system audit and staff interviews first." } },
     { "@type": "Question", "name": "(Scenario: IT director evaluating a new case management platform) How do I know if a new platform can actually support our firm's ethical wall requirements?", "acceptedAnswer": { "@type": "Answer", "text": "Verify the platform's access control model explicitly supports matter-specific exceptions, not just a simpler role hierarchy." } },
     { "@type": "Question", "name": "(Scenario: conflicts counsel trying to verify migration safety) How should ethical wall transfer actually be verified during a migration?", "acceptedAnswer": { "@type": "Answer", "text": "Each restriction should be individually verified in the new system before any real client data for that matter is migrated." } },
-    { "@type": "Question", "name": "(Scenario: managing partner trying to balance migration speed and safety) Should we compress our migration timeline to minimize disruption to active litigation matters?", "acceptedAnswer": { "@type": "Answer", "text": "Ethical wall verification should be a non-negotiable gate — compressing it is exactly when a silent, serious failure is most likely." } }
+    { "@type": "Question", "name": "(Scenario: managing partner trying to balance migration speed and safety) Should we compress our migration timeline to minimize disruption to active litigation matters?", "acceptedAnswer": { "@type": "Answer", "text": "Ethical wall verification should be a non-negotiable gate — compressing it is exactly when a silent, serious failure is most likely." } },
+    { "@type": "Question", "name": "(Scenario: IT director asking about RBAC vs ABAC) What's the difference between role-based and attribute-based access control for ethical walls, and which does our case management system need?", "acceptedAnswer": { "@type": "Answer", "text": "Role-based access control can't represent matter-specific exceptions cleanly; attribute-based access control checked at every data access is the correct model." } },
+    { "@type": "Question", "name": "(Scenario: IT manager worried about leak points beyond the main case file view) Besides the main case file screen, where else can an ethical wall accidentally leak access in a case management system?", "acceptedAnswer": { "@type": "Answer", "text": "Search indexes, shared calendars, billing reports, and document management integrations are common leak points needing the identical check." } },
+    { "@type": "Question", "name": "(Scenario: conflicts counsel asking about detecting attempted access) Should we track when an excluded attorney attempts to access a matter they're walled off from, even if the system correctly blocks it?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — logging blocked access attempts gives conflicts counsel a signal worth reviewing regardless of whether the attempt was accidental." } },
+    { "@type": "Question", "name": "(Scenario: firm choosing between custom software and an off-the-shelf platform) Should a law firm with complex ethical wall needs use an off-the-shelf case management platform or invest in custom software engineering for its access control layer?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on whether the platform natively supports attribute-based, matter-specific exceptions at every access point, or only role-based access." } }
   ]
 }
 </script>

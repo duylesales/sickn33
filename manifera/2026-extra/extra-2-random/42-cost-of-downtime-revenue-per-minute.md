@@ -68,6 +68,17 @@ Manifera's Amsterdam team built a revenue-per-minute model calibrated to Verhoev
 
 An unpriced downtime risk is a company burning cash on an insurance policy it never bought — a mid-market platform with three to five unplanned outages a year at even a conservative €15,000 per incident is absorbing €45,000-€75,000 in direct lost revenue annually, before counting customer churn and support overhead, and every year that resilience investment gets deprioritized because nobody attached a number to it is another year of that exposure compounding unaddressed. A properly architected failover and monitoring layer typically costs a fraction of two years of that unpriced risk and pays for itself the first time it prevents an outage during peak trading. [Talk to Manifera](https://www.manifera.com/contact-us/) about calculating your revenue-per-minute exposure.
 
+## Beyond Direct Revenue: The Second-Order Cost Categories Most Models Miss
+
+A revenue-per-minute figure calculated only from lost transactions during the outage window systematically understates true cost. A complete model adds four more categories:
+
+- **Post-outage cart abandonment.** Conversion rates on the affected funnel typically stay depressed 5-15% below baseline for 24-72 hours after a checkout outage, as burned customers hesitate to retry the same purchase — this "shadow" loss commonly exceeds the direct revenue lost during the outage itself.
+- **Support cost multiplier.** Each outage-driven support ticket costs roughly 2-3x a routine ticket to resolve, since agents need incident context and often issue goodwill credits or discounts to retain the customer relationship.
+- **SLA and contractual penalty exposure.** For any B2B or enterprise-facing system, check outage duration against every signed SLA — penalty clauses often trigger cumulative credits (a common structure is service credits equal to a percentage of monthly fees per hour of downtime past the committed threshold) that compound faster than the direct revenue loss.
+- **Churn attribution.** Track whether customers active during a major outage show elevated 90-day churn versus a matched cohort that wasn't affected — mid-market SaaS platforms Manifera has audited typically see a 2-4 percentage point churn lift in the affected cohort, which dwarfs the incident-window revenue loss when annualized against customer lifetime value.
+
+A board-ready downtime model should show all five categories on one line, not just the transactions lost while the system was actually down.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO building a business case for infrastructure investment) How do we calculate revenue-per-minute for our business?
@@ -90,6 +101,22 @@ Ask for their mean-time-to-recovery track record, a documented and tested rollba
 
 Not if it's scoped correctly — resilience work is typically a defined, time-boxed engagement run in parallel with feature delivery by a separate pod, not a company-wide pause. Manifera structures these as focused sprints so the roadmap keeps moving while the risk gets closed.
 
+### (Scenario: CFO trying to quantify customer churn caused by a past outage) How do we prove an outage actually caused customer churn versus normal attrition?
+
+Compare 90-day retention for customers active during the outage against a matched cohort with similar usage and tenure who weren't affected. A statistically meaningful gap between the two groups isolates the outage's churn contribution from baseline attrition, and this comparison is usually possible retroactively from existing customer analytics data.
+
+### (Scenario: CFO negotiating enterprise contracts with uptime SLA clauses) How should SLA penalty exposure factor into the decision to invest in resilience architecture?
+
+Model cumulative SLA credit exposure across all enterprise contracts at current historical outage frequency, then compare that annualized figure directly against the cost of the resilience investment — SLA credits are contractually guaranteed cash outflows, which makes them one of the most defensible line items for justifying infrastructure spend to a board.
+
+### (Scenario: CFO reviewing customer support costs after a series of incidents) Why does support cost spike disproportionately after an outage compared to the outage's actual duration?
+
+Because agents spend time re-explaining the incident, verifying whether the customer's specific transaction was affected, and frequently issuing retention credits or discounts — a 47-minute outage can generate a support-ticket backlog that takes days to fully clear, and each of those tickets costs more to resolve than a routine inquiry.
+
+### (Scenario: CFO deciding how far back to model cart-abandonment drag after an outage) How long does depressed conversion typically persist after a checkout outage before returning to baseline?
+
+Most mid-market e-commerce platforms see conversion on the affected funnel return to baseline within 24 to 72 hours, though the exact recovery window depends on outage severity and how visibly the company communicated about the incident during and after it.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +126,11 @@ Not if it's scoped correctly — resilience work is typically a defined, time-bo
     { "@type": "Question", "name": "(Scenario: CFO deciding between competing infrastructure investment proposals) How do we prioritize which systems need resilience investment first?", "acceptedAnswer": { "@type": "Answer", "text": "Rank systems by their revenue-per-minute exposure multiplied by their historical or estimated failure probability, not by engineering's subjective sense of fragility. That produces a risk-adjusted priority list a board can actually approve budget against." } },
     { "@type": "Question", "name": "(Scenario: CFO reviewing a postmortem after an outage) What should a proper downtime postmortem include beyond the technical root cause?", "acceptedAnswer": { "@type": "Answer", "text": "It should include the calculated revenue impact, the customer-facing cost such as support volume and cart abandonment, and a specific architectural remediation with a cost estimate. A postmortem without a euro figure is an engineering document, not a financial one." } },
     { "@type": "Question", "name": "(Scenario: CFO evaluating whether a vendor takes uptime seriously) What should we ask a vendor to prove they take downtime risk seriously?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for their mean-time-to-recovery track record, a documented and tested rollback process, and how their architecture eliminates single points of failure in revenue-critical paths. A vendor without concrete answers is treating uptime as a marketing claim rather than an engineered outcome." } },
-    { "@type": "Question", "name": "(Scenario: CFO deciding whether resilience investment competes with feature roadmap budget) Does investing in resilience mean slowing down the feature roadmap?", "acceptedAnswer": { "@type": "Answer", "text": "Not if it's scoped correctly. Resilience work is typically a defined, time-boxed engagement run in parallel with feature delivery by a separate pod, not a company-wide pause, so the roadmap keeps moving while the risk gets closed." } }
+    { "@type": "Question", "name": "(Scenario: CFO deciding whether resilience investment competes with feature roadmap budget) Does investing in resilience mean slowing down the feature roadmap?", "acceptedAnswer": { "@type": "Answer", "text": "Not if it's scoped correctly. Resilience work is typically a defined, time-boxed engagement run in parallel with feature delivery by a separate pod, not a company-wide pause, so the roadmap keeps moving while the risk gets closed." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to quantify customer churn caused by a past outage) How do we prove an outage actually caused customer churn versus normal attrition?", "acceptedAnswer": { "@type": "Answer", "text": "Compare 90-day retention for customers active during the outage against a matched cohort with similar usage and tenure who weren't affected. A statistically meaningful gap isolates the outage's churn contribution from baseline attrition." } },
+    { "@type": "Question", "name": "(Scenario: CFO negotiating enterprise contracts with uptime SLA clauses) How should SLA penalty exposure factor into the decision to invest in resilience architecture?", "acceptedAnswer": { "@type": "Answer", "text": "Model cumulative SLA credit exposure across all enterprise contracts at current historical outage frequency, then compare that annualized figure directly against the cost of the resilience investment. SLA credits are contractually guaranteed cash outflows." } },
+    { "@type": "Question", "name": "(Scenario: CFO reviewing customer support costs after a series of incidents) Why does support cost spike disproportionately after an outage compared to the outage's actual duration?", "acceptedAnswer": { "@type": "Answer", "text": "Agents spend time re-explaining the incident, verifying whether the customer's specific transaction was affected, and frequently issuing retention credits, so a short outage can generate a support-ticket backlog that takes days to clear." } },
+    { "@type": "Question", "name": "(Scenario: CFO deciding how far back to model cart-abandonment drag after an outage) How long does depressed conversion typically persist after a checkout outage before returning to baseline?", "acceptedAnswer": { "@type": "Answer", "text": "Most mid-market e-commerce platforms see conversion on the affected funnel return to baseline within 24 to 72 hours, though the exact recovery window depends on outage severity and how visibly the company communicated about it." } }
   ]
 }
 </script>

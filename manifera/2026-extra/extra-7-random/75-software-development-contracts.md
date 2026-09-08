@@ -70,6 +70,12 @@ Manifera was engaged to rebuild the affected components under a contract with ex
 
 Resolving an ambiguous IP or liability clause after a dispute, an acquisition, or a fundraising round surfaces it typically costs many multiples of what proper contract review would have cost at signing, in legal fees, delayed timelines, and in the worst cases, genuine loss of leverage over code the company believed it owned outright. [Talk to Manifera](https://www.manifera.com/contact-us/) about software development contracts drafted with the precision that protects you long after the project ships.
 
+## A Contract Review Checklist: Five Clauses to Flag Before Signature
+
+Beyond the five terms above, a CEO's counsel should specifically flag these clause patterns in any software development contract, since each is a common way protective-sounding language quietly fails: (1) a "background IP" definition broad enough to sweep in components built specifically for the client, not just the vendor's genuinely pre-existing tools — vague scoping here is how a vendor retains rights to custom work; (2) an indemnification clause that only covers third-party IP infringement claims but excludes data breach or security failure liability, leaving the highest-probability real-world risk uncovered; (3) an assignment or change-of-control clause that lets the vendor transfer the contract (and therefore access to the codebase) to a third party without client consent; (4) a governing-law and dispute-resolution clause naming a jurisdiction where enforcing IP assignment is meaningfully weaker than the client's home jurisdiction, which matters more than it seems for offshore engagements specifically; and (5) confidentiality language with no defined survival period, meaning obligations technically lapse the moment the contract itself ends.
+
+None of these five require rewriting the whole contract — each is typically a single clause amendment a competent counsel can negotiate before signing, and every one of them costs nothing to fix upfront against a potentially significant cost to litigate later.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CEO assuming that paying for custom software automatically means owning it outright) Does paying for custom software development automatically mean the client owns all the resulting IP?
@@ -92,6 +98,22 @@ Because a cap set at total fees paid may be reasonable for a small internal tool
 
 Because real-time repository access lets the client verify progress continuously, avoid vendor lock-in, and removes any dispute over what was actually delivered versus promised.
 
+### (Scenario: CEO reviewing a contract's background IP definition that seems broader than expected) What is a "background IP" clause and why should a CEO scrutinize its scope in a software development contract?
+
+Background IP refers to a vendor's genuinely pre-existing tools and frameworks, not work built specifically for the client — a definition broad enough to sweep in custom components is a common way a vendor quietly retains rights to IP the client believes it owns outright.
+
+### (Scenario: CEO negotiating indemnification terms for a project handling customer data) Does a standard indemnification clause in a software development contract typically cover data breach liability?
+
+Often not — most standard indemnification language covers only third-party IP infringement claims, leaving data breach and security failure liability, the more probable real-world risk, explicitly uncovered unless negotiated in separately.
+
+### (Scenario: CEO concerned a vendor could transfer the contract to a third party without consent) Can a software development vendor transfer or assign the contract to another company without the client's approval?
+
+Only if the contract's assignment clause allows it — a CEO should require that any assignment or change-of-control transferring the contract, and therefore access to the codebase, needs explicit client consent rather than happening automatically.
+
+### (Scenario: CEO evaluating whether governing law matters for an offshore software development contract) Why does the governing-law clause matter more for an offshore software development contract than a domestic one?
+
+Because enforcing IP assignment and confidentiality obligations can be meaningfully weaker in some jurisdictions than others, so a CEO should confirm the governing law and dispute-resolution venue offer real enforceability, not just administrative convenience for the vendor.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +123,11 @@ Because real-time repository access lets the client verify progress continuously
     { "@type": "Question", "name": "(Scenario: CEO reviewing a vendor contract that references the vendor's own reusable tools) Why does a contract need to distinguish pre-existing vendor IP from IP created specifically for the client?", "acceptedAnswer": { "@type": "Answer", "text": "Without a clear distinction, the client may only get a license to a component rather than outright ownership." } },
     { "@type": "Question", "name": "(Scenario: CEO evaluating whether a contract's warranty period offers real protection) Why is a thirty-day warranty window often insufficient for software development contracts?", "acceptedAnswer": { "@type": "Answer", "text": "Many defects only surface under real production load, which a short post-delivery window doesn't capture." } },
     { "@type": "Question", "name": "(Scenario: CEO negotiating liability terms for a project handling sensitive data) Why should a liability cap be calibrated to the project's actual risk rather than a standard default?", "acceptedAnswer": { "@type": "Answer", "text": "A cap set at fees paid may be inadequate for software handling payments or sensitive data where failure risk is much higher." } },
-    { "@type": "Question", "name": "(Scenario: CEO wanting ongoing visibility into what a vendor is actually building) Why does source code access from day one matter more than a final delivery at project end?", "acceptedAnswer": { "@type": "Answer", "text": "Real-time access lets the client verify progress continuously and removes any dispute over what was actually delivered." } }
+    { "@type": "Question", "name": "(Scenario: CEO wanting ongoing visibility into what a vendor is actually building) Why does source code access from day one matter more than a final delivery at project end?", "acceptedAnswer": { "@type": "Answer", "text": "Real-time access lets the client verify progress continuously and removes any dispute over what was actually delivered." } },
+    { "@type": "Question", "name": "(Scenario: CEO reviewing a contract's background IP definition that seems broader than expected) What is a \"background IP\" clause and why should a CEO scrutinize its scope in a software development contract?", "acceptedAnswer": { "@type": "Answer", "text": "Background IP should cover only genuinely pre-existing vendor tools; a definition broad enough to sweep in custom components lets a vendor retain rights the client believes it owns." } },
+    { "@type": "Question", "name": "(Scenario: CEO negotiating indemnification terms for a project handling customer data) Does a standard indemnification clause in a software development contract typically cover data breach liability?", "acceptedAnswer": { "@type": "Answer", "text": "Often not — standard indemnification usually covers only third-party IP infringement, leaving data breach liability uncovered unless negotiated separately." } },
+    { "@type": "Question", "name": "(Scenario: CEO concerned a vendor could transfer the contract to a third party without consent) Can a software development vendor transfer or assign the contract to another company without the client's approval?", "acceptedAnswer": { "@type": "Answer", "text": "Only if the assignment clause allows it; client consent should be required for any transfer of the contract and codebase access." } },
+    { "@type": "Question", "name": "(Scenario: CEO evaluating whether governing law matters for an offshore software development contract) Why does the governing-law clause matter more for an offshore software development contract than a domestic one?", "acceptedAnswer": { "@type": "Answer", "text": "IP assignment and confidentiality enforceability vary meaningfully by jurisdiction, so the governing law should offer real enforceability, not vendor convenience." } }
   ]
 }
 </script>

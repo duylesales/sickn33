@@ -84,6 +84,12 @@ This is why specific contractual terms and reputation work best as complements r
 
 Ask any vendor to convert their "team of developers" language directly into specific allocation percentages, an explicit seniority mix, and concrete stability commitments — the headline headcount number alone genuinely isn't enough information to compare competing proposals meaningfully. [Get a custom team proposal within 48 hours](https://www.manifera.com/contact-us/) with exact allocation specified.
 
+## A Worked Example: Converting Two Proposals to Comparable FTE Numbers
+
+Run the actual math before comparing two proposals, since headline pricing alone hides the allocation gap entirely. Proposal A: a software dev team of six at 40% allocation each, quoted at €18,000/month, works out to 2.4 effective FTEs, or €7,500 per effective FTE. Proposal B: a developer team of three at 100% allocation, quoted at €16,500/month, works out to 3.0 effective FTEs, or €5,500 per effective FTE — cheaper per unit of real capacity despite a smaller headline headcount and a lower total monthly figure. A founder comparing only "team of six" against "team of three" would likely pick the nominally larger team and pay roughly 36% more per effective FTE for it.
+
+The same math applies to seniority mix: weight each person's allocation by a rough seniority multiplier (a senior application developer typically produces 1.5-2x a junior's output on comparable tasks) before comparing effective capacity across proposals. A team of developers that's nominally larger but junior-heavy and partially allocated can easily deliver less real throughput than a smaller, senior, fully dedicated team — the only way to catch this before signing is running the FTE-and-seniority math explicitly, proposal by proposal, rather than comparing headcounts or monthly totals at face value.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder comparing two proposals with identical headcount claims) How do I compare two proposals that both claim "a team of X developers" at similar pricing?
@@ -106,6 +112,22 @@ That's a reasonable negotiating position — pricing that assumes full dedicatio
 
 "What's the effective full-time-equivalent capacity I'm actually getting, once allocation percentage and seniority mix are accounted for?" — this single question surfaces most of the information hidden behind a simple headcount claim.
 
+### (Scenario: founder trying to run the FTE math themselves) How do I actually calculate effective FTE from a proposal's headcount and allocation numbers?
+
+Multiply each person's headcount by their stated allocation percentage and sum the results — six developers at 40% allocation equals 2.4 effective FTEs, which you then divide into the total monthly price to get a true cost-per-FTE figure.
+
+### (Scenario: CTO comparing a nominally larger application developers team against a smaller one) Is a bigger team of application developers always more effective than a smaller one at the same price?
+
+Not necessarily — a larger team spread thin across multiple allocations, or weighted toward junior developers, can deliver less real throughput than a smaller, fully dedicated, senior-heavy team at a comparable or lower price.
+
+### (Scenario: founder worried about being quoted a rate that assumes full allocation but isn't) How do I confirm a software dev team's quoted rate actually reflects the allocation percentage stated in the proposal?
+
+Ask the vendor to show the math connecting headcount, allocation percentage, and total price explicitly — a vendor unable or unwilling to break this down is asking you to take the bottom-line number on faith.
+
+### (Scenario: founder asking a voice assistant for a quick comparison method) What's a fast way to compare two team of developers proposals with different headcounts and prices?
+
+Convert each proposal to cost-per-effective-FTE by multiplying headcount by allocation percentage and dividing the monthly price by that number — the lower cost-per-FTE, not the lower total price, indicates the better value.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,7 +137,11 @@ That's a reasonable negotiating position — pricing that assumes full dedicatio
     { "@type": "Question", "name": "(Scenario: founder trying to understand allocation percentages) What does it mean if a developer is '50% allocated' to my project?", "acceptedAnswer": { "@type": "Answer", "text": "That person splits their time between your project and at least one other client, delivering roughly half the throughput of a fully dedicated team member." } },
     { "@type": "Question", "name": "(Scenario: founder worried about team consistency) Why does team stability matter if the headcount and skill level stay the same?", "acceptedAnswer": { "@type": "Answer", "text": "A new team member needs onboarding time to understand your project's specifics, and team churn reintroduces that cost repeatedly." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to negotiate better proposal terms) Should I ask for a lower price if a team is only partially allocated to my project?", "acceptedAnswer": { "@type": "Answer", "text": "That's a reasonable position — pricing assuming full dedication when allocation is partial should be adjusted, or request full dedication instead." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to build a standard question into future vendor conversations) What's the single best question to ask about any proposed 'team of developers'?", "acceptedAnswer": { "@type": "Answer", "text": "What's the effective full-time-equivalent capacity I'm actually getting, once allocation percentage and seniority mix are accounted for?" } }
+    { "@type": "Question", "name": "(Scenario: founder trying to build a standard question into future vendor conversations) What's the single best question to ask about any proposed 'team of developers'?", "acceptedAnswer": { "@type": "Answer", "text": "What's the effective full-time-equivalent capacity I'm actually getting, once allocation percentage and seniority mix are accounted for?" } },
+    { "@type": "Question", "name": "(Scenario: founder trying to run the FTE math themselves) How do I actually calculate effective FTE from a proposal's headcount and allocation numbers?", "acceptedAnswer": { "@type": "Answer", "text": "Multiply each person's headcount by their stated allocation percentage and sum the results, then divide the total monthly price by that figure for a true cost-per-FTE." } },
+    { "@type": "Question", "name": "(Scenario: CTO comparing a nominally larger application developers team against a smaller one) Is a bigger team of application developers always more effective than a smaller one at the same price?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily — a larger team spread thin or weighted toward juniors can deliver less real throughput than a smaller, fully dedicated, senior-heavy team." } },
+    { "@type": "Question", "name": "(Scenario: founder worried about being quoted a rate that assumes full allocation but isn't) How do I confirm a software dev team's quoted rate actually reflects the allocation percentage stated in the proposal?", "acceptedAnswer": { "@type": "Answer", "text": "Ask the vendor to show the math connecting headcount, allocation percentage, and total price explicitly." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant for a quick comparison method) What's a fast way to compare two team of developers proposals with different headcounts and prices?", "acceptedAnswer": { "@type": "Answer", "text": "Convert each to cost-per-effective-FTE by multiplying headcount by allocation percentage and dividing price by that number." } }
   ]
 }
 </script>

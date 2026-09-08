@@ -74,6 +74,12 @@ The real cost of a bad offshore engagement is almost never the invoice — it's 
 
 A CTO who signs the wrong structure isn't just risking a missed sprint — they're risking the board's confidence in the entire decision to outsource, which makes the next budget conversation exponentially harder. If your current vendor can't tell you who owns your architecture six months from now, that answer needs to change before the next contract renewal, not after the next incident. [Talk to Manifera about your team structure](https://www.manifera.com/contact-us/).
 
+## Contract Terms That Predict Failure Before Signature
+
+Four contract clauses correlate more strongly with offshore engagement failure than any sales-deck claim, and a Utrecht CTO can check for their absence in under fifteen minutes with the draft MSA in hand. First: a "named resource substitution" clause letting the vendor reassign engineers with less than 30 days' notice — anything shorter signals a bench-based staffing model wearing a pod's marketing language. Second: a subcontracting clause permitting the vendor to route work to unnamed third-party subcontractors; without an explicit prohibition or disclosure requirement, IP assignment and NDA coverage silently stop applying past the first tier. Third: termination-for-convenience terms shorter than 60 days, which sound flexible but actually reveal how little runway the vendor expects the relationship to need — a partner planning for a multi-year engagement writes longer notice periods into its own contracts by default. Fourth: the absence of a named technical point of contact in the statement of work itself, listing only a commercial account manager, which signals architecture questions will route through a non-technical layer.
+
+For a scale-up in the Randstad negotiating its first or second offshore contract, redlining these four clauses before signature costs an afternoon of legal review. Skipping that afternoon is how a €100,000 pilot becomes a €250,000 sunk-cost renegotiation at month five.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating vendors before a board renewal decision) What's the real difference between staff augmentation and a dedicated pod?
@@ -96,6 +102,22 @@ Yes, with the right cadence design. Manifera structures a 4-hour daily overlap w
 
 Yes — a scoped pilot project, typically four to six weeks, is the standard way to validate ramp-up speed, code quality, and communication fit before extending into a long-term pod commitment.
 
+### (Scenario: CTO redlining a draft MSA before signature) What contract clause most reliably predicts whether an offshore vendor will reassign our engineers without warning?
+
+Check the named-resource substitution clause: anything allowing reassignment with less than 30 days' notice signals a bench-based staffing model, regardless of how the sales deck describes the team structure.
+
+### (Scenario: CTO worried about undisclosed subcontracting) How do we make sure our offshore software development company isn't quietly subcontracting our work to a third party?
+
+Require an explicit subcontracting prohibition or, at minimum, a disclosure-and-approval requirement in the MSA, since IP assignment and NDA coverage from the primary contract don't automatically extend to an undisclosed third-tier subcontractor.
+
+### (Scenario: CTO at a Utrecht fintech or insurtech scale-up evaluating regulated-industry fit) Does an offshore software development company need specific compliance experience to work on a regulated Utrecht fintech product?
+
+Yes — ask for named engagements involving comparable regulatory exposure (PSD2, DORA, or GDPR-sensitive data handling) and confirm the governance layer, not just individual engineers, has signed off on regulated builds before, since compliance gaps typically originate in architecture decisions rather than code.
+
+### (Scenario: CTO planning an eventual in-sourcing or vendor-exit strategy) What should an offboarding clause cover if we later want to bring the offshore team's work in-house?
+
+It should guarantee full source code and documentation handover, a defined knowledge-transfer period with the outgoing engineers still available for questions, and no vendor-owned tooling or infrastructure dependencies that would block a clean transition.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +127,11 @@ Yes — a scoped pilot project, typically four to six weeks, is the standard way
     { "@type": "Question", "name": "(Scenario: CTO worried about losing institutional knowledge) How do we stop losing context when contractors rotate off a project?", "acceptedAnswer": { "@type": "Answer", "text": "Structure the contract around a persistent pod rather than named individual placements, and require documentation-as-you-go as a sprint deliverable. Manifera's pods are staffed for project duration specifically to eliminate rotation risk." } },
     { "@type": "Question", "name": "(Scenario: CTO preparing for a funding round due diligence process) Will an offshore engagement create IP exposure during due diligence?", "acceptedAnswer": { "@type": "Answer", "text": "It will if the contract only assigns IP at the vendor-entity level. Insist on individual engineer NDAs, source code repositories owned by your organization from day one, and an IP assignment clause that survives contract termination." } },
     { "@type": "Question", "name": "(Scenario: CTO comparing timezone overlap between Utrecht and Vietnam) Is a 6-hour timezone gap manageable for daily collaboration?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, with the right cadence design. Manifera structures a 4-hour daily overlap window for live standups and pairing, with async handoff documentation covering the rest of the day." } },
-    { "@type": "Question", "name": "(Scenario: CTO deciding whether to pilot before committing) Can we test a pod on a smaller scope before committing to a full engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a scoped pilot project, typically four to six weeks, is the standard way to validate ramp-up speed, code quality, and communication fit before extending into a long-term pod commitment." } }
+    { "@type": "Question", "name": "(Scenario: CTO deciding whether to pilot before committing) Can we test a pod on a smaller scope before committing to a full engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a scoped pilot project, typically four to six weeks, is the standard way to validate ramp-up speed, code quality, and communication fit before extending into a long-term pod commitment." } },
+    { "@type": "Question", "name": "(Scenario: CTO redlining a draft MSA before signature) What contract clause most reliably predicts whether an offshore vendor will reassign our engineers without warning?", "acceptedAnswer": { "@type": "Answer", "text": "Check the named-resource substitution clause: anything allowing reassignment with less than 30 days' notice signals a bench-based staffing model." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about undisclosed subcontracting) How do we make sure our offshore software development company isn't quietly subcontracting our work to a third party?", "acceptedAnswer": { "@type": "Answer", "text": "Require an explicit subcontracting prohibition or a disclosure-and-approval requirement in the MSA, since IP assignment and NDA coverage don't automatically extend to an undisclosed subcontractor." } },
+    { "@type": "Question", "name": "(Scenario: CTO at a Utrecht fintech or insurtech scale-up evaluating regulated-industry fit) Does an offshore software development company need specific compliance experience to work on a regulated Utrecht fintech product?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, ask for named engagements involving comparable regulatory exposure and confirm the governance layer has signed off on regulated builds before, since compliance gaps typically originate in architecture decisions." } },
+    { "@type": "Question", "name": "(Scenario: CTO planning an eventual in-sourcing or vendor-exit strategy) What should an offboarding clause cover if we later want to bring the offshore team's work in-house?", "acceptedAnswer": { "@type": "Answer", "text": "Full source code and documentation handover, a defined knowledge-transfer period with outgoing engineers still available, and no vendor-owned tooling dependencies that would block a clean transition." } }
   ]
 }
 </script>

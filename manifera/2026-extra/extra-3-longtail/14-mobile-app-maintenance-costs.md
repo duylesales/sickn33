@@ -84,6 +84,12 @@ This gives founders a more precise way to budget than simply applying a flat per
 
 Treat the 15-20% annual maintenance figure as a real line item from the initial project proposal, not a conversation for after launch, and adjust it based on how much of your app's specific dependency environment is actually likely to keep changing. [Talk to Manifera](https://www.manifera.com/contact-us/) about scoping build and maintenance together from the start.
 
+## A Sample Line-Item Breakdown of the Annual Bill
+
+Splitting the 15-20% maintenance figure into line items makes it easier to sanity-check a vendor's quote against your own app's actual mobile app development cost profile. On a typical €60,000 build with a €10,000 annual maintenance budget, a reasonable allocation looks roughly like this: 30-35% (€3,000-€3,500) toward OS compatibility testing and adjustment across the two annual iOS/Android release cycles; 20-25% (€2,000-€2,500) toward dependency and security patching; 20% (€2,000) toward bug fixes surfaced by real usage; 15% (€1,500) toward infrastructure and hosting, which scales with active users rather than staying flat; and the remaining 10% (€1,000) as a buffer for minor feature refinements based on analytics.
+
+Two figures worth flagging when comparing quotes from different mobile app dev vendors: infrastructure and hosting is the one line item that isn't a percentage of build cost at all — it scales with actual usage, so a fast-growing app can see this line double or triple year-over-year independent of anything else in the maintenance scope. And a vendor quoting a flat maintenance fee with no line-item breakdown at all is usually pricing in a margin for undisclosed emergency work rather than genuinely lower costs — ask for the breakdown before comparing the total.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder building a first-year budget for a new app) How much should I actually budget for app maintenance each year?
@@ -106,6 +112,22 @@ OS updates that break existing functionality and newly disclosed security vulner
 
 Not reliably — older apps often need more maintenance as dependencies age further from their supported versions, unless the codebase is actively kept current, which is itself part of what ongoing maintenance covers.
 
+### (Scenario: founder budgeting mobile app development cost for a full year, not just the build) Should maintenance be included in the initial mobile app development cost quote, or negotiated separately later?
+
+Ask for both figures in the same proposal — a vendor who only quotes the build cost and defers the maintenance conversation to after launch is deferring a number that materially changes the true first-year cost of the app.
+
+### (Scenario: founder whose app has unusually heavy third-party integration) Does mobile app maintenance cost more for an app with many third-party integrations?
+
+Yes, meaningfully — each integrated SDK or API is a separate source of breaking changes, so an app with five or more third-party integrations often sits above the standard 15-20% range rather than within it.
+
+### (Scenario: founder comparing infrastructure costs across hosting providers) Why does the infrastructure and hosting line item in mobile application development maintenance grow even when nothing about the app's code changes?
+
+Because hosting and database costs scale with active users and data volume, not with lines of code — a successful app that grows its user base will see this specific line item rise even in a year with zero feature changes.
+
+### (Scenario: founder asking a voice assistant for a rule of thumb) What percentage of my mobile app dev budget should I set aside for maintenance every year?
+
+Set aside 15-20% of the original build cost annually as a baseline, and adjust upward if the app relies on many third-party integrations or OS-specific features that change frequently.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,7 +137,11 @@ Not reliably — older apps often need more maintenance as dependencies age furt
     { "@type": "Question", "name": "(Scenario: founder wondering if they can skip maintenance to save money) Can I just skip maintenance and fix things only when they break?", "acceptedAnswer": { "@type": "Answer", "text": "You can, but expect emergency fixes to cost more per hour, arrive slower, and risk real user impact before the fix lands." } },
     { "@type": "Question", "name": "(Scenario: founder deciding whether to keep the original build team) Should the same team that built my app also maintain it?", "acceptedAnswer": { "@type": "Answer", "text": "Generally yes — a team already familiar with the codebase works more efficiently than a new team re-learning undocumented architecture." } },
     { "@type": "Question", "name": "(Scenario: founder trying to understand what triggers urgent maintenance) What kinds of issues most commonly require emergency maintenance?", "acceptedAnswer": { "@type": "Answer", "text": "OS updates that break existing functionality and newly disclosed security vulnerabilities in dependencies are the two most common triggers." } },
-    { "@type": "Question", "name": "(Scenario: founder wondering if maintenance costs decrease over time) Does maintenance cost go down as an app gets older?", "acceptedAnswer": { "@type": "Answer", "text": "Not reliably — older apps often need more maintenance as dependencies age further from their supported versions unless actively kept current." } }
+    { "@type": "Question", "name": "(Scenario: founder wondering if maintenance costs decrease over time) Does maintenance cost go down as an app gets older?", "acceptedAnswer": { "@type": "Answer", "text": "Not reliably — older apps often need more maintenance as dependencies age further from their supported versions unless actively kept current." } },
+    { "@type": "Question", "name": "(Scenario: founder budgeting mobile app development cost for a full year, not just the build) Should maintenance be included in the initial mobile app development cost quote, or negotiated separately later?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for both figures in the same proposal — deferring the maintenance conversation to after launch defers a number that materially changes the true first-year cost." } },
+    { "@type": "Question", "name": "(Scenario: founder whose app has unusually heavy third-party integration) Does mobile app maintenance cost more for an app with many third-party integrations?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, meaningfully — each integrated SDK or API is a separate source of breaking changes, so heavy-integration apps often sit above the standard 15-20% range." } },
+    { "@type": "Question", "name": "(Scenario: founder comparing infrastructure costs across hosting providers) Why does the infrastructure and hosting line item in mobile application development maintenance grow even when nothing about the app's code changes?", "acceptedAnswer": { "@type": "Answer", "text": "Hosting and database costs scale with active users and data volume, not with lines of code, so a growing user base raises this line even with zero feature changes." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant for a rule of thumb) What percentage of my mobile app dev budget should I set aside for maintenance every year?", "acceptedAnswer": { "@type": "Answer", "text": "Set aside 15-20% of the original build cost annually as a baseline, adjusted upward for heavy third-party integration or frequent OS-specific feature use." } }
   ]
 }
 </script>

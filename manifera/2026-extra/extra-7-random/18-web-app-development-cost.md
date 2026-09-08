@@ -72,6 +72,12 @@ Manifera's subsequent engagement for a related platform used a full scoping proc
 
 A web app development cost estimate given before genuine scoping typically diverges substantially from the real cost once actual requirements and existing-system complexity become clear, commonly adding 25-40% to the original number as an unexplained overrun. Insisting on a proper scoping process before accepting any figure costs a modest amount of upfront time and produces a number that's actually worth budgeting against. [Talk to Manifera](https://www.manifera.com/contact-us/) about a web app development cost figure grounded in real scoping, not a sales anchor.
 
+## What Drives Custom Web App Cost Once Scoping Is Done
+
+Once genuine scoping replaces a sales anchor, custom web app cost breaks down into predictable ranges a CFO can sanity-check. A single-workflow internal tool with basic auth and a simple database typically scopes to €25,000-€50,000. A customer-facing web application with role-based access, a payment integration, and moderate real-time functionality typically lands at €60,000-€150,000. A multi-tenant SaaS platform with complex authorization, third-party integrations, and horizontal scaling requirements runs €150,000-€350,000+.
+
+Three factors move a project between these bands more than any others: the number of distinct user roles requiring different permission logic (each additional role beyond two adds real authorization-testing overhead), the number of third-party integrations with undocumented or unstable APIs (each one is a discovery risk, not just a build task), and whether the application needs to meet a specific compliance framework — GDPR data-residency requirements alone can add 10-15% to a European-facing web application's cost through audit logging, data-export tooling, and consent management that a domestic-only tool never needed. A CFO who has these three numbers before scoping begins can sanity-check a vendor's scoped estimate against the band it should fall in, rather than evaluating the number in isolation.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO who received a precise-sounding web app development quote very quickly) Why should a CFO be cautious about a precise web app development cost quote given very early in a sales conversation?
@@ -94,6 +100,22 @@ If the original estimate's assumptions were made explicit upfront, a CFO can see
 
 Commonly 25-40% above the original number, once real requirements and existing-system complexity become clear during development.
 
+### (Scenario: CFO trying to sanity-check a scoped estimate against a realistic band) What's a realistic web application development cost range for a multi-tenant SaaS platform versus a simple internal tool?
+
+A single-workflow internal tool typically scopes to €25,000-€50,000, while a multi-tenant SaaS platform with complex authorization and third-party integrations runs €150,000-€350,000+ — the gap is driven by user-role complexity and integration count, not visible feature count.
+
+### (Scenario: CFO budgeting for a European-facing web app that must meet GDPR requirements) How much does GDPR compliance add to web app development cost?
+
+GDPR data-residency, audit logging, data-export tooling, and consent management typically add 10-15% to a European-facing web application's cost compared to an equivalent domestic-only build, and this should be scoped explicitly rather than assumed as a minor addition.
+
+### (Scenario: CFO deciding how many distinct user roles the new web app actually needs) Why does the number of user roles in a web application significantly affect cost?
+
+Each additional role beyond two requires distinct permission logic and authorization testing, so a role structure that looks like a minor requirements detail can meaningfully expand both development and QA time.
+
+### (Scenario: CFO evaluating whether Manifera's scoped estimate for a custom web app is competitive) How does Manifera keep custom web app cost lower without skipping the scoping process that prevents overruns?
+
+Amsterdam-based leads run the same requirements-depth and technical-discovery process a premium Western European vendor would, while Vietnam-based pods execute the scoped build at 55-65% lower engineering rates, so the rigor stays intact and only the execution cost changes.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +125,11 @@ Commonly 25-40% above the original number, once real requirements and existing-s
     { "@type": "Question", "name": "(Scenario: CFO trying to understand what real scoping should include) What does a genuine web app development scoping process actually involve?", "acceptedAnswer": { "@type": "Answer", "text": "Detailed requirements discovery, direct technical inspection of existing systems, and explicit discussion of non-functional requirements." } },
     { "@type": "Question", "name": "(Scenario: CFO worried about hidden integration complexity) Why does reviewing existing systems directly matter more than taking a verbal description at face value?", "acceptedAnswer": { "@type": "Answer", "text": "Existing systems frequently have undocumented complexity only visible on direct inspection." } },
     { "@type": "Question", "name": "(Scenario: CFO trying to make sense of a cost overrun during development) How can a CFO tell whether a mid-project cost increase is legitimate or a sign of poor original scoping?", "acceptedAnswer": { "@type": "Answer", "text": "If the original assumptions were made explicit upfront, the CFO can see exactly which assumption changed." } },
-    { "@type": "Question", "name": "(Scenario: CFO trying to estimate the risk of accepting an unscoped quote) What's the typical gap between a sales-anchor quote and the real web app development cost?", "acceptedAnswer": { "@type": "Answer", "text": "Commonly 25-40% above the original number." } }
+    { "@type": "Question", "name": "(Scenario: CFO trying to estimate the risk of accepting an unscoped quote) What's the typical gap between a sales-anchor quote and the real web app development cost?", "acceptedAnswer": { "@type": "Answer", "text": "Commonly 25-40% above the original number." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to sanity-check a scoped estimate against a realistic band) What's a realistic web application development cost range for a multi-tenant SaaS platform versus a simple internal tool?", "acceptedAnswer": { "@type": "Answer", "text": "A single-workflow internal tool typically scopes to €25,000-€50,000; a multi-tenant SaaS platform with complex authorization and integrations runs €150,000-€350,000+." } },
+    { "@type": "Question", "name": "(Scenario: CFO budgeting for a European-facing web app that must meet GDPR requirements) How much does GDPR compliance add to web app development cost?", "acceptedAnswer": { "@type": "Answer", "text": "GDPR data-residency, audit logging, and consent management typically add 10-15% to a European-facing web application's cost." } },
+    { "@type": "Question", "name": "(Scenario: CFO deciding how many distinct user roles the new web app actually needs) Why does the number of user roles in a web application significantly affect cost?", "acceptedAnswer": { "@type": "Answer", "text": "Each additional role beyond two requires distinct permission logic and authorization testing, expanding both development and QA time." } },
+    { "@type": "Question", "name": "(Scenario: CFO evaluating whether Manifera's scoped estimate for a custom web app is competitive) How does Manifera keep custom web app cost lower without skipping the scoping process that prevents overruns?", "acceptedAnswer": { "@type": "Answer", "text": "Amsterdam-based leads run the same scoping rigor a premium Western European vendor would, while Vietnam-based pods execute at 55-65% lower engineering rates." } }
   ]
 }
 </script>

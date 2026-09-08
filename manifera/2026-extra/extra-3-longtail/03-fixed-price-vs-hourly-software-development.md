@@ -86,6 +86,14 @@ Ferravo has since applied the same T&M-discovery-then-milestone sequence to two 
 
 If your scope is genuinely locked, fixed price protects your budget. If your product is still evolving, T&M — or better, a discovery phase followed by milestone-based fixed pricing — will save you from paying a large uncertainty buffer for certainty you don't actually have yet. The contract structure question and the discovery-quality question are really the same question asked from two different angles, and getting the second one right tends to resolve the first almost automatically. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about which structure fits your specific project.
 
+## The Break-Even Math: When T&M Actually Beats a Fixed-Price Buffer
+
+The buffer size in a fixed-price quote isn't fixed at all — it scales directly with how much discovery was done before the number was set. A software development company quoting off a one-page feature list typically prices a 25-35% buffer into a bespoke software development services contract, because that's the only way to price the risk of a spec that's still going to move. The same vendor quoting after two weeks of real discovery — wireframes, data model, integration list agreed — can usually drop that buffer to 8-15%, because most of the uncertainty a buffer exists to cover has already been resolved.
+
+That gap is the number that actually decides fixed price vs. T&M for your project. On a €120,000 build, a 30% pre-discovery buffer is €36,000 of pure risk premium; a 12% post-discovery buffer is €14,400 for the identical scope. If your realistic scope-change rate is below the buffer percentage a vendor is quoting, you're overpaying under fixed price. If it's above, fixed price is protecting you from a cost you'd otherwise absorb directly under T&M.
+
+Blended hourly rates matter here too: a Western-European-only vendor typically bills €75-120/hour, while a Netherlands-governed, Vietnam-executed pod blends to roughly €35-55/hour for the same seniority mix — which compresses the absolute euro size of any buffer, fixed-price or T&M, regardless of the percentage.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder unsure which contract type to request) Which is generally cheaper, fixed price or time and materials?
@@ -108,6 +116,22 @@ Make sure the fixed price is set after a real discovery phase, not before one. M
 
 The project is broken into discrete deliverables, each with its own fixed price agreed after that phase's requirements are scoped — giving you fixed-price budget certainty without pricing the entire uncertain project as one large buffer upfront.
 
+### (Scenario: founder comparing quotes from multiple software development companies) Why do two fixed-price quotes for the exact same spec come in 30% apart?
+
+The gap almost always reflects how much discovery each vendor actually did before pricing, not a difference in honesty. A vendor quoting off your feature list alone is pricing a 25-35% buffer for unresolved uncertainty; a vendor who ran real discovery first can quote a much smaller buffer because there's less unknown left to price.
+
+### (Scenario: founder negotiating a bespoke software development services contract) Should I ask a vendor to break out their buffer percentage separately in the quote?
+
+Yes — a vendor confident in their scoping will tell you the buffer number directly, and it's a fast way to compare quotes on equal terms rather than guessing why one custom software development company's total is higher than another's for the same spec.
+
+### (Scenario: founder worried about hidden costs in T&M billing) How do I audit whether T&M hours billed actually match hours worked?
+
+Insist on sprint-level reporting tied to specific deliverables, not a single monthly total. A vendor billing transparently can show you which ticket or feature each week's hours went to; one who can't is the reason T&M gets a reputation for opacity it doesn't have to earn.
+
+### (Scenario: startup founder budgeting runway against a fixed-price quote) How much contingency should I hold in reserve on top of a fixed-price quote?
+
+Even with fixed price, hold 10-15% of the contract value in reserve for scope additions you'll inevitably want once you see the product taking shape — the contract protects you from the vendor's estimation risk, not from your own mind changing.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +141,11 @@ The project is broken into discrete deliverables, each with its own fixed price 
     { "@type": "Question", "name": "(Scenario: founder worried about a vendor's fixed-price buffer) Why do fixed-price quotes always seem to include extra margin?", "acceptedAnswer": { "@type": "Answer", "text": "Because the vendor is pricing in the risk of your requirements changing or the estimate being wrong. That buffer is the cost of the vendor absorbing uncertainty instead of you." } },
     { "@type": "Question", "name": "(Scenario: founder deciding how to structure a new project) Can I switch from time and materials to fixed price partway through a project?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — run early discovery as T&M while requirements are still forming, then convert to fixed-price milestones once the scope is concrete enough to estimate confidently." } },
     { "@type": "Question", "name": "(Scenario: founder trying to avoid change-order disputes) How do I avoid change-order fights on a fixed-price contract?", "acceptedAnswer": { "@type": "Answer", "text": "Make sure the fixed price is set after a real discovery phase, not before one. Most disputes happen because the original scope was estimated from a feature list rather than real requirements analysis." } },
-    { "@type": "Question", "name": "(Scenario: founder evaluating a milestone-based proposal) What does milestone-based fixed pricing actually mean in practice?", "acceptedAnswer": { "@type": "Answer", "text": "The project is broken into discrete deliverables, each with its own fixed price agreed after that phase's requirements are scoped, giving budget certainty without pricing the whole project as one large buffer." } }
+    { "@type": "Question", "name": "(Scenario: founder evaluating a milestone-based proposal) What does milestone-based fixed pricing actually mean in practice?", "acceptedAnswer": { "@type": "Answer", "text": "The project is broken into discrete deliverables, each with its own fixed price agreed after that phase's requirements are scoped, giving budget certainty without pricing the whole project as one large buffer." } },
+    { "@type": "Question", "name": "(Scenario: founder comparing quotes from multiple software development companies) Why do two fixed-price quotes for the exact same spec come in 30% apart?", "acceptedAnswer": { "@type": "Answer", "text": "The gap almost always reflects how much discovery each vendor did before pricing. A vendor quoting off a feature list alone prices a 25-35% buffer for unresolved uncertainty; one who ran real discovery first can quote a smaller buffer." } },
+    { "@type": "Question", "name": "(Scenario: founder negotiating a bespoke software development services contract) Should I ask a vendor to break out their buffer percentage separately in the quote?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — a vendor confident in their scoping will tell you the buffer number directly, which lets you compare quotes on equal terms rather than guessing why totals differ for the same spec." } },
+    { "@type": "Question", "name": "(Scenario: founder worried about hidden costs in T&M billing) How do I audit whether T&M hours billed actually match hours worked?", "acceptedAnswer": { "@type": "Answer", "text": "Insist on sprint-level reporting tied to specific deliverables rather than a single monthly total, so you can see which ticket or feature each week's hours went to." } },
+    { "@type": "Question", "name": "(Scenario: startup founder budgeting runway against a fixed-price quote) How much contingency should I hold in reserve on top of a fixed-price quote?", "acceptedAnswer": { "@type": "Answer", "text": "Hold 10-15% of the contract value in reserve for scope additions you'll want once you see the product taking shape — the contract protects against the vendor's estimation risk, not your own mind changing." } }
   ]
 }
 </script>

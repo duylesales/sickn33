@@ -86,6 +86,10 @@ Modeentwicklung Luzern proceeded with a realistically scoped platform build meet
 
 Before committing to an apparel PLM platform budget, insist on a cost estimate modeled against your realistic full development-season concurrent activity and actual distributed team and market footprint, not small-scale, co-located testing conditions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic apparel PLM platform cost scoping exercise.
 
+## Technical Deep-Dive: Field-Level Merge for Concurrent Tech-Pack Edits
+
+The specific architectural decision that determines whether a versioning engine survives a real development season is whether it locks the entire tech-pack document during an edit or merges at the field level. Document-level locking — the naive default — blocks a QA reviewer from annotating a fit comment while sourcing is simultaneously updating a fabric spec on the same style, forcing one team to wait on the other during exactly the compressed pre-production window when both need to work in parallel. Field-level merge instead treats each tech-pack section — measurements, bill-of-materials, construction notes, colorway — as an independently versioned sub-document, so design, sourcing, and QA can edit different sections of the same style concurrently without blocking each other, with true conflicts (two edits to the same measurement field) surfaced explicitly for a human to reconcile rather than silently overwritten. Implementing this requires a change-tracking layer that diffs at the field level rather than the document level, and a UI that visually distinguishes "someone else is editing this section" from "someone else already changed this field since you loaded it." Brands running more than 3-4 concurrent collections per season should treat field-level merge as a required feature rather than an enhancement: document-level locking at that concurrency measurably slows a development calendar, typically adding 10-20% wall-clock time to a tech-pack finalization cycle purely from wait-on-lock delays.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial apparel PLM platform estimate) Why do apparel PLM platform cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ Compliance accuracy depends on properly configurable, market-specific labeling l
 
 Collaborative development workflow depends on properly architected large design-asset synchronization, and genuinely distributed infrastructure carries real ongoing operational complexity across regions with varying connectivity quality.
 
+### (Scenario: brand ops lead deciding between an established PLM suite like Centric or a custom build) When does a custom apparel PLM platform outperform an established PLM suite?
+
+Once a brand runs more than 3-4 concurrent collections with genuinely distributed design, sourcing, and QA teams, established suites typically charge per-seat licensing that scales unfavorably against team size, and few expose field-level concurrent-merge editing as a configurable option, making a custom build cost-competitive once seat count and concurrency both climb.
+
+### (Scenario: engineering lead sizing the team for a multi-region PLM build) How many engineers does a production-ready apparel PLM platform typically require?
+
+Roughly 6-9 engineers split across the versioning engine, supplier integration, and labeling-compliance workstreams, with the field-level merge versioning engine typically requiring 2-3 dedicated engineers given the concurrent-editing conflict-detection logic real development seasons require.
+
+### (Scenario: CTO estimating timeline before committing to a development calendar) How long does building a production-ready apparel PLM platform typically take?
+
+A realistic timeline runs 7-10 months for an MVP covering field-level tech-pack versioning and core supplier integration, with multi-country labeling compliance and multi-region asset synchronization typically adding another 2-4 months before the platform is ready for a full multi-collection season.
+
+### (Scenario: compliance lead scoping a new destination market) What happens when a destination market changes its fiber-content or care-symbol labeling rules mid-season?
+
+The labeling-compliance engine needs its market-specific rulesets stored as configurable data rather than hardcoded logic, so a mid-season regulatory change can be applied by updating that market's ruleset and re-running affected SKUs, rather than requiring a code deployment to reflect the new requirement.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Collaborative development workflow depends on properly architected large design-
     { "@type": "Question", "name": "(Scenario: engineering lead scoping tech-pack versioning) Why is versioning harder to scale correctly than it appears in small-team testing?", "acceptedAnswer": { "@type": "Answer", "text": "Version integrity depends on reliable conflict detection under real concurrent editing, requiring different architecture at full development-season scale." } },
     { "@type": "Question", "name": "(Scenario: product lead scoping supplier systems) Why does supplier and factory integration require more than a purely internal sourcing catalog?", "acceptedAnswer": { "@type": "Answer", "text": "External supplier and factory systems carry inconsistent data formats and connectivity, making genuine integration more demanding than an internal record." } },
     { "@type": "Question", "name": "(Scenario: compliance lead scoping labeling systems) Why does multi-country labeling compliance deserve dedicated engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Compliance accuracy depends on configurable, market-specific labeling logic per SKU per destination market, more complex than a single template." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for a distributed team structure) Why does multi-region infrastructure add real cost beyond a co-located team deployment?", "acceptedAnswer": { "@type": "Answer", "text": "Collaborative workflow depends on properly architected design-asset synchronization, carrying real operational complexity across regions." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for a distributed team structure) Why does multi-region infrastructure add real cost beyond a co-located team deployment?", "acceptedAnswer": { "@type": "Answer", "text": "Collaborative workflow depends on properly architected design-asset synchronization, carrying real operational complexity across regions." } },
+    { "@type": "Question", "name": "(Scenario: brand ops lead deciding between an established PLM suite like Centric or a custom build) When does a custom apparel PLM platform outperform an established PLM suite?", "acceptedAnswer": { "@type": "Answer", "text": "Past 3-4 concurrent collections with distributed teams, per-seat licensing scales unfavorably and few suites offer field-level concurrent-merge editing, making custom cost-competitive." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead sizing the team for a multi-region PLM build) How many engineers does a production-ready apparel PLM platform typically require?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 6-9 engineers across versioning, supplier integration, and labeling compliance, with 2-3 dedicated to field-level merge versioning." } },
+    { "@type": "Question", "name": "(Scenario: CTO estimating timeline before committing to a development calendar) How long does building a production-ready apparel PLM platform typically take?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 7-10 months for a field-level versioning and supplier integration MVP, plus 2-4 more months for labeling compliance and multi-region sync." } },
+    { "@type": "Question", "name": "(Scenario: compliance lead scoping a new destination market) What happens when a destination market changes its fiber-content or care-symbol labeling rules mid-season?", "acceptedAnswer": { "@type": "Answer", "text": "Market-specific rulesets stored as configurable data let the change be applied by updating that market's ruleset and re-running affected SKUs, without a code deployment." } }
   ]
 }
 </script>

@@ -72,6 +72,10 @@ Undocumented, single-person-dependent infrastructure is a form of concentrated r
 
 This is not a risk that resolves itself with time; it compounds, because the one person holding the knowledge keeps building more of it into their head rather than into the system. Talk to Manifera about converting tribal knowledge into a documented, de-risked asset: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## Measuring Key-Person Risk: The Scorecard a Technical Due-Diligence Advisor Actually Runs
+
+A technical advisor evaluating infrastructure risk during due diligence doesn't just ask "is there documentation" — they score specific, checkable items. Expect scrutiny on the percentage of infrastructure defined as code versus manually configured (anything below 70% coded typically triggers a follow-up question), the number of people who could deploy a production change without the key engineer's involvement (one is a red flag, two is borderline, three or more is considered resolved), mean time to onboard a new engineer to infrastructure changes (weeks signals tribal knowledge, days signals genuine documentation), and whether infrastructure changes go through the same pull-request review process as application code, or bypass it entirely through manual server access. A Harlingen maritime-logistics platform should expect an additional question specific to its domain: how quickly can a scaling or configuration change be deployed during a schedule-sensitive operational window, since that's precisely the failure mode that already caused a service degradation once. Scoring below threshold on two or more of these four items is generally enough for a technical advisor to recommend a valuation discount or a closing condition, which is why resolving them proactively, item by item, is materially more valuable than a general "we're working on documentation" assurance.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO who discovered this risk during a funding round review) How much does undocumented infrastructure typically affect valuation during due diligence?
@@ -94,6 +98,22 @@ Compare it against the cost of the risk it removes: a valuation discount during 
 
 For a mid-sized infrastructure footprint, a full Terraform codification is typically achievable in eight to twelve weeks; if there's a specific closing deadline, Manifera can prioritize the highest-risk, most due-diligence-visible components first to have documented evidence ready sooner.
 
+### (Scenario: CFO wanting the exact scorecard a technical due-diligence advisor checks) What specific items does a technical due-diligence advisor score when assessing infrastructure key-person risk?
+
+Percentage of infrastructure defined as code versus manually configured, the number of people who could deploy a production change without the key engineer, mean time to onboard a new engineer to infrastructure changes, and whether infrastructure changes go through the same review process as application code.
+
+### (Scenario: CFO wanting a target percentage for infrastructure-as-code coverage) What percentage of our infrastructure needs to be codified before key-person risk is considered resolved?
+
+Aim for above 70% coded, since that's the threshold most technical due-diligence advisors use before flagging a follow-up concern, with production-critical components ideally at or near 100%.
+
+### (Scenario: CFO comparing Terraform against other infrastructure-as-code tools) Does it matter whether infrastructure gets codified in Terraform specifically, or would another tool work?
+
+Terraform is the pragmatic default given multi-cloud support and talent-pool availability, but the underlying goal is declarative, version-controlled codification — Pulumi or CloudFormation can serve the same purpose if your team already has investment in one of them.
+
+### (Scenario: CFO worried the key engineer will feel threatened or sidelined by this process) What happens to our key engineer's role once the infrastructure knowledge is codified?
+
+Their role typically shifts from sole operator to reviewer and architect, which most engineers experience as relief rather than threat, since it removes the pressure of being the single person who can never take an uninterrupted vacation.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +123,11 @@ For a mid-sized infrastructure footprint, a full Terraform codification is typic
     { "@type": "Question", "name": "(Scenario: Leadership worried about disrupting the one engineer who holds the knowledge) Will this process pull our key engineer away from their day-to-day work for months?", "acceptedAnswer": { "@type": "Answer", "text": "No. Manifera structures the knowledge extraction as scheduled interviews and system validation sessions that fit around that engineer's existing responsibilities, rather than requiring them to personally build the documentation alone, which is exactly why prior in-house attempts usually stall." } },
     { "@type": "Question", "name": "(Scenario: Harlingen-based platform supporting time-sensitive ferry and harbor logistics) Does this kind of infrastructure risk have operational consequences beyond investor conversations?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Any infrastructure change that currently depends on one person's availability creates real delays, which for a maritime logistics platform tied to ferry and harbor schedules translates directly into service degradation risk during operationally sensitive windows." } },
     { "@type": "Question", "name": "(Scenario: CFO evaluating cost against other budget priorities) How do we justify this spend against other engineering priorities competing for the same budget?", "acceptedAnswer": { "@type": "Answer", "text": "Compare it against the cost of the risk it removes: a valuation discount during fundraising, potential service disruption if the key engineer is unavailable, and the catastrophic cost of that person leaving unexpectedly. Few other engineering investments have as clear a downside-avoidance case." } },
-    { "@type": "Question", "name": "(Scenario: Leadership wants to know how quickly this can be resolved before a deadline) How fast can infrastructure knowledge realistically be codified if we have a funding deadline approaching?", "acceptedAnswer": { "@type": "Answer", "text": "For a mid-sized infrastructure footprint, a full Terraform codification is typically achievable in eight to twelve weeks; if there's a specific closing deadline, Manifera can prioritize the highest-risk, most due-diligence-visible components first to have documented evidence ready sooner." } }
+    { "@type": "Question", "name": "(Scenario: Leadership wants to know how quickly this can be resolved before a deadline) How fast can infrastructure knowledge realistically be codified if we have a funding deadline approaching?", "acceptedAnswer": { "@type": "Answer", "text": "For a mid-sized infrastructure footprint, a full Terraform codification is typically achievable in eight to twelve weeks; if there's a specific closing deadline, Manifera can prioritize the highest-risk, most due-diligence-visible components first to have documented evidence ready sooner." } },
+    { "@type": "Question", "name": "(Scenario: CFO wanting the exact scorecard a technical due-diligence advisor checks) What specific items does a technical due-diligence advisor score when assessing infrastructure key-person risk?", "acceptedAnswer": { "@type": "Answer", "text": "Percentage of infrastructure defined as code, the number of people who could deploy a production change without the key engineer, onboarding time for infrastructure changes, and whether infrastructure changes go through code review." } },
+    { "@type": "Question", "name": "(Scenario: CFO wanting a target percentage for infrastructure-as-code coverage) What percentage of our infrastructure needs to be codified before key-person risk is considered resolved?", "acceptedAnswer": { "@type": "Answer", "text": "Above 70% coded is the threshold most technical due-diligence advisors use, with production-critical components ideally at or near 100%." } },
+    { "@type": "Question", "name": "(Scenario: CFO comparing Terraform against other infrastructure-as-code tools) Does it matter whether infrastructure gets codified in Terraform specifically, or would another tool work?", "acceptedAnswer": { "@type": "Answer", "text": "Terraform is the pragmatic default, but the underlying goal is declarative, version-controlled codification; Pulumi or CloudFormation can serve the same purpose if already in use." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried the key engineer will feel threatened or sidelined by this process) What happens to our key engineer's role once the infrastructure knowledge is codified?", "acceptedAnswer": { "@type": "Answer", "text": "Their role typically shifts from sole operator to reviewer and architect, which most engineers experience as relief rather than threat." } }
   ]
 }
 </script>

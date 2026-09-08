@@ -74,6 +74,10 @@ For a defined seven-month, four-person build, the total cost gap between a Nethe
 
 If your two proposals differ mainly on rate card and neither shows you a named team or an architecture review process, you don't have enough information to decide yet. [Talk to Manifera about a head-to-head comparison](https://www.manifera.com/contact-us/).
 
+## QA Depth and App Store Release Ownership: The Line Item Most Quotes Skip
+
+A rate-card comparison that stops at engineering hours misses two cost centers that determine whether a shipped app actually survives contact with app store review and real device fragmentation: QA coverage and release ownership. A Netherlands-based agency quote typically bundles QA as a percentage of engineering time (10-15%) without specifying device/OS coverage; a properly scoped Vietnam pod quote should name the actual test matrix — typically the top 8-10 Android device/OS combinations by regional market share plus the two most recent iOS versions — because under-tested device coverage is the single most common cause of a 2-4 week App Store or Play Store rejection cycle after submission. Release ownership is the second gap: confirm in writing who holds the Apple Developer and Google Play Console accounts (it should be the client, not the vendor, to avoid a hostage situation at contract end), who manages signing certificates, and what the post-launch bug-fix SLA is — Manifera's standard is a 48-hour response window for launch-week critical defects, tapering to a standard sprint cadence after the first two weeks of production traffic.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO comparing two live proposals before a board decision) How do we do a fair like-for-like comparison between a Dutch agency quote and a Vietnam pod quote?
@@ -96,6 +100,22 @@ For short, high-ambiguity discovery phases, yes, it has real value. For a define
 
 Yes. Manifera's pod model names specific engineers and a specific tech lead contractually before kickoff, and changes require client agreement — team composition doesn't shift opportunistically once the contract is signed.
 
+### (Scenario: CTO reviewing quotes that don't specify QA scope) What device and OS coverage should be in an app development outsourcing quote?
+
+Ask for the top 8-10 Android device/OS combinations by target-market share plus the two most recent iOS versions, named explicitly. A quote that bundles QA as a flat percentage of engineering hours without naming the test matrix is the most common source of post-submission surprises.
+
+### (Scenario: CTO worried about vendor lock-in on app store accounts) Who should own the Apple Developer and Google Play Console accounts during an outsourced build?
+
+The client, not the vendor. Confirm this in writing before kickoff — vendor-owned store accounts create a hostage situation at contract end that a properly governed engagement avoids entirely by design.
+
+### (Scenario: CTO planning for launch week) What's a reasonable post-launch bug-fix SLA for a newly shipped app?
+
+A 48-hour response window for launch-week critical defects is Manifera's standard, tapering to a normal sprint cadence once the app has two weeks of stable production traffic behind it.
+
+### (Scenario: CTO whose app got rejected on first submission) What's the most common reason an app gets rejected on first App Store or Play Store submission?
+
+Insufficient device or OS-version test coverage surfacing as a crash on a specific configuration, which typically adds a 2-4 week resubmission cycle. Naming the test matrix explicitly in the outsourcing quote is what prevents this before it happens.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +125,11 @@ Yes. Manifera's pod model names specific engineers and a specific tech lead cont
     { "@type": "Question", "name": "(Scenario: CTO worried cheaper offshore means lower quality) Is a 50-65% cost difference a sign of a quality shortcut?", "acceptedAnswer": { "@type": "Answer", "text": "Not when governance is real. The cost difference reflects genuine regional labor economics, not corner-cutting — the Amsterdam architecture review layer is what prevents the quality gap that makes cheap, ungoverned offshore risky." } },
     { "@type": "Question", "name": "(Scenario: CTO evaluating whether to run a bake-off between vendors) Can we run a paid discovery sprint with multiple vendors before committing?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a short paid discovery sprint is a reasonable way to compare architecture thinking and team specificity directly rather than deciding on proposals alone." } },
     { "@type": "Question", "name": "(Scenario: CTO deciding for a short, discovery-heavy engagement rather than a long build) Does full-day overlap from a Netherlands-based team matter enough to justify the cost premium?", "acceptedAnswer": { "@type": "Answer", "text": "For short, high-ambiguity discovery phases, yes. For a defined multi-month build with a clear specification, a deliberate overlap window plus async documentation is usually sufficient." } },
-    { "@type": "Question", "name": "(Scenario: CTO wanting contractual certainty on team composition) Can we lock in the specific engineers named in the proposal, not just a role description?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Manifera's pod model names specific engineers and a specific tech lead contractually before kickoff, and changes require client agreement." } }
+    { "@type": "Question", "name": "(Scenario: CTO wanting contractual certainty on team composition) Can we lock in the specific engineers named in the proposal, not just a role description?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Manifera's pod model names specific engineers and a specific tech lead contractually before kickoff, and changes require client agreement." } },
+    { "@type": "Question", "name": "(Scenario: CTO reviewing quotes that don't specify QA scope) What device and OS coverage should be in an app development outsourcing quote?", "acceptedAnswer": { "@type": "Answer", "text": "The top 8-10 Android device/OS combinations by target-market share plus the two most recent iOS versions, named explicitly rather than bundled as a flat QA percentage." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about vendor lock-in on app store accounts) Who should own the Apple Developer and Google Play Console accounts during an outsourced build?", "acceptedAnswer": { "@type": "Answer", "text": "The client, not the vendor. Confirming this in writing before kickoff avoids a hostage situation at contract end." } },
+    { "@type": "Question", "name": "(Scenario: CTO planning for launch week) What's a reasonable post-launch bug-fix SLA for a newly shipped app?", "acceptedAnswer": { "@type": "Answer", "text": "A 48-hour response window for launch-week critical defects, tapering to a normal sprint cadence after two weeks of stable production traffic." } },
+    { "@type": "Question", "name": "(Scenario: CTO whose app got rejected on first submission) What's the most common reason an app gets rejected on first App Store or Play Store submission?", "acceptedAnswer": { "@type": "Answer", "text": "Insufficient device or OS-version test coverage surfacing as a crash on a specific configuration, adding a 2-4 week resubmission cycle." } }
   ]
 }
 </script>

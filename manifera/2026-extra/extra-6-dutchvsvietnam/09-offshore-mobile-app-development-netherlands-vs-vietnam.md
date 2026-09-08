@@ -74,6 +74,14 @@ A seven-month, four-person native mobile build costs roughly €300,000–€370
 
 If your two proposals still aren't normalized to cost-per-shipped-feature, that's the actual work left before your board decision — not the underlying choice itself. [Talk to Manifera for a direct mobile cost comparison built on your numbers](https://www.manifera.com/contact-us/).
 
+## Technical Deep-Dive: Native vs. Cross-Platform, and Why the Choice Changes the Cost Comparison
+
+The native-versus-cross-platform decision moves the entire cost comparison by a wider margin than most CTOs assume before scoping. A native iOS/Kotlin build typically runs 30-40% more in engineering hours than an equivalent React Native or Flutter build, because two platform codebases are maintained instead of one — but native remains the right call for apps with heavy camera, Bluetooth, or background-processing requirements, where cross-platform bridging code adds its own maintenance burden that erodes the apparent savings within a year.
+
+A Vietnam-based mobile pod under Amsterdam governance should be evaluated on depth in both stacks, not just cost: ask for the pod's device-testing matrix specifically — a credible pod tests against a minimum of 8-12 physical devices spanning the last three Android OS versions and the last two iOS versions, not simulator-only QA, since simulator-only testing is the single most common source of post-launch crash reports on Android's fragmented device landscape.
+
+App-store review timeline is a scheduling variable worth building into the sprint plan directly: Apple's review cycle averages 24-48 hours for a standard submission but can extend to two weeks for apps touching health data, payments, or background location — plan the final sprint before a launch date with that buffer built in, not assumed away.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO who needs a board-ready mobile cost comparison this month) How quickly can we get a normalized cost-per-feature comparison for our specific mobile build?
@@ -96,6 +104,22 @@ Yes — a newly-assembled team typically takes two to three months to reach the 
 
 Yes — a four-to-six week pilot on a defined feature validates ramp-up speed and cost assumptions in practice, giving the CTO real data to bring to the board rather than a vendor projection alone.
 
+### (Scenario: CTO deciding between native and cross-platform before scoping the vendor comparison) Should we scope this as a native build or cross-platform, and how does that change the Netherlands-versus-Vietnam comparison?
+
+Native typically costs 30-40% more in engineering hours than React Native or Flutter but is the right call for camera-, Bluetooth-, or background-processing-heavy apps; either way, the offshore cost advantage holds proportionally since the same specialist-scarcity and hiring-timeline dynamics apply to both stacks in the Dutch market.
+
+### (Scenario: CTO worried about Android fragmentation causing post-launch defects) How does a Vietnam-based mobile app development company handle device fragmentation testing?
+
+A credible pod tests against a minimum of 8-12 physical devices spanning the last three Android OS versions and last two iOS versions rather than relying on simulator-only QA, which is the single most common source of post-launch crash reports on Android specifically.
+
+### (Scenario: CTO building a launch timeline that depends on app-store approval) How long should we budget for App Store and Google Play review in the launch schedule?
+
+Budget 24-48 hours for a standard Apple review but up to two weeks if the app touches health data, payments, or background location; Google Play review is typically faster but can also flag policy issues that require resubmission, so the final pre-launch sprint should carry that buffer explicitly.
+
+### (Scenario: CTO comparing a Dutch mobile app development company against a Vietnam software development company on quality, not just price) How do we verify a Vietnam-based mobile pod's quality claims before committing, beyond the reference calls?
+
+Ask for access to a live or recent App Store/Play Store listing the pod shipped, check its review history and crash-free rate if available, and request the pod's actual device-testing matrix and CI/CD pipeline documentation rather than accepting a general capability statement.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +129,11 @@ Yes — a four-to-six week pilot on a defined feature validates ramp-up speed an
     { "@type": "Question", "name": "(Scenario: CTO uncertain whether specialization scarcity really affects the numbers) Does the iOS talent scarcity in the Netherlands really change the comparison that much?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, materially — a six-plus month average time-to-hire for senior native iOS specifically, against a two-to-four-week offshore pod ramp, is often a larger factor than the salary difference alone." } },
     { "@type": "Question", "name": "(Scenario: CTO weighing whether to include maintenance cost in the comparison) Should ongoing app maintenance cost be included in the build comparison, or is that a separate decision?", "acceptedAnswer": { "@type": "Answer", "text": "It should be included — a mobile app requires maintenance through annual OS updates whether built locally or offshore, and omitting this understates the full first-year picture." } },
     { "@type": "Question", "name": "(Scenario: CTO deciding whether newly-formed teams are a real risk factor) Does it really matter if a local team is newly assembled versus an established offshore pod?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — a newly-assembled team typically takes two to three months to reach the velocity and defect rate an established, multi-release pod starts at." } },
-    { "@type": "Question", "name": "(Scenario: CTO wanting to validate the comparison before the board meeting) Can we pilot a smaller mobile feature before committing to the full comparison's numbers?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — a four-to-six week pilot on a defined feature validates ramp-up speed and cost assumptions in practice." } }
+    { "@type": "Question", "name": "(Scenario: CTO wanting to validate the comparison before the board meeting) Can we pilot a smaller mobile feature before committing to the full comparison's numbers?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — a four-to-six week pilot on a defined feature validates ramp-up speed and cost assumptions in practice." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding between native and cross-platform before scoping the vendor comparison) Should we scope this as a native build or cross-platform, and how does that change the Netherlands-versus-Vietnam comparison?", "acceptedAnswer": { "@type": "Answer", "text": "Native typically costs 30-40% more in engineering hours than React Native or Flutter but suits camera-, Bluetooth-, or background-processing-heavy apps; the offshore cost advantage holds proportionally across either stack." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about Android fragmentation causing post-launch defects) How does a Vietnam-based mobile app development company handle device fragmentation testing?", "acceptedAnswer": { "@type": "Answer", "text": "A credible pod tests against a minimum of 8-12 physical devices spanning the last three Android OS versions and last two iOS versions rather than relying on simulator-only QA." } },
+    { "@type": "Question", "name": "(Scenario: CTO building a launch timeline that depends on app-store approval) How long should we budget for App Store and Google Play review in the launch schedule?", "acceptedAnswer": { "@type": "Answer", "text": "Budget 24-48 hours for standard Apple review but up to two weeks for apps touching health data, payments, or background location, with a comparable buffer for Google Play resubmission risk." } },
+    { "@type": "Question", "name": "(Scenario: CTO comparing a Dutch mobile app development company against a Vietnam software development company on quality, not just price) How do we verify a Vietnam-based mobile pod's quality claims before committing, beyond the reference calls?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for a live App Store/Play Store listing the pod shipped, its review history and crash-free rate, and its actual device-testing matrix and CI/CD pipeline documentation." } }
   ]
 }
 </script>

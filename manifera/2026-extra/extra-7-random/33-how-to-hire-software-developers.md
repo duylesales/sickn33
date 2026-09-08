@@ -70,6 +70,12 @@ Manifera helped redesign the process around a realistic, tool-permitted coding e
 
 A hiring process built around algorithmic whiteboard performance rejects genuinely strong candidates who don't interview well in that narrow artificial format while passing weaker candidates who've specifically prepared for it, producing engineering hires whose interview performance poorly predicts actual on-the-job effectiveness. Redesigning around job-realistic assessments costs nothing beyond restructuring the interview process itself. [Talk to Manifera](https://www.manifera.com/contact-us/) about hiring software developers through an assessment process that actually predicts performance.
 
+## A Scorecard for Hiring Software Developers Without a Whiteboard
+
+A CTO replacing whiteboard interviews needs a structured scorecard, not just different questions, or the new process reintroduces the same interviewer-to-interviewer inconsistency it was meant to fix. A workable four-part scorecard: problem-solving process (30%) — scored on how the candidate handles ambiguity and uses available resources, not whether they reach a "correct" answer; code comprehension (25%) — scored on the quality and specificity of issues identified in the review exercise; judgment and tradeoffs (25%) — scored on the past-project discussion for whether the candidate can articulate why a decision was made, not just what was decided; and communication (20%) — scored on whether a non-technical stakeholder in the room could follow the reasoning.
+
+Each dimension gets a 1-4 rating with a written justification, not just a number, because the justification is what lets a hiring committee catch an interviewer's undocumented bias. Companies that switch from unstructured whiteboard scoring to this kind of structured rubric typically see inter-interviewer agreement improve by 30-40%, which matters directly to hiring quality: a scorecard two interviewers can't agree on isn't actually measuring anything, regardless of how rigorous the underlying exercise looks.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO relying on the standard whiteboard coding interview) Why does the standard whiteboard coding interview predict weak on-the-job performance?
@@ -92,6 +98,22 @@ Because most developers spend the majority of their time understanding and impro
 
 By probing the tradeoffs they navigated and how they communicated technical reasoning to stakeholders, which requires speaking accurately about real past work rather than executing a rehearsed pattern.
 
+### (Scenario: CTO worried a new hiring process will be applied inconsistently across interviewers) How does a CTO keep a job-realistic hiring process from becoming as subjective as gut-feel whiteboard scoring?
+
+Use a structured scorecard with weighted dimensions — problem-solving process, code comprehension, judgment, and communication — each rated 1-4 with a written justification, which typically improves inter-interviewer agreement by 30-40% compared to unstructured scoring.
+
+### (Scenario: CTO deciding whether to allow AI coding assistants during a technical interview) Should candidates be allowed to use AI coding assistants like Copilot during a software developer hiring exercise?
+
+Yes, if the job itself permits them — excluding tools a hire would use daily tests an artificial skill, and evaluating how a candidate directs and verifies an AI assistant's output is now itself a genuinely predictive signal for the role.
+
+### (Scenario: CTO hiring software developers for a distributed or offshore engineering team) Does a job-realistic hiring process work as well for evaluating offshore or remote software developer candidates as for in-office hires?
+
+Yes, and arguably better, since the code review and past-project discussion formats don't depend on in-person whiteboard dynamics, making them naturally suited to assessing remote and offshore candidates on the same footing as local ones.
+
+### (Scenario: CTO evaluating whether to build an in-house hiring pipeline or hire software developers through an outsourcing partner) How does Manifera's hiring process for its Vietnam-based engineering pods differ from a typical offshore staffing vendor's screening?
+
+Manifera applies the same job-realistic scorecard — problem-solving process, code review, judgment, communication — used for Amsterdam-governed hiring decisions, rather than a volume-driven staffing vendor's lighter screening, so a CTO gets engineers vetted against actual job performance, not just resume-matched availability.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +123,11 @@ By probing the tradeoffs they navigated and how they communicated technical reas
     { "@type": "Question", "name": "(Scenario: CTO redesigning a hiring process to be more predictive) What should replace a whiteboard algorithm problem when hiring software developers?", "acceptedAnswer": { "@type": "Answer", "text": "A realistic tool-permitted coding exercise, a code review exercise, and a structured past-project discussion." } },
     { "@type": "Question", "name": "(Scenario: CTO deciding whether candidates should use tools during a coding interview) Should candidates be allowed to use documentation and tools during a coding interview?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, testing without real-work tools measures an artificial skill rather than the job's actual required skill." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to test a candidate's ability to work with existing code) Why is a code review exercise a more predictive interview format than writing new code from scratch?", "acceptedAnswer": { "@type": "Answer", "text": "Most developers spend the majority of their time understanding and improving existing code." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to surface a candidate's judgment and communication skills) How can a structured discussion of a candidate's past project reveal signal a whiteboard interview misses?", "acceptedAnswer": { "@type": "Answer", "text": "It requires speaking accurately about real past work and tradeoffs, harder to fake than a rehearsed pattern." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to surface a candidate's judgment and communication skills) How can a structured discussion of a candidate's past project reveal signal a whiteboard interview misses?", "acceptedAnswer": { "@type": "Answer", "text": "It requires speaking accurately about real past work and tradeoffs, harder to fake than a rehearsed pattern." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried a new hiring process will be applied inconsistently across interviewers) How does a CTO keep a job-realistic hiring process from becoming as subjective as gut-feel whiteboard scoring?", "acceptedAnswer": { "@type": "Answer", "text": "Use a structured scorecard with weighted dimensions, each rated 1-4 with a written justification, which typically improves inter-interviewer agreement by 30-40%." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding whether to allow AI coding assistants during a technical interview) Should candidates be allowed to use AI coding assistants like Copilot during a software developer hiring exercise?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the job itself permits them — excluding daily tools tests an artificial skill, and evaluating AI-assistant direction is itself a predictive signal." } },
+    { "@type": "Question", "name": "(Scenario: CTO hiring software developers for a distributed or offshore engineering team) Does a job-realistic hiring process work as well for evaluating offshore or remote software developer candidates as for in-office hires?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and arguably better, since code review and past-project discussion formats don't depend on in-person whiteboard dynamics." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating whether to build an in-house hiring pipeline or hire software developers through an outsourcing partner) How does Manifera's hiring process for its Vietnam-based engineering pods differ from a typical offshore staffing vendor's screening?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera applies the same job-realistic scorecard used for Amsterdam-governed hiring decisions, rather than a volume-driven staffing vendor's lighter screening." } }
   ]
 }
 </script>

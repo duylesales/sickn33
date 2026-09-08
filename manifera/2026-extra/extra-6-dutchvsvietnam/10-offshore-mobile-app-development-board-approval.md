@@ -76,6 +76,12 @@ A board that sends a mobile proposal back for a second round typically costs an 
 
 If your board deck has a strong cost case for a mobile build but no named answer to "who controls our App Store account," that's the gap to close before the meeting. [Talk to Manifera about building board-ready mobile governance materials](https://www.manifera.com/contact-us/).
 
+## The Mobile Governance Checklist: Six Documents to Attach to the Board Packet
+
+Beyond the general offshore governance answers, a mobile-specific board ask should arrive with six concrete artifacts attached, not summarized in prose: (1) a screenshot or export confirming the client organization — not the vendor — holds admin access to the Apple Developer and Google Play Console accounts; (2) a one-page SDK inventory listing every third-party analytics, crash-reporting, push-notification, and payment integration the app will ship with, each flagged for GDPR-relevant data flow; (3) the IP assignment clause specifically naming native modules, internal component libraries, and reusable frameworks, not just "the application"; (4) a written OS-update maintenance SLA specifying response time for the annual iOS/Android major-release cycle — Manifera's standard commits to compatibility testing within two weeks of a public OS release; (5) an emergency hotfix SLA for critical post-launch defects, typically same-business-day acknowledgment and a 48-72 hour fix-and-resubmit window; (6) a documented transition plan covering exactly how app-store accounts, source code, and signing certificates transfer if the engagement ends.
+
+A board member with prior outsourcing exposure reads document (1) and (6) first, because losing control of a live customer-facing app is the scenario every mobile-specific board hesitation traces back to — having both ready as literal attachments, not verbal assurances, is what converts hesitation into a vote.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO with days until a board presentation on a mobile build) We present to the board this week — can mobile-specific governance materials be ready in time?
@@ -98,6 +104,22 @@ Yes, and it's often the faster path to approval — a defined pilot with a clear
 
 Specificity: naming the client-owned app-store accounts, the documented IP assignment covering all mobile-specific tooling, and the defined maintenance SLA addresses the exact failure mode an experienced skeptic is remembering.
 
+### (Scenario: CFO asked for a literal document list rather than a verbal assurance) What specific documents should be physically attached to the board packet, not just described in the deck?
+
+Six: App Store/Play Console admin-access confirmation, a one-page SDK inventory flagged for GDPR-relevant data flows, the IP clause naming native modules and tooling explicitly, a written OS-update maintenance SLA, an emergency hotfix SLA, and a documented account/code/certificate transition plan.
+
+### (Scenario: CFO whose board wants a defined response time for post-launch emergencies) What SLA should we expect if the app breaks in production after an OS update ships?
+
+Manifera's standard commits to same-business-day acknowledgment on critical post-launch defects and a 48-72 hour fix-and-resubmit window, with compatibility testing against a new major OS release completed within two weeks of its public rollout.
+
+### (Scenario: CFO whose company is evaluating a Vietnam software outsourcing company against multiple competing vendors) What differentiates a governed Vietnam software outsourcing company from a standard offshore mobile app outsourcing vendor on the board's terms?
+
+A governance-backed structure names a separate, Netherlands-headquartered contracting entity accountable for compliance and IP sign-off, distinct from the delivery pod — a standard offshore outsourcing vendor typically offers only the delivery pod itself, leaving the client as the sole accountable party for governance questions the board will ask regardless.
+
+### (Scenario: CFO whose board wants confirmation before the app collects any user data) Does the SDK and data-handling review happen before or after the app goes live?
+
+Before — every third-party SDK is reviewed against its data-flow and GDPR implications during the build phase, with sign-off required before the integration ships in a production release, not discovered retroactively during a compliance audit.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,7 +129,11 @@ Specificity: naming the client-owned app-store accounts, the documented IP assig
     { "@type": "Question", "name": "(Scenario: CFO whose board previously rejected a mobile proposal on control-related concerns) Our board rejected our first mobile proposal over concerns about losing control of the app — how is this different?", "acceptedAnswer": { "@type": "Answer", "text": "A proposal that names client-owned accounts and a defined transition process directly answers the board's underlying fear about losing control of the app." } },
     { "@type": "Question", "name": "(Scenario: CFO whose app handles sensitive financial or health data) Our app handles sensitive financial data — does that change what the board expects to see?", "acceptedAnswer": { "@type": "Answer", "text": "It raises the bar on the SDK data-handling question specifically: the board will want confirmation every third-party integration touching that data has been reviewed by a Netherlands or EU-based governance function." } },
     { "@type": "Question", "name": "(Scenario: CFO wanting to de-risk the ask by starting smaller) Can we propose a smaller pilot mobile feature to the board rather than the full app budget?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it's often the faster path to approval — a defined pilot with a clear go/no-go gate typically clears board scrutiny faster than a request for full budget upfront." } },
-    { "@type": "Question", "name": "(Scenario: CFO preparing for a board member with prior outsourcing experience) A board member has been burned by losing control of a vendor-built product before — what's the most convincing answer?", "acceptedAnswer": { "@type": "Answer", "text": "Specificity: naming the client-owned app-store accounts, the documented IP assignment covering all mobile-specific tooling, and the defined maintenance SLA." } }
+    { "@type": "Question", "name": "(Scenario: CFO preparing for a board member with prior outsourcing experience) A board member has been burned by losing control of a vendor-built product before — what's the most convincing answer?", "acceptedAnswer": { "@type": "Answer", "text": "Specificity: naming the client-owned app-store accounts, the documented IP assignment covering all mobile-specific tooling, and the defined maintenance SLA." } },
+    { "@type": "Question", "name": "(Scenario: CFO asked for a literal document list rather than a verbal assurance) What specific documents should be physically attached to the board packet, not just described in the deck?", "acceptedAnswer": { "@type": "Answer", "text": "Six: App Store/Play Console admin-access confirmation, a one-page SDK inventory, the IP clause naming native modules explicitly, a written OS-update maintenance SLA, an emergency hotfix SLA, and a documented transition plan." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose board wants a defined response time for post-launch emergencies) What SLA should we expect if the app breaks in production after an OS update ships?", "acceptedAnswer": { "@type": "Answer", "text": "Same-business-day acknowledgment on critical defects and a 48-72 hour fix-and-resubmit window, with compatibility testing completed within two weeks of a new major OS release." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose company is evaluating a Vietnam software outsourcing company against multiple competing vendors) What differentiates a governed Vietnam software outsourcing company from a standard offshore mobile app outsourcing vendor on the board's terms?", "acceptedAnswer": { "@type": "Answer", "text": "A governance-backed structure names a separate, Netherlands-headquartered contracting entity accountable for compliance and IP, distinct from the delivery pod itself." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose board wants confirmation before the app collects any user data) Does the SDK and data-handling review happen before or after the app goes live?", "acceptedAnswer": { "@type": "Answer", "text": "Before — every third-party SDK is reviewed against its data-flow and GDPR implications during the build phase, with sign-off required before it ships in production." } }
   ]
 }
 </script>

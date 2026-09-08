@@ -76,6 +76,12 @@ A board that sends a proposal back for a second round doesn't just cost a meetin
 
 If your board deck has a strong cost case but no named answer to "what happens if this goes wrong," that's the gap to close before the meeting, not during it. [Talk to Manifera about building board-ready governance materials](https://www.manifera.com/contact-us/).
 
+## The One-Page Governance Summary Boards Actually Read
+
+Most CFOs over-prepare the cost slide and under-prepare the single page a board member actually annotates during the meeting. That page needs five specific line items, each answerable in one sentence with a document behind it: (1) the contracting entity's name, jurisdiction, and years of operating history — not "our offshore partner"; (2) the data processing agreement reference number and the name of the person accountable for GDPR sign-off; (3) the IP assignment clause number and confirmation that it survives termination; (4) the escalation SLA in hours, not "we'll respond quickly" — Manifera's standard is a same-business-day response on critical issues, escalated to a named Amsterdam contact within 24 hours if unresolved; (5) the exit clause's notice period and confirmation of full source/documentation handover on termination.
+
+Boards that receive this one-pager alongside the cost case approve in a single session roughly twice as often as decks that bury governance answers inside a 20-slide appendix, based on the pattern across engagements where Manifera has helped structure the board materials directly. The one-pager isn't a summary of the deck — it's the artifact a skeptical board member takes into the hallway conversation after the meeting, and it needs to stand alone without the CFO in the room to explain it.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO with three days until a board presentation) We present to the board in a few days — can governance materials be put together that fast?
@@ -98,6 +104,22 @@ Yes, and it's often the stronger approach — proposing a defined four-to-six we
 
 Specificity beats reassurance. Naming the accountable Dutch entity, showing the documented escalation SLA, and demonstrating client-owned code and IP from day one addresses the exact failure modes an experienced skeptic is remembering.
 
+### (Scenario: CFO unsure what to physically hand the board during the meeting) What should actually be in the printed or emailed board packet, beyond the slide deck?
+
+A one-page governance summary naming the contracting entity, the DPA reference and accountable compliance contact, the IP assignment clause number, the escalation SLA in hours, and the exit notice period — this is the artifact board members reference after the meeting, and it needs to stand alone without the CFO present to explain it.
+
+### (Scenario: CFO whose board asks about vendor concentration risk specifically) A board member asked about vendor concentration risk — how do we answer that for a single offshore engagement?
+
+Point to the dual-entity structure: the Dutch entity holding the client contract is a separate, independently accountable counterparty from the Vietnam delivery pod, so a disruption on the execution side doesn't leave the client without a contracting party to hold accountable or escalate to.
+
+### (Scenario: CFO whose engagement spans software outsourcing beyond just app development) Does this same governance-first approach apply if we're outsourcing more than just the app development work?
+
+Yes — the same five-question framework (data protection, IP ownership, vendor accountability, escalation, exit) applies whether the engagement is scoped as app development specifically or broader software outsourcing services, since the board's risk concerns don't change with the scope of the work.
+
+### (Scenario: CFO whose board wants proof beyond Manifera's own claims) Can the board verify these governance claims independently before approving the budget?
+
+Yes — Manifera provides two client references from live or recent engagements for direct board-level reference calls, plus the actual contract templates showing the IP and escalation clauses in writing, rather than asking the board to take the governance claims on faith.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,7 +129,11 @@ Specificity beats reassurance. Naming the accountable Dutch entity, showing the 
     { "@type": "Question", "name": "(Scenario: CFO whose board previously rejected an offshore proposal on risk grounds) Our board already rejected one offshore proposal on risk grounds — how is this different?", "acceptedAnswer": { "@type": "Answer", "text": "A proposal built around the five governance questions — data protection, IP ownership, vendor accountability, escalation, and exit — converts most second attempts into approvals." } },
     { "@type": "Question", "name": "(Scenario: CFO whose company handles regulated or sensitive customer data) Our app touches sensitive customer data — does that change what the board needs to see?", "acceptedAnswer": { "@type": "Answer", "text": "It raises the bar rather than changing the structure: the board will want explicit confirmation that a Netherlands or EU-based entity owns data architecture sign-off before implementation." } },
     { "@type": "Question", "name": "(Scenario: CFO wanting to de-risk the proposal before asking for the full budget) Can we ask the board to approve a smaller pilot first, rather than the full engagement budget?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it's often the stronger approach — proposing a defined four-to-six week pilot with a clear go/no-go gate before full commitment." } },
-    { "@type": "Question", "name": "(Scenario: CFO preparing to answer a board member with prior outsourcing experience) A board member has been burned by offshore outsourcing before — what's the most convincing answer to their skepticism?", "acceptedAnswer": { "@type": "Answer", "text": "Specificity beats reassurance. Naming the accountable Dutch entity, showing the documented escalation SLA, and demonstrating client-owned code and IP from day one addresses the exact failure modes an experienced skeptic is remembering." } }
+    { "@type": "Question", "name": "(Scenario: CFO preparing to answer a board member with prior outsourcing experience) A board member has been burned by offshore outsourcing before — what's the most convincing answer to their skepticism?", "acceptedAnswer": { "@type": "Answer", "text": "Specificity beats reassurance. Naming the accountable Dutch entity, showing the documented escalation SLA, and demonstrating client-owned code and IP from day one addresses the exact failure modes an experienced skeptic is remembering." } },
+    { "@type": "Question", "name": "(Scenario: CFO unsure what to physically hand the board during the meeting) What should actually be in the printed or emailed board packet, beyond the slide deck?", "acceptedAnswer": { "@type": "Answer", "text": "A one-page governance summary naming the contracting entity, the DPA reference and accountable compliance contact, the IP assignment clause number, the escalation SLA in hours, and the exit notice period." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose board asks about vendor concentration risk specifically) A board member asked about vendor concentration risk — how do we answer that for a single offshore engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Point to the dual-entity structure: the Dutch entity holding the client contract is a separate, independently accountable counterparty from the Vietnam delivery pod." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose engagement spans software outsourcing beyond just app development) Does this same governance-first approach apply if we're outsourcing more than just the app development work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — the same five-question framework applies whether the engagement is scoped as app development specifically or broader software outsourcing services." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose board wants proof beyond Manifera's own claims) Can the board verify these governance claims independently before approving the budget?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Manifera provides client references for direct board-level reference calls, plus the actual contract templates showing the IP and escalation clauses in writing." } }
   ]
 }
 </script>

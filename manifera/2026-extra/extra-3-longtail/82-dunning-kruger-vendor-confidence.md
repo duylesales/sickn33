@@ -86,6 +86,12 @@ Kyrenia Freight's founder now specifically asks a genuinely hard, detailed quest
 
 Before favoring the vendor who sounds most confident about a complex requirement, ask a genuinely hard, specific question and pay close attention to whether the response includes follow-up questions and honest caveats — that pattern is considerably more informative than confidence alone. [Schedule a free consultation with our Amsterdam team](https://www.manifera.com/contact-us/) and ask us your hardest question.
 
+## Building Your Own Hard Question by Software Developer Stage
+
+The calibration test works best when the "hard question" is matched to where the project actually sits across the typical software developer stages, since a generic hard question tests less than a stage-specific one. During discovery/scoping: ask how the vendor would handle a specific, genuinely ambiguous requirement in your brief — a vendor should ask two or three clarifying questions back, not propose a solution immediately. During architecture planning: ask what would break first under 10x the expected load, and expect a specific technical answer naming a component, not a general assurance of scalability. During active development: ask how a particular edge case in a core workflow is currently being handled, and expect either a specific answer or an honest "let me check and follow up," not an improvised answer given on the spot. During QA and pre-launch: ask what the team's biggest open concern is right now, and treat "none, everything's on track" from a vendor this close to launch as itself a data point worth scrutinizing.
+
+Rotating the hard question to match the current software developer stage keeps the test diagnostic throughout the relationship, not just at the initial vendor selection — a software development company that answered the discovery-stage question well can still slip into overconfidence at the architecture or QA stage once the sales-process incentive to impress has faded and the relationship has settled into routine delivery.
+
 ## Frequently Asked Questions
 
 ### (Scenario: non-technical founder favoring a confident-sounding vendor) Should I be suspicious of a vendor who answers my complex questions with total confidence?
@@ -108,6 +114,22 @@ Ask a specific, genuinely difficult question relevant to your project and observ
 
 Because a non-technical founder has no independent way to verify a technical claim directly, making confidence level a more heavily relied-upon signal — precisely the signal research suggests is least reliable for judging genuine competence.
 
+### (Scenario: founder wondering if the test should change as the project progresses) Should I ask a different kind of hard question depending on which software developer stages my project is currently in?
+
+Yes — match the hard question to the current stage: ambiguous requirements during discovery, load-handling specifics during architecture, edge-case handling during development, and open concerns during QA, since a generic question tests less than a stage-specific one.
+
+### (Scenario: founder worried a vendor's confidence changed over time) Our software development company seemed calibrated at the start but sounds overconfident now that we're near launch — is that a meaningful shift?
+
+Yes, worth investigating directly — confidence that scaled appropriately with difficulty during early discovery but has flattened into blanket reassurance near launch, when QA typically surfaces the most open concerns, is a pattern worth naming and asking about explicitly.
+
+### (Scenario: procurement lead vetting a custom software development company for a complex integration) What's the single hardest type of question to ask a custom software development company during vetting?
+
+Ask what would break first under significantly higher load than currently expected — a specific, named answer indicates real architectural thinking, while a generic assurance of scalability indicates the requirement hasn't actually been analyzed yet.
+
+### (Scenario: founder asking a voice assistant how to spot overconfidence) How do I know if a software services vendor is overconfident instead of genuinely expert?
+
+Check whether their confidence level changes with the difficulty of the question — genuine expertise shows more caution on harder questions, while overconfidence stays flat regardless of how hard the question actually is.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +139,11 @@ Because a non-technical founder has no independent way to verify a technical cla
     { "@type": "Question", "name": "(Scenario: founder unsure how to evaluate a vendor's technical claims) How can a non-technical founder tell the difference between genuine expertise and overconfidence?", "acceptedAnswer": { "@type": "Answer", "text": "Ask a genuinely hard question and watch whether the response includes follow-up questions or acknowledges what needs verification." } },
     { "@type": "Question", "name": "(Scenario: founder worried hedged answers mean incompetence) Does a vendor hedging or asking follow-up questions mean they're less capable?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily — hedging on a genuinely complex question is often a sign of calibrated expertise." } },
     { "@type": "Question", "name": "(Scenario: founder trying to apply this during a vendor evaluation) What's a practical way to test this during a vendor discovery call?", "acceptedAnswer": { "@type": "Answer", "text": "Ask a specific, genuinely difficult question and observe whether the response scales in caution relative to a simpler question asked earlier." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to understand why this matters more for non-technical buyers) Why is this confidence-competence gap especially risky for a non-technical founder specifically?", "acceptedAnswer": { "@type": "Answer", "text": "A non-technical founder has no independent way to verify a technical claim, making confidence level a more heavily relied-upon but less reliable signal." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to understand why this matters more for non-technical buyers) Why is this confidence-competence gap especially risky for a non-technical founder specifically?", "acceptedAnswer": { "@type": "Answer", "text": "A non-technical founder has no independent way to verify a technical claim, making confidence level a more heavily relied-upon but less reliable signal." } },
+    { "@type": "Question", "name": "(Scenario: founder wondering if the test should change as the project progresses) Should I ask a different kind of hard question depending on which software developer stages my project is currently in?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — match the question to the stage: ambiguous requirements during discovery, load-handling during architecture, edge-case handling during development, open concerns during QA." } },
+    { "@type": "Question", "name": "(Scenario: founder worried a vendor's confidence changed over time) Our software development company seemed calibrated at the start but sounds overconfident now that we're near launch — is that a meaningful shift?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, worth investigating — confidence flattening into blanket reassurance near launch, when QA typically surfaces open concerns, is a pattern worth naming directly." } },
+    { "@type": "Question", "name": "(Scenario: procurement lead vetting a custom software development company for a complex integration) What's the single hardest type of question to ask a custom software development company during vetting?", "acceptedAnswer": { "@type": "Answer", "text": "Ask what would break first under significantly higher load than expected — a specific, named answer indicates real architectural thinking." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant how to spot overconfidence) How do I know if a software services vendor is overconfident instead of genuinely expert?", "acceptedAnswer": { "@type": "Answer", "text": "Check whether their confidence changes with question difficulty — genuine expertise shows more caution on harder questions, while overconfidence stays flat." } }
   ]
 }
 </script>

@@ -70,6 +70,18 @@ Manifera's subsequent engagement broke down the quote explicitly against complex
 
 A CFO who compares app development cost quotes on headline price alone, without normalizing for complexity, integration scope, and quality bar, risks a change order that adds 25-45% to the original number once the real scope becomes unavoidable. Requesting an explicit three-variable breakdown from every vendor costs nothing beyond a more thorough evaluation conversation, and it prevents comparing three different projects as if they were the same one. [Talk to Manifera](https://www.manifera.com/contact-us/) about an app development cost breakdown built for genuine comparison.
 
+## The Normalization Checklist: Five Questions Before Signing an App Dev Cost Proposal
+
+Before accepting any application development cost quote, a CFO should require written answers to five questions, because a vendor's willingness to answer specifically — rather than in generalities — is itself a signal of whether the number was actually scoped or estimated by pattern-matching against a similar-sounding past project.
+
+1. **Which three features does the vendor consider technically hardest, and why specifically?** A vague answer means the complexity assessment wasn't done.
+2. **How many external integrations, and what's the fallback if an API changes mid-build?** Unscoped integration risk is the single largest source of app dev cost overrun, typically responsible for the bulk of the 25-45% change-order premium.
+3. **What percentage of the quote is QA and code review?** Below 12-15% of total hours signals a build optimized for a lower headline number, not lower total cost.
+4. **Is the quote fixed-price or time-and-materials, and what triggers a change order under each?** This determines who absorbs a scope surprise.
+5. **What does year-one maintenance cost, separate from the build?** A quote silent on this is quoting half the true application development cost.
+
+A CFO who gets specific, written answers to all five can compare three vendors on genuinely equivalent terms; a CFO who accepts a single bottom-line number is comparing three unknown projects.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO comparing app development quotes that vary widely for a similar-sounding project) Why can app development quotes for a similar-sounding project vary by a factor of two or three?
@@ -92,6 +104,22 @@ Because reconciling data from multiple external systems with inconsistent APIs i
 
 Typically 25-45% above the original quoted number, once the gap surfaces as a change order during development.
 
+### (Scenario: CFO trying to decide whether app dev cost should be quoted fixed-price or time-and-materials) When should application development cost be structured as fixed-price versus time-and-materials?
+
+Fixed-price suits a project with a stable, fully-scoped feature list, since it transfers scope-change risk to the vendor; time-and-materials suits a project expected to evolve, since forcing a fixed price onto shifting requirements just relocates the renegotiation into change orders.
+
+### (Scenario: CFO trying to estimate app dev cost before requesting formal vendor quotes) Is there a reliable rule of thumb for app development cost before getting a formal quote?
+
+Not a reliable one — the same feature list can cost 2-3x more depending on core logic complexity and integration count, which is precisely why normalizing quotes against those two variables matters more than any published industry average.
+
+### (Scenario: CFO evaluating an offshore vendor's app dev cost against a domestic agency's) How does Manifera's app development cost compare to a Western European agency for an equivalently scoped project?
+
+Manifera prices the same complexity, integration, and quality-bar scope a Western European agency would quote, but executes it through Vietnam-based engineering pods billing 55-65% below Dutch or German rates, so the CFO gets the same normalized scope at a structurally lower cost base.
+
+### (Scenario: CFO trying to build year-one total cost of ownership, not just the build quote) What percentage should a CFO add to an app development cost quote to estimate true first-year cost?
+
+Add 15-25% of the initial build cost for year-one maintenance and iteration on top of the quoted build price — a quote silent on this figure is quoting roughly 80% of the true first-year application development cost.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +129,11 @@ Typically 25-45% above the original quoted number, once the gap surfaces as a ch
     { "@type": "Question", "name": "(Scenario: CFO trying to compare quotes fairly across vendors) What should a CFO ask every vendor to break down before comparing app development cost quotes?", "acceptedAnswer": { "@type": "Answer", "text": "Complexity of the core logic, integration scope, and the quality bar included in the quoted number." } },
     { "@type": "Question", "name": "(Scenario: CFO worried a lower quote is cutting corners on quality) Is a lower app development quote actually cheaper if it cuts corners on testing and architecture?", "acceptedAnswer": { "@type": "Answer", "text": "No, cutting quality corners defers cost rather than eliminating it." } },
     { "@type": "Question", "name": "(Scenario: CFO trying to understand why integration complexity matters so much) Why does integration scope significantly affect app development cost?", "acceptedAnswer": { "@type": "Answer", "text": "Reconciling data from multiple external systems with inconsistent APIs is considerably more complex than a self-contained system." } },
-    { "@type": "Question", "name": "(Scenario: CFO trying to estimate the risk of an underscoped quote) What does an underscoped app development quote typically cost once the real scope surfaces?", "acceptedAnswer": { "@type": "Answer", "text": "Typically 25-45% above the original quoted number." } }
+    { "@type": "Question", "name": "(Scenario: CFO trying to estimate the risk of an underscoped quote) What does an underscoped app development quote typically cost once the real scope surfaces?", "acceptedAnswer": { "@type": "Answer", "text": "Typically 25-45% above the original quoted number." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to decide whether app dev cost should be quoted fixed-price or time-and-materials) When should application development cost be structured as fixed-price versus time-and-materials?", "acceptedAnswer": { "@type": "Answer", "text": "Fixed-price suits stable, fully-scoped requirements; time-and-materials suits an evolving project, since forcing fixed price onto shifting scope just relocates renegotiation into change orders." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to estimate app dev cost before requesting formal vendor quotes) Is there a reliable rule of thumb for app development cost before getting a formal quote?", "acceptedAnswer": { "@type": "Answer", "text": "No — the same feature list can cost 2-3x more depending on core logic complexity and integration count, which is why normalizing against those variables matters more than an industry average." } },
+    { "@type": "Question", "name": "(Scenario: CFO evaluating an offshore vendor's app dev cost against a domestic agency's) How does Manifera's app development cost compare to a Western European agency for an equivalently scoped project?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera prices the same scope a Western European agency would, executed through Vietnam-based pods billing 55-65% below Dutch or German rates." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to build year-one total cost of ownership, not just the build quote) What percentage should a CFO add to an app development cost quote to estimate true first-year cost?", "acceptedAnswer": { "@type": "Answer", "text": "Add 15-25% of the build cost for year-one maintenance and iteration — a quote silent on this is quoting roughly 80% of the true first-year cost." } }
   ]
 }
 </script>

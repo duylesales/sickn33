@@ -72,6 +72,12 @@ Manifera helped the CFO rerun the analysis with all four variables applied consi
 
 A build-versus-buy decision made to justify a pre-existing preference rather than genuinely analyzed produces the wrong answer often enough to be expensive — a company that builds when it should have bought spends multiples of an off-the-shelf solution's cost maintaining unnecessary custom software, while a company that buys when it should have built accepts ongoing constraints a build would have avoided. Running the genuine four-variable analysis costs nothing beyond disciplined rigor before the decision is finalized. [Talk to Manifera](https://www.manifera.com/contact-us/) about a build-versus-buy analysis that reflects the actual tradeoffs, not a pre-existing preference.
 
+## A Scoring Rubric for the Four-Variable Analysis
+
+A CFO who wants the four-variable framework to produce a consistent, comparable answer across multiple decisions — not just a one-off analysis — can score each variable 1-5 for both build and buy, then weight the total. Differentiation and switching-cost/lock-in risk should each carry a 30% weight, since they represent the longest-horizon strategic exposure; total cost of ownership carries 25%; speed to value carries 15%, reflecting that most decisions can tolerate a few extra months more easily than they can tolerate the wrong multi-year commitment. A capability scoring 4-5 on differentiation should require a build score at least 1.5 points above buy on the weighted total before buying is even considered, because genuine differentiation rarely survives being outsourced to a commodity tool regardless of near-term cost savings.
+
+In practice, this rubric surfaces a pattern most CFOs recognize once they see it: engineering-proposed build cases tend to score speed to value optimistically (compressing discovery and testing by 30-40% versus realistic estimates), while operations-proposed buy cases tend to under-score lock-in risk by ignoring vendor pricing-escalation history. Requiring the rubric filled out by someone outside the requesting team — not the engineering lead pitching to build, not the ops lead pitching to buy — removes most of the bias a narrative-only analysis carries.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO reviewing a build-versus-buy recommendation that already leans toward one answer) How can a CFO tell if a build-versus-buy analysis was reverse-engineered from a preference?
@@ -94,6 +100,22 @@ Whether the capability reflects something the business does uniquely well, or is
 
 Multiples of the cost of an off-the-shelf solution, spent maintaining custom software that never needed to be custom in the first place.
 
+### (Scenario: CFO trying to weight the four build-versus-buy variables consistently across multiple decisions) How should a CFO weight differentiation, cost, speed, and lock-in risk when scoring a build-versus-buy decision?
+
+Weight differentiation and lock-in risk at roughly 30% each, given their longest-horizon strategic exposure, total cost of ownership at 25%, and speed to value at 15%, since a timeline slip is usually more recoverable than the wrong multi-year commitment.
+
+### (Scenario: CFO worried that engineering and operations teams score their own build-versus-buy proposals with bias) Who should own scoring a build-versus-buy analysis to avoid team bias?
+
+Someone outside the requesting team — engineering pitching to build tends to compress speed-to-value estimates by 30-40%, and operations pitching to buy tends to under-score vendor lock-in risk, so a neutral scorer removes most of that systematic bias.
+
+### (Scenario: CFO evaluating custom software vs off the shelf for a genuinely differentiating capability) When does a genuinely differentiating capability still make sense to buy off the shelf?
+
+Rarely, and only when no build option can reach adequate quality within the business's realistic time horizon — a capability scoring 4-5 on differentiation should require build to score at least 1.5 points above buy on a weighted comparison before buying is seriously considered.
+
+### (Scenario: CFO deciding whether Manifera should execute the build side of a build-versus-buy decision) If the four-variable analysis favors building, how does Manifera keep that build cost-competitive with the buy alternative?
+
+Amsterdam-based governance keeps the build honestly scoped against the same total-cost-of-ownership discipline used in the analysis, while Vietnam-based execution delivers at 40-60% lower engineering cost than Western European rates, often closing much of the gap that made buying look attractive on cost alone.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +125,11 @@ Multiples of the cost of an off-the-shelf solution, spent maintaining custom sof
     { "@type": "Question", "name": "(Scenario: CFO trying to properly compare build and buy total costs) Why does total cost of ownership matter more than initial acquisition cost in a build-versus-buy decision?", "acceptedAnswer": { "@type": "Answer", "text": "Building creates an ongoing maintenance cost frequently underestimated or omitted from initial comparisons." } },
     { "@type": "Question", "name": "(Scenario: CFO trying to assess lock-in risk for both build and buy options) Does buying software eliminate lock-in risk compared to building?", "acceptedAnswer": { "@type": "Answer", "text": "No, buying creates vendor dependency while building creates dependency on ongoing internal maintenance capacity." } },
     { "@type": "Question", "name": "(Scenario: CFO trying to determine whether a capability is genuinely differentiating) What's the first question to ask in a genuine build-versus-buy analysis?", "acceptedAnswer": { "@type": "Answer", "text": "Whether the capability reflects something the business does uniquely well or is commodity functionality." } },
-    { "@type": "Question", "name": "(Scenario: CFO trying to estimate the cost of a wrong build-versus-buy decision) What does it typically cost when a company builds software it should have bought?", "acceptedAnswer": { "@type": "Answer", "text": "Multiples of the cost of an off-the-shelf solution, spent maintaining unnecessary custom software." } }
+    { "@type": "Question", "name": "(Scenario: CFO trying to estimate the cost of a wrong build-versus-buy decision) What does it typically cost when a company builds software it should have bought?", "acceptedAnswer": { "@type": "Answer", "text": "Multiples of the cost of an off-the-shelf solution, spent maintaining unnecessary custom software." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to weight the four build-versus-buy variables consistently across multiple decisions) How should a CFO weight differentiation, cost, speed, and lock-in risk when scoring a build-versus-buy decision?", "acceptedAnswer": { "@type": "Answer", "text": "Weight differentiation and lock-in risk at roughly 30% each, total cost of ownership at 25%, and speed to value at 15%." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried that engineering and operations teams score their own build-versus-buy proposals with bias) Who should own scoring a build-versus-buy analysis to avoid team bias?", "acceptedAnswer": { "@type": "Answer", "text": "Someone outside the requesting team, since engineering tends to compress speed-to-value estimates and operations tends to under-score vendor lock-in risk." } },
+    { "@type": "Question", "name": "(Scenario: CFO evaluating custom software vs off the shelf for a genuinely differentiating capability) When does a genuinely differentiating capability still make sense to buy off the shelf?", "acceptedAnswer": { "@type": "Answer", "text": "Rarely, and only when no build option can reach adequate quality within a realistic time horizon." } },
+    { "@type": "Question", "name": "(Scenario: CFO deciding whether Manifera should execute the build side of a build-versus-buy decision) If the four-variable analysis favors building, how does Manifera keep that build cost-competitive with the buy alternative?", "acceptedAnswer": { "@type": "Answer", "text": "Amsterdam-based governance keeps the build honestly scoped while Vietnam-based execution delivers at 40-60% lower engineering cost, closing much of the gap that made buying look attractive." } }
   ]
 }
 </script>

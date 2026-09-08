@@ -86,6 +86,12 @@ This is precisely why Nordskov Tech's founder describes almost missing the kicko
 
 Treat your next vendor's kickoff meeting as the real test, not a formality after the contract is already signed — the signals available in that single conversation predict the relationship more reliably than the entire sales process that preceded it. [Schedule a free consultation with our Amsterdam team](https://www.manifera.com/contact-us/) and evaluate our kickoff directly.
 
+## A Five-Point Kickoff Scorecard You Can Fill Out in the Room
+
+Turn the five kickoff signals into a scorecard filled out during or immediately after the meeting, rather than relying on general impression afterward, which tends to blur specifics the way it does in vendor discovery calls generally. Score each of the five 0-2 (0 = absent, 1 = partial, 2 = clearly present): clarifying questions on genuine ambiguity, a concrete two-week plan with named deliverables, actual assigned engineers present and speaking (not just account management), flexible engagement with a mid-meeting change or new information, and a specific communication cadence naming day, format, and attendees. A total score of 8-10 out of 10 predicts a smooth engagement reliably enough to proceed with confidence; 5-7 warrants a direct follow-up conversation naming the specific gaps before real work begins; below 5, on the evidence from cases like Nordskov Tech, is a leading indicator serious enough to reconsider the engagement while switching costs are still low.
+
+The scorecard's real value isn't the exact number — it's forcing the specific, written evaluation in the room, before the natural instinct to give a new vendor relationship the benefit of the doubt has time to soften a memory of what was actually said and who was actually present. A software services buyer who scores the meeting live catches gaps a same-day recollection reliably smooths over.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder about to have a kickoff meeting with a new vendor) What should I specifically watch for during a vendor's kickoff meeting?
@@ -108,6 +114,22 @@ Not necessarily too late, but it's worth raising the specific concerns directly 
 
 Come prepared with your own specific questions and a request for a concrete near-term plan and communication cadence — setting this expectation explicitly from your side helps establish the standard for the relationship going forward.
 
+### (Scenario: founder wanting an objective way to score a kickoff meeting) Is there a scoring system I can use to evaluate a kickoff meeting objectively instead of just going on gut feeling?
+
+Score five signals 0-2 each — clarifying questions, a concrete two-week plan, engineers present and speaking, flexibility with new information, and a specific communication cadence — for a total out of 10, filled out during or immediately after the meeting.
+
+### (Scenario: founder whose kickoff scored in the middle range) What should I do if my kickoff meeting scores in the 5-7 range, not clearly good or bad?
+
+Raise the specific gaps directly with the vendor before real work begins — a mid-range score is a signal to ask for clarification, not a verdict, and the vendor's response to that follow-up is itself additional predictive information.
+
+### (Scenario: procurement lead comparing multiple app solutions company kickoffs before choosing) Can I run the same kickoff scorecard across a paid pilot with more than one app solutions company before committing to one?
+
+Yes — running the same five-signal scorecard across two or three pilot kickoffs produces directly comparable scores, which is a more objective comparison than relying on which sales process felt more polished.
+
+### (Scenario: founder asking a voice assistant when a project's fate is actually decided) Does a software product project's success get decided during the sales process or later?
+
+Later — the kickoff meeting, the first real working conversation after signing, predicts project success more reliably than the sales pitch, because it's the first point where persuasion incentives are gone and genuine process becomes visible.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +139,11 @@ Come prepared with your own specific questions and a request for a concrete near
     { "@type": "Question", "name": "(Scenario: founder whose kickoff meeting felt underwhelming) What does it mean if our kickoff meeting had no engineers present, only account management?", "acceptedAnswer": { "@type": "Answer", "text": "A meaningful signal worth raising directly — ask when the assigned technical team will engage, and treat a vague answer as further information." } },
     { "@type": "Question", "name": "(Scenario: founder trying to understand why kickoff matters more than the sales process) Why would a kickoff meeting reveal more than the entire sales process that preceded it?", "acceptedAnswer": { "@type": "Answer", "text": "Because the deal is already closed, removing the persuasion incentive that shapes sales conversations." } },
     { "@type": "Question", "name": "(Scenario: founder worried a bad kickoff means the whole project is doomed) If a kickoff meeting goes poorly, is it too late to do anything about it?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily — raise the specific concerns directly and immediately, and the vendor's response is itself additional predictive information." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to prepare well for an upcoming kickoff) How can I help ensure my own kickoff meeting goes well, regardless of vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Come prepared with your own specific questions and a request for a concrete near-term plan and communication cadence." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to prepare well for an upcoming kickoff) How can I help ensure my own kickoff meeting goes well, regardless of vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Come prepared with your own specific questions and a request for a concrete near-term plan and communication cadence." } },
+    { "@type": "Question", "name": "(Scenario: founder wanting an objective way to score a kickoff meeting) Is there a scoring system I can use to evaluate a kickoff meeting objectively instead of just going on gut feeling?", "acceptedAnswer": { "@type": "Answer", "text": "Score five signals 0-2 each — clarifying questions, a concrete two-week plan, engineers present, flexibility, and a specific communication cadence — for a total out of 10." } },
+    { "@type": "Question", "name": "(Scenario: founder whose kickoff scored in the middle range) What should I do if my kickoff meeting scores in the 5-7 range, not clearly good or bad?", "acceptedAnswer": { "@type": "Answer", "text": "Raise the specific gaps directly with the vendor before real work begins — a mid-range score is a signal to ask for clarification, not a verdict." } },
+    { "@type": "Question", "name": "(Scenario: procurement lead comparing multiple app solutions company kickoffs before choosing) Can I run the same kickoff scorecard across a paid pilot with more than one app solutions company before committing to one?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — running the same five-signal scorecard across multiple pilot kickoffs produces directly comparable scores." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant when a project's fate is actually decided) Does a software product project's success get decided during the sales process or later?", "acceptedAnswer": { "@type": "Answer", "text": "Later — the kickoff meeting predicts success more reliably than the sales pitch, since it's the first point where genuine process becomes visible." } }
   ]
 }
 </script>

@@ -74,6 +74,10 @@ Negotiating exit terms at signing costs a CFO one additional contract-review con
 
 A CFO reviewing any offshore development contract, current or prospective, should specifically check whether transition period, documentation obligations, and infrastructure ownership are addressed with defined terms rather than general language. [Talk to Manifera about how exit and transition terms are structured](https://www.manifera.com/contact-us/).
 
+## Termination-for-Convenience vs. Termination-for-Cause: The Notice Period Gap That Catches CFOs Off Guard
+
+Most offshore contracts distinguish between termination for cause (the vendor breached something specific) and termination for convenience (the client simply wants to end the relationship for its own reasons), and the notice periods attached to each differ in ways that matter to a transition plan. Termination for cause typically allows immediate or short-notice termination, sometimes with a cure period of 15-30 days for the vendor to fix the breach first. Termination for convenience — the far more common real-world scenario, covering strategic pivots and budget changes rather than vendor failure — usually requires 60-90 days' notice, and this is the number a CFO should verify matches the actual transition timeline needed, not just accept as boilerplate. A notice period shorter than the negotiated transition period (documentation handover, knowledge-transfer sessions, infrastructure re-credentialing) creates a structural gap where the contract technically allows termination faster than the exit provisions can actually execute. Some contracts also apply a wind-down fee for convenience termination, typically one to two months of fees, intended to cover the vendor's own reallocation costs — a reasonable market term, but one that should be capped and disclosed upfront rather than discovered in the termination notice itself.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO reviewing a standard offshore vendor contract before signing) Why do exit terms matter if we don't plan to ever terminate the engagement?
@@ -96,6 +100,22 @@ If the vendor entity retains any credential or access control contingent on the 
 
 Based on comparable engagements, knowledge-recovery and reconstruction effort following an undocumented handover typically costs €60,000-€140,000 in delayed roadmap work and duplicated effort.
 
+### (Scenario: CFO checking termination notice period) What's a standard notice period for termination for convenience versus termination for cause?
+
+Termination for convenience typically requires 60-90 days' notice; termination for cause can be immediate or short-notice, sometimes after a 15-30 day cure period allowing the vendor to fix the breach first.
+
+### (Scenario: CFO worried about a notice period mismatch) What happens if the contract's termination notice period is shorter than the transition period it also promises?
+
+It creates a structural gap where termination is technically allowed faster than documentation handover, knowledge-transfer sessions, and infrastructure re-credentialing can actually execute — verify the notice period is at least as long as the negotiated transition provisions before signing.
+
+### (Scenario: CFO reviewing a wind-down fee) Is a wind-down fee for terminating an offshore development team contract normal, and how much should it be?
+
+Yes, a wind-down fee of one to two months' fees for convenience termination is a reasonable, common market term covering the vendor's reallocation costs — it should be capped and disclosed upfront in the contract, not discovered in the termination notice.
+
+### (Scenario: CFO negotiating a cure period) What's a reasonable cure period before a termination-for-cause claim can proceed?
+
+15-30 days is standard, giving the vendor a defined window to remedy the specific breach before the client can proceed with for-cause termination and its associated rights.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +125,11 @@ Based on comparable engagements, knowledge-recovery and reconstruction effort fo
     { "@type": "Question", "name": "(Scenario: CFO negotiating a transition period clause) What should a defined transition period actually specify?", "acceptedAnswer": { "@type": "Answer", "text": "A minimum notice period, named knowledge-transfer deliverables, and continued codebase and infrastructure access throughout the transition window." } },
     { "@type": "Question", "name": "(Scenario: CFO worried about documentation quality during an actual termination) Why does ongoing documentation matter more than a termination-triggered handover effort?", "acceptedAnswer": { "@type": "Answer", "text": "Documentation produced under time pressure at termination is materially worse than documentation maintained incrementally as a standard sprint deliverable." } },
     { "@type": "Question", "name": "(Scenario: CFO concerned about vendor leverage during a contentious termination) Why does infrastructure access ownership matter specifically?", "acceptedAnswer": { "@type": "Answer", "text": "A vendor-contingent credential or access control gives the vendor real leverage during termination; permanent client ownership removes that leverage." } },
-    { "@type": "Question", "name": "(Scenario: CFO estimating the cost of skipping exit-term negotiation) What does an undocumented handover actually cost?", "acceptedAnswer": { "@type": "Answer", "text": "Knowledge-recovery and reconstruction effort following an undocumented handover typically costs €60,000-€140,000." } }
+    { "@type": "Question", "name": "(Scenario: CFO estimating the cost of skipping exit-term negotiation) What does an undocumented handover actually cost?", "acceptedAnswer": { "@type": "Answer", "text": "Knowledge-recovery and reconstruction effort following an undocumented handover typically costs €60,000-€140,000." } },
+    { "@type": "Question", "name": "(Scenario: CFO checking termination notice period) What's a standard notice period for termination for convenience versus termination for cause?", "acceptedAnswer": { "@type": "Answer", "text": "Termination for convenience typically requires 60-90 days' notice; termination for cause can be immediate or short-notice, sometimes after a 15-30 day cure period." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried about a notice period mismatch) What happens if the contract's termination notice period is shorter than the transition period it also promises?", "acceptedAnswer": { "@type": "Answer", "text": "It creates a structural gap where termination is allowed faster than documentation handover and infrastructure re-credentialing can actually execute." } },
+    { "@type": "Question", "name": "(Scenario: CFO reviewing a wind-down fee) Is a wind-down fee for terminating an offshore development team contract normal, and how much should it be?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, one to two months' fees is a reasonable, common term, but it should be capped and disclosed upfront, not discovered in the termination notice." } },
+    { "@type": "Question", "name": "(Scenario: CFO negotiating a cure period) What's a reasonable cure period before a termination-for-cause claim can proceed?", "acceptedAnswer": { "@type": "Answer", "text": "15-30 days is standard, giving the vendor a defined window to remedy the specific breach first." } }
   ]
 }
 </script>

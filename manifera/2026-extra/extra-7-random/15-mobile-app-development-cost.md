@@ -70,6 +70,12 @@ Manifera built a full cost model covering both the mobile app and its backend de
 
 A CFO who budgets mobile app development against a generic online range typically discovers the real cost only once a vendor scopes the actual project, forcing an uncomfortable scope cut or budget increase after stakeholders have already been told what to expect. Building a realistic cost model against the actual platform scope, backend complexity, and feature depth before committing costs nothing beyond a proper scoping conversation, and it prevents the budget surprise a generic range guarantees. [Talk to Manifera](https://www.manifera.com/contact-us/) about a realistic mobile app development cost model built for your actual project.
 
+## By The Numbers: Where the Mobile App Development Cost Actually Goes
+
+A CFO reviewing a mobile app development cost quote line by line should expect roughly this allocation: discovery and UX architecture 10-15%, UI design 8-10%, engineering (iOS and Android combined) 45-55%, QA and device testing 12-15%, and project management 8-10%. Engineering dominates, but QA is the line CFOs most often try to compress — and the line where compression most reliably produces a post-launch bug bill larger than the savings.
+
+On rate, the arbitrage is concrete, not vague: a Dutch or Western European senior mobile engineer bills €90-140/hour, while an equivalent Vietnam-based engineer inside a governed pod bills €35-55/hour — a 55-65% reduction on the largest line item, without the quality variance that comes from unmanaged freelance outsourcing. On absolute totals, a functional MVP (one platform, 4-6 core screens, a simple backend) typically lands between €35,000-€75,000; a full cross-platform product with real-time features and complex integrations runs €150,000-€400,000+. A CFO comparing two quotes that differ by more than 20% for what's described as the same scope should ask which of these five allocation categories the lower quote actually cut, because it's rarely engineering hours — it's almost always QA or post-launch support.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO trying to build a mobile app development budget from a generic online estimate) Why do online mobile app development cost estimates vary so widely and rarely match the real number?
@@ -92,6 +98,22 @@ No, ongoing maintenance, OS-update compatibility, and iterative improvement typi
 
 Build a realistic cost model against the actual project's platform scope, backend complexity, and feature depth before any budget commitment is presented to stakeholders.
 
+### (Scenario: CFO comparing a fixed-price quote against a time-and-materials quote) Should mobile app development cost be structured as fixed-price or time-and-materials?
+
+Fixed-price works when requirements are stable and well-scoped, since it caps CFO risk; time-and-materials fits when the product will evolve during build, since a fixed-price contract on shifting scope simply moves the renegotiation to change orders instead of eliminating it.
+
+### (Scenario: CFO deciding between native and cross-platform to control app development cost) Is a cross-platform framework like React Native or Flutter actually cheaper than building native iOS and Android apps separately?
+
+Usually yes for the initial build, often saving 25-35% by sharing one codebase across platforms, but a CFO should confirm the specific feature set doesn't rely on deep hardware or platform APIs where cross-platform performance trade-offs erase the savings.
+
+### (Scenario: CFO deciding whether to launch with a minimum viable product) How much does launching with an MVP reduce mobile app development cost compared to a full-featured build?
+
+An MVP scoped to core screens and one platform typically costs 50-70% less than a full-featured launch, and the real value isn't just the lower number — it's validating demand before committing the larger budget to features nobody's confirmed users want.
+
+### (Scenario: CFO trying to understand why a Vietnam-based pod quotes lower than a Western European agency for the same mobile app) Why is Manifera's mobile app development cost model lower than a Netherlands-based agency's without cutting corners on quality?
+
+Because Amsterdam-based governance sets the same architectural and QA standards a Dutch agency would, while Vietnam-based engineers execute at €35-55/hour against €90-140/hour Western European rates — the savings come from labor cost geography, not from skipping scoping, QA, or maintainability work.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +123,11 @@ Build a realistic cost model against the actual project's platform scope, backen
     { "@type": "Question", "name": "(Scenario: CFO whose budget only accounts for the visible mobile app) Why does backend complexity matter so much to mobile app development cost?", "acceptedAnswer": { "@type": "Answer", "text": "Backend work is often comparable to or larger than the mobile app interface itself." } },
     { "@type": "Question", "name": "(Scenario: CFO evaluating which platform-specific features to include) Why do features like offline mode or biometric authentication significantly affect cost?", "acceptedAnswer": { "@type": "Answer", "text": "Each platform-specific capability adds real development and testing time beyond a basic interface." } },
     { "@type": "Question", "name": "(Scenario: CFO who treated the app as \"done\" once it launched) Does mobile app development cost end at launch?", "acceptedAnswer": { "@type": "Answer", "text": "No, ongoing maintenance and iteration typically run 15-25% of the initial build cost annually." } },
-    { "@type": "Question", "name": "(Scenario: CFO trying to avoid a mid-project budget renegotiation) How do we avoid discovering the real mobile app development cost only after committing to a budget?", "acceptedAnswer": { "@type": "Answer", "text": "Build a realistic cost model against the actual project's specifics before any budget commitment is presented to stakeholders." } }
+    { "@type": "Question", "name": "(Scenario: CFO trying to avoid a mid-project budget renegotiation) How do we avoid discovering the real mobile app development cost only after committing to a budget?", "acceptedAnswer": { "@type": "Answer", "text": "Build a realistic cost model against the actual project's specifics before any budget commitment is presented to stakeholders." } },
+    { "@type": "Question", "name": "(Scenario: CFO comparing a fixed-price quote against a time-and-materials quote) Should mobile app development cost be structured as fixed-price or time-and-materials?", "acceptedAnswer": { "@type": "Answer", "text": "Fixed-price suits stable, well-scoped requirements; time-and-materials suits a product that will evolve during build, since fixed-price on shifting scope just moves the renegotiation to change orders." } },
+    { "@type": "Question", "name": "(Scenario: CFO deciding between native and cross-platform to control app development cost) Is a cross-platform framework like React Native or Flutter actually cheaper than building native iOS and Android apps separately?", "acceptedAnswer": { "@type": "Answer", "text": "Usually yes, often saving 25-35% via a shared codebase, unless the feature set relies on deep hardware or platform APIs where cross-platform trade-offs erase the savings." } },
+    { "@type": "Question", "name": "(Scenario: CFO deciding whether to launch with a minimum viable product) How much does launching with an MVP reduce mobile app development cost compared to a full-featured build?", "acceptedAnswer": { "@type": "Answer", "text": "An MVP typically costs 50-70% less than a full-featured launch and validates demand before committing budget to unconfirmed features." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to understand why a Vietnam-based pod quotes lower than a Western European agency for the same mobile app) Why is Manifera's mobile app development cost model lower than a Netherlands-based agency's without cutting corners on quality?", "acceptedAnswer": { "@type": "Answer", "text": "Amsterdam-based governance sets the same standards a Dutch agency would, while Vietnam-based engineers execute at €35-55/hour against €90-140/hour Western European rates — savings come from labor geography, not from skipping QA." } }
   ]
 }
 </script>

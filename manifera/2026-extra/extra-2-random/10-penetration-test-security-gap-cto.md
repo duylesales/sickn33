@@ -68,6 +68,16 @@ Manifera's Amsterdam team triaged the findings within 48 hours and built a remed
 
 A failed or delayed penetration test remediation isn't just an engineering problem, it's a direct threat to revenue already forecasted and a board commitment already made — a €1 million-plus enterprise deal lost to an unresolved security finding is pure burned cash on top of the breach exposure the same gaps represent, and the average mid-market SaaS data breach now costs well into seven figures once incident response, notification, and reputational damage are counted. Building security into the architecture continuously costs a fraction of either scenario, and the fastest way to convert a deal-threatening pen test report into a signed contract is disciplined, prioritized remediation, not panic. [Talk to Manifera](https://www.manifera.com/contact-us/) about closing your security gaps before they close a deal.
 
+## Severity Triage: How Findings Actually Get Prioritized
+
+Not all "critical" findings carry equal deal risk, and treating a CVSS score as the only prioritization input is a common mistake. A working triage model weighs three factors together:
+
+- **Exploitability without authentication.** An unauthenticated remote-code-execution path or an auth bypass reachable from the public internet outranks a critical-rated finding that requires internal network access, even if both carry the same CVSS base score.
+- **Blast radius.** A finding that exposes one customer's data is a serious bug; a finding that exposes the multi-tenant data layer (a missing tenant-ID check in a shared query) is a company-ending bug. Procurement teams specifically ask about tenant isolation in enterprise reviews.
+- **Time-to-fix versus time-to-exploit.** A misconfigured S3 bucket or exposed admin panel gets fixed same-day, before deeper architectural fixes, purely because the exploit cost for an attacker is near zero.
+
+In practice, roughly 70% of critical/high findings in a first-time pen test cluster into three categories: broken or inconsistent authorization (35-40%), unencrypted data at rest or in transit (15-20%), and outdated dependencies with known CVEs (15-20%). Knowing this in advance lets a CTO pre-scope remediation cost before the report even lands.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO with critical pen test findings against a tight deal deadline) How fast can critical security findings realistically be remediated before a deal deadline lapses?
@@ -90,6 +100,22 @@ For critical and high-severity findings from a single pen test, remediation proj
 
 Establish a recurring security testing cadence, automated dependency and static scanning in CI, and a documented incident response plan before the next deal requires it, so the next review finds an active security program instead of a first-time audit.
 
+### (Scenario: CTO whose multi-tenant SaaS is entering enterprise procurement review) What do enterprise security reviewers specifically look for in a multi-tenant SaaS architecture?
+
+Procurement security teams focus heavily on tenant isolation: whether a missing or forgeable tenant-ID check anywhere in the data layer could let one customer see another's data. This single finding class is treated as more severe than most other vulnerabilities because it undermines the entire multi-tenant trust model.
+
+### (Scenario: CTO comparing a custom software development company's remediation approach to an in-house fix) Should we remediate pen test findings in-house or bring in outside help?
+
+Bring in outside help when the remediation deadline is tighter than your team's available bandwidth alongside existing roadmap commitments, which is the common case during an active enterprise sales cycle. A dedicated remediation team working the roadmap full-time closes findings in weeks where a part-time in-house effort often stretches past the procurement deadline.
+
+### (Scenario: CTO worried a re-test will find new issues after the first remediation) Does fixing the findings guarantee we pass the re-test?
+
+Only if the fixes are architectural, not superficial patches. A re-test specifically probes whether the same class of vulnerability was closed structurally (e.g., centralized authorization) versus patched only at the exact endpoint the original report flagged, so scope the remediation to the root cause, not the symptom.
+
+### (Scenario: CTO deciding what to disclose to the enterprise client during remediation) Should we proactively disclose pen test findings to the client before the re-test, or wait?
+
+Proactive disclosure with a clear remediation roadmap and timeline is generally viewed far more favorably by procurement security teams than silence followed by a clean re-test, because it demonstrates an active security process rather than a one-time scramble to pass a gate.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +125,11 @@ Establish a recurring security testing cadence, automated dependency and static 
     { "@type": "Question", "name": "(Scenario: CTO whose team keeps finding auth bugs in new endpoints) Why do authentication and authorization gaps keep appearing in new features?", "acceptedAnswer": { "@type": "Answer", "text": "This almost always traces back to authorization logic implemented per-endpoint rather than centrally enforced, meaning every new route is a fresh opportunity for someone to forget the check. Centralizing authorization into shared middleware closes the gap structurally." } },
     { "@type": "Question", "name": "(Scenario: CTO deciding whether to invest in ongoing security practices) Do we need continuous security testing, or is an annual pen test enough?", "acceptedAnswer": { "@type": "Answer", "text": "An annual penetration test is a reasonable baseline, but it should be paired with continuous automated scanning, static analysis and dependency CVE checks on every build, so vulnerabilities are caught between audits." } },
     { "@type": "Question", "name": "(Scenario: CTO worried about the cost of security remediation) How much does a security remediation project like this typically cost?", "acceptedAnswer": { "@type": "Answer", "text": "For critical and high-severity findings from a single pen test, remediation projects commonly run 40,000-100,000 euros depending on the depth of the architectural fixes required, a small fraction of the revenue or breach exposure at stake." } },
-    { "@type": "Question", "name": "(Scenario: CTO preparing for future enterprise security reviews) How do we avoid being caught off guard by the next enterprise security review?", "acceptedAnswer": { "@type": "Answer", "text": "Establish a recurring security testing cadence, automated dependency and static scanning in CI, and a documented incident response plan before the next deal requires it, so the next review finds an active security program instead of a first-time audit." } }
+    { "@type": "Question", "name": "(Scenario: CTO preparing for future enterprise security reviews) How do we avoid being caught off guard by the next enterprise security review?", "acceptedAnswer": { "@type": "Answer", "text": "Establish a recurring security testing cadence, automated dependency and static scanning in CI, and a documented incident response plan before the next deal requires it, so the next review finds an active security program instead of a first-time audit." } },
+    { "@type": "Question", "name": "(Scenario: CTO whose multi-tenant SaaS is entering enterprise procurement review) What do enterprise security reviewers specifically look for in a multi-tenant SaaS architecture?", "acceptedAnswer": { "@type": "Answer", "text": "Procurement security teams focus heavily on tenant isolation: whether a missing or forgeable tenant-ID check anywhere in the data layer could let one customer see another's data. This finding class is treated as more severe than most other vulnerabilities." } },
+    { "@type": "Question", "name": "(Scenario: CTO comparing a custom software development company's remediation approach to an in-house fix) Should we remediate pen test findings in-house or bring in outside help?", "acceptedAnswer": { "@type": "Answer", "text": "Bring in outside help when the remediation deadline is tighter than your team's available bandwidth alongside existing roadmap commitments. A dedicated remediation team working full-time closes findings in weeks where a part-time in-house effort often stretches past the deadline." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried a re-test will find new issues after the first remediation) Does fixing the findings guarantee we pass the re-test?", "acceptedAnswer": { "@type": "Answer", "text": "Only if the fixes are architectural, not superficial patches. A re-test specifically probes whether the same class of vulnerability was closed structurally versus patched only at the exact endpoint the original report flagged." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding what to disclose to the enterprise client during remediation) Should we proactively disclose pen test findings to the client before the re-test, or wait?", "acceptedAnswer": { "@type": "Answer", "text": "Proactive disclosure with a clear remediation roadmap and timeline is generally viewed far more favorably by procurement security teams than silence followed by a clean re-test, since it demonstrates an active security process rather than a one-time scramble." } }
   ]
 }
 </script>

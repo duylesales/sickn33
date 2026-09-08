@@ -72,6 +72,12 @@ Manifera was brought in to perform a genuine audit before the acquisition could 
 
 A superficial audit costs less upfront and provides materially worse protection, and the gap it misses is typically found later by someone with more at stake — an acquirer, a regulator, or an attacker — at a moment when the cost of the gap is far higher than the cost of the thorough audit would have been. A genuinely comprehensive audit typically runs a few weeks and produces a report that holds up under real scrutiny. [Talk to Manifera](https://www.manifera.com/contact-us/) about a software security audit thorough enough to trust with a real decision.
 
+## Scoping Checklist: What to Require in a Code Security Audit Statement of Work
+
+Before signing a vendor's proposal, a CTO should require these six items named explicitly in the statement of work, not implied by a generic "comprehensive security review" line: (1) manual code review hours as a specific number, separate from automated scan time — a genuine application security assessment typically allocates 60-70% of total effort to manual review, not tooling; (2) named coverage of the OWASP Top 10 and OWASP API Security Top 10 as minimum baselines, not the entire scope; (3) a defined authorization-testing matrix listing which roles and tenancy boundaries will actually be tested against each other; (4) explicit inclusion of infrastructure-as-code and cloud configuration review as a line item, not bundled vaguely into "application review"; (5) a re-test window included in the price, typically 2-4 weeks after remediation, to confirm fixes actually closed the finding rather than just changed its symptom; and (6) a named senior reviewer with specific prior audit experience, not just "our team," since audit quality varies enormously by individual reviewer skill in ways a company-level credential doesn't capture.
+
+A proposal missing three or more of these six items is very likely priced for a scan-and-report deliverable regardless of what the cover page calls itself, and a CTO should treat the gap as a red flag before committing budget, not after the findings report arrives thin.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO comparing security audit vendors whose deliverables look similar) How can a CTO tell a genuinely thorough security audit apart from a superficial one before commissioning it?
@@ -94,6 +100,22 @@ Because misconfigured infrastructure — IAM policies, network segmentation, sto
 
 Because a vulnerable package several levels deep in the transitive dependency tree is just as exploitable as one in the direct manifest, and is far less likely to have been reviewed by anyone.
 
+### (Scenario: CTO trying to judge whether a security audit proposal's price reflects genuine manual review effort) What proportion of a genuine application security assessment's effort should be manual review versus automated scanning?
+
+Roughly 60-70% of total effort should be manual code and architecture review, with automated scanning covering the remainder — a proposal priced mostly around scan time with a thin manual-review allocation is priced for a superficial deliverable.
+
+### (Scenario: CTO negotiating whether remediation verification is included in a security audit's scope) Should a code security audit include a re-test after vulnerabilities are remediated?
+
+Yes, a genuine audit includes a re-test window, typically 2-4 weeks after remediation, to confirm a fix actually closed the underlying finding rather than just changing its symptom or surface behavior.
+
+### (Scenario: CTO evaluating whether an audit's scope named OWASP standards or just claimed to be comprehensive) Is referencing the OWASP Top 10 enough to call a software security audit comprehensive?
+
+No, the OWASP Top 10 and OWASP API Security Top 10 are reasonable minimum baselines, not the full scope — a genuinely thorough audit also covers architecture and trust boundaries, authorization-matrix testing, and infrastructure configuration beyond what either OWASP list explicitly enumerates.
+
+### (Scenario: CTO deciding whether Manifera's audit team has the seniority to review a fintech or regulated codebase) Does Manifera's software security audit team include named senior reviewers, or is the audit performed by a generic pool?
+
+Amsterdam-based governance assigns a named senior reviewer with prior audit experience to own methodology and findings, while Vietnam-based senior engineers perform the deep technical review, so a CTO knows specifically who is accountable for the audit's thoroughness, not an anonymous team.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +125,11 @@ Because a vulnerable package several levels deep in the transitive dependency tr
     { "@type": "Question", "name": "(Scenario: CTO relying on a prior \"clean\" audit ahead of an acquisition) Why can a prior clean audit report become a liability rather than a defense?", "acceptedAnswer": { "@type": "Answer", "text": "It demonstrates a later-found gap was looked for and missed, which is harder to defend than never having audited." } },
     { "@type": "Question", "name": "(Scenario: CTO wondering whether authentication testing is sufficient in an audit) Why isn't confirming that authentication works enough for a real security audit?", "acceptedAnswer": { "@type": "Answer", "text": "Broken object-level authorization is one of the most common, damaging vulnerability classes and requires role-based testing beyond login." } },
     { "@type": "Question", "name": "(Scenario: CTO wondering whether audit scope should include cloud infrastructure) Why should a software security audit include cloud infrastructure configuration, not just application code?", "acceptedAnswer": { "@type": "Answer", "text": "Misconfigured infrastructure is now a leading cause of real breaches, independent of application code quality." } },
-    { "@type": "Question", "name": "(Scenario: CTO evaluating whether a dependency audit is thorough enough) Why does auditing only direct dependencies leave meaningful risk unaddressed?", "acceptedAnswer": { "@type": "Answer", "text": "A vulnerable transitive dependency is just as exploitable and far less likely to have been reviewed." } }
+    { "@type": "Question", "name": "(Scenario: CTO evaluating whether a dependency audit is thorough enough) Why does auditing only direct dependencies leave meaningful risk unaddressed?", "acceptedAnswer": { "@type": "Answer", "text": "A vulnerable transitive dependency is just as exploitable and far less likely to have been reviewed." } },
+    { "@type": "Question", "name": "(Scenario: CTO trying to judge whether a security audit proposal's price reflects genuine manual review effort) What proportion of a genuine application security assessment's effort should be manual review versus automated scanning?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 60-70% should be manual code and architecture review; a proposal priced mostly around scan time is priced for a superficial deliverable." } },
+    { "@type": "Question", "name": "(Scenario: CTO negotiating whether remediation verification is included in a security audit's scope) Should a code security audit include a re-test after vulnerabilities are remediated?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a genuine audit includes a re-test window, typically 2-4 weeks after remediation, to confirm the fix actually closed the finding." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating whether an audit's scope named OWASP standards or just claimed to be comprehensive) Is referencing the OWASP Top 10 enough to call a software security audit comprehensive?", "acceptedAnswer": { "@type": "Answer", "text": "No, OWASP lists are reasonable minimum baselines, not the full scope, which also needs architecture, authorization-matrix, and infrastructure review." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding whether Manifera's audit team has the seniority to review a fintech or regulated codebase) Does Manifera's software security audit team include named senior reviewers, or is the audit performed by a generic pool?", "acceptedAnswer": { "@type": "Answer", "text": "Amsterdam-based governance assigns a named senior reviewer while Vietnam-based senior engineers perform the deep technical review, so accountability is specific, not anonymous." } }
   ]
 }
 </script>

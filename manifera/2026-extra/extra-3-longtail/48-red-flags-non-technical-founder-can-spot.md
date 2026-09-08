@@ -92,6 +92,12 @@ The distinction matters because thin-slicing research has occasionally been misa
 
 You don't need technical knowledge to run this five-point check on your next vendor conversation — just attentiveness to specificity, willingness to accommodate scrutiny, and process transparency. [Talk to Manifera](https://www.manifera.com/contact-us/) and run it on us directly.
 
+## Exact Phrases That Signal Each Red Flag on the Call
+
+Because these five signals are thin-slice-detectable, it helps to know the specific phrasing that tends to accompany each one, so a non-technical founder isn't relying on vague intuition alone. For vague answers: listen for "we handle that on a case-by-case basis" or "it depends on the project" offered as a complete answer to a specific question, rather than followed by an actual specific. For reluctance on references or a pilot: "our clients prefer we don't share their contact details" or "we don't typically do paid pilots, we just start the full engagement" are near-verbatim versions of the actual deflection. For unnamed teams: "we have a great team ready for you" without a name or seniority level attached, even after asking twice. For signature pressure: "we can lock in this rate if we start this week" introduced before any discovery conversation has happened. For scope-change ambiguity: "we'll figure that out together as we go" in response to a direct question about change-order pricing.
+
+Any bespoke software development company or software dev company genuinely confident in its process answers these same five prompts with a name, a number, a document, or a specific process step — not a version of one of the five phrases above. Treat hearing two or more of these near-verbatim phrases in a single call as the pattern, not the individual moment, since a single vague answer alone is weaker evidence than a cluster of them appearing together.
+
 ## Frequently Asked Questions
 
 ### (Scenario: non-technical founder feeling unable to vet a vendor) Can a non-technical founder really evaluate a software vendor without any coding knowledge?
@@ -114,6 +120,22 @@ The stakes scale down with project size, but the underlying signals remain relev
 
 Two or more, especially if they include vague answers combined with either reluctance around references or no clear scope-change process, is a meaningful pattern worth weighing heavily against continuing with that vendor.
 
+### (Scenario: non-technical founder taking notes during a vendor call) Should I write down the vendor's exact answers during the call, or just my general impression afterward?
+
+Write down the exact phrasing in the moment — a general impression formed afterward tends to smooth over specific vague answers into a vaguer, more favorable overall memory, which is exactly the effect a thin-slice reading is meant to counteract.
+
+### (Scenario: founder evaluating a bespoke software development company that answered well on some points but not others) What if a bespoke software development company passes three of the five checks but fails two?
+
+Weigh which two failed — vague answers combined with reluctance on references is a stronger warning than, say, a slower-than-ideal signature timeline paired with an otherwise clean record on the other four.
+
+### (Scenario: founder wondering if larger software services firms are exempt from these checks) Do larger, more established software services firms still need to pass this five-point check?
+
+Yes — company size and reputation don't guarantee the specific engineers assigned to your project will be named, dedicated, or well-managed, so the same five checks apply regardless of how established the firm is.
+
+### (Scenario: founder asking a voice assistant for a one-line vetting tip) What's the single easiest thing a non-technical founder can check when choosing a software dev company?
+
+Ask a specific question and see if you get a specific answer — vagueness in response to a concrete question is the single most broadly revealing signal available without any technical knowledge.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -123,7 +145,11 @@ Two or more, especially if they include vague answers combined with either reluc
     { "@type": "Question", "name": "(Scenario: founder unsure which red flag matters most) If I can only check one of these five red flags, which matters most?", "acceptedAnswer": { "@type": "Answer", "text": "Vague answers to specific questions is often the most broadly revealing, correlating with the other four." } },
     { "@type": "Question", "name": "(Scenario: founder worried about seeming too demanding) Will running this five-point check come across as excessive scrutiny to a vendor?", "acceptedAnswer": { "@type": "Answer", "text": "A vendor confident in their process expects and welcomes this level of scrutiny for a significant engagement." } },
     { "@type": "Question", "name": "(Scenario: founder trying to apply this to a very small project) Does this five-point check still matter for a smaller, lower-budget project?", "acceptedAnswer": { "@type": "Answer", "text": "The stakes scale down, but the underlying signals remain relevant even for smaller projects." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to decide when to walk away) How many red flags out of five would you consider disqualifying?", "acceptedAnswer": { "@type": "Answer", "text": "Two or more, especially combining vague answers with reluctance around references or no clear scope-change process." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to decide when to walk away) How many red flags out of five would you consider disqualifying?", "acceptedAnswer": { "@type": "Answer", "text": "Two or more, especially combining vague answers with reluctance around references or no clear scope-change process." } },
+    { "@type": "Question", "name": "(Scenario: non-technical founder taking notes during a vendor call) Should I write down the vendor's exact answers during the call, or just my general impression afterward?", "acceptedAnswer": { "@type": "Answer", "text": "Write down the exact phrasing in the moment — a general impression formed afterward tends to smooth over specific vague answers into a vaguer, more favorable memory." } },
+    { "@type": "Question", "name": "(Scenario: founder evaluating a bespoke software development company that answered well on some points but not others) What if a bespoke software development company passes three of the five checks but fails two?", "acceptedAnswer": { "@type": "Answer", "text": "Weigh which two failed — vague answers combined with reluctance on references is a stronger warning than a slower signature timeline paired with an otherwise clean record." } },
+    { "@type": "Question", "name": "(Scenario: founder wondering if larger software services firms are exempt from these checks) Do larger, more established software services firms still need to pass this five-point check?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — company size and reputation don't guarantee the specific engineers assigned to your project will be named, dedicated, or well-managed." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant for a one-line vetting tip) What's the single easiest thing a non-technical founder can check when choosing a software dev company?", "acceptedAnswer": { "@type": "Answer", "text": "Ask a specific question and see if you get a specific answer — vagueness in response to a concrete question is the most broadly revealing signal available." } }
   ]
 }
 </script>

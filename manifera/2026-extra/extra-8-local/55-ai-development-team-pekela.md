@@ -98,6 +98,18 @@ Manifera's diagnosis found the real gap was structural: no dedicated ML engineer
 
 A stalled AI project consuming data science salaries for over a year without shipping typically represents a sunk cost in the range of €150,000 to €300,000 in fully loaded compensation and opportunity cost, with nothing production-ready to show for it. Restructuring the team and delivering a scoped production launch through a properly resourced cross-functional pod typically costs €40,000 to €58,000 delivered over six to eight weeks, a fraction of the sunk cost already spent trying to solve the wrong problem. Companies that restructure this way typically report their next AI initiative shipping 50% faster or more, since the reusable MLOps and data pipeline infrastructure built the first time removes the biggest recurring bottleneck for every subsequent project. To get a stalled AI project unblocked, reach out via [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## Technical Deep-Dive: The MLOps Stack That Prevents the Next Stall
+
+The infrastructure that keeps a shipped quality-inspection model from becoming next year's stalled project has specific, concrete components, not a vague "monitoring" line item:
+
+- **Model registry and versioning** (an MLflow-style registry) that ties every deployed model back to its training data snapshot, hyperparameters, and evaluation metrics, so a regression can be traced to its exact cause rather than triggering another ground-up investigation.
+- **Drift detection with a defined trigger threshold** — retraining should fire when the input data distribution shifts measurably or validation accuracy drops below an agreed floor, not on a fixed calendar schedule that ignores what's actually happening on the factory floor.
+- **A confidence-threshold escalation queue**, typically routing predictions below 85-90% confidence to human review rather than forcing an automated pass/fail call — this is what makes an imperfect model safely shippable.
+- **Canary rollout for new model versions**, deploying a retrained model to a small percentage of inspection stations first and comparing its accuracy against the incumbent before a full rollout.
+- **Edge inference hardware sized to line speed**, since cloud round-trip latency is usually incompatible with real-time production-line inspection.
+
+Building these five pieces alongside the first shipped version, rather than after the first retraining crisis, is what stops the next AI initiative from repeating this one's fourteen-month stall.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO whose AI prototype has been stuck for over a year) Our AI prototype has been technically impressive for over a year but never shipped. What's actually wrong?
@@ -120,6 +132,22 @@ The sunk cost of a stalled project is typically far larger than the cost of a pr
 
 Build the cross-functional team structure — ML engineer, data engineer, and an accountable product owner — and the MLOps infrastructure from the very first project, so the investment is reusable and the next initiative starts from a working foundation instead of from scratch.
 
+### (Scenario: CTO deciding whether to build a custom computer-vision model or use an existing foundation model) Should we build a custom computer-vision model from scratch or start from an existing foundation model?
+
+Start from a pre-trained vision foundation model fine-tuned on your specific defect categories — this typically cuts initial development time significantly versus training from scratch, and is the right default unless you have both a very large labeled dataset and a genuinely novel defect type no existing model has seen.
+
+### (Scenario: CTO planning inference infrastructure for a factory-floor quality-inspection deployment) Should model inference run on edge hardware on the factory floor or in the cloud?
+
+Edge inference on an on-site GPU or NPU device is usually required for real-time quality inspection, since round-trip cloud latency is incompatible with production-line speed; cloud inference works fine for batch or non-time-critical review workflows.
+
+### (Scenario: CTO defining the escalation workflow for cases the model is uncertain about) What should happen when the quality-inspection model isn't confident about a defect classification?
+
+Route low-confidence predictions, commonly below an 85-90% confidence threshold, to a human reviewer queue rather than forcing an automated pass/fail decision — this escalation path is what makes an imperfect model safely shippable rather than something that has to be perfect before launch.
+
+### (Scenario: CTO planning ongoing retraining cadence after initial launch) How often should the model be retrained once it's in production?
+
+Trigger retraining based on drift detection, such as a measurable shift in the input data distribution or a sustained accuracy drop against a validation set, rather than a fixed calendar schedule, with most factory-floor vision models needing a retraining review every one to three months as lighting, equipment, or product variations shift.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -129,7 +157,11 @@ Build the cross-functional team structure — ML engineer, data engineer, and an
     { "@type": "Question", "name": "(Scenario: CTO considering hiring another data scientist to fix a stalled project) Should we hire another data scientist to get this project unstuck?", "acceptedAnswer": { "@type": "Answer", "text": "Probably not by itself; a stalled project usually needs the missing productionization and data engineering roles, not more research capacity." } },
     { "@type": "Question", "name": "(Scenario: CTO unsure how to define when an AI model is ready to ship) How do we know when our AI model is \"good enough\" to actually ship?", "acceptedAnswer": { "@type": "Answer", "text": "Define a concrete, business-relevant threshold before development begins, typically meaningfully better than the current manual process with a clear escalation path, rather than pursuing open-ended accuracy improvements." } },
     { "@type": "Question", "name": "(Scenario: CTO worried about the cost of restructuring an already-expensive stalled project) Can we afford to restructure a project we've already spent a lot on?", "acceptedAnswer": { "@type": "Answer", "text": "The sunk cost of a stalled project is typically far larger than the cost of a proper restructuring, and restructuring is usually the only path that converts the sunk cost into an actual shipped product." } },
-    { "@type": "Question", "name": "(Scenario: CTO wanting to prevent this from happening again on the next AI initiative) How do we make sure our next AI project doesn't stall the same way?", "acceptedAnswer": { "@type": "Answer", "text": "Build the cross-functional team structure and MLOps infrastructure from the very first project, so the investment is reusable and the next initiative starts from a working foundation." } }
+    { "@type": "Question", "name": "(Scenario: CTO wanting to prevent this from happening again on the next AI initiative) How do we make sure our next AI project doesn't stall the same way?", "acceptedAnswer": { "@type": "Answer", "text": "Build the cross-functional team structure and MLOps infrastructure from the very first project, so the investment is reusable and the next initiative starts from a working foundation." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding whether to build a custom computer-vision model or use an existing foundation model) Should we build a custom computer-vision model from scratch or start from an existing foundation model?", "acceptedAnswer": { "@type": "Answer", "text": "Start from a pre-trained vision foundation model fine-tuned on your specific defect categories, which cuts initial development time significantly versus training from scratch and is the right default in most cases." } },
+    { "@type": "Question", "name": "(Scenario: CTO planning inference infrastructure for a factory-floor quality-inspection deployment) Should model inference run on edge hardware on the factory floor or in the cloud?", "acceptedAnswer": { "@type": "Answer", "text": "Edge inference on an on-site GPU or NPU device is usually required for real-time quality inspection, since round-trip cloud latency is incompatible with production-line speed." } },
+    { "@type": "Question", "name": "(Scenario: CTO defining the escalation workflow for cases the model is uncertain about) What should happen when the quality-inspection model isn't confident about a defect classification?", "acceptedAnswer": { "@type": "Answer", "text": "Route low-confidence predictions, commonly below an 85-90% confidence threshold, to a human reviewer queue rather than forcing an automated pass/fail decision." } },
+    { "@type": "Question", "name": "(Scenario: CTO planning ongoing retraining cadence after initial launch) How often should the model be retrained once it's in production?", "acceptedAnswer": { "@type": "Answer", "text": "Trigger retraining based on drift detection rather than a fixed calendar schedule, with most factory-floor vision models needing a retraining review every one to three months." } }
   ]
 }
 </script>

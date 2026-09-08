@@ -68,6 +68,18 @@ Manifera restructured the cutover around a phased traffic-split model, ran three
 
 A rushed migration doesn't just risk a bad weekend — it burns cash twice: once in the direct revenue lost to checkout instability and abandoned carts, and again in the paid media spend that gets pointed at a broken funnel because the campaign launch date didn't move even when the platform wasn't ready. A retailer running €150,000 in Q4 paid media against a degraded checkout experience is effectively paying to acquire customers who then bounce at payment, which can waste 20-30% of that spend outright — often €30,000-€45,000 gone before the marketing team even notices the conversion rate has collapsed. The fix costs a fraction of that: a proper phased migration architecture typically adds two to four weeks to a timeline and a modest increase in engineering budget, against six-figure downside exposure if the cutover fails during peak trading. [Talk to Manifera](https://www.manifera.com/contact-us/) before your migration date gets locked to a campaign calendar instead of a readiness gate.
 
+## The Readiness Gate: Five Metrics That Decide Go/No-Go
+
+A phased cutover is only as good as the thresholds gating each phase. A defensible go/no-go gate for promoting traffic from legacy to new platform should require all five of the following before advancing past a 10% traffic split:
+
+- **Checkout success rate at or above 99.5%** sustained across a load test run at 150% of last year's peak Black Friday volume, not average daily traffic.
+- **Payment provider error rate under 0.3%**, tested specifically against the exact payment methods and gateways used in the target market — a Dutch iDEAL integration and a card-only checkout have different failure modes under load.
+- **Inventory sync latency under 60 seconds** between the commerce platform and ERP, since a longer lag during a flash-sale spike routinely oversells limited-stock SKUs.
+- **Search-index freshness confirmed within the last hour**, because a stale index silently drops products from on-site search and Google Shopping feeds without triggering any obvious error.
+- **Rollback execution time under 15 minutes**, tested as a live drill, not just documented as a runbook — a rollback plan that has never actually been executed is a hypothesis, not a safety net.
+
+Any one of these failing during a load test is a hold, not a "we'll monitor it in production" — that instinct is exactly how a marketing-calendar deadline overrides an engineering readiness signal.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CMO defending the migration timeline to the board) Why can't we launch the new platform the same week as our Black Friday campaign?
@@ -90,6 +102,22 @@ Only if the migration plan starts with a full dependency audit of every custom i
 
 No — a readiness audit even a few weeks before a scheduled cutover can catch untested integrations, missing rollback infrastructure, or unrealistic load assumptions in time to fix them, and it's far cheaper than discovering the gaps live during Black Friday weekend.
 
+### (Scenario: CMO whose search and Google Shopping feed dropped products during a past migration) Why do products silently disappear from search or Shopping feeds during a platform migration?
+
+A stale or partially rebuilt search index doesn't throw an error, it just serves outdated results, which means a SKU can vanish from on-site search or the Shopping feed without any alert firing. This is why search-index freshness needs its own explicit monitoring threshold during a migration, separate from checkout and payment monitoring.
+
+### (Scenario: CMO evaluating an offshore software development company specifically for peak-season migration risk) What makes a migration team qualified to run a peak-season cutover versus a standard project team?
+
+Ask for evidence of prior cutovers executed under real peak-load conditions, specifically a traffic-split parallel run with a tested rollback, not just platform migration experience in general. A team that has only ever done off-peak or low-traffic migrations hasn't actually proven the skill that matters here.
+
+### (Scenario: CMO deciding how to communicate migration risk internally) How should a CMO explain migration timing risk to a board that wants the new platform live before the holidays?
+
+Reframe the conversation around the readiness gate, not the calendar date — present the specific load-test thresholds the platform must clear before campaign spend begins, so the board is approving a data-driven go/no-go decision rather than a fixed date that ignores whether the system is actually ready.
+
+### (Scenario: CMO whose migration is on a tight budget and considering skipping a full load test) Is it ever acceptable to skip peak-load testing to save time or budget on a smaller migration?
+
+Only if peak-season revenue exposure is genuinely small relative to the cost of a full load-testing cycle — for any retailer where Q4 represents a meaningful share of annual revenue, skipping peak-load testing to save a modest engineering cost is trading a small, certain savings for a large, uncertain downside.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +127,11 @@ No — a readiness audit even a few weeks before a scheduled cutover can catch u
     { "@type": "Question", "name": "(Scenario: CMO asking whether rollback is really necessary) Do we actually need a rollback plan if the migration has been tested?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, testing reduces risk but doesn't eliminate it, and peak-season traffic patterns are notoriously hard to fully simulate. A pre-defined, automated rollback threshold means a bad cutover costs you hours, not the entire weekend." } },
     { "@type": "Question", "name": "(Scenario: CMO comparing agency proposals for the migration) What's the biggest red flag in a migration proposal from an agency?", "acceptedAnswer": { "@type": "Answer", "text": "A single go-live weekend plan with no traffic-split or parallel-run phase, and no documented rollback trigger. If the proposal doesn't mention load testing at above-average peak volume, it hasn't been stress-tested against your actual risk." } },
     { "@type": "Question", "name": "(Scenario: CMO worried about custom integrations breaking) Will our custom pricing rules and loyalty program survive the migration?", "acceptedAnswer": { "@type": "Answer", "text": "Only if the migration plan starts with a full dependency audit of every custom integration, including pricing engines, loyalty platforms, ERP sync, and tax logic, before any migration code is written. This is exactly what generic standard migration timelines skip." } },
-    { "@type": "Question", "name": "(Scenario: CMO deciding whether to bring in outside help before a scheduled cutover) Is it too late to get a second opinion if our migration is already scheduled?", "acceptedAnswer": { "@type": "Answer", "text": "No, a readiness audit even a few weeks before a scheduled cutover can catch untested integrations, missing rollback infrastructure, or unrealistic load assumptions in time to fix them, and it is far cheaper than discovering the gaps live during peak trading." } }
+    { "@type": "Question", "name": "(Scenario: CMO deciding whether to bring in outside help before a scheduled cutover) Is it too late to get a second opinion if our migration is already scheduled?", "acceptedAnswer": { "@type": "Answer", "text": "No, a readiness audit even a few weeks before a scheduled cutover can catch untested integrations, missing rollback infrastructure, or unrealistic load assumptions in time to fix them, and it is far cheaper than discovering the gaps live during peak trading." } },
+    { "@type": "Question", "name": "(Scenario: CMO whose search and Google Shopping feed dropped products during a past migration) Why do products silently disappear from search or Shopping feeds during a platform migration?", "acceptedAnswer": { "@type": "Answer", "text": "A stale or partially rebuilt search index doesn't throw an error, it just serves outdated results, which means a SKU can vanish from search or the Shopping feed without any alert firing. Search-index freshness needs its own explicit monitoring threshold during a migration." } },
+    { "@type": "Question", "name": "(Scenario: CMO evaluating an offshore software development company specifically for peak-season migration risk) What makes a migration team qualified to run a peak-season cutover versus a standard project team?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for evidence of prior cutovers executed under real peak-load conditions, specifically a traffic-split parallel run with a tested rollback, not just platform migration experience in general." } },
+    { "@type": "Question", "name": "(Scenario: CMO deciding how to communicate migration risk internally) How should a CMO explain migration timing risk to a board that wants the new platform live before the holidays?", "acceptedAnswer": { "@type": "Answer", "text": "Reframe the conversation around the readiness gate, not the calendar date — present the specific load-test thresholds the platform must clear before campaign spend begins, so the board approves a data-driven go/no-go decision." } },
+    { "@type": "Question", "name": "(Scenario: CMO whose migration is on a tight budget and considering skipping a full load test) Is it ever acceptable to skip peak-load testing to save time or budget on a smaller migration?", "acceptedAnswer": { "@type": "Answer", "text": "Only if peak-season revenue exposure is genuinely small relative to the cost of a full load-testing cycle. For any retailer where Q4 represents a meaningful share of annual revenue, skipping it trades a small savings for a large, uncertain downside." } }
   ]
 }
 </script>

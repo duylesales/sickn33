@@ -83,6 +83,12 @@ A vendor engagement missing any of these specific features isn't offering a real
 
 Before defaulting to whichever option feels less intimidating in the moment, work through these four questions deliberately and specifically — the right answer depends on your specific situation, not a general rule favoring either path. [Talk to Manifera](https://www.manifera.com/contact-us/) for an honest conversation about which fits yours.
 
+## Pricing the Option: What the Flexibility Actually Costs
+
+Real options theory says flexibility has a price, and it's worth naming it concretely rather than treating it as an abstract benefit. Engaging an app making company for an initial build instead of hiring in-house typically carries a 10-20% premium over the raw engineering cost, reflecting the vendor's overhead, process, and the documentation work needed to keep the codebase transferable later. That premium buys three concrete things: no multi-month technical hiring cycle before a single line of code is written, no fixed monthly payroll commitment before product-market fit exists, and a defined exit path if the idea doesn't validate — a founder can simply not renew, versus needing to make layoff decisions with an in-house team.
+
+Compare that to the cost of the alternative path foreclosed early: an in-house senior engineering hire in most European markets runs €70,000-€110,000 in salary alone before equity and overhead, committed as a fixed cost regardless of whether the product finds traction in the following six months. A founder choosing between app based companies and an immediate in-house hire is, in real-options terms, choosing between a 10-20% variable premium with an exit ramp, and a fixed six-figure commitment with none — which is precisely why Dixit and Pindyck's framework favors preserving the option until traction data actually exists, not because outsourcing is inherently cheaper, but because the fixed commitment's downside is asymmetric to the variable premium's downside.
+
 ## Frequently Asked Questions
 
 ### (Scenario: non-technical founder assuming they need a technical co-founder first) Do I need a technical co-founder before I can build my product?
@@ -105,6 +111,22 @@ Often once the product is validated, funded, and the founder has the resources t
 
 No — a properly structured engagement includes full IP assignment to the founder's company, and the founder retains product direction throughout; what changes is who executes the technical work, not who owns the outcome.
 
+### (Scenario: founder comparing the raw cost premium of outsourcing) How much more expensive is an app making company compared to hiring the same work in-house?
+
+Expect roughly a 10-20% premium over raw engineering cost, which pays for process overhead and documentation discipline — set against avoiding a multi-month hiring cycle and a fixed six-figure salary commitment before traction exists.
+
+### (Scenario: founder evaluating several app based companies on their engagement structure) What contract terms should I check to make sure an app based company isn't locking me in permanently?
+
+Confirm full IP assignment from day one, ongoing architectural documentation, and no contractual penalty or technical lock-in for transitioning to a different team later — missing any of these turns a supposed option into a disguised commitment.
+
+### (Scenario: technical founder unsure whether to hire immediately) I can build myself but I'm one person — should I still consider app for software development help before hiring a team?
+
+Yes, particularly for parallelizing work outside your core expertise — a single technical founder augmented by an outside team can often reach validation faster than waiting to make the first full-time engineering hire.
+
+### (Scenario: founder asking a voice assistant for the short answer) Should a first-time founder build software in-house or use an app making company?
+
+Use an app making company for the initial build unless engineering itself is your core competitive advantage — it preserves the option to hire in-house later without the upfront cost and hiring delay of building a team before validation.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -114,7 +136,11 @@ No — a properly structured engagement includes full IP assignment to the found
     { "@type": "Question", "name": "(Scenario: technical founder defaulting to building everything in-house) Is it always better to build in-house if I have the technical skill to do it myself?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — even technical founders benefit from evaluating whether their time is best spent on core differentiation versus enabling infrastructure." } },
     { "@type": "Question", "name": "(Scenario: founder trying to plan beyond the initial build) What should I ask an app-making company about what happens after the initial build ships?", "acceptedAnswer": { "@type": "Answer", "text": "Ask specifically whether they offer an ongoing relationship model, like a dedicated team, versus only one-off project engagements." } },
     { "@type": "Question", "name": "(Scenario: founder trying to decide when to transition from outside build to in-house) When does it make sense to transition from an outside partner to an in-house team?", "acceptedAnswer": { "@type": "Answer", "text": "Often once the product is validated, funded, and the founder has resources for in-house technical leadership." } },
-    { "@type": "Question", "name": "(Scenario: founder worried about losing IP or control by outsourcing) Does building with an app-making company mean giving up ownership or control of my product?", "acceptedAnswer": { "@type": "Answer", "text": "No — a properly structured engagement includes full IP assignment, and the founder retains product direction throughout." } }
+    { "@type": "Question", "name": "(Scenario: founder worried about losing IP or control by outsourcing) Does building with an app-making company mean giving up ownership or control of my product?", "acceptedAnswer": { "@type": "Answer", "text": "No — a properly structured engagement includes full IP assignment, and the founder retains product direction throughout." } },
+    { "@type": "Question", "name": "(Scenario: founder comparing the raw cost premium of outsourcing) How much more expensive is an app making company compared to hiring the same work in-house?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly a 10-20% premium over raw engineering cost, set against avoiding a multi-month hiring cycle and a fixed six-figure salary commitment before traction exists." } },
+    { "@type": "Question", "name": "(Scenario: founder evaluating several app based companies on their engagement structure) What contract terms should I check to make sure an app based company isn't locking me in permanently?", "acceptedAnswer": { "@type": "Answer", "text": "Confirm full IP assignment from day one, ongoing architectural documentation, and no contractual or technical lock-in penalty for transitioning teams later." } },
+    { "@type": "Question", "name": "(Scenario: technical founder unsure whether to hire immediately) I can build myself but I'm one person — should I still consider app for software development help before hiring a team?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, particularly for parallelizing work outside your core expertise, which often reaches validation faster than waiting for a first full-time hire." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant for the short answer) Should a first-time founder build software in-house or use an app making company?", "acceptedAnswer": { "@type": "Answer", "text": "Use an app making company for the initial build unless engineering itself is your core competitive advantage, preserving the option to hire in-house later." } }
   ]
 }
 </script>

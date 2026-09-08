@@ -87,6 +87,12 @@ Alsace Prévoyance now requires a data-flow-level compliance review triggered by
 
 Treat GDPR compliance as a property of your system's actual, current data flow, not a document signed once — schedule a data-flow-level review whenever a new integration or feature touches personal data. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a technical compliance audit.
 
+## What's Actually at Stake: Fine Tiers and the Triggers That Surface a Gap
+
+GDPR's two-tier fine structure makes the paper-versus-practice distinction financially concrete, not just theoretical. Lower-tier violations — inadequate records, failure to notify a breach within 72 hours, insufficient data protection by design — carry fines up to €10 million or 2% of global annual turnover, whichever is higher. Higher-tier violations — the core principles of lawful processing, data subject rights, or unauthorized international transfers — carry fines up to €20 million or 4% of global annual turnover. A data-flow gap like Alsace Prévoyance's undisclosed third-party retention sits closer to the higher tier, since undisclosed processing and an unhonored data subject deletion request both fall squarely within that second category.
+
+In practice, a documentation-versus-system gap rarely surfaces through a proactive regulator sweep — it surfaces through one of three specific triggers: a data subject access or deletion request that reveals the company can't actually locate all the data it holds on that person; a breach investigation that traces further than the incident itself and finds unrelated undisclosed processing along the way, exactly as happened when Alsace Prévoyance's internal security review led to the broader technical audit; or a new enterprise client's own vendor due diligence process, in the same spirit as the technical due diligence article elsewhere on this site, asking a specific data-flow question the company's own team can't answer confidently. Any development in cloud environments — a new feature branch, a new integration, a new analytics tool — is a fourth, quieter trigger worth building a standing check around, since it's the moment new data flows most often get added without anyone re-running the compliance review.
+
 ## Frequently Asked Questions
 
 ### (Scenario: DPO relying on a signed DPA as proof of compliance) Is a signed data processing agreement enough to establish GDPR compliance?
@@ -109,6 +115,22 @@ It traces where personal data actually flows through every system, log, and thir
 
 Regulatory exposure that isn't visible until an audit, complaint, or breach forces the discovery — the gap exists regardless of whether anyone has noticed it yet, which is precisely why proactive technical review matters more than paperwork alone.
 
+### (Scenario: DPO trying to understand potential fine exposure) What's the actual fine range for a GDPR compliance gap like undisclosed third-party data retention?
+
+Undisclosed processing and unhonored data subject rights fall in GDPR's higher fine tier, up to €20 million or 4% of global annual turnover, whichever is higher — meaningfully more severe than the lower tier covering documentation and breach-notification failures.
+
+### (Scenario: software services buyer wondering when a data-flow gap actually gets discovered) How do compliance gaps between documentation and actual system behavior usually get discovered in practice?
+
+Most commonly through a data subject access or deletion request the system can't fully satisfy, a breach investigation that uncovers unrelated undisclosed processing, or a new enterprise client's own vendor due diligence process.
+
+### (Scenario: IT manager relying on euro cloud hosting as the main compliance safeguard) If we're already on a euro cloud provider, what else specifically should trigger a fresh compliance check?
+
+Any new third-party integration, analytics tool, or logging service added after the original review — each is a quiet trigger point where data flow commonly expands beyond what the DPA and privacy policy describe.
+
+### (Scenario: founder asking a voice assistant for the short version) What's the difference between GDPR compliance on paper and GDPR compliance in practice?
+
+Paper compliance means a signed DPA and privacy policy describing intended data handling; practice compliance means the running system's actual data flow, logging, and third-party sharing genuinely match that description.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -118,7 +140,11 @@ Regulatory exposure that isn't visible until an audit, complaint, or breach forc
     { "@type": "Question", "name": "(Scenario: IT manager assuming EU hosting solves compliance) Does hosting our data in an EU cloud region make our system GDPR compliant?", "acceptedAnswer": { "@type": "Answer", "text": "No — data residency is one requirement among several; retention, access controls, and third-party sharing all require separate verification." } },
     { "@type": "Question", "name": "(Scenario: compliance officer treating compliance as a completed project) How often should a GDPR compliance review actually happen?", "acceptedAnswer": { "@type": "Answer", "text": "Any time a new feature, integration, or data flow is added — compliance is a property of current system behavior, which changes over time." } },
     { "@type": "Question", "name": "(Scenario: DPO trying to scope a technical audit) What does a technical data-flow compliance audit actually examine that a legal review doesn't?", "acceptedAnswer": { "@type": "Answer", "text": "It traces actual data flow through every system and integration, verifies retention against actual logs, and confirms data subject rights work technically." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to understand the real risk of a compliance gap) What's the actual risk of a gap between our documentation and our system's real behavior?", "acceptedAnswer": { "@type": "Answer", "text": "Regulatory exposure invisible until an audit, complaint, or breach forces the discovery — the gap exists whether or not anyone has noticed it yet." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to understand the real risk of a compliance gap) What's the actual risk of a gap between our documentation and our system's real behavior?", "acceptedAnswer": { "@type": "Answer", "text": "Regulatory exposure invisible until an audit, complaint, or breach forces the discovery — the gap exists whether or not anyone has noticed it yet." } },
+    { "@type": "Question", "name": "(Scenario: DPO trying to understand potential fine exposure) What's the actual fine range for a GDPR compliance gap like undisclosed third-party data retention?", "acceptedAnswer": { "@type": "Answer", "text": "Undisclosed processing and unhonored data subject rights fall in GDPR's higher fine tier, up to €20 million or 4% of global annual turnover." } },
+    { "@type": "Question", "name": "(Scenario: software services buyer wondering when a data-flow gap actually gets discovered) How do compliance gaps between documentation and actual system behavior usually get discovered in practice?", "acceptedAnswer": { "@type": "Answer", "text": "Most commonly through a data subject request the system can't fully satisfy, a breach investigation uncovering unrelated processing, or a new client's vendor due diligence." } },
+    { "@type": "Question", "name": "(Scenario: IT manager relying on euro cloud hosting as the main compliance safeguard) If we're already on a euro cloud provider, what else specifically should trigger a fresh compliance check?", "acceptedAnswer": { "@type": "Answer", "text": "Any new third-party integration, analytics tool, or logging service added after the original review." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant for the short version) What's the difference between GDPR compliance on paper and GDPR compliance in practice?", "acceptedAnswer": { "@type": "Answer", "text": "Paper compliance is a signed DPA and privacy policy; practice compliance means the running system's actual data flow genuinely matches that description." } }
   ]
 }
 </script>

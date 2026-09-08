@@ -68,6 +68,10 @@ Manifera replaced the engagement with a governed offshore pod, structured overla
 
 A nearshore-versus-offshore decision made purely on time zone, without weighting governance quality, routinely produces the same failure mode regardless of which option is chosen, at a cost of €40,000-€80,000 in rework or renegotiation for a mid-market manufacturer. Weighting governance first and geography second, with the 20-35% typical blended-rate gap factored explicitly, gives a CFO a comparison that actually predicts the outcome. [Talk to Manifera about a governance-first cost comparison](https://www.manifera.com/contact-us/).
 
+## Building the Weighted Decision Model: A Worked Example for a €150,000 ERP Rebuild
+
+Take a concrete number and run it through a governance-first model rather than a geography-first one. For a €150,000 production-scheduling ERP rebuild, a nearshore Eastern European quote might land at €145/hour blended, an offshore Southeast Asian quote at €95/hour blended — a 35% gap consistent with the range cited above. Before comparing those numbers, score each vendor 0-2 on three governance factors: named architectural accountability (0 = none, 1 = implied, 2 = a named lead with contractual sign-off authority), structured overlap and handoff process (0 = none, 1 = ad hoc, 2 = documented and contractually specified), and independent quality verification (0 = self-reported, 1 = periodic, 2 = continuous and separate from delivery). A vendor scoring 4-6 across these three factors is governance-sound regardless of geography; a vendor scoring 0-3, nearshore or offshore, is the one that produces the €40,000-€80,000 rework risk cited earlier. Only after this governance score is settled should the rate comparison enter the decision — at that point, a governance-sound offshore quote at €95/hour against a governance-sound nearshore quote at €145/hour represents a genuine, apples-to-apples €50/hour saving worth roughly €30,000-€40,000 across a typical 600-800 hour distillery-tech ERP rebuild, money that evaporates instantly if either vendor scores low on governance regardless of its rate.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO comparing a nearshore quote against an offshore quote) Is nearshore outsourcing automatically more reliable than offshore?
@@ -90,6 +94,22 @@ Address the governance gap directly — independent verification, named architec
 
 Named architectural accountability and independent quality verification, with geography and blended rate considered only after governance quality is confirmed.
 
+### (Scenario: CFO wanting a repeatable scoring method rather than a gut call) How do we build a repeatable governance score to compare vendor quotes before looking at rate?
+
+Score each vendor 0-2 on three factors — named architectural accountability, structured overlap and handoff process, and independent quality verification — and treat any vendor scoring 4-6 as governance-sound; only compare rates between vendors that clear that threshold.
+
+### (Scenario: CFO worried about data residency for a Schiedam port-region ERP system) Does a production-scheduling ERP rebuild for a Zuid-Holland port-region manufacturer face data residency requirements that affect the nearshore vs offshore decision?
+
+Vendor developer location itself typically isn't the residency issue; what matters is where the ERP's data is hosted and whether any personal data in scope is processed under GDPR-compliant terms, which is an architecture decision independent of whether the engineering team sits nearshore or offshore.
+
+### (Scenario: CFO scoping a distillery-tech ERP rebuild) What distillery-specific requirements should the production-scheduling ERP rebuild account for, regardless of vendor geography?
+
+Batch and lot tracking tied to excise duty reporting, aging and maturation scheduling constraints unique to distillation, and integration with customs and excise reporting systems — requirements a generic ERP vendor without distillery-sector experience commonly underscopes.
+
+### (Scenario: CFO wanting ongoing verification, not just a pre-signature governance score) How do we keep verifying governance quality after the contract is signed, not just during vendor selection?
+
+Build a quarterly independent architecture review and a contractual audit right into the agreement, so governance is checked on a recurring cadence rather than assumed to hold steady simply because it looked sound during initial vendor selection.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +119,11 @@ Named architectural accountability and independent quality verification, with ge
     { "@type": "Question", "name": "(Scenario: CFO worried about communication gaps with an offshore pod) Can a well-structured offshore pod communicate as effectively as a nearshore vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, with deliberate overlap-hour scheduling and structured async handoff, a governed offshore pod frequently outperforms a nearshore vendor lacking the same discipline." } },
     { "@type": "Question", "name": "(Scenario: CFO trying to weight cost against risk) How much does the blended rate typically differ between comparable nearshore and offshore governed pods?", "acceptedAnswer": { "@type": "Answer", "text": "Typically 20-35% for the same seniority tier, a difference that compounds significantly over a multi-year engagement." } },
     { "@type": "Question", "name": "(Scenario: CFO who has already paid a nearshore premium without seeing the expected benefit) What should a CFO do if a nearshore engagement still shows the same governance gaps offshore is often blamed for?", "acceptedAnswer": { "@type": "Answer", "text": "Address the governance gap directly, since geography alone was never the actual fix." } },
-    { "@type": "Question", "name": "(Scenario: CFO building a decision framework for future outsourcing choices) What should actually top a CFO's evaluation checklist, ahead of geography?", "acceptedAnswer": { "@type": "Answer", "text": "Named architectural accountability and independent quality verification, with geography and blended rate considered after governance quality is confirmed." } }
+    { "@type": "Question", "name": "(Scenario: CFO building a decision framework for future outsourcing choices) What should actually top a CFO's evaluation checklist, ahead of geography?", "acceptedAnswer": { "@type": "Answer", "text": "Named architectural accountability and independent quality verification, with geography and blended rate considered after governance quality is confirmed." } },
+    { "@type": "Question", "name": "(Scenario: CFO wanting a repeatable scoring method rather than a gut call) How do we build a repeatable governance score to compare vendor quotes before looking at rate?", "acceptedAnswer": { "@type": "Answer", "text": "Score each vendor 0-2 on named architectural accountability, structured overlap process, and independent quality verification, and only compare rates between vendors scoring 4-6 or above." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried about data residency for a Schiedam port-region ERP system) Does a production-scheduling ERP rebuild for a Zuid-Holland port-region manufacturer face data residency requirements that affect the nearshore vs offshore decision?", "acceptedAnswer": { "@type": "Answer", "text": "Data hosting location and GDPR-compliant processing terms are the real issue, an architecture decision independent of whether the engineering team sits nearshore or offshore." } },
+    { "@type": "Question", "name": "(Scenario: CFO scoping a distillery-tech ERP rebuild) What distillery-specific requirements should the production-scheduling ERP rebuild account for, regardless of vendor geography?", "acceptedAnswer": { "@type": "Answer", "text": "Batch and lot tracking tied to excise duty reporting, aging and maturation scheduling constraints, and integration with customs and excise reporting systems." } },
+    { "@type": "Question", "name": "(Scenario: CFO wanting ongoing verification, not just a pre-signature governance score) How do we keep verifying governance quality after the contract is signed, not just during vendor selection?", "acceptedAnswer": { "@type": "Answer", "text": "Build a quarterly independent architecture review and a contractual audit right into the agreement, so governance is checked on a recurring cadence." } }
   ]
 }
 </script>

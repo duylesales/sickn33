@@ -72,6 +72,10 @@ A CTO who models only salary versus day rate misses the real cost driver: the ro
 
 The strongest position for most Dutch CTOs isn't choosing one path exclusively — it's running both in parallel, with governance ensuring the offshore pod doesn't diverge from the standards the in-house team already holds. [Talk to Manifera about modeling a hybrid scaling plan](https://www.manifera.com/contact-us/).
 
+## Vetting an IT Company in Vietnam: Signals That Separate Governed Pods From Bench-and-Switch Vendors
+
+Not every IT company in Vietnam offering a "dedicated team" actually delivers one, and a CTO evaluating vendors should check four verifiable signals before signing rather than relying on the sales deck. First, ask for the company's engineer-to-bench ratio — a vendor that maintains more than roughly 15-20% of engineers unassigned on any given month is more likely to rotate people onto your project opportunistically. Second, request named engineers' tenure at the company, not just years of experience generally; average tenure under 18 months at a Vietnam-based vendor is a leading indicator of the turnover that later shows up as unexplained team changes mid-engagement. Third, verify English proficiency with a specific benchmark, not a subjective claim — Manifera's engineers are screened to at least a B2 CEFR level for client-facing roles, and a vendor unwilling to name a proficiency standard likely doesn't test for one. Fourth, ask how architecture decisions are reviewed and by whom, since "senior engineer" titles vary enormously in what they actually authorize without an external governance layer confirming it.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO building a board deck comparing hiring paths) What's the single biggest cost the in-house-only model misses in a typical CFO spreadsheet?
@@ -94,6 +98,22 @@ Reducing in-house headcount in the Netherlands is a materially slower and more e
 
 Typically 2-4 weeks against a documented onboarding plan for a mid-complexity codebase, since the pod's process and technical leadership are already established before the engagement starts.
 
+### (Scenario: CTO worried about bench-and-switch staffing) How do we check whether a Vietnam software development company will swap out named engineers after signing?
+
+Ask for the vendor's engineer-to-bench ratio and named engineers' tenure at the company. A bench above 15-20% or average tenure under 18 months are leading indicators of opportunistic staffing changes once the contract is signed.
+
+### (Scenario: CTO evaluating English proficiency) What English proficiency level should engineers at a Vietnam IT company have for client-facing work?
+
+At least a B2 CEFR level for anyone in a client-facing role. Ask the vendor to name their proficiency standard directly — a vendor unwilling to state one specifically likely doesn't test for it.
+
+### (Scenario: CTO concerned about high turnover) What average engineer tenure at a Vietnam-based vendor is a red flag?
+
+Average tenure under 18 months is a meaningful warning sign. It tends to precede the kind of unexplained mid-engagement team changes that erode continuity on a multi-quarter engagement.
+
+### (Scenario: CTO wanting to verify seniority claims) How do we verify a "senior engineer" title actually means something at a specific IT company in Vietnam?
+
+Ask how architecture decisions are reviewed and by whom — a title alone doesn't confirm decision-making authority, and an external governance layer confirming architectural sign-off is what makes seniority claims verifiable rather than self-reported.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +123,11 @@ Typically 2-4 weeks against a documented onboarding plan for a mid-complexity co
     { "@type": "Question", "name": "(Scenario: CTO worried about losing architectural control by going offshore) Does engaging a Vietnam software development company mean giving up architectural control?", "acceptedAnswer": { "@type": "Answer", "text": "Not under a governed structure. Amsterdam-based technical leadership retains architecture sign-off and roadmap alignment authority, functioning similarly to an internal engineering leader." } },
     { "@type": "Question", "name": "(Scenario: CTO considering running in-house hiring and offshore delivery simultaneously) Can we run in-house hiring and a Vietnam pod at the same time rather than choosing one?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it's frequently the strongest structure: the pod covers immediate roadmap gaps while in-house hiring proceeds, then scales down once new hires reach full productivity." } },
     { "@type": "Question", "name": "(Scenario: CTO concerned about Dutch employment law making headcount hard to adjust) How does Dutch employment law affect the true cost of an in-house scaling plan?", "acceptedAnswer": { "@type": "Answer", "text": "Reducing in-house headcount in the Netherlands is a materially slower and more expensive process than adjusting external pod capacity, which is a real cost if roadmap assumptions change." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to estimate ramp time realistically) How quickly can a Vietnam-based pod actually reach full productivity on an existing codebase?", "acceptedAnswer": { "@type": "Answer", "text": "Typically 2-4 weeks against a documented onboarding plan for a mid-complexity codebase, since the pod's process and technical leadership are already established." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to estimate ramp time realistically) How quickly can a Vietnam-based pod actually reach full productivity on an existing codebase?", "acceptedAnswer": { "@type": "Answer", "text": "Typically 2-4 weeks against a documented onboarding plan for a mid-complexity codebase, since the pod's process and technical leadership are already established." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about bench-and-switch staffing) How do we check whether a Vietnam software development company will swap out named engineers after signing?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for the vendor's engineer-to-bench ratio and named engineers' tenure — a bench above 15-20% or average tenure under 18 months are leading indicators of opportunistic staffing changes." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating English proficiency) What English proficiency level should engineers at a Vietnam IT company have for client-facing work?", "acceptedAnswer": { "@type": "Answer", "text": "At least a B2 CEFR level for client-facing roles. A vendor unwilling to name a specific proficiency standard likely doesn't test for one." } },
+    { "@type": "Question", "name": "(Scenario: CTO concerned about high turnover) What average engineer tenure at a Vietnam-based vendor is a red flag?", "acceptedAnswer": { "@type": "Answer", "text": "Average tenure under 18 months is a meaningful warning sign, often preceding unexplained mid-engagement team changes." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting to verify seniority claims) How do we verify a \"senior engineer\" title actually means something at a specific IT company in Vietnam?", "acceptedAnswer": { "@type": "Answer", "text": "Ask how architecture decisions are reviewed and by whom — an external governance layer confirming architectural sign-off makes seniority claims verifiable rather than self-reported." } }
   ]
 }
 </script>

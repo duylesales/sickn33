@@ -84,6 +84,12 @@ Unknown unknowns are harder to deliberately surface, almost by definition, but a
 
 Treat basic diligence readiness — documentation, testing, security practices — as standard build quality from the start, not a pre-round scramble. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about building toward this standard from day one.
 
+## A Self-Run Diligence Checklist Before an Investor Runs Theirs
+
+Before deciding whether to build software from scratch or continue on an existing codebase heading into a round, run this six-point self-check and grade each item pass/fail rather than "mostly fine." One: can a second engineer, not the original builder, deploy the application from documentation alone, without asking the founder a clarifying question. Two: does the authentication flow reject at least the ten most common bad inputs (empty fields, SQL-injection-style strings, oversized payloads) without crashing. Three: is there an automated test suite covering the core user flow, even a thin one, versus zero automated coverage. Four: are architectural decisions — why this database, why this framework — written down anywhere a reviewer could find them in under ten minutes. Five: could the current database and hosting setup handle roughly 10x current load without a full rearchitecture. Six: is there more than one person who understands the full system, or does everything route through a single founder's head.
+
+A software product failing three or more of these six checks isn't necessarily unfundable, but it is one where the founder should expect the technical review to surface findings, and should decide in advance whether to disclose and explain them proactively or risk an investor's reviewer finding them first — the first path reads as self-awareness, the second reads as a gap the team hadn't noticed.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder about to enter a funding round) How much technical due diligence should I expect for a seed-stage round?
@@ -106,6 +112,22 @@ Not significantly, if built in from the start — proper security practices, bas
 
 It matters less formally but still helps — even angel investors with a technical advisor may take a quick look, and a codebase that reflects real discipline supports founder credibility beyond the specific diligence process itself. It also compounds forward: a codebase kept diligence-ready from the angel round onward needs far less catch-up work when a larger, more formal round eventually requires a deeper review.
 
+### (Scenario: founder deciding whether to rebuild before a round) Should I build software again from scratch if my current MVP would fail a technical review?
+
+Rarely — a full rebuild is usually more expensive and riskier than remediating specific gaps (documentation, test coverage, input validation) in the existing codebase, unless the architecture itself is fundamentally unable to scale.
+
+### (Scenario: founder wondering how investors actually test a software product's edge cases) What kind of unexpected input do technical reviewers actually try during diligence?
+
+Empty and oversized form submissions, special characters and injection-style strings in text fields, and rapid duplicate submissions on payment or signup flows are the most common quick checks a reviewer runs to see whether the product fails gracefully.
+
+### (Scenario: founder unsure whether documentation needs to be extensive) How much documentation is actually enough to pass a light technical review?
+
+Enough that a second engineer could deploy the application and understand the three or four biggest architectural decisions within about ten minutes of reading — exhaustive line-by-line documentation is not the bar.
+
+### (Scenario: founder asking a voice assistant what investors check first) What's the first thing a technical reviewer usually checks before a funding round?
+
+Whether the authentication and core user flow handle unexpected or malformed input without crashing or exposing data — it's the fastest check to run and the most common place a fragile prototype fails first.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,7 +137,11 @@ It matters less formally but still helps — even angel investors with a technic
     { "@type": "Question", "name": "(Scenario: founder worried their current product isn't diligence-ready) What should I do if I suspect my current MVP wouldn't pass technical due diligence?", "acceptedAnswer": { "@type": "Answer", "text": "Commission an independent technical review before actively fundraising, giving you time to address gaps on your own timeline." } },
     { "@type": "Question", "name": "(Scenario: non-technical founder trying to understand what 'documentation' means here) What kind of documentation does a technical review actually look for?", "acceptedAnswer": { "@type": "Answer", "text": "Records of key architectural decisions and why they were made, plus evidence that more than one person understands the codebase." } },
     { "@type": "Question", "name": "(Scenario: founder trying to estimate the cost of diligence readiness) Is building toward diligence readiness significantly more expensive than building a basic MVP?", "acceptedAnswer": { "@type": "Answer", "text": "Not significantly if built in from the start — it's closer to standard engineering discipline than an expensive add-on." } },
-    { "@type": "Question", "name": "(Scenario: founder wondering if this only matters for larger rounds) Does technical due diligence readiness matter for smaller, angel-led rounds too?", "acceptedAnswer": { "@type": "Answer", "text": "It matters less formally but still helps, since even angel investors with a technical advisor may take a quick look." } }
+    { "@type": "Question", "name": "(Scenario: founder wondering if this only matters for larger rounds) Does technical due diligence readiness matter for smaller, angel-led rounds too?", "acceptedAnswer": { "@type": "Answer", "text": "It matters less formally but still helps, since even angel investors with a technical advisor may take a quick look." } },
+    { "@type": "Question", "name": "(Scenario: founder deciding whether to rebuild before a round) Should I build software again from scratch if my current MVP would fail a technical review?", "acceptedAnswer": { "@type": "Answer", "text": "Rarely — remediating specific gaps like documentation, test coverage, or input validation is usually cheaper and lower-risk than a full rebuild." } },
+    { "@type": "Question", "name": "(Scenario: founder wondering how investors actually test a software product's edge cases) What kind of unexpected input do technical reviewers actually try during diligence?", "acceptedAnswer": { "@type": "Answer", "text": "Empty and oversized form submissions, injection-style strings in text fields, and rapid duplicate submissions on payment or signup flows." } },
+    { "@type": "Question", "name": "(Scenario: founder unsure whether documentation needs to be extensive) How much documentation is actually enough to pass a light technical review?", "acceptedAnswer": { "@type": "Answer", "text": "Enough that a second engineer could deploy the app and understand the biggest architectural decisions within about ten minutes of reading." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant what investors check first) What's the first thing a technical reviewer usually checks before a funding round?", "acceptedAnswer": { "@type": "Answer", "text": "Whether authentication and the core user flow handle unexpected or malformed input without crashing or exposing data." } }
   ]
 }
 </script>

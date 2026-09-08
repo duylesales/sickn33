@@ -76,6 +76,10 @@ A board that sends a proposal back for revision doesn't just cost the CFO a dela
 
 A CFO who can answer all five board questions with contract language rather than confidence gets approval in one session instead of two. [Talk to Manifera about building a board-ready proposal](https://www.manifera.com/contact-us/).
 
+## Vietnam's Data Protection Decree: A Detail Most Board Decks Miss
+
+Vietnam's Personal Data Protection Decree (Decree 13/2023) introduced its own cross-border data transfer registration requirement, and a board proposal that only discusses GDPR compliance without addressing this creates a gap a sharp board member's counsel will eventually find. Under the decree, transferring personal data belonging to Vietnamese data subjects out of Vietnam — and, in some readings, data an offshore team processes about the client's own EU customers while performing the work — can trigger a Vietnamese Ministry of Public Security impact assessment filing. In practice, a properly structured engagement avoids this entirely by ensuring Vietnamese developers work on the client's EU-hosted infrastructure rather than replicating client data onto Vietnam-based systems, which sidesteps the cross-border transfer question rather than needing to file for an exemption. A CFO's board deck should state explicitly that development and testing environments sit on EU-controlled infrastructure, not local Vietnam-based servers, and that this architectural choice — not a legal loophole — is what keeps both GDPR and Vietnam's own data protection decree out of scope for the engagement. Boards with EU data-heavy operations increasingly know to ask this specific question, and a vague "we're compliant" answer no longer satisfies them.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO anticipating board skepticism from prior offshore experience) What's the fastest way to lose credibility with a board that's seen an offshore engagement fail before?
@@ -98,6 +102,22 @@ Bring named team member seniority breakdown to the board deck rather than an agg
 
 Explicit transition-out provisions covering code handover, documentation transfer, and a defined notice period, plus ongoing documentation-as-a-deliverable practice so institutional knowledge doesn't leave with the vendor relationship.
 
+### (Scenario: CFO asked about Vietnam's own data protection law) Does Vietnam's Personal Data Protection Decree create additional compliance risk beyond GDPR?
+
+Potentially, yes — Decree 13/2023 introduces its own cross-border data transfer registration requirement that a GDPR-only compliance answer doesn't address, and a board with sophisticated counsel may ask about it specifically.
+
+### (Scenario: CFO wanting to avoid cross-border data transfer filings) How does Manifera avoid triggering Vietnam's cross-border data transfer registration requirement?
+
+By having Vietnamese developers work on the client's EU-hosted infrastructure rather than replicating client data onto Vietnam-based systems, which sidesteps the cross-border transfer question architecturally rather than requiring a regulatory filing.
+
+### (Scenario: CFO asked where development actually happens) Where should development and testing infrastructure be hosted to avoid dual compliance exposure?
+
+On EU-controlled infrastructure, not local Vietnam-based servers. This single architectural decision is what keeps both GDPR and Vietnam's data protection decree out of scope for the engagement.
+
+### (Scenario: CFO preparing board materials on Vietnam-specific law) Should the board deck mention Vietnamese law at all, or is GDPR sufficient to cover the risk?
+
+Mention it explicitly. A board member's counsel who raises Vietnam's own decree unprompted, after the deck only addressed GDPR, reads as a gap the CFO didn't anticipate — naming it proactively and explaining the infrastructure choice that resolves it closes the question before it's asked.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,7 +127,11 @@ Explicit transition-out provisions covering code handover, documentation transfe
     { "@type": "Question", "name": "(Scenario: CFO needing to demonstrate IP protection specifically) What specific IP evidence should be in the board deck, not just the contract?", "acceptedAnswer": { "@type": "Answer", "text": "A summary of individual engineer NDA coverage, confirmation that source repositories are client-owned from day one, and explicit language that the IP assignment clause survives contract termination." } },
     { "@type": "Question", "name": "(Scenario: CFO asked about vendor continuity risk) How do we answer a board question about what happens if key vendor personnel leave?", "acceptedAnswer": { "@type": "Answer", "text": "Point to a named, continuity-contracted pod structure with a defined reassignment notice period, plus a standing governance function that catches quality drift before it becomes visible." } },
     { "@type": "Question", "name": "(Scenario: CFO asked to justify the quoted day rate against team quality) How do we prove the quoted rate reflects genuine senior talent, not a junior-heavy team?", "acceptedAnswer": { "@type": "Answer", "text": "Bring named team member seniority breakdown to the board deck rather than an aggregate blended rate, and build a contractual right to review team composition at each milestone." } },
-    { "@type": "Question", "name": "(Scenario: CFO asked what happens if the engagement needs to end) What should be in the contract regarding exit and transition-out rights?", "acceptedAnswer": { "@type": "Answer", "text": "Explicit transition-out provisions covering code handover, documentation transfer, and a defined notice period, plus ongoing documentation-as-a-deliverable practice." } }
+    { "@type": "Question", "name": "(Scenario: CFO asked what happens if the engagement needs to end) What should be in the contract regarding exit and transition-out rights?", "acceptedAnswer": { "@type": "Answer", "text": "Explicit transition-out provisions covering code handover, documentation transfer, and a defined notice period, plus ongoing documentation-as-a-deliverable practice." } },
+    { "@type": "Question", "name": "(Scenario: CFO asked about Vietnam's own data protection law) Does Vietnam's Personal Data Protection Decree create additional compliance risk beyond GDPR?", "acceptedAnswer": { "@type": "Answer", "text": "Potentially yes — Decree 13/2023 introduces its own cross-border data transfer registration requirement that a GDPR-only compliance answer doesn't address." } },
+    { "@type": "Question", "name": "(Scenario: CFO wanting to avoid cross-border data transfer filings) How does Manifera avoid triggering Vietnam's cross-border data transfer registration requirement?", "acceptedAnswer": { "@type": "Answer", "text": "By having Vietnamese developers work on the client's EU-hosted infrastructure rather than replicating client data onto Vietnam-based systems, sidestepping the transfer question architecturally." } },
+    { "@type": "Question", "name": "(Scenario: CFO asked where development actually happens) Where should development and testing infrastructure be hosted to avoid dual compliance exposure?", "acceptedAnswer": { "@type": "Answer", "text": "On EU-controlled infrastructure, not local Vietnam-based servers, which keeps both GDPR and Vietnam's data protection decree out of scope." } },
+    { "@type": "Question", "name": "(Scenario: CFO preparing board materials on Vietnam-specific law) Should the board deck mention Vietnamese law at all, or is GDPR sufficient to cover the risk?", "acceptedAnswer": { "@type": "Answer", "text": "Mention it explicitly — naming Vietnam's decree proactively and explaining the infrastructure choice that resolves it closes the question before a board member's counsel raises it." } }
   ]
 }
 </script>

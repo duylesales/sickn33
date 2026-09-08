@@ -74,6 +74,12 @@ A flat geography policy — everything local, or everything offshore — routine
 
 The CTOs who get the best outcome from outsourcing software development aren't choosing a country — they're choosing, role by role, where each part of the team should actually sit. [Talk to Manifera about mapping your org chart](https://www.manifera.com/contact-us/).
 
+## A Sample Org Chart Mapping, By The Numbers
+
+Applying the role-by-role framework to a typical 15-person mid-market engineering org produces a pattern that repeats across most software development outsourcing companies engagements Manifera has structured: roughly 35-40% of headcount (backend and platform engineers on mainstream stacks) is a clear-case move to a governed Vietnam pod, at 45-60% lower fully-loaded cost per role. Another 20-25% (frontend and mobile) moves with a caveat — keep product ownership and design direction local or closely embedded, since design-system fluency benefits from tighter feedback loops. DevOps and infrastructure, typically 10-15% of headcount, is a strong offshore candidate specifically when the vendor can show verified production infrastructure ownership, not just application development.
+
+The remaining 25-30% — specialized/niche-stack engineers, architects, and anyone requiring daily founder or domain-expert proximity — stays local, and this is deliberately not a small number: the framework isn't "outsource everything," it's identifying that roughly a quarter to a third of most engineering orgs genuinely justifies the local premium, while the majority doesn't. A CTO applying this mapping honestly, rather than defaulting to either extreme, typically finds the 50-70% offshore-candidate range holds up once the actual role list is scored against proximity and specialization criteria rather than assumed.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO deciding which roles to move offshore first) Which engineering roles have the clearest case for moving to a Vietnam pod?
@@ -96,6 +102,22 @@ These roles depend heavily on accumulated organizational context and should gene
 
 Map every role on your current org chart against two questions: does it require daily proximity to founders or domain experts, and is it a mainstream or niche skill set. The answers sort roles into local-premium-justified versus strong-offshore-candidate categories quickly.
 
+### (Scenario: CTO wanting a rough percentage before doing the full org-chart exercise) What percentage of a typical engineering team is actually a good fit for a Vietnam software development company?
+
+Across mid-market orgs Manifera has mapped, roughly 50-70% of headcount is a reasonable offshore candidate once scored honestly — backend/platform (35-40%) and frontend/mobile (20-25%) make up most of that, with DevOps adding another 10-15% when verified infrastructure experience exists.
+
+### (Scenario: CTO worried the framework is just a justification for outsourcing everything) Is this role-by-role framework really about finding reasons to keep some roles local, or is it a pretext for full outsourcing?
+
+It's deliberately not a pretext for full outsourcing — the framework typically identifies 25-30% of a mid-sized org as genuinely justified for local retention, mainly specialized/niche-stack roles and anyone requiring daily founder or domain-expert proximity.
+
+### (Scenario: CTO deciding how to sequence a role-by-role transition) Should we move all offshore-candidate roles at once, or phase the transition?
+
+Phase it — start with the clearest-case category (backend/platform on mainstream stacks) as a pilot, validate governance and delivery quality over one to two sprint cycles, then extend to frontend/mobile and DevOps once the structure is proven rather than moving the whole org chart simultaneously.
+
+### (Scenario: CTO evaluating whether a vietnam software development company can staff a full role-by-role mapped org) Can one Vietnam software development company realistically staff all the offshore-candidate roles from the mapping, or do we need multiple vendors?
+
+A pod structured with enough bench depth across backend, frontend, mobile, and DevOps specializations can typically staff all offshore-candidate categories from a single governed relationship, which is simpler to manage than coordinating multiple vendors across role types.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +127,11 @@ Map every role on your current org chart against two questions: does it require 
     { "@type": "Question", "name": "(Scenario: CTO with unfilled DevOps vacancies) We can't fill DevOps roles locally — is Vietnam a realistic alternative for infrastructure work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, provided the vendor can demonstrate actual production infrastructure ownership rather than only application-layer development experience." } },
     { "@type": "Question", "name": "(Scenario: CTO unsure whether to keep specialized roles local) Should highly specialized or niche-stack roles stay local in the Netherlands?", "acceptedAnswer": { "@type": "Answer", "text": "Generally yes, or verified with extra due diligence, since the talent pool for niche specializations is thinner everywhere and remote verification is harder." } },
     { "@type": "Question", "name": "(Scenario: CTO worried about outsourcing leadership roles) Should architecture or technical leadership roles ever be outsourced?", "acceptedAnswer": { "@type": "Answer", "text": "These roles depend heavily on accumulated organizational context and should generally stay local or with long-tenured team members regardless of geography." } },
-    { "@type": "Question", "name": "(Scenario: CTO wanting a practical starting point) What's a practical first step to apply a role-by-role comparison to our own team?", "acceptedAnswer": { "@type": "Answer", "text": "Map every role against two questions: does it require daily proximity to founders or domain experts, and is it a mainstream or niche skill set. The answers sort roles into local-premium versus offshore-candidate categories." } }
+    { "@type": "Question", "name": "(Scenario: CTO wanting a practical starting point) What's a practical first step to apply a role-by-role comparison to our own team?", "acceptedAnswer": { "@type": "Answer", "text": "Map every role against two questions: does it require daily proximity to founders or domain experts, and is it a mainstream or niche skill set. The answers sort roles into local-premium versus offshore-candidate categories." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting a rough percentage before doing the full org-chart exercise) What percentage of a typical engineering team is actually a good fit for a Vietnam software development company?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 50-70% of headcount is a reasonable offshore candidate once scored honestly, led by backend/platform and frontend/mobile roles." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried the framework is just a justification for outsourcing everything) Is this role-by-role framework really about finding reasons to keep some roles local, or is it a pretext for full outsourcing?", "acceptedAnswer": { "@type": "Answer", "text": "It's not a pretext for full outsourcing — the framework typically identifies 25-30% of a mid-sized org as genuinely justified for local retention." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding how to sequence a role-by-role transition) Should we move all offshore-candidate roles at once, or phase the transition?", "acceptedAnswer": { "@type": "Answer", "text": "Phase it — start with backend/platform as a pilot, validate over one to two sprint cycles, then extend to frontend/mobile and DevOps." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating whether a vietnam software development company can staff a full role-by-role mapped org) Can one Vietnam software development company realistically staff all the offshore-candidate roles from the mapping, or do we need multiple vendors?", "acceptedAnswer": { "@type": "Answer", "text": "A pod with enough bench depth across backend, frontend, mobile, and DevOps can typically staff all offshore-candidate categories from a single governed relationship." } }
   ]
 }
 </script>

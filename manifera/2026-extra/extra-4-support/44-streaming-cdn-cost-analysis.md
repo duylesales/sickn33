@@ -86,6 +86,10 @@ Diffusion Champenoise used the realistic, scale-modeled cost analysis to negotia
 
 Before committing to a streaming platform budget, insist on cost estimates modeled against your realistic future content volume and viewership scale, not just development-stage or beta-launch conditions — encoding, CDN, and DRM costs scale substantially and can shift the entire cost picture once real growth is reached. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic, scale-modeled streaming platform cost analysis.
 
+## By the Numbers: A Realistic Streaming Infrastructure Cost Model at Scale
+
+For a custom software development build targeting meaningful streaming scale, a useful cost model separates one-time development from recurring, volume-driven infrastructure cost, since the two grow at very different rates. Development cost for a full-featured platform — player, CMS, subscription billing, basic DRM integration — typically runs €150,000-€350,000 for a mid-complexity build. Recurring infrastructure cost is where the real scaling risk lives: CDN bandwidth commonly runs $0.02-$0.08 per GB delivered depending on region and volume tier, meaning a platform serving 500,000 monthly hours of HD streaming can realistically see $15,000-$40,000 in monthly CDN cost alone once real viewership arrives, dwarfing typical beta-stage estimates by an order of magnitude. Encoding compute scales with both library size and rendition count; a platform producing five to seven adaptive bitrate renditions per title spends roughly three to five times the compute of a platform shipping only two or three renditions, a multiplier easy to miss when an initial estimate assumes a minimal rendition ladder. DRM licensing typically adds a per-stream or flat annual licensing fee per system (Widevine, PlayReady, FairPlay) plus integration engineering, commonly totaling €20,000-€50,000 for full three-system coverage in the first year. A software system development proposal that doesn't separately break out development cost from a 12-24 month recurring infrastructure projection at your actual target viewership isn't modeling the cost that actually determines unit economics.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial streaming platform estimate) Why do streaming platform cost estimates often look reasonable at launch but become problematic later?
@@ -108,6 +112,22 @@ Genuinely useful monitoring at real playback volume requires purpose-built infra
 
 Model encoding, CDN, and DRM costs explicitly against your realistic future content volume and target viewership scale, not just development-stage or beta-launch conditions that understate real operating cost at growth.
 
+### (Scenario: CTO wanting concrete CDN cost figures) Roughly how much does CDN bandwidth cost per GB for video streaming, and what does that mean at real viewership volume?
+
+Typically $0.02-$0.08 per GB delivered depending on region and volume tier, meaning a platform serving around 500,000 monthly hours of HD streaming can realistically see $15,000-$40,000 in monthly CDN cost alone — an order of magnitude beyond what typical beta-stage estimates project.
+
+### (Scenario: engineering lead asking about rendition ladder cost) How much does adding more adaptive bitrate renditions per title increase encoding cost?
+
+A platform producing five to seven renditions per title typically spends three to five times the encoding compute of a platform shipping only two or three renditions, so the rendition ladder decision should be scoped explicitly rather than left as an assumed default.
+
+### (Scenario: CTO budgeting DRM licensing specifically) What's a realistic first-year budget for DRM licensing across the three major systems (Widevine, PlayReady, FairPlay)?
+
+Commonly €20,000-€50,000 for full three-system coverage in the first year, combining per-system licensing fees with the integration engineering needed to support each ecosystem's native DRM correctly.
+
+### (Scenario: CTO wanting a full development cost anchor) What's a realistic development cost range for a full-featured custom streaming platform before ongoing infrastructure costs?
+
+Roughly €150,000-€350,000 for a mid-complexity build covering the player, content management system, subscription billing, and basic DRM integration — with recurring CDN, encoding, and monitoring costs at real scale typically exceeding this one-time development cost within the first year or two of meaningful viewership growth.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Model encoding, CDN, and DRM costs explicitly against your realistic future cont
     { "@type": "Question", "name": "(Scenario: finance lead trying to understand CDN cost) Why does CDN bandwidth cost matter so much more at scale than during beta testing?", "acceptedAnswer": { "@type": "Answer", "text": "CDN cost scales directly with minutes streamed, becoming a dominant operating cost only once real viewership scale is reached." } },
     { "@type": "Question", "name": "(Scenario: engineering lead scoping DRM) Why does DRM integration cost more than a single line item suggests?", "acceptedAnswer": { "@type": "Answer", "text": "Different device ecosystems require different DRM systems, and genuine coverage requires multiple distinct integrations." } },
     { "@type": "Question", "name": "(Scenario: CTO planning operational readiness) Why does quality-of-experience monitoring deserve dedicated budget rather than basic analytics?", "acceptedAnswer": { "@type": "Answer", "text": "Genuinely useful monitoring at scale requires purpose-built infrastructure beyond what basic analytics tooling handles." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to get an accurate cost estimate) What's the most reliable way to get an accurate streaming platform cost estimate?", "acceptedAnswer": { "@type": "Answer", "text": "Model encoding, CDN, and DRM costs against realistic future content volume and target viewership scale, not launch conditions." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to get an accurate cost estimate) What's the most reliable way to get an accurate streaming platform cost estimate?", "acceptedAnswer": { "@type": "Answer", "text": "Model encoding, CDN, and DRM costs against realistic future content volume and target viewership scale, not launch conditions." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting concrete CDN cost figures) Roughly how much does CDN bandwidth cost per GB for video streaming, and what does that mean at real viewership volume?", "acceptedAnswer": { "@type": "Answer", "text": "Typically $0.02-$0.08 per GB, meaning 500,000 monthly hours of HD streaming can realistically cost $15,000-$40,000 monthly in CDN alone." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead asking about rendition ladder cost) How much does adding more adaptive bitrate renditions per title increase encoding cost?", "acceptedAnswer": { "@type": "Answer", "text": "Five to seven renditions typically costs three to five times the compute of two or three renditions per title." } },
+    { "@type": "Question", "name": "(Scenario: CTO budgeting DRM licensing specifically) What's a realistic first-year budget for DRM licensing across the three major systems (Widevine, PlayReady, FairPlay)?", "acceptedAnswer": { "@type": "Answer", "text": "Commonly €20,000-€50,000 for full three-system coverage in the first year, including licensing fees and integration engineering." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting a full development cost anchor) What's a realistic development cost range for a full-featured custom streaming platform before ongoing infrastructure costs?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly €150,000-€350,000 for a mid-complexity build, with recurring infrastructure costs often exceeding this within a year or two of growth." } }
   ]
 }
 </script>

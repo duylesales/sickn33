@@ -80,6 +80,12 @@ Feleacu Ventures' founder now asks every vendor for typical hours-to-completion 
 
 Before choosing a vendor based on hourly rate alone, ask for realistic hours-to-completion estimates backed by actual past project data, and calculate total cost rather than comparing headline rates directly. [Get a custom team proposal within 48 hours](https://www.manifera.com/contact-us/) with a realistic total cost estimate included.
 
+## A Worked Comparison: Two Quotes for the Same Mobile App
+
+Run the actual numbers on a typical scenario to see how quickly the headline rate stops mattering. Vendor A quotes $32/hour with an estimated 600 hours, for a headline mobile app development cost of $19,200. Vendor B quotes $58/hour with an estimated 350 hours, backed by three verifiable references confirming their estimates typically land within 10-15% of actual hours, for a headline cost of $20,300 — on paper, barely different, and Vendor A looks marginally cheaper.
+
+Now apply what efficiency wage theory predicts and what the Feleacu Ventures case confirmed empirically: a lower-rate vendor without a verified efficiency track record commonly runs 2-3x over its original hours estimate on unfamiliar technical scope, while a vendor with a demonstrated efficiency track record typically lands within 10-20% of its estimate. At 2.5x actual hours, Vendor A's real cost to build a mobile app becomes 600 × 2.5 × $32 = $48,000 — more than double Vendor B's realistic total of roughly $22,000-$23,000 even after a modest overrun. The entire gap between the two proposals' headline numbers is smaller than the noise in how reliably each vendor's hours estimate actually holds — which is exactly why hours-to-completion track record, not hourly rate, is the number worth interrogating before signing either quote.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder comparing two vendor proposals by hourly rate) Should I always choose the vendor with the lowest hourly rate?
@@ -102,6 +108,22 @@ Slower raw output, more rework from mistakes caught late, and less efficient pro
 
 Multiply the hourly rate by a realistic hours estimate grounded in the vendor's own track record data for comparable projects, rather than accepting either the vendor's or your own optimistic hours assumption without verification.
 
+### (Scenario: founder comparing quotes with similar headline totals) Two proposals have nearly identical headline app development cost totals — does the hourly rate still matter for choosing between them?
+
+Less than the estimate reliability does — ask each vendor for their track record of actual-versus-estimated hours on past projects, since a vendor whose estimates typically overrun by 2-3x can turn a similar headline number into a much higher real cost.
+
+### (Scenario: founder trying to sanity-check a very low quote) A quote for the cost to build a mobile app came in far below every other vendor's estimate — what should that lower number make me ask?
+
+Ask specifically for that vendor's typical hours-to-completion accuracy on comparable past projects — an unusually low headline quote paired with no verifiable estimate-accuracy track record is the exact pattern efficiency wage theory predicts will end up costing more.
+
+### (Scenario: CTO trying to negotiate a fairer custom software development cost) Can I ask a vendor to guarantee their hours estimate as part of the custom software development cost negotiation?
+
+Yes — ask for a fixed-price or capped-hours structure on well-defined scope, which shifts the estimate-accuracy risk onto the vendor and directly tests how confident they actually are in their own hours projection.
+
+### (Scenario: founder asking a voice assistant for a rule of thumb) Is a lower hourly rate always a better deal when comparing app development cost quotes?
+
+No — total cost depends on hourly rate multiplied by actual hours required, and a lower rate from a vendor without a verified efficiency track record often produces a higher total cost once overruns are factored in.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -111,7 +133,11 @@ Multiply the hourly rate by a realistic hours estimate grounded in the vendor's 
     { "@type": "Question", "name": "(Scenario: founder trying to get a more accurate cost comparison) What should I ask for besides the hourly rate when comparing vendors?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for typical hours-to-completion on comparably scoped past projects, backed by real data rather than optimistic estimates." } },
     { "@type": "Question", "name": "(Scenario: founder worried this justifies always choosing the most expensive option) Does this mean I should always choose the highest-priced vendor?", "acceptedAnswer": { "@type": "Answer", "text": "No — an inflated rate with no corresponding efficiency behind it is simply a worse deal, not a better one." } },
     { "@type": "Question", "name": "(Scenario: founder trying to understand where the extra hours actually go) Why does a less experienced or cheaper vendor often end up taking more hours?", "acceptedAnswer": { "@type": "Answer", "text": "Slower output, more rework from late-caught mistakes, and less efficient problem-solving on unfamiliar territory all contribute and compound." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to build a better comparison process) How do I calculate a realistic total cost estimate before choosing a vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Multiply the hourly rate by a realistic hours estimate grounded in the vendor's own track record data for comparable projects." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to build a better comparison process) How do I calculate a realistic total cost estimate before choosing a vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Multiply the hourly rate by a realistic hours estimate grounded in the vendor's own track record data for comparable projects." } },
+    { "@type": "Question", "name": "(Scenario: founder comparing quotes with similar headline totals) Two proposals have nearly identical headline app development cost totals — does the hourly rate still matter for choosing between them?", "acceptedAnswer": { "@type": "Answer", "text": "Less than estimate reliability — a vendor whose estimates typically overrun by 2-3x can turn a similar headline number into a much higher real cost." } },
+    { "@type": "Question", "name": "(Scenario: founder trying to sanity-check a very low quote) A quote for the cost to build a mobile app came in far below every other vendor's estimate — what should that lower number make me ask?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for that vendor's typical hours-to-completion accuracy on comparable past projects — an unusually low quote with no verifiable track record often costs more in the end." } },
+    { "@type": "Question", "name": "(Scenario: CTO trying to negotiate a fairer custom software development cost) Can I ask a vendor to guarantee their hours estimate as part of the custom software development cost negotiation?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — ask for a fixed-price or capped-hours structure on well-defined scope, shifting estimate-accuracy risk onto the vendor." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant for a rule of thumb) Is a lower hourly rate always a better deal when comparing app development cost quotes?", "acceptedAnswer": { "@type": "Answer", "text": "No — total cost depends on rate multiplied by actual hours, and a lower rate without a verified efficiency track record often costs more overall." } }
   ]
 }
 </script>

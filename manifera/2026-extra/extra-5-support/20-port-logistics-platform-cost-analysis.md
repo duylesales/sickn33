@@ -86,6 +86,10 @@ Binnenhafen Logistik Duisburg proceeded with a realistically scoped platform bui
 
 Before committing to a port logistics platform budget, insist on a cost estimate modeled against your realistic projected vessel concurrency, AIS data characteristics, and target port and destination-country geography, not single-berth pilot conditions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic port logistics platform cost scoping exercise.
 
+## Technical Deep-Dive: Event Sourcing as the Fix for Stale Berth Allocation State
+
+The specific technical mechanism that separates a berth-scheduling engine that survives real port operations from one that doesn't is whether allocation state is stored as a current snapshot or as an append-only event log. A snapshot-based scheduler overwrites a berth's assignment record every time a vessel's arrival window shifts, which means two dispatchers acting on slightly stale reads can each believe a berth is free and assign it to different vessels — a conflict that surfaces only when the second vessel actually arrives. An event-sourced design instead appends every arrival-window update, AIS-triggered correction, and manual override as a discrete event, replaying the log to derive current allocation state, so a conflicting assignment is detectable and rejectable the instant it's proposed rather than discovered dockside. This also solves the audit problem port authorities increasingly require: a regulator asking why a specific berth assignment changed at 3am gets a full causal chain — which AIS update, which dispatcher action — rather than an overwritten record with no history. The added engineering cost is real, typically 15-25% more than a snapshot-based scheduler, primarily in building the event-replay and snapshot-checkpointing infrastructure needed to keep replay performance fast as the event log grows, but it's the specific architecture that prevents the double-booked berth conflicts that a snapshot model reliably produces once concurrent vessel volume and schedule volatility reach real multi-vessel scale.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial port logistics platform estimate) Why do port logistics platform cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ Documentation requirements genuinely differ by destination country and commodity
 
 Each port has genuinely distinct berth configurations, equipment mixes, and traffic patterns, requiring distributed infrastructure with the operational complexity of keeping data correctly synchronized or regionalized across ports.
 
+### (Scenario: port authority IT lead deciding between an established Terminal Operating System and a custom platform) When does a custom port logistics platform outperform an established Terminal Operating System (TOS) vendor package?
+
+Once an operator coordinates across multiple ports with genuinely distinct berth configurations and a customs documentation footprint spanning several destination countries, established TOS packages typically charge per-module licensing for customs and multi-port coordination that exceeds a custom build's cost, and most TOS vendors don't expose event-sourced berth allocation as a configurable option at all.
+
+### (Scenario: compliance lead integrating with a national single-window customs system) How does the customs documentation engine integrate with a national single-window submission system?
+
+The documentation engine needs a dedicated adapter per single-window system, since each country's single-window API expects its own field mapping, authentication scheme, and response-handling logic for rejections, making single-window integration a per-country engineering line item rather than a one-time integration.
+
+### (Scenario: CTO estimating timeline before committing to an expansion date) How long does building a production-ready multi-port logistics platform typically take?
+
+A realistic timeline runs 7-10 months for an MVP covering scheduling and AIS ingestion for one port, with each additional port and destination-country customs integration typically adding 6-10 weeks depending on documentation complexity and regional data-residency requirements.
+
+### (Scenario: compliance lead asking about AIS data retention obligations) How long does a port logistics platform need to retain historical AIS position data for regulatory purposes?
+
+Retention requirements vary by flag state and port authority but commonly range from 12 months to several years for vessels involved in an incident investigation, which means the platform's AIS ingestion layer needs a queryable historical archive, not just a live-position cache, from the first deployment.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Each port has genuinely distinct berth configurations, equipment mixes, and traf
     { "@type": "Question", "name": "(Scenario: engineering lead scoping scheduling) Why is vessel scheduling harder to scale correctly than it appears in a small pilot?", "acceptedAnswer": { "@type": "Answer", "text": "Real complexity depends on concurrent vessel volume and volatility, requiring event-sourced reconciliation at real scale." } },
     { "@type": "Question", "name": "(Scenario: product lead scoping AIS ingestion) Why does AIS data ingestion require more than a typical API integration?", "acceptedAnswer": { "@type": "Answer", "text": "Real-world AIS feeds exhibit genuine latency, gaps, and correction patterns requiring dedicated reconciliation infrastructure." } },
     { "@type": "Question", "name": "(Scenario: CTO planning multi-country documentation) Why does customs documentation deserve substantial, ongoing engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Requirements genuinely differ by destination country and commodity category, requiring a configurable generation engine." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for multi-port reach) Why does serving multiple ports add real infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Each port has distinct configurations and traffic patterns, requiring distributed infrastructure with real synchronization complexity." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for multi-port reach) Why does serving multiple ports add real infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Each port has distinct configurations and traffic patterns, requiring distributed infrastructure with real synchronization complexity." } },
+    { "@type": "Question", "name": "(Scenario: port authority IT lead deciding between an established Terminal Operating System and a custom platform) When does a custom port logistics platform outperform an established Terminal Operating System (TOS) vendor package?", "acceptedAnswer": { "@type": "Answer", "text": "Once coordinating multiple ports with a wide customs footprint, per-module TOS licensing typically exceeds a custom build's cost, and most TOS vendors don't offer configurable event-sourced berth allocation." } },
+    { "@type": "Question", "name": "(Scenario: compliance lead integrating with a national single-window customs system) How does the customs documentation engine integrate with a national single-window submission system?", "acceptedAnswer": { "@type": "Answer", "text": "Each single-window system needs its own adapter for field mapping, authentication, and rejection handling, making it a per-country engineering line item." } },
+    { "@type": "Question", "name": "(Scenario: CTO estimating timeline before committing to an expansion date) How long does building a production-ready multi-port logistics platform typically take?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 7-10 months for a single-port MVP, with each additional port and destination-country customs integration adding 6-10 weeks." } },
+    { "@type": "Question", "name": "(Scenario: compliance lead asking about AIS data retention obligations) How long does a port logistics platform need to retain historical AIS position data for regulatory purposes?", "acceptedAnswer": { "@type": "Answer", "text": "Commonly 12 months to several years depending on flag state and port authority, requiring a queryable historical archive rather than just a live-position cache." } }
   ]
 }
 </script>

@@ -68,6 +68,18 @@ Manifera's Amsterdam team ran a two-week readiness assessment and found that onl
 
 A premature or poorly sequenced microservices migration is one of the purest forms of cash burned on architecture theater — teams routinely spend €400,000-€600,000 and twelve to eighteen months decomposing a monolith, only to find deployment velocity has dropped, not risen, because nobody budgeted for the platform engineering headcount distributed systems require. Conversely, delaying a genuinely warranted decomposition costs real revenue when a hot-path workload can't scale independently and drags the entire platform's availability down with it during peak load. The right call requires evidence, not a trend. [Talk to Manifera](https://www.manifera.com/contact-us/) about a readiness assessment before you commit budget either direction.
 
+## The Strangler Fig Pattern: A Phased Extraction Checklist
+
+Most successful decompositions in mid-market software at scale follow the strangler fig pattern, not a big-bang rewrite — the monolith keeps serving 90%+ of traffic while individual capabilities are peeled off behind a routing layer. A disciplined extraction sequence looks like this:
+
+1. **Instrument before you extract.** Baseline p95 latency, error rate, and deploy frequency for the target module inside the monolith. Without this, you can't prove the extraction helped.
+2. **Introduce an API gateway or reverse proxy** in front of the monolith so traffic can be routed to the new service without a client-side cutover.
+3. **Extract the data first, code second.** Stand up the service's own database, backfill it via a one-way sync (change-data-capture is standard), and only cut writes over once read parity is verified for 2-4 weeks.
+4. **Dual-run for one full billing/reporting cycle** — typically 30 days — before decommissioning the monolith's internal code path, since edge-case bugs in reconciliation logic surface at month-end, not day-one.
+5. **Cap blast radius at one service per quarter** for teams under 20 engineers; parallel extractions are where most €500K-plus custom software development services budgets get blown.
+
+Teams that skip step 3 — sharing a database between the monolith and the new service "temporarily" — are the ones still running that "temporary" coupling eighteen months later.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO facing board pressure to modernize architecture) How do we know if we actually need microservices or just better monolith discipline?
@@ -90,6 +102,22 @@ If your team doesn't already have mature CI/CD, centralized logging and tracing,
 
 Re-consolidating over-decomposed services back toward a more coherent architecture is common and frequently costs as much as the original migration, often €200,000-€400,000 in a mid-market context, because the distributed-transaction logic and cross-service contracts built along the way have to be carefully unwound, not just deleted.
 
+### (Scenario: CTO choosing between a rewrite and an incremental extraction) Should we use the strangler fig pattern or a full parallel rewrite?
+
+Use the strangler fig pattern for any system still generating revenue — it lets the monolith keep serving traffic while individual services are extracted behind a routing layer, so a failed extraction never means a failed business. Full parallel rewrites only make sense for systems already scheduled for decommission, where a clean break carries no operational risk.
+
+### (Scenario: CTO evaluating custom software development company proposals for a decomposition project) What should we look for in a vendor's microservices migration proposal?
+
+A credible proposal leads with a readiness assessment and a bounded-context mapping exercise before quoting a fixed scope — if a vendor jumps straight to a service-count and price without first identifying which specific workload needs independent scaling, that is a sign they are selling architecture, not solving a problem.
+
+### (Scenario: CTO worried about database contention as the root cause) Could our scaling problem actually be a database issue instead of an architecture issue?
+
+Frequently, yes — read replicas, connection pooling, query optimization, and caching resolve the majority of "we need microservices" pain because most monolith slowdowns trace back to database contention rather than deployable-level coupling. Rule this out with load testing before greenlighting a decomposition budget.
+
+### (Scenario: CTO deciding when to involve platform engineering headcount) At what team size does a microservices migration typically require a dedicated platform engineering hire?
+
+Once you're running more than three to five independently deployed services, the CI/CD, observability, and on-call burden generally exceeds what feature engineers can absorb alongside their regular workload, and teams that don't budget a dedicated platform role at that point see deploy frequency drop instead of rise.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +127,11 @@ Re-consolidating over-decomposed services back toward a more coherent architectu
     { "@type": "Question", "name": "(Scenario: CTO worried about the operational cost of distributed systems) What's the real hidden cost of microservices beyond the migration itself?", "acceptedAnswer": { "@type": "Answer", "text": "Each independently deployed service needs its own CI/CD pipeline, observability, and on-call ownership, which requires platform engineering capacity most growth-stage teams underestimate. Underestimating this is the single most common reason microservices migrations get quietly reversed." } },
     { "@type": "Question", "name": "(Scenario: CTO deciding how to sequence a partial decomposition) Do we need to convert the entire monolith at once?", "acceptedAnswer": { "@type": "Answer", "text": "No, and you shouldn't. Extract only the services with a genuine operational case, at natural bounded-context seams, while the rest of the monolith continues serving everything else with improved internal boundaries." } },
     { "@type": "Question", "name": "(Scenario: CTO evaluating whether their team can operate microservices) How do we know if our team has the maturity to run a distributed architecture?", "acceptedAnswer": { "@type": "Answer", "text": "If your team doesn't already have mature CI/CD, centralized logging and tracing, and clear on-call ownership for a single deployable, adding more independently deployed services will multiply that gap, not solve it." } },
-    { "@type": "Question", "name": "(Scenario: CTO estimating the cost of getting this decision wrong) What does a failed microservices migration typically cost to unwind?", "acceptedAnswer": { "@type": "Answer", "text": "Re-consolidating over-decomposed services back toward a more coherent architecture is common and frequently costs as much as the original migration, often 200,000-400,000 euros in a mid-market context, because distributed-transaction logic and cross-service contracts have to be carefully unwound." } }
+    { "@type": "Question", "name": "(Scenario: CTO estimating the cost of getting this decision wrong) What does a failed microservices migration typically cost to unwind?", "acceptedAnswer": { "@type": "Answer", "text": "Re-consolidating over-decomposed services back toward a more coherent architecture is common and frequently costs as much as the original migration, often 200,000-400,000 euros in a mid-market context, because distributed-transaction logic and cross-service contracts have to be carefully unwound." } },
+    { "@type": "Question", "name": "(Scenario: CTO choosing between a rewrite and an incremental extraction) Should we use the strangler fig pattern or a full parallel rewrite?", "acceptedAnswer": { "@type": "Answer", "text": "Use the strangler fig pattern for any system still generating revenue — it lets the monolith keep serving traffic while individual services are extracted behind a routing layer, so a failed extraction never means a failed business. Full parallel rewrites only make sense for systems already scheduled for decommission." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating custom software development company proposals for a decomposition project) What should we look for in a vendor's microservices migration proposal?", "acceptedAnswer": { "@type": "Answer", "text": "A credible proposal leads with a readiness assessment and a bounded-context mapping exercise before quoting a fixed scope. If a vendor jumps straight to a service-count and price without identifying which workload needs independent scaling, they are selling architecture, not solving a problem." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about database contention as the root cause) Could our scaling problem actually be a database issue instead of an architecture issue?", "acceptedAnswer": { "@type": "Answer", "text": "Frequently, yes. Read replicas, connection pooling, query optimization, and caching resolve the majority of 'we need microservices' pain because most monolith slowdowns trace back to database contention rather than deployable-level coupling." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding when to involve platform engineering headcount) At what team size does a microservices migration typically require a dedicated platform engineering hire?", "acceptedAnswer": { "@type": "Answer", "text": "Once you're running more than three to five independently deployed services, the CI/CD, observability, and on-call burden generally exceeds what feature engineers can absorb, and teams that don't budget a dedicated platform role at that point see deploy frequency drop instead of rise." } }
   ]
 }
 </script>

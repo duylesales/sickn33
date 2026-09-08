@@ -104,6 +104,12 @@ A simple three-point scale per question — vague, adequate, specific — applie
 | Engineer departure? | "That won't happen" | Named redundancy and documentation practice |
 | Post-launch? | "We'll figure it out" | Defined stabilization window in writing |
 
+## The 24-Hour Follow-Up Test
+
+The ten questions measure the call itself, but a software development firm's behavior in the 24-48 hours after the call is an equally strong, and often overlooked, predictor. A firm that sends a written recap of what was discussed — including the specific redundancy answer to question 6 and the change-order process from question 4 — within a day is demonstrating the same documentation discipline it will need mid-project when memories of a verbal agreement start to diverge. A firm that goes quiet for a week, or follows up only with a generic proposal template that doesn't reference anything specific from the call, is showing you its actual account-management bandwidth before you've signed anything.
+
+Track three concrete data points across every vendor's follow-up: time to first response (under 24 hours is the baseline to expect from a serious software dev company), whether the follow-up references specifics from the call rather than boilerplate, and whether the proposal that eventually arrives matches the scope actually discussed rather than a generic package. In practice, firms that score "specific" on all ten kickoff-call questions but then send a templated, unspecific follow-up are revealing a gap between their sales conversation skill and their actual operational process — the two aren't the same capability, and a founder who only scores the call itself will miss this second, equally predictive signal entirely.
+
 ## Bringing the List to Your Next Call
 
 Ten questions, five minutes, a simple three-point scoring rubric, and a very clear signal about whether a firm's confidence matches its actual delivery structure. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) — bring all ten.
@@ -130,6 +136,22 @@ Not automatically, but a pattern of two or more vague answers, especially on que
 
 Asking live, without advance notice, often produces more honest answers — a vendor's ability to respond confidently and specifically without a prepared script is itself part of what you're evaluating.
 
+### (Scenario: founder trying to decide how many software development firms to shortlist) How many software development firms should I actually run through this ten-question process?
+
+Three to four is usually enough to surface meaningful contrast without exhausting your own time — fewer than three risks missing a stronger option, and more than five tends to blur into indistinguishable impressions by the final call.
+
+### (Scenario: founder who didn't get a written follow-up after a kickoff call) A software dev company gave great verbal answers but sent a generic proposal afterward. Is that a red flag?
+
+Yes. A generic, unspecific follow-up after a strong verbal call reveals a gap between sales skill and operational documentation discipline, and that gap tends to reappear in project reporting once the engagement starts.
+
+### (Scenario: founder comparing an offshore firm against a local option) Do these ten questions apply differently when the software development company is based overseas?
+
+The same ten questions apply, with extra weight on communication cadence and timezone overlap for daily standups — a nearshore or offshore custom software development company should answer question 8 with specific overlapping working hours, not a vague "we're flexible."
+
+### (Scenario: founder asking a voice assistant for a quick pre-call checklist) What should I ask a software development firm before hiring them, in one sentence?
+
+Ask who specifically is assigned, whether that team is dedicated to you, how they handle mid-project changes, and to speak directly with an engineer before signing anything.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,7 +161,11 @@ Asking live, without advance notice, often produces more honest answers — a ve
     { "@type": "Question", "name": "(Scenario: founder with limited time for vendor calls) Which of these ten questions matters most if I can only ask a few?", "acceptedAnswer": { "@type": "Answer", "text": "Who's specifically assigned, whether the team is dedicated, and how change requests are handled predict the most common sources of project trouble." } },
     { "@type": "Question", "name": "(Scenario: founder unsure how to verify an answer's accuracy) How do I know if a vendor's answers to these questions are actually true?", "acceptedAnswer": { "@type": "Answer", "text": "Cross-check against a reference call, asking that reference specifically whether the vendor's stated process, communication cadence, and team stability matched what was promised." } },
     { "@type": "Question", "name": "(Scenario: founder deciding whether a vague answer is disqualifying) Is one vague answer among the ten enough to walk away?", "acceptedAnswer": { "@type": "Answer", "text": "Not automatically, but a pattern of two or more vague answers, especially about discovery, change requests, or engineer departure, is a meaningful risk signal." } },
-    { "@type": "Question", "name": "(Scenario: founder preparing for their first vendor call) Should I send these questions in advance or ask them live?", "acceptedAnswer": { "@type": "Answer", "text": "Asking live, without advance notice, often produces more honest answers than a prepared script." } }
+    { "@type": "Question", "name": "(Scenario: founder preparing for their first vendor call) Should I send these questions in advance or ask them live?", "acceptedAnswer": { "@type": "Answer", "text": "Asking live, without advance notice, often produces more honest answers than a prepared script." } },
+    { "@type": "Question", "name": "(Scenario: founder trying to decide how many software development firms to shortlist) How many software development firms should I actually run through this ten-question process?", "acceptedAnswer": { "@type": "Answer", "text": "Three to four is usually enough to surface meaningful contrast without exhausting your own time." } },
+    { "@type": "Question", "name": "(Scenario: founder who didn't get a written follow-up after a kickoff call) A software dev company gave great verbal answers but sent a generic proposal afterward. Is that a red flag?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A generic, unspecific follow-up after a strong verbal call reveals a gap between sales skill and operational documentation discipline." } },
+    { "@type": "Question", "name": "(Scenario: founder comparing an offshore firm against a local option) Do these ten questions apply differently when the software development company is based overseas?", "acceptedAnswer": { "@type": "Answer", "text": "The same ten questions apply, with extra weight on communication cadence and timezone overlap for daily standups." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant for a quick pre-call checklist) What should I ask a software development firm before hiring them, in one sentence?", "acceptedAnswer": { "@type": "Answer", "text": "Ask who specifically is assigned, whether that team is dedicated to you, how they handle mid-project changes, and to speak directly with an engineer before signing." } }
   ]
 }
 </script>

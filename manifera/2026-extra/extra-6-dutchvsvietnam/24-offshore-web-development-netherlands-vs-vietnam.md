@@ -76,6 +76,12 @@ Run the numbers on a three-engineer team over one year and the gap is not margin
 
 The comparison only holds if the governance layer is real — a CTO choosing offshore purely on cost, without Amsterdam-level accountability, is comparing the wrong two options. Choose the actual comparison, not the shortcut version, and the numbers make the decision for you. [Build your comparison model with Manifera](https://www.manifera.com/contact-us/).
 
+## Technical Fit Check: What to Verify Before Handing Over a Web Build
+
+Beyond seniority and cost, a web-specific evaluation needs proof of depth in the areas that actually determine whether the site performs and ranks, not just whether it functions. Ask for a live Core Web Vitals report from a comparable past project — a credible pod should show LCP under 2.5 seconds and CLS under 0.1 on a production site, not a demo environment, since those thresholds directly affect both user conversion and Google search ranking. Ask specifically about server-side rendering versus static-generation choices for the framework in question (Next.js, Nuxt, or equivalent) — a pod defaulting to client-side rendering for a content-heavy, SEO-dependent site is a red flag regardless of how strong the raw coding output looks.
+
+Confirm the pod's approach to accessibility (WCAG 2.1 AA compliance is the practical baseline for most EU public-facing sites) and its CI/CD pipeline maturity — automated Lighthouse or equivalent performance testing gating every deploy is a meaningfully stronger signal than manual QA alone. A web development companies in Netherlands comparison should apply the same technical bar to both options; the governance layer's job on the Vietnam side is precisely to hold that bar rather than let cost pressure erode it.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO presenting a cost comparison to the board) What's a realistic cost differential between local Dutch hiring and a governed Vietnam pod?
@@ -98,6 +104,22 @@ A pod model scales faster, typically in weeks by drawing on an existing governed
 
 Yes — running a small pilot with the pod model alongside continued local recruitment for a defined period is a reasonable way to validate the comparison before committing the full team structure either way.
 
+### (Scenario: CTO worried a cheaper pod will produce a slower, worse-ranking site) How do we verify a Vietnam web development pod can actually hit Core Web Vitals targets, not just ship working pages?
+
+Ask for a live Core Web Vitals report from a production site the pod built recently — LCP under 2.5 seconds and CLS under 0.1 is the practical bar — rather than accepting a demo-environment screenshot, since production traffic and real assets are what actually determine the score.
+
+### (Scenario: CTO whose site depends heavily on organic search traffic) Does it matter whether the pod defaults to server-side rendering or client-side rendering for our framework?
+
+Yes, materially for SEO-dependent sites — a pod defaulting to client-side rendering for content-heavy pages in Next.js, Nuxt, or an equivalent framework is a red flag, since search engines and initial load performance both favor server-side rendering or static generation for that content type.
+
+### (Scenario: CTO whose site must meet EU accessibility requirements) Should we expect a governed Vietnam pod to build to WCAG accessibility standards by default?
+
+Yes — WCAG 2.1 AA should be the stated baseline for any EU public-facing site regardless of where the pod is based, and a credible proposal names this explicitly rather than treating accessibility as an optional add-on late in the build.
+
+### (Scenario: CTO evaluating whether the pod's QA process will catch performance regressions before launch) How do we know performance won't quietly degrade as the pod adds more features over the build?
+
+Ask whether automated Lighthouse or equivalent performance testing gates every deploy in the pod's CI/CD pipeline — a pod relying on manual QA alone for performance is far more likely to let regressions ship unnoticed than one with automated gating built into the pipeline.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,7 +129,11 @@ Yes — running a small pilot with the pod model alongside continued local recru
     { "@type": "Question", "name": "(Scenario: CTO worried about losing direct control by going offshore) Do we lose meaningful control by choosing a pod over local hires?", "acceptedAnswer": { "@type": "Answer", "text": "You delegate day-to-day engineering management to Amsterdam governance rather than losing control outright, while architecture sign-off and quality accountability remain visible and reportable." } },
     { "@type": "Question", "name": "(Scenario: CTO deciding whether to keep any roles local) Should we keep any roles local even if we choose the pod model?", "acceptedAnswer": { "@type": "Answer", "text": "Many CTOs retain a senior architecture-liaison or product-owner role locally while routing build capacity through the governed pod, a hybrid model that works well in practice." } },
     { "@type": "Question", "name": "(Scenario: CTO comparing scalability for future growth) Which model scales faster if we need to double capacity next year?", "acceptedAnswer": { "@type": "Answer", "text": "A pod model scales faster, typically in weeks by drawing on an existing governed bench, versus a local hiring plan requiring a fresh search for each additional engineer." } },
-    { "@type": "Question", "name": "(Scenario: CTO wanting to validate the model before full commitment) Can we test both options before committing to one at scale?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, running a small pilot with the pod model alongside continued local recruitment for a defined period is a reasonable way to validate the comparison before committing fully." } }
+    { "@type": "Question", "name": "(Scenario: CTO wanting to validate the model before full commitment) Can we test both options before committing to one at scale?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, running a small pilot with the pod model alongside continued local recruitment for a defined period is a reasonable way to validate the comparison before committing fully." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried a cheaper pod will produce a slower, worse-ranking site) How do we verify a Vietnam web development pod can actually hit Core Web Vitals targets, not just ship working pages?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for a live Core Web Vitals report from a production site the pod built recently — LCP under 2.5 seconds and CLS under 0.1 is the practical bar." } },
+    { "@type": "Question", "name": "(Scenario: CTO whose site depends heavily on organic search traffic) Does it matter whether the pod defaults to server-side rendering or client-side rendering for our framework?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — defaulting to client-side rendering for content-heavy, SEO-dependent pages is a red flag; server-side rendering or static generation is the safer default for that content type." } },
+    { "@type": "Question", "name": "(Scenario: CTO whose site must meet EU accessibility requirements) Should we expect a governed Vietnam pod to build to WCAG accessibility standards by default?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — WCAG 2.1 AA should be the stated baseline for any EU public-facing site, named explicitly in the proposal rather than treated as an optional add-on." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating whether the pod's QA process will catch performance regressions before launch) How do we know performance won't quietly degrade as the pod adds more features over the build?", "acceptedAnswer": { "@type": "Answer", "text": "Ask whether automated Lighthouse or equivalent performance testing gates every deploy in the CI/CD pipeline, rather than relying on manual QA alone." } }
   ]
 }
 </script>

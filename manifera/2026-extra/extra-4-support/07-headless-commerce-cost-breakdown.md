@@ -81,6 +81,10 @@ Nord Textile Wholesale's search-relevance complaints dropped substantially withi
 
 Before accepting a full-stack headless commerce quote, identify which specific components of your current platform are actually causing friction — search, checkout, multi-brand flexibility — and scope the migration against those named needs rather than a default full rebuild. [Get a custom team proposal within 48 hours](https://www.manifera.com/contact-us/) for a headless commerce migration scoped to your actual needs.
 
+## By the Numbers: Where the Budget Actually Goes on a B2B Headless Migration
+
+Across the ecommerce and webshop development projects Manifera scopes, a realistic budget split for a partial-to-moderate headless migration looks roughly like this: frontend rebuild consumes 35-45% of total spend, commerce backend/API integration another 20-25%, search and product discovery 10-15% (rising to 20%+ for a large, highly technical B2B catalog with heavy filtering needs), payment/checkout integration 10-12%, CMS integration 8-10%, and data/SEO migration 10-15% — a line item founders consistently underbudget by half. For b2b ecommerce specifically, two cost drivers rarely appear in generic headless commerce estimates at all: customer-specific pricing and quoting logic (tiered pricing, negotiated contracts, minimum order quantities) typically adds 15-20% to the commerce backend line item versus a B2C build, and punch-out or EDI integration for procurement-system-connected buyers, if required, is effectively its own separate project rather than a checkbox feature. A realistic custom software development estimate for a mid-sized B2B catalog moving only its search and checkout layers to headless, keeping frontend and CMS on the existing platform, typically lands in the €40,000-€90,000 range; a full-stack rebuild for the same catalog size is commonly three to five times that.
+
 ## Frequently Asked Questions
 
 ### (Scenario: COO comparing wildly different headless commerce quotes) Why do headless commerce cost quotes vary so much between vendors?
@@ -103,6 +107,22 @@ Yes — a scoped migration decoupling a single high-friction component, like sea
 
 It can involve more coordination across separate services, but it also avoids being locked into one platform's pricing and roadmap for every component — the total cost comparison depends on how many separate services are actually integrated and how well they're architected together.
 
+### (Scenario: B2B founder with tiered pricing and negotiated contracts) Does headless commerce support B2B-specific pricing like negotiated contracts and tiered discounts?
+
+Yes, but it needs to be built into the commerce backend or a dedicated pricing engine rather than assumed — most out-of-the-box headless commerce platforms are built B2C-first, so customer-specific pricing, minimum order quantities, and contract terms usually require custom integration work.
+
+### (Scenario: B2B buyer using procurement systems) Do I need punch-out or EDI integration if I move my B2B webshop to headless commerce?
+
+Only if your buyers' procurement systems require it — punch-out catalogs and EDI order integration are common for enterprise B2B buyers and should be scoped as a distinct project alongside the headless migration, not assumed to be included in a standard ecommerce development quote.
+
+### (Scenario: founder trying to estimate total migration budget) What's a realistic budget range for a partial headless commerce migration for a mid-sized B2B catalog?
+
+Scoping just search and checkout while keeping the existing frontend and CMS typically lands in the €40,000-€90,000 range for a mid-sized B2B catalog, versus three to five times that for a full-stack rebuild replacing every layer.
+
+### (Scenario: founder unsure which line item is most commonly underestimated) Which part of a headless commerce migration budget do businesses most commonly underestimate?
+
+Data and SEO migration — moving product catalogs and customer accounts while preserving existing URL structure and search rankings is frequently budgeted at a fraction of its real 10-15% share of total project cost, which is exactly why post-launch traffic dips are so common.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -112,7 +132,11 @@ It can involve more coordination across separate services, but it also avoids be
     { "@type": "Question", "name": "(Scenario: founder wondering if headless commerce is right for their business) How do I know if my business actually needs headless commerce?", "acceptedAnswer": { "@type": "Answer", "text": "Look for specific friction points a template platform can't solve, like multi-brand needs, a performance ceiling, or needing to swap one component." } },
     { "@type": "Question", "name": "(Scenario: retailer worried about losing SEO during migration) Will moving to headless commerce hurt our existing search rankings?", "acceptedAnswer": { "@type": "Answer", "text": "It can if migration is rushed — preserving URLs and product data integrity requires deliberate planning to avoid a post-launch traffic dip." } },
     { "@type": "Question", "name": "(Scenario: founder trying to scope a smaller, partial migration) Can I migrate just one part of my platform to headless, like search, without a full rebuild?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — a scoped migration of a single high-friction component is often more cost-effective and lower-risk than a full-stack rebuild." } },
-    { "@type": "Question", "name": "(Scenario: CFO trying to understand ongoing costs after migration) Does headless commerce cost more to maintain long-term than a template platform?", "acceptedAnswer": { "@type": "Answer", "text": "It can involve more coordination across services, but avoids lock-in to one platform's pricing and roadmap for every component." } }
+    { "@type": "Question", "name": "(Scenario: CFO trying to understand ongoing costs after migration) Does headless commerce cost more to maintain long-term than a template platform?", "acceptedAnswer": { "@type": "Answer", "text": "It can involve more coordination across services, but avoids lock-in to one platform's pricing and roadmap for every component." } },
+    { "@type": "Question", "name": "(Scenario: B2B founder with tiered pricing and negotiated contracts) Does headless commerce support B2B-specific pricing like negotiated contracts and tiered discounts?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but it needs to be built into the commerce backend or a dedicated pricing engine, since most headless platforms are B2C-first by default." } },
+    { "@type": "Question", "name": "(Scenario: B2B buyer using procurement systems) Do I need punch-out or EDI integration if I move my B2B webshop to headless commerce?", "acceptedAnswer": { "@type": "Answer", "text": "Only if your buyers' procurement systems require it, and it should be scoped as a distinct project rather than assumed to be included." } },
+    { "@type": "Question", "name": "(Scenario: founder trying to estimate total migration budget) What's a realistic budget range for a partial headless commerce migration for a mid-sized B2B catalog?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly €40,000-€90,000 for scoping just search and checkout, versus three to five times that for a full-stack rebuild." } },
+    { "@type": "Question", "name": "(Scenario: founder unsure which line item is most commonly underestimated) Which part of a headless commerce migration budget do businesses most commonly underestimate?", "acceptedAnswer": { "@type": "Answer", "text": "Data and SEO migration, typically budgeted at a fraction of its real 10-15% share of total project cost." } }
   ]
 }
 </script>

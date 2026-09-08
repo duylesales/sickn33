@@ -84,6 +84,12 @@ It's worth being explicit that adopting zero trust principles isn't a project wi
 
 Before assuming your current security architecture is adequate for regulated data, evaluate whether access is verified per request or inherited from network location — the distinction matters more than most perimeter-based security audits capture. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a zero trust architecture review.
 
+## A Phased Rollout Checklist, Sequenced by Risk
+
+A realistic zero trust rollout for a company handling regulated data typically runs in four phases rather than one project. Phase one (weeks 1-4): inventory every system touching personal data and map current access patterns — this is where most gaps between assumed and actual access first become visible, often surfacing broader standing access than anyone expected. Phase two (weeks 4-10): implement strong per-request identity verification and multi-factor authentication for the systems handling the most sensitive data first, not organization-wide simultaneously. Phase three (weeks 8-16, overlapping phase two): introduce network segmentation limiting lateral movement, so a single compromised credential can't reach systems outside its specific role's actual scope. Phase four (ongoing): continuous monitoring and anomaly detection layered on top, plus a standing review process for any new third-party integration or software services vendor requesting access, closing exactly the kind of exception-based trust gap described above.
+
+A software development company proposing zero trust as a single, undifferentiated project rather than this kind of risk-sequenced rollout is likely underestimating the actual scope — full zero trust adoption across a mid-sized organization's systems typically takes six months to a year done properly, with the highest-risk, most regulated data systems covered first and lower-risk internal tools following afterward on a longer timeline.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CISO evaluating whether to adopt zero trust) Why has zero trust become the standard recommendation over traditional perimeter-based security?
@@ -106,6 +112,22 @@ Incrementally is usually more realistic — prioritizing the systems handling th
 
 Yes, proportionally — any company handling sensitive or regulated data benefits from minimum-necessary access and per-request verification, regardless of company size, even if the implementation scope is smaller than a large enterprise's.
 
+### (Scenario: IT manager trying to scope a realistic project timeline) How long does a full zero trust rollout typically take for a mid-sized company with regulated data?
+
+Six months to a year done properly, sequenced by risk — highest-sensitivity systems get identity verification and segmentation first, with lower-risk internal tools following on a longer timeline rather than everything happening simultaneously.
+
+### (Scenario: procurement lead vetting proposals from a custom software development company) What should a custom software development company's zero trust proposal include to show it's genuinely scoped, not just a sales pitch?
+
+Look for a phased plan naming which systems get covered first based on data sensitivity, a specific timeline per phase, and a stated ongoing review process for new third-party integrations — a single undifferentiated "we'll implement zero trust" line item is under-scoped.
+
+### (Scenario: compliance officer preparing for a GDPR audit) What specific evidence should our software services vendor's zero trust architecture provide for a GDPR audit?
+
+Request access logs showing per-request verification tied to specific personal data, documented minimum-necessary-access policies per role, and monitoring records showing anomalous access detection — concrete artifacts, not a general security posture statement.
+
+### (Scenario: founder asking a voice assistant for the short answer) Do I need zero trust architecture if my software development company already put my data on an EU cloud server?
+
+Yes — EU hosting addresses only data location, not access control; zero trust and data residency solve different, complementary problems and neither substitutes for the other.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,7 +137,11 @@ Yes, proportionally — any company handling sensitive or regulated data benefit
     { "@type": "Question", "name": "(Scenario: compliance officer trying to connect security architecture to GDPR) How does zero trust architecture specifically support GDPR compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Granular access controls provide clear evidence of access, continuous verification limits exposure, and minimum-necessary-access supports data minimization." } },
     { "@type": "Question", "name": "(Scenario: CTO worried zero trust adds too much friction) Does zero trust architecture make systems significantly harder to use for legitimate employees?", "acceptedAnswer": { "@type": "Answer", "text": "It adds verification steps, but well-implemented zero trust minimizes friction for legitimate access while targeting unusual or excessive access." } },
     { "@type": "Question", "name": "(Scenario: IT manager trying to prioritize a zero trust rollout) Should zero trust be implemented all at once or incrementally?", "acceptedAnswer": { "@type": "Answer", "text": "Incrementally is usually more realistic, prioritizing systems handling the most sensitive data first." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to understand if this applies to a smaller company) Does zero trust architecture matter for a smaller company, not just large enterprises?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, proportionally — any company handling sensitive or regulated data benefits from minimum-necessary access and per-request verification." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to understand if this applies to a smaller company) Does zero trust architecture matter for a smaller company, not just large enterprises?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, proportionally — any company handling sensitive or regulated data benefits from minimum-necessary access and per-request verification." } },
+    { "@type": "Question", "name": "(Scenario: IT manager trying to scope a realistic project timeline) How long does a full zero trust rollout typically take for a mid-sized company with regulated data?", "acceptedAnswer": { "@type": "Answer", "text": "Six months to a year done properly, sequenced by risk with highest-sensitivity systems covered first." } },
+    { "@type": "Question", "name": "(Scenario: procurement lead vetting proposals from a custom software development company) What should a custom software development company's zero trust proposal include to show it's genuinely scoped, not just a sales pitch?", "acceptedAnswer": { "@type": "Answer", "text": "A phased plan naming which systems get covered first by sensitivity, a specific timeline per phase, and an ongoing review process for new integrations." } },
+    { "@type": "Question", "name": "(Scenario: compliance officer preparing for a GDPR audit) What specific evidence should our software services vendor's zero trust architecture provide for a GDPR audit?", "acceptedAnswer": { "@type": "Answer", "text": "Access logs showing per-request verification, documented minimum-necessary-access policies per role, and monitoring records showing anomalous access detection." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant for the short answer) Do I need zero trust architecture if my software development company already put my data on an EU cloud server?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — EU hosting addresses only data location, not access control; the two solve different, complementary problems." } }
   ]
 }
 </script>

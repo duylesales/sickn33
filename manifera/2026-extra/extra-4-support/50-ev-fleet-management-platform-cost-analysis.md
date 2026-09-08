@@ -86,6 +86,10 @@ Nordlogistik proceeded with a realistically scoped platform build including genu
 
 Before committing to an EV fleet management platform budget, insist on a cost estimate modeled against your actual planned fleet size and charging infrastructure capacity, not a small pilot scenario with disproportionately generous charging availability. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic EV fleet management platform cost scoping exercise.
 
+## By the Numbers: A Realistic EV Fleet Platform Budget Split
+
+For a mid-sized fleet transitioning 50-150 vehicles to electric with mixed depot and public charging, a realistic custom software development budget allocation looks roughly like: charging schedule optimization engine, 25-30% of total cost, scaling up meaningfully once charging points fall below roughly one point per two to three vehicles, the threshold where genuine contention-based optimization becomes necessary rather than simple scheduling; multi-vendor charging and vehicle telematics integration, 20-25%, scaling directly with vendor count, since each additional charging hardware brand or vehicle manufacturer typically adds its own dedicated integration rather than extending an existing one; battery health and range prediction modeling, 15-20%, plus an ongoing 5-10% annually to recalibrate against accumulating real fleet operating data; grid integration and demand charge management, 10-15%, higher for depots with multiple simultaneous high-power charging points. A useful diagnostic for any software system development proposal: if charging optimization is quoted as a standard "scheduling module" without reference to your depot's actual charging-point-to-vehicle ratio, the estimate was very likely validated against a low-contention pilot scenario rather than your real fleet's constrained capacity. As a rough anchor, a 100-vehicle fleet transition with meaningful charging infrastructure constraints and three or more vehicle manufacturers typically budgets €200,000-€450,000 for a first realistically scoped phase.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial EV fleet platform estimate) Why do EV fleet platform cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ Real-world range depends on battery degradation, temperature, and route-specific
 
 Simultaneous, unmanaged charging across many vehicles can trigger significant utility demand charges tied to peak power draw, which active charging orchestration can directly mitigate by smoothing demand across time.
 
+### (Scenario: CTO wanting a rough dollar figure) What's a realistic total budget for an EV fleet management platform for a fleet of around 100 vehicles?
+
+Typically €200,000-€450,000 for a first, realistically scoped phase covering charging optimization, multi-vendor integration, and range prediction for a fleet with meaningful charging infrastructure constraints and three or more vehicle manufacturers in the mix.
+
+### (Scenario: CTO wanting a rule of thumb for charging point ratio) At what charging-point-to-vehicle ratio does charging scheduling stop being simple and start requiring genuine optimization engineering?
+
+Once a depot has fewer than roughly one charging point per two to three vehicles, simultaneous demand for a limited number of points requires genuine constrained optimization rather than a simple calendar-based scheduling feature — worth checking explicitly against your own depot's planned infrastructure before accepting a quote that treats scheduling as a minor feature.
+
+### (Scenario: fleet operator asking about ongoing range prediction maintenance cost) Does battery health and range prediction modeling require ongoing budget after the initial platform launch?
+
+Yes, typically an additional 5-10% of the original modeling cost annually, since the model needs recalibration against accumulating real fleet operating data as vehicles age and battery degradation patterns become clearer over the fleet's service life.
+
+### (Scenario: CTO asking how vendor diversity scales integration cost) How much does each additional charging hardware brand or vehicle manufacturer typically add to integration cost?
+
+Each additional vendor typically requires its own dedicated integration against a distinct API and data format rather than extending an existing one, so integration cost scales close to linearly with vendor count rather than flattening out after the first one or two are supported.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Simultaneous, unmanaged charging across many vehicles can trigger significant ut
     { "@type": "Question", "name": "(Scenario: operations lead scoping charging management) Why is EV charging scheduling more complex than conventional fleet refueling scheduling?", "acceptedAnswer": { "@type": "Answer", "text": "EV charging is slow and often constrained by shared infrastructure capacity, requiring genuine constrained optimization." } },
     { "@type": "Question", "name": "(Scenario: engineering lead scoping vehicle data integration) Why does EV fleet data integration cost scale with vehicle and charging vendor diversity?", "acceptedAnswer": { "@type": "Answer", "text": "Different vendors use different data formats and access mechanisms, so coverage cost scales with actual fleet diversity." } },
     { "@type": "Question", "name": "(Scenario: CTO planning for battery health accuracy) Why does range prediction require ongoing modeling rather than a static lookup?", "acceptedAnswer": { "@type": "Answer", "text": "Real-world range depends on degradation, temperature, and route factors, requiring a model calibrated against real operating data." } },
-    { "@type": "Question", "name": "(Scenario: facilities manager worried about utility costs) Why does depot EV charging require demand charge management specifically?", "acceptedAnswer": { "@type": "Answer", "text": "Unmanaged simultaneous charging can trigger significant utility demand charges, which active orchestration directly mitigates." } }
+    { "@type": "Question", "name": "(Scenario: facilities manager worried about utility costs) Why does depot EV charging require demand charge management specifically?", "acceptedAnswer": { "@type": "Answer", "text": "Unmanaged simultaneous charging can trigger significant utility demand charges, which active orchestration directly mitigates." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting a rough dollar figure) What's a realistic total budget for an EV fleet management platform for a fleet of around 100 vehicles?", "acceptedAnswer": { "@type": "Answer", "text": "Typically €200,000-€450,000 for a first, realistically scoped phase given meaningful charging constraints and multiple manufacturers." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting a rule of thumb for charging point ratio) At what charging-point-to-vehicle ratio does charging scheduling stop being simple and start requiring genuine optimization engineering?", "acceptedAnswer": { "@type": "Answer", "text": "Below roughly one charging point per two to three vehicles, genuine constrained optimization becomes necessary rather than simple scheduling." } },
+    { "@type": "Question", "name": "(Scenario: fleet operator asking about ongoing range prediction maintenance cost) Does battery health and range prediction modeling require ongoing budget after the initial platform launch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, typically an additional 5-10% of the original modeling cost annually to recalibrate against accumulating real operating data." } },
+    { "@type": "Question", "name": "(Scenario: CTO asking how vendor diversity scales integration cost) How much does each additional charging hardware brand or vehicle manufacturer typically add to integration cost?", "acceptedAnswer": { "@type": "Answer", "text": "Each vendor typically needs its own dedicated integration, so cost scales close to linearly with vendor count." } }
   ]
 }
 </script>

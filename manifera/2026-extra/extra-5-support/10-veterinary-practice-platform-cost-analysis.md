@@ -86,6 +86,10 @@ Veterinarska Platforma Maribor proceeded with a realistically scoped platform bu
 
 Before committing to a veterinary practice management platform budget, insist on a cost estimate modeled against your realistic multi-location booking volume, actual jurisdiction mix, and actual connectivity and lab-provider footprint, not single-clinic testing conditions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic veterinary practice platform cost scoping exercise.
 
+## Technical Deep-Dive: Conflict Resolution Strategy for Offline-First Patient Records
+
+Offline-first architecture is only half the engineering problem; the harder half is deciding what happens when a rural clinic's tablet reconnects after a farm call and finds the same patient record was also edited at the main clinic during the outage. A naive last-write-wins strategy silently discards one vet's medication entry in favor of whichever device syncs last, which is unacceptable for controlled-substance logging or dosage records. Production-grade veterinary platforms instead need field-level conflict resolution: each record field carries its own version vector, so a weight update from one device and a medication entry from another merge cleanly instead of one overwriting the other, with only genuine field-level collisions (the same field edited on two devices during the same outage) routed to a vet for manual reconciliation. Building this correctly typically means a sync engine with per-field timestamps, a queued write-ahead log on each offline device capped at realistic outage durations (48-72 hours for most rural coverage gaps), and an audit trail showing which device authored which field, since a compliance auditor will ask. Practice groups budgeting for offline-first sync should expect field-level conflict resolution to add roughly 20-30% on top of a naive full-record sync implementation, a cost most initial estimates omit entirely because a single-clinic test environment never generates a genuine concurrent edit to test against.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial veterinary practice platform estimate) Why do veterinary practice platform cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ Rural and mobile clinics face genuinely unreliable connectivity, and an always-o
 
 Each lab or imaging provider has its own API format and reliability characteristics, requiring genuinely sophisticated, continuously-maintained integration rather than a single one-time API connection.
 
+### (Scenario: practice group owner deciding between an off-the-shelf PMS and a custom platform) At what number of clinic locations does a custom veterinary platform become more cost-effective than an off-the-shelf PMS?
+
+Past roughly 8-12 locations, per-location SaaS licensing plus per-integration add-on fees for compliance and lab connectors typically exceeds the amortized cost of a custom build, and off-the-shelf platforms rarely support region-configurable controlled-substance logging across multiple states at all.
+
+### (Scenario: CTO planning migration from a legacy practice management system) How do you migrate years of patient history and controlled-substance logs from a legacy PMS without breaking audit continuity?
+
+A dedicated field-by-field ETL pipeline mapping the legacy schema, a parallel-run period against the new platform, and a separately retained immutable archival export of the legacy controlled-substance log to satisfy auditors who need to trace records predating the migration.
+
+### (Scenario: engineering lead sizing the team for a multi-location build) How many engineers does a production-ready multi-location veterinary practice platform typically require?
+
+Roughly 6-9 engineers split across scheduling, compliance/audit logging, offline-sync, and lab-integration workstreams, delivering an MVP in 7-9 months before multi-state compliance and multi-provider integration hardening extends the timeline further.
+
+### (Scenario: practice group weighing client-facing booking against internal clinic scheduling) Does a client-facing online booking widget need the same offline-first architecture as internal clinic scheduling?
+
+No — a client-facing booking widget can safely be online-only since clients book from a connected device, while offline-first architecture is only needed for internal clinic-side scheduling and record entry where a vet or technician must keep working during a connectivity gap; conflating the two inflates budget without adding real resilience.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Each lab or imaging provider has its own API format and reliability characterist
     { "@type": "Question", "name": "(Scenario: engineering lead scoping scheduling) Why is scheduling harder to scale correctly than it appears in single-clinic testing?", "acceptedAnswer": { "@type": "Answer", "text": "Reliable multi-location scheduling requires materially different architecture to reflect real-time availability across locations and channels." } },
     { "@type": "Question", "name": "(Scenario: compliance lead scoping controlled-substance logging) Why does controlled-substance logging require more than a standard data-entry feature?", "acceptedAnswer": { "@type": "Answer", "text": "Multi-state operation requires reconciling federal DEA rules with divergent state board requirements, requiring region-configurable engineering." } },
     { "@type": "Question", "name": "(Scenario: CTO planning for rural or field clinics) Why does offline-first sync deserve substantial, specialized engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Rural and mobile clinics face unreliable connectivity, requiring specialized local-first storage and conflict-resolution engineering." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning diagnostic lab integration) Why does multi-provider lab and imaging integration add real ongoing cost?", "acceptedAnswer": { "@type": "Answer", "text": "Each provider has its own API format and reliability characteristics, requiring sophisticated, continuously-maintained integration." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning diagnostic lab integration) Why does multi-provider lab and imaging integration add real ongoing cost?", "acceptedAnswer": { "@type": "Answer", "text": "Each provider has its own API format and reliability characteristics, requiring sophisticated, continuously-maintained integration." } },
+    { "@type": "Question", "name": "(Scenario: practice group owner deciding between an off-the-shelf PMS and a custom platform) At what number of clinic locations does a custom veterinary platform become more cost-effective than an off-the-shelf PMS?", "acceptedAnswer": { "@type": "Answer", "text": "Past roughly 8-12 locations, per-location SaaS licensing plus add-on fees typically exceeds custom build cost, and off-the-shelf PMS rarely supports region-configurable multi-state compliance logging." } },
+    { "@type": "Question", "name": "(Scenario: CTO planning migration from a legacy practice management system) How do you migrate years of patient history and controlled-substance logs from a legacy PMS without breaking audit continuity?", "acceptedAnswer": { "@type": "Answer", "text": "A dedicated field-by-field ETL pipeline, a parallel-run period, and a separately retained immutable archival export of the legacy controlled-substance log satisfy audit continuity." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead sizing the team for a multi-location build) How many engineers does a production-ready multi-location veterinary practice platform typically require?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 6-9 engineers across scheduling, compliance logging, offline-sync, and lab-integration workstreams, delivering an MVP in 7-9 months." } },
+    { "@type": "Question", "name": "(Scenario: practice group weighing client-facing booking against internal clinic scheduling) Does a client-facing online booking widget need the same offline-first architecture as internal clinic scheduling?", "acceptedAnswer": { "@type": "Answer", "text": "No, a client-facing booking widget can be online-only; offline-first architecture is only needed for internal clinic-side scheduling and record entry." } }
   ]
 }
 </script>

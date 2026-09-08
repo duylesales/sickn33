@@ -89,6 +89,12 @@ A more effective approach treats the admission of error as a separate, smaller d
 
 If you're weighing whether to continue with a struggling vendor, evaluate the pattern of evidence against this checklist, and explicitly set aside money already spent from that forward-looking decision. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about assessing your current project's actual state.
 
+## A Quick Model for Comparing the Real Cost of Staying vs. Switching
+
+Run this rough model before deciding, since it forces the forward-looking comparison the sunk cost bias otherwise obscures. Estimate cost-to-continue as: (average monthly burn with the current software development company) × (realistic months to actual completion, based on the observed pattern of missed milestones, not the vendor's latest promised date — typically 1.5-2x their stated estimate once a pattern of misses exists). Estimate cost-to-switch as: (independent technical assessment, typically €2,000-€5,000) + (incoming vendor's ramp-up period, usually 2-4 weeks of reduced velocity while they learn the codebase) + (incoming vendor's monthly burn) × (their realistic months to completion, which a competent custom software development company should estimate only after reviewing the actual codebase, not before).
+
+In the Wartogród case above, the numbers were stark once modeled this way: continuing at the existing burn rate against a "two more months" promise that had already been wrong twice implied a realistic 4-6 month tail, while switching cost one month of transition friction plus a Vietnam pod already quoting delivery inside the original promised window. Run this model with your own real numbers before the emotional weight of money already spent gets a vote in the decision — in most unsalvageable-pattern cases, the arithmetic favors switching by a wider margin than it feels like it should.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder feeling trapped by money already spent with a struggling vendor) How do I decide whether to continue with a struggling vendor or switch?
@@ -111,6 +117,22 @@ There's no universal number, but a pattern without credible diagnosis and correc
 
 Sunk cost reasoning is a well-documented cognitive bias — humans naturally weight past investment heavily even when it's not recoverable either way, which is exactly why deliberately setting it aside and focusing only on the forward-looking comparison helps make a clearer decision.
 
+### (Scenario: founder trying to put a number on the switching decision) Is there a rough formula for comparing the cost of staying with a struggling vendor versus switching?
+
+Compare current burn times a realistic (not vendor-promised) months-to-completion against an incoming vendor's assessment cost plus ramp-up time plus their burn times their estimate — in most patterns of repeated missed milestones, the switching total comes in lower.
+
+### (Scenario: founder unsure how long a new vendor needs to ramp up on an inherited codebase) How long does it typically take a new software development company to get productive on a codebase they didn't build?
+
+Expect a 2-4 week ramp-up period of reduced velocity while the incoming team reviews the existing code and documentation, shorter if documentation is genuinely current and longer if it's sparse or the previous vendor's status reports proved inaccurate.
+
+### (Scenario: founder worried a technical assessment itself is a wasted cost) Is paying for an independent technical assessment worth it if I'm already fairly sure I want to switch?
+
+Yes — even a fairly confident founder benefits from an accurate, independent picture of the codebase's actual state, since it directly shapes the incoming vendor's realistic timeline and avoids repeating the previous vendor's inflated status reports.
+
+### (Scenario: founder asking a voice assistant for a quick gut-check) How do I know if it's finally time to switch software vendors?
+
+If missed milestones form a repeated pattern without honest diagnosis, and an independent assessment shows the actual state of the work is worse than reported, the evidence favors switching regardless of how much has already been spent.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -120,7 +142,11 @@ Sunk cost reasoning is a well-documented cognitive bias — humans naturally wei
     { "@type": "Question", "name": "(Scenario: founder worried about losing everything by switching vendors) Will I lose all the work already done if I switch vendors?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily — with proper IP assignment terms and access to existing code, an incoming vendor can typically build on usable existing work." } },
     { "@type": "Question", "name": "(Scenario: founder trying to prepare for a difficult vendor conversation) What should I do before telling a vendor I'm ending the relationship?", "acceptedAnswer": { "@type": "Answer", "text": "Secure all code, documentation, and credentials, review termination and IP clauses, and ideally commission an independent assessment first." } },
     { "@type": "Question", "name": "(Scenario: founder trying to distinguish normal friction from a real problem) How many missed milestones is too many before I should consider switching?", "acceptedAnswer": { "@type": "Answer", "text": "There's no universal number — a pattern without credible diagnosis and correction matters more than the raw count." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to understand the sunk cost trap) Why does money already spent feel so relevant to the decision, even though it logically shouldn't be?", "acceptedAnswer": { "@type": "Answer", "text": "Sunk cost reasoning is a well-documented cognitive bias — humans naturally weight past investment heavily even when it's not recoverable either way." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to understand the sunk cost trap) Why does money already spent feel so relevant to the decision, even though it logically shouldn't be?", "acceptedAnswer": { "@type": "Answer", "text": "Sunk cost reasoning is a well-documented cognitive bias — humans naturally weight past investment heavily even when it's not recoverable either way." } },
+    { "@type": "Question", "name": "(Scenario: founder trying to put a number on the switching decision) Is there a rough formula for comparing the cost of staying with a struggling vendor versus switching?", "acceptedAnswer": { "@type": "Answer", "text": "Compare current burn times realistic months-to-completion against an incoming vendor's assessment cost plus ramp-up time plus their burn times estimate — switching often comes in lower." } },
+    { "@type": "Question", "name": "(Scenario: founder unsure how long a new vendor needs to ramp up on an inherited codebase) How long does it typically take a new software development company to get productive on a codebase they didn't build?", "acceptedAnswer": { "@type": "Answer", "text": "Expect a 2-4 week ramp-up period of reduced velocity, shorter with current documentation and longer if it's sparse or inaccurate." } },
+    { "@type": "Question", "name": "(Scenario: founder worried a technical assessment itself is a wasted cost) Is paying for an independent technical assessment worth it if I'm already fairly sure I want to switch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — an accurate, independent picture of the codebase directly shapes the incoming vendor's realistic timeline and avoids repeating inflated status reports." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant for a quick gut-check) How do I know if it's finally time to switch software vendors?", "acceptedAnswer": { "@type": "Answer", "text": "If missed milestones form a repeated pattern without honest diagnosis, and an independent assessment shows worse-than-reported progress, the evidence favors switching." } }
   ]
 }
 </script>

@@ -72,6 +72,12 @@ A proposal tabled over unaddressed employee-relations or reputational concerns t
 
 A board doesn't reject outsourcing on principle — it rejects proposals that leave its actual concerns unanswered. [Talk to Manifera about building a proposal that survives the full board conversation](https://www.manifera.com/contact-us/).
 
+## Scripting the Internal Announcement Before the Board Vote
+
+The employee-relations answer only holds up if the internal communication actually happens before the board vote, not after, and the announcement itself needs three specific elements to land as additive rather than threatening. First, name the exact workstream moving offshore and confirm explicitly which roles and workstreams are not affected — a vague "we're exploring some outsourcing" invites the team to assume the worst about scope, while a specific "the merchant-onboarding module moves to a dedicated outsourcing development team; your current sprint work is unaffected" gives them nothing to fill in with anxiety. Second, explain the actual reason in capacity terms, not cost terms — "we don't have bandwidth to build this without pulling three of you off the roadmap you're already committed to" lands very differently than a cost-savings framing, even when cost was part of the real rationale. Third, give the team a channel to ask questions before the board vote, not after it's already a done deal — a 15-minute team session with the CTO taking questions directly, held a few days ahead of the board meeting, converts a top-down announcement into a heard concern.
+
+Companies that skip this step and announce only after board approval consistently see a measurable engagement-survey dip in the following quarter; companies that communicate first, as in the case study above, typically don't.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO worried about existing team morale) How do we propose offshore outsourcing without signaling job insecurity to our existing engineering team?

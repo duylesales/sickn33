@@ -90,6 +90,12 @@ The more reliable question isn't "has this worked before," it's "what specifical
 
 Before signing any software services proposal, ask specifically how QA is scoped, timed, and staffed, and resist accepting a vendor's clean track record alone as sufficient evidence of a sound process — a vague or absent answer here is one of the most reliable predictors of post-launch problems. [Schedule a free consultation with our Amsterdam team](https://www.manifera.com/contact-us/) to see how Manifera scopes QA into every project.
 
+## Benchmarking QA Effort: What Share of the Timeline Testing Should Actually Take
+
+A useful sanity check when reading any application development services proposal: QA effort should typically consume 20-30% of total project timeline and budget for a standard web or mobile product, rising to 30-40% for anything handling regulated data, payments, or safety-critical functionality. A proposal allocating less than 15% to QA across all named testing types is very likely under-scoping it regardless of how the line item is worded, and one allocating close to 0% is effectively proposing no independent testing at all.
+
+Within that QA allocation, a reasonable split across testing types looks roughly like: 30-35% unit and integration testing (verifying components work correctly in isolation and together), 25-30% end-to-end testing (verifying full user flows function as intended), 20% cross-device and cross-browser testing, and 15-20% security and penetration testing for any software product handling user data or payments. A vendor proposal that only names "testing" as a single undifferentiated line, with no split resembling this breakdown, hasn't actually scoped the work — it's estimated a number and attached a label to it. Ask for the percentage breakdown by testing type before accepting a total QA figure at face value.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder comparing proposals with different QA scoping) How do I compare QA scoping across different vendor proposals?
@@ -112,6 +118,22 @@ Frame it as standard due diligence: ask what testing types are included, who per
 
 Usually yes — the cost of QA scoped upfront is typically far lower than the cost of bugs discovered by real users after launch, both in direct fix cost and in the harder-to-quantify cost of damaged trust and retention.
 
+### (Scenario: founder reviewing a software services quote line by line) What percentage of a software services quote should actually go toward QA?
+
+Expect 20-30% of the total timeline and budget for a standard product, rising to 30-40% for anything handling payments or regulated data — a figure noticeably below that range signals under-scoped testing.
+
+### (Scenario: procurement lead comparing custom software development services vendors on paper) Should I ask for a testing-type breakdown, or is a single QA total sufficient?
+
+Ask for the breakdown by testing type — unit, integration, end-to-end, cross-device, security — since a single undifferentiated total often means the work wasn't actually scoped by type, just estimated as a lump sum.
+
+### (Scenario: founder whose software product handles payments) Does a software product that processes payments need a different QA approach than a typical app?
+
+Yes — payment-handling products need dedicated security and penetration testing as a named phase, not folded into general QA, along with independent review of the specific payment integration points.
+
+### (Scenario: founder asking a voice assistant how to spot a QA shortfall) What's a quick way to tell if a software services proposal is skipping QA?
+
+Check whether QA appears as its own line item with a specific percentage of the timeline attached — if testing is only mentioned in passing within the development phase, it likely isn't independently scoped.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,7 +143,11 @@ Usually yes — the cost of QA scoped upfront is typically far lower than the co
     { "@type": "Question", "name": "(Scenario: founder worried about being upsold on unnecessary QA) Is dedicated QA scope always necessary, even for a simple project?", "acceptedAnswer": { "@type": "Answer", "text": "The depth should scale with risk and complexity, but even simple projects benefit from an independent testing pass distinct from developer self-testing." } },
     { "@type": "Question", "name": "(Scenario: founder trying to evaluate a healthcare or fintech project's QA needs) Does regulated data change how much QA scoping I should expect?", "acceptedAnswer": { "@type": "Answer", "text": "Yes significantly — security testing and independent review become essential once real regulated user data is involved." } },
     { "@type": "Question", "name": "(Scenario: founder unsure how to ask about QA without seeming distrustful) How do I ask a vendor about their QA process without it feeling like an accusation?", "acceptedAnswer": { "@type": "Answer", "text": "Frame it as standard due diligence: ask what testing types are included, who performs them, and how bugs are triaged." } },
-    { "@type": "Question", "name": "(Scenario: founder deciding between a cheaper proposal with vague QA and a pricier one with detailed QA) Is it worth paying more for a proposal with detailed QA scoping?", "acceptedAnswer": { "@type": "Answer", "text": "Usually yes — the cost of QA scoped upfront is typically far lower than the cost of bugs discovered by real users after launch." } }
+    { "@type": "Question", "name": "(Scenario: founder deciding between a cheaper proposal with vague QA and a pricier one with detailed QA) Is it worth paying more for a proposal with detailed QA scoping?", "acceptedAnswer": { "@type": "Answer", "text": "Usually yes — the cost of QA scoped upfront is typically far lower than the cost of bugs discovered by real users after launch." } },
+    { "@type": "Question", "name": "(Scenario: founder reviewing a software services quote line by line) What percentage of a software services quote should actually go toward QA?", "acceptedAnswer": { "@type": "Answer", "text": "Expect 20-30% of the total timeline and budget for a standard product, rising to 30-40% for anything handling payments or regulated data." } },
+    { "@type": "Question", "name": "(Scenario: procurement lead comparing custom software development services vendors on paper) Should I ask for a testing-type breakdown, or is a single QA total sufficient?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for the breakdown by testing type — unit, integration, end-to-end, cross-device, security — since a single undifferentiated total is often just an estimate with a label attached." } },
+    { "@type": "Question", "name": "(Scenario: founder whose software product handles payments) Does a software product that processes payments need a different QA approach than a typical app?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — payment-handling products need dedicated security and penetration testing as a named phase, plus independent review of the specific payment integration points." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant how to spot a QA shortfall) What's a quick way to tell if a software services proposal is skipping QA?", "acceptedAnswer": { "@type": "Answer", "text": "Check whether QA appears as its own line item with a specific percentage of the timeline attached, rather than only mentioned in passing within development." } }
   ]
 }
 </script>

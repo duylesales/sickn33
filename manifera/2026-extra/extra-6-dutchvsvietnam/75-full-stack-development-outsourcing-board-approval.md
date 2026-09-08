@@ -74,6 +74,10 @@ A board that defers an outsourcing decision for a quarter over unanswered govern
 
 If your board's next question is one you haven't fully answered yet, that's worth resolving before the meeting, not during it. [Talk to Manifera about board-ready structuring](https://www.manifera.com/contact-us/).
 
+## How Source Code Escrow Actually Works, and What to Verify Before Trusting It
+
+Boards hear "source code escrow" and assume it's a solved problem, but a CFO presenting this answer should be ready for a follow-up: escrow only protects the company if three mechanics are specified in the contract, not just the word "escrow" itself. First, the escrow agent must be a genuinely independent third party — a licensed technology escrow provider, not the vendor's own legal counsel or an affiliated entity, which would defeat the purpose in exactly the insolvency scenario it's meant to cover. Second, the deposit frequency matters: a one-time deposit at contract signing is close to worthless eighteen months into an active engagement; a defensible clause mandates quarterly or release-triggered deposits, so the escrowed code never falls more than one sprint cycle behind production. Third, the release conditions need to be enumerated explicitly — vendor insolvency, sustained material breach of the SLA, or a defined cessation-of-business trigger — rather than left to a vague "as reasonably determined" standard that invites dispute exactly when the company needs fast access. A CFO who can answer a board follow-up on all three specifics turns "we have escrow" from a checkbox into an actual protection.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO preparing a first-time board pitch for offshore budget) What's the single most common reason boards reject or defer offshore outsourcing proposals?
@@ -96,6 +100,22 @@ The governance entity, domiciled in the Netherlands and operating under EU law, 
 
 Prepare answers to the five recurring questions — IP ownership, data residency, vendor continuity, quality accountability, and governance separation — before the meeting, ideally with the specific contract clauses in hand rather than general assurances.
 
+### (Scenario: CFO asked to verify escrow is real, not just a contract line) Who should hold source code escrow, the vendor's own lawyer or an independent third party?
+
+An independent, licensed technology escrow provider — never the vendor's own legal counsel or an affiliated entity, which would defeat the protection in exactly the insolvency scenario escrow exists to cover.
+
+### (Scenario: CFO worried escrow copy is outdated) How often should source code be deposited into escrow during an active engagement?
+
+Quarterly or release-triggered deposits, not a single deposit at contract signing. Without a recurring deposit clause, the escrowed code can be a year or more out of date by the time it's ever needed.
+
+### (Scenario: CFO wanting to know when escrow actually releases) What events trigger release of escrowed source code to the company?
+
+Vendor insolvency, sustained material breach of the SLA, or a defined cessation-of-business trigger, enumerated explicitly in the contract rather than left to a vague "as reasonably determined" standard.
+
+### (Scenario: CFO comparing outsourcing software development vendors) Does a standard outsourcing software development contract include escrow by default, or does it need to be negotiated separately?
+
+It needs to be negotiated and specified explicitly — most standard vendor contract templates don't include escrow by default, and even ones that mention it often lack the deposit-frequency and release-trigger detail that make it enforceable.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +125,11 @@ Prepare answers to the five recurring questions — IP ownership, data residency
     { "@type": "Question", "name": "(Scenario: CFO asked about vendor continuity risk) What happens to our codebase if the offshore vendor faces financial trouble?", "acceptedAnswer": { "@type": "Answer", "text": "A properly structured contract includes source code escrow and documented handoff procedures specifically to address this, so the company retains access and continuity regardless of the vendor's financial position." } },
     { "@type": "Question", "name": "(Scenario: CFO asked why governance needs to sit in a separate entity from execution) Why can't the same vendor entity handle both governance and execution?", "acceptedAnswer": { "@type": "Answer", "text": "A single entity grading its own homework creates a structural conflict of interest boards increasingly recognize and probe. Separating governance from execution gives independent accountability a board can verify." } },
     { "@type": "Question", "name": "(Scenario: CFO whose data touches EU customer information) How is GDPR liability actually handled when execution happens outside the EU?", "acceptedAnswer": { "@type": "Answer", "text": "The governance entity, domiciled in the Netherlands and operating under EU law, holds explicit contractual liability for GDPR-compliant data handling practices throughout the engagement." } },
-    { "@type": "Question", "name": "(Scenario: CFO wanting to avoid a repeat board deferral) How do we make sure the next board presentation gets approved in one meeting?", "acceptedAnswer": { "@type": "Answer", "text": "Prepare answers to the five recurring questions, IP ownership, data residency, vendor continuity, quality accountability, and governance separation, ideally with specific contract clauses in hand." } }
+    { "@type": "Question", "name": "(Scenario: CFO wanting to avoid a repeat board deferral) How do we make sure the next board presentation gets approved in one meeting?", "acceptedAnswer": { "@type": "Answer", "text": "Prepare answers to the five recurring questions, IP ownership, data residency, vendor continuity, quality accountability, and governance separation, ideally with specific contract clauses in hand." } },
+    { "@type": "Question", "name": "(Scenario: CFO asked to verify escrow is real, not just a contract line) Who should hold source code escrow, the vendor's own lawyer or an independent third party?", "acceptedAnswer": { "@type": "Answer", "text": "An independent, licensed technology escrow provider, never the vendor's own legal counsel or an affiliated entity." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried escrow copy is outdated) How often should source code be deposited into escrow during an active engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Quarterly or release-triggered deposits, not a single deposit at contract signing, so the escrowed code never falls far behind production." } },
+    { "@type": "Question", "name": "(Scenario: CFO wanting to know when escrow actually releases) What events trigger release of escrowed source code to the company?", "acceptedAnswer": { "@type": "Answer", "text": "Vendor insolvency, sustained material breach of the SLA, or a defined cessation-of-business trigger, enumerated explicitly rather than left vague." } },
+    { "@type": "Question", "name": "(Scenario: CFO comparing outsourcing software development vendors) Does a standard outsourcing software development contract include escrow by default, or does it need to be negotiated separately?", "acceptedAnswer": { "@type": "Answer", "text": "It needs to be negotiated and specified explicitly — most standard vendor templates don't include enforceable escrow terms by default." } }
   ]
 }
 </script>

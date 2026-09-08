@@ -74,6 +74,12 @@ Modeled honestly over a two-year horizon, a Netherlands-only scaling plan for a 
 
 The honest conclusion for most CTOs isn't "always offshore" or "always local" — it's matching structure to workstream: local capacity for roles needing daily on-site regulatory or client context, a governed pod for execution capacity the local market can't supply fast enough. [Talk to Manifera about modeling your specific comparison](https://www.manifera.com/contact-us/).
 
+## The Real Cost of Scaling Down a Dutch Team, By The Numbers
+
+The "difficult to scale down" point deserves specifics, because it's usually the hidden cost that turns an attractive local hiring plan into an expensive one a year later. Dutch employment law requires a transitievergoeding (transition payment) for most terminations, calculated at roughly one-third of a month's salary per year of service — for a senior engineer let go after two years, that's a real, budgeted cost on top of notice-period pay. Termination without mutual consent typically requires either UWV (employee insurance agency) permission or a cantonal court procedure, a process that commonly takes 4-8 weeks and carries genuine uncertainty about outcome, unlike a straightforward at-will reduction.
+
+A mutual settlement agreement (vaststellingsovereenkomst) is faster in practice but still typically costs one to two months' additional salary in negotiated severance beyond the statutory minimum, plus legal fees on both sides. Compare this against a governed Vietnam pod, where reducing headcount between sprint cycles is a contractual notice-period matter — typically 2-4 weeks — with no transition payment obligation and no court or UWV involvement. For a CTO modeling a roadmap that might contract as easily as it might grow, this asymmetry is often the deciding variable once it's actually quantified rather than mentioned in passing.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO building a board-facing cost model) What's the honest two-year cost comparison between local hiring and a governed Vietnam pod?
@@ -96,6 +102,22 @@ Yes — running a scoped pilot pod alongside an active local hiring search on a 
 
 Pod composition can typically be adjusted between sprint cycles without the legal and reputational cost that comes with reducing a local Dutch headcount commitment, giving a CTO meaningfully more flexibility to match capacity to actual roadmap need.
 
+### (Scenario: CTO who needs a specific number for the transition payment a Dutch termination requires) What does the Dutch transitievergoeding actually cost for a senior engineer we might need to let go?
+
+Roughly one-third of a month's salary per year of service — for a senior engineer earning €100,000 after two years, that's approximately €5,500-€6,000 in statutory transition payment alone, before notice-period pay or any negotiated severance on top.
+
+### (Scenario: CTO comparing termination timelines between the two structures) How long does it actually take to reduce headcount locally versus with an offshore pod?
+
+A Dutch termination without mutual consent typically takes 4-8 weeks through UWV or cantonal court procedure with real outcome uncertainty; a governed Vietnam pod reduction is a contractual notice-period matter, typically 2-4 weeks, with no court involvement.
+
+### (Scenario: CTO deciding whether an IT outsourcing company in Vietnam can handle a mixed local-offshore roadmap) Can an IT outsourcing company in Vietnam work alongside our existing local Dutch team rather than replacing it entirely?
+
+Yes — a hybrid model with a governed Vietnam pod handling execution-heavy workstreams while local Dutch staff retain client-facing or regulatory-context roles is a common and often optimal structure, not an either-or choice.
+
+### (Scenario: CTO wanting to know if mutual settlement is a cheaper way to reduce a Dutch team) Is a mutual settlement agreement a cheaper way to reduce headcount than going through UWV?
+
+It's often faster but not necessarily cheaper — a vaststellingsovereenkomst typically requires one to two months' additional negotiated severance above the statutory transition payment, plus legal fees, to secure the employee's agreement and avoid the UWV or court process entirely.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +127,11 @@ Pod composition can typically be adjusted between sprint cycles without the lega
     { "@type": "Question", "name": "(Scenario: CTO worried offshore introduces governance risk local hiring doesn't) Does choosing Vietnam mean accepting more governance risk than hiring locally?", "acceptedAnswer": { "@type": "Answer", "text": "Only with a flat, ungoverned offshore contract. An Amsterdam-governed pod with independent architecture sign-off and EU-jurisdiction contracting closes most of that gap." } },
     { "@type": "Question", "name": "(Scenario: CTO deciding which roles to keep local) Which roles should stay local versus move to an offshore pod?", "acceptedAnswer": { "@type": "Answer", "text": "Roles requiring daily on-site regulatory, client, or stakeholder context are generally best kept local. Execution-heavy workstreams are typically well suited to a governed pod." } },
     { "@type": "Question", "name": "(Scenario: CTO wanting to test both paths before committing) Can we run a genuine side-by-side comparison before choosing a structure?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, running a scoped pilot pod alongside an active local hiring search on a comparable workstream is a practical way to generate real comparative data rather than deciding on assumptions." } },
-    { "@type": "Question", "name": "(Scenario: CTO concerned about scaling down if plans change) How easily can a Vietnam pod scale down if our roadmap changes?", "acceptedAnswer": { "@type": "Answer", "text": "Pod composition can typically be adjusted between sprint cycles without the legal and reputational cost of reducing a local Dutch headcount commitment." } }
+    { "@type": "Question", "name": "(Scenario: CTO concerned about scaling down if plans change) How easily can a Vietnam pod scale down if our roadmap changes?", "acceptedAnswer": { "@type": "Answer", "text": "Pod composition can typically be adjusted between sprint cycles without the legal and reputational cost of reducing a local Dutch headcount commitment." } },
+    { "@type": "Question", "name": "(Scenario: CTO who needs a specific number for the transition payment a Dutch termination requires) What does the Dutch transitievergoeding actually cost for a senior engineer we might need to let go?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly one-third of a month's salary per year of service — approximately €5,500-€6,000 for a €100,000 senior engineer after two years, before notice pay or negotiated severance." } },
+    { "@type": "Question", "name": "(Scenario: CTO comparing termination timelines between the two structures) How long does it actually take to reduce headcount locally versus with an offshore pod?", "acceptedAnswer": { "@type": "Answer", "text": "A Dutch termination without mutual consent typically takes 4-8 weeks through UWV or cantonal court; an offshore pod reduction is a contractual notice matter, typically 2-4 weeks." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding whether an IT outsourcing company in Vietnam can handle a mixed local-offshore roadmap) Can an IT outsourcing company in Vietnam work alongside our existing local Dutch team rather than replacing it entirely?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — a hybrid model with a governed pod handling execution-heavy workstreams while local staff retain client-facing or regulatory roles is common and often optimal." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting to know if mutual settlement is a cheaper way to reduce a Dutch team) Is a mutual settlement agreement a cheaper way to reduce headcount than going through UWV?", "acceptedAnswer": { "@type": "Answer", "text": "It's often faster but not necessarily cheaper — a vaststellingsovereenkomst typically requires one to two months' additional negotiated severance above the statutory minimum." } }
   ]
 }
 </script>

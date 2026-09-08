@@ -70,6 +70,12 @@ Manifera helped rebuild the product with a clean separation between core product
 
 An AI product built with core logic tightly coupled to a specific model's particular behavior faces a rebuild effort nearly as large as the original build when a better model becomes available, an update that recurs multiple times over a product's realistic lifetime given how quickly AI models continue to improve. Architecting for model portability from the start costs a modest additional upfront design effort relative to the savings realized at each subsequent model transition. [Talk to Manifera](https://www.manifera.com/contact-us/) about building an AI product on an architecture designed to evolve with the underlying technology.
 
+## Technical Deep-Dive: What the Integration Layer Actually Contains
+
+A model-portable integration layer isn't a vague architectural principle — it's a specific set of components a CEO can ask an engineering team to name concretely. It contains: (1) a prompt-template registry, versioned independently of application code, so a prompt change doesn't require a full deployment; (2) an output-schema validator that enforces a structured contract (typically JSON schema or a typed interface) regardless of which model produced the raw output, catching format drift before it reaches business logic; (3) a routing abstraction that can direct different request types to different models or providers based on cost, latency, or capability needs, rather than hardcoding a single model endpoint; and (4) a token-usage and cost-tracking layer instrumented per model, since switching models changes unit economics as much as capability, and a CEO who can't see per-model cost data can't make an informed switch decision.
+
+Building an AI product without these four components typically saves 10-15% of initial build time but multiplies the cost of every subsequent model migration by 3-5x — a tradeoff that rarely favors skipping them once a product is expected to run for more than a single product cycle. For AI product development specifically, this is the single highest-leverage architectural decision a CEO should confirm before committing engineering budget, because it's far cheaper to build in from day one than to retrofit once the codebase has scaled.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CEO building an AI product around today's best available model) Why shouldn't an AI product be architected around today's specific model as a permanent foundation?
@@ -92,6 +98,22 @@ A portable evaluation framework — a defined set of representative test cases a
 
 Model-locked architecture can require a rebuild effort nearly as large as the original build, while model-portable architecture can contain the cost to a small fraction of that.
 
+### (Scenario: CEO trying to name the concrete engineering components of a model-portable AI product architecture) What specific components should an engineering team point to when claiming their AI product architecture is model-portable?
+
+A versioned prompt-template registry, an output-schema validator, a routing abstraction for directing requests to different models by cost or capability, and a per-model token-usage and cost-tracking layer — a team unable to name these four is likely describing an intention, not an implemented architecture.
+
+### (Scenario: CEO deciding whether to invest in model-portable architecture for an early-stage AI product) Is building model-portable architecture worth the extra upfront cost for an early-stage AI product still validating product-market fit?
+
+Usually yes even pre-PMF, since the integration layer adds only 10-15% to initial build time but avoids a 3-5x cost multiplier on the first model migration, which for a fast-moving AI product category typically arrives well within the first year.
+
+### (Scenario: CEO trying to understand how switching AI models affects unit economics, not just capability) Why does a per-model cost-tracking layer matter as much as output quality when evaluating a new AI model?
+
+Because switching models changes token pricing and latency as much as it changes capability, and a CEO without per-model cost visibility is evaluating only half the decision — a cheaper, adequate model can beat a marginally better, more expensive one on unit economics at scale.
+
+### (Scenario: CEO deciding how an offshore development partner should be briefed on building an AI product) What should a CEO confirm with an offshore or dedicated development team before they start building an AI product's core architecture?
+
+Confirm the team is building the four-component integration layer from day one, not retrofitting it later — Manifera's Vietnam-based pods build this layer as standard practice under Amsterdam governance specifically because retrofitting model-portability into an already-scaled codebase costs multiples of building it in from the start.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +123,11 @@ Model-locked architecture can require a rebuild effort nearly as large as the or
     { "@type": "Question", "name": "(Scenario: CEO trying to understand what makes an AI product's architecture portable across models) What architectural discipline allows an AI product to switch models with contained effort?", "acceptedAnswer": { "@type": "Answer", "text": "Separating core product logic from model-specific mechanics behind a defined integration layer." } },
     { "@type": "Question", "name": "(Scenario: CEO wondering whether structural safeguards need to be rebuilt when switching models) Why should an AI product's structural safeguards be built as model-agnostic infrastructure?", "acceptedAnswer": { "@type": "Answer", "text": "Safeguards tuned to one model's quirks need rework when the model changes; model-agnostic ones don't." } },
     { "@type": "Question", "name": "(Scenario: CEO trying to evaluate whether a new AI model is worth switching to) What allows a CEO to evaluate a new model against a consistent standard rather than an ad hoc judgment call?", "acceptedAnswer": { "@type": "Answer", "text": "A portable evaluation framework with defined test cases and success criteria specific to the product." } },
-    { "@type": "Question", "name": "(Scenario: CEO trying to estimate the cost difference between model-locked and model-portable architecture) How much does adopting a better model cost with model-locked architecture versus model-portable architecture?", "acceptedAnswer": { "@type": "Answer", "text": "Model-locked can near-equal the original build cost; model-portable contains it to a small fraction." } }
+    { "@type": "Question", "name": "(Scenario: CEO trying to estimate the cost difference between model-locked and model-portable architecture) How much does adopting a better model cost with model-locked architecture versus model-portable architecture?", "acceptedAnswer": { "@type": "Answer", "text": "Model-locked can near-equal the original build cost; model-portable contains it to a small fraction." } },
+    { "@type": "Question", "name": "(Scenario: CEO trying to name the concrete engineering components of a model-portable AI product architecture) What specific components should an engineering team point to when claiming their AI product architecture is model-portable?", "acceptedAnswer": { "@type": "Answer", "text": "A versioned prompt-template registry, an output-schema validator, a routing abstraction, and a per-model cost-tracking layer." } },
+    { "@type": "Question", "name": "(Scenario: CEO deciding whether to invest in model-portable architecture for an early-stage AI product) Is building model-portable architecture worth the extra upfront cost for an early-stage AI product still validating product-market fit?", "acceptedAnswer": { "@type": "Answer", "text": "Usually yes, since the integration layer adds only 10-15% to build time but avoids a 3-5x cost multiplier on the first model migration." } },
+    { "@type": "Question", "name": "(Scenario: CEO trying to understand how switching AI models affects unit economics, not just capability) Why does a per-model cost-tracking layer matter as much as output quality when evaluating a new AI model?", "acceptedAnswer": { "@type": "Answer", "text": "Switching models changes token pricing and latency as much as capability, and a cheaper adequate model can beat a marginally better expensive one at scale." } },
+    { "@type": "Question", "name": "(Scenario: CEO deciding how an offshore development partner should be briefed on building an AI product) What should a CEO confirm with an offshore or dedicated development team before they start building an AI product's core architecture?", "acceptedAnswer": { "@type": "Answer", "text": "Confirm the team builds the four-component integration layer from day one; Manifera's Vietnam-based pods do this as standard practice under Amsterdam governance." } }
   ]
 }
 </script>

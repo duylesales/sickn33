@@ -99,6 +99,17 @@ An unplanned legacy-system handoff, based on comparable incidents, typically cos
 
 If your organization has a system that only one person truly understands, the time to build a continuity plan is before that person gives notice, not after. Talk to a Manifera architect: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## The SLA Tiering Model: Severity Levels for a Legacy Reservations Engine
+
+A legacy-specific SLA needs severity tiers calibrated to a fifteen-year-old revenue-critical system, not a generic template:
+
+- **P1 — Revenue-blocking (booking engine down or corrupting data):** 15-minute acknowledgment, 1-hour response from a maintenance engineer familiar with the specific module, 4-hour target resolution or rollback.
+- **P2 — Degraded but functional (partial booking failures, slow reconciliation):** 1-hour acknowledgment, 4-hour response, next-business-day resolution target.
+- **P3 — Non-critical defect (reporting inaccuracies, minor UI issues in admin tools):** Next-business-day acknowledgment, resolution scheduled into the next sprint rather than treated as an interrupt.
+- **P4 — Modernization and documentation opportunities:** Batched and scheduled against available capacity, explicitly not competing with P1-P3 response times.
+
+Each tier should specify not just response time but who is authorized to respond — a P1 on the fifteen-year-old core should route to whoever completed the original knowledge-transfer pairing sessions on that specific module, not whoever is next in a generic support rotation. A legacy system's failure modes are specific enough that a one-size SLA across the whole product portfolio routinely misclassifies severity during a real incident.
+
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering with a legacy expert nearing retirement) How far in advance should we start planning a legacy-system knowledge transfer?
@@ -121,6 +132,22 @@ Not usually as a first step — a full rewrite of an undocumented, business-crit
 
 Response and resolution times calibrated to the legacy system's actual historical failure patterns and business-criticality, not a generic SLA copied from a newer, better-documented part of the product.
 
+### (Scenario: VP of Engineering choosing between a fixed monthly retainer and per-ticket billing for legacy maintenance) Should legacy maintenance be billed as a fixed monthly retainer or per-ticket?
+
+A fixed monthly retainer with a capped hour allocation is generally better for legacy systems specifically, because it removes the perverse incentive per-ticket billing creates to under-invest in documentation and root-cause fixes that would reduce future ticket volume.
+
+### (Scenario: VP of Engineering at a tourism-booking company worried about maintenance windows colliding with peak booking season) How should maintenance scheduling change during Westerveld's peak tourism booking season?
+
+Freeze non-critical changes and modernization work during the peak booking window leading into and through the park's high season, reserving maintenance capacity strictly for P1/P2 incident response, then resume planned modernization and documentation work in the off-season.
+
+### (Scenario: VP of Engineering wanting a specific cadence for the ongoing bus-factor audit mentioned earlier) How often should the bus-factor audit actually run once it's established as a practice?
+
+Quarterly is the practical cadence — frequent enough to catch a new single-owner dependency before it calcifies, infrequent enough not to become its own maintenance burden competing with actual ticket work.
+
+### (Scenario: VP of Engineering wanting explicit contract language ensuring knowledge-transfer documentation belongs to the company) Who owns the documentation and architecture decision log produced during a knowledge-transfer engagement?
+
+The contract should state explicitly that all documentation, decision logs, and architecture diagrams are company-owned work product, delivered in an editable, portable format independent of any vendor-specific tool, so the knowledge stays with the company regardless of which maintenance partner is used in the future.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -130,7 +157,11 @@ Response and resolution times calibrated to the legacy system's actual historica
     { "@type": "Question", "name": "(Scenario: Engineering leader unsure how to prioritize a sprawling legacy codebase) How do we decide which parts of a legacy system need attention first?", "acceptedAnswer": { "@type": "Answer", "text": "Run a structured risk-mapping exercise scoring modules on business criticality, existing documentation, and fragility under change, then prioritize the highest-risk intersection." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering worried documentation will get deprioritized again) How do we make sure documentation actually happens instead of being skipped under deadline pressure?", "acceptedAnswer": { "@type": "Answer", "text": "Make documentation an explicit acceptance criterion for closing maintenance tickets, so it's captured incrementally through real work instead of a separate deprioritized effort." } },
     { "@type": "Question", "name": "(Scenario: Leadership asking whether legacy systems should just be rewritten) Should we just replace the legacy system instead of maintaining it?", "acceptedAnswer": { "@type": "Answer", "text": "Not usually as a first step; a full rewrite of an undocumented, business-critical system carries significant risk, and incremental modernization typically reduces risk faster and cheaper." } },
-    { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating an offshore maintenance partner) What SLA terms should we insist on for a legacy system specifically?", "acceptedAnswer": { "@type": "Answer", "text": "Response and resolution times calibrated to the legacy system's actual historical failure patterns and business-criticality, not a generic SLA copied from a newer system." } }
+    { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating an offshore maintenance partner) What SLA terms should we insist on for a legacy system specifically?", "acceptedAnswer": { "@type": "Answer", "text": "Response and resolution times calibrated to the legacy system's actual historical failure patterns and business-criticality, not a generic SLA copied from a newer system." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering choosing between a fixed monthly retainer and per-ticket billing for legacy maintenance) Should legacy maintenance be billed as a fixed monthly retainer or per-ticket?", "acceptedAnswer": { "@type": "Answer", "text": "A fixed monthly retainer with a capped hour allocation is generally better, since per-ticket billing creates a perverse incentive to under-invest in root-cause fixes that would reduce future ticket volume." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering at a tourism-booking company worried about maintenance windows colliding with peak booking season) How should maintenance scheduling change during Westerveld's peak tourism booking season?", "acceptedAnswer": { "@type": "Answer", "text": "Freeze non-critical changes and modernization work during peak season, reserving capacity strictly for P1/P2 incident response, then resume planned work in the off-season." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering wanting a specific cadence for the ongoing bus-factor audit mentioned earlier) How often should the bus-factor audit actually run once it's established as a practice?", "acceptedAnswer": { "@type": "Answer", "text": "Quarterly is the practical cadence, frequent enough to catch a new single-owner dependency before it calcifies without becoming its own maintenance burden." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering wanting explicit contract language ensuring knowledge-transfer documentation belongs to the company) Who owns the documentation and architecture decision log produced during a knowledge-transfer engagement?", "acceptedAnswer": { "@type": "Answer", "text": "The contract should state all documentation and decision logs are company-owned work product, delivered in an editable, portable format independent of any vendor-specific tool." } }
   ]
 }
 </script>

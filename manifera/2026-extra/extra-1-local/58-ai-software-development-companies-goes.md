@@ -72,6 +72,10 @@ Choosing an AI vendor based on demo quality alone routinely results in a failed 
 
 If every proposal on your desk right now looks equally impressive, you're evaluating the wrong thing. Talk to Manifera about what production-grade AI delivery actually looks like: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## A Scored Rubric for Separating the Five Proposals on the Table
+
+Turn the qualitative evaluation into a weighted scorecard so five polished pitches stop looking identical. Production evidence carries the most weight (35%): score zero for "no case study," partial credit for a case study without hard metrics, and full credit only for named uptime, accuracy-over-time, and cost-per-inference figures from a comparable production deployment. MLOps maturity is next (25%): score on whether the vendor can describe a concrete evaluation harness and observability stack unprompted, not after being asked directly. Team continuity (20%): score based on whether the vendor commits, in writing, that the engineers in the pitch are the engineers who'll build the system — a "we'll staff appropriately" answer scores zero. Post-launch model (20%): score on whether ongoing monitoring, drift detection, and retraining are included as a defined service or left as an unstated assumption. For a Goes agri-food quality-inspection use case specifically, add a mandatory pass/fail gate on top of the weighted score: any vendor unable to describe a specific false-positive/false-negative tolerance methodology for a food-safety-adjacent inspection system should be disqualified regardless of how well they score elsewhere, since an unmanaged false-negative rate in that context isn't a technical inconvenience — it's a recall risk.
+
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering comparing multiple AI vendor proposals) What's the single best question to ask an AI vendor to separate demo-builders from production partners?
@@ -94,6 +98,22 @@ A properly structured evaluation typically adds one to two weeks to the selectio
 
 That depends on whether the stall reflects a fixable gap or a structural lack of production experience. An honest technical assessment of their current architecture usually reveals which one it is within a week or two.
 
+### (Scenario: VP of Engineering wanting to turn five pitches into a scored comparison) How should we weight production evidence versus MLOps maturity when scoring competing AI vendor proposals?
+
+A workable weighting is production evidence 35%, MLOps maturity 25%, team continuity 20%, and post-launch support model 20% — heavily favoring proof over pitch quality, since every proposal in a shortlist has already cleared the "can they present well" bar.
+
+### (Scenario: VP of Engineering evaluating an AI quality-inspection vendor for food safety) What should disqualify an AI vendor outright for a food-safety-adjacent quality inspection use case?
+
+Inability to describe a specific false-positive/false-negative tolerance methodology should be an automatic disqualifier regardless of how well the vendor scores elsewhere, since an unmanaged false-negative rate in a food-safety context is a recall risk, not a technical inconvenience.
+
+### (Scenario: VP of Engineering at a Zeeland agri-food processor with an existing HACCP quality system) Does an AI quality-inspection vendor need to integrate with our existing HACCP or quality management system, or does it run standalone?
+
+It should integrate directly, feeding inspection results into your existing quality management system's audit trail rather than operating as a standalone silo, since a disconnected system creates a second, unreconciled record an auditor will eventually question.
+
+### (Scenario: VP of Engineering wanting to de-risk before a full commitment) Should we pilot an AI vendor on a limited scope before committing to the full quality-inspection rollout?
+
+Yes — a scoped pilot on one production line or SKU over four to eight weeks, validated against real historical defect data, is the standard way to confirm accuracy claims before extending the system across the full operation.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +123,11 @@ That depends on whether the stall reflects a fixable gap or a structural lack of
     { "@type": "Question", "name": "(Scenario: Goes agri-food company evaluating AI for a compliance-sensitive use case) Does vendor selection matter more for AI features tied to safety or compliance requirements?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, significantly. A hallucinating or unstable AI system tied to quality inspection or compliance carries regulatory and safety exposure that a purely internal tool doesn't, which makes production reliability evidence even more critical during evaluation." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering who has already been burned by one failed vendor) How do we recover credibility with leadership after one failed AI vendor engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Bringing a rigorous, metrics-based evaluation process to the next vendor selection, rather than repeating a demo-driven decision, is usually the fastest way to rebuild leadership confidence, since it directly addresses what went wrong the first time." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering under time pressure to decide quickly) Isn't a rigorous vendor evaluation process going to slow down our timeline?", "acceptedAnswer": { "@type": "Answer", "text": "A properly structured evaluation typically adds one to two weeks to the selection process, which is dramatically cheaper than the months lost recovering from a vendor who can't productionize what they demoed." } },
-    { "@type": "Question", "name": "(Scenario: VP of Engineering deciding whether to switch mid-engagement) Our current AI vendor delivered a demo but has stalled on production. Is it better to push them harder or switch partners?", "acceptedAnswer": { "@type": "Answer", "text": "That depends on whether the stall reflects a fixable gap or a structural lack of production experience. An honest technical assessment of their current architecture usually reveals which one it is within a week or two." } }
+    { "@type": "Question", "name": "(Scenario: VP of Engineering deciding whether to switch mid-engagement) Our current AI vendor delivered a demo but has stalled on production. Is it better to push them harder or switch partners?", "acceptedAnswer": { "@type": "Answer", "text": "That depends on whether the stall reflects a fixable gap or a structural lack of production experience. An honest technical assessment of their current architecture usually reveals which one it is within a week or two." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering wanting to turn five pitches into a scored comparison) How should we weight production evidence versus MLOps maturity when scoring competing AI vendor proposals?", "acceptedAnswer": { "@type": "Answer", "text": "A workable weighting is production evidence 35%, MLOps maturity 25%, team continuity 20%, and post-launch support model 20%." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating an AI quality-inspection vendor for food safety) What should disqualify an AI vendor outright for a food-safety-adjacent quality inspection use case?", "acceptedAnswer": { "@type": "Answer", "text": "Inability to describe a specific false-positive/false-negative tolerance methodology should be an automatic disqualifier, since an unmanaged false-negative rate is a recall risk." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering at a Zeeland agri-food processor with an existing HACCP quality system) Does an AI quality-inspection vendor need to integrate with our existing HACCP or quality management system, or does it run standalone?", "acceptedAnswer": { "@type": "Answer", "text": "It should integrate directly into the existing quality management system's audit trail rather than operate as a standalone silo." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering wanting to de-risk before a full commitment) Should we pilot an AI vendor on a limited scope before committing to the full quality-inspection rollout?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a scoped pilot on one production line or SKU over four to eight weeks, validated against real historical defect data, before extending across the full operation." } }
   ]
 }
 </script>

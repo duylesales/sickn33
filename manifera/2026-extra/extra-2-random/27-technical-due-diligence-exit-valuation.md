@@ -70,6 +70,19 @@ Manifera ran a readiness audit that identified eleven modules with unclear IP pr
 
 Technical due diligence is one of the few moments where engineering decisions convert directly and immediately into a dollar figure on a term sheet, which makes unmanaged technical debt at exit time uniquely expensive: a 10-25% valuation discount or escrow holdback on IP or architecture findings represents real, board-visible money lost at the single moment a company's engineering history is most scrutinized. On a mid-market exit in the €10M-€25M range, that discount routinely runs €1M-€6M — several times the cost of a proactive readiness audit and remediation engagement conducted months ahead of the data room opening. A custom software development company partner who structured the codebase properly from the outset turns this from a last-minute scramble into a non-issue. [Talk to Manifera](https://www.manifera.com/contact-us/) about a pre-diligence technical readiness audit before your next strategic conversation.
 
+## The Data-Room Checklist: What a Buyer's Engineering Team Actually Requests
+
+A technical due-diligence request list from an acquirer's counsel or engineering team follows a predictable pattern, and having every item ready before it's asked for is what separates a clean process from a discounted one:
+
+1. **Full IP assignment documentation** for every contributor — employee, contractor, or agency — including any offshore engineering arrangement, with named individuals, not just a vendor entity on a master services agreement.
+2. **Open-source license audit**, flagging any copyleft (GPL-family) dependency that could impose disclosure obligations on proprietary code, plus a dependency freshness report showing how many packages are more than two major versions behind.
+3. **Architecture diagrams current within the last quarter**, not a slide from the original pitch deck — buyers specifically check the diagram's date against the last major infrastructure change.
+4. **Security audit or penetration test results from within the last 12 months**, or a documented remediation plan if none exists.
+5. **A named owner for every production system**, cross-referenced against current headcount — any system whose sole owner has already left is an automatic follow-up question.
+6. **Incident history for the last 24 months** with resolution times, since unexplained gaps in monitoring or postmortem records read as unmanaged operational risk.
+
+Assembling this list retroactively under a live deal timeline is where valuation discounts get negotiated; assembling it as standing documentation is what makes diligence a formality instead of a threat.
+
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering anticipating an acquisition conversation) How early should we start preparing for technical due diligence?
@@ -92,6 +105,22 @@ It affects deal terms directly, often through earnout or retention-contingent pa
 
 Yes, a technical readiness audit can be scoped and run discreetly as a standard engineering-quality engagement, without signaling to the broader team that an acquisition conversation is underway.
 
+### (Scenario: VP of Engineering whose codebase relies heavily on open-source dependencies) Do open-source license issues actually come up in technical due diligence?
+
+Yes, and frequently — a buyer's counsel routinely runs an automated license scan looking for copyleft dependencies (GPL, AGPL) embedded in proprietary code, since these can impose disclosure obligations on the acquired IP itself. An unaudited dependency tree is treated the same way as unassigned contractor code: a liability to be priced or remediated before close.
+
+### (Scenario: VP of Engineering evaluating an offshore software development company partner ahead of a future exit) Does using an offshore software development company create additional diligence risk compared to an in-house team?
+
+Not inherently, but only if the engagement was structured with individual-level IP assignment, documented ownership, and standard confidentiality terms from the start. A reputable custom software development company builds this into every contract by default; informal freelance or marketplace arrangements are what typically create the gap.
+
+### (Scenario: VP of Engineering deciding whether a minor codebase cleanup is worth doing before diligence starts) Is it worth fixing small technical debt items before diligence if the core architecture is already solid?
+
+Generally yes, because diligence teams weight the pattern, not just the severity, of findings — a codebase with many small unresolved issues signals weaker engineering discipline overall, even if no single item is individually deal-threatening, and that perception itself factors into valuation.
+
+### (Scenario: VP of Engineering wondering if a strong diligence result can increase valuation, not just protect it) Can a clean technical due-diligence result actually increase the offer, not just avoid a discount?
+
+It can, particularly in competitive processes with multiple bidders, where a buyer's engineering team explicitly flags low technical risk as a factor supporting a higher multiple, since it removes a common source of post-close integration cost the acquirer would otherwise have to budget for.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +130,11 @@ Yes, a technical readiness audit can be scoped and run discreetly as a standard 
     { "@type": "Question", "name": "(Scenario: VP of Engineering worried about historical contractor code) What happens if we can't locate a former contractor to get proper IP assignment?", "acceptedAnswer": { "@type": "Answer", "text": "In some cases the affected module needs to be rewritten rather than merely re-documented, since a buyer's counsel will treat unassignable IP as a real liability, not a technicality." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering estimating the financial stakes) How much can a technical diligence finding actually move the deal price?", "acceptedAnswer": { "@type": "Answer", "text": "Acquirers commonly apply a 10-25% valuation discount or an equivalent escrow holdback when diligence surfaces material IP or architecture risk, which on a mid-market exit can represent several million euros depending on deal size." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering concerned about key-person dependency) Does bus factor actually affect deal terms, or is it just a technical concern?", "acceptedAnswer": { "@type": "Answer", "text": "It affects deal terms directly, often through earnout or retention-contingent payment structures when an acquirer believes critical knowledge is concentrated in people who might leave." } },
-    { "@type": "Question", "name": "(Scenario: VP of Engineering wanting a confidential pre-diligence check) Can Manifera run a readiness audit without the wider organization knowing an exit is being considered?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a technical readiness audit can be scoped and run discreetly as a standard engineering-quality engagement, without signaling to the broader team that an acquisition conversation is underway." } }
+    { "@type": "Question", "name": "(Scenario: VP of Engineering wanting a confidential pre-diligence check) Can Manifera run a readiness audit without the wider organization knowing an exit is being considered?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a technical readiness audit can be scoped and run discreetly as a standard engineering-quality engagement, without signaling to the broader team that an acquisition conversation is underway." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering whose codebase relies heavily on open-source dependencies) Do open-source license issues actually come up in technical due diligence?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and frequently. A buyer's counsel routinely runs an automated license scan looking for copyleft dependencies embedded in proprietary code, since these can impose disclosure obligations on the acquired IP itself." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating an offshore software development company partner ahead of a future exit) Does using an offshore software development company create additional diligence risk compared to an in-house team?", "acceptedAnswer": { "@type": "Answer", "text": "Not inherently, but only if the engagement was structured with individual-level IP assignment, documented ownership, and standard confidentiality terms from the start. Informal freelance or marketplace arrangements are what typically create the gap." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering deciding whether a minor codebase cleanup is worth doing before diligence starts) Is it worth fixing small technical debt items before diligence if the core architecture is already solid?", "acceptedAnswer": { "@type": "Answer", "text": "Generally yes, because diligence teams weight the pattern, not just the severity, of findings. A codebase with many small unresolved issues signals weaker engineering discipline overall, even if no single item is individually deal-threatening." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering wondering if a strong diligence result can increase valuation, not just protect it) Can a clean technical due-diligence result actually increase the offer, not just avoid a discount?", "acceptedAnswer": { "@type": "Answer", "text": "It can, particularly in competitive processes with multiple bidders, where a buyer's engineering team explicitly flags low technical risk as a factor supporting a higher multiple." } }
   ]
 }
 </script>

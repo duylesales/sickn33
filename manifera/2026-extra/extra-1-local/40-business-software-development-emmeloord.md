@@ -70,6 +70,10 @@ Weigh the cost of a targeted compliance fix against the cost of a failed audit. 
 
 If your compliance deadline is measured in weeks and your current tool's timeline is measured in months, that mismatch is the actual emergency — not the audit itself. Talk to us about a scoped compliance fix on our [contact page](https://www.manifera.com/contact-us/).
 
+## What a Compliant Farm-to-Shipment Traceability Record Actually Requires
+
+Auditors evaluating agri-food traceability systems check for a specific chain of custody, not a general sense of "good record-keeping." At minimum, a compliant record needs a unique lot or batch identifier assigned at intake, linked forward through every processing step and backward to the originating field or supplier, a timestamped transformation log showing what inputs combined into what outputs at each processing stage, and a shipment-level record tying final packaged lots to specific outbound shipments with quantities that reconcile against intake volumes. A finding that a tool "cannot produce a full farm-to-shipment traceability record within the required timeframe" almost always traces to one specific gap: batch identifiers that don't persist through a transformation step, so two incoming lots get blended during processing and the system loses the ability to trace the blended output back to both originating sources. Fixing this specific gap is usually a targeted schema change — adding a lot-mapping table that records many-to-many relationships between input and output batches at each transformation — rather than a full data model rebuild. For an Emmeloord seed or produce processor, this single table is often the difference between a defensible audit trail and a finding that threatens export certification.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO facing an imminent compliance deadline) Our internal tool can't meet a compliance deadline that's weeks away — is a full rewrite our only option?
@@ -92,6 +96,22 @@ Documenting the schema, data flows, and API built during this fix, rather than t
 
 Once the deadline pressure is gone, a full replacement can be evaluated on its own merits and timeline rather than under duress, and the documentation produced during the compliance fix makes that eventual project significantly faster to scope.
 
+### (Scenario: CFO whose auditor flagged a specific traceability gap) Why does farm-to-shipment traceability break down even when the underlying data mostly exists?
+
+The most common cause is a batch identifier that doesn't persist through a transformation step, so two incoming lots get blended during processing and the system loses the ability to trace the blended output back to both originating sources — fixed with a targeted lot-mapping table rather than a full rebuild.
+
+### (Scenario: CFO checking which regulation actually drives the traceability requirement) What regulation typically drives the farm-to-shipment traceability requirement for a Dutch agri-food exporter?
+
+EU General Food Law Regulation (EC) 178/2002's one-step-back-one-step-forward traceability requirement is the baseline, though many export destinations layer additional country-specific documentation requirements on top that the internal tool needs to satisfy simultaneously.
+
+### (Scenario: CFO with an audit re-check scheduled soon) How quickly can a targeted lot-mapping fix go live before a scheduled audit re-check?
+
+Given an existing data store that just needs the mapping layer added, six to ten weeks is a realistic timeline, which is why a targeted fix rather than a full rewrite is usually the only option that can actually beat a near-term audit date.
+
+### (Scenario: CFO at a seed processing company comparing requirements to fresh produce) Does seed processing traceability differ from fresh produce traceability requirements?
+
+Yes — seed processing typically requires germination rate and lot purity records layered on top of standard chain-of-custody data, an additional data dimension that a traceability fix scoped only for produce-style tracking would miss.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +121,11 @@ Once the deadline pressure is gone, a full replacement can be evaluated on its o
     { "@type": "Question", "name": "(Scenario: CFO worried about losing historical records) What happens to years of historical data if we modernize the tool instead of replacing it entirely?", "acceptedAnswer": { "@type": "Answer", "text": "A targeted extension preserves the existing data store, and historical data that doesn't fully meet the new requirement can be backfilled separately while the compliant path goes live immediately." } },
     { "@type": "Question", "name": "(Scenario: CFO uncertain the fix will hold up under audit scrutiny) How do we know a fast, targeted fix will actually satisfy the auditors rather than creating a new finding?", "acceptedAnswer": { "@type": "Answer", "text": "The gap analysis is scoped directly against the specific audit requirement, and the resulting reporting layer is validated against that exact requirement before the audit date." } },
     { "@type": "Question", "name": "(Scenario: CFO wanting to avoid this situation recurring) How do we avoid ending up in this same emergency the next time a compliance requirement changes?", "acceptedAnswer": { "@type": "Answer", "text": "Documenting the schema, data flows, and API built during the fix creates a standing capability that can absorb the next requirement change without starting from zero." } },
-    { "@type": "Question", "name": "(Scenario: CFO deciding whether a full replacement is still worth pursuing later) Should we still plan a full replacement of the legacy tool after the compliance fix is in place?", "acceptedAnswer": { "@type": "Answer", "text": "Once deadline pressure is gone, a full replacement can be evaluated on its own timeline, and documentation from the compliance fix makes that project significantly faster to scope." } }
+    { "@type": "Question", "name": "(Scenario: CFO deciding whether a full replacement is still worth pursuing later) Should we still plan a full replacement of the legacy tool after the compliance fix is in place?", "acceptedAnswer": { "@type": "Answer", "text": "Once deadline pressure is gone, a full replacement can be evaluated on its own timeline, and documentation from the compliance fix makes that project significantly faster to scope." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose auditor flagged a specific traceability gap) Why does farm-to-shipment traceability break down even when the underlying data mostly exists?", "acceptedAnswer": { "@type": "Answer", "text": "Usually a batch identifier that doesn't persist through a transformation step, so blended lots lose traceability back to both originating sources, fixed with a targeted lot-mapping table." } },
+    { "@type": "Question", "name": "(Scenario: CFO checking which regulation actually drives the traceability requirement) What regulation typically drives the farm-to-shipment traceability requirement for a Dutch agri-food exporter?", "acceptedAnswer": { "@type": "Answer", "text": "EU General Food Law Regulation (EC) 178/2002's one-step-back-one-step-forward traceability requirement, often layered with destination-market-specific documentation requirements." } },
+    { "@type": "Question", "name": "(Scenario: CFO with an audit re-check scheduled soon) How quickly can a targeted lot-mapping fix go live before a scheduled audit re-check?", "acceptedAnswer": { "@type": "Answer", "text": "Six to ten weeks given an existing data store that just needs the mapping layer added, which is why a targeted fix can beat a near-term audit date when a full rewrite cannot." } },
+    { "@type": "Question", "name": "(Scenario: CFO at a seed processing company comparing requirements to fresh produce) Does seed processing traceability differ from fresh produce traceability requirements?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, seed processing typically requires germination rate and lot purity records layered on top of standard chain-of-custody data." } }
   ]
 }
 </script>

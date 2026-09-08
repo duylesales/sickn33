@@ -74,6 +74,10 @@ Run a direct comparison and the gap holds up: a Netherlands-based engineer, full
 
 If your local vacancy has been open more than eight weeks, the comparison above is worth running before extending the search further. [Talk to Manifera about building an Amsterdam-governed Vietnam pod](https://www.manifera.com/contact-us/).
 
+## Outsourcing Models Compared: Fixed-Fee, Time-and-Materials, and Dedicated Pod
+
+The "outsourcing model" question isn't just onshore-vs-offshore — it's which contract structure governs the engagement, and CTOs comparing options often conflate the two decisions. Fixed-fee contracts work well for well-scoped, bounded projects (a defined MVP, a migration with clear acceptance criteria) but penalize scope changes heavily — expect change-order markups of 20-40% once requirements shift, which they almost always do past month two. Time-and-materials billing removes that penalty but shifts forecasting risk onto the CTO, who now owns monthly cost variance instead of a vendor. Manifera's dedicated-pod model sits between the two: a fixed monthly rate per pod (typically €15,000-€25,000 for a 3-person team) that behaves like fixed-fee for budgeting purposes while retaining T&M's flexibility to reprioritize sprint scope without a change-order process, because the pod sits under Amsterdam governance rather than a per-ticket billing arrangement. For a CTO deciding between local hiring and outsourcing models, the pod structure removes the worst failure mode of both alternatives: the change-order friction of fixed-fee and the forecasting unpredictability of T&M.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO with a local vacancy open for months) Our local engineering vacancy has been open for three months. Is switching to an offshore pod now realistic?
@@ -96,6 +100,22 @@ Generally yes. Adjusting pod capacity is a contractual conversation, while scali
 
 Yes — roles requiring deep in-person stakeholder engagement or highly regulated on-site presence often stay local, while product-area engineering capacity is typically where an offshore pod adds the most value.
 
+### (Scenario: CTO evaluating contract structures before signing) What's the difference between a fixed-fee, time-and-materials, and dedicated-pod outsourcing model?
+
+Fixed-fee suits well-scoped, bounded work but adds a 20-40% markup once scope changes. Time-and-materials removes that penalty but shifts cost-forecasting risk onto the CTO. A dedicated pod, billed at a fixed monthly rate, combines fixed-fee's budgeting predictability with T&M's flexibility to reprioritize sprint work without a formal change order.
+
+### (Scenario: CTO worried about change-order costs) How much do change orders typically add to a fixed-fee offshore contract once requirements shift?
+
+Expect 20-40% markups on the affected scope, and requirements shift on most projects past the second month. This is the main reason CTOs comparing outsourcing models move toward a dedicated-pod structure for anything beyond a narrowly bounded deliverable.
+
+### (Scenario: CTO wanting a blended team) Can we combine a local Netherlands core team with a Vietnam-based dedicated pod rather than choosing one model exclusively?
+
+Yes, this is a common structure — a small local core team retains product ownership and stakeholder-facing work while the Amsterdam-governed Vietnam pod absorbs the engineering capacity that would otherwise sit in an unfilled local vacancy.
+
+### (Scenario: CTO evaluating minimum contract commitment) What's the minimum commitment period for an Amsterdam-governed Vietnam pod engagement?
+
+Most engagements start with a three-to-six-month initial term, structured so either party can evaluate fit before committing to the 12-month terms that typically unlock better per-engineer rates.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +125,11 @@ Yes — roles requiring deep in-person stakeholder engagement or highly regulate
     { "@type": "Question", "name": "(Scenario: CTO worried oversight will suffer offshore) Does moving to an offshore pod mean giving up the architectural oversight a local hire would provide?", "acceptedAnswer": { "@type": "Answer", "text": "No, provided the engagement includes a genuine governance layer. Manifera's Amsterdam team provides architecture sign-off and risk management." } },
     { "@type": "Question", "name": "(Scenario: CTO wanting to test before fully committing) Can we run a side-by-side pilot before committing fully?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, running a contained pilot alongside an existing local search is a common and effective way to compare both paths on real delivered output." } },
     { "@type": "Question", "name": "(Scenario: CTO concerned about Dutch labor law flexibility) Is it easier to scale a Vietnam pod up or down than a local Dutch team?", "acceptedAnswer": { "@type": "Answer", "text": "Generally yes. Adjusting pod capacity is a contractual conversation, while scaling a local team down involves a redundancy process under Dutch labor law." } },
-    { "@type": "Question", "name": "(Scenario: CTO wanting to know what stays local) Are there roles that should stay local rather than move to an offshore pod?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, roles requiring deep in-person stakeholder engagement or highly regulated on-site presence often stay local, while product-area engineering capacity is typically where an offshore pod adds the most value." } }
+    { "@type": "Question", "name": "(Scenario: CTO wanting to know what stays local) Are there roles that should stay local rather than move to an offshore pod?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, roles requiring deep in-person stakeholder engagement or highly regulated on-site presence often stay local, while product-area engineering capacity is typically where an offshore pod adds the most value." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating contract structures before signing) What's the difference between a fixed-fee, time-and-materials, and dedicated-pod outsourcing model?", "acceptedAnswer": { "@type": "Answer", "text": "Fixed-fee suits bounded work but adds a 20-40% markup once scope changes; time-and-materials removes that penalty but shifts forecasting risk to the CTO; a dedicated pod combines fixed-fee predictability with T&M flexibility." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about change-order costs) How much do change orders typically add to a fixed-fee offshore contract once requirements shift?", "acceptedAnswer": { "@type": "Answer", "text": "Expect 20-40% markups on the affected scope, which is why CTOs comparing outsourcing models move toward a dedicated-pod structure for anything beyond a narrowly bounded deliverable." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting a blended team) Can we combine a local Netherlands core team with a Vietnam-based dedicated pod rather than choosing one model exclusively?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a small local core team can retain product ownership and stakeholder-facing work while the Amsterdam-governed Vietnam pod absorbs the engineering capacity an unfilled local vacancy would otherwise leave open." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating minimum contract commitment) What's the minimum commitment period for an Amsterdam-governed Vietnam pod engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Most engagements start with a three-to-six-month initial term, structured so either party can evaluate fit before committing to the 12-month terms that typically unlock better per-engineer rates." } }
   ]
 }
 </script>

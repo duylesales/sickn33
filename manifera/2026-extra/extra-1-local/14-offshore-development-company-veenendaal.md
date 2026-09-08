@@ -74,6 +74,10 @@ Oversizing an offshore engagement is a quieter cost than undersizing one, which 
 
 Fit-for-size isn't a soft preference — it's a line item. A mid-market CTO who signs an enterprise-shaped contract is paying enterprise overhead for mid-market throughput, and that gap doesn't show up until someone finally asks why the outsourcing budget feels heavier than the work delivered. [Talk to Manifera about a pod sized to your actual roadmap](https://www.manifera.com/contact-us/).
 
+## Calculating Your Actual Absorption Capacity Before You Shortlist
+
+Before evaluating any vendor, a mid-market CTO should run a simple capacity math exercise the enterprise checklist never asks for: divide your engineering org's total headcount by ten. A 40-person engineering team can realistically absorb and productively direct a 4-person offshore pod without adding a full-time vendor-management role; push past a 1-in-8 ratio of offshore-to-internal engineers and you typically need to budget for a dedicated internal liaison, whether or not the vendor's contract structure demands one. Second, model onboarding cost against your own roadmap cadence: if your product roadmap re-prioritizes on a monthly cycle, common for mid-market companies chasing a handful of large contracts, a vendor with an 8-12 week ramp burns two to three full roadmap cycles before contributing anything — the equivalent of a quarter of lost throughput before line one of committed code. Third, check the contractual notice period for capacity changes against your typical contract-win lead time; if a single new client can reshape your quarter with two weeks' notice but your vendor requires 90 days to flex pod size, the contract itself becomes the bottleneck. A vendor that can't answer these three questions in specific weeks and ratios, rather than reassurances, hasn't sized its own offering for a mid-market buyer.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating vendors sized for enterprise clients) How do I know if an offshore development company is oversized for my organization?
@@ -96,6 +100,22 @@ Yes, with the right contract structure. Capacity should be adjustable with a few
 
 Not necessarily. Size predicts stability, not fit. A vendor built for enterprise minimums can create more process overhead than a mid-market org can absorb, which shows up as friction cost even when the vendor's underlying delivery quality is solid.
 
+### (Scenario: CTO calculating internal absorption capacity before shortlisting) How do we calculate how large an offshore pod our engineering org can actually absorb?
+
+Use roughly a 1-in-10 ratio of offshore-to-internal engineers as a starting benchmark; push past a 1-in-8 ratio and budget for a dedicated internal liaison, since beyond that point the coordination overhead starts eroding the cost savings the engagement was meant to deliver.
+
+### (Scenario: CTO evaluating a software development partner for industrial or OT-integrated systems) Does a right-sized offshore development company have experience integrating with the industrial or OT/PLC systems common in Veenendaal manufacturing firms?
+
+Ask for named prior engagements involving machine, SCADA, or PLC integration specifically, not general web or mobile portfolio work, since OT integration carries failure modes and safety constraints that generic application development experience doesn't prepare a team for.
+
+### (Scenario: CTO negotiating the notice period for scaling pod capacity) What notice period should we negotiate for scaling an offshore pod up or down?
+
+Match it to your own typical contract-win lead time — most mid-market firms should push for 30 days or less, since anything longer turns the vendor's flexibility clause into a bottleneck exactly when a new client win creates the need to scale.
+
+### (Scenario: CTO comparing pricing models for a right-sized engagement) Should a right-sized pod be priced differently than an enterprise-sized engagement?
+
+Yes — expect a per-engineer or per-pod monthly rate tied to actual headcount, not a flat enterprise retainer that assumes idle account-management capacity you don't need and shouldn't be paying for.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +125,11 @@ Not necessarily. Size predicts stability, not fit. A vendor built for enterprise
     { "@type": "Question", "name": "(Scenario: CTO needing direct technical access rather than account layers) Should I have direct access to the engineers, or only to an account manager?", "acceptedAnswer": { "@type": "Answer", "text": "Direct access to the technical lead for day-to-day architecture and delivery questions is essential. Account management should exist for commercial and escalation matters only." } },
     { "@type": "Question", "name": "(Scenario: CTO managing a stable legacy manufacturing system) How does an offshore team avoid breaking undocumented legacy business logic?", "acceptedAnswer": { "@type": "Answer", "text": "Through a structured discovery phase before any new development starts, mapping the existing system and documenting edge cases before writing new code against them." } },
     { "@type": "Question", "name": "(Scenario: CTO whose roadmap shifts quarter to quarter) Can pod size flex up and down as our roadmap changes?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, with the right contract structure, capacity should be adjustable with a few weeks' notice rather than locked to a fixed headcount for the full contract term." } },
-    { "@type": "Question", "name": "(Scenario: CTO comparing a large vendor against a right-sized alternative) Is a bigger, more established offshore development company automatically a safer choice?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. Size predicts stability, not fit. A vendor built for enterprise minimums can create more process overhead than a mid-market org can absorb." } }
+    { "@type": "Question", "name": "(Scenario: CTO comparing a large vendor against a right-sized alternative) Is a bigger, more established offshore development company automatically a safer choice?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. Size predicts stability, not fit. A vendor built for enterprise minimums can create more process overhead than a mid-market org can absorb." } },
+    { "@type": "Question", "name": "(Scenario: CTO calculating internal absorption capacity before shortlisting) How do we calculate how large an offshore pod our engineering org can actually absorb?", "acceptedAnswer": { "@type": "Answer", "text": "Use roughly a 1-in-10 ratio of offshore-to-internal engineers as a starting benchmark, and budget for a dedicated internal liaison past a 1-in-8 ratio." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating a software development partner for industrial or OT-integrated systems) Does a right-sized offshore development company have experience integrating with the industrial or OT/PLC systems common in Veenendaal manufacturing firms?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for named prior engagements involving machine, SCADA, or PLC integration specifically, since OT integration carries failure modes generic application development experience doesn't prepare a team for." } },
+    { "@type": "Question", "name": "(Scenario: CTO negotiating the notice period for scaling pod capacity) What notice period should we negotiate for scaling an offshore pod up or down?", "acceptedAnswer": { "@type": "Answer", "text": "Match it to your own typical contract-win lead time, generally 30 days or less, since anything longer turns the flexibility clause into a bottleneck." } },
+    { "@type": "Question", "name": "(Scenario: CTO comparing pricing models for a right-sized engagement) Should a right-sized pod be priced differently than an enterprise-sized engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, expect a per-engineer or per-pod monthly rate tied to actual headcount, not a flat enterprise retainer that assumes idle account-management capacity." } }
   ]
 }
 </script>

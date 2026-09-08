@@ -68,6 +68,10 @@ Run the actual math before deciding to rebuild from zero. A full rewrite in the 
 
 If your business depends on code that only one absent person ever understood, that is not a maintenance backlog item — it is a solvency risk sitting one server failure away from becoming a headline. Talk to us before that server fails, not after, at our [contact page](https://www.manifera.com/contact-us/).
 
+## What a Proper Custom Software Audit Delivers as Line-Item Artifacts
+
+A custom software audit worth paying for produces specific artifacts, not a verbal summary of "it's messy." Expect a full entry-point inventory — every API endpoint, scheduled job, and external integration the system exposes, typically 30-60 items for a mid-sized operational system; a database schema diagram with foreign-key relationships reverse-engineered from the actual database, not from any usually-absent original documentation; a risk-tiered list of components ranked by both business criticality and code fragility, so the CTO knows exactly which module would hurt most if it broke next; a characterization test coverage report showing what percentage of critical paths now have a safety net versus what remains untested; and a Bus Factor Score for each major component — how many current team members could safely modify it today, ideally rising from one, or zero, to at least two by the audit's end. For a Groningen energy-transition or agri-tech operator, the audit should also flag any component touching regulatory reporting or grid-integration data specifically, since those carry compliance exposure beyond ordinary maintainability risk. A vendor that can't commit to delivering these five artifacts on a fixed timeline, typically two to three weeks for a system of this size, isn't running an audit — they're running a sales pitch disguised as diligence.
+
 ## Frequently Asked Questions
 
 ### (Scenario: Groningen CTO who inherited undocumented freelancer code) How do you safely modify a system when no one currently understands how it works?
@@ -90,6 +94,22 @@ No. We rebuild incrementally around the live system, module by module, so the bu
 
 A single freelancer recreates the exact bus-factor risk you're trying to escape. A Manifera Pod distributes knowledge across a governed team with documentation standards, so no future departure can hold your business hostage again.
 
+### (Scenario: CTO wanting to know what an audit report actually contains) What specific deliverables should a custom software audit produce, not just a verbal assessment?
+
+An entry-point inventory, a reverse-engineered database schema diagram, a risk-tiered component list, a characterization test coverage report, and a Bus Factor Score per component — five concrete artifacts, typically delivered within two to three weeks for a mid-sized system.
+
+### (Scenario: CTO wanting to measure whether a rescue has actually reduced risk) How do you measure whether a rescue engagement has actually reduced bus-factor risk?
+
+Track a Bus Factor Score per major component — the number of current team members who could safely modify it today — and treat the engagement as successful only once that score rises from one or zero to at least two across every business-critical module.
+
+### (Scenario: CTO at a Groningen energy-transition company with grid-integration data) Does a custom software audit need to flag anything specific for a Groningen energy-transition or grid-integration system?
+
+Yes — any component touching regulatory reporting or grid-integration data should be flagged separately during the audit, since it carries compliance exposure on top of the ordinary maintainability risk the rest of the system presents.
+
+### (Scenario: CTO whose freelancer left no version control history at all) What if there's no version control history at all, not even a partial one?
+
+That's a starting condition, not a blocker — code archaeology works directly against the current file state, and version control gets introduced as part of the rescue itself, so a missing Git history only affects how the audit begins, not whether it can proceed.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +119,11 @@ A single freelancer recreates the exact bus-factor risk you're trying to escape.
     { "@type": "Question", "name": "(Scenario: CTO deciding between rescue and full rewrite) Is it cheaper to rescue our old bespoke system or rebuild it from scratch?", "acceptedAnswer": { "@type": "Answer", "text": "Rescue typically costs 35-50% less than a full rewrite and delivers improvements within weeks. A full rewrite only makes sense when the technology is end-of-life or the business logic has fundamentally changed." } },
     { "@type": "Question", "name": "(Scenario: CTO worried about losing institutional knowledge) The original freelancer is unreachable, can you still figure out what the system is supposed to do?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, code archaeology and characterization testing determine intended behavior by observing what the system actually does across real data and integrations, not by relying on nonexistent documentation." } },
     { "@type": "Question", "name": "(Scenario: CTO concerned about business continuity during the fix) Will operations have to stop using the current system while you work on it?", "acceptedAnswer": { "@type": "Answer", "text": "No, we rebuild incrementally around the live system module by module, so the business keeps running on functional parts while fragile parts are replaced with rollback points at every stage." } },
-    { "@type": "Question", "name": "(Scenario: Groningen CTO comparing local freelancers vs a structured pod) Why not just hire another local freelancer to take over the system?", "acceptedAnswer": { "@type": "Answer", "text": "A single freelancer recreates the same bus-factor risk. A Manifera Pod distributes knowledge across a governed team with documentation standards so no single departure can hold the business hostage again." } }
+    { "@type": "Question", "name": "(Scenario: Groningen CTO comparing local freelancers vs a structured pod) Why not just hire another local freelancer to take over the system?", "acceptedAnswer": { "@type": "Answer", "text": "A single freelancer recreates the same bus-factor risk. A Manifera Pod distributes knowledge across a governed team with documentation standards so no single departure can hold the business hostage again." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting to know what an audit report actually contains) What specific deliverables should a custom software audit produce, not just a verbal assessment?", "acceptedAnswer": { "@type": "Answer", "text": "An entry-point inventory, a reverse-engineered database schema diagram, a risk-tiered component list, a characterization test coverage report, and a Bus Factor Score per component." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting to measure whether a rescue has actually reduced risk) How do you measure whether a rescue engagement has actually reduced bus-factor risk?", "acceptedAnswer": { "@type": "Answer", "text": "Track a Bus Factor Score per major component and treat the engagement as successful only once that score rises from one or zero to at least two across every business-critical module." } },
+    { "@type": "Question", "name": "(Scenario: CTO at a Groningen energy-transition company with grid-integration data) Does a custom software audit need to flag anything specific for a Groningen energy-transition or grid-integration system?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, any component touching regulatory reporting or grid-integration data should be flagged separately, since it carries compliance exposure beyond ordinary maintainability risk." } },
+    { "@type": "Question", "name": "(Scenario: CTO whose freelancer left no version control history at all) What if there's no version control history at all, not even a partial one?", "acceptedAnswer": { "@type": "Answer", "text": "That's a starting condition, not a blocker — code archaeology works directly against the current file state, and version control gets introduced as part of the rescue itself." } }
   ]
 }
 </script>

@@ -86,6 +86,10 @@ Tandlægeplatform Aarhus proceeded with a realistically scoped platform build me
 
 Before committing to a dental practice management platform budget, insist on a cost estimate modeled against your realistic projected payer diversity, imaging volume, and target jurisdiction geography, not single-location pilot conditions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic dental practice management platform cost scoping exercise.
 
+## By The Numbers: Where Dental Practice Platform Engineering Budget Actually Goes
+
+For a DSO building a production-ready, multi-location platform, four cost categories account for roughly 75-85% of total engineering spend, with the remainder going to charting UI, reporting, and patient communication tooling. Claims engineering — EDI 837D generation, rejection-taxonomy handling, and deterministic resubmission logic — typically consumes 22-28% of build budget once scoped against realistic payer diversity of 15 or more distinct insurers, since each additional payer adds its own rejection-reason mapping rather than sharing a common one. DICOM imaging infrastructure runs 18-24%, driven far more by retrieval-performance engineering (sub-second load times for in-visit chairside viewing) than by raw storage cost, which is comparatively cheap at cloud object-storage rates. Credentialing-aware scheduling absorbs 15-20%, scaling with the number of distinct procedure-and-license combinations a DSO's staff roster spans rather than with staff headcount itself. Multi-jurisdiction compliance auditing typically runs 12-18%, and is the category most likely to be missing entirely from an initial quote, since a single-location pilot generates zero cross-jurisdiction rule conflicts to surface the requirement. A vendor's quote that doesn't itemize claims and imaging separately, or that scopes compliance auditing as a documentation task rather than an enforced, audit-logged ruleset, is very likely built against pilot-scale assumptions rather than the DSO's real multi-location, multi-payer footprint.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial dental platform estimate) Why do dental practice platform cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ Scheduling needs to reliably synchronize staff-credentialing status against loca
 
 Jurisdiction-aware rule enforcement and audit-trail maintenance for regulatory review requires genuinely ongoing engineering investment as regulation evolves across each specific jurisdiction the DSO operates in.
 
+### (Scenario: DSO leadership deciding between licensing an established practice-management suite and building custom) At what DSO size does building a custom dental practice platform outperform licensing an established suite like Dentrix or Eaglesoft?
+
+Past roughly 15-20 locations with a payer mix broader than the suite's out-of-box clearinghouse connections, per-seat licensing plus clearinghouse fees typically exceeds the amortized cost of a custom claims and imaging build, and established suites rarely expose credentialing-aware scheduling as a configurable rule engine.
+
+### (Scenario: CTO planning migration from Dentrix, Eaglesoft, or another legacy PMS) How do you migrate charting history and DICOM imaging archives from a legacy PMS without losing clinical continuity?
+
+A schema-mapping ETL pass for charting and claims history, combined with a DICOM-to-DICOM archive transfer preserving original study metadata, run during a parallel-operation period so chairside staff can verify no imaging study or chart entry is lost before the legacy system is decommissioned.
+
+### (Scenario: IT lead confirming imaging hardware compatibility before committing budget) Will a custom platform work with our existing chairside X-ray sensors and cone-beam imaging hardware?
+
+Most sensor and cone-beam hardware exposes a standard DICOM or TWAIN interface, so a custom platform's imaging layer typically integrates without replacing hardware, though older proprietary sensor drivers occasionally require a vendor-specific adapter that should be scoped explicitly during discovery rather than assumed to work out of the box.
+
+### (Scenario: CTO estimating timeline before committing to a rollout date) How long does building a production-ready multi-location dental practice platform typically take?
+
+A realistic timeline runs 8-11 months for an MVP covering charting, scheduling, and claims for a moderate payer set, with DICOM imaging infrastructure and multi-jurisdiction compliance auditing typically adding another 3-4 months before a multi-location rollout is genuinely ready.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Jurisdiction-aware rule enforcement and audit-trail maintenance for regulatory r
     { "@type": "Question", "name": "(Scenario: engineering lead scoping claims processing) Why is claims processing harder to scale correctly than it appears in a single-payer pilot?", "acceptedAnswer": { "@type": "Answer", "text": "Real claims complexity depends on payer diversity, requiring genuinely different resubmission handling at real multi-payer scale." } },
     { "@type": "Question", "name": "(Scenario: product lead scoping imaging systems) Why does DICOM imaging storage require more than typical file-attachment handling?", "acceptedAnswer": { "@type": "Answer", "text": "Clinical-grade imaging carries genuine storage and retrieval-performance requirements that scale with multi-location usage." } },
     { "@type": "Question", "name": "(Scenario: CTO planning multi-location scheduling) Why does credentialing-aware scheduling deserve substantial, ongoing engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Scheduling must synchronize staff credentials against location-specific licensing to avoid unauthorized procedure scheduling." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for multi-jurisdiction reach) Why does serving multiple jurisdictions add real compliance auditing cost?", "acceptedAnswer": { "@type": "Answer", "text": "Jurisdiction-aware rule enforcement and audit-trail maintenance require ongoing engineering investment as regulation evolves." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for multi-jurisdiction reach) Why does serving multiple jurisdictions add real compliance auditing cost?", "acceptedAnswer": { "@type": "Answer", "text": "Jurisdiction-aware rule enforcement and audit-trail maintenance require ongoing engineering investment as regulation evolves." } },
+    { "@type": "Question", "name": "(Scenario: DSO leadership deciding between licensing an established practice-management suite and building custom) At what DSO size does building a custom dental practice platform outperform licensing an established suite like Dentrix or Eaglesoft?", "acceptedAnswer": { "@type": "Answer", "text": "Past roughly 15-20 locations with a broad payer mix, per-seat licensing and clearinghouse fees typically exceed the amortized cost of a custom build, and established suites rarely expose configurable credentialing-aware scheduling." } },
+    { "@type": "Question", "name": "(Scenario: CTO planning migration from Dentrix, Eaglesoft, or another legacy PMS) How do you migrate charting history and DICOM imaging archives from a legacy PMS without losing clinical continuity?", "acceptedAnswer": { "@type": "Answer", "text": "A schema-mapping ETL pass plus a DICOM-to-DICOM archive transfer preserving study metadata, run during a parallel-operation period before decommissioning the legacy system." } },
+    { "@type": "Question", "name": "(Scenario: IT lead confirming imaging hardware compatibility before committing budget) Will a custom platform work with our existing chairside X-ray sensors and cone-beam imaging hardware?", "acceptedAnswer": { "@type": "Answer", "text": "Most hardware exposes a standard DICOM or TWAIN interface so integration is typically straightforward, though older proprietary sensors may need a vendor-specific adapter scoped during discovery." } },
+    { "@type": "Question", "name": "(Scenario: CTO estimating timeline before committing to a rollout date) How long does building a production-ready multi-location dental practice platform typically take?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 8-11 months for an MVP covering charting, scheduling, and claims, plus another 3-4 months for DICOM imaging infrastructure and multi-jurisdiction compliance auditing." } }
   ]
 }
 </script>

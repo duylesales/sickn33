@@ -76,6 +76,12 @@ Run a five-engineer engagement over six months and the gap is stark: roughly €
 
 A gut preference for the local, familiar option is an expensive habit once the CFO runs the same numbers independently. Build the five-variable comparison before the board meeting, not during the follow-up questions. [Build your comparison with Manifera](https://www.manifera.com/contact-us/).
 
+## Contract Structures: Matching the Model to the Engagement Type
+
+The day-rate comparison assumes a time-and-materials structure, but software outsourcing engagements come in three common contract shapes and picking the wrong one erodes the cost advantage regardless of the underlying rate. Time-and-materials fits evolving scope and is the standard default for both Dutch and Vietnam-based outsourcing when requirements will change during the build — it's the most transparent model but shifts scope-creep risk onto the client if sprint discipline is weak. Fixed-price fits a tightly specified, well-understood deliverable and shifts execution risk onto the vendor, but only works when the spec is genuinely locked; a fixed-price contract against a still-evolving spec incentivizes the vendor to protect margin through corner-cutting rather than quality, regardless of which country the team sits in. Outcome-based or milestone-based pricing — tying payment to shipped, accepted deliverables rather than hours or a fixed sum — is the least common but the strongest governance fit for a first offshore engagement, since it aligns the vendor's incentive directly with the client's actual success criteria rather than time logged.
+
+For a Netherlands-based CTO comparing a software companies in Netherlands quote against a Vietnam software outsourcing company quote, insist both proposals use the same contract structure before comparing the headline number — a fixed-price Dutch quote against a time-and-materials Vietnam quote isn't a real comparison, since the two carry fundamentally different risk allocations regardless of price.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO presenting a day-rate comparison to the board) What's a realistic day-rate differential between Dutch outsourcing and a governed Vietnam pod?
@@ -98,6 +104,22 @@ A Vietnam pod typically scales faster, within one to two weeks, drawing from a b
 
 Run a scoped pilot with the governed Vietnam pod alongside continued evaluation of the local proposal, so the comparison is based on delivered results rather than proposal promises alone.
 
+### (Scenario: CTO comparing two quotes structured on different commercial terms) Both proposals quote different day rates, but one is fixed-price and one is time-and-materials — how do we compare them fairly?
+
+Normalize both to the same contract structure before comparing headline numbers — a fixed-price quote and a time-and-materials quote carry fundamentally different risk allocations, so ask the higher-risk vendor to requote under the other model, or model the fixed-price quote's realistic scope-change buffer explicitly.
+
+### (Scenario: CTO whose first offshore engagement needs the strongest incentive alignment) Which contract model best aligns a Vietnam software outsourcing company's incentives with our actual success criteria?
+
+Outcome-based or milestone-based pricing, tying payment to shipped and accepted deliverables rather than hours logged, gives the strongest incentive alignment for a first engagement, though it requires clearly defined acceptance criteria upfront to work well.
+
+### (Scenario: CTO whose spec will likely change during the engagement) We expect our requirements to evolve during the build — does that rule out fixed-price entirely?
+
+Not entirely, but it argues strongly for time-and-materials or a hybrid structure with a fixed core scope plus T&M for defined change requests, since a fixed-price contract against a moving spec tends to produce corner-cutting as the vendor protects margin.
+
+### (Scenario: CTO deciding whether contract structure differs by country) Does the same contract-structure logic apply whether we're comparing software companies in Netherlands or a Vietnam-based option?
+
+Yes — the risk allocation logic of time-and-materials, fixed-price, and outcome-based pricing is the same regardless of where the team sits; the mistake to avoid is comparing quotes built on different structures as if the headline number alone told the full story.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,7 +129,11 @@ Run a scoped pilot with the governed Vietnam pod alongside continued evaluation 
     { "@type": "Question", "name": "(Scenario: CTO worried the risk profile is meaningfully worse offshore) Is the legal and risk position actually worse with a Vietnam pod versus local Dutch outsourcing?", "acceptedAnswer": { "@type": "Answer", "text": "Not significantly, when the pod is governed by a Dutch entity under EU-familiar law, since the legal recourse is comparable and contracted continuity often exceeds local guarantees." } },
     { "@type": "Question", "name": "(Scenario: CTO deciding when local outsourcing is still the better choice) When does local Dutch outsourcing still make more sense than an offshore pod?", "acceptedAnswer": { "@type": "Answer", "text": "For engagements requiring frequent, in-person stakeholder collaboration where proximity itself accelerates the work meaningfully." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to scale capacity quickly) Which option scales faster if we need to double our outsourced capacity mid-project?", "acceptedAnswer": { "@type": "Answer", "text": "A Vietnam pod typically scales faster, within one to two weeks, drawing from a broader talent base than the tight Dutch labor market." } },
-    { "@type": "Question", "name": "(Scenario: CTO wanting to validate the comparison before committing) How should we validate this comparison before committing to a full engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Run a scoped pilot with the governed Vietnam pod alongside continued evaluation of the local proposal, so the comparison is based on delivered results rather than promises." } }
+    { "@type": "Question", "name": "(Scenario: CTO wanting to validate the comparison before committing) How should we validate this comparison before committing to a full engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Run a scoped pilot with the governed Vietnam pod alongside continued evaluation of the local proposal, so the comparison is based on delivered results rather than promises." } },
+    { "@type": "Question", "name": "(Scenario: CTO comparing two quotes structured on different commercial terms) Both proposals quote different day rates, but one is fixed-price and one is time-and-materials — how do we compare them fairly?", "acceptedAnswer": { "@type": "Answer", "text": "Normalize both to the same contract structure before comparing headline numbers, since fixed-price and time-and-materials carry fundamentally different risk allocations." } },
+    { "@type": "Question", "name": "(Scenario: CTO whose first offshore engagement needs the strongest incentive alignment) Which contract model best aligns a Vietnam software outsourcing company's incentives with our actual success criteria?", "acceptedAnswer": { "@type": "Answer", "text": "Outcome-based or milestone-based pricing, tying payment to shipped and accepted deliverables rather than hours logged, gives the strongest incentive alignment for a first engagement." } },
+    { "@type": "Question", "name": "(Scenario: CTO whose spec will likely change during the engagement) We expect our requirements to evolve during the build — does that rule out fixed-price entirely?", "acceptedAnswer": { "@type": "Answer", "text": "Not entirely, but it argues for time-and-materials or a hybrid with a fixed core plus T&M for change requests, since fixed-price against a moving spec tends to produce corner-cutting." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding whether contract structure differs by country) Does the same contract-structure logic apply whether we're comparing software companies in Netherlands or a Vietnam-based option?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — the risk allocation logic is the same regardless of where the team sits; avoid comparing quotes built on different structures as if the headline number told the full story." } }
   ]
 }
 </script>

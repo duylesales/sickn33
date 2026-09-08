@@ -72,6 +72,10 @@ A mid-sized full stack engagement running a four-to-six engineer pod over twelve
 
 If your board is asking you to defend a full stack outsourcing decision on more than day rate, bring the governance question, not just the invoice. [Talk to Manifera about your comparison](https://www.manifera.com/contact-us/).
 
+## Tech Stack Coverage: What "Full Stack" Should Actually Mean in the Contract
+
+"Full stack" is a vague enough term that two proposals claiming to cover it can differ by an entire layer of infrastructure ownership, and CTOs rarely catch the gap until a deployment issue surfaces mid-project. Before signing either quote, pin down four things explicitly: frontend framework and version commitments (React 18+ versus a legacy jQuery-era codebase inherited from a prior vendor carries a materially different hourly rate, even at the same headline day rate); backend and database ownership, including whether the vendor is responsible for schema migrations and query performance tuning or only feature-level CRUD code; DevOps and infrastructure scope, specifically whether CI/CD pipeline maintenance, container orchestration, and cloud cost optimization sit inside the day rate or bill separately as a specialized add-on most Dutch agencies quote at a 20-30% premium; and a minimum automated test coverage target, typically 70-80% for business-critical paths, written into the definition of "done" rather than left to the delivery team's discretion. A properly governed Vietnam pod should name all four in the statement of work with the same specificity a Dutch agency's proposal claims but frequently doesn't itemize either.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO justifying a Vietnam pod choice to a skeptical board) How do we prove governance is comparable when the team isn't physically local?
@@ -94,6 +98,22 @@ A Vietnam-based pod, backed by a larger regional talent base, can typically scal
 
 Ask both for a named team with verifiable seniority, a documented governance and escalation structure, and a stated scaling timeline if requirements grow. Comparing those three answers side by side is more useful to a board than comparing day rates alone.
 
+### (Scenario: CTO reviewing a vague full-stack SOW) What should "full stack" actually mean in an outsourcing statement of work?
+
+Name four things explicitly: frontend framework and version, backend and database ownership (including schema migrations and query tuning), DevOps and infrastructure scope, and a minimum test coverage target. A vague "full stack" line item without these specifics is where scope disputes originate mid-project.
+
+### (Scenario: CTO worried about DevOps being billed separately) Is DevOps and CI/CD pipeline maintenance included in a standard full stack outsourcing day rate?
+
+Not always — confirm it explicitly. Many Dutch agencies quote DevOps and infrastructure work as a specialized add-on at a 20-30% premium over the base day rate, which changes the real comparison if one vendor's quote already includes it and the other doesn't.
+
+### (Scenario: CTO setting quality bar in contract) What test coverage target should be written into the contract's definition of done?
+
+70-80% automated test coverage on business-critical paths is a reasonable floor, written explicitly into the definition of "done" rather than left to the delivery team's discretion, so it's enforceable rather than aspirational.
+
+### (Scenario: CTO inheriting a legacy codebase) Does a legacy frontend framework change the outsourcing rate compared to a modern stack?
+
+Yes — a legacy jQuery-era or unsupported-framework codebase typically commands a higher effective hourly rate than a modern React or equivalent stack, even at the same headline day rate, because unfamiliar legacy patterns slow delivery regardless of engineer seniority.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +123,11 @@ Ask both for a named team with verifiable seniority, a documented governance and
     { "@type": "Question", "name": "(Scenario: CTO comparing headline day rates) Is comparing day rates directly a fair way to evaluate the two options?", "acceptedAnswer": { "@type": "Answer", "text": "Not on its own. Compare cost per verified-senior-hour instead, since a blended local day rate can hide a junior-heavy team just as easily as an offshore rate can." } },
     { "@type": "Question", "name": "(Scenario: CTO worried about losing collaboration quality without physical proximity) Does a 4-6 hour timezone overlap actually work for a full stack build?", "acceptedAnswer": { "@type": "Answer", "text": "Yes for scoped, architecturally-defined engagements, which cover most full stack outsourcing scenarios. It works less well for highly exploratory early-stage product discovery still being defined in person." } },
     { "@type": "Question", "name": "(Scenario: CTO anticipating a roadmap acceleration) What happens if we need to scale the team up mid-engagement?", "acceptedAnswer": { "@type": "Answer", "text": "A Vietnam-based pod, backed by a larger regional talent base, can typically scale from a few engineers to double that within weeks, materially faster than a same-market local agency." } },
-    { "@type": "Question", "name": "(Scenario: CTO deciding how to structure the comparison for the board) What should we actually ask both vendors before deciding?", "acceptedAnswer": { "@type": "Answer", "text": "Ask both for a named team with verifiable seniority, a documented governance and escalation structure, and a stated scaling timeline if requirements grow." } }
+    { "@type": "Question", "name": "(Scenario: CTO deciding how to structure the comparison for the board) What should we actually ask both vendors before deciding?", "acceptedAnswer": { "@type": "Answer", "text": "Ask both for a named team with verifiable seniority, a documented governance and escalation structure, and a stated scaling timeline if requirements grow." } },
+    { "@type": "Question", "name": "(Scenario: CTO reviewing a vague full-stack SOW) What should \"full stack\" actually mean in an outsourcing statement of work?", "acceptedAnswer": { "@type": "Answer", "text": "Frontend framework and version, backend and database ownership including schema migrations, DevOps and infrastructure scope, and a minimum test coverage target, all named explicitly." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about DevOps being billed separately) Is DevOps and CI/CD pipeline maintenance included in a standard full stack outsourcing day rate?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — many Dutch agencies quote it as a specialized add-on at a 20-30% premium over the base rate, so confirm inclusion explicitly before comparing quotes." } },
+    { "@type": "Question", "name": "(Scenario: CTO setting quality bar in contract) What test coverage target should be written into the contract's definition of done?", "acceptedAnswer": { "@type": "Answer", "text": "70-80% automated test coverage on business-critical paths, written explicitly into the definition of \"done\" rather than left to the delivery team's discretion." } },
+    { "@type": "Question", "name": "(Scenario: CTO inheriting a legacy codebase) Does a legacy frontend framework change the outsourcing rate compared to a modern stack?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — a legacy or unsupported-framework codebase typically commands a higher effective hourly rate than a modern stack, even at the same headline day rate." } }
   ]
 }
 </script>

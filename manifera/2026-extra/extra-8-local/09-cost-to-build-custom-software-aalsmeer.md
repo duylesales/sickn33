@@ -86,6 +86,19 @@ The number that should worry a CFO more than the headline quote is the variance 
 
 If your current vendor quote is one bundled number with no breakdown by cost driver, that's not a complete quote — it's a placeholder. [Request Manifera's ROI calculator and itemized cost model](https://www.manifera.com/contact-us/) before you take a number to your board.
 
+## Implementation Checklist: Vetting a Custom Software Quote Before You Sign
+
+Before a CFO in Aalsmeer signs off on a custom software pricing proposal, run the quote through this checklist rather than trusting the headline number alone:
+
+- **Rate card by role, not a blended average.** Demand separate day rates for backend, frontend, QA, and tech lead — a blended rate hides whether you're paying senior prices for junior staffing.
+- **Named team roster in the SOW appendix.** Insist on named engineers with seniority levels and years of experience attached, with a minimum senior-to-junior ratio (at least one senior per three engineers) written into the contract, not promised verbally.
+- **Payment tied to sprint-verified deliverables**, not calendar dates — e.g., 15% at architecture sign-off, then equal installments per two-sprint cycle, so invoices never outrun verified progress.
+- **IP transfer clause in writing.** Full source code and IP ownership should transfer to the client on final payment; some offshore vendors default to shared or licensed rights unless this is stated explicitly.
+- **Post-launch warranty period defined**, typically 30-90 days of defect fixes at no additional cost, separate from ongoing maintenance retainer pricing.
+- **Exit and code-escrow terms** specifying how the client retrieves the full codebase, documentation, and infrastructure-as-code if the engagement ends early.
+
+A quote missing three or more of these items isn't a lean quote — it's an incomplete one, and the gaps are exactly where month-four invoice surprises originate.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO comparing three differently structured vendor quotes) How do I compare vendor quotes that are structured completely differently?
@@ -108,6 +121,22 @@ Present a range built from the five cost drivers plus a documented contingency f
 
 Not when the rate difference reflects genuine cost-of-living and market economics rather than reduced seniority — Manifera's Vietnam-based engineers work at the same seniority bands as Amsterdam-based teams, with the cost difference coming from location economics, not experience level.
 
+### (Scenario: CFO negotiating payment milestones for a custom software contract) How should payment milestones be structured for a custom software build?
+
+Tie invoices to sprint-verified deliverables rather than calendar dates — for example, 15% at architecture sign-off, then equal installments per two-sprint cycle — so payment never precedes verified, working progress.
+
+### (Scenario: CFO handling VAT/BTW treatment on an offshore development invoice) Does working with a Vietnam-based pod complicate BTW/VAT on the invoice?
+
+No — Manifera invoices through its Amsterdam entity under standard Dutch B2B VAT rules, so the invoice looks and reconciles exactly like any other Dutch vendor's, with no cross-border VAT reclaim for the CFO to model.
+
+### (Scenario: CFO concerned about IP ownership after project completion) Who owns the source code and IP once the custom software project is delivered?
+
+Full IP transfer to the client on final payment should be an explicit contract clause, not an assumption — require it in writing before signing, since not every offshore vendor defaults to full ownership transfer.
+
+### (Scenario: CFO evaluating vendor team composition before approving a quote) How do I verify a vendor isn't quoting senior rates but staffing mostly junior developers?
+
+Request named team members with seniority levels and years of experience listed in the SOW appendix, and require a minimum senior-to-junior staffing ratio written into the contract rather than promised verbally.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +146,11 @@ Not when the rate difference reflects genuine cost-of-living and market economic
     { "@type": "Question", "name": "(Scenario: CFO worried about scope creep inflating a fixed-price contract) How do we protect a fixed-price budget from scope creep?", "acceptedAnswer": { "@type": "Answer", "text": "Insist on a documented change-request process with cost impact quoted before approval, and require sprint-level velocity-to-budget tracking rather than milestone-only reporting." } },
     { "@type": "Question", "name": "(Scenario: CFO deciding whether to skip QA to reduce the initial quote) Is it safe to reduce cost by cutting the dedicated QA role?", "acceptedAnswer": { "@type": "Answer", "text": "It reduces the initial invoice but transfers that cost to post-launch defect remediation, which typically runs 1.5-2x higher than the QA cost it replaced." } },
     { "@type": "Question", "name": "(Scenario: CFO building a board-ready business case) What should I actually present to the board as the total cost figure?", "acceptedAnswer": { "@type": "Answer", "text": "Present a range built from the five cost drivers plus a documented contingency for scope changes, which is more defensible than a single precise number with no visible methodology." } },
-    { "@type": "Question", "name": "(Scenario: CFO evaluating whether offshore pricing sacrifices quality) Does a lower day rate from an offshore pod mean lower engineering quality?", "acceptedAnswer": { "@type": "Answer", "text": "Not when the rate difference reflects location economics rather than reduced seniority. Manifera's Vietnam-based engineers work at the same seniority bands as Amsterdam-based teams." } }
+    { "@type": "Question", "name": "(Scenario: CFO evaluating whether offshore pricing sacrifices quality) Does a lower day rate from an offshore pod mean lower engineering quality?", "acceptedAnswer": { "@type": "Answer", "text": "Not when the rate difference reflects location economics rather than reduced seniority. Manifera's Vietnam-based engineers work at the same seniority bands as Amsterdam-based teams." } },
+    { "@type": "Question", "name": "(Scenario: CFO negotiating payment milestones for a custom software contract) How should payment milestones be structured for a custom software build?", "acceptedAnswer": { "@type": "Answer", "text": "Tie invoices to sprint-verified deliverables rather than calendar dates, for example 15% at architecture sign-off then equal installments per two-sprint cycle, so payment never precedes verified progress." } },
+    { "@type": "Question", "name": "(Scenario: CFO handling VAT/BTW treatment on an offshore development invoice) Does working with a Vietnam-based pod complicate BTW/VAT on the invoice?", "acceptedAnswer": { "@type": "Answer", "text": "No, Manifera invoices through its Amsterdam entity under standard Dutch B2B VAT rules, so the invoice reconciles like any other Dutch vendor's with no cross-border VAT reclaim needed." } },
+    { "@type": "Question", "name": "(Scenario: CFO concerned about IP ownership after project completion) Who owns the source code and IP once the custom software project is delivered?", "acceptedAnswer": { "@type": "Answer", "text": "Full IP transfer to the client on final payment should be an explicit contract clause, required in writing before signing, since not every offshore vendor defaults to full ownership transfer." } },
+    { "@type": "Question", "name": "(Scenario: CFO evaluating vendor team composition before approving a quote) How do I verify a vendor isn't quoting senior rates but staffing mostly junior developers?", "acceptedAnswer": { "@type": "Answer", "text": "Request named team members with seniority levels and years of experience in the SOW appendix, and require a minimum senior-to-junior staffing ratio written into the contract." } }
   ]
 }
 </script>

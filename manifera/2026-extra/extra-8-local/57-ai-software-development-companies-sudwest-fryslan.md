@@ -89,6 +89,18 @@ Manifera rebuilt the pipeline with automated drift monitoring, a quarterly retra
 
 An AI software development engagement built with monitoring, retraining, and integration architected in from the start typically runs €42,000 to €58,000 for an initial production-grade deployment, delivered over roughly ten to fourteen weeks by a dedicated Autonomous Pod. A demo-only engagement can look 30-35% cheaper on the initial quote, but a model that decays unmonitored and untrained routinely costs more within the first year in lost decision quality and an eventual, more expensive rebuild than the production-grade approach would have cost from the outset. [Book a senior architect call to compare your shortlist against a production-readiness checklist](https://www.manifera.com/contact-us/).
 
+## The Five-Question Reference Check That Exposes a Demo-Stage Vendor
+
+Before signing with any vendor on the shortlist, put these five questions to a named reference, and listen for a specific, concrete answer rather than a reassuring generality:
+
+1. **"How long has this specific model been in production?"** A confident "it launched" answer without a duration is a red flag — ask for months, not a launch date.
+2. **"What was the last thing that triggered a retraining cycle, and how was it detected?"** A vendor with real drift monitoring names a specific metric and threshold; a vendor without it describes a manual, ad hoc discovery.
+3. **"Who owns the model now — your team or ours?"** An unclear or contested answer means the maintenance handoff was never actually defined.
+4. **"What happened the first time the model's accuracy visibly declined?"** This surfaces whether the vendor had a process or scrambled reactively.
+5. **"Can we see the actual monitoring dashboard, not a screenshot from the sales deck?"** A vendor with genuine production monitoring can show it live; one without it will stall or redirect.
+
+A vendor whose reference gives vague or evasive answers to two or more of these questions is a demo-stage vendor regardless of how the sales pitch sounded.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO with a shortlist of AI software development companies and no way to compare them fairly) What's the single best way to compare competing AI vendors before signing?
@@ -111,6 +123,22 @@ Ask for clear documentation of data residency, provenance, and retention policy,
 
 It's very rarely model accuracy — it's almost always a missing integration plan, where the model's output never reaches the people or systems that would actually act on it, so it quietly goes unused after the initial demo excitement fades.
 
+### (Scenario: CTO wanting a minimum bar for reference checks before shortlisting an AI vendor) How many production AI deployments should a vendor have before being trusted with a first engagement?
+
+Ask for at least two to three verifiable references where the model has been in live production for over a year, not just launched — surviving month one is a low bar, and a vendor who can't produce this is effectively asking to use your project as their first real production test.
+
+### (Scenario: CTO in Sneek's marine-technology sector asking about applying AI vendor evaluation to sensor/IoT data specific to marine equipment) Does evaluating an AI vendor differ for a marine-technology or IoT-sensor use case versus a typical business application?
+
+Yes — for marine or industrial IoT applications, specifically ask how the vendor handles intermittent connectivity and edge-inference fallback when a vessel or remote sensor loses signal, since a cloud-only monitoring architecture that assumes constant connectivity is a common gap that only surfaces once deployed offshore.
+
+### (Scenario: CTO negotiating contract structure for ongoing retraining, unsure whether it should be fixed-fee or retainer) Should ongoing model retraining be structured as a fixed fee or an ongoing retainer in the contract?
+
+A retainer tied to a defined retraining cadence, such as quarterly, with a capped scope is more predictable than a one-time fixed fee, since retraining needs recur indefinitely as real-world data drifts and a one-time fee gives the vendor no ongoing incentive to keep monitoring quality after invoice.
+
+### (Scenario: CTO worried about vendor lock-in and model portability if the relationship ends) How do we avoid being locked into one AI vendor if we're not happy with the engagement later?
+
+Require model weights, training code, and documentation to be delivered in an open, portable format rather than a proprietary platform-locked pipeline, as a standard contract deliverable, so switching vendors later means a transition, not a full rebuild from zero.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -120,7 +148,11 @@ It's very rarely model accuracy — it's almost always a missing integration pla
     { "@type": "Question", "name": "(Scenario: CTO who received a surprisingly low quote from an AI vendor) Why might the cheapest AI development quote turn out to be the most expensive option?", "acceptedAnswer": { "@type": "Answer", "text": "A low quote frequently excludes monitoring, retraining, and governance as separate, unbudgeted work, which then surfaces later as scope creep or an expensive rebuild." } },
     { "@type": "Question", "name": "(Scenario: CTO worried about a model's performance degrading after launch) How do we make sure an AI model doesn't quietly lose accuracy after it goes live?", "acceptedAnswer": { "@type": "Answer", "text": "Require automated drift monitoring with defined alert thresholds and a budgeted retraining cadence as explicit, scoped deliverables in the vendor proposal." } },
     { "@type": "Question", "name": "(Scenario: CTO evaluating AI vendors for GDPR compliance) What should a Dutch or EU company ask an AI vendor about data governance before signing?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for clear documentation of data residency, provenance, and retention policy, and a defensible answer about exactly what data trained the model." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to avoid an AI pilot that never reaches real usage) What's the most common reason AI pilots never reach sustained production use?", "acceptedAnswer": { "@type": "Answer", "text": "It's very rarely model accuracy — it's almost always a missing integration plan, where the model's output never reaches the people or systems that would act on it." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to avoid an AI pilot that never reaches real usage) What's the most common reason AI pilots never reach sustained production use?", "acceptedAnswer": { "@type": "Answer", "text": "It's very rarely model accuracy — it's almost always a missing integration plan, where the model's output never reaches the people or systems that would act on it." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting a minimum bar for reference checks before shortlisting an AI vendor) How many production AI deployments should a vendor have before being trusted with a first engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for at least two to three verifiable references where the model has been in live production for over a year, not just launched, since surviving month one is a low bar." } },
+    { "@type": "Question", "name": "(Scenario: CTO in Sneek's marine-technology sector asking about applying AI vendor evaluation to sensor/IoT data specific to marine equipment) Does evaluating an AI vendor differ for a marine-technology or IoT-sensor use case versus a typical business application?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, for marine or industrial IoT applications, specifically ask how the vendor handles intermittent connectivity and edge-inference fallback when a vessel or remote sensor loses signal." } },
+    { "@type": "Question", "name": "(Scenario: CTO negotiating contract structure for ongoing retraining, unsure whether it should be fixed-fee or retainer) Should ongoing model retraining be structured as a fixed fee or an ongoing retainer in the contract?", "acceptedAnswer": { "@type": "Answer", "text": "A retainer tied to a defined retraining cadence, such as quarterly, with a capped scope is more predictable than a one-time fixed fee, since retraining needs recur indefinitely." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about vendor lock-in and model portability if the relationship ends) How do we avoid being locked into one AI vendor if we're not happy with the engagement later?", "acceptedAnswer": { "@type": "Answer", "text": "Require model weights, training code, and documentation delivered in an open, portable format rather than a proprietary platform-locked pipeline, as a standard contract deliverable." } }
   ]
 }
 </script>

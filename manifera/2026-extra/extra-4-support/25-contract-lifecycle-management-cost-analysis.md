@@ -86,6 +86,10 @@ Manifera's Amsterdam team conducted a structured cost scoping exercise across al
 
 Before committing to a CLM project budget, insist on a cost estimate scoped against your organization's actual contract data volume, format inconsistency, and approval policy complexity — not one validated primarily against clean demo-stage functionality that understates real implementation cost. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic CLM cost scoping exercise.
 
+## By the Numbers: A Realistic CLM Budget Split Across the Four Cost Categories
+
+On a mid-sized custom software solution scoped for an organization with 1,000-5,000 existing contracts in mixed formats, a realistic budget allocation looks roughly like this: metadata extraction and structuring, 25-35% of total project cost (the single largest and most volume-sensitive category); approval workflow engineering, 15-20%; system integration with CRM/ERP, 15-20% of initial build plus an ongoing 8-12% of that integration cost annually for maintenance; search and retrieval infrastructure, 12-18%; with the remaining balance covering core CLM feature development (templates, e-signature, repository UI) that most initial quotes focus on almost exclusively. A useful diagnostic for any custom software development proposal: if metadata extraction and search combined account for less than 25% of total quoted cost on a migration-heavy project, the estimate was very likely built from demo-stage assumptions rather than the organization's actual contract volume. For a rough dollar anchor, a mid-sized CLM build handling a few thousand migrated contracts with meaningful approval-workflow complexity typically lands in the €150,000-€400,000 range for a first phase; organizations attempting the full historical migration and complete workflow build in one pass commonly see that figure run 1.5-2x higher once real data complexity surfaces mid-project.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial CLM cost estimate) Why do CLM project cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ No — integrations with connected systems like CRM and ERP require ongoing main
 
 Test the proposed system's metadata extraction, workflow logic, and search capability against your organization's actual, messy sample data early in scoping, rather than relying on validation against clean demo data that doesn't represent real production complexity.
 
+### (Scenario: CTO wanting a rough dollar figure) What's a realistic total budget range for a mid-sized custom CLM system with a few thousand migrated contracts?
+
+Roughly €150,000-€400,000 for a first, realistically phased build handling a few thousand contracts with meaningful approval-workflow complexity — organizations attempting a complete historical migration and full workflow build in a single pass commonly see that figure run 1.5-2x higher once real data complexity surfaces mid-project.
+
+### (Scenario: CTO checking if a quote is realistic) What percentage of a CLM quote should metadata extraction and search realistically represent?
+
+Combined, roughly 35-50% of total cost on a migration-heavy project; a quote where these two categories together fall under 25% was very likely built from clean demo-stage assumptions rather than your organization's actual contract volume and format inconsistency.
+
+### (Scenario: engineering lead comparing buy vs. build) Is it cheaper to buy an existing CLM software product than build a custom software solution?
+
+An off-the-shelf software product is usually cheaper upfront, but the same underestimated categories — metadata extraction, workflow complexity, integration — still apply as configuration and customization cost on top of the license fee, so the total cost gap between buying and building narrows considerably once those categories are honestly scoped.
+
+### (Scenario: VP Engineering budgeting for ongoing integration maintenance) How much should we budget annually for ongoing CLM integration maintenance after launch?
+
+Plan for roughly 8-12% of the original integration build cost annually, covering adjustments as the connected CRM or ERP systems evolve — treating this as a one-time cost is one of the most common CLM budgeting mistakes.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Test the proposed system's metadata extraction, workflow logic, and search capab
     { "@type": "Question", "name": "(Scenario: VP Engineering budgeting for contract migration) Why does migrating existing contracts into a CLM system cost more than building for new contracts going forward?", "acceptedAnswer": { "@type": "Answer", "text": "Existing contracts require metadata extraction from inconsistently formatted historical documents, proportional to volume and format inconsistency." } },
     { "@type": "Question", "name": "(Scenario: engineering lead scoping approval workflow) Why is CLM approval workflow more expensive to build than it initially appears?", "acceptedAnswer": { "@type": "Answer", "text": "Real approval routing often depends on value, type, and risk with parallel and conditional logic, more complex than a generic linear chain." } },
     { "@type": "Question", "name": "(Scenario: IT director planning integration budget) Should CLM system integration be budgeted as a one-time cost?", "acceptedAnswer": { "@type": "Answer", "text": "No, integrations require ongoing maintenance as connected systems evolve and should be budgeted as an ongoing cost category." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to get an accurate cost estimate) What's the most reliable way to get an accurate CLM cost estimate before committing?", "acceptedAnswer": { "@type": "Answer", "text": "Test the proposed system against your organization's actual messy sample data early, rather than relying on clean demo validation." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to get an accurate cost estimate) What's the most reliable way to get an accurate CLM cost estimate before committing?", "acceptedAnswer": { "@type": "Answer", "text": "Test the proposed system against your organization's actual messy sample data early, rather than relying on clean demo validation." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting a rough dollar figure) What's a realistic total budget range for a mid-sized custom CLM system with a few thousand migrated contracts?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly €150,000-€400,000 for a first, realistically phased build; a single full-migration pass often runs 1.5-2x higher." } },
+    { "@type": "Question", "name": "(Scenario: CTO checking if a quote is realistic) What percentage of a CLM quote should metadata extraction and search realistically represent?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 35-50% combined on a migration-heavy project; under 25% suggests the quote was built from clean demo-stage assumptions." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead comparing buy vs. build) Is it cheaper to buy an existing CLM software product than build a custom software solution?", "acceptedAnswer": { "@type": "Answer", "text": "Usually cheaper upfront, but the same underestimated categories apply as configuration cost on top, narrowing the total cost gap considerably." } },
+    { "@type": "Question", "name": "(Scenario: VP Engineering budgeting for ongoing integration maintenance) How much should we budget annually for ongoing CLM integration maintenance after launch?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 8-12% of the original integration build cost annually, since treating integration as a one-time cost is a common budgeting mistake." } }
   ]
 }
 </script>

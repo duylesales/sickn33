@@ -86,6 +86,10 @@ Autoteilen Graz proceeded with a realistically scoped backend build meeting its 
 
 Before committing to a car-sharing platform budget, insist on a cost estimate modeled against your realistic projected member density and actual target market geography, not small-scale internal testing conditions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic car-sharing platform cost scoping exercise.
 
+## Technical Deep-Dive: Distributed Locking for the "Last Car in the Neighborhood" Problem
+
+The specific technical mechanism that determines whether a reservation engine holds up under real member density is how it locks a vehicle the instant a reservation attempt begins, not just when it completes. A naive design checks vehicle availability, shows the member a "reserve" button, and only writes the reservation when they confirm — leaving a window, often several seconds while a member reviews trip details, during which a second member can pass the same availability check and both believe they've reserved the last available car in a high-demand neighborhood during a Friday-evening peak. The correct architecture places a short-lived distributed lock (typically Redis-based, with a lock timeout of 30-90 seconds matching the realistic reservation-confirmation window) on the vehicle the moment the first member's reservation flow begins, releasing it automatically if they abandon the flow, so a second member's availability check genuinely reflects the vehicle's real-time claimed status rather than a stale read from before the first member started reserving. This differs meaningfully from a simple database transaction, because the lock needs to span the entire multi-step reservation UI flow, not just the final database write — a member reviewing insurance options or entering payment details is still holding a claim on that vehicle. Fleets with high per-vehicle utilization in dense urban neighborhoods should specifically load-test this exact scenario — two members reserving the single available car in a small radius within the same 10-second window — since it's the collision a small test fleet with low utilization essentially never generates.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial car-sharing platform estimate) Why do car-sharing platform cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ Structured documentation, liability-rule application, and reliable handoff to cl
 
 Motor-insurance and liability rules genuinely vary by country, requiring genuinely compliance-aware, multi-region infrastructure beyond a single-city deployment.
 
+### (Scenario: operator deciding between an established fleet-management platform and a custom build) When does a custom car-sharing platform outperform an established fleet-management SaaS product?
+
+Once an operator serves multiple countries with genuinely divergent motor-insurance and liability rules, or runs high enough per-vehicle utilization that reservation contention becomes routine, established SaaS products typically lack configurable distributed-locking reservation logic and per-country liability rulesets, making a custom build necessary rather than optional.
+
+### (Scenario: engineering lead sizing the reservation-engine team before committing budget) How many engineers does a production-ready distributed-locking reservation engine typically require?
+
+Roughly 3-4 dedicated engineers for the distributed-locking reservation core alone, separate from the 5-7 engineers typically needed across telematics ingestion and damage-claim workflow for a mid-size fleet.
+
+### (Scenario: CTO estimating timeline before committing to a launch date) How long does building a production-ready car-sharing platform typically take?
+
+A realistic timeline runs 7-10 months for an MVP covering distributed-locking reservations and telematics ingestion for a single city, with cross-border compliance infrastructure and structured damage-claim workflow typically adding another 3-5 months before a multi-city launch is genuinely ready.
+
+### (Scenario: risk lead scoping liability determination after a reported incident) How does the platform determine member liability when a telematics-detected incident isn't confirmed by the member's own report?
+
+The claims workflow correlates the telematics-detected event (impact sensor data, sudden deceleration, diagnostic fault codes) with the reservation's active time window and any photo documentation on file, applying the destination jurisdiction's specific liability rule to the correlated evidence rather than defaulting to the member's self-report alone.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Motor-insurance and liability rules genuinely vary by country, requiring genuine
     { "@type": "Question", "name": "(Scenario: engineering lead scoping the reservation engine) Why is real-time reservation harder to scale correctly than it appears in small-scale testing?", "acceptedAnswer": { "@type": "Answer", "text": "High-demand vehicles face real concurrent reservation attempts, requiring atomic locking different from small-fleet behavior." } },
     { "@type": "Question", "name": "(Scenario: operations lead scoping telematics) Why does telematics ingestion require more than a typical data-feed integration?", "acceptedAnswer": { "@type": "Answer", "text": "Real fleet data volume and connectivity gaps require genuinely robust, reliable ingestion and vehicle-health monitoring." } },
     { "@type": "Question", "name": "(Scenario: CTO planning damage-claim handling) Why does damage-claim workflow deserve substantial, ongoing engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Structured documentation and liability handling require more than a simple support-ticket system." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for cross-border expansion) Why does serving multiple countries add real backend infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Motor-insurance and liability rules vary by country, requiring compliance-aware, multi-region infrastructure." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for cross-border expansion) Why does serving multiple countries add real backend infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Motor-insurance and liability rules vary by country, requiring compliance-aware, multi-region infrastructure." } },
+    { "@type": "Question", "name": "(Scenario: operator deciding between an established fleet-management platform and a custom build) When does a custom car-sharing platform outperform an established fleet-management SaaS product?", "acceptedAnswer": { "@type": "Answer", "text": "Once serving multiple countries with divergent liability rules or running high enough utilization for routine reservation contention, SaaS products typically lack configurable distributed-locking and per-country rulesets." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead sizing the reservation-engine team before committing budget) How many engineers does a production-ready distributed-locking reservation engine typically require?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 3-4 dedicated engineers for the reservation core, separate from 5-7 across telematics and damage-claim workflow for a mid-size fleet." } },
+    { "@type": "Question", "name": "(Scenario: CTO estimating timeline before committing to a launch date) How long does building a production-ready car-sharing platform typically take?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 7-10 months for a single-city MVP, plus another 3-5 months for cross-border compliance and structured damage-claim workflow." } },
+    { "@type": "Question", "name": "(Scenario: risk lead scoping liability determination after a reported incident) How does the platform determine member liability when a telematics-detected incident isn't confirmed by the member's own report?", "acceptedAnswer": { "@type": "Answer", "text": "The workflow correlates telematics event data with the reservation window and any photo documentation, applying the destination jurisdiction's liability rule to that correlated evidence rather than self-report alone." } }
   ]
 }
 </script>

@@ -71,6 +71,17 @@ The Amsterdam team reviewed Vastgoedbron's architecture and identified documenta
 
 A slow ramp is a direct, quantifiable transfer of contract value into unproductive time: an offshore engagement that takes twelve weeks instead of four to reach full productivity has effectively converted roughly a fifth of a year's contract spend into orientation rather than delivery, which on a typical mid-market offshore engagement can mean €50,000-€100,000 of budget consumed before the business sees any return. That's cash burning against the exact promise — speed — that justified the offshoring decision to the board in the first place. A structured, measured ramp converts that risk into a committed, trackable milestone instead of an open-ended hope. [Talk to Manifera](https://www.manifera.com/contact-us/) about a ramp that gets your team shipping in weeks, not a quarter.
 
+## The Ramp Curve, Week by Week: What "On Track" Looks Like
+
+Most dedicated team services contracts fail to define productivity numerically, which is exactly why "still ramping up" survives as an acceptable answer for three months. A concrete curve to hold any offshore software development team engagement against:
+
+- **End of week 1:** First trivial PR merged to production or staging. Local dev environment reproducible without hand-holding. If this hasn't happened, the environment/access setup itself is broken — a red flag independent of engineer skill.
+- **End of week 2:** First real (non-toy) ticket shipped under close pairing, typically at 30-40% of a fully ramped engineer's normal ticket throughput.
+- **End of week 3:** Ticket throughput at roughly 60-70% of standard velocity, with architectural questions dropping to one or two per day rather than continuous.
+- **End of week 4:** Standard-complexity tickets owned independently, throughput at 85-100% of a fully ramped teammate, PR review turnaround matching the rest of the team's cadence.
+
+A team still needing daily architectural hand-holding past week four, or one whose ticket throughput hasn't crossed 50% by week three, isn't "still onboarding" — the ramp plan itself has failed and needs to be renegotiated, not extended indefinitely.
+
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering rebuilding a roadmap after a hiring freeze) What's a realistic timeline to expect an offshore team to reach full productivity?
@@ -93,6 +104,22 @@ Expect meaningful involvement in weeks one through three, particularly from whoe
 
 Almost always, because the effective cost of a slow ramp — weeks of contract spend with minimal delivered output — usually exceeds any headline rate savings from a cheaper, slower-ramping vendor within the first quarter alone.
 
+### (Scenario: VP of Engineering evaluating an offshore software development company against an in-house hire) Does an offshore dedicated team ramp faster or slower than a new in-house hire in the same role?
+
+With a structured onboarding process and pre-kickoff architecture review, an offshore dedicated team typically ramps at a comparable or faster pace than a solo in-house hire, because the vendor brings a pod-level onboarding playbook refined across many engagements rather than one person learning your systems alone for the first time.
+
+### (Scenario: VP of Engineering deciding what to include in the kickoff meeting itself) What should the actual kickoff meeting cover to set up a fast ramp?
+
+The kickoff should walk through the architecture diagram, the top three areas of technical debt, the deployment pipeline, and a named point of contact for architectural questions — not project logistics alone. Teams that spend kickoff on tooling and calendars instead of system knowledge lose the first week to preventable confusion.
+
+### (Scenario: VP of Engineering worried the ramp will stall again on the next feature area) Does ramp velocity carry over when the offshore team moves to a new part of the codebase later?
+
+Partially. A pod that has ramped on one module still needs a smaller, days-not-weeks re-orientation when moving into an unfamiliar part of the codebase, but the collaboration patterns, tooling familiarity, and communication cadence established during the first ramp carry over completely, which is why the second ramp is consistently faster than the first.
+
+### (Scenario: VP of Engineering trying to benchmark ramp velocity against industry norms) What ramp timeline should we consider a red flag when evaluating offshore software development team vendors during procurement?
+
+Any vendor proposal that describes onboarding only in qualitative terms — "the team will get up to speed quickly" — without committing to specific week-by-week milestones is a red flag; ask every offshore software development company you evaluate to put a number on first-PR and full-velocity dates before signing.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -102,7 +129,11 @@ Almost always, because the effective cost of a slow ramp — weeks of contract s
     { "@type": "Question", "name": "(Scenario: VP of Engineering worried internal documentation isn't good enough to support a fast ramp) Our internal documentation is pretty thin. Does that make a fast ramp impossible?", "acceptedAnswer": { "@type": "Answer", "text": "It makes a pre-kickoff documentation audit essential rather than optional. Closing the worst gaps before the offshore team's clock starts is usually far cheaper than letting the gaps surface live during onboarding." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering trying to hold a new vendor accountable for ramp speed) How do we hold a vendor accountable for ramp speed contractually?", "acceptedAnswer": { "@type": "Answer", "text": "Define specific, measurable milestones in the contract itself, such as first merged PR by week one and independent standard-ticket ownership by week four, rather than a vague commitment to ramp up quickly." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering deciding how much internal time to invest in supporting a new offshore team's ramp) How much of our internal team's time should go into supporting the offshore ramp?", "acceptedAnswer": { "@type": "Answer", "text": "Expect meaningful involvement in weeks one through three, tapering sharply by week four as the new pod takes on independent ownership. Heavy internal support well past week four indicates the onboarding structure isn't working." } },
-    { "@type": "Question", "name": "(Scenario: VP of Engineering comparing a fast ramp against a slower, cheaper vendor option) Is a faster ramp worth paying a premium for?", "acceptedAnswer": { "@type": "Answer", "text": "Almost always, because the effective cost of a slow ramp, weeks of contract spend with minimal delivered output, usually exceeds any headline rate savings from a cheaper, slower-ramping vendor within the first quarter alone." } }
+    { "@type": "Question", "name": "(Scenario: VP of Engineering comparing a fast ramp against a slower, cheaper vendor option) Is a faster ramp worth paying a premium for?", "acceptedAnswer": { "@type": "Answer", "text": "Almost always, because the effective cost of a slow ramp, weeks of contract spend with minimal delivered output, usually exceeds any headline rate savings from a cheaper, slower-ramping vendor within the first quarter alone." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating an offshore software development company against an in-house hire) Does an offshore dedicated team ramp faster or slower than a new in-house hire in the same role?", "acceptedAnswer": { "@type": "Answer", "text": "With a structured onboarding process and pre-kickoff architecture review, an offshore dedicated team typically ramps at a comparable or faster pace than a solo in-house hire, because the vendor brings a pod-level onboarding playbook refined across many engagements." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering deciding what to include in the kickoff meeting itself) What should the actual kickoff meeting cover to set up a fast ramp?", "acceptedAnswer": { "@type": "Answer", "text": "The kickoff should walk through the architecture diagram, the top three areas of technical debt, the deployment pipeline, and a named point of contact for architectural questions, not project logistics alone." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering worried the ramp will stall again on the next feature area) Does ramp velocity carry over when the offshore team moves to a new part of the codebase later?", "acceptedAnswer": { "@type": "Answer", "text": "Partially. A pod still needs a smaller, days-not-weeks re-orientation when moving into an unfamiliar part of the codebase, but the collaboration patterns and communication cadence established during the first ramp carry over completely." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering trying to benchmark ramp velocity against industry norms) What ramp timeline should we consider a red flag when evaluating offshore software development team vendors during procurement?", "acceptedAnswer": { "@type": "Answer", "text": "Any vendor proposal that describes onboarding only in qualitative terms, without committing to specific week-by-week milestones, is a red flag; ask every vendor to put a number on first-PR and full-velocity dates before signing." } }
   ]
 }
 </script>

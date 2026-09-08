@@ -74,6 +74,12 @@ Every quarter a board tables an offshore budget decision has a real cost that ra
 
 A board doesn't reject offshore engagements because the economics are wrong — they reject proposals that don't answer the governance question first. Bring a structure that closes that gap before the meeting, not during it. [Talk to Manifera about building your board case](https://www.manifera.com/contact-us/).
 
+## Structuring the Milestone Checkpoints a Board Actually Wants to See
+
+A board that approves a pilot period wants the checkpoints defined in the proposal itself, not left as a vague "we'll assess progress." A credible milestone structure for an offshore dev team pilot runs on a four-week cadence with three measurable gates: week two — architecture review sign-off from the Amsterdam governance lead confirming the pod's technical approach matches the agreed spec; week four — a working demo of the pilot scope against acceptance criteria defined before the pilot started, not renegotiated afterward; week six — a velocity comparison against the sprint commitment made at kickoff, with any variance explained against a documented cause, not absorbed silently into the next sprint.
+
+Each gate should carry a go/no-go decision right, not just a status update — a board approving a pilot wants to know explicitly that the company can walk away at week four with no further financial commitment if the gate isn't met, which is a materially different risk profile than a 12-month contract with an informal "we'll check in." Structuring the milestones this way also gives the CFO a concrete, dated update to bring back to the board rather than a generic "it's going well" at the next quarterly meeting.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO preparing a board deck for the first time) What question does a European board ask first about an offshore engagement?
@@ -96,6 +102,22 @@ Include the governance layer's cost inside the total offshore cost figure, and c
 
 A scoped pilot period with milestone checkpoints before any long-term commitment, plus contractual confirmation that all code and IP built during the engagement remains the company's property even if the engagement ends early.
 
+### (Scenario: CFO whose board wants specific dates and gates, not a vague pilot period) What should the actual milestone schedule look like inside a pilot proposal?
+
+A four-week cadence with three gates: week two architecture sign-off from the Amsterdam governance lead, week four a working demo against pre-agreed acceptance criteria, and week six a velocity check against the original sprint commitment — each with an explicit go/no-go decision, not a status update.
+
+### (Scenario: CFO asked whether the company can walk away mid-pilot without further cost) Can we exit at the pilot stage with no further financial commitment if a milestone gate isn't met?
+
+Yes, when the pilot is structured correctly — each gate should carry a genuine go/no-go decision right, meaning the company can stop at week four, for example, without being contractually obligated to the remaining pilot period or a longer-term engagement.
+
+### (Scenario: CFO whose board wants to know how an offshore dev team differs from hiring individual offshore contractors) Is an offshore dedicated development team the same thing as hiring individual offshore freelancers?
+
+No — a dedicated team operates under a single governance and accountability structure with a named lead and no-cross-client-allocation terms, whereas individual freelancers each carry separate, typically weaker accountability and no unified architecture ownership across the group.
+
+### (Scenario: CFO whose board wants ongoing visibility, not just a one-time approval) How does the board stay informed after the initial budget is approved, without needing another full board session?
+
+A quarterly one-page update covering sprint velocity against commitment, any governance escalations resolved, and headcount stability is standard practice, giving the board ongoing visibility without requiring a full board presentation each time.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +127,11 @@ A scoped pilot period with milestone checkpoints before any long-term commitment
     { "@type": "Question", "name": "(Scenario: CFO handling GDPR-related board scrutiny) How do we answer board questions about data protection and IP ownership?", "acceptedAnswer": { "@type": "Answer", "text": "Cover a GDPR-compliant data processing agreement naming the offshore entity as a subprocessor, IP assigned to the client from the first commit, and individual engineer NDAs rather than vendor-entity-level agreements alone." } },
     { "@type": "Question", "name": "(Scenario: CFO facing board skepticism from a past failed engagement) How do we address a board that's skeptical because of a previous bad offshore experience?", "acceptedAnswer": { "@type": "Answer", "text": "Name the structural cause directly: most failed engagements lacked an independent quality check and an accountable governance layer above the execution team. Show the specific structure that closes that gap." } },
     { "@type": "Question", "name": "(Scenario: CFO building a defensible cost comparison for the board) What should the cost comparison actually include to survive board scrutiny?", "acceptedAnswer": { "@type": "Answer", "text": "Include the governance layer's cost inside the total offshore cost figure, and compare against the fully-loaded cost of the local alternative, including salary, employer costs, recruiting fees, and management overhead." } },
-    { "@type": "Question", "name": "(Scenario: CFO addressing the board's downside-risk question) What's a credible answer to \"what's our exit path if this doesn't work\"?", "acceptedAnswer": { "@type": "Answer", "text": "A scoped pilot period with milestone checkpoints before any long-term commitment, plus contractual confirmation that all code and IP built during the engagement remains the company's property even if it ends early." } }
+    { "@type": "Question", "name": "(Scenario: CFO addressing the board's downside-risk question) What's a credible answer to \"what's our exit path if this doesn't work\"?", "acceptedAnswer": { "@type": "Answer", "text": "A scoped pilot period with milestone checkpoints before any long-term commitment, plus contractual confirmation that all code and IP built during the engagement remains the company's property even if it ends early." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose board wants specific dates and gates, not a vague pilot period) What should the actual milestone schedule look like inside a pilot proposal?", "acceptedAnswer": { "@type": "Answer", "text": "A four-week cadence with three gates: week two architecture sign-off, week four a working demo against acceptance criteria, and week six a velocity check, each with a go/no-go decision." } },
+    { "@type": "Question", "name": "(Scenario: CFO asked whether the company can walk away mid-pilot without further cost) Can we exit at the pilot stage with no further financial commitment if a milestone gate isn't met?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, when structured correctly — each gate carries a genuine go/no-go decision so the company can stop without further contractual obligation." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose board wants to know how an offshore dev team differs from hiring individual offshore contractors) Is an offshore dedicated development team the same thing as hiring individual offshore freelancers?", "acceptedAnswer": { "@type": "Answer", "text": "No — a dedicated team operates under one governance and accountability structure with a named lead and no-cross-client-allocation terms, unlike individual freelancers." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose board wants ongoing visibility, not just a one-time approval) How does the board stay informed after the initial budget is approved, without needing another full board session?", "acceptedAnswer": { "@type": "Answer", "text": "A quarterly one-page update covering sprint velocity, resolved governance escalations, and headcount stability gives the board ongoing visibility without a full presentation each time." } }
   ]
 }
 </script>

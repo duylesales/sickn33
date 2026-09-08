@@ -74,6 +74,19 @@ Run a nine-month, four-engineer app build through both models and the gap is sta
 
 If your board wants a decision this quarter and both proposals on your desk still aren't comparable line by line, that's the actual blocker — not the underlying choice. [Talk to Manifera for a direct cost comparison built on your numbers](https://www.manifera.com/contact-us/).
 
+## Due Diligence Checklist: Vetting a Vietnam-Based App Development Partner Before You Sign
+
+Most CTOs comparing software companies in Netherlands against Vietnam software vendors skip the vendor-vetting step and jump straight to the rate card, which is exactly how a cheap quote turns into an expensive rebuild. Before signing, confirm these six items directly with the vendor, not through a sales deck:
+
+- **Code escrow and repo access from day one.** Your organization's GitHub/GitLab org should own the repository from the first commit — not receive a handoff export at project end. Ask for admin access in writing before the contract is signed.
+- **Named tech lead with EU delivery history.** A pod without a named, English-fluent tech lead accountable for architecture decisions is a staffing pool, not a governed team — ask for that person's name and prior EU client references before kickoff.
+- **Timezone overlap commitment.** Ho Chi Minh City sits UTC+7; a credible pod commits to a minimum 3-hour daily overlap with CET working hours (typically 14:00-17:00 CET), documented in the SOW, not left as a goodwill gesture.
+- **IP assignment clause specificity.** The contract should name the exact jurisdiction (Dutch or client's home country law) governing IP assignment, not defer to a generic "work made for hire" clause under Vietnamese law alone.
+- **Fixed onboarding SLA.** A pod should be contractually committed to 2-4 weeks from signing to first sprint, with penalty or credit terms if that slips.
+- **Independent reference check.** Request two client references from the last six months, not testimonials pulled from a website — and call them.
+
+Skipping any one of these is the single most common reason a "50% cheaper" quote ends up costing more than the local option once rework is factored in.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO who needs to present a board-ready cost comparison this month) How quickly can we get a real cost comparison built on our specific project scope?
@@ -96,6 +109,22 @@ Contracts are structured with defined exit terms and full source-code ownership 
 
 Yes — a four-to-six week pilot on a defined scope validates ramp-up speed and cost assumptions in practice, giving the CTO real data rather than a vendor's projection to bring to the board.
 
+### (Scenario: CTO whose app processes Dutch and EU customer data) How does a Vietnam-based pod handle GDPR compliance for an app processing EU customer data?
+
+Data processing agreements are drafted under Dutch/EU law regardless of where the engineering pod sits physically, with the Amsterdam governance layer accountable for the compliance framework and data-handling architecture — the pod builds to a GDPR-compliant spec set by the client's own DPO or legal counsel, the same as any EU-based contractor would.
+
+### (Scenario: CTO worried a cheap quote today means an expensive rebuild in 18 months) What coding standards and QA process keep the app from needing a rebuild once it scales past MVP?
+
+Manifera pods work to a documented code review standard with mandatory peer review before merge, automated test coverage thresholds set per project, and an Amsterdam-side architecture sign-off gate before major features ship — the same discipline that prevents the "cheap MVP, expensive rebuild" pattern that drives most of the €60,000-€120,000 re-platforming costs cited earlier.
+
+### (Scenario: CTO deciding how to structure the commercial terms) Should we structure the engagement as fixed-price or time-and-materials?
+
+Time-and-materials with a committed sprint velocity is the standard structure for app builds with evolving scope, since fixed-price contracts on a still-changing product spec tend to incentivize corner-cutting once the estimate is under pressure; fixed-price fits better only for a tightly scoped, well-specified module.
+
+### (Scenario: CTO planning for growth after the app launches) Can the Vietnam pod scale up or down as the roadmap changes after launch?
+
+Yes — pods are structured to add or release engineers on 2-4 weeks' notice tied to sprint capacity, so a post-launch team can shrink to a maintenance-sized pod or scale up for a major feature push without renegotiating the underlying governance contract.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +134,11 @@ Yes — a four-to-six week pilot on a defined scope validates ramp-up speed and 
     { "@type": "Question", "name": "(Scenario: CTO worried offshore comparisons understate hidden Dutch employer costs) Does the local cost figure in these comparisons include Dutch employer overhead, or just gross salary?", "acceptedAnswer": { "@type": "Answer", "text": "A fair comparison must include it — holiday allowance, pension contributions, and employer social charges typically add 25-35% above gross salary." } },
     { "@type": "Question", "name": "(Scenario: CTO deciding between a full in-house build and a full offshore pod) Is there a middle option, or does it have to be entirely in-house or entirely offshore?", "acceptedAnswer": { "@type": "Answer", "text": "Hybrid structures are common and often optimal — a small in-house core team paired with an offshore pod handling build capacity. Manifera structures both pure and hybrid engagements." } },
     { "@type": "Question", "name": "(Scenario: CTO concerned about switching costs if the offshore decision doesn't work out) What happens if we commit to a Vietnam pod and it doesn't work out six months in?", "acceptedAnswer": { "@type": "Answer", "text": "Contracts are structured with defined exit terms and full source-code ownership retained by the client throughout, so a poor-fit engagement doesn't leave you without your own codebase." } },
-    { "@type": "Question", "name": "(Scenario: CTO wanting to validate the numbers before presenting to the board) Can we pilot a smaller scope before committing to the full comparison's numbers?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — a four-to-six week pilot on a defined scope validates ramp-up speed and cost assumptions in practice before a full commitment." } }
+    { "@type": "Question", "name": "(Scenario: CTO wanting to validate the numbers before presenting to the board) Can we pilot a smaller scope before committing to the full comparison's numbers?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — a four-to-six week pilot on a defined scope validates ramp-up speed and cost assumptions in practice before a full commitment." } },
+    { "@type": "Question", "name": "(Scenario: CTO whose app processes Dutch and EU customer data) How does a Vietnam-based pod handle GDPR compliance for an app processing EU customer data?", "acceptedAnswer": { "@type": "Answer", "text": "Data processing agreements are drafted under Dutch/EU law regardless of where the pod sits, with the Amsterdam governance layer accountable for the compliance framework and data-handling architecture." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried a cheap quote today means an expensive rebuild in 18 months) What coding standards and QA process keep the app from needing a rebuild once it scales past MVP?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera pods work to a documented code review standard with mandatory peer review, automated test coverage thresholds, and an Amsterdam-side architecture sign-off gate before major features ship." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding how to structure the commercial terms) Should we structure the engagement as fixed-price or time-and-materials?", "acceptedAnswer": { "@type": "Answer", "text": "Time-and-materials with a committed sprint velocity suits app builds with evolving scope; fixed-price fits better only for a tightly scoped, well-specified module." } },
+    { "@type": "Question", "name": "(Scenario: CTO planning for growth after the app launches) Can the Vietnam pod scale up or down as the roadmap changes after launch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — pods can add or release engineers on 2-4 weeks' notice tied to sprint capacity, letting a post-launch team resize without renegotiating the governance contract." } }
   ]
 }
 </script>

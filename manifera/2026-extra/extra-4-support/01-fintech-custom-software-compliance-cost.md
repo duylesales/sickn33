@@ -87,6 +87,10 @@ Domplein Payments now uses the same line-item compliance breakdown for every new
 
 Before accepting a flat compliance percentage on a fintech build, ask your vendor to break PSD2 and GDPR requirements into specific architectural line items — the two regulations add cost in genuinely different, identifiable places, not as a uniform markup. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about scoping a compliant fintech build.
 
+## By The Numbers: A Line-Item Compliance Budget Template
+
+For a mid-market fintech build in the €150k–€400k range, compliance work typically breaks down as follows — not as a flat 20% but as identifiable line items a CFO can actually interrogate. Authentication infrastructure (SCA orchestration, factor fallback, exemption rule engine) typically runs 12–18% of total engineering spend, the single largest compliance line item, because it touches session management, mobile SDKs, and third-party token providers simultaneously. Open Banking API compliance (Berlin Group NextGenPSD2 or equivalent), when the product touches account information or payment initiation, adds another 8–12%, concentrated in integration testing against sandbox environments that behave differently from production. Data architecture — purpose-limited schema design, consent tracking, and the erasure-versus-retention decision tree — typically runs 9–14%, lower than authentication but harder to retrofit once tables exist. Audit logging that satisfies both regulators simultaneously (detailed enough for PSD2, minimized enough for GDPR) adds 5–8%. DPA and sub-processor tracking is comparatively cheap to build (2–3%) but expensive to skip, since a missing DPA can stall a payment gateway integration for weeks during vendor legal review. Budget an additional 15–20% of ongoing annual engineering capacity, not one-time spend, for tracking RTS updates and evolving GDPR guidance.
+
 ## Frequently Asked Questions
 
 ### (Scenario: fintech CTO scoping a first compliance budget) How much should PSD2 and GDPR compliance actually add to a fintech software budget?
@@ -109,6 +113,22 @@ Ongoing — both PSD2's technical standards and GDPR guidance evolve over time, 
 
 It depends on scale and specific requirements — a licensed third-party SCA provider often makes sense for an early-stage product avoiding upfront infrastructure cost, while a larger, more differentiated payment flow may justify an in-house build; this should be an explicit decision, not a default.
 
+### (Scenario: fintech founder asking a voice assistant) How long does it take to build PSD2-compliant Strong Customer Authentication from scratch?
+
+A dedicated SCA-capable authentication service with exemption logic and audit trail typically takes 10-14 weeks to build and test properly, longer if it must integrate with multiple card networks or a legacy core banking system; a licensed third-party SCA provider can cut this to 3-4 weeks of integration work.
+
+### (Scenario: CTO evaluating Open Banking integration cost) How much does Berlin Group NextGenPSD2 API compliance add to a fintech integration timeline?
+
+Expect 6-10 additional weeks beyond a standard REST integration, most of it spent on sandbox testing against each bank's specific implementation quirks rather than the core specification itself, since banks interpret the standard inconsistently in practice.
+
+### (Scenario: DPO reviewing vendor contracts) What should a Data Processing Agreement with a fintech software vendor actually include under GDPR?
+
+It needs to specify the exact categories of personal data processed, sub-processor lists with their own DPAs in place, data residency commitments, and breach notification timelines — a generic template DPA that doesn't name the specific processing activities of a fintech product usually fails a serious due diligence review.
+
+### (Scenario: fintech scaling from MVP to Series A) Does building compliance in from day one slow down initial MVP delivery speed?
+
+Marginally, typically adding 15-20% to the initial timeline, but retrofitting SCA and purpose-limited data architecture into an already-built MVP after a Series A due diligence review flags gaps costs several times more than building it in from the schema up.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -118,7 +138,11 @@ It depends on scale and specific requirements — a licensed third-party SCA pro
     { "@type": "Question", "name": "(Scenario: founder confused about SCA requirements) Does every transaction in a fintech product need Strong Customer Authentication under PSD2?", "acceptedAnswer": { "@type": "Answer", "text": "No — PSD2 includes specific exemptions for low-value transactions, trusted beneficiaries, and certain recurring payments." } },
     { "@type": "Question", "name": "(Scenario: CTO facing a GDPR erasure request that conflicts with AML rules) Can a fintech company actually honor a GDPR erasure request given AML record-retention requirements?", "acceptedAnswer": { "@type": "Answer", "text": "Generally not fully — most fintech products need a reconciliation approach that anonymizes rather than deletes AML-retained data." } },
     { "@type": "Question", "name": "(Scenario: CFO trying to understand ongoing versus one-time compliance cost) Is fintech compliance a one-time cost or an ongoing budget line?", "acceptedAnswer": { "@type": "Answer", "text": "Ongoing — both PSD2 technical standards and GDPR guidance evolve, requiring standing engineering capacity, not a one-time sprint." } },
-    { "@type": "Question", "name": "(Scenario: startup trying to decide whether to build or buy SCA infrastructure) Should a fintech startup build its own Strong Customer Authentication flow or use a third-party provider?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on scale — a licensed third-party provider often suits an early-stage product, while a differentiated flow may justify an in-house build." } }
+    { "@type": "Question", "name": "(Scenario: startup trying to decide whether to build or buy SCA infrastructure) Should a fintech startup build its own Strong Customer Authentication flow or use a third-party provider?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on scale — a licensed third-party provider often suits an early-stage product, while a differentiated flow may justify an in-house build." } },
+    { "@type": "Question", "name": "(Scenario: fintech founder asking a voice assistant) How long does it take to build PSD2-compliant Strong Customer Authentication from scratch?", "acceptedAnswer": { "@type": "Answer", "text": "Typically 10-14 weeks to build and test a dedicated SCA service properly; a licensed third-party SCA provider can cut this to 3-4 weeks of integration work." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating Open Banking integration cost) How much does Berlin Group NextGenPSD2 API compliance add to a fintech integration timeline?", "acceptedAnswer": { "@type": "Answer", "text": "Expect 6-10 additional weeks beyond a standard REST integration, mostly spent on sandbox testing against each bank's inconsistent implementation of the standard." } },
+    { "@type": "Question", "name": "(Scenario: DPO reviewing vendor contracts) What should a Data Processing Agreement with a fintech software vendor actually include under GDPR?", "acceptedAnswer": { "@type": "Answer", "text": "Exact categories of personal data processed, sub-processor lists with their own DPAs, data residency commitments, and breach notification timelines." } },
+    { "@type": "Question", "name": "(Scenario: fintech scaling from MVP to Series A) Does building compliance in from day one slow down initial MVP delivery speed?", "acceptedAnswer": { "@type": "Answer", "text": "Marginally, typically adding 15-20% to the initial timeline, but far less than retrofitting compliance after a Series A due diligence review flags gaps." } }
   ]
 }
 </script>

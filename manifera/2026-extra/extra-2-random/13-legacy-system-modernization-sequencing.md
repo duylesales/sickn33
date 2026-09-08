@@ -71,6 +71,18 @@ Manifera restructured the engagement around a Strangler Fig sequence: a routing 
 
 A frozen roadmap has a real, calculable cost even when nothing has technically "gone wrong" yet: every quarter spent not shipping new capability while competitors do is quarter of eroding competitive position, and mid-market companies attempting big-bang legacy rewrites typically burn €300,000-€800,000 in vendor spend before the first missed cutover date forces a strategy reset — money spent for zero shipped business value in the interim. A phased, Strangler Fig sequence converts that sunk-cost risk into incremental, board-visible delivery, which is the difference between modernization as an investment and modernization as a line item nobody can explain a year later. [Talk to Manifera](https://www.manifera.com/contact-us/) about sequencing your legacy modernization so the business never has to stop moving.
 
+## Implementation Checklist: Standing Up the Routing Seam
+
+The routing seam is the single piece of infrastructure the entire sequencing plan depends on, and it needs to exist before phase one starts, not get built reactively during it. A production-grade seam typically includes:
+
+1. **A capability-level routing table**, not a single global switch — each bounded capability (billing, notifications, reporting) gets its own route so phases can ship and roll back independently without affecting unrelated capabilities.
+2. **Tenant- or cohort-level flag granularity.** Rolling a migrated capability out to 5% of accounts, then 25%, then 100%, catches data or performance regressions against real traffic before they hit the full customer base — a capability that "works" for one pilot tenant can still fail against a tenant with ten times the data volume.
+3. **Request-level logging of which system served each call**, so a production incident during the transition period can be traced to legacy or new-service code within minutes, not hours of cross-referencing deploy timestamps.
+4. **A documented flip-back procedure with an owner and an SLA** — typically under 15 minutes from decision to execution — because a rollback path that exists on paper but has never been rehearsed isn't a real rollback path.
+5. **Synthetic monitoring against both code paths** during any period where both remain live, since the legacy path silently bit-rotting while all attention shifts to the new service is how "temporary" dual-running turns into a six-month incident waiting to happen.
+
+Budget two to four weeks of dedicated engineering time to build this seam properly before extracting the first capability — it's the highest-leverage investment in the entire modernization.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO who has been told a full rewrite is the only real fix) Is a full rewrite ever the right answer instead of incremental migration?
@@ -93,6 +105,22 @@ Yes — a phased plan is more predictable, not less, because each phase is indep
 
 A phased Strangler Fig modernization typically costs comparably to a full rewrite in total engineering hours, but delivers value incrementally from the first phase instead of requiring the full budget spent before anything ships — which materially changes the risk profile even when the headline number is similar.
 
+### (Scenario: CTO scoping a custom software development company to lead a legacy modernization) What should we look for in a vendor's legacy modernization proposal?
+
+Insist the proposal names the routing-seam architecture explicitly and shows a phase-by-phase rollback plan, not just a target-state diagram. A vendor that leads with the end-state architecture but can't describe how traffic gets routed during the transition hasn't actually planned the migration, they've planned the destination.
+
+### (Scenario: CTO whose legacy system has almost no automated test coverage) Can we modernize a legacy system that has little or no automated test coverage?
+
+Yes, but the first phase should be writing characterization tests against the legacy system's current behavior, not the new service, so you have a regression baseline before extracting anything. Skipping this step means every migrated capability is validated only by manual QA, which slows every subsequent phase down.
+
+### (Scenario: CTO deciding how much of the team to dedicate to modernization versus feature work) What's a realistic team split between legacy modernization and ongoing feature development?
+
+Most successful phased modernizations run at roughly a 30-40% dedicated allocation to the migration, with the remainder continuing feature work, rather than a full team context-switch. This is what keeps the roadmap moving in parallel instead of freezing, which is the entire point of sequencing over a big-bang rewrite.
+
+### (Scenario: CTO worried about vendor lock-in reappearing during modernization) How do we avoid recreating vendor lock-in while modernizing away from a legacy system?
+
+Insist the new services are built on standard, portable infrastructure with documented APIs and clean data-export paths from day one, and hold the modernization vendor to the same IP-ownership and code-portability terms you'd demand from any custom software engineering contract — a modernization that trades one lock-in for another has not actually reduced risk.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -102,7 +130,11 @@ A phased Strangler Fig modernization typically costs comparably to a full rewrit
     { "@type": "Question", "name": "(Scenario: CTO deciding which capability to extract first) How do we decide which piece of the legacy system to modernize first?", "acceptedAnswer": { "@type": "Answer", "text": "Prioritize by the intersection of business visibility and technical decoupling: a capability that matters enough to the board to demonstrate progress, but is loosely enough coupled to the rest of the system to be extracted without dragging other subsystems along with it." } },
     { "@type": "Question", "name": "(Scenario: CTO worried about data consistency during a phased migration) How do we keep data consistent when both the legacy and new systems are live at once?", "acceptedAnswer": { "@type": "Answer", "text": "Migrate read paths before write paths wherever possible, and define explicit conflict-resolution rules for any period where both systems can write to overlapping data rather than defaulting to last write wins." } },
     { "@type": "Question", "name": "(Scenario: CTO whose board wants a fixed completion date) Can we still give the board a completion date with a phased approach?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a phased plan is more predictable, not less, because each phase is independently scoped and estimated rather than resting on one large, uncertain rewrite estimate." } },
-    { "@type": "Question", "name": "(Scenario: CTO estimating budget for a mid-sized legacy modernization) What does a phased legacy modernization typically cost compared to a rewrite?", "acceptedAnswer": { "@type": "Answer", "text": "A phased Strangler Fig modernization typically costs comparably to a full rewrite in total engineering hours, but delivers value incrementally from the first phase instead of requiring the full budget spent before anything ships." } }
+    { "@type": "Question", "name": "(Scenario: CTO estimating budget for a mid-sized legacy modernization) What does a phased legacy modernization typically cost compared to a rewrite?", "acceptedAnswer": { "@type": "Answer", "text": "A phased Strangler Fig modernization typically costs comparably to a full rewrite in total engineering hours, but delivers value incrementally from the first phase instead of requiring the full budget spent before anything ships." } },
+    { "@type": "Question", "name": "(Scenario: CTO scoping a custom software development company to lead a legacy modernization) What should we look for in a vendor's legacy modernization proposal?", "acceptedAnswer": { "@type": "Answer", "text": "Insist the proposal names the routing-seam architecture explicitly and shows a phase-by-phase rollback plan, not just a target-state diagram. A vendor that can't describe how traffic gets routed during the transition hasn't actually planned the migration." } },
+    { "@type": "Question", "name": "(Scenario: CTO whose legacy system has almost no automated test coverage) Can we modernize a legacy system that has little or no automated test coverage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but the first phase should be writing characterization tests against the legacy system's current behavior, not the new service, so you have a regression baseline before extracting anything." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding how much of the team to dedicate to modernization versus feature work) What's a realistic team split between legacy modernization and ongoing feature development?", "acceptedAnswer": { "@type": "Answer", "text": "Most successful phased modernizations run at roughly a 30-40% dedicated allocation to the migration, with the remainder continuing feature work, rather than a full team context-switch." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about vendor lock-in reappearing during modernization) How do we avoid recreating vendor lock-in while modernizing away from a legacy system?", "acceptedAnswer": { "@type": "Answer", "text": "Insist the new services are built on standard, portable infrastructure with documented APIs and clean data-export paths, and hold the modernization vendor to the same IP-ownership and code-portability terms you'd demand from any custom software engineering contract." } }
   ]
 }
 </script>

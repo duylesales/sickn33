@@ -70,6 +70,12 @@ When Manifera took over the company's core policy management platform, the CFO r
 
 A company that discovers its escrow arrangement doesn't actually work after a vendor failure commonly loses weeks to months rebuilding operational context it believed it already owned, at a cost far exceeding the modest incremental fee for release-cadence deposits and independent build verification. A properly structured escrow arrangement typically adds a small percentage to annual vendor costs against a risk that, when it materializes, can otherwise halt a business-critical system entirely. [Talk to Manifera](https://www.manifera.com/contact-us/) about structuring a code escrow agreement that would actually work if you ever needed it.
 
+## By The Numbers: Pricing and Cadence for a Source Code Escrow Agreement
+
+A properly structured source code escrow agreement typically costs €2,000-€8,000 annually for a mid-complexity system, scaling with deposit frequency and verification depth — quarterly deposits with a full independent build test run toward the higher end, while a single annual deposit with no verification (the symbolic version most contracts default to) runs near the low end and, per the discussion above, delivers close to zero actual protection. Against that annual fee, the realistic cost of an untested escrow failing at the moment it's needed runs into weeks to months of reverse-engineering effort — commonly €30,000-€150,000+ in emergency contractor time to reconstruct deployment context that should have simply been deposited.
+
+On cadence specifically: a system releasing weekly or biweekly should escrow at minimum quarterly, since a quarter of accumulated drift between deposit and production is already a meaningful gap to reconcile; a system on a monthly or slower release cycle can reasonably escrow per-release without falling behind. A CFO negotiating escrow terms should treat the deposit-frequency line item as the single highest-leverage number in the agreement — it matters more than the legal language surrounding release triggers, because a perfectly-triggered release of eighteen-month-old code protects almost nothing.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO who has an escrow clause but has never tested it) How do I know if our existing code escrow agreement would actually work if our vendor failed?
@@ -91,6 +97,22 @@ Infrastructure-as-code definitions, deployment scripts, database schemas, and en
 ### (Scenario: CFO evaluating whether an escrow agent is genuinely independent) What should a CFO confirm about the escrow agent itself?
 
 That it is a genuinely independent third party with a defined, audited verification process that has been tested with a real deposit-and-verify cycle, not a nominal arrangement that exists only to satisfy a contract clause.
+
+### (Scenario: CFO trying to budget for a source code escrow agreement before negotiating terms) How much does a properly structured source code escrow agreement typically cost annually?
+
+Typically €2,000-€8,000 annually for a mid-complexity system, scaling with deposit frequency and independent build-verification depth — a single unverified annual deposit runs near the low end but delivers close to zero actual protection.
+
+### (Scenario: CFO deciding how often to require escrow deposits based on release cadence) How often should escrow deposits happen relative to a software system's release cadence?
+
+At minimum quarterly for a system releasing weekly or biweekly, since a quarter of drift between deposit and production is already meaningful; a system on a monthly or slower release cycle can reasonably escrow per-release.
+
+### (Scenario: CFO trying to justify the cost of code escrow against the cost of a vendor failure without it) What does it typically cost a company to reconstruct deployment context after an untested escrow arrangement fails to deliver working code?
+
+Commonly €30,000-€150,000 or more in emergency contractor time, dwarfing the annual escrow fee that would have prevented the gap in the first place.
+
+### (Scenario: CFO evaluating whether Manifera's approach to code escrow differs from a typical vendor's) How does Manifera keep escrowed materials genuinely deposit-ready rather than assembled only when a deposit is due?
+
+Vietnam-based pods maintain infrastructure-as-code, deployment scripts, and environment configuration as standing artifacts throughout the engagement under Amsterdam governance, so a scheduled deposit reflects what's actually running rather than requiring last-minute reconstruction.
 
 <script type="application/ld+json">
 {

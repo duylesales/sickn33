@@ -72,6 +72,14 @@ Run over a three-year horizon, the cost differential compounds rather than stayi
 
 A board that approves headcount budget deserves a comparison with real numbers on both sides, not a default to "local because it feels safer." Bring Manifera's numbers to your next board conversation — [start here](https://www.manifera.com/contact-us/).
 
+## Team Composition: Structuring a Dedicated Pod So It Doesn't Underperform
+
+Most cost comparisons stop at headcount and miss the composition variable that actually determines whether a dedicated pod performs like a five-person team or like five individuals working in parallel. A pod built for sustained delivery, not just cost savings, typically follows a 1:4 or 1:5 ratio of tech lead to engineers — a five-engineer pod with no named lead accountable for architecture consistency tends to produce five slightly-divergent implementations of the same system, which shows up as integration friction in month three rather than month one.
+
+Seniority mix matters as much as ratio: a pod skewed entirely senior costs more than necessary for routine feature work, while a pod skewed entirely junior lacks the judgment to make the architecture calls a CTO isn't present to make in real time. A 40/40/20 split of senior/mid/junior engineers is a reasonable default for most product-development pods, adjusted toward senior-heavy for greenfield architecture work and toward junior-heavy for well-specified feature backlogs on an established codebase.
+
+The SOW itself should name individual engineers, not just headcount — a contract that specifies "five senior engineers" without naming who they are and confirming no cross-client allocation is a contract a vendor can quietly restaff without the CTO knowing until velocity drops.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO building a board presentation comparing both options) What's the actual cost difference between local Netherlands hiring and an Amsterdam-governed Vietnam pod?
@@ -94,6 +102,22 @@ Individual local hires can resign at will with no contractual penalty in a compe
 
 Present both options with the same three variables computed the same way — fully-loaded three-year cost, time to full capacity, and governance structure — so the board is deciding on comparable numbers rather than choosing the option that feels less unfamiliar.
 
+### (Scenario: CTO worried a dedicated pod will underperform without the right internal structure) What team composition actually makes a dedicated pod perform like a real team rather than five individuals?
+
+A 1:4 or 1:5 tech-lead-to-engineer ratio with a named architecture-accountable lead, plus a seniority mix around 40/40/20 senior/mid/junior adjusted for whether the work is greenfield or well-specified feature delivery — a pod with no named lead tends to produce integration friction from divergent implementation choices by month three.
+
+### (Scenario: CTO comparing software development companies in Netherlands against a Vietnam-based pod on team stability specifically) How do we contractually prevent a Vietnam software development vendor from quietly restaffing our dedicated team?
+
+The SOW should name individual engineers assigned to the engagement, not just a headcount and seniority level, paired with a no-cross-client-allocation clause — a contract specifying only "five senior engineers" gives the vendor room to substitute personnel without the CTO noticing until velocity drops.
+
+### (Scenario: CTO deciding whether to start with a smaller pod before scaling to five) Should we start with a smaller pilot pod before committing to the full five-engineer team?
+
+Yes — a two-to-three engineer pilot pod over four to six weeks validates the tech lead's architecture judgment and the team's actual velocity against your codebase before scaling to full headcount, which de-risks the larger annual commitment considerably.
+
+### (Scenario: CTO who wants to know how governance sign-off actually works day to day, not just contractually) What does the Amsterdam governance layer actually review on a week-to-week basis, not just at contract signing?
+
+Sprint-level architecture decisions, code review escalations the pod's own reviewers flag as high-risk, and any deviation from the agreed technical roadmap — it's an active weekly function, not a one-time sign-off at kickoff.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +127,11 @@ Present both options with the same three variables computed the same way — ful
     { "@type": "Question", "name": "(Scenario: CTO under board pressure to show shipped roadmap progress) Which option gets us to full delivery capacity faster?", "acceptedAnswer": { "@type": "Answer", "text": "An offshore dedicated pod typically reaches full sprint contribution within four weeks of signing, against four to six months for a Netherlands-based hiring plan to fill an equivalent team." } },
     { "@type": "Question", "name": "(Scenario: CTO addressing board skepticism about offshore delivery risk) Is offshore delivery actually riskier than local hiring?", "acceptedAnswer": { "@type": "Answer", "text": "Only if it's ungoverned. A pod with continuous code review and an accountable architecture sign-off layer carries comparable or lower delivery risk than a local team stretched thin across competing priorities." } },
     { "@type": "Question", "name": "(Scenario: CTO worried about losing engineers to resignation mid-project) Which option carries more continuity risk?", "acceptedAnswer": { "@type": "Answer", "text": "Individual local hires can resign at will with no contractual penalty in a competitive market; a dedicated pod under a no-cross-client-allocation clause carries materially less continuity risk." } },
-    { "@type": "Question", "name": "(Scenario: CTO deciding how to frame the recommendation for the board) How should I present this comparison to get a real decision instead of a default to local hiring?", "acceptedAnswer": { "@type": "Answer", "text": "Present both options with the same three variables computed the same way: fully-loaded three-year cost, time to full capacity, and governance structure." } }
+    { "@type": "Question", "name": "(Scenario: CTO deciding how to frame the recommendation for the board) How should I present this comparison to get a real decision instead of a default to local hiring?", "acceptedAnswer": { "@type": "Answer", "text": "Present both options with the same three variables computed the same way: fully-loaded three-year cost, time to full capacity, and governance structure." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried a dedicated pod will underperform without the right internal structure) What team composition actually makes a dedicated pod perform like a real team rather than five individuals?", "acceptedAnswer": { "@type": "Answer", "text": "A 1:4 or 1:5 tech-lead-to-engineer ratio with a named architecture-accountable lead, plus a seniority mix around 40/40/20 senior/mid/junior adjusted for the type of work." } },
+    { "@type": "Question", "name": "(Scenario: CTO comparing software development companies in Netherlands against a Vietnam-based pod on team stability specifically) How do we contractually prevent a Vietnam software development vendor from quietly restaffing our dedicated team?", "acceptedAnswer": { "@type": "Answer", "text": "The SOW should name individual engineers assigned to the engagement, paired with a no-cross-client-allocation clause, rather than specifying only a headcount and seniority level." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding whether to start with a smaller pod before scaling to five) Should we start with a smaller pilot pod before committing to the full five-engineer team?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — a two-to-three engineer pilot pod over four to six weeks validates the tech lead's judgment and actual velocity before scaling to full headcount." } },
+    { "@type": "Question", "name": "(Scenario: CTO who wants to know how governance sign-off actually works day to day, not just contractually) What does the Amsterdam governance layer actually review on a week-to-week basis, not just at contract signing?", "acceptedAnswer": { "@type": "Answer", "text": "Sprint-level architecture decisions, high-risk code review escalations, and any deviation from the agreed technical roadmap — an active weekly function, not a one-time sign-off." } }
   ]
 }
 </script>

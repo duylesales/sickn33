@@ -90,6 +90,12 @@ This reframing is useful for a founder evaluating vendor fit: an engagement that
 
 If your current or prospective vendor has never pushed back on anything across a real project, that's worth investigating directly rather than treating as evidence of a smooth relationship. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) — expect us to push back when it's warranted.
 
+## Three Stress-Test Prompts to Run Before Signing Any Software Services Contract
+
+Testing for pushback readiness doesn't require waiting for a real project crisis — three specific prompts during a discovery call reliably surface the pattern early. Prompt one: propose a timeline roughly 30% shorter than what the vendor's own discovery suggests is realistic, and note whether they name specifically what would need to be cut to hit it, or simply agree. Prompt two: ask them to add a feature that conflicts with an architecture decision made two questions earlier, and see whether they flag the conflict or silently accommodate both. Prompt three: ask directly, "what's the worst technical decision a past client insisted on that you couldn't talk them out of" — a vendor with a genuine, specific answer has a track record of pushing back; a vendor who can't produce one likely doesn't.
+
+Score each prompt on the same scale used elsewhere in this evaluation: a specific, reasoned flag counts as a pass, silent agreement counts as a fail. A software services vendor failing two or three of these three prompts during discovery is very likely to become the "yes to everything" pattern once real deadline pressure arrives mid-project — the discovery call is simply a lower-stakes preview of exactly the same dynamic.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder whose vendor agrees to every request) Should I be concerned if my software vendor has never pushed back on any of my requests?
@@ -112,6 +118,22 @@ They likely compressed or skipped steps — often QA — to hit the deadline wit
 
 Explicitly tell them during kickoff that you want direct, specific pushback on risky requests rather than automatic agreement — some vendors hold back out of excessive deference unless a client signals they genuinely want the honest technical read.
 
+### (Scenario: founder wanting to test a vendor before a software services contract is signed) What's a specific test I can run during a sales call to see if a vendor will push back later?
+
+Propose a timeline roughly 30% shorter than realistic and see whether they name specifically what would need to be cut, or simply agree — silent agreement to an obviously aggressive ask is the clearest early signal.
+
+### (Scenario: founder comparing a custom software development company against a large agency) Do larger custom software development company vendors push back less because they have more clients to lose?
+
+Not inherently by size — psychological safety in a vendor relationship depends on how the specific account team is managed and incentivized, not on company size, so this needs testing directly rather than assumed from scale.
+
+### (Scenario: founder unsure whether their own software product idea is technically sound) Should I expect an app for software development vendor to push back on my product idea itself, not just timelines?
+
+Yes, if there's a genuine technical or market feasibility concern — a vendor confined to only ever pushing back on timelines and never on the underlying idea may be avoiding a harder, more valuable conversation.
+
+### (Scenario: founder asking a voice assistant how to spot a conflict-avoidant vendor) What's a warning sign that a software vendor is avoiding necessary conflict?
+
+A vendor who has never raised a single concern across a real project, or who agreed to every deadline and feature request without qualification, is very likely managing risk silently rather than genuinely never encountering any.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,7 +143,11 @@ Explicitly tell them during kickoff that you want direct, specific pushback on r
     { "@type": "Question", "name": "(Scenario: founder worried pushback means a difficult relationship) Does a vendor pushing back on my requests mean the relationship isn't working well?", "acceptedAnswer": { "@type": "Answer", "text": "Not if the pushback is specific and reasoned — that's often a sign of genuine technical partnership." } },
     { "@type": "Question", "name": "(Scenario: founder trying to evaluate a vendor's honesty during vetting) How can I test during vendor discovery whether they'll push back when needed?", "acceptedAnswer": { "@type": "Answer", "text": "Present a mildly unreasonable timeline during discovery and see how they respond." } },
     { "@type": "Question", "name": "(Scenario: founder trying to understand what happened after a rushed deadline) Why did our rushed feature break after our vendor agreed to hit an aggressive deadline without objection?", "acceptedAnswer": { "@type": "Answer", "text": "They likely compressed or skipped steps, often QA, to hit the deadline without telling you." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to build better norms into a new vendor relationship) How do I encourage a vendor to push back on me when warranted?", "acceptedAnswer": { "@type": "Answer", "text": "Explicitly tell them during kickoff that you want direct, specific pushback on risky requests rather than automatic agreement." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to build better norms into a new vendor relationship) How do I encourage a vendor to push back on me when warranted?", "acceptedAnswer": { "@type": "Answer", "text": "Explicitly tell them during kickoff that you want direct, specific pushback on risky requests rather than automatic agreement." } },
+    { "@type": "Question", "name": "(Scenario: founder wanting to test a vendor before a software services contract is signed) What's a specific test I can run during a sales call to see if a vendor will push back later?", "acceptedAnswer": { "@type": "Answer", "text": "Propose a timeline roughly 30% shorter than realistic and see whether they name specifically what would need to be cut, or simply agree." } },
+    { "@type": "Question", "name": "(Scenario: founder comparing a custom software development company against a large agency) Do larger custom software development company vendors push back less because they have more clients to lose?", "acceptedAnswer": { "@type": "Answer", "text": "Not inherently by size — it depends on how the specific account team is managed and incentivized, so it needs testing directly rather than assumed from scale." } },
+    { "@type": "Question", "name": "(Scenario: founder unsure whether their own software product idea is technically sound) Should I expect an app for software development vendor to push back on my product idea itself, not just timelines?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, if there's a genuine feasibility concern — a vendor who only ever pushes back on timelines may be avoiding a harder conversation about the idea itself." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant how to spot a conflict-avoidant vendor) What's a warning sign that a software vendor is avoiding necessary conflict?", "acceptedAnswer": { "@type": "Answer", "text": "A vendor who has never raised a single concern, or agreed to every deadline and feature request without qualification, is likely managing risk silently." } }
   ]
 }
 </script>

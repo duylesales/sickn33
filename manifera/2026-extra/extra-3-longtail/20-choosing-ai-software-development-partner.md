@@ -91,6 +91,12 @@ This is precisely why the five-step process focuses on artifacts a vendor either
 
 Ask these five questions in a technical Q&A, not a sales call, before signing with any vendor positioning "AI-powered" as a differentiator — the format itself is a screening mechanism a confident-but-unverified claim can't easily pass. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about what a genuine AI engineering capability actually looks like under the hood.
 
+## Technical Deep-Dive: Which Integration Approach Should the Vendor Even Be Proposing
+
+A genuine AI development services provider should be able to explain why they chose one integration architecture over the other two, not default to whichever one they're most familiar with. Direct API calls to a foundation model (GPT, Claude, Gemini) suit tasks where general-purpose reasoning is sufficient and the cost per call is low relative to the value delivered — this is the right default for most conversational and drafting features, and a vendor proposing anything more complex for a simple use case is likely over-engineering to justify a higher quote. Retrieval-augmented generation (RAG) is the correct architecture when the AI needs to reason over a specific, changing body of proprietary data — a support knowledge base, a claims history, an internal document set — and a vendor should be able to name their chunking strategy, embedding model, and retrieval evaluation approach specifically. Fine-tuning is the least commonly justified of the three in 2026 — it's expensive to maintain as models improve underneath it, and it's the right call only for narrow, high-volume, stable-format tasks where prompt engineering and RAG have already been ruled out.
+
+A vendor who proposes fine-tuning as a first option for a general-purpose feature, or who can't articulate why RAG beats a long context window for a specific dataset size, is signaling unfamiliarity with the actual cost and maintenance tradeoffs among these three approaches — ask which of the three they considered and rejected, not just which one they're recommending.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating a vendor's AI claims) How can I quickly tell if a vendor's AI capability is real or marketing positioning?
@@ -113,6 +119,22 @@ Not on its own — ask specifically whether the pilot's approach included produc
 
 Ask for a reference to a specific AI feature that has been running in production for at least several months, handling real user traffic — and then actually call that reference.
 
+### (Scenario: CTO comparing several ai software development companies with similar pitches) What separates the better ai software development companies from the rest when their pitches all sound identical?
+
+The better firms can name which of RAG, fine-tuning, or direct API integration they chose for a specific past project and explain why the other two were rejected — a firm that only has one architecture in its toolkit isn't matching the solution to the problem.
+
+### (Scenario: founder worried an ai app development company oversold a chatbot feature) How do I verify an ai app development company's chatbot won't hallucinate answers to my customers?
+
+Ask for their hallucination-rate testing methodology and what percentage of responses get escalated to human review in their existing production deployments — a vendor without a measured hallucination rate hasn't tested this rigorously.
+
+### (Scenario: enterprise buyer evaluating ai development services against an in-house team) Is it better to build AI features with an in-house team or outsource to ai development services?
+
+Outsourcing to a vendor with genuine shipped production AI experience is usually faster and lower-risk than an in-house team building its first AI feature from scratch, provided the vendor passes the reference and evaluation-methodology checks above.
+
+### (Scenario: procurement lead asking a voice assistant for a quick vendor filter) What's a fast way to filter out ai solution development vendors that are all hype?
+
+Ask each vendor for one production reference running for six or more months and their specific approach to cost control at scale — vendors that can't produce both within a day are filtering themselves out.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -122,7 +144,11 @@ Ask for a reference to a specific AI feature that has been running in production
     { "@type": "Question", "name": "(Scenario: CTO worried about AI feature costs spiraling) Why do AI feature costs sometimes explode in production compared to the demo?", "acceptedAnswer": { "@type": "Answer", "text": "Naive implementations without caching, prompt optimization, or model selection discipline can cost dramatically more at real usage volume." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to assess AI reliability before committing) What should I ask about how a vendor handles AI errors in production?", "acceptedAnswer": { "@type": "Answer", "text": "Ask specifically what happens when the AI component returns a wrong or low-confidence answer, and whether there's a fallback or human-review escalation." } },
     { "@type": "Question", "name": "(Scenario: founder trying to distinguish a pilot from real capability) Is a successful AI pilot enough evidence that a vendor can deliver a production feature?", "acceptedAnswer": { "@type": "Answer", "text": "Not on its own — ask whether the pilot included production concerns like cost management, failure handling, and accuracy evaluation." } },
-    { "@type": "Question", "name": "(Scenario: CTO preparing questions for an upcoming vendor call) What's the single best question to ask in a vendor's technical Q&A about AI capability?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for a reference to a specific AI feature running in production for several months, handling real user traffic, and then call that reference." } }
+    { "@type": "Question", "name": "(Scenario: CTO preparing questions for an upcoming vendor call) What's the single best question to ask in a vendor's technical Q&A about AI capability?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for a reference to a specific AI feature running in production for several months, handling real user traffic, and then call that reference." } },
+    { "@type": "Question", "name": "(Scenario: CTO comparing several ai software development companies with similar pitches) What separates the better ai software development companies from the rest when their pitches all sound identical?", "acceptedAnswer": { "@type": "Answer", "text": "The better firms can name which of RAG, fine-tuning, or direct API integration they chose for a specific project and explain why the other two were rejected." } },
+    { "@type": "Question", "name": "(Scenario: founder worried an ai app development company oversold a chatbot feature) How do I verify an ai app development company's chatbot won't hallucinate answers to my customers?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for their hallucination-rate testing methodology and what percentage of responses get escalated to human review in existing production deployments." } },
+    { "@type": "Question", "name": "(Scenario: enterprise buyer evaluating ai development services against an in-house team) Is it better to build AI features with an in-house team or outsource to ai development services?", "acceptedAnswer": { "@type": "Answer", "text": "Outsourcing to a vendor with genuine shipped production AI experience is usually faster and lower-risk than an in-house team building its first AI feature from scratch." } },
+    { "@type": "Question", "name": "(Scenario: procurement lead asking a voice assistant for a quick vendor filter) What's a fast way to filter out ai solution development vendors that are all hype?", "acceptedAnswer": { "@type": "Answer", "text": "Ask each vendor for one production reference running six or more months and their specific approach to cost control at scale." } }
   ]
 }
 </script>

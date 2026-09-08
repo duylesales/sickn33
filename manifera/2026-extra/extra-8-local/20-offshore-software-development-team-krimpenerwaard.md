@@ -100,6 +100,19 @@ Modeling the true fully loaded cost of three in-house engineering hires for this
 
 If your build-versus-outsource comparison still starts and ends with salary against day rate, it's missing the numbers that actually decide this correctly. Talk to Manifera about a full total-cost-of-ownership model for your specific staffing need: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## The Fully Loaded Cost Worksheet: Line Items to Add Before Comparing Numbers
+
+Before a Krimpenerwaard CFO puts a gross salary figure next to a day rate, run it through this worksheet — each line is a real cost most recruiting-agency quotes leave off:
+
+- **Statutory holiday allowance (vakantiegeld):** 8% of gross annual salary, mandatory under Dutch law, rarely included in the headline number a recruiter quotes.
+- **Employer pension contribution:** Typically 15-20% of gross salary under standard Dutch pension schemes, on top of base pay.
+- **WW/WIA social security premiums:** Employer-side unemployment and disability insurance contributions, another several percentage points of gross salary.
+- **13th-month or year-end bonus:** Common in competitive Dutch tech hiring to retain scarce talent, and a real recurring cost even when framed as "discretionary."
+- **Recruiting agency fee:** Typically 20-30% of first-year salary for a mid-to-senior technical hire, paid once but amortized poorly if the hire leaves within eighteen months.
+- **Equipment and per-seat overhead:** Laptop, software licenses, and office allocation typically add a few thousand euros per engineer per year, easy to lose in a general overhead line.
+
+Summed together, these line items routinely push fully loaded cost well above gross salary — the gap a salary-only comparison against a day rate consistently misses.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO comparing a recruiting agency's salary quote against an offshore day rate) Why does a salary-versus-day-rate comparison give a misleading answer?
@@ -122,6 +135,22 @@ Not with proper governance structure. A well-run engagement includes regular rep
 
 Most companies see the eliminated recruiting cost alone recover the transition cost within the first quarter, with the workforce-elasticity savings compounding over the life of the project beyond that.
 
+### (Scenario: CFO calculating Dutch-specific employer costs like vakantiegeld and 13th month) What specific Dutch employer costs are easy to leave out of an in-house salary comparison?
+
+The 8% statutory holiday allowance (vakantiegeld), employer pension contributions of roughly 15-20% of gross salary, WW/WIA social security premiums, and often a 13th-month bonus in competitive tech hiring markets — combined, these routinely add a meaningful percentage on top of gross salary alone.
+
+### (Scenario: CFO considering keeping a small in-house core team alongside an offshore pod) Does it make sense to keep one or two in-house engineers while outsourcing the rest of the team?
+
+Yes — a common hybrid model keeps a small in-house core owning domain knowledge and architecture continuity while the offshore pod handles the bulk of build and maintenance execution, capturing most of the total-cost-of-ownership advantage without losing all local institutional knowledge.
+
+### (Scenario: CFO worried about Dutch flexible-work/WAB rules complicating short-term in-house contracts) Do Dutch flexible-labor rules make short-term in-house hiring for a temporary staffing peak legally complicated?
+
+Yes — under the Wet Arbeidsmarkt in Balans, successive temporary contracts convert to a permanent contract after a defined period or number of renewals, which is exactly the legal friction a dedicated offshore team avoids entirely since it isn't an employment relationship at all.
+
+### (Scenario: CFO negotiating minimum contract length or notice period with a dedicated offshore team) What's a reasonable minimum commitment length for a dedicated offshore team engagement?
+
+Most well-structured dedicated-pod engagements ask for a three-to-six-month minimum commitment to justify onboarding investment, with month-to-month flexibility afterward — meaningfully shorter than the effective lock-in of an in-house hire once severance and re-recruiting costs are considered.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -131,7 +160,11 @@ Most companies see the eliminated recruiting cost alone recover the transition c
     { "@type": "Question", "name": "(Scenario: CFO whose company has had recent engineering attrition) How should recent attrition history factor into a build-versus-outsource decision?", "acceptedAnswer": { "@type": "Answer", "text": "Model it explicitly as a probability of recurrence, not as bad luck. A company with a recent pattern of early departures should price that risk into the in-house side of the comparison." } },
     { "@type": "Question", "name": "(Scenario: CFO evaluating a project with a temporary staffing peak) Does outsourcing make sense for a project with a temporary staffing peak, or only for permanent needs?", "acceptedAnswer": { "@type": "Answer", "text": "It's often a better fit specifically for temporary peaks. A dedicated offshore team can scale up during a build phase and down during maintenance without the severance and morale cost of reducing in-house headcount." } },
     { "@type": "Question", "name": "(Scenario: CFO worried about losing management visibility with an offshore team) Does outsourcing reduce our visibility and control over the engineering work?", "acceptedAnswer": { "@type": "Answer", "text": "Not with proper governance structure. A well-run engagement includes regular reporting and an accountable delivery lead, and often frees internal leadership time previously spent on day-to-day management of in-house hires." } },
-    { "@type": "Question", "name": "(Scenario: CFO deciding how long it takes to see savings from switching models) How quickly does switching from in-house hiring to a dedicated offshore team show up in the budget?", "acceptedAnswer": { "@type": "Answer", "text": "Most companies see the eliminated recruiting cost alone recover the transition cost within the first quarter, with workforce-elasticity savings compounding over the life of the project beyond that." } }
+    { "@type": "Question", "name": "(Scenario: CFO deciding how long it takes to see savings from switching models) How quickly does switching from in-house hiring to a dedicated offshore team show up in the budget?", "acceptedAnswer": { "@type": "Answer", "text": "Most companies see the eliminated recruiting cost alone recover the transition cost within the first quarter, with workforce-elasticity savings compounding over the life of the project beyond that." } },
+    { "@type": "Question", "name": "(Scenario: CFO calculating Dutch-specific employer costs like vakantiegeld and 13th month) What specific Dutch employer costs are easy to leave out of an in-house salary comparison?", "acceptedAnswer": { "@type": "Answer", "text": "The 8% statutory holiday allowance, employer pension contributions of roughly 15-20% of gross salary, WW/WIA social security premiums, and often a 13th-month bonus in competitive tech hiring markets." } },
+    { "@type": "Question", "name": "(Scenario: CFO considering keeping a small in-house core team alongside an offshore pod) Does it make sense to keep one or two in-house engineers while outsourcing the rest of the team?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a common hybrid model keeps a small in-house core owning domain knowledge and architecture continuity while the offshore pod handles the bulk of build and maintenance execution." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried about Dutch flexible-work/WAB rules complicating short-term in-house contracts) Do Dutch flexible-labor rules make short-term in-house hiring for a temporary staffing peak legally complicated?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, under the Wet Arbeidsmarkt in Balans, successive temporary contracts convert to a permanent contract after a defined period or number of renewals, friction a dedicated offshore team avoids entirely." } },
+    { "@type": "Question", "name": "(Scenario: CFO negotiating minimum contract length or notice period with a dedicated offshore team) What's a reasonable minimum commitment length for a dedicated offshore team engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Most well-structured dedicated-pod engagements ask for a three-to-six-month minimum commitment, with month-to-month flexibility afterward, shorter than the effective lock-in of an in-house hire." } }
   ]
 }
 </script>

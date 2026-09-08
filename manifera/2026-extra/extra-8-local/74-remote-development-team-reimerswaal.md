@@ -99,6 +99,18 @@ An accountability failure in a regulated or compliance-sensitive system, based o
 
 If your remote team's velocity reports look fine but you couldn't say who owns your most critical module, that gap is exactly where the next incident will find you, and finding it during a routine review is considerably cheaper than finding it during a regulatory audit. Talk to a Manifera architect: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## Implementation Checklist: Auditing an Inherited Remote Team in One Week
+
+A VP of Engineering who has just inherited a remote team with unknown accountability can get a real answer within a week, not a quarter, by checking these five items directly:
+
+- **Pull up the last 20 merged pull requests.** Count how many have a named, distinct approver rather than a self-merge or a rubber-stamp from whoever was online. A ratio below 80% is a structural gap, not a fluke.
+- **Ask for the CODEOWNERS file or equivalent ownership map**, then spot-check three critical modules against it. If the map doesn't exist or is visibly stale, ownership is being reconstructed from memory, not documentation.
+- **Request the last incident's timeline**, from detection to resolution, with named individuals at each step. A vague or unanimous "the team handled it" answer means there's no real accountability trail underneath.
+- **Check for a written, timestamped standup or sprint-close record** going back at least a month. Its absence means progress visibility depends entirely on someone's verbal recollection.
+- **Ask when the last incident-response drill was run.** "Never" is the most common honest answer, and it's the single fastest gap to close.
+
+Scoring poorly on three or more of these is exactly the pattern that turned this Reimerswaal company's compliance bug into a three-week forensic audit.
+
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering burned by an unaccountable remote team before) How is a well-governed remote team actually more accountable than what we had before?

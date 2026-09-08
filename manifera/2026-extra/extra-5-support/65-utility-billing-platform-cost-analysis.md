@@ -86,6 +86,10 @@ Komunalni Uslugi Plovdiv proceeded with a realistically scoped billing platform 
 
 Before committing to a utility billing platform budget, insist on a cost estimate modeled against your realistic projected meter fleet volume and actual multi-jurisdiction operating footprint, not small-scale internal testing conditions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic utility billing platform cost scoping exercise.
 
+## By The Numbers: Where Utility Billing Platform Engineering Budget Goes
+
+For a utility deploying at real multi-jurisdiction scale, four cost categories account for roughly 75-85% of total engineering spend, with the remainder going to customer-facing statement UI and support tooling. Meter-data ingestion typically consumes 22-28% of build budget once engineered for real fleet-scale deduplication — a meter that retransmits the same reading after a connectivity gap needs to be recognized and discarded, not double-counted, and that recognition logic gets measurably harder as fleet size and retransmission frequency both grow. The tariff engine runs 18-24%, driven primarily by time-of-use and tiered-rate calculation logic per jurisdiction rather than the statement-rendering UI, which is comparatively cheap. Payment processing and payment-plan handling absorbs 16-22%, since arrears-aware installment structuring and payment-retry logic are considerably more involved than a single recurring charge. Multi-jurisdiction infrastructure typically runs 14-20%, and is the category most likely to be missing from an initial quote entirely, since a single-jurisdiction pilot generates no cross-jurisdiction rule conflicts to reveal the requirement. A vendor's quote that treats meter-data deduplication as part of a generic "data ingestion" line item, or that doesn't itemize time-of-use tariff calculation separately from flat-rate billing, is very likely built against pilot-scale assumptions rather than a utility's real multi-meter, multi-jurisdiction footprint.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial utility billing platform estimate) Why do utility billing platform cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ A meaningful share of utility customers need structured payment-plan and install
 
 Correct billing depends on properly synchronized jurisdiction-specific tariff rules, customer assignment, and regulatory reporting, requiring genuinely distributed infrastructure with real ongoing operational complexity.
 
+### (Scenario: utility IT lead deciding between an established CIS/billing vendor and a custom build) When does a custom utility billing platform outperform an established Customer Information System (CIS) vendor?
+
+Once a utility operates across two or more regulatory jurisdictions with genuinely different tariff structures, established CIS vendors typically charge per-jurisdiction module fees and impose longer change-request cycles for new time-of-use rate structures than a custom, configurable tariff engine requires.
+
+### (Scenario: engineering lead diagnosing a duplicate-reading billing error) How do you stop a meter that retransmits the same reading after a connectivity gap from being billed twice?
+
+A deduplication key derived from the meter ID, reading timestamp, and reading value rejects a retransmitted reading that matches a previously ingested record, rather than treating every incoming transmission as a new billable reading by default.
+
+### (Scenario: CTO estimating timeline before committing to a deployment date) How long does building a production-ready multi-jurisdiction utility billing platform typically take?
+
+A realistic timeline runs 8-11 months for an MVP covering meter-data ingestion and single-jurisdiction tariff calculation, with multi-jurisdiction tariff configurability and payment-plan infrastructure typically adding another 3-5 months before a multi-territory deployment is genuinely ready.
+
+### (Scenario: regulatory affairs lead preparing a rate-filing submission) What does a regulator typically require in a rate-filing report generated from the billing platform?
+
+A regulator typically expects a jurisdiction-specific breakdown showing exactly which tariff structure applied to which customer segment during the filing period, reconciled against actual billed amounts, which is why the tariff engine needs to retain historical rule versions rather than only the currently active ruleset.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Correct billing depends on properly synchronized jurisdiction-specific tariff ru
     { "@type": "Question", "name": "(Scenario: engineering lead scoping meter-data ingestion) Why is meter-data ingestion harder to scale correctly than it appears in small-scale testing?", "acceptedAnswer": { "@type": "Answer", "text": "Reading volume, retransmission frequency, and reconciliation complexity scale with fleet size and connectivity variability." } },
     { "@type": "Question", "name": "(Scenario: product lead scoping the tariff engine) Why does the tariff engine require more than a single pricing formula?", "acceptedAnswer": { "@type": "Answer", "text": "Multi-jurisdiction operation requires configurable calculation logic to apply each jurisdiction's distinct tariff structure." } },
     { "@type": "Question", "name": "(Scenario: CTO planning payment infrastructure) Why does payment processing deserve substantial, ongoing engineering investment for a utility billing platform?", "acceptedAnswer": { "@type": "Answer", "text": "Payment-plan and installment handling integrated with collections processes is considerably more complex than one-time payments." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for multi-jurisdiction reach) Why does serving multiple regulatory jurisdictions add real backend infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Correct billing depends on synchronized jurisdiction-specific tariff rules, customer assignment, and regulatory reporting." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for multi-jurisdiction reach) Why does serving multiple regulatory jurisdictions add real backend infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Correct billing depends on synchronized jurisdiction-specific tariff rules, customer assignment, and regulatory reporting." } },
+    { "@type": "Question", "name": "(Scenario: utility IT lead deciding between an established CIS/billing vendor and a custom build) When does a custom utility billing platform outperform an established Customer Information System (CIS) vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Past two or more jurisdictions with different tariff structures, established CIS vendors charge per-jurisdiction module fees and slower change cycles than a custom configurable tariff engine." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead diagnosing a duplicate-reading billing error) How do you stop a meter that retransmits the same reading after a connectivity gap from being billed twice?", "acceptedAnswer": { "@type": "Answer", "text": "A deduplication key derived from meter ID, timestamp, and reading value rejects a retransmitted reading that matches a previously ingested record." } },
+    { "@type": "Question", "name": "(Scenario: CTO estimating timeline before committing to a deployment date) How long does building a production-ready multi-jurisdiction utility billing platform typically take?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 8-11 months for a single-jurisdiction MVP, plus another 3-5 months for multi-jurisdiction tariff configurability and payment-plan infrastructure." } },
+    { "@type": "Question", "name": "(Scenario: regulatory affairs lead preparing a rate-filing submission) What does a regulator typically require in a rate-filing report generated from the billing platform?", "acceptedAnswer": { "@type": "Answer", "text": "A jurisdiction-specific breakdown of which tariff applied to which customer segment during the filing period, reconciled against billed amounts, requiring retained historical rule versions." } }
   ]
 }
 </script>

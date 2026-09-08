@@ -92,6 +92,12 @@ This reframing does real work beyond just organizing a feature list — it gives
 
 Before finalizing an MVP scope under real budget pressure, explicitly separate your feature list into "negotiable, satisficing-appropriate" and "non-negotiable foundation" columns — the trade-offs get much clearer once framed this way. [Schedule a free consultation with our Amsterdam team](https://www.manifera.com/contact-us/) about scoping your MVP with this framework.
 
+## Five Foundation Questions to Ask Before You Build Software
+
+Before any team starts to build software against your MVP scope, run these five questions past the proposal and confirm each has a specific, non-hand-wavy answer. First: how is authentication implemented — a named, standard approach (OAuth, a managed auth provider, salted password hashing) rather than "we'll handle login." Second: what happens on a failed payment or signup submission — a specific error message and retry path, not a silent failure. Third: what input validation exists on every form that writes to the database — naming the fields, not a general assurance. Fourth: is sensitive data (passwords, personal information, payment details) encrypted at rest and in transit, by name of the mechanism used. Fifth: what does the minimal pre-launch QA pass actually cover, and who performs it independent of the person who wrote the code.
+
+A vendor proposing to build software who answers all five specifically, typically within the same conversation, has genuinely internalized the features-versus-foundation distinction. A vendor who answers with "don't worry, we've got that covered" to more than one of the five hasn't scoped foundation as a distinct, protected category — which means it's the first thing likely to get quietly compressed if the project runs over on time or budget, exactly the failure mode Kadaka Health's original freelancer engagement fell into before Manifera rescoped it.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder with a tight MVP budget) How do I decide what to cut from my MVP scope without breaking the product?
@@ -114,6 +120,22 @@ Not usually significantly longer — foundation elements like proper authenticat
 
 Frame it around reliability and user trust — a smaller, reliable feature set produces more genuine, trustworthy user feedback than a larger, fragile one, which is the entire point of building an MVP in the first place.
 
+### (Scenario: non-technical founder about to build software for the first time) I want to build software but don't know how to check if the vendor is protecting the foundation. What do I actually ask?
+
+Ask the five foundation questions directly — how authentication works, what happens on a failed submission, what input validation exists, whether sensitive data is encrypted, and who performs QA independent of the developer — and expect specific, named answers to each.
+
+### (Scenario: founder deciding between building an MVP and buying an off-the-shelf tool first) Should I build software from scratch for my MVP or start with a no-code or off-the-shelf tool?
+
+If the core hypothesis can be tested with an off-the-shelf tool's foundation already handled for you, that's often faster to validate; build custom software once you need control over the foundation elements a generic tool can't guarantee for your specific use case.
+
+### (Scenario: founder whose app to build involves handling user payments from day one) Does the foundation-over-features rule change if my app to build involves payments from the very first version?
+
+No, it becomes stricter — payment handling moves error handling, data validation, and security from "never cut" to "verify explicitly with a named payment processor and PCI-relevant safeguards" before writing any other feature.
+
+### (Scenario: founder asking a voice assistant for the short version) What's the one-sentence rule for what to cut when building custom software on a budget?
+
+Cut features that aren't needed to test your core hypothesis; never cut authentication, error handling, data validation, or a basic QA pass, regardless of budget pressure.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -123,7 +145,11 @@ Frame it around reliability and user trust — a smaller, reliable feature set p
     { "@type": "Question", "name": "(Scenario: founder pressured to cut QA to save budget) Is it ever okay to skip QA entirely for an MVP to save money?", "acceptedAnswer": { "@type": "Answer", "text": "Skipping QA entirely is rarely worth the savings — a minimal but real QA pass catches errors that most damage early user trust." } },
     { "@type": "Question", "name": "(Scenario: founder unsure if their current MVP scope is safe) How do I know if my current MVP scope has cut something it shouldn't have?", "acceptedAnswer": { "@type": "Answer", "text": "Ask specifically whether authentication, error handling, and data validation were included as scoped work, not just assumed to be part of the build." } },
     { "@type": "Question", "name": "(Scenario: founder worried a foundation-first MVP will take too long) Does prioritizing foundation over features make an MVP take significantly longer to build?", "acceptedAnswer": { "@type": "Answer", "text": "Not usually — foundation elements are standard practice that take similar time whether or not explicitly prioritized, unlike additional features which do add real scope." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to explain this trade-off to a co-founder or investor) How do I explain to stakeholders why we're launching with fewer features than planned?", "acceptedAnswer": { "@type": "Answer", "text": "Frame it around reliability and user trust — a smaller, reliable feature set produces more genuine, trustworthy user feedback than a larger, fragile one." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to explain this trade-off to a co-founder or investor) How do I explain to stakeholders why we're launching with fewer features than planned?", "acceptedAnswer": { "@type": "Answer", "text": "Frame it around reliability and user trust — a smaller, reliable feature set produces more genuine, trustworthy user feedback than a larger, fragile one." } },
+    { "@type": "Question", "name": "(Scenario: non-technical founder about to build software for the first time) I want to build software but don't know how to check if the vendor is protecting the foundation. What do I actually ask?", "acceptedAnswer": { "@type": "Answer", "text": "Ask how authentication works, what happens on a failed submission, what input validation exists, whether sensitive data is encrypted, and who performs QA independent of the developer." } },
+    { "@type": "Question", "name": "(Scenario: founder deciding between building an MVP and buying an off-the-shelf tool first) Should I build software from scratch for my MVP or start with a no-code or off-the-shelf tool?", "acceptedAnswer": { "@type": "Answer", "text": "If an off-the-shelf tool's foundation already covers your hypothesis test, that's often faster; build custom software once you need control the generic tool can't guarantee." } },
+    { "@type": "Question", "name": "(Scenario: founder whose app to build involves handling user payments from day one) Does the foundation-over-features rule change if my app to build involves payments from the very first version?", "acceptedAnswer": { "@type": "Answer", "text": "It becomes stricter — payment handling requires a named payment processor and explicit PCI-relevant safeguards verified before any other feature work." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant for the short version) What's the one-sentence rule for what to cut when building custom software on a budget?", "acceptedAnswer": { "@type": "Answer", "text": "Cut features not needed to test your core hypothesis; never cut authentication, error handling, data validation, or a basic QA pass." } }
   ]
 }
 </script>

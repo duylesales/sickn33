@@ -74,6 +74,10 @@ For a four-month billing module build, the cost gap between a Netherlands-based 
 
 If neither proposal on your desk specifies how it handles proration and payment-retry edge cases, ask before you decide on price alone. [Talk to Manifera about a head-to-head SaaS proposal comparison](https://www.manifera.com/contact-us/).
 
+## Technical Deep-Dive: Multi-Tenant Architecture Decisions a Vendor Comparison Should Surface
+
+Beyond billing edge cases, a SaaS development outsourcing proposal should specify its multi-tenancy approach, because the choice affects both cost and future scalability in ways a rate-card comparison never surfaces. Three models dominate: shared schema with a tenant_id column, the cheapest to build and fastest to ship, but requiring rigorous row-level security to prevent cross-tenant data leakage — the single most common security incident in outsourced multi-tenant builds; schema-per-tenant, which adds isolation at the cost of migration complexity once tenant count exceeds roughly 200-300; and database-per-tenant, reserved for enterprise SaaS with strict compliance or data-residency requirements per customer, which adds meaningful infrastructure overhead. For a mid-market SaaS platform under 500 tenants, shared schema with enforced row-level security policies (Postgres RLS or equivalent) is almost always the right call, and a proposal that defaults to a heavier model without asking about tenant count and compliance needs is either over-engineering the build or padding the timeline. Ask any vendor, Dutch or Vietnamese, to name their tenant-isolation strategy and row-level security testing approach explicitly before comparing quotes — this is a harder question for an under-governed offshore vendor to answer specifically than the billing edge-case question, because it requires architectural judgment, not just execution capacity.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO comparing two live SaaS proposals before a board recommendation) What's the single most important thing to compare beyond the rate card?
@@ -96,6 +100,22 @@ Yes. Request a specific edge-case test plan and named team composition from both
 
 A deliberate daily overlap window is scheduled specifically around key review points in the billing logic, supplemented by the Amsterdam team's independent review catching issues asynchronously between overlap windows.
 
+### (Scenario: CTO choosing a tenant isolation model) What multi-tenancy architecture should a mid-market SaaS platform use, shared schema or schema-per-tenant?
+
+For most platforms under 500 tenants, shared schema with enforced row-level security is the right default — it's cheaper to build and fast to ship, provided the row-level security policies are rigorously tested. Schema-per-tenant only earns its added migration complexity past roughly 200-300 tenants or for strict per-customer compliance needs.
+
+### (Scenario: CTO worried about cross-tenant data leakage) What's the most common security incident in outsourced multi-tenant SaaS builds, and how is it prevented?
+
+Cross-tenant data leakage from an incorrectly scoped query in a shared-schema design is the most common incident. It's prevented by enforcing row-level security at the database layer (not just application-layer filtering) and testing it explicitly as part of the QA plan, not assuming it as a byproduct of the ORM.
+
+### (Scenario: CTO scaling past initial tenant count) At what tenant count does a shared-schema architecture need to be reconsidered?
+
+Around 200-300 tenants, migration and noisy-neighbor performance concerns typically start justifying a move toward schema-per-tenant or dedicated resource pools for larger accounts, though most mid-market platforms never need to cross that threshold.
+
+### (Scenario: CTO evaluating vendor technical judgment before signing) What technical question best separates a governed offshore vendor from an under-governed one during vendor selection?
+
+Ask them to name their tenant-isolation strategy and row-level security testing approach specifically. It's a harder question for an under-governed vendor to answer with architectural judgment than a general "we follow best practices" claim, and the quality of the answer is a reliable proxy for overall engineering discipline.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +125,11 @@ A deliberate daily overlap window is scheduled specifically around key review po
     { "@type": "Question", "name": "(Scenario: CTO worried the cost gap implies a quality gap) If Manifera's quote is roughly half the Dutch agency's, is quality necessarily lower?", "acceptedAnswer": { "@type": "Answer", "text": "Not when the proposal demonstrates comparable or superior rigor. Manifera's Amsterdam review layer often adds independent scrutiny a single-vendor Dutch engagement doesn't include by default." } },
     { "@type": "Question", "name": "(Scenario: CTO wanting post-launch coverage for a high-stakes module) Does the engagement include support after the billing module launches?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Manifera's pod structure typically includes a defined post-launch monitoring window through at least the first full billing cycle." } },
     { "@type": "Question", "name": "(Scenario: CTO deciding how to structure the vendor comparison itself) Should we ask both vendors for the same level of proposal detail before comparing?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Request a specific edge-case test plan and named team composition from both vendors before comparing price." } },
-    { "@type": "Question", "name": "(Scenario: CTO concerned about communication quality on sensitive billing logic) How does Manifera structure communication for a module this sensitive to errors?", "acceptedAnswer": { "@type": "Answer", "text": "A deliberate daily overlap window is scheduled specifically around key review points, supplemented by the Amsterdam team's independent review catching issues asynchronously." } }
+    { "@type": "Question", "name": "(Scenario: CTO concerned about communication quality on sensitive billing logic) How does Manifera structure communication for a module this sensitive to errors?", "acceptedAnswer": { "@type": "Answer", "text": "A deliberate daily overlap window is scheduled specifically around key review points, supplemented by the Amsterdam team's independent review catching issues asynchronously." } },
+    { "@type": "Question", "name": "(Scenario: CTO choosing a tenant isolation model) What multi-tenancy architecture should a mid-market SaaS platform use, shared schema or schema-per-tenant?", "acceptedAnswer": { "@type": "Answer", "text": "Shared schema with enforced row-level security is the right default for most platforms under 500 tenants; schema-per-tenant only earns its added complexity past roughly 200-300 tenants or for strict compliance needs." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about cross-tenant data leakage) What's the most common security incident in outsourced multi-tenant SaaS builds, and how is it prevented?", "acceptedAnswer": { "@type": "Answer", "text": "Cross-tenant data leakage from an incorrectly scoped query, prevented by enforcing row-level security at the database layer and testing it explicitly as part of the QA plan." } },
+    { "@type": "Question", "name": "(Scenario: CTO scaling past initial tenant count) At what tenant count does a shared-schema architecture need to be reconsidered?", "acceptedAnswer": { "@type": "Answer", "text": "Around 200-300 tenants, when migration and noisy-neighbor performance concerns typically start justifying schema-per-tenant or dedicated resource pools." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating vendor technical judgment before signing) What technical question best separates a governed offshore vendor from an under-governed one during vendor selection?", "acceptedAnswer": { "@type": "Answer", "text": "Ask them to name their tenant-isolation strategy and row-level security testing approach specifically — the quality of that answer is a reliable proxy for overall engineering discipline." } }
   ]
 }
 </script>

@@ -70,6 +70,17 @@ Manifera was engaged to build a full incident-response framework: failure-mode-m
 
 Incident-response immaturity is a tax paid in outage duration, and duration is what compounds into real money — SLA penalties, chargebacks, and regulatory scrutiny scale roughly linearly with the minutes an outage stays unresolved, which means a team without runbooks isn't just risking a bad night, it's risking €40,000-€100,000 per significant incident in a payments or fintech context, multiplied by however many incidents a year an immature practice generates. A mature incident-response framework costs a fraction of a single major outage to build and pays for itself the first time a rehearsed runbook turns a ninety-minute crisis into an eighteen-minute non-event. Offshore development services without pre-authorized escalation authority are burning your recovery time, and your cash, every time the pager goes off. [Talk to Manifera](https://www.manifera.com/contact-us/) about an incident-response maturity assessment before the next 3 a.m. call.
 
+## Severity Classification: The Framework That Determines Who Gets Woken Up
+
+A governance software development practice that treats every alert with the same urgency burns out on-call engineers and desensitizes the team to real emergencies. A working SEV framework, applied consistently across every offshore software development team on the account:
+
+- **SEV-1 (full outage or data-integrity risk):** Page immediately, all channels. Target time-to-acknowledge under 5 minutes, time-to-mitigate under 30 minutes. Requires named executive notification within 15 minutes for payments, healthcare, or any regulated data path.
+- **SEV-2 (major feature degraded, workaround exists):** Page during business hours, escalate to on-call after hours only if customer-facing. Target time-to-acknowledge under 15 minutes, resolution within 4 hours.
+- **SEV-3 (minor degradation, no customer-visible impact):** Ticket queue, next business day. No page.
+- **SEV-4 (cosmetic or internal-tooling issue):** Backlog, no SLA.
+
+The single most common maturity gap Manifera finds in an incident-response audit: teams running SEV-1 response procedures — full page-outs at 3 a.m. — for what is structurally a SEV-2 or SEV-3 event, because no severity rubric was ever defined. That miscalibration is what produces on-call burnout independent of actual outage frequency, and it's fixable in a single working session, not a quarter-long initiative.
+
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering after a bad outage) How do we know if our incident response is actually immature or just had one bad night?
@@ -92,6 +103,22 @@ Even a lightweight structured incident simulation — walking through a failure 
 
 Yes, a standalone incident-response maturity assessment audits runbook coverage, escalation authority, and postmortem discipline, and delivers a prioritized remediation plan independent of any decision about ongoing operational support.
 
+### (Scenario: VP of Engineering trying to reduce on-call burnout) How do we stop paging engineers for incidents that aren't actually emergencies?
+
+Define a severity classification framework with specific time-to-acknowledge and time-to-mitigate targets per tier, so alerts route to the appropriate channel — full page-out, business-hours escalation, or next-day ticket — instead of every alert defaulting to the loudest notification available.
+
+### (Scenario: VP of Engineering evaluating IT development outsourcing vendors for follow-the-sun coverage) What does genuine follow-the-sun on-call coverage actually require from an offshore development team?
+
+It requires overlapping handoff windows with documented context transfer, not just a rotation calendar across time zones — the outgoing on-call engineer needs to actively brief the incoming one on any open incident or degraded system, and the incoming engineer needs pre-granted production access, not a request pending approval.
+
+### (Scenario: VP of Engineering deciding how often to run incident simulations) How frequently should we run a simulated-incident exercise once we have runbooks in place?
+
+Quarterly is the practical minimum for a production system handling regulated or financial data; less frequent simulation lets runbooks silently go stale as the underlying architecture changes, so the next real incident still finds a gap despite the documentation existing.
+
+### (Scenario: VP of Engineering measuring whether incident-response investment is paying off) What metric should we track quarter over quarter to prove incident-response maturity is actually improving?
+
+Track mean time to mitigate (not just time to resolve) by severity tier, alongside the percentage of incidents with a pre-existing tested runbook. A maturing practice shows both numbers moving in the same direction: MTTM falling and runbook coverage rising.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +128,11 @@ Yes, a standalone incident-response maturity assessment audits runbook coverage,
     { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating offshore development services) What should 24/7 support actually mean in a vendor contract?", "acceptedAnswer": { "@type": "Answer", "text": "It should mean named engineers with real production authority on a genuine follow-the-sun rotation, rehearsed against documented runbooks, not a ticket queue that escalates to someone awake hours later." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering building a postmortem process) How do we make postmortems actually change anything instead of just documenting incidents?", "acceptedAnswer": { "@type": "Answer", "text": "Require every postmortem to produce remediation items with a named owner and a deadline, and run a recurring review that checks completion, not just documentation." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering considering incident simulation) Is chaos engineering worth the investment for a mid-market company?", "acceptedAnswer": { "@type": "Answer", "text": "Even a lightweight structured incident simulation surfaces runbook gaps far cheaper than discovering them live. Full chaos engineering is valuable at scale, but simulation exercises deliver most of the benefit at a fraction of the cost." } },
-    { "@type": "Question", "name": "(Scenario: VP of Engineering wanting an outside assessment) Can Manifera assess our incident-response maturity without taking over on-call?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a standalone incident-response maturity assessment audits runbook coverage, escalation authority, and postmortem discipline, and delivers a prioritized remediation plan independent of any decision about ongoing operational support." } }
+    { "@type": "Question", "name": "(Scenario: VP of Engineering wanting an outside assessment) Can Manifera assess our incident-response maturity without taking over on-call?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a standalone incident-response maturity assessment audits runbook coverage, escalation authority, and postmortem discipline, and delivers a prioritized remediation plan independent of any decision about ongoing operational support." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering trying to reduce on-call burnout) How do we stop paging engineers for incidents that aren't actually emergencies?", "acceptedAnswer": { "@type": "Answer", "text": "Define a severity classification framework with specific time-to-acknowledge and time-to-mitigate targets per tier, so alerts route to the appropriate channel instead of every alert defaulting to the loudest notification available." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating IT development outsourcing vendors for follow-the-sun coverage) What does genuine follow-the-sun on-call coverage actually require from an offshore development team?", "acceptedAnswer": { "@type": "Answer", "text": "It requires overlapping handoff windows with documented context transfer, not just a rotation calendar across time zones. The incoming on-call engineer needs pre-granted production access, not a request pending approval." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering deciding how often to run incident simulations) How frequently should we run a simulated-incident exercise once we have runbooks in place?", "acceptedAnswer": { "@type": "Answer", "text": "Quarterly is the practical minimum for a production system handling regulated or financial data; less frequent simulation lets runbooks silently go stale as the underlying architecture changes." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering measuring whether incident-response investment is paying off) What metric should we track quarter over quarter to prove incident-response maturity is actually improving?", "acceptedAnswer": { "@type": "Answer", "text": "Track mean time to mitigate by severity tier, alongside the percentage of incidents with a pre-existing tested runbook. A maturing practice shows MTTM falling and runbook coverage rising together." } }
   ]
 }
 </script>

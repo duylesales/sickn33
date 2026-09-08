@@ -76,6 +76,12 @@ A tabled board approval isn't a free do-over — it's a quarter of delayed roadm
 
 The fastest path through board approval isn't a more persuasive pitch — it's a structure that survives the five questions above before the meeting starts. [Talk to Manifera about building a board-ready proposal](https://www.manifera.com/contact-us/).
 
+## EU AI Act Exposure: The Question Boards Are Starting to Ask
+
+For any outsourcing development company engagement that touches AI-adjacent functionality — recommendation engines, automated decisioning, document processing with ML components — a growing number of European boards now ask specifically about EU AI Act classification, and a CFO caught unprepared on this in 2026 looks the way one caught unprepared on GDPR looked in 2019. The practical answer needs three parts: first, confirm which risk tier the specific functionality falls under (most standard business-software AI features land in "limited risk," triggering transparency obligations rather than the heavier "high-risk" conformity assessment reserved for things like biometric identification or credit scoring); second, confirm the offshore development team is building to documentation standards that would satisfy a high-risk classification even if the current build doesn't require it, since scope tends to expand and retrofitting compliance documentation after the fact is far more expensive than building it in from the start; third, name who is accountable for ongoing AI Act compliance monitoring as the regulation's phased obligations continue rolling out through 2026 and beyond.
+
+A governance layer that already tracks EU regulatory obligations as a core function — the same one accountable for GDPR — is structurally better positioned to absorb this than treating it as a one-off question answered once and forgotten, since the obligations are still evolving.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO preparing a first board presentation) What's the single most common reason a board tables an outsourcing budget proposal?
@@ -98,6 +104,22 @@ With source code owned by the company from day one, thorough documentation stand
 
 Present the model broken down by team composition and scope discipline rather than a single headline percentage — boards that have seen an optimistic number evaporate into change orders respond far better to a defensible breakdown than a confident claim.
 
+### (Scenario: CFO whose outsourced project includes AI-adjacent features) Our project includes some AI-powered functionality — does that add board scrutiny beyond the standard five questions?
+
+Yes, increasingly — boards are starting to ask for EU AI Act risk-tier classification for any AI-adjacent feature, so be ready to state whether the functionality falls under limited-risk transparency obligations or the heavier high-risk conformity assessment tier.
+
+### (Scenario: CFO unsure how to answer a board question about AI Act compliance timing) The EU AI Act's obligations are still rolling out — how do we answer a board question about a regulation that isn't fully in force yet?
+
+Name who specifically is accountable for tracking the phased obligations as they take effect and confirm the development team is documenting to a standard that would satisfy a higher-risk classification even if not currently required, since retrofitting documentation later is far more expensive.
+
+### (Scenario: CFO whose board wants to know if an outsourcing development company can be trusted with regulatory-sensitive scope) Should regulatory-sensitive functionality be kept out of an outsourced development scope entirely?
+
+Not necessarily — a governed structure with a dedicated compliance-tracking function is often better positioned to handle regulatory-sensitive scope than an internal team without dedicated regulatory-monitoring capacity, provided the governance layer explicitly owns that tracking function.
+
+### (Scenario: CFO whose board wants a repeatable process for future outsourcing decisions, not a one-time fix) How do we make sure future outsourcing proposals don't run into the same board delays?
+
+Build a standing internal template covering the five recurring questions — IP, accountability, exit path, cost model, and compliance/data residency — so every future proposal starts from a board-ready structure rather than reconstructing the case from scratch each time.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,7 +129,11 @@ Present the model broken down by team composition and scope discipline rather th
     { "@type": "Question", "name": "(Scenario: CFO whose proposal was previously rejected) Our board already rejected one offshore proposal — how do we rebuild credibility for a resubmission?", "acceptedAnswer": { "@type": "Answer", "text": "Rebuild the proposal around the five recurring board questions: IP jurisdiction, accountability, exit path, cost model, and compliance, with specific, citable answers to each." } },
     { "@type": "Question", "name": "(Scenario: CFO asked about data residency and compliance) How do we answer board questions about GDPR or data residency for an offshore engagement?", "acceptedAnswer": { "@type": "Answer", "text": "State explicitly where data resides and is processed, and ensure the contract includes specific data-processing terms governing the offshore team's access." } },
     { "@type": "Question", "name": "(Scenario: CFO asked what happens if the vendor relationship fails) What's our actual exit path if the offshore engagement doesn't work out?", "acceptedAnswer": { "@type": "Answer", "text": "With source code owned by the company from day one, thorough documentation, and a persistent rather than rotating team, a failed engagement becomes a costly disappointment rather than an unrecoverable loss." } },
-    { "@type": "Question", "name": "(Scenario: CFO questioned on the realism of projected savings) How do we defend a cost-savings projection against board skepticism?", "acceptedAnswer": { "@type": "Answer", "text": "Present the model broken down by team composition and scope discipline rather than a single headline percentage." } }
+    { "@type": "Question", "name": "(Scenario: CFO questioned on the realism of projected savings) How do we defend a cost-savings projection against board skepticism?", "acceptedAnswer": { "@type": "Answer", "text": "Present the model broken down by team composition and scope discipline rather than a single headline percentage." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose outsourced project includes AI-adjacent features) Our project includes some AI-powered functionality — does that add board scrutiny beyond the standard five questions?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, increasingly — boards are starting to ask for EU AI Act risk-tier classification for any AI-adjacent feature." } },
+    { "@type": "Question", "name": "(Scenario: CFO unsure how to answer a board question about AI Act compliance timing) The EU AI Act's obligations are still rolling out — how do we answer a board question about a regulation that isn't fully in force yet?", "acceptedAnswer": { "@type": "Answer", "text": "Name who is accountable for tracking the phased obligations and confirm the team documents to a standard satisfying a higher-risk classification even if not currently required." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose board wants to know if an outsourcing development company can be trusted with regulatory-sensitive scope) Should regulatory-sensitive functionality be kept out of an outsourced development scope entirely?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily — a governed structure with a dedicated compliance-tracking function is often better positioned than an internal team without one, provided that function is explicit." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose board wants a repeatable process for future outsourcing decisions, not a one-time fix) How do we make sure future outsourcing proposals don't run into the same board delays?", "acceptedAnswer": { "@type": "Answer", "text": "Build a standing internal template covering the five recurring questions so every future proposal starts board-ready rather than reconstructed from scratch." } }
   ]
 }
 </script>

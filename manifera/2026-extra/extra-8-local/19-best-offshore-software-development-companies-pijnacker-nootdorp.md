@@ -98,6 +98,17 @@ Running a vendor search purely off published rankings and sales calls typically 
 
 If your vendor search has produced a spreadsheet of similar-looking proposals and no way to actually differentiate them, the fix isn't a better ranking site — it's a structured evaluation process built around real evidence. Talk to Manifera about running a paid pilot assessment: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## The Scoring Rubric: Weighting Criteria for a Defensible Shortlist
+
+A shortlist survives leadership scrutiny when the scoring weights are decided before any vendor is evaluated, not adjusted afterward to justify a gut preference. A defensible weighting for a mid-market extension engagement looks like this:
+
+- **Technical assessment — 40%:** Paid pilot task output, live pairing session quality, and architecture-review depth. This is the single largest weight because it's the only criterion measuring actual delivery capability rather than a proxy for it.
+- **Team-integration fit — 25%:** How closely the vendor's working model (embedded pod versus wall-thrown deliverables) matches your existing sprint ceremonies and reporting cadence.
+- **Reference checks — 20%:** Weighted toward specific, falsifiable answers from recently departed clients, not general satisfaction scores from current happy ones.
+- **Commercial terms — 15%:** Total cost of the outcome, including velocity and rework risk, not the headline day rate alone.
+
+Score each finalist 1-5 per category, multiply by weight, and total the result. A vendor that wins on sales polish but scores below a 3.5 weighted average on technical assessment should not make the final round, regardless of how compelling the proposal read.
+
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering overwhelmed by identical-sounding vendor proposals) How do we actually tell offshore vendors apart when every proposal sounds the same?
@@ -120,6 +131,22 @@ Discuss the team-integration model explicitly during evaluation — whether the 
 
 A structured process typically takes four to six weeks, only slightly longer than an unstructured search, and it dramatically reduces the risk of a mismatched selection that costs a full quarter of delay three months later. The time invested upfront is consistently cheaper than the time lost to a bad selection.
 
+### (Scenario: VP of Engineering building a weighted scorecard for leadership) How should we weight the different evaluation criteria when scoring offshore vendor candidates?
+
+A defensible split is roughly 40% technical assessment, 25% team-integration fit, 20% reference checks, and 15% commercial terms — weighted toward actual delivery evidence rather than proposal quality or rate alone.
+
+### (Scenario: VP of Engineering worried a shortlisted vendor stretched itself with too many client pilots) How many offshore vendors should actually make it to the paid pilot stage?
+
+Two to four finalists is the practical range — running a pilot with more candidates dilutes the internal team's evaluation bandwidth and rarely changes the eventual outcome versus a tighter, more carefully sourced field.
+
+### (Scenario: VP of Engineering competing with TU Delft-adjacent startups for the same local talent, considering nearshore vs offshore blend) Does it make sense to combine a small local TU Delft-adjacent hire with an offshore pod rather than choosing one or the other?
+
+Yes, when it's planned as an explicit governance split — local hires owning specific architecture or product decisions while the offshore pod handles broader execution — rather than an accidental patchwork from two unrelated hiring processes running in parallel.
+
+### (Scenario: VP of Engineering suspicious that a shortlisted vendor's pilot team was staffed differently than the engineers who'd actually join full engagement) How do we make sure the engineers who ran the paid pilot are the same ones who join the full engagement?
+
+Name the specific engineers in the pilot statement of work and require a contractual continuity clause carrying those same names into the master services agreement — a strong pilot team swapped out immediately post-contract is one of the most common bait-and-switch patterns in offshore engagements.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -129,7 +156,11 @@ A structured process typically takes four to six weeks, only slightly longer tha
     { "@type": "Question", "name": "(Scenario: VP of Engineering skeptical of published 'best of' vendor lists) Are published rankings of top offshore development companies trustworthy?", "acceptedAnswer": { "@type": "Answer", "text": "Generally not as a primary source. Most are directory sites with pay-to-rank positioning or vendor-authored content rather than independent evaluations. They're reasonable for initial candidate awareness, not for a final decision." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering deciding how much technical assessment is enough) How much technical vetting is actually necessary before committing to a vendor?", "acceptedAnswer": { "@type": "Answer", "text": "At minimum, a paid pilot task against representative real work and a live session with the specific engineers who would join the account, not a sales engineer. This typically takes two to three weeks and is the highest-value step in the evaluation." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering worried about disrupting existing sprint ceremonies) How do we make sure a new offshore team actually fits into how our engineering team already works?", "acceptedAnswer": { "@type": "Answer", "text": "Discuss the team-integration model explicitly during evaluation, whether the vendor works as an embedded pod inside your ceremonies or as a separate delivery team, and select for a model that matches how your team already operates." } },
-    { "@type": "Question", "name": "(Scenario: VP of Engineering under time pressure from leadership to decide quickly) Isn't a structured evaluation process too slow when leadership wants a decision fast?", "acceptedAnswer": { "@type": "Answer", "text": "A structured process typically takes four to six weeks, only slightly longer than an unstructured search, and dramatically reduces the risk of a mismatched selection that costs a full quarter of delay three months later." } }
+    { "@type": "Question", "name": "(Scenario: VP of Engineering under time pressure from leadership to decide quickly) Isn't a structured evaluation process too slow when leadership wants a decision fast?", "acceptedAnswer": { "@type": "Answer", "text": "A structured process typically takes four to six weeks, only slightly longer than an unstructured search, and dramatically reduces the risk of a mismatched selection that costs a full quarter of delay three months later." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering building a weighted scorecard for leadership) How should we weight the different evaluation criteria when scoring offshore vendor candidates?", "acceptedAnswer": { "@type": "Answer", "text": "A defensible split is roughly 40% technical assessment, 25% team-integration fit, 20% reference checks, and 15% commercial terms, weighted toward actual delivery evidence rather than proposal quality or rate alone." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering worried a shortlisted vendor stretched itself with too many client pilots) How many offshore vendors should actually make it to the paid pilot stage?", "acceptedAnswer": { "@type": "Answer", "text": "Two to four finalists is the practical range. Running a pilot with more candidates dilutes evaluation bandwidth and rarely changes the eventual outcome versus a tighter field." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering competing with TU Delft-adjacent startups for the same local talent, considering nearshore vs offshore blend) Does it make sense to combine a small local TU Delft-adjacent hire with an offshore pod rather than choosing one or the other?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, when planned as an explicit governance split, with local hires owning specific architecture or product decisions and the offshore pod handling broader execution, rather than an accidental patchwork of two unrelated hiring processes." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering suspicious that a shortlisted vendor's pilot team was staffed differently than the engineers who'd actually join full engagement) How do we make sure the engineers who ran the paid pilot are the same ones who join the full engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Name the specific engineers in the pilot statement of work and require a contractual continuity clause carrying those same names into the master services agreement." } }
   ]
 }
 </script>

@@ -70,6 +70,12 @@ Comparing vendor quotes purely on day rate is a documented way to overspend, bec
 
 For a Delft CFO who needs a defensible number for a board or investor deck, the real question isn't "what's your day rate" — it's "walk me through your scope, your team composition, and your stack's long-term maintenance cost." Ask us that question directly at our [contact page](https://www.manifera.com/contact-us/).
 
+## By The Numbers: A Sample Cost-to-Build Breakdown
+
+Strip a typical mid-complexity custom build (three-to-four month MVP, data-heavy backend, React frontend) down to its component costs and the day-rate figure loses its usefulness fast. A Western European agency quote for this scope typically breaks down as roughly 55-65% engineering labor, 10-15% QA and testing, 8-12% DevOps/infrastructure setup, and 10-15% project management and architecture — a mix that shifts materially depending on team seniority. A governed offshore delivery model holds that same proportional mix but recalculates it against a lower geographic base rate, which is why total cost typically lands 30-50% lower without touching the ratio between engineering, QA, and architecture time.
+
+Two numbers matter more than the headline quote for a Delft CFO modeling total cost of ownership: rework rate and change-order frequency. Industry data on poorly-scoped fixed-price contracts shows rework — code rebuilt because it didn't match evolving requirements or was under-specified at build time — commonly consumes 15-25% of total engineering hours on projects without a genuine MVP-scoping discipline. A properly scoped, phased build should show that figure closer to 5-8%. If a vendor's proposal doesn't let you estimate either number, ask for it directly before signing; it's a better predictor of final cost than the quoted day rate.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO comparing vendor quotes with different pricing structures) How do we compare a day-rate quote against a fixed-price quote fairly?
@@ -92,6 +98,22 @@ A niche or bleeding-edge stack has a smaller talent pool, which raises both init
 
 Manifera separates Dutch-based architectural governance from Vietnam-based execution, so you get the same scope discipline and quality oversight a boutique Delft shop offers, at a total cost typically 30-50% lower due to the offshore delivery cost base.
 
+### (Scenario: CFO benchmarking engineering talent cost in the Zuid-Holland deep-tech corridor) How much cheaper is offshore engineering talent than hiring locally around Delft?
+
+A senior engineer hired locally in the Zuid-Holland deep-tech corridor typically carries a fully loaded cost 2.5-3.5x higher than an equivalent senior engineer inside a governed offshore pod, before counting recruiting time and ramp-up; the gap narrows to near zero on architectural oversight, since that stays Amsterdam-based either way.
+
+### (Scenario: CFO drafting a change-order clause before signing a vendor contract) What should a change-order clause specify to stop scope creep from inflating the build cost?
+
+It should define a fixed scope baseline for phase one, a specific written-approval trigger for anything outside that baseline, and a pre-agreed rate for out-of-scope work — without those three elements, "phase one" quietly expands and the €80,000 quote becomes the €140,000 invoice.
+
+### (Scenario: CFO asking a vendor to prove their rework rate before signing) How do we get a vendor to prove their quoted rate reflects genuine efficiency and not just a lower rework rate on paper?
+
+Ask for their actual rework percentage from a comparable past engagement and how they measure it, since a vendor with genuine MVP-scoping discipline should be able to show rework consistently in the 5-8% range rather than reciting an industry average.
+
+### (Scenario: CFO scoping a deep-tech MVP into phases to control cost) How many phases should a Delft deep-tech company break its MVP into to keep the cost to build software predictable?
+
+Two to three phases is typically the right split: phase one proves the single core workflow (e.g., sensor ingestion and analytics), phase two adds the secondary features that make it commercially usable, and phase three covers scale-driven infrastructure — each priced and approved separately so a board sees a defensible number at every stage rather than one large, hard-to-audit quote.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +123,11 @@ Manifera separates Dutch-based architectural governance from Vietnam-based execu
     { "@type": "Question", "name": "(Scenario: CFO worried about hidden junior-heavy team composition) How can we verify the seniority of the team actually assigned to our project, not just quoted?", "acceptedAnswer": { "@type": "Answer", "text": "Request named team member profiles or role-level time allocation, and build a contractual right to review team composition at each milestone." } },
     { "@type": "Question", "name": "(Scenario: CFO evaluating whether offshore delivery compromises quality) Does a lower cost base from offshore delivery mean lower code quality?", "acceptedAnswer": { "@type": "Answer", "text": "Not when architecture and governance are separated from execution, since the cost reduction comes from the geographic base rate, not from removing senior oversight or scope discipline." } },
     { "@type": "Question", "name": "(Scenario: CFO trying to model total cost of ownership) Why does technology stack choice affect cost beyond the initial build?", "acceptedAnswer": { "@type": "Answer", "text": "A niche stack has a smaller talent pool, raising both build and maintenance cost, while a mainstream stack keeps vendor and hiring options open without a rewrite." } },
-    { "@type": "Question", "name": "(Scenario: CFO deciding between Manifera and a local Delft agency) What specifically justifies Manifera's pricing versus a boutique Delft development shop?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera separates Dutch-based architectural governance from Vietnam-based execution, delivering comparable quality at a total cost typically 30-50% lower." } }
+    { "@type": "Question", "name": "(Scenario: CFO deciding between Manifera and a local Delft agency) What specifically justifies Manifera's pricing versus a boutique Delft development shop?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera separates Dutch-based architectural governance from Vietnam-based execution, delivering comparable quality at a total cost typically 30-50% lower." } },
+    { "@type": "Question", "name": "(Scenario: CFO benchmarking engineering talent cost in the Zuid-Holland deep-tech corridor) How much cheaper is offshore engineering talent than hiring locally around Delft?", "acceptedAnswer": { "@type": "Answer", "text": "A senior engineer hired locally typically costs 2.5-3.5x more fully loaded than an equivalent senior engineer inside a governed offshore pod, before counting recruiting time and ramp-up." } },
+    { "@type": "Question", "name": "(Scenario: CFO drafting a change-order clause before signing a vendor contract) What should a change-order clause specify to stop scope creep from inflating the build cost?", "acceptedAnswer": { "@type": "Answer", "text": "A fixed scope baseline for phase one, a written-approval trigger for anything outside that baseline, and a pre-agreed rate for out-of-scope work." } },
+    { "@type": "Question", "name": "(Scenario: CFO asking a vendor to prove their rework rate before signing) How do we get a vendor to prove their quoted rate reflects genuine efficiency and not just a lower rework rate on paper?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for their actual rework percentage from a comparable past engagement; a vendor with genuine MVP-scoping discipline should show rework in the 5-8% range rather than an industry average." } },
+    { "@type": "Question", "name": "(Scenario: CFO scoping a deep-tech MVP into phases to control cost) How many phases should a Delft deep-tech company break its MVP into to keep the cost to build software predictable?", "acceptedAnswer": { "@type": "Answer", "text": "Two to three phases: proving the core workflow, adding commercially usable secondary features, and scale-driven infrastructure, each priced and approved separately." } }
   ]
 }
 </script>

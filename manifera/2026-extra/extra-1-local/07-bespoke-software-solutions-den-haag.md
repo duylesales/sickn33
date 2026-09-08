@@ -68,6 +68,12 @@ The real financial risk in a bespoke software decision isn't the headline price 
 
 Every euro spent compensating for a compliance gap discovered post-launch is a euro that bought nothing but risk mitigation for a risk that shouldn't have existed. If your current vendor evaluation doesn't include a milestone structure and an explicit compliance architecture plan, that gap is worth surfacing before signature, not after the first change order. Discuss a milestone-based, compliance-first bespoke build at our [contact page](https://www.manifera.com/contact-us/).
 
+## Milestone Structure: What a Defensible Phase Contract Actually Contains
+
+Most "phased" contracts a Den Haag CFO reviews are phased in name only — a single scope document sliced into invoice dates, with no real re-evaluation gate between phases. A defensible milestone structure looks different on paper. Each phase (typically 2-4 weeks) closes with three deliverables before payment triggers: a signed-off scope document specific to that phase, a working demo environment the client can test independently, and a written variance report flagging anything discovered mid-phase that changes the next phase's estimate. That last item is the one 90% of vendor contracts omit, and it's the one that actually prevents budget surprises — because scope creep in bespoke builds rarely comes from the client changing their mind; it comes from undocumented assumptions surfacing once real data hits the system.
+
+On the compliance side, a Den Haag-specific detail worth checking before signature: if your organization works with EU institutions, international courts, or government bodies headquartered in the city, your data-processing agreement should specify not just "EU-based hosting" but the specific region (Frankfurt or Amsterdam availability zones for AWS/Azure), because some public-sector procurement rules require region-level, not just country-level, data residency commitments. A vendor who can't name the specific availability zone in the contract hasn't actually architected for it — they're planning to figure it out during build, which is exactly the kind of deferred decision that turns into a change order.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO comparing two vendor proposals with a large price gap) Why do two bespoke software proposals for the same requirements differ by 30-40% in price?
@@ -90,6 +96,22 @@ A mainstream, well-supported stack means multiple vendors and a large talent poo
 
 Manifera pairs the same Dutch-standard governance, contracting discipline, and compliance accountability a local agency offers with a larger, dedicated engineering bench in Vietnam, typically at a lower blended cost without sacrificing milestone accountability.
 
+### (Scenario: CFO drafting the data-processing agreement before signature) Does our bespoke software contract need to name a specific EU data-center region, or is "EU-based hosting" sufficient?
+
+For most commercial builds "EU-based" is sufficient, but if your Den Haag organization serves government bodies, international courts, or EU institutions, procurement rules often require a named availability zone (such as Amsterdam or Frankfurt), not just a country-level commitment — ask your vendor to name the specific region in the contract before signing.
+
+### (Scenario: CFO reviewing a vendor's phase deliverables) What should be included in each milestone before we release payment on a bespoke software phase?
+
+A defensible milestone includes a signed-off scope document for that phase, a working demo environment you can independently test, and a written variance report noting anything discovered mid-phase that could affect the next phase's estimate — the variance report is the piece most vendor contracts quietly omit.
+
+### (Scenario: CFO evaluating a vendor's technical due diligence process) How do we verify a vendor's compliance claims before signing, rather than discovering gaps in a post-launch audit?
+
+Ask for a written data-flow diagram showing exactly where access control and audit logging are enforced (data layer versus application layer) and request a short architecture walkthrough before contract signature — a vendor who can't produce this on request hasn't actually designed it yet.
+
+### (Scenario: CFO comparing a niche-stack quote against a mainstream-stack quote) Is a lower quote on a niche technology stack ever worth the long-term lock-in risk?
+
+Rarely for a bespoke system with a multi-year lifespan — a 10-15% upfront savings on a niche stack is typically erased the first time you need a second vendor to bid on maintenance, since a shrinking talent pool gives the incumbent vendor pricing power with no competitive check.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +121,11 @@ Manifera pairs the same Dutch-standard governance, contracting discipline, and c
     { "@type": "Question", "name": "(Scenario: CFO worried about mid-project scope disputes) How does a milestone-based pricing model prevent scope disputes partway through the project?", "acceptedAnswer": { "@type": "Answer", "text": "Each phase has an explicit, signed-off scope and fixed price agreed before work begins, so changes are identified and priced before being built." } },
     { "@type": "Question", "name": "(Scenario: CFO responsible for compliance sign-off on new software) What specifically needs to be true architecturally for a bespoke platform to be GDPR-compliant from launch?", "acceptedAnswer": { "@type": "Answer", "text": "EU-based data residency, data-layer role-based access control, full audit logging, and encryption at rest and in transit, designed into the data model from the start." } },
     { "@type": "Question", "name": "(Scenario: CFO concerned about long-term vendor dependency) How does technology stack choice affect our financial leverage with a vendor after launch?", "acceptedAnswer": { "@type": "Answer", "text": "A mainstream, well-supported stack means multiple vendors can maintain your system, giving real negotiating leverage, whereas a niche stack locks you into one vendor." } },
-    { "@type": "Question", "name": "(Scenario: CFO evaluating Manifera against a local Den Haag agency) What does Manifera offer that a local Den Haag development agency doesn't?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera pairs the same Dutch-standard governance and compliance accountability with a larger dedicated engineering bench in Vietnam, typically at a lower blended cost." } }
+    { "@type": "Question", "name": "(Scenario: CFO evaluating Manifera against a local Den Haag agency) What does Manifera offer that a local Den Haag development agency doesn't?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera pairs the same Dutch-standard governance and compliance accountability with a larger dedicated engineering bench in Vietnam, typically at a lower blended cost." } },
+    { "@type": "Question", "name": "(Scenario: CFO drafting the data-processing agreement before signature) Does our bespoke software contract need to name a specific EU data-center region, or is \"EU-based hosting\" sufficient?", "acceptedAnswer": { "@type": "Answer", "text": "For most commercial builds EU-based hosting is sufficient, but organizations serving government bodies or EU institutions often need a named availability zone, such as Amsterdam or Frankfurt, specified in the contract." } },
+    { "@type": "Question", "name": "(Scenario: CFO reviewing a vendor's phase deliverables) What should be included in each milestone before we release payment on a bespoke software phase?", "acceptedAnswer": { "@type": "Answer", "text": "A signed-off scope document, a working demo environment for independent testing, and a written variance report noting anything discovered mid-phase that affects the next phase's estimate." } },
+    { "@type": "Question", "name": "(Scenario: CFO evaluating a vendor's technical due diligence process) How do we verify a vendor's compliance claims before signing, rather than discovering gaps in a post-launch audit?", "acceptedAnswer": { "@type": "Answer", "text": "Request a written data-flow diagram showing where access control and audit logging are enforced, plus a short architecture walkthrough before signature." } },
+    { "@type": "Question", "name": "(Scenario: CFO comparing a niche-stack quote against a mainstream-stack quote) Is a lower quote on a niche technology stack ever worth the long-term lock-in risk?", "acceptedAnswer": { "@type": "Answer", "text": "Rarely for a multi-year bespoke system, since a shrinking talent pool on a niche stack gives the incumbent vendor pricing power on future maintenance." } }
   ]
 }
 </script>

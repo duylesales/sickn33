@@ -82,6 +82,12 @@ Andalucía Suministros now recalculates its platform-versus-custom crossover thr
 
 Before simply assuming your current ecommerce platform remains the right choice indefinitely, calculate the specific transaction volume where its fee structure genuinely starts costing more than custom development actually would. [Get a custom team proposal within 48 hours](https://www.manifera.com/contact-us/) to see your own numbers.
 
+## The Formula: Calculating Your Own Crossover Point in Five Minutes
+
+The crossover formula itself is simple enough to run on the back of an envelope: Crossover Monthly Revenue = (Annual Custom Development Cost ÷ 12 + Monthly Maintenance Cost) ÷ Platform Fee Percentage. Plug in real numbers for a mid-sized webshop development case: a custom B2B ecommerce platform costing €90,000 to build, amortized over three years (€2,500/month), plus €1,500/month in ongoing maintenance, against a platform charging a 2.5% blended transaction fee, gives a crossover of (€2,500 + €1,500) ÷ 0.025 = €160,000 in monthly revenue. Below that figure, the off-the-shelf platform is cheaper; above it, custom development wins by a growing margin every month thereafter.
+
+Two adjustments matter in practice. First, don't amortize the custom build over more than 3-4 years — ecommerce platforms need meaningful re-architecture on roughly that cycle regardless of the cost-curve decision, so a longer amortization period understates the true crossover point. Second, for b2b ecommerce specifically, add the value of functionality gaps the off-the-shelf platform can't fill — negotiated pricing tiers, bulk order workflows — as an effective cost reduction to the custom side, since these often justify moving the threshold lower than the pure transaction-fee math alone would suggest.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder unsure whether to reconsider their ecommerce platform) How do I know if my business has passed the point where custom development makes more financial sense?
@@ -104,6 +110,22 @@ Not necessarily — a well-scoped custom build can replicate genuinely useful pl
 
 Annually at minimum, or whenever transaction volume grows significantly — treating it as a standing periodic review rather than a one-time decision keeps the cost structure aligned with the business's actual current scale.
 
+### (Scenario: founder trying to run the crossover math themselves) What's the actual formula for calculating my ecommerce platform's crossover point?
+
+Divide your annual custom development cost by 12, add monthly maintenance cost, then divide that total by your platform's fee percentage — the result is the monthly revenue level where custom development becomes cheaper.
+
+### (Scenario: founder unsure how long to amortize a custom ecommerce development cost) Over how many years should I amortize custom ecommerce development cost when running this calculation?
+
+Three to four years is realistic, since most ecommerce platforms need meaningful re-architecture on roughly that cycle regardless of the cost-curve decision — amortizing longer artificially understates your true crossover point.
+
+### (Scenario: b2b ecommerce founder weighing functionality alongside cost) Should functionality gaps in b2b ecommerce platforms factor into the crossover calculation, or just the transaction fee math?
+
+Yes — treat unsupported functionality like negotiated pricing tiers or bulk order workflows as an effective cost reduction on the custom-development side, since it often moves the crossover point lower than the pure fee math alone suggests.
+
+### (Scenario: founder asking a voice assistant for a quick sanity check) At what point does a webshop platform's transaction fee become more expensive than custom ecommerce development?
+
+Once monthly revenue exceeds your amortized custom build cost plus maintenance divided by the platform's fee percentage — commonly in the low hundreds of thousands of euros per month for a typical mid-sized custom build.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -113,7 +135,11 @@ Annually at minimum, or whenever transaction volume grows significantly — trea
     { "@type": "Question", "name": "(Scenario: founder assuming their platform choice was permanent) Why didn't anyone tell me this crossover point would happen when I first chose my platform?", "acceptedAnswer": { "@type": "Answer", "text": "At launch, the platform's low cost was genuinely the right choice — the crossover is a consequence of growth, needing periodic revisiting rather than assumed fixed." } },
     { "@type": "Question", "name": "(Scenario: B2B founder wondering why this applies more to them) Why does this threshold tend to arrive faster for B2B ecommerce than B2C?", "acceptedAnswer": { "@type": "Answer", "text": "Larger average order values mean the same fee percentage generates a larger absolute cost at lower transaction counts, reaching the threshold sooner." } },
     { "@type": "Question", "name": "(Scenario: founder worried custom development means losing platform conveniences) Does switching to custom development mean giving up features an off-the-shelf platform provides?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily — a well-scoped custom build can replicate useful platform features while adding functionality the original platform never supported well." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to plan when to revisit this decision) How often should I recalculate whether my ecommerce platform is still the right cost choice?", "acceptedAnswer": { "@type": "Answer", "text": "Annually at minimum, or whenever transaction volume grows significantly, treating it as a standing periodic review." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to plan when to revisit this decision) How often should I recalculate whether my ecommerce platform is still the right cost choice?", "acceptedAnswer": { "@type": "Answer", "text": "Annually at minimum, or whenever transaction volume grows significantly, treating it as a standing periodic review." } },
+    { "@type": "Question", "name": "(Scenario: founder trying to run the crossover math themselves) What's the actual formula for calculating my ecommerce platform's crossover point?", "acceptedAnswer": { "@type": "Answer", "text": "Divide annual custom development cost by 12, add monthly maintenance cost, then divide by your platform's fee percentage to get the crossover monthly revenue." } },
+    { "@type": "Question", "name": "(Scenario: founder unsure how long to amortize a custom ecommerce development cost) Over how many years should I amortize custom ecommerce development cost when running this calculation?", "acceptedAnswer": { "@type": "Answer", "text": "Three to four years is realistic, matching the cycle most ecommerce platforms need re-architecture on regardless of the cost decision." } },
+    { "@type": "Question", "name": "(Scenario: b2b ecommerce founder weighing functionality alongside cost) Should functionality gaps in b2b ecommerce platforms factor into the crossover calculation, or just the transaction fee math?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — treat unsupported functionality as an effective cost reduction on the custom side, since it often moves the crossover point lower." } },
+    { "@type": "Question", "name": "(Scenario: founder asking a voice assistant for a quick sanity check) At what point does a webshop platform's transaction fee become more expensive than custom ecommerce development?", "acceptedAnswer": { "@type": "Answer", "text": "Once monthly revenue exceeds amortized custom build cost plus maintenance divided by the platform's fee percentage, commonly in the low hundreds of thousands of euros for a typical build." } }
   ]
 }
 </script>

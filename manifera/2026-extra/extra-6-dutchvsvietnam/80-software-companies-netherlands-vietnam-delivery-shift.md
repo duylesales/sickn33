@@ -72,6 +72,10 @@ A CFO discovering an undisclosed delivery shift after the fact typically faces a
 
 If your current vendor's delivery structure has shifted without a corresponding conversation about pricing and governance, that conversation is worth having before the next renewal. [Talk to Manifera about a transparent structure](https://www.manifera.com/contact-us/).
 
+## Renegotiation Checklist: What to Put on the Table at Your Next Contract Renewal
+
+A CFO who discovers an undisclosed delivery shift shouldn't wait for the vendor to raise it — the next contract renewal is the natural point to force the conversation, and five specific asks separate a productive renegotiation from an awkward one. First, request a current team-composition breakdown by location and seniority, not a percentage estimate. Second, benchmark the quoted rate against market pricing for that actual composition — a team that's 70% Vietnam-based should price closer to €45-€65/hour blended, not the €90-€130/hour a pure-Dutch web development company in Amsterdam typically charges. Third, ask for the governance cadence in writing: architecture review frequency, escalation contact, and audit history over the prior contract term. Fourth, request that IP assignment and data processing terms be re-confirmed against the current delivery structure, since terms drafted for a Netherlands-only team don't automatically extend cleanly to a hybrid one. Fifth, negotiate a disclosure clause into the new contract requiring proactive notice of any future material shift in delivery location — this is the single term that prevents the entire situation from repeating at the next renewal cycle three years from now.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO noticing an undisclosed shift in vendor delivery) Why is our long-standing Netherlands vendor increasingly delivering through Vietnam-based engineers?
@@ -94,6 +98,22 @@ Request a documented governance cadence — architecture review frequency, audit
 
 Often yes, because a vendor structured as hybrid from the outset typically has pricing, governance, and disclosure built around that model natively, rather than carrying legacy pricing and communication habits from a purely local delivery era.
 
+### (Scenario: CFO preparing for a renewal negotiation) What five things should be on the table at a contract renewal if delivery has shifted to Vietnam?
+
+A current team-composition breakdown by location and seniority, a rate benchmark against that actual composition, the governance cadence in writing, re-confirmed IP and data-processing terms, and a disclosure clause requiring proactive notice of any future delivery shift.
+
+### (Scenario: CFO wanting a rate benchmark for renegotiation) What's a fair blended hourly rate for a team that's roughly 70% Vietnam-based and 30% Amsterdam-based?
+
+Roughly €45-€65 per hour blended, materially below the €90-€130 per hour a pure-Dutch software or web development company in Amsterdam typically charges. A quote still near the Dutch-only rate for that composition is a sign pricing hasn't been renegotiated.
+
+### (Scenario: CFO wanting to prevent this from recurring) How do we stop this from happening again at the next contract cycle?
+
+Negotiate a disclosure clause into the renewed contract requiring proactive written notice of any material future shift in delivery location or team composition, tied to a right to renegotiate pricing within a defined window.
+
+### (Scenario: CFO checking IP terms after a delivery shift) Do our existing IP assignment terms still hold if the team composition has changed since signing?
+
+Not automatically — terms drafted around a Netherlands-only team should be re-confirmed against the current hybrid structure, since individual engineer NDAs and assignment clauses need to cover whoever is actually writing the code today, not just the team named at signing.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +123,11 @@ Often yes, because a vendor structured as hybrid from the outset typically has p
     { "@type": "Question", "name": "(Scenario: CFO deciding whether to react negatively to the shift) Is a vendor shifting delivery to Vietnam automatically a red flag?", "acceptedAnswer": { "@type": "Answer", "text": "Not automatically. The red flag is non-disclosure and pricing that doesn't reflect the actual delivery structure, not the shift itself. A well-governed, transparently structured hybrid model can be a genuine improvement." } },
     { "@type": "Question", "name": "(Scenario: CFO wanting to check if pricing still reflects reality) How do we know if we're still paying legacy Netherlands-delivery rates for what's now partially offshore-delivered work?", "acceptedAnswer": { "@type": "Answer", "text": "Ask your vendor directly for a breakdown of what portion of the team is Netherlands-based versus Vietnam-based, and compare current pricing against market rates for a properly structured hybrid engagement at that composition." } },
     { "@type": "Question", "name": "(Scenario: CFO worried governance has quietly thinned) How do we verify governance hasn't eroded along with the delivery shift?", "acceptedAnswer": { "@type": "Answer", "text": "Request a documented governance cadence, architecture review frequency, audit history, escalation record, the same way you'd evaluate any offshore vendor's governance function." } },
-    { "@type": "Question", "name": "(Scenario: CFO considering switching to a vendor built as hybrid from the start) Is it better to work with a vendor built as a hybrid model from day one rather than one that drifted into it?", "acceptedAnswer": { "@type": "Answer", "text": "Often yes, because a vendor structured as hybrid from the outset typically has pricing, governance, and disclosure built around that model natively, rather than carrying legacy habits from a purely local delivery era." } }
+    { "@type": "Question", "name": "(Scenario: CFO considering switching to a vendor built as hybrid from the start) Is it better to work with a vendor built as a hybrid model from day one rather than one that drifted into it?", "acceptedAnswer": { "@type": "Answer", "text": "Often yes, because a vendor structured as hybrid from the outset typically has pricing, governance, and disclosure built around that model natively, rather than carrying legacy habits from a purely local delivery era." } },
+    { "@type": "Question", "name": "(Scenario: CFO preparing for a renewal negotiation) What five things should be on the table at a contract renewal if delivery has shifted to Vietnam?", "acceptedAnswer": { "@type": "Answer", "text": "A current team-composition breakdown, a rate benchmark against that composition, the governance cadence in writing, re-confirmed IP and data-processing terms, and a disclosure clause for future shifts." } },
+    { "@type": "Question", "name": "(Scenario: CFO wanting a rate benchmark for renegotiation) What's a fair blended hourly rate for a team that's roughly 70% Vietnam-based and 30% Amsterdam-based?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly €45-€65 per hour blended, materially below the €90-€130 per hour a pure-Dutch company typically charges." } },
+    { "@type": "Question", "name": "(Scenario: CFO wanting to prevent this from recurring) How do we stop this from happening again at the next contract cycle?", "acceptedAnswer": { "@type": "Answer", "text": "Negotiate a disclosure clause requiring proactive written notice of any material future shift in delivery location, tied to a right to renegotiate pricing within a defined window." } },
+    { "@type": "Question", "name": "(Scenario: CFO checking IP terms after a delivery shift) Do our existing IP assignment terms still hold if the team composition has changed since signing?", "acceptedAnswer": { "@type": "Answer", "text": "Not automatically — terms should be re-confirmed against the current hybrid structure so assignment clauses cover whoever is actually writing the code today." } }
   ]
 }
 </script>

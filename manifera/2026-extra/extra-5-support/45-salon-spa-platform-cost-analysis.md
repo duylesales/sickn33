@@ -86,6 +86,10 @@ Salong Bestilling Bergen proceeded with a realistically scoped platform build me
 
 Before committing to a salon and spa booking platform budget, insist on a cost estimate modeled against your realistic projected concurrent-booking volume and actual multi-location expansion plans, not small-scale internal testing conditions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic salon and spa platform cost scoping exercise.
 
+## By The Numbers: Where Salon and Spa Platform Engineering Budget Goes
+
+For a platform serving a real multi-location chain, four cost categories account for roughly 70-80% of total engineering spend, with the remainder going to client-facing UI, marketing tooling, and basic reporting. The scheduling engine typically consumes 20-26% of build budget once engineered with atomic booking transactions (row-level locks or optimistic version checks on each stylist's calendar slot) rather than a naive check-then-book flow, which is the specific mechanism that prevents two clients from booking the same stylist's slot within the same second during a peak Saturday-morning rush. Payment and gratuity handling runs 16-22%, driven primarily by per-stylist payout reconciliation and jurisdiction-specific tip-versus-service-revenue tax classification, not the checkout UI itself. Multi-location sync typically absorbs 18-24%, scaling with location count and how tightly client history and loyalty status need to stay consistent across locations. Notification infrastructure runs a comparatively modest 10-15%, but is the category most likely to be underscoped entirely, since A/B-testable reminder-timing logic and multi-timezone delivery accuracy are easy to treat as an afterthought until a chain's no-show rate reveals reminder timing actually matters. A vendor's quote that bundles payment and gratuity into a single "payments" line item, or that doesn't itemize atomic booking-transaction handling separately from general scheduling UI, is very likely underscoping the concurrency and financial-attribution work real multi-location salon operations require.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial salon platform estimate) Why do salon and spa platform cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ Client history, stylist schedules, and service menus need to stay correctly sync
 
 Reducing no-shows and improving rebooking depends on reliable, precisely-timed, personalized notifications at scale, considerably more sophisticated than a simple templated-message system.
 
+### (Scenario: salon owner deciding between an off-the-shelf booking app like Vagaro or Fresha and a custom platform) At what number of locations does a custom salon and spa platform become more cost-effective than an off-the-shelf booking app?
+
+Past roughly 10-15 locations, per-location subscription fees plus per-transaction payment processing surcharges on off-the-shelf apps typically exceed the amortized cost of a custom build, and most off-the-shelf apps don't expose per-stylist gratuity attribution as a configurable payout rule at all.
+
+### (Scenario: front-desk staff worried about double-booking a popular stylist during a rush) How do you stop two clients from booking the same stylist's slot at the same moment during a peak booking window?
+
+Atomic booking transactions using row-level locks or optimistic version checks on each calendar slot reject the second concurrent booking attempt before it's confirmed, rather than allowing both to succeed and discovering the conflict only when the client arrives.
+
+### (Scenario: CTO estimating timeline before committing to a launch date) How long does building a production-ready multi-location salon and spa platform typically take?
+
+A realistic timeline runs 5-7 months for an MVP covering atomic scheduling and payment for a single location, with multi-location sync and timing-sensitive notification infrastructure typically adding another 2-3 months before a multi-location launch is genuinely ready.
+
+### (Scenario: finance lead confirming payout accuracy before launch) How does the platform ensure a stylist's tips are correctly separated from taxable service revenue at payout time?
+
+The payment engine tags each transaction line item as either service revenue or gratuity at the point of sale, applies the destination jurisdiction's specific tax treatment to each tag separately, and reconciles payouts per stylist against those tagged totals rather than against a single blended transaction amount.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Reducing no-shows and improving rebooking depends on reliable, precisely-timed, 
     { "@type": "Question", "name": "(Scenario: engineering lead scoping the scheduling engine) Why is a scheduling engine harder to scale correctly than it appears in small-scale testing?", "acceptedAnswer": { "@type": "Answer", "text": "Booking integrity depends on handling genuine concurrent demand across many stylists and locations, requiring different architecture than sequential testing." } },
     { "@type": "Question", "name": "(Scenario: product lead scoping payment systems) Why does gratuity handling require more than typical e-commerce checkout engineering?", "acceptedAnswer": { "@type": "Answer", "text": "Correctly attributing gratuities to specific stylists and applying jurisdiction-specific tax treatment requires more sophisticated logic than standard checkout." } },
     { "@type": "Question", "name": "(Scenario: CTO planning multi-location expansion) Why does serving multiple salon locations add real backend infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Client history and stylist schedules need to stay synchronized or appropriately scoped across locations, requiring distributed infrastructure." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning notification infrastructure) Why does reminder and notification infrastructure deserve substantial engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Reducing no-shows depends on reliable, precisely-timed, personalized notifications, more sophisticated than a simple templated-message system." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning notification infrastructure) Why does reminder and notification infrastructure deserve substantial engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Reducing no-shows depends on reliable, precisely-timed, personalized notifications, more sophisticated than a simple templated-message system." } },
+    { "@type": "Question", "name": "(Scenario: salon owner deciding between an off-the-shelf booking app like Vagaro or Fresha and a custom platform) At what number of locations does a custom salon and spa platform become more cost-effective than an off-the-shelf booking app?", "acceptedAnswer": { "@type": "Answer", "text": "Past roughly 10-15 locations, per-location subscription and transaction fees typically exceed a custom build's amortized cost, and most off-the-shelf apps lack configurable per-stylist gratuity attribution." } },
+    { "@type": "Question", "name": "(Scenario: front-desk staff worried about double-booking a popular stylist during a rush) How do you stop two clients from booking the same stylist's slot at the same moment during a peak booking window?", "acceptedAnswer": { "@type": "Answer", "text": "Atomic booking transactions with row-level locks or optimistic version checks reject the second concurrent booking attempt before confirmation." } },
+    { "@type": "Question", "name": "(Scenario: CTO estimating timeline before committing to a launch date) How long does building a production-ready multi-location salon and spa platform typically take?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 5-7 months for a single-location MVP, plus another 2-3 months for multi-location sync and timing-sensitive notification infrastructure." } },
+    { "@type": "Question", "name": "(Scenario: finance lead confirming payout accuracy before launch) How does the platform ensure a stylist's tips are correctly separated from taxable service revenue at payout time?", "acceptedAnswer": { "@type": "Answer", "text": "Each transaction line item is tagged as service revenue or gratuity at the point of sale, taxed per jurisdiction rules separately, and reconciled per stylist against those tagged totals." } }
   ]
 }
 </script>

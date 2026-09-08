@@ -82,6 +82,10 @@ Kadry Wschód recovered its full active pipeline with no candidates ultimately l
 
 Before migrating an applicant tracking system, treat active pipeline state and consent record preservation as dedicated, explicitly verified migration risk categories — a technically complete data transfer can still silently drop active candidates from process if pipeline state isn't specifically verified. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a pipeline-continuity-verified ATS migration.
 
+## Vendor Evaluation Checklist: What to Ask Before Hiring for an ATS Migration
+
+Since pipeline-state loss is largely invisible until go-live, the vendor selection process itself is where this risk is either caught or missed. Five specific questions worth putting directly to any offshore software development company or dedicated software development team bidding on an ATS migration: (1) "Walk me through exactly how you'll verify pipeline stage and next-action data for every active candidate, not just candidate profile fields" — a vague answer here predicts the Kadry Wschód failure mode almost exactly; (2) "What's your process for candidates with interviews or next steps scheduled during the migration cutover window itself"; (3) "How will you verify GDPR consent and retention data field-by-field against the source system, rather than assuming a bulk import preserves it correctly"; (4) "Can you show a rollback plan specific to pipeline state, not just database rollback"; (5) "Who on the team has handled an ATS migration specifically, versus general custom software development experience." A dedicated software development team that answers all five with specific process detail, rather than general reassurance, is measurably lower migration risk than one quoting purely on data volume and timeline. Any offshore software development company proposing a flat-rate, timeline-only quote without addressing pipeline-state verification as a distinct line item should be asked directly why it's missing.
+
 ## Frequently Asked Questions
 
 ### (Scenario: IT manager scoping an ATS migration) Why is migrating active pipeline state harder than migrating historical candidate records?
@@ -104,6 +108,22 @@ This should be explicitly planned for, with a defined process ensuring these can
 
 Confirming, for every active candidate, that the new system shows an accurate current pipeline stage and next scheduled action — this specific check catches the failure mode most likely to cause real candidate and business damage if missed.
 
+### (Scenario: IT manager choosing between an offshore and local vendor) Does using an offshore software development company for an ATS migration increase the risk of pipeline state being lost?
+
+Not inherently — the risk comes from process discipline, not location, so the deciding factor is whether the offshore software development company has an explicit pipeline-state verification step in their standard migration methodology, not whether the team is onshore or offshore.
+
+### (Scenario: staffing agency wanting a dedicated team vs. shared resources) Should a staffing agency use a dedicated software development team for an ATS migration rather than a shared or part-time resource pool?
+
+Yes for a migration carrying this level of business continuity risk — a dedicated team maintains context across the full verification process rather than picking up pipeline-state reconciliation between other project commitments, which matters directly for catching subtle stage-mismatch errors.
+
+### (Scenario: IT manager wanting a rollback safety net) What should a rollback plan for an ATS migration specifically cover, beyond restoring a database backup?
+
+A pipeline-state-specific rollback plan should restore recruiters' ability to see accurate current stage and next-action data immediately, not just the underlying candidate records, since a database-level rollback alone can still leave recruiters working from a stale pipeline view.
+
+### (Scenario: agency wanting to vet a vendor's specific ATS experience) How do I know if a custom software development vendor actually has ATS-specific migration experience versus general HR software experience?
+
+Ask for a specific past example of how they handled active pipeline state and consent data during a previous migration, not just a general list of HR platforms they've integrated with — real ATS migration experience shows up as specific procedural detail, not general assurance.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -113,7 +133,11 @@ Confirming, for every active candidate, that the new system shows an accurate cu
     { "@type": "Question", "name": "(Scenario: recruiting lead worried about candidate experience) What happens if pipeline state isn't verified during an ATS migration?", "acceptedAnswer": { "@type": "Answer", "text": "Active candidates can disappear from the visible pipeline, appearing to the candidate as being silently ghosted by the company." } },
     { "@type": "Question", "name": "(Scenario: compliance officer reviewing an ATS migration plan) Why does consent data need explicit, field-level verification during migration?", "acceptedAnswer": { "@type": "Answer", "text": "GDPR requires a valid legal basis for retaining candidate data, and imprecise consent transfer risks processing without demonstrable basis." } },
     { "@type": "Question", "name": "(Scenario: IT manager planning migration timing) How should a migration handle candidates with interviews or next steps scheduled during the migration window itself?", "acceptedAnswer": { "@type": "Answer", "text": "This should be explicitly planned for so scheduled actions remain visible in the new system before the transition, not discovered later." } },
-    { "@type": "Question", "name": "(Scenario: IT director trying to avoid a failed migration) What's the single most important verification step before relying on a newly migrated ATS?", "acceptedAnswer": { "@type": "Answer", "text": "Confirming every active candidate shows an accurate pipeline stage and next action, the check that catches the most damaging failure mode." } }
+    { "@type": "Question", "name": "(Scenario: IT director trying to avoid a failed migration) What's the single most important verification step before relying on a newly migrated ATS?", "acceptedAnswer": { "@type": "Answer", "text": "Confirming every active candidate shows an accurate pipeline stage and next action, the check that catches the most damaging failure mode." } },
+    { "@type": "Question", "name": "(Scenario: IT manager choosing between an offshore and local vendor) Does using an offshore software development company for an ATS migration increase the risk of pipeline state being lost?", "acceptedAnswer": { "@type": "Answer", "text": "Not inherently — the risk comes from process discipline, not location, so what matters is an explicit pipeline-state verification step in the methodology." } },
+    { "@type": "Question", "name": "(Scenario: staffing agency wanting a dedicated team vs. shared resources) Should a staffing agency use a dedicated software development team for an ATS migration rather than a shared or part-time resource pool?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — a dedicated team maintains context across the full verification process rather than picking it up between other project commitments." } },
+    { "@type": "Question", "name": "(Scenario: IT manager wanting a rollback safety net) What should a rollback plan for an ATS migration specifically cover, beyond restoring a database backup?", "acceptedAnswer": { "@type": "Answer", "text": "Restoring recruiters' visibility into accurate pipeline stage and next-action data immediately, not just the underlying candidate records." } },
+    { "@type": "Question", "name": "(Scenario: agency wanting to vet a vendor's specific ATS experience) How do I know if a custom software development vendor actually has ATS-specific migration experience versus general HR software experience?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for a specific past example of how they handled pipeline state and consent data during a previous migration, not a general platform list." } }
   ]
 }
 </script>

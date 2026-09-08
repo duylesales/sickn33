@@ -85,6 +85,10 @@ Kouter Finance's founder now uses the same specific-scenario test for any techni
 
 Before choosing a fintech software development partner, ask a specific compliance scenario relevant to your product and compare how concretely each vendor answers — genuine regulatory depth produces a specific technical answer, not general reassurance. [Schedule a free consultation with our Amsterdam team](https://www.manifera.com/contact-us/) and test us with your hardest compliance question.
 
+## Red Flags Checklist: What to Look for in the Actual Proposal Document
+
+Beyond live conversation, a written proposal or SOW itself carries reliable diagnostic signals a non-technical founder can check without needing technical judgment. Six specific things to look for before signing: (1) does the document name a specific regulatory framework (PSD2, AMLD5, GDPR Article 9) or only generic phrases like "industry best practices" and "bank-level security" — the latter phrasing is a near-universal marker of thin regulatory depth; (2) does the estimate include a distinct line item for compliance and security work, or is it folded silently into general "development" hours where it's impossible to verify it was actually budgeted; (3) does the SOW specify who owns penetration testing and its cadence, given most banking and payment partners require it before go-live; (4) is data residency and hosting region specified explicitly, given most fintech products handling EU customer data need this settled before build, not after; (5) does the proposal tie build a software timeline milestones to specific compliance checkpoints (KYC integration tested, PCI scope confirmed) rather than only feature-based milestones; (6) is there a named technical lead with prior fintech delivery, not just an account manager fielding your questions. A proposal missing four or more of these typically means compliance was priced as an afterthought, not a core requirement.
+
 ## Frequently Asked Questions
 
 ### (Scenario: non-technical founder trying to verify fintech claims) How can I verify a vendor's fintech experience if I'm not technical myself?
@@ -107,6 +111,22 @@ No — experience varies significantly by specific category (card issuing, accou
 
 Not without verifying genuine regulatory depth first — a lower price on a fintech product can reflect a vendor underestimating compliance requirements, which surfaces later as expensive rework or genuine legal exposure, not real savings.
 
+### (Scenario: founder reading a written proposal before a live meeting) What red flags should I look for in a fintech vendor's written proposal or SOW before even talking to them?
+
+Watch for generic phrases like "bank-level security" instead of a named regulatory framework, no distinct compliance line item in the cost estimate, and no named technical lead with prior fintech delivery — any of these alone isn't disqualifying, but two or more together is a real warning sign.
+
+### (Scenario: founder wondering about team size for fintech web application development) Do I need a large development team to build a compliant fintech web application, or can a small team do it well?
+
+Team size matters less than whether the team includes someone who has actually implemented KYC, AML, or PSD2 requirements before — a small, senior team with real fintech delivery experience typically outperforms a larger generalist team building the same scope for the first time.
+
+### (Scenario: founder asking who owns penetration testing) Does a fintech vendor need to handle penetration testing, or is that a separate cost I arrange myself?
+
+Most banking and payment partners require a penetration test before go-live, so ask explicitly during scoping who owns arranging and paying for it — a proposal that doesn't mention it at all is a sign compliance wasn't fully priced into the original estimate.
+
+### (Scenario: founder deciding between custom build and a fintech-in-a-box platform) Should I build a custom software product from scratch or use an existing fintech-in-a-box platform for compliance speed?
+
+A banking-as-a-service or fintech-in-a-box platform can shortcut some licensing and compliance overhead for a first launch, but it also constrains future customization — the right choice depends on whether your product's differentiation lives in the financial infrastructure itself or in the experience built on top of it.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -116,7 +136,11 @@ Not without verifying genuine regulatory depth first — a lower price on a fint
     { "@type": "Question", "name": "(Scenario: founder unsure what compliance question to ask) What's a good specific compliance question to test a fintech vendor's genuine expertise?", "acceptedAnswer": { "@type": "Answer", "text": "Ask how they'd handle the conflict between GDPR erasure requests and AML retention requirements." } },
     { "@type": "Question", "name": "(Scenario: founder trying to understand accountability before signing) Who should be responsible if a compliance issue surfaces after launch?", "acceptedAnswer": { "@type": "Answer", "text": "This should be discussed and documented explicitly before signing, with the vendor treating compliance as a shared responsibility." } },
     { "@type": "Question", "name": "(Scenario: founder unsure about banking partner integration requirements) Does every fintech vendor have the same level of experience with banking partner integrations?", "acceptedAnswer": { "@type": "Answer", "text": "No — experience varies by specific category, and expertise in one doesn't automatically transfer to another." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to compare vendors beyond price) Should I choose the cheapest fintech development quote if the proposals otherwise look similar?", "acceptedAnswer": { "@type": "Answer", "text": "Not without verifying genuine regulatory depth first — underestimated compliance requirements surface later as expensive rework." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to compare vendors beyond price) Should I choose the cheapest fintech development quote if the proposals otherwise look similar?", "acceptedAnswer": { "@type": "Answer", "text": "Not without verifying genuine regulatory depth first — underestimated compliance requirements surface later as expensive rework." } },
+    { "@type": "Question", "name": "(Scenario: founder reading a written proposal before a live meeting) What red flags should I look for in a fintech vendor's written proposal or SOW before even talking to them?", "acceptedAnswer": { "@type": "Answer", "text": "Generic security phrasing instead of a named regulatory framework, no distinct compliance line item, and no named technical lead with fintech delivery experience." } },
+    { "@type": "Question", "name": "(Scenario: founder wondering about team size for fintech web application development) Do I need a large development team to build a compliant fintech web application, or can a small team do it well?", "acceptedAnswer": { "@type": "Answer", "text": "Team size matters less than whether the team has actually implemented KYC, AML, or PSD2 requirements before." } },
+    { "@type": "Question", "name": "(Scenario: founder asking who owns penetration testing) Does a fintech vendor need to handle penetration testing, or is that a separate cost I arrange myself?", "acceptedAnswer": { "@type": "Answer", "text": "Most banking and payment partners require it before go-live, so ownership should be clarified explicitly during scoping." } },
+    { "@type": "Question", "name": "(Scenario: founder deciding between custom build and a fintech-in-a-box platform) Should I build a custom software product from scratch or use an existing fintech-in-a-box platform for compliance speed?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on whether your differentiation lives in the financial infrastructure itself or the experience built on top of it." } }
   ]
 }
 </script>

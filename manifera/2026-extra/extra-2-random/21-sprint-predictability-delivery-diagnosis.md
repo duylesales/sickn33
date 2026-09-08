@@ -70,6 +70,17 @@ Manifera's diagnostic engagement mapped six sprints of ticket history and found 
 
 Chronic sprint slippage is a hidden capital cost disguised as a process problem: every quarter a VP of Engineering re-forecasts a roadmap that sales and customer success have already committed to externally, the company burns credibility with enterprise buyers who priced their own rollout plans against a date that quietly moved. For a mid-market SaaS company, three consecutive quarters of missed commitments on a flagship feature can suppress win rates on date-sensitive enterprise deals by 10-15%, which on a €3M pipeline is €300,000-€450,000 in preventable churn — money lost not to bad code but to an unmanaged outsourcing model nobody audited. Fixing the diagnostic layer costs a fraction of that. [Talk to Manifera](https://www.manifera.com/contact-us/) about a delivery-predictability audit before the next roadmap commitment goes out the door.
 
+## The Metrics That Actually Predict Slippage
+
+Story points and burndown charts are trailing indicators — they tell you a sprint slipped after it already has. A director of software development wanting a leading signal should track four numbers instead:
+
+- **WIP-to-throughput ratio.** By Little's Law, cycle time equals work-in-progress divided by throughput. If a team is carrying 15 tickets in active WIP but only closes 5 per week, average cycle time is three weeks regardless of individual velocity — the fix is capping WIP, not pushing harder.
+- **Cycle-time p85, not the average.** The average hides the tail. A team with a 4-day average cycle time but a 14-day p85 has a small number of tickets quietly blowing every sprint commitment; those are almost always the dependency-blocked or under-scoped ones.
+- **Percentage of tickets reopened after "done."** Above roughly 10-15%, this signals scope or acceptance-criteria ambiguity upstream of engineering, not an execution problem — no outsourcing model fixes ambiguous requirements.
+- **Ratio of planned to unplanned work per sprint.** Once unplanned work (production fires, urgent escalations) exceeds 20-25% of sprint capacity, committed scope becomes structurally unreliable no matter how well it was estimated.
+
+Pull these four numbers from the last six sprints before the next retro — they will point directly at which of the four variance sources (WIP, dependencies, debt, or outsourcing model) is actually driving the slippage.
+
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering preparing a board update) How do I explain sprint slippage to the board without it looking like an excuse?
@@ -92,6 +103,22 @@ It's almost always structural. Adding headcount to an unmanaged flow with unboun
 
 Yes, a scoped delivery-diagnostic engagement, typically two to three weeks, maps dependency ownership, flow efficiency, and recurring debt across recent sprint history and delivers a prioritized fix list before any longer-term pod commitment is discussed.
 
+### (Scenario: director of software development trying to set a WIP limit for the first time) How do we set a sensible WIP limit if we've never used one?
+
+Start by measuring current average WIP per engineer over the last month, then cap it at that level or slightly below rather than guessing a number — most teams discover they're carrying two to three times more concurrent work than they realize, and simply enforcing the cap they already implicitly have improves cycle time before any other change.
+
+### (Scenario: VP of Engineering deciding between fixed-price and pod-based outsourcing models for a variance-prone team) Does a fixed-price outsourcing model make sprint slippage worse or better?
+
+Worse, in most cases, because a fixed-price vendor is contractually incentivized to close tickets against the original spec rather than flag scope discovered mid-sprint, so slippage gets silently absorbed as scope-cutting instead of surfaced as a risk. Throughput-owning models have the opposite incentive.
+
+### (Scenario: VP of Engineering whose reopened-ticket rate is climbing) What does a high rate of tickets reopened after being marked done actually indicate?
+
+It almost always points to ambiguous or incomplete acceptance criteria defined before the ticket entered the sprint, not an execution failure by the engineer who closed it. Fixing this requires a tighter definition-of-ready gate before tickets enter a sprint, not better testing after.
+
+### (Scenario: VP of Engineering trying to decide if a single bad sprint is a pattern or noise) How many sprints of data do we need before treating a recurring slip as a structural problem instead of noise?
+
+Three to six sprints of ticket-level tracing is generally enough to separate a one-off anomaly from a repeating structural cause, since a genuine unowned dependency or debt item will show up as the blocking reason on multiple unrelated tickets across that window.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +128,11 @@ Yes, a scoped delivery-diagnostic engagement, typically two to three weeks, maps
     { "@type": "Question", "name": "(Scenario: VP of Engineering comparing outsourcing models) Which outsourcing model causes the least sprint variance?", "acceptedAnswer": { "@type": "Answer", "text": "A dedicated pod model that owns a product area's full throughput consistently outperforms staff augmentation and fixed-scope project contracts, because the team is incentivized to surface risk early rather than protect a velocity number or a fixed price." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering auditing cross-team dependencies) How do we find which dependencies are actually causing our slippage?", "acceptedAnswer": { "@type": "Answer", "text": "Trace the blocking cause on every slipped ticket across three to six sprints rather than trusting the stated reason in standup — most orgs find a small number of unowned shared services account for the majority of variance." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering deciding whether to bring in outside help) Is this a hiring problem or a structural problem?", "acceptedAnswer": { "@type": "Answer", "text": "It's almost always structural. Adding headcount to an unmanaged flow with unbounded WIP and unowned dependencies increases coordination overhead faster than it increases throughput." } },
-    { "@type": "Question", "name": "(Scenario: VP of Engineering wanting a fast diagnostic before committing budget) Can Manifera diagnose our delivery predictability before we sign a full engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a scoped delivery-diagnostic engagement, typically two to three weeks, maps dependency ownership, flow efficiency, and recurring debt across recent sprint history and delivers a prioritized fix list before any longer-term pod commitment is discussed." } }
+    { "@type": "Question", "name": "(Scenario: VP of Engineering wanting a fast diagnostic before committing budget) Can Manifera diagnose our delivery predictability before we sign a full engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a scoped delivery-diagnostic engagement, typically two to three weeks, maps dependency ownership, flow efficiency, and recurring debt across recent sprint history and delivers a prioritized fix list before any longer-term pod commitment is discussed." } },
+    { "@type": "Question", "name": "(Scenario: director of software development trying to set a WIP limit for the first time) How do we set a sensible WIP limit if we've never used one?", "acceptedAnswer": { "@type": "Answer", "text": "Measure current average WIP per engineer over the last month, then cap it at that level or slightly below rather than guessing. Most teams discover they're carrying two to three times more concurrent work than they realize." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering deciding between fixed-price and pod-based outsourcing models for a variance-prone team) Does a fixed-price outsourcing model make sprint slippage worse or better?", "acceptedAnswer": { "@type": "Answer", "text": "Worse, in most cases, because a fixed-price vendor is contractually incentivized to close tickets against the original spec rather than flag scope discovered mid-sprint, so slippage gets silently absorbed as scope-cutting instead of surfaced as risk." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering whose reopened-ticket rate is climbing) What does a high rate of tickets reopened after being marked done actually indicate?", "acceptedAnswer": { "@type": "Answer", "text": "It almost always points to ambiguous or incomplete acceptance criteria defined before the ticket entered the sprint, not an execution failure. Fixing this requires a tighter definition-of-ready gate before tickets enter a sprint." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering trying to decide if a single bad sprint is a pattern or noise) How many sprints of data do we need before treating a recurring slip as a structural problem instead of noise?", "acceptedAnswer": { "@type": "Answer", "text": "Three to six sprints of ticket-level tracing is generally enough to separate a one-off anomaly from a repeating structural cause, since a genuine unowned dependency or debt item will show up as the blocking reason on multiple unrelated tickets." } }
   ]
 }
 </script>

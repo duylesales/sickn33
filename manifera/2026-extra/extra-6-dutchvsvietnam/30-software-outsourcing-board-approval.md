@@ -76,6 +76,12 @@ A board deferral for "further review" is rarely a neutral pause — it typically
 
 The savings number opens the conversation. The accountability structure closes it. Prepare both, lead with the one the board actually cares about first, and present the pilot phase as the concrete de-risking mechanism it is. [Build your board case with Manifera](https://www.manifera.com/contact-us/).
 
+## The SOW Clauses Legal Counsel Actually Flags in Board Review
+
+Beyond the CFO's five accountability questions, a company's legal counsel reviewing the software project outsourcing SOW before it reaches the board typically flags four specific clauses, and a CFO who's pre-reviewed these avoids a second, legal-driven delay cycle on top of the board's own questions. First, the liability cap — a vendor SOW capping liability at the contract value or less leaves the client exposed on a data breach or IP dispute where actual damages could exceed that cap; push for a liability carve-out on IP infringement and confidentiality breaches specifically. Second, the governing law and dispute resolution clause — confirm it names Dutch or another EU-familiar jurisdiction with arbitration or court venue the company's own counsel can actually navigate, not a venue requiring foreign counsel engagement to enforce. Third, the subcontracting clause — confirm the SOW requires client consent before the vendor subcontracts any portion of the work to a third party, closing a gap where accountability quietly shifts to an unvetted entity. Fourth, the data breach notification timeline — GDPR requires notification within 72 hours of the client organization becoming aware, so the vendor's own contractual notification commitment to the client needs to be shorter than that, typically 24-48 hours, to leave room to meet the regulatory deadline.
+
+Flagging these four before the board meeting, rather than after legal review delays the signature separately, keeps the accountability case and the actual contract language moving on the same timeline.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO anticipating the board's first and hardest question) What's the single most important question to prepare for in board approval?
@@ -98,6 +104,22 @@ Present it risk-adjusted from the start, explicitly including the governance lay
 
 A bounded pilot with defined success criteria and a clear off-ramp is almost always easier to approve, particularly for a first offshore engagement or one touching sensitive data, since it converts an open-ended commitment into a reversible one.
 
+### (Scenario: CFO whose legal counsel flags contract issues after the board has already reviewed the deck) What SOW clauses should legal review before, not after, the board sees the proposal?
+
+Four specifically: the liability cap (should carve out IP infringement and confidentiality breaches), the governing law and dispute resolution venue (should be Dutch or another EU-familiar jurisdiction), the subcontracting clause (should require client consent before further subcontracting), and the data breach notification timeline (vendor commitment should be shorter than GDPR's 72-hour client-side deadline).
+
+### (Scenario: CFO whose board wants to know how a vendor's data breach notification commitment protects the company) Why does the vendor's breach notification timeline matter if GDPR already sets a 72-hour deadline?
+
+The 72-hour GDPR clock starts when the client organization becomes aware of a breach, not when the vendor does — if the vendor's own contractual notification commitment is 72 hours or longer, the client may have no time left to meet its own regulatory deadline, so the vendor commitment needs to be shorter, typically 24-48 hours.
+
+### (Scenario: CFO evaluating a vendor found through a "best software outsourcing companies" list) Should a placement on a public outsourcing rankings list factor into the board's decision?
+
+It's a reasonable secondary signal but not a substitute for the five accountability questions this article covers — rankings largely reflect review volume and marketing reach, not contracting jurisdiction or SOW clause quality, so use it only to shortlist, never to skip due diligence.
+
+### (Scenario: CFO whose board wants a specific answer on subcontracting risk) How do we prevent the vendor from quietly subcontracting our project to a third party we haven't vetted?
+
+Require an explicit SOW clause mandating client consent before any subcontracting of contracted work, closing the gap where accountability could otherwise shift to an entity outside the reviewed governance structure without the board's knowledge.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,7 +129,11 @@ A bounded pilot with defined success criteria and a clear off-ramp is almost alw
     { "@type": "Question", "name": "(Scenario: CFO worried IP questions could derail a future transaction) How specific does the IP answer need to be for a board anticipating a future funding round or acquisition?", "acceptedAnswer": { "@type": "Answer", "text": "Very specific: individual engineer NDAs, client-owned source repositories from the first commit, and an IP assignment clause enforceable under EU law that survives contract termination." } },
     { "@type": "Question", "name": "(Scenario: CFO addressing a board member's past outsourcing failure) How should we respond when a board member raises a past outsourcing failure as a concern?", "acceptedAnswer": { "@type": "Answer", "text": "Name the specific structural safeguard in your proposal, such as an independent governance layer and contracted staff continuity, rather than offering general assurance." } },
     { "@type": "Question", "name": "(Scenario: CFO deciding how to present the savings figure) Should the savings number be presented as a headline percentage or something more detailed?", "acceptedAnswer": { "@type": "Answer", "text": "Present it risk-adjusted from the start, explicitly including the governance layer's cost as the line item pricing out legal, compliance, and delivery risk." } },
-    { "@type": "Question", "name": "(Scenario: CFO deciding between requesting full budget or a phased approach) Is a full-budget request or a phased pilot approach more likely to get board approval?", "acceptedAnswer": { "@type": "Answer", "text": "A bounded pilot with defined success criteria and a clear off-ramp is almost always easier to approve, converting an open-ended commitment into a reversible one." } }
+    { "@type": "Question", "name": "(Scenario: CFO deciding between requesting full budget or a phased approach) Is a full-budget request or a phased pilot approach more likely to get board approval?", "acceptedAnswer": { "@type": "Answer", "text": "A bounded pilot with defined success criteria and a clear off-ramp is almost always easier to approve, converting an open-ended commitment into a reversible one." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose legal counsel flags contract issues after the board has already reviewed the deck) What SOW clauses should legal review before, not after, the board sees the proposal?", "acceptedAnswer": { "@type": "Answer", "text": "The liability cap, the governing law and dispute resolution venue, the subcontracting clause, and the data breach notification timeline." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose board wants to know how a vendor's data breach notification commitment protects the company) Why does the vendor's breach notification timeline matter if GDPR already sets a 72-hour deadline?", "acceptedAnswer": { "@type": "Answer", "text": "The 72-hour GDPR clock starts when the client becomes aware, not the vendor, so the vendor's own commitment needs to be shorter, typically 24-48 hours, to leave time to meet the regulatory deadline." } },
+    { "@type": "Question", "name": "(Scenario: CFO evaluating a vendor found through a \"best software outsourcing companies\" list) Should a placement on a public outsourcing rankings list factor into the board's decision?", "acceptedAnswer": { "@type": "Answer", "text": "It's a reasonable secondary signal but not a substitute for the five accountability questions — use it to shortlist, never to skip due diligence." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose board wants a specific answer on subcontracting risk) How do we prevent the vendor from quietly subcontracting our project to a third party we haven't vetted?", "acceptedAnswer": { "@type": "Answer", "text": "Require an explicit SOW clause mandating client consent before any subcontracting of the contracted work." } }
   ]
 }
 </script>

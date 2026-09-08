@@ -86,6 +86,10 @@ Manifera's Amsterdam team conducted a structured cost re-scoping explicitly mode
 
 Before committing to a MaaS platform budget, insist on a cost estimate modeled against your realistic target agency count and regional expansion geography, not small-scale, single-agency testing conditions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic mobility-as-a-service platform cost scoping exercise.
 
+## Technical Deep-Dive: Handling Partial Real-Time Data in a Multi-Leg Journey
+
+A specific technical problem multi-modal trip planning has to solve that single-mode routing never encounters: what does the engine do when a five-leg journey spans a bus with a live GTFS-realtime feed, a bike-share dock with only static availability snapshots, and a rail connection whose real-time feed just went stale mid-computation? A naive planner treats all legs as equally reliable and returns a single confident itinerary that silently degrades into a missed transfer the moment the stale-feed leg's actual arrival differs from its scheduled time. A production-grade multi-modal engine instead needs to tag each leg with a per-source confidence and freshness score, propagate that uncertainty through the itinerary's total risk score, and surface transfer buffers sized to each leg's actual reliability rather than a fixed buffer applied uniformly across the trip. This means the routing engine isn't just a graph-search problem; it's a graph search over a confidence-weighted, partially-stale dataset that has to re-rank candidate itineraries the moment any single leg's feed status changes mid-journey. Building this correctly, rather than falling back to worst-case fixed buffers that make every itinerary look artificially slow, typically adds 15-20% to the trip-planning engine's budget over a naive all-real-time-or-nothing design, and it's the difference between a MaaS app riders trust during a real disruption and one they abandon after the first missed transfer.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial MaaS platform estimate) Why do MaaS platform cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ Genuine multi-agency, multi-mode journey computation requires sequencing transfe
 
 Each new region brings its own set of agencies with distinct feed formats, fare structures, and synchronization requirements, requiring genuinely distributed infrastructure with real ongoing operational complexity.
 
+### (Scenario: transit agency IT lead deciding between an existing MaaS aggregator and a custom platform) When does a custom MaaS platform outperform integrating with an existing third-party MaaS aggregator?
+
+Once a region has three or more agencies with genuinely divergent fare-capping rules or a mode mix an aggregator doesn't support natively, per-transaction aggregator fees and the limits of their fare-configuration options typically make a custom fare-and-trip-planning build more cost-effective over a multi-year horizon.
+
+### (Scenario: engineering lead sizing the team for a multi-agency MaaS build) How many engineers does a production-ready multi-agency MaaS platform typically require?
+
+Roughly 7-10 engineers split across ingestion, fare integration, and trip planning, with the confidence-weighted trip-planning engine typically requiring 2-3 dedicated engineers given the partial real-time data handling multi-modal journeys require.
+
+### (Scenario: CTO estimating timeline before committing to a launch date) How long does building a production-ready multi-agency MaaS platform typically take?
+
+A realistic timeline runs 7-9 months for an MVP covering trip planning and fare integration for two to three agencies, with each additional agency's onboarding, including feed-quality validation and fare-rule configuration, typically adding 3-5 weeks depending on that agency's data maturity.
+
+### (Scenario: product lead deciding how to handle a stale real-time feed mid-journey) What should the app show a rider when one leg's real-time feed goes stale mid-trip?
+
+The itinerary should re-rank in real time using that leg's last-known-good data plus a widened confidence-weighted transfer buffer, and flag the affected leg explicitly to the rider, rather than silently continuing to display a now-unreliable arrival estimate as if it were still live.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Each new region brings its own set of agencies with distinct feed formats, fare 
     { "@type": "Question", "name": "(Scenario: engineering lead scoping vehicle tracking) Why is real-time vehicle-tracking ingestion harder to scale correctly than it appears in small-scale testing?", "acceptedAnswer": { "@type": "Answer", "text": "Each additional agency brings its own feed infrastructure and reliability characteristics, requiring different architecture at scale." } },
     { "@type": "Question", "name": "(Scenario: finance lead scoping fare systems) Why does fare integration require more than typical payment-processing engineering?", "acceptedAnswer": { "@type": "Answer", "text": "Applying and reconciling each agency's own fare-capping and concession rules requires genuinely configurable, agency-specific logic." } },
     { "@type": "Question", "name": "(Scenario: CTO planning multi-modal trip planning) Why does multi-modal trip planning deserve substantial, ongoing engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Multi-agency, multi-mode journey computation requires sequencing transfers and handling partial real-time data, more complex than single-mode routing." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for multi-region expansion) Why does expanding into new regions add real platform infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Each new region brings distinct feed formats, fare structures, and synchronization requirements, requiring distributed infrastructure." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for multi-region expansion) Why does expanding into new regions add real platform infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Each new region brings distinct feed formats, fare structures, and synchronization requirements, requiring distributed infrastructure." } },
+    { "@type": "Question", "name": "(Scenario: transit agency IT lead deciding between an existing MaaS aggregator and a custom platform) When does a custom MaaS platform outperform integrating with an existing third-party MaaS aggregator?", "acceptedAnswer": { "@type": "Answer", "text": "Past three or more agencies with divergent fare rules, per-transaction aggregator fees and limited fare-configuration options typically make a custom build more cost-effective long term." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead sizing the team for a multi-agency MaaS build) How many engineers does a production-ready multi-agency MaaS platform typically require?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 7-10 engineers across ingestion, fare integration, and trip planning, with 2-3 dedicated to the confidence-weighted trip-planning engine." } },
+    { "@type": "Question", "name": "(Scenario: CTO estimating timeline before committing to a launch date) How long does building a production-ready multi-agency MaaS platform typically take?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 7-9 months for a two-to-three-agency MVP, with each additional agency's onboarding adding 3-5 weeks." } },
+    { "@type": "Question", "name": "(Scenario: product lead deciding how to handle a stale real-time feed mid-journey) What should the app show a rider when one leg's real-time feed goes stale mid-trip?", "acceptedAnswer": { "@type": "Answer", "text": "Re-rank the itinerary using last-known-good data plus a widened confidence-weighted buffer, and flag the affected leg explicitly rather than showing a stale estimate as live." } }
   ]
 }
 </script>

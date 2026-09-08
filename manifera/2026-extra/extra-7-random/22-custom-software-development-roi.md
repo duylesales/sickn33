@@ -72,6 +72,10 @@ Manifera helped the CFO rebuild the ROI calculation completely — full lifetime
 
 A custom software development ROI calculation that omits ongoing maintenance cost, opportunity cost, compounding value, and risk reduction produces a number that can materially mislead a CFO in either direction — approving an investment whose true cost exceeds its value, or rejecting one whose real return was underestimated. Building the complete calculation costs nothing beyond a more thorough analysis before presenting the business case. [Talk to Manifera](https://www.manifera.com/contact-us/) about a custom software development ROI model built on the full picture, not a narrow slice of it.
 
+## A Worked ROI Calculation, Three-Year Horizon
+
+Take a €200,000 custom software build. A narrow ROI calculation compares that €200,000 against, say, €280,000 in year-one value from solving the immediate problem — a 40% ROI that looks solid on a single slide. The complete calculation changes the picture: total three-year cost is €200,000 build plus 20% annual maintenance (€40,000/year × 3 = €120,000) = €320,000, not €200,000. Total three-year value adds the original €280,000 to two compounding streams — a reusable data pipeline enabling a second initiative at roughly 60% of its from-scratch cost (a further €90,000 in avoided spend) and a quantified risk-reduction value from closing a specific compliance gap (conservatively priced at the cost of the incident it prevents, discounted by probability — often €30,000-€60,000 for a moderate-likelihood, moderate-severity exposure). Complete three-year value: roughly €415,000 against €320,000 total cost — a 30% three-year ROI, lower than the flattering single-year 40% but the number that actually survives board scrutiny, because every input is defensible line by line rather than a single optimistic slide.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO building a custom software business case that only counts build cost) What cost categories does a typical custom software development ROI calculation miss?
@@ -94,6 +98,22 @@ By estimating the probability and cost of the specific operational or compliance
 
 It can lead to approving an investment whose true total cost exceeds its value, or rejecting one whose real, compounding return was underestimated.
 
+### (Scenario: CFO trying to build a board-ready ROI calculation for a specific custom software investment) What's a realistic worked example of a complete custom software development ROI calculation over three years?
+
+For a €200,000 build, a narrow single-year view might show 40% ROI, but a complete three-year calculation — adding ~€120,000 in maintenance to cost and compounding value plus risk reduction to benefit — typically nets closer to 25-35% ROI, a lower but far more defensible number for board presentation.
+
+### (Scenario: CFO comparing custom software development ROI against buying an off-the-shelf SaaS alternative) How should ROI calculation differ when comparing custom software development against a SaaS subscription?
+
+Add the SaaS option's multi-year subscription cost and per-seat scaling to its side of the comparison, and add the custom option's ownership advantages — no vendor lock-in, no per-seat cost growth, and the compounding reusability of a data asset the SaaS tool won't expose via API.
+
+### (Scenario: CFO trying to quantify risk-reduction value without an actuarial background) What's a practical way to put a number on risk-reduction value in an ROI calculation?
+
+Estimate the cost of the specific incident the software prevents (a breach, an outage, a compliance fine) and multiply by a conservative annual probability estimate — even a rough discounted figure is more defensible to a board than omitting risk reduction from the ROI calculation entirely.
+
+### (Scenario: CFO deciding whether an offshore delivery model changes the ROI calculation) Does building through a Vietnam-based delivery pod change the custom software development ROI calculation?
+
+Yes, favorably — it lowers the build-cost side of the equation by 40-60% versus Western European rates without reducing the compounding-value or risk-reduction benefit categories, which raises the ROI percentage independent of the underlying business case's strength.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +123,11 @@ It can lead to approving an investment whose true total cost exceeds its value, 
     { "@type": "Question", "name": "(Scenario: CFO trying to capture value beyond the immediate problem being solved) What benefit categories does a narrow ROI calculation typically miss?", "acceptedAnswer": { "@type": "Answer", "text": "Compounding value from reusable capabilities beyond the original problem, and risk reduction value." } },
     { "@type": "Question", "name": "(Scenario: CFO wondering how much ongoing maintenance typically costs) How much does custom software maintenance typically cost annually relative to the original build?", "acceptedAnswer": { "@type": "Answer", "text": "Typically 15-25% of the original build cost annually." } },
     { "@type": "Question", "name": "(Scenario: CFO trying to account for risk-reduction value in an ROI calculation) How should a CFO quantify risk-reduction value in a custom software ROI calculation?", "acceptedAnswer": { "@type": "Answer", "text": "By estimating the probability and cost of the specific risk being addressed and counting the reduction as a form of return." } },
-    { "@type": "Question", "name": "(Scenario: CFO trying to avoid an inaccurate investment decision) What's the risk of using an incomplete custom software ROI calculation?", "acceptedAnswer": { "@type": "Answer", "text": "It can lead to approving an investment that costs more than its value, or rejecting one whose real return was underestimated." } }
+    { "@type": "Question", "name": "(Scenario: CFO trying to avoid an inaccurate investment decision) What's the risk of using an incomplete custom software ROI calculation?", "acceptedAnswer": { "@type": "Answer", "text": "It can lead to approving an investment that costs more than its value, or rejecting one whose real return was underestimated." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to build a board-ready ROI calculation for a specific custom software investment) What's a realistic worked example of a complete custom software development ROI calculation over three years?", "acceptedAnswer": { "@type": "Answer", "text": "A narrow single-year view might show 40% ROI, but a complete three-year calculation typically nets closer to 25-35%, a lower but more defensible number." } },
+    { "@type": "Question", "name": "(Scenario: CFO comparing custom software development ROI against buying an off-the-shelf SaaS alternative) How should ROI calculation differ when comparing custom software development against a SaaS subscription?", "acceptedAnswer": { "@type": "Answer", "text": "Add multi-year subscription and per-seat scaling cost to the SaaS side, and add ownership advantages like no vendor lock-in and reusable data assets to the custom side." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to quantify risk-reduction value without an actuarial background) What's a practical way to put a number on risk-reduction value in an ROI calculation?", "acceptedAnswer": { "@type": "Answer", "text": "Estimate the cost of the incident prevented and multiply by a conservative annual probability estimate, rather than omitting risk reduction entirely." } },
+    { "@type": "Question", "name": "(Scenario: CFO deciding whether an offshore delivery model changes the ROI calculation) Does building through a Vietnam-based delivery pod change the custom software development ROI calculation?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, favorably — it lowers build cost 40-60% versus Western European rates without reducing compounding-value or risk-reduction benefits." } }
   ]
 }
 </script>

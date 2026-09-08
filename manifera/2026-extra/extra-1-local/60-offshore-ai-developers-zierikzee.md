@@ -70,6 +70,10 @@ A senior AI/ML engineer in the Netherlands commands a base salary well into six 
 
 From DevOps pipelines in Assen to AI staffing math in Zierikzee, the same lesson holds across Drenthe, Zeeland, and every region in between: the right engineering capability, structured correctly, beats the search for a single perfect hire almost every time. Talk to Manifera about building the AI team your roadmap actually needs: [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## Pricing the Five Disciplines Separately: What One Local Hire Was Actually Being Asked to Cover
+
+Break the "one senior AI engineer" job description into what it actually asks for, priced individually, and the local search's failure becomes obvious math rather than bad luck. A Dutch senior MLOps specialist alone commands a base salary in the €85,000-€110,000 range; a dedicated retrieval/vector database specialist runs comparably, often €80,000-€105,000; and a production evaluation engineer with genuine RAG and fine-tuning experience sits at a similar premium. Combined, the "one senior AI engineer" role in Zierikzee's job posting was implicitly asking a single candidate to be worth €250,000-€300,000 of combined specialist salary, compressed into one person's calendar and one person's expertise ceiling — which is precisely why the search returned zero qualified, willing candidates after seven months. A well-structured offshore AI pod covering the same three disciplines typically costs a fraction of even the single local salary being offered, not because the offshore engineers are lower quality, but because the geographic cost base applies to genuinely separate specialists rather than one overloaded generalist. Reframing the search this way — three distinct roles, not one impossible one — is usually the moment a CFO stops blaming the local labor market and starts questioning the original job requisition itself.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO who has spent months on an unsuccessful local search) We've already spent significant budget on recruiting. Is it too late to switch approaches?
@@ -92,6 +96,22 @@ Accountability sits with Manifera as the delivery partner, with a defined Amster
 
 Most engagements move from kickoff to meaningful delivery within four to eight weeks, compared to the open-ended, uncertain timeline of a specialized local search in a thin talent market like Zierikzee's.
 
+### (Scenario: CFO wanting the salary math broken into individual specialist roles) How much would it cost to hire the MLOps, retrieval, and evaluation specialists separately in the Dutch market?
+
+Combined, a Dutch senior MLOps specialist, retrieval/vector database specialist, and evaluation engineer typically total €250,000-€300,000 in base salary alone — which is what the original "one senior AI engineer" requisition was implicitly asking a single candidate to be worth.
+
+### (Scenario: CFO wondering if training one generalist is cheaper than an offshore pod) Wouldn't it be cheaper to hire one strong generalist and train them across all five AI disciplines?
+
+Rarely — reaching genuine expert depth across four to five distinct disciplines takes years, not months, and even a fully trained generalist remains a single point of failure, which defeats the purpose of the investment.
+
+### (Scenario: CFO on Schouwen-Duiveland comparing labor market to the rest of Zeeland) Is Zierikzee's labor market genuinely more constrained than the rest of Zeeland for specialized AI roles?
+
+Yes — Schouwen-Duiveland's smaller population base means even fewer candidates are willing to commute in for a specialized niche role than in Zeeland's broader software labor market, which compounds the scarcity already present at the provincial level.
+
+### (Scenario: CFO trying to avoid a Randstad bidding war on equity and retention) Does an offshore AI pod avoid the equity and retention bidding war we'd face hiring locally?
+
+Yes — contract-based pod pricing sidesteps equity negotiation, retention-bonus escalation, and counteroffer risk entirely, replacing an unpredictable bidding war with a fixed, forecastable monthly cost.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +121,11 @@ Most engagements move from kickoff to meaningful delivery within four to eight w
     { "@type": "Question", "name": "(Scenario: Zierikzee CFO worried about losing local control) Does using an offshore AI pod mean giving up strategic control over the AI initiative?", "acceptedAnswer": { "@type": "Answer", "text": "No. Manifera's model keeps governance, architecture decisions, and quality accountability with our Amsterdam-based team, so you retain the same strategic oversight you'd expect from a local senior hire, with execution capacity added underneath it." } },
     { "@type": "Question", "name": "(Scenario: CFO comparing total cost of ownership) How does the total cost of an offshore AI pod actually compare to one senior local hire over a year?", "acceptedAnswer": { "@type": "Answer", "text": "When you include salary, recruiter fees, benefits, and the realistic months of vacancy during a search in a thin talent market, a comparable offshore pod typically costs meaningfully less over a twelve-month period while covering more specialized disciplines than one hire could." } },
     { "@type": "Question", "name": "(Scenario: CFO wanting a single point of accountability) With a pod instead of one hire, who is actually accountable if something goes wrong?", "acceptedAnswer": { "@type": "Answer", "text": "Accountability sits with Manifera as the delivery partner, with a defined Amsterdam-based governance contact, a clearer accountability structure in practice than depending on the continued availability and bandwidth of a single internal hire." } },
-    { "@type": "Question", "name": "(Scenario: CFO deciding how quickly this could move) How fast can an offshore AI pod actually become productive compared to continuing the local search?", "acceptedAnswer": { "@type": "Answer", "text": "Most engagements move from kickoff to meaningful delivery within four to eight weeks, compared to the open-ended, uncertain timeline of a specialized local search in a thin talent market like Zierikzee's." } }
+    { "@type": "Question", "name": "(Scenario: CFO deciding how quickly this could move) How fast can an offshore AI pod actually become productive compared to continuing the local search?", "acceptedAnswer": { "@type": "Answer", "text": "Most engagements move from kickoff to meaningful delivery within four to eight weeks, compared to the open-ended, uncertain timeline of a specialized local search in a thin talent market like Zierikzee's." } },
+    { "@type": "Question", "name": "(Scenario: CFO wanting the salary math broken into individual specialist roles) How much would it cost to hire the MLOps, retrieval, and evaluation specialists separately in the Dutch market?", "acceptedAnswer": { "@type": "Answer", "text": "Combined, roughly €250,000-€300,000 in base salary alone, which is what the original 'one senior AI engineer' requisition was implicitly asking a single candidate to be worth." } },
+    { "@type": "Question", "name": "(Scenario: CFO wondering if training one generalist is cheaper than an offshore pod) Wouldn't it be cheaper to hire one strong generalist and train them across all five AI disciplines?", "acceptedAnswer": { "@type": "Answer", "text": "Rarely, since reaching genuine expert depth across four to five disciplines takes years, and even a fully trained generalist remains a single point of failure." } },
+    { "@type": "Question", "name": "(Scenario: CFO on Schouwen-Duiveland comparing labor market to the rest of Zeeland) Is Zierikzee's labor market genuinely more constrained than the rest of Zeeland for specialized AI roles?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Schouwen-Duiveland's smaller population base means even fewer candidates are willing to commute in for a specialized niche role than in Zeeland's broader labor market." } },
+    { "@type": "Question", "name": "(Scenario: CFO trying to avoid a Randstad bidding war on equity and retention) Does an offshore AI pod avoid the equity and retention bidding war we'd face hiring locally?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, contract-based pod pricing sidesteps equity negotiation and counteroffer risk entirely, replacing an unpredictable bidding war with a fixed monthly cost." } }
   ]
 }
 </script>

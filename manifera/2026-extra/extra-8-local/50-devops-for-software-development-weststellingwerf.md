@@ -98,6 +98,18 @@ Manifera conducted a full knowledge audit, codified the company's infrastructure
 
 Key-person deployment risk left unaddressed doesn't show up as a line item until it surfaces during a financial event, at which point it commonly reduces a company's negotiating position in a funding round or acquisition by a range investors and advisors typically describe in the high single-digit percentages of deal value, a figure that can easily run into hundreds of thousands of euros depending on company size. Closing this risk through a full knowledge-audit, codification, and validation project typically costs €30,000 to €44,000 delivered over six to eight weeks, a cost that is straightforward to justify against even a modest reduction in deal-negotiation friction, let alone the ongoing operational resilience gained. Companies that complete this process typically report being able to onboard a new engineer to full deployment competence in a fraction of the previous time, and enter subsequent financial reviews with the finding already closed. To scope a key-person risk audit for your engineering organization, reach out via [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## The Bus-Factor Scorecard: A Quick Self-Assessment Before Commissioning a Full Audit
+
+A CFO can get a rough read on exposure in a single afternoon, before scoping a formal engagement, by scoring each critical system against three yes/no questions:
+
+- **Can someone other than the key engineer deploy this system today**, right now, without asking them a single question?
+- **Is the infrastructure configuration in version control**, readable and reproducible by any qualified engineer, rather than living in a console someone clicks through from memory?
+- **Has anyone besides the key engineer ever run an incident response drill on this system**, end to end, under realistic conditions?
+
+A "no" answer to any single question on any critical system is an immediate red flag. Score each system 0-3 based on how many questions pass; a company with multiple systems scoring 0 or 1 is carrying materially more risk than one where most systems score 2 or 3, and that gap is exactly what a due-diligence technical review will find given enough time.
+
+This scorecard isn't a substitute for the full audit — it's the fifteen-minute version that tells a CFO whether the full audit is urgent or merely prudent, and gives the board a concrete number to react to instead of a vague sense of unease.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO who just learned about a single-engineer deployment dependency) How urgent is it to address key-person deployment risk if the engineer in question isn't currently planning to leave?
@@ -120,6 +132,22 @@ Insist on a validation exercise where someone other than the original key engine
 
 Outside help is often faster and more objective, since an internal audit conducted by the same team that built the tribal-knowledge-dependent system in the first place can miss gaps that an external, structured audit is specifically designed to surface.
 
+### (Scenario: CFO wanting a quick way to self-assess bus-factor risk before commissioning a full audit) Is there a quick way to estimate our bus-factor risk before commissioning a full audit?
+
+Ask three questions per critical system: can someone other than the key person deploy it today, is the infrastructure configuration in version control, and has anyone but the key person ever run an incident response drill on it — a "no" to any of the three is an immediate red flag warranting a formal audit.
+
+### (Scenario: CFO comparing key-person insurance against fixing the underlying technical risk) Should we buy key-person insurance instead of investing in documentation and automation?
+
+Key-person insurance compensates for financial loss if someone leaves or becomes unavailable, but it does nothing to prevent the operational disruption itself — a properly automated deployment process closes the operational risk that insurance only pays out after the fact.
+
+### (Scenario: CFO asking how many people minimum need cross-training before the risk is considered closed) How many people need to be cross-trained before key-person risk is considered actually closed?
+
+A minimum bus factor of two for every critical system — at least two people, neither being the original key engineer alone, who can independently execute deployment and incident response — is the standard threshold; a key engineer plus a single backup is still fragile if both are unavailable at once.
+
+### (Scenario: CFO estimating whether this process differs for a smaller Weststellingwerf-sized team versus a larger engineering org) Does this key-person risk process look different for a small, five-person engineering team versus a larger organization?
+
+The methodology is identical, but a smaller team compresses the timeline since there's less accumulated undocumented surface area to audit — a five-to-eight-person engineering org typically completes the full audit-to-validation cycle in five to six weeks rather than the eight weeks a larger, more complex organization requires.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -129,7 +157,11 @@ Outside help is often faster and more objective, since an internal audit conduct
     { "@type": "Question", "name": "(Scenario: CFO wondering whether this is really a technical problem rather than an HR one) Isn't this really an HR retention issue rather than an engineering one?", "acceptedAnswer": { "@type": "Answer", "text": "Retention buys time but doesn't close the exposure; the underlying fix is architectural, converting tribal knowledge into documented, automated processes." } },
     { "@type": "Question", "name": "(Scenario: CFO preparing for an upcoming funding round or acquisition conversation) How does this kind of risk typically show up during due diligence?", "acceptedAnswer": { "@type": "Answer", "text": "Technical due diligence reviews routinely ask what happens if a specific key person leaves, and an unclear answer is a common finding that can affect deal terms or timeline." } },
     { "@type": "Question", "name": "(Scenario: CFO wanting proof that the risk has actually been closed, not just documented) How do we know the risk is actually closed and not just documented on paper?", "acceptedAnswer": { "@type": "Answer", "text": "Insist on a validation exercise where someone other than the original key engineer executes a full deployment and incident response using only the new documentation and automation." } },
-    { "@type": "Question", "name": "(Scenario: CFO deciding whether to build this internally or engage outside help) Should we handle this internally, or is outside help necessary?", "acceptedAnswer": { "@type": "Answer", "text": "Outside help is often faster and more objective, since an internal audit by the same team that built the tribal-knowledge-dependent system can miss gaps a structured external audit is designed to surface." } }
+    { "@type": "Question", "name": "(Scenario: CFO deciding whether to build this internally or engage outside help) Should we handle this internally, or is outside help necessary?", "acceptedAnswer": { "@type": "Answer", "text": "Outside help is often faster and more objective, since an internal audit by the same team that built the tribal-knowledge-dependent system can miss gaps a structured external audit is designed to surface." } },
+    { "@type": "Question", "name": "(Scenario: CFO wanting a quick way to self-assess bus-factor risk before commissioning a full audit) Is there a quick way to estimate our bus-factor risk before commissioning a full audit?", "acceptedAnswer": { "@type": "Answer", "text": "Ask three questions per critical system: can someone else deploy it today, is the infrastructure config in version control, and has anyone but the key person run an incident drill on it. A no to any is a red flag." } },
+    { "@type": "Question", "name": "(Scenario: CFO comparing key-person insurance against fixing the underlying technical risk) Should we buy key-person insurance instead of investing in documentation and automation?", "acceptedAnswer": { "@type": "Answer", "text": "Key-person insurance compensates for financial loss after the fact but does nothing to prevent the operational disruption itself, which only an automated deployment process actually closes." } },
+    { "@type": "Question", "name": "(Scenario: CFO asking how many people minimum need cross-training before the risk is considered closed) How many people need to be cross-trained before key-person risk is considered actually closed?", "acceptedAnswer": { "@type": "Answer", "text": "A minimum bus factor of two for every critical system, at least two people who can independently execute deployment and incident response, is the standard threshold." } },
+    { "@type": "Question", "name": "(Scenario: CFO estimating whether this process differs for a smaller Weststellingwerf-sized team versus a larger engineering org) Does this key-person risk process look different for a small, five-person engineering team versus a larger organization?", "acceptedAnswer": { "@type": "Answer", "text": "The methodology is identical, but a smaller team compresses the timeline to five to six weeks versus the eight weeks a larger, more complex organization requires." } }
   ]
 }
 </script>

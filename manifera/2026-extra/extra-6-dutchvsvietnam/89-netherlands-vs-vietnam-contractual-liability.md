@@ -74,6 +74,10 @@ Negotiating liability carve-outs, quantified SLA remedies, and Netherlands-seate
 
 A CTO who hasn't specifically reviewed the liability cap, SLA remedy language, and dispute jurisdiction in their current offshore contract should do so before the next renewal, not after the next incident. [Talk to Manifera about how liability and SLA terms are structured](https://www.manifera.com/contact-us/).
 
+## Indemnification Clauses: The Protection a Liability Cap Doesn't Cover
+
+Liability caps and indemnification are frequently conflated, but they answer different questions and a CTO negotiating an offshore development company contract needs both addressed separately. A limitation of liability clause caps what the vendor pays the client directly for its own breach; an indemnification clause obligates the vendor to cover the client's costs when a third party sues over something the vendor's work caused — most commonly a third-party IP infringement claim arising from code the vendor delivered. A properly negotiated indemnification clause should be uncapped or carry a materially higher cap than the general liability limitation, cover the client's reasonable legal defense costs as they're incurred rather than only after final judgment, and require prompt written notice from the client (typically within 30 days of receiving a claim) with the vendor controlling the defense — a standard structure, not a concession. A contract that mentions "indemnification" once in a single boilerplate paragraph without separating IP infringement, data breach, and confidentiality breach into distinct indemnified categories is under-negotiated, and a CTO should push back on a merged, capped indemnification clause specifically, since that's where vendors most often quietly limit their real exposure.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO reviewing an existing contract's liability cap for the first time) How do I find out what our current vendor's actual liability cap is?
@@ -96,6 +100,22 @@ Data breach involving personal data, IP infringement claims, and willful miscond
 
 Not unless the vendor has insurance, typically professional indemnity and cyber liability coverage, backing that cap. Request evidence of coverage as a condition of the contract rather than assuming the stated number is automatically collectible.
 
+### (Scenario: CTO confusing liability cap with indemnification) What's the difference between a liability cap and an indemnification clause?
+
+A liability cap limits what the vendor pays the client directly for its own breach; indemnification obligates the vendor to cover the client's costs when a third party sues over something the vendor's work caused, most commonly a third-party IP infringement claim. They should be negotiated as separate clauses, not treated as the same protection.
+
+### (Scenario: CTO facing a third-party IP claim) Who pays our legal defense costs if a third party sues over code the offshore vendor delivered?
+
+Under a properly negotiated indemnification clause, the vendor covers reasonable legal defense costs as they're incurred, not only after a final judgment, and typically takes control of the defense once notified.
+
+### (Scenario: CTO checking notice requirements) How quickly must we notify the vendor of a third-party claim to preserve indemnification coverage?
+
+Typically within 30 days of receiving the claim, in writing. Missing this window can void the vendor's indemnification obligation entirely, so it's worth flagging internally as a hard deadline the moment any third-party claim notice arrives.
+
+### (Scenario: CTO reviewing a merged indemnification clause) Why is a single, capped indemnification clause covering IP, data breach, and confidentiality together a red flag?
+
+Because it's usually where vendors quietly limit their real exposure — a well-negotiated contract separates IP infringement, data breach, and confidentiality breach into distinct indemnified categories, each uncapped or carrying its own materially higher cap than the general liability limitation.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +125,11 @@ Not unless the vendor has insurance, typically professional indemnity and cyber 
     { "@type": "Question", "name": "(Scenario: CTO whose SLA has never actually been tested by an incident) What makes an SLA remedy enforceable rather than just aspirational?", "acceptedAnswer": { "@type": "Answer", "text": "A quantified remedy, such as a defined service credit percentage or a right to terminate after a specified number of breaches, rather than language like 'commercially reasonable efforts.'" } },
     { "@type": "Question", "name": "(Scenario: CTO comparing a Vietnam-incorporated contract against a Dutch-governed one) Why does it matter which entity is named as the contracting counterparty?", "acceptedAnswer": { "@type": "Answer", "text": "The named counterparty's jurisdiction determines where a dispute is resolved. A Dutch or EU-recognized counterparty lets your own legal team navigate a dispute without engaging unfamiliar foreign counsel." } },
     { "@type": "Question", "name": "(Scenario: CTO negotiating carve-outs before signing) What liability categories should never be subject to a general liability cap?", "acceptedAnswer": { "@type": "Answer", "text": "Data breach involving personal data, IP infringement claims, and willful misconduct or gross negligence are standard categories for uncapped or elevated liability carve-outs." } },
-    { "@type": "Question", "name": "(Scenario: CTO wondering whether a stated liability cap is actually collectible) Does a high liability cap in the contract guarantee we can actually recover damages?", "acceptedAnswer": { "@type": "Answer", "text": "Not unless the vendor has insurance, typically professional indemnity and cyber liability coverage, backing that cap. Request evidence of coverage as a condition of the contract." } }
+    { "@type": "Question", "name": "(Scenario: CTO wondering whether a stated liability cap is actually collectible) Does a high liability cap in the contract guarantee we can actually recover damages?", "acceptedAnswer": { "@type": "Answer", "text": "Not unless the vendor has insurance, typically professional indemnity and cyber liability coverage, backing that cap. Request evidence of coverage as a condition of the contract." } },
+    { "@type": "Question", "name": "(Scenario: CTO confusing liability cap with indemnification) What's the difference between a liability cap and an indemnification clause?", "acceptedAnswer": { "@type": "Answer", "text": "A liability cap limits what the vendor pays for its own breach; indemnification obligates the vendor to cover costs when a third party sues over something the vendor's work caused, such as IP infringement." } },
+    { "@type": "Question", "name": "(Scenario: CTO facing a third-party IP claim) Who pays our legal defense costs if a third party sues over code the offshore vendor delivered?", "acceptedAnswer": { "@type": "Answer", "text": "Under a properly negotiated indemnification clause, the vendor covers reasonable legal defense costs as incurred and typically controls the defense once notified." } },
+    { "@type": "Question", "name": "(Scenario: CTO checking notice requirements) How quickly must we notify the vendor of a third-party claim to preserve indemnification coverage?", "acceptedAnswer": { "@type": "Answer", "text": "Typically within 30 days of receiving the claim, in writing. Missing this window can void the vendor's indemnification obligation entirely." } },
+    { "@type": "Question", "name": "(Scenario: CTO reviewing a merged indemnification clause) Why is a single, capped indemnification clause covering IP, data breach, and confidentiality together a red flag?", "acceptedAnswer": { "@type": "Answer", "text": "It's usually where vendors quietly limit real exposure — a well-negotiated contract separates these into distinct indemnified categories, each uncapped or carrying its own higher cap." } }
   ]
 }
 </script>

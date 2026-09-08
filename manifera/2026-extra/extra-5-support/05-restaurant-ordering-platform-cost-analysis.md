@@ -86,6 +86,21 @@ Platformă de Comenzi Timișoara proceeded with a realistically scoped platform 
 
 Before committing to a restaurant ordering platform budget, insist on a cost estimate modeled against your realistic peak-hour order volume and actual location and channel mix, not small-scale internal testing conditions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic restaurant ordering platform cost scoping exercise.
 
+## Engineering Budget Allocation: Where the Money Actually Goes
+
+For a multi-location restaurant ordering platform built for real production scale, four cost categories account for roughly 70-80% of total engineering spend, with the remainder going to menu management, reporting, and general admin tooling. Order-routing and kitchen display engineering typically consumes 18-24% of the build budget once load-tested against realistic concurrent volume across all locations. PCI-DSS-compliant payment handling across channels runs 15-20%, driven primarily by settlement reconciliation logic rather than the checkout UI itself, which is comparatively cheap. Real-time delivery marketplace integration is the category most consistently underscoped, absorbing 20-28% of build budget when priced correctly across three or more marketplaces, since each marketplace's webhook reliability and rate-limit behavior requires its own retry and reconciliation logic rather than a shared abstraction. Multi-location inventory and 86'd-item sync typically runs 12-18%, scaling with location count more than with order volume.
+
+A practical checklist for validating a vendor's quote against these benchmarks:
+- Does the quote break out marketplace integration per marketplace, not as a single line item?
+- Is settlement reconciliation itemized separately from checkout UI?
+- Does the load-testing line item cover your actual projected location count, not a single-location baseline?
+
+A quote missing two or more of these checks is very likely built against small-scale test assumptions rather than real production scale.
+
+## Where This Goes Wrong: Race Conditions in Concurrent Order Acceptance
+
+A specific technical failure mode worth naming directly, because it's the single most common cause of an embarrassing Friday-night incident: two channels — say, a delivery marketplace order and an in-app order — both attempting to claim the last portion of a dish within milliseconds of each other during peak rush, with neither channel's order-acceptance logic aware of the other's in-flight claim. Without proper concurrency control, both orders get accepted, the kitchen can only fulfill one, and someone ends up issuing a refund and an apology on a night when the restaurant needed neither. Preventing this requires optimistic concurrency control on the inventory record itself — a version-stamped read-modify-write cycle, or a Redis-based distributed lock scoped per menu item, that rejects the second concurrent claim before it reaches the kitchen display. It also requires idempotency keys on every order submission, since a flaky mobile connection retrying a POST can otherwise double-submit the same order from a single customer. A useful engineering target: sub-200ms availability-sync latency across channels, measured under concurrent load, not sequential load. This is precisely the class of bug that never surfaces in sequential internal testing — a dozen orders placed one after another never generates a genuine race condition — and only appears once concurrent volume is real, which is exactly why a chain running three or more delivery marketplaces should expect this specific failure mode to affect 2-5% of peak-hour order volume if the underlying concurrency control isn't engineered in from the start.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial restaurant ordering platform estimate) Why do restaurant ordering platform cost estimates often come in significantly under actual cost?
@@ -108,6 +123,22 @@ Genuine multi-marketplace operation requires bidirectional availability and orde
 
 Accurate, location-specific item availability needs to sync across every channel in near-real-time without affecting other locations, requiring genuinely distributed infrastructure with real ongoing operational complexity beyond a single-location deployment.
 
+### (Scenario: CTO deciding between a POS vendor's native ordering module and a custom build) Is a custom ordering platform actually more cost-effective than a POS vendor's native ordering add-on for a growing chain?
+
+Past roughly 15-20 locations or three or more simultaneous delivery marketplace integrations, a custom platform's marginal per-location cost typically drops below a POS vendor's combined licensing and transaction fees, and native ordering modules generally can't perform real-time 86'd-item sync across multiple marketplaces at all, forcing manual workarounds a custom build eliminates.
+
+### (Scenario: engineering lead worried about double-selling the last portion of a dish during a rush) How do you stop two channels from selling the same last item at the same moment during peak volume?
+
+Optimistic concurrency control on the inventory record — a version-stamped read-modify-write cycle or a per-item distributed lock — rejects the second concurrent claim before it reaches the kitchen, combined with idempotency keys on order submission to prevent a flaky connection from duplicating a single customer's order.
+
+### (Scenario: CTO estimating project timeline before committing budget) How long does it typically take to build a production-ready multi-location restaurant ordering platform?
+
+A realistic timeline runs 5-8 months for an MVP covering in-app, web, and one delivery marketplace channel, plus another 2-3 months to add remaining marketplace integrations and complete load-tested, multi-location inventory sync validated against real peak-hour concurrent volume.
+
+### (Scenario: operations lead migrating off a legacy POS-tied ordering system) What happens to historical order and loyalty data when migrating off a legacy POS-tied ordering platform?
+
+Historical order, loyalty, and customer data typically require a dedicated ETL migration pipeline and a parallel-run period against the new platform, a cost category frequently absent from an initial migration estimate entirely but essential to avoid losing loyalty history or reporting continuity during cutover.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +148,11 @@ Accurate, location-specific item availability needs to sync across every channel
     { "@type": "Question", "name": "(Scenario: engineering lead scoping order routing) Why is order routing harder to scale correctly than it appears in small-scale testing?", "acceptedAnswer": { "@type": "Answer", "text": "Reliable routing at real peak-hour, multi-location scale requires materially different architecture than a small test environment needs." } },
     { "@type": "Question", "name": "(Scenario: finance lead scoping payment systems) Why does payment handling require more than a single checkout integration?", "acceptedAnswer": { "@type": "Answer", "text": "PCI-DSS compliance and settlement reconciliation are needed across in-app, web, and third-party channels, each with different requirements." } },
     { "@type": "Question", "name": "(Scenario: CTO planning delivery marketplace integration) Why does real-time marketplace integration deserve substantial, ongoing engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Multi-marketplace operation requires bidirectional sync handling each marketplace's own API quirks, more sophisticated than a one-time connection." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for multi-location reach) Why does serving multiple locations add real inventory sync cost?", "acceptedAnswer": { "@type": "Answer", "text": "Location-specific availability must sync across every channel in near-real-time, requiring distributed infrastructure with real complexity." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for multi-location reach) Why does serving multiple locations add real inventory sync cost?", "acceptedAnswer": { "@type": "Answer", "text": "Location-specific availability must sync across every channel in near-real-time, requiring distributed infrastructure with real complexity." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding between a POS vendor's native ordering module and a custom build) Is a custom ordering platform actually more cost-effective than a POS vendor's native ordering add-on for a growing chain?", "acceptedAnswer": { "@type": "Answer", "text": "Past roughly 15-20 locations or three-plus marketplace integrations, custom per-location cost drops below POS vendor fees, and native modules generally can't do real-time multi-marketplace 86'd sync at all." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead worried about double-selling the last portion of a dish during a rush) How do you stop two channels from selling the same last item at the same moment during peak volume?", "acceptedAnswer": { "@type": "Answer", "text": "Optimistic concurrency control with version-stamped inventory records or per-item distributed locks, combined with idempotency keys on order submission, prevents concurrent double-claims." } },
+    { "@type": "Question", "name": "(Scenario: CTO estimating project timeline before committing budget) How long does it typically take to build a production-ready multi-location restaurant ordering platform?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 5-8 months for an MVP across in-app, web, and one marketplace, plus 2-3 more months for remaining marketplace integrations and load-tested inventory sync." } },
+    { "@type": "Question", "name": "(Scenario: operations lead migrating off a legacy POS-tied ordering system) What happens to historical order and loyalty data when migrating off a legacy POS-tied ordering platform?", "acceptedAnswer": { "@type": "Answer", "text": "It requires a dedicated ETL migration pipeline and a parallel-run period, a cost category frequently missing from initial migration estimates entirely." } }
   ]
 }
 </script>
