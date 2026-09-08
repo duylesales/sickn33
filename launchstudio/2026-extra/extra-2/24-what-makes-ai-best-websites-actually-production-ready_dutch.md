@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-26",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-makes-ai-best-websites-actually-production-ready"
+    "@id": "https://launchstudio.eu/nl/blog/what-makes-ai-best-websites-actually-production-ready"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Elke met AI gebouwde website met een openbaar invoerveld van welke aard dan ook 
 
 ## Checklist Item Vijf: Wordt dit één keer hersteld, of vereist het voortdurende aandacht?
 
-Escapen moet consequent worden toegepast over elk veld dat gebruikersinhoud weergeeft. En het moet opnieuw geverifieerd worden wanneer er een nieuw invoerveld wordt toegevoegd. [LaunchStudio](https://launchstudio.eu/en/) controleert hier systematisch op over een gehele codebase als onderdeel van haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met frontend- en full-stack beveiliging over op React, Vue, en Next.js gebaseerde projecten.
+Escapen moet consequent worden toegepast over elk veld dat gebruikersinhoud weergeeft. En het moet opnieuw geverifieerd worden wanneer er een nieuw invoerveld wordt toegevoegd. [LaunchStudio](https://launchstudio.eu/nl/) controleert hier systematisch op over een gehele codebase als onderdeel van haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met frontend- en full-stack beveiliging over op React, Vue, en Next.js gebaseerde projecten.
 
 Manifera's beoordelingen van frontend-beveiliging worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Haal uw project door onze prijscalculator](https://launchstudio.eu/en/#calculator).
+[Haal uw project door onze prijscalculator](https://launchstudio.eu/nl/#calculator).
 
 ## Een gids voor niet-technische oprichters om dit zelf te spotten
 

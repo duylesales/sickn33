@@ -12,10 +12,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "A Founder's Risk Framework for Deciding How Much AI Security Debt Is Too Much",
   "description": "A practical framework for scoring known AI security risk in a growing SaaS product, so 'we'll fix it later' becomes a decision instead of a habit.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-security-risk-framework" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-security-risk-framework" }
 }
 </script>
 
@@ -41,7 +41,7 @@ Vermenigvuldig de drie scores met elkaar. Alles boven ongeveer 60 (van een mogel
 
 Een onderbuikgevoel onderschat systematisch de vertrouwenskosten, omdat die kosten niet in uw foutlogs of uptime-dashboard verschijnen. Ze verschijnen in het exitgesprek van een klant die is opgezegd, of in een langzame, stille erosie van vertrouwen die helemaal geen supportticket genereert — alleen een geannuleerd abonnement zonder uitleg. Een scoringskader dwingt vertrouwenskosten op dezelfde pagina als engineering-inspanning, en dat is precies de vergelijking die bepaalt of uitstellen slim is of gewoon gemakkelijk.
 
-Achter LaunchStudio staat het team van meer dan 120 ervaren engineers van Manifera, en ons team gevestigd in Ho Chi Minhstad voert precies dit soort gestructureerde risicotriage uit wanneer scale-up-oprichters ons een backlog met bekende door AI gegenereerde gaten aandragen — waarbij wordt gescheiden wat veilig kan wachten van wat stilletjes kosten opbouwt. U kunt [berekenen wat het sluiten van uw hoogst scorende gaten zou kosten](https://launchstudio.eu/en/#calculator) voordat u besluit om nog een kwartaal uit te stellen. Voor meer over hoe wij dit soort engineeringwerk afbakenen, zie [het portfolio van Manifera](https://www.manifera.com/portfolio/).
+Achter LaunchStudio staat het team van meer dan 120 ervaren engineers van Manifera, en ons team gevestigd in Ho Chi Minhstad voert precies dit soort gestructureerde risicotriage uit wanneer scale-up-oprichters ons een backlog met bekende door AI gegenereerde gaten aandragen — waarbij wordt gescheiden wat veilig kan wachten van wat stilletjes kosten opbouwt. U kunt [berekenen wat het sluiten van uw hoogst scorende gaten zou kosten](https://launchstudio.eu/nl/#calculator) voordat u besluit om nog een kwartaal uit te stellen. Voor meer over hoe wij dit soort engineeringwerk afbakenen, zie [het portfolio van Manifera](https://www.manifera.com/portfolio/).
 
 ## Echt voorbeeld
 

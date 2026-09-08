@@ -33,9 +33,9 @@ Voorbij applicatieniveau-filtering dwingen robuustere architecturen isolatie af 
 
 Elke nieuwe functie die jouw datalaag raakt is een nieuwe gelegenheid voor een isolatiefilter om gemist te worden, precies het patroon behandeld in de groeigerelateerde-risicobegeleiding van deze serie — een functie toegevoegd zes maanden na jouw originele architectuur, door een ontwikkelaar of AI-tool onbekend met (of simpelweg vergetend) de isolatieconventie, kan stilletjes precies dit risico herintroduceren zelfs in een codebase die begon met correcte isolatie.
 
-[LaunchStudio](https://launchstudio.eu/en/) verifieert multi-tenant-isolatie als een toegewijde, specifieke test voor elke B2B-SaaS-opdracht, inclusief het aanbevelen van databaseniveau-afdwinging waar applicatieniveau-filtering alleen te veel ruimte laat voor één gemiste controle, gesteund door Manifera's engineeringervaring over productie-multi-tenant-SaaS-applicaties.
+[LaunchStudio](https://launchstudio.eu/nl/) verifieert multi-tenant-isolatie als een toegewijde, specifieke test voor elke B2B-SaaS-opdracht, inclusief het aanbevelen van databaseniveau-afdwinging waar applicatieniveau-filtering alleen te veel ruimte laat voor één gemiste controle, gesteund door Manifera's engineeringervaring over productie-multi-tenant-SaaS-applicaties.
 
-[Laat jouw multi-tenant-isolatie expliciet testen, niet alleen aangenomen](https://launchstudio.eu/en/#calculator) — dit is het ene gat waar de consequentie het vertrouwen van een hele klant is, niet alleen de data van één gebruiker.
+[Laat jouw multi-tenant-isolatie expliciet testen, niet alleen aangenomen](https://launchstudio.eu/nl/#calculator) — dit is het ene gat waar de consequentie het vertrouwen van een hele klant is, niet alleen de data van één gebruiker.
 
 ## Echt voorbeeld
 

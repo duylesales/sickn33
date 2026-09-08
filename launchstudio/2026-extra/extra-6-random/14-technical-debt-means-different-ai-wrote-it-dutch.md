@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Waarom 'technische schuld' iets anders betekent wanneer AI de schuld heeft geschreven",
   "description": "Technische schuld betekende vroeger shortcuts die een team bewust nam onder tijdsdruk. Door AI gegenereerde schuld is anders — niemand koos ervoor, en niemand let erop. Dit is waarom dat belangrijk is.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/technical-debt-means-different-ai-wrote-it" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/technical-debt-means-different-ai-wrote-it" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Als u een technische oprichter bent die uw eigen door AI gegenereerde code beoor
 
 Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoordt de bredere verschuiving zo: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer goede ideeën omzetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. We hebben elf jaar ervaring in precies dat." Dat volwassenheidswerk omvat steeds vaker precies dit soort structurele schuld — het soort dat zichzelf niet aankondigt, omdat niemand ervoor koos deze aan te gaan.
 
-LaunchStudio, gesteund door Manifera's team van engineers gevestigd in Amsterdam en daarbuiten, beoordeelt door AI gegenereerde codebases specifiek op dit patroon voordat productiewerk wordt aanbevolen. Als u vermoedt dat uw eigen door AI gebouwde product dit soort schuld stilletjes over uw bestanden heeft liggen, kunt u [praten met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact) over een beoordeling. Voor een blik op de productiegerichte engineeringdiscipline die wij toepassen, zie [de aanpak van Manifera voor webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
+LaunchStudio, gesteund door Manifera's team van engineers gevestigd in Amsterdam en daarbuiten, beoordeelt door AI gegenereerde codebases specifiek op dit patroon voordat productiewerk wordt aanbevolen. Als u vermoedt dat uw eigen door AI gebouwde product dit soort schuld stilletjes over uw bestanden heeft liggen, kunt u [praten met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) over een beoordeling. Voor een blik op de productiegerichte engineeringdiscipline die wij toepassen, zie [de aanpak van Manifera voor webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
 ## Echt voorbeeld
 

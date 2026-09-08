@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/five-myths-ai-generated-code-founders-repeat"
+    "@id": "https://launchstudio.eu/nl/blog/five-myths-ai-generated-code-founders-repeat"
   }
 }
 </script>
@@ -57,9 +57,9 @@ Dit is waar in een nauwe, technische zin – de terugkerende hiaten die in brede
 
 Geen van deze vijf overtuigingen vereist geavanceerde technische kennis om daadwerkelijk te verifiëren of te ontkrachten – ze blijven specifiek bestaan omdat het verifiëren ervan een kleine, bewuste actie vereist (het stellen van een directe vraag, het uitvoeren van een daadwerkelijke test) die eenvoudiger over te slaan is dan uit te voeren. Het overslaan ervan terwijl er in plaats daarvan een geruststellende overtuiging wordt herhaald kost helemaal geen moeite, wat precies is waarom de mythe sneller reist dan de controle.
 
-[LaunchStudio](https://launchstudio.eu/en/) pakt elk van deze vijf mythes rechtstreeks aan tijdens gesprekken met oprichters, waarbij geruststellende overtuigingen worden vervangen door concrete, controleerbare antwoorden over het specifieke prototype van een oprichter, ondersteund door Manifera's engineeringdiscipline in meer dan 160 opgeleverde projecten die elke mythe consistent op dezelfde specifieke, terugkerende manieren tegenspreken.
+[LaunchStudio](https://launchstudio.eu/nl/) pakt elk van deze vijf mythes rechtstreeks aan tijdens gesprekken met oprichters, waarbij geruststellende overtuigingen worden vervangen door concrete, controleerbare antwoorden over het specifieke prototype van een oprichter, ondersteund door Manifera's engineeringdiscipline in meer dan 160 opgeleverde projecten die elke mythe consistent op dezelfde specifieke, terugkerende manieren tegenspreken.
 
-[Krijg het daadwerkelijke antwoord in plaats van de geruststellende versie](https://launchstudio.eu/en/#contact) — deze vijf mythes zijn controleerbaar, en controleren is meestal minder alarmerend dan de mythes vertraging noodzakelijk doen voelen.
+[Krijg het daadwerkelijke antwoord in plaats van de geruststellende versie](https://launchstudio.eu/nl/#contact) — deze vijf mythes zijn controleerbaar, en controleren is meestal minder alarmerend dan de mythes vertraging noodzakelijk doen voelen.
 
 ## Nog twee mythes die de lijst bijna haalden
 

@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "Hoe u de beveiliging beoordeelt van AI-code die u niet zelf geschreven heeft",
   "description": "Het beoordelen van de beveiliging van AI-code die u niet persoonlijk geschreven heeft, vereist een ander beoordelingsproces dan het auditen van uw eigen werk. Dit is de technische aanpak die standhoudt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-11",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-judge-the-security-of-ai-code" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/how-to-judge-the-security-of-ai-code" }
 }
 </script>
 
@@ -56,7 +56,7 @@ Het is de moeite waard om de neiging te weerstaan om dingen op te lossen zodra u
 
 U kunt dit raamwerk zelf doorlopen, en voor een kleine app is dat vaak genoeg. Waar het niet meer schaalt, is bij tijd: een grondige ronde door zelfs een bescheiden door AI gebouwde SaaS kan meerdere volledige dagen kosten als u het handmatig en zorgvuldig doet, bovenop de daadwerkelijke fixes zodra u iets vindt. Dat is het punt waarop een ervaren tweede beoordelaar goedkoper wordt dan uw eigen tijd, niet omdat u niet in staat bent tot de beoordeling, maar omdat iemand die dit dagelijks doet de patronen in minuten herkent in plaats van uren.
 
-LaunchStudio brengt de enterprise-grade engineering van Manifera — opgebouwd in meer dan 11 jaar vanuit een Europese basis aan de Herengracht 420 in Amsterdam — rechtstreeks naar solo-oprichters en indie hackers die deze beoordeling anders alleen zouden doen. Als u liever een tweede, ervaren paar ogen laat bevestigen wat u vindt (of laat opmerken wat u miste), kunt u zien hoe de opdracht werkt via het [Launch Ready-pakket van LaunchStudio](https://launchstudio.eu/en/#packages), en de onderliggende technische stack bekijken waar de engineers van Manifera mee werken op de [Manifera-technologiepagina](https://www.manifera.com/about-us/manifera-technologies/).
+LaunchStudio brengt de enterprise-grade engineering van Manifera — opgebouwd in meer dan 11 jaar vanuit een Europese basis aan de Herengracht 420 in Amsterdam — rechtstreeks naar solo-oprichters en indie hackers die deze beoordeling anders alleen zouden doen. Als u liever een tweede, ervaren paar ogen laat bevestigen wat u vindt (of laat opmerken wat u miste), kunt u zien hoe de opdracht werkt via het [Launch Ready-pakket van LaunchStudio](https://launchstudio.eu/nl/#packages), en de onderliggende technische stack bekijken waar de engineers van Manifera mee werken op de [Manifera-technologiepagina](https://www.manifera.com/about-us/manifera-technologies/).
 
 ## Echt voorbeeld
 

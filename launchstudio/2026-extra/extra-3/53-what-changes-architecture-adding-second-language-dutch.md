@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-changes-architecture-adding-second-language"
+    "@id": "https://launchstudio.eu/nl/blog/what-changes-architecture-adding-second-language"
   }
 }
 </script>
@@ -55,9 +55,9 @@ Het spiegelen van hetzelfde patroon dat elders in bredere richtlijnen wordt beha
 
 Als een tweede taalmarkt een echt doel voor de korte termijn is, en geen verre hypothetische situatie, is het investeren in de onderliggende architectuur voordat inhoud en gebruik zich substantieel opstapelen in een structuur uitsluitend voor een enkele taal de meest kostenefficiënte volgorde. Als de tweede taal oprecht speculatief en ver weg is, is het uitstellen van deze specifieke architectonische investering (terwijl u zich bewust blijft van de toekomstige migratiekosten) in plaats daarvan een redelijke, bewuste afweging.
 
-[LaunchStudio](https://launchstudio.eu/en/) ontwerpt echte meertalige ondersteuning op database- en AI-promptniveau, en niet alleen interfacevertaling, voor oprichters met concrete plannen op de korte termijn om een tweede taalmarkt te bedienen. Dit wordt ondersteund door Manifera's bredere ervaring in het bouwen van producten die oprecht meertalige Europese markten bedienen vanuit Amsterdam en over haar bredere EU-klantenbestand.
+[LaunchStudio](https://launchstudio.eu/nl/) ontwerpt echte meertalige ondersteuning op database- en AI-promptniveau, en niet alleen interfacevertaling, voor oprichters met concrete plannen op de korte termijn om een tweede taalmarkt te bedienen. Dit wordt ondersteund door Manifera's bredere ervaring in het bouwen van producten die oprecht meertalige Europese markten bedienen vanuit Amsterdam en over haar bredere EU-klantenbestand.
 
-[Maak uw architectuur klaar voor een tweede taal voordat inhoud zich opstapelt rond slechts één taal](https://launchstudio.eu/en/#calculator) — dit is aanzienlijk meer dan een vertaaltaak.
+[Maak uw architectuur klaar voor een tweede taal voordat inhoud zich opstapelt rond slechts één taal](https://launchstudio.eu/nl/#calculator) — dit is aanzienlijk meer dan een vertaaltaak.
 
 ## Wat er nog meer gelokaliseerd moet worden voorbij het product zelf
 

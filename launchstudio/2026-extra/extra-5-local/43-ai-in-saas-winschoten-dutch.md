@@ -13,10 +13,10 @@ Doelgroep: SaaS Scale-Up Oprichter
   "@type": "Article",
   "headline": "AI in SaaS-producten: De functielijst vs. het fundament in Winschoten",
   "description": "Waarom AI in de ontwikkeling van SaaS-producten de neiging heeft om een indrukwekkende functielijst op te leveren vóór een solide fundament, en wat die afweging betekent voor een scale-up oprichter in Winschoten.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-in-saas-winschoten" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-in-saas-winschoten" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Problemen met multi-tenancy zijn ook ongewoon moeilijk zelf te diagnosticeren, w
 
 Dit is precies de beoordeling die LaunchStudio uitvoert voor SaaS-oprichters. LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters — hetzelfde team dat 160+ projecten heeft opgeleverd voor klanten zoals Vodafone en CFLW controleert uw databaseregels, uw API-autorisatie en uw huurdersisolatie regel voor regel. Ons engineeringteam, met een basis in Ho Chi Minh City die een groot deel van het diepe technische beoordelingswerk afhandelt, heeft exact dit patroon geauditeerd in SaaS-producten gebouwd door oprichters in de provincie Groningen, waaronder Winschoten, waarbij vaak dezelfde ontbrekende bescherming in iets andere vormen wordt gevonden.
 
-We herbouwen uw frontend niet en vragen u niet te migreren van de AI-tool die u heeft gebruikt om hier te komen. Als u wilt zien wat er is inbegrepen op elk ondersteuningsniveau, geeft [onze pakkettenpagina](https://launchstudio.eu/en/#packages) een overzicht van wat een beoordeling van het fundament omvat versus een volledige productie-uitbouw. Voor een blik op hoe dit type werk wordt geleverd voor grotere klanten, draait Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) praktijk op dezelfde principes op grotere schaal.
+We herbouwen uw frontend niet en vragen u niet te migreren van de AI-tool die u heeft gebruikt om hier te komen. Als u wilt zien wat er is inbegrepen op elk ondersteuningsniveau, geeft [onze pakkettenpagina](https://launchstudio.eu/nl/#packages) een overzicht van wat een beoordeling van het fundament omvat versus een volledige productie-uitbouw. Voor een blik op hoe dit type werk wordt geleverd voor grotere klanten, draait Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) praktijk op dezelfde principes op grotere schaal.
 
 ## Winschoten's voordeel: Dit vroeg herstellen is goedkoop
 

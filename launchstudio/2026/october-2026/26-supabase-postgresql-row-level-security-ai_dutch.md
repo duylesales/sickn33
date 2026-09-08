@@ -110,7 +110,7 @@ Dit garandeert dat uw relationele PostgreSQL-fundering en uw pgvector-opslag dir
 - Het schrijven van kogelvrije SQL-policies vereist senior PostgreSQL-ervaring die AI-codetools simpelweg niet betrouwbaar kunnen leveren.
 - LaunchStudio treedt op als uw backend-partner en levert binnen 1 tot 3 weken een volledig geharde en beveiligde Supabase-architectuur op.
 
-[Laat uw database niet onbeschermd online staan. Laat LaunchStudio uw Supabase-architectuur beveiligen](https://launchstudio.eu/en/#contact).
+[Laat uw database niet onbeschermd online staan. Laat LaunchStudio uw Supabase-architectuur beveiligen](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

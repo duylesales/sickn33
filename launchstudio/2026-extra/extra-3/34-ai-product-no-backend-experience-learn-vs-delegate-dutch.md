@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-product-no-backend-experience-learn-vs-delegate"
+    "@id": "https://launchstudio.eu/nl/blog/ai-product-no-backend-experience-learn-vs-delegate"
   }
 }
 </script>
@@ -53,9 +53,9 @@ De meeste niet-technische oprichters belanden ergens tussen de twee extremen: ge
 
 Een oprichter die bij de lancering volledig delegeert is niet voor onbepaalde tijd aan die keuze gebonden – veel oprichters ontwikkelen in de loop van de tijd geleidelijk een diepere technische vaardigheid, geïnformeerd door het bekijken van echte gedelegeerde opdrachten en het stellen van steeds specifiekere vragen, zonder ooit vooraf een alles-of-niets beslissing te hoeven nemen over hoe technisch ze uiteindelijk zullen worden.
 
-[LaunchStudio](https://launchstudio.eu/en/) werkt met oprichters over dit gehele spectrum – van oprichters die de woordenschat willen om gedelegeerd werk intelligent te evalueren tot oprichters die de technische laag volledig afgehandeld willen hebben. Wij vertalen bevindingen en beslissingen naar welk niveau van technische vaardigheid een bepaalde oprichter daadwerkelijk heeft, ondersteund door Manifera's bredere ervaring in het duidelijk communiceren over een breed scala aan technische achtergronden van klanten.
+[LaunchStudio](https://launchstudio.eu/nl/) werkt met oprichters over dit gehele spectrum – van oprichters die de woordenschat willen om gedelegeerd werk intelligent te evalueren tot oprichters die de technische laag volledig afgehandeld willen hebben. Wij vertalen bevindingen en beslissingen naar welk niveau van technische vaardigheid een bepaalde oprichter daadwerkelijk heeft, ondersteund door Manifera's bredere ervaring in het duidelijk communiceren over een breed scala aan technische achtergronden van klanten.
 
-[Bepaal welke onderdelen het leren waard zijn en welke het delegeren waard zijn](https://launchstudio.eu/en/#contact) — de juiste mix is genuanceerder dan een alles-of-niets keuze.
+[Bepaal welke onderdelen het leren waard zijn en welke het delegeren waard zijn](https://launchstudio.eu/nl/#contact) — de juiste mix is genuanceerder dan een alles-of-niets keuze.
 
 ## Een gerichte paar uur aan leren: Wat u daadwerkelijk moet behandelen, op volgorde
 

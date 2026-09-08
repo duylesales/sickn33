@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "Software bouwen met AI: waar oprichters vastlopen na het prototype",
   "description": "80% van de door AI gebouwde projecten bereikt nooit productie. Een vergelijking van waar oprichters die software met AI bouwen daadwerkelijk vastlopen na het prototype, en wat het hiaat het snelst dicht.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-12",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/building-software-with-ai-where-founders-get-stuck-after-the-prototype" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/building-software-with-ai-where-founders-get-stuck-after-the-prototype" }
 }
 </script>
 
@@ -54,7 +54,7 @@ Er is een minder voor de hand liggend stagnatiepunt dat het waard is om te benoe
 
 ## Waarom deze vergelijking een nauw, gespecialiseerd pad bevoordeelt
 
-Niets hiervan is een argument dat oprichters niet zelf los kunnen komen — velen doen dat, vooral technische oprichters met tijd over. Het is een argument dat het snelste, goedkoopste, betrouwbaarste pad door alle drie de kruispunten structureel anders is dan waar de meeste oprichters standaard eerst voor proberen, wat ofwel oneindig worstelen in hun eentje is, ofwel een bureau-offerte krijgen die hen ertoe brengt het project op te bergen uit angst. Manifera heeft meer dan een decennium besteed aan het bouwen van de specifieke engineeringdiscipline die dit probleem vereist, en LaunchStudio past die discipline toe op oprichtersschaal, specifiek om projecten los te maken bij precies deze drie kruispunten — met engineeringlevering gecoördineerd via Manifera's ontwikkelcentrum aan Pho Quang Street in Ho Chi Minh-stad. Als u vastzit bij een van deze drie punten, [bekijk precies wat uw project zou kosten](https://launchstudio.eu/en/#calculator) voordat u beslist om alleen door te blijven duwen. Voor de bredere engineeringnormen achter die schatting is [Manifera's praktijk voor offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) dezelfde teamstructuur waar dit werk doorheen loopt.
+Niets hiervan is een argument dat oprichters niet zelf los kunnen komen — velen doen dat, vooral technische oprichters met tijd over. Het is een argument dat het snelste, goedkoopste, betrouwbaarste pad door alle drie de kruispunten structureel anders is dan waar de meeste oprichters standaard eerst voor proberen, wat ofwel oneindig worstelen in hun eentje is, ofwel een bureau-offerte krijgen die hen ertoe brengt het project op te bergen uit angst. Manifera heeft meer dan een decennium besteed aan het bouwen van de specifieke engineeringdiscipline die dit probleem vereist, en LaunchStudio past die discipline toe op oprichtersschaal, specifiek om projecten los te maken bij precies deze drie kruispunten — met engineeringlevering gecoördineerd via Manifera's ontwikkelcentrum aan Pho Quang Street in Ho Chi Minh-stad. Als u vastzit bij een van deze drie punten, [bekijk precies wat uw project zou kosten](https://launchstudio.eu/nl/#calculator) voordat u beslist om alleen door te blijven duwen. Voor de bredere engineeringnormen achter die schatting is [Manifera's praktijk voor offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) dezelfde teamstructuur waar dit werk doorheen loopt.
 
 ## Echt voorbeeld
 

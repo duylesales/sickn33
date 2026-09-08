@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-browser-extensions-stricter-permission-model"
+    "@id": "https://launchstudio.eu/nl/blog/ai-browser-extensions-stricter-permission-model"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Beoordelingsprocessen van de Chrome Web Store en Firefox Add-ons onderzoeken spe
 
 Het aanvragen van toegang tot alleen de specifieke sites of pagina-elementen die de daadwerkelijke functionaliteit van de extensie vereist, het lokaal verwerken van gegevens waar dat oprecht mogelijk is in plaats van standaard alles naar een backend te sturen, en het bieden van een duidelijke, nauwkeurige openbaarmaking van exact welke gegevens de browser verlaten en waarom. Dit is een discipline die zowel voldoet aan de vereisten van een winkelbeoordeling als het soort gebruikersvertrouwen opbouwt dat brede, onverklaarde machtigingsverzoeken actief ondergraven.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt AI-browserextensies specifiek op de evenredigheid van de machtigingsomvang en de helderheid van de gegevensverwerking voor de inzending in de winkel. Wij dichten de kloof tussen het brede toegangspatroon van een AI-coderingshulpmiddel en wat winkelbeoordelingen en gebruikersvertrouwen daadwerkelijk vereisen, ondersteund door Manifera's bredere ervaring in het navigeren door platformspecifieke beoordelingsprocessen in meerdere productcategorieën.
+[LaunchStudio](https://launchstudio.eu/nl/) beoordeelt AI-browserextensies specifiek op de evenredigheid van de machtigingsomvang en de helderheid van de gegevensverwerking voor de inzending in de winkel. Wij dichten de kloof tussen het brede toegangspatroon van een AI-coderingshulpmiddel en wat winkelbeoordelingen en gebruikersvertrouwen daadwerkelijk vereisen, ondersteund door Manifera's bredere ervaring in het navigeren door platformspecifieke beoordelingsprocessen in meerdere productcategorieën.
 
-[Laat de machtigingen van uw extensie afbakenen voordat een winkelbeoordeling ze markeert](https://launchstudio.eu/en/#calculator) — bredere toegang dan nodig is een risico voor zowel beoordeling als vertrouwen.
+[Laat de machtigingen van uw extensie afbakenen voordat een winkelbeoordeling ze markeert](https://launchstudio.eu/nl/#calculator) — bredere toegang dan nodig is een risico voor zowel beoordeling als vertrouwen.
 
 ## Vier vragen om te stellen voordat u een nieuwe machtiging aanvraagt
 

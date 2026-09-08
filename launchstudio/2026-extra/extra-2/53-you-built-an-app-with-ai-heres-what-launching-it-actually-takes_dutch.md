@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-08-03",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/you-built-an-app-with-ai-heres-what-launching-it-actually-takes"
+    "@id": "https://launchstudio.eu/nl/blog/you-built-an-app-with-ai-heres-what-launching-it-actually-takes"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Het testen van uw eigen gidsfunctie door er normaal doorheen te bladeren, zoals 
 
 ## Stap vijf: Pas een snelheidslimiet toe zonder legitiem gebruik te verstoren
 
-Een juist gecalibreerde snelheidslimiet (rate limit) laat normaal gebruik ononderbroken doorgaan, terwijl het snelle, herhaalde verzoeken van geautomatiseerd scrapen vertraagt of blokkeert. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort snelheidsbeperking, ondersteund door Manifera's 11+ jaar ervaring met het beschermen van productiesystemen tegen geautomatiseerde gegevensverzameling.
+Een juist gecalibreerde snelheidslimiet (rate limit) laat normaal gebruik ononderbroken doorgaan, terwijl het snelle, herhaalde verzoeken van geautomatiseerd scrapen vertraagt of blokkeert. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort snelheidsbeperking, ondersteund door Manifera's 11+ jaar ervaring met het beschermen van productiesystemen tegen geautomatiseerde gegevensverzameling.
 
 Manifera's engineering voor snelheidsbeperking en misbruikpreventie wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

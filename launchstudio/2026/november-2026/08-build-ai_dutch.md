@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-11-08",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/build-ai"
+    "@id": "https://launchstudio.eu/nl/blog/build-ai"
   }
 }
 </script>
@@ -89,11 +89,11 @@ Maar architectuur beoordelen en zelf vanaf nul implementeren zijn twee verschill
 | Betalingsverwerking | U eerder Stripe-webhooks en edge cases heeft geprogrammeerd | U een vlekkeloze abonnementslevenscyclus direct live wilt |
 | Deployment pipeline | U grondige kennis heeft van CI/CD en monitoring | U een infrastructuur wilt die direct en betrouwbaar draait |
 
-Voor de meeste technische oprichters is de optimale verdeling: focus zelf op de unieke AI-functionaliteit (uw onderscheidend vermogen) en delegeer de gestandaardiseerde infrastructuur aan [LaunchStudio](https://launchstudio.eu/en/).
+Voor de meeste technische oprichters is de optimale verdeling: focus zelf op de unieke AI-functionaliteit (uw onderscheidend vermogen) en delegeer de gestandaardiseerde infrastructuur aan [LaunchStudio](https://launchstudio.eu/nl/).
 
 LaunchStudio wordt aangedreven door [Manifera](https://www.manifera.com/services/custom-software-development/), wiens team meer dan 160 productieapplicaties heeft gebouwd in fintech, logistiek, zorg en SaaS. Het ontwikkelcentrum aan de Pho Quangstraat 10 in Ho Chi Minhstad verzorgt de technische uitvoering, terwijl het Europese management opereert vanuit Herengracht 420 in Amsterdam onder leiding van Herre Roelevink.
 
-[Plan een gratis 15-minuten architectuurgesprek](https://launchstudio.eu/en/#contact) en ontdek direct de productiegereedheid van uw applicatie.
+[Plan een gratis 15-minuten architectuurgesprek](https://launchstudio.eu/nl/#contact) en ontdek direct de productiegereedheid van uw applicatie.
 
 ## Echt voorbeeld
 

@@ -57,7 +57,7 @@ Het auditen en definitief repareren van deze complexe beveiligingskwetsbaarheden
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Dit is exact de reden waarom [LaunchStudio](https://launchstudio.eu/en/) optreedt als geruisloze, onzichtbare **white-label productiepartner** voor digitale bureaus in heel Europa. Gesteund door de 11+ jaar ervaring van [Manifera](https://www.manifera.com/) met engineeringteams in Amsterdam, Singapore en Ho Chi Minhstad, nemen wij de specialistische "laatste mijl" van de beveiliging van uw klant over. Onze aanpak sluit naadloos aan bij het beproefde leveringsmodel dat Manifera al ruim een decennium hanteert voor enterprise-opdrachtgevers.
+Dit is exact de reden waarom [LaunchStudio](https://launchstudio.eu/nl/) optreedt als geruisloze, onzichtbare **white-label productiepartner** voor digitale bureaus in heel Europa. Gesteund door de 11+ jaar ervaring van [Manifera](https://www.manifera.com/) met engineeringteams in Amsterdam, Singapore en Ho Chi Minhstad, nemen wij de specialistische "laatste mijl" van de beveiliging van uw klant over. Onze aanpak sluit naadloos aan bij het beproefde leveringsmodel dat Manifera al ruim een decennium hanteert voor enterprise-opdrachtgevers.
 
 **Jouw branding, onze engineering.**
 
@@ -71,7 +71,7 @@ U beheert de klantrelatie en verfijnt de UI/UX-gebruikerservaring. Wij nemen de 
 - 45% van de door AI gegenereerde code bevat ernstige kwetsbaarheden, wat een professionele pre-launch audit onmisbaar maakt voor elk bureau.
 - LaunchStudio biedt een discreet white-label partnerschap, waarbij wij de complexe backend-beveiliging uitvoeren terwijl uw bureau de klantrelatie en marge behoudt.
 
-[Freelancer of digitaal bureau? Neem direct contact op om ons white-label partnerprogramma te bespreken](https://launchstudio.eu/en/#contact).
+[Freelancer of digitaal bureau? Neem direct contact op om ons white-label partnerprogramma te bespreken](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

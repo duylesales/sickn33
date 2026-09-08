@@ -52,7 +52,7 @@ Een professioneel hardening-traject voor maatwerk softwareontwikkeling omvat min
 
 Het probleem voor veel creatieve en design-gerichte bureaus is dat "backend hardening" diepgaande DevOps- en security-kennis vereist die zij niet in-house hebben. Het aannemen van een senior backend-engineer in Nederland kost al snel meer dan € 90.000 per jaar aan salaris, exclusief secundaire voorwaarden, pensioenafdrachten en aanzienlijke wervingskosten. Die vaste kostenpost drukt zwaar op de marges van kleinere AI-projecten, en de engineer zit stil zodra er even geen hardening-opdrachten zijn.
 
-Dit is exact de reden waarom [LaunchStudio](https://launchstudio.eu/en/) een **white-label partnerprogramma** heeft ontwikkeld.
+Dit is exact de reden waarom [LaunchStudio](https://launchstudio.eu/nl/) een **white-label partnerprogramma** heeft ontwikkeld.
 
 Gesteund door ruim 11 jaar ervaring van [Manifera](https://www.manifera.com/) in enterprise softwareontwikkeling — met bewezen [referentieprojecten](https://www.manifera.com/portfolio/) voor toonaangevende organisaties zoals Vodafone, TNO en CFLW — fungeert LaunchStudio als de geruisloze backend engineering-afdeling voor Nederlandse digitale bureaus.
 
@@ -76,7 +76,7 @@ Dit levert het bureau een gezonde marge op — vaak een betere netto winstmarge 
 - Creatieve bureaus missen vaak de in-house DevOps-capaciteit om AI-code winstgevend te beveiligen; een fulltime senior engineer (€ 90k+/jaar) is te kostbaar voor projectwerk.
 - LaunchStudio biedt een discreet white-label partnerschap, waardoor Nederlandse bureaus AI-applicaties onder eigen merk veilig kunnen lanceren.
 
-[Verliest uw bureau opdrachten aan AI? Partner vandaag nog met LaunchStudio voor veilige deployments](https://launchstudio.eu/en/#contact).
+[Verliest uw bureau opdrachten aan AI? Partner vandaag nog met LaunchStudio voor veilige deployments](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

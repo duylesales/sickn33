@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-11-16",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-software-developers"
+    "@id": "https://launchstudio.eu/nl/blog/ai-software-developers"
   }
 }
 </script>
@@ -93,11 +93,11 @@ Vergelijk dat met de aanpak van LaunchStudio: behoud de Lovable-frontend, bouw u
 **Doorlooptijd:** 1 tot 3 weken
 **Ideaal voor:** Oprichters die hun productie-infrastructuur eenmalig, vakkundig en zonder doorlopende salarisverplichtingen willen laten inrichten.
 
-[LaunchStudio](https://launchstudio.eu/en/) is exact voor deze situatie opgericht. Het engineeringteam van [Manifera](https://www.manifera.com/about-us/) werkt dagelijks met AI-gegenereerde codebases: zij kennen de patronen, begrijpen de beveiligingslekken en hanteren een beproefd proces voor productieharding.
+[LaunchStudio](https://launchstudio.eu/nl/) is exact voor deze situatie opgericht. Het engineeringteam van [Manifera](https://www.manifera.com/about-us/) werkt dagelijks met AI-gegenereerde codebases: zij kennen de patronen, begrijpen de beveiligingslekken en hanteren een beproefd proces voor productieharding.
 
 Met 120+ software-engineers in Ho Chi Minhstad (Pho Quangstraat 10) en management vanuit Herengracht 420 te Amsterdam onder leiding van Herre Roelevink, combineert Manifera 11+ jaar enterprise-ervaring met ongeëvenaarde snelheid.
 
-[Beschrijf uw project voor een gratis beoordeling](https://launchstudio.eu/en/#contact).
+[Beschrijf uw project voor een gratis beoordeling](https://launchstudio.eu/nl/#contact).
 
 ## Vijf Vragen Om Elke Ontwikkelaar Op AI-Code Te Testen
 

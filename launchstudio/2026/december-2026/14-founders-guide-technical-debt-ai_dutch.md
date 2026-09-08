@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-12-14",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/founders-guide-technical-debt-ai"
+    "@id": "https://launchstudio.eu/nl/blog/founders-guide-technical-debt-ai"
   }
 }
 </script>
@@ -59,9 +59,9 @@ Een niet-technische oprichter die Lovable of Bolt gebruikt heeft geen mogelijkhe
 
 ## Waar LaunchStudio Helpt
 
-Het opsporen en saneren van AI-gegenereerde technische schuld is een van de meest gevraagde diensten van [LaunchStudio](https://launchstudio.eu/en/). Manifera's software-engineers hebben ruim 160 enterprise-applicaties succesvol opgeleverd. Zij herkennen AI-codepatronen razendsnel en zien precies welke componenten moeten worden geharmoniseerd en welke delen prima kunnen blijven staan — waardoor u niet onnodig betaalt voor het opnieuw bouwen van wat al goed is.
+Het opsporen en saneren van AI-gegenereerde technische schuld is een van de meest gevraagde diensten van [LaunchStudio](https://launchstudio.eu/nl/). Manifera's software-engineers hebben ruim 160 enterprise-applicaties succesvol opgeleverd. Zij herkennen AI-codepatronen razendsnel en zien precies welke componenten moeten worden geharmoniseerd en welke delen prima kunnen blijven staan — waardoor u niet onnodig betaalt voor het opnieuw bouwen van wat al goed is.
 
-[Vraag een technische schuld audit aan](https://launchstudio.eu/en/#contact) voor uw AI-codebase vóórdat het uw volgende productlancering vertraagt.
+[Vraag een technische schuld audit aan](https://launchstudio.eu/nl/#contact) voor uw AI-codebase vóórdat het uw volgende productlancering vertraagt.
 
 ## De Specifieke Codepatronen Die AI-Schuld Verraden
 

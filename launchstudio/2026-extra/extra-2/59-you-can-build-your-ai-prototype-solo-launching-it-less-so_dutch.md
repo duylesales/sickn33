@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-08-05",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/you-can-build-your-ai-prototype-solo-launching-it-less-so"
+    "@id": "https://launchstudio.eu/nl/blog/you-can-build-your-ai-prototype-solo-launching-it-less-so"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Links worden voortdurend doorgestuurd, vaak met goede bedoelingen – een coöpe
 
 ## Wat het op de juiste manier herstellen hiervan vereist
 
-Een correcte herstelling voegt een verificatiestap toe gekoppeld aan de uitnodigingslink – zoals het bevestigen van een e-maildomein, het vereisen van adresverificatie, of handmatige goedkeuring voordat volledige toegang wordt verleend. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort uitnodigingsverificatie als onderdeel van haar beoordeling van toegangsbeheer, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van lidmaatschaps- en toegangsverificatiesystemen.
+Een correcte herstelling voegt een verificatiestap toe gekoppeld aan de uitnodigingslink – zoals het bevestigen van een e-maildomein, het vereisen van adresverificatie, of handmatige goedkeuring voordat volledige toegang wordt verleend. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort uitnodigingsverificatie als onderdeel van haar beoordeling van toegangsbeheer, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van lidmaatschaps- en toegangsverificatiesystemen.
 
 Manifera's engineering voor uitnodigings- en lidmaatschapsverificatie wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Boek een gratis gesprek van 15 minuten om het door te spreken](https://launchstudio.eu/en/#contact).
+[Boek een gratis gesprek van 15 minuten om het door te spreken](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

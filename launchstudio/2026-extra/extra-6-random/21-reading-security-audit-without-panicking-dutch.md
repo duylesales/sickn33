@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Een gids voor niet-technische oprichters: hoe u een beveiligingsauditrapport leest zonder in paniek te raken",
   "description": "Een stap-voor-stap gids voor niet-technische oprichters over hoe u ernstgraden, terminologie en bevindingen in een beveiligingsauditrapport leest zonder in paniek te raken.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/reading-security-audit-without-panicking" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/reading-security-audit-without-panicking" }
 }
 </script>
 
@@ -48,7 +48,7 @@ Een goed georganiseerd rapport doet deze sortering vaak al voor u, maar als dat 
 
 Van geen enkele niet-technische oprichter mag worden verwacht dat hij een beveiligingsrapport volledig begrijpt door het alleen te lezen. Een kort gesprek waarin een engineer elke bevinding hardop doorneemt, in volgorde van ernst, doet meer voor uw begrip dan nog een uur herlezen. Dit is standaardpraktijk, geen bijzondere gunst — vraag erom.
 
-Dit is precies wat er gebeurt binnen het proces van LaunchStudio. Elk auditrapport wordt gekoppeld aan een toelichting in gewone taal, want een rapport dat een oprichter niet kan interpreteren, vermindert het risico niet echt — het verplaatst alleen de angst van "is mijn app veilig" naar "wat betekent deze pdf." LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en het team achter deze audits werkt vanuit het Europese hoofdkantoor van Manifera in Amsterdam, aan de Herengracht 420. Als u nu naar uw eigen rapport zit te staren, kunt u [in gesprek gaan met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact) voordat u zelf iets wijzigt.
+Dit is precies wat er gebeurt binnen het proces van LaunchStudio. Elk auditrapport wordt gekoppeld aan een toelichting in gewone taal, want een rapport dat een oprichter niet kan interpreteren, vermindert het risico niet echt — het verplaatst alleen de angst van "is mijn app veilig" naar "wat betekent deze pdf." LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en het team achter deze audits werkt vanuit het Europese hoofdkantoor van Manifera in Amsterdam, aan de Herengracht 420. Als u nu naar uw eigen rapport zit te staren, kunt u [in gesprek gaan met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) voordat u zelf iets wijzigt.
 
 Voor oprichters die willen begrijpen hoe deze audits passen binnen het bredere traject van prototype naar productie: de [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera hanteert dezelfde discipline voor beveiligingsbeoordelingen die wordt toegepast op de 160+ zakelijke projecten van het bedrijf, afgeschaald naar budgetten van oprichters.
 

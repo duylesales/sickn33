@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "Hoe API-integratie in door AI gebouwde apps meestal misgaat",
   "description": "Een nauwkeurige blik op hoe api in door AI gegenereerde apps doorgaans faalt zodra echt verkeer erop afkomt, van ontbrekende retries tot stille rate-limit-drops, en hoe u het vóór de lancering opvangt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-14",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-api-integration-in-ai-built-apps-usually" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/how-api-integration-in-ai-built-apps-usually" }
 }
 </script>
 

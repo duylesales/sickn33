@@ -33,9 +33,9 @@ Een betekenisvolle implementatie heeft limieten nodig gekalibreerd naar oprechte
 
 De directe test: probeer een snelle sequentie verzoeken tegen jouw inlog-endpoint en jouw meest AI-kostenintensieve endpoint, en bevestig of iets de sequentie blokkeert of vertraagt na een redelijke drempel. Als elk verzoek slaagt ongeacht volume, heeft jouw app momenteel geen ratelimiteringsbescherming, wat precies de hierboven beschreven risico's blootstelt.
 
-[LaunchStudio](https://launchstudio.eu/en/) implementeert gekalibreerde ratelimitering over authenticatie- en kostengevoelige endpoints als standaardonderdeel van productieverharding, en beschermt tegen zowel beveiligingsmisbruik als onbegrensde AI-kostenblootstelling, gesteund door Manifera's engineeringervaring over productieapplicaties die echte-wereld-verkeerspatronen afhandelen.
+[LaunchStudio](https://launchstudio.eu/nl/) implementeert gekalibreerde ratelimitering over authenticatie- en kostengevoelige endpoints als standaardonderdeel van productieverharding, en beschermt tegen zowel beveiligingsmisbruik als onbegrensde AI-kostenblootstelling, gesteund door Manifera's engineeringervaring over productieapplicaties die echte-wereld-verkeerspatronen afhandelen.
 
-[Bevestig dat jouw app niet misbruikt kan worden bij onbeperkt volume](https://launchstudio.eu/en/#calculator) — correcte authenticatie omvat deze bescherming niet standaard.
+[Bevestig dat jouw app niet misbruikt kan worden bij onbeperkt volume](https://launchstudio.eu/nl/#calculator) — correcte authenticatie omvat deze bescherming niet standaard.
 
 ## Echt voorbeeld
 

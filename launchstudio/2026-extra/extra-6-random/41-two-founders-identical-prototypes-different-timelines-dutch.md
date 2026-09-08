@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Waarom twee oprichters met identieke prototypes enorm verschillende lanceringstijdlijnen kunnen hebben",
   "description": "Twee oprichters kunnen beginnen met ai-ontwikkeling met dezelfde tool, dezelfde scope en dezelfde deadline — en toch maanden na elkaar lanceren. Dit is de ene beslissing die dat verschil meestal verklaart.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/two-founders-identical-prototypes-different-timelines" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/two-founders-identical-prototypes-different-timelines" }
 }
 </script>
 
@@ -45,7 +45,7 @@ Dit is waarom "we regelen beveiliging later wel" zo vaak verandert in "we stelle
 
 Oprichters die ervaringen uitwisselen met peers, zouden identieke prototypes en identieke tijdlijnen-tot-nu-toe als een zwak signaal moeten behandelen. Het echte signaal is of er al een onafhankelijke, op beveiliging gerichte review heeft plaatsgevonden — want dat is het splitsingspunt, ook al kan geen van beide oprichters het nog zien.
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, werkend vanuit Amsterdam en kantoren door heel Zuidoost-Azië. Ons in Amsterdam gevestigde team is gespecialiseerd in precies dit soort vroege reviews — het opsporen van wat een door AI gegenereerd prototype stilletjes overslaat voordat het een vertraging van drie maanden wordt. Wilt u weten waar uw eigen project staat, dan kunt u [controleren wat een review en lancering zouden kosten](https://launchstudio.eu/en/#calculator) voor uw specifieke scope.
+LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, werkend vanuit Amsterdam en kantoren door heel Zuidoost-Azië. Ons in Amsterdam gevestigde team is gespecialiseerd in precies dit soort vroege reviews — het opsporen van wat een door AI gegenereerd prototype stilletjes overslaat voordat het een vertraging van drie maanden wordt. Wilt u weten waar uw eigen project staat, dan kunt u [controleren wat een review en lancering zouden kosten](https://launchstudio.eu/nl/#calculator) voor uw specifieke scope.
 
 Voor oprichters die nieuwsgierig zijn naar de technische standaard achter die review: Manifera's [praktijk voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft meer dan 160 projecten opgeleverd met dezelfde nauwkeurigheid.
 

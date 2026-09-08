@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Hoe 'AI in ontwikkeling' eruitziet in maand één versus maand zes",
   "description": "AI in ontwikkeling levert vroeg in een project een reëel snelheidsvoordeel op, maar dezelfde codebase kan tegen maand zes drastisch vertragen als door AI gegenereerde patronen inconsistent blijven. Dit is waarom de curve ombuigt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-in-development-month-one-vs-six" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-in-development-month-one-vs-six" }
 }
 </script>
 
@@ -39,7 +39,7 @@ Dit is geen pleidooi tegen AI-ondersteunde ontwikkeling — het is een pleidooi 
 
 Het praktische advies voor een technische solo-oprichter: stap periodiek terug van functiewerk en bekijk uw eigen codebase alsof u een nieuwe technicus bent die erbij komt. Als u niet snel kunt beantwoorden "waar leeft dit patroon" voor veelvoorkomende dingen zoals datophaling of formulierafhandeling, is dat de vertraging van maand zes die begint, en is het een middag consolidatie waard voordat het u later een week kost.
 
-Onze technici, werkend vanuit een team gebaseerd in Singapore, besteden een aanzienlijk deel van hun tijd aan precies dit soort consolidatieronde op door AI gebouwde codebases — niet herschrijven, maar de bestaande patronen consistent genoeg maken zodat nieuwe functies niet meer botsen met oude. LaunchStudio brengt Manifera's enterprise-grade engineering naar de oprichterseconomie, en als uw maand zes er anders uitziet dan uw maand één, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/en/#contact) om te bespreken hoe een consolidatieronde eruit zou zien voor uw specifieke codebase. De bredere aanpak van Manifera voor duurzame softwarearchitectuur staat beschreven op de pagina [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
+Onze technici, werkend vanuit een team gebaseerd in Singapore, besteden een aanzienlijk deel van hun tijd aan precies dit soort consolidatieronde op door AI gebouwde codebases — niet herschrijven, maar de bestaande patronen consistent genoeg maken zodat nieuwe functies niet meer botsen met oude. LaunchStudio brengt Manifera's enterprise-grade engineering naar de oprichterseconomie, en als uw maand zes er anders uitziet dan uw maand één, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) om te bespreken hoe een consolidatieronde eruit zou zien voor uw specifieke codebase. De bredere aanpak van Manifera voor duurzame softwarearchitectuur staat beschreven op de pagina [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
 ## Echt voorbeeld
 

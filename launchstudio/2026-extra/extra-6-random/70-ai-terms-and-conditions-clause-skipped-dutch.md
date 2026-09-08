@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "De clausule in de algemene voorwaarden van de AI-tool die elke oprichter overslaat (en betreurt)",
   "description": "Een stap-voor-stap checklist om de clausule over trainingsgegevens te vinden die begraven ligt in de algemene voorwaarden van de meeste AI-codeertools, voordat door klanten geüploade content standaard als trainingsgegevens wordt gebruikt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-terms-and-conditions-clause-skipped" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-terms-and-conditions-clause-skipped" }
 }
 </script>
 
@@ -41,7 +41,7 @@ Het vinden van de clausule is slechts de helft van de taak. Als de standaardinst
 
 Als uw app de gegevens van anderen verwerkt — klantcontracten, persoonlijke gegevens, iets gevoeligs — schrijf dan op wat u hebt gevonden en wat u hebt veranderd. Het is het soort detail waar een klant, partner of investeerder later redelijkerwijs naar kan vragen, en het gedocumenteerd hebben is aanzienlijk beter dan het onder druk moeten reconstrueren.
 
-LaunchStudio brengt de enterprise-grade engineering van Manifera — 11+ jaar ervaring over 160+ opgeleverde projecten — naar precies dit soort beoordeling van servicevoorwaarden voor oprichters die bouwen op AI-codeerplatformen. Ons Amsterdamse team, aan de Herengracht 420, heeft oprichters meer dan eens specifiek door deze clausule geloodst. Zoals Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, het verwoordt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. We hebben elf jaar ervaring in precies dat." Het lezen van de voorwaarden waaronder uw AI-tool daadwerkelijk opereert, is een klein, ongeglamoureus onderdeel van die volwassenheid — en een dat de meeste oprichters volledig overslaan. Als u een tweede paar ogen wilt op de voorwaarden van uw eigen tool, [beschrijf dan uw project en wij reageren binnen één werkdag](https://launchstudio.eu/en/#packages). De praktijk [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera behandelt de bredere technische zorgvuldigheid achter die beoordeling.
+LaunchStudio brengt de enterprise-grade engineering van Manifera — 11+ jaar ervaring over 160+ opgeleverde projecten — naar precies dit soort beoordeling van servicevoorwaarden voor oprichters die bouwen op AI-codeerplatformen. Ons Amsterdamse team, aan de Herengracht 420, heeft oprichters meer dan eens specifiek door deze clausule geloodst. Zoals Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, het verwoordt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. We hebben elf jaar ervaring in precies dat." Het lezen van de voorwaarden waaronder uw AI-tool daadwerkelijk opereert, is een klein, ongeglamoureus onderdeel van die volwassenheid — en een dat de meeste oprichters volledig overslaan. Als u een tweede paar ogen wilt op de voorwaarden van uw eigen tool, [beschrijf dan uw project en wij reageren binnen één werkdag](https://launchstudio.eu/nl/#packages). De praktijk [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera behandelt de bredere technische zorgvuldigheid achter die beoordeling.
 
 ## Echt voorbeeld
 

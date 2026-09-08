@@ -33,9 +33,9 @@ Uitgebreide testdekking verdient zijn kosten terug naarmate jouw product volwass
 
 Voor de meeste AI-native SaaS-producten bij lancering: smoke tests voor registratie, jouw kernfunctie, en betaling/afrekenen, geautomatiseerd via Playwright of Cypress en gedraaid bij elke push via een CI-pipeline. Dat is het. Alles daarboven — diepere randgevaldekking, bredere regressiesuites — is de moeite waard om incrementeel te bouwen naarmate het product en team volwassener worden, geen vereiste lanceringspoort.
 
-[LaunchStudio](https://launchstudio.eu/en/) implementeert precies deze juist-gemaate smoke-testdekking als standaardonderdeel van elke Launch Ready-opdracht, gericht op oprechte risicoreductie in plaats van een van beide uitersten, gesteund door Manifera's engineeringervaring over producten in elke volwassenheidsfase.
+[LaunchStudio](https://launchstudio.eu/nl/) implementeert precies deze juist-gemaate smoke-testdekking als standaardonderdeel van elke Launch Ready-opdracht, gericht op oprechte risicoreductie in plaats van een van beide uitersten, gesteund door Manifera's engineeringervaring over producten in elke volwassenheidsfase.
 
-[Krijg de juiste hoeveelheid testen voor waar jouw product daadwerkelijk staat](https://launchstudio.eu/en/#calculator) — niet nul, en niet meer dan de lanceringsfase daadwerkelijk nodig heeft.
+[Krijg de juiste hoeveelheid testen voor waar jouw product daadwerkelijk staat](https://launchstudio.eu/nl/#calculator) — niet nul, en niet meer dan de lanceringsfase daadwerkelijk nodig heeft.
 
 ## Echt voorbeeld
 

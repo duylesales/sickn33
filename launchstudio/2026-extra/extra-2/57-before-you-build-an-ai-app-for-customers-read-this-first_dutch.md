@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-08-04",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/before-you-build-an-ai-app-for-customers-read-this-first"
+    "@id": "https://launchstudio.eu/nl/blog/before-you-build-an-ai-app-for-customers-read-this-first"
   }
 }
 </script>
@@ -55,11 +55,11 @@ Voordat u een AI-app bouwt voor klanten die echt geld betalen en verwachten dat 
 
 ## Dit op de juiste manier afhandelen
 
-Een correcte herstelling implementeert idempotente verwerking van gebeurtenissen over elk webhook-gestuurd proces in een applicatie. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort idempotente verwerking als onderdeel van haar beoordeling van integraties, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van betrouwbare integraties.
+Een correcte herstelling implementeert idempotente verwerking van gebeurtenissen over elk webhook-gestuurd proces in een applicatie. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort idempotente verwerking als onderdeel van haar beoordeling van integraties, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van betrouwbare integraties.
 
 Manifera's engineering voor webhook-betrouwbaarheid wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Stuur de link van uw prototype — we vlaggen gratis wat het controleren waard is](https://launchstudio.eu/en/#contact).
+[Stuur de link van uw prototype — we vlaggen gratis wat het controleren waard is](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

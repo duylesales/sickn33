@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-15",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/why-ai-chatbots-dead-within-6-months"
+    "@id": "https://launchstudio.eu/nl/blog/why-ai-chatbots-dead-within-6-months"
   }
 }
 </script>
@@ -58,9 +58,9 @@ Veel chatbot-oprichters schoven het verdienmodel voor zich uit: eerst gratis lan
 
 Een levensvatbare productie-chatbot vereist minimaal: token-kostenbeheersing per gebruiker, persistent gespreksgeheugen, een automatische fallback-strategie, robuuste contentmoderatie en een helder betaalmodel vanaf de lancering. Dit vraagt om aanzienlijk meer software-engineering dan louter de frontend chat-widget.
 
-Dit is exact het gat dat [LaunchStudio](https://launchstudio.eu/en/) dicht. Onze software-engineers hebben ruim 160 enterprise-projecten opgeleverd, waaronder complexe AI-systemen met strenge eisen aan betrouwbaarheid en kostenoptimalisatie.
+Dit is exact het gat dat [LaunchStudio](https://launchstudio.eu/nl/) dicht. Onze software-engineers hebben ruim 160 enterprise-projecten opgeleverd, waaronder complexe AI-systemen met strenge eisen aan betrouwbaarheid en kostenoptimalisatie.
 
-[Bespreek de productierijpheid van uw chatbot met een engineer](https://launchstudio.eu/en/#contact) vóórdat API-kosten of een storing uw startup de das omdoen.
+[Bespreek de productierijpheid van uw chatbot met een engineer](https://launchstudio.eu/nl/#contact) vóórdat API-kosten of een storing uw startup de das omdoen.
 
 ## Een Token-Budget Opstellen: De Wiskunde Achter Duurzame Chatbot-Prijzen
 

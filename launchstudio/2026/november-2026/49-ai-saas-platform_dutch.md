@@ -16,7 +16,7 @@ Doelpersona: SaaS Oprichter / CTO
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: SaaS Oprichter / CTO
   "datePublished": "2026-12-19",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-saas-platform"
+    "@id": "https://launchstudio.eu/nl/blog/ai-saas-platform"
   }
 }
 </script>
@@ -59,7 +59,7 @@ Een AI SaaS Platform is proactief en autonoom via multi-agent frameworks (LangCh
 
 De transformatie van een kwetsbare wrapper naar een diep geïntegreerd agentic platform vereist senior backend-architectuur en enterprise DevOps.
 
-[LaunchStudio](https://launchstudio.eu/en/), aangedreven door de enterprise SaaS-architecten van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt robuuste technische fundamenten:
+[LaunchStudio](https://launchstudio.eu/nl/), aangedreven door de enterprise SaaS-architecten van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt robuuste technische fundamenten:
 1. **Bi-Directionele Synchronisatie-Engines:** Wij bouwen API-integratielagen die data automatisch synchroniseren tussen uw SaaS en de enterprise-tools van uw klanten.
 2. **Enterprise RAG-Pipelines:** Wij implementeren Cross-Encoder Re-Ranking, waardoor de accuraatheid van zoekresultaten wiskundig superieur is aan standaardmodellen.
 3. **Agentic Tool Use:** Wij voorzien uw backend van strikte JSON-schema validaties (Zod) waarmee AI-agents veilig acties kunnen uitvoeren (zoals e-mails sturen en databases bijwerken) zonder menselijke tussenkomst.

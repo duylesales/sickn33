@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Wat de technici van LaunchStudio daadwerkelijk doen in de eerste 48 uur van een nieuw project",
   "description": "Een blik achter de schermen van LaunchStudio's proces voor de eerste 48 uur bij ai app dev-projecten, aan de hand van de onboarding van een echte oprichter, van read-only beoordeling tot fixplan.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/first-48-hours-new-project" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/first-48-hours-new-project" }
 }
 </script>
 
@@ -51,7 +51,7 @@ Dit is ook de fase waarin de scope wordt vastgelegd. Onze technici worden onders
 
 Het laatste stuk is waar de prioritaire fixes daadwerkelijk worden geschreven, getest tegen de bestaande frontend, en bevestigd dat ze niets breken waar Svens gebruikers al op vertrouwden. We raken zijn UI niet aan. De belofte achter LaunchStudio is productie-infrastructuur zonder een frontend-herbouw, en die belofte wordt hier het hardst getest, in de eerste 48 uur, wanneer het het snelst zou zijn om gewoon vanaf nul te herschrijven in plaats van eromheen te werken.
 
-Als u wilt zien hoe dit past in het bredere traject, loopt onze [procesomschrijving](https://launchstudio.eu/en/#process) door wat er na deze eerste twee dagen gebeurt. Voor teams die evalueren of hun eigen codebase dit soort ronde nodig heeft voordat deze live gaat, volgt Manifera's werk in [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/) dezelfde eerst-lezen, dan-oplossen-discipline op grotere schaal.
+Als u wilt zien hoe dit past in het bredere traject, loopt onze [procesomschrijving](https://launchstudio.eu/nl/#process) door wat er na deze eerste twee dagen gebeurt. Voor teams die evalueren of hun eigen codebase dit soort ronde nodig heeft voordat deze live gaat, volgt Manifera's werk in [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/) dezelfde eerst-lezen, dan-oplossen-discipline op grotere schaal.
 
 ## Echt voorbeeld
 

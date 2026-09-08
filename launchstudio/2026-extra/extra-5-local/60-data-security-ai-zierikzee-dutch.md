@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Databeveiliging die AI-tools niet garanderen: Wat Zierikzeese oprichters nog steeds moeten verifiëren",
   "description": "Een verificatie-checklist voor de databeveiliging die AI-codingtools niet standaard garanderen, geïllustreerd met een echt voorbeeld uit het toerisme in Zierikzee.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/data-security-ai-zierikzee" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/data-security-ai-zierikzee" }
 }
 </script>
 
@@ -36,7 +36,7 @@ Voor een oprichter in deze positie ziet de verificatie-checklist er zo uit: beve
 
 ## Verifiëren in plaats van aannemen
 
-Dit is de beoordeling die LaunchStudio uitvoert voordat een in Zierikzee gebouwd (of elk ander) prototype live gaat: een gestructureerde audit van exact de vier punten hierboven, plus een bredere inspectie op authenticatie en backend-machtigingscontroles. Zoals Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, het verwoordt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. We hebben elf jaar ervaring in precies dat." Die ervaring stroomt door Manifera's team, werkend vanuit haar kantoor in Amsterdam aan de Herengracht 420 onder andere locaties, en past dezelfde norm toe die gebruikt wordt voor enterprise-klanten zoals Vodafone en TNO. Bekijk wat er is inbegrepen in een typisch traject via de [LaunchStudio pakkettenpagina](https://launchstudio.eu/en/#packages), en zie Manifera's bredere engineeringmodel op haar [offshore software development pagina](https://www.manifera.com/services/offshore-software-development/).
+Dit is de beoordeling die LaunchStudio uitvoert voordat een in Zierikzee gebouwd (of elk ander) prototype live gaat: een gestructureerde audit van exact de vier punten hierboven, plus een bredere inspectie op authenticatie en backend-machtigingscontroles. Zoals Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, het verwoordt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. We hebben elf jaar ervaring in precies dat." Die ervaring stroomt door Manifera's team, werkend vanuit haar kantoor in Amsterdam aan de Herengracht 420 onder andere locaties, en past dezelfde norm toe die gebruikt wordt voor enterprise-klanten zoals Vodafone en TNO. Bekijk wat er is inbegrepen in een typisch traject via de [LaunchStudio pakkettenpagina](https://launchstudio.eu/nl/#packages), en zie Manifera's bredere engineeringmodel op haar [offshore software development pagina](https://www.manifera.com/services/offshore-software-development/).
 
 ## Voorbij de checklist: Uw eigen aannames testen
 
@@ -87,7 +87,7 @@ Ja — seizoensgebonden bedrijven concentreren het merendeel van hun jaarlijkse 
 
 ---
 
-Zierikzee's boekingsseizoen, Coevorden's grensoverschrijdende handel, Assens TT-weekend, Terneuzens havenlogistiek — zestig artikelen ver, het patroon houdt overal stand: de AI-tool brengt een oprichter snel bij een werkend prototype, en het echte werk om dat prototype om te zetten in iets wat echte klanten kunnen vertrouwen begint op het moment dat de demo eindigt. Waar in Nederland die volgende stap ook moet plaatsvinden, [LaunchStudio](https://launchstudio.eu/en/) is gebouwd voor exact die kloof.
+Zierikzee's boekingsseizoen, Coevorden's grensoverschrijdende handel, Assens TT-weekend, Terneuzens havenlogistiek — zestig artikelen ver, het patroon houdt overal stand: de AI-tool brengt een oprichter snel bij een werkend prototype, en het echte werk om dat prototype om te zetten in iets wat echte klanten kunnen vertrouwen begint op het moment dat de demo eindigt. Waar in Nederland die volgende stap ook moet plaatsvinden, [LaunchStudio](https://launchstudio.eu/nl/) is gebouwd voor exact die kloof.
 
 <script type="application/ld+json">
 {

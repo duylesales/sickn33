@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-26",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/everyone-says-ai-build-app-fast-nobody-mentions-whats-missing"
+    "@id": "https://launchstudio.eu/nl/blog/everyone-says-ai-build-app-fast-nobody-mentions-whats-missing"
   }
 }
 </script>
@@ -55,11 +55,11 @@ Zodra een coworking space, of een willekeurig product voor het boeken van middel
 
 ## Wat het herstellen hiervan vereist, technisch gezien
 
-Een correcte herstelling gebruikt een vergrendelings- of atomaire transactiemechanisme op databaseniveau om ervoor te zorgen dat de volgorde "controleer beschikbaarheid, en boek vervolgens" plaatsvindt als een enkele, ononderbreekbare eenheid. Zodat een tweede gelijktijdig verzoek voor dezelfde bron het oprecht als onbeschikbaar ziet in plaats van voorbij dezelfde verouderde controle te racen. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort concurrency-veilige boekingslogica als onderdeel van haar werkzaamheden voor productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van boekings- en voorraadsystemen voor productieklanten.
+Een correcte herstelling gebruikt een vergrendelings- of atomaire transactiemechanisme op databaseniveau om ervoor te zorgen dat de volgorde "controleer beschikbaarheid, en boek vervolgens" plaatsvindt als een enkele, ononderbreekbare eenheid. Zodat een tweede gelijktijdig verzoek voor dezelfde bron het oprecht als onbeschikbaar ziet in plaats van voorbij dezelfde verouderde controle te racen. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort concurrency-veilige boekingslogica als onderdeel van haar werkzaamheden voor productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van boekings- en voorraadsystemen voor productieklanten.
 
 Manifera's engineering voor concurrency en databasevergrendeling wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/en/#calculator).
+[Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

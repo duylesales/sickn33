@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/api-and-ai-designing-interface-other-systems-call"
+    "@id": "https://launchstudio.eu/nl/blog/api-and-ai-designing-interface-other-systems-call"
   }
 }
 </script>
@@ -51,9 +51,9 @@ Wanneer uw product een externe API aanroept, controleert u het tempo, de retry-l
 
 De meeste AI-native oprichters zijn niet van plan om vanaf dag één een API bloot te stellen – het wordt doorgaans pas noodzakelijk zodra een klant er specifiek om vraagt, wat betekent dat het verzoek meestal arriveert nadat de interne patronen van het product al stevig zijn verankerd rond het bedienen van uw eigen frontend, niet externe integrators, wat een oprecht afzonderlijke ontwerpronde vereist in plaats van een snelle uitbreiding van wat al bestaat en toevallig aan de oppervlakte vergelijkbaar lijkt.
 
-[LaunchStudio](https://launchstudio.eu/en/) ontwerpt en verhardt extern gerichte API's specifiek voor AI-native producten die overstappen van alleen-intern naar integrator-gereed, gebruikmakend van Manifera's bredere ervaring met het bouwen en beveiligen van productie-API's voor enterprise-klanten waaronder Vodafone, door dezelfde versiebeheer- en snelheidsbeperkingsdiscipline toe te passen ongeacht de grootte van het aanvragende bedrijf of hoe informeel het oorspronkelijke verzoek om API-toegang ook werd gedaan.
+[LaunchStudio](https://launchstudio.eu/nl/) ontwerpt en verhardt extern gerichte API's specifiek voor AI-native producten die overstappen van alleen-intern naar integrator-gereed, gebruikmakend van Manifera's bredere ervaring met het bouwen en beveiligen van productie-API's voor enterprise-klanten waaronder Vodafone, door dezelfde versiebeheer- en snelheidsbeperkingsdiscipline toe te passen ongeacht de grootte van het aanvragende bedrijf of hoe informeel het oorspronkelijke verzoek om API-toegang ook werd gedaan.
 
-[Maak uw API gereed voor mensen wier code u nooit zult zien](https://launchstudio.eu/en/#calculator) — een andere discipline dan het bouwen van de interface van uw eigen product, en een die gemakkelijk te onderschatten is totdat deze in het echt wordt getest.
+[Maak uw API gereed voor mensen wier code u nooit zult zien](https://launchstudio.eu/nl/#calculator) — een andere discipline dan het bouwen van de interface van uw eigen product, en een die gemakkelijk te onderschatten is totdat deze in het echt wordt getest.
 
 ## Het betrouwbaarheidscontract dat u stilzwijgend ondertekent
 

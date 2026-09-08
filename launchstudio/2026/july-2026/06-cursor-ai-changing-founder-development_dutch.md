@@ -97,7 +97,7 @@ Oprichters melden consequent dat Cursor hun ontwikkelingssnelheid drie tot vijf 
 
 - **Hulp bij het opsporen van fouten** — Foutmeldingen kunnen rechtstreeks worden geplakt en Cursor stelt oplossingen voor op basis van uw daadwerkelijke code
 
-Voor een solo-oprichter die een SaaS-product bouwt, betekent deze snelheidsverhoging het verschil tussen maanden ontwikkeling en weken. Gecombineerd met een AI-prototype van Lovable en productiegereedheid van [LaunchStudio](https://launchstudio.eu/en/), kan het hele traject van idee tot gelanceerd product in minder dan een maand plaatsvinden.
+Voor een solo-oprichter die een SaaS-product bouwt, betekent deze snelheidsverhoging het verschil tussen maanden ontwikkeling en weken. Gecombineerd met een AI-prototype van Lovable en productiegereedheid van [LaunchStudio](https://launchstudio.eu/nl/), kan het hele traject van idee tot gelanceerd product in minder dan een maand plaatsvinden.
 
 ## Beperkingen van de cursor voor oprichters
 
@@ -129,7 +129,7 @@ Cursor is krachtig maar niet perfect. Oprichters moeten zich bewust zijn van dez
 
 Of u uw applicatie nu in Cursor heeft gecodeerd, met Lovable heeft gegenereerd of een combinatie van beide heeft gebruikt, LaunchStudio neemt uw frontend zoals hij is en implementeert de beveiliging, hosting en integraties op productieniveau die nodig zijn voor de lancering.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende de waarde van mondiale technische hulpmiddelen en richtte kantoren op in **Singapore** en **Ho Chi Minh City, Vietnam**, naast hun hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420). Dit unieke model brengt *"Nederlands management en Vietnamees meesterschap"* naar uw project. Via LaunchStudio verifiëren en versterken we uw Cursor-ondersteunde code, zodat we ervoor zorgen dat uw applicatie veilig is en volledig gereed is voor productie in slechts 1 tot 3 weken. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio wordt beheerd door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende de waarde van mondiale technische hulpmiddelen en richtte kantoren op in **Singapore** en **Ho Chi Minh City, Vietnam**, naast hun hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420). Dit unieke model brengt *"Nederlands management en Vietnamees meesterschap"* naar uw project. Via LaunchStudio verifiëren en versterken we uw Cursor-ondersteunde code, zodat we ervoor zorgen dat uw applicatie veilig is en volledig gereed is voor productie in slechts 1 tot 3 weken. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

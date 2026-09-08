@@ -27,11 +27,11 @@ Het is verleidelijk om dit te behandelen als een lage-prioriteitszorg terwijl ee
 
 ## Het Gat Dichten Zonder Aan Te Raken Wat Je Gebouwd Hebt
 
-Dit oplossen vereist geen herarchitectuur van jouw datamodel — het vereist het toevoegen van expliciete eigendomscontroles op de querylaag, zodat elk verzoek geverifieerd wordt tegen de eigen scope van de geauthenticeerde gebruiker voordat data teruggegeven wordt, ongeacht of dat verzoek via de bedoelde UI-flow kwam of niet. [LaunchStudio](https://launchstudio.eu/en/) dicht precies dit soort gat als standaardonderdeel van zijn Launch Ready-pakket, gesteund door Manifera's 11+ jaar bouwen van multi-tenant B2B-systemen voor enterprise-klanten.
+Dit oplossen vereist geen herarchitectuur van jouw datamodel — het vereist het toevoegen van expliciete eigendomscontroles op de querylaag, zodat elk verzoek geverifieerd wordt tegen de eigen scope van de geauthenticeerde gebruiker voordat data teruggegeven wordt, ongeacht of dat verzoek via de bedoelde UI-flow kwam of niet. [LaunchStudio](https://launchstudio.eu/nl/) dicht precies dit soort gat als standaardonderdeel van zijn Launch Ready-pakket, gesteund door Manifera's 11+ jaar bouwen van multi-tenant B2B-systemen voor enterprise-klanten.
 
 Manifera voert dit soort review uit via zijn Vietnam-gebaseerde ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh City, gecoördineerd met zijn hoofdkantoor in Amsterdam aan de Herengracht 420 — wat LaunchStudio-founders enterprise-niveau review geeft zonder enterprise-schaal-tijdlijnen.
 
-[Beschrijf jouw project — we reageren binnen 1 werkdag](https://launchstudio.eu/en/#contact).
+[Beschrijf jouw project — we reageren binnen 1 werkdag](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

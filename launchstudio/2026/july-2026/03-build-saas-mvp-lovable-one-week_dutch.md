@@ -134,7 +134,7 @@ Door *"Nederlands management te combineren met Vietnamees meesterschap"* biedt M
 
 ## Heeft je lieve MVP gebouwd? Wij maken het lanceringsklaar
 
-LaunchStudio neemt uw door AI gebouwde prototype en zorgt voor de beveiliging, betalingen, hosting en implementatie, zodat u met vertrouwen kunt starten. Gesteund door de wereldwijde software-expertise van Manifera, krijgt u hoogwaardige engineering zonder het prijskaartje van een bureau. Vaste prijzen vanaf €800. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio neemt uw door AI gebouwde prototype en zorgt voor de beveiliging, betalingen, hosting en implementatie, zodat u met vertrouwen kunt starten. Gesteund door de wereldwijde software-expertise van Manifera, krijgt u hoogwaardige engineering zonder het prijskaartje van een bureau. Vaste prijzen vanaf €800. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

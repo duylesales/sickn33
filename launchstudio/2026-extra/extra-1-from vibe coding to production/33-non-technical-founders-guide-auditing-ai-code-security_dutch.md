@@ -33,9 +33,9 @@ Een oprecht grondige audit is afgebakend — het dekt specifieke dingen doelbewu
 
 Geen van deze vereist dat je code beoordeelt — ze vereisen dat je beoordeelt of een antwoord specifiek en controleerbaar is versus vaag en geruststellend, precies hetzelfde onderscheid behandeld in de bredere begeleiding van deze serie voor niet-technische founders die elke technische bewering evalueren. Een provider onbekwaam of onwillig om deze vijf artefacten te produceren, ongeacht hoe zelfverzekerd ze hun proces mondeling beschrijven, heeft je geen bewijs gegeven dat je daadwerkelijk kunt evalueren.
 
-[LaunchStudio](https://launchstudio.eu/en/) produceert precies deze vijf artefacten voor elke beveiligingsaudit — een specifieke scope, specifieke bevindingen, geverifieerd bewijs, duidelijke herstelbeschrijvingen, en eerlijke scopegrenzen — gesteund door Manifera's cybersecuritygeïnformeerde engineeringcultuur en transparante rapportagepraktijken.
+[LaunchStudio](https://launchstudio.eu/nl/) produceert precies deze vijf artefacten voor elke beveiligingsaudit — een specifieke scope, specifieke bevindingen, geverifieerd bewijs, duidelijke herstelbeschrijvingen, en eerlijke scopegrenzen — gesteund door Manifera's cybersecuritygeïnformeerde engineeringcultuur en transparante rapportagepraktijken.
 
-[Krijg een audit die je deze vijf specifieke artefacten geeft](https://launchstudio.eu/en/#contact) — geen geruststelling die je op vertrouwen moet aannemen.
+[Krijg een audit die je deze vijf specifieke artefacten geeft](https://launchstudio.eu/nl/#contact) — geen geruststelling die je op vertrouwen moet aannemen.
 
 ## Echt voorbeeld
 

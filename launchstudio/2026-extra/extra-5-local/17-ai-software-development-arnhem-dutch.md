@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI-softwareontwikkeling in Arnhem: Waar het echte werk begint na de demo",
   "description": "Een blik op wat AI-softwareontwikkeling daadwerkelijk omvat versus wat er daarna komt, gevormd rond de Arnhemse mode-, creatieve- en logistieke zakelijke scene.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-software-development-arnhem" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-software-development-arnhem" }
 }
 </script>
 

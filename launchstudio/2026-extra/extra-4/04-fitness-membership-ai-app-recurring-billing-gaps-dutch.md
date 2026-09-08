@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/fitness-membership-ai-app-recurring-billing-gaps"
+    "@id": "https://launchstudio.eu/nl/blog/fitness-membership-ai-app-recurring-billing-gaps"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Een enkele gemiste melding is irritant. Een batch bevriezingsperiodes die allema
 
 LaunchStudio heeft deze exacte categorie kloof hersteld bij meerdere AI-native SaaS-oprichters, en het komt meestal neer op dezelfde drie toevoegingen: een trigger voor een voorafgaande kennisgeving vóór elke heractiveringsafschrijving, een configureerbare gratieperiode en een controle op de geldigheid van de betaalmethode voordat de hervatting daadwerkelijk wordt geactiveerd. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera – vertrouwd door Vodafone, TNO en CFLW – en dat is het niveau van strengheid dat wordt toegepast op wat er uitziet als een kleine facturatie-aanpassing, maar in werkelijkheid een bedrijfskritische statusmachine is. Veel van dit facturatie- en abonnementslogica-werk draait via Manifera's kantoor in Amsterdam aan de Herengracht 420, dicht bij de Europese fintech- en SaaS-klanten die het het vaakst nodig hebben.
 
-Als uw app enige vorm van pauze, bevriezing of proef-naar-betaald overgang afhandelt, [bereken de getallen voor een beoordeling van de facturatielogica](https://launchstudio.eu/en/#calculator) voordat uw ledenbestand de kloof voor u vindt.
+Als uw app enige vorm van pauze, bevriezing of proef-naar-betaald overgang afhandelt, [bereken de getallen voor een beoordeling van de facturatielogica](https://launchstudio.eu/nl/#calculator) voordat uw ledenbestand de kloof voor u vindt.
 
 ## De afschrijving moet de status nog steeds controleren vlak voordat deze afgaat
 
@@ -104,7 +104,7 @@ Ja – veel van dit werk draait via Manifera's kantoor in Amsterdam, waar het te
 
 ### Wat moet ik het eerst controleren als ik een pauze- of bevriezingsfunctie in mijn app heb?
 
-Controleer of het hervatten van facturering überhaupt een melding activeert, en of het de betaalmethode valideert vóór het afschrijven. Als een van beide ontbreekt, [praat met een ingenieur](https://launchstudio.eu/en/#contact) voordat het een ondersteuningsgolf wordt.
+Controleer of het hervatten van facturering überhaupt een melding activeert, en of het de betaalmethode valideert vóór het afschrijven. Als een van beide ontbreekt, [praat met een ingenieur](https://launchstudio.eu/nl/#contact) voordat het een ondersteuningsgolf wordt.
 
 <script type="application/ld+json">
 {

@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/add-authentication-lovable-app-without-breaking"
+    "@id": "https://launchstudio.eu/nl/blog/add-authentication-lovable-app-without-breaking"
   }
 }
 </script>
@@ -51,9 +51,9 @@ Een oprichter vraagt Lovable (of Bolt, of Cursor) om *"login toe te voegen"*, en
 
 ## Waarom een Professionele Review Essentieel Is
 
-Omdat authenticatie uw gehele applicatie in één keer raakt, zijn fouten zowel snel gemaakt als uitzonderlijk kostbaar — een fout in de autorisatie breekt immers niet alleen een functie, maar kan de privégegevens van al uw klanten gelijktijdig blootstellen. Deze combinatie van brede impact en subtiele kwetsbaarheden is exact waarom [LaunchStudio](https://launchstudio.eu/en/) authenticatie-implementatie behandelt als een van haar meest kritieke taken, geworteld in Herre Roelevinks cybersecurity-ervaring met CFLW Cyber Strategies en TNO.
+Omdat authenticatie uw gehele applicatie in één keer raakt, zijn fouten zowel snel gemaakt als uitzonderlijk kostbaar — een fout in de autorisatie breekt immers niet alleen een functie, maar kan de privégegevens van al uw klanten gelijktijdig blootstellen. Deze combinatie van brede impact en subtiele kwetsbaarheden is exact waarom [LaunchStudio](https://launchstudio.eu/nl/) authenticatie-implementatie behandelt als een van haar meest kritieke taken, geworteld in Herre Roelevinks cybersecurity-ervaring met CFLW Cyber Strategies en TNO.
 
-[Laat uw authenticatie-implementatie beoordelen](https://launchstudio.eu/en/#contact) vóórdat echte gebruikers echte accounts met echte gevoelige data aanmaken.
+[Laat uw authenticatie-implementatie beoordelen](https://launchstudio.eu/nl/#contact) vóórdat echte gebruikers echte accounts met echte gevoelige data aanmaken.
 
 ## Verder Dan het Ontbrekende Query-Filter: Andere Autorisatiegaten
 

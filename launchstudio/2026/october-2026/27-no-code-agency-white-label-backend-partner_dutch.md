@@ -49,7 +49,7 @@ Geen van deze valkuilen ontstaat door onwil; ze zijn het logische gevolg van het
 
 U hoeft uw succesvolle no-code bureau niet hals over kop om te vormen tot een DevOps-bedrijf, noch hoeft u een senior backend-engineer van € 100.000 per jaar aan te nemen om deze klantvragen te beantwoorden. De meest winstgevende strategie is samenwerken met een gespecialiseerde **white-label engineeringpartner**.
 
-Dit is exact het bestaansrecht van het partnerprogramma van [LaunchStudio](https://launchstudio.eu/en/).
+Dit is exact het bestaansrecht van het partnerprogramma van [LaunchStudio](https://launchstudio.eu/nl/).
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -77,7 +77,7 @@ Wij hanteren een voorspelbare, vaste white-label projectprijs — een fractie va
 - Het zelfstandig proberen te beveiligen van maatwerk AI-code zonder senior engineers vormt een levensgroot risico op datalekken en aansprakelijkheid.
 - LaunchStudio levert een discreet white-label partnerschap, waardoor bureaus complexe enterprise AI-projecten kunnen aannemen onder eigen merknaam met behoud van gezonde winstmarges.
 
-[Stop met het afwijzen van complexe AI-projecten. Partner met LaunchStudio en schaal uw bureaucapaciteit op](https://launchstudio.eu/en/#contact).
+[Stop met het afwijzen van complexe AI-projecten. Partner met LaunchStudio en schaal uw bureaucapaciteit op](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

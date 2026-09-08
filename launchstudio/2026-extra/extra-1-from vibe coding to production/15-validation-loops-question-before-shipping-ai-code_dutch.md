@@ -29,9 +29,9 @@ Vraag jezelf eerlijk af, over elk kritiek deel van je product: is dit beoordeeld
 
 In tegenstelling tot advies specifiek voor de bekende patronen van een bepaalde AI-codeertool, is deze vraag toolagnostisch per ontwerp, omdat het zich richt op het proces rond de code in plaats van de specifieke herkomst van de code. Of jouw prototype nu uit Lovable, Bolt, Cursor, of v0 kwam, de vraag "wat bewijst dat dit veilig is om te verzenden" geldt identiek, en het antwoord is even vaak "nog niets" ongeacht welke tool de onderliggende applicatie genereerde.
 
-[LaunchStudio](https://launchstudio.eu/en/) bestaat om de validatielus te zijn die jouw prototype mist — beoordelen, adversarieel testen, en verifiëren wat "het werkte toen ik het probeerde" nooit daadwerkelijk bevestigde — gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) bestaat om de validatielus te zijn die jouw prototype mist — beoordelen, adversarieel testen, en verifiëren wat "het werkte toen ik het probeerde" nooit daadwerkelijk bevestigde — gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
 
-[Laat een daadwerkelijke validatielus toepassen op jouw prototype](https://launchstudio.eu/en/#contact) — geen extra vertrouwen, een concreet, controleerbaar antwoord.
+[Laat een daadwerkelijke validatielus toepassen op jouw prototype](https://launchstudio.eu/nl/#contact) — geen extra vertrouwen, een concreet, controleerbaar antwoord.
 
 ## Echt voorbeeld
 

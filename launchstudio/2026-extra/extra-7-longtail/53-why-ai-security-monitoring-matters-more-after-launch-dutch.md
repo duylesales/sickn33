@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
   "@type": "Article",
   "headline": "Waarom AI-beveiligingsmonitoring meer telt na de lancering, niet ervoor",
   "description": "Een beveiligingscheck vóór de lancering beantwoordt één vraag op één moment. Dit is een praktische how-to-gids voor het opzetten van AI-beveiligingsmonitoring die die vraag blijft beantwoorden nadat echte gebruikers zijn gearriveerd.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-10",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/why-ai-security-monitoring-matters-more-after-launch" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/why-ai-security-monitoring-matters-more-after-launch" }
 }
 </script>
 
@@ -58,7 +58,7 @@ Een reden waarom oprichters monitoring na een paar weken opgeven, is waarschuwin
 
 ## Waarom dit zo vaak wordt overgeslagen
 
-Oprichters die Lovable, Bolt of vergelijkbare tools gebruiken, hebben de neiging om beveiliging als een mijlpaal te behandelen: u lost het op, u vinkt het vakje af, u lanceert. Monitoring verzet zich tegen dat kader, omdat er geen moment is waarop het "klaar" is — het is infrastructuur die stilletjes op de achtergrond moet blijven draaien zolang de app echte gebruikers en echte gegevens heeft. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het bouwen en beheren van productiesystemen, met een ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh-stad naast de teams in Amsterdam en Singapore. Het opzetten van dit soort doorlopende monitoring — geen eenmalige oplossing — maakt deel uit van wat inbegrepen is wanneer oprichters overstappen van een eenmalig lanceringsproject naar een doorlopend plan, voortbouwend op dezelfde [discipline van aangepaste softwareontwikkeling die Manifera toepast op zijn zakelijke klanten](https://www.manifera.com/services/custom-software-development/). U kunt [het social proof bekijken van oprichters die precies deze overgang hebben doorgemaakt](https://launchstudio.eu/en/#proof) voordat u beslist wat uw app daadwerkelijk nodig heeft.
+Oprichters die Lovable, Bolt of vergelijkbare tools gebruiken, hebben de neiging om beveiliging als een mijlpaal te behandelen: u lost het op, u vinkt het vakje af, u lanceert. Monitoring verzet zich tegen dat kader, omdat er geen moment is waarop het "klaar" is — het is infrastructuur die stilletjes op de achtergrond moet blijven draaien zolang de app echte gebruikers en echte gegevens heeft. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het bouwen en beheren van productiesystemen, met een ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh-stad naast de teams in Amsterdam en Singapore. Het opzetten van dit soort doorlopende monitoring — geen eenmalige oplossing — maakt deel uit van wat inbegrepen is wanneer oprichters overstappen van een eenmalig lanceringsproject naar een doorlopend plan, voortbouwend op dezelfde [discipline van aangepaste softwareontwikkeling die Manifera toepast op zijn zakelijke klanten](https://www.manifera.com/services/custom-software-development/). U kunt [het social proof bekijken van oprichters die precies deze overgang hebben doorgemaakt](https://launchstudio.eu/nl/#proof) voordat u beslist wat uw app daadwerkelijk nodig heeft.
 
 ## Echt voorbeeld
 

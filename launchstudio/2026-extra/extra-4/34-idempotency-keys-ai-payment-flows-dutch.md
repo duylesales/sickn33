@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/idempotency-keys-ai-payment-flows"
+    "@id": "https://launchstudio.eu/nl/blog/idempotency-keys-ai-payment-flows"
   }
 }
 </script>
@@ -95,7 +95,7 @@ Idempotentie-problemen zijn niet beperkt tot de initiële knop voor afrekenen. Z
 - Verlengingstaken voor abonnementen die opnieuw proberen bij mislukking zonder te controleren of de afschrijving al was geslaagd
 - Knoppen "probeer betaling opnieuw" op schermen voor mislukte bestellingen
 
-LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters. Onze ingenieurs, werkend vanuit het kantoor in Amsterdam aan de Herengracht 420, behandelen de beoordeling van het betalingspad als een standaard onderdeel van elke audit vóór de lancering – en niet als een optioneel extraatje. Een afrekenstroom die er in een demo identiek uitziet aan een correcte stroom kan zich onder echte netwerkomstandigheden compleet anders gedragen. Dat is exact de kloof waar [onze prijscalculator](https://launchstudio.eu/en/#calculator) rekening mee houdt bij het bepalen van de omvang van het uitharden van betalingsstromen.
+LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters. Onze ingenieurs, werkend vanuit het kantoor in Amsterdam aan de Herengracht 420, behandelen de beoordeling van het betalingspad als een standaard onderdeel van elke audit vóór de lancering – en niet als een optioneel extraatje. Een afrekenstroom die er in een demo identiek uitziet aan een correcte stroom kan zich onder echte netwerkomstandigheden compleet anders gedragen. Dat is exact de kloof waar [onze prijscalculator](https://launchstudio.eu/nl/#calculator) rekening mee houdt bij het bepalen van de omvang van het uitharden van betalingsstromen.
 
 ## Echt voorbeeld
 

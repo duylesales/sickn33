@@ -41,9 +41,9 @@ Foutregistratie (Sentry is de standaardkeuze), uptime-monitoring, en waarschuwin
 
 Voor een founder met werkende technische vaardigheden vereisen deze zes items oprecht geen weken — ze vereisen aanhoudende focus, doorgewerkt in ongeveer de bovenstaande volgorde, aangezien geheimen en authenticatie het hoogste risico dragen als ze onbehandeld blijven terwijl CI, testen en observability in waarde toenemen naarmate het product langer live staat. Founders zonder die technische achtergrond staan voor precies dezelfde zes items en hetzelfde risicoprofiel; de enige variabele die verandert is wie de fix uitvoert.
 
-[LaunchStudio](https://launchstudio.eu/en/) voert precies dit framework uit voor founders die liever Manifera's engineers het professioneel laten uitvoeren dan er hun eigen weekend aan te besteden — dezelfde zes dimensies, dezelfde volgordelogica, geleverd tegen een vaste prijs en tijdlijn.
+[LaunchStudio](https://launchstudio.eu/nl/) voert precies dit framework uit voor founders die liever Manifera's engineers het professioneel laten uitvoeren dan er hun eigen weekend aan te besteden — dezelfde zes dimensies, dezelfde volgordelogica, geleverd tegen een vaste prijs en tijdlijn.
 
-[Vraag een afgebakende schatting aan voor jouw specifieke gaten](https://launchstudio.eu/en/#calculator) — de meeste prototypes hebben niet alle zes met gelijke urgentie nodig, en een goede scope vertelt je welke er specifiek het meest toe doen voor jouw app.
+[Vraag een afgebakende schatting aan voor jouw specifieke gaten](https://launchstudio.eu/nl/#calculator) — de meeste prototypes hebben niet alle zes met gelijke urgentie nodig, en een goede scope vertelt je welke er specifiek het meest toe doen voor jouw app.
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "datePublished": "2026-07-24",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/your-saas-ai-prototype-is-ready-to-demo-not-ready-to-bill"
+    "@id": "https://launchstudio.eu/nl/blog/your-saas-ai-prototype-is-ready-to-demo-not-ready-to-bill"
   }
 }
 </script>
@@ -53,11 +53,11 @@ In tegenstelling tot een bug in de gebruikersinterface is een facturatieberekeni
 
 ## Wat het correct krijgen hiervan daadwerkelijk vereist
 
-Het herstellen van facturatie-logica bij pakketwijzigingen betekent het expliciet testen van de upgrade- en downgradepaden halverwege de cyclus tegen de mechanica voor evenredige verrekening en tegoeden van een echte betalingsverwerker. En niet aannemen dat de eenvoudige logica voor één enkele transactie die werkte voor de aanmelding zich automatisch correct uitbreidt naar een ingewikkelder situatie. [LaunchStudio](https://launchstudio.eu/en/) beoordeelt exact dit soort volledigheid van facturatie-logica als onderdeel van haar Launch & Grow-pakket voor schalende SaaS-oprichters, ondersteund door Manifera's 11+ jaar ervaring met het integreren van Stripe en Mollie in productie-facturatiesystemen.
+Het herstellen van facturatie-logica bij pakketwijzigingen betekent het expliciet testen van de upgrade- en downgradepaden halverwege de cyclus tegen de mechanica voor evenredige verrekening en tegoeden van een echte betalingsverwerker. En niet aannemen dat de eenvoudige logica voor één enkele transactie die werkte voor de aanmelding zich automatisch correct uitbreidt naar een ingewikkelder situatie. [LaunchStudio](https://launchstudio.eu/nl/) beoordeelt exact dit soort volledigheid van facturatie-logica als onderdeel van haar Launch & Grow-pakket voor schalende SaaS-oprichters, ondersteund door Manifera's 11+ jaar ervaring met het integreren van Stripe en Mollie in productie-facturatiesystemen.
 
 Manifera's engineeringwerk voor facturatie-logica wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/en/#calculator).
+[Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/nl/#calculator).
 
 ## De facturatiesituaties die het waard zijn om te testen voordat u een echte klant factureert
 

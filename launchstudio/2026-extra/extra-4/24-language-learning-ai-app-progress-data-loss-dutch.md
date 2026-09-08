@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/language-learning-ai-app-progress-data-loss"
+    "@id": "https://launchstudio.eu/nl/blog/language-learning-ai-app-progress-data-loss"
   }
 }
 </script>
@@ -51,7 +51,7 @@ LaunchStudio's engineeringteam, werkend vanuit Manifera's ontwikkelingscentrum i
 
 Het op de juiste manier herstellen hiervan gaat niet over het toevoegen van meer lokale opslag – het gaat over het omkeren van de relatie. De server wordt de enige bron van de waarheid voor de voortgangsstatus, de client synchroniseert bij het inloggen en periodiek daarna, en conflicten worden opgelost met duidelijke regels (gebruikelijk "server wint tenzij de client een nieuwere geverifieerde tijdstempel van activiteit heeft die nog niet is gesynchroniseerd"). Dit vereist ook het netjes afhandelen van het offline geval, aangezien taalleerders vaak oefenen in vliegtuigen, metro's en andere plaatsen zonder verbinding – de herstelling moet lokale activiteit in de wachtrij plaatsen en afstemmen met de server, in plaats van blindelings te overschrijven in een van beide richtingen.
 
-Dit is het soort werk aan de backend en datalaag waar LaunchStudio in gespecialiseerd is – het nemen van een frontend die een oprichter al heeft gebouwd en waar hij van houdt, en het op de juiste manier herbouwen van het leidingwerk eronder, zonder de UI aan te raken. U kunt de typische omvang en doorlooptijd bekijken op de [LaunchStudio-procespagina](https://launchstudio.eu/en/#process). Voor teams die beoordelen of ze een herstelling zoals deze of een volledigere herbouw nodig hebben, heeft Manifera's team voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) migraties van de datalaag op een aanzienlijk grotere schaal afgehandeld voor enterprise-klanten.
+Dit is het soort werk aan de backend en datalaag waar LaunchStudio in gespecialiseerd is – het nemen van een frontend die een oprichter al heeft gebouwd en waar hij van houdt, en het op de juiste manier herbouwen van het leidingwerk eronder, zonder de UI aan te raken. U kunt de typische omvang en doorlooptijd bekijken op de [LaunchStudio-procespagina](https://launchstudio.eu/nl/#process). Voor teams die beoordelen of ze een herstelling zoals deze of een volledigere herbouw nodig hebben, heeft Manifera's team voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) migraties van de datalaag op een aanzienlijk grotere schaal afgehandeld voor enterprise-klanten.
 
 ## Twee apparaten, beide offline, beide racend om te synchroniseren
 

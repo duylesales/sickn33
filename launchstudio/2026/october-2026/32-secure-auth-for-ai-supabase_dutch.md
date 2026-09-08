@@ -95,7 +95,7 @@ Als solo-ontwikkelaar wilt u uw kostbare tijd besteden aan het perfectioneren va
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Dit is waarom ambitieuze software-oprichters kiezen voor [LaunchStudio](https://launchstudio.eu/en/).
+Dit is waarom ambitieuze software-oprichters kiezen voor [LaunchStudio](https://launchstudio.eu/nl/).
 
 Gesteund door de enterprise cybersecurity-experts van [Manifera](https://www.manifera.com/) — met ruim 120 senior engineers werkend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze regionale vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons software-centrum aan de **Pho Quang Street (Floor 11, Block C, 10 Pho Quang) in Ho Chi Minhstad, Vietnam** en meer dan een decennium ervaring in het ontwikkelen van [beveiligde webapplicaties](https://www.manifera.com/services/web-app-develop/) voor multinationals zoals Vodafone en TNO — is LaunchStudio gespecialiseerd in het beveiligen van Supabase-architecturen voor AI-startups.
 
@@ -110,7 +110,7 @@ Wij implementeren de complete "Secure Auth Driehoek" en de bijbehorende sessiehy
 - Goede sessiehygiëne (tokenrotatie, MFA en sessie-invalidatie) sluit de laatste kritieke beveiligingsgaten.
 - LaunchStudio realiseert de complete enterprise backend-hardening zodat u snel, veilig en AVG-conform kunt lanceren.
 
-[Beveilig uw AI SaaS vandaag nog. Werk samen met de database-experts van LaunchStudio](https://launchstudio.eu/en/#contact).
+[Beveilig uw AI SaaS vandaag nog. Werk samen met de database-experts van LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "datePublished": "2026-07-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/why-ai-security-monitoring-matters-more-after-launch-than-before"
+    "@id": "https://launchstudio.eu/nl/blog/why-ai-security-monitoring-matters-more-after-launch-than-before"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Doorlopende monitoring – geautomatiseerde controles die draaien tegen nieuwe c
 
 ## Wat doorlopende monitoring in de praktijk inhoudt
 
-Een praktische monitoringaanpak combineert geautomatiseerd scannen geïntegreerd in het ontwikkelingsproces met periodieke handmatige beoordeling van gebieden die bekendstaan als gevoelig. Hierdoor worden regressies opgevangen dicht bij het moment dat ze worden geïntroduceerd. [LaunchStudio](https://launchstudio.eu/en/) biedt exact dit soort doorlopende monitoring als onderdeel van haar Launch & Grow-pakket, ondersteund door Manifera's 11+ jaar ervaring met het onderhouden van beveiliging van productiesystemen op de lange termijn.
+Een praktische monitoringaanpak combineert geautomatiseerd scannen geïntegreerd in het ontwikkelingsproces met periodieke handmatige beoordeling van gebieden die bekendstaan als gevoelig. Hierdoor worden regressies opgevangen dicht bij het moment dat ze worden geïntroduceerd. [LaunchStudio](https://launchstudio.eu/nl/) biedt exact dit soort doorlopende monitoring als onderdeel van haar Launch & Grow-pakket, ondersteund door Manifera's 11+ jaar ervaring met het onderhouden van beveiliging van productiesystemen op de lange termijn.
 
 Manifera's beveiligingsmonitoring wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Ga van prototype naar productie in weken — laten we beginnen](https://launchstudio.eu/en/#contact).
+[Ga van prototype naar productie in weken — laten we beginnen](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

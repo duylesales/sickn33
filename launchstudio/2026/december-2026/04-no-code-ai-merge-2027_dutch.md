@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-04",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/no-code-ai-merge-2027"
+    "@id": "https://launchstudio.eu/nl/blog/no-code-ai-merge-2027"
   }
 }
 </script>
@@ -86,7 +86,7 @@ De samensmelting van no-code en AI heeft het prototype-probleem opgelost. Het he
 - Monitoring en alarmering (foutregistratie, prestatiemonitoring, uptime-alerts)
 - Compliance-infrastructuur (AVG/GDPR-verwijderprocessen, audit-logging, toestemmingsbeheer)
 
-Dit is de laag waar gespecialiseerde engineering-expertise onvervangbaar blijft. En het is precies de laag die [LaunchStudio](https://launchstudio.eu/en/) levert.
+Dit is de laag waar gespecialiseerde engineering-expertise onvervangbaar blijft. En het is precies de laag die [LaunchStudio](https://launchstudio.eu/nl/) levert.
 
 LaunchStudio, aangedreven door het engineeringteam van [Manifera](https://www.manifera.com/) met 11+ jaar enterprise-ervaring, neemt de output van AI-tools en bouwt de ontbrekende productie-infrastructuur eronder. Uw in Lovable ontworpen frontend blijft 100% intact. Het team, opererend vanuit het ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh-stad met Europees projectmanagement aan de Herengracht 420 in Amsterdam, verzorgt de beveiliging, betalingen, hosting en monitoring die AI-tools nog niet betrouwbaar zelfstandig kunnen leveren.
 
@@ -104,7 +104,7 @@ Voor oprichters die hun strategie voor 2027 vormgeven, is het speelplan helder:
 
 ## De Tools Staan Klaar. Bent U Dat Ook?
 
-Heeft u een prototype gebouwd met Lovable, Bolt of Cursor en zoekt u de productie-infrastructuur om er een winstgevend SaaS-bedrijf van te maken? LaunchStudio levert binnen één tot drie weken. [Vraag vandaag een vaste offerte aan](https://launchstudio.eu/en/#contact).
+Heeft u een prototype gebouwd met Lovable, Bolt of Cursor en zoekt u de productie-infrastructuur om er een winstgevend SaaS-bedrijf van te maken? LaunchStudio levert binnen één tot drie weken. [Vraag vandaag een vaste offerte aan](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

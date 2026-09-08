@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Wat een met AI gegenereerde applicatie in Lelystad nog nodig heeft vóór echte gebruikers",
   "description": "Een praktische checklist voor Lelystadse oprichters over wat een met AI gegenereerde applicatie nodig heeft voordat echte gebruikers verschijnen, van databasebeveiliging tot betalingsverificatie.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-generated-application-lelystad" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-generated-application-lelystad" }
 }
 </script>
 
@@ -44,7 +44,7 @@ Lelystad is aanzienlijk gegroeid als Flevoland's administratief en logistiek cen
 
 Het gebied rondom Lelystad Airport en het Flevoland Business Park kent een kleine, hecht verbonden gemeenschap van logistieke en luchtvaart-gerelateerde bedrijven, van wie velen elkaar kennen via dezelfde regionale brancheverenigingen en leveranciersnetwerken. Een oprichter die een plannings- of coördinatietool pitcht in die gemeenschap verkoopt niet zomaar aan één bedrijf — een slechte eerste indruk bij één logistiek coördinator reist snel naar de twee of drie andere bedrijven waar ze regelmatig mee werken. Dat maakt de checklist vóór de lancering minder een abstracte best practice en meer een directe input voor de vraag of een Lelystadse oprichter een tweede gesprek krijgt met iemand anders in dat netwerk.
 
-LaunchStudio voert exact deze checklist uit tegen elke met AI gegenereerde applicatie die we beoordelen, zonder de frontend aan te raken die een oprichter al heeft gebouwd. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan een decennium ervaring in productie-engineering, dat 160+ projecten heeft opgeleverd voor enterprise-klanten zoals Vodafone, TNO en MO Batteries. Ons kantoor in Amsterdam, aan de Herengracht 420, handelt de klantrelatie rechtstreeks af, terwijl Manifera's bredere engineering-capaciteit de daadwerkelijke herstelwerkzaamheden voor productie uitvoert. U kunt onze [procespagina](https://launchstudio.eu/en/#process) verkennen voor een volledige uitleg van hoe een traject van beoordeling en herstel doorgaans verloopt, en Manifera's trackrecord bij enterprises bekijken in [hun portfolio](https://www.manifera.com/portfolio/).
+LaunchStudio voert exact deze checklist uit tegen elke met AI gegenereerde applicatie die we beoordelen, zonder de frontend aan te raken die een oprichter al heeft gebouwd. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan een decennium ervaring in productie-engineering, dat 160+ projecten heeft opgeleverd voor enterprise-klanten zoals Vodafone, TNO en MO Batteries. Ons kantoor in Amsterdam, aan de Herengracht 420, handelt de klantrelatie rechtstreeks af, terwijl Manifera's bredere engineering-capaciteit de daadwerkelijke herstelwerkzaamheden voor productie uitvoert. U kunt onze [procespagina](https://launchstudio.eu/nl/#process) verkennen voor een volledige uitleg van hoe een traject van beoordeling en herstel doorgaans verloopt, en Manifera's trackrecord bij enterprises bekijken in [hun portfolio](https://www.manifera.com/portfolio/).
 
 ## Hoe u prioriteit geeft aan de checklist wanneer u niet alles tegelijk kunt herstellen
 

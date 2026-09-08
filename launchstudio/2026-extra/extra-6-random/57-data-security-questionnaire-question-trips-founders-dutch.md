@@ -13,10 +13,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "De ene vraag in het data-beveiligingsvragenlijst die de meeste AI-native oprichters struikelt",
   "description": "Eén enkele vraag uit een enterprise-beveiligingsvragenlijst — over het incident-response- en breach-notificatieproces — laat meer AI-native SaaS-deals vastlopen dan welk technisch gat dan ook.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/data-security-questionnaire-question-trips-founders" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/data-security-questionnaire-question-trips-founders" }
 }
 </script>
 

@@ -12,10 +12,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "Wat de Prijspagina van een 'SaaS AI'-Product Stilletjes Onthult Over de Architectuur",
   "description": "Een prijspagina van SaaS AI onthult meer over de onderliggende architectuur dan de meeste oprichters beseffen — inclusief kloven zoals ontbrekende per-tenant gegevensisolatie, nog voordat een prospect ernaar vraagt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/saas-ai-pricing-page-tells-you" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/saas-ai-pricing-page-tells-you" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Dit betekent dat een SaaS-product er volledig af kan uitzien, klanten nauwkeurig
 
 Wanneer een inkoopteam een gebruiksgebaseerde prijspagina leest en al vraagt naar gegevensisolatie voordat ze zelfs maar een demo hebben gezien, zijn ze niet paranoïde — ze matchen patronen tegen tientallen andere leveranciersevaluaties. Gebruiksgebaseerde prijsstelling zonder enige zichtbare vermelding van tenantisolatie, toegewijde gegevensgrenzen of per-klant encryptie is een patroon dat ze hebben leren onderzoeken. Het betekent niet dat het product onveilig is. Het betekent dat de koper nu een specifieke, beantwoordbare vraag heeft, en hoe zelfverzekerd en snel een oprichter die kan beantwoorden, zegt bijna net zoveel als het antwoord zelf.
 
-Als u uw SaaS-product voorbereidt op precies dit soort onderzoek, is het de moeite waard om [te berekenen wat een productiegereedheidsbeoordeling van uw architectuur zou kosten](https://launchstudio.eu/en/#calculator) voordat het inkoopteam van een prospect de vraag voor u stelt. Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) voor enterprise-klanten is opgebouwd rond precies deze discipline — tenantisolatie afgedwongen op elke laag, niet alleen op de factuur.
+Als u uw SaaS-product voorbereidt op precies dit soort onderzoek, is het de moeite waard om [te berekenen wat een productiegereedheidsbeoordeling van uw architectuur zou kosten](https://launchstudio.eu/nl/#calculator) voordat het inkoopteam van een prospect de vraag voor u stelt. Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) voor enterprise-klanten is opgebouwd rond precies deze discipline — tenantisolatie afgedwongen op elke laag, niet alleen op de factuur.
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelpersona: SaaS-Oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: SaaS-Oprichter Scale-Up
   "datePublished": "2026-11-15",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-saas"
+    "@id": "https://launchstudio.eu/nl/blog/ai-saas"
   }
 }
 </script>
@@ -99,7 +99,7 @@ Dit toont aan dat unit economics bij AI SaaS een technisch engineering-vraagstuk
 
 ## Hoe LaunchStudio Een Solide AI SaaS-Infrastructuur Bouwt
 
-[LaunchStudio](https://launchstudio.eu/en/), aangedreven door [Manifera](https://www.manifera.com/), heeft een bewezen methodiek ontwikkeld voor de lancering van AI SaaS-applicaties:
+[LaunchStudio](https://launchstudio.eu/nl/), aangedreven door [Manifera](https://www.manifera.com/), heeft een bewezen methodiek ontwikkeld voor de lancering van AI SaaS-applicaties:
 
 - **AI-Pijplijnharding:** Alle model-aanroepen worden verplaatst naar server-side proxy's met semantische caching, verbruiksmeting en automatische budgetwaarschuwingen.
 - **Facturatie-Infrastructuur:** Volledige integratie van Stripe of Mollie met webhooks, abonnementsstatussen en btw-compliance.
@@ -110,7 +110,7 @@ Het engineeringteam opereert vanuit Ho Chi Minhstad (Pho Quangstraat 10) onder l
 
 Jasper, oprichter van Wisey (een EdTech AI SaaS): *"Als SaaS-oprichter wil je snel en voordelig testen in de markt. LaunchStudio kostte me slechts 20% van wat ik normaal aan ontwikkeltijd kwijt zou zijn."*
 
-[Gebruik de kostencalculator](https://launchstudio.eu/#calculator) of [plan een gratis introductiegesprek](https://launchstudio.eu/en/#contact).
+[Gebruik de kostencalculator](https://launchstudio.eu/#calculator) of [plan een gratis introductiegesprek](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

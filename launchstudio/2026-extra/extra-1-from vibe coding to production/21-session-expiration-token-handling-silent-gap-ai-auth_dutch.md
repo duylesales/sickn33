@@ -33,9 +33,9 @@ Server-side sessie-ongeldigverklaring vereist doorgaans ofwel een server-side se
 
 Dit is een bijzonder makkelijk gat om te missen precies omdat alles verder aan authenticatie oprecht solide kan zijn — wachtwoorden correct gehasht, inloggen betrouwbaar werkend, beveiligde routes correct doorverwijzend — terwijl deze ene specifieke dimensie, sessielevenscyclusbeheer, onaangepakt blijft. Een founder die hun eigen app test ervaart elke keer een correct aanvoelende uitlog, zonder natuurlijke aanleiding om te testen wat er gebeurt met het onderliggende token onafhankelijk van de interface die stopte het te gebruiken.
 
-[LaunchStudio](https://launchstudio.eu/en/) verifieert sessie- en tokenlevenscyclus specifiek als onderdeel van elke authenticatiereview — testend of uitloggen daadwerkelijk server-side ongeldig maakt, niet alleen of de interface er correct uitgelogd uitziet — gesteund door Manifera's cybersecuritygeïnformeerde engineeringpraktijken.
+[LaunchStudio](https://launchstudio.eu/nl/) verifieert sessie- en tokenlevenscyclus specifiek als onderdeel van elke authenticatiereview — testend of uitloggen daadwerkelijk server-side ongeldig maakt, niet alleen of de interface er correct uitgelogd uitziet — gesteund door Manifera's cybersecuritygeïnformeerde engineeringpraktijken.
 
-[Ontdek of jouw uitlog daadwerkelijk iemand uitlogt](https://launchstudio.eu/en/#calculator) — een correct ogende uitlog en een veilige zijn verschillende beweringen.
+[Ontdek of jouw uitlog daadwerkelijk iemand uitlogt](https://launchstudio.eu/nl/#calculator) — een correct ogende uitlog en een veilige zijn verschillende beweringen.
 
 ## Echt voorbeeld
 

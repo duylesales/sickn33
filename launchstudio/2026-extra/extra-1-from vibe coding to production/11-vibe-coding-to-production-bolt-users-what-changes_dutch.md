@@ -31,9 +31,9 @@ Niets hiervan betekent het weggooien van wat Bolt genereerde. De frontend, de ke
 
 Vóór enige bredere audit is de enkele meest waardevolle eerste controle voor een Bolt-gegenereerde codebase de git-geschiedenis-geheimenscan elders in deze serie beschreven — specifiek omdat Bolts snelle verbind-en-test-workflow hardgecodeerde credentials tijdens vroege iteratie bijzonder gebruikelijk maakt, zelfs wanneer de uiteindelijke versie er schoon uitziet.
 
-[LaunchStudio](https://launchstudio.eu/en/) heeft Bolt-gegenereerde applicaties specifiek genoeg beoordeeld en verhard om precies te weten waar het eerst moet kijken, en dicht het gat van vibe coding naar productie zonder weg te gooien wat Bolt al goed deed, gesteund door Manifera's engineeringteam over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) heeft Bolt-gegenereerde applicaties specifiek genoeg beoordeeld en verhard om precies te weten waar het eerst moet kijken, en dicht het gat van vibe coding naar productie zonder weg te gooien wat Bolt al goed deed, gesteund door Manifera's engineeringteam over 160+ opgeleverde projecten.
 
-[Laat je Bolt-gegenereerde app beoordelen door mensen die de specifieke patronen kennen](https://launchstudio.eu/en/#contact) — een toolspecifieke review vindt gaten die een generieke checklist mist.
+[Laat je Bolt-gegenereerde app beoordelen door mensen die de specifieke patronen kennen](https://launchstudio.eu/nl/#contact) — een toolspecifieke review vindt gaten die een generieke checklist mist.
 
 ## Echt voorbeeld
 

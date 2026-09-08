@@ -16,7 +16,7 @@ Doelpersona: Backend Ontwikkelaar / Technische Oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Backend Ontwikkelaar / Technische Oprichter
   "datePublished": "2026-12-02",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/api-in-ai"
+    "@id": "https://launchstudio.eu/nl/blog/api-in-ai"
   }
 }
 </script>
@@ -62,7 +62,7 @@ Afhankelijk van de gebruikerservaring (UX) van uw applicatie moet het juiste int
 
 AI-codetools zoals Cursor schrijven moeiteloos een simpele `fetch()` naar OpenAI, maar kunnen geen complexe Redis-wachtrijen, Edge streaming of fallback-routers opzetten.
 
-[LaunchStudio](https://launchstudio.eu/en/), ondersteund door de ervaren software-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, vervangt kwetsbare API-aanroepen door professionele middleware:
+[LaunchStudio](https://launchstudio.eu/nl/), ondersteund door de ervaren software-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, vervangt kwetsbare API-aanroepen door professionele middleware:
 1. **De LaunchStudio AI Gateway:** Een beveiligde Node.js proxy die alle frontend-verzoeken onderschept en API-sleutels veilig op de server injecteert.
 2. **Fouttolerante Middleware:** Automatische *exponential backoff* en retry-logica. Krijgt de server een `429 Rate Limit` fout, dan wacht het 2 seconden en probeert het opnieuw zonder dat de gebruiker een foutmelding ziet.
 3. **Semantische Caching:** Vraagt een gebruiker om advies dat 5 minuten eerder al is beantwoord, dan levert de Redis-cache direct het antwoord op en wordt de betaalde AI API overgeslagen.

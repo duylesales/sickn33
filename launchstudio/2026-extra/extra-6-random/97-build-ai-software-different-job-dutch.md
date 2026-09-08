@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "'AI-software Bouwen' Is een Andere Klus Dan 'Software Bouwen Die AI Gebruikt'",
   "description": "Oprichters die zich voornemen 'AI-software te bouwen' besteden vaak maanden aan een custom model, terwijl hun gebruikers alleen software nodig hadden die een kant-en-klare AI-API goed gebruikte.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/build-ai-software-different-job" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/build-ai-software-different-job" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Stel een botte vraag: heeft een bestaande AI-API, goed gebruikt, al problemen op
 
 "AI-software bouwen" klinkt indrukwekkender om hardop te zeggen, en het is een makkelijke standaardkeuze wanneer een oprichter nog niet heeft getest of de kant-en-klare optie goed genoeg is. Het testen ervan kost een middag. Een custom model bouwen in plaats van eerst te testen kan maanden kosten, en de twee paden leveren vaak een vergelijkbaar resultaat op voor de gebruiker, wat de verspilde maanden achteraf extra pijnlijk maakt.
 
-LaunchStudio, mogelijk gemaakt door Manifera's meer dan 11 jaar softwareontwikkelingservaring, besteedt een flink deel van vroege gesprekken met oprichters aan precies deze vraag — lost het custom-model-instinct een echte leemte op, of vervangt het een test die nog niet is uitgevoerd — voordat er engineeringwerk begint. Onze [contactpagina](https://launchstudio.eu/en/#contact) is een snelle manier om dat inzicht voor uw eigen project te krijgen, en het team voor [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera voert hetzelfde gesprek met enterprise-klanten die dezelfde vork overwegen.
+LaunchStudio, mogelijk gemaakt door Manifera's meer dan 11 jaar softwareontwikkelingservaring, besteedt een flink deel van vroege gesprekken met oprichters aan precies deze vraag — lost het custom-model-instinct een echte leemte op, of vervangt het een test die nog niet is uitgevoerd — voordat er engineeringwerk begint. Onze [contactpagina](https://launchstudio.eu/nl/#contact) is een snelle manier om dat inzicht voor uw eigen project te krijgen, en het team voor [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera voert hetzelfde gesprek met enterprise-klanten die dezelfde vork overwegen.
 
 ## Echt voorbeeld
 

@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Wat er eigenlijk gebeurt wanneer u de code 'downloadt' uit uw AI-codeertool",
   "description": "De knop 'download' of 'exporteren' in AI-codeertools geeft u zelden alles wat de app nodig heeft om buiten het platform te draaien. Dit is wat er doorgaans wordt achtergelaten, en waarom dit pas zichtbaar wordt nadat u vertrekt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-download-what-happens" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-download-what-happens" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Dit is precies de valkuil: de app werkte. U testte hem binnen de preview van de 
 - Test de geëxporteerde versie op uw eigen hosting voordat u parity met de preview van het platform aanneemt, in plaats van erna.
 - Vraag specifiek, in de documentatie of het supportkanaal van de tool, welke categorieën configuratie standaard van de export worden uitgesloten.
 
-Het technische team van Manifera — met 11+ jaar productie-ervaring over 160+ opgeleverde projecten — behandelt precies deze kloof als een van de eerste dingen die het waard zijn om te controleren wanneer een oprichter een door AI gegenereerde app van het oorspronkelijke platform af verplaatst. Ons engineeringcentrum in Ho Chi Minhstad behandelt een gestage stroom van precies dit soort migratiewerk. Als u van plan bent om zelf van een platform af te stappen, [stuur ons uw prototypelink en wij geven u gratis advies](https://launchstudio.eu/en/#contact) over wat er waarschijnlijk kapot gaat voordat u er op de harde manier achter komt. Het [portfolio](https://www.manifera.com/portfolio/) van Manifera bevat meerdere projecten die precies zo zijn begonnen.
+Het technische team van Manifera — met 11+ jaar productie-ervaring over 160+ opgeleverde projecten — behandelt precies deze kloof als een van de eerste dingen die het waard zijn om te controleren wanneer een oprichter een door AI gegenereerde app van het oorspronkelijke platform af verplaatst. Ons engineeringcentrum in Ho Chi Minhstad behandelt een gestage stroom van precies dit soort migratiewerk. Als u van plan bent om zelf van een platform af te stappen, [stuur ons uw prototypelink en wij geven u gratis advies](https://launchstudio.eu/nl/#contact) over wat er waarschijnlijk kapot gaat voordat u er op de harde manier achter komt. Het [portfolio](https://www.manifera.com/portfolio/) van Manifera bevat meerdere projecten die precies zo zijn begonnen.
 
 ## Echt voorbeeld
 

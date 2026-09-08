@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/websites-for-ai-products-different-standards-than-app"
+    "@id": "https://launchstudio.eu/nl/blog/websites-for-ai-products-different-standards-than-app"
   }
 }
 </script>
@@ -51,9 +51,9 @@ Een marketingwebsite verwerkt doorgaans minder gevoelige gegevens dan de app zel
 
 Omdat de marketingsite geen betalingsgegevens of kernproductgegevens verwerkt, is het gemakkelijk om deze mentaal in te delen onder "minder belangrijk" in plaats van "anders belangrijk" – een categoriseringsfout die specifiek onderschat hoeveel van de daadwerkelijke klantenwerving van een oprichter afhangt van het betrouwbaar en geloofwaardig presteren van dit exacte oppervlak, los van alles wat er in de app erachter gebeurt. Dezelfde oprichter die er niet aan zou denken om een beveiligingsbeoordeling op zijn betalingsstroom over te slaan, zal met plezier een marketingsite lanceren die in een middag is gebouwd, redenerend dat een trage pagina of een kapot formulier een ongemak is in plaats van een echte fout – hoewel voor een bezoeker die nooit voorbij de homepagina komt, een kapot contactformulier of een pagina die een timeout geeft functioneel identiek is aan het niet bestaan van het product. Het budget en de aandacht die worden bespaard door de marketingsite te deprioriteren, worden zelden omgeleid naar iets waardevollers; ze blijven gewoon onbesteed aan een oppervlak dat voor een betekenisvol deel van de bezoekers het enige deel van het product is waarmee ze ooit daadwerkelijk interactie zullen hebben.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt marketingwebsites met dit afzonderlijke risicoprofiel in gedachten – formuliebeveiliging, veerkracht van uptime en nauwkeurigheid van gestructureerde gegevens – als een aanvulling op, en niet een minder belangrijke versie van, productieverharding op app-niveau, waarbij dezelfde engineeringdiscipline wordt toegepast die Manifera naar elk klantgericht oppervlak brengt in meer dan 160 opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) beoordeelt marketingwebsites met dit afzonderlijke risicoprofiel in gedachten – formuliebeveiliging, veerkracht van uptime en nauwkeurigheid van gestructureerde gegevens – als een aanvulling op, en niet een minder belangrijke versie van, productieverharding op app-niveau, waarbij dezelfde engineeringdiscipline wordt toegepast die Manifera naar elk klantgericht oppervlak brengt in meer dan 160 opgeleverde projecten.
 
-[Laat uw marketingsite beoordelen met dezelfde ernst als uw app](https://launchstudio.eu/en/#calculator) — het is vaak het eerste en meest openbaar zichtbare wat iemand daadwerkelijk ziet.
+[Laat uw marketingsite beoordelen met dezelfde ernst als uw app](https://launchstudio.eu/nl/#calculator) — het is vaak het eerste en meest openbaar zichtbare wat iemand daadwerkelijk ziet.
 
 ## Een pre-lanceerchecklist voor uw marketingsite
 

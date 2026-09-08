@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Dev AI-tools in Dordrecht: Het dichten van de kloof tussen prototype en productie",
   "description": "Een kostenoverzicht van wat er daadwerkelijk voor nodig is voor Dordtse oprichters die dev AI-tools gebruiken om van een werkend prototype naar een betrouwbaar productieproduct te gaan.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/dev-ai-dordrecht" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/dev-ai-dordrecht" }
 }
 </script>
 
@@ -43,7 +43,7 @@ Dit is ongeveer wat een dev-AI-prototype scheidt van een productiegereed product
 
 Zoals Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, het verwoordt: "De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen." Voor een Dordtse oprichter die logistieke en scheepvaartklanten bedient die uptime als uitgangspunt verwachten, is dat architectuurwerk geen optionele afwerking — het is het daadwerkelijke product.
 
-De prijzen van LaunchStudio voor dit type productie-gereedheidswerk liggen tussen € 800 en € 7.500 als vast omlijnd traject, ongeveer een vijfde van wat een traditioneel ontwikkelbureau zou rekenen voor dezelfde infrastructuuruitbouw. LaunchStudio wordt aangedreven door Manifera, met een klantgericht kantoor aan de Herengracht 420 in Amsterdam en ruim 160 opgeleverde projecten achter zich, waaronder werk voor klanten zoals Statler BI en Maployer. U kunt [rechtstreeks contact opnemen](https://launchstudio.eu/en/#contact) om het specifieke gat tussen prototype en productie voor uw situatie in te schatten, en het [web application development](https://www.manifera.com/services/web-app-develop/) werk van Manifera laat dezelfde infrastructuurdiscipline zien over een reeks van klantgrootten.
+De prijzen van LaunchStudio voor dit type productie-gereedheidswerk liggen tussen € 800 en € 7.500 als vast omlijnd traject, ongeveer een vijfde van wat een traditioneel ontwikkelbureau zou rekenen voor dezelfde infrastructuuruitbouw. LaunchStudio wordt aangedreven door Manifera, met een klantgericht kantoor aan de Herengracht 420 in Amsterdam en ruim 160 opgeleverde projecten achter zich, waaronder werk voor klanten zoals Statler BI en Maployer. U kunt [rechtstreeks contact opnemen](https://launchstudio.eu/nl/#contact) om het specifieke gat tussen prototype en productie voor uw situatie in te schatten, en het [web application development](https://www.manifera.com/services/web-app-develop/) werk van Manifera laat dezelfde infrastructuurdiscipline zien over een reeks van klantgrootten.
 
 ## Hoe u uw eigen uitvalrisico inschat voordat het gebeurt
 

@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Wat AI-softwareontwikkelaars in Enschede willen dat oprichters weten vóór de lancering",
   "description": "Oprichters in Enschede voortkomend uit het ecosysteem van de Universiteit Twente lanceren snel met AI gebouwde prototypes. Dit is wat AI-softwareontwikkelaars willen dat ze weten vóór de lanceringsdag.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-software-developers-enschede" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-software-developers-enschede" }
 }
 </script>
 
@@ -41,7 +41,7 @@ In de praktijk valt dit patroon uiteen in een korte, herkenbare lijst die zich h
 
 Niets hiervan is een reflectie op het oordeel van de oprichter — het is een reflectie op waar deze tools voor optimaliseren, namelijk u naar een werkende demo brengen, en niet naar een veilig productiesysteem. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en het dagelijkse werk van ons team is in feite het vertalen van "het werkt op mijn scherm" naar "het werkt wanneer duizend vreemden het tegelijkertijd raken."
 
-Manifera's engineers — ruim 120 man sterk — hebben 160+ projecten opgeleverd voor enterprise-klanten zoals Vodafone en TNO, en het beoordelingsproces dat we uitvoeren op een in Enschede gebouwd prototype is fundamenteel niet anders dan de beoordeling die we zouden uitvoeren op een enterprise-codebase. Dezelfde checklist, dezelfde strengheid, alleen afgestemd op wat een oprichter daadwerkelijk nodig heeft vóór zijn eerste echte lancering. Als u wilt zien hoe dat er in de praktijk uitziet, doorloopt onze [procespagina](https://launchstudio.eu/en/#process) dit stap voor stap.
+Manifera's engineers — ruim 120 man sterk — hebben 160+ projecten opgeleverd voor enterprise-klanten zoals Vodafone en TNO, en het beoordelingsproces dat we uitvoeren op een in Enschede gebouwd prototype is fundamenteel niet anders dan de beoordeling die we zouden uitvoeren op een enterprise-codebase. Dezelfde checklist, dezelfde strengheid, alleen afgestemd op wat een oprichter daadwerkelijk nodig heeft vóór zijn eerste echte lancering. Als u wilt zien hoe dat er in de praktijk uitziet, doorloopt onze [procespagina](https://launchstudio.eu/nl/#process) dit stap voor stap.
 
 ## Waarom dit meer uitmaakt in een stad nabij een universiteit zoals Enschede
 

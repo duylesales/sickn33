@@ -33,9 +33,9 @@ Met correcte observability op zijn plaats verandert de reeks gebeurtenissen na e
 
 In verhouding tot de andere productiedimensies is observability ongewoon goedkoop te implementeren — de meeste opzetten kosten minder dan een uur met tools met genereuze gratis niveaus voor vroege-fase producten — terwijl het buitensporige doorlopende waarde biedt voor elke dag dat het product daarna live blijft, aangezien elk toekomstig incident, niet alleen het eerste, profiteert van dezelfde zichtbaarheid.
 
-[LaunchStudio](https://launchstudio.eu/en/) zet foutregistratie, uptime-monitoring, en correct afgestemde waarschuwingen op als standaard onderdeel van elke Launch & Grow-opdracht, specifiek geconfigureerd voor signaal, niet ruis, gesteund door Manifera's operationele ervaring met het draaien van productie-infrastructuur over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) zet foutregistratie, uptime-monitoring, en correct afgestemde waarschuwingen op als standaard onderdeel van elke Launch & Grow-opdracht, specifiek geconfigureerd voor signaal, niet ruis, gesteund door Manifera's operationele ervaring met het draaien van productie-infrastructuur over 160+ opgeleverde projecten.
 
-[Kom je volgende productieprobleem te weten vóór je klanten dat doen](https://launchstudio.eu/en/#calculator) — dit is doorgaans het snelste gat op de hele checklist om te dichten.
+[Kom je volgende productieprobleem te weten vóór je klanten dat doen](https://launchstudio.eu/nl/#calculator) — dit is doorgaans het snelste gat op de hele checklist om te dichten.
 
 ## Echt voorbeeld
 

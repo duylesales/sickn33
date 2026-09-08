@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/search-autocomplete-ai-generated-app-relevance"
+    "@id": "https://launchstudio.eu/nl/blog/search-autocomplete-ai-generated-app-relevance"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Zoeken dat standhoudt bij echt gebruik heeft doorgaans een paar specifieke mogel
 
 De kosten van het verkeerd krijgen hiervan stapelen zich stilletjes op, omdat een gebroken zoekfunctie zichzelf niet aankondigt als gebroken – het produceert simpelweg een langzame uitholling van het vertrouwen in het product elke keer dat een echt resultaat gemist wordt. LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters. Zoekrelevantie is een van de meer voorkomende kwaliteitskloven die ons team vindt in met AI gebouwde apps, precies omdat het er compleet fine uitziet in elke door de oprichter uitgevoerde test en alleen breekt tegen echte menselijke invoer. Onze ingenieurs, werkend vanuit Manifera's kantoor in Singapore op 100 Tras Street, behandelen zoekkwaliteit als een standaard bruikbaarheids- en betrouwbaarheidscontrole wanneer ze een met AI gebouwde app voorbereiden op echte klanten.
 
-Als u nog nooit daadwerkelijk een bewuste typfout in de zoekbalk van uw eigen app heeft getypt, is het de moeite waard om dat vandaag te doen – en als er niets terugkomt, kan [onze prijscalculator](https://launchstudio.eu/en/#calculator) schetsen hoe een correcte herstelling eruitziet.
+Als u nog nooit daadwerkelijk een bewuste typfout in de zoekbalk van uw eigen app heeft getypt, is het de moeite waard om dat vandaag te doen – en als er niets terugkomt, kan [onze prijscalculator](https://launchstudio.eu/nl/#calculator) schetsen hoe een correcte herstelling eruitziet.
 
 ## Een herstelde zoekquery heeft nog steeds een verse index nodig
 

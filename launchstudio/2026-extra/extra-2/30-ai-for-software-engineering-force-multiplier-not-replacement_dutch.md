@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "datePublished": "2026-07-27",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-for-software-engineering-force-multiplier-not-replacement"
+    "@id": "https://launchstudio.eu/nl/blog/ai-for-software-engineering-force-multiplier-not-replacement"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Wat dit bijzonder verwarrend maakt voor een oprichter is dat niets aan de code z
 
 ## Wat het correct krijgen hiervan daadwerkelijk kost
 
-Het toevoegen van verstandige paginering en bronlimieten aan gegevensintensieve eindpunten is een afgebakende, welbegrepen engineeringtaak. De kosten zitten niet in de complexiteit van de herstelling, maar in het eerst identificeren van elk eindpunt in een groeiende codebase waar deze specifieke discipline nooit werd toegepast. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort schaalbaarheidsaudit uit voor groeiende SaaS-producten, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van systemen die oprecht grote productie-datasets afhandelen.
+Het toevoegen van verstandige paginering en bronlimieten aan gegevensintensieve eindpunten is een afgebakende, welbegrepen engineeringtaak. De kosten zitten niet in de complexiteit van de herstelling, maar in het eerst identificeren van elk eindpunt in een groeiende codebase waar deze specifieke discipline nooit werd toegepast. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort schaalbaarheidsaudit uit voor groeiende SaaS-producten, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van systemen die oprecht grote productie-datasets afhandelen.
 
 Manifera's schaalbaarheids-engineering wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Begin nu — van prototype naar een live product in weken](https://launchstudio.eu/en/#contact).
+[Begin nu — van prototype naar een live product in weken](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

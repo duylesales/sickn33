@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Waarom 'prototype-AI' en 'productie-AI' nooit één databaseschema mogen delen",
   "description": "Een technische uitleg over waarom een prototype ai-build en de productieversie ervan aparte databaseschema's nodig hebben, en wat er daadwerkelijk misgaat als test- en livegegevens er één delen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/prototype-production-never-share-schema" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/prototype-production-never-share-schema" }
 }
 </script>
 
@@ -55,7 +55,7 @@ Amber Schouten, een oprichter in Winterswijk, bouwde VoorraadKoppel — een tool
 
 Niets aan het script zelf was ongebruikelijk. Het deed precies waarvoor het geschreven was. Het probleem was dat "waarvoor het geschreven was" geen grens had die het bij productie weghield, omdat die grens nooit gebouwd was.
 
-Onze technici in Singapore, samenwerkend met collega's in Amsterdam en Ho Chi Minh-stad, behandelen scheiding van omgevingen als een van de standaardcontroles bij elk door AI gebouwd project voordat het live gaat — omdat het onzichtbaar is tot het moment dat het dat niet meer is. LaunchStudio brengt Manifera's enterprise-grade engineering, verfijnd over meer dan 160 opgeleverde projecten, naar precies dit soort infrastructuurreview. U kunt [zien wat een review voor databasescheiding en verharding zou kosten](https://launchstudio.eu/en/#calculator) voor uw eigen project.
+Onze technici in Singapore, samenwerkend met collega's in Amsterdam en Ho Chi Minh-stad, behandelen scheiding van omgevingen als een van de standaardcontroles bij elk door AI gebouwd project voordat het live gaat — omdat het onzichtbaar is tot het moment dat het dat niet meer is. LaunchStudio brengt Manifera's enterprise-grade engineering, verfijnd over meer dan 160 opgeleverde projecten, naar precies dit soort infrastructuurreview. U kunt [zien wat een review voor databasescheiding en verharding zou kosten](https://launchstudio.eu/nl/#calculator) voor uw eigen project.
 
 ## Echt voorbeeld
 

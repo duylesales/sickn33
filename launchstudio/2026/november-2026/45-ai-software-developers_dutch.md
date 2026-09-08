@@ -16,7 +16,7 @@ Doelpersona: CTO / Engineering Manager
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CTO / Engineering Manager
   "datePublished": "2026-12-15",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-software-developers"
+    "@id": "https://launchstudio.eu/nl/blog/ai-software-developers"
   }
 }
 </script>
@@ -62,7 +62,7 @@ De taak van de ontwikkelaar is **Agentic Orkestratie**: het schrijven van strikt
 
 Veel traditionele development-teams zien AI-tools als een bedreiging of proberen ze te verbieden. Dit garandeert dat zij worden ingehaald door de concurrentie.
 
-[LaunchStudio](https://launchstudio.eu/en/), gebouwd op het enterprise-fundament van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, omarmt dit nieuwe paradigma volledig:
+[LaunchStudio](https://launchstudio.eu/nl/), gebouwd op het enterprise-fundament van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, omarmt dit nieuwe paradigma volledig:
 1. **Platform Engineering Baselines:** Wij richten Internal Developer Portals (IDP's) en CI/CD-pipelines in die massaal gegenereerde AI-code automatisch toetsen op security en architectuurrichtlijnen vóór de merge.
 2. **Deterministische Interfaces:** Wij bouwen strikte scheidingslagen (Next.js React Server Components, Vercel AI SDK) waarin vrije AI-tekstgeneratie wordt gedwongen in veilige, type-safe datastructuren.
 3. **Continu Herarchitectureren:** Doordat AI de kosten van code schrijven minimaliseert, dalen ook de kosten van code weggooien ("disposable code"). Wij bouwen razendsnel prototypes en refactoren die direct naar robuuste enterprise-architecturen.

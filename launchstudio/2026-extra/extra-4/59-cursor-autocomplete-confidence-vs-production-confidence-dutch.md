@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/cursor-autocomplete-confidence-vs-production-confidence"
+    "@id": "https://launchstudio.eu/nl/blog/cursor-autocomplete-confidence-vs-production-confidence"
   }
 }
 </script>
@@ -49,7 +49,7 @@ Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoor
 
 De herstelling is niet het wantrouwen van Cursor in het algemeen – zijn automatische aanvulling is oprecht nuttig en krijgt het grote merendeel van de suggesties goed. De herstelling is het toepassen van bewust hogere controle op specifieke categorieën van code waar een subtiele fout onevenredige gevolgen heeft: authenticatie, autorisatie, betalingslogica, en alles wat de grenzen van gegevenstoegang raakt. Voor deze categorieën is een snelle doorlezing niet voldoende; ze hebben een expliciete testmatrix nodig die elke realistische rol- en machtigingscombinatie dekt, en niet alleen de twee of drie die gebruikt worden tijdens normale ontwikkeling. Onze ingenieurs, werkend vanuit Manifera's hub in Singapore, passen exact dit soort doelgerichte beoordeling toe wanneer ze een met AI gebouwde codebase auditeren voordat deze naar productie gaat – niet elke regel met gelijke intensiteit beoordelen, maar controle concentreren op de categorieën van code waar "aannemelijk maar verkeerd" reële schade veroorzaakt.
 
-Als u een beoordeling van machtigingen en toegangsbeheer wilt laten uitvoeren op een met Cursor gebouwd product voordat meer gebruikers er afhankelijk van worden, legt onze [hoe het werkt](https://launchstudio.eu/en/#process)-pagina uit hoe LaunchStudio dat soort audit omvangt. En Manifera's praktijk voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare autorisatiebeoordelingen uitgevoerd voor enterprise-systemen met aanzienlijk meer rolcomplexiteit dan een typisch SaaS-product in een vroeg stadium.
+Als u een beoordeling van machtigingen en toegangsbeheer wilt laten uitvoeren op een met Cursor gebouwd product voordat meer gebruikers er afhankelijk van worden, legt onze [hoe het werkt](https://launchstudio.eu/nl/#process)-pagina uit hoe LaunchStudio dat soort audit omvangt. En Manifera's praktijk voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare autorisatiebeoordelingen uitgevoerd voor enterprise-systemen met aanzienlijk meer rolcomplexiteit dan een typisch SaaS-product in een vroeg stadium.
 
 ## Een testmatrix beschermt u slechts één keer, tenzij deze geautomatiseerd is
 

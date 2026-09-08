@@ -53,7 +53,7 @@ Wij dwingen u niet om uw applicatie opnieuw te bouwen. U levert ons de frontend 
 
 ### 4. Vaste Pakketprijzen en Voorspelbare Tijdlijnen
 
-Traditionele Nederlandse bureaus offreren op basis van open-einde uurtarieven, waardoor een begroting van € 15.000 gaandeweg oploopt tot € 45.000. LaunchStudio hanteert daarentegen vaste projectpakketten: "Launch Ready" voor oprichters die hun backend vóór livegang moeten verharden en "Launch & Grow" voor doorlopend onderhoud en 24/7 monitoring. Onze pakketten variëren doorgaans van **€ 800 tot € 7.500** met een gegarandeerde doorlooptijd van 1 tot 3 weken — zie onze [prijscalculator](https://launchstudio.eu/en/#calculator) voor een heldere inschatting.
+Traditionele Nederlandse bureaus offreren op basis van open-einde uurtarieven, waardoor een begroting van € 15.000 gaandeweg oploopt tot € 45.000. LaunchStudio hanteert daarentegen vaste projectpakketten: "Launch Ready" voor oprichters die hun backend vóór livegang moeten verharden en "Launch & Grow" voor doorlopend onderhoud en 24/7 monitoring. Onze pakketten variëren doorgaans van **€ 800 tot € 7.500** met een gegarandeerde doorlooptijd van 1 tot 3 weken — zie onze [prijscalculator](https://launchstudio.eu/nl/#calculator) voor een heldere inschatting.
 
 ## Wat Dit Betekent voor Uw Gesprekken met Investeerders
 
@@ -69,7 +69,7 @@ Dit neemt de grootste technologische twijfels van venture capital partners in é
 - Het hybride model combineert Nederlandse juridische zekerheid en strategische projectleiding met de kostenefficiëntie van mondiale enterprise engineeringteams.
 - Een bewezen softwarepartner verhoogt uw bedrijfswaardering en slaagkans bij technische audits van investeerders en veeleisende B2B-klanten aanzienlijk.
 
-[Bouw uw AI SaaS met een betrouwbare Nederlandse partner. Neem vandaag contact op met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Bouw uw AI SaaS met een betrouwbare Nederlandse partner. Neem vandaag contact op met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

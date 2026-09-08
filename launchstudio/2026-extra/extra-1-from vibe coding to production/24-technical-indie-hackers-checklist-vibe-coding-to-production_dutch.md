@@ -49,9 +49,9 @@ Trigger een doelbewuste fout in een niet-productieomgeving en bevestig dat het v
 
 Het organiserende principe over deze hele checklist is hetzelfde: elk item is geformuleerd als iets wat je actief doet en het resultaat van observeert, niet iets dat je bevestigt door jouw eigen code te lezen en te beoordelen of het correct oogt. Dit onderscheid doet er specifiek toe voor een technische founder, omdat jouw eigen code lezen de neiging heeft te bevestigen wat je er al over gelooft — deze testen zijn ontworpen om naar boven te brengen wat je nog niet weet.
 
-[LaunchStudio](https://launchstudio.eu/en/) draait precies deze checklist, met dezelfde uitvoerbare strengheid, voor founders die liever Manifera's engineers het laten uitvoeren en verifiëren dan hun eigen beperkte tijd eraan te besteden — dezelfde tests, geleverd tegen een vaste prijs en tijdlijn.
+[LaunchStudio](https://launchstudio.eu/nl/) draait precies deze checklist, met dezelfde uitvoerbare strengheid, voor founders die liever Manifera's engineers het laten uitvoeren en verifiëren dan hun eigen beperkte tijd eraan te besteden — dezelfde tests, geleverd tegen een vaste prijs en tijdlijn.
 
-[Laat precies deze checklist draaien tegen jouw specifieke codebase](https://launchstudio.eu/en/#calculator) — een checklist die je zelf uitvoert kost echte tijd; een die je delegeert kost dagen.
+[Laat precies deze checklist draaien tegen jouw specifieke codebase](https://launchstudio.eu/nl/#calculator) — een checklist die je zelf uitvoert kost echte tijd; een die je delegeert kost dagen.
 
 ## Echt voorbeeld
 

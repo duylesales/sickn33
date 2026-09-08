@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Wat investeerders daadwerkelijk vragen wanneer ze 'gebouwd met AI' horen in een pitch",
   "description": "Als u zegt dat uw product 'gebouwd is met AI', roept dat een specifieke reeks vervolgvragen van investeerders op. Dit is wat ze daadwerkelijk vragen, en hoe u zich kunt voorbereiden.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/what-investors-ask-built-with-ai" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/what-investors-ask-built-with-ai" }
 }
 </script>
 
@@ -43,7 +43,7 @@ Deze vraag gaat eigenlijk over afhankelijkheid van de oprichter versus afhankeli
 
 Lotte Jansen, een oprichter in Utrecht, liep recht tegen deze muur op. Ze bouwde "GroeiMetric", een analysedashboard, met Cursor, en had een veelbelovend eerste pitchgesprek — totdat een investeerder haar vroeg de technische architectuur toe te lichten en aan te geven welke delen van het product echt "AI" waren versus aangepaste logica. Ze had geen kant-en-klaar antwoord, en het gesprek liep vast op een vraag waar ze nog nooit eerder over had hoeven nadenken.
 
-Dit is precies het gat dat LaunchStudio wil dichten voordat het een oprichter een investeringsronde kost. Gesteund door Manifera — vertrouwd door zakelijke klanten waaronder Vodafone, TNO en CFLW — werkt ons team, inclusief engineers gevestigd in Singapore, rechtstreeks met niet-technische oprichters om de architectuur duidelijk genoeg te documenteren om investeerdersonderzoek te doorstaan, niet alleen om een demo te doorstaan. U kunt [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/en/#contact) als u een pitch voor de boeg heeft en uw architectuurverhaal op orde wilt hebben voordat u de kamer binnenstapt. Voor de standaard waaraan onze engineers klantwerk houden, zie [de aanpak van Manifera](https://www.manifera.com/about-us/).
+Dit is precies het gat dat LaunchStudio wil dichten voordat het een oprichter een investeringsronde kost. Gesteund door Manifera — vertrouwd door zakelijke klanten waaronder Vodafone, TNO en CFLW — werkt ons team, inclusief engineers gevestigd in Singapore, rechtstreeks met niet-technische oprichters om de architectuur duidelijk genoeg te documenteren om investeerdersonderzoek te doorstaan, niet alleen om een demo te doorstaan. U kunt [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) als u een pitch voor de boeg heeft en uw architectuurverhaal op orde wilt hebben voordat u de kamer binnenstapt. Voor de standaard waaraan onze engineers klantwerk houden, zie [de aanpak van Manifera](https://www.manifera.com/about-us/).
 
 ## Echt voorbeeld
 

@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Een niet-uitputtende (maar eerlijke) lijst met AI-beveiligingsproblemen die we steeds tegenkomen",
   "description": "Dit zijn de AI-beveiligingsproblemen die het vaakst voorkomen in onze beoordelingen van door AI gegenereerde apps — geen hypothetische lijst, maar de terugkerende problemen die we week na week daadwerkelijk vinden.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-security-issues-honest-list" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-security-issues-honest-list" }
 }
 </script>
 
@@ -39,7 +39,7 @@ We gaan niet doen alsof deze lijst compleet is, en we gaan niet doen alsof elke 
 
 Deze zes zijn niet de enige problemen die bestaan, maar ze delen een patroon dat het noemen waard is: elk is onzichtbaar bij normaal gebruik. Een openbare opslagbucket ziet er identiek uit aan een privébucket totdat iemand probeert deze rechtstreeks te benaderen. Een niet-geverifieerde webhook verwerkt echte gebeurtenissen prima, totdat iemand een nepgebeurtenis stuurt. Precies daarom overleven ze zo lang in door AI gegenereerde producten — niets aan het dagelijkse gebruik onthult ze, en AI-codeertools optimaliseren voor "werkt dit zoals gedemonstreerd", niet "weerstaat dit iemand die actief probeert het te misbruiken".
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring, en onze technici, waaronder het team gebaseerd in Singapore, doorlopen dezelfde terugkerende checklist bij elke door AI gegenereerde codebase die voor beoordeling binnenkomt — niet omdat we verwachten alle zes elke keer te vinden, maar omdat we hebben geleerd niet verrast te zijn wanneer dat wel zo is. Als u een rechttoe-rechtaan controle tegen precies deze lijst wilt op uw eigen product, kunt u [ons uw prototypelink sturen voor gratis advies](https://launchstudio.eu/en/#contact) over welke van deze, indien van toepassing, op u van toepassing zijn. De bredere beveiligings- en engineeringnormen van Manifera staan beschreven op de pagina [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
+LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring, en onze technici, waaronder het team gebaseerd in Singapore, doorlopen dezelfde terugkerende checklist bij elke door AI gegenereerde codebase die voor beoordeling binnenkomt — niet omdat we verwachten alle zes elke keer te vinden, maar omdat we hebben geleerd niet verrast te zijn wanneer dat wel zo is. Als u een rechttoe-rechtaan controle tegen precies deze lijst wilt op uw eigen product, kunt u [ons uw prototypelink sturen voor gratis advies](https://launchstudio.eu/nl/#contact) over welke van deze, indien van toepassing, op u van toepassing zijn. De bredere beveiligings- en engineeringnormen van Manifera staan beschreven op de pagina [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 

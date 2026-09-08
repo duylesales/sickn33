@@ -31,9 +31,9 @@ De test is niet "heb ik de API-sleutel uit mijn code verwijderd" — het is het 
 
 ## Dit Gat Dichten Als Onderdeel Van Van Vibe Coding Naar Productie Gaan
 
-[LaunchStudio](https://launchstudio.eu/en/) voert een volledige geheimen- en credentialaudit uit — huidige codebase en volledige git-geschiedenis — als standaard eerste stap in elke Launch Ready-opdracht, waarbij blootgestelde credentials als onderdeel van het proces geroteerd worden, gesteund door Manifera's beveiligingsbewuste engineeringcultuur gevormd door klanten zoals TNO.
+[LaunchStudio](https://launchstudio.eu/nl/) voert een volledige geheimen- en credentialaudit uit — huidige codebase en volledige git-geschiedenis — als standaard eerste stap in elke Launch Ready-opdracht, waarbij blootgestelde credentials als onderdeel van het proces geroteerd worden, gesteund door Manifera's beveiligingsbewuste engineeringcultuur gevormd door klanten zoals TNO.
 
-[Laat je repositorygeschiedenis auditen voordat je spijt krijgt dat je niet hebt gecontroleerd](https://launchstudio.eu/en/#calculator) — dit is doorgaans het snelste gat om te dichten en een van de gaten met de hoogste gevolgen om te missen.
+[Laat je repositorygeschiedenis auditen voordat je spijt krijgt dat je niet hebt gecontroleerd](https://launchstudio.eu/nl/#calculator) — dit is doorgaans het snelste gat om te dichten en een van de gaten met de hoogste gevolgen om te missen.
 
 ## Echt voorbeeld
 

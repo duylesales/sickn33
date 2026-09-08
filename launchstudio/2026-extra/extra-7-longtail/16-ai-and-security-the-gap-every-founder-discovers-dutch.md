@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
   "@type": "Article",
   "headline": "AI en beveiliging: het hiaat dat elke oprichter te laat ontdekt",
   "description": "Iedereen praat over AI en beveiliging alsof de tools het automatisch afhandelen. Een technische blik op precies wat AI-codeertools ongevalideerd laten, en waarom inputvalidatie het hiaat is dat oprichters het laatst vinden.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-13",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-and-security-the-gap-every-founder-discovers-too-late" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-and-security-the-gap-every-founder-discovers-too-late" }
 }
 </script>
 
@@ -48,7 +48,7 @@ Belangrijk is dat dit niet alleen een betalingskwestie is, ook al is het prijsvo
 
 Als u een concrete manier wilt om dit in uw eigen door AI gebouwde product te herkennen zonder code te lezen, kijk dan naar elk formulier met geld, datums of hoeveelheden, en vraag: wordt de waarde die de uitkomst bepaalt (de in rekening gebrachte prijs, het gereserveerde tijdslot, de toegepaste korting) opnieuw berekend op de server, of wordt die simpelweg geaccepteerd van wat de browser stuurde? Als u het antwoord echt niet weet, is dat de eerlijke staat waarin de meeste door AI gebouwde prototypes verkeren vóór een toegewijde beoordeling — niet omdat de oprichter iets fout heeft gedaan, maar omdat deze specifieke vraag nooit deel uitmaakte van de oorspronkelijke prompt.
 
-De engineers van Manifera — hetzelfde team dat al meer dan elf jaar productiegerede software levert, onder andere vanuit een ontwikkelcentrum aan Pho Quang Street in Ho Chi Minh-stad — behandelen dit exacte validatiehiaat als een standaarditem bij elke beoordeling van een door AI gegenereerde codebase, precies omdat het zo consistent opduikt bij verschillende tools en verschillende producten. Als u wilt dat uw specifieke boekings-, afreken- of formuliergerichte stroom hierop wordt gecontroleerd, [spreek dan met een engineer die regelmatig door AI gegenereerde code beoordeelt](https://launchstudio.eu/en/#contact) in plaats van te gokken of uw app het hiaat heeft.
+De engineers van Manifera — hetzelfde team dat al meer dan elf jaar productiegerede software levert, onder andere vanuit een ontwikkelcentrum aan Pho Quang Street in Ho Chi Minh-stad — behandelen dit exacte validatiehiaat als een standaarditem bij elke beoordeling van een door AI gegenereerde codebase, precies omdat het zo consistent opduikt bij verschillende tools en verschillende producten. Als u wilt dat uw specifieke boekings-, afreken- of formuliergerichte stroom hierop wordt gecontroleerd, [spreek dan met een engineer die regelmatig door AI gegenereerde code beoordeelt](https://launchstudio.eu/nl/#contact) in plaats van te gokken of uw app het hiaat heeft.
 
 ## Echt voorbeeld
 

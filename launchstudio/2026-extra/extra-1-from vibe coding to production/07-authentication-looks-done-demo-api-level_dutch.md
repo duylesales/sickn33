@@ -33,9 +33,9 @@ De reden dat dit specifieke gat zo consistent terugkeert is geen onzorgvuldighei
 
 De echte test: gebruik een geldig maar onvoldoende bevoegd account, en probeer een beperkte resource rechtstreeks via de API te benaderen, de frontend volledig omzeilend. Een correct beveiligde API geeft een 403-respons (verboden) terug, en weigert het verzoek expliciet op basis van de daadwerkelijke permissies van de aanvrager. Als het in plaats daarvan de data teruggeeft, bestaat je authenticatie op de verkeerde plek — afgedwongen door de medewerking van de interface in plaats van de daadwerkelijke verificatie van het systeem.
 
-[LaunchStudio](https://launchstudio.eu/en/) verifieert authenticatie op precies dit niveau als kernonderdeel van elke Launch Ready-opdracht — rechtstreeks tegen de API testen, niet alleen bevestigen dat het inlogscherm werkt — gesteund door Manifera's cybersecuritygeïnformeerde engineeringpraktijken.
+[LaunchStudio](https://launchstudio.eu/nl/) verifieert authenticatie op precies dit niveau als kernonderdeel van elke Launch Ready-opdracht — rechtstreeks tegen de API testen, niet alleen bevestigen dat het inlogscherm werkt — gesteund door Manifera's cybersecuritygeïnformeerde engineeringpraktijken.
 
-[Laat je API-niveau-toegangscontrole daadwerkelijk testen](https://launchstudio.eu/en/#contact) — een inlogscherm dat werkt is niet dezelfde bewering als een API die beveiligd is.
+[Laat je API-niveau-toegangscontrole daadwerkelijk testen](https://launchstudio.eu/nl/#contact) — een inlogscherm dat werkt is niet dezelfde bewering als een API die beveiligd is.
 
 ## Echt voorbeeld
 

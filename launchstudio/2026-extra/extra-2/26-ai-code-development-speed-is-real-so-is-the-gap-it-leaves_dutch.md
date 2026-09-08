@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-26",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-code-development-speed-is-real-so-is-the-gap-it-leaves"
+    "@id": "https://launchstudio.eu/nl/blog/ai-code-development-speed-is-real-so-is-the-gap-it-leaves"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Een project dat begint met redelijk actuele afhankelijkheden kan verder verouder
 
 ## Wat een correcte audit van afhankelijkheden daadwerkelijk omvat
 
-Een grondige audit scant de volledige afhankelijkheidsboom van een project tegen bekende kwetsbaarheidsdatabases, identificeert welke specifieke pakketten daadwerkelijk, toepasselijk risico dragen, en werkt die specifiek bij zonder onnodig afhankelijkheden aan te raken die al veilig zijn. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort audit van afhankelijkheden uit als onderdeel van haar proces voor productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met het onderhouden van productie-afhankelijkheidshygiëne over Node.js, Python, en .NET projecten.
+Een grondige audit scant de volledige afhankelijkheidsboom van een project tegen bekende kwetsbaarheidsdatabases, identificeert welke specifieke pakketten daadwerkelijk, toepasselijk risico dragen, en werkt die specifiek bij zonder onnodig afhankelijkheden aan te raken die al veilig zijn. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort audit van afhankelijkheden uit als onderdeel van haar proces voor productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met het onderhouden van productie-afhankelijkheidshygiëne over Node.js, Python, en .NET projecten.
 
 Manifera's afhankelijkheidsaudits worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld vanuit het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

@@ -33,9 +33,9 @@ Een founder die zonder beveiligingsaudit heeft gelanceerd en geen incident heeft
 
 Het meest accurate mentale model voor een beveiligingsaudit is niet "een extra functie om toe te voegen als het budget het toelaat" — het staat dichter bij verzekering tegen een specifiek, begrensde-kans, onbegrensde-kosten gebeurtenis. Verzekering is de moeite waard om af te sluiten precies wanneer de potentiële kosten van de onverzekerde gebeurtenis groot zijn in verhouding tot de premie, wat precies de hierboven beschreven asymmetrie is.
 
-[LaunchStudio](https://launchstudio.eu/en/) voert precies dit soort beveiligingsaudit uit die deze asymmetrie proactief dicht — authenticatie, geheimen, en toegangscontrole testen vóór lancering in plaats van nadat een incident de vraag afdwingt — gesteund door Manifera's cybersecuritygeïnformeerde engineeringpraktijken en CEO Herre Roelevinks achtergrond op dit gebied.
+[LaunchStudio](https://launchstudio.eu/nl/) voert precies dit soort beveiligingsaudit uit die deze asymmetrie proactief dicht — authenticatie, geheimen, en toegangscontrole testen vóór lancering in plaats van nadat een incident de vraag afdwingt — gesteund door Manifera's cybersecuritygeïnformeerde engineeringpraktijken en CEO Herre Roelevinks achtergrond op dit gebied.
 
-[Dicht dit gat tegen de voorspelbare, begrensde kosten, niet de onvoorspelbare](https://launchstudio.eu/en/#calculator) — een audit is de goedkopere versie van dit gesprek, met een ruime marge.
+[Dicht dit gat tegen de voorspelbare, begrensde kosten, niet de onvoorspelbare](https://launchstudio.eu/nl/#calculator) — een audit is de goedkopere versie van dit gesprek, met een ruime marge.
 
 ## Echt voorbeeld
 

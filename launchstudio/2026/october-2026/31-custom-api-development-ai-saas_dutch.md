@@ -61,7 +61,7 @@ Voor een niet-technische oprichter is het schrijven van maatwerk API-routes buit
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Dit is exact waar [LaunchStudio](https://launchstudio.eu/en/) ingrijpt.
+Dit is exact waar [LaunchStudio](https://launchstudio.eu/nl/) ingrijpt.
 
 Aangedreven door de enterprise software-engineers van [Manifera](https://www.manifera.com/) — een team van meer dan 120 senior ontwikkelaars verspreid over **Amsterdam, Singapore en Ho Chi Minhstad** met ruim 11 jaar ervaring in [maatwerk software-ontwikkeling](https://www.manifera.com/services/custom-software-development/) voor multinationals zoals Vodafone en TNO — is LaunchStudio gespecialiseerd in het migreren van AI-startups van dure no-code workflows naar robuuste maatwerk-API's.
 
@@ -77,7 +77,7 @@ No-code automatisering is overigens niet de vijand: Zapier en Make.com blijven u
 - 45% van de met AI gegenereerde codebases bevat ernstige lekken — ongevalideerde en openstaande API-routes zijn een groot risico.
 - LaunchStudio levert de senior engineering om uw startup binnen 1 tot 3 weken veilig te migreren van Zapier naar enterprise maatwerk-API's.
 
-[Stop met het betalen van de Zapier-belasting. Bouw maatwerk API's met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Stop met het betalen van de Zapier-belasting. Bouw maatwerk API's met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

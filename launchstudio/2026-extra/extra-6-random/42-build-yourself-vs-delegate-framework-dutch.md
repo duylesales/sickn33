@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Een praktisch raamwerk om te bepalen wat u zelf moet bouwen en wat u moet uitbesteden",
   "description": "Een beslisraamwerk voor technische oprichters die met AI een prototype bouwen en vervolgens, feature voor feature, moeten bepalen wat het waard is om zelf te bouwen en wat al is opgelost.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/build-yourself-vs-delegate-framework" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/build-yourself-vs-delegate-framework" }
 }
 </script>
 
@@ -54,7 +54,7 @@ Voer diezelfde beslissing door de matrix: authenticatie is een opgelost probleem
 
 Het raamwerk betaalt zich alleen uit als u het gebruikt vóórdat u code schrijft, niet als een post-mortem. Vraag uzelf, voordat u aan een niet-triviale feature begint: heeft dit een naam en een handvol gevestigde aanbieders die het al oplossen? Zo ja, en het is niet de reden waarom klanten voor u kiezen, besteed het dan uit en besteed de gewonnen tijd aan wat het product daadwerkelijk onderscheidt.
 
-Ons team, werkend vanuit Singapore samen met collega's in Amsterdam en Ho Chi Minh-stad, beoordeelt precies dit soort bouwen-of-uitbesteden-beslissingen wanneer we binnenkomende prototypes beoordelen — het is vaak de enkele grootste hefboom om het pad naar lancering van een oprichter te verkorten. LaunchStudio brengt Manifera's enterprise-grade engineering, dezelfde standaard die wordt gebruikt in Manifera's [praktijk voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/), naar precies dit soort beslissingen. Wilt u een tweede mening over waar uw eigen build zich in deze matrix bevindt, dan kunt u [zien wat een review met vaste scope zou kosten](https://launchstudio.eu/en/#calculator).
+Ons team, werkend vanuit Singapore samen met collega's in Amsterdam en Ho Chi Minh-stad, beoordeelt precies dit soort bouwen-of-uitbesteden-beslissingen wanneer we binnenkomende prototypes beoordelen — het is vaak de enkele grootste hefboom om het pad naar lancering van een oprichter te verkorten. LaunchStudio brengt Manifera's enterprise-grade engineering, dezelfde standaard die wordt gebruikt in Manifera's [praktijk voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/), naar precies dit soort beslissingen. Wilt u een tweede mening over waar uw eigen build zich in deze matrix bevindt, dan kunt u [zien wat een review met vaste scope zou kosten](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

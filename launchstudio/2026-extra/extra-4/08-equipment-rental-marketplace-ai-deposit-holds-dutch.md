@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/equipment-rental-marketplace-ai-deposit-holds"
+    "@id": "https://launchstudio.eu/nl/blog/equipment-rental-marketplace-ai-deposit-holds"
   }
 }
 </script>
@@ -47,7 +47,7 @@ In de meeste met AI gegenereerde marktplaats-apps is de borgvrijgavestap geïmpl
 
 Een borgstroom die het echte gebruik overleeft heeft vier dingen nodig die samenwerken: een autorisatiestap die een echte inhouding (geen volledige afschrijving) op de kaart plaatst, een retour-bevestigingsstap met een gedefinieerde eigenaar van die actie, een automatische time-out die de inhouding op de een of andere manier afwikkelt, zelfs als een mens nooit ingrijpt, en een webhook-listener die Stripe's daadwerkelijke status synchroniseert met uw databasestatus – omdat Stripe een inhouding volgens zijn eigen schema kan laten verlopen, ongeacht wat uw app denkt dat er is gebeurd. Ons team, werkend vanuit LaunchStudio's hub in Singapore, herbouwt dit patroon regelmatig voor marktplaats-oprichters die de vraag valideren met een prototype en nu echte borgsommen aannemen van echte klanten.
 
-Als u wilt zien wat dit soort herstelling doorgaans kost voordat u zich aan iets verbindt, geeft [onze prijscalculator](https://launchstudio.eu/en/#calculator) een schatting met vaste omvang in een paar minuten. Voor een diepere blik op hoe Manifera marktplaats- en fintech-gerelateerde projecten op enterprise-schaal benadert, bekijk ons [maatwerk softwareontwikkelingswerk](https://www.manifera.com/services/custom-software-development/).
+Als u wilt zien wat dit soort herstelling doorgaans kost voordat u zich aan iets verbindt, geeft [onze prijscalculator](https://launchstudio.eu/nl/#calculator) een schatting met vaste omvang in een paar minuten. Voor een diepere blik op hoe Manifera marktplaats- en fintech-gerelateerde projecten op enterprise-schaal benadert, bekijk ons [maatwerk softwareontwikkelingswerk](https://www.manifera.com/services/custom-software-development/).
 
 ## Gedeeltelijke vastlegging is een eenrichtingsdeur — behandel het als zodanig
 

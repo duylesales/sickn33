@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-11",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/hidden-tax-free-ai-tools-founders"
+    "@id": "https://launchstudio.eu/nl/blog/hidden-tax-free-ai-tools-founders"
   }
 }
 </script>
@@ -61,11 +61,11 @@ De eerlijke waarheid is als volgt: AI-tools maken prototypen gratis of nagenoeg 
 
 ## Budgetteer Correct Vanaf het Begin
 
-In plaats van uw AI-toolabonnement te zien als uw totale softwarebudget, moet u het beschouwen als uw prototype-budget — doorgaans €0 tot €50 per maand — en een apart, realistisch budget reserveren voor de productielanceringsfase. [LaunchStudio's pakketten](https://launchstudio.eu/en/#packages) beginnen bij €800 voor exact deze stap: een fractie van wat een traditioneel softwarebureau (€20.000 tot €500.000+) zou rekenen om uw app vanaf nul op te bouwen.
+In plaats van uw AI-toolabonnement te zien als uw totale softwarebudget, moet u het beschouwen als uw prototype-budget — doorgaans €0 tot €50 per maand — en een apart, realistisch budget reserveren voor de productielanceringsfase. [LaunchStudio's pakketten](https://launchstudio.eu/nl/#packages) beginnen bij €800 voor exact deze stap: een fractie van wat een traditioneel softwarebureau (€20.000 tot €500.000+) zou rekenen om uw app vanaf nul op te bouwen.
 
 Anders dan freelancers die door AI gegenereerde code vaak niet begrijpen, wordt LaunchStudio ondersteund door Manifera — vertrouwd door partijen als Vodafone, TNO en CFLW. Dit betekent dat de engineers die uw Lovable- of Bolt-prototype overnemen zowel vloeiend zijn in AI-tools als beschikken over de diepgaande enterprise-ervaring om het in één keer goed te doen.
 
-[Vraag een vaste offerte aan voor uw prototype](https://launchstudio.eu/en/#calculator) vóórdat u de verborgen kosten op de harde manier ontdekt.
+[Vraag een vaste offerte aan voor uw prototype](https://launchstudio.eu/nl/#calculator) vóórdat u de verborgen kosten op de harde manier ontdekt.
 
 ## Een Raamwerk om Uw Eigen Herbouw-Belasting te Schatten
 
@@ -134,7 +134,7 @@ Hogere abonnementsvormen verhogen slechts uw generatie- en promptlimieten, maar 
 Ja, zeer regelmatig. Veel oprichters prototypen achtereenvolgens in Lovable, Bolt, Cursor en v0. Het engineeringteam van Manifera, gevestigd in Amsterdam, Singapore en Ho Chi Minh-stad, heeft ervaring met de output-patronen van alle toonaangevende AI-codetools en kan een gemengd prototype consolideren tot één samenhangende productie-architectuur.
 
 ### Wat is een realistisch totaalbudget om van een gratis AI-prototype naar betalende klanten te gaan?
-De meeste LaunchStudio-trajecten vallen tussen €800 en €7.500 afhankelijk van de scope, wat circa 20% is van wat een traditioneel softwarebureau zou factureren. Gebruik de [prijscalculator](https://launchstudio.eu/en/#calculator) voor een realistische inschatting op basis van uw gewenste functionaliteiten.
+De meeste LaunchStudio-trajecten vallen tussen €800 en €7.500 afhankelijk van de scope, wat circa 20% is van wat een traditioneel softwarebureau zou factureren. Gebruik de [prijscalculator](https://launchstudio.eu/nl/#calculator) voor een realistische inschatting op basis van uw gewenste functionaliteiten.
 
 <script type="application/ld+json">
 {

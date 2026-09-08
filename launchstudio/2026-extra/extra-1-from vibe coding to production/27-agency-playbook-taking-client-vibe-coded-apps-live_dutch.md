@@ -33,9 +33,9 @@ Klanten rapporteren specifiek en herhaaldelijk frustratie met freelancers en age
 
 Voor agencies die deze capaciteit willen zonder diepe interne expertise op te bouwen in AI-gegenereerde-codebase-patronen specifiek, biedt white-label-partnerschap het audit- en verhardingswerk onder de eigen branding en klantrelatie van de agency, waardoor de agency zich kan richten op klantrelatiebeheer en bredere projectlevering terwijl de technische specifieken afgehandeld worden door een partner met toegewijde diepgang in precies deze niche.
 
-[LaunchStudio](https://launchstudio.eu/en/) werkt met agencies en freelancers als een white-label-productiepartner specifiek voor AI-gegenereerde klantprototypes, en levert het audit- en verhardingswerk onder jouw branding, gesteund door Manifera's engineeringteam en hun specifieke ervaring over 160+ opgeleverde projecten die precies dit patroon overspannen.
+[LaunchStudio](https://launchstudio.eu/nl/) werkt met agencies en freelancers als een white-label-productiepartner specifiek voor AI-gegenereerde klantprototypes, en levert het audit- en verhardingswerk onder jouw branding, gesteund door Manifera's engineeringteam en hun specifieke ervaring over 160+ opgeleverde projecten die precies dit patroon overspannen.
 
-[Verken een white-label-partnerschap voor jouw AI-native klanten](https://launchstudio.eu/en/#contact) — "Jouw branding, onze engineering."
+[Verken een white-label-partnerschap voor jouw AI-native klanten](https://launchstudio.eu/nl/#contact) — "Jouw branding, onze engineering."
 
 ## Echt voorbeeld
 

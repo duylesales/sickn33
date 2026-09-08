@@ -63,7 +63,7 @@ De enige betrouwbare test is een doelgerichte aanvalstest: open de DevTools van 
 
 Het signaleren van deze structurele tekortkomingen betekent geenszins dat uw AI-prototype waardeloos is. De frontend en het datamodel zijn waardevolle fundamenten. Wat u nodig heeft is gerichte **backend-hardening** — softwarewerk dat enkele werkdagen vergt, in plaats van de maanden die een volledige herbouw zou kosten.
 
-Bij [LaunchStudio](https://launchstudio.eu/en/) zijn we gespecialiseerd in het beveiligen en productieklaar schalen van met AI gebouwde Supabase-backends. Gesteund door [Manifera](https://www.manifera.com/) met ruim 11 jaar enterprise software-ervaring, opereren onze engineeringteams vanuit Amsterdam, Ho Chi Minhstad en onze regionale hub aan 100 Tras Street in Singapore.
+Bij [LaunchStudio](https://launchstudio.eu/nl/) zijn we gespecialiseerd in het beveiligen en productieklaar schalen van met AI gebouwde Supabase-backends. Gesteund door [Manifera](https://www.manifera.com/) met ruim 11 jaar enterprise software-ervaring, opereren onze engineeringteams vanuit Amsterdam, Ho Chi Minhstad en onze regionale hub aan 100 Tras Street in Singapore.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -77,7 +77,7 @@ Wij herschrijven uw frontend niet. Wij nemen uw bestaande Supabase-project over,
 - Het hardcoden van de `service_role` sleutel aan de client-zijde heft alle databasetoegangscontroles direct op.
 - LaunchStudio beveiligt en schaalt uw Supabase-backend binnen enkele dagen zonder dat uw bestaande gebruikersinterface herbouwd hoeft te worden.
 
-[Spreek met een ervaren software-engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Spreek met een ervaren software-engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

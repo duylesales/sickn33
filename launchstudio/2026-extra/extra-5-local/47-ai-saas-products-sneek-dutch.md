@@ -13,10 +13,10 @@ Doelgroep: SaaS Scale-Up Oprichter
   "@type": "Article",
   "headline": "Wat echte AI SaaS-producten scheidt van indrukwekkende demo's in Sneek",
   "description": "Een blik op het gat tussen AI SaaS-producten die goed demoën en producten die standhouden in dagelijks gebruik, gebaseerd op een echt voorbeeld van een oprichter in Sneek.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-saas-products-sneek" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-saas-products-sneek" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Wat deze categorie problemen bijzonder hardnekkig maakt is dat de code zelf vaak
 
 Het dichten van dit gat is waar LaunchStudio zich op richt voor SaaS-oprichters die overstappen van een gevalideerde demo naar een product waar echte klanten dagelijks op vertrouwen, ongeacht of dat product boekingen draait voor een enkele jachthaven of schema's coördineert over een dozijn ervan. Onze engineers hebben meer dan 160 projecten opgeleverd voor enterprise-klanten, en onderdeel van elke productiebeoordeling is specifiek het testen van de onzichtbare onderdelen van een SaaS-product — geplande taken, webhooks, achtergrondprocessen — onder omstandigheden die dichter bij echt gebruik liggen dan een demo ooit simuleert. Veel van dit diepe engineeringwerk draait vanuit ons kantoor in Amsterdam aan de Herengracht, in nauwe coördinatie met oprichters in Friesland en de rest van Nederland.
 
-We raken de interface die u met uw favoriete AI-tool gebouwd heeft niet aan — het herstel vindt plaats in de infrastructuur en logicalaag eronder. Voor een overzicht van wat er op elk niveau is inbegrepen, zie [onze pakketten](https://launchstudio.eu/en/#packages), en voor voorbeelden van productiewaardige systemen die Manifera voor grotere klanten heeft opgeleverd, toont ons [portfolio](https://www.manifera.com/portfolio/) dezelfde norm toegepast op schaal.
+We raken de interface die u met uw favoriete AI-tool gebouwd heeft niet aan — het herstel vindt plaats in de infrastructuur en logicalaag eronder. Voor een overzicht van wat er op elk niveau is inbegrepen, zie [onze pakketten](https://launchstudio.eu/nl/#packages), en voor voorbeelden van productiewaardige systemen die Manifera voor grotere klanten heeft opgeleverd, toont ons [portfolio](https://www.manifera.com/portfolio/) dezelfde norm toegepast op schaal.
 
 ## Een vraag die het waard is om te stellen voordat u aan een tweede jachthaven verkoopt
 

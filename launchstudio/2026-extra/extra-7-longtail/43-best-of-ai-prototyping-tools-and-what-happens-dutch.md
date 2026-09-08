@@ -13,10 +13,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Best of AI-prototypingtools, en wat er gebeurt nadat u er één kiest",
   "description": "Een checklist voor wat oprichters daadwerkelijk nodig hebben na het kiezen uit een best of AI-prototypingtools-overzicht — de productiestappen die bijna geen enkele van die lijsten behandelt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-10",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/best-of-ai-prototyping-tools-and-what-happens" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/best-of-ai-prototyping-tools-and-what-happens" }
 }
 </script>
 

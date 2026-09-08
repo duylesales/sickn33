@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-and-software-development-where-the-two-diverge"
+    "@id": "https://launchstudio.eu/nl/blog/ai-and-software-development-where-the-two-diverge"
   }
 }
 </script>
@@ -66,11 +66,11 @@ De meeste oprichters hebben geen juridische achtergrond nodig om een redelijke e
 
 ## Het sluiten van de kloof tussen gegenereerde code en oprechte ontwikkeling
 
-Een correcte beoordeling identificeert welke velden in uw datamodel daadwerkelijk kwalificeren als gevoelig, past toepasselijke versleuteling of toegangsbeperking toe op die velden specifiek, en laat de rest van uw schema ongeraakt. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort gegevensgevoeligheidsbeoordeling uit als onderdeel van haar proces voor productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met softwareontwikkeling over gereguleerde en nalevingsgevoelige industrieën.
+Een correcte beoordeling identificeert welke velden in uw datamodel daadwerkelijk kwalificeren als gevoelig, past toepasselijke versleuteling of toegangsbeperking toe op die velden specifiek, en laat de rest van uw schema ongeraakt. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort gegevensgevoeligheidsbeoordeling uit als onderdeel van haar proces voor productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met softwareontwikkeling over gereguleerde en nalevingsgevoelige industrieën.
 
 Manifera's beoordelingen voor gegevensafhandeling worden geleid vanuit haar hoofdkantoor in Amsterdam aan de Herengracht 420, met implementatie uitgevoerd door haar engineeringteam in het ontwikkelingscentrum aan de Pho Quang-straat in Ho Chi Minh-stad.
 
-[Boek een gratis introductiegesprek van 15 minuten](https://launchstudio.eu/en/#contact).
+[Boek een gratis introductiegesprek van 15 minuten](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

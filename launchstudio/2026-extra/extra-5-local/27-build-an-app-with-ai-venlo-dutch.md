@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Een app bouwen met AI in Venlo: Wat grensoverschrijdende oprichters moeten weten",
   "description": "Venlose oprichters die een app bouwen met AI bedienen vaak klanten aan beide kanten van de Duitse grens. Dit is wat dat toevoegt aan de lijst voor productiegereedheid.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/27-build-an-app-with-ai-venlo" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/27-build-an-app-with-ai-venlo" }
 }
 </script>
 
@@ -36,7 +36,7 @@ LaunchStudio brengt Manifera's enterprise-grade engineering, ontwikkeld over mee
 
 ## De grensoverschrijdende details goed krijgen vóór de lancering
 
-Niets hiervan betekent dat u AI-tools moet vermijden voor grensoverschrijdende producten — het betekent dat u de grensoverschrijdende logica moet behandelen als een specifiek, afzonderlijk punt op uw lanceringschecklist in plaats van aan te nemen dat uw AI-tool dit stilzwijgend heeft afgehandeld. Krijg een tweede mening van iemand die heeft opgeleverd voor Vodafone en TNO voordat u er op de harde manier achter komt dat uw btw-berekening drie maanden lang verkeerd was voor Duitse transacties. LaunchStudio kan uw specifieke inrichting beoordelen en u precies vertellen wat er ontbreekt via het [project-intakeproces](https://launchstudio.eu/en/#calculator).
+Niets hiervan betekent dat u AI-tools moet vermijden voor grensoverschrijdende producten — het betekent dat u de grensoverschrijdende logica moet behandelen als een specifiek, afzonderlijk punt op uw lanceringschecklist in plaats van aan te nemen dat uw AI-tool dit stilzwijgend heeft afgehandeld. Krijg een tweede mening van iemand die heeft opgeleverd voor Vodafone en TNO voordat u er op de harde manier achter komt dat uw btw-berekening drie maanden lang verkeerd was voor Duitse transacties. LaunchStudio kan uw specifieke inrichting beoordelen en u precies vertellen wat er ontbreekt via het [project-intakeproces](https://launchstudio.eu/nl/#calculator).
 
 ## Wat grensoverschrijdende ondersteuning vereist voorbij de kassa
 

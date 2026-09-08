@@ -66,7 +66,7 @@ Elk van deze problemen vergt slechts enkele uren gerichte senior engineering. Wo
 
 Als solo-oprichter kost het zelfstandig doorlopen van deze 14 stappen u vaak 3 tot 6 weken aan frustrerend vallen en opstaan. Huurt u een traditioneel softwarebureau in, dan offreren zij € 20.000+ en eisen ze dat uw app vanaf nul opnieuw wordt opgebouwd.
 
-[LaunchStudio](https://launchstudio.eu/en/) biedt het slimme alternatief. Gesteund door de 11+ jaar ervaring van [Manifera](https://www.manifera.com/) vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam** en ons engineeringcentrum in **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), voeren onze teams deze 14 stappen professioneel uit op uw bestaande AI-codebase — voor circa 20% van de traditionele bureaukosten.
+[LaunchStudio](https://launchstudio.eu/nl/) biedt het slimme alternatief. Gesteund door de 11+ jaar ervaring van [Manifera](https://www.manifera.com/) vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam** en ons engineeringcentrum in **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), voeren onze teams deze 14 stappen professioneel uit op uw bestaande AI-codebase — voor circa 20% van de traditionele bureaukosten.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -80,7 +80,7 @@ Wij herontwerpen uw app niet. Wij bouwen simpelweg de betrouwbare motor die uw p
 - 45% van de AI-codebases bevat direct exploiteerbare lekken die vóór de eerste betalende klant gedicht moeten worden.
 - LaunchStudio realiseert dit complete 14-stappen stappenplan binnen 1 tot 3 weken met behoud van uw frontend.
 
-[Bereken direct wat uw project kost via onze handige online prijscalculator](https://launchstudio.eu/en/#calculator).
+[Bereken direct wat uw project kost via onze handige online prijscalculator](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

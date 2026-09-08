@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "De privacyproblemen bij AI-apps waar de AVG daadwerkelijk om geeft",
   "description": "Niet elk privacyprobleem in een door AI gebouwde app weegt even zwaar onder de AVG. Dit is een checklist van de privacyproblemen bij AI-apps die daadwerkelijk juridische blootstelling creëren voor EU-oprichters.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-14",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/the-privacy-issues-with-ai-apps-that-gdpr" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/the-privacy-issues-with-ai-apps-that-gdpr" }
 }
 </script>
 
@@ -62,7 +62,7 @@ Een cookiebanner die zegt "we gebruiken alleen essentiële cookies" terwijl een 
 
 ## De checklist omzetten in fixes
 
-Het grootste deel van deze checklist vertaalt zich naar concreet, afgebakend engineeringwerk: het toevoegen van data-export- en verwijderfuncties, het configureren van EU-regio hosting, het toevoegen van logging en basale detectie van datalekken, en het auditen van welke externe diensten daadwerkelijk gebruikersdata verwerken. LaunchStudio, ondersteund door de meer dan 11 jaar ervaring van Manifera in enterprise softwarelevering voor klanten waaronder Vodafone en TNO vanuit haar Europese basis aan de Herengracht 420 in Amsterdam, behandelt dit soort gegevensbeschermingsbeoordeling als standaard onderdeel van productieverharding in plaats van een aparte specialistische dienst — het is onderdeel van wat "lanceerklaar" betekent voor een EU-gerichte app. U kunt de vaste-prijsomvang voor dit soort werk bekijken in [de pakketten van LaunchStudio](https://launchstudio.eu/en/#packages), en de bredere engineeringaanpak van Manifera bekijken op [haar pagina over maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
+Het grootste deel van deze checklist vertaalt zich naar concreet, afgebakend engineeringwerk: het toevoegen van data-export- en verwijderfuncties, het configureren van EU-regio hosting, het toevoegen van logging en basale detectie van datalekken, en het auditen van welke externe diensten daadwerkelijk gebruikersdata verwerken. LaunchStudio, ondersteund door de meer dan 11 jaar ervaring van Manifera in enterprise softwarelevering voor klanten waaronder Vodafone en TNO vanuit haar Europese basis aan de Herengracht 420 in Amsterdam, behandelt dit soort gegevensbeschermingsbeoordeling als standaard onderdeel van productieverharding in plaats van een aparte specialistische dienst — het is onderdeel van wat "lanceerklaar" betekent voor een EU-gerichte app. U kunt de vaste-prijsomvang voor dit soort werk bekijken in [de pakketten van LaunchStudio](https://launchstudio.eu/nl/#packages), en de bredere engineeringaanpak van Manifera bekijken op [haar pagina over maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Waarom deze checklist meer telt dan een generiek beleidsdocument
 

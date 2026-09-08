@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-does-production-ready-mean-ai-application"
+    "@id": "https://launchstudio.eu/nl/blog/what-does-production-ready-mean-ai-application"
   }
 }
 </script>
@@ -63,9 +63,9 @@ Een door een AI-tool gegenereerd prototype voldoet standaard aan vrijwel geen va
 
 ## Productierijpheid Concreet Verifiëren
 
-[LaunchStudio](https://launchstudio.eu/en/) toetst en bouwt projecten exact langs deze vier pijlers, geworteld in Manifera's 11+ jaar ervaring in het leveren van productiesystemen voor enterprise-opdrachtgevers.
+[LaunchStudio](https://launchstudio.eu/nl/) toetst en bouwt projecten exact langs deze vier pijlers, geworteld in Manifera's 11+ jaar ervaring in het leveren van productiesystemen voor enterprise-opdrachtgevers.
 
-[Laat uw AI-prototype beoordelen op productierijpheid](https://launchstudio.eu/en/#contact).
+[Laat uw AI-prototype beoordelen op productierijpheid](https://launchstudio.eu/nl/#contact).
 
 ## Concrete Signalen: Hoe U Elke Pijler Daadwerkelijk Meet
 

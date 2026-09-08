@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-12-10",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/status-page-ai-app-deployment"
+    "@id": "https://launchstudio.eu/nl/blog/status-page-ai-app-deployment"
   }
 }
 </script>
@@ -66,13 +66,13 @@ Een openbare statuspagina is niet zomaar een technische formaliteit — het is e
 
 Oprichters nemen vaak ten onrechte aan dat monitoring iets is voor "later, als we meer gebruikers hebben." Die redenering is fundamenteel fout. Hoe eerder een betrouwbaarheidsprobleem zich voordoet, hoe groter de relatieve schade is voor uw klantenbestand: het verliezen van 2 van uw eerste 10 klanten door een onopgemerkte storing betekent direct een verlies (*churn*) van 20%. Dezelfde storing bij 500 klanten valt statistisch nauwelijks op.
 
-Dit is een van de cruciale last-mile gaten die [LaunchStudio](https://launchstudio.eu/en/) standaard dicht bij elke deployment. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring in het inrichten van enterprise-monitoring voor grote organisaties — en diezelfde monitoringdiscipline zit standaard ingebouwd in elk lanceringspakket voor AI-native oprichters.
+Dit is een van de cruciale last-mile gaten die [LaunchStudio](https://launchstudio.eu/nl/) standaard dicht bij elke deployment. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring in het inrichten van enterprise-monitoring voor grote organisaties — en diezelfde monitoringdiscipline zit standaard ingebouwd in elk lanceringspakket voor AI-native oprichters.
 
 ## Dit Inrichten Zonder DevOps-Achtergrond
 
 U heeft geen fulltime DevOps-engineer nodig om professionele monitoring te hebben. De meeste moderne tools zijn ontworpen voor compacte teams: binnen enkele minuten koppelt u uw uptime-checks, foutregistratie en statuspagina. Het echte engineeringwerk zit in het bepalen wát u moet monitoren en hoe u reageert wanneer alerts afgaan — precies het type architectuurbeslissing dat een fragiel AI-prototype scheidt van een productierijpe applicatie.
 
-[Bespreek uw deployment-architectuur met een engineer](https://launchstudio.eu/en/#contact) — vóórdat uw eerste storing leidt tot uw eerste vertrekkende klant.
+[Bespreek uw deployment-architectuur met een engineer](https://launchstudio.eu/nl/#contact) — vóórdat uw eerste storing leidt tot uw eerste vertrekkende klant.
 
 ## Realistische Uptime-Doelen Stellen Vóórdat U Ze Nodig Heeft
 

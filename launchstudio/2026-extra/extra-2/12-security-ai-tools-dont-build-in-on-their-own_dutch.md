@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/security-ai-tools-dont-build-in-on-their-own"
+    "@id": "https://launchstudio.eu/nl/blog/security-ai-tools-dont-build-in-on-their-own"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Dit patroon stapelt zich over de tijd op: het primaire aanmeldingsformulier word
 
 ## Wat een oprechte herstelling vereist
 
-Het sluiten van deze kloof betekent het auditeren van elk enkel pad dat een opgeslagen wachtwoord aanmaakt of bijwerkt – en niet alleen het hoofdpad – en bevestigen dat elk pad dezelfde correcte hashing conequent toepast, en vervolgens eventuele bestaande in platte tekst opgeslagen waarden veilig migreert. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort authenticatie-audit uit over het gehele pad, ondersteund door Manifera's 11+ jaar op beveiliging gefocuste engineering-ervaring. Dit omvat werk gerelateerd aan cybersecurity-onderzoek via CEO Herre Roelevink's eerdere achtergrond bij CFLW Cyber Strategies.
+Het sluiten van deze kloof betekent het auditeren van elk enkel pad dat een opgeslagen wachtwoord aanmaakt of bijwerkt – en niet alleen het hoofdpad – en bevestigen dat elk pad dezelfde correcte hashing conequent toepast, en vervolgens eventuele bestaande in platte tekst opgeslagen waarden veilig migreert. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort authenticatie-audit uit over het gehele pad, ondersteund door Manifera's 11+ jaar op beveiliging gefocuste engineering-ervaring. Dit omvat werk gerelateerd aan cybersecurity-onderzoek via CEO Herre Roelevink's eerdere achtergrond bij CFLW Cyber Strategies.
 
 Manifera's authenticatie-audits worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantrelaties beheerd vanuit het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Een kader om elk wachtwoord-afhandelingspad zelf te auditeren
 

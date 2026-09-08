@@ -33,9 +33,9 @@ Voorbij basale typecontrole (is dit een getal, is dit een string), omvat correct
 
 Moderne frameworks bieden echte, substantiële bescherming standaard tegen verschillende klassieke kwetsbaarheidscategorieën, en het is redelijk op die baselinebescherming te vertrouwen. Wat frameworks niet automatisch bieden is validatie specifiek voor de daadwerkelijke bedrijfsregels van jouw applicatie — een geldig-ogende maar onzinnige waarde (een negatieve hoeveelheid, een afspraakdatum in het verleden) passeert generieke framework-niveau-controles terwijl het nog steeds ongeldige invoer vertegenwoordigt voor jouw specifieke product, wat validatielogica vereist specifiek voor wat jouw applicatie daadwerkelijk waar moet hebben.
 
-[LaunchStudio](https://launchstudio.eu/en/) implementeert uitgebreide invoervalidatie — zowel generieke beveiligingsrelevante controles als bedrijfsregel-specifieke validatie — als standaardonderdeel van productieverharding, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten die echte, onvoorspelbare gebruikersinvoer afhandelen.
+[LaunchStudio](https://launchstudio.eu/nl/) implementeert uitgebreide invoervalidatie — zowel generieke beveiligingsrelevante controles als bedrijfsregel-specifieke validatie — als standaardonderdeel van productieverharding, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten die echte, onvoorspelbare gebruikersinvoer afhandelen.
 
-[Laat jouw invoervalidatie controleren tegen zowel beveiligings- als bedrijfslogicavereisten](https://launchstudio.eu/en/#calculator) — de laag die alles erbovenop gebouwd beschermt.
+[Laat jouw invoervalidatie controleren tegen zowel beveiligings- als bedrijfslogicavereisten](https://launchstudio.eu/nl/#calculator) — de laag die alles erbovenop gebouwd beschermt.
 
 ## Echt voorbeeld
 

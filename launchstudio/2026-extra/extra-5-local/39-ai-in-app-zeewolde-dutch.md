@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI in app: Wat Zeewolde oprichters goed doen en wat ze missen",
   "description": "Het toevoegen van AI-functies in een app is eenvoudig om mee te beginnen en eenvoudig om verkeerd te doen. Wat Zeewolde oprichters doorgaans goed aanpakken, en wat ze doorgaans over het hoofd zien, voordat echte gebruikers verschijnen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-in-app-zeewolde" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-in-app-zeewolde" }
 }
 </script>
 
@@ -40,7 +40,7 @@ Ook regelmatig gemist: bescherming tegen prompt-injectie. Als uw AI in app-funct
 
 Niets hiervan betekent dat u uw AI-functie moet slopen en opnieuw moet beginnen — de onderdelen die Zeewolde oprichters goed doen, de daadwerkelijke gebruikerservaring, hoeven doorgaans helemaal niet te veranderen. Wat herstel nodig heeft zit eronder: gebruikslimieten en rate limiting per gebruiker, schoning van invoer voordat prompts worden opgebouwd, deugdelijke foutafhandeling en terugval-toestanden, en kostenmonitoring zodat u nooit verrast wordt door een rekening.
 
-LaunchStudio handelt exact dit type herstel af, zonder de frontend van uw app of het gebruikersgerichte gedrag van de AI-functie aan te raken. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, wier team een toegewijd ontwikkelcentrum in Ho Chi Minh City omvat dat werkt naast ons kantoor voor klanten in Amsterdam aan de Herengracht 420. Als u wilt zien of uw eigen AI in app-functie deze gaten heeft, [praat met een engineer](https://launchstudio.eu/en/#contact) die exact dit patroon regelmatig beoordeelt. Voor meer informatie over Manifera's bredere capaciteiten in software-engineering, zie [Manifera's custom software development pagina](https://www.manifera.com/services/custom-software-development/).
+LaunchStudio handelt exact dit type herstel af, zonder de frontend van uw app of het gebruikersgerichte gedrag van de AI-functie aan te raken. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, wier team een toegewijd ontwikkelcentrum in Ho Chi Minh City omvat dat werkt naast ons kantoor voor klanten in Amsterdam aan de Herengracht 420. Als u wilt zien of uw eigen AI in app-functie deze gaten heeft, [praat met een engineer](https://launchstudio.eu/nl/#contact) die exact dit patroon regelmatig beoordeelt. Voor meer informatie over Manifera's bredere capaciteiten in software-engineering, zie [Manifera's custom software development pagina](https://www.manifera.com/services/custom-software-development/).
 
 ## Een praktisch kader voor het instellen van AI-gebruikslimieten vóór de lancering
 

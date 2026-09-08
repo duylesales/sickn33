@@ -13,10 +13,10 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "@type": "Article",
   "headline": "Een app lanceren met AI: de laatste-mijl-checklist die oprichters missen",
   "description": "Een stapsgewijze gids voor bureaus en freelancers wier klanten arriveren met een reeds gebouwde app met AI, met de productiekloven die het vaakst worden gemist.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-12",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/launching-an-app-with-ai-the-last-mile" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/launching-an-app-with-ai-the-last-mile" }
 }
 </script>
 

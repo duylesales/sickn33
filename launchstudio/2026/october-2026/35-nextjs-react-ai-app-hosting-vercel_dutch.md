@@ -51,13 +51,13 @@ Dit is geen denkbeeldig gevaar — **45% van de met AI gebouwde codebases bevat 
 
 U bent een ondernemer, geen DevOps-specialist. U moet uw tijd besteden aan het werven van betalende klanten en marketing, en niet om middernacht worstelen met rode build-logs in Vercel.
 
-Dit is exact waar [LaunchStudio](https://launchstudio.eu/en/) uw lancering versnelt.
+Dit is exact waar [LaunchStudio](https://launchstudio.eu/nl/) uw lancering versnelt.
 
 Gesteund door het senior softwareteam van [Manifera](https://www.manifera.com/) — met meer dan 11 jaar enterprise software-ervaring, ruim 120 senior engineers en 160+ succesvol opgeleverde projecten opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons ontwikkelcentrum aan **Pho Quang Street in Ho Chi Minhstad, Vietnam** — is LaunchStudio gespecialiseerd in het bevrijden van AI-prototypes uit de sandbox en het veilig deployen naar enterprise productieomgevingen.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Met onze deployment-pakketten overhandigt u simpelweg de door Bolt.new, Lovable of v0 gegenereerde broncode. Wij schonen de sandbox-artefacten op, richten uw GitHub-repository in met branch protection, en configureren de Vercel-omgeving met correct gescheiden omgevingsvariabelen. Wij zorgen ervoor dat uw Stripe- en OpenAI-sleutels cryptografisch worden afgeschermd op de server. We koppelen uw eigen domeinnaam, regelen de DNS- en SSL-certificaten en leveren een live, razendsnelle en veilige Next.js SaaS aan u op — zie onze [deployment-pakketten](https://launchstudio.eu/en/#packages) voor heldere scopes en vaste projectprijzen. Dit geeft u de zekerheid van een vlekkeloze, professionele livegang zonder onverwachte serverfouten.
+Met onze deployment-pakketten overhandigt u simpelweg de door Bolt.new, Lovable of v0 gegenereerde broncode. Wij schonen de sandbox-artefacten op, richten uw GitHub-repository in met branch protection, en configureren de Vercel-omgeving met correct gescheiden omgevingsvariabelen. Wij zorgen ervoor dat uw Stripe- en OpenAI-sleutels cryptografisch worden afgeschermd op de server. We koppelen uw eigen domeinnaam, regelen de DNS- en SSL-certificaten en leveren een live, razendsnelle en veilige Next.js SaaS aan u op — zie onze [deployment-pakketten](https://launchstudio.eu/nl/#packages) voor heldere scopes en vaste projectprijzen. Dit geeft u de zekerheid van een vlekkeloze, professionele livegang zonder onverwachte serverfouten.
 
 ## Wat U Moet Controleren Vóórdat U op Deploy Klikt
 
@@ -71,7 +71,7 @@ Voer een snelle vijf-minuten controle uit: zoek in uw geëxporteerde code naar t
 - 45% van de AI-codebases bevat kwetsbaarheden — gelekte API-sleutels bij amateuristische deployments behoren tot de grootste financiële risico's.
 - LaunchStudio levert de senior DevOps-engineering om uw AI-prototype binnen 48 uur naadloos en veilig naar een live Vercel-productieomgeving te migreren.
 
-[Stop met worstelen met deployment-fouten. Laat LaunchStudio uw AI-app vandaag nog professioneel lanceren op Vercel](https://launchstudio.eu/en/#contact).
+[Stop met worstelen met deployment-fouten. Laat LaunchStudio uw AI-app vandaag nog professioneel lanceren op Vercel](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/structured-logging-ai-feature-debugging"
+    "@id": "https://launchstudio.eu/nl/blog/structured-logging-ai-feature-debugging"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Een minimale maar oprecht nuttige logging-opzet voor een AI-functie legt vast pe
 
 Dit is een patroon dat LaunchStudio continu ziet bij AI-native SaaS-tools: de AI-functie zelf werkt, maar de observeerbaarheid eromheen is nooit gebouwd omdat het geen onderdeel was van de oorspronkelijke prompt-naar-code-werkstroom. Onze ingenieurs, ondersteund vanuit Manifera's ontwikkelingscentrum in Ho Chi Minh-stad, voegen dit soort gestructureerde logging toe als een standaard onderdeel van het voorbereiden van een AI-functie voor echte gebruikers. Manifera heeft observeerbaarheidsgereedschap geleverd over meer dan 160 projecten voor enterprise-klanten. Dezelfde discipline is van toepassing of het systeem dat wordt gedebugd nu een traditionele backend is of een LLM-oproep.
 
-Als uw AI-functie is verzonden zonder dat dit aanwezig is, is het de moeite waard om [een offerte te krijgen voor het toevoegen van correcte observeerbaarheid](https://launchstudio.eu/en/#calculator) voordat de volgende klacht binnenkomt zonder dat er iets achter zit om te onderzoeken.
+Als uw AI-functie is verzonden zonder dat dit aanwezig is, is het de moeite waard om [een offerte te krijgen voor het toevoegen van correcte observeerbaarheid](https://launchstudio.eu/nl/#calculator) voordat de volgende klacht binnenkomt zonder dat er iets achter zit om te onderzoeken.
 
 ## Alles in volledig detail loggen schaalt niet voor altijd
 

@@ -33,9 +33,9 @@ Een nuttige, concrete test: kan jouw technisch-capabele medeoprichter specifiek 
 
 Dit gat eerlijk erkennen betekent niet dat de vaardigheden van jouw technische medeoprichter niet waardevol zijn — het betekent dat productiegereedheidsverificatie, specifiek, een aparte aanvullende behoefte is die de moeite waard is om direct aan te pakken, hetzij door jouw medeoprichter deze specifieke expertise doelbewust te laten ontwikkelen, hetzij door externe verificatie erbij te halen voor precies deze nauwere categorie, in plaats van aan te nemen dat algemene codeervaardigheid het al dekt.
 
-[LaunchStudio](https://launchstudio.eu/en/) biedt precies deze specifieke, nauwere verificatielaag voor oprichtende teams met gedeeltelijke interne technische capaciteit, als aanvulling op in plaats van vervanging van wat je medeoprichter al meebrengt, gesteund door Manifera's toegewijde diepgang in adversariële productiegereedheidstests over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) biedt precies deze specifieke, nauwere verificatielaag voor oprichtende teams met gedeeltelijke interne technische capaciteit, als aanvulling op in plaats van vervanging van wat je medeoprichter al meebrengt, gesteund door Manifera's toegewijde diepgang in adversariële productiegereedheidstests over 160+ opgeleverde projecten.
 
-[Krijg de specifieke verificatie die de algemene codeervaardigheid van jouw team niet automatisch dekt](https://launchstudio.eu/en/#contact) — een waardevolle vaardigheid en een andere, waardevolle vaardigheid zijn niet hetzelfde.
+[Krijg de specifieke verificatie die de algemene codeervaardigheid van jouw team niet automatisch dekt](https://launchstudio.eu/nl/#contact) — een waardevolle vaardigheid en een andere, waardevolle vaardigheid zijn niet hetzelfde.
 
 ## Echt voorbeeld
 

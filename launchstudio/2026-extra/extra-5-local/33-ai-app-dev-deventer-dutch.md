@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI-appontwikkeling in Deventer: Van demodag naar lanceringsdag komen",
   "description": "Deventer oprichters gebruiken AI-app-ontwikkelingstools om in enkele dagen van idee naar werkend prototype te gaan. Dit is wat er staat tussen dat prototype en een lancering met echte, betalende klanten.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-app-dev-deventer" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-app-dev-deventer" }
 }
 </script>
 
@@ -38,7 +38,7 @@ We zien het als drie afzonderlijke gaten die ontstaan na de initiële sprint van
 
 **Het betalings- en authenticatiegat.** Stripe-sleutels in testmodus, sessie-afhandeling die een browserverversing niet overleeft, wachtwoord-resets die nooit daadwerkelijk gebouwd zijn — dit zijn de details die "het werkte in de demo" scheiden van "het werkt voor een vreemde om 23:00 uur."
 
-Het dichten van deze gaten is exact wat LaunchStudio doet — zonder de frontend te herbouwen waar een Deventer oprichter al weken aan heeft gewerkt om te perfectioneren. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering over meer dan 160 opgeleverde projecten, en ons engineeringproces is specifiek gebouwd rond dit overdrachtspunt. U kunt bekijken hoe dat proces eruitziet op onze [procespagina](https://launchstudio.eu/en/#process).
+Het dichten van deze gaten is exact wat LaunchStudio doet — zonder de frontend te herbouwen waar een Deventer oprichter al weken aan heeft gewerkt om te perfectioneren. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering over meer dan 160 opgeleverde projecten, en ons engineeringproces is specifiek gebouwd rond dit overdrachtspunt. U kunt bekijken hoe dat proces eruitziet op onze [procespagina](https://launchstudio.eu/nl/#process).
 
 ## Waarom dit uitmaakt voor een stad zoals Deventer
 

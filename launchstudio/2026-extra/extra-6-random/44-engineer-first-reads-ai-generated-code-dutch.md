@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Wat er gebeurt de eerste keer dat een engineer daadwerkelijk uw door AI gegenereerde code leest",
   "description": "Een verhalend kijkje in wat een professionele engineer daadwerkelijk aantreft de eerste keer dat hij code doorleest die is geproduceerd door een ai code tool, en waarom dat patroon zich herhaalt bij oprichter na oprichter.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/engineer-first-reads-ai-generated-code" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/engineer-first-reads-ai-generated-code" }
 }
 </script>
 
@@ -47,7 +47,7 @@ De waarde van een eerste echte codereview zit niet in het vinden van één bug. 
 
 Dat is de eigenlijke waarde van een menselijke engineer die door AI gegenereerde code minstens één keer leest vóór lancering: niet het corrigeren van de AI-tool, maar het opsporen van het patroon dat de AI-tool nooit wist dat het herhaalde.
 
-Onze technici in Amsterdam doen dit soort eerste-leesreviews regelmatig, en het patroon van zes bestanden op rij is een van de meest voorkomende dingen die ze vinden. LaunchStudio wordt gesteund door Manifera — vertrouwd door klanten als Vodafone, TNO en CFLW — en Manifera's [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) past dezelfde standaard van "lees het één keer goed" toe op elk project. Wilt u dat een engineer daadwerkelijk uw eigen codebase doorleest, dan kunt u [uw project beschrijven en wij reageren binnen één werkdag](https://launchstudio.eu/en/#contact).
+Onze technici in Amsterdam doen dit soort eerste-leesreviews regelmatig, en het patroon van zes bestanden op rij is een van de meest voorkomende dingen die ze vinden. LaunchStudio wordt gesteund door Manifera — vertrouwd door klanten als Vodafone, TNO en CFLW — en Manifera's [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) past dezelfde standaard van "lees het één keer goed" toe op elk project. Wilt u dat een engineer daadwerkelijk uw eigen codebase doorleest, dan kunt u [uw project beschrijven en wij reageren binnen één werkdag](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

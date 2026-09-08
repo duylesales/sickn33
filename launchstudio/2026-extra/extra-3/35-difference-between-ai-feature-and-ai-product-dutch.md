@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/difference-between-ai-feature-and-ai-product"
+    "@id": "https://launchstudio.eu/nl/blog/difference-between-ai-feature-and-ai-product"
   }
 }
 </script>
@@ -51,9 +51,9 @@ Voor een echt AI-native product zijn de algemene richtlijnen in deze gehele arti
 
 De directe test: als u de AI-capaciteit volledig zou verwijderen, zou het product dan nog steeds een samenhangend, betekenisvol waardevol kerndoel hebben, of zou er in feite niets meer overblijven. Een product dat deze test op een betekenisvolle manier overleeft, zelfs als het verminderd is, zit dichter bij "traditioneel product met een AI-functie". Een product waar niets samenhangends overblijft is een echt AI-native product, en de bredere aandacht die deze artikelenreeks beschrijft geldt door het hele product, en niet alleen voor één begrensd onderdeel.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters om deze specifieke bepaling vroeg in een oriënterend gesprek te maken, waarbij de beoordelingsinspanning naar verhouding wordt gericht in plaats van het toepassen van identieke, ongedifferentieerde aandacht ongeacht of AI het gehele product is of één functie erin. Dit wordt ondersteund door Manifera's bredere ervaring in het nauwkeurig afstemmen van opdrachten op wat een specifiek product daadwerkelijk is.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters om deze specifieke bepaling vroeg in een oriënterend gesprek te maken, waarbij de beoordelingsinspanning naar verhouding wordt gericht in plaats van het toepassen van identieke, ongedifferentieerde aandacht ongeacht of AI het gehele product is of één functie erin. Dit wordt ondersteund door Manifera's bredere ervaring in het nauwkeurig afstemmen van opdrachten op wat een specifiek product daadwerkelijk is.
 
-[Ontdek in welke categorie uw product daadwerkelijk valt](https://launchstudio.eu/en/#calculator) — het onderscheid veranderd waar de aandacht op gericht moet worden.
+[Ontdek in welke categorie uw product daadwerkelijk valt](https://launchstudio.eu/nl/#calculator) — het onderscheid veranderd waar de aandacht op gericht moet worden.
 
 ## Vijf signalen dat uw "AI-functie" stilletjes een AI-product is geworden
 

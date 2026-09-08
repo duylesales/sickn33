@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-product-uptime-guarantees-what-honestly-promise-launch"
+    "@id": "https://launchstudio.eu/nl/blog/ai-product-uptime-guarantees-what-honestly-promise-launch"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Een oprichter die zich verbindt aan een onrealistisch uptime-getal en dit vervol
 
 Voor een oprecht product in een vroeg stadium zonder uitgebreide operationele geschiedenis is een meer behoudende toezegging – of, redelijkerwijs, aanvankelijk helemaal geen formele contractuele garantie, gekoppeld aan transparante communicatie over uw daadwerkelijke betrouwbaarheidspraktijken – eerlijker en aanzienlijk minder risicovol dan een indrukwekkend klinkend getal dat is gekozen omdat het het professionele ding leek om te zeggen. Dit spiegelt de bredere richtlijnen in deze gehele artikelenreeks met betrekking tot eerlijke, specifieke claims boven zelfverzekerd klinkende maar ongeverifieerde beweringen.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters bij het bepalen van een oprecht eerlijke, haalbare uptime-toezegging op basis van de daadwerkelijke infrastructuur en afhankelijkheidsbetrouwbaarheid, in plaats van een getal dat gekozen is om hoe professioneel het klinkt. Dit wordt ondersteund door Manifera's bredere engineering-discipline in het instellen en nakomen van realistische service-toezeggingen over haar enterprise-opdrachten.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters bij het bepalen van een oprecht eerlijke, haalbare uptime-toezegging op basis van de daadwerkelijke infrastructuur en afhankelijkheidsbetrouwbaarheid, in plaats van een getal dat gekozen is om hoe professioneel het klinkt. Dit wordt ondersteund door Manifera's bredere engineering-discipline in het instellen en nakomen van realistische service-toezeggingen over haar enterprise-opdrachten.
 
-[Krijg een eerlijk uptime-getal dat uw infrastructuur daadwerkelijk kan ondersteunen](https://launchstudio.eu/en/#contact) — een indrukwekkend klinkende belofte die u niet kunt nakomen kost meer dan een behoudende belofte die u wel kunt nakomen.
+[Krijg een eerlijk uptime-getal dat uw infrastructuur daadwerkelijk kan ondersteunen](https://launchstudio.eu/nl/#contact) — een indrukwekkend klinkende belofte die u niet kunt nakomen kost meer dan een behoudende belofte die u wel kunt nakomen.
 
 ## Wat daadwerkelijk op schrift thuishoort zodra u zich wel aan een getal verbindt
 

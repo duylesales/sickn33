@@ -16,7 +16,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/should-agency-take-on-ai-native-clients-cost-benefit"
+    "@id": "https://launchstudio.eu/nl/blog/should-agency-take-on-ai-native-clients-cost-benefit"
   }
 }
 </script>
@@ -49,9 +49,9 @@ Een bureau met oprechte diepgang in backend- en beveiligingstechniek dat simpelw
 
 Heeft het bestaande team van uw bureau oprecht het comfort om een onbekende backend te controleren op de specifieke categorieën die in bredere richtlijnen voor productiegereedheid worden behandeld – geheimen, authenticatie, foutafhandeling – of zou het aannemen van dit segment óf een aanzienlijke traininginvestering vereisen óf het leunen op een gespecialiseerde partner voor de technische diepgang die uw team momenteel niet heeft. Geen van beide antwoorden is verkeerd, maar weten welk antwoord daadwerkelijk waar is veranderd het juiste strategische pad aanzienlijk.
 
-[LaunchStudio](https://launchstudio.eu/en/) werkt met bureaus aan beide uiteinden van dit spectrum – bureaus die in-house competentie opbouwen en een tweede mening of specifieke training willen, en bureaus die liever volledig samenwerken voor de technische diepgang. Dit weerspiegelt Manifera's eigen bredere ervaring in zowel directe klantlevering als white-label technische partnerschapsmodellen.
+[LaunchStudio](https://launchstudio.eu/nl/) werkt met bureaus aan beide uiteinden van dit spectrum – bureaus die in-house competentie opbouwen en een tweede mening of specifieke training willen, en bureaus die liever volledig samenwerken voor de technische diepgang. Dit weerspiegelt Manifera's eigen bredere ervaring in zowel directe klantlevering als white-label technische partnerschapsmodellen.
 
-[Krijg een eerlijk beeld van of dit segment past bij de daadwerkelijke krachten van uw bureau](https://launchstudio.eu/en/#contact) — het juiste antwoord hangt af van uw specifieke team, en niet van een algemene trend.
+[Krijg een eerlijk beeld van of dit segment past bij de daadwerkelijke krachten van uw bureau](https://launchstudio.eu/nl/#contact) — het juiste antwoord hangt af van uw specifieke team, en niet van een algemene trend.
 
 ## Een scorekaart met vijf factoren om te beslissen of dit segment bij uw bureau past
 

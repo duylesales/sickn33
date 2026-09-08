@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-11-17",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-prototype"
+    "@id": "https://launchstudio.eu/nl/blog/ai-prototype"
   }
 }
 </script>
@@ -112,7 +112,7 @@ Er zijn drie routes om uw AI-prototype productierijp te maken:
 *Kosten:* €800 tot €7.500 (vaste projectprijs).
 *Risico:* Minimaal — gespecialiseerd in het live zetten van AI-prototypes.
 
-[LaunchStudio](https://launchstudio.eu/en/) is een initiatief van [Manifera](https://www.manifera.com/), met 120+ software-engineers, 160+ succesvol opgeleverde projecten en kantoren in Amsterdam (Herengracht 420), Singapore (100 Tras Street) en Ho Chi Minhstad (Pho Quangstraat 10) onder leiding van Herre Roelevink.
+[LaunchStudio](https://launchstudio.eu/nl/) is een initiatief van [Manifera](https://www.manifera.com/), met 120+ software-engineers, 160+ succesvol opgeleverde projecten en kantoren in Amsterdam (Herengracht 420), Singapore (100 Tras Street) en Ho Chi Minhstad (Pho Quangstraat 10) onder leiding van Herre Roelevink.
 
 ## Stap 4: De Transitie-Sprint in 5 Fasen
 
@@ -140,7 +140,7 @@ Zodra uw prototype live staat, heeft u twee beheeropties:
 - **Zelf Beheren (Launch Ready Pakket):** U beheert zelf uw hosting en updates. U ontvangt 48 uur intensieve nazorg en complete documentatie.
 - **Beheerd (Launch & Grow Pakket, €49/maand):** LaunchStudio verzorgt managed hosting, SSL-verlenging, beveiligingsupdates, geautomatiseerde back-ups en uptime-monitoring.
 
-[Plan een gratis 15-minuten adviesgesprek](https://launchstudio.eu/en/#contact).
+[Plan een gratis 15-minuten adviesgesprek](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

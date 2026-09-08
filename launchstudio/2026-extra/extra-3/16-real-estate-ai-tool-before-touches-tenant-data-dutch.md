@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/real-estate-ai-tool-before-touches-tenant-data"
+    "@id": "https://launchstudio.eu/nl/blog/real-estate-ai-tool-before-touches-tenant-data"
   }
 }
 </script>
@@ -49,9 +49,9 @@ Vastgoedbeheer omvat inherent meer dan één legitieme partij die verschillende,
 
 Een generieke controle op productiegereedheid controleert of authenticatie en autorisatie in principe bestaan. Deze verticale markt heeft die controles specifiek nodig toegepast op een oprecht complexer machtigingsmodel – een onderhoudsaannemer zou het adres en de beschrijving van een reparatieverzoek moeten zien, en niet de volledige betalingsgeschiedenis van een huurder. Dit onderscheid vereist een bewust, specifiek ontwerp in plaats van een enkele, ongedifferentieerde "wel of niet ingelogd" controle.
 
-[LaunchStudio](https://launchstudio.eu/en/) heeft AI-tools voor vastgoedbeheer verhard met exact dit gelaagde machtigingsmodel en bewaringsbewuste datarchitectuur in gedachten. Wij behandelen de specifieke combinatie van financiële, identiteits- en langetermijndossiergegevens van de verticale markt als een afzonderlijke overweging bij de afbakening in plaats van deze op te vouwen in een generieke checklist, ondersteund door Manifera's bredere ervaring met het afhandelen van vergelijkbaar gevoelige gegevensstructuren voor meerdere partijen in haar enterprise-opdrachten.
+[LaunchStudio](https://launchstudio.eu/nl/) heeft AI-tools voor vastgoedbeheer verhard met exact dit gelaagde machtigingsmodel en bewaringsbewuste datarchitectuur in gedachten. Wij behandelen de specifieke combinatie van financiële, identiteits- en langetermijndossiergegevens van de verticale markt als een afzonderlijke overweging bij de afbakening in plaats van deze op te vouwen in een generieke checklist, ondersteund door Manifera's bredere ervaring met het afhandelen van vergelijkbaar gevoelige gegevensstructuren voor meerdere partijen in haar enterprise-opdrachten.
 
-[Laat uw tool voor vastgoedbeheer beoordelen tegen wat deze specifieke verticale markt daadwerkelijk vereist](https://launchstudio.eu/en/#calculator) — de generieke checklist is een vertrekpunt, niet de finishlijn, voor gegevens die zo gelaagd zijn.
+[Laat uw tool voor vastgoedbeheer beoordelen tegen wat deze specifieke verticale markt daadwerkelijk vereist](https://launchstudio.eu/nl/#calculator) — de generieke checklist is een vertrekpunt, niet de finishlijn, voor gegevens die zo gelaagd zijn.
 
 ## De integraties van derden die deze verticale markt bijna altijd toevoegt
 

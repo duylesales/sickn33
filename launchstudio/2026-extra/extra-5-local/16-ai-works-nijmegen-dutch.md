@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "\"AI werkt\" is niet hetzelfde als klaar om te lanceren: De les van een Nijmeegse oprichter",
   "description": "Waarom een met AI gegenereerde app die werkt in elke demo nog steeds ver verwijderd kan zijn van klaar voor lancering, geïllustreerd met de echte lanceringservaring van een Nijmeegse health-tech oprichter.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-works-nijmegen" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-works-nijmegen" }
 }
 </script>
 

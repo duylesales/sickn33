@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI-websites in Rotterdam: Waarom een snelle build nog steeds een compliance-ronde nodig heeft",
   "description": "Waarom AI-websites die snel zijn gebouwd door Rotterdamse oprichters nog steeds een AVG- en beveiligings-compliance-ronde nodig hebben vóór de lancering, geïllustreerd met een praktijkvoorbeeld uit de logistieke sector.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-websites-rotterdam" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-websites-rotterdam" }
 }
 </script>
 
@@ -44,7 +44,7 @@ Een gedegen compliance-ronde op een met AI gebouwde website kijkt naar:
 
 Niets hiervan vereist het aanraken van het visuele ontwerp dat een oprichter al heeft gebouwd en waar hij tevreden mee is. LaunchStudio voegt deze laag toe rond de bestaande site in plaats van deze opnieuw te bouwen. Achter LaunchStudio staat Manifera, wiens ontwikkelcentrum in Ho Chi Minhstad samenwerkt met onze basis in Amsterdam om precies dit type compliance- en beveiligingsverharding af te handelen, voortbouwend op ervaring met klanten zoals CFLW (Cyber Strategies) — een bedrijf waarvan de gehele bedrijfsvoering is gebouwd op cybersecurity en compliance.
 
-Rotterdamse oprichters die hun B2B-geloofwaardigheid bij havensgerelateerde en logistieke klanten serieus nemen, kunnen inzicht krijgen in wat een compliance-ronde inhoudt door [rechtstreeks contact op te nemen](https://launchstudio.eu/en/#contact), voordat het inkoopteam van een potentiële klant degene is die de vraag stelt. De [offshore software development](https://www.manifera.com/services/offshore-software-development/) praktijk van Manifera heeft compliance- en beveiligingswerk op deze schaal herhaaldelijk uitgevoerd voor klanten ver buiten de provincie Zuid-Holland.
+Rotterdamse oprichters die hun B2B-geloofwaardigheid bij havensgerelateerde en logistieke klanten serieus nemen, kunnen inzicht krijgen in wat een compliance-ronde inhoudt door [rechtstreeks contact op te nemen](https://launchstudio.eu/nl/#contact), voordat het inkoopteam van een potentiële klant degene is die de vraag stelt. De [offshore software development](https://www.manifera.com/services/offshore-software-development/) praktijk van Manifera heeft compliance- en beveiligingswerk op deze schaal herhaaldelijk uitgevoerd voor klanten ver buiten de provincie Zuid-Holland.
 
 ## De werkelijke kosten van het overslaan van deze stap
 

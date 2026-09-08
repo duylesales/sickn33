@@ -33,9 +33,9 @@ Zodra het onderscheid omkeerbaar-versus-onomkeerbaar is in plaats van een alleso
 
 Founders passen "snel verzenden" soms zonder onderscheid toe, redenerend dat als het goed advies is voor functies, het moet generaliseren naar alles, inclusief beveiliging en datahantering — precies de redeneringsfout die dit artikel beoogt te corrigeren. Het advies was nooit bedoeld om zo ver te generaliseren; het was gebouwd rond en gevalideerd binnen de omkeerbaar-consequentie-categorie specifiek, en het uitbreiden naar de onomkeerbare categorie is een verkeerde toepassing, geen natuurlijke uitbreiding.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt founders precies dit onderscheid concreet toe te passen op hun eigen specifieke product — identificerend welke delen oprecht profiteren van snelle iteratie en welke doelbewuste pre-lanceringsverificatie rechtvaardigen — gesteund door Manifera's engineeringoordeel over 160+ opgeleverde projecten die beide categorieën overspannen.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt founders precies dit onderscheid concreet toe te passen op hun eigen specifieke product — identificerend welke delen oprecht profiteren van snelle iteratie en welke doelbewuste pre-lanceringsverificatie rechtvaardigen — gesteund door Manifera's engineeringoordeel over 160+ opgeleverde projecten die beide categorieën overspannen.
 
-[Krijg hulp bij het trekken van de lijn voor jouw specifieke product](https://launchstudio.eu/en/#calculator) — de juiste filosofie hangt af van welke risicocategorie je daadwerkelijk bekijkt.
+[Krijg hulp bij het trekken van de lijn voor jouw specifieke product](https://launchstudio.eu/nl/#calculator) — de juiste filosofie hangt af van welke risicocategorie je daadwerkelijk bekijkt.
 
 ## Echt voorbeeld
 

@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Een korte geschiedenis van 'vibe coding' en waar de term daadwerkelijk vandaan komt",
   "description": "Een uitleg over de oorsprong van de term vibe coding binnen de ai coding-cultuur, wat de term daadwerkelijk beschrijft, en hoe het populaire gebruik is afgedreven van de oorspronkelijke, nauwere betekenis.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/short-history-vibe-coding-term" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/short-history-vibe-coding-term" }
 }
 </script>
 
@@ -51,7 +51,7 @@ Weten welke versie van "vibe coding" op uw eigen situatie van toepassing is, is 
 
 Dat is geen reden om deze manier van bouwen te vermijden — het is precies hoe producten zoals Owens KassaKoppel worden gebouwd en slagen. Het is een reden om te weten wanneer een tweede, gekwalificeerd paar ogen naar het resultaat moet kijken voordat echte klanten en echte gegevens ervan afhankelijk worden.
 
-Onze technici in Singapore, samen met teams in Amsterdam en Ho Chi Minh-stad, werken met oprichters over het hele spectrum — van de oorspronkelijke, nauwere betekenis van vibe coding tot oprichters die samen met AI-tools rechtstreeks coderen. LaunchStudio brengt Manifera's enterprise-grade engineeringstandaard naar beide. Als u bouwt zoals Owen deed — door resultaten te beschrijven in plaats van code te lezen — kunt u [ons de link naar uw prototype sturen en wij geven u gratis advies](https://launchstudio.eu/en/#contact) over wat u moet controleren voordat u opschaalt.
+Onze technici in Singapore, samen met teams in Amsterdam en Ho Chi Minh-stad, werken met oprichters over het hele spectrum — van de oorspronkelijke, nauwere betekenis van vibe coding tot oprichters die samen met AI-tools rechtstreeks coderen. LaunchStudio brengt Manifera's enterprise-grade engineeringstandaard naar beide. Als u bouwt zoals Owen deed — door resultaten te beschrijven in plaats van code te lezen — kunt u [ons de link naar uw prototype sturen en wij geven u gratis advies](https://launchstudio.eu/nl/#contact) over wat u moet controleren voordat u opschaalt.
 
 ## Echt voorbeeld
 
@@ -92,7 +92,7 @@ De technici van Manifera, werkend vanuit Singapore, Amsterdam en Ho Chi Minh-sta
 
 ### Waar kan ik meer leren over hoe LaunchStudio met AI gebouwde producten naar productie helpt brengen?
 
-U kunt het proces en de pakketten van LaunchStudio rechtstreeks verkennen op de [LaunchStudio-site](https://launchstudio.eu/en/#process) om te zien hoe een beoordeling en productielancering doorgaans verlopen.
+U kunt het proces en de pakketten van LaunchStudio rechtstreeks verkennen op de [LaunchStudio-site](https://launchstudio.eu/nl/#process) om te zien hoe een beoordeling en productielancering doorgaans verlopen.
 
 <script type="application/ld+json">
 {

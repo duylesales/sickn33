@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Een dag uit het leven van een engineer die door AI gegenereerde pull requests beoordeelt",
   "description": "Een verhalende doorloop van een echte dag besteed door een van LaunchStudio's ai software developers aan het beoordelen van een door AI gegenereerde pull request, aan de hand van de codebase van een echte oprichter.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/reviewing-ai-generated-pull-requests" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/reviewing-ai-generated-pull-requests" }
 }
 </script>
 
@@ -47,7 +47,7 @@ De middag bestaat uit het bouwen van de sanitatiehulpfunctie, deze uitvoeren teg
 
 Dit is het deel dat het meest telt voor een oprichter zonder beveiligingsachtergrond: twaalf bestanden vol niet-geëscapete invoer vertalen naar iets waar Puck daadwerkelijk naar kan handelen zonder een informaticadiploma. De notitie aan haar legt het in feite uit als: "iedereen had code in een reactievak kunnen typen en die konden laten uitvoeren in de browser van een andere gebruiker — we hebben dat overal gesloten waar het bestond en ervoor gezorgd dat het niet op dezelfde manier terug kan komen." Geen muur van jargon. Alleen wat er mis was, waarom het ertoe deed, en wat er is veranderd.
 
-Achter deze ene PR staat Manifera's bredere team van 120+ technici, en beoordelingen zoals deze lopen doorgaans via ons Amsterdamse kantoor aan Herengracht 420, samenwerkend met oprichters door heel Europa die bouwen met Lovable, Bolt, Cursor en v0. Als u wilt zien hoe één beoordeling zoals deze past in het volledige productietraject, schetst onze [procespagina](https://launchstudio.eu/en/#process) wat ervoor en erna komt. Voor een blik op dezelfde reviewdiscipline toegepast op grotere, langer lopende codebases, laat Manifera's [portfolio](https://www.manifera.com/portfolio/) zien hoe het opschaalt voorbij de app van één oprichter.
+Achter deze ene PR staat Manifera's bredere team van 120+ technici, en beoordelingen zoals deze lopen doorgaans via ons Amsterdamse kantoor aan Herengracht 420, samenwerkend met oprichters door heel Europa die bouwen met Lovable, Bolt, Cursor en v0. Als u wilt zien hoe één beoordeling zoals deze past in het volledige productietraject, schetst onze [procespagina](https://launchstudio.eu/nl/#process) wat ervoor en erna komt. Voor een blik op dezelfde reviewdiscipline toegepast op grotere, langer lopende codebases, laat Manifera's [portfolio](https://www.manifera.com/portfolio/) zien hoe het opschaalt voorbij de app van één oprichter.
 
 ## 17:40 uur — PR goedgekeurd, met huiswerk
 

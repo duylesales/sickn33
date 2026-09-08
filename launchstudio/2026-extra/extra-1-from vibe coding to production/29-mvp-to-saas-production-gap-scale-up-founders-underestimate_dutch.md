@@ -31,9 +31,9 @@ Het instinct van een scale-up-founder is, redelijkerwijs, operationele geschiede
 
 Productiegereedheid reviewen in de allervroegste MVP-fase, voordat enig echt gebruik bestaat, betekent hypothetisch testen tegen omstandigheden waar je nog naar gist. Wachten tot na een ernstig incident betekent het reactieve kostenplaatje betalen behandeld in de begeleiding van deze serie over de echte kosten van een beveiligingsaudit overslaan. Het scale-up-inflectiepunt — betekenisvolle groei bevestigd, meer groei actief nagestreefd — is specifiek wanneer het daadwerkelijke risicoprofiel concreet en kenbaar geworden is, terwijl je nog steeds vóór de volumedrempel bent waar de hoogste-consequentie-gaten het meest waarschijnlijk daadwerkelijk triggeren.
 
-[LaunchStudio](https://launchstudio.eu/en/) biedt precies deze scale-up-fase-review, specifiek beoordelend hoe de bestaande gaten van jouw MVP zich zullen gedragen naarmate groei voortduurt, niet alleen of het product momenteel werkt, gesteund door Manifera's ervaring met het schalen van AI-native SaaS-producten door precies deze overgang.
+[LaunchStudio](https://launchstudio.eu/nl/) biedt precies deze scale-up-fase-review, specifiek beoordelend hoe de bestaande gaten van jouw MVP zich zullen gedragen naarmate groei voortduurt, niet alleen of het product momenteel werkt, gesteund door Manifera's ervaring met het schalen van AI-native SaaS-producten door precies deze overgang.
 
-[Laat beoordelen hoe jouw MVP standhoudt bij de groei die je daadwerkelijk nastreeft](https://launchstudio.eu/en/#calculator) — het risico dat nog niet gemanifesteerd is bij jouw huidige schaal is niet hetzelfde als risico dat niet bestaat.
+[Laat beoordelen hoe jouw MVP standhoudt bij de groei die je daadwerkelijk nastreeft](https://launchstudio.eu/nl/#calculator) — het risico dat nog niet gemanifesteerd is bij jouw huidige schaal is niet hetzelfde als risico dat niet bestaat.
 
 ## Echt voorbeeld
 

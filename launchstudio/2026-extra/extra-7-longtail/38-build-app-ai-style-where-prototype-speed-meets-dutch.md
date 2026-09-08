@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-15",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/build-app-ai-style-where-prototype-speed-meets" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/build-app-ai-style-where-prototype-speed-meets" }
 }
 </script>
 

@@ -66,7 +66,7 @@ Voor een niet-technische ondernemer is het zelfstandig afwerken van deze checkli
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Dit is exact het bestaansrecht van [LaunchStudio](https://launchstudio.eu/en/). Gesteund door [Manifera](https://www.manifera.com/) — een toonaangevend softwarebedrijf met ruim 11 jaar ervaring, 120+ engineers en meer dan 160 succesvol afgeronde enterprise-projecten voor opdrachtgevers zoals Vodafone, TNO en CFLW, opererend vanuit Amsterdam, Singapore en Ho Chi Minhstad — treden wij op als uw geruisloze technische co-founder voor de "laatste mijl".
+Dit is exact het bestaansrecht van [LaunchStudio](https://launchstudio.eu/nl/). Gesteund door [Manifera](https://www.manifera.com/) — een toonaangevend softwarebedrijf met ruim 11 jaar ervaring, 120+ engineers en meer dan 160 succesvol afgeronde enterprise-projecten voor opdrachtgevers zoals Vodafone, TNO en CFLW, opererend vanuit Amsterdam, Singapore en Ho Chi Minhstad — treden wij op als uw geruisloze technische co-founder voor de "laatste mijl".
 
 Wij dwingen u niet om de schitterende frontend die u met AI heeft gebouwd opnieuw te laten ontwerpen. In plaats daarvan nemen onze software-engineers uw bestaande codebase over en werken de complete productiechecklist systematisch voor u af. Wij vergrendelen uw database, richten de complexe betaalwebhooks in, deployen uw app veilig naar uw eigen custom domein met SSL en professionaliseren de foutafhandeling en juridische basis.
 
@@ -80,7 +80,7 @@ Met ons **"Klaar voor lancering" (Launch Ready)** pakket transformeert u uw kwet
 - Foutafhandeling en AVG-conforme juridische documentatie worden vaak over het hoofd gezien maar dragen aanzienlijke risico's met zich mee.
 - LaunchStudio voltooit de complete "laatste mijl" checklist voor u, beveiligt uw AI-code en zorgt dat u binnen enkele weken veilig live bent.
 
-[Bereken vandaag nog exact wat het kost om uw prototype om te zetten in een live product via onze prijscalculator](https://launchstudio.eu/en/#calculator).
+[Bereken vandaag nog exact wat het kost om uw prototype om te zetten in een live product via onze prijscalculator](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

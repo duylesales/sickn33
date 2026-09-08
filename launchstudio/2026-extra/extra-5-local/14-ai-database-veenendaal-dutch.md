@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "AI-database keuzes in Veenendaal: Waarom gegevensbehoud niet automatisch is",
   "description": "Een technische blik op waarom door AI gegenereerde database-instellingen vaak stilletjes falen op gegevensbehoud en toegangsbeheer, met advies voor Veenendaalse oprichters die bouwen op Lovable, Bolt of Cursor.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-database-veenendaal" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-database-veenendaal" }
 }
 </script>
 

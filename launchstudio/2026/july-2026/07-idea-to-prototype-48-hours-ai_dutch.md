@@ -137,7 +137,7 @@ Uw 48-uurs prototype is een validatietool, geen gelanceerd product. Voordat u ec
 
 - **Wettelijke naleving** — Privacybeleid, servicevoorwaarden, gereedheid voor de AVG
 
-Dit is precies wat [LaunchStudio](https://launchstudio.eu/en/) doet. Wij nemen uw AI-gebouwde prototype en maken het in 1 tot 3 weken lanceringsklaar, voor een vaste prijs van €800 tot €7.500. U behoudt uw prototype precies zoals u het heeft gebouwd; wij repareren alleen wat tussen u en echte gebruikers staat.
+Dit is precies wat [LaunchStudio](https://launchstudio.eu/nl/) doet. Wij nemen uw AI-gebouwde prototype en maken het in 1 tot 3 weken lanceringsklaar, voor een vaste prijs van €800 tot €7.500. U behoudt uw prototype precies zoals u het heeft gebouwd; wij repareren alleen wat tussen u en echte gebruikers staat.
 
 ## Belangrijkste inzichten
 
@@ -155,7 +155,7 @@ Dit is precies wat [LaunchStudio](https://launchstudio.eu/en/) doet. Wij nemen u
 
 Binnen 48 uur van een idee naar een werkend prototype gaan is een enorme prestatie. Maar voordat u zich aan echte gebruikers wijdt, moet u ervoor zorgen dat u de verborgen backend-kwetsbaarheden aanpakt die AI-tools achterlaten.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht door **Herre Roelevink**. Manifera combineert *"Nederlands management met Vietnamees meesterschap"* en onderhoudt een netwerk van ontwikkelingscentra in **Singapore** en **Ho Chi Minh City, Vietnam**, naast het Europese hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420). Via LaunchStudio nemen onze senior ontwikkelaars uw 48-uurs prototype en voeren de nodige beveiligingsaudits, live betalingsverbinding, aangepaste domeinhosting en prestatie-optimalisatie uit in slechts 1 tot 3 weken. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht door **Herre Roelevink**. Manifera combineert *"Nederlands management met Vietnamees meesterschap"* en onderhoudt een netwerk van ontwikkelingscentra in **Singapore** en **Ho Chi Minh City, Vietnam**, naast het Europese hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420). Via LaunchStudio nemen onze senior ontwikkelaars uw 48-uurs prototype en voeren de nodige beveiligingsaudits, live betalingsverbinding, aangepaste domeinhosting en prestatie-optimalisatie uit in slechts 1 tot 3 weken. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/fixed-pricing-beats-hourly-rates-ai-startup-development"
+    "@id": "https://launchstudio.eu/nl/blog/fixed-pricing-beats-hourly-rates-ai-startup-development"
   }
 }
 </script>
@@ -60,9 +60,9 @@ Vaste prijzen werken het beste voor duidelijk definieerbaar projectwerk met een 
 
 ## Hoe LaunchStudio Dit Principe Toepast
 
-De vaste pakketten van [LaunchStudio](https://launchstudio.eu/en/) (€800 tot €7.500) zijn het resultaat van deze bewuste keuze. Dankzij Manifera's 11+ jaar software-ervaring kunnen we de benodigde scope nauwkeurig inschatten en fixed-price trajecten vol vertrouwen aanbieden, waardoor het uitvoeringsrisico verschuift van de oprichter naar het team dat het best is toegerust om dat te managen.
+De vaste pakketten van [LaunchStudio](https://launchstudio.eu/nl/) (€800 tot €7.500) zijn het resultaat van deze bewuste keuze. Dankzij Manifera's 11+ jaar software-ervaring kunnen we de benodigde scope nauwkeurig inschatten en fixed-price trajecten vol vertrouwen aanbieden, waardoor het uitvoeringsrisico verschuift van de oprichter naar het team dat het best is toegerust om dat te managen.
 
-[Vraag een vaste prijs aan voor uw project](https://launchstudio.eu/en/#calculator) — weet exact wat u betaalt vóórdat het werk begint.
+[Vraag een vaste prijs aan voor uw project](https://launchstudio.eu/nl/#calculator) — weet exact wat u betaalt vóórdat het werk begint.
 
 ## Wat een Betrouwbare Vaste Offerte Daadwerkelijk Moet Bevatten
 

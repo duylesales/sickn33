@@ -16,7 +16,7 @@ Doelpersona: SaaS-Oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: SaaS-Oprichter Scale-Up
   "datePublished": "2026-11-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-privacy-issues"
+    "@id": "https://launchstudio.eu/nl/blog/ai-privacy-issues"
   }
 }
 </script>
@@ -71,7 +71,7 @@ OpenAI biedt bijvoorbeeld ZDR aan op specifieke API-endpoints: data wordt niet b
 
 Het inrichten van deze drieledige architectuur gaat veel verder dan wat geautomatiseerde AI-codegeneratoren kunnen leveren. Het vereist diepgaande kennis van cloud-infrastructuur én Europese privacywetgeving.
 
-Dit is waar [LaunchStudio](https://launchstudio.eu/en/) het verschil maakt voor groeiende startups. Aangedreven door [Manifera](https://www.manifera.com/) beschikt LaunchStudio over unieke expertise op dit vlak: Herre Roelevink, CEO van Manifera, heeft jarenlange cybersecurity-ervaring opgedaan als medeoprichter van CyberDevOps (nu CFLW Cyber Strategies) en bij TNO op het gebied van veilige datamonitoring.
+Dit is waar [LaunchStudio](https://launchstudio.eu/nl/) het verschil maakt voor groeiende startups. Aangedreven door [Manifera](https://www.manifera.com/) beschikt LaunchStudio over unieke expertise op dit vlak: Herre Roelevink, CEO van Manifera, heeft jarenlange cybersecurity-ervaring opgedaan als medeoprichter van CyberDevOps (nu CFLW Cyber Strategies) en bij TNO op het gebied van veilige datamonitoring.
 
 Onder leiding van het hoofdkantoor aan de Herengracht 420 in Amsterdam implementeert het engineeringteam in Ho Chi Minhstad (Pho Quangstraat 10) een waterdichte architectuur:
 - Europese hosting voor alle databasetabellen (Supabase/PostgreSQL gehost in Frankfurt).

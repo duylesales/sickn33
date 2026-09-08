@@ -31,9 +31,9 @@ Een betalingsflow succesvol een handvol keren testen bevestigt dat het gelukkige
 
 Voorbij de initiële belastingsflow: betrouwbare webhook-afhandeling met correcte verificatie van de authenticiteit van de webhook (bevestigen dat het oprecht van jouw betalingsprovider kwam, niet een vervalst verzoek); idempotentiesleutels die verzekeren dat een herhaald verzoek niet dubbel belast; en expliciete afhandeling voor gedeeltelijke faaltoestanden, zodat een geslaagde betaling gevolgd door een downstream-fout gemarkeerd wordt voor reconciliatie in plaats van stilletjes een klant achter te laten belast zonder dienst.
 
-[LaunchStudio](https://launchstudio.eu/en/) implementeert betalingsintegraties met webhookbetrouwbaarheid, idempotentie, en gedeeltelijke-faalafhandeling standaard ingebouwd vanaf het begin als standaardonderdeel van elke Launch & Grow-opdracht, gesteund door Manifera's ervaring met het integreren van Stripe en Mollie over talrijke productie-SaaS-applicaties.
+[LaunchStudio](https://launchstudio.eu/nl/) implementeert betalingsintegraties met webhookbetrouwbaarheid, idempotentie, en gedeeltelijke-faalafhandeling standaard ingebouwd vanaf het begin als standaardonderdeel van elke Launch & Grow-opdracht, gesteund door Manifera's ervaring met het integreren van Stripe en Mollie over talrijke productie-SaaS-applicaties.
 
-[Laat jouw betalingsflow testen tegen echte-wereld-faalcondities, niet alleen het gelukkige pad](https://launchstudio.eu/en/#calculator) — dit is de functie die het meest waarschijnlijk als eerste een gat naar boven brengt, dus het is de moeite waard eerst te verifiëren.
+[Laat jouw betalingsflow testen tegen echte-wereld-faalcondities, niet alleen het gelukkige pad](https://launchstudio.eu/nl/#calculator) — dit is de functie die het meest waarschijnlijk als eerste een gat naar boven brengt, dus het is de moeite waard eerst te verifiëren.
 
 ## Echt voorbeeld
 

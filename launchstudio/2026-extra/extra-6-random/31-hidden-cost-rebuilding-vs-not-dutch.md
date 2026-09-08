@@ -12,10 +12,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "De verborgen kosten van herbouwen versus de verborgen kosten van niet herbouwen",
   "description": "Oprichters behandelen een offerte voor refactoring als het enige bedrag op tafel. Dat is het niet. De kosten van uitstel stapelen zich stilletjes op en blijken vaak groter uit te vallen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/hidden-cost-rebuilding-vs-not" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/hidden-cost-rebuilding-vs-not" }
 }
 </script>
 
@@ -51,7 +51,7 @@ Voordat u besluit een oplossing uit te stellen, probeer eerlijk een prijs te pla
 
 Tel dit op over een realistische periode van uitstel — drie maanden, zes maanden — en vergelijk dat bedrag met de offerte met vaste prijs. Vaak oogt de offerte een stuk redelijker zodra deze naast zijn werkelijke concurrent staat.
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en precies dit soort kader is wat ons Amsterdamse team oprichters voorlegt voordat er een offerte met vaste prijs wordt opgesteld. Als u een tweede mening wilt over aan welke kant van de balans u zich daadwerkelijk bevindt, kunt u [uw project beschrijven via ons intakeformulier](https://launchstudio.eu/en/#contact) en dan vertellen we u eerlijk of de oplossing urgent is of kan wachten. Voor diepere, platformniveau engineeringvragen heeft het [team voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera precies deze afweging al gemaakt bij meer dan 160 zakelijke projecten.
+LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en precies dit soort kader is wat ons Amsterdamse team oprichters voorlegt voordat er een offerte met vaste prijs wordt opgesteld. Als u een tweede mening wilt over aan welke kant van de balans u zich daadwerkelijk bevindt, kunt u [uw project beschrijven via ons intakeformulier](https://launchstudio.eu/nl/#contact) en dan vertellen we u eerlijk of de oplossing urgent is of kan wachten. Voor diepere, platformniveau engineeringvragen heeft het [team voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera precies deze afweging al gemaakt bij meer dan 160 zakelijke projecten.
 
 ## Echt voorbeeld
 

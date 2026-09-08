@@ -41,7 +41,7 @@ Zelfs vóórdat er sprake is van enig datalek, bevat het inkoopproces van grote 
 
 Om een enterprise security-audit met succes te doorstaan, moet u aan de CISO onomstotelijk bewijzen dat persoonsgegevens (PII) de externe LLM-aanbieder fysiek onmogelijk in leesbare vorm kunnen bereiken. Dit realiseert u door het implementeren van een **Datamaskeringspijplijn (Data Masking Pipeline)**.
 
-Dit is exact de beveiligingsarchitectuur die [LaunchStudio](https://launchstudio.eu/en/) bouwt voor digitale bureaus die enterprise-klanten bedienen. Gesteund door de diepgaande expertise in Europese data-compliance en enterprise software van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring, 120+ senior ontwikkelaars en meer dan 160 opgeleverde projecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons softwarecentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — treden wij op als uw discrete, white-label security-engineers. Wij bouwen een ondoordringbare interceptielaag tussen de klantdata en de AI-modellen.
+Dit is exact de beveiligingsarchitectuur die [LaunchStudio](https://launchstudio.eu/nl/) bouwt voor digitale bureaus die enterprise-klanten bedienen. Gesteund door de diepgaande expertise in Europese data-compliance en enterprise software van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring, 120+ senior ontwikkelaars en meer dan 160 opgeleverde projecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons softwarecentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — treden wij op als uw discrete, white-label security-engineers. Wij bouwen een ondoordringbare interceptielaag tussen de klantdata en de AI-modellen.
 
 Zo functioneert deze professionele datamaskeringspijplijn:
 
@@ -61,7 +61,7 @@ Als u op korte termijn een zakelijke AI-pitch op de agenda heeft staan waarin pe
 
 Bereid vóór de vergadering een helder datastroomdiagram voor: toon exact welke data uw applicatie binnenkomt, hoe de lokale maskering functioneert, welke geanonimiseerde data naar het LLM gaat en waar de versleutelde mappingtabel wordt bewaard. Bureaus die een dergelijk diagram direct bij de start overhandigen, nemen de belangrijkste bezwaren van de IT-afdeling weg nog vóórdat ze worden uitgesproken.
 
-De white-label security-engineers van [LaunchStudio](https://launchstudio.eu/en/#packages) ontwerpen en bouwen deze maskeermodules binnen onze transparante projectpakketten — geprijsd vanaf € 800 voor een gerichte maskeerlaag tot € 7.500+ voor een complete, EU-gehoste enterprise datapijplijn met audit-logging, gerealiseerd binnen 1 tot 3 weken, tegen circa **20% van de tarieven van traditionele IT-adviesbureaus**. Vraag een [vrijblijvend adviesgesprek aan](https://launchstudio.eu/en/#contact) vóór uw volgende enterprise-evaluatie.
+De white-label security-engineers van [LaunchStudio](https://launchstudio.eu/nl/#packages) ontwerpen en bouwen deze maskeermodules binnen onze transparante projectpakketten — geprijsd vanaf € 800 voor een gerichte maskeerlaag tot € 7.500+ voor een complete, EU-gehoste enterprise datapijplijn met audit-logging, gerealiseerd binnen 1 tot 3 weken, tegen circa **20% van de tarieven van traditionele IT-adviesbureaus**. Vraag een [vrijblijvend adviesgesprek aan](https://launchstudio.eu/nl/#contact) vóór uw volgende enterprise-evaluatie.
 
 ## Belangrijkste Inzichten
 

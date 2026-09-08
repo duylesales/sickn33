@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/two-sided-ai-marketplaces-trust-problem-buyers-sellers"
+    "@id": "https://launchstudio.eu/nl/blog/two-sided-ai-marketplaces-trust-problem-buyers-sellers"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Een prompt die beschrijft "laat kopers en verkopers elkaar berichten sturen" wor
 
 Het achteraf inpassen van gestaffelde informatievrijgave of asymmetrische toegangsregels op een al gebouwde marktplaats, zodra beide kanten gewend zijn geraakt aan het bestaande gedrag van het platform, is aanzienlijk ingrijpender dan het vanaf het begin inbouwen. Dit maakt het een categorie waar vroege, bewuste architectuurbeslissingen onevenredig opleveren ten opzichte van de kosten van het later aanpakken.
 
-[LaunchStudio](https://launchstudio.eu/en/) ontwerpt en verhardt toegangsbeheer voor tweezijdige marktplaatsen met deze specifieke vertrouwensdynamiek tussen koper en verkoper in gedachten. Wij behandelen het als een afzonderlijke architectonische overweging buiten algemene autorisatie, ondersteund door Manifera's bredere ervaring in het bouwen van platforms voor meerdere partijen waar concurrerende legitieme belangen bewust moeten worden gebalanceerd.
+[LaunchStudio](https://launchstudio.eu/nl/) ontwerpt en verhardt toegangsbeheer voor tweezijdige marktplaatsen met deze specifieke vertrouwensdynamiek tussen koper en verkoper in gedachten. Wij behandelen het als een afzonderlijke architectonische overweging buiten algemene autorisatie, ondersteund door Manifera's bredere ervaring in het bouwen van platforms voor meerdere partijen waar concurrerende legitieme belangen bewust moeten worden gebalanceerd.
 
-[Laat het vertrouwensmodel van uw marktplaats beoordelen voordat beide kanten iets anders verwachten](https://launchstudio.eu/en/#calculator) — dit is een andere discipline dan typisch toegangsbeheer voor eenzijdige SaaS.
+[Laat het vertrouwensmodel van uw marktplaats beoordelen voordat beide kanten iets anders verwachten](https://launchstudio.eu/nl/#calculator) — dit is een andere discipline dan typisch toegangsbeheer voor eenzijdige SaaS.
 
 ## Een controlelijst voor het controleren van de vrijgaveregels van uw marktplaats
 

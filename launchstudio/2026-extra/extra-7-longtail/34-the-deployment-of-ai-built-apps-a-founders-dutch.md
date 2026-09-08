@@ -16,7 +16,7 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-11",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/the-deployment-of-ai-built-apps-a-founders" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/the-deployment-of-ai-built-apps-a-founders" }
 }
 </script>
 

@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-tools-nonprofits-donor-data-same-rigor-payment-data"
+    "@id": "https://launchstudio.eu/nl/blog/ai-tools-nonprofits-donor-data-same-rigor-payment-data"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Oprichters gericht op non-profitorganisaties zijn vaak in de eerste plaats missi
 
 Het instinct om de missie op de eerste plaats te zetten dat oprichters van non-profitorganisaties terughoudend maakt om uit te geven aan infrastructuur, is precies waarom dit werk bewuste bepleiting nodig heeft – het vertrouwen van donateurs en begunstigden is het daadwerkelijke fundament waar de missie van afhangt. Dit betekent dat investeren in productiegereedheid hier geen afleiding is van de missie, maar bescherming van het exacte vertrouwen dat de missie vereist om te blijven functioneren.
 
-[LaunchStudio](https://launchstudio.eu/en/) past dezelfde zorgvuldigheid toe op AI-tools voor non-profitorganisaties als op elke commerciële opdracht, waarbij gegevens van donateurs en begunstigden worden behandeld met de gevoeligheid die ze daadwerkelijk dragen in plaats van de lagere prioriteit die hun niet-commerciële framing anders zou suggereren, ondersteund door Manifera's engineeringdiscipline in opdrachten met gevoelige gegevens ongeacht de sector.
+[LaunchStudio](https://launchstudio.eu/nl/) past dezelfde zorgvuldigheid toe op AI-tools voor non-profitorganisaties als op elke commerciële opdracht, waarbij gegevens van donateurs en begunstigden worden behandeld met de gevoeligheid die ze daadwerkelijk dragen in plaats van de lagere prioriteit die hun niet-commerciële framing anders zou suggereren, ondersteund door Manifera's engineeringdiscipline in opdrachten met gevoelige gegevens ongeacht de sector.
 
-[Laat de AI-tool van uw non-profitorganisatie beoordelen met de zorgvuldigheid die de gegevens daadwerkelijk verdienen](https://launchstudio.eu/en/#contact) — missie eerst betekent niet beveiliging laatst.
+[Laat de AI-tool van uw non-profitorganisatie beoordelen met de zorgvuldigheid die de gegevens daadwerkelijk verdienen](https://launchstudio.eu/nl/#contact) — missie eerst betekent niet beveiliging laatst.
 
 ## Waar te beginnen bij een krap budget: Een prioriteitsvolgorde
 

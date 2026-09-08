@@ -39,7 +39,7 @@ Prijzen voor beeld-API's fluctueren aanzienlijk sneller dan tekstprijzen. AI-aan
 
 Om AI-beeldgeneratie rendabel aan te bieden, kunt u niet vertrouwen op platte abonnementsprijzen en rechtstreekse API-aanroepen vanuit de frontend. U moet een strikt gecontroleerde backend-architectuur opzetten.
 
-Dit is exact de infrastructuur die [LaunchStudio](https://launchstudio.eu/en/) ontwerpt voor visuele AI-startups. Gesteund door de diepgaande enterprise expertise van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring, 120+ senior ontwikkelaars en 160+ succesvolle projecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons centrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — implementeren wij de server-side controles die uw marges beschermen, tegen circa 20% van de kosten van een traditioneel bureau.
+Dit is exact de infrastructuur die [LaunchStudio](https://launchstudio.eu/nl/) ontwerpt voor visuele AI-startups. Gesteund door de diepgaande enterprise expertise van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring, 120+ senior ontwikkelaars en 160+ succesvolle projecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons centrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — implementeren wij de server-side controles die uw marges beschermen, tegen circa 20% van de kosten van een traditioneel bureau.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -48,7 +48,7 @@ Zo ontwerpen wij een winstgevend systeem rond de Pixel Valkuil:
 1. **Credit-Based Facturatiesystemen:** We integreren Stripe Metered Billing rechtstreeks in uw PostgreSQL-database. In plaats van "onbeperkt" kopen gebruikers een bundel van bijvoorbeeld 100 "Beeld-Credits". Onze Edge Functions boeken via een atomaire database-transactie exact één credit af op het moment van de API-aanroep, zodat een mislukte generatie de gebruiker nooit onterecht benadeelt en overmatig gebruik direct wordt begrensd.
 2. **Dynamische Resolutie-Optimalisatie:** We programmeren backend-logica die automatisch de goedkoopste API-resolutie selecteert op basis van de specifieke schermcontext (bijv. thumbnails versus drukwerk-downloads), wat uw API-factuur halveert zonder verlies van gebruikerservaring.
 3. **Slimme Image Caching:** Vraagt Gebruiker A om een *"gouden retriever op een skateboard"*, dan slaan we de gegenereerde afbeelding en een hash van de prompt op in een beveiligde Amazon S3-bucket. Vraagt Gebruiker B later om exact dezelfde of een sterk vergelijkbare prompt, dan serveert onze backend direct de gecachte afbeelding voor € 0,00 in plaats van opnieuw DALL-E 3 te betalen.
-4. **Provider-Agnostische Routering:** We bouwen een routeringslaag die actuele API-tarieven uitleest uit een configuratietabel en voor eenvoudige generaties kan uitwijken naar aanzienlijk goedkopere modellen (zoals Stable Diffusion of Flux via Replicate), terwijl premium modellen uitsluitend worden ingeschakeld wanneer uitzonderlijke precisie vereist is. Zie onze [transparante projectprijzen](https://launchstudio.eu/en/#packages) voor een overzicht.
+4. **Provider-Agnostische Routering:** We bouwen een routeringslaag die actuele API-tarieven uitleest uit een configuratietabel en voor eenvoudige generaties kan uitwijken naar aanzienlijk goedkopere modellen (zoals Stable Diffusion of Flux via Replicate), terwijl premium modellen uitsluitend worden ingeschakeld wanneer uitzonderlijke precisie vereist is. Zie onze [transparante projectprijzen](https://launchstudio.eu/nl/#packages) voor een overzicht.
 
 ## Belangrijkste Inzichten
 
@@ -58,7 +58,7 @@ Zo ontwerpen wij een winstgevend systeem rond de Pixel Valkuil:
 - Een Credit-Based facturatiesysteem met atomaire afschrijving via server-side Edge Functions is essentieel voor gezonde winstmarges.
 - LaunchStudio bouwt de maatwerk backend-architectuur om creditsystemen, beeld-caching en multi-provider routering naadloos te implementeren.
 
-[Stop met verlies draaien op elke gegenereerde afbeelding. Bouw een winstgevende architectuur met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Stop met verlies draaien op elke gegenereerde afbeelding. Bouw een winstgevende architectuur met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

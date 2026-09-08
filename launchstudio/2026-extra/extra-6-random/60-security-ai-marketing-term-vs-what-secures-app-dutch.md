@@ -13,10 +13,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "'Security AI' is een marketingterm — dit is wat uw app daadwerkelijk beveiligt",
   "description": "Een 'Security AI'-scanbadge vertelt u veel minder dan oprichters aannemen. Hier is wat deze scanners daadwerkelijk controleren, wat ze volledig missen, en wat echte beveiliging in plaats daarvan vereist.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/security-ai-marketing-term-vs-what-secures-app" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/security-ai-marketing-term-vs-what-secures-app" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Dit is precies het onderscheid waar Herre Roelevink, CEO van LaunchStudio en Man
 
 Echte beveiligingsdekking voor een AI-gegenereerde app betekent doelbewust controleren over meerdere categorieën die een marketingbadge niet raakt: autorisatielogica geverifieerd op het datalaagniveau, niet alleen in de interface; rate limiting en invoervalidatie op elk eindpunt; versleutelingspraktijken die verder gaan dan alleen HTTPS; en een gedefinieerd proces voor wat er gebeurt als er toch iets misgaat. Geen van deze verschijnt in een geheimenscan, en geen ervan is optioneel alleen omdat een badge elders op de pagina impliceert dat het zware werk al gedaan is.
 
-LaunchStudio brengt Manifera's enterprise-grade engineering — meer dan 11 jaar ervaring, meer dan 120 technici, werk vertrouwd door klanten zoals Vodafone en TNO — naar precies dit soort beoordeling met volledige reikwijdte, waarbij ons Amsterdamse team de beveiligingsbadge van een leverancier behandelt als een startpunt, nooit als een conclusie. Als u vertrouwt op de goedkeuring van een scantool en wilt weten wat die daadwerkelijk dekte, kunt u [berekenen wat een volledige beveiligingsbeoordeling zou kosten](https://launchstudio.eu/en/#calculator) en het verschil zelf zien. De praktijk van Manifera voor [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/) behandelt autorisatie, isolatie en incidentgereedheid als eersteklas vereisten, geen bijzaken die worden toegevoegd bovenop een geslaagde scan.
+LaunchStudio brengt Manifera's enterprise-grade engineering — meer dan 11 jaar ervaring, meer dan 120 technici, werk vertrouwd door klanten zoals Vodafone en TNO — naar precies dit soort beoordeling met volledige reikwijdte, waarbij ons Amsterdamse team de beveiligingsbadge van een leverancier behandelt als een startpunt, nooit als een conclusie. Als u vertrouwt op de goedkeuring van een scantool en wilt weten wat die daadwerkelijk dekte, kunt u [berekenen wat een volledige beveiligingsbeoordeling zou kosten](https://launchstudio.eu/nl/#calculator) en het verschil zelf zien. De praktijk van Manifera voor [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/) behandelt autorisatie, isolatie en incidentgereedheid als eersteklas vereisten, geen bijzaken die worden toegevoegd bovenop een geslaagde scan.
 
 ## Echt voorbeeld
 

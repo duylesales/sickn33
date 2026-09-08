@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-24",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/you-can-build-an-app-with-ai-in-a-weekend-heres-week-two"
+    "@id": "https://launchstudio.eu/nl/blog/you-can-build-an-app-with-ai-in-a-weekend-heres-week-two"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Een toegewijde secrets manager (zoals Doppler, 1Password voor ontwikkelaars, of 
 
 ## Checklist Item Vijf: Krijg een tweede paar ogen voordat echte gebruikers arriveren
 
-Niets van het bovenstaande is exotisch of moeilijk te begrijpen zodra het aangewezen wordt, wat exact het probleem is – een oprichter die diep in zijn eigen weekend-build zit heeft geen natuurlijke prikkel om te stoppen en specifiek hierop te controleren. Dit is precies de kloof die een tweede, onafhankelijke beoordeling sluit. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort geheimen- en repository-audit uit als een standaard eerste stap in haar Launch Ready-pakket, ondersteund door Manifera's 11+ jaar ervaring met productie-engineering.
+Niets van het bovenstaande is exotisch of moeilijk te begrijpen zodra het aangewezen wordt, wat exact het probleem is – een oprichter die diep in zijn eigen weekend-build zit heeft geen natuurlijke prikkel om te stoppen en specifiek hierop te controleren. Dit is precies de kloof die een tweede, onafhankelijke beoordeling sluit. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort geheimen- en repository-audit uit als een standaard eerste stap in haar Launch Ready-pakket, ondersteund door Manifera's 11+ jaar ervaring met productie-engineering.
 
 Manifera's audits voor geheimen en configuratie worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Laten we aan de slag gaan — van prototype tot productie in weken](https://launchstudio.eu/en/#contact).
+[Laten we aan de slag gaan — van prototype tot productie in weken](https://launchstudio.eu/nl/#contact).
 
 ## Voorbij API-sleutels: Een volledigere geheimenchecklist vóór de lancering
 

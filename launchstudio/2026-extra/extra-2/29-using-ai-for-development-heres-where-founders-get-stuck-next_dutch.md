@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-27",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/using-ai-for-development-heres-where-founders-get-stuck-next"
+    "@id": "https://launchstudio.eu/nl/blog/using-ai-for-development-heres-where-founders-get-stuck-next"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Als een gebruikersrecord een rol- of machtigingsveld omvat – "lid," "beheerder
 
 ## Wat het herstellen hiervan vereist
 
-Een correcte herstelling definieert expliciet welke velden elk specifiek eindpunt mag bijwerken – een toestemmingslijst (allow-list) in plaats van het accepteren van wat een verzoek toevallig bevat. Consequent toegepast over elk update-pad in een applicatie. [LaunchStudio](https://launchstudio.eu/en/) auditeert exact dit patroon over een gehele codebase, ondersteund door Manifera's 11+ jaar ervaring met backend-engineering gedisciplineerd toegepast op producten op oprichtersschaal.
+Een correcte herstelling definieert expliciet welke velden elk specifiek eindpunt mag bijwerken – een toestemmingslijst (allow-list) in plaats van het accepteren van wat een verzoek toevallig bevat. Consequent toegepast over elk update-pad in een applicatie. [LaunchStudio](https://launchstudio.eu/nl/) auditeert exact dit patroon over een gehele codebase, ondersteund door Manifera's 11+ jaar ervaring met backend-engineering gedisciplineerd toegepast op producten op oprichtersschaal.
 
 Manifera's backend-beveiligingsaudits worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

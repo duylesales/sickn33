@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Wat oprichters die zoeken naar 'AI for coding' zouden moeten vragen voordat ze een tool kiezen",
   "description": "Een checklist voor niet-technische oprichters die AI for coding-tools vergelijken, met de vragen die veel meer ertoe doen dan demosnelheid of marketingtekst.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-for-coding-founder-questions" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-for-coding-founder-questions" }
 }
 </script>
 
@@ -53,7 +53,7 @@ Geen van deze vragen komt vanzelf naar boven terwijl u demovideo's aan het verge
 
 ## Waarom deze lijst meer ertoe doet dan welke tool "het beste aanvoelt"
 
-De technici van Manifera — hetzelfde team achter 160+ opgeleverde projecten voor klanten als Vodafone en TNO — hebben genoeg door AI gegenereerde codebases van Lovable, Bolt, Cursor en v0 beoordeeld om te weten dat de tools grotendeels overeenkomen in demokwaliteit en sterk uiteenlopen bij precies deze onopvallende standaardinstellingen. Ons team in Singapore, verantwoordelijk voor het Zuidoost-Aziatische deel van het werk van LaunchStudio, doorloopt deze zelfde checklist met oprichters, zowel voordat als nadat ze al een tool hebben gekozen. Als u nog aan het beslissen bent, [boek dan een gratis intakegesprek van 15 minuten](https://launchstudio.eu/en/#contact) en leg uw shortlist voor aan iemand die u de tool niet probeert te verkopen. Voor het trackrecord in softwareontwikkeling achter dat advies is de praktijk [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera de moeite waard.
+De technici van Manifera — hetzelfde team achter 160+ opgeleverde projecten voor klanten als Vodafone en TNO — hebben genoeg door AI gegenereerde codebases van Lovable, Bolt, Cursor en v0 beoordeeld om te weten dat de tools grotendeels overeenkomen in demokwaliteit en sterk uiteenlopen bij precies deze onopvallende standaardinstellingen. Ons team in Singapore, verantwoordelijk voor het Zuidoost-Aziatische deel van het werk van LaunchStudio, doorloopt deze zelfde checklist met oprichters, zowel voordat als nadat ze al een tool hebben gekozen. Als u nog aan het beslissen bent, [boek dan een gratis intakegesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en leg uw shortlist voor aan iemand die u de tool niet probeert te verkopen. Voor het trackrecord in softwareontwikkeling achter dat advies is de praktijk [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera de moeite waard.
 
 ## Echt voorbeeld
 

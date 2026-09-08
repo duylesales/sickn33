@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Uw AI-frontend in Almere is geweldig. Niemand bouwde de backend erachter",
   "description": "Een voor-en-na blik op wat er gebeurt wanneer een indrukwekkende AI-frontend gebouwd in Almere eindelijk een echte backend-belasting ontmoet, en wat oprichters daaraan moeten doen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-frontend-almere" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-frontend-almere" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Dit is waar LaunchStudio in beeld komt. We raken de frontend niet aan — de int
 
 ## Waarom Almere's groeicurve dit urgent maakt
 
-Almere is een van de snelst groeiende steden van Nederland en een hub voor jonge ondernemers en technologie-gerichte kleine bedrijven binnen Flevoland — een provincie gedefinieerd door haar relatief recente landaanwinning en een cultuur van dingen vanaf nul opbouwen. Diezelfde "bouw het uit het niets" energie die Almere zo'n vruchtbare bodem maakt voor nieuwe startups betekent ook dat oprichters hier snel bewegen en niet altijd pauzeren om te vragen wat er structureel onder hun product zit. Als u een helderder beeld wilt van wat een deugdelijke backend-build kost voor uw specifieke frontend, geeft onze [calculator](https://launchstudio.eu/en/#calculator) een realistische inschatting. Voor een blik op Manifera's bredere engineeringwerk in backend- en webapplicaties, zie [Manifera's web app development pagina](https://www.manifera.com/services/web-app-develop/).
+Almere is een van de snelst groeiende steden van Nederland en een hub voor jonge ondernemers en technologie-gerichte kleine bedrijven binnen Flevoland — een provincie gedefinieerd door haar relatief recente landaanwinning en een cultuur van dingen vanaf nul opbouwen. Diezelfde "bouw het uit het niets" energie die Almere zo'n vruchtbare bodem maakt voor nieuwe startups betekent ook dat oprichters hier snel bewegen en niet altijd pauzeren om te vragen wat er structureel onder hun product zit. Als u een helderder beeld wilt van wat een deugdelijke backend-build kost voor uw specifieke frontend, geeft onze [calculator](https://launchstudio.eu/nl/#calculator) een realistische inschatting. Voor een blik op Manifera's bredere engineeringwerk in backend- en webapplicaties, zie [Manifera's web app development pagina](https://www.manifera.com/services/web-app-develop/).
 
 ## Signalen dat uw backend niet gebouwd is voor gelijktijdige gebruikers
 

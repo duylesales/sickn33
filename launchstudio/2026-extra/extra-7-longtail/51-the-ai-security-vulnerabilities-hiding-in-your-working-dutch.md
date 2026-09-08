@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
   "@type": "Article",
   "headline": "De AI-beveiligingskwetsbaarheden die zich verbergen in uw werkende prototype",
   "description": "Een werkend prototype en een veilig prototype zijn niet hetzelfde. Dit is een praktische checklist om de AI-beveiligingskwetsbaarheden te vinden die uw AI-codeertool nooit heeft genoemd.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-08",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/the-ai-security-vulnerabilities-hiding-in-your-working" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/the-ai-security-vulnerabilities-hiding-in-your-working" }
 }
 </script>
 
@@ -60,7 +60,7 @@ Het is ook de moeite waard om eerlijk te zijn over wat deze checklist niet kan. 
 
 ## Waar dit daadwerkelijk wordt opgelost
 
-Een van deze hiaten zelf vinden is nuttig. Het correct oplossen, op een manier die niet stilletjes hetzelfde gat weer opent drie functies later, is een andere vaardigheid — een vaardigheid die de meeste niet-technische oprichters redelijkerwijs niet hebben en ook niet vanaf nul hoeven op te bouwen. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, gevestigd in een kantoor aan de Herengracht 420 in Amsterdam naast teams in Singapore en Ho Chi Minh-stad. Dat team besteedt zijn dagen aan het lezen van precies dit soort door AI gegenereerde code, het dichten van de hiaten, en het ongemoeid laten van uw daadwerkelijke frontend. U kunt [beschrijven wat u heeft gebouwd en waar de beveiligingszorgen zitten](https://launchstudio.eu/en/#process), en voor een beeld van de engineeringstandaard achter de oplossing, bekijk hoe [Manifera aangepaste softwareontwikkeling benadert](https://www.manifera.com/services/custom-software-development/) voor zijn zakelijke klanten.
+Een van deze hiaten zelf vinden is nuttig. Het correct oplossen, op een manier die niet stilletjes hetzelfde gat weer opent drie functies later, is een andere vaardigheid — een vaardigheid die de meeste niet-technische oprichters redelijkerwijs niet hebben en ook niet vanaf nul hoeven op te bouwen. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, gevestigd in een kantoor aan de Herengracht 420 in Amsterdam naast teams in Singapore en Ho Chi Minh-stad. Dat team besteedt zijn dagen aan het lezen van precies dit soort door AI gegenereerde code, het dichten van de hiaten, en het ongemoeid laten van uw daadwerkelijke frontend. U kunt [beschrijven wat u heeft gebouwd en waar de beveiligingszorgen zitten](https://launchstudio.eu/nl/#process), en voor een beeld van de engineeringstandaard achter de oplossing, bekijk hoe [Manifera aangepaste softwareontwikkeling benadert](https://www.manifera.com/services/custom-software-development/) voor zijn zakelijke klanten.
 
 ## Echt voorbeeld
 

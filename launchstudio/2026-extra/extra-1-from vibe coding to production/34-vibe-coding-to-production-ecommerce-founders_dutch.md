@@ -33,9 +33,9 @@ E-commerceverkeer is vaak piekvormig in plaats van gestaag — een marketingcamp
 
 Voor een e-commerce-specifiek prototype is de algemene productiegereedheidschecklist elders in deze serie behandeld volledig van toepassing, met voorraadgelijktijdigheid, betalingsreconciliatie, en orderstatusbeheer die specifiek verhoogde prioriteit rechtvaardigen relatief aan een typisch SaaS-product, gegeven hoe direct en onmiddellijk storingen in deze gebieden vertalen naar verloren geld en beschadigd klantvertrouwen.
 
-[LaunchStudio](https://launchstudio.eu/en/) verhardt e-commerce-specifieke prototypes met bijzondere aandacht voor voorraadgelijktijdigheid, betalingsreconciliatie, en orderstatusbeheer, gesteund door Manifera's engineeringervaring over meerdere productie-e-commerce- en marketplace-applicaties.
+[LaunchStudio](https://launchstudio.eu/nl/) verhardt e-commerce-specifieke prototypes met bijzondere aandacht voor voorraadgelijktijdigheid, betalingsreconciliatie, en orderstatusbeheer, gesteund door Manifera's engineeringervaring over meerdere productie-e-commerce- en marketplace-applicaties.
 
-[Laat jouw e-commerceprototype testen tegen de faalmodi die het meest ertoe doen voor het verkopen van echte voorraad](https://launchstudio.eu/en/#calculator) — algemene verharding plus de specifieke risico's die e-commerce verscherpt.
+[Laat jouw e-commerceprototype testen tegen de faalmodi die het meest ertoe doen voor het verkopen van echte voorraad](https://launchstudio.eu/nl/#calculator) — algemene verharding plus de specifieke risico's die e-commerce verscherpt.
 
 ## Echt voorbeeld
 

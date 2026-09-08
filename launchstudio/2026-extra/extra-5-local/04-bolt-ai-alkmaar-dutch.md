@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Bolt AI in Alkmaar: Wat een lokale SaaS-oprichter op de harde manier leerde",
   "description": "Een waarschuwende, praktijkgerichte blik op wat Bolt AI wel en niet afhandelt voor Alkmaarse oprichters die hun eerste SaaS-product bouwen, gebaseerd op een daadwerkelijke beveiligingsfix.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/bolt-ai-alkmaar" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/bolt-ai-alkmaar" }
 }
 </script>
 
@@ -36,7 +36,7 @@ De ernst varieert afhankelijk van wat er is blootgesteld. Het lekken van een ope
 
 Dit is precies het type gat waarvoor LaunchStudio is gebouwd. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met ruim 11 jaar ervaring in productie-engineering, werkend vanuit een klantgericht kantoor aan de Herengracht 420 in Amsterdam naast ontwikkelhubs in Singapore en Vietnam. Onze engineers doorlopen een door Bolt gebouwde app op dezelfde manier waarop ze elke productie-codebase voor een enterprise-klant zouden beoordelen: controleren wat er precies aan de clientzijde is blootgesteld, wat deugdelijk is afgeschermd op de server, en wat authenticatie daadwerkelijk beschermt versus wat alleen zo lijkt. Die beoordeling duurt doorgaans een paar dagen, geen weken, juist omdat het onderliggende probleem afgekaderd en goed begrepen is — het is een kwestie van precies weten waar te kijken, niet een breed onderzoek met een open einde.
 
-Als u een Alkmaarse oprichter bent die zich afvraagt of uw eigen Bolt-build deze kwetsbaarheid heeft, is het de moeite waard om een tweede mening te vragen voordat het een echt incident wordt. Het [web application development team](https://www.manifera.com/services/web-app-develop/) van Manifera heeft dit type herstel herhaaldelijk uitgevoerd, en de [prijspakketten](https://launchstudio.eu/en/#packages) van LaunchStudio laten zien wat een beveiligingsronde met vaste omvang doorgaans kost. De meeste van deze trajecten beginnen met een kort gesprek, niet met een langdurig intake-proces — een engineer kijkt naar de daadwerkelijke codebase en kan meestal binnen een dag vertellen of de blootstelling gering of ernstig is.
+Als u een Alkmaarse oprichter bent die zich afvraagt of uw eigen Bolt-build deze kwetsbaarheid heeft, is het de moeite waard om een tweede mening te vragen voordat het een echt incident wordt. Het [web application development team](https://www.manifera.com/services/web-app-develop/) van Manifera heeft dit type herstel herhaaldelijk uitgevoerd, en de [prijspakketten](https://launchstudio.eu/nl/#packages) van LaunchStudio laten zien wat een beveiligingsronde met vaste omvang doorgaans kost. De meeste van deze trajecten beginnen met een kort gesprek, niet met een langdurig intake-proces — een engineer kijkt naar de daadwerkelijke codebase en kan meestal binnen een dag vertellen of de blootstelling gering of ernstig is.
 
 ## De les die hieruit getrokken moet worden
 

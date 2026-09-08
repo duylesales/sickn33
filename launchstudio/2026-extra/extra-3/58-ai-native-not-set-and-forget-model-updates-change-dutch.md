@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-native-not-set-and-forget-model-updates-change"
+    "@id": "https://launchstudio.eu/nl/blog/ai-native-not-set-and-forget-model-updates-change"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Een directe storing – het soort dat gedurende bredere richtlijnen over foutafh
 
 Het periodiek herbeoordelen van de daadwerkelijke uitvoerkwaliteit van uw AI-functie tegen uw eigen gevestigde standaard, en niet simpelweg continuïteit aannemen omdat er technisch niets is gebroken; u abonneren op de changelog of model-update aankondigingen van uw specifieke AI-provider waar beschikbaar; en het behandelen van een significante model-update als een bewuste trigger voor her-verificatie. Dit spiegelt hoe elke andere significante wijziging in afhankelijkheden die in bredere richtlijnen wordt behandeld een verse blik rechtvaardigt in plaats van aangenomen continuïteit.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters bij het instellen van exact deze voortdurende waakzaamheid rond AI-model-updates als onderdeel van een bredere observatiepraktijk (observability). Wij behandelen modelgedrag als iets om actief te monitoren in plaats van een eenmalige integratie die aangenomen wordt voor onbepaalde tijd stabiel te blijven, ondersteund door Manifera's bredere engineering-discipline in het behouden van productkwaliteit tegen evoluerende externe afhankelijkheden.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters bij het instellen van exact deze voortdurende waakzaamheid rond AI-model-updates als onderdeel van een bredere observatiepraktijk (observability). Wij behandelen modelgedrag als iets om actief te monitoren in plaats van een eenmalige integratie die aangenomen wordt voor onbepaalde tijd stabiel te blijven, ondersteund door Manifera's bredere engineering-discipline in het behouden van productkwaliteit tegen evoluerende externe afhankelijkheden.
 
-[Krijg een voortdurend proces om kwaliteitsverschuivingen door modellen op te merken voordat klanten dat doen](https://launchstudio.eu/en/#calculator) — dit is geen eenmalige integratie, het is een voortdurende relatie met een afhankelijkheid die blijft veranderen.
+[Krijg een voortdurend proces om kwaliteitsverschuivingen door modellen op te merken voordat klanten dat doen](https://launchstudio.eu/nl/#calculator) — dit is geen eenmalige integratie, het is een voortdurende relatie met een afhankelijkheid die blijft veranderen.
 
 ## Het bouwen van een lichtgewicht respons-protocol voor model-updates
 

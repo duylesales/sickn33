@@ -12,10 +12,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "Uw eigen portfolio van 'AI SaaS-producten' auditeren voordat u investeerders pitcht",
   "description": "Meerdere AI SaaS-producten onder één bedrijf runnen betekent dat due diligence naar alle producten kijkt, niet alleen naar uw beste. Dit is een raamwerk op oprichtersniveau om uw eigen portfolio eerst te auditeren.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-saas-products-portfolio-audit" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-saas-products-portfolio-audit" }
 }
 </script>
 
@@ -45,7 +45,7 @@ Voer dit uit voor elk product in uw portfolio, niet alleen het vlaggenschip:
 
 ## Gedeelde-infrastructuurgaten repareren zonder uw funding-ronde te vertragen
 
-Zodra u heeft vastgesteld waar het risico zich daadwerkelijk concentreert, is de oplossing meestal beperkter dan oprichters vrezen — u repareert een gedeeld systeem, niet drie afzonderlijke producten opnieuw bouwen. LaunchStudio brengt Manifera's enterprise-grade engineering, dezelfde standaard gebruikt bij meer dan 160 opgeleverde projecten voor klanten als Vodafone en TNO, naar precies dit soort multi-productbeoordeling. Ons team, werkend vanuit Amsterdam, begint doorgaans met de bovenstaande inventarisatie van gedeelde infrastructuur en prioriteert reparaties op basis van impactzone in plaats van op basis van welk product toevallig het zichtbaarst is. Als u due diligence ingaat en dit wilt laten doen voordat de technisch adviseur van een investeerder het zelfstandig vindt, kunt u [de omvang van een portfoliobrede beoordeling berekenen](https://launchstudio.eu/en/#calculator). De bredere ervaring van Manifera met enterprise-beveiliging en -architectuur staat beschreven in het [portfolio van opgeleverde projecten](https://www.manifera.com/portfolio/).
+Zodra u heeft vastgesteld waar het risico zich daadwerkelijk concentreert, is de oplossing meestal beperkter dan oprichters vrezen — u repareert een gedeeld systeem, niet drie afzonderlijke producten opnieuw bouwen. LaunchStudio brengt Manifera's enterprise-grade engineering, dezelfde standaard gebruikt bij meer dan 160 opgeleverde projecten voor klanten als Vodafone en TNO, naar precies dit soort multi-productbeoordeling. Ons team, werkend vanuit Amsterdam, begint doorgaans met de bovenstaande inventarisatie van gedeelde infrastructuur en prioriteert reparaties op basis van impactzone in plaats van op basis van welk product toevallig het zichtbaarst is. Als u due diligence ingaat en dit wilt laten doen voordat de technisch adviseur van een investeerder het zelfstandig vindt, kunt u [de omvang van een portfoliobrede beoordeling berekenen](https://launchstudio.eu/nl/#calculator). De bredere ervaring van Manifera met enterprise-beveiliging en -architectuur staat beschreven in het [portfolio van opgeleverde projecten](https://www.manifera.com/portfolio/).
 
 ## Echt voorbeeld
 

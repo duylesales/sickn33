@@ -13,10 +13,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "Waarom sommige AI SaaS-producten nooit een menselijk supportteam nodig hebben (en de meeste toch wel)",
   "description": "Een opiniestuk over waarom de veelvoorkomende aanname dat de chatassistent van een ai saas-product menselijke support volledig kan vervangen, meestal instort op precies de momenten die het meest tellen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-saas-never-needs-human-support" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-saas-never-needs-human-support" }
 }
 </script>
 
@@ -52,7 +52,7 @@ De oprichters die zich branden, zijn niet degenen die goede AI-assistenten bouwe
 
 De praktische oplossing is eenvoudig: bepaal vooraf welke categorieën verzoeken de assistent moet doorverwijzen in plaats van proberen op te lossen — alles met geld, alles met een geschil tussen twee gebruikers, alles wat de assistent al meer dan eens tevergeefs heeft geprobeerd op te lossen — en zorg ervoor dat een echt persoon die overdracht direct ontvangt, niet nadat een gefrustreerde gebruiker het al heeft opgegeven.
 
-Onze technici, werkend vanuit Ho Chi Minh-stad samen met teams in Amsterdam en Singapore, helpen SaaS-oprichters regelmatig bij het bouwen van precies dit soort overdrachtslogica in producten die, net als AfspraakSlim, begonnen met een AI-only supportaanname. LaunchStudio brengt Manifera's enterprise-grade engineering naar dat werk, dezelfde standaard achter Manifera's [diensten voor webapplicatieontwikkeling](https://www.manifera.com/services/web-app-develop/). Als het supportplan van uw product momenteel "de bot handelt het af" is, kunt u [berekenen wat het bouwen van een goed terugvalpad zou kosten](https://launchstudio.eu/en/#calculator).
+Onze technici, werkend vanuit Ho Chi Minh-stad samen met teams in Amsterdam en Singapore, helpen SaaS-oprichters regelmatig bij het bouwen van precies dit soort overdrachtslogica in producten die, net als AfspraakSlim, begonnen met een AI-only supportaanname. LaunchStudio brengt Manifera's enterprise-grade engineering naar dat werk, dezelfde standaard achter Manifera's [diensten voor webapplicatieontwikkeling](https://www.manifera.com/services/web-app-develop/). Als het supportplan van uw product momenteel "de bot handelt het af" is, kunt u [berekenen wat het bouwen van een goed terugvalpad zou kosten](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

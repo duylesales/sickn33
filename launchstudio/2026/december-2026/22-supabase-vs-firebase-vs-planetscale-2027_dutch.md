@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-12-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/supabase-vs-firebase-vs-planetscale-2027"
+    "@id": "https://launchstudio.eu/nl/blog/supabase-vs-firebase-vs-planetscale-2027"
   }
 }
 </script>
@@ -65,9 +65,9 @@ PlanetScale biedt een MySQL-compatibele database ontworpen voor horizontale scha
 
 Voor de meeste oprichters is de database die uw AI-tool heeft gekozen waarschijnlijk een acceptabel startpunt. Het veruit grotere risico zit in de configuratie: Row Level Security (RLS) regels die in Supabase uitgeschakeld blijven of verkeerd zijn ingesteld, Firestore security rules die wagenwijd openstaan, of ontbrekende database-indexen die prestatieproblemen veroorzaken zodra de data toeneemt. Deze configuratiefouten komen massaal voor in AI-prototypes en vormen een acuut beveiligingsrisico, niet slechts een suboptimale architectuurkeuze.
 
-[LaunchStudio](https://launchstudio.eu/en/) auditeert en configureert de door uw AI-tool gekozen database standaard bij elke productie-uitrol, ondersteund door Manifera's diepgaande engineeringervaring in PostgreSQL, MongoDB, MySQL, Supabase en Firebase.
+[LaunchStudio](https://launchstudio.eu/nl/) auditeert en configureert de door uw AI-tool gekozen database standaard bij elke productie-uitrol, ondersteund door Manifera's diepgaande engineeringervaring in PostgreSQL, MongoDB, MySQL, Supabase en Firebase.
 
-[Laat uw databasebeveiliging auditeren](https://launchstudio.eu/en/#contact) — een verkeerd ingestelde RLS-policy is een van de meest voorkomende beveiligingslekken die LaunchStudio aantreft in AI-applicaties.
+[Laat uw databasebeveiliging auditeren](https://launchstudio.eu/nl/#contact) — een verkeerd ingestelde RLS-policy is een van de meest voorkomende beveiligingslekken die LaunchStudio aantreft in AI-applicaties.
 
 ## Wat Het Werkelijk Kost in Verschillende Groeifasen
 

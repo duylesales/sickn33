@@ -16,7 +16,7 @@ Doelpersona: CTO / Enterprise Architect
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CTO / Enterprise Architect
   "datePublished": "2026-12-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/software-for-ai"
+    "@id": "https://launchstudio.eu/nl/blog/software-for-ai"
   }
 }
 </script>
@@ -61,7 +61,7 @@ Een professionele AI-stack verruilt starre monolieten voor gespecialiseerde, ont
 
 Het overbruggen van de leercurve naar de Enterprise AI-Stack kost teams vaak maanden aan experimenteren.
 
-[LaunchStudio](https://launchstudio.eu/en/), gedragen door de cloud-infrastructuur experts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, versnelt deze implementatie:
+[LaunchStudio](https://launchstudio.eu/nl/), gedragen door de cloud-infrastructuur experts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, versnelt deze implementatie:
 1. **Infrastructure-as-Code (Terraform):** Wij richten uw complete AI-omgeving (VPC's, Supabase `pgvector`, Redis semantische caches en LLM Gateways) geautomatiseerd en reproduceerbaar in.
 2. **Telemetry & Observability:** Wij implementeren **Langfuse** of **Helicone**, waardoor u exact kunt zien hoeveel tokens elke gebruiker verbruikt en waarom specifieke prompts eventueel hallucineerden.
 3. **Ingebouwde Beveiliging:** Wij configureren PII-masking proxies (Microsoft Presidio) en semantische firewalls (NeMo Guardrails) aan de rand van uw netwerk voor directe SOC2- en AVG-naleving.

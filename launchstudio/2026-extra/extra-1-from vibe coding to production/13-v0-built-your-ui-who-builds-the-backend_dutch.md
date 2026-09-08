@@ -29,9 +29,9 @@ Een v0-frontend verbinden met echte functionaliteit betekent: een databaseschema
 
 Ondanks de hoeveelheid resterend werk is beginnen met een goed gebouwde v0-frontend een oprecht efficiënte aanpak specifiek voor een niet-technische founder, omdat het betekent dat ontwerpbeslissingen en gebruikerservaringiteratie — vaak het meest subjectieve, meningsrijke deel van het bouwen van een product — al grotendeels zijn opgelost voordat backendwerk begint, waardoor dat werk kan verlopen tegen een stabiel, al gevalideerd doel in plaats van een bewegend doel.
 
-[LaunchStudio](https://launchstudio.eu/en/) bouwt de complete backendlaag — database, authenticatie, betalingen, hosting — rond jouw bestaande v0-interface zonder het ontwerp te veranderen dat je al hebt afgerond, gesteund door Manifera's full-stack-engineeringervaring over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) bouwt de complete backendlaag — database, authenticatie, betalingen, hosting — rond jouw bestaande v0-interface zonder het ontwerp te veranderen dat je al hebt afgerond, gesteund door Manifera's full-stack-engineeringervaring over 160+ opgeleverde projecten.
 
-[Breng ons jouw v0-interface en beschrijf wat het daadwerkelijk moet doen](https://launchstudio.eu/en/#contact) — het ontwerpwerk is vaak het moeilijkste deel, en dat heb je waarschijnlijk al gedaan.
+[Breng ons jouw v0-interface en beschrijf wat het daadwerkelijk moet doen](https://launchstudio.eu/nl/#contact) — het ontwerpwerk is vaak het moeilijkste deel, en dat heb je waarschijnlijk al gedaan.
 
 ## Echt voorbeeld
 

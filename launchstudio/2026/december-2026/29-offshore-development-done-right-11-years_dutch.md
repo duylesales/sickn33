@@ -16,7 +16,7 @@ Doelpersona: Bureau / Freelancer (White-Label Partner)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Bureau / Freelancer (White-Label Partner)
   "datePublished": "2026-12-29",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/offshore-development-done-right-11-years"
+    "@id": "https://launchstudio.eu/nl/blog/offshore-development-done-right-11-years"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Zowel Manifera's enterprise-projecten als LaunchStudio's lanceerpakketten hanter
 
 ## Deze Lessen Toegepast voor AI-Native Oprichters en Bureaus
 
-Voor AI-oprichters en de bureaus die hen bedienen, rust [LaunchStudio](https://launchstudio.eu/en/) volledig op deze beproefde structuur: Herre Roelevinks team in Amsterdam verzorgt het klantcontact, Manifera's vaste engineers in Vietnam leveren de backend-engineering, en de hub in Singapore houdt de planning strak. Freelancers en bureaus kunnen LaunchStudio tevens inzetten als discrete **white-label technische partner** (*"Jouw branding, onze engineering"*), waardoor zij deze enterprise-infrastructuur direct kunnen aanbieden aan hun eigen klanten.
+Voor AI-oprichters en de bureaus die hen bedienen, rust [LaunchStudio](https://launchstudio.eu/nl/) volledig op deze beproefde structuur: Herre Roelevinks team in Amsterdam verzorgt het klantcontact, Manifera's vaste engineers in Vietnam leveren de backend-engineering, en de hub in Singapore houdt de planning strak. Freelancers en bureaus kunnen LaunchStudio tevens inzetten als discrete **white-label technische partner** (*"Jouw branding, onze engineering"*), waardoor zij deze enterprise-infrastructuur direct kunnen aanbieden aan hun eigen klanten.
 
-[Bespreek een white-label partnerschap](https://launchstudio.eu/en/#contact) als u als bureau of freelancer behoefte heeft aan extra betrouwbare engineeringcapaciteit.
+[Bespreek een white-label partnerschap](https://launchstudio.eu/nl/#contact) als u als bureau of freelancer behoefte heeft aan extra betrouwbare engineeringcapaciteit.
 
 ## Een Due Diligence Checklist voor het Beoordelen van een Offshore Partner
 

@@ -33,9 +33,9 @@ De enige betrouwbare test is bewust dingen breken — je database midden in een 
 
 Gaten in foutafhandeling zijn onzichtbaar tijdens normale ontwikkeling, omdat normale ontwikkeling voornamelijk het happy path beoefent — je test of je functie werkt, niet of het netjes faalt, en een founder die snel itereert met een AI-tool heeft geen natuurlijke reden om bewust zijn eigen werkende demo te saboteren. Het gat wordt pas zichtbaar wanneer er daadwerkelijk iets misgaat voor een echte gebruiker, wat tegelijkertijd het slechtst mogelijke moment is om het te ontdekken en, statistisch gezien, onvermijdelijk zodra je genoeg echte gebruikers hebt die van genoeg externe diensten afhankelijk zijn.
 
-[LaunchStudio](https://launchstudio.eu/en/) implementeert gestructureerde, dienstspecifieke foutafhandeling — inclusief time-outconfiguratie en retry-logica — als standaard onderdeel van het van vibe coding naar productie brengen van je prototype, getest door bewust de storingen te triggeren die je eigen ontwikkelingsproces nooit een reden had om te triggeren.
+[LaunchStudio](https://launchstudio.eu/nl/) implementeert gestructureerde, dienstspecifieke foutafhandeling — inclusief time-outconfiguratie en retry-logica — als standaard onderdeel van het van vibe coding naar productie brengen van je prototype, getest door bewust de storingen te triggeren die je eigen ontwikkelingsproces nooit een reden had om te triggeren.
 
-[Laat je foutpaden testen, niet alleen je happy path](https://launchstudio.eu/en/#calculator) — de storingen die ertoe doen zijn degene die je nog niet hebt gezien.
+[Laat je foutpaden testen, niet alleen je happy path](https://launchstudio.eu/nl/#calculator) — de storingen die ertoe doen zijn degene die je nog niet hebt gezien.
 
 ## Echt voorbeeld
 

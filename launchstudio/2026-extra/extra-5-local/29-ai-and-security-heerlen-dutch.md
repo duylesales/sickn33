@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI en beveiliging in Heerlen: Het gesprek dat oprichters te laat voeren",
   "description": "Oprichters in Heerlen hebben de neiging om vragen over AI en beveiliging pas na de lancering te stellen, en niet dervoor. Dit is waarom die timing meer kost dan nodig is.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/29-ai-and-security-heerlen" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/29-ai-and-security-heerlen" }
 }
 </script>
 
@@ -36,7 +36,7 @@ LaunchStudio is gebouwd rond dit exacte timingprobleem. Ondersteund door Manifer
 
 ## Het gesprek sneller starten dan u denkt dat u moet
 
-De oprichters die winnen zijn niet degenen die AI-tools vermijden uit beveiligingsvoorzichtigheid — het zijn degenen die een beveiligingsronde inplannen als een normale stap, op dezelfde manier waarop u een ontwerpreview zou inplannen, in plaats van te wachten op een reden om er een nodig te hebben. Als u iets bouwt in Heerlen of elders in Limburg dat uiteindelijk echte gebruikersgegevens of betalingen raakt, [praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/en/#process) vóór uw lanceringsdatum, en niet ná uw eerste incident. Manifera's bredere op beveiliging gerichte engineeringwerk is zichtbaar in haar [custom software development services](https://www.manifera.com/services/custom-software-development/).
+De oprichters die winnen zijn niet degenen die AI-tools vermijden uit beveiligingsvoorzichtigheid — het zijn degenen die een beveiligingsronde inplannen als een normale stap, op dezelfde manier waarop u een ontwerpreview zou inplannen, in plaats van te wachten op een reden om er een nodig te hebben. Als u iets bouwt in Heerlen of elders in Limburg dat uiteindelijk echte gebruikersgegevens of betalingen raakt, [praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#process) vóór uw lanceringsdatum, en niet ná uw eerste incident. Manifera's bredere op beveiliging gerichte engineeringwerk is zichtbaar in haar [custom software development services](https://www.manifera.com/services/custom-software-development/).
 
 ## De vragen om te stellen, zelfs als u het antwoord zelf niet kunt lezen
 

@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Beveiliging en AI in Zwolle: Waarom het tweede woord de hulp van het eerste nodig heeft",
   "description": "Zwolle's groeiende groep van met AI gebouwde startups staat voor een stil risico: AI schrijft snelle code, en niet noodzakelijkerwijs veilige code. Dit is wat beveiliging en AI daadwerkelijk betekent voor oprichters die in Zwolle lanceren.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/security-and-ai-zwolle" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/security-and-ai-zwolle" }
 }
 </script>
 
@@ -50,7 +50,7 @@ Het herstel is niet "stop met het gebruiken van AI-tools." Het is het toevoegen 
 
 LaunchStudio wordt ondersteund door Manifera, een team van meer dan 120 engineers die ruim 160 projecten hebben opgeleverd voor klanten waaronder Vodafone en CFLW Cyber Strategies — met name een cybersecuritybedrijf, wat u iets vertelt over het niveau van beveiligingsdenken dat Manifera meebrengt naar klanttrajecten. Onze engineers, gecoördineerd vanuit Manifera's hub in Singapore aan 100 Tras Street, voeren dezelfde soort dreigingsmodellering uit op de afrekenstroom van een Zwolse oprichter als ze zouden uitvoeren op een enterprise bankintegratie, alleen op een passende schaal afgestemd.
 
-Praktisch omvat een review op het gebied van beveiliging en AI: beleidsregels voor databasetoegang (is uw Supabase- of Postgres-instantie daadwerkelijk afgeschermd per gebruiker?), het verharden van authenticatie, het beheer van geheimen (niets gevoeligs zou ooit in uw frontend-bundel moeten worden meegegeven), invoervalidatie tegen injectie-aanvallen, en verificatie van betalingsstromen als u echte transacties verwerkt. U kunt een indruk krijgen van wat er doorgaans is inbegrepen door te kijken naar LaunchStudio's [dienstpakketten](https://launchstudio.eu/en/#packages).
+Praktisch omvat een review op het gebied van beveiliging en AI: beleidsregels voor databasetoegang (is uw Supabase- of Postgres-instantie daadwerkelijk afgeschermd per gebruiker?), het verharden van authenticatie, het beheer van geheimen (niets gevoeligs zou ooit in uw frontend-bundel moeten worden meegegeven), invoervalidatie tegen injectie-aanvallen, en verificatie van betalingsstromen als u echte transacties verwerkt. U kunt een indruk krijgen van wat er doorgaans is inbegrepen door te kijken naar LaunchStudio's [dienstpakketten](https://launchstudio.eu/nl/#packages).
 
 ## Waarom Zwolse oprichters specifiek niet moeten wachten
 

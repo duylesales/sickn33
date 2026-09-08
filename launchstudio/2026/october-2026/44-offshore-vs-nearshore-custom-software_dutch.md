@@ -44,13 +44,13 @@ Nearshoring houdt in dat u ontwikkelaars inhuurt in buurlanden of vergelijkbare 
 
 Wat als u de aanzienlijke kostenbesparing van Offshoring kunt combineren met de strikte juridische zekerheid, databeveiliging en strategische communicatie van Nearshoring?
 
-Dit is het **Hybride Model**, gepionierd door [Manifera](https://www.manifera.com/) en exclusief ingezet door haar startup-divisie [LaunchStudio](https://launchstudio.eu/en/).
+Dit is het **Hybride Model**, gepionierd door [Manifera](https://www.manifera.com/) en exclusief ingezet door haar startup-divisie [LaunchStudio](https://launchstudio.eu/nl/).
 
 Wanneer u samenwerkt met LaunchStudio, sluit u een rechtsgeldig contract af met een **Nederlandse juridische entiteit** gevestigd aan de **Herengracht 420 in Amsterdam (1017 BZ)**. Uw project wordt direct aangestuurd door een ervaren Europese Projectmanager in uw eigen tijdzone. Deze waarborgt dat uw software-architectuur 100% AVG-conform is, vertaalt uw zakelijke wensen naar nauwkeurige technische specificaties en is tijdens uw normale werkuren bereikbaar voor realtime besluitvorming.
 
 De daadwerkelijke codeer- en constructiewerkzaamheden worden echter uitgevoerd door onze eigen, fulltime senior engineeringteams in onze vestigingen aan **100 Tras Street (#16-01, 100 AM) in Singapore** en aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam**. Omdat Manifera deze teams al ruim 11 jaar heeft opgebouwd — in plaats van willekeurige freelancers per project in te huren — zijn dit hooggekwalificeerde software-engineers die werken volgens strikte ISO-conforme beveiligingsnormen, geautomatiseerde testsuites en veilige API-protocollen. Dit is dezelfde engineering-organisatie die ruim **160 projecten** heeft opgeleverd voor opdrachtgevers zoals Vodafone, TNO en CFLW.
 
-U profiteert van de enorme ontwikkelkracht en kostenbesparing van mondiale engineering, beschermd door het juridische kader en het strategische toezicht van een Europese partner. In de praktijk resulteert dit in tarieven die circa **20% bedragen** van wat een traditioneel West-Europees softwarebureau rekent. Zie onze [pakketten en tarieven](https://launchstudio.eu/en/#packages) voor een transparant overzicht.
+U profiteert van de enorme ontwikkelkracht en kostenbesparing van mondiale engineering, beschermd door het juridische kader en het strategische toezicht van een Europese partner. In de praktijk resulteert dit in tarieven die circa **20% bedragen** van wat een traditioneel West-Europees softwarebureau rekent. Zie onze [pakketten en tarieven](https://launchstudio.eu/nl/#packages) voor een transparant overzicht.
 
 ### Hoe het Hybride Model Er in de Dagelijkse Praktijk Uitziet
 
@@ -71,7 +71,7 @@ Concreet verloopt een hybride ontwikkelingstraject volgens een vast ritme:
 - Het Hybride Model van LaunchStudio combineert Nederlandse projectleiding en juridische zekerheid met de kostenefficiëntie van vaste mondiale enterprise engineeringteams.
 - Startups behouden een 24-uurs ontwikkelcyclus en besparen tot 80% op traditionele ontwikkelkosten zonder in te leveren op kwaliteit of AVG-compliance.
 
-[Profiteer van lage kosten met de zekerheid van een Nederlandse partner. Neem contact op met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Profiteer van lage kosten met de zekerheid van een Nederlandse partner. Neem contact op met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

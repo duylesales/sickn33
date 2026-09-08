@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/multi-currency-vat-ai-saas-eu"
+    "@id": "https://launchstudio.eu/nl/blog/multi-currency-vat-ai-saas-eu"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Het op de juiste manier krijgen hiervan betekent dat het facturatiesysteem de lo
 
 Dit is exact het soort kloof dat Manifera's ingenieurs sluiten voor AI-native SaaS-oprichters. Manifera heeft meer dan 11 jaar ervaring in productie-engineering en heeft facturatie- en nalevingssystemen geleverd voor enterprise-klanten zoals Vodafone en Xpar Vision. Het herstellen van een btw-berekening is dus geen gokwerk – het is een bekende controlelijst. Ons team, werkend vanuit het kantoor in Singapore op 100 Tras Street, ondersteunt oprichters die uitbreiden over meerdere belastingjurisdicties, inclusief EU-oprichters wier klantenbestand een aanname voor een enkel land is ontgroeid.
 
-Als uw facturatielogica is geschreven om één land af te handelen en uw klantenbestand daar voorbij is gegaan, is het de moeite waard om [uw architectuur te beoordelen tegen ons proces](https://launchstudio.eu/en/#process) vóór de volgende kwartaalaangifte, en niet erna.
+Als uw facturatielogica is geschreven om één land af te handelen en uw klantenbestand daar voorbij is gegaan, is het de moeite waard om [uw architectuur te beoordelen tegen ons proces](https://launchstudio.eu/nl/#process) vóór de volgende kwartaalaangifte, en niet erna.
 
 ## Terugbetalingen en creditnota's erven de btw van de oorspronkelijke factuur, en niet die van vandaag
 

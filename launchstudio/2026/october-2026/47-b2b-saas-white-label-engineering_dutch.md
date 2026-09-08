@@ -37,7 +37,7 @@ Een white-label softwarepartner is een gerenommeerd software-ontwikkelbedrijf da
 
 Voor uw klant lijkt het alsof uw eigen bureau 100% van het werk zelfstandig heeft uitgevoerd.
 
-Dit is exact hoe [LaunchStudio](https://launchstudio.eu/en/) Europese bureaus helpt te schalen. Gesteund door de immense ontwikkelkracht van [Manifera](https://www.manifera.com/) — met ruim **120 senior engineers** verspreid over vestigingen in Amsterdam, Singapore en Ho Chi Minhstad — fungeren wij als de discrete "machinekamer" voor toonaangevende ontwerp- en marketingbureaus.
+Dit is exact hoe [LaunchStudio](https://launchstudio.eu/nl/) Europese bureaus helpt te schalen. Gesteund door de immense ontwikkelkracht van [Manifera](https://www.manifera.com/) — met ruim **120 senior engineers** verspreid over vestigingen in Amsterdam, Singapore en Ho Chi Minhstad — fungeren wij als de discrete "machinekamer" voor toonaangevende ontwerp- en marketingbureaus.
 
 Wanneer u samenwerkt met LaunchStudio profiteert u van:
 
@@ -66,7 +66,7 @@ Bureau-eigenaren die dit model overwegen, willen weten wat er concreet gebeurt t
 - Vaste projectprijzen borgen uw winstmarges vooraf, zonder risico op budgetoverschrijdingen door open-einde urenbriefjes.
 - LaunchStudio fungeert als uw betrouwbare technische partner, van database-inrichting tot 24/7 serveronderhoud, zodat u zich volledig kunt richten op strategie en design.
 
-[Zeg nooit meer 'nee' tegen lucratieve softwareprojecten. Schaal uw bureau met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Zeg nooit meer 'nee' tegen lucratieve softwareprojecten. Schaal uw bureau met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

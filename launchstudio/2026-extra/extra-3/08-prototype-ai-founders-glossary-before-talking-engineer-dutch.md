@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/prototype-ai-founders-glossary-before-talking-engineer"
+    "@id": "https://launchstudio.eu/nl/blog/prototype-ai-founders-glossary-before-talking-engineer"
   }
 }
 </script>
@@ -65,9 +65,9 @@ De structuur die beschrijft hoe de gegevens van uw product zijn georganiseerd �
 
 Niets uit deze woordenlijst maakt u in staat om zelf code te schrijven of te beoordelen, en dat is ook niet het punt. Het is het verschil tussen een engineer die een bevinding aan u uitlegt in vertaalde, vereenvoudigde termen omdat het moet, versus u die de oorspronkelijke uitleg rechtstreeks volgt en een oprecht geïnformeerde vervolgvraag stelt, wat aan beide kanten leidt tot een sneller, nauwkeuriger gesprek.
 
-[LaunchStudio](https://launchstudio.eu/en/) bouwt haar gesprekken met oprichters specifiek rond deze woordenschat, waarbij technische bevindingen worden vertaald naar taal die een niet-technische oprichter oprecht kan volgen in plaats van uit te gaan van eerdere vaardigheid, een aanpak gevormd door Manifera's eigen ervaring met het uitleggen van technische beslissingen op enterprise-niveau aan niet-technische belanghebbenden bij meer dan 160 geleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) bouwt haar gesprekken met oprichters specifiek rond deze woordenschat, waarbij technische bevindingen worden vertaald naar taal die een niet-technische oprichter oprecht kan volgen in plaats van uit te gaan van eerdere vaardigheid, een aanpak gevormd door Manifera's eigen ervaring met het uitleggen van technische beslissingen op enterprise-niveau aan niet-technische belanghebbenden bij meer dan 160 geleverde projecten.
 
-[Breng uw prototype AI naar een gesprek dat u daadwerkelijk kunt volgen](https://launchstudio.eu/en/#contact) — het begrijpen van de woordenschat verandert hoe nuttig het gesprek is, onmiddellijk.
+[Breng uw prototype AI naar een gesprek dat u daadwerkelijk kunt volgen](https://launchstudio.eu/nl/#contact) — het begrijpen van de woordenschat verandert hoe nuttig het gesprek is, onmiddellijk.
 
 ## Nog vijf termen die u zult horen zodra het gesprek technisch wordt
 

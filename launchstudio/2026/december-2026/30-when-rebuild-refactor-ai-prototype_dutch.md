@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-12-30",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/when-rebuild-refactor-ai-prototype"
+    "@id": "https://launchstudio.eu/nl/blog/when-rebuild-refactor-ai-prototype"
   }
 }
 </script>
@@ -59,9 +59,9 @@ Een gerichte refactoring van specifieke backend-lagen kost doorgaans slechts een
 
 ## Een Objectieve Beoordeling Vragen
 
-Omdat oprichters emotioneel gehecht zijn aan hun prototype (of juist mentaal uitgeput zijn door de voortdurende storingen), is een nuchtere blik van buitenaf van onschatbare waarde. [LaunchStudio](https://launchstudio.eu/en/) voert deze laag-voor-laag analyses uit, gesteund door Manifera's ervaring met 160+ voltooide softwareprojecten. Wij onderscheiden fundamenteel rotte structuren haarscherp van repareerbare last-mile gaten — en vertellen het eerlijk wanneer een volledige herbouw technisch echt de beste route is.
+Omdat oprichters emotioneel gehecht zijn aan hun prototype (of juist mentaal uitgeput zijn door de voortdurende storingen), is een nuchtere blik van buitenaf van onschatbare waarde. [LaunchStudio](https://launchstudio.eu/nl/) voert deze laag-voor-laag analyses uit, gesteund door Manifera's ervaring met 160+ voltooide softwareprojecten. Wij onderscheiden fundamenteel rotte structuren haarscherp van repareerbare last-mile gaten — en vertellen het eerlijk wanneer een volledige herbouw technisch echt de beste route is.
 
-[Vraag een eerlijke refactor-versus-herbouw beoordeling aan](https://launchstudio.eu/en/#contact) voor uw AI-prototype.
+[Vraag een eerlijke refactor-versus-herbouw beoordeling aan](https://launchstudio.eu/nl/#contact) voor uw AI-prototype.
 
 ## Een Zelfevaluatie Die U Deze Week Kunt Uitvoeren (Zonder Kosten)
 

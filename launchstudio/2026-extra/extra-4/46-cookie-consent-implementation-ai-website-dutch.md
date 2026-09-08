@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/cookie-consent-implementation-ai-website"
+    "@id": "https://launchstudio.eu/nl/blog/cookie-consent-implementation-ai-website"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Een nog veel voorkomendere mislukking zit één laag dieper: zelfs sites waar sc
 
 LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters. Onderdeel daarvan is het controleren van cookie-toestemmingsimplementaties op netwerkniveau, en niet alleen op visueel niveau. We verifiëren dat een weigerklik daadwerkelijk voorkomt dat scripts laden, en niet alleen dat de banner correct verdwijnt. Ons team, werkend vanuit Manifera's kantoor in Amsterdam aan de Herengracht 420, behandeld dit als een standaard onderdeel van elke nalevingsstap vóór de lancering voor een marketingwebsite, omdat het een van de eenvoudigste dingen is voor een met AI gegenereerde site om zichtbaar verkeerd te krijgen en een van de eenvoudigste dingen voor een toezichthouder om daadwerkelijk te testen.
 
-Als u de netwerkverzoeken van uw eigen site nooit heeft gecontroleerd tegen wat uw cookiebanner beweert te doen, is het de moeite waard om [uw bouwsel te beoordelen tegen ons proces](https://launchstudio.eu/en/#process) voordat een bezoeker – of een toezichthouder – het voor u controleert.
+Als u de netwerkverzoeken van uw eigen site nooit heeft gecontroleerd tegen wat uw cookiebanner beweert te doen, is het de moeite waard om [uw bouwsel te beoordelen tegen ons proces](https://launchstudio.eu/nl/#process) voordat een bezoeker – of een toezichthouder – het voor u controleert.
 
 ## Tag-managers voegen een laag toe die de eenvoudige herstelling niet dekt
 

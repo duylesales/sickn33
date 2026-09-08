@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-generated-readme-files-not-documentation-you-think"
+    "@id": "https://launchstudio.eu/nl/blog/ai-generated-readme-files-not-documentation-you-think"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Een niet-technische oprichter die technisch werk heeft gedelegeerd, of een techn
 
 Het specifiek documenteren van de redenering achter niet-voordehandliggende beslissingen, bekende beperkingen of addertjes onder het gras waar een nieuwe medewerker zich van bewust zou moeten zijn voordat hij een specifiek gebied aanraakt, en eventuele bewuste omwegen samen met de reden waarom ze bestaan. Dit is een oprecht andere, aanzienlijk waardevollere categorie van informatie dan wat de huidige structuur van een codebase alleen kan communiceren, ongeacht hoe nauwkeurig die structuur wordt beschreven.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters bij het identificeren en documenteren van exact deze "waarom"-laag die specifiek ontbreekt in door AI gegenereerde README-bestanden. Dit als onderdeel van bredere productiegereedheid en voorbereiding op overdrachten, ondersteund door Manifera's bredere ervaring met het efficiënt en veilig inwerken van nieuwe teamleden en aannemers op onbekende codebases.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters bij het identificeren en documenteren van exact deze "waarom"-laag die specifiek ontbreekt in door AI gegenereerde README-bestanden. Dit als onderdeel van bredere productiegereedheid en voorbereiding op overdrachten, ondersteund door Manifera's bredere ervaring met het efficiënt en veilig inwerken van nieuwe teamleden en aannemers op onbekende codebases.
 
-[Krijg de documentatie die daadwerkelijk begrip overdraagt, en niet alleen structuur](https://launchstudio.eu/en/#contact) — een gegenereerde README beschrijft wat er bestaat; echte documentatie legt uit waarom het op die manier bestaat.
+[Krijg de documentatie die daadwerkelijk begrip overdraagt, en niet alleen structuur](https://launchstudio.eu/nl/#contact) — een gegenereerde README beschrijft wat er bestaat; echte documentatie legt uit waarom het op die manier bestaat.
 
 ## Waar te beginnen: De plekken in de codebase die het meest waarschijnlijk "waarom"-documentatie nodig hebben
 

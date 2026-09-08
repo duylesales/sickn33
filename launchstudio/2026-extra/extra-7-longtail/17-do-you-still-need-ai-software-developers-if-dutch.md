@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "Heeft u nog AI-softwareontwikkelaars nodig als een prompt uw app heeft gebouwd?",
   "description": "Een voor-en-na-blik op wat er verandert wanneer een oprichter die een app met een prompt heeft gebouwd AI-softwareontwikkelaars inschakelt om het af te maken, en wat er specifiek nog ontbrak.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-14",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/do-you-still-need-ai-software-developers-if-a-prompt-built-your-app" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/do-you-still-need-ai-software-developers-if-a-prompt-built-your-app" }
 }
 </script>
 
@@ -56,7 +56,7 @@ Een handmatig deploymentproces is prima voor een handvol gebruikers die een inci
 
 Er is ook een cumulatieve kost aan wachten. Elke week dat een handmatig deploymentproces blijft bestaan, is nog een week aan kleine, ongedocumenteerde beslissingen die zich opstapelen — een configuratiewaarde rechtstreeks op de server gewijzigd en nooit opgeschreven, een workaround toegevoegd onder tijdsdruk waarvan niemand zich de reden meer herinnert. Een goede pijplijn vroeg inrichten legt de app vast in een bekende, reproduceerbare staat. Het pas na maanden ad-hoc patchen inrichten betekent eerst die opgestapelde rommel ontwarren, wat een aanzienlijk grotere en duurdere klus is dan het doen terwijl de app nog jong is.
 
-De engineers van Manifera hebben meer dan een decennium besteed aan het bouwen van precies dit soort productie-infrastructuur voor klanten van elke omvang, en die discipline wordt toegepast op de door Cursor gebouwde app van een solo-oprichter onder de vlag van LaunchStudio — dezelfde rigueur, teruggeschaald naar een engagement op oprichtersschaal. Ons klantteam opereert vanuit Herengracht 420 in Amsterdam en coördineert het daadwerkelijke engineeringwerk met de bredere groep. Als uw deploymentproces nog steeds inhoudt dat u persoonlijk bestanden uploadt, [plan dan een gratis intro-gesprek van 15 minuten](https://launchstudio.eu/en/#contact) en krijg een helder beeld van wat een goede pijplijn daadwerkelijk zou kosten voor uw specifieke app.
+De engineers van Manifera hebben meer dan een decennium besteed aan het bouwen van precies dit soort productie-infrastructuur voor klanten van elke omvang, en die discipline wordt toegepast op de door Cursor gebouwde app van een solo-oprichter onder de vlag van LaunchStudio — dezelfde rigueur, teruggeschaald naar een engagement op oprichtersschaal. Ons klantteam opereert vanuit Herengracht 420 in Amsterdam en coördineert het daadwerkelijke engineeringwerk met de bredere groep. Als uw deploymentproces nog steeds inhoudt dat u persoonlijk bestanden uploadt, [plan dan een gratis intro-gesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en krijg een helder beeld van wat een goede pijplijn daadwerkelijk zou kosten voor uw specifieke app.
 
 ## Echt voorbeeld
 

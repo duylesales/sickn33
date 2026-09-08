@@ -16,7 +16,7 @@ Doelpersona: CTO / VP of Engineering
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CTO / VP of Engineering
   "datePublished": "2026-12-17",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-app-dev"
+    "@id": "https://launchstudio.eu/nl/blog/ai-app-dev"
   }
 }
 </script>
@@ -57,7 +57,7 @@ AI-Stack ontwikkelaars bouwen Generatieve UI via de Vercel AI SDK en React Serve
 
 De overstap van een traditioneel web-development team naar een Full-AI-Stack team vereist een fundamentele verandering in software-architectuur.
 
-[LaunchStudio](https://launchstudio.eu/en/), gedragen door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, versnelt deze transformatie:
+[LaunchStudio](https://launchstudio.eu/nl/), gedragen door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, versnelt deze transformatie:
 1. **Framework-Standaardisatie:** Wij migreren teams van ongecontroleerde API-calls naar gestandaardiseerde orkestratie-frameworks (zoals LangChain of DSPy).
 2. **Infrastructure-as-Code voor AI:** Wij richten geavanceerde AI-infrastructuur in (vectordatabases, Redis semantische caches en Langfuse observability) via beproefde DevOps-methodieken.
 3. **Evaluation-Driven Development (EDD):** Wij implementeren geautomatiseerde CI/CD-pipelines met "LLM-as-a-Judge" om regressies en hallucinaties statistisch te testen en voorkomen.

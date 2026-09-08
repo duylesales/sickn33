@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "De API-aanroepen die uw AI-codeertool doet zonder dat u dit ooit hebt goedgekeurd",
   "description": "AI-codeertools bundelen vaak standaard sjabloonscode die externe API's aanroept die u nooit expliciet hebt gekozen. Zo vindt u ongedocumenteerde aanroepen in uw eigen codebase voordat de factuur het voor u doet.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-and-api-quiet-calls" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-and-api-quiet-calls" }
 }
 </script>
 
@@ -43,7 +43,7 @@ Zo'n zoekopdracht vangt niet alles — sommige aanroepen zitten verborgen binnen
 
 Een ongedocumenteerde API-aanroep is niet alleen een kostenverrassing. Het is ook een afhankelijkheid die u niet hebt gekozen, die draait met referenties die u misschien nooit hebt beoordeeld, en die de gegevens van uw gebruikers verstuurt naar een dienst die u nooit hebt geëvalueerd op betrouwbaarheid of gegevensverwerkingspraktijken. De kosten zijn meestal wat het probleem als eerste zichtbaar maakt, maar het daadwerkelijke risico is breder dan de factuur.
 
-De technici van Manifera — met 11+ jaar productie-ervaring over 160+ projecten — behandelen een volledige audit van uitgaande aanroepen als standaardonderdeel van het overnemen van een door AI gegenereerde codebase, precies omdat oprichters zelf zelden weten dat deze lijst bestaat totdat hij voor hen wordt opgebouwd. Ons team in Singapore voert deze audit regelmatig uit voor oprichters in de regio. Als u wilt weten wat uw eigen app stilletjes aanroept, [bereken dan wat een volledige audit zou kosten](https://launchstudio.eu/en/#packages), en de praktijk [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera behandelt de bredere technische discipline achter het vroegtijdig opsporen van dit soort dingen.
+De technici van Manifera — met 11+ jaar productie-ervaring over 160+ projecten — behandelen een volledige audit van uitgaande aanroepen als standaardonderdeel van het overnemen van een door AI gegenereerde codebase, precies omdat oprichters zelf zelden weten dat deze lijst bestaat totdat hij voor hen wordt opgebouwd. Ons team in Singapore voert deze audit regelmatig uit voor oprichters in de regio. Als u wilt weten wat uw eigen app stilletjes aanroept, [bereken dan wat een volledige audit zou kosten](https://launchstudio.eu/nl/#packages), en de praktijk [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera behandelt de bredere technische discipline achter het vroegtijdig opsporen van dit soort dingen.
 
 ## Echt voorbeeld
 

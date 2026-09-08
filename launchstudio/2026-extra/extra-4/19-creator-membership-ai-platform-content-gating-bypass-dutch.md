@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/creator-membership-ai-platform-content-gating-bypass"
+    "@id": "https://launchstudio.eu/nl/blog/creator-membership-ai-platform-content-gating-bypass"
   }
 }
 </script>
@@ -49,7 +49,7 @@ Manifera's meer dan 120 ingenieurs hebben toegangsbeschermingssystemen gebouwd v
 
 Ons team, werkend vanuit LaunchStudio's kantoor in Amsterdam, behandelt dit als een standaard onderdeel van elke technische beoordeling voor platforms met inhouds- of toegangsafscherming, samen met het controleren of beheerdersroutes, API-eindpunten en bestandsopslag-buckets allemaal dezelfde autorisatie aan de serverzijde afdwingen die de UI suggereert dat bestaat.
 
-Als u een technische audit wilt van uw toegangsbeschermingslogica vóór uw volgende inhoudsdrop of lancering, [neem contact op via LaunchStudio](https://launchstudio.eu/en/#contact). Voor hoe dit patroon zich afspeelt op enterprise-schaal, bekijk Manifera's [webapp-ontwikkelingspraktijk](https://www.manifera.com/services/web-app-develop/).
+Als u een technische audit wilt van uw toegangsbeschermingslogica vóór uw volgende inhoudsdrop of lancering, [neem contact op via LaunchStudio](https://launchstudio.eu/nl/#contact). Voor hoe dit patroon zich afspeelt op enterprise-schaal, bekijk Manifera's [webapp-ontwikkelingspraktijk](https://www.manifera.com/services/web-app-develop/).
 
 ## Uw CDN weet niet dat de ondertekende URL is verlopen
 

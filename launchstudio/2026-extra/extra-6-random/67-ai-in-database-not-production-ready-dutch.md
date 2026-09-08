@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Waarom 'AI in uw database' zetten niet hetzelfde is als het productieklaar maken",
   "description": "AI-ondersteund vectorzoeken binnen een productiedatabase kan prima werken tijdens het testen en toch dezelfde tabellen vergrendelen die uw app voor al het andere nodig heeft onder echte belasting. Dit is waarom, technisch gezien, en hoe u dit kunt opsporen voordat het gebeurt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-in-database-not-production-ready" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-in-database-not-production-ready" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Dit is het deel dat een uitdrukking als "AI in uw database" volledig verbergt: h
 - Test de zoekfunctie onder realistische gelijktijdige belasting tegen dezelfde tabellen waar uw kernapplicatie naar schrijft, niet geïsoleerd.
 - Overweeg of de vectorzoekworkload überhaupt tabellen zou moeten delen met transactionele gegevens, of dat deze thuishoort in een aparte opslag.
 
-De technici van Manifera — met 11+ jaar productie-ervaring — hebben precies dit soort probleem behandeld in door AI gegenereerde codebases waar een functie werkte tijdens het testen en vervolgens vastliep onder echte gelijktijdige belasting. Ons Amsterdamse team beoordeelt specifiek databaseschema en indexering als onderdeel van elke beoordeling van productiegereedheid. Als uw eigen app een AI-zoekfunctie heeft die u niet hebt belasttest tegen echte gelijktijdigheid, [bereken dan wat een databasebeoordeling zou kosten](https://launchstudio.eu/en/#calculator), en de praktijk [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera behandelt de diepere technische discipline die hierbij hoort om dit meteen goed te doen.
+De technici van Manifera — met 11+ jaar productie-ervaring — hebben precies dit soort probleem behandeld in door AI gegenereerde codebases waar een functie werkte tijdens het testen en vervolgens vastliep onder echte gelijktijdige belasting. Ons Amsterdamse team beoordeelt specifiek databaseschema en indexering als onderdeel van elke beoordeling van productiegereedheid. Als uw eigen app een AI-zoekfunctie heeft die u niet hebt belasttest tegen echte gelijktijdigheid, [bereken dan wat een databasebeoordeling zou kosten](https://launchstudio.eu/nl/#calculator), en de praktijk [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera behandelt de diepere technische discipline die hierbij hoort om dit meteen goed te doen.
 
 ## Echt voorbeeld
 

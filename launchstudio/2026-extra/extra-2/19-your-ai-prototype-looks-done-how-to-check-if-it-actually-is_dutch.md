@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-25",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/your-ai-prototype-looks-done-how-to-check-if-it-actually-is"
+    "@id": "https://launchstudio.eu/nl/blog/your-ai-prototype-looks-done-how-to-check-if-it-actually-is"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Een betalingsintegratie die de geheime sleutel rechtstreeks in de frontend-code 
 
 ## Stap vijf: Krijg een systematische beoordeling, niet alleen een handmatige zoekopdracht
 
-Een handmatige zoekopdracht vangt duidelijke gevallen op maar is niet uitputtend – een correcte audit controleert elke integratie systematisch, bevestigt dat het correcte sleuteltype wordt gebruikt in elke context, en verifieert dat geen andere geheimen hetzelfde patroon hebben gevolgd. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort systematische audit van sleutels en geheimen uit als een standaard eerste stap in haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met het integreren van Stripe en Mollie in veilige productiesystemen.
+Een handmatige zoekopdracht vangt duidelijke gevallen op maar is niet uitputtend – een correcte audit controleert elke integratie systematisch, bevestigt dat het correcte sleuteltype wordt gebruikt in elke context, en verifieert dat geen andere geheimen hetzelfde patroon hebben gevolgd. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort systematische audit van sleutels en geheimen uit als een standaard eerste stap in haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met het integreren van Stripe en Mollie in veilige productiesystemen.
 
 Manifera's beveiligingsaudits voor betalingen worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Beschrijf wat u bouwt — we antwoorden binnen één werkdag](https://launchstudio.eu/en/#contact).
+[Beschrijf wat u bouwt — we antwoorden binnen één werkdag](https://launchstudio.eu/nl/#contact).
 
 ## Voorbij Stripe-sleutels: Een volledigere audit van uw frontend-pakket
 

@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "De stille opkomst van 'AI-websites' die eigenlijk gewoon statische pagina's zijn met een chatbot erop geplakt",
   "description": "Een opiniestuk over de groeiende kloof tussen websites die als 'AI-powered' worden vermarkt en de realiteit dat veel ervan statische pagina's zijn met een chatbot die geen echte toegang heeft tot live gegevens.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-websites-chatbot-bolted-on" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-websites-chatbot-bolted-on" }
 }
 </script>
 
@@ -42,7 +42,7 @@ Het resultaat is een groeiende categorie "AI-websites" die, structureel gezien, 
 
 Niets van dit alles betekent dat chatwidgets slecht zijn — een goed verbonden widget is een oprechte verbetering. Het probleem is dat oprichters "AI-powered" vermarkten zonder te beseffen dat hun eigen chatbot geen echte verbinding heeft met het bedrijf dat hij verondersteld wordt te vertegenwoordigen.
 
-Onze technici hebben 160+ projecten opgeleverd voor enterprise-klanten, en precies dit soort live gegevens — een menu, een rooster, een voorraadfeed — verbinden met een chatbot die daadwerkelijk de werkelijkheid weerspiegelt, is standaardwerk voor het team, inclusief engineers gevestigd in Ho Chi Minh-stad, waar Manifera zijn belangrijkste ontwikkelingscentrum runt. Als uw "AI-website" niet tegen deze lijst is gecontroleerd, kunt u [praten met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact) over wat een echte verbinding zou kosten. Manifera's [portfolio](https://www.manifera.com/portfolio/) omvat verschillende voorbeelden van precies dit soort live-gegevensintegratie, correct uitgevoerd.
+Onze technici hebben 160+ projecten opgeleverd voor enterprise-klanten, en precies dit soort live gegevens — een menu, een rooster, een voorraadfeed — verbinden met een chatbot die daadwerkelijk de werkelijkheid weerspiegelt, is standaardwerk voor het team, inclusief engineers gevestigd in Ho Chi Minh-stad, waar Manifera zijn belangrijkste ontwikkelingscentrum runt. Als uw "AI-website" niet tegen deze lijst is gecontroleerd, kunt u [praten met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) over wat een echte verbinding zou kosten. Manifera's [portfolio](https://www.manifera.com/portfolio/) omvat verschillende voorbeelden van precies dit soort live-gegevensintegratie, correct uitgevoerd.
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/founders-guide-reading-hosting-bill"
+    "@id": "https://launchstudio.eu/nl/blog/founders-guide-reading-hosting-bill"
   }
 }
 </script>
@@ -55,9 +55,9 @@ Een geleidelijke, ongeveer evenredige toename samen met echte klantengroei is ve
 
 Vergelijkbaar met de bredere woordenschat en diagnostische benadering die in deze gehele artikelenreeks voor niet-technische oprichters wordt behandeld, vereist het begrijpen van deze algemene categorieën en het patroon dat het onderzoeken waard is geen diepe technische expertise. Het vereist voldoende bekendheid om op te merken wanneer iets er onevenredig uitziet en om er een specifieke, geïnformeerde vraag over te stellen, in plaats van de factuur volledig te negeren of het gevoel te hebben verplicht te zijn elk gedetailleerd technisch detail te begrijpen.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters hun eigen hosting- en infrastructuurkosten in duidelijke taal te begrijpen, waarbij oprecht zorgwekkende patronen worden gemarkeerd versus normale, gezonde groei als onderdeel van bredere voortdurende ondersteuningsopdrachten. Dit wordt ondersteund door Manifera's bredere toewijding aan transparante, begrijpelijke communicatie, ongeacht de technische achtergrond van een oprichter.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters hun eigen hosting- en infrastructuurkosten in duidelijke taal te begrijpen, waarbij oprecht zorgwekkende patronen worden gemarkeerd versus normale, gezonde groei als onderdeel van bredere voortdurende ondersteuningsopdrachten. Dit wordt ondersteund door Manifera's bredere toewijding aan transparante, begrijpelijke communicatie, ongeacht de technische achtergrond van een oprichter.
 
-[Krijg hulp bij het begrijpen van wat uw hostingfactuur u daadwerkelijk vertelt](https://launchstudio.eu/en/#contact) — de categorieën zijn te leren zonder zelf technisch te worden.
+[Krijg hulp bij het begrijpen van wat uw hostingfactuur u daadwerkelijk vertelt](https://launchstudio.eu/nl/#contact) — de categorieën zijn te leren zonder zelf technisch te worden.
 
 ## Een eenvoudige maandelijkse routine om uw hostingfactuur voor te blijven
 

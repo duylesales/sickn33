@@ -13,10 +13,10 @@ Doelgroep: SaaS-oprichter Scale-Up
   "@type": "Article",
   "headline": "Wat het echt betekent om met AI te coderen zodra u betalende klanten nodig heeft",
   "description": "Leren coderen met AI is makkelijk in de MVP-fase. Dit is de technische realiteit van wat er kapotgaat zodra echte, betalende klanten en echte facturatie in beeld komen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-15",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/what-it-really-means-to-code-with-ai" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/what-it-really-means-to-code-with-ai" }
 }
 </script>
 
@@ -52,7 +52,7 @@ Observability op productieniveau voor een opschalende SaaS betekent doorgaans ge
 
 ## Wat dit betekent voor oprichters die opschalen voorbij MVP
 
-Niets hiervan betekent dat u de tools die u hier gebracht hebben moet opgeven. Het betekent dat u erkent dat de technische lat betekenisvol verschuift zodra echte omzet van het systeem afhangt, en die verschuiving concentreert zich specifiek rond facturatie, gelijktijdigheid en misbruikweerstand — gebieden die demo-fase-prompting zelden standaard dekt. LaunchStudio is geen eenzame freelancer — het wordt ondersteund door Manifera, hetzelfde team dat heeft geleverd voor Vodafone, TNO en CFLW, met engineering deels gecoördineerd via de Singapore-hub op 100 Tras Street. Voor oprichters in de scale-up-fase valt dit soort verharding doorgaans onder het [Launch & Grow-pakket](https://launchstudio.eu/en/#packages), dat gemanagede hosting, monitoring en doorlopende productieondersteuning omvat voor € 49 per maand bovenop de vaste bouwkosten — specifiek gebouwd voor teams die willen dat facturatie en infrastructuur standhouden onder groei, niet alleen een demo overleven. U kunt de onderliggende engineeringstandaarden voor webapplicaties bekijken op [Manifera's pagina voor webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
+Niets hiervan betekent dat u de tools die u hier gebracht hebben moet opgeven. Het betekent dat u erkent dat de technische lat betekenisvol verschuift zodra echte omzet van het systeem afhangt, en die verschuiving concentreert zich specifiek rond facturatie, gelijktijdigheid en misbruikweerstand — gebieden die demo-fase-prompting zelden standaard dekt. LaunchStudio is geen eenzame freelancer — het wordt ondersteund door Manifera, hetzelfde team dat heeft geleverd voor Vodafone, TNO en CFLW, met engineering deels gecoördineerd via de Singapore-hub op 100 Tras Street. Voor oprichters in de scale-up-fase valt dit soort verharding doorgaans onder het [Launch & Grow-pakket](https://launchstudio.eu/nl/#packages), dat gemanagede hosting, monitoring en doorlopende productieondersteuning omvat voor € 49 per maand bovenop de vaste bouwkosten — specifiek gebouwd voor teams die willen dat facturatie en infrastructuur standhouden onder groei, niet alleen een demo overleven. U kunt de onderliggende engineeringstandaarden voor webapplicaties bekijken op [Manifera's pagina voor webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
 ## Echt voorbeeld
 

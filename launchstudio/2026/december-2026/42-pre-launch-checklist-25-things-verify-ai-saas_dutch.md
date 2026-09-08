@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/pre-launch-checklist-25-things-verify-ai-saas"
+    "@id": "https://launchstudio.eu/nl/blog/pre-launch-checklist-25-things-verify-ai-saas"
   }
 }
 </script>
@@ -77,9 +77,9 @@ De avond vóór uw officiële lancering is niet het moment om erachter te komen 
 
 Elk van deze 25 punten lijkt afzonderlijk wellicht een detail. Gezamenlijk vormen ze het verschil tussen een demonstratie die indruk maakt op bekenden en een commercieel product dat echte klanten, echte betalingen en kritische audits doorstaat zonder een crisis in de eerste maand. De meeste met AI gegenereerde prototypes voldoen standaard aan slechts een handvol van deze eisen.
 
-[LaunchStudio](https://launchstudio.eu/en/) toetst al deze 25 punten standaard af bij elke productie-oplevering, gesteund door Manifera's 11+ jaar ervaring met enterprise-software. In plaats van dat oprichters hiaten proefondervindelijk ontdekken na de lancering, bevestigt het team de productierijpheid vooraf systematisch.
+[LaunchStudio](https://launchstudio.eu/nl/) toetst al deze 25 punten standaard af bij elke productie-oplevering, gesteund door Manifera's 11+ jaar ervaring met enterprise-software. In plaats van dat oprichters hiaten proefondervindelijk ontdekken na de lancering, bevestigt het team de productierijpheid vooraf systematisch.
 
-[Laat uw lanceergereedheid beoordelen](https://launchstudio.eu/en/#contact) langs deze exacte 25-punten checklist.
+[Laat uw lanceergereedheid beoordelen](https://launchstudio.eu/nl/#contact) langs deze exacte 25-punten checklist.
 
 ## De Checklist Afstemmen op Uw Specifieke Product
 

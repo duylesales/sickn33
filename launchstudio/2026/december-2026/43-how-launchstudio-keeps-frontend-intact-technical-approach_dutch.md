@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/how-launchstudio-keeps-frontend-intact-technical-approach"
+    "@id": "https://launchstudio.eu/nl/blog/how-launchstudio-keeps-frontend-intact-technical-approach"
   }
 }
 </script>
@@ -57,11 +57,11 @@ Volledige preservatie is in de praktijk niet altijd letterlijk 100% — incident
 
 ## Waarom Deze Discipline Commercieel Belangrijk Is
 
-Uw frontend-ontwerp vertegenwoordigt vaak gevalideerd bewijs van product-market fit — gebruikersfeedback, iteraties en ontwerpkeuzes die u heeft gemaakt op basis van praktijkervaring. Het weggooien van dat gevalideerde werk om te voldoen aan de stilistische voorkeur van een programmeur vernietigt reële bedrijfswaarde. Dat is exact de valkuil van traditionele bureaus, en exact wat [LaunchStudio](https://launchstudio.eu/en/) voorkomt.
+Uw frontend-ontwerp vertegenwoordigt vaak gevalideerd bewijs van product-market fit — gebruikersfeedback, iteraties en ontwerpkeuzes die u heeft gemaakt op basis van praktijkervaring. Het weggooien van dat gevalideerde werk om te voldoen aan de stilistische voorkeur van een programmeur vernietigt reële bedrijfswaarde. Dat is exact de valkuil van traditionele bureaus, en exact wat [LaunchStudio](https://launchstudio.eu/nl/) voorkomt.
 
 Deze discipline is verankerd in Manifera's bredere engineeringcultuur: 11+ jaar klantprojecten heeft bewezen dat het respecteren van bestaande, gevalideerde ontwerpkeuzes tot aanzienlijk betere commerciële resultaten leidt dan het opleggen van persoonlijke programmeursvoorkeuren.
 
-[Bekijk hoe deze aanpak werkt voor uw prototype](https://launchstudio.eu/en/#contact).
+[Bekijk hoe deze aanpak werkt voor uw prototype](https://launchstudio.eu/nl/#contact).
 
 ## Onder de Motorkap: De Technische Patronen Die Preservatie Mogelijk Maken
 

@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-29",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/where-ai-in-database-design-quietly-cuts-corners"
+    "@id": "https://launchstudio.eu/nl/blog/where-ai-in-database-design-quietly-cuts-corners"
   }
 }
 </script>
@@ -51,11 +51,11 @@ In tegenstelling tot veel smallere kwetsbaarheden die een enkele functie beïnvl
 
 ## Wat het sluiten van deze kloof daadwerkelijk inhoudt
 
-Een correcte beoordeling vóór de lancering controleert specifiek elke ingestelde of standaard account op ongewijzigde inloggegevens, dwingt een wachtwoordwijziging af of schakelt de account volledig uit, en bevestigt dat er geen andere standaard configuratiewaarden op vergelijkbare wijze ongewijzigd zijn gelaten. [LaunchStudio](https://launchstudio.eu/en/) omvat exact dit soort controle op standaard inloggegevens in haar standaard Launch Ready-beoordeling, ondersteund door Manifera's 11+ jaar ervaring met productie-uitrol.
+Een correcte beoordeling vóór de lancering controleert specifiek elke ingestelde of standaard account op ongewijzigde inloggegevens, dwingt een wachtwoordwijziging af of schakelt de account volledig uit, en bevestigt dat er geen andere standaard configuratiewaarden op vergelijkbare wijze ongewijzigd zijn gelaten. [LaunchStudio](https://launchstudio.eu/nl/) omvat exact dit soort controle op standaard inloggegevens in haar standaard Launch Ready-beoordeling, ondersteund door Manifera's 11+ jaar ervaring met productie-uitrol.
 
 Manifera's configuratie-audits vóór de lancering worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/database-backup-disaster-recovery-ai-founders"
+    "@id": "https://launchstudio.eu/nl/blog/database-backup-disaster-recovery-ai-founders"
   }
 }
 </script>
@@ -73,7 +73,7 @@ Voor een app die echte transacties afhandelt, is het verschil tussen die twee ge
 
 In een prototype met testgegevens is het verliezen van de database een ongemak – u genereert wat voorbeeldrijen opnieuw en gaat verder. Op het moment dat echte klanten echte gegevens in uw app opslaan, is een mislukt herstel geen ongemak, maar potentieel het einde van de zakelijke relatie. En in gereguleerde contexten kan het ook een nalevingsfout zijn. De kosten van het proactief testen van een herstel zijn een paar uur. De kosten van het ontdekken dat uw back-ups niet werken tijdens een daadwerkelijk incident worden gemeten in verloren klantvertrouwen, en soms in het compleet verliezen van klanten.
 
-Ons team, werkend vanuit het kantoor in Singapore op 100 Tras Street en oprichters bedienend in Zuidoost-Azië en wereldwijd, behandelt de gereedheid voor noodherstel als een standaard vroeg gesprek met nieuwe AI-native oprichters – niet omdat het glamoureus is, maar omdat het een van de weinige dingen is die goedkoop vooraf zijn te herstellen en catastrofaal zijn om te laat te ontdekken. Als u niet zeker weet waar uw eigen opzet staat, omvatten [onze pakketten](https://launchstudio.eu/en/#packages) een audit van back-up en herstel als onderdeel van het productie-gereed maken van een app.
+Ons team, werkend vanuit het kantoor in Singapore op 100 Tras Street en oprichters bedienend in Zuidoost-Azië en wereldwijd, behandelt de gereedheid voor noodherstel als een standaard vroeg gesprek met nieuwe AI-native oprichters – niet omdat het glamoureus is, maar omdat het een van de weinige dingen is die goedkoop vooraf zijn te herstellen en catastrofaal zijn om te laat te ontdekken. Als u niet zeker weet waar uw eigen opzet staat, omvatten [onze pakketten](https://launchstudio.eu/nl/#packages) een audit van back-up en herstel als onderdeel van het productie-gereed maken van een app.
 
 ## Echt voorbeeld
 

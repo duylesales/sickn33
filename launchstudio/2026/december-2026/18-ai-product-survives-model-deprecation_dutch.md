@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-12-18",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-product-survives-model-deprecation"
+    "@id": "https://launchstudio.eu/nl/blog/ai-product-survives-model-deprecation"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Deze architectuur vraagt vooraf meer engineering dan de "snelle en directe" meth
 
 ## Waar Dit Past in een Productielancering
 
-Het vakkundig opzetten van deze abstractielaag is een vast onderdeel van het *last-mile* werk dat [LaunchStudio](https://launchstudio.eu/en/) levert bij het productieklaar maken van AI-prototypes. Manifera's software-engineers, gesteund door 11+ jaar ervaring en 160+ succesvolle enterprise-projecten, richten de architectuur zo in dat een toekomstige modelupdate een eenvoudige configuratiewijziging is in plaats van een noodverbouwing.
+Het vakkundig opzetten van deze abstractielaag is een vast onderdeel van het *last-mile* werk dat [LaunchStudio](https://launchstudio.eu/nl/) levert bij het productieklaar maken van AI-prototypes. Manifera's software-engineers, gesteund door 11+ jaar ervaring en 160+ succesvolle enterprise-projecten, richten de architectuur zo in dat een toekomstige modelupdate een eenvoudige configuratiewijziging is in plaats van een noodverbouwing.
 
 Herre Roelevink, oprichter van Manifera, ziet dit patroon regelmatig: *"Oprichters kloppen vaak in paniek bij ons aan wanneer hun AI-leverancier een model binnen 60 dagen uitzet. Als de architectuur goed staat, is dat een routineklusje van tien minuten. Staat die architectuur er niet, dan is het een complete herschrijving onder extreme tijdsdruk."*
 
-[Laat uw AI-architectuur beoordelen](https://launchstudio.eu/en/#contact) vóórdat de volgende uitfaseringsmail een crisissituatie veroorzaakt.
+[Laat uw AI-architectuur beoordelen](https://launchstudio.eu/nl/#contact) vóórdat de volgende uitfaseringsmail een crisissituatie veroorzaakt.
 
 ## Wat Er Feitelijk Verandert Wanneer U van Modelversie Wisselt
 

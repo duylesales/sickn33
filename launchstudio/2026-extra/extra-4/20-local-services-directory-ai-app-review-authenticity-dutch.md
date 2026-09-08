@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/local-services-directory-ai-app-review-authenticity"
+    "@id": "https://launchstudio.eu/nl/blog/local-services-directory-ai-app-review-authenticity"
   }
 }
 </script>
@@ -51,7 +51,7 @@ Voor een gids specifiek is dit geen hypothetisch randgeval – het staat dicht b
 
 De herstelling is het rechtstreeks koppelen van de geschiktheid voor beoordelingen aan een voltooide, door het platform getraceerde boeking – een beoordeler kan alleen een beoordeling indienen voor een aanbieder waar hij een overeenkomstig boekingsrecord mee heeft, en idealiter pas nadat de datum van de dienst van die boeking is verstreken. Dit verandert het beoordelingsformulier van een open microfoon in een geverifieerde feedback-lus. Het heeft het bijkomende voordeel dat het oprechte beoordelingen meer gewicht geeft, aangezien een badge "Geverifieerde boeking" betekenisvol verschilt van een anonieme sterrenbeoordeling. Ons team, werkend vanuit LaunchStudio's kantoor in Singapore, bouwt dit als een beperking op databaseniveau gekoppeld aan het boekingssysteem, en niet alleen als een label in de frontend. Zo kan het niet worden omzeild door iemand die begrijpt hoe een webformulier geinspecteerd moet worden.
 
-Stuur de beoordelingsstroom van uw gids naar LaunchStudio voor een gratis technische inschatting via [onze contactpagina](https://launchstudio.eu/en/#contact). Voor hoe Manifera vertrouwens- en verificatiesystemen benadert op enterprise-schaal, bekijk ons [portfolio](https://www.manifera.com/portfolio/).
+Stuur de beoordelingsstroom van uw gids naar LaunchStudio voor een gratis technische inschatting via [onze contactpagina](https://launchstudio.eu/nl/#contact). Voor hoe Manifera vertrouwens- en verificatiesystemen benadert op enterprise-schaal, bekijk ons [portfolio](https://www.manifera.com/portfolio/).
 
 ## Geverifieerd betekent niet gecontroleerd: De mazen in de wet van de minimale boeking
 

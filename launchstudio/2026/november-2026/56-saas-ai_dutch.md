@@ -16,7 +16,7 @@ Doelpersona: SaaS Oprichter / CEO
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: SaaS Oprichter / CEO
   "datePublished": "2026-12-26",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/saas-ai"
+    "@id": "https://launchstudio.eu/nl/blog/saas-ai"
   }
 }
 </script>
@@ -60,7 +60,7 @@ Als zuivere resultaatmeting te complex is, kiezen SaaS-bedrijven voor een hybrid
 
 De overstap naar een verbruiks- of resultaatgericht model is een complexe technische uitdaging: uw backend moet elke autonome actie van de AI realtime kunnen meten, valideren en factureren.
 
-[LaunchStudio](https://launchstudio.eu/en/), aangedreven door de enterprise software-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt de achterliggende meetinfrastructuur:
+[LaunchStudio](https://launchstudio.eu/nl/), aangedreven door de enterprise software-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt de achterliggende meetinfrastructuur:
 1. **Idempotente Actie-Registratie:** Wij richten event-driven architecturen in. Zodra een AI-agent een taak succesvol afrondt, stuurt onze backend een idempotente webhook naar uw facturatieprovider (zoals Stripe of Metronome), wat garandeert dat acties exact één keer worden afgerekend.
 2. **Kosten-Observability per Klant:** Met tools als Langfuse meten we het exacte tokenverbruik per gegenereerd resultaat, zodat u uw prijzen wiskundig kunt afstemmen op een gegarandeerde brutomarge van 75%+.
 3. **Agentic Rate Limiting:** Wij bouwen circuit-breakers in op databaseniveau: raken de prepaid credits van een klant op, dan pauzeert de infrastructuur de autonome agents veilig, wat oninbare API-kosten voorkomt.

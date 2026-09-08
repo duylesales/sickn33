@@ -53,7 +53,7 @@ Bovendien beschikt een individuele freelancer niet over de brede specialistische
 
 Om maximale uptime en betrouwbaarheid te garanderen voor uw betalende zakelijke klanten, heeft u een professioneel, toegewijd supportteam nodig in plaats van een kwetsbaar "single point of failure".
 
-Dit is de kern van de dienstverlening van [LaunchStudio](https://launchstudio.eu/en/). Gesteund door de **ruim 11 jaar enterprise software-ervaring van Manifera** — met meer dan 120 senior engineers werkend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons software-centrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — biedt LaunchStudio uitgebreide **Service Level Agreements (SLA's)** en doorlopend applicatie-onderhoud voor AI-startups.
+Dit is de kern van de dienstverlening van [LaunchStudio](https://launchstudio.eu/nl/). Gesteund door de **ruim 11 jaar enterprise software-ervaring van Manifera** — met meer dan 120 senior engineers werkend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons software-centrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — biedt LaunchStudio uitgebreide **Service Level Agreements (SLA's)** en doorlopend applicatie-onderhoud voor AI-startups.
 
 Wij bouwen uw software niet alleen; wij beschermen en bewaken uw platform continu.
 
@@ -67,7 +67,7 @@ Wanneer u samenwerkt met LaunchStudio voor onderhoud, monitoren onze enterprise 
 - Proactief onderhoud omvat het wekelijks updaten van libraries, database-pooling, API-migraties en maandelijkse cloudkosten-audits.
 - LaunchStudio biedt enterprise Service Level Agreements (SLA's) met 24/7 monitoring, gegarandeerde responstijden en proactieve beveiligingspatches.
 
-[Laat een verouderde API uw bedrijf niet platleggen. Kies vandaag voor professioneel onderhoud bij LaunchStudio](https://launchstudio.eu/en/#contact).
+[Laat een verouderde API uw bedrijf niet platleggen. Kies vandaag voor professioneel onderhoud bij LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

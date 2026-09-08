@@ -39,7 +39,7 @@ Er is een vierde valkuil die oprichters structureel onderschatten: multi-step ag
 
 De overstap van een simpele chatbot-MVP naar een volwaardig autonoom AI Agent-platform is een immense technologische sprong. U heeft ervaren software-architecten nodig die complexe LLM-orkestratie door en door beheersen.
 
-Dit is exact waarom AI-native founders samenwerken met [LaunchStudio](https://launchstudio.eu/en/).
+Dit is exact waarom AI-native founders samenwerken met [LaunchStudio](https://launchstudio.eu/nl/).
 
 Gesteund door de **ruim 11 jaar enterprise software-engineering ervaring van Manifera** — met senior ontwikkelaars opererend vanuit Amsterdam, Singapore en Ho Chi Minhstad — is LaunchStudio gespecialiseerd in het bouwen van streng beveiligde, autonome AI-agent infrastructuren voor startups en scale-ups.
 
@@ -55,7 +55,7 @@ U levert de zakelijke visie en het frontend-ontwerp; wij bouwen de complete "Age
 - Omdat agents per taak veel modelaanroepen doen, is realtime kostentracking op taakniveau essentieel voor gezonde marges.
 - LaunchStudio levert de senior backend-engineering om veilige, schaalbare en AVG-conforme AI Agents te bouwen met LangChain, LangGraph en PostgreSQL.
 
-[Stop met het bouwen van simpele chatbots. Bouw digitale werknemers met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Stop met het bouwen van simpele chatbots. Bouw digitale werknemers met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

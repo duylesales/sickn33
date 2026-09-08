@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-06",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/death-of-traditional-software-agency"
+    "@id": "https://launchstudio.eu/nl/blog/death-of-traditional-software-agency"
   }
 }
 </script>
@@ -68,7 +68,7 @@ Hier wordt het verhaal genuanceerd. AI-tools hebben de zichtbare 50% van softwar
 - **Monitoring en alarmering** — Foutregistratie via Sentry, prestatiemonitoring, uptime-alerts en logaggregatie
 - **Compliance** — AVG/GDPR-rechten, toestemmingsbeheer, audit-logging en bewaartermijnen van data
 
-Deze onzichtbare infrastructuur is exact wat [LaunchStudio](https://launchstudio.eu/en/) levert. En het vertegenwoordigt een fundamenteel ander bedrijfsmodel dan het traditionele bureau.
+Deze onzichtbare infrastructuur is exact wat [LaunchStudio](https://launchstudio.eu/nl/) levert. En het vertegenwoordigt een fundamenteel ander bedrijfsmodel dan het traditionele bureau.
 
 ## Het Nieuwe Model: Last-Mile Engineering
 
@@ -118,7 +118,7 @@ Voor oprichters die in 2027 een product plannen, is de strategische berekening h
 
 De totale kosten om van idee naar een live, betalend product te gaan: onder de €8.000 en binnen één maand. Probeer dat maar eens bij een traditioneel bureau.
 
-[Vraag vandaag uw vaste offerte aan](https://launchstudio.eu/en/#contact) of [bereken uw projectkosten](https://launchstudio.eu/#calculator).
+[Vraag vandaag uw vaste offerte aan](https://launchstudio.eu/nl/#contact) of [bereken uw projectkosten](https://launchstudio.eu/#calculator).
 
 ## Echt voorbeeld
 

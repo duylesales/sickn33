@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "How to Review Code the Moment After You Tell an AI to Generate It",
   "description": "A practical, step-by-step review routine for the sixty seconds right after an AI tool generates code — before you merge it and before it costs you.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/review-code-ai-generates-how-to" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/review-code-ai-generates-how-to" }
 }
 </script>
 
@@ -41,7 +41,7 @@ Dit verdient een eigen stap omdat het zo makkelijk te missen is en zo kostbaar w
 
 Probeer voordat u samenvoegt bewust een invoer die u niet beschreef toen u de AI vroeg de functie te bouwen — een randgeval, een grenswaarde, een ongebruikelijke maar plausibele invoer. Als de AI alleen het exacte scenario uit uw prompt heeft afgehandeld, wordt dat in deze stap zichtbaar, terwijl het nog goedkoop is om te repareren.
 
-Onze engineers gevestigd in Ho Chi Minhstad volgen een versie van precies deze routine bij elk stuk door AI gegenereerde code dat door een LaunchStudio-review komt, omdat het patroon van "werkte in de demo, verkeerd in productie" constant voorkomt. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera — vertrouwd door Vodafone, TNO en CFLW — en deze reviewdiscipline maakt deel uit van wat die ondersteuning in de praktijk betekent. Wilt u liever een tweede paar ogen deze checklist voor u laten uitvoeren vóór lancering, dan kunt u [uw project beschrijven en wij reageren binnen één werkdag](https://launchstudio.eu/en/#process). Voor meer over de engineeringnormen hierachter, zie [de offshore softwareontwikkelingsdiensten van Manifera](https://www.manifera.com/services/offshore-software-development/).
+Onze engineers gevestigd in Ho Chi Minhstad volgen een versie van precies deze routine bij elk stuk door AI gegenereerde code dat door een LaunchStudio-review komt, omdat het patroon van "werkte in de demo, verkeerd in productie" constant voorkomt. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera — vertrouwd door Vodafone, TNO en CFLW — en deze reviewdiscipline maakt deel uit van wat die ondersteuning in de praktijk betekent. Wilt u liever een tweede paar ogen deze checklist voor u laten uitvoeren vóór lancering, dan kunt u [uw project beschrijven en wij reageren binnen één werkdag](https://launchstudio.eu/nl/#process). Voor meer over de engineeringnormen hierachter, zie [de offshore softwareontwikkelingsdiensten van Manifera](https://www.manifera.com/services/offshore-software-development/).
 
 ## Echt voorbeeld
 

@@ -49,7 +49,7 @@ Het transformeren van een kwetsbare MVP naar een schaalbare scale-up architectuu
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Dit is exact de reden waarom [LaunchStudio](https://launchstudio.eu/en/) het **"Launch & Grow"-pakket** heeft ontwikkeld. Gesteund door het enterprise softwareteam van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring, opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze regionale hub aan 100 Tras Street in **Singapore** en ons centrale ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), bieden wij het langdurige infrastructurele partnerschap dat groeiende software-startups nodig hebben. Ons team past dezelfde technische discipline toe die wij inzetten voor veeleisende enterprise-opdrachtgevers.
+Dit is exact de reden waarom [LaunchStudio](https://launchstudio.eu/nl/) het **"Launch & Grow"-pakket** heeft ontwikkeld. Gesteund door het enterprise softwareteam van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring, opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze regionale hub aan 100 Tras Street in **Singapore** en ons centrale ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), bieden wij het langdurige infrastructurele partnerschap dat groeiende software-startups nodig hebben. Ons team past dezelfde technische discipline toe die wij inzetten voor veeleisende enterprise-opdrachtgevers.
 
 Voor een vast eenmalig instaptarief en een transparant **beheerabonnement van € 49 per maand**, nemen wij de complete operationele "laatste mijl" van uw AI SaaS over. Wij implementeren de complexe Stripe/Mollie webhooklogica inclusief geautomatiseerd dunning-beheer, richten managed hosting in met connection pooling en SSL, configureren 24/7 uptime- en foutmonitoring, en borgen dagelijkse back-ups met geteste herstelprocedures. Cruciaal is dat wij dit alles realiseren met behoud van uw met AI gegenereerde frontend, zodat u zich 100% kunt focussen op marketing, verkoop en klantwerving.
 
@@ -64,7 +64,7 @@ De economische logica achter dit model is evident. Een traditioneel bureaucontra
 - Rate limiting op dure AI API-endpoints beschermt uw winstmarge tegen onverwachte kostenexplosies.
 - Het Launch & Grow pakket van LaunchStudio levert de benodigde enterprise-infrastructuur voor slechts € 49 per maand aan beheer.
 
-[Bereken direct uw vaste prijs voor het upgraden van uw SaaS-infrastructuur via onze calculator](https://launchstudio.eu/en/#calculator).
+[Bereken direct uw vaste prijs voor het upgraden van uw SaaS-infrastructuur via onze calculator](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

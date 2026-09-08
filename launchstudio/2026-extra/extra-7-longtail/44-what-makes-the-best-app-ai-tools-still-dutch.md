@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "Wat de beste app-AI-tools nog steeds aan u overlaten om te repareren",
   "description": "Zelfs de beste app-AI-tools schieten tekort in productiegereedheid. Een vergelijking naast elkaar van wat Lovable, Bolt, Cursor en v0 daadwerkelijk leveren versus wat veilig lanceren vereist.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-11",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/what-makes-the-best-app-ai-tools-still" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/what-makes-the-best-app-ai-tools-still" }
 }
 </script>
 

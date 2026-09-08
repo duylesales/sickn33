@@ -33,9 +33,9 @@ Voorbij technische monitoring brengt daadwerkelijke gebruikersfeedback — suppo
 
 Founders plannen soms simpelweg "beschikbaar te zijn" post-lancering zonder een specifieke, gestructureerde aanpak van waar ze naar kijken en waarom — een passieve houding die het specifieke, voorspelbare patroon mist dat dit artikel beschrijft: bepaalde probleemcategorieën komen structureel waarschijnlijker naar boven in de eerste 48 uur, andere in week één, andere pas zodra volume een bepaalde drempel overschrijdt. Dit patroon vooraf kennen laat je proactief kijken naar de juiste dingen op het juiste moment, in plaats van reactief problemen op te merken nadat ze al klantgerichte schade hebben veroorzaakt.
 
-[LaunchStudio](https://launchstudio.eu/en/) biedt gestructureerde post-lanceringsmonitoringondersteuning als onderdeel van het Launch & Grow-pakket, specifiek geïnformeerd door dit voorspelbare patroon van wat wanneer naar boven komt, gesteund door Manifera's ervaring met het ondersteunen van founders door precies dit kritieke vroege venster over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) biedt gestructureerde post-lanceringsmonitoringondersteuning als onderdeel van het Launch & Grow-pakket, specifiek geïnformeerd door dit voorspelbare patroon van wat wanneer naar boven komt, gesteund door Manifera's ervaring met het ondersteunen van founders door precies dit kritieke vroege venster over 160+ opgeleverde projecten.
 
-[Krijg gestructureerde ondersteuning voor het specifieke venster wanneer echt gebruik alles voor het eerst test](https://launchstudio.eu/en/#calculator) — pre-lanceringsverharding en post-lanceringsvalidatie zijn verschillende, opeenvolgende fasen, beide de moeite waard om serieus te nemen.
+[Krijg gestructureerde ondersteuning voor het specifieke venster wanneer echt gebruik alles voor het eerst test](https://launchstudio.eu/nl/#calculator) — pre-lanceringsverharding en post-lanceringsvalidatie zijn verschillende, opeenvolgende fasen, beide de moeite waard om serieus te nemen.
 
 ## Echt voorbeeld
 

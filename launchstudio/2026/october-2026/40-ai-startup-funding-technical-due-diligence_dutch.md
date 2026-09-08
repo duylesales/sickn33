@@ -45,13 +45,13 @@ U kunt Technical Due Diligence niet faken. De auditor eist leestoegang tot uw Gi
 
 Als u weet dat uw MVP-architectuur met kunst- en vliegwerk aan elkaar hangt, moet u vóór de audit een gerichte **"Audit-Ready Refactor"** uitvoeren.
 
-Dit is exact waarom slimme technische oprichters [LaunchStudio](https://launchstudio.eu/en/) inschakelen.
+Dit is exact waarom slimme technische oprichters [LaunchStudio](https://launchstudio.eu/nl/) inschakelen.
 
 Gesteund door de enterprise engineeringstandaarden van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring in robuuste softwareontwikkeling, meer dan 120 senior ontwikkelaars en 160+ succesvol opgeleverde projecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons software-centrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — is LaunchStudio gespecialiseerd in het upgraden van breekbare AI-prototypes naar robuuste, investeerbare software-architecturen.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Wanneer u LaunchStudio inschakelt voor een pre-funding tech audit, treden wij op als een vriendelijk "Red Team". We auditen uw codebase exact zoals een VC-auditor dat doet. Vervolgens repareren we de fatale kwetsbaarheden in sneltreinvaart: we implementeren PostgreSQL RLS, beveiligen API-sleutels, saneren open-source licenties (SBOM), schrijven de ontbrekende architectuurdocumentatie en richten geautomatiseerde CI/CD-pijplijnen in. Wij transformeren uw chaotische prototype in een professionele codebase die investeerders direct overtuigt — zie onze [pakketten](https://launchstudio.eu/en/#packages) voor een transparante prijsopgave.
+Wanneer u LaunchStudio inschakelt voor een pre-funding tech audit, treden wij op als een vriendelijk "Red Team". We auditen uw codebase exact zoals een VC-auditor dat doet. Vervolgens repareren we de fatale kwetsbaarheden in sneltreinvaart: we implementeren PostgreSQL RLS, beveiligen API-sleutels, saneren open-source licenties (SBOM), schrijven de ontbrekende architectuurdocumentatie en richten geautomatiseerde CI/CD-pijplijnen in. Wij transformeren uw chaotische prototype in een professionele codebase die investeerders direct overtuigt — zie onze [pakketten](https://launchstudio.eu/nl/#packages) voor een transparante prijsopgave.
 
 ## Wat U Moet Doen in de 30 Dagen Vóór Uw Audit
 
@@ -70,7 +70,7 @@ Deze punten zijn binnen twee weken op te lossen met het juiste senior engineerin
 - Het tijdig refactoren van uw MVP bewijst dat uw software-architectuur veilig kan schalen met VC-kapitaal.
 - LaunchStudio levert de senior enterprise engineering om uw codebase vooraf te auditen, te refactoren en te documenteren voor een gegarandeerde audit-goedkeuring.
 
-[Laat slechte code uw investeringsronde niet verpesten. Laat LaunchStudio een pre-funding audit uitvoeren](https://launchstudio.eu/en/#contact).
+[Laat slechte code uw investeringsronde niet verpesten. Laat LaunchStudio een pre-funding audit uitvoeren](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

@@ -49,7 +49,7 @@ Voor een solo-oprichter kan dit specialistische "laatste mijl" engineeringwerk w
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Dit is exact waar [LaunchStudio](https://launchstudio.eu/en/) uitkomst biedt. Als gespecialiseerd initiatief van [Manifera](https://www.manifera.com/) — een toonaangevend softwarebedrijf met ruim 11 jaar enterprise-ervaring, 120+ engineers en 160+ succesvol opgeleverde projecten voor gerenommeerde opdrachtgevers zoals Vodafone, TNO en CFLW — leveren wij de specialistische menselijke expertise die nodig is om met AI gebouwde applicaties veilig en AVG-compliant te lanceren.
+Dit is exact waar [LaunchStudio](https://launchstudio.eu/nl/) uitkomst biedt. Als gespecialiseerd initiatief van [Manifera](https://www.manifera.com/) — een toonaangevend softwarebedrijf met ruim 11 jaar enterprise-ervaring, 120+ engineers en 160+ succesvol opgeleverde projecten voor gerenommeerde opdrachtgevers zoals Vodafone, TNO en CFLW — leveren wij de specialistische menselijke expertise die nodig is om met AI gebouwde applicaties veilig en AVG-compliant te lanceren.
 
 Wij herschrijven uw frontend niet. Wij integreren direct met de codebase die u heeft gebouwd met Cursor, Bolt of Lovable en verharden de backend. Onze engineers implementeren strikte Row Level Security, herstructureren API-endpoints om over-fetching te elimineren, versleutelen gevoelige velden in rust (encryption at rest) en brengen alle datastromen naar externe API's nauwgezet in kaart. Onze teams opereren vanuit Amsterdam (Herengracht 420), Singapore en ons primaire ontwikkelingscentrum in Ho Chi Minhstad, waardoor we snel en efficiënt kunnen schakelen.
 
@@ -63,7 +63,7 @@ U bouwt het prototype razendsnel. Wij zorgen dat het veilig en compliant live ka
 - Datalekken met persoonsgegevens leiden tot torenhoge boetes en direct verlies van klantvertrouwen — waarbij 45% van de AI-codebases direct exploiteerbare lekken bevat.
 - LaunchStudio voert de benodigde "laatste mijl" data-audit en beveiliging uit zonder dat uw frontend-ontwikkeling vertraging oploopt.
 
-[Bereken direct de vaste kosten om uw AI-prototype veilig en AVG-compliant te lanceren via onze calculator](https://launchstudio.eu/en/#calculator).
+[Bereken direct de vaste kosten om uw AI-prototype veilig en AVG-compliant te lanceren via onze calculator](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

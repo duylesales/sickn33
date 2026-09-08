@@ -16,7 +16,7 @@ Doelpersona: CISO / Data Protection Officer (DPO)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CISO / Data Protection Officer (DPO)
   "datePublished": "2026-12-18",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-data-security"
+    "@id": "https://launchstudio.eu/nl/blog/ai-data-security"
   }
 }
 </script>
@@ -61,7 +61,7 @@ In een RAG-systeem (Retrieval-Augmented Generation) worden bedrijfsdocumenten om
 
 Het inrichten van een architectuur die voldoet aan SOC2, ISO 27001 en de AVG/GDPR vereist senior security-engineering.
 
-[LaunchStudio](https://launchstudio.eu/en/), ondersteund door de enterprise-security experts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, beveiligt AI-platformen voor veeleisende zakelijke klanten:
+[LaunchStudio](https://launchstudio.eu/nl/), ondersteund door de enterprise-security experts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, beveiligt AI-platformen voor veeleisende zakelijke klanten:
 1. **Azure/AWS Bedrock Migratie:** Wij migreren uw AI-verwerking naar beveiligde, ZDR-conforme enterprise-eindpunten binnen de EU.
 2. **Presidio Proxy Implementatie:** Wij richten lokale proxies in die persoonsgegevens en gevoelige sleutelwoorden realtime maskeren.
 3. **Audit-Klaar Observability:** Wij implementeren self-hosted observability tools (zoals Langfuse) die onweerlegbaar cryptografisch bewijs leveren van welke data is verwerkt en direct gewist.

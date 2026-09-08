@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-30",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/the-ai-privacy-issues-founders-dont-notice-until-a-user-asks"
+    "@id": "https://launchstudio.eu/nl/blog/the-ai-privacy-issues-founders-dont-notice-until-a-user-asks"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Een echt verzoek om gegevensverwijdering creëert echte tijdsdruk – de AVG spe
 
 ## Wat het op de juiste manier afhandelen hiervan vereist
 
-Een correcte implementatie brengt elke locatie in kaart waar de persoonlijke gegevens van een gebruiker daadwerkelijk leven over een applicatie. Het bouwt een oprecht verwijderings- of anonimiseringsproces dat al die locaties adresseert. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort uitgebreide afhandeling van gegevensverwijdering als onderdeel van haar AVG-nalevingswerk, ondersteund door Manifera's 11+ jaar ervaring met compliance-gevoelige gegevensarchitectuur.
+Een correcte implementatie brengt elke locatie in kaart waar de persoonlijke gegevens van een gebruiker daadwerkelijk leven over een applicatie. Het bouwt een oprecht verwijderings- of anonimiseringsproces dat al die locaties adresseert. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort uitgebreide afhandeling van gegevensverwijdering als onderdeel van haar AVG-nalevingswerk, ondersteund door Manifera's 11+ jaar ervaring met compliance-gevoelige gegevensarchitectuur.
 
 Manifera's gegevensinfrastructuur- en verwijderingswerk wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Pak een gratis introductiegesprek van 15 minuten](https://launchstudio.eu/en/#contact).
+[Pak een gratis introductiegesprek van 15 minuten](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

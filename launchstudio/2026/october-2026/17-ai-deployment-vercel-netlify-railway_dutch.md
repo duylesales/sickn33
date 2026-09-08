@@ -61,7 +61,7 @@ De realiteit is dat uw door AI gegenereerde codebase onder de motorkap waarschij
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Bij [LaunchStudio](https://launchstudio.eu/en/) zien we oprichters dagelijks worstelen met deze infrastructurele barrières. Gesteund door de 11+ jaar enterprise-ervaring van [Manifera](https://www.manifera.com/) — hetzelfde team achter Manifera's hoogwaardige maatwerk softwareontwikkeling voor grote ondernemingen — nemen wij alle onzekerheid rond AI-deployment definitief weg.
+Bij [LaunchStudio](https://launchstudio.eu/nl/) zien we oprichters dagelijks worstelen met deze infrastructurele barrières. Gesteund door de 11+ jaar enterprise-ervaring van [Manifera](https://www.manifera.com/) — hetzelfde team achter Manifera's hoogwaardige maatwerk softwareontwikkeling voor grote ondernemingen — nemen wij alle onzekerheid rond AI-deployment definitief weg.
 
 Wij pushen uw code niet simpelweg naar een willekeurige server. Wij auditen de backend-logica van uw AI, optimaliseren de API-routes voor de specifieke randvoorwaarden van serverless omgevingen, en richten de architectuur in die naadloos aansluit op uw bedrijfsmodel — inclusief hybride splitsingen over platforms heen wanneer uw applicatie dat vereist.
 
@@ -76,7 +76,7 @@ Of uw product nu vraagt om de edge-snelheid van Vercel of de onbeperkte rekenkra
 - De meest succesvolle architectuur is vaak hybride: snelle edge-hosting voor de UI, gecombineerd met persistente containers voor achtergrondtaken.
 - LaunchStudio realiseert de professionele deployment-engineering en managed hosting zodat uw AI-app stabiel en snel draait.
 
-[Stop met worstelen tegen serverless time-outs. Laat onze engineers uw AI-prototype veilig deployen](https://launchstudio.eu/en/#contact).
+[Stop met worstelen tegen serverless time-outs. Laat onze engineers uw AI-prototype veilig deployen](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

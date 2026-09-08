@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/handover-documentation-first-engineer-hire"
+    "@id": "https://launchstudio.eu/nl/blog/handover-documentation-first-engineer-hire"
   }
 }
 </script>
@@ -47,7 +47,7 @@ Effectieve overdrachtsdocumentatie voor een met AI gebouwd product hoeft niet ui
 
 De meest efficiënte manier om deze documentatie te produceren is niet om de oprichter het uit zijn geheugen te laten schrijven – oprichters kunnen hun eigen redenering maanden later vaak ook niet meer volledig reconstrueren, in het bijzonder voor beslissingen die de AI-tool semi-autonoom heeft gemaakt. Het is effectiever om iemand de codebase vers te laten lezen, op de manier waarop een nieuwe werknemer dat zou doen, en te documenteren wat hij onderweg vindt: het markeren van onduidelijke logica, het in kaart brengen van gegevensstromen tussen systemen, en het noteren van alles wat er kwetsbaar uitziet. Die uitvoer wordt het inwerkdocument, geschreven vanuit het perspectief van iemand die de code voor het eerst tegenkomt – wat exact het perspectief is dat een nieuwe werknemer nodig heeft.
 
-Als u op het punt staat uw eerste ingenieur aan te nemen en u wilt de codebase gedocumenteerd hebben voordat hij begint, schetst onze [hoe het werkt](https://launchstudio.eu/en/#process)-pagina hoe LaunchStudio dit soort traject omvangt. Manifera's [portfolio](https://www.manifera.com/portfolio/) toont het bereik van codebases dat onze ingenieurs hebben geonboard en gedocumenteerd, van producten in een vroeg stadium tot gevestigde enterprise-systemen.
+Als u op het punt staat uw eerste ingenieur aan te nemen en u wilt de codebase gedocumenteerd hebben voordat hij begint, schetst onze [hoe het werkt](https://launchstudio.eu/nl/#process)-pagina hoe LaunchStudio dit soort traject omvangt. Manifera's [portfolio](https://www.manifera.com/portfolio/) toont het bereik van codebases dat onze ingenieurs hebben geonboard en gedocumenteerd, van producten in een vroeg stadium tot gevestigde enterprise-systemen.
 
 ## Documentatie die één keer is geschreven begint te verouderen op het moment dat deze klaar is
 

@@ -16,7 +16,7 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-10",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-develop-an-ai-app-that-doesnt" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/how-to-develop-an-ai-app-that-doesnt" }
 }
 </script>
 

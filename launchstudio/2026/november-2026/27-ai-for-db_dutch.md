@@ -16,7 +16,7 @@ Doelpersona: Technische Oprichter / CTO
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Oprichter / CTO
   "datePublished": "2026-11-27",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-for-db"
+    "@id": "https://launchstudio.eu/nl/blog/ai-for-db"
   }
 }
 </script>
@@ -70,7 +70,7 @@ Een volwaardige AI-database moet worden beschermd door een connection pooler (zo
 
 Het doorgronden van PostgreSQL vectortuning, HNSW-grafen en PgBouncer-instellingen leidt af van uw commerciële groei.
 
-[LaunchStudio](https://launchstudio.eu/en/) levert de specialistische data-engineering die nodig is om AI-applicaties moeiteloos te laten schalen. Onder leiding van Herre Roelevink in Amsterdam en ervaren database-architecten bij [Manifera](https://www.manifera.com/) in Ho Chi Minhstad:
+[LaunchStudio](https://launchstudio.eu/nl/) levert de specialistische data-engineering die nodig is om AI-applicaties moeiteloos te laten schalen. Onder leiding van Herre Roelevink in Amsterdam en ervaren database-architecten bij [Manifera](https://www.manifera.com/) in Ho Chi Minhstad:
 1. **Consolideren van Data:** Wij migreren gefragmenteerde vectoren naar een krachtige, beheerde PostgreSQL/Supabase omgeving met `pgvector`.
 2. **Multi-Tenancy via RLS:** Wij richten strikte Row Level Security in zodat zoekopdrachten van Klant A wiskundig gezien nooit data van Klant B kunnen opleveren.
 3. **Wiskundige Index-Optimalisatie:** Wij configureren op maat afgestemde HNSW- en IVFFlat-indexen voor zoekresultaten onder de 50 milliseconden.

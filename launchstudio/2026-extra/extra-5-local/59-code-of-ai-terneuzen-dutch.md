@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Code of AI: Bestaat er daadwerkelijk een kwaliteitsnorm voor Terneuzense met AI gebouwde software?",
   "description": "Een eerlijke blik op de vraag of een 'code of AI' — een echte kwaliteitsnorm voor met AI gegenereerde software — bestaat, en waar een Terneuzense oprichter in plaats daarvan op moet controleren.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/code-of-ai-terneuzen" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/code-of-ai-terneuzen" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Een oprichter die software bouwt voor Terneuzens haven- en industriële economie
 
 ## Uw eigen norm bouwen, aangezien niemand anders dat heeft gedaan
 
-Bij afwezigheid van een officiële code of AI past LaunchStudio haar eigen norm toe: dezelfde engineering-beoordelingsnorm die Manifera heeft gebruikt bij meer dan 160 projecten voor gereguleerde enterprise-klanten waaronder Vodafone en TNO, aangepast aan met AI gegenereerde codebases van elk van de grote tools. Dat betekent een gestructureerde controle van databasetoegangscontroles, authenticatielogica, betalingsafhandeling en datacompliance — geen formele certificering, maar een echte, gedocumenteerde beoordeling waar een oprichter naar kan wijzen wanneer een klant of investeerder erom vraagt. Voor een in Terneuzen gevestigde oprichter die verkoopt aan de haven- of chemiesector levert die gedocumenteerde beoordeling vaak meer praktisch werk op dan welk formeel certificaat dan ook zou doen, omdat het de specifieke vragen beantwoordt die een inkoopcontact daadwerkelijk stelt in plaats van een generiek vinkje dat ze zetten. Manifera's bredere engineering-referenties, waaronder werk met klanten zoals CFLW op cybersecurity-gerelateerde projecten, worden toegelicht op de [over ons pagina](https://www.manifera.com/about-us/). Als u onzeker bent over waar uw in Terneuzen gebouwde app staat, [begin met de LaunchStudio homepage](https://launchstudio.eu/en/) om te zien hoe het beoordelingsproces werkt.
+Bij afwezigheid van een officiële code of AI past LaunchStudio haar eigen norm toe: dezelfde engineering-beoordelingsnorm die Manifera heeft gebruikt bij meer dan 160 projecten voor gereguleerde enterprise-klanten waaronder Vodafone en TNO, aangepast aan met AI gegenereerde codebases van elk van de grote tools. Dat betekent een gestructureerde controle van databasetoegangscontroles, authenticatielogica, betalingsafhandeling en datacompliance — geen formele certificering, maar een echte, gedocumenteerde beoordeling waar een oprichter naar kan wijzen wanneer een klant of investeerder erom vraagt. Voor een in Terneuzen gevestigde oprichter die verkoopt aan de haven- of chemiesector levert die gedocumenteerde beoordeling vaak meer praktisch werk op dan welk formeel certificaat dan ook zou doen, omdat het de specifieke vragen beantwoordt die een inkoopcontact daadwerkelijk stelt in plaats van een generiek vinkje dat ze zetten. Manifera's bredere engineering-referenties, waaronder werk met klanten zoals CFLW op cybersecurity-gerelateerde projecten, worden toegelicht op de [over ons pagina](https://www.manifera.com/about-us/). Als u onzeker bent over waar uw in Terneuzen gebouwde app staat, [begin met de LaunchStudio homepage](https://launchstudio.eu/nl/) om te zien hoe het beoordelingsproces werkt.
 
 ## Een interne norm bouwen: Wat te documenteren naarmate u vordert
 

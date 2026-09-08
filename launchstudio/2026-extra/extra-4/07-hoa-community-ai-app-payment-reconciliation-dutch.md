@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/hoa-community-ai-app-payment-reconciliation"
+    "@id": "https://launchstudio.eu/nl/blog/hoa-community-ai-app-payment-reconciliation"
   }
 }
 </script>
@@ -45,7 +45,7 @@ De reflex wanneer deze bug verschijnt is om "het matchen te herstellen", maar he
 
 LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met 11+ jaar ervaring in productie-engineering. Afstemmingslogica zoals deze is een terugkerende herstelling bij de AI-native financiële tools die ons team beoordeelt. Het is dezelfde onderliggende discipline die Manifera toepast op enterprise financiële gegevensverwerking voor klanten zoals Statler BI. Ons team gevestigd vanuit Manifera's kantoor in Amsterdam aan de Herengracht 420 handelt een betekenisvol deel van dit financiële logica- en afstemmingswerk af voor LaunchStudio's Europese klanten, gezien hoe nauw het verbonden is met lokale bankkenmerk-formaten en nalevingsnormen.
 
-Als uw tool echt geld en echte bankgegevens raakt, [krijg een schatting met vaste omvang via onze calculator](https://launchstudio.eu/en/#calculator) voordat bewoners saldi beginnen te betwisten die daadwerkelijk nooit van hen waren om te betwisten.
+Als uw tool echt geld en echte bankgegevens raakt, [krijg een schatting met vaste omvang via onze calculator](https://launchstudio.eu/nl/#calculator) voordat bewoners saldi beginnen te betwisten die daadwerkelijk nooit van hen waren om te betwisten.
 
 ## Het herstellen van een verkeerde match maakt de bel die het al luidde niet ongedaan
 

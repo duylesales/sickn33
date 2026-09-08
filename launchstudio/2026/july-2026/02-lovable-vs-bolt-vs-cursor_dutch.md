@@ -101,7 +101,7 @@ Op basis van onze ervaring met het helpen van oprichters bij het lanceren van hu
 
 ## Je prototype gebouwd? Laten we het lanceringsklaar maken
 
-Welke AI-bouwer u ook gebruikt, LaunchStudio maakt uw product productieklaar met beveiliging, betalingen, hosting en implementatie – vanaf € 800. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+Welke AI-bouwer u ook gebruikt, LaunchStudio maakt uw product productieklaar met beveiliging, betalingen, hosting en implementatie – vanaf € 800. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

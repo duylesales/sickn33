@@ -16,7 +16,7 @@ Doelpersona: Niet-Technische Oprichter / Operationeel Directeur
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Niet-Technische Oprichter / Operationeel Directeur
   "datePublished": "2026-12-03",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/no-code-ai"
+    "@id": "https://launchstudio.eu/nl/blog/no-code-ai"
   }
 }
 </script>
@@ -60,7 +60,7 @@ Bereikt u een schaalbaarheidslimiet, dan hoeft u niet te smeken om hogere limiet
 
 De uitdaging voor niet-technische oprichters is dat Gegenereerde Code weliswaar superieur is voor een echt bedrijf, maar kennis vereist van servers en hosting.
 
-Dit is exact waarom [LaunchStudio](https://launchstudio.eu/en/) is opgericht: wij leveren het gemak van No-Code met de kracht en het eigenaarschap van echte broncode.
+Dit is exact waarom [LaunchStudio](https://launchstudio.eu/nl/) is opgericht: wij leveren het gemak van No-Code met de kracht en het eigenaarschap van echte broncode.
 
 Gesteund door [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, nemen wij de open-source code die u met Lovable of Cursor genereert, en verzorgen de complete productie-engineering:
 - AWS/Vercel serverinrichting en geautomatiseerde CI/CD-pipelines.

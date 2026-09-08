@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Het Verschil Tussen 'AI en Beveiliging' als Functie versus als Praktijk",
   "description": "Eén enkele AI-aangedreven beveiligingsfunctie is niet hetzelfde als een beveiligingspraktijk. Dit is waarom oprichters die de twee door elkaar halen na de lancering een onaangename verrassing krijgen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-and-security-feature-vs-practice" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-and-security-feature-vs-practice" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Praktijk ziet eruit als onglamoureus, terugkerend werk: het roteren van credenti
 
 Niet "hebben we een AI-beveiligingsfunctie?" maar "wie doet het terugkerende werk om dit systeem veilig te houden, en volgens welk schema?" Als het eerlijke antwoord "nog niemand" is, dan is dat de leemte die u moet dichten voordat de functie zijn volgende schermafbeelding krijgt.
 
-Achter de lanceringen van LaunchStudio staat het team van Manifera van meer dan 120 doorgewinterde technici, en onze hub in Singapore werkt met oprichters specifiek aan het omzetten van "we hebben een beveiligingsfunctie" naar "we hebben een beveiligingspraktijk" — toegangsbeoordelingen, patchcadans en monitoring die stilletjes op de achtergrond draait in plaats van in een pitch deck te leven. Als u wilt weten hoe die doorlopende dekking eruitziet, leggen onze [details over het supportpakket](https://launchstudio.eu/en/#packages) dit uit, en Manifera's praktijk voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) past dezelfde discipline toe voor enterprise-klanten op veel grotere schaal.
+Achter de lanceringen van LaunchStudio staat het team van Manifera van meer dan 120 doorgewinterde technici, en onze hub in Singapore werkt met oprichters specifiek aan het omzetten van "we hebben een beveiligingsfunctie" naar "we hebben een beveiligingspraktijk" — toegangsbeoordelingen, patchcadans en monitoring die stilletjes op de achtergrond draait in plaats van in een pitch deck te leven. Als u wilt weten hoe die doorlopende dekking eruitziet, leggen onze [details over het supportpakket](https://launchstudio.eu/nl/#packages) dit uit, en Manifera's praktijk voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) past dezelfde discipline toe voor enterprise-klanten op veel grotere schaal.
 
 ## Echt voorbeeld
 

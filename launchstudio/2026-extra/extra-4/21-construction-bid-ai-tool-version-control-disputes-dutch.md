@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/construction-bid-ai-tool-version-control-disputes"
+    "@id": "https://launchstudio.eu/nl/blog/construction-bid-ai-tool-version-control-disputes"
   }
 }
 </script>
@@ -45,7 +45,7 @@ De technische oorzaak is bijna altijd dezelfde: een offertes-update-operatie voe
 
 Een versiebeheersysteem van productiekwaliteit voor offertes heeft een paar specifieke dingen nodig die zelden bij een eerste poging verschijnen: elke herziening opgeslagen als een eigen onveranderlijk record in plaats van een overschrijving, een tijdstempel en auteur op elke versie, een duidelijke markering "huidig" gescheiden van het historische dossier, en – idealiter – een exporteerbaar, tegen manipulatie beschermd overzicht dat een oprichter aan een aannemer of een advocaat kan overhandigen zonder de database rechtstreeks aan te raken. Niets hiervan is exotische engineering. Het is gewoon, goed begrepen databasedesign waar AI-coderingsassistenten simpelweg niet naar grijpen tenzij iemand er specifiek om vraagt, omdat "bewaar elke vorige versie" niet besloten ligt in "laat de gebruiker een offerte bewerken".
 
-LaunchStudio brengt Manifera's enterprise-grade engineering naar exact dit soort kloven – de herstellingen die bouw-, logistiek- en dienstenplatformen al meer dan een decennium nodig hebben, toegepast op het met AI gegenereerde prototype van een oprichter in plaats van een Fortune 500-codebase. [Bekijk hoe het proces werkt](https://launchstudio.eu/en/#process) voordat uw volgende offerte-herziening uw volgende geschil wordt.
+LaunchStudio brengt Manifera's enterprise-grade engineering naar exact dit soort kloven – de herstellingen die bouw-, logistiek- en dienstenplatformen al meer dan een decennium nodig hebben, toegepast op het met AI gegenereerde prototype van een oprichter in plaats van een Fortune 500-codebase. [Bekijk hoe het proces werkt](https://launchstudio.eu/nl/#process) voordat uw volgende offerte-herziening uw volgende geschil wordt.
 
 ## Gelijktijdige bewerkingen: Wanneer twee "nieuwe" versies racen om huidig te worden
 

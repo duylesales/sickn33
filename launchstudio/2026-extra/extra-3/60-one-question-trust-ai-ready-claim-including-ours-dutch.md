@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/one-question-trust-ai-ready-claim-including-ours"
+    "@id": "https://launchstudio.eu/nl/blog/one-question-trust-ai-ready-claim-including-ours"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Vraag naar de specifieke artefacten die elders in de richtlijnen van deze reeks 
 
 Manifera's 11+ jaar aan engineering-ervaring, haar werk met klanten zoals Vodafone, TNO en CFLW, en haar kantoren in Amsterdam, Singapore en Ho Chi Minh-stad zijn geen claims die bedoeld zijn om te dienen als vervanging voor specificiteit – het is context die de specifieke, controleerbare claims over een bepaalde opdracht gemakkelijker verifieerbaar en vertrouwenswaardig zou moeten maken, en geen reden om verificatie over te slaan omdat de bredere reputatie op zichzelf geloofwaardig genoeg klinkt.
 
-[LaunchStudio](https://launchstudio.eu/en/) verwelkomt exact dit niveau van controle toegepast op haar eigen werk, en moedigt oprichters specifiek aan om te vragen naar dezelfde controleerbare specificiteit waar deze reeks gedurende de gehele artikelen voor gepleit heeft, in plaats van het zelfvertrouwen van welke aanbieder dan ook, inclusief het onze, als een vervanging daarvoor te nemen.
+[LaunchStudio](https://launchstudio.eu/nl/) verwelkomt exact dit niveau van controle toegepast op haar eigen werk, en moedigt oprichters specifiek aan om te vragen naar dezelfde controleerbare specificiteit waar deze reeks gedurende de gehele artikelen voor gepleit heeft, in plaats van het zelfvertrouwen van welke aanbieder dan ook, inclusief het onze, als een vervanging daarvoor te nemen.
 
-[Stel ons de specifieke vragen die deze reeks u heeft geleerd te stellen](https://launchstudio.eu/en/#contact) — pas de standaard op ons toe op dezelfde manier waarop u deze op ieder ander zou toepassen.
+[Stel ons de specifieke vragen die deze reeks u heeft geleerd te stellen](https://launchstudio.eu/nl/#contact) — pas de standaard op ons toe op dezelfde manier waarop u deze op ieder ander zou toepassen.
 
 ## Een vertaalgids: Vage claim versus controleerbare claim
 

@@ -37,9 +37,9 @@ Uitsluitend testen op jouw eigen ontwikkelapparaat of simulator, vergelijkbaar m
 
 De algemene productiegereedheidschecklist is volledig van toepassing, met appstore-compliance die specifieke aandacht vereist gegeven het poortbewakende karakter, client-side dataopslag die dezelfde nauwkeurigheid rechtvaardigt als gegeven aan server-side datahantering, en offline-gedrag dat doelbewust, toegewijd testen vereist voorbij wat een connectiviteit-aannemend ontwikkelproces natuurlijk dekt.
 
-[LaunchStudio](https://launchstudio.eu/en/) verhardt AI-gegenereerde mobiele apps tegen precies deze platformspecifieke gaten naast de algemene checklist doorheen deze serie behandeld, gesteund door Manifera's mobiele-ontwikkelervaring over React Native- en Flutter-productieapplicaties.
+[LaunchStudio](https://launchstudio.eu/nl/) verhardt AI-gegenereerde mobiele apps tegen precies deze platformspecifieke gaten naast de algemene checklist doorheen deze serie behandeld, gesteund door Manifera's mobiele-ontwikkelervaring over React Native- en Flutter-productieapplicaties.
 
-[Laat jouw mobiele app testen tegen appstore-vereisten en echte apparaatomstandigheden](https://launchstudio.eu/en/#calculator) — de algemene checklist plus wat specifiek is aan verzenden via een appstore.
+[Laat jouw mobiele app testen tegen appstore-vereisten en echte apparaatomstandigheden](https://launchstudio.eu/nl/#calculator) — de algemene checklist plus wat specifiek is aan verzenden via een appstore.
 
 ## Echt voorbeeld
 

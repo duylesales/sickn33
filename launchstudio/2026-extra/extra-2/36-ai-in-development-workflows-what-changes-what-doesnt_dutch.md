@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-29",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-in-development-workflows-what-changes-what-doesnt"
+    "@id": "https://launchstudio.eu/nl/blog/ai-in-development-workflows-what-changes-what-doesnt"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Het testen van een functie voor het importeren vanaf een URL door het plakken va
 
 ## Wat het op de juiste manier beperken van deze functie vereist
 
-Een veilige implementatie valideert dat een verstrekte URL resolvet naar een oprecht openbaar, extern adres voordat het wordt opgehaald. Het blokkeert expliciet verzoeken naar interne of gereserveerde netwerkbereiken. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort URL-validatie als onderdeel van haar beoordeling van backend-beveiliging, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van integraties aan de serverzijde.
+Een veilige implementatie valideert dat een verstrekte URL resolvet naar een oprecht openbaar, extern adres voordat het wordt opgehaald. Het blokkeert expliciet verzoeken naar interne of gereserveerde netwerkbereiken. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort URL-validatie als onderdeel van haar beoordeling van backend-beveiliging, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van integraties aan de serverzijde.
 
 Manifera's beveiligingswerk voor SSRF en backend-integraties wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

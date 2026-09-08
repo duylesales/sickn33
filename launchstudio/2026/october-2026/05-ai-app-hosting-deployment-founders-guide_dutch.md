@@ -59,7 +59,7 @@ Wanneer een met Bolt gegenereerde app bijvoorbeeld een langlopende achtergrondta
 
 ### Volledig Zorgeloze Managed Hosting via LaunchStudio
 
-Voor ondernemers die zich 100% willen richten op marketing, verkoop en productstrategie zonder ooit een serverconfiguratie of DNS-paneel te hoeven aanraken, biedt [LaunchStudio](https://launchstudio.eu/en/) **Managed Hosting aan voor € 49 per maand**.
+Voor ondernemers die zich 100% willen richten op marketing, verkoop en productstrategie zonder ooit een serverconfiguratie of DNS-paneel te hoeven aanraken, biedt [LaunchStudio](https://launchstudio.eu/nl/) **Managed Hosting aan voor € 49 per maand**.
 
 Dit totaalpakket omvat: volledige deployment naar uw eigen custom domeinnaam, installatie en automatische jaarlijkse verlenging van SSL-certificaten, dagelijkse geautomatiseerde databaseback-ups, 24/7 uptime-monitoring met directe alerting, en periodieke beveiligingsupdates.
 
@@ -88,7 +88,7 @@ Controleer vóórdat uw applicatie officieel live gaat of u aan elk van deze ach
 - Voor een zorgeloze lancering verzorgt LaunchStudio de complete deployment en managed hosting voor slechts € 49 per maand.
 - De 8-punten deployment checklist garandeert dat uw software veilig, snel en met een betrouwbaar rollback-plan live gaat.
 
-Laat uw prototype professioneel en veilig deployen. [Stuur ons uw prototype-link voor gratis deployment-advies](https://launchstudio.eu/en/#contact).
+Laat uw prototype professioneel en veilig deployen. [Stuur ons uw prototype-link voor gratis deployment-advies](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

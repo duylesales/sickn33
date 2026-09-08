@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "AI-software-engineering in Doetinchem: Wat een echte audit daadwerkelijk controleert",
   "description": "Een overzicht van wat een echte AI-software-engineering audit inspecteert vóór de lancering, geïllustreerd met de ervaring van een Doetinchemse oprichter in de industriële technologie.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-software-engineering-doetinchem" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-software-engineering-doetinchem" }
 }
 </script>
 

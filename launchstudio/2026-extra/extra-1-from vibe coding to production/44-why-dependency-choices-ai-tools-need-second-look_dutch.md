@@ -33,9 +33,9 @@ Een dependencyprobleem dat tolereerbaar risico is in de prototypefase — een kl
 
 Een geautomatiseerde dependency-kwetsbaarheidsscan draaien — een categorie tool die snel is, vaak gratis voor opensource- of kleine projecten, en minimale setup vereist — tegen jouw volledige dependencylijst kost een fractie van de tijd die de meeste andere productiegereedheidscontroles doorheen deze serie behandeld vereisen, terwijl het precies deze risicocategorie direct en specifiek naar boven brengt.
 
-[LaunchStudio](https://launchstudio.eu/en/) draait dependency-audits — controlerend onderhoudsactiviteit, bekende kwetsbaarheden, en licentiefit — als standaardonderdeel van elke codebasereview, gesteund door Manifera's engineeringdiscipline in het evalueren van de volledige technologiestack, niet alleen de applicatielogica erbovenop.
+[LaunchStudio](https://launchstudio.eu/nl/) draait dependency-audits — controlerend onderhoudsactiviteit, bekende kwetsbaarheden, en licentiefit — als standaardonderdeel van elke codebasereview, gesteund door Manifera's engineeringdiscipline in het evalueren van de volledige technologiestack, niet alleen de applicatielogica erbovenop.
 
-[Laat jouw dependencies controleren op de risico's die niet zichtbaar zijn bij normaal gebruik](https://launchstudio.eu/en/#calculator) — deze categorie is onzichtbaar tot iets er specifiek op controleert.
+[Laat jouw dependencies controleren op de risico's die niet zichtbaar zijn bij normaal gebruik](https://launchstudio.eu/nl/#calculator) — deze categorie is onzichtbaar tot iets er specifiek op controleert.
 
 ## Echt voorbeeld
 

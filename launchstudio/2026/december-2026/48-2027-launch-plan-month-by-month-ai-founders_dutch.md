@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/2027-launch-plan-month-by-month-ai-founders"
+    "@id": "https://launchstudio.eu/nl/blog/2027-launch-plan-month-by-month-ai-founders"
   }
 }
 </script>
@@ -43,7 +43,7 @@ Een idee zonder plan blijft een idee. Dit is een concreet, realistisch maand-voo
 
 **Week 1-2: Verzamel echte feedback op het werkende prototype.** Laat het prototype zien aan dezelfde mensen die u in Maand 1 sprak, plus nieuwe prospects. Kijk hoe ze de tool daadwerkelijk gebruiken in plaats van alleen naar hun mening te vragen — gebruikersgedrag vertelt veel meer dan uitgesproken voorkeuren.
 
-**Week 3-4: Bepaal de productiescope.** Met een gevalideerd prototype op zak vraagt u een concrete offerte en planning aan voor de productie-infrastructuur — dit is het moment waarop de [LaunchStudio prijscalculator](https://launchstudio.eu/en/#calculator) direct van pas komt, omdat u nu iets tastbaars heeft om te offreren.
+**Week 3-4: Bepaal de productiescope.** Met een gevalideerd prototype op zak vraagt u een concrete offerte en planning aan voor de productie-infrastructuur — dit is het moment waarop de [LaunchStudio prijscalculator](https://launchstudio.eu/nl/#calculator) direct van pas komt, omdat u nu iets tastbaars heeft om te offreren.
 
 ## Maand 3: Productie-Lancering
 
@@ -59,7 +59,7 @@ De bovenstaande maand-voor-maand structuur brengt u naar een live, productieklaa
 
 Dit plan gaat uit van een gefocuste, consistente inzet gedurende drie maanden. Voor oprichters die dit combineren met een fulltime baan of andere verantwoordelijkheden is het proportioneel uitspreiden van elke fase (een versie van 4 tot 6 maanden) volkomen redelijk. Wat belangrijker is dan pure snelheid, is het handhaven van de volgorde: eerst valideren, dan feedback verzamelen en vervolgens productie-infrastructuur als een afgebakend project uitvoeren.
 
-[Start uw Maand 3](https://launchstudio.eu/en/#contact) zodra uw prototype gevalideerd en klaar is — Manifera's 120+ engineers staan klaar om de productiefase in één tot drie weken op te leveren.
+[Start uw Maand 3](https://launchstudio.eu/nl/#contact) zodra uw prototype gevalideerd en klaar is — Manifera's 120+ engineers staan klaar om de productiefase in één tot drie weken op te leveren.
 
 ## Het Volledige Kwartaal Budgetteren: Wat Elke Maand Daadwerkelijk Kost
 

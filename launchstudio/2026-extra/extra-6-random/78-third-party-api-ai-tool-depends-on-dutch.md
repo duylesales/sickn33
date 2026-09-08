@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "The Third-Party API Your AI Coding Tool Quietly Depends On",
   "description": "The api in ai coding tools often means an unlisted third-party service bundled into a template — invisible until it goes down and takes your feature with it.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/third-party-api-ai-tool-depends-on" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/third-party-api-ai-tool-depends-on" }
 }
 </script>
 
@@ -37,7 +37,7 @@ De afhankelijkheid zelf is meestal niet het probleem — het gebruiken van een e
 
 De oplossing begint met een eerlijke audit: identificeer voor elke functie in uw app die buiten uw eigen codebase reikt — berichten, bestandsverwerking, geolocatie, alles wat "gewoon werkt" — de specifieke externe dienst die daadwerkelijk wordt aangeroepen, niet alleen de functienaam. Vraag dan wat er met de gebruikerservaring gebeurt als die specifieke dienst een uur onbeschikbaar is. Als het antwoord is "er gebeurt niets zichtbaars en de functie faalt gewoon stilletjes," is dat het gat om te dichten, met ofwel een terugvalpad, of op zijn minst een duidelijke fout die zegt dat er iets kapot is.
 
-Onze engineers gevestigd in Ho Chi Minhstad brengen precies dit soort verborgen afhankelijkheidsketen in kaart bij elke codebase die wij beoordelen, omdat het zelden duidelijk is uit het lezen van de functielijst alleen. Onze engineers hebben meer dan 160 projecten opgeleverd voor zakelijke klanten, en het in kaart brengen van afhankelijkheden zoals dit is een standaard onderdeel van het gereedmaken van een prototype voor echt gebruik. U kunt [berekenen wat een afhankelijkheidsaudit voor uw app zou kosten](https://launchstudio.eu/en/#calculator) voordat u er op de harde manier achter komt welke dienst stilletjes cruciaal is. Voor meer over onze engineeringaanpak, zie [de diensten voor softwareontwikkeling op maat van Manifera](https://www.manifera.com/services/custom-software-development/).
+Onze engineers gevestigd in Ho Chi Minhstad brengen precies dit soort verborgen afhankelijkheidsketen in kaart bij elke codebase die wij beoordelen, omdat het zelden duidelijk is uit het lezen van de functielijst alleen. Onze engineers hebben meer dan 160 projecten opgeleverd voor zakelijke klanten, en het in kaart brengen van afhankelijkheden zoals dit is een standaard onderdeel van het gereedmaken van een prototype voor echt gebruik. U kunt [berekenen wat een afhankelijkheidsaudit voor uw app zou kosten](https://launchstudio.eu/nl/#calculator) voordat u er op de harde manier achter komt welke dienst stilletjes cruciaal is. Voor meer over onze engineeringaanpak, zie [de diensten voor softwareontwikkeling op maat van Manifera](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 

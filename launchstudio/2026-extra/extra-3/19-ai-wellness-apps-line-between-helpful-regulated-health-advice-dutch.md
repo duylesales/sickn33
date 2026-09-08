@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-wellness-apps-line-helpful-regulated-health-advice"
+    "@id": "https://launchstudio.eu/nl/blog/ai-wellness-apps-line-helpful-regulated-health-advice"
   }
 }
 </script>
@@ -53,9 +53,9 @@ De gehele waardepropositie van veel AI-wellnessproducten is personalisatie – h
 
 Dit is geen oproep om personalisatie te vermijden of terug te trekken naar puur generieke inhoud – het is een oproep om bewust te begrijpen waar de specifieke uitvoer van uw product zich bevindt op dit verloop, aanbevelingen met gepaste zorg te formuleren, duidelijke begeleiding op te nemen om een echte zorgverlener te raadplegen voor alles voorbij algemene wellness-suggesties, en alle verzamelde gezondheidsaanverwante gegevens te behandelen met de verhoogde zorgvuldigheid die het verdient, ongeacht de specifieke regelgevingsvraag.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt AI-native oprichters in de wellness- en fitnesscategorie om concreet na te denken over exact deze grens, waarbij de specifieke personalisatie en taal keuzes in hun product worden gekoppeld aan zowel gegevensverwerking als regelgevende overwegingen, ondersteund door Manifera's bredere ervaring in het helpen van oprichters om oprecht genuanceerde nalevingsvragen te navigeren in plaats van te vervallen in een generiek antwoord.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt AI-native oprichters in de wellness- en fitnesscategorie om concreet na te denken over exact deze grens, waarbij de specifieke personalisatie en taal keuzes in hun product worden gekoppeld aan zowel gegevensverwerking als regelgevende overwegingen, ondersteund door Manifera's bredere ervaring in het helpen van oprichters om oprecht genuanceerde nalevingsvragen te navigeren in plaats van te vervallen in een generiek antwoord.
 
-[Krijg helderheid over waar de uitvoer van uw wellnessproduct daadwerkelijk staat](https://launchstudio.eu/en/#contact) — de grens is echt, en bevindt zich zelden waar oprichters aanvankelijk aannemen dat deze is.
+[Krijg helderheid over waar de uitvoer van uw wellnessproduct daadwerkelijk staat](https://launchstudio.eu/nl/#contact) — de grens is echt, en bevindt zich zelden waar oprichters aanvankelijk aannemen dat deze is.
 
 ## Een zelfdiagnose: Vijf vragen om uw product op het verloop te plaatsen
 

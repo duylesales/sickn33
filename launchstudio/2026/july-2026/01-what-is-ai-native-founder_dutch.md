@@ -57,7 +57,7 @@ Veelvoorkomende problemen bij door AI gegenereerde prototypes zijn onder meer:
 - **Ontbrekende foutafhandeling** — Geen foutgrenzen, geen logboekregistratie, geen gebruiksvriendelijke foutmeldingen.
 - **Prestatieproblemen** — Geen caching, niet-geoptimaliseerde databasequery's, ontbrekende indexen.
 
-Dit is precies de leemte die diensten als [LaunchStudio](https://launchstudio.eu/en/) moeten opvullen. 
+Dit is precies de leemte die diensten als [LaunchStudio](https://launchstudio.eu/nl/) moeten opvullen. 
 
 ### De kloof overbruggen: LaunchStudio & Manifera
 
@@ -101,7 +101,7 @@ Voor aspirant-ondernemers is de boodschap duidelijk: je hoeft niet langer een on
 
 LaunchStudio helpt AI-native oprichters om prototypes gereed te maken voor lancering, met beveiliging, betalingen, hosting en implementatie – vanaf slechts € 800. Ondersteund door de internationale softwareontwikkelingsteams van Manifera in Nederland, Singapore en Vietnam is uw prototype in deskundige handen. 
 
-[Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact) en transformeer uw AI-visie in een veilige, schaalbare realiteit.
+[Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/nl/#contact) en transformeer uw AI-visie in een veilige, schaalbare realiteit.
 
 ## Echt voorbeeld
 

@@ -59,7 +59,7 @@ De uitdaging voor AI-oprichters zit niet in het begrijpen van deze prijsstrategi
 
 Uw door AI gegenereerde prototype heeft standaard geen enkel concept van "verbruikstegoeden" of "metered billing". Om harde limieten af te dwingen, moet uw backend elk API-verzoek onderscheppen, de Stripe-abonnementsstatus verifiëren, direct een credit afboeken in de PostgreSQL-database en het verzoek weigeren zodra het saldo nul is — dit alles binnen milliseconden en op een manier die niet omzeild kan worden door het manipuleren van browser-state. Dit is exact het type defensieve logica waar AI-codegeneratoren falen: **45% van de AI-codebases bevat ernstige lekken**, en haperende credit-aftrek in de frontend is een veelvoorkomende fout.
 
-Dit complexe samenspel van betalingen en backend-infrastructuur is exact wat [LaunchStudio](https://launchstudio.eu/en/) voor u bouwt.
+Dit complexe samenspel van betalingen en backend-infrastructuur is exact wat [LaunchStudio](https://launchstudio.eu/nl/) voor u bouwt.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -76,7 +76,7 @@ Binnen **1 tot 3 weken** leveren wij een kogelvrije facturatie-infrastructuur op
 - Het afdwingen van AI-facturatie vereist complexe backend-engineering (metered billing, credit-tracking, misbruikdetectie) die AI-tools niet zelfstandig kunnen bouwen.
 - LaunchStudio realiseert de complete Stripe-facturatiearchitectuur tegen een vaste prijs zodat u veilig kunt opschalen.
 
-[Stop met het verliezen van geld op gratis gebruikers. Laat LaunchStudio veilige verbruiksfacturatie inrichten](https://launchstudio.eu/en/#contact).
+[Stop met het verliezen van geld op gratis gebruikers. Laat LaunchStudio veilige verbruiksfacturatie inrichten](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

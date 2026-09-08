@@ -41,7 +41,7 @@ Veel beheerde vectordatabases vereisen een volledige herbouw van de index wannee
 
 Om de scale-up fase succesvol te overleven, moet u uw vector-embeddings terugbrengen naar het hart van uw primaire relationele database.
 
-Dit is exact de architecturale transitie die de senior database-engineers van [LaunchStudio](https://launchstudio.eu/en/) realiseren voor groeiende AI-bedrijven. Gesteund door de diepgaande data-architectuurexpertise van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring, 120+ senior ontwikkelaars en 160+ opgeleverde projecten opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons centrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — migreren wij scale-ups van dure, gefragmenteerde managed vector tools naar een geünificeerde infrastructuur op basis van **PostgreSQL met de `pgvector` extensie**.
+Dit is exact de architecturale transitie die de senior database-engineers van [LaunchStudio](https://launchstudio.eu/nl/) realiseren voor groeiende AI-bedrijven. Gesteund door de diepgaande data-architectuurexpertise van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring, 120+ senior ontwikkelaars en 160+ opgeleverde projecten opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons centrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — migreren wij scale-ups van dure, gefragmenteerde managed vector tools naar een geünificeerde infrastructuur op basis van **PostgreSQL met de `pgvector` extensie**.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -58,7 +58,7 @@ Vóórdat u de documenten van een grote nieuwe zakelijke klant inlaadt, moet u d
 2. Zorgt het verwijderen van een brondocument via een foreign key cascade voor het direct mee-verwijderen van alle bijbehorende embeddings?
 3. Heeft u de zoeklatentie getest onder een datavolume dat overeenkomt met de werkelijke schaalgrootte van uw nieuwe klant?
 
-Zie onze [werkwijze](https://launchstudio.eu/en/#process) voor hoe een databasemigratie zorgvuldig en gefaseerd wordt uitgevoerd.
+Zie onze [werkwijze](https://launchstudio.eu/nl/#process) voor hoe een databasemigratie zorgvuldig en gefaseerd wordt uitgevoerd.
 
 ## Belangrijkste Inzichten
 
@@ -68,7 +68,7 @@ Zie onze [werkwijze](https://launchstudio.eu/en/#process) voor hoe een databasem
 - HNSW-indexering en hybride full-text zoekstrategieën leveren sub-50ms zoekresponstijden met maximale zoekprecisie.
 - LaunchStudio levert de senior database-architecten om miljoenen embeddings zonder downtime of dataverlies te migreren naar een schaalbare PostgreSQL-architectuur.
 
-[Stop met te veel betalen voor losse vectordatabases. Partner met LaunchStudio voor een veilige database-unificatie](https://launchstudio.eu/en/#contact).
+[Stop met te veel betalen voor losse vectordatabases. Partner met LaunchStudio voor een veilige database-unificatie](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

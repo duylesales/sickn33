@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "AI Coding in Amsterdam: Wat oprichters fout doen vóór de lancering",
   "description": "Een blik op wat er gebeurt nadat AI-codingtools een werkend prototype genereren voor Amsterdamse oprichters, en waarom de kloof tussen demo en productie groter is dan de meeste technische oprichters verwachten.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-coding-amsterdam" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-coding-amsterdam" }
 }
 </script>
 
@@ -38,7 +38,7 @@ We hebben prototypes beoordeeld afkomstig uit WeWork-ruimtes aan de Herengracht 
 
 LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het bouwen van productiesystemen voor enterprise-klanten zoals Vodafone en TNO. Ons eigen klantgerichte kantoor bevindt zich aan de Herengracht 420 in Amsterdam, wat betekent dat we deze exacte faalmodus van dichtbij meemaken — vaak van oprichters die op tien minuten fietsen afstand zitten. De oplossing is niet het herschrijven van de frontend die een Cursor- of Lovable-sessie al heeft opgeleverd. Het gaat om het ompakken met de zaken die AI-codingtools consistent overslaan: row-level security, deugdelijke authenticatie-middleware, hygiëne van omgevingsvariabelen en een databaseschema dat onder echt verkeer niet omvalt.
 
-Als u twijfelt of uw prototype klaar is of noch kwetsbaar, is het de moeite waard om het [productie-gereedheidsproces](https://launchstudio.eu/en/#process) van LaunchStudio te doorlopen in plaats van te gokken. Het [custom software development team](https://www.manifera.com/services/custom-software-development/) van Manifera heeft dit uithardingswerk uitgevoerd in meer dan 160 opgeleverde projecten, dus de checklist is niet theoretisch — het is dezelfde checklist die wordt toegepast op enterprise-klanten, aangepast aan oprichtersbudgetten.
+Als u twijfelt of uw prototype klaar is of noch kwetsbaar, is het de moeite waard om het [productie-gereedheidsproces](https://launchstudio.eu/nl/#process) van LaunchStudio te doorlopen in plaats van te gokken. Het [custom software development team](https://www.manifera.com/services/custom-software-development/) van Manifera heeft dit uithardingswerk uitgevoerd in meer dan 160 opgeleverde projecten, dus de checklist is niet theoretisch — het is dezelfde checklist die wordt toegepast op enterprise-klanten, aangepast aan oprichtersbudgetten.
 
 ## Een praktische beveiligingschecklist vóór lancering voor AI-gecodeerde apps
 

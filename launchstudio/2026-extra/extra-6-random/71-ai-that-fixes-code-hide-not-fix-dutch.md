@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Can an 'AI That Fixes Code' Actually Fix the Bug, or Just Hide It?",
   "description": "An AI that fixes code can make an error disappear from your screen without ever addressing why it happened. Here's how to tell the difference before it costs you.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-that-fixes-code-hide-not-fix" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-that-fixes-code-hide-not-fix" }
 }
 </script>
 
@@ -39,7 +39,7 @@ Een solo-oprichter die alleen lanceert heeft geen tweede engineer die naar de di
 
 De praktische oplossing hiervoor is goedkoop: lees, voordat u een door AI gegenereerde bugfix accepteert, de diff en stel één vraag — pakte deze wijziging de *oorzaak* van de fout aan, of ving hij alleen het *symptoom*? Als de fix een try/catch toevoegt, een null-check die stilletjes een standaardwaarde teruggeeft, of een vroegtijdige return zonder logging, behandel dat dan als een waarschuwingssignaal, niet als een oplossing. Vraag de tool rechtstreeks: "waarom was deze waarde null, en waar komt hij vandaan?" Een tool die code goed repareert, kan dat doorgaans beantwoorden als u erop aandringt. Aan zijn eigen standaardgedrag overgelaten, doet hij vaak geen moeite.
 
-Onze engineers, waaronder het team gevestigd in Singapore, besteden een aanzienlijk deel van elke codebase-review specifiek aan het opsporen van precies dit patroon — fouten die tot zwijgen werden gebracht in plaats van opgelost. LaunchStudio brengt de enterprise-grade engineering van Manifera naar de oprichterseconomie, en een deel daarvan is het behandelen van "de fout is weg" als het begin van een beoordeling, niet als het einde ervan. Wilt u een tweede paar ogen op een fix die een AI-tool u heeft gegeven, dan kunt u [uw project beschrijven via ons proces](https://launchstudio.eu/en/#process) en een eerlijk antwoord krijgen. Voor hoe wij denken over engineering-discipline in bredere zin, zie [de aanpak van Manifera voor softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/).
+Onze engineers, waaronder het team gevestigd in Singapore, besteden een aanzienlijk deel van elke codebase-review specifiek aan het opsporen van precies dit patroon — fouten die tot zwijgen werden gebracht in plaats van opgelost. LaunchStudio brengt de enterprise-grade engineering van Manifera naar de oprichterseconomie, en een deel daarvan is het behandelen van "de fout is weg" als het begin van een beoordeling, niet als het einde ervan. Wilt u een tweede paar ogen op een fix die een AI-tool u heeft gegeven, dan kunt u [uw project beschrijven via ons proces](https://launchstudio.eu/nl/#process) en een eerlijk antwoord krijgen. Voor hoe wij denken over engineering-discipline in bredere zin, zie [de aanpak van Manifera voor softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 

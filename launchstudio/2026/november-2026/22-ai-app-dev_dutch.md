@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Technisch & Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Technisch & Niet-Technisch)
   "datePublished": "2026-11-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-app-dev"
+    "@id": "https://launchstudio.eu/nl/blog/ai-app-dev"
   }
 }
 </script>
@@ -68,7 +68,7 @@ Dit vormt een ondoordringbare firewall tussen uw AI-frontend en uw productiedata
 
 ## Hoe LaunchStudio de Hybride Stack Inricht
 
-Het bouwen van deze hybride architectuur is de kernactiviteit van [LaunchStudio](https://launchstudio.eu/en/). Vanuit het ontwikkelcentrum van [Manifera](https://www.manifera.com/) in Ho Chi Minhstad (Pho Quangstraat 10) en management vanuit Herengracht 420 in Amsterdam onder leiding van Herre Roelevink, zorgt ons team voor een vlekkeloze integratie:
+Het bouwen van deze hybride architectuur is de kernactiviteit van [LaunchStudio](https://launchstudio.eu/nl/). Vanuit het ontwikkelcentrum van [Manifera](https://www.manifera.com/) in Ho Chi Minhstad (Pho Quangstraat 10) en management vanuit Herengracht 420 in Amsterdam onder leiding van Herre Roelevink, zorgt ons team voor een vlekkeloze integratie:
 
 1. **Frontend-Behoud:** Wij nemen uw met Lovable, Bolt of Cursor gebouwde frontend over en bewaren 100% van uw design, componenten en animaties.
 2. **State-Migratie:** Wij vervangen onveilige `localStorage`-code door betrouwbare server-state management (zoals React Query) gekoppeld aan de database.

@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/usage-analytics-privacy-safe-ai-saas"
+    "@id": "https://launchstudio.eu/nl/blog/usage-analytics-privacy-safe-ai-saas"
   }
 }
 </script>
@@ -49,7 +49,7 @@ Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoor
 
 Een praktische benadering is het behandelen van elke analyse-gebeurtenis als iets dat één keer wordt beoordeeld, op dezelfde manier waarop u een databasemigratie zou beoordelen – welke velden draagt deze gebeurtenis, identificeert een van die velden een echt persoon, en heeft de bestemmingstool dat veld nodig om zijn werk te doen. Ons engineeringteam, werkend vanuit Manifera's ontwikkelingscentrum in Ho Chi Minh-stad, voert dit doorgaans uit als een eenmalige audit over een bestaande codebase: grep elke analyse-oproep, vermeld elk veld dat wordt verzonden, en verwijder of hash alles wat niet strikt nodig is voor de metriek die wordt gemeten. Het is een paar uur van gefocust werk dat een kloof sluit die de meeste met AI gegenereerde codebases standaard hebben.
 
-Als u een gevoel wilt krijgen van wat dit soort audit kost voor uw specifieke stack, geeft onze [prijscalculator](https://launchstudio.eu/en/#calculator) een snelle schatting. Manifera's praktijk voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare audits voor gegevensverwerking uitgevoerd voor enterprise-klanten waar de reglementaire belangen aanzienlijk hoger waren dan een typisch SaaS-product in een vroeg stadium.
+Als u een gevoel wilt krijgen van wat dit soort audit kost voor uw specifieke stack, geeft onze [prijscalculator](https://launchstudio.eu/nl/#calculator) een snelle schatting. Manifera's praktijk voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare audits voor gegevensverwerking uitgevoerd voor enterprise-klanten waar de reglementaire belangen aanzienlijk hoger waren dan een typisch SaaS-product in een vroeg stadium.
 
 ## Het hashen van de ID vangt niet op wat er mee reist in andere velden
 

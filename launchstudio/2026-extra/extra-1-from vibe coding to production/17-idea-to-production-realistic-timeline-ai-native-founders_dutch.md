@@ -37,9 +37,9 @@ De meest voorkomende fout is niet het onderschatten van één enkele fase — he
 
 De praktische implicatie is eenvoudig: schat je productietijdlijn niet in op basis van je prototypetijdlijn. Krijg een daadwerkelijk afgebakende audit specifiek voor wat jouw prototype doet en welke data het raakt, en bouw je lanceringstijdlijn op basis van dat getal in plaats daarvan, aangezien het het enige is met een oprechte, aangetoonde relatie tot hoe lang productiegereedheid daadwerkelijk zal kosten.
 
-[LaunchStudio](https://launchstudio.eu/en/) biedt precies dit soort accurate, afgebakende audit als startpunt van elke opdracht, en vertaalt de specifieke gaten van jouw specifieke prototype naar een echte, vaste tijdlijn in plaats van een generieke schatting, gesteund door Manifera's ervaring over 160+ opgeleverde projecten van uiteenlopende complexiteit.
+[LaunchStudio](https://launchstudio.eu/nl/) biedt precies dit soort accurate, afgebakende audit als startpunt van elke opdracht, en vertaalt de specifieke gaten van jouw specifieke prototype naar een echte, vaste tijdlijn in plaats van een generieke schatting, gesteund door Manifera's ervaring over 160+ opgeleverde projecten van uiteenlopende complexiteit.
 
-[Krijg een tijdlijn gebaseerd op jouw daadwerkelijke prototype, geen gok](https://launchstudio.eu/en/#calculator) — de twee fasen voorspellen elkaar niet, dus de enige betrouwbare schatting is een specifieke.
+[Krijg een tijdlijn gebaseerd op jouw daadwerkelijke prototype, geen gok](https://launchstudio.eu/nl/#calculator) — de twee fasen voorspellen elkaar niet, dus de enige betrouwbare schatting is een specifieke.
 
 ## Echt voorbeeld
 

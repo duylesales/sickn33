@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-hiring-tools-bias-testing-production-readiness-item"
+    "@id": "https://launchstudio.eu/nl/blog/ai-hiring-tools-bias-testing-production-readiness-item"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Het uitvoeren van de tool tegen een bewust gevarieerde testset van kandidaatprof
 
 Biastesten delen dezelfde kernstructuur als het vijandige testen dat in bredere richtlijnen voor productiegereedheid wordt behandeld: het vereist het bewust testen op een faalmodus die het normale gebruik van een oprichter nooit natuurlijk naar boven zou brengen, met behulp van een specifieke, gestructureerde methodologie in plaats van algemeen functioneel vertrouwen – dezelfde discipline, toegepast op een andere, even ingrijpende categorie van risico.
 
-[LaunchStudio](https://launchstudio.eu/en/) behandelt biastesten als een standaardoverweging voor AI-tools voor werving en kandidaatscreening in het bijzonder, waarbij dezelfde gestructureerde, vijandige testdiscipline wordt toegepast die in elke andere categorie van productiegereedheid wordt gebruikt, ondersteund door Manifera's bredere toewijding aan verantwoordelijke AI-praktijken in haar engineering-opdrachten.
+[LaunchStudio](https://launchstudio.eu/nl/) behandelt biastesten als een standaardoverweging voor AI-tools voor werving en kandidaatscreening in het bijzonder, waarbij dezelfde gestructureerde, vijandige testdiscipline wordt toegepast die in elke andere categorie van productiegereedheid wordt gebruikt, ondersteund door Manifera's bredere toewijding aan verantwoordelijke AI-praktijken in haar engineering-opdrachten.
 
-[Laat uw wervingstool testen op het patroon dat uw eigen gebruik ervan nooit naar boven zou brengen](https://launchstudio.eu/en/#calculator) — een functioneel nauwkeurige tool en een eerlijke tool zijn verschillende, beide noodzakelijke claims.
+[Laat uw wervingstool testen op het patroon dat uw eigen gebruik ervan nooit naar boven zou brengen](https://launchstudio.eu/nl/#calculator) — een functioneel nauwkeurige tool en een eerlijke tool zijn verschillende, beide noodzakelijke claims.
 
 ## Een zelfdiagnose: Vijf vragen voordat u het eerlijke karakter van een wervingstool vertrouwt
 

@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/content-moderation-ai-generated-user-content"
+    "@id": "https://launchstudio.eu/nl/blog/content-moderation-ai-generated-user-content"
   }
 }
 </script>
@@ -49,7 +49,7 @@ De herstelling is niet ingewikkeld, maar het vereist het behandelen van de AI-la
 
 Een werkbare opzet heeft doorgaans drie lagen: een innamefilter op rauwe gebruikersberichten (op basis van trefwoorden en beleid, snel), een secundaire controle op alles wat de AI uit die inhoud genereert (samenvattingen, overzichten, rangschikkingen), en een menselijke stap in de lus voor alles wat gepromoot wordt naar hoge zichtbaarheid, zoals een vastgepind bericht of een belicht hoogtepunt. Niets hiervan hoeft zwaar ingesteld te worden voor een app in een vroeg stadium – zelfs een eenvoudige regel dat door AI geselecteerde "hoogtepunten" één handmatige goedkeuring vereisen voordat ze live gaan sluit het meeste risico uit. Ons engineeringteam in Ho Chi Minh-stad implementeert dit doorgaans als een lichte moderatiewachtrij die tussen de AI-functie en de publicatiestap zit, zodat oprichters niet hoeven te kiezen tussen het überhaupt hebben van de AI-functie en veilig zijn.
 
-Als u een duidelijker beeld wilt van wat het kost om dit achteraf in een bestaande app te bouwen, geeft onze [prijscalculator](https://launchstudio.eu/en/#calculator) een snelle schatting op basis van uw huidige stack. En als u evalueert of uw codebase een bredere beveiligingsbeoordeling nodig heeft voorbij alleen moderatie, heeft Manifera's team voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) exact deze klasse van problemen afgehandeld voor grotere platformen, en niet alleen apps in een vroeg stadium.
+Als u een duidelijker beeld wilt van wat het kost om dit achteraf in een bestaande app te bouwen, geeft onze [prijscalculator](https://launchstudio.eu/nl/#calculator) een snelle schatting op basis van uw huidige stack. En als u evalueert of uw codebase een bredere beveiligingsbeoordeling nodig heeft voorbij alleen moderatie, heeft Manifera's team voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) exact deze klasse van problemen afgehandeld voor grotere platformen, en niet alleen apps in een vroeg stadium.
 
 ## Een beoordelingswachtrij kan net zo stilletjes mislukken als helemaal geen moderatie
 

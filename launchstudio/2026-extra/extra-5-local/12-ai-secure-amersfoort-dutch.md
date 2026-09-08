@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Is uw AI veilig? Wat Amersfoortse oprichters moeten controleren vóór de lancering",
   "description": "Een praktische checklist voor Amersfoortse oprichters om te verifiëren dat hun met AI gegenereerde app daadwerkelijk veilig is vóór de lancering, over de gaten die tools zoals Lovable en Bolt over het algemeen openlaten.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-secure-amersfoort" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-secure-amersfoort" }
 }
 </script>
 

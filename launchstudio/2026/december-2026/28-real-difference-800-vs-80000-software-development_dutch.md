@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-28",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/real-difference-800-vs-80000-software-development"
+    "@id": "https://launchstudio.eu/nl/blog/real-difference-800-vs-80000-software-development"
   }
 }
 </script>
@@ -62,7 +62,7 @@ Een traditioneel softwarebureau dat €80.000 rekent voor een project dat op een
 
 Oprichters die deze twee prijzen met elkaar vergelijken, vergelijken vaak onbewust een deelse scope (uitsluitend de last-mile) met een volledige scope (alles van discovery tot en met lancering). De bandbreedte van €800 tot €7.500 is uitsluitend logisch — en biedt alleen maximale waarde — als u het ontwerp- en prototypewerk dat een AI-tool mogelijk maakt al zelf heeft gedaan. Een ondernemer met slechts een ruw idee en nul prototype is niet de doelgroep voor LaunchStudio; die oprichter heeft de full-scope dienstverlening nodig die Manifera's bredere ontwikkelteams bieden.
 
-[Gebruik de prijscalculator](https://launchstudio.eu/en/#calculator) om exact te zien waar uw specifieke project valt, op basis van wat u al heeft gebouwd versus wat er nog ontbreekt.
+[Gebruik de prijscalculator](https://launchstudio.eu/nl/#calculator) om exact te zien waar uw specifieke project valt, op basis van wat u al heeft gebouwd versus wat er nog ontbreekt.
 
 ## Het Grijze Middengebied: Wanneer Uw Project Niet Zuiver in Eén Categorie Past
 
@@ -80,7 +80,7 @@ Het tussensegment behelst daadwerkelijk extra scope, en niet simpelweg een grote
 ### Hoe U Bepaalt in Welk Segment U Daadwerkelijk Valt
 De meest betrouwbare toets is: zou u uw huidige prototype vandaag aan een software-engineer kunnen overhandigen en kan hij u binnen een uur exact vertellen wat er gerepareerd moet worden? Zo ja — uw interface is gevalideerd, uw logica functioneert en de gaten zijn specifiek en benoembaar (authenticatie, betalingen, hosting) — dan valt u zeer waarschijnlijk in LaunchStudio's segment. Zou een engineer u daarentegen fundamentele vragen moeten stellen over wat het product überhaupt precies moet doen, of treft hij verschillende tegenstrijdige structuren aan in de code, dan bevindt u zich in het middensegment of daarboven.
 
-[Niet elke oprichter weet direct welk segment past](https://launchstudio.eu/en/#contact) vóór dat gesprek, en dat is exact de reden waarom LaunchStudio's intakegesprek bestaat — om eerlijk vast te stellen in welke categorie een specifiek project valt vóórdat er enige financiële toezegging wordt gedaan.
+[Niet elke oprichter weet direct welk segment past](https://launchstudio.eu/nl/#contact) vóór dat gesprek, en dat is exact de reden waarom LaunchStudio's intakegesprek bestaat — om eerlijk vast te stellen in welke categorie een specifiek project valt vóórdat er enige financiële toezegging wordt gedaan.
 
 ## Echt voorbeeld
 

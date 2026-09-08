@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/bus-factor-solo-founder-ai-product-risk"
+    "@id": "https://launchstudio.eu/nl/blog/bus-factor-solo-founder-ai-product-risk"
   }
 }
 </script>
@@ -49,7 +49,7 @@ LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van
 
 U heeft geen team nodig om een bus factor van één te herstellen. U heeft een gedocumenteerde lijst nodig van elk account waar uw product van afhangt (hosting, database, domein, betalingsverwerker, e-mail, eventuele API-sleutels van derden), een wachtwoordbeheerder-invoer of geheim kluisje gedeeld met ten minste één andere vertrouwde persoon, en – cruciaal – dat die tweede persoon daadwerkelijk wordt toegevoegd als een beheerder of secundair contact op elke dienst, en niet simpelweg te horen krijgt dat het wachtwoord ergens bestaat. Dit is een paar uur aan onglamoureus installatiewerk dat de meeste oprichters blijven uitstellen precies omdat er momenteel niets in brand staat. Het is de moeite waard om te doen voordat dat veranderd.
 
-Als u een tweede set ogen wilt op waar uw product momenteel van afhangt, is onze [contactpagina](https://launchstudio.eu/en/#contact) een snelle manier om dat gesprek te starten. En Manifera's team voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) is specifiek zo gestructureerd dat de continuïteit van een product nooit afhangt van het bereikbaar zijn van één individu.
+Als u een tweede set ogen wilt op waar uw product momenteel van afhangt, is onze [contactpagina](https://launchstudio.eu/nl/#contact) een snelle manier om dat gesprek te starten. En Manifera's team voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) is specifiek zo gestructureerd dat de continuïteit van een product nooit afhangt van het bereikbaar zijn van één individu.
 
 ## Het toevoegen van een tweede beheerder herstelt MFA niet uit zichzelf
 

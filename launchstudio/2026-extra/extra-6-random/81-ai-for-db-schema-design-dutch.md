@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Waarom 'AI voor DB'-tools nog steeds een mens nodig hebben om het schema te ontwerpen",
   "description": "AI-voor-DB-tools genereren schema's die compileren en basistests doorstaan, maar ze kunnen niet redeneren over bedrijfsregels waar ze nooit over zijn geïnformeerd. Dit is de technische kloof en hoe u die dicht.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-for-db-schema-design" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-for-db-schema-design" }
 }
 </script>
 
@@ -62,7 +62,7 @@ Die ene regel is het verschil tussen een database die een duplicaat bij het schr
 
 Niets van dit alles betekent dat AI-voor-DB-tools ongeschikt zijn voor gebruik. Ze zijn oprecht snel in het krijgen van een werkend schema op het scherm, en voor prototypes of interne tools is "werkt" vaak voldoende. Het probleem geldt specifiek voor alles wat geld, gebruikersrechten of data betreft die na verloop van tijd toeneemt — dat zijn de plekken waar een ontbrekende beperking verandert in een incident voor de klant in plaats van een stil non-probleem. Een schemabeoordeling door iemand die eerder productiedatabases heeft gedebugd, kost een paar uur. Herbouwen na een incident met een dubbele afschrijving duurt veel langer, en het kost vertrouwen dat u niet terugkrijgt met een terugbetaling.
 
-Onze technici, werkend vanuit Ho Chi Minh-stad en dagelijks bezig met deze audits, behandelen schemabeoordeling als een eerste stap voordat er ook maar aan de frontend wordt gekomen — het doel is altijd om de oorspronkelijke opzet van de oprichter intact te houden en de ontbrekende beperkingen erin te verwerken, niet om opnieuw te beginnen. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en dit exacte patroon — door AI gegenereerd schema, ontbrekende beperking, ontdekt door een boze klant — is een van de meest voorkomende redenen waarom oprichters contact met ons opnemen. Als u vóór lancering een tweede paar ogen op een schema wilt, kunt u [uw project beschrijven via ons proces](https://launchstudio.eu/en/#process) en dan vertellen wij u eerlijk wat er ontbreekt. Voor hoe Manifera datagerichte architectuur breder benadert, zie onze [diensten voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
+Onze technici, werkend vanuit Ho Chi Minh-stad en dagelijks bezig met deze audits, behandelen schemabeoordeling als een eerste stap voordat er ook maar aan de frontend wordt gekomen — het doel is altijd om de oorspronkelijke opzet van de oprichter intact te houden en de ontbrekende beperkingen erin te verwerken, niet om opnieuw te beginnen. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en dit exacte patroon — door AI gegenereerd schema, ontbrekende beperking, ontdekt door een boze klant — is een van de meest voorkomende redenen waarom oprichters contact met ons opnemen. Als u vóór lancering een tweede paar ogen op een schema wilt, kunt u [uw project beschrijven via ons proces](https://launchstudio.eu/nl/#process) en dan vertellen wij u eerlijk wat er ontbreekt. Voor hoe Manifera datagerichte architectuur breder benadert, zie onze [diensten voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 

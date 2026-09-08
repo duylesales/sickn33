@@ -51,7 +51,7 @@ Als niet-technische ondernemer is het downloaden van een zip-bestand van een Bol
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Dit is exact het bestaansrecht van [LaunchStudio](https://launchstudio.eu/en/). Gesteund door het enterprise engineeringteam van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring, opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze regionale vestiging in **Singapore** (100 Tras Street) en ons software-centrum in **Ho Chi Minhstad, Vietnam** (10 Pho Quang Street), vormen wij de betrouwbare brug tussen uw Bolt AI-prototype en een veilige, live productieomgeving.
+Dit is exact het bestaansrecht van [LaunchStudio](https://launchstudio.eu/nl/). Gesteund door het enterprise engineeringteam van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring, opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze regionale vestiging in **Singapore** (100 Tras Street) en ons software-centrum in **Ho Chi Minhstad, Vietnam** (10 Pho Quang Street), vormen wij de betrouwbare brug tussen uw Bolt AI-prototype en een veilige, live productieomgeving.
 
 Met ons **"Launch Ready" pakket** stuurt u ons simpelweg uw Bolt AI-project. Wij herschrijven uw prachtige frontend niet. In plaats daarvan voeren onze senior software-engineers de complete "laatste mijl" deployment- en beveiligingscheck uit.
 
@@ -75,7 +75,7 @@ Een Bolt-applicatie is pas productieklaar wanneer:
 - WebContainer-code kan onverwachte compatibiliteitsfouten vertonen zodra deze op Vercel of Railway wordt gedeployd.
 - LaunchStudio neemt uw Bolt AI-codebase over en verzorgt de complete "laatste mijl" om uw app veilig en winstgevend te lanceren.
 
-[Klaar om uw Bolt-app uit de sandbox naar productie te brengen? Vraag een vaste offerte aan](https://launchstudio.eu/en/#contact).
+[Klaar om uw Bolt-app uit de sandbox naar productie te brengen? Vraag een vaste offerte aan](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

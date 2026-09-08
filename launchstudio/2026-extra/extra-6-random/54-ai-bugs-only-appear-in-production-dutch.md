@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "De Categorie AI-Bugs Die Nooit Verschijnt Totdat Echte Gebruikers de App Aanraken",
   "description": "Sommige AI-bugs zijn onzichtbaar bij solotesten, hoe grondig ook, omdat ze alleen bestaan wanneer meerdere echte gebruikers tegelijkertijd op gedeelde gegevens handelen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-bugs-only-appear-in-production" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-bugs-only-appear-in-production" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Dit is precies de kloof waar Herre Roelevink, CEO van LaunchStudio en Managing D
 
 De enige betrouwbare manier om een race condition te ontdekken vóór lancering is het doelbewust simuleren van gelijktijdige toegang — het scripten van meerdere gelijktijdige verzoeken tegen hetzelfde record en controleren of het resultaat nog steeds correct is, in plaats van één actie tegelijk te testen en te hopen dat het patroon generaliseert. Dit is wezenlijk ander werk dan functioneel testen, en het is makkelijk om het volledig over te slaan als niemand in een oprichtersteam ooit precies dit soort bug is tegengekomen en weet ernaar te zoeken.
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een team van 120+ engineers met 11+ jaar ervaring over 160+ opgeleverde projecten, werkend vanuit Amsterdam en die precies deze categorie concurrency-problemen testen als standaardonderdeel van productiegereedheidsbeoordelingen. Als uw app enige vorm van gedeelde, gelijktijdig bewerkbare gegevens verwerkt, is het de moeite waard om iemand [uw project via ons proces te laten beoordelen](https://launchstudio.eu/en/#process) voordat echte gelijktijdige gebruikers de kloof voor u vinden. Manifera's [portfolio](https://www.manifera.com/portfolio/) bevat systemen die specifiek zijn gebouwd om dit soort gelijktijdige belasting veilig op schaal te verwerken.
+LaunchStudio wordt mogelijk gemaakt door Manifera, een team van 120+ engineers met 11+ jaar ervaring over 160+ opgeleverde projecten, werkend vanuit Amsterdam en die precies deze categorie concurrency-problemen testen als standaardonderdeel van productiegereedheidsbeoordelingen. Als uw app enige vorm van gedeelde, gelijktijdig bewerkbare gegevens verwerkt, is het de moeite waard om iemand [uw project via ons proces te laten beoordelen](https://launchstudio.eu/nl/#process) voordat echte gelijktijdige gebruikers de kloof voor u vinden. Manifera's [portfolio](https://www.manifera.com/portfolio/) bevat systemen die specifiek zijn gebouwd om dit soort gelijktijdige belasting veilig op schaal te verwerken.
 
 ## Echt voorbeeld
 

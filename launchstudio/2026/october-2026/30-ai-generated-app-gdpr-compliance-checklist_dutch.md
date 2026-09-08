@@ -60,7 +60,7 @@ Het configureren van Europese serverregio's, het schrijven van waterdichte RLS-p
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Dit is exact waarom scale-ups en bureaus samenwerken met [LaunchStudio](https://launchstudio.eu/en/).
+Dit is exact waarom scale-ups en bureaus samenwerken met [LaunchStudio](https://launchstudio.eu/nl/).
 
 Gesteund door de 11+ jaar ervaring van [Manifera](https://www.manifera.com/) in het ontwikkelen van [enterprise maatwerksoftware](https://www.manifera.com/services/custom-software-development/) voor veeleisende Europese organisaties — met softwareteams in ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze vestiging aan **100 Tras Street in Singapore** en ons centrale ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** — verankert LaunchStudio uw met AI gegenereerde frontend aan een **100% AVG-conforme backend**.
 
@@ -75,7 +75,7 @@ Via ons **"Launch Ready" pakket** richten wij uw cloud-databases exclusief in bi
 - Zonder gestructureerde logging is het onmogelijk om binnen de wettelijke 72-uurstermijn een datalekmelding te doen bij de toezichthouder.
 - LaunchStudio realiseert de complete enterprise compliance-engineering zodat uw AI-app legaal en veilig kan schalen in Europa.
 
-[Doorsta elke zakelijke security-audit met glans. Partner met LaunchStudio voor een AVG-conforme backend](https://launchstudio.eu/en/#contact).
+[Doorsta elke zakelijke security-audit met glans. Partner met LaunchStudio voor een AVG-conforme backend](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

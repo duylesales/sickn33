@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-11-18",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-download"
+    "@id": "https://launchstudio.eu/nl/blog/ai-download"
   }
 }
 </script>
@@ -76,7 +76,7 @@ Niet elke AI-download is gelijk opgebouwd, en de verschillen bepalen de hoeveelh
 
 ## De Kloof Overbruggen: Van Download Naar Livegang
 
-Dit niemandsland tussen *"ik heb de bestanden gedownload"* en *"mijn applicatie staat live"* is het domein van [LaunchStudio](https://launchstudio.eu/en/).
+Dit niemandsland tussen *"ik heb de bestanden gedownload"* en *"mijn applicatie staat live"* is het domein van [LaunchStudio](https://launchstudio.eu/nl/).
 
 In plaats van te worstelen met ingewikkelde serverhandleidingen dragen oprichters hun AI-download (of toegang tot hun GitHub-repository) over aan LaunchStudio. Het engineeringteam van [Manifera](https://www.manifera.com/about-us/) neemt het technische fundament over:
 

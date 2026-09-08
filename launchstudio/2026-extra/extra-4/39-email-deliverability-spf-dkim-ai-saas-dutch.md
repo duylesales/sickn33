@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/email-deliverability-spf-dkim-ai-saas"
+    "@id": "https://launchstudio.eu/nl/blog/email-deliverability-spf-dkim-ai-saas"
   }
 }
 </script>
@@ -62,7 +62,7 @@ Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, kadert 
 
 Een gloednieuw verzendend domein heeft geen reputatiegeschiedenis bij e-mailproviders, wat de eerste paar weken na de lancering de periode maakt met het hoogste risico op problemen met de afleverbaarheid – exact wanneer een oprichter zijn eerste echte klanten onbehandeld achterlaat en het zich het minst kan veroorloven dat bevestigings-e-mails stilletjes verdwijnen. Het opbouwen van de verzendreputatie van een domein, het monitoren van het aantal weigeringen en spamklachten, en het vanaf het begin goed regelen van SPF, DKIM en DMARC bepalen samen of die eerste klanten ooit de e-mails zien die uw app hen stuurt.
 
-Ons team, werkend vanuit Ho Chi Minh-stad waar LaunchStudio een substantieel deel van de backend- en integratie-installatie afhandelt, behandelt e-mailauthenticatie als een standaard onderdeel van de controlelijst vóór de lancering – niet omdat het ingewikkeld is, maar omdat het onzichtbaar is totdat het een oprichter stilletjes zijn eerste indruk bij een klant kost. Als uw transactionele e-mails nooit zijn gecontroleerd tegen een spam-scoringstool, omvat [ons proces](https://launchstudio.eu/en/#process) exact dat soort verificatie vóór de lancering.
+Ons team, werkend vanuit Ho Chi Minh-stad waar LaunchStudio een substantieel deel van de backend- en integratie-installatie afhandelt, behandelt e-mailauthenticatie als een standaard onderdeel van de controlelijst vóór de lancering – niet omdat het ingewikkeld is, maar omdat het onzichtbaar is totdat het een oprichter stilletjes zijn eerste indruk bij een klant kost. Als uw transactionele e-mails nooit zijn gecontroleerd tegen een spam-scoringstool, omvat [ons proces](https://launchstudio.eu/nl/#process) exact dat soort verificatie vóór de lancering.
 
 ## Een nieuwsbrief-verzending kan de e-mails met uw kassabonnen stilletjes laten zakken
 

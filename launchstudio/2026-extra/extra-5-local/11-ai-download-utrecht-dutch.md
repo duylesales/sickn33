@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Wat een AI-download een Utrechtse oprichter daadwerkelijk oplevert (en wat niet)",
   "description": "Een duidelijke blik op wat u daadwerkelijk ontvangt wanneer u AI-gegenereerde code downloadt van tools zoals Lovable of Bolt, en waarom Utrechtse oprichters nog meer nodig hebben vóór de lancering.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-download-utrecht" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-download-utrecht" }
 }
 </script>
 

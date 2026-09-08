@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI-databeveiliging in Hengelo: Wat uw prototype aanneemt dat u later toevoegt",
   "description": "Met AI gegenereerde code heeft een gedocumenteerd percentage aan beveiligingslekken. Dit is wat AI-databeveiliging daadwerkelijk vereist vóór de lancering, met een Hengelose casus.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-data-security-hengelo" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-data-security-hengelo" }
 }
 </script>
 
@@ -41,7 +41,7 @@ Dat laatste punt weegt in Hengelo zwaarder dan in de meeste steden, omdat de gro
 
 "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. We hebben elf jaar ervaring in precies dat," zegt Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera. Die verschuiving is precies wat er speelt in Hengelo's meer gereguleerde sectoren met hogere belangen — het idee was nooit het moeilijke gedeelte; het veilig maken om te vertrouwen met echte data wel.
 
-LaunchStudio dicht dit gat zonder uw frontend aan te raken. Onze engineers — onderdeel van Manifera's team van 120+ personen, deels gecoördineerd vanuit onze hub in Singapore aan 100 Tras Street — voeren een gestructureerde databeveiligingsaudit uit op het gebied van toegangsbeleid, versleuteling, blootstelling van eindpunten en audit-logging, en herstellen vervolgens wat kapot is. U kunt bekijken wat een typisch traject omvat op onze [dienstpakketten-pagina](https://launchstudio.eu/en/#packages), of Manifera's bredere engineering-trackrecord verkennen in [hun portfolio](https://www.manifera.com/portfolio/).
+LaunchStudio dicht dit gat zonder uw frontend aan te raken. Onze engineers — onderdeel van Manifera's team van 120+ personen, deels gecoördineerd vanuit onze hub in Singapore aan 100 Tras Street — voeren een gestructureerde databeveiligingsaudit uit op het gebied van toegangsbeleid, versleuteling, blootstelling van eindpunten en audit-logging, en herstellen vervolgens wat kapot is. U kunt bekijken wat een typisch traject omvat op onze [dienstpakketten-pagina](https://launchstudio.eu/nl/#packages), of Manifera's bredere engineering-trackrecord verkennen in [hun portfolio](https://www.manifera.com/portfolio/).
 
 ## Een AVG-gereedheidskader voor met AI gebouwde apps die persoonlijke gegevens verwerken
 

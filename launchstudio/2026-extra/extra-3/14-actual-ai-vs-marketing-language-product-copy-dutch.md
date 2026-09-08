@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/actual-ai-vs-marketing-language-product-copy"
+    "@id": "https://launchstudio.eu/nl/blog/actual-ai-vs-marketing-language-product-copy"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Voorbij het vertrouwen van klanten groeit de aandacht van toezichthouders op AI-
 
 De directe test: vraag voor elke specifieke AI-gerelateerde claim in uw marketingteksten of u concreet en eerlijk exact welk technisch mechanisme die claim waar maakt zou kunnen beschrijven. Als het eerlijke antwoord is "het klinkt waar en niemand heeft het gevraagd", is die specifieke claim het waard om te herzien voordat een klant, een journalist of een toezichthouder dezelfde vraag stelt die u zichzelf als eerste had moeten stellen.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt marketingclaims tegen daadwerkelijke productcapaciteiten als onderdeel van bredere lanceringgereedheidsopdrachten, waarbij specifiek taal wordt gemarkeerd die vooruitloopt op wat het onderliggende systeem oprecht doet, gebruikmakend van het directe zicht van de engineeringteams van Manifera op wat de AI-integratie van een bepaald product daadwerkelijk uitvoert versus hoe het wordt beschreven.
+[LaunchStudio](https://launchstudio.eu/nl/) beoordeelt marketingclaims tegen daadwerkelijke productcapaciteiten als onderdeel van bredere lanceringgereedheidsopdrachten, waarbij specifiek taal wordt gemarkeerd die vooruitloopt op wat het onderliggende systeem oprecht doet, gebruikmakend van het directe zicht van de engineeringteams van Manifera op wat de AI-integratie van een bepaald product daadwerkelijk uitvoert versus hoe het wordt beschreven.
 
-[Laat uw AI-claims controleren tegen wat uw product daadwerkelijk doet](https://launchstudio.eu/en/#contact) — de kloof kost meer aan vertrouwen dan de kortere weg ooit heeft bespaard aan tijd voor het schrijven van teksten.
+[Laat uw AI-claims controleren tegen wat uw product daadwerkelijk doet](https://launchstudio.eu/nl/#contact) — de kloof kost meer aan vertrouwen dan de kortere weg ooit heeft bespaard aan tijd voor het schrijven van teksten.
 
 ## Een snelle gids: Welke AI-claims standhouden en welke vragen oproepen
 

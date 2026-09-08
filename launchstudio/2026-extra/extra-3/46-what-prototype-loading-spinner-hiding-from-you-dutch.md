@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-prototype-loading-spinner-hiding-from-you"
+    "@id": "https://launchstudio.eu/nl/blog/what-prototype-loading-spinner-hiding-from-you"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Een oprichter die mentaal zijn testervaring berekent – "het laadt meestal in o
 
 Het implementeren van echte responstijd-tracking als onderdeel van de observatiepraktijken die elders in bredere richtlijnen worden behandeld, waarbij specifiek wordt gekeken naar de verdeling – en niet alleen naar een gemiddelde – onthult of uw product een betekenisvol probleem met trage uitschieters heeft dat moet worden aangepakt. Het informeert ook of uw laadstatus specifieker moet communiceren dan een generieke, oninformatieve spinner.
 
-[LaunchStudio](https://launchstudio.eu/en/) implementeert bewaking van de daadwerkelijke responstijdverdeling en gepast informatieve laadstatussen als onderdeel van bredere observatieverharding. Wij vervangen een oninformatieve generieke spinner door iets wat het echte productgedrag daadwerkelijk weerspiegelt, ondersteund door Manifera's bredere engineering-discipline die prestatiemeting behandelt als een echte metriek, en niet als een aanname.
+[LaunchStudio](https://launchstudio.eu/nl/) implementeert bewaking van de daadwerkelijke responstijdverdeling en gepast informatieve laadstatussen als onderdeel van bredere observatieverharding. Wij vervangen een oninformatieve generieke spinner door iets wat het echte productgedrag daadwerkelijk weerspiegelt, ondersteund door Manifera's bredere engineering-discipline die prestatiemeting behandelt als een echte metriek, en niet als een aanname.
 
-[Ontdek hoe uw daadwerkelijke responstijdverdeling eruitziet, en niet alleen uw eigen indruk ervan](https://launchstudio.eu/en/#calculator) — de spinner verbergt een verdeling die de meeste oprichters nooit daadwerkelijk hebben gemeten.
+[Ontdek hoe uw daadwerkelijke responstijdverdeling eruitziet, en niet alleen uw eigen indruk ervan](https://launchstudio.eu/nl/#calculator) — de spinner verbergt een verdeling die de meeste oprichters nooit daadwerkelijk hebben gemeten.
 
 ## Vier manieren om een traag AI-verzoek daadwerkelijk af te handelen, zodra u het heeft gemeten
 

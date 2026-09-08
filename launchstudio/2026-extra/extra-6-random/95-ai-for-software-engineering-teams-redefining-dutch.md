@@ -12,10 +12,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "Software-engineeringteams Herdefiniëren Stilletjes Wat 'AI voor Software Engineering' Betekent",
   "description": "Naarmate door oprichters gebouwde prototypes uitgroeien tot echte engineeringteams, verschuift de betekenis van 'AI voor software engineering' van de tool die de app bouwt naar de tool die junioren gebruiken terwijl senioren reviewen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-for-software-engineering-teams-redefining" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-for-software-engineering-teams-redefining" }
 }
 </script>
 
@@ -41,7 +41,7 @@ Oprichters die het originele prototype solo hebben gebouwd, blijven soms lang na
 
 De eerlijke indicator is niet teamgrootte, maar of AI-output rechtstreeks naar productie gaat of eerst wordt beoordeeld. Een team van vijf dat AI-output nog steeds ongereviewd uitbrengt, zit nog steeds in fase één, wat het organogram ook zegt. Een solo-oprichter die kritisch is begonnen zijn eigen AI-output te beoordelen voordat hij uitbrengt, is feitelijk in zijn eentje fase drie binnengetreden.
 
-Onze technici hebben meer dan 160 projecten opgeleverd voor enterprise-klanten vanuit de Singapore-hub van LaunchStudio, en één patroon dat we voortdurend zien is precies dit: een oprichtend team dat voorbij de prototypefase is gegroeid zonder ooit de reviewlaag te formaliseren die hun groei stilletjes eiste. Onze [procespagina](https://launchstudio.eu/en/#process) beschrijft hoe die reviewlaag doorgaans wordt toegevoegd, en Manifera's praktijk voor [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) weerspiegelt dezelfde senior-reviewdiscipline op enterprise-schaal.
+Onze technici hebben meer dan 160 projecten opgeleverd voor enterprise-klanten vanuit de Singapore-hub van LaunchStudio, en één patroon dat we voortdurend zien is precies dit: een oprichtend team dat voorbij de prototypefase is gegroeid zonder ooit de reviewlaag te formaliseren die hun groei stilletjes eiste. Onze [procespagina](https://launchstudio.eu/nl/#process) beschrijft hoe die reviewlaag doorgaans wordt toegevoegd, en Manifera's praktijk voor [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) weerspiegelt dezelfde senior-reviewdiscipline op enterprise-schaal.
 
 ## Echt voorbeeld
 

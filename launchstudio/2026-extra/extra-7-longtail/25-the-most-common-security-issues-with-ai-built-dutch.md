@@ -13,10 +13,10 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "@type": "Article",
   "headline": "De meest voorkomende beveiligingsproblemen bij door AI gebouwde apps die we bij LaunchStudio zien",
   "description": "Een overzicht van de meest voorkomende beveiligingsproblemen bij door AI gebouwde apps, gebaseerd op wat de engineers van LaunchStudio daadwerkelijk vinden, geschreven voor bureaus die ze onder eigen merknaam oplossen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-12",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/the-most-common-security-issues-with-ai-built" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/the-most-common-security-issues-with-ai-built" }
 }
 </script>
 
@@ -56,7 +56,7 @@ Voor een bureau is dit het deel dat de moeite waard is om bij uw eigen klanten t
 
 ## Dit leveren onder uw eigen merk
 
-Dit is precies het gat dat LaunchStudio bestaat om te dichten voor bureaus die geen in-house beveiligingsgerichte engineers hebben, maar geen klanten willen afwijzen die aankomen met door AI gebouwde prototypes. Het werk gebeurt onder NDA, geleverd tegen een vaste omvang en prijs, en kan naar buiten gaan onder de naam van uw bureau in plaats van die van LaunchStudio — u blijft de klantgerichte partner, wij zijn de engineering achter de schermen. De engineers van Manifera hebben meer dan tien jaar lang meer dan 160 projecten geleverd voor zakelijke klanten, werkend vanuit een ontwikkelcentrum aan Pho Quang Street in Ho Chi Minh-stad naast de teams in Amsterdam en Singapore; datzelfde team ondersteunt elke levering van LaunchStudio, inclusief de white-label leveringen. U kunt [een klantproject beschrijven via het proces van LaunchStudio](https://launchstudio.eu/en/#process) op dezelfde manier als een oprichter zou doen, alleen gemarkeerd als partneropdracht, en het [klantenportfolio van Manifera](https://www.manifera.com/portfolio/) bekijken voor het soort engineeringstandaard waaraan het werk wordt gehouden.
+Dit is precies het gat dat LaunchStudio bestaat om te dichten voor bureaus die geen in-house beveiligingsgerichte engineers hebben, maar geen klanten willen afwijzen die aankomen met door AI gebouwde prototypes. Het werk gebeurt onder NDA, geleverd tegen een vaste omvang en prijs, en kan naar buiten gaan onder de naam van uw bureau in plaats van die van LaunchStudio — u blijft de klantgerichte partner, wij zijn de engineering achter de schermen. De engineers van Manifera hebben meer dan tien jaar lang meer dan 160 projecten geleverd voor zakelijke klanten, werkend vanuit een ontwikkelcentrum aan Pho Quang Street in Ho Chi Minh-stad naast de teams in Amsterdam en Singapore; datzelfde team ondersteunt elke levering van LaunchStudio, inclusief de white-label leveringen. U kunt [een klantproject beschrijven via het proces van LaunchStudio](https://launchstudio.eu/nl/#process) op dezelfde manier als een oprichter zou doen, alleen gemarkeerd als partneropdracht, en het [klantenportfolio van Manifera](https://www.manifera.com/portfolio/) bekijken voor het soort engineeringstandaard waaraan het werk wordt gehouden.
 
 ## Dit inbouwen in uw standaard intakeproces
 

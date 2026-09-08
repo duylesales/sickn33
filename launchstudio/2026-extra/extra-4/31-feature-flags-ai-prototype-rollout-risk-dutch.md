@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/feature-flags-ai-prototype-rollout-risk"
+    "@id": "https://launchstudio.eu/nl/blog/feature-flags-ai-prototype-rollout-risk"
   }
 }
 </script>
@@ -63,7 +63,7 @@ Niet elke functie heeft een vlag nodig. Maar alles wat geld, machtigingen of gea
 - Alles wat API-oproepen van derden afvuurt met een kostenverplichting eraan gekoppeld (facturering, SMS, e-mailverzendingen)
 - Nieuwe logica die een bestaand, werkend codepad vervangt – u wilt oud versus nieuw gedrag live vergelijken, en niet in theorie
 
-Manifera's ingenieurs, werkend vanuit het kantoor in Amsterdam aan de Herengracht 420, sluiten dit doorgaans aan in de stack van een oprichter tijdens de controle voor productie-gereedheid – niet als een afzonderlijk product, maar als onderdeel van het brengen van de app van "demo die werkt" naar "app die echte gebruikers kunnen vertrouwen." Als u niet zeker weet of uw huidige opzet dit gedekt heeft, [bekijk wat een beoordeling van de productiekwaliteit daadwerkelijk kost](https://launchstudio.eu/en/#calculator) voordat u er op de harde manier achter komt.
+Manifera's ingenieurs, werkend vanuit het kantoor in Amsterdam aan de Herengracht 420, sluiten dit doorgaans aan in de stack van een oprichter tijdens de controle voor productie-gereedheid – niet als een afzonderlijk product, maar als onderdeel van het brengen van de app van "demo die werkt" naar "app die echte gebruikers kunnen vertrouwen." Als u niet zeker weet of uw huidige opzet dit gedekt heeft, [bekijk wat een beoordeling van de productiekwaliteit daadwerkelijk kost](https://launchstudio.eu/nl/#calculator) voordat u er op de harde manier achter komt.
 
 ## Een vlag uitschakelen ongedaan maken niet wat er al is gebeurd
 

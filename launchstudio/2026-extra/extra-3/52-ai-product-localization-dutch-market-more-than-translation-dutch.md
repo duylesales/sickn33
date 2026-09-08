@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-product-localization-dutch-market-more-than-translation"
+    "@id": "https://launchstudio.eu/nl/blog/ai-product-localization-dutch-market-more-than-translation"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Nederlandse zakelijke communicatie kent een specifieke, goed begrepen conventie 
 
 Gegeven de focus op Nederland en de bredere Benelux die centraal staat voor een groot deel van het publiek van AI-native oprichters dat deze artikelenreeks aanspreekt, is het goed krijgen van deze specifieke verwachtingen voor de Nederlandse markt geen randverschijnsel dat "fijn is om te hebben" – het staat centraal in de vraag of een oprecht goed gebouwd product daadwerkelijk aanslaat bij zijn beoogde primaire markt. Precies zoals een oprichter die specifiek voor Nederlandse klanten bouwt dat nodig heeft.
 
-[LaunchStudio](https://launchstudio.eu/en/) verifieert specifiek de volledigheid van lokalisatie voor de Nederlandse markt – iDEAL-betalingsintegratie, het juiste formaliteitsregister en Nederlands-specifieke regelgeving – als een standaard overweging voor oprichters die zich op deze markt richten. Dit wordt ondersteund door Manifera's hoofdkantoor in Amsterdam en diepe, directe bekendheid met echte Nederlandse marktverwachtingen.
+[LaunchStudio](https://launchstudio.eu/nl/) verifieert specifiek de volledigheid van lokalisatie voor de Nederlandse markt – iDEAL-betalingsintegratie, het juiste formaliteitsregister en Nederlands-specifieke regelgeving – als een standaard overweging voor oprichters die zich op deze markt richten. Dit wordt ondersteund door Manifera's hoofdkantoor in Amsterdam en diepe, directe bekendheid met echte Nederlandse marktverwachtingen.
 
-[Laat uw product controleren tegen wat Nederlandse gebruikers daadwerkelijk verwachten, en niet alleen vertaalde tekst](https://launchstudio.eu/en/#calculator) — echte lokalisatie gaat verder dan nauwkeurige vertaling alleen.
+[Laat uw product controleren tegen wat Nederlandse gebruikers daadwerkelijk verwachten, en niet alleen vertaalde tekst](https://launchstudio.eu/nl/#calculator) — echte lokalisatie gaat verder dan nauwkeurige vertaling alleen.
 
 ## Andere details voor de Nederlandse markt die gemakkelijk te missen zijn voorbij betaling en toon
 

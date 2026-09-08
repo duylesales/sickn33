@@ -53,9 +53,9 @@ Scoor 2 alleen als je bevestigd hebt dat een falende test of lint-overtreding da
 
 De scoringcriteria zijn doelbewust binair en bewijsgebaseerd — je draaide de specifieke beschreven test ofwel of je deed het niet — wat ontworpen is om weerstand te bieden aan het zelfreview-optimisme doorheen deze serie behandeld. Een founder die verleid wordt genereus te scoren op een vage "heb ik hierover nagedacht"-basis wordt structureel verhinderd dat te doen door de vereiste dat elke 2 specifiek overeenkomt met een beschreven, uitgevoerde verificatie, geen algemene indruk.
 
-[LaunchStudio](https://launchstudio.eu/en/) kan precies deze score voor jouw specifieke app verifiëren of produceren, en biedt de concrete tests achter elke categorie in plaats van van jou te vereisen ze zelf uit te voeren, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten gescoord en verhard met datzelfde onderliggende framework.
+[LaunchStudio](https://launchstudio.eu/nl/) kan precies deze score voor jouw specifieke app verifiëren of produceren, en biedt de concrete tests achter elke categorie in plaats van van jou te vereisen ze zelf uit te voeren, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten gescoord en verhard met datzelfde onderliggende framework.
 
-[Laat jouw app professioneel scoren tegen precies dit framework](https://launchstudio.eu/en/#calculator) — een zelfscore is een nuttig startpunt; een geverifieerde is een betrouwbare beslissingsbasis.
+[Laat jouw app professioneel scoren tegen precies dit framework](https://launchstudio.eu/nl/#calculator) — een zelfscore is een nuttig startpunt; een geverifieerde is een betrouwbare beslissingsbasis.
 
 ## Echt voorbeeld
 

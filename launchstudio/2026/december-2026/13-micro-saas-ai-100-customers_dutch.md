@@ -16,7 +16,7 @@ Doelpersona: SaaS Oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: SaaS Oprichter Scale-Up
   "datePublished": "2026-12-13",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/micro-saas-ai-100-customers"
+    "@id": "https://launchstudio.eu/nl/blog/micro-saas-ai-100-customers"
   }
 }
 </script>
@@ -58,13 +58,13 @@ Een micro-SaaS product dat 100 specifieke klanten diepgaand bedient — bijvoorb
 
 De valkuil bij micro-SaaS is de veronderstelling dat omdat het klantenbestand klein is, de technische eisen lager kunnen zijn. Dat is een gevaarlijke misvatting. Een niche-SaaS die 100 betalende professionals bedient — in de juridische, medische of financiële sector — stelt vaak veel strengere eisen aan betrouwbaarheid en compliance dan een consumenten-app met miljoenen gratis gebruikers. Professionele klanten vertrouwen voor hun inkomen op de tool en tolereren geen downtime of datalekken.
 
-Dit is waar [LaunchStudio](https://launchstudio.eu/en/) specifiek inspeelt op het micro-SaaS model. Achter LaunchStudio staat Manifera's team van 120+ ervaren engineers, waardoor een micro-SaaS oprichter kan rekenen op enterprise-beveiliging en robuuste architectuur tegen een tarief dat is afgestemd op een bedrijf van 100 klanten, niet van 100.000 klanten.
+Dit is waar [LaunchStudio](https://launchstudio.eu/nl/) specifiek inspeelt op het micro-SaaS model. Achter LaunchStudio staat Manifera's team van 120+ ervaren engineers, waardoor een micro-SaaS oprichter kan rekenen op enterprise-beveiliging en robuuste architectuur tegen een tarief dat is afgestemd op een bedrijf van 100 klanten, niet van 100.000 klanten.
 
 ## Het Maandelijkse Beheermodel voor Micro-SaaS
 
 Omdat micro-SaaS oprichters vaak solo opereren, is doorlopende stabiliteit belangrijker dan een constante stroom nieuwe toeters en bellen. Het Launch & Grow pakket van LaunchStudio omvat managed hosting, 24/7 uptime-monitoring en prioriteitsondersteuning voor €49 per maand — ontworpen zodat een solo-oprichter nooit een parttime DevOps-engineer hoeft te worden om zijn 100 klanten tevreden te houden.
 
-[Bekijk wat een micro-SaaS lancering kost](https://launchstudio.eu/en/#calculator) voor uw specifieke niche en klanenaantal.
+[Bekijk wat een micro-SaaS lancering kost](https://launchstudio.eu/nl/#calculator) voor uw specifieke niche en klanenaantal.
 
 ## Prijsbepaling van een Micro-SaaS Product voor Duurzame Winstgevendheid
 

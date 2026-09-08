@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / CTO
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / CTO
   "datePublished": "2026-11-25",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-code-development"
+    "@id": "https://launchstudio.eu/nl/blog/ai-code-development"
   }
 }
 </script>
@@ -69,7 +69,7 @@ Laat de AI nooit database-aanroepen, bedrijfsregels en gebruikersinterfaces in Ã
 
 Wanneer een groeiende startup vastloopt in de 100k-regels spaghetti-valkuil, is zelf herstellen via AI-prompts vaak onmogelijk: de AI begrijpt de context immers niet meer.
 
-Dit is waar [LaunchStudio](https://launchstudio.eu/en/) te hulp schiet met gerichte *Codebase Rescues*. Gesteund door de software-engineers van [Manifera](https://www.manifera.com/) herstellen wij de architectuur:
+Dit is waar [LaunchStudio](https://launchstudio.eu/nl/) te hulp schiet met gerichte *Codebase Rescues*. Gesteund door de software-engineers van [Manifera](https://www.manifera.com/) herstellen wij de architectuur:
 1. **Afhankelijkheden in Kaart Brengen:** Analyseren van de code om alle circulaire imports en dubbele logica op te sporen.
 2. **Modularisering:** Monolithische bestanden van 2.000 regels opsplitsen in schone, herbruikbare componenten van 100 regels.
 3. **Backend-Extractie:** Directe database-queries verwijderen uit de frontend en verplaatsen naar een beveiligde, getypeerde API-laag.

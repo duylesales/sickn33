@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/open-source-license-compliance-ai-generated-code"
+    "@id": "https://launchstudio.eu/nl/blog/open-source-license-compliance-ai-generated-code"
   }
 }
 </script>
@@ -49,7 +49,7 @@ Het team achter LaunchStudio is Manifera's eigen engineeringpersoneel – dezelf
 
 Niet elke gemarkeerde component heeft een herschrijfsessie nodig. Veel open-source licenties (MIT, Apache 2.0, BSD) zijn permissief en vereisen simpelweg toeschrijving – een snelle herstelling, doorgaans simpelweg het toevoegen van een kennisgevingsbestand. Het echte werk is gereserveerd voor oprechte copyleft-conflicten, waar de herstelling het vervangen van de gemarkeerde code is door een originele implementatie of een permissief gelicentieerd alternatief voordat het dragend wordt in meer van het product. Het vroeg opvangen hiervan, voordat een due diligence-proces het afdwingt, veranderd een herschrijfsessie in routineus engineeringwerk in plaats van een dealbedreigende haastklus.
 
-Als u zich voorbereidt op een investeringsgesprek of een uiteindelijke overname en u wilt dat de licentiepositie van uw codebase wordt gecontroleerd voordat iemand anders het voor u controleert, is onze [contactpagina](https://launchstudio.eu/en/#contact) de snelste manier om dat gesprek te starten. Manifera's [over ons](https://www.manifera.com/about-us/)-pagina heeft meer over de enterprise-klanten die onze ingenieurs hebben ondersteund door exact dit soort technische due diligence.
+Als u zich voorbereidt op een investeringsgesprek of een uiteindelijke overname en u wilt dat de licentiepositie van uw codebase wordt gecontroleerd voordat iemand anders het voor u controleert, is onze [contactpagina](https://launchstudio.eu/nl/#contact) de snelste manier om dat gesprek te starten. Manifera's [over ons](https://www.manifera.com/about-us/)-pagina heeft meer over de enterprise-klanten die onze ingenieurs hebben ondersteund door exact dit soort technische due diligence.
 
 ## Een audit die het risico vindt is niet hetzelfde als het afhandelen ervan
 

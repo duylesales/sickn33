@@ -13,10 +13,10 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "@type": "Article",
   "headline": "Hoe u AI-software ontwikkelt zonder eigen engineeringteam",
   "description": "U hoeft AI-software niet intern te ontwikkelen om die aan klanten te leveren. Dit is het exacte proces dat bureaus en freelancers gebruiken om te leveren zonder engineers aan te nemen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-12",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-develop-ai-software-without-an-in" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/how-to-develop-ai-software-without-an-in" }
 }
 </script>
 
@@ -42,13 +42,13 @@ Het onderscheid dat dit specifiek voor bureaus laat werken, in plaats van aanvoe
 
 ## Stap 4: begroot het als een vastgeprijsde opdracht, niet een open retainer
 
-Een van de redenen dat bureaus terugschrikken voor het uitbesteden van backend-werk, is slechte ervaring met open-eind freelance opdrachten die uitdijen in tijd en kosten. Een gestructureerde partner geeft een vaste offerte na een korte technische beoordeling — voor een project zoals het SaaS-prototype van een klant valt dat doorgaans binnen het [Launch & Grow-pakket](https://launchstudio.eu/en/#packages), dat betalingen, hosting en doorlopende productieondersteuning dekt tegen een vast bedrag dat u transparant kunt opslaan en aan uw klant presenteren als uw eigen leveringsraming.
+Een van de redenen dat bureaus terugschrikken voor het uitbesteden van backend-werk, is slechte ervaring met open-eind freelance opdrachten die uitdijen in tijd en kosten. Een gestructureerde partner geeft een vaste offerte na een korte technische beoordeling — voor een project zoals het SaaS-prototype van een klant valt dat doorgaans binnen het [Launch & Grow-pakket](https://launchstudio.eu/nl/#packages), dat betalingen, hosting en doorlopende productieondersteuning dekt tegen een vast bedrag dat u transparant kunt opslaan en aan uw klant presenteren als uw eigen leveringsraming.
 
 ## Stap 5: behoud de klantrelatie, draag het productierisico over
 
 Het grootste voordeel van deze aanpak voor een bureau is niet kosten — het is risico-overdracht. Als er na de lancering een beveiligingsgat of een kapotte betaalflow naar boven komt, ligt die aansprakelijkheid bij engineers die zich specialiseren in precies deze categorie problemen en die gedocumenteerd hebben wat ze gebouwd hebben, in plaats van bij een generalistisch team dat onder klantdruk onbekend terrein aan het debuggen is. U behoudt het account, de relatie en de marge. U draagt het deel van het werk over dat sowieso nooit uw kerncompetentie was.
 
-Dit is belangrijker dan het aanvankelijk lijkt, omdat productieproblemen in het klantproject van iemand anders een uniek slechte plek zijn om onvoorbereid betrapt te worden — het vertrouwen van de klant, de reputatie van uw bureau en een live product staan allemaal tegelijk op het spel, en "we zoeken nog uit wat er misging" is geen zin die een bureau twee keer wil zeggen. Als u wilt zien welke engineeringstandaard uw levering zou ondersteunen, is [Manifera's offshore-ontwikkelpraktijk](https://www.manifera.com/services/offshore-software-development/) hetzelfde team dat achter dit werk staat — u kunt ook [een gesprek starten over een specifiek klantproject](https://launchstudio.eu/en/#contact) zodra u er een heeft.
+Dit is belangrijker dan het aanvankelijk lijkt, omdat productieproblemen in het klantproject van iemand anders een uniek slechte plek zijn om onvoorbereid betrapt te worden — het vertrouwen van de klant, de reputatie van uw bureau en een live product staan allemaal tegelijk op het spel, en "we zoeken nog uit wat er misging" is geen zin die een bureau twee keer wil zeggen. Als u wilt zien welke engineeringstandaard uw levering zou ondersteunen, is [Manifera's offshore-ontwikkelpraktijk](https://www.manifera.com/services/offshore-software-development/) hetzelfde team dat achter dit werk staat — u kunt ook [een gesprek starten over een specifiek klantproject](https://launchstudio.eu/nl/#contact) zodra u er een heeft.
 
 ## Stap 6: lever op, documenteer, en herhaal
 

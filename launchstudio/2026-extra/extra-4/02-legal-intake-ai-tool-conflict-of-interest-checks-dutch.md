@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/legal-intake-ai-tool-conflict-of-interest-checks"
+    "@id": "https://launchstudio.eu/nl/blog/legal-intake-ai-tool-conflict-of-interest-checks"
   }
 }
 </script>
@@ -47,7 +47,7 @@ LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van
 
 Ingenieurs gebaseerd vanuit Manifera's Zuidoost-Aziatische hub op Tras Street, Singapore, zijn vaak degenen die dit soort matching- en nalevingslogica oppakken voor klanten van LaunchStudio, aangezien het nauw overlapt met werk voor fraudebestrijding en risicodetectie dat het bredere Manifera-team heeft gedaan voor financiële en cyberbeveiligingsklanten.
 
-Als uw intaketool onderweg is naar echte klanten, [bekijk wat een beveiligings- en nalevingsbeoordeling daadwerkelijk kost](https://launchstudio.eu/en/#calculator) voordat uw eerste echte conflict er stilletjes doorheen glipt.
+Als uw intaketool onderweg is naar echte klanten, [bekijk wat een beveiligings- en nalevingsbeoordeling daadwerkelijk kost](https://launchstudio.eu/nl/#calculator) voordat uw eerste echte conflict er stilletjes doorheen glipt.
 
 ## Een conflictcontrole is een momentopname — de database blijft bewegen
 

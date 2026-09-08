@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-25",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/migrate-lovable-production-grade-architecture"
+    "@id": "https://launchstudio.eu/nl/blog/migrate-lovable-production-grade-architecture"
   }
 }
 </script>
@@ -63,13 +63,13 @@ Vóór de officiële livegang richten we geautomatiseerde foutdetectie (zoals Se
 
 ## Wat Er NIET Verandert: Uw Frontend
 
-Gedurende dit gehele proces blijft uw daadwerkelijke gebruikersinterface — het ontwerp, de knoppen, de lay-out en de klantervaring die u in Lovable heeft opgebouwd — **volledig onaangeroerd**. Dit is het kernprincipe van [LaunchStudio](https://launchstudio.eu/en/): *"Wij behouden uw frontend; we repareren uitsluitend wat noodzakelijk is onder de motorkap."*
+Gedurende dit gehele proces blijft uw daadwerkelijke gebruikersinterface — het ontwerp, de knoppen, de lay-out en de klantervaring die u in Lovable heeft opgebouwd — **volledig onaangeroerd**. Dit is het kernprincipe van [LaunchStudio](https://launchstudio.eu/nl/): *"Wij behouden uw frontend; we repareren uitsluitend wat noodzakelijk is onder de motorkap."*
 
 ## Realistische Doorlooptijd en Kosten
 
 Een typische Lovable-naar-productie migratie via LaunchStudio duurt één tot drie weken en kost €800 tot €7.500 afhankelijk van de complexiteit — een fractie van de €20.000 tot €100.000+ die traditionele bureaus rekenen voor nieuwbouw vanaf nul. Manifera's team van 120+ engineers heeft dit specifieke migratieproces verfijnd over vele tientallen Lovable-projecten.
 
-[Vraag een migratiescope en offerte aan](https://launchstudio.eu/en/#calculator) voor uw specifieke Lovable-prototype.
+[Vraag een migratiescope en offerte aan](https://launchstudio.eu/nl/#calculator) voor uw specifieke Lovable-prototype.
 
 ## Zelf Uw Migratiescope Inschatten Vóórdat U Contact Opneemt
 

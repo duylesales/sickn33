@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
   "@type": "Article",
   "headline": "Van idee naar AI naar code: wat er echt gebeurt nadat de demo werkt",
   "description": "Van idee naar AI naar code gaan is tegenwoordig het makkelijke deel. Dit is wat een werkende demo daadwerkelijk onderscheidt van een app die echte klanten kunnen gebruiken en waarvoor ze willen betalen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-08",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/from-idea-to-ai-to-code-what-actually" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/from-idea-to-ai-to-code-what-actually" }
 }
 </script>
 
@@ -42,7 +42,7 @@ Niets hiervan vereist dat u aan uw frontend komt. Dat is het deel waar oprichter
 
 Dit is het deel dat oprichters overvalt: de kloof tussen "voor" en "na" is van buitenaf onzichtbaar. Uw demo en een productieklare versie van dezelfde app kunnen op het scherm bijna identiek ogen. Precies daarom lanceren zoveel oprichters te vroeg — er is geen visueel signaal dat hen vertelt dat er iets cruciaals ontbreekt. De bug kondigt zich pas aan wanneer een gebruiker ertegenaan loopt: een betaling die stilzwijgend mislukt, een record dat onder het verkeerde account verschijnt, een pagina die voor u prima laadt en voor iedereen anders vastloopt omdat uw hosting nooit bedoeld was om echt verkeer te bedienen.
 
-Dit is ook het moment waarop de klassieke freelancer-valkuil opduikt. Een oprichter huurt via een marktplaats iemand in om de app "af te maken", en ontdekt drie weken later dat de freelancer de code die de AI-tool genereerde eigenlijk niet begrijpt — hij debugt de architectuur van een vreemde zonder documentatie, en de voortgang kruipt. Dat is een oprecht veelvoorkomende uitkomst, en het is een groot deel van de reden waarom het [LaunchStudio-proces](https://launchstudio.eu/en/#process) bestaat als een gestructureerd alternatief: een kort kennismakingsgesprek, een vaste offerte en engineers die al begrijpen wat Lovable, Bolt, Cursor en v0 doorgaans opleveren — omdat zij dit soort code voortdurend beoordelen, niet voor het eerst bij uw project.
+Dit is ook het moment waarop de klassieke freelancer-valkuil opduikt. Een oprichter huurt via een marktplaats iemand in om de app "af te maken", en ontdekt drie weken later dat de freelancer de code die de AI-tool genereerde eigenlijk niet begrijpt — hij debugt de architectuur van een vreemde zonder documentatie, en de voortgang kruipt. Dat is een oprecht veelvoorkomende uitkomst, en het is een groot deel van de reden waarom het [LaunchStudio-proces](https://launchstudio.eu/nl/#process) bestaat als een gestructureerd alternatief: een kort kennismakingsgesprek, een vaste offerte en engineers die al begrijpen wat Lovable, Bolt, Cursor en v0 doorgaans opleveren — omdat zij dit soort code voortdurend beoordelen, niet voor het eerst bij uw project.
 
 ## Waarom elke grote AI-tool dezelfde kloof laat bestaan
 

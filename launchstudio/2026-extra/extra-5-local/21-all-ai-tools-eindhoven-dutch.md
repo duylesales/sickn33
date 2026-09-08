@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Niet alle AI-tools brengen Eindhovense oprichters op dezelfde plek bij de lancering",
   "description": "Een blik op waarom alle AI-tools dezelfde snelheid beloven maar heel verschillende gaten achterlaten bij productie, met een praktijkvoorbeeld van een Eindhovense hardware-oprichter.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/21-all-ai-tools-eindhoven" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/21-all-ai-tools-eindhoven" }
 }
 </script>
 
@@ -36,7 +36,7 @@ LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf m
 
 ## Het gat dichten zonder te herbouwen wat u heeft gemaakt
 
-Het instinct dat veel Eindhovense oprichters hebben zodra ze het gat ontdekken, is aannemen dat ze alles opnieuw moeten bouwen met "echte" ontwikkelaars. Dat is meestal de verkeerde keuze — en een dure, zowel in de kosten die u betaalt als in de maanden die u verliest door opnieuw te beginnen met werk dat grotendeels prima is. De meeste met AI gegenereerde frontends zijn oprecht solide; wat ontbreekt is de onzichtbare laag eronder. U kunt [uw project beschrijven aan LaunchStudio](https://launchstudio.eu/en/#contact) en een specifieke lijst krijgen van wat hersteld moet worden voordat het een specifieke lijst wordt van wat er misging in productie, in plaats van een offerte voor een volledige heropbouw.
+Het instinct dat veel Eindhovense oprichters hebben zodra ze het gat ontdekken, is aannemen dat ze alles opnieuw moeten bouwen met "echte" ontwikkelaars. Dat is meestal de verkeerde keuze — en een dure, zowel in de kosten die u betaalt als in de maanden die u verliest door opnieuw te beginnen met werk dat grotendeels prima is. De meeste met AI gegenereerde frontends zijn oprecht solide; wat ontbreekt is de onzichtbare laag eronder. U kunt [uw project beschrijven aan LaunchStudio](https://launchstudio.eu/nl/#contact) en een specifieke lijst krijgen van wat hersteld moet worden voordat het een specifieke lijst wordt van wat er misging in productie, in plaats van een offerte voor een volledige heropbouw.
 
 Dit is ook waar de mythe dat "alle AI-tools hetzelfde zijn" echte schade veroorzaakt — oprichters nemen aan dat omdat Bolt, Lovable en Cursor er aan de oppervlakte vergelijkbaar uitzien, het herstel op een vergelijkbare manier generiek moet zijn. Dat is niet zo. Een door Bolt gegenereerde Next.js-app heeft andere beveiligingsinstellingen dan een v0-project aangesloten op Supabase. De engineers van Manifera, die meer dan 160 projecten hebben opgeleverd voor klanten waaronder Vodafone en TNO, behandelen de typische faalpatronen van elke AI-tool als een bekende grootheid — bekijk het bredere [custom software development werk](https://www.manifera.com/services/custom-software-development/) van het team voor het type productieverharding dat dit inhoudt.
 

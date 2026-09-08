@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "Wat AI en softwareontwikkeling vandaag daadwerkelijk onderling verdelen",
   "description": "AI en softwareontwikkeling zijn geen concurrerende disciplines meer — ze verdelen het werk. Het echte project van één oprichter laat precies zien waar die lijn ligt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-14",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/what-ai-and-software-development-actually-split-between" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/what-ai-and-software-development-actually-split-between" }
 }
 </script>
 
@@ -54,7 +54,7 @@ Deze oefening duurt een uur of twee voor de meeste codebases van solo-oprichters
 
 ## Wat dit betekent voor hoe u daadwerkelijk zou moeten werken
 
-De praktische conclusie is niet "vertrouw AI minder" of "schrijf alles met de hand." Het gaat erom weloverwogen te zijn over welke categorie elk onderdeel van uw systeem in valt, en de naden ertussen te behandelen als een specifiek beoordelingsdoel in plaats van een consistentie aan te nemen die nooit daadwerkelijk geverifieerd is. Als u een technische oprichter bent voorbij de prototypefase, is een gestructureerde beoordeling die specifiek op die naden gericht is — geen algemene codedoorlezing — een van de meest hoogwaardige dingen die u kunt doen voordat echte gebruikers edge cases raken die u nooit getest heeft. U kunt dat gesprek starten via [het proces van LaunchStudio](https://launchstudio.eu/en/#process), en het soort enterprise-engineeringdiscipline zien waar het uit put in [Manifera's projectportfolio](https://www.manifera.com/portfolio/).
+De praktische conclusie is niet "vertrouw AI minder" of "schrijf alles met de hand." Het gaat erom weloverwogen te zijn over welke categorie elk onderdeel van uw systeem in valt, en de naden ertussen te behandelen als een specifiek beoordelingsdoel in plaats van een consistentie aan te nemen die nooit daadwerkelijk geverifieerd is. Als u een technische oprichter bent voorbij de prototypefase, is een gestructureerde beoordeling die specifiek op die naden gericht is — geen algemene codedoorlezing — een van de meest hoogwaardige dingen die u kunt doen voordat echte gebruikers edge cases raken die u nooit getest heeft. U kunt dat gesprek starten via [het proces van LaunchStudio](https://launchstudio.eu/nl/#process), en het soort enterprise-engineeringdiscipline zien waar het uit put in [Manifera's projectportfolio](https://www.manifera.com/portfolio/).
 
 ## Echt voorbeeld
 

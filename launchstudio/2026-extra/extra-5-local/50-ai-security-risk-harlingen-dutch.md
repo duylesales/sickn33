@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Het AI-beveiligingsrisico van uw app begrijpen voordat een Harlinger gebruiker het vindt",
   "description": "Hoe na te denken over AI-beveiligingsrisico's in een door oprichters gebouwde app voordat een echte gebruiker of aanvaller het als eerste vindt, met een casestudy van een startup voor veerboot-tickets in Harlingen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-security-risk-harlingen" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-security-risk-harlingen" }
 }
 </script>
 
@@ -40,7 +40,7 @@ Dezelfde logica strekt zich uit voorbij ticketnummers tot vrijwel elke identifie
 
 LaunchStudio voert een gestructureerde risicobeoordeling uit op prototypes van oprichters juist omdat risico systematisch gevonden moet worden, en er niet toevallig tegenaan gelopen moet worden. Onze engineers hebben 160+ projecten opgeleverd voor enterprise-klanten waaronder Vodafone en TNO, en de beoordeling kijkt specifiek naar hoe identifiers worden gegenereerd, hoe betalingen worden geverifieerd, hoe toegang wordt gecontroleerd, en waar gevoelige data onversleuteld reist. Dit werk wordt deels gecoördineerd vanuit ons hoofdkantoor in Amsterdam aan de Herengracht, dicht bij de klantgesprekken die elke beoordeling vormgeven.
 
-We herstellen wat we vinden zonder uw bestaande frontend aan te raken — [verken LaunchStudio's aanpak](https://launchstudio.eu/en/) om te zien hoe een door een oprichter gebouwd product beweegt van prototype naar iets wat klaar is voor echte transacties. Voor meer over Manifera's bredere engineering-achtergrond achter dit werk, zie [onze bedrijfspagina](https://www.manifera.com/about-us/).
+We herstellen wat we vinden zonder uw bestaande frontend aan te raken — [verken LaunchStudio's aanpak](https://launchstudio.eu/nl/) om te zien hoe een door een oprichter gebouwd product beweegt van prototype naar iets wat klaar is voor echte transacties. Voor meer over Manifera's bredere engineering-achtergrond achter dit werk, zie [onze bedrijfspagina](https://www.manifera.com/about-us/).
 
 ## Een risico dat u vandaag zelf kunt controleren
 

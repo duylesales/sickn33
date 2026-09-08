@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-27",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-deployment-isnt-a-button-heres-what-it-actually-requires"
+    "@id": "https://launchstudio.eu/nl/blog/ai-deployment-isnt-a-button-heres-what-it-actually-requires"
   }
 }
 </script>
@@ -55,11 +55,11 @@ Het klikken op "deploy" (uitrollen) in een AI-coderingsassistent zet uw applicat
 
 ## Het sluiten van de kloof tussen "uitgerold" en "correct geconfigureerd"
 
-Een correcte beoordeling bevestigt dat HSTS, content-security-policy, en gerelateerde headers correct zijn ingesteld voor uw specifieke hostingomgeving, getest tegen uw live domein in plaats van aangenomen vanaf een generiek sjabloon. [LaunchStudio](https://launchstudio.eu/en/) verifieert exact dit soort uitrolconfiguratie als onderdeel van haar standaardbeoordeling, ondersteund door Manifera's 11+ jaar ervaring met productie-uitrol over Vercel, AWS, Azure, en DigitalOcean omgevingen.
+Een correcte beoordeling bevestigt dat HSTS, content-security-policy, en gerelateerde headers correct zijn ingesteld voor uw specifieke hostingomgeving, getest tegen uw live domein in plaats van aangenomen vanaf een generiek sjabloon. [LaunchStudio](https://launchstudio.eu/nl/) verifieert exact dit soort uitrolconfiguratie als onderdeel van haar standaardbeoordeling, ondersteund door Manifera's 11+ jaar ervaring met productie-uitrol over Vercel, AWS, Azure, en DigitalOcean omgevingen.
 
 Manifera's beoordelingen van uitrolconfiguratie worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Stuur ons de link van uw prototype — we beoordelen het gratis](https://launchstudio.eu/en/#contact).
+[Stuur ons de link van uw prototype — we beoordelen het gratis](https://launchstudio.eu/nl/#contact).
 
 ## De zes headers die het waard zijn om daadwerkelijk te kennen
 

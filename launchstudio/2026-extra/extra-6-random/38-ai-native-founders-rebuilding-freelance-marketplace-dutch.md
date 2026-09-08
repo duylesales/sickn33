@@ -12,10 +12,10 @@ Doelgroep: Agentschap/freelancer (white-label partner)
   "@type": "Article",
   "headline": "Hoe AI-native oprichters in stilte de freelancemarktplaats herbouwen",
   "description": "Een trendstuk, vanuit het perspectief van een bureau-eigenaar, over hoe AI-codeertools het freelance-biedproces herstructureren en wat bureaus kunnen doen naast concurreren op een prijs die ze niet meer kunnen winnen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-native-founders-rebuilding-freelance-marketplace" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-native-founders-rebuilding-freelance-marketplace" }
 }
 </script>
 
@@ -39,7 +39,7 @@ In plaats van te concurreren met onderbiedende freelancers op hun eigen voorwaar
 
 De praktische versie hiervan ziet er zo uit: een bureau blijft doen wat het altijd deed — klantrelaties, projectmanagement, front-end polish — en routeert de beveiligings- en productiegereedheidslaag via een gespecialiseerde partner, white-label, zodat de klant één naadloze relatie ervaart terwijl het bureau die gespecialiseerde capaciteit niet zelf vanaf nul hoeft op te bouwen.
 
-LaunchStudio runt precies dit soort white-label-partnerschap voor bureaus die deze verschuiving doormaken, gesteund door Manifera's 120+ engineers en meer dan 11 jaar ervaring in productie-engineering. Onze hub in Singapore werkt samen met een aantal bureaupartners in heel Zuidoost-Azië op precies deze manier. Als u een bureau-eigenaar bent die deze optie overweegt, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/en/#contact) om te bespreken hoe een white-label-samenwerking eruit zou zien voor uw klantenbestand. Voor een indruk van de productie-engineeringstandaard achter de samenwerking, zie Manifera's [portfolio](https://www.manifera.com/portfolio/) van enterprise-werk.
+LaunchStudio runt precies dit soort white-label-partnerschap voor bureaus die deze verschuiving doormaken, gesteund door Manifera's 120+ engineers en meer dan 11 jaar ervaring in productie-engineering. Onze hub in Singapore werkt samen met een aantal bureaupartners in heel Zuidoost-Azië op precies deze manier. Als u een bureau-eigenaar bent die deze optie overweegt, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) om te bespreken hoe een white-label-samenwerking eruit zou zien voor uw klantenbestand. Voor een indruk van de productie-engineeringstandaard achter de samenwerking, zie Manifera's [portfolio](https://www.manifera.com/portfolio/) van enterprise-werk.
 
 ## Echt voorbeeld
 

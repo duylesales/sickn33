@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
   "@type": "Article",
   "headline": "Wat een no-code AI-tool niet kan zodra echte gebruikers zich aanmelden",
   "description": "Een no-code AI-tool kan u snel een werkende demo bezorgen, maar echte gebruikers leggen de gaten bloot die een demo nooit toont. Dit is wat u moet controleren voordat u voorbij uw eerste pilotgebruikers opschaalt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-09",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/what-a-no-code-ai-tool-cant-do" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/what-a-no-code-ai-tool-cant-do" }
 }
 </script>
 
@@ -46,7 +46,7 @@ De standaard databaselaag van een no-code AI-tool is vaak gebouwd voor testgemak
 
 ## Stap 5: Vraag een tweede mening voordat echt volume arriveert
 
-Zodra u de grenzen zelf gevonden heeft — of als het technische testen hierboven meer is dan u solo wilt aanpakken — vertelt een kort gesprek met iemand die professioneel door AI gebouwde apps beoordeelt u specifiek welke van deze grenzen op uw app van toepassing zijn en wat het kost om ze te dichten. [Het proces van LaunchStudio](https://launchstudio.eu/en/#process) begint met precies dat: beschrijf wat u gebouwd heeft, krijg een afgebakend antwoord terug tegen een vaste prijs.
+Zodra u de grenzen zelf gevonden heeft — of als het technische testen hierboven meer is dan u solo wilt aanpakken — vertelt een kort gesprek met iemand die professioneel door AI gebouwde apps beoordeelt u specifiek welke van deze grenzen op uw app van toepassing zijn en wat het kost om ze te dichten. [Het proces van LaunchStudio](https://launchstudio.eu/nl/#process) begint met precies dat: beschrijf wat u gebouwd heeft, krijg een afgebakend antwoord terug tegen een vaste prijs.
 
 LaunchStudio bestaat precies omdat een no-code AI-tool en een productieklare app verschillende problemen oplossen, en wordt aangedreven door [het engineeringteam van Manifera](https://www.manifera.com/services/web-app-develop/), dat meer dan 11 jaar besteed heeft aan het bouwen van de productiekant van software — inclusief een Zuidoost-Aziatische ontwikkelhub aan Tras Street in Singapore — voor bedrijven die precies de duurzaamheid nodig hadden waar een no-code-demo niet op test.
 

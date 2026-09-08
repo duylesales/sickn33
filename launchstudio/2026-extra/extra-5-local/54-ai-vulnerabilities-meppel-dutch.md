@@ -13,10 +13,10 @@ Doelgroep: Technische Solo Oprichter
   "@type": "Article",
   "headline": "De AI-kwetsbaarheden die Meppeler oprichters pas controleren wanneer er iets breekt",
   "description": "Een praktische blik op de AI-kwetsbaarheden die het meest gemist worden in met AI gegenereerde prototypes, met een echt voorbeeld van een logistieke oprichter in Meppel.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-vulnerabilities-meppel" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-vulnerabilities-meppel" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Dat is een wezenlijk ander risicoprofiel dan een consumenten-app met gegevens wa
 
 ## Het gat dichten zonder heropbouw
 
-LaunchStudio's engineers auditeren met AI gegenereerde codebases specifiek op deze klasse problemen: beveiliging op rijniveau, autorisatielogica, webhook-verificatie, en machtigingscontroles die uitsluitend in de frontend bestaan. Niets daarvan vereist het aanraken of herbouwen van de interface die een oprichter al heeft gebouwd in Bolt, Lovable, Cursor of v0 — de audit werkt met wat er bestaat en verhardt het. Het proces begint doorgaans met een geautomatiseerde en handmatige scan van databasebeleid en API-routes, gevolgd door gerichte tests op penetratieschaal van exact de scenario's die een echte aanvaller zou proberen: verwisselde ID's, gefalste webhook-calls, directe navigatie naar afgeschermde routes. Werkend vanuit het kantoor aan de Herengracht 420 in Amsterdam past het team dezelfde beoordelingsnorm toe die wordt gebruikt op Manifera's enterprise-trajecten, beschreven op de [web app development pagina](https://www.manifera.com/services/web-app-develop/), op prototypes op de omvang van oprichters. Begin met het [beschrijven van uw prototype](https://launchstudio.eu/en/) en wat het verwerkt — het oriënterende gesprek zelf brengt vaak al naar voren welke kwetsbaarheden het waard zijn om prioriteit te geven.
+LaunchStudio's engineers auditeren met AI gegenereerde codebases specifiek op deze klasse problemen: beveiliging op rijniveau, autorisatielogica, webhook-verificatie, en machtigingscontroles die uitsluitend in de frontend bestaan. Niets daarvan vereist het aanraken of herbouwen van de interface die een oprichter al heeft gebouwd in Bolt, Lovable, Cursor of v0 — de audit werkt met wat er bestaat en verhardt het. Het proces begint doorgaans met een geautomatiseerde en handmatige scan van databasebeleid en API-routes, gevolgd door gerichte tests op penetratieschaal van exact de scenario's die een echte aanvaller zou proberen: verwisselde ID's, gefalste webhook-calls, directe navigatie naar afgeschermde routes. Werkend vanuit het kantoor aan de Herengracht 420 in Amsterdam past het team dezelfde beoordelingsnorm toe die wordt gebruikt op Manifera's enterprise-trajecten, beschreven op de [web app development pagina](https://www.manifera.com/services/web-app-develop/), op prototypes op de omvang van oprichters. Begin met het [beschrijven van uw prototype](https://launchstudio.eu/nl/) en wat het verwerkt — het oriënterende gesprek zelf brengt vaak al naar voren welke kwetsbaarheden het waard zijn om prioriteit te geven.
 
 ## De zelfcontrole van een oprichter: Vijf vragen om te stellen vóór de lancering
 

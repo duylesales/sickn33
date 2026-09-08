@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-08-01",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-software-programming-gets-you-80-percent-whats-the-other-20"
+    "@id": "https://launchstudio.eu/nl/blog/ai-software-programming-gets-you-80-percent-whats-the-other-20"
   }
 }
 </script>
@@ -55,11 +55,11 @@ Zonder specifiek een bewerkingsverzoek vanuit het perspectief van een alleen-lez
 
 ## Dit dichten zonder het delen te overcompliceren
 
-Een correcte herstelling verifieert het machtigingsniveau opnieuw aan de serverzijde bij elk wijzigingsverzoek, onafhankelijk van wat de interface toont. [LaunchStudio](https://launchstudio.eu/en/) test exact dit patroon als onderdeel van haar beoordeling van toegangsbeheer, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van machtigingssystemen voor collaboratieve software.
+Een correcte herstelling verifieert het machtigingsniveau opnieuw aan de serverzijde bij elk wijzigingsverzoek, onafhankelijk van wat de interface toont. [LaunchStudio](https://launchstudio.eu/nl/) test exact dit patroon als onderdeel van haar beoordeling van toegangsbeheer, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van machtigingssystemen voor collaboratieve software.
 
 Manifera's audits voor machtigingen en toegangsbeheer worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Leid ons door wat u gebouwd heeft — we reageren binnen een werkdag](https://launchstudio.eu/en/#contact).
+[Leid ons door wat u gebouwd heeft — we reageren binnen een werkdag](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

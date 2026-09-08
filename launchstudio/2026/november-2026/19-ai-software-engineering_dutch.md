@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-11-19",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-software-engineering"
+    "@id": "https://launchstudio.eu/nl/blog/ai-software-engineering"
   }
 }
 </script>
@@ -67,7 +67,7 @@ Elk uur dat u besteedt aan het configureren van CI/CD-pipelines, het schrijven v
 
 U zet AI in om tijd te besparen op de frontend, om die gewonnen tijd vervolgens weer kwijt te raken aan handmatig backend-infrastructuurwerk.
 
-Dit is exact het knelpunt dat [LaunchStudio](https://launchstudio.eu/en/) oplost voor technische oprichters. Aangedreven door het engineeringteam van [Manifera](https://www.manifera.com/), fungeert LaunchStudio als uw dedicated infrastructuurteam.
+Dit is exact het knelpunt dat [LaunchStudio](https://launchstudio.eu/nl/) oplost voor technische oprichters. Aangedreven door het engineeringteam van [Manifera](https://www.manifera.com/), fungeert LaunchStudio als uw dedicated infrastructuurteam.
 
 Herre Roelevink, CEO van Manifera: *"Technische oprichters moeten eigenaarschap houden over de productlogica en de UI, waar de iteratiesnelheid het hoogst is. Wij verzorgen de productie-engineering — beveiliging, database-architectuur en deployment — waar stabiliteit en discipline cruciaal zijn."*
 

@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "De exportknop die elke AI-codeertool heeft, en waarvan niemand de kleine lettertjes leest",
   "description": "Elke AI-tool-download of exportfunctie komt met voorwaarden die niemand leest totdat het ertoe doet. Dit is hoe u de kleine lettertjes van een AI-tool-download daadwerkelijk controleert voordat zes maanden aan klantgegevens die codebase raken.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-tool-download-export-fine-print" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-tool-download-export-fine-print" }
 }
 </script>
 
@@ -41,7 +41,7 @@ Als u een clausule vindt die u zorgen baart — behouden trainingsrechten over c
 
 Als u een nieuw AI-codeerplatform evalueert voor een toekomstig project, lees dan de export- en trainingsrechtenvoorwaarden vóórdat u er iets van waarde op bouwt, niet erna. Tien minuten lezen aan het begin bespaart de haast die ontstaat wanneer een oprichter, midden in een migratie, ontdekt dat voorwaarden die ze nooit grondig hebben gelezen de hele tijd van toepassing waren.
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het helpen van oprichters om door AI gegenereerde prototypes naar infrastructuur te verplaatsen die ze volledig zelf bezitten, en ons team, werkend vanuit Amsterdam, behandelt routinematig precies dit soort export en migratie voor oprichters die net hebben ontdekt wat de voorwaarden van hun platform daadwerkelijk zeggen. Als u midden in een export zit en een tweede blik wilt op wat u ziet, kunt u [uw project beschrijven via ons proces](https://launchstudio.eu/en/#process) en wij helpen u begrijpen waarmee u daadwerkelijk instemt. De bredere ervaring van Manifera met het verplaatsen van software tussen platforms staat beschreven op de pagina [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
+LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het helpen van oprichters om door AI gegenereerde prototypes naar infrastructuur te verplaatsen die ze volledig zelf bezitten, en ons team, werkend vanuit Amsterdam, behandelt routinematig precies dit soort export en migratie voor oprichters die net hebben ontdekt wat de voorwaarden van hun platform daadwerkelijk zeggen. Als u midden in een export zit en een tweede blik wilt op wat u ziet, kunt u [uw project beschrijven via ons proces](https://launchstudio.eu/nl/#process) en wij helpen u begrijpen waarmee u daadwerkelijk instemt. De bredere ervaring van Manifera met het verplaatsen van software tussen platforms staat beschreven op de pagina [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 

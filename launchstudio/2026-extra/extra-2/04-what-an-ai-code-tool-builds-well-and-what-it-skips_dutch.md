@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-an-ai-code-tool-builds-well-and-what-it-skips"
+    "@id": "https://launchstudio.eu/nl/blog/what-an-ai-code-tool-builds-well-and-what-it-skips"
   }
 }
 </script>
@@ -69,11 +69,11 @@ Zodra u de volledige lijst heeft, is de daadwerkelijke herstelling bijna mechani
 
 ## Hoe het sluiten van deze kloof er in de praktijk uitziet
 
-De herstelling is een specifiek, afgebakend stuk engineering: het toevoegen van een server-side rolcontrole aan elke gevoelige route, en niet alleen de routes die momenteel in de UI zijn gelinkt, en het onafhankelijk verifiëren van die controle van wat de frontend ook toont. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort route-voor-route toegangsbeoordeling uit als onderdeel van haar Launch Ready-pakket, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van rolgebaseerde toegangssystemen voor enterprise-klanten.
+De herstelling is een specifiek, afgebakend stuk engineering: het toevoegen van een server-side rolcontrole aan elke gevoelige route, en niet alleen de routes die momenteel in de UI zijn gelinkt, en het onafhankelijk verifiëren van die controle van wat de frontend ook toont. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort route-voor-route toegangsbeoordeling uit als onderdeel van haar Launch Ready-pakket, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van rolgebaseerde toegangssystemen voor enterprise-klanten.
 
 Manifera's engineeringwerk wordt gecoördineerd tussen haar hoofdkantoor in Amsterdam aan de Herengracht 420 en haar belangrijkste ontwikkelingscentrum aan de Pho Quang-straat in Ho Chi Minh-stad, met haar hub in Singapore op 100 Tras Street die regionale partnerschappen in Zuidoost-Azië ondersteunt.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

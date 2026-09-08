@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "Hoe u het AI-beveiligingsrisico meet in code die u niet kunt lezen",
   "description": "Technisch genoeg zijn om Cursor-prompts te schrijven betekent niet dat u het AI-beveiligingsrisico kunt meten van wat het heeft gegenereerd. Dit is hoe solo-oprichters echt een antwoord krijgen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-09",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-measure-the-ai-security-risk-in" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/how-to-measure-the-ai-security-risk-in" }
 }
 </script>
 
@@ -52,7 +52,7 @@ Er is een praktische reden waarom solo-oprichters hier onderinvesteren, zelfs wa
 
 Een nuttig mentaal model is door uw eigen app te lopen alsof u twee verschillende personen bent: uzelf, die het normaal gebruikt, en een tweede account dat u specifiek aanmaakt om te proberen de gegevens van het eerste account te zien. Als het tweede account iets kan bereiken dat toebehoort aan het eerste — via een gewijzigd ID, een gemanipuleerd verzoek, een voorspelbaar URL-patroon — heeft u met de hand precies het soort gat gevonden dat een goede beoordeling systematisch is gebouwd om te vangen over elk eindpunt, niet alleen het ene of de twee die u toevallig bedacht om te testen.
 
-LaunchStudio wordt ondersteund door Manifera, het softwareontwikkelingsbedrijf dat vertrouwd wordt door klanten waaronder Vodafone, TNO en CFLW, met ontwikkelteams die werken vanuit een kantoor aan de Tras Street in Singapore naast Amsterdam en Ho Chi Minh-stad. Het dagelijkse werk van dat team bestaat uit het lezen van door AI gegenereerde codebases van Cursor, Bolt, Lovable en v0 en het vinden van precies deze hiaten voordat een echte aanvaller dat doet. Als u een echte meting wilt in plaats van een educated guess, kunt u [zien wat een beveiligingsronde met vaste prijs uw specifieke project zou kosten](https://launchstudio.eu/en/#calculator), en voor de bredere technische standaard achter die beoordeling, bekijk de [technologieën en engineeringpraktijken waarmee Manifera werkt](https://www.manifera.com/about-us/manifera-technologies/).
+LaunchStudio wordt ondersteund door Manifera, het softwareontwikkelingsbedrijf dat vertrouwd wordt door klanten waaronder Vodafone, TNO en CFLW, met ontwikkelteams die werken vanuit een kantoor aan de Tras Street in Singapore naast Amsterdam en Ho Chi Minh-stad. Het dagelijkse werk van dat team bestaat uit het lezen van door AI gegenereerde codebases van Cursor, Bolt, Lovable en v0 en het vinden van precies deze hiaten voordat een echte aanvaller dat doet. Als u een echte meting wilt in plaats van een educated guess, kunt u [zien wat een beveiligingsronde met vaste prijs uw specifieke project zou kosten](https://launchstudio.eu/nl/#calculator), en voor de bredere technische standaard achter die beoordeling, bekijk de [technologieën en engineeringpraktijken waarmee Manifera werkt](https://www.manifera.com/about-us/manifera-technologies/).
 
 ## Echt voorbeeld
 

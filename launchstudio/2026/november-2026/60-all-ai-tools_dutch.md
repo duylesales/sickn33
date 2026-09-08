@@ -16,7 +16,7 @@ Doelpersona: CIO / CTO
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CIO / CTO
   "datePublished": "2026-12-30",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/all-ai-tools"
+    "@id": "https://launchstudio.eu/nl/blog/all-ai-tools"
   }
 }
 </script>
@@ -59,7 +59,7 @@ In een gefragmenteerde omgeving moet de CISO de beveiliging van 15 verschillende
 
 Het ontkoppelen van 15 losse SaaS-tools en het migreren naar een centrale AI-architectuur vereist ervaren platform-engineering.
 
-[LaunchStudio](https://launchstudio.eu/en/), gedragen door de enterprise-infrastructuurexperts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, fungeert als uw strategische en technische consolidatiepartner:
+[LaunchStudio](https://launchstudio.eu/nl/), gedragen door de enterprise-infrastructuurexperts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, fungeert als uw strategische en technische consolidatiepartner:
 1. **De Infrastructuur-Audit:** Wij brengen uw versnipperde AI-landschap in kaart, identificeren dubbele licenties, berekenen verborgen API-opslagen en lokaliseren datalekken.
 2. **De Centrale Core Deployment:** Wij richten het centrale semantische geheugen (Supabase `pgvector`), de LLM Gateway en de Zero-Trust security perimeter direct in binnen uw eigen AWS- of Azure-omgeving.
 3. **Agentic Feature Migratie:** Wij bouwen de specifieke afdelingsworkflows (contractanalyse, marketing-copy) via modulaire orkestratie (LangChain) na op het nieuwe centrale fundament, waarna de externe SaaS-contracten één voor één kunnen worden opgezegd.

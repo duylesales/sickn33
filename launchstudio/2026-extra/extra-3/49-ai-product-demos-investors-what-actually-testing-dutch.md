@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-product-demos-investors-what-actually-testing"
+    "@id": "https://launchstudio.eu/nl/blog/ai-product-demos-investors-what-actually-testing"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Het begrijpen dat een demo voornamelijk visie en marktbeheersing test, en niet d
 
 **Niet onderscheiden wanneer technische due diligence daadwerkelijk zal plaatsvinden versus wanneer de demo plaatsvindt.** Weten dat een meer diepgaande technische beoordeling doorgaans later in een fondsenwervingsproces plaatsvindt, afzonderlijk van de initiële demo, helpt een oprichter om zijn eigen voorbereiding gepast te categoriseren – eerst de daadwerkelijke evaluatiecriteria van de demo aanpakken, terwijl er voor wordt gezorgd dat de technische verharding die in bredere richtlijnen wordt behandeld oprecht aanwezig is voordat de latere, meer technische due-diligence-fase daadwerkelijk aanbreekt.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters om investeerdersvoorbereiding correct te categoriseren – verhaallijn en demobereidheid naast, en niet in plaats van, de echte technische verharding die een later due-diligence-proces daadwerkelijk zal onderzoeken. Dit wordt ondersteund door Manifera's bredere ervaring in het ondersteunen van oprichters bij zowel de pitch als de daaropvolgende technische onderzoeksfasen van een kapitaalronde.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters om investeerdersvoorbereiding correct te categoriseren – verhaallijn en demobereidheid naast, en niet in plaats van, de echte technische verharding die een later due-diligence-proces daadwerkelijk zal onderzoeken. Dit wordt ondersteund door Manifera's bredere ervaring in het ondersteunen van oprichters bij zowel de pitch als de daaropvolgende technische onderzoeksfasen van een kapitaalronde.
 
-[Bereid u voor op wat de demo daadwerkelijk test, en afzonderlijk op wat daarna komt](https://launchstudio.eu/en/#contact) — de twee zijn gerelateerde maar oprecht verschillende voorbereidingstaken.
+[Bereid u voor op wat de demo daadwerkelijk test, en afzonderlijk op wat daarna komt](https://launchstudio.eu/nl/#contact) — de twee zijn gerelateerde maar oprecht verschillende voorbereidingstaken.
 
 ## Wat u daadwerkelijk moet doen in de kloof tussen een sterke demo en technische due diligence
 

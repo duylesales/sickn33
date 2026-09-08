@@ -56,7 +56,7 @@ Veel technische solo-oprichters blinken uit in het razendsnel genereren van de v
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Deze specifieke architectuursplitsing vormt het fundament van [LaunchStudio](https://launchstudio.eu/en/).
+Deze specifieke architectuursplitsing vormt het fundament van [LaunchStudio](https://launchstudio.eu/nl/).
 
 Gesteund door het enterprise softwareteam van [Manifera](https://www.manifera.com/) — met engineeringcapaciteit in Amsterdam, Singapore en Ho Chi Minhstad en meer dan 160 succesvol opgeleverde softwareprojecten — treden wij op als de "geharde backend" voor uw AI-native startup. U blijft uw UI met Cursor of Lovable op topsnelheid genereren en itereren. U draagt de codebase aan ons over, en wij verzorgen de complete "laatste mijl" engineering.
 
@@ -72,7 +72,7 @@ Dit is essentieel, wetende dat **45% van de met AI gegenereerde code** ernstige 
 - Trek de scheidslijn functioneel: alles wat betrekking heeft op multi-user data, geld of autorisatie hoort exclusief thuis in de geharde backend.
 - LaunchStudio levert de noodzakelijke backend-engineering om uw snelle AI-frontend te stabiliseren en veilig te lanceren.
 
-[Focus op uw productvisie. Laat ons vandaag nog uw beveiligde backend-infrastructuur bouwen](https://launchstudio.eu/en/#contact).
+[Focus op uw productvisie. Laat ons vandaag nog uw beveiligde backend-infrastructuur bouwen](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

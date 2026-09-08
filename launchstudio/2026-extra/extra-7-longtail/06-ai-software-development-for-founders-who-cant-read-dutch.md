@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
   "@type": "Article",
   "headline": "AI-softwareontwikkeling voor oprichters die de code van hun eigen tool niet kunnen lezen",
   "description": "AI-softwareontwikkeling stelt niet-technische oprichters in staat om te bouwen zonder code te schrijven, maar het betekent ook blind begroten. Dit is een echte kostenopbouw voor wat er daarna komt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-13",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-software-development-for-founders-who-cant-read" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-software-development-for-founders-who-cant-read" }
 }
 </script>
 
@@ -46,7 +46,7 @@ Een traditioneel softwarebureau zal doorgaans aanzienlijke delen van uw product 
 
 ## Optie 4: een vast-omvangelijke productiespecialist
 
-Hier past LaunchStudio, en de prijsstelling werkt anders omdat de scope anders is: in plaats van herbouwen is het werk specifiek de productielaag onder uw bestaande frontend — beveiliging, database, betalingen, hosting — geoffreerd als een vast getal na een korte technische beoordeling. Oprichters die het [Launch Ready-pakket](https://launchstudio.eu/en/#packages) gebruiken, betalen doorgaans tussen € 800 en € 3.500, geleverd in één tot drie weken, omdat het werk nauw afgebakend is tot wat daadwerkelijk ontbreekt in plaats van geprijsd alsof er nog niets bestond. LaunchStudio draait op Manifera's engineeringruggengraat — meer dan 11 jaar productiesoftware-ervaring, geen weekendhobbyproject — wat de kwaliteit hoog houdt terwijl de prijs een fractie blijft van bureautarieven. U kunt uw eigen cijfers doorrekenen via de [prijscalculator](https://launchstudio.eu/en/#calculator) voordat u met iemand praat, en het bredere engineeringtrackrecord erachter bekijken op [Manifera's pagina voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
+Hier past LaunchStudio, en de prijsstelling werkt anders omdat de scope anders is: in plaats van herbouwen is het werk specifiek de productielaag onder uw bestaande frontend — beveiliging, database, betalingen, hosting — geoffreerd als een vast getal na een korte technische beoordeling. Oprichters die het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages) gebruiken, betalen doorgaans tussen € 800 en € 3.500, geleverd in één tot drie weken, omdat het werk nauw afgebakend is tot wat daadwerkelijk ontbreekt in plaats van geprijsd alsof er nog niets bestond. LaunchStudio draait op Manifera's engineeringruggengraat — meer dan 11 jaar productiesoftware-ervaring, geen weekendhobbyproject — wat de kwaliteit hoog houdt terwijl de prijs een fractie blijft van bureautarieven. U kunt uw eigen cijfers doorrekenen via de [prijscalculator](https://launchstudio.eu/nl/#calculator) voordat u met iemand praat, en het bredere engineeringtrackrecord erachter bekijken op [Manifera's pagina voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Wat uw specifieke getal daadwerkelijk bepaalt
 

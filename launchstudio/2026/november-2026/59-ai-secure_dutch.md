@@ -16,7 +16,7 @@ Doelpersona: CISO / Beveiligingsarchitect
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CISO / Beveiligingsarchitect
   "datePublished": "2026-12-29",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-secure"
+    "@id": "https://launchstudio.eu/nl/blog/ai-secure"
   }
 }
 </script>
@@ -62,7 +62,7 @@ De uitgaande perimeter dwingt **Tool Use Validatie** af: de AI mag uitsluitend e
 
 Het bouwen van deze perimeters vereist diepgaande security-engineering. Vertrouwen op de standaard filters van modelleveranciers volstaat niet voor SOC2- of ISO 27001-audits.
 
-[LaunchStudio](https://launchstudio.eu/en/), opererend met de enterprise-standaarden van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt zwaarbeveiligde AI-platformen:
+[LaunchStudio](https://launchstudio.eu/nl/), opererend met de enterprise-standaarden van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt zwaarbeveiligde AI-platformen:
 1. **Netwerk-Geïsoleerde VPC Deployments:** Wij routeren uw data niet via openbare API's, maar koppelen Enterprise AI-eindpunten (Azure OpenAI, AWS Bedrock) via PrivateLinks direct aan uw eigen Virtual Private Cloud.
 2. **Deterministische Middleware:** Wij bouwen Zod-schemavalidaties, Presidio-proxies en LangChain tool-uitvoeringen in type-safe talen (TypeScript/Node.js of Python/FastAPI) voor absolute beveiliging.
 3. **Geautomatiseerde Red Teaming (CI/CD):** Met tools als Promptfoo bestoken we uw AI tijdens elke CI/CD-build met duizenden bekende prompt injections om de perimeters continu geautomatiseerd te testen.

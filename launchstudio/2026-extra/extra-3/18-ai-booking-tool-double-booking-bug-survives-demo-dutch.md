@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-booking-tool-double-booking-bug-survives-demo"
+    "@id": "https://launchstudio.eu/nl/blog/ai-booking-tool-double-booking-bug-survives-demo"
   }
 }
 </script>
@@ -53,9 +53,9 @@ De directe test: stuur twee vrijwel gelijktijdige boekingsverzoeken voor hetzelf
 
 Omdat de faalmodus een oprecht zichtbare, vaak gênante klantgerichte consequentie oplevert – twee klanten die beiden dezelfde kamer, hetzelfde afspraakslot of hetzelfde apparaat verwachten – en omdat het specifiek onzichtbaar is voor het exacte soort testen dat een solo-oprichter natuurlijk uitvoert, verdient dit bewuste, toegewijde testen in plaats van terloops te worden opgevangen als onderdeel van algemene kwaliteitsborging.
 
-[LaunchStudio](https://launchstudio.eu/en/) test boekings- en reserveringsstromen specifiek op exact deze gelijktijdigheidsfaalmodus als een standaard onderdeel van het verharden van elk product in de planningscategorie, inclusief de afstemmingscomplexiteit die reis- en horecaboeikingen daar nog bovenop voegen, ondersteund door Manifera's engineeringervaring in meerdere productieboekingssystemen.
+[LaunchStudio](https://launchstudio.eu/nl/) test boekings- en reserveringsstromen specifiek op exact deze gelijktijdigheidsfaalmodus als een standaard onderdeel van het verharden van elk product in de planningscategorie, inclusief de afstemmingscomplexiteit die reis- en horecaboeikingen daar nog bovenop voegen, ondersteund door Manifera's engineeringervaring in meerdere productieboekingssystemen.
 
-[Laat uw boekingsstroom testen tegen de omstandigheid die uw eigen testen niet kunnen reproduceren](https://launchstudio.eu/en/#calculator) — deze specifieke bug vereist iemand anders, of iets anders, om hem daadwerkelijk te vinden.
+[Laat uw boekingsstroom testen tegen de omstandigheid die uw eigen testen niet kunnen reproduceren](https://launchstudio.eu/nl/#calculator) — deze specifieke bug vereist iemand anders, of iets anders, om hem daadwerkelijk te vinden.
 
 ## Andere functies die dezelfde gelijktijdigheidsbug verbergen
 

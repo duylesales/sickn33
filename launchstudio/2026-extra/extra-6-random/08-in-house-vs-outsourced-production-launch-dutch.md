@@ -12,10 +12,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "In-house vs. uitbesteed: wie moet de productielancering van uw AI-prototype in handen nemen?",
   "description": "Een vergelijking van in-house medewerkers, freelancers en uitbestede productieteams voor oprichters die moeten beslissen wie hun ai development-prototype live brengt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/in-house-vs-outsourced-production-launch" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/in-house-vs-outsourced-production-launch" }
 }
 </script>
 
@@ -49,7 +49,7 @@ Niets van dit alles betekent dat uitbesteden altijd wint. Als u voorbij de aanva
 
 LaunchStudio bestaat specifiek voor het eerste probleem. We zijn geen freelancer en geen fulltime aanwerving — we zijn Manifera's team van 120+ technici, dezelfde groep die 160+ projecten heeft opgeleverd voor klanten zoals Vodafone en TNO, toegepast op een productielancering met vaste scope. Continuïteit is structureel in plaats van persoonlijk: als één technicus niet beschikbaar is, dragen de documentatie en het team eromheen het project verder, precies het faalscenario waar Iris in terechtkwam.
 
-Oprichters in Zuidoost-Azië die met onze Singapore-hub aan 100 Tras Street werken, stellen vaak dezelfde in-house-versus-uitbesteed-vraag vóór hun productiepush, en het antwoord draait meestal om hetzelfde onderscheid — is dit een eenmalig lanceringsprobleem of een doorlopend teamopbouwprobleem. Als u een idee wilt van wat een engagement met vaste scope daadwerkelijk kost ten opzichte van een aanwerving of een freelancer, geeft onze [calculator](https://launchstudio.eu/en/#calculator) een directe schatting. Voor oprichters die verder gevorderd zijn en een langere uitbestede relatie overwegen in plaats van een eenmalige lancering, dekt Manifera's praktijk voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) dat doorlopende model rechtstreeks.
+Oprichters in Zuidoost-Azië die met onze Singapore-hub aan 100 Tras Street werken, stellen vaak dezelfde in-house-versus-uitbesteed-vraag vóór hun productiepush, en het antwoord draait meestal om hetzelfde onderscheid — is dit een eenmalig lanceringsprobleem of een doorlopend teamopbouwprobleem. Als u een idee wilt van wat een engagement met vaste scope daadwerkelijk kost ten opzichte van een aanwerving of een freelancer, geeft onze [calculator](https://launchstudio.eu/nl/#calculator) een directe schatting. Voor oprichters die verder gevorderd zijn en een langere uitbestede relatie overwegen in plaats van een eenmalige lancering, dekt Manifera's praktijk voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) dat doorlopende model rechtstreeks.
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/founders-guide-gdpr-compliance-ai-applications"
+    "@id": "https://launchstudio.eu/nl/blog/founders-guide-gdpr-compliance-ai-applications"
   }
 }
 </script>
@@ -60,9 +60,9 @@ Niet-naleving van de AVG brengt aanzienlijke financiële en reputatierisico's me
 
 ## Compliance Inbouwen in de Architectuur
 
-[LaunchStudio](https://launchstudio.eu/en/), opererend vanuit Amsterdam met Nederland en Europa als kernmarkt, bouwt AVG-conforme dataverwerking standaard in bij elke productie-oplevering — geworteld in Herre Roelevinks cybersecurity-achtergrond en Manifera's ervaring met compliance-gevoelige opdrachtgevers zoals TNO.
+[LaunchStudio](https://launchstudio.eu/nl/), opererend vanuit Amsterdam met Nederland en Europa als kernmarkt, bouwt AVG-conforme dataverwerking standaard in bij elke productie-oplevering — geworteld in Herre Roelevinks cybersecurity-achtergrond en Manifera's ervaring met compliance-gevoelige opdrachtgevers zoals TNO.
 
-[Laat de AVG-inrichting van uw AI-app beoordelen](https://launchstudio.eu/en/#contact) vóórdat de inkoopafdeling van een potentiële klant vragen stelt die u niet met zekerheid kunt beantwoorden.
+[Laat de AVG-inrichting van uw AI-app beoordelen](https://launchstudio.eu/nl/#contact) vóórdat de inkoopafdeling van een potentiële klant vragen stelt die u niet met zekerheid kunt beantwoorden.
 
 ## Data Protection Impact Assessments (DPIA): Wanneer AI-Verwerking Dit Verplicht Stelt
 

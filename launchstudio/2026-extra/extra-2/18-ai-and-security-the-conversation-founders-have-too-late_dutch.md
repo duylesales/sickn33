@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-24",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-and-security-the-conversation-founders-have-too-late"
+    "@id": "https://launchstudio.eu/nl/blog/ai-and-security-the-conversation-founders-have-too-late"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Logbestanden zijn, door het ontwerp, bedoeld om alleen gelezen te worden wanneer
 
 ## Wat het sluiten van deze kloof daadwerkelijk omvat
 
-Een correcte herstelling auditeert elke log-regel in een codebase op gevoelige velden, verwijdert of maskeert alles wat niet in platte vorm gelogd zou moeten worden, en stelt een beleid vast – bij voorkeur afgedwongen via code-review of geautomatiseerde scanning – dat voorkomt dat hetzelfde patroon binnensluipt bij toekomstige functies. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort log-audit uit als onderdeel van haar beveiligingsbeoordelingsproces, ondersteund door Manifera's 11+ jaar ervaring met het afhandelen van gevoelige gegevens over gereguleerde industrieën.
+Een correcte herstelling auditeert elke log-regel in een codebase op gevoelige velden, verwijdert of maskeert alles wat niet in platte vorm gelogd zou moeten worden, en stelt een beleid vast – bij voorkeur afgedwongen via code-review of geautomatiseerde scanning – dat voorkomt dat hetzelfde patroon binnensluipt bij toekomstige functies. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort log-audit uit als onderdeel van haar beveiligingsbeoordelingsproces, ondersteund door Manifera's 11+ jaar ervaring met het afhandelen van gevoelige gegevens over gereguleerde industrieën.
 
 Manifera's log- en gegevensafhandelingsaudits worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met klantrelaties beheerd vanuit het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Een praktische auditmethode voor het vinden van gevoelige gegevens in uw eigen logboeken
 

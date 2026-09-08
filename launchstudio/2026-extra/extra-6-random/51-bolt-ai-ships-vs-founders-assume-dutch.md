@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Wat 'Bolt AI' Werkelijk Oplevert vs. Wat Oprichters Aannemen Dat Het Oplevert",
   "description": "Oprichters gaan er vaak van uit dat de scaffolding van Bolt AI productiewaardige inputvalidatie en foutafhandeling omvat. Meestal is dat niet zo. Dit is de kloof en hoe u die dicht.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/bolt-ai-ships-vs-founders-assume" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/bolt-ai-ships-vs-founders-assume" }
 }
 </script>
 
@@ -35,7 +35,7 @@ Dit gebeurt omdat inputvalidatie geen functie is die Bolt standaard toevoegt —
 
 De riskantste versie van deze kloof is geen UI-bug — het is stil gegevensverlies, precies omdat er niets zichtbaar kapot ging. Een betalingsbedrag dat niet correct wordt geparsed, een dubbel klantrecord dat het origineel overschrijft in plaats van samen te voegen, een bulkimport die rijen laat vallen zonder spoor: ze delen allemaal dezelfde onderliggende oorzaak, en ze zijn allemaal onzichtbaar totdat iemand merkt dat gegevens die zouden moeten bestaan, dat niet doen. Tegen de tijd dat een oprichter het opmerkt, is de ontbrekende informatie mogelijk al onherstelbaar.
 
-Onze technici, werkend vanuit Amsterdam als onderdeel van Manifera's bredere team van 120+ engineers, behandelen dit als een van de eerste dingen die gecontroleerd worden bij elke door AI gegenereerde codebase — niet omdat Bolt iets fout heeft gedaan, maar omdat "de functie werkt" en "de functie verwerkt slechte input veilig" twee afzonderlijke beweringen zijn, en alleen de oprichter kan specificeren welke van de twee daadwerkelijk nodig is. Als u een tweede mening wilt over wat uw eigen Bolt-build daadwerkelijk valideert versus wat het aanneemt, kunt u [een gratis beoordeling van uw prototype aanvragen](https://launchstudio.eu/en/#contact). Manifera's bredere technische praktijk, inclusief het [maatwerk softwareontwikkelingswerk](https://www.manifera.com/services/custom-software-development/), is precies rond dit soort productieharding voor door oprichters gebouwde prototypes opgebouwd.
+Onze technici, werkend vanuit Amsterdam als onderdeel van Manifera's bredere team van 120+ engineers, behandelen dit als een van de eerste dingen die gecontroleerd worden bij elke door AI gegenereerde codebase — niet omdat Bolt iets fout heeft gedaan, maar omdat "de functie werkt" en "de functie verwerkt slechte input veilig" twee afzonderlijke beweringen zijn, en alleen de oprichter kan specificeren welke van de twee daadwerkelijk nodig is. Als u een tweede mening wilt over wat uw eigen Bolt-build daadwerkelijk valideert versus wat het aanneemt, kunt u [een gratis beoordeling van uw prototype aanvragen](https://launchstudio.eu/nl/#contact). Manifera's bredere technische praktijk, inclusief het [maatwerk softwareontwikkelingswerk](https://www.manifera.com/services/custom-software-development/), is precies rond dit soort productieharding voor door oprichters gebouwde prototypes opgebouwd.
 
 ## Echt voorbeeld
 

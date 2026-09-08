@@ -41,7 +41,7 @@ Om als AI-bedrijf duurzaam te overleven, moet u een technologische en data-econo
 
 U moet maatwerk datapijplijnen ontwerpen die unieke, niet-publieke data verzamelen, opschonen, structureren en injecteren in het taalmodel vóórdat het model een antwoord formuleert. Deze geavanceerde architectuur heet **Retrieval-Augmented Generation (RAG)**, en het professioneel implementeren daarvan is serieuze, diepgaande software-engineering.
 
-De transitie van een kwetsbare Thin Wrapper naar een volwaardig Thick Platform vereist robuuste backend-engineering. Dit is exact waar AI-native founders samenwerken met [LaunchStudio](https://launchstudio.eu/en/). Gesteund door de diepgaande enterprise software-ervaring van [Manifera](https://www.manifera.com/) — met ruim 11 jaar productie-ervaring, 120+ senior ontwikkelaars en 160+ succesvolle projecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons softwarecentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — vervangen wij breekbare no-code workflows door robuuste, geharde datapijplijnen.
+De transitie van een kwetsbare Thin Wrapper naar een volwaardig Thick Platform vereist robuuste backend-engineering. Dit is exact waar AI-native founders samenwerken met [LaunchStudio](https://launchstudio.eu/nl/). Gesteund door de diepgaande enterprise software-ervaring van [Manifera](https://www.manifera.com/) — met ruim 11 jaar productie-ervaring, 120+ senior ontwikkelaars en 160+ succesvolle projecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons softwarecentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — vervangen wij breekbare no-code workflows door robuuste, geharde datapijplijnen.
 
 In plaats van puur een prompt door te sturen naar een modelprovider, voert onze maatwerk backend-architectuur een geavanceerde meerstaps-pipeline uit:
 
@@ -63,7 +63,7 @@ Stel uzelf één volstrekt eerlijke vraag: als OpenAI of Anthropic uw exacte fea
 
 De oplossing vereist zelden een complete herbouw vanaf de grond. Uw bestaande gebruikersinterface, onboarding-flow en Stripe-facturatie zijn doorgaans prima bruikbaar; wat ontbreekt is de data-infrastructuur onder de prompt.
 
-De pakketten van [LaunchStudio](https://launchstudio.eu/en/#packages) zijn speciaal ontworpen voor deze transitie — geprijsd vanaf € 800 voor gerichte architectuur-audits tot € 7.500+ voor complete RAG- en datapijplijn-implementaties, gerealiseerd binnen 1 tot 3 weken, tegen circa **20% van de tarieven van traditionele IT-adviesbureaus**. Wij laten uw frontend intact en bouwen de RAG- en data-ingestielaag onder de motorkap.
+De pakketten van [LaunchStudio](https://launchstudio.eu/nl/#packages) zijn speciaal ontworpen voor deze transitie — geprijsd vanaf € 800 voor gerichte architectuur-audits tot € 7.500+ voor complete RAG- en datapijplijn-implementaties, gerealiseerd binnen 1 tot 3 weken, tegen circa **20% van de tarieven van traditionele IT-adviesbureaus**. Wij laten uw frontend intact en bouwen de RAG- en data-ingestielaag onder de motorkap.
 
 ## Belangrijkste Inzichten
 

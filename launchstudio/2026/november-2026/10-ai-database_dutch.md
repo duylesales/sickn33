@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-11-10",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-database"
+    "@id": "https://launchstudio.eu/nl/blog/ai-database"
   }
 }
 </script>
@@ -92,7 +92,7 @@ RLS kent echter duidelijke grenzen:
 
 ## Van Directe Verbinding Naar Een Solide Productie-Architectuur
 
-[LaunchStudio](https://launchstudio.eu/en/) transformeert kwetsbare directe database-verbindingen systematisch naar veilige drielagige infrastructuren:
+[LaunchStudio](https://launchstudio.eu/nl/) transformeert kwetsbare directe database-verbindingen systematisch naar veilige drielagige infrastructuren:
 
 **Stap 1:** Audit van alle frontend database-queries en categorisering op gevoeligheid
 **Stap 2:** Aanmaken van server-side API-routes voor elke query-categorie
@@ -107,7 +107,7 @@ Deze transformatie is een van de meest gevraagde diensten voor [Manifera's](http
 
 Herre Roelevink, CEO van Manifera en LaunchStudio: *"Bij vrijwel elk beveiligingsincident dat we voor startups hebben onderzocht, was de oorzaak dezelfde: de AI-tool verbond de browser rechtstreeks met de database. De oplossing is altijd helder: plaats er een professionele serverlaag tussen."*
 
-[Vraag een gratis database-architectuurbeoordeling aan](https://launchstudio.eu/en/#contact).
+[Vraag een gratis database-architectuurbeoordeling aan](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

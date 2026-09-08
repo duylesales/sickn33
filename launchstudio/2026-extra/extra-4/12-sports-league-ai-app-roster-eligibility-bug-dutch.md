@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/sports-league-ai-app-roster-eligibility-bug"
+    "@id": "https://launchstudio.eu/nl/blog/sports-league-ai-app-roster-eligibility-bug"
   }
 }
 </script>
@@ -49,7 +49,7 @@ Het diepere probleem is dat geschiktheid niet één regel is – het zijn er mee
 
 Het op de juiste manier aanpakken hiervan vereist logica voor het indienen van opstellingen die een live validatiecontrole uitvoert tegen elke toegevoegde speler – het controleren van schorsingsdata, transferstatus en leeftijdsgroepregels tegen de specifieke competitie en wedstrijddag – en de inzending weigert met een specifieke reden als er iets mislukt. Het is geen grote functie in isolatie, maar het moet correct zitten tussen de spelersdatabase en de interface voor het bouwen van de opstelling. Dat is exact het soort integratiewerk dat gehaast wordt in een snelle AI-bouw. Achter LaunchStudio staat Manifera's team van meer dan 120 ervaren ingenieurs. Deze categorie van "de weergave is juist maar de handhaving niet"-bugs is er een die ze voortdurend zien in zeer verschillende sectoren – omdat het een patroon is in hoe prototypingtools gebouwd worden, en geen eenmalige fout.
 
-Manifera's ontwikkelingscentrum aan de Pho Quang Street in Ho Chi Minh-stad heeft dit soort backend-logica-werk afgehandeld voor een reeks klanten. Dezelfde strengheid geldt of de deadline nu een bedrijfsuitrol is of een aftrap op zaterdagochtend. Als u er niet zeker van bent of uw eigen app deze exacte kloof vertoont, [praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact) voordat uw competitie er voor u achter komt.
+Manifera's ontwikkelingscentrum aan de Pho Quang Street in Ho Chi Minh-stad heeft dit soort backend-logica-werk afgehandeld voor een reeks klanten. Dezelfde strengheid geldt of de deadline nu een bedrijfsuitrol is of een aftrap op zaterdagochtend. Als u er niet zeker van bent of uw eigen app deze exacte kloof vertoont, [praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) voordat uw competitie er voor u achter komt.
 
 ## Geschiktheid kan veranderen tussen indienen en aftrap
 

@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-29",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-in-it-security-why-founders-still-need-a-human-review"
+    "@id": "https://launchstudio.eu/nl/blog/ai-in-it-security-why-founders-still-need-a-human-review"
   }
 }
 </script>
@@ -55,11 +55,11 @@ Discussies over AI in IT-beveiliging hebben de neiging zich te richten op indruk
 
 ## Dit correct krijgen zonder het aanmelden te overcompliceren
 
-Een correcte herstelling balanceert betekenisvolle bescherming met een aanmeldervaring die oprechte gebruikers niet onnodig frustreert – duidelijke, specifieke wachtwoordvereisten die vooraf worden gecommuniceerd. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort gebalanceerd wachtwoordbeleid als onderdeel van haar uithardingswerk voor authenticatie, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van veilige, gebruikersvriendelijke aanmeldstromen.
+Een correcte herstelling balanceert betekenisvolle bescherming met een aanmeldervaring die oprechte gebruikers niet onnodig frustreert – duidelijke, specifieke wachtwoordvereisten die vooraf worden gecommuniceerd. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort gebalanceerd wachtwoordbeleid als onderdeel van haar uithardingswerk voor authenticatie, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van veilige, gebruikersvriendelijke aanmeldstromen.
 
 Manifera's implementatie van authenticatiebeleid wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Beschrijf uw product aan ons — we reageren binnen één werkdag](https://launchstudio.eu/en/#contact).
+[Beschrijf uw product aan ons — we reageren binnen één werkdag](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

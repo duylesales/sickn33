@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/recruitment-agency-ai-tool-candidate-data-retention"
+    "@id": "https://launchstudio.eu/nl/blog/recruitment-agency-ai-tool-candidate-data-retention"
   }
 }
 </script>
@@ -58,7 +58,7 @@ Onze ingenieurs hebben 160+ projecten geleverd voor enterprise-klanten, en gegev
 
 ## Dit is backend-architectuur, en geen UI-herontwerp
 
-Niets van dit bewaarwerk raakt aan hoe een recruiter van dag tot dag interactie heeft met de kandidaatdatabase. Het wordt geïmplementeerd als geplande backend-taken en regels op databaseniveau, aangebracht op de tool – Cursor, Lovable, Bolt – die oorspronkelijk de interface heeft gebouwd. [Stuur ons uw prototypelink](https://launchstudio.eu/en/#contact) en LaunchStudio kan u eerlijk vertellen of uw kandidaatdatabase deze kloof heeft voordat het een bevinding uit een audit wordt.
+Niets van dit bewaarwerk raakt aan hoe een recruiter van dag tot dag interactie heeft met de kandidaatdatabase. Het wordt geïmplementeerd als geplande backend-taken en regels op databaseniveau, aangebracht op de tool – Cursor, Lovable, Bolt – die oorspronkelijk de interface heeft gebouwd. [Stuur ons uw prototypelink](https://launchstudio.eu/nl/#contact) en LaunchStudio kan u eerlijk vertellen of uw kandidaatdatabase deze kloof heeft voordat het een bevinding uit een audit wordt.
 
 ## Een eerlijk "verwijderd"-logboek is beter dan een overdreven logboek
 

@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "De Privacykwesties Die AI-Native Oprichters Niet Zien Aankomen Totdat een Klant Ernaar Vraagt",
   "description": "De meeste AI-native oprichters kunnen geen basisvragen beantwoorden over wat hun AI-modelprovider bewaart van klantgegevens — totdat een klant het schriftelijk vraagt en de deal op het spel staat.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-privacy-issues-founders-dont-see-coming" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-privacy-issues-founders-dont-see-coming" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Dit is belangrijker dan het lijkt, omdat het antwoord niet alleen gaat over het 
 
 Dit is geen technische herbouw — het is huiswerk, gevolgd door een beslissing. Lees de specifieke gegevensbewaar- en gebruiksvoorwaarden voor de exacte AI-provider en het abonnement dat wordt gebruikt. Bevestig of er een optie is (vaak op betaalde of enterprise-tiers) om af te zien van gegevensbewaring of gebruik voor modeltraining. Beslis doelbewust of de huidige provider en het abonnement overeenkomen met de privacybeloften die het product aan zijn eigen klanten doet — en als dat niet zo is, wijzig dan het abonnement, wijzig de provider, of wijzig wat het product belooft.
 
-De technici van Manifera, werkend vanuit Ho Chi Minhstad, helpen AI-native oprichters routinematig bij precies dit soort privacybeoordeling op providerniveau als onderdeel van het voorbereiden van een product op echte klantcontrole — niet omdat de oplossing ingewikkeld is, maar omdat oprichters zich zelden bewust zijn van het bestaan van de vraag totdat deze rechtstreeks aan hen wordt gesteld. Als u zich voorbereidt om dit soort vraag zelfverzekerd te beantwoorden, kunt u [ons de link naar uw prototype sturen en wij geven u gratis advies](https://launchstudio.eu/en/#contact) over wat u eerst moet controleren. De pagina ['over ons'](https://www.manifera.com/about-us/) van Manifera behandelt de bredere compliance- en productiediscipline waar dit soort beoordeling binnen valt.
+De technici van Manifera, werkend vanuit Ho Chi Minhstad, helpen AI-native oprichters routinematig bij precies dit soort privacybeoordeling op providerniveau als onderdeel van het voorbereiden van een product op echte klantcontrole — niet omdat de oplossing ingewikkeld is, maar omdat oprichters zich zelden bewust zijn van het bestaan van de vraag totdat deze rechtstreeks aan hen wordt gesteld. Als u zich voorbereidt om dit soort vraag zelfverzekerd te beantwoorden, kunt u [ons de link naar uw prototype sturen en wij geven u gratis advies](https://launchstudio.eu/nl/#contact) over wat u eerst moet controleren. De pagina ['over ons'](https://www.manifera.com/about-us/) van Manifera behandelt de bredere compliance- en productiediscipline waar dit soort beoordeling binnen valt.
 
 ## Echt voorbeeld
 

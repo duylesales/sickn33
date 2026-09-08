@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-cost-forecasting-testing-doesnt-predict-monthly-bill"
+    "@id": "https://launchstudio.eu/nl/blog/ai-cost-forecasting-testing-doesnt-predict-monthly-bill"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Voorbij de algemene kloof in de "AI-softwareprijs" die elders in bredere richtli
 
 Het construeren van een bewust realistisch gebruiksscenario – niet uw eigen testpatroon, maar een aannemelijke schatting van hoe een daadwerkelijke klant het product gedurende een volledige maand zou gebruiken, inclusief redelijke schattingen voor invoerlengte en frequentie op basis van het daadwerkelijke doel van het product – en het berekenen van de kosten tegen dat scenario biedt een betekenisvol nauwkeurigere prognose dan simpelweg extrapoleren uit waarnemingen tijdens de ontwikkelperiode.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters bij het construeren van realistische, op gebruik gebaseerde kostenprognoses voordat ze zich verbinden aan een prijsstelling, waarbij specifiek wordt gecorrigeerd voor de kloof tussen ontwikkeling en echt gebruik die dit artikel beschrijft. Dit wordt ondersteund door Manifera's bredere ervaring in het helpen van oprichters om prijsmodellen af te stemmen op daadwerkelijke, duurzame unit economics.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters bij het construeren van realistische, op gebruik gebaseerde kostenprognoses voordat ze zich verbinden aan een prijsstelling, waarbij specifiek wordt gecorrigeerd voor de kloof tussen ontwikkeling en echt gebruik die dit artikel beschrijft. Dit wordt ondersteund door Manifera's bredere ervaring in het helpen van oprichters om prijsmodellen af te stemmen op daadwerkelijke, duurzame unit economics.
 
-[Krijg een kostenprognose gebaseerd op echte gebruikspatronen, en niet op ontwikkeltesten](https://launchstudio.eu/en/#calculator) — de kloof tussen de twee is meestal groter dan oprichters verwachten.
+[Krijg een kostenprognose gebaseerd op echte gebruikspatronen, en niet op ontwikkeltesten](https://launchstudio.eu/nl/#calculator) — de kloof tussen de twee is meestal groter dan oprichters verwachten.
 
 ## De gebruikspatronen die de meeste kostenprognoses missen
 

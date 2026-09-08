@@ -49,7 +49,7 @@ Een specifiek, veelvoorkomend ontwerppatroon illustreert dit gebrek aan systeemd
 
 Als technische solo-oprichter bent u uw onderneming gestart om een specifiek zakelijk probleem in de markt op te lossen, niet om uw nachten te verdoen aan het handmatig configureren van PostgreSQL-indexen, CORS-headers en Stripe-webhooks.
 
-Bij [LaunchStudio](https://launchstudio.eu/en/) hebben we deze fundamentele verschuiving vroegtijdig onderkend. Gesteund door [Manifera](https://www.manifera.com/) — een gerenommeerd software-ontwikkelingsbedrijf met ruim 11 jaar ervaring, opgericht in **2014** door **Herre Roelevink** — hebben we een engineeringdienst gebouwd die specifiek is ontworpen voor het AI-tijdperk.
+Bij [LaunchStudio](https://launchstudio.eu/nl/) hebben we deze fundamentele verschuiving vroegtijdig onderkend. Gesteund door [Manifera](https://www.manifera.com/) — een gerenommeerd software-ontwikkelingsbedrijf met ruim 11 jaar ervaring, opgericht in **2014** door **Herre Roelevink** — hebben we een engineeringdienst gebouwd die specifiek is ontworpen voor het AI-tijdperk.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -67,7 +67,7 @@ Deze taakverdeling is geen tijdelijk lapmiddel totdat AI "beter wordt". Het weer
 - 45% van de AI-gegenereerde codebases bevat ernstige beveiligingsgaten die professionele hardening vereisen vóór livegang.
 - LaunchStudio levert de noodzakelijke senior backend-engineering om met AI gebouwde applicaties veilig, schaalbaar en productieklaar te maken.
 
-[Spreek met een engineer die de werkelijkheid van AI-gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Spreek met een engineer die de werkelijkheid van AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

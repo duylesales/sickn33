@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-25",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/security-in-ai-generated-code-is-opt-in-not-automatic"
+    "@id": "https://launchstudio.eu/nl/blog/security-in-ai-generated-code-is-opt-in-not-automatic"
   }
 }
 </script>
@@ -53,11 +53,11 @@ De tool deed precies wat het gevraagd werd te doen – een geüpload bestand ops
 
 ## Wat het sluiten van deze kloof daadwerkelijk inhoudt
 
-Een correcte herstelling herbouwt de opslagtoegang om authenticatie te vereisen, vervangt eventuele openbare of raadbare URL's door ondertekende, tijdelijk beperkte URL's, en auditeert wat er al blootgesteld kan zijn geweest tijdens de periode dat de verkeerde configuratie live was. [LaunchStudio](https://launchstudio.eu/en/) controleert exact dit soort opslagconfiguratie als een standaardonderdeel van haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met op AWS, Firebase en Supabase gebaseerde opslagsystemen.
+Een correcte herstelling herbouwt de opslagtoegang om authenticatie te vereisen, vervangt eventuele openbare of raadbare URL's door ondertekende, tijdelijk beperkte URL's, en auditeert wat er al blootgesteld kan zijn geweest tijdens de periode dat de verkeerde configuratie live was. [LaunchStudio](https://launchstudio.eu/nl/) controleert exact dit soort opslagconfiguratie als een standaardonderdeel van haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met op AWS, Firebase en Supabase gebaseerde opslagsystemen.
 
 Manifera's beoordelingen van opslagbeveiliging worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Stuur de link van uw prototype door voor een gratis beoordeling](https://launchstudio.eu/en/#contact).
+[Stuur de link van uw prototype door voor een gratis beoordeling](https://launchstudio.eu/nl/#contact).
 
 ## Een checklist voor het auditeren van elke opslag-bucket die uw app gebruikt
 

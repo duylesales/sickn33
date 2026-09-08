@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Het acroniemenspiekbriefje dat elke niet-technische oprichter nodig heeft vóór een beveiligingsbeoordeling",
   "description": "Een spiekbriefje in gewone taal dat RLS, RBAC, JWT, CORS en de andere acroniemen ontcijfert die niet-technische oprichters horen tijdens een beveiligingsbeoordeling, met uitleg waarom elk ervan ertoe doet.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-28",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/acronym-cheat-sheet-security-review" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/acronym-cheat-sheet-security-review" }
 }
 </script>
 
@@ -45,7 +45,7 @@ Geen acroniem, maar het hoort op deze lijst thuis omdat het endemisch is in door
 
 Geen van deze termen is ingewikkeld zodra ze zijn uitgelegd. Het probleem is dat AI-codeertools ze zelden proactief aankaarten — ze melden niet "hé, hier wil je misschien RLS" tenzij u er specifiek naar vraagt, en de meeste oprichters weten niet dat ze ernaar moeten vragen. Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, zegt het onomwonden: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. We hebben elf jaar ervaring in precies dat." De vocabulaire kennen maakt u niet technisch — het stelt u in staat om de juiste vraag te stellen voordat een gat een lek wordt.
 
-De technici van LaunchStudio, werkzaam vanuit onder meer Amsterdam, doorlopen precies deze checklist — RLS, RBAC, JWT-afhandeling, CORS-configuratie en blootstelling van credentials — bij elke prototypebeoordeling. Als u een rondleiding door uw eigen app wilt in dezelfde gewone taal, [boek dan een gratis intakegesprek van 15 minuten](https://launchstudio.eu/en/#contact) en wij vertellen u welke van deze vijf termen daadwerkelijk op uw codebase van toepassing zijn. Voor een diepere blik op hoe deze principes opschalen naar enterprise-grade builds, zie [Manifera's bedrijfsachtergrond](https://www.manifera.com/about-us/).
+De technici van LaunchStudio, werkzaam vanuit onder meer Amsterdam, doorlopen precies deze checklist — RLS, RBAC, JWT-afhandeling, CORS-configuratie en blootstelling van credentials — bij elke prototypebeoordeling. Als u een rondleiding door uw eigen app wilt in dezelfde gewone taal, [boek dan een gratis intakegesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en wij vertellen u welke van deze vijf termen daadwerkelijk op uw codebase van toepassing zijn. Voor een diepere blik op hoe deze principes opschalen naar enterprise-grade builds, zie [Manifera's bedrijfsachtergrond](https://www.manifera.com/about-us/).
 
 ## Echt voorbeeld
 

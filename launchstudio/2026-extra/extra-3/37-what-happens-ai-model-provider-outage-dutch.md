@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-happens-ai-model-provider-outage"
+    "@id": "https://launchstudio.eu/nl/blog/what-happens-ai-model-provider-outage"
   }
 }
 </script>
@@ -57,9 +57,9 @@ De eerste keer dat een oprichter exact ontdekt hoe zijn product zich gedraagt ti
 
 Het bewust simuleren van een langdurige provider-storing – het richten van uw product op een bewust niet-reagerend eindpunt gedurende een langere testperiode in plaats van een enkele gesimuleerde storing – onthult hoe uw product zich daadwerkelijk gedraagt onder deze specifieke, langdurige omstandigheid. Dit in plaats van aan te nemen dat uw foutafhandeling per verzoek netjes meeschaalt naar een langere storing zonder dat ooit daadwerkelijk te controleren.
 
-[LaunchStudio](https://launchstudio.eu/en/) test specifiek op het gedrag bij langdurige provider-storingen als onderdeel van een bredere beoordeling van foutafhandeling, onderscheiden van testen op mislukte verzoeken. Dit zorgt ervoor dat producten eerlijk en netjes verslechteren in plaats van verwarrende fouten te herhalen gedurende een heel storingsvenster, ondersteund door Manifera's bredere ervaring in het ontwerpen van veerkracht tegen externe afhankelijkheden buiten de controle van een klant.
+[LaunchStudio](https://launchstudio.eu/nl/) test specifiek op het gedrag bij langdurige provider-storingen als onderdeel van een bredere beoordeling van foutafhandeling, onderscheiden van testen op mislukte verzoeken. Dit zorgt ervoor dat producten eerlijk en netjes verslechteren in plaats van verwarrende fouten te herhalen gedurende een heel storingsvenster, ondersteund door Manifera's bredere ervaring in het ontwerpen van veerkracht tegen externe afhankelijkheden buiten de controle van een klant.
 
-[Ontdek wat uw product daadwerkelijk doet tijdens een langdurige storing, voordat er een echte plaatsvindt](https://launchstudio.eu/en/#calculator) — dit is een afzonderlijke test van algemene foutafhandeling, en de meeste producten hebben deze nooit daadwerkelijk uitgevoerd.
+[Ontdek wat uw product daadwerkelijk doet tijdens een langdurige storing, voordat er een echte plaatsvindt](https://launchstudio.eu/nl/#calculator) — dit is een afzonderlijke test van algemene foutafhandeling, en de meeste producten hebben deze nooit daadwerkelijk uitgevoerd.
 
 ## Een draaiboek voor de reactie van een oprichter bij storingen: De eerste 15 minuten
 

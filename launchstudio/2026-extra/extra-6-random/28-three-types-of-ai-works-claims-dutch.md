@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "De drie soorten 'het werkt'-claims — en welke er echt toe doet",
   "description": "Een uitleg in drie categorieën van wat oprichters daadwerkelijk bedoelen als ze zeggen dat hun door AI gebouwde app 'werkt', en waarom de kloof daartussen stille productiestoringen veroorzaakt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/three-types-of-ai-works-claims" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/three-types-of-ai-works-claims" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Dit is de enige versie van de claim die daadwerkelijk ertoe doet voor een produc
 
 Het gevaarlijke deel van dit hele raamwerk is dat type één, twee en drie er van buitenaf identiek uitzien. Een oprichter die zelfverzekerd "het werkt" zegt, geeft geen enkel signaal over welke van de drie claims hij daadwerkelijk bedoelt, en vaak beseft de oprichter zelf niet welk type hij maakt. Dit is precies de kloof waar de engineers van LaunchStudio op getraind zijn om te zoeken tijdens een productiegereedheidsbeoordeling — niet "werkt dit," maar "welke versie van werken is daadwerkelijk geverifieerd, en wat is helemaal niet aangeraakt." Het team van meer dan 120 engineers van Manifera, met een vestiging in Singapore die oprichters in de hele regio bedient, benadert elke beoordeling door expliciet te testen voor wat type drie vereist, want dat is de enige versie die overeind blijft zodra echte klanten met echte accounttypes en echte gebruikspatronen arriveren.
 
-Heeft u recent "het werkt" gezegd over een functie en weet u niet zeker welk type u bedoelde, dan is die onzekerheid het waard om op te lossen voordat klanten het voor u oplossen. [Stuur ons de link naar uw prototype voor gratis advies](https://launchstudio.eu/en/#contact) over onder welk type "het werkt" uw app op dit moment daadwerkelijk opereert. Het team van Manifera voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) past dezelfde gestructureerde testdiscipline toe op enterprise-producten, waar de kostprijs van een onontdekte type-één-claim in een andere orde van grootte wordt gemeten.
+Heeft u recent "het werkt" gezegd over een functie en weet u niet zeker welk type u bedoelde, dan is die onzekerheid het waard om op te lossen voordat klanten het voor u oplossen. [Stuur ons de link naar uw prototype voor gratis advies](https://launchstudio.eu/nl/#contact) over onder welk type "het werkt" uw app op dit moment daadwerkelijk opereert. Het team van Manifera voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) past dezelfde gestructureerde testdiscipline toe op enterprise-producten, waar de kostprijs van een onontdekte type-één-claim in een andere orde van grootte wordt gemeten.
 
 ## Echt voorbeeld
 

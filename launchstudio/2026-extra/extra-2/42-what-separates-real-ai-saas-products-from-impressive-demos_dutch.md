@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-separates-real-ai-saas-products-from-impressive-demos"
+    "@id": "https://launchstudio.eu/nl/blog/what-separates-real-ai-saas-products-from-impressive-demos"
   }
 }
 </script>
@@ -51,11 +51,11 @@ De beste AI SaaS-producten en de meest indrukwekkende demo's van AI SaaS-product
 
 ## Dit correct krijgen zonder een boekingsfunctie te overcompliceren
 
-Een correcte herstelling stelt één consistente, expliciete tijdzonestandaard in voor hoe tijden intern worden opgeslagen (UTC is de standaard). Het converteert alleen op het punt van weergave naar welke zone relevant is voor een specifieke kijker, consistent toegepast over elk onderdeel van het systeem dat een geplande tijd aanraakt. [LaunchStudio](https://launchstudio.eu/en/) auditeert exact dit patroon als onderdeel van haar beoordeling van productiegereedheid voor plannings- en boekingsproducten, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van betrouwbare planningssystemen voor meerdere locaties.
+Een correcte herstelling stelt één consistente, expliciete tijdzonestandaard in voor hoe tijden intern worden opgeslagen (UTC is de standaard). Het converteert alleen op het punt van weergave naar welke zone relevant is voor een specifieke kijker, consistent toegepast over elk onderdeel van het systeem dat een geplande tijd aanraakt. [LaunchStudio](https://launchstudio.eu/nl/) auditeert exact dit patroon als onderdeel van haar beoordeling van productiegereedheid voor plannings- en boekingsproducten, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van betrouwbare planningssystemen voor meerdere locaties.
 
 Manifera's audits voor planning en tijdafhandeling worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

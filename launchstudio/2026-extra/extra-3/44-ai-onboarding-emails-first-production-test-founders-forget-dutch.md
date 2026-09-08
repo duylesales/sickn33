@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-onboarding-emails-first-production-test-founders-forget"
+    "@id": "https://launchstudio.eu/nl/blog/ai-onboarding-emails-first-production-test-founders-forget"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Omdat onboarding-e-mails arriveren tijdens het enkele hoogste vertrouwen-gevoeli
 
 Het meerdere keren aanmelden met bewust gevarieerde, onvolmaakte gegevens – een naam met ongebruikelijke karakters, een randgeval in e-mailadresindeling, een snelle annuleer-en-heraanmelding – en het observeren van de daadwerkelijke reeks e-mails die arriveert, in plaats van een enkele schone testaanmelding, brengt de kloven die dit artikel beschrijft aanzienlijk betrouwbaarder naar boven dan het gewone testen in één ronde dat de meeste oprichters van nature uitvoeren.
 
-[LaunchStudio](https://launchstudio.eu/en/) test onboarding-e-mailreeksen specifiek tegen gevarieerde, onvolmaakte aanmeldingsscenario's als onderdeel van een bredere beoordeling van lanceringvoorbereiding. Wij behandelen dit als kerninfrastructuur die dezelfde zorgvuldigheid verdient als elk ander klantgericht systeem, ondersteund door Manifera's bredere ervaring in het herkennen dat systemen voor de eerste indruk een onevenredig gewicht dragen ten opzichte van hun schijnbare technische eenvoud.
+[LaunchStudio](https://launchstudio.eu/nl/) test onboarding-e-mailreeksen specifiek tegen gevarieerde, onvolmaakte aanmeldingsscenario's als onderdeel van een bredere beoordeling van lanceringvoorbereiding. Wij behandelen dit als kerninfrastructuur die dezelfde zorgvuldigheid verdient als elk ander klantgericht systeem, ondersteund door Manifera's bredere ervaring in het herkennen dat systemen voor de eerste indruk een onevenredig gewicht dragen ten opzichte van hun schijnbare technische eenvoud.
 
-[Laat uw onboarding-reeks testen tegen echte, onvolmaakte aanmeldingspatronen](https://launchstudio.eu/en/#calculator) — dit krijgt vaak minder aandacht dan al het andere, ondanks dat het het meest uitmaakt.
+[Laat uw onboarding-reeks testen tegen echte, onvolmaakte aanmeldingspatronen](https://launchstudio.eu/nl/#calculator) — dit krijgt vaak minder aandacht dan al het andere, ondanks dat het het meest uitmaakt.
 
 ## Transactioneel of Marketing? Het onderscheid dat verandert wat er daadwerkelijk vereist is
 

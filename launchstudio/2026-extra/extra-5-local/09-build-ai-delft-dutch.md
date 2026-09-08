@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Hoe Delftse oprichters AI-producten bouwen zonder een engineeringteam",
   "description": "Hoe solo technische oprichters in Delft AI-producten bouwen zonder een engineeringteam in te huren, en waar die aanpak vastloopt zodra er echte gebruikers komen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/build-ai-delft" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/build-ai-delft" }
 }
 </script>
 
@@ -45,7 +45,7 @@ Niets hiervan zijn direct kennisgaten — de meeste technisch ingestelde opricht
 
 Dit is waar het model van LaunchStudio specifiek goed past bij het profiel van de Delftse technische oprichter: in plaats van een volledig engineeringteam in te huren, schakelen oprichters het team van Manifera in — meer dan 120 engineers met ruim 11 jaar productie-ervaring, mede gecoördineerd vanuit onze ontwikkelhub in Ho Chi Minhstad — voor de specifieke infrastructuurwerkzaamheden die buiten hun huidige capaciteit vallen, zonder het eigenaarschap van het product zelf op te geven. Het is dezelfde logica als het inschakelen van een gespecialiseerde aannemer voor het elektrawerk aan een verder zelfgebouwd huis: u draagt niet het hele project over, alleen het specifieke onderdeel dat oprecht gebaat is bij iemand die het elke dag doet. De [custom software development praktijk](https://www.manifera.com/services/custom-software-development/) van Manifera is gebouwd rond precies dit type gerichte engineeringtrajecten in plaats van langdurige personeelsverplichtingen.
 
-Voor een Delftse oprichter die probeert te bepalen welke onderdelen van zijn met Cursor gebouwde product dit type verharding nodig hebben, laten de [pakketopties van LaunchStudio](https://launchstudio.eu/en/#packages) zien wat er doorgaans is inbegrepen bij een productie-gereedheidsronde, afgestemd op het budget van een solo-oprichter in plaats van een enterprise-traject.
+Voor een Delftse oprichter die probeert te bepalen welke onderdelen van zijn met Cursor gebouwde product dit type verharding nodig hebben, laten de [pakketopties van LaunchStudio](https://launchstudio.eu/nl/#packages) zien wat er doorgaans is inbegrepen bij een productie-gereedheidsronde, afgestemd op het budget van een solo-oprichter in plaats van een enterprise-traject.
 
 ## Uw eigen uitrolproces evalueren: Een snelle zelftest
 

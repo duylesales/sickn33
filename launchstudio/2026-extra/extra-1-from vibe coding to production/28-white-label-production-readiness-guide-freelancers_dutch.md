@@ -29,9 +29,9 @@ De freelancer behoudt de primaire klantrelatie, scopegesprek, en levering van al
 
 Gegeven hoe consistent de specifieke patronen doorheen deze serie behandeld terugkeren over AI-gegenereerde code heen, levert een partner met toegewijde, aangetoonde ervaring in precies deze categorie — geen algemene backend-ontwikkelervaring, maar specifieke bekendheid met hoe door Lovable, Bolt, Cursor, en v0 gegenereerde codebases doorgaans afwijken van productievereisten — snellere, gerichtere resultaten dan een generalistische backend-partner die elke opdracht benadert zonder die specifieke patroonherkenning.
 
-[LaunchStudio](https://launchstudio.eu/en/) partnert met freelancers specifiek op de productiegereedheidsdimensies van AI-gegenereerde klantprototypes, geleverd onder jouw branding zodat de klantrelatie volledig van jou blijft, gesteund door Manifera's toegewijde ervaring met precies deze categorie codebase.
+[LaunchStudio](https://launchstudio.eu/nl/) partnert met freelancers specifiek op de productiegereedheidsdimensies van AI-gegenereerde klantprototypes, geleverd onder jouw branding zodat de klantrelatie volledig van jou blijft, gesteund door Manifera's toegewijde ervaring met precies deze categorie codebase.
 
-[Breid uit wat je AI-native klanten kunt bieden zonder te veranderen wat je persoonlijk bouwt](https://launchstudio.eu/en/#contact) — jouw expertise plus de onze, onder één klantrelatie.
+[Breid uit wat je AI-native klanten kunt bieden zonder te veranderen wat je persoonlijk bouwt](https://launchstudio.eu/nl/#contact) — jouw expertise plus de onze, onder één klantrelatie.
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelpersona: CTO / CISO
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CTO / CISO
   "datePublished": "2026-12-12",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-code-tool"
+    "@id": "https://launchstudio.eu/nl/blog/ai-code-tool"
   }
 }
 </script>
@@ -69,7 +69,7 @@ Voor streng gereguleerde sectoren (financiële sector, defensie, gezondheidszorg
 
 Het compliant maken van een engineeringteam vereist platform-engineering en handhaving:
 
-[LaunchStudio](https://launchstudio.eu/en/), ondersteund door de cybersecurity-experts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, beveiligt uw AI-ontwikkelcyclus:
+[LaunchStudio](https://launchstudio.eu/nl/), ondersteund door de cybersecurity-experts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, beveiligt uw AI-ontwikkelcyclus:
 1. **Tooling-Audits:** Wij identificeren en blokkeren niet-geautoriseerde schaduw-AI tools op netwerkniveau.
 2. **Enterprise Roll-out:** Wij configureren GitHub Copilot Enterprise met strikt beleid dat suggesties die matchen met openbare code fysiek blokkeert.
 3. **Pre-Commit Secret Scanning:** Wij richten git-hooks in (TruffleHog) die geheimen automatisch uit de code strippen *voordat* de AI ze kan indexeren.

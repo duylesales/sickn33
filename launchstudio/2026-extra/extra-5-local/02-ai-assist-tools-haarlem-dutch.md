@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI Assist-tools in Haarlem: Waar oprichters vastlopen na de demo",
   "description": "Waarom AI assist-tools niet-technische Haarlemse oprichters tot een overtuigende demo brengen, en de specifieke gaten die voorkomen dat de meeste van die demo's ooit een echt bedrijf worden.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-assist-tools-haarlem" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-assist-tools-haarlem" }
 }
 </script>
 
@@ -42,7 +42,7 @@ In onze ervaring bij het beoordelen van in Haarlem gebouwde prototypes keren ste
 
 Geen van deze punten is een dramatische technische fout. Het is de onopvallende productie-infrastructuur waar AI assist-tools niet voor zijn ontworpen, omdat de taak van de tool stopt bij "werkt de interface." Afzonderlijk klinkt elk gat klein — natuurlijk wilt u uiteindelijk live betaalsleutels, natuurlijk moet e-mail op een gegeven moment worden geconfigureerd. Opgehoopt leiden ze echter tot een product dat er in een demo voltooid uitziet, maar stilletjes faalt zodra een echte vreemde, met echt geld en echte verwachtingen, het probeert te gebruiken.
 
-LaunchStudio bestaat specifiek om die kloof te dichten zonder van oprichters te vragen ontwikkelaar te worden of de frontend die hun AI assist-tool al heeft gebouwd weg te gooien. Achter LaunchStudio staat het team van Manifera met meer dan 120 engineers, wier klantwerk enterprise-klanten omvat zoals Vodafone, TNO en Xpar Vision — hetzelfde team, werkend vanuit een kantoor aan Tras Street in Singapore in coördinatie met onze basis in Amsterdam, beoordeelt deze prototypes met dezelfde strengheid als elke enterprise-codebase. Als u twijfelt of uw eigen build deze gaten vertoont, geeft de [projectcalculator](https://launchstudio.eu/en/#calculator) van LaunchStudio een snelle indruk van de omvang en kosten voordat u zich ergens toe verplicht. Voor een breder overzicht van hoe Manifera productie-engineering aanpakt, bekijkt u de [bedrijfsachtergrond](https://www.manifera.com/about-us/).
+LaunchStudio bestaat specifiek om die kloof te dichten zonder van oprichters te vragen ontwikkelaar te worden of de frontend die hun AI assist-tool al heeft gebouwd weg te gooien. Achter LaunchStudio staat het team van Manifera met meer dan 120 engineers, wier klantwerk enterprise-klanten omvat zoals Vodafone, TNO en Xpar Vision — hetzelfde team, werkend vanuit een kantoor aan Tras Street in Singapore in coördinatie met onze basis in Amsterdam, beoordeelt deze prototypes met dezelfde strengheid als elke enterprise-codebase. Als u twijfelt of uw eigen build deze gaten vertoont, geeft de [projectcalculator](https://launchstudio.eu/nl/#calculator) van LaunchStudio een snelle indruk van de omvang en kosten voordat u zich ergens toe verplicht. Voor een breder overzicht van hoe Manifera productie-engineering aanpakt, bekijkt u de [bedrijfsachtergrond](https://www.manifera.com/about-us/).
 
 ## Wat "vastlopen na de demo" een Haarlemse oprichter daadwerkelijk kost
 

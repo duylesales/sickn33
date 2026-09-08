@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-generated-legal-text-still-need-human-lawyer"
+    "@id": "https://launchstudio.eu/nl/blog/ai-generated-legal-text-still-need-human-lawyer"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Een oprichter die de technische AVG-architectuurkloof heeft aangepakt die elders
 
 Het gebruiken van AI om een solide eerste concept te genereren is een oprecht redelijk, efficiënt uitgangspunt, aanzienlijk beter dan beginnen vanaf een volledig lege pagina. De stap die niet moet worden overgeslagen is het laten beoordelen van dat concept door een gekwalificeerde juridische professional, specifiek tegen uw daadwerkelijke, echte praktijken en de specifieke rechtssystemen waarin u opereert. Dit door de AI-uitvoer te behandelen als een concept dat verificatie vereist – exact dezelfde discipline die deze artikelenreeks doorgaans toepast op door AI gegenereerde code.
 
-[LaunchStudio](https://launchstudio.eu/en/) markeert deze kloof specifiek tijdens bredere lanceringvoorbereidingsgesprekken, waarbij het technische AVG-architectuurwerk van oprichters wordt verbonden met de afzonderlijke vraag of hun juridische documentatie dit nauwkeurig weerspiegelt. De uiteindelijke juridische beoordeling blijft echter de specifieke expertise van een gekwalificeerde jurist, afzonderlijk van Manifera's eigen op techniek gerichte omvang.
+[LaunchStudio](https://launchstudio.eu/nl/) markeert deze kloof specifiek tijdens bredere lanceringvoorbereidingsgesprekken, waarbij het technische AVG-architectuurwerk van oprichters wordt verbonden met de afzonderlijke vraag of hun juridische documentatie dit nauwkeurig weerspiegelt. De uiteindelijke juridische beoordeling blijft echter de specifieke expertise van een gekwalificeerde jurist, afzonderlijk van Manifera's eigen op techniek gerichte omvang.
 
-[Zorg ervoor dat uw juridische documenten daadwerkelijk overeenkomen met wat uw product doet](https://launchstudio.eu/en/#contact) — dezelfde "ziet er klaar uit, is niet geverifieerd"-kloof geldt hier ook.
+[Zorg ervoor dat uw juridische documenten daadwerkelijk overeenkomen met wat uw product doet](https://launchstudio.eu/nl/#contact) — dezelfde "ziet er klaar uit, is niet geverifieerd"-kloof geldt hier ook.
 
 ## Een controlelijst voor elk juridisch document dat een AI-model voor u opgesteld zou kunnen hebben
 

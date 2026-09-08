@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/wedding-planning-ai-tool-vendor-payment-splits"
+    "@id": "https://launchstudio.eu/nl/blog/wedding-planning-ai-tool-vendor-payment-splits"
   }
 }
 </script>
@@ -55,7 +55,7 @@ Een werkende oplossing vereist doorgaans:
 - Statustracking per toewijzing (in behandeling, gedeeltelijk betaald, volledig betaald) in plaats van één status per algehele transactie.
 - Een afstemmingsweergave waarmee een planner per bruiloft exact kan zien welke leveranciers nog openstaande saldi hebben tegen een specifieke aanbetaling.
 
-LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters voor exact dit soort herstellingen – het herstructureren van een betalingsdatamodel zonder een herbouw te vereisen van de met Lovable gebouwde interface die een oprichter en zijn vroege klanten al kennen. Manifera's hub in Singapore op Tras Street heeft ingenieurs met ervaring in de architectuur van betalingssystemen, geput uit werk voor financiële en enterprise-klanten. Dat is dezelfde vaardighedenset die hier wordt toegepast tegen een fractie van enterprise-prijzen. U kunt [LaunchStudio's proces van prototype tot productie bekijken](https://launchstudio.eu/en/#process) om te begrijpen hoe dit soort backend-herstructurering doorgaans wordt omvangt.
+LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters voor exact dit soort herstellingen – het herstructureren van een betalingsdatamodel zonder een herbouw te vereisen van de met Lovable gebouwde interface die een oprichter en zijn vroege klanten al kennen. Manifera's hub in Singapore op Tras Street heeft ingenieurs met ervaring in de architectuur van betalingssystemen, geput uit werk voor financiële en enterprise-klanten. Dat is dezelfde vaardighedenset die hier wordt toegepast tegen een fractie van enterprise-prijzen. U kunt [LaunchStudio's proces van prototype tot productie bekijken](https://launchstudio.eu/nl/#process) om te begrijpen hoe dit soort backend-herstructurering doorgaans wordt omvangt.
 
 ## Wat voorkomt dat leverancierstoewijzingen optellen tot meer dan de aanbetaling?
 

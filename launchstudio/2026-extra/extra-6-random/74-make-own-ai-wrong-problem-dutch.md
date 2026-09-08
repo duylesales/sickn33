@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Founders Who Want to 'Make Their Own AI' Are Usually Solving the Wrong Problem",
   "description": "Wanting to make your own AI feels like ambition, but for most founders it's a detour around a much simpler problem that off-the-shelf models already solve.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/make-own-ai-wrong-problem" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/make-own-ai-wrong-problem" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Het trainen van een eigen model is niet alleen duur in rekenkracht. Het is duur 
 
 Voordat u iets traint, is de eerlijke eerste vraag: is er daadwerkelijk geprobeerd of een kant-en-klaar model, met betere prompts, betere context en een goed ontworpen pipeline, tekortschiet? Voor de meeste oprichters is het antwoord nee — omdat de kant-en-klare optie nooit serieus is geprobeerd voordat het besluit werd genomen om zelf te gaan trainen. Prompt-engineering, het ophalen van relevante context, en een zorgvuldige omgang met randgevallen lossen het overgrote deel van "de AI is hier niet goed genoeg in"-problemen op, tegen een fractie van de kosten en tijd.
 
-LaunchStudio brengt de enterprise-grade engineering van Manifera naar de oprichterseconomie, en onderdeel van elk vroeg gesprek met een oprichter die "mijn eigen AI maken" nastreeft, is een botte realiteitscheck: is dit daadwerkelijk het snelste pad naar wat u nodig hebt, of is het het pad dat serieuzer aanvoelt? Ons team, waaronder engineers gevestigd in Singapore, heeft verschillende oprichters teruggebracht van een trainingsomweg naar een goed geëngineerde prompt- en routeringslaag die het echte probleem in dagen oploste. U kunt [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/en/#contact) voordat u weken vastlegt aan de verkeerde aanpak. Voor hoe Manifera dit soort engineeringwerk in de praktijk afbakent, zie [onze webapp-ontwikkelingsdiensten](https://www.manifera.com/services/web-app-develop/).
+LaunchStudio brengt de enterprise-grade engineering van Manifera naar de oprichterseconomie, en onderdeel van elk vroeg gesprek met een oprichter die "mijn eigen AI maken" nastreeft, is een botte realiteitscheck: is dit daadwerkelijk het snelste pad naar wat u nodig hebt, of is het het pad dat serieuzer aanvoelt? Ons team, waaronder engineers gevestigd in Singapore, heeft verschillende oprichters teruggebracht van een trainingsomweg naar een goed geëngineerde prompt- en routeringslaag die het echte probleem in dagen oploste. U kunt [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) voordat u weken vastlegt aan de verkeerde aanpak. Voor hoe Manifera dit soort engineeringwerk in de praktijk afbakent, zie [onze webapp-ontwikkelingsdiensten](https://www.manifera.com/services/web-app-develop/).
 
 ## Echt voorbeeld
 

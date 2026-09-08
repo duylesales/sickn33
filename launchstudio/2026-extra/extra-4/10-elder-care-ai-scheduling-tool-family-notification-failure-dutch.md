@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/elder-care-ai-scheduling-tool-family-notification-failure"
+    "@id": "https://launchstudio.eu/nl/blog/elder-care-ai-scheduling-tool-family-notification-failure"
   }
 }
 </script>
@@ -49,7 +49,7 @@ Een gemiste melding in een context van ouderenzorg is geen ongemak. Het is de kl
 
 Het op de juiste manier herstellen hiervan betekent het behandelen van elke mutatie in het schema – en niet alleen de initiële boeking – als een gebeurtenis die een melding kan triggeren, en het expliciet definiëren welke mutaties dat moeten doen. Een dienstwissel, een tijdswijziging, een annulering en een niet-verschijnen hebben elk een eigen meldingsregel nodig, in plaats van te vertrouwen op de oorspronkelijke boekingsbevestiging om elke toekomstige status van dat bezoek te dekken. Ons team, werkend vanuit LaunchStudio's kantoor in Amsterdam, bouwt dit als een gebeurtenisgestuurde laag die achter de plannings-UI zit. Zo bereikt elke wijziging in de status van een bezoek – ongeacht welk scherm of welke beheerdersactie het heeft getriggerd – betrouwbaar de familie.
 
-U kunt zien hoe dit soort beoordeling doorgaans werkt via [LaunchStudio's proces](https://launchstudio.eu/en/#process). En voor een gevoel van de engineeringstandaard op productieniveau erachter, omvat Manifera's [portfolio](https://www.manifera.com/portfolio/) werk voor gereguleerde, vertrouwenskritieke sectoren waar deze exacte discipline er toe doet.
+U kunt zien hoe dit soort beoordeling doorgaans werkt via [LaunchStudio's proces](https://launchstudio.eu/nl/#process). En voor een gevoel van de engineeringstandaard op productieniveau erachter, omvat Manifera's [portfolio](https://www.manifera.com/portfolio/) werk voor gereguleerde, vertrouwenskritieke sectoren waar deze exacte discipline er toe doet.
 
 ## Verzonden betekent niet ontvangen
 

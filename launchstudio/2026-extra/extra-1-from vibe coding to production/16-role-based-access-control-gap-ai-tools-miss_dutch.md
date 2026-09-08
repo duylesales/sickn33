@@ -33,9 +33,9 @@ De fix is architecturaal, niet cosmetisch: de server moet onafhankelijk de rol v
 
 Algemeen beveiligingstesten mist dit specifieke patroon soms omdat de applicatie, aan de oppervlakte, correct lijkt te gedragen — gewone gebruikers zien gewone weergaven, admins zien adminweergaven, precies zoals ontworpen. Het gat naar boven brengen vereist de specifieke test elders in deze serie beschreven: geldige credentials van een account met lagere rechten gebruiken, vervolgens bewust het verzoek wijzigen om een hoger recht te claimen, en bevestigen of de server het daadwerkelijk weigert of stilletjes toestaat.
 
-[LaunchStudio](https://launchstudio.eu/en/) test rolgebaseerde toegangscontrole op precies dit architectuurniveau — verifiëren dat de server onafhankelijk rollen bepaalt en afdwingt, niet alleen dat de interface correct rendert — gesteund door Manifera's cybersecuritygeïnformeerde engineeringpraktijken.
+[LaunchStudio](https://launchstudio.eu/nl/) test rolgebaseerde toegangscontrole op precies dit architectuurniveau — verifiëren dat de server onafhankelijk rollen bepaalt en afdwingt, niet alleen dat de interface correct rendert — gesteund door Manifera's cybersecuritygeïnformeerde engineeringpraktijken.
 
-[Laat jouw rolgebaseerde toegangscontrole testen waar het daadwerkelijk toe doet](https://launchstudio.eu/en/#calculator) — een correct ogend adminpaneel en een correct beveiligd paneel zijn niet dezelfde bewering.
+[Laat jouw rolgebaseerde toegangscontrole testen waar het daadwerkelijk toe doet](https://launchstudio.eu/nl/#calculator) — een correct ogend adminpaneel en een correct beveiligd paneel zijn niet dezelfde bewering.
 
 ## Echt voorbeeld
 

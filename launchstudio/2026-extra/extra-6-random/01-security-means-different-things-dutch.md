@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Waarom 'Beveiliging' voor u iets anders betekent dan voor uw AI-codeertool",
   "description": "Oprichters en AI-codeertools gebruiken het woord 'veilig' om twee volledig verschillende dingen te bedoelen. Dit is de kloof die door AI gebouwde apps kwetsbaar maakt, en hoe u die dicht.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/security-means-different-things" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/security-means-different-things" }
 }
 </script>
 
@@ -35,7 +35,7 @@ Wanneer u een AI-tool vertelt "zorg dat dit veilig is", hoort deze een instructi
 
 Dit is de kern van de mismatch. U denkt in termen van *uitkomsten* — niemand zou gegevens moeten zien die niet van hem of haar zijn. De tool denkt in termen van *instructies* — heb ik het letterlijke verzoek uitgevoerd. Totdat u expliciet vraagt om autorisatiecontroles aan de serverzijde voor elk gegevenstoegangspad, zullen de meeste door AI gegenereerde backends deze niet hebben, omdat niets in een typische prompt die beperking afdwingt.
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en onze technici vanuit Amsterdam zien deze exacte kloof in bijna elke door AI gegenereerde codebase die we beoordelen — een volledig werkend product met een gegevenstoegangsgat waar niemand een naam voor had bedacht. Als u een tweede paar ogen wilt voordat u er op de harde manier achter komt, kunt u [uw project beschrijven via ons proces](https://launchstudio.eu/en/#process) en dan vertellen wij u eerlijk wat er ontbreekt. Voor de onderliggende technische normen waaraan wij elke beoordeling toetsen, zie hoe [Manifera softwareontwikkeling op maat benadert](https://www.manifera.com/services/custom-software-development/).
+LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en onze technici vanuit Amsterdam zien deze exacte kloof in bijna elke door AI gegenereerde codebase die we beoordelen — een volledig werkend product met een gegevenstoegangsgat waar niemand een naam voor had bedacht. Als u een tweede paar ogen wilt voordat u er op de harde manier achter komt, kunt u [uw project beschrijven via ons proces](https://launchstudio.eu/nl/#process) en dan vertellen wij u eerlijk wat er ontbreekt. Voor de onderliggende technische normen waaraan wij elke beoordeling toetsen, zie hoe [Manifera softwareontwikkeling op maat benadert](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 

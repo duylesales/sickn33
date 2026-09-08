@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/background-job-queue-reliability-ai-apps"
+    "@id": "https://launchstudio.eu/nl/blog/background-job-queue-reliability-ai-apps"
   }
 }
 </script>
@@ -89,7 +89,7 @@ Niet elke achtergrondtaak heeft dezelfde strengheid nodig. Een taak die een mini
 
 Een snelle heuristiek die in de praktijk goed werkt: vraag voor elk taaktype "als dit nu stilletjes mislukt, zou ik er dan een sms over willen ontvangen voordat een klant het me vertelt?" Als het eerlijke antwoord ja is, hoort het thuis in de tweede categorie, en heeft het de volledige behandeling nodig – vertraging (backoff), dead-letter queue, waarschuwing, en een idempotentie-controle als het een echt zij-effect heeft. Als het antwoord een schouderophalen is, kan het eenvoudig blijven.
 
-Ons team, werkend vanuit het kantoor in Singapore dat oprichters in Zuidoost-Azië en daarbuiten bedient, vindt doorgaans dat oprichters deze lijst nooit daadwerkelijk hebben gemaakt – alles draait via dezelfde ongedifferentieerde wachtrij met dezelfde zwakke herhaallogica, ongeacht wat er daadwerkelijk op het spel staat als het mislukt. Het in kaart brengen daarvan is vaak de snelste manier om te weten waar het budget voor engineering het eerst aan moet worden uitgegeven. Als u niet zeker weet waar de wachtrij van uw eigen app staat, [bekijk wat een beoordeling van de productiebetrouwbaarheid omvat](https://launchstudio.eu/en/#process).
+Ons team, werkend vanuit het kantoor in Singapore dat oprichters in Zuidoost-Azië en daarbuiten bedient, vindt doorgaans dat oprichters deze lijst nooit daadwerkelijk hebben gemaakt – alles draait via dezelfde ongedifferentieerde wachtrij met dezelfde zwakke herhaallogica, ongeacht wat er daadwerkelijk op het spel staat als het mislukt. Het in kaart brengen daarvan is vaak de snelste manier om te weten waar het budget voor engineering het eerst aan moet worden uitgegeven. Als u niet zeker weet waar de wachtrij van uw eigen app staat, [bekijk wat een beoordeling van de productiebetrouwbaarheid omvat](https://launchstudio.eu/nl/#process).
 
 ## Echt voorbeeld
 

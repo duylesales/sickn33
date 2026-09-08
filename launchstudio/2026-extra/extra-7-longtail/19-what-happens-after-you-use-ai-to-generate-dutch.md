@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
   "@type": "Article",
   "headline": "Wat er gebeurt nadat u AI gebruikt om code te genereren voor een echt product",
   "description": "U gebruikt AI om code te genereren en krijgt snel een werkende app. Hier is een checklist voor wat er daarna gebeurt, zodra echte gebruikers, echte gegevens en echt geld daadwerkelijk betrokken zijn.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-09",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/what-happens-after-you-use-ai-to-generate-code-for-a-real-product" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/what-happens-after-you-use-ai-to-generate-code-for-a-real-product" }
 }
 </script>
 
@@ -50,7 +50,7 @@ Er is ook een timingvraag die het waard is om eerlijk over te zijn: is het beter
 
 Bèta-gebruikers die u persoonlijk mogen, testen voorzichtig. Ze gebruiken de app zoals u hem demonstreerde, in de volgorde die u verwacht, en ze vergeven kleine storingen omdat ze voor u duimen. Echte vreemden, zeker op enige schaal, doen niets van dit alles. Ze klikken dingen in onverwachte volgordes, dienen formulieren twee keer in uit ongeduld, en hebben nul context om een stille fout te vergeven — ze concluderen gewoon dat het product niet werkt en vertrekken. Dit is een groot deel van waarom 80% van de door AI gebouwde projecten nooit echte productie bereikt: niet omdat het kernidee of de codekwaliteit slecht was, maar omdat de kloof tussen "vriendelijke bètatest" en "echt gebruikersgedrag" nooit werd gedicht voor de lancering.
 
-Het engineeringteam van Manifera — dezelfde groep achter meer dan een decennium aan productiesoftware voor organisaties ver voorbij de oprichterswereld — beoordeelt precies deze lijst op door AI gegenereerde codebases als routinezaak, met de klantgerichte kant van dat werk gevestigd aan Herengracht 420 in Amsterdam. Als u AI hebt gebruikt om code te genereren voor iets waar u serieus over bent en u wilt een eerlijk oordeel over hoe het ervoor staat ten opzichte van deze checklist, [stuur ons uw prototypelink en krijg gratis advies](https://launchstudio.eu/en/#contact) voordat u op de harde manier ontdekt welke items ontbraken.
+Het engineeringteam van Manifera — dezelfde groep achter meer dan een decennium aan productiesoftware voor organisaties ver voorbij de oprichterswereld — beoordeelt precies deze lijst op door AI gegenereerde codebases als routinezaak, met de klantgerichte kant van dat werk gevestigd aan Herengracht 420 in Amsterdam. Als u AI hebt gebruikt om code te genereren voor iets waar u serieus over bent en u wilt een eerlijk oordeel over hoe het ervoor staat ten opzichte van deze checklist, [stuur ons uw prototypelink en krijg gratis advies](https://launchstudio.eu/nl/#contact) voordat u op de harde manier ontdekt welke items ontbraken.
 
 ## Wat het dichten van dit hiaat daadwerkelijk inhoudt
 

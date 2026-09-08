@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/websocket-vs-server-sent-events-realtime-ai"
+    "@id": "https://launchstudio.eu/nl/blog/websocket-vs-server-sent-events-realtime-ai"
   }
 }
 </script>
@@ -57,9 +57,9 @@ AI-codeertools zoals Lovable en Bolt grijpen soms automatisch naar het patroon d
 
 ## Deze Architectuurkeuze Vroegtijdig Goed Inrichten
 
-Het kiezen van de verkeerde realtime technologie is zelden fataal, maar introduceert onnodige schaalwrijving en operationele kosten die later duurder worden om terug te draaien. [LaunchStudio](https://launchstudio.eu/en/) controleert en optimaliseert realtime architecturen als standaard onderdeel van de productielancering, waarbij Manifera's full-stack engineeringervaring wordt ingezet om de juiste technologie exact af te stemmen op uw interactiepatroon.
+Het kiezen van de verkeerde realtime technologie is zelden fataal, maar introduceert onnodige schaalwrijving en operationele kosten die later duurder worden om terug te draaien. [LaunchStudio](https://launchstudio.eu/nl/) controleert en optimaliseert realtime architecturen als standaard onderdeel van de productielancering, waarbij Manifera's full-stack engineeringervaring wordt ingezet om de juiste technologie exact af te stemmen op uw interactiepatroon.
 
-[Laat uw realtime AI-architectuur beoordelen](https://launchstudio.eu/en/#contact).
+[Laat uw realtime AI-architectuur beoordelen](https://launchstudio.eu/nl/#contact).
 
 ## Herverbinding, Heartbeats en Backpressure: Details Die Beide Technologieën Raken
 

@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "The Unwritten Code Every AI Coding Tool Follows (and Why It's Not Yours)",
   "description": "Every AI coding tool has an unwritten code of defaults it falls back on at every ambiguous decision — and that code favors speed, not your caution.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/code-of-ai-unwritten-rules" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/code-of-ai-unwritten-rules" }
 }
 </script>
 
@@ -35,7 +35,7 @@ Het resultaat is een codebase die een filosofie weerspiegelt waarmee u nooit hee
 
 Eén bug is één bug — repareerbaar, ingeperkt, te vinden met genoeg testen. Een ongeschreven code die door uw hele codebase opereert is anders: het is niet één fout, het is een *patroon* van hetzelfde soort beslissing die tientallen keren is genomen, elk individueel onzichtbaar, elk individueel verdedigbaar als "nou, u heeft niets anders gezegd." Ze allemaal vinden vereist dat iemand specifiek naar het patroon gaat zoeken, niet alleen testen of functies werken — want elk van hen zal perfect lijken te werken.
 
-Onze engineers gevestigd in Amsterdam besteden een aanzienlijk deel van elke codebase-review aan het specifiek zoeken naar dit patroon — het opgebouwde spoor van minst-restrictieve standaarden die zijn gekozen bij elk punt dat uw prompt openliet. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en dit soort standaardaudit is precies de discipline die die ervaring meebrengt naar een review. U kunt [verkennen wat LaunchStudio daadwerkelijk doet](https://launchstudio.eu/en/) voordat u besluit of uw eigen app dit soort controle nodig heeft. Voor de bredere engineeringfilosofie erachter, zie [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
+Onze engineers gevestigd in Amsterdam besteden een aanzienlijk deel van elke codebase-review aan het specifiek zoeken naar dit patroon — het opgebouwde spoor van minst-restrictieve standaarden die zijn gekozen bij elk punt dat uw prompt openliet. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en dit soort standaardaudit is precies de discipline die die ervaring meebrengt naar een review. U kunt [verkennen wat LaunchStudio daadwerkelijk doet](https://launchstudio.eu/nl/) voordat u besluit of uw eigen app dit soort controle nodig heeft. Voor de bredere engineeringfilosofie erachter, zie [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
 
 ## Echt voorbeeld
 

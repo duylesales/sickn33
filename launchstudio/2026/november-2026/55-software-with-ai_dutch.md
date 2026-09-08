@@ -16,7 +16,7 @@ Doelpersona: SaaS Oprichter / VP of Product
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: SaaS Oprichter / VP of Product
   "datePublished": "2026-12-25",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/software-with-ai"
+    "@id": "https://launchstudio.eu/nl/blog/software-with-ai"
   }
 }
 </script>
@@ -64,7 +64,7 @@ AI-Native uitdagers gebruiken LLM Gateways (LiteLLM) en semantische caching (Red
 
 Heeft u een bestaand SaaS-platform, dan kunt u niet zomaar opnieuw beginnen: u heeft betalende klanten, complexe bedrijfslogica en een lopende exploitatie. Modernisering moet chirurgisch gebeuren.
 
-[LaunchStudio](https://launchstudio.eu/en/), gedragen door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, past het **Strangler Fig** patroon toe om bestaande software stapsgewijs te transformeren:
+[LaunchStudio](https://launchstudio.eu/nl/), gedragen door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, past het **Strangler Fig** patroon toe om bestaande software stapsgewijs te transformeren:
 1. **Vectoriseren van de Monoliet:** Wij plaatsen `pgvector` naast uw bestaande relationele database. Met Change Data Capture (CDC) pipelines zetten we historische data op de achtergrond om in vectoren voor directe semantische zoekkracht.
 2. **Generatieve UI Injectie:** Wij vervangen losse chatbots door de Vercel AI SDK, waarmee interactieve React-componenten direct in uw bestaande frontend worden gestreamd.
 3. **Agentic API Gateways:** Wij plaatsen een orkestratielaag (zoals LangChain) tussen uw bestaande REST-API's en de frontend: de AI vangt intenties op en stuurt uw bestaande backend-eindpunten autonoom aan.

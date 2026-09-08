@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Hoe u een slechte freelancer herkent voordat u de aanbetaling doet",
   "description": "Een praktische checklist voor niet-technische oprichters over hoe u een freelancer screent voordat u hem inhuurt voor werk aan een met AI gebouwde app, inclusief de ene vraag die onthult of hij zijn eigen code begrijpt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/spot-bad-freelancer-before-deposit" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/spot-bad-freelancer-before-deposit" }
 }
 </script>
 
@@ -43,7 +43,7 @@ Een freelancer die iets heeft gebouwd met AI-ondersteuning en het oprecht begrij
 
 Als een freelancer zakt voor de test "leg uw eigen code uit", is dat niet automatisch een reden om af te haken als het werk oprecht eenvoudig en laaginzet is. Maar voor alles wat betalingen, gebruikersgegevens of beveiliging raakt — het soort werk dat oprichters steeds vaker nodig hebben zodra een door AI gebouwd prototype echte klanten bedient — is het het waard om het bijna als een harde stop te behandelen. Het alternatief voor het gokken op een marktplaats-freelancer is werken met een team dat processen en verantwoording ingebouwd heeft, in plaats van het individuele oordeel van één persoon op die dag.
 
-LaunchStudio is specifiek gebouwd voor oprichters die precies dit gat hebben ervaren, of het volledig willen vermijden. In tegenstelling tot een solo-freelancer wordt LaunchStudio ondersteund door het team van meer dan 120 engineers van Manifera, met de Europese basis in Amsterdam, wat betekent geen enkel punt van falen en een trackrecord over 160+ opgeleverde projecten. Als u momenteel freelancers screent voor productiewerk en een tweede mening wilt voordat u zich vastlegt, [boek dan een gratis intro-gesprek van 15 minuten](https://launchstudio.eu/en/#contact) en vergelijk aantekeningen. De aanpak van [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera laat zien hoe verantwoorde, teamgebaseerde oplevering er op schaal uitziet — dezelfde standaard waar het waard is om elke individuele freelancer aan te houden.
+LaunchStudio is specifiek gebouwd voor oprichters die precies dit gat hebben ervaren, of het volledig willen vermijden. In tegenstelling tot een solo-freelancer wordt LaunchStudio ondersteund door het team van meer dan 120 engineers van Manifera, met de Europese basis in Amsterdam, wat betekent geen enkel punt van falen en een trackrecord over 160+ opgeleverde projecten. Als u momenteel freelancers screent voor productiewerk en een tweede mening wilt voordat u zich vastlegt, [boek dan een gratis intro-gesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en vergelijk aantekeningen. De aanpak van [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera laat zien hoe verantwoorde, teamgebaseerde oplevering er op schaal uitziet — dezelfde standaard waar het waard is om elke individuele freelancer aan te houden.
 
 ## Echt voorbeeld
 

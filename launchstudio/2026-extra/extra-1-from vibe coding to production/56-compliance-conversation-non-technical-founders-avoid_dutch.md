@@ -35,9 +35,9 @@ Precies dezelfde logica doorheen deze serie behandeld met betrekking tot beveili
 
 Ondanks zijn reputatie is dit gesprek voor een typisch vroege-fase AI-native SaaS-product doorgaans een begrensde, specifieke set vragen met concrete, uitvoerbare antwoorden — niet de uitgestrekte, dure juridische onderneming die het woord "compliance" soms impliceert. Het meeste van wat het daadwerkelijk vereist is architecturaal (doorheen deze serie behandeld) en leverancierconfiguratiewerk, geen uitgebreid maatwerk juridisch advies, vooral op de schaal van een solo founder of klein vroeg team.
 
-[LaunchStudio](https://launchstudio.eu/en/) voert precies dit compliancegesprek direct en concreet met elke founder die EU-persoonsgegevens verwerkt, en vertaalt het naar specifieke, uitvoerbare architecturale beslissingen in plaats van abstracte juridische taal, gesteund door Manifera's compliancebewuste engineeringcultuur gevormd door klanten zoals TNO.
+[LaunchStudio](https://launchstudio.eu/nl/) voert precies dit compliancegesprek direct en concreet met elke founder die EU-persoonsgegevens verwerkt, en vertaalt het naar specifieke, uitvoerbare architecturale beslissingen in plaats van abstracte juridische taal, gesteund door Manifera's compliancebewuste engineeringcultuur gevormd door klanten zoals TNO.
 
-[Voer dit gesprek nu, terwijl het nog simpel is](https://launchstudio.eu/en/#contact) — het wordt gecompliceerder, niet minder, hoe langer je wacht.
+[Voer dit gesprek nu, terwijl het nog simpel is](https://launchstudio.eu/nl/#contact) — het wordt gecompliceerder, niet minder, hoe langer je wacht.
 
 ## Echt voorbeeld
 

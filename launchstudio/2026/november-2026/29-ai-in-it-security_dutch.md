@@ -16,7 +16,7 @@ Doelpersona: B2B SaaS-Oprichter / CTO
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: B2B SaaS-Oprichter / CTO
   "datePublished": "2026-11-29",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-in-it-security"
+    "@id": "https://launchstudio.eu/nl/blog/ai-in-it-security"
   }
 }
 </script>
@@ -60,7 +60,7 @@ Wanneer een enterprise security-team uw software inspecteert, zoeken zij specifi
 
 Slagen voor een CISO-audit vereist defensieve software-engineering die geautomatiseerde AI-codetools onmogelijk kunnen leveren.
 
-[LaunchStudio](https://launchstudio.eu/en/) overbrugt deze kloof voor B2B-oprichters. Gesteund door de cybersecurity-ervaring van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink maken wij AI-applicaties compliant met strenge standaarden zoals SOC2, ISO 27001 en AVG/HIPAA:
+[LaunchStudio](https://launchstudio.eu/nl/) overbrugt deze kloof voor B2B-oprichters. Gesteund door de cybersecurity-ervaring van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink maken wij AI-applicaties compliant met strenge standaarden zoals SOC2, ISO 27001 en AVG/HIPAA:
 1. **Netwerkisolatie:** Verplaatsen van de database en backend naar een Virtual Private Cloud (VPC), afgeschermd van het publieke internet.
 2. **Data Loss Prevention (DLP) Middleware:** Server-side inspectie die automatisch persoonsgegevens (PII) en financiële data maskeert vóór verzending naar het AI-model.
 3. **Onveranderlijke Audit-Trails:** Logging van elke prompt, modelrespons en datawijziging voor compliance-rapportages.

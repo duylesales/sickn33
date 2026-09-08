@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "De AI-beveiligingsproblemen die oprichters alleen ontdekken via een bugmelding",
   "description": "Sommige AI-beveiligingsproblemen komen nooit naar boven tijdens het testen — ze komen naar boven in de bugmelding van een vreemde. Dit is wat het daadwerkelijk kost om ze in elke fase op te lossen, ervoor of erna.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-11",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/the-ai-security-issues-founders-only-discover-from" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/the-ai-security-issues-founders-only-discover-from" }
 }
 </script>
 
@@ -56,7 +56,7 @@ AI-codeertools bouwen voor de paden die een oprichter daadwerkelijk test, en opr
 
 Dit is ook waarom technische solo-oprichters, specifiek, soms trager zijn om deze meldingen te onderzoeken dan niet-technische oprichters. Een technische oprichter leest de melding, werpt een blik op de relevante code, ziet niets syntactisch duidelijk fout, en sluit het ticket als niet-reproduceerbaar. De code is niet syntactisch fout — het is logisch onvolledig, mist een controle die nooit in de eerste plaats werd geschreven, wat niet naar boven komt als een fout wanneer u aan het scannen bent op een fout.
 
-LaunchStudio brengt Manifera's engineering op ondernemingsniveau — dezelfde standaard die wordt gebruikt bij meer dan 160 opgeleverde projecten — terug naar budgetten van oprichtersomvang, met een kantoor aan de Herengracht 420 in Amsterdam als Europees aanspreekpunt voor precies dit soort beoordeling. Als u deze problemen liever op uw eigen voorwaarden vindt dan op een bugmelding te wachten, kunt u [zien wat een Launch Ready-beveiligingsronde kost voor uw specifieke app](https://launchstudio.eu/en/#packages), en meer lezen over [het team achter die engineeringstandaard](https://www.manifera.com/about-us/).
+LaunchStudio brengt Manifera's engineering op ondernemingsniveau — dezelfde standaard die wordt gebruikt bij meer dan 160 opgeleverde projecten — terug naar budgetten van oprichtersomvang, met een kantoor aan de Herengracht 420 in Amsterdam als Europees aanspreekpunt voor precies dit soort beoordeling. Als u deze problemen liever op uw eigen voorwaarden vindt dan op een bugmelding te wachten, kunt u [zien wat een Launch Ready-beveiligingsronde kost voor uw specifieke app](https://launchstudio.eu/nl/#packages), en meer lezen over [het team achter die engineeringstandaard](https://www.manifera.com/about-us/).
 
 ## Echt voorbeeld
 

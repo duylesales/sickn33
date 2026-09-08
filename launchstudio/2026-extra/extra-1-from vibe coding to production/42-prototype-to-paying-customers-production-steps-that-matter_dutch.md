@@ -35,9 +35,9 @@ Founders die de complete checklist doorheen deze serie behandeld onder ogen zien
 
 Deze smallere lijst is geen permanente vervanging voor de volledige checklist — het is specifiek gekalibreerd naar het laagste-inzet-moment (jouw allereerste klanten) en moet uitbreiden richting de complete checklist naarmate jouw klantenaantal, omzet, en datavoetafdruk groeien, precies zoals behandeld in de begeleiding van deze serie over de specifieke risico's die schalen met groei voor MVP-naar-SaaS-founders.
 
-[LaunchStudio](https://launchstudio.eu/en/) scopet opdrachten specifiek rond precies deze praktische drempel voor founders die hun eerste betalende klanten naderen, en helpt vervolgens dekking uit te breiden zodra groei het rechtvaardigt, gesteund door Manifera's engineeringervaring over founders in elke fase van precies deze reis.
+[LaunchStudio](https://launchstudio.eu/nl/) scopet opdrachten specifiek rond precies deze praktische drempel voor founders die hun eerste betalende klanten naderen, en helpt vervolgens dekking uit te breiden zodra groei het rechtvaardigt, gesteund door Manifera's engineeringervaring over founders in elke fase van precies deze reis.
 
-[Laat specifiek scopen voor wat jouw eerste betalende klant daadwerkelijk waar moet hebben](https://launchstudio.eu/en/#calculator) — niet de volledige checklist, het praktische minimum dat er nu toe doet.
+[Laat specifiek scopen voor wat jouw eerste betalende klant daadwerkelijk waar moet hebben](https://launchstudio.eu/nl/#calculator) — niet de volledige checklist, het praktische minimum dat er nu toe doet.
 
 ## Echt voorbeeld
 

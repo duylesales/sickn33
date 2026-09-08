@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-28",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/is-your-ai-generated-tool-actually-ready-for-paying-customers"
+    "@id": "https://launchstudio.eu/nl/blog/is-your-ai-generated-tool-actually-ready-for-paying-customers"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Een gemeenschaps- of journalfunctie in een mentaal-welzijn-gerelateerde app draa
 
 ## Wat het herstellen hiervan daadwerkelijk inhoudt
 
-Een correcte herstelling voegt op de juiste manier gecalibreerde bot-detectie en snelheidsbeperkingen toe aan open registratie- en plaatsingsfuncties. Sterk genoeg om geautomatiseerd misbruik betekenisvol af te schrikken, zonder zoveel wrijving toe te voegen dat het de oprechte, kwetsbare gebruikers ontmoedigt die de functie daadwerkelijk gebouwd was om te ondersteunen. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort gecalibreerde bescherming als onderdeel van haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van gemeenschaps- en door gebruikers gegenereerde inhoudsfuncties op schaal.
+Een correcte herstelling voegt op de juiste manier gecalibreerde bot-detectie en snelheidsbeperkingen toe aan open registratie- en plaatsingsfuncties. Sterk genoeg om geautomatiseerd misbruik betekenisvol af te schrikken, zonder zoveel wrijving toe te voegen dat het de oprechte, kwetsbare gebruikers ontmoedigt die de functie daadwerkelijk gebouwd was om te ondersteunen. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort gecalibreerde bescherming als onderdeel van haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van gemeenschaps- en door gebruikers gegenereerde inhoudsfuncties op schaal.
 
 Manifera's engineering voor misbruikpreventie wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Plan een gratis introductiegesprek van 15 minuten](https://launchstudio.eu/en/#contact).
+[Plan een gratis introductiegesprek van 15 minuten](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

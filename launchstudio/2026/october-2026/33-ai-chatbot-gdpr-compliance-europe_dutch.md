@@ -55,13 +55,13 @@ Bovendien beschermt deze masking-laag u tegen uw eigen interne logging- en monit
 
 Het inrichten van Europese data-residency, het opstellen van zakelijke verwerkersovereenkomsten en het programmeren van PII-masking middleware vereist diepgaande enterprise backend-software-engineering. Als digitaal bureau of startup kunt u niet leunen op basale no-code koppelingen om strenge enterprise IT-audits te doorstaan — en **80% van de met AI gebouwde projecten** faalt exact op deze laatste deployment-fase.
 
-Dit is waar [LaunchStudio](https://launchstudio.eu/en/) uw compliance- en engineeringpartner wordt.
+Dit is waar [LaunchStudio](https://launchstudio.eu/nl/) uw compliance- en engineeringpartner wordt.
 
 Gesteund door de software-veteranen van [Manifera](https://www.manifera.com/) — met ruim 11 jaar enterprise-ervaring, meer dan 120 fulltime senior engineers en 160+ succesvolle softwareprojecten voor multinationals zoals Vodafone, TNO en CFLW — implementeert LaunchStudio kogelvrije AI-infrastructuren vanuit onze hubs in ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street in Singapore** en ons centrale ontwikkelcentrum in **Ho Chi Minhstad, Vietnam**.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Wanneer u met ons samenwerkt, verpakken wij uw AI-chatbot in een onbreekbare compliance-architectuur. Wij richten uw databases exclusief in binnen de EU, sluiten de ZDR-verwerkersovereenkomsten af, bouwen de realtime PII-masking middleware en programmeren de geautomatiseerde verwijderingsroutes voor het Recht op Gegevenswissing, inclusief cascading logic over alle tabellen en analytics-pijplijnen. Wij leveren het complete technische fundament waarmee u met trots en zekerheid kunt verkopen aan Europese enterprise-organisaties — zie onze [service-pakketten](https://launchstudio.eu/en/#packages) voor heldere scopes en vaste projectprijzen.
+Wanneer u met ons samenwerkt, verpakken wij uw AI-chatbot in een onbreekbare compliance-architectuur. Wij richten uw databases exclusief in binnen de EU, sluiten de ZDR-verwerkersovereenkomsten af, bouwen de realtime PII-masking middleware en programmeren de geautomatiseerde verwijderingsroutes voor het Recht op Gegevenswissing, inclusief cascading logic over alle tabellen en analytics-pijplijnen. Wij leveren het complete technische fundament waarmee u met trots en zekerheid kunt verkopen aan Europese enterprise-organisaties — zie onze [service-pakketten](https://launchstudio.eu/nl/#packages) voor heldere scopes en vaste projectprijzen.
 
 ## Wat U Moet Controleren Vóór Uw Volgende Enterprise Demo
 
@@ -82,7 +82,7 @@ Als het antwoord op een van deze vijf punten twijfelachtig is, is dat uw signaal
 - Het Recht op Gegevenswissing vereist geautomatiseerde cascading verwijderingsroutes en traceerbaar gedocumenteerde audittrails voor compliance-officers.
 - LaunchStudio levert de senior enterprise software-engineering om uw AI-chatbot binnen 1 tot 3 weken 100% AVG-conform op te leveren voor circa 20% van de traditionele bureaukosten.
 
-[Lanceer uw Europese AI chatbot met vol vertrouwen. Partner vandaag met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Lanceer uw Europese AI chatbot met vol vertrouwen. Partner vandaag met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

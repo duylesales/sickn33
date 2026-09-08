@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Waarom 'alle AI-tools'-overzichtsartikelen zinloos zijn voor oprichters die daadwerkelijk iets bouwen",
   "description": "Een opiniestuk over waarom generieke 'beste AI-tools'-overzichtsartikelen, gerangschikt op populariteit, oprichters in de steek laten die een tool nodig hebben die past bij de specifieke technische eisen van hun product.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/all-ai-tools-roundup-useless" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/all-ai-tools-roundup-useless" }
 }
 </script>
 
@@ -38,7 +38,7 @@ De juiste vraag was nooit "welke tool is het beste" — het was altijd "welke to
 
 Geen van deze vragen heeft een op populariteit gerangschikt antwoord. Ze hebben een "hangt af van uw product"-antwoord, en dat is precies het soort antwoord dat een listicle-format niet kan geven.
 
-LaunchStudio opereert als de productietak van Manifera, een 11 jaar oud softwareontwikkelingsbedrijf dat meer dan 160 projecten heeft opgeleverd voor klanten als Vodafone en TNO, en een deel van wat die ervaring oprichters oplevert, is een eerlijk antwoord over toolfit in plaats van een gerangschikte lijst. Ons team, inclusief het Amsterdamse kantoor dat dienstdoet als het Europese hoofdkwartier van LaunchStudio, heeft oprichters een tool zien kiezen uit een overzicht en enkele maanden later tegen een muur zien aanlopen die een gesprek van vijf minuten van tevoren had kunnen signaleren. Kiest u op dit moment tussen tools, [boek dan een gratis intro-gesprek van 15 minuten](https://launchstudio.eu/en/#process) voordat u zich vastlegt op een tool op basis van een ranking die u niet kunt verifiëren. Het eigen [portfolio](https://www.manifera.com/portfolio/) van Manifera laat de reikwijdte aan technische eisen zien — van eenvoudige sites tot complexe real-time systemen — die "één beste tool" om te beginnen al een betekenisloos idee maken.
+LaunchStudio opereert als de productietak van Manifera, een 11 jaar oud softwareontwikkelingsbedrijf dat meer dan 160 projecten heeft opgeleverd voor klanten als Vodafone en TNO, en een deel van wat die ervaring oprichters oplevert, is een eerlijk antwoord over toolfit in plaats van een gerangschikte lijst. Ons team, inclusief het Amsterdamse kantoor dat dienstdoet als het Europese hoofdkwartier van LaunchStudio, heeft oprichters een tool zien kiezen uit een overzicht en enkele maanden later tegen een muur zien aanlopen die een gesprek van vijf minuten van tevoren had kunnen signaleren. Kiest u op dit moment tussen tools, [boek dan een gratis intro-gesprek van 15 minuten](https://launchstudio.eu/nl/#process) voordat u zich vastlegt op een tool op basis van een ranking die u niet kunt verifiëren. Het eigen [portfolio](https://www.manifera.com/portfolio/) van Manifera laat de reikwijdte aan technische eisen zien — van eenvoudige sites tot complexe real-time systemen — die "één beste tool" om te beginnen al een betekenisloos idee maken.
 
 ## Echt voorbeeld
 

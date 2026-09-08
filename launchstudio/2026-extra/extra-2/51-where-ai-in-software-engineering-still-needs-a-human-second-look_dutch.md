@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-08-02",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/where-ai-in-software-engineering-still-needs-a-human-second-look"
+    "@id": "https://launchstudio.eu/nl/blog/where-ai-in-software-engineering-still-needs-a-human-second-look"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Oprichters zonder beveiligingsachtergrond associëren "gehashed" redelijkerwijs 
 
 ## Wat het op de juiste manier upgraden hiervan inhoudt
 
-Een correcte herstelling vervangt een verouderd hash-algoritme door een modern, speciaal gebouwd algoritme (zoals bcrypt, scrypt, of Argon2id), en migreert alle bestaande opgeslagen hashes zorgvuldig zonder dat gebruikers verstoord worden door verplicht hun wachtwoord te herstellen. [LaunchStudio](https://launchstudio.eu/en/) controleert op exact dit patroon als onderdeel van haar beoordeling van authenticatiebeveiliging, ondersteund door Manifera's 11+ jaar ervaring met moderne cryptografische praktijken.
+Een correcte herstelling vervangt een verouderd hash-algoritme door een modern, speciaal gebouwd algoritme (zoals bcrypt, scrypt, of Argon2id), en migreert alle bestaande opgeslagen hashes zorgvuldig zonder dat gebruikers verstoord worden door verplicht hun wachtwoord te herstellen. [LaunchStudio](https://launchstudio.eu/nl/) controleert op exact dit patroon als onderdeel van haar beoordeling van authenticatiebeveiliging, ondersteund door Manifera's 11+ jaar ervaring met moderne cryptografische praktijken.
 
 Manifera's beoordelingen van cryptografie en authenticatie worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

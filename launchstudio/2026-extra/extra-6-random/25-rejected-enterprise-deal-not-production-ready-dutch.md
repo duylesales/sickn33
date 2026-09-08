@@ -12,10 +12,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "De anatomie van een afgewezen zakelijke deal: wat 'niet productieklaar' echt betekende",
   "description": "Een op een casestudy gebaseerde analyse van hoe een veelbelovende zakelijke deal instortte bij de fase van het beveiligingsvragenlijst, en welke precieze hiaten in een door AI gebouwd SaaS-platform daarvoor zorgden.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/rejected-enterprise-deal-not-production-ready" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/rejected-enterprise-deal-not-production-ready" }
 }
 </script>
 
@@ -33,7 +33,7 @@ De vragenlijst van het inkoopteam was niet ongebruikelijk of overdreven naar zak
 
 Dit is de kloof die deals stilletjes om zeep helpt, zonder ooit in een demo naar voren te komen. Een ai saas platform kan echte klanten bedienen, echte gegevens verwerken en echte omzet genereren, terwijl het toch geen antwoord heeft op "laat me uw versleutelingsaanpak zien" — omdat niets daarvan zichtbaar is wanneer een product er van buitenaf goed uitziet. Inkoop test niet of het product functioneert. Het test of de leverancier vertrouwd kan worden met de gegevens en de reputatie van de koper als er iets misgaat, en dat vertrouwen vereist documentatie, controles en processen die niets te maken hebben met functievolledigheid.
 
-Het team van meer dan 120 engineers van Manifera, werkend vanuit onder meer een hub in Singapore, werkt specifiek aan het dichten van precies deze kloof voor AI-native SaaS-oprichters — een functioneel compleet platform nemen en het de versleuteling, toegangslogging en incidentresponsdocumentatie geven die zakelijke inkoop verwacht te zien voordat een contract wordt getekend. LaunchStudio brengt diezelfde discipline naar oprichters voor een fractie van de kosten van een traditioneel bureau. Als u momenteel een deal heeft vastzitten in beoordeling om redenen die verdacht veel op dit lijken, [beschrijf dan uw project en wij reageren binnen één werkdag](https://launchstudio.eu/en/#contact) met wat er daadwerkelijk ontbreekt. Het werk van Manifera met zakelijke klanten zoals Vodafone en CFLW, zichtbaar in de [portfolio](https://www.manifera.com/portfolio/), weerspiegelt dezelfde standaard waar inkoopteams op controleren.
+Het team van meer dan 120 engineers van Manifera, werkend vanuit onder meer een hub in Singapore, werkt specifiek aan het dichten van precies deze kloof voor AI-native SaaS-oprichters — een functioneel compleet platform nemen en het de versleuteling, toegangslogging en incidentresponsdocumentatie geven die zakelijke inkoop verwacht te zien voordat een contract wordt getekend. LaunchStudio brengt diezelfde discipline naar oprichters voor een fractie van de kosten van een traditioneel bureau. Als u momenteel een deal heeft vastzitten in beoordeling om redenen die verdacht veel op dit lijken, [beschrijf dan uw project en wij reageren binnen één werkdag](https://launchstudio.eu/nl/#contact) met wat er daadwerkelijk ontbreekt. Het werk van Manifera met zakelijke klanten zoals Vodafone en CFLW, zichtbaar in de [portfolio](https://www.manifera.com/portfolio/), weerspiegelt dezelfde standaard waar inkoopteams op controleren.
 
 ## Wat er daadwerkelijk moet bestaan voordat u opnieuw naar inkoop stapt
 

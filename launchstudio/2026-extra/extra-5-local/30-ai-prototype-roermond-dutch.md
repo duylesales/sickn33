@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Uw AI-prototype ziet er klaar uit. De checklist van een Roermondse oprichter vóór de lancering",
   "description": "Een praktische checklist vóór de lancering voor Roermondse oprichters wier AI-prototype er klaar uitziet, maar nog niet is getest tegen de zaken die breken in productie.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/30-ai-prototype-roermond" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/30-ai-prototype-roermond" }
 }
 </script>
 
@@ -46,7 +46,7 @@ LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf m
 
 ## De checklist omzetten in een plan
 
-Geen van deze gaten vereist opnieuw beginnen — ze vereisen een gestructureerde ronde gericht op uw bestaande AI-prototype, wat grotendeels kan worden afgerond in dagen, en niet in maanden. Bezoek [LaunchStudio](https://launchstudio.eu/en/) om te zien hoe een traject met een vaste omvang doorgaans werkt, en bekijk Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) model voor hoe de onderliggende engineeringcapaciteit dit type werk betaalbaar houdt vergeleken met een traditioneel bureau.
+Geen van deze gaten vereist opnieuw beginnen — ze vereisen een gestructureerde ronde gericht op uw bestaande AI-prototype, wat grotendeels kan worden afgerond in dagen, en niet in maanden. Bezoek [LaunchStudio](https://launchstudio.eu/nl/) om te zien hoe een traject met een vaste omvang doorgaans werkt, en bekijk Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) model voor hoe de onderliggende engineeringcapaciteit dit type werk betaalbaar houdt vergeleken met een traditioneel bureau.
 
 ## Uw eigen verkeerspiek simuleren voordat de echte toeslaat
 

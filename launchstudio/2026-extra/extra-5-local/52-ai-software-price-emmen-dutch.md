@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI-softwareprijs in Emmen: Wat het abonnement niet bevat",
   "description": "Een overzicht van wat de prijs van AI-software daadwerkelijk dekt versus waar een Emmer oprichter vóór de lancering nog steeds voor moet betalen, met een echt lokaal voorbeeld.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-software-price-emmen" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-software-price-emmen" }
 }
 </script>
 
@@ -34,7 +34,7 @@ Dit is waarom zo veel oprichters dezelfde ervaring beschrijven: het AI-abonnemen
 
 Emmen ligt in de zuidoosthoek van Drenthe, een regio gevormd door haar veenkoloniale geschiedenis en tegenwoordig beter bekend om Wildlands Adventure Zoo en een toerisme- en logistieke economie die bezoekers trekt tot ver buiten de provincie. Het industrieterrein Bargermeer aan de rand van de stad is een van de grotere bedrijventerreinen in Noord-Nederland, thuisbasis voor een mix van productie, logistiek en in toenemende mate software-gerelateerde bedrijven die de toerisme- en agrifood-sectoren in de regio bevoorraden. Oprichters hier bouwen vaak consumentengerichte producten — boekingssystemen, bezoekers-apps, lokale marktplaatsen — die vanaf dag één echte betalingen en echte klantgegevens moeten afhandelen, en niet pas "ooit." Dat is exact de categorie producten waar de kloof tussen "AI-softwareprijs" en "daadwerkelijke lanceringskosten" het hardst bijt, omdat deze apps zich geen databreach of gebroken rekenproces kunnen veroorloven tijdens het openingsweekend, wanneer een groot deel van het jaarlijkse bezoekersverkeer geconcentreerd is in een paar piekmaanden.
 
-LaunchStudio offreert een vaste prijs voor exact dit gat: € 800 tot € 7.500, afgestemd op wat het specifieke prototype daadwerkelijk nodig heeft, opgeleverd in één tot drie weken. Geen uurtarieven, geen scope-creep — een oprichter in Emmen krijgt een getal voordat er werk begint, en dat getal verschuift niet zodra het engineeringteam halverwege het databaseschema iets ingewikkelders ontdekt dan verwacht. Gebruik de [projectcalculator](https://launchstudio.eu/en/#calculator) om ruwweg te zien waar een bepaalde app zou landen voordat u zich ergens toe verplicht.
+LaunchStudio offreert een vaste prijs voor exact dit gat: € 800 tot € 7.500, afgestemd op wat het specifieke prototype daadwerkelijk nodig heeft, opgeleverd in één tot drie weken. Geen uurtarieven, geen scope-creep — een oprichter in Emmen krijgt een getal voordat er werk begint, en dat getal verschuift niet zodra het engineeringteam halverwege het databaseschema iets ingewikkelders ontdekt dan verwacht. Gebruik de [projectcalculator](https://launchstudio.eu/nl/#calculator) om ruwweg te zien waar een bepaalde app zou landen voordat u zich ergens toe verplicht.
 
 ## Waarom de vergelijking met een traditioneel bureau ertoe doet
 

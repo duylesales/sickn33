@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Waarom AI-codeertools steeds sneller worden, maar productietijdlijnen niet",
   "description": "Een opiniestuk over waarom snellere AI-codegeneratie het pad naar productie niet heeft verkort, en waarom de hardeningsfase hardnekkig traag blijft, ongeacht hoe snel een functie kan worden geprototypet.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-coding-tools-faster-timelines-not" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-coding-tools-faster-timelines-not" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Er schuilt een psychologische valkuil in deze kloof. Wanneer een functie een mid
 
 Foutafhandeling, edge-case-testen en beveiligingsbeoordeling vergen ongeveer evenveel zorgvuldig menselijk beoordelingsvermogen, of de code voor de reviewer nu door een mens over twee weken is geschreven of door een AI-tool in een middag is gegenereerd. Dat de code zelf sneller te produceren is, maakt haar niet sneller te verifiëren — als er al iets is, kost het beoordelen van door AI gegenereerde code soms juist langer, omdat een reviewer niet dezelfde conventies en patronen kan aannemen die een menselijke engineer consistent zou hebben gevolgd. Dit is waarom de eigen levertijdlijnen van LaunchStudio — één tot drie weken voor de meeste productiehardeningsopdrachten — niet zijn verkort, zelfs niet nu de AI-tools waarmee oprichters aankomen dramatisch capabeler zijn geworden. Het knelpunt is verschoven. Het is niet verdwenen.
 
-Het team van meer dan 120 engineers van Manifera, opererend vanuit het Europese hoofdkantoor in Amsterdam naast andere vestigingen, besteedt het grootste deel van zijn tijd precies aan deze fase — de fase die AI-tool-versnellingen niet raken. Heeft uw AI-codeertool zojuist in een middag een functie gegenereerd en vraagt u zich af waarom "het netjes afmaken" niet in hetzelfde tempo lijkt te krimpen, dan klopt dat instinct, en is het de moeite waard om [te praten met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact) over wat de hardeningsfase voor die specifieke functie daadwerkelijk vereist. Het [portfolio](https://www.manifera.com/portfolio/) van enterprise-werk van Manifera weerspiegelt hetzelfde patroon op grotere schaal — functiesnelheid en productiestrengheid hebben altijd op verschillende klokken gelopen.
+Het team van meer dan 120 engineers van Manifera, opererend vanuit het Europese hoofdkantoor in Amsterdam naast andere vestigingen, besteedt het grootste deel van zijn tijd precies aan deze fase — de fase die AI-tool-versnellingen niet raken. Heeft uw AI-codeertool zojuist in een middag een functie gegenereerd en vraagt u zich af waarom "het netjes afmaken" niet in hetzelfde tempo lijkt te krimpen, dan klopt dat instinct, en is het de moeite waard om [te praten met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) over wat de hardeningsfase voor die specifieke functie daadwerkelijk vereist. Het [portfolio](https://www.manifera.com/portfolio/) van enterprise-werk van Manifera weerspiegelt hetzelfde patroon op grotere schaal — functiesnelheid en productiestrengheid hebben altijd op verschillende klokken gelopen.
 
 ## Echt voorbeeld
 

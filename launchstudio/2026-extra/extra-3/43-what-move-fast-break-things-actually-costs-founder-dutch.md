@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-move-fast-break-things-actually-costs-founder"
+    "@id": "https://launchstudio.eu/nl/blog/what-move-fast-break-things-actually-costs-founder"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Voorbij de technische risicovraag die elders al is behandeld, signaleert "move f
 
 Niets hiervan is een pleidooi voor een cultuur van overmatige voorzichtigheid of verlamming – het onderscheid tussen omkeerbaar en onomkeerbaar dat elders in bredere richtlijnen wordt behandeld blijft het juiste kader. Echte snelheid bij oprecht omkeerbare beslissingen is waardevol en niet iets om op te geven. Het argument is specifiek gericht tegen het onkritisch overnemen van een overgeërfde filosofie, zonder te onderzoeken of de oorspronkelijke context – enorme schaal, diepe middelen, lage consequenties van individuele storingen – daadwerkelijk lijkt op de oprecht andere situatie van een klein AI-native team met beperkte middelen.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichtersteams bij het bewust onderzoeken en afstellen van hun eigen culturele standaarden rond snelheid en verificatie, in plaats van het overerven van een ononderzochte filosofie uit een oprecht andere context van een ander bedrijf. Dit wordt ondersteund door Manifera's bredere ervaring in het helpen van teams om een cultuur op te bouwen die echte snelheid op een gepaste manier balanceert met echte zorgvuldigheid.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichtersteams bij het bewust onderzoeken en afstellen van hun eigen culturele standaarden rond snelheid en verificatie, in plaats van het overerven van een ononderzochte filosofie uit een oprecht andere context van een ander bedrijf. Dit wordt ondersteund door Manifera's bredere ervaring in het helpen van teams om een cultuur op te bouwen die echte snelheid op een gepaste manier balanceert met echte zorgvuldigheid.
 
-[Onderzoek of de snelheidscultuur van uw team daadwerkelijk past bij de echte belangen van uw team](https://launchstudio.eu/en/#contact) — een overgeërfde filosofie is niet automatisch de juiste voor de specifieke situatie van een team van vijf personen.
+[Onderzoek of de snelheidscultuur van uw team daadwerkelijk past bij de echte belangen van uw team](https://launchstudio.eu/nl/#contact) — een overgeërfde filosofie is niet automatisch de juiste voor de specifieke situatie van een team van vijf personen.
 
 ## Een snelle zelftest: Is de snelheidscultuur van uw team al afgeweken?
 

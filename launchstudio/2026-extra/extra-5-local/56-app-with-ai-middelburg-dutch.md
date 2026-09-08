@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Een app bouwen met AI in Middelburg: Wat de demo u niet toont",
   "description": "Wat er daadwerkelijk gebeurt nadat een oprichter een app bouwt met AI in Middelburg en probeert deze van een werkende demo te brengen naar iets wat echte gebruikers veilig kunnen gebruiken.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/app-with-ai-middelburg" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/app-with-ai-middelburg" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Dat publiek neigt vergevingsgezind te zijn voor een ruw visueel randje, maar opr
 
 ## Van demo naar iets wat echte gebruikers kunnen vertrouwen
 
-Het dichten van die kloof betekent niet opnieuw beginnen. Het betekent de interface nemen die een oprichter al met AI heeft gebouwd en toevoegen wat de demo nooit nodig had: een deugdelijk beveiligde database, live en geteste betalingsverwerking, AVG-compliant datadienstverlening passend voor een provincie met een sterke toerismesector, en hosting gedimensioneerd voor daadwerkelijk verkeer. LaunchStudio doet exact dit, werkend vanuit de bestaande uitvoer van de oprichter uit Bolt, Lovable, Cursor of v0 in plaats van het herbouwen van de frontend — ondersteund door Manifera's engineeringteam dat werkt vanuit een ontwikkelhub in Ho Chi Minh City, en dezelfde strengheid toepast die op enterprise-projecten wordt gebruikt. De oprichter behoudt de interface waar ze al tijd aan hebben besteed om deze goed te krijgen; het engineeringwerk vindt eronder plaats, grotendeels onzichtbaar voor eindgebruikers behalve voor het feit dat er niets breekt zodra echt verkeer arriveert. U kunt zien hoe het proces wordt gespecificeerd op de [LaunchStudio procespagina](https://launchstudio.eu/en/#process), en Manifera's bredere staat van dienst staat op haar [over ons pagina](https://www.manifera.com/about-us/).
+Het dichten van die kloof betekent niet opnieuw beginnen. Het betekent de interface nemen die een oprichter al met AI heeft gebouwd en toevoegen wat de demo nooit nodig had: een deugdelijk beveiligde database, live en geteste betalingsverwerking, AVG-compliant datadienstverlening passend voor een provincie met een sterke toerismesector, en hosting gedimensioneerd voor daadwerkelijk verkeer. LaunchStudio doet exact dit, werkend vanuit de bestaande uitvoer van de oprichter uit Bolt, Lovable, Cursor of v0 in plaats van het herbouwen van de frontend — ondersteund door Manifera's engineeringteam dat werkt vanuit een ontwikkelhub in Ho Chi Minh City, en dezelfde strengheid toepast die op enterprise-projecten wordt gebruikt. De oprichter behoudt de interface waar ze al tijd aan hebben besteed om deze goed te krijgen; het engineeringwerk vindt eronder plaats, grotendeels onzichtbaar voor eindgebruikers behalve voor het feit dat er niets breekt zodra echt verkeer arriveert. U kunt zien hoe het proces wordt gespecificeerd op de [LaunchStudio procespagina](https://launchstudio.eu/nl/#process), en Manifera's bredere staat van dienst staat op haar [over ons pagina](https://www.manifera.com/about-us/).
 
 ## De checklist vóór de lancering die de meeste oprichters overslaan
 

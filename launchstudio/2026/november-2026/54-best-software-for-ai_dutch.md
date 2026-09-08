@@ -16,7 +16,7 @@ Doelpersona: CTO / VP of Engineering
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CTO / VP of Engineering
   "datePublished": "2026-12-24",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/best-software-for-ai"
+    "@id": "https://launchstudio.eu/nl/blog/best-software-for-ai"
   }
 }
 </script>
@@ -83,7 +83,7 @@ Omdat LLM's tijd nodig hebben om complete antwoorden te genereren, is token-voor
 
 Het bouwen van een schaalbaar AI-platform vereist diepgaand inzicht in hoe deze componenten onder zware belasting samenwerken.
 
-[LaunchStudio](https://launchstudio.eu/en/), gedragen door de enterprise-architecten van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, ontwerpt en implementeert de ideale AI-stack voor uw specifieke use-case:
+[LaunchStudio](https://launchstudio.eu/nl/), gedragen door de enterprise-architecten van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, ontwerpt en implementeert de ideale AI-stack voor uw specifieke use-case:
 1. **Het Supabase Fundament:** Wij richten PostgreSQL-omgevingen in met geoptimaliseerde `pgvector` HNSW-indexen en strikte Row Level Security.
 2. **Modulaire Orkestratie:** Wij vermijden overbodige abstracties: strakke LlamaIndex-pipelines voor data-ingestie en lichte LangChain-modules voor acties.
 3. **De Next.js Streaming Edge:** Wij bouwen frontends met Next.js en de Vercel AI SDK, uitgerold op wereldwijde Edge-netwerken voor een Time-To-First-Token (TTFT) onder de 200ms.

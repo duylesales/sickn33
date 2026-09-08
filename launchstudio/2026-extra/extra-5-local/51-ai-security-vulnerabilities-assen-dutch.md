@@ -13,10 +13,10 @@ Doelgroep: Technische Solo Oprichter
   "@type": "Article",
   "headline": "De AI-beveiligingslekken die zich verbergen in het werkende prototype van een Asser oprichter",
   "description": "Een blik op de AI-beveiligingslekken die zich doorgaans verbergen in met AI gegenereerde prototypes, met een praktijkvoorbeeld van een in Assen gevestigde oprichter die bouwt op Bolt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-security-vulnerabilities-assen" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-security-vulnerabilities-assen" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Omdat het ecosysteem van voorzieningen in Assen dunner is dan in Amsterdam of Ut
 
 ## Hoe een echt beveiligingsherstel eruitziet
 
-Het herstellen van AI-beveiligingslekken is geen heropbouw. Het is een gestructureerde audit: elke databasetabel controleren op beleid voor beveiliging op rijniveau, elke geheime sleutel naar de serverzijde verplaatsen, elke machtigingscontrole opnieuw verifiëren op de backend in plaats van de frontend te vertrouwen, meenemen van randgevallen bij authenticatie die de AI-tool nooit heeft overwogen — verlopen sessies, escalatie van rollen, directe objectreferenties. LaunchStudio's engineers, werkend vanuit het kantoor in Amsterdam aan de Herengracht 420, voeren exact deze audit uit als eerste stap voordat een Bolt-, Lovable- of Cursor-prototype live gaat. U kunt zien hoe het proces is gestructureerd op de [LaunchStudio procespagina](https://launchstudio.eu/en/#process), en Manifera's bredere engineering-trackrecord is gedocumenteerd op het [projectportfolio](https://www.manifera.com/portfolio/).
+Het herstellen van AI-beveiligingslekken is geen heropbouw. Het is een gestructureerde audit: elke databasetabel controleren op beleid voor beveiliging op rijniveau, elke geheime sleutel naar de serverzijde verplaatsen, elke machtigingscontrole opnieuw verifiëren op de backend in plaats van de frontend te vertrouwen, meenemen van randgevallen bij authenticatie die de AI-tool nooit heeft overwogen — verlopen sessies, escalatie van rollen, directe objectreferenties. LaunchStudio's engineers, werkend vanuit het kantoor in Amsterdam aan de Herengracht 420, voeren exact deze audit uit als eerste stap voordat een Bolt-, Lovable- of Cursor-prototype live gaat. U kunt zien hoe het proces is gestructureerd op de [LaunchStudio procespagina](https://launchstudio.eu/nl/#process), en Manifera's bredere engineering-trackrecord is gedocumenteerd op het [projectportfolio](https://www.manifera.com/portfolio/).
 
 ## Een praktische zelfcontrole voordat u met iemand bilt
 

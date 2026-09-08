@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/your-ai-database-isnt-as-persistent-as-it-looks-in-demo"
+    "@id": "https://launchstudio.eu/nl/blog/your-ai-database-isnt-as-persistent-as-it-looks-in-demo"
   }
 }
 </script>
@@ -68,15 +68,15 @@ Niet elk eindpunt in uw applicatie heeft hetzelfde beschermingsniveau nodig, en 
 
 - Alleen-lezen eindpunten die niet-gevoelige, cachebare gegevens serveren, waar de kosten van misbruik lager zijn en standaard bescherming op hostingniveau vaak zelfstandig voldoende dekking biedt.
 
-Een redelijke startsnelheidslimiet voor de meeste producten op oprichterschaal is ongeveer vijf verzoeken per minuut per IP-adres of account voor niveau-één eindpunten, strenger afgesteld voor alles wat echt geld kost per oproep, en soepeler voor alleen-lezen routes met een lager risico. De exacte getallen doen er minder toe dan het uopgezet hebben van überhaupt een limiet – een eindpunt met een limiet die af en toe te streng is, is een kleine ergering die u later kunt afstemmen; een eindpunt zonder enige limiet is een open uitnodiging zonder plafond op hoeveel het u kan kosten. Dit soort triage is exact het soort oordeel dat [LaunchStudio](https://launchstudio.eu/en/#process)'s beoordeling is gebouwd om snel te maken. Een oprichter heeft namelijk zelden het volledige beeld van welke van zijn eigen eindpunten het duurst zijn om te misbruiken totdat iemand daadwerkelijk met hen door de lijst loopt.
+Een redelijke startsnelheidslimiet voor de meeste producten op oprichterschaal is ongeveer vijf verzoeken per minuut per IP-adres of account voor niveau-één eindpunten, strenger afgesteld voor alles wat echt geld kost per oproep, en soepeler voor alleen-lezen routes met een lager risico. De exacte getallen doen er minder toe dan het uopgezet hebben van überhaupt een limiet – een eindpunt met een limiet die af en toe te streng is, is een kleine ergering die u later kunt afstemmen; een eindpunt zonder enige limiet is een open uitnodiging zonder plafond op hoeveel het u kan kosten. Dit soort triage is exact het soort oordeel dat [LaunchStudio](https://launchstudio.eu/nl/#process)'s beoordeling is gebouwd om snel te maken. Een oprichter heeft namelijk zelden het volledige beeld van welke van zijn eigen eindpunten het duurst zijn om te misbruiken totdat iemand daadwerkelijk met hen door de lijst loopt.
 
 ## Wat het sluiten van deze kloof daadwerkelijk omvat
 
-Het toevoegen van snelheidsbeperking en bescherming tegen misbruik aan gevoelige eindpunten is een doelgerichte, toevoegende wijziging – het raakt de kernlogica van uw product of de frontend niet aan. Het omwikkelt de toegangspunten die er toe doen met de beperkingen die een echt, vijandig internet daadwerkelijk vereist. [LaunchStudio](https://launchstudio.eu/en/) bevat exact dit soort database- en eindpunt-uitharding in haar standaard beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met PostgreSQL, Supabase en Firebase-ondersteunde productiesystemen.
+Het toevoegen van snelheidsbeperking en bescherming tegen misbruik aan gevoelige eindpunten is een doelgerichte, toevoegende wijziging – het raakt de kernlogica van uw product of de frontend niet aan. Het omwikkelt de toegangspunten die er toe doen met de beperkingen die een echt, vijandig internet daadwerkelijk vereist. [LaunchStudio](https://launchstudio.eu/nl/) bevat exact dit soort database- en eindpunt-uitharding in haar standaard beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met PostgreSQL, Supabase en Firebase-ondersteunde productiesystemen.
 
 Manifera's engineeringteam, voornamelijk gevestigd vanuit haar ontwikkelingscentrum aan de Pho Quang-straat in Ho Chi Minh-stad, heeft hetzelfde uithardingspatroon toegepast over meer dan 160 geleverde projecten voor klanten variërend van Vodafone tot kleinere AI-native oprichters die rechtstreeks met LaunchStudio werken.
 
-[Bereken wat uw project kost met onze calculator](https://launchstudio.eu/en/#calculator).
+[Bereken wat uw project kost met onze calculator](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

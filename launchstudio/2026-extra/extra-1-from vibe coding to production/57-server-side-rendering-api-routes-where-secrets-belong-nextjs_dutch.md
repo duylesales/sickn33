@@ -33,9 +33,9 @@ De directe controle: doorzoek jouw codebase op elke omgevingsvariabelereferentie
 
 De git-geschiedenis- en hardgecodeerde-credentialrisico's elders in deze serie behandeld betreffen geheimen direct ingebed in broncode. Dit is een structureel ander, Next.js-specifiek risico: een geheim correct opgeslagen in omgevingsconfiguratie, nooit hardgecodeerd, dat toch blootgesteld eindigt vanwege waar in jouw codestructuur het gerefereerd wordt — een subtielere, framework-specifieke versie van dezelfde onderliggende blootstellingszorg.
 
-[LaunchStudio](https://launchstudio.eu/en/) reviewt specifiek Next.js-applicaties op precies dit server-client-grensprobleem, en controleert zowel broncodereferenties als de daadwerkelijk gecompileerde clientbundel, gesteund door Manifera's engineeringervaring over productie-Next.js-applicaties.
+[LaunchStudio](https://launchstudio.eu/nl/) reviewt specifiek Next.js-applicaties op precies dit server-client-grensprobleem, en controleert zowel broncodereferenties als de daadwerkelijk gecompileerde clientbundel, gesteund door Manifera's engineeringervaring over productie-Next.js-applicaties.
 
-[Laat jouw Next.js-app controleren op geheimen die de server-client-grens overschrijden](https://launchstudio.eu/en/#calculator) — een framework-specifiek gat dat algemene geheimenscanning alleen kan missen.
+[Laat jouw Next.js-app controleren op geheimen die de server-client-grens overschrijden](https://launchstudio.eu/nl/#calculator) — een framework-specifiek gat dat algemene geheimenscanning alleen kan missen.
 
 ## Echt voorbeeld
 

@@ -29,9 +29,9 @@ Van vibe coding naar productie gaan betekent doorgaans het aanpakken van een con
 
 De instinctieve angst, zodra een founder de kloof begrijpt, is dat het dichten ervan betekent dat je opnieuw moet beginnen. Dat is niet zo, en begrijpen waarom vereist het scheiden van twee dingen die AI-gegenereerde code de neiging heeft door elkaar te laten lopen: wat je product *doet* (de frontend, de AI-logica, de gebruikerservaring die je hebt ontworpen en getest) en wat dat product *betrouwbaar op schaal* maakt (de infrastructuurlaag die eronder en eromheen zit). De frontend die je hebt ontworpen verandert niet. De AI-logica die je hebt afgesteld verandert niet. Wat verandert is onzichtbaar voor een gebruiker die normaal door je app klikt — het wordt alleen zichtbaar voor iemand die aan de randen test, en dat is precies waar reëel gebruik uiteindelijk terechtkomt.
 
-[LaunchStudio](https://launchstudio.eu/en/) bestaat specifiek voor deze fase — een werkend AI-gegenereerd prototype van vibe coding naar productie brengen zonder de frontend aan te raken die je al hebt gebouwd, gesteund door Manifera's engineeringteam en hun 11+ jaar ervaring met het verharden van software voor precies deze realistische omstandigheden.
+[LaunchStudio](https://launchstudio.eu/nl/) bestaat specifiek voor deze fase — een werkend AI-gegenereerd prototype van vibe coding naar productie brengen zonder de frontend aan te raken die je al hebt gebouwd, gesteund door Manifera's engineeringteam en hun 11+ jaar ervaring met het verharden van software voor precies deze realistische omstandigheden.
 
-[Beschrijf wat je hebt gebouwd en waar je vastzit](https://launchstudio.eu/en/#contact) — de meeste founders staan dichter bij productie dan ze denken, ze hebben alleen de specifieke kloof nog niet in kaart gebracht.
+[Beschrijf wat je hebt gebouwd en waar je vastzit](https://launchstudio.eu/nl/#contact) — de meeste founders staan dichter bij productie dan ze denken, ze hebben alleen de specifieke kloof nog niet in kaart gebracht.
 
 ## Echt voorbeeld
 

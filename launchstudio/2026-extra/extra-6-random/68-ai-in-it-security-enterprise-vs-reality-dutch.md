@@ -12,10 +12,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "Wat 'AI in IT-beveiliging' betekent voor een zakelijke koper vs. wat uw app daadwerkelijk heeft",
   "description": "Zakelijke kopers horen 'AI in IT-beveiliging' en verwachten SOC-2-achtige controles en formele auditlogging. De meeste door AI gegenereerde SaaS-producten hebben in plaats daarvan een basale activiteitenlogboek. Zo dicht u die kloof voordat het u een deal kost.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-in-it-security-enterprise-vs-reality" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-in-it-security-enterprise-vs-reality" }
 }
 </script>
 
@@ -36,7 +36,7 @@ De meeste AI-native SaaS-producten hebben in dit stadium een basaal activiteiten
 - Geef prioriteit aan gestructureerde, exporteerbare auditlogging boven bredere initiatieven — het is meestal het eerste item waar beveiligingsteams van zakelijke kopers naar vragen, en het item dat de meeste door AI gegenereerde apps standaard missen.
 - Heb een schriftelijk incidentresponsplan, zelfs een kort plan, in plaats van helemaal geen plan — een gedocumenteerd proces, hoe beknopt ook, beantwoordt een vraag die "we hebben er nog geen nodig gehad" niet beantwoordt.
 
-De technici van Manifera — vertrouwd door klanten als Vodafone en TNO voor projecten met precies deze compliancevereisten — hebben SaaS-oprichters geholpen om de specifieke kloof tussen activiteitenlogging en audit-grade logging te dichten voordat een deal ervan afhing. Ons team in Singapore, onderdeel van de bredere groep van 120+ engineers van Manifera, heeft direct met oprichters gewerkt die zich voorbereidden op zakelijke inkoopbeoordelingen. Als u een soortgelijk gesprek tegemoet gaat, [praat dan met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact) vóór uw volgende beveiligingsbeoordeling, in plaats van tijdens. Het [portfolio](https://www.manifera.com/portfolio/) van Manifera bevat compliancewerk voor bedrijven dat relevant is voor precies deze kloof.
+De technici van Manifera — vertrouwd door klanten als Vodafone en TNO voor projecten met precies deze compliancevereisten — hebben SaaS-oprichters geholpen om de specifieke kloof tussen activiteitenlogging en audit-grade logging te dichten voordat een deal ervan afhing. Ons team in Singapore, onderdeel van de bredere groep van 120+ engineers van Manifera, heeft direct met oprichters gewerkt die zich voorbereidden op zakelijke inkoopbeoordelingen. Als u een soortgelijk gesprek tegemoet gaat, [praat dan met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) vóór uw volgende beveiligingsbeoordeling, in plaats van tijdens. Het [portfolio](https://www.manifera.com/portfolio/) van Manifera bevat compliancewerk voor bedrijven dat relevant is voor precies deze kloof.
 
 ## Echt voorbeeld
 

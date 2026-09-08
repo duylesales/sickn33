@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Een app bouwen met AI is de makkelijke 20% — dit is de andere 80%",
   "description": "Een app bouwen met AI kan oprecht in een weekend gebeuren. Waar bijna nooit over wordt gesproken, is het veel langere traject van productiehardening dat daarop volgt, en waarom dat veel meer tijd kost dan de bouw zelf.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/build-app-with-ai-easy-20-percent" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/build-app-with-ai-easy-20-percent" }
 }
 </script>
 
@@ -39,7 +39,7 @@ Die verschuiving is het hele argument van dit stuk in één zin: de schaarse vaa
 
 ## Eerlijk begroten voor de andere 80%
 
-Als uw weekendbouw twee dagen kostte, loopt een realistische hardeningsronde — authenticatie, back-ups, monitoring, een supportproces, een beveiligingsbeoordeling — voor een klein product doorgaans van een paar dagen tot een paar weken gericht engineeringwerk, niet omdat het moeilijker is dan de bouw, maar omdat het een compleet ander soort werk is, een dat AI-tools niet zelfstandig zijn gebouwd om te doen. De technici van LaunchStudio, werkend vanuit Ho Chi Minh-stad, specialiseren zich specifiek in dit traject — een door AI gebouwd weekendprototype nemen en het ongeglamoureuze werk doen dat er iets van maakt waarop een betalende klant daadwerkelijk kan vertrouwen. U kunt [ruwweg berekenen wat uw specifieke hardeningsronde zou kosten](https://launchstudio.eu/en/#calculator) voordat u te diep gaat in het op de harde manier ontdekken van de gaten. De bredere aanpak van Manifera om prototypes naar productievolwassenheid te brengen staat beschreven op de [over-ons-pagina](https://www.manifera.com/about-us/).
+Als uw weekendbouw twee dagen kostte, loopt een realistische hardeningsronde — authenticatie, back-ups, monitoring, een supportproces, een beveiligingsbeoordeling — voor een klein product doorgaans van een paar dagen tot een paar weken gericht engineeringwerk, niet omdat het moeilijker is dan de bouw, maar omdat het een compleet ander soort werk is, een dat AI-tools niet zelfstandig zijn gebouwd om te doen. De technici van LaunchStudio, werkend vanuit Ho Chi Minh-stad, specialiseren zich specifiek in dit traject — een door AI gebouwd weekendprototype nemen en het ongeglamoureuze werk doen dat er iets van maakt waarop een betalende klant daadwerkelijk kan vertrouwen. U kunt [ruwweg berekenen wat uw specifieke hardeningsronde zou kosten](https://launchstudio.eu/nl/#calculator) voordat u te diep gaat in het op de harde manier ontdekken van de gaten. De bredere aanpak van Manifera om prototypes naar productievolwassenheid te brengen staat beschreven op de [over-ons-pagina](https://www.manifera.com/about-us/).
 
 ## Echt voorbeeld
 

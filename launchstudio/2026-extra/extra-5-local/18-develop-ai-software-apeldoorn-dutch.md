@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "AI-software ontwikkelen in Apeldoorn zonder vanaf nul te herstructureren",
   "description": "Een stapsgewijze aanpak voor Apeldoornse oprichters om AI-software te ontwikkelen tot een productiegereed product zonder de bestaande, met AI gegenereerde codebase weg te gooien.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/develop-ai-software-apeldoorn" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/develop-ai-software-apeldoorn" }
 }
 </script>
 

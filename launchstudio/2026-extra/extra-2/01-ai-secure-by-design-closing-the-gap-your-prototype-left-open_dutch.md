@@ -31,11 +31,11 @@ Het is verleidelijk om aan te nemen dat niemand kijkt — dat een klein, vroege-
 
 ## Wat Het Gat Daadwerkelijk Dichten Eruitziet
 
-Oprecht AI secure worden betekent niet jouw product herbouwen. Het betekent een specifieke, gerichte pass: autorisatiecontroles server-side verplaatsen, geheimen naar correcte omgevingsconfiguratie verplaatsen, de grens testen tussen wat een gebruiker mag doen en wat jouw code daadwerkelijk afdwingt, en bevestigen dat een geweigerd verzoek veilig faalt in plaats van informatie te lekken over waarom het faalde. [LaunchStudio](https://launchstudio.eu/en/) wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het beveiligen van productieapplicaties voor klanten waaronder Vodafone en TNO — dezelfde engineeringdiscipline, specifiek afgestemd op wat het prototype van een AI-native founder nodig heeft voordat het live gaat.
+Oprecht AI secure worden betekent niet jouw product herbouwen. Het betekent een specifieke, gerichte pass: autorisatiecontroles server-side verplaatsen, geheimen naar correcte omgevingsconfiguratie verplaatsen, de grens testen tussen wat een gebruiker mag doen en wat jouw code daadwerkelijk afdwingt, en bevestigen dat een geweigerd verzoek veilig faalt in plaats van informatie te lekken over waarom het faalde. [LaunchStudio](https://launchstudio.eu/nl/) wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het beveiligen van productieapplicaties voor klanten waaronder Vodafone en TNO — dezelfde engineeringdiscipline, specifiek afgestemd op wat het prototype van een AI-native founder nodig heeft voordat het live gaat.
 
 Manifera's beveiligingsreviewproces loopt door engineeringteams verspreid over het hoofdkantoor in Amsterdam aan de Herengracht 420 en het ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh City, wat LaunchStudio in staat stelt snel te bewegen op het tijdschema van een founder zonder in te leveren op de review zelf.
 
-[Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/en/#contact) — voordat een echte gebruiker het gat vindt dat jouw demo nooit testte.
+[Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) — voordat een echte gebruiker het gat vindt dat jouw demo nooit testte.
 
 ## Echt voorbeeld
 

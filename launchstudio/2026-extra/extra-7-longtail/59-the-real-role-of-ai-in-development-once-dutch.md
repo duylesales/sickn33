@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
   "@type": "Article",
   "headline": "De echte rol van AI in ontwikkeling zodra u de sandbox verlaat",
   "description": "Een praktische checklist om de echte rol van AI in ontwikkeling te begrijpen binnen de sandbox van een tool versus wat nog steeds menselijke engineering nodig heeft zodra uw product live gaat.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-10",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/the-real-role-of-ai-in-development-once" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/the-real-role-of-ai-in-development-once" }
 }
 </script>
 
@@ -62,7 +62,7 @@ Oprichtersgemeenschappen hebben de neiging om te debatteren over AI in ontwikkel
 
 ## Wat "de sandbox verlaten" daadwerkelijk vereist
 
-De sandbox verlaten betekent niet de tool of de frontend die hij bouwde opgeven — het betekent het toevoegen van de engineeringlaag die de sandbox nooit was ontworpen om te bevatten: echte integraties, echte gegevensverwerking, echte autorisatie, getest tegen echte omstandigheden in plaats van zelfgegenereerde demogegevens. LaunchStudio brengt Manifera's meer dan tien jaar productie-engineeringervaring naar precies die overgang, met een ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh-stad dat veel van dat praktische integratiewerk doet naast de teams in Amsterdam en Singapore. Als u niet zeker weet of uw product nog veilig binnen de sandbox is of al voorbij de rand, kunt u [voorbeelden bekijken van oprichters die precies deze overgang hebben gemaakt](https://launchstudio.eu/en/#proof), en voor een blik op het technische bereik waar die overgang op steunt, bekijk de [technologieën waarmee Manifera werkt](https://www.manifera.com/about-us/manifera-technologies/).
+De sandbox verlaten betekent niet de tool of de frontend die hij bouwde opgeven — het betekent het toevoegen van de engineeringlaag die de sandbox nooit was ontworpen om te bevatten: echte integraties, echte gegevensverwerking, echte autorisatie, getest tegen echte omstandigheden in plaats van zelfgegenereerde demogegevens. LaunchStudio brengt Manifera's meer dan tien jaar productie-engineeringervaring naar precies die overgang, met een ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh-stad dat veel van dat praktische integratiewerk doet naast de teams in Amsterdam en Singapore. Als u niet zeker weet of uw product nog veilig binnen de sandbox is of al voorbij de rand, kunt u [voorbeelden bekijken van oprichters die precies deze overgang hebben gemaakt](https://launchstudio.eu/nl/#proof), en voor een blik op het technische bereik waar die overgang op steunt, bekijk de [technologieën waarmee Manifera werkt](https://www.manifera.com/about-us/manifera-technologies/).
 
 ## Een snelle manier om uw eigen functiebacklog te sorteren
 

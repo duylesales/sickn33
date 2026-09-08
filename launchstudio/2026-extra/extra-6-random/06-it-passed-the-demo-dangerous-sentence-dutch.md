@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Waarom 'Het is door de demo gekomen' de gevaarlijkste zin is in AI-native productontwikkeling",
   "description": "Een demo die perfect verloopt, bewijst bijna niets over productiegereedheid. Dit is waarom 'het is door de demo gekomen' een vals signaal is, en wat er daadwerkelijk getest moet worden vóór de lancering.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-30",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/it-passed-the-demo-dangerous-sentence" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/it-passed-the-demo-dangerous-sentence" }
 }
 </script>
 
@@ -33,7 +33,7 @@ AI-codeertools optimaliseren precies voor dit soort succes op één pad. Vraag o
 
 Dit is eigenlijk een kloof tussen twee heel verschillende soorten vertrouwen. "Het werkte toen ik het probeerde" is vertrouwen over één pad dat u al kent. "Het is klaar voor echte gebruikers" vereist vertrouwen over paden die u niet hebt geprobeerd, uitgevoerd door mensen die de eigenaardigheden van uw app niet kennen, vaak tegelijkertijd met andere mensen die de app ook gebruiken. Die kloof dichten betekent gelijktijdig gebruik testen, faalcondities testen, testen wat er gebeurt als er iets misgaat midden in een transactie — niet omdat u pessimistisch bent, maar omdat uw daadwerkelijke gebruikers, anders dan uzelf in een demo, geen reden hebben om voorzichtig te zijn.
 
-LaunchStudio brengt Manifera's team van 120+ ervaren technici naar precies deze kloof, en voert de gelijktijdigheids-, belastings- en faalpadtests uit die een solo-demo structureel niet kan dekken, met technici gevestigd in Ho Chi Minhstad die gespecialiseerd zijn in het stresstesten van door AI gegenereerde backends voordat echte gebruikers de scheuren vinden. Als uw app alleen ooit door uzelf is getest, [praat dan met een technicus die door AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact) over wat een echte pre-launchtest daadwerkelijk dekt. Manifera's eigen proces voor [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/) behandelt dit soort testen als een verplichte fase, niet als een optionele extra.
+LaunchStudio brengt Manifera's team van 120+ ervaren technici naar precies deze kloof, en voert de gelijktijdigheids-, belastings- en faalpadtests uit die een solo-demo structureel niet kan dekken, met technici gevestigd in Ho Chi Minhstad die gespecialiseerd zijn in het stresstesten van door AI gegenereerde backends voordat echte gebruikers de scheuren vinden. Als uw app alleen ooit door uzelf is getest, [praat dan met een technicus die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) over wat een echte pre-launchtest daadwerkelijk dekt. Manifera's eigen proces voor [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/) behandelt dit soort testen als een verplichte fase, niet als een optionele extra.
 
 ## Echt voorbeeld
 

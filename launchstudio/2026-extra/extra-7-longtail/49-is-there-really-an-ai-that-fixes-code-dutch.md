@@ -13,10 +13,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Bestaat er echt een AI die code repareert, of alleen een die code herschrijft?",
   "description": "Wanneer u een ai that fixes code vraagt om één bug op te lossen, herschrijft die vaak veel meer dan bedoeld. Wat er daadwerkelijk gebeurt, en wat oprichters kunnen doen voordat het iets anders kapotmaakt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-09",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/is-there-really-an-ai-that-fixes-code" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/is-there-really-an-ai-that-fixes-code" }
 }
 </script>
 

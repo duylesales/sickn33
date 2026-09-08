@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/dns-domain-migration-zero-downtime-ai-founders"
+    "@id": "https://launchstudio.eu/nl/blog/dns-domain-migration-zero-downtime-ai-founders"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Een domeinmigratie zonder uitval volgt een specifieke volgorde: verlaag eerst de
 
 Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoordt het zo: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. We hebben elf jaar ervaring in exact dat." Een domeinmigratie is een klein, eenmalig voorbeeld van exact dat soort kloof – het is geen coderingsprobleem dat een AI-tool kan oplossen, het is een infrastructuur-volgorde-probleem dat vereist dat u een dag van tevoren weet wat u moet doen.
 
-LaunchStudio's ingenieurs, ondersteund vanuit Manifera's kantoor in Singapore op 100 Tras Street, handelen domein- en infrastructuurmigraties af als een standaard onderdeel van het verplaatsen van een met AI gebouwd prototype naar een productie-gereed lancering. Als uw domeinoverstap nog voor u ligt, is het de moeite waard om [met een ingenieur te praten over uw migratieplan](https://launchstudio.eu/en/#contact) een paar dagen voordat u van plan bent om de knop om te zetten, en niet op de ochtend zelf.
+LaunchStudio's ingenieurs, ondersteund vanuit Manifera's kantoor in Singapore op 100 Tras Street, handelen domein- en infrastructuurmigraties af als een standaard onderdeel van het verplaatsen van een met AI gebouwd prototype naar een productie-gereed lancering. Als uw domeinoverstap nog voor u ligt, is het de moeite waard om [met een ingenieur te praten over uw migratieplan](https://launchstudio.eu/nl/#contact) een paar dagen voordat u van plan bent om de knop om te zetten, en niet op de ochtend zelf.
 
 ## Een schone DNS-omzetting mislukt nog steeds zonder een certificaat dat erop wacht
 

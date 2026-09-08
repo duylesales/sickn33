@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "Waar AI in SaaS-producten nog steeds een menselijke engineer nodig heeft",
   "description": "Een voor-en-na-blik op precies waar AI in SaaS-producten stopt voldoende te zijn op zichzelf, en waar het oordeel van een menselijke engineer nog steeds het over moet nemen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-14",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/where-ai-in-saas-products-still-needs-a" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/where-ai-in-saas-products-still-needs-a" }
 }
 </script>
 
@@ -50,7 +50,7 @@ In elk geval hierboven had de AI-tool geen ongelijk over wat ze bouwde — ze bo
 
 Dit is ook waarom de oplossing zelden betekent dat wat de AI-tool bouwde, wordt weggegooid. In bijna elk "voor en na"-paar hierboven is de na-toestand de voor-toestand plus extra afhandeling — geen herschrijving. Een technische solo-oprichter die deze lijst beoordeelt, zou het minder moeten lezen als "hoeveel van mijn door AI gebouwde product is fout" en meer als "hoeveel ervan is compleet voor de paden die ik heb getest, en incompleet voor de paden die ik nog niet heb getest." Dat zijn heel verschillende diagnoses, en slechts één daarvan rechtvaardigt opnieuw beginnen.
 
-LaunchStudio wordt mogelijk gemaakt door het team van meer dan 120 engineers van Manifera, dat een aanzienlijk deel van zijn werk besteedt aan het beoordelen van precies deze categorie hiaten in door AI gegenereerde SaaS-codebases voordat het een productie-incident wordt, met een kantoor aan de Herengracht 420 in Amsterdam als Europese basis van het team. Dit gaat niet over het vervangen van de AI-tools die uw product zover hebben gebracht — het gaat over het toevoegen van de beoordelingslaag die vangt wat hun nooit werd gevraagd af te handelen. Als uw SaaS echte klantbelasting nadert en u die laag wilt toevoegen voordat er iets kapotgaat in productie, kunt u [zien hoe het beoordelings- en verhardingsproces werkt](https://launchstudio.eu/en/#process), en voor de bredere engineeringdiscipline erachter, bekijk [Manifera's aanpak van mobiele en cross-platform ontwikkeling](https://www.manifera.com/services/mobile-app-development/) als één voorbeeld van diezelfde nauwgezetheid elders toegepast.
+LaunchStudio wordt mogelijk gemaakt door het team van meer dan 120 engineers van Manifera, dat een aanzienlijk deel van zijn werk besteedt aan het beoordelen van precies deze categorie hiaten in door AI gegenereerde SaaS-codebases voordat het een productie-incident wordt, met een kantoor aan de Herengracht 420 in Amsterdam als Europese basis van het team. Dit gaat niet over het vervangen van de AI-tools die uw product zover hebben gebracht — het gaat over het toevoegen van de beoordelingslaag die vangt wat hun nooit werd gevraagd af te handelen. Als uw SaaS echte klantbelasting nadert en u die laag wilt toevoegen voordat er iets kapotgaat in productie, kunt u [zien hoe het beoordelings- en verhardingsproces werkt](https://launchstudio.eu/nl/#process), en voor de bredere engineeringdiscipline erachter, bekijk [Manifera's aanpak van mobiele en cross-platform ontwikkeling](https://www.manifera.com/services/mobile-app-development/) als één voorbeeld van diezelfde nauwgezetheid elders toegepast.
 
 Voor een technische solo-oprichter specifiek is de praktische zet om vooraf te beslissen welke categorieën functies een menselijke beoordelingsronde krijgen voordat ze naar echte klanten worden gelanceerd, in plaats van van geval tot geval onder tijdsdruk te beslissen. Betalingslogica, alles dat de gegevens van een andere gebruiker raakt, en elke integratie met derden zijn redelijke standaardwaarden voor die lijst — niet omdat al het andere risicovrij is, maar omdat die drie categorieën consequent de plek zijn waar een ongenoemd randgeval verandert in een daadwerkelijk incident in plaats van een kleine ergernis.
 

@@ -13,10 +13,10 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "@type": "Article",
   "headline": "Waar beveiliging in door AI gegenereerde code meestal als eerste breekt",
   "description": "Voor bureaus die klantprototypes erven, breekt beveiliging in door AI gegenereerde code steeds op dezelfde handvol plekken. Dit is wat u moet controleren voordat u uw naam op de build van iemand anders zet.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-12",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/where-security-in-ai-generated-code-usually-breaks-down-first" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/where-security-in-ai-generated-code-usually-breaks-down-first" }
 }
 </script>
 
@@ -54,7 +54,7 @@ Waar een eerste controle als deze doorgaans tekortschiet, is vertrouwen: het vin
 
 ## Wat u met deze lijst moet doen als white-label partner
 
-Als u klantwerk aanneemt met door AI gegenereerde prototypes, zijn de eerlijke opties: bouw deze beoordelingscapaciteit intern op, wat echte tijd en beveiligingsexpertise vergt die uw team momenteel misschien niet heeft, of werk samen met een team dat deze beoordeling al als routine uitvoert en onder uw merk kan werken zonder dat uw klant ooit weet dat er een derde partij bij betrokken was. LaunchStudio, ondersteund door de engineers van Manifera — vertrouwd door organisaties waaronder Vodafone, TNO en CFLW bij grotere engagementen — biedt precies die tweede optie voor bureaus die de beoordeling goed willen laten doen zonder vanaf nul een beveiligingspraktijk op te bouwen. Het werk blijft onder uw naam en uw klantrelatie; de engineering gebeurt er stilletjes achter, gecoördineerd via Manifera's Zuidoost-Aziatische ontwikkelhub aan Tras Street in Singapore samen met de rest van het team. U kunt zien hoe het [white-label-proces werkt](https://launchstudio.eu/en/#process), en voor de bredere engineeringcredentials achter het partnerschap zijn [Manifera's technologiestack en -normen](https://www.manifera.com/about-us/manifera-technologies/) openbaar.
+Als u klantwerk aanneemt met door AI gegenereerde prototypes, zijn de eerlijke opties: bouw deze beoordelingscapaciteit intern op, wat echte tijd en beveiligingsexpertise vergt die uw team momenteel misschien niet heeft, of werk samen met een team dat deze beoordeling al als routine uitvoert en onder uw merk kan werken zonder dat uw klant ooit weet dat er een derde partij bij betrokken was. LaunchStudio, ondersteund door de engineers van Manifera — vertrouwd door organisaties waaronder Vodafone, TNO en CFLW bij grotere engagementen — biedt precies die tweede optie voor bureaus die de beoordeling goed willen laten doen zonder vanaf nul een beveiligingspraktijk op te bouwen. Het werk blijft onder uw naam en uw klantrelatie; de engineering gebeurt er stilletjes achter, gecoördineerd via Manifera's Zuidoost-Aziatische ontwikkelhub aan Tras Street in Singapore samen met de rest van het team. U kunt zien hoe het [white-label-proces werkt](https://launchstudio.eu/nl/#process), en voor de bredere engineeringcredentials achter het partnerschap zijn [Manifera's technologiestack en -normen](https://www.manifera.com/about-us/manifera-technologies/) openbaar.
 
 ## Echt voorbeeld
 

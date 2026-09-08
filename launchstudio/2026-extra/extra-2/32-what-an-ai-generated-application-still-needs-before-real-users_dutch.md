@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "datePublished": "2026-07-28",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-an-ai-generated-application-still-needs-before-real-users"
+    "@id": "https://launchstudio.eu/nl/blog/what-an-ai-generated-application-still-needs-before-real-users"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Voorbij handtekeningverificatie heeft een token een redelijke vervaltijd nodig w
 
 ## Wat een complete herstelling inhoudt
 
-Een correcte implementatie verifieert de handtekening van elk token bij elk verzoek, dwingt een redelijke vervaltijd af met een werkend verversingsmechanisme (refresh flow), en weigert alles wat voor een van beide controles zakt. [LaunchStudio](https://launchstudio.eu/en/) auditeert exact dit patroon als onderdeel van haar authenticatie-beoordelingsproces, ondersteund door Manifera's 11+ jaar ervaring met Auth0, Supabase Auth, en op maat gemaakte op JWT gebaseerde systemen.
+Een correcte implementatie verifieert de handtekening van elk token bij elk verzoek, dwingt een redelijke vervaltijd af met een werkend verversingsmechanisme (refresh flow), en weigert alles wat voor een van beide controles zakt. [LaunchStudio](https://launchstudio.eu/nl/) auditeert exact dit patroon als onderdeel van haar authenticatie-beoordelingsproces, ondersteund door Manifera's 11+ jaar ervaring met Auth0, Supabase Auth, en op maat gemaakte op JWT gebaseerde systemen.
 
 Manifera's audits voor sessie- en tokenbeveiliging worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

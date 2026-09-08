@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Hoe u de changelog van uw AI-coderingstool leest zonder een informaticadiploma",
   "description": "Een praktische handleiding voor niet-technische oprichters over het lezen van changelogs van AI-coderingstools zoals v0, Lovable, Bolt en Cursor, zodat een breaking change uw product niet stilletjes platlegt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/reading-ai-coding-tool-changelog" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/reading-ai-coding-tool-changelog" }
 }
 </script>
 
@@ -43,7 +43,7 @@ Als een breaking change is aangekondigd en uw product sindsdien niet opnieuw is 
 
 U hoeft niet vloeiend te worden in changelogs. U hebt een gewoonte van vijf minuten op vrijdag nodig: open de release notes-pagina van welk AI-coderingstool uw product ook draait, scan op de woorden "breaking" of "removed," en als u een van beide ziet, meld het dan aan wie uw technische kant behandelt voordat de volgende werkweek begint. Dat is het hele systeem. Oprichters die deze stap overslaan, zijn niet lui — ze hebben deze gewoonte simpelweg nooit opgebouwd, omdat niemand hun heeft verteld dat die nodig was.
 
-LaunchStudio brengt Manifera's enterprise-grade engineering naar de oprichterseconomie, en een deel daarvan betekent dat ons team — inclusief engineers gevestigd in Singapore die de regio Zuidoost-Azië bedienen — actief changelogs bijhoudt bij Lovable, Bolt, Cursor en v0, zodat oprichters ze niet alleen hoeven te ontcijferen. Als een changelog-item u nu zorgen baart, kunt u [berekenen wat een health check op uw project zou kosten](https://launchstudio.eu/en/#calculator) voordat een stille storing eerst uw klanten vindt. Manifera's team voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) past dezelfde proactieve monitoringdiscipline toe op veel grotere productiesystemen.
+LaunchStudio brengt Manifera's enterprise-grade engineering naar de oprichterseconomie, en een deel daarvan betekent dat ons team — inclusief engineers gevestigd in Singapore die de regio Zuidoost-Azië bedienen — actief changelogs bijhoudt bij Lovable, Bolt, Cursor en v0, zodat oprichters ze niet alleen hoeven te ontcijferen. Als een changelog-item u nu zorgen baart, kunt u [berekenen wat een health check op uw project zou kosten](https://launchstudio.eu/nl/#calculator) voordat een stille storing eerst uw klanten vindt. Manifera's team voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) past dezelfde proactieve monitoringdiscipline toe op veel grotere productiesystemen.
 
 ## Echt voorbeeld
 

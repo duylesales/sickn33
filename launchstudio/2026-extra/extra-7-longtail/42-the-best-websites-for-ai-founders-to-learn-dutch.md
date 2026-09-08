@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "De beste websites voor AI-oprichters om te leren wat lanceerklaar betekent",
   "description": "De meeste lijsten met de beste websites voor AI-oprichters verwijzen u naar nog meer tools. Deze verwijst naar wat die tools u niet zullen leren: wat productieklaar daadwerkelijk vereist.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-09",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/best-websites-for-ai-founders-to-learn" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/best-websites-for-ai-founders-to-learn" }
 }
 </script>
 

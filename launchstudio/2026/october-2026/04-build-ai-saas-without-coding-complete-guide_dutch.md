@@ -69,7 +69,7 @@ Dit is exact het punt waar de meeste niet-technische oprichters vastlopen. Uw pr
 4. **Productie-Deployment:** Het koppelen van een eigen domeinnaam, automatische SSL-certificaten, CI/CD-pijplijnen en staging/productie omgevingsscheiding.
 5. **Monitoring & Observability:** Het inrichten van centrale foutenregistratie (Sentry), uptime-monitoring en automatische waarschuwingen bij storingen.
 
-Dit is exact het werkterrein waar [LaunchStudio](https://launchstudio.eu/en/) in gespecialiseerd is. In tegenstelling tot traditionele softwarebureaus die uw prototype willen weggooien en voor € 20.000+ een compleet nieuw project willen starten, behoudt LaunchStudio uw AI-gegenereerde frontend en voegt uitsluitend de ontbrekende productielagen toe.
+Dit is exact het werkterrein waar [LaunchStudio](https://launchstudio.eu/nl/) in gespecialiseerd is. In tegenstelling tot traditionele softwarebureaus die uw prototype willen weggooien en voor € 20.000+ een compleet nieuw project willen starten, behoudt LaunchStudio uw AI-gegenereerde frontend en voegt uitsluitend de ontbrekende productielagen toe.
 
 LaunchStudio wordt aangedreven door [Manifera](https://www.manifera.com/), een internationaal softwarebedrijf opgericht in **2014** door **Herre Roelevink**, met hoofdkantoor aan de **Herengracht 420 in Amsterdam** en ontwikkelingshubs in **Singapore** en **Ho Chi Minhstad, Vietnam**. Onze 120+ software-engineers hebben meer dan 160 enterprise-projecten opgeleverd voor klanten zoals Vodafone en TNO — en die bewezen ervaring is nu direct toegankelijk voor AI-native oprichters tegen een fractie van de traditionele kosten.
 
@@ -92,7 +92,7 @@ Het complete traject — van een pril idee tot een live, betalende B2B SaaS-onde
 - LaunchStudio overbrugt de kloof tussen prototype en productie voor € 800 tot € 7.500 — een besparing van 60% tot 95% ten opzichte van traditionele bureaus.
 - U behoudt 100% eigenaarschap over uw broncode en kunt na lancering onbeperkt blijven itereren met AI.
 
-[Plan een vrijblijvend adviesgesprek van 15 minuten](https://launchstudio.eu/en/#contact) en ontdek direct wat er nodig is om uw AI-prototype veilig en succesvol live te brengen.
+[Plan een vrijblijvend adviesgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en ontdek direct wat er nodig is om uw AI-prototype veilig en succesvol live te brengen.
 
 ## Echt voorbeeld
 

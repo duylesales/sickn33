@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/dating-app-ai-tool-report-block-latency"
+    "@id": "https://launchstudio.eu/nl/blog/dating-app-ai-tool-report-block-latency"
   }
 }
 </script>
@@ -49,7 +49,7 @@ LaunchStudio behandelt functies voor vertrouwen en veiligheid zoals blokkeren, r
 
 Het sluiten van deze kloof betekent het behandelen van een blokkeeractie als een enkele synchrone operatie die elk relevant oppervlak bijwerkt – berichtmachtigingen, zoekzichtbaarheid, profieltoegang en berichtgeschiedenis – voordat de app aan de gebruiker bevestigt dat de blokkade is geslaagd, in plaats van het afvuren van asynchrone updates die voltooien volgens hun eigen tijdlijn. Het betekent ook het auditeren van elk leespad dat een geblokkeerde gebruiker nog steeds naar boven zou kunnen halen – zoeken, aanbevelingen, gedeelde groepen, activiteitsfeeds – om te bevestigen dat elk van hen expliciet de blokkeerrelatie controleert in plaats van aan te nemen dat een ander deel van de app het al heeft uitgefilterd.
 
-Manifera's engineeringteam, werkend met oprichters via LaunchStudio's hub in Singapore die de snelgroeiende consumenten-appmarkt van Zuidoost-Azië bedient, heeft exact dit soort audits van veiligheidsoppervlakken uitgevoerd bij community- en sociale platformen waar het vertrouwen van de gebruiker het kernproduct is. U kunt dat soort beoordeling starten via de [LaunchStudio-contactpagina](https://launchstudio.eu/en/#contact). Manifera's bredere team voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare strengheid toegepast op toegangsbeschermingslogica over een reeks van platformen.
+Manifera's engineeringteam, werkend met oprichters via LaunchStudio's hub in Singapore die de snelgroeiende consumenten-appmarkt van Zuidoost-Azië bedient, heeft exact dit soort audits van veiligheidsoppervlakken uitgevoerd bij community- en sociale platformen waar het vertrouwen van de gebruiker het kernproduct is. U kunt dat soort beoordeling starten via de [LaunchStudio-contactpagina](https://launchstudio.eu/nl/#contact). Manifera's bredere team voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare strengheid toegepast op toegangsbeschermingslogica over een reeks van platformen.
 
 ## Synchrone database-schrijfacties annuleren niet wat al in de wachtrij staat om te worden verzonden
 

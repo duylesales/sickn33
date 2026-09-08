@@ -37,9 +37,9 @@ Vraag: "Als er na lancering iets breekt, hoe kom ik dat daadwerkelijk te weten �
 
 Je hebt nu vijf vragen die, gesteld aan een freelancer, bureau, of engineeringpartner, je binnen enkele minuten vertellen of ze daadwerkelijk zorgvuldig hebben nagedacht over productiegereedheid of simpelweg van plan zijn te lanceren wat je al hebt, ongewijzigd, en op het beste te hopen. De specificiteit van het antwoord — niet het zelfvertrouwen waarmee het geleverd wordt — is wat de twee onderscheidt.
 
-[LaunchStudio](https://launchstudio.eu/en/) bestaat om precies deze vijf vragen concreet te beantwoorden voor jouw specifieke app — niet met geruststelling, maar met daadwerkelijke implementatie die je kunt verifiëren — gesteund door Manifera's engineeringteam en 11+ jaar productie-ervaring over oprecht verschillende industrieën en risicoprofielen.
+[LaunchStudio](https://launchstudio.eu/nl/) bestaat om precies deze vijf vragen concreet te beantwoorden voor jouw specifieke app — niet met geruststelling, maar met daadwerkelijke implementatie die je kunt verifiëren — gesteund door Manifera's engineeringteam en 11+ jaar productie-ervaring over oprecht verschillende industrieën en risicoprofielen.
 
-[Stel ons deze vijf vragen over jouw prototype](https://launchstudio.eu/en/#contact) — je krijgt specifieke antwoorden, geen generiek zelfvertrouwen.
+[Stel ons deze vijf vragen over jouw prototype](https://launchstudio.eu/nl/#contact) — je krijgt specifieke antwoorden, geen generiek zelfvertrouwen.
 
 ## Echt voorbeeld
 

@@ -12,10 +12,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "7 tekenen dat uw 'AI SaaS' eigenlijk gewoon een AI-functie in een SaaS-kostuum is",
   "description": "Veel producten die zichzelf 'AI SaaS' noemen, zijn in werkelijkheid niet meer dan één API-aanroep verpakt in een inlogscherm. Dit zijn zeven manieren om te bepalen welke van de twee u heeft gebouwd.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-saas-feature-in-costume" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-saas-feature-in-costume" }
 }
 </script>
 
@@ -51,7 +51,7 @@ Als uw productplan vooral gokt op toekomstige modelverbeteringen in plaats van v
 
 Wouter Peeters, een oprichter in Amersfoort, kwam tegelijkertijd teken #1 en #4 tegen. Hij bouwde "PlanPilot", een planningstool, met Lovable, en marketten het vanaf dag één als een AI SaaS. In werkelijkheid was de hele "AI"-laag een enkele onbeheerde GPT API-aanroep zonder fallback-logica eromheen. Toen de prijsstructuur van de onderliggende API veranderde, ging PlanPilot volledig kapot — geen wachtrij, geen gecachte antwoorden, geen soepele degradatie, alleen een kapotte functie en verwarde klanten.
 
-Dit patroon komt vaak genoeg voor dat LaunchStudio, aangedreven door Manifera en zijn 120+ engineers, een flink deel van elke prototypebeoordeling besteedt aan het controleren van precies deze zeven tekenen voordat productiewerk wordt aanbevolen. Ons team, gevestigd in Amsterdam, ziet hetzelfde wrapper-patroon terug in tientallen "AI SaaS"-pitches per maand. Als u een tweede mening wilt over waar uw product zich daadwerkelijk bevindt, [beschrijf dan uw project via ons proces](https://launchstudio.eu/en/#process) en wij zullen u dat eerlijk vertellen. Voor hoe een goed opgezet product vanaf het begin zou moeten worden gescoped, zie hoe [Manifera aangepaste softwareontwikkeling benadert](https://www.manifera.com/services/custom-software-development/).
+Dit patroon komt vaak genoeg voor dat LaunchStudio, aangedreven door Manifera en zijn 120+ engineers, een flink deel van elke prototypebeoordeling besteedt aan het controleren van precies deze zeven tekenen voordat productiewerk wordt aanbevolen. Ons team, gevestigd in Amsterdam, ziet hetzelfde wrapper-patroon terug in tientallen "AI SaaS"-pitches per maand. Als u een tweede mening wilt over waar uw product zich daadwerkelijk bevindt, [beschrijf dan uw project via ons proces](https://launchstudio.eu/nl/#process) en wij zullen u dat eerlijk vertellen. Voor hoe een goed opgezet product vanaf het begin zou moeten worden gescoped, zie hoe [Manifera aangepaste softwareontwikkeling benadert](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 

@@ -39,7 +39,7 @@ Elke schrijfactie en update op een zwaar geïndexeerde tabel — en vectortabell
 
 Om de scale-up fase met succes te doorstaan, moet u overstappen van een standaard "out-of-the-box" database-installatie naar professioneel enterprise database-beheer (Database Administration - DBA).
 
-Dit is waar technische oprichters samenwerken met [LaunchStudio](https://launchstudio.eu/en/). Gesteund door de diepgaande data-architectuurexpertise van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring, 120+ senior ontwikkelaars en meer dan 160 opgeleverde projecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons softwarecentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — transformeren wij overbelaste databases in razendsnelle, uiterst betrouwbare motoren.
+Dit is waar technische oprichters samenwerken met [LaunchStudio](https://launchstudio.eu/nl/). Gesteund door de diepgaande data-architectuurexpertise van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring, 120+ senior ontwikkelaars en meer dan 160 opgeleverde projecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons softwarecentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — transformeren wij overbelaste databases in razendsnelle, uiterst betrouwbare motoren.
 
 Zo schalen en beveiligen wij PostgreSQL specifiek voor AI SaaS:
 
@@ -49,7 +49,7 @@ Zo schalen en beveiligen wij PostgreSQL specifiek voor AI SaaS:
 4. **Opslag- en Autovacuum-Tuning:** We finetunen de autovacuum-drempelwaarden (`autovacuum_vacuum_scale_factor`, `autovacuum_cost_limit`) specifiek voor uw intensieve schrijftabellen, en monitoren `pg_stat_user_tables` proactief op vroege tekenen van bloat vóórdat klanten vertraging ondervinden.
 5. **Query Observability via `pg_stat_statements`:** We activeren gedetailleerde query-observability en koppelen deze aan realtime dashboards. In plaats van te gokken welke query traag is, ziet u exact welke specifieke vectorzoekopdracht, ongeïndexeerde filtervoorwaarde of complexe join de meeste cumulatieve rekentijd opeist, zodat onze engineers direct die specifieke bottleneck kunnen optimaliseren.
 
-De meeste oprichters proberen een trage database op te lossen door via het dashboard van hun cloudprovider direct op een grotere en veel duurdere server te klikken. Dat lost bij AI-databases het probleem vrijwel nooit op: een server met dubbele CPU-capaciteit stuit nog steeds op exact dezelfde verbindingslimiet van 100 connecties en voert nog steeds dezelfde trage sequentiële scan uit op een ongeïndexeerde vectorkolom. Het grondig corrigeren van de architectuur is de enige manier om serveruitval duurzaam te verhelpen — en het is vrijwel altijd aanzienlijk voordeliger dan de hardware-upgrades die oprichters in paniek aanschaffen. Zie onze [transparante projectpakketten](https://launchstudio.eu/en/#packages) voor een helder overzicht van onze database-optimalisatieservices.
+De meeste oprichters proberen een trage database op te lossen door via het dashboard van hun cloudprovider direct op een grotere en veel duurdere server te klikken. Dat lost bij AI-databases het probleem vrijwel nooit op: een server met dubbele CPU-capaciteit stuit nog steeds op exact dezelfde verbindingslimiet van 100 connecties en voert nog steeds dezelfde trage sequentiële scan uit op een ongeïndexeerde vectorkolom. Het grondig corrigeren van de architectuur is de enige manier om serveruitval duurzaam te verhelpen — en het is vrijwel altijd aanzienlijk voordeliger dan de hardware-upgrades die oprichters in paniek aanschaffen. Zie onze [transparante projectpakketten](https://launchstudio.eu/nl/#packages) voor een helder overzicht van onze database-optimalisatieservices.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -61,7 +61,7 @@ De meeste oprichters proberen een trage database op te lossen door via het dashb
 - Het upgraden naar een grotere server lost architecturale knelpunten rond verbindingen en ongeïndexeerde vectorzoekacties niet op.
 - LaunchStudio levert de senior database-architecten om uw PostgreSQL-infrastructuur optimaal in te richten voor extreme groei.
 
-[Laat uw database niet crashen tijdens verkeerspieken. Schaal uw PostgreSQL met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Laat uw database niet crashen tijdens verkeerspieken. Schaal uw PostgreSQL met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

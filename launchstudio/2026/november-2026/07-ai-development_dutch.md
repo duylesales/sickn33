@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-11-07",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-development"
+    "@id": "https://launchstudio.eu/nl/blog/ai-development"
   }
 }
 </script>
@@ -90,7 +90,7 @@ Kosten: €5.000 tot €50.000+. Doorlooptijd: 1 tot 6 maanden. Risico: traditio
 **Optie C: Een Gespecialiseerde Launch Service Inschakelen**
 Kosten: €800 tot €7.500 (vaste prijs). Doorlooptijd: 1 tot 3 weken. Risico: minimaal, omdat het proces specifiek is ingericht rondom met AI gebouwde applicaties.
 
-[LaunchStudio](https://launchstudio.eu/en/) is Optie C. Het is een initiatief van [Manifera](https://www.manifera.com/about-us/), een softwareontwikkelingsbedrijf opgericht door Herre Roelevink dat al meer dan 11 jaar actief is vanuit Amsterdam (Herengracht 420), Singapore (100 Tras Street) en Ho Chi Minhstad (Pho Quangstraat 10).
+[LaunchStudio](https://launchstudio.eu/nl/) is Optie C. Het is een initiatief van [Manifera](https://www.manifera.com/about-us/), een softwareontwikkelingsbedrijf opgericht door Herre Roelevink dat al meer dan 11 jaar actief is vanuit Amsterdam (Herengracht 420), Singapore (100 Tras Street) en Ho Chi Minhstad (Pho Quangstraat 10).
 
 Het onderscheidend vermogen: de engineers van LaunchStudio werken dagelijks met AI-codebases. Zij kennen de React-patronen van Lovable, de WebContainer-uitvoer van Bolt en de contextuele code van Cursor van binnenuit. Zij hoeven uw code niet opnieuw te ontdekken — ze kunnen er direct op voortbouwen.
 
@@ -108,7 +108,7 @@ Totale doorlooptijd: 4 tot 7 weken van idee tot omzet. Totale investering: tool-
 
 Vergelijk dat met de traditionele route: neem een fulltime CTO aan (€8.000/maand), besteed drie maanden aan architectuur, zes maanden aan ontwikkeling en lanceer een jaar later een product dat mogelijk de marktbehoefte mist.
 
-[Stuur LaunchStudio uw prototype voor gratis advies](https://launchstudio.eu/en/#contact).
+[Stuur LaunchStudio uw prototype voor gratis advies](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

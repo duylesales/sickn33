@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/church-donation-ai-app-recurring-gift-failures"
+    "@id": "https://launchstudio.eu/nl/blog/church-donation-ai-app-recurring-gift-failures"
   }
 }
 </script>
@@ -54,7 +54,7 @@ Een donatieplatform dat klaar is voor echt, voortdurend gebruik heeft een paar d
 - **Zichtbaarheid voor het personeel** — een dashboardweergave die mislukte en risicovolle terugkerende giften naar boven brengt, en niet alleen succesvolle, zodat een penningmeester een patroon kan opmerken voordat het twee maanden oud is.
 - **Een afstemmingslogboek** — een duidelijk logboek van elke poging, succes en fout per donateur, zodat niemand hoeft te raden wat er met een specifieke gift is gebeurd.
 
-Niets hiervan is exotisch. Het is dezelfde categorie werk die betrokken is bij elk abonnementsfacturatiesysteem, en het valt onder [LaunchStudio's pakketten met vaste omvang](https://launchstudio.eu/en/#packages), die doorgaans ver onder wat een traditionele ontwikkelaarswinkel zou offreren voor dezelfde omvang draaien – een verschil dat Manifera kan volhouden vanwege haar schaal, verder gedetailleerd op [Manifera's maatwerk softwareontwikkelingspagina](https://www.manifera.com/services/custom-software-development/).
+Niets hiervan is exotisch. Het is dezelfde categorie werk die betrokken is bij elk abonnementsfacturatiesysteem, en het valt onder [LaunchStudio's pakketten met vaste omvang](https://launchstudio.eu/nl/#packages), die doorgaans ver onder wat een traditionele ontwikkelaarswinkel zou offreren voor dezelfde omvang draaien – een verschil dat Manifera kan volhouden vanwege haar schaal, verder gedetailleerd op [Manifera's maatwerk softwareontwikkelingspagina](https://www.manifera.com/services/custom-software-development/).
 
 ## Herhaalpogingen introduceren een nieuw risico: Dezelfde gift twee keer afschrijven
 

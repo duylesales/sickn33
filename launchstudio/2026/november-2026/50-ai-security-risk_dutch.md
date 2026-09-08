@@ -16,7 +16,7 @@ Doelpersona: Security Engineer / CISO
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Security Engineer / CISO
   "datePublished": "2026-12-20",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-security-risk"
+    "@id": "https://launchstudio.eu/nl/blog/ai-security-risk"
   }
 }
 </script>
@@ -58,7 +58,7 @@ Wanneer de frontend de markdown-afbeelding rendert, stuurt de browser van de geb
 
 U kunt exfiltratie niet stoppen door simpelweg "wees veilig" in de prompt te schrijven. U moet op elke schakel fysieke barrières inrichten:
 
-[LaunchStudio](https://launchstudio.eu/en/), opererend volgens de strenge beveiligingsprotocollen van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt AI-toepassingen met meerlaagse verdediging:
+[LaunchStudio](https://launchstudio.eu/nl/), opererend volgens de strenge beveiligingsprotocollen van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt AI-toepassingen met meerlaagse verdediging:
 1. **Schakel 1 Breken (Invoersanitisatie):** Implementatie van semantische firewalls (NeMo Guardrails) en pre-processing pipelines die verborgen karakters, HTML en URL's uit geüploade bestanden strippen *voordat* het model ze leest.
 2. **Schakel 2 Breken (Least Privilege & RLS):** Wij dwingen Row Level Security (RLS) af in de vectordatabase. Zelfs als het model gemanipuleerd wordt, weigert de database de data omdat de sessie van de aanvaller geen autorisatietoken heeft voor andere gebruikers.
 3. **Schakel 3 Breken (Veilige Rendering & CSP):** Wij laten de frontend nooit ongecontroleerde markdown renderen. Externe afbeeldings- en script-tags worden gestript. Daarnaast dwingt een strikt Content Security Policy (CSP) af dat de browser van de gebruiker geen verbinding mag maken met ongeautoriseerde domeinen.

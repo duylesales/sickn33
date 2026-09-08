@@ -16,7 +16,7 @@ Doelpersona: VP of Engineering / CTO
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: VP of Engineering / CTO
   "datePublished": "2026-12-05",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/use-ai-to-generate-code"
+    "@id": "https://launchstudio.eu/nl/blog/use-ai-to-generate-code"
   }
 }
 </script>
@@ -67,7 +67,7 @@ Het IDP levert omgevingen op die fysiek geen directe toegang hebben tot de hoofd
 
 Het opzetten van een IDP en het configureren van strenge CI/CD-pipelines vereist diepgaande Platform Engineering en DevOps-expertise.
 
-[LaunchStudio](https://launchstudio.eu/en/), aangedreven door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt de fundamenten waarmee organisaties veilig kunnen innoveren met AI:
+[LaunchStudio](https://launchstudio.eu/nl/), aangedreven door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt de fundamenten waarmee organisaties veilig kunnen innoveren met AI:
 1. **Repository Templates:** Opzetten van veilige "Golden Paths" voor Next.js, Node.js en Python met enterprise-standaarden.
 2. **Geautomatiseerde Beveiligingspijplijnen:** Inrichten van GitHub Actions die AI-hallucinaties, hardcoded sleutels en kwetsbare dependencies automatisch blokkeren.
 3. **Infrastructure as Code (IaC):** Beheer van alle cloud-resources via Terraform voor een voorspelbare en veilige cloudomgeving.

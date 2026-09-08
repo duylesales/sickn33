@@ -56,7 +56,7 @@ Er is een kostencategorie die zelden in kostenoverzichten staat omdat er geen fa
 
 Om succesvol een app met AI te bouwen en daadwerkelijk te lanceren, heeft u een partner nodig die het verschil begrijpt tussen een prototype en een volwaardig product.
 
-[LaunchStudio](https://launchstudio.eu/en/) is specifiek opgericht om het "laatste mijl" probleem voor AI-native oprichters op te lossen. Gesteund door [Manifera](https://www.manifera.com/) — een softwareontwikkelingsbedrijf met ruim 11 jaar enterprise-ervaring — zijn onze engineers gespecialiseerd in het beveiligen en uitrollen van AI-gegenereerde codebases.
+[LaunchStudio](https://launchstudio.eu/nl/) is specifiek opgericht om het "laatste mijl" probleem voor AI-native oprichters op te lossen. Gesteund door [Manifera](https://www.manifera.com/) — een softwareontwikkelingsbedrijf met ruim 11 jaar enterprise-ervaring — zijn onze engineers gespecialiseerd in het beveiligen en uitrollen van AI-gegenereerde codebases.
 
 > "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -71,7 +71,7 @@ Door uitsluitend te bouwen wat er ontbreekt, brengt LaunchStudio uw AI-prototype
 - AI-tools optimaliseren voor snelheid en uiterlijk, waarbij cruciale beveiliging zoals Row Level Security (RLS) stelselmatig wordt overgeslagen — een lek dat in 45% van de AI-code voorkomt.
 - LaunchStudio behoudt uw met AI gebouwde frontend en implementeert uitsluitend de enterprise backend-infrastructuur die nodig is om veilig live te gaan.
 
-[Stuur ons uw prototype-link — wij geven u een gratis technische audit en een vaste prijsopgave om live te gaan](https://launchstudio.eu/en/#contact).
+[Stuur ons uw prototype-link — wij geven u een gratis technische audit en een vaste prijsopgave om live te gaan](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

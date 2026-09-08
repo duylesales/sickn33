@@ -33,9 +33,9 @@ De reden dat een afgebakende audit, in plaats van een generiek voorstel, het jui
 
 Een voorstel dat onmiddellijk springt naar "laten we dit correct herbouwen" zonder eerst jouw specifieke codebase te auditen is het waard om sceptisch tegenover te staan, niet omdat herbouwen nooit de juiste keuze is, maar omdat de correcte volgorde eerst audit, dan aanbeveling is — een provider die het dramatischere, duurdere pad voorstelt voordat daadwerkelijk onderzocht is wat je gebouwd hebt, heeft het werk nog niet gedaan nodig om die aanbeveling te rechtvaardigen.
 
-[LaunchStudio](https://launchstudio.eu/en/) start elke opdracht met precies dit soort afgebakende audit, en verhardt wat bestaat in plaats van standaard te herbouwen, en is transparant over de zeldzame gevallen waar herstructurering oprecht gerechtvaardigd is, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten van verharden, niet alleen bouwen vanaf nul.
+[LaunchStudio](https://launchstudio.eu/nl/) start elke opdracht met precies dit soort afgebakende audit, en verhardt wat bestaat in plaats van standaard te herbouwen, en is transparant over de zeldzame gevallen waar herstructurering oprecht gerechtvaardigd is, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten van verharden, niet alleen bouwen vanaf nul.
 
-[Ontdek wat jouw specifieke prototype daadwerkelijk nodig heeft voordat je het ergste aanneemt](https://launchstudio.eu/en/#contact) — het antwoord is doorgaans kleiner en minder disruptief dan de angst suggereert.
+[Ontdek wat jouw specifieke prototype daadwerkelijk nodig heeft voordat je het ergste aanneemt](https://launchstudio.eu/nl/#contact) — het antwoord is doorgaans kleiner en minder disruptief dan de angst suggereert.
 
 ## Echt voorbeeld
 

@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
   "@type": "Article",
   "headline": "Omgaan met beveiliging bij door AI gegenereerde code vóór uw eerste echte gebruiker",
   "description": "Beveiliging bij door AI gegenereerde code moet voor, niet na, uw eerste echte aanmelding geregeld worden. Dit is wat dat concreet betekent voor een niet-technische oprichter.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-10",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/handling-security-with-ai-generated-code-before-your" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/handling-security-with-ai-generated-code-before-your" }
 }
 </script>
 
@@ -48,7 +48,7 @@ Niets hiervan vervangt een goede beoordeling, en het slagen voor alle drie de co
 
 ## Een eerlijke beoordeling krijgen voordat u zich vastlegt
 
-U hoeft geen beveiligingsexpert te worden om hier verder te komen — u heeft één eerlijke, specifieke beoordeling nodig van wat uw specifieke app mist, en een vaste prijs om het te herstellen. [Het proces van LaunchStudio](https://launchstudio.eu/en/#process) begint met het beschrijven van wat u heeft gebouwd, gevolgd door een kort gesprek, gevolgd door een aanbod tegen vaste prijs met een duidelijke omvang — geen open-einde uurfacturering terwijl iemand uitzoekt wat er mis is.
+U hoeft geen beveiligingsexpert te worden om hier verder te komen — u heeft één eerlijke, specifieke beoordeling nodig van wat uw specifieke app mist, en een vaste prijs om het te herstellen. [Het proces van LaunchStudio](https://launchstudio.eu/nl/#process) begint met het beschrijven van wat u heeft gebouwd, gevolgd door een kort gesprek, gevolgd door een aanbod tegen vaste prijs met een duidelijke omvang — geen open-einde uurfacturering terwijl iemand uitzoekt wat er mis is.
 
 In tegenstelling tot een freelancer die alleen werkt, wordt LaunchStudio ondersteund door het engineeringteam van Manifera, met een ontwikkelcentrum aan Pho Quang Street in Ho Chi Minh-stad dat het beoordelen van productie- en door AI gegenereerde codebases als voltijdswerk heeft — wat betekent dat de checklist die op uw app wordt toegepast niet geïmproviseerd is, maar dezelfde checklist die al jarenlang wordt toegepast bij [de maatwerk softwareontwikkeling van Manifera](https://www.manifera.com/services/custom-software-development/), lang voordat AI-tools bestonden om het eerste ontwerp te versnellen.
 

@@ -16,7 +16,7 @@ Doelpersona: CTO / Oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CTO / Oprichter
   "datePublished": "2026-12-28",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-prototype"
+    "@id": "https://launchstudio.eu/nl/blog/ai-prototype"
   }
 }
 </script>
@@ -59,7 +59,7 @@ Wie een AI Proof-of-Concept (POC) wil transformeren naar een stabiele productie-
 
 Het overbruggen van deze kloof vereist het vervangen van losse testscripts door robuuste, deterministische infrastructuur.
 
-[LaunchStudio](https://launchstudio.eu/en/), gedragen door de enterprise software-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, transformeert kwetsbare prototypes naar schaalbare enterprise-systemen:
+[LaunchStudio](https://launchstudio.eu/nl/), gedragen door de enterprise software-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, transformeert kwetsbare prototypes naar schaalbare enterprise-systemen:
 1. **Enterprise RAG-Architectuur:** Wij vervangen kwetsbare scripts door geautomatiseerde ingestie-pipelines met geoptimaliseerde `pgvector`-indexen voor maximale data-integriteit.
 2. **Evaluation-Driven Development (EDD):** Wij richten geautomatiseerde CI/CD-testpipelines in waarin een secundair "Judge LLM" outputs toetst aan 1.000 testcases om regressies en hallucinaties uit te sluiten.
 3. **Infrastructure-as-Code:** Wij richten uw vectordatabases, LLM Gateways en semantische firewalls in via Terraform binnen uw eigen AWS- of Azure-cloud.

@@ -13,10 +13,10 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "@type": "Article",
   "headline": "Van AI-prototypes naar echte AI SaaS-producten waar klanten voor betalen",
   "description": "Een werkende Lovable-demo en een factureerbaar AI SaaS-product zijn niet dezelfde levering. Dit is hoe bureaus klantprototypes omzetten in producten waar klanten daadwerkelijk voor betalen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-12",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/turning-ai-prototypes-into-real-ai-saas-products" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/turning-ai-prototypes-into-real-ai-saas-products" }
 }
 </script>
 
@@ -48,7 +48,7 @@ Zowel oprichters als bureaus hebben de neiging om te onderschatten hoeveel van d
 
 De meeste kleine bureaus zijn uitstekend in waar hun scope altijd op is gericht geweest — design, merk, marketing, soms licht frontendwerk — en willen redelijkerwijs geen intern backend-beveiligings- en infrastructuurteam bouwen om slechts één klantverzoek te beantwoorden. Dat is precies het gat dat een white-label productiepartner opvult: het bureau behoudt de klantrelatie en het krediet, en het verharden van de backend, de facturatie-integratie en het infrastructuurwerk gebeuren achter de schermen.
 
-LaunchStudio brengt Manifera's engineering op ondernemingsniveau — dezelfde standaard achter meer dan 160 opgeleverde projecten voor klanten als Vodafone en TNO — terug naar budgetten en tijdlijnen op maat van oprichters en bureaus, met ontwikkelteams bereikbaar via een kantoor aan de Tras Street in Singapore naast Amsterdam en Ho Chi Minh-stad. Bureaus werken onder NDA met LaunchStudio, waarbij hun eigen branding centraal blijft staan voor de klant. Als uw bureau een klant heeft die op een prototype zit dat een echt, factureerbaar product moet worden, kunt u [het project beschrijven via onze contactpagina](https://launchstudio.eu/en/#contact) en een duidelijk antwoord krijgen over scope en prijs. Voor de bredere engineeringcapaciteit achter dat werk, bekijk hoe [Manifera offshore ontwikkelteams structureert](https://www.manifera.com/services/offshore-software-development/) voor partners die betrouwbare levering nodig hebben zonder intern te werven.
+LaunchStudio brengt Manifera's engineering op ondernemingsniveau — dezelfde standaard achter meer dan 160 opgeleverde projecten voor klanten als Vodafone en TNO — terug naar budgetten en tijdlijnen op maat van oprichters en bureaus, met ontwikkelteams bereikbaar via een kantoor aan de Tras Street in Singapore naast Amsterdam en Ho Chi Minh-stad. Bureaus werken onder NDA met LaunchStudio, waarbij hun eigen branding centraal blijft staan voor de klant. Als uw bureau een klant heeft die op een prototype zit dat een echt, factureerbaar product moet worden, kunt u [het project beschrijven via onze contactpagina](https://launchstudio.eu/nl/#contact) en een duidelijk antwoord krijgen over scope en prijs. Voor de bredere engineeringcapaciteit achter dat werk, bekijk hoe [Manifera offshore ontwikkelteams structureert](https://www.manifera.com/services/offshore-software-development/) voor partners die betrouwbare levering nodig hebben zonder intern te werven.
 
 ## Wat klanten daadwerkelijk opmerken, versus wat ze niet opmerken
 

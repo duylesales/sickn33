@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "Waarom software-engineering voor door AI gebouwde apps totaal niet lijkt op de tutorials",
   "description": "Software-engineering voor door AI gebouwde apps kost meer tijd en geld dan de tutorials suggereren. Hier is een eerlijk overzicht van waar die kosten daadwerkelijk naartoe gaan.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-09",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/why-software-engineering-for-ai-built-apps-looks" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/why-software-engineering-for-ai-built-apps-looks" }
 }
 </script>
 
@@ -54,7 +54,7 @@ Een Stripe-integratie klinkt als een dag werk totdat u ontdekt dat de webhook-ha
 
 Het volledig zelf doen kost het meest aan tijd en draagt het hoogste risico om iets te missen, aangezien u zowel de bouwer als de enige beoordelaar van uw eigen blinde vlekken bent. Een algemene freelancer inhuren kost ook vaak meer dan verwacht — de meeste freelancers zijn niet getraind om door AI gegenereerde code te lezen, en factureerbare uren lopen snel op wanneer iemand onbekende patronen debugt in plaats van bekende fixes toe te passen. Een traditioneel bureau zal vaak een volledige herbouw voorstellen, waarbij de frontend die u al gebouwd heeft wordt weggegooid, tegen een prijspunt van tienduizenden euro's en een tijdlijn gemeten in maanden.
 
-Een afgebakende opdracht die uw bestaande frontend behoudt en alleen de productielaag herstelt — het [Launch Ready-pakket](https://launchstudio.eu/en/#packages) van LaunchStudio kost € 800–€ 3.500 vast — zit op ruwweg 20% van wat een traditionele bureauherbouw zou kosten, met levering binnen één tot drie weken in plaats van kwartalen. U kunt uw eigen cijfers doorrekenen met [de prijscalculator van LaunchStudio](https://launchstudio.eu/en/#calculator) voordat u zich vastlegt op een pad, technisch of uitbesteed.
+Een afgebakende opdracht die uw bestaande frontend behoudt en alleen de productielaag herstelt — het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages) van LaunchStudio kost € 800–€ 3.500 vast — zit op ruwweg 20% van wat een traditionele bureauherbouw zou kosten, met levering binnen één tot drie weken in plaats van kwartalen. U kunt uw eigen cijfers doorrekenen met [de prijscalculator van LaunchStudio](https://launchstudio.eu/nl/#calculator) voordat u zich vastlegt op een pad, technisch of uitbesteed.
 
 ## Wanneer doorlopende engineeringkosten belangrijker zijn dan de initiële fix
 

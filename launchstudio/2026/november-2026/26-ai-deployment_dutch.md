@@ -16,7 +16,7 @@ Doelpersona: Technische Oprichter / DevOps Engineer
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Oprichter / DevOps Engineer
   "datePublished": "2026-11-26",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-deployment"
+    "@id": "https://launchstudio.eu/nl/blog/ai-deployment"
   }
 }
 </script>
@@ -73,7 +73,7 @@ Tijdens het buildproces in GitHub Actions wordt automatische telemetrie toegevoe
 
 Het inrichten van Edge Functions, Redis-wachtrijen en GitHub Actions leidt af van uw kerntaak: het bouwen van een succesvol bedrijf.
 
-[LaunchStudio](https://launchstudio.eu/en/) neemt deze engineeringlast volledig uit handen. Gesteund door de DevOps-ervaring van [Manifera](https://www.manifera.com/) richten wij veilige en schaalbare infrastructuren in onder leiding van Herre Roelevink (Amsterdam, Herengracht 420) en senior engineers in Ho Chi Minhstad (Pho Quangstraat 10):
+[LaunchStudio](https://launchstudio.eu/nl/) neemt deze engineeringlast volledig uit handen. Gesteund door de DevOps-ervaring van [Manifera](https://www.manifera.com/) richten wij veilige en schaalbare infrastructuren in onder leiding van Herre Roelevink (Amsterdam, Herengracht 420) en senior engineers in Ho Chi Minhstad (Pho Quangstraat 10):
 1. **Containerisatie & Edge-Optimalisatie:** Docker-containers voor zware achtergrondtaken of Vercel Edge-functies voor streaming chat.
 2. **Zero-Downtime CI/CD:** GitHub Actions die uw toekomstige AI-code automatisch valideren, testen en live zetten zonder onderbreking.
 3. **Beveiligde Cloud VPC:** Database en backend afgeschermd in een privaat netwerk.

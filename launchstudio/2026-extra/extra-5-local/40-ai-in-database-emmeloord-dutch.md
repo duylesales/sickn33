@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Waar AI in databaseontwerp stilletjes bochten afsnijdt voor Emmeloordse oprichters",
   "description": "Een technische onderbouwing van waar AI in het ontwerp van databaseschema's consistent bochten afsnijdt, met echte kosten en herstelvoorbeelden uit een Emmeloordse casus.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-in-database-emmeloord" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-in-database-emmeloord" }
 }
 </script>
 
@@ -42,7 +42,7 @@ Voor een technische oprichter is het herstel niet geheimzinnig — het is het ty
 
 "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. We hebben elf jaar ervaring in precies dat," zegt Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera. Database-architectuur is precies waar die volwassenheidskloof zich het eerst en het meest concreet toont — het is zelden zichtbaar in een demo, en vrijwel altijd zichtbaar op het moment dat echt datavolume en echte gelijktijdige gebruikers verschijnen.
 
-LaunchStudio wordt aangedreven door Manifera, een bedrijf met 120+ engineers en 160+ opgeleverde projecten, waaronder enterprise dataintensieve platformen voor klanten zoals Xpar Vision en Statler BI. Ons kantoor in Amsterdam aan de Herengracht 420 coördineert voor dit type schema-audit rechtstreeks met oprichters. De meeste trajecten voor het verharden van databases vallen binnen LaunchStudio's standaardbereik van € 800 tot € 7.500 — u kunt een nauwkeurige inschatting krijgen via onze [calculator](https://launchstudio.eu/en/#calculator), en Manifera's bredere offshore engineeringcapaciteit bekijken op [hun offshore development pagina](https://www.manifera.com/services/offshore-software-development/).
+LaunchStudio wordt aangedreven door Manifera, een bedrijf met 120+ engineers en 160+ opgeleverde projecten, waaronder enterprise dataintensieve platformen voor klanten zoals Xpar Vision en Statler BI. Ons kantoor in Amsterdam aan de Herengracht 420 coördineert voor dit type schema-audit rechtstreeks met oprichters. De meeste trajecten voor het verharden van databases vallen binnen LaunchStudio's standaardbereik van € 800 tot € 7.500 — u kunt een nauwkeurige inschatting krijgen via onze [calculator](https://launchstudio.eu/nl/#calculator), en Manifera's bredere offshore engineeringcapaciteit bekijken op [hun offshore development pagina](https://www.manifera.com/services/offshore-software-development/).
 
 ## Row-Level Security vs. Autorisatie op applicatieniveau: Welke heeft u daadwerkelijk nodig?
 

@@ -41,7 +41,7 @@ Een subtieler maar dodelijk struikelblok: elke externe clouddienst die uw applic
 
 ## De White-Label Compliance Oplossing van LaunchStudio
 
-Als creatief bureau, ontwerpbureau of marketingbureau heeft u doorgaans geen fulltime Chief Technology Officer (CTO) of ervaren DevOps-afdeling in dienst om een 150 vragen tellende security-vragenlijst in te vullen. Proberen de antwoorden te faken leidt tot ernstige juridische aansprakelijkheid: het onjuist voorstellen van uw beveiligingsniveau in een getekend contract kan bij een incident leiden tot torenhoge schadeclaims. Dit is exact waarom toonaangevende Europese bureaus samenwerken met [LaunchStudio](https://launchstudio.eu/en/).
+Als creatief bureau, ontwerpbureau of marketingbureau heeft u doorgaans geen fulltime Chief Technology Officer (CTO) of ervaren DevOps-afdeling in dienst om een 150 vragen tellende security-vragenlijst in te vullen. Proberen de antwoorden te faken leidt tot ernstige juridische aansprakelijkheid: het onjuist voorstellen van uw beveiligingsniveau in een getekend contract kan bij een incident leiden tot torenhoge schadeclaims. Dit is exact waarom toonaangevende Europese bureaus samenwerken met [LaunchStudio](https://launchstudio.eu/nl/).
 
 Aangedreven door de enterprise engineeringstandaarden van [Manifera](https://www.manifera.com/) — met ruim 11 jaar software-ervaring, meer dan 120 senior ontwikkelaars en 160+ succesvol opgeleverde projecten voor multinationals zoals Vodafone, TNO en CFLW vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons software-ontwikkelcentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — treedt LaunchStudio op als uw discrete, onzichtbare white-label IT-afdeling.
 
@@ -49,7 +49,7 @@ Aangedreven door de enterprise engineeringstandaarden van [Manifera](https://www
 
 Wanneer de 150 vragen tellende security-audit op uw bureau belandt, hoeft u niet in paniek te raken: u draagt de vragenlijst simpelweg aan ons over.
 
-Wij configureren de beveiligde Europese AWS-infrastructuur met KMS-beheerde AES-256 encryptie. We implementeren PostgreSQL Row Level Security met formele policy-definities die direct overlegd kunnen worden. We richten zero-retention AI-routing in met getekende DPA's. Bovendien helpen onze senior architecten u bij het invullen van de VSAQ en leveren wij de officiële architectuurdiagrammen, penetratietestrapporten en disaster recovery protocollen met geteste hersteltijden. Wij zorgen ervoor dat uw bureau overkomt als een volwassen, wereldwijd compliant softwarehuis — zie onze [service-pakketten](https://launchstudio.eu/en/#packages) voor heldere scopes.
+Wij configureren de beveiligde Europese AWS-infrastructuur met KMS-beheerde AES-256 encryptie. We implementeren PostgreSQL Row Level Security met formele policy-definities die direct overlegd kunnen worden. We richten zero-retention AI-routing in met getekende DPA's. Bovendien helpen onze senior architecten u bij het invullen van de VSAQ en leveren wij de officiële architectuurdiagrammen, penetratietestrapporten en disaster recovery protocollen met geteste hersteltijden. Wij zorgen ervoor dat uw bureau overkomt als een volwassen, wereldwijd compliant softwarehuis — zie onze [service-pakketten](https://launchstudio.eu/nl/#packages) voor heldere scopes.
 
 ## Wat U Moet Doen Zodra de VSAQ Binnenkomt
 
@@ -65,7 +65,7 @@ Daarnaast is het essentieel om te weten aan welk framework de klant hecht: Europ
 - Digitale bureaus missen vaak de interne technische slagkracht en documentatie om deze zware IT-audits zelfstandig te voltooien.
 - LaunchStudio biedt complete white-label enterprise engineering en compliance-ondersteuning, zodat uw bureau moeiteloos zes-cijferige zakelijke deals sluit.
 
-[Laat een IT-audit uw grootste klantdeal niet blokkeren. Werk vandaag nog samen met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Laat een IT-audit uw grootste klantdeal niet blokkeren. Werk vandaag nog samen met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

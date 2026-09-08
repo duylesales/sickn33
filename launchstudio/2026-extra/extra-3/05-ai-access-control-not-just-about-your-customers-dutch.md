@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-access-control-not-just-about-your-customers"
+    "@id": "https://launchstudio.eu/nl/blog/ai-access-control-not-just-about-your-customers"
   }
 }
 </script>
@@ -51,9 +51,9 @@ Individuele accounts in plaats van één gedeelde inlog, zodat toegang per perso
 
 ## Waarom dit een specifiek tijdige vraag is als een team groeit
 
-[LaunchStudio](https://launchstudio.eu/en/) behandelt intern toegangsbeheer als een standaard controlepunt op het moment dat een oprichtersteam zijn tweede of derde bijdrager toevoegt, wat dezelfde toegangsscopingsdiscipline weerspiegelt die Manifera intern toepast op al haar eigen teams in Amsterdam, Singapore en Ho Chi Minh-stad die werken aan enterprise-klantgegevens – een gedeelde inlog die volledig onschuldig voelde met één oprichter, wordt een echte, specifieke aansprakelijkheid op het moment dat er een team, hoe klein of informeel ook, omheen bestaat.
+[LaunchStudio](https://launchstudio.eu/nl/) behandelt intern toegangsbeheer als een standaard controlepunt op het moment dat een oprichtersteam zijn tweede of derde bijdrager toevoegt, wat dezelfde toegangsscopingsdiscipline weerspiegelt die Manifera intern toepast op al haar eigen teams in Amsterdam, Singapore en Ho Chi Minh-stad die werken aan enterprise-klantgegevens – een gedeelde inlog die volledig onschuldig voelde met één oprichter, wordt een echte, specifieke aansprakelijkheid op het moment dat er een team, hoe klein of informeel ook, omheen bestaat.
 
-[Laat uw interne toegang beoordelen voordat uw team de gedeelde inlog ontgroeit](https://launchstudio.eu/en/#contact) — een kloof die niets kost om vroeg te dichten en aanzienlijk meer om af te wikkelen als er eenmaal maandenlang stilletjes op is vertrouwd.
+[Laat uw interne toegang beoordelen voordat uw team de gedeelde inlog ontgroeit](https://launchstudio.eu/nl/#contact) — een kloof die niets kost om vroeg te dichten en aanzienlijk meer om af te wikkelen als er eenmaal maandenlang stilletjes op is vertrouwd.
 
 ## Een opsplitsing rol-voor-rol van hoe interne toegang er feitelijk uit zou moeten zien
 

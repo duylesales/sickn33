@@ -37,9 +37,9 @@ Over elke categorie — AVG-architectuur, dependencyproblemen, beveiligingsgaten
 
 Geen van deze zes lessen is individueel verrassend geïsoleerd — elk wordt diepgaand behandeld elders doorheen deze serie. Wat opmerkelijk is, is hoe consistent ze standhielden over een oprecht diverse set founders, producten, en AI-codeertools, wat suggereert dat dit geen idiosyncratische risico's specifiek voor ongewone gevallen zijn, maar een voorspelbaar, terugkerend patroon inherent aan hoe vibe-gecodeerde prototypes gegenereerd worden en hoe founders zich natuurlijk, begrijpelijk verhouden tot het gat tussen prototype en productie.
 
-[LaunchStudio](https://launchstudio.eu/en/) heeft precies deze patronen geobserveerd over 160+ opgeleverde projecten doorheen het jaar, wat precies waarom de audit-eerst, patroongeïnformeerde aanpak doorheen deze serie behandeld zo consistent werkt als het doet, gesteund door Manifera's geaccumuleerde engineeringervaring over deze specifieke categorie werk.
+[LaunchStudio](https://launchstudio.eu/nl/) heeft precies deze patronen geobserveerd over 160+ opgeleverde projecten doorheen het jaar, wat precies waarom de audit-eerst, patroongeïnformeerde aanpak doorheen deze serie behandeld zo consistent werkt als het doet, gesteund door Manifera's geaccumuleerde engineeringervaring over deze specifieke categorie werk.
 
-[Ontdek wat deze terugkerende patronen betekenen voor jouw specifieke prototype](https://launchstudio.eu/en/#contact) — het gat dat je onder ogen ziet is vrijwel zeker al eerder gezien, in een vorm specifiek genoeg om direct aan te pakken.
+[Ontdek wat deze terugkerende patronen betekenen voor jouw specifieke prototype](https://launchstudio.eu/nl/#contact) — het gat dat je onder ogen ziet is vrijwel zeker al eerder gezien, in een vorm specifiek genoeg om direct aan te pakken.
 
 ## Echt voorbeeld
 

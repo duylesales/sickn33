@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-12-26",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/cicd-ai-applications-deploying-ml-models"
+    "@id": "https://launchstudio.eu/nl/blog/cicd-ai-applications-deploying-ml-models"
   }
 }
 </script>
@@ -58,9 +58,9 @@ Productie-deployments moeten expliciet vastpinnen welke specifieke modelversie w
 
 De meeste AI-native oprichters hebben geen fulltime DevOps-engineer nodig om een solide CI/CD-straat te hebben — moderne platforms zoals GitHub Actions en Vercel bieden uitstekende out-of-the-box automatisering. Het benodigde vakmanschap zit in het bepalen wát u test en welke drempels u instelt voor de AI-afhankelijke onderdelen van uw applicatie.
 
-[LaunchStudio](https://launchstudio.eu/en/) richt AI-vriendelijke CI/CD-pipelines in als vast onderdeel van productielanceringen, waarbij Manifera's 11+ jaar ervaring met DevOps (GitHub Actions, Docker, gefaseerde deployments) over 160+ projecten wordt toegepast op AI-applicaties.
+[LaunchStudio](https://launchstudio.eu/nl/) richt AI-vriendelijke CI/CD-pipelines in als vast onderdeel van productielanceringen, waarbij Manifera's 11+ jaar ervaring met DevOps (GitHub Actions, Docker, gefaseerde deployments) over 160+ projecten wordt toegepast op AI-applicaties.
 
-[Bespreek uw deployment pipeline](https://launchstudio.eu/en/#contact) met een engineer die zowel traditionele CI/CD als AI-specifieke uitdagingen begrijpt.
+[Bespreek uw deployment pipeline](https://launchstudio.eu/nl/#contact) met een engineer die zowel traditionele CI/CD als AI-specifieke uitdagingen begrijpt.
 
 ## Monitoring en Rollback: Wat Er Gebeurt Nádat een Deployment Is Goedgekeurd
 

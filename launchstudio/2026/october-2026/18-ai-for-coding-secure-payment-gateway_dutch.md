@@ -55,7 +55,7 @@ Als niet-technische ondernemer is het eindeloos worstelen met AI-prompts over St
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Dit is exact waar [LaunchStudio](https://launchstudio.eu/en/) uitkomst biedt. Gesteund door de 11+ jaar ervaring van [Manifera](https://www.manifera.com/) in enterprise software-engineering — met ervaren engineeringteams in ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze internationale vestiging in **Singapore** (100 Tras Street) en ons centrale ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** — slaan wij de betrouwbare brug tussen uw AI-prototype en uw eerste betalende klant.
+Dit is exact waar [LaunchStudio](https://launchstudio.eu/nl/) uitkomst biedt. Gesteund door de 11+ jaar ervaring van [Manifera](https://www.manifera.com/) in enterprise software-engineering — met ervaren engineeringteams in ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze internationale vestiging in **Singapore** (100 Tras Street) en ons centrale ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** — slaan wij de betrouwbare brug tussen uw AI-prototype en uw eerste betalende klant.
 
 Wij hanteren een doelgerichte "laatste mijl"-aanpak. Wij blijven volledig van uw zorgvuldig ontworpen prijzenpagina af. Onze senior engineers nemen uitsluitend de backend over: wij configureren uw Stripe- of Mollie-dashboards in zowel test- als live-modus, bouwen de cryptografisch beveiligde webhook-listeners met idempotentie-bescherming, en koppelen geslaagde betalingen direct aan uw database.
 
@@ -70,7 +70,7 @@ Wij transformeren de met AI gegenereerde "Abonneren"-knop in een veilige, geauto
 - Afhandeling van storneringen, opzeggingen en chargebacks ontbreekt standaard in AI-code en vereist handmatige defensieve engineering.
 - LaunchStudio realiseert de complete backend-integratie voor betalingen tegen een vaste prijs zonder uw frontend aan te tasten.
 
-[Stop met worstelen tegen Stripe-foutmeldingen. Laat ons uw betalingssysteem veilig aansluiten](https://launchstudio.eu/en/#contact).
+[Stop met worstelen tegen Stripe-foutmeldingen. Laat ons uw betalingssysteem veilig aansluiten](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

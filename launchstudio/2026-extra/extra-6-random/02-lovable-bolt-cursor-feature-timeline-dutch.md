@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Wat er is veranderd in Lovable, Bolt en Cursor sinds hun eerste release — een functietijdlijn",
   "description": "Een tijdlijn van hoe Lovable, Bolt en Cursor zich hebben ontwikkeld sinds hun lancering, en waarom het najagen van de nieuwste functies halverwege een project stilletjes kan breken wat u al hebt gebouwd.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-26",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/lovable-bolt-cursor-feature-timeline" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/lovable-bolt-cursor-feature-timeline" }
 }
 </script>
 
@@ -39,7 +39,7 @@ Cursors traject kende de meest dramatische verschuiving in *reikwijdte*. Het beg
 
 De rode draad is niet welke tool de "beste" is — het is dat alle drie hun reikwijdte sneller hebben uitgebreid dan dat ze achterwaartse compatibiliteit met projecten op eerdere versies hebben gegarandeerd. Nieuwe functies krijgen echte engineering-investering. Ervoor zorgen dat uw project van zes maanden oud netjes migreert naar de nieuwe conventies, krijgt minder. Precies daar lopen oprichters vast: ze jagen een nieuwe mogelijkheid na, en iets dat stilletjes afhankelijk was van de oude structuur stopt met werken, soms zonder ergens een foutmelding te tonen.
 
-LaunchStudio wordt ondersteund door Manifera — vertrouwd door zakelijke klanten waaronder Vodafone, TNO en CFLW — en ons engineeringteam, met een hub in Singapore die deze tools nauwlettend volgt over verschillende tijdzones heen, besteedt echte tijd aan het begrijpen van wat er tussen AI-toolversies is veranderd, juist omdat oprichters ons projecten brengen die zich over twee tijdperken van dezelfde tool uitstrekken. Als uw project een toolwissel of een grote versiesprong heeft doorgemaakt, [krijg dan een gratis beoordeling van uw prototype](https://launchstudio.eu/en/#contact) voordat u er per ongeluk achter komt wat er kapot is gegaan. U kunt ook zien hoe Manifera denkt over [langetermijn-webapplicatieontwikkeling](https://www.manifera.com/services/web-app-develop/) voorbij de releasecyclus van welke AI-tool dan ook.
+LaunchStudio wordt ondersteund door Manifera — vertrouwd door zakelijke klanten waaronder Vodafone, TNO en CFLW — en ons engineeringteam, met een hub in Singapore die deze tools nauwlettend volgt over verschillende tijdzones heen, besteedt echte tijd aan het begrijpen van wat er tussen AI-toolversies is veranderd, juist omdat oprichters ons projecten brengen die zich over twee tijdperken van dezelfde tool uitstrekken. Als uw project een toolwissel of een grote versiesprong heeft doorgemaakt, [krijg dan een gratis beoordeling van uw prototype](https://launchstudio.eu/nl/#contact) voordat u er per ongeluk achter komt wat er kapot is gegaan. U kunt ook zien hoe Manifera denkt over [langetermijn-webapplicatieontwikkeling](https://www.manifera.com/services/web-app-develop/) voorbij de releasecyclus van welke AI-tool dan ook.
 
 ## Echt voorbeeld
 

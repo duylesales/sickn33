@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Het bezwaar dat we het vaakst horen van technische medeoprichters (en waarom het meestal onjuist is)",
   "description": "De meest gehoorde tegenwerping die LaunchStudio krijgt van technische medeoprichters over het repareren van door AI gegenereerde code in plaats van herschrijven, en waarom een gerichte reparatie meestal beter is dan een volledige herschrijving.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/technical-cofounder-objection" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/technical-cofounder-objection" }
 }
 </script>
 
@@ -41,7 +41,7 @@ Voordat u standaard voor een volledige herschrijving kiest, is het de moeite waa
 
 In vrijwel elk geval dat we hebben beoordeeld, wijst het eerlijke antwoord op deze drie vragen naar een gerichte reparatie, geen herschrijving. Het instinct om door AI gegenereerde code te wantrouwen is terecht. De conclusie dat dat wantrouwen vereist dat u helemaal opnieuw begint, meestal niet.
 
-Onze engineers — werkzaam vanuit Ho Chi Minh-stad, waar Manifera zijn belangrijkste engineeringcentrum heeft — beoordelen deze precieze afweging bijna wekelijks, omdat het het meest voorkomende splitsingspunt is voor technische medeoprichters die een Bolt- of Lovable-prototype evalueren. Achter LaunchStudio staat Manifera's team van 120+ ervaren engineers, en het beoordelingsproces is bewust zo opgezet dat "repareren of herschrijven" met bewijs wordt beantwoord, niet met een onderbuikgevoel. Als u midden in een discussie zit met een technische medeoprichter, kunt u [het project beschrijven en een gerichte beoordeling krijgen](https://launchstudio.eu/en/#contact) voordat een van beide partijen zich zes weken vastlegt op het verkeerde antwoord. Het team voor [aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera past dezelfde repareer-eerst-discipline toe op zakelijke codebases, niet alleen op door AI gegenereerde.
+Onze engineers — werkzaam vanuit Ho Chi Minh-stad, waar Manifera zijn belangrijkste engineeringcentrum heeft — beoordelen deze precieze afweging bijna wekelijks, omdat het het meest voorkomende splitsingspunt is voor technische medeoprichters die een Bolt- of Lovable-prototype evalueren. Achter LaunchStudio staat Manifera's team van 120+ ervaren engineers, en het beoordelingsproces is bewust zo opgezet dat "repareren of herschrijven" met bewijs wordt beantwoord, niet met een onderbuikgevoel. Als u midden in een discussie zit met een technische medeoprichter, kunt u [het project beschrijven en een gerichte beoordeling krijgen](https://launchstudio.eu/nl/#contact) voordat een van beide partijen zich zes weken vastlegt op het verkeerde antwoord. Het team voor [aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera past dezelfde repareer-eerst-discipline toe op zakelijke codebases, niet alleen op door AI gegenereerde.
 
 ## Echt voorbeeld
 

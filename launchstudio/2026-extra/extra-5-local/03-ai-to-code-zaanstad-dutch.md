@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI gebruiken om te coderen in Zaanstad: Gids van een oprichter naar productie",
   "description": "Een praktische gids voor Zaanse oprichters die AI gebruiken om hun MVP te coderen, over wat er nog staat tussen een werkend prototype en een product dat klaar is voor betalende klanten.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-to-code-zaanstad" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-to-code-zaanstad" }
 }
 </script>
 
@@ -40,7 +40,7 @@ Die operationele mindset is in zekere zin ook precies de juiste instelling, maar
 
 Geen van deze punten vereist het herbouwen van wat al is neergezet. Ze vereisen een laag van engineeringdiscipline die er bovenop wordt aangebracht — wat precies het werk is dat LaunchStudio doet. In de praktijk gaat dat werk vaak minder over het schrijven van nieuwe functies en meer over het stellen van de vragen die een AI-codingtool nooit stelt: wat gebeurt er als deze migratie halverwege mislukt, wie krijgt een melding als de databasegeheugenruimte opraakt, en wat is de werkelijke hersteltijd als het ergste scenario op deze lijst plaatsvindt op een vrijdagavond. LaunchStudio wordt aangedreven door Manifera, wier engineers werken vanuit een ontwikkelhub aan Tras Street in Singapore in coördinatie met het Amsterdamse team om AI-gegenereerde codebases te beoordelen en te verharden voor oprichters in heel Noord-Holland en daarbuiten, zonder de frontend aan te raken die een oprichter al met gebruikers heeft gevalideerd.
 
-Voor een indruk van hoe dit type productieverharding heeft gewerkt voor andere bedrijven, documenteert de [portfolio](https://www.manifera.com/portfolio/) van Manifera meer dan 160 opgeleverde projecten in diverse sectoren. En als u wilt bepalen waar uw eigen in Zaanstad gebouwde prototype momenteel staat, doorloopt de [homepage van LaunchStudio](https://launchstudio.eu/en/) het volledige pad van prototype tot lancering.
+Voor een indruk van hoe dit type productieverharding heeft gewerkt voor andere bedrijven, documenteert de [portfolio](https://www.manifera.com/portfolio/) van Manifera meer dan 160 opgeleverde projecten in diverse sectoren. En als u wilt bepalen waar uw eigen in Zaanstad gebouwde prototype momenteel staat, doorloopt de [homepage van LaunchStudio](https://launchstudio.eu/nl/) het volledige pad van prototype tot lancering.
 
 ## Van "Het draait" naar "Het is live"
 

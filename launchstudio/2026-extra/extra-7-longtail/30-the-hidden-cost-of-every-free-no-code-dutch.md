@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "De verborgen kosten van elke gratis no-code AI-tool bij lancering",
   "description": "Een gratis no-code AI-tool blijft nooit gratis zodra u lanceert. Dit is een echt kostenoverzicht van wat de gratis laag u niet laat zien, en wanneer betalen om te migreren de moeite waard is.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-12",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/the-hidden-cost-of-every-free-no-code" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/the-hidden-cost-of-every-free-no-code" }
 }
 </script>
 
@@ -56,7 +56,7 @@ Het cijfer dat de berekening verandert, is hoe snel u verwacht te blijven groeie
 
 ## Wanneer migreren van de gratis laag de moeite waard is om voor te betalen
 
-Als u technisch bent, kunt u deze migratie zelf proberen, en voor een kleine app is dat vaak redelijk. Waar het duur wordt, is precies in het bovengenoemde probleem van leveranciersafhankelijkheid — het ontwarren van eigen conventies kost echte tijd, en het fout doen brengt risico op dataverlies of downtime voor gebruikers die actief op de app vertrouwen. Een afgebakende migratieopdracht, uitgevoerd door engineers die deze exacte overgang al eerder gedaan hebben, lost het doorgaans sneller en met minder risico op dan een eerste solopoging. LaunchStudio, aangedreven door [het engineeringteam van Manifera](https://www.manifera.com/services/offshore-software-development/) dat werkt vanuit haar Europese hub aan de Herengracht 420 in Amsterdam, behandelt dit migratiepad regelmatig als onderdeel van het [Launch Ready-pakket](https://launchstudio.eu/en/#packages) — u kunt uw eigen cijfers doorrekenen voor wat een migratie zou kunnen kosten met [de calculator van LaunchStudio](https://launchstudio.eu/en/#calculator) voordat u zich op een van beide vastlegt.
+Als u technisch bent, kunt u deze migratie zelf proberen, en voor een kleine app is dat vaak redelijk. Waar het duur wordt, is precies in het bovengenoemde probleem van leveranciersafhankelijkheid — het ontwarren van eigen conventies kost echte tijd, en het fout doen brengt risico op dataverlies of downtime voor gebruikers die actief op de app vertrouwen. Een afgebakende migratieopdracht, uitgevoerd door engineers die deze exacte overgang al eerder gedaan hebben, lost het doorgaans sneller en met minder risico op dan een eerste solopoging. LaunchStudio, aangedreven door [het engineeringteam van Manifera](https://www.manifera.com/services/offshore-software-development/) dat werkt vanuit haar Europese hub aan de Herengracht 420 in Amsterdam, behandelt dit migratiepad regelmatig als onderdeel van het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages) — u kunt uw eigen cijfers doorrekenen voor wat een migratie zou kunnen kosten met [de calculator van LaunchStudio](https://launchstudio.eu/nl/#calculator) voordat u zich op een van beide vastlegt.
 
 ## Echt voorbeeld
 

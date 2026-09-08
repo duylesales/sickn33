@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Wat 'AI voor Ontwikkeling' Wel en Niet Zal Vervangen, Volgens de Mensen Die Dit Fulltime Doen",
   "description": "Na 100 artikelen over het naar productie brengen van door AI gebouwde producten, hier is het eerlijke antwoord op wat AI voor ontwikkeling daadwerkelijk vervangt — het typewerk, niet het oordeel.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-for-development-what-it-wont-replace" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-for-development-what-it-wont-replace" }
 }
 </script>
 
@@ -39,7 +39,7 @@ Verwacht dat de zin precies blijft betekenen wat hij vandaag betekent: een drama
 
 "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer goede ideeën omzetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. We hebben elf jaar ervaring in precies dat," zegt Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera. Het is een gepaste noot om een reeks van honderd artikelen mee af te sluiten: het typewerk is opgelost. De volwassenheid — de architectuur, de beveiliging, het oordeel — is nog steeds de klus.
 
-LaunchStudio, vanuit zijn Europese hoofdkantoor in Amsterdam, bestaat specifiek voor dat tweede deel — de delen van een project waarover geen enkele codeertool zelfstandig beslist. Als u iets heeft gebouwd met Lovable, Bolt, Cursor of v0 en u niet zeker weet waar de oordeelslacunes in uw eigen product zitten, is ons [gratis advies](https://launchstudio.eu/en/#contact) een snelle manier om dat te ontdekken, en de [over-ons-pagina](https://www.manifera.com/about-us/) van Manifera vertelt het langere verhaal achter de elf jaar achter dat oordeel.
+LaunchStudio, vanuit zijn Europese hoofdkantoor in Amsterdam, bestaat specifiek voor dat tweede deel — de delen van een project waarover geen enkele codeertool zelfstandig beslist. Als u iets heeft gebouwd met Lovable, Bolt, Cursor of v0 en u niet zeker weet waar de oordeelslacunes in uw eigen product zitten, is ons [gratis advies](https://launchstudio.eu/nl/#contact) een snelle manier om dat te ontdekken, en de [over-ons-pagina](https://www.manifera.com/about-us/) van Manifera vertelt het langere verhaal achter de elf jaar achter dat oordeel.
 
 ## Echt voorbeeld
 

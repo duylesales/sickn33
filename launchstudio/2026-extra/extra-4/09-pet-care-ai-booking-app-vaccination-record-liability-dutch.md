@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/pet-care-ai-booking-app-vaccination-record-liability"
+    "@id": "https://launchstudio.eu/nl/blog/pet-care-ai-booking-app-vaccination-record-liability"
   }
 }
 </script>
@@ -49,7 +49,7 @@ Achter LaunchStudio staat Manifera's team van meer dan 120 ervaren ingenieurs. W
 
 De herstelling zelf is architecturaal niet ingewikkeld – dat is een deel van wat het eenvoudig maakt om te missen en snel te corrigeren. Het betekent het verplaatsen van de controle op vaccinatie-vervaldatum van een eenmalige poort bij aanmelding naar een validatie die elke keer dat er een nieuwe boeking wordt aangemaakt draait tegen de boekingsdatum, met een duidelijke blokkade of waarschuwingsstatus als het certificaat op de bezoekdatum zal zijn verlopen. Ons engineeringcentrum in Ho Chi Minh-stad handelt dit soort validatielogica-herstel regelmatig af voor oprichters die boekings-apps verplaatsen van prototype naar echte operaties. Het raakt doorgaans de boekings-API, het meldingssysteem (om eigenaren te vragen opnieuw te uploaden voordat het een blokkade wordt) en het beheerdersdashboard van de exploitant, zodat het personeel de status van het certificaat in één oogopslag kan zien in plaats van door documenten te spitten.
 
-Als u niet zeker weet of uw eigen boekings-app deze kloof vertoont, [onze procespagina](https://launchstudio.eu/en/#process) doorloopt hoe een technische beoordeling werkt voordat u zich verbindt aan een herstelling. Manifera's bredere [ontwikkelingswerk voor web-apps](https://www.manifera.com/services/web-app-develop/) volgt hetzelfde principe: validatielogica moet overeenkomen met de timing in de echte wereld, en niet alleen met het ideale pad dat een demo behandelt.
+Als u niet zeker weet of uw eigen boekings-app deze kloof vertoont, [onze procespagina](https://launchstudio.eu/nl/#process) doorloopt hoe een technische beoordeling werkt voordat u zich verbindt aan een herstelling. Manifera's bredere [ontwikkelingswerk voor web-apps](https://www.manifera.com/services/web-app-develop/) volgt hetzelfde principe: validatielogica moet overeenkomen met de timing in de echte wereld, en niet alleen met het ideale pad dat een demo behandelt.
 
 ## Meerdaagse verblijven breken de "Controleer bij boeking"-herstelling ook
 

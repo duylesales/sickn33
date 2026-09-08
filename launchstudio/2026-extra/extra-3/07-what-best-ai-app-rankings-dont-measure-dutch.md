@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-best-ai-app-rankings-dont-measure"
+    "@id": "https://launchstudio.eu/nl/blog/what-best-ai-app-rankings-dont-measure"
   }
 }
 </script>
@@ -49,9 +49,9 @@ Aantal functies en interface-afwerking correleren met hoeveel ontwerp- en prompt
 
 In plaats van de gereedheid van uw eigen prototype te meten aan de hand van hoe het visueel of functioneel afsteekt tegen een hooggeplaatste concurrent, is de nuttigere vergelijking ten opzichte van de specifieke, controleerbare categorieën van productiegereedheid die geen enkele ranglijst vastlegt – aangezien het evenaren van de zichtbare afwerking van een concurrent u niets vertelt over of u ook de onzichtbare verharding hebt geëvenaard, of daarin tekort bent geschoten, die die concurrent al dan niet heeft.
 
-[LaunchStudio](https://launchstudio.eu/en/) evalueert precies de dimensies die een "beste AI-app"-lijst structureel niet kan zien – door authenticatie, gegevensverwerking en betrouwbaarheid rechtstreeks te testen in plaats van op basis van indrukken – wat oprichters een echte productiegereedheids-benchmark geeft in plaats van een vorm van een ranglijst, ondersteund door Manifera's engineeringdiscipline over meer dan 160 geleverde projecten die op dezelfde strenge manier zijn beoordeeld, ongeacht hoe gepolijst het oppervlak er al uitzag.
+[LaunchStudio](https://launchstudio.eu/nl/) evalueert precies de dimensies die een "beste AI-app"-lijst structureel niet kan zien – door authenticatie, gegevensverwerking en betrouwbaarheid rechtstreeks te testen in plaats van op basis van indrukken – wat oprichters een echte productiegereedheids-benchmark geeft in plaats van een vorm van een ranglijst, ondersteund door Manifera's engineeringdiscipline over meer dan 160 geleverde projecten die op dezelfde strenge manier zijn beoordeeld, ongeacht hoe gepolijst het oppervlak er al uitzag.
 
-[Laat u beoordelen op wat er echt toe doet, niet op wat een lijst kan zien](https://launchstudio.eu/en/#calculator) — afwerking en productiegereedheid worden op een volledig andere manier gemeten.
+[Laat u beoordelen op wat er echt toe doet, niet op wat een lijst kan zien](https://launchstudio.eu/nl/#calculator) — afwerking en productiegereedheid worden op een volledig andere manier gemeten.
 
 ## Een zelftest: De categorieën die een ranglijst structureel niet kan zien
 

@@ -41,7 +41,7 @@ Om een verdedigbare, schaalbare SaaS op te bouwen, moet u **cloud-agnostisch en 
 
 Dit betekent dat u een backend-architectuur bouwt die fungeert als een universele vertaler. In plaats van dat uw frontend zegt *"Stuur dit direct naar OpenAI"*, zegt uw frontend *"Stuur dit naar onze centrale LLM Router"*. Deze intelligente Router beslist vervolgens in realtime — op basis van actuele kosten, responstijd, taaktype of server-beschikbaarheid — of het verzoek naar OpenAI, Anthropic, of een opensource model zoals Llama of Mistral wordt gestuurd.
 
-Dit is exact de architecturale transformatie die [LaunchStudio](https://launchstudio.eu/en/) uitvoert voor groeiende AI-startups.
+Dit is exact de architecturale transformatie die [LaunchStudio](https://launchstudio.eu/nl/) uitvoert voor groeiende AI-startups.
 
 Gesteund door de uitgebreide enterprise software-ervaring van [Manifera](https://www.manifera.com/) — met engineeringteams in Amsterdam en Ho Chi Minhstad — herbouwen wij breekbare, vergrendelde MVP's tot robuuste, leveranciersonafhankelijke platforms.
 
@@ -68,7 +68,7 @@ Beantwoordt u meer dan één vraag met "nee", dan is vendor lock-in geen toekoms
 - Automatische failover-systemen schakelen bij storingen binnen milliseconden over naar een alternatieve AI-provider zónder dat gebruikers hinder ondervinden.
 - LaunchStudio levert de senior engineering om universele routeringsarchitecturen te bouwen, waardoor u 100% eigenaar wordt van uw techniek.
 
-[Stop met het huren van uw architectuur. Bouw een onafhankelijke backend met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Stop met het huren van uw architectuur. Bouw een onafhankelijke backend met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

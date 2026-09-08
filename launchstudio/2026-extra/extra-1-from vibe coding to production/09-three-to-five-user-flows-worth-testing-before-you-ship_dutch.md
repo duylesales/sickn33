@@ -33,9 +33,9 @@ De enkele meest waardevolle testgewoonte, en degene die handmatige testers het c
 
 Deze categorie verdient zijn eigen nadruk omdat het structureel anders is dan andere testgaten: een race condition — twee operaties die dicht genoeg in tijd plaatsvinden dat ze elkaar op onbedoelde wijze verstoren — kan niet gevonden worden door één persoon die sequentieel test, hoe grondig of adversarieel ook, omdat de bug alleen bestaat in de specifieke timingoverlap tussen twee gelijktijdige acties. Het vinden ervan vereist bewust gelijktijdige toegang te simuleren, wat zelden iets is dat een solo founder bedenkt om zelf te construeren, en precies het soort test is dat een ervaren testproces standaard inbouwt in plaats van een bijgedachte.
 
-[LaunchStudio](https://launchstudio.eu/en/) identificeert en test grondig jouw specifieke kritieke flows als onderdeel van elke Launch Ready-opdracht, en prioriteert diepgang op wat ertoe doet — inclusief scenario's van gelijktijdig gebruik — boven breedte over alles, gesteund door Manifera's engineeringervaring over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) identificeert en test grondig jouw specifieke kritieke flows als onderdeel van elke Launch Ready-opdracht, en prioriteert diepgang op wat ertoe doet — inclusief scenario's van gelijktijdig gebruik — boven breedte over alles, gesteund door Manifera's engineeringervaring over 160+ opgeleverde projecten.
 
-[Ontdek welke flows in jouw app daadwerkelijk dit niveau van testen nodig hebben](https://launchstudio.eu/en/#calculator) — de meeste founders overschatten hoeveel testen ze nodig hebben en onderschatten hoe diep de kritieke paar moeten gaan.
+[Ontdek welke flows in jouw app daadwerkelijk dit niveau van testen nodig hebben](https://launchstudio.eu/nl/#calculator) — de meeste founders overschatten hoeveel testen ze nodig hebben en onderschatten hoe diep de kritieke paar moeten gaan.
 
 ## Echt voorbeeld
 

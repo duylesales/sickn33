@@ -16,7 +16,7 @@ Doelpersona: VP of Product / UX Architect
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: VP of Product / UX Architect
   "datePublished": "2026-12-11",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/user-ai"
+    "@id": "https://launchstudio.eu/nl/blog/user-ai"
   }
 }
 </script>
@@ -68,7 +68,7 @@ De gebruiker ziet geen verzonnen tabel, maar een prachtige interactieve grafiek 
 
 Het bouwen van Generatieve UI vereist diepgaande integratie tussen AI-modellen, Next.js App Router en backend-databases.
 
-[LaunchStudio](https://launchstudio.eu/en/), gedragen door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, vervangt passieve chatboxen door actiegerichte interfaces:
+[LaunchStudio](https://launchstudio.eu/nl/), gedragen door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, vervangt passieve chatboxen door actiegerichte interfaces:
 1. **Vercel AI SDK Integratie:** Implementatie van streaming UI-architecturen waarmee componenten realtime server-side worden gerenderd en gepusht.
 2. **Beveiligde Component-Registry:** Een bibliotheek van interactieve componenten (grafieken, formulieren, tabellen) die de AI gecontroleerd mag inzetten.
 3. **Deterministisch Toegangsbeheer:** Acties binnen gegenereerde componenten verlopen altijd via beveiligde backend API-routes met strikte JWT-authenticatie en Role-Based Access Control (RBAC).

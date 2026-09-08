@@ -16,7 +16,7 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/field-service-ai-scheduling-app-double-dispatch"
+    "@id": "https://launchstudio.eu/nl/blog/field-service-ai-scheduling-app-double-dispatch"
   }
 }
 </script>
@@ -47,7 +47,7 @@ De oplossing is niet meer UI – het is het maken van de beschikbaarheidskalende
 
 "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. We hebben elf jaar ervaring in exact dat," zegt Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera. Bugs met dubbele verzending zijn een tekstboekvoorbeeld van wat hij bedoelt – de planningsfunctie zelf was nooit het moeilijke deel; de gelijktijdigheidsarchitectuur eronder was dat wel.
 
-LaunchStudio brengt Manifera's ervaring van meer dan 120 ingenieurs aan productie-ervaring naar exact dit soort herstellingen. Ingenieurs verbonden aan Manifera's Zuidoost-Aziatische hub op Tras Street in Singapore hebben vergelijkbare realtime coördinatieproblemen afgehandeld voor logistieke en operationele klanten. Als uw planningstool enig pad heeft voor handmatige overschrijvingen – en bijna elke buitendiensttool heeft dat – [krijg een beoordeling op maat via onze calculator](https://launchstudio.eu/en/#calculator) voordat een dubbele verzending uw drukste monteur vindt.
+LaunchStudio brengt Manifera's ervaring van meer dan 120 ingenieurs aan productie-ervaring naar exact dit soort herstellingen. Ingenieurs verbonden aan Manifera's Zuidoost-Aziatische hub op Tras Street in Singapore hebben vergelijkbare realtime coördinatieproblemen afgehandeld voor logistieke en operationele klanten. Als uw planningstool enig pad heeft voor handmatige overschrijvingen – en bijna elke buitendiensttool heeft dat – [krijg een beoordeling op maat via onze calculator](https://launchstudio.eu/nl/#calculator) voordat een dubbele verzending uw drukste monteur vindt.
 
 ## Een enkele bron van waarheid kan nog steeds tegen zichzelf racen
 

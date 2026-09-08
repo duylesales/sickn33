@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-engineer-looks-for-first-ten-minutes-reviewing-prototype"
+    "@id": "https://launchstudio.eu/nl/blog/what-engineer-looks-for-first-ten-minutes-reviewing-prototype"
   }
 }
 </script>
@@ -57,9 +57,9 @@ Tegen deze tijd heeft een ervaren beoordelaar doorgaans een werkhypothese over w
 
 De volgorde is niet willekeurig – het spiegelt dezelfde schade-omvang redenering die in bredere richtlijnen voor prioritering wordt behandeld. Het controleert de snelste items met de grootste consequenties eerst, aangezien deze initiële tien minuten specifiek zijn ontworpen om de meest ernstige mogelijke bevinding zo vroeg mogelijk te vangen, in plaats van door de codebase te werken in welke volgorde toevallig visueel handig is.
 
-[LaunchStudio](https://launchstudio.eu/en/) past exact deze consistente, op schade-omvang geordende eerste ronde toe op elke nieuwe codebase die wordt beoordeeld. Dit zorgt ervoor dat bevindingen met de grootste consequenties binnen de vroegste minuten van een opdracht naar boven komen, in plaats van pas veel later te worden ontdekt in een minder gestructureerde beoordeling. Het weerspiegelt Manifera's bredere engineeringdiscipline van een consistent, herhaalbaar proces in meer dan 160 opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) past exact deze consistente, op schade-omvang geordende eerste ronde toe op elke nieuwe codebase die wordt beoordeeld. Dit zorgt ervoor dat bevindingen met de grootste consequenties binnen de vroegste minuten van een opdracht naar boven komen, in plaats van pas veel later te worden ontdekt in een minder gestructureerde beoordeling. Het weerspiegelt Manifera's bredere engineeringdiscipline van een consistent, herhaalbaar proces in meer dan 160 opgeleverde projecten.
 
-[Zie wat een ervaren eerste ronde over uw eigen prototype daadwerkelijk zou vinden](https://launchstudio.eu/en/#calculator) — de eerste tien minuten onthullen vaak meer dan oprichters verwachten.
+[Zie wat een ervaren eerste ronde over uw eigen prototype daadwerkelijk zou vinden](https://launchstudio.eu/nl/#calculator) — de eerste tien minuten onthullen vaak meer dan oprichters verwachten.
 
 ## Wat u klaar moet hebben staan voordat deze eerste tien minuten plaatsvinden
 

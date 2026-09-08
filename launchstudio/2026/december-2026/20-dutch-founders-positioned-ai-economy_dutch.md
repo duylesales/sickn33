@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-20",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/dutch-founders-positioned-ai-economy"
+    "@id": "https://launchstudio.eu/nl/blog/dutch-founders-positioned-ai-economy"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Wat AI-tools aan dit bestaande fundament hebben toegevoegd, is pure snelheid. Ee
 
 ## De Last-Mile Kloof Blijft Onverminderd van Toepassing
 
-Geen van deze structurele voordelen elimineert het last-mile probleem: de kloof tussen een met AI gegenereerd prototype en een veilig, schaalbaar productieproduct. Dit is waar Nederlandse oprichters profiteren van de aanwezigheid van [LaunchStudio](https://launchstudio.eu/en/) — met het hoofdkantoor aan de Herengracht 420 in Amsterdam — specifiek afgestemd op de context van de Nederlandse AI-native ondernemer: directe communicatie, vaste en transparante tarieven, en snelle doorlooptijden die naadloos aansluiten op de nuchtere zakencultuur.
+Geen van deze structurele voordelen elimineert het last-mile probleem: de kloof tussen een met AI gegenereerd prototype en een veilig, schaalbaar productieproduct. Dit is waar Nederlandse oprichters profiteren van de aanwezigheid van [LaunchStudio](https://launchstudio.eu/nl/) — met het hoofdkantoor aan de Herengracht 420 in Amsterdam — specifiek afgestemd op de context van de Nederlandse AI-native ondernemer: directe communicatie, vaste en transparante tarieven, en snelle doorlooptijden die naadloos aansluiten op de nuchtere zakencultuur.
 
 Herre Roelevink, zelf een Nederlandse ondernemer die Manifera al ruim 11 jaar leidt, bouwde LaunchStudio expliciet voor deze markt: *"Wij zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in code. Het draait nu om de architectuur en databeveiliging die nodig zijn om die producten tot volwassenheid te brengen."*
 
-[Beschrijf uw project](https://launchstudio.eu/en/#contact) — wij reageren binnen 1 werkdag, in het Nederlands of Engels.
+[Beschrijf uw project](https://launchstudio.eu/nl/#contact) — wij reageren binnen 1 werkdag, in het Nederlands of Engels.
 
 ## Het Ecosysteem Achter het Voordeel: Subsidies, Netwerken en Talent
 

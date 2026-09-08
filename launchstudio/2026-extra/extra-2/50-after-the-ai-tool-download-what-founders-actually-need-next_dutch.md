@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-08-02",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/after-the-ai-tool-download-what-founders-actually-need-next"
+    "@id": "https://launchstudio.eu/nl/blog/after-the-ai-tool-download-what-founders-actually-need-next"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Gegevens die onversleuteld reizen tussen interne diensten zijn kwetsbaar voor on
 
 ## Wat het op de juiste manier herstellen hiervan vereist
 
-Een correcte beoordeling brengt elke verbinding die uw applicatie maakt in kaart – niet alleen de klantgerichte – en bevestigt dat elke interne verbinding gepast versleuteld is voor haar specifieke context. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort beoordeling van verbindingsinrichting uit, ondersteund door Manifera's 11+ jaar ervaring met productie-infrastructuur over AWS-, Azure- en DigitalOcean-omgevingen.
+Een correcte beoordeling brengt elke verbinding die uw applicatie maakt in kaart – niet alleen de klantgerichte – en bevestigt dat elke interne verbinding gepast versleuteld is voor haar specifieke context. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort beoordeling van verbindingsinrichting uit, ondersteund door Manifera's 11+ jaar ervaring met productie-infrastructuur over AWS-, Azure- en DigitalOcean-omgevingen.
 
 Manifera's beoordelingen van interne infrastructuurbeveiliging worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

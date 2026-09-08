@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/evaluate-ai-development-partner-checklist"
+    "@id": "https://launchstudio.eu/nl/blog/evaluate-ai-development-partner-checklist"
   }
 }
 </script>
@@ -77,9 +77,9 @@ U heeft een werkend prototype en geen enkele objectieve manier om te beoordelen 
 
 ## Deze Checklist Toepassen op LaunchStudio
 
-[LaunchStudio](https://launchstudio.eu/en/) is specifiek opgezet om elk punt op deze checklist helder en vooraf te beantwoorden: vaste prijzen vanaf €800, gegarandeerd 100% eigenaarschap van de code, behoud van de frontend als kernprincipe en Manifera's 11+ jaar ervaring in enterprise-engineering als fundament. Anders dan bij freelancers die AI-code vaak wantrouwen, is de evaluatie bij LaunchStudio transparant omdat alle voorwaarden openbaar zijn.
+[LaunchStudio](https://launchstudio.eu/nl/) is specifiek opgezet om elk punt op deze checklist helder en vooraf te beantwoorden: vaste prijzen vanaf €800, gegarandeerd 100% eigenaarschap van de code, behoud van de frontend als kernprincipe en Manifera's 11+ jaar ervaring in enterprise-engineering als fundament. Anders dan bij freelancers die AI-code vaak wantrouwen, is de evaluatie bij LaunchStudio transparant omdat alle voorwaarden openbaar zijn.
 
-[Boek een 15-minuten adviesgesprek](https://launchstudio.eu/en/#contact) en doorloop deze checklist direct met een ervaren engineer.
+[Boek een 15-minuten adviesgesprek](https://launchstudio.eu/nl/#contact) en doorloop deze checklist direct met een ervaren engineer.
 
 ## De Antwoorden Daadwerkelijk Verifiëren, Niet Alleen Verzamelen
 

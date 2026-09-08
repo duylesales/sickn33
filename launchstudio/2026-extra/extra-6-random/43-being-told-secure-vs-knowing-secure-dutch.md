@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Het verschil tussen te horen krijgen dat het 'veilig' is en weten dat het veilig is",
   "description": "Een opiniestuk over waarom een ai secure-label in uw bouwtool u bijna niets vertelt over of uw product daadwerkelijk veilig is om te lanceren — en wat oprichters in plaats daarvan zouden moeten vragen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/being-told-secure-vs-knowing-secure" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/being-told-secure-vs-knowing-secure" }
 }
 </script>
 
@@ -47,7 +47,7 @@ Oprichters die met AI-tools bouwen, bouwen per definitie vaak dingen die ze een 
 
 Dat is geen argument tegen het bouwen met AI-tools. Het is een argument om "er staat dat het veilig is" en "het is daadwerkelijk veilig" te behandelen als twee verschillende claims die twee verschillende soorten verificatie nodig hebben — één van de tool, één van iemand die gekwalificeerd is om het te controleren.
 
-Onze technici, werkend vanuit Ho Chi Minh-stad samen met collega's in Amsterdam en Singapore, besteden een aanzienlijk deel van hun tijd aan precies dit soort vertaalwerk — het omzetten van "er staat dat het veilig is" naar een specifieke, gecontroleerde lijst van wat daadwerkelijk waar is. LaunchStudio brengt Manifera's enterprise-grade engineeringstandaard, verfijnd over meer dan 160 opgeleverde projecten, naar dat vertaalwerk. Weet u niet zeker in welke categorie uw eigen product valt, dan kunt u [ons de link naar uw prototype sturen voor een gratis beoordeling van waar het staat](https://launchstudio.eu/en/#contact).
+Onze technici, werkend vanuit Ho Chi Minh-stad samen met collega's in Amsterdam en Singapore, besteden een aanzienlijk deel van hun tijd aan precies dit soort vertaalwerk — het omzetten van "er staat dat het veilig is" naar een specifieke, gecontroleerde lijst van wat daadwerkelijk waar is. LaunchStudio brengt Manifera's enterprise-grade engineeringstandaard, verfijnd over meer dan 160 opgeleverde projecten, naar dat vertaalwerk. Weet u niet zeker in welke categorie uw eigen product valt, dan kunt u [ons de link naar uw prototype sturen voor een gratis beoordeling van waar het staat](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

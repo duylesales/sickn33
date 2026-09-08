@@ -13,10 +13,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "De gids voor oprichters om tussen de regels van een agentschapsverkooppraatje te lezen",
   "description": "Een how-to-gids voor oprichters die het verkooppraatje van een ai app dev-agentschap beoordelen, met specifieke uitspraken en signalen die erop wijzen dat een volledige herbouw wordt verkocht terwijl er alleen gerichte fixes nodig zijn.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/reading-between-lines-agency-pitch" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/reading-between-lines-agency-pitch" }
 }
 </script>
 
@@ -54,7 +54,7 @@ In werkelijkheid waren alleen gerichte fixes nodig — specifieke problemen in h
 
 Vraag, voordat u instemt met de voorgestelde scope van een agentschap, om een tweede, onafhankelijke beoordeling — idealiter van een team zonder financieel belang bij de omvang van de opdracht. Vraag om een specifieke lijst met bevindingen, geen algemene indruk. Vraag welke delen van het bestaande product echt moeten veranderen en welke niet. En behandel "we moeten dit herbouwen" als een claim om te verifiëren, geen conclusie om te accepteren op basis van een zelfverzekerde presentatie.
 
-Onze technici in Amsterdam, samen met collega's in Singapore en Ho Chi Minh-stad, zijn regelmatig de tweede mening die oprichters inschakelen na een verkooppraatje zoals Job ontving — en de bevinding is vaker wel dan niet dat een gerichte fix het karwei had geklaard. LaunchStudio's fixed-scope prijsmodel (doorgaans € 800–€ 7.500, geleverd in één tot drie weken) bestaat specifiek zodat oprichters een concrete, gespecificeerde scope kunnen vergelijken met wat een agentschap heeft voorgesteld. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera, een bedrijf met meer dan 11 jaar ervaring in productie-engineering — u kunt [zien hoe een fixed-scope offerte voor uw daadwerkelijke bevindingen eruit zou zien](https://launchstudio.eu/en/#calculator) voordat u zich aan iets groters verbindt.
+Onze technici in Amsterdam, samen met collega's in Singapore en Ho Chi Minh-stad, zijn regelmatig de tweede mening die oprichters inschakelen na een verkooppraatje zoals Job ontving — en de bevinding is vaker wel dan niet dat een gerichte fix het karwei had geklaard. LaunchStudio's fixed-scope prijsmodel (doorgaans € 800–€ 7.500, geleverd in één tot drie weken) bestaat specifiek zodat oprichters een concrete, gespecificeerde scope kunnen vergelijken met wat een agentschap heeft voorgesteld. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera, een bedrijf met meer dan 11 jaar ervaring in productie-engineering — u kunt [zien hoe een fixed-scope offerte voor uw daadwerkelijke bevindingen eruit zou zien](https://launchstudio.eu/nl/#calculator) voordat u zich aan iets groters verbindt.
 
 ## Echt voorbeeld
 

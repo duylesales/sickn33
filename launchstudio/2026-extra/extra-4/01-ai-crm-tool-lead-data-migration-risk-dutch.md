@@ -47,7 +47,7 @@ Een CRM-tool die het contact met echte gegevens kan overleven, heeft drie dingen
 
 LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en een van de meest voorkomende oplossingen die ons team maakt voor door AI gebouwde SaaS-tools is precies dit: het toevoegen van een beoordelingslaag tussen 'data komt binnen' en 'data overschrijft iets'. Het zijn een paar uurtjes engineeringwerk dat een meerdaagse schoonmaak achteraf voorkomt. Onze technici die werken vanuit het Amsterdamse kantoor van Manifera aan de Herengracht 420 beoordelen deze importpijplijnen als onderdeel van de standaard beveiligings- en gegevensintegriteitspas voordat een tool live gaat.
 
-Als u niet zeker weet of uw eigen importlogica deze leemte heeft, [krijg dan een offerte met een vast bereik van onze prijscalculator](https://launchstudio.eu/en/#calculator) vóór uw volgende echte gegevenslading, en niet erna.
+Als u niet zeker weet of uw eigen importlogica deze leemte heeft, [krijg dan een offerte met een vast bereik van onze prijscalculator](https://launchstudio.eu/nl/#calculator) vóór uw volgende echte gegevenslading, en niet erna.
 
 ## Twee leads samenvoegen voegt niet alleen twee rijen samen
 
@@ -109,7 +109,7 @@ Ja. De technici van Manifera hebben productiedatamigraties verzorgd voor zakelij
 
 ### Hoe weet ik of mijn importlogica dit risico loopt voordat deze schade veroorzaakt?
 
-Test het met een echte (of realistisch rommelige) dataset vóór uw eerste livemigratie, en niet met voorbeeldgegevens. Als u niet zeker weet hoe u het veilig kunt testen, [beschrijf uw project via onze contactpagina](https://launchstudio.eu/en/#contact) en wij zullen u vertellen wat u moet controleren.
+Test het met een echte (of realistisch rommelige) dataset vóór uw eerste livemigratie, en niet met voorbeeldgegevens. Als u niet zeker weet hoe u het veilig kunt testen, [beschrijf uw project via onze contactpagina](https://launchstudio.eu/nl/#contact) en wij zullen u vertellen wat u moet controleren.
 
 ### Wat brengt LaunchStudio doorgaans in rekening om een dergelijke import- of migratiepijplijn te repareren?
 

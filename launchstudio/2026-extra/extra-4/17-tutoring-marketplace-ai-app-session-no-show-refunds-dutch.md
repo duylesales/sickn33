@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/tutoring-marketplace-ai-app-session-no-show-refunds"
+    "@id": "https://launchstudio.eu/nl/blog/tutoring-marketplace-ai-app-session-no-show-refunds"
   }
 }
 </script>
@@ -49,7 +49,7 @@ Een ontbrekend terugbetalingspad kost u niet alleen één boos ondersteuningstic
 
 Het op de juiste manier herstellen hiervan betekent het behandelen van de afhandeling van niet-verschijnen als een statusmachine met een gedefinieerde uitkomst voor elk van de vier bovenstaande scenario's, en niet als een enkele "niet-verschenen"-markering die uniform wordt toegepast ongeacht welke partij de sessie heeft gemist. Het betekent ook dat het pad voor de afwezige bijlesgever een eigen trigger nodig heeft – idealiter iets wat de student of een beheerder kan bevestigen – die leidt naar een automatische of versnelde terugbetaling, in plaats van de transactie stilletjes te voltooien. Ons team, werkend vanuit LaunchStudio's hub in Singapore, bouwt dit als een expliciete regellaag die bovenop uw bestaande Stripe-integratie zit. Zo weerspiegelt de betalingslogica wat er daadwerkelijk is gebeurd in de sessie, in plaats van standaard aan te nemen "het ging vast goed".
 
-U kunt [uw project hier beschrijven](https://launchstudio.eu/en/#contact) en we reageren binnen één werkdag met een inschatting van wat uw huidige logica voor niet-verschijnen daadwerkelijk dekt. Voor een gevoel van hoe Manifera de betalingsarchitectuur op marktplaatsen breder benadert, bekijk onze [offshore softwareontwikkelingspraktijk](https://www.manifera.com/services/offshore-software-development/), die exact dit soort omvattend engineeringwerk ondersteunt.
+U kunt [uw project hier beschrijven](https://launchstudio.eu/nl/#contact) en we reageren binnen één werkdag met een inschatting van wat uw huidige logica voor niet-verschijnen daadwerkelijk dekt. Voor een gevoel van hoe Manifera de betalingsarchitectuur op marktplaatsen breder benadert, bekijk onze [offshore softwareontwikkelingspraktijk](https://www.manifera.com/services/offshore-software-development/), die exact dit soort omvattend engineeringwerk ondersteunt.
 
 ## Twee triggers, één terugbetaling: Het vermijden van een dubbele terugbetalingsrace
 

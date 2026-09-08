@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/crowdfunding-ai-platform-payout-escrow-timing"
+    "@id": "https://launchstudio.eu/nl/blog/crowdfunding-ai-platform-payout-escrow-timing"
   }
 }
 </script>
@@ -43,7 +43,7 @@ Met AI gegenereerde code vouwt dit frequent samen tot iets wat veel eenvoudiger 
 
 Dit is een geval waarin een generieke beveiligingsaudit die controleert op SQL-injectie of blootgestelde API-sleutels een platform zal goedkeuren dat financieel nog steeds kapot is. De bug is geen kwetsbaarheid in de traditionele zin – er werd niets gehackt, er lekten geen inloggegevens. Het is een bedrijfslogica-kloof in de volgorde van financiële statusovergangen. Het vinden ervan vereist dat iemand de volledige levenscyclus van de fondsen van een campagne daadwerkelijk traceert tegen het eigen vermelde terugbetalingsbeleid van het platform, en niet alleen controleert op veelvoorkomende webkwetsbaarheden.
 
-LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters specifiek voor gevallen zoals deze – de ingenieurs van het team, die 160+ projecten hebben geleverd inclusief werk voor klanten zoals CFLW's cyberstrategie-praktijk, behandelen betalingsstatusmachines als een eersteklas ding om te auditen op elk platform dat geld verplaatst, en niet als een bijgedachte vastgeplakt op een generieke checklist. Die beoordeling is beschikbaar als onderdeel van de [LaunchStudio-pakketten](https://launchstudio.eu/en/#packages), omvattend ingesteld op exact de betalings- en uitbetalingslogica waar een platform van afhangt.
+LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters specifiek voor gevallen zoals deze – de ingenieurs van het team, die 160+ projecten hebben geleverd inclusief werk voor klanten zoals CFLW's cyberstrategie-praktijk, behandelen betalingsstatusmachines als een eersteklas ding om te auditen op elk platform dat geld verplaatst, en niet als een bijgedachte vastgeplakt op een generieke checklist. Die beoordeling is beschikbaar als onderdeel van de [LaunchStudio-pakketten](https://launchstudio.eu/nl/#packages), omvattend ingesteld op exact de betalings- en uitbetalingslogica waar een platform van afhangt.
 
 ## Wat een correcte escrow-stroom daadwerkelijk afdwingt
 

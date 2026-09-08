@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-software-price-what-subscription-doesnt-include"
+    "@id": "https://launchstudio.eu/nl/blog/ai-software-price-what-subscription-doesnt-include"
   }
 }
 </script>
@@ -51,9 +51,9 @@ Een maandelijks abonnement op een AI-coderingstool koopt u generatiecapaciteit �
 
 Een oprichter die zijn eerste product bouwt met een AI-coderingstool heeft geen eerder referentiepunt voor hoe een "complete" softwarekostenstructuur er daadwerkelijk uitziet – de abonnementsprijs is het enige getal dat hem duidelijk is getoond, dus het wordt standaard het getal waar omheen wordt gepland, hoewel niemand specifiek heeft verteld dat het gedeeltelijk was.
 
-[LaunchStudio](https://launchstudio.eu/en/) loodst oprichters door het complete, realistische kostenbeeld tijdens het eerste oriëntatiegesprek – abonnementskosten, eenmalige verharding en lopende operationele kosten – in plaats van een oprichter de totale som in stukjes te laten ontdekken nadat toezeggingen al zijn gedaan, wat dezelfde transparante aanpak met vaste prijzen weerspiegelt die Manifera al meer dan 11 jaar toepast op enterprise-opdrachten.
+[LaunchStudio](https://launchstudio.eu/nl/) loodst oprichters door het complete, realistische kostenbeeld tijdens het eerste oriëntatiegesprek – abonnementskosten, eenmalige verharding en lopende operationele kosten – in plaats van een oprichter de totale som in stukjes te laten ontdekken nadat toezeggingen al zijn gedaan, wat dezelfde transparante aanpak met vaste prijzen weerspiegelt die Manifera al meer dan 11 jaar toepast op enterprise-opdrachten.
 
-[Krijg het complete kostenbeeld voordat u zich committeert aan een lanceringstijdlijn](https://launchstudio.eu/en/#calculator) — de abonnementsprijs was nooit bedoeld om het hele getal te zijn.
+[Krijg het complete kostenbeeld voordat u zich committeert aan een lanceringstijdlijn](https://launchstudio.eu/nl/#calculator) — de abonnementsprijs was nooit bedoeld om het hele getal te zijn.
 
 ## Een praktische manier om uw echte kosten voor het eerste jaar te schatten
 

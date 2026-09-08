@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-01",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/state-of-ai-native-startups-2026"
+    "@id": "https://launchstudio.eu/nl/blog/state-of-ai-native-startups-2026"
   }
 }
 </script>
@@ -54,7 +54,7 @@ De meest veelzeggende statistiek van 2026 ging niet over nieuwe AI-mogelijkheden
 
 Herre Roelevink, oprichter van Manifera, zag dit patroon in honderden gesprekken met oprichters: *"De tools zijn fantastisch geworden aan het begin van de reis. Maar de last-mile — de security, de betalingen, de livegang — dat is waar 11 jaar software-ervaring nog altijd het absolute verschil maakt."*
 
-Dit inzicht vormde het fundament voor [LaunchStudio](https://launchstudio.eu/en/) onder de vlag van Manifera: het dichten van de productiekloof voor ondernemers die met AI iets moois hebben gebouwd maar professionele engineering nodig hebben om live te gaan.
+Dit inzicht vormde het fundament voor [LaunchStudio](https://launchstudio.eu/nl/) onder de vlag van Manifera: het dichten van de productiekloof voor ondernemers die met AI iets moois hebben gebouwd maar professionele engineering nodig hebben om live te gaan.
 
 ## Het Investeringslandschap Verschoof Drastisch
 
@@ -104,7 +104,7 @@ Het AI-startuplandschap op weg naar 2027 stelt duidelijke strategische eisen:
 
 ## Klaar om Uw 2026 Prototype om te Zetten in 2027 Omzet?
 
-Heeft u een met AI gebouwd prototype dat vastzit in demo-modus? LaunchStudio maakt het binnen 1 tot 3 weken productieklaar. Vaste all-in prijzen vanaf €800. Uw frontend blijft 100% intact. [Bereken uw projectkosten](https://launchstudio.eu/#calculator) of [boek een gratis kennismakingsgesprek van 15 minuten](https://launchstudio.eu/en/#contact).
+Heeft u een met AI gebouwd prototype dat vastzit in demo-modus? LaunchStudio maakt het binnen 1 tot 3 weken productieklaar. Vaste all-in prijzen vanaf €800. Uw frontend blijft 100% intact. [Bereken uw projectkosten](https://launchstudio.eu/#calculator) of [boek een gratis kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

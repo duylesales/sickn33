@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "De checklist voor de inzet van AI die niets met het AI-deel te maken heeft",
   "description": "De meeste checklists voor de inzet van AI richten zich op de door AI gegenereerde functie zelf, terwijl de saaie infrastructuurbasics die daadwerkelijk storingen veroorzaken worden overgeslagen. Dit is de checklist die dekt wat echt kapotgaat.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/deployment-of-ai-checklist-not-about-ai" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/deployment-of-ai-checklist-not-about-ai" }
 }
 </script>
 
@@ -43,7 +43,7 @@ Hier is de checklist die die basics dekt — de ongeglamoureuze helft van de inz
 
 Geen van deze punten heeft iets met AI te maken, en precies daarom worden ze weggelaten van een "AI-inzet"-checklist die mentaal is ingekaderd rond de door AI gegenereerde functie. Het zijn generieke basics voor productiegereedheid die op elke webapplicatie van toepassing zouden zijn, door AI gebouwd of niet — en omdat ze niet specifiek aanvoelen voor het interessante nieuwe ding dat u heeft gebouwd, is het makkelijk om aan te nemen dat iemand, of iets, ze al heeft afgehandeld. Niets in een AI-codeertool handelt ze automatisch af, omdat het operationele beslissingen zijn, geen code waarom de tool werd gevraagd.
 
-Onze technici, gebaseerd in Singapore, doorlopen precies deze checklist als een standaard pre-lanceringsronde, specifiek omdat de door AI gegenereerde functie zelden de eerste storing veroorzaakt — de infrastructuurbasics eronder wel. LaunchStudio brengt Manifera's enterprise-grade engineering naar dit soort pre-lanceringsbeoordeling, en als u een lanceringsdatum nadert en deze lijst tegen uw specifieke opzet wilt laten controleren, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/en/#contact) vóór de inzetdag in plaats van erna. De bredere ervaring van Manifera met inzet en infrastructuur staat beschreven op de pagina [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
+Onze technici, gebaseerd in Singapore, doorlopen precies deze checklist als een standaard pre-lanceringsronde, specifiek omdat de door AI gegenereerde functie zelden de eerste storing veroorzaakt — de infrastructuurbasics eronder wel. LaunchStudio brengt Manifera's enterprise-grade engineering naar dit soort pre-lanceringsbeoordeling, en als u een lanceringsdatum nadert en deze lijst tegen uw specifieke opzet wilt laten controleren, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) vóór de inzetdag in plaats van erna. De bredere ervaring van Manifera met inzet en infrastructuur staat beschreven op de pagina [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
 ## Echt voorbeeld
 

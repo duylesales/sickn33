@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-27",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/waitlist-that-converts-paying-users"
+    "@id": "https://launchstudio.eu/nl/blog/waitlist-that-converts-paying-users"
   }
 }
 </script>
@@ -55,9 +55,9 @@ Een gefaseerde uitrol — eerst de wachtlijst, pas daarna de openbare markt — 
 
 Een wachtlijst die "alleen maar e-mails verzamelt" vereist serieuze infrastructuur zodra het om echte bedrijfsresultaten gaat: een betrouwbare e-maildelivering (zonder in de spamfolder te belanden), gesegmenteerde lijsten en — bovenal — een soepele, wrijvingsloze overgang van "wachtlijstlid" naar "betalende gebruiker". Dat laatste vereist dat uw daadwerkelijke product direct productieklaar staat op het moment dat u de lanceer-e-mail verstuurt.
 
-Dit is waar veel AI-native oprichters struikelen: ze bouwen een fraaie wachtlijstpagina in Lovable of Bolt, creëren volop buzz, en ontdekken bij de lancering dat de echte app achter de schermen nog vol technische kinderziektes zit. [LaunchStudio](https://launchstudio.eu/en/) zorgt dat uw product technisch 100% gereed is vóórdat uw e-mail de deur uitgaat.
+Dit is waar veel AI-native oprichters struikelen: ze bouwen een fraaie wachtlijstpagina in Lovable of Bolt, creëren volop buzz, en ontdekken bij de lancering dat de echte app achter de schermen nog vol technische kinderziektes zit. [LaunchStudio](https://launchstudio.eu/nl/) zorgt dat uw product technisch 100% gereed is vóórdat uw e-mail de deur uitgaat.
 
-[Maak uw product klaar voor lancering](https://launchstudio.eu/en/#calculator) vóórdat u uw wachtlijst mailt — u krijgt immers zelden een tweede kans op een eerste indruk.
+[Maak uw product klaar voor lancering](https://launchstudio.eu/nl/#calculator) vóórdat u uw wachtlijst mailt — u krijgt immers zelden een tweede kans op een eerste indruk.
 
 ## De Pre-Launch Nurture-Volgorde: Uw Wachtlijst Warm Houden Zonder Hem te Verbranden
 

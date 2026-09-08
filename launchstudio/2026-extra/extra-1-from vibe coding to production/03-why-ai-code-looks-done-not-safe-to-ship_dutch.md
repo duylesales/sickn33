@@ -33,9 +33,9 @@ Een redelijk instinct is aannemen dat beter prompten dit gat dicht — de AI-too
 
 Dit gat dichten gaat niet over het herschrijven van wat de AI genereerde — het meeste ervan is prima, vaak oprecht goed gestructureerd. Het gaat over het toevoegen van de review-, test- en verificatielaag die bevestigt dat het prima is, in plaats van dat aan te nemen op basis van hoe de demo eruitzag. Dit is precies het onderscheid tussen functionele code, die aan een beschreven scenario voldoet, en implementatieveilige code, die bewust getest is tegen scenario's die niemand heeft beschreven.
 
-[LaunchStudio](https://launchstudio.eu/en/) bouwt precies deze validatielaag rond jouw bestaande AI-gegenereerde frontend — het bestaande beoordelen, testen en verharden in plaats van opnieuw te beginnen, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) bouwt precies deze validatielaag rond jouw bestaande AI-gegenereerde frontend — het bestaande beoordelen, testen en verharden in plaats van opnieuw te beginnen, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
 
-[Laat je code beoordelen tegen een echte validatiestandaard](https://launchstudio.eu/en/#contact) — ontdek wat "ziet er klaar uit" daadwerkelijk verbergt voordat je gebruikers dat doen.
+[Laat je code beoordelen tegen een echte validatiestandaard](https://launchstudio.eu/nl/#contact) — ontdek wat "ziet er klaar uit" daadwerkelijk verbergt voordat je gebruikers dat doen.
 
 ## Echt voorbeeld
 

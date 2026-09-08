@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Het echte verschil tussen 'AI Assist' en 'AI Native' — en waarom dat uw roadmap verandert",
   "description": "Een product 'AI native' noemen terwijl het eigenlijk 'AI assist' is, is niet zomaar een labelprobleem — het verandert wat uw roadmap zou moeten aannemen over schaal. Dit is het verschil.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-assist-vs-ai-native-roadmap" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-assist-vs-ai-native-roadmap" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Als u denkt dat u AI native bent maar eigenlijk AI assist bent, investeert u te 
 
 Job Willems, een oprichter in Eindhoven, ondervond dit aan den lijve. Hij bouwde "TaakSlim", een taakautomatiseringsapp, met Bolt, met een "AI assist"-functie die over een verder handmatige taakbeheer-workflow heen was gelegd — de AI suggereerde alleen taakgroeperingen bovenop een systeem dat prima werkte zonder AI. Maar de roadmap van Job en zijn pitch aan vroege klanten gingen ervan uit dat het product volledig "AI native" was, van boven tot onder. Toen er echt gebruiksvolume binnenkwam, hielden de schaalaannames die op die premisse waren gebouwd — infrastructuur gedimensioneerd voor constante modelaanroepen die eigenlijk niet de bottleneck waren, terwijl de eigenlijke handmatige-workflowdelen van de app onder belasting kraakten waar niemand op had gepland — simpelweg geen stand.
 
-Dit onderscheid vroeg goed krijgen is precies het soort architecturale helderheid waar de engineers van LaunchStudio, onderdeel van Manifera's team van 120+ engineers werkzaam vanuit onder meer Ho Chi Minh-stad, oprichters mee helpen voordat een roadmap op de verkeerde premisse wordt gebouwd. Als u niet zeker weet in welke categorie uw product daadwerkelijk valt, [beschrijf dan uw project via ons proces](https://launchstudio.eu/en/) en wij brengen het eerlijk in kaart. U kunt ook zien hoe [het portfolio van Manifera](https://www.manifera.com/portfolio/) de reeks AI-assist- en AI-native-architecturen weerspiegelt die wij voor klanten hebben gebouwd.
+Dit onderscheid vroeg goed krijgen is precies het soort architecturale helderheid waar de engineers van LaunchStudio, onderdeel van Manifera's team van 120+ engineers werkzaam vanuit onder meer Ho Chi Minh-stad, oprichters mee helpen voordat een roadmap op de verkeerde premisse wordt gebouwd. Als u niet zeker weet in welke categorie uw product daadwerkelijk valt, [beschrijf dan uw project via ons proces](https://launchstudio.eu/nl/) en wij brengen het eerlijk in kaart. U kunt ook zien hoe [het portfolio van Manifera](https://www.manifera.com/portfolio/) de reeks AI-assist- en AI-native-architecturen weerspiegelt die wij voor klanten hebben gebouwd.
 
 ## Echt voorbeeld
 

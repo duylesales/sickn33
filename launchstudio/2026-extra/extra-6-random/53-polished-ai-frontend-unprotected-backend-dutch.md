@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Waarom een Gepolijste AI-Frontend een Volledig Onbeschermde Backend Kan Verbergen",
   "description": "Een prachtige, door AI gegenereerde frontend vertelt klanten niets over wat de backend erachter beschermt. Dit is waarom die kloof bestaat en wat het oprichters kost die hem missen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/polished-ai-frontend-unprotected-backend" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/polished-ai-frontend-unprotected-backend" }
 }
 </script>
 
@@ -33,7 +33,7 @@ Een onbeschermde backend kondigt zichzelf niet aan. Hij reageert gewoon op verzo
 
 Wanneer dat gebeurt, is de frontend irrelevant. Het maakt niet uit hoe vloeiend de overgangen zijn als de API erachter onderuit gaat bij een piek in belasting of gegevens accepteert die hij had moeten afwijzen. En omdat de frontend gewoon blijft renderen tot de backend daadwerkelijk uitvalt, weten oprichters vaak niet dat er een probleem is totdat klanten beginnen te melden dat de app "kapot" is — op welk moment de diagnose een haastklus wordt in plaats van een geplande oplossing.
 
-Manifera brengt dezelfde productieharding-discipline naar door AI gegenereerde backends die het toepast over 160+ opgeleverde projecten voor klanten zoals Vodafone en TNO, met technici gevestigd in Ho Chi Minhstad die specifiek aan dit soort kloof werken voor oprichters die snel hebben gebouwd en nu de backend willen laten aansluiten bij de polijsting van de frontend. U kunt [zien wat een productiegereedheidsbeoordeling daadwerkelijk omvat](https://launchstudio.eu/en/#packages), en voor een breder beeld van hoe dit soort harding past binnen volledige productoplevering, behandelt Manifera's [praktijk voor webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) hetzelfde terrein op ondernemingsschaal.
+Manifera brengt dezelfde productieharding-discipline naar door AI gegenereerde backends die het toepast over 160+ opgeleverde projecten voor klanten zoals Vodafone en TNO, met technici gevestigd in Ho Chi Minhstad die specifiek aan dit soort kloof werken voor oprichters die snel hebben gebouwd en nu de backend willen laten aansluiten bij de polijsting van de frontend. U kunt [zien wat een productiegereedheidsbeoordeling daadwerkelijk omvat](https://launchstudio.eu/nl/#packages), en voor een breder beeld van hoe dit soort harding past binnen volledige productoplevering, behandelt Manifera's [praktijk voor webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) hetzelfde terrein op ondernemingsschaal.
 
 ## De oplossing is ook onzichtbaar, en dat is precies het punt
 

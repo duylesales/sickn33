@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-11-12",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-code-tool"
+    "@id": "https://launchstudio.eu/nl/blog/ai-code-tool"
   }
 }
 </script>
@@ -95,7 +95,7 @@ Nadat uw AI-tool klaar is met genereren, moet uw applicatie aan deze checklist v
 
 ## Wie Verzorgt De Technische Afronding?
 
-[LaunchStudio](https://launchstudio.eu/en/) is specifiek opgericht voor dit overdrachtsmoment tussen AI-codegeneratie en professionele productie-engineering.
+[LaunchStudio](https://launchstudio.eu/nl/) is specifiek opgericht voor dit overdrachtsmoment tussen AI-codegeneratie en professionele productie-engineering.
 
 De dienst opereert onder [Manifera](https://www.manifera.com/), een gerenommeerd softwareontwikkelingsbedrijf met ruim 11 jaar ervaring. Oprichter Herre Roelevink zag hoe AI-native ondernemers steeds tegen dezelfde backend-barrières aanliepen. Vanuit zijn cybersecurity-achtergrond — medeoprichter van CyberDevOps (nu CFLW Cyber Strategies) en ontwikkelaar van de Dark Web Monitor met TNO — vormt security-first engineering het fundament van LaunchStudio.
 
@@ -107,7 +107,7 @@ Het engineeringteam in Ho Chi Minhstad (Pho Quangstraat 10) verzorgt de technisc
 3. LaunchStudio bouwt de productie-infrastructuur binnen 1 tot 3 weken.
 4. Uw applicatie gaat live en voldoet aan alle eisen op de controlelijst.
 
-[Vraag een gratis architectuurbeoordeling aan](https://launchstudio.eu/en/#contact).
+[Vraag een gratis architectuurbeoordeling aan](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

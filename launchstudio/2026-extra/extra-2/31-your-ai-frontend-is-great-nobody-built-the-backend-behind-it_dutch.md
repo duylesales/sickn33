@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-28",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/your-ai-frontend-is-great-nobody-built-the-backend-behind-it"
+    "@id": "https://launchstudio.eu/nl/blog/your-ai-frontend-is-great-nobody-built-the-backend-behind-it"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Het eerlijk testen van de boekingsstroom – het selecteren van echte excursies,
 
 ## Wat een oprechte herstelling vereist
 
-Het sluiten van deze kloof betekent dat de autoriteit voor de prijsberekening naar de server verplaatst moet worden, waarbij alleen de onderliggende selecties (welke excursie, welke stoelklasse, welke kortingscode) vanaf de frontend worden meegestuurd – nooit het berekende totaalbedrag zelf. En het onafhankelijk herberekenen voordat er een afschrijving wordt verwerkt. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort prijsverificatie aan de serverzijde als een standaardonderdeel van haar werkzaamheden voor betalingsintegratie, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van betrouwbare transactionele systemen.
+Het sluiten van deze kloof betekent dat de autoriteit voor de prijsberekening naar de server verplaatst moet worden, waarbij alleen de onderliggende selecties (welke excursie, welke stoelklasse, welke kortingscode) vanaf de frontend worden meegestuurd – nooit het berekende totaalbedrag zelf. En het onafhankelijk herberekenen voordat er een afschrijving wordt verwerkt. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort prijsverificatie aan de serverzijde als een standaardonderdeel van haar werkzaamheden voor betalingsintegratie, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van betrouwbare transactionele systemen.
 
 Manifera's engineeringwerk voor prijzen en transactiebeveiliging wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Bekijk wat uw project zou kosten met onze calculator](https://launchstudio.eu/en/#calculator).
+[Bekijk wat uw project zou kosten met onze calculator](https://launchstudio.eu/nl/#calculator).
 
 ## Waar door de client vertrouwde waarden zich nog meer verbergen
 

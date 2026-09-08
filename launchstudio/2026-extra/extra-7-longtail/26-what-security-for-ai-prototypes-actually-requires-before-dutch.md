@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
   "@type": "Article",
   "headline": "Wat beveiliging voor AI-prototypes daadwerkelijk vereist vóór lancering",
   "description": "Beveiliging voor AI-prototypes omvat meer dan HTTPS en een inlogscherm. Dit zijn de vijf mythes die oprichters in de problemen brengen, en wat lanceerklare beveiliging daadwerkelijk vereist.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-13",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/what-security-for-ai-prototypes-actually-requires-before" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/what-security-for-ai-prototypes-actually-requires-before" }
 }
 </script>
 
@@ -56,11 +56,11 @@ Geen van deze vijf mythes is dom om in te geloven — dat is precies waarom ze z
 
 Haal de mythes weg en de daadwerkelijke vereistenlijst is kort en concreet: elk data-toegangsendpoint heeft een server-side controle nodig die bevestigt dat de aanvrager eigenaar is van het opgevraagde record. Elke credential — sleutels van betalingsproviders, kaartdiensttokens, alles van derden — moet buiten de code leven die de browser ontvangt, in omgevingsvariabelen die de client nooit ziet. Publieke endpoints zoals aanmelding en inloggen hebben rate limiting nodig zodat een script ze niet kan bestoken. En elke gevoelige persoonlijke data moet versleuteld in rust worden opgeslagen, niet als platte tekst in de database.
 
-Dat is de echte lijst. Ze is specifiek, ze is eindig, en voor de meeste door AI gebouwde prototypes is het een kwestie van dagen, niet maanden, om ze te sluiten. [Het Launch Ready-pakket van LaunchStudio](https://launchstudio.eu/en/#packages), geprijsd vast tussen € 800 en € 3.500, bestaat specifiek om precies deze lijst te sluiten voordat uw eerste echte gebruiker arriveert.
+Dat is de echte lijst. Ze is specifiek, ze is eindig, en voor de meeste door AI gebouwde prototypes is het een kwestie van dagen, niet maanden, om ze te sluiten. [Het Launch Ready-pakket van LaunchStudio](https://launchstudio.eu/nl/#packages), geprijsd vast tussen € 800 en € 3.500, bestaat specifiek om precies deze lijst te sluiten voordat uw eerste echte gebruiker arriveert.
 
 ## Een eerlijk antwoord krijgen over uw eigen app
 
-LaunchStudio opereert als een gespecialiseerd initiatief onder Manifera, wiens engineers meer dan 11 jaar hebben besteed aan het bouwen van productiesoftware — inclusief een Zuidoost-Aziatische hub aan Tras Street in Singapore — lang voordat AI-codeertools bestonden om het eerste ontwerp te versnellen. Als u een eerlijk antwoord wilt over waar uw specifieke app tegenover deze lijst staat, in plaats van te gissen op basis van een blogpost, kunt u [het gesprek starten via LaunchStudio](https://launchstudio.eu/en/#contact), en het bredere engineeringtrackrecord erachter bekijken op [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
+LaunchStudio opereert als een gespecialiseerd initiatief onder Manifera, wiens engineers meer dan 11 jaar hebben besteed aan het bouwen van productiesoftware — inclusief een Zuidoost-Aziatische hub aan Tras Street in Singapore — lang voordat AI-codeertools bestonden om het eerste ontwerp te versnellen. Als u een eerlijk antwoord wilt over waar uw specifieke app tegenover deze lijst staat, in plaats van te gissen op basis van een blogpost, kunt u [het gesprek starten via LaunchStudio](https://launchstudio.eu/nl/#contact), en het bredere engineeringtrackrecord erachter bekijken op [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
 
 ## Echt voorbeeld
 

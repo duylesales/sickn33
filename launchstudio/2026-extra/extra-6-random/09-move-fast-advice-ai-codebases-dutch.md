@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Waarom 'move fast'-advies niet op dezelfde manier geldt voor door AI gegenereerde codebases",
   "description": "Een opiniestuk dat betoogt dat het klassieke startup-advies 'move fast' herzien moet worden voor ai and software development, waar stille breaking changes onzichtbaar oplopen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/move-fast-advice-ai-codebases" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/move-fast-advice-ai-codebases" }
 }
 </script>
 
@@ -47,7 +47,7 @@ Hier is mijn eigenlijke voorgestelde vervanging, en het is niet "ga langzamer": 
 
 Dit is precies het gat dat de engineers van LaunchStudio vullen voor technische solo-oprichters — niet door uw workflow te vervangen, maar door binnenin te gaan zitten als de reviewlaag die door AI gegenereerde code niet uit zichzelf krijgt. We worden ondersteund door Manifera, een engineeringgroep met 11+ jaar productie-ervaring over 160+ opgeleverde projecten, en een aanzienlijk deel van dat engineeringwerk loopt via ons centrum in Ho Chi Minh-stad, dat een groot deel van de praktische codebeoordeling en reparatie afhandelt voor oprichters die bouwen met Cursor, Bolt, Lovable en v0.
 
-Als u een solo-oprichter bent die probeert uit te vinden waar uw eigen codebase zich op dit risicospectrum bevindt, legt onze [procespagina](https://launchstudio.eu/en/#process) uit hoe een reviewtraject dagelijks daadwerkelijk werkt. En als u wilt zien hoe deze discipline opschaalt voorbij de codebase van één oprichter, past Manifera's praktijk voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) hetzelfde principe van review-vóór-verzenden toe op veel grotere systemen.
+Als u een solo-oprichter bent die probeert uit te vinden waar uw eigen codebase zich op dit risicospectrum bevindt, legt onze [procespagina](https://launchstudio.eu/nl/#process) uit hoe een reviewtraject dagelijks daadwerkelijk werkt. En als u wilt zien hoe deze discipline opschaalt voorbij de codebase van één oprichter, past Manifera's praktijk voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) hetzelfde principe van review-vóór-verzenden toe op veel grotere systemen.
 
 ## Echt voorbeeld
 

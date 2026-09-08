@@ -51,7 +51,7 @@ Een prompt die zes maanden lang betrouwbaar foutloze JSON genereerde, kan na een
 
 Om enterprise-grade AI-applicaties te ontwikkelen, moet u traditionele string-matching loslaten en overstappen op **Property-Based Testing, LLM-as-a-Judge Evaluaties en continue monitoring van productiedata**.
 
-Dit is exact de geavanceerde testarchitectuur die [LaunchStudio](https://launchstudio.eu/en/) implementeert voor snelgroeiende AI-startups. Gesteund door de beproefde QA- en testautomatiseringsexpertise van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring, 120+ senior ontwikkelaars en meer dan 160 opgeleverde enterprise softwareprojecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons softwarecentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — ontwerpen wij robuuste CI/CD-pipelines die niet-deterministische AI-modellen met uiterste precisie valideren.
+Dit is exact de geavanceerde testarchitectuur die [LaunchStudio](https://launchstudio.eu/nl/) implementeert voor snelgroeiende AI-startups. Gesteund door de beproefde QA- en testautomatiseringsexpertise van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring, 120+ senior ontwikkelaars en meer dan 160 opgeleverde enterprise softwareprojecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons softwarecentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — ontwerpen wij robuuste CI/CD-pipelines die niet-deterministische AI-modellen met uiterste precisie valideren.
 
 Zo testen en borgen wij AI-software:
 
@@ -66,7 +66,7 @@ Zo testen en borgen wij AI-software:
 
 Als uw CI/CD-pipeline op dit moment regelmatig rood kleurt door wispelturige string-matching tests, reageer dan niet door testdekking te verwijderen — dat is immers de voornaamste reden waarom AI-startups software met verborgen defecten naar productie sturen. Voer een grondige audit uit op uw testsuite: vervang alle exacte tekstvergelijkingen door schema-validatie en richt minimaal een basis LLM-as-a-Judge evaluatiestructuur in voor uw meest bedrijfskritische workflows vóór uw volgende enterprise security review.
 
-De QA- en testautomatiseringsservices van [LaunchStudio](https://launchstudio.eu/en/#packages) zijn beschikbaar binnen onze Launch Ready en Launch & Grow pakketten — geprijsd vanaf € 800 voor gerichte audits tot € 7.500+ voor complete geautomatiseerde AI-testpipelines, gerealiseerd binnen 1 tot 3 weken, tegen circa **20% van de kosten van een traditioneel IT-adviesbureau**. [Neem contact met ons op](https://launchstudio.eu/en/#contact) vóórdat een mislukte audit uw commerciële tractie blokkeert.
+De QA- en testautomatiseringsservices van [LaunchStudio](https://launchstudio.eu/nl/#packages) zijn beschikbaar binnen onze Launch Ready en Launch & Grow pakketten — geprijsd vanaf € 800 voor gerichte audits tot € 7.500+ voor complete geautomatiseerde AI-testpipelines, gerealiseerd binnen 1 tot 3 weken, tegen circa **20% van de kosten van een traditioneel IT-adviesbureau**. [Neem contact met ons op](https://launchstudio.eu/nl/#contact) vóórdat een mislukte audit uw commerciële tractie blokkeert.
 
 ## Belangrijkste Inzichten
 

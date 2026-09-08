@@ -41,7 +41,7 @@ Veel oprichters maken de fatale fout om een "Feature Freeze" af te kondigen — 
 
 U moet technische schuld stapsgewijs aflossen via het beproefde **Strangler Fig patroon**: isoleer één verstrengelde module tegelijk achter een stabiele API-interface, omring deze met geautomatiseerde tests, en refactor de interne logica terwijl het product continu blijft draaien voor uw klanten.
 
-Dit is exact waar het enterprise engineeringteam van [LaunchStudio](https://launchstudio.eu/en/) scale-ups in ondersteunt. Aangedreven door de ervaren software-engineers van [Manifera](https://www.manifera.com/) — met ruim 11 jaar enterprise-ervaring, meer dan 120 senior ontwikkelaars en 160+ succesvol opgeleverde projecten opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street in Singapore** en ons softwareontwikkelcentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — voeren wij gerichte **Code Refactoring** trajecten uit.
+Dit is exact waar het enterprise engineeringteam van [LaunchStudio](https://launchstudio.eu/nl/) scale-ups in ondersteunt. Aangedreven door de ervaren software-engineers van [Manifera](https://www.manifera.com/) — met ruim 11 jaar enterprise-ervaring, meer dan 120 senior ontwikkelaars en 160+ succesvol opgeleverde projecten opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street in Singapore** en ons softwareontwikkelcentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — voeren wij gerichte **Code Refactoring** trajecten uit.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -54,7 +54,7 @@ U hoeft zelf geen programmeur te zijn om technische schuld te monitoren. Vraag u
 2. **Change Failure Rate:** Hoeveel productie-incidenten en verstoorde deployments vonden er plaats in de afgelopen 30 dagen?
 3. **Time to First Commit:** Hoeveel dagen of weken heeft een nieuw aangenomen software-engineer nodig om zijn allereerste betekenisvolle pull request veilig naar productie te brengen?
 
-Als deze cijfers kwartaal op kwartaal verslechteren, is dat uw directe signaal om in professionele refactoring te investeren vóórdat er een existentiële softwarecrisis ontstaat. Zie onze [werkwijze](https://launchstudio.eu/en/#process) voor heldere scopes, vaste sprints en tarieven.
+Als deze cijfers kwartaal op kwartaal verslechteren, is dat uw directe signaal om in professionele refactoring te investeren vóórdat er een existentiële softwarecrisis ontstaat. Zie onze [werkwijze](https://launchstudio.eu/nl/#process) voor heldere scopes, vaste sprints en tarieven.
 
 ## Belangrijkste Inzichten
 
@@ -64,7 +64,7 @@ Als deze cijfers kwartaal op kwartaal verslechteren, is dat uw directe signaal o
 - Een totale herbouw vanaf nul is dodelijk voor uw marktpositie; gefaseerde refactoring via het Strangler Fig model houdt uw business operationeel.
 - LaunchStudio levert de senior enterprise engineering om technische schuld op de achtergrond weg te werken terwijl uw kernteam blijft bouwen aan groei.
 
-[Laat slechte code uw scale-up niet afremmen. Elimineer technische schuld met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Laat slechte code uw scale-up niet afremmen. Elimineer technische schuld met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

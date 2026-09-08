@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/n-plus-one-query-ai-generated-orm"
+    "@id": "https://launchstudio.eu/nl/blog/n-plus-one-query-ai-generated-orm"
   }
 }
 </script>
@@ -90,7 +90,7 @@ Een oprichter die zijn eigen app test heeft vrijwel nooit genoeg gegevens om N+1
 - Let op het aantal databasequery's per paginalading, en niet alleen op de responstijd – een tool zoals een query-logger maakt N+1-patronen onmiddellijk zichtbaar
 - Behandel elke lijst-detailpagina (dashboards, klantlijsten, bestelgeschiedenis) als een standaard verdachte, aangezien dat is waar het patroon het vaakst verschijnt
 
-In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera – vertrouwd door Vodafone, TNO en CFLW. Prestatieprofilering tegen een realistisch gegevensvolume is een standaard onderdeel van hoe onze ingenieurs een technische beoordeling vóór de lancering benaderen, en geen bijgedachte vastgeplakt nadat een klant klaagt. Als uw app niet op belasting is getest met gegevens op echte schaal, [bekijk wat een technische audit daadwerkelijk controleert](https://launchstudio.eu/en/#process) voordat uw eerste serieuze klant het voor u ontdekt.
+In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera – vertrouwd door Vodafone, TNO en CFLW. Prestatieprofilering tegen een realistisch gegevensvolume is een standaard onderdeel van hoe onze ingenieurs een technische beoordeling vóór de lancering benaderen, en geen bijgedachte vastgeplakt nadat een klant klaagt. Als uw app niet op belasting is getest met gegevens op echte schaal, [bekijk wat een technische audit daadwerkelijk controleert](https://launchstudio.eu/nl/#process) voordat uw eerste serieuze klant het voor u ontdekt.
 
 ## Echt voorbeeld
 

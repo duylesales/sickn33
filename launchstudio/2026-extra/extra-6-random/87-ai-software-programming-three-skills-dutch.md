@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "'AI-softwareprogrammeren' is niet één vaardigheid — het zijn er minstens drie",
   "description": "AI-softwareprogrammeren wordt besproken als één vaardigheid, maar het zijn eigenlijk drie afzonderlijke vaardigheden — prompten, de diff beoordelen en het datamodel architecteren — en sterk zijn in de ene zegt niets over de andere twee.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-software-programming-three-skills" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-software-programming-three-skills" }
 }
 </script>
 
@@ -43,7 +43,7 @@ Sterk zijn in prompten en diffbeoordeling maakt u hier niet sterk in. Architectu
 
 Een oprichter die oprecht uitstekend is in prompten en redelijk goed in het beoordelen van diffs, kan nog steeds een product uitbrengen met een architectuur die niet voorbij het eerste gebruiksgeval kan worden uitgebreid, omdat goed zijn in de eerste twee vaardigheden op geen enkele manier bekwaamheid opbouwt in de derde. De storing verschijnt niet als een bug — het verschijnt maanden later als "waarom kunnen we deze functie niet gewoon toevoegen", terwijl het eerlijke antwoord is dat het datamodel nooit is gebouwd om dit te ondersteunen, en niemand dat aspect heeft gescheiden van de twee vaardigheden die de hele tijd prima gingen.
 
-De oplossing is niet om even bekwaam te worden in alle drie. Het is om te herkennen in welke van de drie u zwak bent en daar specifiek hulp bij te zoeken, in plaats van aan te nemen dat algemene AI-codeervaardigheid dat afdekt. LaunchStudio brengt Manifera's enterprise-grade engineering — dezelfde standaard achter meer dan 160 opgeleverde projecten — specifiek naar de architectuurlaag waarin technische oprichters het vaakst onderinvesteren. Onze technici, werkend vanuit Ho Chi Minh-stad, stappen routinematig precies in waar de prompt- en diffbeoordelingsvaardigheden van een oprichter sterk zijn, maar het onderliggende datamodel een tweede, ervarener paar ogen nodig heeft. U kunt [met een technicus praten die door AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact) over welke van de drie vaardigheden uw eigen product mogelijk mist. De aanpak van Manifera voor softwarearchitectuur staat beschreven op de pagina [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
+De oplossing is niet om even bekwaam te worden in alle drie. Het is om te herkennen in welke van de drie u zwak bent en daar specifiek hulp bij te zoeken, in plaats van aan te nemen dat algemene AI-codeervaardigheid dat afdekt. LaunchStudio brengt Manifera's enterprise-grade engineering — dezelfde standaard achter meer dan 160 opgeleverde projecten — specifiek naar de architectuurlaag waarin technische oprichters het vaakst onderinvesteren. Onze technici, werkend vanuit Ho Chi Minh-stad, stappen routinematig precies in waar de prompt- en diffbeoordelingsvaardigheden van een oprichter sterk zijn, maar het onderliggende datamodel een tweede, ervarener paar ogen nodig heeft. U kunt [met een technicus praten die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) over welke van de drie vaardigheden uw eigen product mogelijk mist. De aanpak van Manifera voor softwarearchitectuur staat beschreven op de pagina [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 

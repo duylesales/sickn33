@@ -16,7 +16,7 @@ Doelpersona: CTO / VP of Engineering
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CTO / VP of Engineering
   "datePublished": "2026-12-27",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/build-ai"
+    "@id": "https://launchstudio.eu/nl/blog/build-ai"
   }
 }
 </script>
@@ -59,7 +59,7 @@ Hier bevindt zich de werkelijke slotgracht van uw bedrijf: de unieke workflows, 
 
 Veel bedrijven maken de fout hun traditionele webontwikkelaars van de ene op de andere dag te transformeren tot AI-infrastructuurengineers, met kwetsbare prototypes en gefaalde audits tot gevolg.
 
-[LaunchStudio](https://launchstudio.eu/en/), gedragen door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, biedt het ideale fundament: wij verkopen geen generieke wrapper, maar bouwen uw maatwerk AI-infrastructuur direct in uw eigen cloud, dragen de broncode over en leiden uw team op.
+[LaunchStudio](https://launchstudio.eu/nl/), gedragen door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, biedt het ideale fundament: wij verkopen geen generieke wrapper, maar bouwen uw maatwerk AI-infrastructuur direct in uw eigen cloud, dragen de broncode over en leiden uw team op.
 
 Onze Co-Build aanpak omvat:
 1. **VPC-Infrastructuur Inrichting:** Wij richten vectordatabases, Redis-caches en LLM Gateways in binnen uw eigen AWS- of Azure-omgeving via Terraform (Infrastructure-as-Code).

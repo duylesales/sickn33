@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Wat een productiegereedheidsscore daadwerkelijk meet (en wat niet)",
   "description": "Een uitleg over precies wat een productiegereedheidsbeoordeling omvat — authenticatie, gegevensverwerking, implementatieconfiguratie — en wat er bewust buiten beschouwing wordt gelaten, aan de hand van het rapport van een echte oprichter als leidraad.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/production-readiness-score-measures" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/production-readiness-score-measures" }
 }
 </script>
 
@@ -47,7 +47,7 @@ Het rapport van Sophie was expliciet over deze grens: het signaleerde drie speci
 
 Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoordt het zo: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. We hebben elf jaar ervaring in precies dat." Een productiegereedheidsscore is een directe uitdrukking van die verschuiving — hij bestaat om de volwassenheidsvraag te beantwoorden, niet de ideevraag. Een hoge score behandelen als validatie van het hele bedrijf is een categoriefout die ertoe leidt dat oprichters onvoldoende investeren in de productvragen die een beveiligingsbeoordeling nooit is gebouwd om te beantwoorden.
 
-LaunchStudio brengt de enterprise-grade engineeringdiscipline van Manifera naar precies dit soort afgebakende, eerlijke beoordeling, en onze vestiging in Singapore behandelt een gestage stroom van deze beoordelingen voor zowel oprichters uit Zuidoost-Azië als Europa. U kunt [uw project beschrijven en een productiegereedheidsbeoordeling aanvragen](https://launchstudio.eu/en/#contact) die dezelfde duidelijke grens trekt als het rapport van Sophie. Voor meer informatie over de engineeringstandaard achter deze beoordelingen, zie de praktijk van Manifera op het gebied van [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/), opgebouwd bij meer dan 160 zakelijke projecten.
+LaunchStudio brengt de enterprise-grade engineeringdiscipline van Manifera naar precies dit soort afgebakende, eerlijke beoordeling, en onze vestiging in Singapore behandelt een gestage stroom van deze beoordelingen voor zowel oprichters uit Zuidoost-Azië als Europa. U kunt [uw project beschrijven en een productiegereedheidsbeoordeling aanvragen](https://launchstudio.eu/nl/#contact) die dezelfde duidelijke grens trekt als het rapport van Sophie. Voor meer informatie over de engineeringstandaard achter deze beoordelingen, zie de praktijk van Manifera op het gebied van [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/), opgebouwd bij meer dan 160 zakelijke projecten.
 
 ## Echt voorbeeld
 

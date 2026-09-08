@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/referral-program-technical-implementation-ai-saas"
+    "@id": "https://launchstudio.eu/nl/blog/referral-program-technical-implementation-ai-saas"
   }
 }
 </script>
@@ -49,7 +49,7 @@ LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf m
 
 Voorbij het herstellen van de onmiddellijke toeschrijvingsbug heeft een verwijzingsprogramma dat echte groei gaat overleven een paar dingen nodig die AI-tools niet ongevraagd genereren: een auditspoor dat exact toont wanneer en hoe elke verwijzing werd toegeschreven (voor het oplossen van geschillen wanneer een gebruiker zegt "ik heb iemand verwezen en nooit credit gekregen"), bescherming tegen zelfverwijzing en het misbruik van het delen van codes, en een afstemmingstaak die periodiek controleert op aanmeldingen die overeenkomen met een verwijzingspatroon maar niet werden toegeschreven, zodat kloven binnen dagen worden opgevangen in plaats van maanden. Niets hiervan is exotische engineering – het is het soort onglamoureuze leidingwerk dat een verwijzingsfunctie die goed demonstreert scheidt van een functie die daadwerkelijk groei stimuleert.
 
-Als uw verwijzingsprogramma al een tijdje live is en de cijfers verkeerd voelen, kan onze [prijscalculator](https://launchstudio.eu/en/#calculator) een audit en herstelling schetsen. Manifera's team voor [web-app ontwikkeling](https://www.manifera.com/services/web-app-develop/) heeft deze zelfde klasse van toeschrijvings- en gegevensintegriteitswerk afgehandeld over aanzienlijk grotere platformen, waar hetzelfde onderliggende bugpatroon verschijnt op een andere schaal.
+Als uw verwijzingsprogramma al een tijdje live is en de cijfers verkeerd voelen, kan onze [prijscalculator](https://launchstudio.eu/nl/#calculator) een audit en herstelling schetsen. Manifera's team voor [web-app ontwikkeling](https://www.manifera.com/services/web-app-develop/) heeft deze zelfde klasse van toeschrijvings- en gegevensintegriteitswerk afgehandeld over aanzienlijk grotere platformen, waar hetzelfde onderliggende bugpatroon verschijnt op een andere schaal.
 
 ## Wanneer twee verwijzingslinks naar dezelfde aanmelding wijzen
 

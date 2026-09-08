@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "'AI no code' produceert nog steeds code — dit is wie ervoor verantwoordelijk is",
   "description": "De term 'ai no code' is een marketinggemak, geen technisch feit. Er zit nog steeds code onder, iemand moet die nog steeds begrijpen, en die iemand bent u. Dit is waarom dat ertoe doet.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-no-code-still-produces-code" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-no-code-still-produces-code" }
 }
 </script>
 
@@ -39,7 +39,7 @@ Dit is waarom "no code" een enigszins oneerlijke term is, zelfs wanneer deze met
 
 U hoeft niet te leren programmeren om dit gat te dichten, maar u heeft ten minste een van twee dingen nodig: ofwel een werkend begrip van de kernlogica van uw product in gewone taal, ergens gedocumenteerd, ofwel een relatie met iemand technisch die het u op verzoek kan uitleggen. Geen van beide vereist dat u ontwikkelaar wordt. Beide vereisen dat u "ik weet niet hoe mijn eigen product X afhandelt" behandelt als een probleem dat de moeite waard is om op te lossen voordat het een incident wordt, niet erna.
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het omzetten van precies dit soort ondoorzichtige, door AI samengestelde logica in iets dat een oprichter daadwerkelijk kan uitleggen aan een investeerder, een klant of zichzelf. Technici in ons team, waaronder collega's gebaseerd in Ho Chi Minh-stad, besteden een groot deel van hun werk simpelweg aan het documenteren van wat een door AI gebouwd product daadwerkelijk doet, voordat ze ook maar één regel ervan aanraken. Als de logica van uw eigen product momenteel een black box is, zelfs voor uzelf, [stuur ons dan uw prototypelink en wij geven u gratis advies](https://launchstudio.eu/en/#contact) over wat er daadwerkelijk onder de motorkap gebeurt. De bredere visie van Manifera op eigenaarschap van maatwerksoftware staat op de [over-ons-pagina](https://www.manifera.com/about-us/).
+LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het omzetten van precies dit soort ondoorzichtige, door AI samengestelde logica in iets dat een oprichter daadwerkelijk kan uitleggen aan een investeerder, een klant of zichzelf. Technici in ons team, waaronder collega's gebaseerd in Ho Chi Minh-stad, besteden een groot deel van hun werk simpelweg aan het documenteren van wat een door AI gebouwd product daadwerkelijk doet, voordat ze ook maar één regel ervan aanraken. Als de logica van uw eigen product momenteel een black box is, zelfs voor uzelf, [stuur ons dan uw prototypelink en wij geven u gratis advies](https://launchstudio.eu/nl/#contact) over wat er daadwerkelijk onder de motorkap gebeurt. De bredere visie van Manifera op eigenaarschap van maatwerksoftware staat op de [over-ons-pagina](https://www.manifera.com/about-us/).
 
 ## Echt voorbeeld
 

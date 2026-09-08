@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Waarom 'no code ai tool' een misleidende term is voor wat deze tools daadwerkelijk doen",
   "description": "Een uitleg over waarom 'no code' stilzwijgend wordt gelezen als 'geen onderhoud' — en wat er daadwerkelijk gebeurt wanneer een afhankelijkheid verandert onder een oprichter die de onderliggende code nog nooit heeft gezien.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/no-code-ai-tool-misleading-phrase" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/no-code-ai-tool-misleading-phrase" }
 }
 </script>
 
@@ -45,7 +45,7 @@ Dit is de daadwerkelijke kostenpost die "no code" niet adverteert: niet dat de t
 
 Niets hiervan is een argument tegen no-code AI-tools — het is een argument om net zo te plannen voor onderhoud als u dat voor elke andere software zou doen, want dat is het, ongeacht hoe het is samengesteld. Vooraf weten wie u zou bellen als een afhankelijkheid breekt, is een veel betere positie dan de vraag ontdekken op het moment van een storing.
 
-LaunchStudio brengt de enterprise-grade engineeringdiscipline van Manifera naar precies deze kloof — het lezen en stabiliseren van wat een no-code AI-tool heeft gegenereerd, zonder dat een herbouw nodig is. Ons engineeringcentrum in Ho Chi Minh-stad behandelt dit soort diagnostisch werk regelmatig voor oprichters wier apps afhankelijk waren van iets dat stilzwijgend onder hen veranderde. U kunt [ons de link naar uw prototype sturen voor gratis advies](https://launchstudio.eu/en/#contact) over waar uw app momenteel van afhankelijk is en waar de fragiele punten zitten. Voor meer over hoe productie-engineeringteams precies dit soort afhankelijkheidsrisico aanpakken, zie de praktijk van Manifera voor [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/).
+LaunchStudio brengt de enterprise-grade engineeringdiscipline van Manifera naar precies deze kloof — het lezen en stabiliseren van wat een no-code AI-tool heeft gegenereerd, zonder dat een herbouw nodig is. Ons engineeringcentrum in Ho Chi Minh-stad behandelt dit soort diagnostisch werk regelmatig voor oprichters wier apps afhankelijk waren van iets dat stilzwijgend onder hen veranderde. U kunt [ons de link naar uw prototype sturen voor gratis advies](https://launchstudio.eu/nl/#contact) over waar uw app momenteel van afhankelijk is en waar de fragiele punten zitten. Voor meer over hoe productie-engineeringteams precies dit soort afhankelijkheidsrisico aanpakken, zie de praktijk van Manifera voor [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 

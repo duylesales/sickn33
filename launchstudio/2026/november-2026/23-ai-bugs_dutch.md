@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / AI-Native Oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / AI-Native Oprichter
   "datePublished": "2026-11-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-bugs"
+    "@id": "https://launchstudio.eu/nl/blog/ai-bugs"
   }
 }
 </script>
@@ -71,7 +71,7 @@ Door deze data gestructureerd te loggen ontdekt u patronen, zoals een model dat 
 
 ## Hoe LaunchStudio Betrouwbare AI-Pipelines Bouwt
 
-Geautomatiseerde AI-codetools bouwen uitsluitend het "happy path". [LaunchStudio](https://launchstudio.eu/en/) specialiseert zich in het klaarmaken van die prototypes voor de veeleisende realiteit van productie. Aangedreven door de engineers van [Manifera](https://www.manifera.com/) richten wij enterprise-grade betrouwbaarheid in:
+Geautomatiseerde AI-codetools bouwen uitsluitend het "happy path". [LaunchStudio](https://launchstudio.eu/nl/) specialiseert zich in het klaarmaken van die prototypes voor de veeleisende realiteit van productie. Aangedreven door de engineers van [Manifera](https://www.manifera.com/) richten wij enterprise-grade betrouwbaarheid in:
 
 - **Middleware Parsers:** Garanderen dat de frontend uitsluitend gevalideerde, type-safe data ontvangt (geen JSON-parse crashes meer).
 - **Geautomatiseerde Fallback-Routing:** Faalt GPT-4o of reageert het traag, dan schakelt de backend het verzoek direct door naar Claude 3.5 Sonnet zonder dat de gebruiker vertraging merkt.

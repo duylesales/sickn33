@@ -13,10 +13,10 @@ Doelgroep: SaaS-oprichter Scale-Up
   "@type": "Article",
   "headline": "AI in IT-beveiliging begrijpen voordat u het klantgegevens toevertrouwt",
   "description": "Vijf veelvoorkomende mythes over AI in IT-beveiliging, gecorrigeerd voor SaaS-oprichters die op het punt staan hun platform op schaal met echte klantgegevens toe te vertrouwen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-15",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/understanding-ai-in-it-security-before-you-trust" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/understanding-ai-in-it-security-before-you-trust" }
 }
 </script>
 
@@ -58,7 +58,7 @@ Stilte is niet hetzelfde als veiligheid. De meeste autorisatie- en toegangscontr
 
 ## Wat dit betekent naarmate u voorbij MVP opschaalt
 
-Het patroon over alle zeven mythes is hetzelfde: beveiliging op SaaS-schaal vereist een doelbewuste, periodieke menselijke beoordeling — geen eenmalige ronde, geen tool die op de achtergrond draait, en geen aanname geërfd van een eerdere, kleinere versie van het product. LaunchStudio wordt ondersteund door Manifera, een softwareontwikkelingsbedrijf dat wordt vertrouwd door organisaties waaronder Vodafone en TNO, met een kantoor aan de Tras Street in Singapore dat hetzelfde in Amsterdam gevestigde team ondersteunt dat beveiligingsbeoordelingen uitvoert voor opschalende SaaS-producten. Voor oprichters voorbij MVP die echte klantgegevens verwerken, betekent dit meestal een periodieke beoordeling gecombineerd met beheerde hosting en monitoring, waar het Launch & Grow-pakket omheen is gebouwd. U kunt [berekenen wat een beoordeling op scale-fase en doorlopende ondersteuning zouden kosten voor uw specifieke platform](https://launchstudio.eu/en/#calculator), en voor een diepere blik op de engineeringstandaard erachter, bekijk [Manifera's praktijk voor aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
+Het patroon over alle zeven mythes is hetzelfde: beveiliging op SaaS-schaal vereist een doelbewuste, periodieke menselijke beoordeling — geen eenmalige ronde, geen tool die op de achtergrond draait, en geen aanname geërfd van een eerdere, kleinere versie van het product. LaunchStudio wordt ondersteund door Manifera, een softwareontwikkelingsbedrijf dat wordt vertrouwd door organisaties waaronder Vodafone en TNO, met een kantoor aan de Tras Street in Singapore dat hetzelfde in Amsterdam gevestigde team ondersteunt dat beveiligingsbeoordelingen uitvoert voor opschalende SaaS-producten. Voor oprichters voorbij MVP die echte klantgegevens verwerken, betekent dit meestal een periodieke beoordeling gecombineerd met beheerde hosting en monitoring, waar het Launch & Grow-pakket omheen is gebouwd. U kunt [berekenen wat een beoordeling op scale-fase en doorlopende ondersteuning zouden kosten voor uw specifieke platform](https://launchstudio.eu/nl/#calculator), en voor een diepere blik op de engineeringstandaard erachter, bekijk [Manifera's praktijk voor aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Een vraag die het waard is om deze week aan uw eigen team te stellen
 

@@ -37,9 +37,9 @@ Voor elke bevinding gemarkeerd als opgelost zou het rapport specifiek moeten bes
 
 Zodra je ernst begrijpt en aangepakte van onaangepakte bevindingen kunt onderscheiden, wordt de praktische vraag eenvoudig: zijn alle kritieke en hoge bevindingen opgelost en geverifieerd, en heb ik een duidelijk, geïnformeerd begrip van het daadwerkelijke risico van resterende gemiddelde of lage bevindingen? Een "ja" op beide is een redelijke basis voor lanceringsvertrouwen, aanzienlijk solider dan het vage gevoel van gereedheid waar deze serie herhaaldelijk voor gewaarschuwd heeft om niet alleen op te vertrouwen.
 
-[LaunchStudio](https://launchstudio.eu/en/) schrijft elk auditrapport specifiek om op deze manier leesbaar te zijn — duidelijke ernst, specifieke bevindingen, uitleg in gewone taal op verzoek beschikbaar, en concrete herstelsamenvattingen — gesteund door Manifera's toewijding aan transparante, uitvoerbare rapportage in plaats van technisch jargon dat je op vertrouwen moet aannemen.
+[LaunchStudio](https://launchstudio.eu/nl/) schrijft elk auditrapport specifiek om op deze manier leesbaar te zijn — duidelijke ernst, specifieke bevindingen, uitleg in gewone taal op verzoek beschikbaar, en concrete herstelsamenvattingen — gesteund door Manifera's toewijding aan transparante, uitvoerbare rapportage in plaats van technisch jargon dat je op vertrouwen moet aannemen.
 
-[Krijg een auditrapport dat je daadwerkelijk kunt lezen en waarnaar kunt handelen](https://launchstudio.eu/en/#contact) — bevindingen duidelijk uitgelegd, niet alleen technisch opgesomd.
+[Krijg een auditrapport dat je daadwerkelijk kunt lezen en waarnaar kunt handelen](https://launchstudio.eu/nl/#contact) — bevindingen duidelijk uitgelegd, niet alleen technisch opgesomd.
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-waitlist-tool-right-way-even-waitlist-needs-security"
+    "@id": "https://launchstudio.eu/nl/blog/ai-waitlist-tool-right-way-even-waitlist-needs-security"
   }
 }
 </script>
@@ -53,9 +53,9 @@ De consequentie van een datalek bij een wachtlijst – echte e-mailadressen, pot
 
 Basis-invoervalidatie en spambescherming op het registratieformulier, het opslaan van verzamelde gegevens met echte, hoewel eenvoudige, beveiliging in plaats van nonchalante veronachtzaming, en een korte, eerlijke notitie over waar de gegevens voor gebruikt zullen worden. Niets hiervan vereist de volledige zorgvuldigheid voor productiegereedheid die een gelanceerd product uiteindelijk nodig heeft, maar het vereist meer bewuste zorg dan "het is maar een wachtlijst" natuurlijk uit zichzelf impliceert.
 
-[LaunchStudio](https://launchstudio.eu/en/) past een afgebakende, gepast minimale maar echte standaard van zorgvuldigheid toe op wachtlijsttools voor de lancering. Wij erkennen dat echte persoonlijke gegevens echte, hoewel evenredige, bescherming rechtvaardigen, ongeacht hoe vroeg in de ontwikkeling het omringende product momenteel is. Dit wordt ondersteund door Manifera's bredere toewijding om elke verzameling van echte persoonlijke gegevens met oprechte ernst te behandelen.
+[LaunchStudio](https://launchstudio.eu/nl/) past een afgebakende, gepast minimale maar echte standaard van zorgvuldigheid toe op wachtlijsttools voor de lancering. Wij erkennen dat echte persoonlijke gegevens echte, hoewel evenredige, bescherming rechtvaardigen, ongeacht hoe vroeg in de ontwikkeling het omringende product momenteel is. Dit wordt ondersteund door Manifera's bredere toewijding om elke verzameling van echte persoonlijke gegevens met oprechte ernst te behandelen.
 
-[Laat uw wachtlijst beoordelen met de minimale, gepaste zorg die echte gegevens verdienen](https://launchstudio.eu/en/#contact) — voor-de-lancering betekent niet voor-de-consequentie voor de mensen die zich aanmelden.
+[Laat uw wachtlijst beoordelen met de minimale, gepaste zorg die echte gegevens verdienen](https://launchstudio.eu/nl/#contact) — voor-de-lancering betekent niet voor-de-consequentie voor de mensen die zich aanmelden.
 
 ## Wat er gebeurt met wachtlijstgegevens zodra het product daadwerkelijk lanceert
 

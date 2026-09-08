@@ -13,10 +13,10 @@ Doelgroep: SaaS-oprichter Scale-Up
   "@type": "Article",
   "headline": "Privacy en AI: wat EU-oprichters nodig hebben vóór ze lanceren",
   "description": "Privacy en AI is geen probleem om uit te stellen tot u groter bent. Dit is een vergelijking van drie paden die EU SaaS-oprichters bewandelen om nalevingsklaar te worden, en wat elk pad daadwerkelijk kost.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-15",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/privacy-and-ai-what-eu-founders-need-before" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/privacy-and-ai-what-eu-founders-need-before" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Een full-service bureau kan absoluut correcte privacyarchitectuur bouwen — maa
 
 ## Pad drie: een afgebakende opdracht die behoudt wat werkt
 
-Het derde pad behandelt privacy- en AI-naleving als gericht engineeringwerk dat bovenop een bestaand product gelegd wordt, niet als reden om opnieuw te beginnen. Het [Launch & Grow-pakket](https://launchstudio.eu/en/#packages) van LaunchStudio — € 2.500–€ 7.500 vast, plus € 49/maand voor doorlopende hosting, monitoring en beveiligingsupdates — is precies voor dit stadium gebouwd: een SaaS die al werkt en correcte architectuur, monitoring en nalevingsgereedheid nodig heeft om te blijven schalen zonder dat het risico eronder verder oploopt. Het houdt uw bestaande frontend en product volledig intact, pakt de specifieke gaten aan — rechten van betrokkenen, verwerkersdocumentatie, EU-dataresidentie — en komt daarna met doorlopende monitoring in plaats van een eenmalige fix die slecht verouderd naarmate uw gebruikersbestand groeit.
+Het derde pad behandelt privacy- en AI-naleving als gericht engineeringwerk dat bovenop een bestaand product gelegd wordt, niet als reden om opnieuw te beginnen. Het [Launch & Grow-pakket](https://launchstudio.eu/nl/#packages) van LaunchStudio — € 2.500–€ 7.500 vast, plus € 49/maand voor doorlopende hosting, monitoring en beveiligingsupdates — is precies voor dit stadium gebouwd: een SaaS die al werkt en correcte architectuur, monitoring en nalevingsgereedheid nodig heeft om te blijven schalen zonder dat het risico eronder verder oploopt. Het houdt uw bestaande frontend en product volledig intact, pakt de specifieke gaten aan — rechten van betrokkenen, verwerkersdocumentatie, EU-dataresidentie — en komt daarna met doorlopende monitoring in plaats van een eenmalige fix die slecht verouderd naarmate uw gebruikersbestand groeit.
 
 ## Wat een misgelopen deal daadwerkelijk kost
 

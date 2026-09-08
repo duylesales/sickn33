@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/restaurant-qr-ordering-ai-app-menu-sync-bug"
+    "@id": "https://launchstudio.eu/nl/blog/restaurant-qr-ordering-ai-app-menu-sync-bug"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Een QR-bestelapp die klaar is voor een echte dinerbediening heeft het nodig dat 
 
 Dit is de categorie kloof waar het team van Manifera specifiek naar zoekt bij het beoordelen van met AI gegenereerde apps voor de lancering – LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters, en verouderde status-bugs zoals deze zijn exact het soort ding dat naar boven komt in een gestructureerde beoordeling, maar niet bij informeel testen. Onze ingenieurs die werken vanuit Manifera's ontwikkelingscentrum aan de Pho Quang Street in Ho Chi Minh-stad handelen een groot deel van dit soort realtime data- en status-synchronisatiewerk af voor klanten van LaunchStudio.
 
-Voordat u QR-codes op echte tafels plaatst, is het het waard om [te controleren wat een beoordeling voor de lancering kost](https://launchstudio.eu/en/#calculator) — het is een fractie van de kosten van een vrijdagavond aan gecompenseerde maaltijden.
+Voordat u QR-codes op echte tafels plaatst, is het het waard om [te controleren wat een beoordeling voor de lancering kost](https://launchstudio.eu/nl/#calculator) — het is een fractie van de kosten van een vrijdagavond aan gecompenseerde maaltijden.
 
 ## Artikelen met beperkte aantallen hebben hun eigen race-conditie
 
@@ -113,7 +113,7 @@ Ja – ingenieurs verbonden aan Manifera's ontwikkelingscentrum in Ho Chi Minh-s
 
 ### Wat is de beste manier om dit te testen voor de lancering?
 
-Open de bestelapp op twee apparaten, wijzig een prijs in het beheerderspaneel en kijk of de al geopende sessie op het tweede apparaat dit weerspiegelt. Als dat niet zo is, [praat met een ingenieur](https://launchstudio.eu/en/#contact) vóór uw eerste echte bediening.
+Open de bestelapp op twee apparaten, wijzig een prijs in het beheerderspaneel en kijk of de al geopende sessie op het tweede apparaat dit weerspiegelt. Als dat niet zo is, [praat met een ingenieur](https://launchstudio.eu/nl/#contact) vóór uw eerste echte bediening.
 
 <script type="application/ld+json">
 {

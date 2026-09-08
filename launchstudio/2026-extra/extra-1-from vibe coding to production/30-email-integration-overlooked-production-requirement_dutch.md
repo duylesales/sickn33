@@ -35,9 +35,9 @@ Een wachtwoordherstel-e-mail die in spam landt is functioneel identiek, vanuit h
 
 Voorbij de SPF-, DKIM-, en DMARC-records zelf, omvat correcte configuratie het gebruiken van een toegewijd verzendsubdomein (het beschermen van de reputatie van jouw primaire domein tegen elk transactionele-e-mailprobleem), het monitoren van bounce- en klachtenpercentages via het dashboard van jouw e-mailprovider, en, idealiter, alarmering als leveringsfaalpercentages onverwacht stijgen — het uitbreiden van de observability-praktijken elders in deze serie behandeld specifiek naar e-maillevering.
 
-[LaunchStudio](https://launchstudio.eu/en/) configureert correcte e-maildeliverability-infrastructuur — SPF, DKIM, DMARC, en toegewijde verzenddomeinen — als standaardonderdeel van elke Launch & Grow-opdracht, gesteund door Manifera's ervaring met het betrouwbaar integreren van transactionele e-mail over talrijke productie-SaaS-applicaties.
+[LaunchStudio](https://launchstudio.eu/nl/) configureert correcte e-maildeliverability-infrastructuur — SPF, DKIM, DMARC, en toegewijde verzenddomeinen — als standaardonderdeel van elke Launch & Grow-opdracht, gesteund door Manifera's ervaring met het betrouwbaar integreren van transactionele e-mail over talrijke productie-SaaS-applicaties.
 
-[Bevestig dat jouw e-mails daadwerkelijk inboxen bereiken, niet alleen dat ze technisch verzenden](https://launchstudio.eu/en/#calculator) — dit gat kost je klanten die nooit een supportticket genereren dat vertelt waarom.
+[Bevestig dat jouw e-mails daadwerkelijk inboxen bereiken, niet alleen dat ze technisch verzenden](https://launchstudio.eu/nl/#calculator) — dit gat kost je klanten die nooit een supportticket genereren dat vertelt waarom.
 
 ## Echt voorbeeld
 

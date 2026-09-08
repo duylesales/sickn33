@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/true-cost-not-launching-delay-kills-ai-startups"
+    "@id": "https://launchstudio.eu/nl/blog/true-cost-not-launching-delay-kills-ai-startups"
   }
 }
 </script>
@@ -59,9 +59,9 @@ Niet-technische oprichters die AI-tools gebruiken, lopen tegen een specifieke va
 
 Vraag uzelf af: met hoeveel potentiële klanten heeft u gesproken die vandaag klaar waren om te betalen? Hoeveel maanden is uw prototype al "bijna klaar"? Wat zou een concurrent die volgend kwartaal instapt u kosten aan marktpositie? Deze vragen onthullen doorgaans een uitstelkostenpost die vele malen groter is dan de lanceerkosten waarover getwijfeld wordt.
 
-[LaunchStudio](https://launchstudio.eu/en/) is er specifiek op gericht om de kloof tussen "werkend prototype" en "live product" terug te brengen naar één tot drie weken, ondersteund door Manifera's 11+ jaar software-ervaring.
+[LaunchStudio](https://launchstudio.eu/nl/) is er specifiek op gericht om de kloof tussen "werkend prototype" en "live product" terug te brengen naar één tot drie weken, ondersteund door Manifera's 11+ jaar software-ervaring.
 
-[Stop de tikkende klok van uitstel](https://launchstudio.eu/en/#calculator) — ontvang een concrete planning en prijs voor het lanceren van wat u al heeft gebouwd.
+[Stop de tikkende klok van uitstel](https://launchstudio.eu/nl/#calculator) — ontvang een concrete planning en prijs voor het lanceren van wat u al heeft gebouwd.
 
 ## Een Eenvoudig Model om Uw Eigen Uitstelkosten te Berekenen
 

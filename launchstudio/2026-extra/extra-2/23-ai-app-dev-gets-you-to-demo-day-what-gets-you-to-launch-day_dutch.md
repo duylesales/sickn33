@@ -16,7 +16,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "datePublished": "2026-07-26",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-app-dev-gets-you-to-demo-day-what-gets-you-to-launch-day"
+    "@id": "https://launchstudio.eu/nl/blog/ai-app-dev-gets-you-to-demo-day-what-gets-you-to-launch-day"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Een klantedemo richt de aandacht op het klantgerichte product, wat exact is waar
 
 ## Hoe LaunchStudio bureaus ondersteunt die deze specifieke controle uitvoeren
 
-[LaunchStudio](https://launchstudio.eu/en/) werkt als een stille, white-label technische partner voor bureaus die exact dit soort klantoverdrachten afhandelen. LaunchStudio voert een systematische controle uit op blootgestelde interne routes en beheerdersfunctionaliteit als standaardpraktijk, ondersteund door Manifera's 11+ jaar ervaring met productie-engineering over zowel door oprichters gebouwde als enterprise-systemen.
+[LaunchStudio](https://launchstudio.eu/nl/) werkt als een stille, white-label technische partner voor bureaus die exact dit soort klantoverdrachten afhandelen. LaunchStudio voert een systematische controle uit op blootgestelde interne routes en beheerdersfunctionaliteit als standaardpraktijk, ondersteund door Manifera's 11+ jaar ervaring met productie-engineering over zowel door oprichters gebouwde als enterprise-systemen.
 
 Manifera's white-label beoordelingen worden geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met door NDA gedekte partnertrajecten gecoördineerd vanuit het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Bureaueigenaar? We kunnen uw stille productiepartner achter de schermen zijn](https://launchstudio.eu/en/#contact).
+[Bureaueigenaar? We kunnen uw stille productiepartner achter de schermen zijn](https://launchstudio.eu/nl/#contact).
 
 ## Een praktische checklist vóór de overdracht die bureaus in een middag kunnen uitvoeren
 

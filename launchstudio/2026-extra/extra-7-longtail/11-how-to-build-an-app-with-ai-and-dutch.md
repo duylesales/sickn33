@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
   "@type": "Article",
   "headline": "Hoe u een app bouwt met AI en toch iets veiligs lanceert",
   "description": "Een praktische checklist voor oprichters die met AI-tools zoals Bolt of Lovable een app bouwen en die willen lanceren als iets veiligs, niet alleen iets werkends. Behandelt de hiaten die AI-tools achterlaten.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-08",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-build-an-app-with-ai-and-still-launch-something-secure" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/how-to-build-an-app-with-ai-and-still-launch-something-secure" }
 }
 </script>
 
@@ -58,7 +58,7 @@ Hier komt het cijfer van 80% vandaan dat rondgaat in AI-native oprichterskringen
 
 Er is ook een psychologische reden waarom deze lijst wordt overgeslagen, niet alleen een praktische. Zodra u een avond hebt doorgebracht met het zien van uw eigen idee dat op het scherm tot leven komt, duwt het emotionele momentum u richting delen, niet richting ondervragen. Vertragen om te vragen "wat zou dit kunnen breken" vlak na de euforie van "het werkt" voelt bijna contraproductief, en precies daarom helpt het om die specifieke taak over te dragen aan iemand zonder emotioneel belang bij de voltooiing van de build — iemand wiens enige taak is om te vinden wat ontbreekt voordat een vreemde dat doet.
 
-Manifera brengt meer dan een decennium aan productie-engineeringervaring naar precies dit overdrachtspunt, wat de hele reden is waarom LaunchStudio bestaat als een toegewijde last-mile-dienst in plaats van een algemene app-bouwwinkel. Ons klantgerichte team werkt vanuit Herengracht 420 in Amsterdam en coördineert rechtstreeks met de bredere engineeringgroep bij precies dit soort projecten. Als u liever iemand deze checklist tegen uw eigen codebase laat uitvoeren in plaats van te gokken, kunt u [zien hoe het proces werkt](https://launchstudio.eu/en/#process) en na een kort gesprek een vaste offerte krijgen. Voor de technische standaarden achter die beoordeling is [Manifera's praktijk voor maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) dezelfde engineeringdiscipline waar uw project in terechtkomt.
+Manifera brengt meer dan een decennium aan productie-engineeringervaring naar precies dit overdrachtspunt, wat de hele reden is waarom LaunchStudio bestaat als een toegewijde last-mile-dienst in plaats van een algemene app-bouwwinkel. Ons klantgerichte team werkt vanuit Herengracht 420 in Amsterdam en coördineert rechtstreeks met de bredere engineeringgroep bij precies dit soort projecten. Als u liever iemand deze checklist tegen uw eigen codebase laat uitvoeren in plaats van te gokken, kunt u [zien hoe het proces werkt](https://launchstudio.eu/nl/#process) en na een kort gesprek een vaste offerte krijgen. Voor de technische standaarden achter die beoordeling is [Manifera's praktijk voor maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) dezelfde engineeringdiscipline waar uw project in terechtkomt.
 
 ## Wat "veilig genoeg om te lanceren" daadwerkelijk kost
 

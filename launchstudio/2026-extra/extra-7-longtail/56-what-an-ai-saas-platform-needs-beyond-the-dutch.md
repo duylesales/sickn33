@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
   "@type": "Article",
   "headline": "Wat een AI SaaS-platform nodig heeft naast de werkende demo",
   "description": "80% van de door AI gebouwde projecten bereikt nooit productie. Een technische blik op wat een AI SaaS-platform daadwerkelijk nodig heeft naast een werkende demo, uitgelegd voor niet-technische oprichters.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-13",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/what-an-ai-saas-platform-needs-beyond-the" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/what-an-ai-saas-platform-needs-beyond-the" }
 }
 </script>
 
@@ -48,7 +48,7 @@ Elk van deze hiaten is onzichtbaar in precies het scenario waarin oprichters hun
 
 Het is de moeite waard om duidelijk te zijn over wat dit niet betekent: het betekent niet dat uw door AI gebouwde frontend verspilde moeite was, of dat u opnieuw moet beginnen met een andere tool. De interface, de gebruikersflows, de ontwerpbeslissingen die u door iteratie met uw AI-tool hebt gemaakt — dat blijft allemaal. Wat verandert, is wat eronder zit, onzichtbaar voor een gebruiker maar bepalend voor de vraag of het product daadwerkelijk een groeiend klantenbestand kan dragen zonder stilletjes kapot te gaan op manieren die niemand opmerkt totdat het duur wordt.
 
-LaunchStudio brengt Manifera's engineeringpraktijken op ondernemingsniveau, verfijnd over meer dan 160 opgeleverde projecten, terug naar een scope en prijs die past bij het budget van een oprichter in de SaaS-fase, met een ontwikkelcentrum aan de Pho Quang Street 10 in Ho Chi Minh-stad dat veel van dit platformlaag-engineering doet naast de kantoren in Amsterdam en Singapore. Dit is doelbewust geen volledige ontwikkeling vanaf nul — de frontend die u heeft gebouwd blijft precies zoals hij is; de multi-tenancy-, meting- en schalingslaag wordt eronder toegevoegd. U kunt [het volledige beeld bekijken van hoe LaunchStudio werkt](https://launchstudio.eu/en/) voordat u beslist wat uw platform vervolgens daadwerkelijk nodig heeft, en voor de engineeringdiepte achter die aanpak, bekijk hoe [Manifera webapplicaties bouwt](https://www.manifera.com/services/web-app-develop/) voor zijn zakelijke klanten.
+LaunchStudio brengt Manifera's engineeringpraktijken op ondernemingsniveau, verfijnd over meer dan 160 opgeleverde projecten, terug naar een scope en prijs die past bij het budget van een oprichter in de SaaS-fase, met een ontwikkelcentrum aan de Pho Quang Street 10 in Ho Chi Minh-stad dat veel van dit platformlaag-engineering doet naast de kantoren in Amsterdam en Singapore. Dit is doelbewust geen volledige ontwikkeling vanaf nul — de frontend die u heeft gebouwd blijft precies zoals hij is; de multi-tenancy-, meting- en schalingslaag wordt eronder toegevoegd. U kunt [het volledige beeld bekijken van hoe LaunchStudio werkt](https://launchstudio.eu/nl/) voordat u beslist wat uw platform vervolgens daadwerkelijk nodig heeft, en voor de engineeringdiepte achter die aanpak, bekijk hoe [Manifera webapplicaties bouwt](https://www.manifera.com/services/web-app-develop/) voor zijn zakelijke klanten.
 
 ## Wat oprichters soms verkeerd begrijpen over "later opschalen"
 

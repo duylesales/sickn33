@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
   "@type": "Article",
   "headline": "De echte rol van AI in software-engineeringteams vandaag",
   "description": "De rol van AI in software-engineeringteams is groter dan autocomplete maar kleiner dan de marketing suggereert. Dit is wat AI daadwerkelijk goed doet, en waar een menselijk team nog steeds moet ingrijpen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-10",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/the-real-role-of-ai-in-software-engineering-teams-today" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/the-real-role-of-ai-in-software-engineering-teams-today" }
 }
 </script>
 
@@ -46,7 +46,7 @@ Dit is ook waarom de uitdrukking "AI in software-engineering" doorgaans twee zee
 
 Het is de moeite waard om specifiek te zijn over hoe stap twee er in de praktijk daadwerkelijk uitziet, want "bedrijfslogica" klinkt abstract totdat u het toegepast ziet. Een abonnement-app moet expliciet beslissen wat er gebeurt met de gegevens van een gebruiker op het moment dat een kaart wordt geweigerd — verliezen ze onmiddellijk toegang, krijgen ze een respijtperiode, worden ze automatisch gedowngraded naar een gratis niveau? Geen van die keuzes is fout, maar geen ervan wordt beslist door een prompt als "voeg abonnementen toe". Iemand moet de beslissing nemen en ervoor zorgen dat de code het daadwerkelijk elke keer afdwingt, niet alleen in het ene scenario dat werd getest.
 
-Dit is precies de vorm van team die Manifera rond LaunchStudio heeft gebouwd: geen developers die uw app vanaf een leeg blad schrijven, maar engineers wier baan specifiek begint waar de baan van de AI-tool eindigt. Manifera heeft meer dan elf jaar besteed aan productiegerede stappen twee tot en met vijf voor klanten variërend van scale-ups tot organisaties zoals Vodafone en TNO, en diezelfde discipline wordt toegepast op het door AI gebouwde prototype van een oprichter in plaats van op een zakelijke codebase. U kunt meer lezen over [het engineeringteam achter dat trackrecord](https://www.manifera.com/about-us/) rechtstreeks. Als u een concreet gevoel wilt van hoe dat eruitziet voor een project van uw omvang, [beschrijf wat u hebt gebouwd](https://launchstudio.eu/en/#process) en krijg een direct antwoord over wat ontbreekt.
+Dit is precies de vorm van team die Manifera rond LaunchStudio heeft gebouwd: geen developers die uw app vanaf een leeg blad schrijven, maar engineers wier baan specifiek begint waar de baan van de AI-tool eindigt. Manifera heeft meer dan elf jaar besteed aan productiegerede stappen twee tot en met vijf voor klanten variërend van scale-ups tot organisaties zoals Vodafone en TNO, en diezelfde discipline wordt toegepast op het door AI gebouwde prototype van een oprichter in plaats van op een zakelijke codebase. U kunt meer lezen over [het engineeringteam achter dat trackrecord](https://www.manifera.com/about-us/) rechtstreeks. Als u een concreet gevoel wilt van hoe dat eruitziet voor een project van uw omvang, [beschrijf wat u hebt gebouwd](https://launchstudio.eu/nl/#process) en krijg een direct antwoord over wat ontbreekt.
 
 ## Een eenvoudige test voor waar uw project daadwerkelijk staat
 

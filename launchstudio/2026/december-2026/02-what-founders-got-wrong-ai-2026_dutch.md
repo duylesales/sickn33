@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-02",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-founders-got-wrong-ai-2026"
+    "@id": "https://launchstudio.eu/nl/blog/what-founders-got-wrong-ai-2026"
   }
 }
 </script>
@@ -69,7 +69,7 @@ Waarom? Omdat verticale AI-producten diepe domeinkennis kunnen inbedden die alge
 
 Veel in de EU gevestigde oprichters beschouwden de AVG/GDPR en de naderende AI Act als een zware last. De slimme oprichters herkenden hierin juist een krachtige defensieve slotgracht (*moat*). Als uw AI-applicatie vanaf dag één compliant is met de AVG, inclusief strikte dataresidentie, toestemmingsbeheer en audit-logging, kunt u direct verkopen aan zakelijke enterprise-klanten waar concurrenten met slordige datapraktijken worden geweerd.
 
-[LaunchStudio](https://launchstudio.eu/en/), opererend onder Manifera met het Europese hoofdkantoor aan de Herengracht 420 in Amsterdam en ontwikkelteams aan de Pho Quang Street in Ho Chi Minh-stad, bouwt specifiek compliance-conforme infrastructuren voor oprichters die zich richten op Europese markten. Dit is geen bijzaak — het is een fundamentele architectuurkeuze.
+[LaunchStudio](https://launchstudio.eu/nl/), opererend onder Manifera met het Europese hoofdkantoor aan de Herengracht 420 in Amsterdam en ontwikkelteams aan de Pho Quang Street in Ho Chi Minh-stad, bouwt specifiek compliance-conforme infrastructuren voor oprichters die zich richten op Europese markten. Dit is geen bijzaak — het is een fundamentele architectuurkeuze.
 
 ## Fout 6: Alles Solo Willen Doen Toen de Stack Complex Werd
 
@@ -85,7 +85,7 @@ De markt beloont geen perfectie; de markt beloont aanwezigheid. Een product met 
 
 ## Herhaal de Fouten van 2026 Niet in 2027
 
-Als uw met AI gebouwde prototype op uw laptop staat in plaats van omzet te genereren, maakt u dezelfde fout die 80% van de AI-startups dit jaar de kop heeft gekost. [LaunchStudio](https://launchstudio.eu/en/) maakt uw prototype productieklaar in één tot drie weken, met vaste prijzen vanaf €800. [Boek uw gratis 15-minuten adviesgesprek](https://launchstudio.eu/en/#contact) en lanceer vóór uw concurrenten.
+Als uw met AI gebouwde prototype op uw laptop staat in plaats van omzet te genereren, maakt u dezelfde fout die 80% van de AI-startups dit jaar de kop heeft gekost. [LaunchStudio](https://launchstudio.eu/nl/) maakt uw prototype productieklaar in één tot drie weken, met vaste prijzen vanaf €800. [Boek uw gratis 15-minuten adviesgesprek](https://launchstudio.eu/nl/#contact) en lanceer vóór uw concurrenten.
 
 ## Echt voorbeeld
 

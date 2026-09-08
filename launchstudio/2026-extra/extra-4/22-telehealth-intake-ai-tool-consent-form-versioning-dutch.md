@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/telehealth-intake-ai-tool-consent-form-versioning"
+    "@id": "https://launchstudio.eu/nl/blog/telehealth-intake-ai-tool-consent-form-versioning"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Een AI-assistent die een intakestroom bouwt op basis van een prompt zoals "voeg 
 
 Het op de juiste manier aanpakken hiervan betekent het behandelen van het toestemmingsformulier zelf als een entiteit met versies: elke gepubliceerde versie krijgt een uniek identificatienummer en tijdstempel, elk toestemmingsrecord van een patiënt koppelt aan de specifieke versie waar hij mee akkoord ging, en de toepassing controleert die link bij elke relevante interactie – en niet alleen bij de aanmelding. Wanneer een praktijk haar beleid voor het delen van gegevens bijwerkt, zien bestaande patiënten een vraag om opnieuw toestemming te geven vóór hun volgende sessie, in plaats van voor onbepaalde tijd door te gaan op verouderde voorwaarden waar niemand actief van besloot dat ze nog steeds acceptabel waren. Achter LaunchStudio staat Manifera's team van meer dan 120 ervaren ingenieurs. Dit exacte patroon – toestemming met versies gekoppeld aan een poortcontrole – is standaardpraktijk in de gereguleerde enterprise-omgevingen waar Manifera de afgelopen 11 jaar voor heeft gebouwd.
 
-Manifera's engineeringdiscipline loopt via haar hoofdkantoor in Amsterdam aan de Herengracht 420, waar klantgericht gezondheidszorg- en nalevingswerk rechtstreeks wordt gecoördineerd met oprichters die zelf geen eigen intern nalevingsteam hebben. [Bereken wat het herstellen hiervan in uw eigen intaketool zou kosten](https://launchstudio.eu/en/#calculator) voordat het een formele klacht wordt in plaats van een stille kloof.
+Manifera's engineeringdiscipline loopt via haar hoofdkantoor in Amsterdam aan de Herengracht 420, waar klantgericht gezondheidszorg- en nalevingswerk rechtstreeks wordt gecoördineerd met oprichters die zelf geen eigen intern nalevingsteam hebben. [Bereken wat het herstellen hiervan in uw eigen intaketool zou kosten](https://launchstudio.eu/nl/#calculator) voordat het een formele klacht wordt in plaats van een stille kloof.
 
 ## Niet elke beleidsupdate heeft de hernieuwde toestemming van elke patiënt nodig
 

@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-in-app-bolt-on-feature-vs-ai-native-product"
+    "@id": "https://launchstudio.eu/nl/blog/ai-in-app-bolt-on-feature-vs-ai-native-product"
   }
 }
 </script>
@@ -49,9 +49,9 @@ Een gloednieuw AI-native prototype heeft geen bestaande klanten om teleur te ste
 
 Omdat de nieuwe AI-functie een al live product met echte klanten raakt, zijn de belangen van een kloof onmiddellijk in plaats van theoretisch, wat precies is waarom het behandelen van de toevoeging als "gewoon nog een functie" – beoordeeld met dezelfde terloopse instelling als een UI-aanpassing – onderschat wat er daadwerkelijk onder is veranderd, ook al ziet de zichtbare verandering aan het product er in vergelijking bescheiden uit.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt AI-functies die worden toegevoegd aan bestaande, al live producten met dit specifieke onderscheid in gedachten, door de gegevenstoegang, externe afhankelijkheid en kostenblootstelling van de nieuwe integratie te behandelen als een toegewijde beoordeling in plaats van het te vouwen in algemene kwaliteitsborging (QA), voortbouwend op Manifera's bredere ervaring met het integreren van nieuwe mogelijkheden in productiesystemen die al echte enterprise-gebruikers bedienen.
+[LaunchStudio](https://launchstudio.eu/nl/) beoordeelt AI-functies die worden toegevoegd aan bestaande, al live producten met dit specifieke onderscheid in gedachten, door de gegevenstoegang, externe afhankelijkheid en kostenblootstelling van de nieuwe integratie te behandelen als een toegewijde beoordeling in plaats van het te vouwen in algemene kwaliteitsborging (QA), voortbouwend op Manifera's bredere ervaring met het integreren van nieuwe mogelijkheden in productiesystemen die al echte enterprise-gebruikers bedienen.
 
-[Laat uw nieuwe AI-functie beoordelen voordat deze klanten raakt die u al hebt](https://launchstudio.eu/en/#contact) — de belangen zijn anders zodra er een bestaand product achter zit.
+[Laat uw nieuwe AI-functie beoordelen voordat deze klanten raakt die u al hebt](https://launchstudio.eu/nl/#contact) — de belangen zijn anders zodra er een bestaand product achter zit.
 
 ## Zes vragen om te beantwoorden voordat u de AI-functie verzendt
 

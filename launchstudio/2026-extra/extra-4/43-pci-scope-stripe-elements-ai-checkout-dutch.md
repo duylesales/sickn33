@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/pci-scope-stripe-elements-ai-checkout"
+    "@id": "https://launchstudio.eu/nl/blog/pci-scope-stripe-elements-ai-checkout"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Zodra rauwe kaartgegevens uw servers raken, stopt de naleving van PCI DSS een vi
 
 Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoordt het zo: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. We hebben elf jaar ervaring in exact dat." Een afrekenformulier is een perfect voorbeeld – de architectuurbeslissing die wordt gemaakt op de eerste middag van het bouwen ervan bepaalt een nalevingslast die het bedrijf jarenlang volgt.
 
-LaunchStudio's ingenieurs, werkend vanuit Manifera's kantoor in Amsterdam aan de Herengracht 420, beoordelen betalingsstromen als een standaard onderdeel van het productie-gereed maken van een met AI gegenereerd SaaS-product. Ze vervangen afrekenformulieren met rauwe velden door Stripe Elements of een gehoste afrekening voordat een enkel echt kaartnummer ooit de eigen servers van de app bereikt. Als u niet zeker weet in welke categorie uw huidige afrekening valt, is het de moeite waard om [een beveiligingsbeoordeling met een vaste omvang te krijgen](https://launchstudio.eu/en/#calculator) voordat het een groter gesprek wordt met een betalingsverwerker of het beveiligingsteam van een zakelijke klant.
+LaunchStudio's ingenieurs, werkend vanuit Manifera's kantoor in Amsterdam aan de Herengracht 420, beoordelen betalingsstromen als een standaard onderdeel van het productie-gereed maken van een met AI gegenereerd SaaS-product. Ze vervangen afrekenformulieren met rauwe velden door Stripe Elements of een gehoste afrekening voordat een enkel echt kaartnummer ooit de eigen servers van de app bereikt. Als u niet zeker weet in welke categorie uw huidige afrekening valt, is het de moeite waard om [een beveiligingsbeoordeling met een vaste omvang te krijgen](https://launchstudio.eu/nl/#calculator) voordat het een groter gesprek wordt met een betalingsverwerker of het beveiligingsteam van een zakelijke klant.
 
 ## Stripe Elements isoleert het kaartveld — Het beveiligd niet al het andere op de pagina
 

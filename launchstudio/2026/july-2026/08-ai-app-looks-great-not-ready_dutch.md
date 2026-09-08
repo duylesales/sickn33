@@ -83,7 +83,7 @@ Uw app wordt direct geladen met één gebruiker via een snelle verbinding. Met 5
 
 Hier is het goede nieuws: u hoeft uw door AI gebouwde prototype niet weg te gooien en opnieuw te beginnen. Het oppervlak – uw gebruikersinterface, gebruikersstromen en productontwerp – is waardevol en vaak uitstekend. Wat gerepareerd moet worden, is de onzichtbare infrastructuur eronder.
 
-Dit is precies de aanpak die [LaunchStudio](https://launchstudio.eu/en/) hanteert:
+Dit is precies de aanpak die [LaunchStudio](https://launchstudio.eu/nl/) hanteert:
 
 1. **Behoud uw frontend**: de gebruikersinterface die u met AI hebt gebouwd, blijft precies zoals hij is
 
@@ -113,7 +113,7 @@ Deze aanpak kost €800 tot €7.500 in plaats van de €20.000 tot €500.000 d
 
 AI-tools creëren prachtige frontends, maar de productiegereedheid zit in de onzichtbare lagen ingebouwd. In plaats van opnieuw te bouwen of te lanceren met enorme veiligheidsrisico's, verhardt LaunchStudio uw bestaande code voor een veilige, professionele release.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Manifera combineert *"Nederlands management met Vietnamees meesterschap"* en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420) en kantoren in **Singapore** en **Ho Chi Minh City, Vietnam**. Via LaunchStudio controleren en beveiligen we uw door AI gegenereerde frontend, implementeren we database-RLS, live webhook-betalingsintegraties en schaalbare productiehosting in 1 tot 3 weken. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio wordt beheerd door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Manifera combineert *"Nederlands management met Vietnamees meesterschap"* en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420) en kantoren in **Singapore** en **Ho Chi Minh City, Vietnam**. Via LaunchStudio controleren en beveiligen we uw door AI gegenereerde frontend, implementeren we database-RLS, live webhook-betalingsintegraties en schaalbare productiehosting in 1 tot 3 weken. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

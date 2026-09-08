@@ -35,9 +35,9 @@ De statistiek wordt vaak gebruikt, impliciet of expliciet, om urgentie te creër
 
 Als jouw prototype een gevalideerd idee vertegenwoordigt waar je nog steeds in gelooft, en wat je daadwerkelijk tegenhoudt een productiegereedheidsgat is in plaats van verloren overtuiging of een slechte marktfit, zit je in de specifieke subset van die 80% waar de uitkomst oprecht, direct aanpakbaar is — geen statistische onvermijdelijkheid, maar een oplosbaar, begrensd technisch probleem met een bekend, afbakenbaar pad vooruit.
 
-[LaunchStudio](https://launchstudio.eu/en/) pakt specifiek de productiegereedheidsgat-subset van deze statistiek aan — de founders stilgevallen niet door verloren overtuiging maar door een technisch gat tussen prototype en lancering — gesteund door Manifera's engineeringtrackrecord over 160+ opgeleverde projecten die het naar productie haalden.
+[LaunchStudio](https://launchstudio.eu/nl/) pakt specifiek de productiegereedheidsgat-subset van deze statistiek aan — de founders stilgevallen niet door verloren overtuiging maar door een technisch gat tussen prototype en lancering — gesteund door Manifera's engineeringtrackrecord over 160+ opgeleverde projecten die het naar productie haalden.
 
-[Ontdek of jouw specifieke stagnatie aanpakbaar is](https://launchstudio.eu/en/#contact) — de hoofdstatistiek bundelt oorzaken die niet allemaal gelijk van toepassing zijn op jouw situatie.
+[Ontdek of jouw specifieke stagnatie aanpakbaar is](https://launchstudio.eu/nl/#contact) — de hoofdstatistiek bundelt oorzaken die niet allemaal gelijk van toepassing zijn op jouw situatie.
 
 ## Echt voorbeeld
 

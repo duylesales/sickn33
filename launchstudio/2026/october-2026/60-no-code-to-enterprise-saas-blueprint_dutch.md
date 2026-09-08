@@ -49,11 +49,11 @@ Pas nadat de backend hermetisch beveiligd en schaalbaar is ingericht, vervangt u
 
 Als niet-technische oprichter kunt u dit geavanceerde blauwdruk niet alleen uitvoeren — en het is essentieel om daar vanaf het begin realistisch in te zijn. U zou € 80.000 tot € 200.000 per jaar kunnen uitgeven aan het werven van een fulltime Chief Technology Officer, een DevOps-engineer en een frontend-ontwikkelaar — en hopen dat zij harmonieus samenwerken, terwijl het wervingsproces alleen al maanden vertraging oplevert.
 
-Of u kiest voor een partnerschap met [LaunchStudio](https://launchstudio.eu/en/).
+Of u kiest voor een partnerschap met [LaunchStudio](https://launchstudio.eu/nl/).
 
 Gesteund door de diepgaande enterprise software-ervaring van [Manifera](https://www.manifera.com/about-us/) — met ruim 11 jaar ervaring, 120+ senior ontwikkelaars en 160+ succesvolle projecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons softwarecentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — fungeren wij als uw dedicated "CTO-as-a-Service". Wij voeren het Enterprise Blauwdruk integraal voor u uit: we auditen uw no-code MVP, migreren uw backend naar beveiligde PostgreSQL-servers met RLS, bouwen uw datamaskeringspijplijnen, ontkoppelen uw AI-logica naar microservices en herbouwen uw frontend in Next.js — stapsgewijs via de Strangler Fig methode, zodat uw huidige klanten **nul minuten downtime** ervaren.
 
-De pakketten van [LaunchStudio](https://launchstudio.eu/en/#packages) — Launch Ready en Launch & Grow — variëren van € 800 voor een gerichte audit tot € 7.500+ voor het volledige driestappenplan, gerealiseerd binnen 1 tot 3 weken per fase. Dit bedraagt circa **20% van de kosten van een intern softwareteam**. Wij transformeren uw breekbare prototype in een volwaardige B2B SaaS waarmee u met een gerust hart enterprise-contracten van miljoenen kunt sluiten.
+De pakketten van [LaunchStudio](https://launchstudio.eu/nl/#packages) — Launch Ready en Launch & Grow — variëren van € 800 voor een gerichte audit tot € 7.500+ voor het volledige driestappenplan, gerealiseerd binnen 1 tot 3 weken per fase. Dit bedraagt circa **20% van de kosten van een intern softwareteam**. Wij transformeren uw breekbare prototype in een volwaardige B2B SaaS waarmee u met een gerust hart enterprise-contracten van miljoenen kunt sluiten.
 
 ## Belangrijkste Inzichten
 

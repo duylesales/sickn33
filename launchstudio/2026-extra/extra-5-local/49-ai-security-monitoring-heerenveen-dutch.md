@@ -13,10 +13,10 @@ Doelgroep: SaaS Scale-Up Oprichter
   "@type": "Article",
   "headline": "Waarom AI-beveiligingsmonitoring meer uitmaakt ná de lancering in Heerenveen",
   "description": "Een beveiligingsbeoordeling vóór de lancering vangt bekende problemen op. AI-beveiligingsmonitoring ná de lancering vangt de problemen op die niemand had voorspeld, geïllustreerd met een casus van een SaaS-oprichter in Heerenveen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-security-monitoring-heerenveen" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-security-monitoring-heerenveen" }
 }
 </script>
 
@@ -42,7 +42,7 @@ Er is een belangrijk onderscheid tussen monitoring voor uptime en monitoring voo
 
 Dit is een kernonderdeel van wat LaunchStudio inricht voor SaaS-oprichters die overstappen naar de groeifase. Onze engineers hebben 160+ projecten opgeleverd voor enterprise-klanten, met opleverwerk deels gecoördineerd vanuit ons engineeringcentrum in Ho Chi Minh City, en het inrichten van productie-monitoring — detectie van authenticatie-anomalieën, API rate limiting met alarmering, monitoring van databasequery's — is een standaardpraktijk bij elk project dat live gaat. We leggen deze laag achter uw bestaande product zonder de frontend aan te raken die uw gebruikers al kennen.
 
-Als u wilt begrijpen wat een volledige productie-inrichting kost voor uw specifieke app, geeft [onze calculator](https://launchstudio.eu/en/#calculator) een snelle inschatting. En voor een indruk van het diepere infrastructuurwerk dat Manifera levert voor grotere klanten met hogere belangen, draait onze [offshore software development](https://www.manifera.com/services/offshore-software-development/) praktijk op dezelfde monitoringdiscipline op grotere schaal.
+Als u wilt begrijpen wat een volledige productie-inrichting kost voor uw specifieke app, geeft [onze calculator](https://launchstudio.eu/nl/#calculator) een snelle inschatting. En voor een indruk van het diepere infrastructuurwerk dat Manifera levert voor grotere klanten met hogere belangen, draait onze [offshore software development](https://www.manifera.com/services/offshore-software-development/) praktijk op dezelfde monitoringdiscipline op grotere schaal.
 
 ## Waarom oprichters in de groeifase dit als eerste voelen
 

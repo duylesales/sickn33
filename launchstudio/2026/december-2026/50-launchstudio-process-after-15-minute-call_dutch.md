@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/launchstudio-process-after-15-minute-call"
+    "@id": "https://launchstudio.eu/nl/blog/launchstudio-process-after-15-minute-call"
   }
 }
 </script>
@@ -65,7 +65,7 @@ Uw product gaat live op uw eigen domein, onder uw eigen accounts, met volledig b
 
 Geen herontwerp van uw interface zonder uitdrukkelijk overleg. Geen verrassingen met open eindes en uurtarieven, zoals beschreven in onze richtlijnen voor vaste prijzen. Geen druk om aanvullende diensten aan te schaffen die uw specifieke project niet nodig heeft — het doel is een afgebakende, eerlijke samenwerking, niet het maximaliseren van declarabele uren.
 
-[Boek uw gesprek van 15 minuten](https://launchstudio.eu/en/#contact) — de eerste, geheel vrijblijvende stap in dit transparante proces.
+[Boek uw gesprek van 15 minuten](https://launchstudio.eu/nl/#contact) — de eerste, geheel vrijblijvende stap in dit transparante proces.
 
 ## Achter Stap 2: Hoe de 7-Lagen Gap-Analyse Daadwerkelijk Werkt
 

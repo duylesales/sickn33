@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-09",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/server-side-rendering-ai-applications"
+    "@id": "https://launchstudio.eu/nl/blog/server-side-rendering-ai-applications"
   }
 }
 </script>
@@ -101,7 +101,7 @@ Als uw AI-applicatie is gebouwd met Lovable of Bolt en volledig client-side draa
 4. **Configureer response streaming** — Het streamen van AI-antwoorden vanaf de server naar de browser vereist een specifieke SSR-streamingconfiguratie.
 5. **Pas de deployment-infrastructuur aan** — SSR-applicaties vereisen een Node.js-runtime of serverless edge functies (zoals op Vercel), in plaats van eenvoudige statische bestandshosting.
 
-Deze migratie is een van de meest uitgevoerde trajecten bij [LaunchStudio](https://launchstudio.eu/en/). Het engineeringteam van Manifera, met diepgaande Next.js- en React-expertise verspreid over 120+ softwareontwikkelaars aan de Pho Quang Street in Ho Chi Minh-stad, migreert client-side AI-applicaties routinematig naar volwaardige SSR-architecturen met behoud van uw bestaande gebruikersinterface.
+Deze migratie is een van de meest uitgevoerde trajecten bij [LaunchStudio](https://launchstudio.eu/nl/). Het engineeringteam van Manifera, met diepgaande Next.js- en React-expertise verspreid over 120+ softwareontwikkelaars aan de Pho Quang Street in Ho Chi Minh-stad, migreert client-side AI-applicaties routinematig naar volwaardige SSR-architecturen met behoud van uw bestaande gebruikersinterface.
 
 Herre Roelevink, oprichter van Manifera, ziet dit patroon wekelijks: *"Vrijwel elke door Lovable gegenereerde applicatie die we binnenkrijgen is een client-side SPA met openstaande API-sleutels in de browser. Het allereerste wat we doen is het verplaatsen van de AI-aanroepen naar server-side routes. Het is de meest effectieve beveiligingsverbetering die we kunnen doorvoeren, en ons team klaart dat binnen één werkdag."*
 
@@ -109,7 +109,7 @@ Herre Roelevink, oprichter van Manifera, ziet dit patroon wekelijks: *"Vrijwel e
 
 Wanneer u in 2027 start met een nieuw AI-project, is het antwoord vrijwel altijd ja. Begin direct met Next.js App Router en bouw uw AI-functies vanaf dag één met Server Components. De initiële opzet vraagt fractioneel meer denkwerk dan een simpele client-side SPA, maar het voorkomt een complete categorie aan ernstige beveiligingslekken en SEO-problemen die u anders later tegen aanzienlijk hogere kosten moet repareren.
 
-[Bespreek uw architectuur met LaunchStudio](https://launchstudio.eu/en/#contact) — wij helpen oprichters bij het kiezen van de optimale rendering-strategie voor hun specifieke use-case.
+[Bespreek uw architectuur met LaunchStudio](https://launchstudio.eu/nl/#contact) — wij helpen oprichters bij het kiezen van de optimale rendering-strategie voor hun specifieke use-case.
 
 ## Echt voorbeeld
 

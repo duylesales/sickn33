@@ -16,7 +16,7 @@ Doelpersona: Niet-Technische Oprichter / Agency-Eigenaar
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Niet-Technische Oprichter / Agency-Eigenaar
   "datePublished": "2026-11-28",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-generated-tool"
+    "@id": "https://launchstudio.eu/nl/blog/ai-generated-tool"
   }
 }
 </script>
@@ -59,7 +59,7 @@ Het transformeren van een intern AI-script naar een volwaardige SaaS vereist het
 
 Het productiseren van een met AI gegenereerde tool is een specialistisch vakgebied. Proberen een LLM via prompts Stripe-webhooks en multi-tenancy te laten toevoegen aan een bestaand prototype leidt vrijwel altijd tot een onoverzichtelijke puinhoop.
 
-[LaunchStudio](https://launchstudio.eu/en/) is opgericht om deze overstap naadloos te realiseren. Gesteund door het engineeringteam van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink (Amsterdam, Herengracht 420 en Ho Chi Minhstad, Pho Quangstraat 10), voeren wij een gestructureerde *Productization Sprint* uit:
+[LaunchStudio](https://launchstudio.eu/nl/) is opgericht om deze overstap naadloos te realiseren. Gesteund door het engineeringteam van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink (Amsterdam, Herengracht 420 en Ho Chi Minhstad, Pho Quangstraat 10), voeren wij een gestructureerde *Productization Sprint* uit:
 1. **Frontend-Behoud:** Wij bewaren uw geteste React-componenten en interacties.
 2. **Stripe/Mollie Integratie:** Wij bouwen de webhook-infrastructuur voor abonnementsbeheer, automatische incasso (iDEAL/creditcard) en tokenlimieten.
 3. **Database-Beveiliging:** Wij migreren platte databronnen naar een multi-tenant PostgreSQL/Supabase architectuur met RLS.

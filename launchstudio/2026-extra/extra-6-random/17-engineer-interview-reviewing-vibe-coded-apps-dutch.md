@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Een interview met een LaunchStudio-engineer: wat niemand u vertelt over het beoordelen van vibe-coded apps",
   "description": "Een gesprek met een LaunchStudio-engineer over wat er daadwerkelijk gebeurt wanneer een mens een door AI gegenereerde codebase beoordeelt, inclusief een echt voorbeeld van het beoordelen van pull requests uit een met Cursor gebouwde CRM.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/engineer-interview-reviewing-vibe-coded-apps" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/engineer-interview-reviewing-vibe-coded-apps" }
 }
 </script>
 
@@ -43,7 +43,7 @@ Antwoord: We lezen niet elke regel — dat schaalt niet en daar zit het risico n
 
 Antwoord: Dat een netjes ogende app en een veilige app niet hetzelfde zijn, en dat is geen kritiek op de tools — Lovable, Bolt, Cursor, v0 zijn oprecht goed in het snel produceren van werkende software. Het is alleen dat "werkend" en "productieklaar" verschillende lat zijn, en niemand vertelt oprichters dat de AI-tool alleen de eerste heeft gehaald.
 
-Manifera brengt meer dan 11 jaar productie-engineeringervaring naar precies dit soort beoordeling, en onze Amsterdamse engineers doen dit werk dagelijks bij Lovable-, Bolt-, Cursor- en v0-projecten. Als u een tweede paar ogen op uw eigen prototype wilt, kunt u [ons uw prototypelink sturen voor gratis advies](https://launchstudio.eu/en/#contact) voordat u uw eigen versie van Milans webhookbug op de harde manier ontdekt. Voor een breder beeld van hoe dit soort engineeringbeoordeling past in grotere builds, zie Manifera's [diensten voor webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
+Manifera brengt meer dan 11 jaar productie-engineeringervaring naar precies dit soort beoordeling, en onze Amsterdamse engineers doen dit werk dagelijks bij Lovable-, Bolt-, Cursor- en v0-projecten. Als u een tweede paar ogen op uw eigen prototype wilt, kunt u [ons uw prototypelink sturen voor gratis advies](https://launchstudio.eu/nl/#contact) voordat u uw eigen versie van Milans webhookbug op de harde manier ontdekt. Voor een breder beeld van hoe dit soort engineeringbeoordeling past in grotere builds, zie Manifera's [diensten voor webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
 ## Echt voorbeeld
 

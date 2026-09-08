@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "Alles wat niemand u vertelt voordat u een app met AI bouwt",
   "description": "Voordat u een app met AI bouwt en die in uw eentje probeert te lanceren: hier is een eerlijke vergelijking van wat er daarna gebeurt: DIY, freelancer, bureau, of een toegewijd last-mile team.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-09",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/everything-nobody-tells-you-before-you-build-an-app-with-ai" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/everything-nobody-tells-you-before-you-build-an-app-with-ai" }
 }
 </script>
 
@@ -60,7 +60,7 @@ Geen van deze vier opties is universeel fout. Als u echt vrije tijd hebt en van 
 
 Het is ook de moeite waard om op te merken: deze vier opties sluiten elkaar in de tijd niet uit. Genoeg oprichters doen het DIY-pad voor hun eerste lancering, lopen vast op iets specifieks zoals betalingen of autorisatie, en halen een afgebakende specialist erbij voor precies dat onderdeel in plaats van volledig van aanpak te wisselen. Dit behandelen als een enkele onomkeerbare beslissing is deels waarom het risicovoller aanvoelt dan het hoeft te zijn.
 
-Manifera, het softwareontwikkelingsbedrijf dat LaunchStudio uitbaat, brengt meer dan een decennium aan productie-engineeringervaring naar precies dit overdrachtspunt — wat de hele reden is waarom er een vierde optie bestaat tussen "het alleen doen" en "een volledig bureau inhuren." Ons team omvat engineers gevestigd op Tras Street in Singapore, die samenwerken met de bredere Manifera-groep en regelmatig door AI gegenereerde projecten van Cursor, Bolt, Lovable en v0 beoordelen. Als u wilt zien waar uw project daadwerkelijk in deze vergelijking valt, [reken de cijfers door via de calculator](https://launchstudio.eu/en/#calculator) en zie hoe een vaste scope eruitziet voordat u zich vastlegt op een van de vier paden. Voor een blik op de bredere engineering-trackrecord achter die schatting behandelt [Manifera's projectportfolio](https://www.manifera.com/portfolio/) het zakelijke werk dat hetzelfde team levert wanneer het geen last-mile-fixes doet.
+Manifera, het softwareontwikkelingsbedrijf dat LaunchStudio uitbaat, brengt meer dan een decennium aan productie-engineeringervaring naar precies dit overdrachtspunt — wat de hele reden is waarom er een vierde optie bestaat tussen "het alleen doen" en "een volledig bureau inhuren." Ons team omvat engineers gevestigd op Tras Street in Singapore, die samenwerken met de bredere Manifera-groep en regelmatig door AI gegenereerde projecten van Cursor, Bolt, Lovable en v0 beoordelen. Als u wilt zien waar uw project daadwerkelijk in deze vergelijking valt, [reken de cijfers door via de calculator](https://launchstudio.eu/nl/#calculator) en zie hoe een vaste scope eruitziet voordat u zich vastlegt op een van de vier paden. Voor een blik op de bredere engineering-trackrecord achter die schatting behandelt [Manifera's projectportfolio](https://www.manifera.com/portfolio/) het zakelijke werk dat hetzelfde team levert wanneer het geen last-mile-fixes doet.
 
 ## Echt voorbeeld
 

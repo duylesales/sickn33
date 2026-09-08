@@ -16,7 +16,7 @@ Doelpersona: B2B SaaS-Oprichter / Investeerders
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: B2B SaaS-Oprichter / Investeerders
   "datePublished": "2026-11-30",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-saas-platform"
+    "@id": "https://launchstudio.eu/nl/blog/ai-saas-platform"
   }
 }
 </script>
@@ -60,7 +60,7 @@ Dit wordt gerealiseerd via **Semantische Caching** (meestal met Redis). Vraagt G
 
 AI-codetools zoals Cursor en Lovable zijn uitstekend in het ontwerpen van de visuele interface voor thin wrappers, maar schieten tekort bij het bouwen van complexe RAG-systemen, externe API-koppelingen en caching-middleware.
 
-[LaunchStudio](https://launchstudio.eu/en/) overbrugt deze kloof. Gesteund door de software-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink (Amsterdam, Herengracht 420 en Ho Chi Minhstad, Pho Quangstraat 10) transformeren wij oppervlakkige prototypes tot volwaardige B2B SaaS-bedrijven:
+[LaunchStudio](https://launchstudio.eu/nl/) overbrugt deze kloof. Gesteund door de software-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink (Amsterdam, Herengracht 420 en Ho Chi Minhstad, Pho Quangstraat 10) transformeren wij oppervlakkige prototypes tot volwaardige B2B SaaS-bedrijven:
 1. **RAG-Architectuur:** Inrichten van multi-tenant vectordatabases (Supabase pgvector) en data-ingestie zodat de AI bedrijfsdocumenten van klanten kan analyseren.
 2. **Semantische Caching & Rate Limiting:** Redis-middleware om kosten te verlagen en API-budgetten te beschermen.
 3. **Workflow-Integraties:** Bouwen van betrouwbare webhooks en koppelingen (Stripe, SendGrid, Salesforce, Shopify).

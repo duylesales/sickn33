@@ -41,9 +41,9 @@ Alleen de hoofdkost van elk pad vergelijken mist dat de paden niet uitwisselbaar
 
 Als je oprechte, aangetoonde technische vaardigheid en beschikbare tijd hebt, en comfortabel bent met het accepteren van het zelfreview-blinde-vlek-risico (mogelijk gemitigeerd door een tweede technische persoon jouw kritieke beveiligingsbeslissingen specifiek te laten reviewen), is DIY een redelijk pad. Als je een bestaande vertrouwde freelancer-relatie hebt en hun specifieke AI-codebase-ervaring kunt verifiëren met de diagnostische vragen en auditartefacten doorheen deze serie behandeld, kan dat pad goed werken. Als geen van beide van toepassing is, biedt een gespecialiseerde provider met aangetoonde, specifieke ervaring in precies deze categorie doorgaans de beste combinatie van kosten, tijdlijnzekerheid, en risicomitigatie.
 
-[LaunchStudio](https://launchstudio.eu/en/) vertegenwoordigt het derde pad met specifieke, aangetoonde diepgang in AI-gegenereerde-codebase-patronen over 160+ opgeleverde projecten, gesteund door Manifera's 11+ jaar bredere engineeringervaring — maar de juiste keuze voor jouw specifieke situatie hangt af van jouw eigen eerlijke beoordeling tegen de bovenstaande criteria.
+[LaunchStudio](https://launchstudio.eu/nl/) vertegenwoordigt het derde pad met specifieke, aangetoonde diepgang in AI-gegenereerde-codebase-patronen over 160+ opgeleverde projecten, gesteund door Manifera's 11+ jaar bredere engineeringervaring — maar de juiste keuze voor jouw specifieke situatie hangt af van jouw eigen eerlijke beoordeling tegen de bovenstaande criteria.
 
-[Krijg een afgebakende schatting om te vergelijken met jouw andere opties](https://launchstudio.eu/en/#calculator) — een eerlijke vergelijking vereist een echt getal, geen generiek.
+[Krijg een afgebakende schatting om te vergelijken met jouw andere opties](https://launchstudio.eu/nl/#calculator) — een eerlijke vergelijking vereist een echt getal, geen generiek.
 
 ## Echt voorbeeld
 

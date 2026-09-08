@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "Wat AI in databaseontwerp verkeerd doet voor multi-tenant apps",
   "description": "Een vergelijking van hoe AI-tools doorgaans databases ontwerpen voor multi-tenant apps versus hoe ze ontworpen zouden moeten worden, en wat AI in databasewerk daadwerkelijk goed moet doen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-13",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/what-ai-in-database-design-gets-wrong-for" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/what-ai-in-database-design-gets-wrong-for" }
 }
 </script>
 
@@ -54,7 +54,7 @@ Er is ook een specifieke reden waarom dit gat een codebeoordeling door andere te
 
 Als u al een live multi-tenant product heeft gebouwd met een AI-tool, is een snelle manier om dit zelf te controleren om twee testaccounts te openen, een intern ID te noteren uit de gegevens van het eerste account — een bestelnummer, een record-ID — en te kijken of enige functie in de sessie van het tweede account ertoe kan worden gebracht om naar datzelfde ID te verwijzen en echte gegevens te retourneren. Let vooral op bulkacties, exports, zoekfunctionaliteit, en elk beheer- of alleen-intern scherm, aangezien dat consequent de plekken zijn waar een ontbrekend tenant-filter het langst verborgen blijft, precies omdat ze gebouwd en getest worden met minder controle dan de kernklantgerichte flow.
 
-LaunchStudio opereert onder Manifera, wiens engineers meer dan 160 projecten hebben opgeleverd voor zakelijke klanten voordat dit specifieke patroon een veelvoorkomend probleem werd voor AI-native oprichters, werkend vanuit een kantoor aan de Herengracht 420 in Amsterdam. Het beoordelen en corrigeren van tenant-isolatie op databaseniveau is een van de meest voorkomende onderdelen van Launch Ready- en Launch & Grow-trajecten die LaunchStudio aanneemt, precies omdat het onzichtbaar is totdat het dat niet meer is. U kunt [zien wat een beoordeling en oplossing op databaseniveau kost voor uw specifieke app](https://launchstudio.eu/en/#packages), en blader door [Manifera's portfolio](https://www.manifera.com/portfolio/) voor voorbeelden van het soort productiewaardige data-architectuur waar dit werk op is gebouwd.
+LaunchStudio opereert onder Manifera, wiens engineers meer dan 160 projecten hebben opgeleverd voor zakelijke klanten voordat dit specifieke patroon een veelvoorkomend probleem werd voor AI-native oprichters, werkend vanuit een kantoor aan de Herengracht 420 in Amsterdam. Het beoordelen en corrigeren van tenant-isolatie op databaseniveau is een van de meest voorkomende onderdelen van Launch Ready- en Launch & Grow-trajecten die LaunchStudio aanneemt, precies omdat het onzichtbaar is totdat het dat niet meer is. U kunt [zien wat een beoordeling en oplossing op databaseniveau kost voor uw specifieke app](https://launchstudio.eu/nl/#packages), en blader door [Manifera's portfolio](https://www.manifera.com/portfolio/) voor voorbeelden van het soort productiewaardige data-architectuur waar dit werk op is gebouwd.
 
 ## De eentabeltest
 

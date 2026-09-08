@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Wat programmeren met AI in Tilburg niet automatisch oplost",
   "description": "Programmeren met AI helpt Tilburgse oprichters snel aan een werkende app, maar snelheid staat niet gelijk aan productiegereedheid. Dit is wat nog menselijke beoordeling vereist.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/22-code-with-ai-tilburg" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/22-code-with-ai-tilburg" }
 }
 </script>
 
@@ -36,7 +36,7 @@ Achter LaunchStudio staat Manifera's team van meer dan 120 ervaren engineers, wa
 
 ## Waarom dit geen reden is om te stoppen met programmeren met AI
 
-Niets hiervan is een argument tegen met AI ondersteunde ontwikkeling — in tegendeel. De oprichters die de beste resultaten behalen in de Tilburgse startup-scene zijn niet degenen die AI-tools vermijden, het zijn degenen die begrijpen waar het werk van de tool ophoudt en waar een tweede ronde moet beginnen — en die die tweede ronde behandelen als een normale, gebudgetteerde stap in plaats van als een teken dat er iets misging bij de eerste. Het behandelen van uw met AI gecodeerde prototype als een sterke eerste conceptversie in plaats van een voltooid product is de grootste voorspeller van de vraag of het het contact met echte gebruikers overleeft. Als u niet zeker weet waar die grens ligt voor uw eigen project, kunt u [berekenen wat een productie-gereedheidsronde zou kosten](https://launchstudio.eu/en/#calculator) voordat u zich ergens toe verplicht.
+Niets hiervan is een argument tegen met AI ondersteunde ontwikkeling — in tegendeel. De oprichters die de beste resultaten behalen in de Tilburgse startup-scene zijn niet degenen die AI-tools vermijden, het zijn degenen die begrijpen waar het werk van de tool ophoudt en waar een tweede ronde moet beginnen — en die die tweede ronde behandelen als een normale, gebudgetteerde stap in plaats van als een teken dat er iets misging bij de eerste. Het behandelen van uw met AI gecodeerde prototype als een sterke eerste conceptversie in plaats van een voltooid product is de grootste voorspeller van de vraag of het het contact met echte gebruikers overleeft. Als u niet zeker weet waar die grens ligt voor uw eigen project, kunt u [berekenen wat een productie-gereedheidsronde zou kosten](https://launchstudio.eu/nl/#calculator) voordat u zich ergens toe verplicht.
 
 ## Uw eigen code beoordelen als een audit van de toeleveringsketen
 

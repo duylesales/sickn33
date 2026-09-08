@@ -37,9 +37,9 @@ Zoals behandeld in deze series toekomstgerichte begeleiding over 2027 en verder,
 
 Als er één vraag onder alle zestig artikelen ligt, is het de vraag vroeg in deze serie geïntroduceerd en doorheen herbezocht: welke validatielus bewijst dat deze code veilig genoeg is om te lanceren? Elk specifiek gat, elke specifieke test, elk specifiek founder-verhaal is, op zijn eigen manier, een concreet antwoord op een deel van die ene vraag.
 
-[LaunchStudio](https://launchstudio.eu/en/) bestaat om precies deze validatielus te bieden — het dichten van het vertrouwensgrensgat tussen jouw AI-gegenereerde prototype en een oprecht productieklaar product, laag voor laag, zonder aan te raken wat je al gebouwd hebt — gesteund door Manifera's 11+ jaar engineeringervaring en een specifieke, toegewijde focus op precies dit soort werk.
+[LaunchStudio](https://launchstudio.eu/nl/) bestaat om precies deze validatielus te bieden — het dichten van het vertrouwensgrensgat tussen jouw AI-gegenereerde prototype en een oprecht productieklaar product, laag voor laag, zonder aan te raken wat je al gebouwd hebt — gesteund door Manifera's 11+ jaar engineeringervaring en een specifieke, toegewijde focus op precies dit soort werk.
 
-[Krijg de validatielus die jouw prototype miste](https://launchstudio.eu/en/#contact) — van vibe coding naar productie, specifiek en volledig aangepakt, niet alleen conceptueel.
+[Krijg de validatielus die jouw prototype miste](https://launchstudio.eu/nl/#contact) — van vibe coding naar productie, specifiek en volledig aangepakt, niet alleen conceptueel.
 
 ## Echt voorbeeld
 

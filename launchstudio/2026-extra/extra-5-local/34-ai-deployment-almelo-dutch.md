@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "AI-deployment is geen knop: Wat Almeloose oprichters daadwerkelijk moeten doen",
   "description": "Klikken op 'publiceren' in Lovable of Bolt is niet hetzelfde als een echte AI-deployment pipeline. Een technische onderbouwing voor Almeloose oprichters over wat er ontbreekt tussen een live URL en een uitrol van productiekwaliteit.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-deployment-almelo" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-deployment-almelo" }
 }
 </script>
 
@@ -60,7 +60,7 @@ Niets hiervan vereist een toegewijde QA-engineer of een grote tijdsinvestering �
 
 ## Een praktisch startpunt
 
-Als u een indruk wilt van wat deugdelijke AI-deployment infrastructuur kost voor uw specifieke project, geeft onze [calculator](https://launchstudio.eu/en/#calculator) een realistische inschatting gebaseerd op de complexiteit van uw app — de meeste projecten vallen tussen € 800 en € 7.500, geleverd in één tot drie weken, wat ongeveer een vijfde is van wat een traditioneel ontwikkelbureau zou rekenen voor hetzelfde infrastructuurwerk.
+Als u een indruk wilt van wat deugdelijke AI-deployment infrastructuur kost voor uw specifieke project, geeft onze [calculator](https://launchstudio.eu/nl/#calculator) een realistische inschatting gebaseerd op de complexiteit van uw app — de meeste projecten vallen tussen € 800 en € 7.500, geleverd in één tot drie weken, wat ongeveer een vijfde is van wat een traditioneel ontwikkelbureau zou rekenen voor hetzelfde infrastructuurwerk.
 
 ## Echt voorbeeld
 

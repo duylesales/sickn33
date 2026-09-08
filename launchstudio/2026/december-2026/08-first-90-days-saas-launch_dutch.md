@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-08",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/first-90-days-saas-launch"
+    "@id": "https://launchstudio.eu/nl/blog/first-90-days-saas-launch"
   }
 }
 </script>
@@ -107,7 +107,7 @@ Heeft u 60 dagen overleefd met groeiende retentie en uw eerste betalende klanten
 
 De eerste 90 dagen verlopen aanzienlijk soepeler wanneer uw lanceer-infrastructuur solide staat. Dit is waar de juiste engineeringbeslissingen tijdens de deployment zich dubbel en dwars uitbetalen — of juist tot crises leiden.
 
-[LaunchStudio](https://launchstudio.eu/en/), aangedreven door [Manifera](https://www.manifera.com/) met 11+ jaar enterprise software-ervaring, waarborgt dat elk gelanceerd product de vereiste basis bevat voor een succesvolle eerste 90 dagen:
+[LaunchStudio](https://launchstudio.eu/nl/), aangedreven door [Manifera](https://www.manifera.com/) met 11+ jaar enterprise software-ervaring, waarborgt dat elk gelanceerd product de vereiste basis bevat voor een succesvolle eerste 90 dagen:
 
 - **Foutregistratie (Sentry)** — Zodat u bugs ontdekt vóórdat uw gebruikers ze melden.
 - **Uptime-monitoring** — Zodat u weet wanneer uw app hapert vóórdat klanten het merken.
@@ -123,7 +123,7 @@ Herre Roelevink, oprichter van Manifera, benadrukt dit uit ervaring met honderde
 
 Het belangrijkste inzicht van de eerste 90 dagen: **uw product op dag 90 zal er totaal anders uitzien dan op dag 1.** En dat is precies hoe het hoort. De beste producten zijn niet de producten die foutloos lanceren — het zijn de producten die sneller leren, luisteren en itereren dan de concurrentie.
 
-[Lanceer vandaag uw AI-native SaaS](https://launchstudio.eu/en/#contact) en start uw 90-dagen traject op een productierijp fundament.
+[Lanceer vandaag uw AI-native SaaS](https://launchstudio.eu/nl/#contact) en start uw 90-dagen traject op een productierijp fundament.
 
 ## Echt voorbeeld
 

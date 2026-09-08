@@ -13,10 +13,10 @@ Doelgroep: SaaS Scale-Up Oprichter
   "@type": "Article",
   "headline": "SaaS-AI in Sittard-Geleen: Wat er verandert op het moment dat u een betalende klant heeft",
   "description": "Vóór uw eerste betalende klant kan een met AI gebouwd SaaS-product stilletjes met heel veel wegkomen. Het verhaal van een Sittard-Geleense oprichter laat zien wat er verandert op het moment dat er geld beweegt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/28-saas-ai-sittard-geleen" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/28-saas-ai-sittard-geleen" }
 }
 </script>
 
@@ -32,7 +32,7 @@ Sittard-Geleen's economie kent een bijzondere relatie met operationele disciplin
 
 Het meest voorkomende probleem in met AI gebouwde SaaS-producten op het moment dat ze een eerste betaling accepteren, is facturatielogica die randgevallen niet afhandelt: mislukte betalingen, pakket-upgrades halverwege de periode, verrekening naar rato (proration), of een klant die opzegt en zich binnen dezelfde facturatieperiode opnieuw abonneert. Stripe's webhooks handelen dit allemaal af als ze deugdelijk zijn aangesloten, maar AI-tools implementeren regelmatig alleen het "succespad" — één keer abonneren, één keer betalen, nooit van pakket wisselen — omdat dat is wat de demo nodig had, en niemand ooit de tool heeft gevraagd een klant te simuleren die halverwege de periode van gedachten verandert. Een goede tweede is dataconformatie tussen tenants die nooit is getest onder belastingsomstandigheden met meer dan een handvol accounts, wat betekent dat een query die prima werkt voor drie klanten stilletjes vertraagt of, erger nog, gegevens lekt bij dertig.
 
-De engineers van LaunchStudio, onderdeel van Manifera's team van meer dan 120 professionals met ruim 160 opgeleverde projecten achter zich, zijn gespecialiseerd in exact deze overgang — het brengen van een met AI gebouwd SaaS-product van "werkt voor de demo" naar "werkt voor de factuur." Het team omvat engineers gevestigd in Singapore, aan 100 Tras Street, die SaaS-oprichters over tijdzones heen ondersteunen naarmate hun klantenbestand groeit voorbij een enkele regio. Dat overdrachtswerk is zelden een heropbouw; het staat dichter bij verharden — het nemen van Stripe's webhooks voor de abonnementslevenscyclus die slechts gedeeltelijk waren aangesloten en het verbinden van de resterende gebeurtenissen, of het toevoegen van de tenant-afschermingscontroles die een snelbewegende AI-build oversloeg in het voordeel van het als eerste opleveren van de zichtbare functie. U kunt de details van wat dit omvat verkennen via [LaunchStudio's proces](https://launchstudio.eu/en/#process).
+De engineers van LaunchStudio, onderdeel van Manifera's team van meer dan 120 professionals met ruim 160 opgeleverde projecten achter zich, zijn gespecialiseerd in exact deze overgang — het brengen van een met AI gebouwd SaaS-product van "werkt voor de demo" naar "werkt voor de factuur." Het team omvat engineers gevestigd in Singapore, aan 100 Tras Street, die SaaS-oprichters over tijdzones heen ondersteunen naarmate hun klantenbestand groeit voorbij een enkele regio. Dat overdrachtswerk is zelden een heropbouw; het staat dichter bij verharden — het nemen van Stripe's webhooks voor de abonnementslevenscyclus die slechts gedeeltelijk waren aangesloten en het verbinden van de resterende gebeurtenissen, of het toevoegen van de tenant-afschermingscontroles die een snelbewegende AI-build oversloeg in het voordeel van het als eerste opleveren van de zichtbare functie. U kunt de details van wat dit omvat verkennen via [LaunchStudio's proces](https://launchstudio.eu/nl/#process).
 
 ## De Vóór/Na Checklist voor SaaS-AI Oprichters
 

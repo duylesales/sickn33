@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Wat U Moet Controleren op het Moment dat U Uw Door AI Gegenereerde Code Downloadt",
   "description": "Een praktische checklist voor het moment waarop u door AI gegenereerde code exporteert of downloadt uit Cursor, Lovable, Bolt of v0 — voordat geheimen, afhankelijkheden of dode code meegaan naar een nieuwe provider.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-code-download-what-to-check" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-code-download-what-to-check" }
 }
 </script>
 
@@ -41,7 +41,7 @@ Door AI gegenereerde codebases dragen vaak littekenweefsel van eerdere iteraties
 
 Voordat u de download vertrouwt, kloont u deze in een schone omgeving en probeert u hem vanaf nul te draaien, uitsluitend uitgaande van wat er in de README staat of van uw eigen geheugen. Als hij niet netjes opstart zonder handmatige patches die u toevallig nog weet, is dat een teken dat een stukje werkende configuratie alleen in de oude omgeving bestaat en niet met de code is meegekomen.
 
-Onze technici op het kantoor van LaunchStudio in Amsterdam voeren precies dit soort controle uit — geheimen, afhankelijkheden, verouderde configuratie, dode code — elke keer dat een oprichter een gedownloade codebase overdraagt voor een productielancering. LaunchStudio brengt Manifera's enterprise-grade engineering naar de foundereconomie, en u kunt ons een download of repository-link sturen via onze [contactpagina](https://launchstudio.eu/en/#contact) voor een tweede paar ogen voordat u er verder op bouwt. Manifera's eigen [portfolio](https://www.manifera.com/portfolio/) toont dezelfde nauwgezetheid toegepast over meer dan 160 opgeleverde projecten.
+Onze technici op het kantoor van LaunchStudio in Amsterdam voeren precies dit soort controle uit — geheimen, afhankelijkheden, verouderde configuratie, dode code — elke keer dat een oprichter een gedownloade codebase overdraagt voor een productielancering. LaunchStudio brengt Manifera's enterprise-grade engineering naar de foundereconomie, en u kunt ons een download of repository-link sturen via onze [contactpagina](https://launchstudio.eu/nl/#contact) voor een tweede paar ogen voordat u er verder op bouwt. Manifera's eigen [portfolio](https://www.manifera.com/portfolio/) toont dezelfde nauwgezetheid toegepast over meer dan 160 opgeleverde projecten.
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-12",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/why-building-ai-software-alone-rarely-gets-you" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/why-building-ai-software-alone-rarely-gets-you" }
 }
 </script>
 

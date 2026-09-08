@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-24",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-and-software-engineering-two-different-jobs-one-prototype"
+    "@id": "https://launchstudio.eu/nl/blog/ai-and-software-engineering-two-different-jobs-one-prototype"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Het beoordelen van uw eigen gegenereerde code op correctheid betekent van nature
 
 ## Wat het sluiten van deze kloof omvat
 
-Een correcte herstelling voegt een expliciete eigenschapscontrole toe aan elk eindpunt dat bronnen ophaalt – bevestigend dat het opgevraagde record daadwerkelijk toebehoort aan de geauthenticeerde aanvrager voordat het geretourneerd wordt. Dit wordt gestaag en consequent toegepast over facturen, bestellingen, documenten, en elke andere bron per gebruiker in het systeem. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort eigenschapscontrole-audit uit als een kernonderdeel van haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar enterprise software engineering discipline.
+Een correcte herstelling voegt een expliciete eigenschapscontrole toe aan elk eindpunt dat bronnen ophaalt – bevestigend dat het opgevraagde record daadwerkelijk toebehoort aan de geauthenticeerde aanvrager voordat het geretourneerd wordt. Dit wordt gestaag en consequent toegepast over facturen, bestellingen, documenten, en elke andere bron per gebruiker in het systeem. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort eigenschapscontrole-audit uit als een kernonderdeel van haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar enterprise software engineering discipline.
 
 Manifera's engineeringbeoordelingen worden uitgevoerd door het team in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld vanuit het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Een stapsgewijs kader voor het zelf testen op IDOR
 

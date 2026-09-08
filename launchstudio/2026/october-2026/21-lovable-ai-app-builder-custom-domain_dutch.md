@@ -59,7 +59,7 @@ Als technische termen zoals "GitHub CI/CD pijplijnen", "CNAME-propagatie" en "SS
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Dit is exact de reden waarom [LaunchStudio](https://launchstudio.eu/en/) bestaat. Gesteund door het enterprise softwareteam van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring, opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze regionale vestiging aan 100 Tras Street in **Singapore** en ons gespecialiseerde ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street) met meer dan 160 succesvol afgeronde softwareprojecten, verzorgen wij de complete "laatste mijl" voor uw AI-startup.
+Dit is exact de reden waarom [LaunchStudio](https://launchstudio.eu/nl/) bestaat. Gesteund door het enterprise softwareteam van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring, opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam**, onze regionale vestiging aan 100 Tras Street in **Singapore** en ons gespecialiseerde ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street) met meer dan 160 succesvol afgeronde softwareprojecten, verzorgen wij de complete "laatste mijl" voor uw AI-startup.
 
 Met ons **"Launch Ready" pakket** verleent u ons simpelweg toegang tot uw Lovable GitHub-repository. Wij verzorgen de rest: wij richten de Vercel-hostingomgeving in, configureren de complexe DNS-records foutloos, stellen de redirects tussen www en apex in, activeren de SSL-certificaten en garanderen dat uw app razendsnel, stabiel en veilig live staat.
 
@@ -75,7 +75,7 @@ Voor een zuivere frontend-deployment staat uw custom domein doorgaans binnen **2
 - Het configureren van DNS-records, SSL-beveiliging en www-redirects is technisch complex en uiterst foutgevoelig.
 - LaunchStudio neemt uw Lovable-codebase over en koppelt uw custom domeinnaam veilig en professioneel tegen een vaste prijs.
 
-[Klaar om uw Lovable-app op uw eigen domeinnaam te lanceren? Neem vandaag nog contact op](https://launchstudio.eu/en/#contact).
+[Klaar om uw Lovable-app op uw eigen domeinnaam te lanceren? Neem vandaag nog contact op](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

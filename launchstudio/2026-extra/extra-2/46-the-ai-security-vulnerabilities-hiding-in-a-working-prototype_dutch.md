@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-08-01",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/the-ai-security-vulnerabilities-hiding-in-a-working-prototype"
+    "@id": "https://launchstudio.eu/nl/blog/the-ai-security-vulnerabilities-hiding-in-a-working-prototype"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Oprichters die bouwen voor kerken, scholen, sportclubs en vergelijkbare maatscha
 
 ## Wat het op de juiste manier herstellen hiervan vereist
 
-Een correcte herstelling valideert dat elke opgevraagde bestandsnaam strikt binnen de bedoelde map resolvet, en weigert alles wat daarbuiten zou resolven. [LaunchStudio](https://launchstudio.eu/en/) controleert op exact dit patroon in functies voor bestandsafhandeling als onderdeel van haar standaard beveiligingsbeoordeling, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van bestandsafhandelingslogica.
+Een correcte herstelling valideert dat elke opgevraagde bestandsnaam strikt binnen de bedoelde map resolvet, en weigert alles wat daarbuiten zou resolven. [LaunchStudio](https://launchstudio.eu/nl/) controleert op exact dit patroon in functies voor bestandsafhandeling als onderdeel van haar standaard beveiligingsbeoordeling, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van bestandsafhandelingslogica.
 
 Manifera's beveiligingsbeoordelingen voor bestandsafhandeling worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Stuur ons de link van uw prototype voor een gratis beoordeling](https://launchstudio.eu/en/#contact).
+[Stuur ons de link van uw prototype voor een gratis beoordeling](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

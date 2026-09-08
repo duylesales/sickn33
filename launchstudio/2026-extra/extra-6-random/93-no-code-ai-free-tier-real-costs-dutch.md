@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "De Gratis Laag van een 'No Code AI'-tool Is Waar Uw Echte Kosten Beginnen",
   "description": "Gratis lagen van no-code AI-platforms betekenen vaak gedeelde, niet-gepartitioneerde infrastructuur — een kostenpost die onzichtbaar blijft totdat een platformbreed incident uw app meesleurt met die van iedereen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/no-code-ai-free-tier-real-costs" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/no-code-ai-free-tier-real-costs" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Voordat u iets betekenisvols bouwt op een gratis laag, is het de moeite waard om
 
 Gratis is de juiste keuze voor een oprecht prototype waar nog niemand van afhankelijk is. Het houdt op de goedkopere optie te zijn op het moment dat echte gebruikers erop rekenen dat uw app beschikbaar is — een moment dat eerder aankomt dan de meeste oprichters verwachten, vaak precies rond het eerste drukke seizoen waarvoor de app eigenlijk was gebouwd.
 
-LaunchStudio, ondersteund door Manifera, werkt met oprichters in en rond Ho Chi Minh-stad om een gratis-laag-prototype zijn eigen geïsoleerde, productiewaardige infrastructuur te geven voordat dat eerste drukke seizoen aanbreekt, in plaats van erna wanneer het de leemte blootlegt. Onze [prijscalculator](https://launchstudio.eu/en/#calculator) geeft een helder beeld van wat die migratie doorgaans kost, en het team voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) van Manifera past dezelfde infrastructuurnormen toe voor enterprise-klanten.
+LaunchStudio, ondersteund door Manifera, werkt met oprichters in en rond Ho Chi Minh-stad om een gratis-laag-prototype zijn eigen geïsoleerde, productiewaardige infrastructuur te geven voordat dat eerste drukke seizoen aanbreekt, in plaats van erna wanneer het de leemte blootlegt. Onze [prijscalculator](https://launchstudio.eu/nl/#calculator) geeft een helder beeld van wat die migratie doorgaans kost, en het team voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) van Manifera past dezelfde infrastructuurnormen toe voor enterprise-klanten.
 
 ## Echt voorbeeld
 

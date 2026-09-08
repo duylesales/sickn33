@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/recipe-meal-planning-ai-app-allergen-data-accuracy"
+    "@id": "https://launchstudio.eu/nl/blog/recipe-meal-planning-ai-app-allergen-data-accuracy"
   }
 }
 </script>
@@ -49,7 +49,7 @@ LaunchStudio's audits voor maaltijd- en gezondheids-apps voor consumenten testen
 
 Oprichters hoeven geen ingenieurs te worden om deze categorie bugs op te vangen, maar ze moeten wel anders testen dan ze waarschijnlijk hebben getest. Stel een nep-allergeen in op een testaccount, en probeer het vervolgens bewust te breken: gebruik elke AI-suggestiefunctie, elke "hergeneratie", elke vervangingsstroom, elke knop voor exporteren naar een boodschappenlijst, en controleer of het allergeen nooit meer bovenkomt. Als het dat ook maar één keer doet, behandel het dan als een lanceringblokkade, en niet als een opvolgticket – want de kosten van het verkeerd aanpakken hiervan zijn geen slechte beoordeling, maar een gebruiker met een echte allergie die het woord van uw app vertrouwt voor wat veilig is om te eten.
 
-Manifera's team, werkend vanuit het Europese hoofdkantoor in Amsterdam, werkt rechtstreeks met oprichters om exact dit soort gestructureerde pre-lanceringcontroles uit te voeren over een gehele app in plaats van één functie tegelijk. U kunt bekijken hoe die samenwerking doorgaans werkt op de [LaunchStudio-pakkettenpagina](https://launchstudio.eu/en/#packages). Voor een bredere blik op hoe Manifera webtoepassingen op productieniveau benadert, bekijk het werk van het team op het gebied van [maatwerk softwareontwikkeling](https://www.manifera.com/services/web-app-develop/).
+Manifera's team, werkend vanuit het Europese hoofdkantoor in Amsterdam, werkt rechtstreeks met oprichters om exact dit soort gestructureerde pre-lanceringcontroles uit te voeren over een gehele app in plaats van één functie tegelijk. U kunt bekijken hoe die samenwerking doorgaans werkt op de [LaunchStudio-pakkettenpagina](https://launchstudio.eu/nl/#packages). Voor een bredere blik op hoe Manifera webtoepassingen op productieniveau benadert, bekijk het werk van het team op het gebied van [maatwerk softwareontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
 ## Een vast filter hangt nog steeds af van de juistheid van de ingrediëntenlijst op het moment dat deze geserveerd wordt
 

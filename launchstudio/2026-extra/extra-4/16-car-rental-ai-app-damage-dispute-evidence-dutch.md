@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/car-rental-ai-app-damage-dispute-evidence"
+    "@id": "https://launchstudio.eu/nl/blog/car-rental-ai-app-damage-dispute-evidence"
   }
 }
 </script>
@@ -51,7 +51,7 @@ LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van
 
 In een eenzijdige app is een data-integriteitskloof uw probleem om stilletjes te herstellen. In een tweezijdige marktplaats is het een vertrouwensprobleem dat zich openlijk afspeelt tussen twee gebruikers die op uw platform vertrouwen om de neutrale scheidsrechter te zijn. Als uw bewijs voor schadeclaims kan worden bewerkt door een van beide partijen, heeft u geen scheidsrechter gebouwd – u heeft een muntopgooi gebouwd die er toevallig officieel uitziet. Dat is een reputatierisico dat zich elke keer opstapelt als het gebeurt, omdat mond-tot-mondreclame snel gaat in hechte verhuurcommunities.
 
-Als u afweegt wat een herstelling zoals deze kost ten opzichte van het vanaf nul opbouwen ervan, geeft [onze prijscalculator](https://launchstudio.eu/en/#calculator) een schatting met vaste omvang op basis van uw daadwerkelijke app. Voor context over hoe deze discipline schaalt naar enterprise-klanten, bekijk Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
+Als u afweegt wat een herstelling zoals deze kost ten opzichte van het vanaf nul opbouwen ervan, geeft [onze prijscalculator](https://launchstudio.eu/nl/#calculator) een schatting met vaste omvang op basis van uw daadwerkelijke app. Voor context over hoe deze discipline schaalt naar enterprise-klanten, bekijk Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Onveranderlijk betekent niet "geen fouten toegestaan"
 

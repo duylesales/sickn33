@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Een sceptische gids voor 'AI-powered'-marketingclaims in de devtools-wereld",
   "description": "Twee woorden op een landingspagina zouden niet moeten bepalen wie uw codebase beschermt. Een praktisch, sceptisch kader om 'ai based security'-marketingclaims te doorzien voordat u ze vertrouwt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/skeptics-guide-ai-powered-marketing-claims" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/skeptics-guide-ai-powered-marketing-claims" }
 }
 </script>
 
@@ -47,7 +47,7 @@ Dit is geen nieuw probleem — "AI-powered" is gewoon de huidige versie van "nex
 
 Dat gat tussen "kan niet gemakkelijk verifiëren" en "moet de marketing vertrouwen" is precies waar dunne tools gedijen. Het loont om dat gat actief te dichten door leveranciers de directe vragen hierboven te stellen, in plaats van een goed vormgegeven landingspagina de beslissing voor u te laten nemen.
 
-De technici van Manifera — meer dan 120 in aantal, met meer dan 11 jaar ervaring in het bouwen van productiesystemen voor klanten zoals Vodafone en TNO — besteden behoorlijk wat tijd aan precies dit soort beoordelingen namens oprichters, waarbij ze tools met echte analysecapaciteit onderscheiden van tools met echte marketingbudgetten. Onze vestiging in Singapore werkt met oprichters uit Zuidoost-Azië aan precies dit soort due diligence voorafgaand aan elke productielancering. Als u een tweede mening wilt over een beveiligingsleverancier die u aan het evalueren bent, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/en/#contact) en dan vertellen we u eerlijk wat we denken dat de tool daadwerkelijk doet. Voor een breder beeld van hoe teams met productieniveau engineering dit aanpakken, laat het [portfolio](https://www.manifera.com/portfolio/) van Manifera het soort beveiligingsnauwkeurigheid zien dat is toegepast bij meer dan 160 opgeleverde projecten.
+De technici van Manifera — meer dan 120 in aantal, met meer dan 11 jaar ervaring in het bouwen van productiesystemen voor klanten zoals Vodafone en TNO — besteden behoorlijk wat tijd aan precies dit soort beoordelingen namens oprichters, waarbij ze tools met echte analysecapaciteit onderscheiden van tools met echte marketingbudgetten. Onze vestiging in Singapore werkt met oprichters uit Zuidoost-Azië aan precies dit soort due diligence voorafgaand aan elke productielancering. Als u een tweede mening wilt over een beveiligingsleverancier die u aan het evalueren bent, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) en dan vertellen we u eerlijk wat we denken dat de tool daadwerkelijk doet. Voor een breder beeld van hoe teams met productieniveau engineering dit aanpakken, laat het [portfolio](https://www.manifera.com/portfolio/) van Manifera het soort beveiligingsnauwkeurigheid zien dat is toegepast bij meer dan 160 opgeleverde projecten.
 
 ## Echt voorbeeld
 

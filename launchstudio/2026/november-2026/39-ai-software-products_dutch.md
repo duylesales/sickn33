@@ -16,7 +16,7 @@ Doelpersona: SaaS-Oprichter / CFO / CTO
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: SaaS-Oprichter / CFO / CTO
   "datePublished": "2026-12-09",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-software-products"
+    "@id": "https://launchstudio.eu/nl/blog/ai-software-products"
   }
 }
 </script>
@@ -72,7 +72,7 @@ Inkomende vragen worden omgezet in vectoren en gecontroleerd in een Redis-cache.
 
 Het ontwerpen van deze kostenbewuste architectuur vereist diepgaand inzicht in cachinglagen en LLM-orkestratie.
 
-[LaunchStudio](https://launchstudio.eu/en/), gedragen door de architecten van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt AI-software die ontworpen is voor maximale winstgevendheid:
+[LaunchStudio](https://launchstudio.eu/nl/), gedragen door de architecten van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt AI-software die ontworpen is voor maximale winstgevendheid:
 1. **LiteLLM Routing:** Abstractielagen die verzoeken dynamisch verdelen over OpenAI, Anthropic en open-source modellen op basis van kosten en snelheid.
 2. **Upstash Redis Caching:** Semantische caching om redundante aanroepen af te vangen.
 3. **Verbruiksgebaseerde Facturatie:** Stripe Metered Billing webhooks waarmee u tokens of credits geautomatiseerd kunt doorbelasten aan zware gebruikers.

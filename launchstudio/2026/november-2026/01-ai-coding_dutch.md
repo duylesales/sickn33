@@ -16,7 +16,7 @@ Doelpersona: AI-Native Founder (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Founder (Niet-Technisch)
   "datePublished": "2026-11-01",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-coding"
+    "@id": "https://launchstudio.eu/nl/blog/ai-coding"
   }
 }
 </script>
@@ -57,7 +57,7 @@ De fundamentele beperking van AI coding ligt in het feit dat grote taalmodellen 
 
 Herre Roelevink, oprichter en Managing Director van Manifera, herkende dit structurele patroon al in een vroeg stadium: *"De uitdaging in softwareontwikkeling is niet langer het vertalen van een idee naar code. De echte uitdaging is de onderliggende software-architectuur en enterprise-beveiliging die vereist zijn om die producten naar commerciële volwassenheid te brengen. Wij hebben ruim elf jaar ervaring met exact die complexe vraagstukken."*
 
-Dit strategische inzicht vormde de directe aanleiding voor de oprichting van [LaunchStudio](https://launchstudio.eu/en/), een gespecialiseerde engineeringdienst onder Manifera. LaunchStudio is specifiek ontworpen voor oprichters die met behulp van AI coding tools een prototype hebben gerealiseerd en nu behoefte hebben aan senior engineering om veilig en betrouwbaar live te gaan.
+Dit strategische inzicht vormde de directe aanleiding voor de oprichting van [LaunchStudio](https://launchstudio.eu/nl/), een gespecialiseerde engineeringdienst onder Manifera. LaunchStudio is specifiek ontworpen voor oprichters die met behulp van AI coding tools een prototype hebben gerealiseerd en nu behoefte hebben aan senior engineering om veilig en betrouwbaar live te gaan.
 
 ## Het 'Last-Mile' Probleem voor AI-Native Oprichters
 
@@ -98,7 +98,7 @@ Uw applicatie verhuist van een lokale omgeving naar een professionele productie-
 
 ## Heeft U Uw Prototype Gebouwd met AI Coding? Maak Het Nu Productieklaar
 
-AI coding heeft u de perfecte vliegende start gegeven. Professionele engineering en architectuur zorgen ervoor dat u daadwerkelijk de finishlijn behaalt. [Bereken direct de exacte investering voor uw project](https://launchstudio.eu/#calculator) met onze online prijscalculator, of [plan een vrijblijvend adviesgesprek van 15 minuten](https://launchstudio.eu/en/#contact) om uw prototype te bespreken met onze experts.
+AI coding heeft u de perfecte vliegende start gegeven. Professionele engineering en architectuur zorgen ervoor dat u daadwerkelijk de finishlijn behaalt. [Bereken direct de exacte investering voor uw project](https://launchstudio.eu/#calculator) met onze online prijscalculator, of [plan een vrijblijvend adviesgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) om uw prototype te bespreken met onze experts.
 
 ## Belangrijkste Inzichten
 

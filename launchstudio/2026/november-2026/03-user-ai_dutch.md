@@ -16,7 +16,7 @@ Doelpersona: AI-Native Founder (Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Founder (Technisch)
   "datePublished": "2026-11-03",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/user-ai"
+    "@id": "https://launchstudio.eu/nl/blog/user-ai"
   }
 }
 </script>

@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/building-an-ai-saas-product-part-lovable-doesnt-finish"
+    "@id": "https://launchstudio.eu/nl/blog/building-an-ai-saas-product-part-lovable-doesnt-finish"
   }
 }
 </script>
@@ -65,11 +65,11 @@ Het kaderen hiervan als "de laatste 20%" laat het vaag en open-ended klinken, te
 
 ## Wat het sluiten van deze kloof kost en kost aan tijd
 
-Voor een typisch door een oprichter gebouwd SaaS-product past deze categorie van herstellingen – CSRF-bescherming samen met het handvol gerelateerde formulierbeveiligingskloven die er meestal mee meereizen – comfortabel binnen LaunchStudio's Launch Ready-reeks van € 800 tot € 3.500, geleverd in één tot drie weken tegen een vaste prijs afgesproken na een kort introductiegesprek. [LaunchStudio](https://launchstudio.eu/en/) wordt ondersteund door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het sluiten van exact deze categorie van kloven voor productieapplicaties.
+Voor een typisch door een oprichter gebouwd SaaS-product past deze categorie van herstellingen – CSRF-bescherming samen met het handvol gerelateerde formulierbeveiligingskloven die er meestal mee meereizen – comfortabel binnen LaunchStudio's Launch Ready-reeks van € 800 tot € 3.500, geleverd in één tot drie weken tegen een vaste prijs afgesproken na een kort introductiegesprek. [LaunchStudio](https://launchstudio.eu/nl/) wordt ondersteund door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het sluiten van exact deze categorie van kloven voor productieapplicaties.
 
 Manifera's engineering-levering draait via haar ontwikkelingscentrum aan de Pho Quang-straat in Ho Chi Minh-stad, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420 dat het initiële klantgesprek afhandelt.
 
-[Krijg een kostenschatting met onze prijscalculator](https://launchstudio.eu/en/#calculator).
+[Krijg een kostenschatting met onze prijscalculator](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

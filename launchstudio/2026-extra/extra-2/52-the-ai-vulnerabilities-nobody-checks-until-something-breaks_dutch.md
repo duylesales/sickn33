@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-08-02",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/the-ai-vulnerabilities-nobody-checks-until-something-breaks"
+    "@id": "https://launchstudio.eu/nl/blog/the-ai-vulnerabilities-nobody-checks-until-something-breaks"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Een platform dat specifiek gebouwd is rond het genereren en uitwisselen van juri
 
 ## Wat het op de juiste manier herstellen hiervan vereist
 
-Een correcte herstelling verifieert de daadwerkelijke inhoud van een geüpload bestand (via binary signatures / magic bytes) tegen zijn geclaimde type, en niet louter zijn bestandsnaamextensie. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort inhoudsverificatie als onderdeel van haar beveiligingsbeoordeling van bestandsafhandeling, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van bestandsupload- en verwerkingsfuncties over productiesystemen.
+Een correcte herstelling verifieert de daadwerkelijke inhoud van een geüpload bestand (via binary signatures / magic bytes) tegen zijn geclaimde type, en niet louter zijn bestandsnaamextensie. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort inhoudsverificatie als onderdeel van haar beveiligingsbeoordeling van bestandsafhandeling, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van bestandsupload- en verwerkingsfuncties over productiesystemen.
 
 Manifera's beveiligingsbeoordelingen voor bestandsafhandeling worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Krijg een gratis blik op uw prototype — stuur simpelweg de link](https://launchstudio.eu/en/#contact).
+[Krijg een gratis blik op uw prototype — stuur simpelweg de link](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

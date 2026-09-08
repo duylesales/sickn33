@@ -33,9 +33,9 @@ Externe API's evolueren — velden worden afgeschaft, responsformaten veranderen
 
 Voorbij de initiële verbinding: expliciete ratelimiet-afhandeling met backoff- en retry-logica; defensieve parsing van API-responses die geen specifieke vorm aanneemt zonder deze te valideren; pagineringsafhandeling voor elk endpoint dat grote resultatensets kan teruggeven; correcte tokenvernieuwingslogica voor elk authenticatieschema dat het vereist; en monitoring voor providerzijdige wijzigingen, idealiter via de eigen changelog of afschaffingsmeldingen van de provider, dieper behandeld in de bredere begeleiding van deze serie over dependency-actualiteit.
 
-[LaunchStudio](https://launchstudio.eu/en/) verhardt externe-API-integraties tegen precies deze echte-data-omstandigheden — ratelimieten, responsvariabiliteit, paginering, tokenvernieuwing — als standaardonderdeel van productiegereedheid, gesteund door Manifera's ervaring met het integreren van tientallen verschillende externe diensten over productieapplicaties.
+[LaunchStudio](https://launchstudio.eu/nl/) verhardt externe-API-integraties tegen precies deze echte-data-omstandigheden — ratelimieten, responsvariabiliteit, paginering, tokenvernieuwing — als standaardonderdeel van productiegereedheid, gesteund door Manifera's ervaring met het integreren van tientallen verschillende externe diensten over productieapplicaties.
 
-[Laat jouw integraties testen tegen echte-data-omstandigheden, niet alleen schone testaanroepen](https://launchstudio.eu/en/#calculator) — het gat tussen testdata en echte data is waar deze integraties stilletjes breken.
+[Laat jouw integraties testen tegen echte-data-omstandigheden, niet alleen schone testaanroepen](https://launchstudio.eu/nl/#calculator) — het gat tussen testdata en echte data is waar deze integraties stilletjes breken.
 
 ## Echt voorbeeld
 

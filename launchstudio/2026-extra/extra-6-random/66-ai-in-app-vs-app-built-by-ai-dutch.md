@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "'AI in de app' vs. 'App gebouwd door AI' — Oprichters blijven de twee door elkaar halen",
   "description": "Een AI-functie in uw app hebben is niet dezelfde claim als dat uw app volledig door AI is gegenereerd. De twee worden voortdurend door elkaar gehaald, en de mismatch komt meestal naar boven op het slechtst mogelijke moment.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-in-app-vs-app-built-by-ai" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-in-app-vs-app-built-by-ai" }
 }
 </script>
 
@@ -37,7 +37,7 @@ De kloof blijft doorgaans onzichtbaar totdat iemand met een reden om te graven �
 
 Specifiek zijn kost één extra zin en bespaart de correctie later: noem de functie die AI gebruikt, en beschrijf apart hoe de rest van de applicatie daadwerkelijk is gebouwd. "De chatassistent wordt aangedreven door een taalmodel; het accountsysteem, de database en de betalingen zijn conventioneel gebouwd" kost tien seconden langer om te zeggen dan "AI in de app" en sluit precies de kloof die meestal naar boven komt tijdens due diligence.
 
-LaunchStudio brengt de enterprise-grade engineering van Manifera precies naar dit soort duidelijkheidsvraagstuk — oprichters helpen om nauwkeurig te beschrijven wat een AI-codeertool daadwerkelijk heeft geproduceerd versus wat eromheen is gebouwd. Ons team, werkzaam vanuit onder andere ons engineeringcentrum in Ho Chi Minhstad, helpt oprichters regelmatig om dit onderscheid te documenteren voordat een investeerder of zakelijke koper ernaar vraagt. Als u zich voorbereidt op een due-diligencegesprek, [beschrijf dan uw project en wij reageren binnen één werkdag](https://launchstudio.eu/en/#process) met een eerlijke inschatting van hoe het standhoudt. De pagina ["over ons"](https://www.manifera.com/about-us/) van Manifera behandelt het bredere technische trackrecord achter die inschatting.
+LaunchStudio brengt de enterprise-grade engineering van Manifera precies naar dit soort duidelijkheidsvraagstuk — oprichters helpen om nauwkeurig te beschrijven wat een AI-codeertool daadwerkelijk heeft geproduceerd versus wat eromheen is gebouwd. Ons team, werkzaam vanuit onder andere ons engineeringcentrum in Ho Chi Minhstad, helpt oprichters regelmatig om dit onderscheid te documenteren voordat een investeerder of zakelijke koper ernaar vraagt. Als u zich voorbereidt op een due-diligencegesprek, [beschrijf dan uw project en wij reageren binnen één werkdag](https://launchstudio.eu/nl/#process) met een eerlijke inschatting van hoe het standhoudt. De pagina ["over ons"](https://www.manifera.com/about-us/) van Manifera behandelt het bredere technische trackrecord achter die inschatting.
 
 ## Echt voorbeeld
 

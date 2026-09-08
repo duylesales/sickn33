@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-05",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/european-founders-ai-startups-faster"
+    "@id": "https://launchstudio.eu/nl/blog/european-founders-ai-startups-faster"
   }
 }
 </script>
@@ -67,7 +67,7 @@ Het meest kapitaalefficiënte ontwikkelmodel van 2026 was niet "dure lokale ontw
 
 [Manifera](https://www.manifera.com/), opgericht door de Nederlandse ondernemer Herre Roelevink, hanteert dit model al ruim 11 jaar. Europees projectmanagement aan de Herengracht 420 in Amsterdam waarborgt culturele aansluiting, vlekkeloze communicatie en zakelijk inzicht. De technische uitvoering vanuit het ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh-stad levert een ervaren team van 120+ softwareontwikkelaars die meer dan 160 enterprise-projecten hebben opgeleverd.
 
-Via [LaunchStudio](https://launchstudio.eu/en/) is dit model nu direct toegankelijk voor individuele oprichters — en niet langer alleen voor grote bedrijven. Een Nederlandse oprichter bouwt zijn prototype in Lovable, draagt het over aan LaunchStudio en heeft binnen één tot drie weken een productierijpe applicatie voor €800 tot €7.500. Dezelfde scope bij een bureau in San Francisco kost $20.000 tot $50.000.
+Via [LaunchStudio](https://launchstudio.eu/nl/) is dit model nu direct toegankelijk voor individuele oprichters — en niet langer alleen voor grote bedrijven. Een Nederlandse oprichter bouwt zijn prototype in Lovable, draagt het over aan LaunchStudio en heeft binnen één tot drie weken een productierijpe applicatie voor €800 tot €7.500. Dezelfde scope bij een bureau in San Francisco kost $20.000 tot $50.000.
 
 Herre Roelevink zag deze verschuiving al vroeg: *"Europese oprichters hebben altijd uitstekende ideeën gehad, maar worstelden met de torenhoge kosten van traditionele software-ontwikkeling. Door AI-prototyping te combineren met ons efficiënte ontwikkelmodel kunnen solo-oprichters nu producten lanceren die drie jaar geleden een budget van €200.000 vereisten."*
 
@@ -107,7 +107,7 @@ Als u als Europese ondernemer uw AI-native startup plant voor 2027:
 4. **Richt AVG-naleving in vanaf dag één** — Dit is uw strategische slotgracht. Behandel het als een investering, niet als een kostenpost.
 5. **Ontwerp direct voor Europese expansie** — Bouw uw software vanaf de basis met ondersteuning voor meerdere talen en landen.
 
-[Bereken uw lanceerkosten](https://launchstudio.eu/#calculator) of [boek een gratis 15-minuten adviesgesprek](https://launchstudio.eu/en/#contact) om uw Europese AI-strategie te bespreken.
+[Bereken uw lanceerkosten](https://launchstudio.eu/#calculator) of [boek een gratis 15-minuten adviesgesprek](https://launchstudio.eu/nl/#contact) om uw Europese AI-strategie te bespreken.
 
 ## Echt voorbeeld
 

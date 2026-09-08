@@ -16,7 +16,7 @@ Doelpersona: Agency-Eigenaar / Technische Solo-Oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Agency-Eigenaar / Technische Solo-Oprichter
   "datePublished": "2026-11-20",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/all-ai-tools"
+    "@id": "https://launchstudio.eu/nl/blog/all-ai-tools"
   }
 }
 </script>
@@ -41,7 +41,7 @@ Om live productie te bereiken heeft u geen wondertool nodig, maar een specifieke
 
 ## De Productiewaardige AI-Stack
 
-Op basis van de ervaring van [LaunchStudio](https://launchstudio.eu/en/) met het naar de markt brengen van honderden AI-prototypes, is dit de beproefde stack die daadwerkelijk live productie haalt:
+Op basis van de ervaring van [LaunchStudio](https://launchstudio.eu/nl/) met het naar de markt brengen van honderden AI-prototypes, is dit de beproefde stack die daadwerkelijk live productie haalt:
 
 ### Fase 1: Ideevorming en Snelle Prototyping
 **De Tool:** Bolt of v0 (van Vercel)

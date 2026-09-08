@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/case-study-compilation-10-ai-founders-launched-2-weeks"
+    "@id": "https://launchstudio.eu/nl/blog/case-study-compilation-10-ai-founders-launched-2-weeks"
   }
 }
 </script>
@@ -61,9 +61,9 @@ Geen van deze tien bedrijven heeft inhoudelijk iets met elkaar te maken aan de o
 
 ## De Echte Constante: Vaste Scope, Vaste Tijdlijn
 
-Over alle tien paste [LaunchStudio](https://launchstudio.eu/en/) hetzelfde onderliggende proces toe — de 7-lagen infrastructuuranalyse, het verharden van beveiliging en authenticatie, betaalintegratie afgestemd op het verdienmodel en productie-deployment. Dit werd telkens binnen dezelfde doorlooptijd van één tot twee weken afgerond, ongeacht de branche, omdat het proces de infrastructuurlaag adresseert en niet de specifieke bedrijfslogica. Manifera's 120+ engineers passen deze discipline toe over meer dan 160 opgeleverde projecten.
+Over alle tien paste [LaunchStudio](https://launchstudio.eu/nl/) hetzelfde onderliggende proces toe — de 7-lagen infrastructuuranalyse, het verharden van beveiliging en authenticatie, betaalintegratie afgestemd op het verdienmodel en productie-deployment. Dit werd telkens binnen dezelfde doorlooptijd van één tot twee weken afgerond, ongeacht de branche, omdat het proces de infrastructuurlaag adresseert en niet de specifieke bedrijfslogica. Manifera's 120+ engineers passen deze discipline toe over meer dan 160 opgeleverde projecten.
 
-[Start uw eigen tweewekelijkse tijdlijn](https://launchstudio.eu/en/#calculator) en bekijk direct een realistische scope voor uw prototype.
+[Start uw eigen tweewekelijkse tijdlijn](https://launchstudio.eu/nl/#calculator) en bekijk direct een realistische scope voor uw prototype.
 
 ## Patronen over de Data: Wat Tien Lanceringen Daadwerkelijk Onthullen
 
@@ -113,7 +113,7 @@ Het team stelt in nauw overleg een strakke kernscope vast die strikt gericht is 
 Nee, de backend-infrastructuur is grotendeels sector-onafhankelijk. De complexiteit wordt vooral bepaald door datagevoeligheid en compliancenormen (zoals medische privacy of toezichtsrapportages).
 
 ### Kan ik meer details bekijken over specifieke casestudies?
-Zeker. Neem contact op via onze [contactpagina](https://launchstudio.eu/en/#contact) en geef aan welke sector of uitdaging aansluit op uw situatie; ons team licht relevante voorbeelden graag nader toe tijdens een introductiegesprek.
+Zeker. Neem contact op via onze [contactpagina](https://launchstudio.eu/nl/#contact) en geef aan welke sector of uitdaging aansluit op uw situatie; ons team licht relevante voorbeelden graag nader toe tijdens een introductiegesprek.
 
 <script type="application/ld+json">
 {

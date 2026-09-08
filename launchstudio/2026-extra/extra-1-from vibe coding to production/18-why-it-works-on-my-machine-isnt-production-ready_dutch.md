@@ -33,9 +33,9 @@ Dit is het meest structureel onderscheidende verschil: lokaal testen, uitgevoerd
 
 Deze specifieke verschillen begrijpen herkadert productiegereedheid-testen weg van "heb ik genoeg dingen lokaal geprobeerd" naar "heb ik specifiek de omstandigheden gesimuleerd die lokaal testen niet kan reproduceren" — andere omgevingsconfiguratie, grotere en rommeliger data, gedegradeerde netwerkomstandigheden, en gelijktijdige toegang. Deze vereisen doelbewuste, specifieke inspanning om te simuleren; ze ontstaan niet natuurlijk uit grondiger lokaal testen, hoeveel je er ook van doet.
 
-[LaunchStudio](https://launchstudio.eu/en/) test specifiek tegen deze productiespecifieke omstandigheden — niet gewoon meer lokaal testen, maar omstandigheden die lokale ontwikkeling structureel niet kan reproduceren — als onderdeel van elke Launch Ready-opdracht, gesteund door Manifera's engineeringervaring met het deployen van software in oprecht variabele echte-wereldomstandigheden.
+[LaunchStudio](https://launchstudio.eu/nl/) test specifiek tegen deze productiespecifieke omstandigheden — niet gewoon meer lokaal testen, maar omstandigheden die lokale ontwikkeling structureel niet kan reproduceren — als onderdeel van elke Launch Ready-opdracht, gesteund door Manifera's engineeringervaring met het deployen van software in oprecht variabele echte-wereldomstandigheden.
 
-[Laat testen tegen omstandigheden die jouw lokale machine niet kan simuleren](https://launchstudio.eu/en/#calculator) — het gat tussen lokaal en productie gaat niet over harder proberen lokaal, het gaat over compleet andere omstandigheden.
+[Laat testen tegen omstandigheden die jouw lokale machine niet kan simuleren](https://launchstudio.eu/nl/#calculator) — het gat tussen lokaal en productie gaat niet over harder proberen lokaal, het gaat over compleet andere omstandigheden.
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-saas-products-vs-ai-saas-platform-pricing"
+    "@id": "https://launchstudio.eu/nl/blog/ai-saas-products-vs-ai-saas-platform-pricing"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Een product dat is gebouwd voor één duidelijke toepassing kan redelijkerwijs a
 
 Oprichters die correct identificeren in welke categorie ze daadwerkelijk bouwen, hebben de neiging om vanaf het begin nauwkeuriger te prijzen en te bouwen. Dit voorkomt de ongemakkelijke, kostbare overgang van het achteraf inpassen van stabiliteit op platformniveau en flexibele prijzen op iets dat oorspronkelijk is gebouwd en geprijsd als een eenvoudig, afgebakend product.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters om dit specifieke onderscheid concreet te maken tijdens de afbakening – prijzen en bouwen volgens wat er daadwerkelijk wordt gebouwd in plaats van hoe het wordt genoemd – gebruikmakend van Manifera's bredere ervaring met het bouwen van zowel afgebakende producten als echte multi-tenant platforms voor klanten in haar kantoren in Amsterdam en Singapore.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters om dit specifieke onderscheid concreet te maken tijdens de afbakening – prijzen en bouwen volgens wat er daadwerkelijk wordt gebouwd in plaats van hoe het wordt genoemd – gebruikmakend van Manifera's bredere ervaring met het bouwen van zowel afgebakende producten als echte multi-tenant platforms voor klanten in haar kantoren in Amsterdam en Singapore.
 
-[Krijg helderheid over welke u daadwerkelijk bouwt voordat u het geprijsd heeft](https://launchstudio.eu/en/#calculator) — het onderscheid veranderd meer dan alleen het etiket.
+[Krijg helderheid over welke u daadwerkelijk bouwt voordat u het geprijsd heeft](https://launchstudio.eu/nl/#calculator) — het onderscheid veranderd meer dan alleen het etiket.
 
 ## Een kader voor het prijzen van een echt platform
 

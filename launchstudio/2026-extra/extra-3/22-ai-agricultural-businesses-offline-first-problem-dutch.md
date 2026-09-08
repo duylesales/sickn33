@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-agricultural-businesses-offline-first-problem"
+    "@id": "https://launchstudio.eu/nl/blog/ai-agricultural-businesses-offline-first-problem"
   }
 }
 </script>
@@ -49,9 +49,9 @@ De gestructureerde foutafhandeling die elders in bredere richtlijnen wordt behan
 
 Echte offline-functionaliteit is niet iets wat gemakkelijk achteraf wordt toegevoegd aan een al gebouwde applicatie die uitgaat van een verbinding. Het vereist doorgaans dat al vroeg in de architectuur wordt beslist wat er specifiek offline moet werken, hoe lokale gegevens worden opgeslagen en later gesynchroniseerd, en hoe conflicten worden opgelost. Dit zijn beslissingen die aanzienlijk goedkoper zijn om te maken voordat de kernlogica van de applicatie is gebouwd rond het aannemen van een verbinding, dan om achteraf aan te passen.
 
-[LaunchStudio](https://launchstudio.eu/en/) bouwt echte offline-first functionaliteit voor AI-tools die agrarische en andere landelijke of in verbinding beperkte gebruikers bedienen. Wij behandelen dit vanaf het begin als een bewuste ontwerpbeslissing in plaats van een nagedachte, ondersteund door Manifera's bredere engineeringervaring in het bouwen van veerkrachtige applicaties voor oprecht wisselende praktijkomstandigheden.
+[LaunchStudio](https://launchstudio.eu/nl/) bouwt echte offline-first functionaliteit voor AI-tools die agrarische en andere landelijke of in verbinding beperkte gebruikers bedienen. Wij behandelen dit vanaf het begin als een bewuste ontwerpbeslissing in plaats van een nagedachte, ondersteund door Manifera's bredere engineeringervaring in het bouwen van veerkrachtige applicaties voor oprecht wisselende praktijkomstandigheden.
 
-[Laat uw tool bouwen voor de verbindingsomstandigheden waarmee uw daadwerkelijke gebruikers te maken krijgen](https://launchstudio.eu/en/#calculator) — de meeste productierichtlijnen gaan uit van een verbinding die agrarische gebruikers vaak simpelweg niet hebben.
+[Laat uw tool bouwen voor de verbindingsomstandigheden waarmee uw daadwerkelijke gebruikers te maken krijgen](https://launchstudio.eu/nl/#calculator) — de meeste productierichtlijnen gaan uit van een verbinding die agrarische gebruikers vaak simpelweg niet hebben.
 
 ## Een kader om te beslissen wat daadwerkelijk offline moet werken
 

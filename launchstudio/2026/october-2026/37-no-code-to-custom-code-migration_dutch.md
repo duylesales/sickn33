@@ -50,13 +50,13 @@ In plaats van alles tegelijk te herschrijven, vervangt u de meest kwetsbare, dur
 
 Als uw bureau gespecialiseerd is in UI/UX-design, marketing of no-code prototyping, is de overstap naar maatwerk enterprise software-engineering een intimiderende stap. U heeft immers geen senior DevOps-engineers, database-architecten en backend-specialisten op uw loonlijst staan.
 
-Dit is waar [LaunchStudio](https://launchstudio.eu/en/) optreedt als uw discrete white-label engineeringpartner.
+Dit is waar [LaunchStudio](https://launchstudio.eu/nl/) optreedt als uw discrete white-label engineeringpartner.
 
 Gesteund door de **ruim 11 jaar enterprise maatwerk software-ervaring van Manifera** — met meer dan 120 senior software-engineers en ruim 160 succesvol opgeleverde projecten opererend vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze regionale vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons geavanceerde ontwikkelcentrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — is LaunchStudio gespecialiseerd in naadloze no-code naar maatwerkcode migraties voor groeiende agencies en scale-ups.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-U beheert de commerciële klantrelatie en het creatieve frontend-ontwerp; onze engineers verzorgen de zware technische migratie achter de schermen. Wij bouwen de beveiligde Node.js API's, richten AVG-conforme EU-cloudservers in en beveiligen de databases met PostgreSQL RLS. Wij transformeren het breekbare prototype van uw bureau in een geharde enterprise-applicatie volgens vaste, transparante [pakketprijzen](https://launchstudio.eu/en/#packages), zodat u vooraf exact weet waar u aan toe bent zonder nacalculatierisico's.
+U beheert de commerciële klantrelatie en het creatieve frontend-ontwerp; onze engineers verzorgen de zware technische migratie achter de schermen. Wij bouwen de beveiligde Node.js API's, richten AVG-conforme EU-cloudservers in en beveiligen de databases met PostgreSQL RLS. Wij transformeren het breekbare prototype van uw bureau in een geharde enterprise-applicatie volgens vaste, transparante [pakketprijzen](https://launchstudio.eu/nl/#packages), zodat u vooraf exact weet waar u aan toe bent zonder nacalculatierisico's.
 
 ## Wat U Uw Klant Moet Vertellen Vóór de Migratie Begint
 
@@ -70,7 +70,7 @@ Stel vooraf duidelijke verwachtingen naar de directie van uw klant: een gefaseer
 - Hanteer concrete prestatiemetrieken (laadtijd, kostenreductie) om de waarde van de migratie direct inzichtelijk te maken.
 - LaunchStudio levert de complete white-label maatwerk-engineering om no-code projecten veilig en snel naar enterprise code te migreren.
 
-[Laat no-code beperkingen uw klantdeals niet kosten. Partner met LaunchStudio voor maatwerkmigraties](https://launchstudio.eu/en/#contact).
+[Laat no-code beperkingen uw klantdeals niet kosten. Partner met LaunchStudio voor maatwerkmigraties](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

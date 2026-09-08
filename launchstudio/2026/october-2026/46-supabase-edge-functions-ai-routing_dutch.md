@@ -47,7 +47,7 @@ Deze eenvoudige architecturale verschuiving ontgrendelt direct enterprise-grade 
 
 Hoewel het schrijven van een basis Edge Function relatief eenvoudig is, is het bouwen van een robuuste tussenlaag die realtime token-streaming (SSE), geavanceerde rate limiting en atomaire database-afschrijvingen onder zware gelijktijdige belasting foutloos afhandelt buitengewoon complex. Als uw functie door een race condition credits niet direct afboekt, consumeren gebruikers gratis AI-modellen op uw kosten.
 
-Dit is exact waarom technische founders hun backend-routering uitbesteden aan [LaunchStudio](https://launchstudio.eu/en/).
+Dit is exact waarom technische founders hun backend-routering uitbesteden aan [LaunchStudio](https://launchstudio.eu/nl/).
 
 Gesteund door de senior backend-engineers van [Manifera](https://www.manifera.com/) — met teams opererend vanuit Amsterdam, Singapore en Ho Chi Minhstad — is LaunchStudio gespecialiseerd in het bouwen van geharde LLM-routing infrastructuren. U blijft bouwen aan uw Next.js frontend; wij bouwen de veilige, atomaire Supabase Edge Functions.
 
@@ -63,7 +63,7 @@ Wij configureren de CORS-headers, schrijven de PII-masking middleware en richten
 - Race conditions bij het afschrijven van credits zijn de meest voorkomende facturatiefout in AI SaaS; zij vereisen atomaire database-transacties op serverniveau.
 - LaunchStudio levert de senior enterprise engineering om geavanceerde Edge Function architecturen foutloos en veilig voor uw SaaS op te leveren.
 
-[Stop met het lekken van uw API-sleutels. Laat LaunchStudio uw beveiligde LLM-routering bouwen](https://launchstudio.eu/en/#contact).
+[Stop met het lekken van uw API-sleutels. Laat LaunchStudio uw beveiligde LLM-routering bouwen](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

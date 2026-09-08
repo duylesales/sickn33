@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Beveiligings-AI gaten die Bredase oprichters pas ontdekken als een gebruiker dat doet",
   "description": "Met AI gebouwde apps in Breda worden vaak gelanceerd met verborgen beveiligingsgaten die pas naar voren komen als een echte gebruiker ze vindt. Zo vindt u ze als eerste.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/23-security-ai-breda" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/23-security-ai-breda" }
 }
 </script>
 
@@ -36,7 +36,7 @@ LaunchStudio wordt ondersteund door Manifera — dezelfde engineeringorganisatie
 
 ## De gaten vinden voordat een gebruiker dat doet
 
-De oplossing hier is geen paranoia, het is een deugdelijke audit vóór de lancering in plaats van na een incident. [Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/en/#process) over uw specifieke stack — op welk platform u heeft gebouwd, waar uw data leeft, welke betaalprovider u gebruikt — en u krijgt een concrete lijst van wat er gecontroleerd moet worden, en geen generieke beveiligingschecklist gekopieerd van een blogpost. Manifera's bredere werk in deze ruimte, inclusief [custom software development](https://www.manifera.com/services/custom-software-development/) voor enterprise-klanten, volgt dezelfde auditlogica toegepast op oprichters-schaal.
+De oplossing hier is geen paranoia, het is een deugdelijke audit vóór de lancering in plaats van na een incident. [Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#process) over uw specifieke stack — op welk platform u heeft gebouwd, waar uw data leeft, welke betaalprovider u gebruikt — en u krijgt een concrete lijst van wat er gecontroleerd moet worden, en geen generieke beveiligingschecklist gekopieerd van een blogpost. Manifera's bredere werk in deze ruimte, inclusief [custom software development](https://www.manifera.com/services/custom-software-development/) voor enterprise-klanten, volgt dezelfde auditlogica toegepast op oprichters-schaal.
 
 ## Een zelfcontrole van vijf minuten, zelfs als u nog nooit een database-console heeft geopend
 

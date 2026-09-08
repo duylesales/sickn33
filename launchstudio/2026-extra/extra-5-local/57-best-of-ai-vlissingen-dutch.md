@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Beste AI-tools voor Vlissingse oprichters: Wat de ranglijsten niet meten",
   "description": "Een kritische blik op 'beste AI-tools' ranglijsten en waarom ze niet meten wat daadwerkelijk bepaalt of de app van een Vlissingse oprichter klaar is voor de lancering.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/best-of-ai-vlissingen" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/best-of-ai-vlissingen" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Een oprichter hier die een AI-tool kiest uit een beste-AI-ranglijst op basis van
 
 ## Wat er daadwerkelijk toe doet nadat u een tool heeft gekozen
 
-Zodra een oprichter een tool heeft gekozen — elk van de grote tools volstaat — is de echte bepalende factor voor de vraag of het product het contact met echte gebruikers overleeft wat er daarna gebeurt: een eerlijke beveiligingsbeoordeling, deugdelijk testen van betalingsintegraties, en infrastructuur die stand kan houden onder echt, soms kwaadwillend, verkeer. LaunchStudio pakt het op exact dit punt op, onafhankelijk van welke grote AI-tool gebruikt is om de frontend te bouwen, ondersteund door Manifera's engineers die werken vanuit een basis in Amsterdam aan de Herengracht 420 evenals ontwikkelhubs in het buitenland. Verken de [beschikbare pakketten](https://launchstudio.eu/en/#calculator) om te zien wat een typisch traject voor productiegereedheid dekt, en bekijk Manifera's engineering-referenties op haar [portfoliopagina](https://www.manifera.com/portfolio/).
+Zodra een oprichter een tool heeft gekozen — elk van de grote tools volstaat — is de echte bepalende factor voor de vraag of het product het contact met echte gebruikers overleeft wat er daarna gebeurt: een eerlijke beveiligingsbeoordeling, deugdelijk testen van betalingsintegraties, en infrastructuur die stand kan houden onder echt, soms kwaadwillend, verkeer. LaunchStudio pakt het op exact dit punt op, onafhankelijk van welke grote AI-tool gebruikt is om de frontend te bouwen, ondersteund door Manifera's engineers die werken vanuit een basis in Amsterdam aan de Herengracht 420 evenals ontwikkelhubs in het buitenland. Verken de [beschikbare pakketten](https://launchstudio.eu/nl/#calculator) om te zien wat een typisch traject voor productiegereedheid dekt, en bekijk Manifera's engineering-referenties op haar [portfoliopagina](https://www.manifera.com/portfolio/).
 
 ## Een beter kader voor het vergelijken van AI-tools
 

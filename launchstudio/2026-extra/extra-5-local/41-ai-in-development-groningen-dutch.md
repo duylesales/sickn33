@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI in ontwikkelworkflows: Wat er verandert voor Groningse oprichters, wat niet",
   "description": "Een praktische kijk op hoe AI in ontwikkeling de manier verandert waarop Groningse oprichters software bouwen, en welke onderdelen van het uitbrengen van een echt product het nog steeds niet voor u kan doen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-in-development-groningen" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-in-development-groningen" }
 }
 </script>
 
@@ -36,7 +36,7 @@ Onderzoek naar met AI gegenereerde code vindt consistent beveiligingslekken in h
 
 Dit is waar LaunchStudio in beeld komt. We vragen Groningse oprichters niet om wat ze in Lovable, Bolt, Cursor of v0 hebben gebouwd weg te gooien en opnieuw te beginnen — de frontend blijft doorgaans exact zoals deze is. Wij werken erachter: authenticatie afschermen, database-machtigingen herstellen, echte betalingen aansluiten, en de app op een infrastructuur zetten die daadwerkelijk standhoudt wanneer een klas van 200 eerstejaarsstudenten zich allemaal in dezelfde week aanmeldt. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering over meer dan 160 opgeleverde projecten, dus de beoordeling is geen checklist gehaald door een junior contractor — het is dezelfde strengheid die Manifera toepast voor enterprise-klanten zoals Vodafone en TNO, op schaal afgestemd op budgetten van oprichters.
 
-Ons team, gecoördineerd vanuit een kantoor aan de Herengracht in Amsterdam, heeft genoeg met AI gegenereerde codebases uit heel Nederland — waaronder Groningen — beoordeeld om de patronen snel te herkennen. U kunt zien hoe het proces werkt op [onze stapsgewijze uitleg](https://launchstudio.eu/en/#process), en hoe het zich verhoudt tot het inhuren van een traditioneel bureau in Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) werk.
+Ons team, gecoördineerd vanuit een kantoor aan de Herengracht in Amsterdam, heeft genoeg met AI gegenereerde codebases uit heel Nederland — waaronder Groningen — beoordeeld om de patronen snel te herkennen. U kunt zien hoe het proces werkt op [onze stapsgewijze uitleg](https://launchstudio.eu/nl/#process), en hoe het zich verhoudt tot het inhuren van een traditioneel bureau in Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) werk.
 
 ## Een praktische manier om erover na te denken
 

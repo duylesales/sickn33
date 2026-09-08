@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-bugs-that-dont-show-up-until-someone-else-uses-app"
+    "@id": "https://launchstudio.eu/nl/blog/ai-bugs-that-dont-show-up-until-someone-else-uses-app"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Een demo is per definitie een enkele, gecontroleerde doorloop, meestal door de p
 
 ## Hoe Manifera's engineers deze categorie daadwerkelijk opvangen
 
-[LaunchStudio](https://launchstudio.eu/en/) behandelt dit als een afzonderlijke controle dan een beveiligingsbeoordeling – door AI gegenereerde logica opzettelijk voeden met misvormde, grens- en local-gevarieerde invoer die het nooit te zien kreeg tijdens de oorspronkelijke generatie, een discipline die Manifera's engineeringteams consistent toepassen op meer dan 160 projecten die zijn geleverd vanuit de kantoren in Amsterdam en Ho Chi Minh-stad, ongeacht of de oorspronkelijke code afkomstig was van de eigen AI-tools van een klant of Manifera's eigen ontwikkeling vanaf nul.
+[LaunchStudio](https://launchstudio.eu/nl/) behandelt dit als een afzonderlijke controle dan een beveiligingsbeoordeling – door AI gegenereerde logica opzettelijk voeden met misvormde, grens- en local-gevarieerde invoer die het nooit te zien kreeg tijdens de oorspronkelijke generatie, een discipline die Manifera's engineeringteams consistent toepassen op meer dan 160 projecten die zijn geleverd vanuit de kantoren in Amsterdam en Ho Chi Minh-stad, ongeacht of de oorspronkelijke code afkomstig was van de eigen AI-tools van een klant of Manifera's eigen ontwikkeling vanaf nul.
 
-[Laat uw app testen tegen de invoer die uw eigen testen nooit bevatten](https://launchstudio.eu/en/#calculator) — de bugs die er het meest toe doen zijn zelden degene waar u zelf aan zou denken om te proberen, wat precies is waarom het de moeite waard is dat iemand anders er specifiek naar kijkt.
+[Laat uw app testen tegen de invoer die uw eigen testen nooit bevatten](https://launchstudio.eu/nl/#calculator) — de bugs die er het meest toe doen zijn zelden degene waar u zelf aan zou denken om te proberen, wat precies is waarom het de moeite waard is dat iemand anders er specifiek naar kijkt.
 
 ## Een druktest van tien minuten die u zelf kunt uitvoeren voor de lancering
 

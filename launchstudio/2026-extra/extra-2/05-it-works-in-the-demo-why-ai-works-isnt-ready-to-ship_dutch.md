@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/it-works-in-the-demo-ai-works-isnt-ready-to-ship"
+    "@id": "https://launchstudio.eu/nl/blog/it-works-in-the-demo-ai-works-isnt-ready-to-ship"
   }
 }
 </script>
@@ -65,11 +65,11 @@ Niets hiervan vervangt een correcte audit, die elk toegangspunt systematisch con
 
 ## Hoe een echte herstelling er concreet uitziet
 
-Het sluiten van deze kloof betekent het vervangen van directe tekst-aaneenschakeling in query's door op de juiste manier geparametriseerde query's of een ORM-laag die het ontsnappen (escaping) automatisch afhandelt. En het consequent toepassen van dat patroon over elk invoerveld dat de database bereikt, en niet alleen het veld dat een oprichter toevallig onthoudt. [LaunchStudio](https://launchstudio.eu/en/) auditeert exact dit patroon over een gehele codebase als onderdeel van haar standaard beoordeling, ondersteund door Manifera's 11+ jaar ervaring met productie-engineering over Node.js, Laravel en .NET backends.
+Het sluiten van deze kloof betekent het vervangen van directe tekst-aaneenschakeling in query's door op de juiste manier geparametriseerde query's of een ORM-laag die het ontsnappen (escaping) automatisch afhandelt. En het consequent toepassen van dat patroon over elk invoerveld dat de database bereikt, en niet alleen het veld dat een oprichter toevallig onthoudt. [LaunchStudio](https://launchstudio.eu/nl/) auditeert exact dit patroon over een gehele codebase als onderdeel van haar standaard beoordeling, ondersteund door Manifera's 11+ jaar ervaring met productie-engineering over Node.js, Laravel en .NET backends.
 
 Manifera's ingenieurs, voornamelijk werkend vanuit het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat met klantcoördinatie via het kantoor in Amsterdam aan de Herengracht 420, passen hetzelfde beoordelingspatroon toe ongeacht welk specifiek backend-framework de AI-tool van een oprichter toevallig heeft gegenereerd.
 
-[Stuur ons uw prototypelink — we geven u gratis advies](https://launchstudio.eu/en/#contact).
+[Stuur ons uw prototypelink — we geven u gratis advies](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

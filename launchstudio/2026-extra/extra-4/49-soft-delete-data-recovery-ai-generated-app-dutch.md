@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/soft-delete-data-recovery-ai-generated-app"
+    "@id": "https://launchstudio.eu/nl/blog/soft-delete-data-recovery-ai-generated-app"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Zachte verwijdering is niet de standaard waar een AI-tool naar grijpt omdat het 
 
 Dit is exact het soort datamodelleringsoordeel dat met AI gegenereerde code scheidt van productie-architectuur – niet een bug precies, maar een standaard die nooit daadwerkelijk is geëvalueerd tegen de echte kosten van het verkeerd krijgen ervan. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering. Het beoordelen van verwijder-semantiek tegen de daadwerkelijke impact van elke tabel is een standaard onderdeel van hoe onze ingenieurs, werkend vanuit Manifera's kantoor in Amsterdam, het datamodel van een met AI gebouwde app voorbereiden op echte gebruikers.
 
-Als u niet zeker weet welke van de verwijderfuncties van uw app harde verwijderingen zijn die wachten om een slechte dag te veroorzaken, is het de moeite waard om [uw datamodel te beoordelen met ons team](https://launchstudio.eu/en/#contact) voordat uw eerste echte gebruiker er op de harde manier achter komt.
+Als u niet zeker weet welke van de verwijderfuncties van uw app harde verwijderingen zijn die wachten om een slechte dag te veroorzaken, is het de moeite waard om [uw datamodel te beoordelen met ons team](https://launchstudio.eu/nl/#contact) voordat uw eerste echte gebruiker er op de harde manier achter komt.
 
 ## Zachte verwijdering breekt stilletjes unieke beperkingen (Unique Constraints)
 

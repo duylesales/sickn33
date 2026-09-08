@@ -68,11 +68,11 @@ Daarom voert LaunchStudio vóór elke livegang altijd een **Live-Mode Dry Run** 
 
 ## Hoe LaunchStudio Betalingsintegraties Professioneel Inricht
 
-Bij [LaunchStudio](https://launchstudio.eu/en/) is het realiseren van betrouwbare betaalinfrastructuren een van onze meest gevraagde diensten. Wij nemen uw AI-gegenereerde frontend exact zoals deze is over en bouwen uitsluitend de ontbrekende, veilige betalingsarchitectuur aan de achterkant.
+Bij [LaunchStudio](https://launchstudio.eu/nl/) is het realiseren van betrouwbare betaalinfrastructuren een van onze meest gevraagde diensten. Wij nemen uw AI-gegenereerde frontend exact zoals deze is over en bouwen uitsluitend de ontbrekende, veilige betalingsarchitectuur aan de achterkant.
 
 Onze ervaren software-engineers — opererend vanuit het ontwikkelingscentrum van [Manifera](https://www.manifera.com/) in **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street) en gecoördineerd door het managementteam aan de **Herengracht 420 in Amsterdam** voor Europese wetgeving zoals btw-compliance en PSD2/SCA — hebben Stripe- en Mollie-integraties geïmplementeerd voor tientallen internationale SaaS-producten. Zij beheersen alle complexe scenario's: pro-rata upgrades, conversies van proefperiode naar betaald, verbruiksgebaseerde facturatie (metered billing) en automatische Europese btw-berekening via Stripe Tax.
 
-Een typisch betalingsintegratietraject via LaunchStudio kost tussen **€ 1.500 en € 3.500** en wordt binnen **5 tot 10 werkdagen** volledig werkend opgeleverd — een fractie van de € 5.000 tot € 15.000 die traditionele softwarebureaus hiervoor offreren. U behoudt 100% eigenaarschap over uw broncode en uw eigen Stripe-account. Bereken uw vaste prijsindicatie direct via de [LaunchStudio prijscalculator](https://launchstudio.eu/en/#calculator).
+Een typisch betalingsintegratietraject via LaunchStudio kost tussen **€ 1.500 en € 3.500** en wordt binnen **5 tot 10 werkdagen** volledig werkend opgeleverd — een fractie van de € 5.000 tot € 15.000 die traditionele softwarebureaus hiervoor offreren. U behoudt 100% eigenaarschap over uw broncode en uw eigen Stripe-account. Bereken uw vaste prijsindicatie direct via de [LaunchStudio prijscalculator](https://launchstudio.eu/nl/#calculator).
 
 ## Belangrijkste Inzichten
 

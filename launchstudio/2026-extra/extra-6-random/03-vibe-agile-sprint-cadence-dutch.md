@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Agile vs. 'Vibe Agile': waarom AI-native oprichters een andere sprintcadans nodig hebben",
   "description": "Klassieke Agile-sprintcadansen gaan ervan uit dat een mens de code schrijft en beoordeelt. Zodra een AI-tool het grootste deel genereert, klopt de rekensom achter sprintplanning niet meer — dit is wat u moet veranderen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/vibe-agile-sprint-cadence" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/vibe-agile-sprint-cadence" }
 }
 </script>
 
@@ -33,7 +33,7 @@ Een AI-codeertool werkt niet in dat tempo. Eén enkele prompt kan een hele funct
 
 De oplossing is niet om Agile los te laten — het is om de eenheid van beoordeling opnieuw af te stemmen op de eenheid van vertrouwen, niet op de eenheid van tijd. Dat betekent kortere, strakkere beoordelingscycli die worden getriggerd door *wat er is gegenereerd*, niet door een kalender. Elke betekenisvolle door AI gegenereerde wijziging wordt beoordeeld dicht bij het moment waarop ze is gemaakt, in geïsoleerde, behapbare stukken, in plaats van opgestapeld en in één keer geconfronteerd aan het einde van een sprint. Het betekent ook eerlijk zijn over wat een solo-oprichter wel en niet alleen kan verifiëren — beveiligingsgevoelige logica, betaalstromen en gegevenstoegangsregels hebben een tweede paar ogen nodig met de technische achtergrond om daadwerkelijk te zien wat er mis is, niet alleen om te bevestigen dat de functie er visueel goed uitziet.
 
-Manifera brengt de procesdiscipline van 120+ technici en 160+ opgeleverde projecten naar precies dit probleem — beoordelingscadansen bouwen die zijn afgestemd op AI-output in plaats van integraal overgenomen uit pre-AI Agile-draaiboeken. Ons team, waaronder technici gevestigd in Ho Chi Minhstad die rechtstreeks werken in de codebases die oprichters ons sturen, behandelt elke door AI gegenereerde pull request als een eigen te beoordelen eenheid in plaats van iets om door te wuiven omdat de demo er goed uitzag. Als uw huidige sprintritme altijd één release achterloopt op de code die u genereert, [bereken dan wat een echte productiebeoordeling zou kosten](https://launchstudio.eu/en/#calculator) voordat technische schuld sneller groeit dan u die kunt opsporen. Manifera's bredere benadering van gestructureerde [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) is gebouwd op hetzelfde principe: beoordelingscapaciteit moet meegroeien met output, niet andersom.
+Manifera brengt de procesdiscipline van 120+ technici en 160+ opgeleverde projecten naar precies dit probleem — beoordelingscadansen bouwen die zijn afgestemd op AI-output in plaats van integraal overgenomen uit pre-AI Agile-draaiboeken. Ons team, waaronder technici gevestigd in Ho Chi Minhstad die rechtstreeks werken in de codebases die oprichters ons sturen, behandelt elke door AI gegenereerde pull request als een eigen te beoordelen eenheid in plaats van iets om door te wuiven omdat de demo er goed uitzag. Als uw huidige sprintritme altijd één release achterloopt op de code die u genereert, [bereken dan wat een echte productiebeoordeling zou kosten](https://launchstudio.eu/nl/#calculator) voordat technische schuld sneller groeit dan u die kunt opsporen. Manifera's bredere benadering van gestructureerde [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) is gebouwd op hetzelfde principe: beoordelingscapaciteit moet meegroeien met output, niet andersom.
 
 ## Echt voorbeeld
 

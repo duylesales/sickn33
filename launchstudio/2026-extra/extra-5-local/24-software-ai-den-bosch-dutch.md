@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Software-AI die snel gebouwd is in Den Bosch heeft nog steeds een tweede, tragere ronde nodig",
   "description": "Een technische onderbouwing van waarom met AI gegenereerde software van Den Bosch oprichters een bewuste architectuurbeoordeling nodig heeft voordat het echte productiebelasting kan dragen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/24-software-ai-den-bosch" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/24-software-ai-den-bosch" }
 }
 </script>
 
@@ -36,7 +36,7 @@ LaunchStudio brengt Manifera's enterprise-grade engineering — het team achter 
 
 ## Beslissen wat het waard is om te herstellen vóór de lancering
 
-Niet elk architecturaal gat hoeft vóór uw eerste gebruiker hersteld te worden — sommige kunnen oprecht wachten. De beoordelingsbeslissing is weten welke welke is, en dat is precies de beslissing die een AI-tool niet voor u kan nemen, omdat deze uw compliance-eisen, uw financieringsplanning of uw risicotolerantie niet kent. Als u die beoordeling liever laat toepassen door mensen die deze eerder op schaal hebben gemaakt, kunt u [LaunchStudio's pakketten met vaste omvang](https://launchstudio.eu/en/#packages) bekijken om te zien wat een gestructureerde productieronde doorgaans dekt.
+Niet elk architecturaal gat hoeft vóór uw eerste gebruiker hersteld te worden — sommige kunnen oprecht wachten. De beoordelingsbeslissing is weten welke welke is, en dat is precies de beslissing die een AI-tool niet voor u kan nemen, omdat deze uw compliance-eisen, uw financieringsplanning of uw risicotolerantie niet kent. Als u die beoordeling liever laat toepassen door mensen die deze eerder op schaal hebben gemaakt, kunt u [LaunchStudio's pakketten met vaste omvang](https://launchstudio.eu/nl/#packages) bekijken om te zien wat een gestructureerde productieronde doorgaans dekt.
 
 ## Testen op Concurrency Bugs voordat uw gebruikers ze vinden
 

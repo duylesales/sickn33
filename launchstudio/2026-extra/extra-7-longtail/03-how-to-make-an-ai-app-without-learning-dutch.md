@@ -13,10 +13,10 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
   "@type": "Article",
   "headline": "Hoe maak je een AI-app zonder eerst te leren programmeren",
   "description": "U kunt een AI-app maken zonder ooit te leren programmeren, maar er is een checklist tussen een werkend prototype en een prototype dat veilig genoeg is om te lanceren. Dit is elk punt op die lijst.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-10",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-make-an-ai-app-without-learning" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/how-to-make-an-ai-app-without-learning" }
 }
 </script>
 
@@ -58,7 +58,7 @@ Een simpele manier om te controleren: probeer direct in te loggen bij uw domeinr
 
 ## Wat te doen als uw app op een van deze punten faalt
 
-Geen van deze punten vereist dat u leert programmeren om ze te controleren, maar het oplossen ervan vereist meestal wel iemand die dat kan. Dat is precies het gat dat LaunchStudio bestaat om te dichten. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera — vertrouwd door Vodafone, TNO en CFLW — met ontwikkeling deels gecoördineerd vanuit het Manifera-team op Floor 11, Block C, 10 Pho Quang Street in Ho Chi Minh-stad. Voor een oprichter die met AI een app heeft gemaakt en de bovenstaande punten gecontroleerd en gerepareerd moet hebben zonder herbouw, dekt het [Launch & Grow-pakket](https://launchstudio.eu/en/#packages) precies dit — beveiliging, betalingen, hosting en monitoring, gebouwd rond de frontend die u al heeft. U kunt de vaste engineeringstandaarden waaraan dit werk gehouden wordt bekijken op [Manifera's over-ons-pagina](https://www.manifera.com/about-us/).
+Geen van deze punten vereist dat u leert programmeren om ze te controleren, maar het oplossen ervan vereist meestal wel iemand die dat kan. Dat is precies het gat dat LaunchStudio bestaat om te dichten. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera — vertrouwd door Vodafone, TNO en CFLW — met ontwikkeling deels gecoördineerd vanuit het Manifera-team op Floor 11, Block C, 10 Pho Quang Street in Ho Chi Minh-stad. Voor een oprichter die met AI een app heeft gemaakt en de bovenstaande punten gecontroleerd en gerepareerd moet hebben zonder herbouw, dekt het [Launch & Grow-pakket](https://launchstudio.eu/nl/#packages) precies dit — beveiliging, betalingen, hosting en monitoring, gebouwd rond de frontend die u al heeft. U kunt de vaste engineeringstandaarden waaraan dit werk gehouden wordt bekijken op [Manifera's over-ons-pagina](https://www.manifera.com/about-us/).
 
 Het is de moeite waard om specifiek te zijn over hoe dit proces er in de praktijk gewoonlijk uitziet, aangezien "laat het controleren" vaag kan klinken. Het begint doorgaans met een kort gesprek in gewone taal over wat u gebouwd heeft en hoe — geen huiswerk in codebeoordeling vereist aan uw kant. Van daaruit loopt een technische beoordeling langs punten zoals hierboven tegen uw daadwerkelijke app, niet een generieke lijst, en komt terug met een specifiek, item-voor-item overzicht van wat solide is en wat werk nodig heeft. Pas daarna gebeurt er daadwerkelijk bouwwerk, en dat gebeurt tegen een vooraf overeengekomen vaste offerte, niet een open-eind uurtarief dat blijft doorlopen totdat iemand besluit dat de app "af genoeg" is. Die structuur bestaat specifiek omdat niet-technische oprichters eerder gebrand zijn door vage scopes die stilzwijgend uitdijden — vooraf de prijs en de opleverpunten weten voordat het werk begint, is het hele punt.
 

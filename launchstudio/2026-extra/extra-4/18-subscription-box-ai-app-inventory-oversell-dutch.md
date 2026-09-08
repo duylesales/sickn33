@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/subscription-box-ai-app-inventory-oversell"
+    "@id": "https://launchstudio.eu/nl/blog/subscription-box-ai-app-inventory-oversell"
   }
 }
 </script>
@@ -47,7 +47,7 @@ De juiste architectuur controleert de beschikbare voorraad voor het relevante bo
 
 LaunchStudio's engineeringbank zit binnen Manifera, wier 160+ geleverde enterprise-projecten betekenen dat dit soort transactionele integriteitsproblemen – het atomair controleren van een beperkte bron onder gelijktijdige belasting – geen nieuw patroon is voor ons team. Zelfs wanneer de "bron" een box met gecureerde snacks is in plaats van een banksaldo. Ons ontwikkelingscentrum in Ho Chi Minh-stad bouwt dit soort afreken-voorraadlogica regelmatig voor oprichters wier groei sneller gaat dan waar hun prototype ooit tegen getest is.
 
-Als u een schatting met vaste omvang wilt voor dit soort herstellingen, is [onze calculator](https://launchstudio.eu/en/#calculator) een snelle manier om een getal te krijgen voordat u zich verbindt. Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) dekt dezelfde klasse van gelijktijdigheids- en transactionele integriteitswerk op enterprise-schaal.
+Als u een schatting met vaste omvang wilt voor dit soort herstellingen, is [onze calculator](https://launchstudio.eu/nl/#calculator) een snelle manier om een getal te krijgen voordat u zich verbindt. Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) dekt dezelfde klasse van gelijktijdigheids- en transactionele integriteitswerk op enterprise-schaal.
 
 ## Vernieuwingen slaan de afrekening volledig over — en de voorraadcontrole ermee
 

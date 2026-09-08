@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/three-questions-decide-security-review-now"
+    "@id": "https://launchstudio.eu/nl/blog/three-questions-decide-security-review-now"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Twee of drie "ja"-antwoorden wijzen er duidelijk op om dit nu aan te pakken in p
 
 Het algemene advies om "altijd onmiddellijk een beveiligingsbeoordeling te laten uitvoeren" negeert dat een oprecht vroeg, solo-getest prototype met synthetische gegevens echte, maar naar verhouding lagere belangen draagt dan een live product voor meerdere gebruikers dat echte klantgegevens verwerkt. Het algemene advies om te "wachten tot u echte tractie heeft" negeert hoe snel de onderliggende omstandigheden in deze drie vragen kunnen veranderen, soms zonder dat een oprichter specifiek het exacte moment opmerkt waarop het antwoord op een van de vragen omsloeg van nee naar ja.
 
-[LaunchStudio](https://launchstudio.eu/en/) gebruikt exact dit kader van drie vragen tijdens eerste gesprekken met oprichters om te helpen bepalen hoe dringend een beoordeling daadwerkelijk is, in plaats van te vervallen in een van beide extremen. Dit wordt ondersteund door Manifera's bredere ervaring in het onderscheiden van echt, actief risico van theoretisch, slapend risico in een breed scala aan situaties waarin oprichters zich bevinden.
+[LaunchStudio](https://launchstudio.eu/nl/) gebruikt exact dit kader van drie vragen tijdens eerste gesprekken met oprichters om te helpen bepalen hoe dringend een beoordeling daadwerkelijk is, in plaats van te vervallen in een van beide extremen. Dit wordt ondersteund door Manifera's bredere ervaring in het onderscheiden van echt, actief risico van theoretisch, slapend risico in een breed scala aan situaties waarin oprichters zich bevinden.
 
-[Beantwoord deze drie vragen eerlijk, en laten we het dan hebben over wat ze betekenen voor uw specifieke situatie](https://launchstudio.eu/en/#contact) — de juiste urgentie hangt af van uw daadwerkelijke antwoorden, en niet van een universele regel.
+[Beantwoord deze drie vragen eerlijk, en laten we het dan hebben over wat ze betekenen voor uw specifieke situatie](https://launchstudio.eu/nl/#contact) — de juiste urgentie hangt af van uw daadwerkelijke antwoorden, en niet van een universele regel.
 
 ## Vier goedkope voorzorgsmaatregelen die het waard zijn om te nemen, zelfs als het antwoord "nog niet" is
 

@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-12-19",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/infrastructure-stack-ai-startup-2027"
+    "@id": "https://launchstudio.eu/nl/blog/infrastructure-stack-ai-startup-2027"
   }
 }
 </script>
@@ -74,9 +74,9 @@ AI-bouwtools zijn geoptimaliseerd voor de snelste route naar een visueel overtui
 
 ## De Kloof Dichten
 
-Dit is exact de laag die [LaunchStudio](https://launchstudio.eu/en/) overbrugt. Ondersteund door Manifera's 11+ jaar ervaring in productie-infrastructuur over 160+ opgeleverde enterprise-projecten, neemt LaunchStudio de sterke frontend-output van uw AI-tool en bouwt lagen 3 tot en met 7 er professioneel omheen — zonder de gebruikersinterface die u al heeft ontworpen aan te tasten.
+Dit is exact de laag die [LaunchStudio](https://launchstudio.eu/nl/) overbrugt. Ondersteund door Manifera's 11+ jaar ervaring in productie-infrastructuur over 160+ opgeleverde enterprise-projecten, neemt LaunchStudio de sterke frontend-output van uw AI-tool en bouwt lagen 3 tot en met 7 er professioneel omheen — zonder de gebruikersinterface die u al heeft ontworpen aan te tasten.
 
-[Gebruik de prijscalculator](https://launchstudio.eu/en/#calculator) om exact te zien welke infrastructuurlagen uw specifieke project nodig heeft en wat het kost om deze productieklaar op te leveren.
+[Gebruik de prijscalculator](https://launchstudio.eu/nl/#calculator) om exact te zien welke infrastructuurlagen uw specifieke project nodig heeft en wat het kost om deze productieklaar op te leveren.
 
 ## De Volgorde van Bouwen: Welke Lagen Eerst te Prioriteren
 

@@ -37,9 +37,9 @@ Over alle vijf redenen geldt een consistent patroon: het uitstel laat de onderli
 
 Herkennen welke specifieke reden daadwerkelijk jouw eigen uitstel drijft — in plaats van "ik ben er nog niet aan toegekomen" te behandelen als een enkele ongedifferentieerde categorie — is de eerste stap, aangezien elke reden een specifieke, aanpakbare respons heeft: een afgebakende audit voor de onzekerheid van reden 1, een accuraat kostenbegrip voor redenen 2 en 3, een proactieve in plaats van vermijdende framing voor reden 4, en een concreet evaluatiekader voor reden 5.
 
-[LaunchStudio](https://launchstudio.eu/en/) pakt elk van deze uitstelpatronen specifiek direct aan — accurate scoping in plaats van gevreesde aannames, getierde prijsstelling in plaats van alles-of-niets-kosten, en transparante auditartefacten in plaats van niet-verifieerbaar vertrouwen — gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) pakt elk van deze uitstelpatronen specifiek direct aan — accurate scoping in plaats van gevreesde aannames, getierde prijsstelling in plaats van alles-of-niets-kosten, en transparante auditartefacten in plaats van niet-verifieerbaar vertrouwen — gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
 
-[Pak welke reden je ook heeft tegengehouden aan](https://launchstudio.eu/en/#contact) — de specifieke gaten verdwijnen niet terwijl je wacht, ze worden gewoon duurder om te repareren.
+[Pak welke reden je ook heeft tegengehouden aan](https://launchstudio.eu/nl/#contact) — de specifieke gaten verdwijnen niet terwijl je wacht, ze worden gewoon duurder om te repareren.
 
 ## Echt voorbeeld
 

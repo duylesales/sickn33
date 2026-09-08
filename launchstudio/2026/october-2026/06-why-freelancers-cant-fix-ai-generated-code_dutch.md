@@ -48,7 +48,7 @@ Die kloof in architectuur en beveiliging is exact waar freelancers, die getraind
 
 ## Het Alternatief van LaunchStudio
 
-[LaunchStudio](https://launchstudio.eu/en/) is specifiek opgericht om dit probleem op te lossen. In tegenstelling tot freelancers die uw code willen weggooien, zijn de engineers van LaunchStudio speciaal getraind om te werken binnen door AI gegenereerde codebases.
+[LaunchStudio](https://launchstudio.eu/nl/) is specifiek opgericht om dit probleem op te lossen. In tegenstelling tot freelancers die uw code willen weggooien, zijn de engineers van LaunchStudio speciaal getraind om te werken binnen door AI gegenereerde codebases.
 
 Onze werkwijze:
 - **Wij behouden uw frontend exact zoals deze is.** Uw UI, uw ontwerp en uw gebruikerservaring blijven 100% onaangeroerd.
@@ -71,7 +71,7 @@ Anders dan losse freelancers wordt LaunchStudio ondersteund door [Manifera](http
 - LaunchStudio behoudt uw gevalideerde frontend en versterkt uitsluitend de backend-infrastructuur die nodig is voor productie, tegen circa 20% van de traditionele bureaukosten.
 - De kostenbesparing ten opzichte van een freelancer bedraagt typisch 60-80%, met een 3 tot 5 keer snellere oplevering en een vaste prijsgarantie vooraf.
 
-[Beschrijf uw project — wij reageren binnen 1 werkdag](https://launchstudio.eu/en/#contact).
+[Beschrijf uw project — wij reageren binnen 1 werkdag](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

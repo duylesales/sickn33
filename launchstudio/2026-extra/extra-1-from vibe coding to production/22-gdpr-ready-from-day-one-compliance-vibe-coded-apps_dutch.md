@@ -37,9 +37,9 @@ Elk van deze dimensies deelt een specifiek patroon: hoe eerder je ze aanpakt, ho
 
 Concreet: jouw databaseschema ontwerpen met verwijderingspaden vanaf het begin overwogen, niet achteraf toegevoegd; datacollectie bewust beperken tot wat specifiek gerechtvaardigd is door de functie van jouw product; doelbewust EU-gebaseerde infrastructuur selecteren waar vereist, in plaats van de standaardinstelling van een tool te accepteren; en bevestigen dat verwerkersovereenkomsten bestaan met elke relevante leverancier voordat echte persoonsgegevens erdoorheen beginnen te stromen.
 
-[LaunchStudio](https://launchstudio.eu/en/) bouwt AVG-bewuste architectuur standaard in bij elke opdracht, en behandelt deze als de dag-één-architecturale beslissingen die ze daadwerkelijk zijn in plaats van post-lancering-papierwerk, gesteund door Manifera's compliance-bewuste engineeringcultuur gevormd door klanten zoals TNO.
+[LaunchStudio](https://launchstudio.eu/nl/) bouwt AVG-bewuste architectuur standaard in bij elke opdracht, en behandelt deze als de dag-één-architecturale beslissingen die ze daadwerkelijk zijn in plaats van post-lancering-papierwerk, gesteund door Manifera's compliance-bewuste engineeringcultuur gevormd door klanten zoals TNO.
 
-[Bouw compliance in voordat de data van jouw eerste echte gebruiker bestaat](https://launchstudio.eu/en/#calculator) — dit is betekenisvol goedkoper voordat echte data accumuleert dan erna.
+[Bouw compliance in voordat de data van jouw eerste echte gebruiker bestaat](https://launchstudio.eu/nl/#calculator) — dit is betekenisvol goedkoper voordat echte data accumuleert dan erna.
 
 ## Echt voorbeeld
 

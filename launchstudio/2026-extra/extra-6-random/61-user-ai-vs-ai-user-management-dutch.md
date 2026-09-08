@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Waarom 'User AI' niet hetzelfde is als goed gebruikersbeheer",
   "description": "AI-codeertools verkopen 'user AI'-personalisatiefuncties die klinken als rechtensystemen, maar dat niet zijn. Dit is de kloof tussen beide, en waarom dit ertoe doet voor iedereen met echte accounts en echte gegevens.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/user-ai-vs-ai-user-management" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/user-ai-vs-ai-user-management" }
 }
 </script>
 
@@ -35,7 +35,7 @@ Dit is precies de kloof die het vaakst voorkomt in door AI gegenereerde codebase
 
 Als u alleen bouwt met een AI-codeertool, ervaart u de app zoals deze bedoeld is om ervaren te worden: log in als de ene rol, zie de ene reeks functies, log in als de andere, zie een andere reeks. Het lijkt correct omdat de *personalisatie* werkt. Er is geen duidelijk moment waarop de ontbrekende handhaving zich aankondigt, omdat niets in het normale gebruik van de app ooit probeert het te doen wat niet zou mogen. De enige manier om de kloof te vinden, is door doelbewust te proberen uw eigen regels te breken — proberen de gegevens van een ander account rechtstreeks te laden, of een verzoek opnieuw uit te voeren met een andere gebruikers-ID — wat de meeste solo-oprichters vóór lancering niet snel bedenken.
 
-Het team van 120+ engineers van Manifera, werkzaam vanuit Amsterdam en daarbuiten, behandelt deze specifieke kloof — UI-niveau beperking die doorgaat voor echte autorisatie — als een van de eerste dingen die het waard zijn om te controleren in elke door AI gegenereerde codebase. Als u een tweede paar ogen wilt op de vraag of de rollen in uw eigen app daadwerkelijk worden afgedwongen of alleen anders worden weergegeven, loopt onze [processpagina](https://launchstudio.eu/en/#process) door hoe die beoordeling werkt, en de pagina ["over ons"](https://www.manifera.com/about-us/) van Manifera behandelt de bredere technische achtergrond daarachter.
+Het team van 120+ engineers van Manifera, werkzaam vanuit Amsterdam en daarbuiten, behandelt deze specifieke kloof — UI-niveau beperking die doorgaat voor echte autorisatie — als een van de eerste dingen die het waard zijn om te controleren in elke door AI gegenereerde codebase. Als u een tweede paar ogen wilt op de vraag of de rollen in uw eigen app daadwerkelijk worden afgedwongen of alleen anders worden weergegeven, loopt onze [processpagina](https://launchstudio.eu/nl/#process) door hoe die beoordeling werkt, en de pagina ["over ons"](https://www.manifera.com/about-us/) van Manifera behandelt de bredere technische achtergrond daarachter.
 
 ## Echt voorbeeld
 

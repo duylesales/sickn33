@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "'Dev AI' versus een developer inhuren: wat elk van beide daadwerkelijk vervangt",
   "description": "Een dev AI-tool en een menselijke developer vervangen verschillende dingen, niet hetzelfde tegen een andere prijs. Hier is een gids voor oprichters over waar de grens daadwerkelijk ligt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/dev-ai-vs-hiring-a-developer" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/dev-ai-vs-hiring-a-developer" }
 }
 </script>
 
@@ -47,7 +47,7 @@ Dit is de categorie waar een menselijke developer zit die een dev AI-tool struct
 
 Het gevaar is niet het gebruiken van een dev AI-tool in plaats van een developer — voor een enorm deel van vroege bouwfases is dat een slimme, efficiënte keuze. Het gevaar is de tool tegenover uzelf, en tegenover adviseurs, beschrijven als volledige vervanging, en vervolgens een beslispunt bereiken dat daadwerkelijk oordeel vereist terwijl u de tool nog steeds behandelt alsof hij dat kan leveren. Dat is het moment waarop een oprichter óf zelf een onvoldoende geïnformeerde beslissing neemt, vermomd alsof die was doorgelicht, óf een echte beslissing uitstelt in afwachting van een tool die er nooit betekenisvol op zou ingaan.
 
-De technici van Manifera, werkend vanuit Singapore, bestaan specifiek voor de categorie beslissingen die een dev AI-tool niet kan nemen — niet om de tool te vervangen, maar om ernaast te zitten precies waar oordeelsvermogen, niet codegeneratie, daadwerkelijk nodig is. Als u een beslispunt heeft bereikt waar uw tool u niet doorheen kan helpen redeneren, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/en/#contact) om het door te spreken met iemand die dat wel kan. De praktijk van Manifera voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) is precies rond dit soort oordeelsvermogen op schaal gebouwd, voor beslissingen die te ingrijpend zijn om over te laten aan een tool zonder belang bij de uitkomst.
+De technici van Manifera, werkend vanuit Singapore, bestaan specifiek voor de categorie beslissingen die een dev AI-tool niet kan nemen — niet om de tool te vervangen, maar om ernaast te zitten precies waar oordeelsvermogen, niet codegeneratie, daadwerkelijk nodig is. Als u een beslispunt heeft bereikt waar uw tool u niet doorheen kan helpen redeneren, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) om het door te spreken met iemand die dat wel kan. De praktijk van Manifera voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) is precies rond dit soort oordeelsvermogen op schaal gebouwd, voor beslissingen die te ingrijpend zijn om over te laten aan een tool zonder belang bij de uitkomst.
 
 ## Echt voorbeeld
 

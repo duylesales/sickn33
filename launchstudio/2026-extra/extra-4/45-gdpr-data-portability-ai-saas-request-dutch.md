@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/gdpr-data-portability-ai-saas-request"
+    "@id": "https://launchstudio.eu/nl/blog/gdpr-data-portability-ai-saas-request"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Een nalevende reactie op gegevensoverdraagbaarheid moet alle persoonlijke gegeve
 
 Manifera heeft meer dan 11 jaar ervaring in productie-engineering in het bouwen van systemen die bestand zijn tegen echte nalevingsvereisten. LaunchStudio past diezelfde discipline toe op met AI gebouwde SaaS-producten: exact in kaart brengen waar persoonlijke gegevens leven in het schema en een exportpad bouwen voordat het eerste verzoek ooit binnenkomt. Onze ingenieurs, werkend vanuit Manifera's ontwikkelingscentrum in Ho Chi Minh-stad, behandelen dit als onderdeel van de standaard beoordeling van gegevensverwerking voor elke klantgerichte SaaS-tool, naast logica voor verwijdering en bewaartermijnen.
 
-Als u nog nooit heeft getest wat er zou gebeuren als een gebruiker morgen om zijn gegevens vraagt, is het de moeite waard om [met een ingenieur te praten over uw huidige schema](https://launchstudio.eu/en/#contact) voordat die e-mail daadwerkelijk binnenkomt.
+Als u nog nooit heeft getest wat er zou gebeuren als een gebruiker morgen om zijn gegevens vraagt, is het de moeite waard om [met een ingenieur te praten over uw huidige schema](https://launchstudio.eu/nl/#contact) voordat die e-mail daadwerkelijk binnenkomt.
 
 ## Uw database is niet de enige plek waar deze gegevens leven
 

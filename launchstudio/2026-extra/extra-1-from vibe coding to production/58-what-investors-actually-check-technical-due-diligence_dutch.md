@@ -37,9 +37,9 @@ Sommige founders redeneren dat due-diligencebevindingen simpelweg reactief aange
 
 De productiegereedheidscategorieën doorheen deze serie behandeld behandelen als fondsenwervingsvoorbereiding, niet alleen lanceringsvoorbereiding, betekent ze ruim voordat een specifieke ronde dreigt aanpakken, zodat wanneer due diligence daadwerkelijk gebeurt, het bestaande, geverifieerde gereedheid bevestigt in plaats van oprechte, onaangepakte gaten onder tijdsdruk aan het licht te brengen.
 
-[LaunchStudio](https://launchstudio.eu/en/) bereidt AI-native founders voor op precies dit due-diligencepatroon als natuurlijke uitbreiding van standaard productiegereedheidswerk, gesteund door Manifera's eigen engineering-trackrecord dat zelf dezelfde controle doorstaat over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) bereidt AI-native founders voor op precies dit due-diligencepatroon als natuurlijke uitbreiding van standaard productiegereedheidswerk, gesteund door Manifera's eigen engineering-trackrecord dat zelf dezelfde controle doorstaat over 160+ opgeleverde projecten.
 
-[Kom vóór due diligence, voordat het onder tijdsdruk gebeurt](https://launchstudio.eu/en/#calculator) — de categorieën die investeerders controleren zijn dezelfde die deze serie doorheen behandelt.
+[Kom vóór due diligence, voordat het onder tijdsdruk gebeurt](https://launchstudio.eu/nl/#calculator) — de categorieën die investeerders controleren zijn dezelfde die deze serie doorheen behandelt.
 
 ## Echt voorbeeld
 

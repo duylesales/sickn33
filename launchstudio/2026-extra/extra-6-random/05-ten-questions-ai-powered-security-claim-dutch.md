@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "10 vragen die u moet stellen voordat u een 'AI-gestuurde' beveiligingsclaim vertrouwt",
   "description": "Een praktische checklist met 10 vragen die oprichters moeten stellen aan elke tool of leverancier die 'AI-gestuurde' beveiligingsscans adverteert, voordat ze aannemen dat hun app daadwerkelijk gedekt is.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-29",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ten-questions-ai-powered-security-claim" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ten-questions-ai-powered-security-claim" }
 }
 </script>
 
@@ -61,7 +61,7 @@ Elke geautomatiseerde tool heeft een bereik. Vraag direct wat het *niet* control
 
 Signaleert de tool alleen problemen en laat het u vervolgens over om ze op te lossen, of is er een pad om ze daadwerkelijk opgelost te krijgen? Een scan zonder herstelpad geeft u alleen een langere lijst met zorgen.
 
-Manifera brengt 120+ technici en enterprise-grade beveiligingsdiscipline naar elke beoordeling die LaunchStudio uitvoert — met onze Singapore-hub die controles coördineert die geautomatiseerde scans combineren met daadwerkelijke menselijke verificatie van autorisatie- en gegevenstoegangslogica, niet alleen patroonherkenning. Als de antwoorden van een tool op deze tien vragen u onrustig maakten, [stuur ons dan de link naar uw prototype](https://launchstudio.eu/en/#contact) en wij vertellen u eerlijk wat een echte beoordeling zou vinden. U kunt de bredere technische discipline achter deze beoordelingen ook zien in [Manifera's projectportfolio](https://www.manifera.com/portfolio/).
+Manifera brengt 120+ technici en enterprise-grade beveiligingsdiscipline naar elke beoordeling die LaunchStudio uitvoert — met onze Singapore-hub die controles coördineert die geautomatiseerde scans combineren met daadwerkelijke menselijke verificatie van autorisatie- en gegevenstoegangslogica, niet alleen patroonherkenning. Als de antwoorden van een tool op deze tien vragen u onrustig maakten, [stuur ons dan de link naar uw prototype](https://launchstudio.eu/nl/#contact) en wij vertellen u eerlijk wat een echte beoordeling zou vinden. U kunt de bredere technische discipline achter deze beoordelingen ook zien in [Manifera's projectportfolio](https://www.manifera.com/portfolio/).
 
 ## Echt voorbeeld
 

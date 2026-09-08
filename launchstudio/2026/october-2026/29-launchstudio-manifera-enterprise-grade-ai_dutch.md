@@ -77,7 +77,7 @@ Dit is tevens de reden waarom de prijzen van LaunchStudio transparant en vooraf 
 - Oprichters combineren de snelheid van AI-prototypen met de onwrikbare veiligheid van een enterprise team voor circa 20% van de traditionele bureaukosten.
 - Vaste projectprijzen en gegarandeerde oplevering binnen 1 tot 3 weken elimineren budgettaire onzekerheid.
 
-[Laat de beveiliging van uw AI-app niet aan het toeval over. Lanceer vandaag nog met de experts van LaunchStudio](https://launchstudio.eu/en/#contact).
+[Laat de beveiliging van uw AI-app niet aan het toeval over. Lanceer vandaag nog met de experts van LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

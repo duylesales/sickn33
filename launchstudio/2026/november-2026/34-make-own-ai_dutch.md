@@ -16,7 +16,7 @@ Doelpersona: CTO / Technische Oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CTO / Technische Oprichter
   "datePublished": "2026-12-04",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/make-own-ai"
+    "@id": "https://launchstudio.eu/nl/blog/make-own-ai"
   }
 }
 </script>
@@ -67,7 +67,7 @@ In plaats van feitenkennis in het neurale netwerk te proberen bakken, slaat u do
 
 Het bouwen van een professionele RAG-pijplijn vereist specialistische data-engineering: documenten opdelen (chunking), HNSW-indexering, semantische caching en re-ranking modellen.
 
-[LaunchStudio](https://launchstudio.eu/en/), aangedreven door de data-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt enterprise-grade RAG-architecturen:
+[LaunchStudio](https://launchstudio.eu/nl/), aangedreven door de data-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt enterprise-grade RAG-architecturen:
 1. **De Data-Ingestie Pijplijn:** Veilige extractie van tekst uit PDF's, Notion of Salesforce, met behoud van documentstructuren en hoogwaardige vector-embeddings.
 2. **De Vectordatabase:** Managed PostgreSQL met `pgvector` en wiskundig getunede HNSW-indexen voor zoekacties onder de 50ms over miljoenen documenten.
 3. **Multi-Tenant Isolatie:** Row Level Security (RLS) die wiskundig uitsluit dat klantdata tussen organisaties lekt.

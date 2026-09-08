@@ -57,7 +57,7 @@ Zelfs met Cursor AI blijft het transformeren van een prototype naar een veilige,
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Dit is exact waar [LaunchStudio](https://launchstudio.eu/en/) uw time-to-market drastisch verkort. Gesteund door het enterprise team van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring, opererend vanuit **Amsterdam, Singapore en Ho Chi Minhstad**, treden wij op als infrastructurele partner voor ambitieuze solo-oprichters.
+Dit is exact waar [LaunchStudio](https://launchstudio.eu/nl/) uw time-to-market drastisch verkort. Gesteund door het enterprise team van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring, opererend vanuit **Amsterdam, Singapore en Ho Chi Minhstad**, treden wij op als infrastructurele partner voor ambitieuze solo-oprichters.
 
 U gebruikt Bolt om de UI te genereren en Cursor om uw logica te verfijnen. Zodra u klaar bent om live te gaan, draagt u de codebase over aan LaunchStudio. Ons **"Launch Ready" pakket** verzorgt de complete "laatste mijl". Wij auditen de door AI gegenereerde code op kwetsbaarheden — een reëel risico wetende dat 45% van de AI-code kwetsbaarheden bevat — implementeren strikte Row Level Security, bouwen de betaalintegraties en deployen uw SaaS naar een geharde productie-omgeving.
 
@@ -71,7 +71,7 @@ U blijft gefocust op productontwikkeling en marketing; wij garanderen een robuus
 - Noch Bolt, noch Cursor verzorgt zelfstandig de complete deployment, SSL-configuratie, RLS-beveiliging en webhook-afhandeling.
 - LaunchStudio realiseert de "laatste mijl" engineering, zodat u uw AI-codebase binnen 1 tot 3 weken veilig kunt lanceren voor betalende klanten.
 
-[Laat LaunchStudio uw productie-deployment verzorgen terwijl u features bouwt. Neem vandaag contact op](https://launchstudio.eu/en/#contact).
+[Laat LaunchStudio uw productie-deployment verzorgen terwijl u features bouwt. Neem vandaag contact op](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

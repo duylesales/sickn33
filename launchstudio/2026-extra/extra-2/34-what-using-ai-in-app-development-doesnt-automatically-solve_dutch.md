@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-29",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-using-ai-in-app-development-doesnt-automatically-solve"
+    "@id": "https://launchstudio.eu/nl/blog/what-using-ai-in-app-development-doesnt-automatically-solve"
   }
 }
 </script>
@@ -53,11 +53,11 @@ De schade van een open omleiding is niet primair technisch – het gaat om het i
 
 ## Wat het sluiten van deze kloof inhoudt
 
-Een correcte herstelling beperkt omleidingsbestemmingen tot een specifieke, bekende toestemmingslijst (allow-list) van interne pagina's, waarbij elke omleidingsparameter die buiten uw eigen domein wijst wordt geweigerd of genegeerd. [LaunchStudio](https://launchstudio.eu/en/) controleert exact op dit soort kwetsbaarheid voor open omleiding als onderdeel van haar beoordeling van authenticatiebeveiliging, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van inlog- en sessie-afhandelingsstromen.
+Een correcte herstelling beperkt omleidingsbestemmingen tot een specifieke, bekende toestemmingslijst (allow-list) van interne pagina's, waarbij elke omleidingsparameter die buiten uw eigen domein wijst wordt geweigerd of genegeerd. [LaunchStudio](https://launchstudio.eu/nl/) controleert exact op dit soort kwetsbaarheid voor open omleiding als onderdeel van haar beoordeling van authenticatiebeveiliging, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van inlog- en sessie-afhandelingsstromen.
 
 Manifera's beveiligingsbeoordelingen voor authenticatiestromen worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Stuur de link van uw prototype door — gratis advies, geen verplichtingen](https://launchstudio.eu/en/#contact).
+[Stuur de link van uw prototype door — gratis advies, geen verplichtingen](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

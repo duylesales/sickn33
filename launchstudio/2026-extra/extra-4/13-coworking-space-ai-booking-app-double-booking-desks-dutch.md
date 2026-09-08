@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/coworking-space-ai-booking-app-double-booking-desks"
+    "@id": "https://launchstudio.eu/nl/blog/coworking-space-ai-booking-app-double-booking-desks"
   }
 }
 </script>
@@ -57,7 +57,7 @@ Dit laatste punt doet er meer toe dan het klinkt. [In tegenstelling tot freelanc
 
 ## Het herstellen zonder uw frontend aan te raken
 
-Coworking-oprichters die Bolt of vergelijkbare tools gebruiken, hebben meestal al een frontend gebouwd waar leden graag gebruik van maken – een kalenderweergave, bureaukaarten, een strakke boekingsstroom. Niets daarvan hoeft te veranderen om een overlap-bug zoals deze te herstellen. De herstelling leeft volledig in de backend-logica en het databaseschema dat bepaalt wat telt als een conflict. Manifera's kantoor in Amsterdam aan de Herengracht 420 heeft ingenieurs die gespecialiseerd zijn in exact dit soort chirurgische backend-correcties, waardoor uw bestaande frontend ongemoeid blijft. Als u een duidelijk beeld wilt van wat een herstelling zoals deze voor uw specifieke app zou kosten, [verken LaunchStudio's pakketten met vaste omvang](https://launchstudio.eu/en/#packages) voordat u zich aan iets verbindt.
+Coworking-oprichters die Bolt of vergelijkbare tools gebruiken, hebben meestal al een frontend gebouwd waar leden graag gebruik van maken – een kalenderweergave, bureaukaarten, een strakke boekingsstroom. Niets daarvan hoeft te veranderen om een overlap-bug zoals deze te herstellen. De herstelling leeft volledig in de backend-logica en het databaseschema dat bepaalt wat telt als een conflict. Manifera's kantoor in Amsterdam aan de Herengracht 420 heeft ingenieurs die gespecialiseerd zijn in exact dit soort chirurgische backend-correcties, waardoor uw bestaande frontend ongemoeid blijft. Als u een duidelijk beeld wilt van wat een herstelling zoals deze voor uw specifieke app zou kosten, [verken LaunchStudio's pakketten met vaste omvang](https://launchstudio.eu/nl/#packages) voordat u zich aan iets verbindt.
 
 ## Overlapcontroles moeten bij elke bewerking draaien, niet alleen bij het aanmaken
 

@@ -12,10 +12,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "Where 'AI in SaaS' Belongs in Your Architecture Diagram (and Where It Doesn't)",
   "description": "Adding ai in saas products safely is a placement problem as much as a feature problem. Here's where an AI call belongs in your request path, and where it becomes a liability.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-in-saas-architecture-diagram" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-in-saas-architecture-diagram" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Bij laag verkeer is een trage AI-aanroep inline met de kernlogica een klein onge
 
 "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën naar software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. Wij hebben elf jaar ervaring in precies dat," zegt Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera. Het correct plaatsen van AI in een SaaS-architectuurdiagram is precies dit soort volwassenheidsvraag die hij beschrijft — de functie werkt al; de vraag is of hij zodanig is ingebouwd dat hij schaal kan overleven.
 
-Onze engineers gevestigd in Singapore herzien regelmatig precies deze grens voor scale-up-oprichters die tijdens hun eerste bouw een AI-functie inline hebben ingebouwd en nu zien dat deze de kernbetrouwbaarheid onder echte belasting bedreigt. Heeft uw product een AI-functie die zich in een kritiek verzoekpad bevindt, dan kunt u [met een engineer praten](https://launchstudio.eu/en/#contact) over waar deze daadwerkelijk thuishoort. Voor meer over hoe Manifera dit soort architecturaal werk benadert, zie [ons portfolio](https://www.manifera.com/portfolio/).
+Onze engineers gevestigd in Singapore herzien regelmatig precies deze grens voor scale-up-oprichters die tijdens hun eerste bouw een AI-functie inline hebben ingebouwd en nu zien dat deze de kernbetrouwbaarheid onder echte belasting bedreigt. Heeft uw product een AI-functie die zich in een kritiek verzoekpad bevindt, dan kunt u [met een engineer praten](https://launchstudio.eu/nl/#contact) over waar deze daadwerkelijk thuishoort. Voor meer over hoe Manifera dit soort architecturaal werk benadert, zie [ons portfolio](https://www.manifera.com/portfolio/).
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelpersona: CISO / VP of Engineering
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CISO / VP of Engineering
   "datePublished": "2026-12-16",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/security-in-ai"
+    "@id": "https://launchstudio.eu/nl/blog/security-in-ai"
   }
 }
 </script>
@@ -60,7 +60,7 @@ In een naïeve AI-app halen ontwikkelaars vaak grote brokken vector-data op en s
 
 U kunt een AI-applicatie niet beveiligen door simpelweg in de prompt te vragen "veilig te zijn". Beveiliging moet op infrastructuurniveau worden afgedwongen:
 
-[LaunchStudio](https://launchstudio.eu/en/), gedragen door de security-experts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt "Zero Trust" AI-architecturen:
+[LaunchStudio](https://launchstudio.eu/nl/), gedragen door de security-experts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt "Zero Trust" AI-architecturen:
 1. **De LLM-Firewall (Guardrails):** Implementatie van semantische firewalls (NeMo Guardrails of Llama Guard) die binnenkomende prompts analyseren op injecties en kwaadwillende intenties *voordat* ze het hoofdmodel bereiken.
 2. **Row Level Security (RLS) voor Vectoren:** Wij filteren tenant-data niet in de applicatiecode, maar dwingen strikte RLS af direct in de PostgreSQL/pgvector database. Zelfs als het model hallucineert, weigert de database fysiek de data van andere tenants omdat de sessie gekoppeld is aan het JWT-token van de gebruiker.
 3. **Data Loss Prevention (DLP) Proxies:** Uitgaande AI-antwoorden passeren een DLP-middleware die BSN-nummers, creditcardgegevens en bedrijfsgeheimen automatisch maskeert voordat ze naar de browser worden gestuurd.

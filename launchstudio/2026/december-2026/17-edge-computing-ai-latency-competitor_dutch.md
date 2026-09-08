@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-12-17",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/edge-computing-ai-latency-competitor"
+    "@id": "https://launchstudio.eu/nl/blog/edge-computing-ai-latency-competitor"
   }
 }
 </script>
@@ -62,9 +62,9 @@ Edge computing verlaagt de *netwerklatency* — de tijd die data nodig heeft om 
 
 Europese AI-oprichters die bouwen voor een Europese doelgroep lopen tegen een specifiek probleem aan: veel AI-providers en clouddiensten staan standaard ingesteld op Amerikaanse datacenters. Dit voegt aan élk verzoek trans-Atlantische netwerklatency toe. LaunchStudio en Manifera, met hoofdkantoor in Amsterdam, richten deployments bewust in met Europese edge-locaties en database-replica's. Dit minimaliseert de wachttijd en waarborgt tevens de AVG-dataresidentie.
 
-[LaunchStudio](https://launchstudio.eu/en/) zet Manifera's 11+ jaar software-ervaring in om edge deployments vlekkeloos te configureren — een van die cruciale technische stappen die een snelle, productierijpe AI-app onderscheidt van een haperend prototype.
+[LaunchStudio](https://launchstudio.eu/nl/) zet Manifera's 11+ jaar software-ervaring in om edge deployments vlekkeloos te configureren — een van die cruciale technische stappen die een snelle, productierijpe AI-app onderscheidt van een haperend prototype.
 
-[Laat uw deployment-architectuur reviewen](https://launchstudio.eu/en/#contact) op latency vóórdat het u gebruikers kost.
+[Laat uw deployment-architectuur reviewen](https://launchstudio.eu/nl/#contact) op latency vóórdat het u gebruikers kost.
 
 ## Het Latency-Budget: Waar de Milliseconden Daadwerkelijk Blijven
 

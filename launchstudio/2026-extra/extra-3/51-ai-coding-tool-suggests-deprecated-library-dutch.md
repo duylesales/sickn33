@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-coding-tool-suggests-deprecated-library"
+    "@id": "https://launchstudio.eu/nl/blog/ai-coding-tool-suggests-deprecated-library"
   }
 }
 </script>
@@ -57,9 +57,9 @@ Het verifiëren van elke significante afhankelijkheid die een AI-tool voorstelt 
 
 Deze specifieke controle – het verifiëren van de actualiteit van een suggestie op het moment van overname – vult de periodieke afhankelijkheidsaudit die elders in bredere richtlijnen wordt behandeld aan in plaats van deze te vervangen. Een pakket dat oprecht actueel was bij overname kan later namelijk alsnog verouderd raken, wat dezelfde voortdurende waakzaamheid vereist, ongeacht hoe zorgvuldig de initiële overnamebeslissing is gemaakt.
 
-[LaunchStudio](https://launchstudio.eu/en/) controleert zowel de actualiteit van door AI voorgestelde afhankelijkheden bij overname als hun voortdurende onderhoudsstatus in de loop van de tijd. Hiermee wordt deze specifieke verouderingskloof gedicht naast de bredere afhankelijkheidsaudit die gedurende productieverharding wordt behandeld, ondersteund door Manifera's bredere engineering-discipline die op de hoogte blijft van evoluerende ecosysteem-standaarden over alle opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) controleert zowel de actualiteit van door AI voorgestelde afhankelijkheden bij overname als hun voortdurende onderhoudsstatus in de loop van de tijd. Hiermee wordt deze specifieke verouderingskloof gedicht naast de bredere afhankelijkheidsaudit die gedurende productieverharding wordt behandeld, ondersteund door Manifera's bredere engineering-discipline die op de hoogte blijft van evoluerende ecosysteem-standaarden over alle opgeleverde projecten.
 
-[Laat de voorgestelde afhankelijkheden van uw AI-tool controleren tegen wat daadwerkelijk actueel is](https://launchstudio.eu/en/#calculator) — een zelfverzekerde aanbeveling en een actuele aanbeveling zijn niet automatisch dezelfde claim.
+[Laat de voorgestelde afhankelijkheden van uw AI-tool controleren tegen wat daadwerkelijk actueel is](https://launchstudio.eu/nl/#calculator) — een zelfverzekerde aanbeveling en een actuele aanbeveling zijn niet automatisch dezelfde claim.
 
 ## Niet alle verouderingswaarschuwingen betekenen hetzelfde: Een kader voor wat eerst te herstellen
 

@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Een AI-code tool kiezen in Nieuwegein: Wat er daadwerkelijk toe doet bij de lancering",
   "description": "Een vergelijking van Lovable, Bolt, Cursor en v0 voor Nieuwegeinse oprichters, gericht op welke factoren er daadwerkelijk toe doen zodra u de prototypefase voorbij bent en afkoerst op de lancering.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-code-tool-nieuwegein" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-code-tool-nieuwegein" }
 }
 </script>
 

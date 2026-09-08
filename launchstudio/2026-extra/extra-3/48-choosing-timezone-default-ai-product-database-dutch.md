@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/choosing-timezone-default-ai-product-database"
+    "@id": "https://launchstudio.eu/nl/blog/choosing-timezone-default-ai-product-database"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Het opslaan van alle tijdstempels in UTC (Coordinated Universal Time) in de data
 
 Het vanaf het allereerste begin van een databaseschema instellen van opslag in UTC kost in feite niets extra's – het is simpelweg een andere standaardconventie die vanaf dag één consistent wordt toegepast. Het achteraf aanpassen van een al live product met opgebouwde tijdstempelgegevens in een inconsistente of lokale tijdindeling vereist een echte, zorgvuldige datamigratie. Dit spiegelt het "goedkoper om vroeg aan te pakken"-patroon dat in bredere richtlijnen wordt behandeld met betrekking tot andere architectonische beslissingen.
 
-[LaunchStudio](https://launchstudio.eu/en/) stelt UTC-eerst tijdstempelafhandeling in en verifieert deze als een standaard onderdeel van productieverharding. Wij controleren op exact de inconsistenties en patronen voor opslag in lokale tijd die AI-gegenereerde code regelmatig introduceert, ondersteund door Manifera's bredere engineering-discipline die gevestigde sectorconventies consistent toepast over elk project.
+[LaunchStudio](https://launchstudio.eu/nl/) stelt UTC-eerst tijdstempelafhandeling in en verifieert deze als een standaard onderdeel van productieverharding. Wij controleren op exact de inconsistenties en patronen voor opslag in lokale tijd die AI-gegenereerde code regelmatig introduceert, ondersteund door Manifera's bredere engineering-discipline die gevestigde sectorconventies consistent toepast over elk project.
 
-[Laat uw tijdstempelafhandeling controleren voordat het een echt migratieprobleem wordt](https://launchstudio.eu/en/#calculator) — deze specifieke beslissing is goedkoop om vroeg goed te krijgen en kostbaar om later te herstellen.
+[Laat uw tijdstempelafhandeling controleren voordat het een echt migratieprobleem wordt](https://launchstudio.eu/nl/#calculator) — deze specifieke beslissing is goedkoop om vroeg goed te krijgen en kostbaar om later te herstellen.
 
 ## Voorbij opslag: Andere tijdbeslissingen die AI-gegenereerde code de neiging heeft over te slaan
 

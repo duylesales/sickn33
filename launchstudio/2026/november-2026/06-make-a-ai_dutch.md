@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-11-06",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/make-a-ai"
+    "@id": "https://launchstudio.eu/nl/blog/make-a-ai"
   }
 }
 </script>
@@ -109,7 +109,7 @@ Dit is de kernvraag die het succes van uw startup bepaalt: wilt u de komende dri
 
 Beide routes zijn mogelijk. Maar voor de meeste niet-technische oprichters die AI-tools kozen juist om snel te bouwen zonder programmeur te worden, is het zelf bouwen van infrastructuur een gevaarlijke valkuil. Het vreet uw meest kostbare bezit op — tijd — aan technische problemen die al lang zijn opgelost.
 
-[LaunchStudio](https://launchstudio.eu/en/) is opgericht om oprichters hun tijd terug te geven. Als initiatief van [Manifera](https://www.manifera.com/), met meer dan tien jaar ervaring in maatwerksoftware vanuit Amsterdam, Singapore en Ho Chi Minhstad, neemt LaunchStudio de volledige omzet-stack uit handen. Zo kunt u zich focussen op product-market fit, klantwerving en groei.
+[LaunchStudio](https://launchstudio.eu/nl/) is opgericht om oprichters hun tijd terug te geven. Als initiatief van [Manifera](https://www.manifera.com/), met meer dan tien jaar ervaring in maatwerksoftware vanuit Amsterdam, Singapore en Ho Chi Minhstad, neemt LaunchStudio de volledige omzet-stack uit handen. Zo kunt u zich focussen op product-market fit, klantwerving en groei.
 
 De rekensom is helder: drie maanden zelf infrastructuur leren kost €0 aan directe uitgaven, maar levert €0 omzet op en brengt aanzienlijke opportuniteitskosten met zich mee. Drie weken met LaunchStudio kost tussen de €800 en €7.500, maar u bent live en genereert omzet in week vier.
 
@@ -128,7 +128,7 @@ Uw applicatie wordt live gezet op productie met uw eigen domein, SSL, monitoring
 
 Herre Roelevink, oprichter van Manifera en bedenker van LaunchStudio nadat hij zag hoe honderden prototypes strandden op infrastructuur, verwoordt het als volgt: *"Wij behouden uw frontend. Wij bouwen uitsluitend wat nodig is voor productie. U gaat razendsnel live."*
 
-[Bereken uw projectkosten](https://launchstudio.eu/#calculator) of [plan een gratis kennismakingsgesprek van 15 minuten](https://launchstudio.eu/en/#contact).
+[Bereken uw projectkosten](https://launchstudio.eu/#calculator) of [plan een gratis kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

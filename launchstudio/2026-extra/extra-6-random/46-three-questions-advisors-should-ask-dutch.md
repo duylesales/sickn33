@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "De drie vragen die elke adviseur een AI-native oprichter zou moeten stellen (en zelden stelt)",
   "description": "Drie vragen die startupadviseurs zelden stellen aan ai native oprichters over gegevenseigendom en controle over infrastructuur, en waarom die lacune meestal opduikt op het slechtst denkbare moment.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/three-questions-advisors-should-ask" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/three-questions-advisors-should-ask" }
 }
 </script>
 
@@ -53,7 +53,7 @@ Die lacune bleef onzichtbaar tot een veelbelovende partnerschapskans overging in
 
 De waarde van deze drie vragen zit er niet in dat ze op dag één perfecte antwoorden nodig hebben. Het zit erin dat ze gesteld — en eerlijk beantwoord, zelfs als het eerlijke antwoord "we moeten dit nog oplossen" is — een onzichtbaar risico veranderen in een bekend, aanpakbaar risico. Een oprichter die kan zeggen "we hebben onze infrastructuureigendom en gegevenscontrole beoordeeld, en dit is onze opzet" komt due diligence binnen in een compleet andere positie dan iemand die de vraag voor het eerst in die kamer hoort.
 
-Ons team, gevestigd in Ho Chi Minh-stad samen met collega's in Amsterdam en Singapore, werkt met oprichters specifiek aan het concreet maken van deze drie antwoorden — echt infrastructuureigendom, duidelijke gegevenscontrole, en een gedocumenteerd pad vooruit, ongeacht wat een bepaalde AI-tool vervolgens doet. LaunchStudio wordt mogelijk gemaakt door Manifera, een bedrijf met meer dan 11 jaar ervaring in productie-engineering over meer dan 160 opgeleverde projecten, en dit soort eigendomsverheldering is een routineonderdeel van het productieklaar maken van een project. Wilt u een rechtstreeks antwoord op deze drie vragen over uw eigen product, dan kunt u [een gratis intakegesprek van 15 minuten boeken](https://launchstudio.eu/en/#contact).
+Ons team, gevestigd in Ho Chi Minh-stad samen met collega's in Amsterdam en Singapore, werkt met oprichters specifiek aan het concreet maken van deze drie antwoorden — echt infrastructuureigendom, duidelijke gegevenscontrole, en een gedocumenteerd pad vooruit, ongeacht wat een bepaalde AI-tool vervolgens doet. LaunchStudio wordt mogelijk gemaakt door Manifera, een bedrijf met meer dan 11 jaar ervaring in productie-engineering over meer dan 160 opgeleverde projecten, en dit soort eigendomsverheldering is een routineonderdeel van het productieklaar maken van een project. Wilt u een rechtstreeks antwoord op deze drie vragen over uw eigen product, dan kunt u [een gratis intakegesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

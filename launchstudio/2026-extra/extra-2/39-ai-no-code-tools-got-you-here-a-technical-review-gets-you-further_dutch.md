@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-30",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-no-code-tools-got-you-here-a-technical-review-gets-you-further"
+    "@id": "https://launchstudio.eu/nl/blog/ai-no-code-tools-got-you-here-a-technical-review-gets-you-further"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Voorbij de algemene ernst van een kloof in gegevensisolatie, omvat een berichten
 
 ## Wat het herstellen hiervan vereist
 
-Een correcte herstelling voegt een expliciete deelnemerscontrole toe aan elk verzoek om berichten en gesprekken op te halen. Het bevestigt dat de aanvrager oprecht een van de daadwerkelijke deelnemers van het gesprek is voordat er iets wordt geretourneerd. [LaunchStudio](https://launchstudio.eu/en/) auditeert exact dit soort functies voor oprichters die gebouwd hebben met no-code en AI-gebaseerde tools, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van veilige communicatiefuncties voor meerdere partijen.
+Een correcte herstelling voegt een expliciete deelnemerscontrole toe aan elk verzoek om berichten en gesprekken op te halen. Het bevestigt dat de aanvrager oprecht een van de daadwerkelijke deelnemers van het gesprek is voordat er iets wordt geretourneerd. [LaunchStudio](https://launchstudio.eu/nl/) auditeert exact dit soort functies voor oprichters die gebouwd hebben met no-code en AI-gebaseerde tools, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van veilige communicatiefuncties voor meerdere partijen.
 
 Manifera's audits voor berichten en toegangsbeheer worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Deel een link naar uw prototype — we bekijken het gratis](https://launchstudio.eu/en/#contact).
+[Deel een link naar uw prototype — we bekijken het gratis](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

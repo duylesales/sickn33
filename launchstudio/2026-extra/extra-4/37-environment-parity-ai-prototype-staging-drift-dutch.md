@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/environment-parity-ai-prototype-staging-drift"
+    "@id": "https://launchstudio.eu/nl/blog/environment-parity-ai-prototype-staging-drift"
   }
 }
 </script>
@@ -66,7 +66,7 @@ De herstelling is niet ingewikkeld, maar het vereist discipline die AI-coderings
 
 Een minimale versie hiervan vereist geen ingewikkeld DevOps-platform – zelfs een ingecheckt `.env.example`-bestand per omgeving, beoordeeld bij elke uitrol, sluit het grootste deel van de kloof. Wat er toe doet is dat elk verschil tussen omgevingen een bewuste, gedocumenteerde keuze is, en niet een ongeluk dat niemand zich herinnert te hebben gemaakt. Onze ingenieurs, werkend vanuit het kantoor in Amsterdam aan de Herengracht 420, koppelen dit doorgaans aan een controlelijst vóór de uitrol die de omgevingsconfiguratie automatisch vergelijkt, zodat afwijkingen worden opgevangen vóór een lancering, en niet tijdens een lancering.
 
-Als uw staging-omgeving u ooit heeft verrast door niet overeen te komen met productie, omvat [ons proces](https://launchstudio.eu/en/#process) exact dit soort omgevingsaudit als onderdeel van het lanceringsklaar maken van een app.
+Als uw staging-omgeving u ooit heeft verrast door niet overeen te komen met productie, omvat [ons proces](https://launchstudio.eu/nl/#process) exact dit soort omgevingsaudit als onderdeel van het lanceringsklaar maken van een app.
 
 ## Configuratie-als-code lost afwijking op — Als geheimen niet mee de repository in gaan
 

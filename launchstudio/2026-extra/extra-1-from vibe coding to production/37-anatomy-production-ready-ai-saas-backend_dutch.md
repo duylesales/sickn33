@@ -45,9 +45,9 @@ Een gat in een lagere laag ondermijnt de waarde van verharding erboven — oprec
 
 Typisch: laag 4 (bedrijfslogica) is oprecht sterk, aangezien het is wat de AI-tool het meest direct geoptimaliseerd is om goed te genereren. Lagen 1 tot en met 3 (geheimen, toegangscontrole, data) hebben doorgaans echte gaten, om de specifieke redenen doorheen deze serie behandeld. Lagen 5 tot en met 7 (externe diensten, testen, observability) zijn vaak volledig afwezig, niet alleen zwak, aangezien ze doelbewuste toevoeging vereisen voorbij wat een prompt die kernfunctionaliteit beschrijft natuurlijk produceert.
 
-[LaunchStudio](https://launchstudio.eu/en/) bouwt precies deze volledige architectuur rond jouw bestaande bedrijfslogica — het verharden van lagen 1 tot en met 3, het robuust integreren van laag 5, en het toevoegen van lagen 6 en 7 vanaf nul waar ze nog niet bestaan — gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) bouwt precies deze volledige architectuur rond jouw bestaande bedrijfslogica — het verharden van lagen 1 tot en met 3, het robuust integreren van laag 5, en het toevoegen van lagen 6 en 7 vanaf nul waar ze nog niet bestaan — gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
 
-[Laat jouw specifieke backend mappen tegen deze volledige architectuur](https://launchstudio.eu/en/#calculator) — zie precies welke lagen werk nodig hebben en welke al solide zijn.
+[Laat jouw specifieke backend mappen tegen deze volledige architectuur](https://launchstudio.eu/nl/#calculator) — zie precies welke lagen werk nodig hebben en welke al solide zijn.
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/app-store-review-rejection-ai-built-mobile"
+    "@id": "https://launchstudio.eu/nl/blog/app-store-review-rejection-ai-built-mobile"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Een afwijzingsbestendige account-verwijderstroom is niet zomaar een knop. Het mo
 
 Dit is het soort platformspecifieke vereiste dat niets te maken heeft met de vraag of uw code goed geschreven is, en alles met het door en door kennen van de App Store-beoordelingsrichtlijnen. LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters. Onderdeel daarvan is een nalevingsstap vóór de indiening die controleert op exact deze categorie van kloven – de vereisten die in Apple's documentatie leven, en niet in de functielijst van uw app. Onze ingenieurs, werkend vanuit Manifera's ontwikkelingscentrum in Ho Chi Minh-stad, handelen deze beoordeling af als een standaard onderdeel van het productie-gereed maken van een met AI gebouwde app, naast de bredere beveiligings- en gegevensverwerkingscontroles die mobiele apps nodig hebben vóór de lancering.
 
-Vóór uw volgende indiening is het de moeite waard om iemand [door uw app te laten lopen tegen Apple's daadwerkelijke controlelijst](https://launchstudio.eu/en/#contact) in plaats van er op de harde manier een tweede keer achter te komen.
+Vóór uw volgende indiening is het de moeite waard om iemand [door uw app te laten lopen tegen Apple's daadwerkelijke controlelijst](https://launchstudio.eu/nl/#contact) in plaats van er op de harde manier een tweede keer achter te komen.
 
 ## Het verwijderen van het account annuleert het abonnement niet
 

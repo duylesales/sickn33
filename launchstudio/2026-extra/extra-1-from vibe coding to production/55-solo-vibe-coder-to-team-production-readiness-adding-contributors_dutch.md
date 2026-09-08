@@ -33,9 +33,9 @@ Elke nieuwe medewerker, vooral een die onbekend is met de specifieke patronen en
 
 Behandel de toevoeging van elke tweede medewerker als een doelbewuste trigger om te formaliseren wat eerder informeel werkte: een echte CI-pipeline zonder uitzondering afgedwongen, een daadwerkelijke codereviewpraktijk (zelfs lichtgewicht), expliciete in plaats van impliciete toegangscontrole, en genoeg documentatie zodat de onboarding van een nieuw teamlid niet volledig afhangt van synchrone, ad hoc uitleg van de founder.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichtende teams precies deze teamschaal-productiegereedheidspraktijken te formaliseren naarmate ze voorbij een solo founder groeien, gesteund door Manifera's ervaring met het ondersteunen van AI-native teams door deze specifieke overgang.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichtende teams precies deze teamschaal-productiegereedheidspraktijken te formaliseren naarmate ze voorbij een solo founder groeien, gesteund door Manifera's ervaring met het ondersteunen van AI-native teams door deze specifieke overgang.
 
-[Laat jouw teamschaal-productiepraktijken formaliseren voordat jouw tweede medewerker aansluit](https://launchstudio.eu/en/#calculator) — verschillende gaten die solo tolereerbaar waren worden oprecht noodzakelijk zodra ze dat niet meer zijn.
+[Laat jouw teamschaal-productiepraktijken formaliseren voordat jouw tweede medewerker aansluit](https://launchstudio.eu/nl/#calculator) — verschillende gaten die solo tolereerbaar waren worden oprecht noodzakelijk zodra ze dat niet meer zijn.
 
 ## Echt voorbeeld
 

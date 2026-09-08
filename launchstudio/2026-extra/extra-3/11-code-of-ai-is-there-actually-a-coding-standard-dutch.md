@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/code-of-ai-is-there-actually-a-coding-standard"
+    "@id": "https://launchstudio.eu/nl/blog/code-of-ai-is-there-actually-a-coding-standard"
   }
 }
 </script>
@@ -51,9 +51,9 @@ De consistentie bestaat omdat de onderliggende faalmodi zelf consistent zijn –
 
 Het ontbreken van een officiële "code van AI" betekent niet dat er geen betekenisvolle manier is om te evalueren of uw code goed genoeg is – het betekent dat de evaluatiecriteria leven in de ervaring van praktijkmensen en patroonherkenning in plaats van in een gepubliceerd document. Dat is precies waarom werken met iemand die die specifieke, opgebouwde ervaring heeft zwaarder weegt in deze categorie dan in een domein met een formele, controleerbare norm die iedereen simpelweg zelf zou kunnen lezen en toepassen.
 
-[LaunchStudio](https://launchstudio.eu/en/) past precies deze norm op praktijkniveau en op basis van patronen consistent toe bij elke opdracht – niet omdat het wordt gedicteerd door een extern orgaan, maar omdat de engineeringteams van Manifera dezelfde terugkerende hiaten in meer dan 160 opgeleverde projecten van dichtbij hebben gezien om precies te weten wat "oprecht productierijp" daadwerkelijk vereist, onafhankelijk van een formele certificering die voor deze categorie nog niet bestaat.
+[LaunchStudio](https://launchstudio.eu/nl/) past precies deze norm op praktijkniveau en op basis van patronen consistent toe bij elke opdracht – niet omdat het wordt gedicteerd door een extern orgaan, maar omdat de engineeringteams van Manifera dezelfde terugkerende hiaten in meer dan 160 opgeleverde projecten van dichtbij hebben gezien om precies te weten wat "oprecht productierijp" daadwerkelijk vereist, onafhankelijk van een formele certificering die voor deze categorie nog niet bestaat.
 
-[Laat uw code evalueren tegen de norm die er daadwerkelijk toe doet](https://launchstudio.eu/en/#contact) — informeel betekent niet inconsistent zodra u werkt met mensen die het patroon vaak genoeg hebben gezien.
+[Laat uw code evalueren tegen de norm die er daadwerkelijk toe doet](https://launchstudio.eu/nl/#contact) — informeel betekent niet inconsistent zodra u werkt met mensen die het patroon vaak genoeg hebben gezien.
 
 ## Een praktische checklist: wat een ervaren beoordeling daadwerkelijk controleert
 

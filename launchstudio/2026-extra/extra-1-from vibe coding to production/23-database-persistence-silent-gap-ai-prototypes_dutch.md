@@ -33,9 +33,9 @@ Veel AI-codeertools kiezen standaard de snelste, simpelste beschikbare opslagaan
 
 Voorbij simpelweg "een echte database gebruiken" (PostgreSQL, MongoDB, en vergelijkbare zijn de standaard productiekeuzes), vereist duurzaamheid: geautomatiseerde, regelmatig geplande back-ups; een back-upretentiebeleid passend bij het belang van jouw data; en, cruciaal, periodiek hersteltesten, aangezien een back-upproces dat nooit daadwerkelijk gebruikt is om data te herstellen een back-upproces is waarvan de betrouwbaarheid in de echte wereld oprecht ongeverifieerd blijft.
 
-[LaunchStudio](https://launchstudio.eu/en/) verifieert en, waar nodig, migreert jouw dataopslag naar oprecht duurzame, correct back-upte infrastructuur als standaardonderdeel van elke Launch Ready-opdracht, gesteund door Manifera's operationele ervaring met het draaien van productiedatabases over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) verifieert en, waar nodig, migreert jouw dataopslag naar oprecht duurzame, correct back-upte infrastructuur als standaardonderdeel van elke Launch Ready-opdracht, gesteund door Manifera's operationele ervaring met het draaien van productiedatabases over 160+ opgeleverde projecten.
 
-[Ontdek of jouw data daadwerkelijk een herstart overleeft, niet alleen een verversing](https://launchstudio.eu/en/#calculator) — de verversingstest vertelt je minder dan het aanvoelt.
+[Ontdek of jouw data daadwerkelijk een herstart overleeft, niet alleen een verversing](https://launchstudio.eu/nl/#calculator) — de verversingstest vertelt je minder dan het aanvoelt.
 
 ## Echt voorbeeld
 

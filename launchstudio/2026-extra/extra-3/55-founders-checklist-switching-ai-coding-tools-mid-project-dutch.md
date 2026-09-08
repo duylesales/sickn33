@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/founders-checklist-switching-ai-coding-tools-mid-project"
+    "@id": "https://launchstudio.eu/nl/blog/founders-checklist-switching-ai-coding-tools-mid-project"
   }
 }
 </script>
@@ -51,9 +51,9 @@ Elk AI-coderingshulpmiddel heeft zijn eigen karakteristieke patronen en standaar
 
 Functioneel testen na een tool-wissel bevestigt dat het product nog steeds doet wat het hoort te doen – het bevestigt niet de onderliggende consistentie en beveiligingshouding over de codebase die nu een gemengde oorsprong heeft. Dit is exact het soort kloof dat in bredere richtlijnen wordt behandeld en dat functionele correctheid alleen niet naar boven brengt.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt specifiek codebases met een gemengde oorsprong die het gevolg zijn van tool-wissels halverwege een project op exact dit risico van inconsistentie en redundantie. Wij passen dezelfde systematische verificatie toe ongeacht hoeveel verschillende tools hebben bijgedragen aan de geschiedenis van een bepaalde codebase, ondersteund door Manifera's bredere ervaring met het werken over oprecht gevarieerde, soms gemengde klantcodebases.
+[LaunchStudio](https://launchstudio.eu/nl/) beoordeelt specifiek codebases met een gemengde oorsprong die het gevolg zijn van tool-wissels halverwege een project op exact dit risico van inconsistentie en redundantie. Wij passen dezelfde systematische verificatie toe ongeacht hoeveel verschillende tools hebben bijgedragen aan de geschiedenis van een bepaalde codebase, ondersteund door Manifera's bredere ervaring met het werken over oprecht gevarieerde, soms gemengde klantcodebases.
 
-[Laat uw codebase van gemengde tools controleren op consistentie, en niet alleen op functionaliteit](https://launchstudio.eu/en/#calculator) — een tool-wissel die "nog steeds werkt" is niet noodzakelijkerwijs geverifieerd op wat er onder de motorkap daadwerkelijk is veranderd.
+[Laat uw codebase van gemengde tools controleren op consistentie, en niet alleen op functionaliteit](https://launchstudio.eu/nl/#calculator) — een tool-wissel die "nog steeds werkt" is niet noodzakelijkerwijs geverifieerd op wat er onder de motorkap daadwerkelijk is veranderd.
 
 ## Zelf-test: Signalen dat uw codebase stilletjes is afgeweken na een tool-wissel
 

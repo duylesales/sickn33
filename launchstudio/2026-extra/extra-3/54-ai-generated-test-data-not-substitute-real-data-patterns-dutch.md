@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-generated-test-data-not-substitute-real-data-patterns"
+    "@id": "https://launchstudio.eu/nl/blog/ai-generated-test-data-not-substitute-real-data-patterns"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Door AI gegenereerde testgegevens zijn een oprecht nuttige verbetering tijdens v
 
 Het gebruiken van door AI gegenereerde testgegevens als een echte verbetering tijdens ontwikkeling voor de lancering, terwijl u specifiek plant om over te stappen naar testen geïnformeerd door echte, geanonimiseerde gebruikspatronen zodra er echte gegevens bestaan. Doe dit in plaats van het behandelen van door AI gegenereerde synthetische gegevens als een permanente, volledig voldoende vervanging voor de echte ervaring op welk stadium van het leven van een product dan ook.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters hun strategie voor testgegevens gepast te categoriseren – door AI gegenereerde synthetische gegevens voor de lancering, overstappend naar testen geïnformeerd door echt gebruik zodra er echte gegevens bestaan. Wij herkennen de specifieke beperkingen van synthetische gegevens op elk stadium, ondersteund door Manifera's bredere engineering-discipline in het testen tegen oprecht representatieve omstandigheden.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters hun strategie voor testgegevens gepast te categoriseren – door AI gegenereerde synthetische gegevens voor de lancering, overstappend naar testen geïnformeerd door echt gebruik zodra er echte gegevens bestaan. Wij herkennen de specifieke beperkingen van synthetische gegevens op elk stadium, ondersteund door Manifera's bredere engineering-discipline in het testen tegen oprecht representatieve omstandigheden.
 
-[Laat uw strategie voor testgegevens beoordelen op het stadium waar uw product zich daadwerkelijk bevindt](https://launchstudio.eu/en/#calculator) — synthetische gegevens zijn een echte verbetering, geen permanente vervanging voor de echte ervaring.
+[Laat uw strategie voor testgegevens beoordelen op het stadium waar uw product zich daadwerkelijk bevindt](https://launchstudio.eu/nl/#calculator) — synthetische gegevens zijn een echte verbetering, geen permanente vervanging voor de echte ervaring.
 
 ## Vijf manieren om meer uit door AI gegenereerde testgegevens te halen voordat er echt gebruik bestaat
 

@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Wat AI-native daadwerkelijk betekent voor een oprichter in Zeist",
   "description": "Een op definities gebaseerde blik op wat het echt betekent om een AI-native oprichter te zijn, gebruikmakend van een Zeistse wellness-startup om te laten zien waar het label eindigt en de productierealiteit begint.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-native-zeist" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-native-zeist" }
 }
 </script>
 

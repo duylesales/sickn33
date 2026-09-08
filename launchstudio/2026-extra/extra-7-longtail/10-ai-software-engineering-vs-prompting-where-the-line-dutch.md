@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "AI-softwareengineering versus prompten: waar de grens daadwerkelijk ligt",
   "description": "AI-softwareengineering en uw weg naar een werkende app prompten worden voortdurend hetzelfde genoemd. Dat zijn ze niet, en het verschil doet ertoe zodra er echte gebruikers zijn.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-13",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-software-engineering-vs-prompting-where-the-line" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-software-engineering-vs-prompting-where-the-line" }
 }
 </script>
 
@@ -52,7 +52,7 @@ Er is een specifiek comfort dat voortkomt uit het kunnen wijzigen van een functi
 
 ## Hoe de echte grens er daadwerkelijk uitziet
 
-De eerlijke grens tussen prompten en engineering gaat niet over wie — of wat — het eerste concept van de code schrijft. Door AI gegenereerde eerste concepten zijn vaak oprecht goede startpunten. De grens gaat over wat er daarna gebeurt: verifieert iemand de faalmodi, de autorisatielogica, het gelijktijdigheidsgedrag, de dingen die niet naar boven komen totdat omstandigheden ontstaan die het happy path nooit creëert? De engineers achter LaunchStudio hebben al 160+ projecten opgeleverd voor enterprise-klanten — uw app voegt zich gewoon bij de lijst — en wat dat team toevoegt, is geen herschrijving van door AI gegenereerde logica, het is de beoordelings- en verhardingslaag die een werkende demo verandert in iets dat standhoudt onder echte, vijandige, gelijktijdige omstandigheden. Vanuit Manifera's technologiepraktijk — u kunt de stack en standaarden erachter bekijken op [Manifera's technologiepagina](https://www.manifera.com/about-us/manifera-technologies/) — is dat beoordelingsproces afgebakend op uw specifieke codebase, geen generieke checklist. Als u een eerlijk oordeel wilt over waar uw eigen project op die grens staat, kunt u [contact opnemen via de contactpagina van LaunchStudio](https://launchstudio.eu/en/#contact) met wat u tot nu toe gebouwd heeft.
+De eerlijke grens tussen prompten en engineering gaat niet over wie — of wat — het eerste concept van de code schrijft. Door AI gegenereerde eerste concepten zijn vaak oprecht goede startpunten. De grens gaat over wat er daarna gebeurt: verifieert iemand de faalmodi, de autorisatielogica, het gelijktijdigheidsgedrag, de dingen die niet naar boven komen totdat omstandigheden ontstaan die het happy path nooit creëert? De engineers achter LaunchStudio hebben al 160+ projecten opgeleverd voor enterprise-klanten — uw app voegt zich gewoon bij de lijst — en wat dat team toevoegt, is geen herschrijving van door AI gegenereerde logica, het is de beoordelings- en verhardingslaag die een werkende demo verandert in iets dat standhoudt onder echte, vijandige, gelijktijdige omstandigheden. Vanuit Manifera's technologiepraktijk — u kunt de stack en standaarden erachter bekijken op [Manifera's technologiepagina](https://www.manifera.com/about-us/manifera-technologies/) — is dat beoordelingsproces afgebakend op uw specifieke codebase, geen generieke checklist. Als u een eerlijk oordeel wilt over waar uw eigen project op die grens staat, kunt u [contact opnemen via de contactpagina van LaunchStudio](https://launchstudio.eu/nl/#contact) met wat u tot nu toe gebouwd heeft.
 
 ## Echt voorbeeld
 

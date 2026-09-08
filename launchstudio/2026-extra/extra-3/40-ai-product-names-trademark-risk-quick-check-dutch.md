@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-product-names-trademark-risk-quick-check"
+    "@id": "https://launchstudio.eu/nl/blog/ai-product-names-trademark-risk-quick-check"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Een naamconflict ontdekt vóór enige echte investering in de naam – vóór ma
 
 Zodra een naam deze lichtere, evenredige initiële controle overleeft en een oprichter klaar is om zich betekenisvol te verbinden – door te investeren in marketing, het aanvragen van de eigen merkregistratie van de oprichter, of het benaderen van investeerders – wordt een meer formeel, professioneel merkonderzoek een redelijke en evenredige volgende investering. Het is niet iets dat elke oprichter nodig heeft voordat hij een naam überhaupt overweegt tijdens het eerste brainstormen.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters door deze evenredige naamgevingsrisicocontrols te denken als onderdeel van bredere lanceringvoorbereidingsgesprekken, waarbij wordt gemarkeerd wanneer een naam meer formeel juridisch onderzoek rechtvaardigt vóór significante investeringen. Dit wordt ondersteund door Manifera's bredere ervaring in het helpen van oprichters om kostbare, vermijdbare fouten te voorkomen tijdens de vroegste, goedkoopst te herstellen fase van het bouwen van een bedrijf.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters door deze evenredige naamgevingsrisicocontrols te denken als onderdeel van bredere lanceringvoorbereidingsgesprekken, waarbij wordt gemarkeerd wanneer een naam meer formeel juridisch onderzoek rechtvaardigt vóór significante investeringen. Dit wordt ondersteund door Manifera's bredere ervaring in het helpen van oprichters om kostbare, vermijdbare fouten te voorkomen tijdens de vroegste, goedkoopst te herstellen fase van het bouwen van een bedrijf.
 
-[Controleer uw naam voordat u er uw merk omheen bouwt](https://launchstudio.eu/en/#contact) — domeinbeschikbaarheid en merkrechtelijke veiligheid zijn oprecht verschillende vragen.
+[Controleer uw naam voordat u er uw merk omheen bouwt](https://launchstudio.eu/nl/#contact) — domeinbeschikbaarheid en merkrechtelijke veiligheid zijn oprecht verschillende vragen.
 
 ## Vier merkrechtelijke risicocategorieën die oprichters consistent onderschatten
 

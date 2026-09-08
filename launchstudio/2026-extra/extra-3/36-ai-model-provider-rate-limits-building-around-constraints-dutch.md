@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-model-provider-rate-limits-building-around-constraints"
+    "@id": "https://launchstudio.eu/nl/blog/ai-model-provider-rate-limits-building-around-constraints"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Het simpelweg upgraden naar een hoger abonnement pakt het onmiddellijke plafond 
 
 Het controleren van de gedocumenteerde snelheidslimieten van uw specifieke AI-provider tegen een realistische schatting van uw piek in gelijktijdig gebruik – niet het gemiddelde gebruik, maar het drukste aannemelijke moment – is de directe manier om erachter te komen of deze beperking momenteel comfortabel is of al dicht bij een echt productierisico zit.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt de blootstelling aan snelheidslimieten van AI-providers en implementeert passende wachtrijen, herhalings- en verslechteringslogica als een standaard onderdeel van productieverharding. Wij behandelen deze beperking aan de leverancierszijde met dezelfde bewuste aandacht die wordt gegeven aan de eigen API-limieten van een product, ondersteund door Manifera's bredere ervaring in het ontwerpen rond externe afhankelijkheden die een klant niet beheert.
+[LaunchStudio](https://launchstudio.eu/nl/) beoordeelt de blootstelling aan snelheidslimieten van AI-providers en implementeert passende wachtrijen, herhalings- en verslechteringslogica als een standaard onderdeel van productieverharding. Wij behandelen deze beperking aan de leverancierszijde met dezelfde bewuste aandacht die wordt gegeven aan de eigen API-limieten van een product, ondersteund door Manifera's bredere ervaring in het ontwerpen rond externe afhankelijkheden die een klant niet beheert.
 
-[Ontdek of de betrouwbaarheid van uw product afhangt van een limiet die u nooit daadwerkelijk heeft gecontroleerd](https://launchstudio.eu/en/#calculator) — deze beperking zit volledig boven uw eigen snelheidslimieten.
+[Ontdek of de betrouwbaarheid van uw product afhangt van een limiet die u nooit daadwerkelijk heeft gecontroleerd](https://launchstudio.eu/nl/#calculator) — deze beperking zit volledig boven uw eigen snelheidslimieten.
 
 ## Het bouwen van een echte terugvaloptie: Wat redundantie met meerdere providers daadwerkelijk vereist
 

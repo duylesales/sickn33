@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI No-Code-tools brachten Delfzijlse oprichters tot hier. Een technische beoordeling brengt ze verder",
   "description": "AI no-code tools laten oprichters in Delfzijl werkende producten bouwen zonder ontwikkelaars in te huren. Dit is wat een technische beoordeling toevoegt zodra dat product stand moet houden in productie.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-no-code-delfzijl" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-no-code-delfzijl" }
 }
 </script>
 
@@ -40,7 +40,7 @@ Het is het waard om te begrijpen waarom dit gebeurt in plaats van het simpelweg 
 
 Dit is de fase waarin LaunchStudio doorgaans in beeld komt. Onze engineers hebben 160+ projecten opgeleverd voor enterprise-klanten, en de beoordeling die we uitvoeren op een no-code AI-product zoekt naar de specifieke gaten die deze platformen de neiging hebben achter te laten: authenticatie die niet daadwerkelijk overal wordt afgedwongen waar het zou moeten, bestandsafhandeling zonder validatie, ontbrekende rate limits, en databaseregels die losser zijn dan ze lijken. We herstellen deze achter de schermen, zonder de interface aan te raken die u al in v0 of een andere tool heeft gebouwd. Een typische beoordeling duurt een kwestie van dagen, en geen weken, precies omdat de frontend ongeroerd blijft — het werk concentreert zich uitsluitend op de laag die gebruikers nooit zien.
 
-Het team achter dit werk is deels gebaseerd op ons kantoor aan de Herengracht in Amsterdam, en coördineert engineeringbeoordelingen voor oprichters door het hele land — waaronder regelmatig oprichters die bouwen vanuit kleinere steden in de provincie Groningen zoals Delfzijl, waar toegang tot lokaal technisch talent schaarser is dan in de Randstad. U kunt het volledige proces uitgelegd zien op [onze procespagina](https://launchstudio.eu/en/#process), en voor een indruk van hoe Manifera technische opleveringen op grotere schaal draait, past onze [offshore software development](https://www.manifera.com/services/offshore-software-development/) praktijk dezelfde beoordelingsdiscipline toe op veel grotere trajecten.
+Het team achter dit werk is deels gebaseerd op ons kantoor aan de Herengracht in Amsterdam, en coördineert engineeringbeoordelingen voor oprichters door het hele land — waaronder regelmatig oprichters die bouwen vanuit kleinere steden in de provincie Groningen zoals Delfzijl, waar toegang tot lokaal technisch talent schaarser is dan in de Randstad. U kunt het volledige proces uitgelegd zien op [onze procespagina](https://launchstudio.eu/nl/#process), en voor een indruk van hoe Manifera technische opleveringen op grotere schaal draait, past onze [offshore software development](https://www.manifera.com/services/offshore-software-development/) praktijk dezelfde beoordelingsdiscipline toe op veel grotere trajecten.
 
 ## Een eenvoudige test voor Delfzijlse oprichters
 

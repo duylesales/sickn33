@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-12",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-changing-definition-of-mvp"
+    "@id": "https://launchstudio.eu/nl/blog/ai-changing-definition-of-mvp"
   }
 }
 </script>
@@ -58,9 +58,9 @@ Dit onderscheid is eveneens van groot belang voor investeerders. Een live produc
 
 ## Van AI-Demo naar Levensvatbaar MVP
 
-Deze transitie — van een feature-rijk AI-prototype naar een daadwerkelijk levensvatbaar, lanceerbaar product — is de specifieke kloof die [LaunchStudio](https://launchstudio.eu/en/) overbrugt. Ondersteund door Manifera's 11+ jaar software-engineeringervaring en 120+ ervaren softwareontwikkelaars, herbouwt het LaunchStudio-team het door u ontworpen product niet opnieuw. Het voegt de ontbrekende infrastructuurlaag toe die van uw AI-interface een echt product maakt dat betalende klanten kunnen gebruiken — doorgaans binnen één tot drie weken, voor €800 tot €7.500.
+Deze transitie — van een feature-rijk AI-prototype naar een daadwerkelijk levensvatbaar, lanceerbaar product — is de specifieke kloof die [LaunchStudio](https://launchstudio.eu/nl/) overbrugt. Ondersteund door Manifera's 11+ jaar software-engineeringervaring en 120+ ervaren softwareontwikkelaars, herbouwt het LaunchStudio-team het door u ontworpen product niet opnieuw. Het voegt de ontbrekende infrastructuurlaag toe die van uw AI-interface een echt product maakt dat betalende klanten kunnen gebruiken — doorgaans binnen één tot drie weken, voor €800 tot €7.500.
 
-[Bereken wat uw MVP nodig heeft om live te gaan](https://launchstudio.eu/en/#calculator) en bekijk exact welke infrastructuurkloof er nog ligt tussen uw prototype en uw eerste betalende klant.
+[Bereken wat uw MVP nodig heeft om live te gaan](https://launchstudio.eu/nl/#calculator) en bekijk exact welke infrastructuurkloof er nog ligt tussen uw prototype en uw eerste betalende klant.
 
 ## Een Zelfaudit voor Oprichters: Vijf Vragen om Echte Levensvatbaarheid te Toetsen
 

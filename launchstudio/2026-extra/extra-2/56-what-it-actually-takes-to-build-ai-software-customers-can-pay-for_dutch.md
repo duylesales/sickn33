@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "datePublished": "2026-08-04",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-it-actually-takes-to-build-ai-software-customers-can-pay-for"
+    "@id": "https://launchstudio.eu/nl/blog/what-it-actually-takes-to-build-ai-software-customers-can-pay-for"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Naarmate een SaaS-product schaalt en meer functies verzamelt, ontstaat er meer o
 
 ## Wat het op de juiste manier afhandelen hiervan vereist
 
-Een correcte beoordeling identificeert welke specifieke stukken gegevens oprecht client-side opgeslagen moeten worden. En voor alles wat gevoelig is, migreert het die opslag naar een juist geconfigureerde, beschermde cookie of een sessiereferentie aan de serverzijde. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort beoordeling van gegevensopslag aan de client-side uit, ondersteund door Manifera's 11+ jaar ervaring met veilige frontend-architectuur over productie-SaaS-producten.
+Een correcte beoordeling identificeert welke specifieke stukken gegevens oprecht client-side opgeslagen moeten worden. En voor alles wat gevoelig is, migreert het die opslag naar een juist geconfigureerde, beschermde cookie of een sessiereferentie aan de serverzijde. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort beoordeling van gegevensopslag aan de client-side uit, ondersteund door Manifera's 11+ jaar ervaring met veilige frontend-architectuur over productie-SaaS-producten.
 
 Manifera's beveiligingsbeoordelingen voor gegevensopslag in de frontend worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Klaar om te lanceren? Weken, geen maanden, van prototype tot productie](https://launchstudio.eu/en/#contact).
+[Klaar om te lanceren? Weken, geen maanden, van prototype tot productie](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

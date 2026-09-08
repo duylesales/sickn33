@@ -55,11 +55,11 @@ Zodra de moderne tussenlaag veilig verbonden is met de data, kunt u moeiteloos u
 
 Het verkopen van legacy-modernisering is buitengewoon winstgevend, maar de technische uitvoering vereist diepgaande enterprise backend-engineering. Dit kunt u niet overlaten aan een junior frontend-ontwikkelaar: een fout in de API-brug kan leiden tot datalekken of serveruitval van de klant.
 
-Dit is waar toonaangevende bureaus samenwerken met [LaunchStudio](https://launchstudio.eu/en/), met ervaren engineeringteams gevestigd aan de **Herengracht 420 in Amsterdam (1017 BZ)**, **100 Tras Street (#16-01, 100 AM) in Singapore** en aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam**.
+Dit is waar toonaangevende bureaus samenwerken met [LaunchStudio](https://launchstudio.eu/nl/), met ervaren engineeringteams gevestigd aan de **Herengracht 420 in Amsterdam (1017 BZ)**, **100 Tras Street (#16-01, 100 AM) in Singapore** en aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam**.
 
 Gesteund door **Manifera's ruim 11 jaar ervaring** in het ontrafelen en moderniseren van complexe bedrijfskritische legacy-systemen voor multinationals zoals Vodafone, TNO en CFLW, treden wij op als uw discrete, onzichtbare white-label engineeringpartner.
 
-Uw bureau ontwerpt de aantrekkelijke nieuwe gebruikersinterface en de AI-interactie; de software-architecten van LaunchStudio verzorgen het zware backend-werk. Wij bouwen de beveiligde API-bruggen naar de lokale databases van de klant, voeren de gefaseerde Strangler Fig migratie uit zónder downtime, en structureren de data zodanig dat uw AI-agents foutloos kunnen redeneren zonder hallucinaties. Wij leveren robuuste enterprise architectuur tegen circa 20% van de kosten van traditionele bureaus, zie onze [tarieven en pakketten](https://launchstudio.eu/en/#packages) voor heldere scopes.
+Uw bureau ontwerpt de aantrekkelijke nieuwe gebruikersinterface en de AI-interactie; de software-architecten van LaunchStudio verzorgen het zware backend-werk. Wij bouwen de beveiligde API-bruggen naar de lokale databases van de klant, voeren de gefaseerde Strangler Fig migratie uit zónder downtime, en structureren de data zodanig dat uw AI-agents foutloos kunnen redeneren zonder hallucinaties. Wij leveren robuuste enterprise architectuur tegen circa 20% van de kosten van traditionele bureaus, zie onze [tarieven en pakketten](https://launchstudio.eu/nl/#packages) voor heldere scopes.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -71,7 +71,7 @@ Uw bureau ontwerpt de aantrekkelijke nieuwe gebruikersinterface en de AI-interac
 - Een stapsgewijze aanpak voorkomt downtime, minimaliseert risico's en krijgt direct groen licht van enterprise IT-managers.
 - LaunchStudio levert de white-label enterprise engineering om antieke systemen veilig en betrouwbaar te koppelen aan moderne AI cloud-infrastructuur.
 
-[Transformeer legacy IT-blokkades in lucratieve softwarecontracten. Werk samen met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Transformeer legacy IT-blokkades in lucratieve softwarecontracten. Werk samen met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

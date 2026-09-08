@@ -16,7 +16,7 @@ Doelpersona: CTO / Technische Oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CTO / Technische Oprichter
   "datePublished": "2026-12-01",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-vulnerabilities"
+    "@id": "https://launchstudio.eu/nl/blog/ai-vulnerabilities"
   }
 }
 </script>
@@ -62,7 +62,7 @@ Wanneer u een model traint op eigen bedrijfsdata of een RAG-vectordatabase gebru
 
 Het bouwen van deze verdedigingsmechanismen vereist specialistische cybersecurity-engineering. AI-codegeneratoren bouwen geen RLS-beleid, Redis-ratelimiters of scanpijplijnen.
 
-[LaunchStudio](https://launchstudio.eu/en/), aangedreven door het security-team van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam (Herengracht 420) en engineers in Ho Chi Minhstad (Pho Quangstraat 10), maakt kwetsbare prototypes enterprise-proof:
+[LaunchStudio](https://launchstudio.eu/nl/), aangedreven door het security-team van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam (Herengracht 420) en engineers in Ho Chi Minhstad (Pho Quangstraat 10), maakt kwetsbare prototypes enterprise-proof:
 1. **API-Proxy Isolatie:** Directe browser-naar-LLM verbindingen worden vervangen door een beveiligde Node.js tussenlaag die invoer ontsmet en sleutels afschermt.
 2. **Token-Bewust Quotabeheer:** Redis-ratelimiters die verbruik monitoren op basis van werkelijke tokenvolumes om Denial of Wallet aanvallen af te slaan.
 3. **Multi-Tenancy op Databaseniveau:** Strikte RLS in PostgreSQL/Supabase die data-kruisbesmetting wiskundig uitsluit.

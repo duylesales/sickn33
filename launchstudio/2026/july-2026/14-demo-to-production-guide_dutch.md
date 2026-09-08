@@ -110,7 +110,7 @@ Weet wanneer er iets kapot gaat en bescherm uzelf op juridische wijze.
 | Toezicht & Juridisch | 1–2 dagen | 3–5 dagen |
 | **Totaal** | **1–3 weken** | **4–8 weken** |
 
-[LaunchStudio](https://launchstudio.eu/en/) verzorgt alle vijf fasen voor een vaste prijs van € 800 tot € 7.500, afhankelijk van de complexiteit van uw applicatie. We voltooien de transitie in 1 tot 3 weken, waarbij uw frontend precies blijft zoals u deze heeft gebouwd.
+[LaunchStudio](https://launchstudio.eu/nl/) verzorgt alle vijf fasen voor een vaste prijs van € 800 tot € 7.500, afhankelijk van de complexiteit van uw applicatie. We voltooien de transitie in 1 tot 3 weken, waarbij uw frontend precies blijft zoals u deze heeft gebouwd.
 
 ## Belangrijkste inzichten
 
@@ -128,7 +128,7 @@ Weet wanneer er iets kapot gaat en bescherm uzelf op juridische wijze.
 
 LaunchStudio verzorgt de volledige transitie. Beveiliging, betalingen, hosting, implementatie – vaste prijzen vanaf € 800.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf onder leiding van oprichter en directeur **Herre Roelevink**. Manifera combineert 'Nederlands management met Vietnamees meesterschap' en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420) en ontwikkelingscentra in **Singapore** en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf onder leiding van oprichter en directeur **Herre Roelevink**. Manifera combineert 'Nederlands management met Vietnamees meesterschap' en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420) en ontwikkelingscentra in **Singapore** en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Waarom oprichters 'AI-database' verwarren met 'database die toevallig AI gebruikt'",
   "description": "Een uitleg over het echte verschil tussen een 'AI-database' en een normale database met een chatlaag erbovenop, en waarom dat onderscheid belangrijk is voor back-ups, opschaling en beveiliging.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-database-vs-database-uses-ai" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-database-vs-database-uses-ai" }
 }
 </script>
 
@@ -48,7 +48,7 @@ Stel deze vier vragen over wat er daadwerkelijk onder uw product draait:
 
 Als u niet zeker minstens drie van deze vragen kunt beantwoorden, heeft u waarschijnlijk een conventionele database in een AI-kostuum — wat prima is, zolang u dat weet en de onderliggende persistentielaag met dezelfde ernst behandelt die elke productiedatabase verdient.
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring, en ons team — inclusief engineers werkzaam vanuit onze Singapore-hub die Zuidoost-Azië bedient — besteedt veel tijd aan precies dit soort audits: het scheiden van wat echt AI-infrastructuur is van wat een normale database is met een conversationele huid. Als u niet zeker weet welke van de twee u draait, kunt u [berekenen wat het kost om uw project goed te beveiligen](https://launchstudio.eu/en/#calculator) voordat u erachter komt op de harde manier. Voor teams die nieuwsgierig zijn hoe dit past in bredere aangepaste softwareontwikkeling, behandelt Manifera's [praktijk voor aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) hetzelfde terrein op zakelijke schaal.
+LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring, en ons team — inclusief engineers werkzaam vanuit onze Singapore-hub die Zuidoost-Azië bedient — besteedt veel tijd aan precies dit soort audits: het scheiden van wat echt AI-infrastructuur is van wat een normale database is met een conversationele huid. Als u niet zeker weet welke van de twee u draait, kunt u [berekenen wat het kost om uw project goed te beveiligen](https://launchstudio.eu/nl/#calculator) voordat u erachter komt op de harde manier. Voor teams die nieuwsgierig zijn hoe dit past in bredere aangepaste softwareontwikkeling, behandelt Manifera's [praktijk voor aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) hetzelfde terrein op zakelijke schaal.
 
 ## Echt voorbeeld
 

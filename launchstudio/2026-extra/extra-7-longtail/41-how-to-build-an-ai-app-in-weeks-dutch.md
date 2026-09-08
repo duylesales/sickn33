@@ -13,10 +13,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Hoe u in enkele weken een AI-app bouwt zonder uw frontend te verliezen",
   "description": "De meeste oprichters die een AI-app bouwen, bouwen alles opnieuw zodra een ontwikkelaar het overneemt. Zo bouwt u een AI-app-project dat de overdracht naar productie overleeft.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-08",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-to-build-an-ai-app-in-weeks" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/how-to-build-an-ai-app-in-weeks" }
 }
 </script>
 

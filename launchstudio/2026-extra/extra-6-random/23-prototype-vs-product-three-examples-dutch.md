@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Het verschil tussen een AI-prototype en een AI-product, uitgelegd met drie echte voorbeelden",
   "description": "Een uitleg in drie fasen die precies laat zien hoe een door AI gegenereerd prototype verschilt van een echt product, verteld via de reis van één oprichter van een weekendbouwwerk naar een productieklaar platform.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/prototype-vs-product-three-examples" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/prototype-vs-product-three-examples" }
 }
 </script>
 
@@ -33,7 +33,7 @@ Zodra drie eigenaren van bed-and-breakfasts akkoord gingen om GastVrij echt te p
 
 De laatste fase is waar de betekenis van "het werkt" het meest dramatisch verandert. Een productieklare GastVrij handelt niet alleen de boekingsflow correct af wanneer alles goed gaat — het handelt af wat er gebeurt wanneer een betaling halverwege mislukt, wanneer het account van een host wordt gecompromitteerd, wanneer tien gasten in dezelfde seconde de boekingspagina bereiken, wanneer een databasequery kwaadwillig in plaats van onschuldig is opgesteld. Dit is het verschil tussen een app die werkt en een product dat klaar is om vertrouwd te worden met het geld en de gegevens van anderen. Het is ook de minst zichtbare fase voor een niet-technische oprichter, omdat een productieklare en een niet-verharde app er van buitenaf identiek uit kunnen zien, tot het moment dat er iets misgaat.
 
-Die derde fase is precies waar LaunchStudio in gespecialiseerd is: een door AI gegenereerde MVP door beveiligingsverharding, correcte authenticatie, betalingsintegratie en databasebeveiliging leiden — zonder de frontend aan te raken die een oprichter al heeft gebouwd en gevalideerd bij echte gebruikers. LaunchStudio wordt ondersteund door het team van meer dan 120 engineers van Manifera, met wortels in productie-engineering die teruggaan tot meer dan 160 opgeleverde projecten, en het belangrijkste engineeringcentrum opereert vanuit Ho Chi Minhstad. Als uw app zich momenteel ergens tussen voorbeeld twee en voorbeeld drie bevindt, kunt u [ons uw prototypelink sturen voor gratis advies](https://launchstudio.eu/en/#contact) over in welke fase u zich daadwerkelijk bevindt.
+Die derde fase is precies waar LaunchStudio in gespecialiseerd is: een door AI gegenereerde MVP door beveiligingsverharding, correcte authenticatie, betalingsintegratie en databasebeveiliging leiden — zonder de frontend aan te raken die een oprichter al heeft gebouwd en gevalideerd bij echte gebruikers. LaunchStudio wordt ondersteund door het team van meer dan 120 engineers van Manifera, met wortels in productie-engineering die teruggaan tot meer dan 160 opgeleverde projecten, en het belangrijkste engineeringcentrum opereert vanuit Ho Chi Minhstad. Als uw app zich momenteel ergens tussen voorbeeld twee en voorbeeld drie bevindt, kunt u [ons uw prototypelink sturen voor gratis advies](https://launchstudio.eu/nl/#contact) over in welke fase u zich daadwerkelijk bevindt.
 
 De eigen [portfolio](https://www.manifera.com/portfolio/) van Manifera laat zien hoe diezelfde verhardingsdiscipline eruitziet toegepast op zakelijke klanten — dezelfde nauwkeurigheid, alleen afgeschaald naar het budget en de tijdlijn van een oprichter via LaunchStudio.
 

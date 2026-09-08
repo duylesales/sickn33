@@ -16,7 +16,7 @@ Doelpersona: Oprichter / CTO
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Oprichter / CTO
   "datePublished": "2026-12-08",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/prototype-ai"
+    "@id": "https://launchstudio.eu/nl/blog/prototype-ai"
   }
 }
 </script>
@@ -64,7 +64,7 @@ In productie bestaat het ideale scenario niet. Zakelijke gebruikers uploaden ges
 
 Niet-technische oprichters zijn uitstekend in het ontwerpen van prototypes omdat zij het marktvraagstuk begrijpen, maar missen vaak de specialistische backend-, database- en security-kennis voor de Laatste 10%.
 
-[LaunchStudio](https://launchstudio.eu/en/), aangedreven door de 11+ jaar ervaring van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, voert een gerichte *Prototype-to-Production Sprint* uit:
+[LaunchStudio](https://launchstudio.eu/nl/), aangedreven door de 11+ jaar ervaring van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, voert een gerichte *Prototype-to-Production Sprint* uit:
 - Wij behouden uw frontend en kernprompts.
 - Wij bouwen de schaalbare RAG-architectuur en vectordatabases.
 - Wij implementeren Redis-caching om API-kosten onder controle te houden.

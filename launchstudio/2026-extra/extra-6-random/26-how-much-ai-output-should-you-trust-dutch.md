@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Hoeveel van de output van uw AI-codeertool moet u eigenlijk vertrouwen?",
   "description": "Een raamwerk voor technische solo-oprichters over welke categorieën door AI gegenereerde code kritische aandacht verdienen voordat u ze uitrolt, en welke veilig zijn om zonder meer over te nemen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-much-ai-output-should-you-trust" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/how-much-ai-output-should-you-trust" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Authenticatiecontroles, autorisatiegrenzen, databasetoegangsregels, versleutelin
 
 Vraag uzelf, voordat u iets uitrolt dat een ai code tool heeft geproduceerd: raakt dit geld, persoonsgegevens of toegangscontrole? Zo nee, doe een steekproef en ga verder. Zo ja, produceert de logica een specifiek getal of een beslissing die verkeerd kan zijn op een manier die moeilijk met het blote oog te zien is? Zo ja, herleid de berekening handmatig aan de hand van een paar echte scenario's voordat u hem vertrouwt. En ongeacht het antwoord: beslist deze code wie iets mag zien of doen? Zo ja, dan heeft het onafhankelijke beveiligingsbeoordeling nodig, niet alleen functionele tests, want functionele tests bewijzen alleen dat het happy path werkt.
 
-LaunchStudio bestaat grotendeels vanwege categorie twee en categorie drie — de categorieën waarin een ervaren tweede paar ogen ziet wat de eigen tests van een oprichter niet vinden. Onze engineers, uit het team van meer dan 120 personen van Manifera gevestigd in Ho Chi Minhstad, beoordelen precies deze categorieën door AI gegenereerde logica als onderdeel van elk productieverhardingstraject. Als u een technische solo-oprichter bent die niet zeker weet welke van uw eigen functies in de risicovolle categorieën vallen, [bereken dan wat een beoordeling zou kosten](https://launchstudio.eu/en/#calculator) voordat u erachter komt op de dure manier. Het team [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera past dezelfde triagediscipline toe op zakelijke codebases, alleen op oprichtervriendelijke schaal en prijsstelling.
+LaunchStudio bestaat grotendeels vanwege categorie twee en categorie drie — de categorieën waarin een ervaren tweede paar ogen ziet wat de eigen tests van een oprichter niet vinden. Onze engineers, uit het team van meer dan 120 personen van Manifera gevestigd in Ho Chi Minhstad, beoordelen precies deze categorieën door AI gegenereerde logica als onderdeel van elk productieverhardingstraject. Als u een technische solo-oprichter bent die niet zeker weet welke van uw eigen functies in de risicovolle categorieën vallen, [bereken dan wat een beoordeling zou kosten](https://launchstudio.eu/nl/#calculator) voordat u erachter komt op de dure manier. Het team [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera past dezelfde triagediscipline toe op zakelijke codebases, alleen op oprichtervriendelijke schaal en prijsstelling.
 
 ## Echt voorbeeld
 

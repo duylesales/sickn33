@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-product-non-technical-cofounder-can-maintain-alone"
+    "@id": "https://launchstudio.eu/nl/blog/ai-product-non-technical-cofounder-can-maintain-alone"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Gegeven hoeveel van de voortdurende werking van een AI-native product afhangt va
 
 Het behandelen hiervan als standaard continuïteitsplanning voor het bedrijf – dezelfde categorie voorbereiding die elk verantwoordelijk bedrijf doet voor andere risico's rond sleutelpersonen – in plaats van een dramatisch, onwaarschijnlijk scenario, normaliseert het gesprek. Het zorgt ervoor dat de daadwerkelijke voorbereiding (documentatie, toegankelijke ondersteuning, gepast gedeelde inloggegevens) voelt als redelijke zorgvuldigheid in plaats van een ongemakkelijke toelating van kwetsbaarheid.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichtersteams bij het instellen van exact dit soort continuïteitsvoorbereiding als onderdeel van bredere voortdurende ondersteuningsopdrachten. Wij zorgen ervoor dat een niet-technische medeoprichter echte, toegankelijke terugvalopties heeft die onafhankelijk zijn van de persoonlijke beschikbaarheid van een enkel individu, ondersteund door Manifera's bredere toewijding aan het ondersteunen van de daadwerkelijke operationele veerkracht van oprichtersteams, en niet alleen hun initiële lancering.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichtersteams bij het instellen van exact dit soort continuïteitsvoorbereiding als onderdeel van bredere voortdurende ondersteuningsopdrachten. Wij zorgen ervoor dat een niet-technische medeoprichter echte, toegankelijke terugvalopties heeft die onafhankelijk zijn van de persoonlijke beschikbaarheid van een enkel individu, ondersteund door Manifera's bredere toewijding aan het ondersteunen van de daadwerkelijke operationele veerkracht van oprichtersteams, en niet alleen hun initiële lancering.
 
-[Zorg ervoor dat uw product niet volledig afhangt van de voortdurende beschikbaarheid van één persoon](https://launchstudio.eu/en/#contact) — een kloof die de meeste oprichtersteams nooit testen totdat deze plotseling, dringend relevant is.
+[Zorg ervoor dat uw product niet volledig afhangt van de voortdurende beschikbaarheid van één persoon](https://launchstudio.eu/nl/#contact) — een kloof die de meeste oprichtersteams nooit testen totdat deze plotseling, dringend relevant is.
 
 ## Een 20-minuten continuïteitscheck die een niet-technische medeoprichter deze week kan uitvoeren
 

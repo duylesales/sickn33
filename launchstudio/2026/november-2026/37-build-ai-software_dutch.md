@@ -16,7 +16,7 @@ Doelpersona: CTO / Senior Software Engineer
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CTO / Senior Software Engineer
   "datePublished": "2026-12-07",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/build-ai-software"
+    "@id": "https://launchstudio.eu/nl/blog/build-ai-software"
   }
 }
 </script>
@@ -72,7 +72,7 @@ De meest geavanceerde stap is het gebruik van **DSPy (Demonstrate-Search-Predict
 
 Het transformeren van een kwetsbare Mega-Prompt naar een modulaire DSPy-architectuur vereist diepgaande AI-specialisatie.
 
-[LaunchStudio](https://launchstudio.eu/en/), aangedreven door de ervaren software-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, vervangt subjectieve prompts door industriële software-engineering:
+[LaunchStudio](https://launchstudio.eu/nl/), aangedreven door de ervaren software-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, vervangt subjectieve prompts door industriële software-engineering:
 1. **Pijplijn-Modularisatie:** Wij splitsen logge prompts op in gerichte deeltaken, wat hallucinaties minimaliseert en API-kosten drastisch verlaagt.
 2. **DSPy-Compilatie:** Wij gebruiken wiskundige optimalisatie om instructies op maat van uw dataset te compileren.
 3. **Prompt Registries:** Integratie van enterprise promptbeheer voor realtime A/B-testen en instant rollbacks.

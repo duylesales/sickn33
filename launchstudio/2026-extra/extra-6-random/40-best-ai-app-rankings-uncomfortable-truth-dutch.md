@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "De ongemakkelijke waarheid over 'beste AI-app'-ranglijsten die u leest vóór het bouwen",
   "description": "Een opiniestuk over waarom 'best ai app'-ranglijsten populariteit en UI-polish meten, niet een track record op het gebied van productiegereedheid, en waarom die kloof het meest telt precies wanneer het te laat is om van tool te wisselen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/best-ai-app-rankings-uncomfortable-truth" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/best-ai-app-rankings-uncomfortable-truth" }
 }
 </script>
 
@@ -43,7 +43,7 @@ In plaats van een tool te kiezen omdat hij bovenaan een lijst stond, is het de m
 
 Geen van deze vervangt volledig een echte productiegereedheidsbeoordeling zodra u daadwerkelijk iets heeft gebouwd — maar ze verschuiven uw toolkeuze in elk geval richting een track record in plaats van een ranglijstpositie.
 
-LaunchStudio werkt met oprichters ongeacht welke AI-codeertool deze maand bovenaan de ranglijst staat — het productiehardeningswerk is vergelijkbaar of het prototype nu uit Lovable, Bolt, Cursor, of v0 komt. Ons Amsterdamse team heeft de productiestadium-kloven gezien die verschillende tools vertonen, ver voorbij wat een ranglijstartikel ooit vastlegt. U kunt [uw project beschrijven en eerlijke feedback krijgen](https://launchstudio.eu/en/#contact) over wat de output van uw specifieke tool daadwerkelijk nodig heeft vóór lancering. Voor meer over het soort engineering-track record dat daadwerkelijk de moeite waard is om te wegen, zie Manifera's pagina ["over ons"](https://www.manifera.com/about-us/), met meer dan 160 opgeleverde projecten.
+LaunchStudio werkt met oprichters ongeacht welke AI-codeertool deze maand bovenaan de ranglijst staat — het productiehardeningswerk is vergelijkbaar of het prototype nu uit Lovable, Bolt, Cursor, of v0 komt. Ons Amsterdamse team heeft de productiestadium-kloven gezien die verschillende tools vertonen, ver voorbij wat een ranglijstartikel ooit vastlegt. U kunt [uw project beschrijven en eerlijke feedback krijgen](https://launchstudio.eu/nl/#contact) over wat de output van uw specifieke tool daadwerkelijk nodig heeft vóór lancering. Voor meer over het soort engineering-track record dat daadwerkelijk de moeite waard is om te wegen, zie Manifera's pagina ["over ons"](https://www.manifera.com/about-us/), met meer dan 160 opgeleverde projecten.
 
 ## Echt voorbeeld
 

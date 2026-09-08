@@ -29,9 +29,9 @@ CI koppelen aan preview-omgevingen — een live, tijdelijke versie van je app au
 
 Een minimale, effectieve CI-pijplijn voor een typische AI-gegenereerde app kost een founder met basale technische vaardigheid ongeveer één tot twee uur om te configureren met standaard, uitgebreid gedocumenteerde tools — de meeste moderne hosting- en repositoryplatforms bieden templates specifiek voor gangbare stacks, wat betekent dat de opzet grotendeels configuratie is in plaats van originele engineering. Het is een kleine, eenmalige investering in verhouding tot de doorlopende bescherming die het biedt tegen stille regressies bij elke toekomstige wijziging die je ooit zult verzenden.
 
-[LaunchStudio](https://launchstudio.eu/en/) zet CI-pijplijnen en preview-omgevingen op als standaard onderdeel van het voorbereiden van AI-gegenereerde prototypes voor productie, precies afgestemd op jouw specifieke stack, als onderdeel van Manifera's bredere engineeringdiscipline toegepast op elke Launch Ready-opdracht.
+[LaunchStudio](https://launchstudio.eu/nl/) zet CI-pijplijnen en preview-omgevingen op als standaard onderdeel van het voorbereiden van AI-gegenereerde prototypes voor productie, precies afgestemd op jouw specifieke stack, als onderdeel van Manifera's bredere engineeringdiscipline toegepast op elke Launch Ready-opdracht.
 
-[Krijg een CI-pijplijn die daadwerkelijk problemen opvangt voordat ze verzonden worden](https://launchstudio.eu/en/#calculator) — een kleine opzetinvestering die zich terugbetaalt bij de allereerste regressie die het voorkomt.
+[Krijg een CI-pijplijn die daadwerkelijk problemen opvangt voordat ze verzonden worden](https://launchstudio.eu/nl/#calculator) — een kleine opzetinvestering die zich terugbetaalt bij de allereerste regressie die het voorkomt.
 
 ## Echt voorbeeld
 

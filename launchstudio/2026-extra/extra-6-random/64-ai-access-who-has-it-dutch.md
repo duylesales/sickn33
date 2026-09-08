@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Wie eigenlijk 'AI-toegang' heeft tot uw codebase en klantgegevens",
   "description": "Oprichters controleren zelden welke AI-modelaanbieders en integraties na de lancering permanente toegang hebben tot hun codebase en klantgegevens. Zo komt u erachter, en waarom oude testsleutels meestal de boosdoener zijn.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-access-who-has-it" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-access-who-has-it" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Er is geen natuurlijk moment waarop een oprichter wordt aangespoord om deze lijs
 
 Dit is zelden een klusje van vijf minuten, omdat de meeste AI-codeertools deze lijst niet op één plek tonen — hij moet stap voor stap worden gereconstrueerd via de integratie-instellingen van het project.
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met 11+ jaar ervaring in het auditen van precies dit soort opgebouwde toegang in door AI gegenereerde codebases. Ons Amsterdamse team voert deze audit standaard uit bij het overnemen van het project van een oprichter. Als u wilt weten hoe de toegangslijst van uw eigen app er eigenlijk uitziet, kunt u [berekenen wat een volledige toegangsaudit zou kosten](https://launchstudio.eu/en/#calculator), en de praktijk [webapplicatie-ontwikkeling](https://www.manifera.com/services/web-app-develop/) van Manifera behandelt de bredere technische context achter dat werk.
+LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met 11+ jaar ervaring in het auditen van precies dit soort opgebouwde toegang in door AI gegenereerde codebases. Ons Amsterdamse team voert deze audit standaard uit bij het overnemen van het project van een oprichter. Als u wilt weten hoe de toegangslijst van uw eigen app er eigenlijk uitziet, kunt u [berekenen wat een volledige toegangsaudit zou kosten](https://launchstudio.eu/nl/#calculator), en de praktijk [webapplicatie-ontwikkeling](https://www.manifera.com/services/web-app-develop/) van Manifera behandelt de bredere technische context achter dat werk.
 
 ## Echt voorbeeld
 

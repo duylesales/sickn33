@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/the-most-common-ai-security-issues-in-founder-built-prototypes"
+    "@id": "https://launchstudio.eu/nl/blog/the-most-common-ai-security-issues-in-founder-built-prototypes"
   }
 }
 </script>
@@ -55,11 +55,11 @@ Een gecompromitteerde incheckcode lijkt misschien een klein risico vergeleken me
 
 ## Dit systematisch dichten in plaats van één voor één
 
-Een grondige beoordeling controleert elk mechanisme voor korte codes of verificatie in een applicatie tegen deze zelfde korte lijst van criteria, in plaats van elk mechanisme te behandelen als een geïsoleerd geval. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort systematische audit van verificatiemechanismen uit, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van authenticatie- en verificatiestromen over productiesystemen.
+Een grondige beoordeling controleert elk mechanisme voor korte codes of verificatie in een applicatie tegen deze zelfde korte lijst van criteria, in plaats van elk mechanisme te behandelen als een geïsoleerd geval. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort systematische audit van verificatiemechanismen uit, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van authenticatie- en verificatiestromen over productiesystemen.
 
 Manifera's audits voor verificatie en authenticatie worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Controleer de prijs met onze projectcalculator](https://launchstudio.eu/en/#calculator).
+[Controleer de prijs met onze projectcalculator](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

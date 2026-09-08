@@ -16,7 +16,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-software-developers-vs-ai-assisted-developers"
+    "@id": "https://launchstudio.eu/nl/blog/ai-software-developers-vs-ai-assisted-developers"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Een kandidaat vragen om, zonder onmiddellijk naar een AI-tool te grijpen, te bes
 
 Het doel is niet om de echte, waardevolle capaciteit van rol twee te devalueren – het snel bouwen van werkende prototypes via AI-tools is een legitieme en waardevolle vaardigheid, en deze reeks artikelen bestaat specifiek omdat zoveel oprichters exact die vaardigheid zelf bezitten. Het doel is het matchen van de specifieke rol die u aanneemt met de specifieke capaciteit die een kandidaat daadwerkelijk heeft, in plaats van aan te nemen dat de titel "AI-software-ontwikkelaar" het onafhankelijke verificatie-oordeel dat rol één specifiek vereist garandeert.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters en bureaus om exact dit onderscheid scherp te krijgen wanneer ze een technische aanwerving of opdracht structureren. Wij zorgen ervoor dat de daadwerkelijk benodigde capaciteit – of het nu gaat om snelle AI-geassisteerde generatie of een onafhankelijk oordeel over productieverificatie – overeenkomt met waarvoor daadwerkelijk wordt aangenomen. Dit wordt ondersteund door Manifera's brede engineeringteam dat zowel oprecht ervaren engineers als specialisten in AI-tools omvat.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters en bureaus om exact dit onderscheid scherp te krijgen wanneer ze een technische aanwerving of opdracht structureren. Wij zorgen ervoor dat de daadwerkelijk benodigde capaciteit – of het nu gaat om snelle AI-geassisteerde generatie of een onafhankelijk oordeel over productieverificatie – overeenkomt met waarvoor daadwerkelijk wordt aangenomen. Dit wordt ondersteund door Manifera's brede engineeringteam dat zowel oprecht ervaren engineers als specialisten in AI-tools omvat.
 
-[Zorg dat u helder heeft welke rol u daadwerkelijk nodig heeft voor uw volgende technische aanwerving](https://launchstudio.eu/en/#contact) — de titel alleen vertelt u niet welke capaciteit u krijgt.
+[Zorg dat u helder heeft welke rol u daadwerkelijk nodig heeft voor uw volgende technische aanwerving](https://launchstudio.eu/nl/#contact) — de titel alleen vertelt u niet welke capaciteit u krijgt.
 
 ## Het schrijven van een vacature of opdrachtbeschrijving die de juiste rol aantrekt
 

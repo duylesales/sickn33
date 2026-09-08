@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "AI-softwareprogrammeren voor niet-programmeurs: wat u daadwerkelijk doet",
   "description": "80% van de door AI gebouwde projecten bereikt nooit productie. Een mythes-ontkrachtende blik op wat niet-programmeurs echt doen wanneer ze ai software programming toepassen, en waar de echte vaardighedenkloof zit.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-12",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-software-programming-for-non-coders-what-youre" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-software-programming-for-non-coders-what-youre" }
 }
 </script>
 

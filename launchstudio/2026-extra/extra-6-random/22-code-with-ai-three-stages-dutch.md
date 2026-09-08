@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Wat 'coderen met AI' écht betekent in drie verschillende fasen van een startup",
   "description": "Een uitleg over hoe de uitdrukking 'coderen met AI' van betekenis verandert tussen de prototype-, MVP- en scale-upfase van een startup, en waarom de verwarring tot echte zakelijke problemen leidt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/code-with-ai-three-stages" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/code-with-ai-three-stages" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Tegen de tijd dat een startup echte omzet heeft, een supportqueue en misschien e
 
 De kloof tussen deze drie betekenissen is niet alleen semantisch — ze heeft commerciële gevolgen. Een contractor die "AI-gecodeerd" hoort en fase één veronderstelt, zal heel anders prijzen, scopen en communiceren dan een contractor die begrijpt dat u fase drie bedoelt. Zakelijke inkopers die tijdens een verkoopgesprek "gebouwd met AI" horen, kunnen stilletjes hun vertrouwen in uw product naar beneden bijstellen, tenzij u specifiek bent over welke mate van rigueur daadwerkelijk is toegepast. Precies zijn over welke fase u bedoelt, iedere keer dat u de zin uitspreekt, voorkomt een verrassende hoeveelheid wrijving later.
 
-Dit is ook waar hulp van buitenaf zichzelf terugverdient. LaunchStudio bestaat specifiek voor de overgang tussen fase twee en fase drie — een door AI gegenereerde MVP nemen en die inpakken in de beveiligings-, auth-, betalings- en hostingdiscipline die de scale-upfase vereist, zonder de frontend van de oprichter opnieuw te bouwen. Ondersteund door het team van meer dan 120 ervaren engineers van Manifera, werkend vanuit hubs in Amsterdam, Ho Chi Minhstad en Singapore, behandelt LaunchStudio "coderen met AI" zoals een fase-drieteam dat doet: als een eerste concept, geen af product. U kunt [berekenen wat uw project kost](https://launchstudio.eu/en/#calculator) om te zien hoe die overgang eruitziet voor uw eigen codebase.
+Dit is ook waar hulp van buitenaf zichzelf terugverdient. LaunchStudio bestaat specifiek voor de overgang tussen fase twee en fase drie — een door AI gegenereerde MVP nemen en die inpakken in de beveiligings-, auth-, betalings- en hostingdiscipline die de scale-upfase vereist, zonder de frontend van de oprichter opnieuw te bouwen. Ondersteund door het team van meer dan 120 ervaren engineers van Manifera, werkend vanuit hubs in Amsterdam, Ho Chi Minhstad en Singapore, behandelt LaunchStudio "coderen met AI" zoals een fase-drieteam dat doet: als een eerste concept, geen af product. U kunt [berekenen wat uw project kost](https://launchstudio.eu/nl/#calculator) om te zien hoe die overgang eruitziet voor uw eigen codebase.
 
 Voor een bredere blik op hoe professionele teams AI-ondersteunde ontwikkeling op schaal structureren, hanteert de [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera dezelfde discipline van concept-en-daarna-beoordeling in klantprojecten.
 

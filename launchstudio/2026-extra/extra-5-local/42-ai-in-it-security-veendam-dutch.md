@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI in IT-beveiliging: Waarom Veendamse oprichters nog steeds een menselijke beoordeling nodig hebben",
   "description": "Waarom uitsluitend vertrouwen op AI in IT-beveiliging gaten achterlaat die een menselijke engineer moet opvangen, geïllustreerd met een echt voorbeeld van een oprichter die software bouwt in Veendam.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-in-it-security-veendam" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-in-it-security-veendam" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Dit is ook waarom het vragen aan een AI-tool om "deze code te beoordelen op beve
 
 Dit is het gat dat LaunchStudio bestaat om te dichten. Achter LaunchStudio staat Manifera's team van meer dan 120 ervaren engineers, en de beveiligingsbeoordeling die we uitvoeren op prototypes van oprichters wordt niet gegenereerd door weer een ander AI-model — het wordt gedaan door mensen die jaren hebben besteed aan het vinden van exact deze gaten in productiesystemen voor enterprise-klanten. Deels gecoördineerd vanuit ons kantoor in Singapore aan Tras Street, heeft het team met AI gebouwde apps beoordeeld van oprichters in heel Nederland, waaronder Veendam, en dezelfde handvol beveiligingsgaten komt steeds weer naar voren: ontbrekende authenticatie-middleware, blootgestelde API-routes, databasetabellen die iedereen rechtstreeks kan opvragen.
 
-We raken niet aan hoe uw Bolt- of Lovable-frontend eruitziet. We gaan eronder, dichten de gaten, en overhandigen een app terug die er voor gebruikers identiek uitziet maar heel anders reageert op iedereen die probeert in te breken. Als u een indruk wilt van omvang en kosten voordat u contact opneemt, geeft [onze calculator](https://launchstudio.eu/en/#calculator) een snelle inschatting gebaseerd op wat uw app daadwerkelijk nodig heeft. Voor een bredere blik op hoe dit type engineeringwerk op schaal wordt geleverd, toont Manifera's [projectenportfolio](https://www.manifera.com/portfolio/) dezelfde normen toegepast bij veel grotere klanten.
+We raken niet aan hoe uw Bolt- of Lovable-frontend eruitziet. We gaan eronder, dichten de gaten, en overhandigen een app terug die er voor gebruikers identiek uitziet maar heel anders reageert op iedereen die probeert in te breken. Als u een indruk wilt van omvang en kosten voordat u contact opneemt, geeft [onze calculator](https://launchstudio.eu/nl/#calculator) een snelle inschatting gebaseerd op wat uw app daadwerkelijk nodig heeft. Voor een bredere blik op hoe dit type engineeringwerk op schaal wordt geleverd, toont Manifera's [projectenportfolio](https://www.manifera.com/portfolio/) dezelfde normen toegepast bij veel grotere klanten.
 
 ## Wat Veendamse oprichters daadwerkelijk moeten controleren
 

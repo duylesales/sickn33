@@ -16,7 +16,7 @@ Doelpersona: CTO / Data Protection Officer (DPO)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: CTO / Data Protection Officer (DPO)
   "datePublished": "2026-12-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/privacy-issues-with-ai"
+    "@id": "https://launchstudio.eu/nl/blog/privacy-issues-with-ai"
   }
 }
 </script>
@@ -55,7 +55,7 @@ In een B2B SaaS-omgeving mag data van Klant A nooit in aanraking komen met Klant
 
 Om privacy-vraagstukken structureel op te lossen moeten softwarearchitecten strikte, deterministische infrastructuur bouwen rondom hun AI-modellen:
 
-[LaunchStudio](https://launchstudio.eu/en/), opererend volgens de strenge Europese datastandaarden van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt AI-toepassingen die glansrijk slagen voor AVG- en SOC2-audits:
+[LaunchStudio](https://launchstudio.eu/nl/), opererend volgens de strenge Europese datastandaarden van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt AI-toepassingen die glansrijk slagen voor AVG- en SOC2-audits:
 1. **Geïntegreerde Vectoropslag (pgvector):** Wij gebruiken geen losse, externe vectordatabases, maar Supabase (PostgreSQL) met `pgvector`. De vectoren leven in exact dezelfde database als uw relationele data. Wordt een gebruiker verwijderd, dan zorgt een Foreign Key constraint (`ON DELETE CASCADE`) ervoor dat al zijn vectoren binnen dezelfde milliseconde wiskundig worden vernietigd.
 2. **Deterministische PII-Anonimisering:** Wij plaatsen lokale proxies (zoals Microsoft Presidio) binnen uw eigen netwerk. Voordat een prompt naar het model gaat, maskeert de proxy alle persoonsgegevens en vervangt ze door anonieme tokens (bijv. `[GEBRUIKER_ID_GEANONIMISEERD]`). Het AI-model ziet nooit echte persoonsgegevens.
 3. **Row Level Security (RLS) op Databaseniveau:** Wij dwingen tenant-isolatie af op het laagste infrastructuurniveau. De PostgreSQL-database weigert fysiek elke zoekopdracht naar data die niet hoort bij het geauthenticeerde JWT-token van de gebruiker.

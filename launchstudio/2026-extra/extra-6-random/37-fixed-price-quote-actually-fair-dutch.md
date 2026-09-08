@@ -12,10 +12,10 @@ Doelgroep: SaaS-oprichter scale-up
   "@type": "Article",
   "headline": "Hoe u kunt bepalen of een vaste-prijsofferte voor development daadwerkelijk eerlijk is",
   "description": "Een praktische handleiding voor oprichters die sterk uiteenlopende vaste-prijsoffertes voor development vergelijken voor dezelfde scope, opgebouwd rond het uitsplitsen van een offerte in de afzonderlijke onderdelen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/fixed-price-quote-actually-fair" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/fixed-price-quote-actually-fair" }
 }
 </script>
 
@@ -48,7 +48,7 @@ Zodra u de onderdelen kunt zien, onderhandelt u niet langer over "kunt u met de 
 
 Eerlijk betekent niet goedkoopst. Het betekent dat de prijs leesbaar is — u kunt zien waarvoor u betaalt, onderdeel voor onderdeel, en u zou dezelfde afweging maken als u het zelf zou prijzen met volledige informatie. Een offerte die hoger is maar volledig gespecificeerd en correct afgebakend, is vaak de eerlijkere, zelfs tegenover een lager bedrag dat achteraf de helft van het daadwerkelijke werk mist.
 
-LaunchStudio is precies rond dit principe gebouwd — elke opdracht wordt afgebakend en geprijsd als een gespecificeerde uitsplitsing voordat er een eurosymbool aan wordt gekoppeld, en dat is waarom vaste-prijsopdrachten doorgaans in de range van € 800–€ 7.500 vallen voor een afgebakende scope. Ons Amsterdamse team loodst oprichters rechtstreeks door deze specificatie heen. U kunt [een schatting voor uw eigen project berekenen](https://launchstudio.eu/en/#calculator) als startpunt voordat u dit vergelijkt met andere offertes. Voor een breder beeld van hoe geschaalde engineeringprijzen werken, zie Manifera's praktijk in [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/), toegepast op meer dan 160 opgeleverde projecten.
+LaunchStudio is precies rond dit principe gebouwd — elke opdracht wordt afgebakend en geprijsd als een gespecificeerde uitsplitsing voordat er een eurosymbool aan wordt gekoppeld, en dat is waarom vaste-prijsopdrachten doorgaans in de range van € 800–€ 7.500 vallen voor een afgebakende scope. Ons Amsterdamse team loodst oprichters rechtstreeks door deze specificatie heen. U kunt [een schatting voor uw eigen project berekenen](https://launchstudio.eu/nl/#calculator) als startpunt voordat u dit vergelijkt met andere offertes. Voor een breder beeld van hoe geschaalde engineeringprijzen werken, zie Manifera's praktijk in [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/), toegepast op meer dan 160 opgeleverde projecten.
 
 ## Echt voorbeeld
 

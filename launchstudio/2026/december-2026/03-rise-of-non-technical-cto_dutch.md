@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-03",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/rise-of-non-technical-cto"
+    "@id": "https://launchstudio.eu/nl/blog/rise-of-non-technical-cto"
   }
 }
 </script>
@@ -110,7 +110,7 @@ Eerlijkheid is hier cruciaal. Er zijn specialistische domeinen waar een niet-tec
 - **Database-architectuur** — Schema-ontwerp, datamigraties en query-optimalisatie bij groeiende datavolumes vragen om specialistische kennis.
 - **Deployment-pijplijnen** — CI/CD-inrichting, omgevingsbeheer en zero-downtime releases vereisen infrastructuurexpertise.
 
-Dit is exact het gat dat [LaunchStudio](https://launchstudio.eu/en/) overbrugt. Ondersteund door [Manifera's](https://www.manifera.com/) elf jaar ervaring in enterprise software-ontwikkeling, met een team van 120+ engineers aan de Pho Quang Street in Ho Chi Minh-stad en Europees projectmanagement aan de Herengracht 420 in Amsterdam, biedt LaunchStudio de technische diepgang die niet-technische CTO's nodig hebben — zonder dat zij zelf programmeur hoeven te worden.
+Dit is exact het gat dat [LaunchStudio](https://launchstudio.eu/nl/) overbrugt. Ondersteund door [Manifera's](https://www.manifera.com/) elf jaar ervaring in enterprise software-ontwikkeling, met een team van 120+ engineers aan de Pho Quang Street in Ho Chi Minh-stad en Europees projectmanagement aan de Herengracht 420 in Amsterdam, biedt LaunchStudio de technische diepgang die niet-technische CTO's nodig hebben — zonder dat zij zelf programmeur hoeven te worden.
 
 Herre Roelevink, oprichter van Manifera, stelt: *"De beste niet-technische CTO's proberen geen softwareontwikkelaar te worden. Zij ontwikkelen het oordeelsvermogen om te herkennen wanneer AI-output betrouwbaar is en wanneer professionele engineering vereist is. Dat inzicht, gecombineerd met onze elf jaar ervaring, vormt een ongekend krachtige combinatie."*
 
@@ -120,7 +120,7 @@ De niet-technische CTO is geen tijdelijke bevlieging van de AI-hype. Het is de l
 
 ## Klaar om Uw Technische Visie te Realiseren Zonder Zelf te Programmeren?
 
-Heeft u als niet-technische CTO een AI-prototype gebouwd en zoekt u productiewaardige technische ondersteuning? LaunchStudio biedt de betrouwbare engineering-samenwerking die u zoekt. Vaste projectprijzen vanaf €800, waarbij uw frontend 100% intact blijft. [Boek uw gratis 15-minuten adviesgesprek](https://launchstudio.eu/en/#contact).
+Heeft u als niet-technische CTO een AI-prototype gebouwd en zoekt u productiewaardige technische ondersteuning? LaunchStudio biedt de betrouwbare engineering-samenwerking die u zoekt. Vaste projectprijzen vanaf €800, waarbij uw frontend 100% intact blijft. [Boek uw gratis 15-minuten adviesgesprek](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

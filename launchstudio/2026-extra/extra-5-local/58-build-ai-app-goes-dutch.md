@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Hoe u een AI-app bouwt in Goes zonder vast te lopen bij de lancering",
   "description": "Een praktische stapsgewijze blik op hoe u een AI-app bouwt en deze daadwerkelijk lanceert, met een echt voorbeeld van een agri-food oprichter in Goes.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/build-ai-app-goes" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/build-ai-app-goes" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Een productierijpe app heeft een deugdelijk geconfigureerde database nodig met b
 
 ## Stap vier: Lanceer met een vaste omvang, en niet met een open-einde budget
 
-LaunchStudio's aanpak van deze fase is een vaste prijs, overeengekomen voordat het werk begint, variërend van € 800 tot € 7.500 afhankelijk van wat de app daadwerkelijk nodig heeft, opgeleverd in één tot drie weken. Dit doet er specifiek toe voor een oprichter in Goes wiens product afhangt van een specifiek seizoensgebonden venster — een agri-marktplaats die klaar moet zijn vóór de oogst, en niet ooit, en zich geen vage offerte op uurtarief kan veroorloven die wel of niet klaar is voordat het venster sluit. Ondersteund door Manifera's team van 120+ engineers werkend vanuit een hub in Singapore onder andere locaties, neemt LaunchStudio de bestaande met AI gegenereerde frontend en bouwt de ontbrekende productielaag eromheen, zonder heropbouw. Zie hoe pakketten zijn gestructureerd op de [LaunchStudio pakkettenpagina](https://launchstudio.eu/en/#packages), en bekijk Manifera's engineering-aanpak op haar [custom software development pagina](https://www.manifera.com/services/custom-software-development/).
+LaunchStudio's aanpak van deze fase is een vaste prijs, overeengekomen voordat het werk begint, variërend van € 800 tot € 7.500 afhankelijk van wat de app daadwerkelijk nodig heeft, opgeleverd in één tot drie weken. Dit doet er specifiek toe voor een oprichter in Goes wiens product afhangt van een specifiek seizoensgebonden venster — een agri-marktplaats die klaar moet zijn vóór de oogst, en niet ooit, en zich geen vage offerte op uurtarief kan veroorloven die wel of niet klaar is voordat het venster sluit. Ondersteund door Manifera's team van 120+ engineers werkend vanuit een hub in Singapore onder andere locaties, neemt LaunchStudio de bestaande met AI gegenereerde frontend en bouwt de ontbrekende productielaag eromheen, zonder heropbouw. Zie hoe pakketten zijn gestructureerd op de [LaunchStudio pakkettenpagina](https://launchstudio.eu/nl/#packages), en bekijk Manifera's engineering-aanpak op haar [custom software development pagina](https://www.manifera.com/services/custom-software-development/).
 
 ## Stap vijf: Handel de randgevallen af die uw succespad negeert
 

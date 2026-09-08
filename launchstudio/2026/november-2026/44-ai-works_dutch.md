@@ -16,7 +16,7 @@ Doelpersona: Product Manager / Niet-Technische Oprichter
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Product Manager / Niet-Technische Oprichter
   "datePublished": "2026-12-14",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-works"
+    "@id": "https://launchstudio.eu/nl/blog/ai-works"
   }
 }
 </script>
@@ -72,7 +72,7 @@ Op deze kaart ligt het coördinaat voor "Appel" vlak naast "Banaan", terwijl het
 
 Product Managers worstelen regelmatig om hun ideeën technisch te vertalen naar hun engineeringteams.
 
-[LaunchStudio](https://launchstudio.eu/en/), aangedreven door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, fungeert als de technische brug tussen productvisie en backend-architectuur:
+[LaunchStudio](https://launchstudio.eu/nl/), aangedreven door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, fungeert als de technische brug tussen productvisie en backend-architectuur:
 1. **Token-Optimalisatie:** Wij bouwen middleware die token-payloads minimaliseert, waardoor uw software winstgevend blijft.
 2. **Contextbeheer:** Wij ontwerpen slimme chunking- en routeringsalgoritmen die Aandachtsverwatering voorkomen en hallucinaties elimineren.
 3. **Vectordatabase Inrichting:** Wij configureren PostgreSQL met `pgvector` en semantische caching om van ruwe embeddings betrouwbare RAG-functies te maken.

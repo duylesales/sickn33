@@ -29,9 +29,9 @@ Een enkele fractionele reviewsessie biedt een momentopname en een set oordelen o
 
 Dit werkt bijzonder goed op specifieke beslissingspunten: voordat je significant budget commit aan een bouwrichting, bij het evalueren van een partnerschap- of overnameaanbod dat technische due diligence omvat, of simpelweg wanneer een founder genoeg onbeantwoorde technische vragen geaccumuleerd heeft dat een toegewijde sessie om ze allemaal tegelijk door te werken efficiënter is dan stukje-bij-beetje, ad hoc consultatie.
 
-[LaunchStudio](https://launchstudio.eu/en/) biedt precies dit soort fractionele technische review als onderdeel van zijn scoping- en adviesgesprekken, en biedt de oordeelslaag die een niet-technische founder anders volledig zou missen, gesteund door Manifera's engineeringleiderschapservaring over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) biedt precies dit soort fractionele technische review als onderdeel van zijn scoping- en adviesgesprekken, en biedt de oordeelslaag die een niet-technische founder anders volledig zou missen, gesteund door Manifera's engineeringleiderschapservaring over 160+ opgeleverde projecten.
 
-[Krijg de technische oordelen die een medeoprichter normaal zou maken](https://launchstudio.eu/en/#contact) — geen simpele checklist, een perspectief waarnaar je daadwerkelijk kunt handelen.
+[Krijg de technische oordelen die een medeoprichter normaal zou maken](https://launchstudio.eu/nl/#contact) — geen simpele checklist, een perspectief waarnaar je daadwerkelijk kunt handelen.
 
 ## Echt voorbeeld
 

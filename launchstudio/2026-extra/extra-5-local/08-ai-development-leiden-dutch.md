@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI-ontwikkeling in Leiden: Wat universiteitsstad-oprichters goed doen (en fout)",
   "description": "Wat aan de universiteit gerelateerde oprichters in Leiden goed en fout doen bij het gebruik van AI-developmenttools voor het bouwen van biotech- en onderzoeksgerichte producten.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-development-leiden" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-development-leiden" }
 }
 </script>
 
@@ -42,7 +42,7 @@ Om eerlijk te zijn spreekt er veel in het voordeel van de Leidse AI-development 
 
 Het terugkerende gat is infrastructuur voor gegevensbescherming die AI-developmenttools simpelweg niet ongevraagd genereren: versleuteling in rust voor gevoelige velden, gedetailleerde audit-logboeken die laten zien wie wat en wanneer heeft geraadpleegd, en formele verwerkersdocumentatie waar onderzoekspartners of institutionele toetsingscommissies om vragen voordat ze instemmen met een pilot. Wat dit bijzonder gemakkelijk maakt om te missen, is dat niets hiervan naar voren komt tijdens een normale productdemo — een functionaris voor gegevensbescherming (FG/DPO) test uw product niet door door de interface te klikken, maar vraagt om documentatie en configuratiedetails waar een oprichter die gefocust is op functies meestal nog nooit naar gevraagd is. LaunchStudio, ondersteund door Manifera's team van meer dan 120 engineers werkend vanuit een hub in Singapore naast het kantoor in Amsterdam, heeft exact dit type verharding afgehandeld voor klanten in gereguleerde en onderzoeksgerelateerde sectoren.
 
-De [bedrijfsachtergrond](https://www.manifera.com/about-us/) van Manifera weerspiegelt meer dan een decennium aan ervaring met bouwen voor klanten zoals TNO, een onderzoeksorganisatie met strenge normen voor gegevensverwerking — dezelfde discipline die rechtstreeks overdraagbaar is naar de vroege biotech-SaaS van een Leidse oprichter, of de pilot nu plaatsvindt bij een enkel spin-out lab of een grotere institutionele onderzoekspartner. Oprichters die zich afvragen of hun AI-development prototype aan die lat voldoet, kunnen terecht op de [homepage van LaunchStudio](https://launchstudio.eu/en/) om het volledige pad van prototype naar een product dat institutionele toetsing overleeft te bekijken, in plaats van er op de harde manier achter te komen tijdens een due diligence-gesprek waar ze niet op waren voorbereid.
+De [bedrijfsachtergrond](https://www.manifera.com/about-us/) van Manifera weerspiegelt meer dan een decennium aan ervaring met bouwen voor klanten zoals TNO, een onderzoeksorganisatie met strenge normen voor gegevensverwerking — dezelfde discipline die rechtstreeks overdraagbaar is naar de vroege biotech-SaaS van een Leidse oprichter, of de pilot nu plaatsvindt bij een enkel spin-out lab of een grotere institutionele onderzoekspartner. Oprichters die zich afvragen of hun AI-development prototype aan die lat voldoet, kunnen terecht op de [homepage van LaunchStudio](https://launchstudio.eu/nl/) om het volledige pad van prototype naar een product dat institutionele toetsing overleeft te bekijken, in plaats van er op de harde manier achter te komen tijdens een due diligence-gesprek waar ze niet op waren voorbereid.
 
 ## Waarom dit specifiek in een universiteitsstad zwaarder weegt
 

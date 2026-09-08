@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI Algemene Voorwaarden: Wat ze zeggen over wie de code van een Hoogeveense oprichter bezit",
   "description": "Wat de algemene voorwaarden van AI-tools zoals Lovable, Bolt, Cursor en v0 daadwerkelijk zeggen over eigendom van code, uitgelegd voor een oprichter die bouwt in Hoogeveen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-terms-and-conditions-hoogeveen" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-terms-and-conditions-hoogeveen" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Dat is een andere vraag dan "hebben de AI algemene voorwaarden mij technisch gez
 
 ## "Ik bezit het" omzetten in "Het is daadwerkelijk klaar"
 
-Dit is de kloof die LaunchStudio bestaat om te dichten: code nemen die een oprichter legitiem bezit, gegenereerd onder compleet standaard AI algemene voorwaarden, en deze productiegereed maken — veilig, deugdelijk gehost, AVG-compliant, en in staat een inkoopbeoordeling te overleven. LaunchStudio wordt aangedreven door Manifera, een bedrijf met 11+ jaar ervaring en 160+ opgeleverde projecten voor klanten die exact dit type inspectie ondergaan, waaronder Vodafone en TNO. Dat trackrecord doet er specifiek toe omdat de enterprise-klanten waar Manifera mee heeft gewerkt inkoopprocessen draaien die veel strenger zijn dan een middelgroot Hoogeveens logistiek bedrijf ooit zal draaien — dezelfde beoordelingsdiscipline wordt simpelweg geschaald naar budgetten en doorlooptijden op de omvang van oprichters. Als u onzeker bent over waar uw in Hoogeveen gebouwde prototype staat, [neem contact op](https://launchstudio.eu/en/#contact) en beschrijf wat u gebouwd heeft — de meeste oprichters krijgen binnen een dag een helder antwoord. Manifera's bredere custom softwarewerk wordt toegelicht op de [custom software development pagina](https://www.manifera.com/services/custom-software-development/).
+Dit is de kloof die LaunchStudio bestaat om te dichten: code nemen die een oprichter legitiem bezit, gegenereerd onder compleet standaard AI algemene voorwaarden, en deze productiegereed maken — veilig, deugdelijk gehost, AVG-compliant, en in staat een inkoopbeoordeling te overleven. LaunchStudio wordt aangedreven door Manifera, een bedrijf met 11+ jaar ervaring en 160+ opgeleverde projecten voor klanten die exact dit type inspectie ondergaan, waaronder Vodafone en TNO. Dat trackrecord doet er specifiek toe omdat de enterprise-klanten waar Manifera mee heeft gewerkt inkoopprocessen draaien die veel strenger zijn dan een middelgroot Hoogeveens logistiek bedrijf ooit zal draaien — dezelfde beoordelingsdiscipline wordt simpelweg geschaald naar budgetten en doorlooptijden op de omvang van oprichters. Als u onzeker bent over waar uw in Hoogeveen gebouwde prototype staat, [neem contact op](https://launchstudio.eu/nl/#contact) en beschrijf wat u gebouwd heeft — de meeste oprichters krijgen binnen een dag een helder antwoord. Manifera's bredere custom softwarewerk wordt toegelicht op de [custom software development pagina](https://www.manifera.com/services/custom-software-development/).
 
 ## De kleine lettertjes lezen: Vier clausules die het waard zijn om daadwerkelijk te controleren
 

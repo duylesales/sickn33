@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/env-variable-sprawl-config-debt-ai-tools"
+    "@id": "https://launchstudio.eu/nl/blog/env-variable-sprawl-config-debt-ai-tools"
   }
 }
 </script>
@@ -49,7 +49,7 @@ LaunchStudio is geen alleenstaande aannemer; het wordt ondersteund door Manifera
 
 Een installatie die klaar is voor productie heeft een paar concrete eigenschappen: elk geheim leeft op exact één plek per omgeving (ontwikkeling, staging, productie), niets is hardgecodeerd in applicatiecode ongeacht hoe aantrekkelijk dat was tijdens een snelle herstelling, `.env`-bestanden en gelijkwaardigen worden vanaf de allereerste commit uitgesloten van versiebeheer, en er is een eenvoudig document of README-gedeelte dat elke omgevingsvariabele vermeldt, waar deze voor dient, en welke dienst deze heeft uitgegeven. Niets hiervan is geavanceerde engineering – het is basis hygiëne die gemakkelijk te onderhouden is vanaf dag één en oprecht pijnlijk is om achteraf in te bouwen na maanden van ad hoc toevoegingen. Dat is exact waarom het de moeite waard is om de audit nu te doen in plaats van tijdens een daadwerkelijk beveiligingsincident.
 
-Ons team, werkend vanuit Manifera's kantoor in Amsterdam, voert dit doorgaans uit als een gefocust traject: een volledige codebase-scan op hardgecodeerde geheimen, consolidatie in een correcte omgevingsconfiguratie, en een rotatie van alle sleutels die ooit in de versiegeschiedenis zijn blootgesteld. Roterend is namelijk de enige echte herstelling zodra een geheim een git-logboek heeft geraakt. Als u een gevoel wilt krijgen van de omvang en kosten voor uw eigen project, is onze [prijscalculator](https://launchstudio.eu/en/#calculator) een snel startpunt.
+Ons team, werkend vanuit Manifera's kantoor in Amsterdam, voert dit doorgaans uit als een gefocust traject: een volledige codebase-scan op hardgecodeerde geheimen, consolidatie in een correcte omgevingsconfiguratie, en een rotatie van alle sleutels die ooit in de versiegeschiedenis zijn blootgesteld. Roterend is namelijk de enige echte herstelling zodra een geheim een git-logboek heeft geraakt. Als u een gevoel wilt krijgen van de omvang en kosten voor uw eigen project, is onze [prijscalculator](https://launchstudio.eu/nl/#calculator) een snel startpunt.
 
 ## Het consolideren van geheimen kan uw omgevingsgrenzen stilletjes vervagen
 

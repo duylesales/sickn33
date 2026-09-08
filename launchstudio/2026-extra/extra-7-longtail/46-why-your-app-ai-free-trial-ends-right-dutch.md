@@ -13,10 +13,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Waarom uw app-AI-gratis-proefperiode eindigt vlak vóór het moeilijke deel",
   "description": "Een app-AI-gratis-proefperiode is genereus tot precies het moment waarop u productiefuncties nodig heeft. Een kostenoverzicht van wat gratis niveaus daadwerkelijk dekken en wat veilig lanceren daarbovenop kost.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-13",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/why-your-app-ai-free-trial-ends-right" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/why-your-app-ai-free-trial-ends-right" }
 }
 </script>
 

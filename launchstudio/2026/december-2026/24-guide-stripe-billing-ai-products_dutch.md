@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-12-24",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/guide-stripe-billing-ai-products"
+    "@id": "https://launchstudio.eu/nl/blog/guide-stripe-billing-ai-products"
   }
 }
 </script>
@@ -56,9 +56,9 @@ AI-tools zoals Lovable en Bolt genereren een standaard Stripe checkout-flow rela
 
 ## Dit Direct in Eén Keer Goed Neerzetten
 
-Bugs in de facturatie zijn buitengewoon schadelijk omdat ze direct aan het geld van klanten raken — een abonnement dat niet correct stopt of een klant die dubbel wordt belast door een niet-idempotente webhook veroorzaakt direct een financieel probleem en een vertrouwensbreuk. [LaunchStudio](https://launchstudio.eu/en/) implementeert Stripe (en Mollie, favoriet voor Nederlandse en Europese iDEAL-betalingen) als vast onderdeel van het Launch & Grow pakket, steunend op Manifera's ervaring met betaalsystemen in 160+ opgeleverde projecten.
+Bugs in de facturatie zijn buitengewoon schadelijk omdat ze direct aan het geld van klanten raken — een abonnement dat niet correct stopt of een klant die dubbel wordt belast door een niet-idempotente webhook veroorzaakt direct een financieel probleem en een vertrouwensbreuk. [LaunchStudio](https://launchstudio.eu/nl/) implementeert Stripe (en Mollie, favoriet voor Nederlandse en Europese iDEAL-betalingen) als vast onderdeel van het Launch & Grow pakket, steunend op Manifera's ervaring met betaalsystemen in 160+ opgeleverde projecten.
 
-[Bespreek uw facturatie-architectuur met een engineer](https://launchstudio.eu/en/#calculator) vóórdat uw eerste klacht over dubbele afschrijvingen binnenkomt.
+[Bespreek uw facturatie-architectuur met een engineer](https://launchstudio.eu/nl/#calculator) vóórdat uw eerste klacht over dubbele afschrijvingen binnenkomt.
 
 ## Reconciliatie: Voorkomen dat Stripe en Uw Database Uit Elkaar Lopen
 

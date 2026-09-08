@@ -16,7 +16,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-11-09",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-secure"
+    "@id": "https://launchstudio.eu/nl/blog/ai-secure"
   }
 }
 </script>
@@ -90,7 +90,7 @@ Voordat een met AI gebouwde applicatie live gaat met echte klantdata, moet deze 
 
 ## Professionele Beveiligingsharding: Wat LaunchStudio Biedt
 
-[LaunchStudio](https://launchstudio.eu/en/) hanteert een grondige security-audit en hardingsprocedure bij elk traject. Veiligheid is bij ons geen optie achteraf, maar het fundament.
+[LaunchStudio](https://launchstudio.eu/nl/) hanteert een grondige security-audit en hardingsprocedure bij elk traject. Veiligheid is bij ons geen optie achteraf, maar het fundament.
 
 Deze aanpak vloeit rechtstreeks voort uit de achtergrond van Manifera. Herre Roelevink, oprichter van Manifera en managing director van LaunchStudio, was eerder medeoprichter en directeur bij CyberDevOps (nu [CFLW Cyber Strategies](https://www.cflw.com/)), waar hij in samenwerking met TNO (Nederlandse Organisatie voor Toegepast Natuurwetenschappelijk Onderzoek) de "Dark Web Monitor" ontwikkelde. Cybersecurity zit in het DNA van onze organisatie.
 
@@ -102,7 +102,7 @@ Het technische team aan de Pho Quangstraat 10 in Ho Chi Minhstad voert de techni
 - **Beveiligingsdocumentatie** voor compliance en zakelijke klanten
 - **AVG/GDPR-validatie** voor veilige verwerking van persoonsgegevens
 
-[Vraag een gratis beveiligingsbeoordeling aan van uw prototype](https://launchstudio.eu/en/#contact).
+[Vraag een gratis beveiligingsbeoordeling aan van uw prototype](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

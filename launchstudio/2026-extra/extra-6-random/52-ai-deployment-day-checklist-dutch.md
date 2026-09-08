@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "De AI-Deploymentdag Die Verkeerd Gaat (En de Checklist Die Het Voorkomt)",
   "description": "Een stap-voor-stap verslag van hoe een AI-deployment misgaat wanneer omgevingsvariabelen niet per omgeving worden gescheiden, plus de checklist die dit opvangt vóór de lancering.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-deployment-day-checklist" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-deployment-day-checklist" }
 }
 </script>
 
@@ -40,7 +40,7 @@ Dit is precies de fout die makkelijk één keer wordt gemaakt en nooit wordt opg
 
 AI-codeerassistenten zijn uitstekend in het end-to-end koppelen van een functie — roep deze API aan, render deze respons — maar de tool heeft geen zelfstandig besef van welke waarden in die koppeling geheimen zijn en welke publieke configuratie. Als een prompt zegt "verbind met de AI-provider met deze sleutel", doet de tool precies dat, in welk bestand dan ook waarmee de functie werkt, zonder noodzakelijkerwijs te signaleren dat dat bestand uiteindelijk wordt gebundeld en naar de browser verzonden. Het onderscheid tussen server-side en client-side code is een architecturaal concept waarvan de tool aanneemt dat u het al begrijpt — en voor oprichters die snel bewegen richting hun eerste productiedeployment, is dat vaak het ene ding dat niemand expliciet heeft gecontroleerd.
 
-Manifera brengt 11+ jaar aan productie-engineeringervaring naar precies dit soort kloof, met technici gevestigd in Singapore die oprichters in de regio ondersteunen met deploymentbeoordelingen vóór de lancering, niet erna. Als u toewerkt naar uw eigen deploymentdag, kunt u [praten met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact) voordat u pusht, of bekijken hoe Manifera [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) structureert voor teams die dit soort beoordeling ingebouwd willen hebben in hun proces in plaats van er achteraf aan vast te plakken.
+Manifera brengt 11+ jaar aan productie-engineeringervaring naar precies dit soort kloof, met technici gevestigd in Singapore die oprichters in de regio ondersteunen met deploymentbeoordelingen vóór de lancering, niet erna. Als u toewerkt naar uw eigen deploymentdag, kunt u [praten met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) voordat u pusht, of bekijken hoe Manifera [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) structureert voor teams die dit soort beoordeling ingebouwd willen hebben in hun proces in plaats van er achteraf aan vast te plakken.
 
 ## Echt voorbeeld
 

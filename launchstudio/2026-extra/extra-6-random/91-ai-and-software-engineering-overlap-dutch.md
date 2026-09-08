@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Waar 'AI en software engineering' Elkaar Echt Overlappen (en Waar Nog Niet)",
   "description": "AI en software engineering overlappen meer dan oprichters beseffen, maar de kloof tussen het genereren van code en het engineeren van een systeem is precies waar productie-incidenten vandaan komen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-and-software-engineering-overlap" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-and-software-engineering-overlap" }
 }
 </script>
 
@@ -37,7 +37,7 @@ De verwarring ontstaat omdat door AI gegenereerde output er afgerond uitziet. Ze
 
 Een nuttige vuistregel: als een functie gedeelde staat tussen meer dan één gebruiker betreft — boekingen, diensten, voorraadaantallen, betalingen, alles met een beperkte hoeveelheid die meerdere mensen kunnen claimen — behandel de output van de AI dan als een eerste concept, niet als een eindproduct. Laat een reviewronde uitvoeren, menselijk of anderszins, specifiek gericht op wat er gebeurt onder gelijktijdigheid, voordat die functie bij echte gebruikers terechtkomt.
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en ons team in Amsterdam werkt met oprichters aan precies deze overdracht — het punt waarop door AI gegenereerde code een tweede, in engineering getraind paar ogen nodig heeft voordat het echte verkeer ontmoet. U kunt zien hoe die review past in een lancering via ons [stap-voor-stap-proces](https://launchstudio.eu/en/#process), en Manifera's eigen [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) laat dezelfde discipline zien toegepast op enterprise-schaal.
+LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en ons team in Amsterdam werkt met oprichters aan precies deze overdracht — het punt waarop door AI gegenereerde code een tweede, in engineering getraind paar ogen nodig heeft voordat het echte verkeer ontmoet. U kunt zien hoe die review past in een lancering via ons [stap-voor-stap-proces](https://launchstudio.eu/nl/#process), en Manifera's eigen [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) laat dezelfde discipline zien toegepast op enterprise-schaal.
 
 ## Echt voorbeeld
 

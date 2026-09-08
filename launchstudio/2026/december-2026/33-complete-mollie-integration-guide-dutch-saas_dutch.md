@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/complete-mollie-integration-guide-dutch-saas"
+    "@id": "https://launchstudio.eu/nl/blog/complete-mollie-integration-guide-dutch-saas"
   }
 }
 </script>
@@ -65,9 +65,9 @@ Veel LaunchStudio-klanten gebruiken uiteindelijk beide systemen — Mollie voor 
 
 ## De Integratie Direct Goed Neerzetten
 
-Een professioneel geïmplementeerd Mollie-abonnementssysteem, inclusief correcte webhook-afhandeling en btw-logica, vergt aanzienlijk meer werk dan een simpele betaalknop in een demo. [LaunchStudio](https://launchstudio.eu/en/) implementeert Mollie-integraties als vast onderdeel van het Launch & Grow pakket, steunend op de directe bekendheid van Manifera's team in Amsterdam met het Nederlandse betalingslandschap.
+Een professioneel geïmplementeerd Mollie-abonnementssysteem, inclusief correcte webhook-afhandeling en btw-logica, vergt aanzienlijk meer werk dan een simpele betaalknop in een demo. [LaunchStudio](https://launchstudio.eu/nl/) implementeert Mollie-integraties als vast onderdeel van het Launch & Grow pakket, steunend op de directe bekendheid van Manifera's team in Amsterdam met het Nederlandse betalingslandschap.
 
-[Laat uw Mollie-integratie specificeren](https://launchstudio.eu/en/#calculator) voor uw specifieke abonnements- of betaalmodel.
+[Laat uw Mollie-integratie specificeren](https://launchstudio.eu/nl/#calculator) voor uw specifieke abonnements- of betaalmodel.
 
 ## Het Afhandelen van Mislukte en Geweigerde Incasso's Onder Mollie's Mandaatsysteem
 

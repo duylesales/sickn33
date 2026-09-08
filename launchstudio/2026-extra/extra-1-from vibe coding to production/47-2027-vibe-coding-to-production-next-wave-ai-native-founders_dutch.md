@@ -29,9 +29,9 @@ Een specifiek, contra-intuïtief risico het waard om direct te benoemen: naarmat
 
 De specifieke, concrete praktijken doorheen deze serie behandeld — de uitvoerbare checklist, de verificatieartefacten, de audit-eerst-aanpak — hangen niet af van enige specifieke aanname over toekomstige toolcapaciteit. Ze zijn gebouwd rond het structurele onderscheid tussen generatie en verificatie, wat standhoudt ongeacht hoe geavanceerd generatie wordt. Een founder die dat onderscheid internaliseert, in plaats van aan te nemen dat betere tools het uiteindelijk zullen afhandelen, is goed gepositioneerd ongeacht hoe de specifieke tools beschikbaar voor hen evolueren over de komende jaren.
 
-[LaunchStudio](https://launchstudio.eu/en/) is specifiek gebouwd rond dit structurele onderscheid — en biedt de validatielaag die generatieverbeteringen niet automatisch leveren, ongeacht welke specifieke tools founders gebruiken — gesteund door Manifera's 11+ jaar engineeringervaring en een specifieke, doorlopende focus op precies deze evoluerende categorie.
+[LaunchStudio](https://launchstudio.eu/nl/) is specifiek gebouwd rond dit structurele onderscheid — en biedt de validatielaag die generatieverbeteringen niet automatisch leveren, ongeacht welke specifieke tools founders gebruiken — gesteund door Manifera's 11+ jaar engineeringervaring en een specifieke, doorlopende focus op precies deze evoluerende categorie.
 
-[Bouw de validatiegewoonte nu, ongeacht hoe de tools evolueren](https://launchstudio.eu/en/#contact) — de specifieke tools zullen blijven veranderen; het onderliggende gat dat dit aanpakt zal waarschijnlijk blijven bestaan.
+[Bouw de validatiegewoonte nu, ongeacht hoe de tools evolueren](https://launchstudio.eu/nl/#contact) — de specifieke tools zullen blijven veranderen; het onderliggende gat dat dit aanpakt zal waarschijnlijk blijven bestaan.
 
 ## Echt voorbeeld
 

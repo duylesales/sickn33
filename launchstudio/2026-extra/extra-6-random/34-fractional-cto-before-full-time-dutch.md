@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Het pleidooi voor het inhuren van een fractional CTO vóórdat u een fulltime CTO aanneemt",
   "description": "Een educatieve gids voor oprichters over waarom het aannemen van een fulltime CTO vóórdat de echte technische problemen van uw product zijn gedefinieerd, vaak betekent dat u de verkeerde vaardigheden inhuurt voor de fase waarin u zich daadwerkelijk bevindt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/fractional-cto-before-full-time" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/fractional-cto-before-full-time" }
 }
 </script>
 
@@ -42,7 +42,7 @@ Dat laatste punt is belangrijker dan oprichters doorgaans verwachten. Een bekwam
 
 Niets van dit alles is een argument tegen het ooit aannemen van een CTO — het is een argument over volgorde. Zodra u specifiek weet welk technisch leiderschap uw product nodig heeft — omdat iemand daadwerkelijk de codebase heeft gediagnosticeerd en het probleem heeft gedefinieerd — wordt een fulltime aanname een veel preciezere beslissing. U huurt dan voor een bekende functieomschrijving in plaats van een hoopvolle.
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en ons Amsterdamse team fungeert routinematig als precies dit soort fractional, diagnose-eerst-opdracht voor niet-technische oprichters voordat ze een permanente technische medewerker aannemen. U kunt [berekenen wat een productiegereedheidsbeoordeling kost](https://launchstudio.eu/en/#calculator) voordat u zich aan iets groters verbindt. Voor oprichters die dit afwegen tegen een volledige maatwerkbouw, heeft het team voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera precies dit soort gefaseerde technische aannamebeslissing helpen structureren bij meer dan 160 projecten.
+LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en ons Amsterdamse team fungeert routinematig als precies dit soort fractional, diagnose-eerst-opdracht voor niet-technische oprichters voordat ze een permanente technische medewerker aannemen. U kunt [berekenen wat een productiegereedheidsbeoordeling kost](https://launchstudio.eu/nl/#calculator) voordat u zich aan iets groters verbindt. Voor oprichters die dit afwegen tegen een volledige maatwerkbouw, heeft het team voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera precies dit soort gefaseerde technische aannamebeslissing helpen structureren bij meer dan 160 projecten.
 
 ## Echt voorbeeld
 

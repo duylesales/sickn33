@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Waarom 'Gratis' AI-appbouwers het Meest Kosten op het Slechtst Mogelijke Moment",
   "description": "Gratis-laag AI-appbouwers beperken precies wanneer de vraag piekt. De upgrade die u uitstelt om geld te besparen, kost u uiteindelijk veel meer wanneer u er midden in een crisis toe wordt gedwongen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/free-ai-app-builders-real-cost" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/free-ai-app-builders-real-cost" }
 }
 </script>
 
@@ -37,7 +37,7 @@ De gratis laag bespaart een specifiek, bekend bedrag elke maand dat u erop blijf
 
 Vraag uzelf eerlijk af: is er een specifieke week of seizoen in aantocht waarin deze app perfect moet werken voor echte mensen die erop rekenen? Zo ja, dat is de deadline om van de gratis laag af te stappen — niet de dag dat het faalt, maar de week ervoor.
 
-LaunchStudio, mogelijk gemaakt door Manifera's meer dan 11 jaar softwareontwikkelingservaring, werkt met oprichters in en rond Ho Chi Minh-stad om de overstap van een gratis laag te plannen voordat een voorspelbare drukke periode aanbreekt, niet erdoor. U kunt met onze [prijscalculator](https://launchstudio.eu/en/#calculator) een helder beeld krijgen van wat die overstap doorgaans kost, en het [portfolio](https://www.manifera.com/portfolio/) van Manifera toont hetzelfde schaalwerk geleverd voor veel grotere klanten.
+LaunchStudio, mogelijk gemaakt door Manifera's meer dan 11 jaar softwareontwikkelingservaring, werkt met oprichters in en rond Ho Chi Minh-stad om de overstap van een gratis laag te plannen voordat een voorspelbare drukke periode aanbreekt, niet erdoor. U kunt met onze [prijscalculator](https://launchstudio.eu/nl/#calculator) een helder beeld krijgen van wat die overstap doorgaans kost, en het [portfolio](https://www.manifera.com/portfolio/) van Manifera toont hetzelfde schaalwerk geleverd voor veel grotere klanten.
 
 ## Echt voorbeeld
 

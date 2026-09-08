@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Waarom sommige AI-native oprichters moeten leren coderen (en de meesten niet)",
   "description": "Een opiniestuk over wanneer leren coderen daadwerkelijk helpt voor een AI-native oprichter, wanneer het een kostbare afleiding is, en waarom de neiging om 'het zelf maar te fixen' averechts kan werken tijdens een crisis.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/some-founders-should-learn-to-code" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/some-founders-should-learn-to-code" }
 }
 </script>
 
@@ -35,7 +35,7 @@ Het probleem is niet leren coderen — het is leren coderen als crisisreactie. P
 
 Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoordt het zo: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. We hebben elf jaar ervaring in precies dat." Die volwassenheid is niet iets dat een oprichter in een weekend onder druk opbouwt — het is iets dat een team over jaren opbouwt, en precies daarom bestaat LaunchStudio als alternatief voor het instinct om "het gewoon zelf te leren".
 
-LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en het Europese hoofdkantoor bevindt zich aan de Herengracht in Amsterdam, dicht bij een groot deel van de AI-native oprichterscommunity die het bedient. Als u nu naar een kapotte functie staart en zich afvraagt of u een tutorial moet openen of om hulp moet vragen, [boek dan een gratis intro-gesprek van 15 minuten](https://launchstudio.eu/en/#contact) voordat u een weekend besteedt om er op de harde manier achter te komen. Voor een idee van hoe gedisciplineerde engineering er op schaal uitziet, laat de [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera diezelfde instincten zien toegepast op zakelijke klanten.
+LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en het Europese hoofdkantoor bevindt zich aan de Herengracht in Amsterdam, dicht bij een groot deel van de AI-native oprichterscommunity die het bedient. Als u nu naar een kapotte functie staart en zich afvraagt of u een tutorial moet openen of om hulp moet vragen, [boek dan een gratis intro-gesprek van 15 minuten](https://launchstudio.eu/nl/#contact) voordat u een weekend besteedt om er op de harde manier achter te komen. Voor een idee van hoe gedisciplineerde engineering er op schaal uitziet, laat de [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera diezelfde instincten zien toegepast op zakelijke klanten.
 
 ## Echt voorbeeld
 

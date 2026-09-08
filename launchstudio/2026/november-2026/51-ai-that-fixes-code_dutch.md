@@ -16,7 +16,7 @@ Doelpersona: VP of Engineering / CTO
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: VP of Engineering / CTO
   "datePublished": "2026-12-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-that-fixes-code"
+    "@id": "https://launchstudio.eu/nl/blog/ai-that-fixes-code"
   }
 }
 </script>
@@ -58,7 +58,7 @@ Slagen alle tests in de sandbox, dan maakt de agent een nette Git-commit aan en 
 
 Standaard AI-codetools zijn nuttig voor individuele ontwikkelaars, maar missen vaak de strenge beveiliging en CI/CD-integraties die nodig zijn voor een enterprise-team van 50 man.
 
-[LaunchStudio](https://launchstudio.eu/en/), gedragen door de DevSecOps-experts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, integreert geautomatiseerde bug-reparatie direct in uw bestaande infrastructuur:
+[LaunchStudio](https://launchstudio.eu/nl/), gedragen door de DevSecOps-experts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, integreert geautomatiseerde bug-reparatie direct in uw bestaande infrastructuur:
 1. **Sentry/Datadog Koppeling:** Wij bouwen webhook-middleware waarmee productie-foutmeldingen automatisch een dedicated AI-agent triggeren.
 2. **Beveiligde Sandbox-Orkestratie:** Wij richten tijdelijke Docker-omgevingen in waarin de agent veilig code compileert en tests uitvoert zonder risico voor productiesystemen.
 3. **Beveiligde Commits:** Wij dwingen strikte branch protection rules af: de AI mag uitsluitend pull requests openen op feature branches en kan cryptografisch nooit direct naar `main` mergen, zodat menselijke ontwikkelaars altijd de controle behouden.

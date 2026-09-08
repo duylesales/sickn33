@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/software-ai-built-fast-still-needs-a-second-slower-pass"
+    "@id": "https://launchstudio.eu/nl/blog/software-ai-built-fast-still-needs-a-second-slower-pass"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Dit is wat een open CORS-beleid uniek moeilijk maakt om op te vangen via gewoon 
 
 ## Waarom "Snel nu" en "Later vergrendeld" een redelijke ruil is, mits bewust
 
-Er is niets mis met een open CORS-beleid tijdens actieve vroege ontwikkeling – de fout is alleen in het behandelen van dat gemak in de vroege fase als een permanente, onbeoordeelde standaardwaarde in plaats van een bekende afweging met een geplande tweede stap voordat er echte gebruikersgegevens bij betrokken zijn. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort uithardingsstap uit als standaardpraktijk voordat een product live gaat, ondersteund door Manifera's 11+ jaar ervaring met het configureren van productie-API-beveiliging voor klanten waaronder Vodafone.
+Er is niets mis met een open CORS-beleid tijdens actieve vroege ontwikkeling – de fout is alleen in het behandelen van dat gemak in de vroege fase als een permanente, onbeoordeelde standaardwaarde in plaats van een bekende afweging met een geplande tweede stap voordat er echte gebruikersgegevens bij betrokken zijn. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort uithardingsstap uit als standaardpraktijk voordat een product live gaat, ondersteund door Manifera's 11+ jaar ervaring met het configureren van productie-API-beveiliging voor klanten waaronder Vodafone.
 
 Manifera's uithardingswerk voor infrastructuur en API's wordt geleverd vanuit het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/en/#calculator).
+[Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/nl/#calculator).
 
 ## Hoe u uw eigen CORS-configuratie kunt auditeren en uitharden
 

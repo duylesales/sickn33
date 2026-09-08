@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-08-01",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/understanding-your-apps-ai-security-risk-before-a-user-finds-it"
+    "@id": "https://launchstudio.eu/nl/blog/understanding-your-apps-ai-security-risk-before-a-user-finds-it"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Een blootgestelde functie die alleen een schadeloze taak uitvoert vormt op zichz
 
 ## Wat een juiste infrastructuurbeoordeling inhoudt
 
-Een grondige beoordeling inventariseert elk ingezet eindpunt in een systeem – niet alleen degene die rechtstreeks bereikbaar zijn via de gebruikersinterface van de hoofdapplicatie – en bevestigt dat elk eindpunt passende authenticatie afdwingt. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort volledige infrastructuurinventarisatie uit als onderdeel van haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met serverloze en cloud-native architectuursystemen.
+Een grondige beoordeling inventariseert elk ingezet eindpunt in een systeem – niet alleen degene die rechtstreeks bereikbaar zijn via de gebruikersinterface van de hoofdapplicatie – en bevestigt dat elk eindpunt passende authenticatie afdwingt. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort volledige infrastructuurinventarisatie uit als onderdeel van haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met serverloze en cloud-native architectuursystemen.
 
 Manifera's beoordelingen van infrastructuurbeveiliging worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

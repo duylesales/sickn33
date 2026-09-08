@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/make-your-own-ai-product-without-rebuilding-backend"
+    "@id": "https://launchstudio.eu/nl/blog/make-your-own-ai-product-without-rebuilding-backend"
   }
 }
 </script>
@@ -49,9 +49,9 @@ Een oprichter die serieus meer dan één AI-product wil maken, profiteert ervan 
 
 Oprichters die meerdere ideeën achter elkaar valideren, of tegelijkertijd een kleine portfolio van nicheproducten beheren, zien het duidelijkste voordeel – de daadwerkelijke unieke bouwtijd van elk nieuw idee krimpt aanzienlijk zodra de fundamentlaag niet opnieuw hoeft te worden geproduceerd, en elk nieuw idee erft beveiligings- en betrouwbaarheidsnormen die het eerste idee heeft verdiend door daadwerkelijk verhardingswerk, in plaats van te starten vanaf een ongecontroleerde baseline die zichzelf opnieuw moet bewijzen voordat iemand het kan vertrouwen.
 
-[LaunchStudio](https://launchstudio.eu/en/) bouwt precies dit soort herbruikbare, productierijpe fundamenten voor oprichters die van plan zijn meer dan één AI-product te maken, gebruikmakend van Manifera's eigen interne praktijk van het onderhouden van gedeelde, geharde infrastructuurpatronen over meer dan 160 klantprojecten die zijn geleverd vanuit de kantoren in Amsterdam en Singapore, in plaats van elke afzonderlijke opdracht te behandelen als een leeg blad dat de klok weer vanaf nul laat lopen.
+[LaunchStudio](https://launchstudio.eu/nl/) bouwt precies dit soort herbruikbare, productierijpe fundamenten voor oprichters die van plan zijn meer dan één AI-product te maken, gebruikmakend van Manifera's eigen interne praktijk van het onderhouden van gedeelde, geharde infrastructuurpatronen over meer dan 160 klantprojecten die zijn geleverd vanuit de kantoren in Amsterdam en Singapore, in plaats van elke afzonderlijke opdracht te behandelen als een leeg blad dat de klok weer vanaf nul laat lopen.
 
-[Bouw uw fundament één keer, lanceer meer dan één keer](https://launchstudio.eu/en/#contact) — de delen van uw product die niet het idee zijn, hoeven niet elke keer dat het idee verandert te worden herbouwd.
+[Bouw uw fundament één keer, lanceer meer dan één keer](https://launchstudio.eu/nl/#contact) — de delen van uw product die niet het idee zijn, hoeven niet elke keer dat het idee verandert te worden herbouwd.
 
 ## Een zelftest: Is wat u hergebruikt een fundament, of gewoon een gewoonte?
 

@@ -33,9 +33,9 @@ Founders die deze mythe geloven slaan de specifieke, doelbewuste verificatiestap
 
 Niets aan dit gat dichten vereist het wantrouwen of weggooien van wat een AI-codeertool produceerde — de functionele code is doorgaans oprecht solide. Wat nodig is, is het toevoegen van de verificatielaag die het generatieproces nooit omvatte: reviewen op de specifieke patronen bekend om terug te keren, authenticatie en toegangscontrole direct tegen de API testen in plaats van via de interface, en scannen op blootgestelde credentials over de complete codebasegeschiedenis.
 
-[LaunchStudio](https://launchstudio.eu/en/) biedt precies deze verificatielaag, en behandelt jouw AI-gegenereerde code als een sterk startpunt dat specifieke, doelbewuste beveiligingsvalidatie vereist in plaats van blind vertrouwen of onnodig herbouwen, gesteund door Manifera's cybersecuritygeïnformeerde engineeringcultuur.
+[LaunchStudio](https://launchstudio.eu/nl/) biedt precies deze verificatielaag, en behandelt jouw AI-gegenereerde code als een sterk startpunt dat specifieke, doelbewuste beveiligingsvalidatie vereist in plaats van blind vertrouwen of onnodig herbouwen, gesteund door Manifera's cybersecuritygeïnformeerde engineeringcultuur.
 
-[Krijg de beveiligingsverificatie die jouw AI-tool nooit daadwerkelijk uitvoerde](https://launchstudio.eu/en/#contact) — de code is waarschijnlijk prima; de ongeteste aanname is het daadwerkelijke risico.
+[Krijg de beveiligingsverificatie die jouw AI-tool nooit daadwerkelijk uitvoerde](https://launchstudio.eu/nl/#contact) — de code is waarschijnlijk prima; de ongeteste aanname is het daadwerkelijke risico.
 
 ## Echt voorbeeld
 

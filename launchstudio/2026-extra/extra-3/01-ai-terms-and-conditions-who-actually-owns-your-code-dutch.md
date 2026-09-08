@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-terms-and-conditions-who-actually-owns-your-code"
+    "@id": "https://launchstudio.eu/nl/blog/ai-terms-and-conditions-who-actually-owns-your-code"
   }
 }
 </script>
@@ -47,9 +47,9 @@ De meeste AI-coderingstools behouden zich het recht voor om hun algemene voorwaa
 
 ## Wat dit praktisch betekent voor een oprichter die zich voorbereidt op een verhoging of verkoop
 
-[LaunchStudio](https://launchstudio.eu/en/) beantwoordt deze exacte vraag routinematig tijdens productiegereedheidsopdrachten, vooral omdat Manifera's eigen engineeringteams – gevestigd aan de Herengracht 420 in Amsterdam en het ontwikkelingscentrum aan de Pho Quang Street in Ho Chi Minh-stad – voldoende due diligence-processen hebben afgehandeld zodat zakelijke klanten precies weten om welke documentatie een investeerder of overnemende partij daadwerkelijk zal vragen, en het is zelden een formeel juridisch advies; het zijn meestal gewoon de voorwaarden van de tool zoals ze waren op de datum waarop uw code werd gegenereerd, ergens bewaard waar ze terug te vinden zijn in plaats van onder druk te worden gereconstrueerd zodra iemand er uiteindelijk om vraagt.
+[LaunchStudio](https://launchstudio.eu/nl/) beantwoordt deze exacte vraag routinematig tijdens productiegereedheidsopdrachten, vooral omdat Manifera's eigen engineeringteams – gevestigd aan de Herengracht 420 in Amsterdam en het ontwikkelingscentrum aan de Pho Quang Street in Ho Chi Minh-stad – voldoende due diligence-processen hebben afgehandeld zodat zakelijke klanten precies weten om welke documentatie een investeerder of overnemende partij daadwerkelijk zal vragen, en het is zelden een formeel juridisch advies; het zijn meestal gewoon de voorwaarden van de tool zoals ze waren op de datum waarop uw code werd gegenereerd, ergens bewaard waar ze terug te vinden zijn in plaats van onder druk te worden gereconstrueerd zodra iemand er uiteindelijk om vraagt.
 
-[Zorg dat de documentatie over het eigendom van uw code op orde is voordat iemand erom vraagt](https://launchstudio.eu/en/#contact) — een vraag van vijf minuten tijdens due diligence mag geen vertraging worden die het momentum precies op het verkeerde moment blokkeert.
+[Zorg dat de documentatie over het eigendom van uw code op orde is voordat iemand erom vraagt](https://launchstudio.eu/nl/#contact) — een vraag van vijf minuten tijdens due diligence mag geen vertraging worden die het momentum precies op het verkeerde moment blokkeert.
 
 ## Die andere eigendomsvraag: open-sourcecode die verborgen zit in wat de AI heeft gegenereerd
 

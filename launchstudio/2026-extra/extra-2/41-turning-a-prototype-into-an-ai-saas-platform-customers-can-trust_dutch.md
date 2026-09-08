@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "datePublished": "2026-07-30",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/turning-a-prototype-into-an-ai-saas-platform-customers-can-trust"
+    "@id": "https://launchstudio.eu/nl/blog/turning-a-prototype-into-an-ai-saas-platform-customers-can-trust"
   }
 }
 </script>
@@ -55,11 +55,11 @@ Back-upopslag is niet iets waar oprichters of gebruikers rechtstreeks mee commun
 
 ## Wat een juiste beoordeling van back-upbeveiliging inhoudt
 
-Een grondige controle bevestigt dat back-upopslag dezelfde authenticatie vereist als productiegegevens, verifieert dat back-upbestanden niet bereikbaar zijn via voorspelbare of openbare URL's, en test dat toegangsbesturingselementen daadwerkelijk werken zoals bedoeld. [LaunchStudio](https://launchstudio.eu/en/) omvat exact dit soort beoordeling van back-upbeveiliging als onderdeel van haar Launch & Grow-pakket, ondersteund door Manifera's 11+ jaar ervaring met het beheren van productie-gegevensinfrastructuur.
+Een grondige controle bevestigt dat back-upopslag dezelfde authenticatie vereist als productiegegevens, verifieert dat back-upbestanden niet bereikbaar zijn via voorspelbare of openbare URL's, en test dat toegangsbesturingselementen daadwerkelijk werken zoals bedoeld. [LaunchStudio](https://launchstudio.eu/nl/) omvat exact dit soort beoordeling van back-upbeveiliging als onderdeel van haar Launch & Grow-pakket, ondersteund door Manifera's 11+ jaar ervaring met het beheren van productie-gegevensinfrastructuur.
 
 Manifera's beveiligingsbeoordelingen voor back-ups en infrastructuur worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/en/#calculator).
+[Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

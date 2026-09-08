@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-08-03",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/how-to-build-ai-app-projects-that-survive-their-first-real-users"
+    "@id": "https://launchstudio.eu/nl/blog/how-to-build-ai-app-projects-that-survive-their-first-real-users"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Zonder juiste verificatie kan een terugbetalingsverzoek dat verwijst naar een ge
 
 ## Stap vijf: Implementeer verificatie zonder legitieme terugbetalingen te bemoeilijken
 
-Een correcte herstelling verifieert het bestaan, het eigendom en de huidige terugbetalingsstatus van de bestelling tegen de daadwerkelijke bestelrecords voordat er enige terugbetaling wordt verwerkt. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort orderverificatielogica als onderdeel van haar beoordeling van betalings- en bedrijfslogica, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van fraudebestendige transactionele systemen.
+Een correcte herstelling verifieert het bestaan, het eigendom en de huidige terugbetalingsstatus van de bestelling tegen de daadwerkelijke bestelrecords voordat er enige terugbetaling wordt verwerkt. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort orderverificatielogica als onderdeel van haar beoordeling van betalings- en bedrijfslogica, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van fraudebestendige transactionele systemen.
 
 Manifera's engineering voor bedrijfslogica en fraudepreventie wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Krijg uw betalingsstroom getest tegen mislukkingsomstandigheden uit de echte wereld](https://launchstudio.eu/en/#calculator).
+[Krijg uw betalingsstroom getest tegen mislukkingsomstandigheden uit de echte wereld](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

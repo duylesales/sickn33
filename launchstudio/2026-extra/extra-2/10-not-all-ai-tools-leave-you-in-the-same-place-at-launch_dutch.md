@@ -16,7 +16,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/not-all-ai-tools-leave-you-in-the-same-place-at-launch"
+    "@id": "https://launchstudio.eu/nl/blog/not-all-ai-tools-leave-you-in-the-same-place-at-launch"
   }
 }
 </script>
@@ -69,11 +69,11 @@ Voordat een bureau zich verbindt aan een omvang of een prijs, heeft een kort dia
 
 ## Hoe LaunchStudio partners ondersteunt die over alle vier de tools werken
 
-[LaunchStudio](https://launchstudio.eu/en/) werkt als een stille, white-label productiepartner voor bureaus en freelancers, ongeacht welke AI-tool werd gebruikt voor het bestaande prototype van een klant – "uw branding, onze engineering" – ondersteund door Manifera's 11+ jaar ervaring over het gehele bereik van onderliggende frameworks waarin deze tools genereren: Node.js, Next.js, React en verder.
+[LaunchStudio](https://launchstudio.eu/nl/) werkt als een stille, white-label productiepartner voor bureaus en freelancers, ongeacht welke AI-tool werd gebruikt voor het bestaande prototype van een klant – "uw branding, onze engineering" – ondersteund door Manifera's 11+ jaar ervaring over het gehele bereik van onderliggende frameworks waarin deze tools genereren: Node.js, Next.js, React en verder.
 
 Manifera's white-label engineering-levering wordt gecoördineerd tussen het hoofdkantoor in Amsterdam aan de Herengracht 420 en het primaire ontwikkelingscentrum aan de Pho Quang-straat in Ho Chi Minh-stad, met door NDA gedekte trajecten als standaard voor partnerwerk.
 
-[Freelancer of bureau? We werken ook als uw stille productiepartner](https://launchstudio.eu/en/#contact).
+[Freelancer of bureau? We werken ook als uw stille productiepartner](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

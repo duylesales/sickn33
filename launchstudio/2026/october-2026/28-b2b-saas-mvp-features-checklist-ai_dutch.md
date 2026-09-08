@@ -80,7 +80,7 @@ Lanceert u een onbeveiligde MVP, dan zullen zakelijke klanten u nooit hun bedrij
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Dit is exact waar [LaunchStudio](https://launchstudio.eu/en/) uw lancering versnelt. Gesteund door het enterprise engineeringteam van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring in maatwerk B2B-softwareontwikkeling in Europa en Zuidoost-Azië, fungeren wij als uw backend deployment-partner.
+Dit is exact waar [LaunchStudio](https://launchstudio.eu/nl/) uw lancering versnelt. Gesteund door het enterprise engineeringteam van [Manifera](https://www.manifera.com/) met ruim 11 jaar ervaring in maatwerk B2B-softwareontwikkeling in Europa en Zuidoost-Azië, fungeren wij als uw backend deployment-partner.
 
 Met ons **"Launch Ready" pakket** stuurt u ons simpelweg uw met AI gegenereerde frontend. Wij verwijderen de vluchtige sandbox-code en implementeren exact deze complete B2B SaaS MVP checklist op een geharde, schaalbare productie-architectuur. Wij richten Supabase-authenticatie in met tenant-isolatie, beveiligen de database met PostgreSQL RLS en bouwen de Stripe-betaalwebhooks en automatische facturatie. Binnen **1 tot 3 weken**, voor circa een vijfde van de kosten van een traditioneel bureau, transformeren wij uw prototype in een veilige, omzetgenererende SaaS.
 
@@ -92,7 +92,7 @@ Met ons **"Launch Ready" pakket** stuurt u ons simpelweg uw met AI gegenereerde 
 - 45% van de met AI gegenereerde code bevat ernstige kwetsbaarheden — multi-tenant database-toegang en betalingen zijn de meest risicovolle onderdelen.
 - LaunchStudio levert de senior backend-engineering om deze kernfeatures binnen 1 tot 3 weken veilig te implementeren, zodat u vol vertrouwen live kunt gaan.
 
-[Klaar om uw B2B SaaS MVP te lanceren? Neem vandaag contact op met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Klaar om uw B2B SaaS MVP te lanceren? Neem vandaag contact op met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

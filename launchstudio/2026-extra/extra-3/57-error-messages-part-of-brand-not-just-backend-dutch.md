@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/error-messages-part-of-brand-not-just-backend"
+    "@id": "https://launchstudio.eu/nl/blog/error-messages-part-of-brand-not-just-backend"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Het schrijven van foutmeldingen in de daadwerkelijke stem en toon van uw merk, p
 
 Het behandelen van foutmeldingen als een echte ontwerptaak, en niet als een technische bijgedachte, betekent het specifiek beoordelen van wat uw product daadwerkelijk zegt op elk punt van storing – dezelfde bewuste aandacht die een oprichter natuurlijk toepast op zijn landingpagina-tekst of onboarding-reeks, uitgebreid naar de momenten waarop dingen misgaan. Dit zijn momenten die per interactie aanzienlijk meer emotionele consequenties hebben dan de meeste soepele, succesvolle momenten waar een product standaard veel meer ontwerpinspanning aan besteedt.
 
-[LaunchStudio](https://launchstudio.eu/en/) behandelt foutmeldingen als een echte ontwerp-overweging gedurende productieverharding. Wij zorgen ervoor dat technisch correcte foutafhandeling ook gepast communiceert naar de daadwerkelijke klant die de storing meemaakt, ondersteund door Manifera's bredere erkenning dat vertrouwen onevenredig wordt opgebouwd en verloren op exact deze momenten met hoge belangen en hoge emoties.
+[LaunchStudio](https://launchstudio.eu/nl/) behandelt foutmeldingen als een echte ontwerp-overweging gedurende productieverharding. Wij zorgen ervoor dat technisch correcte foutafhandeling ook gepast communiceert naar de daadwerkelijke klant die de storing meemaakt, ondersteund door Manifera's bredere erkenning dat vertrouwen onevenredig wordt opgebouwd en verloren op exact deze momenten met hoge belangen en hoge emoties.
 
-[Laat uw foutmeldingen ontwerpen met dezelfde zorg als de rest van uw product](https://launchstudio.eu/en/#contact) — het moment dat er iets faalt is onevenredig invloedrijk op hoe een klant over u denkt.
+[Laat uw foutmeldingen ontwerpen met dezelfde zorg als de rest van uw product](https://launchstudio.eu/nl/#contact) — het moment dat er iets faalt is onevenredig invloedrijk op hoe een klant over u denkt.
 
 ## Niet elke storing verdient dezelfde toon
 

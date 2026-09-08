@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-25",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/security-and-ai-why-the-second-word-needs-the-first-ones-help"
+    "@id": "https://launchstudio.eu/nl/blog/security-and-ai-why-the-second-word-needs-the-first-ones-help"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Retroactieve herstellingen helpen ook niet volledig. Zodra het moment voor het v
 
 ## Wat een correcte herstelling daadwerkelijk toevoegt
 
-Het sluiten van deze kloof betekent het toevoegen van een specifiek, append-only audit-logboek dat elke verlening, wijziging en intrekking van toestemming vastlegt, gekoppeld aan een tijdstempel en de identiteit van wie het heeft geautoriseerd. Dit wordt geïmplementeerd naast de bestaande functie voor het delen van toegang, in plaats van een onderdeel ervan te vervangen. [LaunchStudio](https://launchstudio.eu/en/) bouwt exact dit soort toestemmings- en audit-logboeken als onderdeel van haar op de AVG gericht beoordelingsproces, ondersteund door Manifera's 11+ jaar ervaring met nalevingsgevoelige B2B-systemen.
+Het sluiten van deze kloof betekent het toevoegen van een specifiek, append-only audit-logboek dat elke verlening, wijziging en intrekking van toestemming vastlegt, gekoppeld aan een tijdstempel en de identiteit van wie het heeft geautoriseerd. Dit wordt geïmplementeerd naast de bestaande functie voor het delen van toegang, in plaats van een onderdeel ervan te vervangen. [LaunchStudio](https://launchstudio.eu/nl/) bouwt exact dit soort toestemmings- en audit-logboeken als onderdeel van haar op de AVG gericht beoordelingsproces, ondersteund door Manifera's 11+ jaar ervaring met nalevingsgevoelige B2B-systemen.
 
 Manifera's engineeringwerk voor naleving wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld vanuit het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Plan een gratis introductiegesprek van 15 minuten](https://launchstudio.eu/en/#contact).
+[Plan een gratis introductiegesprek van 15 minuten](https://launchstudio.eu/nl/#contact).
 
 ## Een praktisch kader voor het auditeren van uw eigen toestemmingssporen
 

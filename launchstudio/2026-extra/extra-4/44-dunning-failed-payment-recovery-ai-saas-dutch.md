@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/dunning-failed-payment-recovery-ai-saas"
+    "@id": "https://launchstudio.eu/nl/blog/dunning-failed-payment-recovery-ai-saas"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Een productie-aanmaningssysteem doet een paar specifieke dingen die AI-tools nie
 
 LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters. Aanmaningslogica is een van de meest voorkomende kloven die ons team vindt bij het auditeren van met AI gebouwde abonnementsproducten – het is onzichtbaar in een demo en duur in productie. Dit maakt het exact het soort ding dat wordt gemist zonder een toegewijde beoordeling. Onze ingenieurs, ondersteund vanuit Manifera's kantoor in Singapore op 100 Tras Street, behandelen facturatie-veerkracht als een standaard onderdeel van het gereedmaken van een abonnements-SaaS-product voor echte klanten, en niet als een optionele toevoeging.
 
-Als u nog nooit daadwerkelijk heeft berekend hoeveel van uw verloop een stille kaartmislukking is in plaats van een oprechte annulering, schetst [onze pakkettenpagina](https://launchstudio.eu/en/#packages) wat een beoordeling van facturatie-veerkracht doorgaans omvat.
+Als u nog nooit daadwerkelijk heeft berekend hoeveel van uw verloop een stille kaartmislukking is in plaats van een oprechte annulering, schetst [onze pakkettenpagina](https://launchstudio.eu/nl/#packages) wat een beoordeling van facturatie-veerkracht doorgaans omvat.
 
 ## De gratieperiode heeft een eigen kostprijs — Begrens deze expliciet
 

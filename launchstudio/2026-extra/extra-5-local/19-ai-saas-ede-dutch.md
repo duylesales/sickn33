@@ -13,10 +13,10 @@ Doelgroep: SaaS Scale-Up Oprichter
   "@type": "Article",
   "headline": "Een AI SaaS bouwen in Ede: De productiestappen die oprichters overslaan",
   "description": "De productie- en opschalingsstappen die AI SaaS-oprichters in Ede doorgaans overslaan op de weg van een werkend prototype naar een betalende klantenkring, en hoe deze te dichten.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-saas-ede" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-saas-ede" }
 }
 </script>
 

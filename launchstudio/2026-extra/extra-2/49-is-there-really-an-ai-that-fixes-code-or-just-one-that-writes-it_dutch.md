@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-08-02",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/is-there-really-an-ai-that-fixes-code-or-just-one-that-writes-it"
+    "@id": "https://launchstudio.eu/nl/blog/is-there-really-an-ai-that-fixes-code-or-just-one-that-writes-it"
   }
 }
 </script>
@@ -55,11 +55,11 @@ De tool die configuratiecode genereert gebruikt getrouw welke waarde dan ook die
 
 ## Wat dit soort kloof daadwerkelijk opvangt
 
-Een toegewijde beoordeling controleert configuratiewaarden specifiek tegen hun bedoelde omgeving. Het bevestigt dat productiesystemen uitsluitend productie-inloggegevens gebruiken en vlagt eventuele omgevings-mismatches voordat ze een subtieler probleem veroorzaken. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort configuratiebeoordeling uit als onderdeel van haar proces voor productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met het beheren van omgevingsconfiguraties over productie-uitrollen.
+Een toegewijde beoordeling controleert configuratiewaarden specifiek tegen hun bedoelde omgeving. Het bevestigt dat productiesystemen uitsluitend productie-inloggegevens gebruiken en vlagt eventuele omgevings-mismatches voordat ze een subtieler probleem veroorzaken. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort configuratiebeoordeling uit als onderdeel van haar proces voor productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met het beheren van omgevingsconfiguraties over productie-uitrollen.
 
 Manifera's beoordelingen voor omgevingsconfiguratie worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Gebruik onze calculator om te zien wat dit daadwerkelijk zou kosten](https://launchstudio.eu/en/#calculator).
+[Gebruik onze calculator om te zien wat dit daadwerkelijk zou kosten](https://launchstudio.eu/nl/#calculator).
 
 ## Echt voorbeeld
 

@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Het onderhoudsplan dat niemand schrijft voor een 'door AI gegenereerde tool'",
   "description": "De meeste oprichters schrijven een lanceringsplan voor hun door AI gegenereerde tool en houden het daarbij. Dit is het onderhoudsplan in vijf stappen dat u nodig heeft voor de maanden na lancering, en waarom het overslaan ervan stilletjes dingen kapotmaakt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-generated-tool-maintenance-plan" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-generated-tool-maintenance-plan" }
 }
 </script>
 
@@ -41,7 +41,7 @@ Als u de code niet zelf heeft geschreven, heeft u waarschijnlijk geen mentale pl
 
 ## Stap 5: Begroot voor een onderhoudsronde, niet alleen voor een lancering
 
-Oprichters begroten voor de bouw. Bijna niemand begroot voor de controle na zes maanden — de ronde waarin iemand met ervaring bekijkt wat zich heeft opgestapeld, de gezondheid van afhankelijkheden controleert en de kleine dingen repareert die stilletjes achteruitgingen. Achter LaunchStudio staat het team van meer dan 120 technici van Manifera, en het team dat vanuit Amsterdam werkt, behandelt precies dit soort onderhoudsronde regelmatig voor oprichters die snel bouwden en nooit terugkeken. Het is een kleinere, goedkopere opdracht dan een herbouw, en het werkt alleen als u het inplant vóórdat er iets kapotgaat, niet erna. U kunt [ruwweg berekenen wat een onderhoudsronde zou kosten](https://launchstudio.eu/en/#calculator) voor uw specifieke tool, en zien hoe Manifera denkt over software-gezondheid op de lange termijn op de pagina [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
+Oprichters begroten voor de bouw. Bijna niemand begroot voor de controle na zes maanden — de ronde waarin iemand met ervaring bekijkt wat zich heeft opgestapeld, de gezondheid van afhankelijkheden controleert en de kleine dingen repareert die stilletjes achteruitgingen. Achter LaunchStudio staat het team van meer dan 120 technici van Manifera, en het team dat vanuit Amsterdam werkt, behandelt precies dit soort onderhoudsronde regelmatig voor oprichters die snel bouwden en nooit terugkeken. Het is een kleinere, goedkopere opdracht dan een herbouw, en het werkt alleen als u het inplant vóórdat er iets kapotgaat, niet erna. U kunt [ruwweg berekenen wat een onderhoudsronde zou kosten](https://launchstudio.eu/nl/#calculator) voor uw specifieke tool, en zien hoe Manifera denkt over software-gezondheid op de lange termijn op de pagina [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 

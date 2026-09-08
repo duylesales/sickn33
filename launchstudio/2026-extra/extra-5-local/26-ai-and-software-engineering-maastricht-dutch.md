@@ -13,10 +13,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "AI en software-engineering in Maastricht: Twee verschillende vakken, één prototype",
   "description": "AI en software-engineering worden vaak behandeld als dezelfde discipline. Het verhaal van een Maastrichtse oprichter laat zien waarom dat niet zo is, en waarom beide uitmaken vóór de lancering.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/26-ai-and-software-engineering-maastricht" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/26-ai-and-software-engineering-maastricht" }
 }
 </script>
 
@@ -36,7 +36,7 @@ LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf m
 
 ## Beslissen waar u engineering nodig heeft, en niet alleen generatie
 
-Niet elke met AI gebouwde functie heeft een volledige engineeringbeoordeling nodig — heel veel van wat met AI-tools gebouwd wordt is oprecht prima zoals het is, vooral voor interne tools of vroege validatie. De beoordelingsbeslissing is weten welke onderdelen van uw in Maastricht gebouwde prototype geld, persoonlijke gegevens of grensoverschrijdende compliance raken, omdat dat de onderdelen zijn waar engineering-strengheid niet langer optioneel is. Als u niet zeker weet waar die grens valt in uw eigen build, kunt u [uw project beschrijven aan LaunchStudio](https://launchstudio.eu/en/#contact) en een specifiek antwoord krijgen in plaats van een generieke vuistregel.
+Niet elke met AI gebouwde functie heeft een volledige engineeringbeoordeling nodig — heel veel van wat met AI-tools gebouwd wordt is oprecht prima zoals het is, vooral voor interne tools of vroege validatie. De beoordelingsbeslissing is weten welke onderdelen van uw in Maastricht gebouwde prototype geld, persoonlijke gegevens of grensoverschrijdende compliance raken, omdat dat de onderdelen zijn waar engineering-strengheid niet langer optioneel is. Als u niet zeker weet waar die grens valt in uw eigen build, kunt u [uw project beschrijven aan LaunchStudio](https://launchstudio.eu/nl/#contact) en een specifiek antwoord krijgen in plaats van een generieke vuistregel.
 
 ## Een snelle aanpak om uw eigen compliance-risico in te schatten
 

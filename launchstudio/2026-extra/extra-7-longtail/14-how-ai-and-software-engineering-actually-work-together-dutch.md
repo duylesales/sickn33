@@ -13,10 +13,10 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@type": "Article",
   "headline": "Hoe AI en software-engineering daadwerkelijk samenwerken bij LaunchStudio",
   "description": "Een kostenuitsplitsing van wat er daadwerkelijk voor nodig is om een door AI gebouwd prototype productierijp te maken, en waarom AI en software-engineering de rekening anders verdelen dan oprichters verwachten.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-11",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/how-ai-and-software-engineering-actually-work-together-at-launchstudio" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/how-ai-and-software-engineering-actually-work-together-at-launchstudio" }
 }
 </script>
 
@@ -48,7 +48,7 @@ Oprichters die vanuit een traditionele bureaumentaliteit komen, verwachten dat d
 
 De andere kostenpost die de meeste oprichters vergeten mee te tellen, is hun eigen tijd besteed aan het vanaf nul leren van beveiliging, deployment en betalingsintegratie onder lanceerdruk. Zelfs tegen een bescheiden uurwaarde kosten vier tot zes weken van de avonden en weekenden van een oprichter besteed aan het zelf aanleren van productie-engineering — met echt risico om het de eerste keer verkeerd te doen — meestal meer aan opportuniteitskosten dan de hele hierboven geprijsde tweede emmer. Dat is de echte kostenanalyse: niet "AI versus engineers", maar "uw eigen tijd besteed aan onbekend werk traag doen versus een vaste offerte van mensen die dit dagelijks doen".
 
-De engineers van Manifera — waaronder het team dat werkt vanuit Herengracht 420 in Amsterdam — prijzen elk LaunchStudio-engagement op deze manier: afgebakend tot precies wat ontbreekt, vast geoffreerd na een kort kennismakingsgesprek, nooit per uur gefactureerd met een open klok die loopt. Dezelfde vastomlijnde discipline geldt voor [Manifera's mobiele app-ontwikkelingswerk](https://www.manifera.com/services/mobile-app-development/) voor grotere klanten, alleen op een ander prijspunt. Als u een echt cijfer wilt in plaats van een bereik, [reken uw project door via de priscalculator](https://launchstudio.eu/en/#calculator) en zie waar het uitkomt voordat u zich ergens aan verbindt.
+De engineers van Manifera — waaronder het team dat werkt vanuit Herengracht 420 in Amsterdam — prijzen elk LaunchStudio-engagement op deze manier: afgebakend tot precies wat ontbreekt, vast geoffreerd na een kort kennismakingsgesprek, nooit per uur gefactureerd met een open klok die loopt. Dezelfde vastomlijnde discipline geldt voor [Manifera's mobiele app-ontwikkelingswerk](https://www.manifera.com/services/mobile-app-development/) voor grotere klanten, alleen op een ander prijspunt. Als u een echt cijfer wilt in plaats van een bereik, [reken uw project door via de priscalculator](https://launchstudio.eu/nl/#calculator) en zie waar het uitkomt voordat u zich ergens aan verbindt.
 
 ## Wat bepaalt waar u in het bereik terechtkomt
 

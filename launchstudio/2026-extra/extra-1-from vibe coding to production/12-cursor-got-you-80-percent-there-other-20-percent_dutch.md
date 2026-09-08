@@ -31,9 +31,9 @@ Het instinct, voor een founder technisch genoeg om Cursor effectief te gebruiken
 
 De meest efficiënte manier om je resterende gaten te lokaliseren is niet je eigen code opnieuw lezen, aangezien een tweede lezing door dezelfde persoon de neiging heeft dezelfde dingen te vinden als de eerste lezing. Het is het toepassen van de specifieke adversariële tests beschreven doorheen deze serie — rechtstreeks ongeautoriseerde API-toegang proberen, bewust storingen van externe diensten triggeren, git-geschiedenis controleren op geheimen — omdat dit structureel andere activiteiten zijn dan codebeoordeling, die de codebase beoefenen op manieren die normale ontwikkeling en normale review simpelweg niet doen.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt Cursor-gebouwde codebases met precies dit onderscheid in gedachten — de kwaliteit van wat je hebt gebouwd respecterend terwijl specifiek de adversariële en infrastructuurdimensies onderzocht worden die je eigen review van nature niet dekt, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) beoordeelt Cursor-gebouwde codebases met precies dit onderscheid in gedachten — de kwaliteit van wat je hebt gebouwd respecterend terwijl specifiek de adversariële en infrastructuurdimensies onderzocht worden die je eigen review van nature niet dekt, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
 
-[Vind jouw specifieke resterende 20%](https://launchstudio.eu/en/#calculator) — een tweede paar ogen met een ander mandaat dan het jouwe vangt op wat je eigen review structureel niet kan.
+[Vind jouw specifieke resterende 20%](https://launchstudio.eu/nl/#calculator) — een tweede paar ogen met een ander mandaat dan het jouwe vangt op wat je eigen review structureel niet kan.
 
 ## Echt voorbeeld
 

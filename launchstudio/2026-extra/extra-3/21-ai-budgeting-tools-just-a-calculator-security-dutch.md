@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-budgeting-tools-just-a-calculator-security"
+    "@id": "https://launchstudio.eu/nl/blog/ai-budgeting-tools-just-a-calculator-security"
   }
 }
 </script>
@@ -49,9 +49,9 @@ De beveiligingsbelangen van een product worden niet bepaald door hoe computation
 
 De specifieke hiaten die dit rechtvaardigt – echte authenticatie en autorisatie aan de serverzijde, zorgvuldige afhandeling van eventuele financiële dataverbindingen van derden en de algemene discipline voor databeveiliging die in bredere richtlijnen wordt behandeld – spiegelen bijna exact wat een product voor betalingsverwerking zou vereisen. Dit komt doordat de onderliggende datagevoeligheid oprecht vergelijkbaar is, ongeacht of er daadwerkelijk geld van eigenaar wisselt binnen het product zelf.
 
-[LaunchStudio](https://launchstudio.eu/en/) past dezelfde zorgvuldigheid toe op AI-tools voor persoonlijke financiën en budgettering als op elk product dat betalingsaanverwante gegevens verwerkt, ongeacht hoe computationeel eenvoudig de onderliggende logica ook mag lijken, ondersteund door Manifera's bredere ervaring met het beveiligen van financiële datastromen in al haar enterprise-opdrachten.
+[LaunchStudio](https://launchstudio.eu/nl/) past dezelfde zorgvuldigheid toe op AI-tools voor persoonlijke financiën en budgettering als op elk product dat betalingsaanverwante gegevens verwerkt, ongeacht hoe computationeel eenvoudig de onderliggende logica ook mag lijken, ondersteund door Manifera's bredere ervaring met het beveiligen van financiële datastromen in al haar enterprise-opdrachten.
 
-[Laat uw budgetteringstool beoordelen met de ernst die haar daadwerkelijke gegevens verdienen](https://launchstudio.eu/en/#contact) — de berekening is misschien eenvoudig; de gegevens eronder zijn dat zelden.
+[Laat uw budgetteringstool beoordelen met de ernst die haar daadwerkelijke gegevens verdienen](https://launchstudio.eu/nl/#contact) — de berekening is misschien eenvoudig; de gegevens eronder zijn dat zelden.
 
 ## Hoe u een financiële dataleverancier evalueert voordat u er verbinding mee maakt
 

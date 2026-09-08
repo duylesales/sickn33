@@ -45,9 +45,9 @@ Een founder met beperkte tijd en budget die Tier 1 volledig aanpakt en verder ni
 
 De waarde van een checklist zoals deze hangt volledig af van elk item concreet beantwoorden in plaats van aannemen. "Ik heb waarschijnlijk geen hardgecodeerde geheimen" is niet dezelfde bewering als "ik heb een git-geschiedenisscan uitgevoerd en bevestigd." De specifieke verificatiemethoden doorheen deze serie beschreven bestaan precies omdat aanname en verificatie verschillende vertrouwensniveaus opleveren, zelfs wanneer de onderliggende overtuiging toevallig correct is.
 
-[LaunchStudio](https://launchstudio.eu/en/) draait precies deze checklist tegen jouw specifieke prototype, getierd naar echte consequentie in plaats van technische categorie, en vertelt je concreet — niet generiek — waar je staat, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) draait precies deze checklist tegen jouw specifieke prototype, getierd naar echte consequentie in plaats van technische categorie, en vertelt je concreet — niet generiek — waar je staat, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
 
-[Laat jouw specifieke prototype controleren tegen precies deze checklist](https://launchstudio.eu/en/#calculator) — een checklist die je kunt verifiëren is meer waard dan een die je aanneemt te hebben voldaan.
+[Laat jouw specifieke prototype controleren tegen precies deze checklist](https://launchstudio.eu/nl/#calculator) — een checklist die je kunt verifiëren is meer waard dan een die je aanneemt te hebben voldaan.
 
 ## Echt voorbeeld
 

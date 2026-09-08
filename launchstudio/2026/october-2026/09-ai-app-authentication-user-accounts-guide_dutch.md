@@ -51,7 +51,7 @@ Door AI gegenereerde "wachtwoord vergeten"-stromen slaan met regelmaat vitale be
 
 Het structureel oplossen van deze kwetsbaarheden vereist dat de oppervlakkige client-side logica wordt vervangen door robuust server-side sessiebeheer. Voor Supabase-gebruikers betekent dit een sluitende implementatie van Supabase Auth gecombineerd met Row Level Security (RLS) policies die direct zijn gekoppeld aan `auth.uid()`, zodat de database zelf weigert data aan de verkeerde gebruiker te verstrekken, zelfs als een API-endpoint per abuis verkeerd is geconfigureerd.
 
-Bij [LaunchStudio](https://launchstudio.eu/en/) is authenticatie-hardening een kernonderdeel van ons **Launch Ready Pakket**. Gesteund door de diepgaande enterprise-ervaring van [Manifera](https://www.manifera.com/) vanuit ons ontwikkelcentrum aan Pho Quang Street in **Ho Chi Minhstad, Vietnam** — met security-audits gecoördineerd vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam** — zijn wij gespecialiseerd in het beveiligen van met AI gebouwde codebases.
+Bij [LaunchStudio](https://launchstudio.eu/nl/) is authenticatie-hardening een kernonderdeel van ons **Launch Ready Pakket**. Gesteund door de diepgaande enterprise-ervaring van [Manifera](https://www.manifera.com/) vanuit ons ontwikkelcentrum aan Pho Quang Street in **Ho Chi Minhstad, Vietnam** — met security-audits gecoördineerd vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam** — zijn wij gespecialiseerd in het beveiligen van met AI gebouwde codebases.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -71,7 +71,7 @@ Bovendien detecteren geautomatiseerde tools zoals `npm audit` of basale linters 
 - Uitloggen en wachtwoordherstel vereisen server-side intrekking en strikte token-vervaltermijnen.
 - LaunchStudio behoudt uw complete AI-frontend en vervangt de onveilige authenticatielogica door enterprise-grade beveiliging.
 
-[Stuur ons uw prototype-link voor een gratis en vrijblijvend advies over uw huidige beveiligingsstatus](https://launchstudio.eu/en/#contact).
+[Stuur ons uw prototype-link voor een gratis en vrijblijvend advies over uw huidige beveiligingsstatus](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS-oprichter Scale-Up
   "datePublished": "2026-07-30",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-in-saas-products-the-feature-list-vs-the-foundation"
+    "@id": "https://launchstudio.eu/nl/blog/ai-in-saas-products-the-feature-list-vs-the-foundation"
   }
 }
 </script>
@@ -55,11 +55,11 @@ Een product dat iemand in staat stelt om echte financiële transacties goed te k
 
 ## Het dichten van de kloof tussen functielijst en fundament
 
-Het toevoegen van twee-factor-authenticatie specifiek aan gevoelige, risicovolle acties – in plaats van het universeel te vereisen en overal onnodige wrijving toe te voegen – is een gerichte, afgebakende implementatie. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort risico-gecalibreerde uitharding van authenticatie als onderdeel van haar Launch & Grow-pakket, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van ondernemingsklare authenticatiesystemen.
+Het toevoegen van twee-factor-authenticatie specifiek aan gevoelige, risicovolle acties – in plaats van het universeel te vereisen en overal onnodige wrijving toe te voegen – is een gerichte, afgebakende implementatie. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort risico-gecalibreerde uitharding van authenticatie als onderdeel van haar Launch & Grow-pakket, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van ondernemingsklare authenticatiesystemen.
 
 Manifera's engineering voor ondernemingsgereedheid wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Aan de slag — productierijp in weken, niet maanden](https://launchstudio.eu/en/#contact).
+[Aan de slag — productierijp in weken, niet maanden](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

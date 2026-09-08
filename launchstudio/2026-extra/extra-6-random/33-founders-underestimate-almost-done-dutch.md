@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Waarom oprichters onderschatten hoe lang 'bijna klaar' daadwerkelijk duurt",
   "description": "Een eerlijke blik op de psychologie achter 'over twee weken klaar' wanneer dat al vier maanden lang elke maand wordt gezegd — en waarom een ai-prototype de illusie erger maakt, niet beter.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/founders-underestimate-almost-done" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/founders-underestimate-almost-done" }
 }
 </script>
 
@@ -39,7 +39,7 @@ De oplossing is niet "probeer beter in te schatten." Het is het veranderen van w
 
 Een gestructureerde, externe beoordeling — iemand wiens taak het specifiek is om te zoeken naar de deuren waarvan u niet weet dat ze er zijn — vervangt het open gevoel van "bijna klaar" door een eindige, gespecificeerde lijst. Een lijst heeft een einde. Een gevoel niet.
 
-LaunchStudio brengt de enterprise-grade engineeringdiscipline van Manifera naar precies dit probleem: een beoordeling met vaste scope die "ik denk dat het bijna klaar is" omzet in een specifieke, geprijsde lijst van wat er daadwerkelijk nog rest. Ons team in Ho Chi Minh City — het belangrijkste engineeringcentrum van Manifera — behandelt een gestage stroom van deze beoordelingen voor oprichters die vastzitten in de "nog twee weken"-lus. U kunt [ons de link naar uw prototype sturen en wij geven u gratis advies](https://launchstudio.eu/en/#contact) over hoe dicht het daadwerkelijk bij klaar is. Voor een beeld van het soort productiediscipline waarop deze beoordeling voortbouwt, zie het werk van Manifera op het gebied van [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/), toegepast bij meer dan 160 opgeleverde projecten.
+LaunchStudio brengt de enterprise-grade engineeringdiscipline van Manifera naar precies dit probleem: een beoordeling met vaste scope die "ik denk dat het bijna klaar is" omzet in een specifieke, geprijsde lijst van wat er daadwerkelijk nog rest. Ons team in Ho Chi Minh City — het belangrijkste engineeringcentrum van Manifera — behandelt een gestage stroom van deze beoordelingen voor oprichters die vastzitten in de "nog twee weken"-lus. U kunt [ons de link naar uw prototype sturen en wij geven u gratis advies](https://launchstudio.eu/nl/#contact) over hoe dicht het daadwerkelijk bij klaar is. Voor een beeld van het soort productiediscipline waarop deze beoordeling voortbouwt, zie het werk van Manifera op het gebied van [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/), toegepast bij meer dan 160 opgeleverde projecten.
 
 ## Echt voorbeeld
 

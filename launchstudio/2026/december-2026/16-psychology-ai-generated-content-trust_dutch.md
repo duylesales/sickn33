@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-16",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/psychology-ai-generated-content-trust"
+    "@id": "https://launchstudio.eu/nl/blog/psychology-ai-generated-content-trust"
   }
 }
 </script>
@@ -57,9 +57,9 @@ Dit is ook waarom controleerbaar sociaal bewijs zo zwaar weegt. LaunchStudio's e
 
 ## Waar Software-Engineering en Vertrouwen Samenkomen
 
-Vertrouwen is niet louter een kwestie van goede teksten; het is een fundamenteel technisch vraagstuk. Een applicatie die traag laadt, vastloopt bij normaal gebruik of zichtbare beveiligingsfouten vertoont (zoals een openbare API-sleutel in de broncode), breekt het vertrouwen van een klant onherroepelijk af. [LaunchStudio](https://launchstudio.eu/en/), aangedreven door Manifera's 11+ jaar software-ervaring, zorgt ervoor dat het technische fundament het vertrouwen waarmaakt dat uw teksten opbouwen.
+Vertrouwen is niet louter een kwestie van goede teksten; het is een fundamenteel technisch vraagstuk. Een applicatie die traag laadt, vastloopt bij normaal gebruik of zichtbare beveiligingsfouten vertoont (zoals een openbare API-sleutel in de broncode), breekt het vertrouwen van een klant onherroepelijk af. [LaunchStudio](https://launchstudio.eu/nl/), aangedreven door Manifera's 11+ jaar software-ervaring, zorgt ervoor dat het technische fundament het vertrouwen waarmaakt dat uw teksten opbouwen.
 
-[Maak uw AI-product productieklaar](https://launchstudio.eu/en/#contact) — zodat het vertrouwen van uw gebruikers rust op onwrikbare technische stabiliteit.
+[Maak uw AI-product productieklaar](https://launchstudio.eu/nl/#contact) — zodat het vertrouwen van uw gebruikers rust op onwrikbare technische stabiliteit.
 
 ## De Specifieke Psychologische Mechanismen Achter AI-Wantrouwen
 

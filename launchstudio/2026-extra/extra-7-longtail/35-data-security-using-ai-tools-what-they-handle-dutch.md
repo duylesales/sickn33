@@ -16,7 +16,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-12",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/data-security-using-ai-tools-what-they-handle" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/data-security-using-ai-tools-what-they-handle" }
 }
 </script>
 

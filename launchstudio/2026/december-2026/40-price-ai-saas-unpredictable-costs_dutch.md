@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/price-ai-saas-unpredictable-costs"
+    "@id": "https://launchstudio.eu/nl/blog/price-ai-saas-unpredictable-costs"
   }
 }
 </script>
@@ -56,9 +56,9 @@ Ongeacht het gekozen prijsmodel bouwen succesvolle AI-oprichters een substantië
 
 U kunt geen gezonde prijzen hanteren als u uw werkelijke AI-kosten per klant niet kent. Dit sluit direct aan bij de observability-principes: meet het tokenverbruik per gebruiker. Zonder deze data gokt u feitelijk naar uw marges — en die inschattingen zijn bijna altijd te optimistisch.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt AI-native oprichters bij het inrichten van zowel nauwkeurige verbruikstracking als de bijbehorende abonnementsinfrastructuur (gestaffelde Stripe- of Mollie-abonnementen en metered overage), gesteund door Manifera's engineering-ervaring over 160+ projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt AI-native oprichters bij het inrichten van zowel nauwkeurige verbruikstracking als de bijbehorende abonnementsinfrastructuur (gestaffelde Stripe- of Mollie-abonnementen en metered overage), gesteund door Manifera's engineering-ervaring over 160+ projecten.
 
-[Richt uw verbruikstracking en betaalstaffels in](https://launchstudio.eu/en/#calculator) vóórdat een handvol zware gebruikers uw marges geruisloos uitholt.
+[Richt uw verbruikstracking en betaalstaffels in](https://launchstudio.eu/nl/#calculator) vóórdat een handvol zware gebruikers uw marges geruisloos uitholt.
 
 ## AI-Kosten Voorspellen Vóórdat U Echte Gebruikersdata Heeft
 

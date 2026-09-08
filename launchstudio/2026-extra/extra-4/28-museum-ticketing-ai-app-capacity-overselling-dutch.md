@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/museum-ticketing-ai-app-capacity-overselling"
+    "@id": "https://launchstudio.eu/nl/blog/museum-ticketing-ai-app-capacity-overselling"
   }
 }
 </script>
@@ -49,7 +49,7 @@ Voor een museum, galerie of kleine locatie is oververkopen niet zomaar een ongem
 
 Het op de juiste manier herstellen hiervan vereist dat de aankoopstroom "controleer beschikbaarheid en reserveer een ticket" behandelt als een enkele atomaire operatie, in plaats van twee afzonderlijke stappen die kunnen interleaven met de aankoop van een andere klant. In de praktijk betekent dat het gebruiken van vergrendeling op databaseniveau of een reserveringssysteem – het plaatsen van een korte vasthouding op een ticket op het moment dat een aankoop begint, het controleren van de beschikbaarheid binnen die vergrendeling, en het pas vrijgeven van de vasthouding als de aankoop mislukt of een time-out krijgt. Het is een kleine maar precieze wijziging in hoe de databasetransactie is gestructureerd, en het is exact het soort gelijktijdigheidsveilig patroon dat ervaren backend-ingenieurs standaard bouwen en AI-codegeneratoren frequent overslaan tenzij er expliciet om wordt gevraagd.
 
-LaunchStudio brengt Manifera's enterprise-grade engineering naar exact dit soort gelijktijdigheidsproblemen – het soort ding dat routinematig is in enterprise-voorraad- en boekingssystemen, maar gemakkelijk te missen in een snelle met AI gegenereerde bouw. De beoordeling zelf wordt gecoördineerd vanuit Manifera's kantoor in Amsterdam aan de Herengracht 420, waar het klantgerichte engineeringteam omvangt exact welke onderdelen van een boekingsstroom dit soort vergrendeling nodig hebben voordat er iets wordt aangeraakt. U kunt bekijken wat een volledige pre-lanceringaudit dekt op de [LaunchStudio-homepagina](https://launchstudio.eu/en/), en voor achtergrond over het soort productiesystemen waar Manifera's ingenieurs dit patroon eerder in hebben gebouwd, bekijk het [portfolio](https://www.manifera.com/portfolio/) van het team.
+LaunchStudio brengt Manifera's enterprise-grade engineering naar exact dit soort gelijktijdigheidsproblemen – het soort ding dat routinematig is in enterprise-voorraad- en boekingssystemen, maar gemakkelijk te missen in een snelle met AI gegenereerde bouw. De beoordeling zelf wordt gecoördineerd vanuit Manifera's kantoor in Amsterdam aan de Herengracht 420, waar het klantgerichte engineeringteam omvangt exact welke onderdelen van een boekingsstroom dit soort vergrendeling nodig hebben voordat er iets wordt aangeraakt. U kunt bekijken wat een volledige pre-lanceringaudit dekt op de [LaunchStudio-homepagina](https://launchstudio.eu/nl/), en voor achtergrond over het soort productiesystemen waar Manifera's ingenieurs dit patroon eerder in hebben gebouwd, bekijk het [portfolio](https://www.manifera.com/portfolio/) van het team.
 
 ## Een reserveringsvasthouding die nooit verloopt ruilt oververkopen in voor onderverkopen
 

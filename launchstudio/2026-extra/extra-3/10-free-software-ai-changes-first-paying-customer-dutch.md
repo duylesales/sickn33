@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/free-software-ai-changes-first-paying-customer"
+    "@id": "https://launchstudio.eu/nl/blog/free-software-ai-changes-first-paying-customer"
   }
 }
 </script>
@@ -51,9 +51,9 @@ Gratis niveaus bestaan commercieel om mensen in staat te stellen zonder toezeggi
 
 De juiste reactie is niet noodzakelijkerwijs "upgrade altijd voor de lancering" – voor sommige producten doen de beperkingen van een gratis niveau er bij echte gebruiksvolumes oprecht niet toe. De juiste reactie is specifiek weten welke beperkingen van toepassing zijn op het daadwerkelijke gebruikspatroon van uw product, en een bewuste keuze maken in plaats van de mismatch te ontdekken de eerste keer dat een echte klant een limiet raakt die niemand had gecontroleerd.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt precies deze overgang als onderdeel van elke opdracht voor productiegereedheid – controleren of de specifieke voorwaarden en limieten van uw huidige niveau daadwerkelijk compatibel zijn met het bedienen van echte betalende klanten, niet alleen of het product werkt – ondersteund door Manifera's ervaring met het helpen van oprichters om deze exacte evaluatie te maken over een breed scala aan AI-aanbieders en tools.
+[LaunchStudio](https://launchstudio.eu/nl/) beoordeelt precies deze overgang als onderdeel van elke opdracht voor productiegereedheid – controleren of de specifieke voorwaarden en limieten van uw huidige niveau daadwerkelijk compatibel zijn met het bedienen van echte betalende klanten, niet alleen of het product werkt – ondersteund door Manifera's ervaring met het helpen van oprichters om deze exacte evaluatie te maken over een breed scala aan AI-aanbieders en tools.
 
-[Ontdek of uw gratis niveau daadwerkelijk klaar is voor een betalende klant](https://launchstudio.eu/en/#calculator) — de mismatch is onzichtbaar totdat echt gebruik het specifiek activeert.
+[Ontdek of uw gratis niveau daadwerkelijk klaar is voor een betalende klant](https://launchstudio.eu/nl/#calculator) — de mismatch is onzichtbaar totdat echt gebruik het specifiek activeert.
 
 ## Een audit-checklist voor het gratis niveau om uit te voeren voor uw eerste betalende klant
 

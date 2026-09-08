@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "What 'Build an AI App' Means Once Real Customers Are Paying You",
   "description": "Building an AI app over a weekend and supporting it once real customers depend on it daily are two different milestones. Here's what changes between them.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/build-ai-app-after-paying-customers" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/build-ai-app-after-paying-customers" }
 }
 </script>
 
@@ -37,7 +37,7 @@ Er is een mijlpaal tussen "gebouwd" en "opgeschaald" die zelden een eigen naam k
 
 Op het moment dat er echt geld van eigenaar wisselt, houdt de kostprijs van een niet-ondersteunbare app op hypothetisch te zijn. Een bug die tijdens gratis testen een schouderophalen zou zijn geweest, wordt een terugbetalingsverzoek, een opgezegd abonnement, of een klant die stilletjes stopt met het product te vertrouwen. Dit is het punt waarop het de moeite waard is om "een AI-app bouwen" en "een ondersteunbare AI-app draaien voor betalende klanten" als twee aparte projecten te behandelen, elk met zijn eigen checklist — want dat zijn ze.
 
-LaunchStudio brengt de enterprise-grade engineering van Manifera naar de oprichterseconomie, specifiek voor deze overgang — het nemen van een in een weekend gebouwde AI-app en die ondersteunbaar maken zonder de frontend van de oprichter te herbouwen. Ons team, waaronder engineers gevestigd in Amsterdam, behandelt precies dit soort productie-hardening werk als een afgebakend, omschreven traject. U kunt [bekijken welk pakket past bij waar uw app zich momenteel bevindt](https://launchstudio.eu/en/#packages) voordat uw volgende betalende klant het gat voor u ontdekt. Voor meer over hoe Manifera dit soort werk benadert, zie [onze webapp-ontwikkelingsdiensten](https://www.manifera.com/services/web-app-develop/).
+LaunchStudio brengt de enterprise-grade engineering van Manifera naar de oprichterseconomie, specifiek voor deze overgang — het nemen van een in een weekend gebouwde AI-app en die ondersteunbaar maken zonder de frontend van de oprichter te herbouwen. Ons team, waaronder engineers gevestigd in Amsterdam, behandelt precies dit soort productie-hardening werk als een afgebakend, omschreven traject. U kunt [bekijken welk pakket past bij waar uw app zich momenteel bevindt](https://launchstudio.eu/nl/#packages) voordat uw volgende betalende klant het gat voor u ontdekt. Voor meer over hoe Manifera dit soort werk benadert, zie [onze webapp-ontwikkelingsdiensten](https://www.manifera.com/services/web-app-develop/).
 
 ## Echt voorbeeld
 

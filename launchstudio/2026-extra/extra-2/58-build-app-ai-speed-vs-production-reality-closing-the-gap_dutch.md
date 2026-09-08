@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-08-04",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/build-app-ai-speed-vs-production-reality-closing-the-gap"
+    "@id": "https://launchstudio.eu/nl/blog/build-app-ai-speed-vs-production-reality-closing-the-gap"
   }
 }
 </script>
@@ -55,11 +55,11 @@ Een deellink die leveringsschema's of productlijsten blootlegt kan tijdelijk ged
 
 ## Wat het op de juiste manier herstellen hiervan vereist
 
-Een correcte herstelling garandeert dat een intrekactie de onderliggende link server-side daadwerkelijk ongeldig maakt. [LaunchStudio](https://launchstudio.eu/en/) test exact dit scenario als onderdeel van haar beoordeling van toegangsbeheer, ondersteund door Manifera's 11+ jaar ervaring met veilige deelsystemen.
+Een correcte herstelling garandeert dat een intrekactie de onderliggende link server-side daadwerkelijk ongeldig maakt. [LaunchStudio](https://launchstudio.eu/nl/) test exact dit scenario als onderdeel van haar beoordeling van toegangsbeheer, ondersteund door Manifera's 11+ jaar ervaring met veilige deelsystemen.
 
 Manifera's beveiligingsbeoordelingen voor deellinks worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

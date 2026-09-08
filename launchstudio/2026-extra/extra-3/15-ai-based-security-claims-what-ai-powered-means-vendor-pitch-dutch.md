@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-based-security-claims-what-ai-powered-means-vendor-pitch"
+    "@id": "https://launchstudio.eu/nl/blog/ai-based-security-claims-what-ai-powered-means-vendor-pitch"
   }
 }
 </script>
@@ -49,9 +49,9 @@ Een goed afgestelde, traditionele op regels gebaseerde beveiligingscontrole kan 
 
 Oprichters die hun eigen product bouwen met AI-tools zijn al vloeiend, door directe ervaring, in de kloof tussen hoe een AI-capaciteit klinkt alsof het werkt en wat het daadwerkelijk onder de motorkap doet – een vloeiendheid die het waard is om bewust toe te passen wanneer u aan de koperszijde van een pitch van een beveiligingsleverancier zit, in plaats van aan te nemen dat hetzelfde kritische denken alleen geldt voor de marketingteksten van uw eigen product en niet voor de tools die u evalueert om het te beschermen.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters om beveiligingsclaims van leveranciers met exact dit niveau van specificiteit te evalueren tijdens bredere lanceringgereedheidsopdrachten. Wij vertalen marketingtaal van leveranciers in concrete, controleerbare vragen, ondersteund door Manifera's eigen op cyberbeveiliging geïnformeerde engineeringpraktijken en CEO Herre Roelevink's achtergrond in het leiden van CyberDevOps, nu CFLW Cyber Strategies, werkend naast TNO.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters om beveiligingsclaims van leveranciers met exact dit niveau van specificiteit te evalueren tijdens bredere lanceringgereedheidsopdrachten. Wij vertalen marketingtaal van leveranciers in concrete, controleerbare vragen, ondersteund door Manifera's eigen op cyberbeveiliging geïnformeerde engineeringpraktijken en CEO Herre Roelevink's achtergrond in het leiden van CyberDevOps, nu CFLW Cyber Strategies, werkend naast TNO.
 
-[Krijg hulp bij het evalueren van de AI-claims van een beveiligingsleverancier voordat u het contract ondertekent](https://launchstudio.eu/en/#contact) — dezelfde zorgvuldigheid die u toegepast wilt zien op de claims van uw eigen product geldt hier ook.
+[Krijg hulp bij het evalueren van de AI-claims van een beveiligingsleverancier voordat u het contract ondertekent](https://launchstudio.eu/nl/#contact) — dezelfde zorgvuldigheid die u toegepast wilt zien op de claims van uw eigen product geldt hier ook.
 
 ## Rode vlaggen om op te merken voordat u überhaupt een vraag stelt
 

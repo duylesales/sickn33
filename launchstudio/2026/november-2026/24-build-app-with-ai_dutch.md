@@ -16,7 +16,7 @@ Doelpersona: B2B SaaS-Oprichter / Industrie-Expert
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: B2B SaaS-Oprichter / Industrie-Expert
   "datePublished": "2026-11-24",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/build-app-with-ai"
+    "@id": "https://launchstudio.eu/nl/blog/build-app-with-ai"
   }
 }
 </script>
@@ -70,7 +70,7 @@ Vier diepgaande technische transformaties zijn noodzakelijk om een AI-prototype 
 
 Als niet-technische branche-expert die AI heeft ingezet om een probleem op te lossen, moet u uw tijd niet verspillen aan het bestuderen van SAML-protocollen of VPC-subnets.
 
-[LaunchStudio](https://launchstudio.eu/en/) overbrugt de kloof tussen AI-prototyping en enterprise-contracten. Gesteund door [Manifera](https://www.manifera.com/) — een softwarebedrijf dat veilige systemen heeft gebouwd voor multinationals zoals Vodafone — levert LaunchStudio de zware software-engineering die nodig is om security-audits glansrijk te doorstaan.
+[LaunchStudio](https://launchstudio.eu/nl/) overbrugt de kloof tussen AI-prototyping en enterprise-contracten. Gesteund door [Manifera](https://www.manifera.com/) — een softwarebedrijf dat veilige systemen heeft gebouwd voor multinationals zoals Vodafone — levert LaunchStudio de zware software-engineering die nodig is om security-audits glansrijk te doorstaan.
 
 Onder leiding van Herre Roelevink in Amsterdam (Herengracht 420) en 120+ engineers in Ho Chi Minhstad (Pho Quangstraat 10), verzorgt LaunchStudio de volledige transitie:
 - Databasemigratie naar een strikt gescheiden, RLS-beveiligde architectuur.

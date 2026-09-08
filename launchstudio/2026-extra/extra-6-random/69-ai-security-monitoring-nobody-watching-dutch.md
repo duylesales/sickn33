@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Niemand houdt uw AI-gebouwde app om 3 uur 's nachts in de gaten — dit vereist 'beveiligingsmonitoring' daadwerkelijk",
   "description": "Een opiniestuk over waarom AI-beveiligingsmonitoring wordt behandeld als een functie die u later toevoegt, en waarom 'later' precies het moment is waarop de aanval die al dagenlang loopt, eindelijk wordt opgemerkt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-27",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-security-monitoring-nobody-watching" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-security-monitoring-nobody-watching" }
 }
 </script>
 
@@ -33,7 +33,7 @@ Oprichters stellen zichzelf gerust met een versie van "ik controleer regelmatig 
 
 Echte monitoring betekent specifieke, geautomatiseerde waarschuwingen voor de patronen die ertoe doen: een piek in mislukte inlogpogingen tegen één eindpunt, ongewoon verzoekvolume vanuit een smalle groep bronnen, herhaalde mislukkingen tegen hetzelfde account binnen een kort tijdsbestek. Het betekent dat iemand — of iets — daadwerkelijk wordt gewaarschuwd wanneer het patroon een drempel overschrijdt, in plaats van dat het bewijs stilletjes in logbestanden ligt te wachten op een handmatige controle die over elf dagen kan plaatsvinden of over zes maanden. Dit is oprecht ongeglamoureus werk. Het is ook het verschil tussen een aanval op de eerste dag opvangen en deze bij toeval opvangen, veel later, nadat deze al zijn loop heeft gehad.
 
-De technici van Manifera hebben precies dit soort waarschuwingsinfrastructuur gebouwd in door AI gegenereerde codebases die zonder enige waren uitgeleverd, en behandelen het als een niet-onderhandelbaar onderdeel van productiegereedheid in plaats van een optionele toevoeging. Ons engineeringcentrum in Ho Chi Minhstad behandelt een aanzienlijk deel van dit werk. Als uw eigen app geen waarschuwingen heeft geconfigureerd — en als u het niet zeker weet, heeft hij dat waarschijnlijk niet — [praat dan met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/en/) over hoe een minimaal levensvatbare monitoringopzet er daadwerkelijk uitziet. De praktijk [webapplicatie-ontwikkeling](https://www.manifera.com/services/web-app-develop/) van Manifera behandelt dit als standaardbereik, niet als upsell.
+De technici van Manifera hebben precies dit soort waarschuwingsinfrastructuur gebouwd in door AI gegenereerde codebases die zonder enige waren uitgeleverd, en behandelen het als een niet-onderhandelbaar onderdeel van productiegereedheid in plaats van een optionele toevoeging. Ons engineeringcentrum in Ho Chi Minhstad behandelt een aanzienlijk deel van dit werk. Als uw eigen app geen waarschuwingen heeft geconfigureerd — en als u het niet zeker weet, heeft hij dat waarschijnlijk niet — [praat dan met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/) over hoe een minimaal levensvatbare monitoringopzet er daadwerkelijk uitziet. De praktijk [webapplicatie-ontwikkeling](https://www.manifera.com/services/web-app-develop/) van Manifera behandelt dit als standaardbereik, niet als upsell.
 
 ## Echt voorbeeld
 

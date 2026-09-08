@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-24",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-happens-after-you-build-app-with-ai-and-try-to-launch"
+    "@id": "https://launchstudio.eu/nl/blog/what-happens-after-you-build-app-with-ai-and-try-to-launch"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Het testen van uw eigen uploadfunctie met uw eigen redelijke foto's, een handvol
 
 ## Wat het herstellen hiervan daadwerkelijk omvat
 
-Een correcte herstelling stelt expliciete limieten in – maximale bestandsgrootte, toegestane bestandstypen, en redelijke snelheidslimieten per gebruiker – afgedwongen op de server, en niet alleen gesuggereerd in de bestandskiezer van de frontend. [LaunchStudio](https://launchstudio.eu/en/) past exact dit soort upload-uitharding toe als onderdeel van haar standaard beoordeling, ondersteund door Manifera's 11+ jaar ervaring met productie-infrastructuur over AWS, Azure en op DigitalOcean gehoste systemen.
+Een correcte herstelling stelt expliciete limieten in – maximale bestandsgrootte, toegestane bestandstypen, en redelijke snelheidslimieten per gebruiker – afgedwongen op de server, en niet alleen gesuggereerd in de bestandskiezer van de frontend. [LaunchStudio](https://launchstudio.eu/nl/) past exact dit soort upload-uitharding toe als onderdeel van haar standaard beoordeling, ondersteund door Manifera's 11+ jaar ervaring met productie-infrastructuur over AWS, Azure en op DigitalOcean gehoste systemen.
 
 Manifera's uithardingswerk voor infrastructuur wordt geleverd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Deel uw prototypelink — we kijken er gratis naar](https://launchstudio.eu/en/#contact).
+[Deel uw prototypelink — we kijken er gratis naar](https://launchstudio.eu/nl/#contact).
 
 ## Het bouwen van een complete checklist voor upload-uitharding
 

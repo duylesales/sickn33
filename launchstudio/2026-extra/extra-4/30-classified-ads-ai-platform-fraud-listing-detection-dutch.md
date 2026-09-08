@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/classified-ads-ai-platform-fraud-listing-detection"
+    "@id": "https://launchstudio.eu/nl/blog/classified-ads-ai-platform-fraud-listing-detection"
   }
 }
 </script>
@@ -51,7 +51,7 @@ Zoals Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, h
 
 Een werkende eerste versie vereist geen machine learning of een groot fraudeteam – het vereist een op regels gebaseerde controle die automatisch draait bij elke nieuwe advertentie: het vergelijken van de vermelde prijs met een categorieprijs-benchmark, het markeren van nieuwe accounts die artikelen met een hoge waarde plaatsen, en het vasthouden van gemarkeerde advertenties voor een snelle handmatige beoordeling voordat ze volledig live gaan in plaats van alles onmiddellijk te publiceren. Die enkele poort – markeren, vasthouden, beoordelen – sluit de meest schadelijke versie van deze kloof zonder de grote meerderheid van legitieme advertenties te vertragen, die de controle binnen enkele seconden passeren.
 
-LaunchStudio's team, werkend vanuit Manifera's ontwikkelingscentrum in Ho Chi Minh-stad, bouwt exact dit soort lichte vertrouwens- en veiligheidslaag in geclassificeerde en marktplaatsplatformen als een standaard onderdeel van het werk voor productie-gereedheid. U kunt bekijken hoe zo'n omvangrijke samenwerking doorgaans werkt via de [LaunchStudio-prijscalculator](https://launchstudio.eu/en/#calculator). Manifera's bredere praktijk voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare op regels gebaseerde vertrouwenslagen gebouwd voor grotere enterprise-marktplaatsklanten.
+LaunchStudio's team, werkend vanuit Manifera's ontwikkelingscentrum in Ho Chi Minh-stad, bouwt exact dit soort lichte vertrouwens- en veiligheidslaag in geclassificeerde en marktplaatsplatformen als een standaard onderdeel van het werk voor productie-gereedheid. U kunt bekijken hoe zo'n omvangrijke samenwerking doorgaans werkt via de [LaunchStudio-prijscalculator](https://launchstudio.eu/nl/#calculator). Manifera's bredere praktijk voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare op regels gebaseerde vertrouwenslagen gebouwd voor grotere enterprise-marktplaatsklanten.
 
 ## Een markeerwachtrij die niemand beoordeelt is gewoon een tragere manier om alles te publiceren
 

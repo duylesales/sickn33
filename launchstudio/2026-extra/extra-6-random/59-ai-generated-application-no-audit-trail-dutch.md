@@ -13,10 +13,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Waarom uw AI-gegenereerde applicatie waarschijnlijk geen audit trail heeft (en wanneer dat ertoe doet)",
   "description": "De meeste AI-gegenereerde applicaties leggen niets vast over wie wat wanneer heeft veranderd. Dat is onzichtbaar tot er een geschil ontstaat en er geen dossier is om het te beslechten.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-generated-application-no-audit-trail" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-generated-application-no-audit-trail" }
 }
 </script>
 
@@ -38,7 +38,7 @@ Dit doet er het meest toe voor applicaties die iets met echte belangen verwerken
 
 Een audit trail achteraf toevoegen is meestal aanvullend in plaats van verstorend — een logboeklaag die wijzigingen aan belangrijke tabellen of acties vastlegt, gekoppeld aan de geauthenticeerde gebruiker die de wijziging maakt en een tijdstempel, zonder te veranderen hoe de bestaande functies zich gedragen voor gebruikers. Het vereist geen herontwerp van het product; het vereist beslissen welke wijzigingen belangrijk genoeg zijn om vast te leggen, en er vervolgens voor zorgen dat elk pad dat ze wijzigt, consistent naar het logboek schrijft, niet alleen de voor de hand liggende paden.
 
-Onze technici, gevestigd in Ho Chi Minh-stad als onderdeel van het bredere engineeringteam van Manifera, behandelen audit trail-hiaten als een van de standaardcontroles in een productieklaarheidsbeoordeling, juist omdat ze zo gemakkelijk over het hoofd worden gezien en zo ingrijpend zijn de ene keer dat ze nodig zijn. Als uw applicatie iets geschilgevoeligs verwerkt, is het de moeite waard om [uw project door ons proces te laten beoordelen](https://launchstudio.eu/en/#process) voordat het eerste geschil zich aandient in plaats van erna. Het [portfolio](https://www.manifera.com/portfolio/) van Manifera omvat verschillende systemen die precies voor dit soort verantwoordingsvereiste zijn gebouwd in gereguleerde en publieke context.
+Onze technici, gevestigd in Ho Chi Minh-stad als onderdeel van het bredere engineeringteam van Manifera, behandelen audit trail-hiaten als een van de standaardcontroles in een productieklaarheidsbeoordeling, juist omdat ze zo gemakkelijk over het hoofd worden gezien en zo ingrijpend zijn de ene keer dat ze nodig zijn. Als uw applicatie iets geschilgevoeligs verwerkt, is het de moeite waard om [uw project door ons proces te laten beoordelen](https://launchstudio.eu/nl/#process) voordat het eerste geschil zich aandient in plaats van erna. Het [portfolio](https://www.manifera.com/portfolio/) van Manifera omvat verschillende systemen die precies voor dit soort verantwoordingsvereiste zijn gebouwd in gereguleerde en publieke context.
 
 ## Echt voorbeeld
 

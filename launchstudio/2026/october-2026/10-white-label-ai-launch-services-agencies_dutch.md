@@ -32,7 +32,7 @@ Digitale bureaus worden geconfronteerd met vier specifieke uitdagingen bij AI-pr
 
 ## Hoe het LaunchStudio White-Label Partnerschap Werkt
 
-[LaunchStudio](https://launchstudio.eu/en/) is specifiek opgericht om dit "laatste mijl"-probleem voor AI-codebases op te lossen. Omdat steeds meer bureaus met deze klantvragen worden overspoeld, hebben wij een officieel **White-Label Partnerprogramma** ontwikkeld.
+[LaunchStudio](https://launchstudio.eu/nl/) is specifiek opgericht om dit "laatste mijl"-probleem voor AI-codebases op te lossen. Omdat steeds meer bureaus met deze klantvragen worden overspoeld, hebben wij een officieel **White-Label Partnerprogramma** ontwikkeld.
 
 Gesteund door de 11+ jaar ervaring van [Manifera](https://www.manifera.com/) in enterprise software-engineering, treden wij op als uw geruisloze, onzichtbare productiepartner. Onze engineeringteams — opererend vanuit Amsterdam en ons primaire ontwikkelingscentrum in Vietnam, met een regionale coördinatiehub aan 100 Tras Street in Singapore voor APAC-bureaus — verzorgen de complete backend-hardening terwijl u de volledige klantrelatie behoudt.
 
@@ -79,7 +79,7 @@ Het white-label model levert direct maximaal rendement op voor drie typen bureau
 - U behoudt de volledige klantrelatie, factureert uw eigen marge en levert enterprise-beveiliging op onder uw eigen merk.
 - Gegarandeerde doorlooptijden van 1 tot 3 weken zonder risico op scope creep.
 
-[Freelancer of digitaal bureau? Word onze white-label productiepartner en neem direct contact op](https://launchstudio.eu/en/#contact).
+[Freelancer of digitaal bureau? Word onze white-label productiepartner en neem direct contact op](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

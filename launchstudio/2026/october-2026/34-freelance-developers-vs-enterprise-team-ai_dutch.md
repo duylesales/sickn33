@@ -47,7 +47,7 @@ Om enterprise-contracten te winnen, heeft u enterprise-infrastructuur nodig. U h
 
 Het zelf intern aannemen van een team van senior Europese software-engineers kost echter honderdduizenden euro's per jaar: een senior backend-engineer, een DevOps-specialist en een QA-lead in Amsterdam of Berlijn kosten gezamenlijk al snel **€ 280.000 tot € 350.000 per jaar** aan loonkosten vóórdat er ook maar één nieuwe feature is gebouwd.
 
-Dit is exact de kloof die [LaunchStudio](https://launchstudio.eu/en/) overbrugt.
+Dit is exact de kloof die [LaunchStudio](https://launchstudio.eu/nl/) overbrugt.
 
 Aangedreven door de **ruim 11 jaar enterprise-software-expertise van Manifera** — met meer dan 120 senior engineers die ruim 160 complexe projecten hebben opgeleverd voor opdrachtgevers zoals Vodafone, TNO en CFLW vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street in Singapore** en onze ontwikkelhub in **Ho Chi Minhstad, Vietnam** — biedt LaunchStudio scale-ups direct toegang tot een on-demand enterprise engineering team, tegen circa **20% van de kosten** van een traditioneel intern team.
 
@@ -69,7 +69,7 @@ Als vuistregel geldt: zodra uw maandelijks terugkerende omzet de € 20.000 pass
 - Het ontbreken van geautomatiseerde testsuites maakt elke nieuwe feature tot een riskante gok met bestaande omzet.
 - LaunchStudio levert een compleet enterprise engineering team om uw AI SaaS veilig te schalen voor een fractie van de interne loonkosten.
 
-[Klaar om te promoveren van freelance code naar enterprise engineering? Partner vandaag met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Klaar om te promoveren van freelance code naar enterprise engineering? Partner vandaag met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

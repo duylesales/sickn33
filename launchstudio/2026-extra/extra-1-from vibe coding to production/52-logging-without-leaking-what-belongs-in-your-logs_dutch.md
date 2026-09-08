@@ -33,9 +33,9 @@ Afhankelijk van jouw hosting- en logginginfrastructuur kunnen logs toegankelijk 
 
 Specifiek bekend-gevoelige velden (wachtwoorden, tokens, betalingsgegevens, en elke persoonsgegevens die jouw product verwerkt) uitsluiten van wat gelogd wordt, zelfs tijdens foutomstandigheden waar "log alles" het meest verleidelijk aanvoelt; redactie of maskering gebruiken voor velden die gedeeltelijke zichtbaarheid nodig hebben voor debugdoeleinden zonder volledige blootstelling; en periodiek bestaande logs auditeren op enige gevoelige data die mogelijk al geaccumuleerd is onder een eerder, minder zorgvuldig loggingpatroon.
 
-[LaunchStudio](https://launchstudio.eu/en/) reviewt en verhardt loggingpraktijken specifiek voor gevoelige-databloostelling als onderdeel van productiegereedheid, en verzekert dat jouw observability-setup veiligheid verbetert zonder onbedoeld een nieuw blootstellingsoppervlak te creëren, gesteund door Manifera's data-beveiligingsbewuste engineeringpraktijken.
+[LaunchStudio](https://launchstudio.eu/nl/) reviewt en verhardt loggingpraktijken specifiek voor gevoelige-databloostelling als onderdeel van productiegereedheid, en verzekert dat jouw observability-setup veiligheid verbetert zonder onbedoeld een nieuw blootstellingsoppervlak te creëren, gesteund door Manifera's data-beveiligingsbewuste engineeringpraktijken.
 
-[Laat jouw logs controleren op wat er niet in zou moeten zitten](https://launchstudio.eu/en/#calculator) — de tooling bedoeld om je te helpen problemen te vinden zou er zelf geen moeten worden.
+[Laat jouw logs controleren op wat er niet in zou moeten zitten](https://launchstudio.eu/nl/#calculator) — de tooling bedoeld om je te helpen problemen te vinden zou er zelf geen moeten worden.
 
 ## Echt voorbeeld
 

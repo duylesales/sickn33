@@ -16,7 +16,7 @@ Doelpersona: SaaS-Oprichter Scale-Up
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: SaaS-Oprichter Scale-Up
   "datePublished": "2026-11-14",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-software-development"
+    "@id": "https://launchstudio.eu/nl/blog/ai-software-development"
   }
 }
 </script>
@@ -85,7 +85,7 @@ Een verkeerd databaseschema of gebrekkige authenticatie creëert technische schu
 
 ## De Juiste Partner Voor AI-Softwareontwikkeling
 
-[LaunchStudio](https://launchstudio.eu/en/) vertegenwoordigt het nieuwe model: een gespecialiseerde engineeringdienst die samenwerkt mét AI-codebases in plaats van ertegen te vechten.
+[LaunchStudio](https://launchstudio.eu/nl/) vertegenwoordigt het nieuwe model: een gespecialiseerde engineeringdienst die samenwerkt mét AI-codebases in plaats van ertegen te vechten.
 
 Achter LaunchStudio staat [Manifera](https://www.manifera.com/), opgericht door Herre Roelevink. Het bedrijf heeft ruim 11 jaar ervaring met vestigingen in Amsterdam (Herengracht 420), Singapore (100 Tras Street) en Ho Chi Minhstad (Pho Quangstraat 10). Het portfolio telt meer dan 160 gerealiseerde projecten voor opdrachtgevers als Vodafone, TNO en CFLW.
 
@@ -96,7 +96,7 @@ Wat Manifera uniek maakt voor dit type werk:
 - **Vaste prijzen** — €800 tot €7.500 zonder verrassingen achteraf
 - **100% eigenaarschap van uw code** in uw eigen GitHub-repository
 
-[Bereken uw projectkosten](https://launchstudio.eu/#calculator) of [vraag een gratis offerte aan](https://launchstudio.eu/en/#contact).
+[Bereken uw projectkosten](https://launchstudio.eu/#calculator) of [vraag een gratis offerte aan](https://launchstudio.eu/nl/#contact).
 
 ## Vijf Zaken Om Zelf Te Controleren Vóór U Met Een Partij Praat
 

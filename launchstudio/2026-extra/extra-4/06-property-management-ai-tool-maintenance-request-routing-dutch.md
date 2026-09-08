@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/property-management-ai-tool-maintenance-request-routing"
+    "@id": "https://launchstudio.eu/nl/blog/property-management-ai-tool-maintenance-request-routing"
   }
 }
 </script>
@@ -45,7 +45,7 @@ Een gecrashte inzending is irritant maar duidelijk – de huurder weet dat hij h
 
 Dit is het soort kloof waar LaunchStudio specifiek naar zoekt bij het beoordelen van een met AI gebouwde app voordat deze live gaat met echte huurders: niet "werkt het ideale pad", maar "wat gebeurt er met elk record dat buiten het ideale pad valt". Onze ingenieurs hebben 160+ projecten geleverd voor enterprise-klanten, en het patroon dat steeds opnieuw verschijnt in AI-native tools is exact dit – de database slaat een randgeval trouw op, maar niets in de toepassingslaag werd verteld om er op te letten.
 
-Veel van dit werkstroom- en meldingslogica-werk voor klanten van LaunchStudio wordt afgehandeld door het team van Manifera's ontwikkelingscentrum aan de Pho Quang Street in Ho Chi Minh-stad, waar ingenieurs de terugvalroutering en waarschuwingssystemen bouwen die een eerste met AI gegenereerde poging doorgaans overslaat. Als u echte huurders beheert op een tool gebouwd met Lovable, Bolt of Cursor, is het het waard om [onze pakketten te verkennen](https://launchstudio.eu/en/#packages) om te zien wat een routerings- en meldingsaudit inhoudt voordat een verzoek stilletjes stilvalt zoals het deed voor Roos.
+Veel van dit werkstroom- en meldingslogica-werk voor klanten van LaunchStudio wordt afgehandeld door het team van Manifera's ontwikkelingscentrum aan de Pho Quang Street in Ho Chi Minh-stad, waar ingenieurs de terugvalroutering en waarschuwingssystemen bouwen die een eerste met AI gegenereerde poging doorgaans overslaat. Als u echte huurders beheert op een tool gebouwd met Lovable, Bolt of Cursor, is het het waard om [onze pakketten te verkennen](https://launchstudio.eu/nl/#packages) om te zien wat een routerings- en meldingsaudit inhoudt voordat een verzoek stilletjes stilvalt zoals het deed voor Roos.
 
 ## Het opnieuw toewijzen van een aannemer stuurt niet opnieuw door wat al openstaat
 

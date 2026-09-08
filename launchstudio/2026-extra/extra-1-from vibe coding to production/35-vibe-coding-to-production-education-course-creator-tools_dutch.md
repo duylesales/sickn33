@@ -33,9 +33,9 @@ Bètatesters voor een onderwijsproduct zijn doorgaans gemotiveerde, betrokken, c
 
 Voor een onderwijs- of cursusmakerprototype rechtvaardigt content-toegangscontrole dezelfde verhoogde prioriteit die authenticatie in het algemeen heeft voor elk product, gegeven de directe connectie met omzet; voortgangsdata-integriteit verdient testgrondigheid proportioneel aan hoeveel studenten en instellingen daadwerkelijk vertrouwen op die data om accuraat te zijn; en elk product dat minderjarigen bedient heeft een compliancereview nodig specifiek afgebakend op die verhoogde vereiste, geen algemene AVG-doorloop.
 
-[LaunchStudio](https://launchstudio.eu/en/) verhardt onderwijs- en cursusmakerprototypes met specifieke aandacht voor content-toegangscontrole, voortgangsdata-integriteit, en minderjarige-datacompliance waar relevant, gesteund door Manifera's engineeringervaring over productieapplicaties in de onderwijssector.
+[LaunchStudio](https://launchstudio.eu/nl/) verhardt onderwijs- en cursusmakerprototypes met specifieke aandacht voor content-toegangscontrole, voortgangsdata-integriteit, en minderjarige-datacompliance waar relevant, gesteund door Manifera's engineeringervaring over productieapplicaties in de onderwijssector.
 
-[Laat jouw cursusplatform testen tegen de faalmodi specifiek voor het beschermen van betaalde content](https://launchstudio.eu/en/#calculator) — algemene verharding plus wat daadwerkelijk jouw omzetmodel beschermt.
+[Laat jouw cursusplatform testen tegen de faalmodi specifiek voor het beschermen van betaalde content](https://launchstudio.eu/nl/#calculator) — algemene verharding plus wat daadwerkelijk jouw omzetmodel beschermt.
 
 ## Echt voorbeeld
 

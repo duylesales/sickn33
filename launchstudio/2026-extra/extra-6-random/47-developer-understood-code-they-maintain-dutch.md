@@ -12,10 +12,10 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "@type": "Article",
   "headline": "Hoe u kunt zien of uw developer de door AI gegenereerde code die hij onderhoudt daadwerkelijk begrijpt",
   "description": "Een praktische how-to voor niet-technische oprichters om te verifiëren dat ai software developers die zijn aangenomen om een door AI gegenereerde codebase te onderhouden, deze daadwerkelijk begrijpen, voordat er iets stukgaat en het te laat is om het te vragen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/developer-understood-code-they-maintain" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/developer-understood-code-they-maintain" }
 }
 </script>
 
@@ -49,7 +49,7 @@ Als stap één en twee lacunes blootleggen, is de oplossing niet noodzakelijk de
 
 Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoordde het zo: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. We hebben elf jaar ervaring in precies dat." Verifiëren dat een developer daadwerkelijk begrijpt wat hij onderhoudt, is een klein, concreet onderdeel van die bredere volwassenheidsvraag — maar het is vaak de eerste plek waar de lacune zichtbaar wordt.
 
-Ons team in Amsterdam, gesteund door de 120+ engineers van Manifera, stapt regelmatig precies in dit soort lacune — het doorlezen van door AI gegenereerde code die niemand volledig heeft geverifieerd en het documenteren van wat die daadwerkelijk doet. LaunchStudio brengt diezelfde standaard, gebruikt in Manifera's [portfolio van 160+ opgeleverde projecten](https://www.manifera.com/portfolio/), naar producten op oprichtersschaal. Heeft uw eigen onboardinggesprek meer vragen opgeroepen dan beantwoord, dan kunt u [spreken met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+Ons team in Amsterdam, gesteund door de 120+ engineers van Manifera, stapt regelmatig precies in dit soort lacune — het doorlezen van door AI gegenereerde code die niemand volledig heeft geverifieerd en het documenteren van wat die daadwerkelijk doet. LaunchStudio brengt diezelfde standaard, gebruikt in Manifera's [portfolio van 160+ opgeleverde projecten](https://www.manifera.com/portfolio/), naar producten op oprichtersschaal. Heeft uw eigen onboardinggesprek meer vragen opgeroepen dan beantwoord, dan kunt u [spreken met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

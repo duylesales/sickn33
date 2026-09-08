@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-software-engineering-principles-your-prototype-skipped"
+    "@id": "https://launchstudio.eu/nl/blog/ai-software-engineering-principles-your-prototype-skipped"
   }
 }
 </script>
@@ -69,11 +69,11 @@ Kloven in invoervalidatie zijn ongebruikelijk gemakkelijk voor een oprichter om 
 
 ## Hoe het sluiten van deze kloven er in de praktijk uitziet
 
-Een grondige validatiestap past consistente, server-side regels toe over elk toegangspunt dat een systeem blootstelt, waardoor misvormde en vijandige invoer opgevangen wordt voordat het de bedrijfslogica bereikt. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort validatie-audit uit als onderdeel van haar standaard beoordeling, ondersteund door Manifera's 11+ jaar ervaring met enterprise software engineering toegepast op producten op oprichterschaal.
+Een grondige validatiestap past consistente, server-side regels toe over elk toegangspunt dat een systeem blootstelt, waardoor misvormde en vijandige invoer opgevangen wordt voordat het de bedrijfslogica bereikt. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort validatie-audit uit als onderdeel van haar standaard beoordeling, ondersteund door Manifera's 11+ jaar ervaring met enterprise software engineering toegepast op producten op oprichterschaal.
 
 Manifera's validatie- en uithardingswerk wordt voornamelijk uitgevoerd via haar ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het kantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

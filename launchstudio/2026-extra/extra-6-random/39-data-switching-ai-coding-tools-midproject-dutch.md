@@ -12,10 +12,10 @@ Doelgroep: Technische solo-oprichter
   "@type": "Article",
   "headline": "Wat er met uw gegevens gebeurt wanneer u halverwege een project van AI-codeertool wisselt",
   "description": "Een uitleg over de database- en schemarisico's van het wisselen van AI-codeertool halverwege een build, waarom de onderliggende ai database-aannames zelden overeenkomen tussen tools, en hoe u migreert zonder gegevens te verliezen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-25",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/data-switching-ai-coding-tools-midproject" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/data-switching-ai-coding-tools-midproject" }
 }
 </script>
 
@@ -44,7 +44,7 @@ Een paar praktische maatregelen, als een tussentijdse toolwissel echt noodzakeli
 
 Niets hiervan is exotisch advies — het is standaardpraktijk voor elke databasemigratie. De valkuil is dat het wisselen van AI-codeertool niet aanvoelt als een databasemigratie, waardoor oprichters de standaardvoorzorgsmaatregelen overslaan die ze nooit zouden overslaan als ze het correct zouden framen.
 
-LaunchStudio brengt Manifera's enterprise-grade engineeringdiscipline naar precies dit soort cross-tool-migratiewerk, waarbij schema-mismatches tussen tools worden opgelost zonder dat uw frontend hoeft te worden herbouwd. Ons engineeringcentrum in Ho Chi Minh-stad behandelt een gestage stroom van deze migraties voor oprichters die precies dit probleem hebben. U kunt [ons uw project sturen voor een gratis beoordeling](https://launchstudio.eu/en/#contact) van wat een veilige migratie tussen tools daadwerkelijk zou vereisen. Voor meer over de database- en backend-discipline achter dit soort werk, zie Manifera's praktijk in [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
+LaunchStudio brengt Manifera's enterprise-grade engineeringdiscipline naar precies dit soort cross-tool-migratiewerk, waarbij schema-mismatches tussen tools worden opgelost zonder dat uw frontend hoeft te worden herbouwd. Ons engineeringcentrum in Ho Chi Minh-stad behandelt een gestage stroom van deze migraties voor oprichters die precies dit probleem hebben. U kunt [ons uw project sturen voor een gratis beoordeling](https://launchstudio.eu/nl/#contact) van wat een veilige migratie tussen tools daadwerkelijk zou vereisen. Voor meer over de database- en backend-discipline achter dit soort werk, zie Manifera's praktijk in [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelpersona: AI-Native Founder (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Founder (Niet-Technisch)
   "datePublished": "2026-11-02",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/bolt-ai"
+    "@id": "https://launchstudio.eu/nl/blog/bolt-ai"
   }
 }
 </script>
@@ -70,7 +70,7 @@ Dit is geenszins een diskwalificatie van Bolt AI. Het is simpelweg de erkenning 
 
 Hier doet de psychologie van de ondernemer haar intrede. U heeft misschien wel 40 uur intensief in Bolt AI doorgebracht om elk detail te perfectioneren: elke knop, elke kleurovergang en elke animatie. De gedachte dat een traditioneel softwarebureau zegt: *"Dit moeten we allemaal weggooien en vanaf nul herbouwen voor € 30.000"*, voelt als het vernietigen van weken aan waardevol creatief werk.
 
-Die frustratie en weerstand is volkomen begrijpelijk — en het is exact de reden waarom [LaunchStudio](https://launchstudio.eu/en/) in het leven is geroepen.
+Die frustratie en weerstand is volkomen begrijpelijk — en het is exact de reden waarom [LaunchStudio](https://launchstudio.eu/nl/) in het leven is geroepen.
 
 LaunchStudio, aangedreven door het senior engineeringteam van [Manifera](https://www.manifera.com/services/custom-software-development/) met ruim 11 jaar ervaring in enterprise softwareontwikkeling, behoudt specifiek uw volledige AI-gegenereerde frontend. Wij gooien uw interface niet weg. In plaats daarvan bouwen onze senior engineers de ontbrekende backend-infrastructuur direct onder uw bestaande UI: Row Level Security, betalingsverwerking, databases en geautomatiseerde cloud-deployments.
 

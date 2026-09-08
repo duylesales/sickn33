@@ -13,10 +13,10 @@ Doelgroep: SaaS Scale-Up Oprichter
   "@type": "Article",
   "headline": "Een Leeuwarder prototype omzetten in een AI SaaS-platform dat klanten kunnen vertrouwen",
   "description": "Wat een werkend prototype scheidt van een echt AI SaaS-platform, geïllustreerd via de ervaring van een Leeuwarder oprichter die schaalt voorbij een enkele klant.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-saas-platform-leeuwarden" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-saas-platform-leeuwarden" }
 }
 </script>
 
@@ -40,7 +40,7 @@ Het ongemakkelijke gedeelte is dat deze bugs zichzelf zelden helder aankondigen.
 
 Dit is waar het werk van LaunchStudio zich op concentreert voor SaaS-oprichters die overstappen van een gevalideerd idee naar een betalend klantenbestand. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het bouwen van exact dit type multi-tenant architectuur voor enterprise-klanten — dezelfde discipline hier toegepast op schaal van oprichters. Ons engineeringteam, met technische oplevering gecoördineerd vanuit ons kantoor in Ho Chi Minh City, beoordeelt de databasestructuur, de autorisatielaag en de inrichting van de uitrol, en herbouwt vervolgens alles wat aanneemt dat er slechts ooit één klant is die de app gebruikt.
 
-We doen dit zonder de frontend-interface aan te raken die een Leeuwarder oprichter al heeft gebouwd en gevalideerd met echte gebruikers. Als u een concrete inschatting wilt van wat een beoordeling van platformgereedheid zou kosten voor uw app, geeft [onze calculator](https://launchstudio.eu/en/#calculator) een snel, eerlijk getal gebaseerd op wat u daadwerkelijk heeft gebouwd. Voor een blik op hoe Manifera custom platformarchitectuur aanpakt op grotere schaal, zie ons [custom software development](https://www.manifera.com/services/custom-software-development/) werk.
+We doen dit zonder de frontend-interface aan te raken die een Leeuwarder oprichter al heeft gebouwd en gevalideerd met echte gebruikers. Als u een concrete inschatting wilt van wat een beoordeling van platformgereedheid zou kosten voor uw app, geeft [onze calculator](https://launchstudio.eu/nl/#calculator) een snel, eerlijk getal gebaseerd op wat u daadwerkelijk heeft gebouwd. Voor een blik op hoe Manifera custom platformarchitectuur aanpakt op grotere schaal, zie ons [custom software development](https://www.manifera.com/services/custom-software-development/) werk.
 
 De heropbouw zelf is doorgaans overzichtelijker dan oprichters verwachten. Het herstellen van huurdersisolatie betekent niet dat de gehele applicatie herschreven moet worden — het betekent systematisch door elke databasequery, elke achtergrondtaak en elke API-route lopen en bevestigen dat elk expliciet de data afschermt naar de juiste klant, en vervolgens geautomatiseerde testen toevoegen die een regressie zouden opvangen als een toekomstige functie per ongeluk hetzelfde gat opnieuw zou introduceren. Voor een platform met een handvol klanten wordt dat doorgaans gemeten in dagen, en niet in maanden.
 

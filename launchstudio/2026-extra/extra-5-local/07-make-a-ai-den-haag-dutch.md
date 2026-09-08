@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "Een AI-product maken in Den Haag zonder vast te lopen op de backend",
   "description": "Een praktische gids voor Haagse oprichters over het maken van een AI-product dat niet stilvalt bij de backend, gebaseerd op een daadwerkelijk project uit de govtech- en compliance-sector.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/make-a-ai-den-haag" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/make-a-ai-den-haag" }
 }
 </script>
 
@@ -41,7 +41,7 @@ Vergelijk dat eens met een typisch consumentenproduct in Amsterdam of Rotterdam,
 
 Dit is precies de kloof die LaunchStudio dicht. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf dat onder meer werkt vanuit de Herengracht 420 in Amsterdam, met ruim 160 opgeleverde projecten voor enterprise-klanten die sterk afhankelijk zijn van backend-juistheid — waaronder TNO, een Nederlandse onderzoeksorganisatie met strenge technische normen. Het [portfolio](https://www.manifera.com/portfolio/) van Manifera weerspiegelt diezelfde norm, toegepast op producten op oprichtersniveau.
 
-Als u een Haagse oprichter bent die wil bepalen of de backend van uw product daadwerkelijk echte klanten kan ondersteunen — vooral overheden, juridische of institutionele partijen — is de [calculator](https://launchstudio.eu/en/#calculator) van LaunchStudio een snelle manier om de omvang en kosten van een deugdelijke backend-ronde in te schatten voordat u zich vastlegt.
+Als u een Haagse oprichter bent die wil bepalen of de backend van uw product daadwerkelijk echte klanten kan ondersteunen — vooral overheden, juridische of institutionele partijen — is de [calculator](https://launchstudio.eu/nl/#calculator) van LaunchStudio een snelle manier om de omvang en kosten van een deugdelijke backend-ronde in te schatten voordat u zich vastlegt.
 
 ## Waarom dit specifiek in Den Haag zwaarder weegt
 

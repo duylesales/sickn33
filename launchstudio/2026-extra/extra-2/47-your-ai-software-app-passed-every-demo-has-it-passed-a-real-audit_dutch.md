@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-08-01",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/your-ai-software-app-passed-every-demo-has-it-passed-a-real-audit"
+    "@id": "https://launchstudio.eu/nl/blog/your-ai-software-app-passed-every-demo-has-it-passed-a-real-audit"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Een e-learningplatform dat wordt gebruikt op gedeelde schoolcomputers staat voor
 
 ## Wat het op de juiste manier herstellen hiervan vereist
 
-Een correcte herstelling garandeert dat de uitlogactie de sessie of het token actief ongeldig maakt op de server, en niet louter de verwijzing op de client wist. [LaunchStudio](https://launchstudio.eu/en/) test exact dit scenario als onderdeel van haar beoordeling van authenticatiebeveiliging, ondersteund door Manifera's 11+ jaar ervaring met sessie- en tokenbeheer over productiesystemen.
+Een correcte herstelling garandeert dat de uitlogactie de sessie of het token actief ongeldig maakt op de server, en niet louter de verwijzing op de client wist. [LaunchStudio](https://launchstudio.eu/nl/) test exact dit scenario als onderdeel van haar beoordeling van authenticatiebeveiliging, ondersteund door Manifera's 11+ jaar ervaring met sessie- en tokenbeheer over productiesystemen.
 
 Manifera's audits voor sessiebeveiliging worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-27",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-data-security-what-your-prototype-assumes-youll-add-later"
+    "@id": "https://launchstudio.eu/nl/blog/ai-data-security-what-your-prototype-assumes-youll-add-later"
   }
 }
 </script>
@@ -51,11 +51,11 @@ Een debug-eindpunt is typisch nergens gelinkt in de daadwerkelijke navigatie van
 
 ## Wat het sluiten van deze kloof daadwerkelijk vereist
 
-Een correcte beoordeling vóór de lancering inventariseert specifiek elke route in een codebase, identificeert alles wat lijkt op overgebleven debugging-, test- of administratieve functionaliteit die nooit bedoeld was om te overleven in productie, en verwijdert of beperkt elk daarvan op de juiste manier. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort volledige route-inventarisatie uit als een standaardonderdeel van haar Launch Ready-pakket, ondersteund door Manifera's 11+ jaar ervaring met productie-uitrollen over tientallen klantapplicaties.
+Een correcte beoordeling vóór de lancering inventariseert specifiek elke route in een codebase, identificeert alles wat lijkt op overgebleven debugging-, test- of administratieve functionaliteit die nooit bedoeld was om te overleven in productie, en verwijdert of beperkt elk daarvan op de juiste manier. [LaunchStudio](https://launchstudio.eu/nl/) voert exact dit soort volledige route-inventarisatie uit als een standaardonderdeel van haar Launch Ready-pakket, ondersteund door Manifera's 11+ jaar ervaring met productie-uitrollen over tientallen klantapplicaties.
 
 Manifera's route-audits vóór de lancering worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Stuur een beschrijving van uw project door — verwacht een antwoord binnen een werkdag](https://launchstudio.eu/en/#contact).
+[Stuur een beschrijving van uw project door — verwacht een antwoord binnen een werkdag](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

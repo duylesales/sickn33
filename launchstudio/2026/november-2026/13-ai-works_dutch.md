@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-11-13",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-works"
+    "@id": "https://launchstudio.eu/nl/blog/ai-works"
   }
 }
 </script>
@@ -95,7 +95,7 @@ De standaard AI-infrastructuur omvat:
 
 Herre Roelevink, oprichter van Manifera en LaunchStudio: *"Veel AI-oprichters focussen zich blind op de prompt. Maar het is de pijplijn rondom de prompt die bepaalt of u een winstgevend bedrijf bouwt of een bodemloze kostenpost creëert."*
 
-[Vraag een gratis beoordeling van uw AI-infrastructuur aan](https://launchstudio.eu/en/#contact).
+[Vraag een gratis beoordeling van uw AI-infrastructuur aan](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "De AI-privacyproblemen die Hoogezandse oprichters pas opmerken wanneer een gebruiker erom vraagt",
   "description": "De AI-privacyproblemen die zich verbergen in met AI gegenereerde apps totdat een gebruiker in Hoogezand een moeilijke vraag stelt over waar zijn data naartoe gaat, en hoe u ze herstelt voordat dat gebeurt.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-privacy-issues-hoogezand" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-privacy-issues-hoogezand" }
 }
 </script>
 
@@ -42,7 +42,7 @@ Dit is de beoordeling die LaunchStudio specifiek uitvoert voor met AI gebouwde a
 
 Zoals Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, het verwoordt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. We hebben elf jaar ervaring in precies dat." Privacy-architectuur is een direct voorbeeld — het is zelden zichtbaar in een demo, maar het is het eerste dat ertoe doet zodra een echte gebruiker in Hoogezand, of ergens anders in de provincie Groningen, uw app begint te vertrouwen met zijn informatie.
 
-Als u wilt praten over wat er in uw specifieke app zou kunnen ontbreken, [neem contact op via onze contactpagina](https://launchstudio.eu/en/#contact) en we doorlopen het met u. Manifera's bredere werk, waaronder voor klanten met strikte compliance-eisen, is te vinden op onze [over ons pagina](https://www.manifera.com/about-us/).
+Als u wilt praten over wat er in uw specifieke app zou kunnen ontbreken, [neem contact op via onze contactpagina](https://launchstudio.eu/nl/#contact) en we doorlopen het met u. Manifera's bredere werk, waaronder voor klanten met strikte compliance-eisen, is te vinden op onze [over ons pagina](https://www.manifera.com/about-us/).
 
 ## Een AVG-gereedheidschecklist voor met AI gebouwde apps
 

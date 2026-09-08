@@ -16,7 +16,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische Solo Oprichter / Indie Hacker
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/voice-ai-transcription-errors-security-question"
+    "@id": "https://launchstudio.eu/nl/blog/voice-ai-transcription-errors-security-question"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Een prompt die beschrijft "laat gebruikers bestellingen via spraak bevestigen" w
 
 Voor elke via spraak geactiveerde actie met een echte consequentie sluit een korte, expliciete bevestigingsstap – het herhalen van de geïnterpreteerde instructie en het vereisen van een duidelijke, bewuste bevestiging voor de uitvoering – het grootste deel van deze kloof. Dit gebeurt tegen bescheiden kosten voor de interactiesnelheid die vrijwel altijd de moeite waard zijn om in te ruilen voor de vermindering van het risico op ingrijpende verkeerde interpretaties.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt spraakgestuurde AI-producten specifiek op dit risico van transcriptie naar actie. Wij maken onderscheid tussen passieve transcriptiefuncties en ingrijpende, actie-activerende functies en passen gepaste bevestigingswaarborgen toe op de laatste, ondersteund door Manifera's bredere engineeringdiscipline in het behandelen van invoervalidatie als een beveiligingsoverweging, en niet alleen als een kwaliteitskwestie.
+[LaunchStudio](https://launchstudio.eu/nl/) beoordeelt spraakgestuurde AI-producten specifiek op dit risico van transcriptie naar actie. Wij maken onderscheid tussen passieve transcriptiefuncties en ingrijpende, actie-activerende functies en passen gepaste bevestigingswaarborgen toe op de laatste, ondersteund door Manifera's bredere engineeringdiscipline in het behandelen van invoervalidatie als een beveiligingsoverweging, en niet alleen als een kwaliteitskwestie.
 
-[Laat uw spraakproduct beoordelen op plekken waar een verkeerd verstaan woord een echt probleem wordt](https://launchstudio.eu/en/#calculator) — transcriptienauwkeurigheid en actieve veiligheid zijn gerelateerde maar oprecht verschillende vragen.
+[Laat uw spraakproduct beoordelen op plekken waar een verkeerd verstaan woord een echt probleem wordt](https://launchstudio.eu/nl/#calculator) — transcriptienauwkeurigheid en actieve veiligheid zijn gerelateerde maar oprecht verschillende vragen.
 
 ## Een test-controlelijst voor spraakproducten voorbij de stille kamer
 

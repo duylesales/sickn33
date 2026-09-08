@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/internal-ai-tools-still-need-production-standards"
+    "@id": "https://launchstudio.eu/nl/blog/internal-ai-tools-still-need-production-standards"
   }
 }
 </script>
@@ -53,9 +53,9 @@ De interne tool van een oprecht klein team draagt naar verhouding een lager risi
 
 Interne tools hebben niet exact dezelfde prioriteit of urgentie nodig als klantgerichte producten, maar ze rechtvaardigen dezelfde onderliggende categorieën van beoordeling – juiste authenticatie in plaats van een aangenomen grens van alleen het team, toegang begrensd tot de daadwerkelijke rol in plaats van algehele teamwijde zichtbaarheid, en periodieke herbeoordeling naarmate de omvang van de tool en de samenstelling van het team in de loop van de tijd veranderen.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt interne AI-tools met dezelfde onderliggende categorieën die worden toegepast op klantgerichte producten, gepast begrensd tot het daadwerkelijke risico in plaats van volledig te worden overgeslagen op basis van alleen de doelgroep, ondersteund door Manifera's bredere ervaring in het herkennen dat het risico van interne tools zich stilletjes opbouwt, exact zoals dit artikel beschrijft.
+[LaunchStudio](https://launchstudio.eu/nl/) beoordeelt interne AI-tools met dezelfde onderliggende categorieën die worden toegepast op klantgerichte producten, gepast begrensd tot het daadwerkelijke risico in plaats van volledig te worden overgeslagen op basis van alleen de doelgroep, ondersteund door Manifera's bredere ervaring in het herkennen dat het risico van interne tools zich stilletjes opbouwt, exact zoals dit artikel beschrijft.
 
-[Laat uw interne tool beoordelen voordat deze stilletjes haar oorspronkelijke aannames ontgroeit](https://launchstudio.eu/en/#contact) — "alleen voor het team" beschrijft een doelgroep, en geen risiconiveau.
+[Laat uw interne tool beoordelen voordat deze stilletjes haar oorspronkelijke aannames ontgroeit](https://launchstudio.eu/nl/#contact) — "alleen voor het team" beschrijft een doelgroep, en geen risiconiveau.
 
 ## Wat "alleen intern" daadwerkelijk zou moeten betekenen in uw toegangsbeheer
 

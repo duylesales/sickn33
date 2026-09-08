@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-12-07",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-first-vs-mobile-first-architecture"
+    "@id": "https://launchstudio.eu/nl/blog/ai-first-vs-mobile-first-architecture"
   }
 }
 </script>
@@ -99,7 +99,7 @@ Wanneer u bouwt met Lovable, Bolt of Cursor raakt de AI-first architectuuromslag
 
 Deze architectuurbesluiten worden niet automatisch opgelost door AI-prototyping tools. Ze vereisen doelgerichte software-engineering.
 
-[LaunchStudio](https://launchstudio.eu/en/), ondersteund door [Manifera's](https://www.manifera.com/) 11+ jaar ervaring in enterprise-architectuur, helpt oprichters bij het inrichten van AI-first patronen die marges beschermen, prestaties optimaliseren en schaalbaarheid waarborgen. Vanuit het ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh-stad, met Europees management aan de Herengracht 420 in Amsterdam, levert het team diepgaande backend-engineering specifiek afgestemd op AI-native applicaties.
+[LaunchStudio](https://launchstudio.eu/nl/), ondersteund door [Manifera's](https://www.manifera.com/) 11+ jaar ervaring in enterprise-architectuur, helpt oprichters bij het inrichten van AI-first patronen die marges beschermen, prestaties optimaliseren en schaalbaarheid waarborgen. Vanuit het ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh-stad, met Europees management aan de Herengracht 420 in Amsterdam, levert het team diepgaande backend-engineering specifiek afgestemd op AI-native applicaties.
 
 Herre Roelevink, oprichter van Manifera, vat de uitdaging samen: *"Het bouwen van een AI-functie is tegenwoordig het makkelijke deel. Het ontwerpen van een duurzame AI-architectuur — de caching, het kostenbeheer, de bescherming tegen prompt-injecties — is de engineeringdiscipline die levensvatbare bedrijven onderscheidt van startups die ten onder gaan aan hun eigen API-rekeningen."*
 
@@ -113,7 +113,7 @@ Voor oprichters die in 2027 lanceren, is dit de architectuur-checklist:
 4. **Beveilig tegen prompt-aanvallen** — Beveilig uw endpoints tegen prompt-injecties, data-lekkage en PII-blootstelling.
 5. **Prijs voor duurzame winstgevendheid** — Gebruik gestaffelde of gebruiksafhankelijke tarieven die variabele AI-kosten evenredig doorbelasten.
 
-[Laat uw AI-first architectuur reviewen](https://launchstudio.eu/en/#contact) door het engineeringteam van LaunchStudio.
+[Laat uw AI-first architectuur reviewen](https://launchstudio.eu/nl/#contact) door het engineeringteam van LaunchStudio.
 
 ## Echt voorbeeld
 

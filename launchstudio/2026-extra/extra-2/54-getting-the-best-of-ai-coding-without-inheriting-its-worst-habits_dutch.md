@@ -16,7 +16,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Bureau / Freelancer (White-Label Partner)
   "datePublished": "2026-08-03",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/getting-the-best-of-ai-coding-without-inheriting-its-worst-habits"
+    "@id": "https://launchstudio.eu/nl/blog/getting-the-best-of-ai-coding-without-inheriting-its-worst-habits"
   }
 }
 </script>
@@ -55,11 +55,11 @@ Een klant die vertrouwt op de lancering-review van een bureau om oprecht grondig
 
 ## Hoe LaunchStudio bureaus ondersteunt met deze specifieke controle
 
-[LaunchStudio](https://launchstudio.eu/en/) verifieert de beveiligingsconfiguratie van cookies als standaard onderdeel van haar white-label technische beoordeling voor bureaus die overdrachten van klanten afhandelen, ondersteund door Manifera's 11+ jaar ervaring met veilig sessiebeheer.
+[LaunchStudio](https://launchstudio.eu/nl/) verifieert de beveiligingsconfiguratie van cookies als standaard onderdeel van haar white-label technische beoordeling voor bureaus die overdrachten van klanten afhandelen, ondersteund door Manifera's 11+ jaar ervaring met veilig sessiebeheer.
 
 Manifera's beoordelingen van sessiebeveiliging worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Freelancer of kleine studio? Wij zijn het engineeringteam achter uw merk](https://launchstudio.eu/en/#contact).
+[Freelancer of kleine studio? Wij zijn het engineeringteam achter uw merk](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

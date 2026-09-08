@@ -43,13 +43,13 @@ Artikel 11 van de AI Act vereist dat aanbieders van hoog-risico systemen gedetai
 
 Het ontwerpen van software voor de EU AI Act vereist een niveau van architecturale precisie dat de meeste vroege ontwikkelaars simpelweg niet bezitten. Het bouwen van een onveranderlijk loggingsysteem dat uw database niet vertraagt en een HITL-workflow die de operationele snelheid behoudt, vergt jarenlange enterprise ervaring.
 
-Dit is exact waarom Nederlandse scale-ups kiezen voor [LaunchStudio](https://launchstudio.eu/en/).
+Dit is exact waarom Nederlandse scale-ups kiezen voor [LaunchStudio](https://launchstudio.eu/nl/).
 
 Gesteund door de diepgaande enterprise expertise van [Manifera](https://www.manifera.com/) — met ruim 11 jaar software-engineering ervaring, 120+ senior ontwikkelaars en 160+ succesvol opgeleverde projecten voor organisaties zoals Vodafone, TNO en CFLW vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons software-centrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — overbrugt LaunchStudio de kloof tussen juridische regelgeving en technische software-architectuur.
 
 Wanneer u ons inschakelt om uw AI-backend te bouwen en te schalen, schrijven wij niet zomaar code; wij bouwen een robuuste, compliant enterprise-architectuur.
 
-Wij bouwen maatwerk Supabase PostgreSQL-databases met strikte Row Level Security (RLS) om privacy te borgen — exact de discipline die voorkomt dat uw applicatie valt onder de **45% van de AI-codebases die kwetsbaarheden bevatten**. We ontwikkelen Edge Functions die elke AI-interactie wegschrijven naar beveiligde, versleutelde en onveranderlijke audittabellen. We programmeren de HITL-goedkeuringsinterfaces en leveren de gestructureerde technische documentatie aan die uw juridische adviseurs nodig hebben voor de conformiteitsbeoordeling. Wij vertalen wettelijke artikelen naar wiskundig afgedwongen code. Zie onze [transparante pakketten en tarieven](https://launchstudio.eu/en/#packages) voor een overzicht van onze diensten.
+Wij bouwen maatwerk Supabase PostgreSQL-databases met strikte Row Level Security (RLS) om privacy te borgen — exact de discipline die voorkomt dat uw applicatie valt onder de **45% van de AI-codebases die kwetsbaarheden bevatten**. We ontwikkelen Edge Functions die elke AI-interactie wegschrijven naar beveiligde, versleutelde en onveranderlijke audittabellen. We programmeren de HITL-goedkeuringsinterfaces en leveren de gestructureerde technische documentatie aan die uw juridische adviseurs nodig hebben voor de conformiteitsbeoordeling. Wij vertalen wettelijke artikelen naar wiskundig afgedwongen code. Zie onze [transparante pakketten en tarieven](https://launchstudio.eu/nl/#packages) voor een overzicht van onze diensten.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -61,7 +61,7 @@ Wij bouwen maatwerk Supabase PostgreSQL-databases met strikte Row Level Security
 - Technische conformiteitsdocumentatie moet continu up-to-date worden gehouden bij elke model- of promptwijziging.
 - LaunchStudio levert het ervaren enterprise engineeringtalent om EU AI Act compliance foutloos op codeniveau te implementeren.
 
-[Riskeer geen miljoenenboetes onder de AI Act. Laat LaunchStudio uw compliance-architectuur bouwen](https://launchstudio.eu/en/#contact).
+[Riskeer geen miljoenenboetes onder de AI Act. Laat LaunchStudio uw compliance-architectuur bouwen](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

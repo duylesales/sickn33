@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "AI voor coding in Hilversum: Wat mediasector-oprichters bouwen (en missen)",
   "description": "Hoe oprichters in de Hilversumse mediabranche AI voor coding gebruiken om content- en productietools te bouwen, en de specifieke productiegaten die in die sector naar voren komen.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-for-coding-hilversum" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-for-coding-hilversum" }
 }
 </script>
 
@@ -44,7 +44,7 @@ De gaten hebben de neiging zich te concentreren rond precies de gebieden die voo
 
 Zoals Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, het verwoordt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. We hebben elf jaar ervaring in precies dat." Voor een Hilversumse oprichter wiens product afhankelijk is van het beschermen van niet-gepubliceerde media, is die architectuurvraag niet optioneel — het is de geloofwaardigheid van het gehele product.
 
-Als uw in Hilversum gebouwde platform een vorm van gevoelige of geëmbargeerde content verwerkt, is het de moeite waard om het [volledige productieproces](https://launchstudio.eu/en/#process) van LaunchStudio te verkennen voordat u verder opschaalt. Het [custom software development](https://www.manifera.com/services/custom-software-development/) werk van Manifera past dezelfde toegangscontrolediscipline toe die wordt gebruikt voor enterprise-klanten op mediaplatforms op oprichtersniveau.
+Als uw in Hilversum gebouwde platform een vorm van gevoelige of geëmbargeerde content verwerkt, is het de moeite waard om het [volledige productieproces](https://launchstudio.eu/nl/#process) van LaunchStudio te verkennen voordat u verder opschaalt. Het [custom software development](https://www.manifera.com/services/custom-software-development/) werk van Manifera past dezelfde toegangscontrolediscipline toe die wordt gebruikt voor enterprise-klanten op mediaplatforms op oprichtersniveau.
 
 ## De juiste opslagconfiguratie kiezen voor gevoelige mediabestanden
 

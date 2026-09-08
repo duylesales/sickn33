@@ -13,10 +13,10 @@ Doelgroep: SaaS-oprichter Scale-Up
   "@type": "Article",
   "headline": "Voordat u een AI-tooldownload vertrouwt, stel deze vijf vragen",
   "description": "Elke ai tool download die u aan uw stack toevoegt — extensie, plugin of package — krijgt toegang tot uw codebase. Vijf technische vragen om te stellen voordat u er één installeert bij een groeiend SaaS-bedrijf.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-08-15",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/before-you-trust-any-ai-tool-download-ask" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/before-you-trust-any-ai-tool-download-ask" }
 }
 </script>
 

@@ -13,10 +13,10 @@ Doelgroep: Niet-technische oprichter
   "@type": "Article",
   "headline": "De meest voorkomende AI-beveiligingsproblemen in Drachtster door oprichters gebouwde prototypes",
   "description": "Een overzicht van de AI-beveiligingsproblemen die het meest verschijnen in door oprichters gebouwde prototypes, ontleend aan echte beoordelingen van apps gebouwd door oprichters rond Drachten.",
-  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-security-issues-drachten" }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/nl/blog/ai-security-issues-drachten" }
 }
 </script>
 
@@ -46,7 +46,7 @@ Het vijfde patroon toont zich minder vaak bij een eerste beoordeling, maar doet 
 
 Geen van deze vijf problemen is hypothetisch. Onderzoek toont consistent dat een groot deel van de met AI gegenereerde code — onze eigen beoordelingen stellen het getal op ongeveer 45% — ten minste één misbruikbaar beveiligingsgat draagt van exact dit type, en het is zelden slechts één probleem in isolatie. Prototypes die we beoordelen tonen doorgaans twee of drie van deze vijf patronen samen, aangezien ze neigen voort te komen uit dezelfde onderliggende gewoonte: bouwen voor het succespad dat een demo doorloopt, en niet voor het vijandige pad dat een echte aanvaller zou proberen. Voor een oprichter in de provincie Friesland die een planningstool voor personeel bouwt voor lokale industriële werkgevers is dat geen abstracte statistiek. Het is het verschil tussen een soepele productlancering en een ongemakkelijk gesprek met een werkgever-klant over waarom werknemersgegevens werden blootgesteld.
 
-LaunchStudio's engineers hebben 160+ projecten opgeleverd voor enterprise-klanten en doorlopen exact deze checklist op prototypes van oprichters, waarbij het technische beoordelingswerk deels wordt gecoördineerd vanuit ons kantoor in Singapore. We herstellen wat we vinden achter uw bestaande interface — er is geen heropbouw vereist. U kunt beginnen met het verkennen van [wat LaunchStudio doet](https://launchstudio.eu/en/) en hoe een beoordeling past in het productiegereed maken van uw prototype. Voor een blik op Manifera's bredere engineering-trackrecord, zie onze [web app development](https://www.manifera.com/services/web-app-develop/) praktijk.
+LaunchStudio's engineers hebben 160+ projecten opgeleverd voor enterprise-klanten en doorlopen exact deze checklist op prototypes van oprichters, waarbij het technische beoordelingswerk deels wordt gecoördineerd vanuit ons kantoor in Singapore. We herstellen wat we vinden achter uw bestaande interface — er is geen heropbouw vereist. U kunt beginnen met het verkennen van [wat LaunchStudio doet](https://launchstudio.eu/nl/) en hoe een beoordeling past in het productiegereed maken van uw prototype. Voor een blik op Manifera's bredere engineering-trackrecord, zie onze [web app development](https://www.manifera.com/services/web-app-develop/) praktijk.
 
 ## Een zelfcontrole van tien minuten voordat u met iemand belt
 

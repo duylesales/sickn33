@@ -35,9 +35,9 @@ De instinctieve reactie — meer testgevallen schrijven — helpt, maar alleen v
 
 Reserveer toegewijde tijd — apart van functieontwikkeling en apart van het schrijven van geplande testgevallen — specifiek om jouw eigen product te gebruiken zoals een onvoorspelbare echte gebruiker zou doen: klik dingen buiten de verwachte volgorde, verlaat flows halverwege en keer later terug, open meerdere tabbladen en handel in beide simultaan. Deze verkennende sessie, apart van zowel ontwikkeling als formeel testen, is specifiek ontworpen om de aannames naar boven te brengen die geen van die andere activiteiten natuurlijk oproept.
 
-[LaunchStudio](https://launchstudio.eu/en/) omvat precies dit soort verkennend adversarieel testen als onderdeel van zijn productiegereedheidsreview, specifiek jagend op verborgen workflowaannames voorbij wat een standaard testsuite dekt, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) omvat precies dit soort verkennend adversarieel testen als onderdeel van zijn productiegereedheidsreview, specifiek jagend op verborgen workflowaannames voorbij wat een standaard testsuite dekt, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
 
-[Laat jouw app testen zoals echte gebruikers het daadwerkelijk zullen gebruiken, niet alleen zoals je verwachtte](https://launchstudio.eu/en/#calculator) — tests doorstaan en echt gebruik overleven zijn verschillende beweringen.
+[Laat jouw app testen zoals echte gebruikers het daadwerkelijk zullen gebruiken, niet alleen zoals je verwachtte](https://launchstudio.eu/nl/#calculator) — tests doorstaan en echt gebruik overleven zijn verschillende beweringen.
 
 ## Echt voorbeeld
 

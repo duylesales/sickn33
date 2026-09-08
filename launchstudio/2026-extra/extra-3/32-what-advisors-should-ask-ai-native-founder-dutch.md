@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-advisors-should-ask-ai-native-founder"
+    "@id": "https://launchstudio.eu/nl/blog/what-advisors-should-ask-ai-native-founder"
   }
 }
 </script>
@@ -57,9 +57,9 @@ Elk van deze vragen is ontworpen om de specifieke kloof naar boven te brengen di
 
 Een oprichter met oprecht solide antwoorden beschrijft specifieke zaken – een specifieke audit die heeft plaatsgevonden, een specifieke test die is uitgevoerd, een specifieke leveranciersafhankelijkheid waar hij specifiek over heeft nagedacht – en geen algemene geruststelling. De specificiteit zelf, meer dan de inhoud van een enkel antwoord, is waar een adviseur daadwerkelijk naar zou moeten luisteren. Dit weerspiegelt de bredere richtlijnen in deze reeks over het evalueren van elke technische claim.
 
-[LaunchStudio](https://launchstudio.eu/en/) werkt rechtstreeks samen met mentoren en adviseurs van oprichters wanneer we worden uitgenodigd in dat gesprek, om te helpen exact dit soort vragen en hun antwoorden nauwkeurig te vertalen. Dit wordt ondersteund door Manifera's bredere ervaring in het duidelijk communiceren van technische bevindingen aan niet-technische belanghebbenden in meer dan 160 opgeleverde projecten.
+[LaunchStudio](https://launchstudio.eu/nl/) werkt rechtstreeks samen met mentoren en adviseurs van oprichters wanneer we worden uitgenodigd in dat gesprek, om te helpen exact dit soort vragen en hun antwoorden nauwkeurig te vertalen. Dit wordt ondersteund door Manifera's bredere ervaring in het duidelijk communiceren van technische bevindingen aan niet-technische belanghebbenden in meer dan 160 opgeleverde projecten.
 
-[Breng deze vijf vragen mee naar uw volgende adviesgesprek](https://launchstudio.eu/en/#contact) — ze brengen iets naar boven wat generieke onderzoeksvragen bij deze specifieke categorie oprichters consistent missen.
+[Breng deze vijf vragen mee naar uw volgende adviesgesprek](https://launchstudio.eu/nl/#contact) — ze brengen iets naar boven wat generieke onderzoeksvragen bij deze specifieke categorie oprichters consistent missen.
 
 ## Een korte zelfdiagnose voor adviseurs: Heeft u de technische laag daadwerkelijk onderzocht?
 

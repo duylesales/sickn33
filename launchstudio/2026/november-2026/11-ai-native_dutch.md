@@ -16,7 +16,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: AI-Native Oprichter (Niet-Technisch)
   "datePublished": "2026-11-11",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-native"
+    "@id": "https://launchstudio.eu/nl/blog/ai-native"
   }
 }
 </script>
@@ -63,7 +63,7 @@ Het meest onderschatte voordeel van AI-native oprichters is niet de bouwsnelheid
 
 Dit verandert het spel compleet. De traditionele aanpak is maandenlang bouwen om er daarna pas achter te komen of iemand het product wil hebben. De AI-native aanpak is vijf prototypes bouwen in vijf weken, elk testen met echte gebruikers, en vol inzetten op het concept dat de meeste tractie oplevert.
 
-Marieke, een SaaS-oprichter uit het netwerk van [LaunchStudio](https://launchstudio.eu/en/), illustreert deze werkwijze perfect. Zij testte drie verschillende productideeën met Lovable voordat ze het winnende concept voor personal trainers vond. De totale kosten van haar validatiefase: drie weken en circa €40 aan tool-abonnementen.
+Marieke, een SaaS-oprichter uit het netwerk van [LaunchStudio](https://launchstudio.eu/nl/), illustreert deze werkwijze perfect. Zij testte drie verschillende productideeën met Lovable voordat ze het winnende concept voor personal trainers vond. De totale kosten van haar validatiefase: drie weken en circa €40 aan tool-abonnementen.
 
 Het winnende concept — een cliëntenbeheerdashboard — had vervolgens professionele engineering nodig voor betalingsverwerking en veilige gebruikersaccounts. LaunchStudio bracht haar gevalideerde prototype binnen 10 dagen naar productie, tegen een fractie van de kosten van een traditioneel bureau.
 
@@ -83,7 +83,7 @@ Die overgang vereist:
 
 **Beveiligingsharding** — Kwetsbaarheidsscans, penetratietesten, inputvalidatie en AVG/GDPR-compliance.
 
-Deze componenten zijn onzichtbaar voor de eindgebruiker. Ze maken het scherm niet mooier; ze zorgen ervoor dat het product functioneert. En dat zijn exact de onderdelen waarin [LaunchStudio](https://launchstudio.eu/en/) is gespecialiseerd.
+Deze componenten zijn onzichtbaar voor de eindgebruiker. Ze maken het scherm niet mooier; ze zorgen ervoor dat het product functioneert. En dat zijn exact de onderdelen waarin [LaunchStudio](https://launchstudio.eu/nl/) is gespecialiseerd.
 
 ## Het Infrastructuur-Partnermodel Voor AI-Native Startups
 
@@ -97,7 +97,7 @@ LaunchStudio, ontwikkeld door [Manifera](https://www.manifera.com/about-us/) ond
 
 Dit model kost €800 tot €7.500 (vaste prijs) en duurt 1 tot 3 weken. Vergelijk dat met het aannemen van een technische co-founder (€6.000–€12.000/maand) of een traditioneel softwarebureau (€20.000–€100.000).
 
-[Beschrijf uw project](https://launchstudio.eu/en/#contact) en ontvang binnen één werkdag een vaste prijsopgave.
+[Beschrijf uw project](https://launchstudio.eu/nl/#contact) en ontvang binnen één werkdag een vaste prijsopgave.
 
 ## De Toekomst Is Aan AI-Native Oprichters — Met De Juiste Backend
 

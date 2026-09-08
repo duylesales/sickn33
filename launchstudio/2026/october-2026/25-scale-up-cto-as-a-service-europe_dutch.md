@@ -57,7 +57,7 @@ De meeste ondernemers wachten te lang en behandelen elk incident als een losstaa
 
 Het grote nadeel van veel zelfstandige "CTO as a Service"-adviseurs is dat zij een prachtig architectuurdiagram in een gelikt PDF-rapport opleveren en vervolgens direct weer vertrekken. Zij beschikken niet over een eigen engineeringteam om het plan fysiek te bouwen, waardoor de oprichter achterblijft met een mooie strategie maar zonder de handen om het te realiseren.
 
-[LaunchStudio](https://launchstudio.eu/en/), aangedreven door de 11+ jaar enterprise-ervaring van [Manifera](https://www.manifera.com/) met meer dan 160 succesvol opgeleverde [portfolio-projecten](https://www.manifera.com/portfolio/) voor toonaangevende opdrachtgevers zoals Vodafone, TNO en CFLW, biedt een fundamenteel ander model.
+[LaunchStudio](https://launchstudio.eu/nl/), aangedreven door de 11+ jaar enterprise-ervaring van [Manifera](https://www.manifera.com/) met meer dan 160 succesvol opgeleverde [portfolio-projecten](https://www.manifera.com/portfolio/) voor toonaangevende opdrachtgevers zoals Vodafone, TNO en CFLW, biedt een fundamenteel ander model.
 
 > "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
@@ -77,7 +77,7 @@ Dit model elimineert het levensgrote overdrachtsrisico (handoff risk) dat de mee
 - 45% van de AI-codebases bevat ernstige kwetsbaarheden; een ervaren Fractional CTO pakt deze aan vóórdat ze leiden tot datalekken of afgewezen enterprise-deals.
 - LaunchStudio combineert CTO-strategie met een dedicated engineeringteam om de infrastructuur binnen 1 tot 3 weken daadwerkelijk te bouwen en op te leveren.
 
-[Heeft uw scale-up enterprise leiderschap nodig zonder het salaris van € 150k? Partner vandaag met LaunchStudio](https://launchstudio.eu/en/#contact).
+[Heeft uw scale-up enterprise leiderschap nodig zonder het salaris van € 150k? Partner vandaag met LaunchStudio](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

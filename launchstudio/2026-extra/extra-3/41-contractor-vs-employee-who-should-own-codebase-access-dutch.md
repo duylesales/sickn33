@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/contractor-vs-employee-who-should-own-codebase-access"
+    "@id": "https://launchstudio.eu/nl/blog/contractor-vs-employee-who-should-own-codebase-access"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Dit onderscheid is geen claim dat aannemers inherent minder betrouwbaar zijn dan
 
 Een bedrijf in een zeer vroeg stadium met één of twee aannemers, die allemaal persoonlijk bekend zijn en nauwlettend worden gecontroleerd door de oprichter, draagt een lager praktisch risico van deze specifieke kloof dan een groeiend bedrijf dat aannemers op grotere afstand binnenhaalt. Daar nemen de persoonlijke bekendheid en het nauwgezette toezicht natuurlijk af – precies de dynamiek van schaalvergroting die elders in bredere richtlijnen wordt behandeld met betrekking tot hoe risico's over het algemeen meegroeien met de groei van het bedrijf.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters bij het opzetten van een gepast beleid voor toegangsbeheer dat rekening houdt met de werkgelegenheidsstatus als onderdeel van bredere interne toegangsbeveiliging. Wij maken het onderscheid tussen wat redelijk is voor aannemers versus werknemers in plaats van te vervallen in een uniform, op vertrouwen gebaseerd toegangsbeleid voor iedereen. Dit wordt ondersteund door Manifera's eigen interne praktijken voor het beheren van toegang binnen een gedistribueerd team verspreid over hoofdkantoren in Amsterdam, Singapore en Ho Chi Minhstad.
+[LaunchStudio](https://launchstudio.eu/nl/) helpt oprichters bij het opzetten van een gepast beleid voor toegangsbeheer dat rekening houdt met de werkgelegenheidsstatus als onderdeel van bredere interne toegangsbeveiliging. Wij maken het onderscheid tussen wat redelijk is voor aannemers versus werknemers in plaats van te vervallen in een uniform, op vertrouwen gebaseerd toegangsbeleid voor iedereen. Dit wordt ondersteund door Manifera's eigen interne praktijken voor het beheren van toegang binnen een gedistribueerd team verspreid over hoofdkantoren in Amsterdam, Singapore en Ho Chi Minhstad.
 
-[Laat uw toegangsbeleid voor aannemers en werknemers beoordelen voordat het onderscheid er toe doet](https://launchstudio.eu/en/#contact) — persoonlijk vertrouwen en structureel risicobeheer zijn gerelateerde maar oprecht verschillende overwegingen.
+[Laat uw toegangsbeleid voor aannemers en werknemers beoordelen voordat het onderscheid er toe doet](https://launchstudio.eu/nl/#contact) — persoonlijk vertrouwen en structureel risicobeheer zijn gerelateerde maar oprecht verschillende overwegingen.
 
 ## Wat een overeenkomst voor aannemerstoegang daadwerkelijk moet omvatten
 

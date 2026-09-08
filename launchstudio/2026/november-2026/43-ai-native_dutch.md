@@ -16,7 +16,7 @@ Doelpersona: Oprichter / Hoofdarchitect
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelpersona: Oprichter / Hoofdarchitect
   "datePublished": "2026-12-13",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/ai-native"
+    "@id": "https://launchstudio.eu/nl/blog/ai-native"
   }
 }
 </script>
@@ -60,7 +60,7 @@ AI-Native applicaties leunen op een **Vloeibare Datalaag**. Hoewel PostgreSQL de
 
 Het ontwerpen van een AI-Native architectuur vereist het verenigen van niet-deterministische AI-redenering met enterprise-beveiliging en stabiliteit.
 
-[LaunchStudio](https://launchstudio.eu/en/), gedragen door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt AI-Native fundamenten vanaf nul op:
+[LaunchStudio](https://launchstudio.eu/nl/), gedragen door de enterprise-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt AI-Native fundamenten vanaf nul op:
 1. **Agentic Frameworks:** Backend-systemen (met LangChain of AutoGen) waarin gespecialiseerde AI-agents samenwerken aan complexe bedrijfsprocessen.
 2. **Generatieve UI Streaming:** Inzetten van de Vercel AI SDK en React Server Components voor het realtime streamen van op maat gemaakte interfaces.
 3. **Beveiligde Autonomie:** Strikte wiskundige vangrails (Zod schema's, RBAC) die garanderen dat agents geen ongeautoriseerde database-schrijfacties of betalingen kunnen uitvoeren zonder menselijke goedkeuring.

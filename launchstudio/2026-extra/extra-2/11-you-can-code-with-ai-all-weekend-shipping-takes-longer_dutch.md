@@ -16,7 +16,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/you-can-code-with-ai-all-weekend-shipping-takes-longer"
+    "@id": "https://launchstudio.eu/nl/blog/you-can-code-with-ai-all-weekend-shipping-takes-longer"
   }
 }
 </script>
@@ -53,11 +53,11 @@ Zelfs QA-gerichte oprichters die randgevallen testen – een dubbele aanmelding,
 
 ## Wat een volledige herstelling daadwerkelijk omvat
 
-Een correcte herstelling vereist een verificatiestap – een bevestigingslink of code verzonden naar het opgegeven e-mailadres, met accountmogelijkheden beperkt totdat die stap voltooid is – plus consistente handhaving van die verificatievereiste over elk pad dat accounttoegang verleent, en niet alleen het primaire aanmeldingsformulier. [LaunchStudio](https://launchstudio.eu/en/) voegt exact dit soort verificatiestroom toe als onderdeel van haar standaard authenticatiebeoordeling, ondersteund door Manifera's 11+ jaar ervaring met het implementeren van op Auth0, Supabase Auth, en Firebase Auth gebaseerde systemen.
+Een correcte herstelling vereist een verificatiestap – een bevestigingslink of code verzonden naar het opgegeven e-mailadres, met accountmogelijkheden beperkt totdat die stap voltooid is – plus consistente handhaving van die verificatievereiste over elk pad dat accounttoegang verleent, en niet alleen het primaire aanmeldingsformulier. [LaunchStudio](https://launchstudio.eu/nl/) voegt exact dit soort verificatiestroom toe als onderdeel van haar standaard authenticatiebeoordeling, ondersteund door Manifera's 11+ jaar ervaring met het implementeren van op Auth0, Supabase Auth, en Firebase Auth gebaseerde systemen.
 
 Manifera's engineeringwerk voor authenticatie wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met klantgesprekken via het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Vertel ons wat u gebouwd heeft — u hoort binnen één werkdag van ons](https://launchstudio.eu/en/#contact).
+[Vertel ons wat u gebouwd heeft — u hoort binnen één werkdag van ons](https://launchstudio.eu/nl/#contact).
 
 ## Hoe u elk pad voor het aanmaken van accounts zelf kunt auditeren, voordat u lanceert
 

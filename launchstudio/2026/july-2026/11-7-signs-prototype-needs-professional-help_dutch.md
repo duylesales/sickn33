@@ -73,7 +73,7 @@ Je hebt een YouTube-tutorial over RLS bekeken, geprobeerd deze te implementeren,
 | 1+ kritieke signalen (1, 2 of 3) | Krijg professionele hulp. Beveiligings- en betalingsproblemen zijn te belangrijk om fout te kunnen gaan. |
 | 3+ borden van elk type | Professioneel productiegereed maken is de snelste en veiligste manier om te starten. |
 
-[LaunchStudio](https://launchstudio.eu/en/) is gespecialiseerd in precies dit scenario. We nemen AI-gebouwde prototypes die deze waarschuwingssignalen vertonen en maken ze in 1 tot 3 weken productieklaar, voor een vaste prijs van € 800 tot € 7.500.
+[LaunchStudio](https://launchstudio.eu/nl/) is gespecialiseerd in precies dit scenario. We nemen AI-gebouwde prototypes die deze waarschuwingssignalen vertonen en maken ze in 1 tot 3 weken productieklaar, voor een vaste prijs van € 800 tot € 7.500.
 
 ## Belangrijkste inzichten
 
@@ -91,7 +91,7 @@ Je hebt een YouTube-tutorial over RLS bekeken, geprobeerd deze te implementeren,
 
 Als uw toepassing deze waarschuwingssignalen vertoont, staat LaunchStudio klaar om u te helpen. We pakken alle beveiligingsproblemen, databaseback-ups en betalingsproblemen aan, waardoor een veilige en stabiele lancering van uw product wordt gegarandeerd.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf onder leiding van oprichter en directeur **Herre Roelevink**. Manifera combineert *"Nederlands management met Vietnamees meesterschap"* en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420) en ontwikkelingscentra in **Singapore** en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf onder leiding van oprichter en directeur **Herre Roelevink**. Manifera combineert *"Nederlands management met Vietnamees meesterschap"* en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420) en ontwikkelingscentra in **Singapore** en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

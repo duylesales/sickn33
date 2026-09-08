@@ -16,7 +16,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: Technische solo-oprichter / Indie Hacker
   "datePublished": "2026-07-25",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/what-ai-software-developers-wish-founders-knew-before-launch"
+    "@id": "https://launchstudio.eu/nl/blog/what-ai-software-developers-wish-founders-knew-before-launch"
   }
 }
 </script>
@@ -55,11 +55,11 @@ Vraag elke ervaren ingenieur die regelmatig door oprichters gebouwde prototypen 
 
 ## Dit correct krijgen zonder uw inlogstroom te overcompliceren
 
-Een correcte herstelling voegt het bijhouden van mislukte pogingen en tijdelijke vergrendeling of snelheidsbeperking toe aan het authenticatie-eindpunt specifiek, gecalibreerd om legitieme gebruikers zo min mogelijk tot last te zijn terwijl geautomatiseerde pogingen betekenisvol worden vertraagd. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort authenticatie-uitharding als een standaardonderdeel van haar beveiligingsbeoordeling, ondersteund door Manifera's 11+ jaar ervaring met het bouwen en beveiligen van authenticatiesystemen over Auth0, Supabase Auth, en aangepaste implementaties.
+Een correcte herstelling voegt het bijhouden van mislukte pogingen en tijdelijke vergrendeling of snelheidsbeperking toe aan het authenticatie-eindpunt specifiek, gecalibreerd om legitieme gebruikers zo min mogelijk tot last te zijn terwijl geautomatiseerde pogingen betekenisvol worden vertraagd. [LaunchStudio](https://launchstudio.eu/nl/) implementeert exact dit soort authenticatie-uitharding als een standaardonderdeel van haar beveiligingsbeoordeling, ondersteund door Manifera's 11+ jaar ervaring met het bouwen en beveiligen van authenticatiesystemen over Auth0, Supabase Auth, en aangepaste implementaties.
 
 Manifera's uithardingswerk voor authenticatie wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld vanuit het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
-[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 

@@ -16,7 +16,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,7 +26,7 @@ Doelgroep: SaaS Oprichter Schaalvergroting
   "datePublished": "2026-07-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/multi-language-ai-products-prompts-not-all-english"
+    "@id": "https://launchstudio.eu/nl/blog/multi-language-ai-products-prompts-not-all-english"
   }
 }
 </script>
@@ -53,9 +53,9 @@ Een oprichter die een functie uitgebreid in het Engels heeft getest heeft geen b
 
 Het testen van de daadwerkelijke AI-gegenereerde uitvoerkwaliteit met oprecht Nederlandse invoer, en niet alleen bevestigen dat de interface correct in het Nederlands wordt weergegeven; controleren of de validatie- en parseringslogica Nederlands-specifieke tekstpatronen correct afhandelt; en, waar de uitvoerkwaliteit oprecht verschilt tussen talen, óf de onderliggende prompt-benadering aanpassen óf transparant zijn naar gebruikers over eventuele kwaliteitsverschillen in plaats van het presenteren van een ongecontroleerde aanname van gelijkwaardigheid.
 
-[LaunchStudio](https://launchstudio.eu/en/) test AI-gegenereerde producten specifiek op echte meertalige functionaliteit, en niet alleen op interfacevertaling, gegeven de focus op de Nederlandse en bredere EU-markt die centraal staat in Manifera's eigen klantenbestand in haar hoofdkantoor in Amsterdam en haar Europese opdrachten.
+[LaunchStudio](https://launchstudio.eu/nl/) test AI-gegenereerde producten specifiek op echte meertalige functionaliteit, en niet alleen op interfacevertaling, gegeven de focus op de Nederlandse en bredere EU-markt die centraal staat in Manifera's eigen klantenbestand in haar hoofdkantoor in Amsterdam en haar Europese opdrachten.
 
-[Laat uw product testen in de taal die uw echte gebruikers daadwerkelijk zullen gebruiken](https://launchstudio.eu/en/#calculator) — interfacevertaling en echte functionele gelijkwaardigheid zijn verschillende, beide noodzakelijke claims.
+[Laat uw product testen in de taal die uw echte gebruikers daadwerkelijk zullen gebruiken](https://launchstudio.eu/nl/#calculator) — interfacevertaling en echte functionele gelijkwaardigheid zijn verschillende, beide noodzakelijke claims.
 
 ## Een praktische controlelijst voor de lancering in een tweede taal
 
