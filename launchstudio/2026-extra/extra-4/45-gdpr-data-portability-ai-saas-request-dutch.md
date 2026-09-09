@@ -107,6 +107,10 @@ Het missen van deadlines creëert reële reglementaire blootstelling – EU-auto
 
 Over het algemeen wel – persoonlijke gegevens die namens een bedrijf worden verwerkt door een subverwerker zijn doorgaans nog steeds de verantwoordelijkheid van dat bedrijf. Een compleet exportproces heeft een expliciet register nodig van elk extern systeem dat gebruikersgegevens bevat.
 
+### Wat kost het bouwen van een AVG compliant export-stroom bij LaunchStudio?
+
+Het in kaart brengen van persoonsgegevens en bouwen van een JSON/CSV exportfunctie kost gemiddeld €700 en duurt 4 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

@@ -1,21 +1,21 @@
-🚨 Ze begrootte voor de laagste tier. De scoping call ontdekte dat zes dashboard-weergaven data lekten tussen klantaccounts. Haar offerte verdubbelde — en ze ging binnen 10 minuten akkoord. 😳
+🚨 Ze had begroot op het laagste pakket. De intake ontdekte zes dashboard-schermen die data lekten tussen accounts van verschillende klanten. Haar offerte verdubbelde — en ze ging binnen 10 minuten akkoord. 😳
 
-€800 tot €7.500 op een prijspagina lijkt een brede bandbreedte. Maar achter elk getal zit een concrete technische bevinding, geen verkooptruc. Zo werkt de wiskunde: 🧠
+€800 tot €7.500 op een prijspagina lijkt een brede range. Maar achter elk specifiek getal zit een concrete auditbevinding, geen salestruc. Dit is hoe het werkelijk werkt: 🧠
 
-❌ Een productomschrijving vertelt u nooit wat er onderhuids werkelijk hapert
-❌ Twee "identieke" SaaS-apps kunnen een totaal verschillende hoeveelheid werk vereisen
-❌ Eén vroege architectuurfout kan door tientallen functies heen propageren
-❌ Oprichters budgetteren vaak voor de verkeerde tier omdat een mooie UI structurele fouten maskeert
+❌ Een productomschrijving kan nooit vertellen wat er onder de motorkap rammelt
+❌ Twee "identieke" SaaS-tools kunnen een totaal verschillende hoeveelheid werk verbergen
+❌ Eén vroege ontwerpfout kan door tientallen schermen en features heen woekeren
+❌ Oprichters begroten vaak op het verkeerde niveau — niet omdat de pagina misleidt, maar omdat uiterlijk ≠ bouwkundige realiteit
 
-✅ De scoping call meet harde variabelen: risicocategorieën, codediepte, API-integraties, datamodel
-✅ Elke tier is gekoppeld aan een strak afgebakende scope — geen willekeurige prijsstijgingen
-✅ Als een bevinding u naar een hogere tier brengt, laten we exact zien welke regel code dat veroorzaakt
-✅ Scope verkleinen om de hoogste risico's eerst aan te pakken is altijd mogelijk
+✅ De intake meet concrete variabelen: risicocategorieën, codediepte, integraties, datamodel
+✅ Elk niveau koppelt aan een helder afgebakende scope — geen willekeurige prijsstijgingen
+✅ Als een bevinding u naar een hoger niveau tilt, benoemt het team exact wélke en waarom
+✅ Scope verkleinen om de hoogste risico's eerst op te lossen is altijd een optie
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering, is elke offerte gebaseerd op feiten — nooit op een onderbuikgevoel. 🔍
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise productie-engineering, herleidt elke offerte zich naar een concrete bevinding — nooit een onderbuikgevoel. 🔍
 
-Anouks resultaat: €3.600 voor Relaunch & Scale, zes multi-tenant datalekken gedicht in 13 werkdagen — een gevaar waarvan ze voor de call niet eens wist dat het bestond. 🚀
+Haar resultaat: €3.600 voor Relaunch & Scale, zes datalekken tussen tenants gedicht in 13 werkdagen — een gevaar waarvan ze vóór het gesprek niet eens wist dat het bestond. 🚀
 
-👉 Ontdek de echte wiskunde achter uw eigen offerte: https://launchstudio.eu/nl/blog/how-launchstudio-prices-a-project
+👉 Ontdek de echte wiskunde achter uw offerte: https://launchstudio.eu/nl/blog/how-launchstudio-prices-a-project
 
-#LaunchStudio #Manifera #SaaSPricing #VibeCoding #VastePrijs #MVPSecurity
+#LaunchStudio #Manifera #SaaSPricing #VibeCoding #FixedPrice #MVPSecurity

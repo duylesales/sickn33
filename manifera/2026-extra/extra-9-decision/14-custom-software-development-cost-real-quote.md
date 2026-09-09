@@ -70,6 +70,12 @@ Ask every finalist for a written line-item breakdown matching the six categories
 
 The lowest number on the page is rarely the lowest actual cost once discovery gaps, unbudgeted QA, and post-launch rework are accounted for. Treat every quote as a starting point for a conversation, not a final answer — the vendors worth signing are the ones willing to walk through their number line by line without getting defensive about it. Request a fixed-price quote breakdown from our team, and we'll show you exactly where each euro is allocated before you compare it against anything else in your inbox.
 
+## How Change Orders Should Be Priced — and What a Fair Rate Looks Like
+
+A legitimate quote should state its change-order pricing method upfront, not leave it to be negotiated under pressure mid-build. Fair practice ties a change order to the same blended rate used in the original quote, plus a modest 10-15% premium to cover re-planning and re-sequencing disruption to the current sprint — not a fresh, unrelated rate card that suddenly looks nothing like the number you signed at. If a vendor's change-order rate runs more than 25-30% above the original blended rate with no justification beyond "that's our standard rate for extra work," treat it as evidence the original quote was priced artificially low to win the deal, with margin recovered later through inevitable scope changes.
+
+Ask for the change-order threshold too: how many hours or what dollar value triggers a formal change request versus being absorbed as normal sprint variance. A mature vendor typically sets this around 5-8 hours or roughly 2-3% of remaining sprint capacity — small deviations get absorbed, larger ones get a written estimate before work proceeds. A vendor with no defined threshold either bills everything as a change order (nickel-and-diming a relationship that should run on trust) or absorbs everything silently (quietly eating margin until a change order suddenly appears that's disproportionate to what triggered it). Get this mechanism in writing before signature, not discovered live during your first scope conversation.
+
 ## Frequently Asked Questions
 
 ### What is a realistic custom software development cost for a startup MVP in 2026?
@@ -86,6 +92,18 @@ A properly resourced project typically allocates 10-15% of total budget to struc
 
 ### How much should I budget for post-launch support after a custom software project goes live?
 Plan for 15-20% of the original annual development cost per year for ongoing maintenance and support, and confirm explicitly with your vendor whether the first 60-90 days after launch are included in the original quote or billed separately.
+
+### (Scenario: A vendor's change-order rate is significantly higher than the rate in their original quote) What's a fair change-order rate compared to the original custom software development quote?
+Fair practice ties change orders to the same blended rate as the original quote plus a 10-15% premium for re-planning disruption. A rate more than 25-30% above the original blended rate, with no clear justification, suggests the original quote was priced low deliberately to win the deal.
+
+### (Scenario: A CEO is comparing a fixed-price quote against a similarly scoped time-and-materials quote) How do total cost of ownership calculations differ between fixed-price and time-and-materials custom software contracts?
+Fixed-price shifts estimation risk to the vendor and gives more predictable 18-month TCO, provided scope is well documented; time-and-materials shifts that risk to you but can cost less if scope is genuinely uncertain and change orders under fixed-price would otherwise be frequent and expensive. Model both against your actual scope volatility before choosing.
+
+### (Scenario: A finalist's quote is priced in USD while the CEO's budget is set in EUR) Should currency exposure factor into comparing custom software development cost quotes?
+Yes, for any multi-month engagement — a quote priced in a foreign currency with no fixed-rate clause exposes your budget to exchange-rate movement over the life of the contract. Ask for either a EUR-denominated quote or a currency-lock clause covering the engagement term.
+
+### (Scenario: A CEO wants to know how much of the quote is markup versus actual delivery cost before negotiating) Is it reasonable to ask a vendor to break down margin versus direct delivery cost in a custom software development quote?
+It's reasonable to ask for the six-category breakdown (discovery, design, development, QA, DevOps, project management) rather than a raw margin figure, since most vendors won't disclose internal margin directly. A vendor's willingness to itemize by category, even without disclosing margin, is itself a strong transparency signal worth weighing in the decision.
 
 <script type="application/ld+json">
 {
@@ -116,6 +134,26 @@ Plan for 15-20% of the original annual development cost per year for ongoing mai
       "@type": "Question",
       "name": "How much should I budget for post-launch support after a custom software project goes live?",
       "acceptedAnswer": {"@type": "Answer", "text": "Plan for 15-20% of the original annual development cost per year for ongoing maintenance and support, and confirm explicitly with your vendor whether the first 60-90 days after launch are included in the original quote or billed separately."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor's change-order rate is significantly higher than the rate in their original quote) What's a fair change-order rate compared to the original custom software development quote?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Fair practice ties change orders to the same blended rate as the original quote plus a 10-15% premium for re-planning disruption. A rate more than 25-30% above the original blended rate, with no clear justification, suggests the original quote was priced low deliberately to win the deal."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A CEO is comparing a fixed-price quote against a similarly scoped time-and-materials quote) How do total cost of ownership calculations differ between fixed-price and time-and-materials custom software contracts?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Fixed-price shifts estimation risk to the vendor and gives more predictable 18-month TCO, provided scope is well documented; time-and-materials shifts that risk to you but can cost less if scope is genuinely uncertain and change orders under fixed-price would otherwise be frequent and expensive. Model both against your actual scope volatility before choosing."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A finalist's quote is priced in USD while the CEO's budget is set in EUR) Should currency exposure factor into comparing custom software development cost quotes?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes, for any multi-month engagement — a quote priced in a foreign currency with no fixed-rate clause exposes your budget to exchange-rate movement over the life of the contract. Ask for either a EUR-denominated quote or a currency-lock clause covering the engagement term."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A CEO wants to know how much of the quote is markup versus actual delivery cost before negotiating) Is it reasonable to ask a vendor to break down margin versus direct delivery cost in a custom software development quote?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It's reasonable to ask for the six-category breakdown (discovery, design, development, QA, DevOps, project management) rather than a raw margin figure, since most vendors won't disclose internal margin directly. A vendor's willingness to itemize by category, even without disclosing margin, is itself a strong transparency signal worth weighing in the decision."}
     }
   ]
 }

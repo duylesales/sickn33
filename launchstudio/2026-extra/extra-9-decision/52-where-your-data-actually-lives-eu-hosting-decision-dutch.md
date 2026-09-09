@@ -135,7 +135,7 @@ Het controleren en waterdicht configureren van elke laag van uw applicatiestack 
 
 [Bereken uw investering met de prijscalculator](https://launchstudio.eu/nl/#calculator) om te zien wat een volledige data-residentie audit voor uw specifieke softwarestack inhoudt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Scale-Up Oprichter in Actie: Het Vinkje Dat Niet Volstond
 

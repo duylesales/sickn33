@@ -40,8 +40,7 @@ Voor Next.js betekent dit het verplaatsen van gevoelige API-calls naar API-route
 
 [Stuur ons uw repository en wij vertellen u welke credentials momenteel zichtbaar zijn in uw frontend](https://launchstudio.eu/nl/#contact) — de check duurt enkele minuten, en de oplossing voorkomt de meest voorkomende beveiligingsinbreuk in AI-gegenereerde applicaties.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De API-Sleutel Die Zichtbaar Was Voor Elke Bezoeker
 
 Kasper van Dijk, een indie hacker in Leiden, bouwde KenMerk, een met Cursor gebouwde merkanalysetool die OpenAI's API gebruikte om websiteteksten te analyseren en merkpositioneringsrapporten te genereren. Een betatester merkte terloops op: "Trouwens, ik kan uw OpenAI-sleutel zien in de paginabron." Kasper controleerde het — zijn `VITE_OPENAI_API_KEY` stond ingebed in de gecompileerde JavaScript-bundel, leesbaar voor iedereen die de site bezocht.

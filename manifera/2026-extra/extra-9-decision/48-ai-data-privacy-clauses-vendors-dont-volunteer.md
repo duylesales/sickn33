@@ -60,6 +60,14 @@ For Compliance Officers who don't have in-house AI legal expertise to draft this
 
 If your organization is evaluating an AI vendor and wants a second set of eyes on the data protection language in a draft contract before you sign, our [about us](https://www.manifera.com/about-us/our-way-of-working/) page outlines how our compliance and delivery teams work together on exactly this kind of review — reach out to the Amsterdam team for a conversation before your next AI vendor contract goes to signature.
 
+## Redlining a Draft Contract: A Six-Clause Scoring Pass
+
+Before returning a vendor's draft statement of work, run it against the six clauses above as a pass/fail checklist rather than a general impression. In practice, most first drafts fail at least four of the six on initial submission — not because vendors are acting in bad faith, but because the template wasn't written for an AI engagement in the first place.
+
+A quick scoring guide for the redline: **0 of 6 present** means the contract was built entirely from a pre-AI template and needs a full data protection addendum negotiated from scratch, not a light edit. **1-2 present** (usually deletion timelines and a generic subprocessor list) is the most common starting point — the vendor has conventional data hygiene but hasn't adapted it to model training, fine-tuning, or embeddings. **3-4 present** typically signals a vendor who has been asked before, likely by another regulated European client, and is worth prioritizing on that basis alone. **5-6 present** on a first draft, unprompted, is a genuine differentiator — it means data protection review is built into how the vendor scopes every AI engagement, not bolted on when a compliance-savvy client pushes back.
+
+Track the score across every AI vendor proposal you review, not just the one you're leaning toward signing — the comparison itself is often the clearest signal in the entire evaluation.
+
 ## Frequently Asked Questions
 
 ### What is the single most important AI data privacy clause a vendor contract needs?
@@ -81,6 +89,22 @@ The EU AI Act's phased obligations, including high-risk system requirements taki
 ### Should we ask for a training data provenance warranty even for a small AI project?
 
 Yes, particularly if the vendor is building on a foundation or open-weight model rather than training entirely from your own data. The risk from unclear training data provenance transfers to your organization once you deploy the system, regardless of how small the initial project scope is.
+
+### (Scenario: A vendor's first draft statement of work contains only a deletion clause and a generic subprocessor list, scoring 2 out of 6) What does it mean if a vendor's first contract draft only covers 2 of the 6 AI data privacy clauses?
+
+It's the most common starting point and not necessarily a red flag on its own — it typically means the vendor has conventional data hygiene but hasn't yet adapted their template to model training, fine-tuning, or embeddings specifically. What matters is how quickly and specifically they can produce the missing clauses once asked, not that all six weren't present unprompted.
+
+### (Scenario: A Compliance Officer is comparing three AI vendor proposals side by side for a board risk review) How should I present a comparison of multiple AI vendors' data privacy clause coverage to my board or leadership?
+
+Score each vendor's draft contract against the same six-clause checklist and present the resulting numbers side by side, rather than a subjective narrative of which vendor "seemed more careful." A simple 0-6 score per vendor, tracked consistently, converts a qualitative impression into something a board can compare and act on directly.
+
+### (Scenario: A vendor resists granting a contractual audit right, saying their SOC 2 report should be sufficient assurance) Is a vendor's certification alone sufficient, or do I still need a contractual audit right?
+
+A certification alone is not sufficient — certification scope can be narrower than it appears and may not cover the specific system processing your data. Negotiate the audit right regardless of existing certifications; a vendor with genuinely sound practices rarely resists this clause since it costs them little to grant.
+
+### (Scenario: A small pilot AI project is being scoped with a vendor, and the internal team suggests skipping the full six-clause review to save time) Is it safe to skip the six-clause review for a small, low-budget pilot AI project?
+
+No. Training data provenance risk and subprocessor exposure exist regardless of project size, and a pilot's data or fine-tuned artifacts often persist even after the pilot itself is scrapped. Apply the same checklist to every AI vendor proposal, since the clauses that matter most are determined by what the system does with your data, not by the contract's dollar value.
 
 <script type="application/ld+json">
 {
@@ -111,6 +135,26 @@ Yes, particularly if the vendor is building on a foundation or open-weight model
       "@type": "Question",
       "name": "Should we ask for a training data provenance warranty even for a small AI project?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, particularly if the vendor is building on a foundation or open-weight model rather than training entirely from your own data, since the risk from unclear training data provenance transfers to your organization once you deploy the system." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does it mean if a vendor's first contract draft only covers 2 of the 6 AI data privacy clauses?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It's the most common starting point and not automatically a red flag — it usually means the vendor has conventional data hygiene but hasn't adapted their template to model training, fine-tuning, or embeddings. What matters is how quickly they can produce the missing clauses once asked." }
+    },
+    {
+      "@type": "Question",
+      "name": "How should I present a comparison of multiple AI vendors' data privacy clause coverage to my board or leadership?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Score each vendor's draft contract against the same six-clause checklist and present the resulting numbers side by side, rather than a subjective narrative. A consistent 0-6 score per vendor converts a qualitative impression into something a board can compare directly." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a vendor's certification alone sufficient, or do I still need a contractual audit right?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A certification alone is not sufficient, since certification scope can be narrower than it appears and may not cover the specific system processing your data. Negotiate the audit right regardless of existing certifications." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to skip the six-clause review for a small, low-budget pilot AI project?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Training data provenance risk and subprocessor exposure exist regardless of project size, and a pilot's data or fine-tuned artifacts often persist even after the pilot is scrapped. Apply the same checklist to every AI vendor proposal." }
     }
   ]
 }

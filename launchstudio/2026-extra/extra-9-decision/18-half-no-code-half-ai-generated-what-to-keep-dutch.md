@@ -103,7 +103,7 @@ Dat resulteert in één component Behouden, twee gesplitste besluiten en twee co
 
 Zet uw eigen tools op een rij — wat zit erin, wie kan erbij. Deel uw lijst met ons en wij leveren u binnen één werkdag de drie heldere oordelen per tool, inclusief een concrete kostenindicatie.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Vijf tools, twee besluiten die het verschil maakten
 

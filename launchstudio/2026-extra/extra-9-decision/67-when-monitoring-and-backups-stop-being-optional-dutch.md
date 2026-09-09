@@ -77,7 +77,7 @@ Het Launch & Grow-pakket van [LaunchStudio](https://launchstudio.eu/nl/#packages
 
 [Stuur ons de link naar uw prototype en wij vertellen u kosteloos welke hiaten in uw monitoring zitten](https://launchstudio.eu/nl/#contact) — vóórdat een stille storing u dat op pijnlijke wijze duidelijk maakt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een technisch solo-oprichter in actie: De back-up die er niet was
 

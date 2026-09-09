@@ -7,6 +7,31 @@ Doelgroep: SaaS Founder Scale-Up
 
 # Multi-tenant Data-isolatie: Waarom "Mijn Data, Jouw Data" Expliciete Afdwinging Nodig Heeft
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Multi-tenant Data-isolatie: Waarom \"Mijn Data, Jouw Data\" Expliciete Afdwinging Nodig Heeft",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/multi-tenant-data-isolation-explicit-enforcement"
+  }
+}
+</script>
+
+
 Een B2B-SaaS-product dat meerdere klantorganisaties bedient hangt af van een specifieke, fundamentele belofte: de data van Bedrijf A is nooit zichtbaar voor Bedrijf B, onder geen enkele omstandigheid. Deze belofte is makkelijk uit te spreken en, in AI-gegenereerde multi-tenant-applicaties, vaak niet expliciet, onafhankelijk geverifieerd — het wordt aangenomen natuurlijk te volgen uit correcte applicatielogica, terwijl het in de praktijk zijn eigen toegewijde architecturale afdwinging en zijn eigen toegewijde test vereist.
 
 ## Waarom Multi-tenancy Een Aparte Risicocategorie Is, Geen Simpel Ander Autorisatiegeval
@@ -36,6 +61,17 @@ Elke nieuwe functie die jouw datalaag raakt is een nieuwe gelegenheid voor een i
 [LaunchStudio](https://launchstudio.eu/nl/) verifieert multi-tenant-isolatie als een toegewijde, specifieke test voor elke B2B-SaaS-opdracht, inclusief het aanbevelen van databaseniveau-afdwinging waar applicatieniveau-filtering alleen te veel ruimte laat voor één gemiste controle, gesteund door Manifera's engineeringervaring over productie-multi-tenant-SaaS-applicaties.
 
 [Laat jouw multi-tenant-isolatie expliciet testen, niet alleen aangenomen](https://launchstudio.eu/nl/#calculator) — dit is het ene gat waar de consequentie het vertrouwen van een hele klant is, niet alleen de data van één gebruiker.
+
+## Een Praktisch Migratiepad: Van Applicatiefiltering naar Database-Afdwinging
+
+De meeste met AI gegenereerde multi-tenant applicaties beginnen met applicatiefiltering (een simpele `WHERE organization_id = ...` in de query), simpelweg omdat AI-tools dit patroon standaard genereren. Migreren naar database-afgedwongen isolatie vereist geen totale herbouw, maar volgt een overzichtelijk stappenplan:
+
+1. **Activeer Row-Level Security (RLS)** op alle tabellen die klantdata bevatten.
+2. **Koppel sessie-claims aan de database-rol**: Zorg dat de database bij elke transactie de geverifieerde `org_id` uit het JWT-token uitleest via `auth.jwt()`.
+3. **Schrijf strikte selectie- en mutatiepolicies**: Zorg dat records uitsluitend zichtbaar of wijzigbaar zijn wanneer de `org_id` overeenkomt met de actieve sessie.
+4. **Schrijf geautomatiseerde isolatietests**: Verifieer met een testscript dat een gebruiker van Organisatie A via geen enkele query data van Organisatie B kan inzien.
+
+[LaunchStudio](https://launchstudio.eu/nl/) implementeert onwrikbare Row-Level Security op PostgreSQL- en Supabase-omgevingen om datalekken tussen klanten mathematisch uit te sluiten.
 
 ## Echt voorbeeld
 
@@ -77,3 +113,52 @@ Een directe-toegang-storing omvat een verzoek dat expliciet het ruwe record van 
 ### Kan een toegewijde tenant-isolatie-audit toegevoegd worden aan een al-live product, of moet het alleen tijdens initiële ontwikkeling gebeuren?
 
 Het kan, en zoals Sanders geval toont, zou het vaak moeten, toegevoegd worden aan een al-live product, vooral bij groeimijlpalen of na significante functietoevoegingen — de specifieke test is even van toepassing en waardevol ongeacht wanneer in de levenscyclus van een product het uitgevoerd wordt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is dit multi-tenant-isolatierisico specifiek voor B2B-SaaS-producten, of geldt het ook voor consumentenproducten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is specifiek relevant voor elk product dat meerdere aparte klantorganisaties of accounts bedient die van elkaar afgeschermd moeten worden — het kern-B2B-SaaS-patroon — hoewel een consumentenproduct met enige equivalente groepering (familieaccounts, teamplannen) een structureel vergelijkbare versie van hetzelfde risico tegenkomt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe vaak zou tenant-isolatie specifiek hertest moeten worden naarmate een product functies blijft toevoegen, gebaseerd op Sanders geval?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gegeven dat elke nieuwe functie die de datalaag raakt een verse gelegenheid is voor de isolatieconventie om gemist te worden, zoals in dit artikel behandeld, is hertesten specifiek na elke significante nieuwe functie — niet alleen op een vast kalenderschema — de meer direct relevante trigger, vergelijkbaar met de groeimijlpaal-framing elders in deze serie behandeld."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is databaseniveau-afdwinging (zoals row-level security) altijd noodzakelijk, of is zorgvuldige applicatieniveau-filtering soms voldoende?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zorgvuldige applicatieniveau-filtering kan werken, maar draagt doorlopend risico dat een toekomstige ontwikkelaar of functie de conventie mist, zoals Sanders geval illustreert — databaseniveau-afdwinging biedt een sterkere, duurzamere garantie specifiek omdat het niet afhangt van elke toekomstige codewijziging die zich het correcte filter herinnert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verschilt het aggregatiegebaseerde lek in Sanders geval van een typische directe-toegang-isolatiestoring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een directe-toegang-storing omvat een verzoek dat expliciet het ruwe record van een andere organisatie ophaalt; Sanders geval was subtieler — een functie die nooit direct het ruwe data van een andere organisatie teruggaf maar onbedoeld genoeg geaggregeerd detail blootstelde om reverse-engineered te worden, een categorie lek die specifiek vereist doordenken wat een aggregatie daadwerkelijk onthult, niet alleen of ruwe records beschermd zijn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een toegewijde tenant-isolatie-audit toegevoegd worden aan een al-live product, of moet het alleen tijdens initiële ontwikkeling gebeuren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het kan, en zoals Sanders geval toont, zou het vaak moeten, toegevoegd worden aan een al-live product, vooral bij groeimijlpalen of na significante functietoevoegingen — de specifieke test is even van toepassing en waardevol ongeacht wanneer in de levenscyclus van een product het uitgevoerd wordt."
+      }
+    }
+  ]
+}
+</script>

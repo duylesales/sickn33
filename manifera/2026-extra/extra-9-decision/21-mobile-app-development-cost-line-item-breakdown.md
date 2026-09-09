@@ -97,6 +97,12 @@ Finally, resist the temptation to make this decision over email. A 30-minute cal
 
 The lowest number on the page is rarely the lowest total cost. Before you sign anything, get every finalist's proposal broken into the same line items so you're comparing engineering effort, not marketing copy — [talk to one of our senior architects](https://www.manifera.com/contact-us/) about reviewing your shortlisted quotes side by side.
 
+## Platform Fees and Recurring Costs No Development Quote Includes
+
+Beyond the build price sit recurring costs that belong on your budget, not the vendor's quote — but many CEOs discover them only after signing. Apple's Developer Program runs $99/year per account, and Google Play's one-time registration fee is $25 — trivial individually, but if your app needs a separate enterprise or education-tier Apple account for internal distribution, budget closer to $299/year. Cloud infrastructure for a mid-complexity app with moderate traffic typically runs €300-€1,500/month depending on backend load, media storage, and whether you're running redundant environments for staging versus production — a figure that scales with user growth, not a flat line item a vendor can price accurately at kickoff.
+
+Push notification services, crash reporting, and analytics tooling (Firebase, Sentry, Mixpanel-class tools) commonly add another €100-€500/month once you're past a free tier, and payment processing fees (typically 1.5-2.9% plus a fixed fee per transaction) scale directly with revenue rather than being a fixed cost at all. None of these belong in a mobile app development company's build quote — they're yours to budget regardless of vendor — but a vendor who doesn't flag them during scoping is letting you walk into month two with a monthly bill you didn't plan for. Ask explicitly for a first-year operating cost estimate alongside the build quote, not just the build number alone.
+
 ## Frequently Asked Questions
 
 ### What is a realistic mobile app development cost for a mid-complexity app in 2026?
@@ -119,6 +125,22 @@ Change order pricing and post-launch support terms. A quote that looks cheaper u
 
 Not automatically. Compare total cost of ownership through your first two release cycles, including support windows and change order rates, and weigh that against the vendor's ability to itemize their quote credibly — a vendor who can't explain their own number in detail is a bigger financial risk than a slightly higher price tag.
 
+### (Scenario: A CEO's approved budget only covers the build quote, not ongoing platform fees) What recurring costs should I budget for beyond the mobile app development cost quote itself?
+
+Budget separately for Apple ($99-$299/year) and Google Play ($25 one-time) developer accounts, cloud infrastructure (typically €300-€1,500/month depending on traffic and storage), and analytics or crash-reporting tools (€100-€500/month past free tiers). These are yours to fund regardless of vendor and should be estimated alongside the build quote, not discovered after launch.
+
+### (Scenario: A vendor's quote doesn't mention payment processing fees for an app with in-app purchases) Are payment processing fees included in a mobile app development cost quote?
+
+No, payment processing fees (typically 1.5-2.9% plus a fixed fee per transaction) are charged by the payment processor directly and scale with revenue, not a one-time build cost. A vendor's quote should flag this as a pass-through cost even though it isn't part of their own pricing.
+
+### (Scenario: A CEO wants to know if enterprise or education Apple developer accounts change the cost) Does app distribution method affect ongoing mobile app development cost?
+
+Yes — a standard Apple Developer account runs $99/year, but internal enterprise distribution requires the Apple Developer Enterprise Program at roughly $299/year, a detail many quotes omit if your app won't be sold through the public App Store.
+
+### (Scenario: A CEO is deciding how much cloud spend to plan for before the app launches) How much should I budget monthly for cloud infrastructure after a mobile app launches?
+
+Plan for roughly €300-€1,500 per month for a mid-complexity app at moderate traffic, scaling upward with user growth, media storage, and whether staging and production environments run separately — ask your vendor for a first-year operating estimate alongside the build quote.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -128,7 +150,11 @@ Not automatically. Compare total cost of ownership through your first two releas
     {"@type": "Question", "name": "Why do two vendors quote such different mobile app development costs for the same brief?", "acceptedAnswer": {"@type": "Answer", "text": "Differences usually come from what's included, not from wildly different hourly rates. One vendor might exclude QA across your full device matrix, integrations, or post-launch support, while another bundles all of it into the headline number. Always request the same line-item template from every finalist."}},
     {"@type": "Question", "name": "Is cross-platform development actually cheaper than native for both iOS and Android?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, in most cases. Frameworks like React Native or Flutter typically reduce combined iOS/Android build cost by 30-40% through code sharing, though apps with heavy platform-specific features can narrow that gap."}},
     {"@type": "Question", "name": "What's the biggest hidden cost founders miss when comparing final quotes?", "acceptedAnswer": {"@type": "Answer", "text": "Change order pricing and post-launch support terms. A quote that looks cheaper upfront but leaves change orders undefined or excludes a bug-fix window often costs more in total within the first 90 days after launch than a higher initial quote with clear terms."}},
-    {"@type": "Question", "name": "Should I choose the vendor with the lowest mobile app development cost?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically. Compare total cost of ownership through your first two release cycles, including support windows and change order rates, and weigh that against the vendor's ability to itemize their quote credibly."}}
+    {"@type": "Question", "name": "Should I choose the vendor with the lowest mobile app development cost?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically. Compare total cost of ownership through your first two release cycles, including support windows and change order rates, and weigh that against the vendor's ability to itemize their quote credibly."}},
+    {"@type": "Question", "name": "(Scenario: A CEO's approved budget only covers the build quote, not ongoing platform fees) What recurring costs should I budget for beyond the mobile app development cost quote itself?", "acceptedAnswer": {"@type": "Answer", "text": "Budget separately for Apple ($99-$299/year) and Google Play ($25 one-time) developer accounts, cloud infrastructure (typically €300-€1,500/month depending on traffic and storage), and analytics or crash-reporting tools (€100-€500/month past free tiers). These are yours to fund regardless of vendor and should be estimated alongside the build quote, not discovered after launch."}},
+    {"@type": "Question", "name": "(Scenario: A vendor's quote doesn't mention payment processing fees for an app with in-app purchases) Are payment processing fees included in a mobile app development cost quote?", "acceptedAnswer": {"@type": "Answer", "text": "No, payment processing fees (typically 1.5-2.9% plus a fixed fee per transaction) are charged by the payment processor directly and scale with revenue, not a one-time build cost. A vendor's quote should flag this as a pass-through cost even though it isn't part of their own pricing."}},
+    {"@type": "Question", "name": "(Scenario: A CEO wants to know if enterprise or education Apple developer accounts change the cost) Does app distribution method affect ongoing mobile app development cost?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — a standard Apple Developer account runs $99/year, but internal enterprise distribution requires the Apple Developer Enterprise Program at roughly $299/year, a detail many quotes omit if your app won't be sold through the public App Store."}},
+    {"@type": "Question", "name": "(Scenario: A CEO is deciding how much cloud spend to plan for before the app launches) How much should I budget monthly for cloud infrastructure after a mobile app launches?", "acceptedAnswer": {"@type": "Answer", "text": "Plan for roughly €300-€1,500 per month for a mid-complexity app at moderate traffic, scaling upward with user growth, media storage, and whether staging and production environments run separately — ask your vendor for a first-year operating estimate alongside the build quote."}}
   ]
 }
 </script>

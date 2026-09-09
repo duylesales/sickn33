@@ -76,7 +76,7 @@ De bovenstaande principes blijven abstract totdat u de concrete documenten ziet 
 
 Documentatie raakt sneller verouderd dan de meeste oprichters verwachten, en verouderde documentatie misleidt een AI-tool actief in plaats van alleen niet te helpen. Een architectuuroverzicht dat een betalingsstroom beschrijft die drie maanden geleden is geherstructureerd, kan ervoor zorgen dat een AI-assistent vol vertrouwen een verkeerde wijziging doorvoert — wat erger is dan helemaal geen documentatie hebben. De praktische oplossing is om documentatie-updates te behandelen als onderdeel van de definitie van "klaar" voor elke architectuurwijziging.
 
-## Belangrijkste inzichten
+### Belangrijkste inzichten
 
 - **AI leest anders dan mensen**: AI heeft gecomprimeerde, expliciete context nodig op het moment van de prompt; algemene verhalen helpen minder dan concrete randvoorwaarden.
 - **Het `AGENTS.md` root-bestand**: Een centraal contextbestand in de root-map van uw project zorgt ervoor dat Cursor en Lovable uw architectuur direct begrijpen.

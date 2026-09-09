@@ -74,11 +74,53 @@ Een concept dat expliciet genoemd moet worden: een "Gouden Dataset" is een gecur
 
 Behandel uw prompt als geversioneerde code die is gekoppeld aan uw testsuite. Sla prompts op in versiebeheer en koppel ze aan automatische tests in GitHub Actions.
 
-## Belangrijkste inzichten
+### Belangrijkste inzichten
 
 - **Stop met exacte string-matches**: AI is niet-deterministisch; test op structurele validiteit (valid JSON, vereiste velden) en lengtegrenzen.
 - **Bouw een Gouden Dataset**: Verzamel 10 tot 30 representatieve praktijkgevallen en randgevallen om prompt-wijzigingen geautomatiseerd te valideren.
 - **Geautomatiseerde kostencontroles**: Voorkom dat een prompt-wijziging ongemerkt het token-verbruik en de API-kosten verdubbelt.
+
+### Het Drielaags Testkader voor Niet-Deterministische AI-Functionaliteit
+
+Traditionele unit tests controleren of een functie bij invoer X altijd exact uitvoer Y oplevert. Omdat LLM's probabilistisch werken, falen klassieke tests direct. Senior engineers implementeren daarom een drielaags testframework:
+- **Laag 1: Deterministische Structuur- en Schema-Validatie:** Test met behulp van Zod of JSON Schema of de output van het model altijd voldoet aan de vereiste datatypes, verplichte velden en formaatrestricties, ongeacht de formulering.
+- **Laag 2: Semantische Validatie op Gouden Datasets:** Evalueer de output tegen een vaste benchmark van 50 historische scenario's met behulp van embedding-similarity (cosinus-overeenkomst > 0,88) om te borgen dat de strekking consistent accuraat blijft.
+- **Laag 3: LLM-as-a-Judge Kwaliteitsbeoordeling:** Zet een groter referentiemodel (zoals Claude 3.5 Sonnet of GPT-4o) in om outputs van productievere modellen automatisch te scoren op relevantie, feitelijke juistheid en afwezigheid van hallucinaties.
+
+### Concreet Implementatievoorbeeld: LLM-as-a-Judge Scripting
+
+Een betrouwbare evaluatiepipeline draait 's nachts geautomatiseerd op 50 vaste interacties. Hierbij beoordeelt een referentiemodel (bijvoorbeeld Claude 3.5 Sonnet) de output van uw snellere productiemodel op een schaal van 1 tot 5 op vier dimensies:
+1. **Feitelijke Consistentie:** Bevat de output beweringen die niet in de context voorkomen?
+2. **Volledigheid:** Zijn alle vereiste entiteiten en actiepunten uit het brondocument correct geëxtraheerd?
+3. **Opmaak-Conformiteit:** Voldoet het antwoord exact aan het gevraagde JSON- of Markdown-formaat?
+4. **Beleefdheid & Toon:** Blijft de toon zakelijk, beknopt en vrij van overbodige beleefdheidsfrasen?
+Scores onder de 4/5 triggeren automatisch een waarschuwing in het engineering-kanaal, waardoor kwaliteitsverlies direct wordt opgemerkt vóórdat eindgebruikers er hinder van ondervinden.
+
+### Geautomatiseerde Regressietesten in CI/CD met Vaste Random Seeds
+
+Om niet-deterministische AI-features reproduceerbaar te testen in een CI/CD-pipeline, gebruiken senior engineers deterministische instellingen en heuristieken:
+- **Temperatuur op 0.0 voor Regressietests:** Stel tijdens geautomatiseerde runs de temperatuur vast in op nul en gebruik een vaste seed (`seed=42`). Hoewel moderne LLM's zelfs bij temperatuur nul lichte variaties kunnen vertonen, vangt dit 95% van de willekeurige afwijkingen af.
+- **Syntactische JSON Schema Validatie via Zod:** Valideer elke model-output met een strikt Zod-schema. Als het model een veldnaam verandert of een array als object formatteert, faalt de build onmiddellijk:
+
+```typescript
+import { z } from "zod";
+
+export const ContractSummarySchema = z.object({
+  parties: z.array(z.string().min(1)),
+  effectiveDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  totalValue: z.number().nonnegative(),
+  keyRisks: z.array(z.string()).max(10),
+});
+```
+
+- **Semantische Cosinus-Overeenkomst Drempel:** Vergelijk de gegenereerde tekst met de gevalideerde gouden referentie-tekst met behulp van embeddings. Een similarity score onder 0,85 markeert de pull request automatisch als 'beoordeling vereist'.
+
+### Uitgebreide Fouttolerantie en Synthetische Stress-Testen
+
+Naast evaluatie via referentiemodellen vereist een betrouwbare AI-architectuur systematische stresstests op randgevallen (edge cases):
+- **Afhandeling van Onvolledige Prompt-Context:** Test hoe uw backend reageert wanneer documenten leeg zijn of door OCR-fouten verminkte data bevatten. Het systeem moet een vriendelijke validatiemelding retourneren in plaats van een 500 server exception.
+- **Simulatie van Token Overflow & Truncation:** Valideer dat lange invoerteksten automatisch semantisch worden opgeknipt (*chunking*) zonder dat kritieke metadata verloren gaat.
+- **Idempotente API-Retries met Exponentiële Backoff:** Configureer netwerk-retries voor externe LLM-aanroepen met jitter om te voorkomen dat tijdelijke API-storingen leiden tot mislukte gebruikerstransacties.
 
 ## Echt voorbeeld
 

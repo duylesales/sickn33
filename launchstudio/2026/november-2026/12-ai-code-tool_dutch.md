@@ -109,6 +109,12 @@ Het engineeringteam in Ho Chi Minhstad (Pho Quangstraat 10) verzorgt de technisc
 
 [Vraag een gratis architectuurbeoordeling aan](https://launchstudio.eu/nl/#contact).
 
+### Beheersing van AI-Coderingstools in Productieomgevingen
+
+Het effectief inzetten van AI-assistenten vraagt om duidelijke kwaliteitskaders:
+1. **Strikte Code-Reviews:** Geen enkele door AI gegenereerde coderegel wordt samengevoegd zonder menselijke peer review.
+2. **Duidelijke Documentatie:** Complexe logica wordt voorzien van heldere inline documentatie voor toekomstige engineers.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: Het Vastgoedplatform Dat Vijf AI-Tools Gebruikte en Eén Team Nodig Had Voor Livegang

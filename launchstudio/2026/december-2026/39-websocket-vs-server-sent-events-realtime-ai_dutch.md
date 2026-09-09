@@ -75,6 +75,40 @@ De keuze tussen SSE en WebSocket krijgt de meeste aandacht, maar diverse impleme
 
 **Test streaming altijd onder gesimuleerd slecht mobiel bereik.** Test uw app in de browser via netwerkthrottling (Slow 3G). Dit brengt herverbindings- en time-outfouten direct aan het licht vóórdat echte mobiele gebruikers er tegenaan lopen.
 
+### Technische Vergelijking: Waarom SSE Meestal Wint voor LLM-Streaming
+
+Bij het bouwen van realtime AI-interfaces twijfelen veel oprichters tussen WebSockets en Server-Sent Events (SSE). Voor het overgrote merendeel van AI-tekst- en code-interacties is SSE de superieure keuze:
+- **Eenvoudige HTTP/2 Compatibiliteit:** SSE draait over standaard HTTP/2-verbindingen, passeert bedrijfsfirewalls en proxies zonder speciale configuratie en ondersteunt naadloze multiplexing.
+- **Ingebouwde Automatische Reconnectie:** De browser handelt het opnieuw verbinden en het herstellen van de berichtenstroom (`Last-Event-ID`) standaard af zonder complexe client-side code.
+- **Lagere Server-Overhead:** In tegenstelling tot WebSockets (die een stateful, bidirectionele TCP-verbinding openhouden) is SSE unidirectioneel en uitstekend schaalbaar op moderne serverless architecturen zoals Vercel of Cloudflare Workers.
+
+- **Edge Deployment Vriendelijkheid:** Server-Sent Events functioneren naadloos op moderne edge-netwerken zoals Cloudflare Workers en Vercel Edge Runtime, waardoor wereldwijde gebruikers minimale latency ervaren.
+- **Eenvoudige Foutafhandeling via HTTP Statuscodes:** Omdat SSE over standaard HTTP draait, kunt u vertrouwde statuscodes (zoals 401 Unauthorized of 429 Too Many Requests) hergebruiken in uw frontend foutafhandeling.
+
+### Praktische Client-Side Implementatie van Server-Sent Events
+
+Een robuuste SSE-verbinding in React met de native Fetch API en ReadableStream ziet er in de praktijk zo uit:
+
+```typescript
+const response = await fetch("/api/generate-stream", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ prompt }),
+});
+
+const reader = response.body?.getReader();
+const decoder = new TextDecoder();
+
+while (true) {
+  const { done, value } = await reader!.read();
+  if (done) break;
+  const chunk = decoder.decode(value, { stream: true });
+  setStreamingText((prev) => prev + chunk);
+}
+```
+
+Dit patroon vereist geen zware externe bibliotheken, respecteert standaard HTTP-statuscodes en verbreekt de verbinding automatisch zodra de stream is voltooid.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: 40% besparing op cloudkosten door overstap naar SSE

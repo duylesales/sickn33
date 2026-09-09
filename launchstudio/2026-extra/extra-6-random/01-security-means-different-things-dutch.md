@@ -37,6 +37,23 @@ Dit is de kern van de mismatch. U denkt in termen van *uitkomsten* — niemand z
 
 LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en onze technici vanuit Amsterdam zien deze exacte kloof in bijna elke door AI gegenereerde codebase die we beoordelen — een volledig werkend product met een gegevenstoegangsgat waar niemand een naam voor had bedacht. Als u een tweede paar ogen wilt voordat u er op de harde manier achter komt, kunt u [uw project beschrijven via ons proces](https://launchstudio.eu/nl/#process) en dan vertellen wij u eerlijk wat er ontbreekt. Voor de onderliggende technische normen waaraan wij elke beoordeling toetsen, zie hoe [Manifera softwareontwikkeling op maat benadert](https://www.manifera.com/services/custom-software-development/).
 
+## Een Zelfevaluatie van Twee Minuten: Heeft U Daadwerkelijk Autorisatie Ingericht?
+
+U hoeft geen broncode te kunnen lezen om een eerste, realistisch beeld te krijgen van de vraag of uw applicatie het beveiligingshiaat vertoont dat in dit artikel wordt beschreven. Loop deze vijf vragen eerlijk door — de meeste kosten niet meer dan dertig seconden en u hoeft er geen code-editor voor te openen.
+
+**Kunt u de ID van uw eigen record in de browser terugvinden?** Log in op uw applicatie, open een pagina die een stuk van uw eigen gegevens toont — een bestelling, een factuur, een klantprofiel — en bekijk de URL of het netwerkverzoek dat de pagina uitvoert. Als u daar een eenvoudig getal of ID ziet staan (`/orders/482`, `/api/records/482`), noteer dat dan. Er is nog niets aan de hand; dit is slechts stap één.
+
+**Geeft het veranderen van dat nummer in een nabijgelegen waarde gegevens terug?** Probeer 482 te veranderen in 481 of 483 in hetzelfde verzoek, terwijl u nog steeds bent ingelogd onder uw eigen account. Krijgt u een foutmelding over toegangsrechten of een "niet gevonden" (404), dan is dat een uitstekend teken. Krijgt u echter daadwerkelijk de gegevens van iemand anders te zien, dan heeft u zojuist handmatig exact het lek ontdekt waar dit artikel over gaat — en dit moet direct als een urgente kwestie worden behandeld, niet als een merkwaardige bijzonderheid.
+
+**Heeft uw applicatie meer dan één type gebruiker of meerdere klantorganisaties?** Als uw app uitsluitend door één enkel account wordt gebruikt om uitsluitend eigen gegevens in te zien, is dit specifieke risico minder acuut. Heeft u daarentegen meerdere klantaccounts, meerdere bedrijven of organisaties, of enig concept van "mijn data versus hun data", dan schalen de gevolgen van een ontbrekende autorisatiecontrole recht evenredig met de hoeveelheid gegevens die voor anderen open kan komen te liggen.
+
+**Zou u weten of dit al heeft plaatsgevonden?** De meeste door AI gegenereerde backends houden dit soort verzoeken helemaal niet bij in logbestanden en geven geen enkel waarschuwingssignaal af — een afwijkend ID-nummer in een URL ziet er voor de server immers exact hetzelfde uit als een legitiem verzoek om een normaal record. Is uw eerlijke antwoord "ik zou er pas achter komen als een klant het mij vertelt", dan bevindt uw applicatie zich momenteel in een onbekende veiligheidstoestand in plaats van een bewezen veilige staat.
+
+**Heeft u uw AI-tool hier ooit expliciet om gevraagd?** Denk terug aan uw daadwerkelijke prompts. Heeft u ooit instructies ingevoerd zoals "zorg ervoor dat gebruikers uitsluitend hun eigen records kunnen ophalen, strikt afgedwongen op de server" — en niet alleen "bouw een dashboard" of "maak een bestellingenpagina"? Als het eerlijke antwoord nee is, is de kans groot dat deze controles op databaseniveau ontbreken, simpelweg omdat er nooit om is gevraagd.
+
+Geen van deze vijf vragen vereist een achtergrond in cybersecurity. Het doorstaan van alle vijf bewijst nog niet dat uw app waterdicht is — een handmatige steekproef is een 'smoke test' en geen vervanging voor een grondige code- en architectuurbeoordeling. Wat het u wél oplevert, is een snel en eerlijk oordeel over de vraag of u dit vóór de officiële lancering grondig moet onderzoeken, in plaats van te wachten tot een nieuwsgierige gebruiker het na lancering voor u ontdekt.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: het hangslot was niet het probleem
@@ -83,11 +100,46 @@ Ja. Autorisatiegaten worden meestal opgelost op de backend- en databaselaag zond
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Does HTTPS mean my AI-built app is secure?", "acceptedAnswer": { "@type": "Answer", "text": "No. HTTPS protects data in transit but says nothing about whether the server checks who is allowed to access which data once a request arrives." } },
-    { "@type": "Question", "name": "Why don't AI coding tools add authorization checks automatically?", "acceptedAnswer": { "@type": "Answer", "text": "A typical prompt doesn't explicitly request per-record ownership checks, and the tool has no independent judgment about a data model's access rules unless told." } },
-    { "@type": "Question", "name": "What's the difference between authentication and authorization?", "acceptedAnswer": { "@type": "Answer", "text": "Authentication confirms who a user is. Authorization confirms what that specific user is allowed to see or do on every data request." } },
-    { "@type": "Question", "name": "How would I know if my app has this kind of gap?", "acceptedAnswer": { "@type": "Answer", "text": "A security review by engineers experienced with AI-generated code, like Manifera's Amsterdam-based team, specifically checks for missing server-side ownership checks." } },
-    { "@type": "Question", "name": "Can this be fixed without rebuilding my app?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Authorization gaps are typically fixed at the backend and database layer without touching the existing frontend." } }
+    {
+      "@type": "Question",
+      "name": "Betekent HTTPS dat mijn door AI gebouwde app veilig is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. HTTPS beschermt gegevens tijdens de overdracht tussen de browser en uw server, maar zegt niets over of uw server correct controleert wie welke gegevens mag benaderen zodra een verzoek binnenkomt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom voegen AI-codeertools niet automatisch autorisatiecontroles toe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat een prompt zoals \"bouw een dashboard\" niet expliciet vraagt om eigendomscontroles per record, en de tool geen zelfstandig oordeel heeft over de toegangsregels van uw datamodel, tenzij u die specificeert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen authenticatie en autorisatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Authenticatie bevestigt wie een gebruiker is (deze is ingelogd). Autorisatie bevestigt wat die specifieke gebruiker mag zien of doen, wat bij elke afzonderlijke gegevensaanvraag gecontroleerd moet worden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik weten of mijn app dit soort gat heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De technici van Manifera, waaronder het in Amsterdam gevestigde team, beoordelen door AI gegenereerde codebases specifiek op ontbrekende eigendomscontroles aan de serverzijde — het is een van de eerste dingen waar een beveiligingsbeoordeling naar zoekt, omdat de frontend alleen nooit kan bewijzen dat de backend veilig is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan dit worden opgelost zonder mijn app opnieuw te bouwen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Autorisatiegaten worden meestal opgelost op de backend- en databaselaag zonder uw bestaande frontend aan te raken, wat precies het soort productie-hardening werk is waarin LaunchStudio zich specialiseert."
+      }
+    }
   ]
 }
 </script>

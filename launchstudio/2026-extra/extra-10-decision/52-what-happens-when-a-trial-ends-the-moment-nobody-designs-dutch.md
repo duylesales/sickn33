@@ -34,59 +34,59 @@ Die combinatie leidt tot pijnlijke flaters:
 
 ## De Vijf Beslissingen Die U Vóóraf Moet Vastleggen
 
-Het aflopen van een proefperiode is geen simpele aan/uit-schakelaar. Het vereist vijf afzonderlijke keuzes:
+Het aflopen van een proefperiode is geen eendimensionale gebeurtenis. Het is een samenstel van vijf afzonderlijke architectonische beslissingen, en het overlaten van een van deze keuzes aan toevallige standaardwaarden is precies waar de commerciële en technische schade ontstaat.
 
-1. **Toegang:** Wordt het account volledig geblokkeerd, teruggezet naar een gratis basispakket, of overgezet naar een alleen-lezen status?
-2. **Dataretentie:** Hoe lang blijven de gegevens van de gebruiker bewaard, en wordt dit duidelijk gecommuniceerd? Een heldere belofte (*"Uw gegevens blijven nog 60 dagen bewaard"*) neemt de acute paniek weg.
-3. **Notificaties:** Welke berichten ontvangt de klant vóór, tijdens en na het verstrijken van de termijn?
-4. **Betaalafhandeling:** Als u vooraf creditcardgegevens heeft verzameld: wat gebeurt er als de automatische incasso mislukt? (Bij 5% tot 15% van de pogingen is dit het geval, meestal door onschuldige redenen).
-5. **Direct herstel:** Als een klant drie dagen na de deadline alsnog betaalt, is alles dan binnen één seconde weer 100% actief en ongewijzigd?
+**Toegang.** Wordt het account op het moment van verstrijken alleen-lezen, teruggezet naar een beperkt gratis basispakket, of volledig vergrendeld? Alleen-lezen is vrijwel altijd de sterkste keuze voor producten waarin de klant iets heeft gecreëerd of geconfigureerd — ze kunnen hun eigen werk en data blijven zien, waardoor de reden om te betalen tastbaar en zichtbaar blijft.
 
-## Alleen-Lezen Verslaat Volledige Buitensluiting
+**Data.** Hoe lang blijft de inhoud van de klant bewaard na afloop van de proefperiode, en wordt dit expliciet en proactief gecommuniceerd? Een vooraf gecommuniceerde bewaartermijn ("uw gegevens blijven nog 60 dagen veilig bewaard") neemt de acute paniek weg die gebruikers er anders toe drijft om halsoverkop te exporteren of uw product definitief de rug toe te keren.
 
-Veel oprichters denken dat het hermetisch afsluiten van de app de hoogste urgentie creëert om te betalen. In werkelijkheid wekt het vooral frustratie op en maakt het de keuze om te vertrekken juist makkelijker: zodra iemand zijn eigen data niet meer ziet, stopt de psychologische drang om zijn investering te beschermen.
+**Notificaties.** Welk bericht wordt verzonden, en op welk tijdstip, vóór en exact op het moment van expiratie? Volledige radiostilte op dit cruciale knooppunt converteert vele malen slechter dan zelfs het meest simpele of onhandig geformuleerde bericht dat u zou kunnen sturen.
 
-Een **alleen-lezen status (*read-only*)** werkt psychologisch oneindig veel sterker. 
+**Betaalpoging.** Als u vooraf creditcard- of betaalgegevens heeft verzameld, wat gebeurt er dan concreet wanneer de eerste incasso mislukt? En die zál mislukken voor ruwweg 5% tot 15% van alle pogingen, meestal om volkomen alledaagse redenen die de klant binnen dertig seconden oplost als u er vriendelijk om vraagt.
 
-Een klant die inlogt en zijn twaalf met zorg ingevoerde dossiers, zijn ingerichte workflows en zijn eigen statistieken ziet — voorzien van een rustige banner: *"Upgraden om wijzigingen op te slaan"* — kijkt letterlijk naar de waarde die hij dreigt te verliezen. Niets wat u in een marketingmail kunt schrijven overtuigt zo krachtig als het eigen werk van de klant.
+**Herstel (Reversal).** Als iemand drie dagen na het verstrijken van de proefperiode alsnog besluit te betalen, keert dan alles direct, geautomatiseerd en exact zoals het was terug naar de actieve status? Het antwoord moet onvoorwaardelijk ja zijn, en dit pad moet grondig zijn getest. Dit is immers een workflow die uitsluitend wordt doorlopen door klanten die op dat moment actief proberen geld naar uw bankrekening over te maken.
+## Alleen-Lezen Verslaat Volledige Buitensluiting, Vrijwel Altijd
 
-> **Cruciale technische eis:** Alleen-lezen moet **op de backend-server** worden afgedwongen (in database-regels en API-endpoints), niet alleen door de opslaan-knop in de frontend te verbergen. In AI-gegenereerde codebases wordt de abonnementsstatus vaak alleen in de browser gecontroleerd, waardoor een slimme gebruiker via de console alsnog data kan manipuleren.
+Het intuïtieve instinct achter een harde blokkade is dat het wegnemen van alle waarde acute urgentie creëert. In de praktijk creëert het echter vooral ergernis, wrok en een veel gemakkelijkere drempel om uw applicatie definitief te verlaten. Zodra een gebruiker zijn eigen werk en data niet meer kan inzien, houdt het mechanisme van gezonken kosten (*sunk cost effect*) dat pleitte voor conversie namelijk abrupt op met werken.
 
-## De Drie E-mails Die het Conversiewerk Doen
+Een alleen-lezen status keert deze psychologie om. Een klant die inlogt en zijn twaalf zorgvuldig aangemaakte projecten, zijn ingerichte workflows en zijn reële data ziet — met een rustige, professionele banner die uitlegt dat bewerkingsrechten direct worden hervat zodra hij zijn abonnement activeert — kijkt rechtstreeks naar de waarde die hij zou verliezen. Geen enkele verkoopmail kan zo krachtig overtuigen als het eigen werk van de gebruiker.
 
-Drie gerichte servicemails converteren vele malen beter dan één kille notificatie:
+Hieronder ligt echter een harde technische vereiste, en dat is exact waar prototypes en AI-gegenereerde software falen: alleen-lezen moet dwingend worden afgedwongen op de server, en niet louter cosmetisch in de gebruikersinterface. Het simpelweg verbergen of uitschakelen van een knop "Opslaan" is een visuele aanpassing, geen autorisatierestrictie. Als de onderliggende schrijfactie volgens uw databaseregels nog steeds is toegestaan, kan een verlopen account gegevens blijven wijzigen via de API. Dit is niet alleen problematisch voor uw omzet, maar legt direct een fundamenteel lek bloot in hoe toegangscontrole en RBAC in de rest van uw product zijn geïmplementeerd. Dit is een veelvoorkomend patroon in codebases die zijn gegenereerd met tools zoals Bolt of Lovable, waar abonnementsstatussen doorgaans alleen oppervlakkig in de frontend worden gecontroleerd.
+## De Notificatiereeks Die het Conversiewerk Doet
 
-1. **Drie dagen van tevoren:** Geen opdringerige verkooppitch, maar een nuttige samenvatting van wat de gebruiker heeft bereikt: *"U heeft inmiddels 8 projecten aangemaakt en 24 rapportages gegenereerd. Over 3 dagen verloopt uw proefperiode. Klik hier om uw abonnement te activeren zónder onderbreking."* Dit bericht converteert het best, omdat de waarde van de app nog vers in het geheugen ligt.
-2. **Op de dag zelf:** Feitelijk en rustig: *"Uw proefperiode is zojuist verlopen. Uw account staat nu op 'alleen-lezen'. Uw gegevens blijven tot 1 mei veilig bewaard. Activeer hier uw plan om direct door te werken."*
-3. **Zeven dagen erna:** Dit bericht vergeten de meeste oprichters. Veel proefperiodes verlopen niet uit desinteresse, maar door vakantie, ziekte of acute drukte. Een kort bericht: *"Uw projecten staan nog veilig voor u klaar; activeer hier om verder te gaan"*, haalt verrassend veel twijfelaars alsnog over de streep.
+Drie gerichte servicemails, verzonden op doordachte tijdstippen, presteren oneindig veel beter dan één enkele kille deadline-notificatie. Het wijdverspreide gevoel onder oprichters dat herinneringen "opdringerig" overkomen, kost in werkelijkheid veel meer conversies dan het beschermt.
 
-## Mislukte Betalingen Zijn Géén Opzeggingen
+**Drie dagen van tevoren.** Dit is geen agressieve salespitch. Het is een waardevolle, gepersonaliseerde samenvatting van wat de gebruiker in de applicatie heeft gedaan: hoeveel records of projecten hij heeft aangemaakt, wat hij heeft geconfigureerd en waartoe hij toegang houdt. Vervolgens vermeldt u helder het tarief en een één-klik-methode om het account naadloos voort te zetten. Dit bericht converteert historisch gezien het beste, omdat het binnenkomt op een moment dat het product nog optimaal functioneert en de operationele waarde vers in het geheugen ligt.
 
-Heeft u bij registratie om een creditcard gevraagd? Dan triggert het einde van de proefperiode een echte betaling. 
+**Op de dag zelf.** Kort, feitelijk en geruststellend: de toegangswijze verandert vandaag, dit is wat er met uw opgeslagen data gebeurt, en via deze directe link kunt u direct doorwerken. Dit is het specifieke bericht waarin u uw dataretentietermijn moet benoemen, omdat dit de mail is waar gebruikers weken later in hun inbox naar zoeken wanneer ze besluiten terug te keren.
 
-En reken maar dat een deel faalt: een pas die toevallig die maand verliep, ontoereikend saldo aan het einde van de maand, of een bankapp-verificatie (3D Secure) die de klant heeft gemist. Vrijwel geen enkele van deze weigeringen betekent *"ik wil uw product niet meer"*.
+**Zeven dagen erna.** Dit is het bericht dat de meeste oprichters ten onrechte overslaan, terwijl het het hoogste onverwachte conversiepercentage oplevert. Een aanzienlijk deel van de verlopen proefperiodes is immers geen bewuste afwijzing van uw product: het zijn gebruikers die met vakantie waren, midden in een hectische kwartaalafsluiting zaten, of simpelweg even afgeleid raakten. Een kort en vriendelijk bericht ("Uw projecten en gegevens blijven nog bewaard tot [datum]; klik hier om uw account direct weer te openen") heractiveert een meetbaar deel van hen tegen nagenoeg nul meerkosten.
 
-In standaard AI-codebases resulteert een geweigerde betaling echter direct in een gedeactiveerd account. De klant ontdekt pas dagen later dat hij is buitengesloten, wat voelt als een kille afwijzing.
+Alle drie deze berichten zijn echter waardeloos als de e-mails de inbox niet bereiken. Dat is een serieuze softwaretechnische randvoorwaarde: correct geconfigureerde DNS-authenticatierecords (SPF, DKIM, DMARC), transactionele e-mails die worden verzonden via een betrouwbare provider (zoals Postmark of Resend) zodat ze niet worden gemarkeerd als bulkmarketing, en monitoring waarmee afleveringsfouten inzichtelijk zijn in plaats van geruisloos te verdwijnen. Een proefperiode-notificatiereeks die in de spambox belandt, is functioneel identiek aan helemaal niets versturen.
+## Mislukte Betalingen Zijn Géén Afwijzingen (En Prototypes Behandelen Ze Wel Zo)
 
-**Hoe het wél hoort:**
-- Hanteer een **coulanceperiode (*grace period*) van 3 werkdagen** waarin de klant gewoon kan blijven doorwerken.
-- Stuur direct een vriendelijke servicemail met een veilige betaallink: *"De automatische verlenging kon helaas niet worden voltooid door uw bank. Werk hier binnen 3 dagen uw betaalmethode bij om onderbreking te voorkomen."*
-- Laat uw betalingsprovider (Stripe of Mollie) de incasso na 24 uur en na 72 uur automatisch opnieuw proberen.
+Als u vooraf betaalgegevens verzamelt, activeert het einde van de proefperiode een daadwerkelijke financiële transactie. Daarbij mislukt een voorspelbaar percentage: verlopen creditcards, ontoereikend saldo aan het einde van de maand, fraudeblokkades van banken bij een onbekende eerste incasso, of een 3-D Secure tweestapsverificatie die de klant simpelweg heeft gemist. Vrijwel geen van deze technische weigeringen betekent: "Ik wil dit product niet meer gebruiken."
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste SaaS-systemen) testen we deze betaal- en afloopcycli standaard met testkaarten en webhook-simulaties tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). Wij zorgen dat u geen betalende klanten verliest aan haperende betaalregels. [Bespreek uw betaalflow met onze engineers](https://launchstudio.eu/nl/#contact) — wij controleren binnen één werkdag hoe uw proefperiode technisch afloopt.
+Het standaardgedrag in prototypes en haastig gebouwde code is om de transactiefout op te vangen, het abonnement per direct als inactief te markeren en de deur dicht te gooien. De klant, die in de veronderstelling verkeert dat hij inmiddels een betalende abonnee is, ontdekt dagen later dat zijn toegang is geblokkeerd — en tegen die tijd voelt de foutmelding eerder als een beschuldiging dan als een behulpzame notificatie.
 
-## Twee Subtiele Details Die Klachten Voorkomen
+Dit correct inrichten is een beproefd traject en vereist relatief weinig code: probeer de incasso opnieuw volgens een intelligent retry-schema (smart retries) in plaats van slechts eenmalig, houd de toegang operationeel tijdens een korte coulanceperiode (grace period van 3 tot 5 dagen), informeer de klant onmiddellijk met een directe link naar een beveiligde betaalomgeving om de gegevens bij te werken, en maak in uw datamodel een glashelder onderscheid tussen een technisch betaalprobleem en een bewuste opzegging. Betaalproviders zoals Stripe en Mollie bieden hiervoor alle bouwstenen, maar de retry-logica, coulance-afhandeling en notificatie-webhooks moeten wel degelijk worden geïmplementeerd en — cruciaal — worden getest met de officiële testcards en simulatietools van de provider. Het foutenpad is precies het scenario dat vóór de livegang zelden wordt getest, omdat het vereist dat u bewust een mislukte transactie simuleert.
 
-1. **Wanneer loopt een 14-dagen proefperiode exact af?** Niet op de minuut nauwkeurig om 22:15 uur mid-sessie! Laat een proefperiode altijd aflopen om 23:59 uur in de lokale tijdzone van de klant.
-2. **Wat gebeurt er met niet-opgeslagen werk?** Als iemand aan het typen is op het moment dat de proefperiode verstrijkt, laat die handeling dan altijd voltooien. Pas de alleen-lezen restrictie pas toe bij de eerstvolgende paginabeweging. Niets jaagt een klant sneller weg dan dataverlies op het moment dat u hem om geld vraagt.
+Het verifiëren dat deze complete transitie vlekkeloos verloopt, inclusief een expiratie op een ongunstig tijdstip en een geweigerde kaart gevolgd door een succesvolle herstelpoging, is standaard productierijpheidscontrole en levert een van de hoogste rendementen op binnen een pre-launch audit. LaunchStudio, ondersteund door meer dan 11 jaar software engineering ervaring bij Manifera, test deze paden met echte providertools vóórdat u erop moet vertrouwen voor uw omzet. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een grondige analyse binnen één werkdag.
+## De Timingdetails Die Supporttickets Veroorzaken
 
-## Proefperiode Verlengen: Voorkom Database-Geknoei
+Twee ogenschijnlijk kleine beslissingen veroorzaken een onevenredig groot aantal verwarrende supportaanvragen en gefrustreerde reacties.
 
-Klanten zullen om uitstel vragen: *"Onze directeur was op vakantie, mogen we een weekje extra?"*. 
+**Wanneer loopt een 14-dagen proefperiode exact af?** Is dat veertien dagen vanaf het tijdstip van registratie op de minuut nauwkeurig, of aan het einde van de veertiende dag, en in welke tijdzone? Een klant die zich op een dinsdagavond om 22:15 uur heeft geregistreerd en precies twee weken later midden in een taak om 22:15 uur plotseling wordt buitengesloten — zonder enige waarschuwing — ervaart dit als willekeurig en klantonvriendelijk. Het laten verlopen van proefperiodes op een vast, humaan tijdstip in de eigen tijdzone van de klant (bijvoorbeeld 23:59 uur lokale tijd), en nooit halverwege een actieve sessie zonder waarschuwing vooraf, is een kleine technische aanpassing die een complete categorie aan supportklachten elimineert.
 
-Zorg dat u in uw beheerderspaneel een eenvoudige knop heeft: *"Verleng proefperiode met 7 dagen"*. Zonder deze functionaliteit moet u 's avonds laat handmatig datumvelden in uw productiedatabase gaan aanpassen — een foutgevoelige operatie waarbij u zomaar de verkeerde klant bewerkt.
+**Wat gebeurt er met niet-opgeslagen werk op het moment van verstrijken?** Als iemand druk bezig is met het typen van een complex document of rapportage op het moment dat de proefperiode formeel afloopt, verliest hij dan zijn invoer? Het genereuze en verstandige gedrag — sta toe dat de huidige schrijfactie nog succesvol wordt afgerond en pas de alleen-lezen restrictie pas toe bij de eerstvolgende paginabeweging of sessiestart — kost technisch nauwelijks moeite. Hiermee voorkomt u echter de allergrootste blunder in gebruikerservaring: een potentiële klant die zijn niet-opgeslagen werk kwijtraakt op exact hetzelfde moment dat u hem vraagt om zijn creditcard te trekken.
+## Verlengingen, Uitzonderingen en Hoe U Voorkomt Dat Het Chaos Wordt
 
-## Praktijkvoorbeeld
+Er zal onvermijdelijk een potentiële klant aankloppen met de vraag om uitstel: "Onze managing partner was twee weken met vakantie, kunnen we vijf dagen extra krijgen om de test af te ronden?". In de vroege fase is het commerciële antwoord daarop bijna altijd ja. De vraag is echter of het toekennen van die verlenging een actie van één klik is in een beheerdersscherm, of een zenuwachtige SQL-query die u om 23:00 uur 's avonds rechtstreeks op uw productiedatabase uitvoert.
+
+Bouw de mogelijkheid om de proefperiode van een specifiek account met een configureerbaar aantal dagen te verlengen direct vóór de lancering in uw beheerdersdashboard. Zonder deze voorziening worden verlengingen toegekend door handmatig datums in de database te wijzigen — een proces dat extreem foutgevoelig is, niet wordt gelogd in een audit-trail, en er vroeg of laat toe leidt dat per ongeluk het verkeerde klantaccount wordt bewerkt. Met een eenvoudige beheerdersknop kost de interactie u tien seconden en blijft er een duidelijke auditlog over van wie wat heeft goedgekeurd.
+
+Hetzelfde principe geldt voor gratis testaccounts (comped accounts), pilot-klanten en die bevriende vroege adoptant die heeft afgesproken de eerste zes maanden kosteloos feedback te leveren. Dit soort accounts bestaat in vrijwel elk vroeg SaaS-product. Door vooraf te besluiten hoe zij worden gerepresenteerd in uw datamodel — als een volwaardige abonnementsstatus met een expliciete einddatum in plaats van een ongeregistreerde hardcoded uitzondering in uw backendcode — voorkomt u dat binnen uw team niemand meer met zekerheid kan vaststellen welke accounts daadwerkelijk betalen en welke gratis meeliften.
+## Echt voorbeeld
 
 ### De Buitensluiting Die Juist de Beste Klanten Wegjoeg
 

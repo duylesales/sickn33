@@ -65,6 +65,18 @@ U kunt een AI-applicatie niet beveiligen door simpelweg in de prompt te vragen "
 2. **Row Level Security (RLS) voor Vectoren:** Wij filteren tenant-data niet in de applicatiecode, maar dwingen strikte RLS af direct in de PostgreSQL/pgvector database. Zelfs als het model hallucineert, weigert de database fysiek de data van andere tenants omdat de sessie gekoppeld is aan het JWT-token van de gebruiker.
 3. **Data Loss Prevention (DLP) Proxies:** Uitgaande AI-antwoorden passeren een DLP-middleware die BSN-nummers, creditcardgegevens en bedrijfsgeheimen automatisch maskeert voordat ze naar de browser worden gestuurd.
 
+### Integrale Beveiligingsarchitectuur voor AI-Toepassingen
+
+Beveiliging in de context van kunstmatige intelligentie vereist een gelaagde defensiestrategie:
+1. **Afscherming van Prompt-Injecties:** Strikte scheiding tussen systeeminstructies en dynamische gebruikersinvoer voorkomt dat kwaadwillenden modelgedrag manipuleren.
+2. **Encryptie en Toegangsbeheer:** Gevoelige vectordata en embeddings worden versleuteld opgeslagen met strikt rolgebaseerd toegangsbeheer.
+3. **Continue Kwetsbaarheidsscans:** Automatische scanners in de CI/CD-pijplijn controleren afhankelijkheden dagelijks op nieuw ontdekte kwetsbaarheden.
+
+### Diepgaande Verdediging van AI-Applicatie-Perimeters
+
+Maximale veiligheid vereist gelaagde bescherming tegen kwaadwillende actoren:
+1. **Egress Filtering:** Beperk uitgaande netwerkverbindingen van AI-containers tot uitsluitend goedgekeurde endpoints.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: Het HR-Platform Dat Salarissen Lekte

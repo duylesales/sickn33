@@ -68,6 +68,14 @@ Manifera rebuilt the platform's documentation and architecture around explicit f
 
 A software company evaluated on generic vendor criteria, without translating a client's own industry engineering discipline into the evaluation standard, risks delivering a system that's competent by generic software norms and inadequate by the standards the client's own industry actually requires — a gap that typically surfaces expensively during an audit or systems review well after delivery. [Talk to Manifera about industry-matched engineering rigor](https://www.manifera.com/contact-us/).
 
+## The Vendor Evaluation Scorecard
+
+Score a shortlisted vendor on four dimensions, weighted, rather than a single pass/fail impression. Documentation traceability (30%): request a sample architecture decision record from a comparable past project — a maritime-grade vendor produces one with the rationale, alternatives considered, and rejection reasons documented, not just the final choice. Failure-mode analysis (30%): ask the vendor to walk through what happens to a specific critical function if a specific dependency fails — a vendor with real discipline here answers in under two minutes with a concrete mechanism; a generic vendor reaches for reassurance language instead.
+
+Maintainability horizon (25%): confirm whether the vendor's contract includes source-code escrow, a documented technology-refresh plan, and support commitments measured in years rather than a renewable annual default — maritime and shipbuilding-adjacent systems routinely need to outlive a five-year support horizon. Classification-society awareness (15%): while most vessel-systems software itself isn't directly certified by bodies like Lloyd's Register or DNV, a vendor who understands how those classification standards shape the data and interfaces the software must interact with will ask about them unprompted during scoping — a vendor who's never heard of them for a maritime-adjacent project is a real gap, not a minor one.
+
+A vendor scoring strongly across all four dimensions, not just an impressive one or two, is the one actually matched to a shipbuilding-grade standard.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO choosing a software vendor for a maritime or industrial-engineering-adjacent system) Why should a software vendor be evaluated differently for a maritime-engineering company than for a typical business?
@@ -90,6 +98,22 @@ Not by itself. Generic criteria don't distinguish a vendor competent by typical 
 
 Because equipment and systems in industries like maritime engineering are built and maintained for decades, and a vendor building with shorter-horizon software-industry assumptions may produce a system that doesn't hold up to that timeline.
 
+### (Scenario: CFO wondering whether classification society standards apply to software) Do classification society standards like Lloyd's Register or DNV apply to a vessel-systems software vendor?
+
+Not usually as direct software certification, but a vendor genuinely experienced in maritime-adjacent work will ask unprompted how classification-society requirements shape the data and interfaces the software must handle — a vendor who's never encountered them for a maritime project is a real vetting gap.
+
+### (Scenario: CFO structuring a long-term support contract) What contract terms should a CFO require to match a multi-decade maintainability standard?
+
+Source-code escrow, a documented technology-refresh plan, and support commitments measured in years rather than a renewable annual default, since shipbuilding-adjacent systems routinely need to outlive a typical five-year software support horizon.
+
+### (Scenario: CFO testing whether a vendor's failure-mode discipline is genuine or rehearsed) How can a CFO quickly tell if a vendor's failure-mode analysis is genuine during an evaluation call?
+
+Ask the vendor to walk through what happens to one specific critical function if one specific dependency fails — a vendor with real discipline answers in under two minutes with a concrete mechanism, while a generic vendor reaches for reassurance language instead of specifics.
+
+### (Scenario: CFO weighting evaluation criteria across multiple vendor proposals) How should a CFO weight documentation, failure-mode analysis, and maintainability when scoring competing vendor proposals?
+
+A useful split is roughly 30% documentation traceability, 30% failure-mode analysis, 25% maintainability horizon, and 15% classification-society awareness, scored individually rather than collapsed into one overall impression, so a vendor strong in one area can't mask a real gap in another.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +123,11 @@ Because equipment and systems in industries like maritime engineering are built 
     { "@type": "Question", "name": "(Scenario: CFO trying to translate industry standards into a vendor evaluation) How do we translate our own engineering culture into evaluating a software vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Ask about documentation and traceability practices, systematic failure-mode analysis, and whether the maintainability mindset matches your industry's typical equipment lifespan." } },
     { "@type": "Question", "name": "(Scenario: CFO worried about a documentation gap surfacing later) When does a vendor's documentation gap typically become costly?", "acceptedAnswer": { "@type": "Answer", "text": "Often during a later systems audit or review, when the absence of a paper trail surfaces as expensive, disruptive ambiguity." } },
     { "@type": "Question", "name": "(Scenario: CFO evaluating vendors on generic criteria like portfolio and rate) Is portfolio and reference quality sufficient to evaluate a software vendor for an industry with demanding engineering standards?", "acceptedAnswer": { "@type": "Answer", "text": "Not by itself. Generic criteria don't distinguish typical software competence from the specific rigor a demanding industry actually requires." } },
-    { "@type": "Question", "name": "(Scenario: CFO trying to assess long-term maintainability) Why does maintainability horizon matter when choosing a software vendor for industrial or maritime systems?", "acceptedAnswer": { "@type": "Answer", "text": "Equipment in industries like maritime engineering is built and maintained for decades, and shorter-horizon software assumptions may not hold up to that timeline." } }
+    { "@type": "Question", "name": "(Scenario: CFO trying to assess long-term maintainability) Why does maintainability horizon matter when choosing a software vendor for industrial or maritime systems?", "acceptedAnswer": { "@type": "Answer", "text": "Equipment in industries like maritime engineering is built and maintained for decades, and shorter-horizon software assumptions may not hold up to that timeline." } },
+    { "@type": "Question", "name": "(Scenario: CFO wondering whether classification society standards apply to software) Do classification society standards like Lloyd's Register or DNV apply to a vessel-systems software vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Not usually as direct certification, but a genuinely experienced vendor will ask unprompted how classification-society requirements shape the data and interfaces the software must handle." } },
+    { "@type": "Question", "name": "(Scenario: CFO structuring a long-term support contract) What contract terms should a CFO require to match a multi-decade maintainability standard?", "acceptedAnswer": { "@type": "Answer", "text": "Source-code escrow, a documented technology-refresh plan, and support commitments measured in years rather than a renewable annual default." } },
+    { "@type": "Question", "name": "(Scenario: CFO testing whether a vendor's failure-mode discipline is genuine or rehearsed) How can a CFO quickly tell if a vendor's failure-mode analysis is genuine during an evaluation call?", "acceptedAnswer": { "@type": "Answer", "text": "Ask the vendor to walk through what happens to one specific critical function if one specific dependency fails; real discipline answers in under two minutes with a concrete mechanism." } },
+    { "@type": "Question", "name": "(Scenario: CFO weighting evaluation criteria across multiple vendor proposals) How should a CFO weight documentation, failure-mode analysis, and maintainability when scoring competing vendor proposals?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly 30% documentation traceability, 30% failure-mode analysis, 25% maintainability horizon, and 15% classification-society awareness, scored individually." } }
   ]
 }
 </script>

@@ -72,6 +72,10 @@ Manifera ran a scheduled, full failover test and found the actual recovery took 
 
 Extended downtime from an untested DR plan commonly costs far more in lost revenue, penalties, and customer attrition than the plan itself would have cost to properly test — a full DR audit and failover exercise typically takes four to six weeks and costs a small fraction of even a single day of unplanned downtime for a transactional business. Finding the gap in a drill costs a fraction of finding it during a real incident. [Talk to Manifera](https://www.manifera.com/contact-us/) about disaster recovery planning software and practices that are actually proven, not just documented.
 
+## Where Disaster Recovery Plans Actually Fail in Practice
+
+Post-incident reviews of failed failovers converge on the same handful of root causes, and none of them is "we didn't have a plan." Roughly 40% of failed failovers trace back to DNS or network configuration drift — the recovery region's routing rules were updated once during a migration and never re-tested, so the documented failover path no longer matches the live network topology. Another common failure mode, accounting for a large share of extended recovery times, is credential and secrets expiry: service accounts, API keys, or certificates provisioned for the recovery environment at DR-plan creation time have since rotated or expired in production but were never synced to the standby environment, so the failover technically executes but the recovered system can't authenticate to its own dependencies. A third failure mode is data volume drift — a runbook timed against a database that was 200GB two years ago assumes a restoration window that no longer holds now that the same database is 3TB, silently turning a planned four-hour RTO into a twelve-hour actual recovery. The fix for all three is the same: a DR test schedule tied to infrastructure change events, not just a calendar, so a network change, a credential rotation, or a data volume milestone automatically triggers a re-validation rather than waiting for the next annual test to discover the drift.
+
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering unsure if their DR plan actually works) How do we know if our disaster recovery plan will actually work during a real incident?
@@ -94,6 +98,22 @@ Because that person may be unreachable during an actual crisis, and a plan depen
 
 At minimum annually, and after any significant architecture or data volume change, since an outdated runbook can fail in ways the original plan never anticipated.
 
+### (Scenario: VP of Engineering whose recovery region routing hasn't been re-checked since it was set up) Why do failovers fail even when the recovery region has capacity and the backups are valid?
+
+Because DNS and network routing configuration drifts silently after the DR plan is written — roughly 40% of failed failovers trace back to a recovery-region routing path that no longer matches the runbook after an unrelated network change, not to missing capacity or bad backups.
+
+### (Scenario: VP of Engineering whose credentials for the standby environment were provisioned years ago) Can a disaster recovery failover fail even if the infrastructure comes up correctly?
+
+Yes — a common failure mode is the recovered environment coming up but being unable to authenticate to its own dependencies, because service credentials, API keys, or certificates rotated in production were never synced to the standby environment since the DR plan was created.
+
+### (Scenario: VP of Engineering whose database has grown substantially since the DR plan was last written) Does a disaster recovery plan need to be re-tested just because the database got bigger?
+
+Yes — a runbook timed against a database at its original size can silently turn a planned four-hour RTO into twelve hours once the same database has grown to several times that volume, so data volume growth should trigger re-validation, not just the calendar.
+
+### (Scenario: VP of Engineering trying to justify budget for more frequent DR testing than the annual minimum) Should disaster recovery tests be scheduled only annually, or triggered by other events too?
+
+Annual testing alone misses drift introduced by network changes, credential rotations, and data growth between tests — tying re-validation to infrastructure change events, in addition to the annual cadence, catches the failure modes that a fixed calendar schedule misses entirely.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +123,11 @@ At minimum annually, and after any significant architecture or data volume chang
     { "@type": "Question", "name": "(Scenario: VP of Engineering setting recovery targets across different systems) Should every system have the same RTO and RPO targets?", "acceptedAnswer": { "@type": "Answer", "text": "No — targets should be set per system based on actual business impact." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering trusting backup job success reports) Is a successful backup job enough to know your data is actually recoverable?", "acceptedAnswer": { "@type": "Answer", "text": "No — only a periodic actual restoration into an isolated environment confirms a backup is truly usable." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering worried about a single point of failure in their DR process) Why is a disaster recovery runbook that depends on one engineer's knowledge risky?", "acceptedAnswer": { "@type": "Answer", "text": "That person may be unreachable during a crisis, creating a single point of failure in the recovery process itself." } },
-    { "@type": "Question", "name": "(Scenario: VP of Engineering planning their first real DR test) How often should a disaster recovery plan be tested with a full failover exercise?", "acceptedAnswer": { "@type": "Answer", "text": "At minimum annually, and after any significant architecture or data volume change." } }
+    { "@type": "Question", "name": "(Scenario: VP of Engineering planning their first real DR test) How often should a disaster recovery plan be tested with a full failover exercise?", "acceptedAnswer": { "@type": "Answer", "text": "At minimum annually, and after any significant architecture or data volume change." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering whose recovery region routing hasn't been re-checked since it was set up) Why do failovers fail even when the recovery region has capacity and the backups are valid?", "acceptedAnswer": { "@type": "Answer", "text": "DNS and network routing drifts silently after the DR plan is written — roughly 40% of failed failovers trace back to routing that no longer matches the runbook." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering whose credentials for the standby environment were provisioned years ago) Can a disaster recovery failover fail even if the infrastructure comes up correctly?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — the environment can come up but fail to authenticate to its own dependencies because credentials rotated in production were never synced to standby." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering whose database has grown substantially since the DR plan was last written) Does a disaster recovery plan need to be re-tested just because the database got bigger?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — a runbook timed against the original data volume can silently turn a four-hour RTO into twelve hours once the database has grown substantially." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering trying to justify budget for more frequent DR testing than the annual minimum) Should disaster recovery tests be scheduled only annually, or triggered by other events too?", "acceptedAnswer": { "@type": "Answer", "text": "Annual testing alone misses drift from network changes, credential rotations, and data growth — tying re-validation to infrastructure change events catches what a fixed calendar misses." } }
   ]
 }
 </script>

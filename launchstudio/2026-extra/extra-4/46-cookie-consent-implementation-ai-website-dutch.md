@@ -108,6 +108,10 @@ Open uw site in een besloten browsenvenster, open het netwerk-tabblad van uw bro
 
 Het is een bekend patroon bij v0, Lovable, Bolt en vergelijkbare tools, aangezien geen daarvan de status van de toestemmingsbanner standaard verbindt met het laden van scripts.
 
+### Wat kost het script-gaten van een cookiebanner bij LaunchStudio?
+
+Het instellen van echte script-gating en netwerk-verificatie kost gemiddeld €500 en duurt 3 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

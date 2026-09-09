@@ -91,6 +91,12 @@ Talk to our Amsterdam team about which staffing structure — dedicated, flexibl
 }
 </script>
 
+## Pricing the Two Models: Where the Rate Card Hides the Real Comparison
+
+A flexible bench's headline hourly rate almost always looks lower than a dedicated team's blended rate — that comparison alone is misleading. Price both models on cost per shipped, accepted story point over a realistic engagement length, not cost per hour billed. A bench model's lower rate frequently gets absorbed by the one-to-two-week productivity dip that accompanies every rotation; run the math across even four rotations in a nine-month project and the aggregate ramp cost commonly erases a 10-15% hourly rate advantage entirely.
+
+Watch for two specific pricing structures that predict which model a vendor actually delivers under whatever label they use: a dedicated team contract billing 100% of allocated capacity regardless of actual utilization signals genuine exclusivity, while a bench model billing strictly metered hours against tasks completed signals real elasticity. A vendor quoting "dedicated team" pricing but structuring the contract around metered, task-based hours is likely running a bench model with a dedicated-sounding label — ask directly how utilization is billed, since the billing structure itself is a more reliable tell than the marketing name on the proposal.
+
 ## Frequently Asked Questions
 
 ### Which staffing model is better, a dedicated team or a flexible bench?
@@ -107,6 +113,18 @@ Ask their typical engineer rotation rate for a project of your duration, how ins
 
 ### How fast can a dedicated team scale up or down if my roadmap changes?
 A well-structured dedicated team contract typically defines a two-to-four-week adjustment window for adding or reducing team members, which is slower than a flexible bench's near-instant reallocation but still faster than most in-house hiring or downsizing processes.
+
+### (Scenario: A bench model's hourly rate is 10-15% lower than a dedicated team's blended rate) Is a flexible bench actually cheaper than a dedicated team if its hourly rate is lower?
+Not necessarily once rotation-driven ramp costs are included — compare cost per shipped, accepted story point over the full engagement rather than hourly rate alone. A lower rate combined with several rotations can end up costing more in aggregate than a dedicated team's single upfront ramp.
+
+### (Scenario: A vendor calls their offering a "dedicated team" but bills strictly metered hours against completed tasks) How can I tell if a vendor's "dedicated team" is actually a flexible bench with a different label?
+Check the billing structure, not the marketing name. A genuinely dedicated team bills 100% of allocated capacity regardless of hour-by-hour utilization; a vendor billing metered hours against discrete tasks while using the word "dedicated" is likely running a bench model underneath.
+
+### (Scenario: A CTO's roadmap is stable for six months but might need a security specialist for a two-week audit) Does a stable roadmap with one short specialized need still justify a fully dedicated team?
+Usually yes, structured as a hybrid — a dedicated core team for the stable six-month work, supplemented by a short-term bench engagement or a single specialist added to the dedicated team for the two-week audit, rather than running the entire engagement on a bench model to accommodate one short-term need.
+
+### (Scenario: A CTO is negotiating the scaling-adjustment clause in a dedicated team contract) What should a fair scaling-adjustment clause specify in a dedicated team contract?
+It should name a concrete window (typically two to four weeks), specify whether that window applies to adding capacity, reducing it, or both, and state whether any early-adjustment penalty applies. A vague clause promising "flexibility" without a stated window is not enforceable when you actually need to invoke it.
 
 <script type="application/ld+json">
 {
@@ -151,6 +169,38 @@ A well-structured dedicated team contract typically defines a two-to-four-week a
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A well-structured dedicated team contract typically defines a two-to-four-week adjustment window for adding or reducing team members, which is slower than a flexible bench's near-instant reallocation but still faster than most in-house hiring or downsizing processes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A bench model's hourly rate is 10-15% lower than a dedicated team's blended rate) Is a flexible bench actually cheaper than a dedicated team if its hourly rate is lower?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily once rotation-driven ramp costs are included — compare cost per shipped, accepted story point over the full engagement rather than hourly rate alone. A lower rate combined with several rotations can end up costing more in aggregate than a dedicated team's single upfront ramp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor calls their offering a \"dedicated team\" but bills strictly metered hours against completed tasks) How can I tell if a vendor's \"dedicated team\" is actually a flexible bench with a different label?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the billing structure, not the marketing name. A genuinely dedicated team bills 100% of allocated capacity regardless of hour-by-hour utilization; a vendor billing metered hours against discrete tasks while using the word \"dedicated\" is likely running a bench model underneath."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A CTO's roadmap is stable for six months but might need a security specialist for a two-week audit) Does a stable roadmap with one short specialized need still justify a fully dedicated team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually yes, structured as a hybrid — a dedicated core team for the stable six-month work, supplemented by a short-term bench engagement or a single specialist added to the dedicated team for the two-week audit, rather than running the entire engagement on a bench model to accommodate one short-term need."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A CTO is negotiating the scaling-adjustment clause in a dedicated team contract) What should a fair scaling-adjustment clause specify in a dedicated team contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It should name a concrete window (typically two to four weeks), specify whether that window applies to adding capacity, reducing it, or both, and state whether any early-adjustment penalty applies. A vague clause promising \"flexibility\" without a stated window is not enforceable when you actually need to invoke it."
       }
     }
   ]

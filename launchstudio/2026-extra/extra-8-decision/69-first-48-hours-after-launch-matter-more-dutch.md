@@ -63,8 +63,7 @@ LaunchStudio's Launch Ready Pakket omvat 48 uur post-lancering ondersteuning pre
 
 [Plan uw lancering met engineeringondersteuning die aanwezig blijft tijdens het kritieke venster](https://launchstudio.eu/nl/#contact) — de build is het begin, niet het einde.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Lanceringsdag Die Bijna Niet Doorging
 
 Fleur Visser, voormalig journalist in Maastricht, lanceerde PersBericht.nl, een door Lovable gebouwde tool voor het verspreiden van persberichten voor Nederlandse kleine bedrijven, om 9 uur 's ochtends op een dinsdag, getimed om samen te vallen met een LinkedIn-post die tegen het middaguur 12.000 impressies had bereikt. Om 10:30 uur waren er drie dingen tegelijk misgegaan.

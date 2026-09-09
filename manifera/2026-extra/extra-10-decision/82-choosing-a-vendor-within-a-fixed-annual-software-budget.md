@@ -54,6 +54,12 @@ A fixed annual budget doesn't eliminate vendor choice — it changes which crite
 
 Manifera structures engagements with clear scope-to-cost mapping designed to hold against fixed budgets — see [custom software development](https://www.manifera.com/services/custom-software-development/) for how project scoping typically gets structured before a number is finalized.
 
+## Tracking Budget Burn Against Delivery: A Monthly Checkpoint Framework
+
+A fixed budget needs a monthly checkpoint that compares two numbers, not one: percentage of budget consumed versus percentage of scope actually delivered and accepted. If spend is running at 55% of budget by month five (roughly on a straight-line pace) but delivered scope sits at 35% of the agreed backlog, that gap is the earliest reliable signal of an overrun, appearing months before the vendor's own status reports typically flag it. Set an explicit trigger — a gap exceeding 15 percentage points between spend-pace and delivery-pace — that forces a structured conversation with the vendor rather than waiting for the budget to actually run out.
+
+Currency exposure deserves its own line in this tracking if the vendor invoices in USD or another non-EUR currency against a EUR-denominated budget: a 5-8% currency swing over a fiscal year is common enough that a fixed budget without a hedging clause or a fixed-rate conversion agreed at signing can blow past its ceiling on exchange movement alone, independent of scope or vendor performance. Build a currency buffer into the contingency calculation separately from scope-risk contingency, since the two have different causes and different mitigations — one is a vendor-side estimation problem, the other is a treasury problem masquerading as a vendor problem.
+
 ## Frequently Asked Questions
 
 ### Should I choose the vendor with the lowest day rate to stay within a fixed budget?
@@ -71,6 +77,18 @@ Ask every finalist for their historical rate of change requests as a percentage 
 ### Is it better to compress a full roadmap into one fixed-budget engagement or phase it across fiscal years?
 Phasing is usually the safer approach when full scope exceeds the available budget. Sequencing the highest-value phase into the current fiscal year's number, with subsequent phases scoped as separate future engagements, preserves a genuine decision point to re-evaluate the vendor relationship at each phase boundary.
 
+### (Scenario: a mid-year budget review shows spend running ahead of delivered scope) What's the earliest reliable signal that a fixed-budget engagement is heading toward an overrun?
+Compare percentage of budget consumed against percentage of scope actually delivered and accepted, not just delivered on schedule per the vendor's own reporting. A gap exceeding roughly 15 percentage points between spend-pace and delivery-pace is a reliable early trigger, typically appearing months before the vendor's status updates flag any concern.
+
+### (Scenario: finalist vendors are quoting in USD while the approved budget is set in EUR) How should currency exposure be handled when comparing vendor quotes against a fixed EUR budget?
+Negotiate either a fixed conversion rate agreed at signing or a contractual cap on currency-driven cost increases, and build a separate currency buffer into your contingency calculation distinct from scope-risk contingency. A 5-8% currency swing over a fiscal year is common enough to consume a meaningful share of an unhedged budget on exchange movement alone.
+
+### (Scenario: comparing a fixed-price proposal against a time-and-materials proposal with a hard budget cap) Is a capped time-and-materials contract functionally the same as fixed-price for budget certainty?
+Not quite — a capped T&M contract guarantees the budget won't be exceeded, but unlike fixed-price it gives no guarantee the full scope gets delivered before the cap is hit, since the vendor simply stops billable work at the ceiling. Fixed-price ties the cost ceiling to a defined deliverable; capped T&M ties it only to spend, leaving scope completion as a separate, unresolved risk.
+
+### (Scenario: a fiscal year is ending with unspent budget on an active vendor engagement) What should a CFO do with unused software budget at fiscal year-end rather than let it lapse or get spent hastily?
+Resist the instinct to authorize rushed scope additions just to use the remaining amount, since that's exactly the pressure that produces poorly scoped, low-value work. Where the organization's budgeting rules allow it, negotiate a formal rollover into next year's contingency line tied to the same vendor relationship rather than treating year-end as a forced spending deadline.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -80,7 +98,11 @@ Phasing is usually the safer approach when full scope exceeds the available budg
     {"@type": "Question", "name": "What's the difference between scope-to-budget and budget-to-scope planning?", "acceptedAnswer": {"@type": "Answer", "text": "Scope-to-budget defines the full deliverable first and finds a vendor who fits the number, typically cutting scope when the math doesn't reconcile. Budget-to-scope fixes the number first and asks vendors what they can deliver for it, requiring trust in their scoping discipline."}},
     {"@type": "Question", "name": "How much contingency should be built into a fixed software budget?", "acceptedAnswer": {"@type": "Answer", "text": "A reasonable reserve for a well-scoped project is 10-15% of total contract value; for less-defined scope or a new vendor relationship, 15-20% is more realistic. This reserve generally should not be disclosed to the vendor during scoping."}},
     {"@type": "Question", "name": "How do I evaluate whether a vendor's low proposal is realistic or a lowball to win the deal?", "acceptedAnswer": {"@type": "Answer", "text": "Ask every finalist for their historical rate of change requests as a percentage of original contract value on comparable engagements. Unwillingness to share this, or a track record of high change-request rates, signals likely margin recovery post-signing."}},
-    {"@type": "Question", "name": "Is it better to compress a full roadmap into one fixed-budget engagement or phase it across fiscal years?", "acceptedAnswer": {"@type": "Answer", "text": "Phasing is usually safer when full scope exceeds the available budget. Sequencing the highest-value phase into the current fiscal year's number preserves a genuine decision point to re-evaluate the vendor relationship at each phase boundary."}}
+    {"@type": "Question", "name": "Is it better to compress a full roadmap into one fixed-budget engagement or phase it across fiscal years?", "acceptedAnswer": {"@type": "Answer", "text": "Phasing is usually safer when full scope exceeds the available budget. Sequencing the highest-value phase into the current fiscal year's number preserves a genuine decision point to re-evaluate the vendor relationship at each phase boundary."}},
+    {"@type": "Question", "name": "What's the earliest reliable signal that a fixed-budget engagement is heading toward an overrun?", "acceptedAnswer": {"@type": "Answer", "text": "Compare percentage of budget consumed against percentage of scope actually delivered and accepted. A gap exceeding roughly 15 percentage points between spend-pace and delivery-pace is a reliable early trigger, typically appearing months before the vendor's status updates flag any concern."}},
+    {"@type": "Question", "name": "How should currency exposure be handled when comparing vendor quotes against a fixed EUR budget?", "acceptedAnswer": {"@type": "Answer", "text": "Negotiate a fixed conversion rate agreed at signing or a contractual cap on currency-driven cost increases, and build a separate currency buffer into contingency, since a 5-8% currency swing over a fiscal year can consume a meaningful share of an unhedged budget."}},
+    {"@type": "Question", "name": "Is a capped time-and-materials contract functionally the same as fixed-price for budget certainty?", "acceptedAnswer": {"@type": "Answer", "text": "Not quite — a capped T&M contract guarantees the budget won't be exceeded but gives no guarantee the full scope gets delivered before the cap is hit, while fixed-price ties the cost ceiling to a defined deliverable rather than only to spend."}},
+    {"@type": "Question", "name": "What should a CFO do with unused software budget at fiscal year-end rather than let it lapse or get spent hastily?", "acceptedAnswer": {"@type": "Answer", "text": "Resist authorizing rushed scope additions just to use the remaining amount, and where budgeting rules allow it, negotiate a formal rollover into next year's contingency line tied to the same vendor relationship instead of treating year-end as a forced spending deadline."}}
   ]
 }
 </script>

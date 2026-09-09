@@ -89,6 +89,10 @@ Request a walkthrough of our security controls and access model directly with ou
 }
 </script>
 
+## Sizing the Program: A Realistic Vendor Distribution Across Tiers
+
+Security leads building this framework for the first time often over-invest in Tier 4 rigor across too many vendors, burning out review capacity within a quarter. A realistic distribution for a mid-market company with 30-80 active vendors typically looks like: 50-60% in Tier 1 (no production access, lightweight self-attestation, roughly 15-20 minutes of review time each), 25-30% in Tier 2 (standard questionnaire and certification check, 1-2 hours each), 10-15% in Tier 3 (full assessment with live technical interview, 4-6 hours each), and only 3-5% in Tier 4 (embedded infrastructure access or regulated data, ongoing quarterly review, 8+ hours per cycle). If your current distribution skews meaningfully heavier toward Tier 3-4, that's usually a sign tiering criteria are too conservative rather than that your vendor base is genuinely high-risk — recalibrate against actual data sensitivity and access scope, not a vendor's contract size or spend. Budget review capacity accordingly: a single security analyst can realistically manage full assessment cycles for roughly 15-25 Tier 3 vendors per year alongside other responsibilities, which means a security lead overseeing 40+ Tier 3 vendors needs either headcount, a shared assessment tool, or a stricter tiering threshold — not more hours in the week.
+
 ## Frequently Asked Questions
 
 ### What is risk tiering in a third-party vendor assessment framework?
@@ -105,6 +109,18 @@ No. Certifications are a useful starting filter but should be paired with a live
 
 ### How should third-party risk obligations be reflected in the vendor contract?
 Contracts should include a defined breach notification timeframe, a right-to-audit clause, minimum access control standards, and a documented reassessment cadence, turning the risk framework into an enforceable ongoing standard rather than a one-time selection gate.
+
+### (Scenario: A vendor originally tiered as Tier 2 at onboarding has quietly gained production database access as the engagement's scope expanded) How do you catch this kind of tier drift?
+Build a scope-change trigger directly into your access provisioning process, so any request for elevated or new production access automatically flags the vendor for retiering rather than relying on someone remembering to revisit the original assessment. Pair this with a lightweight quarterly access review across all vendors, cross-referencing current permissions against the tier they were last assessed at.
+
+### (Scenario: A vendor being considered for a Tier 3 engagement refuses a live technical interview, offering only a written questionnaire) How do you handle the refusal?
+Treat the refusal itself as a material data point in the assessment, not just a process inconvenience — a vendor confident in its security posture rarely resists a technical conversation with its own engineers. Either escalate the requirement as non-negotiable for that tier or downgrade the engagement's proposed access scope until the vendor can demonstrate willingness to engage at the rigor the access level actually requires.
+
+### (Scenario: You're building this framework from scratch and currently have only a single generic questionnaire and a spreadsheet) What should the first 90 days prioritize?
+Prioritize tiering your existing vendor list first, even roughly, since it immediately tells you where your real exposure concentrates before you've built a single new process. Then build the Tier 3-4 evidence-based questionnaire and reassessment cadence for your highest-risk existing vendors, deferring Tier 1-2 process formalization until the highest-exposure gaps are closed.
+
+### (Scenario: Your audit committee asks for a defensible metric proving the third-party risk program is actually working, not just running) What do you show them?
+Report the percentage of active vendors currently assessed within their tier's required cadence, the number of tier-drift corrections caught through scope-change triggers, and the average time-to-remediation for any material gap surfaced during a reassessment — concrete, trackable numbers that demonstrate an active program rather than a static compliance artifact.
 
 <script type="application/ld+json">
 {
@@ -149,6 +165,38 @@ Contracts should include a defined breach notification timeframe, a right-to-aud
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Contracts should include a defined breach notification timeframe, a right-to-audit clause, minimum access control standards, and a documented reassessment cadence, turning the risk framework into an enforceable ongoing standard rather than a one-time selection gate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor originally tiered as Tier 2 at onboarding has quietly gained production database access as the engagement's scope expanded) How do you catch this kind of tier drift?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Build a scope-change trigger into your access provisioning process so any request for elevated production access automatically flags the vendor for retiering, paired with a lightweight quarterly access review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor being considered for a Tier 3 engagement refuses a live technical interview, offering only a written questionnaire) How do you handle the refusal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat the refusal itself as a material data point, since a vendor confident in its security posture rarely resists a technical conversation, and either escalate the requirement as non-negotiable or downgrade the proposed access scope."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: You're building this framework from scratch and currently have only a single generic questionnaire and a spreadsheet) What should the first 90 days prioritize?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prioritize tiering your existing vendor list first, even roughly, then build the evidence-based questionnaire and reassessment cadence for your highest-risk existing vendors before formalizing lower-tier process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Your audit committee asks for a defensible metric proving the third-party risk program is actually working, not just running) What do you show them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Report the percentage of active vendors assessed within their tier's required cadence, the number of tier-drift corrections caught, and average time-to-remediation for gaps surfaced during reassessment."
       }
     }
   ]

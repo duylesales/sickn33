@@ -93,6 +93,12 @@ Talk to our Amsterdam team about structuring your next contract — whether that
 }
 </script>
 
+## The Milestone-Gate Model: A Third Option Between the Two
+
+A structure worth putting on the table before defaulting to either pure model: milestone-based fixed pricing, where the total contract is broken into three to six discrete milestones, each individually fixed-priced and individually accepted before payment and before the next milestone begins. This captures most of fixed-price's budget predictability while limiting the blast radius of a bad specification to a single milestone rather than the entire engagement — if milestone two reveals a scope gap, you renegotiate a €15k-€40k milestone, not a €300k contract.
+
+The mechanics that make this work: each milestone should be sized to two to four weeks of work, small enough that a specification error surfaces and gets corrected within a single billing cycle rather than compounding silently across a quarter. Payment releases on written acceptance of working software for that milestone, not on elapsed time or vendor self-certification. And the contract should specify that unresolved scope questions at a milestone boundary pause the next milestone's fixed price until re-quoted, rather than letting the vendor absorb ambiguity into a number they will later need to recover through change orders. CFOs who adopt this structure report change-order disputes drop meaningfully compared to a single lump-sum fixed contract, because the feedback loop between "spec was wrong" and "someone notices" shrinks from months to weeks.
+
 ## Frequently Asked Questions
 
 ### Which is cheaper overall, fixed price or time and materials?
@@ -109,6 +115,18 @@ Yes, and a hybrid structure is often the most financially protective option — 
 
 ### How much discovery time should a CFO budget for before a fixed-price quote?
 Two to four weeks of paid discovery is typical for a specification detailed enough to support a genuinely fixed number. Skipping this step to save money upfront is one of the most common reasons fixed-price contracts end up generating costly change orders later.
+
+### (Scenario: CFO structuring a €300k engagement with meaningful scope uncertainty) How many milestones should a milestone-based fixed-price contract have for a large engagement?
+Size each milestone to two to four weeks of work rather than picking an arbitrary count, so a €300k, six-month engagement typically breaks into eight to twelve milestones. More, smaller milestones limit your exposure to any single specification error but add acceptance-review overhead, so balance milestone count against your team's capacity to review and formally accept deliverables on that cadence.
+
+### (Scenario: board asks CFO to justify a T&M contract with no fixed ceiling) How do I present a T&M contract to a board that expects a fixed number?
+Present a not-to-exceed cap as the number the board approves, framed as a ceiling rather than an estimate, alongside the burn-rate reporting cadence that will flag any trend toward that ceiling early. Boards generally accept T&M structures readily once they see a hard cap and a weekly tracking mechanism rather than an open-ended hourly commitment.
+
+### (Scenario: procurement team negotiating change-order pricing before signing) What is a fair rate for change-order work under a fixed-price contract?
+Cap change-order pricing at the same blended rate used to calculate the original fixed price, written explicitly into the contract, rather than letting the vendor apply a premium rate once you have no alternative but to accept it. A vendor unwilling to commit to this cap in writing before signing is signaling that change orders are part of their margin strategy, not an exception process.
+
+### (Scenario: CFO deciding between milestone fixed-price and full T&M for a new product build) When does milestone-based fixed pricing make more sense than full time-and-materials?
+Milestone-based fixed pricing fits best when the overall product direction is reasonably well understood but individual features carry specification risk, since it caps exposure per milestone while still providing board-level predictability. Full T&M fits better when the roadmap itself is expected to change materially based on user feedback, since forcing milestone boundaries onto genuinely unknown scope just recreates the change-order problem at a smaller scale.
 
 <script type="application/ld+json">
 {
@@ -153,6 +171,38 @@ Two to four weeks of paid discovery is typical for a specification detailed enou
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Two to four weeks of paid discovery is typical for a specification detailed enough to support a genuinely fixed number. Skipping this step to save money upfront is one of the most common reasons fixed-price contracts end up generating costly change orders later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many milestones should a milestone-based fixed-price contract have for a large engagement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Size each milestone to two to four weeks of work rather than picking an arbitrary count, so a €300k, six-month engagement typically breaks into eight to twelve milestones. More, smaller milestones limit your exposure to any single specification error but add acceptance-review overhead, so balance milestone count against your team's capacity to review and formally accept deliverables on that cadence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I present a T&M contract to a board that expects a fixed number?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Present a not-to-exceed cap as the number the board approves, framed as a ceiling rather than an estimate, alongside the burn-rate reporting cadence that will flag any trend toward that ceiling early. Boards generally accept T&M structures readily once they see a hard cap and a weekly tracking mechanism rather than an open-ended hourly commitment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a fair rate for change-order work under a fixed-price contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cap change-order pricing at the same blended rate used to calculate the original fixed price, written explicitly into the contract, rather than letting the vendor apply a premium rate once you have no alternative but to accept it. A vendor unwilling to commit to this cap in writing before signing is signaling that change orders are part of their margin strategy, not an exception process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does milestone-based fixed pricing make more sense than full time-and-materials?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Milestone-based fixed pricing fits best when the overall product direction is reasonably well understood but individual features carry specification risk, since it caps exposure per milestone while still providing board-level predictability. Full T&M fits better when the roadmap itself is expected to change materially based on user feedback, since forcing milestone boundaries onto genuinely unknown scope just recreates the change-order problem at a smaller scale."
       }
     }
   ]

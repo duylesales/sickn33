@@ -78,6 +78,12 @@ A practical technique that Fischhoff's own follow-up research suggested reduces 
 
 Before concluding a past project's failure was obviously foreseeable, revisit the actual contemporaneous evidence rather than outcome-informed memory, and draw process lessons rather than narrow, single-signal reactions. [Talk to Manifera](https://www.manifera.com/contact-us/) about a vendor relationship built on transparent, contemporaneous documentation from the start.
 
+## A Structured Post-Mortem Template That Resists Hindsight Bias
+
+A post-mortem run without structure defaults to narrative, and narrative is exactly where hindsight bias does its damage. A more resistant format scores each concern raised during discovery — not just the one that turned out to matter — on two independent axes before anyone knows which one mattered: perceived likelihood at the time (low/medium/high, taken from contemporaneous notes, never reconstructed from memory) and perceived severity if it materialized. A concern that scored "medium likelihood, medium severity" alongside four other similarly-scored concerns, one of which happened to be the one that failed, should be treated as one of five roughly equal signals — not singled out afterward as the one that was "clearly" the real risk. This single discipline — scoring before revealing which concern was the actual cause — is what separates a post-mortem that produces a narrow, single-signal overreaction from one that produces a durable process improvement.
+
+A second, complementary technique borrowed directly from Fischhoff's follow-up research: have each reviewer independently write down what they would have estimated the failure probability at, honestly, before knowing the outcome, then compare those numbers across the team before discussing the actual cause. The spread between reviewers' independent estimates is itself informative — a wide spread suggests genuine, honest uncertainty existed at the time, which argues strongly against any post-hoc claim that the outcome was obvious in advance.
+
 ## Frequently Asked Questions
 
 ### (Scenario: founder reviewing a past failed project) Why does a failed project's cause feel so obvious when I look back at it now?
@@ -100,6 +106,22 @@ Because that signal often wasn't uniquely obvious at the time — it was one of 
 
 It preserves the original, undistorted uncertainty present at the time a decision was made, giving a later review something more objective to examine than memory that's already been reorganized around the known outcome.
 
+### (Scenario: founder choosing between two custom software development company finalists after a past failure) How do I avoid letting hindsight bias from a past failed vendor relationship unfairly disqualify an otherwise strong new custom software development company?
+
+Check whether the trait you're screening for — hedging, a particular technical approach, a communication style — was actually unique to the vendor that failed, or common across most vendors you talked to at the time, since the latter means it's not a genuine differentiator at all.
+
+### (Scenario: procurement lead writing vendor evaluation criteria after a past failure) Should past project failures directly shape the evaluation criteria used to select the next software development company?
+
+Only the process-level lessons should carry forward — criteria like "verify integration claims with a technical proof-of-concept before signing" generalize well, while criteria built around one specific past vendor's specific behavior often don't.
+
+### (Scenario: founder presenting a post-mortem to investors or a board) How do I present a post-mortem to a board without it sounding like I'm making excuses for a failed software product?
+
+Present the scored, contemporaneous evidence directly rather than a narrative — a board generally responds better to "five comparable risks existed, one materialized" backed by actual discovery notes than to either a bare excuse or an overconfident claim that the failure was entirely foreseeable and therefore preventable.
+
+### (Scenario: engineering lead worried hindsight bias will recur in the next post-mortem regardless of technique) Is there a way to make resisting hindsight bias a repeatable habit rather than a one-time technique for a single review?
+
+Yes — require every project, not just failed ones, to log a lightweight risk register with likelihood and severity scores recorded at kickoff and revisited at set checkpoints, so the contemporaneous record this article depends on exists automatically rather than needing to be reconstructed only after something goes wrong.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -109,7 +131,11 @@ It preserves the original, undistorted uncertainty present at the time a decisio
     { "@type": "Question", "name": "(Scenario: founder trying to conduct a fair post-mortem) How can I conduct a post-mortem that isn't distorted by already knowing the outcome?", "acceptedAnswer": { "@type": "Answer", "text": "Review actual contemporaneous notes rather than outcome-informed memory, and ask what other plausible concerns existed at the time." } },
     { "@type": "Question", "name": "(Scenario: founder worried this means no lessons can be learned from failure) Does hindsight bias mean it's pointless to try to learn from a failed project?", "acceptedAnswer": { "@type": "Answer", "text": "No — lessons should focus on process improvements generally, rather than narrow reactions to one specific detail." } },
     { "@type": "Question", "name": "(Scenario: founder tempted to overreact to one specific past mistake) Why is it risky to build a strict new rule around the exact signal that caused a past failure?", "acceptedAnswer": { "@type": "Answer", "text": "That signal often wasn't uniquely obvious at the time, so a strict rule built around it risks screening out good options too." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to build better documentation habits) How does contemporaneous documentation actually help counter hindsight bias later?", "acceptedAnswer": { "@type": "Answer", "text": "It preserves the original, undistorted uncertainty present at decision time, giving later review something more objective to examine." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to build better documentation habits) How does contemporaneous documentation actually help counter hindsight bias later?", "acceptedAnswer": { "@type": "Answer", "text": "It preserves the original, undistorted uncertainty present at decision time, giving later review something more objective to examine." } },
+    { "@type": "Question", "name": "(Scenario: founder choosing between two custom software development company finalists after a past failure) How do I avoid letting hindsight bias from a past failed vendor relationship unfairly disqualify an otherwise strong new custom software development company?", "acceptedAnswer": { "@type": "Answer", "text": "Check whether the trait you're screening for was actually unique to the vendor that failed, or common across most vendors at the time — the latter isn't a genuine differentiator." } },
+    { "@type": "Question", "name": "(Scenario: procurement lead writing vendor evaluation criteria after a past failure) Should past project failures directly shape the evaluation criteria used to select the next software development company?", "acceptedAnswer": { "@type": "Answer", "text": "Only process-level lessons should carry forward — criteria generalized from the failure mode work better than criteria built around one vendor's specific behavior." } },
+    { "@type": "Question", "name": "(Scenario: founder presenting a post-mortem to investors or a board) How do I present a post-mortem to a board without it sounding like I'm making excuses for a failed software product?", "acceptedAnswer": { "@type": "Answer", "text": "Present the scored, contemporaneous evidence directly — a board responds better to a documented comparison of comparable risks than to a bare excuse or an overconfident claim of foreseeability." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead worried hindsight bias will recur in the next post-mortem regardless of technique) Is there a way to make resisting hindsight bias a repeatable habit rather than a one-time technique for a single review?", "acceptedAnswer": { "@type": "Answer", "text": "Require every project to log a lightweight risk register with likelihood and severity scores at kickoff and at set checkpoints, so the contemporaneous record exists automatically." } }
   ]
 }
 </script>

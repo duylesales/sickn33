@@ -82,6 +82,12 @@ Manifera's own contracting process is built around exactly these nine points as 
 
 Get in touch with our [Amsterdam team](https://www.manifera.com/contact-us/) for a no-obligation review of your outsourcing contract before you sign — a second read of the fine print costs you nothing and can save you months of dispute later.
 
+## The Fine-Print Patterns That Predict a Dispute
+
+Three phrasing patterns in a draft contract correlate strongly with disputes later, based on the pattern Manifera's legal reviews see repeatedly across outsourcing engagements. First, "commercially reasonable efforts" language attached to SLAs or deliverable dates instead of a measurable number — this phrase sounds professional but is functionally unenforceable, since no court or arbitrator can measure "reasonable effort" against a missed deadline. Second, IP assignment clauses that reference "final deliverables" rather than "all work product," which quietly excludes intermediate code, internal tools, and documentation built along the way — exactly the artifacts most likely to matter in a due-diligence review during a later acquisition or funding round. Third, a termination clause with a notice period under 30 days paired with a transition-out period of similarly short duration; anything shorter than 30/30 rarely leaves enough runway for a documented handover, meaning you inherit undocumented technical debt the moment you need to exit.
+
+A fourth, more subtle pattern worth flagging to whoever reviews the contract on your behalf: pricing addenda that reference "then-current rate card" for change requests instead of locking in specific rates for the contract term. This clause lets a vendor raise change-request pricing mid-engagement without renegotiating the base contract, and it is one of the more common ways a quoted engagement drifts 15-25% over budget without a single explicit rate increase ever being discussed. Flag all four patterns explicitly during redlines — a vendor with nothing to hide will accept specific, measurable language in place of each one without friction.
+
 ## Frequently Asked Questions
 
 ### What is the most commonly missed clause in software outsourcing contracts?
@@ -98,6 +104,18 @@ A fair termination clause specifies a reasonable notice period for both parties,
 
 ### Is GDPR compliance necessary if my outsourcing vendor is based outside the EU?
 Yes, if you process any EU customer data, GDPR obligations follow the data, not the vendor's physical location. Confirm your outsourcing partner has a data processing agreement covering encryption, access controls, and breach notification regardless of where their engineers are based.
+
+### (Scenario: CEO reviewing a contract ahead of a funding round) How does an outsourcing contract's IP clause affect due diligence during a funding round?
+Investors' legal teams will trace IP provenance for every material piece of the codebase, and any contract that assigns IP only upon "final deliverables" rather than "all work product" creates gaps they will flag. Fix the assignment language before the round starts, not during due diligence when you have no negotiating leverage left with the vendor.
+
+### (Scenario: vendor proposes a 15-day termination notice with no transition period) Is a short termination notice period in an outsourcing contract always a red flag?
+Not automatically, but a short notice period paired with no defined transition-out or knowledge-handover process is a real risk, since you could lose access to institutional knowledge with almost no runway to replace it. Push for a minimum combined 30/30 notice-and-transition structure regardless of the headline notice period the vendor initially proposes.
+
+### (Scenario: CEO negotiating pricing addenda before signing) How do I stop change-request pricing from quietly inflating my outsourcing budget over time?
+Lock specific rates for the full contract term rather than accepting a "then-current rate card" clause, and require the vendor to define what counts as in-scope for the quoted price versus a billable change request. Engagements that skip this step commonly see final costs land 15-25% above the original quote with no single increase ever explicitly negotiated.
+
+### (Scenario: CEO comparing an offshore vendor's certifications against an in-house compliance checklist) What certifications should I actually verify, not just take the vendor's word for?
+Request the actual SOC 2 report or ISO 27001 certificate directly from the certifying body's registry, not a summary page on the vendor's website, and confirm the certification scope covers the specific service you are contracting for. A certification that covers only the vendor's internal HR systems, for instance, says nothing about the security posture of the engineering team touching your codebase.
 
 <script type="application/ld+json">
 {
@@ -142,6 +160,38 @@ Yes, if you process any EU customer data, GDPR obligations follow the data, not 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, if you process any EU customer data, GDPR obligations follow the data, not the vendor's physical location. Confirm your outsourcing partner has a data processing agreement covering encryption, access controls, and breach notification regardless of where their engineers are based."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does an outsourcing contract's IP clause affect due diligence during a funding round?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Investors' legal teams will trace IP provenance for every material piece of the codebase, and any contract that assigns IP only upon final deliverables rather than all work product creates gaps they will flag. Fix the assignment language before the round starts, not during due diligence when you have no negotiating leverage left with the vendor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a short termination notice period in an outsourcing contract always a red flag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not automatically, but a short notice period paired with no defined transition-out or knowledge-handover process is a real risk, since you could lose access to institutional knowledge with almost no runway to replace it. Push for a minimum combined 30/30 notice-and-transition structure regardless of the headline notice period the vendor initially proposes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I stop change-request pricing from quietly inflating my outsourcing budget over time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lock specific rates for the full contract term rather than accepting a then-current rate card clause, and require the vendor to define what counts as in-scope for the quoted price versus a billable change request. Engagements that skip this step commonly see final costs land 15-25% above the original quote with no single increase ever explicitly negotiated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What certifications should I actually verify, not just take the vendor's word for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Request the actual SOC 2 report or ISO 27001 certificate directly from the certifying body's registry, not a summary page on the vendor's website, and confirm the certification scope covers the specific service you are contracting for. A certification that covers only the vendor's internal HR systems, for instance, says nothing about the security posture of the engineering team touching your codebase."
       }
     }
   ]

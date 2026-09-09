@@ -79,6 +79,13 @@ Geautomatiseerde AI-codetools bouwen uitsluitend het "happy path". [LaunchStudio
 
 Onder leiding van Herre Roelevink in Amsterdam (Herengracht 420) en 120+ engineers in Ho Chi Minhstad (Pho Quangstraat 10) transformeren wij fragiele AI-verbindingen in robuuste bedrijfssystemen.
 
+### Het Opsporen en Voorkomen van Stille AI-Bugs
+
+Door AI gegenereerde code bevat vaak logische fouten die pas zichtbaar worden onder echte belasting. LaunchStudio adresseert deze systematisch:
+1. **State-Desynchronisatie Preventie:** We corrigeren asynchrone race conditions waarbij de frontend data toont die nog niet definitief is vastgelegd in de backend database.
+2. **Herstel van Ontbrekende Database-Constraints:** We voegen foreign keys, unieke indexen en check constraints toe om corrupte of dubbele records definitief onmogelijk te maken.
+3. **Geautomatiseerde Integratietesten voor Edge-Cases:** We bouwen end-to-end testsuites die extreme invoerwaarden en netwerkfouten simuleren om de veerkracht van uw software te garanderen.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De Compliance-Checker Die Zelf Wetten Verzon

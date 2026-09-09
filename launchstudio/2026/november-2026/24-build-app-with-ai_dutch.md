@@ -79,6 +79,12 @@ Onder leiding van Herre Roelevink in Amsterdam (Herengracht 420) en 120+ enginee
 - Cloud-infrastructuur (AWS of Azure) met strikte netwerkisolatie.
 - Oplevering van complete architectuurspecificaties en datastroomdiagrammen voor uw VSAQ-vragenlijsten.
 
+### Betrouwbare Architectuur voor AI-Gedreven Applicaties
+
+Een vlekkeloze gebruikerservaring vereist een robuuste backend-infrastructuur:
+1. **Connection Pooling:** We configureren betrouwbare databasepools om verbindingsfouten bij verkeerspieken te voorkomen.
+2. **Optimale Responstijden:** Slimme caching van frequente zoekvragen zorgt voor consistente en snelle interactie.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: Het Logistieke Platform Dat Faalde Voor De IT-Audit

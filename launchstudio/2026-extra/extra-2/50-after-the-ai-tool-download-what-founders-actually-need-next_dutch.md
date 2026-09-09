@@ -39,7 +39,8 @@ Wanneer oprichters überhaupt nadenken over versleuteling, denken ze aan HTTPS �
 
 ## Waarom interne verbindingen tussen diensten onderling vaak over het hoofd worden gezien
 
-Een typische applicatie is niet een enkel stuk software – het omvat vaak een hoofd-backend die een afzonderlijke interne dienst, een achtergrondtaakverwerker, of een database op een andere server aanroept. Elk van die interne verbindingen is een afzonderlijke kans voor gegevens om onversleuteld te reizen als die specifieke verbinding niet bewust wordt geconfigureerd met haar eigen versleuteling.
+Het beveiligen van de verbinding tussen de browser van de gebruiker en de frontend-applicatie is tegenwoordig vrijwel universeel geregeld — elk modern hostingplatform voorziet automatisch in een gratis SSL-certificaat en een groen slotje in de adresbalk. Het interne transport van gegevens — bijvoorbeeld tussen de webserver en een losse database-instantie, of tussen de API en een achtergrondverwerker — bevindt zich echter volledig buiten het zicht van de browser. Ontwikkelaars veronderstellen daardoor vaak stilzwijgend dat dataverkeer 'binnen de cloud' automatisch afgeschermd is. Zodra componenten echter via openbare IP-adressen of niet-versleutelde poorten communiceren, reizen gevoelige persoonsgegevens in platte tekst over gedeelde netwerken.
+
 
 ## Waarom deze kloof oprecht moeilijk op te merken is van buitenaf
 
@@ -47,7 +48,8 @@ De klantgerichte beveiliging van een product kan er compleet correct uitzien –
 
 ## Waarom dit meer uitmaakt dan het op het eerste gezicht lijkt
 
-Gegevens die onversleuteld reizen tussen interne diensten zijn kwetsbaar voor onderschepping door iedereen met toegang tot hetzelfde onderliggende netwerk – wat, afhankelijk van uw specifieke hosting-opstelling, andere huurders op gedeelde infrastructuur zou kunnen omvatten. Op gedeelde cloud-infrastructuur specifiek is "hetzelfde onderliggende netwerk" een grotere groep dan oprichters zich typisch voorstellen.
+Onversleuteld intern verkeer vormt een ernstige blinde vlek, met name wanneer een applicatie groeit en te maken krijgt met externe audits, zakelijke partners of formele inkooptrajecten (vendor due diligence). Grote zakelijke afnemers en institutionele partners eisen vrijwel altijd de garantie dat klantgegevens zowel in transitie als in rust te allen tijde end-to-end zijn versleuteld. Het ontbreken van interne TLS-versleuteling is een van de snelste manieren om te falen voor een zakelijke security review, wat deals van tienduizenden euro's direct kan blokkeren.
+
 
 ## Wat het op de juiste manier herstellen hiervan vereist
 
@@ -56,6 +58,18 @@ Een correcte beoordeling brengt elke verbinding die uw applicatie maakt in kaart
 Manifera's beoordelingen van interne infrastructuurbeveiliging worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
 [Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
+
+## Het in Kaart Brengen van de Verbindingen van Uw Eigen Applicatie: Een Startpunt
+
+Een oprichter hoeft geen netwerkarchitect te zijn om een helder beeld te krijgen van hoeveel afzonderlijke netwerkverbindingen zijn applicatie intern legt. De meeste oprichters zijn verbaasd zodra ze dit voor het eerst uittekenen:
+
+1. **Maak een overzicht van elk afzonderlijk infrastructuuronderdeel** — de frontend-applicatie, de backend-API, de hoofddatabase, eventuele cache-servers (zoals Redis), achtergrondtaak-verwerkers en aangesloten externe API's van derden.
+2. **Teken de verbindingslijnen tussen elk paar componenten dat rechtstreeks communiceert** — focus hierbij nadrukkelijk op de interne lijnen (bijvoorbeeld tussen backend en database), en niet alleen op de verbinding tussen bezoeker en applicatie.
+3. **Stel bij elke interne verbinding de vraag: is deze communicatie versleuteld via TLS/SSL, en hoe weet ik dat zeker?** 'Ik neem aan van wel' en 'ik heb het geverifieerd in de configuratie' zijn twee wezenlijk verschillende zekerheden.
+4. **Raadpleeg de documentatie van uw hostingprovider over standaardinstellingen** — wat op het ene cloudplatform standaard versleuteld is, vereist op een ander platform vaak een expliciete vlag in de database-verbindingsstring (zoals `sslmode=require`).
+5. **Geef prioriteit aan verbindingen die persoonsgegevens of financiële data transporteren** — zorg dat routes met gevoelige klantgegevens als eerste worden geverifieerd en beschermd.
+
+Het visueel in kaart brengen van uw architectuur brengt vaak direct onvermoede blinde vlekken aan het licht en legt het fundament voor een volwassen, veilige productie-infrastructuur.
 
 ## Echt voorbeeld
 
@@ -76,25 +90,25 @@ Tijdens het voorbereiden van documentatie voor een mogelijke integratie met een 
 
 ## Veelgestelde vragen
 
-### Zou een infrastructuurspecialist onversleuteld intern dataverkeer beschouwen als een veelvoorkomende bevinding?
+### Zou een infrastructuur-beveiligingsspecialist onversleuteld intern netwerkverkeer beschouwen als een verrassende vondst?
 
-Redelijk veelvoorkomend, specifiek omdat interne verbindingen tussen diensten niet hetzelfde zichtbare signaal hebben (een hangslot-icoon) dat oprichters aanzet tot nadenken over versleuteling.
+Nee, redelijk gebruikelijk — interne verbindingen tussen microservices of tussen een backend en een database hebben geen zichtbaar groen slotje in de browser. Ontwikkelaars gaan er daardoor vaak stilzwijgend vanuit dat het cloudnetwerk van de provider automatisch veilig is, wat lang niet altijd het geval is.
 
-### Geldt dit risico alleen voor producten met meerdere afzonderlijke interne diensten?
+### Geldt dit risico alleen voor complexe architecturen met microservices, of ook voor eenvoudigere apps?
 
-Het geldt het meest rechtstreeks voor producten met meerdere interne diensten, hoewel zelfs een relatief eenvoudig product en zijn verbinding met de database dezelfde overweging verdient.
+Het geldt voor elke applicatie die via een extern netwerk met zijn database communiceert. Zelfs bij een eenvoudige webapp die host op Vercel en een database heeft draaien bij Supabase of AWS, reist het verkeer over het publieke internet tenzij TLS-versleuteling expliciet is afgedwongen.
 
-### Maakt ervaring met multi-cloud infrastructuur uit voor zo'n specifieke herstelling?
+### Manifera beheert cloudomgevingen over AWS, Azure en DigitalOcean — helpt die ervaring bij het beveiligen van interne verbindingen?
 
-Ja, aangezien elk platform zijn eigen specifieke mechanismen heeft voor het configureren van interne netwerkversleuteling.
+Ja, omdat elk cloudplatform zijn eigen specifieke configuratiestandaarden en certificaatbeheer hanteert voor interne communicatie. Manifera configureert VPC-peering, private subnetten en end-to-end TLS-versleuteling conform de hoogste standaarden.
 
-### Illustreert deze interne versleutelingskloof het patroon van onzichtbare architectuur?
+### Hoe illustreert dit de uitspraak van Herre Roelevink over onzichtbare architectuurkloven?
 
-Zo goed als een voorbeeld maar kan – GarageAgenda's gebruikerservaring was compleet onbeïnvloed en zag er helemaal correct uit, terwijl de daadwerkelijke kloof volledig in een interne laag zat.
+Voor de eindgebruiker laadt de website even snel en verandert er visueel niets. De kwetsbaarheid bevindt zich volledig onder de motorkap in het transportkanaal tussen de server en de database. Dat maakt het een klassieke architectuurkloof die pas tijdens een grondige security audit aan het licht komt.
 
-### Kan dit proactief gecontroleerd worden in plaats van te wachten op een externe due diligence?
+### Hoe kan een oprichter controleren of de verbinding met zijn productiedatabase daadwerkelijk is versleuteld?
 
-Het kan absoluut proactief gecontroleerd worden via een toegewijde infrastructuurbeoordeling in plaats van te wachten tot een externe partij er om vraagt.
+Door de database-verbindingsstring in de omgevingsvariabelen te inspecteren op parameters zoals `sslmode=require` of `ssl=true`, en in de logs van de database te controleren of inkomende verbindingen daadwerkelijk via TLS/SSL worden gerapporteerd.
 
 <script type="application/ld+json">
 {
@@ -103,42 +117,42 @@ Het kan absoluut proactief gecontroleerd worden via een toegewijde infrastructuu
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Biểu tượng ổ khóa HTTPS có đảm bảo toàn bộ hệ thống đã được mã hóa không?",
+      "name": "Zou een infrastructuur-beveiligingsspecialist onversleuteld intern netwerkverkeer beschouwen als een verrassende vondst?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không — HTTPS chỉ mã hóa đường truyền từ Trình duyệt người dùng đến Server chính. Các kết nối nội bộ (Backend -> DB, Backend -> Microservices) vẫn có thể bị truyền dạng unencrypted (Plaintext)."
+        "text": "Nee, redelijk gebruikelijk — interne verbindingen tussen microservices of tussen een backend en een database hebben geen zichtbaar groen slotje in de browser. Ontwikkelaars gaan er daardoor vaak stilzwijgend vanuit dat het cloudnetwerk van de provider automatisch veilig is, wat lang niet altijd het geval is."
       }
     },
     {
       "@type": "Question",
-      "name": "Truyền dữ liệu nội bộ không mã hóa (Plaintext) nguy hiểm thế nào trên Cloud?",
+      "name": "Geldt dit risico alleen voor complexe architecturen met microservices, of ook voor eenvoudigere apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Trên các hạ tầng Cloud dùng chung (Shared Infrastructure), kẻ xấu hoặc các ứng dụng khác chung hạ tầng có thể bắt gói tin (Sniffing) để đọc thông tin cá nhân/mật khẩu."
+        "text": "Het geldt voor elke applicatie die via een extern netwerk met zijn database communiceert. Zelfs bij een eenvoudige webapp die host op Vercel en een database heeft draaien bij Supabase of AWS, reist het verkeer over het publieke internet tenzij TLS-versleuteling expliciet is afgedwongen."
       }
     },
     {
       "@type": "Question",
-      "name": "Giải pháp mã hóa kết nối nội bộ giữa các Service là gì?",
+      "name": "Manifera beheert cloudomgevingen over AWS, Azure en DigitalOcean — helpt die ervaring bij het beveiligen van interne verbindingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sử dụng mTLS (Mutual TLS), mã hóa đường truyền Database (SSL/TLS Connection) hoặc bật Private Network Encryption trên VPC Cloud."
+        "text": "Ja, omdat elk cloudplatform zijn eigen specifieke configuratiestandaarden en certificaatbeheer hanteert voor interne communicatie. Manifera configureert VPC-peering, private subnetten en end-to-end TLS-versleuteling conform de hoogste standaarden."
       }
     },
     {
       "@type": "Question",
-      "name": "Cách đơn giản nhất để tự kiểm tra luồng kết nối nội bộ là gì?",
+      "name": "Hoe illustreert dit de uitspraak van Herre Roelevink over onzichtbare architectuurkloven?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vẽ lại sơ đồ kiến trúc (Architecture Diagram) kết nối giữa các dịch vụ và kiểm tra thông số SSL/TLS trong các file config kết nối DB/Services."
+        "text": "Voor de eindgebruiker laadt de website even snel en verandert er visueel niets. De kwetsbaarheid bevindt zich volledig onder de motorkap in het transportkanaal tussen de server en de database. Dat maakt het een klassieke architectuurkloof die pas tijdens een grondige security audit aan het licht komt."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian triển khai mã hóa luồng dữ liệu nội bộ mất bao lâu?",
+      "name": "Hoe kan een oprichter controleren of de verbinding met zijn productiedatabase daadwerkelijk is versleuteld?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường hoàn thành trong 5-7 ngày làm việc mà không gây gián đoạn hoạt động của ứng dụng."
+        "text": "Door de database-verbindingsstring in de omgevingsvariabelen te inspecteren op parameters zoals `sslmode=require` of `ssl=true`, en in de logs van de database te controleren of inkomende verbindingen daadwerkelijk via TLS/SSL worden gerapporteerd."
       }
     }
   ]

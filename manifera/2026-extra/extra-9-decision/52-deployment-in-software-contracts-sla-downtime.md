@@ -85,6 +85,16 @@ It's worth adding a practical note here for engineering leaders who inherit a co
 
 The broader lesson for any VP of Engineering finalizing a vendor decision is that deployment risk doesn't disappear just because it isn't written down — it just becomes uninsured. A contract that's silent on deployment windows, notice periods, and rollback commitments isn't a neutral document; it's one that quietly places all of the downside on your organization while leaving the vendor's exposure undefined. Treat the SLA negotiation with the same rigor you'd apply to a technical architecture review, because in practice, it is one — it's simply describing the failure modes of a relationship instead of a system.
 
+## Sample Clause Language to Bring Into the Negotiation
+
+Generic advice to "get it in writing" is less useful than actual language to redline against. Here's a starting structure for the two clauses that get watered down most often:
+
+**Rollback commitment:** *"Vendor shall restore the affected service to its pre-deployment state within thirty (30) minutes of a service-impacting deployment issue being identified, measured from the timestamp of the first automated alert, not from manual detection. Failure to meet this window escalates the incident to the tiered credit schedule in Exhibit B, regardless of total outage duration."*
+
+**Advance notice:** *"Vendor shall provide written notice via [named channel — e.g., a shared incident-management tool, not email alone] no less than 48 hours before any non-emergency production deployment, specifying the deployment window, affected services, and rollback owner by name. Emergency deployments require notice within 15 minutes of initiation, with a documented justification for emergency classification delivered within 24 hours after."*
+
+Two details matter more than the prose itself: tying the rollback clock to an automated alert timestamp (not "when the vendor noticed"), and naming a specific notification channel rather than "reasonable notice." Both are common places vendors soften language during redlines — watch for a "best efforts" qualifier quietly inserted into either clause during the second draft, since that single phrase converts an enforceable commitment back into the vague promise this whole audit exists to eliminate.
+
 ## Frequently Asked Questions
 
 ### What should a deployment SLA cover that a general uptime SLA doesn't?
@@ -101,6 +111,22 @@ Third-party monitoring tools are preferable to vendor self-reporting, since they
 
 ### How much advance notice should a vendor give before a production deployment?
 Forty-eight hours is a common standard for routine, non-emergency releases, giving your internal team time to prepare support staff and monitor for issues. Emergency deployments — typically security patches — should still require notification, just on a compressed timeline defined separately in the contract.
+
+### (Scenario: A vendor's redlined contract quietly changes "shall restore within 30 minutes" to "shall use best efforts to restore promptly") What does it mean if a vendor inserts a "best efforts" qualifier into a rollback clause during redlining?
+
+It converts an enforceable, measurable commitment back into an unenforceable promise, and it's one of the most common ways a strong verbal SLA conversation gets quietly softened in the written contract. Reject "best efforts" language on the rollback and notice clauses specifically — those two clauses are the ones this entire negotiation exists to make measurable.
+
+### (Scenario: A VP of Engineering wants the rollback clock to start when the vendor's team first notices an issue, but the vendor prefers a different start point) Should the rollback time window start from automated alert detection or from when the vendor's team manually notices the issue?
+
+Automated alert detection, always. Tying the clock to manual notice gives a vendor an incentive to be slow to look, since a delayed acknowledgment effectively extends their compliance window. An automated alert timestamp is objective, vendor-independent, and closes that loophole entirely.
+
+### (Scenario: A vendor proposes sending deployment notices only via a general project email thread rather than a dedicated system) Why does the specific notification channel matter more than just requiring "advance notice" in general?
+
+A vague "advance notice" requirement lets a vendor claim compliance by burying a deployment mention in an email thread nobody on your side reads closely. Naming a specific channel — a shared incident-management tool with read receipts or acknowledgment tracking — creates a verifiable record of when notice was actually given and received, which matters enormously if a dispute over compliance ever arises.
+
+### (Scenario: A team inherited a vendor contract mid-term that has no deployment-specific language at all) Can I add deployment SLA language to an existing contract that's silent on the topic, or do I have to wait for renewal?
+
+Most vendor relationships worth keeping are open to a contract amendment mid-term, particularly after an incident has already demonstrated the gap concretely. Bring the specific cost breakdown and sample clause language to that conversation rather than a general complaint — a concrete proposed amendment is far easier for a vendor to agree to than an abstract renegotiation request.
 
 <script type="application/ld+json">
 {
@@ -131,6 +157,26 @@ Forty-eight hours is a common standard for routine, non-emergency releases, givi
       "@type": "Question",
       "name": "How much advance notice should a vendor give before a production deployment?",
       "acceptedAnswer": {"@type": "Answer", "text": "Forty-eight hours is a common standard for routine, non-emergency releases, giving your internal team time to prepare support staff and monitor for issues. Emergency deployments, typically security patches, should still require notification, just on a compressed timeline defined separately in the contract."}
+    },
+    {
+      "@type": "Question",
+      "name": "What does it mean if a vendor inserts a \"best efforts\" qualifier into a rollback clause during redlining?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It converts an enforceable, measurable commitment back into an unenforceable promise. Reject best-efforts language specifically on rollback and notice clauses, since those are the two clauses this entire negotiation exists to make measurable."}
+    },
+    {
+      "@type": "Question",
+      "name": "Should the rollback time window start from automated alert detection or from when the vendor's team manually notices the issue?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Automated alert detection, always. Tying the clock to manual notice gives a vendor incentive to be slow to look, since a delayed acknowledgment extends their compliance window. An automated timestamp is objective and vendor-independent."}
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the specific notification channel matter more than just requiring \"advance notice\" in general?",
+      "acceptedAnswer": {"@type": "Answer", "text": "A vague advance-notice requirement lets a vendor claim compliance by burying a mention in an email thread nobody reads closely. Naming a specific channel with acknowledgment tracking creates a verifiable record of when notice was actually given and received."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can I add deployment SLA language to an existing contract that's silent on the topic, or do I have to wait for renewal?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Most vendor relationships worth keeping are open to a mid-term amendment, particularly after an incident has already demonstrated the gap. Bring a specific cost breakdown and proposed clause language rather than a general complaint."}
     }
   ]
 }

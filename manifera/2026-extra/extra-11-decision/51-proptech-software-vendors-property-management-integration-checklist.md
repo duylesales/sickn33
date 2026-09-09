@@ -90,6 +90,12 @@ If your internal product and engineering team doesn't have the bandwidth to run 
 }
 </script>
 
+## Budgeting the Integration Audit: Time and Cost by Portfolio Size
+
+A proper proptech integration audit — sandbox testing across accounting, IoT, and maintenance systems — isn't free, and Heads of Product routinely underbudget it because the vendor's own sales timeline pressures a faster decision. For a portfolio under 1,000 units with a single ownership entity and no IoT layer, budget 2-3 weeks and one dedicated technical reviewer to validate the core accounting and leasing API claims against a sandbox. For a 1,000-5,000 unit portfolio with smart lock or sensor integration and multiple ownership entities, budget 4-6 weeks and a small cross-functional team (one engineer, one accounting/ops stakeholder) to test trust accounting isolation and IoT latency claims specifically. Above 5,000 units or with a multi-state trust accounting footprint, treat this as a formal technical due diligence engagement, typically 6-10 weeks.
+
+The single highest-leverage line item in that budget is IoT latency testing specifically — of the proptech implementation failures that generate the kind of support ticket spike described in this article's opening example, the access control credential sync gap accounts for a disproportionate share, because it's the integration claim vendors most often describe qualitatively ("real-time," "instant") rather than quantitatively. Insist on a written number — seconds or minutes, not an adjective — and test it in the sandbox before signature, not during the first move-in week after go-live.
+
 ## Frequently Asked Questions
 
 ### What's the biggest integration risk when switching property management software?
@@ -106,6 +112,18 @@ At least two, ideally at a similar unit count and portfolio mix (multifamily ver
 
 ### What API details should be non-negotiable before signing a proptech contract?
 Documented rate limits, integration latency for accounting and access control specifically, data isolation guarantees for multi-entity portfolios, and a committed migration scope covering historical ledger and maintenance data, not just current-state records.
+
+### (Scenario: The portfolio mixes multifamily residential and commercial retail units under one platform) Does the integration checklist change for a mixed multifamily and commercial portfolio?
+Yes — commercial leases typically involve CAM (common area maintenance) reconciliation and percentage rent calculations that residential leasing modules often don't handle natively, so confirm the vendor's commercial lease engine is a genuine module, not a residential lease type repurposed with custom fields, and test CAM reconciliation specifically in the sandbox rather than assuming it works like standard rent processing.
+
+### (Scenario: The proptech vendor routes payments through a third-party processor that could itself change) What happens to the integration if the vendor's underlying payment processor changes?
+Ask the vendor directly, before signing, what contractual and technical obligations they have if they switch payment processors — whether tenant-saved payment methods migrate automatically, whether there's a re-authorization requirement that could disrupt autopay, and who bears the reconciliation risk during the cutover. This is a foreseeable event over a multi-year platform relationship, not a remote edge case.
+
+### (Scenario: Leadership wants to cut over mid-lease-cycle rather than waiting for a natural renewal window) Does the timing of a platform cutover during the lease cycle matter for integration risk?
+Significantly — cutting over mid-cycle means active leases, partial-period rent calculations, and in-flight security deposits all have to migrate correctly rather than starting clean at renewal, which is a materially harder data migration than a renewal-aligned cutover. Where the business timeline allows it, sequencing the cutover to a natural low-activity period (fewer active move-ins/move-outs) reduces migration risk substantially.
+
+### (Scenario: The vendor's pre-built connector for a specific screening provider doesn't support a feature the team needs) What if a vendor's pre-built integration doesn't support a specific feature the team needs?
+Get a specific answer on whether a custom integration is possible against the vendor's API versus only through their pre-built connector, and get a cost and timeline estimate for that custom work before signing — a vendor whose "open API" claim doesn't actually support building around gaps in their pre-built connectors is more locked-down than the sales narrative suggested.
 
 <script type="application/ld+json">
 {
@@ -136,6 +154,26 @@ Documented rate limits, integration latency for accounting and access control sp
       "@type": "Question",
       "name": "What API details should be non-negotiable before signing a proptech contract?",
       "acceptedAnswer": {"@type": "Answer", "text": "Documented rate limits, integration latency for accounting and access control specifically, data isolation guarantees for multi-entity portfolios, and a committed migration scope covering historical ledger and maintenance data, not just current-state records."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does the integration checklist change for a mixed multifamily and commercial portfolio?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes — commercial leases typically involve CAM reconciliation and percentage rent calculations that residential leasing modules often don't handle natively, so confirm the vendor's commercial lease engine is a genuine module and test CAM reconciliation specifically in the sandbox."}
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to the integration if the vendor's underlying payment processor changes?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Ask the vendor directly what contractual and technical obligations they have if they switch processors — whether saved payment methods migrate automatically, whether autopay requires re-authorization, and who bears reconciliation risk during the cutover."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does the timing of a platform cutover during the lease cycle matter for integration risk?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Significantly — cutting over mid-cycle means active leases, partial-period rent, and in-flight deposits all have to migrate correctly rather than starting clean at renewal. Sequencing the cutover to a natural low-activity period reduces migration risk substantially."}
+    },
+    {
+      "@type": "Question",
+      "name": "What if a vendor's pre-built integration doesn't support a specific feature the team needs?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Get a specific answer on whether a custom integration is possible against the vendor's own API versus only through their pre-built connector, and get a cost and timeline estimate for that custom work before signing."}
     }
   ]
 }

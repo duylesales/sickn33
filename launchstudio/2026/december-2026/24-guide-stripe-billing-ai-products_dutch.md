@@ -79,6 +79,13 @@ De oplossing die elk volwaardig productiesysteem vereist, is een periodieke reco
 
 Wanneer reconciliatie een verschil ontdekt, is de juiste oplossing in vrijwel alle gevallen om uw eigen database bij te werken naar de gegevens van Stripe, en niet andersom. Stripe is immers het formele systeem dat registreert wat er daadwerkelijk is afgeschreven en wanneer; uw database fungeert slechts als een snelle lokale cache voor applicatielogica.
 
+### Robuuste Stripe-Webhook Architectuur voor Complexe AI-Monetisatie
+
+Bij op verbruik gebaseerde AI-producten (usage-based billing) kan een haperende webhook-integratie leiden tot omzetverlies of dubbele facturatie. Zorg voor deze vier technische garanties:
+- **Idempotentie via PostgreSQL:** Sla het `event.id` van elke inkomende Stripe-webhook op in een unieke indexed tabel met een `processed_at` timestamp. Als Stripe hetzelfde event opnieuw verstuurt, negeert uw handler dit direct.
+- **Realtime Kredietsaldo-Verificatie:** Verifieer het actuele tokensaldo server-side vóórdat een dure LLM-aanroep wordt gestart. Laat de client nooit zelf bepalen of er voldoende tegoed is.
+- **Geautomatiseerde Dunning & Grace Periods:** Als een periodieke creditcard-incasso mislukt, schakelt het systeem het account niet direct uit, maar activeert het een vriendelijke waarschuwingsbanner en een automatische herpoging na 48 uur.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Het dubbel-afrekenen lek opgelost vóórdat het escaleerde

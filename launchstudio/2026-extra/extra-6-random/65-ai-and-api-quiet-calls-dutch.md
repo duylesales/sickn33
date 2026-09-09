@@ -45,6 +45,17 @@ Een ongedocumenteerde API-aanroep is niet alleen een kostenverrassing. Het is oo
 
 De technici van Manifera — met 11+ jaar productie-ervaring over 160+ projecten — behandelen een volledige audit van uitgaande aanroepen als standaardonderdeel van het overnemen van een door AI gegenereerde codebase, precies omdat oprichters zelf zelden weten dat deze lijst bestaat totdat hij voor hen wordt opgebouwd. Ons team in Singapore voert deze audit regelmatig uit voor oprichters in de regio. Als u wilt weten wat uw eigen app stilletjes aanroept, [bereken dan wat een volledige audit zou kosten](https://launchstudio.eu/nl/#packages), en de praktijk [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera behandelt de bredere technische discipline achter het vroegtijdig opsporen van dit soort dingen.
 
+## Beslissen Wat te Doen Met een API-Aanroep Waar U Zelf Niet voor Heeft Gekozen
+
+Tijdens het prompten voegt een AI-tool met het grootste gemak externe API-aanroepen toe om een gevraagde functionaliteit snel op te lossen. Daardoor ontdekt een oprichter bij inspectie soms tientallen externe diensten in de code waar hij nooit expliciet om heeft gevraagd. Hanteer dit beslissingskader om te bepalen wat er moet gebeuren:
+
+**Behouden (Keep):** Wanneer de externe API een complex, gereguleerd probleem oplost dat u onmogelijk zelf kunt bouwen — zoals adresvalidatie via de officiële Postcode-API, betalingsverwerking via Stripe of geavanceerde fraudedetectie. Zorg er wel voor dat de API-sleutel in een veilige omgevingsvariabele staat en dat er foutafhandeling actief is als de dienst uitvalt.
+
+**Vervangen (Replace):** Wanneer de AI een obscure, onbetrouwbare of extreem dure dienst heeft ingeschakeld voor een taak die evengoed met een gevestigde opensource-standaard kan worden opgelost. Denk aan een dure commerciële PDF-conversie API die eenvoudig kan worden vervangen door een standaardbibliotheek zoals Puppeteer of React-PDF.
+
+**Verwijderen (Remove):** Wanneer de aanroep puur cosmetisch is of overbodige complexiteit introduceert die niet bijdraagt aan uw kernproduct — zoals een externe tracking-pixel of een onnodig zware dataverrijkingsdienst die privacyrisico's met zich meebrengt.
+
+Door bewust de regie te nemen over elke externe aanroep, houdt u uw applicatie licht, betrouwbaar en financieel beheersbaar.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de geocoderingsaanroep die niemand had gekozen
@@ -91,11 +102,46 @@ Ja, samen met de rest van de 120+ engineers van Manifera — audits van uitgaand
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "How common is it for AI-generated code to call APIs a founder never chose?", "acceptedAnswer": { "@type": "Answer", "text": "Common enough that it's a standard item Manifera's engineers check for when taking over an AI-generated codebase, since default templates frequently ship pre-wired to a specific provider for convenience." } },
-    { "@type": "Question", "name": "How would I find these calls in my own codebase?", "acceptedAnswer": { "@type": "Answer", "text": "Search for outbound HTTP requests and third-party SDK imports, then cross-reference every service you find against your actual billing dashboards to catch anything unfamiliar." } },
-    { "@type": "Question", "name": "Why doesn't the AI coding tool disclose these integrations upfront?", "acceptedAnswer": { "@type": "Answer", "text": "Because the integration is implementation detail buried in generated code, useful for making a feature work quickly but rarely surfaced anywhere a founder would naturally see it." } },
-    { "@type": "Question", "name": "Is this only a cost problem, or a security one too?", "acceptedAnswer": { "@type": "Answer", "text": "Both. Beyond the invoice, an unreviewed call is also a dependency running with credentials you may not have checked and sending data to a service you never evaluated." } },
-    { "@type": "Question", "name": "Does Manifera's Singapore team specifically handle this kind of audit?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, alongside the rest of Manifera's 120+ engineers, outbound call audits are a routine part of reviewing AI-generated applications for founders across the region." } }
+    {
+      "@type": "Question",
+      "name": "Hoe vaak komt het voor dat door AI gegenereerde code API's aanroept die een oprichter nooit heeft gekozen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vaak genoeg dat het een standaard controlepunt is voor de technici van Manifera bij het overnemen van een door AI gegenereerde codebase — standaardsjablonen worden vaak uitgeleverd met een vooraf gekozen aanbieder voor het gemak."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik deze aanroepen vinden in mijn eigen codebase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doorzoek op uitgaande HTTP-verzoeken en externe SDK-imports, en kruis vervolgens elke gevonden dienst met uw daadwerkelijke factureringsdashboards om iets onbekends op te sporen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom onthult de AI-codeertool deze integraties niet vooraf?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat de integratie een implementatiedetail is, begraven in gegenereerde code — nuttig om een functie snel te laten werken, maar zelden ergens naar boven komend waar een oprichter dit vanzelf zou zien voordat hij de code rechtstreeks opent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit alleen een kostenprobleem, of ook een beveiligingsprobleem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beide. Naast de factuur is een niet-gecontroleerde aanroep ook een afhankelijkheid die draait met referenties die u misschien niet hebt gecontroleerd, en die gegevens verstuurt naar een dienst die u nooit hebt geëvalueerd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Behandelt het team van Manifera in Singapore specifiek dit soort audit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, samen met de rest van de 120+ engineers van Manifera — audits van uitgaande aanroepen zijn een routineonderdeel van het beoordelen van door AI gegenereerde applicaties voor oprichters in de regio."
+      }
+    }
   ]
 }
 </script>

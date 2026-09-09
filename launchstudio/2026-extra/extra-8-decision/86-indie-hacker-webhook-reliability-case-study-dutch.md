@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een Indie Hacker Voegt Webhook-Betrouwbaarheid Toe Vóór Het Verlies Van Zijn Eerste Betalende Klant"
+Titel: "Case Study: Een Indie Hacker Voegt Webhook-Betrouwbaarheid Toe Vóór Het Verlies Van Zijn Eerste Betalende Klant"
 Trefwoorden: webhook-betrouwbaarheid SaaS, Stripe webhook-afhandeling indie hacker, webhook retry-logica, backend event-verwerking, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Praktijkvoorbeeld: Een Indie Hacker Voegt Webhook-Betrouwbaarheid Toe Vóór Het Verlies Van Zijn Eerste Betalende Klant
+# Case Study: Een Indie Hacker Voegt Webhook-Betrouwbaarheid Toe Vóór Het Verlies Van Zijn Eerste Betalende Klant
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een Indie Hacker Voegt Webhook-Betrouwbaarheid Toe Vóór Het Verlies Van Zijn Eerste Betalende Klant",
+  "headline": "Case Study: Een Indie Hacker Voegt Webhook-Betrouwbaarheid Toe Vóór Het Verlies Van Zijn Eerste Betalende Klant",
   "description": "Hoe een indie developer in Eindhoven een ongeverifieerde, fragiele webhook-listener omvormde tot een idempotente, foutbestendige event-verwerkingspijplijn vóór lancering.",
   "author": {
     "@type": "Organization",

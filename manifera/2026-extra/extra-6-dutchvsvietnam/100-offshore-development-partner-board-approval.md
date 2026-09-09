@@ -74,6 +74,10 @@ A board that tables a proposal pending further information costs a CFO weeks of 
 
 A CFO preparing an offshore development partner proposal should build the continuity, ownership, and governance answers into the proposal from the start, treating them as core to the case rather than a follow-up question to handle if asked. [Talk to Manifera about building a board-ready offshore partnership proposal](https://www.manifera.com/contact-us/).
 
+## Board Meeting Checklist: The Five Documents That Preempt Every Follow-Up
+
+A CFO walking into the board meeting with these five artifacts in hand, rather than referenced verbally, converts a "we'll need to come back to this" into an approval on the spot. First, a signed IP-assignment clause excerpt from the master services agreement, highlighted, showing source code and infrastructure credentials transfer to the client unconditionally — not a summary of the clause, the actual language. Second, the vendor's corporate structure showing the governance entity (Amsterdam, in Manifera's case) as legally separate from the delivery entity, since a board specifically distrusts a single organization marking its own homework. Third, a named escalation contact at the governance layer who is not the account's day-to-day delivery lead — boards ask this question almost every time, and "I'd have to check" reads as a red flag regardless of how good the rest of the proposal is. Fourth, a one-page continuity plan describing what happens to the engagement if any single named individual on the pod departs, since the Mediterráneo case shows this exact gap is what stalls approvals. Fifth, three reference contacts at companies of comparable size who've run the same offshore development company structure for at least 12 months — not vendor-selected testimonials, but contacts the CFO can call unsupervised. A proposal missing any of these five typically survives one round of board questions before getting tabled; a proposal with all five rarely gets a second round at all.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO whose offshore proposal was tabled pending more information) What is a board actually evaluating beyond the financial case?
@@ -96,6 +100,22 @@ Because a board wants to know the company isn't locked into a structure it can't
 
 Based on comparable cases, emergency remediation after a dependency-risk disruption typically costs €80,000-€150,000, on top of the original engagement's sunk cost and roadmap delay.
 
+### (Scenario: CFO wants a concrete pre-meeting checklist rather than general talking points) What specific documents should I physically bring into the board meeting, not just be prepared to discuss?
+
+Bring five: the highlighted IP-assignment clause language itself, proof the governance entity is legally separate from the delivery entity, a named escalation contact outside the day-to-day delivery lead, a one-page continuity plan for individual departure, and three unsupervised reference contacts at comparable companies with 12+ months on the same structure.
+
+### (Scenario: CFO worried the board will ask for a reference call the CFO can't arrange quickly) Should reference contacts be arranged before or during the board meeting?
+
+Before. Line up three reference contacts in advance who are willing to take an unsupervised call, and note their availability in the proposal itself — a board that has to wait a week for a reference contact to be arranged treats that delay as a governance red flag in its own right.
+
+### (Scenario: CFO whose offshore development company vendor pushes back on providing a separate governance contact) What if the vendor says the delivery lead and governance contact are the same person for cost reasons?
+
+That answer confirms the exact dependency risk the board is trying to screen for. An offshore development partner without a governance function independent of delivery cannot provide verifiable oversight, and a CFO should treat that as a structural gap to fix before the board meeting, not a detail to gloss over.
+
+### (Scenario: CFO preparing for a second board meeting after an initial proposal was tabled) The board already tabled our first proposal once, how do we make sure the second attempt doesn't stall again?
+
+Address only the specific gaps the board named the first time, with documents rather than verbal reassurance — the Mediterráneo case turned on producing one missing continuity plan, not on reworking the entire financial case, which the board had already accepted.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +125,11 @@ Based on comparable cases, emergency remediation after a dependency-risk disrupt
     { "@type": "Question", "name": "(Scenario: CFO asked what happens if a key vendor contact departs) How should I answer a board question about dependency on a specific individual?", "acceptedAnswer": { "@type": "Answer", "text": "Point to a documented pod structure with processes that don't depend on any one person's continued involvement." } },
     { "@type": "Question", "name": "(Scenario: board member skeptical of a vendor's governance claims) How can a board verify that a vendor's stated governance layer is genuine rather than marketing language?", "acceptedAnswer": { "@type": "Answer", "text": "Ask who performs independent delivery verification, how it's structured relative to the delivery team, and what happens when it flags a problem." } },
     { "@type": "Question", "name": "(Scenario: CFO comparing an offshore partner to an in-house hiring alternative for the board) Why does reversibility matter alongside cost in this comparison?", "acceptedAnswer": { "@type": "Answer", "text": "A board wants assurance the company isn't locked into a structure it can't unwind if the partnership underperforms." } },
-    { "@type": "Question", "name": "(Scenario: CFO estimating the cost of an unaddressed dependency risk) What does it actually cost when a board-approved engagement's dependency risk materializes?", "acceptedAnswer": { "@type": "Answer", "text": "Emergency remediation after a dependency-risk disruption typically costs €80,000-€150,000, on top of sunk cost and roadmap delay." } }
+    { "@type": "Question", "name": "(Scenario: CFO estimating the cost of an unaddressed dependency risk) What does it actually cost when a board-approved engagement's dependency risk materializes?", "acceptedAnswer": { "@type": "Answer", "text": "Emergency remediation after a dependency-risk disruption typically costs €80,000-€150,000, on top of sunk cost and roadmap delay." } },
+    { "@type": "Question", "name": "(Scenario: CFO wants a concrete pre-meeting checklist rather than general talking points) What specific documents should I physically bring into the board meeting, not just be prepared to discuss?", "acceptedAnswer": { "@type": "Answer", "text": "Bring five: the highlighted IP-assignment clause language, proof the governance entity is legally separate from the delivery entity, a named escalation contact outside the delivery lead, a one-page continuity plan for individual departure, and three unsupervised reference contacts with 12+ months on the same structure." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried the board will ask for a reference call the CFO can't arrange quickly) Should reference contacts be arranged before or during the board meeting?", "acceptedAnswer": { "@type": "Answer", "text": "Before. Line up three reference contacts in advance willing to take an unsupervised call, and note their availability in the proposal, since a delay arranging one reads as a governance red flag in its own right." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose offshore development company vendor pushes back on providing a separate governance contact) What if the vendor says the delivery lead and governance contact are the same person for cost reasons?", "acceptedAnswer": { "@type": "Answer", "text": "That answer confirms the exact dependency risk the board screens for. An offshore development partner without a governance function independent of delivery cannot provide verifiable oversight, and it's a structural gap to fix before the board meeting." } },
+    { "@type": "Question", "name": "(Scenario: CFO preparing for a second board meeting after an initial proposal was tabled) The board already tabled our first proposal once, how do we make sure the second attempt doesn't stall again?", "acceptedAnswer": { "@type": "Answer", "text": "Address only the specific gaps the board named the first time, with documents rather than verbal reassurance. The Mediterráneo case turned on producing one missing continuity plan, not reworking the financial case the board had already accepted." } }
   ]
 }
 </script>

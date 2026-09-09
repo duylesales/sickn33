@@ -69,7 +69,7 @@ Geen van de bovenstaande maatregelen vereist dat u direct een derde voltijdskrac
 
 [Plan een kort gesprek van 15 minuten](https://launchstudio.eu/nl/#contact) om te bespreken hoe een overdrachtsdocument en een toegangsrechten-audit er voor uw specifieke softwarestack uitzien.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Tweepersoons SaaS Kijkt het Risico in de Ogen: Wat Ilse Daadwerkelijk Aantrof
 

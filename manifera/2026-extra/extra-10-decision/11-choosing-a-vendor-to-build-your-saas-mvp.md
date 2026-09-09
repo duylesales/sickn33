@@ -60,6 +60,18 @@ Choose an MVP vendor based on demonstrated technical judgment about what to buil
 
 Manifera builds SaaS MVPs through scoped discovery sprints and capped, milestone-based engagements designed specifically to protect early-stage runway — see our [custom software development](https://www.manifera.com/services/custom-software-development/) page for how we structure a first build to be fundable, not just functional.
 
+## Red Flags in an MVP Vendor Proposal: A Quick Scan
+
+Run every shortlisted proposal against this list before the first call — each item is a specific, checkable fact, not a vibe:
+
+- **No named engineers.** A proposal that references "our team" without naming the actual people who would build your product, or that reserves the right to substitute engineers after signing, is a staffing-risk flag worth a direct question.
+- **Timeline under six weeks for anything with billing.** A genuine Stripe or similar billing integration with subscription logic, webhooks, and dunning handling rarely fits inside six weeks alongside core product work — a faster quote means something is being skipped, not compressed.
+- **Flat rate regardless of scope changes.** A vendor unwilling to discuss how requirement changes affect a capped time-and-materials estimate is signaling inflexibility that will surface as change-order friction later, not cost discipline now.
+- **No mention of environments.** If staging, production, and a rollback plan aren't mentioned unprompted, ask directly — an MVP shipped straight to production with no staging environment is a common, avoidable cause of a broken investor demo.
+- **Portfolio without post-launch outcomes.** A portfolio that shows only "we shipped it" without what happened after — did it scale, did it survive a Series A audit — tells you less than a reference call with a founder eighteen months past their MVP build.
+
+Weight the last item heaviest: a vendor's post-launch track record predicts your MVP's second year far better than their pitch deck predicts its first month.
+
 ## Frequently Asked Questions
 
 ### How long should a SaaS MVP take to build?
@@ -76,6 +88,18 @@ It does not need comprehensive coverage, but core user flows such as signup, the
 
 ### Why does IP ownership matter so much for an early-stage MVP?
 Ambiguous IP assignment at the MVP stage frequently resurfaces as a real, sometimes deal-threatening issue during Series A technical due diligence. Confirming full, unambiguous IP transfer in writing before signing protects a future fundraise from a problem that is far cheaper to prevent at MVP stage than to resolve later.
+
+### (Scenario: vendor quoting four weeks for a full MVP) A vendor is offering to build our entire SaaS MVP, including Stripe billing, in four weeks for a fixed price well under other quotes — what should I ask before saying yes?
+Ask exactly what gets cut to hit four weeks — specifically whether staging environments, basic automated tests on signup and billing, and error handling are included, since a genuine billing integration alongside core product work rarely fits a realistic eight-to-fourteen-week build into a third of the time without dropping fundamentals. Treat the aggressive timeline as a scope-cutting signal to investigate, not a competence signal to celebrate.
+
+### (Scenario: pre-seed founder with a very tight budget) I only have enough runway for one shot at this MVP vendor decision — is a paid pilot phase worth the extra cost when every dollar counts?
+Yes — a two-to-three-week paid pilot on a representative slice of the build costs a small fraction of the full engagement and is the single highest-leverage way to catch a bad working-style or code-quality fit before the bulk of a limited runway is committed. Skipping it to save the pilot's cost risks losing the entire remaining budget to a mismatch discovered too late to correct.
+
+### (Scenario: vendor wants to retain rights to reusable components) Our shortlisted vendor wants to keep ownership of some "reusable framework components" they'll use in our MVP — is that a dealbreaker?
+Treat any vendor-retained IP claim over components used in your product as a serious flag, not a routine negotiating position, since this exact ambiguity is what resurfaces as a deal-threatening issue during Series A technical due diligence. Require full, unambiguous IP transfer in writing before signing, even if it means walking away from an otherwise appealing vendor.
+
+### (Scenario: async-only team spanning a large time zone gap) We're a European founder considering a vendor whose engineers are eight-plus hours away — can an MVP still move at the speed we need with minimal daily overlap?
+An MVP's iteration speed depends on same-day feedback loops, so an overlap window under four hours materially slows the exact clarifying-question cycle that keeps MVP scope decisions moving; four to five hours of overlap is generally the practical minimum. Confirm the specific working-hours overlap explicitly during vendor selection rather than assuming async communication will substitute for it.
 
 <script type="application/ld+json">
 {
@@ -120,6 +144,38 @@ Ambiguous IP assignment at the MVP stage frequently resurfaces as a real, someti
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ambiguous IP assignment at the MVP stage frequently resurfaces as a real, sometimes deal-threatening issue during Series A technical due diligence. Confirming full, unambiguous IP transfer in writing before signing protects a future fundraise from a problem that is far cheaper to prevent at MVP stage than to resolve later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: vendor quoting four weeks for a full MVP) A vendor is offering to build our entire SaaS MVP, including Stripe billing, in four weeks for a fixed price well under other quotes — what should I ask before saying yes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask exactly what gets cut to hit four weeks — specifically whether staging environments, basic automated tests on signup and billing, and error handling are included, since a genuine billing integration alongside core product work rarely fits into a third of a realistic eight-to-fourteen-week build without dropping fundamentals. Treat the aggressive timeline as a scope-cutting signal to investigate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: pre-seed founder with a very tight budget) I only have enough runway for one shot at this MVP vendor decision — is a paid pilot phase worth the extra cost when every dollar counts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — a two-to-three-week paid pilot on a representative slice of the build costs a small fraction of the full engagement and is the single highest-leverage way to catch a bad working-style or code-quality fit before the bulk of a limited runway is committed. Skipping it risks losing the entire remaining budget to a mismatch discovered too late to correct."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: vendor wants to retain rights to reusable components) Our shortlisted vendor wants to keep ownership of some \"reusable framework components\" they'll use in our MVP — is that a dealbreaker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat any vendor-retained IP claim over components used in your product as a serious flag, not a routine negotiating position, since this exact ambiguity is what resurfaces as a deal-threatening issue during Series A technical due diligence. Require full, unambiguous IP transfer in writing before signing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: async-only team spanning a large time zone gap) We're a European founder considering a vendor whose engineers are eight-plus hours away — can an MVP still move at the speed we need with minimal daily overlap?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An MVP's iteration speed depends on same-day feedback loops, so an overlap window under four hours materially slows the clarifying-question cycle that keeps MVP scope decisions moving; four to five hours of overlap is generally the practical minimum. Confirm the specific working-hours overlap explicitly rather than assuming async communication will substitute for it."
       }
     }
   ]

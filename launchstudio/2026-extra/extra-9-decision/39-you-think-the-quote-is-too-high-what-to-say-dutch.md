@@ -134,7 +134,7 @@ Benoem welke "te hoog" voor u van toepassing is. Geef uw budget aan als het een 
 
 **Vraag elke partij die u overweegt om een driestappen-offerte, inclusief het minimale niveau waarmee zij verantwoord durven te lanceren. Wij sturen ons voorstel in exact datzelfde formaat, met het specifieke restrisico per niveau helder vermeld.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Oprichter in Actie: De Offerte van €4.900 Die een Eerste Fase van €1.900 Werd
 

@@ -78,6 +78,13 @@ Oprichters nemen vaak aan dat een modelwissel slechts het aanpassen van één re
 4. Schakel het nieuwe model eerst in voor een klein percentage van het live verkeer (canary rollout), met het oude model als automatische fallback.
 5. Houd de configuratie van het oude model nog enkele weken stand-by voor het geval er zeldzame randgevallen opduiken.
 
+### De Adapter-Architectuur: Hoe U Modellen Wisselt Zonder Downtime
+
+Het bouwen van een model-agnostische architectuur vereist een abstractielaag tussen uw applicatielogica en de specifieke provider-SDK:
+- **Gestandaardiseerde Input/Output Schemas:** Definieer interne TypeScript-interfaces (met Zod) voor alle prompts en gestructureerde JSON-outputs. Uw frontend en database communiceren uitsluitend met deze interne contracten.
+- **Dynamische Provider Routering:** Implementeer een centrale router die bij latency-spikes of downtime van OpenAI automatisch kan terugvallen op Anthropic Claude of een self-hosted Mistral-model op RunPod.
+- **Geautomatiseerde Regressietests:** Richt een CI/CD-evaluatiepipeline in met 50 vaste testcases. Voordat een modelupdate in productie wordt uitgerold, toetst de pipeline of de outputkwaliteit en formaten 100% compatibel blijven.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De 60-dagen deadline overleefd

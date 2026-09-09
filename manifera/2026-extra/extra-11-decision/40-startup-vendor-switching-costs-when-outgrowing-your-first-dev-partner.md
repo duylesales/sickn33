@@ -56,6 +56,24 @@ The right moment to switch is rarely when the current vendor has done something 
 
 Manifera works with growth-stage startups navigating exactly this transition — technical due diligence on an inherited codebase, structured knowledge transfer from an outgoing vendor, and a scaling-stage team built for where the company is now rather than where it started. See our [dedicated team](https://www.manifera.com/about-us/setting-up-your-offshore-team/) model and [our way of working](https://www.manifera.com/about-us/our-way-of-working/) for how we structure a transition, and [reach out](https://www.manifera.com/contact-us/) if your team is weighing this decision now.
 
+## A Simple Scoring Model for the Switch-or-Stay Decision
+
+CTOs who successfully move past the "vague discomfort" stage use some version of a weighted scorecard rather than a gut call. Score each factor 1-5 (5 = severe problem) and weight by relevance to your situation:
+
+- **Velocity gap** (weight 25%): how much slower is current output versus a reasonable estimate of a better-fit team's pace, given your product's current technical demands?
+- **Knowledge concentration** (weight 25%): what fraction of the system's non-obvious behavior exists only in the outgoing vendor's heads, with zero documentation? This factor alone should carry veto power — a score of 5 here justifies switching almost regardless of the other four.
+- **Skill-fit mismatch** (weight 20%): are current technical challenges (scale, security, specialized infrastructure) meaningfully outside what the vendor's team composition was built to handle?
+- **Communication decay** (weight 15%): has response time or directness measurably degraded over the relationship's life?
+- **Single-point-of-failure exposure** (weight 15%): what's the business impact if this vendor becomes unavailable with zero notice?
+
+A weighted total above 3.0 out of 5 is a strong signal to start planning a transition; above 4.0 with a high knowledge-concentration score means the transition should already be underway, not just under discussion. This turns a relationship-inertia decision into a number a CEO or board can act on in one meeting rather than several months of ambient discomfort.
+
+## The Real Timeline and Budget for a Vendor Transition
+
+Startups that plan a vendor switch as a single event rather than a phased program consistently blow through both timeline and budget. A realistic transition for a Series A-stage codebase runs 8-14 weeks end to end: 2-3 weeks of structured knowledge extraction with the outgoing vendor (architecture walkthroughs, documented decision logs, known-issues inventory), 2-4 weeks of incoming-vendor technical due diligence and onboarding, and a 4-8 week parallel-run window where the new team owns increasing scope while the outgoing vendor remains on call for questions. Budget for the parallel-run period alone typically adds 15-25% on top of a single month's normal spend, since you're effectively paying two vendors simultaneously during the highest-risk part of the handover — treat this as a fixed line item, not a contingency.
+
+The velocity dip during transition is real and predictable: expect shipped feature output to drop 30-40% during the first month under the new vendor even with good knowledge transfer, recovering to baseline by month three and typically exceeding the old vendor's pace by month four if the skill-fit mismatch that triggered the switch was genuine. Startups that skip the parallel-run window to save the extra spend see the dip deepen to 50-60% and stretch past month four, because the new team is reverse-engineering intent from code with no one left to ask.
+
 ## Frequently Asked Questions
 
 ### What are the clearest signs a startup has outgrown its first development vendor?
@@ -72,6 +90,18 @@ Generally yes, for a defined handover window rather than a hard cutover. This me
 
 ### What should we verify contractually before initiating a vendor switch?
 Confirm in writing that all IP — source code, infrastructure-as-code, and proprietary tooling — is unambiguously owned by the company and fully transferable, and confirm admin access to every third-party service and repository the outgoing vendor has touched, before announcing the transition internally.
+
+### (Scenario: The outgoing vendor becomes uncooperative once notified of the switch) What's the fallback plan if the outgoing vendor won't participate in a structured handover?
+Lean entirely on the contractual IP and access rights you should have secured beforehand: pull all admin access to repositories and infrastructure immediately, and budget for a longer incoming-vendor discovery phase that reconstructs system behavior from code and logs alone rather than counting on the outgoing team's cooperation.
+
+### (Scenario: Engineering team has strong personal loyalty to the outgoing vendor's individual developers) How do you manage internal resistance when your own team doesn't want to switch?
+Separate relationship quality from capability gap explicitly in the conversation, and bring engineering leads into the incoming vendor's technical due diligence findings so the decision is grounded in evidence rather than felt as a top-down relationship judgment. Where a specific individual contributor is the real asset, consider negotiating their continued involvement rather than treating it as an all-or-nothing vendor swap.
+
+### (Scenario: The original MVP was built on a niche or now-unsupported technology stack) How should switching costs change when the incoming vendor has to take over an unfamiliar or legacy stack?
+Add a stack-fluency factor to the technical due diligence phase before committing, price in extra ramp time beyond the standard 2-4 week window, and treat an incremental rewrite of the highest-risk modules as a realistic outcome rather than a worst case — plan for a longer parallel-run period than you would for a mainstream stack.
+
+### (Scenario: Switching vendors while mid-fundraise or in an active due diligence data room) Is it ever the wrong time to switch vendors — for instance, mid-fundraise?
+Not automatically wrong, but timing matters: starting a switch mid-diligence introduces a knowledge-continuity risk investors will probe directly, so either complete the transition before opening a data room or make the transition plan itself part of the technical due diligence narrative, documented and in progress rather than ambiguous.
 
 <script type="application/ld+json">
 {
@@ -102,6 +132,26 @@ Confirm in writing that all IP — source code, infrastructure-as-code, and prop
       "@type": "Question",
       "name": "What should we verify contractually before initiating a vendor switch?",
       "acceptedAnswer": {"@type": "Answer", "text": "Confirm in writing that all IP — source code, infrastructure-as-code, and proprietary tooling — is unambiguously owned by the company and fully transferable, and confirm admin access to every third-party service and repository the outgoing vendor has touched, before announcing the transition internally."}
+    },
+    {
+      "@type": "Question",
+      "name": "What's the fallback plan if the outgoing vendor won't participate in a structured handover?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Lean entirely on the contractual IP and access rights secured beforehand: pull all admin access to repositories and infrastructure immediately, and budget for a longer incoming-vendor discovery phase that reconstructs system behavior from code and logs alone rather than counting on the outgoing team's cooperation."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do you manage internal resistance when your own team doesn't want to switch?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Separate relationship quality from capability gap explicitly, and bring engineering leads into the incoming vendor's technical due diligence findings so the decision is grounded in evidence rather than felt as a top-down relationship judgment. Where a specific individual contributor is the real asset, consider negotiating their continued involvement rather than treating it as an all-or-nothing vendor swap."}
+    },
+    {
+      "@type": "Question",
+      "name": "How should switching costs change when the incoming vendor has to take over an unfamiliar or legacy stack?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Add a stack-fluency factor to the technical due diligence phase, price in extra ramp time beyond the standard window, and treat an incremental rewrite of the highest-risk modules as a realistic outcome — plan for a longer parallel-run period than you would for a mainstream stack."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is it ever the wrong time to switch vendors — for instance, mid-fundraise?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Not automatically wrong, but timing matters: starting a switch mid-diligence introduces a knowledge-continuity risk investors will probe directly, so either complete the transition before opening a data room or make the transition plan itself part of the technical due diligence narrative."}
     }
   ]
 }

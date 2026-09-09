@@ -39,6 +39,17 @@ Dit is het deel dat een uitdrukking als "AI in uw database" volledig verbergt: h
 
 De technici van Manifera — met 11+ jaar productie-ervaring — hebben precies dit soort probleem behandeld in door AI gegenereerde codebases waar een functie werkte tijdens het testen en vervolgens vastliep onder echte gelijktijdige belasting. Ons Amsterdamse team beoordeelt specifiek databaseschema en indexering als onderdeel van elke beoordeling van productiegereedheid. Als uw eigen app een AI-zoekfunctie heeft die u niet hebt belasttest tegen echte gelijktijdigheid, [bereken dan wat een databasebeoordeling zou kosten](https://launchstudio.eu/nl/#calculator), en de praktijk [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera behandelt de diepere technische discipline die hierbij hoort om dit meteen goed te doen.
 
+## Drie Categorieën van AI-Databasefeatures, Gerangschikt naar Lock-in Risico
+
+Steeds meer cloud-databases prijzen gespecialiseerde 'AI-features' aan — van ingebouwde vector-zoekfuncties tot geautomatiseerde embeddings-generatie rechtstreeks in SQL. Voordat u uw software afhankelijk maakt van deze gemakken, dient u het vendor lock-in risico zorgvuldig af te wegen:
+
+**Laag Risico: Standaard pgvector Extensies.** Gebruikt u de open-source `pgvector`-extensie binnen een standaard PostgreSQL-database (zoals bij Supabase, Neon of AWS RDS)? Dan is uw lock-in nagenoeg nul. Mocht u ooit willen overstappen naar een andere cloudprovider, dan migreert u simpelweg uw PostgreSQL-dump inclusief vectoren zonder dat er ook maar één regel applicatiecode hoeft te veranderen.
+
+**Medium Risico: Propriëtaire Vector-Databases.** Gespecialiseerde diensten zoals Pinecone of Weaviate. Ze bieden uitstekende prestaties en handige dashboards, maar vereisen eigen API's en specifieke query-syntaxis. Een overstap kost enkele dagen engineering om de data-toegangslaag te herschrijven.
+
+**Hoog Risico: Cloud-Eigen Automatische AI-Pijplijnen.** Systemen waarbij de databaseleverancier automatisch embeddings genereert en queries herschrijft via eigen, gesloten AI-services. Als u besluit te vertrekken, verliest u niet alleen uw opslag maar ook uw complete zoek- en interpretatielogica.
+
+Kies waar mogelijk voor open standaarden op een solide PostgreSQL-fundament. Daarmee behoudt u te allen tijde de volledige controle over uw eigen intellectuele eigendom en technologiestrategie.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de zoekfunctie die elke boeking vergrendelde
@@ -85,11 +96,46 @@ Ja, als onderdeel van het bredere team van 120+ engineers is beoordeling van dat
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why does an unindexed vector search cause locking instead of just running slow?", "acceptedAnswer": { "@type": "Answer", "text": "Because the full-table scan required to compare against every stored embedding can hold locks on the table for its duration, blocking other operations trying to read or write the same table concurrently." } },
-    { "@type": "Question", "name": "Is this specific to any one database engine?", "acceptedAnswer": { "@type": "Answer", "text": "The exact locking behavior varies by engine, but the underlying problem, an expensive unindexed operation sharing a table with transactional workload, applies broadly across common production databases." } },
-    { "@type": "Question", "name": "How would I catch this before it happens in production?", "acceptedAnswer": { "@type": "Answer", "text": "Load-test the AI search feature against realistic concurrent traffic on the same tables your core application uses, not in isolation with no competing operations." } },
-    { "@type": "Question", "name": "Should AI search data even share a table with core transactional data?", "acceptedAnswer": { "@type": "Answer", "text": "Often it shouldn't. Separating the two, or at minimum properly indexing the vector column, is usually part of the fix applied in reviews like this." } },
-    { "@type": "Question", "name": "Does Manifera's Amsterdam team specifically handle database performance reviews?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, as part of the broader 120+ engineer team, database schema and indexing review is a standard component of production-readiness assessments for AI-generated applications." } }
+    {
+      "@type": "Question",
+      "name": "Waarom veroorzaakt een niet-geïndexeerde vectorzoekopdracht vergrendeling in plaats van gewoon traagheid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat de volledige tabelscan die nodig is om te vergelijken met elke opgeslagen embedding, locks op de tabel kan vasthouden voor de duur ervan, waardoor andere bewerkingen worden geblokkeerd die dezelfde tabel gelijktijdig proberen te lezen of te schrijven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit specifiek voor één database-engine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het exacte vergrendelingsgedrag verschilt per engine, maar het onderliggende probleem — een kostbare, niet-geïndexeerde bewerking die een tabel deelt met transactionele workload — geldt breed voor gangbare productiedatabases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik dit opsporen voordat het in productie gebeurt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Belasttest de AI-zoekfunctie tegen realistisch gelijktijdig verkeer op dezelfde tabellen die uw kernapplicatie gebruikt, niet geïsoleerd zonder concurrerende bewerkingen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zou AI-zoekdata überhaupt een tabel moeten delen met kern-transactionele gegevens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vaak niet. De twee scheiden, of op zijn minst de vectorkolom correct indexeren, maakt meestal deel uit van de oplossing die wordt toegepast in beoordelingen zoals deze."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Behandelt het Amsterdamse team van Manifera specifiek databaseprestatiebeoordelingen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, als onderdeel van het bredere team van 120+ engineers is beoordeling van databaseschema en indexering een standaardonderdeel van beoordelingen van productiegereedheid voor door AI gegenereerde applicaties."
+      }
+    }
   ]
 }
 </script>

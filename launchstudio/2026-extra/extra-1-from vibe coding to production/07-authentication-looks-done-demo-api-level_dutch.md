@@ -7,6 +7,31 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Authenticatie Ziet Er Klaar Uit In De Demo. Is Het Klaar Op API-niveau?
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Authenticatie Ziet Er Klaar Uit In De Demo. Is Het Klaar Op API-niveau?",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/authentication-looks-done-demo-api-level"
+  }
+}
+</script>
+
+
 Jouw inlogscherm weigert verkeerde wachtwoorden. Het stuurt niet-geauthenticeerde gebruikers weg van beveiligde pagina's. Naar elke zichtbare maatstaf werkt authenticatie. Niets daarvan vertelt je of de API eronder — het deel dat de adresbalk van een browser je nooit toont, het deel dat je data daadwerkelijk opslaat en levert — dezelfde regels afdwingt, of dat het simpelweg vertrouwt op wat de frontend zegt over wie het vraagt en wat ze mogen zien.
 
 ## Het Gat Tussen Frontend-poortwachterschap En Echte Toegangscontrole
@@ -36,6 +61,20 @@ De echte test: gebruik een geldig maar onvoldoende bevoegd account, en probeer e
 [LaunchStudio](https://launchstudio.eu/nl/) verifieert authenticatie op precies dit niveau als kernonderdeel van elke Launch Ready-opdracht — rechtstreeks tegen de API testen, niet alleen bevestigen dat het inlogscherm werkt — gesteund door Manifera's cybersecuritygeïnformeerde engineeringpraktijken.
 
 [Laat je API-niveau-toegangscontrole daadwerkelijk testen](https://launchstudio.eu/nl/#contact) — een inlogscherm dat werkt is niet dezelfde bewering als een API die beveiligd is.
+
+## Verder Dan IDOR: Andere API-Kwetsbaarheden Die Controle Vereisen
+
+Insecure Direct Object References (IDOR) en ontbrekende rolcontroles zijn de meest voorkomende authenticatiegaten op API-niveau, maar een grondige inspectie toetst tevens verwante categorieën die aan dezelfde fundamentele test falen: verifieert de backend zelfstandig wat de frontend simpelweg aanneemt?
+
+**Mass Assignment (Onbedoelde veldtoewijzing)**: Wanneer een API-endpoint een compleet JSON-object van de client accepteert en rechtstreeks naar de database schrijft zonder expliciete 'allowlist' van toegestane velden, kan een slimme gebruiker velden manipuleren die nooit voor hem bedoeld waren — zoals `role: "admin"` of `is_verified: true` — simpelweg door deze parameters handmatig aan het verzoek toe te voegen.
+
+**Ontbrekende Rate Limiting**: Zonder limiet op het aantal aanroepen per account of IP-adres blijft een endpoint kwetsbaar voor misbruik, zoals brute-force wachtwoordaanvallen op `/api/auth` of geautomatiseerde datadump-aanroepen.
+
+**Te gedetailleerde foutmeldingen (Verbose Errors)**: Een API die interne stacktraces, database-tabellen of SQL-fouten naar de browser retourneert, geeft een potentiële aanvaller een blauwdruk van je interne systeemarchitectuur.
+
+**Onvoldoende inputvalidatie aan de systeemgrens**: Er blindelings op vertrouwen dat inkomende data voldoet aan het verwachte formaat omdat het frontend-invoerveld restricties had, is een gevaarlijke aanname. Elke parameter moet server-side opnieuw gevalideerd worden op type, lengte en tekenset.
+
+[LaunchStudio](https://launchstudio.eu/nl/) toetst je API-laag rechtstreeks via geautomatiseerde beveiligingstests, zodat de integriteit van je data gegarandeerd is, ongeacht wat de frontend doet.
 
 ## Echt voorbeeld
 
@@ -77,3 +116,52 @@ Het is een breed voorkomend gat bij AI-gegenereerde backends in het algemeen, aa
 ### Als mijn app geen gevoelige data verwerkt, is dit dan nog steeds urgent om te controleren?
 
 Het is sowieso de moeite waard om te controleren, hoewel urgentie direct schaalt met datagevoeligheid — een app die financiële of gezondheidsdata verwerkt, zoals die van Milan, rechtvaardigt materieel hogere prioriteit dan een laag-risico intern tool, hoewel het onderliggende architecturale gat de moeite waard is om te dichten in elke productie-app voordat echte gebruikers ervan afhankelijk zijn, aangezien de fix hetzelfde is ongeacht urgentie en alleen maar verstorender wordt om later achteraf toe te passen.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe is dit anders dan gewoon zorgen dat mijn inlogpagina veilig is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een veilige inlogpagina controleert wie erin komt. Het zegt niets over of de API erachter onafhankelijk permissies verifieert bij elk volgend verzoek — Milans inlogpagina was volledig veilig, goed gebouwd, en functioneerde precies zoals bedoeld, en zijn datatoegang was dat niet, wat precies het onderscheid is dat deze uitleg aanpakt en waarom de twee volledig apart beoordeeld moeten worden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik zelf op dit gat testen zonder technische beveiligingsexpertise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Basale tests (proberen data van een ander testaccount te benaderen door een ID in een verzoek te wijzigen, met browser developer tools) kunnen voor de hand liggende gevallen aan het licht brengen met minimale technische opzet, hoewel een grondige review — zoals degene die Milans gat vond — doorgaans het soort systematisch, adversarieel testen over elk endpoint vereist dat een toegewijde beveiligingsgerichte review biedt, in plaats van een handvol handmatige steekproeven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heeft dit type kwetsbaarheid een naam die ik zou moeten kennen, om er verder onderzoek naar te doen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Deze categorie wordt gewoonlijk aangeduid als een insecure direct object reference (IDOR)-kwetsbaarheid, naast bredere gaten in rolgebaseerde toegangscontrole — beide zijn goed gedocumenteerde, extreem veelvoorkomende categorieën in webapplicatiebeveiliging, die consequent voorkomen op industriële kwetsbaarheidsclassificatielijsten bij zowel traditioneel gecodeerde als AI-gegenereerde applicaties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit gat waarschijnlijker bij apps gebouwd met bepaalde AI-codeertools dan andere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is een breed voorkomend gat bij AI-gegenereerde backends in het algemeen, aangezien AI-tools de neiging hebben het toegangspatroon te implementeren dat de demo correct laat werken onder coöperatief, bedoeld gebruik, zonder onafhankelijk elk verzoek server-side te verifiëren tenzij een founder of ontwikkelaar de tool expliciet en specifiek instrueert die verificatie toe te voegen — wat vereist te weten dat je erom moet vragen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Als mijn app geen gevoelige data verwerkt, is dit dan nog steeds urgent om te controleren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is sowieso de moeite waard om te controleren, hoewel urgentie direct schaalt met datagevoeligheid — een app die financiële of gezondheidsdata verwerkt, zoals die van Milan, rechtvaardigt materieel hogere prioriteit dan een laag-risico intern tool, hoewel het onderliggende architecturale gat de moeite waard is om te dichten in elke productie-app voordat echte gebruikers ervan afhankelijk zijn, aangezien de fix hetzelfde is ongeacht urgentie en alleen maar verstorender wordt om later achteraf toe te passen."
+      }
+    }
+  ]
+}
+</script>

@@ -80,7 +80,7 @@ Als uw eigen import uw eigen export vlekkeloos kan inlezen, heeft u niet alleen 
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in productiekwaliteit software) bouwen we achtergrond-exports, veilige tijdelijke tokens en AVG-conforme dataportabiliteit standaard in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw dataveiligheid met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw software direct aanbestedingsklaar is.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De Export Waar Geen Enkele Bijlage in Zat
 

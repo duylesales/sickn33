@@ -89,6 +89,10 @@ Schedule a technical scoping session with our Amsterdam team to have your specif
 }
 </script>
 
+## Sequencing a Phased Migration: A Module Selection Framework
+
+Which module goes first is a technical decision with a specific answer, not a negotiable preference. Score each module on two axes: business risk (revenue impact and customer visibility if the cutover fails) and technical learning value (how representative the module's data model and integration pattern are of the rest of the system). The first module to migrate should score low on business risk and high on learning value — a reporting dashboard or an internal admin tool rather than the checkout flow — so the team validates the routing layer, dual-write mechanics, and rollback procedure on something recoverable before touching revenue-critical code. Budget the observation window per module realistically: two weeks for low-traffic internal modules, four to six weeks for anything touching payments or customer data, and align that window to your actual seasonality — never schedule a payments-module cutover into a peak revenue period regardless of how ready the code looks. A realistic sequencing plan for a system with 10-15 identifiable modules typically front-loads two to three low-risk validation modules in the first quarter, then moves to medium-risk modules, and schedules the two or three highest-risk, most revenue-critical modules last, once the routing layer and rollback procedure have already been proven under real production load rather than in a staging environment.
+
 ## Frequently Asked Questions
 
 ### Why do vendors push big bang rewrites even though they are riskier?
@@ -105,6 +109,18 @@ Tie payment milestones to each successfully validated module cutover rather than
 
 ### What is the single best due diligence question to ask a legacy migration vendor?
 Ask them to describe the worst thing that went wrong on their last migration and what happened next. Vendors with real phased-migration experience answer this readily, because their worst-case incidents are contained rather than full outages.
+
+### (Scenario: Your board wants a hard go-live date announced publicly before a module sequencing plan even exists) How do you push back without losing their confidence?
+Reframe the announcement around the first validated module's target date rather than a single system-wide cutover date, since a phased approach genuinely has no single "go-live" moment to announce. Present the board with the module selection framework and let them see that a realistic first-quarter milestone is more credible than a distant big-bang date nobody has actually scoped.
+
+### (Scenario: A vendor proposes a strangler fig pattern but can't clearly explain their dual-write consistency strategy when pressed) What does that gap actually tell you?
+It tells you they've adopted the vocabulary of phased migration without the technical mechanics behind it — dual-write and dual-read consistency is precisely where phased migrations technically succeed or fail, and a vendor without a specific answer is likely to relabel a big bang rewrite as "phased" once real work begins.
+
+### (Scenario: Six months into a twenty-four-month phased migration, the vendor's lead architect leaves) What should your contract have already required for this exact situation?
+A knowledge-transfer and continuity clause requiring documented architecture decisions updated continuously, not just at handover, plus a defined replacement timeline with a mandatory overlap period — with added urgency here since a phased migration's sequencing logic often lives disproportionately in one architect's head.
+
+### (Scenario: You're comparing two phased-migration vendor quotes — one proposes four large milestones, the other twelve smaller ones) Which structure better protects you?
+Generally the twelve-milestone structure, since more granular milestones mean smaller individual payment exposure, more frequent validated checkpoints, and earlier detection if a specific module is struggling — a four-milestone structure compresses too much risk into each payment gate.
 
 <script type="application/ld+json">
 {
@@ -149,6 +165,38 @@ Ask them to describe the worst thing that went wrong on their last migration and
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ask them to describe the worst thing that went wrong on their last migration and what happened next. Vendors with real phased-migration experience answer this readily, because their worst-case incidents are contained rather than full outages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Your board wants a hard go-live date announced publicly before a module sequencing plan even exists) How do you push back without losing their confidence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reframe the announcement around the first validated module's target date rather than a single system-wide cutover date, since a phased approach genuinely has no single go-live moment to announce."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor proposes a strangler fig pattern but can't clearly explain their dual-write consistency strategy when pressed) What does that gap actually tell you?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It tells you they've adopted the vocabulary of phased migration without the technical mechanics behind it, and are likely to relabel a big bang rewrite as phased once real work begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Six months into a twenty-four-month phased migration, the vendor's lead architect leaves) What should your contract have already required for this exact situation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A knowledge-transfer and continuity clause requiring documented architecture decisions updated continuously, plus a defined replacement timeline with a mandatory overlap period."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: You're comparing two phased-migration vendor quotes — one proposes four large milestones, the other twelve smaller ones) Which structure better protects you?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally the twelve-milestone structure, since more granular milestones mean smaller individual payment exposure and earlier detection if a specific module is struggling."
       }
     }
   ]

@@ -89,7 +89,7 @@ Wijzigingen handmatig intypen in de SQL-console van uw hostingprovider is een re
 - Staging en productie gaan geruisloos uit elkaar lopen.
 - Niemand weet over zes maanden meer wie welke kolom heeft toegevoegd en waarom.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De Index Die het Systeem Negen Minuten Platlegde
 

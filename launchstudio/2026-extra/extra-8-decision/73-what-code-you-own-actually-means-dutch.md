@@ -74,8 +74,7 @@ Controleer deze punten voordat u een ontwikkeltraject afsluit — met LaunchStud
 
 [Vraag elke ontwikkelpartner om aan deze checklist te voldoen voordat u tekent](https://launchstudio.eu/nl/#contact) — en als ze dat niet kunnen, vraag dan waarom.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Eigendom Dat Alleen Op Papier Bestond
 
 Iris Willems, een voormalig managementconsultant in Amsterdam, liet haar eerste SaaS-product bouwen door een freelance ontwikkelaar die haar verzekerde dat zij de code bezat. Toen de freelancer drie maanden onbeschikbaar werd (nieuwe fulltime baan), probeerde Iris een andere ontwikkelaar in te huren om functies toe te voegen. De problemen kwamen meteen aan het licht.

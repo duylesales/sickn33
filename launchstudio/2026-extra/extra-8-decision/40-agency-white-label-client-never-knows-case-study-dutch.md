@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een Klant van een Bureau Komt Nooit te Weten Dat LaunchStudio Betrokken Was"
+Titel: "Case Study: Een Klant van een Bureau Komt Nooit te Weten Dat LaunchStudio Betrokken Was"
 Trefwoorden: white-label engineeringpartner, bureau-onderaanneming hardening, freelance bureau backendhulp, white-label productieklaarheid, vertrouwen bureau-klant, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: Bureau / Freelancer (White-Label Partner)
 ---
 
-# Praktijkvoorbeeld: Een Klant van een Bureau Komt Nooit te Weten Dat LaunchStudio Betrokken Was
+# Case Study: Een Klant van een Bureau Komt Nooit te Weten Dat LaunchStudio Betrokken Was
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een Klant van een Bureau Komt Nooit te Weten Dat LaunchStudio Betrokken Was",
+  "headline": "Case Study: Een Klant van een Bureau Komt Nooit te Weten Dat LaunchStudio Betrokken Was",
   "description": "Een bureau dat AI-gebouwde MVP's aan klanten verkoopt, heeft een specifieke eis waaraan de meeste engineeringleveranciers niet kunnen voldoen: totale onzichtbaarheid. Een praktijkvoorbeeld van hoe een ontwerpbureau LaunchStudio inzette als stille, white-label hardeningspartner om productieklaar werk onder eigen naam te leveren, zonder dat de klant ooit wist dat een derde partij betrokken was.",
   "author": {
     "@type": "Organization",
@@ -57,8 +57,7 @@ Zodra een bureau heeft bevestigd dat een hardeningspartner onzichtbaarheid betro
 
 [Bespreek een white-label regeling voor uw klantenbestand](https://launchstudio.eu/nl/#contact) — de meeste bureaus merken dat het proces naadloos past in hoe ze hun werk al leveren.
 
-## Real example
-
+## Echt voorbeeld
 ### Een Bureau in de Praktijk: Een Klant Die Nooit Iets Hoefde Te Weten
 
 Merijn Talsma runt Talsma Digital, een klein productontwerpbureau in Amsterdam dat AI-gegenereerde MVP's bouwt voor beginnende klanten met Lovable, en positioneert het kernaanbod van het bureau als "van idee tot lanceerklaar product" onder één all-inclusive traject. Toen een klant uit de fitnessbranche FitPlan Pro in opdracht gaf, een AI-coachingapp die klanten koppelt aan gepersonaliseerde trainingsschema's op basis van apparatuur en doelen, leverde Merijns team een gepolijst, functioneel prototype ruim binnen de deadline van de klant — maar Merijn wist, uit ervaring met twee eerdere projecten, dat het interne team van Talsma Digital niet uitgerust was om FitPlan Pro's betalingsintegratie en gebruikersdata-isolatie goed te verifiëren voordat de klant publiekelijk zou lanceren.

@@ -7,6 +7,31 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Van Vibe Coding Naar Productie: Een Checklist Voor De Technische Indie Hacker
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Van Vibe Coding Naar Productie: Een Checklist Voor De Technische Indie Hacker",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/technical-indie-hackers-checklist-vibe-coding-to-production"
+  }
+}
+</script>
+
+
 De meeste productiegereedheidscontent neemt nul technische achtergrond aan en blijft daardoor doelbewust generiek. Deze neemt het tegenovergestelde aan: je kunt jouw eigen codebase lezen, een terminalcommando draaien, en een technisch antwoord op zijn merites beoordelen. Wat volgt is geen lijst met concepten om te begrijpen — het is een lijst met specifieke, uitvoerbare verificaties, met de daadwerkelijke test voor elk.
 
 ## Geheimen: Draai De Scan, Neem Niet Aan
@@ -53,6 +78,14 @@ Het organiserende principe over deze hele checklist is hetzelfde: elk item is ge
 
 [Laat precies deze checklist draaien tegen jouw specifieke codebase](https://launchstudio.eu/nl/#calculator) — een checklist die je zelf uitvoert kost echte tijd; een die je delegeert kost dagen.
 
+## Waarom Elk Punt Hier een Test Is, Geen Overtuiging
+
+Het leidende principe achter deze gehele checklist voor technische indie hackers is consistent: elk item is geformuleerd als een actieve handeling waarvan je het concrete resultaat observeert, niet als een bewering die je controleert door je eigen code te lezen en te oordelen of het er 'goed uitziet'.
+
+Dit onderscheid is van vitaal belang voor ontwikkelaars. Het herlezen van je eigen code bevestigt immers vrijwel altijd de oorspronkelijke aannames waarmee je de logica hebt geschreven. Alleen een actieve, vijandige test — een ongeautoriseerde curl-aanroep, een geforceerde netwerkonderbreking, een stress-test met honderden gelijktijdige threads — dwingt het systeem om te bewijzen dat het daadwerkelijk bestand is tegen productieomstandigheden.
+
+[LaunchStudio](https://launchstudio.eu/nl/) voert onafhankelijke technische audits uit die aannames vervangen door harde, verifieerbare testresultaten.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: de helft van de checklist zelf draaien, de rest delegeren
@@ -91,3 +124,52 @@ De gelijktijdigheids- en autorisatietests specifiek, aangezien beide vereisen do
 ### Garandeert het doorstaan van elk item op deze checklist dat mijn app geen resterende productierisico's heeft?
 
 Geen enkele checklist garandeert nul risico — deze dekt de meest voorkomende, goed gedocumenteerde risicocategorieën in AI-gegenereerde applicaties specifiek, maar productspecifieke overwegingen (regelgevende vereisten, ongebruikelijke datagevoeligheid, unieke architecturale keuzes) kunnen risico's introduceren buiten de scope van deze algemene checklist.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Als ik technisch elk item op deze checklist zelf kan draaien, is er dan nog steeds waarde in het laten verifiëren door iemand anders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Er blijft enige waarde over zelfs voor een zeer technische founder, specifiek rond items die adversarieel testen van jouw eigen logica vereisen — zoals Niels' casus toont, draagt het reviewen van jouw eigen autorisatie-implementatie een structurele blinde vlek ongeacht technische vaardigheid, aangezien je geneigd bent te testen of code doet wat je bedoelde in plaats van te zoeken naar wat je niet bedoelde."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt het doorgaans voor een technische founder om deze volledige checklist handmatig te draaien?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sterk variabel afhankelijk van jouw stack en hoeveel gaten gevonden worden die fixes vereisen in plaats van alleen verificatie, maar de verificatiestappen alleen — zonder fixes — kosten doorgaans een paar uur voor een founder die al comfortabel is met zijn eigen codebase en basale API-testtools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het redelijk om deze checklist te splitsen, sommige items zelf te draaien en andere te delegeren, zoals Niels deed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — dit is een gebruikelijke en redelijke aanpak voor technische founders met beperkte tijd, en LaunchStudio scopet opdrachten net zo gemakkelijk rond dit soort gedeeltelijke checklist als een volledige."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welk item op deze checklist wordt het vaakst overgeslagen, zelfs door technische founders die de rest proberen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De gelijktijdigheids- en autorisatietests specifiek, aangezien beide vereisen doelbewust een adversarieel scenario te construeren tegen jouw eigen logica in plaats van te bevestigen dat jouw logica werkt zoals bedoeld — een mentale verschuiving die zelfs technische, zorgvuldige founders vaak niet natuurlijk maken zonder specifieke aansporing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Garandeert het doorstaan van elk item op deze checklist dat mijn app geen resterende productierisico's heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Geen enkele checklist garandeert nul risico — deze dekt de meest voorkomende, goed gedocumenteerde risicocategorieën in AI-gegenereerde applicaties specifiek, maar productspecifieke overwegingen (regelgevende vereisten, ongebruikelijke datagevoeligheid, unieke architecturale keuzes) kunnen risico's introduceren buiten de scope van deze algemene checklist."
+      }
+    }
+  ]
+}
+</script>

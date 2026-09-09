@@ -114,7 +114,7 @@ Wat deze stappen niet kunnen oplossen, zijn de fundamentele structurele keuzes. 
 
 Vaste prijs, afgesproken na een korte technische intake vóórdat iemand een regel code aanraakt — [vertel ons wat u heeft gebouwd](https://launchstudio.eu/nl/#contact) en u ontvangt nog deze week een helder voorstel qua kosten en doorlooptijd.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Twee functies, één ontbrekend filter, elfhonderd datarecords op straat
 

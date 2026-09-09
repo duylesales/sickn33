@@ -75,6 +75,13 @@ Het bouwen van deze hybride architectuur is de kernactiviteit van [LaunchStudio]
 3. **Backend-Bouw:** Wij bouwen een dedicated API-laag (Node.js/Python) voor uw database (Supabase/PostgreSQL) die alle authenticatie, betalingswebhooks (Stripe/Mollie) en rate limits afhandelt.
 4. **Contract-Validatie:** Wij implementeren Zod-schema's op elk endpoint. Als de AI-frontend per ongeluk een ongeldig verzoek stuurt, wijst de backend dit netjes af zonder dat de database beschadigd raakt.
 
+### Kwaliteitsborging en Schaalbaarheid voor Mobiele en Web-AI
+
+Het bouwen van applicaties die AI integreren vereist grondige validatie op toestelniveau en servercapaciteit:
+1. **Netwerklatentie en Offline Caching:** Mobiele gebruikers hebben te maken met wisselende verbindingen. We implementeren lokale vector-caching en achtergrondsynchronisatie, zodat kernfuncties ook bij zwak bereik vlot reageren.
+2. **Geoptimaliseerde Batterij- en Dataconsumptie:** Zware inferentietaken worden intelligent overgedragen aan geoptimaliseerde cloud-endpoints om oververhitting en batterijleegloop van smartphones te voorkomen.
+3. **Continue Monitoring van App Store Richtlijnen:** We zorgen dat alle AI-functies en content-generatie strikt voldoen aan de nieuwste compliance- en privacyregels van Apple en Google.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: Het Marketingdashboard Dat Voortdurend Data Verloor

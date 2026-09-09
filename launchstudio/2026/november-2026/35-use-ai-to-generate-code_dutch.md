@@ -72,6 +72,13 @@ Het opzetten van een IDP en het configureren van strenge CI/CD-pipelines vereist
 2. **Geautomatiseerde Beveiligingspijplijnen:** Inrichten van GitHub Actions die AI-hallucinaties, hardcoded sleutels en kwetsbare dependencies automatisch blokkeren.
 3. **Infrastructure as Code (IaC):** Beheer van alle cloud-resources via Terraform voor een voorspelbare en veilige cloudomgeving.
 
+### Best Practices voor het Veilig Inzetten van AI-Gegenereerde Code
+
+Om te profiteren van de snelheid van AI zonder in te leveren op kwaliteit, hanteert LaunchStudio een beproefd stappenplan:
+1. **Strikte Type-Safety:** Alle gegenereerde functies worden voorzien van sluitende TypeScript-definities om runtime-fouten te voorkomen.
+2. **End-to-End Testautomatisering:** We bouwen geautomatiseerde teststraten die kritieke gebruikersstromen controleren bij elke codewijziging.
+3. **Regelmatige Refactoring van Complexe Functies:** We breken lange, onoverzichtelijke AI-functies op in herbruikbare, modulaire componenten.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De Engineering Director Die Voortwoekerende Shadow IT Aanbanden Legde

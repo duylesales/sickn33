@@ -87,6 +87,13 @@ Een partner die geen eenduidig antwoord kan geven op de vraag wie uw vaste conta
 ### Vraag om Hard Bewijs, Niet Alleen om Mooie Antwoorden
 Vraag een potentiële partner altijd om iets concreets: een bestaande klantreferentie die u persoonlijk kunt spreken over de communicatie, een voorbeeld van hoe een eerdere projectspecificatie eruitzag, of een praktijkvoorbeeld van hoe een scopewijziging werd afgehandeld. Een volwassen partij met jarenlange ervaring heeft deze voorbeelden direct klaarliggen.
 
+### De Drie Gouden Regels voor Succesvol Offshore Engineering Management
+
+Om offshore softwareontwikkeling succesvol te laten renderen zonder kwaliteitsverlies, hanteren ervaren CTO's drie harde procesprincipes:
+- **Minimaal Vier Uur Synchrone Overlap:** Zorg dat het offshore team minimaal een halve werkdag synchroon werkt met uw Europese tijdzone voor dagelijkse standups, code reviews en realtime unblocking via Slack.
+- **Strikte Documentatie van Acceptatiecriteria:** Delegeer nooit taken met vage beschrijvingen; elke taak bevat duidelijke user stories, API-contracten en meetbare testcriteria.
+- **Geautomatiseerde Kwaliteitsbarrières:** Geen enkele regel code wordt gemerged zonder goedkeuring van de CI/CD-pipeline en een gedocumenteerde peer review door een senior lead.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Het white-label succes van een freelance ontwerpstudio

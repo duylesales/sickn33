@@ -119,7 +119,7 @@ Dat is exact het vraagstuk waar [LaunchStudio](https://launchstudio.eu/nl/) voor
 
 Vertel ons wat u heeft gebouwd en waar uw twijfels liggen — u ontvangt binnen één werkdag een inhoudelijke reactie van een senior engineer, geen algemene brochure.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Het opschoonscript dat op de verkeerde database werd uitgevoerd
 

@@ -59,8 +59,7 @@ Point-in-time recovery is alleen zo goed als het operationele draaiboek erachter
 
 [Bescherm uw klantdata met een geautomatiseerde back-upaudit](https://launchstudio.eu/nl/#contact) — de meeste audits leggen minstens één gat bloot tussen wat oprichters denken dat is geback-upt en wat daadwerkelijk het geval is.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een Indie Hacker in de Praktijk: Herstellen van Een Foute Migratie in 4 Minuten
 
 Diederik Vos, een indie developer in Breda, bouwde FactuurVlug — een geautomatiseerde facturatietool die door 450 Nederlandse freelance fotografen wordt gebruikt. Terwijl hij een nieuwe multi-valutafunctie doorvoerde via een ruw SQL-script in Supabase, veroorzaakte een syntaxfout per ongeluk het verwijderen van de foreign-key-relatie, wat een cascade van `DELETE`-acties over 3 maanden aan facturatieregels teweegbracht.

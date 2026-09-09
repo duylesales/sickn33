@@ -67,7 +67,7 @@ De markt rondom "AI development services" staat momenteel bol van vage marketing
 
 [Beschrijf uw project en de huidige fase, en wij laten u binnen één werkdag weten of LaunchStudio past of waar u beter terechtkunt](https://launchstudio.eu/nl/#contact) — ook als het eerlijke antwoord luidt dat u ons op dit moment niet nodig heeft.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Oprichter Doorgestuurd Vóórdat Hij een Euro Uitgaf: Yusuf's Medische Idee
 

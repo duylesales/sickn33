@@ -89,7 +89,7 @@ Vier functies maken uw webhook-systeem zelfvoorzienend:
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste B2B-integraties) bouwen we enterprise-grade webhook-infrastructuur met HMAC-handtekeningen, Redis-queues en SSRF-beveiliging standaard in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw webhook-architectuur met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw data betrouwbaar arriveert.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Het Trage Endpoint Dat de Complete Orderstraat Platlegde
 

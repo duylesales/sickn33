@@ -67,6 +67,12 @@ Manifera scopes maintenance contracts with the same rigor as the original build 
 
 If you are evaluating vendors for an upcoming launch, or renegotiating a maintenance contract that has left you exposed, [get a scoped maintenance proposal from our Amsterdam team](https://www.manifera.com/contact-us/) and compare it line by line against what you currently have signed.
 
+## The Maintenance Termination and Vendor-Switch Clause Nobody Reads
+
+One clause determines how trapped you are if a maintenance relationship sours, and it is almost never scrutinized at signing: the termination and knowledge-transfer terms. Confirm the contract specifies a notice period for either party to end the maintenance agreement — typically 30-60 days is reasonable — and, separately, what documentation and access you retain regardless of who initiates the termination: full repository access, an up-to-date architecture and dependency document, and a list of all third-party API keys and accounts tied to the app that need to transfer to a new maintainer.
+
+Without this clause explicit and in writing, switching maintenance vendors becomes a multi-week discovery project even when the underlying code is fine, simply because institutional knowledge about which OS quirks were already patched, which SDK versions are pinned for a reason, and which API keys belong to which service lives only in the outgoing vendor's head. Ask directly: "If we terminated this maintenance contract next month, what exactly would we receive, and how many days' notice does your side require to hand it over cleanly?" A vendor with a real answer, including a stated handover timeline (commonly 2-3 weeks for a clean transition), is protecting your long-term flexibility; a vendor who has never been asked this question before is revealing that their maintenance relationships are not designed to end gracefully.
+
 ## Frequently Asked Questions
 
 ### What should a mobile app maintenance contract typically cost?

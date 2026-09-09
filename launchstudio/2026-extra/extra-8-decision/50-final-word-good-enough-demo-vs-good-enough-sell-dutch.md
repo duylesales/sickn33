@@ -61,8 +61,7 @@ De oprichters die dit goed aanpakken, wachten niet tot ze per ongeluk ontdekken 
 
 [Vertel ons aan welke kant van de drempel u staat](https://launchstudio.eu/nl/#contact) — de meeste oprichters voelen het antwoord al aan; de scoping call maakt het concreet genoeg om naar te handelen.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Drempel Herkennen Voordat U Er Blindelings Overheen Gaat
 
 Bibi Constant, voormalig inkoper in de detailhandel en nu oprichter in Den Helder, bouwde ShelfReady, een AI-tool die geoptimaliseerde schapindeling- en bevoorradingsplannen genereert voor kleine zelfstandige winkels, met Lovable. ShelfReady had iedere winkelier die Bibi persoonlijk demonstreerde onder de indruk gemaakt, en ze had een wachtlijst van een dozijn winkels die klaarstonden om te betalen zodra ze die zou openen.

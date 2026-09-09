@@ -61,18 +61,20 @@ Manifera's beoordelingen van uitrolconfiguratie worden uitgevoerd door het engin
 
 [Stuur ons de link van uw prototype — we beoordelen het gratis](https://launchstudio.eu/nl/#contact).
 
-## De zes headers die het waard zijn om daadwerkelijk te kennen
+## De Zes Headers Die Daadwerkelijk de Moeite Waard Zijn om te Kennen
 
-Beveiligingsheaders zijn niet één enkele instelling – ze zijn een kleine familie van gerelateerde maar afzonderlijke beschermingen, die elk een andere, specifieke kloof sluiten.
+Beveiligingsheaders zijn geen enkele overkoepelende instelling — het is een hechte familie van gerelateerde maar afzonderlijke beschermingsmechanismen, die elk een specifiek gat dichten. Weten wat elk van hen op hoofdlijnen doet, maakt een beveiligingsrapport aanzienlijk minder mysterieus.
 
-**Een snelle referentie voor de headers die het meest uitmaken:**
+**Een handig overzicht van de headers die er het meest toe doen:**
 
-1. **HSTS (Strict-Transport-Security)** — vertelt de browser om altijd HTTPS te gebruiken voor uw domein.
-2. **Content-Security-Policy** — beperkt uit welke bronnen van scripts, stijlen en andere inhoud uw pagina's mogen laden.
-3. **X-Frame-Options** — voorkomt dat uw site geladen wordt in een frame op iemand anders zijn pagina (voorkomt clickjacking).
-4. **X-Content-Type-Options** — stopt browsers in het proberen te raden van het bestandstype.
-5. **Referrer-Policy** — beheert hoeveel informatie over de vorige pagina wordt meestuurd.
-6. **Permissions-Policy** — beperkt expliciet welke browserfuncties (camera, microfoon, locatie) gebruikt mogen worden.
+1. **HSTS (Strict-Transport-Security)** — vertelt de browser om in de toekomst altijd uitsluitend HTTPS voor uw domein te gebruiken. Dit voorkomt een downgrade naar een onversleutelde verbinding, zelfs als een gebruiker per ongeluk op een gewone HTTP-link klikt.
+2. **Content-Security-Policy (CSP)** — beperkt strikt vanuit welke bronnen scripts, stijlen en andere inhoud op uw pagina's mogen worden geladen. Dit beperkt de schade die een geslaagde scriptinjectie (zoals een opgeslagen XSS-aanval) daadwerkelijk kan aanrichten enorm.
+3. **X-Frame-Options** — voorkomt dat uw website kan worden ingesloten in een frame (iframe) op de pagina van iemand anders. Dit sluit een hele klasse van aanvallen genaamd clickjacking uit, waarbij een kwaadwillende site uw pagina onzichtbaar over de hare heen legt om gebruikers te misleiden iets aan te klikken wat ze niet bedoelden.
+4. **X-Content-Type-Options** — stopt browsers ermee om het bestandstype te raden op basis van de inhoud ('MIME sniffing') in plaats van te vertrouwen op het opgegeven type. Dit sluit een smalle maar reële route af waarbij een browser kan worden misleid om een bestand uit te voeren als een ander, gevaarlijker type dan bedoeld.
+5. **Referrer-Policy** — beheert hoeveel informatie over de pagina waar een bezoeker vandaan kwam wordt meegestuurd wanneer diegene op een link naar een andere site klikt. Dit voorkomt het per ongeluk lekken van gevoelige URL's (zoals links voor het opnieuw instellen van een wachtwoord) naar de serverlogs van derden.
+6. **Permissions-Policy** — legt expliciete restricties op aan welke browserfuncties (zoals camera, microfoon of geolocatie) uw pagina's überhaupt mogen opvragen. Dit vermindert het risico aanzienlijk als een scriptinjectie elders ooit zou proberen toegang tot die sensoren te forceren.
+
+Geen van deze headers vereist dat een oprichter ze handmatig configureert met diepgaande technische kennis van elk afzonderlijk detail — de waarde van een professionele review is juist de bevestiging dat alle zes correct en consistent zijn ingesteld voor uw specifieke hostingconfiguratie, zonder dat u zelf expert hoeft te worden in de exacte syntaxis van elke header.
 
 ## Echt voorbeeld
 
@@ -93,25 +95,25 @@ Een IT-kundig familielid van een partnersalon, die de configuratie van de site u
 
 ## Veelgestelde vragen
 
-### Zou een hosting- of infrastructuurspecialist ontbrekende beveiligingsheaders beschouwen als een ernstige kloof?
+### Zou een hosting- of infrastructurespecialist ontbrekende beveiligingsheaders beschouwen als een ernstig gat of als een klein advies voor best practices?
 
-Ernstig genoeg om routinematig te worden opgenomen in standaard checklists voor productiegereedheid in de hele industrie.
+Ernstig genoeg dat het standaard wordt opgenomen in vrijwel elke professionele checklist voor productiegereedheid in de IT-sector. Het is misschien niet de meest catastrofale categorie kwetsbaarheden die een audit aan het licht brengt, maar het is een algemeen erkende bescherming met minimale implementatie-inspanning die vrijwel elk professioneel uitrolproces standaard en routinematig toepast.
 
-### Kan een oprichter de headerconfiguratie van zijn eigen site controleren zonder technische hulp?
+### Kan een oprichter de headerconfiguratie van zijn eigen website controleren zonder technische hulp?
 
-Ja, redelijk eenvoudig – er bestaan gratis online tools voor het scannen van beveiligingsheaders specifiek voor dit doel.
+Ja, redelijk eenvoudig — er bestaan gratis online analysetools voor beveiligingsheaders die speciaal voor dit doel zijn ontwikkeld en alleen de URL van een website nodig hebben om een rapport te genereren. Het correct interpreteren en daadwerkelijk veilig herstellen van wat het rapport signaleert, is echter precies het punt waarop deskundige technische hulp doorgaans noodzakelijk wordt.
 
-### Verandert het specifieke hostingplatform hoe deze headers geconfigureerd worden?
+### Maakt het specifieke hostingplatform (zoals Vercel, AWS of DigitalOcean) uit voor hoe deze headers worden geconfigureerd?
 
-Ja, aanzienlijk – elk platform heeft zijn eigen specifieke configuratiemechanisme voor het instellen van respons-headers.
+Ja, aanzienlijk — elk platform heeft zijn eigen specifieke configuratiemechanisme voor het instellen van HTTP-responsheaders. Dat is precies waarom de platformonafhankelijke ervaring van Manifera met Vercel, AWS, Azure en DigitalOcean van cruciaal belang is om dit correct te implementeren, ongeacht welk platform de AI-tool van de oprichter toevallig heeft gekozen.
 
-### Vereist het herstellen van ontbrekende beveiligingsheaders enige uitvaltijd (downtime)?
+### Herre Roelevink heeft gesproken over de architectuurlaag als de plek waar de meeste gaten zich schuilhouden — passen implementatieheaders in die beschrijving?
 
-Correct geïmplementeerd vereisen wijzigingen in headerconfiguratie typisch geen uitvaltijd.
+Ja, exact — headers vormen een beslissing op configuratie- en infrastructuurniveau in plaats van een zichtbare functionaliteit in de gebruikersinterface. Het is typisch het soort onderliggende laag dat volgens Roelevink door AI-native oprichters zelden spontaan wordt gecontroleerd omdat het buiten het gezichtsveld van de code-prompt valt.
 
-### Kan een Content-Security-Policy header onderdelen van een site breken als deze te strikt is geconfigureerd?
+### Vereist het herstellen van ontbrekende beveiligingsheaders downtime of het risico dat de live website breekt?
 
-Ja, en dit is precies waarom het de header is die het meest de moeite waard is om door een professional te laten configureren.
+Mits correct geïmplementeerd vereisen wijzigingen in de headerconfiguratie doorgaans geen enkele downtime en beïnvloeden ze de werking van de site voor legitieme gebruikers niet. Wel is het grondig testen van de wijzigingen op het live domein een standaard en noodzakelijke stap om te bevestigen dat externe bronnen (zoals embedded fonts of analytics) niet per ongeluk worden geblokkeerd.
 
 <script type="application/ld+json">
 {
@@ -120,50 +122,42 @@ Ja, en dit is precies waarom het de header is die het meest de moeite waard is o
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Thiếu Security Headers có phải là lỗi nghiêm trọng không?",
+      "name": "Zou een hosting- of infrastructurespecialist ontbrekende beveiligingsheaders beschouwen als een ernstig gat of als een klein advies voor best practices?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Đủ nghiêm trọng để luôn có mặt trong checklist chuẩn bị đưa ứng dụng lên chạy thực tế (production readiness)."
+        "text": "Ernstig genoeg dat het standaard wordt opgenomen in vrijwel elke professionele checklist voor productiegereedheid in de IT-sector. Het is misschien niet de meest catastrofale categorie kwetsbaarheden die een audit aan het licht brengt, maar het is een algemeen erkende bescherming met minimale implementatie-inspanning die vrijwel elk professioneel uitrolproces standaard en routinematig toepast."
       }
     },
     {
       "@type": "Question",
-      "name": "Founder có thể tự kiểm tra Security Headers của web mình không?",
+      "name": "Kan een oprichter de headerconfiguratie van zijn eigen website controleren zonder technische hulp?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, chỉ cần dùng các công cụ scan online miễn phí (như securityheaders.com) nhập URL vào là có báo cáo ngay."
+        "text": "Ja, redelijk eenvoudig — er bestaan gratis online analysetools voor beveiligingsheaders die speciaal voor dit doel zijn ontwikkeld en alleen de URL van een website nodig hebben om een rapport te genereren. Het correct interpreteren en daadwerkelijk veilig herstellen van wat het rapport signaleert, is echter precies het punt waarop deskundige technische hulp doorgaans noodzakelijk wordt."
       }
     },
     {
       "@type": "Question",
-      "name": "Các nền tảng hosting khác nhau (Vercel, AWS, DigitalOcean) có cách cấu hình header khác nhau không?",
+      "name": "Maakt het specifieke hostingplatform (zoals Vercel, AWS of DigitalOcean) uit voor hoe deze headers worden geconfigureerd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, mỗi nền tảng có file cấu hình riêng (next.config.js, _headers, nginx.conf), cần kinh nghiệm đa nền tảng để sửa đúng."
+        "text": "Ja, aanzienlijk — elk platform heeft zijn eigen specifieke configuratiemechanisme voor het instellen van HTTP-responsheaders. Dat is precies waarom de platformonafhankelijke ervaring van Manifera met Vercel, AWS, Azure en DigitalOcean van cruciaal belang is om dit correct te implementeren, ongeacht welk platform de AI-tool van de oprichter toevallig heeft gekozen."
       }
     },
     {
       "@type": "Question",
-      "name": "Cấu hình Security Headers có làm ngưng hoạt động (downtime) của trang web không?",
+      "name": "Herre Roelevink heeft gesproken over de architectuurlaag als de plek waar de meeste gaten zich schuilhouden — passen implementatieheaders in die beschrijving?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, việc thêm bớt header phản hồi diễn ra tức thì và không gây ngắt kết nối của người dùng."
+        "text": "Ja, exact — headers vormen een beslissing op configuratie- en infrastructuurniveau in plaats van een zichtbare functionaliteit in de gebruikersinterface. Het is typisch het soort onderliggende laag dat volgens Roelevink door AI-native oprichters zelden spontaan wordt gecontroleerd omdat het buiten het gezichtsveld van de code-prompt valt."
       }
     },
     {
       "@type": "Question",
-      "name": "Cấu hình Content-Security-Policy (CSP) quá chặt có làm hỏng web không?",
+      "name": "Vereist het herstellen van ontbrekende beveiligingsheaders downtime of het risico dat de live website breekt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, nếu CSP quá nghiêm ngặt nó sẽ chặn các script, font hoặc widget bên thứ 3 hợp lệ mà trang web đang sử dụng."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Chỉ cần HTTPS thôi có đủ bảo mật cho ứng dụng web chưa?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Chưa đủ — HTTPS chỉ mã hóa đường truyền, cần HSTS và các security header khác để chống hạ cấp kết nối và nhúng iframe độc hại."
+        "text": "Mits correct geïmplementeerd vereisen wijzigingen in de headerconfiguratie doorgaans geen enkele downtime en beïnvloeden ze de werking van de site voor legitieme gebruikers niet. Wel is het grondig testen van de wijzigingen op het live domein een standaard en noodzakelijke stap om te bevestigen dat externe bronnen (zoals embedded fonts of analytics) niet per ongeluk worden geblokkeerd."
       }
     }
   ]

@@ -49,6 +49,23 @@ Dat is de eigenlijke waarde van een menselijke engineer die door AI gegenereerde
 
 Onze technici in Amsterdam doen dit soort eerste-leesreviews regelmatig, en het patroon van zes bestanden op rij is een van de meest voorkomende dingen die ze vinden. LaunchStudio wordt gesteund door Manifera — vertrouwd door klanten als Vodafone, TNO en CFLW — en Manifera's [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) past dezelfde standaard van "lees het één keer goed" toe op elk project. Wilt u dat een engineer daadwerkelijk uw eigen codebase doorleest, dan kunt u [uw project beschrijven en wij reageren binnen één werkdag](https://launchstudio.eu/nl/#contact).
 
+## Verder Dan Hardcoded Sleutels: De Andere Patronen Die een Eerste Inspectie Ontdekt
+
+Het vinden van een hardcoded Stripe-sleutel in een frontend-bestand is de bekendste beginnersfout, maar een ervaren engineer let bij een initiële code-inspectie op veel subtielere, gevaarlijkere patronen:
+
+**1. Het 'Frontend-as-Security' Patroon.** Een formulierknop voor beheerders wordt verborgen met `if (!user.isAdmin) return null;`, maar het onderliggende API-endpoint aan de serverzijde controleert helemaal niet of de aanvrager een beheerder is. Iedereen die een direct POST-verzoek stuurt, kan de beheeractie uitvoeren.
+
+**2. 'N+1 Query' Problemen in Lussen.** De code haalt een lijst van honderd projecten op, en voert vervolgens in een lus voor elk afzonderlijk project een nieuwe databasequery uit om de gebruikersnaam op te halen. In een lokale demo met drie records merkt niemand dit; in productie met honderd records bevriest de database door honderdeen opeenvolgende aanroepen.
+
+**3. Het Vergeten van Transacties bij Meervoudige Schrijfacties.** Er wordt geld afgeschreven van Account A, maar voordat het wordt bijgeschreven op Account B treedt er een time-out op. Zonder database-transacties (`db.$transaction`) raakt het financiële saldo onherstelbaar uit balans.
+
+**4. Onveilige 'CORS Wildcards'.** De server staat ingesteld op `Access-Control-Allow-Origin: *`, waardoor kwaadaardige websites die in dezelfde browser van het slachtoffer openstaan, stiekem verzoeken kunnen afvuren naar uw API.
+
+**5. Stille Foutonderdrukking (Empty Catch Blocks).** De AI heeft een fout opgelost door de code te omringen met `try { ... } catch (e) {}` zonder de fout te loggen of te melden. Hierdoor lijkt alles ogenschijnlijk te werken, terwijl cruciale achtergrondtaken geruisloos mislukken.
+
+Het opsporen en elimineren van deze patronen is exact het werk waarin een gespecialiseerde productiestudio het verschil maakt tussen permanente kopzorgen en een zorgeloze nachtrust.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: zes bestanden, één patroon, geen kwade opzet
@@ -93,11 +110,46 @@ Doorgaans niet. Een gerichte review en herstel, zoals die voor MonteurApps zes b
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why do AI code tools hardcode API keys instead of using proper secrets management?", "acceptedAnswer": { "@type": "Answer", "text": "AI tools tend to solve the immediate request in the most direct way available, and hardcoding a key is often the fastest path to a working integration, without the tool distinguishing between what works in a demo and what's safe in production." } },
-    { "@type": "Question", "name": "Is finding hardcoded keys in a codebase a sign the founder did something wrong?", "acceptedAnswer": { "@type": "Answer", "text": "No. It's a near-universal pattern in AI-generated codebases built through iterative feature requests, and it reflects how the tool works, not a lapse in the founder's judgment." } },
-    { "@type": "Question", "name": "What does Manifera's team look for in a first read of AI-generated code?", "acceptedAnswer": { "@type": "Answer", "text": "Common starting points include hardcoded credentials, direct database queries built from unvalidated user input, and missing permission checks between what different users are allowed to see or do." } },
-    { "@type": "Question", "name": "How is exposed API key remediation different from just deleting the key from the file?", "acceptedAnswer": { "@type": "Answer", "text": "Because the key may already be compromised once it's been committed to a repository, remediation typically includes rotating the key with the third-party provider, not just removing it from the code." } },
-    { "@type": "Question", "name": "Does this kind of review require pausing active development on the product?", "acceptedAnswer": { "@type": "Answer", "text": "Not typically. A focused review and remediation, like the one for MonteurApp's six files, can usually run alongside continued feature work rather than blocking it." } }
+    {
+      "@type": "Question",
+      "name": "Waarom hardcoderen AI-codeertools API-sleutels in plaats van goed geheimenbeheer te gebruiken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI-tools neigen ertoe het onmiddellijke verzoek op de meest directe manier op te lossen die beschikbaar is, en een sleutel hardcoderen is vaak het snelste pad naar een werkende integratie, zonder dat de tool onderscheid maakt tussen wat werkt in een demo en wat veilig is in productie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het vinden van hardgecodeerde sleutels in een codebase een teken dat de oprichter iets fout heeft gedaan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Het is een bijna universeel patroon in door AI gegenereerde codebases die zijn opgebouwd via iteratieve featureverzoeken, en het weerspiegelt hoe de tool werkt, niet een fout in het oordeel van de oprichter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar zoekt het team van Manifera naar bij een eerste doorlezing van door AI gegenereerde code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Veelvoorkomende startpunten zijn hardgecodeerde inloggegevens, directe databasequery's opgebouwd uit ongevalideerde gebruikersinvoer, en ontbrekende permissiecontroles tussen wat verschillende gebruikers mogen zien of doen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verschilt het herstel van een blootgestelde API-sleutel van simpelweg de sleutel uit het bestand verwijderen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat de sleutel al gecompromitteerd kan zijn zodra hij is vastgelegd in een repository, omvat herstel doorgaans het roteren van de sleutel bij de externe leverancier, niet alleen het verwijderen ervan uit de code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vereist dit soort review dat de actieve ontwikkeling van het product wordt gepauzeerd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doorgaans niet. Een gerichte review en herstel, zoals die voor MonteurApps zes bestanden, kan meestal naast doorlopend featurewerk plaatsvinden in plaats van dat te blokkeren."
+      }
+    }
   ]
 }
 </script>

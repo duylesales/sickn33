@@ -103,20 +103,53 @@ Ja. Elke app die namen, e-mails of betalingsdetails opslaat is onderworpen aan d
 ### Werkt u met oprichters gevestigd in kleinere steden zoals Hoogezand?
 Ja, LaunchStudio werkt met oprichters in de gehele provincie Groningen en in heel Nederland, en niet alleen in grote steden.
 
-### Wat gebeurt er daadwerkelijk als mijn app een databreach heeft?
-Onder de AVG wordt van organisaties doorgaans verwacht dat ze de Autoriteit Persoonsgegevens binnen 72 uur informeren na het bekend worden van een lek dat een risico vormt voor individuen. Dat tijdsbestek is veel eenvoudiger te halen als uw app al de logging en toegangsrecords klaar heeft om snel te bepalen wat er werd blootgesteld en wie het treft — wat precies het fundament is dat een op privacy gerichte beoordeling inricht voordat het nodig is.
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Wat zijn de meest voorkomende AI-privacyproblemen in door oprichters gebouwde apps?", "acceptedAnswer": { "@type": "Answer", "text": "Onversleutelde persoonsgegevens, voorspelbare URL's die data van anderen tonen, en het ontbreken van tools voor data-export of verwijdering onder de AVG." } },
-    { "@type": "Question", "name": "Biedt LaunchStudio juridisch advies over de AVG?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, LaunchStudio behandelt de technische architectuur (toegangsbeheer, versleuteling, export/verwijdering) en raadt aan dit te combineren met juridisch advies." } },
-    { "@type": "Question", "name": "Wie leidt LaunchStudio en wat is hun achtergrond?", "acceptedAnswer": { "@type": "Answer", "text": "Herre Roelevink is CEO van LaunchStudio en Managing Director van Manifera, met een achtergrond in cybersecurity waaronder werk aan Dark Web Monitor met TNO." } },
-    { "@type": "Question", "name": "Is dit relevant voor oprichters buiten gevoelige sectoren zoals de gezondheidszorg?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, elke app die namen, e-mails of betalingsdetails opslaat is onderworpen aan de AVG." } },
-    { "@type": "Question", "name": "Werkt u met oprichters gevestigd in kleinere steden zoals Hoogezand?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, LaunchStudio werkt met oprichters in de gehele provincie Groningen en in heel Nederland." } },
-    { "@type": "Question", "name": "Wat gebeurt er daadwerkelijk als mijn app een databreach heeft?", "acceptedAnswer": { "@type": "Answer", "text": "Organisaties moeten de Autoriteit Persoonsgegevens binnen 72 uur informeren bij een lek dat risico vormt, wat veel eenvoudiger is met deugdelijke logging vooraf." } }
+    {
+      "@type": "Question",
+      "name": "Wat zijn de meest voorkomende AI-privacyproblemen in door oprichters gebouwde apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Onversleutelde persoonsgegevens, voorspelbare URL's die data van anderen tonen, en het ontbreken van tools voor data-export of verwijdering onder de AVG."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Biedt LaunchStudio juridisch advies over de AVG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, LaunchStudio behandelt de technische architectuur (toegangsbeheer, versleuteling, export/verwijdering) en raadt aan dit te combineren met juridisch advies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie leidt LaunchStudio en wat is hun achtergrond?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Herre Roelevink is CEO van LaunchStudio en Managing Director van Manifera, met een achtergrond in cybersecurity waaronder werk aan Dark Web Monitor met TNO."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit relevant voor oprichters buiten gevoelige sectoren zoals de gezondheidszorg?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, elke app die namen, e-mails of betalingsdetails opslaat is onderworpen aan de AVG."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werkt u met oprichters gevestigd in kleinere steden zoals Hoogezand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, LaunchStudio werkt met oprichters in de gehele provincie Groningen en in heel Nederland."
+      }
+    }
   ]
 }
 </script>

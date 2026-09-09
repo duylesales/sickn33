@@ -57,6 +57,18 @@ Manifera's beveiligingswerk voor SSRF en backend-integraties wordt geleverd via 
 
 [Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
+## Verder Dan het Blokkeren van Interne IP's: Een Completere SSRF-Verdediging
+
+Het beperken van een "ophalen via URL"-functie tot uitsluitend openbare bestemmingen klinkt in theorie eenvoudig. Een oppervlakkige implementatie — die enkel controleert of het ingevoerde adres eruitziet als een lokaal IP-adres — ziet echter verschillende manieren over het hoofd waarop die restrictie in de praktijk gemakkelijk wordt omzeild:
+
+- **DNS Rebinding** — een domeinnaam die op het moment van de initiële validatiecheck netjes verwijst naar een legitiem openbaar IP-adres, maar die direct daarna wordt omgezet naar een intern IP-adres op het moment dat het werkelijke netwerkverzoek plaatsvindt. Hierdoor glipt het verzoek voorbij een validatie die slechts eenmaal aan het begin werd uitgevoerd.
+- **Omleidingsketens (Redirect Chains)** — een URL die zelf naar een legitiem openbaar adres verwijst, maar waarvan de webserver antwoordt met een HTTP 302-omleiding naar een intern netwerkadres. Dit omzeilt elke controle die alleen de oorspronkelijk ingevoerde URL inspecteert en redirects blind volgt.
+- **Het specifieke cloud-metadata-eindpunt** — het bekende, vaste interne IP-adres (zoals `169.254.169.254`) dat veel cloudproviders gebruiken om tijdelijke inloggegevens en serverconfiguraties aan actieve instances te serveren. Het expliciet blokkeren van dit adres op naam is essentieel bovenop algemene IP-reeksregels, juist omdat het zo'n extreem waardevol doelwit is voor aanvallers.
+- **Alternatieve adresnotaties** — hetzelfde interne IP-adres geschreven in decimale, octale of hexadecimale notatie in plaats van het standaard formaat met punten kan eenvoudig voorbij een eenvoudig validatiescript glippen dat slechts op één specifieke tekenreeks zoekt.
+- **Niet-HTTP protocollen** — een functie die bedoeld is om afbeeldingen op te halen via HTTP of HTTPS, maar die niet expliciet afdwingt welk schema is toegestaan, kan soms worden gericht op lokale bestandspaden (`file://`) of andere interne protocollen.
+
+Een werkelijk robuuste verdediging valideert de bestemming op het exacte moment van het uiteindelijke netwerkverzoek, blokkeert cloud-metadata-adressen expliciet op naam en dwingt uitsluitend veilige HTTP/HTTPS-protocollen af. Dit is precies het soort gelaagde bescherming dat een algemene prompt aan een AI-codeerassistent zelden oplevert, omdat elk van deze vijf omzeilingstechnieken een specifieke, specialistische kwetsbaarheid betreft.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De afbeeldingsimport die te ver reikte
@@ -76,25 +88,25 @@ Een IT-contactpersoon van een partner die VoorraadVast beoordeelde voorafgaand a
 
 ## Veelgestelde vragen
 
-### Zou een specialist in backend-beveiliging SSRF beschouwen als een veelvoorkomende bevinding in met AI gegenereerde code?
+### Wat maakt Server-Side Request Forgery (SSRF) zo'n gevaarlijke kwetsbaarheid voor cloud-gehoste applicaties?
 
-Zeker – het ophalen van een bron vanaf een URL die de gebruiker verstrekt is zo'n natuurlijke functiebeschrijving dat het vaak wordt ingebouwd zonder de vereiste extra beveiligingslaag.
+Omdat de kwetsbaarheid de cloudserver zelf dwingt om netwerkverzoeken uit te voeren. Hierdoor kan een aanvaller toegang krijgen tot interne netwerkbronnen, databases en met name de interne cloud-metadata-service (zoals AWS of Google Cloud metadata), die tijdelijke beveiligingstokens en geheimen kan bevatten.
 
-### Geldt dit risico alleen voor functies die expliciet worden beschreven als "importeren vanaf URL"?
+### Waarom volstaat het controleren op 'localhost' of '127.0.0.1' niet als volledige SSRF-bescherming?
 
-Het verschijnt in elke functie waar gebruikersinvoer een uitgaand verzoek aan de serverzijde beïnvloedt (webhook callback-URL's, PDF-generatiediensten).
+Omdat aanvallers interne adressen kunnen maskeren met behulp van alternatieve notaties (zoals decimale IP's), DNS-rebinding (waarbij een domein tijdens de controle naar een openbaar IP wijst maar tijdens de aanroep naar een intern IP), of HTTP-omleidingen (redirects) die de initiële validatie omzeilen.
 
-### Maakt ervaring met enterprise-integraties uit voor een kleinere magazijntool?
+### Heeft Manifera ervaring met het beveiligen van microservices en API-gateways tegen SSRF?
 
-Ja, rechtstreeks – het specifieke validatiepatroon is identiek, ongeacht de grootte van de organisatie.
+Ja, bij complexe cloudarchitecturen ontwerpt Manifera strikte egress-regels, dedicated proxy-services en fijnmazige netwerksegmentatie om te waarborgen dat applicatieservers uitsluitend gevalideerde externe verzoeken kunnen initiëren en nooit interne services kunnen bevragen.
 
-### Past een SSRF-kloof in het kader van architectuur boven loutere functionaliteit?
+### Zou een AI-tool zoals Cursor of Lovable automatisch weten hoe SSRF effectief moet worden afgedekt?
 
-Heel goed – de importfunctie werkte exact zoals beschreven. Het ontbrekende stuk was een architecturale beslissing over wat de server wel en niet mocht bereiken.
+Nee, tenzij de prompt expliciet vraagt om een robuuste SSRF-beveiliging inclusief DNS-resolutievalidatie, redirect-beperkingen en metadata-blokkades. Zonder die specifieke instructies genereert de tool doorgaans een eenvoudige `fetch()`-aanroep die direct vatbaar is voor SSRF.
 
-### Biedt het blokkeren van voor de hand liggende interne IP-bereiken voldoende bescherming?
+### Is het uitschakelen van URL-ophaling de enige manier om SSRF 100% te voorkomen?
 
-Slechts gedeeltelijk – DNS-rebinding, omleidingsketens, en de cloud-metadata-endpoint vereisen allemaal aanvullende, afzonderlijke afhandeling.
+Nee, als de functie essentieel is (bijvoorbeeld voor het ophalen van previews of avatars), kan deze veilig worden geïmplementeerd door verzoeken via een geïsoleerde proxy te routeren, DNS-resolutie vóór het verzoek te verifiëren en alle niet-openbare IP-ranges strikt te blokkeren.
 
 <script type="application/ld+json">
 {
@@ -103,50 +115,42 @@ Slechts gedeeltelijk – DNS-rebinding, omleidingsketens, en de cloud-metadata-e
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Lỗi SSRF (Server-Side Request Forgery) là gì?",
+      "name": "Wat maakt Server-Side Request Forgery (SSRF) zo'n gevaarlijke kwetsbaarheid voor cloud-gehoste applicaties?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lỗi cho phép kẻ xấu truyền URL nội bộ vào tính năng nhập từ link, khiến Server tự mình gửi request truy cập vào các mạng nội bộ bảo mật."
+        "text": "Omdat de kwetsbaarheid de cloudserver zelf dwingt om netwerkverzoeken uit te voeren. Hierdoor kan een aanvaller toegang krijgen tot interne netwerkbronnen, databases en met name de interne cloud-metadata-service (zoals AWS of Google Cloud metadata), die tijdelijke beveiligingstokens en geheimen kan bevatten."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao lỗi SSRF hay xuất hiện trong code do AI viết?",
+      "name": "Waarom volstaat het controleren op 'localhost' of '127.0.0.1' niet als volledige SSRF-bescherming?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì prompt yêu cầu 'tải ảnh từ URL' thì AI chỉ viết code fetch đơn thuần, không tự động thêm logic validate IP nội bộ."
+        "text": "Omdat aanvallers interne adressen kunnen maskeren met behulp van alternatieve notaties (zoals decimale IP's), DNS-rebinding (waarbij een domein tijdens de controle naar een openbaar IP wijst maar tijdens de aanroep naar een intern IP), of HTTP-omleidingen (redirects) die de initiële validatie omzeilen."
       }
     },
     {
       "@type": "Question",
-      "name": "Hậu quả nghiêm trọng nhất của lỗi SSRF là gì?",
+      "name": "Heeft Manifera ervaring met het beveiligen van microservices en API-gateways tegen SSRF?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kẻ tấn công có thể truy cập vào AWS/Cloud Metadata Endpoint để lấy token quản trị Server hoặc đọc dữ liệu DB nội bộ."
+        "text": "Ja, bij complexe cloudarchitecturen ontwerpt Manifera strikte egress-regels, dedicated proxy-services en fijnmazige netwerksegmentatie om te waarborgen dat applicatieservers uitsluitend gevalideerde externe verzoeken kunnen initiëren en nooit interne services kunnen bevragen."
       }
     },
     {
       "@type": "Question",
-      "name": "Chỉ chặn các dải IP nội bộ (192.168.x.x, 10.x.x.x) có đủ để chống SSRF không?",
+      "name": "Zou een AI-tool zoals Cursor of Lovable automatisch weten hoe SSRF effectief moet worden afgedekt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chưa đủ — cần chặn cả DNS Rebinding, Redirect chains, các định dạng IP Hex/Octal và chặn trực tiếp Metadata URL."
+        "text": "Nee, tenzij de prompt expliciet vraagt om een robuuste SSRF-beveiliging inclusief DNS-resolutievalidatie, redirect-beperkingen en metadata-blokkades. Zonder die specifieke instructies genereert de tool doorgaans een eenvoudige `fetch()`-aanroep die direct vatbaar is voor SSRF."
       }
     },
     {
       "@type": "Question",
-      "name": "Những tính năng nào ngoài Import URL hay dính lỗi SSRF?",
+      "name": "Is het uitschakelen van URL-ophaling de enige manier om SSRF 100% te voorkomen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Webhook callbacks, tính năng xem trước link (Link preview), và dịch vụ tạo file PDF từ HTML/URL."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Sửa lỗi SSRF có làm ảnh hưởng tới việc tải ảnh từ các trang web hợp lệ không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Không, Server vẫn tải ảnh bình thường từ các domain public hợp lệ, chỉ từ chối các request hướng vào mạng nội bộ."
+        "text": "Nee, als de functie essentieel is (bijvoorbeeld voor het ophalen van previews of avatars), kan deze veilig worden geïmplementeerd door verzoeken via een geïsoleerde proxy te routeren, DNS-resolutie vóór het verzoek te verifiëren en alle niet-openbare IP-ranges strikt te blokkeren."
       }
     }
   ]

@@ -50,8 +50,7 @@ Een technische solo-oprichter heeft geen documentatie nodig geschreven voor een 
 
 [Zie hoe een scoping- en overdrachtsproces eruitziet voor uw codebase](https://launchstudio.eu/nl/#contact) — de meeste solo-oprichters vinden de documentatie net zo waardevol als de fixes zelf.
 
-## Real example
-
+## Echt voorbeeld
 ### Een Technische Solo-Oprichter in de Praktijk: Zelfstandig en Zelfverzekerd Onderhouden
 
 Casimir Vonk, een voormalig backend-developer die solo-oprichter werd in Delft, bouwde ShiftLedger, een tijdregistratie- en facturatietool voor freelance opdrachtnemers, met Cursor. Casimir was zelf comfortabel met code schrijven, maar had nog nooit een betalingsintegratie onder echt productieverkeer gebouwd, en hij was terughoudend om externe hulp in te schakelen, juist omdat hij verhalen had gehoord van bureaus die oprichters achterlieten die hun eigen codebase niet meer konden uitleggen.

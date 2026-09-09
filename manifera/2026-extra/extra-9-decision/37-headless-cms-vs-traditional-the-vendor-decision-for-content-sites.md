@@ -67,6 +67,12 @@ Manifera builds both headless and traditional CMS architectures, and our discove
 
 If you are evaluating a rebuild for a content-heavy site, [talk to our Amsterdam team](https://www.manifera.com/contact-us/) about which architecture actually fits your channel count and editorial workflow before committing to a platform.
 
+## Which Headless Platform, If You Go That Route
+
+Not all headless CMS platforms carry the same cost or lock-in profile, and this is where vendor recommendations often skip detail that matters. Contentful's pricing scales with API calls and entries, which can turn expensive fast for a high-traffic content site and requires modeling projected usage before signing, not after the first invoice. Sanity offers a more generous free tier and real-time collaborative editing that genuinely helps distributed editorial teams, but its query language (GROQ) is proprietary, which adds a small learning curve for developers. Strapi, being open-source and self-hostable, avoids per-call pricing entirely but shifts hosting and scaling responsibility back onto your infrastructure team. Storyblok's visual editor narrows the WYSIWYG gap described above more than most competitors, making it worth a specific look if editorial preview experience is your team's biggest objection to going headless.
+
+For a WordPress-heavy content team not ready for a full rebuild, a decoupled approach — keeping WordPress as the content backend and exposing it via WPGraphQL or the REST API to a modern frontend framework — is a middle path worth demanding your vendor evaluate before defaulting to a full headless platform migration. This preserves your editorial team's familiar WYSIWYG interface while gaining a faster, more secure frontend, typically at 40-60% of the cost of migrating to an entirely new headless platform, since you're not re-training editors or rebuilding your content model from scratch.
+
 ## Frequently Asked Questions
 
 ### Is a headless CMS always cheaper than a traditional CMS?
@@ -84,6 +90,18 @@ Likely yes. Headless platforms typically decouple content entry from visual prev
 ### How can I tell if a vendor's CMS recommendation is based on my needs or their staffing?
 A vendor should walk through your channel count, editorial team's technical comfort, and content velocity before recommending an architecture. A recommendation offered within the first pitch call, before those questions are asked, likely reflects the vendor's staffing convenience rather than your actual fit.
 
+### (Scenario: WordPress team wants headless benefits without a full rebuild) Can we get headless-style flexibility without abandoning WordPress entirely?
+Yes, through a decoupled approach that keeps WordPress as the content backend while exposing it via WPGraphQL or the REST API to a modern frontend framework. This preserves your editorial team's familiar WYSIWYG interface while gaining faster, more secure delivery, typically at 40-60% of the cost of a full headless platform migration.
+
+### (Scenario: comparing named headless vendors like Contentful, Sanity, and Strapi) How do we choose between specific headless CMS vendors like Contentful, Sanity, and Strapi?
+Contentful's usage-based pricing can grow expensive for high-traffic sites and needs modeling before signing; Sanity offers real-time collaborative editing but uses a proprietary query language; Strapi is open-source and self-hostable, avoiding per-call fees but shifting hosting responsibility to your team. Match the vendor's pricing model and editorial tooling to your actual traffic volume and team's technical comfort, not brand recognition.
+
+### (Scenario: partner API consuming the same content feed as the public website) Will exposing our content via a headless API to a partner create rate-limit or reliability risk for our own website?
+It can if the partner-facing API and your website's frontend share the same content API tier without separate rate limiting, since a partner's traffic spike could degrade response times for your own site. Ask your vendor to architect separate API keys or caching layers per consumer so a third party's usage pattern can't affect your website's performance.
+
+### (Scenario: concern about vendor lock-in with a proprietary headless platform) How do we avoid getting locked into a proprietary headless CMS vendor?
+Favor platforms with standard content export capabilities and avoid deeply coupling your frontend to a vendor's proprietary query language or SDK without an abstraction layer in between. Ask any vendor finalist what a migration off their recommended platform would actually involve two years from now, and treat a vague answer as a signal worth weighing against the platform's other advantages.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -93,7 +111,11 @@ A vendor should walk through your channel count, editorial team's technical comf
     {"@type": "Question", "name": "Does headless CMS hurt SEO or site performance?", "acceptedAnswer": {"@type": "Answer", "text": "Not inherently, but a poorly implemented headless frontend without server-side rendering and proper caching can perform worse than a well-optimized traditional CMS."}},
     {"@type": "Question", "name": "How do I know if my content team actually needs headless architecture?", "acceptedAnswer": {"@type": "Answer", "text": "Run a three-question test: how many distinct channels need to consume the same content within 18 months, how comfortable is your editorial team with structured content entry, and what is your realistic publishing velocity."}},
     {"@type": "Question", "name": "Will my editorial team's workflow change significantly with a headless CMS?", "acceptedAnswer": {"@type": "Answer", "text": "Likely yes. Headless platforms typically decouple content entry from visual preview, which can slow editorial velocity unless the vendor has invested in a proper preview workflow."}},
-    {"@type": "Question", "name": "How can I tell if a vendor's CMS recommendation is based on my needs or their staffing?", "acceptedAnswer": {"@type": "Answer", "text": "A vendor should walk through your channel count, editorial team's comfort level, and content velocity before recommending an architecture. A recommendation offered before those questions are asked likely reflects staffing convenience."}}
+    {"@type": "Question", "name": "How can I tell if a vendor's CMS recommendation is based on my needs or their staffing?", "acceptedAnswer": {"@type": "Answer", "text": "A vendor should walk through your channel count, editorial team's comfort level, and content velocity before recommending an architecture. A recommendation offered before those questions are asked likely reflects staffing convenience."}},
+    {"@type": "Question", "name": "Can we get headless-style flexibility without abandoning WordPress entirely?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, through a decoupled approach that keeps WordPress as the content backend while exposing it via WPGraphQL or the REST API to a modern frontend framework, preserving familiar WYSIWYG editing at 40-60% of the cost of a full headless migration."}},
+    {"@type": "Question", "name": "How do we choose between specific headless CMS vendors like Contentful, Sanity, and Strapi?", "acceptedAnswer": {"@type": "Answer", "text": "Contentful's usage-based pricing can grow expensive for high-traffic sites, Sanity offers real-time collaboration but uses a proprietary query language, and Strapi is open-source and self-hostable but shifts hosting responsibility to your team. Match the vendor's pricing model and tooling to your actual traffic and team's technical comfort."}},
+    {"@type": "Question", "name": "Will exposing our content via a headless API to a partner create rate-limit or reliability risk for our own website?", "acceptedAnswer": {"@type": "Answer", "text": "It can if the partner-facing API and your website share the same content API tier without separate rate limiting. Ask your vendor to architect separate API keys or caching layers per consumer so a partner's traffic spike can't degrade your own site's performance."}},
+    {"@type": "Question", "name": "How do we avoid getting locked into a proprietary headless CMS vendor?", "acceptedAnswer": {"@type": "Answer", "text": "Favor platforms with standard content export capabilities and avoid deeply coupling your frontend to a vendor's proprietary query language without an abstraction layer. Ask any finalist what migrating off their platform would involve two years from now."}}
   ]
 }
 </script>

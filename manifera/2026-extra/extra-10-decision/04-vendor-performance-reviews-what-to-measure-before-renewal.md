@@ -60,6 +60,12 @@ A renewal decision built on delivery trend, quality trend, and governance reliab
 
 If your current review process is closer to a gut check than a scorecard, Manifera's [our way of working](https://www.manifera.com/about-us/our-way-of-working/) page outlines the governance and reporting cadence we build into every engagement from day one, specifically so a renewal review never starts from a blank slate.
 
+## Benchmarking the Scorecard Against Market Data
+
+A scorecard score in isolation tells you whether a vendor cleared your bar, not whether you're paying fairly for what they clear. Benchmark the commercial 15% of your weighting against current market rate bands: mid-market offshore development pods running out of Vietnam typically land $25-45/hour blended across seniority levels as of 2026, versus $70-120/hour for nearshore Eastern European teams and $150-220/hour for onshore US or UK contractors doing comparable work. If a vendor's renewal quote sits meaningfully above the band for their delivery model without a corresponding quality-score premium — top-quartile defect escape rate and code review depth — that is a specific, defensible negotiating point, not a vague sense that renewal "feels expensive."
+
+Benchmark change-order frequency the same way. A vendor issuing change orders on more than 15-20% of sprints against an otherwise stable scope is signaling either poor upfront estimation or a commercial pattern of scope-creep billing, worth flagging explicitly rather than treating each order as an isolated, reasonable request. Keep a running log of cumulative change-order value as a percentage of base contract value: once it clears 10% across the period, the fixed-price or capacity model you originally signed has quietly become something else, and renewal is the moment to renegotiate the structure, not just the rate.
+
 ## Frequently Asked Questions
 
 ### What metrics matter most in a software vendor performance review?
@@ -76,6 +82,18 @@ A vendor who disputes the underlying data rather than engaging with it, or who c
 
 ### Can a vendor performance review improve a renewal instead of just deciding it?
 Yes, and this is often the most useful outcome. A borderline vendor can be offered a conditional renewal tied to a defined improvement plan with measurable 90-day checkpoints, which gives both sides a structured path forward instead of forcing a binary renew-or-churn decision on an otherwise valuable relationship.
+
+### (Scenario: vendor requests a rate increase at renewal) How do I know if my vendor's renewal rate increase is justified?
+Benchmark it against current market bands for their delivery model — offshore Vietnam pods generally run $25-45/hour blended, nearshore $70-120/hour, onshore $150-220/hour. An increase beyond typical annual inflation of 3-6% needs a corresponding quality-score improvement to justify itself, not just a vendor's cost narrative.
+
+### (Scenario: a supposedly fixed-price engagement keeps generating change orders) Our vendor keeps issuing change orders on a supposedly fixed-price contract — is that a red flag?
+Track it as a percentage: change orders on more than 15-20% of sprints, or exceeding 10% of cumulative contract value, means the commercial model you signed has effectively become something else. Renewal is the right moment to renegotiate the structure, not just push back on individual orders.
+
+### (Scenario: engineering leadership is split on a renewal decision) Engineering leads disagree on whether to renew — how do we resolve it?
+Force the disagreement through the same weighted scorecard rather than a debate of impressions. If disagreement persists after both sides see identical velocity, quality, and governance data, it usually means the weighting itself, not the vendor, needs revisiting to reflect what leadership actually prioritizes.
+
+### (Scenario: a vendor runs multiple pods across different parts of the product) How do I score a vendor running multiple pods on different parts of our product?
+Score each pod separately against the same rubric rather than producing one blended number. A strong core-product pod and a weak secondary pod can average into a misleadingly acceptable overall score that masks a real problem on one team.
 
 <script type="application/ld+json">
 {
@@ -120,6 +138,38 @@ Yes, and this is often the most useful outcome. A borderline vendor can be offer
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, and this is often the most useful outcome. A borderline vendor can be offered a conditional renewal tied to a defined improvement plan with measurable 90-day checkpoints, which gives both sides a structured path forward instead of forcing a binary renew-or-churn decision on an otherwise valuable relationship."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if my vendor's renewal rate increase is justified?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Benchmark it against current market bands for their delivery model — offshore Vietnam pods generally run $25-45/hour blended, nearshore $70-120/hour, onshore $150-220/hour. An increase beyond typical annual inflation of 3-6% needs a corresponding quality-score improvement to justify itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Our vendor keeps issuing change orders on a supposedly fixed-price contract — is that a red flag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Track it as a percentage: change orders on more than 15-20% of sprints, or exceeding 10% of cumulative contract value, means the commercial model you signed has effectively become something else. Renewal is the right moment to renegotiate the structure, not just push back on individual orders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Engineering leads disagree on whether to renew — how do we resolve it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Force the disagreement through the same weighted scorecard rather than a debate of impressions. If disagreement persists after both sides see identical data, it usually means the weighting itself, not the vendor, needs revisiting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I score a vendor running multiple pods on different parts of our product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Score each pod separately against the same rubric rather than producing one blended number. A strong core-product pod and a weak secondary pod can average into a misleadingly acceptable overall score that masks a real problem on one team."
       }
     }
   ]

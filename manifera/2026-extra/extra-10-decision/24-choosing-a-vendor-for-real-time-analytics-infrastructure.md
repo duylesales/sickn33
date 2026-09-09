@@ -54,6 +54,17 @@ Real-time analytics infrastructure is justified for a genuinely narrower set of 
 
 Manifera's engineering teams have built and operated streaming analytics infrastructure where sub-minute latency was a genuine business requirement, with backpressure handling and processing guarantees matched to what the use case actually needed. If you're evaluating whether your use case justifies real-time infrastructure, [our custom software development team](https://www.manifera.com/services/custom-software-development/) can help pressure-test the requirement before you commit to the complexity.
 
+## Latency Budget Worksheet: Where the Milliseconds Actually Go
+
+Force any vendor to break down their proposed architecture's latency budget across these four stages rather than accepting a single "sub-second" headline number:
+
+1. **Event ingestion.** A well-architected Kafka ingestion layer should sit comfortably under 100ms; ask for the actual measured figure, not a theoretical ceiling.
+2. **Stream processing.** Windowed aggregations or cross-stream joins in Flink add meaningfully more latency than simple pass-through processing — ask which specific processing logic your use case requires and its measured contribution.
+3. **Storage write.** Confirm whether writes are synchronous (adds latency, safer) or asynchronous (faster, carries a small data-loss window) and which the vendor defaults to for your use case.
+4. **Query/serving latency.** This is the most commonly underestimated stage — a poorly indexed serving layer can silently add multiple seconds, erasing the benefit of everything upstream. Ask for serving-layer latency measured under realistic query patterns, not a simple key lookup benchmark.
+
+Then ask for all four numbers again at 2x and 5x expected peak load — a vendor who only has ideal-condition figures for each stage has not stress-tested the architecture they're proposing to sell you.
+
 ## Frequently Asked Questions
 
 ### How do we know if we actually need real-time analytics infrastructure?
@@ -70,6 +81,18 @@ Ask for concrete evidence of how the architecture handles backpressure when the 
 
 ### What ongoing operational burden should we expect from real-time infrastructure?
 Streaming systems require continuous attention — monitoring consumer lag, managing partition rebalancing, and handling schema evolution without breaking downstream consumers — and incidents can be genuinely harder to debug due to the distributed, asynchronous nature of the system. Clarify before signing whether the vendor is handing off a system your team can operate independently or one that requires their continued involvement indefinitely.
+
+### (Scenario: business team asking for "real-time" when they mean fresher data) Our business stakeholders keep asking for "real-time" dashboards, but when I dig into it, they just want data that's less than an hour old instead of the current next-day refresh — how do I steer this conversation?
+Reframe the requirement explicitly around actual latency tolerance before any vendor conversation starts: ask what decision changes if the data is 15 minutes old versus 5 minutes old versus instant, and in most cases the honest answer reveals a well-tuned batch pipeline running every 5-15 minutes satisfies the real need at a fraction of streaming infrastructure's operational cost. Reserve the "real-time" conversation for use cases where a decision genuinely must happen within the same session or transaction.
+
+### (Scenario: fraud detection requiring exactly-once processing) We're building a fraud detection pipeline that blocks transactions in real time — does a vendor defaulting to at-least-once processing guarantees put us at risk?
+Yes, potentially — at-least-once processing can reprocess events during failure recovery, and for a use case involving financial transactions, this creates real risk of duplicate actions like blocking or flagging the same transaction twice inconsistently. Confirm the vendor is proposing exactly-once semantics, achievable via Kafka's transactional APIs or Flink's checkpointing, specifically for this use case, even though it costs more in throughput and complexity.
+
+### (Scenario: pipeline falling behind during a flash sale) Our streaming pipeline handled normal traffic fine, but consumer lag grew unbounded during a flash sale and the dashboard went stale for hours — what should have been tested beforehand?
+This is a backpressure handling failure, and it's exactly the failure mode a vendor with real production experience should have load-tested against 2x-5x expected peak volume before launch, not discovered live during your highest-stakes traffic event. Ask your vendor going forward for a specific, tested answer on graceful degradation — bounded queuing or load shedding — rather than accepting an architecture that has only been validated under steady, predictable load.
+
+### (Scenario: vendor proposing to remain the only team that can operate the system) Our shortlisted vendor's proposal is vague about who's on-call for the streaming infrastructure after launch — should we assume our own team will take over operations?
+Don't assume — get this explicitly clarified before signing, since some vendors intentionally propose architecture requiring their continued involvement indefinitely, which changes your total cost of ownership and creates ongoing vendor dependency. Ask directly whether the handoff includes documentation and training sufficient for your team to operate consumer lag monitoring, partition rebalancing, and schema evolution independently, or whether ongoing vendor support is baked into the model.
 
 <script type="application/ld+json">
 {

@@ -44,8 +44,7 @@ De aanmeldingsbevestiging is het meest zichtbare slachtoffer van slechte aflever
 
 [Controleer of uw transactionele e-mails daadwerkelijk aankomen](https://launchstudio.eu/nl/#contact) — de gebruikers die u denkt kwijt te raken aan desinteresse, verliezen misschien alleen uw e-mails.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Ontbrekende Aanmeldingen Die Eigenlijk Ontbrekende E-mails Waren
 
 Priya Gupta, een HR-tech-oprichter in Amsterdam, bouwde TalentTracker, een met Lovable gebouwde kandidatenpijplijntool. Na een LinkedIn-campagne die 400 registratiepogingen opleverde, bevestigden slechts 150 hun e-mailadres. Priya nam aan dat de uitval van 62% normaal was. LaunchStudio's audit onthulde dat de standaard Supabase e-mailafzender werd gemarkeerd door de spamfilters van Microsoft 365 en Google Workspace — met invloed op ongeveer 60% van de zakelijke e-mailadressen. Na het configureren van een aangepast verzenddomein met correcte DNS-records en het overschakelen naar Resend als transactionele e-mailprovider, steeg het bevestigingspercentage naar 89%.

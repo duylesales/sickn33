@@ -39,6 +39,21 @@ Job Willems, een oprichter in Eindhoven, ondervond dit aan den lijve. Hij bouwde
 
 Dit onderscheid vroeg goed krijgen is precies het soort architecturale helderheid waar de engineers van LaunchStudio, onderdeel van Manifera's team van 120+ engineers werkzaam vanuit onder meer Ho Chi Minh-stad, oprichters mee helpen voordat een roadmap op de verkeerde premisse wordt gebouwd. Als u niet zeker weet in welke categorie uw product daadwerkelijk valt, [beschrijf dan uw project via ons proces](https://launchstudio.eu/nl/) en wij brengen het eerlijk in kaart. U kunt ook zien hoe [het portfolio van Manifera](https://www.manifera.com/portfolio/) de reeks AI-assist- en AI-native-architecturen weerspiegelt die wij voor klanten hebben gebouwd.
 
+## Een Zelfevaluatie per Functionaliteit: In Welke Categorie Valt Elk Onderdeel?
+
+Eén enkele applicatie kan op sommige plekken oprecht 'AI-assistentie' gebruiken en op andere plekken 'AI-native' zijn ingericht. Dit betekent dat de echte lakmoesproef niet is "in welke categorie valt mijn gehele product?", maar veeleer: in welke categorie valt elke afzonderlijke functionaliteit? Loop uw belangrijkste productonderdelen langs aan de hand van deze vier diagnostische vragen:
+
+**1. Zou deze functionaliteit nog steeds nuttig en bruikbaar zijn als het taalmodel morgen offline gaat?** Als het antwoord ja is — de gebruikers kunnen nog steeds hun dashboard bekijken, rapporten genereren of instellingen wijzigen, alleen zonder een AI-gegenereerde samenvatting — dan is het AI-assistentie. Is het antwoord nee — omdat het product fundamenteel bestaat uit het doorlopend interpreteren van ongestructureerde data via een model — dan is het AI-native.
+
+**2. Is de uitvoer van de functionaliteit deterministisch of probabilistisch?** Wanneer een gebruiker op 'Opslaan' klikt, moet de data exact en reproduceerbaar worden weggeschreven. Dat vereist traditionele, deterministische software-architectuur. Als de functionaliteit daarentegen een tekstuele suggestie, een analyse of een creatief ontwerp genereert waarbij variatie acceptabel of zelfs gewenst is, dan bevindt u zich in het probabilistische AI-domein.
+
+**3. Wat is de directe zakelijke schade wanneer het model hallucineert?** Als een foutief gegenereerde samenvatting hooguit leidt tot een gefronste wenkbrauw van de gebruiker, volstaat een eenvoudige AI-wrapper met een disclaimer. Heeft een foutieve uitvoer echter direct invloed op financiële transacties, juridische rapportages of medische diagnoses, dan mag de functionaliteit *nooit* direct aan het model worden gekoppeld zonder strenge validatieregels en deterministische vangrails.
+
+**4. Waar ligt de primaire waarde van uw product op lange termijn?** Als uw concurrent exact dezelfde prompt kan invoeren in hetzelfde publieke OpenAI-model en binnen een middag hetzelfde resultaat behaalt, heeft u geen verdedigbaar intellectueel eigendom. Ligt uw waarde daarentegen in de unieke workflow, de gesloten data-integraties en de betrouwbaarheid van de verwerking, dan is de AI slechts een versneller van een solide softwarefundament.
+
+Door uw functionaliteiten op deze manier te categoriseren, voorkomt u dat u miljoenen investeert in complexe AI-architectuur voor onderdelen die prima met een standaard databasequery kunnen worden opgelost, terwijl u wél de noodzakelijke bescherming inbouwt voor uw échte kernwaarde.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De roadmap gebouwd op de verkeerde categorie
@@ -85,11 +100,46 @@ Ja, dat komt vaak voor — een product kan een AI-native kernfunctie hebben naas
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is \"AI assist\" a lesser product than \"AI native\"?", "acceptedAnswer": { "@type": "Answer", "text": "No, they are different architectures for different problems. The mistake is mislabeling one as the other and planning around the wrong assumptions." } },
-    { "@type": "Question", "name": "How can I tell which category my own product actually falls into?", "acceptedAnswer": { "@type": "Answer", "text": "Ask what happens if the AI feature is removed. If the product still functions with a fallback, it's AI assist; if nothing remains, it's AI native." } },
-    { "@type": "Question", "name": "Why does this distinction matter for infrastructure costs?", "acceptedAnswer": { "@type": "Answer", "text": "AI-native features scale cost and latency with every core action, while AI-assist features only add model costs at the margins." } },
-    { "@type": "Question", "name": "Does Manifera's engineering team help re-scope a roadmap after this kind of mismatch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Manifera's engineers, including the Ho Chi Minh City team, help founders re-categorize a product's real architecture and re-prioritize the roadmap." } },
-    { "@type": "Question", "name": "Can a product be genuinely both AI assist and AI native in different parts?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but each part needs to be planned against its own scaling behavior separately." } }
+    {
+      "@type": "Question",
+      "name": "Is \"AI assist\" een mindere versie dan \"AI native\"?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, geen van beide is inherent beter — het zijn verschillende architecturen die geschikt zijn voor verschillende problemen. De fout is de ene voor de andere aanzien en een roadmap plannen op basis van de verkeerde aannames."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik weten in welke categorie mijn eigen product daadwerkelijk valt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vraag u af wat er gebeurt als u de AI-functie volledig verwijdert. Als het product nog steeds functioneert met een handmatige of regelgebaseerde fallback, is het AI assist. Als er niets onderliggend overblijft, is het AI native."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom is dit onderscheid belangrijk voor infrastructuurkosten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI-native functies schalen hun kosten en latentie met elke kernactie, omdat elke actie een modelaanroep vereist. AI-assist-functies voegen alleen aan de randen modelkosten toe, dus hun schaalgedrag is heel anders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Helpt het engineeringteam van Manifera bij het herscopen van een roadmap na dit soort mismatch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, de engineers van Manifera, waaronder het team gevestigd in Ho Chi Minh-stad, helpen oprichters regelmatig de echte architectuur van een product opnieuw te categoriseren en de roadmap dienovereenkomstig te herprioriteren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een product oprecht zowel AI assist als AI native zijn in verschillende delen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, dat komt vaak voor — een product kan een AI-native kernfunctie hebben naast AI-assist-verbeteringen elders, maar elk deel moet apart tegen zijn eigen schaalgedrag worden gepland."
+      }
+    }
   ]
 }
 </script>

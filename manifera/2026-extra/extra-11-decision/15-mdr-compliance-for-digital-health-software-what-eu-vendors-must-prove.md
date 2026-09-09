@@ -75,6 +75,12 @@ MDR compliance for digital health software is decided in the first weeks of a pr
 }
 </script>
 
+## By the Numbers: Budgeting for MDR's Real Timeline and Cost
+
+A full MDR technical file for Class IIa software — covering Annex II/III documentation, ISO 14971 risk management, IEC 62304 verification and validation, and a proportionate clinical evaluation — typically takes 4-8 months to compile properly when started alongside development rather than after it, and considerably longer when reconstructed retroactively against software that wasn't built with traceability in mind. Layer Notified Body review on top of that, and total time from a complete submission to CE certificate has commonly run 9-12 months or more during MDR's implementation period, meaning a realistic go-to-market timeline for Class IIa digital health software should budget 12-18 months from classification decision to market entry, not the 3-4 months a vendor unfamiliar with MDR might casually estimate.
+
+On cost, engaging a Notified Body for Class IIa software conformity assessment typically runs in the tens of thousands of euros for the assessment itself, before accounting for internal engineering time spent on documentation and any clinical evidence generation, which can add materially more if a dedicated clinical validation study is required rather than a literature-based clinical evaluation. Budget clinical evaluation work as a distinct line item started in parallel with development, not a task squeezed into the weeks before submission — evidence gathered under deadline pressure is where clinical evaluation quality most often suffers.
+
 ## Frequently Asked Questions
 
 ### Is our digital health app automatically exempt from MDR if a clinician reviews the output before acting?
@@ -91,6 +97,18 @@ Clinical evaluation is the broader, ongoing process of assessing and analyzing c
 
 ### Can our software's classification change after launch if we release an update?
 Yes. A "significant change" to a device's design, intended purpose, or performance characteristics can trigger a reclassification review or require updated conformity assessment, which is why the vendor's approach to change management and documentation needs to account for this ongoing obligation, not just the initial submission.
+
+### (Scenario: A founder is setting an investor-facing launch date before classification is confirmed) How far out should we set our go-to-market date if we haven't finalized our Rule 11 classification yet?
+Don't commit to a public date until classification is confirmed in writing, since the gap between a Class I assumption and an actual Class IIa outcome can add 12-18 months to your timeline through documentation depth and Notified Body review alone. Run the Rule 11 analysis first, then build the roadmap around the confirmed class, not the other way around.
+
+### (Scenario: A compliance officer is comparing two vendor quotes with very different MDR budget line items) One vendor's MDR compliance budget is a fraction of another's for the same product — what's likely missing?
+The lower quote is very likely excluding either a proportionate clinical evaluation, dedicated Notified Body assessment fees (typically tens of thousands of euros for Class IIa), or both. Ask each vendor to itemize technical documentation, clinical evidence work, and Notified Body costs separately rather than accepting a single bundled number.
+
+### (Scenario: A compliance officer wants to avoid a last-minute scramble for clinical evidence) When should clinical evaluation work actually start relative to software development?
+In parallel with development, not after it. Evidence gathered under submission deadline pressure is where clinical evaluation quality most commonly suffers, and a vendor who treats clinical evaluation as a pre-submission checkbox rather than an ongoing evidence-building process is underestimating a workstream that can independently add months to your timeline.
+
+### (Scenario: A startup is deciding whether a modest clinical validation study is worth the added time) Is a literature-based clinical evaluation ever sufficient, or will we always need our own clinical study?
+It depends on your device's novelty and risk class — a literature-based clinical evaluation drawing on equivalent device data can be sufficient for lower-risk, well-precedented software, but genuinely novel clinical decision support functionality often needs its own clinical data to satisfy a Notified Body. Ask your vendor or regulatory consultant to make this call explicitly and in writing early, since it materially changes your timeline and budget.
 
 <script type="application/ld+json">
 {
@@ -121,6 +139,26 @@ Yes. A "significant change" to a device's design, intended purpose, or performan
       "@type": "Question",
       "name": "Can our software's classification change after launch if we release an update?",
       "acceptedAnswer": {"@type": "Answer", "text": "Yes. A significant change to a device's design, intended purpose, or performance characteristics can trigger a reclassification review or require updated conformity assessment, which is why the vendor's approach to change management and documentation needs to account for this ongoing obligation, not just the initial submission."}
+    },
+    {
+      "@type": "Question",
+      "name": "How far out should we set our go-to-market date if we haven't finalized our Rule 11 classification yet?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Don't commit to a public date until classification is confirmed in writing, since the gap between a Class I assumption and an actual Class IIa outcome can add 12-18 months to your timeline through documentation depth and Notified Body review alone. Run the Rule 11 analysis first, then build the roadmap around the confirmed class, not the other way around."}
+    },
+    {
+      "@type": "Question",
+      "name": "One vendor's MDR compliance budget is a fraction of another's for the same product — what's likely missing?",
+      "acceptedAnswer": {"@type": "Answer", "text": "The lower quote is very likely excluding either a proportionate clinical evaluation, dedicated Notified Body assessment fees (typically tens of thousands of euros for Class IIa), or both. Ask each vendor to itemize technical documentation, clinical evidence work, and Notified Body costs separately rather than accepting a single bundled number."}
+    },
+    {
+      "@type": "Question",
+      "name": "When should clinical evaluation work actually start relative to software development?",
+      "acceptedAnswer": {"@type": "Answer", "text": "In parallel with development, not after it. Evidence gathered under submission deadline pressure is where clinical evaluation quality most commonly suffers, and a vendor who treats clinical evaluation as a pre-submission checkbox rather than an ongoing evidence-building process is underestimating a workstream that can independently add months to your timeline."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is a literature-based clinical evaluation ever sufficient, or will we always need our own clinical study?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It depends on your device's novelty and risk class — a literature-based clinical evaluation drawing on equivalent device data can be sufficient for lower-risk, well-precedented software, but genuinely novel clinical decision support functionality often needs its own clinical data to satisfy a Notified Body. Ask your vendor or regulatory consultant to make this call explicitly and in writing early, since it materially changes your timeline and budget."}
     }
   ]
 }

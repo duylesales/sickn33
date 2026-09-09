@@ -109,6 +109,10 @@ Nee – permissieve licenties zoals MIT en Apache 2.0 hebben een laag risico en 
 
 Niet helemaal – het identificeren dat een afhankelijkheid een MIT- of Apache-licentie heeft voldoet alleen aan de licentie als de vereiste toeschrijvingskennisgeving daadwerkelijk met het product wordt meegeleverd. De uitvoer van de audit moet dus eindigen in een kennisgevingsbestand dat in de release is opgenomen.
 
+### Wat kost een licentie-audit en clean-room rewrite bij LaunchStudio?
+
+Een volledige licentie-audit inclusief clean-room herschrijving van eventuele copyleft-code kost gemiddeld €1.400 en duurt 8 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

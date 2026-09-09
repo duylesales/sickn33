@@ -110,6 +110,10 @@ Een wachtwoordbeheerder lost het probleem op dat "iemand anders zou kunnen inlog
 
 Niet volledig – veel diensten leiden risicovolle acties zoals grote uitbetalingen of accountherstel nog steeds via de telefoon of authenticator-app van de oorspronkelijke oprichter, zelfs nadat er een tweede beheerder is toegevoegd. De MFA- en herstelmethode op elke dienst heeft dus zijn eigen controle nodig naast de beheerderstoegang zelf.
 
+### Wat kost een Bus Factor & Access audit bij LaunchStudio?
+
+Een volledige toegangs-audit en het inrichten van 2e admin/MFA continuïteit kost gemiddeld €650 en duurt 4 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

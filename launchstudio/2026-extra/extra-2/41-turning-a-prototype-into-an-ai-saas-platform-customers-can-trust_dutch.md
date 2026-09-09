@@ -61,6 +61,20 @@ Manifera's beveiligingsbeoordelingen voor back-ups en infrastructuur worden uitg
 
 [Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/nl/#calculator).
 
+## Een Praktische Checklist voor het Auditeren van Uw Eigen Back-upbeveiliging
+
+Een oprichter hoeft geen diepgaande kennis van databasebeheer te hebben om de meest risicovolle aspecten van zijn eigen back-upconfiguratie te controleren. Een handvol doelgerichte vragen legt het grootste deel van de kwetsbaarheden bloot.
+
+**Doorloop deze vragen voor elk databasesysteem dat uw app gebruikt:**
+
+- **Worden uw back-ups opgeslagen op dezelfde fysieke schijf of server als uw actieve database?** Als de server crasht of gecompromitteerd raakt, gaan uw back-ups direct verloren samen met de hoofddatabase. Back-ups horen altijd in een fysiek gescheiden objectopslag te staan.
+- **Zijn de back-upbestanden toegankelijk via het publieke web?** Controleer of de map of storage-bucket waarin back-upbestanden (zoals `.sql` of `.dump`) worden bewaard per ongeluk openbaar uitleesbaar is via een browser.
+- **Worden back-ups versleuteld in rust (encryption at rest)?** Bevestig dat de opgeslagen databasekopieën niet in platte tekst rondslingeren, maar zijn beveiligd met sterke AES-versleuteling.
+- **Heeft u ooit daadwerkelijk een hersteloperatie (restore) getest?** Een back-up waarvan het herstelproces nooit is getest, is slechts een aanname. Test periodiek of een back-upbestand daadwerkelijk kan worden ingeladen in een lege testdatabase.
+- **Hoe lang worden historische back-ups bewaard?** Stel een expliciet retentiebeleid in (bijvoorbeeld dagelijkse back-ups die na 30 dagen automatisch worden gewist), zodat u voldoet aan de minimale bewaartermijnen van de AVG.
+
+Het beantwoorden van deze vragen kost slechts een middag, maar sluit een van de meest verwoestende infrastructurele risico's af waarmee een groeiende SaaS-onderneming te maken kan krijgen. Het periodiek valideren van deze waarborgen garandeert dat uw dataherstelprocedures te allen tijde betrouwbaar en operationeel blijven onder onvoorziene omstandigheden, waardoor dataverlies definitief wordt uitgesloten.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De back-up die direct naast de beschermde gegevens zat
@@ -107,50 +121,42 @@ Een oprichter kan controleren of de opslag dezelfde inlog vereist, hoewel het be
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Đã cài đặt tự động Backup dữ liệu hàng ngày thì đã an toàn chưa?",
+      "name": "Zou een infrastructuurspecialist onbeveiligde back-upopslag beschouwen als een veelvoorkomende omissie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chưa chắc — việc 'tạo file backup' và 'bảo vệ thư mục chứa file backup' là 2 việc hoàn toàn khác nhau. Nơi chứa file backup rất hay bị để công khai."
+        "text": "Redelijk veelvoorkomend, specifiek omdat back-upconfiguratie en de beveiliging van de opslag conceptueel worden behandeld als één voltooide taak in plaats van twee afzonderlijke."
       }
     },
     {
       "@type": "Question",
-      "name": "File backup bị để lộ nguy hiểm thế nào so với hacker hack trực tiếp vào DB?",
+      "name": "Geldt dit risico alleen voor financiële of boekhoudkundige producten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nguy hiểm tương đương — file backup chứa toàn bộ lịch sử dữ liệu của app, nếu thư mục chứa file backup không chặn truy cập công khai thì ai biết link cũng tải về được."
+        "text": "Nee, het geldt voor elk product met back-ups van gevoelige gegevens. Boekhoudkundige gegevens maken de belangen simpelweg bijzonder concreet."
       }
     },
     {
       "@type": "Question",
-      "name": "Cách bảo vệ file Backup chuẩn nhất trên cloud (AWS S3/Google Cloud Storage) là gì?",
+      "name": "Maakt ervaring met enterprise-infrastructuur uit voor een kleiner SaaS-product?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chuyển S3 Bucket sang chế độ Private, bật mã hóa (Encryption at rest), đặt đường dẫn ngẫu nhiên và phân quyền IAM strictly."
+        "text": "Ja, rechtstreeks – het onderliggende principe (back-upopslag verdient dezelfde strikte toegang als productiegegevens) is identiek, ongeacht de schaal."
       }
     },
     {
       "@type": "Question",
-      "name": "Có cần thường xuyên thử khôi phục (Restore) dữ liệu từ file Backup không?",
+      "name": "Illustreert deze casus de systematische beveiligingsdenkwijze boven afvinklijstjes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cực kỳ cần thiết — rất nhiều founder chỉ phát hiện file backup bị lỗi không restore được đúng vào lúc hệ thống gặp sự cố thực tế."
+        "text": "Heel goed – het behandelen van \"back-ups geconfigureerd\" als een voltooid afvinkitem, zonder afzonderlijk de beveiliging van de opslag te verifiëren, is exact de mentaliteit van het afvinklijstje waar voor gewaarschuwd wordt."
       }
     },
     {
       "@type": "Question",
-      "name": "Rà soát toàn bộ quy trình Backup và phân quyền ổ lưu trữ mất bao lâu?",
+      "name": "Kan een oprichter zijn eigen back-upopslagbeveiliging zelf verifiëren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường hoàn thành trong 4-8 ngày làm việc bao gồm cả bước thử nghiệm Restore thực tế trên môi trường Staging."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Doanh nghiệp lớn khi thẩm định (Due-Diligence) có soi kỹ hạ tầng Backup không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Có, đây là 1 trong những câu hỏi đầu tiên của đội ngũ IT Security bên mua khi đánh giá mức độ tin cậy của sản phẩm SaaS."
+        "text": "Een oprichter kan controleren of de opslag dezelfde inlog vereist, hoewel het bevestigen dat die controle daadwerkelijk correct wordt afgedwongen typisch baat heeft bij een technische beoordeling."
       }
     }
   ]

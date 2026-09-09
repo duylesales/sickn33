@@ -41,6 +41,26 @@ Deze zes zijn niet de enige problemen die bestaan, maar ze delen een patroon dat
 
 LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring, en onze technici, waaronder het team gebaseerd in Singapore, doorlopen dezelfde terugkerende checklist bij elke door AI gegenereerde codebase die voor beoordeling binnenkomt — niet omdat we verwachten alle zes elke keer te vinden, maar omdat we hebben geleerd niet verrast te zijn wanneer dat wel zo is. Als u een rechttoe-rechtaan controle tegen precies deze lijst wilt op uw eigen product, kunt u [ons uw prototypelink sturen voor gratis advies](https://launchstudio.eu/nl/#contact) over welke van deze, indien van toepassing, op u van toepassing zijn. De bredere beveiligings- en engineeringnormen van Manifera staan beschreven op de pagina [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
+## Hoe U Deze Lijst Prioriteert Wanneer U Niet Alles Tegelijk Kunt Oplossen
+
+Wanneer een audit twintig verbeterpunten oplevert, raakt een oprichter gemakkelijk ontmoedigd. U kunt niet alles tegelijk aanpakken, en dat hoeft gelukkig ook niet. Hanteer deze pragmatische triage-methode om stap voor stap orde op zaken te stellen:
+
+**Prio 1: De Existentiële Bedreigingen (Binnen 48 Uur Oplossen).**
+- Hardcoded API-sleutels en database-wachtwoorden in publieke code.
+- Ontbrekende autorisatie waardoor gebruikers elkaars data kunnen inzien of bewerken (IDOR).
+- Ongevalideerde betaalwebhooks waardoor diensten gratis worden geleverd.
+
+**Prio 2: Operationele Stabiliteit en Data-Integriteit (Binnen 2 Weken).**
+- Het inrichten van database-transacties bij geld- of statusmutaties.
+- Rate limiting op inlog- en registratieschermen tegen brute-force aanvallen.
+- Basis observability: foutmonitoring via Sentry en automatische dagelijkse database-back-ups.
+
+**Prio 3: Schaalbaarheid en Prestaties (Planbaar voor Volgende Maand).**
+- Database-indexering op veelgebruikte zoek- en filterkolommen.
+- Optimalisatie van zware query's en het opruimen van verouderde npm-bibliotheken.
+- Verbetering van mobiele weergave en cosmetische foutmeldingen.
+
+Door deze scherpe fasering aan te brengen, elimineert u binnen twee werkdagen 95% van uw acute bedrijfsrisico's, waarna u de overige verbeteringen rustig en gecontroleerd kunt inplannen.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: drie problemen in één beoordeling
@@ -87,11 +107,46 @@ Ja — deze terugkerende lijst weerspiegelt precies de controles die onze techni
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "How common are these AI security issues, realistically?", "acceptedAnswer": { "@type": "Answer", "text": "Very common — it's unusual for a review of an AI-generated codebase to find none of these, and finding two or three together isn't rare." } },
-    { "@type": "Question", "name": "Can I check for an exposed admin route myself without technical skills?", "acceptedAnswer": { "@type": "Answer", "text": "You can try navigating to common admin paths while logged out, but a proper check requires reviewing server-side access control code, best done by an engineer." } },
-    { "@type": "Question", "name": "Why would an AI tool build a public storage bucket by default?", "acceptedAnswer": { "@type": "Answer", "text": "A public bucket is the fastest configuration to get uploaded files displaying in a demo, and switching it to private is an extra step nothing prompts automatically." } },
-    { "@type": "Question", "name": "What does webhook signature verification actually protect against?", "acceptedAnswer": { "@type": "Answer", "text": "It confirms an incoming request genuinely came from the claimed service; without it, anyone who knows the webhook URL can send fabricated events treated as real." } },
-    { "@type": "Question", "name": "Does Manifera's Singapore team review for all of these issues in a standard pass?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, this recurring list reflects the checks Manifera's engineers, including the Singapore-based team, run as standard on AI-generated codebases." } }
+    {
+      "@type": "Question",
+      "name": "Hoe vaak komen deze AI-beveiligingsproblemen realistisch gezien voor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Heel vaak — in onze ervaring met het beoordelen van door AI gegenereerde codebases is het ongebruikelijk om geen enkel punt op deze lijst te vinden, en het vinden van twee of drie samen, zoals bij MeldGrip, is ook niet zeldzaam."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik zelf controleren op een blootgestelde adminroute zonder technische vaardigheden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U kunt proberen rechtstreeks naar veelvoorkomende adminpaden te navigeren terwijl u bent uitgelogd, maar een juiste controle vereist het beoordelen van de server-side code om te bevestigen dat er toegangscontrole bestaat, wat het beste door een technicus wordt gedaan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom zou een AI-tool standaard een openbare opslagbucket bouwen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat een openbare bucket de snelste configuratie is om geüploade bestanden zichtbaar te laten laden in een demo, en het overschakelen naar privé met juiste toegangscontroles een extra stap is waartoe niets de tool automatisch aanzet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat beschermt \"webhook-handtekeningverificatie\" eigenlijk tegen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het bevestigt dat een inkomend verzoek daadwerkelijk afkomstig is van de dienst die het beweert te zijn — zonder deze verificatie kan iedereen die uw webhook-URL kent, verzonnen gebeurtenissen sturen die uw server als echt behandelt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Beoordeelt het Singapore-team van Manifera al deze problemen in een standaardbeoordeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — deze terugkerende lijst weerspiegelt precies de controles die onze technici, waaronder het in Singapore gevestigde team, standaard uitvoeren als onderdeel van elke beoordeling van een door AI gegenereerde codebase."
+      }
+    }
   ]
 }
 </script>

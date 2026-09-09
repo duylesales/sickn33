@@ -102,7 +102,7 @@ De meest succesvolle AI-native oprichters combineren snelheid met vakmanschap:
 3. **Schakel** LaunchStudio in om de ontbrekende backend-infrastructuur en beveiliging in te richten.
 4. **Lanceer** binnen drie weken een live SaaS-bedrijf met 100% eigenaarschap over uw code.
 
-## Belangrijkste Inzichten
+### Belangrijkste inzichten
 
 - Bolt AI is een ongeëvenaard krachtig hulpmiddel voor visuele prototypes, maar slaat datapersistentie, server-side beveiliging en hosting over.
 - Een Bolt-prototype draait lokaal in het browsergeheugen; zonder backend verdwijnen alle gegevens zodra de gebruiker de pagina ververst.

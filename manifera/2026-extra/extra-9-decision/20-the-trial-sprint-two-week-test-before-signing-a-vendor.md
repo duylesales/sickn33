@@ -98,6 +98,12 @@ Talk to our Amsterdam team about structuring a two-week trial sprint around a re
 }
 </script>
 
+## Pricing the Trial and Running Two in Parallel
+
+Price a two-week trial sprint at roughly the vendor's normal blended rate for the team size proposed — for a small trial team of two to three engineers plus part-time PM support, that typically lands between €4,000 and €9,000 depending on market and seniority mix. Treat any vendor offering the trial "free" with suspicion rather than gratitude: a free trial usually means a lightweight, less senior team assembled specifically to win the evaluation cheaply, which defeats the entire purpose of testing the team you would actually work with for the next year.
+
+Running trials with two finalists in parallel, rather than sequentially, is worth the added coordination cost when your timeline allows it — it gives you a genuine head-to-head comparison under matched conditions (same two-week window, comparable backlog complexity) rather than comparing a trial from six weeks ago against one from last week, when your own attention and standards may have drifted. Budget accordingly: two parallel trials means roughly double the direct cost but produces a comparison an order of magnitude more reliable than sequential trials separated by weeks, since your own evaluation calibration stays constant across both.
+
 ## Frequently Asked Questions
 
 ### Why is two weeks the right length for a vendor trial sprint?
@@ -114,6 +120,18 @@ Yes, structured as a genuine statement of work with clean IP terms defined upfro
 
 ### What happens if the trial sprint reveals problems with the vendor?
 Treat it as a successful use of the trial, not wasted spend. The cost of a two-week trial revealing a bad fit is a small fraction of the cost and disruption of discovering the same gaps six sprints into a full contract with a real deadline already committed.
+
+### (Scenario: A vendor offers to run the two-week trial sprint for free) Should I be suspicious if a vendor offers a free trial sprint instead of a paid one?
+Yes, treat a free offer as a caution flag rather than a bonus. A vendor waiving payment for the trial often staffs it with a lighter, less senior team than they'd assign on a real contract, which defeats the purpose of testing the actual team you'd work with.
+
+### (Scenario: A CTO has time to evaluate two finalists but isn't sure whether to run their trial sprints back to back or at the same time) Is it better to run trial sprints with two finalist vendors sequentially or in parallel?
+Parallel, when your timeline allows it. Matched conditions — same two-week window, comparable backlog complexity — produce a far more reliable head-to-head comparison than sequential trials separated by weeks, during which your own evaluation calibration can drift.
+
+### (Scenario: A CTO wants to know what a fair price range is for a small trial sprint team) What should a two-week trial sprint with a small team cost?
+Expect roughly €4,000-€9,000 for a team of two to three engineers plus part-time project management, priced at the vendor's normal blended rate — treat a quote dramatically below that range as a sign of a thinner, less senior team than you'd get on the real engagement.
+
+### (Scenario: A trial sprint finishes but the CTO is still unsure whether to proceed) What if the trial sprint results are mixed rather than clearly good or bad?
+Revisit the written rubric scores category by category rather than defaulting to a gut call — a mixed result usually means one category (often communication or blocker handling) is the actual concern, and that's a specific, negotiable item to raise directly before signing the full contract.
 
 <script type="application/ld+json">
 {
@@ -158,6 +176,38 @@ Treat it as a successful use of the trial, not wasted spend. The cost of a two-w
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Treat it as a successful use of the trial, not wasted spend. The cost of a two-week trial revealing a bad fit is a small fraction of the cost and disruption of discovering the same gaps six sprints into a full contract with a real deadline already committed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor offers to run the two-week trial sprint for free) Should I be suspicious if a vendor offers a free trial sprint instead of a paid one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, treat a free offer as a caution flag rather than a bonus. A vendor waiving payment for the trial often staffs it with a lighter, less senior team than they'd assign on a real contract, which defeats the purpose of testing the actual team you'd work with."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A CTO has time to evaluate two finalists but isn't sure whether to run their trial sprints back to back or at the same time) Is it better to run trial sprints with two finalist vendors sequentially or in parallel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Parallel, when your timeline allows it. Matched conditions — same two-week window, comparable backlog complexity — produce a far more reliable head-to-head comparison than sequential trials separated by weeks, during which your own evaluation calibration can drift."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A CTO wants to know what a fair price range is for a small trial sprint team) What should a two-week trial sprint with a small team cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Expect roughly €4,000-€9,000 for a team of two to three engineers plus part-time project management, priced at the vendor's normal blended rate — treat a quote dramatically below that range as a sign of a thinner, less senior team than you'd get on the real engagement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A trial sprint finishes but the CTO is still unsure whether to proceed) What if the trial sprint results are mixed rather than clearly good or bad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Revisit the written rubric scores category by category rather than defaulting to a gut call — a mixed result usually means one category (often communication or blocker handling) is the actual concern, and that's a specific, negotiable item to raise directly before signing the full contract."
       }
     }
   ]

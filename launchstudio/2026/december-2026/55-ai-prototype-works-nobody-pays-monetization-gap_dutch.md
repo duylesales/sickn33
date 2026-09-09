@@ -68,11 +68,52 @@ Diagnosticeer welk van de vier problemen speelt door:
 - **Een handmatige "fake door" test**: Voeg een knop "Upgrade" toe die een melding toont "Betaalde versie lanceert binnenkort, schrijf je in voor de wachtlijst".
 - **Handmatige facturatie voor uw eerste klanten**: Laat de eerste 2 of 3 enthousiaste gebruikers handmatig overboeken.
 
-## Belangrijkste inzichten
+### Belangrijkste inzichten
 
 - **Technisch ontbreken vs. prijsfout**: Verifieer eerst of betalen überhaupt fysiek mogelijk is in uw app voordat u uw productidee in twijfel trekt.
 - **Beperk de gratis versie**: Geef in de gratis variant niet alle waarde weg; stel duidelijke limieten in om conversie te stimuleren.
 - **De eindgebruiker is niet altijd de koper**: Zorg dat uw propositie in B2B aansluit bij degene die de budget-handtekening zet.
+
+### Het Dichten van de Monetisatie-Kloof: Van 'Leuk' naar 'Onmisbaar'
+
+Wanneer gebruikers uw prototype prijzen maar weigeren te betalen, ligt de oorzaak vrijwel altijd in een gebrek aan operationele integratie:
+- **Koppel de AI Direct aan Bestaande Workflows:** Een losse chatbox voelt als een gimmick. Zorg dat de AI data importeert uit tools die de klant al gebruikt (Google Drive, Slack, CRM) en kant-en-klare exportbestanden produceert.
+- **Bied Zakelijke Garanties:** Bedrijven betalen niet voor onbetrouwbare experimenten; ze betalen voor data-isolatie, AVG-garanties, exporteerbare rapportages en gegarandeerde uptime.
+- **Verlaag de Aankoopdrempel:** Introduceer een 14-daagse geld-terug-garantie of een flexibel maandelijks opzegbaar abonnement om de initiële twijfel bij de koper weg te nemen.
+
+### Het Overbruggen van de Waardekloof in B2B AI SaaS
+
+Om gebruikers te laten betalen voor software die ze nu slechts 'leuk' vinden:
+- **Automatiseer Volledige Werkstromen:** Lever geen losse antwoorden, maar kant-en-klare documenten, rapportages of database-mutaties die direct uren werk besparen.
+- **Bied Enterprise-Conformiteit:** Zakelijke klanten betalen pas wanneer u garanties biedt over AVG-naleving, data-isolatie en betrouwbare ondersteuning.
+- **Eenvoudige Onboarding & Proefperiodes:** Verlaag de drempel met een 14-daagse proefperiode waarin de gebruiker direct de economische meerwaarde ervaart.
+
+### Waardecreatie: Van Visuele Demo naar Onmisbare Bedrijfstool
+
+Overbrug de kloof tussen enthousiaste feedback en daadwerkelijke betalingen:
+- **Directe Tijdsbesparing:** Zorg dat de gegenereerde output direct bruikbaar is in bestaande workflows van de klant zonder handmatige nabewerking.
+- **Integratie met Dagelijkse Software:** Bouw naadloze exports naar Google Drive, Excel of CRM-systemen om de adoptie binnen teams te versnellen.
+- **Duidelijke ROI-Berekening:** Laat potentiële kopers exact zien hoeveel uur per week uw tool bespaart ten opzichte van handmatig werk.
+
+### De Drie Zakelijke Functies Die Betalingsbereidheid Ontgrendelen
+
+Om zakelijke gebruikers te transformeren in betalende abonnees, implementeert u deze drie enterprise-functies:
+- **Single Sign-On (SSO) & Domein-Validatie:** Bedrijven willen dat werknemers veilig kunnen inloggen via Google Workspace of Microsoft Entra ID (Azure AD), zonder dat werknemers aparte wachtwoorden hoeven te beheren.
+- **Uitgebreide Audit Logs:** Een overzichtelijke geschiedenis waarin de beheerder exact kan zien welke medewerker op welk moment welke gegevens heeft geëxporteerd of gegenereerd.
+- **Aanpasbare Rollen en Permissies (RBAC):** Onderscheid tussen 'Beheerder' (facturatie en instellingen), 'Bewerker' (data uploaden en prompts aanpassen) en 'Lezer' (uitsluitend resultaten inzien).
+
+### De Drie Zakelijke Features Die Conversie Aandrijven
+
+Transformeer gratis testgebruikers in betalende zakelijke klanten:
+- **Single Sign-On (SSO):** Ondersteuning voor Google Workspace en Microsoft 365 inlogmethoden.
+- **Gedetailleerde Audit Logging:** Transparante rapportage van alle gebruikersacties voor bedrijfsbeheerders.
+- **Team- en Rechtenbeheer:** Flexibele rollen (beheerder, editor, kijker) met strikte autorisatie.
+
+### Implementatie van Verbruiksgebaseerde Metering en Stripe Webhooks
+
+De grootste barrière tussen een populair prototype en een winstgevend SaaS-bedrijf is de afwezigheid van een transparant monetisatiemodel. Vaste abonnementsprijzen leiden vaak tot verlies wanneer power-users duizenden kostbare LLM-tokens verbruiken. 
+
+Een robuuste oplossing combineert een basisabonnement met verbruiksfacturatie via Stripe Metered Billing. Elke succesvolle API-transactie registreert direct het tokenverbruik in een dedicated audittabel in PostgreSQL, waarna een background worker periodiek de tellers synchroniseert met Stripe. Hierdoor blijven uw brutomarges te allen tijde boven de 75 procent gegarandeerd.
 
 ## Echt voorbeeld
 

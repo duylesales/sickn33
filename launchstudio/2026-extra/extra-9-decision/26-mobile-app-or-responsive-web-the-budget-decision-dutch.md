@@ -95,7 +95,7 @@ LaunchStudio brengt het prototype dat u in Lovable of Bolt heeft opgezet in beid
 
 Twijfelt u nog over de juiste route? Reken beide opties eerst naast elkaar door: [vergelijk de kosten voor web en mobiel in de prijscalculator](https://launchstudio.eu/nl/#calculator) en ontdek wat een aanwezigheid in de app stores u daadwerkelijk kost. En wanneer een mobiele app als winnaar uit de bus komt: de mobiele engineering van LaunchStudio wordt geleverd door [Manifera](https://www.manifera.com/services/mobile-app-development/), een bureau dat al meer dan elf jaar native en cross-platform applicaties realiseert en onderhoudt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een oprichter in actie: de app die een webproduct bleek te zijn
 

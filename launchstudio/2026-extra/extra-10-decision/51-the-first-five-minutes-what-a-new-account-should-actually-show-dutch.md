@@ -69,32 +69,37 @@ Hanteert u demodata? Voldoe dan aan deze drie gouden regels:
 
 ## Checklists versus Product Tours
 
-Veel vroege startups bouwen een interactieve rondleiding (*product tour*) met opdringerige tekstwolkjes (*tooltips*) die over het scherm zweven.
+De twee standaardinstrumenten voor onboarding zijn de **product tour** (een reeks pop-ups en tooltips die iemand door de interface loodsen) en de **onboarding-checklist** (een compact stappenplan met duidelijke voortgangsbalk).
 
-Voor vrijwel alle zakelijke software is een **vaste onboarding-checklist** een oneindig betere investering:
-- Een product tour wordt door 90% van de gebruikers direct weggeklikt omdat men er op dat moment geen tijd voor heeft.
-- Een checklist blijft rustig in beeld staan. Een klant die na stap één moet vertrekken en twee dagen later terugkomt, ziet zijn voortgang bewaard en weet exact waar hij de draad weer moet oppakken.
+Voor vrijwel elk vroeg softwareproduct is de checklist met afstand de beste investering, om een reden die niets met persoonlijke smaak te maken heeft:
+- Een interactieve tour wordt slechts één keer bekeken, op het allerslechtste moment — wanneer de bezoeker nog geen enkel mentaal model van de app heeft en vooral geïrriteerd alle vensters wegklikt.
+- Een **checklist blijft persistent aanwezig**. Een bezoeker die na stap 1 afhaakt en twee dagen later terugkeert, ziet exact welke stappen al voltooid zijn en waar hij direct kan hervatten. En juist die terugkerende bezoeker is de gebruiker die u wilt converteren naar een betalende klant.
 
-Houd de checklist beperkt tot **drie tot maximaal vijf echte stappen** gericht op het doel van de klant (*"Koppel uw agenda"*, *"Voeg uw eerste dienst toe"*). Vermijd opvullers zoals *"Bekijk de instellingenpagina"*; dat leert de klant alleen dat de lijst niet de moeite waard is.
+Een checklist dwingt u bovendien tot gezonde afbakening: beperk de lijst tot drie tot maximaal vijf concrete stappen die direct toewerken naar het doel van de klant, en niet naar uw eigen functielijst. *"Koppel uw agenda"*, *"Voeg uw eerste dienst toe"*, *"Verstuur een testboeking"* is een helder pad. *"Verken de instellingenpagina"* is inhoudsloze opvulling die gebruikers leert dat de lijst niet de moeite van het afronden waard is.
 
-## De Eerste Handeling: Omkeerbaar, Snel en Eigen
+Houd tevens rekening met de benodigde backend-architectuur: een professionele checklist vereist dat het systeem betrouwbaar kan detecteren of een stap daadwerkelijk is voltooid — wat echte databasecontroles vereist, en niet een oppervlakkig vlaggetje in de browser dat op 'true' springt zodra iemand op een knop klikt. Prototypes implementeren vrijwel altijd die oppervlakkige vlaggenvariant, wat leidt tot de absurde situatie waarin een klant een voltooide checklist ziet maar nog steeds met een volkomen lege applicatie zit.
+## De Eerste Handeling: Omkeerbaar, Snel en Persoonlijk
 
-Wat uw eerste stap ook is, zorg dat deze voldoet aan drie eigenschappen:
-1. **Omkeerbaar (*Reversible*):** Een nieuwe gebruiker durft niets aan te klikken als hij bang is iets definitief te verpesten. Maak duidelijk dat alles later gewijzigd of verwijderd kan worden.
-2. **Snel (*Fast*):** De eerste stap moet binnen 60 seconden voltooid zijn zónder dat de gebruiker de app hoeft te verlaten (moet hij een API-sleutel opzoeken of een CSV-bestand exporteren? Maak dat dan stap drie, nooit stap één).
-3. **Eigen (*Theirs*):** De handeling moet iets creëren dat van de klant zelf is: zijn eigen bedrijfsnaam, zijn echte klant of zijn eigen product. Pas bij het eerste eigen record verandert de mentale status van "een tool uitproberen" naar "mijn systeem gebruiken".
+Welke eerste actie u ook kiest als initiële stap in de onboarding, drie fundamentele eigenschappen verhogen de voltooiingsgraad spectaculair:
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste webontwikkeling) testen we deze 'first-run experience' standaard op maagdelijk lege accounts tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). Wij zorgen dat uw eerste vijf minuten overtuigen in plaats van verwarren. [Neem contact op voor een technische review](https://launchstudio.eu/nl/#contact) — wij lopen uw onboarding binnen één werkdag na.
+1. **Omkeerbaar (Reversible):** Een nieuwe gebruiker weigert een handeling uit te voeren waarvan hij vermoedt dat hij deze niet meer ongedaan kan maken. Als stap 1 luidt *"importeer uw contacten"*, verhoogt de aanwezigheid van een zichtbare knop *"u kunt deze later altijd met één klik weer wissen"* het conversiepercentage enorm. Prototypes maken imports vaak eenrichtingsverkeer, waardoor voorzichtige zakelijke klanten direct afhaken.
+2. **Snel (Fast):** De eerste actie moet binnen zestig seconden voltooid zijn en direct visueel resultaat opleveren. Alles wat vereist dat de gebruiker de app verlaat — een API-sleutel opzoeken, een collega om goedkeuring vragen, een complexe CSV formatteren — hoort thuis in stap twee of drie, ongeacht hoe centraal het staat in uw backend-architectuur.
+3. **Persoonlijk (Theirs):** De handeling moet iets creëren dat de klant direct herkent als zijn eigen realiteit: zijn eigen klantnaam, zijn feitelijke uurtarief, zijn echte bedrijfslogo. De psychologische overstap van *"ik probeer een tool"* naar *"ik gebruik míjn software"* vindt plaats bij het allereerste echte record; alles daarvóór is slechts vrijblijvend rondkijken.
 
-## Hoe U Dit Vandaag Zelf Kunt Testen (in 15 Minuten)
+Hier hoort een technische waarborg bij die cruciaal is, omdat AI-gegenereerde software hier stelselmatig op faalt: dat allereerste echte record moet gegarandeerd en betrouwbaar worden opgeslagen in de database, en de gebruiker moet direct zien dat het gelukt is. Een prototype dat een vrolijke succesmelding toont terwijl de database-write op de achtergrond geruisloos crashte — door een ontbrekende RLS-regel of een verplicht veld dat niet in het formulier zat — creëert de slechtst denkbare eerste indruk: de klant deed alles goed, en zijn data is in het niets verdwenen. 
 
-1. Open een incognito-venster in uw browser.
-2. Registreer een account met een e-mailadres dat u nog nooit eerder in het systeem heeft gebruikt.
-3. Bekijk de eerste pagina met de ogen van een vreemde: ziet u ergens `NaN`, een oneindige spinner of een leeg vak?
-4. Herhaal deze test op een smartphone via een 4G/5G-verbinding (geen wifi!).
-5. Voer de eerste handeling uit en controleer direct in uw database of het record daadwerkelijk correct is opgeslagen.
+Het end-to-end verifiëren van dit 'first-run' pad op een spiksplinternieuw account is een vast onderdeel van een productie-audit door LaunchStudio, geruggensteund door Manifera's 11+ jaar ervaring. [Beschrijf uw project voor een deskundige beoordeling binnen één werkdag](https://launchstudio.eu/nl/#contact).
+## Hoe U Dit Vandaag Zelf Kunt Testen
 
-## Praktijkvoorbeeld
+U heeft hier geen ingewikkelde testtools voor nodig, louter een kwartier discipline:
+
+1. **Open een incognito-venster op uw desktop:** Maak een account aan met een e-mailadres dat u nog nooit eerder in het product heeft gebruikt — een écht nieuw account, want hergebruik van een bestaand testadres verbergt vaak databasefouten.
+2. **Leg de eerste indruk vast:** Maak direct een screenshot of noteer exact wat u ziet: elk paneel, elke lege tabel, elk component dat onaf oogt. Verander nog niets; registreer puur de naakte werkelijkheid.
+3. **Herhaal de test op uw mobiele telefoon via 4G/5G:** Deze mobiele test legt direct een geheel andere categorie fouten bloot: lay-outs die uitgaan van een breed scherm, lege status-illustraties die de primaire actieknop onder de vouw (below the fold) drukken, en trage laadtijden die op een mobiele verbinding lijken op een fatale crash.
+4. **Voer de eerste handeling volledig uit:** Doorloop de eerste taak tot het einde en inspecteer rechtstreeks in uw database of het record daadwerkelijk correct is opgeslagen.
+
+Herhaal deze korte oefening na elke substantiële update aan uw registratie- of onboardingsstroom, want dit scherm heeft de vervelende gewoonte om geruisloos te degraderen terwijl niemand oplet.
+## Echt voorbeeld
 
 ### Het Dashboard Dat Tegen Elke Klant "NaN" Zei
 

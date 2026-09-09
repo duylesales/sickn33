@@ -34,6 +34,10 @@ Een eerlijke technische audit van Priya's Bolt-applicatie legde vier kritieke hi
 3. **Ontbreken van audit logs**: Er werd niet geregistreerd welke manager wanneer een rapport had ingezien of geëxporteerd.
 4. **Geen formele DPA en incidentresponsplan**: Priya had geen juridisch getoetste verwerkersovereenkomst conform de AVG/GDPR en geen gedocumenteerd stappenplan voor datalekken.
 
+## Waarom "Het Werkte in de Demo" Hier Helemaal Niets Waard Is
+
+Een detail dat Priya oprecht verraste: de procurement-beoordelaar van haar potentiële klant vroeg haar nooit om het werkende product te demonstreren. Niet één keer. De volledige beoordeling vond plaats op papier — encryptiespecificaties, een gedocumenteerd incident-responseplan, een ondertekende Verwerkersovereenkomst (DPA), bewijs van geteste backups — omdat een enterprise procurement-team niet evalueert of het product functioneel goed is, maar of de leverancier een beheersbaar risico vormt als er later iets misgaat. Een vlekkeloze demo en een ingevulde security-vragenlijst beantwoorden twee fundamenteel verschillende vragen, en slechts één daarvan bepaalt of het contract daadwerkelijk wordt getekend. Dit is precies waarom oprichters die aannemen dat "het product voor zichzelf spreekt" worden overrompeld door procurement: het verkoopgesprek en de technische beveiligingsbeoordeling lopen via totaal verschillende trajecten, beoordeeld door verschillende stakeholders met volstrekt verschillende criteria.
+
 ## De Kloof Dichten in Drie Weken
 
 Priya schakelde het Enterprise Hardening team van LaunchStudio in. In een intensieve fixed-scope sprint van 14 werkdagen voerden senior engineers de noodzakelijke aanpassingen door direct op haar bestaande codebase:
@@ -66,6 +70,33 @@ Priya hoefde haar met Bolt gebouwde product niet weg te gooien of maandenlang op
 Heeft u een grote klant in het vooruitzicht? Zorg dat uw beveiliging en compliance op orde zijn voordat de vragenlijst op uw bureau landt.
 
 LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging — waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
+
+### De Anatomie van een Enterprise Procurement Goedkeuring
+
+Enterprise-inkoopteams beoordelen leveranciers niet op de schoonheid van hun interface, maar op operationele risicomijdendheid:
+- **Strikte Toegangsbeveiliging:** Bewijs van geautomatiseerde sessie-afsluiting, meervoudige authenticatie en gedocumenteerd medewerkersbeleid.
+- **Incident Response Protocol:** Een schriftelijk stappenplan waarin staat binnen hoeveel uur de CISO wordt geïnformeerd bij een vermoedelijk datalek.
+- **Geteste Herstelprocedures:** Aantoonbare point-in-time backups met een bewezen hersteltijd onder de vier uur.
+
+### De Technische Datakamer voor Enterprise Procurement
+
+Om een CISO en inkoopafdeling van een multinational binnen 48 uur te overtuigen, levert LaunchStudio een gestructureerde technische one-pager met:
+- **Architectuur- en Netwerkdiagram:** Volledige documentatie van ingress-controllers, TLS 1.3 encryptie, VPC-peering en database-subnetten.
+- **Geautomatiseerde Penetratie- en Kwetsbaarheidsrapporten:** Het bewijs dat alle endpoints zijn getest volgens de OWASP Top 10 standaarden met nul openstaande 'High' of 'Critical' bevindingen.
+- **Formele Verwerkersovereenkomst (DPA):** Standaard voorzien van de meest recente EU Standard Contractual Clauses (SCC's) en duidelijke bewaartermijnen voor gegevens.
+
+### Enterprise Procurement Documentatie en Risicomanagement
+
+Overtuig enterprise compliance officers met complete documentatie:
+- **Netwerkarchitectuur en Encryptie:** Toon aan dat alle dataverkeer is beveiligd met TLS 1.3 en data at rest met AES-256.
+- **Incident Management Protocol:** Lever een gedocumenteerd draaiboek voor het melden en oplossen van potentiële incidenten.
+- **DPA en AVG Naleving:** Zorg voor transparante afspraken over gegevensverwerking en subverwerkers.
+
+### Het Technische Draaiboek voor Enterprise Leverancierskwalificatie
+
+Wanneer een solo-oprichter een contract met een corporate klant wil sluiten, verschuift het gesprek direct van 'welke features heeft het product' naar 'hoe veilig is uw infrastructuur'. Grote ondernemingen sturen uitgebreide Security Assessment Questionnaires (SAQ) met honderden vragen over encryptie, back-upbeleid en toegangscontrole.
+
+Door de applicatie vanaf de basis in te richten volgens SOC2 Type 1 richtlijnen met role-based access control (RBAC), multi-factor authenticatie (MFA) via Supabase of Clerk, en geautomatiseerde dagelijkse back-ups op AWS S3 met versleuteling in rust (AES-256), kan een solo-ondernemer deze audits binnen 48 uur succesvol doorstaan zonder een voltijds compliance-team in te huren.
 
 ## Echt voorbeeld
 

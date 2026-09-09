@@ -62,6 +62,15 @@ De overstap van een traditioneel web-development team naar een Full-AI-Stack tea
 2. **Infrastructure-as-Code voor AI:** Wij richten geavanceerde AI-infrastructuur in (vectordatabases, Redis semantische caches en Langfuse observability) via beproefde DevOps-methodieken.
 3. **Evaluation-Driven Development (EDD):** Wij implementeren geautomatiseerde CI/CD-pipelines met "LLM-as-a-Judge" om regressies en hallucinaties statistisch te testen en voorkomen.
 
+### Het Overbruggen van de Frontend-Backend Kloof bij AI-Apps
+
+Bij door AI gegenereerde applicaties is de integratie tussen een snelle gebruikersinterface en een betrouwbare transactionele backend de meest kwetsbare schakel. LaunchStudio dicht deze kloof met bewezen patronen:
+1. **Transactional Outbox Patroon:** Wanneer een gebruiker een actie initieert die zowel een databasewijziging als een externe AI-aanroep vereist, slaan we de gebeurtenis eerst atomair op in een outbox-tabel binnen dezelfde databasetransactie. Een dedicated worker verwerkt vervolgens de AI-aanroep, waardoor dataverlies bij netwerkstoringen fysiek onmogelijk is.
+2. **Robuuste Webhook-Wachtrijen:** Inkomende webhooks van betalingsproviders (Mollie, Stripe) en modelplatformen worden direct gevalideerd op cryptografische handtekeningen en opgeslagen in een Redis-wachtrij voor asynchrone verwerking, waardoor geen enkele betaling of statuswijziging verloren gaat bij piekbelasting.
+3. **Deterministische API-Contracten met tRPC of OpenAPI:** We vervangen handmatige `fetch`-verzoeken door end-to-end type-safe API-contracten. Elke parameter en response-veld wordt automatisch gecontroleerd bij compilatie, waardoor typefouten in veldnamen definitief tot het verleden behoren.
+4. **Rate Limiting en Token Bucket Algoritmen:** Om te voorkomen dat individuele gebruikers of kwaadwillende bots de backend overbelasten met dure AI-verzoeken, implementeren we gedistribueerde rate-limiters op basis van IP-adres en gebruikersaccount.
+5. **Realtime Status-Synchronisatie via WebSockets:** Voor langdurige AI-taken houden we de frontend continu op de hoogte van de voortgang via lichte WebSocket- of Server-Sent Events-verbindingen, wat resulteert in een interactieve en transparante gebruikerservaring.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: Het E-Commerce Platform Dat Niet Kon Zoeken

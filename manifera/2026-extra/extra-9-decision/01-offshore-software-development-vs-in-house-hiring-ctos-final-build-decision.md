@@ -107,6 +107,14 @@ Talk to one of our senior architects in Amsterdam about which model fits your sp
 }
 </script>
 
+## The Math CTOs Actually Run: A 5-Engineer Team, Year One
+
+Run the numbers on a five-engineer build team and the gap stops being abstract. In-house in the Netherlands: five senior engineers at an average €75k gross salary is €375k, plus employer social contributions at roughly 22% (€82,500), plus recruiter placement fees at 20-30% of first-year salary for the two or three roles you cannot fill through referrals alone (€37,500-€56,000), plus onboarding ramp time before a new hire is net-productive (typically 6-10 weeks), plus benefits and office overhead of roughly €8k per head (€40k). Total: €535k-€555k before a single feature ships, and that excludes the cost of a 14-month average attrition event, which forces you to re-run the entire cycle.
+
+Offshore, structured as a dedicated team through Manifera's Vietnam delivery hub, the same five engineers run at a blended fully-loaded rate of roughly $4,000-$4,500 per engineer per month — $240k-$270k annualized (€220k-€248k) — with no separate recruiter fees, no benefits administration, and a three-week ramp instead of a five-month one. That is a 1.2x-1.4x cost multiplier in favor of offshore before factoring in the opportunity cost of the hiring gap itself.
+
+The three line items CFOs consistently miss when they compare a day rate to a salary: employer social contributions (17-24% depending on Dutch, German, or Belgian jurisdiction), recruiter placement fees (20-30% of first-year salary, paid whether or not the hire lasts), and attrition replacement cost (roughly three months of lost productivity plus a full rehire cycle at the 14-month mark, when EU tech turnover typically spikes).
+
 ## Frequently Asked Questions
 
 ### Is offshore software development actually cheaper than in-house hiring long-term?
@@ -123,6 +131,18 @@ Yes, and it is one of the most common models among CTOs at scale-ups. Keeping a 
 
 ### How do I evaluate code quality before committing to an offshore partner?
 Request a live technical interview with the actual engineers who would join your project, review their code review and CI/CD practices, and ask for references from clients with a similar tech stack rather than relying on marketing case studies alone.
+
+### (Scenario: Series B startup scaling after a funding round) Can I convert offshore dedicated team engineers into permanent in-house hires later?
+Yes — most dedicated team contracts allow a transfer or "buy-out" clause after a defined period, typically 6-12 months, though the terms vary by vendor. Confirm this clause exists in writing before signing if long-term conversion is part of your hiring strategy.
+
+### (Scenario: CTO introducing offshore capacity to a resistant in-house team) How do I manage internal team morale when adding an offshore dedicated team?
+Frame the offshore team as capacity expansion, not replacement, and give your in-house engineers ownership of architecture and code standards that the offshore team must follow. Most morale friction disappears once in-house staff see the offshore team as reporting into their technical direction rather than competing with it.
+
+### (Scenario: EU fintech or healthtech product handling personal data) Does offshore software development complicate GDPR compliance for an EU-based product?
+Not when the contract is structured correctly — data processing agreements, EU-based hosting, and role-based access controls keep the offshore engineering team as a processor under GDPR without moving regulated data outside the EU. Confirm the partner's DPA terms and hosting location before granting any production data access.
+
+### (Scenario: Funding round delayed mid-engagement) What happens contractually if I need to pause or scale down an offshore dedicated team early?
+Most dedicated team contracts include a notice period of two to four weeks for scaling down, far shorter than the formal consultation processes required for in-house layoffs in most EU jurisdictions. Review the contract's scale-down clause and minimum commitment period before signing, since terms vary meaningfully between vendors.
 
 <script type="application/ld+json">
 {
@@ -167,6 +187,38 @@ Request a live technical interview with the actual engineers who would join your
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Request a live technical interview with the actual engineers who would join your project, review their code review and CI/CD practices, and ask for references from clients with a similar tech stack rather than relying on marketing case studies alone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I convert offshore dedicated team engineers into permanent in-house hires later?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — most dedicated team contracts allow a transfer or buy-out clause after a defined period, typically 6-12 months, though terms vary by vendor. Confirm this clause exists in writing before signing if long-term conversion is part of your hiring strategy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I manage internal team morale when adding an offshore dedicated team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Frame the offshore team as capacity expansion, not replacement, and give your in-house engineers ownership of architecture and code standards that the offshore team must follow. Most morale friction disappears once in-house staff see the offshore team as reporting into their technical direction rather than competing with it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does offshore software development complicate GDPR compliance for an EU-based product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not when the contract is structured correctly — data processing agreements, EU-based hosting, and role-based access controls keep the offshore engineering team as a processor under GDPR without moving regulated data outside the EU. Confirm the partner's DPA terms and hosting location before granting any production data access."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens contractually if I need to pause or scale down an offshore dedicated team early?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most dedicated team contracts include a notice period of two to four weeks for scaling down, far shorter than the formal consultation processes required for in-house layoffs in most EU jurisdictions. Review the contract's scale-down clause and minimum commitment period before signing, since terms vary meaningfully between vendors."
       }
     }
   ]

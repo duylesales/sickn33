@@ -93,20 +93,53 @@ Nee, hoewel de belangen bijzonder hoog zijn voor oprichters in Hengelo's gezondh
 ### Wie voert de beveiligingsaudit uit?
 Manifera's engineeringteam, meer dan 120 man sterk, met werk deels gecoördineerd vanuit ons kantoor in Singapore. Dit is hetzelfde team dat veilige systemen heeft opgeleverd voor enterprise-klanten als Vodafone en TNO.
 
-### Wat is een verwerkersovereenkomst (DPA), en heb ik er daadwerkelijk een nodig?
-Een verwerkersovereenkomst (Data Processing Agreement of DPA) is een juridisch contract tussen u en elke externe leverancier die namens u persoonsgegevens verwerkt, waaronder AI-providers, e-mailtools en analyticsdiensten. Als uw app persoonsgegevens van EU-gebruikers verwerkt en vertrouwt op dergelijke leveranciers, vereist de AVG dat er een DPA aanwezig is — de meeste oprichters die standaard AI-provider API's gebruiken hebben nooit gecontroleerd of er een aanwezig is.
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is AI-databeveiliging anders dan algemene app-beveiliging?", "acceptedAnswer": { "@type": "Answer", "text": "Het overlapt, maar richt zich specifiek op data-opslag, toegangsbeleid, versleuteling en audit-logging." } },
-    { "@type": "Question", "name": "Afhandelt LaunchStudio specifiek AVG-compliance?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, audits omvatten AVG-relevante oplossingen zoals toegangsbeperking, versleuteling en audit-trails." } },
-    { "@type": "Question", "name": "Wat bedoelde Herre Roelevink met 'architectuur en beveiliging'?", "acceptedAnswer": { "@type": "Answer", "text": "Het initiële product bouwen is niet meer het moeilijkste; het echte werk is de architectuur en beveiliging om productierijp te worden." } },
-    { "@type": "Question", "name": "Is LaunchStudio alleen relevant voor de gezondheidszorg of gereguleerde producten?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, hoewel belangen hoog zijn in gereguleerde sectoren, profiteert elke app die gebruikersgegevens verwerkt." } },
-    { "@type": "Question", "name": "Wie voert de beveiligingsaudit uit?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's team van 120+ engineers, deels gecoördineerd vanuit Singapore, hetzelfde team achter projecten voor Vodafone en TNO." } },
-    { "@type": "Question", "name": "Wat is een verwerkersovereenkomst (DPA), en heb ik er daadwerkelijk een nodig?", "acceptedAnswer": { "@type": "Answer", "text": "Een DPA is een contract met leveranciers die persoonsgegevens verwerken. De AVG vereist dit als uw app EU-persoonsgegevens verwerkt." } }
+    {
+      "@type": "Question",
+      "name": "Is AI-databeveiliging anders dan algemene app-beveiliging?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het overlapt, maar richt zich specifiek op data-opslag, toegangsbeleid, versleuteling en audit-logging."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Afhandelt LaunchStudio specifiek AVG-compliance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, audits omvatten AVG-relevante oplossingen zoals toegangsbeperking, versleuteling en audit-trails."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat bedoelde Herre Roelevink met 'architectuur en beveiliging'?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het initiële product bouwen is niet meer het moeilijkste; het echte werk is de architectuur en beveiliging om productierijp te worden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LaunchStudio alleen relevant voor de gezondheidszorg of gereguleerde producten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, hoewel belangen hoog zijn in gereguleerde sectoren, profiteert elke app die gebruikersgegevens verwerkt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie voert de beveiligingsaudit uit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manifera's team van 120+ engineers, deels gecoördineerd vanuit Singapore, hetzelfde team achter projecten voor Vodafone en TNO."
+      }
+    }
   ]
 }
 </script>

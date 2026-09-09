@@ -66,8 +66,7 @@ Vaste-prijs engineering verwijdert alle ambiguïteit volledig:
 
 [Bescherm uw toekomstige equity en vraag een vaste-prijs lanceringsvoorstel aan](https://launchstudio.eu/nl/#contact).
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De 25% Revenue Share Die 7 Maanden Stilstond
 
 Eline Veldhuizen, een legal-tech-consultant in Amsterdam, bouwde RechtDirect — een AI-contractbeoordelingsassistent — in Lovable. Een freelance ontwikkelaar bood aan Supabase, Stripe en OpenAI aan te sluiten voor 25% van de brutomarge.

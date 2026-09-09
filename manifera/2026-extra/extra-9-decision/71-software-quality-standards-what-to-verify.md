@@ -98,6 +98,12 @@ Software quality that survives contact with a live production environment is bui
 
 Talk to one of our senior architects about your specific quality requirements before you finalize any vendor decision — we'll walk you through our actual QA architecture, not a summary of it.
 
+## Static Analysis Quality Gates: The Thresholds That Actually Matter
+
+Beyond "SonarQube passes," ask what specific thresholds the quality gate enforces — a static analysis tool configured with default settings catches far less than one tuned to your risk profile. A defensible gate blocks merge when cyclomatic complexity exceeds 15 per function, code duplication exceeds 3-5% on new code, the maintainability rating drops below an A/B threshold, or any new critical or blocker-severity vulnerability is introduced. Vendors who can quote these numbers from memory are running a gate that's actually configured; vendors who say "we use SonarQube" without knowing the threshold values are running it in report-only mode, which catches nothing before merge.
+
+Also ask specifically about new-code versus overall-code coverage thresholds — a mature setup enforces a stricter bar, such as 80%, on new and changed code than on the full legacy codebase, such as 60% aggregate, since retrofitting tests onto old code is a separate, lower-priority initiative from keeping new code clean. A vendor applying one flat coverage number to both signals they haven't thought through how quality gates should evolve as a codebase ages. Request the actual SonarQube (or equivalent) project dashboard, not a screenshot, during due diligence — a live dashboard reveals trend lines a static export cannot.
+
 ## Frequently Asked Questions
 
 ### What software quality metrics should I request from a vendor before signing a contract?
@@ -114,6 +120,18 @@ Not inherently — quality depends on process discipline, not location. A codifi
 
 ### Should software quality standards be written into the vendor contract itself?
 Yes. Defect-escape thresholds, code review requirements, and reporting cadence for QA metrics should appear as measurable terms in the statement of work, not just described verbally during sales conversations, so both sides have an enforceable reference point after the contract is signed.
+
+### (Scenario: a vendor is inheriting an existing, undocumented codebase) How should QA standards change when a vendor takes over a legacy codebase without existing tests?
+Expect an initial characterization-testing phase before new feature work starts, where the vendor writes tests against current behavior rather than desired behavior to create a safety net, typically covering the highest-risk modules first. A vendor proposing to jump straight into new features on an undocumented, untested codebase without this phase is accepting hidden regression risk on your behalf without telling you.
+
+### (Scenario: a vendor's test suite technically passes but individual tests are frequently skipped or flagged flaky) What does it mean if a vendor's test suite has a high flaky-test rate?
+A flaky-test rate above roughly 2-3% of the suite is a reliability problem, not a minor nuisance, because teams start ignoring red builds when failures are routinely unrelated to their change, which defeats the purpose of an automated gate. Ask how the vendor tracks and quarantines flaky tests, and whether flaky tests block merge or get silently re-run until they pass.
+
+### (Scenario: evaluating a vendor's approach to application security testing) Is security testing part of standard QA, or does it need to be requested separately?
+Standard QA covering unit, integration, and code review does not automatically include security-specific testing like SAST or DAST unless explicitly scoped. For any system handling sensitive data or payments, confirm SAST tooling runs in the CI pipeline rather than periodically, and ask whether DAST or penetration testing is included in the base engagement or billed as an add-on.
+
+### (Scenario: planning for a high-traffic launch) Should load and performance testing be included in the standard QA process?
+Not by default — most standard QA pyramids cover functional correctness, not load behavior under production-scale traffic, so performance testing needs explicit scoping if your launch involves a traffic spike, a marketing campaign, or a hard uptime SLA. Ask the vendor whether they've run load tests on a comparable system and at what concurrent user count response time or error rate started degrading.
 
 <script type="application/ld+json">
 {
@@ -144,6 +162,26 @@ Yes. Defect-escape thresholds, code review requirements, and reporting cadence f
       "@type": "Question",
       "name": "Should software quality standards be written into the vendor contract itself?",
       "acceptedAnswer": {"@type": "Answer", "text": "Yes. Defect-escape thresholds, code review requirements, and reporting cadence for QA metrics should appear as measurable terms in the statement of work, not just described verbally during sales conversations."}
+    },
+    {
+      "@type": "Question",
+      "name": "How should QA standards change when a vendor takes over a legacy codebase without existing tests?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Expect an initial characterization-testing phase before new feature work starts, where the vendor writes tests against current behavior to create a safety net, typically covering the highest-risk modules first. A vendor skipping this phase is accepting hidden regression risk on your behalf without telling you."}
+    },
+    {
+      "@type": "Question",
+      "name": "What does it mean if a vendor's test suite has a high flaky-test rate?",
+      "acceptedAnswer": {"@type": "Answer", "text": "A flaky-test rate above roughly 2-3% of the suite is a reliability problem, since teams start ignoring red builds when failures are routinely unrelated to their change, defeating the purpose of an automated gate. Ask whether flaky tests block merge or get silently re-run until they pass."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is security testing part of standard QA, or does it need to be requested separately?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Standard QA covering unit, integration, and code review does not automatically include SAST or DAST unless explicitly scoped. For systems handling sensitive data or payments, confirm SAST runs in the CI pipeline and whether DAST or penetration testing is included in the base engagement or billed separately."}
+    },
+    {
+      "@type": "Question",
+      "name": "Should load and performance testing be included in the standard QA process?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Not by default — standard QA pyramids cover functional correctness, not load behavior under production-scale traffic. Performance testing needs explicit scoping if the launch involves a traffic spike, marketing campaign, or hard uptime SLA."}
     }
   ]
 }

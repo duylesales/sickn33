@@ -7,6 +7,31 @@ Doelgroep: AI-Native Founder (niet-technisch)
 
 # Productieklaar Betekent Niet Herbouwd: Een Gebruikelijke Angst Ontkracht
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Productieklaar Betekent Niet Herbouwd: Een Gebruikelijke Angst Ontkracht",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/production-ready-doesnt-mean-rebuilt-debunking-common-fear"
+  }
+}
+</script>
+
+
 Vraag een founder waarom ze het productieklaar maken van hun vibe-gecodeerde prototype uitgesteld hebben, en een gebruikelijk, zelden expliciet uitgesproken antwoord komt uiteindelijk naar boven: een angst dat "productieklaar" een beleefde manier is om te zeggen "we gaan alles herbouwen wat je gemaakt hebt," en weken of maanden iteratie en ontwerpbeslissingen weggooien ten gunste van opnieuw beginnen met een traditioneel ontwikkelproces. Deze angst is begrijpelijk gezien hoe de traditionele software-industrie historisch geopereerd heeft, en het is ook, in de overweldigende meerderheid van gevallen, simpelweg onjuist.
 
 ## Waar Deze Angst Vandaan Komt
@@ -36,6 +61,17 @@ Een voorstel dat onmiddellijk springt naar "laten we dit correct herbouwen" zond
 [LaunchStudio](https://launchstudio.eu/nl/) start elke opdracht met precies dit soort afgebakende audit, en verhardt wat bestaat in plaats van standaard te herbouwen, en is transparant over de zeldzame gevallen waar herstructurering oprecht gerechtvaardigd is, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten van verharden, niet alleen bouwen vanaf nul.
 
 [Ontdek wat jouw specifieke prototype daadwerkelijk nodig heeft voordat je het ergste aanneemt](https://launchstudio.eu/nl/#contact) — het antwoord is doorgaans kleiner en minder disruptief dan de angst suggereert.
+
+## Hoe het Changelog van een Typisch Verhardingstraject Eruitziet
+
+Vage geruststellingen dat "er niets herbouwd hoeft te worden" zijn minder overtuigend dan het concrete changelog van een echt verhardingstraject. Bij prototypes gebouwd met Lovable, Bolt of Cursor clusteren de wijzigingen zich vrijwel altijd in voorspelbare, gerichte ingrepen:
+
+- **Migratie van API-sleutels**: Verwijderen van hardcoded tokens uit bronbestanden en Git-historie; veilige injectie via omgevingsvariabelen.
+- **Implementatie van Server-Side Autorisatie**: Toevoegen van middleware die bij elke API-aanroep verifieert of de ingelogde gebruiker daadwerkelijk eigenaar is van de opgevraagde resource.
+- **Idempotente Betalingsverwerking**: Inrichten van Stripe/Mollie webhook-handlers met idempotency keys om dubbele afschrijvingen uit te sluiten.
+- **Foutafhandeling en Logging**: Integratie van Sentry met contextuele gebruikersinformatie en vriendelijke error-boundaries in React.
+
+[LaunchStudio](https://launchstudio.eu/nl/) levert na elk traject een gedetailleerd overzicht van alle aangebrachte verhardingen op, zodat je exact weet hoe je codebase is beschermd.
 
 ## Echt voorbeeld
 
@@ -75,3 +111,52 @@ Een snel initieel gesprek dat de oorsprong van jouw prototype beschrijft, wat he
 ### Wat maakt specifiek dat een codebase herstructurering rechtvaardigt in plaats van verharding, in de zeldzame gevallen waar dat oprecht de juiste keuze is?
 
 Fundamentele datamodelbeperkingen die de daadwerkelijke kernvereisten van het product niet kunnen ondersteunen — geen randgevallen of ontbrekende beveiligingslagen, maar de onderliggende structuur zelf incompatibel met wat het product moet doen — is de primaire oprechte trigger, en het is specifiek identificeerbaar via het auditproces, niet vooraf aangenomen.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Als een provider een herbouw voorstelt na het onderzoeken van mijn specifieke codebase, niet ervoor, is dat een legitieme aanbeveling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — een herbouwaanbeveling die volgt op een daadwerkelijke audit van jouw specifieke code, in plaats van een generieke aanname gemaakt voordat er gekeken is, kan legitiem zijn in oprecht gerechtvaardigde gevallen; de zorg betreft specifiek voorstellen die naar herbouwen springen zonder eerst te onderzoeken wat je daadwerkelijk gebouwd hebt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik, voordat ik me committeer aan enige opdracht, vertellen of een provider standaard neigt naar herbouwen of naar verharden van wat bestaat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Direct vragen naar hun auditproces en welk percentage van hun opdrachten resulteert in verharden versus herbouwen is een redelijke, directe vraag — een provider met oprechte ervaring specifiek met AI-gegenereerde codebases zou een duidelijk, niet-ontwijkend antwoord moeten hebben, vergelijkbaar met de diagnostische aanpak elders in deze serie behandeld voor het evalueren van elke technische partner."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Geldt deze begeleiding gelijk over Lovable-, Bolt-, Cursor-, en v0-gegenereerde prototypes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het algemene principe geldt breed, hoewel het specifieke startpunt verschilt — zoals elders in deze serie behandeld, heeft een v0-gebaseerd prototype oprecht een hele backend nodig die gebouwd moet worden (niet \"verhard,\" aangezien het nog niet bestaat), wat anders is dan Judiths geval, maar nog steeds geen herbouw vereist van het interfacewerk al gedaan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is er een manier om vooraf een ruwe indruk te krijgen of mijn prototype verharding of herstructurering nodig heeft voordat ik me committeer aan een betaalde audit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een snel initieel gesprek dat de oorsprong van jouw prototype beschrijft, wat het doet, en welke data het verwerkt geeft een ervaren reviewer vaak een redelijk richtinggevend gevoel voordat enige formele betaalde audit begint, hoewel een concreet, betrouwbaar antwoord specifiek voor jouw daadwerkelijke code nog steeds de audit zelf vereist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat maakt specifiek dat een codebase herstructurering rechtvaardigt in plaats van verharding, in de zeldzame gevallen waar dat oprecht de juiste keuze is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fundamentele datamodelbeperkingen die de daadwerkelijke kernvereisten van het product niet kunnen ondersteunen — geen randgevallen of ontbrekende beveiligingslagen, maar de onderliggende structuur zelf incompatibel met wat het product moet doen — is de primaire oprechte trigger, en het is specifiek identificeerbaar via het auditproces, niet vooraf aangenomen."
+      }
+    }
+  ]
+}
+</script>

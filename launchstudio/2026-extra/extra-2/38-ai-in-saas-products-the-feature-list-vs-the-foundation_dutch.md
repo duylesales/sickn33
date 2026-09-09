@@ -61,6 +61,18 @@ Manifera's engineering voor ondernemingsgereedheid wordt geleverd via het ontwik
 
 [Aan de slag — productierijp in weken, niet maanden](https://launchstudio.eu/nl/#contact).
 
+## Wat Er Nog Meer op een Enterprise Inkoopchecklist Verschijnt
+
+Tweefactorauthenticatie voor gevoelige acties is slechts één regel op een veel langere lijst waarmee een groeiend SaaS-product te maken krijgt zodra het begint te verkopen aan grotere zakelijke klanten. Veelvoorkomende aanvullende eisen op de inkoopchecklist zijn:
+
+- **Gedetailleerde audit-logging** — een duurzaam, onveranderlijk overzicht van wie wat heeft gedaan en wanneer, met name voor gevoelige acties zoals het goedkeuren van een transactie of het wijzigen van toegangsrechten. Inkoopteams vragen hier vaak om een concreet voorbeeld van, in plaats van alleen te vertrouwen op de toezegging dat het bestaat.
+- **Versleuteling in rust (Encryption at Rest)** — de formele bevestiging dat opgeslagen data, en niet alleen data in transitie over het netwerk, is versleuteld volgens geaccepteerde standaarden (zoals AES-256). Dit is een instelling op databaseniveau die snel over het hoofd wordt gezien als deze tijdens de initiële uitrol niet expliciet is geactiveerd.
+- **Ondersteuning voor Single Sign-On (SSO / SAML)** — grotere organisaties eisen vrijwel universeel dat medewerkers inloggen via een centrale identiteitsprovider (zoals Okta of Azure AD). Een product zonder SSO-ondersteuning kan een harde blokkade vormen voor IT-beveiligingsteams, ongeacht hoe waardevol de rest van de applicatie is.
+- **Beleid voor dataretentie en data-residentie** — duidelijke, gedocumenteerde antwoorden op de vraag waar klantgegevens fysiek worden opgeslagen (binnen de EU) en hoe lang gegevens bewaard blijven nadat een contract is beëindigd.
+- **Een ingevulde leveranciersbeveiligingsvragenlijst of SOC 2-rapportage** — grotere contracten vereisen steeds vaker gestandaardiseerde beveiligingsvragenlijsten. Het vooraf klaarliggen van nauwkeurige, onderbouwde antwoorden versnelt het inkooptraject enorm, waar deals anders wekenlang vastlopen onder tijdsdruk.
+
+Geen van deze voorzieningen hoeft al te bestaan vóór de allereerste verkoop aan een kleine klant — ze allemaal vooraf bouwen zou verspilde vroege energie zijn. De professionele kunst is herkennen wanneer een product de grens overschrijdt naar grotere klanten waar deze eisen niet langer optioneel zijn, en ze proactief inrichten in plaats van deal voor deal verrast te worden.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De deal die vastliep op één specifieke vraag
@@ -80,25 +92,25 @@ Een veelbelovende deal met een grotere prospectieve klant liep vast tijdens de i
 
 ## Veelgestelde vragen
 
-### Zou een specialist in enterprise-sales dit soort inkoopblokkade beschouwen als veelvoorkomend?
+### Waarom zijn zakelijke inkoopteams (procurement) zo gefocust op audit-logging en data-versleuteling?
 
-Veelvoorkomend, specifiek voor producten die financiële of gevoelige werknemersgegevens afhandelen. Inkoop- en IT-beveiligingsbeoordelingen omvatten standaard 2FA als een verwachte basislijn.
+Omdat grote ondernemingen zelf gebonden zijn aan strikte wettelijke kaders, compliance-normen (zoals ISO 27001 of SOC 2) en aansprakelijkheidsrisico's. Zij moeten kunnen aantonen dat hun toeleveranciers en softwarepartners dezelfde hoge standaarden hanteren om datalekken en operationele verstoringen te voorkomen.
 
-### Vermijdt het universeel toevoegen van twee-factor-authenticatie dit probleem grondiger?
+### Wat is het verschil tussen versleuteling 'in transit' en 'in rust' (at rest)?
 
-Het kan, maar ten koste van toegevoegde wrijving bij elke inlog. Een risico-gecalibreerde aanpak (het specifiek vereisen waar de gevolgen van inbreuk het hoogst zijn) is vaak de betere afweging.
+Versleuteling in transit (via HTTPS/TLS) beschermt gegevens terwijl ze over het internet tussen de browser en de server bewegen. Versleuteling in rust beschermt de gegevens zoals ze fysiek zijn opgeslagen op harde schijven of in databases, zodat ze onleesbaar blijven als een fysieke schijf of database-backup wordt ontvreemd.
 
-### Maakt ervaring met enterprise-klanten uit bij het anticiperen op inkoopblokkades?
+### Hoe ondersteunt LaunchStudio startups bij het voorbereiden op zakelijke enterprise-verkopen?
 
-Ja, rechtstreeks – directe bekendheid met wat inkoopbeoordelingen typisch controleren biedt anticiperend inzicht voordat een echte deal op het spel staat.
+LaunchStudio identificeert de specifieke technische eisen die zakelijke inkopers stellen (zoals SSO, audit-trails, data-isolatie en rolgebaseerde toegangscontrole) en helpt oprichters deze fundamenten direct in te bouwen, waardoor vastlopende salestrajecten worden voorkomen.
 
-### Weerspiegelt dit scenario van een vastgelopen deal de kloof in expertise?
+### Is ondersteuning voor Single Sign-On (SSO via SAML of OpenID Connect) moeilijk achteraf toe te voegen?
 
-Heel goed – Gijs's product was functioneel uitstekend, maar miste een specifieke categorie expertise (wat enterprise-inkoop daadwerkelijk screent) die grotere concurrenten al hadden ingebouwd.
+Het vereist vaak substantiële aanpassingen in het gebruikersmodel van de database, met name rondom accountkoppeling, tenant-scheiding en sessiebeheer. Het vooraf rekening houden met enterprise-authenticatie bespaart aanzienlijke herbouwkosten later.
 
-### Is het de moeite waard om twee-factor-authenticatie proactief te implementeren?
+### Moet een vroege startup al direct een compleet SOC 2-rapport bezitten om aan bedrijven te verkopen?
 
-Het proactief implementeren zodra een product zich actief richt op grotere zakelijke klanten vermijdt het specifieke risico dat een tijdsgevoelige deal vastloopt op het moment dat het het meest uitmaakt.
+Niet direct op dag één, maar zakelijke klanten verwachten wel een gedegen ingevulde beveiligingsvragenlijst (Security Questionnaire) waarin de architectuur, back-up-procedures en privacywaarborgen helder en transparant worden onderbouwd.
 
 <script type="application/ld+json">
 {
@@ -107,50 +119,42 @@ Het proactief implementeren zodra een product zich actief richt op grotere zakel
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Thiếu xác thực 2 lớp (2FA) có thực sự làm hỏng hợp đồng bán hàng B2B không?",
+      "name": "Waarom zijn zakelijke inkoopteams (procurement) zo gefocust op audit-logging en data-versleuteling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, đội ngũ IT/Procurement của các doanh nghiệp lớn thường bắt buộc phải có 2FA mới phê duyệt hợp đồng B2B."
+        "text": "Omdat grote ondernemingen zelf gebonden zijn aan strikte wettelijke kaders, compliance-normen (zoals ISO 27001 of SOC 2) en aansprakelijkheidsrisico's. Zij moeten kunnen aantonen dat hun toeleveranciers en softwarepartners dezelfde hoge standaarden hanteren om datalekken en operationele verstoringen te voorkomen."
       }
     },
     {
       "@type": "Question",
-      "name": "Nên bắt buộc dùng 2FA cho toàn bộ user hay chỉ cho các hành vi rủi ro cao?",
+      "name": "Wat is het verschil tussen versleuteling 'in transit' en 'in rust' (at rest)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nên áp dụng theo mức độ rủi ro (Risk-calibrated) — bắt buộc 2FA khi phê duyệt lương/chuyển tiền, giữ login thường mượt mà."
+        "text": "Versleuteling in transit (via HTTPS/TLS) beschermt gegevens terwijl ze over het internet tussen de browser en de server bewegen. Versleuteling in rust beschermt de gegevens zoals ze fysiek zijn opgeslagen op harde schijven of in databases, zodat ze onleesbaar blijven als een fysieke schijf of database-backup wordt ontvreemd."
       }
     },
     {
       "@type": "Question",
-      "name": "Ngoài 2FA, danh sách kiểm tra bảo mật (Procurement Checklist) B2B còn có gì?",
+      "name": "Hoe ondersteunt LaunchStudio startups bij het voorbereiden op zakelijke enterprise-verkopen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nhật ký kiểm toán (Audit Logging), Mã hóa dữ liệu (Encryption at rest), Đăng nhập một lần (SSO) và Báo cáo tuân thủ SOC 2."
+        "text": "LaunchStudio identificeert de specifieke technische eisen die zakelijke inkopers stellen (zoals SSO, audit-trails, data-isolatie en rolgebaseerde toegangscontrole) en helpt oprichters deze fundamenten direct in te bouwen, waardoor vastlopende salestrajecten worden voorkomen."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao AI tool lại không tự động tích hợp 2FA khi dựng SaaS?",
+      "name": "Is ondersteuning voor Single Sign-On (SSO via SAML of OpenID Connect) moeilijk achteraf toe te voegen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì AI dựng tính năng theo yêu cầu công việc (feature list), còn 2FA thuộc về hạ tầng bảo mật (foundation) cần cấu hình riêng."
+        "text": "Het vereist vaak substantiële aanpassingen in het gebruikersmodel van de database, met name rondom accountkoppeling, tenant-scheiding en sessiebeheer. Het vooraf rekening houden met enterprise-authenticatie bespaart aanzienlijke herbouwkosten later."
       }
     },
     {
       "@type": "Question",
-      "name": "Nên làm tính năng 2FA ngay từ đầu hay chờ có khách hàng B2B lớn rồi làm?",
+      "name": "Moet een vroege startup al direct een compleet SOC 2-rapport bezitten om aan bedrijven te verkopen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nên chuẩn bị trước khi bắt đầu chốt deal B2B, tránh để hợp đồng bị treo hàng tuần chỉ vì chờ sửa code bổ sung 2FA."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Triển khai 2FA cho các API nhạy cảm mất bao lâu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Thường mất từ 5-9 ngày làm việc bao gồm việc tích hợp Authenticator App (TOTP) hoặc gửi OTP SMS/Email."
+        "text": "Niet direct op dag één, maar zakelijke klanten verwachten wel een gedegen ingevulde beveiligingsvragenlijst (Security Questionnaire) waarin de architectuur, back-up-procedures en privacywaarborgen helder en transparant worden onderbouwd."
       }
     }
   ]

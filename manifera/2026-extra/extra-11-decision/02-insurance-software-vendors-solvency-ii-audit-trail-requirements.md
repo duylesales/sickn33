@@ -93,6 +93,12 @@ Manifera has built data lineage and reporting integration layers for European in
 }
 </script>
 
+## The QRT Templates That Expose Vendor Gaps First
+
+During due diligence, don't test lineage against every template — three specific QRTs surface gaps faster than the rest. S.06.02 (Asset List) is the highest-volume template most platforms handle, and look-through requirements for collective investment undertakings are where automated lineage most often silently fails, forcing analysts back into manual reconciliation. S.23.01 (Own Funds) requires tracing eligible own-fund items back through tiering classifications — ask the vendor to show tier reclassification history, not just the current tier. S.28.01/S.28.02 (Minimum Capital Requirement) calculations combine multiple linear formula components; a vendor's system should show which sub-module — life, non-life, health — fed which line, since MCR breaches carry the most severe supervisory consequences of any Solvency II threshold. Falling below the MCR, generally 25-45% of the SCR under Article 129's corridor, can trigger withdrawal of authorization rather than just a supervisory letter.
+
+Run a 30-minute lineage test on these three specific templates during vendor demos before signing anything. A vendor that handles S.02.01 (Balance Sheet) cleanly but stumbles on S.06.02's look-through logic has a scaling problem that will surface exactly when your asset portfolio grows past whatever volume the vendor last tested against.
+
 ## Frequently Asked Questions
 
 ### What does "audit trail" mean specifically under Solvency II Pillar 3?
@@ -109,6 +115,18 @@ No. A version history that an administrator can edit or delete does not meet the
 
 ### What should we check about a vendor's XBRL taxonomy update process?
 Ask how quickly the vendor implemented the last two or three EIOPA taxonomy updates and request evidence such as release notes or client communications. A pattern of late or manual-workaround taxonomy transitions is a strong signal of how the vendor will handle your next filing deadline.
+
+### (Scenario: Switching actuarial software mid-filing-cycle) What happens to Solvency II audit trail continuity if we switch actuarial vendors mid-year?
+The audit trail needs to survive the migration intact — export the full lineage history, not just current-state data, from the outgoing vendor before cutover, and confirm the incoming vendor can ingest and preserve that historical chain rather than starting a fresh log at go-live. A supervisor asking about a Q2 figure after a Q3 vendor switch will not accept "that's in the old system" as an answer.
+
+### (Scenario: Vendor relies on cloud subprocessors outside the EU) Does using a vendor with subprocessors outside the EU affect Solvency II audit trail compliance?
+It doesn't change the core Solvency II requirement, but it adds a GDPR and operational resilience layer on top. Confirm the subprocessor list is disclosed in the vendor's DPA and that audit trail data storage location doesn't conflict with your national supervisor's outsourcing notification rules, which several EU regulators require for material third-party and sub-outsourcing arrangements.
+
+### (Scenario: Insurer uses an internal model rather than the standard formula) Does a vendor's platform need to support both the standard formula and an internal model for SCR calculation?
+Only if you might switch approaches or run parallel calculations for internal model validation purposes — many insurers using an approved internal model still run the standard formula periodically for benchmarking, and a vendor unable to support both leaves you unable to produce that comparison when a supervisor requests it.
+
+### (Scenario: Small insurer with limited in-house compliance staff) Can a small insurer rely on a vendor's compliance certifications instead of building in-house Solvency II audit review capability?
+No. A vendor's SOC 2 report or internal compliance claims describe the vendor's own controls, not your obligation to demonstrate audit trail integrity to your supervisor — that responsibility stays with the insurer regardless of vendor certifications, so at minimum designate someone internally who can run and interpret the vendor's lineage reports before a supervisory request arrives.
 
 <script type="application/ld+json">
 {
@@ -139,6 +157,26 @@ Ask how quickly the vendor implemented the last two or three EIOPA taxonomy upda
       "@type": "Question",
       "name": "What should we check about a vendor's XBRL taxonomy update process?",
       "acceptedAnswer": {"@type": "Answer", "text": "Ask how quickly the vendor implemented the last two or three EIOPA taxonomy updates and request evidence such as release notes or client communications. A pattern of late or manual-workaround taxonomy transitions is a strong signal of how the vendor will handle your next filing deadline."}
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to Solvency II audit trail continuity if we switch actuarial vendors mid-year?",
+      "acceptedAnswer": {"@type": "Answer", "text": "The audit trail needs to survive the migration intact — export the full lineage history, not just current-state data, from the outgoing vendor before cutover, and confirm the incoming vendor can ingest and preserve that historical chain rather than starting a fresh log at go-live. A supervisor asking about a Q2 figure after a Q3 vendor switch will not accept 'that's in the old system' as an answer."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does using a vendor with subprocessors outside the EU affect Solvency II audit trail compliance?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It doesn't change the core Solvency II requirement, but it adds a GDPR and operational resilience layer on top. Confirm the subprocessor list is disclosed in the vendor's DPA and that audit trail data storage location doesn't conflict with your national supervisor's outsourcing notification rules, which several EU regulators require for material third-party and sub-outsourcing arrangements."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does a vendor's platform need to support both the standard formula and an internal model for SCR calculation?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Only if you might switch approaches or run parallel calculations for internal model validation purposes — many insurers using an approved internal model still run the standard formula periodically for benchmarking, and a vendor unable to support both leaves you unable to produce that comparison when a supervisor requests it."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can a small insurer rely on a vendor's compliance certifications instead of building in-house Solvency II audit review capability?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. A vendor's SOC 2 report or internal compliance claims describe the vendor's own controls, not your obligation to demonstrate audit trail integrity to your supervisor — that responsibility stays with the insurer regardless of vendor certifications, so at minimum designate someone internally who can run and interpret the vendor's lineage reports before a supervisory request arrives."}
     }
   ]
 }

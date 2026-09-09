@@ -81,7 +81,7 @@ Al het overige — een geavanceerde wachtlijst, groepsreserveringen, strippenkaa
 
 Een planningsapplicatie die nooit dubbel boekt, altijd tijdig herinneringen verstuurt en in elk land het juiste tijdstip toont, is geen luxe product. Het is de absolute basis die uw klanten stilzwijgend als vanzelfsprekend beschouwen. [Beschrijf uw casus en ontvang binnen één werkdag antwoord](https://launchstudio.eu/nl/#contact) met wat er in uw prototype nog ontbreekt — of ontdek meer over [het engineeringteam achter LaunchStudio](https://www.manifera.com/about-us/) vóórdat u beslist aan wie u uw platform toevertrouwt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een oprichter in actie: de nieuwsbrief die drie dinsdagen ontregelde
 

@@ -97,20 +97,53 @@ Manifera's team van meer dan 120 engineers, waaronder een toegewijd ontwikkelcen
 ### Wat als mijn prototype na de lancering doorlopende ondersteuning nodig heeft?
 LaunchStudio biedt een optionele aanvullende ondersteuning aan voor € 49/maand voor oprichters die na hun initiële lancering doorlopende monitoring en herstelwerkzaamheden willen.
 
-### Heb ik echt een staging-omgeving nodig als ik een solo-oprichter ben met een handvol gebruikers?
-Ja, en het maakt meer uit op kleine schaal, en niet minder. Een slechte uitrol of schemawijziging die data aantast is verhoudingsgewijs schadelijker wanneer u tien klanten heeft dan wanneer u er tienduizend heeft. Een minimale staging-inrichting kost ongeveer een dag om één keer te configureren en kost weinig buiten een goedkope secundaire database-instantie.
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Wat is het verschil tussen AI-app-ontwikkeling en wat LaunchStudio doet?", "acceptedAnswer": { "@type": "Answer", "text": "AI-app-ontwikkelingstools bouwen functionaliteit en interface. LaunchStudio maakt wat zij produceerden productiegereed zonder de frontend aan te raken." } },
-    { "@type": "Question", "name": "Hoe weet ik of mijn in Deventer gebouwde prototype klaar is om te lanceren?", "acceptedAnswer": { "@type": "Answer", "text": "Als databasebeveiliging, back-ups en betalingen niet beoordeeld zijn, is het dat waarschijnlijk niet. Stuur uw prototypelink voor gratis advies." } },
-    { "@type": "Question", "name": "Werkt LaunchStudio alleen met oprichters in Deventer?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, LaunchStudio bedient oprichters in heel Nederland en de Benelux, waaronder in Deventer en Overijssel." } },
-    { "@type": "Question", "name": "Wie voert het engineeringwerk daadwerkelijk uit?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's team van 120+ engineers, waaronder een ontwikkelcentrum in Ho Chi Minh City, handelt alle productie-engineering af." } },
-    { "@type": "Question", "name": "Wat als mijn prototype na de lancering doorlopende ondersteuning nodig heeft?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio biedt een optionele ondersteuning aan voor € 49 per maand." } },
-    { "@type": "Question", "name": "Heb ik echt een staging-omgeving nodig als ik een solo-oprichter ben?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Een slechte uitrol is op kleine schaal verhoudingsgewijs schadelijker. Een minimale staging-inrichting kost ongeveer een dag inrichten." } }
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen AI-app-ontwikkeling en wat LaunchStudio doet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI-app-ontwikkelingstools bouwen functionaliteit en interface. LaunchStudio maakt wat zij produceerden productiegereed zonder de frontend aan te raken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of mijn in Deventer gebouwde prototype klaar is om te lanceren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Als databasebeveiliging, back-ups en betalingen niet beoordeeld zijn, is het dat waarschijnlijk niet. Stuur uw prototypelink voor gratis advies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werkt LaunchStudio alleen met oprichters in Deventer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, LaunchStudio bedient oprichters in heel Nederland en de Benelux, waaronder in Deventer en Overijssel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie voert het engineeringwerk daadwerkelijk uit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manifera's team van 120+ engineers, waaronder een ontwikkelcentrum in Ho Chi Minh City, handelt alle productie-engineering af."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat als mijn prototype na de lancering doorlopende ondersteuning nodig heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio biedt een optionele ondersteuning aan voor € 49 per maand."
+      }
+    }
   ]
 }
 </script>

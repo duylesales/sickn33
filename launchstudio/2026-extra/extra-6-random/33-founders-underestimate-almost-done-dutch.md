@@ -41,6 +41,21 @@ Een gestructureerde, externe beoordeling — iemand wiens taak het specifiek is 
 
 LaunchStudio brengt de enterprise-grade engineeringdiscipline van Manifera naar precies dit probleem: een beoordeling met vaste scope die "ik denk dat het bijna klaar is" omzet in een specifieke, geprijsde lijst van wat er daadwerkelijk nog rest. Ons team in Ho Chi Minh City — het belangrijkste engineeringcentrum van Manifera — behandelt een gestage stroom van deze beoordelingen voor oprichters die vastzitten in de "nog twee weken"-lus. U kunt [ons de link naar uw prototype sturen en wij geven u gratis advies](https://launchstudio.eu/nl/#contact) over hoe dicht het daadwerkelijk bij klaar is. Voor een beeld van het soort productiediscipline waarop deze beoordeling voortbouwt, zie het werk van Manifera op het gebied van [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/), toegepast bij meer dan 160 opgeleverde projecten.
 
+## Vier Vragen Vóórdat U Ooit Nog Hardop 'Over Twee Weken' Zegt
+
+Het uitspreken van de beruchte deadline "over twee weken zijn we live" is de meest gemaakte fout onder niet-technische oprichters. Het creëert valse verwachtingen bij klanten, investeerders en uzelf. Voordat u deze belofte ooit nog hardop herhaalt, dient u eerst deze vier vragen te beantwoorden:
+
+**1. Heeft U de 'Unhappy Paths' Al Formeel Getest?** Een tijdlijn van twee weken gaat er vrijwel altijd van uit dat alles in één keer goed werkt. Maar wat als de betalingsgateway een storing heeft, de gebruiker zijn e-mailadres niet bevestigt of de webhook een time-out geeft? Zolang foutafhandeling niet is geïmplementeerd en getest, is uw tijdlijn een illusie.
+
+**2. Is Uw Productieomgeving Al Volledig Geïsoleerd van Testdata?** Als u momenteel nog test met nepaccounts in dezelfde database waar straks echte klanten in komen, moet u eerst een schone migratiestrategie opzetten. Het opschonen en testen van een productiedatabase kost doorgaans al minimaal enkele dagen.
+
+**3. Zijn de Juridische en AVG-Vereisten Ingericht?** Heeft u een cookiebanner die daadwerkelijk scripts blokkeert vóór toestemming, een actueel privacybeleid, algemene voorwaarden en een getoetste verwerkersovereenkomst? Zonder deze documenten mag u in de EU formeel geen persoonsgegevens van consumenten of bedrijven verwerken.
+
+**4. Wie Lost Storingen Op Als U Volgende Week Live Gaat?** Als een klant op vrijdagavond om 22:00 uur een fatale fout meldt, heeft u dan monitoring ingericht (zoals Sentry) om direct te zien wat er misgaat, of moet u het hele weekend handmatig in logbestanden zoeken?
+
+Pas wanneer u op alle vier de vragen een concreet en geruststellend antwoord paraat heeft, kunt u met een professioneel geweten een lanceringsdatum communiceren.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: vier maanden van "twee weken"
@@ -85,11 +100,46 @@ De meeste beoordelingen en bijbehorende oplossingen van LaunchStudio worden binn
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why does an AI-generated prototype make \"almost done\" so hard to estimate accurately?", "acceptedAnswer": { "@type": "Answer", "text": "The prototype's polished surface hides how much untested ground remains, so each fix reveals new issues instead of confirming there's nothing left, resetting the estimate instead of closing it." } },
-    { "@type": "Question", "name": "Is this a sign the founder isn't technical enough to estimate their own project?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. Even technical founders fall into this pattern with AI-generated code, because the issue is structural to how these tools produce output." } },
-    { "@type": "Question", "name": "What's the difference between a demo working and a product being production-ready?", "acceptedAnswer": { "@type": "Answer", "text": "A demo answers whether the happy path works as the builder expects. Production readiness answers whether every real-world path, including untested edge cases, holds up." } },
-    { "@type": "Question", "name": "How does Manifera's Ho Chi Minh City team approach this differently than another round of self-testing?", "acceptedAnswer": { "@type": "Answer", "text": "The team runs a structured review looking for untested paths the founder wouldn't think to check, producing a finite itemized list rather than an open-ended feeling." } },
-    { "@type": "Question", "name": "How fast can a review like this actually turn around?", "acceptedAnswer": { "@type": "Answer", "text": "Most LaunchStudio reviews and fixes complete within 1-3 weeks on a fixed scope, replacing an open-ended estimate with a specific, checkable timeline." } }
+    {
+      "@type": "Question",
+      "name": "Waarom maakt een door AI gegenereerd prototype \"bijna klaar\" zo lastig om nauwkeurig in te schatten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat het gepolijste oppervlak van het prototype verbergt hoeveel ongetest terrein er nog rest, waardoor elke oplossing nieuwe problemen onthult in plaats van te bevestigen dat er niets meer over is — de inschatting wordt gereset in plaats van afgesloten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit een teken dat de oprichter niet technisch genoeg is om het eigen project in te schatten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet per se. Zelfs technische oprichters vervallen in dit patroon bij door AI gegenereerde code, omdat het probleem structureel is aan hoe deze tools output produceren, en geen kennishiaat is dat specifiek is voor één persoon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen een werkende demo en een productieklaar product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een demo beantwoordt of het happy path werkt wanneer de bouwer erdoorheen klikt zoals verwacht. Productiegereedheid beantwoordt of elk pad dat een echte klant zou kunnen bewandelen, inclusief ongeteste randgevallen, standhoudt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe pakt het team van Manifera in Ho Chi Minh City dit anders aan dan nog een ronde eigen testen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het team voert een gestructureerde beoordeling uit die specifiek zoekt naar ongeteste paden en randgevallen waar de oprichter niet aan zou denken om te controleren, wat resulteert in een eindige, gespecificeerde lijst in plaats van een open gevoel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel kan zo'n beoordeling daadwerkelijk worden afgerond?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste beoordelingen en bijbehorende oplossingen van LaunchStudio worden binnen 1 tot 3 weken afgerond op basis van een vaste scope, waardoor een open inschatting verandert in een specifieke, controleerbare tijdlijn."
+      }
+    }
   ]
 }
 </script>

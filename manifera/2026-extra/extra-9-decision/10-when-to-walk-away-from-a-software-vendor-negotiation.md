@@ -80,6 +80,18 @@ Talk to our Amsterdam team about a vendor relationship built on transparent term
 }
 </script>
 
+## A Script for the Conversation Right Before You Walk Away
+
+Walking away rarely needs to be dramatic — a short, direct script protects the relationship in case you are wrong and preserves your leverage if you are right. Say specifically what you observed, not a vague feeling: "We've asked three times to speak with the actual engineers who'd be assigned, and each time it's been deferred to 'after kickoff.' That's a dealbreaker for us at this stage, not a preference." This names the specific, verifiable behavior rather than an accusation of bad faith, which keeps the door open if the vendor has a legitimate explanation you have not yet heard.
+
+Give one clear, time-boxed chance to resolve it before ending the conversation: "If we can get 30 minutes with the two engineers who'd be staffed on this by end of week, we're ready to move forward. If that's not possible, we'll need to continue our search." This does two things at once — it tests whether the resistance was a communication gap versus a real structural problem, and it puts a deadline on the founder's own tendency to let an unresolved red flag drift into "we'll deal with it after signing." A vendor with nothing to hide resolves this within days; a vendor who needs another two weeks "to check internally" is answering the underlying question either way.
+
+## The Leverage Curve: Why Timing Determines Your Negotiating Power
+
+Your negotiating leverage is not constant — it peaks at roughly its maximum the day before you sign and then collapses fast. Once a deposit clears, a team is onboarded, and a few weeks of code exist that only that vendor fully understands, your realistic leverage to renegotiate a bad term drops to a fraction of what it was during evaluation. Founders consistently misjudge this curve, treating the final week of negotiation as low-stakes because "the hard part is over," when it is actually the last point of maximum leverage in the entire relationship.
+
+Three moves preserve leverage past signature instead of surrendering it all at once: stage payments against verifiable milestones rather than a large upfront deposit, so a poor first sprint costs you a percentage rather than the whole engagement; insist on a 30- or 60-day mutual termination clause with no penalty beyond work already delivered, so a bad-fit relationship has a built-in exit ramp; and keep a documented source-code handoff cadence (weekly commits to a repository you control, not the vendor's) so switching mid-engagement is a days-long transition instead of a months-long forensic recovery. A vendor who agrees readily to all three is signaling confidence in their own delivery; a vendor who resists even one is telling you which side of the leverage curve they intend to sit on.
+
 ## Frequently Asked Questions
 
 ### What is the clearest red flag during a software vendor negotiation?
@@ -96,6 +108,18 @@ Because the specific engineers assigned to your project are the single biggest d
 
 ### How do I know if walking away is worth the lost time invested in a negotiation?
 Compare the cost of a few additional weeks restarting the search against the cost of discovering the same red flags three months into an eighteen-month engagement, when your leverage is lower and the wasted spend is far larger. The math almost always favors walking away early.
+
+### (Scenario: The vendor pushes to sign before your lawyer finishes reviewing the contract) Is urgency to sign before legal review a reason to walk away?
+Yes, treat it as a serious signal rather than routine sales pressure. A vendor confident in their own contract terms has no reason to rush a founder past legal review, and a deadline invented specifically to shrink your review window is a tactic aimed at your leverage, not a genuine capacity constraint.
+
+### (Scenario: The proposed payment schedule front-loads most of the fee before any milestone is delivered) How much should a vendor be paid before the first milestone is verified?
+Push back hard on any schedule asking for more than roughly 20-25% upfront before a defined, verifiable milestone. A vendor who insists on a much larger initial payment is asking you to absorb most of the delivery risk before you have any evidence of their actual output quality.
+
+### (Scenario: The contract includes an auto-renewal clause with a narrow cancellation window) Should I walk away from a contract with an auto-renewal clause and a short opt-out window?
+A narrow cancellation window — often 30 days before a renewal date buried in the contract's back pages — is designed to lock you into another term by default. Negotiate it to a longer, clearly-flagged window or remove auto-renewal entirely rather than accepting it as boilerplate.
+
+### (Scenario: A finalist vendor pushes back hard specifically on liability and indemnification terms) What does resistance to liability and indemnification terms signal about a vendor?
+A vendor unwilling to accept reasonable liability for their own errors, particularly in a regulated or security-sensitive build, is telling you they expect mistakes and want the cost of those mistakes to land on you. Treat firm resistance here as seriously as resistance on IP ownership.
 
 <script type="application/ld+json">
 {
@@ -140,6 +164,38 @@ Compare the cost of a few additional weeks restarting the search against the cos
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Compare the cost of a few additional weeks restarting the search against the cost of discovering the same red flags three months into an eighteen-month engagement, when your leverage is lower and the wasted spend is far larger. The math almost always favors walking away early."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: The vendor pushes to sign before your lawyer finishes reviewing the contract) Is urgency to sign before legal review a reason to walk away?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, treat it as a serious signal rather than routine sales pressure. A vendor confident in their own contract terms has no reason to rush a founder past legal review, and a deadline invented specifically to shrink your review window is a tactic aimed at your leverage, not a genuine capacity constraint."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: The proposed payment schedule front-loads most of the fee before any milestone is delivered) How much should a vendor be paid before the first milestone is verified?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Push back hard on any schedule asking for more than roughly 20-25% upfront before a defined, verifiable milestone. A vendor who insists on a much larger initial payment is asking you to absorb most of the delivery risk before you have any evidence of their actual output quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: The contract includes an auto-renewal clause with a narrow cancellation window) Should I walk away from a contract with an auto-renewal clause and a short opt-out window?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A narrow cancellation window, often 30 days before a renewal date buried in the contract's back pages, is designed to lock you into another term by default. Negotiate it to a longer, clearly-flagged window or remove auto-renewal entirely rather than accepting it as boilerplate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A finalist vendor pushes back hard specifically on liability and indemnification terms) What does resistance to liability and indemnification terms signal about a vendor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A vendor unwilling to accept reasonable liability for their own errors, particularly in a regulated or security-sensitive build, is telling you they expect mistakes and want the cost of those mistakes to land on you. Treat firm resistance here as seriously as resistance on IP ownership."
       }
     }
   ]

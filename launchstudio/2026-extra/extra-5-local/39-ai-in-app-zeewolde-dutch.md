@@ -90,20 +90,53 @@ Manifera's engineeringteam, waaronder een ontwikkelcentrum in Ho Chi Minh City, 
 ### Hoe begin ik als ik niet zeker weet wat er mis is?
 Praat met een engineer die met AI gegenereerde code begrijpt — we beoordelen de AI-functie van uw app en vertellen u eerlijk wat er, indien van toepassing, hersteld moet worden.
 
-### Hoe bereken ik daadwerkelijk een redelijke gebruikslimiet voor mijn AI-functie?
-Begin met de kosten per call van uw modelprovider, schat hoeveel calls een oprecht betrokken gebruiker in één sessie zou maken, en stel vervolgens een limiet per gebruiker in op ongeveer het dubbele van dat getal. Voeg een globale dagelijkse uitgavenmelding toe als tweede laag zodat u niet uitsluitend vertrouwt op limieten per gebruiker om ongebruikelijke verkeerspatronen op te vangen.
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Brengt het toevoegen van AI in app-functies altijd het risico van hoge API-kosten met zich mee?", "acceptedAnswer": { "@type": "Answer", "text": "Zonder rate limiting, caching en monitoring kunnen AI API-kosten onvoorspelbaar meeschalen met gebruik." } },
-    { "@type": "Question", "name": "Zal het herstellen van mijn AI in app-functie veranderen hoe deze zich gedraagt voor gebruikers?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, herstelwerkzaamheden zoals rate limits en caching vinden achter de schermen plaats zonder zichtbare veranderingen." } },
-    { "@type": "Question", "name": "Is dit relevant buiten Zeewolde en Flevoland?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, dit patroon verschijnt breed in met AI gebouwde apps overal." } },
-    { "@type": "Question", "name": "Wie beoordeelt de implementatie van de AI-functie?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineeringteam, waaronder een ontwikkelcentrum in Ho Chi Minh City, beoordeelt en herstelt AI-integraties." } },
-    { "@type": "Question", "name": "Hoe begin ik als ik niet zeker weet wat er mis is?", "acceptedAnswer": { "@type": "Answer", "text": "Praat met een engineer die AI-gegenereerde code begrijpt voor een beoordeling van wat er eventueel hersteld moet worden." } },
-    { "@type": "Question", "name": "Hoe bereken ik daadwerkelijk een redelijke gebruikslimiet voor mijn AI-functie?", "acceptedAnswer": { "@type": "Answer", "text": "Schat kosten per call, vermenigvuldig met een realistische sessieomvang, en stel een limiet in op ongeveer het dubbele daarvan." } }
+    {
+      "@type": "Question",
+      "name": "Brengt het toevoegen van AI in app-functies altijd het risico van hoge API-kosten met zich mee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zonder rate limiting, caching en monitoring kunnen AI API-kosten onvoorspelbaar meeschalen met gebruik."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zal het herstellen van mijn AI in app-functie veranderen hoe deze zich gedraagt voor gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, herstelwerkzaamheden zoals rate limits en caching vinden achter de schermen plaats zonder zichtbare veranderingen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit relevant buiten Zeewolde en Flevoland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, dit patroon verschijnt breed in met AI gebouwde apps overal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie beoordeelt de implementatie van de AI-functie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manifera's engineeringteam, waaronder een ontwikkelcentrum in Ho Chi Minh City, beoordeelt en herstelt AI-integraties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe begin ik als ik niet zeker weet wat er mis is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Praat met een engineer die AI-gegenereerde code begrijpt voor een beoordeling van wat er eventueel hersteld moet worden."
+      }
+    }
   ]
 }
 </script>

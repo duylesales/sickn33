@@ -87,7 +87,7 @@ Schattingen geven een verwachting; technische limieten (*controls*) bepalen wat 
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in geavanceerde software-architecturen) richten we prompt caching, token-monitoring, budgetlimieten en model-routing in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-kostenstructuur met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw AI-features winstgevend blijven.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Twee Cent Per Samenvatting... En Toch €1.240 Factuur in Één Maand
 

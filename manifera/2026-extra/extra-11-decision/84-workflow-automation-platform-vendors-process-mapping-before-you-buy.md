@@ -58,6 +58,10 @@ Process mapping isn't a nice-to-have step before vendor selection — it's the o
 
 Manifera works with product teams to map processes properly before recommending or building workflow automation, whether that means selecting the right platform or building custom orchestration logic as part of a broader [custom software development](https://www.manifera.com/services/custom-software-development/) engagement. See [our way of working](https://www.manifera.com/about-us/our-way-of-working/) for how we approach discovery before build, or [get in touch](https://www.manifera.com/contact-us/) to talk through a process that's ready for automation.
 
+## Implementation Checklist: The Process-Mapping Interview Script
+
+Run this exact five-question interview with every process owner and frontline user before writing a single line of the process map, not a generic "walk me through your process" ask. (1) "What's the last time this didn't go as expected, and what did you actually do?" — this surfaces real exception paths, not the ones anyone would think to mention unprompted. (2) "Is there anything you do in this process that you've never had to explain to anyone else?" — this surfaces tribal knowledge held by one person, the single biggest source of automation failures, since roughly a third of mapped processes in practice turn up at least one step no one but the original person understood. (3) "What happens if this step fails halfway through — who finds out, and how?" — this surfaces the error-visibility gap most manual processes paper over with informal Slack messages and hallway conversations. (4) "How often does this exception actually happen — daily, weekly, quarterly?" — frequency data determines which exceptions are worth automating handling for versus routing to a human queue. (5) "Who has override authority, and under what conditions?" — this is the question that, unasked, produced the four missing manager-override paths in this article's opening example. Document answers verbatim in the process map, not paraphrased, since paraphrasing is where nuance gets lost before it ever reaches a vendor conversation.
+
 ## Frequently Asked Questions
 
 ### What's the biggest mistake teams make when selecting a workflow automation vendor?
@@ -74,6 +78,19 @@ Task-based or per-execution pricing models can scale linearly or worse with volu
 
 ### Should we use one platform for both data integration and workflow orchestration?
 Not always. Many real processes have both a data-plumbing component (better served by strong iPaaS connectors) and a stateful decision-logic component (better served by an orchestration engine). Forcing one platform to do both jobs adequately is often worse than pairing two purpose-built tools.
+
+### (Scenario: a logistics team's order-exception automation broke on the first edge case within a week, mirroring this article's opening example) What's the fastest way to recover without abandoning the platform investment?
+Pause the automation for the specific exception paths that broke, route those back to manual handling temporarily, and run the missed process-mapping interviews now against the actual failure logs from the broken launch — those logs are a more complete map of real exceptions than any upfront interview would have produced. Re-launch incrementally, automating one validated exception path at a time rather than re-attempting full coverage at once.
+
+### (Scenario: process map interviews reveal a step that only one regional operations lead knows how to resolve) How do we handle automating a process step nobody else can validate?
+Don't automate that specific step until the knowledge is documented and validated by at least one other person — automating undocumented tribal knowledge just moves the single-point-of-failure risk from a person to an unreviewable script. Schedule a dedicated knowledge-transfer session with that person before the vendor build begins, and treat their sign-off on the documented logic as a required gate before automating it.
+
+### (Scenario: Head of Product is choosing between Temporal and a workflow module bundled inside an existing SaaS platform the company already pays for) How should the bundled option be evaluated fairly?
+Test the bundled module against the same three questions used for any orchestration engine — durable state persistence across a restart, explicit error boundaries with retry policies, and human-in-the-loop resumption — rather than assuming it's inadequate because it's bundled or adequate because it's already paid for. Bundled workflow modules vary enormously in actual orchestration depth, and the only way to know is testing against your specific mapped exceptions, not the vendor's marketing tier name.
+
+### (Scenario: seasonal spike triples process volume for six weeks a year, and the vendor's per-execution pricing wasn't modeled against that) How do we avoid a pricing shock during peak season?
+Model your actual peak-week volume, not your average monthly volume, against the vendor's pricing tiers before signing, and negotiate a rate cap or overage cushion specifically for your known seasonal spike rather than accepting the standard tier that assumes flat usage. A vendor unwilling to discuss seasonal volume patterns in the sales conversation is a vendor whose pricing model wasn't built with real operational volume in mind.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,6 +134,38 @@ Not always. Many real processes have both a data-plumbing component (better serv
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Not always. Many real processes have both a data-plumbing component (better served by strong iPaaS connectors) and a stateful decision-logic component (better served by an orchestration engine). Forcing one platform to do both jobs adequately is often worse than pairing two purpose-built tools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a logistics team's order-exception automation broke on the first edge case within a week, mirroring this article's opening example) What's the fastest way to recover without abandoning the platform investment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pause the automation for the specific exception paths that broke, route those back to manual handling temporarily, and run the missed process-mapping interviews now against the actual failure logs. Re-launch incrementally, automating one validated exception path at a time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: process map interviews reveal a step that only one regional operations lead knows how to resolve) How do we handle automating a process step nobody else can validate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Don't automate that step until the knowledge is documented and validated by at least one other person — automating undocumented tribal knowledge moves the single-point-of-failure risk into an unreviewable script. Schedule a knowledge-transfer session before the build begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Head of Product is choosing between Temporal and a workflow module bundled inside an existing SaaS platform the company already pays for) How should the bundled option be evaluated fairly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Test the bundled module against the same three questions used for any orchestration engine — durable state persistence, explicit error boundaries with retries, and human-in-the-loop resumption — rather than assuming it's inadequate or adequate based on price alone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: seasonal spike triples process volume for six weeks a year, and the vendor's per-execution pricing wasn't modeled against that) How do we avoid a pricing shock during peak season?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Model your actual peak-week volume, not average monthly volume, against the vendor's pricing tiers before signing, and negotiate a rate cap or overage cushion specifically for your seasonal spike rather than accepting a flat-usage standard tier."
       }
     }
   ]

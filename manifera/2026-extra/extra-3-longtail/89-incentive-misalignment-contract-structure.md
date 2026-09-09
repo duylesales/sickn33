@@ -84,6 +84,10 @@ A practical diagnostic any CTO can apply directly to a draft contract: imagine t
 
 Before signing your next vendor contract, ask explicitly whether the payment structure rewards the outcome you actually want, or whether it relies entirely on the vendor's separate professionalism to compensate for a structural misalignment. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about structuring an incentive-aligned engagement.
 
+## Implementation Checklist: Restructuring a Mid-Engagement Contract Without Starting Over
+
+A CTO who recognizes this misalignment in an existing time-and-materials contract with a software development company doesn't need to terminate the relationship to fix it — the restructuring can usually happen at the next natural contract checkpoint. Five concrete steps: (1) Pull the last two to three months of logged hours against delivered scope and identify where hours grew without a corresponding, verifiable output — this is the diagnostic evidence, not an accusation. (2) Define three to five milestone checkpoints for the next contract period, each tied to a specific, demoable deliverable rather than a time-based check-in. (3) Set an hourly cap for any remaining time-and-materials component, sized around 15-20% above the reference-class-adjusted estimate for that scope, so genuine uncertainty is still covered without removing all discipline. (4) Write quality gates as pass/fail conditions independent of who's being paid for what — a security review, a load test threshold, a specific bug-count ceiling — so quality verification isn't itself subject to the same incentive the payment structure creates. (5) Propose the restructuring as a shared improvement to how success is measured, not a trust problem, since framing it as a structural fix rather than a character question is what keeps the renegotiation collaborative rather than adversarial. Most software services vendors operating in good faith will accept this restructuring readily, precisely because it also protects them from a client's eventual, justified suspicion that slow delivery is being rewarded.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO noticing consistent hour overruns under a time-and-materials contract) Why do our project's estimated hours keep running over under our current hourly contract?
@@ -106,6 +110,22 @@ Not always — a capped hourly structure, with an upper bound and explicit quali
 
 Ask directly how they structure contracts to align incentives — a vendor with a specific, thoughtful answer involving milestones or quality gates is meaningfully different from one that hasn't considered the question at all.
 
+### (Scenario: founder negotiating a custom software development pricing proposal that's mostly hourly) How do I push back on a proposed hourly rate structure without souring the relationship before work even starts?
+
+Frame the request as wanting milestone checkpoints and a hourly cap alongside the rate, not a rejection of the rate itself — most software development company proposals are built around hourly billing by default, not because the vendor insists on it, and a specific, structural counter-proposal is usually well received.
+
+### (Scenario: CTO managing a long-running engagement with the same software development company) Should incentive-aligned restructuring apply retroactively to work already billed, or only going forward?
+
+Only going forward — restructuring is about changing the incentive for future work, not re-litigating hours already delivered and paid, since treating it as retroactive turns a structural fix into a dispute over past invoices.
+
+### (Scenario: procurement lead comparing custom software development pricing across several vendor proposals) How should incentive structure factor into comparing quotes from different vendors?
+
+Weight a milestone-based or capped-hourly proposal more favorably than a pure hourly one even if its headline number is higher, since the pure hourly quote's true cost is understated by exactly the incentive misalignment this article describes.
+
+### (Scenario: founder worried a milestone structure will make the vendor rush and cut quality) Doesn't paying by milestone just create the opposite problem — rushing to hit checkpoints instead of doing it right?
+
+Only if the milestones are defined loosely — pairing each milestone with an independent, pass/fail quality gate (security review, load test, defect ceiling) closes exactly this gap, which is why quality verification should never be folded into the same metric that triggers payment.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,7 +135,11 @@ Ask directly how they structure contracts to align incentives — a vendor with 
     { "@type": "Question", "name": "(Scenario: founder trying to choose between fixed-price and hourly) Is a fixed-price contract automatically better than an hourly one for avoiding this problem?", "acceptedAnswer": { "@type": "Answer", "text": "No — fixed-price shifts the misalignment, incentivizing minimized effort and potential corner-cutting on hard-to-verify quality." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to design a better contract structure) What's a practical way to structure a contract with better incentive alignment?", "acceptedAnswer": { "@type": "Answer", "text": "Milestone-based payment tied to verifiable deliverables, combined with quality gates independent of the payment structure." } },
     { "@type": "Question", "name": "(Scenario: founder wondering if this means all hourly contracts are bad) Does this mean time-and-materials contracts should never be used?", "acceptedAnswer": { "@type": "Answer", "text": "Not always — a capped hourly structure with quality gates can work well for genuinely uncertain scope." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to evaluate a vendor's honesty on this specific issue) How can I tell if a vendor is proactively addressing this incentive problem rather than relying on trust alone?", "acceptedAnswer": { "@type": "Answer", "text": "Ask directly how they structure contracts to align incentives — a specific, thoughtful answer involving milestones or quality gates is a good sign." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to evaluate a vendor's honesty on this specific issue) How can I tell if a vendor is proactively addressing this incentive problem rather than relying on trust alone?", "acceptedAnswer": { "@type": "Answer", "text": "Ask directly how they structure contracts to align incentives — a specific, thoughtful answer involving milestones or quality gates is a good sign." } },
+    { "@type": "Question", "name": "(Scenario: founder negotiating a custom software development pricing proposal that's mostly hourly) How do I push back on a proposed hourly rate structure without souring the relationship before work even starts?", "acceptedAnswer": { "@type": "Answer", "text": "Frame the request as wanting milestone checkpoints and an hourly cap alongside the rate, not a rejection of the rate itself — a specific, structural counter-proposal is usually well received." } },
+    { "@type": "Question", "name": "(Scenario: CTO managing a long-running engagement with the same software development company) Should incentive-aligned restructuring apply retroactively to work already billed, or only going forward?", "acceptedAnswer": { "@type": "Answer", "text": "Only going forward — restructuring changes the incentive for future work, not a re-litigation of hours already delivered and paid." } },
+    { "@type": "Question", "name": "(Scenario: procurement lead comparing custom software development pricing across several vendor proposals) How should incentive structure factor into comparing quotes from different vendors?", "acceptedAnswer": { "@type": "Answer", "text": "Weight a milestone-based or capped-hourly proposal more favorably than a pure hourly one even if its headline number is higher, since the pure hourly quote's true cost is understated by the incentive misalignment." } },
+    { "@type": "Question", "name": "(Scenario: founder worried a milestone structure will make the vendor rush and cut quality) Doesn't paying by milestone just create the opposite problem — rushing to hit checkpoints instead of doing it right?", "acceptedAnswer": { "@type": "Answer", "text": "Only if milestones are defined loosely — pairing each milestone with an independent, pass/fail quality gate closes that gap." } }
   ]
 }
 </script>

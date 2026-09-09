@@ -121,7 +121,7 @@ Stel uw lijst vóór de lancering op, bundel uw meldingen, wees transparant over
 
 Deel uw lijst met ons — stuur de kleine punten die u bewaarde onder "niet belangrijk genoeg om te noemen", en wij vertellen u direct welke binnen twintig minuten definitief zijn opgelost.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Oprichter in Actie: De Lijst Die Bijna Nooit Was Verstuurd
 

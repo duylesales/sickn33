@@ -57,6 +57,19 @@ Manifera's backend-beveiligingsaudits worden uitgevoerd door het engineeringteam
 
 [Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
+## Waar Ditzelfde Patroon Zich Nog Meer Verbergt Buiten Profielformulieren
+
+Een accountrolveld is de meest schadelijke manifestatie van deze kwetsbaarheid, maar het onderliggende patroon — een update-eindpunt dat meer velden accepteert dan het zichtbare webformulier toont (mass assignment) — duikt overal op waar een database-record velden bevat die een gebruiker niet rechtstreeks zou mogen aanpassen.
+
+**Andere plekken die het waard zijn om specifiek op ditzelfde patroon te controleren:**
+
+- **Bestel- of abonnementsstatusvelden** — als een eindpunt voor het bijwerken van een bezorgadres toevallig ook een veld voor de bestelstatus accepteert, kan een gemanipuleerd netwerkverzoek een onbetaalde bestelling markeren als 'betaald', of een opgezegd abonnement als 'actief', zonder ooit de daadwerkelijke betaal- of opzeggingsstroom te doorlopen.
+- **Prijs- of kortingsvelden op een winkelwagen- of afrekenobject** — een eindpunt dat de inhoud van een winkelmandje bijwerkt, kan onbedoeld ook een veld voor handmatige prijsaanpassing of kortingspercentage accepteren dat nooit bedoeld was om door gebruikers te worden bewerkt.
+- **Eigendoms- of ID-verwijzingsvelden** — een eindpunt dat de details van een resource bijwerkt, kan ook een veld accepteren dat opnieuw toewijst welk gebruikersaccount eigenaar is van die bron. Hierdoor kan de ene gebruiker potentieel de gegevens van een andere gebruiker opeisen.
+- **Verificatie- of goedkeuringsstatusvelden** — een profielupdate op een marktplaats of dienstenplatform kan onbedoeld toestaan dat een vlag zoals "is_verified" of "is_approved" rechtstreeks wordt meegegeven, waardoor het handmatige of geautomatiseerde verificatieproces dat die status moest bewaken volledig wordt omzeild.
+
+De gemeenschappelijke deler bij al deze voorbeelden is identiek: een backend die erop vertrouwt dat een inkomend verzoek alleen redelijke velden bevat, in plaats van expliciet af te dwingen welke velden elk eindpunt exact mag accepteren. Een review die één instantie van dit patroon in een codebase vindt en herstelt, heeft alle reden om gericht te controleren op exact dezelfde probleemvorm overal elders waar een record velden bevat die gevoeliger zijn dan wat het eigen formulier opzettelijk toont.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De profiel-update die beheerderstoegang verleende
@@ -76,25 +89,25 @@ Een partner die het platform namens Lars testte, ontdekte tijdens het inspectere
 
 ## Veelgestelde vragen
 
-### Zou een specialist in backend-beveiliging mass assignment beschouwen als een veelvoorkomende klasse van kwetsbaarheden?
+### Zou een backend-beveiligingsspecialist 'mass assignment' beschouwen als een veelvoorkomende kwetsbaarheidsklasse in moderne webframeworks?
 
-Ja, veelvoorkomend genoeg dat veel gevestigde web-frameworks ingebouwde mechanismen bevatten specifiek om het te voorkomen, hoewel die mechanismen actief geconfigureerd en correct gebruikt moeten worden.
+Ja, zo gebruikelijk dat veel gevestigde webframeworks ingebouwde mechanismen bevatten die specifiek zijn ontworpen om dit te voorkomen. Die mechanismen moeten echter wel actief worden geconfigureerd en consequent worden toegepast — toegang hebben tot een beveiligingsfunctie betekent niet automatisch dat elk eindpunt in een project er ook daadwerkelijk correct gebruik van maakt.
 
-### Geldt dit risico alleen voor velden zoals accountrollen?
+### Geldt dit risico alleen voor velden zoals accountrollen, of reikt het breder?
 
-Het is breder – elk veld dat een gebruiker niet rechtstreeks zou moeten kunnen wijzigen (accountsaldi, abonnementsstatus, eigendomsreferenties) draagt hetzelfde onderliggende risico.
+Het reikt aanzienlijk breder — elk veld dat een gebruiker niet rechtstreeks zou mogen aanpassen, inclusief zaken als accountsaldi, abonnementsstatussen, eigendomsreferenties of verificatievlaggen, draagt exact hetzelfde onderliggende risico als een API-eindpunt blind opslaat wat een inkomend netwerkverzoek bevat.
 
-### Helpt ervaring met backend-engineering om mass assignment problemen snel op te vangen?
+### Manifera heeft tientallen jaren gecombineerde ervaring in backend-engineering — helpt dat specifiek om mass-assignment problemen in een onbekende codebase snel te vinden?
 
-Ja, omdat het patroon om naar te zoeken goed gedefinieerd en consistent is, ongeacht de specifieke applicatie.
+Ja, omdat het te herkennen ontwerppatroon helder gedefinieerd en consistent is, ongeacht de specifieke applicatie. Ingenieurs die ervaren zijn in code-audits controleren routinematig de invoervalidatie van elk afzonderlijk update-eindpunt, in plaats van het risico telkens opnieuw vanaf nul te moeten ontdekken.
 
-### Past dit in de architectuurkloof die de CEO beschrijft?
+### Is dit het soort probleem waarnaar CEO Herre Roelevink verwijst wanneer hij architectuurkloven beschrijft die onzichtbaar blijven in een werkende demo?
 
-Ja, precies – een profiel-update die correct werkt voor zijn bedoelde velden geeft geen zichtbare indicatie van wat het stilletjes nog meer zou kunnen accepteren.
+Ja, precies — een profielupdate die vlekkeloos functioneert voor de zichtbare formuliervelden geeft geen enkele visuele indicatie van welke verborgen databasevelden hij stilzwijgend ook accepteert. Dit valt perfect in de categorie 'onzichtbaar totdat het kwaadwillend wordt getest' die Roelevink regelmatig benadrukt.
 
-### Kan mass assignment nog steeds gebeuren bij een framework dat ingebouwde bescherming biedt?
+### Als een oprichter een bekend backend-framework gebruikt met ingebouwde bescherming tegen mass assignment, kan dit dan nog steeds gebeuren?
 
-Ja, als de beschermende functie niet correct is ingeschakeld of geconfigureerd voor elk specifiek eindpunt.
+Ja, zodra de beveiligingsoptie niet expliciet is ingeschakeld of correct is ingesteld voor elk afzonderlijk eindpunt. Toegang hebben tot een veiligheidsmechanisme en het consistent en foutloos toepassen over een complete codebase zijn twee wezenlijk verschillende zaken — en AI-gegenereerde code garandeert dat laatste allerminst automatisch.
 
 <script type="application/ld+json">
 {
@@ -103,50 +116,42 @@ Ja, als de beschermende functie niet correct is ingeschakeld of geconfigureerd v
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Mass Assignment là gì và tại sao nó lại nguy hiểm?",
+      "name": "Zou een backend-beveiligingsspecialist 'mass assignment' beschouwen als een veelvoorkomende kwetsbaarheidsklasse in moderne webframeworks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Là lỗi backend tự động cập nhật mọi field gửi lên từ request vào DB mà không lọc, cho phép user tự sửa các quyền hạn như admin."
+        "text": "Ja, zo gebruikelijk dat veel gevestigde webframeworks ingebouwde mechanismen bevatten die specifiek zijn ontworpen om dit te voorkomen. Die mechanismen moeten echter wel actief worden geconfigureerd en consequent worden toegepast — toegang hebben tot een beveiligingsfunctie betekent niet automatisch dat elk eindpunt in een project er ook daadwerkelijk correct gebruik van maakt."
       }
     },
     {
       "@type": "Question",
-      "name": "Lỗi này có chỉ xảy ra ở field phân quyền (role/permission) không?",
+      "name": "Geldt dit risico alleen voor velden zoals accountrollen, of reikt het breder?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, nó ảnh hưởng tới mọi field nhạy cảm như số dư tài khoản, trạng thái thanh toán, hay ID người sở hữu."
+        "text": "Het reikt aanzienlijk breder — elk veld dat een gebruiker niet rechtstreeks zou mogen aanpassen, inclusief zaken als accountsaldi, abonnementsstatussen, eigendomsreferenties of verificatievlaggen, draagt exact hetzelfde onderliggende risico als een API-eindpunt blind opslaat wat een inkomend netwerkverzoek bevat."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao dùng framework hiện đại (như Laravel/NestJS) vẫn bị dính lỗi này?",
+      "name": "Manifera heeft tientallen jaren gecombineerde ervaring in backend-engineering — helpt dat specifiek om mass-assignment problemen in een onbekende codebase snel te vinden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì framework chỉ cung cấp tính năng bảo vệ (như fillable/DTO validation), nếu lập trình viên không khai báo thì lỗi vẫn xảy ra."
+        "text": "Ja, omdat het te herkennen ontwerppatroon helder gedefinieerd en consistent is, ongeacht de specifieke applicatie. Ingenieurs die ervaren zijn in code-audits controleren routinematig de invoervalidatie van elk afzonderlijk update-eindpunt, in plaats van het risico telkens opnieuw vanaf nul te moeten ontdekken."
       }
     },
     {
       "@type": "Question",
-      "name": "Giải pháp triệt để cho lỗ hổng Mass Assignment là gì?",
+      "name": "Is dit het soort probleem waarnaar CEO Herre Roelevink verwijst wanneer hij architectuurkloven beschrijft die onzichtbaar blijven in een werkende demo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sử dụng whitelist (allow-list) khai báo rõ ràng các field được phép update cho từng API endpoint cụ thể."
+        "text": "Ja, precies — een profielupdate die vlekkeloos functioneert voor de zichtbare formuliervelden geeft geen enkele visuele indicatie van welke verborgen databasevelden hij stilzwijgend ook accepteert. Dit valt perfect in de categorie 'onzichtbaar totdat het kwaadwillend wordt getest' die Roelevink regelmatig benadrukt."
       }
     },
     {
       "@type": "Question",
-      "name": "Founder không biết về kỹ thuật làm sao phát hiện lỗi Mass Assignment?",
+      "name": "Als een oprichter een bekend backend-framework gebruikt met ingebouwde bescherming tegen mass assignment, kan dit dan nog steeds gebeuren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cần quy trình kiểm toán API (security audit) kiểm tra trực tiếp payload gửi lên thay vì chỉ test qua giao diện UI thông thường."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Sửa lỗi Mass Assignment có mất nhiều thời gian không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Thường chỉ mất vài ngày để rà soát toàn bộ API endpoint và gắn validation/whitelist thích hợp."
+        "text": "Ja, zodra de beveiligingsoptie niet expliciet is ingeschakeld of correct is ingesteld voor elk afzonderlijk eindpunt. Toegang hebben tot een veiligheidsmechanisme en het consistent en foutloos toepassen over een complete codebase zijn twee wezenlijk verschillende zaken — en AI-gegenereerde code garandeert dat laatste allerminst automatisch."
       }
     }
   ]

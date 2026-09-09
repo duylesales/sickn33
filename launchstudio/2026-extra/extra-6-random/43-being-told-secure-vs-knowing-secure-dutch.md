@@ -49,6 +49,25 @@ Dat is geen argument tegen het bouwen met AI-tools. Het is een argument om "er s
 
 Onze technici, werkend vanuit Ho Chi Minh-stad samen met collega's in Amsterdam en Singapore, besteden een aanzienlijk deel van hun tijd aan precies dit soort vertaalwerk — het omzetten van "er staat dat het veilig is" naar een specifieke, gecontroleerde lijst van wat daadwerkelijk waar is. LaunchStudio brengt Manifera's enterprise-grade engineeringstandaard, verfijnd over meer dan 160 opgeleverde projecten, naar dat vertaalwerk. Weet u niet zeker in welke categorie uw eigen product valt, dan kunt u [ons de link naar uw prototype sturen voor een gratis beoordeling van waar het staat](https://launchstudio.eu/nl/#contact).
 
+## Zes Vragen Die Verder Gaan Dan 'Is Het Veilig?'
+
+Vragen of een applicatie "veilig is", levert vrijwel altijd een nietszeggend "ja hoor" op. Beveiliging is immers geen binaire schakelaar, maar een samenhangend stelsel van maatregelen. Om de werkelijke weerbaarheid van uw codebase te testen, stelt u deze zes scherpe, concrete vragen:
+
+**1. "Wat gebeurt er als een geauthenticeerde gebruiker het ID van een ander account opvraagt?"** Hiermee test u direct de aanwezigheid van Row-Level Security en autorisatiecontroles aan de serverzijde, de meest voorkomende blinde vlek in AI-codebases.
+
+**2. "Waar worden de API-sleutels en databasereferenties bewaard en wie heeft er toegang toe?"** Dwingt de ontwikkelaar om aan te tonen dat geheimen niet in de broncode of publieke bundels staan, maar veilig worden beheerd in een centrale vault of omgevingsvariabelen.
+
+**3. "Hoe worden inkomende verzoeken van externe webhooks cryptografisch gevalideerd?"** Verifieert of het systeem valse webhook-berichten (bijvoorbeeld van een betaalprovider) herkent en afwijst op basis van handtekeningcontrole.
+
+**4. "Welke datavelden worden gelogd bij een foutmelding?"** Garandeert dat er geen gevoelige persoonsgegevens, wachtwoorden of tokens per ongeluk in plaintext in de serverlogs of externe monitoringtools (zoals Sentry) terechtkomen.
+
+**5. "Hoe is de database beschermd tegen ongecontroleerde piekbelasting en scraping?"** Vraagt naar de implementatie van rate limiting en strikte paginering op alle publieke zoek- en exportfuncties.
+
+**6. "Hoe snel kunnen we de volledige applicatie herstellen na een dataverstoring?"** Toetst de praktische werking van back-up- en herstelprocedures (RTO en RPO) in plaats van theoretische beloftes.
+
+De antwoorden op deze zes vragen onthullen direct het verschil tussen een kwetsbaar prototype en een volwassen productieplatform.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de zin die de helft betekende van wat Julia dacht
@@ -95,11 +114,46 @@ Het komt vaak genoeg voor om een van de meest voorkomende bevindingen te zijn bi
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the practical difference between encryption in transit and encryption at rest?", "acceptedAnswer": { "@type": "Answer", "text": "Encryption in transit protects data while it moves between a user's device and the server, typically through HTTPS. Encryption at rest protects data once it's stored in the database, so it stays unreadable even if someone gains direct access to the storage itself." } },
-    { "@type": "Question", "name": "Why would an AI coding tool only mention one type of encryption?", "acceptedAnswer": { "@type": "Answer", "text": "It's not necessarily misleading on purpose. The tool may implement transit encryption by default through standard web protocols, while encryption at rest requires an additional, deliberate configuration step that isn't always included automatically." } },
-    { "@type": "Question", "name": "How can a non-technical founder verify security claims without learning to code?", "acceptedAnswer": { "@type": "Answer", "text": "By asking specific, narrow questions, like whether data is encrypted at rest, whether passwords are hashed, and whether one user's data is properly isolated from another's, and asking a qualified engineer to answer each one directly rather than accepting a general reassurance." } },
-    { "@type": "Question", "name": "Does Manifera's team handle this kind of review for healthcare or other sensitive data products?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Manifera's engineers across Amsterdam, Singapore, and Ho Chi Minh City regularly review data handling for products managing sensitive information, including healthcare-adjacent tools like appointment and patient management systems." } },
-    { "@type": "Question", "name": "Is this kind of encryption gap common in AI-generated prototypes?", "acceptedAnswer": { "@type": "Answer", "text": "It's common enough to be one of the most frequent findings in early-stage reviews, largely because encryption at rest requires an explicit setup step that a fast-moving prototype build can easily skip." } }
+    {
+      "@type": "Question",
+      "name": "Wat is het praktische verschil tussen versleuteling tijdens transport en versleuteling in rust?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Versleuteling tijdens transport beschermt gegevens terwijl ze zich verplaatsen tussen het apparaat van een gebruiker en de server, doorgaans via HTTPS. Versleuteling in rust beschermt gegevens zodra ze zijn opgeslagen in de database, zodat ze onleesbaar blijven, zelfs als iemand directe toegang krijgt tot de opslag zelf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom zou een AI-codeertool maar één type versleuteling noemen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is niet noodzakelijk opzettelijk misleidend — de tool kan versleuteling tijdens transport standaard implementeren via gangbare webprotocollen, terwijl versleuteling in rust een extra, bewuste configuratiestap vereist die niet altijd automatisch is inbegrepen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan een niet-technische oprichter beveiligingsclaims verifiëren zonder te leren programmeren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door specifieke, afgebakende vragen te stellen, zoals of gegevens versleuteld zijn in rust, of wachtwoorden gehasht zijn, en of de gegevens van de ene gebruiker correct zijn afgeschermd van die van een andere, en een gekwalificeerde engineer te vragen elke vraag rechtstreeks te beantwoorden in plaats van een algemene geruststelling te accepteren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Behandelt het team van Manifera dit soort reviews voor de zorg of andere gevoelige gegevens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, de technici van Manifera in Amsterdam, Singapore en Ho Chi Minh-stad beoordelen regelmatig gegevensverwerking voor producten die gevoelige informatie beheren, inclusief zorggerelateerde tools zoals afspraak- en patiëntbeheersystemen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit soort versleutelingslacune gebruikelijk in door AI gegenereerde prototypes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het komt vaak genoeg voor om een van de meest voorkomende bevindingen te zijn bij vroege reviews, grotendeels omdat versleuteling in rust een expliciete installatiestap vereist die een snel bewegende prototypebuild gemakkelijk kan overslaan."
+      }
+    }
   ]
 }
 </script>

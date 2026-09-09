@@ -60,6 +60,10 @@ The right vendor decision for internal tools isn't "always low-code" or "always 
 
 Manifera helps product and engineering teams build the custom internal tooling that's outgrown low-code — and helps teams evaluate, before they adopt a platform, whether a given tool actually belongs there. Learn more about our [custom software development](https://www.manifera.com/services/custom-software-development/) work and [our way of working](https://www.manifera.com/about-us/our-way-of-working/), or [talk to us](https://www.manifera.com/contact-us/) about a specific internal tool that's hit its ceiling.
 
+## Implementation Checklist: The Quarterly Portfolio Review
+
+Run this five-item audit against every internal tool on a low-code platform once a quarter, not just at build time. (1) Seat cost trend: is the per-tool license cost flat, or has it grown as more end-users were added — a tool that started with five reviewer seats and now has thirty warehouse-staff seats has silently changed its cost math. (2) Scripting complexity: pull up the tool's logic editor and count the lines of platform-DSL script — past roughly 150-200 lines of branching logic, most teams report debugging time inside the platform exceeds what debugging equivalent code would take. (3) External exposure: has the tool's output started feeding a customer-facing system or an external partner integration that wasn't part of its original internal-only scope. (4) Workaround time: track engineering hours spent per month on platform-limitation workarounds for this specific tool — more than roughly 8-10 hours a month is a strong signal the tool has crossed into "should be custom" territory. (5) Portability check: confirm you can still export the tool's logic as real code, not just platform configuration — some vendors change export capabilities between plan tiers without much notice. Score each tool against all five quarterly; a tool failing two or more is a graduation candidate, not a tool to keep patching.
+
 ## Frequently Asked Questions
 
 ### How many internal tools on a low-code platform is "too many" before we should reconsider strategy?
@@ -76,6 +80,19 @@ Some can, with proper staging environments, testing, and rollback capability, bu
 
 ### Is it worth building a dedicated internal tools function instead of ad hoc low-code builds by product managers?
 Once an organization has more than a handful of internal tools handling non-trivial logic, a dedicated function — even a small one — tends to reduce the sprawl and inconsistent quality that comes from each tool being built by whoever had a free weekend, and makes the build-vs-low-code decision explicit rather than accidental.
+
+### (Scenario: a Retool refund-approval tool built by a product manager now handles $2M/month in approvals with no code review process) How urgently should this be migrated?
+Treat this as a priority migration regardless of how well it currently works, because the risk isn't functionality — it's the absence of version control, code review, and rollback safety around a tool that directly controls significant financial flows. A single untested change pushed by one person, with no review gate, is a structurally different risk profile than the same logic living in a reviewed codebase with CI checks.
+
+### (Scenario: fourteen internal tools have accumulated across the org with no one tracking aggregate seat spend, similar to this article's opening example) How do we get visibility into the real cost without a lengthy audit project?
+Pull the platform's own billing dashboard, which typically breaks down seats and usage per app, and cross-reference it against which tools are still actively used versus abandoned — many organizations find 20-30% of their low-code seat spend going to tools nobody has opened in months. This alone often surfaces enough savings to fund the review of the remaining active tools.
+
+### (Scenario: a low-code vendor's contract renewal includes a plan-tier change that quietly removes code-export capability) How should the Head of Product respond?
+Treat this as a material change requiring re-evaluation of every tool on that platform, not a routine renewal to sign — verify explicitly whether existing tools built under the old plan retain their export rights or whether the new tier applies retroactively. If retroactive, negotiate to preserve export capability contractually or begin planning migrations for any tool where portability matters before the new terms take effect.
+
+### (Scenario: engineering team wants to migrate three tools off Retool simultaneously to a custom build) How should this be sequenced to avoid disrupting daily operations?
+Migrate the least business-critical of the three first as a proof of the migration pattern and data-model translation approach, then apply the validated pattern to the higher-stakes tools rather than attempting all three in parallel from scratch. Running the legacy and new tool in parallel for a defined validation window before full cutover catches discrepancies in business logic that a one-shot migration would surface only in production.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -119,6 +136,38 @@ Once an organization has more than a handful of internal tools handling non-triv
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Once an organization has more than a handful of internal tools handling non-trivial logic, a dedicated function — even a small one — tends to reduce the sprawl and inconsistent quality that comes from each tool being built by whoever had a free weekend, and makes the build-vs-low-code decision explicit rather than accidental."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a Retool refund-approval tool built by a product manager now handles $2M/month in approvals with no code review process) How urgently should this be migrated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat this as a priority migration regardless of how well it currently works — the risk is the absence of version control, code review, and rollback safety around a tool that directly controls significant financial flows. An untested change with no review gate is a structurally different risk than the same logic living in a reviewed codebase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: fourteen internal tools have accumulated across the org with no one tracking aggregate seat spend, similar to this article's opening example) How do we get visibility into the real cost without a lengthy audit project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pull the platform's own billing dashboard, which typically breaks down seats and usage per app, and cross-reference against which tools are still actively used. Many organizations find 20-30% of seat spend going to tools nobody has opened in months."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a low-code vendor's contract renewal includes a plan-tier change that quietly removes code-export capability) How should the Head of Product respond?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat this as a material change requiring re-evaluation, not a routine renewal to sign. Verify whether existing tools retain export rights or whether the new tier applies retroactively, and negotiate to preserve export capability contractually if so."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: engineering team wants to migrate three tools off Retool simultaneously to a custom build) How should this be sequenced to avoid disrupting daily operations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Migrate the least business-critical tool first as a proof of the migration pattern, then apply the validated pattern to higher-stakes tools rather than attempting all three in parallel. Run legacy and new tools side by side during a validation window before full cutover."
       }
     }
   ]

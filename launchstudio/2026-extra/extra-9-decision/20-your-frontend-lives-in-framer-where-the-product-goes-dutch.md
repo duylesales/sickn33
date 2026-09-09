@@ -107,7 +107,7 @@ Die splitsing — behoud de voorkant die u met succes heeft opgebouwd en bouw ui
 
 Twijfelt u aan welke kant van de lijn uw concept zich bevindt? Dat is precies het nuttigste gesprek om als eerste te voeren — plan een gesprek van vijftien minuten in en leg uit wat een ingelogde gebruiker precies moet kunnen doen. Dat antwoord bepaalt het hele traject, en binnen tien minuten heeft u volledige duidelijkheid.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De ledensectie die het werk van cliënten niet kon scheiden
 

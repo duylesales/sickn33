@@ -63,6 +63,12 @@ Ask a vendor finalist directly what their actual on-call structure looks like �
 
 An SLA with no consequence for being missed is a statement of intent, not a contract term. A real SLA defines a service credit schedule — commonly a percentage of the monthly service fee credited back for each tier of SLA breach, scaling up for more severe or more frequent breaches, with a defined process for how credits are requested and applied rather than left to informal negotiation after the fact. Push for this schedule to be specific and automatic upon a documented breach, not something that requires a renewed negotiation each time an incident occurs — a vendor confident in their delivery capability will not resist this, because they do not expect to be paying out credits regularly if their infrastructure is genuinely as reliable as their pitch claims.
 
+## The Third-Party Dependency Gap Most Contracts Miss
+
+Most SLAs cover only the vendor's own infrastructure, which leaves a real gap: a checkout failure caused by a payment gateway outage, a CDN provider incident, or a third-party fraud-check API timing out is technically "not the vendor's fault," yet it's indistinguishable from a vendor outage to your customers. A properly scoped SLA should specify how third-party dependency failures are handled — either through a defined fallback behavior (graceful degradation rather than a hard failure) that the vendor is contractually responsible for building, or an explicit carve-out with a required incident postmortem regardless of fault, so you're not left without any documented response just because the root cause sat outside the vendor's own servers.
+
+This matters more as web apps accumulate dependencies: a typical transactional web app now integrates 4-8 third-party services (payment, tax calculation, fraud detection, email delivery, analytics, CDN, authentication), and a vendor who hasn't mapped which of these are single points of failure for your critical paths hasn't actually stress-tested the SLA they're proposing. Ask for a dependency map as part of the SLA negotiation — which third-party services sit on your checkout path, what happens to the user experience if each one fails independently, and whether the vendor has built circuit breakers or fallback logic rather than letting one slow third-party API drag down your entire p95 response time metric.
+
 ## Making the Final Call
 
 A web application performance SLA is only as valuable as its measurability and its enforcement mechanism. Push every vendor negotiation past the marketing-friendly uptime percentage toward specific, measured definitions — how uptime is monitored and by what tool, p95 load time and error rate targets based on real user monitoring, defined incident response times by severity, and an automatic service credit schedule tied to documented breaches.
@@ -88,6 +94,18 @@ A reasonable SLA requires vendor acknowledgment within 15-30 minutes of a full o
 ### What happens if a vendor misses the SLA?
 A real SLA includes an automatic service credit schedule — a percentage of the monthly fee credited back per breach tier — applied upon a documented breach without requiring renewed negotiation each time. An SLA with no defined consequence is not an enforceable commitment.
 
+### (Scenario: checkout fails because a third-party payment gateway went down, not the vendor's own servers) Does our web app SLA cover downtime caused by a third-party payment gateway or CDN outage?
+Only if the contract explicitly says so — most SLAs cover only the vendor's own infrastructure by default. Require a defined fallback behavior for known third-party dependencies on your critical paths, plus a mandatory incident postmortem for any customer-facing failure regardless of whether the root cause was the vendor's own code or a third-party service.
+
+### (Scenario: multi-region web app serving EU and US customers from different data centers) Should our SLA define separate load-time targets per geographic region?
+Yes, if you serve customers from more than one region off different infrastructure, since a single blended p95 load-time target can hide a region performing well below acceptable while another compensates in the average. Require region-specific RUM data and separate SLA targets for each major market you serve.
+
+### (Scenario: significant share of traffic on mobile devices over throttled or unreliable connections) Should the SLA set different performance targets for mobile versus desktop users?
+Yes — mobile sessions, particularly on throttled 4G or spotty connections, routinely show p95 load times 1.5-2x higher than desktop on the same page, and a blended target lets mobile performance degrade unnoticed. Ask for mobile and desktop RUM data segmented separately in SLA reporting, not a single combined figure.
+
+### (Scenario: vendor wants to cap total service credits at a low ceiling) How much should we let a vendor cap total SLA credit liability?
+A common vendor-favorable structure caps total monthly credits at 100% of that month's fee, which is reasonable as a ceiling but should never be set lower without strong justification, since a lower cap removes the vendor's financial incentive to prioritize fixing chronic, lower-severity issues. Push back on any cap under 100% of monthly fees for a business-critical web application.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -97,7 +115,11 @@ A real SLA includes an automatic service credit schedule — a percentage of the
     {"@type": "Question", "name": "Why is average page load time a poor SLA metric?", "acceptedAnswer": {"@type": "Answer", "text": "An average can look acceptable while a meaningful share of real users experience much slower load times. A 95th percentile (p95) load time, measured from real user monitoring data, reveals the actual worst-case experience."}},
     {"@type": "Question", "name": "What error rate should a transactional web app's SLA target?", "acceptedAnswer": {"@type": "Answer", "text": "A reasonable baseline caps critical-path error rates under 0.5% over a rolling 30-day window, with a mandatory incident review triggered if the error rate exceeds 1% for more than 15 consecutive minutes."}},
     {"@type": "Question", "name": "How fast should a vendor respond to a full outage?", "acceptedAnswer": {"@type": "Answer", "text": "A reasonable SLA requires vendor acknowledgment within 15-30 minutes, regular status updates until resolution, and a defined maximum resolution target, commonly around 4 hours for a standard business web app."}},
-    {"@type": "Question", "name": "What happens if a vendor misses the SLA?", "acceptedAnswer": {"@type": "Answer", "text": "A real SLA includes an automatic service credit schedule applied upon a documented breach, without requiring renewed negotiation each time. An SLA with no defined consequence is not enforceable."}}
+    {"@type": "Question", "name": "What happens if a vendor misses the SLA?", "acceptedAnswer": {"@type": "Answer", "text": "A real SLA includes an automatic service credit schedule applied upon a documented breach, without requiring renewed negotiation each time. An SLA with no defined consequence is not enforceable."}},
+    {"@type": "Question", "name": "Does our web app SLA cover downtime caused by a third-party payment gateway or CDN outage?", "acceptedAnswer": {"@type": "Answer", "text": "Only if the contract explicitly says so, since most SLAs cover only the vendor's own infrastructure by default. Require a defined fallback behavior for known third-party dependencies plus a mandatory incident postmortem regardless of root cause."}},
+    {"@type": "Question", "name": "Should our SLA define separate load-time targets per geographic region?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you serve customers from more than one region off different infrastructure, since a single blended p95 target can hide one region underperforming while another compensates in the average. Require region-specific RUM data and separate targets per major market."}},
+    {"@type": "Question", "name": "Should the SLA set different performance targets for mobile versus desktop users?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — mobile sessions on throttled connections routinely show p95 load times 1.5-2x higher than desktop on the same page, and a blended target lets mobile performance degrade unnoticed. Require mobile and desktop RUM data segmented separately."}},
+    {"@type": "Question", "name": "How much should we let a vendor cap total SLA credit liability?", "acceptedAnswer": {"@type": "Answer", "text": "A cap at 100% of that month's fee is reasonable; a lower cap removes the vendor's financial incentive to prioritize fixing chronic, lower-severity issues. Push back on any cap under 100% of monthly fees for a business-critical web application."}}
   ]
 }
 </script>

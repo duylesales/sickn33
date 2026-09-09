@@ -41,6 +41,19 @@ Oprichters die bouwen met Lovable, Bolt, Cursor of v0 werken vaak met een onderl
 
 LaunchStudio beoordeelt precies dit soort afhankelijkheidsrisico als onderdeel van productiegereedheidswerk — waarbij niet alleen wordt gecontroleerd wat de code van een app doet, maar ook wat er gebeurt wanneer een externe limiet van een gratis laag wordt geraakt tijdens echt gebruik. Onze engineers, voortbouwend op het belangrijkste engineeringcentrum van Manifera in Ho Chi Minh-stad, hebben dit exacte storingspatroon vaak genoeg gezien om er standaard op te controleren in plaats van te wachten tot een storing het onthult. Vertrouwt u op een AI-model op een gratis laag en komt u dichter bij echte klanten, [bereken dan wat een gereedheidsbeoordeling zou kosten](https://launchstudio.eu/nl/#calculator) voordat uw drukste week uw slechtste wordt. De praktijk van Manifera voor [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/) controleert routinematig precies dit soort externe afhankelijkheidsrisico's voor klanten ver voorbij de oprichtersfase.
 
+## Hoe U de Rate-Limit Documentatie van een AI-Provider Daadwerkelijk Leest
+
+De meeste oprichters die de documentatie over rate limits overslaan, doen dat niet uit luiheid: ze openen de pagina, stuiten op een muur van technische afkortingen (RPM, RPD, TPM, TPD) die niet direct aansluiten bij hun productplannen, en sluiten het tabblad weer. Toch zijn er slechts drie kerncijfers die u werkelijk moet begrijpen om kostbare productiestoringen te voorkomen:
+
+**1. Requests Per Minute (RPM) versus Tokens Per Minute (TPM).** RPM begrenst het aantal afzonderlijke API-aanroepen dat u per minuut mag doen; TPM begrenst het totale aantal woorden/tokens dat in die minuut door het model wordt verwerkt (inclusief uw prompt en het gegenereerde antwoord). Een applicatie die lange documenten analyseert, loopt vaak al tegen de TPM-limiet aan bij slechts drie gelijktijdige gebruikers, lang voordat de RPM-limiet in zicht komt.
+
+**2. Tier-Indeling en Uitgavenlimieten.** AI-leveranciers (zoals OpenAI en Anthropic) delen accounts in op basis van historische uitgaven ('Usage Tiers'). Een nieuw account start vrijwel altijd in Tier 1 met extreem krappe limieten. U kunt niet simpelweg opschalen naar duizenden gebruikers zonder uw account vooraf te upgraden door prepaid tegoed te storten en de verificatiestappen te doorlopen.
+
+**3. Foutafhandeling bij HTTP-statuscode 429 (Too Many Requests).** Wanneer uw applicatie de limiet overschrijdt, stuurt de provider een 429-foutmelding terug, vaak vergezeld van een `Retry-After` header. Als uw code niet is geprogrammeerd om deze statuscode te herkennen en het verzoek na een korte pauze (exponential backoff) opnieuw aan te bieden, ziet uw eindgebruiker direct een fatale foutmelding.
+
+Neem een half uur de tijd om uw piekbelasting door te rekenen: hoeveel gelijktijdige gebruikers verwacht u bij een succesvolle lancering, hoeveel tokens verbruikt één gebruikerssessie gemiddeld, en ondersteunt uw huidige API-tier dat volume? Zo voorkomt u dat uw lancering vastloopt op een administratieve API-blokkade.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de lanceerweek-storing van Loes Peters
@@ -87,11 +100,46 @@ LaunchStudio put voornamelijk uit het belangrijkste engineeringcentrum van Manif
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why do free-tier AI limits feel irrelevant early on?", "acceptedAnswer": { "@type": "Answer", "text": "Because usage during personal testing is far below free-tier limits, so the ceiling never gets triggered and feels invisible." } },
-    { "@type": "Question", "name": "What's the actual risk of staying on a free tier too long?", "acceptedAnswer": { "@type": "Answer", "text": "Real customer growth and free-tier limits move in opposite directions, so the app is most likely to hit its ceiling exactly when it starts succeeding." } },
-    { "@type": "Question", "name": "What should founders check before relying on a free-tier AI model in production?", "acceptedAnswer": { "@type": "Answer", "text": "The actual rate limit versus expected usage, what happens when the limit is hit, and the cost of upgrading before it's needed under pressure." } },
-    { "@type": "Question", "name": "How did LaunchStudio fix Loes Peters' outage?", "acceptedAnswer": { "@type": "Answer", "text": "By migrating to an appropriately sized paid tier, adding graceful rate-limit handling, and reviewing other dependencies for similar risk." } },
-    { "@type": "Question", "name": "Where is LaunchStudio's engineering team based?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio draws primarily on Manifera's main engineering center in Ho Chi Minh City, alongside hubs in Amsterdam and Singapore." } }
+    {
+      "@type": "Question",
+      "name": "Waarom voelen limieten van gratis AI-lagen in het begin irrelevant aan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat het gebruik tijdens persoonlijk testen en vroeg gebruik door vrienden en familie ver onder ligt van wat gratis lagen doorgaans toestaan, waardoor de limiet nooit wordt geactiveerd en onzichtbaar aanvoelt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het daadwerkelijke risico van te lang op een gratis laag blijven?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het risico is dat echte klantgroei en de limieten van de gratis laag in tegengestelde richtingen bewegen — de app raakt zijn plafond het meest waarschijnlijk precies op het moment dat hij begint te slagen met echte, gelijktijdige gebruikers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moeten oprichters controleren voordat ze vertrouwen op een AI-model in een gratis laag in productie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De daadwerkelijke rate limit versus het verwachte gebruik, wat er gebeurt als de limiet wordt bereikt, en de kosten en snelheid van upgraden naar een betaalde laag voordat dit onder druk nodig is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe heeft LaunchStudio de storing van Loes Peters opgelost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door PlanStroom te migreren naar een passend gedimensioneerde betaalde laag, nette foutafhandeling voor rate limits toe te voegen en andere afhankelijkheden te beoordelen op vergelijkbaar risico."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is het engineeringteam van LaunchStudio gevestigd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio put voornamelijk uit het belangrijkste engineeringcentrum van Manifera in Ho Chi Minh-stad, naast vestigingen in Amsterdam en Singapore."
+      }
+    }
   ]
 }
 </script>

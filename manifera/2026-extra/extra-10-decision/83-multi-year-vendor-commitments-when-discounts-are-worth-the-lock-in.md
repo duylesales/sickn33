@@ -65,6 +65,12 @@ Manifera structures both annual and multi-year dedicated team engagements — se
 }
 </script>
 
+## The Staged Commitment Alternative: Getting Most of the Discount Without Full Lock-In
+
+A binary choice between a rolling annual term and a full multi-year lock isn't the only structure available, and CFOs who only negotiate those two options leave a better middle ground on the table. A staged commitment — for example, a 1+1+1 structure with an initial year at standard annual pricing, followed by two option years the vendor pre-commits to at a discounted rate (typically 8-10% in year two, 12-15% in year three) that you can decline at each anniversary with 60-90 days notice — captures most of the multi-year discount's value while preserving an annual exit at every renewal point.
+
+This structure works because the vendor's core motivation for offering a discount — predictable bench planning and reduced sales overhead — is satisfied by the option commitment even though you retain the right to decline it, since the vendor can plan capacity around the likely case while you keep genuine leverage. It's a stronger ask in negotiation than it might sound: frame it explicitly as "I'll give you planning visibility in exchange for a partial discount now, full discount only once each year is confirmed," rather than accepting the vendor's binary 1-year-or-3-year framing at face value. Vendors resistant to any staged structure are often signaling the multi-year discount is doing more to lock you in than to reflect real cost savings on their side.
+
 ## Frequently Asked Questions
 
 ### How large a discount should a vendor offer for a multi-year commitment?
@@ -82,6 +88,18 @@ Yes. Without a rate benchmarking clause tied to a market index or comparable-eng
 ### What's the real cost of vendor lock-in beyond the contract price?
 The real cost is the option value of the annual walk-away point you give up. That annual leverage keeps a vendor motivated on service quality even if you never exercise it; removing it under a multi-year term means underperformance can drift for a year or more before your only recourse is an expensive early-termination clause.
 
+### (Scenario: a vendor offers a steeper discount for a five-year commitment than for three years) Should a CFO take a larger discount for an even longer lock-in period?
+Generally no, past three years — the option value being given up grows faster than the incremental discount typically offered, since almost no engineering relationship, market rate environment, or company roadmap is predictable enough to responsibly commit five years out. If a vendor is pushing hard for five-year terms, ask directly why they need a longer window than the standard 12-18 month track record this decision usually calls for.
+
+### (Scenario: finance wants to compare a multi-year discount against the company's cost of capital) How should a CFO weigh a multi-year discount against the opportunity cost of committing that budget years in advance?
+Discount the multi-year savings back using the company's actual cost of capital or hurdle rate, not the nominal percentage, since a 15% discount realized in year three is worth meaningfully less in present-value terms than the same percentage saved in year one. If the risk-adjusted present value of the discount is thin once cost of capital is applied, the flexibility of an annual term is usually the better financial call, independent of relationship quality.
+
+### (Scenario: the company is mid-way through an acquisition or restructuring and vendor spend may be consolidated or cut) Is it ever appropriate to sign a multi-year vendor commitment during organizational uncertainty like an M&A process?
+No — this is one of the clearest cases where rolling annual terms are the safer structure regardless of how attractive the multi-year discount looks, since a locked commitment can become a liability line item in due diligence or a forced early-termination cost during post-merger consolidation. Wait for organizational stability before trading away flexibility you may need on short notice.
+
+### (Scenario: a CFO wants the cost certainty of a multi-year deal but doesn't want to lock in surge or variable headcount) Can a multi-year commitment apply to only part of a vendor engagement rather than the whole team?
+Yes, and it's a reasonable way to capture partial discount value — lock in the core, stable portion of a dedicated team under a multi-year structure while keeping surge or project-specific capacity on rolling short-term terms. This isolates the lock-in to the part of the engagement that's genuinely predictable and leaves flexibility where headcount needs are more likely to shift.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -91,7 +109,11 @@ The real cost is the option value of the annual walk-away point you give up. Tha
     {"@type": "Question", "name": "How much of a track record should I have with a vendor before signing a multi-year contract?", "acceptedAnswer": {"@type": "Answer", "text": "A reasonable minimum is 12-18 months of demonstrated performance under a shorter initial term, since a relationship hasn't been tested against a real scope change or service issue before then."}},
     {"@type": "Question", "name": "What exit terms should be negotiated into a multi-year vendor contract?", "acceptedAnswer": {"@type": "Answer", "text": "Negotiate an annual performance review with defined, objective triggers that permit early exit without punitive penalties, and confirm explicitly what exiting in year two of a three-year term costs in notice period and financial penalty."}},
     {"@type": "Question", "name": "Should a multi-year contract include a market rate review clause?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Without a rate benchmarking clause tied to a market index at each anniversary, a locked-in rate is a one-directional bet: you benefit if market rates rise, but overpay with no recourse if rates fall."}},
-    {"@type": "Question", "name": "What's the real cost of vendor lock-in beyond the contract price?", "acceptedAnswer": {"@type": "Answer", "text": "The real cost is the option value of the annual walk-away point you give up, which keeps a vendor motivated on service quality even if never exercised. Removing it means underperformance can drift for a year or more before recourse."}}
+    {"@type": "Question", "name": "What's the real cost of vendor lock-in beyond the contract price?", "acceptedAnswer": {"@type": "Answer", "text": "The real cost is the option value of the annual walk-away point you give up, which keeps a vendor motivated on service quality even if never exercised. Removing it means underperformance can drift for a year or more before recourse."}},
+    {"@type": "Question", "name": "Should a CFO take a larger discount for an even longer lock-in period?", "acceptedAnswer": {"@type": "Answer", "text": "Generally no, past three years — the option value being given up grows faster than the incremental discount typically offered, since few engineering relationships or roadmaps are predictable enough to responsibly commit five years out."}},
+    {"@type": "Question", "name": "How should a CFO weigh a multi-year discount against the opportunity cost of committing that budget years in advance?", "acceptedAnswer": {"@type": "Answer", "text": "Discount the multi-year savings back using the company's actual cost of capital, since a percentage saved in year three is worth less in present-value terms than the same percentage saved in year one. A thin risk-adjusted present value usually favors an annual term."}},
+    {"@type": "Question", "name": "Is it ever appropriate to sign a multi-year vendor commitment during organizational uncertainty like an M&A process?", "acceptedAnswer": {"@type": "Answer", "text": "No — a locked commitment can become a liability line item in due diligence or a forced early-termination cost during post-merger consolidation, so it's safer to wait for organizational stability before trading away flexibility."}},
+    {"@type": "Question", "name": "Can a multi-year commitment apply to only part of a vendor engagement rather than the whole team?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — lock in the core, stable portion of a dedicated team under a multi-year structure while keeping surge or project-specific capacity on rolling short-term terms, isolating the lock-in to the genuinely predictable part of the engagement."}}
   ]
 }
 </script>

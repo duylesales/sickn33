@@ -68,7 +68,7 @@ Oprichters die in de problemen komen, zijn niet degenen die beslissingen hebben 
 
 [Vraag een gratis scope-analyse van uw prototype aan](https://launchstudio.eu/nl/#contact) — de meeste scale-up oprichters zijn opgelucht wanneer blijkt dat slechts twee of drie gerichte ingrepen vrijwel al hun reële schaalrisico's wegnemen.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Rotterdamse SaaS Maakt Zijn Eerste Echte Verkeerspiek Mee
 

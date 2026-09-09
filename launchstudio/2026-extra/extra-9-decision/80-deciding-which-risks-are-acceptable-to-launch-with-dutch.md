@@ -100,7 +100,7 @@ Het risicoregister is geen eenmalig pre-launch document dat na de lancering in e
 
 [Vraag een vaste prijsopgave en een eerlijke risico-analyse aan](https://launchstudio.eu/nl/#contact) voor uw specifieke softwareproduct, vóórdat u beslist wat er écht moet gebeuren voor de lancering.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De Lanceerbeslissing van een Scale-Up Oprichter: Anouk's Lijst met Elf Twijfels
 

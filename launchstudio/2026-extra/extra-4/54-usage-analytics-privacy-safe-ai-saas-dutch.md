@@ -103,6 +103,10 @@ Omdat de code die de gegevens verzendt naar elke technische maatstaf correct wer
 
 Ja – vrije-tekstvelden zoals zoekopdrachten, formulierwaarden, of volledige pagina-URL's kunnen een e-mailadres of naam dragen, zelfs wanneer de primaire identificatie op de juiste manier is gehasht. Daarom moet de audit elk veld op elk gebeurtenistype controleren, en niet alleen de identificatie.
 
+### Wat kost een analytics privacy audit bij LaunchStudio?
+
+Een privacy-audit op analytics tracking inclusief anonymisering van event-streams kost gemiddeld €850 en duurt 5 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

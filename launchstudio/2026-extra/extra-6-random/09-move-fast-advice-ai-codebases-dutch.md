@@ -49,6 +49,23 @@ Dit is precies het gat dat de engineers van LaunchStudio vullen voor technische 
 
 Als u een solo-oprichter bent die probeert uit te vinden waar uw eigen codebase zich op dit risicospectrum bevindt, legt onze [procespagina](https://launchstudio.eu/nl/#process) uit hoe een reviewtraject dagelijks daadwerkelijk werkt. En als u wilt zien hoe deze discipline opschaalt voorbij de codebase van één oprichter, past Manifera's praktijk voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) hetzelfde principe van review-vóór-verzenden toe op veel grotere systemen.
 
+## Hoe een Vijf-Minuten Pre-Ship Review Er in de Praktijk Uitziet
+
+Het is gemakkelijk om te adviseren over een "pre-ship review van vijf minuten" zonder concreet te maken wat er in die minuten werkelijk gebeurt. Om dit proces hanteerbaar en effectief te maken, volgt hier de exacte checklist die een oprichter bij elke release kan doorlopen:
+
+**Minuut 1: De Git Diff Scan.** Open de lijst met gewijzigde bestanden in uw git-tool of GitHub pull request. Kijk niet naar elke regel code, maar scan de bestandsnamen. Zijn er bestanden gewijzigd buiten het domein van de feature? Als een simpele aanpassing aan de navigatiebalk plotseling wijzigingen bevat in `auth.ts` of `schema.prisma`, stop dan onmiddellijk en vraag waarom die bestanden zijn geraakt.
+
+**Minuut 2: De Geheimen-Check.** Zoek in de diff specifiek naar patronen zoals `sk_live_`, `api_key`, wachtwoorden of database-URLs. Verifieer dat alle gevoelige sleutels netjes worden ingeladen via `process.env` en dat er geen tijdelijke hardcoded test-sleutels zijn achtergebleven.
+
+**Minuut 3: De Autorisatie-Vraag.** Als deze release nieuwe data-endpoints of database-query's toevoegt, beantwoord dan de kernvraag: "bevat deze query een filter op het ID van de ingelogde gebruiker of organisatie?" Ziet u een query die data ophaalt puur op basis van een URL-parameter zonder gebruikersverificatie, dan is dat een directe blokkade voor deployment.
+
+**Minuut 4: De Console- & Foutlog-Inspectie.** Start de applicatie lokaal of op de staging-omgeving, open de browserconsole (F12) en voer de nieuwe flow eenmaal uit. Ziet u rode foutmeldingen, ontbrekende sleutels of waarschuwingen over 'unhandled promise rejections'? Een schone console is een basisvoorwaarde voor productie.
+
+**Minuut 5: De 'Happy Path' & 'Unhappy Path' Check.** Test niet alleen of de knop werkt als u alles juist invult (happy path), maar test ook één voor de hand liggende fout (unhappy path): voer een ongeldig e-mailadres in, laat een verplicht veld leeg of klik tweemaal snel achter elkaar op de verzendknop. Blijft de app netjes overeind en toont deze een begrijpelijke foutmelding?
+
+Als alle vijf de minuten een groen vinkje opleveren, kunt u met een gerust hart deployen. Faalt één van de stappen, dan heeft u zojuist binnen vijf minuten een productieverstoring voorkomen.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: CodeVolgs cluster van stille breuken
@@ -95,11 +112,46 @@ Het vereist geen tweede fulltime engineer — zelfs een korte gestructureerde co
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Does this mean solo founders should stop shipping fast?", "acceptedAnswer": { "@type": "Answer", "text": "No, the argument is against speed without a review layer, not against speed itself — Daan kept his daily shipping cadence and simply added a lightweight check before production." } },
-    { "@type": "Question", "name": "Why do AI-generated bugs show up in unrelated places?", "acceptedAnswer": { "@type": "Answer", "text": "AI coding tools generate plausible code per prompt without necessarily preserving a full model of downstream dependencies, so a change in one area can quietly affect logic that looks unconnected." } },
-    { "@type": "Question", "name": "Is this a bigger risk with Cursor specifically, or all AI coding tools?", "acceptedAnswer": { "@type": "Answer", "text": "It's a pattern across Cursor, Bolt, Lovable, and v0 alike; the risk comes from the lack of a review cadence rather than any single tool being worse." } },
-    { "@type": "Question", "name": "How does Manifera's Ho Chi Minh City team fit into this kind of work?", "acceptedAnswer": { "@type": "Answer", "text": "A large share of the hands-on code review and remediation for founders in this situation runs through the Ho Chi Minh City engineering center." } },
-    { "@type": "Question", "name": "What does a review cadence actually look like for a one-person team?", "acceptedAnswer": { "@type": "Answer", "text": "Even a short structured check before each production ship, focused on interactions between new and existing logic, catches most of what pure speed misses." } }
+    {
+      "@type": "Question",
+      "name": "Betekent dit dat solo-oprichters moeten stoppen met snel verzenden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee — het argument is niet tegen snelheid, het is tegen snelheid zonder reviewlaag. Daan behield zijn dagelijkse verzendritme; hij voegde alleen een lichtgewicht controle toe voordat code productie bereikte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom duiken door AI gegenereerde bugs op losstaande plekken op?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat AI-coderingstools plausibele code genereren voor elke prompt zonder noodzakelijkerwijs een volledig model van elke downstream-afhankelijkheid te behouden, zodat een wijziging op één plek stilletjes logica elders kan beïnvloeden die er op het oppervlak losstaand uitziet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit een groter risico specifiek bij Cursor, of bij alle AI-coderingstools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is een patroon dat geldt voor Cursor, Bolt, Lovable en v0 tegelijk — het risico komt voort uit het ontbreken van een reviewritme, niet uit het feit dat de ene tool slechter is dan de andere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe past het team van Manifera in Ho Chi Minh-stad in dit soort werk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een groot deel van het praktische codebeoordelings- en reparatiewerk voor oprichters in deze situatie loopt via het engineeringcentrum in Ho Chi Minh-stad, dat regelmatig diagnoses en fixes voor precies dit stille-breukpatroon afhandelt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe ziet een \"reviewritme\" er in de praktijk uit voor een eenpersoonsteam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het vereist geen tweede fulltime engineer — zelfs een korte gestructureerde controle vóór elke productieverzending, gericht op interacties tussen nieuwe en bestaande logica, vangt het meeste op wat pure snelheid mist."
+      }
+    }
   ]
 }
 </script>

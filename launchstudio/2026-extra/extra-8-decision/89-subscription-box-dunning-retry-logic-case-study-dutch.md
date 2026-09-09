@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een Abonnementsbox-Oprichter Regelt Dunning en Retry-Logica Voordat Ze Gaat Adverteren"
+Titel: "Case Study: Een Abonnementsbox-Oprichter Regelt Dunning en Retry-Logica Voordat Ze Gaat Adverteren"
 Trefwoorden: dunning abonnementsbox, retry-logica terugkerende betalingen, onvrijwillige churn herstellen SaaS, Stripe billing dunning, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: SaaS-Oprichter Scale-Up
 ---
 
-# Praktijkvoorbeeld: Een Abonnementsbox-Oprichter Regelt Dunning en Retry-Logica Voordat Ze Gaat Adverteren
+# Case Study: Een Abonnementsbox-Oprichter Regelt Dunning en Retry-Logica Voordat Ze Gaat Adverteren
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een Abonnementsbox-Oprichter Regelt Dunning en Retry-Logica Voordat Ze Gaat Adverteren",
+  "headline": "Case Study: Een Abonnementsbox-Oprichter Regelt Dunning en Retry-Logica Voordat Ze Gaat Adverteren",
   "description": "Hoe een oprichter van een gecureerde specialty-abonnementsbox in Haarlem 71% van de mislukte maandelijkse verlengingen terugwon door slimme retries, respijtperiodes en geautomatiseerde herstelmails te bouwen vóór de start van een advertentiecampagne van €5.000 per maand.",
   "author": {
     "@type": "Organization",

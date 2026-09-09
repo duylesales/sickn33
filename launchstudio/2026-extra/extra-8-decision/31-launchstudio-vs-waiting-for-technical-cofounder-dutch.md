@@ -46,8 +46,7 @@ Niets hiervan is een argument dat technische mede-oprichters onnodig zijn — ee
 
 [Vertel ons wat er is gebouwd en wat uw lancering blokkeert](https://launchstudio.eu/nl/#contact) — de meeste oprichters die naar een technische mede-oprichter zoeken, zijn eigenlijk één scopinggesprek verwijderd van lanceren zonder een.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Lanceren Voordat er een Partner Werd Gevonden
 
 Wietse Kamphuis, een voormalig ergotherapeut in Enschede, bouwde MeldPunt, een AI-ondersteunde app waarmee bewoners onderhoudsproblemen in de buurt rechtstreeks kunnen melden aan gemeentelijke aannemers, met Bolt. Negen maanden lang verdeelde Wietse zijn tijd tussen het verfijnen van MeldPunt en het bezoeken van oprichtersmeetups specifiek om een technische mede-oprichter te vinden, ervan overtuigd dat de app niet veilig kon lanceren zonder er permanent één in het team te hebben.

@@ -106,6 +106,13 @@ Het AI-startuplandschap op weg naar 2027 stelt duidelijke strategische eisen:
 
 Heeft u een met AI gebouwd prototype dat vastzit in demo-modus? LaunchStudio maakt het binnen 1 tot 3 weken productieklaar. Vaste all-in prijzen vanaf €800. Uw frontend blijft 100% intact. [Bereken uw projectkosten](https://launchstudio.eu/#calculator) of [boek een gratis kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact).
 
+### Essentiële Benchmark-Statistieken voor Europese AI-Startups in 2026
+
+In het huidige Europese technologielandschap worden AI-native startups beoordeeld op specifieke operationele efficiëntie-indicatoren:
+- **Brutowinstmarge op LLM-aanroepen:** Gezonde SaaS-bedrijven realiseren een brutomarge van minimaal 70% tot 80% na aftrek van inference- en tokenkosten door agressieve prompt-caching en semantische routering.
+- **P95 Latency Doelstellingen:** Gebruikers verwachten dat streaming interacties binnen 250 milliseconden starten (Time to First Token), met een totale verwerkingstijd van minder dan 2,5 seconden voor complexe samenvattingen.
+- **Net Churn & Net Retention:** Door robuuste integratie in dagelijkse workflows ligt de Net Revenue Retention (NRR) bij leidende B2B AI-tools ruim boven de 115%.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Van een jaar lang worstelen naar een live SaaS in 9 dagen

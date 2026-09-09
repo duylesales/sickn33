@@ -57,8 +57,7 @@ Een productieschema herstructureren is geen herschrijven van de applicatie — h
 
 [Stuur uw Supabase-projecturl en krijg een schema-assessment voordat uw volgende honderd gebruikers arriveren](https://launchstudio.eu/nl/#contact) — de wijzigingen zijn meestal klein, maar het venster om ze zonder downtime door te voeren wordt kleiner met elke gebruiker die zich aanmeldt.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Een Schema dat Werkte, Tot het Niet Meer Werkte
 
 Thijs Hoekstra, voormalig logistiek coördinator in Utrecht, bouwde PakketPlan, een AI-gedreven pakketbundelingstool die online bestellingen van meerdere winkels groepeert tot minder bezorgmomenten, met Lovable en Supabase. Het prototype werkte perfect tijdens het testen met de bestelgegevens van zijn eigen huishouden — twaalf pakketten verdeeld over drie winkels, snel en responsief.

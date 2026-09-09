@@ -7,6 +7,31 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Het Hardgecodeerde-geheimenprobleem Dat Niemand Opmerkt Tot Het Te Laat Is
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Het Hardgecodeerde-geheimenprobleem Dat Niemand Opmerkt Tot Het Te Laat Is",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/hardcoded-secrets-problem-nobody-notices"
+  }
+}
+</script>
+
+
 Draai `git log --all --full-history -- "**/*.env"` op de meeste vibe-gecodeerde repositories en je vindt iets wat de founder niet verwachtte: een credential-bestand, op een gegeven moment vastgelegd, later "verwijderd" in een volgende commit — behalve dat verwijdering uit de huidige bestandsboom het niet verwijdert uit de geschiedenis. Het staat er nog steeds, byte voor byte, ophaalbaar door iedereen met repo-toegang, en vaak door letterlijk iedereen als de repository ooit zelfs kort openbaar is geweest.
 
 ## Waarom Dit De Meest Voorkomende Faalmodus Is, En Waarom Het Voorspelbaar Is
@@ -28,6 +53,20 @@ Een goede geheimenaudit scant niet alleen de huidige codebase — het scant de v
 ## De Verificatie Die Daadwerkelijk Telt
 
 De test is niet "heb ik de API-sleutel uit mijn code verwijderd" — het is het draaien van de daadwerkelijke geschiedenisscan en bevestigen dat deze niets oplevert, en vervolgens apart bevestigen dat elke credential waar de app van afhankelijk is nooit is blootgesteld of sindsdien geroteerd is. Founders die deze stap overslaan en vertrouwen op visuele inspectie van huidige bestanden missen consequent blootstellingen die in eerdere commits zitten, omdat visuele inspectie alleen ooit naar de huidige momentopname kijkt, wat precies de ene plek is waar een correct "opgeruimd" geheim niet gevonden zal worden.
+
+## Verder Dan API-Keys: Andere Geheimen Die Net Zo Vaak Hardcoded Blijven
+
+API-sleutels krijgen doorgaans de meeste aandacht omdat ze het meest herkenbare voorbeeld zijn, maar ze vormen slechts een fractie van de gevoelige inloggegevens die per ongeluk in door AI gegenereerde code belanden. Een te enge audit die uitsluitend zoekt naar strings die lijken op API-keys, mist ernstige beveiligingslekken die zich in dezelfde repository bevinden.
+
+**Database-verbindingsreeksen (Connection Strings)**: Deze bevatten vrijwel altijd een volledige combinatie van gebruikersnaam, wachtwoord, host-adres en databasenaam in één enkele regel tekst. Omdat ze in een vroeg stadium nodig zijn om de database van een prototype werkend te krijgen, worden ze tijdens de initiële setup vaak rechtstreeks in een configuratiebestand of databaseclient geplakt en vervolgens nooit meer aangepast zodra de applicatie eenmaal draait.
+
+**Webhook-ondertekeningsgeheimen (Webhook Signing Secrets)**: Deze worden gebruikt om cryptografisch te verifiëren dat een inkomende webhook — bijvoorbeeld afkomstig van Stripe, Mollie, Resend of Supabase — daadwerkelijk van die specifieke provider afkomstig is en niet is vervalst door een kwaadwillende derde. Wanneer dit geheim op straat ligt, kan iedereen willekeurige succesvolle betalings- of abonnementsstatussen nabootsen en acties in je applicatie triggeren die normaal gesproken uitsluitend na een geverifieerde transactie mogen plaatsvinden.
+
+**Sessie-encryptiesleutels en JWT-secrets**: De geheime sleutel waarmee authenticatietokens worden ondertekend. Indien gecompromitteerd, kan een aanvaller zelf geldige beheerderstokens fabriceren zonder ooit een wachtwoord in te voeren.
+
+**Interne service-credentials en webhook-URLs**: Onbeveiligde endpoints naar interne Slack-kanalen, back-office dashboards of logging-aggregators die gevoelige interne bedrijfscommunicatie prijsgeven.
+
+[LaunchStudio](https://launchstudio.eu/nl/) lokaliseert al deze geheimentypes, migreert ze veilig naar versleutelde omgevingsvariabelen op je hostingplatform en reinigt je Git-historie permanent.
 
 ## Dit Gat Dichten Als Onderdeel Van Van Vibe Coding Naar Productie Gaan
 
@@ -73,3 +112,52 @@ Het geldt voor beide, hoewel openbare repositories een hoger onmiddellijk risico
 ### Hoe voorkom ik dat dit opnieuw gebeurt terwijl ik verder bouw met AI-tools?
 
 Geautomatiseerde geheimenscanning ingebouwd in je CI-pijplijn, die elke commit controleert voordat deze geaccepteerd wordt in plaats van te vertrouwen op een mens die het moet onthouden, is de meest betrouwbare doorlopende preventie — het patroon opvangen op het moment dat het geïntroduceerd wordt, wat precies de lus sluit die handmatige waakzaamheid alleen niet betrouwbaar kan volhouden over maanden van snelle AI-ondersteunde iteratie.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Als mijn repository privé is, moet ik me dan nog steeds zorgen maken over hardgecodeerde geheimen in de git-geschiedenis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — privé vandaag garandeert geen privé voor altijd, en elke medewerker, contractant, of toekomstige overnamepartij die technische due diligence uitvoert met repo-toegang ziet de volledige geschiedenis, inclusief geheimen die ooit zijn vastgelegd, ongeacht de huidige bestandsstatus, aangezien de geschiedenis van git niet iets is dat normale samenwerking verbergt voor iemand met legitieme toegang."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik dit zelf controleren voordat ik voor een audit betaal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "`git log --all --full-history` draaien tegen gevoelige bestandspatronen, of gratis tools zoals trufflehog gebruiken tegen je eigen repository, geeft je een eerste controle die je binnen enkele minuten kunt uitvoeren — hoewel een professionele audit doorgaans patronen en randgevallen (ongebruikelijke credentialformaten, geheimen ingebed in niet-voor-de-hand-liggende bestanden) opvangt die een snelle handmatige controle mist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Als ik zelf een blootgesteld geheim vind, is het roteren van de sleutel genoeg, of moet ik meer doen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De blootgestelde credential bij de bron roteren is de kritieke, niet-onderhandelbare stap, aangezien dit de historische blootstelling oprecht onschadelijk maakt zelfs als de oude waarde voor altijd zichtbaar blijft in de geschiedenis — hoewel de geschiedenis volledig schoonmaken, met tools zoals BFG Repo-Cleaner, de moeite waard is als secundaire opruimstap voor hygiëne, zelfs nadat rotatie het daadwerkelijke risico al heeft geneutraliseerd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Geldt dit risico alleen voor openbare repositories, of ook voor privé?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het geldt voor beide, hoewel openbare repositories een hoger onmiddellijk risico dragen aangezien de blootstelling zichtbaar is voor iedereen, niet alleen mensen met expliciete repo-toegang — Femkes casus betrof specifiek een openbare repository, wat precies is waarom de blootstelling gevonden en geneutraliseerd werd voordat er misbruik plaatsvond, in plaats van erna."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe voorkom ik dat dit opnieuw gebeurt terwijl ik verder bouw met AI-tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Geautomatiseerde geheimenscanning ingebouwd in je CI-pijplijn, die elke commit controleert voordat deze geaccepteerd wordt in plaats van te vertrouwen op een mens die het moet onthouden, is de meest betrouwbare doorlopende preventie — het patroon opvangen op het moment dat het geïntroduceerd wordt, wat precies de lus sluit die handmatige waakzaamheid alleen niet betrouwbaar kan volhouden over maanden van snelle AI-ondersteunde iteratie."
+      }
+    }
+  ]
+}
+</script>

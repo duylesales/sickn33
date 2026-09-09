@@ -51,44 +51,60 @@ Oprichters schatten dit vooraf op twintig minuten. In de praktijk — wanneer u 
 
 ## Wat de Automatische Back-up van Uw Provider Wél en NIET Dekt
 
-Managed database-omgevingen bieden waardevolle tools, maar de werkelijkheid is beperkter dan de marketingpagina's doen vermoeden:
+Moderne managed databaseplatforms — zoals Supabase, Railway, Render, Neon of managed PostgreSQL bij AWS/DigitalOcean — maken vrijwel allemaal automatisch back-ups. Dat is fantastisch en buitengewoon waardevol. Het is echter ook aanzienlijk beperkter dan de marketingpagina's suggereren, op manieren die u vóór de lancering helder voor ogen moet hebben:
 
-- **Korte bewaartermijn op instapabonnementen:** Veel gratis of goedkope plannen bewaren snapshots slechts 7 dagen. Point-in-Time Recovery (waarmee u naar een specifieke minuut kunt terugspoelen) is vrijwel altijd een betaalde feature.
-- **De back-up dekt alleen de database, niet uw bestanden:** Alle geüploade PDF's, contracten, afbeeldingen en facturen in uw cloud-storage (zoals S3 of Cloudflare R2) vallen hier **volledig buiten**. Een database herstellen zonder de bestanden terug te zetten, is alsof u de indexkaartjes van een bibliotheek terugvindt terwijl alle boeken zijn verbrand.
-- **Alles in hetzelfde account = schijnveiligheid:** Een back-up die in hetzelfde cloudaccount staat als uw applicatie, beschermt tegen een typefout. Maar als uw account wordt gehackt, gecompromitteerd of geblokkeerd wegens een facturatieprobleem, zijn uw back-ups net zo hard verdwenen als de live data. Minstens één periodieke kopie moet extern worden opgeslagen (*offsite*).
+**Frequentie en bewaartermijn verschillen drastisch per abonnementsvorm.** Gratis accounts en goedkope instappakketten bieden meestal slechts dagelijkse snapshots die maximaal zeven dagen worden bewaard, soms zelfs korter. *Point-in-time recovery* (PITR) — waarmee u de database kunt herstellen naar een specifieke minuut in het verleden in plaats van naar de snapshot van gisterennacht — is vrijwel altijd een betaalde premium-feature. Controleer wat uw specifieke hostingcontract daadwerkelijk levert, niet wat er op de algemene homepage staat.
 
+**Back-ups dekken uitsluitend de database, niet uw complete applicatie.** Geüploade bestanden, factuur-PDF's en afbeeldingen in cloud-objectopslag (zoals AWS S3 of Supabase Storage) vallen hier buiten en vereisen hun eigen back-up- en replicatieconfiguratie. Hetzelfde geldt voor omgevingsvariabelen, API-sleutels en serverconfiguraties. Een databaseherstel waarbij alle geüploade klantbijlagen spoorloos zijn verdwenen, herstelt weliswaar de index, maar verliest de complete bibliotheek.
+
+**Een back-up binnen hetzelfde cloud-account biedt slechts gedeeltelijke bescherming.** Het beschermt uitstekend tegen per ongeluk gewiste tabellen of softwarefouten. Het beschermt echter niet tegen een gehackt, geblokkeerd of door creditcardproblemen opgeschort cloud-account, waarbij uw back-ups exact even onbereikbaar zijn als de productiedatabase zelf. Eén periodieke kopie die extern wordt bewaard — bij een andere cloudprovider of op zijn minst in een strikt gescheiden cloud-account — dicht dit existentiële risico tegen minimale kosten.
+
+**Een verwijderd project wist vaak direct alle gekoppelde back-ups mee.** Op meerdere platforms verwijdert het per ongeluk aanklikken van 'Delete Project' onmiddellijk alle daaraan gekoppelde automatische snapshots.
 ## Waar Back-ups Écht Voor Dienen
 
-De meeste mensen denken bij een ramp aan een datacenter dat in vlammen opgaat. In werkelijkheid ontstaat dataverlies door alledaagse menselijke fouten:
-- Een ontwikkelaar die een haastige SQL-query uitvoert zonder `WHERE`-clausule.
-- Een schema-migratie die per ongeluk een kolom verwijdert of verkeerd converteert.
-- **Een sluipende bug:** Een softwarefout die stilletjes bij bepaalde handelingen data wist, en die pas na drie weken wordt opgemerkt. Als uw back-ups slechts 14 dagen worden bewaard, zijn álle beschikbare back-ups al besmet met dezelfde datafout!
-- Een klant die per ongeluk een belangrijk project heeft gewist en in paniek de helpdesk belt.
+Het dramatische doemscenario — een meteorietinslag of een verwoestende brand in het datacenter van uw hostingprovider — is wat oprichters zich voorstellen, maar statistisch de minst waarschijnlijke oorzaak van dataverlies. De reële oorzaken zijn oneindig veel alledaagser en komen continu voor:
 
-> **Gouden tip voor verwijderde klantdata:** Los een per ongeluk gewist record nóóit op door een complete database-backup terug te zetten! Daarmee overschrijft u immers alle recente mutaties van álle andere klanten. Implementeer vóór lancering **Soft Deletion** (`deleted_at` timestamp): markeer data als 'verwijderd' en bewaar het 30 dagen in een prullenbak.
+**Iemand voert een SQL-query uit zonder `WHERE`-clausule.** Een update- of delete-commando dat bedoeld was voor één testklant en per ongeluk álle rijen in de productietabel overschrijft. Dit is met afstand het meest voorkomende ernstige data-incident binnen vroege techbedrijven.
 
+**Een databasemigratie loopt desastreus mis.** Een geautomatiseerd migratiescript dat per ongeluk een kolom verwijdert, hernoemt of verkeerd transformeert, wat pas wordt ontdekt nadat het live op productie is uitgerold.
+
+**Een sluipende softwarefout wist data geruisloos.** Een foutieve cascade-verwijderingsregel (`ON DELETE CASCADE`) die stilletjes twee weken lang meer gerelateerde records wist dan de bedoeling was, voordat een klant het opmerkt. Dit scenario is bijzonder verraderlijk: alle back-ups van de afgelopen veertien dagen bevatten immers exact dezelfde corruptie. Dat is exact de reden waarom een langere bewaartermijn (retentie) vele malen belangrijker is dan louter back-upfrequentie.
+
+**Een klant wist per ongeluk zijn eigen data en vraagt om herstel.** Geen nationale ramp, maar een doodgewone dinsdagochtend, en een verzoek dat zakelijke klanten als volkomen legitiem beschouwen.
+
+Die laatste categorie verdient een eigen architectonische oplossing: het herstellen van een complete productiedatabase om de per ongeluk gewiste records van één klant terug te halen is volstrekt disproportioneel en wist alle recente data van al uw ándere klanten. *Soft deletion* — records in de database markeren met een vlaggetje `deleted_at` in plaats van ze direct met `DELETE` fysiek te vernietigen — lost 95% van deze supportvragen op zónder dat u ooit een back-up hoeft aan te raken. Het is oneindig veel goedkoper om dit vóór de livegang in te bouwen dan achteraf.
 ## De Hersteloefening (*Restore Drill*)
 
-Neem één middag vóór uw lancering om dit scenario uit te voeren:
-1. Download uw meest recente database-snapshot.
-2. Zet deze back-up terug in een compleet afzonderlijke testomgeving (staging).
-3. Koppel een testversie van uw applicatie aan deze herstelde database.
-4. Log in. Controleer of recente records aanwezig zijn en of geüploade bestanden openen.
-5. Noteer exact elke stap, elk commando en elke hindernis.
+Hier ligt het daadwerkelijke werk dat telt, en het kost u precies één geconcentreerde middag:
 
-Bijna niemand voltooit deze exercitie zonder onaangename verrassingen: ontbrekende omgevingsvariabelen (*environment secrets*), ontbrekende S3-koppelingen, of een herstelprocedure die drie keer langer duurt dan gedacht. Het document dat u na deze middag overhoudt, is uw **levensverzekering bij een calamiteit**.
+Neem uw meest recente back-upbestand. Herstel het op een veilige plek die gegarandeerd géén productie is — een afzonderlijke testdatabase of een geïsoleerde staging-omgeving. Koppel een lokale kopie van uw applicatie aan deze herstelde database. Log in met een testaccount. Controleer persoonlijk of klantrecords intact zijn, of geüploade bestanden en afbeeldingen openen, en of de meest recente gegevens net zo actueel zijn als u verwachtte. Noteer elke handeling die u heeft verricht, elke vertraging en elk onverwacht probleem.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in bedrijfskritische software) richten we Point-in-Time Recovery, offsite back-up pipelines en gedocumenteerde herstelprocedures standaard in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw back-upstrategie met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw data daadwerkelijk veiliggesteld is.
+Vrijwel niemand voert deze oefening voor de eerste keer uit zonder op minimaal één onaangename verrassing te stuiten. Veelvoorkomende ontdekkingen tijdens een restore drill:
+- De back-up bevat de database, maar de applicatie kan niet opstarten omdat cruciale encryptiesleutels of geheimen alleen in de productie-omgeving stonden en nergens zijn gedocumenteerd.
+- Geüploade bestanden ontbreken volledig omdat cloudopslag nooit in het back-upscript zat.
+- Het herstelproces duurt veertig minuten in plaats van de aangenomen vijf minuten.
+- De meest recente data blijkt achttien uur oud te zijn in plaats van het veronderstelde ene uur.
+- Het herstel vereist beheerdersrechten die slechts één persoon bezit, en diegene zit net in het vliegtuig.
 
+Het concrete eindresultaat van deze middag is een beproefd, schriftelijk draaiboek met reële tijdsindicaties. Midden in de nacht, onder gigantische druk en met tierende klanten aan de telefoon, is het verschil tussen een beproefde checklist en paniekerige improvisatie het verschil tussen een beheersbaar incident en het faillissement van uw startup.
+
+Het inrichten van complete back-updekking (inclusief bestandsopslag en configuraties), het toevoegen van een externe offsite-kopie en het opstellen van een getest hersteldraaiboek is standaard productiewerk. LaunchStudio, ondersteund door meer dan 11 jaar software engineering ervaring bij Manifera, maakt dit een vast onderdeel van uw livegangvoorbereiding. Een product dat echte klantdata verwerkt zonder geteste restore-procedure is simpelweg nog niet af. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een audit binnen één werkdag.
 ## Richtlijnen Voor een Betrouwbare SaaS
 
-- **Frequentie:** Dagelijkse snapshots als absolute ondergrens; activeer Point-in-Time Recovery (PITR) zodra klanten dagelijks bedrijfskritische data invoeren.
-- **Bewaartermijn (*Retention*):** Minimaal 30 tot 90 dagen om sluipende bugs te overleven.
-- **Omvang:** SQL-database, geüploade bestandsopslag (S3/R2) én versleutelde export van configuratieparameters.
-- **Locatie:** Minstens één wekelijkse versleutelde dump geëxporteerd naar een afzonderlijke opslaglocatie buiten uw hoofdaccount.
-- **Foutsignalering:** Stel een directe alert in (via Slack of e-mail) als een automatische back-up mislukt. Niets is gevaarlijker dan een back-upproces dat er drie maanden geleden geruisloos mee is opgehouden wegens een verlopen API-sleutel.
+Hanteer deze nuchtere en bewezen standaarden, afgestemd op wat uw klanten feitelijk te verliezen hebben:
 
-## Praktijkvoorbeeld
+**Frequentie:** Dagelijkse geautomatiseerde snapshots als absolute ondergrens. Kies voor *point-in-time recovery* zodra klanten gedurende de werkdag intensief data invoeren, wat voor vrijwel elk zakelijk B2B-product geldt.
+
+**Bewaartermijn (Retentie):** Minimaal dertig dagen. Zeven dagen is veel te kort om een sluipende softwarebug te overleven, wat precies het scenario is waarbij u verder terug in de tijd moet kunnen grijpen dan verwacht.
+
+**Reikwijdte (Scope):** De database, alle geüploade bestanden en media, plus een veilige, versleutelde export van uw configuratieparameters en omgevingsvariabelen.
+
+**Locatie:** Minimaal één periodieke kopie buiten het cloud-account waarin uw productieomgeving draait.
+
+**Verificatie:** Eén complete hersteloefening (*restore drill*) vóór de officiële livegang, direct herhalen na grote infrastructurele wijzigingen, en daarna minimaal één à twee keer per jaar als vaste routine.
+
+**Monitoring:** Een directe waarschuwing (alert via Slack of e-mail) wanneer een geplande back-up faalt. Stille uitval is de norm; back-upprocessen lopen vaak vast door triviale oorzaken — een verlopen API-token of een volle schijf — en niemand merkt het totdat de nood aan de man is.
+## Echt voorbeeld
 
 ### De Back-ups Die Zes Weken Achterliepen op de Werkelijkheid
 

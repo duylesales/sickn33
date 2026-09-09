@@ -64,6 +64,14 @@ De transformatie van een kwetsbare wrapper naar een diep geïntegreerd agentic p
 2. **Enterprise RAG-Pipelines:** Wij implementeren Cross-Encoder Re-Ranking, waardoor de accuraatheid van zoekresultaten wiskundig superieur is aan standaardmodellen.
 3. **Agentic Tool Use:** Wij voorzien uw backend van strikte JSON-schema validaties (Zod) waarmee AI-agents veilig acties kunnen uitvoeren (zoals e-mails sturen en databases bijwerken) zonder menselijke tussenkomst.
 
+### Multi-Tenant Isolatie en Strategische Verdedigbaarheid
+
+Voor zakelijke B2B SaaS-oplossingen is strikte isolatie van klantdata de belangrijkste waarborg voor enterprise-adoptie:
+1. **Row Level Security (RLS) op PostgreSQL-Niveau:** We dwingen tenant-isolatie af op de databaselaag zelf, waardoor zelfs bij een ernstige applicatiefout data van verschillende organisaties fysiek nooit vermengd kan raken.
+2. **Geïsoleerde Vector Namespace-Toewijzing:** Elk zakelijk account krijgt een eigen cryptografisch begrensde namespace binnen de vector database, wat ongeautoriseerde semantische zoekmatches volledig uitsluit.
+3. **Tenant-Specifieke API Rate Limits:** Wij configureren eerlijke quota per organisatie, zodat één actieve klant met zware workloads nooit de prestaties van andere gebruikers op het platform kan aantasten.
+4. **Verifieerbare Compliance-Rapportages:** We leveren kant-en-klare data-isolatie rapporten op die u direct kunt voorleggen aan de CISO's en compliance managers van uw zakelijke klanten.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De Marketingtool Die de Wrapper-Sanering Overleefde

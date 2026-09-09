@@ -76,6 +76,12 @@ A board rejection of an under-prepared offshore proposal costs a CFO a full boar
 
 A CFO preparing an offshore software engineering proposal should build the governance answer into the proposal from the first draft, not add it after the board asks. [Talk to Manifera about building a board-ready offshore engineering proposal](https://www.manifera.com/contact-us/).
 
+## Where This Goes Wrong: The Self-Reported Status Trap
+
+The single most common way an offshore software engineering engagement fails a board's trust isn't a missed deadline — it's a status report that said "on track" for three consecutive sprints before the CFO discovered otherwise during a client demo. This happens structurally, not through bad faith: when the same team writing the code is also the sole source of status reporting, there's no independent check on a natural tendency to describe a slipping timeline optimistically until it's undeniable.
+
+The fix Manifera's governance model applies is mechanical, not aspirational: an Amsterdam-based technical reviewer, independent of the Vietnam delivery pod, audits actual delivered code against sprint commitments every two weeks, flags variance beyond 15% of committed scope immediately rather than at the next scheduled check-in, and reports that assessment directly to the client alongside, not filtered through, the delivery team's own status update. This two-source reporting structure — delivery team plus independent auditor — is what a board is actually asking for when it asks about accountability separation, and it's verifiable in a contract as a named deliverable, not a promise.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO whose first offshore proposal was rejected by the board) Why did the board reject a proposal with a strong cost case?
@@ -98,6 +104,22 @@ A party separate from the engineers writing the code who verifies delivery quali
 
 Typically a full board cycle, six to eight weeks, before the engagement can restart, delaying any roadmap or savings timeline the original proposal was built around.
 
+### (Scenario: CFO defining the independent verification cadence in the contract) How often should independent delivery verification actually happen, and what should trigger an escalation?
+
+A biweekly audit of delivered code against sprint commitments, with any variance beyond 15% of committed scope escalated to the client immediately rather than held for the next scheduled check-in, is a concrete cadence a board can hold the vendor to contractually.
+
+### (Scenario: board member asking about a specific turnover scenario) What happens contractually if a senior engineer on the pod leaves mid-engagement?
+
+A well-structured contract specifies pod-level rather than named-individual delivery ownership, with documented knowledge-sharing practices ensuring a replacement ramps within one to two weeks rather than the engagement stalling on a single person's departure.
+
+### (Scenario: CFO specifying dispute resolution terms) What jurisdiction should the contract specify for dispute resolution, and why does it matter beyond principle?
+
+A Netherlands or other EU-recognized jurisdiction gives the company's own legal counsel a framework it can actually navigate and enforce, rather than pursuing recourse through an offshore-only jurisdiction unfamiliar to the board's advisors.
+
+### (Scenario: CFO asked to prove a vendor's governance claim is real) How can a CFO verify a vendor's claimed governance layer is structurally real rather than a marketing claim?
+
+Ask for the name and role of the specific person or team performing independent verification, request a sample of an actual biweekly variance report from a comparable client engagement, and confirm that function sits organizationally separate from the delivery pod itself.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,7 +129,11 @@ Typically a full board cycle, six to eight weeks, before the engagement can rest
     { "@type": "Question", "name": "(Scenario: CFO preparing for a board presentation) What five questions should I prepare specific answers for before presenting an offshore engineering budget?", "acceptedAnswer": { "@type": "Answer", "text": "IP ownership timing, delivery accountability separation, contract jurisdiction, continuity risk, and whether governance is structurally real." } },
     { "@type": "Question", "name": "(Scenario: board member evaluating an offshore proposal) Why does IP assignment timing matter to a board specifically?", "acceptedAnswer": { "@type": "Answer", "text": "IP assigned only at milestones creates a window where work-in-progress code has ambiguous ownership, a real legal exposure." } },
     { "@type": "Question", "name": "(Scenario: CFO explaining accountability separation to skeptical board members) What does 'independent governance' actually mean in practice?", "acceptedAnswer": { "@type": "Answer", "text": "A party separate from the engineers writing the code who verifies delivery quality, rather than the delivery team self-reporting status." } },
-    { "@type": "Question", "name": "(Scenario: CFO estimating the cost of an under-prepared proposal) What does a board rejection actually cost in practical terms?", "acceptedAnswer": { "@type": "Answer", "text": "Typically a full board cycle, six to eight weeks, before the engagement can restart." } }
+    { "@type": "Question", "name": "(Scenario: CFO estimating the cost of an under-prepared proposal) What does a board rejection actually cost in practical terms?", "acceptedAnswer": { "@type": "Answer", "text": "Typically a full board cycle, six to eight weeks, before the engagement can restart." } },
+    { "@type": "Question", "name": "(Scenario: CFO defining the independent verification cadence in the contract) How often should independent delivery verification actually happen, and what should trigger an escalation?", "acceptedAnswer": { "@type": "Answer", "text": "A biweekly audit of delivered code against sprint commitments, with any variance beyond 15% of committed scope escalated to the client immediately rather than held for the next check-in." } },
+    { "@type": "Question", "name": "(Scenario: board member asking about a specific turnover scenario) What happens contractually if a senior engineer on the pod leaves mid-engagement?", "acceptedAnswer": { "@type": "Answer", "text": "A well-structured contract specifies pod-level rather than named-individual delivery ownership, with documented knowledge-sharing ensuring a replacement ramps within one to two weeks." } },
+    { "@type": "Question", "name": "(Scenario: CFO specifying dispute resolution terms) What jurisdiction should the contract specify for dispute resolution, and why does it matter beyond principle?", "acceptedAnswer": { "@type": "Answer", "text": "A Netherlands or other EU-recognized jurisdiction gives the company's own legal counsel a framework it can actually navigate and enforce, rather than an unfamiliar offshore-only jurisdiction." } },
+    { "@type": "Question", "name": "(Scenario: CFO asked to prove a vendor's governance claim is real) How can a CFO verify a vendor's claimed governance layer is structurally real rather than a marketing claim?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for the name and role of the person performing independent verification, request a sample biweekly variance report from a comparable client, and confirm that function sits organizationally separate from the delivery pod." } }
   ]
 }
 </script>

@@ -39,7 +39,8 @@ Een functie die controleert of een geüpload bestand "een document is" door alle
 
 ## Waarom dit meer uitmaakt dan het aanvankelijk lijkt
 
-Afhankelijk van hoe een geüpload bestand vervolgens verwerkt of geserveerd wordt, kan een vermomd kwaadaardig bestand potentieel uitgevoerd worden, of geserveerd worden aan andere gebruikers op een manier die hun apparaat of browser misbruikt. Dit verandert wat lijkt op een routineuze document-uploadfunctie in een echt distributiemechanisme voor schadelijke inhoud.
+Een bestandsupload die in theorie beperkt zou moeten zijn tot PDF-documenten, maar die in de praktijk elk willekeurig bestand accepteert zolang de extensie op `.pdf` eindigt, stelt een platform bloot aan een breed scala aan ernstige aanvalsscenario's. Een aanvaller kan een uitvoerbaar script of kwaadaardige HTML vermommen als document en uploaden naar een openbare servermap. Als die bestanden later worden gedownload of geopend door andere gebruikers of beheerders, kan de browser worden misleid om kwaadaardige code uit te voeren in de context van uw domein. Dit transformeert een ogenschijnlijk onschuldige documentuitwisseling in een directe uitvalbasis voor cross-site scripting (XSS), malware-distributie en gegevensdiefstal.
+
 
 ## Waarom gewoon testen dit nooit onthult
 
@@ -47,7 +48,8 @@ Het testen van een document-uploadfunctie met eerlijke, legitieme documenten –
 
 ## Waarom juridische en documentverwerkende producten deze vraag heel direct stellen
 
-Een platform dat specifiek gebouwd is rond het genereren en uitwisselen van juridische documenten verwerkt van nature een hoog volume aan bestandsuploads. Dit betekent dat deze risicocategorie geen randverschijnsel is, maar dicht bij het centrum ligt van wat het product het meest doet.
+Een platform dat specifiek is gebouwd rond het genereren, uitwisselen en archiveren van juridische of zakelijke documenten verwerkt van nature een hoog volume aan bestandsuploads als kern van zijn bestaansrecht. Dit betekent dat deze categorie risico's geen perifere zorg is — het bevindt zich pal in het centrum van wat het product dagelijks doet. Dezelfde logica geldt voor elk platform waar documentuploads geen secundaire optie zijn maar de primaire interactie: een HR-portaal dat cv's en identiteitsbewijzen verzamelt, een schadeclaim-app die foto's en nota's accepteert, of een medisch intakeformulier. In al deze gevallen is een uploadkloof geen zeldzaam randgeval dat ooit misschien gevonden wordt, maar een dagelijks risico dat wacht op de eerste die het gericht probeert.
+
 
 ## Wat het op de juiste manier herstellen hiervan vereist
 
@@ -56,6 +58,27 @@ Een correcte herstelling verifieert de daadwerkelijke inhoud van een geüpload b
 Manifera's beveiligingsbeoordelingen voor bestandsafhandeling worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
 [Krijg een gratis blik op uw prototype — stuur simpelweg de link](https://launchstudio.eu/nl/#contact).
+
+## Een Praktisch Kader voor het Evalueren van Elke Uploadfunctie
+
+Niet elke uploadfunctie brengt exact hetzelfde risico met zich mee. Een oprichter zonder diepe beveiligingsachtergrond kan toch gestructureerd prioriteren welke functies de meeste aandacht vereisen aan de hand van drie kernvragen.
+
+**1. Wat gebeurt er met het bestand nadat het is geaccepteerd?**
+
+- Als het bestand uitsluitend wordt getoond aan de gebruiker die het zelf heeft geüpload, is het praktische risico voor andere klanten beperkt, al kan een kwaadaardig bestand nog steeds uw hostingomgeving belasten.
+- Als het bestand openbaar zichtbaar wordt voor andere geregistreerde leden of het brede internet (zoals profielfoto's, cv's of portfolio-items), stijgt het risico exponentieel: een geüpload HTML- of SVG-bestand kan kwaadaardige scripts uitvoeren in de browsers van andere bezoekers.
+
+**2. Wordt het bestand uitgevoerd of verwerkt op uw server?**
+
+- Bestanden die door een achtergrondtaak worden geconverteerd, geschaald of geparseerd (zoals afbeeldingsverwerking of PDF-parsing) kunnen kwetsbaarheden in onderliggende servertools (zoals ImageMagick) triggeren als het bestand niet strikt wordt gevalideerd.
+- Bestanden die rechtstreeks in een uitvoerbare webmap worden geplaatst, kunnen de webserver dwingen om de inhoud als servercode (bijvoorbeeld PHP of Node.js) uit te voeren, wat kan leiden tot volledige overname van de server.
+
+**3. Waar wordt het bestand fysiek bewaard?**
+
+- Opslag op de lokale harde schijf van de applicatieserver vereist uiterst strenge padvalidatie om 'path traversal' te voorkomen.
+- Opslag in een geïsoleerde cloud-bucket (zoals AWS S3 of Google Cloud Storage) met een willekeurig gegenereerde bestandsnaam en strikte Content-Type headers biedt aanzienlijk meer ingebouwde isolatie.
+
+Door elke uploadroute langs deze drie assen te beoordelen, legt u de zwakste plekken direct bloot voordat echte gebruikers bestanden uploaden.
 
 ## Echt voorbeeld
 
@@ -76,25 +99,25 @@ Een beveiligingsonderzoeker die verschillende MKB-tools testte als onderdeel van
 
 ## Veelgestelde vragen
 
-### Zou een bestandsbeveiligingsspecialist validatie op basis van uitsluitend extensies beschouwen als een veelvoorkomende zwakheid?
+### Waarom is het valideren van bestandsextensies alleen (zoals controleren op `.pdf`) volstrekt onvoldoende?
 
-Ja, bekend genoeg om een standaard gecontroleerd item te zijn in professionele beoordelingen, specifiek omdat bestandsnaamextensies triviaal eenvoudig te controleren zijn door een uploader.
+Omdat een bestandsextensie slechts een label is dat een gebruiker of aanvaller naar believen kan aanpassen. Een bestand genaamd `rapport.pdf` kan in werkelijkheid een kwaadaardig HTML- of uitvoerbaar script bevatten. Betrouwbare validatie vereist het inspecteren van de 'magic bytes' van het bestand en het dwingend forceren van veilige download-headers op de server.
 
-### Geldt dit risico alleen voor platformen die expliciet zijn gebouwd rond documentverwerking?
+### Is het opslaan van geüploade bestanden in een cloud-bucket zoals S3 altijd veiliger dan lokale schijfopslag?
 
-Het geldt voor elke functie die bestandsuploads van welke aard dan ook accepteert (profielfoto's, bijlagen).
+Aanzienlijk veiliger qua serverintegriteit — een bestand in S3 kan de applicatieserver niet direct laten crashen of lokale bestanden overschrijven. Als de bucket echter openbare leesrechten heeft of bestanden serveert met verkeerde Content-Type headers, blijft het risico op datalekken of browser-aanvallen (zoals XSS) onverminderd groot.
 
-### Maakt ervaring met bestandsafhandeling over verschillende industrieën uit?
+### Hoe pakt Manifera het beveiligen van documentverwerkende architecturen aan?
 
-Ja, aangezien het onderliggende inhoudsverificatiepatroon identiek is ongeacht de industrie.
+Door geüploade bestanden strikt te isoleren in afgeschermde buckets, bestandsnamen te vervangen door willekeurige UUID's, antivirus- en type-scans uit te voeren in een asynchrone verwerkingspijplijn en bestanden uitsluitend via tijdelijke, ondertekende URL's met `Content-Disposition: attachment` te serveren.
 
-### Illustreert ContractKlaar's casus de hogere belangen voor platformen met gevoelige documenten?
+### Waarom ontdekken oprichters dit soort uploadrisico's zelden vóór de lancering?
 
-Ja, rechtstreeks – een juridisch documentenplatform dat MKB-contracten verwerkt draagt betekenisvol hogere real-world consequenties bij dit soort kloven.
+Omdat oprichters tijdens het testen uitsluitend echte, geldige documenten uploaden. Het systeem accepteert ze netjes, slaat ze op en toont ze correct. De kwetsbaarheid bestaat uitsluitend in wat het systeem toelaat wanneer iemand opzettelijk een vermomd bestand uploadt — een scenario dat tijdens functionele demo's nooit spontaan wordt getest.
 
-### Kan een oprichter vertrouwen op verantwoorde openbaarmaking door onderzoekers als primaire veiligheidsnet?
+### Wat is de meest effectieve directe maatregel om het risico van openbare uploads te beperken?
 
-Nee – hoewel verantwoorde openbaarmaking waardevol is als het gebeurt, is het niet gegarandeerd of iets waar een product op gebouwd moet worden.
+Zorg ervoor dat bestanden die door gebruikers worden gedownload altijd worden geserveerd met de HTTP-header `Content-Disposition: attachment` en een strikte `Content-Type`-definitie. Dit dwingt de browser om het bestand op te slaan op schijf in plaats van het direct als HTML of script in de browser uit te voeren.
 
 <script type="application/ld+json">
 {
@@ -103,42 +126,42 @@ Nee – hoewel verantwoorde openbaarmaking waardevol is als het gebeurt, is het 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Chỉ kiểm tra đuôi file (File Extension như .pdf, .docx) khi upload có an toàn không?",
+      "name": "Waarom is het valideren van bestandsextensies alleen (zoals controleren op `.pdf`) volstrekt onvoldoende?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không an toàn — kẻ xấu chỉ cần đổi tên một file độc hại (như file mã độc .exe, .php, .js) thành .pdf là có thể qua mặt hệ thống dễ dàng."
+        "text": "Omdat een bestandsextensie slechts een label is dat een gebruiker of aanvaller naar believen kan aanpassen. Een bestand genaamd `rapport.pdf` kan in werkelijkheid een kwaadaardig HTML- of uitvoerbaar script bevatten. Betrouwbare validatie vereist het inspecteren van de 'magic bytes' van het bestand en het dwingend forceren van veilige download-headers op de server."
       }
     },
     {
       "@type": "Question",
-      "name": "Cách kiểm tra định dạng file chuẩn xác nhất (MIME/File Content Verification) là gì?",
+      "name": "Is het opslaan van geüploade bestanden in een cloud-bucket zoals S3 altijd veiliger dan lokale schijfopslag?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Đọc chữ ký nhị phân đầu file (Magic Bytes/File Header) ở Server để xác nhận đúng cấu trúc file thực tế thay vì tin vào đuôi tên file."
+        "text": "Aanzienlijk veiliger qua serverintegriteit — een bestand in S3 kan de applicatieserver niet direct laten crashen of lokale bestanden overschrijven. Als de bucket echter openbare leesrechten heeft of bestanden serveert met verkeerde Content-Type headers, blijft het risico op datalekken of browser-aanvallen (zoals XSS) onverminderd groot."
       }
     },
     {
       "@type": "Question",
-      "name": "Hậu quả của việc cho phép Upload file độc hại lên Server là gì?",
+      "name": "Hoe pakt Manifera het beveiligen van documentverwerkende architecturen aan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Server có thể bị chiếm quyền điều khiển (Remote Code Execution), hoặc lây nhiễm mã độc sang những người dùng khác khi họ mở file xem thử."
+        "text": "Door geüploade bestanden strikt te isoleren in afgeschermde buckets, bestandsnamen te vervangen door willekeurige UUID's, antivirus- en type-scans uit te voeren in een asynchrone verwerkingspijplijn en bestanden uitsluitend via tijdelijke, ondertekende URL's met `Content-Disposition: attachment` te serveren."
       }
     },
     {
       "@type": "Question",
-      "name": "Các loại ứng dụng nào dễ dính lỗ hổng Upload file nhất?",
+      "name": "Waarom ontdekken oprichters dit soort uploadrisico's zelden vóór de lancering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Các app Quản lý tài liệu pháp lý, Phần mềm nhân sự (nhận CV), Hệ thống bảo hiểm (nhận hóa đơn) và các trang web cho upload ảnh đại diện/hồ sơ."
+        "text": "Omdat oprichters tijdens het testen uitsluitend echte, geldige documenten uploaden. Het systeem accepteert ze netjes, slaat ze op en toont ze correct. De kwetsbaarheid bestaat uitsluitend in wat het systeem toelaat wanneer iemand opzettelijk een vermomd bestand uploadt — een scenario dat tijdens functionele demo's nooit spontaan wordt getest."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian triển khai giải pháp quét và xác thực nội dung file upload mất bao lâu?",
+      "name": "Wat is de meest effectieve directe maatregel om het risico van openbare uploads te beperken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường hoàn thành trong 5-8 ngày làm việc bao gồm cả bước quét virus/malware tự động trước khi lưu trữ."
+        "text": "Zorg ervoor dat bestanden die door gebruikers worden gedownload altijd worden geserveerd met de HTTP-header `Content-Disposition: attachment` en een strikte `Content-Type`-definitie. Dit dwingt de browser om het bestand op te slaan op schijf in plaats van het direct als HTML of script in de browser uit te voeren."
       }
     }
   ]

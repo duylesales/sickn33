@@ -86,6 +86,10 @@ Legacy system modernization is not primarily a technology decision — it's a ri
 
 If you're currently evaluating modernization partners and want a second opinion on a proposal you've already received, talk to one of our senior architects about your specific system — we'll tell you honestly whether the plan in front of you matches the risk profile of your business, even if that means telling you it doesn't need us.
 
+## Discovery Phase Deliverables: What a Paid Audit Should Actually Produce
+
+A paid discovery phase is only worth its price if it produces specific, reviewable artifacts — not a verbal summary at the end of two weeks. Insist on five deliverables before the fixed migration scope is priced: a dependency map showing every external system, API, and library the legacy system touches, typically 15-40 integration points for a system that's run a decade; a data model comparison flagging every field with no clear business owner or documented purpose, which commonly surfaces 10-20% of a legacy schema as "unknown, needs stakeholder interview"; a coupling analysis scoring how tightly modules share database tables or deployment pipelines, since this score is what determines whether strangler fig migration is even viable; a risk register ranking each module by blast radius if migration goes wrong, prioritized by revenue impact rather than technical interest; and a written discovery report with a specific migration approach recommendation tied to the findings above, not a generic recommendation drafted before discovery started. A discovery engagement that produces only a slide deck of general observations, rather than these five artifacts, hasn't actually reduced your migration risk — it's cost you two to four weeks and a fee without changing what the vendor would have proposed anyway.
+
 ## Frequently Asked Questions
 
 ### How long does a typical legacy system modernization project take?
@@ -102,6 +106,18 @@ Be cautious of any fixed-price quote given before a formal discovery and audit p
 
 ### What should be included in a legacy system modernization contract to protect my business?
 Your contract should specify a phase-by-phase rollback plan, a named owner for data mapping and validation between old and new systems, a written definition of "done" tied to measurable outcomes, and a commitment to report performance benchmarks approximately 90 days after go-live. These elements protect you from vague success criteria and undocumented risk.
+
+### (Scenario: A vendor offers to run discovery for free to win your business) Is a free discovery phase a red flag?
+Usually, yes. A discovery phase serious enough to surface real business logic and produce a defensible migration recommendation takes real analyst and engineering time, and a vendor offering it free is often either underinvesting in the analysis or planning to recoup the cost through a padded fixed-price quote once you're committed. Paying for discovery, scoped separately from the build, keeps the vendor's incentive aligned with an accurate audit rather than a fast sales close.
+
+### (Scenario: Discovery reveals your invoicing and inventory logic share the same database tables and deployment pipeline) Does this rule out a phased migration entirely?
+Not entirely, but it substantially raises the difficulty and cost of a clean strangler fig approach, since you can't peel off one module without dragging the coupled one along. In practice this often means budgeting for either an unusually thorough discovery phase ahead of a full rewrite, or an intermediate decoupling project — separating the shared database first — before phased legacy application migration becomes viable.
+
+### (Scenario: Your board wants a modernization timeline announced before discovery has even started) How do you negotiate for proper discovery time without losing board confidence?
+Present discovery as a fixed, short, priced phase — two to four weeks — with a specific written deliverable date, rather than an open-ended delay, so the board sees a concrete milestone rather than an indefinite postponement. Frame the alternative honestly: a fixed-price quote given before discovery is a guess dressed as a commitment, and Gartner's own data on failed modernization projects backs that framing.
+
+### (Scenario: You need to modernize the application and also move off a non-EU cloud provider at the same time) Should these be one combined project or two?
+Scope and price them as two distinct workstreams even if the same partner delivers both, since application modernization and infrastructure migration carry different risk profiles and different rollback requirements. Vendors who fold cloud migration silently into a single modernization price are the ones most likely to cut corners on one workstream when the combined budget gets tight.
 
 <script type="application/ld+json">
 {
@@ -146,6 +162,38 @@ Your contract should specify a phase-by-phase rollback plan, a named owner for d
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Your contract should specify a phase-by-phase rollback plan, a named owner for data mapping and validation between old and new systems, a written definition of \"done\" tied to measurable outcomes, and a commitment to report performance benchmarks approximately 90 days after go-live. These elements protect you from vague success criteria and undocumented risk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor offers to run discovery for free to win your business) Is a free discovery phase a red flag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually, yes. A discovery phase serious enough to surface real business logic and produce a defensible migration recommendation takes real analyst time, and a vendor offering it free is often underinvesting in the analysis or planning to recoup the cost through a padded fixed-price quote later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Discovery reveals your invoicing and inventory logic share the same database tables and deployment pipeline) Does this rule out a phased migration entirely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not entirely, but it substantially raises the difficulty of a clean strangler fig approach. This often means budgeting for either an unusually thorough discovery phase ahead of a full rewrite, or a decoupling project first before phased migration becomes viable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Your board wants a modernization timeline announced before discovery has even started) How do you negotiate for proper discovery time without losing board confidence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Present discovery as a fixed, short, priced phase — two to four weeks — with a specific written deliverable date, rather than an open-ended delay, so the board sees a concrete milestone rather than an indefinite postponement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: You need to modernize the application and also move off a non-EU cloud provider at the same time) Should these be one combined project or two?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scope and price them as two distinct workstreams even if the same partner delivers both, since application modernization and infrastructure migration carry different risk profiles and rollback requirements."
       }
     }
   ]

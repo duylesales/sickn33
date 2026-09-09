@@ -73,7 +73,7 @@ Er is een specifieke valkuil die we direct moeten benoemen: het bouwen van verbr
 
 [Bespreek met een engineer die AI-gegenereerde code doorgrondt](https://launchstudio.eu/nl/#contact) of uw afrekenstroom daadwerkelijk het prijsmodel ondersteunt dat u adverteert.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een SaaS-oprichter in actie: De factuur die niet overeenkwam met het dashboard
 

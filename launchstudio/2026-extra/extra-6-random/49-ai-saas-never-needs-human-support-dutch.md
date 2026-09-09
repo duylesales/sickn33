@@ -54,6 +54,21 @@ De praktische oplossing is eenvoudig: bepaal vooraf welke categorieën verzoeken
 
 Onze technici, werkend vanuit Ho Chi Minh-stad samen met teams in Amsterdam en Singapore, helpen SaaS-oprichters regelmatig bij het bouwen van precies dit soort overdrachtslogica in producten die, net als AfspraakSlim, begonnen met een AI-only supportaanname. LaunchStudio brengt Manifera's enterprise-grade engineering naar dat werk, dezelfde standaard achter Manifera's [diensten voor webapplicatieontwikkeling](https://www.manifera.com/services/web-app-develop/). Als het supportplan van uw product momenteel "de bot handelt het af" is, kunt u [berekenen wat het bouwen van een goed terugvalpad zou kosten](https://launchstudio.eu/nl/#calculator).
 
+## Een Raamwerk per Categorie voor Wat te Automatiseren en Wat te Escalleren
+
+Niet elk incident of elke codewijziging vereist menselijk ingrijpen van een senior engineer. Om operationeel efficiënt te blijven, richt u een helder escalatieraamwerk in dat automatisch onderscheid maakt tussen routinematig onderhoud en acute crisissituaties:
+
+**Niveau 1: Volledig Geautomatiseerd (Geen Menselijke Tussenkomst).** Routinematige controles zoals geautomatiseerde regressietests, linter-checks op codestijl, statische beveiligingsscans op hardcoded geheimen en automatische dependency-updates via Dependabot. Als een scan faalt, blokkeert de CI/CD-pipeline de uitrol automatisch.
+
+**Niveau 2: Oprichter-Zelfevaluatie (Snelle Review).** Cosmetische wijzigingen in de interface, teksten, nieuwe rapportages en marketingpagina's. De oprichter voert de vijf-minuten pre-ship review uit en keurt de wijziging zelfstandig goed.
+
+**Niveau 3: Verplichte Engineering-Review (Vier-Ogen-Principe).** Wijzigingen in authenticatie- en autorisatiestromen, betalingslogica van Stripe, databasemigraties met schemawassingen en webhook-afhandeling. Deze wijzigingen worden *nooit* gemerged zonder formele goedkeuring van een ervaren engineer.
+
+**Niveau 4: Acute Escalatie (Crisisrespons).** Onverwachte pieken in HTTP-500 fouten, signalen van datalekken of ongeautoriseerde toegang, en storingen bij primaire cloudproviders. Dit triggert direct een geautomatiseerd alarm (via PagerDuty of SMS) naar de dienstdoende technische lead.
+
+Dit heldere raamwerk voorkomt paniek, beschermt uw productiekritieke componenten en zorgt ervoor dat uw engineeringcapaciteit uitsluitend wordt ingezet waar menselijke expertise echt het verschil maakt.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: toen de bot geen antwoorden meer had
@@ -100,11 +115,46 @@ Niet per se. Zoals bij AfspraakSlim is het toevoegen van een gerichte overdracht
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Can any AI SaaS product realistically operate with zero human support?", "acceptedAnswer": { "@type": "Answer", "text": "A narrow category of low-stakes, highly repetitive tools can, but anything involving scheduling, payments, or disputes between users almost always needs a human fallback for the cases the assistant can't credibly resolve." } },
-    { "@type": "Question", "name": "What's a reasonable automation target for AI-assisted customer support?", "acceptedAnswer": { "@type": "Answer", "text": "Handling roughly 80% of routine requests automatically while ensuring a clean, fast handoff to a human for the remaining disputes and edge cases is a strong, realistic goal for most SaaS products." } },
-    { "@type": "Question", "name": "How do you decide which requests should be handed off to a human?", "acceptedAnswer": { "@type": "Answer", "text": "Categories involving money, disputes between two users, or repeated failed attempts by the assistant are good starting points for automatic handoff rules, since these are where a wrong or generic answer causes the most damage." } },
-    { "@type": "Question", "name": "Does Manifera help build this kind of support handoff logic?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Manifera's engineers across Ho Chi Minh City, Amsterdam, and Singapore build handoff and escalation systems that route specific categories of requests to human staff while leaving routine support automated." } },
-    { "@type": "Question", "name": "Is it expensive to add a human fallback path to an existing AI-only support system?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. As with AfspraakSlim, adding a targeted handoff system for specific edge cases is usually a contained project rather than a rebuild of the existing support flow." } }
+    {
+      "@type": "Question",
+      "name": "Kan een AI SaaS-product realistisch gezien draaien zonder enige menselijke support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een smalle categorie laagrisico, sterk repetitieve tools kan dat, maar alles met planning, betalingen of geschillen tussen gebruikers heeft bijna altijd een menselijke terugvaloptie nodig voor de gevallen die de assistent niet geloofwaardig kan oplossen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is een redelijk automatiseringsdoel voor AI-ondersteunde klantenservice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ongeveer 80% van de routineverzoeken automatisch afhandelen, met een schone, snelle overdracht naar een mens voor de resterende geschillen en randgevallen, is een sterk, realistisch doel voor de meeste SaaS-producten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe bepaalt u welke verzoeken naar een mens moeten worden doorverwezen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Categorieën met geld, geschillen tussen twee gebruikers, of herhaalde mislukte pogingen van de assistent zijn goede uitgangspunten voor automatische overdrachtsregels, aangezien dit de gevallen zijn waarin een fout of generiek antwoord de meeste schade aanricht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Helpt Manifera bij het bouwen van dit soort supportoverdrachtslogica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, de technici van Manifera in Ho Chi Minh-stad, Amsterdam en Singapore bouwen overdrachts- en escalatiesystemen die specifieke categorieën verzoeken naar menselijk personeel routeren, terwijl routinematige support geautomatiseerd blijft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het duur om een menselijk terugvalpad toe te voegen aan een bestaand AI-only supportsysteem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet per se. Zoals bij AfspraakSlim is het toevoegen van een gerichte overdrachtsoplossing voor specifieke randgevallen meestal een afgebakend project in plaats van een herbouw van de bestaande supportflow."
+      }
+    }
   ]
 }
 </script>

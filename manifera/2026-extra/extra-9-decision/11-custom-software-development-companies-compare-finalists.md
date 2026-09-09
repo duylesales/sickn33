@@ -118,6 +118,12 @@ It's also worth weighting your scorecard differently depending on what stage you
 
 Comparing custom software development companies on architecture instead of price won't make your decision faster, but it will make it defensible six months from now when the project hits its first real complexity spike. Talk to one of our senior architects about your specific shortlist — we're happy to review your finalists' proposals against the same scorecard, even if you don't choose us.
 
+## The Onboarding Test: What a Dedicated Development Team Should Deliver in Week One
+
+Ask each finalist to walk you through their actual onboarding timeline, day by day, not in general terms. A finalist with genuine delivery discipline should be able to commit their first pull request to your repository within 5-7 business days of contract signature — access provisioning, environment setup, and a codebase walkthrough compressed into the first week, not stretched across a vague "ramp-up month." If a finalist can't name a specific day-one, day-three, day-seven milestone, they haven't actually run this process before.
+
+Four onboarding checkpoints separate a serious dedicated development team from a team still figuring out your project as they go: a signed access and credentials checklist completed before day one (repository, CI/CD, staging environment, ticketing system); a named team roster with roles assigned to specific individuals, not "TBD" placeholders; a written architecture-familiarization deliverable — a short document showing they've actually read your existing codebase — due by day five; and a first sprint plan with concrete, demoable output by the end of week two. Vendor architecture review conversations that skip this operational detail in favor of pure technical capability are missing half the picture — a team that architects brilliantly but takes six weeks to become productive has quietly erased a third of a typical MVP timeline before writing a line of shippable code.
+
 ## Frequently Asked Questions
 
 ### How many custom software development companies should I include in a final-round comparison?
@@ -134,6 +140,18 @@ Compare fully loaded blended rates, not headline hourly figures, and normalize f
 
 ### What happens if both finalists score similarly on the architecture scorecard?
 Move to a reference-check round with each vendor's actual clients, asking specifically about a time the relationship hit friction and how it was resolved. How a vendor handles conflict tells you more than how they handle a calm project.
+
+### (Scenario: A finalist can't name a specific onboarding timeline when asked) What does it mean if a custom software development company can't describe their first-week onboarding process?
+It usually means they haven't run a structured onboarding process before, or each engagement improvises it from scratch. A finalist with real delivery discipline can name day-one, day-three, and day-seven milestones without hesitation, because they've repeated that sequence across dozens of dedicated development team engagements.
+
+### (Scenario: Comparing two finalists whose architecture scores are close but one proposes named individuals and the other proposes roles) Does it matter if a finalist names specific engineers instead of just roles during vendor selection?
+Yes, significantly. A proposal listing "a senior architect will be assigned" rather than a named person with a portfolio is a soft signal the team isn't actually staffed yet, which undermines everything else in their architecture review pitch — you can't verify what you can't see.
+
+### (Scenario: A CTO wants to verify a finalist's claimed 160+ delivered projects before signing) How should I verify a custom software development company's track record claims during finalist review?
+Ask for three reference clients whose engagements are at least two years old, not their most recent logos, and request a specific example of a project that required significant architecture rework mid-engagement. A vendor's response to that request reveals more about real delivery maturity than any portfolio page.
+
+### (Scenario: One finalist proposes a dedicated development team model, the other proposes staff augmentation) How do I choose between a dedicated development team and staff augmentation at the finalist stage?
+A dedicated development team suits a multi-quarter build where you want a stable, self-managing unit with its own delivery cadence; staff augmentation suits filling a specific skills gap inside a team you already manage directly. Ask each finalist which model they're actually proposing and why it fits your product stage, not just which model they default to selling.
 
 <script type="application/ld+json">
 {
@@ -164,6 +182,26 @@ Move to a reference-check round with each vendor's actual clients, asking specif
       "@type": "Question",
       "name": "What happens if both finalists score similarly on the architecture scorecard?",
       "acceptedAnswer": {"@type": "Answer", "text": "Move to a reference-check round with each vendor's actual clients, asking specifically about a time the relationship hit friction and how it was resolved. How a vendor handles conflict tells you more than how they handle a calm project."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A finalist can't name a specific onboarding timeline when asked) What does it mean if a custom software development company can't describe their first-week onboarding process?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It usually means they haven't run a structured onboarding process before, or each engagement improvises it from scratch. A finalist with real delivery discipline can name day-one, day-three, and day-seven milestones without hesitation, because they've repeated that sequence across dozens of dedicated development team engagements."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Comparing two finalists whose architecture scores are close but one proposes named individuals and the other proposes roles) Does it matter if a finalist names specific engineers instead of just roles during vendor selection?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes, significantly. A proposal listing 'a senior architect will be assigned' rather than a named person with a portfolio is a soft signal the team isn't actually staffed yet, which undermines everything else in their architecture review pitch — you can't verify what you can't see."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A CTO wants to verify a finalist's claimed 160+ delivered projects before signing) How should I verify a custom software development company's track record claims during finalist review?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Ask for three reference clients whose engagements are at least two years old, not their most recent logos, and request a specific example of a project that required significant architecture rework mid-engagement. A vendor's response to that request reveals more about real delivery maturity than any portfolio page."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: One finalist proposes a dedicated development team model, the other proposes staff augmentation) How do I choose between a dedicated development team and staff augmentation at the finalist stage?",
+      "acceptedAnswer": {"@type": "Answer", "text": "A dedicated development team suits a multi-quarter build where you want a stable, self-managing unit with its own delivery cadence; staff augmentation suits filling a specific skills gap inside a team you already manage directly. Ask each finalist which model they're actually proposing and why it fits your product stage, not just which model they default to selling."}
     }
   ]
 }

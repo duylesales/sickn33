@@ -123,7 +123,7 @@ De route die oprichters behoedt voor kostbare misstappen is overzichtelijk en be
 
 **Vraag, vóórdat u ook maar één regel code deelt, het schriftelijke toegangs- en geheimhoudingsbeleid op van elke kandidaat — stuur ons dezelfde vraag en vergelijk de antwoorden zij aan zij.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Oprichter in Actie: De Sleutel Die Nog in de Geschiedenis Stond
 

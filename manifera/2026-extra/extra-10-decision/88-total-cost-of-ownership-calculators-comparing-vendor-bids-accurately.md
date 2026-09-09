@@ -56,6 +56,12 @@ A total cost of ownership model isn't about finding the lowest number — it's a
 
 Manifera prices dedicated teams on transparent, all-inclusive blended rates with disclosed attrition data and pre-agreed change-order terms specifically because CFOs increasingly ask for exactly this kind of comparison — see how the model works on our [dedicated teams page](https://www.manifera.com/services/dedicated-teams/).
 
+## A Worked Numeric Example: Where the Ranking Actually Flips
+
+Take three finalist bids on a €400,000 headline basis for a 12-month build: Vendor A quotes €340,000, Vendor B €410,000, Vendor C €480,000. Run Vendor A through the six-row template: blended rate recalculated from disclosed seniority (mostly mid-level, adds €18,000 versus the claimed blend), ramp-up cost at a 6-week unfamiliar-stack estimate (€22,000), no currency adjustment (EUR-quoted), change-order exposure at a vague, non-pre-agreed rate applied to a realistic 15% scope-change assumption (€35,000), and an attrition adjustment based on a disclosed 28% trailing churn rate (€12,000 estimated continuity cost). Vendor A's real TCO: roughly €427,000 — now the most expensive of the three, not the cheapest.
+
+Vendor C, the €480,000 headline bid, runs a senior-heavy team (no blended-rate correction needed), a 2-week ramp-up on a standardized onboarding process (€6,000), EUR-quoted, pre-agreed change-order pricing at the base rate applied to the same 15% assumption (€18,000), and a disclosed 8% attrition rate (€3,000 continuity cost). Vendor C's real TCO: roughly €507,000 — still the most expensive in this case, but by a meaningfully smaller margin than the headline gap suggested, and the comparison now tells you specifically what you're paying the premium for rather than leaving it as an unexplained gap. This is the actual value of the exercise: not always flipping the ranking, but always making the real cost driver visible and negotiable.
+
 ## Frequently Asked Questions
 
 ### What's the single biggest blind spot in vendor bid comparisons?
@@ -72,6 +78,18 @@ Sometimes, but only when it survives the full TCO model. A low blended rate pair
 
 ### How do I get vendors to disclose attrition and ramp-up data honestly?
 Make it a standard part of your RFP template rather than a follow-up question, and cross-reference answers against reference calls with existing clients. Vendors who build long-term client relationships on transparent terms generally answer this readily; evasiveness on these specific questions is itself a useful signal.
+
+### (Scenario: a vendor's bid states a blended rate but declines to break out individual role seniority) How should a CFO model TCO when a vendor won't disclose their team's seniority mix?
+Apply a conservative correction factor rather than taking the blended rate at face value — assume a mid-level-heavy composition (roughly 60% mid, 25% senior, 15% junior) unless the vendor proves otherwise, since a vendor confident in a senior-heavy team has every incentive to disclose it and the withheld information itself is informative. Flag this assumption explicitly in the comparison so the committee knows it's a modeled estimate, not vendor-confirmed data.
+
+### (Scenario: a vendor offers to run their own TCO calculator tool instead of filling in the buyer's spreadsheet) Should a CFO accept a vendor's own TCO calculator output instead of building an independent model?
+No — accept the vendor's raw inputs (rate card, ramp-up estimate, attrition figure, change-order terms) but run them through your own model, since a vendor-built calculator inevitably makes methodology choices, like how ramp-up productivity loss is weighted, that favor their own bid. The value of a TCO comparison depends entirely on applying one consistent methodology across every finalist.
+
+### (Scenario: one finalist proposes a 6-month engagement and another proposes 12 months to reach the same scope) How should TCO comparison handle bids that differ in proposed contract duration for the same scope?
+Normalize to a cost-per-unit-of-delivered-scope basis rather than comparing total contract value directly, since a shorter, more intensely staffed engagement and a longer, leaner one can reach the same deliverable at different total costs and different risk profiles. Factor in that a longer timeline also extends the window during which currency movement, attrition, and scope drift can accumulate, which the standard six-row model should already be capturing per unit time.
+
+### (Scenario: six months into a signed engagement, actual spend is tracking differently than the pre-signing TCO model predicted) Should a CFO revisit the TCO model after signing, once real invoices start coming in?
+Yes — track actual spend against each of the six modeled categories (not just total spend) on a quarterly basis, since a divergence concentrated in one category, such as change orders running well above the modeled 15% assumption, is actionable information for the next renewal negotiation in a way that a single blended total never is.
 
 <script type="application/ld+json">
 {

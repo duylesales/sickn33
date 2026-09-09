@@ -102,7 +102,7 @@ Het team van [LaunchStudio](https://launchstudio.eu/nl/#contact) helpt technisch
 
 [Bespreek uw vraagstuk met een engineer](https://launchstudio.eu/nl/#contact) om vast te stellen of een webhook, export of echte API de juiste keuze is voor uw situatie.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Indie Hacker Bouwt Bijna de Verkeerde Oplossing
 

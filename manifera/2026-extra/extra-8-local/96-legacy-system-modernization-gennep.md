@@ -82,6 +82,14 @@ Run the comparison a Gennep CIO actually needs rather than the one a vendor's sl
 
 The number that should worry a CIO most isn't the vendor quote at all — it's the cost of a failed cutover. A single failed big-bang cutover on a core operational system routinely costs a mid-sized company €15,000-€40,000 in a single week of lost productivity, emergency remediation, and overtime, on top of whatever the original project already cost the budget. An incremental migration doesn't eliminate risk; it makes sure no single failure can ever cost that much, because no single release is carrying the whole system's fate on its own. Talk to a senior Manifera architect about sequencing your own modernization roadmap module by module, with a rollback plan for every single step, at our [contact page](https://www.manifera.com/contact-us/).
 
+## Three More Myths This Roadmap Should Retire
+
+**Myth: The API facade itself becomes a new piece of permanent technical debt.** Fact: a well-built facade is a thin translation layer, not a system in its own right, and it shrinks alongside the legacy code it fronts — once the last module strangles out, the facade is deleted, not left running as a fourth thing to maintain.
+
+**Myth: The board needs a fully detailed, module-by-module roadmap before approving budget.** Fact: only the facade design and the first two or three modules need that level of detail at kickoff. A Land van Cuijk company's EDI and ERP dependencies are rarely fully knowable until the facade is live and the team can see real traffic against it — later modules are sequenced using rolling-wave planning, refined every four to six weeks as the previous module's data reveals what the next one actually requires.
+
+**Myth: Modernization is a project with a fixed end date, after which the system is "done."** Fact: the discipline that makes a strangler-fig migration succeed — small, reversible, always-in-production changes — is also the right way to run ongoing feature work once the migration itself completes. Companies that treat the migration's end date as a return to big-bang releases typically rebuild the same risk they just spent ten months retiring.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CIO deciding between a full rewrite and incremental modernization) Is a full rewrite ever the right call for legacy system modernization?
@@ -104,6 +112,22 @@ A full rewrite requires maintaining two full systems in parallel, the legacy sys
 
 Read-heavy, lower-risk functions like reporting and analytics are usually migrated first, because they demonstrate real value on a modern stack quickly without touching the transactional core the business depends on most.
 
+### (Scenario: CIO wanting a realistic timeline before the first module can even start) How long does building the initial API facade layer take before any module migration can begin?
+
+Typically two to three weeks for a core planning or warehouse system — enough time to wrap the legacy database in a stable API contract and route the first read-heavy reporting queries through it, which is also the point at which the migration roadmap's later modules start getting sequenced with real data instead of assumptions.
+
+### (Scenario: CIO worried about budget cuts stalling the program mid-migration) What happens if the modernization program gets paused halfway through — are we stuck in a worse state than before?
+
+No — because every migrated module is already live in production and the legacy system has only shrunk, not been left half-rebuilt, a paused strangler-fig migration simply freezes in a stable, fully functional state, unlike a paused full rewrite, which leaves an unfinished parallel system with no production value at all.
+
+### (Scenario: CIO unsure whether this approach is overkill for a smaller Land van Cuijk company) Is the strangler-fig approach cost-effective for a company our size, or only for larger enterprises?
+
+It scales down well — a smaller core system might only need four or five modules strangled out instead of eleven, and the facade-first cost is proportionally smaller too, so the same risk-reduction logic applies whether the legacy system is a single warehouse module or a full multi-department ERP.
+
+### (Scenario: CIO concerned about specialist knowledge loss even after modernization completes) Once the legacy system is fully retired, do we still need the specialists who understood it, or does that risk disappear?
+
+Most of that risk disappears once the underlying business logic has been re-implemented and documented in the modern stack during migration — the specialist knowledge gets captured and encoded into the new system module by module, rather than staying locked in one or two people's heads until the day they leave.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -113,7 +137,11 @@ Read-heavy, lower-risk functions like reporting and analytics are usually migrat
     { "@type": "Question", "name": "(Scenario: CIO worried about running two systems at once) Doesn't running the legacy and new system in parallel just create more complexity, not less?", "acceptedAnswer": { "@type": "Answer", "text": "Briefly running both systems connected through a well-designed API facade is a controlled, reversible state that is far lower risk than a single all-at-once cutover with no fallback." } },
     { "@type": "Question", "name": "(Scenario: CIO with integrations to EDI, ERP, or transport-planning systems) How does Manifera handle existing integrations during a legacy modernization project?", "acceptedAnswer": { "@type": "Answer", "text": "Every existing integration is mapped and routed through the same API facade used for the migration itself, so integrations keep functioning against a stable contract throughout the project." } },
     { "@type": "Question", "name": "(Scenario: CIO comparing a Dutch agency's fixed-price rewrite quote against a phased approach) Why does an incremental migration typically cost less than a full-rewrite quote for the same scope?", "acceptedAnswer": { "@type": "Answer", "text": "A full rewrite requires maintaining two full systems in parallel for the entire project duration, while an incremental migration retires legacy components as it goes, avoiding that extended parallel-build cost." } },
-    { "@type": "Question", "name": "(Scenario: CIO wanting a fast initial win to show the board) What's typically the first module migrated in a legacy modernization project?", "acceptedAnswer": { "@type": "Answer", "text": "Read-heavy, lower-risk functions like reporting and analytics are usually migrated first, because they demonstrate real value on a modern stack quickly without touching the transactional core." } }
+    { "@type": "Question", "name": "(Scenario: CIO wanting a fast initial win to show the board) What's typically the first module migrated in a legacy modernization project?", "acceptedAnswer": { "@type": "Answer", "text": "Read-heavy, lower-risk functions like reporting and analytics are usually migrated first, because they demonstrate real value on a modern stack quickly without touching the transactional core." } },
+    { "@type": "Question", "name": "(Scenario: CIO wanting a realistic timeline before the first module can even start) How long does building the initial API facade layer take before any module migration can begin?", "acceptedAnswer": { "@type": "Answer", "text": "Typically two to three weeks for a core planning or warehouse system, enough time to wrap the legacy database in a stable API contract and route the first reporting queries through it." } },
+    { "@type": "Question", "name": "(Scenario: CIO worried about budget cuts stalling the program mid-migration) What happens if the modernization program gets paused halfway through — are we stuck in a worse state than before?", "acceptedAnswer": { "@type": "Answer", "text": "No, every migrated module is already live in production, so a paused strangler-fig migration simply freezes in a stable, fully functional state rather than leaving an unfinished parallel rewrite." } },
+    { "@type": "Question", "name": "(Scenario: CIO unsure whether this approach is overkill for a smaller Land van Cuijk company) Is the strangler-fig approach cost-effective for a company our size, or only for larger enterprises?", "acceptedAnswer": { "@type": "Answer", "text": "It scales down well, a smaller core system might only need four or five modules strangled out instead of eleven, with the facade-first cost proportionally smaller too." } },
+    { "@type": "Question", "name": "(Scenario: CIO concerned about specialist knowledge loss even after modernization completes) Once the legacy system is fully retired, do we still need the specialists who understood it, or does that risk disappear?", "acceptedAnswer": { "@type": "Answer", "text": "Most of that risk disappears, since the specialist knowledge gets captured and re-implemented into the modern system module by module rather than staying locked in one or two people's heads." } }
   ]
 }
 </script>

@@ -86,11 +86,19 @@ Laten we nuchter kijken naar het faalscenario wanneer afspraken ontbreken:
 
 Geen van deze scenario's vereist kwade opzet; ze ontstaan simpelweg omdat de grenzen nooit schriftelijk zijn vastgelegd en beide partijen bij onduidelijkheid hun eigen logica volgen.
 
+## Toegang en Overdracht Regelen Als de Relatie Eindigt
+
+Nog een scenario dat u expliciet in de overeenkomst moet benoemen, juist omdat het gemakkelijk over het hoofd wordt gezien zolang de samenwerking soepel verloopt: wat gebeurt er met de code, inloggegevens en accounttoegang als u en uw onderaannemer besluiten uit elkaar te gaan? Een clausule die een ordelijke, gedocumenteerde overdracht vereist — waarbij alle toegangsgegevens worden geretourneerd of geroteerd, alle code in definitieve staat wordt overgedragen naar de eigen repository van de klant en er aan weerszijden geen actieve beheerdersrechten achterblijven — beschermt iedereen, inclusief de eindklant, tegen de meest chaotische vorm van een verbroken samenwerking. Zonder deze afspraak kan een ontbonden partnerschap ertoe leiden dat productiesystemen van de klant achterblijven met wees-accounts die niemand zich herinnert te ontkoppelen. Dat vormt een reëel beveiligingsrisico dat niets te maken heeft met de kwaliteit van de oorspronkelijk geleverde software, maar alles met een proces dat niemand formaliseerde toen de relatie nog optimaal functioneerde.
+
+## Een Bestaande Samenwerking Doorlichten op Gaten
+
+Als u momenteel al white-label opdrachten uitvoert zonder dat u deze vraagstukken expliciet heeft vastgelegd, hoeft u niet per se direct alles in één keer opnieuw te contracteren — begin met het hiaat dat gezien uw huidige samenwerkingen het grootste acute risico vormt. Een bureau dat werkt met een onderaannemer die rechtstreeks contact heeft met de klant als geïntroduceerde specialist, moet prioriteit geven aan het relatiebeding (non-solicitation), aangezien dat bij de huidige opzet het meest waarschijnlijke geschilpunt is. Een bureau dat van plan is om recent opgeleverde projecten binnenkort in eigen marketinguitingen te gebruiken, doet er verstandig aan de portfoliorechten af te stemmen vóórdat de eerste casestudy live gaat, en niet pas nadat een onderaannemer bezwaar maakt tegen de manier waarop diens werk wordt gepresenteerd (of juist verzwegen).
+
 [LaunchStudio](https://launchstudio.eu/nl/) hanteert voor al haar bureaupartners transparante standaardovereenkomsten waarin alle vier deze vraagstukken helder zijn geregeld. Dit weerspiegelt [Manifera's 11+ jaar ervaring met het voeren van grootschalige zakelijke IT-partnerschappen](https://www.manifera.com/about-us/). Bij ons zijn deze voorwaarden geen theoretisch discussiepunt, maar het vaste uitgangspunt van de samenwerking.
 
 Wilt u onze standaardvoorwaarden inzien als blauwdruk voor uw eigen bureauovereenkomsten? [Plan een kennismaking van 15 minuten](https://launchstudio.eu/nl/#contact) en we lopen de bepalingen gezamenlijk door.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Bakker Studio: De Casestudy Die de Relatie Op Spel Zette
 

@@ -84,7 +84,7 @@ Zorg daarnaast voor **geautomatiseerde foutrapportage vanuit de widget**: log Ja
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste webapplicaties) ontwerpen we veilige hybride iframe-loaders, cookie-vrije sessiearchitectuur en domein-gevalideerde widgets tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw widget-architectuur met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw insluitbare software vlekkeloos draait op elke website.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De Boekingswidget Die op Elk Toestel Werkte, Behalve op iPhones
 

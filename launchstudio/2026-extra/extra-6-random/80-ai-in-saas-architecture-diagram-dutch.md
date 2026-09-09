@@ -39,6 +39,17 @@ Bij laag verkeer is een trage AI-aanroep inline met de kernlogica een klein onge
 
 Onze engineers gevestigd in Singapore herzien regelmatig precies deze grens voor scale-up-oprichters die tijdens hun eerste bouw een AI-functie inline hebben ingebouwd en nu zien dat deze de kernbetrouwbaarheid onder echte belasting bedreigt. Heeft uw product een AI-functie die zich in een kritiek verzoekpad bevindt, dan kunt u [met een engineer praten](https://launchstudio.eu/nl/#contact) over waar deze daadwerkelijk thuishoort. Voor meer over hoe Manifera dit soort architecturaal werk benadert, zie [ons portfolio](https://www.manifera.com/portfolio/).
 
+## Een Audit in Drie Categorieën voor Elke AI-Feature Die U Al Heeft Uitgerold
+
+Als uw SaaS-applicatie al meerdere door AI aangedreven functionaliteiten bevat, is de positioneringsvraag niet theoretisch; deze geldt afzonderlijk voor elk onderdeel. Deel uw bestaande AI-features in deze drie categorieën in:
+
+**Categorie 1: Zuivere Gemaksfuncties (AI-Assistentie).** Features zoals "Genereer een samenvatting met één klik" of "Herschrijf deze tekst professioneler". Als het model faalt, kan de gebruiker het formulier nog steeds handmatig invullen. *Actiepunt:* Houd deze features synchroon, lichtgewicht en zorg voor een duidelijke disclaimer; diepe hardening is hier zelden noodzakelijk.
+
+**Categorie 2: Hybride Workflow-Onderdelen.** Features waarbij het model ongestructureerde data omzet in gestructureerde velden (bijvoorbeeld het uitlezen van een factuur of PDF naar databasetabellen). De uitvoer heeft directe invloed op de database. *Actiepunt:* Dwing strikte JSON-schemavalidatie (Zod) af vóórdat de data naar de database wordt geschreven, en bied de gebruiker altijd een controlescherm.
+
+**Categorie 3: Zelfstandige AI-Beslissingsmotoren (AI-Native).** Features waarbij het model autonoom besluiten neemt, data toewijst of acties uitvoert zonder menselijke tussenkomst. *Actiepunt:* Verplichte asynchrone wachtrijen, uitgebreide deterministische vangrails, auditlogging en geautomatiseerde regressietests op modeluitvoer.
+
+Door uw features op deze wijze te scheiden, voorkomt u dat u kwetsbare beslissingsmotoren behandelt als simpele teksteditors en richt u uw beveiligingsbudget exact daar in waar de risico's liggen.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: toen de samenvatting de boeking meesleepte
@@ -85,11 +96,46 @@ Ja, dit is doorgaans een herarchitectuur van het verzoekpad die de kerntransacti
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why does it matter whether an AI feature sits inline with core logic?", "acceptedAnswer": { "@type": "Answer", "text": "An AI call sharing the same request path as a core transaction inherits that transaction's uptime requirements without the same reliability guarantees, capping the path at the weakest link." } },
-    { "@type": "Question", "name": "What's the safer architectural pattern for adding AI to a SaaS product?", "acceptedAnswer": { "@type": "Answer", "text": "Treating AI-powered enhancements as parallel or asynchronous additions rather than serial dependencies, so the core transaction succeeds independently." } },
-    { "@type": "Question", "name": "Does this only matter at large scale?", "acceptedAnswer": { "@type": "Answer", "text": "It matters most under real traffic spikes, when a slow AI provider response compounds into a bottleneck for the entire core transaction." } },
-    { "@type": "Question", "name": "What does Herre Roelevink say about this kind of architectural maturity?", "acceptedAnswer": { "@type": "Answer", "text": "He describes the current challenge as building the architecture and security needed to bring products to maturity, which includes placement decisions like this one." } },
-    { "@type": "Question", "name": "Can an inline AI feature be moved to an async pattern without a full rebuild?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, this is typically a request-path re-architecture separating the core transaction from the AI call, without requiring frontend changes." } }
+    {
+      "@type": "Question",
+      "name": "Waarom maakt het uit of een AI-functie inline zit met de kernlogica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat een AI-aanroep die hetzelfde verzoekpad deelt als een kerntransactie de uptime-vereisten van die transactie erft zonder dezelfde betrouwbaarheidsgaranties, waardoor het hele pad wordt begrensd door de zwakste schakel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het veiligere architecturale patroon voor het toevoegen van AI aan een SaaS-product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door AI aangedreven verbeteringen behandelen als parallelle of asynchrone toevoegingen in plaats van seriële afhankelijkheden, zodat de kerntransactie onafhankelijk slaagt, zelfs als de AI-aanroep traag of onbeschikbaar is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Doet dit er alleen toe bij grote schaal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het doet er het meest toe tijdens echte verkeerspieken, wanneer een trage reactie van een AI-provider zich opstapelt tot een bottleneck voor de hele kerntransactie, precies wanneer betrouwbaarheid het meest nodig is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat zegt Herre Roelevink over dit soort architecturale volwassenheid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hij beschrijft de huidige uitdaging niet langer als het omzetten van ideeën naar software, maar als het bouwen van de architectuur en beveiliging die nodig zijn om producten tot volwassenheid te brengen — wat precies dit soort plaatsingsbeslissing omvat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een inline AI-functie worden verplaatst naar een asynchroon patroon zonder volledige herbouw?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, dit is doorgaans een herarchitectuur van het verzoekpad die de kerntransactie scheidt van de AI-aanroep, zonder dat wijzigingen aan de bestaande frontend nodig zijn."
+      }
+    }
   ]
 }
 </script>

@@ -98,6 +98,12 @@ Request a detailed technical proposal built around the exact categories your sco
 }
 </script>
 
+## A Sample Weighted Scorecard, Filled In
+
+Concrete numbers make this method usable rather than theoretical. A representative eight-category rubric for a mid-market software vendor selection: technical approach and architecture fit (20%), team composition and named-engineer seniority (15%), delivery methodology and reporting cadence (15%), cost structure — split 10% magnitude, 5% transparency (15%), portfolio relevance to your specific stack (10%), communication and live technical Q&A performance (15%), security and compliance posture (10%). That totals 100%, with each category scored 1-5 by every committee member independently before discussion.
+
+Run the math on three vendors and the bias-correction effect becomes visible immediately. Vendor A, the most polished proposal, might score a 5 on formatting-adjacent categories but only a 2 on the live technical Q&A once engineers rather than sales staff are in the room — dragging its weighted total below a less polished Vendor B that scored 4s consistently across delivery methodology and communication. Without a weighted rubric separating these categories, Vendor A's visual polish would have silently carried the decision. With it, the 15% communication weighting alone is often enough to flip a close result, which is precisely the bias the method is built to correct.
+
 ## Frequently Asked Questions
 
 ### How many categories should a vendor scoring rubric include?
@@ -114,6 +120,18 @@ Criteria drift happens when evaluators build or adjust scoring categories after 
 
 ### How do I stop the final decision meeting from being swayed by whoever presented last?
 Tabulate weighted scores before the meeting and distribute them for review rather than generating the decision live in discussion. Real-time discussion is disproportionately influenced by the most recent or most confident presentation, a well-documented recency effect in sequential evaluation processes.
+
+### (Scenario: IT Manager whose committee wants to shortcut the process for a small procurement) Is a full weighted scorecard overkill for a smaller vendor selection, like a single dedicated team hire?
+No, but you can compress it — four to five categories with a simplified 1-to-5 scale still removes most formatting and recency bias even for a smaller decision. The value of the method comes from locking criteria before reading proposals and scoring independently before discussion, not from the specific number of categories.
+
+### (Scenario: two committee members' scores diverge sharply on the same vendor) What should I do when individual scorers' ratings for the same vendor differ by more than two points on a category?
+Treat a gap that large as a signal to revisit the category definition, not just average the two scores and move on, since it usually means the scoring criteria for that category were ambiguous rather than that one evaluator is simply wrong. Have both scorers explain their reasoning to each other briefly, then re-score independently rather than negotiating a compromise number in the room.
+
+### (Scenario: IT Manager needs to defend a vendor choice to a skeptical CFO after the fact) How do I present a weighted scorecard result to leadership without it looking like a rubber stamp?
+Show the category-level breakdown, not just the final weighted total, so leadership can see where the winning vendor separated from the field and where it did not. A scorecard that shows a close overall race but a clear win on communication and delivery methodology tells a more convincing story than a single aggregate number ever will.
+
+### (Scenario: incumbent vendor re-bidding against two new challengers) How do I score an incumbent vendor fairly without either favoring or penalizing them for the existing relationship?
+Score the incumbent's technical and delivery categories using the same blind or separated process as new vendors, based on their actual proposal content and live Q&A performance, not on relationship history. Reserve any credit for proven delivery track record as its own explicit, weighted sub-criterion within the rubric, rather than letting familiarity silently inflate every other category.
 
 <script type="application/ld+json">
 {
@@ -158,6 +176,38 @@ Tabulate weighted scores before the meeting and distribute them for review rathe
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Tabulate weighted scores before the meeting and distribute them for review rather than generating the decision live in discussion. Real-time discussion is disproportionately influenced by the most recent or most confident presentation, a well-documented recency effect in sequential evaluation processes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a full weighted scorecard overkill for a smaller vendor selection, like a single dedicated team hire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, but you can compress it — four to five categories with a simplified 1-to-5 scale still removes most formatting and recency bias even for a smaller decision. The value of the method comes from locking criteria before reading proposals and scoring independently before discussion, not from the specific number of categories."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do when individual scorers' ratings for the same vendor differ by more than two points on a category?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat a gap that large as a signal to revisit the category definition, not just average the two scores and move on, since it usually means the scoring criteria for that category were ambiguous rather than that one evaluator is simply wrong. Have both scorers explain their reasoning to each other briefly, then re-score independently rather than negotiating a compromise number in the room."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I present a weighted scorecard result to leadership without it looking like a rubber stamp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Show the category-level breakdown, not just the final weighted total, so leadership can see where the winning vendor separated from the field and where it did not. A scorecard that shows a close overall race but a clear win on communication and delivery methodology tells a more convincing story than a single aggregate number ever will."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I score an incumbent vendor fairly without either favoring or penalizing them for the existing relationship?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Score the incumbent's technical and delivery categories using the same blind or separated process as new vendors, based on their actual proposal content and live Q&A performance, not on relationship history. Reserve any credit for proven delivery track record as its own explicit, weighted sub-criterion within the rubric, rather than letting familiarity silently inflate every other category."
       }
     }
   ]

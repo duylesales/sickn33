@@ -112,6 +112,22 @@ Real-world pricing plans involve tiered rates, time-based variation, and bundled
 
 A charging system failure directly halts service authorization and charging capability, a genuine, immediate revenue impact that requires resilience architecture specifically designed to avoid both disruption and incorrect charging during failover.
 
+### (Scenario: finance lead reconciling billing accuracy) How does a real-time charging system stay reconciled with downstream invoicing and financial reporting?
+
+The charging system needs to emit a complete, immutable usage and charge event ledger, not just a running balance, so downstream billing and financial reporting can independently reconcile every charge; treating balance state as the only source of truth is a common custom software engineering gap that surfaces months later as unexplained revenue leakage.
+
+### (Scenario: CTO comparing custom build vs off-the-shelf OCS vendor) When does a custom-built charging system make more sense than licensing an off-the-shelf OCS platform?
+
+A custom software development approach earns its cost when pricing plan complexity, IoT/M2M volume, or integration requirements exceed what a generic OCS vendor's rating engine and APIs can flexibly represent without expensive customization fees; for simpler, stable pricing models, a licensed OCS is often the more economical software product choice.
+
+### (Scenario: engineering lead scoping IoT/M2M SIM billing) Does charging logic for machine-to-machine IoT SIMs require different engineering than consumer mobile plans?
+
+Yes — M2M IoT billing typically involves far higher device counts with much lower per-device usage and stricter bulk-tiered or pooled-allowance rating rules, meaning the authorization and rating engine's software system development needs to be scoped for high cardinality at low per-transaction value, a different performance profile than consumer voice/data billing.
+
+### (Scenario: procurement lead comparing vendor quotes) What specific evidence should a procurement team request from a charging system vendor before signing?
+
+Request the specific transactions-per-second figure the authorization logic was load-tested against, the concurrency pattern used (burst vs. smoothed average), and documented failover test results showing no double-charging or under-charging during a simulated outage; a vendor unable to produce these specifics has very likely not run genuine telecom-grade engineering validation.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,7 +137,11 @@ A charging system failure directly halts service authorization and charging capa
     { "@type": "Question", "name": "(Scenario: engineering lead scoping authorization performance) Why does a charging system's authorization latency matter so much more than a typical business application's response time?", "acceptedAnswer": { "@type": "Answer", "text": "Authorization delay visibly degrades the underlying service, requiring genuinely low latency under real peak load." } },
     { "@type": "Question", "name": "(Scenario: architect scoping balance handling) Why is concurrent balance handling a genuine distributed systems challenge, not a simple database update?", "acceptedAnswer": { "@type": "Answer", "text": "Simultaneous usage events require avoiding both overspending race conditions and contention degrading authorization latency." } },
     { "@type": "Question", "name": "(Scenario: product lead planning pricing flexibility) Why does rating engine flexibility deserve dedicated budget rather than a simplified reference plan?", "acceptedAnswer": { "@type": "Answer", "text": "Real pricing plans involve tiered rates and bundled allowances, requiring substantial rework if built around a flat-rate assumption." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for revenue-critical resilience) Why does a charging system need dedicated high-availability architecture beyond typical business application resilience?", "acceptedAnswer": { "@type": "Answer", "text": "A failure directly halts service authorization and charging, requiring resilience specifically avoiding disruption and mischarging." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for revenue-critical resilience) Why does a charging system need dedicated high-availability architecture beyond typical business application resilience?", "acceptedAnswer": { "@type": "Answer", "text": "A failure directly halts service authorization and charging, requiring resilience specifically avoiding disruption and mischarging." } },
+    { "@type": "Question", "name": "(Scenario: finance lead reconciling billing accuracy) How does a real-time charging system stay reconciled with downstream invoicing and financial reporting?", "acceptedAnswer": { "@type": "Answer", "text": "The system must emit a complete, immutable usage and charge event ledger so downstream billing and finance can independently reconcile every charge, not rely on balance state alone." } },
+    { "@type": "Question", "name": "(Scenario: CTO comparing custom build vs off-the-shelf OCS vendor) When does a custom-built charging system make more sense than licensing an off-the-shelf OCS platform?", "acceptedAnswer": { "@type": "Answer", "text": "Custom development earns its cost when pricing complexity, IoT/M2M volume, or integration needs exceed what a generic OCS vendor can flexibly support without costly customization." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping IoT/M2M SIM billing) Does charging logic for machine-to-machine IoT SIMs require different engineering than consumer mobile plans?", "acceptedAnswer": { "@type": "Answer", "text": "M2M billing involves far higher device counts with pooled or bulk-tiered rating rules, requiring the engine to be scoped for high cardinality at low per-transaction value." } },
+    { "@type": "Question", "name": "(Scenario: procurement lead comparing vendor quotes) What specific evidence should a procurement team request from a charging system vendor before signing?", "acceptedAnswer": { "@type": "Answer", "text": "Request the specific TPS figure authorization was load-tested against, the concurrency pattern used, and documented failover test results showing no mischarging during outage." } }
   ]
 }
 </script>

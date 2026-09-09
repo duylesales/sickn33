@@ -61,8 +61,7 @@ De duurzamere waarde van een betrouwbare white-label backend partner blijkt uit 
 
 [Breng ons de backend-vereisten van uw volgende klant](https://launchstudio.eu/nl/#contact) — de meeste scoping calls voor bureaus duren korter dan een enkele kick-off meeting met een klant.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een Bureau-Eigenaar Die Bijna Zijn Grootste Klant Afwees
 
 Sven Kuiper, oprichter van Kuiper Digital Partners, een vijfkoppig design- en no-code bureau in Almere, had zijn klantenportefeuille opgebouwd op snelle, gepolijste Bolt-gebouwde MVP's voor regionale retail- en horecamerken. Een logistieke klant, Northline Freight, huurde Kuiper Digital Partners in om een planning- en routetracking-portaal voor chauffeurs te bouwen — en halverwege het project eiste Northlines eigen enterprise-klant een formele data-beveiligingsverklaring voordat locatiegegevens van chauffeurs door het nieuwe systeem mochten stromen.

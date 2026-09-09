@@ -39,6 +39,21 @@ Gratis is de juiste keuze voor een oprecht prototype waar nog niemand van afhank
 
 LaunchStudio, ondersteund door Manifera, werkt met oprichters in en rond Ho Chi Minh-stad om een gratis-laag-prototype zijn eigen geïsoleerde, productiewaardige infrastructuur te geven voordat dat eerste drukke seizoen aanbreekt, in plaats van erna wanneer het de leemte blootlegt. Onze [prijscalculator](https://launchstudio.eu/nl/#calculator) geeft een helder beeld van wat die migratie doorgaans kost, en het team voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) van Manifera past dezelfde infrastructuurnormen toe voor enterprise-klanten.
 
+## Een Zelfevaluatie met Vijf Vragen: Is Uw Gratis Pakket Nog Wel Veilig?
+
+Gratis cloud-diensten (zoals gratis tiers van Supabase, Vercel of Render) zijn fantastisch om binnen een weekend een prototype te bouwen. Zodra er echte gebruikers actief worden, veranderen diezelfde gratis pakketten echter stilletjes in tijdbommen. Toets uw situatie aan deze vijf vragen:
+
+**1. Valt Uw Database Automatisch in Slaap na Een Periode van Inactiviteit?** Veel gratis databases worden gepauzeerd als er een week geen verkeer is. Een potentiële klant die uw site bezoekt, stuit dan op een fatale time-out of een laadtijd van dertig seconden.
+
+**2. Zijn Automatische Dagelijkse Back-ups Inbegrepen in Uw Gratis Tier?** Bij de meeste gratis pakketten ontbreken automatische dagelijkse point-in-time herstelpunten. Bij een datafout bent u alles definitief kwijt.
+
+**3. Heeft U Voldoende Connectielimieten voor Meerdere Gelijktijdige Bezoekers?** Gratis databases staan vaak maximaal 5 tot 20 gelijktijdige connecties toe. Vijf actieve gebruikers die tegelijk een dashboard laden, trekken de database direct over de limiet.
+
+**4. Zijn Uw Omgevingsvariabelen en Geheimen Veilig Afgeschermd?** Biedt het gratis platform gescheiden configuraties voor staging en productie, of deelt u noodgedwongen dezelfde sleutels?
+
+**5. Wat Gebeurt Er als U Plotseling Uw Maandelijkse Datalimiet Bereikt?** Schakelt de provider uw site per direct uit met een 402/403 foutpagina, of wordt er automatisch opgeschaald?
+
+Kost een upgrade naar een betaald tier (€ 20 tot € 50 per maand) u minder dan de reputatieschade van één gemiste klant? Upgrade dan vandaag nog en elimineer deze onnodige kwetsbaarheden.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: een veilingmelding tot zwijgen gebracht door andermans storing
@@ -85,11 +100,46 @@ Een groot deel van het engineeringwerk van LaunchStudio, inclusief infrastructuu
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Does a free no-code AI tier really share infrastructure with other apps?", "acceptedAnswer": { "@type": "Answer", "text": "Often, yes. Many platforms pool free-tier apps onto shared database instances and compute rather than isolating each one." } },
-    { "@type": "Question", "name": "How would I know if my app is on shared infrastructure?", "acceptedAnswer": { "@type": "Answer", "text": "Ask the platform directly whether free-tier data is isolated or pooled, and whether other apps' outages could affect yours." } },
-    { "@type": "Question", "name": "When should a founder move off a free tier?", "acceptedAnswer": { "@type": "Answer", "text": "Before the first period real users depend on availability, such as a launch or seasonal peak, rather than after an incident exposes the gap." } },
-    { "@type": "Question", "name": "Can LaunchStudio migrate an app off a shared free tier?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LaunchStudio's engineers, backed by Manifera, migrate apps onto dedicated infrastructure with independent monitoring." } },
-    { "@type": "Question", "name": "Where does LaunchStudio's engineering work happen for this kind of migration?", "acceptedAnswer": { "@type": "Answer", "text": "Much of the engineering work runs out of Ho Chi Minh City, alongside hubs in Amsterdam and Singapore." } }
+    {
+      "@type": "Question",
+      "name": "Deelt een gratis no-code AI-laag echt infrastructuur met andere apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vaak wel. Veel platforms houden de kosten laag op gratis lagen door apps te bundelen op gedeelde database-instanties en rekenkracht, zonder elke gratis app zijn eigen geïsoleerde omgeving te geven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik weten of mijn app op gedeelde infrastructuur staat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vraag het platform rechtstreeks of gratis-laag-gegevens geïsoleerd of gebundeld zijn, en of storingen die andere gratis-laag-apps treffen ook de uwe kunnen raken. De meeste platforms geven eerlijk antwoord als u het vraagt, ook al staat het zelden vooraf vermeld."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wanneer zou een oprichter moeten overstappen van een gratis laag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vóór de eerste periode waarin echte gebruikers rekenen op de beschikbaarheid van de app — een lancering, een seizoenspiek of een promotie — in plaats van na een incident tijdens die periode dat de leemte blootlegt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan LaunchStudio een app migreren van een gedeelde gratis laag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. De technici van LaunchStudio, ondersteund door Manifera, migreren regelmatig no-code AI-apps naar toegewijde, geïsoleerde infrastructuur, inclusief het opzetten van onafhankelijke uptime-monitoring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar vindt het engineeringwerk van LaunchStudio voor dit soort migraties plaats?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een groot deel van het engineeringwerk van LaunchStudio, inclusief infrastructuurmigraties, loopt via het centrum in Ho Chi Minh-stad, naast de hubs in Amsterdam en Singapore."
+      }
+    }
   ]
 }
 </script>

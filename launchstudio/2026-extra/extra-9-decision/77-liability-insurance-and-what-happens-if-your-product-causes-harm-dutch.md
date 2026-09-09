@@ -82,7 +82,7 @@ De belangrijkste vaardigheid bij het kiezen van een verzekering is het bestudere
 
 [Gebruik onze prijscalculator](https://launchstudio.eu/nl/#calculator) om direct te zien wat het kost om uw technische beveiligingshiaten professioneel te dichten, vóórdat u afhankelijk bent van een verzekeraar om de gaten te dichten die u open heeft gelaten.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De Wake-up Call van een Legal-Tech Oprichter: De Vragenlijst Die een Deal Blokkeerde
 

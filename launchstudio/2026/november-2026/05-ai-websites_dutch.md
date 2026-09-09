@@ -119,7 +119,7 @@ Het dichten van deze kloof vereist drie specifieke conversies:
 
 Elke conversie vereist backend-infrastructuur die AI-tools niet automatisch genereren. [LaunchStudio](https://launchstudio.eu/nl/#contact) overbrugt al deze drie stappen in één overzichtelijk traject, doorgaans binnen één tot drie weken.
 
-## Belangrijkste inzichten
+### Belangrijkste inzichten
 
 - **AI bouwt de gevel, niet het fundament**: Visuals en CSS zijn uitstekend, maar backend-logica, SSL, e-mailinboxaflevering en databases ontbreken in AI-bouwers.
 - **Drie duidelijke categorieën**: Herken of u een marketingpagina (€800-€2.000), webapplicatie (€2.000-€4.500) of SaaS-platform (€2.500-€7.500) bouwt om overinvesteringen te voorkomen.

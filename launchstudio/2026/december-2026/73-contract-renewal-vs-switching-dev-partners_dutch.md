@@ -56,6 +56,10 @@ Voordat u een nieuw jaarcontract ondertekent, is het verstandig om een onafhanke
 
 Met dit rapport in handen kunt u de onderhandelingen met uw huidige partner scherper voeren, of met harde feiten besluiten om over te stappen.
 
+## De Automatische Verlengingsvalkuil
+
+Eén structureel contractueel detail maakt deze beslissing vaak onnodig lastig: veel contracten van softwarebureaus bevatten een automatische stilzwijgende verlengingsclausule. Deze treedt in werking tenzij de oprichter actief opzegt binnen een vastgestelde opzegtermijn, vaak 30 of 60 dagen vóór het einde van de looptijd. Die clausule bestaat uitsluitend in het voordeel van de leverancier, niet van de oprichter — het zet besluiteloosheid of drukte van de oprichter automatisch om in gegarandeerde omzet. Het resultaat is dat een oprichter die niet tevreden is maar nog geen alternatieven heeft onderzocht, plotseling vastzit aan nog eens twaalf maanden contractuele verplichtingen. De praktische oplossing is simpel maar cruciaal: zet de uiterste opzegtermijn direct in uw agenda zodra het contract wordt ondertekend, niet pas wanneer de automatische factuur binnenkomt. Zo wordt de beslissing om te verlengen of over te stappen altijd bewust en tijdig genomen, met voldoende ruimte voor een onafhankelijke codebase audit.
+
 ## Belangrijkste Inzichten
 
 - Contractverlenging uit inertie of angst voor overdrachtskosten leidt vaak tot hoge verspilling in jaar twee.
@@ -69,6 +73,22 @@ Met dit rapport in handen kunt u de onderhandelingen met uw huidige partner sche
 Teken geen nieuw jaarcontract op basis van aannames. Laat uw codebase objectief beoordelen door senior engineers.
 
 LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging — waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
+
+### De Objectieve Evaluatiematrix voor Jaar Twee
+
+Wanneer een jaarcontract afloopt, beoordeelt u uw huidige partner op drie harde parameters:
+1. **Snelheid van Foutoplossing:** Worden kritieke bugs binnen 24 uur opgelost zonder dat u er herhaaldelijk achteraan moet bellen?
+2. **Proactieve Architectuuradviezen:** Denkt het team mee over schaalbaarheid en kostenbesparingen, of voeren ze slechts blindelings taken uit?
+3. **Transparantie in Facturatie:** Zijn alle uren en meerwerkkosten vooraf overlegd en helder verantwoord?
+
+### Het 5-Stappenplan voor een Risicoloze Partnerwissel
+
+Wanneer u besluit over te stappen naar een nieuwe engineeringpartner, volgt u deze chronologische stappen om operationele downtime te voorkomen:
+1. **Volledige Eigendomsveiligstelling:** Trek alle administratieve rechten op GitHub, Supabase, Vercel en Stripe direct naar uw eigen organisatie-account.
+2. **Onafhankelijke Codebase Audit:** Laat de nieuwe partner een objectieve 'as-is' analyse maken vóórdat er contracten worden getekend.
+3. **Overdracht van Geheimen & Credentials:** Verplaats alle private API-keys en database-credentials naar een beveiligde kluis (zoals Doppler of 1Password).
+4. **Schaduw-Draaien (Shadow Deployment):** Laat de nieuwe partner eerst kleine, afgebakende fixes uitvoeren op een staging-omgeving om de samenwerking te toetsen.
+5. **Formele Decharge:** Rond het oude contract zakelijk en professioneel af met een schriftelijke bevestiging van volledige overdracht.
 
 ## Echt voorbeeld
 

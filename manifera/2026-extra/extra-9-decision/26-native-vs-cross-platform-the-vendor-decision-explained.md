@@ -71,6 +71,12 @@ Manifera builds production mobile apps across both native and cross-platform sta
 
 If you want a technology recommendation scored against your actual product requirements rather than a vendor's staffing bench, [talk to our Amsterdam team](https://www.manifera.com/contact-us/) and bring your feature list — we'll tell you honestly which stack fits, including when the answer is a hybrid build neither pure pitch would have offered you.
 
+## Technical Deep-Dive: How to Actually Verify a Vendor's Cross-Platform Performance Claim
+
+Do not accept a vendor's benchmark numbers at face value — verify with a targeted technical spike before signing. Ask for a small, bounded proof-of-concept (typically 3-5 days) implementing your app's single most performance-sensitive screen — the one with the heaviest list-scrolling, animation, or camera interaction — in their proposed stack, then profile it yourself using Xcode Instruments (iOS) or Android Studio Profiler against frame-render time and memory allocation under load. A vendor confident in their stated 8-12% performance gap will hand over a working build without hesitation; a vendor who stalls on providing a testable artifact is asking you to trust marketing language instead of a number you can measure.
+
+Three specific metrics separate a genuine performance answer from a hand-wave: frame render time at the 95th percentile during rapid scroll (not average, which hides jank), cold-start time to interactive on a mid-tier device rather than the newest flagship, and memory footprint after ten minutes of typical navigation, since cross-platform apps historically leak more aggressively than native ones on longer sessions. Run this spike for any product where you scored performance a 4 or 5 in the five-variable framework above — the cost of a week-long technical spike is trivial against the cost of discovering a real performance ceiling six months into a build on the wrong stack.
+
 ## Frequently Asked Questions
 
 ### Is Flutter as fast as native for most apps?
@@ -88,6 +94,22 @@ Yes — a hybrid build runs the majority of an app on a cross-platform framework
 ### What happens to my app if I need to switch vendors later — does the stack choice matter?
 Yes, significantly. Native iOS and Android talent pools are deep and globally distributed, making a vendor switch relatively low-risk. Cross-platform talent pools, particularly for less widely adopted frameworks, are smaller, so confirm your chosen stack has broad enough market adoption that a future vendor switch will not become a specialized, costly search.
 
+### (Scenario: A CTO wants proof of a vendor's performance claims before committing to a stack) How can I verify a vendor's cross-platform performance claims before signing a contract?
+
+Request a small, bounded technical spike — 3-5 days building your app's single most performance-sensitive screen in the proposed stack — then profile it yourself with Xcode Instruments or Android Studio Profiler rather than trusting the vendor's stated benchmark numbers directly.
+
+### (Scenario: A CTO is deciding which metrics actually matter when reviewing a performance spike) What metrics actually matter when evaluating a cross-platform performance spike, not just frame rate averages?
+
+Look at 95th-percentile frame render time during rapid scroll, cold-start time to interactive on a mid-tier (not flagship) device, and memory footprint after roughly ten minutes of typical navigation — averages hide the jank and memory leaks that surface only under realistic, sustained use.
+
+### (Scenario: A CTO's fintech trading app scored a 5 on performance in the framework but a vendor still recommends cross-platform) Should I trust a vendor recommending cross-platform for a product that scored performance as critical in the five-variable framework?
+
+Press hard for a working technical spike before accepting that recommendation — a product scoring 4-5 on performance sensitivity is exactly the case where an unverified cross-platform pitch deserves the most scrutiny, regardless of how confidently it's delivered.
+
+### (Scenario: A CTO wants to know how long a proper technical spike takes and what it costs relative to the risk) Is a pre-contract technical spike worth the time it costs given an already tight project timeline?
+
+Yes — a 3-5 day spike is a trivial cost against the risk of discovering a real performance ceiling six months into a build on the wrong stack, when switching frameworks means a costly, disruptive rewrite rather than a bounded pre-contract test.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -97,7 +119,11 @@ Yes, significantly. Native iOS and Android talent pools are deep and globally di
     {"@type": "Question", "name": "How much cheaper is cross-platform development than building two native apps?", "acceptedAnswer": {"@type": "Answer", "text": "Cross-platform development typically reduces initial engineering hours by 25-35% compared to building fully separate iOS and Android native codebases, since 70-85% of the codebase is shared between platforms. That gap narrows over a multi-year maintenance horizon as framework-version upgrades add periodic remediation cost."}},
     {"@type": "Question", "name": "How do I know if a vendor is recommending a stack based on my product or their staffing?", "acceptedAnswer": {"@type": "Answer", "text": "Ask how many engineers on their current bench are production-ready in the specific stack they are proposing, not how many they could hypothetically hire. A vendor proposing a framework with only one or two staffed engineers relative to a much larger bench in a different stack is revealing a staffing bias, not a product-fit recommendation."}},
     {"@type": "Question", "name": "Can I mix native and cross-platform in one app?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — a hybrid build runs the majority of an app on a cross-platform framework while dropping into native modules for specific hardware-dependent or performance-critical features like barcode scanning or Bluetooth integration. It requires a vendor genuinely fluent in both stacks."}},
-    {"@type": "Question", "name": "What happens to my app if I need to switch vendors later — does the stack choice matter?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, significantly. Native iOS and Android talent pools are deep and globally distributed, making a vendor switch relatively low-risk. Cross-platform talent pools are smaller, so confirm your chosen stack has broad enough market adoption that a future vendor switch will not become a specialized, costly search."}}
+    {"@type": "Question", "name": "What happens to my app if I need to switch vendors later — does the stack choice matter?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, significantly. Native iOS and Android talent pools are deep and globally distributed, making a vendor switch relatively low-risk. Cross-platform talent pools are smaller, so confirm your chosen stack has broad enough market adoption that a future vendor switch will not become a specialized, costly search."}},
+    {"@type": "Question", "name": "(Scenario: A CTO wants proof of a vendor's performance claims before committing to a stack) How can I verify a vendor's cross-platform performance claims before signing a contract?", "acceptedAnswer": {"@type": "Answer", "text": "Request a small, bounded technical spike — 3-5 days building your app's single most performance-sensitive screen in the proposed stack — then profile it yourself with Xcode Instruments or Android Studio Profiler rather than trusting the vendor's stated benchmark numbers directly."}},
+    {"@type": "Question", "name": "(Scenario: A CTO is deciding which metrics actually matter when reviewing a performance spike) What metrics actually matter when evaluating a cross-platform performance spike, not just frame rate averages?", "acceptedAnswer": {"@type": "Answer", "text": "Look at 95th-percentile frame render time during rapid scroll, cold-start time to interactive on a mid-tier (not flagship) device, and memory footprint after roughly ten minutes of typical navigation — averages hide the jank and memory leaks that surface only under realistic, sustained use."}},
+    {"@type": "Question", "name": "(Scenario: A CTO's fintech trading app scored a 5 on performance in the framework but a vendor still recommends cross-platform) Should I trust a vendor recommending cross-platform for a product that scored performance as critical in the five-variable framework?", "acceptedAnswer": {"@type": "Answer", "text": "Press hard for a working technical spike before accepting that recommendation — a product scoring 4-5 on performance sensitivity is exactly the case where an unverified cross-platform pitch deserves the most scrutiny, regardless of how confidently it's delivered."}},
+    {"@type": "Question", "name": "(Scenario: A CTO wants to know how long a proper technical spike takes and what it costs relative to the risk) Is a pre-contract technical spike worth the time it costs given an already tight project timeline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — a 3-5 day spike is a trivial cost against the risk of discovering a real performance ceiling six months into a build on the wrong stack, when switching frameworks means a costly, disruptive rewrite rather than a bounded pre-contract test."}}
   ]
 }
 </script>

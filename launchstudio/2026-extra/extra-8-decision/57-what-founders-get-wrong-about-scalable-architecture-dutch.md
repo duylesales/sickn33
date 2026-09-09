@@ -63,8 +63,7 @@ De enkele architecturale beslissing met de grootste impact op lanceerniveau is n
 
 [Vertel ons waar uw prototype staat en waar u naartoe wilt](https://launchstudio.eu/nl/#contact) — de juiste architectuur voor uw huidige fase is vrijwel zeker kleiner, sneller en goedkoper dan de offerte die u kreeg.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Betalen voor Schaal Die Ze Niet Nodig Had — En Toen Krijgen Wat Ze Wél Nodig Had
 
 Femke Bakker, supply-chainconsultant in Amsterdam, bouwde VoorraadWijs, een AI-gedreven voorraadvoorspellingstool voor kleine Nederlandse webshops, met Lovable. Voor de lancering benaderde ze een ontwikkelbureau dat €18.000 offreerde voor een "schaalbare, productieklare backend" — een traject van drie maanden met Kubernetes-orkestratie, Redis-caching en een PostgreSQL-leesreplica-opzet.

@@ -70,7 +70,7 @@ Als uw multi-tenant AI-platform op weg is naar een SOC 2-audit volgens het tijds
 
 LaunchStudio wordt geëxploiteerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 en geleid door Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink het verwoordt: *"We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring in precies dat vakgebied."* Door "Nederlands management te combineren met Vietnamees meesterschap", onderhoudt Manifera hoofdkantoren in **Amsterdam, Nederland** (Herengracht 420), een Aziatische hub in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minh-stad, Vietnam** (Pho Quang Street), met enterprise-klanten waaronder Vodafone en TNO. Via LaunchStudio verharden senior engineeringteams uw bestaande multi-tenant AI-platform tegen precies de controles die een SOC 2-audit toetst — tenant-isolatie, toegangscontrole, change management, encryptie, incidentrespons — binnen 1 tot 3 weken, zonder een volledige rebuild. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/nl/#contact) of bekijk hoe het [maatwerk software-ontwikkelteam van Manifera](https://www.manifera.com/services/custom-software-development/) compliance-gerichte hardening aanpakt voor AI-native platforms.
 
-## Echt Voorbeeld
+## Echt voorbeeld
 
 ### Een AI-native Founder in Actie: Een Klok van 30 Dagen op een Contract van €140.000
 

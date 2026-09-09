@@ -139,7 +139,7 @@ Toets [LaunchStudio](https://launchstudio.eu/nl/) gerust met exact dezelfde vrag
 
 **Heeft u momenteel één offerte liggen en mist u vergelijkingsmateriaal? Vraag ons om een vaste-prijsanalyse voor dezelfde scope — een helder tweede voorstel met expliciete uitsluitingen maakt de eerste offerte direct leesbaar.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Oprichter in Actie: Het Woord Dat Niet in het Document Stond
 

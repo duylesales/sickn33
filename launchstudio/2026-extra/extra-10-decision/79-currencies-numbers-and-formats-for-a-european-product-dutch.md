@@ -91,7 +91,7 @@ Let ook op datumnotaties: `03/04/2027` is in Nederland 3 april 2027, maar in de 
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in financiële en ERP-software) auditen en herstructureren we geldopslag, btw-berekeningen en getalsopmaak tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw financiële logica met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw cijfers kloppen tot op de cent.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De Factuur Die Altijd Één Cent Afweek
 

@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een Niet-Technische Oprichter Migreert Van Firebase Naar Supabase Zonder Downtime"
+Titel: "Case Study: Een Niet-Technische Oprichter Migreert Van Firebase Naar Supabase Zonder Downtime"
 Trefwoorden: Firebase naar Supabase migratie, databasemigratie SaaS, relationele datamigratie, NoSQL naar PostgreSQL migratie, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: AI-Native Oprichter (Niet-technisch)
 ---
 
-# Praktijkvoorbeeld: Een Niet-Technische Oprichter Migreert Van Firebase Naar Supabase Zonder Downtime
+# Case Study: Een Niet-Technische Oprichter Migreert Van Firebase Naar Supabase Zonder Downtime
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een Niet-Technische Oprichter Migreert Van Firebase Naar Supabase Zonder Downtime",
+  "headline": "Case Study: Een Niet-Technische Oprichter Migreert Van Firebase Naar Supabase Zonder Downtime",
   "description": "Hoe een niet-technische oprichter van een evenemententicketing-platform in Almere 12.000 gebruikersrecords en complexe relationele tickethiërarchieën migreerde van Firebase Firestore naar Supabase PostgreSQL, zonder één actieve transactie te laten vallen.",
   "author": {
     "@type": "Organization",

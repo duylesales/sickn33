@@ -73,7 +73,7 @@ Het Launch & Grow-pakket van [LaunchStudio](https://launchstudio.eu/nl/#calculat
 
 [Beschrijf uw project en ontvang binnen één werkdag een realistische inschatting van uw infrastructuurkosten](https://launchstudio.eu/nl/#contact) — vóórdat u moet gissen naar wat een vertienvoudiging van uw gebruikersaantal u werkelijk gaat kosten.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een technisch solo-oprichter in actie: De factuur die van de ene op de andere dag verdrievoudigde
 

@@ -58,7 +58,7 @@ Als u overstapt van per-token API-prijzen naar self-hosted inference, is de GPU-
 
 LaunchStudio wordt geëxploiteerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 en geleid door Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink het verwoordt: *"We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring in precies dat vakgebied."* Door "Nederlands management te combineren met Vietnamees meesterschap", onderhoudt Manifera hoofdkantoren in **Amsterdam, Nederland** (Herengracht 420), een Aziatische hub in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minh-stad, Vietnam** (Pho Quang Street), met enterprise-klanten waaronder Vodafone en TNO. Via LaunchStudio configureren en stemmen senior engineeringteams uw GPU-inference-infrastructuur af — serving, autoscaling, monitoring en capaciteitsplanning — rondom het daadwerkelijke verkeerspatroon van uw product, binnen 1 tot 3 weken, zonder een rebuild van uw bestaande applicatie. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/nl/#contact) of bekijk hoe het [maatwerk software-ontwikkelteam van Manifera](https://www.manifera.com/services/custom-software-development/) inference-infrastructuur aanpakt voor AI-native producten.
 
-## Echt Voorbeeld
+## Echt voorbeeld
 
 ### Een AI-native Founder in Actie: Een Gereserveerd GPU-cluster Draaiend op 28% Benutting
 

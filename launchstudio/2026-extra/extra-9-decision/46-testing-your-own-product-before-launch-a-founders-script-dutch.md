@@ -115,7 +115,7 @@ Negentig minuten, zes gerichte tests, geen technische kennis vereist — en een 
 
 Doorloop het script en stuur ons uw lijst met bevindingen — wij geven u kosteloos direct inzicht in welke punten echte lanceerblokkades vormen en welke rustig kunnen wachten.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Oprichter in Actie: De Lekkende PDF
 

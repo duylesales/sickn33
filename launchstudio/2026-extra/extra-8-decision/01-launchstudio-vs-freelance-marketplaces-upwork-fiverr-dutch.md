@@ -57,8 +57,7 @@ In plaats van te vertrekken vanuit een taakomschrijving van het ene defect dat u
 
 [Vraag een vaste prijsofferte aan vóór uw volgende freelance-opdracht](https://launchstudio.eu/nl/#contact) — een kort verkennend gesprek vertelt u binnen enkele minuten of de kwetsbaarheid van uw prototype een snelle fix vereist of iets diepers.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in Actie: Drie Freelancers Verder, Nog Steeds Niet Opgelost
 
 Daniel Verhoeven, een legal-operations consultant in Eindhoven, bouwde met Bolt ClauseCheck: een AI-tool die risicovolle clausules in leverancierscontracten signaleert. Toen vroege bètatesters meldden dat de app af en toe geüploade contracten van het ene bedrijf aan het andere toonde, plaatste Daniel de bug op Upwork en huurde hij een freelancer in om dit te verhelpen. Die freelancer repareerde het specifiek gemelde symptoom — maar drie weken later dook er een ander datalek tussen accounts op, in een deel van de app dat door de eerste reparatie niet was geraakt. Daniel huurde een tweede freelancer in, en vervolgens een derde. Ieder van hen loste de individuele bug op die voor hen lag, terwijl het onderliggende structurele patroon — autorisatiecontroles die inconsistent aanwezig waren over verschillende delen van de codebase — onaangeroerd bleef.

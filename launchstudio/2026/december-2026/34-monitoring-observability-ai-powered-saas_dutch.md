@@ -82,6 +82,16 @@ Zodra de drie observability-lagen zijn ingericht, is de volgende praktische uitd
 
 **Herijk drempelwaarden periodiek.** Een drempel die logisch was bij 50 gebruikers veroorzaakt constante valse meldingen bij 5.000 gebruikers. Behandel alert-drempels als configuraties die elk kwartaal geëvalueerd moeten worden.
 
+### De Drie Pijlers van Volledige Observability voor AI SaaS
+
+Een professionele observability-inrichting voor moderne AI-apps omvat:
+1. **Gecentraliseerde Foutopsporing (Sentry / Bugsnag):** Realtime signalering van unhandled promise rejections, frontend crashes en gefaalde API-aanroepen met volledige stack traces en gebruikerscontext.
+2. **Gedistribueerde Tracing (OpenTelemetry):** Visualiseer de exacte tijdlijn van elk gebruikersverzoek: van de Next.js frontend tot de database-query en de externe LLM-aanroep, inclusief netwerk-latency.
+3. **Inference- en Token-Metrics:** Monitor real-time token-consumptie, kosten per gebruiker, cache hit rates en rate limit marges om budgettaire verrassingen proactief te voorkomen.
+
+- **Proactieve Uptime SLA Notificaties:** Koppel uw statuspagina via webhooks aan Slack en PagerDuty, zodat uw technische team binnen 60 seconden wordt gealarmeerd bij haperende API-endpoints.
+- **Gebruikersgebaseerde Sessie-Replay:** Gebruik tools zoals LogRocket of Sentry Replay om exact te zien welke gebruikersinteractie voorafging aan een gemelde crash.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De verborgen kwaliteitsdaling opgemerkt dankzij directe feedback

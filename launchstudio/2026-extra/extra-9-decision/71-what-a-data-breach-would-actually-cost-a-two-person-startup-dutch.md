@@ -65,7 +65,7 @@ De engineers van [Manifera hebben meer dan 160 softwareprojecten opgeleverd](htt
 
 [Beschrijf uw huidige technische inrichting en wij vertellen u binnen één werkdag welke kwetsbaarheden daadwerkelijk openstaan](https://launchstudio.eu/nl/#contact) — de meeste oprichters zijn verrast over hoe concreet en snel oplosbaar de lijst met beveiligingspunten blijkt te zijn.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De 'near-miss' van een tweepersoonsteam: De storage bucket die negen dagen openstond
 

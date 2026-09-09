@@ -151,7 +151,7 @@ Die afweging vormt het bestaansrecht van [LaunchStudio](https://launchstudio.eu/
 
 Wilt u een second opinion vóórdat u knopen doorhakt? Plan een korte afstemming in en leg uw meest complexe poort aan ons voor. Wij vertellen u eerlijk of dit een kwestie van een weekend werk is of een omvangrijker traject vergt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Zeven poorten, twee tekortkomingen, één kostbaar afgewend incident
 

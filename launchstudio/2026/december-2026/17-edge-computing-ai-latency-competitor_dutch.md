@@ -90,6 +90,27 @@ Een uitstekende richtlijn: minder dan 100 ms voor verbinding en authenticatie, m
 **Rekening houden met gekoppelde AI-stappen (Chaining):**  
 In meervoudige AI-workflows vermenigvuldigen vertragingen zich. Drie opeenvolgende AI-aanroepen van elk 800 ms voelen voor de gebruiker als bijna 2,4 seconden doodse stilte, tenzij tussenstappen zichtbaar worden gemaakt (*"Document analyseren..."*, *"Aanbevelingen genereren..."*).
 
+### Architectuur van Edge Caching en Vector Retrieval
+
+Om de time-to-first-token (TTFT) onder de 300 milliseconden te houden, volstaat een traditionele centrale serveropzet niet meer. Door gebruik te maken van edge runtime-omgevingen zoals Cloudflare Workers of V8 isolates kunnen prompts en validatielogica binnen 15 milliseconden van de eindgebruiker worden afgehandeld.
+
+```typescript
+// Voorbeeld van Edge Cache-controle voor semantische prompts
+export async function handleRequest(request: Request, env: Env): Promise<Response> {
+  const cacheKey = await generatePromptHash(request);
+  const cachedResponse = await env.EDGE_KV.get(cacheKey);
+  if (cachedResponse) {
+    return new Response(cachedResponse, {
+      headers: { 'X-Cache-Status': 'HIT', 'Content-Type': 'application/json' }
+    });
+  }
+  // Fallback naar geoptimaliseerde streaming upstream
+  return streamLLMResponse(request, env, cacheKey);
+}
+```
+
+Dergelijke edge-architecturen verminderen database overhead en verlagen api-verbruikskosten met meer dan 40 procent.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Van 8 seconden laadtijd naar directe weergave

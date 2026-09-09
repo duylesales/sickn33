@@ -54,6 +54,12 @@ Rate is the most visible negotiating point and the one with the least room to mo
 
 If you're structuring a new vendor negotiation, Manifera's [contact page](https://www.manifera.com/contact-us/) is a reasonable place to start a conversation about how contract terms, not just rate, get structured on a dedicated-team or project engagement.
 
+## The Redline Priority Stack: Where to Spend Negotiating Capital
+
+Negotiating capital is finite — a vendor will concede on some points readily and dig in on others, so sequence redlines by value-per-unit-of-pushback rather than working through the contract in document order. In practice, the stack that extracts the most total value looks like: (1) termination-for-convenience notice, pushing from a vendor-drafted 90 days down toward 30-45 days, which typically meets minimal resistance since it costs the vendor nothing until you actually exercise it; (2) IP assignment timing, moving from "upon full payment" to "upon creation or delivery," closing a leverage gap that only matters in a dispute but costs the vendor nothing to concede upfront; (3) liability cap, pushing from a vendor-template default (often capped at fees paid in the prior three months) toward a cap tied to actual engagement value or a multiple of annual fees; (4) auto-renewal, converting passive renewal into active reaffirmation or a benchmarked rate review; and only then (5) day rate, where realistic movement is typically 3-8% off an initial quote in a genuinely competitive process.
+
+Warranty and defect remediation terms deserve a specific ask often skipped entirely: a defined post-delivery warranty period (30-90 days is standard) during which defect fixes are provided at no additional cost, distinct from new-feature change requests. A vendor contract silent on this treats every post-launch bug fix as billable work, which is a meaningfully different cost profile than one with a warranty window built in.
+
 ## Frequently Asked Questions
 
 ### What's the biggest mistake procurement teams make in vendor negotiations?
@@ -71,6 +77,18 @@ Termination-for-convenience notice periods, IP assignment language, liability ca
 ### Does vendor timing, like quarter-end, actually affect negotiation outcomes?
 Yes. Vendors closing a fiscal quarter with unmet targets or visible bench capacity have real incentive to move on price and contract speed that isn't present when their pipeline is full. This isn't volunteered information, but it's often inferable from how quickly a vendor proposes to start and how flexible they are on team composition.
 
+### (Scenario: a vendor declines to disclose their historical change-request rate on comparable engagements) How should a procurement lead respond when a vendor won't share change-request or scope-creep history?
+Treat the refusal as informative rather than pushing past it, and weight it in the vendor comparison the same way you'd treat an unaudited financial statement in a due diligence process. A vendor confident in their scoping discipline typically has this number readily available and is willing to share it, since it's a competitive advantage for them, not a liability.
+
+### (Scenario: only one vendor is realistically qualified for a specialized engagement, eliminating competitive leverage) What negotiating leverage remains when a genuine multi-vendor competitive process isn't possible?
+Shift leverage from competition to structure: push harder on payment terms, milestone-gated payments tied to acceptance criteria, and a shorter initial contract term with an explicit renewal negotiation point, since these remain negotiable even without a competing bid. A sole-source vendor still has incentive to win a strong reference and a renewal, which is a different but real form of leverage.
+
+### (Scenario: negotiating what happens to post-launch bugs discovered after final payment) What warranty terms should a procurement lead request for defects found after delivery?
+Ask for a defined post-delivery warranty period, typically 30-90 days, during which defect fixes are provided at no additional cost and distinct from billable new-feature change requests. A contract silent on this treats every post-launch bug as billable work, which changes the effective total cost of the engagement.
+
+### (Scenario: a vendor offers a favorable rate now but the buyer worries about being overcharged relative to future clients) Is a most-favored-nation or rate-benchmarking clause worth negotiating into a multi-year vendor contract?
+It's worth requesting on any engagement running two years or longer, since it contractually protects against the vendor's rates drifting favorably for new clients while an existing account stays anchored to an aging number. Vendors resist this clause more than most, which is itself a signal of how much pricing flexibility they're keeping in reserve for future negotiations.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -80,7 +98,11 @@ Yes. Vendors closing a fiscal quarter with unmet targets or visible bench capaci
     {"@type": "Question", "name": "Are payment terms actually negotiable, or is 30 days standard?", "acceptedAnswer": {"@type": "Answer", "text": "Payment terms are genuinely negotiable and often more flexible than rate. Vendors managing their own payroll cycles will sometimes trade a rate concession for faster payment, or grant longer terms for a multi-year commitment, since predictable revenue is worth more than any single invoice's timing."}},
     {"@type": "Question", "name": "Why do auto-renewal clauses favor the vendor?", "acceptedAnswer": {"@type": "Answer", "text": "Because the operational cost of exercising a termination right is high enough that most buyers let renewals pass without renegotiating even when market rates have shifted. Negotiating active reaffirmation or a built-in rate review prevents pricing from calcifying."}},
     {"@type": "Question", "name": "Which non-rate contract clauses carry the most hidden value?", "acceptedAnswer": {"@type": "Answer", "text": "Termination-for-convenience notice periods, IP assignment language, liability caps, and GDPR data processing terms routinely carry more total value than the last few percentage points of rate negotiation, while receiving far less negotiating attention."}},
-    {"@type": "Question", "name": "Does vendor timing, like quarter-end, actually affect negotiation outcomes?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Vendors closing a fiscal quarter with unmet targets or visible bench capacity have real incentive to move on price and contract speed, inferable from how quickly they propose to start and how flexible they are on team composition."}}
+    {"@type": "Question", "name": "Does vendor timing, like quarter-end, actually affect negotiation outcomes?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Vendors closing a fiscal quarter with unmet targets or visible bench capacity have real incentive to move on price and contract speed, inferable from how quickly they propose to start and how flexible they are on team composition."}},
+    {"@type": "Question", "name": "How should a procurement lead respond when a vendor won't share change-request or scope-creep history?", "acceptedAnswer": {"@type": "Answer", "text": "Treat the refusal as informative and weight it in the vendor comparison the way you'd treat an unaudited financial statement, since a vendor confident in their scoping discipline typically has this number available and shares it willingly."}},
+    {"@type": "Question", "name": "What negotiating leverage remains when a genuine multi-vendor competitive process isn't possible?", "acceptedAnswer": {"@type": "Answer", "text": "Shift leverage from competition to structure: push harder on payment terms, milestone-gated payments tied to acceptance criteria, and a shorter initial contract term with an explicit renewal negotiation point, all of which remain negotiable without a competing bid."}},
+    {"@type": "Question", "name": "What warranty terms should a procurement lead request for defects found after delivery?", "acceptedAnswer": {"@type": "Answer", "text": "Ask for a defined post-delivery warranty period, typically 30-90 days, during which defect fixes are provided at no additional cost and kept distinct from billable new-feature change requests."}},
+    {"@type": "Question", "name": "Is a most-favored-nation or rate-benchmarking clause worth negotiating into a multi-year vendor contract?", "acceptedAnswer": {"@type": "Answer", "text": "It's worth requesting on any engagement running two years or longer, since it protects against the vendor's rates drifting favorably for new clients while an existing account stays anchored to an aging number."}}
   ]
 }
 </script>

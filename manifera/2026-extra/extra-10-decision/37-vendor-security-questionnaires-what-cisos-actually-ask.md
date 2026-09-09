@@ -54,6 +54,14 @@ Use the standardized questionnaire (CAIQ, SIG, or VSA depending on your sector) 
 
 Manifera maintains documented security practices and can provide evidence-backed answers to vendor security questionnaires as a standard part of client onboarding, not as a scramble triggered by the first request. If your organization needs a development partner ready to withstand real due diligence rather than just complete a form, our [about us](https://www.manifera.com/about-us/our-way-of-working/) page details how governance is built into daily delivery practice.
 
+## Scoring a Response: A Practical Weighting Model
+
+Not every question on a vendor questionnaire deserves equal weight in the final risk decision, and treating a 300-question CAIQ as a flat pass/fail count produces a distorted picture. A practical model weights questions into three tiers: gating questions (encryption at rest and in transit, breach notification commitment, sub-processor disclosure) where a "no" or unqualified answer should stop the evaluation regardless of the aggregate score; high-weight questions (access control specifics, incident response evidence, patch cadence) that materially move the risk score; and low-weight questions (policy documentation existence, training program existence) that indicate maturity but rarely predict actual incidents on their own.
+
+Score each tier separately rather than blending into one number — a vendor scoring 95% overall but failing a gating question has a materially different risk profile than a vendor scoring 80% with no gating failures, and a single blended score hides that distinction entirely. Recalculate the score after evidence review, not just after the questionnaire, since self-attested answers routinely score higher than what evidence supports; a 15-20 point gap between self-attested and evidence-verified scores is common enough to expect, not treat as unusual.
+
+Document the weighting model itself before sending the first questionnaire, so scoring stays consistent across vendors evaluated months apart by different team members.
+
 ## Frequently Asked Questions
 
 ### What's the difference between CAIQ, SIG, and VSA vendor questionnaires?
@@ -76,6 +84,22 @@ It's the risk introduced by a vendor's own vendors — sub-processors and infras
 
 Asking a vendor to walk through their last actual security incident — what happened, how long detection took, and what changed afterward — forces a concrete answer that a generic, hypothetical response can't fake. A vendor claiming zero incidents ever occurred, at any meaningful scale, is itself worth probing further.
 
+### (Scenario: a vendor refuses to answer customized follow-up questions beyond the standard form) How should a Security Lead handle a vendor that won't go past the standardized questionnaire?
+
+Treat outright refusal as a scored risk factor on its own, separate from the content of any answer given — a vendor confident in its actual posture rarely resists reasonable, specific follow-up. Offer a narrower, time-boxed set of the highest-priority gating questions if the full follow-up is being resisted on effort grounds, since that concession still surfaces whether the resistance is about bandwidth or about not wanting to answer.
+
+### (Scenario: evaluating a small offshore development vendor without a SOC 2 or ISO 27001 certification) How do you assess security posture when a vendor has no formal certification to point to?
+
+Shift the evaluation toward direct evidence over certification proxies: request their actual access control configuration, patch cadence data, and a walkthrough of how a specific client's data is isolated from others, rather than accepting the absence of a certificate as automatically disqualifying. Many capable smaller vendors haven't pursued formal certification due to cost, but a vendor that also can't produce underlying evidence when asked directly has a real gap, not just a paperwork gap.
+
+### (Scenario: a questionnaire response conflicts with a public breach disclosure or news report about the vendor) How should that discrepancy be handled?
+
+Raise it directly and specifically rather than treating it as disqualifying on its own — ask the vendor to reconcile the specific claim in their questionnaire with the specific public disclosure, and evaluate the quality and candor of that reconciliation as much as the original discrepancy. A vendor that responds with a clear, specific account of what happened and what changed is often a safer choice than one who was never tested by an incident at all.
+
+### (Scenario: re-assessing an existing vendor at annual contract renewal) How should the renewal questionnaire differ from the one used at initial onboarding?
+
+Focus the renewal round on delta questions — what has changed since the last assessment (new sub-processors, infrastructure migrations, personnel or ownership changes, any incidents) — rather than re-running the full standardized form from scratch. Re-request updated evidence with current dates specifically, since a SOC 2 report or pentest summary that was current at onboarding may now be stale enough to no longer reflect the vendor's actual posture.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -85,7 +109,11 @@ Asking a vendor to walk through their last actual security incident — what hap
     {"@type": "Question", "name": "Why is a questionnaire completed entirely with \"Yes\" answers a warning sign?", "acceptedAnswer": {"@type": "Answer", "text": "Real security programs have gaps, and a vendor unwilling to disclose any, or to qualify answers with 'partially' or specific scope limitations, is either not being candid or hasn't rigorously assessed their own posture enough to find the gaps. A questionnaire completed suspiciously fast with uniform positive answers deserves more scrutiny, not less."}},
     {"@type": "Question", "name": "What evidence should a CISO request beyond the standardized questionnaire itself?", "acceptedAnswer": {"@type": "Answer", "text": "The actual SOC 2 report with auditor exceptions noted, a redacted penetration test executive summary from the last twelve months, the current sub-processor list, and patch management metrics such as time-to-patch for critical vulnerabilities. Evidence should be tied to a recent time period — an old report with no bridge letter covering the gap tells you little about current controls."}},
     {"@type": "Question", "name": "What is fourth-party risk and why do standard questionnaires miss it?", "acceptedAnswer": {"@type": "Answer", "text": "It's the risk introduced by a vendor's own vendors — sub-processors and infrastructure providers whose failures become your risk indirectly. Standard questionnaires focus on the vendor's own controls and rarely probe how those third parties are assessed, leaving a real, often invisible risk concentration unaddressed."}},
-    {"@type": "Question", "name": "What follow-up question reveals more than \"do you have an incident response plan\"?", "acceptedAnswer": {"@type": "Answer", "text": "Asking a vendor to walk through their last actual security incident — what happened, how long detection took, and what changed afterward — forces a concrete answer that a generic, hypothetical response can't fake. A vendor claiming zero incidents ever occurred, at any meaningful scale, is itself worth probing further."}}
+    {"@type": "Question", "name": "What follow-up question reveals more than \"do you have an incident response plan\"?", "acceptedAnswer": {"@type": "Answer", "text": "Asking a vendor to walk through their last actual security incident — what happened, how long detection took, and what changed afterward — forces a concrete answer that a generic, hypothetical response can't fake. A vendor claiming zero incidents ever occurred, at any meaningful scale, is itself worth probing further."}},
+    {"@type": "Question", "name": "How should a Security Lead handle a vendor that won't go past the standardized questionnaire?", "acceptedAnswer": {"@type": "Answer", "text": "Treat outright refusal as a scored risk factor on its own — a vendor confident in its actual posture rarely resists reasonable, specific follow-up. Offer a narrower, time-boxed set of the highest-priority gating questions if the full follow-up is resisted on effort grounds, to surface whether the resistance is about bandwidth or about not wanting to answer."}},
+    {"@type": "Question", "name": "How do you assess security posture when a vendor has no SOC 2 or ISO 27001 certification?", "acceptedAnswer": {"@type": "Answer", "text": "Shift the evaluation toward direct evidence over certification proxies: actual access control configuration, patch cadence data, and a walkthrough of how a specific client's data is isolated. Many capable smaller vendors haven't pursued formal certification due to cost, but one that also can't produce underlying evidence when asked has a real gap, not just a paperwork gap."}},
+    {"@type": "Question", "name": "How should a discrepancy between a questionnaire response and a public breach disclosure be handled?", "acceptedAnswer": {"@type": "Answer", "text": "Raise it directly and specifically rather than treating it as automatically disqualifying, and evaluate the quality and candor of the vendor's reconciliation as much as the original discrepancy. A vendor with a clear, specific account of what happened and what changed is often a safer choice than one never tested by an incident."}},
+    {"@type": "Question", "name": "How should a renewal questionnaire differ from the one used at initial vendor onboarding?", "acceptedAnswer": {"@type": "Answer", "text": "Focus on delta questions — new sub-processors, infrastructure migrations, personnel or ownership changes, any incidents — rather than re-running the full standardized form. Re-request updated evidence with current dates, since a SOC 2 report or pentest summary current at onboarding may now be stale."}}
   ]
 }
 </script>

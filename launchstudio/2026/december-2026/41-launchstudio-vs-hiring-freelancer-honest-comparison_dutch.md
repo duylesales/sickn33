@@ -91,6 +91,12 @@ Dit schept vooraf helderheid over de kosten en voorkomt latere discussies over d
 **6. "Kunt u een voorbeeld laten zien van een project waarbij u een bestaande codebase heeft uitgebreid, in plaats van alles te herschrijven?"**  
 Sommige freelancers hebben de neiging om bestaande code direct weg te gooien en opnieuw te beginnen. Het is goed om vooraf te weten of de freelancer in staat is binnen uw bestaande prototype te werken.
 
+### De Vergelijking: Freelancer vs. LaunchStudio Fixed-Price Hardening
+
+Zet de feiten nuchter naast elkaar voor uw pre-launch fase:
+- **Freelancer op Uurbasis:** Onvoorspelbare totale kosten, risico op overboeking bij andere opdrachtgevers, geen formele garanties en potentiële vertragingen bij ziekte of uitval.
+- **LaunchStudio Partnership:** Een vast, vooraf overeengekomen tarief, gegarandeerde doorlooptijd van 5 tot 10 werkdagen, directe inzet van ervaren senior engineers en 100% eigendomsoverdracht van code en documentatie.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: LaunchStudio voor de deadline, een freelancer voor de groei

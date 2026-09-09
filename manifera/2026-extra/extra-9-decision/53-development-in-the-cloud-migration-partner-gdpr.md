@@ -100,6 +100,19 @@ If you're weighing your options for development in the cloud and want a straight
 
 One last piece of practical advice for founders reading this while actively comparing proposals: don't ask your finalists to explain GDPR to you in the abstract. Ask them to apply it to your specific product, with your specific user base, in the same meeting. A partner who has genuinely internalized data protection principles will be able to sketch a rough answer on the spot — which regions, which safeguards, which open questions they'd still need to confirm with you. A partner who can only speak in general terms about "taking compliance seriously" is telling you, politely, that they haven't done this particular kind of work often enough to have a specific answer ready. That fifteen-minute test, done in front of you rather than delivered later as a written proposal, is often the single most reliable filter in the entire vendor selection process.
 
+## Six Line Items to Check in the Data Processing Agreement Itself
+
+Founders often stop their diligence at "did they mention GDPR," but the actual proof lives in the Data Processing Agreement (DPA), a document most non-technical founders never read closely. Before signing, confirm the DPA names these six things explicitly rather than referencing them vaguely:
+
+1. **The exact cloud region(s)**, not a generic "EU-based" statement — "AWS eu-west-1 (Ireland)" or "Azure West Europe (Netherlands)," named specifically.
+2. **Every subprocessor** touching the data, including the cloud host, any monitoring or logging tool, and any third-party API called during normal operation.
+3. **A data retention period**, stated in days or months, not "as long as necessary."
+4. **The deletion mechanism** — how a right-to-erasure request is technically fulfilled, and within what timeframe (30 days is a common standard).
+5. **A named Standard Contractual Clauses reference** if any subprocessor operates outside the EU, even for a secondary function like email delivery or analytics.
+6. **A breach notification timeline** — GDPR requires notifying supervisory authorities within 72 hours, and your contract should require the vendor to notify you well before that deadline so you have time to act.
+
+A DPA missing three or more of these is a document written to satisfy a checkbox, not to survive a real due diligence review. Ask for a redline before signing, not after your first enterprise prospect asks to see it.
+
 ## Frequently Asked Questions
 
 ### What does "development in the cloud" mean for a non-technical founder?
@@ -116,6 +129,22 @@ The upfront proposal difference is typically modest, often in the 10-20% range, 
 
 ### What happens if my company gets GDPR compliance wrong after choosing the wrong cloud partner?
 Consequences range from failed due diligence during fundraising, to lost enterprise deals when a prospective customer's legal team can't get a clear answer about data hosting, to formal fines that can reach up to 4% of global annual turnover in serious cases. Most founders encounter the business consequences — lost deals and stalled fundraising — well before any regulatory action, which is often the more immediate risk.
+
+### (Scenario: A founder's vendor sent a Data Processing Agreement that just says "data will be hosted in the EU" without naming a specific region or subprocessor list) What should I do if a vendor's Data Processing Agreement only vaguely references "EU hosting" without naming a specific region?
+
+Push back and request the exact region name, the full subprocessor list, and the retention period in writing before signing — a vague DPA is a document written to satisfy a checkbox rather than survive real due diligence. If the vendor can't produce these specifics on request, treat that difficulty itself as a signal about how the underlying infrastructure was actually built.
+
+### (Scenario: A startup uses a third-party email delivery tool and an analytics platform, both hosted outside the EU, alongside an EU-based primary cloud host) Does using a non-EU tool for something small like email delivery or analytics break GDPR compliance even if the main application is EU-hosted?
+
+It doesn't automatically break compliance, but it does require its own legal basis for the transfer, typically Standard Contractual Clauses, and it needs to be listed as a subprocessor in your DPA regardless of how minor the tool's role seems. Founders frequently overlook these secondary tools because the primary hosting decision gets all the attention.
+
+### (Scenario: A founder is preparing for their first enterprise sales call where procurement will ask about data hosting) What should I have ready if an enterprise prospect's procurement team asks for proof of GDPR-compliant hosting?
+
+Have your DPA's six line items ready to reference directly — exact region, subprocessor list, retention period, deletion mechanism, transfer safeguards, and breach notification timeline — along with a simple data flow diagram. Procurement teams are testing for specificity and readiness, not perfection, and a founder who can produce these documents in the meeting clears this hurdle far faster than one who promises to "follow up."
+
+### (Scenario: A founder is deciding whether GDPR-specialized cloud migration matters for a product with mostly US customers today but EU expansion planned next year) Is it worth paying for GDPR-specialized cloud architecture before I have any EU customers yet?
+
+Yes, if EU expansion is on your roadmap within the next year or two, since retrofitting data residency into a live application typically costs three to five times more than building it correctly from the start. Building the architecture correctly now, even before your first EU customer, avoids the far more expensive re-architecture later.
 
 <script type="application/ld+json">
 {
@@ -146,6 +175,26 @@ Consequences range from failed due diligence during fundraising, to lost enterpr
       "@type": "Question",
       "name": "What happens if my company gets GDPR compliance wrong after choosing the wrong cloud partner?",
       "acceptedAnswer": {"@type": "Answer", "text": "Consequences range from failed due diligence during fundraising, to lost enterprise deals when a prospective customer's legal team can't get a clear answer about data hosting, to formal fines that can reach up to 4% of global annual turnover in serious cases. Most founders encounter the business consequences, lost deals and stalled fundraising, well before any regulatory action, which is often the more immediate risk."}
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if a vendor's Data Processing Agreement only vaguely references \"EU hosting\" without naming a specific region?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Push back and request the exact region name, the full subprocessor list, and the retention period in writing before signing. If the vendor can't produce these specifics, treat that difficulty as a signal about how the underlying infrastructure was actually built."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does using a non-EU tool for something small like email delivery or analytics break GDPR compliance even if the main application is EU-hosted?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It doesn't automatically break compliance, but it requires its own legal basis for the transfer, typically Standard Contractual Clauses, and it needs to be listed as a subprocessor in your DPA regardless of how minor the tool's role seems."}
+    },
+    {
+      "@type": "Question",
+      "name": "What should I have ready if an enterprise prospect's procurement team asks for proof of GDPR-compliant hosting?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Have the six DPA line items ready — exact region, subprocessor list, retention period, deletion mechanism, transfer safeguards, and breach notification timeline — along with a simple data flow diagram. Procurement tests for specificity and readiness, not perfection."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is it worth paying for GDPR-specialized cloud architecture before I have any EU customers yet?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes, if EU expansion is on your roadmap within the next year or two, since retrofitting data residency into a live application typically costs three to five times more than building it correctly from the start."}
     }
   ]
 }

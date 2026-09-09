@@ -128,7 +128,7 @@ Heeft u dat weekend beschikbaar? Voer het dan zelfstandig uit. Heeft u die tijd 
 
 Wilt u weten wat uw overstap precies heeft achtergelaten? [Bekijk hoe andere oprichters van een hybride codebase naar een succesvol live product gingen](https://launchstudio.eu/nl/#proof) — en deel uw repository voor een vrijblijvende technische scan.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De vergeten Netlify-uitrol waar sinds oktober niemand naar had omgekeken
 

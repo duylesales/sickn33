@@ -7,6 +7,31 @@ Doelgroep: AI-Native Founder (niet-technisch)
 
 # Waarom AI-code "Er Klaar Uitziet" Maar Niet Veilig Is Om Te Lanceren
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Waarom AI-code \"Er Klaar Uitziet\" Maar Niet Veilig Is Om Te Lanceren",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/why-ai-code-looks-done-not-safe-to-ship"
+  }
+}
+</script>
+
+
 Iedereen zegt dat AI je hele app kan coderen. Niemand vermeldt dat "ziet er compleet uit" en "is veilig om te lanceren" antwoorden zijn op twee compleet verschillende vragen — en dat AI-gegenereerde code er specifiek goed in is om de eerste waar te laten lijken voordat de tweede überhaupt gecontroleerd is. Na genoeg van deze codebases bekeken te hebben om het patroon te zien, is het de moeite waard om precies te zijn over waarom dat gebeurt, in plaats van het als een vage waarschuwing te behandelen.
 
 ## Het Valse Gevoel Van Gereedheid, En Waarom Het Structureel Is
@@ -36,6 +61,20 @@ Dit gat dichten gaat niet over het herschrijven van wat de AI genereerde — het
 [LaunchStudio](https://launchstudio.eu/nl/) bouwt precies deze validatielaag rond jouw bestaande AI-gegenereerde frontend — het bestaande beoordelen, testen en verharden in plaats van opnieuw te beginnen, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
 
 [Laat je code beoordelen tegen een echte validatiestandaard](https://launchstudio.eu/nl/#contact) — ontdek wat "ziet er klaar uit" daadwerkelijk verbergt voordat je gebruikers dat doen.
+
+## Waar een Onafhankelijke Code Review Daadwerkelijk naar Kijkt
+
+Founders die horen "laat je code reviewen", stellen zich vaak iets vaags voor — iemand die snel door wat bestanden bladert en goedkeurend knikt. Een authentieke inspectie op productiegereedheid is aanzienlijk methodischer dan dat, en inzicht in wat er daadwerkelijk gecontroleerd wordt maakt het eenvoudiger om te beoordelen of een externe review echt waarde toevoegt of slechts oppervlakkig scant.
+
+**Structurele architectuurreview**: Volgt de codebase een consistent, modulair patroon met een duidelijke scheiding van verantwoordelijkheden, of verspreidt de bedrijfslogica zich ongecontroleerd over willekeurige frontend-componenten op een manier die toekomstige updates risicovol maakt omdat niemand met zekerheid kan voorspellen welke neveneffecten een wijziging veroorzaakt?
+
+**Audit van externe dependencies**: Elk pakket waar je applicatie op leunt, is door de AI-tool geselecteerd op basis van populariteit en relevantie voor je initiële prompt, niet noodzakelijk op actief onderhoud, bekende CVE-kwetsbaarheden of licentiecompatibiliteit met een commercieel product. Een degelijke review toetst elke dependency aan actuele beveiligingsbulletins en verwijdert overbodige bibliotheken die je aanvalsoppervlak onnodig vergroten.
+
+**Beveiliging van de datalaag**: Worden database-queries opgesteld met geparametriseerde invoer en veilige ORM-constructies, of bestaan er verborgen SQL-injectiepunten? Zijn Row-Level Security (RLS) policies op tabelsleutels daadwerkelijk geactiveerd en getest voor anonieme versus ingelogde rollen?
+
+**Audit van rate limiting en misbruikpreventie**: Bevatten kwetsbare endpoints (zoals `/api/login`, `/api/reset-password`, of interacties met betaalde LLM-modellen) strikte aanroepbeperkingen om brute-force aanvallen en onbedoelde API-kostenexplosies te voorkomen?
+
+[LaunchStudio](https://launchstudio.eu/nl/) levert onafhankelijke, diepgaande code reviews en verharding, geworteld in Manifera's 11+ jaar ervaring met enterprise-kwaliteit.
 
 ## Echt voorbeeld
 
@@ -75,3 +114,52 @@ Realistisch gezien alleen door een gebruiker die er in productie tegenaan loopt 
 ### Betekent het vinden van problemen zoals dit dat mijn AI-codeertool slecht werk heeft geleverd?
 
 Nee — het betekent dat de tool precies deed waarvoor het ontworpen is: efficiënt functionele software genereren die aan het gegeven scenario voldoet. Validatie is een aparte, aanvullende stap die alles buiten dat scenario aanpakt, geen correctie van een fout die de tool maakte.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Als ik mijn app uitgebreid persoonlijk heb getest en nooit een bug heb gevonden, betekent dat dan dat het oprecht solide is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet noodzakelijk — zoals Brams casus laat zien, oefent persoonlijk testen jouw eigen gebruikspatronen en dataformaten uit, wat mogelijk niet de volledige reeks omstandigheden vertegenwoordigt die echte gebruikers introduceren, vooral dataformaten, actiereeksen, of randgevallen die je zelf niet natuurlijk zou genereren simpelweg omdat je alleen je eigen gewoontes en je eigen data hebt om mee te testen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit \"ziet er klaar uit maar is het niet\"-probleem specifiek voor bepaalde AI-codeertools, of algemeen bij allemaal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is algemeen bij AI-codeertools, aangezien ze allemaal geoptimaliseerd zijn om efficiënt functionele, prompt-voldoende output te produceren — het gat tussen dat en geverifieerde, productieveilige output is een structureel kenmerk van hoe deze tools werken, geen fout van een specifieke tool, en beter prompten versmalt het slechts marginaal in plaats van het te dichten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat houdt een goede validatielus concreet daadwerkelijk in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het omvat doorgaans codebeoordeling tegen productiestandaarden, bewust testen voorbij het happy path door randgevallen en storingen te triggeren die de AI-tool niet is getoond, dependency-beoordeling voor beveiligingspositie en onderhoudsstatus, en het bevestigen dat beveiligingsaannames daadwerkelijk waar zijn — geverifieerd rechtstreeks tegen de API — in plaats van aangenomen op basis van hoe de interface zich gedraagt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe had ik de bug die Bram vond kunnen vinden zonder een externe review?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Realistisch gezien alleen door een gebruiker die er in productie tegenaan loopt en een verwarrende storing meldt, of door bewust te testen met data en omstandigheden buiten je eigen typische gebruik — een externe review is specifiek ontworpen om precies dit soort gat naar boven te brengen voordat een van deze minder gecontroleerde, kostbaardere ontdekkingspaden zich afspeelt bij een echte klant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Betekent het vinden van problemen zoals dit dat mijn AI-codeertool slecht werk heeft geleverd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee — het betekent dat de tool precies deed waarvoor het ontworpen is: efficiënt functionele software genereren die aan het gegeven scenario voldoet. Validatie is een aparte, aanvullende stap die alles buiten dat scenario aanpakt, geen correctie van een fout die de tool maakte."
+      }
+    }
+  ]
+}
+</script>

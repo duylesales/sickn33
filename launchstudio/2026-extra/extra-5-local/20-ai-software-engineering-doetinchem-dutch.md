@@ -94,20 +94,53 @@ Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, ziet to
 ### Wat gebeurt er nadat de audit problemen aan het licht brengt?
 LaunchStudio biedt een helder overzicht van de bevindingen en voert herstelwerkzaamheden uit als onderdeel van een traject met vaste omvang. Beschrijf uw project — we reageren binnen één werkdag met vervolgstappen.
 
-### Waarom zou een met AI gegenereerde app überhaupt een audit-trail nodig hebben?
-Elke tool die gebruikt wordt voor compliance, onderhoudsrecords of gereguleerde werkzaamheden moet doorgaans niet alleen de huidige staat van een record kunnen tonen, maar ook wie het op welk moment heeft gewijzigd. AI-tools bouwen dit zelden standaard in, omdat een demo er nooit om vraagt te bewijzen wat een record in het verleden aangaf — het wordt pas een probleem wanneer een klant of auditor de vraag rechtstreeks stelt.
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Wat controleert een AI-software-engineering audit precies?", "acceptedAnswer": { "@type": "Answer", "text": "Het beoordeelt authenticatie, autorisatie, databasebeveiliging, blootgestelde sleutels, betalingslogica, hosting en monitoring via directe testen." } },
-    { "@type": "Question", "name": "Hoe lang duurt een typische AI-software-engineering audit?", "acceptedAnswer": { "@type": "Answer", "text": "De meeste audits en herstelwerkzaamheden worden binnen een week afgerond tegen vaste prijzen vooraf." } },
-    { "@type": "Question", "name": "Is Doetinchem een veelvoorkomende locatie voor LaunchStudio's productie- en industriële technologieklanten?", "acceptedAnswer": { "@type": "Answer", "text": "Doetinchem's industriële erfgoed brengt oprichters voort die operationeel gerichte tools bouwen waar betrouwbaarheid en audit-trails uitmaken." } },
-    { "@type": "Question", "name": "Wie leidt de engineering-normen achter deze audits?", "acceptedAnswer": { "@type": "Answer", "text": "Herre Roelevink ziet toe op de ruim 11 jaar ervaring in productie-engineering die vormgeeft aan hoe deze audits zijn gestructureerd." } },
-    { "@type": "Question", "name": "Wat gebeurt er nadat de audit problemen aan het licht brengt?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio biedt een overzicht en voert herstelwerkzaamheden uit als onderdeel van een traject met vaste omvang." } },
-    { "@type": "Question", "name": "Waarom zou een met AI gegenereerde app überhaupt een audit-trail nodig hebben?", "acceptedAnswer": { "@type": "Answer", "text": "Tools voor compliance of onderhoud moeten aantonen wie wat op welk moment heeft gewijzigd. AI-tools bouwen dit zelden standaard in." } }
+    {
+      "@type": "Question",
+      "name": "Wat controleert een AI-software-engineering audit precies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het beoordeelt authenticatie, autorisatie, databasebeveiliging, blootgestelde sleutels, betalingslogica, hosting en monitoring via directe testen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt een typische AI-software-engineering audit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste audits en herstelwerkzaamheden worden binnen een week afgerond tegen vaste prijzen vooraf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Doetinchem een veelvoorkomende locatie voor LaunchStudio's productie- en industriële technologieklanten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doetinchem's industriële erfgoed brengt oprichters voort die operationeel gerichte tools bouwen waar betrouwbaarheid en audit-trails uitmaken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie leidt de engineering-normen achter deze audits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Herre Roelevink ziet toe op de ruim 11 jaar ervaring in productie-engineering die vormgeeft aan hoe deze audits zijn gestructureerd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat gebeurt er nadat de audit problemen aan het licht brengt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio biedt een overzicht en voert herstelwerkzaamheden uit als onderdeel van een traject met vaste omvang."
+      }
+    }
   ]
 }
 </script>

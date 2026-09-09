@@ -115,50 +115,42 @@ Bij voorkeur herhaald – een project dat bij de lancering voor deze controle sl
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Demo của khách hàng đã bao phủ hết các lỗi tiềm ẩn chưa?",
+      "name": "Zou een bureau moeten aannemen dat de eigen demo van een klant al grote kloven naar boven heeft gebracht?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chưa, demo của khách hàng chỉ tập trung vào luồng người dùng chính, thường bỏ qua các công cụ admin nội bộ họ tự dựng."
+        "text": "Nee – het eigen testen van een klant is van nature gecentreerd rond de werkstromen die ze persoonlijk gebruiken en waar ze om geven. Dit omvat zelden interne beheerders-tooling die ze voor hun eigen gemak hebben gebouwd."
       }
     },
     {
       "@type": "Question",
-      "name": "Lỗi hổng route admin có xuất hiện nhiều hơn ở một số AI tool nhất định?",
+      "name": "Verschijnt dit soort kloof vaker in apps gebouwd met bepaalde AI-tools?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không phụ thuộc vào AI tool, mà do thói quen làm việc solo của founder luôn nghĩ 'chỉ có mình dùng tính năng này'."
+        "text": "Het gaat minder om de specifieke tool en meer om het patroon van solo-ontwikkeling door oprichters in het algemeen – elke oprichter die alleen bouwt heeft de neiging interne tooling te bouwen met dezelfde \"alleen ik zal dit gebruiken\" aanname."
       }
     },
     {
       "@type": "Question",
-      "name": "Mô hình White-label bảo vệ mối quan hệ giữa Agency và Khách hàng như thế nào?",
+      "name": "Hoe beschermt het white-label model van LaunchStudio de relatie van een bureau met zijn klant?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Toàn bộ dịch vụ chạy dưới thương hiệu và hợp đồng NDA của Agency, khách hàng hoàn toàn không biết có bên thứ ba can thiệp."
+        "text": "Het traject draait volledig onder de eigen branding en NDA van het bureau, waarbij LaunchStudio fungeert als een onzichtbare technische partner. De klant hoeft nooit te weten dat er een derde partij bij betrokken was."
       }
     },
     {
       "@type": "Question",
-      "name": "Kinh nghiệm làm việc với Enterprise giúp ích gì cho dự án của Agency?",
+      "name": "Helpt enterprise-ervaring specifiek bij partnerwerk voor bureaus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Các tiêu chuẩn audit bảo mật của doanh nghiệp lớn được áp dụng trực tiếp để rà soát dự án bàn giao cho agency."
+        "text": "Ja – enterprise-trajecten vereisen al lang systematische controles op exact deze categorie van blootgestelde interne tooling als standaardpraktijk."
       }
     },
     {
       "@type": "Question",
-      "name": "Nên thực hiện kiểm tra bảo mật này 1 lần hay định kỳ?",
+      "name": "Moet dit soort controle één keer per project gebeuren of herhaald worden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nên lặp lại khi có tính năng mới, vì founder có thể vô tình thêm route admin không bảo mật ở các bản cập nhật sau."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quy trình kiểm tra route admin lộ kéo dài bao lâu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Thường chỉ mất vài ngày vì đây là kiểm tra danh mục route có mục tiêu rõ ràng, không kéo dài thời gian bàn giao dự án."
+        "text": "Bij voorkeur herhaald – een project dat bij de lancering voor deze controle slaagt kan later nog steeds een nieuwe interne tool of beheerdersfunctie introduceren die hetzelfde patroon herintroduceert."
       }
     }
   ]

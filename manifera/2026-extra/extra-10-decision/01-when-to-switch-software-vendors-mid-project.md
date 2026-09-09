@@ -66,6 +66,12 @@ Switching mid-project is justified when the failure is structural and repeats af
 
 If the audit points to a genuine switch, Manifera runs structured vendor transitions with parallel knowledge-transfer sprints designed to protect your roadmap rather than reset it — see our [dedicated teams model](https://www.manifera.com/services/dedicated-teams/) for how a transition-ready engagement is structured from day one.
 
+## Scoring the Switch Decision: A Risk Weighting Model
+
+CTOs who've run this call more than once tend to formalize it into a scoring rubric rather than relying on gut feel each time. Weight code custody risk at 40% of the decision score, structural delivery failure (the velocity, defect, and planned-versus-delivered signals above) at 35%, and trust or integrity signals at 25% — because a lapsed SOC 2 certification or a misrepresented status update sinks a relationship even when the numbers still look tolerable. Score each dimension 0-10 against the specific evidence: 8-10 on custody means repository access is contractually contested, not just slow to arrive; 8-10 on structural risk means the velocity decline and defect-rate spike have both held for two full sprints after a documented escalation. A weighted score above 6.5 out of 10 justifies initiating a switch immediately. A score of 4-6.5 usually points to a corrective sprint with a hard 30-day re-evaluation date instead of a transition. Below 4, the friction is almost always process, not vendor quality, and a switch would burn transition budget solving the wrong problem.
+
+Start this log the moment a vendor relationship shows its first yellow flag, not once a crisis forces the conversation — reconstructing three months of history from memory produces worse decisions than a contemporaneous score sheet. Manifera's governance reviews for clients running multi-vendor engagements use this same weighting to decide which relationship to consolidate around, rather than defaulting to whichever vendor complained less in the last steering call.
+
 ## Frequently Asked Questions
 
 ### How long does a mid-project vendor switch typically take?
@@ -82,6 +88,18 @@ Not until you have completed your access and documentation audit and identified 
 
 ### Is it cheaper to fix a struggling vendor relationship or switch entirely?
 Fixing is almost always cheaper in the short term if the root cause is process or communication rather than capability or integrity. A structured escalation with defined correction windows costs a few weeks of friction; a full switch costs 15-25% of a quarter's budget in transition overhead, so switching should be reserved for failures that a process fix cannot address.
+
+### (Scenario: vendor threatens to withhold deliverables during a payment dispute) What leverage do I have if a vendor withholds source code or deliverables mid-dispute?
+If your contract has a continuous-access clause, withholding code likely breaches it and gives you grounds for immediate remedy or termination for cause; without that clause, a source code escrow release or a demand letter citing your data processing agreement's transfer obligations is your fastest lever, since litigation moves far slower than your roadmap can tolerate.
+
+### (Scenario: vendor has been processing EU customer data under a DPA) How does a GDPR data processing agreement transfer when switching vendors mid-project?
+The outgoing vendor's DPA should include explicit transfer-out and post-transfer deletion clauses; if it doesn't, you need a documented data export and a signed deletion confirmation before revoking the outgoing vendor's access, and the incoming vendor needs its own DPA executed before any EU customer data touches their systems.
+
+### (Scenario: internal engineers are attached to the outgoing vendor's team) How do I manage engineering pushback when the team doesn't want to switch vendors?
+Separate the individuals from the organization: acknowledge that specific vendor engineers may be strong even while the vendor's structural issues — retention, oversight, reporting integrity — are what's driving the switch, and where possible negotiate to retain key individuals as direct hires or through the incoming vendor.
+
+### (Scenario: switching vendors during an active funding round) Is switching software vendors mid-project riskier during a fundraise?
+It raises diligence risk because investors will probe delivery continuity, so re-baseline your roadmap publicly before the switch rather than letting a slipped date surface unexplained during due diligence; a documented, deliberate vendor transition reads better to investors than an unexplained velocity drop.
 
 <script type="application/ld+json">
 {
@@ -126,6 +144,38 @@ Fixing is almost always cheaper in the short term if the root cause is process o
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Fixing is almost always cheaper in the short term if the root cause is process or communication rather than capability or integrity. A structured escalation with defined correction windows costs a few weeks of friction; a full switch costs 15-25% of a quarter's budget in transition overhead, so switching should be reserved for failures that a process fix cannot address."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What leverage do I have if a vendor withholds source code or deliverables mid-dispute?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your contract has a continuous-access clause, withholding code likely breaches it and gives you grounds for immediate remedy or termination for cause; without that clause, a source code escrow release or a demand letter citing your data processing agreement's transfer obligations is your fastest lever, since litigation moves far slower than your roadmap can tolerate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does a GDPR data processing agreement transfer when switching vendors mid-project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The outgoing vendor's DPA should include explicit transfer-out and post-transfer deletion clauses; if it doesn't, you need a documented data export and a signed deletion confirmation before revoking the outgoing vendor's access, and the incoming vendor needs its own DPA executed before any EU customer data touches their systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I manage engineering pushback when the team doesn't want to switch vendors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Separate the individuals from the organization: acknowledge that specific vendor engineers may be strong even while the vendor's structural issues, such as retention or reporting integrity, are what's driving the switch, and where possible negotiate to retain key individuals as direct hires or through the incoming vendor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is switching software vendors mid-project riskier during a fundraise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It raises diligence risk because investors will probe delivery continuity, so re-baseline your roadmap publicly before the switch rather than letting a slipped date surface unexplained during due diligence; a documented, deliberate vendor transition reads better to investors than an unexplained velocity drop."
       }
     }
   ]

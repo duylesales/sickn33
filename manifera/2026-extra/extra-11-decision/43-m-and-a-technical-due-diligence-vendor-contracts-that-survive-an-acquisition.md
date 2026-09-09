@@ -58,6 +58,12 @@ Manifera frequently steps into exactly this kind of post-acquisition gap — see
 
 Vendor contract risk in M&A is not a legal footnote — it's an operational and financial risk that belongs in the same diligence rigor as financial statement review, and it's one of the more tractable risks to catch because the evidence is contractual and sitting in the data room. A CFO running diligence should insist on individual change-of-control review for every material vendor contract, explicit confirmation of assignment or novation mechanics, and a concentration risk assessment of key vendor and personnel dependencies — before the purchase price is finalized, not after the first vendor exercises a termination right the diligence team never read.
 
+## Scoring Vendor Contract Risk: A Simple Tiering Model
+
+Not every flagged contract deserves the same diligence depth. Tier vendor contracts into three buckets during the review: Tier 1 (business-critical, single-source, undocumented — the core product vendor, exclusive infrastructure provider, or any relationship where fewer than two people outside the vendor understand the system) gets full change-of-control review, source code escrow verification, and a dedicated purchase-agreement remedy; Tier 2 (important but replaceable within 60-90 days, moderate documentation) gets change-of-control review and a documented transition contingency but rarely a price adjustment on its own; Tier 3 (commodity, multiple alternatives, month-to-month or short-term) gets a lighter pass-through check, mainly confirming there's no unusual termination trap.
+
+In practice, a typical mid-market software acquisition surfaces 15-40 material vendor contracts, of which 2-5 land in Tier 1 — and those 2-5 account for a disproportionate share of post-close vendor surprises. Diligence teams that spend equal time across all contracts routinely under-scrutinize the handful that actually carry deal risk. Budget roughly 60% of technical due diligence hours on vendor contracts against the Tier 1 bucket alone, even though it's typically under 15% of the total contract count — and require documented sign-off from whoever owns the purchase price model before closing on any Tier 1 contract whose change-of-control language hasn't been fully resolved.
+
 ## Frequently Asked Questions
 
 ### What is a change-of-control clause and why does it matter in M&A?
@@ -74,6 +80,18 @@ It's a third-party-held copy of source code and build documentation, releasable 
 
 ### How should unresolved vendor risk affect the deal itself?
 It should show up concretely — as a purchase price adjustment, an escrow holdback tied to successful vendor transition, specific representations and warranties giving recourse if undisclosed risk materializes, or a Transition Services Agreement giving the buyer time to build a replacement relationship. Vendor risk identified but left unaddressed in the purchase agreement structure is risk the buyer has simply chosen to absorb without compensation.
+
+### (Scenario: The seller is reluctant to share full vendor contracts before a signed LOI) How should a buyer handle vendor contract review when the target won't share full contracts pre-LOI?
+Request a redacted contract summary covering term length, termination rights, and change-of-control language specifically, even before full documents are released — most sellers will share this level of detail pre-LOI, and it's enough to flag Tier 1 candidates and build change-of-control review into the post-LOI diligence schedule rather than discovering the full risk picture late.
+
+### (Scenario: The target's key development vendor is based in a different jurisdiction than the buyer) Does vendor jurisdiction change the diligence approach?
+Yes — confirm which jurisdiction's law and courts govern the vendor contract, whether an IP assignment executed under that jurisdiction's law is enforceable the way the buyer assumes, and whether escrow or termination remedies are practically enforceable across borders; a change-of-control clause that looks routine on paper can be materially harder to act on if enforcement requires litigation in another country.
+
+### (Scenario: An earnout deal keeps the founder in place, who also personally manages the key vendor relationship) How does an earnout structure change vendor risk assessment?
+It doesn't reduce the risk, it defers it — the founder's personal relationship with the vendor is itself a key-person dependency that outlasts the earnout period, so diligence should still require documentation, escrow, and a transition plan independent of the founder's continued presence, since the founder's departure at earnout-end is a predictable event, not a remote risk.
+
+### (Scenario: The target's most critical vendor relationship has no signed contract, only invoices) What if the target's most critical vendor relationship has no formal written contract at all?
+Treat it as the single highest-priority Tier 1 item in the entire diligence process — with no written IP assignment, the buyer cannot confirm it actually owns what that vendor built, and with no change-of-control language, there's no defined outcome at all when ownership changes. Require a signed, retroactive agreement with proper IP assignment as a closing condition, not a post-close cleanup task.
 
 <script type="application/ld+json">
 {
@@ -118,6 +136,38 @@ It should show up concretely — as a purchase price adjustment, an escrow holdb
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It should show up concretely — as a purchase price adjustment, an escrow holdback tied to successful vendor transition, specific representations and warranties giving recourse if undisclosed risk materializes, or a Transition Services Agreement giving the buyer time to build a replacement relationship. Vendor risk identified but left unaddressed in the purchase agreement structure is risk the buyer has simply chosen to absorb without compensation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should a buyer handle vendor contract review when the target won't share full contracts pre-LOI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Request a redacted contract summary covering term length, termination rights, and change-of-control language before full documents are released — most sellers will share this, and it's enough to flag Tier 1 candidates and build change-of-control review into the post-LOI diligence schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does vendor jurisdiction change the diligence approach?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — confirm which jurisdiction's law and courts govern the vendor contract, whether an IP assignment executed under that jurisdiction's law is enforceable the way the buyer assumes, and whether escrow or termination remedies are practically enforceable across borders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does an earnout structure change vendor risk assessment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It doesn't reduce the risk, it defers it — the founder's personal relationship with the vendor is itself a key-person dependency that outlasts the earnout period, so diligence should still require documentation, escrow, and a transition plan independent of the founder's continued presence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the target's most critical vendor relationship has no formal written contract at all?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat it as the single highest-priority Tier 1 item in the diligence process — with no written IP assignment, the buyer cannot confirm it owns what that vendor built, and with no change-of-control language there's no defined outcome when ownership changes. Require a signed, retroactive agreement with proper IP assignment as a closing condition."
       }
     }
   ]

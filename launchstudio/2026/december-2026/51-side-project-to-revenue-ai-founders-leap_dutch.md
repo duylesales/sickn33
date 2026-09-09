@@ -68,11 +68,74 @@ Stap 2 behandelt betalingsinfrastructuur als een afgebakende taak, maar oprichte
 
 Bereken vooraf uw werkelijke AI API-kosten per gebruiker bij realistisch gebruik om te voorkomen dat u een abonnement aanbiedt dat bij uw meest actieve gebruikers verlieslatend wordt.
 
-## Belangrijkste inzichten
+### Belangrijkste inzichten
 
 - **Het is een infrastructuur-stap, geen identiteitssprong**: De kloof tussen prototype en omzet is meestal uitsluitend: authenticatie, betalingsverwerking en veilige hosting.
 - **Converteer eerst uw huidige gratis gebruikers**: Uw vroege testers en gratis gebruikers vormen uw warmste doelgroep voor de eerste omzet.
 - **Bereken de AI-kostprijs per gebruiker**: Zorg dat uw abonnementsprijs de meeschalende token-kosten van uw meest actieve gebruikers ruim dekt.
+
+### De Drie Fases van Side Project naar Schaalbare SaaS
+
+De transformatie van een vrijblijvend weekendproject naar een formeel softwarebedrijf verloopt via drie noodzakelijke technische en commerciële fasen:
+1. **Van Lokale Scripts naar Veilige Cloud-Infrastructuur:** Verplaats hardgecodeerde environment variables naar een beveiligde secret manager (zoals Vercel of Doppler) en implementeer multi-tenant Row Level Security op uw PostgreSQL-tabellen.
+2. **Van Handmatige Betaallinks naar Geautomatiseerde Facturatie:** Vervang informele betaalverzoekjes door een geautomatiseerde Stripe Checkout met webhook-afhandeling, geautomatiseerde facturen en een selfservice klantenportaal.
+3. **Van Ad-Hoc Hulp naar Formele Service Level Afspraken:** Richt uptime-monitoring en gestructureerde foutopsporing in met Sentry, zodat u storingen direct oplost vóórdat betalende klanten er hinder van ondervinden.
+
+### De Drie Technische Transities van Hobbyproject naar Commerciële SaaS
+
+De overgang van een leuk prototype naar een omzetgenererend bedrijf vergt structurele ingrepen:
+- **Echte Multi-Tenant Data-Isolatie:** Richt Row Level Security (RLS) in op databaseniveau zodat geen enkele gebruiker via API-manipulatie data van een andere organisatie kan inzien.
+- **Geautomatiseerde Betalings- en Facturatiestromen:** Koppel Stripe Billing via webhooks direct aan uw database, inclusief automatische btw-berekening voor Europese zakelijke klanten en self-service abonnementsbeheer.
+- **Uptime Monitoring & SLA-Garanties:** Implementeer realtime health checks en statuspagina's om het vertrouwen van zakelijke beslissers te winnen.
+
+### De Vier Stappen naar Commerciële Betrouwbaarheid
+
+Een hobbyproject verandert pas in een rendabel bedrijf wanneer de operationele randvoorwaarden professioneel zijn ingeregeld:
+- **Automatische Foutrapportage & Sentry Integratie:** Vang ongeziene exceptions direct op met volledige stack traces en gebruikerscontext vóórdat klanten een klacht indienen.
+- **Zakelijke Verwerkersovereenkomsten:** Lever direct bij onboarding een getekende DPA om zakelijke klanten juridische zekerheid volgens de AVG te bieden.
+- **Robuuste Webhook Retries:** Richt idempotente verwerking in voor alle Stripe- en betalingssignalen zodat abonnementsstatussen altijd synchroon lopen met uw database.
+- **Geautomatiseerde Database Backups:** Stel dagelijkse point-in-time herstelpunten in om elk risico op onherstelbaar dataverlies uit te sluiten.
+
+### Uitgebreid Implementatieplan: Van Hobbycode naar Enterprise-Grade SaaS
+
+Om van een weekendproject een solide onderneming te maken, implementeert LaunchStudio een gestructureerd technisch fundament:
+
+```typescript
+// Voorbeeld: Robuuste Server-Side Sessie- en Organisatievalidatie
+import { createServerClient } from "@supabase/ssr";
+import { cookies } from "next/headers";
+import { NextResponse } from "next/server";
+
+export async function validateOrgAccess(req: Request, orgId: string) {
+  const cookieStore = cookies();
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    { cookies: { get: (name) => cookieStore.get(name)?.value } }
+  );
+
+  const { data: { user }, error: authError } = await supabase.auth.getUser();
+  if (authError || !user) {
+    return NextResponse.json({ error: "Niet geautoriseerd" }, { status: 401 });
+  }
+
+  // Verifieer expliciet dat het lidmaatschap actief is op databaseniveau
+  const { data: membership, error: memError } = await supabase
+    .from("organization_members")
+    .select("role, status")
+    .eq("organization_id", orgId)
+    .eq("user_id", user.id)
+    .single();
+
+  if (memError || !membership || membership.status !== "active") {
+    return NextResponse.json({ error: "Geen toegang tot deze organisatie" }, { status: 403 });
+  }
+
+  return { user, role: membership.role };
+}
+```
+
+Met deze server-side controlelaag garandeert u dat geen enkele client-side manipulatie toegang kan forceren tot data van andere gebruikers. Dit vormt de absolute basis om zakelijke klanten met een gerust hart te laten betalen voor uw software.
 
 ## Echt voorbeeld
 

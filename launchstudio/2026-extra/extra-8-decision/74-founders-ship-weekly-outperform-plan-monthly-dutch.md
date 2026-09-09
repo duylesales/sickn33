@@ -44,8 +44,7 @@ Het resultaat: een oprichter die vrijdag een functie kan lanceren, zaterdag de i
 
 [Vraag ons naar de deploymentpipeline wanneer u uw offerte aanvraagt](https://launchstudio.eu/nl/#contact) — de lancering is één deployment. Alles daarna is waar uw product werkelijk groeit.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Van Kwartaalreleases naar Wekelijkse Deploys
 
 Stijn Meijer, een voormalig logistiek analist in Zwolle, bouwde VrachtSlim, een door Lovable aangedreven route-optimalisatietool voor Nederlandse bezorgbedrijven. Na LaunchStudio's eerste lancering probeerde Stijn een nieuwe functie toe te voegen — realtime ETA's voor klanten — maar liep hij tegen de deploymentmuur aan: geen staging-omgeving om de wijziging te testen, geen migratie-tooling voor de database-update, en geen vertrouwen dat deployen de bestaande functionaliteit niet zou breken.

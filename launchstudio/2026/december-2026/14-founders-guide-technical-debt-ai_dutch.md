@@ -82,6 +82,14 @@ Wanneer u een AI-tool vraagt een bepaalde richting te proberen, het resultaat af
 **Ontbrekende Type-Veiligheid bij Koppelingen**  
 Binnen één chatsessie hanteert de AI vaak consistente veldnamen, maar verliest dit over verschillende sessies heen: een veld heet `userId` in de frontend en `user_id` in de database-koppeling, waardoor data geruisloos niet doorkomt.
 
+### Pragmatisch Schuldenbeheer: De P1-tot-P4 Triage Matrix
+
+Om technische schuld beheersbaar te houden zonder de lanceersnelheid te remmen, categoriseren senior engineers technische gebreken volgens een strakke prioritering:
+- **P1 (Kritiek voor Livegang):** Onbeveiligde database-toegang (ontbrekende RLS), hardgecodeerde private API-sleutels en ontbrekende Stripe-idempotentie. Moet direct worden opgelost.
+- **P2 (Hoge Prioriteit):** Ontbrekende database-indexen op foreign keys en afwezige rate limiting op dure inference-endpoints. Veroorzaakt storingen bij de eerste verkeerspiek.
+- **P3 (Gemiddelde Prioriteit):** Inconsistente foutmeldingen in de UI en duplicatie in frontend-componenten. Kan worden opgepakt in de eerste sprint na lancering.
+- **P4 (Lage Prioriteit):** Esthetische code-refactorings en syntax-stijlafspraken die geen functionele impact hebben op prestaties of beveiliging.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Zes maanden opgebouwde AI-schuld ontward

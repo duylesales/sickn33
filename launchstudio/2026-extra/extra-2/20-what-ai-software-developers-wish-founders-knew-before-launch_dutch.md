@@ -61,6 +61,30 @@ Manifera's uithardingswerk voor authenticatie wordt geleverd via het ontwikkelin
 
 [Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
+## Verder Dan Vergrendelingen: De Volledige Checklist voor Authenticatie-Hardening
+
+Het blokkeren van een account na meerdere mislukte inlogpogingen sluit de meest directe aanvalsroute af, maar een werkelijk geharde inlogstroom pakt gelijktijdig meerdere samenhangende risico's aan die een door AI gegenereerd authenticatiesysteem standaard niet bevat.
+
+**Bouw deze beschermingslagen gecombineerd op, niet als elkaars alternatief:**
+
+1. **Snelheidsbeperking op IP-adres, naast accountvergrendeling:** Beschermt tegen aanvallers die geautomatiseerd proberen in te loggen op duizenden verschillende accounts vanaf één bron — een patroon dat accountvergrendeling alleen niet detecteert.
+2. **Een CAPTCHA of wiskundige verificatie na drie mislukte pogingen:** Voegt frictie toe voor bots zonder een legitieme gebruiker direct volledig buiten te sluiten bij een simpele typefout.
+3. **Tweefactorauthenticatie (2FA) als optie en later als standaard:** Zelfs een succesvol geraden of uitgelekt wachtwoord is niet langer voldoende zodra een tweede factor vereist is.
+4. **Automatische sessie-inactivatie bij wachtwoordwijziging:** Wanneer een gebruiker zijn wachtwoord reset, moeten alle andere actieve sessies op alle apparaten direct worden beëindigd.
+5. **Notificatie bij inloggen vanaf een nieuw apparaat of onbekende locatie:** Geeft de gebruiker direct een signaal wanneer er verdachte activiteit plaatsvindt op zijn account.
+
+**Kalibreer de frictie op basis van uw werkelijke productrisico**
+
+Een financieel platform of zorgapplicatie rechtvaardigt strengere drempels en verplichte 2FA dan een laagdrempelige hobby-app. Er is geen universele configuratie; de juiste afstelling hangt af van wat een aanvaller kan winnen bij ongeautoriseerde toegang tot uw specifieke product.
+
+**Voorkom dat bescherming verandert in een denial-of-service vector**
+
+Een systeem dat een account al na drie mislukte pogingen permanent blokkeert en handmatige helpdesk-tussenkomst eist, kan door een aanvaller kwaadwillend worden gebruikt om legitieme gebruikers structureel buiten te sluiten. Kies voor een tijdgebonden afkoelperiode (bijvoorbeeld 15 minuten) om legitieme gebruikers niet onnodig te frustreren.
+
+**Toets de wachtwoord-herstelstroom met dezelfde strengheid**
+
+Een aanvaller die bij het inlogscherm wordt geblokkeerd, wijkt vaak direct uit naar de 'wachtwoord vergeten' functie. Zorg dat ook daar rate limiting actief is en dat hersteltokens een korte geldigheid (maximaal 15 tot 30 minuten) en eenmalig gebruik hebben.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De inlog die nooit nee zei
@@ -107,50 +131,42 @@ Typisch tussen 5 en 10 mislukte pogingen binnen een bepaald tijdsbestek (bijv. 1
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Lập trình tài khoản lockout (khóa tài khoản) có khó không?",
+      "name": "Zou een ervaren backend-ontwikkelaar logica voor accountvergrendeling beschouwen als moeilijk om correct te implementeren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không khó về bản chất, nhưng cần tinh tế để tránh bị kẻ xấu lợi dụng tính năng này để cố tình khóa tài khoản người dùng thật."
+        "text": "Niet bijzonder moeilijk in isolatie, maar er zijn specifieke nuances die het waard zijn correct te krijgen – zoals het vermijden van vergrendelingslogica die zelf een manier wordt om een legitieme gebruiker kwaadwillig uit te sluiten door opzettelijk hun inlog herhaaldelijk te laten mislukken."
       }
     },
     {
       "@type": "Question",
-      "name": "Lỗi thiếu rate limit ở trang login có xuất hiện ở tất cả các AI tool không?",
+      "name": "Verschijnt deze kloof op dezelfde manier ongeacht welke AI-tool het inlogsysteem bouwde?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, Lovable, Bolt, Cursor hay v0 mặc định chỉ viết logic check username/password đúng hay sai chứ không tự động thêm rate limit."
+        "text": "Grotendeels wel – inlogeindpunten gegenereerd door Lovable, Bolt, Cursor, of v0 hebben allemaal de neiging zich te richten op het correct valideren van inloggegevens, terwijl logica voor het beperken van pogingen een aanvullende zorg is die geen van hen standaard toevoegt."
       }
     },
     {
       "@type": "Question",
-      "name": "Kinh nghiệm enterprise authentication có áp dụng được cho app nhỏ không?",
+      "name": "Vormt authenticatie-ervaring bij enterprise-klanten het werk voor een app zoals TaalSprong?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, chống dò mật khẩu (brute-force) là kỹ thuật nền tảng áp dụng cho mọi quy mô ứng dụng."
+        "text": "Ja, aangezien brute-force bescherming een fundamenteel authenticatiepatroon is in plaats van een enterprise-specifiek patroon."
       }
     },
     {
       "@type": "Question",
-      "name": "Nếu không phát hiện qua log, sự cố này sẽ dẫn tới đâu?",
+      "name": "Hoe zou deze kloof waarschijnlijk aan het licht zijn gekomen als Merel de logboeken niet had bekeken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tài khoản người dùng sẽ bị chiếm đoạt (account takeover) hoặc hosting provider sẽ phạt vì lượng traffic bất thường."
+        "text": "Meest aannemelijk via een daadwerkelijke accountinbreuk gemeld door een getroffen cursist, of een geautomatiseerde misbruikdetectie van een hostingprovider die ongebruikelijk verkeer markeert."
       }
     },
     {
       "@type": "Question",
-      "name": "Số lần thử sai bao nhiêu là hợp lý trước khi tạm khóa?",
+      "name": "Wat is een redelijke drempel voor pogingen voordat tijdelijke vergrendeling optreedt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thông thường là 5 đến 10 lần thử sai trong khoảng 15 phút, kèm theo cơ chế tạm dừng theo thời gian thay vì khóa vĩnh viễn."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Mật khẩu mạnh có đủ để chống lại tấn công brute-force không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Không đủ — mật khẩu mạnh không ngăn được tấn công dồn dập (credential stuffing) từ các kho dữ liệu bị rò rỉ trước đó."
+        "text": "Typisch tussen 5 en 10 mislukte pogingen binnen een bepaald tijdsbestek (bijv. 15 minuten), gecombineerd met een time-out in plaats van een permanente blokkering."
       }
     }
   ]

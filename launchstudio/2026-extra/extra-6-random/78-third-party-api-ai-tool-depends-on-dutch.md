@@ -39,6 +39,17 @@ De oplossing begint met een eerlijke audit: identificeer voor elke functie in uw
 
 Onze engineers gevestigd in Ho Chi Minhstad brengen precies dit soort verborgen afhankelijkheidsketen in kaart bij elke codebase die wij beoordelen, omdat het zelden duidelijk is uit het lezen van de functielijst alleen. Onze engineers hebben meer dan 160 projecten opgeleverd voor zakelijke klanten, en het in kaart brengen van afhankelijkheden zoals dit is een standaard onderdeel van het gereedmaken van een prototype voor echt gebruik. U kunt [berekenen wat een afhankelijkheidsaudit voor uw app zou kosten](https://launchstudio.eu/nl/#calculator) voordat u er op de harde manier achter komt welke dienst stilletjes cruciaal is. Voor meer over onze engineeringaanpak, zie [de diensten voor softwareontwikkeling op maat van Manifera](https://www.manifera.com/services/custom-software-development/).
 
+## Drie Risiconiveaus voor Externe Afhankelijkheden, en Hoe U Uw Eigen App Rangschikt
+
+Niet elke externe softwarebibliotheek of API-koppeling brengt hetzelfde risico met zich mee. Door uw afhankelijkheden in drie heldere risiconiveaus in te delen, brengt u focus aan in uw onderhoud en beveiliging:
+
+**Niveau 1: Bedrijfskritieke Kernintegraties (Hoog Risico).** Systemen waarbij een storing uw onderneming direct platlegt: betalingsproviders (Stripe), primaire databases (Supabase, PostgreSQL) en authenticatiediensten (Clerk, Auth0). Voor deze categorie moet u idempotente verwerking, strenge foutmonitoring, geautomatiseerde herpogingen en formele SLA's inrichten.
+
+**Niveau 2: Waardeverrijkende Diensten (Medium Risico).** Diensten die een belangrijke taak uitvoeren maar waarbij tijdelijke uitval niet direct fataal is: transactionele e-mailproviders (Postmark, Resend), AI-inferentie (OpenAI, Anthropic) en documentgeneratie. Zorg voor asynchrone wachtrijen zodat een hapering bij de provider niet leidt tot time-outs voor uw gebruikers.
+
+**Niveau 3: Cosmetische en Ondersteunende Bibliotheken (Laag Risico).** Hulpmiddelen voor datumformattering, iconen of animaties. Het risico zit hier niet in operationele uitval, maar in verouderde code met bekende beveiligingslekken. Houd deze categorie slank en update ze periodiek via `npm audit`.
+
+Door uw applicatie langs deze drie niveaus te structureren, weet u exact waar u redundancy en vangrails moet inbouwen en waar u met minimale middelen kunt volstaan.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de melding die afhankelijk was van een vreemde
@@ -85,11 +96,46 @@ Ja, het toevoegen van een terugvalprovider en storingslogging is doorgaans addit
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why would an AI coding tool bundle in a third-party API I never chose?", "acceptedAnswer": { "@type": "Answer", "text": "The tool reaches for whichever provider pattern is most common in its training data when generating a feature, without surfacing that choice to you." } },
-    { "@type": "Question", "name": "How would I find out which third-party services my app actually depends on?", "acceptedAnswer": { "@type": "Answer", "text": "By auditing every feature that reaches outside your own codebase and identifying the specific service handling it, not just relying on the feature name." } },
-    { "@type": "Question", "name": "What's the actual risk if I don't check this?", "acceptedAnswer": { "@type": "Answer", "text": "A hidden dependency failing silently with no fallback and no error message, meaning the feature appears to work while quietly not functioning." } },
-    { "@type": "Question", "name": "Does Manifera map these hidden dependencies during a review?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Manifera's team, including engineers based in Ho Chi Minh City, maps every external service a codebase actually calls, including ones bundled in silently." } },
-    { "@type": "Question", "name": "Can a missing fallback be added without disrupting the existing feature?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, adding a fallback provider and failure logging is typically additive work that doesn't change how the feature behaves when the primary dependency is healthy." } }
+    {
+      "@type": "Question",
+      "name": "Waarom zou een AI-codeertool een externe API bundelen die ik nooit heb gekozen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat de tool bij het genereren van een functie zoals sms of bestandsverwerking grijpt naar welk providerpatroon dan ook het meest voorkomt in zijn trainingsdata, zonder die keuze aan u als beslissing voor te leggen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kom ik erachter van welke externe diensten mijn app daadwerkelijk afhankelijk is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door elke functie te auditen die buiten uw eigen codebase reikt en de specifieke dienst te identificeren die deze afhandelt, niet alleen te vertrouwen op de functienaam of uw eigen herinnering aan waarvoor u zich heeft aangemeld."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het daadwerkelijke risico als ik dit niet controleer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een verborgen afhankelijkheid die stilletjes faalt, zonder terugvaloptie en zonder foutmelding, wat betekent dat de functie lijkt te werken terwijl hij stilletjes niet functioneert totdat iemand het reële gevolg opmerkt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Brengt Manifera deze verborgen afhankelijkheden in kaart tijdens een review?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Engineers van het team van Manifera, waaronder degenen gevestigd in Ho Chi Minhstad, brengen elke externe dienst in kaart die een codebase daadwerkelijk aanroept, inclusief diensten die stilletjes zijn gebundeld via door AI gegenereerde templates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een ontbrekende terugvaloptie worden toegevoegd zonder de bestaande functie te verstoren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, het toevoegen van een terugvalprovider en storingslogging is doorgaans additief werk dat niet vereist dat de werking van de functie verandert wanneer de primaire afhankelijkheid gezond is."
+      }
+    }
   ]
 }
 </script>

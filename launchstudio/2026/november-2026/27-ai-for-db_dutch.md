@@ -76,6 +76,15 @@ Het doorgronden van PostgreSQL vectortuning, HNSW-grafen en PgBouncer-instelling
 3. **Wiskundige Index-Optimalisatie:** Wij configureren op maat afgestemde HNSW- en IVFFlat-indexen voor zoekresultaten onder de 50 milliseconden.
 4. **Connection Pooling:** Wij implementeren PgBouncer om pieken in agentic query's vlekkeloos op te vangen.
 
+### Database-Architectuur voor AI: Vector-Indices en Hybride Zoeken
+
+Het ontwerpen van een database die zowel traditionele relationele data als miljoenen hoogdimensionale vectoren efficiënt moet bevragen, vereist diepgaande specialistische kennis:
+1. **Keuze en Tuning van Vector-Indices:** Wij evalueren en configureren geavanceerde indexeringsmethoden zoals HNSW (Hierarchical Navigable Small World) voor bliksemsnelle similarity search of IVFFlat voor geheugenefficiënte verwerking, afgestemd op de specifieke omvang van uw dataset.
+2. **Hybride Zoeken (Hybrid Search):** Pure vector search mist vaak exacte trefwoordmatches (zoals artikelnummers of specifieke eigennamen). Wij combineren PostgreSQL pgvector met full-text search (BM25) en Reciprocal Rank Fusion (RRF) voor zoekresultaten die zowel semantisch rijk als feitelijk accuraat zijn.
+3. **Partitionering van Embeddings:** Naarmate uw vectorcollectie groeit, partitioneren we tabellen op basis van tenant-ID of tijdsvenster. Hierdoor hoeven queries slechts een fractie van de index in het werkgeheugen te laden, wat de zoeksnelheid vertienvoudigt.
+4. **Efficiënte Chunking en Metadata-Filtering:** We implementeren geavanceerde chunking-strategieën met overlappende vensters en rijke metadata-tags, waardoor filters (zoals datum, auteur of documenttype) vóór de vector-berekening worden toegepast, wat onnodige afstandsmetingen voorkomt.
+5. **Backups en Index-Reconstructie:** Vector-indices kunnen bij plotselinge crashes corrupt raken. We automatiseren regelmatige snapshots en index-revalidatiescripts, zodat uw zoekfunctionaliteit bij herstel binnen enkele minuten weer operationeel is.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: Het Juridische Platform Dat Bezwijkte Onder Zijn Eigen Data

@@ -97,7 +97,7 @@ De werkwijze van [LaunchStudio](https://launchstudio.eu/nl/#process) is explicie
 
 [Plan een kort adviesgesprek](https://launchstudio.eu/nl/#contact) voor een objectieve second opinion over de vraag of uw codebase een herbouw vereist of een aanzienlijk snellere, voordeligere refactoring.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Haarlemse SaaS-Oprichter Voorkomt een Herbouw van Zes Maanden
 

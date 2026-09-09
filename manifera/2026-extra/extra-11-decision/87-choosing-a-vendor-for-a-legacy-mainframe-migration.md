@@ -56,6 +56,10 @@ The vendors worth trusting with a mainframe migration are the ones who insist on
 
 Manifera partners with organizations on legacy modernization, including mainframe and COBOL migration strategy, data conversion, and the [custom software development](https://www.manifera.com/services/custom-software-development/) work needed to rebuild business-critical logic safely. See [our way of working](https://www.manifera.com/about-us/our-way-of-working/) for how we structure discovery before committing to a modernization strategy, or [contact us](https://www.manifera.com/contact-us/) to discuss a mainframe system that needs a real assessment, not a generic pitch.
 
+## Where This Goes Wrong: The Batch Dependency Nobody Mapped
+
+The single most common cause of a mainframe migration missing its cutover date isn't code complexity — it's a batch job dependency that existed only in an operator's head, surfacing mid-project when the modernized system's job scheduler tries to run steps in an order that breaks silently instead of failing loudly. This happens in three specific, recurring patterns. First, a downstream job reads a file the upstream job writes but arrives at a slightly different time in the new schedule, so it reads a stale or partial version instead of failing on a missing-file error — the kind of race condition that only surfaces under production timing, never in a test environment run in isolation. Second, a batch step that "always just worked" because it happened to run after a manual data-entry cutoff time nobody documented, and the modernized system's automated triggers no longer respect that implicit timing. Third, error-handling logic buried in JCL condition codes (COND parameters) that operators manually override during specific known-exception periods — end-of-quarter, holiday processing — knowledge that lives entirely in institutional memory and never makes it into a migration vendor's dependency map unless someone explicitly interviews the overnight operations team about exception handling, not just steady-state scheduling. Require the vendor to interview the actual operations staff who run these jobs nightly, not just review the JCL source, before finalizing the dependency map.
+
 ## Frequently Asked Questions
 
 ### What's the difference between rehosting and refactoring a mainframe system?
@@ -72,6 +76,19 @@ It depends on the business cycle the system supports, but for anything touching 
 
 ### How much of a typical legacy mainframe codebase is actually dead or rarely-executed code?
 Commonly 15-30% of a decades-old codebase, based on assessment findings across legacy migrations. Identifying and excluding this dead code from migration scope, rather than migrating it at the same cost per line as active logic, is one of the most reliable ways to control migration cost.
+
+### (Scenario: two million lines of COBOL with the original architects retired, matching this article's opening example) How do we recover batch scheduling knowledge that exists only in an operations team's muscle memory?
+Schedule structured interviews with the overnight operations team specifically about exception-handling scenarios — end-of-quarter processing, holiday schedules, manual condition-code overrides — not just steady-state job order, since that's where undocumented dependencies concentrate. Have the vendor cross-reference these interviews against the JCL's actual condition codes to catch cases where institutional memory and the code have quietly diverged over the years.
+
+### (Scenario: a vendor proposes rehosting as the strategy for a mainframe system whose business logic clearly needs to change, not just its infrastructure) How do we tell if this recommendation is genuinely the right call or a vendor defaulting to their easiest service line?
+Ask the vendor to walk through the specific code assessment findings that led to the rehosting recommendation, including cyclomatic complexity and business-rule branching density, and compare that against what you already know needs to change functionally. If the business logic genuinely needs to change and the vendor is still recommending rehosting, press them on why — a legitimate answer is a phased approach (rehost first for infrastructure stability, then refactor), not a dismissal of the functional change requirement.
+
+### (Scenario: CTO is comparing two vendor quotes, one 40% cheaper but silent on parallel-run duration for a settlement-critical batch job) How should this specific gap factor into vendor selection?
+Treat the missing parallel-run commitment as a direct proxy for the cheaper vendor's risk tolerance with your money, not just an omission to clarify later — request they specify parallel-run duration and reconciliation methodology in writing before comparing the two quotes as equivalent. A quote that's cheaper because it skips weeks of parallel running on a financial settlement system isn't actually a comparable bid.
+
+### (Scenario: code assessment finds a mainframe program with REDEFINES clauses giving the same bytes different meanings depending on a discriminator field, and the vendor's team has never handled this pattern before) Should this disqualify the vendor?
+Not automatically, but require them to demonstrate a specific test plan for validating REDEFINES translation against real production data before trusting their reconciliation numbers, since this is exactly the kind of structure that produces silent data corruption undetected by standard testing. If they can't articulate a concrete validation approach for this specific pattern, that's a stronger disqualifying signal than simply lacking prior exposure to it.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +132,38 @@ Commonly 15-30% of a decades-old codebase, based on assessment findings across l
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Commonly 15-30% of a decades-old codebase, based on assessment findings across legacy migrations. Identifying and excluding this dead code from migration scope, rather than migrating it at the same cost per line as active logic, is one of the most reliable ways to control migration cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: two million lines of COBOL with the original architects retired, matching this article's opening example) How do we recover batch scheduling knowledge that exists only in an operations team's muscle memory?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Schedule structured interviews with the overnight operations team about exception-handling scenarios specifically, not just steady-state job order, since undocumented dependencies concentrate there. Cross-reference these interviews against the JCL's actual condition codes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a vendor proposes rehosting as the strategy for a mainframe system whose business logic clearly needs to change, not just its infrastructure) How do we tell if this recommendation is genuinely the right call or a vendor defaulting to their easiest service line?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask the vendor to walk through the specific assessment findings behind the recommendation and compare against what you know needs to change functionally. A legitimate answer might be a phased approach; a dismissal of the functional change requirement is a red flag."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CTO is comparing two vendor quotes, one 40% cheaper but silent on parallel-run duration for a settlement-critical batch job) How should this specific gap factor into vendor selection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat the missing parallel-run commitment as a direct proxy for the cheaper vendor's risk tolerance with your money. A quote that's cheaper because it skips weeks of parallel running on a financial settlement system isn't actually a comparable bid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: code assessment finds a mainframe program with REDEFINES clauses giving the same bytes different meanings depending on a discriminator field, and the vendor's team has never handled this pattern before) Should this disqualify the vendor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not automatically, but require a specific test plan for validating REDEFINES translation against real production data before trusting their reconciliation numbers. Inability to articulate a concrete validation approach is a stronger disqualifying signal than lacking prior exposure."
       }
     }
   ]

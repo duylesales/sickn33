@@ -66,6 +66,14 @@ The right load-testing vendor is the one whose discovery process starts with you
 
 Manifera's engineering teams build performance testing into delivery for systems where production-scale reliability is a business requirement, not an afterthought before launch. If you're scoping a load testing engagement ahead of a launch or a compliance deadline, our [custom software development](https://www.manifera.com/services/custom-software-development/) team can help define what a production-representative test actually needs to cover.
 
+## Reading a Grafana/Prometheus Dashboard During a Live Test
+
+Most credible load testing vendors stream results into Grafana backed by Prometheus or InfluxDB rather than waiting for a post-test PDF, and knowing what to watch on that dashboard in real time changes how much value you get out of the engagement. The panel worth watching most closely isn't request rate or even error rate alone — it's the correlation between the two: a system holding flat p99 latency while error rate climbs is failing differently (and often more dangerously) than one where latency climbs first and errors follow, because the former usually means requests are being silently dropped or timing out upstream of where your monitoring can see them.
+
+Watch connection pool utilization and database query queue depth as leading indicators, not the application-level metrics that lag behind them by 10-30 seconds in a typical setup — by the time application error rate spikes, the actual bottleneck (a saturated connection pool, a lock contention spike) usually triggered several seconds earlier. A vendor who dashboards only application-layer metrics (response time, error rate, throughput) without infrastructure-layer correlation (CPU, connection pools, queue depth, GC pause time for JVM-based systems) is giving you the symptom without the cause, which turns the post-test remediation conversation into guesswork.
+
+Ask specifically whether the vendor's dashboard setup is reusable for your own on-call team after the engagement ends, or whether it disappears with the vendor — a lasting dashboard is a meaningfully higher-value deliverable than a one-time report.
+
 ## Frequently Asked Questions
 
 ### Why does a system pass a synthetic load test but fail under real production traffic?
@@ -82,6 +90,18 @@ A production-fidelity load test with distributed load generation, realistic user
 
 ### Do we need a load testing vendor, or can our internal team run this?
 For smaller products without complex third-party dependencies or genuinely bursty traffic patterns, an internal team running a synthetic ramp test with an open-source tool is often sufficient. A dedicated vendor earns its cost when traffic patterns are complex, third-party dependency behavior under load matters, or a compliance framework requires documented, independently validated resilience testing.
+
+### (Scenario: the product sits behind a CDN and serves users across multiple regions) How should a vendor validate CDN edge cache behavior under load, not just origin performance?
+A credible test generates load from multiple geographic points against the live edge endpoints, not just the origin server, and specifically measures cache hit ratio degradation as concurrency rises — a CDN that holds a 95% hit ratio at normal traffic can drop meaningfully under a sudden spike as cache eviction and origin-fetch contention increase together. Ask the vendor to report cache hit ratio alongside latency, since a latency spike caused by cache misses under load requires a different fix than one caused by origin compute saturation.
+
+### (Scenario: retesting after a real production incident rather than ahead of a planned launch) Should the retest reproduce the exact incident traffic pattern, or run a fresh full-scale test?
+Reproduce the specific traffic shape and failure sequence from the incident first — same burst profile, same concurrent user journey mix, same third-party dependency conditions if they were part of the original failure — since that's the only way to confirm the fix addresses the actual cause rather than a generic capacity increase. Follow the targeted retest with a broader test only if the incident review surfaced systemic issues beyond the specific failure point.
+
+### (Scenario: a payment gateway or identity provider sandbox has its own strict rate limits) How does a vendor load test realistically when the sandbox can't handle production-scale call volume?
+A mature vendor mocks the third-party dependency's response behavior, including realistic latency and periodic error injection, rather than hammering the actual sandbox past its limits, reserving a small number of real sandbox calls to validate the mock's fidelity. Ask specifically how the vendor calibrates the mock's latency distribution — a mock that always responds instantly understates how the real dependency behaves under its own load.
+
+### (Scenario: load testing is being run to satisfy a DORA resilience testing requirement) What documentation should the vendor produce beyond the standard performance report?
+Beyond p95/p99 latency and breaking-point data, DORA-oriented documentation should include the specific scenario rationale for why this traffic pattern and scale were chosen relative to actual business risk, a record of who reviewed and approved the test scope, and a remediation tracking log showing findings were addressed, not just identified. Confirm the vendor has produced this format before for a regulated client, since generic performance reports rarely satisfy a resilience-testing audit on their own.
 
 <script type="application/ld+json">
 {
@@ -126,6 +146,38 @@ For smaller products without complex third-party dependencies or genuinely burst
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "For smaller products without complex third-party dependencies or genuinely bursty traffic patterns, an internal team running a synthetic ramp test with an open-source tool is often sufficient. A dedicated vendor earns its cost when traffic patterns are complex, third-party dependency behavior under load matters, or a compliance framework requires documented, independently validated resilience testing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should a vendor validate CDN edge cache behavior under load, not just origin performance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A credible test generates load from multiple geographic points against the live edge endpoints, not just the origin server, and specifically measures cache hit ratio degradation as concurrency rises. Ask the vendor to report cache hit ratio alongside latency, since a latency spike caused by cache misses under load requires a different fix than one caused by origin compute saturation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a post-incident load test retest reproduce the exact incident traffic pattern or run a fresh full-scale test?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reproduce the specific traffic shape and failure sequence from the incident first, since that's the only way to confirm the fix addresses the actual cause rather than a generic capacity increase. Follow the targeted retest with a broader test only if the incident review surfaced systemic issues beyond the specific failure point."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does a vendor load test realistically when a third-party sandbox has its own strict rate limits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A mature vendor mocks the third-party dependency's response behavior, including realistic latency and periodic error injection, rather than hammering the actual sandbox past its limits, reserving a small number of real calls to validate the mock's fidelity. A mock that always responds instantly understates how the real dependency behaves under its own load."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What documentation should a load testing vendor produce to satisfy a DORA resilience testing requirement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beyond p95/p99 latency and breaking-point data, include the specific scenario rationale for why the traffic pattern and scale were chosen relative to actual business risk, a record of who reviewed and approved the test scope, and a remediation tracking log showing findings were addressed. Confirm the vendor has produced this format before for a regulated client."
       }
     }
   ]

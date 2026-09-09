@@ -61,8 +61,7 @@ Niets van dit alles betoogt dat aandelen-voor-advies altijd de verkeerde keuze i
 
 [Vraag een vaste prijs op voordat u iemand aandelen aanbiedt](https://launchstudio.eu/nl/#contact) — de meeste oprichters zijn verrast hoe gunstig het cashbedrag uitpakt zodra het daadwerkelijk op tafel ligt.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Het CTO-Aanbod Waar Ze Bijna Ja Op Zei
 
 Noor Farouk, oprichter van Coachdesk, een boekings- en klantbeheerplatform voor zelfstandige levenscoaches, bouwde haar eerste werkende versie in Bolt terwijl ze haar eigen coachingpraktijk in Woudenberg draaide. Op een oprichtersborrel bood een ervaren backend-engineer aan om als part-time CTO in te stappen voor acht procent aandelen, en Noor overwoog dat twee weken serieus, vooral omdat ze geen cashbudget had en het aanbod het enige pad leek dat ze zag.

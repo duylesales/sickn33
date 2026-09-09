@@ -33,48 +33,64 @@ Veel oprichters zeggen vol enthousiasme *"ja"* tegen het eerste, en laten zich s
 
 ## Vier Integratieniveaus en Wat Ze Daadwerkelijk Kosten
 
-1. **Inkomende Webhooks (*Incoming Webhooks - Het Aanbevolen Startpunt*):** De klant maakt in zijn eigen Slack- of Microsoft Teams-werkruimte een webhook-URL aan en plakt die link in de instellingen van uw software. Zodra er een gebeurtenis plaatsvindt, vuurt uw server een JSON-berichtje af. Geen OAuth, geen token-opslag, geen app-directory review, en de IT-afdeling van de klant houdt volledige controle. Dit kost een halve dag bouwen en voldoet voor **90% van alle klantwensen**.
-2. **Een Gepubliceerde OAuth App:** De klant klikt in uw dashboard op *"Koppel met Slack"*, waarna uw app kan posten in geselecteerde kanalen. Het biedt een gepolijste ervaring, maar verplicht u tot het veilig opslaan en versleutelen van workspace-tokens en het doorlopen van een formele review door Slack.
-3. **Een Interactieve Chat-App:** Knoppen om offertes direct vanuit de chat goed te keuren, interactieve formulieren en slash-commando's. Elke gebruikersklik vuurt een webhook af naar uw backend die u **binnen drie seconden** moet beantwoorden, inclusief cryptografische handtekeningverificatie. Dit is een permanent onderhoudstraject.
-4. **Hetzelfde voor Microsoft Teams:** Een compleet ander ecosysteem met eigen Microsoft Graph API-architectuur. In veel Europese sectoren (overheid, zorg, accountancy, installatietechniek en MKB) is Teams de absolute marktleider en is Slack nergens te bekennen.
+Het integreren van notificaties met zakelijke chatplatforms zoals Slack of Microsoft Teams kent vier verschillende niveaus van softwarematige complexiteit:
 
-Begin daarom vrijwel altijd met niveau 1: een universele webhook-koppeling.
+**1. Inkomende webhooks (Incoming Webhooks):** De klant maakt in zijn eigen Slack- of Teams-werkruimte een inkomende webhook-URL aan en plakt die link in uw beheerpaneel. Uw server vuurt simpelweg een HTTP POST-verzoek met een JSON-payload af naar die URL. Geen OAuth-toestemmingsschermen, geen platformreviews, geen tokenbeheer in uw database, en de IT-beheerder van de klant behoudt de volledige controle over het kanaal — wat enterprise-klanten doorgaans prefereren. Dit kost een ontwikkelaar letterlijk één middag werk, en dekt 90% van alle klantwensen direct af.
 
+**2. Een officiële Slack/Teams app met OAuth-koppeling:** De klant klikt in uw app op de knop *"Add to Slack"*, geeft toestemming via een OAuth-dialoog, en selecteert het gewenste kanaal. Dit biedt een iets geliktere gebruikerservaring, maar betekent wel dat u OAuth-tokens voor hun werkruimte moet opslaan, rekening moet houden met ingetrokken rechten, en — als u de app publiek in de Slack App Directory wilt vermelden — een streng verificatietraject moet doorlopen.
+
+**3. Een interactieve bot:** Berichten met interactieve knoppen, keuzemenu's, modals en slash-commands (zoals `/dossier status`). Elke interactie van een gebruiker in Slack stuurt direct een webhook-verzoek naar uw server, dat u binnen drie seconden cryptografisch moet verifiëren en beantwoorden. Dit is een serieuze, doorlopende architectonische verplichting met zijn eigen foutopsporing.
+
+**4. Hetzelfde feest opnieuw voor Microsoft Teams:** Wat een compleet gescheiden API, een afzonderlijke Azure Active Directory-registratie en een eigen reviewproces vereist. Voor veel Europese zakelijke dienstverleners (accountants, juristen, zorginstellingen) is Microsoft Teams echter het enige platform dat telt — Teams domineert massaal in sectoren waar Slack volkomen afwezig is.
+
+Het juiste vertrekpunt voor 95% van de vroege SaaS-producten is **niveau 1**. Het lost het probleem direct op, kost vrijwel niets aan onderhoud, en stelt de beslissing over een complexe interactieve bot uit totdat meerdere betalende klanten er expliciet om smeken.
 ## Bouw Eerst een In-App Notificatiecentrum
 
-Voordat u tijd en geld investeert in externe chatkanalen, is er een veel belangrijkere vraag:
+Voordat u tijd en energie investeert in externe chatkanalen, moet u eerst een fundamentele vraag beantwoorden: bezit uw eigen softwareapplicatie al een centrale plek waar notificaties leven?
 
-**Heeft uw applicatie zélf een centrale plek waar meldingen bewaard blijven?**
+Een betrouwbaar notificatiecentrum direct in de applicatie — een herkenbaar bel-icoontje rechtsbovenin het scherm met een overzicht van recente gebeurtenissen, gelezen en ongelezen statussen — is oneindig veel goedkoper om te bouwen en vervult een functie die geen enkele externe tool kan evenaren: **het is de officiële, permanente waarheid**. E-mails worden over het hoofd gezien in een overvolle inbox, Slack-berichten scrollen binnen een uur buiten beeld in een druk teamkanaal, maar een klant die na twee weken vakantie inlogt in uw app ziet direct exact wat er in zijn afwezigheid is gebeurd. Het maakt externe kanalen bovendien een optioneel extraatje in plaats van een kwetsbare afhankelijkheid.
 
-Een eenvoudig in-app notificatiecentrum — het vertrouwde bel-icoontje rechtsbovenin met ongelezen meldingen — is goedkoper te bouwen dan welke externe koppeling dan ook en biedt iets wat noch Slack noch e-mail kan leveren: **een blijvend historisch overzicht**.
+De logische volgorde van investeren luidt:
+1. Eerst een degelijk in-app notificatiecentrum.
+2. Vervolgens transactionele e-mailnotificaties met goede templates.
+3. Pas daarna één extern kanaal (zoals Slack-webhooks) zodra klanten daarom vragen.
 
-E-mails raken zoek en drukke Slack-kanalen scrollen razendsnel voorbij. Een teamleider die terugkomt van een week vakantie opent uw app en ziet in één oogopslag wat er tijdens haar afwezigheid is gebeurd. 
-
-De beproefde volgorde voor productontwikkeling:
-1. **In-app notificaties eerst** (de permanente waarheid).
-2. **E-mailnotificaties en dagelijkse samenvattingen (*digests*) als tweede**.
-3. **Externe chat-integraties (Slack / Teams webhooks) als derde**.
-
+Het bouwen van een Slack-integratie vóórdat u over een in-app notificatieoverzicht beschikt, leidt tot een bizar product waarbij de enige manier om te achterhalen wat er is gebeurd een extern chatprogramma is waar u zelf nul controle over heeft.
 ## Berichtontwerp: Voorkom Dat Uw Meldingen op 'Mute' Gaan
 
-Een chat-koppeling die het kanaal overspoelt met irrelevante pings wordt binnen 48 uur gedempt (*gemute*). En een gedempt kanaal is erger dan geen integratie: de klant denkt dat hij geïnformeerd wordt, maar mist in werkelijkheid alle belangrijke signalen.
+Een notificatiekanaal dat te veel ruis produceert, wordt door teamleden binnen twee dagen gedempt (*gemute*). En een gedempt kanaal is vele malen erger dan helemaal geen integratie: de klant veronderstelt immers dat zijn team proactief wordt gewaarschuwd, terwijl in werkelijkheid niemand de meldingen meer ziet.
 
-Drie ontwerpregels voor effectieve chat-notificaties:
-- **Eén bericht per betekenisvolle zakelijke gebeurtenis:** Stuur niet zes afzonderlijke pings voor zes orderregels, maar bundel de order in één overzichtelijk bericht.
-- **Voldoende context om direct te handelen:** Vermeld altijd direct: *wie*, *wat*, *welk bedrag* en *welk bedrijf*, vergezeld van een directe link naar het dossier. Een vage melding zoals *"Er is nieuwe activiteit in uw account"* is waardeloos.
-- **Slimme batching bij pieken:** Komen er binnen twee minuten tien leads binnen? Stuur dan één samenvatting: *"10 nieuwe leads ontvangen in de afgelopen 2 minuten"*.
-- **Let op privacy en AVG:** Een openbaar Slack- of Teams-kanaal is zichtbaar voor alle collega's en stagiairs in dat kanaal. Plaats geen gevoelige patiëntdata, BSN-nummers of interne marges in een gedeelde chat. Houd het bericht beknopt en plaats vertrouwelijke details achter de beveiligde inloglink.
+Drie ontwerpregels voorkomen deze notificatie-moeheid:
 
+**Eén bericht per betekenisvolle gebeurtenis, niet per individuele databasemutatie.** Een geplaatste bestelling met zes afzonderlijke orderregels is één samengesteld bericht, niet zes losse pings.
+
+**Voldoende context om direct te kunnen handelen zónder te hoeven doorklikken:** Wie heeft wat gedaan, welk dossier betreft het, om welk bedrag gaat het, en pas daarna een directe diepe link naar de applicatie. Een vaag bericht zoals *"Er is nieuwe activiteit in uw account"* vernietigt het complete nut van een chatkanaal.
+
+**Intelligente bundeling bij piekverkeer (Batching):** Tien gebeurtenissen binnen twee minuten moeten automatisch worden samengevat in één enkel overzichtsbericht, exact volgens hetzelfde batching-principe dat geldt voor e-mailnotificaties.
+
+Laat de klant daarnaast zelf kiezen welke gebeurtenissen naar het kanaal worden gestuurd, strikt gescheiden van zijn e-mailvoorkeuren. Een gezamenlijk teamkanaal wil uitsluitend belangrijke zakelijke mijlpalen zien — een nieuwe betalende klant, een getekende offerte of een grote escalatie — terwijl individuele taaktoewijzingen en herinneringen thuishoren in een persoonlijke e-mail of direct message.
+
+En waarschuw klanten over privacy: een bericht in een openbaar Slack-kanaal is zichtbaar voor élke medewerker in die werkruimte. Het posten van persoonsgegevens, klantnamen of factuurbedragen in een algemeen kanaal is een formele openbaarmaking van data. Het tonen van een minimalistisch bericht waarbij gevoelige details achter de beveiligde link blijven, is het enige verantwoorde ontwerp.
 ## Betrouwbaarheid en Storingsmonitoring
 
-Externe chatplatforms kampen met dezelfde uitdagingen als andere webhooks:
-- Verstuur berichten **altijd via een asynchrone achtergrondwachtrij**, nooit synchroon in de controller van uw webapp.
-- Respecteer de rate-limits van het platform (Slack limiteert inkomende webhooks tot circa 1 bericht per seconde per kanaal).
-- **Maak fouten direct zichtbaar:** Als een klant het Slack-kanaal verwijdert of de webhook deactiveert, geeft Slack een `404 Not Found`. Blijf niet eindeloos in stilte falen: markeer de integratie in uw database als verbroken, toon een waarschuwing in het dashboard en stuur de beheerder een e-mail.
+Externe kanalen falen op exact dezelfde manieren als webhooks, en exact dezelfde engineeringdiscipline is vereist:
+- Verzend chatberichten altijd via een asynchrone achtergrondwerker (zoals Celery of BullMQ), nooit rechtstreeks vanuit de HTTP-webrequest die de gebeurtenis veroorzaakte. Een trage reactie van Slack mag uw eigen applicatie immers nooit vertragen.
+- Implementeer automatische retries met exponentiële backoff.
+- Respecteer de rate limits van het ontvangende platform. Slack hanteert voor inkomende webhooks bijvoorbeeld een strikte limiet van circa één bericht per seconde per hook; een piek aan gelijktijdige events overschrijdt die limiet direct.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in B2B software engineering) ontwerpen we schaalbare notificatie-architecturen met in-app overzichten, e-mail-digests en webhook-integraties voor Slack en Teams tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw notificatiestrategie met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw gebruikers tijdig en relevant geïnformeerd worden.
+En bovenal: maak storingen direct zichtbaar. Een webhook-URL wordt ongeldig zodra de klant het kanaal verwijdert of de integratie uitschakelt. Het standaardgedrag in AI-prototypes is dat de server eindeloos in stilte blijft proberen en fouten logt die niemand leest. Markeer de koppeling in uw database als `broken`, toon een duidelijke melding in het dashboard van de klant en stuur een notificatiemail naar de beheerder.
 
-## Praktijkvoorbeeld
+Het bouwen van een notificatie-infrastructuur die slim bundelt, rate limits respecteert en zijn eigen werking bewaakt is standaard productiewerk. LaunchStudio, ondersteund door meer dan 11 jaar software engineering ervaring bij Manifera, bouwt betrouwbare notificatiekanalen die zakelijke teams direct omarmen. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een diepgaande technische analyse binnen één werkdag.
+## Welk Platform Kiest U (En Kiest U Er Überhaupt Eén?)
+
+Ga niet blindelings af op aannames, maar vraag uw doelgroep rechtstreeks naar hun dagelijkse werkomgeving. Slack domineert in tech-startups en softwarebedrijven, maar is nagenoeg afwezig in traditionele sectoren. Microsoft Teams is daarentegen de absolute standaard in de Europese zakelijke dienstverlening, de accountancy, de gezondheidszorg en bij overheidsinstanties. En talloze kleinere MKB-bedrijven werken simpelweg met e-mail en WhatsApp, en willen noch Slack noch Teams op hun scherm.
+
+Twee nuchtere vragen bepalen uw keuze:
+1. **Welke applicatie staat de hele dag geopend op het primaire scherm van uw klanten?** Dat is exact de plek waar realtime notificaties thuishoren.
+2. **Hoeveel klanten hebben er al concreet om gevraagd?** Eén klantverzoek is een interessant gesprek; vijf onafhankelijke verzoeken vormen pas een feature die ontwikkeltijd rechtvaardigt.
+
+En onderzoek altijd of een veel eenvoudigere oplossing niet exact hetzelfde resultaat bereikt. Een iCalendar-feed (`.ics`) voor deadlines en afspraken, of een dagelijkse samenvattingsmail die stipt om 08:00 uur 's ochtends arriveert, lost de onderliggende behoefte (*"Ik wil weten wat er gebeurt zónder steeds te hoeven inloggen"*) vaak al voor 100% op — tegen een fractie van de ontwikkelkosten, zónder platformafhankelijkheid en zónder bureaucratische reviewprocessen.
+## Echt voorbeeld
 
 ### De Zes Weken Durende Slack-App Die Door Twee Klanten Werd Gebruikt
 

@@ -63,6 +63,19 @@ Signaleert de tool alleen problemen en laat het u vervolgens over om ze op te lo
 
 Manifera brengt 120+ technici en enterprise-grade beveiligingsdiscipline naar elke beoordeling die LaunchStudio uitvoert — met onze Singapore-hub die controles coördineert die geautomatiseerde scans combineren met daadwerkelijke menselijke verificatie van autorisatie- en gegevenstoegangslogica, niet alleen patroonherkenning. Als de antwoorden van een tool op deze tien vragen u onrustig maakten, [stuur ons dan de link naar uw prototype](https://launchstudio.eu/nl/#contact) en wij vertellen u eerlijk wat een echte beoordeling zou vinden. U kunt de bredere technische discipline achter deze beoordelingen ook zien in [Manifera's projectportfolio](https://www.manifera.com/portfolio/).
 
+## Hoe U de Ontvangen Antwoorden Kunt Beoordelen en Scoren
+
+De tien vragen stellen is het makkelijke gedeelte; het interpreteren van de antwoorden is waar niet-technische oprichters doorgaans vastlopen. Een leverancier of agency antwoordt immers zelden met een helder 'ja' of 'nee' — het antwoord is vaak een overtuigend geformuleerde alinea, en zelfvertrouwen is niet hetzelfde als daadwerkelijke beveiligingsdekking. Gebruik deze driedeling om antwoorden objectief te rubriceren:
+
+**Groen: specifiek, afgebakend en eerlijk over beperkingen.** Een sterk antwoord benoemt exact wat er gecontroleerd wordt ("we verifiëren autorisatiecontroles aan de serverzijde op alle data-eindpunten, scannen wekelijks op kwetsbaarheden in afhankelijkheden en controleren git-geschiedenis op hardcoded geheimen") én geeft uit eigen beweging aan wat buiten de scope valt. Een leverancier die ongevraagd vertelt wat de software of audit *niet* dekt, levert waardevollere informatie dan iemand die beweert alles te beveiligen. Eerlijkheid over scope is het beste bewijs van een betrouwbaar proces.
+
+**Geel: technisch correct maar vaag en onvolledig.** Uitspraken zoals "ja, wij scannen op kwetsbaarheden" of "onze AI controleert uw gehele codebase" zijn niet per se onwaar — ze zijn simpelweg zo breed dat ze alles of niets kunnen betekenen. Een geel antwoord is geen reden tot onmiddellijke afwijzing, maar vereist scherpe vervolgvragen: welke specifieke kwetsbaarheden worden gezocht, en omvat "gehele codebase" ook de databaselaag en het rechtenmodel of slechts statische syntax-checks?
+
+**Rood: ontwijkend gedrag of een antwoord dat de vraag negeert.** Vraagt u expliciet naar autorisatie op rijniveau en begint het antwoord plots over TLS-versleuteling, of wordt de leverancier merkbaar defensief en minder concreet naarmate u doorvraagt, beschouw dit dan als een hard waarschuwingssignaal. Een partij met daadwerkelijke, diepgaande dekking heeft er nooit moeite mee om precies uit te leggen hoe die dekking in elkaar zit.
+
+Een bewezen werkwijze is om de antwoorden op alle tien de vragen puntsgewijs naast elkaar in een overzicht te noteren. Een verkoper kan tijdens een gesprek van twintig minuten zeer betrouwbaar overkomen terwijl er stiekem drie gele antwoorden en één rood antwoord zijn gegeven. Op papier wordt zo'n patroon direct zichtbaar. Als meer dan twee antwoorden geel of rood scoren — en met name bij vraag twee over autorisatie — moet u de 'goedgekeurde' status van de tool beschouwen als een onvolledig signaal dat een onafhankelijke controle vereist vóórdat u live gaat.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: wat de scan niet zag
@@ -109,11 +122,46 @@ Vraag precies wat er gecontroleerd is, aan de hand van de tien vragen in dit art
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is 'AI-powered security scanning' a meaningless marketing phrase?", "acceptedAnswer": { "@type": "Answer", "text": "Not meaningless, but often vague — coverage can range from thorough automated review to a simple keyword search, so specifics matter more than the label." } },
-    { "@type": "Question", "name": "What's the biggest thing automated security scans tend to miss?", "acceptedAnswer": { "@type": "Answer", "text": "Authorization gaps, since catching whether one user can access another's data requires understanding the app's specific data model." } },
-    { "@type": "Question", "name": "Should I trust a scan result without any human review?", "acceptedAnswer": { "@type": "Answer", "text": "Treat a clean automated scan as a starting point rather than a conclusion, especially for apps handling sensitive data." } },
-    { "@type": "Question", "name": "How does LaunchStudio's review differ from an automated-only scan?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineers, coordinated in part through the Singapore hub, combine automated checks with manual verification of authorization and data-access logic." } },
-    { "@type": "Question", "name": "What should I do if a security tool gives my app a clean report?", "acceptedAnswer": { "@type": "Answer", "text": "Ask what specifically was checked, and consider a manual review for anything outside that scope, particularly authorization." } }
+    {
+      "@type": "Question",
+      "name": "Is \"AI-gestuurde beveiligingsscans\" een betekenisloze marketingzin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet betekenisloos, maar vaak vaag — het kan alles beschrijven van een grondige geautomatiseerde beoordeling tot een eenvoudige zoekopdracht naar hardcoded wachtwoorden, dus de specifieke dekking doet er meer toe dan het label."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat missen geautomatiseerde beveiligingsscans meestal het meest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Autorisatiegaten — of de ene gebruiker toegang heeft tot de gegevens van een andere gebruiker — omdat het opsporen hiervan begrip vereist van het specifieke datamodel van een app, wat veel geautomatiseerde tools niet proberen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik een scanresultaat vertrouwen zonder enige menselijke beoordeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beschouw een schoon geautomatiseerd scanresultaat als een startpunt, niet als een conclusie, vooral voor alles wat gevoelige gegevens verwerkt zoals zorg, financiën of persoonlijke informatie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verschilt de beoordeling van LaunchStudio van een uitsluitend geautomatiseerde scan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De technici van Manifera, deels gecoördineerd via de Singapore-hub, combineren geautomatiseerde controles met handmatige verificatie van autorisatie- en gegevenstoegangslogica die specifiek is voor het daadwerkelijke datamodel van elke app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik doen als een beveiligingstool mijn app een schoon rapport geeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vraag precies wat er gecontroleerd is, aan de hand van de tien vragen in dit artikel, en overweeg een handmatige beoordeling voor alles wat buiten de reikwijdte van de tool viel — vooral autorisatie en patronen over meerdere bestanden."
+      }
+    }
   ]
 }
 </script>

@@ -67,6 +67,15 @@ Veel traditionele development-teams zien AI-tools als een bedreiging of proberen
 2. **Deterministische Interfaces:** Wij bouwen strikte scheidingslagen (Next.js React Server Components, Vercel AI SDK) waarin vrije AI-tekstgeneratie wordt gedwongen in veilige, type-safe datastructuren.
 3. **Continu Herarchitectureren:** Doordat AI de kosten van code schrijven minimaliseert, dalen ook de kosten van code weggooien ("disposable code"). Wij bouwen razendsnel prototypes en refactoren die direct naar robuuste enterprise-architecturen.
 
+### Onmisbare Architectuurvaardigheden voor AI-Softwareontwikkelaars
+
+Het succesvol bouwen van software met kunstmatige intelligentie vereist een specifieke combinatie van traditionele software-engineering en moderne AI-principes:
+1. **Event-Driven Architectuur en Taakwachtrijen:** Goede engineers begrijpen dat synchrone HTTP-verzoeken ongeschikt zijn voor onvoorspelbare AI-latentie en weten hoe ze asynchrone message brokers (zoals RabbitMQ of AWS SQS) moeten ontwerpen.
+2. **Gedistribueerde Tracing en Latentie-Analyse:** Het vermogen om met tools als OpenTelemetry precies te diagnosticeren welke stap in een keten (vector-retrieval, herordening, modelinferentie of parsing) voor vertraging zorgt.
+3. **Defensief API-Ontwerp:** Het bouwen van type-safe interfaces die robuust omgaan met onvolledige of ongeldige reacties van externe AI-providers zonder de gebruikerservaring te verstoren.
+4. **Kosten- en Token-Optimalisatie:** Diepgaand inzicht in prompt compression, caching-strategieën en het selecteren van het juiste model voor de juiste deeltaak om de brutomarge van de applicatie te waarborgen.
+5. **Beveiligingsbewustzijn rondom AI-Kwetsbaarheden:** Parate kennis van prompt injection, data-isolatie en privacywetgeving om vanaf de eerste regel code te bouwen volgens het principe van security-by-design.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De CTO Die Zijn 'Beste' Programmeur Verving

@@ -44,6 +44,19 @@ Niets van dit alles betekent dat chatwidgets slecht zijn — een goed verbonden 
 
 Onze technici hebben 160+ projecten opgeleverd voor enterprise-klanten, en precies dit soort live gegevens — een menu, een rooster, een voorraadfeed — verbinden met een chatbot die daadwerkelijk de werkelijkheid weerspiegelt, is standaardwerk voor het team, inclusief engineers gevestigd in Ho Chi Minh-stad, waar Manifera zijn belangrijkste ontwikkelingscentrum runt. Als uw "AI-website" niet tegen deze lijst is gecontroleerd, kunt u [praten met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) over wat een echte verbinding zou kosten. Manifera's [portfolio](https://www.manifera.com/portfolio/) omvat verschillende voorbeelden van precies dit soort live-gegevensintegratie, correct uitgevoerd.
 
+## De Drie Type Bedrijven Waar Dit Beveiligingshiaat Daadwerkelijk Klanten Kost
+
+Het verschil tussen een statisch prototype en een levende, beveiligde productie-applicatie raakt niet elk type onderneming even hard. Voor sommige simpele tools is een incidentele hapering hooguit vervelend. Er zijn echter drie specifieke categorieën van bedrijven waar dit hiaat direct leidt tot klantverloop, reputatieschade en omzetverlies:
+
+**1. B2B SaaS-oplossingen voor gereguleerde markten (Fintech, Zorg, Legal).** Zakelijke klanten in deze sectoren laten standaard een security-vragenlijst invullen vóór aankoop. Blijkt tijdens een technische audit dat autorisatie niet op databaseniveau is afgedwongen of dat klantdata niet strikt gescheiden is, dan ketst de deal onmiddellijk af. Eén enkel audit-falen kan maanden aan verkoopwerk tenietdoen.
+
+**2. Marktplaatsen en multi-vendor platforms.** Platforms waar kopers en verkopers samenkomen, verwerken gevoelige financiële transacties, provisies en privégegevens. Als verkoper A de bestellingen of marges van verkoper B kan inzien door een ID in de URL aan te passen, verliest het platform direct zijn geloofwaardigheid en riskeert het torenhoge AVG-boetes van toezichthouders.
+
+**3. Abonnement-gebaseerde diensten met gevoelige gebruikersdata.** Applicaties die persoonlijke documenten, bedrijfsstatistieken of privéberichten opslaan. Consumenten en zakelijke gebruikers vergeven veel bij een vroege startup — van een trage interface tot een ontbrekende knop — maar het lekken van privégegevens naar medegebruikers betekent direct een definitieve opzegging van het abonnement.
+
+Als uw onderneming in één van deze drie categorieën valt, is professionele 'hardening' van uw codebase geen optionele luxe voor later, maar een absolute randvoorwaarde om überhaupt commercieel van start te kunnen gaan.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de chatbot die antwoordde vanuit een menu dat niet meer bestond
@@ -90,11 +103,46 @@ Voor een enkele, goed afgebakende integratie zoals een menu- of roosterfeed, val
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "How can I tell if my website's chatbot is actually connected to live data?", "acceptedAnswer": { "@type": "Answer", "text": "Change something real in your business, like a price or an item, then ask the chatbot immediately. If it doesn't reflect the change, it's likely answering from a static snapshot." } },
-    { "@type": "Question", "name": "Is it dishonest to call a site with a static-content chatbot 'AI-powered'?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily, but it's misleading if customers assume 'AI-powered' means current. The fix is to connect the chatbot to live data so the label is accurate." } },
-    { "@type": "Question", "name": "Does LaunchStudio build chatbots from scratch or fix existing ones?", "acceptedAnswer": { "@type": "Answer", "text": "Both, but most of our work involves taking an existing chatbot built with Lovable, Bolt, or v0 and connecting it to a real, current data source." } },
-    { "@type": "Question", "name": "Where is the team that handles this kind of live-data integration work based?", "acceptedAnswer": { "@type": "Answer", "text": "Much of it runs through Manifera's engineering center in Ho Chi Minh City, alongside the broader team across Amsterdam and Singapore." } },
-    { "@type": "Question", "name": "How much does connecting a static chatbot to live data typically cost?", "acceptedAnswer": { "@type": "Answer", "text": "For a single, well-scoped integration like a menu or schedule feed, costs typically fall in the €400–€1,200 range." } }
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik zien of de chatbot van mijn website daadwerkelijk verbonden is met live gegevens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Verander iets echts in uw bedrijf — een prijs, een item, een roosterslot — en vraag de chatbot er meteen naar. Als hij de verandering niet weerspiegelt, antwoordt hij waarschijnlijk vanuit een statische momentopname in plaats van een live bron."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het oneerlijk om een site met een chatbot met statische content \"AI-powered\" te noemen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet per se oneerlijk, maar het is misleidend als klanten aannemen dat \"AI-powered\" \"actueel\" betekent — de oplossing is niet om de AI-taal te laten vallen, maar om de chatbot daadwerkelijk met live gegevens te verbinden zodat het label klopt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bouwt LaunchStudio chatbots vanaf nul of repareert het bestaande?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beide, maar het meeste van ons werk is het laatste — een chatbot nemen die al is gebouwd met Lovable, Bolt of v0 en die verbinden met een echte, actuele gegevensbron, zoals bij Niels' menu-integratie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is het team gevestigd dat dit soort live-gegevensintegratiewerk uitvoert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Veel ervan loopt via Manifera's engineeringcentrum in Ho Chi Minh-stad, naast het bredere team in Amsterdam en Singapore."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel kost het om een statische chatbot met live gegevens te verbinden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor een enkele, goed afgebakende integratie zoals een menu- of roosterfeed, vallen de kosten doorgaans in het bereik van € 400–€ 1.200, binnen LaunchStudio's standaard prijsstelling met vaste scope."
+      }
+    }
   ]
 }
 </script>

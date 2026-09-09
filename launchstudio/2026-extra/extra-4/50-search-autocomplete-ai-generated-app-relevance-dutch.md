@@ -102,6 +102,10 @@ Het is doorgaans een doelgerichte wijziging in de logica van de zoekquery en kan
 
 Alleen als elke schrijfactie naar de onderliggende gegevens – een aanmaak, bijwerking of verwijdering – ook de zoekindex bijwerkt. Anders wijkt de index stilletjes af van de database en begint de zoekfunctie verouderde of ontbrekende resultaten te retourneren, hoewel de querylogica zelf correct is.
 
+### Wat kost het implementeren van slimme fuzzy search bij LaunchStudio?
+
+Het bouwen van een typfout-tolerante zoekstroom met relevantie-ranking kost gemiddeld €850 en duurt 5 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

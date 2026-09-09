@@ -64,17 +64,19 @@ Krijgt u berichten over bugs? Noteer ze direct. Eén klant die een crash meldt v
 
 ## Wat U Als Oprichter Áltijd Zelf Moet Beantwoorden
 
-Niet elk contactmoment moet worden weggeautomatiseerd. Bepaalde gesprekken zijn waardevol *juist* omdat u de oprichter bent:
+Niet elke supportvraag moet softwarematig worden afgeweerd of geautomatiseerd. Sommige gesprekken zijn uw persoonlijke tijd als oprichter meer dan waard, puur en alleen omdat ú de oprichter bent:
 
-- **Klanten Die Willen Opzeggen:** Een persoonlijk gesprek haalt vaak direct misverstanden weg, redt abonnementen en levert de scherpste kritiek op die uw bedrijf kan krijgen.
-- **Meldingen Over Data-Integriteit:** Klanten die melden dat cijfers niet kloppen of records ontbreken. Dit is een vertrouwenscrisis waarin u in één snel, empathisch antwoord een klant voor het leven wint of verliest.
-- **Uw Allergrootste Enterprise-Klanten:** Persoonlijke aandacht voor de top-10 accounts beschermt uw belangrijkste omzet.
-- **Klanten Die Iets Proberen Wat Nog Niet Kan:** Dit zijn geen supportvragen; dit is **uw toekomstige product-roadmap** in vermomming!
+1. **Klanten die overwegen op te zeggen (Churn-risico):** Een kort, empathisch en persoonlijk gesprek herstelt vaak direct het abonnement en levert de meest ongefilterde, waardevolle productfeedback op die er bestaat.
+2. **Klanten die melden dat er iets mis is met hun data:** Dit is de categorie met het allerhoogste afbreukrisico. Het vertrouwen van de zakelijke klant wordt hier gewonnen of definitief verloren binnen één enkele reactie.
+3. **Uw grootste zakelijke klanten, te allen tijde:** De persoonlijke relatie is uw belangrijkste kapitaal, en bij deze schaal kunt u zich die persoonlijke aandacht veroorloven.
+4. **Klanten die met uw product iets proberen te doen wat de software nu nog nét niet kan:** Dit soort berichten bevatten letterlijk uw toekomstige product-roadmap, vermomd als een supportticket.
 
-*Wat u daarentegen direct moet automatiseren:* Wachtwoordresets (moet 100% self-service zijn), facturen downloaden en basisinstellingen wijzigen.
+Omgekeerd zijn er drie categorieën die u zo snel mogelijk moet oplossen met een structurele softwareaanpassing in plaats van met een e-mailreactie:
+- Wachtwoordherstel en accounttoegang (moet 100% selfservice zijn).
+- Facturen en btw-specificaties inzien en downloaden (hoort in het gebruikersdashboard).
+- "Hoe doe ik X?" (hoort na de derde herhaling als een duidelijke hint of microcopy in de interface te staan).
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in software engineering) bouwen we self-service accountmodules, geautomatiseerde facturatieportalen en in-app diagnostiek tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw support-inrichting met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat u tijd overhoudt om uw product te laten groeien.
-
+Het bouwen van robuuste selfservicepaden die routinematige supportvragen overbodig maken — wachtwoordresets, factuurtoegang, accountbeheer en data-exports — is standaard productiewerk. Het ontbreken ervan is de voornaamste reden waarom oprichters van AI-gegenereerde prototypes hun weken slijten aan het beantwoorden van repetitieve e-mails in plaats van aan groei en doorontwikkeling. LaunchStudio, ondersteund door meer dan 11 jaar software engineering ervaring bij Manifera, bouwt deze selfservice-architectuur en voorziet uw applicatie van de klantcontext die de resterende supportvragen vliegensvlug oplost. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een audit binnen één werkdag.
 ## Gezonde Grenzen Bewaken Uw Energie
 
 Veel solo-oprichters trappen in twee uitersten:
@@ -86,7 +88,22 @@ Reserveer **twee vaste momenten per dag** voor support (bijvoorbeeld om 09:30 en
 
 Een geautomatiseerde ontvangstbevestiging die duidelijk aangeeft wanneer u reageert, ontneemt 90% van de onrust.
 
-## Praktijkvoorbeeld
+## Support Is Waar Uw Product-Roadmap Vandaan Komt
+
+De mentale herformulering die goud waard is voor elke oprichter: in deze vroege fase van uw SaaS-product is uw support-inbox het meest betrouwbare, eerlijke en diepgaande marktonderzoeksinstrument dat er bestaat — en het is volkomen gratis.
+
+Analyseer uw supportberichten maandelijks als kwantitatieve en kwalitatieve data. Groepeer binnengekomen vragen in duidelijke hoofdcategorieën:
+- **Onduidelijkheid:** Klanten die niet begrijpen wat een scherm of knop doet.
+- **Defecten:** Echte technische softwarefouten of storingen.
+- **Ontbrekende functionaliteit:** Zaken die men nodig heeft om de taak af te ronden.
+- **Facturatie:** Vragen over betalingen, prijzen en abonnementen.
+
+Tel deze categorieën nauwkeurig. De statistische verdeling vertelt u direct waar uw product het zwakst is, met een directheid die geen enkele enquête ooit kan evenaren. Dit zijn immers echte gebruikers die een concreet probleem beschrijven dat ze tegenkwamen terwijl ze daadwerkelijk probeerden werk gedaan te krijgen in uw software, niet een theoretische mening die ze vormden toen iemand ernaar vroeg.
+
+Besteed speciale aandacht aan vragen die u als bouwer instinctief defensief maken, en let nauwkeurig op de exacte **terminologie** die klanten bezigen. Een discrepantie tussen de termen in uw menu's en het dagelijkse jargon van uw gebruikers is een uiterst veelvoorkomende bron van verwarring die spotgoedkoop is om te fixen — en supportgesprekken zijn de enige plek waar deze taalbarrière aan het licht komt.
+
+Het moment om een dedicated supportmedewerker aan te nemen of support te delegeren, is pas wanneer klantvragen u structureel belemmeren om het productiewerk te doen dat supportvragen überhaupt overbodig maakt. Tot die tijd is het zelf beantwoorden van uw klanten geen overhead — het is de allersnelste feedbacklus die u ooit zult bezitten.
+## Echt voorbeeld
 
 ### Zestig Procent van de Werkweek Verspild aan Vier Vragen
 

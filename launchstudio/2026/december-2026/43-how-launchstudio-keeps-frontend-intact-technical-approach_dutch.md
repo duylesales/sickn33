@@ -79,6 +79,22 @@ Het intact houden van de frontend over tientallen verschillende codebases van ve
 
 **Waarom dit essentieel is voor AI-code:** AI-tools genereren code zonder de 'tribale kennis' die een menselijk team normaal heeft over waarom een keuze is gemaakt. De adapter-laag en contract-tests vangen dit gebrek aan achtergrondkennis op door de feitelijke gedragseisen empirisch te verifiëren via tests en screenshots, waardoor het proces consistent herhaalbaar is voor code uit Lovable, Bolt, v0 en Cursor.
 
+### De Technische 'Non-Destructive' Hardening Methodologie
+
+LaunchStudio hanteert een strikt niet-destructieve werkwijze om uw bestaande frontend te beschermen:
+- **Strikte API Contract Stabiliteit:** We analyseren alle bestaande component-aanroepen en zorgen dat de vernieuwde backend exact dezelfde JSON-schemas en datastructuren retourneert.
+- **Onafhankelijke Backend Refactoring:** Wij voegen beveiliging, database-isolatie en connection pooling toe onder de motorkap, zonder dat uw visuele componenten, layouts of animaties worden gewijzigd.
+- **Visuele Regressietests:** Vóór en na elke hardening-stap verifiëren we via geautomatiseerde screenshots dat de gebruikerservaring 100% identiek blijft.
+
+- **Geen Onnodige Dependency-Upgrades:** Wij vermijden het blindelings updaten van UI-bibliotheken zoals Tailwind of Radix UI, waardoor we garanderen dat bestaande stijlen en animaties pixel-perfect behouden blijven.
+- **Dedicated Staging Preview Omgeving:** Wij leveren alle backend-verbeteringen op een aparte preview URL, zodat u de werking van uw bestaande interface zelfstandig kunt verifiëren vóór de definitieve livegang.
+
+### Veilige Proxy- en Adapterlagen tussen Frontend en Database
+
+LaunchStudio implementeert een transparante tussenlaag om uw bestaande frontend 100% stabiel te houden:
+- **BFF (Backend-For-Frontend) Architectuur:** Wij plaatsen een dunne, getypeerde Next.js API-laag tussen uw UI en de database. De UI behoudt zijn exacte state management (bijvoorbeeld Zustand of TanStack Query), terwijl de API-routes server-side permissies, validatie en caching afhandelen.
+- **Consistente JSON-Contracten:** Zelfs als we het onderliggende relationele datamodel normaliseren en indexeren, mappen we de responsobjecten exact naar de datastructuren die uw frontend-componenten verwachten.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Nul pixels verschoven na drie rondes backend-engineering

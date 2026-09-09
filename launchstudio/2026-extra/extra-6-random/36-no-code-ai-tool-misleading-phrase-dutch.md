@@ -47,6 +47,21 @@ Niets hiervan is een argument tegen no-code AI-tools — het is een argument om 
 
 LaunchStudio brengt de enterprise-grade engineeringdiscipline van Manifera naar precies deze kloof — het lezen en stabiliseren van wat een no-code AI-tool heeft gegenereerd, zonder dat een herbouw nodig is. Ons engineeringcentrum in Ho Chi Minh-stad behandelt dit soort diagnostisch werk regelmatig voor oprichters wier apps afhankelijk waren van iets dat stilzwijgend onder hen veranderde. U kunt [ons de link naar uw prototype sturen voor gratis advies](https://launchstudio.eu/nl/#contact) over waar uw app momenteel van afhankelijk is en waar de fragiele punten zitten. Voor meer over hoe productie-engineeringteams precies dit soort afhankelijkheidsrisico aanpakken, zie de praktijk van Manifera voor [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/).
 
+## Een Afhankelijkheden-Inventarisatie van 20 Minuten Die U Vandaag Moet Doen
+
+Het fundament van moderne software bestaat voor een aanzienlijk deel uit andermans code: externe bibliotheken en npm-packages die door uw AI-tool automatisch aan het project zijn toegevoegd. Het kost slechts twintig minuten om uw `package.json`-bestand te openen en deze essentiële inventarisatie uit te voeren:
+
+**Minuut 1-5: Tel het Aantal Directe Afhankelijkheden.** Open `package.json` en tel de regels onder `dependencies`. Zijn het er dertig, vijftig of meer dan honderd? AI-tools voegen met gemak voor elk klein wissewasje (zoals het formatteren van een datum) een compleet extern pakket toe. Hoe meer pakketten, hoe groter uw aanvalsoppervlak en hoe groter de kans op verouderde, kwetsbare code.
+
+**Minuut 6-10: Draai een Geautomatiseerde Veiligheidsaudit.** Open uw terminal en typ simpelweg: `npm audit` (of `pnpm audit` / `yarn audit`). Binnen tien seconden ziet u een lijst van bekende kwetsbaarheden in uw afhankelijkheden, gerangschikt van Low tot Critical. Ziet u 'High' of 'Critical' meldingen, dan vereisen die directe aandacht.
+
+**Minuut 11-15: Controleer op Verouderde of Verlaten Bibliotheken.** Kijk naar de belangrijkste frameworks in uw lijst. Zijn er pakketten bij die al twee jaar geen update hebben gehad op GitHub of die door één enkele anonieme hobbyist worden onderhouden? Het vervangen van zo'n wankel pakket door een gevestigde standaard voorkomt toekomstige blokkades.
+
+**Minuut 16-20: Verifieer Licenties.** Zorg ervoor dat er geen pakketten tussen zitten met een GPL-licentie als u uw software als gesloten commerciële SaaS wilt aanbieden. Zoek naar MIT-, Apache 2.0- of BSD-licenties.
+
+Deze korte exercitie verschaft u direct inzicht in de betrouwbaarheid van de bouwstenen waarop uw onderneming rust, en stelt u in staat om risico's proactief te elimineren.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de API die 's nachts van vorm veranderde
@@ -93,11 +108,46 @@ Ja, het is een regelmatig onderdeel van het werk bij het belangrijkste engineeri
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Does \"no code\" really mean there's no maintenance required at all?", "acceptedAnswer": { "@type": "Answer", "text": "No. It means you didn't personally write the code, not that the resulting application has no dependencies or ongoing maintenance needs." } },
-    { "@type": "Question", "name": "Why do no-code AI tools hide the underlying code from founders?", "acceptedAnswer": { "@type": "Answer", "text": "By design, to make the tool fast and accessible. The tradeoff is founders don't build a mental model of what's running, which matters when something breaks." } },
-    { "@type": "Question", "name": "What's a practical way to prepare for this before something breaks?", "acceptedAnswer": { "@type": "Answer", "text": "Know in advance who you'd call for a dependency-level fix, the same way you'd plan for any other critical infrastructure." } },
-    { "@type": "Question", "name": "Can LaunchStudio work with apps built in tools like v0, without requiring a rebuild?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LaunchStudio reads and stabilizes what the AI tool generated directly, without rebuilding the founder's frontend." } },
-    { "@type": "Question", "name": "Does the Ho Chi Minh City team specialize in this kind of dependency diagnosis?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, it's a regular part of the work at Manifera's main engineering center, given how often external dependencies shift underneath AI-generated apps." } }
+    {
+      "@type": "Question",
+      "name": "Betekent \"no code\" echt dat er helemaal geen onderhoud nodig is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Het betekent dat u zelf de code niet heeft geschreven, niet dat de resulterende applicatie geen afhankelijkheden of doorlopende onderhoudsbehoeften heeft, zoals elke andere software."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom verbergen no-code AI-tools de onderliggende code voor oprichters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Met opzet — de abstractie is wat de tool snel en toegankelijk maakt. De afweging is dat oprichters geen mentaal model opbouwen van wat er draait, wat alleen ertoe doet wanneer er iets kapotgaat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is een praktische manier om u hierop voor te bereiden voordat er iets kapotgaat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weet vooraf wie u zou bellen voor een oplossing op afhankelijkheidsniveau, op dezelfde manier waarop u een plan zou hebben voor elk ander stuk kritieke infrastructuur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan LaunchStudio werken met apps gebouwd in tools zoals v0, zonder een herbouw te vereisen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, LaunchStudio leest en stabiliseert wat de AI-tool direct heeft gegenereerd, en pakt het specifieke afhankelijkheids- of integratieprobleem aan zonder de frontend van de oprichter te herbouwen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het Ho Chi Minh-stad-team gespecialiseerd in dit soort afhankelijkheidsdiagnose?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, het is een regelmatig onderdeel van het werk bij het belangrijkste engineeringcentrum van Manifera, gezien hoe vaak externe afhankelijkheden veranderen onder door AI gegenereerde applicaties."
+      }
+    }
   ]
 }
 </script>

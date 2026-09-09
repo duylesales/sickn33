@@ -84,6 +84,12 @@ If a proposal on your desk right now is missing two or more of these four elemen
 
 Use this table as a starting point in your own vendor scorecard, filling in each cell with what you actually learn from reference calls rather than what the sales deck claims. As analysts such as Gartner have pointed out in their coverage of AI vendor risk, the gap between a vendor's marketed capability and its delivered capability is now one of the single largest sources of failed enterprise AI initiatives — larger, in most documented cases, than the underlying technical difficulty of the AI itself.
 
+## The Reference Call Script That Gets Past the Rehearsed Answer
+
+Every vendor hands you their best reference, so the value of the call depends entirely on which questions you ask, not on whether you make the call at all. Skip "were you happy with the project" — it invites a rehearsed yes — and ask instead: "What was the single worst week of this engagement, and how did the vendor handle it?" A genuine reference will have a specific answer within seconds; a coached one will pause and reach for something generic like "communication could always be better." Follow with "how many people from the original proposal are still on the account today?" since team turnover on the reference's own project is a leading indicator of what will likely happen on yours. Finally, ask directly, "would you sign with them again knowing what you know now?" — a hesitant or qualified yes is far more informative than an enthusiastic one, because it usually surfaces the one caveat the reference was trying to be diplomatic about.
+
+If a vendor can only produce one reference willing to take an unscripted call, or insists on joining the call themselves "to help answer technical questions," treat that as a data point on its own — a vendor with a genuinely strong production track record has multiple clients willing to speak candidly without supervision.
+
 ## Making the Final Call
 
 By the decision stage, you've already filtered out vendors on basic fit. What separates a good final choice from a costly mistake is verifying production reality rather than demo polish, and the four questions above — deployment history, team composition, MLOps maturity, and full lifecycle cost — will surface that reality faster than any additional round of technical demos. Run your remaining shortlist through this scorecard before signing, and treat any vendor's resistance to answering these specific questions as data in itself.
@@ -115,6 +121,22 @@ Ongoing maintenance, monitoring, and periodic retraining for a production AI sys
 ### What is the biggest mistake IT Managers make when comparing AI development vendors?
 
 The most common mistake is weighting the demo and sales presentation too heavily relative to verifiable production evidence, since a polished demo requires far less organizational maturity than a system that stays healthy in production for a year or more. The second most common mistake is not getting the actual delivery team's names and seniority levels in writing before signing, which allows a vendor to substitute a less experienced team after the contract is in place.
+
+### (Scenario: vendor's only offered reference gives generic, positive-sounding answers) How do I get honest signal from a vendor-selected reference call instead of a rehearsed testimonial?
+
+Ask specific, hard-to-fake questions like "what was the worst week of this engagement" and "how many people from the original proposal are still on the account today," rather than general satisfaction questions that invite a rehearsed yes. A vendor that insists on joining the reference call itself, or can only produce one reference willing to speak unsupervised, is itself a signal worth weighing.
+
+### (Scenario: draft contract is silent on who owns the trained model and training data after the engagement ends) Who should own the trained model and training data once an AI vendor engagement ends?
+
+Unless explicitly negotiated otherwise, push for the contract to state clearly that you own the trained model weights, the fine-tuned artifacts, and any proprietary training data derived from your business, since a vendor's default contract template often reserves ambiguous rights over model IP that becomes a real problem if you later switch vendors. Get this in writing before the project starts, not at offboarding.
+
+### (Scenario: the specific engineers named in the proposal leave the account mid-engagement) What contractual protection exists against the named engineers leaving partway through the project?
+
+Ask for a contractual commitment to notify you before any named team member is rotated off the account, along with a defined knowledge-transfer period to their replacement, rather than discovering the change only when a different engineer shows up to a standup. A vendor confident in its bench depth and retention will agree to this without much pushback.
+
+### (Scenario: comparing quotes from multiple vendors using different currencies and rate structures) How do I compare AI vendor quotes fairly when they use different currencies and pricing structures?
+
+Normalize every quote to a fully loaded cost per engineer-month in a single currency, including any platform, infrastructure, and management fees the headline day rate excludes, rather than comparing headline day rates directly. A lower day rate paired with hidden management overhead or excluded infrastructure costs can end up more expensive than a higher, fully inclusive rate once normalized.
 
 <script type="application/ld+json">
 {
@@ -158,6 +180,26 @@ The most common mistake is weighting the demo and sales presentation too heavily
       "@type": "Question",
       "name": "What is the biggest mistake IT Managers make when comparing AI development vendors?",
       "acceptedAnswer": { "@type": "Answer", "text": "The most common mistake is weighting the demo and sales presentation too heavily relative to verifiable production evidence. The second is not getting the delivery team's actual names and seniority levels in writing before signing." }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: vendor's only offered reference gives generic, positive-sounding answers) How do I get honest signal from a vendor-selected reference call instead of a rehearsed testimonial?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ask specific, hard-to-fake questions like what was the worst week of this engagement, rather than general satisfaction questions that invite a rehearsed yes. A vendor that insists on joining the reference call itself is a signal worth weighing." }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: draft contract is silent on who owns the trained model and training data after the engagement ends) Who should own the trained model and training data once an AI vendor engagement ends?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Push for the contract to state clearly that you own the trained model weights, fine-tuned artifacts, and proprietary training data, since a vendor's default template often reserves ambiguous rights over model IP. Get this in writing before the project starts." }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: the specific engineers named in the proposal leave the account mid-engagement) What contractual protection exists against the named engineers leaving partway through the project?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ask for a contractual commitment to notify you before any named team member is rotated off the account, along with a defined knowledge-transfer period. A vendor confident in its bench depth will agree to this without much pushback." }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: comparing quotes from multiple vendors using different currencies and rate structures) How do I compare AI vendor quotes fairly when they use different currencies and pricing structures?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Normalize every quote to a fully loaded cost per engineer-month in a single currency, including platform, infrastructure, and management fees the headline day rate excludes, rather than comparing headline day rates directly." }
     }
   ]
 }

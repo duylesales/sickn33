@@ -58,6 +58,16 @@ Choose Shopify Plus when your differentiation lives outside the commerce mechani
 
 If you're evaluating a headless build or a full custom commerce platform, Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) team has built both headless storefronts and fully custom commerce platforms for European mid-market merchants — see our [portfolio](https://www.manifera.com/portfolio/) for examples of each approach in production.
 
+## The Decision Signals, Scored
+
+Score your situation against these five signals rather than debating the choice in the abstract — three or more pointing the same direction is a strong signal, not a coin flip:
+
+1. **EU VAT and cross-border tax complexity.** If you sell across more than 5-6 EU jurisdictions, Shopify's built-in tax calculation handles a compliance burden that would otherwise consume a meaningful share of a custom platform's early engineering budget.
+2. **Weekly merchandising velocity.** If marketing ships more than 2-3 new landing or campaign experiences per week, Shopify's theme/app ecosystem lets non-engineers execute directly — a custom build routes every such change through engineering.
+3. **Checkout divergence.** If your required checkout logic (bundling, marketplace splits, proprietary pricing) genuinely can't be modeled in Shopify Functions after a real technical spike, that's the strongest single signal toward custom or headless.
+4. **Existing integration depth.** A proprietary ERP or pricing engine already deeply embedded in your stack pulls toward headless or custom, since Shopify's app-ecosystem integration patterns assume a simpler surrounding stack.
+5. **Engineering headcount committable indefinitely.** Custom only pencils out if 2-3 engineers can be dedicated to the platform on an ongoing basis, not just for the initial build — a team that can't commit this is choosing custom without the resources to sustain it.
+
 ## Frequently Asked Questions
 
 ### How much does Shopify Plus actually cost at scale?
@@ -74,6 +84,18 @@ Headless commerce uses a platform like Shopify as the backend engine for checkou
 
 ### How risky is it to migrate away from a custom-built e-commerce platform later?
 Significantly riskier than migrating away from Shopify Plus. A custom platform's replacement decision inherits years of proprietary business logic that must be reverse-engineered or rebuilt, not just migrated, making a wrong custom-build bet substantially more expensive to correct than choosing a platform that later proves too limiting.
+
+### (Scenario: marketing wants weekly campaign flexibility, engineering wants full control) Our marketing team wants Shopify's app ecosystem for fast campaigns, but engineering is pushing for a custom build for architectural control — how do we resolve this without picking a side?
+Evaluate whether the actual complaint is frontend rigidity (which headless commerce resolves while keeping Shopify's backend and app ecosystem) or genuinely divergent checkout logic (which only a full custom build addresses). Most cross-team disagreements like this resolve toward headless once each side's actual pain point is separated from the general preference for "more control."
+
+### (Scenario: selling across a growing number of EU markets) We're expanding from 3 to over 10 EU markets this year — does that change the Shopify Plus vs. custom calculus?
+Yes, meaningfully in Shopify Plus's favor: built-in EU VAT calculation across many jurisdictions offloads a compliance burden that would otherwise consume a real share of a custom platform's early engineering budget. Re-run the total cost of ownership comparison with this compliance cost explicitly priced into the custom option before assuming the calculus is unchanged.
+
+### (Scenario: considering headless but worried about losing app ecosystem convenience) If we go headless with a custom frontend on Shopify's backend, do we lose the app ecosystem that makes Shopify Plus fast for marketing?
+You lose most customer-facing theme and app convenience on the frontend, since that's exactly the layer being replaced, but backend apps for inventory, subscriptions, and tax calculation still function normally against the Storefront API. Budget real frontend engineering investment to rebuild whatever customer-facing convenience the removed theme and apps previously provided.
+
+### (Scenario: evaluating whether Shopify Functions can replace a planned custom checkout) We assumed we'd need a custom build for our bundling and marketplace-split logic — how do we verify Shopify Functions can't actually handle it before committing to custom?
+Run a scoped, time-boxed technical spike — one to two weeks — building the specific bundling or split-payment logic in Shopify Functions against your actual requirements, not a general capability review. Checkout extensibility has expanded substantially, and this bar is now genuinely higher than it was, so verify empirically before defaulting to the more expensive and less reversible custom path.
 
 <script type="application/ld+json">
 {
@@ -129,6 +151,38 @@ Significantly riskier than migrating away from Shopify Plus. A custom platform's
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Significantly riskier than migrating away from Shopify Plus. A custom platform's replacement decision inherits years of proprietary business logic that must be reverse-engineered or rebuilt, not just migrated, making a wrong custom-build bet substantially more expensive to correct than choosing a platform that later proves too limiting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: marketing wants weekly campaign flexibility, engineering wants full control) Our marketing team wants Shopify's app ecosystem for fast campaigns, but engineering is pushing for a custom build for architectural control — how do we resolve this without picking a side?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evaluate whether the actual complaint is frontend rigidity, which headless commerce resolves while keeping Shopify's backend and app ecosystem, or genuinely divergent checkout logic, which only a full custom build addresses. Most cross-team disagreements like this resolve toward headless once each side's actual pain point is separated from a general preference for control."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: selling across a growing number of EU markets) We're expanding from 3 to over 10 EU markets this year — does that change the Shopify Plus vs. custom calculus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, meaningfully in Shopify Plus's favor: built-in EU VAT calculation across many jurisdictions offloads a compliance burden that would otherwise consume a real share of a custom platform's early engineering budget. Re-run the total cost of ownership comparison with this compliance cost explicitly priced into the custom option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: considering headless but worried about losing app ecosystem convenience) If we go headless with a custom frontend on Shopify's backend, do we lose the app ecosystem that makes Shopify Plus fast for marketing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You lose most customer-facing theme and app convenience on the frontend, since that's exactly the layer being replaced, but backend apps for inventory, subscriptions, and tax calculation still function normally against the Storefront API. Budget real frontend engineering investment to rebuild whatever customer-facing convenience was removed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: evaluating whether Shopify Functions can replace a planned custom checkout) We assumed we'd need a custom build for our bundling and marketplace-split logic — how do we verify Shopify Functions can't actually handle it before committing to custom?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Run a scoped, time-boxed technical spike — one to two weeks — building the specific bundling or split-payment logic in Shopify Functions against your actual requirements, not a general capability review. Checkout extensibility has expanded substantially, so verify empirically before defaulting to the more expensive and less reversible custom path."
       }
     }
   ]

@@ -50,8 +50,7 @@ Voor het bureau vormt dit onderscheid ook het vervolggesprek met de klant. Een b
 
 [Zet uw escalatiepad voor noodgevallen op voordat u het nodig heeft](https://launchstudio.eu/nl/#contact) — de meeste bureaus die midden in een crisis contact opnemen, wensten dat ze een week eerder hadden gebeld.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Lancering van een Bureauklant Faalt in Real Time
 
 Floor Aerts, oprichter van Aerts Creative Agency in Emmen, had TicketFlow gebouwd, een met Bolt gegenereerd ticketingplatform voor evenementen, voor een klant met een groot regionaal muziekfestival. Op de ochtend dat de tickets publiekelijk in verkoop gingen, begon TicketFlow met tussenpozen foutmeldingen te geven onder de verkeerspiek, met een groeiend aantal klanten dat meldde te zijn afgeschreven zonder een bevestigd ticket te ontvangen — terwijl de oprichter van de klant de storing live volgde tijdens een gedeeld gesprek.

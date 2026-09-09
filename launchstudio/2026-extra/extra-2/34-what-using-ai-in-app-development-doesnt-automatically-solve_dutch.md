@@ -59,6 +59,18 @@ Manifera's beveiligingsbeoordelingen voor authenticatiestromen worden uitgevoerd
 
 [Stuur de link van uw prototype door — gratis advies, geen verplichtingen](https://launchstudio.eu/nl/#contact).
 
+## Andere Plekken Waar Ditzelfde Patroon van Onbeperkte Omleidingen Verschijnt
+
+Een login-omleiding die een gebruiker na authenticatie terugstuurt is de meest voorkomende plek voor een open redirect-lek, maar exact hetzelfde onderliggende ontwerppatroon duikt op meerdere andere plekken in een webapplicatie op:
+
+- **Omleidingen na accountregistratie** — vergelijkbaar met inloggen vraagt een registratiestroom vaak om een bestemming waar een nieuwe gebruiker naartoe moet worden gestuurd zodra zijn account is aangemaakt. Als die bestemming wordt geaccepteerd als een ruwe parameter in de URL, erft deze exact hetzelfde risico.
+- **Taal- of regioschakelaars** — een knop waarmee bezoekers kunnen wisselen tussen verschillende taalversies van een pagina, gebruikt vaak een omleidingsparameter om de bezoeker terug te brengen naar "dezelfde pagina" in de nieuwe taal. Als die parameter niet wordt gevalideerd tegen interne paden, kan deze worden misbruikt om verkeer elders naartoe te sturen.
+- **Uitschrijf- en notificatielinks in e-mails** — een link die beweert een abonnee uit te schrijven of voorkeuren te bevestigen, maar die in werkelijkheid omleidt via een ongecontroleerde URL-parameter, brengt exact hetzelfde gevaar met zich mee, vermomd als routinematig accountbeheer.
+- **Callbacks voor Single Sign-On (SSO) en sociale logins** — een OAuth-stroom die terugstuurt naar een URL die dynamisch in het verzoek wordt meegeleverd in plaats van naar een vooraf geregistreerde callback-whitelist, kan worden gemanipuleerd om een geldige inlogsessie te overhandigen aan een server van een kwaadwillende.
+- **"Ga verder naar"-koppelingen in transactionele e-mails** — boekingsbevestigingen, facturen en welkomstberichten bevatten vaak een knop terug naar de app. Als de bestemming van die knop wordt opgebouwd uit een ongevalideerde parameter, ontstaat een open uitvalbasis voor phishing.
+
+De oplossing is over al deze vijf scenario's identiek: beperk de omleidingsbestemming strikt tot een specifieke, vooraf gedefinieerde whitelist van interne relatieve paden of vertrouwde callback-domeinen, en negeer alles wat daarbuiten valt. Een beoordeling die alleen de login-omleiding repareert maar deze aanpalende routes overslaat, heeft slechts één van de vele deuren gesloten die op exact dezelfde manier door een AI-tool zijn gegenereerd.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De inloglink die ergens anders naartoe leidde
@@ -105,50 +117,42 @@ Uiterst onwaarschijnlijk zonder specifiek een kwaadwillig opgestelde omleidingsp
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Lỗi Open Redirect (chuyển hướng hở) là gì và tại sao nguy hiểm?",
+      "name": "Zou een specialist in phishing-preventie open omleidingen beschouwen als een welbekende aanvalsvector?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lỗi cho phép URL đăng nhập thật chuyển hướng người dùng sang một trang web lừa đảo (phishing) bên ngoài sau khi login thành công."
+        "text": "Ja, welbekend genoeg om een standaarditem te zijn in checklists voor beveiligingstesten, specifiek omdat legitieme inlogstromen zo'n effectief lanceerplatform voor phishing zijn."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao kẻ tấn công lại lợi dụng luồng đăng nhập thật để lừa đảo?",
+      "name": "Is deze kloof specifiek voor apps met een functie voor omleiding na inloggen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì URL đăng nhập là thật (domain chuẩn của app), làm tăng uy tín và khiến người dùng hoàn toàn tin tưởng nhập thông tin tiếp theo."
+        "text": "Het geldt voor elke functie die een bestemmings-URL als door de gebruiker te beheren invoer accepteert en er zonder beperking naartoe omleidt (uitlogstromen, externe linkafhandeling)."
       }
     },
     {
       "@type": "Question",
-      "name": "Giải pháp kỹ thuật triệt để để fix lỗi Open Redirect là gì?",
+      "name": "Maakt ervaring met inlogstromen bij enterprise-klanten uit voor een sportclubtool?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sử dụng Whitelist (Allow-list) chỉ cho phép chuyển hướng đến các đường dẫn nội bộ (relative URL) thuộc chính domain của app."
+        "text": "Ja, rechtstreeks – de specifieke technische herstelling (een domein-toestemmingslijst voor omleidingsbestemmingen) is een standaard, herhaalbaar patroon."
       }
     },
     {
       "@type": "Question",
-      "name": "Ngoài luồng đăng nhập, những tính năng nào khác hay dính lỗi Open Redirect?",
+      "name": "Illustreert deze casus het misbruik van vertrouwen boven een louter technische kwetsbaarheid?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Luồng Đăng xuất (Logout), Quên mật khẩu (Reset password), Link Hủy đăng ký (Unsubscribe) và SSO Callbacks."
+        "text": "Heel goed – ClubHub's daadwerkelijke inlogbeveiliging was op geen enkel punt gecompromitteerd. De gehele aanval hing af van het misbruiken van het redelijke vertrouwen van leden in een legitieme link."
       }
     },
     {
       "@type": "Question",
-      "name": "Founder tự test luồng đăng nhập có dễ phát hiện ra lỗi này không?",
+      "name": "Had Amber dit kunnen opvangen door simpelweg haar eigen inloglinks grondiger te testen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rất khó, vì khi test bình thường founder chỉ bấm các link nội bộ hợp lệ chứ không cố tình truyền URL ngoài vào parameter."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Sửa lỗi Open Redirect có tốn nhiều chi phí và thời gian không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Không, thường hoàn thành rất nhanh trong 2-4 ngày làm việc chỉ với việc gắn hàm kiểm tra domain trước khi redirect."
+        "text": "Uiterst onwaarschijnlijk zonder specifiek een kwaadwillig opgestelde omleidingsparameter te testen, wat niet iets is wat eerlijk testen op een natuurlijke manier produceert."
       }
     }
   ]

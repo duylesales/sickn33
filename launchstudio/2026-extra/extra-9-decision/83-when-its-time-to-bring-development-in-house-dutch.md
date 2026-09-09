@@ -90,7 +90,7 @@ Het [engineeringteam van Manifera](https://www.manifera.com/services/custom-soft
 
 [Beschrijf uw huidige software-werklast](https://launchstudio.eu/nl/#contact) en ontvang binnen één werkdag een eerlijk, onderbouwd advies over de vraag of uw cijfers momenteel wijzen op doorgaan met een partner of het aannemen van uw eerste vaste engineer.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Groningse Oprichter Rekent Eerst Voordat Hij Gaat Werven
 

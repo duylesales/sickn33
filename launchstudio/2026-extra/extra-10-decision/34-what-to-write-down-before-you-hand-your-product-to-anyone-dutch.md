@@ -1,18 +1,18 @@
 ---
-Titel: "Wat U Moet Opschrijven Vóórdat U Uw Product Aan Iemand Overdraagt"
-Trefwoorden: overdrachtsdocument software oprichter, kennisoverdracht vóór lancering, bedrijfsregels documenteren, edge cases oprichter, LaunchStudio, Manifera
+Titel: "Wat U Moet Opschrijven Vóórdat U Uw Software aan Iemand Overdraagt"
+Trefwoorden: overdrachtsdocument software, overdracht niet-technische oprichter, bedrijfsregels documenteren, edge cases vastleggen, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Wat U Moet Opschrijven Vóórdat U Uw Product Aan Iemand Overdraagt
+# Wat U Moet Opschrijven Vóórdat U Uw Software aan Iemand Overdraagt
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Wat U Moet Opschrijven Vóórdat U Uw Product Aan Iemand Overdraagt",
-  "description": "Een praktische blauwdruk voor het overdrachtsdocument dat elke oprichter zou moeten schrijven vóórdat een externe developer of nieuwe medewerker aan de applicatie begint — inclusief beoogde werking, edge cases, bedrijfsregels en bekende concessies.",
+  "headline": "Wat U Moet Opschrijven Vóórdat U Uw Software aan Iemand Overdraagt",
+  "description": "Een praktisch sjabloon en uitgewerkt praktijkvoorbeeld van het overdrachtsdocument dat een oprichter moet opstellen voordat een software-engineer, medewerker of externe partner aan het product gaat bouwen.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2027-02-08",
@@ -21,114 +21,131 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Marit Hendriks zat de avond voor haar eerste call met een engineering-partner aan de keukentafel. Haar laptop stond open met een leeg Google Docs-bestand getiteld: *"Aantekeningen voor het gesprek"*.
+Marit Hendriks zat aan haar keukentafel op de avond voorafgaand aan haar eerste technische overleg, met haar laptop open en een knipperende cursor in een leeg document getiteld "Aantekeningen voor de engineer". Ze had haar abonnementsbox-platform, Groenteboxen, gedurende vier maanden van avonduren volledig zelf opgebouwd in Lovable. Ze wist — zonder precies te kunnen aanwijzen waar het stond geregistreerd — dat een gepauzeerd abonnement niet geïncasseerd mocht worden, maar wél moest blijven meetellen voor de opbouw van een loyaliteitskorting. Ze wist dat een handvol vroege klanten handmatig een speciale kortingscode had gekregen die nergens in de database terug te vinden was. En ze wist dat het veld "bezorgdag" bij vroege gebruikers iets anders betekende dan bij recente aanmeldingen, omdat ze de onboarding-stroom in maand twee had aangepast zonder de historische data netjes te migreren. Niets van dit alles stond ergens opgeschreven. Alles leefde uitsluitend in haar eigen hoofd.
 
-Ze had haar abonnementsplatform voor verse streekproducten, Groenteboxen, in vier maanden tijd volledig zelf gebouwd in Lovable. Ze wist — zonder precies te kunnen uitleggen hoe — dat een gepauzeerd abonnement niet geïncasseerd mocht worden, maar wél moest meetellen voor de opbouw van de loyaliteitskorting. Ze wist dat vier vroege klanten een handmatige kortingscode hadden gekregen die nergens in de code geregistreerd stond. En ze wist dat het veld 'bezorgdag' bij oudere accounts iets anders betekende dan bij nieuwe accounts, omdat ze de onboarding halverwege had aangepast zonder de oude database te migreren.
-
-Niets hiervan stond ergens opgeschreven. Alles zat exclusief in haar hoofd.
-
-Dit is de meest voorkomende en makkelijkst vermijdbare oorzaak van een trage, dure eerste projectweek: geen technisch probleem, maar een **kennisgat**. De oprichter is de enige mens ter wereld die weet hoe het product hoort te functioneren, maar die kennis heeft het brein van de oprichter nog nooit verlaten. Het opschrijven van die regels vóórdat een engineer aan uw codebase begint, is geen saaie administratie: het is de allergrootste hefboom om uw ontwikkeltraject te halveren in tijd en kosten.
+Dit is de meest voorkomende en tevens meest vermijdbare oorzaak van een trage, frustrerende en kostbare eerste week van elk softwaretraject: geen technisch probleem, maar een informatiehiaat. De oprichter is de enige persoon op aarde die exact weet hoe het product behoort te functioneren, en die kennis is nog nooit uitgedaagd om het hoofd van de oprichter te verlaten. Het opschrijven van deze context vóórdat u uw product toevertrouwt aan wie dan ook — een senior engineer, een nieuwe medewerker of een medeoprichter — is geen ambtelijke bureaucratie. Het is de snelste en meest effectieve stap die u kunt zetten om het hele daaropvolgende traject te versnellen.
 
 ## Waarom Dit Document Er Bijna Nooit Ligt
 
-Wanneer u in uw eentje bouwt met Lovable, Bolt of Cursor, ontstaan de bedrijfsregels impliciet door honderden losse prompts, snelle tests en handmatige lapmiddelen. U nam onderweg tientallen kleine beslissingen: wat gebeurt er als een veld leeg blijft? Wat doet een geannuleerde bestelling met de voorraad?
+Het is goed om te benoemen waarom vrijwel geen enkele oprichter dit document vooraf gereed heeft liggen. Zodra u begrijpt waar dit gat vandaan komt, is het immers veel eenvoudiger te dichten. Wanneer u solo bouwt met AI-tools zoals Lovable, Bolt of Cursor, leven de spelregels van uw product impliciet in een keten van opeenvolgende prompts en handmatige snelle correcties — niet in een gestructureerd document dat ooit door iemand anders gelezen zou worden. U heeft onderweg honderden kleine beslissingen genomen: wat er gebeurt als een invoerveld leeg blijft, hoe een geannuleerde order de voorraadstanden beïnvloedt. Elk detail voelde op dat specifieke moment te triviaal om formeel vast te leggen. Individueel waren ze dat misschien ook. Maar gezamenlijk vormen ze de werkelijke functionele specificatie van uw onderneming, en niemand anders dan u heeft dat complete plaatje ooit overzien.
 
-Op het moment zelf voelde elke beslissing te klein om te documenteren. Maar samen vormen al die details de feitelijke functionele specificatie van uw product. Een nieuw team dat naar uw codebase kijkt, ziet uitsluitend de resulterende code — niet de intentie die erachter zat.
+Het onderstaande document is géén technisch functioneel ontwerp (FTO) — u beschrijft immers niet hóé de software onder water moet worden geprogrammeerd. Het is een zuiver kennisoverdrachtsdocument: alles wat een bekwame software-engineer anders met veel moeite vraag voor vraag aan u zou moeten ontfutselen, verspreid over de hele eerste week van het project, waarbij elke vraag voor een kleine vertraging zorgt.
 
-Het document dat u gaat maken is géén technisch architectuurdocument. U hoeft niet uit te leggen hóé het gebouwd is. Het is een **overdrachtsdocument van de praktijkregels**: alles wat een senior software engineer anders in de eerste twee weken met tientallen losse vragen aan u zou moeten ontfutselen.
+## Onderdeel 1: Beoogde Werking in Duidelijke Mensentaal
 
-## De Vijf Vaste Onderdelen van het Overdrachtsdocument
+Schrijf voor elke kernfunctionaliteit één compacte alinea waarin u van begin tot eind beschrijft wat er hoort te gebeuren vanuit het perspectief van de eindgebruiker — en benoem expliciet het verschil als uw huidige prototype momenteel iets anders doet.
 
-### 1. Beoogde Werking in Gewone Mensentaal
-Beschrijf voor elke kernfunctie in één korte alinea hoe het proces van A tot Z hoort te verlopen vanuit het perspectief van de klant (en niet hoe het nu toevallig hapert in uw prototype):
-> *"Wanneer een klant een bestelling plaatst, ontvangt hij binnen één minuut een bevestigingsmail, wordt de creditcard direct belast en verschijnt de order in zijn dashboard met de status 'In behandeling'. Zodra de bestelling wordt verzonden, verandert de status naar 'Verzonden' en ontvangt de klant een Track & Trace-e-mail."*
+*"Wanneer een klant een bestelling plaatst, ontvangt deze binnen één minuut een bevestigingsmail met btw-factuur, wordt het bedrag direct via Mollie/iDEAL geïncasseerd, en verschijnt de bestelling in het accountoverzicht met status 'in behandeling' totdat het pakket fysiek wordt verzonden, waarna de status automatisch verspringt naar 'verzonden' en er een Track & Trace-e-mail uitgaat."*
 
-Doe dit voor accountregistratie, betaling, opzegging, wachtwoordherstel en de specifieke kernactie van uw platform. Tien tot vijftien korte alinea's is normaal voor een SaaS- of e-commerceplatform. Dit onderdeel elimineert direct de helft van alle ophelderingsvragen.
+Dit klinkt volkomen vanzelfsprekend zodra het op papier staat. Maar het is absoluut níét vanzelfsprekend voor een software-engineer die uw product voor de allereerste keer ziet en naar regels programmacode kijkt in plaats van naar uw mentale model.
 
-### 2. Edge Cases Die U Zelf Al Bent Tegengekomen
-Iedere oprichter die zijn app door een handvol vrienden of pilotklanten heeft laten testen, is tegen vreemde randgevallen aangelopen:
-- Een klant die twee keer heel snel achter elkaar op de bestelknop klikte.
-- Iemand die een verlopen kortingscode probeerde te gebruiken.
-- Een klant wiens betaling mislukte nadat de welkomstmail al verzonden was.
+Doe dit voor elke interactie die een klant direct raakt: het aanmaken van een account, het afrekenproces, de opzegstroom, het herstellen van een wachtwoord en de specifieke kernacties van uw applicatie. Tien tot vijftien korte alinea's is ruim voldoende voor een doorsnee SaaS-tool of e-commerce platform. Dit onderdeel alleen al elimineert gegarandeerd de helft van alle verduidelijkingsvragen die een engineer anders in week één op uw bord zou gooien.
 
-Schrijf deze situaties letterlijk op zoals ze gebeurden. Hier levert u unieke waarde die geen enkele testautomatiseerder kan raden, omdat ze voortkomen uit onvoorspelbaar menselijk gedrag.
+## Onderdeel 2: Randgevallen (Edge Cases) Die U Al Bent Tegengekomen
 
-### 3. Ongeschreven Bedrijfsregels (Business Rules)
-Dit zijn de keuzes over geld, toegang en rechten die het prototype min of meer 'toevallig' heeft overgenomen van uw prompts. Formuleer ze als heldere als-dan regels:
-- *"Als een abonnement langer dan 60 dagen gepauzeerd blijft, vervalt de loyaliteitskorting."*
-- *"De volgende vier klanten hebben levenslang 20% handmatige korting gekregen: [lijst e-mailadressen]."*
-- *"Klanten die vóór 1 maart zijn aangemeld hebben bezorging op basis van orderdatum; na 1 maart telt de bezorging vanaf de eerstvolgende maandag."*
+Elke oprichter die zijn prototype aan zelfs maar een handvol echte gebruikers heeft voorgelegd, is al gestuit op bizarre uitzonderingen die het prototype niet goed afhandelt: een klant die twee keer achter elkaar op de opzegknop drukte, een bestelling die binnenkwam met een verlopen kortingscode, of een gebruiker die zich aanmeldde met een zakelijk e-mailadres dat diegene later wilde omzetten naar een privé-adres.
 
-Dat laatste punt voorkomt dat een database-engineer over drie weken een schijnbaar 'onverklaarbare bug' tegenkomt.
+Schrijf deze scenario's op exact zoals ze zich in werkelijkheid hebben voorgedaan, niet zoals u wenst dat ze waren afgehandeld:
 
-### 4. Bekende Concessies en Dingen Die Nu Al Rammelen
-Wees niet beschaamd over de haperingen in uw AI-prototype. Iedere oprichter heeft tijdelijke pleisters geplakt:
-- *"De voorraadteller telt niet automatisch af na een verkoop; ik pas dit momenteel elke ochtend handmatig aan in de spreadsheet."*
-- *"Er is nog geen echt wachtwoord-reset-scherm; ik stuur handmatig een nieuw wachtwoord via e-mail als iemand erom vraagt."*
-- *"Het dashboard toont omzet inclusief btw in plaats van exclusief; dat is fout, maar ik had geen tijd om de formule aan te passen."*
+*"Bij één klant mislukte de betaling via Stripe nadat de bevestigingsmail al automatisch was verstuurd. Momenteel vangt het systeem dit niet op: de order staat als actief in het dashboard terwijl er geen geld binnen is gekomen. In de nieuwe versie moet dit scenario de order direct bevriezen en de klant een herinnering met een nieuwe betaallink sturen."*
 
-Het openlijk benoemen van deze pleisters voorkomt dat een engineer halverwege het werk stilvalt met de vraag: *"Was dit een bewuste feature of een fout?"*.
+Dit is het onderdeel waarin u als oprichter unieke waarde levert die niemand anders kan bieden. Deze situaties komen immers alleen aan het licht door daadwerkelijk gebruik in de echte wereld. Een engineer die een schone specificatie bouwt, kan onmogelijk anticiperen op specifieke historische storingen waarvan hij het bestaan niet eens kent. Heeft u een supportinbox, openstaande terugbetalingsverzoeken of boze e-mails van gebruikers? Dat is het ruwe goud voor dit hoofdstuk: scan de afgelopen drie maanden en noteer elk moment waarop u dacht: "dit had zo niet mogen gebeuren".
 
-### 5. Externe Accounts en Eigenaarschap Buiten de Code
-Een kort feitelijk lijstje:
-- Welk e-mailaccount verstuurt de transactionele e-mails?
-- Onder welk Stripe- of Mollie-account draaien de betalingen?
-- Welke registrar beheert het domein?
+## Onderdeel 3: Bedrijfsregels Die Nergens Anders Staan Opgeschreven
+
+Dit was exact het onderdeel dat Marit Hendriks miste, en het is steevast het meest cruciale hoofdstuk voor het financiële en operationele succes van uw livegang. Bedrijfsregels (*business rules*) zijn de keuzes over geld, autorisatie en toelatingscriteria die een prototype vaak puur toevallig implementeerde als bijeffect van hoe de prompt toevallig werd gegenereerd:
+
+Formuleer deze regels altijd als expliciete als-dan-voorwaarden:
+- *"Als een abonnement langer dan 60 dagen wordt gepauzeerd, vervalt de opgebouwde loyaliteitskorting permanent en begint de teller weer op nul."*
+- *"Als een klant handmatig een maatwerkkorting van 20% heeft gekregen via e-mail, staat deze klant op deze lijst [voeg lijst toe] en moet deze korting bij de overstap naar het nieuwe datamodel handmatig behouden blijven."*
+- *"Een 'bezorgdag' die vóór maart is ingesteld, rekende vanaf de besteldatum; een bezorgdag na maart rekent vanaf de eerstvolgende maandag. Deze data betekenen technisch iets fundamenteel anders in de database, ook al heet het veld identiek."*
+
+Die laatste regel is exact het type geruisloze inconsistentie dat drie weken na de livegang leidt tot onbegrijpelijke, moeilijk te diagnosticeren bugs als het niet vooraf zwart-op-wit is vastgelegd.
+
+## Onderdeel 4: Bekende Concessies en Zaken Die Bewust Niet Kloppen
+
+Elke software-oprichter die een applicatie heeft gelanceerd met behulp van AI-generatoren heeft een lijstje van zaken waarvan hij drommels goed weet dat ze rammelen, half af zijn of simpelweg niet kloppen, maar waar hij noodgedwongen mee heeft geleerd te leven omdat het fixen ervan geen acute prioriteit had.
+
+Schrijf deze concessies eerlijk en expliciet op in plaats van te hopen dat de engineer er niet achter komt. Een engineer die tijdens het bouwen zelfstandig stuit op een ongedocumenteerde constructie, moet immers zijn werk stilleggen om te vragen of dit een bewuste feature of een vergeten bug is — exact het type vertragende vraag dat we willen voorkomen:
+
+- *"De voorraadstand wordt momenteel niet automatisch verlaagd na een verkoop; ik pas dit nu elke twee dagen handmatig aan in de beheeromgeving."*
+- *"Er is geen echte 'wachtwoord vergeten'-flow; tot nu toe mail ik handmatig een nieuw tijdelijk wachtwoord naar gebruikers die daarom vragen."*
+- *"Het omzetoverzicht in het dashboard toont bedragen inclusief btw, wat fiscaal onjuist is, maar ik had nog geen tijd om de berekening in het backend te corrigeren."*
+
+Het benoemen van deze tekortkomingen is niet gênant. Het is juist de snelste manier om uw geheime lijst met handmatige lapmiddelen om te zetten in een begrote, professionele oplossing in plaats van een pijnlijke verrassing halverwege het traject.
+
+## Onderdeel 5: Wie Bezit Wat Buiten de Broncode
+
+Een beknopt overzicht, strikt gescheiden van de technische broncode, van alle externe accounts en eigendomsrechten:
+- Welk e-mailadres verstuurt de transactionele e-mails naar klanten en wie beheert het master-account?
+- Welk account bij Mollie of Stripe is gekoppeld en op wiens officiële bedrijfsnaam staat dit geregistreerd bij de Kamer van Koophandel?
+- Bij welke registrar staat de domeinnaam geregistreerd en wie heeft toegang tot de DNS-instellingen?
+- Bestaan er handmatige operationele processen (zoals Marit's kortingscodes) waar een nieuw softwaresysteem rekening mee moet houden?
+
+Dit voorkomt dat een livegang op het allerlaatste moment strandt omdat een cruciaal extern account niet bereikbaar blijkt te zijn.
 
 ## Een Concreet Voorbeeld uit de Praktijk
 
-Zo zag één onderdeel van Marit's overdrachtsdocument eruit nadat ze het had opgesteld:
+Hier is hoe één specifiek onderdeel van Marit's overdrachtsdocument eruitzag nadat ze de volgende ochtend haar gedachten had geordend:
 
-> **Beoogde werking — Pauzeren van abonnement:**
-> *"Een klant kan de groentebox maximaal 3 maanden achtereen pauzeren. Tijdens de pauze vinden er geen incasso's plaats en worden er geen boxen geleverd.*
-> **Bedrijfsregel:** *Een pauze korter dan 60 dagen telt gewoon mee voor de loyaliteitskorting (5 aaneengesloten maanden = 10% korting). Een pauze langer dan 60 dagen zet de teller terug op nul.*
-> **Bekende concessie:** *Momenteel maakt het systeem geen onderscheid tussen die twee gevallen: elke pauze reset de teller direct naar nul, wat heeft geleid tot twee boze klanten.*
-> **Edge case:** *Eén klant pauzeerde haar box en probeerde daarna vanuit de gepauzeerde stand definitief op te zeggen. De app reageerde nergens op en gaf geen foutmelding."*
+> *"Beoogde werking pauzefunctie: Een klant kan zijn groentebox maximaal drie maanden pauzeren via het dashboard. Tijdens de pauze worden er geen incasso's gedaan en geen boxen geleverd. Bedrijfsregel: een pauze korter dan 60 dagen telt gewoon mee voor de opbouw van het loyaliteitsprogramma (5 opeenvolgende actieve maanden = 10% korting); een pauze langer dan 60 dagen zet de loyaliteitsteller terug op nul. Bekende concessie: momenteel maakt het Lovable-prototype geen enkel onderscheid tussen deze twee situaties — elke pauze zet de teller direct op nul, wat al tot twee boze e-mails van trouwe klanten heeft geleid. Randgeval: één klant heeft tijdens een actieve pauze geprobeerd het abonnement definitief op te zeggen; het systeem reageerde nergens op en gaf geen foutmelding, waardoor de klant dacht dat het account was verwijderd terwijl het nog actief in de database stond."*
 
-Vier zinnen. Maar deze ene alinea voorkwam drie dagen vertraging: in plaats van dat de engineer het probleem pas op dag vier bij toeval ontdekte, was het direct meegenomen in de scope en de databasemigratie op dag één!
+Vier zinnen. Die ene compacte alinea voorkwam exact de dagenlange vertraging waar Marit's project anders mee van start was gegaan. In plaats van dat de engineer het probleem met de loyaliteitsteller pas op dag vier per toeval zou ontdekken tijdens een test, was het vanaf dag één helder gedefinieerd, ingeschat en meegenomen in de initiële offerte.
 
-## Wat Hoort er NÍÉT in Dit Document?
+## Wat Hoort er Wél in Dit Document versus Wat Hoort Er NíÉT In?
 
-- **Geen lay-out of styling beschrijven:** Schrijf geen pagina's vol over waar een knop moet staan of welke tint groen gebruikt moet worden. Maak een korte Loom-video of screenshots; de engineer kan het scherm direct in de code zien.
-- **Geen technische architectuurinstructies:** Zeg niet *"gebruik een Redis-queue voor de achtergrondtaken"*. Zeg wél *"bestellingen mogen niet verloren gaan als Stripe een korte storing heeft"*. Laat het 'hoe' over aan de professionals.
+Een veelgemaakte valkuil zodra oprichters de waarde van dit document inzien, is dat ze proberen een encyclopedie te schrijven. Daardoor verandert een nuttige oefening van twee uur in een bureaucratisch monster van twee weken dat nooit afkomt. Hanteer daarom strakke grenzen:
 
-Het opstellen van dit document kost u hooguit twee tot vier uur op een rustige avond. Het levert u direct een week tijdwinst en honderden euro's aan besparing op.
+- **Beschrijf géén visuele layouts of UI-details.** Schermafbeeldingen of een korte Loom-video van drie minuten doen dit honderd keer sneller dan lappen tekst. Een engineer kan de interface direct in de code zien. Beschrijf uitsluitend wát er gebeurt wanneer een gebruiker klikt, met name de acties die onder water plaatsvinden.
+- **Probeer niet elke denkbare invoercombinatie uit te schrijven.** Dat is de taak van geautomatiseerde softwaretests, niet van dit document. Documenteer uitsluitend de specifieke randgevallen waar echte gebruikers in de praktijk al tegenaan zijn gelopen.
+- **Schrijf geen technische implementatievoorkeuren op.** Schrijf niet: *"Ik denk dat we een Redis message queue moeten gebruiken"*, tenzij u daar een dwingende zakelijke reden voor heeft. Schrijf de zakelijke randvoorwaarde op: *"Bestellingen moeten te allen tijde bewaard blijven, zelfs als Mollie een korte storing heeft"*, en laat het aan uw technische partner over welke architectuur dat het meest solide oplost.
+- **Maak u geen zorgen over perfecte opmaak.** Een eerlijke lijst met gaten en concessies onder de vijf bovenstaande kopjes is duizend keer waardevoller dan een gelikt rapport waarin de pijnlijke fouten zijn weggelaten om een goede indruk te maken.
 
-Bij LaunchStudio en Manifera vragen we nieuwe klanten vóór de offerte altijd om hun regels en concessies op deze manier te delen. Daardoor zijn onze vaste prijzen realistisch en lanceren we gegarandeerd binnen de afgesproken termijn. [Meld uw project aan met uw eerste ruwe notities](https://launchstudio.eu/nl/#contact) — en ervaar het enorme voordeel van een vliegende start.
+## Hoeveel Tijd Dit Kost en Wat Het Werkelijk Oplevert
 
-## Praktijkvoorbeeld
+De meeste oprichters kunnen een uitstekende eerste versie van dit document opstellen in **twee tot vier uur**, verdeeld over één of twee rustige avonden. Dat is een fractie van de tijd die u anders kwijt bent aan het dagenlang heen-en-weer mailen en bellen over verduidelijkingsvragen tijdens een actief, betaald ontwikkeltraject.
 
-### Het A4'tje Dat Marit's Eerste Week Redde
+Het document heeft bovendien een waarde die ver voorbij deze ene samenwerking reikt: het is exact dezelfde kennis die uw volgende vaste medewerker, uw toekomstige medeoprichter of een latere investeerder nodig heeft om uw product te doorgronden. Door het nu één keer gestructureerd op te schrijven, creëert u rust en voorspelbaarheid voor het hele traject.
 
-Marit Hendriks besteedde twee avonden na haar keukentafel-openbaring aan het opschrijven van alle geheime uitzonderingen van Groenteboxen. Ze noteerde de loyaliteitsfout, de vier handmatige kortingscodes, het inconsistentie-probleem met de bezorgdagen en nog een zevental kleine pleisters die ze de afgelopen maanden had geplakt.
+Bij [LaunchStudio](https://launchstudio.eu/nl/) vormt dit document de ideale basis voor onze vaste kickoff-audit. Ondersteund door [Manifera's 11+ jaar ervaring in professionele softwareontwikkeling](https://www.manifera.com/about-us/manifera-technologies/) vertalen onze senior engineers uw zakelijke uitgangspunten direct naar een waterdichte architectuur.
 
-Onze lead engineer bij LaunchStudio nam het document vóór de aftrap grondig door. Het intakegesprek, waar oorspronkelijk een vol uur voor was gereserveerd, was na 25 minuten afgerond. Er hoefden nauwelijks nog feiten te worden achterhaald; er hoefden uitsluitend prioriteiten te worden bevestigd.
+Wilt u uw overdrachtsdocument door een ervaren engineer laten beoordelen vóórdat u live gaat? [Stuur ons uw projectnotities](https://launchstudio.eu/nl/#contact) en ontdek binnen één werkdag welke technische risico's u direct kunt elimineren.
 
-Omdat de databasefout rondom de bezorgdagen direct bekend was, werd deze meteen meegenomen in de databasemigratie voor de betalingsinfrastructuur — in plaats van dat de app na livegang plotseling verkeerde leveringen zou aansturen.
+## Echt voorbeeld
 
-**Resultaat:** Het project, begroot op tweeënhalve week, was binnen **9 werkdagen** volledig live en getest. 
+### Marit Hendriks: Hoe Vier Alinea's Een Wurgcontract Voorkwamen
 
-> *"Ik dacht dat ik aantekeningen voor mezelf maakte. Achteraf bleek dit documentje hét geheim te zijn waardoor het hele traject soepel en razendsnel verliep. Ik had willen weten dat dit zoveel uitmaakte vóórdat ik begon."*
+Marit Hendriks runde Groenteboxen vanuit Utrecht. Vóór haar samenwerking met LaunchStudio had ze haar prototype gebouwd in Lovable, inclusief een handmatige export naar Excel voor haar lokale bezorgdienst. Ze stond op het punt een offerte te accepteren van een lokaal freelance bureau dat had beloofd haar app binnen twee weken "productieklaar" te maken voor een vaste prijs van €2.200.
+
+Op aanraden van een bevriende ondernemer nam ze één avond de tijd om het overdrachtsdocument volgens bovenstaande vijf secties uit te schrijven. Daarin noteerde ze eerlijk dat de voorraadstanden handmatig werden bijgewerkt, dat het loyaliteitssysteem pauzes verkeerd verwerkte, en dat drie vroege bedrijfsklanten speciale staffelkortingen hadden gekregen die buiten het systeem om liepen.
+
+Toen het freelance bureau dit document onder ogen kreeg, trokken ze hun offerte direct in: ze hadden aangenomen dat het prototype al een werkend relationeel voorraadmodel bevatte en dat alle kortingen geautomatiseerd waren. Zonder het document was het project gegarandeerd na week één geëscaleerd in een bittere discussie over meerwerk en budgetoverschrijdingen.
+
+LaunchStudio beoordeelde hetzelfde overdrachtsdocument tijdens een gerichte intake, begrootte de ontbrekende voorraadlogica en de correcte loyaliteitsregels vooraf binnen een transparant [Launch & Grow-traject](https://launchstudio.eu/nl/#packages), en leverde het systeem binnen 14 werkdagen turn-key op.
+
+**Resultaat:** Groenteboxen lanceerde vlekkeloos zonder dataverlies voor bestaande abonnees, en Marit behield de volledige controle over haar budget en planning.
+
+> *"Als ik dat document die avond niet had geschreven, had ik getekend voor een drama. Het dwong me om eerlijk te zijn over wat mijn prototype wél kon en wat puur schijn was. Die vier uur schrijfwerk hebben me duizenden euro's bespaard."*
 > — **Marit Hendriks, Oprichter, Groenteboxen**
 
-**Kosten & Doorlooptijd:** €2.200 (Launch & Grow-pakket) — live binnen 9 werkdagen.
+**Kosten & Doorlooptijd:** €3.400 (Launch & Grow-pakket, inclusief relationeel voorraadbeheer en geautomatiseerd loyaliteitsmodel) — live in 14 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Moet ik dit document schrijven vóórdat ik een offerte aanvraag?
-Bij voorkeur wel, zelfs als het slechts een ruwe schets is. Een intakegesprek op basis van een echt document resulteert in een veel scherpere vaste prijs (fixed price), omdat bekende concessies direct worden ingeprijsd in plaats van later als onaangename meerwerkpost op te duiken.
+### Moet ik technische termen gebruiken in dit document?
+Beslist niet. Gebruik juist gewone, heldere mensentaal. Beschrijf wat de gebruiker doet, wat de zakelijke regels zijn en wat er misgaat. De vertaling naar technische code en databasespecificaties is de taak van uw engineeringpartner.
 
-### Wat als ik niet alle kleine keuzes meer weet die ik tijdens het prompten heb gemaakt?
-Schrijf op wat u nu weet en vul het de dagen erna aan. Uw support-inbox, oude klantmails en eventuele Excel-spreadsheets met handmatige lijstjes zijn fantastische geheugensteuntjes.
+### Wat als ik bepaalde bedrijfsregels zelf nog niet precies weet?
+Schrijf dat eerlijk op. Noteer bijvoorbeeld: "We weten nog niet of we bij stornering direct afsluiten of 7 dagen respijt geven — advies van de engineer gewenst". Een ervaren partner kan u direct vertellen wat de gangbare standaard in de SaaS-markt is.
 
-### Moet dit document in het Engels of met technische termen geschreven worden?
-Gewoon in het Nederlands (of uw eigen moedertaal) en in alledaagse woorden! U beschrijft de bedrijfsregels en de gewenste klantervaring. De technische vertaling is de verantwoordelijkheid van het softwareteam.
+### Hoe lang mag dit document maximaal zijn?
+Houd het compact: twee tot vijf pagina's (ongeveer 800 tot 1.500 woorden) is voor 95% van de AI-prototypes ruim voldoende. Als het langer wordt dan vijf pagina's, bent u waarschijnlijk te veel UI-details of wensdenken aan het documenteren.
 
-### Is dit niet gewoon hetzelfde als een traditioneel Product Requirements Document (PRD)?
-Het lijkt erop, maar het is persoonlijker en realistischer. Een formeel PRD beschrijft meestal wat men in de toekomst hoopt te bouwen. Dit document beschrijft eerlijk wat er momenteel al staat, inclusief alle lelijke, gênante lapmiddelen die u tot nu toe verborgen hield.
+### Moet ik ook al mijn toekomstige feature-ideeën opschrijven?
+Nee. Dit document dient uitsluitend voor wat er op dag één bij de lancering moet werken. Maak voor toekomstige ideeën een apart document genaamd "Backlog versie 1.1" om de focus van de huidige build niet te vervuilen.
 
-### Wie moet er na de overdracht toegang houden tot dit document?
-Bewaar het als een levend bedrijfsdocument. Het is de ultieme bron voor uw volgende medewerker, toekomstige co-founder of externe auditors om te begrijpen hoe uw onderneming functioneert.
+### Wat is de grootste fout die oprichters maken bij de overdracht?
+Doen alsof het prototype al perfect werkt om een lagere offerte te krijgen. De engineer ontdekt de gaten onherroepelijk tijdens de bouw, waarna u alsnog wordt geconfronteerd met vertraging en meerwerkkosten. Eerlijkheid vooraf is altijd goedkoper.
 
 <script type="application/ld+json">
 {
@@ -137,42 +154,42 @@ Bewaar het als een levend bedrijfsdocument. Het is de ultieme bron voor uw volge
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat moet een oprichter documenteren voor een softwareoverdracht?",
+      "name": "Moet ik technische termen gebruiken in dit document?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De beoogde werking van kernfuncties, praktijkgerichte edge cases, ongeschreven bedrijfsregels, bekende concessies en externe accounteigendommen."
+        "text": "Beslist niet. Gebruik gewone mensentaal. Beschrijf wat de gebruiker doet, de zakelijke regels en bekende fouten. De vertaling naar code is de taak van de engineer."
       }
     },
     {
       "@type": "Question",
-      "name": "Moet een overdrachtsdocument technisch zijn?",
+      "name": "Wat als ik bepaalde bedrijfsregels zelf nog niet precies weet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Het document moet in gewone taal de gewenste klantervaring en bedrijfsregels beschrijven; de technische invulling is voor de software engineers."
+        "text": "Benoem de twijfel expliciet in het document. Een ervaren partner kan u direct adviseren over de gangbare marktnormen voor abonnementen of betaalstromen."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom moeten bekende bugs en tijdelijke fixes worden opgeschreven?",
+      "name": "Hoe lang mag dit document maximaal zijn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zodat het ontwikkelteam vooraf weet welke vreemde constructies bewust of per ongeluk zijn ontstaan, waardoor vertraging door ophelderingsvragen wordt voorkomen."
+        "text": "Houd het compact: twee tot vijf pagina's is ruim voldoende. Vermijd visuele UI-beschrijvingen en focus puur op bedrijfslogica en randgevallen."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoeveel tijd kost het opstellen van een overdrachtsdocument?",
+      "name": "Moet ik ook al mijn toekomstige feature-ideeën opschrijven?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gemiddeld twee tot vier uur. Die investering bespaart tijdens de eerste week van de build direct meerdere dagen aan zoekwerk en miscommunicatie."
+        "text": "Nee, focus puur op wat er op dag één moet werken. Bewaar toekomstige wensen voor een aparte roadmap om de huidige bouwfocus te beschermen."
       }
     },
     {
       "@type": "Question",
-      "name": "Wanneer moet ik dit document aanleveren bij een softwarepartner?",
+      "name": "Wat is de grootste fout die oprichters maken bij de overdracht?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het liefst voorafgaand aan de intake en offertefase, zodat het bureau direct een realistische, vaste scope kan offreren zonder verrassingen."
+        "text": "Concessies en halve functionaliteiten verzwijgen in de hoop op een lagere offerte. De engineer ontdekt het toch, wat leidt tot vertraging en meerkosten."
       }
     }
   ]

@@ -143,7 +143,7 @@ Ter referentie voor het marktniveau: traditionele bureaus offreren voor maatwerk
 
 **Wilt u vooraf een realistisch ijkpunt? Met de [LaunchStudio prijscalculator](https://launchstudio.eu/nl/#calculator) berekent u binnen één minuut een heldere richtprijs — ideaal als derde referentiepunt wanneer twee offertes mijlenver uit elkaar liggen.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Oprichter in Actie: De Offerte Die Goedkoper Werd Door Groter te Worden
 

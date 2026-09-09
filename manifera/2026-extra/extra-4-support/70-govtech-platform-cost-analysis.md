@@ -90,6 +90,10 @@ Ayuntamiento Digital Alcalá proceeded with a realistically scoped platform buil
 
 Before committing to a public sector digital services platform budget, insist on a cost estimate scoped by a team with genuine public sector delivery experience, explicitly accounting for accessibility architecture, formal security requirements, and legacy system integration. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic public sector platform cost scoping exercise.
 
+## By the Numbers: A Realistic Public Sector Platform Budget Split
+
+For a government agency scoping a custom software development build with genuine compliance and legacy realities, a realistic budget allocation looks roughly like: architectural accessibility engineering, including ongoing assistive-technology testing across the development cycle, 20-25% of total cost; formal security certification and comprehensive audit logging, 20-30%, varying significantly with the specific certification regime (a data-sovereignty-restricted deployment sits at the higher end); legacy system integration, 20-30%, scaling directly with the number of distinct legacy systems and how poorly documented their interfaces are; multi-stakeholder requirements gathering and procurement process overhead, 10-15%, a category commercial software estimates typically omit entirely; with the remainder covering the citizen-facing service functionality most initial commercial-norms estimates emphasize almost exclusively. A useful procurement diagnostic: ask a vendor for the specific accessibility standard their estimate targets (EN 301 549, WCAG 2.1 AA, or a stricter local mandate) and whether their quoted timeline includes assistive-technology testing cycles, not just a final audit — a quote silent on both is very likely built from commercial software system development norms rather than genuine public sector delivery experience. As a rough anchor, a mid-sized municipal digital services platform with three or more legacy backend integrations and formal accessibility certification commonly runs €300,000-€700,000 for a first production-ready build; quotes well under that range for comparable scope usually mean accessibility architecture or legacy integration assessment was scoped commercially rather than against actual public sector requirements.
+
 ## Frequently Asked Questions
 
 ### (Scenario: IT director evaluating an initial public sector platform estimate) Why do government technology cost estimates often come in significantly under actual cost?
@@ -112,6 +116,22 @@ Government agencies frequently operate decades-old systems with outdated protoco
 
 Seek cost scoping from a team with genuine prior public sector delivery experience, explicitly modeling accessibility architecture, formal security requirements, legacy integration, and realistic stakeholder process timelines, not commercial software norms applied to a public sector context.
 
+### (Scenario: procurement officer drafting an RFP) What specific line items should a public sector RFP require vendors to price separately, rather than bundle into a single "development" quote?
+
+An RFP should require separate pricing for architectural accessibility work, formal security certification and audit logging, legacy system integration per connected system, and procurement/stakeholder process overhead, since a single bundled "software development" figure makes it impossible to identify which category a vendor has scoped commercially rather than realistically.
+
+### (Scenario: data protection officer scoping sovereignty requirements) How does a data residency or sovereignty requirement change the underlying software system development approach, not just the hosting choice?
+
+Data sovereignty typically requires the platform's data access and processing logic itself to guarantee that citizen data never transits or is processed outside the mandated jurisdiction, meaning the software's core architecture, not just its hosting location, needs to enforce and be auditable against that boundary.
+
+### (Scenario: IT director estimating accessibility testing cost) How much of an accessibility budget should specifically go to real assistive-technology testing versus automated scanning tools?
+
+Automated accessibility scanners catch a meaningful but limited share of real compliance issues, so a genuinely compliant build needs a dedicated budget line for manual testing with actual screen readers and other assistive technology throughout development, not just a single automated scan before launch.
+
+### (Scenario: agency lead comparing an in-house build to custom software engineering partners) When does it make sense for a government agency to commission external custom software engineering rather than build a public sector platform in-house?
+
+External expertise becomes the more cost-effective path once the required accessibility architecture, formal security certification process, or legacy integration complexity exceeds what an in-house team without direct prior public sector delivery experience has handled before, since the categories this article covers are specifically where inexperienced teams most reliably underestimate scope.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,7 +141,11 @@ Seek cost scoping from a team with genuine prior public sector delivery experien
     { "@type": "Question", "name": "(Scenario: engineering lead scoping accessibility) Why does accessibility deserve foundational budget rather than final checklist treatment?", "acceptedAnswer": { "@type": "Answer", "text": "Genuine compliance requires architecture designed in from the start, a costlier undertaking than late surface adjustments." } },
     { "@type": "Question", "name": "(Scenario: security lead scoping compliance requirements) Why do public sector platforms often require security standards beyond typical commercial software?", "acceptedAnswer": { "@type": "Answer", "text": "Government platforms often require comprehensive audit logging, data sovereignty, and formal certification beyond commercial norms." } },
     { "@type": "Question", "name": "(Scenario: IT manager planning legacy integration) Why does legacy system integration deserve dedicated early assessment for government technology projects?", "acceptedAnswer": { "@type": "Answer", "text": "Agencies often run decades-old systems with poorly documented interfaces, requiring early assessment to avoid underestimation." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to get an accurate cost estimate) What's the most reliable way to get an accurate public sector platform cost estimate?", "acceptedAnswer": { "@type": "Answer", "text": "Seek scoping from a team with genuine public sector delivery experience, not commercial norms applied to a government context." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to get an accurate cost estimate) What's the most reliable way to get an accurate public sector platform cost estimate?", "acceptedAnswer": { "@type": "Answer", "text": "Seek scoping from a team with genuine public sector delivery experience, not commercial norms applied to a government context." } },
+    { "@type": "Question", "name": "(Scenario: procurement officer drafting an RFP) What specific line items should a public sector RFP require vendors to price separately, rather than bundle into a single 'development' quote?", "acceptedAnswer": { "@type": "Answer", "text": "Require separate pricing for accessibility work, security certification and audit logging, per-system legacy integration, and procurement overhead." } },
+    { "@type": "Question", "name": "(Scenario: data protection officer scoping sovereignty requirements) How does a data residency or sovereignty requirement change the underlying software system development approach, not just the hosting choice?", "acceptedAnswer": { "@type": "Answer", "text": "The platform's data access logic itself must guarantee citizen data never transits outside the mandated jurisdiction, an architectural requirement, not just a hosting choice." } },
+    { "@type": "Question", "name": "(Scenario: IT director estimating accessibility testing cost) How much of an accessibility budget should specifically go to real assistive-technology testing versus automated scanning tools?", "acceptedAnswer": { "@type": "Answer", "text": "Automated scanners catch limited issues, so a dedicated budget line for manual testing with real assistive technology throughout development is essential." } },
+    { "@type": "Question", "name": "(Scenario: agency lead comparing an in-house build to custom software engineering partners) When does it make sense for a government agency to commission external custom software engineering rather than build a public sector platform in-house?", "acceptedAnswer": { "@type": "Answer", "text": "External expertise pays off once accessibility, certification, or legacy integration complexity exceeds what an inexperienced in-house team has handled before." } }
   ]
 }
 </script>

@@ -57,8 +57,7 @@ Oprichters die deze vraag behandelen als een afvinkpunt om te overleven, missen 
 
 [Bereid u voor op de vraag voordat hij gesteld wordt in een ruimte die ertoe doet](https://launchstudio.eu/nl/#contact) — de meeste oprichters ontdekken dat het hardeningswerk en de gereedheid voor fondsenwerving hetzelfde gesprek zijn.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een SaaS-Oprichter in de Praktijk: De Vraag Ombuigen Naar de Deal
 
 Vera Nieuwendijk, een voormalig subsidie-adviseur en oprichter in Haarlem, bouwde GrantPilot, een AI-tool die non-profitorganisaties koppelt aan relevante subsidiekansen en aanvraagonderdelen automatisch opstelt, met v0. GrantPilot had echte vroege tractie — veertig betalende non-profitklanten — maar Vera's eerste investeerdersgesprek liep volledig vast toen een partner vroeg wat er zou gebeuren met de matching-nauwkeurigheid en gegevensverwerking van het platform als GrantPilot plotseling tien grote stichtingen tegelijk zou aansluiten. Vera antwoordde eerlijk dat ze het niet zeker wist, en het gesprek eindigde zonder duidelijke vervolgstap.

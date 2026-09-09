@@ -118,7 +118,7 @@ Negentig minuten voorbereiding, zes heldere assets, één beknopt document. Zorg
 
 **Twijfelt u over wat er momenteel gekoppeld is in uw Lovable- of Bolt-project? Deel uw link met ons: wij vertellen u exact wat er staat, wat er ontbreekt en wat u moet klaarzetten — kosteloos en vrijblijvend.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Oprichter in Actie: De Negentig Minuten Die een Week Redden
 

@@ -65,8 +65,7 @@ Het signaal is niet hoe het product presteert wanneer een oprichter het gebruikt
 
 [Vertel ons hoe dichtbij u denkt te zijn](https://launchstudio.eu/nl/#contact) — de meeste oprichters die "bijna klaar" zeggen, zijn dichterbij dan ze denken op de zichtbare helft, en verder weg dan ze denken op de onzichtbare.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Ontdekken Wat "Bijna Klaar" Daadwerkelijk Betekende
 
 Marthe IJsselstijn, een fysiotherapiepraktijkmanager en nu oprichter in Hellevoetsluis, bouwde BijnaKlaar — een naam die ze half schertsend koos tijdens de ontwikkeling — een tool voor afspraak- en intakebeheer voor kleine paramedische praktijken, met Lovable. Marthe had persoonlijk elke flow tientallen keren getest: boeken, verzetten, intakeformulieren, patiëntdossiers, allemaal precies werkend zoals ontworpen, en ze geloofde oprecht dat ze nog maar dagen van lancering verwijderd was.

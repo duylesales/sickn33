@@ -117,50 +117,42 @@ Soms – expliciet prompten voor CSRF-bescherming kan er toe leiden dat een tool
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is CSRF-bescherming een frontend- of backend-probleem?",
+      "name": "Zou een frontend-gericht ingenieur CSRF beschrijven als een frontend- of een backend-probleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Beide — de frontend genereert het token, maar het is betekenisloos tenzij de backend het onafhankelijk verifieert."
+        "text": "Oprecht beide – het token moet gegenereerd en ingebed worden door de frontend, maar het is betekenisloos tenzij de backend het onafhankelijk verifieert. Dat is exact waarom het gemakkelijk is voor beide kanten, afzonderlijk werkend, om aan te nemen dat de andere kant het heeft afgehandeld."
       }
     },
     {
       "@type": "Question",
-      "name": "Geldt CSRF-bescherming alleen voor HTML-formulieren?",
+      "name": "Is CSRF-bescherming specifiek voor formulieren, of geldt het ook voor API-oproepen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, het geldt voor elk verzoek dat status wijzigt, inclusief API-eindpunten bij ingelogde sessies."
+        "text": "Het geldt voor elk verzoek dat status wijzigt, niet alleen traditionele HTML-formulieren – API-eindpunten die gegevens wijzigen op basis van een ingelogde sessie staan voor de identieke blootstelling en hebben dezelfde bescherming nodig."
       }
     },
     {
       "@type": "Question",
-      "name": "Betekent de 80% mislukkingsstatistiek dat de meeste kloven ernstig zijn?",
+      "name": "Drukt de 80% productie-mislukkingsstatistiek uit hoe ernstig de specifieke kloof van een individuele oprichter neigt te zijn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet noodzakelijkerwijs — veel onderliggende kloven zijn smal afgebakend en in dagen te herstellen."
+        "text": "Vaak wel – de statistiek beschrijft een resultaat (nooit productie bereiken), niet noodzakelijkerwijs een ernstniveau. Veel van de specifieke kloven erachter, zoals die van Eva, zijn smal afgebakend en in dagen te herstellen zodra ze daadwerkelijk geïdentificeerd zijn."
       }
     },
     {
       "@type": "Question",
-      "name": "Weerspiegelt deze case de visie van de CEO op de kansen in de oprichterseconomie?",
+      "name": "Weerspiegelt Eva's case de visie van CEO Herre Roelevink op de oprichterseconomie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zeer rechtstreeks — goede producten gebouwd met AI hebben nog steeds toegewijde expertise nodig om specifieke kloven te sluiten."
+        "text": "Zeer rechtstreeks – Roelevink's uitgesproken visie is dat oprichters nu snel oprecht goede producten bouwen met AI, maar toegewijde architectuur- en beveiligings-expertise nodig hebben om de overgebleven, specifieke kloven te sluiten."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan een oprichter dit opvangen door er expliciet om te vragen bij de AI-tool?",
+      "name": "Kan een oprichter dit opvangen door zijn AI-tool rechtstreeks te vragen of CSRF-bescherming is inbegrepen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Soms, maar vertrouwen op het onthouden om te vragen is een breekbaar alternatief voor een systematische beoordeling."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Zou een smal afgebakende CSRF-beoordeling gerelateerde formulierkloven missen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Mogelijk — daarom controleert LaunchStudio de gerelateerde tros (cookies, framing-headers, omleidingen) standaard samen."
+        "text": "Soms – expliciet prompten voor CSRF-bescherming kan er toe leiden dat een tool het opneemt, maar vertrouwen op het onthouden om te vragen naar elke relevante bescherming is een breekbaar alternatief voor een toegewijde beoordeling."
       }
     }
   ]

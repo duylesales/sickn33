@@ -104,6 +104,10 @@ Vaak gedeeltelijk – als aanmeldingstijdstempels en marketinglinkgegevens nog b
 
 Zonder een expliciete regel overschrijft welke code als laatste werd vastgelegd stilletjes de eerste, wat de verkeerde verwijzer crediteert zonder dat er een record is dat er een botsing heeft plaatsgevonden. De herstelling is het bewust kiezen van first-touch of last-touch toeschrijving en het loggen van welke regel van toepassing was op elke aanmelding.
 
+### Wat kost het herstellen van een referral-attributie stroom bij LaunchStudio?
+
+Het fixen van referral-attributie over alle registratiepaden inclusief reconciliatie-job kost gemiddeld €1.300 en duurt 8 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

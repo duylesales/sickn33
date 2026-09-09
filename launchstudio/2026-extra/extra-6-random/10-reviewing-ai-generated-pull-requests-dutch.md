@@ -53,6 +53,21 @@ Achter deze ene PR staat Manifera's bredere team van 120+ technici, en beoordeli
 
 Aan het eind van de dag zijn Pucks reactiedraadjes en detailpagina voor verzoeken goedgekeurd en gemerged — met de sanitatiefix inbegrepen, niet alleen gemarkeerd zodat zij het zelf moet afhandelen. De wachtrij heeft nog één PR die morgenochtend wacht. Dit is, min of meer, elke dag.
 
+## De Patrooncontrole-Gewoonte van een Oprichter: Hoe U Deze Zelf Uitvoert
+
+De patrooncontrole die in dit artikel wordt beschreven — waarbij u de volledige repository doorzoekt op dezelfde onveilige constructie in plaats van slechts één enkel incident op te lossen — is wellicht de meest waardevolle gewoonte die een niet-technische oprichter kan aanleren. AI-tools herhalen hun patronen immers consistent door de hele codebase. Zo voert u deze controle zelf uit met behulp van uw code-editor (zoals VS Code of Cursor):
+
+**Stap 1: Identificeer het kwetsbare patroon.** Zodra een fout of kwetsbaarheid aan het licht komt — bijvoorbeeld een database-aanroep die gegevens ophaalt zonder `userId`-beperking, zoals `prisma.invoice.findUnique({ where: { id } })` — isoleert u de kern van die aanroep.
+
+**Stap 2: Voer een globale zoekopdracht uit (Ctrl+Shift+F of Cmd+Shift+F).** Zoek in alle bestanden van het project naar vergelijkbare zoektermen, zoals `.findUnique`, `.findMany` of `SELECT * FROM`. Let op de plekken waar query's worden uitgevoerd op gevoelige tabellen zonder dat er een koppeling met de actieve sessie plaatsvindt.
+
+**Stap 3: Controleer API-routes op ontbrekende middleware.** Zoek naar alle router-bestanden (bijvoorbeeld in de map `/api/` of `/routes/`). Controleer of elk bestand consistent dezelfde authenticatie- en autorisatie-middleware aanroept. Valt één endpoint uit de toon omdat de beschermende middleware ontbreekt, dan heeft u een potentiële kwetsbaarheid gevonden.
+
+**Stap 4: Bundel de correcties in één gerichte prompt.** Vraag uw AI-tool niet om de hele applicatie in één keer te herschrijven. Geef juist een gerichte, systematische opdracht: *"In bestand X ontbrak een controle op de gebruikersidentiteit. Ik zie hetzelfde patroon in bestanden Y en Z. Pas bestanden Y en Z aan zodat ze exact hetzelfde autorisatiepatroon afdwingen als de gecorrigeerde versie van bestand X."*
+
+Door van incidentgedreven probleemoplossing over te stappen naar systematische patrooncontrole, verhoogt u de veiligheid van uw gehele applicatie aanzienlijk en voorkomt u dat dezelfde fout zich op tien verschillende pagina's herhaalt.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: BuurtHulps herhaalde patroon
@@ -99,11 +114,46 @@ Nee — de output is een gemergede, werkende fix samen met een uitleg in gewone 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why did the same unsafe pattern show up in twelve files instead of just one?", "acceptedAnswer": { "@type": "Answer", "text": "AI coding tools like Lovable often regenerate similar-looking components independently across sessions, reproducing the same unsafe pattern each time rather than reusing one safe implementation." } },
-    { "@type": "Question", "name": "Does a full pattern-wide review take much longer than a one-file fix?", "acceptedAnswer": { "@type": "Answer", "text": "It takes longer on the day it happens, but it removes the risk of the same issue reappearing in future features, which a one-off patch does not." } },
-    { "@type": "Question", "name": "Do LaunchStudio's engineers rewrite the founder's frontend during a review like this?", "acceptedAnswer": { "@type": "Answer", "text": "No, reviews are scoped to fixing underlying logic and rendering safety, leaving the UI exactly as built in Lovable, Bolt, Cursor, or v0." } },
-    { "@type": "Question", "name": "Where is the team doing these pull request reviews based?", "acceptedAnswer": { "@type": "Answer", "text": "Reviews for European founders typically run through LaunchStudio's Amsterdam office, backed by Manifera's broader 120+ engineer team." } },
-    { "@type": "Question", "name": "What's the actual output of a review like this?", "acceptedAnswer": { "@type": "Answer", "text": "A merged, working fix along with a plain-language explanation of what was wrong and why, not just a flagged list for the founder to resolve alone." } }
+    {
+      "@type": "Question",
+      "name": "Waarom kwam hetzelfde onveilige patroon voor in twaalf bestanden in plaats van slechts één?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI-coderingstools zoals Lovable genereren vaak onafhankelijk soortgelijk ogende componenten in verschillende sessies, waarbij hetzelfde onveilige patroon telkens wordt gereproduceerd in plaats van één veilige implementatie te hergebruiken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Duurt een volledige patroonbrede beoordeling veel langer dan een fix in één bestand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het duurt langer op de dag dat het gebeurt — Pucks beoordeling nam ongeveer een dag in beslag in plaats van een uur — maar het verwijdert het risico dat hetzelfde probleem opnieuw opduikt in toekomstige functies, wat een eenmalige patch niet doet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Herschrijven de engineers van LaunchStudio de frontend van de oprichter tijdens zo'n beoordeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee — beoordelingen zoals die van Puck zijn afgebakend tot het repareren van de onderliggende logica en renderveiligheid, waarbij de UI precies blijft zoals die is gebouwd in Lovable, Bolt, Cursor of v0."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is het team gevestigd dat deze pull request-beoordelingen uitvoert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beoordelingen voor Europese oprichters zoals Puck lopen doorgaans via het Amsterdamse kantoor van LaunchStudio, ondersteund door Manifera's bredere team van 120+ technici."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de daadwerkelijke output van zo'n beoordeling — gewoon een lijst met bugs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee — de output is een gemergede, werkende fix samen met een uitleg in gewone taal van wat er mis was en waarom, niet alleen een gemarkeerde lijst die de oprichter zelf moet oplossen."
+      }
+    }
   ]
 }
 </script>

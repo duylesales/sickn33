@@ -87,6 +87,12 @@ Put both numbers in front of your board or your co-founders as an actual compari
 
 If you want a real dedicated-team quote to compare against your internal hiring plan, [get a custom team proposal within 48 hours](https://www.manifera.com/contact-us/) and run the numbers side by side before your next board update. A concrete quote, benchmarked against your own recruiting cost estimate, will settle this debate faster than another week of internal back-and-forth ever could.
 
+## The Board Slide: A 12-Month Numbers Template You Can Present Directly
+
+Boards fund decisions they can see the math behind, so build the comparison as a three-row table before your next update. Row one, 12-month fully loaded cost: in-house at €450,000-€650,000 for a five-to-six-person mobile squad versus an agency dedicated team at 40-60% of that figure for comparable output. Row two, time to first sprint: 3-6 months of recruiting before a single commit versus 2-4 weeks from signature. Row three, downside cost of a mis-hire or underperformer: two to three months of undetected drag plus a full replacement recruiting cycle in-house, versus a bench rotation the agency absorbs within days under most dedicated-team contracts.
+
+Add a fourth row your CFO will specifically ask about: flexibility cost, meaning what it costs to resize the team if the roadmap shifts. In-house downsizing carries severance and notice-period obligations that vary by jurisdiction but commonly add weeks of cost and legal overhead per departure; a dedicated team's scaling clause typically executes in two to four weeks with no severance exposure at all. Presented as a table rather than a verbal argument, this format resolves the build-versus-buy debate in a single board meeting far more often than another round of anecdotal experience from a previous company.
+
 ## Frequently Asked Questions
 
 ### Are the best mobile app development agencies actually cheaper than hiring in-house?
@@ -109,6 +115,22 @@ In-house ownership makes more sense when the app is your company's permanent cor
 
 Yes, and typically faster. A dedicated team engagement can usually scale up ahead of a major release or scale down afterward within a few weeks, without the legal and morale overhead of layoffs that come with resizing an in-house team.
 
+### (Scenario: A CEO needs to present the build-vs-buy decision to the board in a single meeting) What's the clearest way to present the in-house-versus-agency decision to a board?
+
+Use a simple table comparing 12-month fully loaded cost, time to first sprint, downside cost of a mis-hire, and flexibility cost to resize the team — boards fund decisions they can see the reasoning behind, and this format resolves the debate faster than a verbal recommendation or anecdotal experience.
+
+### (Scenario: A CEO's board is specifically worried about downsizing cost if the roadmap shifts after a major release) How does the cost of resizing a team differ between in-house hiring and a dedicated agency team?
+
+In-house downsizing carries severance and notice-period obligations that add real weeks of cost and legal overhead per departure in most European markets; a dedicated agency team's scaling clause typically executes in two to four weeks with no severance exposure.
+
+### (Scenario: A CEO has a Series A term sheet closing in six weeks with a mobile launch as a funding condition) Is there enough time to hire in-house before a funding-conditional launch deadline in six weeks?
+
+Almost never — a 3-6 month recruiting timeline for a qualified mobile team structurally cannot fit inside a six-week window, making a dedicated agency team, which can reach first sprint in 2-4 weeks, the only realistic path to hitting a funding-conditional deadline that tight.
+
+### (Scenario: A CEO wants to know how the mis-hire risk actually plays out financially, not just in the abstract) What does a bad in-house mobile hire actually cost beyond their salary?
+
+Beyond salary, factor in two to three months before underperformance is typically identified, plus a full replacement recruiting cycle of several more months — both are lost runway that sits entirely on your balance sheet, versus an agency where underperformance is contractually the vendor's problem to solve.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -118,7 +140,11 @@ Yes, and typically faster. A dedicated team engagement can usually scale up ahea
     {"@type": "Question", "name": "How much faster can an agency get a mobile app project started compared to hiring in-house?", "acceptedAnswer": {"@type": "Answer", "text": "An established agency can typically move from signed contract to first sprint in 2-4 weeks. Recruiting an equivalent in-house team from scratch usually takes 3-6 months before any development work begins."}},
     {"@type": "Question", "name": "Does using a mobile app development agency mean giving up quality control?", "acceptedAnswer": {"@type": "Answer", "text": "Not if the agency runs a rigorous Agile process with code review discipline and defined QA coverage. Quality depends on process rigor and accountability structure, not physical proximity to your office."}},
     {"@type": "Question", "name": "When does building an in-house mobile app team make more sense than using an agency?", "acceptedAnswer": {"@type": "Answer", "text": "In-house ownership makes more sense when the app is your company's permanent core product requiring a large team indefinitely, or when funding is explicitly earmarked for a long-term internal engineering organization."}},
-    {"@type": "Question", "name": "Can I scale a dedicated development team up or down the way I could with in-house hiring?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and typically faster. A dedicated team engagement can usually scale up or down within a few weeks, without the legal and morale overhead of layoffs that come with resizing an in-house team."}}
+    {"@type": "Question", "name": "Can I scale a dedicated development team up or down the way I could with in-house hiring?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and typically faster. A dedicated team engagement can usually scale up or down within a few weeks, without the legal and morale overhead of layoffs that come with resizing an in-house team."}},
+    {"@type": "Question", "name": "(Scenario: A CEO needs to present the build-vs-buy decision to the board in a single meeting) What's the clearest way to present the in-house-versus-agency decision to a board?", "acceptedAnswer": {"@type": "Answer", "text": "Use a simple table comparing 12-month fully loaded cost, time to first sprint, downside cost of a mis-hire, and flexibility cost to resize the team — boards fund decisions they can see the reasoning behind, and this format resolves the debate faster than a verbal recommendation or anecdotal experience."}},
+    {"@type": "Question", "name": "(Scenario: A CEO's board is specifically worried about downsizing cost if the roadmap shifts after a major release) How does the cost of resizing a team differ between in-house hiring and a dedicated agency team?", "acceptedAnswer": {"@type": "Answer", "text": "In-house downsizing carries severance and notice-period obligations that add real weeks of cost and legal overhead per departure in most European markets; a dedicated agency team's scaling clause typically executes in two to four weeks with no severance exposure."}},
+    {"@type": "Question", "name": "(Scenario: A CEO has a Series A term sheet closing in six weeks with a mobile launch as a funding condition) Is there enough time to hire in-house before a funding-conditional launch deadline in six weeks?", "acceptedAnswer": {"@type": "Answer", "text": "Almost never — a 3-6 month recruiting timeline for a qualified mobile team structurally cannot fit inside a six-week window, making a dedicated agency team, which can reach first sprint in 2-4 weeks, the only realistic path to hitting a funding-conditional deadline that tight."}},
+    {"@type": "Question", "name": "(Scenario: A CEO wants to know how the mis-hire risk actually plays out financially, not just in the abstract) What does a bad in-house mobile hire actually cost beyond their salary?", "acceptedAnswer": {"@type": "Answer", "text": "Beyond salary, factor in two to three months before underperformance is typically identified, plus a full replacement recruiting cycle of several more months — both are lost runway that sits entirely on your balance sheet, versus an agency where underperformance is contractually the vendor's problem to solve."}}
   ]
 }
 </script>

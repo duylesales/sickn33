@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een Growth Marketer Valideert Unit Economics Met Een Productieklare MVP In Twee Weken"
+Titel: "Case Study: Een Growth Marketer Valideert Unit Economics Met Een Productieklare MVP In Twee Weken"
 Trefwoorden: unit economics valideren SaaS, growth marketing MVP-lancering, CAC naar LTV validatie, snelle MVP-lancering, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: SaaS-Oprichter Scale-Up
 ---
 
-# Praktijkvoorbeeld: Een Growth Marketer Valideert Unit Economics Met Een Productieklare MVP In Twee Weken
+# Case Study: Een Growth Marketer Valideert Unit Economics Met Een Productieklare MVP In Twee Weken
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een Growth Marketer Valideert Unit Economics Met Een Productieklare MVP In Twee Weken",
+  "headline": "Case Study: Een Growth Marketer Valideert Unit Economics Met Een Productieklare MVP In Twee Weken",
   "description": "Hoe een performance-marketingoprichter in Rotterdam binnen 14 dagen een live, omzetgenererende SaaS lanceerde om zijn unit economics te bewijzen vóór het ophalen van een seedronde.",
   "author": {
     "@type": "Organization",

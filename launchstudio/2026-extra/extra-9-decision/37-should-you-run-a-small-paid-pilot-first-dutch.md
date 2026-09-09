@@ -123,7 +123,7 @@ Voor commerciële referentie: [LaunchStudio](https://launchstudio.eu/nl/) operee
 
 **Draag één reëel klantproject aan voor een betaalde pilot — een audit of een gerichte betaalkoppeling — en bekijk de scorekaart vóórdat u grotere verplichtingen aangaat.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Bureaupartner in Actie: De Audit van € 650 Die een Project van € 9.000 Redde
 

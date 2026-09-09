@@ -37,6 +37,23 @@ Die derde fase is precies waar LaunchStudio in gespecialiseerd is: een door AI g
 
 De eigen [portfolio](https://www.manifera.com/portfolio/) van Manifera laat zien hoe diezelfde verhardingsdiscipline eruitziet toegepast op zakelijke klanten — dezelfde nauwkeurigheid, alleen afgeschaald naar het budget en de tijdlijn van een oprichter via LaunchStudio.
 
+## Vijf Snelle Controles Die Onthullen in Welke Fase U Zich Bevindt
+
+U hoeft niet te wachten tot een externe partij u vertelt in welke fase uw applicatie staat. Vijf snelle controles van elk één minuut onthullen onomstotelijk de actuele volwassenheid van uw software:
+
+**1. De Database Back-up Controle:** Kunt u op dit moment met één druk op de knop een back-up van uw database herstellen naar een specifieke minuut van gisteren? Zo nee, dan bevindt uw data-infrastructuur zich nog onmiskenbaar in de experimentele fase.
+
+**2. De Foutdetectie Controle:** Als er nu een fout optreedt waardoor een gebruiker een wit scherm ziet, wie merkt dat dan als eerste? Als het antwoord "de gebruiker, die mij vervolgens mailt" is, ontbreekt professionele observability en bent u nog niet productierijp.
+
+**3. De Omgevingenscheiding Controle:** Heeft u een afzonderlijke testomgeving (staging) waar u nieuwe features kunt uitproberen met testdata, of test u rechtstreeks op de database waar ook uw echte gebruikers in zitten? Rechtstreeks werken op productie hoort exclusief thuis in Fase 1.
+
+**4. De Geheimenbeheer Controle:** Zijn al uw API-sleutels en configuratiewaarden strikt gescheiden tussen lokale ontwikkeling, staging en productie via een geheimbeheersysteem, of gebruikt u overal dezelfde Stripe- en database-keys?
+
+**5. De Uitrolprocedure Controle:** Wordt nieuwe code na goedkeuring automatisch getest en gedeployd via een gestructureerde pipeline (GitHub Actions), of pusht u handmatig wijzigingen vanaf uw lokale laptop naar de live server?
+
+Elke 'nee' op deze vijf vragen wijst exact het werkterrein aan dat u moet aanpakken om uw applicatie veilig van een kwetsbaar prototype naar een robuust productieplatform te tillen.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Yara Smeets verhardt GastVrij voor zijn eerste echte geld
@@ -83,11 +100,46 @@ LaunchStudio put uit het belangrijkste engineeringcentrum van Manifera in Ho Chi
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the real difference between a prototype and a product?", "acceptedAnswer": { "@type": "Answer", "text": "A prototype proves an idea works when you test it yourself. A product works reliably for other people, including when things go wrong." } },
-    { "@type": "Question", "name": "Can an app \"work\" and still not be production-ready?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. An app can pass every test a founder personally runs while still lacking the security and error handling needed for real customers." } },
-    { "@type": "Question", "name": "How do I know which phase my own app is in?", "acceptedAnswer": { "@type": "Answer", "text": "If you're the only person who has used the app, it's likely a prototype. If real users are patching bugs with you, it's an MVP. If it hasn't been security-audited and handles real payments, it likely isn't production-ready." } },
-    { "@type": "Question", "name": "Does moving to production mean rebuilding the frontend?", "acceptedAnswer": { "@type": "Answer", "text": "No. LaunchStudio hardens security, auth, and payments underneath the existing frontend without rebuilding what founders and users already know." } },
-    { "@type": "Question", "name": "Where is LaunchStudio's engineering team based for this kind of work?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio draws on Manifera's main engineering center in Ho Chi Minh City, alongside hubs in Amsterdam and Singapore." } }
+    {
+      "@type": "Question",
+      "name": "Wat is het echte verschil tussen een prototype en een product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een prototype bewijst dat een idee werkt wanneer u het zelf test. Een product werkt betrouwbaar voor andere mensen, ook wanneer dingen misgaan — mislukte betalingen, kwaadwillige verzoeken, gelijktijdige gebruikers en edge cases die niemand had voorzien."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een app \"werken\" en toch niet productieklaar zijn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, dit is de meest voorkomende valkuil. Een app kan elke test doorstaan die een oprichter zelf uitvoert, terwijl het nog steeds ontbreekt aan de beveiliging, foutafhandeling en gegevensisolatie die nodig zijn om echte klanten en hun geld veilig te verwerken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik in welke fase mijn eigen app zich bevindt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Als u de enige bent die de app heeft gebruikt, bevindt u zich waarschijnlijk in de prototypefase. Als echte gebruikers de app actief gebruiken en u samen bugs patcht naarmate ze zich voordoen, bevindt u zich in de MVP-fase. Als de app niet is doorgelicht op beveiliging en echte betalingen of gevoelige gegevens verwerkt, is deze waarschijnlijk nog niet productieklaar, ongeacht hoe gepolijst hij oogt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Betekent de overstap naar productie dat de frontend opnieuw moet worden gebouwd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. De aanpak van LaunchStudio, zoals gebruikt bij de verharding van GastVrij van Yara Smeets, werkt onder de bestaande frontend — de database, auth en betalingen beveiligen zonder aan te raken wat oprichters en gebruikers al kennen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is het engineeringteam van LaunchStudio gevestigd voor dit soort werk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio put uit het belangrijkste engineeringcentrum van Manifera in Ho Chi Minhstad, naast hubs in Amsterdam en Singapore."
+      }
+    }
   ]
 }
 </script>

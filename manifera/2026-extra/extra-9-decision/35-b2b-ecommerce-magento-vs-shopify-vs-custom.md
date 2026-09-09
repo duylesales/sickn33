@@ -59,6 +59,12 @@ Finally, ask what a mid-implementation pivot would look like — not because you
 
 See how we helped B2B distributors modernize their ecommerce stack in our portfolio, and reach out when you're ready to model your specific platform decision against real numbers rather than a generic comparison.
 
+## Integration Cost Breakdown: What Each ERP Connection Actually Adds
+
+The three-year totals above hide a variable that swings the final number more than platform choice alone: which ERP you're connecting to. A NetSuite integration using its SuiteTalk API typically adds €15,000-€30,000 to a Shopify Plus or Magento build, since prebuilt connectors handle most of the mapping work. Microsoft Dynamics 365 Business Central sits in a similar range, €12,000-€28,000, thanks to mature Power Platform connectors on both platforms. SAP is the outlier: a genuine SAP ECC or S/4HANA integration for order sync, inventory, and pricing commonly runs €40,000-€90,000, because SAP's data model rarely maps cleanly onto ecommerce order structures and custom middleware (Dell Boomi, MuleSoft, or a bespoke integration layer) is usually required regardless of which storefront platform you pick. A legacy, on-premise, non-API-first ERP pushes this higher still, sometimes exceeding the storefront build cost itself.
+
+The practical implication: if your ERP is SAP or a legacy on-premise system, the platform decision (Magento vs. Shopify vs. custom) matters less to your total budget than the integration layer does, and you should get a fixed-scope integration quote before you finalize the storefront choice, not after. Ask any vendor to name the specific middleware they'd use and whether they've built that exact ERP-to-platform pairing before — "we can integrate with SAP" is a claim every vendor makes; a named prior SAP-to-Shopify or SAP-to-Magento project is the evidence that separates real experience from a capability slide.
+
 ## Frequently Asked Questions
 
 ### Is Magento or Shopify better for B2B ecommerce?
@@ -75,6 +81,18 @@ All three approaches discussed here, Magento, Shopify Plus, and custom builds, c
 
 ### What B2B ecommerce features should we prioritize when comparing final vendor options?
 Prioritize company account management, tiered and negotiated pricing, payment terms like net-30 or net-60, bulk reordering from purchase history, and approval workflows for large orders, since these are the features that most distinguish genuine B2B functionality from B2C features with minor adjustments. Ask each vendor to demonstrate these specific workflows rather than a generic product demo.
+
+### (Scenario: Multi-entity or multi-currency B2B operations across EU markets) How do these platforms handle multi-currency and multi-entity B2B sales?
+Shopify Plus supports multi-currency natively through Shopify Markets and can run separate storefronts per entity, while Magento/Adobe Commerce handles multi-entity setups through its Multi-Source Inventory and website/store-view structure, which is more flexible but requires more configuration effort. A custom build gives you full control over currency, VAT handling, and entity separation, but you're responsible for building and maintaining all of it yourself.
+
+### (Scenario: Migrating an aging Magento 1 or Magento Open Source deployment) Should we migrate from Magento 1 straight to Adobe Commerce, or consider Shopify Plus instead?
+Since Magento 1 reached end-of-life, this is functionally a full re-platforming decision rather than a version upgrade, so treat it as an open comparison rather than a default move to Adobe Commerce. If your current Magento 1 build has extensive customizations that mirror what Adobe Commerce offers natively, staying in the Magento ecosystem often preserves more of that logic; if the customizations were workarounds for missing B2B features that Shopify Plus now includes natively, this is a good moment to reconsider.
+
+### (Scenario: Gated B2B catalog with hidden pricing for non-account visitors) Can we hide pricing and require login before showing our B2B catalog?
+Yes on all three: Magento offers this through B2B module company-account permissions, Shopify Plus through its B2B (Wholesale) channel with customer account gating, and a custom build can implement any gating logic you specify. The difference is setup effort — Magento and Shopify Plus have this largely built in, while a custom build requires you to design and maintain the access-control layer yourself.
+
+### (Scenario: Peak-season order volume, such as year-end bulk restocking) Which platform holds up best under a sudden spike in B2B order volume?
+Shopify Plus's infrastructure is fully managed and has demonstrated handling extreme concurrent load during events like Black Friday, which extends to B2B storefronts on the same platform. Magento/Adobe Commerce can scale to similar volumes but the responsibility for provisioning that capacity sits with your hosting setup, not the platform vendor, making load testing before peak season a necessary step rather than an assumption. A custom build's peak performance is entirely a function of the infrastructure and caching decisions your engineering team made, so it should be load-tested against your actual projected peak, not a generic benchmark.
 
 <script type="application/ld+json">
 {
@@ -146,6 +164,26 @@ Prioritize company account management, tiered and negotiated pricing, payment te
       "@type": "Question",
       "name": "What B2B ecommerce features should we prioritize when comparing final vendor options?",
       "acceptedAnswer": {"@type": "Answer", "text": "Prioritize company account management, tiered and negotiated pricing, payment terms like net-30 or net-60, bulk reordering from purchase history, and approval workflows for large orders, since these features most distinguish genuine B2B functionality from adapted B2C features."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do these platforms handle multi-currency and multi-entity B2B sales?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Shopify Plus supports multi-currency natively through Shopify Markets and separate storefronts per entity, while Magento/Adobe Commerce handles multi-entity setups through its Multi-Source Inventory and website/store-view structure, which is more flexible but requires more configuration. A custom build gives full control over currency and entity separation but requires building and maintaining it yourself."}
+    },
+    {
+      "@type": "Question",
+      "name": "Should we migrate from Magento 1 straight to Adobe Commerce, or consider Shopify Plus instead?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Since Magento 1 reached end-of-life, this is a full re-platforming decision, not a version upgrade, so it should be treated as an open comparison. If your customizations mirror what Adobe Commerce offers natively, staying in the Magento ecosystem preserves more of that logic; if they were workarounds for missing B2B features Shopify Plus now includes natively, it's worth reconsidering."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can we hide pricing and require login before showing our B2B catalog?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes on all three platforms: Magento through B2B module company-account permissions, Shopify Plus through its B2B channel with customer account gating, and a custom build through any gating logic you specify. Magento and Shopify Plus have this largely built in, while a custom build requires designing and maintaining the access-control layer yourself."}
+    },
+    {
+      "@type": "Question",
+      "name": "Which platform holds up best under a sudden spike in B2B order volume?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Shopify Plus's fully managed infrastructure has demonstrated handling extreme concurrent load during events like Black Friday. Magento/Adobe Commerce can scale similarly but capacity provisioning is your hosting responsibility, requiring load testing before peak season. A custom build's peak performance depends entirely on your engineering team's infrastructure and caching decisions."}
     }
   ]
 }

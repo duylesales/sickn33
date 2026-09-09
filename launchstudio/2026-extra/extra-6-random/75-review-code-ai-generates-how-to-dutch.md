@@ -43,6 +43,23 @@ Probeer voordat u samenvoegt bewust een invoer die u niet beschreef toen u de AI
 
 Onze engineers gevestigd in Ho Chi Minhstad volgen een versie van precies deze routine bij elk stuk door AI gegenereerde code dat door een LaunchStudio-review komt, omdat het patroon van "werkte in de demo, verkeerd in productie" constant voorkomt. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera — vertrouwd door Vodafone, TNO en CFLW — en deze reviewdiscipline maakt deel uit van wat die ondersteuning in de praktijk betekent. Wilt u liever een tweede paar ogen deze checklist voor u laten uitvoeren vóór lancering, dan kunt u [uw project beschrijven en wij reageren binnen één werkdag](https://launchstudio.eu/nl/#process). Voor meer over de engineeringnormen hierachter, zie [de offshore softwareontwikkelingsdiensten van Manifera](https://www.manifera.com/services/offshore-software-development/).
 
+## Een Zelfevaluatie: Bent U Daadwerkelijk aan het Beoordelen, of Kijkt U Alleen naar Groen?
+
+Tijdens het ontwikkelproces met AI-tools ontstaat gemakkelijk een gevaarlijke gewoonte: de oprichter kijkt vluchtig of de code compileert en de terminal groen kleurt, en klikt direct op 'Goedkeuren'. Vraag uzelf eerlijk af of u daadwerkelijk code beoordeelt, of slechts 'groene vinkjes scant':
+
+**U scant alleen naar groen als:**
+- U naar een pull request van 500 regels kijkt, binnen tien seconden denkt "het werkt in de preview" en direct merge't.
+- U nooit vraagt wáárom de AI-tool een specifieke bibliotheek heeft geïnstalleerd.
+- U erop vertrouwt dat geautomatiseerde tests alles dekken, zonder ooit te controleren wát die tests eigenlijk controleren.
+- U eventuele rode waarschuwingen in de console negeert zolang de knop maar klikbaar blijft.
+
+**U voert een échte beoordeling uit als:**
+- U bij elke wijziging in data-toegang vraagt: *"Hoe weet de server wie dit verzoek doet, en is dat geautoriseerd?"*
+- U controleert of nieuwe omgevingsvariabelen netjes zijn gedocumenteerd.
+- U doelbewust één foutscenario test om te zien of de applicatie elegant faalt.
+- U bereid bent een PR af te wijzen als de code onnodige technische schuld introduceert.
+
+Het kost slechts vijf minuten extra per release om écht te beoordelen in plaats van oppervlakkig te scannen. Die vijf minuten vormen de dunne scheidslijn tussen een platform dat groeit en een platform dat implodeert onder zijn eigen technische schuld.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: één cent per keer
@@ -89,11 +106,46 @@ Ja, in bijna alle gevallen is de fix geïsoleerd tot de specifieke berekeningsfu
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why read the diff before testing the feature?", "acceptedAnswer": { "@type": "Answer", "text": "A feature that visibly works tells you nothing about cases you didn't test, so reading the code first evaluates the actual logic rather than just the demo." } },
-    { "@type": "Question", "name": "What kind of AI-generated code deserves the most scrutiny?", "acceptedAnswer": { "@type": "Answer", "text": "Anything touching money, quantities, balances, or database state changes. Display and styling code carries far less risk." } },
-    { "@type": "Question", "name": "How do rounding bugs like Nick's actually get caught in a review?", "acceptedAnswer": { "@type": "Answer", "text": "By checking whether financial calculations use decimal-safe arithmetic instead of integer division, and testing values that don't divide evenly." } },
-    { "@type": "Question", "name": "Does Manifera apply this kind of review checklist to client codebases?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Manifera's team, including engineers based in Ho Chi Minh City, runs a structured version of this review on AI-generated code before treating it as production-ready." } },
-    { "@type": "Question", "name": "Can a rounding bug like this be fixed without touching the rest of the app?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, in nearly every case the fix is isolated to the specific calculation functions without changes to the surrounding frontend." } }
+    {
+      "@type": "Question",
+      "name": "Waarom de diff lezen voordat u de functie test?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat een functie die zichtbaar werkt u niets vertelt over wat er gebeurt in gevallen die u niet hebt getest — door eerst de code te lezen, beoordeelt u de daadwerkelijke logica in plaats van alleen de demo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welk soort door AI gegenereerde code verdient de meeste aandacht?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alles wat geld, hoeveelheden, saldi of statuswijzigingen naar een database raakt. Weergave- en stylingcode brengt veel minder risico met zich mee als er iets kleins mis is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe worden afrondingsbugs zoals die van Nick eigenlijk opgemerkt in een review?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door specifiek te controleren of financiële berekeningen decimaal-veilige rekenkunde gebruiken in plaats van integer-deling, en door te testen met waarden die niet gelijk delen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Past Manifera dit soort reviewchecklist toe op klantcodebases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Engineers van het team van Manifera, waaronder degenen gevestigd in Ho Chi Minhstad, voeren een gestructureerde versie van deze review uit op door AI gegenereerde code voordat deze als productieklaar wordt behandeld."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een afrondingsbug zoals deze worden opgelost zonder de rest van de app aan te raken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, in bijna alle gevallen is de fix geïsoleerd tot de specifieke berekeningsfuncties en zijn er geen wijzigingen nodig aan de omliggende frontend of gebruikerservaring."
+      }
+    }
   ]
 }
 </script>

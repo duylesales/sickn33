@@ -61,6 +61,12 @@ The 90-day accelerator clock is real pressure, but it should compress the vendor
 }
 </script>
 
+## Week-by-Week: Where the 90-Day Clock Actually Goes
+
+Founders consistently underestimate how much of a 90-day program is consumed before a single feature ships. A realistic allocation looks like this: days 1-5 for vendor selection and contract signing (compressed from the normal two-to-four-week process); days 6-10 for technical discovery and environment setup, which is dead time on the product but not skippable — a vendor who claims they can skip this and start writing demo-critical code on day one is usually cutting a corner that surfaces as rework later; weeks 2-9 (roughly 56 days) for actual build time against the 3-4 demo-critical flows; and the final week reserved entirely for stabilization, rehearsal, and buffer — never scheduled as build time, because it's the only slack in the whole plan.
+
+That leaves roughly 8 weeks of genuine build capacity out of 12, not 12. A vendor's proposal that implicitly assumes all 90 days are build days is either padding the timeline elsewhere or planning to compress discovery and stabilization in ways that increase demo-day risk. Ask any vendor to show their week-by-week plan explicitly before signing — a vendor who can't produce one hasn't actually thought through a 90-day sprint before, regardless of what their portfolio says.
+
 ## Frequently Asked Questions
 
 ### How much time should an accelerator founder spend vetting a vendor?
@@ -83,6 +89,22 @@ It's worth checking first. A vendor with a track record inside your specific acc
 
 Around the specific 3-4 flows that need to work flawlessly for a live investor demo, with everything else explicitly out of scope for the sprint. Weekly milestone check-ins, rather than one delivery date at the end, give enough runway to catch and fix problems before demo day arrives.
 
+### (Scenario: vendor proposes a plan using all 90 days as build time) Should a founder be worried if a vendor's timeline treats all 90 days as build time?
+
+Yes — a realistic 90-day plan reserves roughly a week for discovery and setup and a week for stabilization and rehearsal before demo day, leaving closer to 8 weeks of genuine build capacity. A vendor whose plan implicitly assumes all 90 days are build days is either padding elsewhere or planning to compress the stabilization buffer that actually protects the demo.
+
+### (Scenario: founder wants to swap vendors mid-accelerator after a bad start) Is it ever worth switching vendors partway through a 90-day accelerator program?
+
+Only if the current vendor has broken trust badly enough (missed a hard milestone with no credible explanation, or produced code with fundamental data-integrity problems) that the cost of switching is lower than the cost of continuing — switching consumes 1-2 weeks re-onboarding a new vendor, which is a large fraction of whatever runway remains. In most cases, renegotiating scope down to protect the demo-critical path with the existing vendor is faster than a mid-sprint switch.
+
+### (Scenario: accelerator provides a small vendor stipend that doesn't cover a full build) How should a founder use a small accelerator vendor stipend that doesn't cover the full build cost?
+
+Apply it to the highest-leverage, hardest-to-DIY piece of the build — typically backend architecture and data model design — and handle simpler frontend or no-code-compatible pieces internally or with the stipend's remainder, rather than spreading a small stipend thinly across the entire scope and getting a mediocre result everywhere.
+
+### (Scenario: founder needs to know what to demo if the vendor build isn't fully ready) What should a founder show at demo day if the vendor build isn't fully ready by day 90?
+
+Demo the working core flow live and be explicit and confident about what's next rather than attempting to force a broken secondary flow into the live demo — investors evaluating a 90-day accelerator build expect some rough edges, but a live failure during the demo itself is far more damaging than a scoped, honest "this part ships next sprint."
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,7 +114,11 @@ Around the specific 3-4 flows that need to work flawlessly for a live investor d
     {"@type": "Question", "name": "What corners are actually safe to cut in a 90-day accelerator build?", "acceptedAnswer": {"@type": "Answer", "text": "Extensive automated test coverage, polish on secondary or edge-case flows, and scalability beyond a few hundred users are generally safe to defer. Data integrity, reliability of the core demo path, and basic security on anything touching real user data should never be cut, even under time pressure."}},
     {"@type": "Question", "name": "Does timezone overlap really matter for a short sprint?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, disproportionately so. A vendor with near-zero timezone overlap can turn every clarifying question into a 24-hour round trip, which compounds fast inside a 12-week window with no slack. Four to six hours of working-day overlap, or explicit daily standups regardless of timezone, keeps a sprint moving."}},
     {"@type": "Question", "name": "Should an accelerator founder use a vendor recommended by the program or alumni?", "acceptedAnswer": {"@type": "Answer", "text": "It's worth checking first. A vendor with a track record inside your specific accelerator's cohort history has effectively already been vetted by founders who faced the identical 90-day constraint, which can shortcut a meaningful part of the vendor search without skipping the vetting itself."}},
-    {"@type": "Question", "name": "How should a 90-day vendor engagement be scoped for demo day?", "acceptedAnswer": {"@type": "Answer", "text": "Around the specific 3-4 flows that need to work flawlessly for a live investor demo, with everything else explicitly out of scope for the sprint. Weekly milestone check-ins, rather than one delivery date at the end, give enough runway to catch and fix problems before demo day arrives."}}
+    {"@type": "Question", "name": "How should a 90-day vendor engagement be scoped for demo day?", "acceptedAnswer": {"@type": "Answer", "text": "Around the specific 3-4 flows that need to work flawlessly for a live investor demo, with everything else explicitly out of scope for the sprint. Weekly milestone check-ins, rather than one delivery date at the end, give enough runway to catch and fix problems before demo day arrives."}},
+    {"@type": "Question", "name": "Should a founder be worried if a vendor's timeline treats all 90 days as build time?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — a realistic plan reserves roughly a week for discovery and a week for stabilization before demo day, leaving closer to 8 weeks of genuine build capacity. A plan assuming all 90 days are build days is either padding elsewhere or compressing the buffer that protects the demo."}},
+    {"@type": "Question", "name": "Is it ever worth switching vendors partway through a 90-day accelerator program?", "acceptedAnswer": {"@type": "Answer", "text": "Only if trust is broken badly enough that switching costs less than continuing — switching consumes 1-2 weeks re-onboarding, a large fraction of remaining runway. Usually renegotiating scope down with the existing vendor is faster than a mid-sprint switch."}},
+    {"@type": "Question", "name": "How should a founder use a small accelerator vendor stipend that doesn't cover the full build cost?", "acceptedAnswer": {"@type": "Answer", "text": "Apply it to the highest-leverage, hardest-to-DIY piece — typically backend architecture and data model design — and handle simpler frontend pieces internally, rather than spreading a small stipend thinly across the entire scope."}},
+    {"@type": "Question", "name": "What should a founder show at demo day if the vendor build isn't fully ready by day 90?", "acceptedAnswer": {"@type": "Answer", "text": "Demo the working core flow live and be explicit about what's next, rather than forcing a broken secondary flow into the live demo — a scoped, honest 'this ships next sprint' is far less damaging than a live failure during the demo."}}
   ]
 }
 </script>

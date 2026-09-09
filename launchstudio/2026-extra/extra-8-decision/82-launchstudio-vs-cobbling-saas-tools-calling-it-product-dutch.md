@@ -55,8 +55,7 @@ In plaats van €300/maand te betalen verspreid over een lappendeken van automat
 
 [Breng ons uw no-code workflow en laat ons er een echte backend van maken](https://launchstudio.eu/nl/#contact) — uw product draait sneller, kost minder en stopt met kapot gaan terwijl u slaapt.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Ontsnappen aan de 7-Tool Frankenstein-Stack
 
 Bastiaan Kuijpers, een recruitmentconsultant in Rotterdam, bouwde MatchVinder om kandidaatscreening te automatiseren voor niche technische engineeringfuncties. Zijn eerste MVP koppelde een Tally-formulier aan Zapier, dat een OpenAI-prompt triggerde, resultaten opsloeg in Airtable, kandidaten notificeerde via SendGrid en recruiters liet betalen via Stripe Checkout-links.

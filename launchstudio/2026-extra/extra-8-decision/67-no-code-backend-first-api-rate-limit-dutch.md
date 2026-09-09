@@ -65,8 +65,7 @@ Het afhandelen van rate limits in productie vereist vier dingen die AI-gegeneree
 
 [Vertel ons van welke API's uw prototype afhankelijk is](https://launchstudio.eu/nl/#contact) — het afhandelen van rate limits is een van de meest voorkomende productiefixes, en het is altijd goedkoper om het te implementeren voordat uw gebruikers de limiet vinden.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De AI-Functie Die Stopte Met Werken Bij 200 Gebruikers
 
 Viktor de Vries, vastgoedadviseur in Rotterdam, bouwde WoningWijs, een door Lovable gebouwde tool die de API van OpenAI gebruikte om gepersonaliseerde woningomschrijvingen te genereren voor Nederlandse huizenkopers op basis van woninggegevens en koopvoorkeuren. Tijdens tests met 15 bètagebruikers werd elke samenvatting direct gegenereerd. Nadat WoningWijs werd gedeeld in een Rotterdamse woning-Facebookgroep, sprong het aantal actieve gebruikers naar 230 op één dag.

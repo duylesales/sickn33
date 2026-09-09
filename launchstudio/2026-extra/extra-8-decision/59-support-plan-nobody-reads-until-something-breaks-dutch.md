@@ -71,8 +71,7 @@ Het Launch & Grow Package van LaunchStudio voegt een beheerde infrastructuurlaag
 
 [Vraag naar het Launch & Grow Package wanneer u uw offerte aanvraagt](https://launchstudio.eu/nl/#contact) — het supportplan van €49/maand is de goedkoopste verzekeringspolis die u ooit zult beoordelen.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Storing om 2 Uur 's Nachts Die Een Telefoonnummer Had
 
 Maaike Janssen, voormalig HR-recruiter in Breda, bouwde TalentPuls, een AI-gedreven matchingtool voor kandidaten voor kleine Nederlandse recruitmentbureaus, met Lovable. Ze lanceerde met het Launch Ready Package van LaunchStudio en sloeg het doorlopende supportplan aanvankelijk af — ze zou de hosting zelf wel uitzoeken.

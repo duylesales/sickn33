@@ -65,8 +65,7 @@ De hostingbeslissing is niet "Vercel gratis voor altijd of Vercel Pro voor altij
 
 [Vertel ons over uw applicatie en verwachte verkeer](https://launchstudio.eu/nl/#contact) — de juiste hostingopzet voor uw lancering is meestal eenvoudiger en goedkoper dan u zou aannemen.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Gratis Tier Die Door Zijn Gratis Heen Raakte
 
 Bram Scholten, voormalig leraar in Arnhem, bouwde StudiePlanner, een door Lovable aangedreven studieplanningstool voor Nederlandse universiteitsstudenten, en deployde deze op Vercel's Hobby-plan. Tijdens bètatests met 30 studenten was de applicatie snel, betrouwbaar, en kostte niets om te draaien.

@@ -107,6 +107,10 @@ LaunchStudio's engineeringteam, ondersteund door Manifera's meer dan 120 ingenie
 
 Het heeft periodieke beoordeling nodig – de specifieke signalen waar het op vertrouwt veranderen in de loop van de tijd naarmate browsers veranderen en misbruikers zich aanpassen. Een scoresysteem dat meerdere signalen afweegt en opnieuw wordt afgestemd tegen echte gegevens van gemarkeerde accounts houdt stand aanzienlijk beter dan een vaste regel die één keer wordt verzonden.
 
+### Wat kost het uitharden van een proefperiode-stroom bij LaunchStudio?
+
+Het bouwen van e-mailnormalisatie, device-fingerprinting en risico-scoring kost gemiddeld €1.150 en duurt 7 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

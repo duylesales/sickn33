@@ -7,6 +7,31 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Loggen Zonder Lekken: Wat Wel En Niet Thuishoort In Jouw Logs
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Loggen Zonder Lekken: Wat Wel En Niet Thuishoort In Jouw Logs",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/logging-without-leaking-what-belongs-in-your-logs"
+  }
+}
+</script>
+
+
 Applicatielogs — de observability-fundering elders in deze serie behandeld — zijn essentieel voor debuggen en begrijpen wat daadwerkelijk gebeurt in productie. Ze zijn ook, indien onzorgvuldig geïmplementeerd, een specifieke en makkelijk-over-het-hoofd-geziene plek waar gevoelige data stilletjes accumuleert in platte tekst, vaak veel langer en veel toegankelijker dan founders beseffen, en creëren een oprecht blootstellingsrisico vanuit precies de tooling bedoeld om veiligheid te verbeteren.
 
 ## Waarom Dit Gat Specifiek Doorglipt
@@ -36,6 +61,17 @@ Specifiek bekend-gevoelige velden (wachtwoorden, tokens, betalingsgegevens, en e
 [LaunchStudio](https://launchstudio.eu/nl/) reviewt en verhardt loggingpraktijken specifiek voor gevoelige-databloostelling als onderdeel van productiegereedheid, en verzekert dat jouw observability-setup veiligheid verbetert zonder onbedoeld een nieuw blootstellingsoppervlak te creëren, gesteund door Manifera's data-beveiligingsbewuste engineeringpraktijken.
 
 [Laat jouw logs controleren op wat er niet in zou moeten zitten](https://launchstudio.eu/nl/#calculator) — de tooling bedoeld om je te helpen problemen te vinden zou er zelf geen moeten worden.
+
+## Een Praktische Checklist voor het Vanaf het Begin Correct Inrichten van Logging
+
+Het achteraf opschonen van maanden aan ongefilterde, vervuilde serverlogs is aanzienlijk complexer dan direct vanaf de start een hygiënisch logging-patroon neerzetten. Vier concrete stappen voor een schone start:
+
+- **Filter gevoelige velden automatisch uit**: Configureer je logger (bijv. Pino of Winston) om sleutels zoals `password`, `token`, `secret`, `credit_card` en `api_key` automatisch te maskeren met `[REDACTED]`.
+- **Log gestructureerd in JSON**: Zorg dat logs als JSON-objecten worden weggeschreven met tijdstempel, logniveau, request-ID en tenant-ID, zodat je eenvoudig kunt filteren.
+- **Vermijd ruwe `console.log` in productie**: Verwijder willekeurige debug-logs die volledige request-payloads dumpen.
+- **Stel een strikt retentiebeleid in**: Bewaar operationele logs maximaal 14 tot 30 dagen om te voldoen aan de AVG/GDPR-dataminimalisatie.
+
+[LaunchStudio](https://launchstudio.eu/nl/) richt conforme, privacy-veilige logging-infrastructuur in voor je applicatie.
 
 ## Echt voorbeeld
 
@@ -75,3 +111,52 @@ Niet significant — genoeg context behouden om een probleem te diagnosticeren (
 ### Hoe kan een founder voorkomen dat dit patroon terugkeert naarmate nieuwe debug-logging na verloop van tijd toegevoegd wordt, vergelijkbaar met hoe Marnix' originele bug-specifieke logging nooit verwijderd werd?
 
 Een gewoonte vestigen van het reviewen en verwijderen van tijdelijke debug-logging zodra het originele doel opgelost is, in plaats van het indefinitief te laten staan, gecombineerd met een periodieke bredere loggingaudit als onderdeel van routineonderhoud, pakt zowel het onmiddellijke geval als het terugkerende patroon aan dat het ongemerkt liet voortbestaan.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik de logs van mijn eigen app controleren op dit soort gevoelige-databloostelling zonder een toegewijde audit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jouw loggingcode direct reviewen voor elk punt waar volledige request- of responspayloads gevangen worden, vooral rond authenticatie- en betalingsflows, en daadwerkelijke geaccumuleerde logsamples controleren op iets dat eruitziet als een wachtwoord, token, of betalingsgegeven, is een redelijke eerste controle, hoewel een systematische audit patronen vangt die een snelle handmatige review zou kunnen missen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit risico specifiek voor debug-logging toegevoegd voor een tijdelijk doel, zoals Marnix' geval, of geldt het ook voor standaard-foutregistratietools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het geldt breed — zelfs standaard, gerenommeerde foutregistratietools zoals Sentry kunnen gevoelige data vangen als de applicatiecode het doorgeeft als onderdeel van foutcontext, wat betekent dat de discipline van gevoelige velden uitsluiten ertoe doet ongeacht welke specifieke logging- of foutregistratietool je gebruikt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Als gevoelige data al geaccumuleerd is in historische logs, is verwijderen voldoende, of draagt blootgestelde data in logs dezelfde \"neem-gecompromitteerd-aan\"-logica als blootgestelde geheimen elders in deze serie behandeld?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dezelfde onderliggende logica is van toepassing — als er enige redelijke mogelijkheid is dat de historische logs benaderd werden door iemand die die toegang niet had moeten hebben, zou de blootgestelde data (een wachtwoord, bijvoorbeeld) behandeld moeten worden als potentieel gecompromitteerd en, waar van toepassing, getroffen gebruikers aansporen het te wijzigen, in plaats van aan te nemen dat verwijdering alleen de blootstelling volledig oplost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Maakt het redigeren van gevoelige velden uit logs debuggen betekenisvol moeilijker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet significant — genoeg context behouden om een probleem te diagnosticeren (dat een inlogpoging faalde, ruwweg wanneer, voor welk algemeen foutentype) vereist niet de daadwerkelijke gevoelige waarde zelf; redactie target specifiek het verwijderen van de gevoelige inhoud terwijl de omringende context behouden blijft die daadwerkelijk nuttig is voor debuggen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan een founder voorkomen dat dit patroon terugkeert naarmate nieuwe debug-logging na verloop van tijd toegevoegd wordt, vergelijkbaar met hoe Marnix' originele bug-specifieke logging nooit verwijderd werd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een gewoonte vestigen van het reviewen en verwijderen van tijdelijke debug-logging zodra het originele doel opgelost is, in plaats van het indefinitief te laten staan, gecombineerd met een periodieke bredere loggingaudit als onderdeel van routineonderhoud, pakt zowel het onmiddellijke geval als het terugkerende patroon aan dat het ongemerkt liet voortbestaan."
+      }
+    }
+  ]
+}
+</script>

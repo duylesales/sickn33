@@ -7,6 +7,31 @@ Doelgroep: AI-Native Founder (niet-technisch)
 
 # Wat "80% Van AI-prototypes Bereikt Nooit Productie" Daadwerkelijk Betekent
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wat \"80% Van AI-prototypes Bereikt Nooit Productie\" Daadwerkelijk Betekent",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/what-80-percent-ai-prototypes-never-reach-production-means"
+  }
+}
+</script>
+
+
 80% van AI-gebouwde projecten bereikt nooit productie — een statistiek vaak genoeg geciteerd in deze ruimte om bijna achtergrondruis te zijn geworden, herhaald zonder veel onderzoek van wat daadwerkelijk in dat getal zit. Het is de moeite waard specifiek uit te pakken, omdat de oorzaken erin gebundeld niet uniform zijn, en begrijpen welke oorzaak daadwerkelijk speelt in jouw eigen geval doet er aanzienlijk meer toe dan het hoofdgetal zelf.
 
 ## De Statistiek Bundelt Meerdere Oprecht Verschillende Faalmodi
@@ -38,6 +63,18 @@ Als jouw prototype een gevalideerd idee vertegenwoordigt waar je nog steeds in g
 [LaunchStudio](https://launchstudio.eu/nl/) pakt specifiek de productiegereedheidsgat-subset van deze statistiek aan — de founders stilgevallen niet door verloren overtuiging maar door een technisch gat tussen prototype en lancering — gesteund door Manifera's engineeringtrackrecord over 160+ opgeleverde projecten die het naar productie haalden.
 
 [Ontdek of jouw specifieke stagnatie aanpakbaar is](https://launchstudio.eu/nl/#contact) — de hoofdstatistiek bundelt oorzaken die niet allemaal gelijk van toepassing zijn op jouw situatie.
+
+## Een Korte Zelfdiagnose om Jouw Categorie te Bepalen
+
+In plaats van de vier categorieën van vastgelopen prototypes abstract te laten, helpt het om ze puntsgewijs op je eigen situatie toe te passen:
+
+1. **Geloof ik nog in het idee?** Heb ik concrete signalen (een wachtlijst, enthousiaste pilot-gesprekken) dat er marktvraag is?
+2. **Is de code functioneel gereed?** Kan een gebruiker de kernwaarde van het product zelfstandig ervaren in de interface?
+3. **Waarom ben ik nog niet live?** Is het angst voor technische faalmodi onder belasting, of twijfel over de markt?
+
+Als de blokkade puur technisch is, is het probleem oplosbaar met een gerichte verharding. Laat een ontbrekende backend-laag niet het einde betekenen van een kansrijk product.
+
+[LaunchStudio](https://launchstudio.eu/nl/) transformeert 80%-prototypes in volwaardige, verkoopbare SaaS-oplossingen.
 
 ## Echt voorbeeld
 
@@ -77,3 +114,52 @@ Behandel het als een richtinggevend nuttig, breed geciteerd cijfer dat een echt,
 ### Hoe verhoudt LaunchStudio's eigen trackrecord zich tot deze bredere industriestatistiek?
 
 Manifera's 160+ opgeleverde projecten vertegenwoordigen specifiek prototypes die succesvol door het productiegereedheidsgat kwamen — een trackrecord binnen de aanpakbare subset van oorzaken die dit artikel beschrijft, geen bewering over het oplossen van de marktfit- of overtuigingsgerelateerde oorzaken die volledig buiten productiegereedheidswerk vallen.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe ontdek ik eerlijk welke categorie van de 80%-statistiek daadwerkelijk van toepassing is op mijn eigen stilgevallen prototype?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vraag jezelf direct af: geloof ik nog steeds in het onderliggende idee en heb ik validatie ervoor, of is mijn eigen overtuiging daadwerkelijk vervaagd? Als overtuiging blijft en de stagnatie specifiek gaat over niet weten hoe een technisch gat te dichten, zit je in de aanpakbare categorie die dit artikel en deze serie beschrijven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het mogelijk dat mijn prototype zowel een oprecht marktprobleem als een productiegereedheidsgat tegelijkertijd heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, deze sluiten elkaar niet uit — een prototype kan zowel een echte marktuitdaging als een aanpakbaar technisch gat hebben, hoewel het aanpakken van het technische gat de marktvraag niet oplost, en het is de moeite waard eerlijk met jezelf te zijn over welke zorg daadwerkelijk jouw aarzeling drijft om te voorkomen dat je eerst het verkeerde probleem oplost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Helpt het krijgen van een productiegereedheidsaudit verhelderen welke categorie van toepassing is, of pakt het alleen het technische gat zelf aan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voornamelijk het laatste, hoewel het proces van een concrete scope en tijdlijn krijgen, zoals in Twans geval, vaak zelf verheldert of jouw aarzeling echt over het technisch onbekende ging (nu opgelost door een concreet antwoord te hebben) of over iets compleet anders, wat duidelijker wordt zodra de technische onzekerheid uit de vergelijking verwijderd is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is de 80%-statistiek zelf betrouwbaar, of moeten founders sceptisch zijn om het als precies accuraat te citeren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Behandel het als een richtinggevend nuttig, breed geciteerd cijfer dat een echt, oprecht patroon vertegenwoordigt in plaats van een precies gemeten, universeel consistente statistiek — het specifieke getal doet er minder toe dan het begrijpen van de gebundelde oorzaken erachter en welke daadwerkelijk op jouw situatie van toepassing is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verhoudt LaunchStudio's eigen trackrecord zich tot deze bredere industriestatistiek?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manifera's 160+ opgeleverde projecten vertegenwoordigen specifiek prototypes die succesvol door het productiegereedheidsgat kwamen — een trackrecord binnen de aanpakbare subset van oorzaken die dit artikel beschrijft, geen bewering over het oplossen van de marktfit- of overtuigingsgerelateerde oorzaken die volledig buiten productiegereedheidswerk vallen."
+      }
+    }
+  ]
+}
+</script>

@@ -96,20 +96,53 @@ Manifera's engineeringteam, meer dan 120 man sterk, gecoördineerd via LaunchStu
 ### Hoe snel kan een deployment-audit plaatsvinden?
 De meeste beoordelingen van deployment-infrastructuur en herstelwerkzaamheden worden binnen één tot twee weken afgerond. Boek een gratis introductiegesprek van 15 minuten om uw specifieke inrichting te bespreken.
 
-### Wat is een rollback-oefening en hoe vaak zou ik er een moeten uitvoeren?
-Een rollback-oefening is een bewuste test waarbij u een gebroken wijziging uitrolt naar een niet-kritiek onderdeel van uw app en klokt hoe snel u deze kunt herstellen. Het uitvoeren van zo'n test voordat u deze daadwerkelijk nodig heeft, in plaats van tijdens een live incident, is het verschil tussen een rustige fix van vijf minuten en een paniekerig uur van debuggen onder druk.
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Ik ben technisch — kan ik niet gewoon mijn eigen deployment pipeline bouwen?", "acceptedAnswer": { "@type": "Answer", "text": "Dat kan, maar LaunchStudio wordt ingeschakeld wanneer een zelfgebouwde pipeline gaten vertoont onder echte belasting." } },
-    { "@type": "Question", "name": "Raakt LaunchStudio mijn applicatiecode aan tijdens een deployment-herstel?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, we bouwen infrastructuur rond uw applicatie zonder frontend of kernlogica te wijzigen." } },
-    { "@type": "Question", "name": "Is dit alleen relevant voor oprichters in Almelo?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, dit geldt breed, al zien we het patroon vaak bij technisch ingestelde oprichters in Overijssel." } },
-    { "@type": "Question", "name": "Wie bouwt de deployment-infrastructuur?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineeringteam van 120+ engineers, gecoördineerd via LaunchStudio's kantoor in Amsterdam." } },
-    { "@type": "Question", "name": "Hoe snel kan een deployment-audit plaatsvinden?", "acceptedAnswer": { "@type": "Answer", "text": "De meeste beoordelingen van deployment-infrastructuur worden binnen één tot twee weken afgerond." } },
-    { "@type": "Question", "name": "Wat is een rollback-oefening en hoe vaak zou ik er een moeten uitvoeren?", "acceptedAnswer": { "@type": "Answer", "text": "Een rollback-oefening test het bewust herstellen van een gebroken uitrol. Het vooraf oefenen maakt van paniekerig debuggen een rustige fix." } }
+    {
+      "@type": "Question",
+      "name": "Ik ben technisch — kan ik niet gewoon mijn eigen deployment pipeline bouwen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dat kan, maar LaunchStudio wordt ingeschakeld wanneer een zelfgebouwde pipeline gaten vertoont onder echte belasting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Raakt LaunchStudio mijn applicatiecode aan tijdens een deployment-herstel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, we bouwen infrastructuur rond uw applicatie zonder frontend of kernlogica te wijzigen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit alleen relevant voor oprichters in Almelo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, dit geldt breed, al zien we het patroon vaak bij technisch ingestelde oprichters in Overijssel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie bouwt de deployment-infrastructuur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manifera's engineeringteam van 120+ engineers, gecoördineerd via LaunchStudio's kantoor in Amsterdam."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel kan een deployment-audit plaatsvinden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste beoordelingen van deployment-infrastructuur worden binnen één tot twee weken afgerond."
+      }
+    }
   ]
 }
 </script>

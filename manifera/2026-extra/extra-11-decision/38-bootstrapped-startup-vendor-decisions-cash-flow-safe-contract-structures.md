@@ -50,6 +50,18 @@ Cash-flow-safe doesn't have to mean cutting corners on the engagement itself —
 
 A bootstrapped startup's vendor contract needs to be built around the reality that revenue, not a funding round, is what pays every invoice — which means payment structure deserves as much negotiation attention as price or scope. Milestone-based, smaller, more frequent payments, phased builds with natural pause points, and scope sized against trailing revenue rather than hoped-for growth all reduce cash flow risk without sacrificing what actually gets built. Manifera structures bootstrapped client engagements around exactly this kind of flexible, milestone-tied model — see our approach to scalable [dedicated team](https://www.manifera.com/services/offshore-software-development/) engagements, and get in touch through our [contact page](https://www.manifera.com/contact-us/) to talk through a payment structure that fits your actual revenue timing.
 
+## A Sample Milestone Schedule for a €40,000 Bootstrapped Build
+
+Concrete numbers make this easier to negotiate than abstract principles. For a €40,000 MVP build funded from revenue, a cash-flow-safe schedule typically looks like this rather than a 40/60 upfront/delivery split:
+
+- **10% (€4,000) on contract signing** — covers vendor onboarding and initial technical discovery, small enough not to strain a single month's revenue.
+- **20% (€8,000) at completion of core architecture and first working slice** — typically 3-4 weeks in, tied to a demonstrable milestone rather than a calendar date.
+- **20% (€8,000) at mid-build milestone** — a second working increment, timed to land in a normal revenue month rather than a known-slow one (avoid scheduling large milestones against a seasonal dip if your revenue is seasonal).
+- **30% (€12,000) at feature-complete, pre-launch milestone** — the largest single payment, but still under a third of total contract value.
+- **20% (€8,000) 30 days post-launch**, after a short stabilization window — this holds the vendor accountable for post-launch bug fixes and gives the founder a final checkpoint before the engagement fully closes.
+
+This structure caps any single outlay at 30% of total contract value and spreads payment across 4-5 months instead of 2, which matters far more to a bootstrapped founder's cash position than the total contract price does.
+
 ## Frequently Asked Questions
 
 ### Why don't standard vendor payment terms work well for bootstrapped startups?
@@ -72,6 +84,22 @@ Against trailing three-month average revenue, not projected or hoped-for future 
 
 No — payment timing and delivery quality are separate negotiations. A well-structured milestone contract for a bootstrapped client should still include the same rigor around code ownership, testing, and documentation as a funded startup's contract; the difference is purely in how and when payment happens.
 
+### (Scenario: founder worried a vendor will refuse smaller, more frequent invoices) Will a good vendor actually agree to bi-weekly invoicing instead of monthly?
+
+Most vendors experienced with bootstrapped or SMB clients will, since smaller, frequent invoices reduce their own collections risk as much as they reduce the client's cash flow risk. A vendor who refuses any flexibility on invoicing cadence and insists on large monthly or upfront payments is often a sign they're not structurally set up for revenue-funded clients.
+
+### (Scenario: bootstrapped company hits an unexpected slow revenue month mid-build) What should a founder do if revenue drops unexpectedly in the middle of a milestone-based build?
+
+Raise it with the vendor immediately rather than missing a payment — most milestone-based contracts have a natural pause point between phases, and a vendor who values the relationship will usually agree to delay the next milestone's start rather than losing the client entirely. This is exactly why phased, milestone-priced contracts are safer than a single fixed-price contract for a full build.
+
+### (Scenario: founder is choosing between a monthly retainer and per-milestone pricing) Is a capped monthly retainer or milestone-based pricing better for a bootstrapped startup?
+
+Milestone-based pricing is generally safer for a bootstrapped company doing a discrete, scoped build, since payment ties directly to delivered value rather than elapsed time. A capped, flexible retainer fits better for ongoing work post-launch, where scope is less clearly bounded but hours can still be scaled up or down against revenue month to month.
+
+### (Scenario: revenue-funded company considering a dedicated offshore team vs. a large agency) Does a dedicated offshore team model fit bootstrapped cash flow better than a traditional agency contract?
+
+Generally yes — a dedicated team priced at a scalable monthly rate lets a bootstrapped founder adjust hours or team size against actual revenue month to month, whereas a traditional agency's large fixed-project quote concentrates cash flow risk into fewer, larger payments regardless of how revenue performs that quarter.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -81,7 +109,11 @@ No — payment timing and delivery quality are separate negotiations. A well-str
     {"@type": "Question", "name": "What payment structure works best for a revenue-funded startup?", "acceptedAnswer": {"@type": "Answer", "text": "Milestone-based payment tied to completed, working increments, combined with smaller and more frequent invoicing rather than one large monthly bill. A capped retainer with the flexibility to scale hours up or down month to month, rather than a fixed-term contract, also helps match spend to actual revenue performance."}},
     {"@type": "Question", "name": "Should a bootstrapped startup use a fixed-price contract for a full build?", "acceptedAnswer": {"@type": "Answer", "text": "Generally no — a single large fixed-price contract concentrates cash flow risk into one or two big payments regardless of how revenue performs. Breaking the build into smaller, sequential, milestone-priced phases is safer, since each phase is individually affordable and gives a natural pause point if revenue dips."}},
     {"@type": "Question", "name": "How should a bootstrapped founder size a vendor engagement's budget?", "acceptedAnswer": {"@type": "Answer", "text": "Against trailing three-month average revenue, not projected or hoped-for future revenue. Treat any acceleration in scope or timeline as something to fund once growth is actually realized, since a bootstrapped company has no investor capital to cushion a miscalculation."}},
-    {"@type": "Question", "name": "Does a cash-flow-safe contract mean lower quality work?", "acceptedAnswer": {"@type": "Answer", "text": "No — payment timing and delivery quality are separate negotiations. A well-structured milestone contract for a bootstrapped client should still include the same rigor around code ownership, testing, and documentation as a funded startup's contract; the difference is purely in how and when payment happens."}}
+    {"@type": "Question", "name": "Does a cash-flow-safe contract mean lower quality work?", "acceptedAnswer": {"@type": "Answer", "text": "No — payment timing and delivery quality are separate negotiations. A well-structured milestone contract for a bootstrapped client should still include the same rigor around code ownership, testing, and documentation as a funded startup's contract; the difference is purely in how and when payment happens."}},
+    {"@type": "Question", "name": "Will a good vendor actually agree to bi-weekly invoicing instead of monthly?", "acceptedAnswer": {"@type": "Answer", "text": "Most vendors experienced with bootstrapped or SMB clients will, since smaller, frequent invoices reduce their own collections risk too. A vendor who refuses any invoicing flexibility and insists on large monthly or upfront payments is often not structurally set up for revenue-funded clients."}},
+    {"@type": "Question", "name": "What should a founder do if revenue drops unexpectedly in the middle of a milestone-based build?", "acceptedAnswer": {"@type": "Answer", "text": "Raise it with the vendor immediately rather than missing a payment — most milestone-based contracts have a natural pause point between phases, and a vendor who values the relationship will usually agree to delay the next milestone's start."}},
+    {"@type": "Question", "name": "Is a capped monthly retainer or milestone-based pricing better for a bootstrapped startup?", "acceptedAnswer": {"@type": "Answer", "text": "Milestone-based pricing is generally safer for a discrete, scoped build since payment ties to delivered value. A capped, flexible retainer fits better for ongoing post-launch work, where hours can still be scaled up or down against revenue."}},
+    {"@type": "Question", "name": "Does a dedicated offshore team model fit bootstrapped cash flow better than a traditional agency contract?", "acceptedAnswer": {"@type": "Answer", "text": "Generally yes — a dedicated team priced at a scalable monthly rate lets a founder adjust hours or team size against actual revenue, whereas a traditional agency's large fixed-project quote concentrates cash flow risk into fewer, larger payments."}}
   ]
 }
 </script>

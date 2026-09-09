@@ -60,6 +60,12 @@ The gap between a systems integrator's pitch and its actual delivery capability 
 
 Manifera positions itself as the durable delivery partner for the phase after the SI's initial rollout — see our [enterprise-focused engagement model](https://www.manifera.com/about-us/our-way-of-working/) for how a dedicated team picks up ongoing enhancement work with full knowledge transfer from the original integration.
 
+## Reading the Rate Card: What Staffing Ratios Actually Cost
+
+The staffing pyramid an SI proposes shows up directly in the blended rate card, and IT Managers who compare only the total quoted price miss the signal entirely. A healthy enterprise rollout staffing pyramid runs roughly 10-15% partner/principal time, 25-30% senior architect and delivery lead time, and the remaining 55-65% mid-level and junior consultant time — a blended day rate in that range typically lands 20-30% below an SI quoting a top-heavy pyramid on paper but staffing 70%+ junior hours in practice, which is the actual bait-and-switch mechanism: the rate card looks senior-weighted at proposal stage because pitch-team rates get blended into the estimate, then the delivered mix skews junior once the engagement starts.
+
+Ask for the rate card broken out by seniority tier with the percentage of total budgeted hours at each tier, not just a single blended rate, and compare that breakdown against the named staffing plan. A mismatch between the rate card's assumed seniority mix and the actual named individuals' seniority levels is the clearest quantifiable early-warning sign available before signature, and it's visible in the proposal document itself if you know to ask for the breakdown rather than accepting a single blended number.
+
 ## Frequently Asked Questions
 
 ### How can an IT Manager prevent the pitch team from being replaced after signature?
@@ -76,6 +82,18 @@ Ask specifically about a phase of a comparable-scale engagement that didn't go a
 
 ### What knowledge transfer provisions should be negotiated before signing an SI contract?
 Documentation standards, a defined handover period with the SI's team available for internal onboarding, and source access plus architecture documentation for any custom integration work. This should be settled during vendor selection, alongside a decision on whether the SI is the right long-term maintenance partner or whether a separate team picks up post-rollout enhancement work.
+
+### (Scenario: Two competing SI bids both plan to subcontract execution to the same third-party offshore delivery center) What if two competing SI proposals both plan to subcontract to the same offshore delivery partner?
+Evaluate the subcontracted partner directly rather than treating the two bids as differentiated — request the subcontractor's own staffing plan, methodology, and references independently of the prime SI's brand, since the actual delivery quality and risk profile will track the subcontractor, not whichever logo is on the proposal cover.
+
+### (Scenario: The rollout spans business units in multiple countries with different data residency rules) How should SI evaluation change for a rollout spanning multiple regulatory jurisdictions?
+Add jurisdiction-specific data residency and compliance experience as its own weighted evaluation criterion, and ask for references from rollouts that specifically crossed the same regulatory boundaries (e.g., GDPR alongside a non-EU data protection regime), since general enterprise rollout experience doesn't guarantee familiarity with cross-border data handling requirements.
+
+### (Scenario: An SI proposes a fixed-price contract for a rollout expected to have evolving requirements) Is a fixed-price contract appropriate for an enterprise-wide rollout with evolving requirements?
+Generally no — a fixed-price structure incentivizes the SI to resist legitimate scope evolution once business units start interacting with the system, which is exactly when the most valuable requirement refinements surface. A time-and-materials or milestone-based structure with a capped budget and change-order process built in from the start better matches a rollout where iterative learning is expected.
+
+### (Scenario: The SI's staffing plan doesn't address what happens if a legacy-system subject matter expert leaves mid-project) How should the contract address key-person risk on the SI's own team, not just the client's?
+Require the SI to name a designated backup or shadow resource for any role identified as carrying unique legacy-system knowledge, with a defined minimum overlap period before any planned rotation, and require notice and a transition plan for unplanned departures — the same key-person discipline an IT Manager would demand of an internal team should apply to the SI's staff.
 
 <script type="application/ld+json">
 {
@@ -120,6 +138,38 @@ Documentation standards, a defined handover period with the SI's team available 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Documentation standards, a defined handover period with the SI's team available for internal onboarding, and source access plus architecture documentation for any custom integration work. This should be settled during vendor selection, alongside a decision on whether the SI is the right long-term maintenance partner or whether a separate team picks up post-rollout enhancement work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if two competing SI proposals both plan to subcontract to the same offshore delivery partner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evaluate the subcontracted partner directly rather than treating the two bids as differentiated — request the subcontractor's own staffing plan, methodology, and references independently of the prime SI's brand, since delivery quality and risk will track the subcontractor, not the logo on the proposal cover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should SI evaluation change for a rollout spanning multiple regulatory jurisdictions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add jurisdiction-specific data residency and compliance experience as its own weighted evaluation criterion, and ask for references from rollouts that specifically crossed the same regulatory boundaries, since general enterprise rollout experience doesn't guarantee familiarity with cross-border data handling requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a fixed-price contract appropriate for an enterprise-wide rollout with evolving requirements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally no — a fixed-price structure incentivizes the SI to resist legitimate scope evolution once business units start interacting with the system. A time-and-materials or milestone-based structure with a capped budget and change-order process built in better matches a rollout where iterative learning is expected."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should the contract address key-person risk on the SI's own team, not just the client's?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Require the SI to name a designated backup or shadow resource for any role carrying unique legacy-system knowledge, with a defined minimum overlap period before any planned rotation, and require notice and a transition plan for unplanned departures."
       }
     }
   ]

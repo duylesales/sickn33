@@ -39,6 +39,21 @@ Manifera brengt dezelfde productieharding-discipline naar door AI gegenereerde b
 
 Het goede nieuws dat in dit probleem verborgen zit, is dat het oplossen ervan de frontend helemaal niet hoeft aan te raken. Ratelimiting, verzoekvalidatie en basale backendharding zijn additief — ze zitten achter de interface die klanten al vertrouwen, en beschermen deze in plaats van hem te vervangen. Een oprichter hoeft de polijsting die hij heeft opgebouwd niet op te offeren om deze kloof te dichten; hij heeft alleen iemand nodig die naar de laag kijkt die niemand kan zien en bevestigt dat deze daadwerkelijk de laag kan dragen waarop iedereen het product beoordeelt.
 
+## Vijf Vragen Die een Niet-Technicus Kan Stellen om Achter de Glans te Kijken
+
+Een prachtige gebruikersinterface met vloeiende animaties zegt helemaal niets over de kwaliteit van de onderliggende backend. Als niet-technische oprichter kunt u met deze vijf gerichte vragen feilloos achterhalen of er daadwerkelijk over de architectuur is nagedacht:
+
+**1. "Wat gebeurt er als de database tijdens een transactie vijf seconden niet reageert?"** Let op het antwoord: praat de ontwikkelaar over time-outafhandeling, automatische herpogingen en duidelijke gebruikersfoutmeldingen, of wordt het stil omdat men er simpelweg van uitgaat dat de database altijd direct antwoordt?
+
+**2. "Kun je me de plek in de code laten zien waar wordt gecontroleerd dat Klant A de facturen van Klant B niet kan zien?"** Een engineer die Row-Level Security of autorisatie-middleware heeft ingericht, kan u binnen dertig seconden exact het bestand en de regels aanwijzen. Moet men lang zoeken of praten over "dat regelt de frontend wel", dan weet u dat autorisatie ontbreekt.
+
+**3. "Hoe voorkomen we dat een kwaadwillende bot duizend accounts per minuut aanmaakt?"** Vraag naar de aanwezigheid van rate limiting, CAPTCHA's of bot-detectie op registratie- en inlogroutes.
+
+**4. "Waar slaan we back-ups op en hoe vaak hebben we een hersteltest uitgevoerd?"** Een back-up die nooit succesvol is teruggezet, is geen back-up maar een hypothese. Vraag wanneer de laatste hersteltest daadwerkelijk heeft plaatsgevonden.
+
+**5. "Welke logging is actief als een betaling mislukt?"** Zorg dat er een audittrail bestaat waarin exact wordt vastgelegd welke foutcode de betalingsprovider teruggaf, zodat u een klant direct kunt assisteren zonder te hoeven gissen.
+
+Het stellen van deze vragen dwingt transparantie af en toont direct aan of uw applicatie een solide fundament heeft of slechts een dunne façade is.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de middag dat de API uitviel
@@ -85,11 +100,46 @@ Ja — onze technici, waaronder het team gevestigd in Ho Chi Minhstad, voeren sp
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Can a well-designed frontend really hide a broken backend?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — visual polish and backend safety are produced by different parts of the build process and don't necessarily correlate at all, which is exactly why relying on appearance to judge a product's readiness is unreliable." } },
-    { "@type": "Question", "name": "What is rate limiting and why does it matter?", "acceptedAnswer": { "@type": "Answer", "text": "Rate limiting caps how many requests a single source can send in a given time period, preventing one script, bot, or spike in traffic from overwhelming your backend entirely." } },
-    { "@type": "Question", "name": "How would I know if my own AI-built app lacks this protection?", "acceptedAnswer": { "@type": "Answer", "text": "If nobody has explicitly added rate limiting or request validation since the initial build, it's very likely absent — these aren't defaults most AI coding tools include unless specifically instructed to." } },
-    { "@type": "Question", "name": "Does fixing this require changing the frontend?", "acceptedAnswer": { "@type": "Answer", "text": "No. Rate limiting and validation are backend-layer fixes that sit behind the existing interface, meaning the frontend customers already trust doesn't need to change at all." } },
-    { "@type": "Question", "name": "Does LaunchStudio test for this before an app goes live?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — our engineers, including the team based in Ho Chi Minh City, specifically load-test AI-generated backends as part of a production readiness review, precisely because this class of gap produces no visible symptoms until it fails." } }
+    {
+      "@type": "Question",
+      "name": "Kan een goed ontworpen frontend echt een kapotte backend verbergen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — visuele polijsting en backendveiligheid worden geproduceerd door verschillende onderdelen van het bouwproces en correleren helemaal niet noodzakelijk, wat precies de reden is waarom vertrouwen op uiterlijk om de gereedheid van een product te beoordelen onbetrouwbaar is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is ratelimiting en waarom is het belangrijk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ratelimiting beperkt hoeveel verzoeken één bron in een bepaalde tijdsperiode kan versturen, en voorkomt dat één script, bot of piek in verkeer uw backend volledig overweldigt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik weten of mijn eigen door AI gebouwde app deze bescherming mist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Als niemand sinds de eerste build expliciet ratelimieten of verzoekvalidatie heeft toegevoegd, ontbreekt dit zeer waarschijnlijk — dit zijn geen standaardinstellingen die de meeste AI-codeertools meenemen, tenzij hier specifiek om is gevraagd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vereist het oplossen hiervan het wijzigen van de frontend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Ratelimiting en validatie zijn oplossingen op backendniveau die achter de bestaande interface zitten, wat betekent dat de frontend die klanten al vertrouwen helemaal niet hoeft te veranderen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Test LaunchStudio hierop voordat een app live gaat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — onze technici, waaronder het team gevestigd in Ho Chi Minhstad, voeren specifiek belastingtests uit op door AI gegenereerde backends als onderdeel van een productiegereedheidsbeoordeling, precies omdat dit soort kloof geen zichtbare symptomen produceert totdat hij faalt."
+      }
+    }
   ]
 }
 </script>

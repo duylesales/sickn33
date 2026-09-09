@@ -121,50 +121,42 @@ Nee – het betekent dat de specifieke paden die u getest heeft standhielden, ni
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Testen standaard QA-processen op randgevallen zoals negatieve hoeveelheden?",
+      "name": "Zou een QA-ingenieur typisch testen op negatieve hoeveelheden als onderdeel van standaard functioneel testen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet altijd — dit vereist een specifieke vijandige denkmoed die niet automatisch onderdeel is van QA."
+        "text": "Niet altijd – standaard functionele QA is vaak gebouwd rond \"werkt dit met verwachte invoer,\" en het testen van opzettelijk onredelijke invoer (negatieve getallen, extreme waarden) vereist een specifieke vijandige denkmoed die niet automatisch onderdeel is van elk QA-proces."
       }
     },
     {
       "@type": "Question",
-      "name": "Geldt deze validatiekloof alleen voor marktplaatsproducten?",
+      "name": "Geldt dit soort kloof alleen voor marktplaats- of e-commerceproducten, of geldt het breder?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, het geldt voor elk product met numerieke invoer die een berekening voedt, zoals boekingen of abonnementen."
+        "text": "Het geldt voor in feite elk product met numerieke invoer die een berekening voedt – hoeveelheden, prijzen, duur, kortingen. Dit betekent dat boekingsplatformen, abonnements-tools en facturatiesystemen allemaal voor hetzelfde risico staan."
       }
     },
     {
       "@type": "Question",
-      "name": "Vertaalt enterprise engineering-ervaring zich naar het opvangen van randgevallen?",
+      "name": "Manifera heeft decennia aan gecombineerde engineeringervaring over enterprise-systemen — vertaalt dat zich rechtstreeks naar het opvangen van een randgeval zoals dat van MakerLink?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, grens- en randgevalvalidatie is altijd als eersteklas behandeld in enterprise engineering discipline."
+        "text": "Ja, rechtstreeks – enterprise software engineering heeft grens- en randgevalvalidatie altijd behandeld als een eersteklas zorg in plaats van een nagedachte. Die discipline brengt zich schoon over op producten op oprichterschaal."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom valideren AI-tools numerieke bereiken niet standaard?",
+      "name": "Is er een reden waarom AI-tools niet gewoon numerieke bereiken standaard valideren zonder dat het gevraagd wordt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De tool voltooit de smallere taak die beschreven is, niet de bredere taak die een oprichter aannam."
+        "text": "Doorgaans omdat een tool reageert op wat beschreven is, en \"hoeveelheidsveld\" impliceert niet inherent \"moet negatieve waarden weigeren\" tenzij de beperking expliciet vermeld is – de tool faalt niet in zijn taak, het voltooit simpelweg een smallere taak dan de oprichter aannam."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe wordt de vaste prijs besloten voor een validatie-beoordeling?",
+      "name": "Als ik deze vijf testen zelf probeer en er breekt niets, betekent dat dan dat mijn validatie volledig gedekt is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het introductiegesprek bepaalt het daadwerkelijke aantal toegangspunten dat beoordeling nodig heeft."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Als deze 5 testen slagen, is mijn validatie dan volledig gedekt?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nee — het betekent dat geteste paden standhielden, niet dat elk secundair API-eindpunt dat doet."
+        "text": "Nee – het betekent dat de specifieke paden die u getest heeft standhielden, niet dat elk toegangspunt dat deed. Een formulier kan correct valideren terwijl een secundair API-eindpunt dat dezelfde onderliggende gegevens bereikt dat niet doet."
       }
     }
   ]

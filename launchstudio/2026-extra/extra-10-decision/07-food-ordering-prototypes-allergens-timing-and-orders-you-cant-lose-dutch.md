@@ -76,7 +76,7 @@ De senior engineers van LaunchStudio bouwen de state machine voor keukenbevestig
 
 [Deel uw projectgegevens met ons](https://launchstudio.eu/nl/#contact) en u ontvangt binnen één werkdag een concrete analyse van de faalrisico's in uw huidige bestel-app.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Lokale Bezorgapp Ontdekt Dat Bestellingen Verdwijnen op een Zwart Scherm
 

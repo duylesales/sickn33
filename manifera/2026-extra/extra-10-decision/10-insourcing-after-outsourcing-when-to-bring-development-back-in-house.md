@@ -60,6 +60,18 @@ Insourcing is the right call when sustained scale, genuine IP concentration risk
 
 If you are evaluating this transition, Manifera's [dedicated teams](https://www.manifera.com/services/dedicated-teams/) model is built to support exactly this kind of phased handover — including scoped knowledge-transfer engagements for teams moving core systems in-house while keeping flexible capacity for what shouldn't move yet.
 
+## The Total-Cost-of-Ownership Checklist Before You Insource
+
+Run this checklist before finalizing any insourcing business case — most flawed decisions skip at least three of these five line items:
+
+1. **Fully loaded salary, not gross salary.** Multiply the target hire's gross salary by 1.4-1.8x to cover employer social contributions, benefits, recruiter fees, and realistic churn — the number CFOs usually compare against a vendor day rate is the wrong one.
+2. **Recruiting overhead amortized.** A 90-plus-day time-to-hire for a mid-to-senior European engineer means roughly 3 months of open-role cost (delayed delivery, recruiter retainer, hiring-manager time) baked into the first-year total, not a one-time sunk cost.
+3. **Onboarding and ramp.** Budget 8-12 weeks of reduced productivity per new hire during the knowledge-transfer overlap, priced at the hire's full loaded cost even though output is partial.
+4. **Bench cost for variable demand.** If the work has seasonal or unpredictable spikes, price the cost of either idle internal capacity or emergency contractor rates during a spike — a cost the outsourced model absorbs implicitly.
+5. **Attrition replacement cost.** European mid-to-senior engineering attrition commonly runs 12-18% annually; model at least one replacement hire's full cycle into any multi-year comparison, not a static headcount assumption.
+
+Skipping items 3 through 5 is how a insourcing business case looks cheaper on a spreadsheet than it turns out to be in year two.
+
 ## Frequently Asked Questions
 
 ### At what company size does insourcing typically start to make financial sense?
@@ -76,6 +88,18 @@ Most companies land on a hybrid rather than a full transition, and this is often
 
 ### What is the biggest risk of insourcing too quickly?
 The biggest risk is underestimating the European hiring timeline, which commonly exceeds 90 days for mid-to-senior engineers regardless of the decision to insource. A transition plan that assumes new hires will be in seat within a month of the decision is planning against the actual hiring market, not around it.
+
+### (Scenario: board asking for a full insourcing timeline) The board wants a date when our core product team will be fully in-house — how do I set an honest one?
+Build the date from the slowest constraint, which is almost always hiring, not knowledge transfer: sequence a 90-plus-day hire cycle per role, staggered so overlap periods don't stack, and add the 8-12 week knowledge-transfer window per system after each hire starts. Present a range tied to hiring-pipeline progress rather than a single fixed calendar date the vendor relationship is forced to match regardless of actual staffing reality.
+
+### (Scenario: only the mobile app team is being considered for insourcing) We only want to insource the core web platform and keep our mobile app team outsourced indefinitely — is that a legitimate long-term structure or a sign we haven't finished the transition?
+A deliberate hybrid split is a legitimate, often optimal, end state rather than an incomplete transition, particularly when the mobile app requires specialized platform expertise the internal team doesn't need to build permanently. Keep the vendor relationship active on that bounded scope explicitly, with its own governance and review cadence, rather than treating it as a lingering leftover from the original outsourcing decision.
+
+### (Scenario: vendor relationship ending on a fixed date regardless of hiring progress) Our board set a hard date to end the vendor contract, but our internal hiring is running behind — what do we do?
+Renegotiate the vendor off-ramp to key off hiring-pipeline milestones rather than a calendar date, since forcing a handover before internal hires are in seat is the most common cause of a post-insourcing velocity dip. A short, explicitly bounded contract extension tied to specific remaining hires is cheaper than a rushed handover that damages the product during a critical transition window.
+
+### (Scenario: IP concentration risk in a niche technical domain) Our core differentiator depends on a small vendor team with deep domain expertise nobody internally has — is IP risk alone a strong enough reason to insource, even at higher cost?
+Yes, when the specific judgment is that knowledge walking out the door with a departing vendor team poses more business risk than the cost premium of direct employment, this is one of the few standalone signals strong enough to justify insourcing even without a sustained-scale trigger. Prioritize hiring or converting the specific individuals who hold that expertise rather than treating it as a generic team-replacement exercise.
 
 <script type="application/ld+json">
 {
@@ -131,6 +155,38 @@ The biggest risk is underestimating the European hiring timeline, which commonly
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "The biggest risk is underestimating the European hiring timeline, which commonly exceeds 90 days for mid-to-senior engineers regardless of the decision to insource. A transition plan that assumes new hires will be in seat within a month of the decision is planning against the actual hiring market, not around it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: board asking for a full insourcing timeline) The board wants a date when our core product team will be fully in-house — how do I set an honest one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Build the date from the slowest constraint, which is almost always hiring, not knowledge transfer: sequence a 90-plus-day hire cycle per role, staggered so overlap periods don't stack, and add the 8-12 week knowledge-transfer window per system after each hire starts. Present a range tied to hiring-pipeline progress rather than a single fixed calendar date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: only the mobile app team is being considered for insourcing) We only want to insource the core web platform and keep our mobile app team outsourced indefinitely — is that a legitimate long-term structure or a sign we haven't finished the transition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A deliberate hybrid split is a legitimate, often optimal, end state rather than an incomplete transition, particularly when the mobile app requires specialized platform expertise the internal team doesn't need to build permanently. Keep the vendor relationship active on that bounded scope explicitly, with its own governance and review cadence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: vendor relationship ending on a fixed date regardless of hiring progress) Our board set a hard date to end the vendor contract, but our internal hiring is running behind — what do we do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Renegotiate the vendor off-ramp to key off hiring-pipeline milestones rather than a calendar date, since forcing a handover before internal hires are in seat is the most common cause of a post-insourcing velocity dip. A short, explicitly bounded contract extension tied to specific remaining hires is cheaper than a rushed handover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: IP concentration risk in a niche technical domain) Our core differentiator depends on a small vendor team with deep domain expertise nobody internally has — is IP risk alone a strong enough reason to insource, even at higher cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, when the specific judgment is that knowledge walking out the door with a departing vendor team poses more business risk than the cost premium of direct employment, this is one of the few standalone signals strong enough to justify insourcing even without a sustained-scale trigger. Prioritize hiring or converting the specific individuals who hold that expertise."
       }
     }
   ]

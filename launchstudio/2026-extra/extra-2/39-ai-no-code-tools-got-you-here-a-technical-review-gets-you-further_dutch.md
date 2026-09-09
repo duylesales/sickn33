@@ -59,6 +59,17 @@ Manifera's audits voor berichten en toegangsbeheer worden uitgevoerd door het en
 
 [Deel een link naar uw prototype — we bekijken het gratis](https://launchstudio.eu/nl/#contact).
 
+## Andere Gedeelde Functies Die Dezelfde Eigendomscontrole Vereisen
+
+Privéberichten zijn het meest sprekende voorbeeld van een gedeelde functie, maar hetzelfde onderliggende principe — het expliciet controleren of de aanvrager een legitieme relatie heeft tot de opgevraagde bron voordat deze wordt geretourneerd — is direct van toepassing op tal van andere interactieve functionaliteiten:
+
+- **Groepsboekingen en gedeelde agenda's** — een planningsfunctie met meerdere deelnemers (zoals een gezin dat meerdere sessies boekt of een groepsles) vereist exact dezelfde verificatie per deelnemer als een tweepersoonsgesprek, toegepast over een bredere groep legitieme kijkers.
+- **Gedeelde documenten en bestandsuploads** — een lesbestand, een huiswerkopdracht of een geüpload contract dat hoort bij een specifieke relatie tussen twee gebruikers heeft dezelfde servercontrole nodig voordat het wordt geserveerd op basis van een ID of downloadlink.
+- **Notities en beoordelingen gekoppeld aan een specifieke samenwerking** — een interne notitie of vertrouwelijke beoordeling die alleen zichtbaar mag zijn voor de twee partijen die betrokken zijn bij een afspraak, loopt exact hetzelfde risico als de ophaallogica niet verifieert dat de aanvrager een van die twee partijen is.
+- **Activiteiten- en notificatiestromen** — een feed met "recente activiteiten" binnen een specifieke organisatie of samenwerking heeft dezelfde deelnemerscontrole nodig als de onderliggende gegevens die worden samengevat, aangezien een dergelijke feed vaak als secundaire weergave over dezelfde brontabellen is gebouwd.
+
+De rode draad door al deze vier voorbeelden is dat elke feature hoogstwaarschijnlijk op dezelfde manier is gebouwd en getest: prima functionerend voor het beoogde, eerlijke gebruik, waarbij de specifieke beveiligingsvraag — "kan iemand die géén legitieme deelnemer is dit bestand opvragen via het ID?" — nooit spontaan opkomt tijdens normale tests. Een technische audit die dit gat in één deelsysteem vindt en dicht, controleert direct elk ander onderdeel dat volgens hetzelfde patroon is opgebouwd.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De bijles-chat die niet helemaal privé was
@@ -78,25 +89,25 @@ Een ouder nam verward contact op met de klantenservice nadat ze vluchtig een fra
 
 ## Veelgestelde vragen
 
-### Zou een backend-ingenieur een berichtenfunctie moeilijker te beveiligen vinden dan een lijstfunctie?
+### Waarom treden autorisatiefouten (BOLA / IDOR) zo vaak op bij functies voor privéberichten of gedeelde bestanden?
 
-Iets wel, aangezien berichten van nature meerdere deelnemers omvatten met gedeelde toegang tot dezelfde bron. Dit vereist een iets nuancieuzere eigenschapscontrole.
+Omdat de applicatiecode vaak controleert of de gebruiker is ingelogd (authenticatie), maar vergeet te verifiëren of die ingelogde gebruiker daadwerkelijk de afzender, ontvanger of rechtmatige eigenaar is van het specifieke bericht of bestand dat via het ID wordt opgevraagd.
 
-### Beïnvloedt deze kloof no-code platformen meer dan AI-coderingsassistenten?
+### Zou een gebruiker dit per ongeluk kunnen ontdekken, of vereist dit altijd een gerichte aanval?
 
-Niet bijzonder meer – het onderliggende risico (ontbrekende deelnemersverificatie op een gedeelde bron) is een patroon dat kan verschijnen ongeacht welke specifieke tool gebruikt werd.
+Vaak ontdekken gebruikers dit per ongeluk, bijvoorbeeld door het ID in de adresbalk of in een deellink met één cijfer aan te passen en plotseling de vertrouwelijke correspondentie of bestanden van een volstrekt andere klant te zien.
 
-### Maakt ervaring met communicatiefuncties uit voor een kleine bijlesmarktplaats?
+### Hoe pakt Manifera het ontwerpen van fijnmazige autorisatiemodellen aan?
 
-Ja, rechtstreeks – veilige berichtenuitwisseling tussen meerdere partijen is een welbegrepen patroon dat betrouwbaar kan worden toegepast.
+Door autorisatie logisch af te dwingen op database- en serviceniveau (bijvoorbeeld via Row-Level Security of centrale policy-middleware), zodat geen enkel API-eindpunt data kan serveren zonder dat de eigendomsrelatie expliciet en consistent wordt geverifieerd.
 
-### Weerspiegelt deze herstelling de filosofie van dezelfde technische discipline voor oprichters?
+### Is het voldoende om UUID's te gebruiken in plaats van opeenvolgende getallen als database-ID's?
 
-Ja, rechtstreeks – veilige toegangsbepaling voor meerdere partijen is exact het soort discipline dat een goed gefinancierd bedrijf als vanzelfsprekend zou toepassen.
+UUID's maken het raden van ID's vrijwel onmogelijk, wat een nuttige verdedigingslaag is. Het is echter géén vervanging voor echte autorisatie: als een link uitlekt of wordt gedeeld, moet de server alsnog controleren of de aanvrager geautoriseerd is om die data in te zien.
 
-### Als een oprichter een bekende no-code berichtenplugin gebruikt, is dit risico dan nog steeds mogelijk?
+### Wat is de beste manier om alle gedeelde functionaliteiten in een app systematisch te controleren op autorisatielekken?
 
-Het hangt af van de specifieke plugin en hoe deze is geconfigureerd. Onjuiste configuratie of kloven in de integratie kunnen hetzelfde risico herintroduceren.
+Door een gerichte security audit uit te voeren waarbij voor elk API-eindpunt systematisch wordt getest met twee afzonderlijke testaccounts: kan Account A bij de data, berichten of bestanden van Account B door simpelweg de ID's in de verzoeken te verwisselen?
 
 <script type="application/ld+json">
 {
@@ -105,50 +116,42 @@ Het hangt af van de specifieke plugin en hoe deze is geconfigureerd. Onjuiste co
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Tại sao tính năng nhắn tin riêng (Private Messaging) lại dễ bị rò rỉ dữ liệu?",
+      "name": "Waarom treden autorisatiefouten (BOLA / IDOR) zo vaak op bij functies voor privéberichten of gedeelde bestanden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì khi lấy danh sách tin nhắn, backend thường quên kiểm tra (validate) xem người gửi request có thực sự là 1 trong 2 người trong cuộc trò chuyện đó không."
+        "text": "Omdat de applicatiecode vaak controleert of de gebruiker is ingelogd (authenticatie), maar vergeet te verifiëren of die ingelogde gebruiker daadwerkelijk de afzender, ontvanger of rechtmatige eigenaar is van het specifieke bericht of bestand dat via het ID wordt opgevraagd."
       }
     },
     {
       "@type": "Question",
-      "name": "Dùng AI tool hay No-code plugin nhắn tin có tự động bảo mật 100% không?",
+      "name": "Zou een gebruiker dit per ongeluk kunnen ontdekken, of vereist dit altijd een gerichte aanval?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không chắc chắn — plugin có thể tốt nhưng nếu cấu hình quyền (access control) hoặc tích hợp API sai thì tin nhắn vẫn bị rò rỉ."
+        "text": "Vaak ontdekken gebruikers dit per ongeluk, bijvoorbeeld door het ID in de adresbalk of in een deellink met één cijfer aan te passen en plotseling de vertrouwelijke correspondentie of bestanden van een volstrekt andere klant te zien."
       }
     },
     {
       "@type": "Question",
-      "name": "ID tin nhắn dạng số tăng dần (Sequential ID) nguy hiểm thế nào?",
+      "name": "Hoe pakt Manifera het ontwerpen van fijnmazige autorisatiemodellen aan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kẻ xấu có thể thay đổi ID trong request (IDOR) từ 101, 102, 103 để đọc toàn bộ tin nhắn của người khác nếu Server không check quyền."
+        "text": "Door autorisatie logisch af te dwingen op database- en serviceniveau (bijvoorbeeld via Row-Level Security of centrale policy-middleware), zodat geen enkel API-eindpunt data kan serveren zonder dat de eigendomsrelatie expliciet en consistent wordt geverifieerd."
       }
     },
     {
       "@type": "Question",
-      "name": "Ngoài tính năng Chat, những tính năng nào khác hay bị lỗi phân quyền này?",
+      "name": "Is het voldoende om UUID's te gebruiken in plaats van opeenvolgende getallen als database-ID's?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lịch hẹn chung (Shared Calendar), File đính kèm cá nhân, Ghi chú riêng tư và Bảng tin hoạt động (Activity Feeds)."
+        "text": "UUID's maken het raden van ID's vrijwel onmogelijk, wat een nuttige verdedigingslaag is. Het is echter géén vervanging voor echte autorisatie: als een link uitlekt of wordt gedeeld, moet de server alsnog controleren of de aanvrager geautoriseerd is om die data in te zien."
       }
     },
     {
       "@type": "Question",
-      "name": "Làm sao để đảm bảo tin nhắn cá nhân hoàn toàn riêng tư giữa 2 người?",
+      "name": "Wat is de beste manier om alle gedeelde functionaliteiten in een app systematisch te controleren op autorisatielekken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gắn middleware kiểm tra participant_id ở mọi API get messages và chuyển sang dùng UUID ngẫu nhiên thay cho ID số tăng dần."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Sửa lỗi bảo mật tin nhắn có bắt buộc phải làm lại giao diện Chat không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Không, giao diện hiển thị giữ nguyên 100%, chỉ bổ sung hàm kiểm tra phân quyền (authorization) ở phía Backend."
+        "text": "Door een gerichte security audit uit te voeren waarbij voor elk API-eindpunt systematisch wordt getest met twee afzonderlijke testaccounts: kan Account A bij de data, berichten of bestanden van Account B door simpelweg de ID's in de verzoeken te verwisselen?"
       }
     }
   ]

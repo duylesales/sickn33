@@ -61,8 +61,7 @@ Een oprichter zonder technische achtergrond kan nog steeds zinvol twee uiteenlop
 
 [Stuur de repository op en krijg een offerte gegrond in wat er daadwerkelijk is](https://launchstudio.eu/nl/#contact) — de snelste manier om zin te maken van twee tegenstrijdige getallen is een derde die zijn werk laat zien.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Zin Maken Van Twee Heel Verschillende Getallen
 
 Marlouke Bijvoet, een voormalig buurthuisbeheerder in Haarlem, bouwde BuurtKluis, een AI-gematchte buurtapp voor het uitlenen van gereedschap die bewoners met apparatuur zoals ladders en hogedrukreinigers verbindt met buren die het willen lenen, met behulp van Lovable. Klaar om verder te lanceren dan haar eigen straat, vroeg ze offertes aan bij twee onafhankelijke ontwikkelaars, doorverwezen door andere oprichters.

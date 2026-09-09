@@ -110,10 +110,6 @@ Ja – het is een beslissing over hoe het systeem vertrouwen verifieert aan een 
 
 Nee – het opvangen hiervan via een niet-overeenkomend ondersteuningsticket was gelukkig in plaats van een herhaalbare waarborg. Een proactieve beoordeling is het betrouwbaardere pad zodra een product schaalt.
 
-### Gelden deze gelijktijdigheidsproblemen ook voor een product dat überhaupt geen betalingen afhandelt?
-
-Ja – elke functie die een beperkte hulpbron omvat (boekingstijdsloten, kortingscodes, stoelbeschikbaarheid) of elk proces dat getriggerd wordt door een externe gebeurtenis kan dezelfde idempotentie- en race condition-patronen raken.
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,50 +117,42 @@ Ja – elke functie die een beperkte hulpbron omvat (boekingstijdsloten, korting
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is webhook-handtekeningverificatie een basis- of geavanceerde vereiste?",
+      "name": "Zou een betalingsingenieur handtekeningverificatie beschouwen als een \"basis\"-vereiste, of een geavanceerde?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Basis en fundamenteel — het wordt over het hoofd gezien omdat het niet visueel duidelijk is in een demo."
+        "text": "Basis, in de zin dat het beschouwd wordt als een fundamentele vereiste in professioneel betalingsintegratiewerk – het wordt over het hoofd gezien precies omdat het niet visueel duidelijk is in een demo, en niet omdat het een geavanceerde of duistere techniek is."
       }
     },
     {
       "@type": "Question",
-      "name": "Schaalt dit risico met de groei van een product?",
+      "name": "Schaalt dit risico in ernst met de groei van een product, of blijft het ongeveer constant?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, een breder ontdekbaar eindpunt geeft meer kwaadwillenden de kans om het te vinden en te misbruiken."
+        "text": "Het schaalt rechtstreeks met groei – een breder, beter bekend, meer openbaar ontdekbaar eindpunt geeft meer potentiële kwaadwillenden de kans om het te vinden en te misbruiken. Het risico stapelt zich dus op in plaats van vlak te blijven naarmate een product gebruikers wint."
       }
     },
     {
       "@type": "Question",
-      "name": "Veranderd de specifieke betalingsprovider hoe deze kloof wordt hersteld?",
+      "name": "Manifera's betalingsintegratiewerk omvat meerdere providers — veranderd de specifieke provider (Mollie vs. Stripe) hoe deze kloof wordt gevonden of hersteld?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Implementatiedetails verschillen enigszins, maar het verifiëren van de handtekening geldt voor alle providers."
+        "text": "De specifieke implementatiedetails verschillen enigszins per provider, maar het onderliggende principe – verifieer de handtekening voordat u de load vertrouwt – geldt identiek over Stripe, Mollie, PayPal en anderen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is webhook-verificatie een architectuurbeslissing in plaats van een simpele bug?",
+      "name": "Is webhook-verificatie echt een \"architectuur\"-beslissing in plaats van een bug?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, het is een beslissing over hoe het systeem vertrouwen verifieert aan een externe grens."
+        "text": "Ja – het is een beslissing over hoe het systeem vertrouwen verifieert aan een specifieke externe grens, wat vierkant het soort structurele beslissing is die gemakkelijk wordt uitgesteld."
       }
     },
     {
       "@type": "Question",
-      "name": "Is het opvangen via een ondersteuningsticket een betrouwbare detectiemethode?",
+      "name": "Als een oprichter een probleem zoals dat van Joris opvangt via een ondersteuningsticket, is dat dan een betrouwbare detectiemethode voor de toekomst?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, het opvangen was geluk, geen herhaalbare waarborg. Een proactieve beoordeling is betrouwbaarder."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Gelden gelijktijdigheidsproblemen ook voor producten zonder betalingen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja, elke functie met een beperkte hulpbron of externe gebeurtenis kan dezelfde race conditions raken."
+        "text": "Nee – het opvangen hiervan via een niet-overeenkomend ondersteuningsticket was gelukkig in plaats van een herhaalbare waarborg. Een proactieve beoordeling is het betrouwbaardere pad zodra een product schaalt."
       }
     }
   ]

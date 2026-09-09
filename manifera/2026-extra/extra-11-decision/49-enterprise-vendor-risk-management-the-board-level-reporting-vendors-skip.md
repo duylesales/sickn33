@@ -56,6 +56,12 @@ Third-party vendor risk reaches the board in a genuinely useful form only when s
 
 Manifera maintains current SOC 2 and security documentation as a standard part of client engagement, structured to feed directly into exactly this kind of board-level reporting — see our [Manifera Technologies](https://www.manifera.com/about-us/manifera-technologies/) page for our security and delivery standards.
 
+## What a One-Page Board Vendor Risk Report Actually Looks Like
+
+The translation layer described above works best as a single page, four-category format the risk committee sees every quarter in the same shape, so trend becomes visible without re-explaining structure each time. Category one, concentration: top five vendors by criticality, percentage of critical process dependency each represents, and alternative-vendor status (vetted / theoretical / none). Category two, regulatory status: for each in-scope framework, the percentage of the vendor register with complete required documentation — organizations early in this work often start below 50% complete and should show the trend toward full coverage, not claim completeness prematurely. Category three, certification currency: count of critical-tier vendors with a certification older than its expected renewal window, flagged red if that count is non-zero. Category four, incident and near-miss trend: realized incidents and near-misses per quarter, plotted against the prior three quarters so a worsening pattern is visible before it becomes a realized failure.
+
+Organizations that build this exact one-pager typically find it takes 15-25 hours of initial setup to pull the data cleanly from an existing operational register, and 2-4 hours per quarter to refresh once the pipeline exists — a modest cost against the alternative of a board discovering concentration or certification risk only after an incident forces the question.
+
 ## Frequently Asked Questions
 
 ### Why does a vendor risk register maintained by IT rarely translate well into board reporting?
@@ -72,6 +78,18 @@ A SOC 2 or ISO 27001 certification obtained during initial vendor vetting can go
 
 ### What is a vendor near-miss and why should it be reported to the board?
 A near-miss is an incident that revealed underlying fragility — a narrowly avoided outage, or a concerning gap exposed during a minor issue — without technically becoming a reportable incident. Rolling a summary of near-misses into board reporting surfaces risk signal that a report limited to only realized incidents would otherwise miss entirely.
+
+### (Scenario: A critical vendor itself relies on a subcontractor the organization has never independently assessed) How should fourth-party risk — a vendor's own subcontractors — factor into board-level reporting?
+Add a subcontractor disclosure requirement to the vendor risk register for any Tier 1 or concentration-flagged vendor, asking the vendor directly which of its own critical functions are subcontracted, and roll a simple flag ("subcontracted dependency disclosed and assessed" vs. "undisclosed or unassessed") into the concentration category rather than treating the primary vendor relationship as the full picture.
+
+### (Scenario: A US-based company with no EU regulatory exposure is deciding whether to adopt this reporting structure anyway) Does a company outside DORA and NIS2's jurisdiction still need this level of vendor risk reporting?
+Yes in substance if not in legal obligation — concentration risk, certification staleness, and near-miss blindness cause real operational and financial damage regardless of which regulator has jurisdiction, and US frameworks like SEC cybersecurity disclosure rules are moving in a similar direction. Adopting the reporting structure voluntarily is materially cheaper than building it reactively after an incident or a new regulation forces the question.
+
+### (Scenario: A board member asks in a live meeting exactly how quickly the company could replace its top vendor, and the CFO doesn't have that answer) What board question about vendor risk should a CFO always be prepared to answer without hesitation?
+"If our top concentration-risk vendor became unavailable tomorrow, how long until we're operational again, and with whom?" — this is the single question the concentration risk category exists to pre-answer, and a CFO caught without it signals the underlying register itself is incomplete, not just the presentation.
+
+### (Scenario: The organization's own outsourced development vendor is among the top concentration-risk entries) Should an organization's software development vendor itself be treated as a concentration risk in board reporting?
+Yes, using the same criteria as any other vendor — percentage of critical systems it maintains, documentation and knowledge-transfer readiness, and whether a vetted alternative exists. A development partner that maintains documentation, avoids single-person dependency, and supports a genuine transition plan scores materially better on this metric than one that doesn't, independent of the quality of its actual output.
 
 <script type="application/ld+json">
 {
@@ -116,6 +134,38 @@ A near-miss is an incident that revealed underlying fragility — a narrowly avo
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A near-miss is an incident that revealed underlying fragility — a narrowly avoided outage, or a concerning gap exposed during a minor issue — without technically becoming a reportable incident. Rolling a summary of near-misses into board reporting surfaces risk signal that a report limited to only realized incidents would otherwise miss entirely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should fourth-party risk — a vendor's own subcontractors — factor into board-level reporting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add a subcontractor disclosure requirement to the vendor risk register for any Tier 1 or concentration-flagged vendor, asking directly which critical functions are subcontracted, and roll a simple disclosed-and-assessed versus undisclosed flag into the concentration category rather than treating the primary vendor relationship as the full picture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a company outside DORA and NIS2's jurisdiction still need this level of vendor risk reporting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes in substance if not in legal obligation — concentration risk, certification staleness, and near-miss blindness cause real operational and financial damage regardless of which regulator has jurisdiction, and adopting the reporting structure voluntarily is materially cheaper than building it reactively after an incident."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What board question about vendor risk should a CFO always be prepared to answer without hesitation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the top concentration-risk vendor became unavailable tomorrow, how long until operations recover, and with whom? This is the question the concentration risk category exists to pre-answer, and being caught without it signals the underlying register itself is incomplete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should an organization's software development vendor itself be treated as a concentration risk in board reporting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, using the same criteria as any other vendor — percentage of critical systems maintained, documentation and knowledge-transfer readiness, and whether a vetted alternative exists. A partner that avoids single-person dependency and supports a genuine transition plan scores materially better on this metric."
       }
     }
   ]

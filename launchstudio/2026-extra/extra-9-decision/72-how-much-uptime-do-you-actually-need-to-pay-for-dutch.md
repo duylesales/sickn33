@@ -92,7 +92,7 @@ Het Launch & Grow-pakket van [LaunchStudio](https://launchstudio.eu/nl/#packages
 
 [Gebruik de prijscalculator](https://launchstudio.eu/nl/#calculator) om te zien wat betrouwbare hosting voor uw specifieke software kost voordat u aanneemt dat u direct het allerduurste niveau moet inkopen.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een supportdesk-SaaS heroverweegt haar SLA: De uptime die niemand kocht
 

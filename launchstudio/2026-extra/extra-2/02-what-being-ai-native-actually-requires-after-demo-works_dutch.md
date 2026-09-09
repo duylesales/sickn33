@@ -7,6 +7,30 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Wat AI-Native Zijn Daadwerkelijk Vereist Nadat De Demo Werkt
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wat 'AI Native' Zijn Daadwerkelijk Vereist Nadat de Demo Werkt",
+  "description": "Een werkende demo bewijst dat de frontend data kan tonen. Het bewijst niet dat de backend beschermd is tegen cross-tenant datalekken. Hoe u multi-tenant isolatie verifieert.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-07-22",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/what-being-ai-native-actually-requires-after-demo-works"
+  }
+}
+</script>
+
 Een AI-native founder zijn betekent dat je iets echts gebouwd hebt, snel, zonder te wachten op een ontwikkelteam of een financieringsronde — een oprecht andere en snellere startpositie dan founders zelfs een paar jaar geleden hadden. Het betekent niet automatisch dat wat je gebouwd hebt de grenzen afdwingt die een multi-user product nodig heeft, en voor iedereen die op Cursor of Bolt bouwt met echte klantdata die binnenstroomt, is die specifieke grens meestal de eerste plek de moeite waard om te controleren, ruim voordat vragen over schaal, groei, of polish überhaupt relevant worden.
 
 ## AI-Native Beschrijft Hoe Je Het Bouwde, Niet Wat Het Kan Weerstaan
@@ -25,13 +49,29 @@ Jouw eigen account testen, met jouw eigen data, triggert deze faalmodus nooit �
 
 Het is verleidelijk om dit te behandelen als een lage-prioriteitszorg terwijl een product nog maar een handvol vertrouwde vroege gebruikers heeft. In de praktijk stapelt het risico direct met groei — hoe meer accounts dezelfde onbewaakte backend delen, hoe meer oppervlak er bestaat voor precies dit soort per ongeluk of doelbewuste cross-account-blootstelling, wat betekent dat het ideale moment om dit gat te dichten vóór de tweede betalende klant zich aanmeldt is, niet nadat de vijfde iets verkeerds opmerkt.
 
-## Het Gat Dichten Zonder Aan Te Raken Wat Je Gebouwd Hebt
+## Hoe U Zelf Test op Multi-Tenant Isolatie, Voordat een Tweede Klant Dat Doet
 
-Dit oplossen vereist geen herarchitectuur van jouw datamodel — het vereist het toevoegen van expliciete eigendomscontroles op de querylaag, zodat elk verzoek geverifieerd wordt tegen de eigen scope van de geauthenticeerde gebruiker voordat data teruggegeven wordt, ongeacht of dat verzoek via de bedoelde UI-flow kwam of niet. [LaunchStudio](https://launchstudio.eu/nl/) dicht precies dit soort gat als standaardonderdeel van zijn Launch Ready-pakket, gesteund door Manifera's 11+ jaar bouwen van multi-tenant B2B-systemen voor enterprise-klanten.
+Multi-tenant data-isolatie is een van de weinige kwetsbaarheden in deze categorie die een niet-technische oprichter heel zinvol zelfstandig kan testen. De test vereist namelijk geen broncode-inspectie — het vraagt om twee accounts en de bereidheid om verzoeken in te sturen die uw product nooit had verwacht.
 
-Manifera voert dit soort review uit via zijn Vietnam-gebaseerde ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh City, gecoördineerd met zijn hoofdkantoor in Amsterdam aan de Herengracht 420 — wat LaunchStudio-founders enterprise-niveau review geeft zonder enterprise-schaal-tijdlijnen.
+**Een eenvoudige test die u deze week kunt uitvoeren:**
 
-[Beschrijf jouw project — we reageren binnen 1 werkdag](https://launchstudio.eu/nl/#contact).
+1. **Maak twee afzonderlijke testaccounts aan** onder twee verschillende e-mailadressen, en plaats duidelijk herkenbare, overduidelijk fictieve data in elk account — een document, een klantrecord, een bestelling, wat het kernobject van uw applicatie ook is.
+2. **Log in als Account A en noteer de exacte URL of het record-ID** dat verschijnt wanneer u uw eigen gegevens bekijkt (bijvoorbeeld `/documents/482`).
+3. **Log uit, log in als Account B, en pas het record-ID in diezelfde URL handmatig aan** naar het nummer dat u zojuist heeft genoteerd van Account A.
+4. **Kijk wat er gebeurt.** Een correct geïsoleerde applicatie toont een foutmelding of een blanco "niet gevonden" pagina (404). Een applicatie die uitsluitend vertrouwt op de frontend om gegevens van andere accounts te verbergen, retourneert vaak gewoon de daadwerkelijke data van Account A binnen de ingelogde sessie van Account B!
+5. **Herhaal dezelfde test via het Network-tabblad van de browser.** Open de Developer Tools, zoek het specifieke API-verzoek op dat uw dashboard uitvoert om records op te halen, en pas de ID-parameter handmatig aan in dat ruwe netwerkverzoek. Sommige applicaties blokkeren de test in de URL-balk keurig, maar falen alsnog op het niveau van de ruwe API omdat beide paden verschillend zijn geïmplementeerd.
+
+Maakt u gebruik van een beheerde backend zoals Supabase of Firebase, voer dan een tweede controle uit: verifieer dat Row-Level Security (RLS) policies daadwerkelijk actief zijn en worden afgedwongen op elke databasetabel die klantgegevens bevat. Het komt regelmatig voor dat een AI-tool een tabel aanmaakt, de query werkend krijgt, maar vergeet RLS daadwerkelijk aan te zetten.
+
+Geen van deze stappen vervangt een volledige audit, maar het uitvoeren van deze handmatige test kost niets en vertelt u direct of er sprake is van een acuut lek.
+
+## De Kloof Dichten Zonder Aan te Raken Wat U Heeft Gebouwd
+
+Het oplossen van dit probleem vereist geen complete herbouw van uw datamodel — het vraagt om het toevoegen van expliciete eigendomscontroles op de query-laag, zodat elk verzoek aan de serverzijde wordt geverifieerd tegen het bereik van de geauthenticeerde gebruiker vóórdat er enige data wordt geretourneerd. [LaunchStudio](https://launchstudio.eu/nl/) lost exact dit soort hiaten structureel op als vast onderdeel van het Launch Ready traject, gesteund door Manifera's 11+ jaar ervaring in het bouwen van multi-tenant B2B-systemen voor zakelijke opdrachtgevers.
+
+Manifera voert dit type reviews uit via haar ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh City, nauw gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420 — waardoor oprichters profiteren van enterprise-kwaliteit zonder trage enterprise-doorlooptijden.
+
+[Beschrijf uw project — wij reageren binnen 1 werkdag](https://launchstudio.eu/nl/#contact).
 
 ## Echt voorbeeld
 
@@ -71,3 +111,52 @@ De specifieke implementatie verschilt, maar het onderliggende risico niet — Su
 ### Hoe brengt een founder een zorg als deze zelfs ter sprake bij LaunchStudio als ze de technische term ervoor niet kennen?
 
 Door gewoon de angst in gewone taal te beschrijven — "zou de ene klant op de een of andere manier de data van een andere klant kunnen zien" is precies het soort vraag waarvoor het intro-gesprek van 15 minuten gebouwd is om te vertalen naar een specifieke, afgebakende technische review, zonder dat de founder al hoeft te weten hoe het te noemen.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Een sceptische CTO zou kunnen vragen waarom dit niet gevangen werd door basale QA-tests vóór lancering — wat is het eerlijke antwoord?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat standaard QA doorgaans test of een functie werkt zoals bedoeld voor één account tegelijk, niet of het actief een verzoek voor de data van een ander account weigert — die tweede test vereist doelbewust denken als een tegenstander, wat niet hoe de meeste functionele QA-checklists geschreven zijn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Draagt Manifera's achtergrond in het bouwen van systemen voor onderzoeksorganisaties zoals TNO over naar een tweemansjuridisch-techstartup zoals ClauseCheck?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De schaal is duidelijk anders, maar de onderliggende discipline niet — de gewoonte om eigendom expliciet te verifiëren op de datalaag in plaats van de UI te vertrouwen is hetzelfde principe of de klant nu een nationaal onderzoeksinstituut is of een solo founder in Utrecht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is er een reden dat Manifera zijn belangrijkste engineeringcentrum in Vietnam houdt in plaats van dichter bij zijn Nederlandse klantenbasis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het weerspiegelt een doelbewuste structuur in plaats van een compromis — het ontwikkelcentrum in Ho Chi Minh City biedt de diepgang aan engineeringtalent die nodig is om dit werk correct te doen, terwijl het kantoor in Amsterdam aan de Herengracht 420 de klantrelatie en de scopinggesprekken dicht bij de founders houdt die het bedient."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zou ditzelfde soort isolatiegat anders verschijnen in een product gebouwd op Supabase dan een op een aangepaste Node.js-backend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De specifieke implementatie verschilt, maar het onderliggende risico niet — Supabase's row-level-security-functies kunnen precies dit probleem voorkomen als correct geconfigureerd, maar AI-gegenereerde setups laten RLS vaak standaard uitgeschakeld of verkeerd geconfigureerd, wat functioneel hetzelfde gat is als een ontbrekende controle in aangepaste backendcode."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe brengt een founder een zorg als deze zelfs ter sprake bij LaunchStudio als ze de technische term ervoor niet kennen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door gewoon de angst in gewone taal te beschrijven — \"zou de ene klant op de een of andere manier de data van een andere klant kunnen zien\" is precies het soort vraag waarvoor het intro-gesprek van 15 minuten gebouwd is om te vertalen naar een specifieke, afgebakende technische review, zonder dat de founder al hoeft te weten hoe het te noemen."
+      }
+    }
+  ]
+}
+</script>

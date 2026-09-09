@@ -88,6 +88,18 @@ Before your next vendor conversation, write down the five myths above and ask di
 
 Schedule a free consultation with our Amsterdam team to walk through what a written AI-specific code review standard should look like for your specific project, and how to build it into your next contract regardless of which vendor you ultimately choose.
 
+## The Five-Point Diff Audit: What a Real Checklist Actually Contains
+
+Ask a vendor to show you their AI-specific review checklist, not just describe it. A checklist that only exists as a verbal habit isn't a standard — it's a hope. Five items separate a real one from a placeholder:
+
+1. **Dependency verification** — every new import is checked against the actual package registry before merge, not assumed to exist because the AI referenced it confidently. Hallucinated package names are one of the most common AI-assisted failure modes, and catching them takes seconds if the check is built into the pipeline, not the reviewer's memory.
+2. **Duplication scan** — a diff-level search for logic that already exists elsewhere in the codebase, since AI assistants regenerate patterns rather than reuse them by default.
+3. **License audit** — flagging any newly introduced dependency with a copyleft or non-commercial license before it reaches production.
+4. **Test-author separation** — the person (or session) that wrote the implementation is not the sole author of its tests.
+5. **Reviewer sign-off logged per PR** — not a sprint-level summary, but a named human attached to each AI-assisted merge.
+
+Fewer than five of these, in writing, in a statement of work, is a gap worth negotiating before signing — not after the first production incident traces back to one of them.
+
 ## Frequently Asked Questions
 
 ### What is the biggest risk of unreviewed AI-generated code in a production application?
@@ -109,6 +121,22 @@ Not on their own. If the same process generates both the implementation and its 
 ### What should be included in a contract to cover AI-assisted code quality?
 
 A contract should specify that AI-assisted pull requests receive human review from someone other than the person who generated the draft, that reviewers explicitly check for hallucinated dependencies and license issues, and that test coverage is validated independently of the AI-generated tests themselves. Getting this in writing avoids relying on a verbal assurance that may not survive changing project pressure.
+
+### (Scenario: A vendor says their AI tools "self-check" for hallucinated dependencies) Is an automated dependency scanner enough to replace human code review?
+
+No. An automated scanner catches known bad packages, but it can't catch a duplicated business rule, a security pattern that looks correct but has a subtle flaw, or a test written to match a flawed implementation. Automated scanning should be one layer of a checklist, not a substitute for a named human reviewer on every AI-assisted pull request.
+
+### (Scenario: A founder is comparing two dev vendors, one of whom mentions "AI pair programming" in their pitch deck) What specific question exposes whether a vendor's AI code review standard is real or just marketing language?
+
+Ask them to produce the actual written checklist item that flags hallucinated library references, and ask who signs off on each AI-assisted pull request by name. A vendor with a real standard answers with a document or process artifact within seconds; a vendor using "AI pair programming" as a marketing phrase will describe it in vague, generic terms with no named accountability.
+
+### (Scenario: A startup's AI-assisted codebase has grown from one contributor to a five-person team over six months) How should an AI code review standard change as an AI-assisted engineering team scales up?
+
+The checklist itself shouldn't loosen, but the volume of enforcement needs to scale with headcount — more pull requests mean more reviewer capacity is needed to keep every AI-assisted merge individually signed off, not batch-approved. A partner who can add reviewers within two to four weeks as your roadmap grows keeps the standard constant instead of letting it erode under review-queue pressure.
+
+### (Scenario: A vendor's AI-generated pull request references a third-party library with a copyleft license) What happens if a vendor's AI assistant introduces a license-incompatible dependency without anyone catching it?
+
+Left unaddressed, a copyleft or non-commercial license buried in a dependency tree can create real legal exposure for your product, sometimes forcing a rewrite of the affected module before you can ship or sell. This is exactly why a license audit needs to be a named, written checklist item — not an assumption that "the AI wouldn't pick something risky."
 
 <script type="application/ld+json">
 {
@@ -139,6 +167,26 @@ A contract should specify that AI-assisted pull requests receive human review fr
       "@type": "Question",
       "name": "What should be included in a contract to cover AI-assisted code quality?",
       "acceptedAnswer": { "@type": "Answer", "text": "A contract should specify that AI-assisted pull requests receive human review from someone other than the person who generated the draft, that reviewers check for hallucinated dependencies and license issues, and that test coverage is validated independently." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is an automated dependency scanner enough to replace human code review?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. An automated scanner catches known bad packages, but it can't catch a duplicated business rule, a subtly flawed security pattern, or a test written to match a flawed implementation. Automated scanning should be one layer of a checklist, not a substitute for a named human reviewer on every AI-assisted pull request." }
+    },
+    {
+      "@type": "Question",
+      "name": "What specific question exposes whether a vendor's AI code review standard is real or just marketing language?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ask them to produce the actual written checklist item that flags hallucinated library references, and who signs off on each AI-assisted pull request by name. A vendor with a real standard answers within seconds; one using AI as a marketing phrase describes it in vague terms with no named accountability." }
+    },
+    {
+      "@type": "Question",
+      "name": "How should an AI code review standard change as an AI-assisted engineering team scales up?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The checklist itself shouldn't loosen, but reviewer capacity needs to scale with pull request volume so every AI-assisted merge stays individually signed off rather than batch-approved. A partner who can add reviewers within two to four weeks keeps the standard constant as headcount grows." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if a vendor's AI assistant introduces a license-incompatible dependency without anyone catching it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A copyleft or non-commercial license buried in a dependency tree can create real legal exposure, sometimes forcing a rewrite of the affected module before you can ship or sell. A named, written license audit checklist item prevents this rather than assuming the AI wouldn't pick something risky." }
     }
   ]
 }

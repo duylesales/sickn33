@@ -58,7 +58,7 @@ Als uw databeleid beweringen doet over encryptie, toegangscontrole of audit-logg
 
 LaunchStudio wordt geëxploiteerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 en geleid door Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink het verwoordt: *"We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring in precies dat vakgebied."* Door "Nederlands management te combineren met Vietnamees meesterschap", onderhoudt Manifera hoofdkantoren in **Amsterdam, Nederland** (Herengracht 420), een Aziatische hub in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minh-stad, Vietnam** (Pho Quang Street), met enterprise-klanten waaronder Vodafone en TNO. Via LaunchStudio implementeren senior engineeringteams de Row Level Security, encryptie, toegangscontrole en audit-logging die uw governancebeleid daadwerkelijk moet beschrijven, binnen 1 tot 3 weken, zonder een rebuild. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/nl/#contact) of bekijk hoe het [maatwerk software-ontwikkelteam van Manifera](https://www.manifera.com/services/custom-software-development/) compliance-gerichte hardening aanpakt voor AI-native producten.
 
-## Echt Voorbeeld
+## Echt voorbeeld
 
 ### Een AI-native Founder in Actie: Een Beleidsdocument Dat een Systeem Beschreef Dat Niet Bestond
 

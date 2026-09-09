@@ -65,8 +65,7 @@ De eerlijke vergelijking is niet "goedkope overzeese ontwikkelaar" tegenover "du
 
 [Vertel ons waarmee u ons vergelijkt](https://launchstudio.eu/nl/#contact) — de scoping call is de snelste manier om het werkelijke verschil in proces te zien, niet alleen in prijs.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Het Bod Dat Twee Keer Te Mooi Was Om Waar Te Zijn
 
 Nadir El Amrani, een niet-technische oprichter in Casablanca, bouwde SoukSync, een voorraad- en ordersynchronisatietool voor kleine e-commerceverkopers, met Bolt. Om de productiegaten te sluiten voor de lancering binnen een krap budget, plaatste Nadir het project op een open freelance marktplaats en huurde hij de laagste bieder in, tegen een tarief ruwweg een derde van elke andere offerte die hij ontving.

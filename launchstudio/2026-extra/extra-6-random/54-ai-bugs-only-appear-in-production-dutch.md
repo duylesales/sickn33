@@ -39,6 +39,19 @@ De enige betrouwbare manier om een race condition te ontdekken vóór lancering 
 
 LaunchStudio wordt mogelijk gemaakt door Manifera, een team van 120+ engineers met 11+ jaar ervaring over 160+ opgeleverde projecten, werkend vanuit Amsterdam en die precies deze categorie concurrency-problemen testen als standaardonderdeel van productiegereedheidsbeoordelingen. Als uw app enige vorm van gedeelde, gelijktijdig bewerkbare gegevens verwerkt, is het de moeite waard om iemand [uw project via ons proces te laten beoordelen](https://launchstudio.eu/nl/#process) voordat echte gelijktijdige gebruikers de kloof voor u vinden. Manifera's [portfolio](https://www.manifera.com/portfolio/) bevat systemen die specifiek zijn gebouwd om dit soort gelijktijdige belasting veilig op schaal te verwerken.
 
+## Waar Race Conditions Zich Werkelijk Schuilhouden: Een Risicokaart per Functionaliteit
+
+Gelijktijdigheidsfouten (race conditions) treden niet gelijkmatig op door uw hele applicatie; ze concentreren zich op specifieke plekken waar meerdere gebruikers tegelijkertijd aanspraak maken op een beperkte bron. Richt uw auditprioriteit op deze vier hoog-risico zones:
+
+**Zone 1: Inventaris, Capaciteit en Tijdsloten.** Reserveringssystemen, evenemententickets of productvoorraden. Als twee gebruikers in dezelfde milliseconde op 'Reserveren' klikken voor het laatste beschikbare slot, en uw code gebruikt een simpele `SELECT` gevolgd door een `UPDATE`, slagen beide verzoeken. Dit resulteert in dubbele boekingen. Oplossing: database-transacties met strikte 'pessimistic locking' (`SELECT FOR UPDATE`) of database-level constraints.
+
+**Zone 2: Eenmalige Vouchers, Tegoeden en Kortingscodes.** Een gebruiker die dezelfde kortingscode in twee tabbladen tegelijk indient. Zonder unieke constraints op databaseniveau kan het saldo tweemaal worden afgeschreven of de korting dubbel worden toegepast.
+
+**Zone 3: Aanmaken van Unieke Gebruikersnamen of Slugs.** Twee gebruikers die gelijktijdig registreren met dezelfde gebruikersnaam. Als de controle uitsluitend in applicatielogica plaatsvindt in plaats van via een `UNIQUE` constraint in het databaseschema, ontstaan er twee identieke gebruikersrecords met alle administratieve chaos van dien.
+
+**Zone 4: Financiële Saldo-Mutaties en Wallet-Updates.** Het bijschrijven of afschrijven van credits. Meervoudige gelijktijdige API-aanroepen kunnen leiden tot een onjuist eindsaldo als updates niet atomair worden uitgevoerd via `UPDATE balance = balance - amount WHERE balance >= amount`.
+
+Door uw aandacht specifiek op deze vier zones te richten, lost u 95% van de potentiële gelijktijdigheidsproblemen op zonder dat u de hele applicatie hoeft te herschrijven.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de bug die alleen bestond met twee ploegen tegelijk
@@ -85,11 +98,46 @@ Ja — concurrencyveiligheid is een duidelijk voorbeeld van wat hij bedoelt met 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is a race condition, in plain terms?", "acceptedAnswer": { "@type": "Answer", "text": "It's a bug that only occurs when two or more actions try to read or write the same data at nearly the same moment, and the outcome depends on which one happens to finish first — something a single user acting alone can never trigger." } },
-    { "@type": "Question", "name": "Why can't solo testing ever catch this category of bug?", "acceptedAnswer": { "@type": "Answer", "text": "Because race conditions require genuine concurrency to exist at all — one person testing one action at a time, however carefully, cannot recreate the timing overlap that causes them." } },
-    { "@type": "Question", "name": "Does this mean AI coding tools write bad code?", "acceptedAnswer": { "@type": "Answer", "text": "Not exactly — it means the tools generate code based on the sequential scenarios they're given, and concurrency safety has to be explicitly designed and tested for, since it isn't a natural byproduct of correct single-user logic." } },
-    { "@type": "Question", "name": "How does Manifera test for this before launch?", "acceptedAnswer": { "@type": "Answer", "text": "Our engineers, including the team based in Amsterdam, run simulated concurrent-access tests that deliberately recreate multi-user timing conflicts, which is the only reliable way to surface this category of bug before real users do." } },
-    { "@type": "Question", "name": "Is this the kind of issue Herre Roelevink refers to when he talks about architecture and maturity?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — concurrency safety is a clear example of what he means by architecture over initial functionality: the app already worked, but it needed structural changes to hold up once used the way it was actually intended to be used." } }
+    {
+      "@type": "Question",
+      "name": "Wat is een race condition, in gewone taal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is een bug die alleen optreedt wanneer twee of meer acties vrijwel op hetzelfde moment proberen dezelfde gegevens te lezen of te schrijven, en het resultaat hangt af van welke actie toevallig het eerst klaar is — iets wat één gebruiker die alleen handelt nooit kan veroorzaken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom kan solotesten deze categorie bug nooit opvangen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat race conditions echte concurrency vereisen om überhaupt te bestaan — één persoon die één actie tegelijk test, hoe zorgvuldig ook, kan de timingoverlap die ze veroorzaakt niet recreëren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Betekent dit dat AI-codeertools slechte code schrijven?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet precies — het betekent dat de tools code genereren op basis van de sequentiële scenario's die hen worden voorgelegd, en concurrencyveiligheid moet expliciet worden ontworpen en getest, omdat het geen natuurlijk bijproduct is van correcte single-user logica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe test Manifera hierop vóór lancering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Onze technici, waaronder het team gevestigd in Amsterdam, voeren gesimuleerde tests voor gelijktijdige toegang uit die doelbewust multi-user timingconflicten recreëren, wat de enige betrouwbare manier is om deze categorie bug vóór lancering te ontdekken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit het soort probleem waar Herre Roelevink naar verwijst als hij het heeft over architectuur en volwassenheid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — concurrencyveiligheid is een duidelijk voorbeeld van wat hij bedoelt met architectuur boven initiële functionaliteit: de app werkte al, maar had structurele veranderingen nodig om stand te houden zodra hij daadwerkelijk werd gebruikt zoals bedoeld."
+      }
+    }
   ]
 }
 </script>

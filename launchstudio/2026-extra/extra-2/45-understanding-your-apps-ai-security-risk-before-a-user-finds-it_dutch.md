@@ -57,6 +57,18 @@ Manifera's beoordelingen van infrastructuurbeveiliging worden uitgevoerd door he
 
 [Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
+## Een Zelf-Audit voor Oprichters: Vind Elke Geïmplementeerde Functie in Uw Stack
+
+Een oprichter hoeft niet te wachten op een externe audit om een globaal overzicht te krijgen van wat er daadwerkelijk live op zijn cloud-infrastructuur draait. Een eerste inventarisatie brengt vaak verrassende vondsten aan het licht:
+
+1. **Open het beheerdersdashboard van uw hostingprovider** — platforms zoals Vercel, Supabase, Netlify of AWS tonen een lijst van alle actieve serverloze functies ('Edge Functions' of 'Serverless Functions'), vaak met veel meer actieve endpoints dan een oprichter verwacht.
+2. **Noteer in heldere taal wat elke afzonderlijke functie doet** — herleid op basis van de functienaam en de code welke functionaliteit binnen de app erdoor wordt ondersteund (zoals `process-upload` of `send-email`).
+3. **Stel bij elke functie de vraag: is deze uitsluitend bedoeld voor intern gebruik of voor het publieke internet?** Functies die uitsluitend intern data moeten verwerken, blijken in AI-gegeneerde code schrikbarend vaak als publiek toegankelijke URL zonder authenticatie te zijn uitgerold.
+4. **Test het direct aanroepen van de functie-URL in een browser zonder ingelogd te zijn** — controleer of het eindpunt data retourneert of een actie uitvoert, in plaats van het verzoek direct af te wijzen met een 401 Unauthorized statuscode.
+5. **Markeer elk endpoint dat ongeautoriseerd reageert voor directe opvolging** — dit levert direct een geprioriteerde actielijst op voor uw volgende ontwikkelronde.
+
+Deze zelf-audit vervangt geen diepgaande penetratietest, maar zorgt ervoor dat u met concrete inzichten en gerichte prioriteiten aan tafel zit met uw software-engineers.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De functie die niemand zich herinnerde te beveiligen
@@ -76,25 +88,25 @@ Tijdens het oplossen van een ongerelateerde kwestie ontdekte een technisch nieuw
 
 ## Veelgestelde vragen
 
-### Zou een infrastructuurspecialist niet-geauthenticeerde serverloze functies beschouwen als een veelvoorkomend risico?
+### Waarom rollen AI-codeertools serverless functies zo vaak uit zonder authenticatie?
 
-Ja, het is specifiek welbegrepen als een veelvoorkomende cloud-misconfiguratie, omdat deze functies vaak behandeld worden als interne implementatiedetails.
+Omdat serverless frameworks (zoals Vercel of Netlify functies) elk bestand in een specifieke map standaard behandelen als een publiek toegankelijk HTTP-eindpunt. AI-tools genereren de functiecode om de taak uit te voeren, maar voegen zelden spontaan token- of sessievalidatie toe tenzij de prompt daar expliciet om vraagt.
 
-### Gebeurt dit risico door bewuste fouten of door redelijke keuzes?
+### Kan een aanvaller interne serverless functies vinden als ze nergens op de website gelinkt staan?
 
-Het gebeurt typisch door volkomen redelijke keuzes – het bouwen van een functie specifiek voor intern gebruik zonder onmiddellijke reden om aan externe authenticatie te denken.
+Ja, geautomatiseerde webscanners scannen continu op gangbare endpointnamen (zoals `/api/export`, `/api/admin`, `/api/sync`) of halen de namen rechtstreeks uit publiek toegankelijke JavaScript-bundels waarin de frontend-code de backend-URL's aanroept.
 
-### Maakt ervaring met serverloze architectuur uit voor een bibliotheeksysteem?
+### Heeft Manifera ervaring met het beveiligen van microservices en serverloze infrastructuren?
 
-Ja, aangezien serverloze architecturen hun eigen specifieke patroon voor toegangsbeheer hebben dat verschilt van traditionele servers.
+Ja, Manifera ontwerpt en beheert cloud-infrastructuur over AWS, Azure en moderne serverloze platforms, waarbij API-gateways, middleware-authenticatie en strikte netwerkisolatie waarborgen dat interne taken nooit ongeautoriseerd vanaf het publieke web kunnen worden getriggerd.
 
-### Past deze blootgestelde functie in het kader van onzichtbare infrastructuurkloven?
+### Hoe kan een oprichter snel verifiëren of een van zijn functies openstaat voor het publiek?
 
-Vrijwel exact – Sofie merkte op dat ze de functie nooit zag als onderdeel van het product, exact de onzichtbare blinde vlek op infrastructuurniveau.
+Door de URL van de serverless functie rechtstreeks aan te roepen via de browser of een tool zoals cURL zonder inlogcookies of headers mee te sturen. Als de functie data retourneert of een bewerking uitvoert in plaats van een 401 Unauthorized foutmelding te geven, is het endpoint onbeschermd.
 
-### Is er een manier voor een oprichter om zelf te zien welke functies er bestaan?
+### Is het verbergen van de URL van een functie voldoende beveiliging ('security through obscurity')?
 
-Het controleren van het dashboard van een hostingplatform toont typisch een lijst van ingezette functies, wat een redelijk startpunt is voor een oprichter om te bekijken.
+Beslist niet — het geheimhouden van een URL biedt nul garantie. Zodra de URL in client-code staat, in serverlogs verschijnt of door een scanner wordt geraden, ligt de functionaliteit volledig open. Echte beveiliging vereist altijd cryptografische verificatie van sessies of API-sleutels.
 
 <script type="application/ld+json">
 {
@@ -103,42 +115,42 @@ Het controleren van het dashboard van een hostingplatform toont typisch een lijs
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Lỗi Serverless Function (Cloud Function) không có xác thực là gì?",
+      "name": "Waarom rollen AI-codeertools serverless functies zo vaak uit zonder authenticatie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lỗi các đoạn API chạy ngầm (như cập nhật dữ liệu, gửi email) bị để công khai URL mà không kiểm tra đăng nhập/token."
+        "text": "Omdat serverless frameworks (zoals Vercel of Netlify functies) elk bestand in een specifieke map standaard behandelen als een publiek toegankelijk HTTP-eindpunt. AI-tools genereren de functiecode om de taak uit te voeren, maar voegen zelden spontaan token- of sessievalidatie toe tenzij de prompt daar expliciet om vraagt."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao lập trình viên/AI lại hay quên thêm xác thực vào các Serverless Function?",
+      "name": "Kan een aanvaller interne serverless functies vinden als ze nergens op de website gelinkt staan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì nghĩ rằng các hàm này chỉ được gọi nội bộ (internal) từ hệ thống chính nên coi nó là 'an toàn mặc định'."
+        "text": "Ja, geautomatiseerde webscanners scannen continu op gangbare endpointnamen (zoals `/api/export`, `/api/admin`, `/api/sync`) of halen de namen rechtstreeks uit publiek toegankelijke JavaScript-bundels waarin de frontend-code de backend-URL's aanroept."
       }
     },
     {
       "@type": "Question",
-      "name": "Cách tự kiểm tra (Self-audit) danh sách Serverless Function trong dự án?",
+      "name": "Heeft Manifera ervaring met het beveiligen van microservices en serverloze infrastructuren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mở Dashboard Vercel/Supabase/AWS xem mục Functions, lấy URL từng hàm ra thử gọi trực tiếp trên trình duyệt mà không gửi Token."
+        "text": "Ja, Manifera ontwerpt en beheert cloud-infrastructuur over AWS, Azure en moderne serverloze platforms, waarbij API-gateways, middleware-authenticatie en strikte netwerkisolatie waarborgen dat interne taken nooit ongeautoriseerd vanaf het publieke web kunnen worden getriggerd."
       }
     },
     {
       "@type": "Question",
-      "name": "Hậu quả của việc để lọt 1 Serverless Function công khai là gì?",
+      "name": "Hoe kan een oprichter snel verifiëren of een van zijn functies openstaat voor het publiek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kẻ xấu có thể dùng URL đó để ghi đè dữ liệu DB hàng loạt, gửi mail spam hoặc làm bùng nổ chi phí Cloud billing."
+        "text": "Door de URL van de serverless functie rechtstreeks aan te roepen via de browser of een tool zoals cURL zonder inlogcookies of headers mee te sturen. Als de functie data retourneert of een bewerking uitvoert in plaats van een 401 Unauthorized foutmelding te geven, is het endpoint onbeschermd."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian rà soát và bổ sung phân quyền cho toàn bộ Serverless API mất bao lâu?",
+      "name": "Is het verbergen van de URL van een functie voldoende beveiliging ('security through obscurity')?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường hoàn thành trong 4-7 ngày làm việc bao gồm cả việc chuẩn hóa API Key/Secret giữa các dịch vụ."
+        "text": "Beslist niet — het geheimhouden van een URL biedt nul garantie. Zodra de URL in client-code staat, in serverlogs verschijnt of door een scanner wordt geraden, ligt de functionaliteit volledig open. Echte beveiliging vereist altijd cryptografische verificatie van sessies of API-sleutels."
       }
     }
   ]

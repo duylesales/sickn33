@@ -47,6 +47,19 @@ Voer dit uit voor elk product in uw portfolio, niet alleen het vlaggenschip:
 
 Zodra u heeft vastgesteld waar het risico zich daadwerkelijk concentreert, is de oplossing meestal beperkter dan oprichters vrezen — u repareert een gedeeld systeem, niet drie afzonderlijke producten opnieuw bouwen. LaunchStudio brengt Manifera's enterprise-grade engineering, dezelfde standaard gebruikt bij meer dan 160 opgeleverde projecten voor klanten als Vodafone en TNO, naar precies dit soort multi-productbeoordeling. Ons team, werkend vanuit Amsterdam, begint doorgaans met de bovenstaande inventarisatie van gedeelde infrastructuur en prioriteert reparaties op basis van impactzone in plaats van op basis van welk product toevallig het zichtbaarst is. Als u due diligence ingaat en dit wilt laten doen voordat de technisch adviseur van een investeerder het zelfstandig vindt, kunt u [de omvang van een portfoliobrede beoordeling berekenen](https://launchstudio.eu/nl/#calculator). De bredere ervaring van Manifera met enterprise-beveiliging en -architectuur staat beschreven in het [portfolio van opgeleverde projecten](https://www.manifera.com/portfolio/).
 
+## De Smoezen Die een Portfolio-Audit Uitstellen — en Waarom Ze Geen Stand Houden
+
+Oprichters zijn meesters in het bedenken van plausibele excuses om een grondige technische audit voor zich uit te schuiven. De vier meest gehoorde uitvluchten blijken bij nadere inspectie stuk voor stuk gevaarlijke drogredenen:
+
+**Smoes 1: "We hebben nog te weinig gebruikers om interessant te zijn voor hackers."** *De realiteit:* 90% van de cyberaanvallen is niet gericht op uw specifieke bedrijf, maar bestaat uit geautomatiseerde bots die miljoenen willekeurige IP-adressen scannen op bekende open poorten en ontbrekende autorisatie. U bent interessant puur omdat uw server online staat.
+
+**Smoes 2: "We gaan toch binnenkort de hele backend herbouwen."** *De realiteit:* Grote herbouwtops worden in 90% van de gevallen uitgesteld zodra de commerciële druk toeneemt. U blijft veel langer op uw 'tijdelijke' prototype draaien dan u vooraf dacht.
+
+**Smoes 3: "Een audit vertraagt onze ontwikkelsnelheid."** *De realiteit:* Het opsporen van ontbrekende autorisatie kost bij een compact prototype 2 tot 3 dagen. Het herstellen van een live datalek na een incident kost weken, tienduizenden euro's en vernietigt uw reputatie.
+
+**Smoes 4: "Onze cloudprovider beschermt ons al."** *De realiteit:* Cloudproviders hanteren een model van 'gedeelde verantwoordelijkheid': zij beveiligen de serverhardware, maar u bent zelf 100% verantwoordelijk voor de autorisatie in uw eigen applicatiecode.
+
+Schuif de audit niet voor u uit. Een tijdige inspectie vertraagt u niet, maar verschaft u juist de rust en zekerheid om met vol gas commercieel te schalen.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: twee producten, één ongepatchte login
@@ -93,11 +106,46 @@ Ja — Manifera heeft meer dan 160 projecten opgeleverd voor enterprise-klanten 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Do investors really check shared infrastructure across multiple products?", "acceptedAnswer": { "@type": "Answer", "text": "Increasingly yes — technical advisors doing due diligence on multi-product SaaS companies routinely ask what's shared and when it was last reviewed." } },
-    { "@type": "Question", "name": "How do I find out what's shared between my own products if I didn't build them personally?", "acceptedAnswer": { "@type": "Answer", "text": "Start with logins, databases, hosting accounts, and API keys — the systems most commonly reused quietly across products." } },
-    { "@type": "Question", "name": "Should I prioritize reviewing my highest-revenue product or my riskiest one?", "acceptedAnswer": { "@type": "Answer", "text": "Prioritize by blast radius — the shared system that would affect the most products if compromised — rather than by revenue." } },
-    { "@type": "Question", "name": "How fast can a portfolio-wide review realistically happen before a raise closes?", "acceptedAnswer": { "@type": "Answer", "text": "A shared-infrastructure fix plus reviews of a couple of smaller products can typically complete within about a week when prioritized correctly." } },
-    { "@type": "Question", "name": "Does Manifera have experience with enterprise-grade due diligence standards?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Manifera has delivered 160+ projects for enterprise clients including Vodafone, TNO, and CFLW, applying the same review standards to smaller portfolios." } }
+    {
+      "@type": "Question",
+      "name": "Controleren investeerders daadwerkelijk gedeelde infrastructuur over meerdere producten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Steeds vaker wel — een technisch adviseur die due diligence uitvoert bij een multi-product SaaS-bedrijf vraagt routinematig wat er tussen producten wordt gedeeld en wanneer het voor het laatst is beoordeeld."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kom ik erachter wat er tussen mijn eigen producten wordt gedeeld als ik ze niet zelf heb gebouwd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Begin bij logins, databases, hostingaccounts en API-sleutels — dit zijn de systemen die het vaakst stilletjes worden hergebruikt over producten heen, en een technische beoordeling kan deze snel in kaart brengen, zelfs zonder uitgebreide bestaande documentatie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik prioriteit geven aan het beoordelen van mijn omzetgrootste product of mijn risicovolste product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Risico en omzet volgen elkaar niet. Geef prioriteit op basis van impactzone — het gedeelde systeem dat de meeste producten zou treffen bij compromittering — boven welk enkel product het meeste geld verdient."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel kan een portfoliobrede beoordeling realistisch plaatsvinden voordat een funding-ronde sluit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dat hangt af van de omvang, maar een reparatie van gedeelde infrastructuur plus beoordelingen van twee of drie kleinere producten, zoals in het geval van Wessel, wordt doorgaans binnen een week afgerond bij de juiste prioritering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heeft Manifera ervaring met enterprise-grade due diligence-normen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — Manifera heeft meer dan 160 projecten opgeleverd voor enterprise-klanten waaronder Vodafone, TNO en CFLW, en past dezelfde beoordelingsnormen toe op kleinere AI SaaS-portfolio's die due diligence ingaan."
+      }
+    }
   ]
 }
 </script>

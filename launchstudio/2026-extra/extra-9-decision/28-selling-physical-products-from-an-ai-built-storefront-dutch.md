@@ -85,7 +85,7 @@ Dit is geen glamoureus ontwikkelwerk, en dat is precies de reden waarom AI-bouwt
 
 Twijfelt u of uw met AI gebouwde winkel klaar is om echte bestellingen te verwerken? Laat een specialist ernaar kijken. [Stuur ons de link naar uw webwinkel voor een vrijblijvende analyse](https://launchstudio.eu/nl/#contact) — of bekijk [afgeronde projecten van Manifera](https://www.manifera.com/portfolio/) om te zien hoe onze engineers betrouwbare bedrijfssystemen op grote schaal realiseren.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een winkeleigenaar in actie: het weekend waarin negen van zes stuks werden verkocht
 

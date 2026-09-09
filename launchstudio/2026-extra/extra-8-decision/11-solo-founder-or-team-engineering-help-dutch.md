@@ -1,18 +1,19 @@
 ---
-Titel: "Solo-Oprichter of Team: Wanneer Haalt U Externe Engineering-Hulp Erbij?"
-Trefwoorden: solo oprichter engineering hulp, wanneer developer inhuren, AI SaaS opschalen, technische schuld solo founder, LaunchStudio, Manifera
+Titel: "Solo-Oprichter of Team: Bepalen Hoeveel Engineering-Hulp U Daadwerkelijk Nodig Heeft"
+Trefwoorden: solo oprichter technische hulp, developer inhuren, fractional CTO, met AI gebouwd prototype, alternatief technische co-founder, LaunchStudio, Manifera
 Koperfase: Beslissing
-Doelgroep: Niet-technische / AI-Native Solo Oprichter
+Doelgroep: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Solo-Oprichter of Team: Wanneer Haalt U Externe Engineering-Hulp Erbij?
+# Solo-Oprichter of Team: Bepalen Hoeveel Engineering-Hulp U Daadwerkelijk Nodig Heeft
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Solo-Oprichter of Team: Wanneer Haalt U Externe Engineering-Hulp Erbij?",
-  "description": "Als solo-oprichter alles zelf blijven bouwen met AI voelt productief, totdat beveiliging en infrastructuur uw groei blokkeren. Een nuchtere beslisboom over wanneer u zelf doorbouwt en wanneer u engineering delegeert.",
+  "headline": "Solo-Oprichter of Team: Bepalen Hoeveel Engineering-Hulp U Daadwerkelijk Nodig Heeft",
+  "description": "Oprichters met een door AI gebouwd prototype staan voor een wezenlijke splitsing: een fulltime technische co-founder aannemen, een intern team bouwen, of gerichte engineering-hulp met een vaste scope inschakelen voor het specifieke hiaat van vandaag. Een raamwerk om te bepalen wat echt past.",
+  "inLanguage": "nl-NL",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -31,74 +32,73 @@ Doelgroep: Niet-technische / AI-Native Solo Oprichter
 }
 </script>
 
-Dankzij moderne AI-ontwikkeltools zoals Cursor, Lovable en v0 is de solo-oprichter krachtiger dan ooit. U kunt in uw eentje een product ontwerpen, bouwen en op de markt brengen waar vroeger een heel softwareteam voor nodig was. Deze superkracht creëert echter ook een gevaarlijke psychologische valkuil: **de aanname dat omdat u het prototype zelf kón bouwen, u ook alle infrastructurele en beveiligingsproblemen zelf móet oplossen.**
+"Moet ik op zoek naar een technische co-founder, of kan ik dit zelf blijven doen?" Het is de vraag die naar boven komt zodra het met Lovable of Bolt gebouwde prototype van een solo-oprichter serieuze interesse wekt. Meestal gaat deze vraag gepaard met een gevoel van valse urgentie — alsof de enige twee opties zijn: "nu direct iemand permanent aannemen" of "blind blijven doorvliegen". In werkelijkheid is de beslissing over hoeveel technische ondersteuning een solo-oprichter nodig heeft helemaal niet binair, en draait het in de kern geenszins om personeelsomvang. Het draait om het correct identificeren van het type probleem dat u heeft: de verschillende categorieën vereisen immers volstrekt andere oplossingen, en de verkeerde keuze kost zowel duizenden euro's als maanden aan kostbare tijd.
 
-Er komt een onvermijdelijk omslagpunt in de levenscyclus van een AI-SaaS waar zelf blijven sleutelen aan backend-architectuur niet langer een besparing is, maar een directe rem op uw omzetgroei en een substantieel bedrijfsrisico.
+## De Drie Categorieën van "Ik Heb Technische Hulp Nodig"
 
-## Het Omslagpunt: Bouwen vs. Beveiligen
+Elke solo-oprichter die op dit kruispunt belandt, staat in werkelijkheid voor één van drie duidelijk te onderscheiden uitdagingen, ook al worden ze vaak met dezelfde woorden omschreven. De eerste is een afgebakend, eenmalig hiaat: het prototype werkt, maar het is nog niet veilig genoeg om bloot te stellen aan echte gebruikers en echte betalingen — ontbrekende autorisatie op API-niveau, hardcoded API-sleutels, of het ontbreken van foutafhandeling voor een externe API. Dit is een eindige, helder te definiëren hoeveelheid werk met een duidelijk eindpunt. De tweede is een doorlopende behoefte aan productontwikkeling: u heeft een lange roadmap met nieuwe features die gebouwd moeten blijven worden, en u heeft developers nodig die er over zes maanden nog steeds zijn. De derde is strategisch en adviserend: u zoekt iemand die kan aanschuiven bij investeerdersgesprekken, architectuurbeslissingen kan wegen en als technisch klankbord fungeert, meer dan iemand die dagelijks code tikt. Het door elkaar halen van deze drie categorieën is precies wat ertoe leidt dat oprichters direct overgaan tot het werven van een co-founder voor een klus van twee weken, of juist een eenzame freelancer inhuren voor een rol die institutionele continuïteit en een heel team vereist.
 
-In de vroege prototypefase is snelheid alles. U gebruikt AI om hypotheses te testen en visuele flows te ontwerpen. Maar zodra u de overstap maakt naar echte, betalende klanten verandert het speelveld:
+## Waarom "Zoek een Technische Co-Founder" Meestal de Verkeerde Eerste Stap Is
 
-1. **De Tijdskloof:** Elke dag die u als solo-oprichter besteedt aan het uitzoeken van PostgreSQL Row-Level Security, CORS-headers of Stripe webhook-handtekeningen, is een dag waarin u geen verkoopgesprekken voert, geen marketingcampagnes draait en geen klantrelaties opbouwt.
-2. **De Onbekende Risico's (Unknown Unknowns):** U kunt een LLM vragen om een endpoint te beveiligen, maar als u niet weet welke kwetsbaarheden (zoals timing attacks, IDOR of SSRF) er bestaan, kunt u de AI er ook niet naar vragen.
-3. **De Kosten van Vaste Engineering Hulp:** Een fulltime CTO aannemen kost €80.000+ per jaar of 20-30% van uw bedrijfsaandelen. Een algemene freelancer inhuren kost honderden onvoorspelbare uren. Een gerichte, vaste partner zoals LaunchStudio lost het specifieke frictiepunt op zonder langdurige overhead.
+Het instinct om elk technisch probleem op te lossen door een co-founder te zoeken is begrijpelijk — het is het klassieke verhaal uit de startupcultuur — maar het is vaak de verkeerde eerste stap voor een oprichter die al een werkend AI-prototype heeft en praat met potentiële klanten. Een co-founderrelatie betekent dat u permanent een aanzienlijk deel van uw aandelen weggeeft in ruil voor een rol die, in het geval van de eerste categorie hierboven, eigenlijk maar twee tot drie weken gerichte hardening vereist. Het betekent bovendien dat u een wervings- en selectietraject ingaat dat doorgaans drie tot zes maanden in beslag neemt voordat er überhaupt iemand aan tafel zit. Gedurende die hele periode blijft het daadwerkelijke knelpunt — datgene wat een veilige lancering in de weg staat — onaangeroerd. Een technische co-founder is logisch wanneer de tweede categorie aan de orde is: doorlopende, oneindige productontwikkeling met een diepe toewijding op aandeelhoudersniveau. Het is een volstrekt ongeschikt instrument om een afgebakend productiegereedheidsprobleem op te lossen. Het inzetten voor dat doel is vergelijkbaar met het kopen van een compleet bedrijfspand om een opslagprobleem van twee weken op te lossen.
 
-## Beslisboom: Zelf Blijven Bouwen of Engineering Delegeren?
+## De Prijs van de Verkeerde Categorie Kiezen
 
-| Situatie / Signaal | Zelf Blijven Bouwen met AI | Externe Engineering Inschakelen (LaunchStudio) |
-| :--- | :--- | :--- |
-| **Productfase** | Pre-launch, verkennen van concepten, nog geen gebruikers | Prototype gevalideerd, klaar voor eerste betalende klanten |
-| **Data-gevoeligheid** | Openbare data, geen persoonlijke of financiële gegevens | Klantdata, wachtwoorden, bedrijfsdocumenten, betalingen |
-| **Klanttype** | Vrijblijvende consumenten / hobby-gebruikers | B2B-klanten, MKB, enterprise contracten met AVG-eisen |
-| **Grootste Knelpunt** | Ideeën vertalen naar schermen en features | Angst voor datalekken, servercrashes en multi-tenant isolatie |
-| **Tijdsbesteding Oprichter** | <20% van de tijd aan technische bugs | Dagenlang vastzitten in infrastructuur in plaats van sales |
+Oprichters die reflexmatig een junior in-house developer aannemen om een afgebakend hardening-probleem op te lossen, ontdekken die mismatch meestal pas langzaam en tegen hoge kosten. Een junior ontwikkelaar, hoe getalenteerd ook, leert dit specifieke domein — Row-Level Security policies, idempotentie van Stripe-webhooks, autorisatie op API-laag — noodgedwongen 'on the job', op uw kosten en op uw risico. Dit zijn specialistische vaardigheden die jarenlange ervaring in productie-omgevingen vergen om onder de knie te krijgen, en die een algemene informatica-opleiding zelden diepgaand behandelt. De oprichter betaalt vervolgens maandenlang een fulltime salaris terwijl het echte hardening-werk — dat wat de lancering tegenhield — vordert in het tempo van iemand die het al doende moet uitvogelen. De omgekeerde mismatch is net zo kostbaar: doorlopende capaciteit van senior engineers inhuren voor een strak omlijnde eenmalige klus betekent dat u toptarieven betaalt voor beschikbaarheid die u feitelijk niet nodig heeft voor een project met een natuurlijk, definieerbaar eindpunt.
 
-## Hoe LaunchStudio Solo-Oprichters Ondersteunt
+## Een Raamwerk om te Bepalen in Welke Situatie U Zich Bevindt
 
-LaunchStudio fungeert als de on-demand backend engineering afdeling voor solo-oprichters. Wij nemen het zware technische werk uit handen zodat u zich 100% kunt focussen op distributie en verkoop:
-- **Geen Equity Verlies:** U behoudt 100% van uw bedrijf en intellectueel eigendom.
-- **Vaste Prijzen:** Geen doorlopende salariskosten, maar eenmalige heldere pakketprijzen.
-- **Enterprise Standen:** Directe toepassing van Manifera's 11+ jaar ervaring in veilige cloud-architectuur.
+Drie vragen sorteren een oprichter betrouwbaar in de juiste categorie. Ten eerste: heeft het werk dat gedaan moet worden een natuurlijk eindpunt dat u vandaag al kunt uittekenen — "de app is veilig, betalingen werken vlekkeloos, monitoring is actief" — of is het een open backlog die zichzelf net zo snel aanvult als hij wordt weggewerkt? Een definieerbaar eindpunt wijst op hulp met een vaste scope; een open backlog wijst op werving. Ten tweede: is de vereiste vaardigheid smal en specialistisch — beveiligings-hardening, betalingsinfrastructuur, DevOps — of vereist het diepe, continue productcontext die alleen ontstaat door dag in dag uit binnen het bedrijf werkzaam te zijn? Specialistisch en smal pleit voor een extern expertteam; diepe productcontext vraagt om een interne medewerker. Ten derde, en meest praktisch: kunt u het zich veroorloven om drie tot zes maanden te wachten totdat de juiste persoon is gevonden, getoetst en ingewerkt, of moet het gat dat er nu zit — dat een lancering, een investeerdersgesprek of een security-audit van een klant blokkeert — binnen enkele weken gedicht zijn? Urgentie alleen beslecht de keuze vaak al voordat de andere twee vragen überhaupt beantwoord hoeven te worden.
 
-[LaunchStudio](https://launchstudio.eu/nl/) geeft u de technische slagkracht van een compleet senior engineering team, precies op het moment dat u het nodig heeft.
+## Hoe "Engineering-Hulp Met een Vaste Scope" Er in de Praktijk Uitziet
 
-[Plan een gratis scoping call](https://launchstudio.eu/nl/#contact) en ontdek hoe snel uw prototype veilig live kan.
+Voor oprichters die in de eerste categorie vallen — een afgebakend gat in productiegereedheid tussen een werkend prototype en een verkoopbaar product — is het praktische antwoord niet "iemand aannemen", maar "het specifieke werk uitbesteden". Dit houdt in dat een engineering-team de exacte kwetsbaarheden in uw bestaande codebase in kaart brengt, een vaste prijs en tijdlijn offreert voor die scope, het hardening-werk uitvoert zonder de frontend die u zelf heeft gebouwd en gevalideerd aan te raken, en een productierijpe applicatie teruglevert. Er worden geen aandelen overgedragen. Er is geen maandenlange zoektocht. De relatie heeft een helder begin en een helder einde. Dat sluit naadloos aan bij de situatie van de meeste solo-oprichters op dit kruispunt — ook al is het vaak niet de eerste optie waar men aan denkt, omdat "iemand aannemen" het standaardskript is waar men reflexmatig naar grijpt.
 
-## Real example
+## Teamsamenstelling Is Niet Statisch — Herzie de Beslissing Terwijl U Groeit
 
-### Een Solo-Oprichter in de Praktijk: Van Technische Verlamming Naar 100% Focus op Sales
+Dit alles betekent niet dat een solo-oprichter nooit een team moet bouwen; het betekent dat het team dat u samenstelt moet passen bij het probleem dat u in de huidige fase heeft, en die match verandert door de tijd heen. De oprichter die het knelpunt van vandaag correct diagnosticeert als afgebakend en met een vaste scope, kan twaalf maanden later wél een fulltime technische collega nodig hebben zodra het product doorlopende feature-ontwikkeling vereist. Op dat moment zijn de bovenstaande categorieën opnieuw van toepassing op die nieuwe fase. De keuze voor teambuilding zien als een eenmalige, onomkeerbare beslissing in plaats van een periodieke diagnose is precies waarom oprichters zich te vroeg vastleggen: aandelen die u weggeeft voor een klus van twee weken, krijgt u een jaar later niet meer terug wanneer de situatie om iets heel anders vraagt.
 
-Tim van Leeuwen, een marketingconsultant in Utrecht, bouwde met Lovable een AI-leadkwalificatietool genaamd ScopeFinder. Drie marketingbureaus wilden direct een jaarlicentie afnemen ter waarde van in totaal €18.000. Maar Tim durfde de contracten niet te tekenen: hij zat al drie weken vast in Supabase-documentatie omdat hij niet wist hoe hij ervoor kon zorgen dat bureau A de leads van bureau B niet kon inzien via de API.
+[LaunchStudio](https://launchstudio.eu/nl/) is specifiek opgericht voor de categorie met een vaste scope — het dichten van een afgebakend productiegat in een met AI gebouwd prototype zonder aandelenoverdracht, zonder langdurige werving en zonder de frontend aan te raken, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering.
 
-Tim overwoog een technisch co-founder te zoeken en 30% van zijn bedrijf weg te geven. Toen hij tijdens een webinar hoorde over LaunchStudio, boekte hij direct een scoping call.
+[Omschrijf het knelpunt dat u wilt oplossen](https://launchstudio.eu/nl/#contact) — de meeste solo-oprichters ontdekken binnen één gesprek in welke categorie ze zich daadwerkelijk bevinden, en dat is zelden de categorie die ze vooraf verwachtten.
 
-Binnen 25 minuten identificeerde het Manifera-team het exacte probleem: ontbrekende multi-tenant tenant-id validatie in de edge functions. Binnen 9 werkdagen loste LaunchStudio het probleem op voor een vaste prijs van €2.100 onder het Launch & Grow-pakket.
+## Echt voorbeeld
+### Een AI-Native Oprichter in de Praktijk: Kiezen Voor een Vaste-Scope Opdracht Boven een Zoektocht Naar een Co-Founder
 
-**Resultaat:** Tim behield 100% van zijn aandelen, sloot direct de drie wachtende bureaus aan en richtte zijn tijd volledig op sales, waardoor hij in kwartaal 2 doorgroeide naar €7.500 MRR.
+Daniel Verbeek, een voormalig logistiek planner en nu oprichter in Deventer, bouwde RouteWyzer: een met Bolt gegenereerde applicatie waarmee kleine koeriersbedrijven hun dagelijkse routes konden optimaliseren via een AI-planningslaag. Met drie betalende testklanten en een vierde grote klant in een vergevorderd inkooptraject, begon Daniel kandidaten te interviewen voor een technische co-founderrol. Hij ging er blind van uit dat dit de enige manier was om de productiehobbel te nemen voordat het IT-team van de vierde klant akkoord zou geven.
 
-> *"Ik stond op het punt om een derde van mijn startup weg te geven aan een co-founder, puur om een databaseprobleem op te lossen waar ik zelf niet uitkwam. LaunchStudio loste het in 9 dagen op en gaf me de rust om me op verkoop te richten."*  
-> — **Tim van Leeuwen, Oprichter ScopeFinder (Utrecht)**
+Drie maanden na de start van zijn zoektocht, zonder getekende kandidaat en met de naderende deadline van de vierde klant in zicht, realiseerde Daniel zich dat het werkelijke knelpunt — ontbrekende autorisatie op API-niveau en geen gestructureerde time-outafhandeling voor de externe kaarten-API — een probleem van twee tot drie weken was, geen wervingsprobleem voor het leven. Hij zette de zoektocht naar een co-founder onmiddellijk op pauze en legde RouteWyzer voor aan LaunchStudio.
 
-**Kosten & Doorlooptijd:** €2.100 (Launch & Grow Pakket, multi-tenant RLS & API-hardening) — live in 9 werkdagen.
+**Resultaat:** De specifieke tekortkomingen werden binnen veertien werkdagen opgelost, RouteWyzer doorstond de technische audit van de vierde klant keurig op schema, en Daniel hervatte zijn zoektocht naar een co-founder later op zijn eigen voorwaarden — ditmaal gericht op langdurig productleiderschap in plaats van onder acute paniek om een technisch obstakel op korte termijn.
+
+> *"Ik stond op het punt een probleem van twee weken op te lossen door voor altijd een deel van mijn bedrijf weg te geven. Zodra iemand me dat spiegelde, werd de juiste beslissing direct glashelder."*  
+> — **Daniel Verbeek, Founder, RouteWyzer (Deventer)**
+
+**Kosten & Tijdlijn:** €2.600 (Launch & Grow Pakket, API-autorisatie en foutafhandeling) — live in 14 werkdagen.
 
 ---
 
 ## Veelgestelde Vragen
 
-### Wanneer is het financieel logischer om hulp in te schakelen dan zelf door te knutselen?
-Zodra u betalende klanten heeft klaarstaan of wanneer u meer dan 10-15 uur per week verliest aan infrastructuurproblemen in plaats van marketing en sales. De gemiste omzet is vrijwel altijd hoger dan de kosten van een gerichte hardening.
+### Hoe weet ik of mijn situatie een vaste-scope hiaat is of een werkelijke behoefte aan een vaste technische aanstelling?
 
-### Moet ik een technisch co-founder zoeken voor mijn AI-startup?
-Niet per se. Veel AI-native startups worden succesvol gerund door solo-oprichters die AI gebruiken voor productiteraties en een betrouwbare partner zoals LaunchStudio inschakelen voor gespecialiseerde backend-beveiliging.
+Vraag uzelf af of u vandaag al een duidelijk eindpunt voor het werk kunt beschrijven — "authenticatie, betalingen en monitoring zijn op productieniveau" — of dat de behoefte oneindig doorloopt en nieuwe taken net zo snel ontstaan als ze worden afgerond. Een helder eindpunt wijst vrijwel altijd op gerichte engineering met een vaste scope.
 
-### Wat als ik na de hardening zelf weer nieuwe schermen wil bouwen met Lovable of Cursor?
-Dat kan probleemloos. Omdat LaunchStudio de backend netjes moduleert en beveiligt met duidelijke API-contracten, kunt u met AI-tools nieuwe frontends en schermen blijven bouwen zonder de beveiliging te breken.
+### Is het weggeven van aandelen aan een technische co-founder niet goedkoper dan direct betalen voor development?
 
-### Hoeveel tijd kost de samenwerking met LaunchStudio mij als solo-oprichter?
-Vrijwel geen tijd. Na de initiële scoping call van 30 minuten en het aanleveren van toegang tot de repository, nemen onze senior engineers het werk volledig over en houden u via duidelijke milestones op de hoogte.
+Het lijkt op het eerste gezicht goedkoper omdat er op dat moment geen contant geld vloeit, maar aandelen vertegenwoordigen een permanent aandeel in de gehele toekomstige waarde van uw bedrijf. Dit inzetten voor een afgebakend probleem van twee tot drie weken, zoals bij Daniel, is op termijn een buitengewoon dure ruil.
 
-### Blijft alle code en intellectueel eigendom 100% van mij?
-Ja. LaunchStudio en Manifera dragen bij oplevering alle rechten en intellectueel eigendom schriftelijk en volledig aan u over.
+### Wat als ik echt niet kan inschatten in welke categorie mijn situatie valt?
+
+Een kort intakegesprek met een team dat gerichte hardening uitvoert brengt dit meestal binnen een uur aan het licht. Zij kunnen direct naar uw feitelijke code kijken en u vertellen of de hiaten afgebakend en specifiek zijn of juist open-ended.
+
+### Sluit het inschakelen van externe hulp met een vaste scope uit dat ik later alsnog een technische co-founder aanneem?
+
+Absoluut niet. In het geval van Daniel verbeterde het die latere beslissing juist aanzienlijk: het wegnemen van het acute lanceerprobleem haalde de tijdsdruk van zijn wervingsproces af, waardoor hij kandidaten rustig en zonder concessies kon beoordelen.
+
+### Hoeveel sneller is een vaste-scope traject vergeleken met een wervingsprocedure?
+
+Een helder afgebakend productiegat wordt na de intake doorgaans binnen één tot drie weken gedicht, vergeleken met drie tot zes maanden voor een gedegen wervings- en selectieproces voor een co-founder of senior developer — een cruciaal verschil wanneer een lanceerdatum of klantdeadline al vaststaat.
 
 <script type="application/ld+json">
 {
@@ -107,42 +107,42 @@ Ja. LaunchStudio en Manifera dragen bij oplevering alle rechten en intellectueel
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wanneer is het financieel logischer om hulp in te schakelen dan zelf door te knutselen?",
+      "name": "Hoe weet ik of mijn situatie een vaste-scope hiaat is of een werkelijke behoefte aan een vaste technische aanstelling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zodra technische frictie uw marktlancering vertraagt of wanneer u meer tijd kwijt bent aan infrastructuur dan aan verkoop en klantwerving."
+        "text": "Als het werk een duidelijk omschreven eindpunt heeft (beveiliging, betalingen, monitoring klaar), is een vaste-scope project passender dan direct een permanente aanstelling."
       }
     },
     {
       "@type": "Question",
-      "name": "Moet ik een technisch co-founder zoeken voor mijn AI-startup?",
+      "name": "Is het weggeven van aandelen aan een technische co-founder niet goedkoper dan direct betalen voor development?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, met moderne AI-tools en een vaste backend-partner zoals LaunchStudio kunnen solo-oprichters 100% van hun aandelen behouden."
+        "text": "Aandelen kosten direct geen geld, maar vormen een permanente claim op toekomstige bedrijfswaarde. Voor een klus van 2-3 weken is dat op termijn extreem duur."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat als ik na de hardening zelf weer nieuwe schermen wil bouwen met Lovable of Cursor?",
+      "name": "Wat als ik echt niet kan inschatten in welke categorie mijn situatie valt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dat blijft volledig mogelijk; de schone backend-architectuur maakt veilige toekomstige iteraties met AI juist eenvoudiger."
+        "text": "Een kort technisch intakegesprek over uw codebase toont direct of de knelpunten specifiek en afgebakend zijn of een doorlopende backlog vereisen."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoeveel tijd kost de samenwerking met LaunchStudio mij als solo-oprichter?",
+      "name": "Sluit het inschakelen van externe hulp met een vaste scope uit dat ik later alsnog een technische co-founder aanneem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Minimale overhead: één scoping call van 30 minuten en periodieke updates, zodat u zich kunt blijven focussen op commerciële groei."
+        "text": "Zeker niet. Het haalt juist de acute druk van de ketel, zodat u later op uw eigen voorwaarden en zonder haast de juiste co-founder kunt selecteren."
       }
     },
     {
       "@type": "Question",
-      "name": "Blijft alle code en intellectueel eigendom 100% van mij?",
+      "name": "Hoeveel sneller is een vaste-scope traject vergeleken met een wervingsprocedure?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, alle code, configuraties en intellectueel eigendom blijven 100% contractueel uw exclusieve eigendom."
+        "text": "Een vaste-scope hardeningstraject duurt 1 tot 3 weken, tegenover 3 tot 6 maanden voor een volwaardig wervingsproces van een developer of co-founder."
       }
     }
   ]

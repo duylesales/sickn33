@@ -108,6 +108,10 @@ Manifera's ingenieurs hebben facturatie- en nalevingssystemen gebouwd voor enter
 
 Het tarief en de jurisdictie die golden voor de oorspronkelijke factuur, en niet de huidige tarieftabel of de huidige locatie van de klant. Een nalevend facturatiesysteem slaat die informatie dus op de factuur zelf op en laat elke creditnota er rechtstreeks naar verwijzen.
 
+### Wat kost het corrigeren van EU btw-logica bij LaunchStudio?
+
+Het herbouwen van de btw-engine met VIES-integratie en correctie van historische facturen kost gemiddeld €1.800 en duurt 9 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

@@ -79,7 +79,7 @@ Het [team van Manifera met meer dan 120 ervaren software engineers](https://www.
 
 Laat uw database nakijken door een engineer die AI-gegenereerde query's en indexen doorgrondt. Deel uw schema en het profiel van uw drukste verwachte klant, en wij vertellen u exact waar de vertraging als eerste optreedt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Indie Hacker in Actie: Het Dashboard Dat Werkte Tot Het Echte Klanten Kreeg
 

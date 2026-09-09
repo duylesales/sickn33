@@ -80,7 +80,7 @@ De senior software engineers van LaunchStudio implementeren fijnmazige RBAC-auto
 
 Wat wij niet doen, is optreden als uw juridisch adviseur richting een ondernemingsraad of vakbond. Maar door te zorgen dat uw software vanaf dag één beschikt over modulaire uitschakelmogelijkheden en glasheldere databescherming, loodst u uw HR-klant moeiteloos door het medezeggenschapstraject. [Vraag een vrijblijvende technische scan aan van uw prototype](https://launchstudio.eu/nl/#contact); u ontvangt binnen één werkdag een concrete analyse van uw datastromen.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Feedbackplatform Ontdekt Dat de HR-Directeur Niet de Enige Beslisser Was
 

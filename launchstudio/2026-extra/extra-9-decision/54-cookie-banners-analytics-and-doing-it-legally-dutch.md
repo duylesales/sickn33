@@ -83,17 +83,25 @@ Hanteer deze logische beslisvolgorde:
 1. **Hebben we echt cookies nodig?** Vereist uw product diepgaande sessie-opnames (zoals Hotjar) of advertentieretargeting? Zo nee: kies een cookieloze analysetool en schrap de cookiebanner volledig.
 2. **Is advertentietracking onmisbaar?** Koppel dan een lichtgewicht consent manager (zoals Cookiebot of Osano) en sluit alleen die specifieke marketingpixels achter het toestemmingsvinkje.
 
+## De Banner Integreren in het Product, Niet Achteraf Vastplakken
+
+AI-coding tools zoals Lovable en Bolt genereren standaard geen cookiebanner, simpelweg omdat de meeste oprichters er tijdens de initiële prompts niet expliciet om vragen. Het wordt, als het al gebeurt, pas achteraf toegevoegd als iemand de afwezigheid opmerkt — vaak door een willekeurige template te kopiëren en te plakken die totaal niet aansluit op de daadwerkelijke trackingconfiguratie van de site. De oplossing is technisch niet ingewikkeld, maar vereist een gerichte beslissing in plaats van een generieke add-on: identificeer elk script op de site dat een cookie plaatst of een externe resource laadt (controleer dit met de ontwikkelaarstools van uw browser op de live site, niet door te gokken uit het geheugen), categoriseer elk script als strikt noodzakelijk of optioneel, en configureer de banner en de onderliggende scriptblokkade zodanig dat deze exact overeenkomt met die werkelijke lijst — niet met de veronderstelde lijst van een generieke template, die zelden weerspiegelt wat uw specifieke product daadwerkelijk inlaadt.
+
 ## Mobiele Apps en Server-Side Tracking: Wat de Banner Niet Oplost
 
 Een cookiebanner is een typisch webfenomeen, maar de onderliggende toestemmingsplicht geldt net zo goed voor mobiele applicaties en backend-systemen. Wie een mobiele app lanceert met tracking-SDK's (zoals Firebase of Mixpanel) moet een vergelijkbaar toestemmingsscherm tonen vóórdat identifiers worden uitgelezen.
 
-Hetzelfde geldt voor server-side tracking. Sommige oprichters veronderstellen ten onrechte dat tracking verplaatsen van de browser naar de server de toestemmingsvraag omzeilt. Als de verwerkte data herleidbaar is tot een natuurlijk persoon, blijft de wet onverminderd van kracht, ongeacht waar de code technisch wordt uitgevoerd.
+Hetzelfde geldt voor server-side tracking. Sommige oprichters veronderstellen ten onrechte dat tracking verplaatsen van de browser naar de server de toestemmingsvraag omzeilt. Als de verwerkte data herleidbaar is tot een natuurlijk persoon, blijft de wet onverminderd van kracht, ongeacht waar de code technisch wordt uitgevoerd. Voor een oprichter die primair op het web bouwt met AI-tools zoals Lovable of Bolt is dit minder direct acuut, maar het wordt cruciaal zodra een mobiele app of een server-side analytics-pipeline op de roadmap verschijnt; het is verstandig het toestemmingsmechanisme direct mee te nemen bij het ontwerpen van die functionaliteit, in plaats van achteraf te moeten haasten tijdens de app store review.
+
+## Waarvoor een Second Opinion de Moeite Waard Is
+
+Het overgrote deel van deze beslissing — welke analysetool u kiest en hoe u een banner correct configureert — kan een oprichter prima zelfstandig nemen en implementeren zonder juridische hulp. Waar een snelle professionele check wel degelijk de moeite waard is: wanneer uw product gegevens verwerkt in meerdere EU-rechtsgebieden met wezenlijk verschillende lokale cookiewetgevingsnuances (enkele lidstaten hanteren striktere lokale implementaties dan de ePrivacy-basislijn), of wanneer uw businessmodel sterk afhankelijk is van advertenties en retargeting, waar zowel de belangen rondom toestemming als de technische complexiteit aanzienlijk toenemen. Voor een typisch klein SaaS-product dat simpelweg zijn eigen verkeer wil begrijpen zonder juridische risico's te lopen, zijn de bovenstaande beslissingen zaken die u zelf, correct en binnen één middag kunt afronden.
 
 Het technisch correct inrichten van toestemmingsstructuren — zodat scripts écht pas laden na acceptatie, of overbodige banners verdwijnen dankzij privacy-first analytics — is een vast onderdeel van de lanceertrajecten van [LaunchStudio](https://launchstudio.eu/nl/). Ondersteund door Manifera's team van 120+ senior engineers zorgen we dat uw platform juridisch en technisch solide live gaat.
 
 [Stuur ons de link van uw prototype](https://launchstudio.eu/nl/#contact) voor een kosteloze controle van uw cookie- en trackinginrichting.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Banner Die Niets Blokkeerde
 

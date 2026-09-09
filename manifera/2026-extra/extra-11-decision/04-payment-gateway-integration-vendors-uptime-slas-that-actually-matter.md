@@ -93,6 +93,12 @@ Manifera's engineering teams have built and hardened payment integrations for Eu
 }
 </script>
 
+## By The Numbers: The Downtime Cost Curve Across SLA Tiers
+
+99.9% ("three nines") allows 8.76 hours of downtime annually — common among budget gateways bundling payments with a broader commerce platform. 99.95% cuts that to 4.38 hours. 99.99% ("four nines") drops to 52.6 minutes, the tier serious enterprise gateways commit to. 99.999% ("five nines"), rare and usually reserved for tier-1 banking infrastructure, allows just 5.26 minutes annually — vendors advertising it should be able to name the redundant infrastructure, active-active multi-region deployment rather than just multi-availability-zone, that makes it achievable.
+
+Translate this into revenue terms before comparing vendors on percentage alone. A merchant processing $50,000/day in checkout volume loses roughly $2,083/hour of full outage in direct transaction value, before accounting for cart abandonment that persists after the outage resolves — industry data suggests 15-20% of interrupted shoppers do not return same-day. At that volume, the gap between 99.9% and 99.99% represents roughly $16,000/year in outage exposure difference, a number worth putting next to the price difference between a budget and enterprise gateway tier before defaulting to the cheaper option.
+
 ## Frequently Asked Questions
 
 ### What is the practical difference between 99.95% and 99.99% payment gateway uptime?
@@ -109,6 +115,18 @@ Verify the vendor's retry policy, whether webhooks are delivered at-least-once w
 
 ### How much should settlement timing factor into gateway vendor selection?
 Significantly, since it affects cash flow planning independent of any API uptime. Ask for actual historical settlement timing rather than the contractual target, and confirm how the vendor communicates delays during bank holidays or processor-side issues.
+
+### (Scenario: Reviewing a shortlisted vendor's public status page) How should we evaluate a payment gateway's historical incident transparency before signing?
+Pull at least 12 months of the vendor's public status page history and count not just incident frequency but disclosure quality — a vendor that publishes root-cause postmortems with specific remediation steps is a materially different risk than one that logs incidents as "resolved" with no explanation. Cross-reference incident dates against independent sources, since some vendors under-report on their own status page.
+
+### (Scenario: Merchant anticipating a Black Friday-level traffic spike) Should we negotiate a separate SLA tier for peak sales periods?
+Yes, if the standard SLA doesn't already address load-scaling explicitly. Ask whether the vendor's uptime commitment holds during a traffic spike several multiples above your baseline volume, since infrastructure that comfortably serves average-day traffic can degrade under peak load in ways the standard SLA doesn't distinguish from an unrelated outage. Some enterprise gateway contracts include a peak-period addendum with pre-scaled capacity commitments; ask for one explicitly.
+
+### (Scenario: Subscription business evaluating recurring billing reliability) Does a gateway's uptime SLA cover recurring billing retry logic the same way it covers one-time checkout?
+Not usually, and this is worth checking specifically. Recurring billing failures — declined renewal, expired card, failed retry — are governed by the vendor's dunning and retry configuration, not the core API uptime SLA, so a gateway can be fully "up" while poorly configured retry logic silently loses subscription revenue. Ask for the vendor's default retry schedule and whether it is configurable to your churn tolerance.
+
+### (Scenario: Reconciling compliance requirements with failover architecture) Can PCI DSS compliance requirements conflict with a gateway's multi-acquirer failover architecture?
+Not conflict exactly, but multi-acquirer routing can expand the number of systems in scope for your own PCI assessment if card data traverses your infrastructure to reach multiple acquirers. Verify that failover routing happens entirely within the gateway vendor's own tokenized environment rather than requiring your systems to hold or route raw card data to a secondary acquirer directly.
 
 <script type="application/ld+json">
 {
@@ -139,6 +157,26 @@ Significantly, since it affects cash flow planning independent of any API uptime
       "@type": "Question",
       "name": "How much should settlement timing factor into gateway vendor selection?",
       "acceptedAnswer": {"@type": "Answer", "text": "Significantly, since it affects cash flow planning independent of any API uptime. Ask for actual historical settlement timing rather than the contractual target, and confirm how the vendor communicates delays during bank holidays or processor-side issues."}
+    },
+    {
+      "@type": "Question",
+      "name": "How should we evaluate a payment gateway's historical incident transparency before signing?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Pull at least 12 months of the vendor's public status page history and count not just incident frequency but disclosure quality — a vendor that publishes root-cause postmortems with specific remediation steps is a materially different risk than one that logs incidents as 'resolved' with no explanation. Cross-reference incident dates against independent sources, since some vendors under-report on their own status page."}
+    },
+    {
+      "@type": "Question",
+      "name": "Should we negotiate a separate SLA tier for peak sales periods?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes, if the standard SLA doesn't already address load-scaling explicitly. Ask whether the vendor's uptime commitment holds during a traffic spike several multiples above baseline volume, since infrastructure that serves average-day traffic comfortably can degrade under peak load. Some enterprise gateway contracts include a peak-period addendum with pre-scaled capacity commitments."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does a gateway's uptime SLA cover recurring billing retry logic the same way it covers one-time checkout?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Not usually. Recurring billing failures are governed by the vendor's dunning and retry configuration, not the core API uptime SLA, so a gateway can be fully 'up' while poorly configured retry logic silently loses subscription revenue. Ask for the vendor's default retry schedule and whether it is configurable to your churn tolerance."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can PCI DSS compliance requirements conflict with a gateway's multi-acquirer failover architecture?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Not conflict exactly, but multi-acquirer routing can expand the number of systems in scope for your own PCI assessment if card data traverses your infrastructure to reach multiple acquirers. Verify that failover routing happens entirely within the gateway vendor's own tokenized environment rather than requiring your systems to route raw card data to a secondary acquirer directly."}
     }
   ]
 }

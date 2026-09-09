@@ -131,7 +131,7 @@ Dat is het moment waarop oprichters een beroep doen op [LaunchStudio](https://la
 
 Voer de zes rondes eerst zelfstandig uit. Blijkt uw lijst met bevindingen langer dan uw beschikbare tijd toelaat? Geef ons alleen-lezen toegang tot uw repository en wij leveren binnen één werkdag onze bevindingen aan — direct inhoudelijk, zonder vrijblijvende verkooppraatjes.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Eenendertig endpoints, waarvan er twee fataal hadden kunnen zijn
 

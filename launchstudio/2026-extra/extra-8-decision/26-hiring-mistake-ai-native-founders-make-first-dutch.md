@@ -52,8 +52,7 @@ Oprichters die deze volgorde volgen, schrijven ook doorgaans een scherpere funct
 
 [Beschrijf het probleem voordat u een vacature plaatst](https://launchstudio.eu/nl/#contact) — een kort scopinggesprek lost vaak in weken op wat een aanname maanden zou kosten om zelfs maar in te vullen.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Aanname Die het Probleem Niet Oploste
 
 Twan Bergsma, een voormalig operations manager in Assen, bouwde InvoiceIQ, een met Lovable gebouwde tool die automatisch leveranciersfacturen voor kleine productiebedrijven verwerkt en categoriseert. Toen InvoiceIQ voorbij zijn eigen vermogen groeide om het met vertrouwen te debuggen, nam Twan een junior developer aan, met de gedachte dat een fulltime aanname hem de doorlopende engineeringondersteuning zou geven die hij dacht voor altijd nodig te hebben.

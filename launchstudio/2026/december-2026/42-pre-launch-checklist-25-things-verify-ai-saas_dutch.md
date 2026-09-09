@@ -93,6 +93,26 @@ De 25 bovenstaande punten vormen een universele basis voor vrijwel elke AI-SaaS,
 
 **Gereguleerde sectoren** (zorg, juridische dienstverlening, fintech) vereisen dat de checklist wordt aangevuld met specifieke audit-trail logging, expliciete toestemmingsstromen en data-residency afspraken.
 
+### De 5 Kritische Fouten Die Zelfs Ervaren Oprichters Missen Vóór Livegang
+
+Controleer deze vijf vaak vergeten technische instellingen vóórdat u op de lanceerknop drukt:
+1. **Geheime Sleutels in Client Bundles:** Verifieer via `grep` dat er geen `SUPABASE_SERVICE_ROLE_KEY` of private Stripe keys in uw openbare Next.js build-bestanden zijn beland.
+2. **Ontbrekende Database Connection Pooling:** Zonder PgBouncer raakt uw database bij meer dan 60 gelijktijdige serverless connecties direct overbelast.
+3. **Foutieve Webhook Signing Secrets:** Controleer of uw Stripe webhook controller het live webhook signing secret gebruikt en niet de test-omgeving sleutel.
+4. **Ongeïndexeerde Zoektabel-Kolommen:** Zorg voor B-tree indexen op alle kolommen die in `WHERE` clausules van gebruikersdashboards worden bevraagd.
+5. **Afwezige Rate Limiting:** Bescherm uw login- en AI-endpoints met Upstash Redis tegen brute-force aanvallen en token-uitputting.
+
+- **Beveiligde CORS-Configuratie:** Beperk `Access-Control-Allow-Origin` uitsluitend tot uw eigen productiedomein en blokkeer alle ongeautoriseerde cross-origin verzoeken.
+- **Geautomatiseerde SSL-Certificaatverlenging:** Verifieer dat uw DNS en hostingprovider (zoals Cloudflare of Vercel) automatische Let's Encrypt verlengingen hebben geactiveerd met HSTS preloading.
+- **Robuuste 404 en 500 Foutpagina's:** Zorg voor duidelijke, merkconforme foutpagina's met een directe link naar de statuspagina en een knop om contact op te nemen met support.
+
+### Uitgebreide Security & Performance Pre-Flight Check
+
+Vóór livegang moeten de volgende systeemparameters definitief zijn gevalideerd:
+- **PostgreSQL Connection Limits:** Verifieer dat PgBouncer de connecties limiteert op maximaal 80% van de databasecapaciteit, zodat serverless edge-functies de database nooit kunnen laten crashen.
+- **HSTS & Beveiligingsheaders:** Configureer `Strict-Transport-Security: max-age=63072000; includeSubDomains; preload` en `X-Frame-Options: DENY` om clickjacking en man-in-the-middle aanvallen te voorkomen.
+- **Stripe Webhook Idempotentie:** Controleer met dubbel verstuurde test-events of uw backend webhook-aanroepen strikt één keer verwerkt en duplicaten direct met HTTP 200 beantwoordt.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Acht ontbrekende punten ontdekt drie dagen voor livegang

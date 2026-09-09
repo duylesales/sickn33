@@ -77,6 +77,12 @@ The right vendor for SaMD development is the one whose engineering process was d
 }
 </script>
 
+## By the Numbers: What Retrofitted Documentation Actually Costs
+
+Rebuilding a Design History File after the fact — reconstructing requirements traceability, verification records, and risk analysis for software already built without contemporaneous documentation — typically costs two to three times what building it correctly from day one would have cost, consistent with the founder's experience described above, and that multiple doesn't count the schedule delay of a rejected or delayed 510(k) submission, which commonly adds six months or more to time-to-market. A first-cycle 510(k) submission with genuinely traceable, Enhanced-level documentation has a materially better shot at avoiding an Additional Information (AI) request from FDA; submissions with weak traceability matrices are disproportionately represented among the roughly 30-40% of 510(k)s across the industry that require at least one AI round, each of which typically adds 60-90 days to the review clock.
+
+On SBOM maintenance specifically, budget for continuous tracking rather than a pre-submission scramble: a mid-complexity SaMD product commonly depends on 50-150 third-party and open-source components, and generating an accurate SBOM retroactively across that many dependencies, with correct version pinning and CVE history, is a multi-week exercise that a properly tooled vendor instead produces as a standing artifact updated with every release.
+
 ## Frequently Asked Questions
 
 ### Does a 510(k) clearance mean the FDA "approved" the software?
@@ -93,6 +99,18 @@ Usually yes. Software engineering competence and regulatory affairs competence a
 
 ### What is an SBOM and why does a software vendor need to maintain one?
 A Software Bill of Materials is an inventory of every software component — commercial, open-source, and third-party — in the device, required under FDA's Section 524B cybersecurity provisions. It needs continuous maintenance throughout development, not a one-time snapshot, because it directly supports post-market vulnerability monitoring obligations.
+
+### (Scenario: A founder is deciding whether to switch vendors mid-project after discovering documentation gaps) We're six months into development and just realized our vendor hasn't been maintaining a traceability matrix — is it too late to fix this without a full rebuild?
+It depends how much undocumented work has accumulated, but the earlier you address it the cheaper the fix — retrofitted documentation typically costs two to three times what building it contemporaneously would have, and that gap grows the longer development continues without traceability. Get a qualified regulatory consultant to assess exactly how much existing work can be retroactively documented credibly versus needs re-verification.
+
+### (Scenario: A compliance officer wants to understand what happens after a 510(k) is submitted if documentation is weak) What actually happens if our 510(k) submission gets an Additional Information request from FDA?
+An AI request pauses the review clock and typically adds 60-90 days while you respond with the requested clarification or additional data, and submissions with weak requirements traceability are disproportionately represented among the roughly 30-40% of 510(k)s that receive at least one AI round. A vendor whose documentation was built with traceability from day one significantly reduces this risk versus one improvising a submission package late.
+
+### (Scenario: A team is trying to estimate how much SBOM work their SaMD project actually involves) How many third-party components does a typical SaMD product actually need to track in its SBOM?
+A mid-complexity SaMD product commonly depends on 50-150 third-party and open-source components once you count every library, framework, and off-the-shelf module. Ask your vendor whether SBOM generation is automated as part of their build pipeline or compiled manually before submission — the manual approach is where version and CVE tracking errors creep in.
+
+### (Scenario: A compliance officer is trying to decide how much regulatory experience to require in a vendor RFP) How much weight should a vendor's prior 510(k) submission experience carry versus their general software engineering portfolio?
+Weight it heavily for anything beyond a straightforward, low-risk device — a vendor with strong general engineering but no completed 510(k) submission experience is statistically more likely to underestimate the documentation burden described throughout this article. Ask for a specific, named submission they contributed documentation to, not just general familiarity with the regulations.
 
 <script type="application/ld+json">
 {
@@ -123,6 +141,26 @@ A Software Bill of Materials is an inventory of every software component — com
       "@type": "Question",
       "name": "What is an SBOM and why does a software vendor need to maintain one?",
       "acceptedAnswer": {"@type": "Answer", "text": "A Software Bill of Materials is an inventory of every software component, commercial, open-source, and third-party, in the device, required under FDA's Section 524B cybersecurity provisions. It needs continuous maintenance throughout development, not a one-time snapshot, because it directly supports post-market vulnerability monitoring obligations."}
+    },
+    {
+      "@type": "Question",
+      "name": "We're six months into development and just realized our vendor hasn't been maintaining a traceability matrix — is it too late to fix this without a full rebuild?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It depends how much undocumented work has accumulated, but the earlier you address it the cheaper the fix — retrofitted documentation typically costs two to three times what building it contemporaneously would have, and that gap grows the longer development continues without traceability. Get a qualified regulatory consultant to assess exactly how much existing work can be retroactively documented credibly versus needs re-verification."}
+    },
+    {
+      "@type": "Question",
+      "name": "What actually happens if our 510(k) submission gets an Additional Information request from FDA?",
+      "acceptedAnswer": {"@type": "Answer", "text": "An AI request pauses the review clock and typically adds 60-90 days while you respond with the requested clarification or additional data, and submissions with weak requirements traceability are disproportionately represented among the roughly 30-40% of 510(k)s that receive at least one AI round. A vendor whose documentation was built with traceability from day one significantly reduces this risk versus one improvising a submission package late."}
+    },
+    {
+      "@type": "Question",
+      "name": "How many third-party components does a typical SaMD product actually need to track in its SBOM?",
+      "acceptedAnswer": {"@type": "Answer", "text": "A mid-complexity SaMD product commonly depends on 50-150 third-party and open-source components once you count every library, framework, and off-the-shelf module. Ask your vendor whether SBOM generation is automated as part of their build pipeline or compiled manually before submission — the manual approach is where version and CVE tracking errors creep in."}
+    },
+    {
+      "@type": "Question",
+      "name": "How much weight should a vendor's prior 510(k) submission experience carry versus their general software engineering portfolio?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Weight it heavily for anything beyond a straightforward, low-risk device — a vendor with strong general engineering but no completed 510(k) submission experience is statistically more likely to underestimate the documentation burden described throughout this article. Ask for a specific, named submission they contributed documentation to, not just general familiarity with the regulations."}
     }
   ]
 }

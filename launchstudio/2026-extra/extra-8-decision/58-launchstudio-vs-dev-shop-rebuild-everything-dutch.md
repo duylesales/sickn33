@@ -65,8 +65,7 @@ Het hele model van LaunchStudio is gebouwd op het uitgangspunt dat de meeste AI-
 
 [Laat ons het prototype en de herbouw-offerte zien die u ontving](https://launchstudio.eu/nl/#contact) — een second opinion over wat daadwerkelijk moet veranderen kost niets en kan maanden besparen.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De €22.000-Herbouw Die Niet Doorging
 
 Daan Vermeer, voormalig barman en nu food-tech-ondernemer in Groningen, bouwde MaaltijdMatch, een AI-tool die restoverschotten van restaurants koppelt aan recepten en overtollig voedsel verbindt met lokale kopers, met Lovable. Na twee maanden bètatesten met vier Groningse restaurants had het product oprechte tractie — restaurants plaatsten dagelijks 15–20 overtollige items, en lokale kopers voltooiden gemiddeld acht transacties per week.

@@ -57,6 +57,21 @@ Niets aan het script zelf was ongebruikelijk. Het deed precies waarvoor het gesc
 
 Onze technici in Singapore, samenwerkend met collega's in Amsterdam en Ho Chi Minh-stad, behandelen scheiding van omgevingen als een van de standaardcontroles bij elk door AI gebouwd project voordat het live gaat — omdat het onzichtbaar is tot het moment dat het dat niet meer is. LaunchStudio brengt Manifera's enterprise-grade engineering, verfijnd over meer dan 160 opgeleverde projecten, naar precies dit soort infrastructuurreview. U kunt [zien wat een review voor databasescheiding en verharding zou kosten](https://launchstudio.eu/nl/#calculator) voor uw eigen project.
 
+## Een Praktisch Pad om Omgevingen te Scheiden Zonder Werkende Zaken te Breken
+
+Veel oprichters zien op tegen het scheiden van ontwikkel-, test- en productieomgevingen omdat ze vrezen dat de huidige werkende applicatie daardoor ontregeld raakt. Met dit praktische vierstappenplan voert u deze noodzakelijke scheiding veilig en zonder downtime door:
+
+**Stap 1: Kloon Uw Database naar een Staging-Instantie.** Maak bij uw databaseprovider (zoals Supabase of Neon) een exacte kopie van uw huidige database aan en noem deze `staging`. Dit wordt uw veilige zandbak waarin u naar hartenlust kunt experimenteren zonder dat echte gebruikers er ooit iets van merken.
+
+**Stap 2: Richt Omgevingsspecifieke Variabelen In.** Maak op uw hostingplatform (zoals Vercel) twee afzonderlijke configuratiesets aan: één voor de `Preview`-omgeving (gekoppeld aan de staging-database en Stripe-testkeys) en één voor `Production` (gekoppeld aan de live database en Stripe-livekeys).
+
+**Stap 3: Koppel Takken in Git (Branch-Based Deployments).** Koppel uw `main`-branch exclusief aan de productieomgeving. Maak voor elke nieuwe feature of promptronde een aparte branch aan (bijvoorbeeld `feature/nieuwe-flow`). Zodra u deze branch pusht, bouwt het platform automatisch een tijdelijke preview-URL waarop u alles kunt testen met testdata.
+
+**Stap 4: Hanteer de 'Merge-as-Deployment' Regel.** Pas wanneer een feature op de preview-URL vlekkeloos werkt én alle geautomatiseerde controles doorstaat, voegt u de branch samen met `main`. De live uitrol verloopt daardoor altijd rustig en voorspelbaar.
+
+Met deze beproefde opzet kunt u razendsnel blijven experimenteren met AI-prompts op staging, terwijl uw betalende klanten op productie altijd genieten van een rotsvaste, stabiele ervaring.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: één migratiescript, geen grens om het tegen te houden
@@ -103,11 +118,46 @@ Ja, al vereist het zorgvuldigheid, omdat bestaande gegevens correct gesorteerd e
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the difference between a shared schema and separate environments?", "acceptedAnswer": { "@type": "Answer", "text": "A shared schema means test and production data live in the same tables with no structural boundary between them. Separate environments use distinct databases or clearly partitioned schemas, so an operation aimed at one cannot accidentally reach the other." } },
-    { "@type": "Question", "name": "Why don't AI development tools set up this separation automatically?", "acceptedAnswer": { "@type": "Answer", "text": "Environment separation adds configuration overhead that doesn't affect whether a prototype works in a demo, so tools optimized for fast, visible results have little built-in reason to include it by default." } },
-    { "@type": "Question", "name": "How can a founder tell if their project has this problem right now?", "acceptedAnswer": { "@type": "Answer", "text": "A quick way to check is asking whether test data and real user data are stored in the same database with the same connection credentials. If the answer is yes, or unclear, it's worth a review before running any script that modifies data at scale." } },
-    { "@type": "Question", "name": "Does Manifera's team check for this specific issue during a review?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Environment separation is one of the standard infrastructure checks Manifera's engineers, across Amsterdam, Singapore, and Ho Chi Minh City, run on any AI-built project before recommending it's ready for production traffic." } },
-    { "@type": "Question", "name": "Can this kind of separation be added after a product already has real users?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, though it requires care, since existing data needs to be sorted and migrated correctly rather than simply split arbitrarily. It's a contained project, not a full rebuild, when handled by someone familiar with the existing schema." } }
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen een gedeeld schema en gescheiden omgevingen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een gedeeld schema betekent dat test- en productiegegevens in dezelfde tabellen leven, zonder structurele grens ertussen. Gescheiden omgevingen gebruiken aparte databases of duidelijk gepartitioneerde schema's, zodat een operatie gericht op de ene niet per ongeluk de andere kan bereiken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom zetten AI-ontwikkeltools deze scheiding niet automatisch op?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scheiding van omgevingen voegt configuratieoverhead toe die niet beïnvloedt of een prototype werkt in een demo, dus tools die geoptimaliseerd zijn voor snelle, zichtbare resultaten hebben weinig ingebouwde reden om dit standaard op te nemen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan een oprichter nagaan of hun project dit probleem nu heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een snelle manier om te controleren is vragen of testgegevens en echte gebruikersgegevens zijn opgeslagen in dezelfde database met dezelfde inloggegevens. Als het antwoord ja is, of onduidelijk, is een review de moeite waard voordat u een script draait dat gegevens op schaal wijzigt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Controleert het team van Manifera specifiek op dit probleem tijdens een review?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Scheiding van omgevingen is een van de standaard infrastructuurcontroles die de technici van Manifera, in Amsterdam, Singapore en Ho Chi Minh-stad, uitvoeren op elk door AI gebouwd project voordat ze het klaar verklaren voor productieverkeer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan deze scheiding worden toegevoegd nadat een product al echte gebruikers heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, al vereist het zorgvuldigheid, omdat bestaande gegevens correct gesorteerd en gemigreerd moeten worden in plaats van willekeurig gesplitst. Het is een afgebakend project, geen volledige herbouw, wanneer het wordt uitgevoerd door iemand die bekend is met het bestaande schema."
+      }
+    }
   ]
 }
 </script>

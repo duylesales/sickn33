@@ -65,6 +65,14 @@ Manifera's development teams build with security-integrated practices as standar
 }
 </script>
 
+## Pipeline Maturity Signals: What to Check in a Technical Reference Call
+
+Sales conversations describe DevSecOps maturity in aspirational terms; a reference call with an existing client's engineering lead reveals what's actually running in production. Ask three specific questions on every reference call: what percentage of dependency vulnerabilities get remediated within the SLA the partner quotes (mature shops typically close Critical CVEs within 72 hours and High within two weeks); whether SAST findings are triaged by a security-competent engineer before reaching a developer's queue, or dumped raw (raw SAST output routinely runs 30-60% false positives, and un-triaged findings train developers to ignore the tool); and how secrets detection is enforced — pre-commit hook, CI gate, or after-the-fact scanning, since only the first two actually prevent a leaked credential from reaching a repository at all.
+
+Also ask for the partner's own internal mean-time-to-remediate for their own codebase's dependency findings, not just what they promise clients — a partner that can't produce this number for their own tooling is unlikely to be tracking it rigorously for yours. A genuinely mature DevSecOps partner treats this as a routine metric they already have on hand, not a special request that triggers a scramble.
+
+For CTOs comparing two shortlisted DevSecOps-native candidates on otherwise similar pricing, this reference-call depth is usually the more reliable differentiator than the vendor's own security certifications or marketing materials.
+
 ## Frequently Asked Questions
 
 ### Is it always better to switch to a DevSecOps-native development partner?
@@ -87,6 +95,22 @@ Coordination overhead, not the consultant's invoice. Every finding has to move t
 
 Ask what percentage of their security findings originate from pipeline-integrated tooling versus periodic manual review, and ask them to show how a finding moves from detection to a developer's pull request. A vendor describing security as something a "security team reviews before release" is a bolt-on model with different branding.
 
+### (Scenario: preparing for a SOC 2 Type II certification) Does switching to a DevSecOps-native partner make SOC 2 certification faster?
+
+It helps materially with the technical controls auditors check most closely — automated vulnerability scanning, access logging, and change management evidence — because these already exist as pipeline byproducts rather than needing to be built for the audit. It doesn't replace the policy, HR, and organizational controls SOC 2 also requires, so budget for those separately regardless of which development model you choose.
+
+### (Scenario: comparing two DevSecOps-native vendors quoting similar rates) What single reference-call question best differentiates real pipeline maturity?
+
+Ask each candidate's existing client what percentage of Critical CVEs get remediated within the vendor's own quoted SLA, and ask the vendor directly for their internal mean-time-to-remediate on their own codebase's dependency findings. A vendor that can't produce this number for their own tooling is unlikely to be tracking it rigorously for a client engagement.
+
+### (Scenario: only one service in the product handles sensitive data) Can you run a hybrid model — DevSecOps-native for one service, bolt-on security for the rest?
+
+Yes, and it's a reasonable way to control cost — apply pipeline-gated scanning and stricter review to the service touching sensitive data or regulated workflows, while lower-risk services continue under a lighter, periodic-review model. The main discipline required is keeping the boundary between the two explicit in your architecture, so a change doesn't quietly move sensitive processing into the less-scrutinized service.
+
+### (Scenario: the current vendor resists adopting pipeline security gates) How do you push an existing vendor toward shift-left practices without replacing them entirely?
+
+Start by making pipeline-gated SAST and dependency scanning a contract amendment with a defined rollout timeline, rather than an open-ended request — vendors respond to specific, scoped asks with deadlines far more reliably than general pressure to "improve security." If the vendor still resists a scoped, reasonable ask after a defined trial period, that resistance itself is the signal to evaluate a DevSecOps-native replacement.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,7 +120,11 @@ Ask what percentage of their security findings originate from pipeline-integrate
     {"@type": "Question", "name": "How much does bolting a security consultant onto an existing vendor typically cost?", "acceptedAnswer": {"@type": "Answer", "text": "An initial assessment and remediation roadmap for a mid-sized application typically runs €15,000-€40,000 as a discrete project, and the engagement can begin within 1-2 weeks without touching your existing development contract."}},
     {"@type": "Question", "name": "What does \"shift-left\" security actually mean in practice?", "acceptedAnswer": {"@type": "Answer", "text": "It means catching security issues at the point of code creation — through pipeline-integrated SAST, dependency scanning, and secrets detection — rather than after deployment. A vulnerability caught in a pull request costs a developer minutes to fix; the same issue caught by a post-deployment pentest costs hours of investigation and a hotfix cycle."}},
     {"@type": "Question", "name": "What is the hidden cost of the bolt-on security model?", "acceptedAnswer": {"@type": "Answer", "text": "Coordination overhead, not the consultant's invoice. Every finding has to move through a report, a translated ticket, an implementation without the consultant present to verify the approach, and eventually a retest — each handoff loses context and stretches timelines, and this tax repeats every finding, every quarter."}},
-    {"@type": "Question", "name": "How do I know if a vendor claiming \"DevSecOps\" has actually integrated security into development?", "acceptedAnswer": {"@type": "Answer", "text": "Ask what percentage of their security findings originate from pipeline-integrated tooling versus periodic manual review, and ask them to show how a finding moves from detection to a developer's pull request. A vendor describing security as something a 'security team reviews before release' is a bolt-on model with different branding."}}
+    {"@type": "Question", "name": "How do I know if a vendor claiming \"DevSecOps\" has actually integrated security into development?", "acceptedAnswer": {"@type": "Answer", "text": "Ask what percentage of their security findings originate from pipeline-integrated tooling versus periodic manual review, and ask them to show how a finding moves from detection to a developer's pull request. A vendor describing security as something a 'security team reviews before release' is a bolt-on model with different branding."}},
+    {"@type": "Question", "name": "Does switching to a DevSecOps-native partner make SOC 2 certification faster?", "acceptedAnswer": {"@type": "Answer", "text": "It helps materially with the technical controls auditors check most closely — automated vulnerability scanning, access logging, and change management evidence — since these already exist as pipeline byproducts. It doesn't replace the policy, HR, and organizational controls SOC 2 also requires, which need budgeting for separately."}},
+    {"@type": "Question", "name": "What single reference-call question best differentiates real pipeline maturity between two DevSecOps-native vendors?", "acceptedAnswer": {"@type": "Answer", "text": "Ask each candidate's existing client what percentage of Critical CVEs get remediated within the vendor's own quoted SLA, and ask the vendor for their internal mean-time-to-remediate on their own codebase's dependency findings. A vendor that can't produce this number for their own tooling is unlikely to be tracking it rigorously for a client engagement."}},
+    {"@type": "Question", "name": "Can you run a hybrid model — DevSecOps-native for one service, bolt-on security for the rest?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — apply pipeline-gated scanning and stricter review to the service touching sensitive or regulated data, while lower-risk services continue under a lighter, periodic-review model. The main discipline required is keeping the boundary between the two explicit in the architecture."}},
+    {"@type": "Question", "name": "How do you push an existing vendor toward shift-left practices without replacing them entirely?", "acceptedAnswer": {"@type": "Answer", "text": "Make pipeline-gated SAST and dependency scanning a contract amendment with a defined rollout timeline, rather than an open-ended request — vendors respond to specific, scoped asks with deadlines far more reliably than general pressure. Continued resistance after a defined trial period is the signal to evaluate a DevSecOps-native replacement."}}
   ]
 }
 </script>

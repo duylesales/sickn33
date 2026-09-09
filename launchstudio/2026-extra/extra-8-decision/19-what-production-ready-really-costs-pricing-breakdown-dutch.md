@@ -1,18 +1,19 @@
 ---
-Titel: "Wat 'Productieklaar' Werkelijk Kost: Een Eerlijke Uitsplitsing van Prijzen"
-Trefwoorden: kosten productieklaar maken, software MVP prijzen breakdown, AI app hardening kosten, vaste prijs software tiers, LaunchStudio, Manifera
+Titel: "Wat 'Productieklaar' Werkelijk Kost: Een Transparante Prijsuitsplitsing"
+Trefwoorden: kosten productiegereedheid, backend hardening prijs, fixed price softwarepakketten, AI app lanceerkosten, transparante softwareprijzen, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: SaaS Oprichter Scale-Up
 ---
 
-# Wat 'Productieklaar' Werkelijk Kost: Een Eerlijke Uitsplitsing van Prijzen
+# Wat 'Productieklaar' Werkelijk Kost: Een Transparante Prijsuitsplitsing
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Wat 'Productieklaar' Werkelijk Kost: Een Eerlijke Uitsplitsing van Prijzen",
-  "description": "Wat kost het daadwerkelijk om een door AI gebouwd prototype om te zetten in een veilige, schaalbare productie-app? Een transparante uitsplitsing van uren, infrastructuur en engineering per niveau.",
+  "headline": "Wat 'Productieklaar' Werkelijk Kost: Een Transparante Prijsuitsplitsing",
+  "description": "Een nuchtere uitsplitsing van wat het daadwerkelijk kost om een met AI gebouwd prototype productieklaar te maken, verdeeld over concrete pakketten, prijsranges en de technische scope die elk dekt — zodat een oprichter zijn eigen situatie vóór een verkoopgesprek kan inschatten.",
+  "inLanguage": "nl-NL",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -31,89 +32,77 @@ Doelgroep: SaaS Oprichter Scale-Up
 }
 </script>
 
-Voor een oprichter die net een prototype heeft voltooid in Lovable, Bolt of Cursor is de term "productieklaar maken" vaak een ongrijpbaar begrip. U weet dat er iets moet gebeuren aan beveiliging en infrastructuur, maar de prijsvoorstellen in de markt lopen absurd ver uiteen: van een freelancer op Fiverr die €150 vraagt, tot softwarebureaus die offertes van €35.000 sturen.
+"Noem gewoon een getal" is de vraag die schuilgaat achter het eerste bericht van vrijwel elke oprichter. De eerlijke, wellicht licht onbevredigende waarheid is dat er niet één getal bestaat. Werk aan productiegereedheid schaalt immers mee met de specifieke hiaten in een unieke codebase, en niet met de categorie of de ambitie van een app. Wat er wél is, is een compacte set helder afgebakende pakketten met reële prijsranges, gekoppeld aan concrete werkzaamheden. Uw eigen situatie hierop projecteren — in plaats van te moeten wachten op een vaag "het hangt ervan af" — is de meest praktische waarde die dit artikel kan bieden vóórdat u met iemand om tafel gaat.
 
-Waarom bestaat deze enorme kloof? En wat zijn de werkelijke, eerlijke kosten om een AI-app betrouwbaar, veilig en AVG-conform live te zetten voor betalende klanten? In dit artikel geven we een volledige, transparante uitsplitsing van wat er technisch gebeurt en waarom LaunchStudio's vaste pakketten (€800 tot €7.500) de meest rationele investering in de markt vormen.
+## Waarom "Het Hangt Ervan Af" Waar Is, Maar Geen Excuus Om Een Reëel Getal Te Vermijden
 
-## Waar Betaalt U Eigenlijk Voor Bij Productiegereedheid?
+"Het hangt ervan af" is het standaardantwoord van elke vage leverancier, en frustrerend genoeg is het technisch correct. De eerlijke oplossing is niet doen alsof dat niet zo is, maar specifiek benoemen waarvan het precies afhangt. De prijs voor het verharden van een prototype hangt primair af van hoeveel kerngebieden al deels zijn ingericht versus volledig ontbreken, hoe privacygevoelig de verwerkte data is, of er betalingen in de scope zitten, en hoe complex de bestaande code rondom de aan te passen onderdelen is geweven. Twee applicaties die er aan de buitenkant identiek uitzien — beide gebouwd met Lovable, beide met ruwweg dezelfde features — kunnen een wezenlijk andere offerte krijgen doordat de één al een solide basis voor authenticatie heeft staan en de ander nog helemaal niets. Wat volgt is geen manier om die variabiliteit te ontkennen, maar een heldere gids om te begrijpen in welk segment u valt, en waarom.
 
-Een prototype klaarmaken voor echte gebruikers omvat vier afzonderlijke engineering-disciplines:
+## Launch Ready: €800–1.500
 
-1. **Beveiliging & Autorisatie (35% van de inspanning):** Verplaatsen van geheimen, afdwingen van database Row-Level Security, implementeren van JWT-token validatie en voorkomen van cross-tenant datalekken.
-2. **Betalings- & Webhook-Integriteit (25% van de inspanning):** Cryptografische handtekeningverificatie voor Stripe/Mollie, idempotency logica en geautomatiseerde abonnementsstatussen.
-3. **Infrastructuur & DevOps (25% van de inspanning):** Overzetten van demo-URL's naar een betrouwbaar cloudplatform (Supabase, AWS, Cloudflare), inrichten van staging/productie-omgevingen, geautomatiseerde back-ups en SSL.
-4. **Observability & Error Tracking (15% van de inspanning):** Implementatie van Sentry voor realtime error-logging, monitoring en notificaties bij serverfouten.
+Dit is ons instappakket, bedoeld voor prototypes met een smal, helder gedefinieerd probleem — doorgaans authenticatie die alleen aan de voorkant in de gebruikersinterface bestaat en server-side moet worden afgedwongen, gecombineerd met basisbeheer van geheimen om hardcoded API-sleutels uit de codebase te verwijderen. Het past bij een oprichter met een klein aantal testgebruikers, zonder betalingsverwerking en zonder bijzondere categorieën persoonsgegevens. De werkzaamheden in dit pakket worden doorgaans binnen één tot twee weken afgerond. Een oprichter in deze categorie heeft meestal een functioneel complete app die simpelweg nog niet is gecontroleerd op toegangsbeveiliging.
 
-## De Vier LaunchStudio Prijstiers Uitgelegd
+## Launch & Grow: €1.500–3.500
 
-Bij LaunchStudio hanteren we vier overzichtelijke vaste pakketten, gebaseerd op de complexiteit van uw datamodel en zakelijke vereisten:
+Dit middensegment dekt een bredere scope: volwaardige authenticatie en autorisatie, Row-Level Security (RLS) of vergelijkbare data-isolatie voor een applicatie met meerdere accounts of rollen, gestructureerde foutafhandeling voor externe API-aanroepen, en vaak de initiële inrichting van monitoring zodat incidenten zichtbaar worden op een dashboard in plaats van via klagende gebruikers. Dit is het niveau waar de meeste SaaS-oprichters op uitkomen die zich voorbereiden op een echte publieke lancering in plaats van een besloten test. Het moment waarop "een handvol bekende testers" verandert in "een onbekend aantal vreemde gebruikers", wijzigt de risicoafweging wezenlijk. De doorlooptijd bedraagt hier doorgaans twee tot drie weken.
 
-### 1. Launch Ready (€800 – €1.500)
-- **Doel:** Eenvoudige single-product apps, micro-SaaS of tools voor één type gebruiker.
-- **Inhoud:** Geheimenbeheer, basisauthenticatie, Stripe/Mollie webhook-verificatie, productiehosting en SSL.
-- **Doorlooptijd:** 5 tot 7 werkdagen.
+## Relaunch & Scale: €2.500–4.500
 
-### 2. Launch & Grow (€1.500 – €3.500)
-- **Doel:** Rijkere B2B SaaS-apps met meerdere gebruikersrollen (bijv. Admin, Member, Guest).
-- **Inhoud:** Rolgebaseerde toegangscontrole (RBAC), multi-tenant database policies, geavanceerde webhook pipelines, API rate-limiting en monitoring.
-- **Doorlooptijd:** 7 tot 10 werkdagen.
+Dit niveau is afgestemd op producten die al live draaien, al echte gebruikers hebben en toe zijn aan een grondigere professionaliseringsslag. Vaak wordt dit getriggerd door een concrete gebeurtenis: een naderende enterprise-deal, een beveiligingsincident dat een lek blootlegde, of het besef van de oprichter dat vroege sluiproutes zich hebben opgestapeld tot een serieus bedrijfsrisico. Het omvat doorgaans alles uit Launch & Grow plus het beveiligen van betalingsinfrastructuur — verificatie van Stripe-webhooks, idempotente verwerking tegen dubbele afschrijvingen — gecombineerd met gedetailleerde audit logging en een gedocumenteerd incident response proces. Oprichters in dit segment vragen niet meer hypothetisch "is mijn app veilig", maar reageren op een acuut en tastbaar risico.
 
-### 3. Relaunch & Scale (€2.500 – €4.500)
-- **Doel:** Platforms met complexe data-isolatie, meerdere third-party API-integraties of apps die al betalende klanten hebben en storingsvrij moeten migreren.
-- **Inhoud:** Diepe database refactoring, asynchrone queue-afhandeling, audit-logging en geautomatiseerde back-up systemen.
-- **Doorlooptijd:** 10 tot 14 werkdagen.
+## Enterprise Hardening: €5.000–7.500
 
-### 4. Enterprise Hardening (€5.000 – €7.500)
-- **Doel:** Platforms die verkopen aan grote ondernemingen, scholen of gereguleerde sectoren met strikte compliance-eisen.
-- **Inhoud:** SAML/Okta Single Sign-On (SSO), AES-256 veldniveau encryptie, SOC2/AVG compliance auditdossier en penetratietesten.
-- **Doorlooptijd:** 12 tot 15 werkdagen.
+Het hoogste niveau is bedoeld voor oprichters die voor een formele enterprise security-audit staan, toewerken naar SOC 2-gereedheid, of een schaalgrootte en datagevoeligheid kennen die de meest diepgaande aanpak rechtvaardigen: volledige audit logging, gedocumenteerd dataretentiebeleid, uitgebreide incidentrespons en verificatietests die exact nabootsen wat het security-team van een zakelijke koper uitvoert. Dit pakket is zelden de eerste opdracht van een vroege startup bij LaunchStudio, maar fungeert meestal als vervolgstap wanneer een bedrijf doorgroeit en enterprise-klanten aantrekt met strikte compliance-deadlines.
 
-## Prijzenvergelijking in de Markt
+## Waarom een Vaste Prijs Beter Werkt Dan een Uurtarief Voor Dit Type Werk
 
-| Oplossing | Typische Kosten | Wat U Werkelijk Krijgt |
-| :--- | :--- | :--- |
-| **Zelf Doen met AI** | €0 (schijnbaar) | Enorme tijdsverspilling, valse veiligheid, hoog risico op datalekken |
-| **Marktplaats Freelancer** | €1.500 – €5.000 (open uren) | Onvoorspelbare kwaliteit, gefragmenteerde fixes, geen formele garanties |
-| **Traditioneel Bureau** | €25.000 – €60.000+ | Complete herbouw vanaf nul, maandenlange vertraging, hoge bureaucratie |
-| **LaunchStudio (Manifera)** | **€800 – €7.500 (Vaste prijs)** | **100% frontend behoud, senior engineering, live in 7-14 dagen, 30 dagen garantie** |
+Het productierijp maken van software is bij uitstek een categorie waarin een vaste prijs de oprichter veel beter beschermt dan facturatie per uur. Uurtarieven leggen het risico van tegenvallers — ontdekken dat een probleem dieper zit dan gedacht — volledig bij de oprichter neer, die meer betaalt naarmate het ontrafelen langer duurt, zonder enig vooraf afgesproken plafond. Een vaste prijs legt dat risico bij de leverancier: die moet vooraf accuraat analyseren en offreren, simpelweg omdat eventuele extra uren niet kunnen worden doorberekend. Die afstemming van belangen is de reden waarom een gedegen intakegesprek en codebase-inspectie altijd voorafgaan aan een offerte: de ontwikkelaar moet de feitelijke scope kennen om verantwoord met een vaste prijs te kunnen werken. Wees altijd op uw hoede voor een vaste offerte die zonder enige code-inspectie wordt afgegeven.
 
-[LaunchStudio](https://launchstudio.eu/nl/) biedt de meest kostenefficiënte, professionele brug naar productie in Europa, ondersteund door 11+ jaar enterprise engineering van Manifera.
+## Hoe Dit Zich Verhoudt Tot de Alternatieven Die Oprichters Meestal Eerst Overwegen
 
-[Vraag uw exacte prijs aan via een gratis scoping call](https://launchstudio.eu/nl/#contact) en ontdek direct binnen welk pakket uw app valt.
+Het is nuttig om deze bedragen af te zetten tegen wat de realistische alternatieven daadwerkelijk kosten. Een junior in-house developer die dit werk competent kan uitvoeren, kost alleen al aan maandsalaris duizenden euro's, nog los van de maanden inwerktijd en domeinspecifieke training die nodig zijn voordat er betrouwbare output ontstaat. Zelfs ons hoogste Enterprise Hardening-pakket is vaak goedkoper dan één maand van een vaste aanstelling, terwijl het werk binnen enkele weken wordt opgeleverd en getoetst is aan enterprise-standaarden. Een freelance bod op een marktplaats oogt op het eerste gezicht goedkoper dan Launch Ready, maar zoals eerder beschreven gaat die vergelijking alleen op als het lapmiddel het probleem ook daadwerkelijk oplost. Zodra herstelwerk en vertraging worden meegerekend, pakt een goedkoop bod zelden voordeliger uit.
 
-## Real example
+[LaunchStudio](https://launchstudio.eu/nl/) prijst elk traject in één van deze transparante pakketten na een daadwerkelijke blik op uw codebase, niet op basis van een globale categoriegok — ondersteund door Manifera's 11+ jaar ervaring in productie-engineering.
 
-### Een Oprichter in de Praktijk: Transparantie Waarop Hij Zijn Begroting Kon Bouwen
+[Ontdek welk pakket bij uw situatie past](https://launchstudio.eu/nl/#contact) — de meeste oprichters weten het na één gesprek.
 
-Dennis Veenstra, oprichter van RentMonitor in Zwolle (een met Bolt gebouwd platform voor verhuurders van bedrijfsvastgoed), had €5.000 startkapitaal gereserveerd voor zijn lancering. Hij vreesde dat technische hardening zijn gehele budget zou opslokken.
+## Echt voorbeeld
+### Een AI-Native Oprichter in de Praktijk: Haar Situatie Zelf Vooraf Naar het Juiste Pakket Herleiden
 
-Tijdens de scoping call van LaunchStudio werd zijn codebase geanalyseerd: RentMonitor had een heldere structuur, maar vereiste veilige rolgebaseerde autorisatie tussen vastgoedeigenaren en huurders, plus een Stripe-koppeling. LaunchStudio offrereerde een vaste prijs van €2.400 onder het Launch & Grow-pakket.
+Annika Visser, oprichtster van RecipeRoute (een met v0 gebouwde app voor maaltijdplanning met een gratis en een betaald abonnement), had oorspronkelijk begroot op een Launch Ready-traject op basis van een blogpost van een andere ondernemer die een oppervlakkig vergelijkbaar project beschreef. Toen ze de pakketbeschrijvingen zelf doornam, realiseerde ze zich dat RecipeRoute's betalingsverwerking en multi-tenant receptendeling haar applicatie feitelijk in Launch & Grow of wellicht Relaunch & Scale plaatsten.
 
-**Resultaat:** RentMonitor ging binnen 9 werkdagen live voor exact €2.400. Dennis hield €2.600 van zijn budget over, wat hij direct kon investeren in Google Ads en contentmarketing om zijn eerste 20 betalende vastgoedklanten te werven.
+Doordat ze het intakegesprek inging met een reëel begrip van welk niveau van toepassing was en waarom, verliep het gesprek aanzienlijk gerichter en inhoudelijker. Ze werd niet verrast toen de offerte precies binnen de range viel die ze zelf vooraf al had gecalculeerd.
 
-> *"Bij andere partijen kreeg ik schattingen met een slag om de arm van 'tussen de €4.000 en €8.000 afhankelijk van de uren'. LaunchStudio gaf me één exact getal van €2.400. Dat gaf me de financiële rust om mijn marketingbudget te beschermen."*  
-> — **Dennis Veenstra, Oprichter RentMonitor (Zwolle)**
+**Resultaat:** De Stripe-webhookverwerking van RecipeRoute, Row-Level Security voor gedeelde receptencollecties en foutafhandeling voor de externe AI-receptenservice werden uitgevoerd binnen een Launch & Grow-traject, opgeleverd binnen de afgesproken termijn en zonder enige budgettaire verrassing.
 
-**Kosten & Doorlooptijd:** €2.400 (Launch & Grow Pakket, RBAC & Stripe-hardening) — live in 9 werkdagen.
+> *"Het vooraf doornemen van de daadwerkelijke prijsuitsplitsing zorgde ervoor dat ik niet meer in het duister tastte. Ik ging het gesprek in met de juiste verwachtingen, en die klopten tot op de komma."*  
+> — **Annika Visser, Founder, RecipeRoute (Leeuwarden)**
+
+**Kosten & Tijdlijn:** €2.900 (Launch & Grow Pakket, betalingen, data-isolatie en foutafhandeling) — live in 15 werkdagen.
 
 ---
 
 ## Veelgestelde Vragen
 
-### Zijn er naast de vaste pakketprijs nog verborgen maandelijkse kosten aan LaunchStudio?
-Nee. U betaalt eenmalig de overeengekomen vaste projectprijs. Voor hosting en clouddiensten (zoals Supabase of AWS) betaalt u rechtstreeks de lage kostprijs aan de desbetreffende leverancier (vaak €0 tot €25/maand in de beginfase).
+### Waarom kan LaunchStudio mij niet direct één getal geven zonder eerst een gesprek te voeren?
 
-### Waarom zijn de prijzen van LaunchStudio zoveel lager dan traditionele softwarebureaus?
-Omdat wij uw bestaande AI-gegenereerde frontend 100% behouden en hergebruiken. Traditionele bureaus rekenen tienduizenden euro's voor het opnieuw ontwerpen en programmeren van schermen die u al heeft gebouwd.
+Omdat de feitelijke werkzaamheden afhangen van de staat van uw codebase — hoeveel van de beveiligings-, betalings- en datalagen al deels aanwezig zijn versus volledig ontbreken. Twee ogenschijnlijk identieke apps kunnen een totaal verschillende hoeveelheid werk vereisen, zoals bij Annika bleek.
 
-### Wat als mijn project qua complexiteit tussen twee pakketten in zit?
-Tijdens de scoping call stemmen we de scope exact af op uw wensen. We kunnen onderdelen prioriteren zodat u altijd binnen uw gewenste budget blijft.
+### Hoe weet ik in welk pakket mijn project valt vóórdat ik met iemand spreek?
 
-### Hoe werkt de betalingsstructuur bij LaunchStudio?
-Wij hanteren een transparante milestone-structuur: een aanbetaling bij aanvang van het project en het restant bij succesvolle oplevering en verificatie.
+Vergelijk uw functionele situatie met de beschrijvingen van de pakketten: spelen er betalingen, is er multi-tenant scheiding nodig, of staat er een formele zakelijke security review voor de deur? Daarmee schat u uw segment zelf al nauwkeurig in.
 
-### Krijg ik een btw-factuur die zakelijk aftrekbaar is?
-Ja, u ontvangt een officiële zakelijke factuur inclusief btw-specificatie die volledig opvoerbaar is als bedrijfsinvestering.
+### Waarom is een vaste prijs voordeliger voor mij dan betalen per uur?
+
+Een vaste prijs legt het risico van onvoorziene complexiteit bij de leverancier in plaats van bij de oprichter. U kent uw maximale investering vooraf en betaalt niet extra als het ontrafelen van een lastig probleem meer tijd kost.
+
+### Betekent een offerte in een hoger pakket dat mijn code slechter is gebouwd?
+
+Niet per se slechter — het weerspiegelt doorgaans een bredere scope, zoals de aanwezigheid van betalingen of data-isolatie tussen meerdere organisaties. Een eenvoudige app zonder betalingen kan prima geschreven zijn en toch aan Launch Ready genoeg hebben.
+
+### Kan mijn project van pakket wisselen als de situatie halverwege verandert?
+
+Als er tijdens het traject wezenlijk nieuwe functionele eisen ontstaan, kan de scope in overleg worden aangepast. Het doel van het grondige intakegesprek is echter juist om dit te voorkomen, zodat de offerte vanaf dag één naadloos aansluit op wat er nodig is.
 
 <script type="application/ld+json">
 {
@@ -122,42 +111,42 @@ Ja, u ontvangt een officiële zakelijke factuur inclusief btw-specificatie die v
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Zijn er naast de vaste pakketprijs nog verborgen maandelijkse kosten aan LaunchStudio?",
+      "name": "Waarom kan LaunchStudio mij niet direct één getal geven zonder eerst een gesprek te voeren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, de pakketprijs is eenmalig en vast; voor cloud-hosting betaalt u rechtstreeks de minimale tarieven aan providers zoals Supabase of AWS."
+        "text": "Omdat de werkzaamheden afhangen van wat er al staat in uw code; apps die van buiten hetzelfde lijken, kunnen onderhuids sterk verschillen in werklast."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom zijn de prijzen van LaunchStudio zoveel lager dan traditionele softwarebureaus?",
+      "name": "Hoe weet ik in welk pakket mijn project valt vóórdat ik met iemand spreek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat LaunchStudio uw bestaande frontend behoudt en uitsluitend de backend hardt, waardoor u niet betaalt voor overbodige herbouw."
+        "text": "Toets uw situatie aan de scope per pakket: betalingen, data-isolatie, rollen of enterprise-audits wijzen u direct naar het juiste segment."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat als mijn project qua complexiteit tussen twee pakketten in zit?",
+      "name": "Waarom is een vaste prijs voordeliger voor mij dan betalen per uur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tijdens de scoping call stemmen we de scope exact af op uw prioriteiten en budget, zodat de prijs volledig voorspelbaar blijft."
+        "text": "Een vaste prijs legt het risico van vertraging bij de softwarepartner. U weet vooraf exact wat u investeert zonder open nacalculaties."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe werkt de betalingsstructuur bij LaunchStudio?",
+      "name": "Betekent een offerte in een hoger pakket dat mijn code slechter is gebouwd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een heldere milestone-structuur met een aanbetaling bij de start en het restant bij succesvolle oplevering en verificatie."
+        "text": "Nee, het betekent vooral dat uw functionaliteit breder is (zoals betalingen of multi-tenancy), wat van nature meer verificatiewerk vereist."
       }
     },
     {
       "@type": "Question",
-      "name": "Krijg ik een btw-factuur die zakelijk aftrekbaar is?",
+      "name": "Kan mijn project van pakket wisselen als de situatie halverwege verandert?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, u ontvangt een officiële zakelijke factuur die 100% fiscaal aftrekbaar is als software-investering."
+        "text": "Nieuwe eisen kunnen altijd worden besproken, maar een gedegen intake vooraf is juist bedoeld om scope-verrassingen tijdens het werk uit te sluiten."
       }
     }
   ]

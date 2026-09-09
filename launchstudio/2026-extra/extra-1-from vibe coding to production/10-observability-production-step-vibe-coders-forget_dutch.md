@@ -7,6 +7,31 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Observability: De Productiestap Die Vibe Coders Volledig Vergeten
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Observability: De Productiestap Die Vibe Coders Volledig Vergeten",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/observability-production-step-vibe-coders-forget"
+  }
+}
+</script>
+
+
 Vraag tien AI-native founders hoe ze erachter zouden komen als hun app om 3 uur 's nachts uitvalt, en de meesten geven hetzelfde eerlijke antwoord: een klant zou het hen uiteindelijk vertellen. Dat antwoord is het hele observability-gat in één zin — de afwezigheid van enig systeem tussen "er ging iets kapot" en "jij komt erachter," waarbij de frustratie van een echte klant je enige monitoringinfrastructuur is.
 
 ## Waarom Observability Wordt Overgeslagen, Zelfs Door Founders Die Al De Rest Oplossen
@@ -36,6 +61,20 @@ In verhouding tot de andere productiedimensies is observability ongewoon goedkoo
 [LaunchStudio](https://launchstudio.eu/nl/) zet foutregistratie, uptime-monitoring, en correct afgestemde waarschuwingen op als standaard onderdeel van elke Launch & Grow-opdracht, specifiek geconfigureerd voor signaal, niet ruis, gesteund door Manifera's operationele ervaring met het draaien van productie-infrastructuur over 160+ opgeleverde projecten.
 
 [Kom je volgende productieprobleem te weten vóór je klanten dat doen](https://launchstudio.eu/nl/#calculator) — dit is doorgaans het snelste gat op de hele checklist om te dichten.
+
+## Wat te Doen in de Eerste Vijf Minuten Nadat een Alarm Afgaat
+
+Het hebben van monitoring en alerting is pas werkelijk waardevol als de reactie op een melding doordacht is, in plaats van een paniekerige improvisatie midden in de nacht.
+
+**Verifieer de realiteit vóórdat je ingrijpt**: Controleer direct het specifieke foutsignaal of de uptime-grafiek — niet alleen de kopregel van het pushbericht. Een klein percentage meldingen betreft een kortstondige netwerkdip die zichzelf binnen seconden herstelt. Direct reageren alsof het een catastrofe is, leidt onherroepelijk tot alert-fatigue.
+
+**Bepaal de omvang vóór de schaal van je respons**: Raakt de storing alle actieve gebruikers, een specifieke tenant, of slechts één individueel account? Een goed geconfigureerde error-tracking tool (zoals Sentry) toont binnen seconden het aantal getroffen gebruikers en browsercontext, zonder dat je handmatig door ruwe serverlogs hoeft te spitten.
+
+**Communiceer proactief naar je klanten**: Als het probleem zichtbaar is voor gebruikers, volstaat een korte, transparante statusupdate ("We zijn op de hoogte en onderzoeken de vertraging"). Klanten verliezen pas vertrouwen wanneer het stil blijft en ze vermoeden dat niemand aan het stuur zit.
+
+**Herstel eerst de beschikbaarheid, onderzoek daarna pas de oorzaak**: Het herstellen van de dienstverlening — door een herstart van de container of een snelle rollback naar de vorige stabiele release — heeft absolute prioriteit. De diepgaande post-mortem analyse kan en moet daarna in alle rust plaatsvinden.
+
+[LaunchStudio](https://launchstudio.eu/nl/) configureert enterprise-grade logging, uptime-checks en storingswaarschuwingen voor je prototype, zodat incidenten worden opgemerkt vóórdat je klanten erover klagen.
 
 ## Echt voorbeeld
 
@@ -77,3 +116,52 @@ Minimaal — de initiële opzet is grotendeels eenmalig, hoewel waarschuwingsdre
 ### Is observability de moeite waard om vóór lancering op te zetten, of is het redelijk om het erna toe te voegen, zoals Lotte deed?
 
 Het vóór lancering toevoegen, indien haalbaar, vermijdt precies het gat dat Lotte ervoer tijdens haar eerste zes weken live — hoewel haar casus ook laat zien dat het reactief toevoegen na een eerste incident nog steeds substantiële waarde levert voor elke volgende dag dat het product live blijft, wat sowieso het grootste deel van de operationele levensduur van een product is.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Als mijn app al maanden probleemloos draait zonder enige monitoring, is dit dan echt de moeite waard om nu te prioriteren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De afwezigheid van een bekend probleem is niet hetzelfde als de afwezigheid van monitoringwaarde — zoals Lottes casus laat zien, zeiden de maanden zonder incident niets over wat er zou gebeuren wanneer er zich uiteindelijk een voordeed, en per definitie weet je niet dat je monitoring nodig had tot precies het moment dat je het het meest nodig had."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is foutregistratie niet genoeg op zich, zonder apart uptime-monitoring op te zetten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee — ze beantwoorden oprecht verschillende vragen. Foutregistratie vereist dat je applicatie goed genoeg draait om zijn eigen storingen te melden, dus een volledige uitval of een databaseverbindingsprobleem zoals bij Lotte kan zich voordoen zonder een enkele geregistreerde fout te genereren, wat precies is waarom uptime-monitoring, controlerend van buiten je infrastructuur, een noodzakelijke aanvulling is in plaats van een overbodige laag."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe voorkom ik de situatie waarin ik zoveel waarschuwingen krijg dat ik ze allemaal begin te negeren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Configureer waarschuwingen specifiek voor betekenisvolle drempels — piekmomenten in foutpercentages ten opzichte van je normale basislijn, en daadwerkelijke downtime — in plaats van elke afzonderlijke fout of kleine fluctuatie, wat de specifieke afstemdiscipline is die meldingen betrouwbaar en de moeite waard houdt om naar te handelen in plaats van achtergrondruis die je leert te negeren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vereist het opzetten van observability doorlopend onderhoud zodra het geconfigureerd is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minimaal — de initiële opzet is grotendeels eenmalig, hoewel waarschuwingsdrempels af en toe baat hebben bij aanpassing naarmate je gebruikspatronen en basisverkeer veranderen, vergelijkbaar in onderhoudslast met een CI-pijplijn: eenmaal zorgvuldig configureren, dan slechts af en toe herzien in plaats van constant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is observability de moeite waard om vóór lancering op te zetten, of is het redelijk om het erna toe te voegen, zoals Lotte deed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het vóór lancering toevoegen, indien haalbaar, vermijdt precies het gat dat Lotte ervoer tijdens haar eerste zes weken live — hoewel haar casus ook laat zien dat het reactief toevoegen na een eerste incident nog steeds substantiële waarde levert voor elke volgende dag dat het product live blijft, wat sowieso het grootste deel van de operationele levensduur van een product is."
+      }
+    }
+  ]
+}
+</script>

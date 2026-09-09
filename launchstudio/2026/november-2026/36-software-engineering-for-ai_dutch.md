@@ -83,7 +83,7 @@ Onze EDD-implementatie omvat:
 2. **Deterministische Wrappers:** Wij implementeren strikte JSON Schema-handhaving (met behulp van tools zoals Zod of OpenAI Structured Outputs) om niet-deterministische LLM's te dwingen voorspelbare, type-safe datastructuren op te leveren die uw traditionele frontend kan verwerken zonder te crashen.
 3. **Schaduw-Uitrol (Shadow Deployments):** Voordat een grote prompt-update live gaat, richten wij een "Schaduwmodus" in. De nieuwe prompt draait op de achtergrond parallel met de oude prompt in productie en beoordeelt de verschillen in stilte zonder de nieuwe output aan de gebruiker te tonen. Zodra het statistische vertrouwen hoog genoeg is, schakelen we de feature-flag om.
 
-## Belangrijkste inzichten
+### Belangrijkste inzichten
 
 - **Determinisme is voorbij**: LLM's zijn stochastisch; traditionele binaire unit tests (TDD) en Agile-story points functioneren niet voor prompt-engineering.
 - **Implementeer Evaluation-Driven Development (EDD)**: Bouw een Gouden Dataset van 100-500 randgevallen en gebruik een secundair LLM als "Judge" in uw CI/CD-pipeline.

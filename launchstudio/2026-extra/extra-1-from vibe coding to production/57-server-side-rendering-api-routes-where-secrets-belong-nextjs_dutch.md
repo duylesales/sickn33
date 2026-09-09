@@ -7,6 +7,31 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Server-Side Rendering, API-Routes, En Waar Geheimen Daadwerkelijk Thuishoren In Next.js-Apps
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Server-Side Rendering, API-Routes, En Waar Geheimen Daadwerkelijk Thuishoren In Next.js-Apps",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/server-side-rendering-api-routes-where-secrets-belong-nextjs"
+  }
+}
+</script>
+
+
 Next.js, een gebruikelijk outputframework voor AI-gegenereerde webapps, vermengt frontend- en backendcode binnen één projectstructuur op een manier die oprecht handig is voor ontwikkelsnelheid en oprecht makkelijk subtiel fout te doen met betrekking tot een specifieke, consequentiële vraag: welke delen van jouw code daadwerkelijk op de server draaien, en welke delen volledig verzonden worden naar de browser van elke bezoeker.
 
 ## Waarom Dit Onderscheid Specifiek Makkelijk Te Missen Is In Next.js
@@ -36,6 +61,14 @@ De git-geschiedenis- en hardgecodeerde-credentialrisico's elders in deze serie b
 [LaunchStudio](https://launchstudio.eu/nl/) reviewt specifiek Next.js-applicaties op precies dit server-client-grensprobleem, en controleert zowel broncodereferenties als de daadwerkelijk gecompileerde clientbundel, gesteund door Manifera's engineeringervaring over productie-Next.js-applicaties.
 
 [Laat jouw Next.js-app controleren op geheimen die de server-client-grens overschrijden](https://launchstudio.eu/nl/#calculator) — een framework-specifiek gat dat algemene geheimenscanning alleen kan missen.
+
+## Waarom Dit Aparte Aandacht Verdient Naast Algemeen Geheimenbeheer
+
+Het lekken van geheimen in Git betreft tokens die fysiek in codebestanden zijn geschreven. Bij moderne full-stack frameworks (zoals Next.js) bestaat echter een subtieler, framework-specifiek gevaar: geheimen die keurig in `.env` staan, maar door een verkeerd prefix (zoals `NEXT_PUBLIC_`) onbedoeld in de publieke JavaScript-bundel van de browser worden meegeleverd.
+
+Controleer daarom altijd of private API-keys (zoals Stripe Secret Keys of database-passwords) nooit met publieke variabelen worden geïnjecteerd in client-components.
+
+[LaunchStudio](https://launchstudio.eu/nl/) toetst client- en server-side bundels grondig om te verzekeren dat private sleutels uitsluitend op de server blijven.
 
 ## Echt voorbeeld
 
@@ -75,3 +108,52 @@ De suggestie loste het onmiddellijke, zichtbare symptoom op (de bouwfout) zonder
 ### Hoe kan een founder deze specifieke fout in de toekomst vermijden terwijl ze hun Next.js-app blijven ontwikkelen?
 
 Een gewoonte vestigen om specifiek te pauzeren wanneer een bouwfout een omgevingsvariabele betreft, en te vragen of de fix "dit laten bouwen" is of "dit correct en veilig laten bouwen," in plaats van de eerste suggestie te accepteren die de zichtbare fout oplost, is de praktische discipline die dit specifieke risico vraagt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik controleren of mijn eigen Next.js-app dit specifieke probleem heeft zonder diepe frameworkexpertise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jouw codebase doorzoeken op elke `NEXT_PUBLIC_`-geprefixte omgevingsvariabele en bevestigen dat elke oprecht publiek bedoeld is, in plaats van een omweg voor een bouwfout zoals bij Jelle, is een redelijke eerste controle bereikbaar zonder diepe frameworkexpertise, hoewel een grondige review van de daadwerkelijk gecompileerde clientbundel completere verificatie biedt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit risico specifiek voor Next.js, of is het ook van toepassing op andere vergelijkbaar vermengde frontend-backend-frameworks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het specifieke mechanisme (een `NEXT_PUBLIC_`-achtig voorvoegsel) is Next.js-specifiek, maar de onderliggende risicocategorie — een framework dat server- en clientcode vermengt op een manier die de grens makkelijk vervaagd maakt — is conceptueel van toepassing op andere vergelijkbaar gestructureerde frameworks, elk met hun eigen specifieke mechanisme om publieke versus private waarden te markeren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Als een geheim al op deze manier blootgesteld is, is het roteren van de sleutel voldoende, vergelijkbaar met de git-geschiedenisbegeleiding elders in deze serie behandeld?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, hetzelfde onderliggende principe is van toepassing — het roteren van de blootgestelde credential bij de bron neutraliseert de blootstelling voortaan, ongeacht hoe lang de vorige waarde toegankelijk was in de clientbundel, hoewel bevestigen dat geen ongeautoriseerd gebruik plaatsvond tijdens het blootstellingsvenster, zoals behandeld in deze serie's geheimenbegeleiding, ook de moeite waard is om te controleren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom suggereerde de AI-codeerassistent in Jelles geval een fix die een beveiligingsprobleem creëerde?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De suggestie loste het onmiddellijke, zichtbare symptoom op (de bouwfout) zonder onafhankelijk te redeneren over de beveiligingsimplicatie van een geheim client-zichtbaar maken — consistent met deze series bredere begeleiding over waarom AI-gegenereerde oplossingen optimaliseren voor functionele correctheid tegen het onmiddellijke probleem, niet voor beveiligingseigenschappen waar niemand specifiek naar vroeg."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan een founder deze specifieke fout in de toekomst vermijden terwijl ze hun Next.js-app blijven ontwikkelen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een gewoonte vestigen om specifiek te pauzeren wanneer een bouwfout een omgevingsvariabele betreft, en te vragen of de fix \"dit laten bouwen\" is of \"dit correct en veilig laten bouwen,\" in plaats van de eerste suggestie te accepteren die de zichtbare fout oplost, is de praktische discipline die dit specifieke risico vraagt."
+      }
+    }
+  ]
+}
+</script>

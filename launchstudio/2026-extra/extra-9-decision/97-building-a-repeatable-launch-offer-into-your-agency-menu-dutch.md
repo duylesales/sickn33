@@ -79,6 +79,8 @@ De winst van productization ontstaat doordat de interne doorlooptijd bij herhali
 
 Ontwikkel voor elk niveau een vaste checklist die uw team consequent hanteert: dezelfde scopingvragen in dezelfde volgorde, vaste e-mailsjablonen voor de kickoff, een vast ritme voor tussentijdse statusupdates en een uniform format voor de overdracht naar uw technische partner. Dit is operationeel werk dat men vaak overslaat, maar zonder processtandaardisatie blijft elk project achter de schermen evenveel ad-hoc tijd opslokken als voorheen.
 
+Een waardevolle discipline hierbij: ga na uw eerste vijf of zes trajecten binnen een bepaald niveau rustig zitten en schrijf de daadwerkelijke stappen op die hebben plaatsgevonden, in chronologische volgorde, over al die projecten heen — niet de stappen die u van plan was te volgen, maar de stappen die feitelijk zijn gezet. De patronen die zich bij het merendeel van die trajecten herhalen, vormen uw standaardchecklist; de onderdelen die aanzienlijk varieerden, zijn uw signaal voor de vraag waar de grens van het pakket moet worden bijgesteld, of waar een vaste add-on op zijn plek is in plaats van die variatie elke keer als een eenmalige uitzondering te behandelen.
+
 ## Het Menu Verkopen Zonder Dat Het Goedkoop Oogt
 
 Een veelgehoorde aarzeling bij bureaus: zorgt een vaste menukaart er niet voor dat onze dienstverlening minder exclusief en hoogwaardig aanvoelt? In de praktijk blijkt het tegendeel waar. Een vast dienstenmenu ontneemt u niet de mogelijkheid voor een strategisch adviesgesprek; het zorgt er juist voor dat het gesprek gaat over welk pakket het beste aansluit, in plaats van over een blanco calculatie. Opdrachtgevers ervaren een duidelijke pakketstructuur als professioneler en betrouwbaarder dan een vage offerte op maat. Het toont aan dat u dit traject al tientallen keren succesvol heeft doorlopen en precies weet wat er nodig is.
@@ -96,7 +98,7 @@ Door deze grens intern expliciet te hanteren, voorkomt u dat een complex maatwer
 
 Wilt u uw eigen vaste dienstenmenu inrichten? [Plan een strategisch overleg](https://launchstudio.eu/nl/#contact) — één gesprek, drie heldere pakketten, direct klaar voor gebruik.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Studio Hendriks: Een Gehalveerde Verkoopcyclus
 

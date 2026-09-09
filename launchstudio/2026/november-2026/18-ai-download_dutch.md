@@ -88,6 +88,15 @@ In plaats van te worstelen met ingewikkelde serverhandleidingen dragen oprichter
 
 Dit traject duurt 1 tot 3 weken tegen een vaste projectprijs van €800 tot €7.500.
 
+### Wat Er Moet Gebeuren Ná het Downloaden van Uw AI-Code
+
+Het lokaal binnenhalen van door AI gegenereerde broncode is slechts de eerste stap. Om van gedownloade bestanden een robuust softwaresysteem te maken, voert LaunchStudio een grondige post-download audit uit:
+1. **Verificatie van Package Integrity:** We vergrendelen alle afhankelijkheden met strikte lock-files (`package-lock.json` of `pnpm-lock.yaml`) en controleren de integriteitshashes van alle packages om supply-chain aanvallen via getypo-squadde bibliotheken te voorkomen.
+2. **Opschonen van Lokale Hardcoded Configuratie:** Alle verwijzingen naar `localhost`, poortnummers en hardcoded omgevingspaden worden vervangen door schone, via omgevingsvariabelen configureerbare instellingen voor lokale, staging- en productieomgevingen.
+3. **Inrichten van Lokale Ontwikkelcontainers:** We configureren Docker Compose en Dev Containers, zodat nieuwe ontwikkelaars of consultants binnen één minuut met één commando een identieke, werkende ontwikkelomgeving kunnen opstarten.
+4. **Validatie van de Databasemigratiestatus:** We synchroniseren het lokale databaseschema met een gestructureerd migratietool (zoals Prisma Migrate of Drizzle), waardoor toekomstige database-aanpassingen veilig en geautomatiseerd kunnen worden uitgerold.
+5. **Opzetten van Lokale Test-Fixtures:** We leveren representatieve, geanonimiseerde testdata mee zodat u functies grondig kunt doortesten zonder afhankelijk te zijn van kwetsbare live databases.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De Sportschooleigenaar Die Een Server Probeerde Te Draaien Vanaf Zijn Laptop

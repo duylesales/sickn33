@@ -79,6 +79,12 @@ Lefkosia Retail Group now evaluates any new maintenance agreement explicitly aga
 
 Before accepting a standard, flat-rate maintenance SLA, ask directly whether it accounts for the elevated risk immediately following a major release and the rising structural risk of an aging system, not just steady-state response time alone. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a maintenance agreement matched to your system's actual life phase.
 
+## By The Numbers: Sizing Support Capacity Across the Curve
+
+Teams that track incident volume against release dates consistently see the infant-mortality spike land in a predictable range: the two to four weeks immediately following a major release typically generate 2-4x the steady-state incident rate a mature system produces during its useful-life phase, before tapering back down to baseline as the release's genuine defects surface and get fixed. A maintenance SLA that staffs at steady-state capacity through this window is, in effect, guaranteeing a response time it can't actually hit for roughly a month out of every major release cycle — which is exactly the gap IT managers notice but rarely trace back to a resourcing model built for the wrong phase.
+
+The wear-out phase is harder to quantify in incident-rate terms alone because it manifests gradually, but a useful proxy from software development processes research is dependency age: a system where more than 30% of direct dependencies are two or more major versions behind current, or where core framework versions are past their vendor-supported end-of-life, is a reasonably reliable leading indicator that wear-out-phase failure growth is already underway even if incident counts haven't visibly risen yet. Pairing an architecture health assessment with this specific dependency-currency metric — not just a general "codebase health" impression — gives a maintenance SLA something concrete to trigger corrective investment against, rather than waiting for software quality to visibly degrade in production first.
+
 ## Frequently Asked Questions
 
 ### (Scenario: IT manager whose SLA underperformed right after a major release) Why did our standard maintenance SLA feel inadequate right after a major release?
@@ -101,6 +107,22 @@ Yes, from the start — a newly launched product is squarely in the infant-morta
 
 A periodic architecture health assessment — evaluating technical debt accumulation and dependency currency directly — can surface wear-out risk before it manifests as a rising incident rate, rather than waiting for the failure rate itself to reveal the problem.
 
+### (Scenario: procurement lead comparing SLA terms from different software services vendors) What specific SLA language should I look for to confirm a vendor actually resources for the infant-mortality phase, not just steady state?
+
+Look for an explicit clause defining a "post-release support window" — typically two to four weeks — with elevated staffing or tighter response-time tiers named specifically, rather than a single flat response-time number applied uniformly to every period of the contract.
+
+### (Scenario: engineering manager whose team owns software development processes internally) Can an internal engineering team apply the bathtub curve model without an external maintenance vendor involved at all?
+
+Yes — the model is about resourcing and review cadence, not vendor structure, so an internal team can apply the same logic by temporarily reallocating on-call capacity after major releases and scheduling its own periodic dependency-currency review, independent of whether support is delivered in-house or outsourced.
+
+### (Scenario: CTO deciding whether to renegotiate mid-contract after reading this model) Is it reasonable to renegotiate an existing maintenance SLA mid-contract once you recognize it wasn't designed around the full curve?
+
+Yes — most vendors treat this as a scope refinement rather than a dispute, since acknowledging the infant-mortality and wear-out phases explicitly is a service quality improvement for both sides, not an admission that the original SLA was negotiated in bad faith.
+
+### (Scenario: founder trying to judge software quality claims made by a prospective vendor) How does software quality as a vendor's marketing claim relate to where a system actually sits on the bathtub curve?
+
+A vendor's software quality claims are effectively phase-dependent and often describe only the useful-life phase's stable failure rate — ask specifically how they handle post-release support surges and aging-system architecture reviews to see the full picture their marketing number leaves out.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -110,7 +132,11 @@ A periodic architecture health assessment — evaluating technical debt accumula
     { "@type": "Question", "name": "(Scenario: CTO managing an aging system with rising incidents) Why do we keep seeing more incidents as our system gets older, despite a consistent maintenance SLA?", "acceptedAnswer": { "@type": "Answer", "text": "An aging system's rising failure rate reflects the 'wear-out' phase — accumulated technical debt a response-time SLA doesn't resolve." } },
     { "@type": "Question", "name": "(Scenario: IT director trying to restructure a maintenance agreement) What should a maintenance SLA include beyond a standard response-time guarantee?", "acceptedAnswer": { "@type": "Answer", "text": "Provisions for elevated support around major releases and periodic architecture health assessments for aging systems." } },
     { "@type": "Question", "name": "(Scenario: founder wondering if this applies to a young, newly launched product) Does the bathtub curve apply to a brand-new software product, or only older systems?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, from the start — a newly launched product is squarely in the infant-mortality phase." } },
-    { "@type": "Question", "name": "(Scenario: engineering manager trying to detect the wear-out phase early) How can we tell if our system has entered the wear-out phase before incident rates rise substantially?", "acceptedAnswer": { "@type": "Answer", "text": "A periodic architecture health assessment can surface wear-out risk before it manifests as a rising incident rate." } }
+    { "@type": "Question", "name": "(Scenario: engineering manager trying to detect the wear-out phase early) How can we tell if our system has entered the wear-out phase before incident rates rise substantially?", "acceptedAnswer": { "@type": "Answer", "text": "A periodic architecture health assessment can surface wear-out risk before it manifests as a rising incident rate." } },
+    { "@type": "Question", "name": "(Scenario: procurement lead comparing SLA terms from different software services vendors) What specific SLA language should I look for to confirm a vendor actually resources for the infant-mortality phase, not just steady state?", "acceptedAnswer": { "@type": "Answer", "text": "Look for an explicit 'post-release support window' clause naming elevated staffing or tighter response tiers, not a single flat response-time number." } },
+    { "@type": "Question", "name": "(Scenario: engineering manager whose team owns software development processes internally) Can an internal engineering team apply the bathtub curve model without an external maintenance vendor involved at all?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — reallocate on-call capacity after major releases and schedule a periodic dependency-currency review, independent of whether support is in-house or outsourced." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding whether to renegotiate mid-contract after reading this model) Is it reasonable to renegotiate an existing maintenance SLA mid-contract once you recognize it wasn't designed around the full curve?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — most vendors treat this as a scope refinement and service quality improvement, not a dispute over the original negotiation." } },
+    { "@type": "Question", "name": "(Scenario: founder trying to judge software quality claims made by a prospective vendor) How does software quality as a vendor's marketing claim relate to where a system actually sits on the bathtub curve?", "acceptedAnswer": { "@type": "Answer", "text": "Quality claims often describe only the useful-life phase's stable failure rate — ask how the vendor handles post-release surges and aging-system reviews to see the full picture." } }
   ]
 }
 </script>

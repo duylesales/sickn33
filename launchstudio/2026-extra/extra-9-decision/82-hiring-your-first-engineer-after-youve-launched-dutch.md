@@ -89,7 +89,7 @@ Bovendien sluiten beide routes elkaar niet uit: diverse opdrachtgevers van Launc
 
 [Bespreek met een ervaren engineer](https://launchstudio.eu/nl/#contact) hoe wij kunnen aanschuiven bij uw eerstvolgende technische sollicitatiegesprek — een second opinion van iemand die uw code al begrijpt levert aanzienlijk meer zekerheid op dan nóg een ronde cv's screenen.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Utrechtse Oprichtster Neemt Haar Eerste Softwareontwikkelaar Aan Met Technische Rugdekking
 

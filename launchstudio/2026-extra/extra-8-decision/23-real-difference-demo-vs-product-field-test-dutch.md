@@ -50,8 +50,7 @@ Er is ook een categorie kloof die de praktijktest helemaal niet aan het licht ka
 
 [Voer uw praktijktest uit en breng ons wat u vond](https://launchstudio.eu/nl/#contact) — een korte scoping call kan binnen enkele minuten bevestigen of wat u vond een snelle fix is of iets dieperliggends.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Praktijktest Die Alles Veranderde
 
 Bas Terhorst, een voormalig schade-expert bij een verzekeraar in Hilversum, bouwde ClaimClear, een met Lovable gebouwde tool die kleine verzekeringsmakelaars helpt inkomende claims te triëren op urgentie en volledigheid. Bas had ClaimClear persoonlijk getest op tientallen voorbeeldclaims en was ervan overtuigd dat het klaar was om zijn eerste betalende makelaar te onboarden, totdat een vriend voorstelde de app te openen in twee browsertabbladen als twee verschillende makelaaraccounts voordat hij iemand aanmeldde.

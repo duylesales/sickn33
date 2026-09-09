@@ -80,7 +80,7 @@ De senior engineers van LaunchStudio verzorgen de complete technische implementa
 
 Wat wij niet doen, en wat geen enkel ontwikkelbureau kan beloven, is bindend bepalen welke AVG-grondslag van toepassing is voor uw specifieke onderwijsmodule, of een juridisch bindende verwerkersovereenkomst opstellen. Dat is de taak van een privacyjurist met ervaring in het onderwijsrecht. Wanneer het technische fundament direct robuust staat, wordt dat juridische adviesgesprek een snelle formaliteit in plaats van een langdurig struikelblok. [Deel uw projectdetails met ons](https://launchstudio.eu/nl/#contact) en u ontvangt binnen één werkdag een heldere analyse van wat scholen u tijdens de inkooptoets gaan vragen.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Huiswerk-Assistent Ontdekt Dat de Leerling Niet de Klant Was
 

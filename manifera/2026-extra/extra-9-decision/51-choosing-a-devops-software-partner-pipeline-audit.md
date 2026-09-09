@@ -108,6 +108,19 @@ The cost of getting this decision wrong isn't just wasted budget — it's the we
 
 None of this requires you to become a DevOps expert yourself. It requires you to ask five specific categories of question, insist on four specific numbers, and refuse to sign anything that leaves those numbers undocumented. That's a manageable amount of diligence for a decision that will shape how fast your product can move for the next several years. Talk to one of our senior architects about your specific pipeline requirements before you commit to a vendor.
 
+## Where the Four Benchmark Numbers Actually Sit: A Performance Tier Cheat Sheet
+
+Asking for the four benchmark numbers is only half the audit — knowing which tier an answer falls into is the other half, and it's what most CEOs skip because nobody hands them a reference scale.
+
+| Metric | Elite | High | Medium | Low |
+|---|---|---|---|---|
+| Deployment frequency | Multiple per day | Weekly-to-daily | Monthly-to-weekly | Fewer than monthly |
+| Lead time for changes | Under 1 day | 1 day - 1 week | 1 week - 1 month | Over 1 month |
+| Change failure rate | 0-15% | 16-30% | 16-30% | Over 30% |
+| Mean time to recovery | Under 1 hour | Under 1 day | 1 day - 1 week | Over 1 week |
+
+A vendor claiming "elite" performance on deployment frequency while sitting in "low" on mean time to recovery is describing an internally inconsistent pipeline — teams that deploy multiple times daily almost always also have fast recovery, because both depend on the same automated rollback and monitoring infrastructure. Use inconsistency across the four numbers as its own red flag, independent of whether each individual figure looks acceptable in isolation. A partner honestly sitting in the "high" tier across all four, with a credible plan to reach "elite," is a safer signal than one claiming "elite" on paper with no supporting detail on how they measure it.
+
 ## Frequently Asked Questions
 
 ### What should I ask a devops software vendor before signing a contract?
@@ -124,6 +137,22 @@ A standalone DevOps hire or consultant typically manages pipeline infrastructure
 
 ### How do I know if a vendor's rollback process actually works?
 Ask them to describe the last time a production deployment failed and walk you through exactly what happened, step by step, including how long recovery took. A vendor with a genuinely automated rollback process will have a clear, specific story; one without it will describe a manual, ad hoc response involving several people scrambling.
+
+### (Scenario: A vendor claims elite-tier deployment frequency but can't produce a mean time to recovery figure) What does it mean if a devops software vendor's benchmark numbers are inconsistent across the four metrics?
+
+It usually means the strong-sounding number is aspirational rather than measured. Teams with genuinely elite deployment frequency almost always also have fast recovery times, since both depend on the same automated rollback and monitoring infrastructure — a vendor strong on one and vague on the other hasn't built the full pipeline they're describing.
+
+### (Scenario: A CEO is evaluating a devops partner for a fintech product with mandated quarterly release windows) How should the performance tier cheat sheet be applied to a regulated industry with mandated release windows?
+
+Expect deployment frequency to sit lower by regulatory necessity, but the other three metrics — lead time, change failure rate, and mean time to recovery — should still land in the high or elite tier, since those reflect engineering discipline rather than release-window policy. A vendor using regulatory constraints to excuse a poor change failure rate or slow recovery time is conflating two unrelated issues.
+
+### (Scenario: A startup is choosing between a vendor sitting in the "high" tier with a credible improvement plan and one claiming "elite" with no supporting detail) Should I choose a vendor claiming elite performance over one honestly reporting high-tier numbers?
+
+Not automatically. A vendor honestly sitting in the "high" tier across all four metrics with a credible plan to reach "elite" is often a safer choice than one claiming "elite" without being able to show how they measure it, since the honest reporting itself signals a team that actually tracks these numbers rather than reciting a marketing figure.
+
+### (Scenario: A twelve-person engineering team is choosing between a single embedded DevOps hire and a dedicated devops-inclusive pod) Does team size change which performance tier is realistic to expect from a devops software partner?
+
+Team size affects absolute deployment volume but not the tier a mature pipeline should hit — a twelve-person team with genuine automation can sit in the "high" or "elite" tier on lead time and change failure rate just as reliably as a much larger organization, since those metrics measure process maturity, not headcount.
 
 <script type="application/ld+json">
 {
@@ -154,6 +183,26 @@ Ask them to describe the last time a production deployment failed and walk you t
       "@type": "Question",
       "name": "How do I know if a vendor's rollback process actually works?",
       "acceptedAnswer": {"@type": "Answer", "text": "Ask them to describe the last time a production deployment failed and walk you through exactly what happened, step by step, including how long recovery took. A vendor with a genuinely automated rollback process will have a clear, specific story; one without it will describe a manual, ad hoc response involving several people scrambling."}
+    },
+    {
+      "@type": "Question",
+      "name": "What does it mean if a devops software vendor's benchmark numbers are inconsistent across the four metrics?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It usually means the strong-sounding number is aspirational rather than measured. Teams with genuinely elite deployment frequency almost always also have fast recovery times, since both depend on the same automated rollback and monitoring infrastructure."}
+    },
+    {
+      "@type": "Question",
+      "name": "How should the performance tier cheat sheet be applied to a regulated industry with mandated release windows?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Expect deployment frequency to sit lower by regulatory necessity, but lead time, change failure rate, and mean time to recovery should still land in the high or elite tier, since those reflect engineering discipline rather than release-window policy."}
+    },
+    {
+      "@type": "Question",
+      "name": "Should I choose a vendor claiming elite performance over one honestly reporting high-tier numbers?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Not automatically. A vendor honestly sitting in the high tier with a credible plan to reach elite is often safer than one claiming elite without showing how they measure it, since honest reporting signals a team that actually tracks these numbers."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does team size change which performance tier is realistic to expect from a devops software partner?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Team size affects absolute deployment volume but not the tier a mature pipeline should hit. A smaller team with genuine automation can sit in the high or elite tier on lead time and change failure rate just as reliably as a larger organization."}
     }
   ]
 }

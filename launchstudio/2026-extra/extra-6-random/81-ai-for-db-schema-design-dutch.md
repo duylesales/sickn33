@@ -64,6 +64,21 @@ Niets van dit alles betekent dat AI-voor-DB-tools ongeschikt zijn voor gebruik. 
 
 Onze technici, werkend vanuit Ho Chi Minh-stad en dagelijks bezig met deze audits, behandelen schemabeoordeling als een eerste stap voordat er ook maar aan de frontend wordt gekomen — het doel is altijd om de oorspronkelijke opzet van de oprichter intact te houden en de ontbrekende beperkingen erin te verwerken, niet om opnieuw te beginnen. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en dit exacte patroon — door AI gegenereerd schema, ontbrekende beperking, ontdekt door een boze klant — is een van de meest voorkomende redenen waarom oprichters contact met ons opnemen. Als u vóór lancering een tweede paar ogen op een schema wilt, kunt u [uw project beschrijven via ons proces](https://launchstudio.eu/nl/#process) en dan vertellen wij u eerlijk wat er ontbreekt. Voor hoe Manifera datagerichte architectuur breder benadert, zie onze [diensten voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
+## Nog Vijf Schema-Gaten Die U Moet Controleren Naast Unieke Constraints
+
+Het toevoegen van `UNIQUE` constraints op e-mailadressen is de eerste stap, maar er zijn vijf andere subtiele omissies in databaseschema's die door AI-tools stelselmatig over het hoofd worden gezien:
+
+**1. Het Ontbreken van `NOT NULL` op Verplichte Relaties.** Een veld zoals `organizationId` in een factuurtabel moet *altijd* `NOT NULL` zijn. Als dit veld per ongeluk leeg mag blijven, ontstaan er 'wezen-records' die in geen enkel tenant-overzicht zichtbaar zijn maar wel rondzwerven in de database.
+
+**2. Geen Indexen op Vaak Gefilterde Velden.** Velden die in vrijwel elke query voorkomen — zoals `userId`, `status` of `createdAt` — moeten zijn voorzien van een database-index (`CREATE INDEX`). Zonder indexen vertraagt elke pagina exponentieel zodra het aantal rijen toeneemt.
+
+**3. Het Gebruik van Vrije Tekstvelden voor Statussen.** Een statusveld dat `VARCHAR` gebruikt in plaats van een strikt `ENUM` type (`DRAFT`, `PAID`, `CANCELLED`). Hierdoor kan een typefout in een prompt (`"payed"` in plaats van `"PAID"`) ongemerkt de hele facturatiestatus ontregelen.
+
+**4. Het Ontbreken van `ON DELETE` Cascaderingsregels.** Wat gebeurt er als een gebruiker wordt verwijderd? Blijven zijn reacties en facturen achter zonder eigenaar, of worden ze netjes gearchiveerd? Zonder expliciete cascade- of restrict-regels leidt verwijdering tot databasefouten.
+
+**5. Veldlengte-Beperkingen (Varchar Limieten).** Tekstkolommen die onbeperkte lengte toestaan (`TEXT`) op plekken waar een postcode of telefoonnummer hoort. Dit stelt de database open voor denial-of-service aanvallen via extreem grote payloads.
+
+Door deze vijf gaten structureel te dichten in uw databasemigraties, legt u een ijzersterk fundament dat klaar is voor intensief zakelijk gebruik.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de webhook die twee keer factureerde
@@ -110,11 +125,46 @@ De technici van Manifera, waaronder het team in Ho Chi Minh-stad, repareren prob
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is an \"AI for DB\" tool, exactly?", "acceptedAnswer": { "@type": "Answer", "text": "It's a feature inside AI app builders like Bolt, Lovable, or v0 that generates a database schema from a description of your app, without requiring you to write SQL yourself." } },
-    { "@type": "Question", "name": "Can I trust the schema an AI tool generates?", "acceptedAnswer": { "@type": "Answer", "text": "For prototypes it's usually fine. For payments, permissions, or compounding data, the schema needs a human review pass because AI generators don't reason about unstated business constraints." } },
-    { "@type": "Question", "name": "What's the most common missing piece in AI-generated schemas?", "acceptedAnswer": { "@type": "Answer", "text": "Unique constraints, especially around payments and webhook-driven data, which allow duplicate records to be created silently." } },
-    { "@type": "Question", "name": "How long does a schema review actually take?", "acceptedAnswer": { "@type": "Answer", "text": "Typically a few hours to a couple of days for a single-product schema, done by an engineer experienced in production databases." } },
-    { "@type": "Question", "name": "Does Manifera's team only review schemas, or can they fix them without touching my frontend?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineers, including the Ho Chi Minh City team, fix schema issues at the database and backend layer so the existing frontend doesn't need to be rebuilt." } }
+    {
+      "@type": "Question",
+      "name": "Wat is een \"AI voor DB\"-tool precies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is een functie binnen AI-app-bouwers zoals Bolt, Lovable of v0 die een databaseschema genereert op basis van een beschrijving van uw app of de frontend ervan, zonder dat u zelf SQL hoeft te schrijven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik het schema dat een AI-tool genereert vertrouwen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor prototypes en interne tools meestal wel. Voor alles wat betalingen, rechten of data betreft die na verloop van tijd toeneemt, heeft het schema een menselijke beoordeling nodig — AI-generators redeneren niet over bedrijfsbeperkingen waar ze niet expliciet over zijn geïnformeerd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het meest voorkomende ontbrekende element in door AI gegenereerde schema's?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unieke beperkingen, vooral rond betalingen en webhook-gedreven data. Zonder deze kan een opnieuw verzonden webhook of een dubbel verzoek dubbele records creëren die de applicatiecode moet opvangen — of niet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt een schemabeoordeling eigenlijk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor een schema van één product duurt een grondige beoordeling door een ervaren technicus doorgaans een paar uur tot een paar dagen, ruim voordat het uitgroeit tot een productie-incident."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Beoordeelt het team van Manifera alleen schema's, of kunnen ze deze ook repareren zonder mijn frontend aan te raken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De technici van Manifera, waaronder het team in Ho Chi Minh-stad, repareren problemen op schemaniveau op de database- en backendlaag, specifiek zodat uw bestaande frontend niet opnieuw hoeft te worden opgebouwd."
+      }
+    }
   ]
 }
 </script>

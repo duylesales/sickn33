@@ -78,6 +78,10 @@ The IT outsourcing decision in front of you is not really about finding the chea
 
 Request a vendor comparison session with our Amsterdam-based team before your shortlist becomes a signed contract — bring your scorecard, and we will walk through it criterion by criterion.
 
+## A Worked Example: Scoring Two Finalists Against the Seven Criteria
+
+Here's how the scorecard actually plays out on a real comparison. Say Finalist A quotes $55/hour with a strong sprint report showing 92% on-time delivery over the last eight sprints, a 30-day scale-down notice period, and a named escalation contact who responds within four hours. Finalist B quotes $42/hour, has no sprint report to show, describes escalation as "we're very responsive," and has a 90-day scale-down notice with an early-termination fee. Scoring both 1-5 across the seven criteria, Finalist A typically lands around 29-31 out of 35, while Finalist B lands around 16-19 — despite Finalist B's day rate looking 24% cheaper on the cover page. Run the total cost of ownership math specifically: Finalist B's unverified delivery cadence and 90-day lock-in commonly translate into 15-25% more elapsed calendar time to reach the same shipped scope, which erases the hourly rate advantage well before the first quarter closes. Weight security and compliance at 2x for regulated industries, and weight delivery cadence proof and contractual exit terms at 1.5x regardless of industry, since these two are the most reliable predictors of a relationship that survives its first hard sprint.
+
 ## Frequently Asked Questions
 
 ### What is the biggest mistake CTOs make in an IT outsourcing decision?
@@ -94,6 +98,18 @@ Notice periods for scaling the team, intellectual property and repository access
 
 ### How do I verify a vendor's delivery cadence claims before signing?
 Ask for a redacted sprint report or burndown chart from an active client engagement, and specifically ask how they handled a sprint that slipped. A vendor with nothing concrete to show is asking you to take their delivery discipline on faith.
+
+### (Scenario: A paid pilot sprint reveals code review discipline issues after the vendor scored well on the initial seven-criteria scorecard) How do you weigh this new evidence?
+Weight the pilot's direct evidence above the original scorecard, since it's the closest thing to real working conditions you'll see before signing a full contract — treat a pilot finding as an override signal, not just an additional data point averaged in with everything else. Ask the vendor directly to explain the specific gap and propose a concrete fix before deciding whether it's a dealbreaker or a manageable onboarding issue.
+
+### (Scenario: Your board pushes back, wanting the cheaper vendor despite a meaningfully lower scorecard total) How do you make the case without just repeating "trust the process"?
+Translate the scorecard gap into the total cost of ownership math directly — show the board the specific dollar and calendar-time impact of the cheaper vendor's unverified delivery cadence and longer lock-in period, using their actual quoted numbers rather than the abstract framework. A board responds to a concrete cost comparison far more reliably than to a scoring methodology alone.
+
+### (Scenario: Two finalists land within one point of each other on the total score, but with very different distributions across the seven criteria) How do you break the tie?
+Break ties by comparing performance on your two highest-weighted criteria specifically — for most engagements, delivery cadence proof and contractual exit terms — rather than defaulting to the raw total, since a vendor strong on cultural fit but weak on delivery proof carries a different risk profile than one strong on delivery proof but weaker on culture, even at an identical total score.
+
+### (Scenario: Your internal engineering team is resistant to the outsourcing decision regardless of which vendor you choose) How does the scorecard framework help with internal buy-in?
+Share the scorecard and the specific evidence behind each score — sprint reports, pilot results, reference calls — with your engineering leads before finalizing the decision, since resistance to outsourcing in the abstract often softens once the team sees the vendor was evaluated with the same rigor they'd apply to a senior internal hire. A documented, criteria-based process reads very differently from a top-down decision announced after the fact.
 
 <script type="application/ld+json">
 {

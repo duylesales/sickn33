@@ -68,6 +68,10 @@ Async handoff failure is expensive in a way that rarely shows up as a single obv
 
 The fix costs almost nothing beyond discipline — a handoff note takes ten minutes to write and can save a week of rebuild. If your current offshore programming vendor can't describe their handoff protocol beyond "we're pretty good communicators," that gap is worth closing before it produces its first expensive guess. [Ask Manifera how handoff discipline is enforced](https://www.manifera.com/contact-us/).
 
+## Implementation Checklist: Standing Up Async Discipline in Two Weeks
+
+A VP of Engineering can install this discipline without a lengthy process overhaul — it's a two-sprint rollout, not a quarter-long initiative. Week one: define the decision-log template (five fields: decision, alternative rejected, tradeoff accepted, what's deferred, ticket link) and add "handoff logged" as a literal checkbox in the sprint board's definition-of-done column, so it's visible in every standup rather than buried in a policy doc nobody reopens. Week two: introduce the triage protocol with two tiers only — "blocks the sprint, escalate now" via a named Slack channel or on-call rotation, and "doesn't block, log and defer" — because a three-tier system collapses under real deadline pressure while a two-tier one survives it. From week three onward, the Amsterdam-side product owner spot-checks a random 20% of the previous day's tickets each morning for handoff-note quality, not completeness theater — the check should take under fifteen minutes and catches drift before it becomes a pattern. Vendors resistant to a client auditing handoff notes directly are signaling the practice is thinner than the pitch; a VP of Engineering should treat that resistance itself as the data point.
+
 ## Frequently Asked Questions
 
 ### (Scenario: VP of Engineering whose pod stalls on ambiguous questions overnight) What should happen when a Vietnam engineer hits an ambiguous question outside the overlap window?
@@ -90,6 +94,22 @@ In practice it speeds delivery up, because the time cost of a ten-minute handoff
 
 Ask to see an anonymized example of a decision log and an end-of-day handoff note from a real engagement, and ask whether handoff quality is reviewed as part of the sprint process or left to individual habit.
 
+### (Scenario: VP of Engineering wants to know the rollout timeline before greenlighting) How long does it take to actually stand up this async handoff discipline on an existing Vietnam pod?
+
+About two sprints. The decision-log template and definition-of-done checkbox go live in week one, the two-tier triage protocol in week two, and by week three the Amsterdam-side product owner is spot-checking handoff quality daily rather than trusting it happens on its own.
+
+### (Scenario: VP of Engineering worried the pod will game the checklist instead of documenting substantively) How do we stop engineers from just checking the "handoff logged" box without writing anything useful?
+
+Spot-check a random 20% of the prior day's tickets each morning for substance, not just presence — a decision log entry that doesn't name the rejected alternative or the tradeoff accepted fails the check even if the checkbox is ticked, and that standard becomes clear to the pod within a sprint.
+
+### (Scenario: VP of Engineering deciding how many escalation tiers to define) Should the triage protocol have more than two escalation tiers for complex offshore programming work?
+
+No — keep it to two: blocks the sprint and escalate now, or doesn't block and gets logged for the next overlap window. A three-tier system introduces judgment calls under deadline pressure that engineers resolve inconsistently, defeating the purpose of having a protocol at all.
+
+### (Scenario: VP of Engineering evaluating whether this discipline works across multiple concurrent Vietnam pods) Does this handoff discipline scale if we run multiple offshore software developers pods on different projects at once?
+
+Yes, as long as each pod maintains its own decision log and handoff template rather than sharing one — the discipline is per-project by design, and Amsterdam governance simply extends the same daily spot-check practice across however many pods are active.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +119,11 @@ Ask to see an anonymized example of a decision log and an end-of-day handoff not
     { "@type": "Question", "name": "(Scenario: VP of Engineering unsure what \"documentation-as-you-go\" really means) How is documentation-as-you-go different from writing documentation afterward?", "acceptedAnswer": { "@type": "Answer", "text": "It's written by the person making a decision at the moment they make it, specifically for whoever picks up the work next, rather than reconstructed after the fact for a checklist." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering trying to prevent overnight guesswork from causing rework) How do we stop engineers from guessing on ambiguous requirements when nobody's available to ask?", "acceptedAnswer": { "@type": "Answer", "text": "Build documentation and escalation into the sprint's definition of done, so logging an open question and deferring is the expected behavior, and audit handoff quality as a delivery metric." } },
     { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating whether documentation discipline slows the team down) Doesn't requiring a decision log and handoff notes slow the team down?", "acceptedAnswer": { "@type": "Answer", "text": "In practice it speeds delivery up, because a ten-minute handoff note is trivial compared to the multi-week rework cost of an undocumented wrong guess discovered late." } },
-    { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating a new vendor's documentation claims) What should we ask a prospective offshore software engineering vendor to verify they actually document decisions?", "acceptedAnswer": { "@type": "Answer", "text": "Ask to see an anonymized example of a decision log and an end-of-day handoff note from a real engagement, and ask whether handoff quality is reviewed as part of the sprint process." } }
+    { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating a new vendor's documentation claims) What should we ask a prospective offshore software engineering vendor to verify they actually document decisions?", "acceptedAnswer": { "@type": "Answer", "text": "Ask to see an anonymized example of a decision log and an end-of-day handoff note from a real engagement, and ask whether handoff quality is reviewed as part of the sprint process." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering wants to know the rollout timeline before greenlighting) How long does it take to actually stand up this async handoff discipline on an existing Vietnam pod?", "acceptedAnswer": { "@type": "Answer", "text": "About two sprints. The decision-log template and definition-of-done checkbox go live in week one, the two-tier triage protocol in week two, and by week three the Amsterdam-side product owner is spot-checking handoff quality daily." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering worried the pod will game the checklist instead of documenting substantively) How do we stop engineers from just checking the \"handoff logged\" box without writing anything useful?", "acceptedAnswer": { "@type": "Answer", "text": "Spot-check a random 20% of the prior day's tickets each morning for substance, not presence. An entry that doesn't name the rejected alternative or tradeoff accepted fails the check even with the box ticked." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering deciding how many escalation tiers to define) Should the triage protocol have more than two escalation tiers for complex offshore programming work?", "acceptedAnswer": { "@type": "Answer", "text": "No, keep it to two: blocks the sprint and escalate now, or doesn't block and gets logged for the next overlap window. A three-tier system introduces inconsistent judgment calls under deadline pressure." } },
+    { "@type": "Question", "name": "(Scenario: VP of Engineering evaluating whether this discipline works across multiple concurrent Vietnam pods) Does this handoff discipline scale if we run multiple offshore software developers pods on different projects at once?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, as long as each pod maintains its own decision log and handoff template rather than sharing one. Amsterdam governance simply extends the same daily spot-check practice across however many pods are active." } }
   ]
 }
 </script>

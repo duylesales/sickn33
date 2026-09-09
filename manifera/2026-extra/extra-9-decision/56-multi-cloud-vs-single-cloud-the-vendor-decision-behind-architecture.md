@@ -67,6 +67,12 @@ If you're comparing DevOps vendor proposals and want an independent read on whet
 }
 </script>
 
+## A Scoring Matrix for Your Own Multi-Cloud Case
+
+Run your own numbers against four weighted factors before accepting a vendor's architecture recommendation at face value. **Monthly cloud spend**: below €80,000 scores 0, €80,000-€250,000 scores 1, above €250,000 scores 2 — this is the threshold where cross-provider price arbitrage starts to plausibly offset the 2.3x headcount tax. **Regulatory mandate**: 0 if none, 1 if data residency needs are met by a single provider's regional footprint, 2 if a specific regulator has required a demonstrated multi-provider exit plan. **Existential outage risk**: 0 if a full-day outage would be costly but survivable, 2 if a full-provider outage would be genuinely existential to the business (real-time trading infrastructure, life-safety systems). **FinOps maturity**: 0 if no dedicated function exists to actively manage workload placement, 2 if one does and already operates in near-real time.
+
+A total score of 0-2 out of 8 means multi-cloud is very likely the wrong call regardless of how the vendor pitch frames it — the operational tax will exceed any theoretical benefit. A score of 5-8 is where genuine multi-cloud starts to make sense. Anything in between deserves the three vendor questions above before a decision either way, since the matrix narrows the debate but doesn't replace vendor-specific due diligence.
+
 ## Frequently Asked Questions
 
 ### Is multi-cloud always more resilient than single-cloud?
@@ -88,6 +94,22 @@ Ask them to name a specific client where multi-cloud prevented a measurable outa
 ### When is multi-cloud genuinely the right choice?
 
 Multi-cloud makes strong sense for companies at significant scale with active FinOps capability, regulated industries with data residency requirements a single provider's regions can't meet, or businesses where a full-provider outage represents existential risk rather than inconvenience.
+
+### (Scenario: A CTO's company scores 3 out of 8 on the decision matrix — below the mid-range but not clearly a zero) What should I do if my company's multi-cloud decision matrix score lands in the ambiguous middle range?
+
+Ask the three vendor-specific questions before deciding either way — a named client reference, the cross-provider incident response process, and the explicit added engineering cost. A middle-range score means the general case doesn't decide it for you, so the vendor's specific track record on your exact risk profile becomes the deciding factor.
+
+### (Scenario: A company's monthly cloud spend just crossed €80,000 for the first time after a growth quarter) Does crossing the €80,000 monthly cloud spend threshold mean I should switch to multi-cloud immediately?
+
+No, crossing the spend threshold is necessary but not sufficient on its own — it only means cross-provider price arbitrage becomes theoretically plausible. Without an active FinOps function capable of managing workload placement in near-real time, the savings won't materialize even at higher spend levels, so check that factor too before acting on spend alone.
+
+### (Scenario: A regulated fintech's auditor asked about the company's cloud provider exit plan during a compliance review) Does a regulator asking about a cloud exit plan always mean the company must run genuine multi-cloud infrastructure?
+
+Not necessarily. A well-documented, tested single-cloud architecture built with portable, standard tooling can sometimes satisfy the same regulatory intent as genuine multi-cloud, provided it demonstrates a credible exit path. Ask a vendor specifically whether their proposed approach has been reviewed and accepted by a regulator or auditor for a comparable client, not just designed to their own interpretation of sufficiency.
+
+### (Scenario: A vendor pitching multi-cloud can name a client reference but the incident described was actually a routine maintenance window, not a real outage) How do I tell if a vendor's cited multi-cloud success story is a genuine case or a stretched example?
+
+Push for specifics: what exactly failed, how the failure was detected, how long the cutover to the second provider took, and what the measured business impact was compared to a modeled single-cloud outage. A vendor describing a routine maintenance event or a hypothetical scenario as their proof point is signaling they don't have a genuine example, regardless of how confidently the story is told.
 
 <script type="application/ld+json">
 {
@@ -118,6 +140,26 @@ Multi-cloud makes strong sense for companies at significant scale with active Fi
       "@type": "Question",
       "name": "When is multi-cloud genuinely the right choice?",
       "acceptedAnswer": { "@type": "Answer", "text": "Multi-cloud makes strong sense for companies at significant scale with active FinOps capability, regulated industries with data residency requirements a single provider can't meet, or businesses where a full-provider outage represents existential risk." }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if my company's multi-cloud decision matrix score lands in the ambiguous middle range?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ask the three vendor-specific questions before deciding: a named client reference, the cross-provider incident response process, and the explicit added engineering cost. A middle-range score means the vendor's specific track record becomes the deciding factor." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does crossing the €80,000 monthly cloud spend threshold mean I should switch to multi-cloud immediately?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, crossing the spend threshold only means price arbitrage becomes theoretically plausible. Without an active FinOps function managing workload placement in near-real time, the savings won't materialize even at higher spend levels." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a regulator asking about a cloud exit plan always mean the company must run genuine multi-cloud infrastructure?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. A well-documented, tested single-cloud architecture with portable tooling can sometimes satisfy the same regulatory intent, provided it demonstrates a credible exit path reviewed and accepted by a regulator for a comparable client." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I tell if a vendor's cited multi-cloud success story is a genuine case or a stretched example?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Push for specifics: what exactly failed, how it was detected, how long the cutover took, and the measured business impact versus a modeled single-cloud outage. A routine maintenance event described as a success story signals no genuine example exists." }
     }
   ]
 }

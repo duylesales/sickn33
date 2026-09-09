@@ -74,6 +74,22 @@ Het compliant maken van een engineeringteam vereist platform-engineering en hand
 2. **Enterprise Roll-out:** Wij configureren GitHub Copilot Enterprise met strikt beleid dat suggesties die matchen met openbare code fysiek blokkeert.
 3. **Pre-Commit Secret Scanning:** Wij richten git-hooks in (TruffleHog) die geheimen automatisch uit de code strippen *voordat* de AI ze kan indexeren.
 
+### Enterprise Compliance Checklist voor AI-Gegenereerde Codebases
+
+Wanneer grote zakelijke afnemers of corporate inkoopafdelingen uw applicatie aan een technische audit onderwerpen, verifieert LaunchStudio de volgende cruciale compliancedimensies:
+1. **Volledige Software Bill of Materials (SBOM):** Wij scannen de complete afhankelijkheidsboom van uw applicatie en genereren een cryptografisch ondertekende SBOM. Alle open-source bibliotheken worden gecontroleerd op kwetsbaarheden (CVE's) en licentiecompatibiliteit (zodat u niet per ongeluk copyleft-licenties zoals GPL in uw commerciële product opneemt).
+2. **Geheimenbeheer en Omgevingsisolatie:** Alle hardcoded API-sleutels, database-wachtwoorden en modeltokens worden radicaal uit de broncode verwijderd en gemigreerd naar beveiligde key vaults (zoals AWS Secrets Manager of HashiCorp Vault) met strikte least-privilege toegangsrechten.
+3. **AVG/GDPR DPA-Compliance en Gegevensminimalisatie:** Wij richten strikte datastromen in waarbij persoonsgegevens (PII) systematisch worden geanonimiseerd of gemaskeerd voordat ze naar externe LLM-leveranciers worden verzonden, inclusief verificatie dat trainingsopt-outs contractueel zijn vastgelegd.
+4. **SOC 2 Type II Audit-Trails:** Alle beheerderacties, configuratiewijzigingen en systeemtoegang worden onweerlegbaar vastgelegd in centrale logs met een minimale retentieperiode van 365 dagen, gereed voor inspectie door externe accountants.
+5. **Automatische SAST/DAST Beveiligingsscans:** We integreren statische en dynamische applicatiebeveiligingstests direct in uw GitHub Actions CI/CD-pijplijn, waardoor regressies in autorisatie of data-isolatie onmiddellijk de build blokkeren.
+
+### Audit-Gereedheid en Certificering voor Zakelijke AI-Codebases
+
+Om enterprise-deals succesvol te sluiten, versterken we de compliance-fundering van uw codebase:
+1. **Cryptografisch Verzegelde Audit-Trails:** Alle configuratiewijzigingen en beheerderacties worden onweerlegbaar gelogd voor externe SOC 2 en ISO 27001 inspecties.
+2. **Geautomatiseerde Licentievalidatie:** Continue scanning voorkomt dat incompatibele open-source licenties de intellectuele eigendomsrechten van uw product in gevaar brengen.
+3. **Periodieke Penetratietesten:** Onze security-engineers voeren gestructureerde ethische hackpogingen uit om onverwachte kwetsbaarheden preventief te neutraliseren.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De FinTech Die Zijn Overname Bijna Zag Mislukken

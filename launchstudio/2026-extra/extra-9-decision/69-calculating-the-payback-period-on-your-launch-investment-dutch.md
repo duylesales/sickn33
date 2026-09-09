@@ -77,7 +77,7 @@ Een enkele berekening gebaseerd op één scenario is kwetsbaarder dan hij lijkt.
 
 [Plan een gesprek om uw specifieke terugverdientijd samen met een engineer door te rekenen](https://launchstudio.eu/nl/#contact) — vóórdat besluiteloosheid u meer weken aan misgelopen omzet kost dan de berekening zelf in beslag neemt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een SaaS-oprichter in actie: De besluiteloosheid die meer kostte dan de offerte
 

@@ -99,7 +99,7 @@ Wanneer dit werk realistisch wordt begroot voor een overzichtelijke SaaS-tool of
 
 Wilt u een concrete indicatie vóórdat u met ontwikkelaars in gesprek gaat? Onze [prijscalculator](https://launchstudio.eu/nl/#calculator) inventariseert welke van de zeven lagen u nodig heeft en toont u binnen negentig seconden een heldere bandbreedte. Begin daar — inzicht in de werkelijke omvang van het gat levert meer op dan nog een week gissen.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Het dashboard dat oogverblindend mooi was, maar vanbinnen leeg
 

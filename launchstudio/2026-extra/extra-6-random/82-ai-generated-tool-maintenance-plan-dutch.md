@@ -43,6 +43,19 @@ Als u de code niet zelf heeft geschreven, heeft u waarschijnlijk geen mentale pl
 
 Oprichters begroten voor de bouw. Bijna niemand begroot voor de controle na zes maanden — de ronde waarin iemand met ervaring bekijkt wat zich heeft opgestapeld, de gezondheid van afhankelijkheden controleert en de kleine dingen repareert die stilletjes achteruitgingen. Achter LaunchStudio staat het team van meer dan 120 technici van Manifera, en het team dat vanuit Amsterdam werkt, behandelt precies dit soort onderhoudsronde regelmatig voor oprichters die snel bouwden en nooit terugkeken. Het is een kleinere, goedkopere opdracht dan een herbouw, en het werkt alleen als u het inplant vóórdat er iets kapotgaat, niet erna. U kunt [ruwweg berekenen wat een onderhoudsronde zou kosten](https://launchstudio.eu/nl/#calculator) voor uw specifieke tool, en zien hoe Manifera denkt over software-gezondheid op de lange termijn op de pagina [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
+## Draait Uw Onderhoudsplan Daadwerkelijk, of Staat het Alleen op Papier?
+
+Veel oprichters stellen tijdens de opstartfase een net onderhouds- en beveiligingsplan op om investeerders of klanten gerust te stellen. De harde realiteit is echter dat een plan dat niet geautomatiseerd is, binnen twee maanden geruisloos verstart. Toets uw onderhoud aan deze vier realiteitstests:
+
+**1. Worden Afhankelijkheden Automatisch Geüpdatet?** Heeft u Dependabot of Renovate actief op uw GitHub-repository die wekelijks pull requests aanmaakt voor beveiligingspatches, of staat uw codebase al negen maanden op exact dezelfde versie?
+
+**2. Wordt de Database Back-up Periodiek Getoetst?** Is er een geautomatiseerde taak die maandelijks een back-up herstelt op een testserver en verifieert of alle tabellen integer zijn, of hoopt u simpelweg dat het herstelbestand werkt als de nood aan de man komt?
+
+**3. Roteert U Geheimen en Toegangscertificaten?** Worden API-sleutels van ex-medewerkers structureel ingetrokken en database-wachtwoorden periodiek vernieuwd, of gebruikt iedereen nog dezelfde sleutel die bij de start is aangemaakt?
+
+**4. Krijgt U Een Periodiek Overzicht van Beveiligingsscans?** Wordt er wekelijks een geautomatiseerde scan uitgevoerd op codekwetsbaarheden en openstaande poorten via tools zoals Snyk of GitHub Advanced Security?
+
+Een betrouwbaar onderhoudsplan vraagt geen dagelijkse uren van de oprichter; het vraagt om slimme automatisering die zelfstandig waakt over de gezondheid van uw software.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de checkout die brak en niemand het wist
@@ -89,11 +102,46 @@ Ja, mogelijk zelfs meer — tools met weinig verkeer krijgen zelden genoeg gebru
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "How often should I actually check dependencies for an AI-built app?", "acceptedAnswer": { "@type": "Answer", "text": "Monthly is a reasonable baseline for most small tools; payment or sensitive-data apps deserve a tighter check, closer to every two weeks." } },
-    { "@type": "Question", "name": "I'm not technical — how do I even know if something broke silently?", "acceptedAnswer": { "@type": "Answer", "text": "Set up a basic automated check on your one or two most critical flows that alerts you by email or text if it fails, removing the need to manually test anything." } },
-    { "@type": "Question", "name": "Does LaunchStudio offer ongoing maintenance, or only one-time fixes?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LaunchStudio offers an optional ongoing support add-on starting at €49/month alongside project-based work." } },
-    { "@type": "Question", "name": "What does Manifera's Amsterdam team typically find during a maintenance pass?", "acceptedAnswer": { "@type": "Answer", "text": "Most commonly outdated dependencies with known issues, silently broken flows, and missing monitoring on revenue-critical parts of the product." } },
-    { "@type": "Question", "name": "Is a maintenance plan really necessary for a small, low-traffic tool?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — low-traffic tools rarely generate enough usage to surface a break quickly, which lets problems sit unnoticed for weeks." } }
+    {
+      "@type": "Question",
+      "name": "Hoe vaak moet ik afhankelijkheden daadwerkelijk controleren voor een door AI gebouwde app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Maandelijks is een redelijke basis voor de meeste kleine tools. Alles wat betalingen of gevoelige gegevens verwerkt, verdient een strakkere controle, dichter bij elke twee weken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ik ben niet technisch — hoe weet ik zelfs of er iets stilzwijgend kapot is gegaan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zet een eenvoudige geautomatiseerde controle op voor uw een of twee belangrijkste flows (checkout, login, een belangrijk rapport) die op zichzelf draait en u per e-mail of sms waarschuwt als deze faalt. Dit is een kleine, eenmalige installatie die de noodzaak wegneemt om zelf iets handmatig te testen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Biedt LaunchStudio doorlopend onderhoud, of alleen eenmalige reparaties?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — naast projectgebonden werk biedt LaunchStudio een optionele doorlopende ondersteuningsdienst vanaf € 49 per maand voor oprichters die een vast vangnet willen in plaats van een eenmalige reparatie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat vindt het Amsterdamse team van Manifera doorgaans tijdens een onderhoudsronde?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Meestal: verouderde afhankelijkheden met bekende problemen, stilzwijgend kapotte flows die niemand controleerde, en ontbrekende monitoring op de onderdelen van het product die het belangrijkst zijn voor de omzet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is een onderhoudsplan echt nodig voor een kleine tool met weinig verkeer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, mogelijk zelfs meer — tools met weinig verkeer krijgen zelden genoeg gebruik om een storing snel vanzelf aan het licht te brengen, wat betekent dat problemen weken onopgemerkt kunnen blijven, zoals bij PlantRooster gebeurde."
+      }
+    }
   ]
 }
 </script>

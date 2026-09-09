@@ -39,6 +39,17 @@ Specifiek zijn kost één extra zin en bespaart de correctie later: noem de func
 
 LaunchStudio brengt de enterprise-grade engineering van Manifera precies naar dit soort duidelijkheidsvraagstuk — oprichters helpen om nauwkeurig te beschrijven wat een AI-codeertool daadwerkelijk heeft geproduceerd versus wat eromheen is gebouwd. Ons team, werkzaam vanuit onder andere ons engineeringcentrum in Ho Chi Minhstad, helpt oprichters regelmatig om dit onderscheid te documenteren voordat een investeerder of zakelijke koper ernaar vraagt. Als u zich voorbereidt op een due-diligencegesprek, [beschrijf dan uw project en wij reageren binnen één werkdag](https://launchstudio.eu/nl/#process) met een eerlijke inschatting van hoe het standhoudt. De pagina ["over ons"](https://www.manifera.com/about-us/) van Manifera behandelt het bredere technische trackrecord achter die inschatting.
 
+## De Signalen Lezen: Hoe U Bepaalt Welk Type U Daadwerkelijk Heeft
+
+Niet elke storing is hetzelfde. Wanneer uw applicatie in productie hapert, is het cruciaal om razendsnel het juiste onderscheid te maken tussen een incidentele netwerkstoring, een programmeerfout (bug) of een fundamenteel architectuurhiaat. Let op deze signalen:
+
+**Type 1: De Incidentele Netwerkstoring (Transient Failure).** Het probleem treedt willekeurig op, treft slechts één enkele gebruiker en verdwijnt na het verversen van de pagina. In de logs ziet u time-outs naar externe API's. Oplossing: voeg automatische herpogingen met exponential backoff toe aan de client- en serverzijde.
+
+**Type 2: De Deterministische Programmeerfout (Logic Bug).** Het probleem is 100% reproduceerbaar: elke keer dat een gebruiker op knop X klikt met invoer Y, crasht de applicatie. In de console ziet u een duidelijke `TypeError: Cannot read properties of undefined`. Oplossing: een gerichte prompt of code-aanpassing met strikte TypeScript-interfaces en invoervalidatie.
+
+**Type 3: Het Fundamentele Architectuurhiaat (Structural Gap).** Het probleem openbaart zich pas bij piekbelasting, resulteert in corrupte data in meerdere tabellen tegelijk of stelt gebruikers in staat andermans gegevens in te zien. Dit is géén simpele bug; dit is het ontbreken van Row-Level Security, database-transacties of schaalbare wachtrijen.
+
+Probeer een Type 3 architectuurprobleem nooit op te lossen met een Type 2 lapmiddel. Het herkennen van het juiste storingsniveau voorkomt dat u symptomen bestrijdt terwijl de onderliggende oorzaak blijft dooretteren.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de chatwidget die de hele pitch werd
@@ -85,11 +96,46 @@ Het kan beide zijn. Soms gaat het puur om hoe het product werd beschreven; ander
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is it wrong to say AI in the app if only one feature uses AI?", "acceptedAnswer": { "@type": "Answer", "text": "Not wrong, but ambiguous. Listeners often default to the broader reading, so being specific about which part uses AI avoids the mismatch entirely." } },
-    { "@type": "Question", "name": "Why do investors assume the bigger claim by default?", "acceptedAnswer": { "@type": "Answer", "text": "Because AI in the app and app built by AI share enough language that the more dramatic reading fills in naturally, especially during due diligence where the stakes make people probe harder." } },
-    { "@type": "Question", "name": "How should I describe my product to avoid this confusion?", "acceptedAnswer": { "@type": "Answer", "text": "Name the specific AI-powered feature and separately describe how the rest of the application was built, which prevents the bigger assumption from forming in the first place." } },
-    { "@type": "Question", "name": "Does Manifera help with this kind of due diligence preparation?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Manifera's engineers, including the team at the Ho Chi Minh City engineering center, regularly help founders document exactly what was AI-generated versus conventionally built before an investor or buyer asks." } },
-    { "@type": "Question", "name": "Is this just a communication issue, or does it reflect a real technical gap?", "acceptedAnswer": { "@type": "Answer", "text": "It can be either. Sometimes it's purely how the product was described; other times, clarifying the distinction surfaces real gaps in the non-AI parts of the app worth fixing regardless of the pitch." } }
+    {
+      "@type": "Question",
+      "name": "Is het verkeerd om \"AI in de app\" te zeggen als slechts één functie AI gebruikt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet verkeerd, maar dubbelzinnig — luisteraars neigen vaak naar de bredere lezing, dus specifiek zijn over welk onderdeel AI gebruikt, voorkomt de mismatch volledig."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom nemen investeerders standaard de grotere claim aan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat \"AI in de app\" en \"app gebouwd door AI\" genoeg taal delen dat de dramatischere lezing er vanzelf invult, vooral in een due-diligencecontext waar de inzet mensen dieper laat graven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik mijn product moeten beschrijven om deze verwarring te voorkomen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Noem de specifieke AI-aangedreven functie en beschrijf apart hoe de rest van de applicatie is gebouwd — één extra zin die voorkomt dat een aanname zich in de eerste plaats vormt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Helpt Manifera bij dit soort voorbereiding op due diligence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. De technici van Manifera, inclusief het team bij ons engineeringcentrum in Ho Chi Minhstad, helpen oprichters regelmatig om precies te documenteren wat door AI is gegenereerd versus conventioneel gebouwd, voordat een investeerder of koper ernaar vraagt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit alleen een communicatiekwestie, of weerspiegelt het een echte technische kloof?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het kan beide zijn. Soms gaat het puur om hoe het product werd beschreven; andere keren brengt het verduidelijken van het onderscheid echte gaten aan het licht in de niet-AI-onderdelen van de app die het waard zijn om op te lossen, ongeacht de pitch."
+      }
+    }
   ]
 }
 </script>

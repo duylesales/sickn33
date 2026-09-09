@@ -116,6 +116,10 @@ Rolgebaseerd toegangsbeheer (RBAC), audit-logboeken en vragen over gegevenslocat
 
 Nee – SSO en just-in-time provisioning handelen alleen inloggen in af, en niet werknemers eruit. Automatische deprovisioning vereist een afzonderlijk protocol genaamd SCIM dat gebeurtenissen voor het verwijderen van gebruikers vanuit de identiteitsprovider rechtstreeks naar uw app pusht, waar grotere enterprise-klanten steeds vaker specifiek naar vragen naast SSO zelf.
 
+### Wat kost een SAML SSO enterprise-readiness traject bij LaunchStudio?
+
+SAML SSO implementatie met JIT-provisioning en multi-tenant admin configuratie kost gemiddeld €2.400 en duurt circa 10 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

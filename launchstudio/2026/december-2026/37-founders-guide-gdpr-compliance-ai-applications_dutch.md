@@ -86,6 +86,17 @@ Naast de basisstappen kent de AVG een specifieke formele verplichting die veel A
 
 **Het Verwerkingsregister (Artikel 30 AVG - ROPA):** Artikel 30 verplicht organisaties om een schriftelijk register van verwerkingsactiviteiten bij te houden. Voor een AI-oprichter betekent dit het documenteren van welke klantdata naar welke AI-provider gaat, voor welk doel en met welke bewaartermijnen.
 
+### Praktische AVG/GDPR Implementatiechecklist voor AI-Startups
+
+Om juridische sancties te voorkomen en enterprise-contracten soepel af te sluiten, implementeert u deze vier privacy-mechanismen:
+1. **Zero Data Retention Agreements:** Zorg voor getekende enterprise DPA's met AI-leveranciers waarin expliciet is vastgelegd dat klantdata niet wordt gebruikt voor het hertrainen van publieke basismodellen.
+2. **Geautomatiseerd Recht op Gegevenswissing:** Richt een endpoint in dat bij een verwijderverzoek van een gebruiker niet alleen de relationele database-rijen wist, maar ook corresponderende vector embeddings en geüploade brondocumenten definitief verwijdert.
+3. **Expliciete Toestemming & Cookiehygiëne:** Implementeer een strikt privacy-first cookie- en trackingbeleid zonder illegale pre-checked checkboxes.
+4. **Data Mapping Documentatie:** Houd een actueel register van verwerkingsactiviteiten (Artikel 30) bij waarin alle datastromen, subverwerkers en bewaartermijnen transparant zijn vastgelegd.
+
+- **Strikte Verwerkersovereenkomsten met Cloud-Aanbieders:** Eis van hostingpartijen en LLM-providers dat alle dataopslag en modelverwerking plaatsvindt binnen de Europese Economische Ruimte (EER) of onder strikte Standard Contractual Clauses (SCC's).
+- **Pseudonimisering vóór Inference:** Verwijder direct herleidbare persoonsgegevens (zoals BSN-nummers, IBAN's en e-mailadressen) uit de prompt via geautomatiseerde regex-filters vóór verzending naar het AI-model.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Zakelijke privacy-audit glansrijk doorstaan

@@ -60,6 +60,12 @@ Vendor lock-in is not usually one bad clause — it is the accumulation of unexa
 
 Manifera structures every engagement with continuous repository access, explicit IP assignment, and documented architecture decisions from day one — see our [custom software development](https://www.manifera.com/services/custom-software-development/) page for how we build engagements designed to be exitable by design, not just deliverable.
 
+## Red-Flag Language to Strike From the First Draft
+
+Most vendor-drafted contracts arrive with boilerplate that quietly favors the vendor's retention, and founders reviewing under funding-round time pressure often miss it. Watch for four specific patterns: a "work made for hire" clause that only covers deliverables "accepted" at milestone sign-off, leaving in-progress or rejected work in ambiguous ownership limbo; a data export clause that promises "reasonable assistance" without a defined format or timeframe — reasonable is not an SLA; an automatic renewal clause with a notice window longer than 60 days, which quietly extends lock-in by a full contract term if you miss it; and a non-solicitation-of-personnel clause broad enough to block you from later hiring the engineer who knows your codebase best, precisely the person you would want when insourcing.
+
+Redline all four before signature, not after. A useful rule of thumb: any clause using the word "reasonable" or "commercially reasonable" without a defined number attached — days, dollars, or percentage — should be treated as unenforceable in practice and rewritten with a specific figure. Vendors experienced with venture-backed founders will not resist these edits; resistance itself is diagnostic of a vendor whose business model depends on switching friction rather than delivered value.
+
 ## Frequently Asked Questions
 
 ### What is the most common source of vendor lock-in in software contracts?
@@ -76,6 +82,18 @@ Ask whether your own internal team, even a small one, could explain at an archit
 
 ### Should a vendor contract include a paid transition-assistance period?
 Yes, and it should not be contingent on the reason for termination. A two-to-four-week paid handover window, with senior vendor staff available at pre-agreed rates, is standard practice among vendors confident in the quality of their work and should be negotiated into the original contract rather than requested only when an exit is already underway.
+
+### (Scenario: preparing for investor technical due diligence) What will investors specifically ask about vendor lock-in during due diligence?
+Expect direct questions about whether your company holds standalone repository access independent of the vendor, whether IP assignment is unambiguous and complete, and whether anyone outside the vendor's team could explain your core architecture. A "no" on any of these is a diligence flag that can affect valuation or terms.
+
+### (Scenario: an existing contract has a long automatic-renewal notice window) How do I fix an automatic renewal clause that already has a 90-day notice requirement?
+Renegotiate it at the next natural touchpoint — a scope change, a rate discussion, or a renewal itself — down to 30-45 days. If the vendor resists shortening it, treat that resistance as information about how they view the relationship's dependency on inertia rather than value delivered.
+
+### (Scenario: deployment pipeline built on proprietary vendor-only tooling) Our vendor built our deployment pipeline on their own proprietary tooling — is that lock-in?
+Yes, if the tooling isn't a widely adopted standard like Terraform or standard Docker and Kubernetes configs and only the vendor's team can operate it. Insist on migrating to portable, industry-standard tooling as a condition of any renewal — proprietary deployment tooling is one of the highest-cost lock-in vectors because it stays invisible until an exit is attempted.
+
+### (Scenario: a founder inherited a legacy contract with none of these protections) I inherited a vendor contract that has none of these protections — what now?
+Don't wait for the current term to expire. Request a contract amendment adding IP confirmation, continuous repository access, and an exit clause now, framed as routine legal cleanup rather than distrust — most vendors will agree to formalize protections that arguably should have existed already rather than risk the relationship over a reasonable request.
 
 <script type="application/ld+json">
 {
@@ -121,6 +139,26 @@ Yes, and it should not be contingent on the reason for termination. A two-to-fou
         "@type": "Answer",
         "text": "Yes, and it should not be contingent on the reason for termination. A two-to-four-week paid handover window, with senior vendor staff available at pre-agreed rates, is standard practice among vendors confident in the quality of their work and should be negotiated into the original contract rather than requested only when an exit is already underway."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: preparing for investor technical due diligence) What will investors specifically ask about vendor lock-in during due diligence?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Expect direct questions about whether your company holds standalone repository access independent of the vendor, whether IP assignment is unambiguous and complete, and whether anyone outside the vendor's team could explain your core architecture." }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: an existing contract has a long automatic-renewal notice window) How do I fix an automatic renewal clause that already has a 90-day notice requirement?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Renegotiate it at the next natural touchpoint down to 30-45 days. If the vendor resists shortening it, treat that resistance as information about how they view the relationship's dependency on inertia rather than value delivered." }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: deployment pipeline built on proprietary vendor-only tooling) Our vendor built our deployment pipeline on their own proprietary tooling — is that lock-in?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the tooling isn't a widely adopted standard and only the vendor's team can operate it. Insist on migrating to portable, industry-standard tooling as a condition of any renewal." }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a founder inherited a legacy contract with none of these protections) I inherited a vendor contract that has none of these protections — what now?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Don't wait for the current term to expire. Request a contract amendment adding IP confirmation, continuous repository access, and an exit clause now, framed as routine legal cleanup rather than distrust." }
     }
   ]
 }

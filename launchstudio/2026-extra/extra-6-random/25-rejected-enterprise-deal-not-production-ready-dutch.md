@@ -39,6 +39,21 @@ Het team van meer dan 120 engineers van Manifera, werkend vanuit onder meer een 
 
 Voorbij deze fase komen gaat niet over een beter klinkend antwoord op de vragenlijst schrijven — het gaat over de onderliggende realiteit die overeenkomt met wat er op papier staat. Dat betekent doorgaans: versleuteling in rust en tijdens verzending die daadwerkelijk is geïmplementeerd en verifieerbaar is, niet alleen beweerd; toegangslogs die vastleggen wie welke gegevens wanneer heeft aangeraakt, opvraagbaar op verzoek; en een gedocumenteerd incidentresponsproces dat beschrijft wat er gebeurt, wie wordt geïnformeerd, en hoe snel, als zich een inbreuk voordoet. Niets hiervan vereist het aanraken van de frontend van het product of de functies waar de kampioengebruiker al van houdt. Het vereist dat de onderliggende infrastructuur wordt gebouwd volgens een standaard die overeind blijft wanneer lastige vragen worden gesteld door iemand wiens hele functie het stellen van lastige vragen is.
 
+## Verder Dan de Grote Drie: Andere Vragen Die Dezelfde Vragenlijst Waarschijnlijk Stelt
+
+Versleuteling, logging en incidentenrespons vormen de 'Grote Drie' die het vaakst een zakelijke deal vertragen. Zakelijke security-officers en inkoopafdelingen hanteren echter uitgebreidere standaarden (zoals de ISO 27001 of SOC 2 richtlijnen). Bereid u voor op deze vier aanvullende vragen die vrijwel gegarandeerd in dezelfde vragenlijst opduiken:
+
+**1. "Wat is uw beleid inzake kwetsbaarheidsbeheer en afhankelijkheden (Dependency Management)?"** Enterprise-klanten willen weten of u geautomatiseerde scans draait (zoals Dependabot of Snyk) om bekende beveiligingslekken in uw externe softwarebibliotheken op te sporen en binnen welke termijn u beveiligingspatches installeert.
+
+**2. "Hoe verloopt het offboarden van medewerkers en leveranciers?"** Een formele vraag naar 'Toegangsbeheer': hoe garandeert u dat een vertrekkende ontwikkelaar of ingehuurde freelancer niet langer toegang heeft tot uw GitHub-repository's, cloud-infrastructuur of klantendatabases?
+
+**3. "Beschikt u over een Business Continuity and Disaster Recovery (BCDR) plan?"** Men wil weten wat er gebeurt als uw primaire cloudprovider (bijvoorbeeld AWS Frankfurt) een langdurige storing heeft. Worden back-ups op een geografisch gescheiden locatie bewaard en is het herstelproces ooit daadwerkelijk in de praktijk getest?
+
+**4. "Welke sub-verwerkers (Sub-processors) schakelt u in en waar worden persoonsgegevens verwerkt?"** In het kader van de AVG/GDPR bent u verplicht een actuele lijst te overleggen van alle derde partijen die data verwerken (zoals OpenAI, Stripe, AWS, Resend), inclusief de ondertekende Verwerkersovereenkomsten (Data Processing Agreements - DPA's).
+
+Door deze antwoorden vooraf schriftelijk klaar te hebben liggen in een standaard 'Security Whitepaper' of 'Compliance Dossier', neemt u alle twijfel bij zakelijke inkopers weg en versnelt u uw verkooptraject met weken.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Marit Loots herstelt het vertrouwen bij inkoop
@@ -85,11 +100,46 @@ Manifera opereert hubs in Amsterdam, Singapore en Ho Chi Minhstad, wat LaunchStu
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why would a deal stall after the user already said yes?", "acceptedAnswer": { "@type": "Answer", "text": "Because the user's approval and procurement's security review are separate gates. A product can satisfy the user while failing procurement's baseline requirements." } },
-    { "@type": "Question", "name": "What does an enterprise security questionnaire usually ask for?", "acceptedAnswer": { "@type": "Answer", "text": "Most ask some version of three things: encryption at rest and in transit, access logging, and incident response process." } },
-    { "@type": "Question", "name": "Can this be fixed without rebuilding the product?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. LaunchStudio's engineers can add encryption, logging, and documentation underneath the existing platform without changing the frontend." } },
-    { "@type": "Question", "name": "How is LaunchStudio positioned to handle this kind of gap?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio is backed by Manifera's team of 120+ engineers with direct experience serving enterprise clients." } },
-    { "@type": "Question", "name": "Where does Manifera's engineering team operate from?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera operates hubs in Amsterdam, Singapore, and Ho Chi Minh City." } }
+    {
+      "@type": "Question",
+      "name": "Waarom zou een deal vastlopen nadat de gebruiker al ja heeft gezegd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat de goedkeuring van de gebruiker en de beveiligingsbeoordeling van inkoop aparte poorten zijn. Een product kan de dagelijkse gebruiker volledig tevredenstellen terwijl het toch faalt op de basisvereisten van inkoop rond versleuteling, logging en incidentrespons."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat vraagt een zakelijke beveiligingsvragenlijst doorgaans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste vragen een versie van drie dingen: hoe gegevens worden versleuteld in rust en tijdens verzending, welke toegangslogging bestaat, en wat het incidentresponsproces is als er iets misgaat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan dit worden opgelost zonder het product opnieuw te bouwen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Bij Marit Loots voegden de engineers van LaunchStudio versleuteling, logging en documentatie toe onder het bestaande PersoneelsPortaal-platform, zonder te veranderen waar gebruikers mee omgingen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe is LaunchStudio gepositioneerd om dit soort hiaten aan te pakken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio wordt ondersteund door het team van meer dan 120 engineers van Manifera met directe ervaring in het bedienen van zakelijke klanten, wat het uit eerste hand vertrouwd maakt met wat inkoopteams daadwerkelijk controleren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Van waaruit opereert het engineeringteam van Manifera?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manifera opereert hubs in Amsterdam, Singapore en Ho Chi Minhstad, wat LaunchStudio bereik geeft over tijdzones die relevant zijn voor zakelijke kopers wereldwijd."
+      }
+    }
   ]
 }
 </script>

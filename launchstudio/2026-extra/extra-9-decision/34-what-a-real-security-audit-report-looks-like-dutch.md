@@ -160,7 +160,7 @@ Dat is exact de opzet van de security-audits binnen het [Launch Ready traject va
 
 **Heeft u een auditrapport ontvangen en twijfelt u over de kwaliteit? Stuur het ons toe en wij vertellen u kosteloos of het een serieuze analyse betreft of een veredelde scanner-dump — of deel uw repository met ons voor een open gesprek met engineers die dagelijks AI-code auditen.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Indie Hacker in Actie: Het Rapport Dat Zijn Eigen Reproductietest Niet Doorstond
 

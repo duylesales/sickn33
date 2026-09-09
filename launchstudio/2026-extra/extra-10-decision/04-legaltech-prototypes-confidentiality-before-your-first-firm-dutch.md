@@ -77,7 +77,7 @@ De senior engineers van LaunchStudio bouwen dossiergebonden autorisatiestructure
 
 Wat wij niet doen, is uw tuchtrechtelijke verplichtingen dicteren of namens u juridische aansprakelijkheid aanvaarden. Maar door het technische fundament waterdicht op te leveren, verandert de IT-audit van een wekenlange blokkade in een vlot goedgekeurde formaliteit. [Ga in gesprek met een van onze lead engineers](https://launchstudio.eu/nl/#contact) en ontdek wat uw legaltech-oplossing nodig heeft om met vlag en wimpel door de beveiligingstoets te komen.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Contractanalysetool Krijgt Haar Eerste Echte Security-Audit
 

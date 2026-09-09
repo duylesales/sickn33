@@ -90,7 +90,7 @@ Zodra onbetaalde uren realistisch worden meegerekend tegen de totale projectkost
 
 [Plan een gesprek van 15 minuten](https://launchstudio.eu/nl/#contact) om te berekenen wat uw werkelijke marge is zodra het complete grootboek op tafel ligt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Dijkstra Digital: De Spreadsheet Die Een Verkeerd Beeld Gaf
 

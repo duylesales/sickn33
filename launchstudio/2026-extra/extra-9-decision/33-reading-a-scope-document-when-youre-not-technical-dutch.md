@@ -126,7 +126,7 @@ Ter vergelijking: [LaunchStudio](https://launchstudio.eu/nl/) offreert projecten
 
 **Deel uw prototype met ons en geef aan wat u nodig heeft — u ontvangt binnen één werkdag een heldere scope inclusief acceptatiecriteria, die u vrijblijvend kunt voorleggen aan elke ontwikkelaar.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Oprichter in Actie: De Regel Met "Ondersteuning bij Deployment"
 

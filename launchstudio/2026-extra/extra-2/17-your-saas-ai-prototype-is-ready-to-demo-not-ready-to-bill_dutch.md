@@ -59,18 +59,21 @@ Manifera's engineeringwerk voor facturatie-logica wordt geleverd via het ontwikk
 
 [Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/nl/#calculator).
 
-## De facturatiesituaties die het waard zijn om te testen voordat u een echte klant factureert
+## De Facturatie-Scenario's Die U Moet Testen Vóór U een Echte Klant Laat Betalen
 
-Evenredige verrekening is de meest voorkomende kloof, maar het is een van meerdere facturatiesituaties die zelden uitgeoefend worden tijdens het op demo's gefocuste testen van een oprichter zelf. Een grondige stap voordat er echt geld bij betrokken is omvat al deze situaties bewust.
+Pro-rata herberekening is de meest voorkomende blinde vlek, maar het is slechts één van meerdere facturatiescenario's die tijdens de lokale testfase van een oprichter zelden grondig worden doorlopen. Test deze vier situaties doelbewust vóór livegang:
 
-**Test deze overgangen expliciet, en niet alleen verse aanmeldingen**
+**1. Het Directe Downgrade-Scenario:** Wat gebeurt er als een klant halverwege de maand overstapt van een Tier van € 100 naar een Tier van € 20? Wordt de wijziging direct doorgevoerd met een pro-rata tegoed op de volgende factuur, of gaat de wijziging pas in aan het einde van de facturatieperiode? Zonder duidelijke logica ontstaan er administratieve geschillen.
 
-1. **Upgrade halverwege de cyclus** — de situatie die hierboven werd behandeld; bevestig dat de klant een eerlijk, evenredig verrekend bedrag gefactureerd krijgt
-2. **Downgrade halverwege de cyclus** — bevestig dat de klant een toepasselijk tegoed of aanpassing ontvangt
-3. **Annuleren, en vervolgens opnieuw abonneren binnen dezelfde facturatieperiode** — herkent het systeem het eerdere betalingsrecord van een terugkerende klant correct?
-4. **Een mislukte herhalingspoging van een betaling** — wanneer een kaart wordt geweigerd en de betalingsverwerker het dagen later automatisch opnieuw probeert, weerspiegelt de applicatie dan tussentijds correct een status "achterstallig"?
-5. **Conversie van proefversie naar betaald** — vindt de eerste echte afschrijving plaats op de correcte datum, voor het correcte bedrag?
-6. **Een pakketwijziging gecombineerd met een kortingscode** — wordt de korting op de juiste manier meegenomen of herberekend?
+**2. De Mislukte Periodieke Betaling (Dunning & Retries):** Wat gebeurt er als de automatische incasso of creditcardbetaling op de eerste van de maand mislukt wegens onvoldoende saldo? Sluit uw applicatie de klant direct meedogenloos buiten, of is er een respijtperiode van enkele dagen waarin vriendelijke waarschuwingsmails worden verstuurd terwijl Stripe automatische herpogingen uitvoert?
+
+**3. Annulering en Directe Heractivatie:** Een klant zegt zijn abonnement op, bedenkt zich drie dagen later en klikt op 'Abonnement hervatten'. Creëert uw systeem dan netjes een hervatting, of wordt er een compleet nieuw dubbel abonnement aangemaakt terwijl het oude blijft doorlopen?
+
+**4. Btw-Vrijstellingen en Grensoverschrijdende Facturatie binnen de EU:** Verkoopt u aan zakelijke klanten in andere EU-landen? Controleert uw checkout het btw-nummer via de VIES-database en past het correct btw-verlegging toe, inclusief de verplichte vermelding op de gegenereerde factuur?
+
+**Leg vooraf schriftelijk vast wat "eerlijk" betekent voor uw product**
+
+Facturatielogica vereist zakelijke beleidskeuzes. Er is geen universeel juist antwoord, maar vooraf weloverwogen kiezen en uw code daarop testen is oneindig veel professioneler dan reactief moeten improviseren wanneer een verwarde klant een boze e-mail stuurt over een onbegrijpelijke afschrijving. Log bovendien bij elke tariefwijziging de exacte berekeningsparameters, zodat een eventuele betwisting binnen vijf minuten kan worden opgehelderd.
 
 ## Echt voorbeeld
 
@@ -118,50 +121,42 @@ Het testen van elke combinatie kan onrealistisch zijn, maar het testen van de me
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is proration (tính giá theo tỷ lệ) là một vấn đề kỹ thuật khó?",
+      "name": "Zou een specialist in facturatiesystemen evenredige verrekening beschouwen als een moeilijk probleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nó đã có solution chuẩn trong API của payment provider, khó khăn chủ yếu là founder hay quên test tình huống này."
+        "text": "Goed begrepen maar vaak overgeslagen – de wiskunde van evenredige verrekening is een opgelost probleem met gevestigde patronen in de meeste API's van betalingsverwerkers. De moeilijkheid zit hem bijna volledig in het onthouden om het te implementeren en specifiek te testen."
       }
     },
     {
       "@type": "Question",
-      "name": "Lỗi này có chỉ xảy ra ở sản phẩm SaaS đăng ký không?",
+      "name": "Is dit soort kloof specifiek voor abonnements-SaaS-producten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dễ thấy nhất ở SaaS, nhưng bất kỳ sản phẩm nào có phân cấp gói dịch vụ đều gặp phải câu hỏi chuyển đổi giữa chừng."
+        "text": "Het is het meest zichtbaar in abonnementsproducten vanwege de terugkerende facturatie op basis van cycli, hoewel elk product met gelaagde prijzen voor vergelijkbare vragen staat."
       }
     },
     {
       "@type": "Question",
-      "name": "Kinh nghiệm thực tế với Mollie có quan trọng với founder tại Hà Lan?",
+      "name": "Maakt ervaring met Mollie specifiek uit voor een Nederlandse SaaS-oprichter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, Mollie có các quy chuẩn riêng về subscription API, kinh nghiệm sẵn có giúp xử lý nhanh và chính xác."
+        "text": "Het helpt in de zin dat Mollie's specifieke API's voor abonnementswijzigingen specifieke conventies hebben die het waard zijn goed te kennen."
       }
     },
     {
       "@type": "Question",
-      "name": "Sửa logic billing có làm thay đổi giao diện frontend không?",
+      "name": "Raakt een facturatieherstelling zoals deze de klantgerichte frontend?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, toàn bộ sửa đổi nằm ở backend billing logic, giữ nguyên 100% giao diện frontend."
+        "text": "Nee, de gehele herstelling leefde in de backend facturatie-logica zelf, wat consistent is met het principe om de frontend ongeraakt te laten."
       }
     },
     {
       "@type": "Question",
-      "name": "Có cần test mọi kết hợp nâng/hạ cấp gói trước khi launch không?",
+      "name": "Moet een schalende SaaS-oprichter proactief elke mogelijke pakketwijzigings-combinatie testen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không cần test hết mọi trường hợp phức tạp, nhưng phải test kĩ các luồng upgrade/downgrade giữa các gói liền kề."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Cách tốt nhất để xử lý khi lỡ thu tiền sai của khách là gì?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hoàn tiền hoặc issue store credit ngay lập tức kèm lời giải thích minh bạch, đồng thời fix triệt để logic ở backend."
+        "text": "Het testen van elke combinatie kan onrealistisch zijn, maar het testen van de meest voorkomende overgangen tussen aangrenzende niveaus is een redelijke, afgebakende omvang."
       }
     }
   ]

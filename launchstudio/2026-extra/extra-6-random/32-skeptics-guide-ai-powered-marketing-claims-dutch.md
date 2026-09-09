@@ -49,6 +49,23 @@ Dat gat tussen "kan niet gemakkelijk verifiëren" en "moet de marketing vertrouw
 
 De technici van Manifera — meer dan 120 in aantal, met meer dan 11 jaar ervaring in het bouwen van productiesystemen voor klanten zoals Vodafone en TNO — besteden behoorlijk wat tijd aan precies dit soort beoordelingen namens oprichters, waarbij ze tools met echte analysecapaciteit onderscheiden van tools met echte marketingbudgetten. Onze vestiging in Singapore werkt met oprichters uit Zuidoost-Azië aan precies dit soort due diligence voorafgaand aan elke productielancering. Als u een tweede mening wilt over een beveiligingsleverancier die u aan het evalueren bent, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) en dan vertellen we u eerlijk wat we denken dat de tool daadwerkelijk doet. Voor een breder beeld van hoe teams met productieniveau engineering dit aanpakken, laat het [portfolio](https://www.manifera.com/portfolio/) van Manifera het soort beveiligingsnauwkeurigheid zien dat is toegepast bij meer dan 160 opgeleverde projecten.
 
+## Nog Vijf Uitspraken Die Exact Dezelfde Kritische Blik Verdienen
+
+In eerdere analyses behandelden we al sussende uitspraken van ontwikkelaars en bureaus. Wanneer u echter dieper in onderhandelingen of technische statusupdates duikt, duiken regelmatig de volgende vijf sussende frasen op. Hier is wat ze écht betekenen en hoe u erop moet reageren:
+
+**1. "Het draait in de cloud, dus het schaalt automatisch."** *Wat het werkelijk betekent:* De webserver schaalt wellicht mee, maar als uw database-query's niet zijn geïndexeerd of uw connectiepool volloopt, crasht het systeem bij de eerste serieuze piekbelasting alsnog. *Uw reactie:* Vraag specifiek naar database-indexering en connectielimieten.
+
+**2. "Supabase/Firebase regelt de beveiliging standaard voor ons."** *What it actually means:* Het platform biedt uitstekende beveiligingsinstrumenten (zoals Row-Level Security), maar die staan standaard vaak wijd open totdat een engineer ze handmatig configureert en test. *Uw reactie:* Vraag om een uitdraai van de actieve RLS-policies per tabel.
+
+**3. "We hebben de code getest met geautomatiseerde AI-tests."** *Wat het werkelijk betekent:* Een AI heeft triviale tests gegenereerd die uitsluitend controleren of componenten renderen, zonder ooit complexe randvoorwaarden of foutscenario's te testen. *Uw reactie:* Vraag welke specifieke 'edge cases' en autorisatiefouten in de testsuite zijn opgenomen.
+
+**4. "Niemand kan die URL raden, dus het is veilig."** *Wat het werkelijk betekent:* 'Security through obscurity' — een levensgevaarlijke misvatting. Zodra één link wordt gedeeld of onderschept, ligt het hele record openbaar. *Uw reactie:* Eis dat elk record strikt wordt geautoriseerd op basis van de actieve gebruikerssessie.
+
+**5. "Dat bouwen we later wel in een refactor-ronde."** *Wat het werkelijk betekent:* We schuiven het structurele probleem voor ons uit totdat het ons dwingt om het hele fundament open te breken. *Uw reactie:* Bepaal of het onderdeel bedrijfskritiek is; zo ja, bouw het dan direct degelijk.
+
+Door deze uitspraken direct te ontmaskeren, dwingt u technische partners tot professionaliteit en voorkomt u dat er zand in uw ogen wordt gestrooid.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de linter met een beveiligingsbadge om
@@ -95,11 +112,46 @@ Ja, de vestiging in Singapore werkt met oprichters uit Zuidoost-Azië aan precie
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "How can I tell if a security tool's \"AI\" claim is substantive before I pay for it?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for a specific, real example of a finding it has produced, and ask what class of vulnerability it catches that a standard linter doesn't. Vague answers are the tell." } },
-    { "@type": "Question", "name": "Is it wrong for a vendor to call a linter \"AI-powered\" if an LLM writes the summary?", "acceptedAnswer": { "@type": "Answer", "text": "It's not fraud, but it is marketing doing more work than the product, which matters when you're trusting the tool with something like authentication or data handling." } },
-    { "@type": "Question", "name": "Does Manifera's team evaluate third-party security tools, or only build custom solutions?", "acceptedAnswer": { "@type": "Answer", "text": "Both. Manifera's engineers regularly assess whether existing tooling is doing real work before recommending whether to keep, replace, or supplement it." } },
-    { "@type": "Question", "name": "Why does this matter more for founders using Lovable, Bolt, or Cursor specifically?", "acceptedAnswer": { "@type": "Answer", "text": "These founders often can't independently verify a vendor's technical claim by reading the underlying code, which shifts more weight onto marketing language than it should carry." } },
-    { "@type": "Question", "name": "Does LaunchStudio's Singapore team handle these vendor evaluations directly?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the Singapore hub handles this due diligence as part of the wider production-readiness review process." } }
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik vóór aankoop bepalen of de \"AI\"-claim van een beveiligingstool inhoudelijk is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vraag om een specifiek, echt voorbeeld van een bevinding die de tool heeft opgeleverd, en vraag welke categorie kwetsbaarheden het opvangt die een standaardlinter niet zou vinden. Vage antwoorden zijn het teken aan de wand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het verkeerd van een leverancier om een linter \"AI-powered\" te noemen als een LLM de samenvatting schrijft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is geen fraude, maar het is wel marketing die meer werk verzet dan het product. Het onderscheid is belangrijk wanneer u beslist hoeveel vertrouwen u de tool geeft bij zaken als authenticatie of gegevensverwerking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Beoordeelt het team van Manifera beveiligingstools van derden, of bouwt het alleen maatwerkoplossingen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beide — de technici van Manifera beoordelen regelmatig of de bestaande tooling van een oprichter daadwerkelijk werk verzet, voordat ze adviseren om deze te behouden, te vervangen of aan te vullen met een handmatige beoordeling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom is dit specifiek belangrijker voor oprichters die Lovable, Bolt of Cursor gebruiken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat deze oprichters vaak niet zelfstandig de technische claim van een leverancier kunnen verifiëren door de onderliggende code te lezen, waardoor marketingtaal meer gewicht krijgt dan zou moeten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Voert het Singaporese team van LaunchStudio deze leveranciersbeoordelingen zelf uit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, de vestiging in Singapore werkt met oprichters uit Zuidoost-Azië aan precies dit soort due diligence vóór een productielancering, naast het bredere proces van productiegereedheidsbeoordeling."
+      }
+    }
   ]
 }
 </script>

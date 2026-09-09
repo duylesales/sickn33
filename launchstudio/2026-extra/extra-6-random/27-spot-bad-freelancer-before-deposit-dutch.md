@@ -45,6 +45,23 @@ Als een freelancer zakt voor de test "leg uw eigen code uit", is dat niet automa
 
 LaunchStudio is specifiek gebouwd voor oprichters die precies dit gat hebben ervaren, of het volledig willen vermijden. In tegenstelling tot een solo-freelancer wordt LaunchStudio ondersteund door het team van meer dan 120 engineers van Manifera, met de Europese basis in Amsterdam, wat betekent geen enkel punt van falen en een trackrecord over 160+ opgeleverde projecten. Als u momenteel freelancers screent voor productiewerk en een tweede mening wilt voordat u zich vastlegt, [boek dan een gratis intro-gesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en vergelijk aantekeningen. De aanpak van [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera laat zien hoe verantwoorde, teamgebaseerde oplevering er op schaal uitziet — dezelfde standaard waar het waard is om elke individuele freelancer aan te houden.
 
+## Vijf Contractvoorwaarden Waarop U Moet Staan, Zelfs Als de Screening Uitstekend Verloopt
+
+Het doorstaan van alle technische screeningsvragen betekent niet dat u een schriftelijke overeenkomst achterwege kunt laten — het betekent juist dat u het contract ingaat met specifieke, doelgerichte beschermingsbepalingen. Zelfs een freelancer die zijn code uitstekend uitlegt, kan onverwacht uitvallen of van inzicht veranderen. Zorg dat deze vijf voorwaarden zwart-op-wit zijn vastgelegd:
+
+**1. Onvoorwaardelijke en Directe Overdracht van Intellectueel Eigendom (IP).** Zorg ervoor dat alle eigendomsrechten op code, documentatie, databasedesigns en configuraties automatisch en per direct overgaan op uw onderneming op het moment van creatie, niet pas na de allerlaatste betaling van een openstaand factuurbedrag.
+
+**2. Garantieperiode op Aantoonbare Beveiligings- en Bouwfouten.** Beding een formele garantieperiode van minimaal 30 tot 60 dagen na oplevering waarin verifieerbare kwetsbaarheden (zoals ontbrekende autorisatie, SQL-injecties of hardcoded geheimen) kosteloos en met de hoogste prioriteit worden hersteld.
+
+**3. Verbod op Propriëtaire Wrappers en Vendor Lock-in.** Leg contractueel vast dat alle code wordt geschreven in standaard, openbare frameworks (zoals Next.js, FastAPI, PostgreSQL) en dat er geen eigen gesloten bibliotheken van de ontwikkelaar worden ingezet waarvoor u later een aparte licentie moet afnemen.
+
+**4. Verplichte Overdracht van Alle Omgevings- en Diensttoegangen.** De ontwikkelaar moet alle accounts, API-sleutels, hostingdashboards en DNS-instellingen aanmaken op naam van uw bedrijf. U dient te allen tijde de primaire eigenaar ('Owner') te zijn; de freelancer krijgt uitsluitend gedelegeerde beheerdersrechten.
+
+**5. Gedocumenteerde Exit- en Overdrachtsprocedure.** Neem een clausule op die de ontwikkelaar verplicht om bij beëindiging van de samenwerking binnen vijf werkdagen een gestructureerde overdrachtssessie te verzorgen en een complete lijst van alle actieve afhankelijkheden en omgevingsvariabelen te overhandigen.
+
+Deze contractuele randvoorwaarden beschermen uw onderneming tegen onvoorziene conflicten en garanderen dat uw intellectuele eigendom en operationele continuïteit te allen tijde gewaarborgd blijven.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de aanbetalingsles van Femke Bruggeman
@@ -91,11 +108,46 @@ Het Europese hoofdkantoor van LaunchStudio bevindt zich in Amsterdam, met aanvul
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the single best question to ask a freelancer before hiring them?", "acceptedAnswer": { "@type": "Answer", "text": "Describe a simple edge case relevant to your app and ask them to explain how their code would handle it." } },
-    { "@type": "Question", "name": "Is it normal for a freelancer to say \"I'm not sure\" to a technical question?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, if followed by genuine investigation. The red flag is inability or unwillingness to engage with the question at all." } },
-    { "@type": "Question", "name": "What should I do if I've already paid a deposit and see red flags?", "acceptedAnswer": { "@type": "Answer", "text": "Get a second opinion from an independent reviewer before the work goes further." } },
-    { "@type": "Question", "name": "How is working with LaunchStudio different from hiring an individual freelancer?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio is backed by Manifera's team of 120+ engineers rather than a single person's individual judgment." } },
-    { "@type": "Question", "name": "Where is LaunchStudio based?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio's European headquarters is in Amsterdam, with hubs in Singapore and Ho Chi Minh City." } }
+    {
+      "@type": "Question",
+      "name": "Wat is de beste vraag om een freelancer te stellen voordat u hem inhuurt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beschrijf een eenvoudige edge case relevant voor uw app en vraag hen uit te leggen hoe hun code daarmee zou omgaan. Hun vermogen om erover te redeneren, in plaats van af te wimpelen, vertelt u of ze hun eigen werk daadwerkelijk begrijpen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het normaal dat een freelancer \"ik weet het niet zeker\" zegt op een technische vraag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, en het is zelfs een goed teken als het wordt gevolgd door oprechte uitzoekactie in plaats van afwimpeling. De rode vlag is niet onzekerheid — het is het onvermogen of de onwil om überhaupt met de vraag om te gaan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik doen als ik al een aanbetaling heb gedaan en rode vlaggen zie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vraag een tweede mening van een onafhankelijke beoordelaar voordat het werk verder gaat. Het gat vroeg ontdekken, zelfs na een aanbetaling, is goedkoper dan later betalen om het werk over te doen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verschilt werken met LaunchStudio van het inhuren van een individuele freelancer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio wordt ondersteund door het team van meer dan 120 engineers van Manifera in plaats van het oordeel van één enkele persoon, wat het risico verkleint dat de gaten van één freelancer onopgemerkt blijven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is LaunchStudio gevestigd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het Europese hoofdkantoor van LaunchStudio bevindt zich in Amsterdam, met aanvullende engineeringhubs in Singapore en Ho Chi Minhstad via Manifera."
+      }
+    }
   ]
 }
 </script>

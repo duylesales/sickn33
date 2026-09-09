@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een Freelance Consultant Zet het Bolt-Prototype van een Klant om in een Omzetgenererend Product"
+Titel: "Case Study: Een Freelance Consultant Zet het Bolt-Prototype van een Klant om in een Omzetgenererend Product"
 Trefwoorden: freelance consultant productlevering, Bolt-prototype naar productie, consultant lanceert klantproduct, white-label technische partner, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: Bureau / Freelancer (White-Label Partner)
 ---
 
-# Praktijkvoorbeeld: Een Freelance Consultant Zet het Bolt-Prototype van een Klant om in een Omzetgenererend Product
+# Case Study: Een Freelance Consultant Zet het Bolt-Prototype van een Klant om in een Omzetgenererend Product
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een Freelance Consultant Zet het Bolt-Prototype van een Klant om in een Omzetgenererend Product",
+  "headline": "Case Study: Een Freelance Consultant Zet het Bolt-Prototype van een Klant om in een Omzetgenererend Product",
   "description": "Een freelance bedrijfsconsultant hielp zijn klant een prototype bouwen in Bolt en gebruikte vervolgens LaunchStudio om de productieklare versie te leveren — waarmee hij zijn adviesscope uitbreidde van advies naar levering, zonder zelf code te schrijven.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },

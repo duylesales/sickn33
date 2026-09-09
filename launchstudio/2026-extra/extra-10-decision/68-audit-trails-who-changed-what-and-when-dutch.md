@@ -98,7 +98,7 @@ Heeft u dit ingebouwd? Dan vinkt u 'Ja' aan. Heeft u dit niet? Dan verliest u de
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in enterprise-grade software) implementeren we onveranderbare append-only audittrails met database-triggers en klantgerichte geschiedenisweergaven standaard in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw audit- en compliance-eisen met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw software aanbestedingsproof is.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De Korting Waar Niemand Zich Iets van Herinnerde
 

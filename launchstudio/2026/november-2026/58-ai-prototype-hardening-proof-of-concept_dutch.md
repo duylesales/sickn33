@@ -64,6 +64,15 @@ Het overbruggen van deze kloof vereist het vervangen van losse testscripts door 
 2. **Evaluation-Driven Development (EDD):** Wij richten geautomatiseerde CI/CD-testpipelines in waarin een secundair "Judge LLM" outputs toetst aan 1.000 testcases om regressies en hallucinaties uit te sluiten.
 3. **Infrastructure-as-Code:** Wij richten uw vectordatabases, LLM Gateways en semantische firewalls in via Terraform binnen uw eigen AWS- of Azure-cloud.
 
+### Proof-of-Concept Hardening: Van Werkend Idee naar Veilig Systeem
+
+Het transformeren van een demonstratiemodel naar een veilig productieplatform vereist systematische versteviging van de zwakste plekken:
+1. **Diepgaande Invoervalidatie (Input Sanitization):** Elk veld dat door gebruikers kan worden ingevuld, wordt gevalideerd tegen strikte typeschema's. Teksten worden gefilterd op verborgen prompt injection vectoren en ongewenste controlekarakters vóórdat ze de applicatielogica bereiken.
+2. **Afschermen van Interne Foutmeldingen:** Prototypes tonen bij crashes vaak gedetailleerde stack traces inclusief databasekolommen en serverpaden. Wij vangen alle uitzonderingen centraal af en tonen de gebruiker uitsluitend veilige, gebruiksvriendelijke foutmeldingen, terwijl de volledige trace veilig intern wordt gelogd.
+3. **Beperking van Toegangsrechten (Least Privilege):** Database-inloggegevens en API-sleutels krijgen uitsluitend de minimale rechten die nodig zijn voor hun specifieke taak, waardoor een eventueel lek in één component nooit het gehele platform kan compromitteren.
+4. **Verdediging Tegen Denial of Service:** We configureren adaptieve rate limiters die het aantal zware berekeningen per IP en per gebruikersaccount begrenzen, zodat uw platform overeind blijft bij plotselinge verkeerspieken of kwaadwillende scraping-aanvallen.
+5. **Regelmatige Automatische Backups:** We richten geautomatiseerde point-in-time herstelpunten in voor uw databases en configuraties, met dagelijkse integriteitstesten om te garanderen dat backups in noodsituaties daadwerkelijk kunnen worden teruggezet.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: Het Juridische Prototype Dat Hallucineerde

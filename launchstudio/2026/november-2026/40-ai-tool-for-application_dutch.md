@@ -74,7 +74,7 @@ Onze Moderniseringsarchitectuur omvat:
 2. **Geautomatiseerde Testgeneratie:** Voordat we één regel legacy-code vertalen, gebruiken we AI om uitputtende testsuites te genereren tegen de bestaande endpoints, wat een wiskundig vangnet creëert voor de herschrijving.
 3. **De API Gateway Uitrol:** Wij bouwen de kritieke routing-infrastructuur (met tools zoals Kong of AWS API Gateway) die Schaduw Routing en geleidelijke migratie van de nieuwe microservices mogelijk maakt, wat nul downtime garandeert voor uw eindgebruikers.
 
-## Belangrijkste inzichten
+### Belangrijkste inzichten
 
 - **Vermijd de Big Bang-valkuil**: 70% van de volledige herschrijvingen mislukt; gebruik het Strangler Fig-patroon om monolieten geleidelijk via API-gateways te vervangen.
 - **Drie fasen met AI**: Gebruik AI eerst als Archeoloog (afhankelijkheden mappen), vervolgens als Transpiler (moderne event-driven code genereren) en tenslotte via Schaduw Routing (wiskundig testen tegen live verkeer).

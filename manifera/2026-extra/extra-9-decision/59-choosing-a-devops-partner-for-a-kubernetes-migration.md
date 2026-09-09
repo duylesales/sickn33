@@ -60,6 +60,17 @@ Manifera's DevOps teams have led Kubernetes migrations as part of our [migration
 
 If your team is evaluating DevOps partners for a Kubernetes migration and wants to see an actual migration runbook before committing your production environment to a vendor, reach out to Manifera's Amsterdam-based team for a scoping conversation.
 
+## Technical Deep-Dive: Stateful Workload Sequencing Most Proposals Skip
+
+Stateless services get migrated first for a reason, but the harder engineering problem — and the one a proposal's timeline slide almost never breaks out in detail — is the stateful tier: databases, message queues, anything holding persistent volumes. A genuinely experienced vendor's runbook should name four specific mechanics for this phase, not gloss over them:
+
+1. **Persistent volume migration strategy** — whether data moves via a storage-class-native snapshot-and-restore, a live replication stream, or an application-level dual-write during a transition window, and which one applies to which specific data store in your stack.
+2. **Write-consistency guarantee during cutover** — what happens to writes that land in the old system in the seconds between the last sync and the traffic cutover; a credible answer names a specific mechanism (a brief write-freeze window, a replay log) rather than asserting "no data loss" without describing how.
+3. **StatefulSet ordinal and storage-class mapping** — confirming persistent volume claims bind correctly to the same logical identity after migration, since a misconfigured mapping is a common source of a service starting up against the wrong volume.
+4. **A tested rollback for the stateful tier specifically** — rolling back a stateless service is comparatively simple; rolling back a database migration mid-cutover is not, and a vendor's plan should name a specific tested procedure for this tier rather than lumping it into the general rollback answer.
+
+A vendor who can walk through these four points fluently, unprompted, has done this before. A vendor who pivots back to the stateless-migration story when pushed on stateful specifics is showing you exactly where their real experience ends.
+
 ## Frequently Asked Questions
 
 ### What's the difference between Kubernetes deployment experience and Kubernetes migration experience?
@@ -81,6 +92,22 @@ Accurately scoping a Kubernetes migration requires understanding the actual work
 ### What does a good post-migration knowledge transfer process look like?
 
 It should include structured training sessions for your internal engineers, operational runbooks specific to your actual cluster configuration, and a defined post-migration support window, rather than a single wrap-up call and a link to generic documentation.
+
+### (Scenario: A vendor's migration proposal describes a stateless-first order but goes vague when asked how the database tier will actually cut over) What specific question exposes whether a vendor has real experience migrating stateful workloads, not just stateless ones?
+
+Ask how they handle writes that land in the old system in the seconds between the last data sync and the traffic cutover. A vendor with real experience names a specific mechanism — a brief write-freeze window or a replay log — while a vendor without it tends to assert "no data loss" without describing how that's actually guaranteed.
+
+### (Scenario: A CTO is reviewing a proposal where persistent volume migration is mentioned in one sentence with no detail on the mechanism) Why does it matter which persistent volume migration mechanism a vendor plans to use?
+
+Because the three common approaches — snapshot-and-restore, live replication, or application-level dual-write — carry very different downtime and consistency tradeoffs, and the right choice depends on your specific data store and tolerance for a brief write-freeze. A vendor who hasn't named which mechanism applies to which of your systems likely hasn't done the workload-specific planning this phase actually requires.
+
+### (Scenario: A service comes up after migration reading from what appears to be an empty or wrong persistent volume) What does it mean if a migrated stateful service starts up connected to the wrong data after cutover?
+
+This is a classic symptom of a StatefulSet ordinal or storage-class mapping error, where the persistent volume claim didn't bind correctly to the same logical identity it had before migration. It's specifically why a vendor's runbook should describe how they verify this mapping as an explicit, tested step, not an assumption that Kubernetes handles it automatically.
+
+### (Scenario: A vendor's rollback plan describes reverting a stateless deployment in detail but says almost nothing about reverting a database migration mid-cutover) Is a general rollback plan sufficient, or does the stateful tier need its own separate rollback procedure?
+
+The stateful tier needs its own separately tested rollback procedure. Rolling back a stateless service is comparatively simple since it holds no persistent state, but reverting a database or message queue mid-cutover risks data loss or corruption if the procedure hasn't been specifically designed and tested for that tier.
 
 <script type="application/ld+json">
 {
@@ -111,6 +138,26 @@ It should include structured training sessions for your internal engineers, oper
       "@type": "Question",
       "name": "What does a good post-migration knowledge transfer process look like?",
       "acceptedAnswer": { "@type": "Answer", "text": "It should include structured training for your internal engineers, operational runbooks specific to your cluster configuration, and a defined post-migration support window, rather than a single wrap-up call." }
+    },
+    {
+      "@type": "Question",
+      "name": "What specific question exposes whether a vendor has real experience migrating stateful workloads, not just stateless ones?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ask how they handle writes landing in the old system between the last data sync and traffic cutover. A vendor with real experience names a specific mechanism, like a write-freeze window or replay log, rather than just asserting no data loss." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does it matter which persistent volume migration mechanism a vendor plans to use?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Snapshot-and-restore, live replication, and application-level dual-write carry different downtime and consistency tradeoffs. A vendor who hasn't named which mechanism applies to which of your systems likely hasn't done workload-specific planning." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does it mean if a migrated stateful service starts up connected to the wrong data after cutover?",
+      "acceptedAnswer": { "@type": "Answer", "text": "This is a classic symptom of a StatefulSet ordinal or storage-class mapping error, where a persistent volume claim didn't bind correctly to its prior logical identity. A vendor's runbook should describe verifying this mapping as an explicit, tested step." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a general rollback plan sufficient, or does the stateful tier need its own separate rollback procedure?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The stateful tier needs its own separately tested rollback procedure. Reverting a database or message queue mid-cutover risks data loss or corruption if the procedure hasn't been specifically designed and tested for that tier." }
     }
   ]
 }

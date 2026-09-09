@@ -93,7 +93,7 @@ U hoeft niet direct complexe microservices, Kubernetes of database-sharding te b
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in het schalen van enterprise software) simuleren we realistische enterprise-datavolumes, saneren we N+1 queries en optimaliseren we PostgreSQL-architecturen tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw performance-knelpunten met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw applicatie vlekkeloos presteert voor uw allergrootste klanten.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Achtendertig Seconden Wachten voor de Best Betalende Klant
 

@@ -53,6 +53,19 @@ Het laatste stuk is waar de prioritaire fixes daadwerkelijk worden geschreven, g
 
 Als u wilt zien hoe dit past in het bredere traject, loopt onze [procesomschrijving](https://launchstudio.eu/nl/#process) door wat er na deze eerste twee dagen gebeurt. Voor teams die evalueren of hun eigen codebase dit soort ronde nodig heeft voordat deze live gaat, volgt Manifera's werk in [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/) dezelfde eerst-lezen, dan-oplossen-discipline op grotere schaal.
 
+## Hoe U Uw Eigen Codebase Voorbereidt Vóór de Overdracht
+
+De 'read-only' codebeoordeling die in dit artikel wordt aanbevolen, werkt uitstekend ongeacht of u vooraf voorbereidingen treft — dat is juist de kracht van een onafhankelijke audit. Toch kunnen oprichters die twintig minuten besteden aan een gestructureerde voorbereiding de effectiviteit van de technische evaluatie aanzienlijk verhogen door deze drie stappen te volgen:
+
+**Maak een beknopte inventaris van externe koppelingen.** Schrijf op één A4'tje op welke externe diensten uw applicatie aanroept. Denk aan Stripe voor betalingen, Resend of Postmark voor e-mails, Supabase of Firebase voor de database, en OpenAI of Anthropic voor AI-functionaliteiten. Geef daarbij duidelijk aan welke diensten momenteel in testmodus draaien en welke al gekoppeld zijn aan live productie-accounts.
+
+**Isoleer en label bekende 'workarounds'.** Wees eerlijk over plekken waar u weet dat de code provisorisch in elkaar zit. Heeft u de AI-tool gevraagd om een TypeScript-fout te omzeilen met `// @ts-ignore`, of heeft u een autorisatiecheck tijdelijk uitgezet om een feature werkend te krijgen? Door deze bekende plekken direct aan te wijzen, verspilt het auditteam geen kostbare tijd aan het opsporen van zaken die u al wist, maar kan men direct focussen op de juiste structurele oplossing.
+
+**Verstrek uitsluitend read-only toegang tot een schone git-branch.** Geef externe beoordelaars nooit direct administratieve rechten op uw live productie-infrastructuur voor een initiële code-evaluatie. Een uitnodiging als 'viewer' of 'collaborator' op een GitHub-repository volstaat volledig. Zorg ervoor dat de `main`-branch representatief is voor wat er momenteel live draait of klaargezet is voor lancering.
+
+Door deze voorbereiding transformeert de overdracht van een diffuse zoektocht naar een gerichte, professionele inspectie, waarbij u maximale technische waarde haalt uit elk uur aan analyse.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: MeetGoeds eerste weekendbeoordeling
@@ -99,11 +112,46 @@ Projectbeoordelingen voor Europese oprichters lopen doorgaans via LaunchStudio's
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What happens if the founder doesn't know what their own code does?", "acceptedAnswer": { "@type": "Answer", "text": "That's the default, not the exception. The 48-hour review is built for founders who built with Cursor, Lovable, Bolt, or v0 and have never audited a codebase themselves." } },
-    { "@type": "Question", "name": "Does the first 48 hours involve any changes to the frontend?", "acceptedAnswer": { "@type": "Answer", "text": "No, the review and triage stages are entirely backend, infrastructure, and security-focused, and LaunchStudio's engineers work around the existing frontend rather than replacing it." } },
-    { "@type": "Question", "name": "How does LaunchStudio decide what to fix first?", "acceptedAnswer": { "@type": "Answer", "text": "Findings are bucketed into immediate risk, pre-launch priority, and long-term cleanup, with immediate risk items addressed before anything else on the roadmap." } },
-    { "@type": "Question", "name": "Is this process different for a Lovable or Bolt project versus a Cursor project?", "acceptedAnswer": { "@type": "Answer", "text": "The tools leave different fingerprints, but the read-first, triage-second structure stays consistent across all of them." } },
-    { "@type": "Question", "name": "Where is the team doing this review based?", "acceptedAnswer": { "@type": "Answer", "text": "Project reviews for European founders typically run through LaunchStudio's Amsterdam team, working out of Herengracht 420, though the underlying engineering group spans multiple offices." } }
+    {
+      "@type": "Question",
+      "name": "Wat gebeurt er als de oprichter niet weet wat zijn eigen code doet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dat is de standaard, niet de uitzondering. De 48-uursbeoordeling is gebouwd voor oprichters die hebben gebouwd met Cursor, Lovable, Bolt of v0 en nog nooit zelf een codebase hebben doorgelicht — de read-only ronde bestaat juist zodat niemand zijn eigen code hoeft uit te leggen voordat deze wordt beoordeeld."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn er in de eerste 48 uur wijzigingen aan de frontend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. De beoordelings- en triagefasen zijn volledig gericht op backend, infrastructuur en beveiliging. De technici van LaunchStudio, ondersteund door Manifera's 120+ technici, werken rond uw bestaande frontend in plaats van deze te vervangen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe bepaalt LaunchStudio wat er als eerste wordt opgelost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bevindingen worden ingedeeld in direct risico, prioriteit vóór lancering, en langetermijnopschoning. Items met direct risico — zoals de blootgestelde API-sleutels in Svens project — worden als eerste aangepakt, ongeacht wat er verder op de roadmap staat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit proces anders voor een Lovable- of Bolt-project dan voor een Cursor-project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De tools laten verschillende sporen na — Bolt-projecten hebben bijvoorbeeld andere deployment-eigenaardigheden dan Cursor-projecten — maar de structuur van eerst lezen, dan trieren blijft hetzelfde bij al deze tools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is het team gevestigd dat deze beoordeling uitvoert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Projectbeoordelingen voor Europese oprichters lopen doorgaans via LaunchStudio's Amsterdamse team, werkend vanuit Herengracht 420, hoewel de onderliggende engineeringgroep meerdere vestigingen omvat."
+      }
+    }
   ]
 }
 </script>

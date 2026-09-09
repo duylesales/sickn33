@@ -77,6 +77,10 @@ Manifera builds integration layers as platform partners with documented exit pat
 }
 </script>
 
+## Implementation Checklist: Scoring Your Current Integration Backlog
+
+Before your next vendor RFP, run this scoring exercise against your actual backlog rather than deciding in the abstract. List every planned and existing integration, then tag each one against four criteria: is it likely to be extended or modified within 18 months (yes/no); does it touch a system of record — ERP, CRM, core data warehouse — versus a narrow, bounded data flow; does it require unified audit logging for compliance reasons; and does its failure mode require fast, coordinated incident response across multiple integrations simultaneously. Any integration scoring yes on two or more of these criteria belongs on platform-partner infrastructure regardless of your total integration count, because the governance and continuity costs of a point solution outweigh the upfront savings even at low volume. Integrations scoring yes on zero or one criterion are legitimate point-solution candidates. Run this exercise honestly and you'll frequently find that even a company with only three total integrations already has one that should sit on shared infrastructure — the decision isn't purely a function of count, it's a function of what each integration actually touches.
+
 ## Frequently Asked Questions
 
 ### At what number of integrations does a platform partner become cheaper than point solutions?
@@ -93,6 +97,18 @@ Ask explicitly what a full migration away from their platform would cost, how lo
 
 ### Why do point-solution integrations often fail during incidents?
 Because each integration was likely built with different logging formats, alerting thresholds, and retry logic by a different vendor, an on-call engineer has to first identify which vendor's conventions apply before diagnosing the actual problem, which extends incident resolution time significantly compared to a unified observability layer.
+
+### (Scenario: we already have three point-solution integrations from three different vendors and are now evaluating a platform partner for future work) Can a platform partner absorb our existing point-solution integrations, or do those stay isolated forever?
+A competent platform partner can migrate existing point-solution integrations onto shared infrastructure incrementally, typically one at a time during a scheduled maintenance window, rather than requiring a big-bang cutover — ask any platform partner candidate for a migration plan and timeline for absorbing your existing three integrations as part of the proposal, not as a separate future negotiation.
+
+### (Scenario: our CTO is worried a single platform partner failing as a business would leave us without support for our entire integration layer) How do we protect against platform partner business continuity risk, not just technical lock-in?
+Ask for the vendor's own business continuity plan, including what happens to your documentation and access if they're acquired or shut down, and negotiate an escrow arrangement for critical configuration and code if the relationship is large enough to justify it. This is a real risk distinct from technical lock-in and worth pricing separately during vendor selection, not assumed away because the vendor seems financially stable today.
+
+### (Scenario: two of our three current integrations are near-identical Salesforce connectors built by different point-solution vendors) Is it worth consolidating redundant point-solution work onto shared infrastructure even before adding new integrations?
+Yes — near-identical integrations built separately by different vendors are the clearest signal that you're already paying the point-solution cost curve without the benefit of even a single-vendor discount, and consolidating them onto shared infrastructure now, before adding a fourth or fifth integration, captures savings immediately rather than waiting for the "right" threshold.
+
+### (Scenario: we're a Series B startup with two integrations today but a roadmap that shows six by next year) Should we choose based on our current integration count or our projected count?
+Choose based on the projected count if the roadmap is reasonably firm, since building the first two integrations as point solutions when you already know four more are coming means re-paying the same infrastructure cost twice — once now, and again when you eventually consolidate onto a platform. A platform partner engaged from integration three onward, anticipating the roadmap, avoids that redundant spend entirely.
 
 <script type="application/ld+json">
 {
@@ -137,6 +153,38 @@ Because each integration was likely built with different logging formats, alerti
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Because each integration was likely built with different logging formats, alerting thresholds, and retry logic by a different vendor, an on-call engineer has to first identify which vendor's conventions apply before diagnosing the actual problem, which extends incident resolution time significantly compared to a unified observability layer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: we already have three point-solution integrations from three different vendors and are now evaluating a platform partner for future work) Can a platform partner absorb our existing point-solution integrations, or do those stay isolated forever?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A competent platform partner can migrate existing point-solution integrations onto shared infrastructure incrementally, one at a time during scheduled maintenance windows, rather than requiring a big-bang cutover. Ask any candidate for a migration plan and timeline as part of the proposal, not a separate future negotiation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: our CTO is worried a single platform partner failing as a business would leave us without support for our entire integration layer) How do we protect against platform partner business continuity risk, not just technical lock-in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask for the vendor's business continuity plan, including what happens to your documentation and access if they're acquired or shut down, and negotiate an escrow arrangement for critical configuration and code if the relationship justifies it. This is distinct from technical lock-in and worth pricing separately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: two of our three current integrations are near-identical Salesforce connectors built by different point-solution vendors) Is it worth consolidating redundant point-solution work onto shared infrastructure even before adding new integrations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — near-identical integrations built separately by different vendors signal you're already paying the point-solution cost curve without even a single-vendor discount. Consolidating them onto shared infrastructure now captures savings immediately rather than waiting for a threshold."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: we're a Series B startup with two integrations today but a roadmap that shows six by next year) Should we choose based on our current integration count or our projected count?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose based on the projected count if the roadmap is reasonably firm, since building the first two as point solutions when four more are known to be coming means re-paying the same infrastructure cost twice. A platform partner engaged from integration three onward avoids that redundant spend."
       }
     }
   ]

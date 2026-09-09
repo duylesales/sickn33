@@ -59,8 +59,7 @@ Voor een team van twee oprichters specifiek weegt dit zwaarder dan voor een grot
 
 [Vertel ons hoe uw team het technische werk nu verdeelt](https://launchstudio.eu/nl/#contact) — de meeste teams van twee oprichters vinden de echte kloof in één enkel scoping-gesprek.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Een Coworking-Marktplaats Waar Beide Oprichters Dezelfde Taak Deden
 
 Marijke Dekker en Tobias Reyn richtten samen Coopr op, een marktplaats die freelancers en kleine teams koppelt aan onderbenutte coworking-bureaus en vergaderruimtes in Nederlandse regiosteden, en bouwden het platform in Lovable vanuit een gedeeld appartement in Oss. Marijke deed sales en host-onboarding; Tobias, de zelfbenoemde "technische" medeoprichter, bezat product en had genoeg geleerd tijdens het bouwen van Coopr om zichzelf de engineeringkant van het partnerschap te noemen.

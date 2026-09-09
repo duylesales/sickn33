@@ -91,6 +91,10 @@ Request our current security documentation and a direct conversation with our co
 }
 </script>
 
+## Building a Weighted Scorecard That Doesn't Penalize the "Wrong" Badge
+
+Fix the checklist trap directly by scoring certification maturity rather than certification type. Use a five-point rubric applied identically regardless of which framework a vendor holds: 1 point for holding any current, unexpired certification or report; 1 point for a scope statement that explicitly covers the team and systems handling your project, not just corporate headquarters; 1 point for a report or Statement of Applicability less than 12 months old; 1 point for the vendor providing the full underlying document under NDA within 5 business days of request, rather than only a summary or logo page; and 1 point for a technical security interview where the vendor's engineering lead, not just sales or compliance staff, can speak specifically about SDLC security gates and incident response timelines. A vendor scoring 4-5 on this rubric with only SOC2 is a stronger procurement choice than a vendor scoring 2-3 with ISO 27001, even if your RFP template defaults to listing ISO first. ISO 27001's Annex A lists 93 controls across 4 themes (organizational, people, physical, technological); SOC2's Trust Services Criteria cover 5 categories with security as the only mandatory one. Map whichever framework a vendor holds against the specific risk categories your engagement actually needs covered, rather than defaulting to whichever badge appears first in a template RFP.
+
 ## Frequently Asked Questions
 
 ### Is ISO 27001 or SOC2 more important for a European IT manager to require?
@@ -107,6 +111,18 @@ Request the ISO 27001 Statement of Applicability or the full SOC2 Type II report
 
 ### Does having a security certification guarantee a vendor's code is secure?
 No. Certifications verify organizational processes and controls, not the security of a specific codebase. Pair certification review with a technical interview covering secure coding practices, vulnerability patching timelines, and incident response commitments.
+
+### (Scenario: Your organization's RFP template hardcodes "ISO 27001 required," but the strongest technical vendor in your shortlist only holds SOC2 Type II) How do you handle the mismatch?
+Apply the five-point maturity rubric to the SOC2 vendor and document the score alongside a request to amend the RFP language to "ISO 27001 or SOC2 Type II, evaluated on scope and currency" for this and future procurements. A template requirement written before your team understood the practical overlap between the two frameworks shouldn't eliminate a well-documented, high-scoring vendor by default.
+
+### (Scenario: A vendor holds a valid ISO 27001 certificate, but the Statement of Applicability's scope covers only their headquarters, not the offshore delivery team who would work on your project) What's the practical risk?
+The certification tells you almost nothing about the team actually touching your codebase and systems, since ISO 27001 certifies specific, named locations and processes rather than the whole company automatically. Request evidence the delivery team follows equivalent documented controls, or ask the vendor for a timeline to formally extend certification scope to include that team.
+
+### (Scenario: You're scoring five vendors with a mix of ISO 27001, SOC2, both, or neither) How do you normalize the comparison fairly?
+Apply the same five-point rubric to every vendor regardless of which framework they hold, and treat "neither certification" not as an automatic disqualifier but as a required deep-dive technical security interview substituting for the certification points, scored on the same specificity standard.
+
+### (Scenario: A vendor's SOC2 Type II report is 14 months old and they're mid-renewal for the next cycle) Should you wait for the new report before proceeding?
+Ask for a bridge letter or interim attestation covering the gap since the last report's end date, and proceed with contract negotiation in parallel rather than blocking entirely, provided the bridge letter confirms no material control changes since the last audit period.
 
 <script type="application/ld+json">
 {
@@ -151,6 +167,38 @@ No. Certifications verify organizational processes and controls, not the securit
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. Certifications verify organizational processes and controls, not the security of a specific codebase. Pair certification review with a technical interview covering secure coding practices, vulnerability patching timelines, and incident response commitments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Your organization's RFP template hardcodes 'ISO 27001 required,' but the strongest technical vendor in your shortlist only holds SOC2 Type II) How do you handle the mismatch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apply the five-point maturity rubric to the SOC2 vendor and document the score alongside a request to amend the RFP language to accept either framework evaluated on scope and currency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor holds a valid ISO 27001 certificate, but the Statement of Applicability's scope covers only their headquarters, not the offshore delivery team) What's the practical risk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The certification tells you almost nothing about the team actually touching your codebase, since ISO 27001 certifies specific named locations rather than the whole company automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: You're scoring five vendors with a mix of ISO 27001, SOC2, both, or neither) How do you normalize the comparison fairly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apply the same five-point rubric to every vendor regardless of framework, treating 'neither certification' as requiring a deep-dive technical interview substituting for certification points."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor's SOC2 Type II report is 14 months old and they're mid-renewal for the next cycle) Should you wait for the new report before proceeding?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask for a bridge letter covering the gap since the last report's end date, and proceed with negotiation in parallel provided it confirms no material control changes."
       }
     }
   ]

@@ -80,6 +80,12 @@ Request a fully-loaded cost comparison tailored to your team's specific roles an
 }
 </script>
 
+## Worked Example: One Senior Engineer, Netherlands, Year One
+
+Put real numbers against the framework. A senior backend engineer hired in the Netherlands at €80,000 gross salary: add employer social contributions at 25% (€20,000), recruiting fees at 22% of first-year salary amortized over an assumed 16-month tenure (€17,600 ÷ 1.33 years ≈ €13,200 annualized), benefits and overhead at 12% (€9,600), and a ramp-time cost equivalent to one month fully-loaded (roughly €10,600 including contributions and overhead). Sum: approximately €133,400 in year one against an €80,000 headline salary — a 1.67x multiplier, squarely inside the 1.4x-1.8x range this model predicts.
+
+Run the same engineer as part of a five-person dedicated offshore team at a blended $4,300/month fully-loaded rate: roughly $258,000/year for the team of five (€237,000), or €47,400 per engineer — already inclusive of the vendor's own recruiting, benefits, and management overhead, with no separate attrition reserve needed since backfill is contractually the vendor's responsibility. Set side by side, the €133,400 in-house figure and the €47,400 per-head offshore figure are the numbers a CFO should actually be comparing, not €80,000 against a headline monthly rate — the gap the naive comparison misses is nearly €86,000 per engineer per year.
+
 ## Frequently Asked Questions
 
 ### What is the real total cost of an in-house software engineer versus gross salary?
@@ -96,6 +102,18 @@ Typically yes — a dedicated team's rate usually already folds in the vendor's 
 
 ### Is in-house hiring ever the right call despite the higher total cost?
 Yes, particularly for roles close to core IP or requiring deep, hard-to-transfer institutional context, where long-term ownership and control outweigh the cost differential. The goal of a complete cost model is an honest comparison, not a predetermined conclusion favoring either option.
+
+### (Scenario: CFO building a board deck comparing five in-house hires against a dedicated offshore team) How do I scale this per-engineer model up to a full team comparison for a board presentation?
+Multiply the fully-loaded per-engineer figure by headcount on both sides rather than presenting a single-engineer example and asking the board to extrapolate, since ramp-time and attrition costs do not scale perfectly linearly once a team is large enough to have overlapping onboarding cohorts. Present the total year-one and steady-state year-two figures separately, since ramp and initial recruiting costs are front-loaded and understate the ongoing steady-state gap if shown only once.
+
+### (Scenario: CFO whose finance system already tracks recruiting fees separately from salary) My finance system already tracks recruiting fees as a separate line — doesn't that mean I've already captured this cost?
+Tracking the fee is not the same as attributing it to the specific hiring decision under evaluation — most finance systems log recruiting spend to a general HR cost center, not amortized against the specific engineer's expected tenure and folded into that role's true annual cost. Pull the actual fee paid for that specific hire and divide it by realistic expected tenure in years to get the annualized figure this model requires.
+
+### (Scenario: CFO asked why the offshore comparison rate differs from a public rate card) Why might the offshore dedicated team rate I'm quoted differ from the blended rate used in this worked example?
+Rates vary by seniority mix, tech stack specialization, and team size — a team weighted toward senior engineers or a niche stack like blockchain or embedded systems will quote above the blended $4,000-$4,500 range used here, while a junior-weighted QA or support team will quote below it. Always request a rate breakdown by seniority level for your specific team composition rather than assuming a single blended figure applies universally.
+
+### (Scenario: CFO wants to model a mid-year hire rather than a full year) How do I adjust this model for a hire who joins mid-year rather than at the start of the fiscal year?
+Prorate the ongoing costs — salary, contributions, benefits — to the actual months employed, but do not prorate the recruiting fee or ramp-time cost, since both are largely fixed regardless of when in the year the hire starts. This means a mid-year hire's effective cost multiplier against their prorated salary will look higher than the full-year 1.4x-1.8x range, since the fixed costs are concentrated into fewer months of output.
 
 <script type="application/ld+json">
 {
@@ -140,6 +158,38 @@ Yes, particularly for roles close to core IP or requiring deep, hard-to-transfer
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, particularly for roles close to core IP or requiring deep, hard-to-transfer institutional context, where long-term ownership and control outweigh the cost differential. The goal of a complete cost model is an honest comparison, not a predetermined conclusion favoring either option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I scale this per-engineer model up to a full team comparison for a board presentation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Multiply the fully-loaded per-engineer figure by headcount on both sides rather than presenting a single-engineer example and asking the board to extrapolate, since ramp-time and attrition costs do not scale perfectly linearly once a team is large enough to have overlapping onboarding cohorts. Present the total year-one and steady-state year-two figures separately, since ramp and initial recruiting costs are front-loaded and understate the ongoing steady-state gap if shown only once."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My finance system already tracks recruiting fees separately from salary — doesn't that mean I've already captured this cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tracking the fee is not the same as attributing it to the specific hiring decision under evaluation — most finance systems log recruiting spend to a general HR cost center, not amortized against the specific engineer's expected tenure and folded into that role's true annual cost. Pull the actual fee paid for that specific hire and divide it by realistic expected tenure in years to get the annualized figure this model requires."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why might the offshore dedicated team rate I'm quoted differ from the blended rate used in this worked example?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rates vary by seniority mix, tech stack specialization, and team size — a team weighted toward senior engineers or a niche stack like blockchain or embedded systems will quote above the blended $4,000-$4,500 range used here, while a junior-weighted QA or support team will quote below it. Always request a rate breakdown by seniority level for your specific team composition rather than assuming a single blended figure applies universally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I adjust this model for a hire who joins mid-year rather than at the start of the fiscal year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prorate the ongoing costs — salary, contributions, benefits — to the actual months employed, but do not prorate the recruiting fee or ramp-time cost, since both are largely fixed regardless of when in the year the hire starts. This means a mid-year hire's effective cost multiplier against their prorated salary will look higher than the full-year 1.4x-1.8x range, since the fixed costs are concentrated into fewer months of output."
       }
     }
   ]

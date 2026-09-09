@@ -69,11 +69,49 @@ Wanneer investeerders serieus geïnteresseerd raken, kijken ze onder de motorkap
 - **Kostenstructuur bij schalen**: Blijven de AI API-kosten beheersbaar als het aantal klanten vertienvoudigt?
 - **Eigendom van code**: Is de code uw eigendom en overdraagbaar, of zit u vast aan een no-code platform?
 
-## Belangrijkste inzichten
+### Belangrijkste inzichten
 
 - **Demo's overtuigen niet meer**: AI maakt mooie prototypes goedkoop; investeerders eisen bewijs van echte betalende klanten en retentie.
 - **Lanceer vóór het ophalen van geld**: Een paar weken live data (zelfs van 10-20 klanten) verandert de dynamiek in het investeerdersgesprek radicaal.
 - **Bereid technische due diligence voor**: Zorg voor duidelijke antwoorden over data-isolatie, AI API-kosten bij schalen en code-eigendom.
+
+### Wat Technische Investeerders Inspecteren Tijdens de Due Diligence
+
+Durfkapitalisten en ervaren angel investors prikken tegenwoordig binnen enkele minuten door een oppervlakkige pitch deck heen. Ze eisen toegang tot een live werkende applicatie en inspecteren vier cruciale elementen:
+- **Echte Transacties & Betalingsintegriteit:** Kunnen gebruikers zelfstandig een abonnement afsluiten en functioneert de Stripe-integratie foutloos?
+- **Data-Isolatie op Databaseniveau:** Is er sprake van echte Row Level Security, of kunnen gebruikers elkaars data inzien door URL-parameters aan te passen?
+- **Schaalbaarheid van Database-Connecties:** Is er connection pooling (PgBouncer) ingericht om te voorkomen dat de database bezwijkt bij 100 gelijktijdige bezoekers?
+- **Georganiseerde Git Repository & CI/CD:** Is de codebase gestructureerd, voorzien van geautomatiseerde tests en vrij van hardgecodeerde geheime sleutels?
+
+### De Vier Technische Bewijslasten Die Investeerders Eisen
+
+Tijdens een seed- of pre-seed ronde prikken venture capitalists direct door screenshots heen. Ze eisen:
+1. **Bewezen Betalingsconversie:** Het aantonen van een werkende checkout met echte transacties en geverifieerde gebruikersrechten.
+2. **Waterdichte Data-Veiligheid:** Het tonen van een heldere database-architectuur met gehashte wachtwoorden en strikte tenant-scheiding.
+3. **Schaalbaarheid zonder Crashes:** Het bewijs dat de applicatie onder gesimuleerde piekbelasting stabiel blijft functioneren.
+4. **Professioneel Versiebeheer:** Een gestructureerde Git-repository met geautomatiseerde CI/CD-pipelines en zero hardgecodeerde geheimen.
+
+### Technische Geloofwaardigheid: Wat Investeerders Werkelijk Overtuigt
+
+In het huidige investeringsklimaat wint een werkend product het altijd van theoretische beloftes:
+- **Aantoonbare Schaalbaarheid:** Laat zien dat uw database-architectuur en query's zijn getest op honderden gelijktijdige verzoeken zonder prestatieverlies.
+- **Strikte Autorisatie op Rijniveau:** Demonstreer tijdens de live demo dat data van verschillende zakelijke klanten strikt gescheiden blijft op databaseniveau.
+- **Professionele Release Pipelines:** Toon aan dat uw team werkt met gestructureerde Git-branches, automatische tests en staging-omgevingen.
+
+### De Technische Datakamer Checklist voor Investeerders
+
+Tijdens een due diligence proces eisen durfkapitalisten inzage in de volgende documenten en configuraties:
+- **Architectuur- en Datastroomdiagram (PDF):** Een helder visueel schema dat aantoont hoe client-verzoeken via Next.js API-routes, de Supabase database en externe LLM-modellen lopen, inclusief encryptielagen (`TLS 1.3` en `AES-256` at rest).
+- **Penetratietest & OWASP Top 10 Auditrapport:** Het schriftelijke bewijs dat de applicatie vrij is van injectie-aanvallen, ongeautoriseerde object-toegang (IDOR) en cross-site scripting (XSS).
+- **Continuous Integration / Continuous Deployment (CI/CD) Bewijs:** Geautomatiseerde GitHub Actions pipelines met minimaal 80% testdekking op kritieke authenticatie- en facturatieflows.
+- **SLA en Incident Management Protocol:** Gedocumenteerde richtlijnen voor responstijden (RTO onder 2 uur, RPO onder 15 minuten) en proactieve uptime-monitoring.
+
+### Praktijkvoorbeeld van een Technische Datakamer Checklist
+
+Investeerders willen verifieerbare documentatie zien vóór de definitieve investeringsronde:
+- **Netwerk- en Datastroomarchitectuur:** Een gedocumenteerd overzicht van API-gateways, microservices en databases.
+- **Rapportage van Geautomatiseerde Pentests:** Het bewijs dat alle endpoints zijn getoetst op SQL-injecties en autorisatiefouten.
+- **CI/CD Pipeline Status:** Groene testsuites in GitHub Actions met minimaal 80% code-coverage op kernflows.
 
 ## Echt voorbeeld
 

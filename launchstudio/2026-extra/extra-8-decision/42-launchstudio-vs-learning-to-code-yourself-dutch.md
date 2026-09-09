@@ -61,8 +61,7 @@ Een gestructureerd hardeningstraject via een specialist sluit doorgaans een gede
 
 [Vertel ons wat u heeft gebouwd en wat er nog rest](https://launchstudio.eu/nl/#contact) — de scoping call geeft u het echte getal voor uw specifieke gat, geen generieke schatting.
 
-## Real example
-
+## Echt voorbeeld
 ### Een Technische Solo-Oprichter in de Praktijk: De Rekensom Maken Midden In Een Sprint
 
 Lena Verschoor, een backend-capabele solo-oprichter in Vlissingen, bouwde CodePad Analytics, een tool voor codereviewmetrics voor engineeringteams, met een mix van Cursor-gegenereerde scaffolding en haar eigen handgeschreven logica. Lena had correcte webhook-handtekeningverificatie voor haar Stripe-integratie kunnen leren — ze had soortgelijk werk eerder gedaan bij een vorige baan — maar schatte dat het een geconcentreerde week zou kosten die ze niet had, ingeklemd tussen een productlancering en een wervingsronde voor haar eerste contractant.

@@ -83,6 +83,12 @@ Request references from clients at multiple engagement lengths, including relati
 }
 </script>
 
+## Running the Calls: Logistics That Determine Whether You Get Honest Answers
+
+The mechanics of the call itself change what you hear. Schedule 30-45 minutes minimum — references rushed into a 15-minute slot default to safe, generic answers because there isn't time to tell a real story. Call without the vendor's account manager present or listening in; a reference who knows the vendor can hear the call will soften answers even unintentionally, and a genuinely confident vendor should have no objection to an unaccompanied call. Request at least three references spanning different tenure lengths — one recent (under six months), one mid-tenure (12-18 months), and one long-tenured (24+ months) — since each stage of a relationship surfaces different failure modes, and a vendor who can only produce recent references is telling you something on its own.
+
+Take notes verbatim during the call rather than summarizing afterward from memory; specific phrasing ("they told us two weeks before the deadline slipped" versus "they told us at the last minute") carries signal that a paraphrased summary loses. Score each reference across the same categories every time — delivery track record, team consistency, communication under pressure, and what they'd change — so calls with three different vendors' references produce genuinely comparable data rather than three separate impressions you're trying to weigh against each other from memory alone.
+
 ## Frequently Asked Questions
 
 ### What is the single most revealing reference call question?
@@ -99,6 +105,18 @@ Yes. Some turnover is normal over a multi-month engagement; the differentiator i
 
 ### What should I do with the answers I get from a reference call?
 Turn specific concerns or wishes the reference mentions into contractual terms you negotiate proactively into your own agreement — for example, a defined escalation SLA or a documented team-transition protocol — rather than treating the call as only a go or no-go signal.
+
+### (Scenario: A vendor insists their account manager join the reference call "for context") Should I agree to a vendor's account manager sitting in on a reference call?
+No, decline if possible. Even a well-intentioned account manager's presence changes how candidly a reference speaks, and a vendor confident in the relationship has no real reason to insist on attending an unaccompanied call.
+
+### (Scenario: An IT Manager can only get one reference from a vendor and it's a very recent client) How much weight should I give a reference call with a client only a few months into the engagement?
+Weight it lower than a longer-tenured reference, since a recent client is often still in the honeymoon period before real friction points — turnover, scope changes, production incidents — have had time to surface. Treat a single recent-only reference as a partial signal, not a substitute for tenure diversity.
+
+### (Scenario: Two references from the same vendor give contradictory answers about team turnover) What should I do if two references from the same vendor give conflicting answers?
+Dig into the specifics of each engagement rather than averaging the two impressions — ask both references directly what team size and project complexity they had, since turnover and communication quality often vary by project type within the same vendor rather than being a fixed company-wide trait.
+
+### (Scenario: A reference is willing to talk but visibly hesitant when asked about communication during a slipped deadline) How should I interpret a reference who answers questions but seems uncomfortable or hesitant?
+Treat visible hesitation on a specific question as more informative than the words used to answer it — a reference choosing careful, guarded language around a particular topic, especially communication under pressure, is often signaling a real but diplomatically unstated concern.
 
 <script type="application/ld+json">
 {
@@ -143,6 +161,38 @@ Turn specific concerns or wishes the reference mentions into contractual terms y
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Turn specific concerns or wishes the reference mentions into contractual terms you negotiate proactively into your own agreement — for example, a defined escalation SLA or a documented team-transition protocol — rather than treating the call as only a go or no-go signal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor insists their account manager join the reference call \"for context\") Should I agree to a vendor's account manager sitting in on a reference call?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, decline if possible. Even a well-intentioned account manager's presence changes how candidly a reference speaks, and a vendor confident in the relationship has no real reason to insist on attending an unaccompanied call."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: An IT Manager can only get one reference from a vendor and it's a very recent client) How much weight should I give a reference call with a client only a few months into the engagement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weight it lower than a longer-tenured reference, since a recent client is often still in the honeymoon period before real friction points — turnover, scope changes, production incidents — have had time to surface. Treat a single recent-only reference as a partial signal, not a substitute for tenure diversity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Two references from the same vendor give contradictory answers about team turnover) What should I do if two references from the same vendor give conflicting answers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dig into the specifics of each engagement rather than averaging the two impressions — ask both references directly what team size and project complexity they had, since turnover and communication quality often vary by project type within the same vendor rather than being a fixed company-wide trait."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A reference is willing to talk but visibly hesitant when asked about communication during a slipped deadline) How should I interpret a reference who answers questions but seems uncomfortable or hesitant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat visible hesitation on a specific question as more informative than the words used to answer it — a reference choosing careful, guarded language around a particular topic, especially communication under pressure, is often signaling a real but diplomatically unstated concern."
       }
     }
   ]

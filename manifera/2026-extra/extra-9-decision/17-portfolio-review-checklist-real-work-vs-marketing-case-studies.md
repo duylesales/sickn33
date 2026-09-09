@@ -76,6 +76,12 @@ Request detailed project breakdowns, including team composition and timeline spe
 }
 </script>
 
+## Independent Verification: What You Can Check Without Asking the Vendor Anything
+
+Four checks require no cooperation from the vendor at all, and they're worth running before your finalist call rather than after. Search LinkedIn for the named client company and filter by people who worked there during the stated project window — if a case study claims a six-month platform rebuild, actual employees from that period should reference the initiative or the product changes it produced, even in passing. Check the client company's own public changelog, app store release notes, or press coverage for a date range matching the case study's stated timeline; a genuine project usually leaves some independent trace outside the vendor's own marketing page.
+
+Run the vendor's own case study URL through the Wayback Machine to see how the claimed outcome metrics have changed over time — a "40% engagement lift" that was "25%" in a version of the page from a year ago is worth a direct question. And check whether the vendor's team members who claim credit for the project on LinkedIn have profiles consistent with the seniority and role the case study implies; a "led the architecture" claim from someone whose LinkedIn shows a junior title during that exact period is a specific, checkable discrepancy, not a vague suspicion. None of these four checks takes more than twenty minutes combined, and running them before a finalist call means you walk in with real, specific follow-up questions instead of generic skepticism.
+
 ## Frequently Asked Questions
 
 ### How can I tell if a vendor's case study reflects real ownership?
@@ -92,6 +98,18 @@ Review at least two or three of a vendor's most prominently featured case studie
 
 ### What technical details should a strong case study include beyond outcomes?
 Look for specific architecture decisions and the reasoning behind them, a concrete description of the testing and QA approach, and post-launch metrics tracked over a meaningful period rather than a single number captured at peak performance shortly after launch.
+
+### (Scenario: A Head of Product wants to verify a case study's claimed metrics without contacting the vendor first) How can I independently verify a vendor's case study before the finalist call?
+Cross-check the client company's public changelog, app store notes, or press coverage against the case study's stated timeline, and search LinkedIn for people who worked there during that window — a genuine project usually leaves some independent trace outside the vendor's own marketing page.
+
+### (Scenario: A case study's outcome numbers look different on an old cached version of the vendor's website) What does it mean if a case study's claimed metrics have changed over time on the vendor's own site?
+Treat it as worth a direct question rather than an automatic disqualifier — check the page's history through a web archive tool, and if the outcome figure has grown noticeably over time with no new project phase to explain it, ask the vendor directly how the number was recalculated.
+
+### (Scenario: A team member claims to have "led the architecture" on a featured case study but their public profile shows a junior title from that period) How should I handle a discrepancy between a case study's claimed role and a team member's actual seniority at the time?
+Raise it directly and specifically rather than dismissing the vendor outright — ask them to clarify the team structure on that project. A vendor with a legitimate explanation (a title change, a lead role distinct from seniority level) will answer plainly; one who deflects is confirming the concern.
+
+### (Scenario: A Head of Product is choosing which two or three case studies to scrutinize out of a dozen on a vendor's site) Which case studies should I prioritize reviewing when a vendor's portfolio has many options?
+Prioritize the ones closest to your own product's complexity and domain, not simply the most prominently featured, since a flagship case study is often the vendor's single best example rather than a representative sample of typical delivery quality.
 
 <script type="application/ld+json">
 {
@@ -136,6 +154,38 @@ Look for specific architecture decisions and the reasoning behind them, a concre
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Look for specific architecture decisions and the reasoning behind them, a concrete description of the testing and QA approach, and post-launch metrics tracked over a meaningful period rather than a single number captured at peak performance shortly after launch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A Head of Product wants to verify a case study's claimed metrics without contacting the vendor first) How can I independently verify a vendor's case study before the finalist call?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cross-check the client company's public changelog, app store notes, or press coverage against the case study's stated timeline, and search LinkedIn for people who worked there during that window — a genuine project usually leaves some independent trace outside the vendor's own marketing page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A case study's outcome numbers look different on an old cached version of the vendor's website) What does it mean if a case study's claimed metrics have changed over time on the vendor's own site?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat it as worth a direct question rather than an automatic disqualifier — check the page's history through a web archive tool, and if the outcome figure has grown noticeably over time with no new project phase to explain it, ask the vendor directly how the number was recalculated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A team member claims to have \"led the architecture\" on a featured case study but their public profile shows a junior title from that period) How should I handle a discrepancy between a case study's claimed role and a team member's actual seniority at the time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Raise it directly and specifically rather than dismissing the vendor outright — ask them to clarify the team structure on that project. A vendor with a legitimate explanation (a title change, a lead role distinct from seniority level) will answer plainly; one who deflects is confirming the concern."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A Head of Product is choosing which two or three case studies to scrutinize out of a dozen on a vendor's site) Which case studies should I prioritize reviewing when a vendor's portfolio has many options?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prioritize the ones closest to your own product's complexity and domain, not simply the most prominently featured, since a flagship case study is often the vendor's single best example rather than a representative sample of typical delivery quality."
       }
     }
   ]

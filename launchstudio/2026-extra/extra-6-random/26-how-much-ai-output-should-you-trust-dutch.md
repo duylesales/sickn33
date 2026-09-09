@@ -39,6 +39,19 @@ Vraag uzelf, voordat u iets uitrolt dat een ai code tool heeft geproduceerd: raa
 
 LaunchStudio bestaat grotendeels vanwege categorie twee en categorie drie — de categorieën waarin een ervaren tweede paar ogen ziet wat de eigen tests van een oprichter niet vinden. Onze engineers, uit het team van meer dan 120 personen van Manifera gevestigd in Ho Chi Minhstad, beoordelen precies deze categorieën door AI gegenereerde logica als onderdeel van elk productieverhardingstraject. Als u een technische solo-oprichter bent die niet zeker weet welke van uw eigen functies in de risicovolle categorieën vallen, [bereken dan wat een beoordeling zou kosten](https://launchstudio.eu/nl/#calculator) voordat u erachter komt op de dure manier. Het team [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera past dezelfde triagediscipline toe op zakelijke codebases, alleen op oprichtervriendelijke schaal en prijsstelling.
 
+## Uw Eigen Ervaringsbasis Opbouwen: Hoe Vertrouwenskalibratie Moet Evolueren
+
+De driedeling van codewijzigingen is een praktisch startpunt, geen statische regel die u tot in de eeuwigheid ongewijzigd toepast. Hoeveel toezicht elke categorie voor u specifiek vereist, moet organisch verschuiven naarmate u een gedocumenteerde staat van dienst opbouwt met uw AI-tooling en uw eigen codebasis. Zo kalibreert u dit vertrouwen op een verantwoorde manier:
+
+**Houd een foutenlogboek bij per categorie.** Noteer gedurende een maand bij elke ontdekte bug kort in welke categorie de code viel: was het een simpele tekstwijziging, een nieuw geïsoleerd scherm, een gedeelde databasequery of een autorisatiefunctie? U zult al snel zien dat 90% van de productieverstoringen afkomstig is uit categorieën drie en vier, terwijl categorieën één en twee zelden tot ernstige incidenten leiden.
+
+**Versoepel het toezicht uitsluitend op basis van empirische data.** Als blijkt dat uw AI-tool bij het genereren van statische presentatiecomponenten (categorie één) in vijftig opeenvolgende gevallen geen enkele functionele regressie veroorzaakte, kunt u de reviewtijd voor die componenten gerust terugbrengen tot een vluchtige visuele blik. Blijkt echter dat de tool bij wijzigingen in database-relaties (categorie drie) stelselmatig foreign keys 'vergeet', dan weet u dat dáár uw permanente focus moet liggen.
+
+**Herijk uw vertrouwen bij elke modelupdate.** Wanneer uw AI-leverancier overstapt naar een nieuw onderliggend taalmodel (bijvoorbeeld van GPT-4o naar Claude 3.5 Sonnet of een nieuwere generatie), reset uw vertrouwenskalibratie dan tijdelijk. Nieuwe modellen lossen oude blinde vlekken op, maar introduceren vaak subtiele nieuwe gewoontes in codestijl en aannames over afhankelijkheden.
+
+Door vertrouwen te benaderen als een dynamisch meetbaar proces in plaats van een blind geloof of permanente paranoia, optimaliseert u uw ontwikkelsnelheid zonder ooit concessies te doen aan de veiligheid van uw productieomgeving.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de stille afrondingsfout van Ruben Achterberg
@@ -85,11 +98,46 @@ Deels — bepalen of een functie geld of toegangscontrole raakt, vereist geen di
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Which parts of AI-generated code are safest to trust as-is?", "acceptedAnswer": { "@type": "Answer", "text": "Boilerplate and scaffolding — routing, component structure, form validation — since patterns are well-established and errors are visually obvious." } },
-    { "@type": "Question", "name": "Why is business logic riskier than it looks?", "acceptedAnswer": { "@type": "Answer", "text": "Incorrect business logic still runs without errors and produces plausible results, so nothing signals it's wrong until someone checks closely." } },
-    { "@type": "Question", "name": "Is the 45% vulnerability statistic about all AI-generated code or specific categories?", "acceptedAnswer": { "@type": "Answer", "text": "It reflects AI-generated code broadly, but risk concentrates most in security and access-control logic." } },
-    { "@type": "Question", "name": "How does Manifera's team approach reviewing AI-generated logic?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineers, based partly out of Ho Chi Minh City, treat boilerplate lightly and review business logic plus security boundaries independently." } },
-    { "@type": "Question", "name": "Can a founder do this triage themselves without technical help?", "acceptedAnswer": { "@type": "Answer", "text": "Partially — spotting risk categories is doable alone, but verifying the logic itself usually benefits from an experienced second reviewer." } }
+    {
+      "@type": "Question",
+      "name": "Welke delen van door AI gegenereerde code zijn het veiligst om zonder meer te vertrouwen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Boilerplate en scaffolding — routing, componentstructuur, standaard formuliervalidatie — aangezien deze patronen goed gevestigd zijn en fouten meestal visueel duidelijk zijn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom is bedrijfslogica riskanter dan het lijkt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat onjuiste bedrijfslogica, zoals een verkeerd berekende vergoeding, nog steeds zonder fouten draait en een plausibel resultaat oplevert. Niets wijst erop dat het fout is, wat precies de reden is dat het weken onopgemerkt blijft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gaat de statistiek van 45% kwetsbaarheden over alle door AI gegenereerde code of specifieke categorieën?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het weerspiegelt door AI gegenereerde code in het algemeen, maar het risico concentreert zich het meest in beveiligings- en toegangscontrolelogica, wat precies de reden is waarom die categorie de strengste onafhankelijke beoordeling verdient."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe benadert het team van Manifera het beoordelen van door AI gegenereerde logica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De engineers van Manifera, deels gevestigd in Ho Chi Minhstad, passen dezelfde triage toe als in dit artikel — boilerplate licht behandelen en bedrijfslogica plus beveiligingsgrenzen met volledige onafhankelijke verificatie beoordelen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een oprichter deze triage zelf doen zonder technische hulp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Deels — bepalen of een functie geld of toegangscontrole raakt, vereist geen diepe technische vaardigheid, maar het correct verifiëren van de daadwerkelijke logica heeft doorgaans baat bij een ervaren tweede beoordelaar."
+      }
+    }
   ]
 }
 </script>

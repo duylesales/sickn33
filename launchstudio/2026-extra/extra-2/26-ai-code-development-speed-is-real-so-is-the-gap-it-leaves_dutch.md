@@ -59,6 +59,18 @@ Manifera's afhankelijkheidsaudits worden uitgevoerd door het engineeringteam in 
 
 [Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
+## Hoe U een Kwetsbaarhedenrapport van Afhankelijkheden Leest Zonder Beveiligingsachtergrond
+
+De meeste moderne hosting- en codeplatforms genereren tegenwoordig automatisch een rapport over kwetsbaarheden in afhankelijkheden. Het rapport zelf kan echter intimiderend zijn — tientallen gemarkeerde items, onbekende pakketnamen en ernstlabels die zich niet direct vertalen naar "moet ik me hier zorgen over maken". Een oprichter zonder achtergrond in cybersecurity kan een dergelijk rapport toch effectief prioriteren met behulp van drie praktische vragen.
+
+**Doorloop elk gemarkeerd item met deze drie vragen:**
+
+- **Is de ernstclassificatie kritiek of hoog, of is deze laag of matig?** De meeste rapportagetools gebruiken een gestandaardiseerde schaal (zoals CVSS) — items met een kritieke of hoge ernst verdienen onmiddellijke aandacht, terwijl lage en matige items redelijkerwijs kunnen worden ingepland voor een periodieke update-ronde in plaats van een spoedinterventie.
+- **Is het kwetsbare codepad daadwerkelijk bereikbaar binnen de manier waarop uw app dat pakket gebruikt?** Een softwarebibliotheek kan een gedocumenteerde kwetsbaarheid hebben in een specifieke functie die uw app in werkelijkheid nooit aanroept. In dat geval is het praktische risico aanzienlijk lager dan het ernstlabel suggereert — al vereist de bevestiging hiervan het lezen van de kwetsbaarheidsbeschrijving, en niet alleen de headline-score.
+- **Is er al een gepatchte versie beschikbaar, of vereist de oplossing een grotere migratie?** Veel kwetsbaarheden worden opgelost met een eenvoudige routineversieverhoging zonder dat er andere codewijzigingen nodig zijn. Een kleiner aantal vereist aanpassing aan een 'breaking change' in de gepatchte versie, en dat is waar de daadwerkelijke technische tijd doorgaans in gaat zitten.
+
+Een oprichter die zelfs alleen al de kritieke en hoge ernst-items structureel doorloopt aan de hand van deze drie vragen, sluit het overgrote deel van het praktische risico af zonder zelf een beveiligingsspecialist te hoeven worden. De overblijvende, meer ambigue gevallen — waar de bereikbaarheid van de code of de migratiecomplexiteit niet direct duidelijk is uit het rapport — zijn precies waar een professionele technische beoordeling de meeste waarde toevoegt, aangezien een verkeerde inschatting kan leiden tot verspilde uren aan een non-issue of een ernstig risico dat ongemerkt open blijft staan.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De bibliotheek die niemand had bijgewerkt sinds de lancering
@@ -105,50 +117,42 @@ Bij voorkeur op een terugkerende maandelijkse of kwartaalbasis als een routineuz
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Scan dependency là công việc tự động hay cần chuyên gia đánh giá?",
+      "name": "Zou een DevOps-ingenieur het scannen van afhankelijkheden beschouwen als een routineuze taak of een taak die oordeel vereist?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cả hai — công cụ quét tự động tìm được lỗi công khai, nhưng cần chuyên gia đánh giá mức độ ảnh hưởng thực tế đến app."
+        "text": "Beide – geautomatiseerde tools kunnen bekende kwetsbaarheden betrouwbaar markeren, maar er is nog steeds oordeel nodig om te prioriteren welke gemarkeerde problemen daadwerkelijk misbruikbaar zijn in uw specifieke context."
       }
     },
     {
       "@type": "Question",
-      "name": "Rủi ro từ dependency cũ có chỉ xảy ra với code do AI viết không?",
+      "name": "Is dit soort kloof uniek voor met AI gegenereerde code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, mọi dự án không được bảo trì đều bị, nhưng AI làm tăng tốc độ kéo thư viện mới vào mà founder không hề hay biết."
+        "text": "Nee, het beïnvloedt elke codebase die niet regelmatig wordt geauditeerd. Het specifieke risico bij AI-ondersteunde ontwikkeling gaat meer over hoe snel nieuwe afhankelijkheden binnengehaald worden zonder dat een oprichter ze bijhoudt."
       }
     },
     {
       "@type": "Question",
-      "name": "Thư viện nổi tiếng và phổ biến có đảm bảo an toàn tuyệt đối không?",
+      "name": "Maakt bredere ervaring met meerdere frameworks uit voor audits van afhankelijkheden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, thư viện càng nổi tiếng càng bị soi kỹ và dễ lộ lỗ hổng ở các phiên bản cũ chưa nâng cấp."
+        "text": "Ja, aangezien patronen van kwetsbaarheden in afhankelijkheden en herstelaanpakken verschillen over de Node.js, Python, en .NET ecosystemen."
       }
     },
     {
       "@type": "Question",
-      "name": "Bao lâu nên thực hiện kiểm tra và nâng cấp dependency một lần?",
+      "name": "Is beveiligingswerk aan afhankelijkheden een eenmalige herstelling of een doorlopend proces?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nên duy trì thói quen kiểm tra định kỳ hàng tháng hoặc hàng quý để cập nhật các bản vá bảo mật mới nhất."
+        "text": "Rechtstreeks doorlopend – kwetsbaarheden in afhankelijkheden worden voortdurend bekendgemaakt tegen pakketten die volkomen veilig waren toen ze voor het eerst geïnstalleerd werden."
       }
     },
     {
       "@type": "Question",
-      "name": "Founder có nên tự chạy scan dependency không?",
+      "name": "Hoe vaak zou een audit van afhankelijkheden daadwerkelijk moeten plaatsvinden voor een actief product?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có thể dùng các công cụ scan tự động có sẵn trên GitHub/Vercel làm lớp bảo vệ đầu tiên, sau đó nhờ tư vấn khi có cảnh báo nghiêm trọng."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Cập nhật thư viện bị lỗi bảo mật có làm gãy tính năng đang chạy không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Có thể nếu bản vá chứa breaking changes, đó là lý do cần test kỹ lưỡng luồng nghiệp vụ sau khi update."
+        "text": "Bij voorkeur op een terugkerende maandelijkse of kwartaalbasis als een routineuze onderhoudscontrole."
       }
     }
   ]

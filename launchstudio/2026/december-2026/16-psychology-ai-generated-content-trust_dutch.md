@@ -80,6 +80,17 @@ Doordat het internet wordt overspoeld met AI-content, hebben gebruikers onbewust
 **Waarom de Oplossing Niet Zit in het Verbergen van AI**  
 Geen van deze mechanismen reageert op het gebruik van AI zelf; ze reageren op de *afwezigheid van specifieke, menselijke details*. Een applicatie die volledig met behulp van AI is gebouwd, maar echte namen, concrete cijfers en een herkenbaar team toont, wekt geen wantrouwen. De oplossing ligt in het toevoegen van verifieerbare specificiteit, niet in het angstvallig verbergen van uw tools.
 
+### Psychologische Vertrouwensmechanismen in de Gebruikersinterface
+
+Het winnen van gebruikersvertrouwen bij AI-gegenereerde output berust op vier beproefde UI/UX-principes:
+1. **Verifieerbare Bronvermelding (Inline Citations):** Toon interactieve voetnoten die direct verwijzen naar de geüploade brondocumenten of embeddings, zodat de gebruiker data zelfstandig kan verifiëren.
+2. **Transparantie over Zekerheidsmarges (Confidence Scoring):** Communiceer visueel wanneer een AI-model minder dan 85% zeker is van een antwoord, en bied een directe knop voor menselijke controle.
+3. **Deterministische Actie-Bevestiging:** Laat de AI nooit zelfstandig onomkeerbare acties uitvoeren (zoals e-mails versturen of database-records wissen) zonder een expliciete bevestigingsmodal voor de gebruiker.
+4. **Audit Trail & Historie:** Bied een overzichtelijk dashboard waarin teamleden exact kunnen terugzien welke prompt tot welke actie heeft geleid.
+
+- **Consistente Toon en Merkintegriteit:** Zorg dat de LLM-systeemprompts strikte stijlafspraken bevatten (zoals formele aanspreekvorm en beknopte zinsconstructies) zodat antwoorden naadloos aansluiten bij uw merkidentiteit.
+- **Gebruikersfeedback per Antwoord:** Voeg duidelijke duim-omhoog/duim-omlaag knoppen toe met een optioneel tekstveld; dit levert directe data op om uw modelprompts wekelijks te finetunen.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Van "dit voelt nep" naar een betrouwbaar lokaal merk

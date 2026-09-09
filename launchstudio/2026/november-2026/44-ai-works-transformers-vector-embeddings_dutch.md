@@ -77,6 +77,13 @@ Product Managers worstelen regelmatig om hun ideeën technisch te vertalen naar 
 2. **Contextbeheer:** Wij ontwerpen slimme chunking- en routeringsalgoritmen die Aandachtsverwatering voorkomen en hallucinaties elimineren.
 3. **Vectordatabase Inrichting:** Wij configureren PostgreSQL met `pgvector` en semantische caching om van ruwe embeddings betrouwbare RAG-functies te maken.
 
+### Geavanceerde Optimalisatie van Vector Embeddings en Transformers
+
+Het efficiënt inrichten van vector-infrastructuur vereist diepgaand begrip van onderliggende wiskundige modellen:
+1. **Hybride Indexering (HNSW & BM25):** We combineren semantische nabijheidsvectoren met trefwoordherkenning voor ongeëvenaarde zoekprecisie.
+2. **Chunking-Strategieën op Maat:** We optimaliseren de segmentatie van uw documenten om contextverlies te voorkomen en tokengebruik te minimaliseren.
+3. **Herordening met Cross-Encoders (Re-ranking):** Door een lichte re-ranker in te zetten vóór modelinferentie verhogen we de accuraatheid van zoekantwoorden aanzienlijk.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De Juridische PM Die Stopte Met De AI de Schuld Te Geven

@@ -85,7 +85,7 @@ Al het overige — geavanceerde reputatiescores, badges, subgroepen, uitgebreide
 
 De oprichters die hun eerste nachtelijke crisis succesvol doorkomen, zijn niet degenen met de mooiste huisregels. Het zijn degenen die binnen anderhalve minuut vanaf hun telefoon adequaat konden ingrijpen en de genomen beslissing de volgende ochtend feilloos konden verantwoorden. [Plan een kennismaking van 15 minuten in](https://launchstudio.eu/nl/#contact) en we brengen samen in kaart wat uw community aankan wanneer die nacht aanbreekt — of lees hoe [het engineeringteam achter LaunchStudio te werk gaat](https://www.manifera.com/services/offshore-software-development/) als u eerst een blik onder de motorkap wilt werpen.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een community-oprichter in actie: het weekend dat vroeg om een noodknop
 

@@ -80,6 +80,18 @@ Onder leiding van het hoofdkantoor aan de Herengracht 420 in Amsterdam implement
 - Tenant-geïsoleerde vector-databases conform AVG Artikel 17.
 - Complete audit-logging van data-opvragingen conform AVG Artikel 30.
 
+### Waarborging van Privacy en Gegevenssoevereiniteit
+
+Het verwerken van persoonsgegevens met AI vereist een actieve verdediging van de privacyrechten van uw gebruikers:
+1. **Client-Side en Gateway-Anonimisering:** Gevoelige persoonsgegevens (zoals BSN-nummers, creditcardgegevens en adressen) worden al vóór verzending naar externe API's gemaskeerd door lokale herkenningsmodellen.
+2. **Verifieerbare Gegevensverwerking Binnen de EU:** We configureren cloud-eindpunten uitsluitend in Europese datacenters en borgen contractueel dat data nooit voor modeltraining wordt gebruikt.
+3. **Ingebouwde AVG-Rechten:** We automatiseren processen voor data-inzage en definitieve verwijdering, inclusief het geautomatiseerd wissen van embeddings en conversatielogs uit vector databases.
+
+### Naleving van Privacy en Gegevensminimalisatie
+
+Bescherm gebruikersdata volgens de hoogste Europese privacynormen:
+1. **Actieve Gegevensminimalisatie:** Bewaar uitsluitend strikt noodzakelijke gegevens voor modelinferentie.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De LegalTech Startup Die Faalde Voor Zijn Eerste Zakelijke Audit

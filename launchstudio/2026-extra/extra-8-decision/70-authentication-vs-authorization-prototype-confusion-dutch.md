@@ -61,8 +61,7 @@ RLS handelt data-niveau-autorisatie af (welke rijen mag deze gebruiker benaderen
 
 [Stuur uw prototype op en vraag ons de autorisatielaag te controleren](https://launchstudio.eu/nl/#contact) — als het antwoord "die is er niet" is, gaat het oplossen ervan sneller en goedkoper dan het datalek dat het voorkomt.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Het Dashboard Dat Ieders Data Toonde
 
 Niels Achterberg, voormalig HR-consultant in Nijmegen, bouwde TeamPulse, een door Lovable aangedreven tool voor medewerkersbetrokkenheidsonderzoeken voor kleine Nederlandse bedrijven. De app had solide authenticatie — medewerkers logden in met bedrijfsspecifieke inloggegevens, ontvingen JWT-tokens, en zagen een gepersonaliseerd dashboard. Het probleem dat Niels pas ontdekte toen een bètatester van een bedrijf de `survey_id`-parameter in de URL veranderde en de onderzoeksresultaten van een ander bedrijf kon zien: authenticatie werkte, autorisatie niet.

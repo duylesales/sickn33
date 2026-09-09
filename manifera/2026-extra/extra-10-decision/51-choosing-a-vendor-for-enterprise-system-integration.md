@@ -72,6 +72,10 @@ The right integration vendor is the one who pushes back on your assumed architec
 
 Manifera pairs Amsterdam-based integration architects who scope the data governance and change management side with a Ho Chi Minh City engineering team experienced in enterprise connectors for SAP, Salesforce, and Microsoft ecosystems — see our [custom software development](https://www.manifera.com/services/custom-software-development/) practice for how we structure integration engagements from discovery through the maintenance tail.
 
+## By The Numbers: Sizing the Integration Decision Correctly
+
+A CIO evaluating vendor bids should anchor the architecture debate in real numbers, not vendor preference. Point-to-point connections between N systems scale at N(N-1)/2 — three systems need 3 connections, six systems need 15, ten systems need 45 — which is why a landscape that looked manageable at four systems becomes unmanageable by the time a merger or acquisition adds three more. Shadow IT inflates the real integration surface by 30-40% over the official systems list in most enterprises, meaning a vendor quoting against your IT department's system inventory alone is quoting against an incomplete map. iPaaS licensing for a mid-market deployment (€40,000-€150,000 annually) becomes cost-justified specifically once you cross roughly five systems or add a new system at least once a year — below that threshold, the license fee outpaces what point-to-point maintenance would have cost. Budget the maintenance tail explicitly: 15-20% of build cost annually is the realistic figure, and enterprises that omit it from year-one budgeting typically end up paying 1.5-2x that rate later under emergency support terms once something breaks and institutional knowledge has already left with the original team.
+
 ## Frequently Asked Questions
 
 ### How long does a typical enterprise system integration project take?
@@ -88,6 +92,18 @@ Budget 15-20% of the initial build cost annually for maintenance, monitoring, an
 
 ### How do I avoid vendor lock-in on an enterprise integration project?
 Require documentation deliverables — architecture diagrams, data flow maps, and configuration runbooks — as contractual line items, not optional extras, and confirm during vendor selection what a third party would need to take over maintenance. A vendor unwilling to commit to documentation as a deliverable is signaling that lock-in is part of their business model.
+
+### (Scenario: a recent acquisition means we now run two instances of the same ERP with divergent customizations) How should the integration architecture decision change when merging two systems of the same platform rather than connecting genuinely different systems?
+This is a data reconciliation and migration problem wearing integration clothing — before choosing an architecture, insist the vendor run a schema-diff audit comparing both instances' customizations, since the real risk is silently merging conflicting business logic (different validation rules, different field usage) rather than a connectivity gap. A vendor who proposes a standard hub-and-spoke build without first auditing the divergence between the two instances is underscoping the actual problem.
+
+### (Scenario: our CIO wants to avoid a repeat of a failed integration where the vendor's team was inaccessible after go-live) What contractual protection ensures post-go-live support doesn't disappear the moment the project is marked complete?
+Negotiate a defined hypercare period (commonly 4-8 weeks of prioritized, included support immediately post-go-live) followed by a separately priced ongoing maintenance SLA with named response-time commitments, both written into the contract before the build starts, not negotiated after go-live pressure reveals the gap. Ask for the specific engineers' names who'll staff hypercare, not just a generic support-desk commitment.
+
+### (Scenario: our data landscape includes a legacy on-premise system with no modern API, only flat-file exports) How do vendors typically handle integrating a system with no API at all?
+Legacy systems without an API are typically handled through scheduled flat-file exports processed by an ETL layer, screen-scraping as a last resort (fragile and worth avoiding if any alternative exists), or a database-level connector reading directly from the underlying tables if the vendor can get appropriate access — ask any shortlisted vendor which of these three they'd use for your specific legacy system and why, since screen-scraping proposed without acknowledging its fragility is a red flag.
+
+### (Scenario: our finance team distrusts the reconciliation numbers coming out of a newly integrated system and wants proof the data matches) What validation approach proves an integration is producing correct data, not just connected data?
+Require a parallel-run period where the new integrated data flow runs alongside the legacy manual process for a defined window (typically 4-6 weeks), with discrepancies logged and root-caused before the legacy process is switched off — a vendor confident in their build will propose this themselves rather than needing to be asked, since it's the only way to prove correctness rather than mere connectivity.
 
 <script type="application/ld+json">
 {
@@ -132,6 +148,38 @@ Require documentation deliverables — architecture diagrams, data flow maps, an
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Require documentation deliverables — architecture diagrams, data flow maps, and configuration runbooks — as contractual line items, not optional extras, and confirm during vendor selection what a third party would need to take over maintenance. A vendor unwilling to commit to documentation as a deliverable is signaling that lock-in is part of their business model."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a recent acquisition means we now run two instances of the same ERP with divergent customizations) How should the integration architecture decision change when merging two systems of the same platform rather than connecting genuinely different systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a data reconciliation and migration problem wearing integration clothing — insist the vendor run a schema-diff audit comparing both instances' customizations first, since the real risk is silently merging conflicting business logic rather than a connectivity gap. A vendor proposing a standard build without auditing the divergence first is underscoping the problem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: our CIO wants to avoid a repeat of a failed integration where the vendor's team was inaccessible after go-live) What contractual protection ensures post-go-live support doesn't disappear the moment the project is marked complete?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Negotiate a defined hypercare period (commonly 4-8 weeks of prioritized, included support post-go-live) followed by a separately priced ongoing maintenance SLA with named response-time commitments, written into the contract before the build starts. Ask for the specific engineers' names who'll staff hypercare."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: our data landscape includes a legacy on-premise system with no modern API, only flat-file exports) How do vendors typically handle integrating a system with no API at all?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Legacy systems without an API are typically handled through scheduled flat-file exports processed by an ETL layer, screen-scraping as a fragile last resort, or a database-level connector reading directly from underlying tables. Ask any shortlisted vendor which approach they'd use for your specific system and why."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: our finance team distrusts the reconciliation numbers coming out of a newly integrated system and wants proof the data matches) What validation approach proves an integration is producing correct data, not just connected data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Require a parallel-run period where the new integrated data flow runs alongside the legacy manual process for 4-6 weeks, with discrepancies logged and root-caused before the legacy process is switched off. A vendor confident in their build will propose this themselves rather than needing to be asked."
       }
     }
   ]

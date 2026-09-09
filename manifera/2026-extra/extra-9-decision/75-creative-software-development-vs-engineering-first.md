@@ -64,6 +64,10 @@ If your product's competitive edge lives almost entirely in the interface and yo
 
 Talk to one of our senior architects about where your product's real competitive risk lies — in the interface, the backend, or both — and we'll show you exactly how our teams are structured to address it without you needing to coordinate two separate vendors.
 
+## Scoring the Trade-Off: A Weighted Rubric for the Final Comparison
+
+Most evaluations default to a gut call between two glossy decks. A weighted rubric forces the trade-off into numbers instead. Score each finalist 1-5 on six criteria: backend architecture documentation quality (20% weight), design/UX artifact quality (20%), engineer-to-designer staffing ratio on a comparable past project (15%), sprint cadence integration — same team versus sequential handoff (15%), post-launch scalability track record measured by uptime SLA history (15%), and usability testing evidence such as recorded user-testing sessions (15%). A creative-first agency scoring above 4 on design but below 2.5 on architecture documentation is a flag for a costly backend rebuild within 18-24 months. An engineering-first partner scoring above 4 on architecture but below 2.5 on usability evidence often ships technically sound products with measurably weaker engagement post-launch. Teams that genuinely integrate design and engineering from discovery typically show staffing closer to a 60/40 engineer-to-designer ratio on mid-sized builds (8-15 person teams), rather than the 90/10 split common at engineering-first shops or the inverse at creative-first ones. Run this rubric with both finalists before your final decision meeting, and require both an architecture artifact and a design artifact submitted within the first three days of the RFP — a vendor's score distribution across these six criteria predicts the structural risk you'll be managing eighteen months after signing far more reliably than either sales deck.
+
 ## Frequently Asked Questions
 
 ### What does "creative software development" actually mean for a technical evaluation?
@@ -80,6 +84,18 @@ Integrated teams working from the same discovery phase and sprint cadence consis
 
 ### Can one vendor genuinely handle both creative and engineering-first work well?
 Yes, when design and engineering are structured as one accountable team rather than two specialties coordinated across separate departments or separate vendors. Full-stack teams with integrated sprint cadence are built specifically to avoid one discipline's success masking the other's neglect.
+
+### (Scenario: You're mid-RFP with two finalists and a board deadline in two weeks) How do I score creative-first and engineering-first proposals against each other quickly?
+Require both finalists to submit an architecture artifact and a design artifact within the first three days, then score each against the six weighted criteria — architecture documentation, design quality, staffing ratio, sprint integration, scalability track record, and usability evidence. This turns a rushed gut call into a defensible, board-ready comparison in choosing a development agency under real time pressure.
+
+### (Scenario: Your creative-first agency finalist won't share a technical architecture document) What's the actual risk if a vendor can't produce one?
+Treat the refusal or hesitation as direct evidence backend work is likely handled by subcontractors with limited accountability to your project, not just a documentation gap. Push for a named backend lead and a sample architecture diagram before moving forward with custom software development scoped around their creative portfolio alone.
+
+### (Scenario: Your product is a consumer-facing dashboard where interface quality drives retention) How do I contractually protect UX investment when hiring an engineering-first partner?
+Write specific deliverables into the statement of work — a dedicated designer FTE involved from discovery, recorded usability testing sessions delivered as milestone artifacts, and a UX sign-off gate before each sprint closes. Without these clauses, web app development contracts with engineering-first partners default to design being handled by whichever engineer is available late in the sprint.
+
+### (Scenario: You inherited a product built by a pure creative-first agency and it's now buckling under real traffic) What's the fastest way to assess how much backend rework is needed?
+Commission an independent technical due diligence audit focused specifically on architecture scalability, database indexing, and load-testing history rather than a general code review, since creative-first builds typically fail at the infrastructure layer the demo never exercised. Expect the audit to reveal whether you need targeted remediation or a genuine backend rebuild before choosing your next development agency.
 
 <script type="application/ld+json">
 {
@@ -132,6 +148,26 @@ Yes, when design and engineering are structured as one accountable team rather t
       "@type": "Question",
       "name": "Can one vendor genuinely handle both creative and engineering-first work well?",
       "acceptedAnswer": {"@type": "Answer", "text": "Yes, when design and engineering are structured as one accountable team rather than two specialties coordinated across separate departments or vendors."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: You're mid-RFP with two finalists and a board deadline in two weeks) How do I score creative-first and engineering-first proposals against each other quickly?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Require both finalists to submit an architecture artifact and a design artifact within the first three days, then score each against six weighted criteria — architecture documentation, design quality, staffing ratio, sprint integration, scalability track record, and usability evidence."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Your creative-first agency finalist won't share a technical architecture document) What's the actual risk if a vendor can't produce one?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Treat the refusal or hesitation as direct evidence backend work is likely handled by subcontractors with limited accountability, and push for a named backend lead and a sample architecture diagram before moving forward."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Your product is a consumer-facing dashboard where interface quality drives retention) How do I contractually protect UX investment when hiring an engineering-first partner?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Write specific deliverables into the statement of work — a dedicated designer FTE from discovery, recorded usability testing sessions as milestone artifacts, and a UX sign-off gate before each sprint closes."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: You inherited a product built by a pure creative-first agency and it's now buckling under real traffic) What's the fastest way to assess how much backend rework is needed?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Commission an independent technical due diligence audit focused on architecture scalability, database indexing, and load-testing history rather than a general code review, since creative-first builds typically fail at the infrastructure layer the demo never exercised."}
     }
   ]
 }

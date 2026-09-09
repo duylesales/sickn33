@@ -101,6 +101,10 @@ One objection we hear often is that a two- to four-week audit delays a project t
 
 If you're currently reviewing a modernization or migration proposal and no independent audit has been commissioned yet, that's the first conversation to have with your prospective vendor — before any commercial terms are finalized. Ask one of our senior architects to walk through what an audit scoped to your specific system would look like, with no obligation to use us for the build that follows.
 
+## A Severity Scoring Model for Ranking Audit Findings
+
+A findings report is only as useful as its severity scoring is consistent. Insist your auditor use a defined 1-4 scale rather than adjectives like "concerning" or "notable." Severity 1 (Critical): actively exploitable security vulnerability or active data-integrity risk — must block signing until addressed or explicitly priced into scope, and on a typical mid-sized audit this category should represent well under 5% of total findings; if it's higher, the system likely needs remediation before modernization even starts. Severity 2 (High): technical debt or architectural coupling directly threatening the proposed migration approach — the deprecated billing library example is a textbook Severity 2, and these findings should map one-to-one to specific line items in the vendor's revised quote. Severity 3 (Moderate): code quality or test coverage gaps that slow delivery but don't block it — budget these into the change-order threshold rather than the base price. Severity 4 (Low): style and convention inconsistencies with no material cost impact — useful context, not negotiation leverage. Ask your auditor for a simple count by severity tier on the executive summary's first page: a system with, say, 2 critical, 6 high, 14 moderate, and 30 low findings gives your board an instantly comparable risk snapshot across every vendor proposal you review.
+
 ## Frequently Asked Questions
 
 ### How long does a software audit typically take before a modernization contract?
@@ -117,6 +121,18 @@ An independent software audit typically costs a small fraction of the total mode
 
 ### Can I use software audit findings to renegotiate a vendor's quote?
 Yes, and this is one of the most valuable uses of an independent audit. Cross-referencing a vendor's proposal against documented, independent findings gives you specific, defensible grounds to question scope or pricing gaps, rather than relying on a general sense that a quote seems too low or too high.
+
+### (Scenario: Two shortlisted vendors return very different revised quotes after reviewing the same independent audit) How do you interpret the divergence?
+Ask each vendor to map their revised price directly to specific severity-tier findings from the report — a vendor whose quote moved in a specific, explainable direction tied to the Critical and High findings is engaging seriously, while a quote that barely moved or changed vaguely suggests they either didn't read the report closely or padded their original number enough to absorb any surprise.
+
+### (Scenario: The audit surfaces a Severity 1 critical security finding, like unencrypted payment data at rest) Does this automatically kill the deal with your preferred vendor?
+Not automatically, but it should stop the signature until the finding is either remediated or explicitly priced and scheduled into the contract as a first-phase deliverable. A vendor willing to treat the critical finding as a defined, budgeted fix rather than a footnote is showing you exactly how they'll handle the next unexpected discovery.
+
+### (Scenario: A budget-constrained startup can't afford a full boutique audit firm engagement) What's a reasonable minimum-viable version of a pre-contract software audit?
+Scope a narrower, fixed-price technical software audit focused only on the highest-stakes categories — security vulnerability scanning and a coupling analysis on the modules that touch payments or customer data — rather than the full architecture and code-quality review. A partial, targeted audit still catches the findings most likely to blow up a fixed-price quote, even if it skips the lower-severity style and convention review.
+
+### (Scenario: You already have a signed letter of intent with an incumbent vendor and no audit was ever commissioned) Is it too late to insert one into the process?
+No — a letter of intent isn't a binding contract, and it's reasonable to make the final signature conditional on an independent audit's findings first. Frame it to the incumbent vendor as standard pre-contract software review practice rather than a sign of distrust in their specific proposal, and use the same cross-reference process to confirm their number still holds once findings are in hand.
 
 <script type="application/ld+json">
 {
@@ -161,6 +177,38 @@ Yes, and this is one of the most valuable uses of an independent audit. Cross-re
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, and this is one of the most valuable uses of an independent audit. Cross-referencing a vendor's proposal against documented, independent findings gives you specific, defensible grounds to question scope or pricing gaps, rather than relying on a general sense that a quote seems too low or too high."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Two shortlisted vendors return very different revised quotes after reviewing the same independent audit) How do you interpret the divergence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask each vendor to map their revised price directly to specific severity-tier findings from the report — a vendor whose quote moved in a specific, explainable direction is engaging seriously, while a quote that barely moved suggests they didn't read the report closely or padded their original number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: The audit surfaces a Severity 1 critical security finding, like unencrypted payment data at rest) Does this automatically kill the deal with your preferred vendor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not automatically, but it should stop the signature until the finding is remediated or explicitly priced and scheduled into the contract as a first-phase deliverable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A budget-constrained startup can't afford a full boutique audit firm engagement) What's a reasonable minimum-viable version of a pre-contract software audit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scope a narrower, fixed-price audit focused only on the highest-stakes categories — security vulnerability scanning and a coupling analysis on modules touching payments or customer data — rather than the full architecture and code-quality review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: You already have a signed letter of intent with an incumbent vendor and no audit was ever commissioned) Is it too late to insert one into the process?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — a letter of intent isn't a binding contract, and it's reasonable to make the final signature conditional on an independent audit's findings first, framed as standard pre-contract practice rather than a sign of distrust."
       }
     }
   ]

@@ -53,33 +53,44 @@ Oprichters die dit spel begrijpen, behandelen pre-raise hardening als een integr
 
 ## Wat Technische Due Diligence Concreet Controleert
 
-Een onafhankelijke tech-auditor namens een durfkapitalist controleert primair deze kernpunten:
-- **Tenant-isolatie (Multi-Tenancy):** Is klantdata op databaseniveau strikt gescheiden via Row-Level Security (RLS), of vertrouwt de applicatie op simpele filters in de code die bij één programmeerfout data lekken?
-- **Server-side autorisatie:** Worden rechten afgedwongen op de server, of vertrouwt het systeem op wat de frontend toont?
-- **Beheer van geheimen:** Staan API-sleutels van externe diensten veilig in een secrets manager, of zijn ze hardcoded meegecommit in Git?
-- **Datatransacties en betalingen:** Handelt de betalingsinfrastructuur geweigerde kaarten, storneringen en dubbele webhooks foutloos af via idempotentie?
-- **Onderhoudbaarheid:** Kan een andere senior engineer deze codebase overnemen, of draait het geheel op ongedocumenteerde AI-scripts?
+Het helpt om haarscherp te begrijpen wat er feitelijk gevraagd wordt tijdens een investeringsonderzoek, want 'due diligence' klinkt buitengewoon abstract totdat u er zelf middenin zit. Een competente software-auditor die optreedt namens een seed- of Series A-durfinvesteerder controleert doorgaans de volgende niet-onderhandelbare kernpunten:
 
-Een investeerder verwacht bij een seed-fase geen NASA-infrastructuur. Waar ze naar zoeken is **bewijs van volwassenheid**. Een oprichter die antwoordt: *"We hebben in maart een audit laten uitvoeren op onze database policies, hier is het rapport en de fix"* maakt een onuitwisbare indruk.
+- **Isolatie van klantdata (Multi-tenancy):** Is data tussen accounts strikt en onweerlegbaar gescheiden op databaseniveau (met robuuste Row-Level Security), of leunt de applicatie op naïeve frontend-filters die elkaars data kunnen lekken?
+- **Server-side autorisatie:** Vinden permissiechecks gegarandeerd plaats aan de serverzijde, of vertrouwt de backend blindelings op parameters die door de client worden meegestuurd?
+- **Geheimen- en sleutelbeheer:** Worden API-sleutels, database-wachtwoorden en webhook-secrets veilig beheerd via environment variables, of zwerven ze rond in broncode die in de browser draait of in openbare repositories staat?
+- **Back-up en rampherstel:** Is er een bewezen, periodiek geteste back-up- en disaster recovery-procedure aanwezig, of is betrouwbaarheid slechts een aanname op basis van een hostingvinkje?
+- **Facturatie en betalingslogica:** Hoe vangt het systeem mislukte abonnementsverlengingen, terugboekingen en betwiste transacties op zonder dat er handmatige paniekinterventies nodig zijn?
+- **Onderhoudbaarheid en code-hygiëne:** Vertoont de codebase tekenen dat deze kan worden overgedragen aan en onderhouden door een nieuwe externe ontwikkelaar — inclusief degelijke documentatie, schone afhankelijkheden en overzichtelijke architectuur?
 
-## De Kosten: Vooraf, Tijdens of Achteraf?
+Geen enkele investeerder verwacht enterprise-infrastructuur van een startup in de seed-fase; zij weten heel goed dat zij naar een vroeg product kijken. Waar zij echter wél genadeloos op beoordelen, is of het team deze risico's begrijpt en een geloofwaardig plan of vroege voorsprong heeft om ze te mitigeren, versus dat het team er simpelweg nog nooit over heeft nagedacht. Een oprichter die tijdens een partnermeeting zelfverzekerd zegt: *"We ontdekten in maart een kwetsbaarheid in onze multi-tenancy autorisatie, hebben die direct gedicht en hier is het technische auditrapport"*, maakt een volstrekt andere indruk dan een oprichter die verrast reageert met: *"Daar hebben we eigenlijk nog niet naar gekeken."*
 
-De technische uren voor het productierijp maken veranderen nauwelijks. Wat radicaal verschilt, is de context:
-- **Vooraf (in alle rust):** Typisch binnen het [Launch & Grow-pakket](https://launchstudio.eu/nl/#packages) (€2.500–€7.500), met een vaste scope en vaste prijs.
-- **Tijdens de ronde (onder druk):** Zelfde technische werk, maar met spoedtarieven, juridische vertragingskosten en het risico dat een investeerder een lagere waardering bedingt.
-- **Achteraf:** Het risico dat een over het hoofd gezien datalek tussen gebruikers ontploft vóórdat de ronde überhaupt geformaliseerd is.
+Het is bovendien essentieel om te begrijpen wie deze vragen stelt en op welk moment. In vroege seed-rondes stelt de lead partner de vragen vaak zelf op informele toon, en kan een deskundig, concreet antwoord het onderwerp in twee minuten afronden. Bij Series A en grotere rondes schakelen fondsen vrijwel altijd een externe technische auditpartij in die diepgaand in uw staging-omgeving duikt en spreekt met uw lead engineer. De inzet stijgt daarmee evenredig: een vaag antwoord aan een partner zorgt voor lichte wrijving; hetzelfde vage antwoord in een formeel technisch due diligence rapport wordt een harde opschortende voorwaarde (condition precedent) die eerst contractueel moet worden opgelost vóórdat het groeigeld kan worden vrijgegeven.
+## De Kosten: Vooraf, Tijdens of Achteraf Repareren?
 
-Bovendien vreet een technische crisis tijdens een investeringsronde de toch al schaarse aandacht van de oprichter op. De rust om dit vóór de pitches af te ronden betaalt zich dubbel en dwars uit.
+Het uitvoeren van het hardening- en beveiligingswerk **vóórdat u de markt opgaat voor kapitaal**, volgens uw eigen planning en tegen een vaste vooraf overeengekomen prijs, is met afstand de goedkoopste, meest ontspannen en minst riskante optie. Het valt comfortabel binnen het **Launch & Grow** traject van LaunchStudio (doorgaans tussen €2.500 en €7.500) voor een schaalbaar product met echte gebruikers, betalingsstromen en meerdere integraties — strak afgebakend en geprijsd zonder dat iemand nerveus op de klok tikt.
 
+Exact hetzelfde werk uitvoeren **tijdens een lopende investeringsronde**, nadat een technische audit van een durfinvesteerder ernstige gebreken heeft gemarkeerd, vergt exact evenveel engineering-uren. Maar het voegt er wel acute tijdsdruk aan toe, forse spoedtarieven van externe consultants om documentatie op te stellen die de investeerder accepteert, en de torenhoge immateriële kosten van een vertraagde, onzekere financieringsronde waarin de waardering onder druk komt te staan.
+
+Het werk pas uitvoeren **nadat de investering is afgerond** (in de zeldzame gevallen waarin een investeerder akkoord gaat ondanks zichtbare gebreken), betekent dat u exact dezelfde taken uitvoert terwijl een formele raad van bestuur over uw schouders meekijkt. Het dringt zich dan op boven de marketing- en groei-initiatieven waar het kapitaal eigenlijk voor bedoeld was, en vindt regelmatig plaats tegen de achtergrond van een live beveiligingsincident dat in de tussentijd werkelijkheid werd.
+
+De zuivere hardware- en softwarekosten veranderen nauwelijks tussen deze drie momenten. Wat echter radicaal verschuift, is alles eromheen: uw onderhandelingsmacht, de tijdsdruk en wie er aan tafel zit om mee te beslissen.
+
+En er is nog een doorslaggevende factor die oprichters chronisch onderschatten: **de mentale focus van de oprichter tijdens het ophalen van kapitaal**. Een financieringsronde vreet al maandenlang nagenoeg 100% van uw cognitieve capaciteit op — pitch-decks verfijnen, tientallen partnerpresentaties, referentiegesprekken en datarooms bijhouden. Het halverwege ontdekken van een technisch fundamentprobleem dwingt u om uw schaarse aandacht te versnipperen tussen het sluiten van de deal en een chaotische technische brandweeroefening, exact op het moment dat u uw focus het hardst nodig heeft. Dit werk in alle rust afronden in de weken vóórdat u investeerders benadert, kost dezelfde uren maar voorkomt deze verlammende aandachtstax.
 ## Drie Vragen om Uw Situatie te Bepalen
 
-1. **Is uw ronde primair een gok op marktvraag of vereist het operationele betrouwbaarheid?** Zodra er institutionele partijen aan tafel zitten, weegt operationele volwassenheid altijd zwaar mee.
-2. **Stroomt er al echte klantdata door een database die nog nooit professioneel is geaudit?** Zo ja, dan is beveiliging geen 'later'-item, maar een directe aansprakelijkheid.
-3. **Als een investeerder u nu vraagt hoe uw data-isolatie en backups zijn ingericht, versnelt uw antwoord de ronde dan of vertraagt het de deal?** Als u weet dat het antwoord vertraging oplevert, heeft u uw prioriteit te pakken.
+Beantwoord deze drie vragen volstrekt eerlijk om uw werkelijke positie vast te stellen:
 
-Binnen LaunchStudio en Manifera ondersteunen we startups om hun technische fundament investeerdersproof te maken. [Plan een vertrouwelijk adviesgesprek met een van onze engineers](https://launchstudio.eu/nl/#contact) om te zien wat een tech-auditor in uw huidige codebase zou aantreffen vóórdat een investeerder dat doet.
+1. **Draait uw investeringsronde primair om een weddenschap op marktvraag (pre-product), of om operationele volwassenheid en schaalbaarheid?**
+   Zeer vroege pre-seed rondes draaien vaak puur om marktvraag; latere seed- en Series A-rondes combineren beide factoren. Zodra er een institutionele investeerder of venture-fonds aan tafel zit, weegt technische integriteit zwaar mee in het eindoordeel.
+2. **Stromen er op dit moment al echte klantgegevens door een systeem dat nog nooit een onafhankelijke beveiligingsaudit heeft ondergaan?**
+   Zo ja, dan is technische hardening géén onderwerp voor 'later', ongeacht wanneer uw financieringsronde start. Het risico op een datalek of reputatieschade bestaat immers vandaag al, en een investeringsgesprek verandert die blootstelling niet.
+3. **Als een investeerder u op dit moment vraagt om uw procedures voor gegevensbeveiliging, autorisatieregels en back-up recovery te tonen, zou uw eerlijke antwoord de financieringsronde dan versnellen of vertragen?**
+   Als het eerlijke antwoord luidt: *"vertragen, en dat weet ik dondersgoed"*, dan heeft u exact het onderdeel geïdentificeerd dat u vóór de ronde moet herstellen in plaats van erna.
 
-## Praktijkvoorbeeld
+LaunchStudio en Manifera — met ruim 11 jaar ervaring in het ontwerpen en auditen van productie-architecturen voor enterprise-klanten — adviseren een heldere standaard: behandel productierijpheid en hardening als een taak **voorafgaand aan de investeringsronde** zodra er echte klantdata in het spel is. Bewaar 'pas na de ronde' uitsluitend voor de zuivere pre-tractie gevallen waarin er functioneel nog niets anders bestaat dan een mockup.
+
+Twijfelt u in welke categorie uw software zich bevindt? Dat is op zichzelf al een kort gesprek waard vóórdat u investeerders benadert. [Bespreek met een senior engineer wat een technische reviewer in uw huidige codebase zou aantreffen](https://launchstudio.eu/nl/#contact) — vóórdat de adviseur van een investeerder dat voor u doet, op hun voorwaarden en op hun tijdlijn.
+## Echt voorbeeld
 
 ### Een Scale-Up Oprichter Die de Volgorde Omdraaide en Sneller Sloot
 

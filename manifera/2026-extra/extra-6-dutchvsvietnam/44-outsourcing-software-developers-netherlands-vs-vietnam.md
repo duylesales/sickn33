@@ -72,6 +72,12 @@ Run a genuine one-year, six-engineer comparison and the numbers separate clearly
 
 If your two proposals are separated by more than €300,000 a year and neither vendor has walked you through what governance costs on each side, that's the conversation to have before signing either one. [Talk to Manifera about a governed comparison](https://www.manifera.com/contact-us/).
 
+## Implementation Checklist: What to Demand in Either Quote Before Signing
+
+Before signing either a Netherlands-based software company's proposal or a Vietnam pod's proposal, run both through the same five-point checklist. First, a named-engineer seniority breakdown, not a blended average — ask for CVs or role-level allocation for every seat. Second, a written escalation path with a single accountable point of contact and a maximum response-time SLA, typically four hours during the overlap window. Third, IP assignment and code-escrow terms specified as EU-jurisdiction enforceable, regardless of where the engineers physically sit. Fourth, a defined ramp-up timeline — a Dutch vendor should be productive within one to two weeks given shared context, while a Vietnam pod should commit to two to four weeks including onboarding to your codebase and tooling. Fifth, an exit clause with a bounded transition period, typically 30-60 days, for knowledge transfer.
+
+Vendors that can't produce all five in writing within a day of being asked are signaling a gap that will surface mid-engagement regardless of price. In Manifera's own pilot comparisons, like the Hamburg case above, proposals missing two or more of these five items correlated closely with the budget overruns and remediation costs described earlier — the checklist isn't bureaucracy, it's the leading indicator of which vendor, Dutch or Vietnamese, actually executes cleanly.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO comparing two final-round proposals before a board decision) Is it fair to compare a Dutch vendor's day rate directly against a Vietnam pod's day rate?
@@ -94,6 +100,22 @@ Yes — running parallel scoped pilots, as in the Hamburg case above, is the mos
 
 Present the governance layer explicitly as the risk-mitigation equivalent of a domestic vendor's built-in structure, paired with the fully-loaded cost comparison — boards respond to a clear governance story, not just a lower number.
 
+### (Scenario: CTO worried about contract flexibility) How do notice periods and contract flexibility compare between a Dutch outsourcing firm and a Vietnam pod?
+
+Dutch vendor contracts often mirror local labor-law-influenced notice periods of 30-90 days baked into the agreement; a well-structured Vietnam pod contract typically uses a shorter 30-day notice window with defined transition support, giving a CTO more flexibility to scale down without long tail costs.
+
+### (Scenario: CTO concerned about IP protection specifics with an offshore pod) What IP protections need to be explicit in a Vietnam pod contract that a Dutch vendor contract might not spell out?
+
+A Vietnam contract should explicitly include IP assignment clauses enforceable under EU or Dutch jurisdiction, NDAs naming individual engineers, and code-escrow terms; a Dutch vendor operates under EU IP law by default, so these terms are less often broken out as separate clauses.
+
+### (Scenario: CTO evaluating attrition risk over a multi-year engagement) Which option carries more attrition risk, a Dutch vendor or a Vietnam pod?
+
+Vietnam's tech sector sees higher industry-wide attrition, commonly 15-20% annually, than the Netherlands' tighter and more tenured market, but an Amsterdam-governed pod with named-engineer continuity clauses in the contract can perform comparably to a Dutch team on retention.
+
+### (Scenario: CTO structuring the working relationship before signing) How many real-time overlap hours should the contract guarantee with a Vietnam pod versus a Dutch team?
+
+A Dutch team offers a full eight-hour overlap by default; a Vietnam pod under Amsterdam governance typically structures a four-hour daily overlap window with documented async handoff protocols in the statement of work to cover the remainder of the day.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +125,11 @@ Present the governance layer explicitly as the risk-mitigation equivalent of a d
     { "@type": "Question", "name": "(Scenario: CTO worried a cheaper offshore quote hides a junior-heavy team) How do we know the Vietnam pod's seniority claims are accurate, unlike some Dutch vendor proposals that hide junior staffing?", "acceptedAnswer": { "@type": "Answer", "text": "Request the same seniority breakdown from both vendors and treat any proposal that won't provide named team members or role-level allocation as a red flag regardless of price." } },
     { "@type": "Question", "name": "(Scenario: CTO deciding whether governance is worth the added line item) Does the Amsterdam governance layer actually change delivery outcomes, or is it just overhead?", "acceptedAnswer": { "@type": "Answer", "text": "It's the layer that makes the cost comparison valid in the first place — without it, a CTO personally absorbs architecture oversight and escalation management as uncompensated time." } },
     { "@type": "Question", "name": "(Scenario: CTO wanting to de-risk the decision before a full commitment) Can we pilot both options before committing to a full year-long engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — running parallel scoped pilots is the most reliable way to compare real delivery quality and cost before a full commitment." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to justify the decision to a cost-focused board) How do we explain a Vietnam pod choice to a board that expects a Netherlands-based vendor by default?", "acceptedAnswer": { "@type": "Answer", "text": "Present the governance layer explicitly as the risk-mitigation equivalent of a domestic vendor's built-in structure, paired with the fully-loaded cost comparison." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to justify the decision to a cost-focused board) How do we explain a Vietnam pod choice to a board that expects a Netherlands-based vendor by default?", "acceptedAnswer": { "@type": "Answer", "text": "Present the governance layer explicitly as the risk-mitigation equivalent of a domestic vendor's built-in structure, paired with the fully-loaded cost comparison." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about contract flexibility) How do notice periods and contract flexibility compare between a Dutch outsourcing firm and a Vietnam pod?", "acceptedAnswer": { "@type": "Answer", "text": "Dutch vendor contracts often mirror local labor-law-influenced notice periods of 30-90 days; a well-structured Vietnam pod contract typically uses a shorter 30-day notice window with defined transition support." } },
+    { "@type": "Question", "name": "(Scenario: CTO concerned about IP protection specifics with an offshore pod) What IP protections need to be explicit in a Vietnam pod contract that a Dutch vendor contract might not spell out?", "acceptedAnswer": { "@type": "Answer", "text": "A Vietnam contract should explicitly include IP assignment clauses enforceable under EU or Dutch jurisdiction, NDAs naming individual engineers, and code-escrow terms, since a Dutch vendor operates under EU IP law by default." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating attrition risk over a multi-year engagement) Which option carries more attrition risk, a Dutch vendor or a Vietnam pod?", "acceptedAnswer": { "@type": "Answer", "text": "Vietnam's tech sector sees higher industry-wide attrition, commonly 15-20% annually, than the Netherlands' tighter market, but an Amsterdam-governed pod with named-engineer continuity clauses can perform comparably on retention." } },
+    { "@type": "Question", "name": "(Scenario: CTO structuring the working relationship before signing) How many real-time overlap hours should the contract guarantee with a Vietnam pod versus a Dutch team?", "acceptedAnswer": { "@type": "Answer", "text": "A Dutch team offers a full eight-hour overlap by default; a Vietnam pod under Amsterdam governance typically structures a four-hour daily overlap window with documented async handoff protocols covering the rest of the day." } }
   ]
 }
 </script>

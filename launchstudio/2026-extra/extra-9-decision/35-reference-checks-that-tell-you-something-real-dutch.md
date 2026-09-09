@@ -127,7 +127,7 @@ Blijken de referenties van een concurrent na dit vragenscript sterker dan de onz
 
 **Plan een vrijblijvend kennismakingsgesprek van 15 minuten en vraag gerust om de referenties die u werkelijk wilt spreken, inclusief de uitdagende projecten — wij worden liever grondig getoetst dan overhaast gekozen.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Scale-Up Oprichter in Actie: De Referent Die de Wissel Benoemde
 

@@ -91,6 +91,17 @@ It's worth building this verification into a recurring calendar item rather than
 
 See how we've helped engineering teams like yours in our project portfolio, including examples of how AI tooling costs were scoped and itemized as part of a transparent engagement from day one.
 
+## The Line-by-Line Invoice Audit
+
+When an AI tooling invoice actually lands, run it against six checks before approving it — this takes fifteen minutes and catches most of the drift described above before it compounds across a quarter.
+
+1. **Seat count matches active headcount.** Cross-reference billed seats against your current roster; a 10-15% gap from rotated-off developers is common and easy to miss without a direct comparison.
+2. **Usage-based costs scale with actual activity.** A flat API-usage number that doesn't move month to month despite team size or sprint intensity changing is a red flag — usage-based costs should fluctuate.
+3. **Markup is stated as a percentage, not buried in a round number.** "€1,200/month AI tooling" tells you nothing; "€980 pass-through + 22% management markup" tells you everything.
+4. **Shared infrastructure allocation method is disclosed.** Ask whether your bill reflects an even per-client split or usage-proportional split of any shared fine-tuning or vector database cost.
+5. **Model tier matches what was scoped.** Confirm the LLM tier billed matches the tier named in your contract, not a quietly downgraded cheaper model.
+6. **Quarter-over-quarter trend is flat or explained.** An unexplained month-over-month increase above 10% with no corresponding usage or scope change warrants a direct question before payment.
+
 ## Frequently Asked Questions
 
 ### How much should AI coding assistant tools cost per developer per month?
@@ -112,6 +123,22 @@ For most mid-sized engineering organizations, vendor-managed AI tooling is more 
 ### What should be included in a vendor contract to ensure AI tooling billing transparency?
 
 The contract should itemize AI tooling costs by category — seat licenses, API usage, and shared infrastructure — separately from day rates, name the specific activities any markup covers, and include a right to periodic billing review. Without this itemization, a bundled AI tooling fee is difficult to verify or renegotiate later.
+
+### (Scenario: A VP of Engineering notices the AI tooling line item rose 18% month-over-month with no team size change) What should I do if an AI tooling invoice increases without a corresponding change in team size or scope?
+
+Request the category breakdown for that specific month before approving payment — an unexplained increase above roughly 10% with no scope change usually traces to either a model tier upgrade, a usage spike worth investigating, or a billing error. A transparent vendor will produce this breakdown within a single conversation rather than a multi-week back-and-forth.
+
+### (Scenario: A vendor proposes billing AI coding assistant seats for the full team even though only half actively use the tools) Should every developer on a project be provisioned an AI coding assistant seat, or only the ones actively using it?
+
+Only provision seats for developers actually using the tool regularly, and request a quarterly utilization report as a standard contract term. Paying full seat price for licenses assigned to developers who rarely touch the tool is one of the most common and easiest-to-eliminate sources of AI tooling waste.
+
+### (Scenario: A vendor's shared vector database cost is split evenly across five clients regardless of usage) Is an even per-client split fair for shared AI infrastructure costs like a vector database?
+
+Not necessarily — an even split disadvantages a client whose project is a lighter user of that shared infrastructure than others on the vendor's roster. Ask specifically whether your allocation is usage-proportional or an even split, and request usage-proportional billing if your project's actual load is below the roster average.
+
+### (Scenario: A team's AI coding assistant productivity gains look strong on paper but the monthly tooling line item is climbing) How do I calculate whether AI tooling costs are actually paying for themselves on my project?
+
+Take your team's current average cost per delivered story point, apply your vendor's claimed productivity gain at the conservative low end of the typical 15-35% range, and compare the resulting savings against the actual monthly tooling line item including markup. If the tooling cost consumes most of the calculated savings, it isn't paying for itself yet regardless of how the technology is marketed.
 
 <script type="application/ld+json">
 {
@@ -142,6 +169,26 @@ The contract should itemize AI tooling costs by category — seat licenses, API 
       "@type": "Question",
       "name": "What should be included in a vendor contract to ensure AI tooling billing transparency?",
       "acceptedAnswer": { "@type": "Answer", "text": "The contract should itemize AI tooling costs by category separately from day rates, name specific activities any markup covers, and include a right to periodic billing review." }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if an AI tooling invoice increases without a corresponding change in team size or scope?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Request the category breakdown for that month before approving payment. An unexplained increase above roughly 10% usually traces to a model tier upgrade, a usage spike, or a billing error, and a transparent vendor will produce the breakdown in one conversation." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should every developer on a project be provisioned an AI coding assistant seat, or only the ones actively using it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Only provision seats for developers actively using the tool, and request a quarterly utilization report as a standard contract term. Paying full seat price for rarely-used licenses is one of the most common sources of AI tooling waste." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is an even per-client split fair for shared AI infrastructure costs like a vector database?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. An even split disadvantages a client whose project is a lighter user of shared infrastructure than others on the vendor's roster. Ask whether your allocation is usage-proportional or even, and request usage-proportional billing if appropriate." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate whether AI tooling costs are actually paying for themselves on my project?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Take your team's average cost per delivered story point, apply the vendor's claimed productivity gain at the conservative low end of the 15-35% range, and compare the savings against the actual monthly tooling line item including markup." }
     }
   ]
 }

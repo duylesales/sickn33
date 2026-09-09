@@ -134,6 +134,10 @@ Manifera's ingenieurs implementeren doorgaans vijf tot zes pogingen met exponent
 
 Herhaalpogingen maken levering minstens-één-keer in plaats van exact-één-keer, wat betekent dat dezelfde gebeurtenis legitiem twee keer kan aankomen. De ontvangende kant moet dus een stabiel gebeurtenis-ID controleren en alles wat het al heeft verwerkt overslaan, anders kan een herhaalde levering stilletjes dubbele records aanmaken.
 
+### Waarom is webhook-betrouwbaarheid bij B2B SaaS extra kritisch?
+
+Gemiste webhooks bij B2B veroorzaken stille data-desynchronisatie in de CRM, boekhouding of voorraad van de klant, wat snel tot klantverloop leidt.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

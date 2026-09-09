@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een Prototype Doorstaat Zijn Eerste Virale Verkeerspiek"
+Titel: "Case Study: Een Prototype Doorstaat Zijn Eerste Virale Verkeerspiek"
 Trefwoorden: virale verkeerspiek, AI-prototype opschalen, gereedheid productie-infrastructuur, omgaan met verkeerspieken, loadtesting MVP, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: SaaS-Oprichter Scale-Up
 ---
 
-# Praktijkvoorbeeld: Een Prototype Doorstaat Zijn Eerste Virale Verkeerspiek
+# Case Study: Een Prototype Doorstaat Zijn Eerste Virale Verkeerspiek
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een Prototype Doorstaat Zijn Eerste Virale Verkeerspiek",
+  "headline": "Case Study: Een Prototype Doorstaat Zijn Eerste Virale Verkeerspiek",
   "description": "Een viraal moment is het enige evenement dat het meest waarschijnlijk alles blootlegt wat de eigen tests van een oprichter nooit hebben getriggerd. Een praktijkvoorbeeld van wat er daadwerkelijk als eerste breekt wanneer een AI-gegenereerd prototype echte, ongeplande schaal tegenkomt, en wat er nodig is om het te overleven.",
   "author": {
     "@type": "Organization",
@@ -61,8 +61,7 @@ Oprichters die besluiten dit vooruitlopend aan te pakken, overcorrigeren soms, e
 
 [Vertel ons wat u heeft gebouwd en hoeveel speelruimte het heeft](https://launchstudio.eu/nl/#contact) — de meeste oprichters hebben hun eigen prototype nog nooit belast getest, en de scoping call is de snelste manier om te ontdekken waar het als eerste zou breken.
 
-## Real example
-
+## Echt voorbeeld
 ### Een SaaS-Oprichter Scale-Up in de Praktijk: De Functie Die Bijna Brak Onder Zijn Eigen Succes
 
 Kasimir Odendaal, een groeifase-oprichter oorspronkelijk uit Kaapstad, bouwde StreamSurge, een live-publiekspollingtool gebruikt door conferentie-organisatoren, met Bolt en een Supabase-backend. StreamSurge had maandenlang soepel gedraaid bij tientallen kleine evenementen, en Kasimir had het nooit meer dan een paar honderd gelijktijdige gebruikers zien afhandelen.

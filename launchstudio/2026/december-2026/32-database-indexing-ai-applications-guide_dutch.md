@@ -86,6 +86,28 @@ De meeste relationele databases (waaronder PostgreSQL) beschikken over het comma
 - De samengestelde index heeft de verkeerde kolomvolgorde voor het specifieke filter.
 - Verouderde database-statistieken laten de planner de kosten verkeerd inschatten (periodiek onderhoud met `ANALYZE` lost dit op).
 
+### Geavanceerde Indexeringsstrategieën voor Relationele en Vector Data
+
+Het optimaliseren van een PostgreSQL-database voor AI-applicaties vereist een gedifferentieerde aanpak:
+- **B-Tree Indexen op Foreign Keys:** Zorg dat alle `user_id`, `org_id` en `created_at` kolommen zijn voorzien van standaard B-tree indexen voor razendsnelle join-bewerkingen en gesorteerde dashboards.
+- **GIN Indexen voor JSONB Data:** Gebruik Generalized Inverted Indexes (GIN) op kolommen die flexibele AI-metadata of JSONB-payloads opslaan voor efficiënte diepe zoekacties.
+- **HNSW Indexen voor Vector Embeddings:** Bij het zoeken naar semantische overeenkomsten via `pgvector` biedt een Hierarchical Navigable Small World (HNSW) index superieure query-snelheden vergeleken met IVFFlat, vooral bij datasets boven de 100.000 records.
+
+- **Periodieke Index-Heropbouw & VACUUM ANALYZE:** Plan een wekelijkse database-onderhoudstaak in om indexfragmentatie tegen te gaan en statistieken bij te werken voor de PostgreSQL query planner.
+- **Monitoring van Trage Query's via pg_stat_statements:** Analyseer maandelijks welke query's het hoogste percentage van de totale database-tijd consumeren en voeg gerichte samengestelde (composite) indexen toe.
+
+### Praktijkvoorbeeld: EXPLAIN ANALYZE van Trage Vector Queries
+
+Wanneer u in PostgreSQL zoekt naar vergelijkbare vector embeddings met de cosine distance operator (`<=>`), kan een query zonder index gemakkelijk 1.200 milliseconden duren bij 50.000 rijen. Door een HNSW index aan te maken met geoptimaliseerde parameters (`m = 16, ef_construction = 64`):
+
+```sql
+CREATE INDEX ON document_embeddings 
+USING hnsw (embedding vector_cosine_ops) 
+WITH (m = 16, ef_construction = 64);
+```
+
+daalt de responstijd bij een k-nearest neighbor query (`LIMIT 10`) onmiddellijk van 1.200ms naar minder dan 18ms. Dit voorkomt dat piekverkeer uw database-CPU verzadigt en garandeert een vloeiende gebruikerservaring.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Van 8 seconden per zoekopdracht naar directe resultaten

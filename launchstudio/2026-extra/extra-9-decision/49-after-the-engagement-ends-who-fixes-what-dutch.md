@@ -97,7 +97,7 @@ Vraag uw ontwikkelpartner vóór het afronden van het project rechtstreeks: *"Al
 
 Vertel ons wat er op dit moment nog openstaat in uw applicatie en wat u na de lancering zelfstandig wilt blijven onderhouden — wij laten u binnen één werkdag weten wat een volwaardig overdrachtspakket voor uw specifieke technologiestack moet bevatten.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Indie Hacker in Actie: De Overdracht Die Standhield
 

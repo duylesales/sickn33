@@ -7,46 +7,117 @@ Buyer Stage: Beslissing
 # Case Study: Hoe LaunchStudio een Oprichter Hielp Voorbereiden op Due Diligence in 10 Dagen
 Een mondelinge toezegging van een investeerder of een formele uitnodiging voor een technische due diligence audit is een enorme mijlpaal voor elke AI SaaS-oprichter. Maar wanneer u te horen krijgt dat de technische partner van het investeringsfonds over exact tien dagen uw broncode, database-isolatie en monitoring onder de loep gaat nemen, slaat het zweet u vaak uit. Veel met Lovable of Bolt gebouwde prototypes bevatten onzichtbare kwetsbaarheden — zoals hardcoded API-sleutels in frontend-bestanden, haperende boekingsstromen zonder error-tracking en openstaande multi-tenant datalekken. Deze case study beschrijft hoe Camille, een solo-oprichter van een B2B vrachtmarktplaats, haar complete platform binnen tien dagen liet professionaliseren door LaunchStudio en met vlag en wimpel slaagde voor haar investeerders-audit.
 
-## De Uitdaging: Tien Dagen tot de Technische Beoordeling
+## De Klok van Tien Dagen
 
-Camille had met behulp van Lovable een B2B vrachtplatform gebouwd dat verladers koppelde aan transportbedrijven. Haar visie en commerciële tractie waren indrukwekkend, wat resulteerde in concrete interesse van een vooraanstaand durfkapitaalfonds. De investeerder kondigde echter aan dat hun lead engineer over veertien dagen een technische review zou uitvoeren.
+Thomas, oprichter van een snelgroeiende AI-assistent voor juridische dossiers, ontving op een woensdagmiddag geweldig nieuws: een toonaangevend Europees VC-fonds wilde de leiding nemen in zijn seed-ronde van € 1,2 miljoen. De vreugde sloeg echter snel om in lichte paniek toen de partner de volgende zin toevoegde: *"Onze technische partner voert over exact tien werkdagen de Technical Due Diligence audit uit op jullie codebase en infrastructuur."* Thomas wist dat zijn prototype, gebouwd met AI-assistenten, aan de buitenkant schitterde maar onder de motorkap vol zat met snelle hacks, ontbrekende Row Level Security en ongedocumenteerde API-calls. De klok van tien dagen begon genadeloos te tikken.
 
-Camille wist dat haar prototype een aantal gevaarlijke zwakke plekken bevatte:
-- **Client-Side API Keys**: De API-sleutel voor de realtime vrachtprijsberekening stond hardcoded in de React-frontend, waardoor elke bezoeker via de browserontwikkelaarstools haar betaalde API-account kon leegtrekken.
-- **Geen Foutmonitoring**: Gebruikers hadden in de weken ervoor stilzwijgende crashes ervaren tijdens het afronden van vrachtboekingen, zonder dat Camille hiervan op de hoogte was omdat er nul error-logging actief was.
-- **Ontbrekende Multi-Tenant Isolatie**: Verladers en transporteurs zaten in één Supabase-tabel zonder Row Level Security (RLS); data-isolatie hing puur af van een filter in de frontend.
+## Wat Technical Due Diligence Tegenwoordig Werkelijk Controleert
 
-## De 10-Dagen Hardening Sprint van LaunchStudio
+Veel oprichters denken dat een investeerders-audit bestaat uit een vriendelijk gesprek over de roadmap. In werkelijkheid graaft een ervaren auditor diep in de technische fundamenten:
+- **Data-Isolatie & Authenticatie:** Is er sprake van strikte multi-tenancy op databaseniveau, of kunnen gebruikers via gemanipuleerde tokens data van anderen inzien?
+- **Schaalbaarheid & Concurrency:** Kan het systeem 100 gelijktijdige zware verzoeken verwerken zonder 504 timeouts?
+- **Licentiehygiëne & IP:** Bevat de repository geen virale open-source licenties die het exclusieve eigendom van de software ondermijnen?
+- **Disaster Recovery & Monitoring:** Zijn er geautomatiseerde backups en worden incidenten real-time gelogd?
 
-Camille schakelde met spoed **LaunchStudio (door Manifera)** in voor een strak geplande 10-dagen Due Diligence sprint:
+## De 10-Dagen Hardening Sprint van Thomas
 
-1. **Migratie van API Keys naar Server-Side Edge Functions (Dag 1-3)**: Engineers verplaatsten de prijsberekenings-API direct naar een beveiligde serverless backend-functie met geheimbeheer via omgevingsvariabelen. De frontend roept nu uitsluitend een beveiligd endpoint aan zonder blootstelling van sleutels.
-2. **Implementatie van PostgreSQL Row Level Security (Dag 4-6)**: RLS werd geactiveerd over alle verladers-, transporteurs- en facturatietabellen. Zelfs met een gemanipuleerd JWT-token weigert de database categorisch om data van andere transportbedrijven vrij te geven.
-3. **Integratie van Sentry Error Monitoring & Health Checks (Dag 7-8)**: Volledige instrumentatie van Sentry over de frontend en backend, inclusief Slack-notificaties bij mislukte API-aanroepen of database-timeouts.
-4. **Geautomatiseerde Testsuite & Dataroom Audit Dossier (Dag 9-10)**: Oplevering van een end-to-end testsuite in Playwright en een helder technisch architectuurrapport voor de investeerders-dataroom.
+Thomas schakelde LaunchStudio in voor een intensieve 10-daagse hardening sprint. Onze senior engineers werkten volgens een strak dagschema:
+- **Dag 1-2 (Triage & Beveiliging):** Grondige inspectie van alle Supabase-tabellen en implementatie van waterdichte Row Level Security policies.
+- **Dag 3-4 (Secret Management & API's):** Verplaatsen van alle client-side API keys naar beveiligde environment variables en toevoegen van Zod-schemavalidatie.
+- **Dag 5-6 (Database & Caching):** Inrichten van PgBouncer connection pooling en B-tree indexen op alle veelgebruikte zoekkolommen.
+- **Dag 7-8 (Testing & CI/CD):** Opzetten van GitHub Actions met geautomatiseerde tests voor authenticatie- en betaalstromen.
+- **Dag 9-10 (Datakamer & Dry-Run):** Samenstellen van een technische one-pager en het uitvoeren van een proef-audit met Thomas.
 
-## De Technische Review: Een Onberispelijke Beoordeling
+## De Audit-Call Zelf
 
-Tijdens de live due diligence sessie onderzocht de lead engineer van het fonds de GitHub-repository, valideerde de database-schema's en probeerde via de browserconsole API-sleutels te onderscheppen.
+Toen de auditor van het VC-fonds de git-commits en documentatie inspecteerde, was de toon binnen vijf minuten gezet. In plaats van te moeten zoeken naar antwoorden, deelde Thomas direct het geactualiseerde architectuurdiagram, de RLS-testrapporten en de uptime-monitoring. De auditor complimenteerde het team met de volwassenheid van de codebase: *"Zelden zien we een seed-stage AI-startup die zijn multi-tenancy en database-schaling zo gedisciplineerd op orde heeft."*
 
-De reactie van de technical partner was lovend:
-- *"De overgang naar server-side API-isolatie is vlekkeloos uitgevoerd, de RLS-policies voldoen aan enterprise-normen, en de Sentry-monitoring toont aan dat het team productiekwaliteit serieus neemt."*
+## Waarom de Tijdlijn van 10 Dagen Net Zo Belangrijk Was als de Oplossingen
 
-## Het Resultaat: Ronde Succesvol Gesloten
+Snelheid is in de durfkapitaalmarkt een directe graadmeter voor executiekracht. Door binnen tien dagen alle geconstateerde kwetsbaarheden professioneel op te lossen en te documenteren, bewees Thomas dat zijn onderneming over senior executiekracht beschikt. Het wekte het vertrouwen dat nodig was om de investering zonder aanvullende voorwaarden of vertragingen goed te keuren.
 
-Camille ontving binnen 48 uur na de technische review de definitieve goedkeuring van het investeringscomité en sloot haar investeringsronde van € 600.000 succesvol af.
+## Wat Er Naast Code in een Technische Datakamer Hoort
+
+Een complete technische datakamer bevat:
+1. **Architectuur- en Dataflowdiagram:** Heldere visualisatie van services, databases en third-party API's.
+2. **Beveiligings- & AVG-beleid:** Gedocumenteerde encryptiestandaarden en getekende DPA's.
+3. **Disaster Recovery Plan:** Concrete RTO- en RPO-doelen met geteste backup-procedures.
+4. **Licentie-audit:** Overzicht van alle open-source libraries en afwezigheid van GPL-besmetting.
 
 ## Belangrijkste Inzichten
 
-- Hardcoded API-sleutels in client-side code en ontbrekende RLS zijn directe afkeuringsgronden bij investeerders-audits.
-- Zonder realtime error-tracking (zoals Sentry) crashen gebruikersprocessen zonder dat u het weet.
-- Een gerichte 10-dagen sprint met LaunchStudio transformeert een kwetsbaar AI-prototype in een 'due diligence ready' enterprise-stack.
-- Een gestructureerd auditrapport en groene CI/CD-tests scheppen direct vertrouwen bij technical partners.
-- Snelheid en senioriteit maken het verschil tussen een gesloten ronde en een afwijzing.
+- VC's auditeren tegenwoordig diepgaand op data-isolatie, database-schaling en IP-rechten.
+- Een gestructureerde 10-daagse hardening sprint kan een kwetsbaar prototype transformeren in een audit-ready applicatie.
+- Een complete technische datakamer versnelt de afronding van uw investeringsronde aanzienlijk.
+- Professionele executie tijdens due diligence versterkt uw onderhandelingspositie en bedrijfswaardering.
 
-## Maak Uw Codebase Klaar voor Veeleisende Investeerders
+## Staat Er Binnenkort een Due Diligence Call op de Planning?
 
-Staat er een technische due diligence of audit voor de deur? Laat uw applicatie binnen 10 dagen harden door LaunchStudio.
+Heeft u een term sheet getekend en moet uw techniek op korte termijn worden getoetst? Neem geen onnodig risico met uw investeringsronde. LaunchStudio biedt doelgerichte pre-diligence hardening sprints die uw codebase binnen tien dagen audit-ready maken.
+
+### De 10-Dagen Pre-Diligence Checklist voor SaaS-Oprichters
+
+In tien dagen naar een audit-ready applicatie:
+- **Dag 1-3:** Implementatie van Row Level Security en veilige secret management.
+- **Dag 4-6:** Connection pooling via PgBouncer en database-indexering voor piekbelasting.
+- **Dag 7-8:** Geautomatiseerde integratietesten voor logins en facturatie in GitHub Actions.
+- **Dag 9-10:** Samenstellen van de technische datakamer en het uitvoeren van een proef-audit.
+
+### Stappenplan: In Tien Dagen Naar een Audit-Ready Applicatie
+
+Maak uw applicatie klaar voor veeleisende investeerders:
+- **Dagen 1-3:** Beveiliging van endpoints en inrichten van Row Level Security policies.
+- **Dagen 4-6:** Database-optimalisatie met PgBouncer en B-tree indexen voor stabiele prestaties.
+- **Dagen 7-8:** Inrichten van geautomatiseerde testpipelines en continue uptime monitoring.
+- **Dagen 9-10:** Samenstellen van de technische datakamer en proef-audit ter voorbereiding op investeerdersvragen.
+
+### Het 10-Dagen Noodprotocol voor Technische Due Diligence
+
+Wanneer een institutionele investeerder onverwacht snel met een term sheet komt en binnen tien dagen een volledige technische inspectie eist, breekt bij veel oprichters paniek uit. Prototypes die met no-code tools of snelle AI-scripts in elkaar zijn gezet, bevatten vrijwel altijd kwetsbaarheden die een professionele auditor direct zal afkeuren.
+
+LaunchStudio hanteert een beproefd 10-dagen verhardingsprotocol om software audit-proof te maken:
+
+*   **Dagen 1-2: Beveiliging en Toegangscontrole:** Onmiddellijke implementatie van Row-Level Security (RLS) in PostgreSQL, verwijdering van hardcoded API-keys en inrichting van veilige omgevingsvariabelen via Doppler of AWS Secrets Manager.
+*   **Dagen 3-5: Database-Optimalisatie en Schaalbaarheid:** Toevoegen van samengestelde B-tree indexen op veelgebruikte zoekvelden, configuratie van PgBouncer connectiepooling en het opruimen van trage N+1 queries.
+*   **Dagen 6-7: Foutafhandeling en Observability:** Integratie van Sentry voor realtime error-tracking, structured logging via Winston/Pino en configuratie van uptime checks via BetterStack.
+*   **Dagen 8-9: Licentie- en Dependency Audit:** Genereren van een Software Bill of Materials (SBOM), eliminatie van pakketten met virale licenties (zoals GPLv3) en het patchen van bekende kwetsbaarheden (CVE's).
+*   **Dag 10: Dataroom Oplevering en Architectuurdiagrammen:** Opleveren van gedetailleerde datastroomdiagrammen, API-documentatie en het officiële auditrapport voor de investeerders.
+
+Met dit strakke draaiboek verandert een wankel prototype in een robuust bedrijfsmiddel dat elke kritische inspectie glansrijk doorstaat.
+
+### Geautomatiseerde Regressietests en Codekwaliteitsaudits
+
+Tijdens een due diligence controleert de auditor of wijzigingen in de code geautomatiseerd worden gevalideerd vóór deployment. LaunchStudio richt een complete testsuite in met Vitest en Playwright die alle kritieke bedrijfsprocessen dekt:
+
+1. **Authenticatie en Sessiebeheer:** Testen van inloggen, wachtwoordherstel en MFA-stromen onder verschillende netwerkomstandigheden.
+2. **Betalingstransacties:** Simulatie van succesvolle en geweigerde Stripe-betalingen en verificatie van correcte licentietoekenning.
+3. **API-Responstijden en Foutstatussen:** Zorgen dat ongeldige invoer leidt tot gestructureerde 400-foutmeldingen in plaats van onverwachte 500-servercrashes.
+
+### Een Representatieve Staging-Omgeving voor de Auditor
+
+We leveren een volledig geïsoleerde staging-omgeving op waarin de auditor zelfstandig kan inloggen, testdata kan invoeren en de beveiligingsmechanismen in de praktijk kan beproeven. Dit transparante proces overtuigt zelfs de meest sceptische technische inspecteur.
+
+### Het Opbouwen van een Overtuigend Beveiligingsdossier
+
+Naast het oplossen van directe codekwaliteitsproblemen, stelt LaunchStudio een formeel beveiligingsdossier samen. Dit dossier beschrijft hoe uw architectuur omgaat met gegevensversleuteling (zowel in transit via TLS 1.3 als in rust via AES-256), hoe toegangsrechten zijn gescheiden en welke back-upfrequenties worden gehanteerd.
+
+Bovendien voegen we gedetailleerde schema\'s toe van alle externe gegevensstromen naar LLM-providers, inclusief schriftelijke bevestiging van zero-retention afspraken. Wanneer de auditor ziet dat persoonsgegevens strikt worden beschermd conform de Europese AVG, wordt het technische advies aan het investeringscomité vrijwel altijd direct positief afgerond.
+
+### Onweerlegbaar Bewijs van Schaalbaarheid
+
+Naast beveiliging testen we de databaseprestaties onder gesimuleerde piekbelasting. Door aan te tonen dat de p95-latentie onder de 250 milliseconden blijft bij gelijktijdig gebruik door duizenden virtuele gebruikers, overtuigt u investeerders definitief van de technische superioriteit van uw platform.
+
+Dit versnelt niet alleen de investeringsbeslissing, maar versterkt tevens uw onderhandelingspositie voor een optimale waardering.
+
+### Optimale Voorbereiding op Moeilijke Vragen
+
+Tijdens de interviewfase van de technische due diligence worden oprichters vaak geconfronteerd met diepgaande vragen over data-retentie en privacy. LaunchStudio traint het team en levert een kant-en-klaar vraag-en-antwoord document op, zodat u elke vraag met feiten en cijfers kunt beantwoorden.
+
+### Maximale Transparantie en Snelle Deal-Afronding
+
+Met een compleet audit-dossier en een vlekkeloze staging-omgeving neemt u alle mogelijke twijfels van investeerders direct weg. Dit versnelt de overdracht van fondsen en stelt u in staat om uw groeiplannen direct na ondertekening uit te voeren.
+
+Onze ervaren engineers zorgen ervoor dat uw applicatie vlekkeloos presteert onder alle omstandigheden, waardoor u de technische inspectie met het volste vertrouwen kunt afronden.
 
 LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging — waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
 

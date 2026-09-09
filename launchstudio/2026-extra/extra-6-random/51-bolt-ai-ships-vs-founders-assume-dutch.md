@@ -37,6 +37,19 @@ De riskantste versie van deze kloof is geen UI-bug — het is stil gegevensverli
 
 Onze technici, werkend vanuit Amsterdam als onderdeel van Manifera's bredere team van 120+ engineers, behandelen dit als een van de eerste dingen die gecontroleerd worden bij elke door AI gegenereerde codebase — niet omdat Bolt iets fout heeft gedaan, maar omdat "de functie werkt" en "de functie verwerkt slechte input veilig" twee afzonderlijke beweringen zijn, en alleen de oprichter kan specificeren welke van de twee daadwerkelijk nodig is. Als u een tweede mening wilt over wat uw eigen Bolt-build daadwerkelijk valideert versus wat het aanneemt, kunt u [een gratis beoordeling van uw prototype aanvragen](https://launchstudio.eu/nl/#contact). Manifera's bredere technische praktijk, inclusief het [maatwerk softwareontwikkelingswerk](https://www.manifera.com/services/custom-software-development/), is precies rond dit soort productieharding voor door oprichters gebouwde prototypes opgebouwd.
 
+## Een Doe-Het-Zelf Test Die U Kunt Uitvoeren Voordat U een Engineer Inschakelt
+
+U hoeft geen broncode te kunnen lezen om te controleren of uw eigen product dit specifieke beveiligingshiaat vertoont. Het enige wat u nodig heeft, is een korte lijst van doelbewust 'slechte' invoerwaarden om uit te proberen op elk veld dat data accepteert:
+
+**1. De SQL-Injectie Steekproef.** Voer in een zoekveld, inlogscherm of formulier een klassiek injectiepatroon in, zoals `' OR '1'='1` of `test'); DROP TABLE users;--`. Als de applicatie een fatale database-foutmelding toont of onverwacht records van andere gebruikers teruggeeft, is gebruikersinvoer niet geparametriseerd en staat uw datalaag wagenwijd open.
+
+**2. De HTML/XSS-Script Test.** Typ in een naamveld of opmerkingenveld de tekst: `<script>alert('test')</script>`. Als er na het opslaan daadwerkelijk een pop-upvenster verschijnt in de browser, ontbreekt uitvoersanitisatie en kunnen kwaadwillenden schadelijke JavaScript-code injecteren die sessietokens van andere gebruikers steelt.
+
+**3. De Extreem Grote Payload Test.** Plak een tekst van 50.000 woorden in een eenvoudig tekstveld of upload een afbeeldingsbestand van 50 megabyte op een plek waar een profielfoto wordt gevraagd. Blijft de server minutenlang hangen of crasht de applicatie met een time-out? Dan ontbreken invoerbegrenzingen aan de serverzijde.
+
+**4. De Negatieve Getallen en Decimale Test.** Voer bij een bestelhoeveelheid of prijs een negatief getal in (`-5`) of een bizar decimaal getal (`0.0000001`). Als de backend dit accepteert en een negatief totaalbedrag berekent, ontbreekt deterministische domeinvalidatie.
+
+Als uw applicatie deze basistests zonder haperen doorstaat en keurige validatiefoutmeldingen toont, bevindt uw invoervalidatie zich in een gezonde staat. Faalt één van de tests, dan heeft u direct een concreet actiepunt voor uw engineeringpartner.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de import die succesvol leek
@@ -83,11 +96,46 @@ Wees expliciet: vraag de tool elk veld te valideren, ongeldige input af te wijze
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Does Bolt add input validation by default?", "acceptedAnswer": { "@type": "Answer", "text": "Not comprehensively. Bolt builds what your prompt describes, and unless you explicitly ask for validation and error handling on a given input, it typically isn't included as a default behavior." } },
-    { "@type": "Question", "name": "How do I know if my Bolt-built app has this gap?", "acceptedAnswer": { "@type": "Answer", "text": "Look at any feature that processes bulk or user-supplied data — imports, uploads, forms with unusual input — and test it deliberately with malformed data to see whether it fails loudly or silently." } },
-    { "@type": "Question", "name": "Is this a Bolt-specific problem?", "acceptedAnswer": { "@type": "Answer", "text": "No — the same gap shows up across Lovable, Cursor, and v0 builds too. It's a property of prompt-driven scaffolding generally, not a flaw unique to any one tool." } },
-    { "@type": "Question", "name": "Can silent data loss like this be prevented without rebuilding the app?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Adding validation and error handling to an existing feature is typically a targeted fix, not a rebuild, which is why LaunchStudio's Amsterdam-based engineers can usually resolve it in days rather than weeks." } },
-    { "@type": "Question", "name": "What should I ask my AI tool for, specifically, to avoid this?", "acceptedAnswer": { "@type": "Answer", "text": "Be explicit: ask it to validate every field, reject invalid input with a visible error naming what's wrong, and log rejected records — don't assume a request to upload a file implies any of that automatically." } }
+    {
+      "@type": "Question",
+      "name": "Voegt Bolt standaard inputvalidatie toe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet volledig. Bolt bouwt wat uw prompt beschrijft, en tenzij u expliciet vraagt om validatie en foutafhandeling voor een bepaalde input, wordt dit doorgaans niet standaard meegenomen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of mijn door Bolt gebouwde app deze kloof heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kijk naar elke functie die bulk- of door gebruikers aangeleverde gegevens verwerkt — imports, uploads, formulieren met ongebruikelijke input — en test deze doelbewust met misvormde gegevens om te zien of het luid of stilletjes faalt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit een probleem specifiek voor Bolt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee — dezelfde kloof duikt ook op bij builds met Lovable, Cursor en v0. Het is een eigenschap van prompt-gestuurde scaffolding in het algemeen, geen fout die uniek is voor één tool."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan stil gegevensverlies zoals dit worden voorkomen zonder de app opnieuw te bouwen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Het toevoegen van validatie en foutafhandeling aan een bestaande functie is doorgaans een gerichte oplossing, geen herbouw, wat precies de reden is waarom de in Amsterdam gevestigde technici van LaunchStudio dit meestal binnen dagen kunnen oplossen in plaats van weken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik mijn AI-tool specifiek vragen om dit te voorkomen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wees expliciet: vraag de tool elk veld te valideren, ongeldige input af te wijzen met een zichtbare foutmelding die aangeeft wat er mis is, en afgewezen records te loggen — ga er niet van uit dat \"upload een CSV\" dit allemaal automatisch impliceert."
+      }
+    }
   ]
 }
 </script>

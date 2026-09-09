@@ -65,6 +65,15 @@ De overstap naar een verbruiks- of resultaatgericht model is een complexe techni
 2. **Kosten-Observability per Klant:** Met tools als Langfuse meten we het exacte tokenverbruik per gegenereerd resultaat, zodat u uw prijzen wiskundig kunt afstemmen op een gegarandeerde brutomarge van 75%+.
 3. **Agentic Rate Limiting:** Wij bouwen circuit-breakers in op databaseniveau: raken de prepaid credits van een klant op, dan pauzeert de infrastructuur de autonome agents veilig, wat oninbare API-kosten voorkomt.
 
+### Eenheidseconomie en Margebehoud bij AI-SaaS Bedrijven
+
+Het bouwen van een winstgevend SaaS-bedrijf met kunstmatige intelligentie vereist scherpe controle over de variabele inferentiekosten per actieve gebruiker:
+1. **Nauwkeurige Toewijzing van Tokenkosten:** We bouwen meetmechanismen die het tokenverbruik en de bijbehorende kosten exact toewijzen aan individuele gebruikersaccounts en abonnementsvormen, waardoor u direct ziet welke klanten winstgevend zijn en welke marge vreten.
+2. **Gelaagde Modelstrategie:** In plaats van elk eenvoudig verzoek door te sturen naar het duurste vlaggeschipmodel, routeren we standaardtaken naar snellere en 90% goedkopere gespecialiseerde modellen, met behoud van gelijke uitvoerkwaliteit.
+3. **Semantische Caching voor Brutomargeverbetering:** Door veelvoorkomende vragen en analyses direct vanuit een snelle vector-cache te beantwoorden, dalen uw externe API-kosten structureel met 30% tot 50% naarmate uw gebruikersbestand groeit.
+4. **Duidelijke Gebruikslimieten en Fair Use Policies:** We implementeren configureerbare quota en zachte limieten die voorkomen dat individuele power-users uw infrastructuur onevenredig zwaar belasten zonder bij te betalen.
+5. **Marge-Alarmering bij Kostenpieken:** Geautomatiseerde waarschuwingen informeren uw team direct zodra de gemiddelde inferentiekosten per gebruiker een vooraf ingestelde drempelwaarde overschrijden, zodat u tijdig kunt bijsturen.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De Boekhoudsoftware Die Zichzelf Kannibaliseerde

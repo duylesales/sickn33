@@ -72,6 +72,14 @@ The consolidated scoring revealed the polished-demo vendor had no independent go
 
 A CFO who selects an offshore development partner based on whichever single dimension was most persuasively pitched — price, demo polish, cultural rapport — routinely discovers the gaps in the other three dimensions only after signing, at a point where switching costs are highest and leverage is lowest. A consolidated four-question checklist, applied consistently across every proposal, costs one structured evaluation session and catches the gaps before they become expensive. [Talk to Manifera about a governance-first, retention-backed engagement](https://www.manifera.com/contact-us/).
 
+## The Weighted Scoring Model
+
+Turn the four-question checklist into an actual scoring sheet rather than a mental impression. Allocate points out of 100: governance separation carries the heaviest weight at 35 points, since it predicts engagement outcome more than any other single factor; contractual and jurisdictional clarity carries 25 points, weighted toward whether IP assignment survives post-termination at the individual-engineer level; cost structure honesty carries 20 points, scored on what's actually itemized rather than the headline rate; continuity carries the remaining 20 points, scored against documented retention data, not a verbal promise.
+
+Set a disqualifying floor, not just a total score: any vendor scoring under 15 of 35 on governance separation should be eliminated regardless of total score, because a low governance score means the other three numbers are effectively unverifiable — a vendor with no independent quality-verification layer can claim any cost structure or retention rate without a mechanism to confirm it holds under real delivery pressure.
+
+For a flood-monitoring and drainage-coordination platform specifically, add one Steenwijk-specific line item outside the general 100 points: confirmed uptime SLA and alerting redundancy for the monitoring function itself, since a flood-monitoring system's value is entirely conditional on it working during exactly the high-water events when infrastructure is under the most stress — a generic 99.5% uptime SLA that says nothing about behavior during a regional weather event isn't sufficient for this specific use case.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO with multiple offshore development partner proposals and no unifying framework) What's the single most useful checklist for making a final offshore vendor decision?
@@ -94,6 +102,22 @@ Usually after signing, once switching costs are highest and leverage to renegoti
 
 Whether an accountable party independent of day-to-day delivery verifies progress and quality, with genuine authority to flag problems early, since this single structural factor predicts engagement outcome more reliably than any other.
 
+### (Scenario: CFO wanting to turn the checklist into an actual scoring sheet) How should a CFO numerically weight the four checklist dimensions when scoring competing proposals?
+
+A useful split out of 100 points is 35 for governance separation, 25 for contractual and IP clarity, 20 for cost structure honesty, and 20 for continuity, scored per vendor rather than left as a qualitative impression.
+
+### (Scenario: CFO deciding whether a low score on one dimension should disqualify a vendor outright) Should a vendor be eliminated for scoring poorly on just one checklist dimension, even with a strong total score?
+
+Yes for governance specifically — a vendor scoring under roughly 15 of 35 governance points should be disqualified regardless of total score, because a weak governance layer makes the other three dimensions effectively unverifiable.
+
+### (Scenario: CFO evaluating uptime requirements for a flood-monitoring platform) Does a standard software uptime SLA adequately cover a flood-monitoring system's real reliability needs?
+
+No — a generic 99.5% uptime figure says nothing about behavior specifically during high-water events, so a flood-monitoring platform needs a separate, explicit SLA line item covering alerting redundancy and performance during actual regional weather events, not just average-case uptime.
+
+### (Scenario: CFO deciding how many vendors to run through the full checklist) How many offshore vendor proposals should go through the full weighted scoring process?
+
+Three to five shortlisted proposals is typically the practical range — enough to avoid anchoring on a single pitch, without diluting the evaluation effort across so many vendors that the scoring itself becomes shallow.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +127,11 @@ Whether an accountable party independent of day-to-day delivery verifies progres
     { "@type": "Question", "name": "(Scenario: CFO tempted by the most polished technical demo) Why shouldn't a CFO weight a vendor's demo quality heavily in the final decision?", "acceptedAnswer": { "@type": "Answer", "text": "Demo polish predicts almost nothing about governance, contractual protection, true cost structure, or long-term continuity." } },
     { "@type": "Question", "name": "(Scenario: CFO trying to compare vendors on a level playing field) How does a CFO avoid comparing vendors unfairly across different strengths?", "acceptedAnswer": { "@type": "Answer", "text": "Apply the same consolidated set of structural questions to every proposal, rather than letting each vendor set the terms of comparison." } },
     { "@type": "Question", "name": "(Scenario: CFO worried about discovering vendor gaps after signing) When do the gaps in an under-evaluated offshore proposal typically surface?", "acceptedAnswer": { "@type": "Answer", "text": "Usually after signing, once switching costs are highest and leverage to renegotiate is lowest." } },
-    { "@type": "Question", "name": "(Scenario: CFO wrapping up a long vendor evaluation process) What single question best predicts whether an offshore development partner engagement will still be working well eighteen months from now?", "acceptedAnswer": { "@type": "Answer", "text": "Whether an accountable party independent of day-to-day delivery verifies progress and quality, with genuine authority to flag problems early." } }
+    { "@type": "Question", "name": "(Scenario: CFO wrapping up a long vendor evaluation process) What single question best predicts whether an offshore development partner engagement will still be working well eighteen months from now?", "acceptedAnswer": { "@type": "Answer", "text": "Whether an accountable party independent of day-to-day delivery verifies progress and quality, with genuine authority to flag problems early." } },
+    { "@type": "Question", "name": "(Scenario: CFO wanting to turn the checklist into an actual scoring sheet) How should a CFO numerically weight the four checklist dimensions when scoring competing proposals?", "acceptedAnswer": { "@type": "Answer", "text": "A useful split out of 100 points is 35 for governance separation, 25 for contractual and IP clarity, 20 for cost structure honesty, and 20 for continuity." } },
+    { "@type": "Question", "name": "(Scenario: CFO deciding whether a low score on one dimension should disqualify a vendor outright) Should a vendor be eliminated for scoring poorly on just one checklist dimension, even with a strong total score?", "acceptedAnswer": { "@type": "Answer", "text": "Yes for governance specifically, since a weak governance layer makes the other three dimensions effectively unverifiable." } },
+    { "@type": "Question", "name": "(Scenario: CFO evaluating uptime requirements for a flood-monitoring platform) Does a standard software uptime SLA adequately cover a flood-monitoring system's real reliability needs?", "acceptedAnswer": { "@type": "Answer", "text": "No, a generic uptime figure says nothing about behavior during high-water events specifically, so a separate SLA line item covering alerting redundancy during actual weather events is needed." } },
+    { "@type": "Question", "name": "(Scenario: CFO deciding how many vendors to run through the full checklist) How many offshore vendor proposals should go through the full weighted scoring process?", "acceptedAnswer": { "@type": "Answer", "text": "Three to five shortlisted proposals is typically the practical range." } }
   ]
 }
 </script>

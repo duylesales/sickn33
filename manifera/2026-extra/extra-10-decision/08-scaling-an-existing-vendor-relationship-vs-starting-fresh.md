@@ -60,6 +60,16 @@ Scale an existing vendor when the next phase draws on the same technical domain 
 
 Whether you are scaling an existing engagement into new territory or bringing in a fresh team for a specialized build, Manifera's [dedicated teams](https://www.manifera.com/services/dedicated-teams/) model is structured around exactly this kind of scoped, capability-verified expansion — see our [portfolio](https://www.manifera.com/portfolio/) for examples across both paths.
 
+## The Scaling Decision Scorecard: Five Signals to Check Before You Expand
+
+Run these five checks before signing off on expanded scope with an existing vendor, rather than relying on a general sense of "they've been good so far."
+
+1. **Bench depth ratio.** If the next phase needs 15 engineers and the vendor has staffed a maximum of 6 on any single account in the past two years, that is a capability gap, not a scaling exercise — ask for a named list of the specific engineers who would join, not a headcount promise.
+2. **Domain overlap.** Score the new scope's technical domain against the vendor's demonstrated work on a simple yes/no basis for each of: data volume, compliance regime, real-time requirements, and integration complexity. Two or more "no" answers is a signal for a paid pilot, not a straight expansion.
+3. **Estimate drift trend.** Pull the last four sprints' estimated-versus-actual delivery times. A drift consistently under 15% supports scaling; drift trending upward over the last two quarters is an early warning independent of anything the vendor is telling you.
+4. **Escalation response time.** Check how long the vendor took to surface the last real problem, not the last status report. Anything over 48 hours for a material risk is a governance gap that expanded scope will only amplify.
+5. **Rate structure at new volume.** Confirm the negotiated rate advantage from tenure still applies at 3x the headcount — some vendors quietly reprice at a threshold, eroding the cost case for scaling versus a competitive re-bid.
+
 ## Frequently Asked Questions
 
 ### How fast can an existing vendor ramp up on expanded scope compared to a new vendor?
@@ -76,6 +86,18 @@ Starting fresh typically adds 15-25% to the new engagement's first-quarter budge
 
 ### Can I scale an existing vendor and bring in a new one at the same time?
 Yes, and this is often the lowest-risk path when you are uncertain which approach fits. Running a new vendor on a clearly bounded piece of the new scope alongside the existing vendor's core work lets you validate new capability without disrupting the proven relationship's ongoing delivery.
+
+### (Scenario: post-Series A headcount tripling) Our existing five-person dedicated team just got approved to grow to fifteen after our Series A — is that still "scaling" or should we treat it as a new vendor decision?
+Tripling headcount is a scaling-in-name-only event that should be evaluated with new-vendor rigor: check the bench depth ratio and request named engineers before committing, since a five-person team's proven competence does not automatically imply the vendor can source and manage ten more qualified hires. Treat the expansion as a paid pilot on the first five new hires before authorizing the full fifteen.
+
+### (Scenario: vendor pushing back on a verification pilot) Our current vendor seems offended that we want a paid pilot before expanding their scope into a new technical domain — is that a red flag?
+A vendor confident in their capability should welcome a scoped pilot as a low-risk way to prove fit and win the larger engagement; resistance to validation is itself useful signal, especially when the new domain (like a regulated data pipeline) is materially different from their prior work. Treat continued pushback as a reason to run the pilot with a second vendor in parallel.
+
+### (Scenario: comfortable long-tenure relationship) We've used the same outsourcing team for three years and governance reviews have become pretty informal — is that a reason to start fresh even if performance has been fine?
+Informal governance after years of good performance is a common drift pattern, not proof the relationship is still being rigorously evaluated, and it is worth tightening review cadence or introducing a second vendor on bounded new scope to recalibrate your own standards. This is less about the vendor's competence and more about whether your organization is still actually verifying it.
+
+### (Scenario: negotiated rate suddenly changing at scale) Our vendor's rate card jumped once we asked to expand from five engineers to fifteen — is that normal, and how do we budget for it?
+Some vendors reprice past a headcount threshold because staffing at volume draws on a different, often more senior, talent pool — confirm this explicitly before assuming the tenure-based rate advantage still holds at 3x scale. If the new rate erodes most of the cost advantage over starting fresh, run the numbers against a competitive re-bid rather than assuming loyalty pricing continues by default.
 
 <script type="application/ld+json">
 {
@@ -131,6 +153,38 @@ Yes, and this is often the lowest-risk path when you are uncertain which approac
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, and this is often the lowest-risk path when you are uncertain which approach fits. Running a new vendor on a clearly bounded piece of the new scope alongside the existing vendor's core work lets you validate new capability without disrupting the proven relationship's ongoing delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: post-Series A headcount tripling) Our existing five-person dedicated team just got approved to grow to fifteen after our Series A — is that still \"scaling\" or should we treat it as a new vendor decision?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tripling headcount is a scaling-in-name-only event that should be evaluated with new-vendor rigor: check the bench depth ratio and request named engineers before committing, since a five-person team's proven competence does not automatically imply the vendor can source and manage ten more qualified hires. Treat the expansion as a paid pilot on the first five new hires before authorizing the full fifteen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: vendor pushing back on a verification pilot) Our current vendor seems offended that we want a paid pilot before expanding their scope into a new technical domain — is that a red flag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A vendor confident in their capability should welcome a scoped pilot as a low-risk way to prove fit and win the larger engagement; resistance to validation is itself useful signal, especially when the new domain is materially different from their prior work. Treat continued pushback as a reason to run the pilot with a second vendor in parallel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: comfortable long-tenure relationship) We've used the same outsourcing team for three years and governance reviews have become pretty informal — is that a reason to start fresh even if performance has been fine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Informal governance after years of good performance is a common drift pattern, not proof the relationship is still being rigorously evaluated, and it is worth tightening review cadence or introducing a second vendor on bounded new scope to recalibrate your own standards. This is less about the vendor's competence and more about whether your organization is still actually verifying it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: negotiated rate suddenly changing at scale) Our vendor's rate card jumped once we asked to expand from five engineers to fifteen — is that normal, and how do we budget for it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some vendors reprice past a headcount threshold because staffing at volume draws on a different, often more senior, talent pool — confirm this explicitly before assuming the tenure-based rate advantage still holds at 3x scale. If the new rate erodes most of the cost advantage over starting fresh, run the numbers against a competitive re-bid rather than assuming loyalty pricing continues by default."
       }
     }
   ]

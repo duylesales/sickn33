@@ -95,7 +95,7 @@ Drie regels tegen flag debt:
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste SaaS-systemen) bouwen we server-side rollout-mechanismes, auditbare toggles en monitoring tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw uitrolstrategie met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat u nieuwe functies lanceert met totale controle.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De Redesign Die Iedereen Tegelijk Bereikte
 

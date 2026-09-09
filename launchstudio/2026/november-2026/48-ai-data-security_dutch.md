@@ -66,6 +66,15 @@ Het inrichten van een architectuur die voldoet aan SOC2, ISO 27001 en de AVG/GDP
 2. **Presidio Proxy Implementatie:** Wij richten lokale proxies in die persoonsgegevens en gevoelige sleutelwoorden realtime maskeren.
 3. **Audit-Klaar Observability:** Wij implementeren self-hosted observability tools (zoals Langfuse) die onweerlegbaar cryptografisch bewijs leveren van welke data is verwerkt en direct gewist.
 
+### Gegevensbescherming en Privacy in AI-Architecturen
+
+Het verwerken van privacygevoelige gegevens met kunstmatige intelligentie vereist strikte architectonische voorzorgsmaatregelen om te voldoen aan de Europese AVG:
+1. **Systematische PII-Maskering vóór Inferentie:** Voordat gebruikersdata naar een taalmodel wordt doorgestuurd, detecteert en anonimiseert onze middleware gevoelige persoonsgegevens (zoals BSN-nummers, creditcardgegevens en e-mailadressen) met behulp van entiteitherkenning.
+2. **Strikte Data-Residency Binnen de EU:** We configureren model-eindpunten en vectoropslag uitsluitend in datacenters binnen de Europese Economische Ruimte (zoals Frankfurt of Amsterdam), wat juridische zekerheid biedt ten aanzien van internationale doorgifte.
+3. **Contractuele Opt-Out van Modeltraining:** Wij verifiëren en garanderen dat alle gekoppelde API-diensten contractueel vastleggen dat uw klantdata nooit wordt gebruikt om openbare AI-modellen verder te trainen.
+4. **Geautomatiseerde AVG-Verwijderingsstromen:** We bouwen kant-en-klare mechanismen voor het 'recht op vergetelheid', waarbij het verwijderen van een gebruikersaccount ook automatisch alle bijbehorende vector-embeddings, cache-vermeldingen en conversatielogs wist.
+5. **Transparante Verwerkersovereenkomsten (DPA's):** We leveren een compleet overzicht van alle data-verwerkers en subprocessoren, zodat uw juridische documentatie direct klaar is voor verificatie door uw zakelijke klanten.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De MedTech Startup Geblokkeerd Door Privacy-Audits

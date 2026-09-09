@@ -68,6 +68,14 @@ Manifera rebuilt the CFO's model around a documented, realistic ramp curve from 
 
 A CFO who budgets against an optimistic ramp-up promise and then has to explain a variance to the board pays a credibility cost that outlasts the specific engagement, making every subsequent budget request harder regardless of whether the underlying work is succeeding. A documented, realistic ramp curve costs nothing beyond asking the vendor for it before signing. [Talk to Manifera about a realistic ramp-up projection](https://www.manifera.com/contact-us/).
 
+## Break-Even by the Numbers: A Sample Houten Engagement Model
+
+Run the actual arithmetic instead of trusting a vendor's slide. A three-engineer augmentation pod at a blended rate of roughly €55-65/hour costs a Houten healthtech CFO approximately €28,000-33,000 per month fully loaded. Against that, model the delay cost: a compliance-driven platform build slipping by one additional month typically costs a healthtech company more in lost renewal revenue or delayed certification than the entire monthly augmentation spend — often €40,000-60,000 for a mid-market Utrecht-region health-services firm.
+
+Applying the realistic 8-10 week productivity curve, break-even against pure cost-per-output lands around week 9-11. Break-even against cost-of-delay — the more honest measure — typically lands two to three weeks earlier, around week 6-8, because even partial productivity during ramp-up is already offsetting delay costs that would otherwise compound.
+
+Three levers move that number materially: domain-relevant staffing (shaves 1-2 weeks off ramp), a documented onboarding package covering the compliance context before day one (shaves another 1-2 weeks), and a fixed weekly deliverable cadence that surfaces underperformance by week 3 rather than week 8. A CFO's budget model should show all three explicitly, not just a single break-even date.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO budgeting for a team augmentation engagement) What's a realistic timeline for augmented engineers to reach full productivity?
@@ -90,6 +98,22 @@ Yes, particularly for compliance-sensitive domains like healthtech, where the re
 
 An accurate initial projection that holds builds board confidence, making subsequent augmentation or outsourcing budget requests easier to approve.
 
+### (Scenario: CFO negotiating exit terms before signing) What off-ramp terms should a team augmentation contract include in case the engagement underperforms?
+
+Insist on a month-to-month or short fixed-term structure with a 30-day exit clause after an initial ramp period, so a CFO can disengage without a long-term liability if the productivity curve doesn't hold by week 8-10.
+
+### (Scenario: CFO comparing augmentation cost against hiring locally in Utrecht) How does team augmentation cost compare to hiring in-house engineers in the Utrecht region?
+
+A Utrecht-region senior engineer typically costs €75,000-95,000 fully loaded annually including recruitment, benefits, and ramp time, versus a comparable augmented engineer at €55-65/hour with no recruitment lag, making augmentation materially cheaper for a project with a defined 6-18 month horizon.
+
+### (Scenario: CFO worried scope changes mid-engagement will blow up the break-even model) What happens to the break-even timeline if project scope changes after the team has ramped up?
+
+A scope change resets part of the domain-onboarding curve but not the technical-onboarding curve, so the break-even delay is typically 2-4 weeks rather than a full restart — budget models should flag scope stability as a risk factor upfront, not absorb it silently.
+
+### (Scenario: CFO handling cross-border invoicing for a Vietnam-based augmentation pod) How does invoicing and VAT treatment work for a Houten company augmenting with a Vietnam-based team through a Dutch entity?
+
+Structuring the engagement through Manifera's Amsterdam entity keeps invoicing, VAT treatment, and contracting within standard Dutch B2B service rules, avoiding the cross-border withholding and compliance complexity of contracting an offshore vendor directly.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +123,11 @@ An accurate initial projection that holds builds board confidence, making subseq
     { "@type": "Question", "name": "(Scenario: CFO worried about a board credibility gap from an optimistic projection) How do we avoid having to explain a ramp-up variance to the board later?", "acceptedAnswer": { "@type": "Answer", "text": "Budget against a documented, realistic ramp curve from the vendor upfront rather than a best-case one-month promise." } },
     { "@type": "Question", "name": "(Scenario: CFO trying to define break-even accurately) What does \"break-even\" actually mean for a team augmentation engagement?", "acceptedAnswer": { "@type": "Answer", "text": "The point where roadmap value delivered exceeds what the same calendar time would have cost in continued delay." } },
     { "@type": "Question", "name": "(Scenario: CFO evaluating whether domain expertise reduces ramp-up time) Does staffing augmented engineers with domain-relevant experience actually shorten the ramp curve?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, particularly for compliance-sensitive domains, where regulatory and domain context otherwise adds meaningfully to onboarding time." } },
-    { "@type": "Question", "name": "(Scenario: CFO trying to protect credibility for future budget requests) How does an accurate first projection affect future augmentation budget approvals?", "acceptedAnswer": { "@type": "Answer", "text": "An accurate initial projection that holds builds board confidence, making subsequent budget requests easier to approve." } }
+    { "@type": "Question", "name": "(Scenario: CFO trying to protect credibility for future budget requests) How does an accurate first projection affect future augmentation budget approvals?", "acceptedAnswer": { "@type": "Answer", "text": "An accurate initial projection that holds builds board confidence, making subsequent budget requests easier to approve." } },
+    { "@type": "Question", "name": "(Scenario: CFO negotiating exit terms before signing) What off-ramp terms should a team augmentation contract include in case the engagement underperforms?", "acceptedAnswer": { "@type": "Answer", "text": "A month-to-month or short fixed-term structure with a 30-day exit clause after the initial ramp period, so the CFO can disengage without long-term liability." } },
+    { "@type": "Question", "name": "(Scenario: CFO comparing augmentation cost against hiring locally in Utrecht) How does team augmentation cost compare to hiring in-house engineers in the Utrecht region?", "acceptedAnswer": { "@type": "Answer", "text": "A Utrecht-region senior engineer typically costs €75,000-95,000 fully loaded annually versus a comparable augmented engineer at €55-65/hour with no recruitment lag." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried scope changes mid-engagement will blow up the break-even model) What happens to the break-even timeline if project scope changes after the team has ramped up?", "acceptedAnswer": { "@type": "Answer", "text": "A scope change resets domain onboarding but not technical onboarding, typically delaying break-even by 2-4 weeks rather than requiring a full restart." } },
+    { "@type": "Question", "name": "(Scenario: CFO handling cross-border invoicing for a Vietnam-based augmentation pod) How does invoicing and VAT treatment work for a Houten company augmenting with a Vietnam-based team through a Dutch entity?", "acceptedAnswer": { "@type": "Answer", "text": "Structuring the engagement through a Dutch Amsterdam entity keeps invoicing and VAT treatment within standard Dutch B2B service rules, avoiding cross-border withholding complexity." } }
   ]
 }
 </script>

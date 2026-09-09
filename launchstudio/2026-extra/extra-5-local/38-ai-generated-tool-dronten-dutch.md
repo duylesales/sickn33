@@ -88,20 +88,53 @@ Manifera's team van meer dan 120 engineers, met werk deels gecoördineerd via on
 ### Hoe snel kan ik beginnen met factureren na een beoordeling?
 De meeste beoordelingen van betalingsgereedheid en herstelwerkzaamheden worden binnen 5 tot 10 werkdagen afgerond. Stuur ons uw prototypelink en we geven u gratis advies over waar u staat.
 
-### Moet mijn tool het pauzeren van abonnementen ondersteunen in plaats van alleen annuleren?
-Voor seizoensgebonden bedrijven zoals de landbouw is het sterk het overwegen waard. Een boer die buiten het groeiseizoen volledig moet annuleren en zich opnieuw moet abonneren is veel sneller geneigd permanent op te zeggen dan iemand die simpelweg kan pauzeren en hervatten — een klein verschil in facturatie logica met een echte impact op behoud van klanten.
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Hoe weet ik of mijn met AI gegenereerde tool daadwerkelijk klaar is om klanten te factureren?", "acceptedAnswer": { "@type": "Answer", "text": "Controleer of betalings-webhooks aan de serverzijde geverifieerd zijn, de database back-ups heeft, en de tool getest is onder meerdere gelijktijdige gebruikers." } },
-    { "@type": "Question", "name": "Werkt LaunchStudio alleen met agrarische of in Flevoland gevestigde tools?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, LaunchStudio bedient oprichters in alle sectoren in heel Nederland en de Benelux." } },
-    { "@type": "Question", "name": "Wat als mijn betalingsintegratie nu al prima lijkt te werken?", "acceptedAnswer": { "@type": "Answer", "text": "Lijken te werken en geverifieerd zijn inclusief randgevallen zijn verschillende normen. Een beoordeling wordt toch aanbevolen." } },
-    { "@type": "Question", "name": "Wie bouwt en verifieert de betalingsintegratie?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's team van 120+ engineers, deels gecoördineerd via de hub in Singapore, handelt betalingsintegraties af." } },
-    { "@type": "Question", "name": "Hoe snel kan ik beginnen met factureren na een beoordeling?", "acceptedAnswer": { "@type": "Answer", "text": "De meeste beoordelingen van betalingsgereedheid worden binnen 5 tot 10 werkdagen afgerond." } },
-    { "@type": "Question", "name": "Moet mijn tool het pauzeren van abonnementen ondersteunen in plaats van alleen annuleren?", "acceptedAnswer": { "@type": "Answer", "text": "Voor seizoensgebonden bedrijven wel. Een pauze-optie vermindert het risico op permanent opzeggen vergeleken met geforceerd annuleren en herabonneren." } }
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of mijn met AI gegenereerde tool daadwerkelijk klaar is om klanten te factureren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Controleer of betalings-webhooks aan de serverzijde geverifieerd zijn, de database back-ups heeft, en de tool getest is onder meerdere gelijktijdige gebruikers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werkt LaunchStudio alleen met agrarische of in Flevoland gevestigde tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, LaunchStudio bedient oprichters in alle sectoren in heel Nederland en de Benelux."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat als mijn betalingsintegratie nu al prima lijkt te werken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lijken te werken en geverifieerd zijn inclusief randgevallen zijn verschillende normen. Een beoordeling wordt toch aanbevolen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie bouwt en verifieert de betalingsintegratie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manifera's team van 120+ engineers, deels gecoördineerd via de hub in Singapore, handelt betalingsintegraties af."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel kan ik beginnen met factureren na een beoordeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste beoordelingen van betalingsgereedheid worden binnen 5 tot 10 werkdagen afgerond."
+      }
+    }
   ]
 }
 </script>

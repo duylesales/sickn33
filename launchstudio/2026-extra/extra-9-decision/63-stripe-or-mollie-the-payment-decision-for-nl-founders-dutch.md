@@ -89,6 +89,14 @@ Technisch is dit mogelijk, maar voor een vroege startup raden we dit sterk af. H
 
 Kies bij de lancering voor één provider die 90% van uw use case optimaal afdekt.
 
+## Wat Er Gebeurt Als een Betaling Mislukt: Verschillen in Dunning-Tools
+
+De beslissing over een betaalmethode draait niet alleen om het moment waarop een klant succesvol afrekent — het gaat er minstens zoveel om wat er gebeurt wanneer een terugkerende incasso mislukt. Dat is voor elk abonnementsbedrijf een routineuze, verwachte gebeurtenis, geen zeldzame uitzondering. De ingebouwde abonnementsmodules van Stripe bevatten standaard een zeer volwassen dunning-beheer: configureerbare herhaalschema's, geautomatiseerde herinneringsmails naar klanten met mislukte betalingen en slimme herhalingslogica (Smart Retries) die nieuwe pogingen plant op tijdstippen waarop de kans statistisch het grootst is dat er saldo beschikbaar is. Mollie's functionaliteiten voor abonnementen en terugkerende betalingen zijn solide, maar vereisen over het algemeen dat meer van deze retry- en notificatielogica aan uw eigen kant wordt gebouwd of geconfigureerd. Dat geldt in het bijzonder voor mislukte SEPA-incasso's, die wezenlijk anders reageren dan een geweigerde creditcard en vaak specifieke afhandeling vergen. Geen van beide tekortkomingen is een breekpunt, maar het is een wezenlijk verschil in wat u "gratis meegeleverd" krijgt versus hoeveel uw engineeringteam — of de AI-tool die uw checkout heeft gegenereerd — expliciet moet programmeren. Het is de moeite waard om hier tijdens een scopinggesprek direct naar te vragen, in plaats van aan te nemen dat elke betalingsprovider mislukte betalingen automatisch soepel afhandelt.
+
+## Wat Dit Concreet Betekent voor Uw AI-Gegenereerde Prototype
+
+Als uw prototype is gebouwd in Lovable, Bolt of een vergelijkbare tool, is de kans groot dat de gegenereerde betaalintegratie standaard kiest voor Stripe met een creditcard-eerst checkout. Dat is immers het meest voorkomende patroon in de trainingsdata en documentatie waarop deze tools zijn getraind. Dat is op zichzelf niet verkeerd, maar als uw daadwerkelijke klanten Nederlandse consumenten zijn die iDEAL direct prominent verwachten, blijft de kloof tussen wat er is gebouwd en wat uw markt verlangt onzichtbaar in een demo. Het afrekenformulier werkt immers prima wanneer u het zelf met een testcreditcard uitprobeert. Het probleem openbaart zich pas als een stille, moeilijk te diagnosticeren daling in conversie zodra echte Nederlandse klanten op de betaalpagina belanden en óf geïrriteerd alsnog afronden, óf de pagina direct verlaten. Controleren of iDEAL daadwerkelijk beschikbaar is, correct is geconfigureerd en visueel minstens zoveel prioriteit krijgt als creditcards in uw daadwerkelijke betaalstroom — en niet slechts ergens technisch verborgen in de code staat — is een controle van vijf minuten die u vóór de lancering moet doen, en niet pas na de eerste teleurstellende conversiemaand.
+
 ## De Eenvoudige Beslisregel voor Niet-Technische Oprichters
 
 Wilt u niet verdwalen in API-documentatie en fee-calculaties? Hanteer dan deze vuistregel:
@@ -102,7 +110,7 @@ Het analyseren en herstructureren van betaalintegraties is een standaardonderdee
 
 [Stuur ons uw prototypelink voor een kosteloze controle](https://launchstudio.eu/nl/#contact) van uw betaalstroom en ontdek of uw checkout klaar is voor de Nederlandse markt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: De Checkout Die Eruitzag Alsof Hij Werkte
 

@@ -68,6 +68,14 @@ Manifera rebuilt the authentication layer to integrate with the company's existi
 
 An enterprise mobile app shipped without proper SSO integration routinely suffers suppressed adoption from login friction and gets deprioritized by IT as an unmanaged system, undermining the business case that justified building it in the first place. Treating identity integration as core architecture from the start costs no more than proper initial planning, while retrofitting it after launch is a substantial, avoidable rework effort. [Talk to Manifera about SSO-first enterprise mobile development](https://www.manifera.com/contact-us/).
 
+## Technical Deep-Dive: The Mobile Token Lifecycle Checklist
+
+Protocol choice matters more on mobile than web: OAuth 2.0 with OIDC and PKCE (Proof Key for Code Exchange) is the correct standard for a native mobile app, not SAML, which was designed around browser redirects and handles poorly inside a native app's webview or system browser flow. A CTO's identity team may already run SAML for web SSO — the mobile app needs its own OIDC-based flow federated to the same identity provider, not a forced SAML retrofit.
+
+Token lifecycle specifics that need explicit decisions upfront: access tokens should expire short, typically 15-60 minutes, with silent refresh via a longer-lived refresh token (commonly 7-30 days, rotated on each use to limit replay risk). On-device storage belongs in the platform's secure enclave — iOS Keychain or Android Keystore — never in shared preferences or local storage, and should be gated behind device biometric or PIN unlock for an operations app handling production or inventory data.
+
+For a brewing-operations context specifically, factor in factory-floor connectivity gaps: define an explicit offline grace period (typically 15-30 minutes of continued app function on a cached, still-valid token) before forcing re-authentication, so a plant-floor dead zone doesn't lock an operator out mid-task. MFA enforcement should inherit directly from the identity provider's existing policy rather than being reimplemented in the app — duplicating MFA logic is a common source of the exact parallel-system maintenance burden SSO integration is meant to eliminate.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO commissioning an enterprise mobile app) Why does SSO integration need to be decided at the start of a mobile app project rather than added later?
@@ -90,6 +98,22 @@ Yes, standalone credentials create real friction — employees forget separate p
 
 A substantial rework effort touching authentication, session management, and permission mapping, materially more expensive than including it in the original architecture.
 
+### (Scenario: CTO whose identity team already runs SAML for web SSO) Should a native mobile app use the same SAML protocol as our existing web SSO, or something different?
+
+Something different — OAuth 2.0 with OIDC and PKCE is the correct standard for native mobile apps, federated to the same identity provider as your existing SAML web SSO, since SAML's browser-redirect design handles poorly inside a native app flow.
+
+### (Scenario: CTO deciding whether to layer biometrics on top of enterprise SSO) Should an enterprise mobile app add its own biometric login on top of SSO?
+
+Yes for the local unlock step — gate on-device secure storage (Keychain or Keystore) behind biometric or PIN unlock — but the underlying SSO session and MFA policy should still be inherited from the identity provider, not reimplemented as a separate app-level authentication system.
+
+### (Scenario: CTO planning for factory-floor connectivity gaps) How should an SSO-integrated operations app handle authentication when a plant-floor employee has no connectivity?
+
+Define an explicit offline grace period, typically 15-30 minutes of continued function on a cached, still-valid token, before forcing re-authentication, so a temporary dead zone doesn't lock an operator out mid-task.
+
+### (Scenario: CTO concerned about MFA policy consistency) Should MFA be enforced by the mobile app itself or by the identity provider?
+
+By the identity provider — inheriting MFA policy directly from the existing enterprise identity provider avoids duplicating enforcement logic in the app, which is one of the most common ways an SSO-integrated app quietly regrows the parallel-system maintenance burden it was meant to eliminate.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +123,11 @@ A substantial rework effort touching authentication, session management, and per
     { "@type": "Question", "name": "(Scenario: CTO worried about mobile-specific identity challenges) What's different about SSO on mobile compared to a web application?", "acceptedAnswer": { "@type": "Answer", "text": "Token refresh, offline session handling, and secure on-device credential storage all require deliberate design attention specific to mobile." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to avoid a separate permissions system) How do we avoid building a mobile app with its own parallel permissions system?", "acceptedAnswer": { "@type": "Answer", "text": "Map the app's role and access control directly to your existing enterprise identity groups." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to predict adoption risk before launch) Does requiring a separate login for an enterprise app actually suppress adoption meaningfully?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, standalone credentials create real friction and IT often declines to actively support unmanaged systems, both suppressing adoption." } },
-    { "@type": "Question", "name": "(Scenario: CTO estimating the cost of retrofitting SSO after launch) What does it cost to add proper SSO integration to an app that launched without it?", "acceptedAnswer": { "@type": "Answer", "text": "A substantial rework effort touching authentication, session management, and permission mapping, materially more expensive than including it originally." } }
+    { "@type": "Question", "name": "(Scenario: CTO estimating the cost of retrofitting SSO after launch) What does it cost to add proper SSO integration to an app that launched without it?", "acceptedAnswer": { "@type": "Answer", "text": "A substantial rework effort touching authentication, session management, and permission mapping, materially more expensive than including it originally." } },
+    { "@type": "Question", "name": "(Scenario: CTO whose identity team already runs SAML for web SSO) Should a native mobile app use the same SAML protocol as our existing web SSO, or something different?", "acceptedAnswer": { "@type": "Answer", "text": "OAuth 2.0 with OIDC and PKCE is the correct standard for native mobile apps, federated to the same identity provider as an existing SAML web SSO setup." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding whether to layer biometrics on top of enterprise SSO) Should an enterprise mobile app add its own biometric login on top of SSO?", "acceptedAnswer": { "@type": "Answer", "text": "Yes for local unlock of on-device secure storage, but the underlying SSO session and MFA policy should still be inherited from the identity provider." } },
+    { "@type": "Question", "name": "(Scenario: CTO planning for factory-floor connectivity gaps) How should an SSO-integrated operations app handle authentication when a plant-floor employee has no connectivity?", "acceptedAnswer": { "@type": "Answer", "text": "Define an explicit offline grace period, typically 15-30 minutes on a cached valid token, before forcing re-authentication." } },
+    { "@type": "Question", "name": "(Scenario: CTO concerned about MFA policy consistency) Should MFA be enforced by the mobile app itself or by the identity provider?", "acceptedAnswer": { "@type": "Answer", "text": "By the identity provider, inheriting existing MFA policy to avoid duplicating enforcement logic in the app." } }
   ]
 }
 </script>

@@ -57,6 +57,20 @@ Manifera's route-audits vóór de lancering worden uitgevoerd door het engineeri
 
 [Stuur een beschrijving van uw project door — verwacht een antwoord binnen een werkdag](https://launchstudio.eu/nl/#contact).
 
+## Andere Veelvoorkomende Achtergebleven Artefacten Buiten Debug-Routes
+
+Een vergeten debug-pagina is de meest voorkomende variant van dit patroon, maar het is slechts één van meerdere soorten "tijdelijke, voor nu"-beslissingen die stilletjes samen overleven naar productie. Ze zijn immers allemaal het resultaat van dezelfde onderliggende gewoonte — het acute probleem van vandaag oplossen zonder een concreet plan om er later op terug te komen.
+
+**Andere artefacten die het waard zijn om specifiek vóór de lancering te controleren:**
+
+- **Test- of seed-accounts met voorspelbare inloggegevens** — vroegtijdig aangemaakt om ontwikkeling eenvoudiger te maken, vaak met een overduidelijk te raden gebruikersnaam en wachtwoord zoals `admin/admin`. Ze blijven actief omdat de reguliere workflow van niemand ooit vereist om opnieuw met dat account in te loggen, waardoor niemand opmerkt dat het er nog steeds is.
+- **API-sleutels of geheimen die hard gecodeerd zijn in de broncode** in plaats van opgeslagen in omgevingsvariabelen, soms zelfs gecommit naar een openbare repository zonder dat iemand zich realiseerde dat de repository zelf openbaar toegankelijk was ingesteld.
+- **Gedetailleerde foutmeldingen (verbose errors) die aan blijven staan in productie** — tijdens de bouw waren ze buitengewoon nuttig, maar ze tonen exact dezelfde interne systeemdetails als een debug-route, alleen verspreid over reguliere foutafhandeling in plaats van op een speciale pagina.
+- **Feature flags of experimentele routes die ingeschakeld blijven** voor functionaliteit die intern werd getest en nooit bedoeld was om bereikbaar te zijn voor echte gebruikers — verschillend van een debug-route, maar gebouwd met exact dezelfde "even voor nu"-mentaliteit.
+- **Test- of voorbeeldgegevens die zijn achtergebleven in de productiedatabase** — tijdelijke klantrecords of testtransacties gemaakt tijdens de ontwikkeling, die echte gebruiksstatistieken kunnen vervuilen of, erger nog, tijdens een ondersteuningsgesprek per ongeluk kunnen worden aangezien voor gegevens van echte klanten.
+
+Geen van deze items vereist op zichzelf geavanceerde expertise om te herstellen zodra ze zijn gevonden — de daadwerkelijke uitdaging is hetzelfde als bij debug-routes: weten dat u specifiek naar deze hele categorie moet zoeken, in plaats van aan te nemen dat een werkend, gedemonstreerd product deze opschoonronde automatisch al heeft doorlopen.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De debug-pagina die maanden later nog steeds draaide
@@ -103,50 +117,42 @@ Een periodieke handmatige zoekopdracht is een redelijke gewoonte om op te bouwen
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Lập trình viên kinh nghiệm có tự động xóa debug route trước khi launch không?",
+      "name": "Zou een beveiligingsbewuste ontwikkelaar er zelf aan denken om debug-routes vóór de lancering te verwijderen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường là có do thói quen nghề nghiệp, nhưng founder không có background kỹ thuật rất dễ bỏ qua bước rà soát này."
+        "text": "Vaak wel, als een gevestigde gewoonte onder ervaren ontwikkelaars. Maar die gewoonte komt specifiek voort uit de aanleuring om de beoordeling van routes vóór de lancering te behandelen als een afzonderlijke, bewuste stap."
       }
     },
     {
       "@type": "Question",
-      "name": "Một trang debug bị bỏ quên có tự bản thân nó gây nguy hiểm không?",
+      "name": "Is een overgebleven debug-route op zichzelf gevaarlijk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có thể rất nguy hiểm nếu nó chứa thông tin đăng nhập/DB string, hoặc giúp kẻ xấu vẽ bản đồ hệ thống để tấn công."
+        "text": "Het kan op zichzelf gevaarlijk zijn als het rechtstreeks gevoelige informatie zoals inloggegevens blootstelt. En zelfs wanneer het \"alleen\" interne technische details blootstelt, verlaagt het de inspanning die nodig is om een afzonderlijke, ernstigere kwetsbaarheid elders te vinden."
       }
     },
     {
       "@type": "Question",
-      "name": "Ngoài debug route, những gì khác hay bị bỏ quên khi đưa ứng dụng lên chạy thực tế?",
+      "name": "Omvat Manifera's eigen ontwikkelingspraktijk dit soort route-inventarisatie als standaard?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tài khoản test (admin/admin), API key hardcode trong file code, log lỗi quá chi tiết và dữ liệu mẫu trong DB."
+        "text": "Het weerspiegelt standaardpraktijk overgedragen uit Manifera's bredere engineering-discipline – het behandelen van een route-audit vóór de lancering als een vereist checklist-item."
       }
     },
     {
       "@type": "Question",
-      "name": "Founder có nên lo lắng về lỗi này ngay cả khi ứng dụng chưa ra mắt công khai?",
+      "name": "Past een vergeten debug-route in het kader van bewuste architectuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, dọn dẹp ở giai đoạn chạy beta là rẻ nhất và ít gây gián đoạn nhất trước khi người dùng thực tế nạp dữ liệu thật."
+        "text": "Precies – niemand heeft bewust besloten om de blootstelling te laten bestaan, wat exact het punt is. Het bleef bestaan door simpele onoplettendheid."
       }
     },
     {
       "@type": "Question",
-      "name": "Cách nhanh nhất để tự rà soát xem app có dính trang debug không là gì?",
+      "name": "Kan een oprichter periodiek zoeken naar oude debug-routes in zijn eigen codebase?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tìm trong codebase các tên file/route có chữ debug, test, dump, admin hoặc kiểm tra lại file router/config."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Sau khi xóa trang debug có cần đổi lại password/API key không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nên đổi (rotate) lại credentials để đảm bảo an toàn nếu nghi ngờ trang debug đã bị quét trước đó."
+        "text": "Een periodieke handmatige zoekopdracht is een redelijke gewoonte om op te bouwen, maar het hangt ervan af of de oprichter onthoudt waar hij naar moet zoeken en betrouwbaar elk bestand controleert."
       }
     }
   ]

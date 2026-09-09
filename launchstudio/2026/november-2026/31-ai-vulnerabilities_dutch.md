@@ -68,6 +68,15 @@ Het bouwen van deze verdedigingsmechanismen vereist specialistische cybersecurit
 3. **Multi-Tenancy op Databaseniveau:** Strikte RLS in PostgreSQL/Supabase die data-kruisbesmetting wiskundig uitsluit.
 4. **Kwetsbaarheidstesten:** Geautomatiseerde prompt-injectiescans vóór de livegang om zwakke plekken te dichten.
 
+### Verdediging Tegen de OWASP Top 10 voor Large Language Models
+
+Applicaties die gebruikmaken van AI-modellen zijn vatbaar voor een geheel nieuw spectrum aan kwetsbaarheden. LaunchStudio beschermt uw codebase tegen de gevaarlijkste risico's:
+1. **Preventie van Indirecte Prompt Injection:** We bouwen strikte scheiding tussen gebruikersinstructies en niet-vertrouwde externe data (zoals webpagina's of geüploade documenten), waardoor verborgen commando's in externe bronnen nooit als systeeminstructies kunnen worden uitgevoerd.
+2. **Insecure Output Handling:** Output van een taalmodel wordt nooit blindelings gerenderd als ruwe HTML of direct uitgevoerd als shell-commando. Alle gegenereerde content passeert strikte context-afhankelijke escaping en sanitization.
+3. **Model Denial of Service Beheersing:** We stellen harde limieten in op het aantal verwerkte tokens en de maximale uitvoertijd per verzoek, wat voorkomt dat kwaadwillenden uw serverreserves uitputten met oneindig complexe prompts.
+4. **Bescherming Tegen Data Exfiltration:** Modeltools en API-functies worden begrensd met strikte permissies, waardoor de AI nooit gevoelige omgevingsvariabelen of interne systeemgegevens kan opvragen en doorsturen naar externe servers.
+5. **Continue Beveiligingstests in CI/CD:** We integreren geautomatiseerde fuzzing-tests die uw endpoints bestoken met duizenden bekende aanvalsvectoren om potentiële lekken vóór elke release te detecteren en te dichten.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De EdTech-Startup Die Slachtoffer Werd van Een Denial of Wallet Aanval

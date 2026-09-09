@@ -59,8 +59,7 @@ De kosten van een LaunchStudio-traject — €800 tot €3.500 voor het Launch R
 
 [Vraag een offerte aan voor het specifieke werk dat uw prototype nodig heeft](https://launchstudio.eu/nl/#contact) — en laat uw vriend weer gewoon uw vriend zijn, niet uw onbetaalde contractant.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Vriendschap Die Overleefde Omdat Het Werk Elders Werd Voortgezet
 
 Rosanne ter Haar, een foodblogger die recept-app-oprichter werd in Haarlem, bouwde ReceptRijk, een AI-gecureerde Nederlandse recepten-ontdekapp, met behulp van Lovable. Haar studievriendin Nienke, backend-ontwikkelaar bij een Nederlands fintechbedrijf, bood aan de backend te regelen — authenticatie, receptendatabase, favorieten — in haar vrije tijd.

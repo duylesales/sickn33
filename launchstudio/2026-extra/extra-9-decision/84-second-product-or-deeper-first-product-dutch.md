@@ -98,7 +98,7 @@ Dit vergt doorgaans twee tot vier weken gerichte refactoring zonder de frontend 
 
 [Deel uw prototype of codebase](https://launchstudio.eu/nl/#contact) voor een kosteloze technische review. Wij brengen direct in kaart of uw architectuur een tweede product voordelig maakt of juist onnodig duur, vóórdat u strategische verplichtingen aangaat.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Delftse Oprichtster Ontdekt de Werkelijke Kosten Vóór Haar Productlancering
 

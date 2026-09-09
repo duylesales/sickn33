@@ -72,6 +72,14 @@ The right compliance-driven QA vendor is not necessarily the one with the deepes
 
 Manifera's QA and testing practice works within regulated software delivery contexts where traceability and audit-ready documentation are part of the deliverable, not an afterthought. If you're scoping a compliance-driven QA engagement, our [custom software development](https://www.manifera.com/services/custom-software-development/) team can walk through how validation documentation gets built into the delivery process from day one.
 
+## Risk-Based Test Depth: How Classification Should Actually Change the Work
+
+IEC 62304's software safety classification (Class A: no injury possible, Class B: non-serious injury possible, Class C: death or serious injury possible) should visibly change the QA vendor's test depth, not just the paperwork wrapped around it. Class C components warrant unit test coverage typically at or above 90-100% for safety-critical code paths, full boundary and equivalence-class testing on every input, and independent code review beyond the original developer before any test is marked passed. Class A components — a settings screen with no clinical impact, for example — can reasonably run at standard functional test coverage (60-80%) without the same verification overhead, and a vendor applying Class C rigor uniformly across a whole codebase is usually padding hours, not protecting patients.
+
+Ask a shortlisted vendor to walk through how they'd classify three or four specific features from your actual product and what test depth follows from each classification — a vendor with real IEC 62304 mileage will give different, justified answers per feature rather than a single blanket coverage target. The same logic applies under GxP's risk-based validation approach (ICH Q9) and DORA's criticality tiering for financial-sector ICT systems: the standard exists precisely so testing effort scales with actual patient or financial risk, not with a vendor's default process template.
+
+Budget conversations should follow this classification too — quoting the same per-test-case rate across Class A and Class C work signals the vendor hasn't actually built risk-differentiated pricing into their model.
+
 ## Frequently Asked Questions
 
 ### What makes QA "compliance-driven" versus standard functional testing?
@@ -88,6 +96,18 @@ It is difficult below a certain team size, because segregation of duties require
 
 ### What is the single biggest reason auditors reject third-party test evidence?
 The most common rejection reason is a broken or incomplete traceability link — a test case with no linked requirement, or a re-test after a code change with no updated verification record. Environment documentation gaps and unverifiable tester identity are the next most common findings in practice.
+
+### (Scenario: evaluating an offshore or nearshore QA vendor for an FDA or EU MDR-regulated product) Does offshore delivery automatically disqualify a vendor from compliance-driven QA work?
+No — regulators care about evidence integrity and data handling, not the tester's physical location. What matters is a documented data processing agreement, individual non-shared credentials for every tester regardless of where they sit, and an honest answer on whether synthetic or de-identified data is used during verification testing rather than real patient or financial records.
+
+### (Scenario: a product's software safety classification changes mid-engagement, e.g. Class B reclassified to Class C) What happens to test evidence produced under the earlier classification?
+Existing evidence doesn't automatically become invalid, but it needs a documented gap analysis against the new classification's higher verification requirements, and any test that no longer meets the new depth threshold needs re-execution with the evidence trail showing why. A vendor's traceability tooling should flag every affected test case automatically rather than requiring a manual re-audit of the entire suite.
+
+### (Scenario: a vendor proposes AI-assisted test case generation for a regulated engagement) Is AI-generated test evidence acceptable to auditors?
+Auditors generally accept AI-assisted test case generation as a productivity tool, but the human accountability chain still has to be intact — a qualified person must review and approve each generated test case against the linked requirement before execution, and the audit trail needs to show that review occurred, not just that a tool produced output. Treat AI-generated tests as a draft requiring the same sign-off rigor as a human-written one, not a shortcut around segregation of duties.
+
+### (Scenario: a product must satisfy both FDA and EU MDR requirements simultaneously) Does test evidence need to be duplicated for each regulatory regime?
+Often the underlying test execution can be shared if the traceability matrix maps each test case to both frameworks' relevant requirements, but the documentation package presented to each regulator typically needs regime-specific formatting and, in some cases, additional risk documentation unique to that jurisdiction. Confirm this mapping capability specifically during vendor selection, since building it retroactively across two regulatory frameworks is materially more expensive than designing for it from the start.
 
 <script type="application/ld+json">
 {
@@ -132,6 +152,38 @@ The most common rejection reason is a broken or incomplete traceability link —
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "The most common rejection reason is a broken or incomplete traceability link — a test case with no linked requirement, or a re-test after a code change with no updated verification record. Environment documentation gaps and unverifiable tester identity are the next most common findings in practice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does offshore delivery automatically disqualify a vendor from compliance-driven QA work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — regulators care about evidence integrity and data handling, not the tester's physical location. What matters is a documented data processing agreement, individual non-shared credentials for every tester, and an honest answer on whether synthetic or de-identified data is used during verification testing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to test evidence produced under an earlier software safety classification if the product gets reclassified mid-engagement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Existing evidence doesn't automatically become invalid, but it needs a documented gap analysis against the new classification's higher verification requirements, and any test that no longer meets the new depth threshold needs re-execution. A vendor's traceability tooling should flag every affected test case automatically rather than requiring a manual re-audit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AI-generated test evidence acceptable to auditors in a regulated engagement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Auditors generally accept AI-assisted test case generation as a productivity tool, but the human accountability chain still has to be intact — a qualified person must review and approve each generated test case against the linked requirement before execution, with the audit trail showing that review occurred."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does test evidence need to be duplicated when a product must satisfy both FDA and EU MDR requirements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often the underlying test execution can be shared if the traceability matrix maps each test case to both frameworks' relevant requirements, but the documentation package presented to each regulator typically needs regime-specific formatting and sometimes additional risk documentation. Confirm this mapping capability during vendor selection rather than building it retroactively."
       }
     }
   ]

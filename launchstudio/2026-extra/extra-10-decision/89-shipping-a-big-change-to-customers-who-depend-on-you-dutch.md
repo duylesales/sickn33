@@ -92,7 +92,7 @@ Dat is een waardevol inzicht: behoud de nieuwe layout voor nieuwe klanten, maar 
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in productbegeleiding en enterprise DevOps) bouwen we veilige migratiestrategieën, feature flags en dual-run architecturen tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw productvernieuwing met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat u vernieuwt met behoud van uw klanten.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Het Redesign Waar Niemand Meer van Terug Kon
 

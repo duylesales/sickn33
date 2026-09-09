@@ -106,6 +106,10 @@ Roteer het onmiddellijk – het verwijderen ervan uit een toekomstige commit ver
 
 Het is in het bijzonder van toepassing op solo-oprichters – zonder een tweede ingenieur om een verspreide configuratie op te vangen tijdens een codebeoordeling, heeft de schuld de neiging sneller op te stapelen en langer onopgemerkt te blijven.
 
+### Wat kost een secrets-audit en environment consolidatie bij LaunchStudio?
+
+Het opschonen van alle hardcoded sleutels, opzetten van een schone env-structuur en voorzorgsmatige rotatie kost gemiddeld €750 en duurt 5 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

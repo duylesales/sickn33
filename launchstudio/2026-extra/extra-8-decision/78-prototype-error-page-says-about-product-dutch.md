@@ -58,8 +58,7 @@ Gebruikers maken geen onderscheid tussen "dit is een kleine bug" en "dit product
 
 [Laat uw prototype beoordelen](https://launchstudio.eu/nl/#contact) — foutafhandeling is een van de snelste, goedkoopste verbeteringen met de hoogste impact op gebruikersvertrouwen.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Het Witte Scherm Dat 40 Aanmeldingen Kostte
 
 Lieke Jansen, een loopbaancoach in Amsterdam, bouwde LoopbaanKompas, een met Lovable gebouwde carrièretest. Tijdens een gepromote LinkedIn-campagne die 280 bezoekers opleverde, kregen 40 gebruikers een leeg wit scherm te zien toen de assessment-API een time-outfout teruggaf. Geen foutmelding, geen retry-knop, geen uitleg — gewoon wit. Die 40 gebruikers gingen ervan uit dat het product kapot was en vertrokken. Lieke ontdekte het probleem pas drie dagen later, toen analytics een uitval van 14% bij de assessment-stap liet zien.

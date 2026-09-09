@@ -56,6 +56,12 @@ Manifera's cloud cost optimization engagements are structured around realized sa
 
 If you're a CFO evaluating a cloud cost optimization vendor and want an audit structure that ties fees to realized savings rather than a report you have to implement yourselves, get in touch with Manifera's team to discuss a scoped assessment of your current cloud spend.
 
+## What a Realized-Savings Clause Should Actually Specify
+
+If you take one structural change from this article into a contract, make it this: a follow-through clause with numbers attached, not a vague implementation promise. A workable clause specifies four things. First, a **baseline snapshot** — the exact monthly spend figure at the moment the audit concludes, timestamped and agreed by both sides, since savings can only be measured against a fixed starting point. Second, **named implementation owners** for each recommendation category, split between vendor-executed items (rightsizing, automated cleanup) and client-executed items (organizational approval for reserved instance commitments) — a recommendation with no named owner on either side is the one most likely to sit unimplemented at month eight. Third, **checkpoint reviews at 90 and 180 days**, comparing actual invoiced spend against the baseline, with the vendor required to reconcile any gap between projected and realized savings rather than letting the report's original number stand unchallenged. Fourth, if the fee structure includes a percentage-of-savings component, **define "realized" precisely** — spend reduction verified against actual invoices, not the vendor's own projection restated as fact.
+
+Without these four elements written down, an audit with an impressive headline number and no contractual teeth behind it defaults to exactly the outcome described in this article's opening: a report that sits in a shared drive while less than half its findings ever reach your actual invoice.
+
 ## Frequently Asked Questions
 
 ### What's a realistic amount of cloud waste to expect from an audit?
@@ -77,6 +83,22 @@ Ask the vendor for exclusions in writing before the audit begins. Common gaps in
 ### How can I verify a cloud cost audit vendor's track record before signing?
 
 Request actual before-and-after billing data, not a case study summary, from a client of comparable size and cloud maturity. A vendor with a genuine track record will typically have this evidence readily available with client permission to share it.
+
+### (Scenario: A CFO's finance team is drafting a follow-through clause and debating who owns implementing a reserved-instance recommendation) Who should own implementing a reserved-instance commitment recommendation — the vendor or the internal team?
+
+Typically the internal team, since committing to a reserved instance or savings plan usually requires budget authority and forecast sign-off that sits with finance and engineering leadership, not the audit vendor. Name that ownership explicitly in the contract rather than leaving it ambiguous, since ambiguous ownership is exactly how this category of recommendation goes unimplemented.
+
+### (Scenario: A vendor's 90-day checkpoint shows actual invoiced savings well below the audit's projected figure) What should happen if the 90-day checkpoint shows realized savings falling short of the audit's projection?
+
+The contract's reconciliation requirement should trigger here: the vendor is obligated to explain the gap and propose a remediation path, not simply let the original projected number stand as the reported outcome. This is exactly why the baseline snapshot and checkpoint reviews need to be specified upfront, before the audit begins, rather than negotiated after a shortfall is already visible.
+
+### (Scenario: A CFO is comparing an ongoing FinOps engagement against a cheaper one-time audit for a fast-scaling infrastructure footprint) How do I decide between a one-time audit and an ongoing FinOps engagement for a company that's growing quickly?
+
+Weigh the ongoing engagement's higher cumulative cost against how fast new waste accumulates after a single audit's snapshot goes stale — for infrastructure growing quickly, a one-time audit typically starts decaying within a couple of quarters as new resources are provisioned outside the original review. Ask a vendor proposing only a one-time audit to make the case for why it fits your specific growth trajectory rather than accepting it as the default.
+
+### (Scenario: A vendor's contract includes a percentage-of-savings fee but the definition of "savings" isn't spelled out) What exactly should count as "realized savings" in a percentage-of-savings fee agreement?
+
+Define it as spend reduction verified against actual invoiced amounts compared to the agreed baseline snapshot, not the vendor's own projected figure restated as achieved. Without this precise definition, a vendor could claim fee-triggering savings based on their own optimistic projection rather than what your actual monthly bill shows.
 
 <script type="application/ld+json">
 {
@@ -107,6 +129,26 @@ Request actual before-and-after billing data, not a case study summary, from a c
       "@type": "Question",
       "name": "How can I verify a cloud cost audit vendor's track record before signing?",
       "acceptedAnswer": { "@type": "Answer", "text": "Request actual before-and-after billing data, not a case study summary, from a client of comparable size and cloud maturity. A vendor with a genuine track record will typically have this evidence readily available." }
+    },
+    {
+      "@type": "Question",
+      "name": "Who should own implementing a reserved-instance commitment recommendation — the vendor or the internal team?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Typically the internal team, since committing to a reserved instance usually requires budget authority and forecast sign-off that sits with finance and engineering leadership. Name that ownership explicitly in the contract rather than leaving it ambiguous." }
+    },
+    {
+      "@type": "Question",
+      "name": "What should happen if the 90-day checkpoint shows realized savings falling short of the audit's projection?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The contract's reconciliation requirement should trigger: the vendor is obligated to explain the gap and propose a remediation path, not let the original projected number stand. This is why the baseline snapshot and checkpoints need to be specified upfront." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I decide between a one-time audit and an ongoing FinOps engagement for a company that's growing quickly?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Weigh the ongoing engagement's higher cumulative cost against how fast new waste accumulates after a single audit's snapshot goes stale. For quickly growing infrastructure, a one-time audit typically starts decaying within a couple of quarters." }
+    },
+    {
+      "@type": "Question",
+      "name": "What exactly should count as \"realized savings\" in a percentage-of-savings fee agreement?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Spend reduction verified against actual invoiced amounts compared to the agreed baseline snapshot, not the vendor's own projected figure restated as achieved. Without this precise definition, fee-triggering savings could be based on optimism rather than your actual bill." }
     }
   ]
 }

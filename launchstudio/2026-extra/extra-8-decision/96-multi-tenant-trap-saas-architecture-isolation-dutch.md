@@ -62,8 +62,7 @@ Enterprise-multi-tenancy vereist dat beveiligingsafdwinging wordt verplaatst uit
 
 [Laat uw multi-tenant beveiliging auditen voordat u enterprise-klanten aan boord neemt](https://launchstudio.eu/nl/#contact).
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een Scale-Up-Oprichter in de Praktijk: Een Enterprise-Beveiligingsbeoordeling Doorstaan
 
 Liesbeth Koeman, oprichter van VlootSlim (een SaaS voor wagenparktelematica en voertuigonderhoud in Rotterdam), had 8 kleine logistieke pilotklanten. Een landelijke transporteur met 180 voertuigen vroeg om een pilot, waarvoor een externe cybersecurity-architectuurbeoordeling vereist was voordat hun wagenpark-API kon worden gekoppeld.

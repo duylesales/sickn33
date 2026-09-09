@@ -59,16 +59,28 @@ Manifera's audits voor geheimen en configuratie worden uitgevoerd door het engin
 
 [Laten we aan de slag gaan — van prototype tot productie in weken](https://launchstudio.eu/nl/#contact).
 
-## Voorbij API-sleutels: Een volledigere geheimenchecklist vóór de lancering
+## Verder Dan API-Sleutels: Een Volledige Pre-Launch Geheimen-Checklist
 
-API-sleutels krijgen de meeste aandacht omdat ze het meest duidelijk schadelijk zijn bij blootstelling. Maar een oprecht grondige controle vóór de lancering controleert meerdere andere categorieën van geheimen die net zo gemakkelijk ergens achtergelaten worden waar ze niet zouden moeten zitten.
+API-sleutels krijgen doorgaans de meeste aandacht omdat de schade bij een lek direct overduidelijk is. Een grondige pre-launch inspectie controleert echter meerdere andere categorieën van geheimen die net zo gemakkelijk rondslingeren op plekken waar ze niet thuishoren:
 
-**Kijk voorbij `.env`-bestanden naar deze veelvoorkomende lekpunten**
+**Kijk verder dan `.env`-bestanden naar deze veelvoorkomende lekpunten:**
 
-- **Webhook ondertekenings-geheimen** — gebruikt om te verifiëren dat een binnenkomende webhook (van Stripe, GitHub, of een andere dienst) oprecht afkomstig is van die provider
-- **OAuth-app clientgeheimen** — het inloggegeven achter "Inloggen met Google" of vergelijkbare integraties
-- **Database verbindings-tekenreeksen (connection strings)** — deze bevatten vaak een gebruikersnaam en wachtwoord rechtstreeks in de URL zelf, en worden geplakt in scripts of documentatie
-- **CI/CD uitrol-tokens** — inloggegevens opgeslagen in een build-pijplijnconfiguratie
+- **Webhook-ondertekeningsgeheimen (Webhook Signing Secrets):** Gebruikt om te verifiëren dat een inkomende webhook (van Stripe, Mollie of GitHub) daadwerkelijk afkomstig is van die provider. Als dit geheim lekt, kan een aanvaller vervalste webhook-berichten sturen die uw applicatie als legitieme betalingen accepteert.
+- **OAuth-applicatie client-secrets:** De inloggegevens achter functies zoals "Inloggen met Google" of "Koppelen met Slack", die strikt aan de serverzijde moeten blijven.
+- **Database-verbindingsstrings:** Deze bevatten vaak een gebruikersnaam en wachtwoord direct in de URL (`postgresql://user:pass@host/db`) en worden in de praktijk veel te nonchalant in testscripts, notebooks of documentatie geplakt.
+- **CI/CD deployment-tokens:** Referenties die zijn opgeslagen in een build-pipeline en soms per ongeluk zichtbaar zijn in openbare build-logs.
+
+**Controleer ook documentatie en chatgeschiedenis, niet alleen code**
+
+Een verrassend groot aantal gelekte sleutels heeft nooit in een git-commit gestaan — ze zijn ooit geplakt in een gedeeld Notion-document, een Slack-bericht naar een freelancer, of in de promptgeschiedenis van een AI-tool die later openbaar is gedeeld. Elke plek waar een sleutel ooit is getypt, verdient een moment van aandacht vóór lancering.
+
+**Begrijp wat 'roteren' inhoudt voor elk type geheim**
+
+Het roteren van een standaard API-sleutel is eenvoudig: maak een nieuwe aan, werk de configuratie bij en trek de oude in. Het roteren van een webhook-secret vereist echter gelijktijdige configuratie bij zowel uw app als de betalingsprovider om leveringsstoringen te voorkomen. Het roteren van een databasewachtwoord vereist zorgvuldigheid om actieve databaseconnecties niet abrupt te verbreken.
+
+**Onderhoud een actuele inventaris van al uw externe diensten**
+
+Een beknopte lijst van elke externe dienst die in uw product is geïntegreerd — waar deze voor dient, waar de inloggegevens staan en wanneer ze voor het laatst zijn geroteerd — maakt van een periodieke kwartaalaudit een routineklus van vijf minuten in plaats van een chaotische zoektocht.
 
 ## Echt voorbeeld
 
@@ -116,50 +128,42 @@ Als een oprichter zelfvertrouwen heeft dat elke sleutel is gevonden en geroteerd
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is een maand van openbare sleutelblootstelling een ernstig risicovenster?",
+      "name": "Zou een beveiligingsonderzoeker een maand van openbare blootstelling beschouwen als een ernstig venster?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, geautomatiseerde scanners werken op minuten- tot urenschaal, dus một tháng phải coi như đã bị lộ hoàn toàn."
+        "text": "Ernstig – geautomatiseerde scanners die specifiek openbare repositories doorzoeken op blootgestelde inloggegevens werken typisch op een tijdsschaal van minuten tot uren, en niet weken. Een maand van blootstelling moet dus worden behandeld alsof de sleutel definitief is gevonden."
       }
     },
     {
       "@type": "Question",
-      "name": "Is het risico van lộ key chỉ có ở GitHub?",
+      "name": "Is dit specifiek een GitHub-probleem, of geldt het voor andere platforms?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, nó áp dụng cho tất cả các nền tảng lưu trữ code có tùy chọn public."
+        "text": "Het geldt universeel voor elk code-hosting platform met een openbare zichtbaarheidsoptie – GitLab, Bitbucket en anderen staan voor het identieke onderliggende risico."
       }
     },
     {
       "@type": "Question",
-      "name": "Quy trình xử lý key bị lộ có khác nhau giữa startup và enterprise?",
+      "name": "Vormt Manifera's ervaring met enterprise-klanten de afhandeling voor kleine founder-apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, quy trình rotate-and-migrate là giống nhau bất kể quy mô công ty."
+        "text": "De specifieke afhandeling verandert niet – hetzelfde proces van roteren en migreren geldt of de blootgestelde sleutel nu toebehoort aan een bruiloftplanningstool of aan het productiesysteem van een enterprise-klant."
       }
     },
     {
       "@type": "Question",
-      "name": "Default public repo có phải là lỗ hổng phổ biến ở founder?",
+      "name": "Past een standaard openbare repo in het lek dat de CEO beschrijft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, đây là default mà founder không có background security rất dễ bỏ qua."
+        "text": "Ja, precies – een instelling voor de zichtbaarheid van een openbare repository is het soort standaardwaarde dat een oprichter zonder beveiligingsachtergrond geen specifieke reden heeft om in twijfel te trekken."
       }
     },
     {
       "@type": "Question",
-      "name": "Cách xử lý đúng nhất khi phát hiện lộ API key là gì?",
+      "name": "Als een oprichter dit zelf opvangt vóór de lancering, is een professionele audit dan nog steeds de moeite waard?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tạo key mới (rotate), cập nhật env variable, hủy key cũ (revoke) và chuyển repo sang private."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ngoài API key, những secret nào khác hay bị leak?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Webhook signing secrets, OAuth client secrets, Database connection strings và CI/CD deployment tokens."
+        "text": "Als een oprichter zelfvertrouwen heeft dat elke sleutel is gevonden en geroteerd, kan een volledige audit beperkte aanvullende waarde toevoegen – hoewel het betrouwbaar bevestigen daarvan over een gehele repository-geschiedenis exact het soort systematische controle is dat gemakkelijk gedeeltelijk wordt gedaan."
       }
     }
   ]

@@ -64,6 +64,12 @@ The claims platform demo tells you almost nothing about integration risk — tha
 
 Manifera has built the middleware and integration layers that make claims platforms work against real, imperfect legacy insurance cores — not the idealized environment vendor demos are built against. If your team is scoping a claims platform selection or stuck mid-integration with a vendor whose assumptions did not match your core system's reality, our [portfolio](https://www.manifera.com/portfolio/) includes relevant integration work, and [our team](https://www.manifera.com/contact-us/) can review your specific core system's constraints before you finalize a vendor contract.
 
+## By the Numbers: What Legacy Core Integration Actually Adds to the Project
+
+A middleware layer bridging a batch-only mainframe core to a modern claims platform typically adds 20-35% to the total implementation timeline and budget over what the vendor's initial scope estimate assumes — and that figure is rarely disclosed until discovery work is already underway, because it depends entirely on your specific core's data model, not the claims platform's own architecture. Insurers integrating against a true batch-only mainframe core should budget three to six additional months versus a comparable project against a modern REST-API core, purely for the middleware build and field-mapping exercise.
+
+On straight-through processing specifically, expect the demoed STP rate to drop 15-30 percentage points when re-measured against a batch-updated core versus the real-time environment the vendor benchmarked it in — a gap driven almost entirely by claims filed against recently-changed policies that the platform can't yet see. For parallel run sign-off, set your discrepancy tolerance in writing before testing begins: a reasonable target is under 0.5% material discrepancy (incorrect coverage determination or settlement amount) across the full test population, not an informal "looks close enough" judgment call after four weeks of side-by-side processing. Migration projects touching historical claims data should budget a dedicated data quality assessment pass covering at minimum the last seven years of claims history, since that's the typical statute-of-limitations window across most US and EU jurisdictions for claims reopening or litigation discovery.
+
 ## Frequently Asked Questions
 
 ### How does a legacy mainframe core system limit claims platform automation?
@@ -80,6 +86,18 @@ At minimum four to eight weeks, covering a representative cross-section of claim
 
 ### What exit terms should be negotiated before signing a claims platform vendor contract?
 Confirm the data export format and timeline at contract end, whether historical claims data including attachments and audit trail is fully portable, and whether any integration middleware built during implementation is owned by your organization or licensed only for that vendor's platform.
+
+### (Scenario: An IT manager is presenting a budget request that a vendor's initial proposal didn't account for) How much extra budget should we request for middleware when our core system is batch-only?
+Plan for 20-35% above the claims platform vendor's initial scope estimate to cover field mapping, data transformation, and caching to compensate for batch latency. Present this as a known, quantifiable line item during budget approval rather than an unexpected change order that surfaces mid-project.
+
+### (Scenario: A vendor's sales team is citing a strong STP rate from a reference client) The vendor's reference client sees a 70% straight-through-processing rate — should we expect the same? 
+Only if that reference client runs a comparably modern, real-time core system. Against a batch-updated mainframe, expect the same platform's STP rate to fall 15-30 percentage points due to claims being evaluated against stale policy data, so ask the vendor for a reference client whose core system generation matches yours, not their best overall number.
+
+### (Scenario: Legal counsel asks IT to confirm how far back migrated claims data needs to be quality-checked) How many years of historical claims data actually need a data quality assessment before migration?
+At minimum the last seven years, matching the typical statute-of-limitations window across most US and EU jurisdictions for claims reopening or litigation discovery. Older records still in active use for long-tail lines like liability or workers' comp may need a longer look depending on your specific book of business.
+
+### (Scenario: A vendor proposes shortening the parallel run to hit a public go-live date) Is it ever acceptable to compress the parallel run below four weeks to meet a go-live deadline?
+Generally no for claims platforms specifically, because the highest-cost failure modes — mispriced settlements, missed subrogation, incorrect coverage determination — surface at claim volume and diversity a short pilot rarely captures. If a deadline genuinely can't move, narrow the parallel run's claim-type scope rather than its duration, and get the reduced scope's risk trade-off signed off explicitly.
 
 <script type="application/ld+json">
 {
@@ -110,6 +128,26 @@ Confirm the data export format and timeline at contract end, whether historical 
       "@type": "Question",
       "name": "What exit terms should be negotiated before signing a claims platform vendor contract?",
       "acceptedAnswer": {"@type": "Answer", "text": "Confirm the data export format and timeline at contract end, whether historical claims data including attachments and audit trail is fully portable, and whether any integration middleware built during implementation is owned by your organization or licensed only for that vendor's platform."}
+    },
+    {
+      "@type": "Question",
+      "name": "How much extra budget should we request for middleware when our core system is batch-only?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Plan for 20-35% above the claims platform vendor's initial scope estimate to cover field mapping, data transformation, and caching to compensate for batch latency. Present this as a known, quantifiable line item during budget approval rather than an unexpected change order that surfaces mid-project."}
+    },
+    {
+      "@type": "Question",
+      "name": "The vendor's reference client sees a 70% straight-through-processing rate — should we expect the same?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Only if that reference client runs a comparably modern, real-time core system. Against a batch-updated mainframe, expect the same platform's STP rate to fall 15-30 percentage points due to claims being evaluated against stale policy data, so ask the vendor for a reference client whose core system generation matches yours, not their best overall number."}
+    },
+    {
+      "@type": "Question",
+      "name": "How many years of historical claims data actually need a data quality assessment before migration?",
+      "acceptedAnswer": {"@type": "Answer", "text": "At minimum the last seven years, matching the typical statute-of-limitations window across most US and EU jurisdictions for claims reopening or litigation discovery. Older records still in active use for long-tail lines like liability or workers' comp may need a longer look depending on your specific book of business."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is it ever acceptable to compress the parallel run below four weeks to meet a go-live deadline?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Generally no for claims platforms specifically, because the highest-cost failure modes — mispriced settlements, missed subrogation, incorrect coverage determination — surface at claim volume and diversity a short pilot rarely captures. If a deadline genuinely can't move, narrow the parallel run's claim-type scope rather than its duration, and get the reduced scope's risk trade-off signed off explicitly."}
     }
   ]
 }

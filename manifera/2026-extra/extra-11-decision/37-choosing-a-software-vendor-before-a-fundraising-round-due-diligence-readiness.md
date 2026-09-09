@@ -61,6 +61,16 @@ Vendor and contractor decisions made well before a fundraising round directly de
 }
 </script>
 
+## Diligence Findings by Severity: What Actually Delays a Term Sheet
+
+Not every finding carries the same weight, and founders who don't know the difference waste pre-raise audit time on low-severity issues while missing the ones that actually stall a term sheet. In practice, diligence findings sort into three tiers:
+
+- **Deal-stalling (re-price or delay):** missing IP assignment from a founder, employee, or vendor who contributed code still in production; vendor contracts with no work-for-hire language; production credentials found in a public repository history. These force a pause while counsel assesses exposure, and they're the findings behind the 10-20% re-pricing or multi-week delays diligence teams report most often.
+- **Negotiation friction (raises questions, rarely kills a deal):** inconsistent contract templates across vendors, unclear source-code escrow terms, thin test coverage with no documented rationale. These get flagged and discussed but rarely change terms if the founder has credible answers ready.
+- **Noted but not blocking:** minor documentation gaps, outdated dependency versions with no known exploit, informal early-stage contractor work under €5,000 total that's since been superseded by a proper agreement.
+
+The practical implication: a pre-raise audit should triage by this hierarchy rather than treating every gap as equally urgent — fix every deal-stalling item before opening data room access, and address the rest opportunistically. A diligence team that finds the deal-stalling category clean, even with some lower-tier gaps still open, moves substantially faster than one that finds a mix of everything unaddressed.
+
 ## Frequently Asked Questions
 
 ### What is the most common vendor-related finding that stalls a fundraising round?
@@ -83,6 +93,22 @@ Explicit, unambiguous IP assignment language transferring code and related work 
 
 Whether production credentials or API keys were ever committed to an improperly permissioned repository, whether reasonable access control and credential rotation practices were followed, and whether any past security incidents were properly disclosed and remediated rather than quietly patched.
 
+### (Scenario: founder unsure which pre-raise gaps to prioritize with limited time) If a founder only has time to fix a few things before a raise, what should come first?
+
+Fix every gap in the deal-stalling tier first: missing IP assignment on any code still in production, vendor contracts lacking work-for-hire language, and any exposed production credentials. These are the findings most likely to cause a re-price or multi-week delay, while lower-severity items like inconsistent contract templates rarely change deal terms on their own.
+
+### (Scenario: an early contractor who wrote code is now unreachable) What happens if a contributor who wrote early code can't be found to sign a retroactive IP assignment?
+
+Counsel can sometimes rely on work-for-hire defaults or an implied license depending on jurisdiction and original engagement terms, but this is a genuinely weaker position than a signed assignment and often requires a formal legal opinion to satisfy investor counsel. It's a strong argument for insisting on signed IP assignment at the time of every engagement, however small, rather than relying on retroactive fixes.
+
+### (Scenario: startup used multiple freelancers with inconsistent contracts) How should a startup handle diligence when it has years of inconsistent freelancer agreements?
+
+Consolidate everything into a single tracking document mapping every contributor, engagement dates, and contract status, then prioritize getting signed IP assignment and confidentiality terms for anyone whose code is still live in production — a diligence team cares far more about coverage of current production code than about paperwork for code that's since been fully replaced.
+
+### (Scenario: founder wants to know if a vendor's standard contract is diligence-ready) What's the fastest way to check if a vendor's standard contract template will hold up under diligence?
+
+Have a startup lawyer do a one-time, fixed-fee review of the vendor's standard contract template before signing — checking specifically for explicit IP assignment language, confidentiality clauses, and source code and credential handling terms at engagement end — rather than discovering gaps only when a future diligence team reads the same document.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,7 +118,11 @@ Whether production credentials or API keys were ever committed to an improperly 
     {"@type": "Question", "name": "How far in advance of a raise should a startup audit its vendor contracts?", "acceptedAnswer": {"@type": "Answer", "text": "Six to twelve months before an intended raise. This gives enough time to track down missing signatures, fix contract gaps, and remediate any security findings on your own timeline, rather than discovering them during a live diligence process when delays carry real deal-momentum cost."}},
     {"@type": "Question", "name": "Do investors actually scan the codebase during technical due diligence?", "acceptedAnswer": {"@type": "Answer", "text": "Increasingly yes, especially at Series A and beyond. Diligence teams run structured scans checking dependency licenses, known security vulnerabilities, and code provenance, in addition to interviewing the technical team — meaning gaps that were invisible in conversation surface directly in the audit."}},
     {"@type": "Question", "name": "What should every vendor contract include to survive future diligence?", "acceptedAnswer": {"@type": "Answer", "text": "Explicit, unambiguous IP assignment language transferring code and related work product to the company on payment, confidentiality and data protection clauses, and clear terms on what happens to source code and credentials if the engagement ends. Using one consistent contract template across all vendors, rather than ad hoc agreements, makes future audits far faster."}},
-    {"@type": "Question", "name": "What security practices do diligence teams typically check for?", "acceptedAnswer": {"@type": "Answer", "text": "Whether production credentials or API keys were ever committed to an improperly permissioned repository, whether reasonable access control and credential rotation practices were followed, and whether any past security incidents were properly disclosed and remediated rather than quietly patched."}}
+    {"@type": "Question", "name": "What security practices do diligence teams typically check for?", "acceptedAnswer": {"@type": "Answer", "text": "Whether production credentials or API keys were ever committed to an improperly permissioned repository, whether reasonable access control and credential rotation practices were followed, and whether any past security incidents were properly disclosed and remediated rather than quietly patched."}},
+    {"@type": "Question", "name": "If a founder only has time to fix a few things before a raise, what should come first?", "acceptedAnswer": {"@type": "Answer", "text": "Fix every gap in the deal-stalling tier first: missing IP assignment on any code still in production, vendor contracts lacking work-for-hire language, and any exposed production credentials — these cause re-prices or multi-week delays, while lower-severity items rarely change deal terms on their own."}},
+    {"@type": "Question", "name": "What happens if a contributor who wrote early code can't be found to sign a retroactive IP assignment?", "acceptedAnswer": {"@type": "Answer", "text": "Counsel can sometimes rely on work-for-hire defaults or an implied license depending on jurisdiction, but this is a weaker position than a signed assignment and often requires a formal legal opinion to satisfy investor counsel."}},
+    {"@type": "Question", "name": "How should a startup handle diligence when it has years of inconsistent freelancer agreements?", "acceptedAnswer": {"@type": "Answer", "text": "Consolidate every contributor, engagement date, and contract status into one tracking document, then prioritize signed IP assignment for anyone whose code is still live in production — coverage of current production code matters far more than paperwork for replaced code."}},
+    {"@type": "Question", "name": "What's the fastest way to check if a vendor's standard contract template will hold up under diligence?", "acceptedAnswer": {"@type": "Answer", "text": "Have a startup lawyer do a one-time, fixed-fee review of the vendor's standard contract template before signing, checking for explicit IP assignment language, confidentiality clauses, and source code and credential handling terms at engagement end."}}
   ]
 }
 </script>

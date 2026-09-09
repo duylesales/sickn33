@@ -61,6 +61,27 @@ Manifera's beoordelingen van sessiebeveiliging worden uitgevoerd door het engine
 
 [Freelancer of kleine studio? Wij zijn het engineeringteam achter uw merk](https://launchstudio.eu/nl/#contact).
 
+## De Drie Cookie-Vlaggen, Uitgelegd in Heldere Taal
+
+Voor een oprichter of bureau-eigenaar zonder diepe beveiligingsachtergrond kunnen 'cookie-vlaggen' abstract klinken. Afzonderlijk bekeken is elke vlag echter een specifiek, begrijpelijk antwoord op een heel concrete beveiligingsvraag.
+
+**1. HttpOnly — kan JavaScript op de pagina dit cookie uitlezen?**
+
+Zonder deze vlag kan elk script dat in de browser draait — inclusief een kwaadaardig script dat is geïnjecteerd via een niet-gerelateerde XSS-kwetsbaarheid elders in de app — het sessiecookie rechtstreeks uitlezen via `document.cookie` en de waarde naar een externe server sturen. Met `HttpOnly` ingeschakeld wordt het cookie uitsluitend automatisch door de browser meegestuurd in HTTP-verzoeken naar de backend; geen enkel script op de pagina, kwaadaardig of legitiem, kan de inhoud ervan ooit inzien.
+
+**2. Secure — wordt dit cookie ooit over een onbeveiligde verbinding verzonden?**
+
+Zonder deze vlag kan het cookie technisch gezien worden verzonden over een onversleutelde HTTP-verbinding als die ooit optreedt — door een verkeerd geconfigureerde redirect, een verouderde link of een tussenliggend netwerk dat verkeer afluistert. Met de vlag `Secure` weigert de browser resoluut om het cookie te verzenden tenzij de verbinding volledig versleuteld is via HTTPS, waardoor dat specifieke lek volledig wordt afgesloten.
+
+**3. SameSite — wordt dit cookie meegestuurd bij verzoeken vanaf een andere website?**
+
+Zonder een passende `SameSite`-instelling kan een kwaadaardige website die een gebruiker in een ander browsertabblad opent, verzoeken initiëren die het sessiecookie van het slachtoffer meedragen naar uw applicatie zonder diens medeweten — een ontwerpfout genaamd Cross-Site Request Forgery (CSRF). Een correct geconfigureerde SameSite-waarde (zoals `SameSite=Lax`) beperkt exact wanneer het cookie aan externe verzoeken wordt gekoppeld en sluit misbruik betrouwbaar uit.
+
+**Waarom AI-codeertools het cookie zelf vaak wel instellen, maar de vlaggen overslaan**
+
+Het instellen van een cookie dat een gebruiker succesvol ingelogd houdt, vereist technisch gezien alleen een naam en een waarde — de browser accepteert en gebruikt het immers in beide gevallen. De drie vlaggen zijn optionele parameters die het gedrag van het cookie verfijnen in situaties waar een simpele prompt zoals 'houd de gebruiker ingelogd' nooit specifiek om vraagt. Dat is precies waarom een vlekkeloos werkende login en een onbeschermd, blootgesteld cookie perfect naast elkaar kunnen bestaan zonder dat het systeem er ogenschijnlijk kapot uitziet.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De cookievlaggen die de overdracht bijna miste
@@ -80,25 +101,25 @@ Saskia's team richtte zich op het bevestigen dat de boekings- en dispatch-stroom
 
 ## Veelgestelde vragen
 
-### Zou een webbeveiligingsspecialist ontbrekende cookievlaggen beschouwen als een betekenisvolle kloof?
+### Waarom is `HttpOnly` de allerbelangrijkste vlag voor sessiecookies?
 
-Ja, betekenisvol vanwege de manier waarop het communiceert met andere potentiële kwetsbaarheden – het verwijdert een verdedigingslaag.
+Omdat `HttpOnly` voorkomt dat kwaadaardige JavaScript-code op de pagina (bijvoorbeeld geïnjecteerd via een XSS-aanval of een gecompromitteerde externe npm-bibliotheek) toegang krijgt tot het cookie via `document.cookie`. Zonder deze vlag kan een aanvaller het actieve sessietoken direct ontvreemden en het account overnemen.
 
-### Verschilt dit detail per specifieke AI-tool die het project bouwde?
+### Wat is het praktische verschil tussen `SameSite=Lax` en `SameSite=Strict`?
 
-Niet bijzonder per tool – de configuratie van cookievlaggen is een algemeen webontwikkelingsdetail dat elke AI-tool al dan niet standaard opneemt.
+`SameSite=Strict` stuurt het cookie nooit mee bij verzoeken die afkomstig zijn van een externe website, zelfs niet als een gebruiker op een gewone link in een e-mail of zoekmachine klikt (waardoor de gebruiker opnieuw moet inloggen). `SameSite=Lax` biedt uitstekende bescherming tegen CSRF-aanvallen terwijl normale externe navigatie probleemloos ingelogd blijft.
 
-### Maakt Manifera's ervaring met sessiebeveiliging uit voor partnerwerk met bureaus?
+### Waarom configureren AI-codeertools deze drie cookie-vlaggen zo vaak niet standaard?
 
-Ja, rechtstreeks – de specifieke configuratiecontrole is identiek, ongeacht of de relatie rechtstreeks met de oprichter of via een bureau is.
+Omdat starter-templates en AI-prompts vaak zijn ingesteld op maximaal gemak tijdens lokale ontwikkeling op `localhost` (waar HTTPS vaak ontbreekt). De code werkt lokaal zonder foutmeldingen, en de stap om voor productie expliciet `Secure; HttpOnly; SameSite=Lax` te forceren wordt vergeten tenzij een engineer dit actief controleert.
 
-### Illustreert deze casus de waarde van een systematische review?
+### Manifera bouwt webapplicaties met strenge beveiligingseisen — hoe toetst het team cookie-instellingen?
 
-Heel goed – de waarde was niet een eenmalige ontdekking, maar het toepassen van dezelfde systematische controlelijst die op elk project wordt toegepast.
+Als vast onderdeel van de deployment-audits controleert Manifera geautomatiseerd de Set-Cookie headers in staging- en productieomgevingen om te waarborgen dat elk authenticatietoken voldoet aan moderne beveiligingsstandaarden.
 
-### Moet een bureau cookie-vlagverificatie toevoegen aan zijn eigen interne QA-controlelijst?
+### Kan een oprichter zelf in zijn eigen browser zien of zijn cookies correct zijn ingesteld?
 
-Het toevoegen aan een interne controlelijst is een redelijke stap, hoewel het handhaven van bewustzijn over het volledige spectrum aan beveiliging baat heeft bij een gespecialiseerde partner.
+Ja, open de browserdeveloper tools, navigeer naar het tabblad 'Application' (of 'Opslag'), selecteer 'Cookies' onder het domein, en controleer de kolommen voor `HttpOnly`, `Secure` en `SameSite`. Als hier vinkjes ontbreken bij sessietokens, is directe actie vereist.
 
 <script type="application/ld+json">
 {
@@ -107,42 +128,42 @@ Het toevoegen aan een interne controlelijst is een redelijke stap, hoewel het ha
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Các thuộc tính bảo mật Cookie (Cookie Flags như HttpOnly, Secure, SameSite) là gì?",
+      "name": "Waarom is `HttpOnly` de allerbelangrijkste vlag voor sessiecookies?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "HttpOnly ngăn JavaScript đọc Cookie (chống XSS), Secure chỉ cho gửi Cookie qua HTTPS, và SameSite ngăn chặn tấn công giả mạo yêu cầu (CSRF)."
+        "text": "Omdat `HttpOnly` voorkomt dat kwaadaardige JavaScript-code op de pagina (bijvoorbeeld geïnjecteerd via een XSS-aanval of een gecompromitteerde externe npm-bibliotheek) toegang krijgt tot het cookie via `document.cookie`. Zonder deze vlag kan een aanvaller het actieve sessietoken direct ontvreemden en het account overnemen."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao AI tool lại hay quên bật các thuộc tính HttpOnly và Secure cho Cookie?",
+      "name": "Wat is het praktische verschil tussen `SameSite=Lax` en `SameSite=Strict`?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì không bật cờ thì Cookie vẫn hoạt động và đăng nhập thành công trên môi trường Demo/Dev, khiến AI và lập trình viên coi đó là đã xong."
+        "text": "`SameSite=Strict` stuurt het cookie nooit mee bij verzoeken die afkomstig zijn van een externe website, zelfs niet als een gebruiker op een gewone link in een e-mail of zoekmachine klikt (waardoor de gebruiker opnieuw moet inloggen). `SameSite=Lax` biedt uitstekende bescherming tegen CSRF-aanvallen terwijl normale externe navigatie probleemloos ingelogd blijft."
       }
     },
     {
       "@type": "Question",
-      "name": "Các Agency/Freelancer khi nhận bàn giao code từ Client nên kiểm tra những gì?",
+      "name": "Waarom configureren AI-codeertools deze drie cookie-vlaggen zo vaak niet standaard?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Giữ lại toàn bộ giao diện (Frontend) và logic nghiệp vụ tốt, chỉ tập trung kiểm tra và vá các lỗ hổng ẩn ở Backend như Cookie Flags, CORS, Rate Limit và SQL Injection."
+        "text": "Omdat starter-templates en AI-prompts vaak zijn ingesteld op maximaal gemak tijdens lokale ontwikkeling op `localhost` (waar HTTPS vaak ontbreekt). De code werkt lokaal zonder foutmeldingen, en de stap om voor productie expliciet `Secure; HttpOnly; SameSite=Lax` te forceren wordt vergeten tenzij een engineer dit actief controleert."
       }
     },
     {
       "@type": "Question",
-      "name": "Cách tự kiểm tra Cookie Flags trên trình duyệt cực nhanh?",
+      "name": "Manifera bouwt webapplicaties met strenge beveiligingseisen — hoe toetst het team cookie-instellingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "F12 -> tab Application -> chọn Cookies -> xem các cột HttpOnly, Secure, SameSite xem có tích v xanh hoặc hiển thị thông số chưa."
+        "text": "Als vast onderdeel van de deployment-audits controleert Manifera geautomatiseerd de Set-Cookie headers in staging- en productieomgevingen om te waarborgen dat elk authenticatietoken voldoet aan moderne beveiligingsstandaarden."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian kiểm tra và cấu hình chuẩn hóa Cookie Session mất bao lâu?",
+      "name": "Kan een oprichter zelf in zijn eigen browser zien of zijn cookies correct zijn ingesteld?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường hoàn thành rất nhanh trong 3-5 ngày làm việc dưới dạng dịch vụ White-label cho các Agency."
+        "text": "Ja, open de browserdeveloper tools, navigeer naar het tabblad 'Application' (of 'Opslag'), selecteer 'Cookies' onder het domein, en controleer de kolommen voor `HttpOnly`, `Secure` en `SameSite`. Als hier vinkjes ontbreken bij sessietokens, is directe actie vereist."
       }
     }
   ]

@@ -66,6 +66,12 @@ Treat PCI DSS compliance the way the standard itself treats it: as a verifiable,
 
 For fintechs building the surrounding integration layer — the checkout flow, the reconciliation service, the internal dashboards that touch transaction metadata — getting the architecture right matters just as much as the vendor's own certification, since a poorly designed integration can pull PAN data into your own logs even when the underlying processor is fully compliant. Manifera's engineering teams have built PCI-scoped payment integrations for European fintechs where minimizing cardholder data exposure was the primary architectural constraint from day one; if your team needs that kind of build alongside vendor evaluation, [talk to our team](https://www.manifera.com/contact-us/) about how the integration layer affects your actual compliance scope, not just the vendor's.
 
+## The Vendor Security Audit Checklist Before Contract Signature
+
+Beyond the AOC, five specific artifacts separate a vendor who has actually been through a rigorous audit from one who is coasting on a certificate. First, the Requirement 12.8.2 responsibility matrix — a signed document spelling out exactly which of the 12 PCI DSS requirement families the vendor owns versus which remain yours. Missing or unsigned matrices are the single most common cause of scope disputes discovered only after a breach. Second, quarterly external vulnerability scans from an Approved Scanning Vendor (ASV) — request the most recent passing report, dated within 90 days, not an annual snapshot. Third, network segmentation testing performed at least every six months for any vendor claiming Level 1 or SAQ D status. Fourth, an annual penetration test report, refreshed after any material infrastructure change. Fifth, if the vendor has ever had an incident, the PCI Forensic Investigator (PFI) report, not just their internal summary.
+
+Cost is a useful signal here too. A full QSA-led ROC assessment typically runs $50,000-$150,000 depending on environment complexity, and that cost is priced into legitimate vendor contracts. A processor quoting materially below market while claiming Level 1 compliance is worth a direct question about which of these five artifacts they can produce on demand — vendors who hesitate on more than one are cutting corners somewhere in the audit itself, and post-breach non-compliance fines from card networks ($5,000-$100,000 per month, compounding) will land on whoever signed the contract, not whoever cut the corner.
+
 ## Frequently Asked Questions
 
 ### What is the difference between SAQ A and SAQ D for a fintech vendor?
@@ -82,6 +88,18 @@ PCI DSS v4.0 mandates multi-factor authentication for all access into the cardho
 
 ### How can we verify a vendor's PCI service provider status independently?
 Visa and Mastercard both maintain public registries of validated service providers — the Visa Global Registry of Service Providers and Mastercard's equivalent list — that let you confirm a vendor's Level 1 TPSP status without relying solely on documents the vendor provides directly.
+
+### (Scenario: A vendor offers a discount for skipping the QSA-led assessment) Should we accept a vendor's offer to self-assess instead of completing a QSA-led ROC?
+No. If the vendor processes card data on behalf of multiple merchant clients, card network rules already classify them as a Level 1 service provider regardless of raw transaction count, and self-assessment does not satisfy that classification. A discount tied to skipping the QSA audit shifts the cost of that missing assessment onto you in the form of undocumented risk, not genuine savings.
+
+### (Scenario: The vendor operates payment infrastructure across multiple EU member states) Does PCI DSS scope change when a fintech vendor processes cards across several EU countries under one contract?
+PCI DSS itself is not jurisdiction-specific — the same 12 requirements apply everywhere card data moves — but cross-border EU operations typically layer GDPR data residency questions and separate acquiring-bank relationships per country on top of the core standard. Confirm the vendor's AOC scope statement explicitly names every country's processing environment, not just the primary one.
+
+### (Scenario: A vendor cannot produce a signed responsibility matrix) What should we do if a vendor cannot produce a Requirement 12.8.2 responsibility matrix defining who owns which PCI controls?
+Treat it as a blocking issue rather than a follow-up item. An unsigned or missing responsibility matrix means neither party has formally agreed on control ownership, which is exactly the ambiguity that turns a shared breach into your sole liability. Request it before contract signature, not during onboarding.
+
+### (Scenario: A shortlisted vendor previously disclosed a card-data breach) How should a vendor's past PCI-related breach affect our due diligence process?
+Ask for the PCI Forensic Investigator (PFI) report from the incident, not just the vendor's internal summary — it identifies exactly which requirements failed and whether remediation was independently verified. A vendor that emerged with a documented, QSA-validated remediation plan and a clean subsequent assessment cycle can still be a defensible choice; one that calls the incident resolved without third-party verification is not.
 
 <script type="application/ld+json">
 {
@@ -112,6 +130,26 @@ Visa and Mastercard both maintain public registries of validated service provide
       "@type": "Question",
       "name": "How can we verify a vendor's PCI service provider status independently?",
       "acceptedAnswer": {"@type": "Answer", "text": "Visa and Mastercard both maintain public registries of validated service providers — the Visa Global Registry of Service Providers and Mastercard's equivalent list — that let you confirm a vendor's Level 1 TPSP status without relying solely on documents the vendor provides directly."}
+    },
+    {
+      "@type": "Question",
+      "name": "Should we accept a vendor's offer to self-assess instead of completing a QSA-led ROC?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. If the vendor processes card data on behalf of multiple merchant clients, card network rules already classify them as a Level 1 service provider regardless of raw transaction count, and self-assessment does not satisfy that classification. A discount tied to skipping the QSA audit shifts the cost of that missing assessment onto you in the form of undocumented risk, not genuine savings."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does PCI DSS scope change when a fintech vendor processes cards across several EU countries under one contract?",
+      "acceptedAnswer": {"@type": "Answer", "text": "PCI DSS itself is not jurisdiction-specific — the same 12 requirements apply everywhere card data moves — but cross-border EU operations typically layer GDPR data residency questions and separate acquiring-bank relationships per country on top of the core standard. Confirm the vendor's AOC scope statement explicitly names every country's processing environment, not just the primary one."}
+    },
+    {
+      "@type": "Question",
+      "name": "What should we do if a vendor cannot produce a Requirement 12.8.2 responsibility matrix defining who owns which PCI controls?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Treat it as a blocking issue rather than a follow-up item. An unsigned or missing responsibility matrix means neither party has formally agreed on control ownership, which is exactly the ambiguity that turns a shared breach into your sole liability. Request it before contract signature, not during onboarding."}
+    },
+    {
+      "@type": "Question",
+      "name": "How should a vendor's past PCI-related breach affect our due diligence process?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Ask for the PCI Forensic Investigator (PFI) report from the incident, not just the vendor's internal summary — it identifies exactly which requirements failed and whether remediation was independently verified. A vendor that emerged with a documented, QSA-validated remediation plan and a clean subsequent assessment cycle can still be a defensible choice; one that calls the incident resolved without third-party verification is not."}
     }
   ]
 }

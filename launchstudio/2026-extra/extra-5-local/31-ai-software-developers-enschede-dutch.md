@@ -95,20 +95,53 @@ LaunchStudio wordt ondersteund door Manifera, een bedrijf met meer dan 120 engin
 ### Hoeveel kost een beoordeling voor lanceringsgereedheid?
 Trajecten variëren doorgaans van € 800 tot € 7.500 afhankelijk van de omvang, geleverd in 1–3 weken. U kunt een specifieke schatting voor uw project krijgen met behulp van onze projectcalculator.
 
-### Hoe weet ik of een codebeoordeling die mij wordt aangeboden daadwerkelijk grondig is?
-Vraag of de beoordelaar actief toegangscontroles test (en niet alleen de code leest), of ze een gespecificeerde lijst met bevindingen verstrekken, en of herstelwerkzaamheden zijn inbegrepen of alleen gediagnosticeerd. Een beoordeling die die drie vragen niet helder kan beantwoorden is waarschijnlijk een oppervlakkige ronde, en geen controle op productiegereedheid.
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Moet ik technisch zijn om met LaunchStudio te werken?", "acceptedAnswer": { "@type": "Answer", "text": "Nee. De meeste oprichters waarmee we werken zijn niet-technisch of semi-technisch. U beschrijft wat u gebouwd heeft en Manifera's engineers regelen de productiegereedheid." } },
-    { "@type": "Question", "name": "Wat herstellen AI-softwareontwikkelaars bij LaunchStudio precies?", "acceptedAnswer": { "@type": "Answer", "text": "Authenticatie, databasebeveiliging, blootgestelde sleutels, betalingen, hosting en prestaties onder verkeer — zonder uw frontend te herbouwen." } },
-    { "@type": "Question", "name": "Werkt LaunchStudio met oprichters buiten Enschede?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, LaunchStudio bedient oprichters in heel Nederland en de Benelux vanuit haar kantoor in Amsterdam." } },
-    { "@type": "Question", "name": "Hoe verschilt LaunchStudio van het inhuren van een lokale freelancer?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio wordt ondersteund door Manifera (120+ engineers, 160+ projecten), met vaste prijzen en beoordeling van enterprise-kwaliteit." } },
-    { "@type": "Question", "name": "Hoeveel kost een beoordeling voor lanceringsgereedheid?", "acceptedAnswer": { "@type": "Answer", "text": "Trajecten variëren doorgaans van € 800 tot € 7.500, geleverd in 1 tot 3 weken." } },
-    { "@type": "Question", "name": "Hoe weet ik of een codebeoordeling die mij wordt aangeboden daadwerkelijk grondig is?", "acceptedAnswer": { "@type": "Answer", "text": "Vraag of toegangscontroles actief worden getest, of er een gespecificeerde lijst wordt geboden, en of herstelwerkzaamheden zijn inbegrepen." } }
+    {
+      "@type": "Question",
+      "name": "Moet ik technisch zijn om met LaunchStudio te werken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. De meeste oprichters waarmee we werken zijn niet-technisch of semi-technisch. U beschrijft wat u gebouwd heeft en Manifera's engineers regelen de productiegereedheid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat herstellen AI-softwareontwikkelaars bij LaunchStudio precies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Authenticatie, databasebeveiliging, blootgestelde sleutels, betalingen, hosting en prestaties onder verkeer — zonder uw frontend te herbouwen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werkt LaunchStudio met oprichters buiten Enschede?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, LaunchStudio bedient oprichters in heel Nederland en de Benelux vanuit haar kantoor in Amsterdam."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verschilt LaunchStudio van het inhuren van een lokale freelancer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio wordt ondersteund door Manifera (120+ engineers, 160+ projecten), met vaste prijzen en beoordeling van enterprise-kwaliteit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel kost een beoordeling voor lanceringsgereedheid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trajecten variëren doorgaans van € 800 tot € 7.500, geleverd in 1 tot 3 weken."
+      }
+    }
   ]
 }
 </script>

@@ -32,6 +32,7 @@ Een kersvers leeg gebruikersaccount, een zakelijke klant met tienduizend rijen d
 Dit is het honderdste en afsluitende artikel in deze serie. Het is ontworpen als een pragmatische, direct toepasbare checklist — niet geordend op theoretisch onderwerp, maar op **gevolg en urgentie**:
 Wat moet er geregeld zijn vóórdat u de eerste euro accepteert, wat moet staan vóór uw eerste grote zakelijke klant, en wat kan veilig wachten tot latere groei?
 
+
 ## De Triagetest: Excuses, Geld of Vertrouwen?
 
 Voordat u de checklist induikt, is er één gouden vraag die 90% van alle prioriteitsdiscussies direct beslecht:
@@ -40,6 +41,7 @@ Voordat u de checklist induikt, is er één gouden vraag die 90% van alle priori
 - **Kost het een excuus?** ➔ **Dit kan wachten tot na de lancering.** Een onhandig vormgegeven lege status, een ontbrekende wekelijkse e-mailnotificatie, of een koppeling waar pas één prospect om vroeg. Dit zijn ongemakken, maar ze zijn niet fataal of onomkeerbaar.
 - **Kost het geld?** ➔ **Dit vereist een harde limiet vóór lancering.** Verbruiksafhankelijke kosten, publiek bereikbare API-endpoints, achtergrondtaken die in een oneindige loop kunnen schieten, of creditcards die zonder tokenplafond worden belast.
 - **Kost het vertrouwen?** ➔ **Dit móet op dag één 100% vlekkeloos zijn.** Vertrouwen herstelt namelijk nooit meer. Een klant die data van een ander ziet; geld dat wordt afgeschreven zonder dat het abonnement wordt geactiveerd; data die spoorloos verdwijnt; of een foute btw-berekening op de factuur. Bij deze fouten klaagt een klant niet: **hij vertrekt per direct en waarschuwt zijn hele netwerk**.
+
 
 ## Fase 1: Vóórdat Iemand U Betaalt (De Absolute Basis)
 
@@ -56,6 +58,7 @@ Alles in deze lijst valt in de categorie *Vertrouwen* en *Geld*:
 9. **Geheimen Zijn Verbannen uit Git en Frontend:** Geen API-keys in client-side bundels of openbare repositories. Noteer tevens de verloopdata van SSL-certificaten en domeinnamen in uw agenda.
 10. **Transactionele E-mail Komt Betrouwbaar Aan:** SPF, DKIM en DMARC correct ingesteld via een professionele provider (zoals Postmark).
 
+
 ## Fase 2: Vóór Uw Eerste Grote Zakelijke Klant (B2B)
 
 Dit zijn de beslissingen die bepalen of uw belangrijkste droomklant een trotse referentiecase wordt of een publieke waarschuwing:
@@ -68,6 +71,19 @@ Dit zijn de beslissingen die bepalen of uw belangrijkste droomklant een trotse r
 6. **Tijdzones en Datums:** Sla tijdstippen altijd op in UTC, bereken rapportagegrenzen in de lokale tijdzone van de klant, en test functionaliteiten specifiek rondom maandovergangen en middernacht.
 7. **Schriftelijke Antwoorden op de Security-Vragenlijst:** Zorg dat u een kant-en-klaar document heeft waarin staat waar data wordt verwerkt, wie uw subverwerkers zijn, hoe back-ups zijn geregeld en hoe de AVG wordt nageleefd. Dit verandert een slopend inkooptraject van weken in één simpele link.
 
+
+## Fase 3: Vóórdat U Het Probleem Heeft Dat Het Voorkomt
+
+Dit zijn weloverwogen beoordelingsbeslissingen. Elk van deze elementen is het waard om pas te bouwen wanneer een specifieke trigger verschijnt, in plaats van op basis van een willekeurige kalenderplanning:
+
+- **Een minimaal intern admin-paneel:** Een klant opzoeken, een proefperiode handmatig verlengen, toegangsrechten herstellen, een abonnement aanpassen, een transactie-e-mail opnieuw versturen, of de actuele accountstatus inzien — bouw dit zodra u merkt dat u SQL-queries rechtstreeks op uw productiedatabase zit te typen om alledaagse supportvragen te beantwoorden.
+- **Een staging-omgeving met geanonimiseerde testdata:** Richt dit in op het moment dat u op het punt staat een database-migratie of architectuurwijziging door te voeren die u niet eenvoudig en zonder risico kunt terugdraaien.
+- **Feature flags:** Implementeer dit vóór de allereerste grote functionele wijziging waarbij u een mechanisme wilt hebben om de feature direct met één klik uit te schakelen zónder een volledige nieuwe deployment te hoeven draaien.
+- **Webhooks, een publieke API of een platform-connector:** Pas bouwen wanneer integratieverzoeken vanuit klanten divers van aard worden in plaats van geconcentreerd op één specifieke tool — en uitsluitend nadat uw onderliggende interne API-endpoints stabiel en consistent zijn.
+- **Gedetailleerde notificatievoorkeuren met gerichte afmeldopties:** Inrichten vóórdat uw applicatie zóveel geautomatiseerde e-mails verstuurt dat een gefrustreerde gebruiker op de algemene uitschrijflink klikt en daarmee onbedoeld ook zijn facturatie- en beveiligingsmeldingen blokkeert.
+- **Tweerichtingssynchronisatie (*Two-way sync*):** Alleen bouwen wanneer beide gekoppelde systemen daadwerkelijk en aantoonbaar door verschillende mensen worden bewerkt. Negentig procent van alle integratieverzoeken wordt ruimschoots afgedekt door een betrouwbare éénrichtingssynchronisatie met een directe link terug naar het bronsysteem.
+- **Geautomatiseerde data-retentie- en verwijderingsscripts:** Verplicht inrichten zodra u persoonsgegevens bewaart van klanten die hun account definitief hebben opgezegd.
+
 ## Extra Checklist voor AI-Gedreven Features
 
 Bevat uw applicatie taalmodellen of AI-functies? Dan zijn de volgende maatregelen onmisbaar:
@@ -78,6 +94,7 @@ Bevat uw applicatie taalmodellen of AI-functies? Dan zijn de volgende maatregele
 - **Provenance Vastleggen:** Sla modelversie, promptversie en brondocumenten op bij elke gegenereerde tekst.
 - **Transparantie en Dataminimalisatie:** Label AI-gegenereerde teksten duidelijk conform de EU AI Act, anonimiseer persoonsgegevens vóór verzending, sluit een zakelijke Verwerkersovereenkomst (DPA) af en bied een account-brede opt-out schakelaar.
 - **Golden Test Set:** Houd een vaste testsuite van 40 representatieve cases aan om regressies vóór elke promptwijziging op te sporen.
+
 
 ## Wat Dit Kost, en het Eerlijke Alternatief
 
@@ -91,7 +108,8 @@ Het faalt echter genadeloos zodra uw eerste serieuze zakelijke klant arriveert v
 
 LaunchStudio is opgericht voor founders die deze valkuilen willen vermijden. Ondersteund door Manifera's 11+ jaar ervaring in enterprise software engineering, loodsen we AI-gegenereerde prototypes door exact deze productiebeslissingen via onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). Wij werken tegen een vooraf overeengekomen vaste prijs, en we laten uw frontend exact zoals u die heeft ontworpen. Heeft u een prototype dat werkt en wilt u zeker weten dat het overeind blijft op de paden die niemand nog heeft bewandeld? [Beschrijf uw project](https://launchstudio.eu/nl/#contact) — u ontvangt binnen één werkdag een eerlijke technische beoordeling.
 
-## Praktijkvoorbeeld
+
+## Echt voorbeeld
 
 ### De Checklist Die Negen Dagen Werk Kostte
 
@@ -114,6 +132,7 @@ Geen enkele pilotgemeente had ooit geklaagd, simpelweg omdat niemand van hen op 
 > — **Bram Kooij, Oprichter, Wachtrij**
 
 **Kosten & Doorlooptijd:** Volledige productierijpheid en security-audit remediation opgeleverd in 9 werkdagen tegen een vaste projectprijs.
+
 
 ## Veelgestelde Vragen
 

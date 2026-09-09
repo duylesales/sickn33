@@ -78,6 +78,12 @@ If your team needs a structured technical evaluation of shortlisted construction
 }
 </script>
 
+## A 60-Minute Technical Test Script for the Vendor Demo
+
+Don't accept a vendor-curated demo file — bring a real IFC export from an active or recent project and run this test script live, budgeting roughly an hour: (1) Upload the IFC file and confirm the platform correctly parses element-level metadata, not just geometry — check that a specific element is individually selectable and tagged, not just visually rendered. (2) Create a test RFI and attempt to link it to that specific element; if the only option is linking to a general project phase or drawing sheet, that's the viewer-not-integration gap. (3) Make a small model revision and check whether the platform surfaces a clear element-level diff, not just a new file upload timestamp. (4) If clash detection matters to the project, import a sample clash report and see whether it becomes a trackable, assignable item or just an attachment. (5) Request the platform's IFC schema version support and round-trip export capability in writing, on the spot, not as a follow-up.
+
+Vendors that pass all five checks live are rare enough that passing even three or four with a real project file is a meaningfully stronger signal than any feature list in a proposal — and a vendor whose team can't run this test on request, or asks to schedule it for a "follow-up technical session," is often signaling the same gap the test itself would have revealed.
+
 ## Frequently Asked Questions
 
 ### What's the difference between a BIM viewer and true BIM integration in construction software?

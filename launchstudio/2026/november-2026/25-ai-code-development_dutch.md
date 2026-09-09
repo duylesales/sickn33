@@ -77,6 +77,12 @@ Dit is waar [LaunchStudio](https://launchstudio.eu/nl/) te hulp schiet met geric
 
 Het resultaat is een opgeschoonde, modulaire codebase. Cruciaal: doordat de bestanden weer compact zijn, kunt u als oprichter weer vlekkeloos verder bouwen met Cursor of Copilot.
 
+### Professionele Code-Hygiëne voor AI-Gegenereerde Toepassingen
+
+Om langdurige onderhoudbaarheid te garanderen, hanteert LaunchStudio strikte refactoring-standaarden:
+1. **Eliminatie van Dode Code:** Ongebruikte imports, redundante functies en tijdelijke placeholders worden systematisch opgeschoond.
+2. **Standaardisatie van API-Responsstructuren:** Alle backend-endpoints leveren consistente, type-safe JSON-payloads met duidelijke foutstatussen.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De Vastgoed-App Die Cursor Niet Meer Begreep

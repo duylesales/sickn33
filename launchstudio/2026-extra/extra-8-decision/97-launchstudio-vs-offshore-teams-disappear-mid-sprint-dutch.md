@@ -68,8 +68,7 @@ De combinatie is belangrijker dan elke helft afzonderlijk: Nederlandse juridisch
 
 [Vraag een betrouwbaar, fixed-price lanceringsplan aan onder Nederlands leiderschap](https://launchstudio.eu/nl/#contact).
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een Bureau-Oprichter in de Praktijk: Een Vastgelopen Klantlancering van €25.000 Redden
 
 Kasper Oomen, oprichter van een boutique digitaal bureau in Arnhem, contracteerde een offshore-team om een custom logistiek boekingsportaal te bouwen voor een leverancier van industriële apparatuur. Na 6 weken en €4.500 aan mijlpaalbetalingen stopte het offshore-team met reageren op e-mails, met de betalingsintegratie en databaserechten volledig kapot.

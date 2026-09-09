@@ -65,6 +65,12 @@ Manifera builds the pre-submission compliance review into every mobile project a
 
 If your launch date is locked and you want a realistic timeline that actually accounts for review risk, [talk to our Amsterdam team](https://www.manifera.com/contact-us/) about how we structure pre-submission review into the schedule before your board sees a date that cannot move.
 
+## The Pre-Submission Checklist a Vendor Should Run Before Every Build
+
+A serious vendor's pre-submission compliance review should cover six specific checks, not a general "looks good" pass. First, a line-by-line reconciliation of the privacy nutrition label (or Google's Data Safety form) against actual SDK and API calls in the codebase, since this mismatch is one of the fastest-growing rejection categories as automated scanning improves. Second, a functional test of account deletion and data export flows end-to-end, since both Apple and Google have tightened enforcement on apps that describe these flows without fully implementing them. Third, verification that any external payment reference for digital goods routes through the platform's own in-app purchase system rather than a workaround that reads as an obvious Guideline 3.1.1 violation.
+
+Fourth, a check that the app's core functionality is demonstrable without requiring a login wall the reviewer cannot pass — a common, easily avoidable Guideline 4.2 trap. Fifth, screenshot and metadata review against the actual current build, not an earlier version, since mismatched marketing screenshots are a frequent and entirely avoidable rejection trigger. Sixth, a target API level and permissions audit against the platform's current enforcement deadlines, since a submission delayed past a deadline can trigger rejection independent of the app's actual quality. Ask a finalist vendor to walk through their version of this checklist by name — a vendor improvising an answer live is showing you a process that does not actually exist as a repeatable milestone.
+
 ## Frequently Asked Questions
 
 ### What percentage of apps get rejected on their first App Store submission?
@@ -82,6 +88,22 @@ Ask them to describe a specific past rejection, the reason, and how many days re
 ### Does my app's category affect rejection risk?
 Yes, significantly. Apps in health, fintech, cryptocurrency, gambling-adjacent, or user-generated-content categories face materially higher review scrutiny. Confirm a vendor has specific prior submission experience in your exact category, not just general App Store experience, before treating their track record as directly transferable.
 
+### (Scenario: A Product Manager wants a specific checklist to request from a finalist vendor rather than a vague assurance) What should a vendor's pre-submission compliance checklist actually include?
+
+It should cover privacy label reconciliation against actual code, functional testing of account deletion and data export, in-app purchase compliance for digital goods, login-wall-free access to core functionality, screenshot/metadata accuracy against the current build, and a target API level and permissions audit — ask a finalist to walk through these by name rather than describe the process generically.
+
+### (Scenario: A PM discovers a login wall blocks reviewer access to the app's core feature) Why would requiring a login before showing core functionality risk an App Store rejection?
+
+Apple reviewers need to evaluate an app's actual functionality during review, and a login wall that blocks that access is a common trigger for a Guideline 4.2 minimum-functionality rejection — provide reviewer demo credentials or a guest mode specifically to avoid this easily preventable delay.
+
+### (Scenario: A subscription app's marketing screenshots were taken from an earlier build than what's being submitted) Can outdated marketing screenshots actually cause an App Store rejection?
+
+Yes — screenshots and metadata that don't match the current submitted build are a frequent, entirely avoidable rejection trigger. Confirm your vendor's pre-submission checklist explicitly re-verifies screenshots against the exact build being submitted, not an earlier reference version.
+
+### (Scenario: A fintech app's account deletion flow is described in the privacy policy but not fully implemented in the app) What happens if my app describes a data deletion flow that isn't fully functional?
+
+Both Apple and Google have tightened enforcement specifically on this mismatch, and it's a fast, near-certain rejection trigger. Require your vendor to functionally test account deletion and data export end-to-end as a named pre-submission step, not just confirm the policy text exists.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -91,7 +113,11 @@ Yes, significantly. Apps in health, fintech, cryptocurrency, gambling-adjacent, 
     {"@type": "Question", "name": "What are the most common reasons apps get rejected?", "acceptedAnswer": {"@type": "Answer", "text": "The most frequent causes are Guideline 4.2 (minimum functionality), Guideline 5.1.1 (privacy nutrition label mismatches), and Guideline 3.1.1 (in-app purchase requirements for digital goods). On Google Play, mismatched permissions declarations and inconsistent Data Safety forms are the most common launch-delaying issues."}},
     {"@type": "Question", "name": "How much timeline buffer should I build in for App Store review risk?", "acceptedAnswer": {"@type": "Answer", "text": "A realistic project timeline should include a minimum 10-15 business day buffer between development completion and the announced launch date, to absorb one full rejection-and-resubmission cycle without moving the public launch date."}},
     {"@type": "Question", "name": "How do I test whether a vendor actually has real App Store submission experience?", "acceptedAnswer": {"@type": "Answer", "text": "Ask them to describe a specific past rejection, the reason, and how many days resolution took. A vendor with genuine experience answers this concretely; a vendor claiming a perfect record across every submission is either omitting detail or lacks enough submission volume to have encountered normal edge cases."}},
-    {"@type": "Question", "name": "Does my app's category affect rejection risk?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, significantly. Apps in health, fintech, cryptocurrency, gambling-adjacent, or user-generated-content categories face materially higher review scrutiny than a vendor's general track record may reflect."}}
+    {"@type": "Question", "name": "Does my app's category affect rejection risk?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, significantly. Apps in health, fintech, cryptocurrency, gambling-adjacent, or user-generated-content categories face materially higher review scrutiny than a vendor's general track record may reflect."}},
+    {"@type": "Question", "name": "(Scenario: A Product Manager wants a specific checklist to request from a finalist vendor rather than a vague assurance) What should a vendor's pre-submission compliance checklist actually include?", "acceptedAnswer": {"@type": "Answer", "text": "It should cover privacy label reconciliation against actual code, functional testing of account deletion and data export, in-app purchase compliance for digital goods, login-wall-free access to core functionality, screenshot/metadata accuracy against the current build, and a target API level and permissions audit — ask a finalist to walk through these by name rather than describe the process generically."}},
+    {"@type": "Question", "name": "(Scenario: A PM discovers a login wall blocks reviewer access to the app's core feature) Why would requiring a login before showing core functionality risk an App Store rejection?", "acceptedAnswer": {"@type": "Answer", "text": "Apple reviewers need to evaluate an app's actual functionality during review, and a login wall that blocks that access is a common trigger for a Guideline 4.2 minimum-functionality rejection — provide reviewer demo credentials or a guest mode specifically to avoid this easily preventable delay."}},
+    {"@type": "Question", "name": "(Scenario: A subscription app's marketing screenshots were taken from an earlier build than what's being submitted) Can outdated marketing screenshots actually cause an App Store rejection?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — screenshots and metadata that don't match the current submitted build are a frequent, entirely avoidable rejection trigger. Confirm your vendor's pre-submission checklist explicitly re-verifies screenshots against the exact build being submitted, not an earlier reference version."}},
+    {"@type": "Question", "name": "(Scenario: A fintech app's account deletion flow is described in the privacy policy but not fully implemented in the app) What happens if my app describes a data deletion flow that isn't fully functional?", "acceptedAnswer": {"@type": "Answer", "text": "Both Apple and Google have tightened enforcement specifically on this mismatch, and it's a fast, near-certain rejection trigger. Require your vendor to functionally test account deletion and data export end-to-end as a named pre-submission step, not just confirm the policy text exists."}}
   ]
 }
 </script>

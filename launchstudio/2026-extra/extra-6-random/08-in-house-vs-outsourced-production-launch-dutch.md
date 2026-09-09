@@ -51,6 +51,21 @@ LaunchStudio bestaat specifiek voor het eerste probleem. We zijn geen freelancer
 
 Oprichters in Zuidoost-Azië die met onze Singapore-hub aan 100 Tras Street werken, stellen vaak dezelfde in-house-versus-uitbesteed-vraag vóór hun productiepush, en het antwoord draait meestal om hetzelfde onderscheid — is dit een eenmalig lanceringsprobleem of een doorlopend teamopbouwprobleem. Als u een idee wilt van wat een engagement met vaste scope daadwerkelijk kost ten opzichte van een aanwerving of een freelancer, geeft onze [calculator](https://launchstudio.eu/nl/#calculator) een directe schatting. Voor oprichters die verder gevorderd zijn en een langere uitbestede relatie overwegen in plaats van een eenmalige lancering, dekt Manifera's praktijk voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) dat doorlopende model rechtstreeks.
 
+## Vragen Die het Waard Zijn te Stellen Voordat U Inhuurt, Ongeacht het Gekozen Pad
+
+De vergelijkingstabel ordent de drie opties (freelancers, traditionele bureaus en productiestudio's) op basis van structurele kenmerken zoals opstarttijd, kosten en afhankelijkheidsrisico. Wat de tabel u echter niet vertelt, is hoe u tijdens het selectiegesprek het kaf van het koren scheidt. Stel deze vier gerichte vragen voordat u een contract ondertekent:
+
+**1. "Wat gebeurt er exact als er na de oplevering een beveiligingslek in productie opduikt?"** Let op het onderscheid tussen garantie op geleverd werk en een duur onderhoudscontract. Een partij die vertrouwen heeft in haar eigen architectuur durft duidelijke afspraken te maken over het kosteloos verhelpen van aantoonbare bouwfouten binnen een redelijke termijn na oplevering.
+
+**2. "Bouwt u voort op onze bestaande AI-codebase, of stelt u standaard voor om alles opnieuw te bouwen?"** Als een partij reflexmatig roept dat alle door AI gegenereerde code "waardeloos is en vanaf nul opnieuw moet worden geschreven", toont dat vaak een gebrek aan flexibiliteit. Een volwassen engineeringspartner kan bestaande code pragmatisch inspecteren, behouden wat goed werkt en uitsluitend de ontbrekende productielaag (zoals autorisatie, logging en foutafhandeling) verstevigen.
+
+**3. "Welke specifieke tests levert u op om te bewijzen dat het systeem stabiel is?"** Vraag naar concrete geautomatiseerde integratietests. Als het antwoord blijft hangen in "wij testen alles handmatig in de browser", weet u dat u bij elke toekomstige aanpassing het risico loopt dat eerdere functionaliteiten geruisloos omvallen.
+
+**4. "Wie bezit het intellectueel eigendom en hoe verloopt de kennisoverdracht?"** Zorg voor absolute helderheid: alle broncode, databasemigraties, documentatie en configuratiebestanden moeten vanaf dag één volledig uw eigendom zijn, zonder propriëtaire frameworks van de leverancier waar u later aan vastzit.
+
+Het stellen van deze vragen voorkomt onaangename verrassingen en legt direct bloot of een potentiële partner werkelijk begrijpt wat er nodig is om een prototype veilig naar productie te begeleiden.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: LabRoosters freelancergat
@@ -95,11 +110,46 @@ Afhankelijkheid van één persoon en niet-gedocumenteerde beslissingen — zoals
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is an outsourced team always cheaper than an in-house hire?", "acceptedAnswer": { "@type": "Answer", "text": "For a single production launch, typically yes — LaunchStudio's fixed-scope pricing runs roughly 20% of a traditional agency or salaried hire for the same task, though in-house becomes more cost-effective for years of ongoing feature work." } },
-    { "@type": "Question", "name": "What if my freelancer situation is like Iris's — a half-finished handoff?", "acceptedAnswer": { "@type": "Answer", "text": "That's a common starting point, not an unusual one — Manifera's engineers regularly audit undocumented work from a previous contractor before starting new production tasks." } },
-    { "@type": "Question", "name": "Does LaunchStudio replace the need for an in-house team long-term?", "acceptedAnswer": { "@type": "Answer", "text": "No, LaunchStudio is built for the production launch itself, not years of ongoing feature development, where an in-house hire or longer outsourced relationship fits better." } },
-    { "@type": "Question", "name": "How does a Singapore-based founder typically engage with this team?", "acceptedAnswer": { "@type": "Answer", "text": "Southeast Asia-based SaaS founders generally work with the Singapore hub, though the underlying engineering pool is the same 120+ engineer group Manifera staffs globally." } },
-    { "@type": "Question", "name": "What's the biggest risk of the freelancer route specifically?", "acceptedAnswer": { "@type": "Answer", "text": "Single points of failure and undocumented decisions — if a freelancer disappears, nobody else can safely pick up where they left off." } }
+    {
+      "@type": "Question",
+      "name": "Is een uitbesteed team altijd goedkoper dan een in-house medewerker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor één enkele productielancering doorgaans wel — de prijsstelling met vaste scope van LaunchStudio komt ongeveer neer op 20% van wat een traditioneel bureau of een medewerker op de loonlijst kost voor dezelfde taak, hoewel een in-house medewerker kostenefficiënter wordt voor jaren aan doorlopend functiewerk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat als mijn freelancersituatie op die van Iris lijkt — een halfafgeronde overdracht?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dat is voor ons een gebruikelijk startpunt, geen ongebruikelijke situatie. De technici van Manifera zijn gewend om niet-gedocumenteerd werk van een eerdere contractor te doorlichten voordat ze nieuwe productietaken starten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vervangt LaunchStudio de behoefte aan een in-house team op de lange termijn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee — LaunchStudio is gebouwd voor de productielancering zelf, niet voor jaren aan doorlopende functieontwikkeling, waar een in-house medewerker of een langere uitbestede relatie beter past."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe gaat een in Singapore gevestigde oprichter doorgaans met dit team in zee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zuidoost-Aziatische SaaS-oprichters werken over het algemeen met de Singapore-hub, hoewel de onderliggende engineeringpool dezelfde groep van 120+ technici is die Manifera wereldwijd inzet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het grootste risico van specifiek de freelanceroptie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Afhankelijkheid van één persoon en niet-gedocumenteerde beslissingen — zoals LabRoosters situatie laat zien, is het risico niet alleen dat een freelancer slecht werk zou kunnen leveren, maar dat als hij verdwijnt, niemand anders veilig kan overnemen waar hij is gebleven."
+      }
+    }
   ]
 }
 </script>

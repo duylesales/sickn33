@@ -7,6 +7,31 @@ Doelgroep: AI-Native Founder (niet-technisch)
 
 # De Productiegereedheid-Checklist Voor Jouw AI-Prototype
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Productiegereedheid-Checklist Voor Jouw AI-Prototype",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/production-readiness-checklist-ai-prototype"
+  }
+}
+</script>
+
+
 De meeste productiegereedheid-checklists organiseren zichzelf rond technische categorieën — beveiliging, testen, infrastructuur — omdat dat toevallig hoe het onderliggende werk gestructureerd is. Deze is anders georganiseerd, rond daadwerkelijke consequentie, omdat een founder die met beperkte tijd en budget moet beslissen wat te prioriteren moet weten wat het meest ertoe doet, niet alleen in welke categorie iets valt.
 
 ## Tier 1: Dingen Die Direct, Op Schaal, Met Minimale Inspanning Uitgebuit Kunnen Worden
@@ -49,6 +74,14 @@ De waarde van een checklist zoals deze hangt volledig af van elk item concreet b
 
 [Laat jouw specifieke prototype controleren tegen precies deze checklist](https://launchstudio.eu/nl/#calculator) — een checklist die je kunt verifiëren is meer waard dan een die je aanneemt te hebben voldaan.
 
+## Deze Checklist Eerlijk Gebruiken
+
+De waarde van een checklist voor productiegereedheid staat of valt met het concreet en toetsbaar beantwoorden van elk afzonderlijk punt. De aanname "ik heb waarschijnlijk geen geheimen in mijn code" is van een geheel andere orde dan de feitelijke constatering "ik heb een geautomatiseerde Git-historie-scan uitgevoerd en bevestigd dat er nul tokens in staan".
+
+Aannames en empirische verificatie leiden immers tot radicaal verschillende uitkomsten zodra de applicatie echt onder stoom komt te staan. Neem elk controlepunt serieus als een praktische opdracht, niet als een theoretische stelling.
+
+[LaunchStudio](https://launchstudio.eu/nl/) hanteert deze checklist als een bindend kwaliteitskader voor elk project dat we klaarmaken voor lancering, ondersteund door Manifera's 11+ jaar ervaring met enterprise-software.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: de tiers gebruiken om te prioriteren onder een echte budgetbeperking
@@ -87,3 +120,52 @@ Ja, dit is een gebruikelijke en redelijke prioritering onder budgetbeperkingen �
 ### Kan deze checklist gebruikt worden voor zelfbeoordeling, of vereist het een professionele audit om zinvol toe te passen?
 
 Niet-technische founders kunnen het gebruiken om geïnformeerde vragen te stellen (vergelijkbaar met de diagnostische vragen elders in deze serie behandeld), hoewel het verifiëren van de antwoorden — daadwerkelijk een git-geschiedenisscan uitvoeren, daadwerkelijk API-niveau-autorisatie testen — doorgaans technische vaardigheid of een professionele audit vereist, aangezien de checklist identificeert wat te controleren, niet hoe te controleren zonder relevante expertise.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Als ik nu maar één tier kan aanpakken, is Tier 1 dan altijd de juiste prioriteit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor de meeste producten wel, aangezien Tier 1-items de ernstigste en makkelijkst-getriggerde consequenties dragen — hoewel een productspecifiek Tier 4-item (zoals een harde regelgevende vereiste die lancering volledig blokkeert) soms voorrang kan krijgen, wat precies het soort oordeel is dat een correct scopinggesprek oplost voor jouw specifieke geval."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Betekent Tier 1 voltooien dat mijn product redelijk veilig is om te lanceren, ook zonder Tiers 2-4?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het reduceert significant de ernstigste risico's, zoals Merels casus toont, hoewel Tier 2- en 3-items nog steeds ertoe doen voor een stabiel, veerkrachtig product op termijn — Tier 1 is de juiste noodprioritering onder echte beperkingen, geen bewering dat verder niets ertoe doet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik welke Tier 4 productspecifieke overwegingen van toepassing zijn op mijn specifieke app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dit hangt volledig af van wat jouw app doet en welke data het verwerkt, wat waarom Tier 4 geen generieke lijst is — een echte audit die de datastromen en functionaliteit van jouw specifieke product onderzoekt is de betrouwbare manier om te bepalen welke productspecifieke overwegingen oprecht van toepassing zijn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het redelijk om Tier 3-items zoals een CI-pipeline uit te stellen tot na lancering, zoals Merel deed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, dit is een gebruikelijke en redelijke prioritering onder budgetbeperkingen — Tier 3-items verbeteren hersteltijd en voorkomen toekomstige regressies maar dragen niet hetzelfde onmiddellijke uitbuitbaarheidsrisico als Tier 1, wat ze een verdedigbare latere-fase-investering maakt zodra initiële omzet bestaat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan deze checklist gebruikt worden voor zelfbeoordeling, of vereist het een professionele audit om zinvol toe te passen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet-technische founders kunnen het gebruiken om geïnformeerde vragen te stellen (vergelijkbaar met de diagnostische vragen elders in deze serie behandeld), hoewel het verifiëren van de antwoorden — daadwerkelijk een git-geschiedenisscan uitvoeren, daadwerkelijk API-niveau-autorisatie testen — doorgaans technische vaardigheid of een professionele audit vereist, aangezien de checklist identificeert wat te controleren, niet hoe te controleren zonder relevante expertise."
+      }
+    }
+  ]
+}
+</script>

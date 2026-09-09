@@ -1,18 +1,19 @@
 ---
-Titel: "Waarom We LaunchStudio Hebben Gebouwd: De Ontbrekende Schakel Tussen Vibe Coding en Productie"
-Trefwoorden: waarom launchstudio, vibe coding naar productie, AI app hardening, software agency alternatief, manifera engineering, LaunchStudio, Manifera
+Titel: "Waarom We LaunchStudio Hebben Gebouwd: De Brug Tussen Vibe Coding en Productie"
+Trefwoorden: vibe coding productie, AI prototype hardening, LaunchStudio Manifera, backend hardening startup, productieklare AI software, MVP lancering
 Koperfase: Beslissing
 Doelgroep: AI-Native Oprichter (Niet-technisch)
 ---
 
-# Waarom We LaunchStudio Hebben Gebouwd: De Ontbrekende Schakel Tussen Vibe Coding en Productie
+# Waarom We LaunchStudio Hebben Gebouwd: De Brug Tussen Vibe Coding en Productie
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Waarom We LaunchStudio Hebben Gebouwd: De Ontbrekende Schakel Tussen Vibe Coding en Productie",
-  "description": "De opkomst van AI-tools zoals Lovable en Cursor heeft het bouwen van software gedemocratiseerd, maar de stap naar veilige productie bleef een black box. Waarom LaunchStudio is opgericht om deze kloof te dichten.",
+  "headline": "Waarom We LaunchStudio Hebben Gebouwd: De Brug Tussen Vibe Coding en Productie",
+  "description": "Waarom Manifera na 11+ jaar enterprise software engineering een dedicated service heeft gebouwd om specifiek de kloof te dichten tussen wat AI-codeertools genereren en wat productieklare software vereist.",
+  "inLanguage": "nl-NL",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -31,68 +32,77 @@ Doelgroep: AI-Native Oprichter (Niet-technisch)
 }
 </script>
 
-In de afgelopen twee jaar is er iets fundamenteels veranderd in softwareontwikkeling. Waar het bouwen van een functionele applicatie vroeger maanden van planning, UI-ontwerp en tienduizenden euro's aan agency-kosten vereiste, kan een gemotiveerde oprichter met tools als Lovable, Bolt, Cursor of v0 nu binnen één weekend een werkende SaaS-applicatie in elkaar zetten. Maar zodra diezelfde oprichter echte klanten wil laten betalen, botst men op een harde realiteit: de traditionele software-industrie weet niet hoe ze met deze nieuwe generatie bouwers moet omgaan.
+Rond 2025 zag het engineeringteam van Manifera — na 11 jaar enterprise productiesoftware te hebben gebouwd en gehard voor klanten als Vodafone, Toyota Tsusho en gevestigde ondernemingen in heel Nederland — een specifiek, herhaalbaar patroon ontstaan. Niet-technische oprichters, solo-ontwikkelaars en creatieve bureaus bouwden in enkele dagen werkende prototypes met tools als Lovable, Bolt, Cursor en v0, om vervolgens tegen een muur aan te lopen op het exacte moment dat ze echte gebruikers, echte betalingen en echte data moesten toelaten. Niemand in het ecosysteem bediende deze specifieke fase op de juiste manier: traditionele bureaus stelden steevast voor om alles vanaf nul te herbouwen voor tienduizenden euro's, freelance marktplaatsen boden wisselvallige kwaliteit zonder verantwoordelijkheid na oplevering, en de oprichters zelf bleven hangen in het vagevuur van "bijna klaar". LaunchStudio is gebouwd om precies dat gat te vullen — niet als een algemeen ontwikkelbureau, maar als een gerichte, vast geprijsde productiebrug.
 
-Traditionele softwarebureaus willen prototypes weggooien en voor €30.000 opnieuw bouwen. Freelancers op marktplaatsen rekenen uren zonder garanties. En solo-oprichters blijven achter met functionele prototypes die ze niet durven lanceren uit angst voor datalekken of servercrashes. Dit is precies waarom wij **LaunchStudio** hebben opgericht.
+## Het Patroon Dat Zich Keer Op Keer Herhaalde, Codebase Na Codebase
 
-## De Drie Grote Valkuilen in de Huidige Markt
+Het patroon dat zich aandiende was opvallend consistent, ongeacht of de oprichter een voormalig productmanager in Amsterdam was, een e-commerce ondernemer in Rotterdam of een marketingbureau in Utrecht. De interface werkte, de gebruikersstroom was doordacht en de kernwaarde van het product was direct tastbaar. Maar onder de motorkap ontbraken vrijwel altijd dezelfde vijf cruciale fundamenten: API-sleutels stonden hardcoded in client-side code, databasetabellen hadden geen Row-Level Security waardoor elke ingelogde gebruiker records van anderen kon opvragen, Stripe-webhooks werden geaccepteerd zonder handtekeningverificatie, hosting draaide op gratis tiers met harde limieten, en er was geen enkele monitoring om te zien of de app om 03:00 uur 's nachts crashte. Dit waren geen fouten van onzorgvuldigheid van de oprichter; het waren de voorspelbare blinde vlekken van AI-modellen die getraind zijn op het genereren van code die werkt op een lokaal scherm, niet op code die bestand is tegen de vijandige realiteit van het openbare internet.
 
-Toen we spraken met honderden oprichters die applicaties bouwden met behulp van AI, zagen we telkens dezelfde drie frustraties terugkeren:
+## Waarom de Bestaande Opties Niet Pasten Bij Dit Specifieke Probleem
 
-1. **De 'Weggooi-Mentaliteit' van Agencies:** Gevestigde softwarebureaus zijn ingericht op grote, langdurige trajecten. Wanneer u bij hen aanklopt met een 90% werkend Lovable-prototype, beschouwen zij dat als een bedreiging voor hun urenmodel. Hun standaardreactie is: "Dit is niet volgens onze standaarden geschreven; we moeten dit vanaf nul opnieuw bouwen."
-2. **De 'Schijnveiligheid' van AI-Scanners:** Veel oprichters proberen geautomatiseerde beveiligingsscanners te draaien. Maar deze scanners controleren alleen bekende kwetsbaarheden in npm-pakketten; ze begrijpen niet dat uw Supabase Row-Level Security (RLS) beleid per ongeluk alle data openbaar maakt voor iedereen met een geldige API-sleutel.
-3. **Het Gebrek aan Vaste Prijzen:** In een wereld waar softwarecreatie zo snel en transparant is geworden, voelt een contract op basis van "uurtje-factuurtje zonder einddatum" ouderwets en oneerlijk. Oprichters willen weten: wat kost het om live te gaan, en wanneer is het klaar?
+Wanneer een oprichter met een dergelijk prototype hulp zocht, boden de bestaande marktkanalen twee uitersten die beide niet aansloten op de werkelijke behoefte. Aan de ene kant stonden traditionele softwarebureaus: gewend aan langdurige trajecten op uurbasis, keken hun lead developers met minachting naar de door AI gegenereerde code en stelden ze voor om de frontend weg te gooien en het project opnieuw op te zetten in hun eigen vertrouwde tech-stack — een traject van vier tot zes maanden met een prijskaartje van €30.000 tot €60.000 dat het hele voordeel van vibe coding tenietdeed. 
 
-## Onze Filosofie: Respecteer de Frontend, Beveilig de Fundering
+Aan de andere kant stonden freelance marktplaatsen zoals Upwork en Fiverr: goedkoop en snel, maar fundamenteel transactiegericht. Een freelancer loste wellicht één zichtbare bug op, maar overzag zelden de onderlinge samenhang tussen authenticatie, databaserollen en webhook-aflevering. Als er twee weken na de livegang een datalek optrad of betalingen stilvielen, gaf de marktplaats geen thuis. Er ontbrak een partij met enterprise-ervaring die de bestaande frontend respecteerde, uitsluitend de backend versterkte en de verantwoordelijkheid voor het eindresultaat durfde te dragen tegen een vaste prijs.
 
-Bij LaunchStudio hebben we een radicaal ander vertrekpunt gekozen. Wij geloven dat:
-- **Uw Frontend Waardevol Is:** Als u wekenlang heeft geïtereerd op het ontwerp en de gebruikerservaring, gaan wij dat niet weggooien. Uw visuele interface is het bewijs van uw product-market fit.
-- **Backend-Engineering een Ambacht Is:** Het beveiligen van data-stromen, encryptie, webhook-integraties en schaalbare cloudarchitectuur vereist diepgaande menselijke expertise die AI simpelweg nog niet betrouwbaar genereert.
-- **Prijzen Volledig Transparant Moeten Zijn:** Geen open rekeningen. We bepalen na een grondige scoping call een vaste prijs (€800 tot €7.500) en leveren binnen 7 tot 14 werkdagen op.
+## Het Fundamentele Inzicht: Snelheid en Vertrouwen Zijn Scheidbare Problemen
 
-## Gesteund Door 11+ Jaar Enterprise Engineering van Manifera
+De oprichtingsgedachte achter LaunchStudio ontstond uit een helder inzicht: snelheid van creatie en robuustheid van de infrastructuur zijn twee wezenlijk verschillende technische uitdagingen, en ze hoeven niet door dezelfde partij of hetzelfde proces te worden opgelost. AI-codeertools blinken uit in creatiesnelheid: ze stellen oprichters in staat om hun domeinkennis en productvisie binnen recordtijd om te zetten in een werkende gebruikersinterface. Waar ze structureel in tekortschieten, is backend-vertrouwen: beveiliging, databeheer, schaalbaarheid en compliance. 
 
-LaunchStudio is geen experimentele startup; het is gebouwd op het robuuste fundament van **Manifera**. Al meer dan 11 jaar levert Manifera hoogwaardige web-, mobiele en enterprise softwareoplossingen voor klanten in Europa en wereldwijd. Onze senior architecten en security engineers passen dezelfde strenge standaarden toe op uw AI-prototype als op enterprise-applicaties.
+In plaats van vibe coding af te wijzen als inferieur, besloten we het te omarmen als de snelste route naar validatie. De rol van LaunchStudio is niet om opnieuw uit te vinden wat de oprichter al heeft gevalideerd, maar om chirurgisch precies de backend-laag te vervangen en te harden die nodig is om van een prototype een veilig, schaalbaar en verkoopbaar SaaS-product te maken.
 
-[LaunchStudio](https://launchstudio.eu/nl/) combineert de snelheid van moderne vibe-coding met de onwrikbare betrouwbaarheid van enterprise engineering.
+## Een Herhaalbaar Proces Bouwen, Geen Maatwerkproject Iedere Keer Opnieuw
 
-[Plan uw gratis scoping call](https://launchstudio.eu/nl/#contact) en ontdek hoe wij uw prototype binnen 14 dagen veilig naar productie brengen.
+Omdat de kwetsbaarheden in AI-gegenereerde codebases zich met bijna mathematische precisie herhalen, realiseerden we ons dat de oplossing geen uniek maatwerktraject per klant hoefde te zijn. Door een gestandaardiseerd audit- en hardeningproces te ontwikkelen rondom de vijf risicocategorieën — geheimen & API-sleutels, autorisatie & RLS, betalingslogica, productie-infrastructuur en monitoring — konden we de doorlooptijd reduceren van maanden naar één tot drie weken. 
 
-## Real example
+Dit maakte het mogelijk om te werken met vaste pakketprijzen (van Launch Ready tot Scale Ready) in plaats van open-ended uurtarieven. Een oprichter weet vooraf exact waar hij aan toe is, wat er wordt opgeleverd en wanneer het product live kan.
 
-### Een Oprichter in de Praktijk: Waarom LaunchStudio Precies Was Wat Hij Zocht
+## Waarom Juist Amsterdam en Ho Chi Minh City
 
-Martijn Bakker, een vastgoedadviseur in Rotterdam, bouwde VastgoedMatch: een AI-portal waarmee vastgoedbeleggers vergunningsaanvragen en bestemmingsplannen automatisch kunnen analyseren. Na twee maanden bouwen in v0 en Supabase had hij een prachtig werkend platform.
+De structuur van LaunchStudio — Nederlands projectmanagement en directie vanuit Amsterdam, gecombineerd met een primair engineeringcentrum in Ho Chi Minh City en een kantoor in Singapore — is geen toevallige samenloop van omstandigheden. Het weerspiegelt een weloverwogen strategie: enterprise-discipline en kostenefficiënte executie versterken elkaar wanneer management en development optimaal zijn ingericht. 
 
-Toen Martijn offertes aanvroeg bij drie traditionele softwarebureaus in de regio, varieerden de voorstellen van €22.000 tot €35.000, telkens met de eis om de v0-frontend volledig te schrappen en te herbouwen in Next.js. Martijn had echter noch het budget, noch de wens om zijn gevalideerde design weg te gooien.
+Het Nederlandse managementteam levert de communicatie, zakelijke afstemming en betrouwbaarheid die enterprise-klanten al ruim een decennium van Manifera gewend zijn. Het Vietnamese engineeringteam brengt diepgaande technische expertise en executiekracht tegen een kostenstructuur die vaste pakketprijzen haalbaar maakt voor early-stage oprichters, zonder in te leveren op kwaliteit. Ho Chi Minh City functioneert als het kloppend hart van de ontwikkeling omdat deze opzet het mogelijk maakt om met ongeëvenaarde snelheid te leveren: een Launch Ready-traject doorloopt scoping, implementatie en verificatie in zeven werkdagen — een tempo dat een traditioneel bureau met een zware overhead simpelweg niet kan evenaren.
 
-Via een aanbeveling kwam hij bij LaunchStudio terecht. Binnen een scoping call van 25 minuten identificeerden de engineers van Manifera de exacte ontbrekende elementen: ontbrekende document-encryptie en onbeveiligde Supabase storage-buckets. Binnen 8 werkdagen voerde LaunchStudio de complete hardening uit voor een vaste prijs van €1.850.
+[LaunchStudio](https://launchstudio.eu/nl/) is het resultaat van deze formule: 11+ jaar enterprise engineeringervaring van Manifera, specifiek toegepast op de kloof tussen wat AI-tools bouwen en wat echte gebruikers en betalende klanten eisen.
 
-**Resultaat:** Martijn lanceerde VastgoedMatch binnen twee weken, behield 100% van zijn originele v0-ontwerp en sloot in zijn eerste maand 8 vastgoedkantoren aan als betalende klant.
+[Vertel ons wat u heeft gebouwd en waar u vastloopt](https://launchstudio.eu/nl/#contact) — tijdens het intakegesprek kijken we direct onder de motorkap van uw applicatie en brengen we de specifieke kwetsbaarheden helder in kaart.
 
-> *"Traditionele bureaus zagen mijn AI-prototype als inferieur en wilden tienduizenden euro's om opnieuw te beginnen. LaunchStudio zag direct de waarde van wat ik had gebouwd en repareerde alleen wat echt nodig was om veilig live te kunnen."*  
-> — **Martijn Bakker, Oprichter VastgoedMatch (Rotterdam)**
+## Echt voorbeeld
+### Een Technische Solo-Oprichter in de Praktijk: Toen "Ik Kan Dit Zelf Coderen" Niet de Juiste Vraag Was
 
-**Kosten & Doorlooptijd:** €1.850 (Launch & Grow Pakket, document-encryptie & Supabase RLS) — live in 8 werkdagen.
+Bram Hendriks, een technisch onderlegde indie hacker in Utrecht, bouwde PulseGuard, een API-uptime en latency monitoringtool voor kleine ontwikkelteams, met behulp van Cursor. Bram kon uitstekend programmeren — hij was geen niet-technische oprichter die blind vertrouwde op AI — maar beveiligingshardening, betalingsinfrastructuur en productie-observability vielen buiten zijn directe specialisme. Hij besteedde bijna drie weken aan pogingen om deze gaten zelf te dichten tussen het beantwoorden van supporttickets en het bouwen van productfeatures, waarbij hij weliswaar vooruitgang boekte, maar geen enkel onderdeel echt productieklaar kreeg.
+
+Bram nam contact op met LaunchStudio in de veronderstelling dat hij te horen zou krijgen dat hij een fulltime engineer moest inhuren, wat zijn vroege budget niet toeliet. In plaats daarvan bracht het intakegesprek een veel specifieker probleem aan het licht: de Stripe-integratie van PulseGuard accepteerde webhooks zonder de cryptografische handtekening te verifiëren. Een kwaadwillende met enige technische kennis kon eenvoudig een vals "payment succeeded"-bericht sturen en gratis toegang krijgen tot betaalde functionaliteiten — een beveiligingslek dat tijdens Bram's eigen tests met een test-creditcard nooit naar boven was gekomen.
+
+**Resultaat:** LaunchStudio implementeerde webhook-handtekeningverificatie en rate limiting op PulseGuard's facturatie-endpoints binnen een gefocust traject van één week. Hierdoor kon Bram zijn kostbare tijd weer volledig besteden aan de unieke features op zijn roadmap, in plaats van te worstelen met beveiligingsdomeinen buiten zijn expertise.
+
+> *"Ik had hier uiteindelijk zelf wel uit kunnen komen door er nog weken op te puzzelen. Maar wat ik nodig had was geen extra tijd — ik had iemand nodig die dit exacte probleem al tientallen keren eerder had opgelost."*  
+> — **Bram Hendriks, Oprichter, PulseGuard (Utrecht)**
+
+**Kosten & Tijdlijn:** €1.350 (Launch Ready Pakket, betaalbeveiliging en webhook-hardening) — live in 7 werkdagen.
 
 ---
 
 ## Veelgestelde Vragen
 
-### Waarin verschilt LaunchStudio van een traditioneel softwarebureau?
-Traditionele bureaus verkopen uren en herbouwen applicaties vaak vanaf nul voor €20.000+. LaunchStudio behoudt uw bestaande AI-frontend en past gerichte backend-hardening toe voor een vaste pakketprijs tussen €800 en €7.500.
+### Waarom heeft Manifera een apart merk, LaunchStudio, opgericht in plaats van dit als een Manifera-dienst aan te bieden?
 
-### Waarom kan AI mijn backend nog niet zelfstandig beveiligen?
-AI-modellen genereren code op basis van patronen, maar missen holistisch inzicht in geavanceerde beveiligingsarchitectuur zoals multi-tenant isolatie, cryptografische webhook-validatie en strikte wetgeving zoals de AVG/GDPR.
+Het probleem dat LaunchStudio oplost — het productieklaar maken van AI-gegenereerde prototypes — verschilt zo wezenlijk qua doorlooptijd, vaste prijsstelling en doelgroep van Manifera's reguliere enterprise-dienstverlening, dat een afzonderlijke, gefocuste propositie noodzakelijk was, hoewel het volledig put uit dezelfde 11+ jaar engineeringervaring.
 
-### Wat is de relatie tussen LaunchStudio en Manifera?
-LaunchStudio is een gespecialiseerde divisie van Manifera, een software-engineeringbedrijf met meer dan 11 jaar ervaring in het ontwikkelen van veilige enterprise-oplossingen in Europa en Zuidoost-Azië.
+### Is LaunchStudio alleen bedoeld voor niet-technische oprichters, of heeft het ook zin voor ontwikkelaars zoals Bram?
 
-### Moet ik technische kennis hebben om met LaunchStudio te werken?
-Nee. Onze scoping calls en rapportages zijn ontworpen voor niet-technische en AI-native oprichters. We leggen bevindingen uit in heldere zakelijke termen zonder onnodig jargon.
+Het is ontworpen voor beide. Een technische solo-oprichter heeft vaak wel de vaardigheden om deze gaten op den duur zelf te dichten, maar mist de herhaalde routine met de specifieke risicocategorieën die AI-tools consistent over het hoofd zien. Zoals Bram's praktijkvoorbeeld laat zien, zit de waarde niet in programmeervermogen, maar in het al tientallen keren eerder hebben opgelost van exact deze klasse problemen.
 
-### Wat gebeurt er als er na de oplevering toch nog een probleem opduikt?
-Al onze pakketten zijn inclusief een post-launch garantieperiode waarin eventuele onvolkomenheden binnen de overeengekomen scope direct en kosteloos worden verholpen.
+### Bouwt LaunchStudio ooit de frontend opnieuw die een oprichter met een AI-tool heeft gemaakt?
+
+Nee. Het hele uitgangspunt is dat creatiesnelheid aan de frontend en robuustheid aan de backend gescheiden problemen zijn. Onze werkzaamheden richten zich uitsluitend op de backend, waardoor de interface, gebruikersstromen en productlogica exact intact blijven zoals de oprichter ze heeft ontworpen.
+
+### Hoe wordt de vaste pakketprijs voor een specifiek project bepaald?
+
+Elk project wordt tijdens het eerste intakegesprek geëvalueerd aan de hand van dezelfde vaste risicocategorieën: API-geheimen, autorisatie/RLS, betalingsstromen, cloud-infrastructuur en monitoring. Op basis van de diepgang van het benodigde werk wordt het project gekoppeld aan een passend pakket (van Launch Ready tot Scale Ready), zonder uurtarief-onzekerheid.
+
+### Waarom was Manifera er zo zeker van dat dit patroon algemeen genoeg was om een specifieke dienst voor te bouwen?
+
+Het patroon herhaalde zich met mechanische regelmaat in vrijwel elke AI-codebase die we analyseerden, ongeacht de achtergrond van de oprichter, de sector of de gebruikte AI-tool. Dat bewees dat het geen incidentele adviesvraag betrof, maar een structureel marktfalen dat vroeg om een gestandaardiseerd, herhaalbaar proces.
 
 <script type="application/ld+json">
 {
@@ -101,42 +111,42 @@ Al onze pakketten zijn inclusief een post-launch garantieperiode waarin eventuel
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarin verschilt LaunchStudio van een traditioneel softwarebureau?",
+      "name": "Waarom heeft Manifera een apart merk, LaunchStudio, opgericht in plaats van dit als een Manifera-dienst aan te bieden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio behoudt uw bestaande AI-gegenereerde frontend en richt zich uitsluitend op backend- en beveiligingshardening voor een vaste prijs, zonder onnodige complete herbouw."
+        "text": "Het productieklaar maken van AI-prototypes vereist een specifieke doorlooptijd, vaste prijsstelling en methodiek die een eigen merk rechtvaardigen, gesteund door dezelfde 11+ jaar enterprise-ervaring."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom kan AI mijn backend nog niet zelfstandig beveiligen?",
+      "name": "Is LaunchStudio alleen bedoeld voor niet-technische oprichters, of heeft het ook zin voor ontwikkelaars zoals Bram?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI-modellen missen het vermogen om holistische autorisatie, cryptografische verificatie en AVG-naleving end-to-end waterdicht te configureren."
+        "text": "Het is voor beide waardevol; ook technische oprichters besparen weken aan tijd door kwetsbaarheden te laten verhelpen door een team dat deze specifieke AI-blinde vlekken routinematig oplost."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is de relatie tussen LaunchStudio en Manifera?",
+      "name": "Bouwt LaunchStudio ooit de frontend opnieuw die een oprichter met een AI-tool heeft gemaakt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio is powered by Manifera, wat betekent dat elk project wordt uitgevoerd door senior engineers met 11+ jaar ervaring in enterprise software."
+        "text": "Nee, de werkzaamheden richten zich uitsluitend op de backend-architectuur en laten de interface en gebruikerservaring volledig intact."
       }
     },
     {
       "@type": "Question",
-      "name": "Moet ik technische kennis hebben om met LaunchStudio te werken?",
+      "name": "Hoe wordt de vaste pakketprijs voor een specifiek project bepaald?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, we communiceren in duidelijke, zakelijke taal en ontzorgen niet-technische oprichters volledig op het gebied van infrastructuur en beveiliging."
+        "text": "Tijdens de intake wordt de codebase geaudit op vaste risicocategorieën en gekoppeld aan een vast pakket op basis van de werkelijke werkomvang, zonder uurtarieven."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat gebeurt er als er na de oplevering toch nog een probleem opduikt?",
+      "name": "Waarom was Manifera er zo zeker van dat dit patroon algemeen genoeg was om een specifieke dienst voor te bouwen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Elk pakket bevat een garantieperiode waarin eventuele bugs binnen de overeengekomen scope kosteloos worden opgelost."
+        "text": "Dezelfde kwetsbaarheden kwamen met opvallende regelmaat terug in vrijwel elke geanalyseerde AI-codebase, wat vroeg om een gestandaardiseerde, herhaalbare aanpak."
       }
     }
   ]

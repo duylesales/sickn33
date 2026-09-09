@@ -54,6 +54,14 @@ A QA vendor SLA earns its purpose when every clause can be checked against a num
 
 Manifera structures QA engagements around explicit, numeric SLAs from the outset — defect escape rate targets, severity-tiered response commitments, and shared real-time reporting — rather than negotiating specifics only after a problem surfaces. If your current QA arrangement is running on vague commitments, our [dedicated teams](https://www.manifera.com/services/dedicated-teams/) model can help you structure accountability into the engagement from day one.
 
+## The Weighted Escape Rate Calculation Most Contracts Miss
+
+A raw defect escape rate treats a missed typo the same as a missed data-corruption bug, which is why sophisticated buyers weight the metric by severity before comparing it against a target. The formula: assign a weight to each severity tier (a common scale is Critical = 10, High = 5, Medium = 2, Low = 1), multiply each escaped defect by its tier weight, sum the result, and divide by the total weighted defects found across QA and production. A vendor with a 4% raw escape rate that consists entirely of Low-severity cosmetic issues is performing very differently from one with a 4% raw rate driven by two escaped Critical defects — the weighted number surfaces that gap immediately, while the raw percentage hides it.
+
+Require this weighted calculation as a standard line item in the same report as the raw escape rate, not as a one-off request after a bad release. Also specify a rolling three-release window for the weighted number rather than a single-cycle snapshot — severity distribution is noisy at small sample sizes, and one release with a single escaped Critical defect can spike a single-cycle weighted rate without reflecting an actual trend. Vendors resistant to reporting a weighted figure alongside the raw one are usually aware that the raw number flatters their actual severity-adjusted performance.
+
+Tie contract renewal review explicitly to the weighted trend over the prior two to three quarters, not the most recent cycle in isolation — this is the single change that most reliably shifts a QA vendor's incentive from "pass the audit this month" to "sustain quality over the relationship."
+
 ## Frequently Asked Questions
 
 ### What is defect escape rate and why does it matter more than other QA metrics?
@@ -76,6 +84,22 @@ Their value is often more behavioral than financial — a vendor facing any real
 
 Monthly or quarterly, with trend data rather than a single snapshot — a good month tells you less than a consistent trend across several cycles. Real-time or near-real-time access to test execution and defect tracking tooling is also necessary, since a weekly summary email often arrives after the window to act has passed.
 
+### (Scenario: the vendor disputes a defect's severity classification) How should severity disagreements be resolved without escalating every time?
+
+Resolve it against the objective, application-specific criteria written into the SLA's severity tiers, not a judgment call — if the criteria are specific enough (breaks a core flow, affects data integrity, has a workaround), most disputes resolve themselves against the written definition. For the genuine edge cases, name a single internal owner authorized to make the final call within a defined window, so a disagreement doesn't sit unresolved while the defect ages.
+
+### (Scenario: the QA engagement is billed as fixed-price rather than time and materials) Do defect escape rate and turnaround SLAs still apply on a fixed-bid contract?
+
+Yes, and they matter more, not less — a fixed-price structure removes the vendor's cost incentive to test thoroughly, since more testing doesn't increase what they bill. Numeric SLAs are the mechanism that keeps quality from eroding under a fixed-price incentive to minimize effort, so treat them as non-negotiable regardless of the pricing model.
+
+### (Scenario: onboarding a new QA vendor mid-project after replacing a prior one) How do you set a fair escape rate baseline without historical data from the new vendor?
+
+Use the outgoing vendor's last two to three release cycles as the starting benchmark, adjusted for any known gaps in what they tested, and treat the new vendor's first one to two cycles as a calibration period rather than an SLA-enforcement period. Formalize the real target only once the new vendor has produced enough of their own cycle data to set a defensible number.
+
+### (Scenario: an emergency production hotfix needs verification outside the normal release cycle) What turnaround should apply when there's no time for a full regression pass?
+
+Specify a separate, faster SLA tier for hotfix verification distinct from your standard regression turnaround — commonly a targeted smoke test covering the affected area and its immediate dependencies within 1-2 hours, with a full regression pass following within the next standard cycle rather than blocking the hotfix. Define this tier in the contract before the first emergency happens, not while everyone is already firefighting.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -85,7 +109,11 @@ Monthly or quarterly, with trend data rather than a single snapshot — a good m
     {"@type": "Question", "name": "How should severity levels be defined in a QA vendor SLA?", "acceptedAnswer": {"@type": "Answer", "text": "Each tier — Critical, High, Medium, Low — needs concrete, objective criteria specific to your application, not adjectives alone: does it break a core user flow, affect data integrity, or have a workaround. Ambiguous severity definitions are where most SLA disputes originate, since the vendor and client can reasonably disagree without a shared objective standard."}},
     {"@type": "Question", "name": "What response times should a QA vendor commit to for critical defects?", "acceptedAnswer": {"@type": "Answer", "text": "A common benchmark is acknowledgment within 2 hours and a fix or workaround proposed within 24 hours for Critical defects, with progressively longer windows for High, Medium, and Low severity tiers. These numbers should be written into the contract explicitly, not left as 'prompt' or 'as soon as possible.'"}},
     {"@type": "Question", "name": "Do SLA penalty clauses actually get enforced in practice?", "acceptedAnswer": {"@type": "Answer", "text": "Their value is often more behavioral than financial — a vendor facing any real consequence for missed targets manages those targets differently than one facing none. The mechanism for invoking penalties needs to be simple and based on data both sides already track, or it becomes too costly to invoke and functions as no penalty at all."}},
-    {"@type": "Question", "name": "How often should we review QA vendor performance against the SLA?", "acceptedAnswer": {"@type": "Answer", "text": "Monthly or quarterly, with trend data rather than a single snapshot — a good month tells you less than a consistent trend across several cycles. Real-time or near-real-time access to test execution and defect tracking tooling is also necessary, since a weekly summary email often arrives after the window to act has passed."}}
+    {"@type": "Question", "name": "How often should we review QA vendor performance against the SLA?", "acceptedAnswer": {"@type": "Answer", "text": "Monthly or quarterly, with trend data rather than a single snapshot — a good month tells you less than a consistent trend across several cycles. Real-time or near-real-time access to test execution and defect tracking tooling is also necessary, since a weekly summary email often arrives after the window to act has passed."}},
+    {"@type": "Question", "name": "How should severity disagreements be resolved without escalating every time?", "acceptedAnswer": {"@type": "Answer", "text": "Resolve it against the objective, application-specific criteria written into the SLA's severity tiers, not a judgment call — if the criteria are specific enough, most disputes resolve themselves against the written definition. For genuine edge cases, name a single internal owner authorized to make the final call within a defined window."}},
+    {"@type": "Question", "name": "Do defect escape rate and turnaround SLAs still apply on a fixed-bid contract?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and they matter more, not less — a fixed-price structure removes the vendor's cost incentive to test thoroughly, since more testing doesn't increase what they bill. Numeric SLAs are the mechanism that keeps quality from eroding under a fixed-price incentive to minimize effort."}},
+    {"@type": "Question", "name": "How do you set a fair escape rate baseline when onboarding a new QA vendor mid-project?", "acceptedAnswer": {"@type": "Answer", "text": "Use the outgoing vendor's last two to three release cycles as the starting benchmark, adjusted for known testing gaps, and treat the new vendor's first one to two cycles as a calibration period rather than an SLA-enforcement period. Formalize the real target once the new vendor has produced enough of their own cycle data."}},
+    {"@type": "Question", "name": "What turnaround should apply when an emergency production hotfix needs verification outside the normal release cycle?", "acceptedAnswer": {"@type": "Answer", "text": "Specify a separate, faster SLA tier for hotfix verification distinct from standard regression turnaround — commonly a targeted smoke test of the affected area within 1-2 hours, with a full regression pass following in the next standard cycle. Define this tier before the first emergency happens, not while everyone is already firefighting."}}
   ]
 }
 </script>

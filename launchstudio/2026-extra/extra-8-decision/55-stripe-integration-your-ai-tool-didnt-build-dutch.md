@@ -59,8 +59,7 @@ Voor oprichters die specifiek in Nederland lanceren, is Mollie vaak een betere f
 
 [Stuur uw prototype op en vertel ons waarvoor u wilt factureren](https://launchstudio.eu/nl/#contact) — de betaalknop die u al heeft is het makkelijke deel, en de rest is meer afgebakend dan het klinkt.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Van Checkout-Knop naar Echte Omzet
 
 Sander Mulder, voormalig sportschoolhouder in Eindhoven, bouwde FitFlux, een AI-gepersonaliseerde trainingsabonnementen-app voor thuisfitness, met Bolt. De app had een werkende Stripe Checkout-knop die testbetalingen perfect verwerkte. Na de lancering naar de voormalige leden van zijn sportschool doken er binnen de eerste factureringscyclus drie problemen op.

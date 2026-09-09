@@ -54,8 +54,7 @@ De praktische conclusie is niet dat oprichters contractjurist moeten worden voor
 
 [Vraag om een voorbeeldcontract te zien voor uw scopinggesprek](https://launchstudio.eu/nl/#contact) — de meeste oprichters vinden dat het meer verduidelijkt dan het scopinggesprek zelf.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Kleine Lettertjes Lezen Voordat Ze Ertoe Deden
 
 Sem Vogel, oprichter van ContractPilot, een met Cursor gebouwde tool die riskante clausules in freelance- en leveranciersovereenkomsten voor kleine bedrijven signaleert, was eerder gebrand geraakt door een eerder ontwikkelingscontract dat vaag bleek over IP-eigendom — een geschil dat maanden en een advocatenbrief kostte om in zijn voordeel op te lossen, en dat de eigen lancering van ContractPilot met bijna een kwartaal vertraagde.

@@ -39,6 +39,17 @@ Stel een botte vraag: heeft een bestaande AI-API, goed gebruikt, al problemen op
 
 LaunchStudio, mogelijk gemaakt door Manifera's meer dan 11 jaar softwareontwikkelingservaring, besteedt een flink deel van vroege gesprekken met oprichters aan precies deze vraag — lost het custom-model-instinct een echte leemte op, of vervangt het een test die nog niet is uitgevoerd — voordat er engineeringwerk begint. Onze [contactpagina](https://launchstudio.eu/nl/#contact) is een snelle manier om dat inzicht voor uw eigen project te krijgen, en het team voor [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera voert hetzelfde gesprek met enterprise-klanten die dezelfde vork overwegen.
 
+## Een Test van Vijf Minuten Vóórdat U Zich Vastlegt op een Maatwerkmodel
+
+Voordat u duizenden euro's en maanden ontwikkeltijd investeert in het trainen van een eigen maatwerkmodel (fine-tuning), voert u eerst deze eenvoudige test van vijf minuten uit met een standaard model:
+
+**Minuut 1-2: Schrijf Drie Uitstekende Voorbeelden (Few-Shot Prompting).** Neem uw meest complexe praktijkcase en formuleer in uw systeemprompt drie perfecte voorbeelden van gewenste invoer en exacte uitvoer.
+
+**Minuut 3-4: Dwing een Strikt JSON-Schema Af (Structured Outputs).** Activeer de JSON-modus of gestructureerde uitvoer van het model (zoals OpenAI Structured Outputs) en definieer exact welke velden en datatypes het antwoord moet bevatten.
+
+**Minuut 5: Evalueer het Resultaat.** Test het standaard model (zoals Claude 3.5 Sonnet of GPT-4o) met deze geoptimaliseerde prompt op tien uitdagende testcases.
+
+In negen van de tien gevallen levert deze eenvoudige test een resultaat op dat nauwkeuriger, stabieler en flexibeler is dan een duur ge-finetuned model — zónder trainingskosten, zónder onderhoudslast en direct klaar voor gebruik. Bewaar maatwerktraining uitsluitend voor de zeldzame gevallen waarin deze test aantoonbaar tekortschiet.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: twee maanden besteed aan bouwen wat een API al deed
@@ -85,11 +96,46 @@ Het Europese hoofdkantoor van LaunchStudio bevindt zich in Amsterdam, met aanvul
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the practical difference between building AI software and building software that uses AI?", "acceptedAnswer": { "@type": "Answer", "text": "Building AI software means training or fine-tuning a custom model. Building software that uses AI means integrating an existing model via an API and focusing on the product experience." } },
-    { "@type": "Question", "name": "How do I know if I actually need a custom model?", "acceptedAnswer": { "@type": "Answer", "text": "Test an off-the-shelf API first. If it performs well enough, you likely don't need a custom model; only a specific, well-defined gap justifies building one." } },
-    { "@type": "Question", "name": "Why do so many founders default to wanting a custom model?", "acceptedAnswer": { "@type": "Answer", "text": "It sounds more impressive and is an easy default when the off-the-shelf option hasn't been tested yet, even though testing is much faster." } },
-    { "@type": "Question", "name": "Can LaunchStudio help decide between the two approaches before any code is written?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LaunchStudio, backed by Manifera's 11+ years of experience, has this conversation early, before committing engineering time." } },
-    { "@type": "Question", "name": "Where is LaunchStudio's team based for founders working through this kind of decision?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio's European headquarters is in Amsterdam, with hubs in Singapore and Ho Chi Minh City." } }
+    {
+      "@type": "Question",
+      "name": "Wat is het praktische verschil tussen AI-software bouwen en software bouwen die AI gebruikt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI-software bouwen betekent een custom model trainen of finetunen. Software bouwen die AI gebruikt betekent een bestaand model integreren via een API en engineeringinspanning richten op de productervaring eromheen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of ik daadwerkelijk een custom model nodig heb?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Test eerst een kant-en-klare API op uw daadwerkelijke probleem. Als deze goed genoeg presteert voor echte gebruikers, heeft u waarschijnlijk geen custom model nodig; als u een specifieke, goed gedefinieerde leemte vindt die deze niet kan dichten, is dat de zaak voor het bouwen van één."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom kiezen zoveel oprichters standaard voor een custom model?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het klinkt technisch indrukwekkender en is een makkelijke standaardkeuze wanneer de kant-en-klare optie nog niet daadwerkelijk is getest, ook al kost testen doorgaans veel minder tijd dan een custom model bouwen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan LaunchStudio helpen kiezen tussen de twee benaderingen voordat er code wordt geschreven?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, LaunchStudio, ondersteund door Manifera's meer dan 11 jaar ervaring, voert dit exacte gesprek doorgaans vroeg met oprichters, voordat er engineeringtijd aan één van beide paden wordt besteed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is het team van LaunchStudio gevestigd voor oprichters die deze keuze maken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het Europese hoofdkantoor van LaunchStudio bevindt zich in Amsterdam, met aanvullende engineeringhubs in Singapore en Ho Chi Minh-stad."
+      }
+    }
   ]
 }
 </script>

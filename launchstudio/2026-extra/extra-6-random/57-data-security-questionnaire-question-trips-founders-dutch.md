@@ -44,6 +44,17 @@ Die haast is te vermijden. Een incident-response- en breach-notificatieproces ka
 
 De technici van Manifera, werkend vanuit Amsterdam, hebben AI-native SaaS-oprichters vaak genoeg geholpen om precies dit soort proces op te stellen vóór enterprise-deals om te weten dat het zelden gaat om iets indrukwekkends schrijven — het gaat om iets specifieks en waarachtigs schrijven, voordat de druk van een vastgelopen deal een overhaaste versie afdwingt.
 
+## De Drie Soorten Vragen in Elke Security-Vragenlijst, en Waarom Slechts Één Soort Deals Blokkeert
+
+Een security-vragenlijst (zoals een VSAQ of SIG) kan honderden vragen bevatten en intimiderend overkomen. In de praktijk vallen alle vragen echter uiteen in drie overzichtelijke categorieën, waarvan er slechts één een deal daadwerkelijk kan doen stranden:
+
+**Categorie 1: Beleids- en Documentatievragen (Geen Dealbreaker).** Vragen zoals: "Heeft u een formeel informatiebeveiligingsbeleid?" of "Hoe vaak traint u medewerkers op security?" Als vroege startup heeft u vaak geen handboeken van vijftig pagina's. Een eerlijk antwoord ("Als compact engineeringteam hanteren wij gedocumenteerde richtlijnen die periodiek worden geëvalueerd") wordt vrijwel altijd geaccepteerd.
+
+**Categorie 2: Standaard Infrastructuurvragen (Gemakkelijk Af te Vinken).** Vragen over TLS-versleuteling, DDoS-bescherming en fysieke datacenterbeveiliging. Omdat u gebruikmaakt van gerenommeerde cloudproviders (zoals AWS, Supabase, Vercel), kunt u hier simpelweg verwijzen naar de SOC 2 en ISO 27001 certificeringen van uw leveranciers.
+
+**Categorie 3: Architectuur- en Autorisatievragen (De Échte Dealbreakers).** Vragen zoals: *"Hoe wordt data-isolatie tussen tenants afgedwongen op databaseniveau?"*, *"Worden API-sleutels en klantrecords beschermd tegen ongeautoriseerde toegang?"* en *"Kunnen we auditlogs inzien van wie onze data heeft geraadpleegd?"* Als u hier vaag antwoordt of moet toegeven dat autorisatie ontbreekt, blokkeert de security-officer de deal per direct.
+
+Concentreer uw technische inspanningen daarom voor 90% op Categorie 3. Zorg dat uw data-isolatie en autorisatielaag waterdicht zijn; de beleidsmatige randzaken lossen zich daarna vanzelf op.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: drie weken verloren aan een vraag die haar nooit was gesteld
@@ -90,11 +101,46 @@ Het is het meest zichtbaar bij enterprise-deals met gevoelige of gereguleerde ge
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why does the incident-response question trip up so many founders?", "acceptedAnswer": { "@type": "Answer", "text": "Because it asks for a written plan for a scenario that hasn't happened yet, which can't be discovered by inspecting the product — it has to be deliberately written in advance, and most founders never get prompted to do that until it's asked of them directly." } },
-    { "@type": "Question", "name": "What should a basic incident-response process include?", "acceptedAnswer": { "@type": "Answer", "text": "At minimum, a severity classification, an internal escalation path, a specific customer-notification timeline, a record-keeping commitment, and a named person responsible for owning the process." } },
-    { "@type": "Question", "name": "Can this be written before it's needed, or does it have to respond to a specific questionnaire?", "acceptedAnswer": { "@type": "Answer", "text": "It should absolutely be written in advance — a well-drafted, generic-enough policy can be reused across every future security questionnaire rather than rewritten under deal pressure each time." } },
-    { "@type": "Question", "name": "Does Manifera help founders write this kind of policy?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — our team, including engineers based in Amsterdam, has helped multiple AI-native SaaS founders draft incident-response and breach-notification processes ahead of enterprise sales cycles." } },
-    { "@type": "Question", "name": "Is this only relevant to SaaS companies handling sensitive data?", "acceptedAnswer": { "@type": "Answer", "text": "It's most visible in enterprise deals involving sensitive or regulated data, but any SaaS product being evaluated by a security-conscious buyer can expect this question eventually, regardless of how sensitive the data feels day to day." } }
+    {
+      "@type": "Question",
+      "name": "Waarom struikelen zoveel oprichters over de incident-response-vraag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat het vraagt om een geschreven plan voor een scenario dat nog niet is gebeurd, wat niet ontdekt kan worden door het product te inspecteren — het moet opzettelijk vooraf worden opgeschreven, en de meeste oprichters worden pas hiertoe aangezet zodra het hen rechtstreeks wordt gevraagd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet een basaal incident-responseproces bevatten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Op zijn minst een ernstclassificatie, een intern escalatiepad, een specifieke klantennotificatietermijn, een verplichting tot dossiervorming, en een benoemde persoon die verantwoordelijk is voor het eigenaarschap van het proces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan dit vooraf worden geschreven, of moet het reageren op een specifieke vragenlijst?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het moet absoluut vooraf worden geschreven — een goed opgesteld, generiek genoeg beleid kan worden hergebruikt voor elke toekomstige beveiligingsvragenlijst in plaats van elke keer onder dealdruk herschreven te worden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Helpt Manifera oprichters bij het schrijven van dit soort beleid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — ons team, inclusief technici gevestigd in Amsterdam, heeft meerdere AI-native SaaS-oprichters geholpen bij het opstellen van incident-response- en breach-notificatieprocessen vóór enterprise-verkoopcycli."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit alleen relevant voor SaaS-bedrijven die gevoelige gegevens verwerken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is het meest zichtbaar bij enterprise-deals met gevoelige of gereguleerde gegevens, maar elk SaaS-product dat wordt beoordeeld door een beveiligingsbewuste inkoper kan deze vraag uiteindelijk verwachten, ongeacht hoe gevoelig de gegevens dagelijks aanvoelen."
+      }
+    }
   ]
 }
 </script>

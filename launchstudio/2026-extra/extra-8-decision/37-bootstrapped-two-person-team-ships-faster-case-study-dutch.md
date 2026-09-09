@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een Bootstrapped Team van Twee Lanceert Sneller Met Eén Externe Engineer"
+Titel: "Case Study: Een Bootstrapped Team van Twee Lanceert Sneller Met Eén Externe Engineer"
 Trefwoorden: engineeringhulp bootstrapped startup, tweekoppig oprichtersteam, uitbestede hardening bootstrapped, klein team productieklaar, lean startup MVP lancering, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Praktijkvoorbeeld: Een Bootstrapped Team van Twee Lanceert Sneller Met Eén Externe Engineer
+# Case Study: Een Bootstrapped Team van Twee Lanceert Sneller Met Eén Externe Engineer
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een Bootstrapped Team van Twee Lanceert Sneller Met Eén Externe Engineer",
+  "headline": "Case Study: Een Bootstrapped Team van Twee Lanceert Sneller Met Eén Externe Engineer",
   "description": "Een bootstrapped team van twee heeft geen reservecapaciteit om een detour van meerdere weken voor hardening op te vangen zonder de productroadmap volledig stil te leggen. Een praktijkvoorbeeld van hoe het lenen van één externe engineer voor een vaste sprint een lean team liet doorbouwen terwijl hun prototype parallel productieklaar werd gemaakt.",
   "author": {
     "@type": "Organization",
@@ -57,8 +57,7 @@ Bootstrapped oprichters zijn vaak instinctief terughoudend om te betalen voor ie
 
 [Blijf doorbouwen terwijl wij het hardeningswerk parallel afhandelen](https://launchstudio.eu/nl/#contact) — de meeste teams van twee zijn één sprint met vaste prijs verwijderd van lanceren zonder een enkele roadmap-week te verliezen.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een Bootstrapped Team in de Praktijk: Twee Oprichters, Eén Roadmap, Geen Omweg
 
 Joeri Vossen en Saar Wingerden, voormalige collega's bij een logistiek bedrijf en nu medeoprichters in Nijmegen, bouwden TicketFlow, een lichtgewicht supporttickettool voor kleine e-commercemerken, met Lovable en Cursor samen door de hele stack heen. Zonder externe financiering en beide oprichters fulltime aan het product werkend, hadden ze hun roadmap bewust krap gehouden — een betalingsintegratie en een klantgerichte statuspagina waren de twee features die tussen TicketFlow en zijn eerste betalende cohort stonden.

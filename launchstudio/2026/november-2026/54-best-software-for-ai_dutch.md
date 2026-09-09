@@ -88,6 +88,19 @@ Het bouwen van een schaalbaar AI-platform vereist diepgaand inzicht in hoe deze 
 2. **Modulaire Orkestratie:** Wij vermijden overbodige abstracties: strakke LlamaIndex-pipelines voor data-ingestie en lichte LangChain-modules voor acties.
 3. **De Next.js Streaming Edge:** Wij bouwen frontends met Next.js en de Vercel AI SDK, uitgerold op wereldwijde Edge-netwerken voor een Time-To-First-Token (TTFT) onder de 200ms.
 
+### Selectiecriteria voor AI-Ontwikkelsoftware en Modulaire Tooling
+
+Bij het selecteren van software voor AI-gedreven platforms toetst LaunchStudio tooling aan vier essentiële vereisten:
+1. **Draagbaarheid van LLM-Connectors:** Voorkom gesloten SDK's die u vastpinnen op één aanbieder; kies voor open standaarden zoals de Vercel AI SDK of LangChain Core.
+2. **Ondersteuning voor Lokale Mocks en Evaluaties:** Tooling moet het mogelijk maken om AI-componenten offline te testen tegen geijkte testsets zonder live API-kosten te genereren.
+3. **Type-Safe Streaming en Data-Parsing:** De software moet native ondersteuning bieden voor gestructureerde JSON-outputs en streaming responses via WebSocket of Server-Sent Events.
+4. **Transparante Observability:** Directe integratiemogelijkheden met distributed tracing tools (zoals OpenTelemetry) voor realtime prestatiemonitoring.
+
+### Flexibiliteit en Vendor-Onafhankelijkheid
+
+Behoud te allen tijde de vrijheid om tussen modelaanbieders te wisselen:
+1. **Gestandaardiseerde Interfaces:** Isoleer model-specifieke logica achter generieke interfaces voor maximale wendbaarheid.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: Het Juridische Platform Dat de Verkeerde Database Koos

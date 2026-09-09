@@ -45,6 +45,21 @@ Lotte Jansen, een oprichter in Utrecht, liep recht tegen deze muur op. Ze bouwde
 
 Dit is precies het gat dat LaunchStudio wil dichten voordat het een oprichter een investeringsronde kost. Gesteund door Manifera — vertrouwd door zakelijke klanten waaronder Vodafone, TNO en CFLW — werkt ons team, inclusief engineers gevestigd in Singapore, rechtstreeks met niet-technische oprichters om de architectuur duidelijk genoeg te documenteren om investeerdersonderzoek te doorstaan, niet alleen om een demo te doorstaan. U kunt [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) als u een pitch voor de boeg heeft en uw architectuurverhaal op orde wilt hebben voordat u de kamer binnenstapt. Voor de standaard waaraan onze engineers klantwerk houden, zie [de aanpak van Manifera](https://www.manifera.com/about-us/).
 
+## Uw Architectuur-Antwoord op Één A4 Voorbereiden Voordat U Binnenstapt
+
+De zes vragen over architectuur laten zien wat zakelijke inkopers en technische auditors gaan onderzoeken. De sleutel tot een succesvol gesprek is om niet ter plekke te improviseren, maar vooraf een beknopt, feitelijk architectuurdocument van één A4 klaar te hebben. Dit document beantwoordt de vragen voordat ze worden gesteld en straalt direct volwassenheid uit:
+
+**Deel 1: De Dataflow & Hosting Locatie.** Beschrijf in drie zinnen waar uw servers fysiek draaien (bijvoorbeeld AWS Frankfurt of Supabase EU-West), hoe data in rust (AES-256) en in overdracht (TLS 1.3) wordt versleuteld, en garandeer dat gegevens van Europese klanten de EER niet verlaten.
+
+**Deel 2: Autorisatie- en Scheidingsmodel.** Geef exact aan hoe multi-tenancy is geïmplementeerd. Vermeld expliciet dat gegevensscheiding wordt afgedwongen via Row-Level Security op databaseniveau en geautomatiseerde tenant-isolatie, waardoor cross-tenant datalekken technisch uitgesloten zijn.
+
+**Deel 3: AI-Privacy en Modelverwerking.** Vermeld zwart-op-wit welke LLM-leveranciers worden gebruikt, via welke enterprise-overeenkomsten (met de expliciete garantie van een 'Zero Data Retention' beleid en het verbod op modeltraining op klantdata), en welke gegevens vóór verzending worden geanonimiseerd.
+
+**Deel 4: Back-ups, SLA en Incidentenrespons.** Benoem de frequentie van automatische database-back-ups (dagelijks met point-in-time recovery), de hersteltijd (RTO en RPO) en het escalatiepad bij eventuele productiestoringen.
+
+Wanneer u een zakelijke prospect dit gestructureerde overzicht kunt overhandigen op het moment dat hun security-officer begint over de vragenlijst, verandert de toon van het gesprek onmiddellijk van wantrouwen naar professioneel partnerschap.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De vraag die Lottes pitch deed vastlopen
@@ -91,11 +106,46 @@ Ja, architectuurbeoordelingen worden doorgaans binnen een paar werkdagen gescope
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Do I need to understand code to answer investor architecture questions?", "acceptedAnswer": { "@type": "Answer", "text": "No, investors want a clear conceptual map of the product, not a line-by-line code walkthrough." } },
-    { "@type": "Question", "name": "What's the most common mistake founders make with \"built with AI\" pitches?", "acceptedAnswer": { "@type": "Answer", "text": "Treating the whole product as an undifferentiated AI black box instead of separating genuine AI-driven parts from standard application logic." } },
-    { "@type": "Question", "name": "How does Manifera's team help founders prepare for this kind of scrutiny?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineers review the architecture of an AI-generated product and translate it into plain-language documentation founders can present confidently." } },
-    { "@type": "Question", "name": "Should I mention security gaps to investors before they ask?", "acceptedAnswer": { "@type": "Answer", "text": "Generally yes, since proactively naming a gap and a fix plan reads better than being caught unprepared when asked directly." } },
-    { "@type": "Question", "name": "Can this kind of review happen quickly before a pitch deadline?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, architecture reviews are typically scoped and delivered within a few business days." } }
+    {
+      "@type": "Question",
+      "name": "Moet ik code begrijpen om investeerdersvragen over architectuur te beantwoorden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Investeerders willen een duidelijke conceptuele kaart van wat uw product doet en hoe de onderdelen samenhangen, geen regel-voor-regel codetoelichting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de meest gemaakte fout van oprichters bij \"gebouwd met AI\"-pitches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het hele product behandelen als één ongedifferentieerde AI-black box, in plaats van de echte AI-gedreven delen te kunnen scheiden van de onderliggende standaard applicatielogica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe helpt het team van Manifera oprichters zich voor te bereiden op dit soort onderzoek?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De engineers van Manifera, inclusief het team gevestigd in Singapore, beoordelen de architectuur van een door AI gegenereerd product en vertalen dit naar documentatie in gewone taal die een niet-technische oprichter vol vertrouwen kan presenteren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik beveiligingsgaten bij investeerders noemen voordat ze ernaar vragen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Over het algemeen wel — proactief een bekend gat en uw plan om het op te lossen benoemen komt veel beter over dan onvoorbereid betrapt worden wanneer een investeerder er rechtstreeks naar vraagt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan dit soort beoordeling snel gebeuren vóór een pitch-deadline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, architectuurbeoordelingen worden doorgaans binnen een paar werkdagen gescoped en opgeleverd, wat vaak genoeg doorlooptijd is vóór een vervolggesprek met een investeerder."
+      }
+    }
   ]
 }
 </script>

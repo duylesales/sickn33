@@ -57,8 +57,7 @@ De nuttige vraag is niet "welke offerte is het goedkoopst" — het is "welke off
 
 [Vergelijk onze scope op papier voordat u het bedrag vergelijkt](https://launchstudio.eu/nl/#contact) — de meeste oprichters ontdekken dat het werkelijke verschil tussen offertes zit in wat er daadwerkelijk inbegrepen is, niet in het factuurtotaal.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Twee Keer Betalen, Dan Goed Betalen
 
 Charline Bosveld, een voormalig retail-inkoper en nu oprichter in Breda, bouwde KlantKompas, een AI-ondersteunde tool voor klantfeedback en review-analyse voor kleine retailers, met Lovable. Met een krap bootstrap-budget huurde Charline via een online marktplaats een freelance ontwikkelaar in voor €650 om het "productieklaar te maken," waarbij ze de laagste van vier biedingen koos die ze had verzameld zonder aan een van hen te vragen precies wat het werk zou omvatten.

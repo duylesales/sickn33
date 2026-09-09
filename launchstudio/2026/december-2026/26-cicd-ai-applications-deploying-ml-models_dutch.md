@@ -81,6 +81,16 @@ Een rollback-plan dat alleen op papier bestaat, faalt vaak op het moment dat de 
 ### Het Onderscheid Tussen een Provider-Storing en Uw Eigen Regressie
 Wanneer de kwaliteit van AI-antwoorden plotseling keldert, kan de oorzaak liggen in uw eigen recente promptwijziging, óf bij de externe AI-provider (een stille modelupdate of netwerkvertraging). Het snel kunnen onderscheiden van deze twee is cruciaal: een rollback van uw eigen code lost niets op als het probleem bij de provider ligt, en overstappen naar een reserveprovider helpt niets als de fout in uw eigen prompt zat. Het loggen van zowel de modelversie als de exacte promptversie bij elk gegenereerd antwoord maakt deze diagnose binnen enkele minuten mogelijk.
 
+### Geavanceerde CI/CD Kwaliteitsbewaking voor AI-Native Applicaties
+
+Traditionele software-pipelines controleren uitsluitend of de code compileert en unit tests slagen. Een professionele AI-pipeline toetst daarnaast de semantische kwaliteit:
+- **Synthetische Evaluatie-Datasets:** Voer bij elke pull request geautomatiseerde tests uit op een geijkte 'golden dataset' van 100 representatieve gebruikersvragen om kwaliteitsdegradatie (*drift*) direct te signaleren.
+- **Geautomatiseerde Kwetsbaarheidsscans:** Scan dependencies en docker containers op CVE-kwetsbaarheden en controleer API-endpoints op veilige header-configuraties (CORS, CSP, HSTS).
+- **Canary Deployments:** Rol nieuwe prompt-templates eerst uit naar 5% van de actieve gebruikers en monitor real-time op afwijkingen in foutpercentages of token-consumptie voordat 100% cutover plaatsvindt.
+
+- **Geautomatiseerde Rollback Triggers:** Koppel uw CI/CD pipeline aan realtime error-tracking; als het foutpercentage binnen 10 minuten na deployment boven de 0,5% stijgt, triggert GitHub Actions automatisch een rollback naar de vorige stabiele release.
+- **Milieu- en Token-Budget Alerts:** Stel harde alerts in op inference-kosten per build om te voorkomen dat geautomatiseerde testsuites onbedoeld honderden euro's aan API-tegoed verbruiken.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Een sluipende prompt-regressie opgemerkt vóór livegang

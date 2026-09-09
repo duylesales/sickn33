@@ -124,42 +124,34 @@ Niet wanneer het goed geconfigureerd is. Redelijke drempels per gebruiker of per
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is een ontbrekende rate limit een hostingprobleem of een codeprobleem?",
+      "name": "Is een ontbrekende snelheidsbeperking een hostingprobleem of een codeprobleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Geen van beide puur — de applicatie zelf moet definiëren wat telt als misbruik, wat hosting alleen không afhandelt."
+        "text": "Geen van beide puur – hostingproviders kunnen bescherming op netwerkniveau bieden, maar de specifieke logica van wat telt als redelijk versus misbruikend gebruik van bijvoorbeeld het opnieuw instellen van een wachtwoord moet in de applicatie zelf worden gedefinieerd. Dat is een code- en productbeslissing, en niet iets wat een hostingabonnement automatisch afhandelt."
       }
     },
     {
       "@type": "Question",
-      "name": "Geldt dit risico op blootstelling ook voor apps met ít verkeer?",
+      "name": "Geldt dit risico op blootstelling ook voor apps met heel weinig gebruikers, of alleen voor apps met betekenisvol verkeer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, vanaf dag één — geautomatiseerde bots scannen breed op het patroon zelf in plaats van zich puur op populaire apps te richten."
+        "text": "Het geldt vanaf dag één, ongeacht verkeer – zoals Bram's case toont, richten de bots die onbeschermde eindpunten vinden zich niet specifiek op populaire apps; ze scannen breed op het patroon zelf. Een gloednieuwe app met tien gebruikers is dus exact zo blootgesteld als een app met tienduizend gebruikers."
       }
     },
     {
       "@type": "Question",
-      "name": "Draagt ervaring met grotere datavolumes over naar herstellingen op kleinere schaal?",
+      "name": "Manifera heeft systemen gebouwd die aanzienlijk grotere gegevensvolumes verwerken dan het prototype van een typische oprichter – overdraagt die ervaring zich daadwerkelijk naar herstellingen op kleinere schaal zoals die van Bram?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, de specifieke techniek verandert niet met de schaal, alleen het volume waartegen het getest wordt."
+        "text": "Ja, in de zin die er het meest toe doet – de specifieke techniek (snelheidsbeperking, invoervalidatie, gelijktijdige veilige schrijfopdrachten) verandert niet met de schaal, alleen het volume waartegen het getest wordt. Het toepassen van enterprise-grade patronen op oprichterschaal is een groot deel van waar LaunchStudio voor gebouwd is."
       }
     },
     {
       "@type": "Question",
-      "name": "Is een ontbrekende rate limit echt een architectuurprobleem?",
+      "name": "Is een professionele beoordeling nog steeds de moeite waard als een oprichter dit zelf kan herstellen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, het is een beslissing over hoe het gehele systeem een categorie verzoeken afhandelt, niet één enkele gebroken coderegel."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is een professionele beoordeling de moeite waard als een oprichter dit zelf kan herstellen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Mogelijk niet met de juiste technische achtergrond — LaunchStudio bestaat voor oprichters die die achtergrond of tijd missen."
+        "text": "Mogelijk niet met de juiste technische achtergrond – LaunchStudio bestaat specifiek voor oprichters die die achtergrond niet hebben of de tijd missen om het veilig te verwerben vóór de lancering."
       }
     },
     {
@@ -167,7 +159,7 @@ Niet wanneer het goed geconfigureerd is. Redelijke drempels per gebruiker of per
       "name": "Vertraagt snelheidsbeperking de ervaring voor legitieme gebruikers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet wanneer het goed geconfigureerd is — redelijke drempels liggen ruim boven normaal gebruik, dus legitieme gebruikers merken het nooit."
+        "text": "Niet wanneer het goed geconfigureerd is. Redelijke drempels per gebruiker of per IP liggen ruim boven normale gebruikspatronen, dus legitieme gebruikers merken ze nooit – ze blokkeren alleen het soort snelle, herhaalde verzoeken die een echt persoon die het product normaal gebruikt in de eerste plaats niet zou genereren."
       }
     }
   ]

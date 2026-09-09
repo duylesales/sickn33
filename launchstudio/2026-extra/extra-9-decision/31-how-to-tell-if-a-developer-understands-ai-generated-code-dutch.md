@@ -129,7 +129,7 @@ Als een andere partij de traceertest overtuigender doorstaat dan wij, kies dan v
 
 **Deel uw prototype met ons en wij leveren u kosteloos een schriftelijke analyse van uw registratietraject — vrijblijvend, zonder verplicht verkoopgesprek, als betrouwbaar ijkpunt voor elke andere offerte die u ontvangt.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Oprichter in Actie: De Kandidaat Die het Bestand Bij Naam Noemde
 

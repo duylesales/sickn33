@@ -52,7 +52,7 @@ De ironie van AI-beveiligingsmonitoring is dat oprichters de afwezigheid ervan d
 
 Een oprichter die een SaaS-product schaalt hoeft geen beveiligingsengineer in te huren om betekenisvolle monitoring aanwezig te hebben. Een handvol specifieke, gerichte controles dekt het merendeel van wat er daadwerkelijk toe doet voor een groeiend product, en elke controle is realistisch in te richten zonder toegewijd personeel.
 
-## De lagen die het waard zijn om te hebben, ongeveer in volgorde van prioriteit:
+**De lagen die het waard zijn om te hebben, ongeveer in volgorde van prioriteit:**
 
 1. **Tracking van mislukte inlogs met automatische uitsluiting** — na een ingesteld aantal mislukte pogingen tegen een enkel account in een kort tijdsbestek, sluit het tijdelijk uit en waarschuw de oprichter. Dit alleen al zou de poging tot credential-stuffing bij RinkReady binnen minuten hebben opgevangen in plaats van twee weken.
 2. **Rate limiting op openbare eindpunten** — inloggen, wachtwoord herstellen, aanmelden, en elke API-route die een script herhaaldelijk zou kunnen raken. De meeste moderne hostingplatformen ondersteunen dit met configuratie, en niet met custom code.

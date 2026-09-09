@@ -77,6 +77,10 @@ Manifera's engineering teams work across SAP, Dynamics 365, and NetSuite ecosyst
 }
 </script>
 
+## By The Numbers: Pricing the Decision Before You Talk to a Vendor
+
+A COO should walk into any ERP vendor conversation with rough numbers already in hand, not waiting for a vendor's framing. A targeted customization or overlay module typically runs €50,000-€200,000 depending on scope, while a full mid-market replacement runs into seven figures once licensing, data migration, and change management are included — a 10-20x spread that makes the initial diagnosis (core-sound-but-cluttered versus architecturally-obsolete) the single highest-leverage decision in the entire project. Heavily customized instances see upgrade costs run 2-3x a comparable vanilla upgrade, which means a system already carrying ten or more undocumented custom modules is likely past the point where customization remains the cheaper long-term path even if it looks cheaper today. Data migration alone should be budgeted at 20-30% of total replacement cost and timeline — a vendor quoting a replacement project without a separate, explicit line item for data cleansing and reconciliation is underscoping the highest-risk phase of the entire engagement. Hypercare (intensified post-go-live support) should run 4-8 weeks minimum regardless of path chosen; anything shorter is a signal the vendor is optimizing for project closeout over your operational stability.
+
 ## Frequently Asked Questions
 
 ### How do I know if my ERP problem is customization or architecture?
@@ -93,6 +97,18 @@ Phased or parallel-run transitions carry lower business continuity risk because 
 
 ### What should I look for in an ERP vendor's platform expertise?
 Verify current, individual-level platform certification for the specific staff assigned to your project, not just the vendor's company-level partner status, and ask for a reference from a business-side stakeholder — finance or operations, not just IT — from a similar-scale project completed in the last two years.
+
+### (Scenario: our ERP vendor of record went out of business and left us with undocumented custom modules nobody understands) Should an orphaned, undocumented custom ERP module push us toward replacement even if the core platform is otherwise sound?
+Not automatically — first commission a targeted reverse-engineering and documentation pass on the orphaned modules specifically, since a competent vendor can often reconstruct the logic and bring it under proper documentation and version control for a fraction of full replacement cost. Only escalate to replacement if that pass reveals the modules are too deeply entangled with the core to document safely.
+
+### (Scenario: our COO needs to present the customization-vs-replacement decision to the board with a clear risk framing, not just a cost comparison) How should we frame this decision for board-level sign-off beyond the total cost of ownership numbers?
+Frame it as a business continuity risk decision, not purely financial: name the specific operational failure modes each path risks (a big-bang cutover risking days of order or invoicing disruption versus a customization path risking a slow-motion cost creep) and attach a rough probability and financial impact to each. Boards respond better to named, bounded risk scenarios than a five-year NPV spreadsheet alone.
+
+### (Scenario: we operate in three EU countries with different VAT and statutory reporting requirements our current single-country ERP instance was never built for) Does a multi-country compliance gap always mean full replacement, or can a customization layer handle it?
+A multi-country compliance gap can sometimes be solved with a localization module if the core platform has official, vendor-supported localization packs for your specific countries — ask any customization vendor whether they're building custom compliance logic from scratch or configuring an existing supported pack, since the former carries meaningfully higher long-term maintenance risk as VAT rules change.
+
+### (Scenario: our operations team is already informally using spreadsheet workarounds for gaps in the current ERP) How do we account for existing shadow processes when scoping either a customization or replacement project?
+Inventory every shadow spreadsheet and workaround process explicitly before scoping the project, and treat each one as a real requirement the new or customized system must formally support. These workarounds exist because the ERP failed to serve a real need, and a project that ignores them will see the same shadow processes reappear post-launch.
 
 <script type="application/ld+json">
 {
@@ -137,6 +153,38 @@ Verify current, individual-level platform certification for the specific staff a
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Verify current, individual-level platform certification for the specific staff assigned to your project, not just the vendor's company-level partner status, and ask for a reference from a business-side stakeholder, finance or operations, not just IT, from a similar-scale project completed in the last two years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: our ERP vendor of record went out of business and left us with undocumented custom modules nobody understands) Should an orphaned, undocumented custom ERP module push us toward replacement even if the core platform is otherwise sound?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not automatically — first commission a targeted reverse-engineering and documentation pass on the orphaned modules, since a competent vendor can often reconstruct the logic and bring it under proper documentation for a fraction of full replacement cost. Only escalate to replacement if that pass reveals the modules are too deeply entangled with the core to document safely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: our COO needs to present the customization-vs-replacement decision to the board with a clear risk framing, not just a cost comparison) How should we frame this decision for board-level sign-off beyond the total cost of ownership numbers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Frame it as a business continuity risk decision, not purely financial: name the specific operational failure modes each path risks and attach a rough probability and financial impact to each. Boards respond better to named, bounded risk scenarios than a five-year NPV spreadsheet alone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: we operate in three EU countries with different VAT and statutory reporting requirements our current single-country ERP instance was never built for) Does a multi-country compliance gap always mean full replacement, or can a customization layer handle it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A multi-country compliance gap can sometimes be solved with a localization module if the core platform has official, vendor-supported localization packs for your countries — ask whether the vendor is building custom compliance logic from scratch or configuring an existing supported pack, since the former carries higher long-term maintenance risk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: our operations team is already informally using spreadsheet workarounds for gaps in the current ERP) How do we account for existing shadow processes when scoping either a customization or replacement project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inventory every shadow spreadsheet and workaround process explicitly before scoping the project, and treat each one as a real requirement the new or customized system must formally support. These workarounds exist because the ERP failed to serve a real need, and ignoring them means they reappear post-launch."
       }
     }
   ]

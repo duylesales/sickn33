@@ -37,48 +37,63 @@ Zonder evaluatieraamwerk is elke aanpassing een munt opgooien. Over meerdere ite
 De remedie vereist geen duur data science team met vijf PhD's en geen ingewikkelde machine learning-infrastructuur:
 **U heeft slechts 30 tot 50 echte praktijkvoorbeelden en een gestructureerd script nodig.** Het kost u één middag om op te zetten, en het geeft u het vermogen om de vraag *"Heeft deze promptwijziging ons product echt verbeterd?"* te beantwoorden met harde data in plaats van aannames.
 
+
 ## Bouw een 'Golden Test Set' van Echte Klantdata
 
-Een testset van dertig tot vijftig voorbeelden is groot genoeg om betrouwbaar te zijn en compact genoeg om binnen een minuut door te rekenen. Het geheim zit hem in de **samenstelling**:
+Dertig tot vijftig voorbeelden is ruim voldoende voor de meeste AI-functionaliteiten — groot genoeg om een aanzienlijke kans te hebben dat een wijziging die iets breekt ook direct zichtbaar wordt, en compact genoeg om de hele testset binnen één minuut door te rekenen tegen minimale tokenkosten.
 
-- **20 Typische Standaardcases:** Teksten en documenten die de kern van het dagelijkse gebruik vertegenwoordigen.
-- **10 Lastige Randgevallen (*Edge Cases*):** De langste tekst die u ooit in productie heeft gezien, de allerkortste, een invoer met typefouten, een invoer in een andere taal, of een halfleeg formulier.
-- **Alle Historische Foutgevallen (*Regressietests*):** Elke keer dat een klant klaagt over een foute samenvatting of verkeerde categorisering, voegt u die geanonimiseerde case direct toe aan uw testset. Zo voorkomt u dat oude bugs ooit nog terugkeren.
-- **Weiger-Cases (*Refusal Tests*):** Invoer waarin de gezochte gegevens simpelweg níet aanwezig zijn. Het enige juiste gedrag van het model is hier om te weigeren (*"Geen factuurnummer aangetroffen"*), in plaats van te gaan hallucineren.
+De inhoudelijke samenstelling is vele malen belangrijker dan de pure omvang:
+- **Twintig standaardgevallen:** De alledaagse invoer die gezamenlijk tachtig procent van het reële gebruik vertegenwoordigt.
+- **Tien lastige randgevallen (*edge cases*):** Het langste document dat u ooit in productie heeft verwerkt, het allerkortste, een invoer met slordige opmaak of typefouten, een invoer in een tweede taal (indien ondersteund), of een inherent ambigue vraag.
+- **Alle historische foutgevallen:** Elk incident dat ooit de supportdesk heeft bereikt, direct toegevoegd zodra het optreedt — dit is de enige manier om te garanderen dat een eenmaal opgelost probleem ook permanent opgelost blijft.
+- **Vijf weiger-gevallen (*refusal cases*):** Invoer waarbij het enige juiste en veilige gedrag is om expliciet te weigeren of te melden dat de data ontbreekt. Een model dat niet getraind is om toe te geven dat het iets niet weet, verzint immers vol zelfvertrouwen een klinkklare hallucinatie.
 
-Gebruik uitsluitend geanonimiseerde **echte klantdata**. Zelfverzonnen voorbeelden zijn steevast te netjes en missen de chaotische formaten van de echte wereld.
+Haal deze voorbeelden altijd rechtstreeks uit geanonimiseerde **echte klantdata**. Zelfbedachte synthetische voorbeelden missen steevast de rommelige, onvoorspelbare patronen van de echte wereld.
+
+Leg voor elk testgeval vast hoe een goede output eruitziet. Niet per se een letterlijke tekst — dat is bij generatieve taken zinloos — maar de harde eigenschappen: welke feiten moeten verplicht genoemd worden, welke claims mogen absoluut niet voorkomen, welk formaat is vereist, en binnen welke lengtemarges moet de tekst blijven.
 
 ## Wat Meet U?
 
-De meetmethode hangt af van het type AI-taak:
+De meetmethode hangt af van het type AI-taak, en het correct afstemmen van de metriek op de taak is wat dit proces pragmatisch en betaalbaar houdt.
 
-### 1. Voor Classificatie en Extractie
-Hier is sprake van een eenduidig goed of fout. Meet de nauwkeurigheid (*accuracy*): klopt het geëxtraheerde IBAN-nummer? Is het ticket aan de juiste afdeling gekoppeld? Dit kan volledig geautomatiseerd worden geëvalueerd in minder dan 30 seconden.
+**Voor extractie en classificatie**, waar een objectief juist antwoord bestaat, meet u de nauwkeurigheid (*accuracy*) direct. Klopt het geëxtraheerde totaalbedrag? Is de gekozen categorie juist? Dit kan volledig geautomatiseerd worden gevalideerd met een eenvoudig testscript, waardoor het vergelijken van twee promptversies minder dan een minuut kost.
 
-### 2. Voor Tekstgeneratie en Samenvattingen
-Omdat er bij creatieve teksten geen sprake is van één uniek goed antwoord, toetst u op **vaste eigenschappen (*properties*)**:
-- Bevat de gegenereerde samenvatting de drie verplichte kernfeiten?
-- Bevat de output géén claims die ontbreken in de brontekst?
-- Blijft het aantal woorden binnen de ingestelde marge?
-- Voldoet de opmaak aan het vereiste JSON- of Markdown-formaat?
+**Voor vrije tekstgeneratie**, waar geen sprake is van één uniek juist antwoord, toetst u op vaste eigenschappen (*properties*) in plaats van op letterlijke tekstovereenkomst. Bevat de samenvatting de vereiste feiten? Blijven ongegronde claims die ontbreken in de brontekst achterwege? Blijft de lengte binnen de gestelde bandbreedte? En behoudt de output het gevraagde formaat (zoals Markdown of JSON)? Elk van deze eigenschappen is mechanisch controleerbaar, en gezamenlijk vangen ze het overgrote deel van alle regressies af.
 
-### 3. Twee Onmisbare Productiemetrieken
-Naast uw offline testset zijn er twee signalen in productie die meer zeggen dan welke benchmark dan ook:
-- **De Correctieratio (*Correction Rate*):** Welk percentage van de gegenereerde teksten wordt door eindgebruikers handmatig bewerkt?
-- **De Herhalingsratio (*Retry Rate*):** Hoe vaak klikt een gebruiker binnen dertig seconden op *"Opnieuw genereren"*? Een hoge herhalingsratio is het ultieme bewijs dat de eerste poging onbruikbaar was.
+**Voor weigertaken (*refusal tests*)**, controleert u of de functie netjes weigerde in plaats van iets te verzinnen — want dát is de faalmodus die anders als overtuigend geformuleerde onzin bij uw klant belandt.
+
+Naast de offline testset zijn er twee productiemetrieken die waardevoller zijn dan welke synthetische benchmark dan ook:
+- **De correctieratio (*correction rate*):** Hoe vaak bewerken klanten de gegenereerde output handmatig, bijgehouden per feature door de tijd heen?
+- **De herhalingsratio (*retry rate*):** Hoe vaak voeren gebruikers binnen korte tijd exact dezelfde opdracht opnieuw uit? Dat is immers het duidelijkste bewijs dat het eerste resultaat onbruikbaar was.
 
 ## De Veilige Ontwikkelingsloop
 
-Wanneer uw testset eenmaal staat, volgt elke promptaanpassing een vaste cyclus:
+Wanneer een testset eenmaal operationeel is, volgt elke wijziging exact dezelfde korte en voorspelbare cyclus.
 
-1. **Draai de Testset op de Huidige Prompt:** Leg de scores vast als nulmeting.
-2. **Voer de Wijziging Door:** Pas de instructies aan of selecteer een ander model.
-3. **Draai de Testset Opnieuw:** Vergelijk de resultaten. Zoek niet primair naar de verbeteringen, maar kijk specifiek naar **wat er slechter is geworden**.
-4. **Gefaseerde Uitrol via Feature Flags:** Schakel de nieuwe prompt eerst in voor 10% van de gebruikers en monitor of de correctieratio daalt voordat u iedereen overzet.
+Draai de testset tegen de huidige configuratie en leg de resultaten vast. Voer vervolgens de beoogde wijziging door — een aanpassing in de systeemprompt, de overstap naar een ander model, of een verandering in de context die wordt meegegeven. Draai de testset opnieuw. Vergelijk de uitkomsten, en kijk specifiek naar **wat er slechter is geworden** in plaats van naar de algemene indruk. Promptaanpassingen verbeteren immers routinematig één type invoer, terwijl ze stilletjes een andere categorie beschadigen.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste software-ontwikkeling) richten we geautomatiseerde LLM-evaluatiesets en CI/CD-teststraten in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-teststrategie met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat prompt engineering een voorspelbare wetenschap wordt.
+Wanneer de offline vergelijking gunstig uitvalt, rolt u de aanpassing via een feature flag uit naar een klein percentage van uw actieve accounts. Monitor de correctieratio nauwlettend voordat u de wijziging voor iedereen activeert. De offline evaluatie vangt regressies af; de productiemeting vangt de praktijksituaties op die uw dertig testvoorbeelden niet weerspiegelden.
 
-## Praktijkvoorbeeld
+De discipline die dit proces effectief maakt, is het draaien van de testset bij letterlijk élke wijziging — inclusief aanpassingen die ogenschijnlijk volkomen veilig lijken. De veranderingen die software breken, zijn immers steevast de wijzigingen die te triviaal leken om te testen.
+
+Het opzetten van een evaluatieset, het automatiseren van de vergelijking en het koppelen ervan aan een gefaseerde uitrol is een overzichtelijk stuk engineering dat promptiteratie transformeert van giswerk naar een controleerbaar proces. LaunchStudio, ondersteund door meer dan 11 jaar enterprise software-ontwerp bij Manifera, richt deze testinfrastructuur in parallel aan de AI-functionaliteiten zelf. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een grondige review binnen één werkdag.
+
+## Wanneer Geautomatiseerd Scoren Zijn Complexiteit Waard Is
+
+Het handmatig beoordelen van dertig testoutputs kost misschien twintig minuten. Dat is volkomen acceptabel voor een aanpassing die u maandelijks doorvoert, maar tijdrovend voor iteraties die u dagelijks wilt testen.
+
+De logische vervolgstap is om een model in te zetten als beoordelaar — waarbij een tweede model toetst of een samenvatting accuraat en compleet is ten opzichte van de brontekst (*LLM-as-a-judge*). Dit werkt verrassend goed, maar kent twee fundamentele beperkingen die u moet kennen. Het stemt meestal overeen met het menselijk oordeel, maar zeker niet altijd. Bovendien vertonen taalmodellen systematische vooroordelen: ze belonen stelselmatig langere antwoorden en formuleringen die overtuigend en zelfverzekerd klinken. Het is een uitstekend filter voor een eerste grove schifting, maar een gevaarlijke eindautoriteit.
+
+Een praktische en beproefde opzet:
+1. Geautomatiseerde code-checks voor alle eigenschappen die mechanisch gecontroleerd kunnen worden (formaat, JSON-validatie, afwezigheid van verboden termen).
+2. Model-ondersteunde evaluatie voor de subjectieve kwaliteitsdimensies (relevantie, toon).
+3. Menselijke review voor de grensgevallen waarin het geautomatiseerde oordeel twijfelt of een lage score toekent.
+
+Daarmee houdt u de benodigde menselijke tijd binnen de perken, terwijl u professioneel oordeelsvermogen behoudt waar het er echt toe doet.
+
+Wat in deze groeifase zelden de investering waard is, is een zwaar commercieel AI-evaluatieplatform. Die platforms zijn ontworpen voor grote machine learning-teams die honderden experimenten tegelijk draaien. Een spreadsheet, een degelijk Python-script en een vaste teamdiscipline volstaan ruimschoots voor een SaaS-product met twee of drie AI-functies — en hebben het doorslaggevende voordeel dat u ze daadwerkelijk zult gebruiken.
+
+## Echt voorbeeld
 
 ### De Promptverbetering Die Stilletjes de Grootste Categorie Ruïneerde
 
@@ -105,6 +120,7 @@ Omdat er geen geautomatiseerde evaluatieset bestond, duurde het veertien dagen v
 > — **Daria Ivanova, Oprichter, Klachtclassificatie**
 
 **Kosten & Doorlooptijd:** Golden test set, evaluatieworkflow en regressie-auditing opgeleverd in 2 werkdagen.
+
 
 ## Veelgestelde Vragen
 

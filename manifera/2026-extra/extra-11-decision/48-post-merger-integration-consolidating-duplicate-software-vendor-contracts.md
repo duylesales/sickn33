@@ -54,6 +54,12 @@ When two legacy organizations run overlapping vendors, the default assumption is
 
 Vendor contract consolidation after a merger is a real and often substantial value-creation opportunity, but the savings only materialize when sequencing respects actual contract mechanics, license true-up realities are modeled honestly, and migration timelines are set by readiness rather than by a synergy-reporting deadline. A CFO who builds the full contract inventory early and resists the pressure to force consolidation ahead of contract-exit windows captures more of the real savings with far less integration disruption.
 
+## The Real Math: Modeling Consolidation Savings Against Total Transition Cost
+
+A defensible consolidation business case has three lines, not one. Line one: the license/subscription savings from eliminating a duplicate contract — typically 20-35% of the eliminated contract's annual value when negotiated at the combined entity's higher volume. Line two: one-time migration cost — data migration, integration rebuild, and retraining, which for a mid-complexity platform (CRM, project management, ticketing) typically runs 0.5-1x the eliminated contract's annual value, and for a deeply embedded system like ERP can run 2-4x. Line three: the disruption cost, harder to quantify but real — a 15-25% productivity dip in the affected team for 4-8 weeks around cutover, which should be estimated in dollar terms against the team's fully loaded cost, not waved away as a soft cost.
+
+Only once all three lines are in the model does the payback period become honest. A duplicate CRM with a EUR 60,000 eliminated annual cost, EUR 40,000 migration cost, and EUR 15,000 estimated disruption cost has an actual payback of roughly 11 months against the EUR 60,000/year savings — a reasonable case. The same math applied to a deeply embedded ERP with a EUR 200,000 migration cost against EUR 60,000/year in savings produces a 3+ year payback, which argues strongly for running that consolidation to the contract's natural renewal instead of forcing it inside a synergy-reporting window.
+
 ## Frequently Asked Questions
 
 ### What's the first step in consolidating vendor contracts after a merger?
@@ -70,6 +76,18 @@ A TSA is an arrangement, typically negotiated as part of the deal, where a syste
 
 ### Should the acquiring company's incumbent vendor automatically become the surviving vendor after a merger?
 No — both legacy vendor relationships should be evaluated against the combined organization's actual go-forward needs with the same rigor as a fresh vendor selection. In some cases neither legacy vendor fits the combined entity's scale, making the PMI period a legitimate moment to run a focused RFP for a new selection.
+
+### (Scenario: One legacy company's vendor contract has a change-of-control clause triggered by the merger itself) What happens if a legacy vendor contract's change-of-control clause triggers from the merger before consolidation planning even starts?
+Treat it as an immediate, standalone workstream separate from the broader consolidation roadmap — the vendor may have a termination or renegotiation right that fires on close regardless of which system you eventually plan to keep, so confirm the contract's status and any vendor notice requirements within the first weeks post-close rather than waiting for the full inventory and sequencing exercise to reach that contract.
+
+### (Scenario: The board or PE sponsor has already booked consolidation savings into next year's synergy targets before migration is complete) What if synergy savings from vendor consolidation get booked before the migration is actually complete?
+Reforecast against the three-line model above as soon as the actual migration cost and timeline are known, and flag the gap between the originally booked estimate and the realistic payback explicitly rather than letting an optimistic pre-close number stand unchallenged — a CFO who corrects this early preserves credibility that a missed synergy target discovered late does not.
+
+### (Scenario: The CFO expects to run this same PMI vendor consolidation process across several more acquisitions) How should a serial acquirer build a repeatable vendor consolidation playbook rather than solving this fresh each time?
+Standardize the inventory template, the three-line business case model, and the contract-exit-cost ranking criteria as a fixed post-close workstream triggered automatically at close, rather than re-deriving the approach for each deal — serial acquirers who do this typically cut the time to complete a full vendor inventory by half or more by the third or fourth acquisition.
+
+### (Scenario: The two legacy CRMs use fundamentally incompatible data models, complicating a straightforward migration) What if the two legacy systems being consolidated use incompatible data models?
+Budget meaningfully more than the standard 0.5-1x migration cost multiplier for this specific consolidation, since incompatible data models usually mean a custom mapping and transformation layer rather than a vendor-provided import tool, and get a specific technical estimate for that mapping work before finalizing the business case rather than assuming a standard migration timeline applies.
 
 <script type="application/ld+json">
 {
@@ -114,6 +132,38 @@ No — both legacy vendor relationships should be evaluated against the combined
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No — both legacy vendor relationships should be evaluated against the combined organization's actual go-forward needs with the same rigor as a fresh vendor selection. In some cases neither legacy vendor fits the combined entity's scale, making the PMI period a legitimate moment to run a focused RFP for a new selection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if a legacy vendor contract's change-of-control clause triggers from the merger before consolidation planning even starts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat it as an immediate, standalone workstream separate from the broader consolidation roadmap — the vendor may have a termination or renegotiation right that fires on close regardless of which system you plan to keep, so confirm the contract's status within the first weeks post-close rather than waiting for the full inventory exercise to reach it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if synergy savings from vendor consolidation get booked before the migration is actually complete?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reforecast against a full three-line model — savings, migration cost, disruption cost — as soon as actual figures are known, and flag the gap between the originally booked estimate and the realistic payback explicitly rather than letting an optimistic pre-close number stand unchallenged."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should a serial acquirer build a repeatable vendor consolidation playbook rather than solving this fresh each time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standardize the inventory template, the three-line business case model, and the contract-exit-cost ranking criteria as a fixed post-close workstream triggered automatically at close, rather than re-deriving the approach for each deal — this typically cuts the time to complete a full vendor inventory by half or more by the third or fourth acquisition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the two legacy systems being consolidated use incompatible data models?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Budget meaningfully more than the standard migration cost multiplier, since incompatible data models usually mean a custom mapping and transformation layer rather than a vendor-provided import tool, and get a specific technical estimate for that mapping work before finalizing the business case."
       }
     }
   ]

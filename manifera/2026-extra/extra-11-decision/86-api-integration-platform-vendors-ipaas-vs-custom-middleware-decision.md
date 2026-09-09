@@ -58,6 +58,10 @@ The right answer depends on your actual connector count, transaction volume, and
 
 Manifera builds both custom integration middleware and iPaaS-based integration layers depending on what the actual workload calls for — see our [custom software development](https://www.manifera.com/services/custom-software-development/) services and how we scope integration work through [our way of working](https://www.manifera.com/about-us/our-way-of-working/). If you're modeling the iPaaS-vs-custom decision for your own integration roadmap, [talk to us](https://www.manifera.com/contact-us/) about the actual numbers.
 
+## By The Numbers: Modeling Your Own Crossover Point
+
+Build a simple three-year model with your own numbers rather than trusting the ranges above blindly — the inputs that actually move the crossover point are specific and worth pricing out individually. Start with per-connector monthly cost at your platform tier (commonly $500-$2,500 per active connector per month at mid-market iPaaS pricing, before volume discounts) multiplied by your expected connector count at year three, not today's count. Add per-task or per-API-call overage costs at your projected transaction volume, since most iPaaS pricing tiers include a base allotment that gets exceeded quickly once integrations move from pilot to full production traffic. Against that, price a custom build: expect roughly 2-4 weeks of engineering time per straightforward integration once shared infrastructure (message broker, retry logic, monitoring) exists, versus 6-10 weeks to build that shared infrastructure once at the start. Divide your fully-loaded three-year iPaaS cost by your fully-loaded three-year custom cost (shared infrastructure plus per-integration engineering time plus one ongoing maintenance engineer) — a ratio above 1.3-1.5x in iPaaS's disfavor is a strong signal to move, while anything closer to parity favors staying on iPaaS for the operational simplicity alone.
+
 ## Frequently Asked Questions
 
 ### At what point does custom middleware become cheaper than iPaaS?
@@ -74,6 +78,19 @@ Yes, and many mature integration architectures do exactly this — iPaaS for the
 
 ### What should we ask an iPaaS vendor about long-term cost before signing?
 Ask for a cost projection at your actual expected connector count and transaction volume three years out, not the pilot-phase quote, and build an independent model from their published pricing rather than relying solely on a vendor-generated projection.
+
+### (Scenario: a company's iPaaS invoice tripled between the pilot and month eighteen, mirroring this article's opening example) How do we diagnose whether that growth is expected or a sign of a pricing structure mismatch?
+Break the invoice down by connector count growth versus per-transaction volume growth — if connector count stayed flat but the bill still tripled, the pricing tier's transaction-volume assumptions were mismatched to your actual usage from the start, which is a vendor negotiation issue. If connector count also tripled, that's organic growth the original iPaaS decision should have modeled for, and it's now a genuine crossover-point recalculation, not a pricing dispute.
+
+### (Scenario: CTO's integration team has started writing custom scripts inside the iPaaS platform's scripting escape hatch for three of twelve integrations) Does this mean the whole platform decision was wrong?
+No — it means those three specific integrations have outgrown the visual builder while the other nine likely haven't, which is exactly the hybrid pattern mature teams land on rather than a signal to abandon iPaaS entirely. Migrate just the three complex integrations to custom middleware and keep the simpler nine on the platform, rather than treating this as an all-or-nothing re-platform decision.
+
+### (Scenario: a planned custom middleware build needs to combine data from three legacy systems before writing to a fourth, a transformation iPaaS's visual builder couldn't handle) What team composition does this actually require?
+Beyond general backend engineers, this specific pattern needs someone experienced in idempotent write design and multi-source reconciliation logic — handling partial failures when only two of three source systems respond in time is the hard part, not the basic data mapping. Budget for this expertise explicitly in the build estimate rather than assuming general integration engineering skills cover it.
+
+### (Scenario: procurement wants a multi-year iPaaS contract locked in now for a discount, before the integration roadmap for years two and three is finalized) How should a CTO respond to this pressure?
+Push back on locking a multi-year contract before connector count and transaction volume projections exist for years two and three, since the discount is only a real saving if the pricing tier still matches actual usage by year three. A vendor confident in their platform's fit should be willing to offer a shorter initial term with a pre-negotiated renewal discount instead of requiring the long-term commitment upfront.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,6 +134,38 @@ Ask for a cost projection at your actual expected connector count and transactio
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ask for a cost projection at your actual expected connector count and transaction volume three years out, not the pilot-phase quote, and build an independent model from their published pricing rather than relying solely on a vendor-generated projection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a company's iPaaS invoice tripled between the pilot and month eighteen, mirroring this article's opening example) How do we diagnose whether that growth is expected or a sign of a pricing structure mismatch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Break the invoice down by connector count growth versus per-transaction volume growth. Flat connector count with a tripled bill signals a pricing tier mismatched to actual usage — a vendor negotiation issue. Growth in both is organic growth the original decision should have modeled."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CTO's integration team has started writing custom scripts inside the iPaaS platform's scripting escape hatch for three of twelve integrations) Does this mean the whole platform decision was wrong?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — it means those three integrations outgrew the visual builder while the other nine likely haven't. Migrate just the complex three to custom middleware and keep the simpler nine on the platform, rather than an all-or-nothing re-platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a planned custom middleware build needs to combine data from three legacy systems before writing to a fourth, a transformation iPaaS's visual builder couldn't handle) What team composition does this actually require?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beyond general backend engineers, this needs someone experienced in idempotent write design and multi-source reconciliation — handling partial failures when only two of three systems respond in time is the hard part, not basic data mapping."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: procurement wants a multi-year iPaaS contract locked in now for a discount, before the integration roadmap for years two and three is finalized) How should a CTO respond to this pressure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Push back on locking a multi-year contract before connector count and volume projections exist for years two and three. A vendor confident in fit should offer a shorter initial term with a pre-negotiated renewal discount instead."
       }
     }
   ]

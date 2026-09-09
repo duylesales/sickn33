@@ -74,6 +74,16 @@ Verloopt een sessietoken daadwerkelijk na verloop van tijd, of blijft een eenmaa
 ### Waarom Eén Enkele Test Niet Genoeg Is
 De test om via een URL-parameter data van een ander te bekijken is een uitstekende eerste stap, maar controleert alleen data-scoping. Een grondige audit controleert elk van de bovenstaande categorieën afzonderlijk, aangezien een app de URL-test glansrijk kan doorstaan terwijl API-routes wagenwijd openstaan.
 
+### Stap-voor-Stap: Veilige Supabase Authenticatie in AI-Frontend Code
+
+Bij het toevoegen van authenticatie aan een door Lovable of v0 gegenereerde applicatie, treden vaak fouten op in de sessiestatus. Volg dit beproefde implementatiepatroon:
+1. **Centrale Auth Context Provider:** Wikkel uw React-applicatie in een centrale `AuthProvider` die luistert naar `supabase.auth.onAuthStateChange` en de sessiestatus globaal beheert zonder onnodige re-renders.
+2. **Beschermde Routering (Protected Routes):** Blokkeer ongeautoriseerde toegang op componentniveau via middleware die niet-ingelogde gebruikers direct doorstuurt naar `/login` met behoud van de oorspronkelijke bestemmings-URL.
+3. **Server-Side Token Verificatie:** Vertrouw in backend API-routes nooit blind op de door de browser meegestuurde gebruikers-ID, maar valideer altijd het JWT-token via `supabase.auth.getUser()`.
+
+- **Veilige Sessie-Opslag in Cookies:** Gebruik altijd `httpOnly` en `secure` cookies voor sessietokens in plaats van `localStorage`, om tokens te beschermen tegen kwaadaardige XSS-aanvallen.
+- **Multi-Tab Synchronisatie:** Implementeer `storage` event listeners zodat wanneer een gebruiker in tab A uitlogt, alle overige openstaande browsertabbladen direct veilig worden afgesloten.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Het datalek ontdekt vlak vóór de officiële uitrol

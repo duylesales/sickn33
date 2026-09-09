@@ -1,21 +1,21 @@
-📞 Een freelancer gaf haar een offerte op basis van 2 alinea's e-mail. Drie weken later was de prijs VERDUBBELD zodra hij de code daadwerkelijk opende. 😳
+📞 Een freelancer gaf haar ooit een offerte op basis van een e-mail van twee alinea's. Drie weken na de start was de prijs VERDUBBELD, zodra hij de code daadwerkelijk opende en ontdekte wat voor chaos eronder zat.
 
-"Ik verwachtte een glad verkoopgesprek. Wat ik kreeg voelde als een deskundig technisch consult over mijn eigen app." Dit is waarom dat veel veiliger is: 🧠
+"Ik verwachtte een verkooppraatje. Wat ik kreeg leek op een technisch interview over mijn eigen product." Dit is waarom dat juist oneindig veel veiliger is:
 
-❌ Offertes afgegeven op basis van één vage zin, vóór iemand in de code heeft gekeken
-❌ "Scope-verrassingen" halverwege het project die uw budget laten ontsporen
-❌ Oprichters die bang zijn om "ik weet het niet" te zeggen tijdens een intake
-❌ Prijzen gebaseerd op aannames in plaats van harde feiten in de repository
+❌ Prijzen noemen op basis van een omschrijving van één regel, vóórdat iemand de code heeft gezien
+❌ "Scope-verrassingen" halverwege het project die de oorspronkelijke prijs stilletjes verdubbelen
+❌ Oprichters die bang zijn om "dat weet ik niet" te zeggen tijdens een intakegesprek
+❌ Offertes bouwen op gissingen in plaats van op wat er feitelijk in de repository staat
 
-✅ Een gestructureerde discovery call brengt de werkelijke situatie in kaart
-✅ "Ik weet het niet" is het MEEST nuttige antwoord — het vertelt ons exact waar we moeten controleren
-✅ Een senior engineer inspecteert de codebase vóórdat er een getal wordt genoemd
-✅ Het resultaat: een rotsvaste pakketprijs die 100% standhoudt tot oplevering
+✅ Een gestructureerd intakegesprek brengt eerst het echte technische beeld in kaart
+✅ "Ik weet het niet" is het MEEST waardevolle antwoord — het vertelt ons waar we moeten verifiëren
+✅ Een engineer inspecteert de codebase zelf voordat er ook maar één getal wordt genoemd
+✅ Het resultaat: een vaste prijs die tot en met de oplevering exact standhoudt
 
-Bij **LaunchStudio**, aangedreven door Manifera's 11+ jaar enterprise software-engineering, baseren we offertes op feiten, niet op giswerk. 🔍
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering, zijn offertes geworteld in uw feitelijke code, niet in een losse schatting. 🔍
 
-Mariekes resultaat: Vaste offerte van €1.900 die exact standhield, live in 9 dagen, nul scope-verrassingen. ✅
+Haar resultaat: een vaste offerte die perfect standhield tot de oplevering, nul nare verrassingen in de scope. ✅
 
-👉 Bekijk exact wat we vragen vóór we offreren: https://launchstudio.eu/nl/blog/the-discovery-call-what-launchstudio-asks
+👉 Bekijk exact wat er wordt gevraagd vóór u een offerte ontvangt: https://launchstudio.eu/nl/blog/the-discovery-call-what-launchstudio-asks
 
-#AINativeFounder #StartupEngineering #VastePrijs #LaunchStudio #Manifera #VibeCoding #DiscoveryCall
+#AINativeFounder #StartupEngineering #FixedPriceQuote #LaunchStudio #Manifera #VibeCoding

@@ -101,7 +101,7 @@ Een veelbeproefde tussenoplossing is proberen de voordelen van een managed plan 
 
 Gebruik de calculator om te zien waar uw specifieke platform en bezoekersvolume uitkomen, en kies vervolgens wat voor uw situatie het beste werkt — transparant en zonder verkooptrucjes.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Scale-Up Oprichter in Actie: De Maand Waarin de Rekensom Kantelde
 

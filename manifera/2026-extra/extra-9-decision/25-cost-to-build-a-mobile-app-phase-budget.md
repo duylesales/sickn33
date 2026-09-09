@@ -70,6 +70,12 @@ At Manifera, we structure proposals phase by phase for exactly this reason — E
 
 A board that sees a phase-by-phase budget with risk-based justification for each line item approves faster and pushes back less than one handed a single number and asked to trust it. If you're preparing this presentation now, [talk to one of our senior architects](https://www.manifera.com/contact-us/) about scoping a phase-by-phase estimate against your specific feature list before your next board meeting.
 
+## Building the 15% Cut Scenario Before a Board Asks for It
+
+Prepare a pre-modeled answer to "what if we need to cut 15% from this budget" before anyone on the board asks it — because they usually do, and an improvised answer in the room looks far worse than a rehearsed one. The defensible cuts, in order of least damaging to most: reduce design revision rounds from three to two (saves roughly 3-4% of total budget with modest UX risk), narrow the QA device matrix to your top 80% of actual user devices instead of full coverage (saves roughly 3-5% with contained risk if your analytics data on device distribution is solid), and trim the post-launch reserve from 20% to 15% (saves the difference but shrinks your buffer for the unplanned issues real users always surface).
+
+Two lines should never be the answer to a 15% cut request, and naming them explicitly to the board is itself useful: discovery, because cutting it defers cost into development at a worse exchange rate, and backend QA/security testing specifically, since a payments or data-handling failure post-launch costs an order of magnitude more than the testing that would have caught it. Walking into the budget conversation with this cut hierarchy already modeled — rather than negotiating live — signals exactly the financial discipline a board is actually testing for when they ask the question in the first place.
+
 ## Frequently Asked Questions
 
 ### What is a realistic total cost to build a mobile app across all development phases?
@@ -92,6 +98,22 @@ It's a budget set aside, separate from the build cost, to cover bug fixes and ad
 
 In most cases, yes — cross-platform frameworks like React Native or Flutter typically reduce combined iOS/Android development cost by 30-40% through shared code. Native development remains the better choice for apps relying heavily on platform-specific hardware features.
 
+### (Scenario: A board asks a COO to cut 15% from the presented phase-by-phase budget) Which phases should I cut first if the board demands a 15% budget reduction?
+
+Reduce design revision rounds and narrow the QA device matrix to your top actual user devices first — each saves roughly 3-5% with contained risk. Avoid cutting discovery or backend QA/security testing, since both defer cost to a later, more expensive point rather than eliminating it.
+
+### (Scenario: A COO wants a rehearsed answer ready before the board meeting rather than negotiating live) Should I prepare a cut scenario before presenting the mobile app budget, or wait for the board to ask?
+
+Prepare it in advance. Walking in with a modeled 15% cut hierarchy already worked out, rather than negotiating live, signals exactly the financial discipline a board is testing for and avoids an improvised answer that looks weaker in the room.
+
+### (Scenario: A COO is deciding how much of the post-launch reserve is safe to trim under budget pressure) Is it safe to reduce the post-launch reserve below 15% under budget pressure?
+
+Generally not advisable — the reserve exists specifically to cover the gap between test-user and real-user behavior in the first 60-90 days, and trimming it below roughly 15% shifts risk toward an emergency mid-crisis budget request rather than actually saving money.
+
+### (Scenario: A COO's board keeps asking why the invisible backend costs more than the visible UI) How do I justify backend development costing more than frontend UI to a board that only sees the interface?
+
+Explain it in terms of what the backend prevents: outages, security incidents, and data-handling failures that cost far more in reputation and emergency engineering time than the frontend ever risks. For apps with payments or complex permissions, backend commonly runs 45-55% of the development budget for exactly this reason.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +123,11 @@ In most cases, yes — cross-platform frameworks like React Native or Flutter ty
     {"@type": "Question", "name": "Why should discovery be a separate budget line rather than folded into development?", "acceptedAnswer": {"@type": "Answer", "text": "Discovery retires scope-ambiguity risk before expensive code gets written. Skipping it doesn't eliminate the cost — it defers the same work into development as change orders, which cost more than getting the scope right the first time."}},
     {"@type": "Question", "name": "How much should I budget for QA when building the cost to build a mobile app into my plan?", "acceptedAnswer": {"@type": "Answer", "text": "Allocate 12-15% of total budget to QA and testing, covering device compatibility, functional testing, and a regression pass before app store submission."}},
     {"@type": "Question", "name": "What is a post-launch reserve and why does my board need to approve it upfront?", "acceptedAnswer": {"@type": "Answer", "text": "It's a budget set aside, separate from the build cost, to cover bug fixes and adjustments based on real user behavior in the first 60-90 days after launch, avoiding an emergency mid-crisis budget request later."}},
-    {"@type": "Question", "name": "Is cross-platform development always the cheaper choice when budgeting a mobile app?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases, yes — cross-platform frameworks like React Native or Flutter typically reduce combined iOS/Android development cost by 30-40% through shared code."}}
+    {"@type": "Question", "name": "Is cross-platform development always the cheaper choice when budgeting a mobile app?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases, yes — cross-platform frameworks like React Native or Flutter typically reduce combined iOS/Android development cost by 30-40% through shared code."}},
+    {"@type": "Question", "name": "(Scenario: A board asks a COO to cut 15% from the presented phase-by-phase budget) Which phases should I cut first if the board demands a 15% budget reduction?", "acceptedAnswer": {"@type": "Answer", "text": "Reduce design revision rounds and narrow the QA device matrix to your top actual user devices first — each saves roughly 3-5% with contained risk. Avoid cutting discovery or backend QA/security testing, since both defer cost to a later, more expensive point rather than eliminating it."}},
+    {"@type": "Question", "name": "(Scenario: A COO wants a rehearsed answer ready before the board meeting rather than negotiating live) Should I prepare a cut scenario before presenting the mobile app budget, or wait for the board to ask?", "acceptedAnswer": {"@type": "Answer", "text": "Prepare it in advance. Walking in with a modeled 15% cut hierarchy already worked out, rather than negotiating live, signals exactly the financial discipline a board is testing for and avoids an improvised answer that looks weaker in the room."}},
+    {"@type": "Question", "name": "(Scenario: A COO is deciding how much of the post-launch reserve is safe to trim under budget pressure) Is it safe to reduce the post-launch reserve below 15% under budget pressure?", "acceptedAnswer": {"@type": "Answer", "text": "Generally not advisable — the reserve exists specifically to cover the gap between test-user and real-user behavior in the first 60-90 days, and trimming it below roughly 15% shifts risk toward an emergency mid-crisis budget request rather than actually saving money."}},
+    {"@type": "Question", "name": "(Scenario: A COO's board keeps asking why the invisible backend costs more than the visible UI) How do I justify backend development costing more than frontend UI to a board that only sees the interface?", "acceptedAnswer": {"@type": "Answer", "text": "Explain it in terms of what the backend prevents: outages, security incidents, and data-handling failures that cost far more in reputation and emergency engineering time than the frontend ever risks. For apps with payments or complex permissions, backend commonly runs 45-55% of the development budget for exactly this reason."}}
   ]
 }
 </script>

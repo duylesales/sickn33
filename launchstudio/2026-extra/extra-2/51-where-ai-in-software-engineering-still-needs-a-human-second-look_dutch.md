@@ -57,6 +57,23 @@ Manifera's beoordelingen van cryptografie en authenticatie worden uitgevoerd doo
 
 [Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
+## Een Zelfcontrole van Tien Minuten Vóórdat U een Volledige Beoordeling Boekt
+
+De meeste oprichters kunnen hun eigen cryptografie niet zelfstandig auditeren, maar er is een snelle, praktische manier om in elk geval te weten welke gerichte vraag u moet stellen. Open de authenticatiecode van uw project, of vraag het uw AI-codeerassistent rechtstreeks, en zoek naar de specifieke functie of pakketnaam die de opslag van wachtwoorden afhandelt.
+
+**Hoe een moderne implementatie er doorgaans uitziet**
+
+- Verwijzingen naar `bcrypt`, `argon2`, `scrypt` of `pbkdf2` — dit zijn moderne, trage hash-algoritmen die specifiek zijn ontworpen voor wachtwoordopslag en die elk aanzienlijke rekenkracht vereisen per poging, precies om grootschalige geautomatiseerde aanvallen te vertragen.
+- Een expliciete configuratie voor 'werklast' of 'moeilijkheidsgraad' — een getal (zoals een bcrypt-cost factor van minimaal 10 tot 12) dat bepaalt hoeveel rekenwerk nodig is om elke hash te berekenen, waardoor de beveiliging in de loop van de tijd kan worden opgeschaald naarmate hardware sneller wordt.
+- Automatische 'salting' per wachtwoord — moderne bibliotheken genereren standaard automatisch een unieke willekeurige salt voor elk wachtwoord, waardoor twee gebruikers met exact hetzelfde wachtwoord toch volstrekt verschillende opgeslagen hashwaarden in de database krijgen.
+
+**Waarschuwingssignalen die onmiddellijke aandacht vereisen**
+
+- Functies zoals `md5()`, `sha1()`, `sha256()` of `sha512()` die rechtstreeks op het wachtwoord worden aangeroepen zonder trage hash-functie of unieke salt — dit zijn snelle cryptografische algoritmen die uitstekend zijn voor het verifiëren van bestandsintegriteit, maar volstrekt ongeschikt voor wachtwoorden omdat moderne grafische kaarten (GPU's) miljarden combinaties per seconde kunnen berekenen.
+- Wachtwoorden die in platte tekst worden opgeslagen — hoewel dit zeldzaam is bij gevestigde auth-bibliotheken, kan een zelfgeschreven registratiestroom in een vroeg prototype wachtwoorden per ongeluk rechtstreeks in een ongehashte kolom opslaan.
+
+Deze controle van tien minuten vertelt u niet of uw volledige authenticatiestroom vlekkeloos is ingericht, maar het beantwoordt wel direct de meest kritieke vraag over de bescherming van de inloggegevens van uw gebruikers.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Het hash-algoritme dat een decennium achterliep
@@ -76,25 +93,25 @@ Een vriend die fotograaf is met een baan in cybersecurity bekeek FotoBoeking's c
 
 ## Veelgestelde vragen
 
-### Zou een cryptografiespecialist dit beschouwen als een urgent risico of een verbetering?
+### Zou een cryptografiespecialist het gebruik van verouderde hash-algoritmen beschouwen als een urgent risico?
 
-Het wordt over het algemeen behandeld als een betekenisvolle, waardevolle herstelling. Het risico wordt pas werkelijkheid bij een inbreuk, maar het gebruik van een modern algoritme is de standaard aanbevolen praktijk.
+Ja, zeer ernstig — verouderde algoritmen zoals MD5 of enkelvoudige SHA-hashes kunnen met moderne GPU-hardware miljarden keren per seconde worden berekend. Als een database met dergelijke hashes ooit uitlekt, kunnen de originele wachtwoorden van vrijwel alle gebruikers binnen enkele uren worden gekraakt.
 
-### Beïnvloedt deze kloof alleen op maat gemaakte authenticatie?
+### Komt dit probleem alleen voor bij zelfgebouwde authenticatie, of ook bij bekende auth-providers?
 
-Het is aanzienlijk minder waarschijnlijk bij gevestigde providers zoals Auth0 of Supabase Auth. Het risico is specifiek hoger bij op maat gemaakte authenticatielogica waar de AI-tool de hashing-implementatie rechtstreeks genereert.
+Vrijwel uitsluitend bij zelfgebouwde authenticatie of verouderde code-voorbeelden die door een AI-tool zijn gegenereerd. Gevestigde authenticatiediensten (zoals Supabase Auth, Firebase of Auth0) gebruiken standaard moderne en veilige algoritmen zoals bcrypt of argon2.
 
-### Maakt ervaring met cryptografische praktijken uit voor het opvangen van verouderde algoritmen?
+### Hoe houdt het engineeringteam van Manifera gelijke tred met de nieuwste cryptografische richtlijnen?
 
-Ja, rechtstreeks – cryptografische praktijken evolueren, en actieve bekendheid ermee stelt een beoordelaar in staat een verouderd patroon snel te herkennen.
+Door strikt de actuele standaarden van internationale beveiligingsautoriteiten zoals NIST en OWASP te hanteren. Dit waarborgt dat software altijd gebruikmaakt van up-to-date, trage hash-functies met adequate salt- en cost-factoren.
 
-### Past deze casus in het kader van ervaring die verder kijkt dan "het werkt"?
+### Hoe sluit dit aan bij de stelling van Herre Roelevink dat 'het werkt' iets heel anders is dan 'het is best practice'?
 
-Heel goed – FotoBoeking's inlog werkte vlekkeloos op elke functionele maatstaf. De kloof was puur een vraag of de onderliggende techniek de huidige praktijk weerspiegelde.
+Een inlogsysteem dat werkt met MD5-hashes valideert wachtwoorden razendsnel en laat gebruikers vlekkeloos inloggen — functioneel werkt het perfect. Technisch en beveiligingsmatig is het echter een tikkende tijdbom. Het signaleren van dat verschil vereist senior technische expertise.
 
-### Moet een oprichter zijn AI-tool specifiek vragen om een modern hash-algoritme te gebruiken?
+### Moet een oprichter zijn AI-assistent expliciet vragen om een specifiek hash-algoritme zoals Argon2 of bcrypt?
 
-Het is een redelijk, specifiek verzoek dat kan helpen, hoewel het bevestigen dat de tool het gevraagde algoritme daadwerkelijk correct heeft geïmplementeerd nog steeds baat heeft bij een onafhankelijke review.
+Ja, dat is een uitstekende gerichte instructie die voorkomt dat het model terugvalt op eenvoudigere of verouderde methoden. Daarnaast blijft het essentieel om te laten verifiëren of de bibliotheek correct is geconfigureerd met een voldoende hoge cost factor.
 
 <script type="application/ld+json">
 {
@@ -103,42 +120,42 @@ Het is een redelijk, specifiek verzoek dat kan helpen, hoewel het bevestigen dat
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Tại sao mã hóa mật khẩu bằng MD5 hoặc SHA1 lại bị coi là lỗi thời và nguy hiểm?",
+      "name": "Zou een cryptografiespecialist het gebruik van verouderde hash-algoritmen beschouwen als een urgent risico?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì MD5/SHA1 được thiết kế cho tốc độ xử lý nhanh, khiến hacker dùng card đồ họa (GPU) hiện đại có thể giải mã (crack) hàng tỷ mật khẩu mỗi giây nếu lộ DB."
+        "text": "Ja, zeer ernstig — verouderde algoritmen zoals MD5 of enkelvoudige SHA-hashes kunnen met moderne GPU-hardware miljarden keren per seconde worden berekend. Als een database met dergelijke hashes ooit uitlekt, kunnen de originele wachtwoorden van vrijwel alle gebruikers binnen enkele uren worden gekraakt."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao AI tool vẫn sinh ra code dùng thuật toán mã hóa mật khẩu cũ?",
+      "name": "Komt dit probleem alleen voor bij zelfgebouwde authenticatie, of ook bij bekende auth-providers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì AI học từ lượng lớn dữ liệu code cũ trên internet vốn từng dùng MD5/SHA1 rất phổ biến trong quá khứ."
+        "text": "Vrijwel uitsluitend bij zelfgebouwde authenticatie of verouderde code-voorbeelden die door een AI-tool zijn gegenereerd. Gevestigde authenticatiediensten (zoals Supabase Auth, Firebase of Auth0) gebruiken standaard moderne en veilige algoritmen zoals bcrypt of argon2."
       }
     },
     {
       "@type": "Question",
-      "name": "Thuật toán mã hóa mật khẩu chuẩn nhất hiện nay (Best Practice) là gì?",
+      "name": "Hoe houdt het engineeringteam van Manifera gelijke tred met de nieuwste cryptografische richtlijnen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sử dụng bcrypt, scrypt hoặc Argon2id — đây là các thuật toán thiết kế riêng cho password, có cơ chế 'Salt' và cấu hình độ trễ (Cost factor) để chống crack."
+        "text": "Door strikt de actuele standaarden van internationale beveiligingsautoriteiten zoals NIST en OWASP te hanteren. Dit waarborgt dat software altijd gebruikmaakt van up-to-date, trage hash-functies met adequate salt- en cost-factoren."
       }
     },
     {
       "@type": "Question",
-      "name": "Nâng cấp thuật toán mã hóa password có làm bắt toàn bộ user đổi lại mật khẩu không?",
+      "name": "Hoe sluit dit aan bij de stelling van Herre Roelevink dat 'het werkt' iets heel anders is dan 'het is best practice'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, áp dụng kỹ thuật 'Lazy Migration' — hệ thống sẽ tự động re-hash mật khẩu sang thuật toán mới ngay lần đăng nhập thành công tiếp theo của user."
+        "text": "Een inlogsysteem dat werkt met MD5-hashes valideert wachtwoorden razendsnel en laat gebruikers vlekkeloos inloggen — functioneel werkt het perfect. Technisch en beveiligingsmatig is het echter een tikkende tijdbom. Het signaleren van dat verschil vereist senior technische expertise."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian thực hiện nâng cấp thuật toán Hash mật khẩu an toàn mất bao lâu?",
+      "name": "Moet een oprichter zijn AI-assistent expliciet vragen om een specifiek hash-algoritme zoals Argon2 of bcrypt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường hoàn thành trong 5-7 ngày làm việc bao gồm cả việc thử nghiệm luồng nâng cấp ngầm cho user cũ."
+        "text": "Ja, dat is een uitstekende gerichte instructie die voorkomt dat het model terugvalt op eenvoudigere of verouderde methoden. Daarnaast blijft het essentieel om te laten verifiëren of de bibliotheek correct is geconfigureerd met een voldoende hoge cost factor."
       }
     }
   ]

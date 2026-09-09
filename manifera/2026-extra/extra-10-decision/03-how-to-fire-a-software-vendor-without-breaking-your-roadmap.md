@@ -60,6 +60,10 @@ Firing a vendor well is a sequencing problem, not a courage problem — the deci
 
 If you need a receiving team that can run a structured technical due diligence and knowledge-transfer intake in parallel with an outgoing vendor's notice period, Manifera's [dedicated teams](https://www.manifera.com/services/dedicated-teams/) model is built for exactly this handover pattern — see our [way of working](https://www.manifera.com/about-us/our-way-of-working/) for how we structure an incoming engagement around an existing codebase.
 
+## The Five Access Points CTOs Forget to Reclaim
+
+Even a well-run custody checklist tends to miss access points that live outside the codebase itself. Cloud provider root or billing-owner accounts (AWS, GCP, Azure) are frequently registered under the vendor's own email, requiring an ownership transfer that can take 5-10 business days to process — start this the same week you lock down repository access, not during the final week of notice. Domain registrar and DNS management access is a second common gap; confirm your organization, not the vendor's, holds registrar-level control before cutover, since a vendor-held domain is a single point of leverage in a dispute. Third, monitoring and alerting tool ownership (Datadog, Sentry, PagerDuty) often sits on a vendor's organizational account, and migrating it mid-transition without losing historical incident data takes real planning — budget a dedicated half-day for the export. Fourth, third-party SaaS admin consoles configured under vendor-controlled API keys need full key rotation, not just a password reset; treat any key the outgoing vendor could have touched as compromised the day the notice goes out. Fifth, and most commonly missed: confidentiality obligations that should explicitly survive termination need to be reconfirmed in writing as part of close-out — an oral assurance from an exiting account manager carries no legal weight six months later.
+
 ## Frequently Asked Questions
 
 ### What should I secure before telling a vendor I'm terminating the contract?
@@ -76,6 +80,18 @@ A well-sequenced exit with a genuine knowledge-transfer period typically costs f
 
 ### When should I revoke a departing vendor's production access?
 Only after the incoming team has confirmed independently that they can deploy, monitor, and roll back the system without support. Revoking access before that confirmation risks stranding you mid-incident with no one left who understands the deployment pipeline.
+
+### (Scenario: vendor's own email owns the cloud billing account) What do we do if our vendor's account owns our AWS root account?
+Initiate an account ownership transfer immediately, in parallel with your custody checklist, since AWS, GCP, and Azure ownership transfers can take 5-10 business days and require the current owner's cooperation. Request it early under a routine-review pretext so a vendor who later learns of the termination has less room to stall it.
+
+### (Scenario: vendor won't reconfirm confidentiality obligations in writing) The vendor won't confirm NDA obligations survive termination in writing — what now?
+Treat this as a red flag equivalent to withholding source code access. Most standard outsourcing MSAs already include surviving confidentiality clauses, so refusal to reconfirm in writing suggests either sloppy contract management or an intent to dispute scope later — escalate to legal before the notice period proceeds further.
+
+### (Scenario: terminating for cause over a disputed invoice) Can I withhold payment entirely if I'm terminating for cause?
+Only if your contract's termination-for-cause clause explicitly ties payment to cause, and even then withhold selectively against unverified deliverables rather than everything. Courts and arbitrators generally frown on withholding payment for genuinely completed and accepted work, even in a for-cause termination.
+
+### (Scenario: lining up a replacement vendor before the notice period starts) Can I bring in a new vendor for due diligence before officially terminating the old one?
+Yes, and you should. Start the incoming vendor's codebase and architecture review under NDA before the termination notice goes out, so you validate the replacement is ready before you're under time pressure — just keep this activity confidential from the outgoing vendor until your custody checklist is complete.
 
 <script type="application/ld+json">
 {
@@ -120,6 +136,38 @@ Only after the incoming team has confirmed independently that they can deploy, m
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Only after the incoming team has confirmed independently that they can deploy, monitor, and roll back the system without support. Revoking access before that confirmation risks stranding you mid-incident with no one left who understands the deployment pipeline."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do we do if our vendor's account owns our AWS root account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Initiate an account ownership transfer immediately, in parallel with your custody checklist, since AWS, GCP, and Azure ownership transfers can take 5-10 business days and require the current owner's cooperation. Request it early under a routine-review pretext so a vendor who later learns of the termination has less room to stall it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The vendor won't confirm NDA obligations survive termination in writing — what now?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat this as a red flag equivalent to withholding source code access. Most standard outsourcing MSAs already include surviving confidentiality clauses, so refusal to reconfirm in writing suggests either sloppy contract management or an intent to dispute scope later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I withhold payment entirely if I'm terminating for cause?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if your contract's termination-for-cause clause explicitly ties payment to cause, and even then withhold selectively against unverified deliverables rather than everything. Courts and arbitrators generally frown on withholding payment for genuinely completed and accepted work, even in a for-cause termination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I bring in a new vendor for due diligence before officially terminating the old one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and you should. Start the incoming vendor's codebase and architecture review under NDA before the termination notice goes out, so you validate the replacement is ready before you're under time pressure, keeping this activity confidential from the outgoing vendor until your custody checklist is complete."
       }
     }
   ]

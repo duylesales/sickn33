@@ -129,50 +129,42 @@ Meest aannemelijk via een minder eerlijke partij die hetzelfde patroon opmerkte 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is IDOR makkelijk te testen voor beveiligingsprofessionals?",
+      "name": "Zou een penetratietester IDOR beschouwen als een bekende, gemakkelijk te testen kwetsbaarheidsklasse?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, het is een van de meest geteste klassen omdat het mechanisch en systematisch gecontroleerd kan worden."
+        "text": "Ja, het is een van de meest gebruikelijke geteste kwetsbaarheidsklassen in professionele beveiligingsbeoordelingen, precies omdat het zo mechanisch is om systematisch op te controleren."
       }
     },
     {
       "@type": "Question",
-      "name": "Lossen willekeurige UUID's dit probleem volledig op?",
+      "name": "Los het overstappen van opeenvolgende numerieke ID's naar willekeurige UUID's dit probleem volledig op zichzelf op?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, ze maken raden moeilijker maar một gelekten UUID verleent nog steeds toegang mà không cần check ownership."
+        "text": "Het helpt door ID's moeilijker te raden te maken, maar het lost het onderliggende probleem niet volledig op – een factuur-ID op basis van een UUID die ooit gedeeld, gelogd of ergens gelekt wordt verleent nog steeds toegang zonder een eigenschapscontrole."
       }
     },
     {
       "@type": "Question",
-      "name": "Zouden enterprise-klanten dit opvangen vóór productie?",
+      "name": "Is dit het soort kloof dat B2B-enterpriseklanten zouden hebben opgevangen vóór productie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, enterprise-trajecten omvatten standaard một toegewijde beveiligingsbeoordelingsfase."
+        "text": "Typisch wel, aangezien enterprise-trajecten over het algemeen een toegewijde beveiligingsbeoordelingsfase als standaardpraktijk omvatten."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is het risico als IDOR không được phát hiện sớm?",
+      "name": "Vormt een achtergrond in offshore management gecombineerd met cybersecurity de aanpak voor cases zoals die van BouwBoard?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kẻ xấu có thể lặng lẽ thu thập dữ liệu nhạy cảm của người dùng khác hoặc bị phát hiện trong audit của khách hàng lớn."
+        "text": "Ja – offshore engineeringmanagement vereist het vaststellen van consistente beoordelingsstandaarden over een gedistribueerd team. Diezelfde consistentie opvangen is wat een patroon zoals een ongecontroleerde factuur-ID opvangt."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe test je IDOR tự làm với 2 tài khoản?",
+      "name": "Hoe zou deze kloof waarschijnlijk uiteindelijk naar boven zijn gekomen als de onderaannemer er niets over gezegd had?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Đăng nhập tài khoản B, đổi URL/ID thành ID tài khoản A. Nếu xem/sửa được là bị dính IDOR."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Geldt IDOR chỉ cho GET request hay cả POST/PUT/DELETE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Geldt cho tất cả các HTTP methods — bao gồm xem, chỉnh sửa và xóa tài nguyên."
+        "text": "Meest aannemelijk via een minder eerlijke partij die hetzelfde patroon opmerkte en het stilletjes misbruikte in plaats van het te melden, of via een beveiligingsbeoordeling door de eigen inkoopafdeling van een klant."
       }
     }
   ]

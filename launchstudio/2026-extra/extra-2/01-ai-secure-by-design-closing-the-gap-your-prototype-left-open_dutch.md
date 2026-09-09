@@ -7,6 +7,30 @@ Doelgroep: AI-Native Founder (niet-technisch)
 
 # AI Secure By Design: Het Gat Dichten Dat Jouw Prototype Open Liet
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI Secure by Design: Het Dichten van de Kloof Die Uw Prototype Openliet",
+  "description": "'AI secure' zijn is geen simpel vinkje dat een codeerassistent voor u zet. Een specifieke blik op wat 'veilig' werkelijk vereist zodra een prototype richting echte gebruikers beweegt.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-07-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/ai-secure-by-design-closing-the-gap-your-prototype-left-open"
+  }
+}
+</script>
+
 "Is het veilig?" is de vraag die bijna elke founder uiteindelijk stelt over een prototype gebouwd met Lovable, Bolt, of Cursor — meestal vlak voor een lanceerdatum, in plaats van bij de start. Het eerlijke antwoord is bijna nooit een simpel ja of nee. Het is "veilig tegen wat, precies?" — en die specificiteit is precies wat een demo-gerichte AI-codeertool geen reden heeft om uit zichzelf aan te bieden. Founders horen "veilig" doorgaans als één eigenschap, als een lichtschakelaar die aan of uit staat, terwijl het in de praktijk een lange lijst zeer specifieke, zeer controleerbare claims is, waarvan de meeste nog niemand daadwerkelijk geverifieerd heeft.
 
 ## Wat "AI Secure" Daadwerkelijk Betekent In De Praktijk
@@ -29,13 +53,27 @@ Een demo is, van nature, een coöperatief scenario — jij, de founder, die jouw
 
 Het is verleidelijk om aan te nemen dat niemand kijkt — dat een klein, vroege-fase product met een paar dozijn gebruikers te obscuur is om ongewenste aandacht te trekken. In de praktijk is veel van deze ontdekking helemaal niet gericht: geautomatiseerde scanners en bots doorzoeken continu het open internet naar precies deze categorieën onbeschermde eindpunten en blootgestelde sleutels, zonder enig idee of interesse in wie de app gebouwd heeft, en controleren simpelweg of het gat bestaat. Een product hoeft niet beroemd te zijn om zo gevonden te worden — het hoeft alleen bereikbaar te zijn.
 
-## Wat Het Gat Daadwerkelijk Dichten Eruitziet
+## Een Praktische Zelfevaluatie Checklist Voordat U Dit Toont aan Investeerders of Klanten
 
-Oprecht AI secure worden betekent niet jouw product herbouwen. Het betekent een specifieke, gerichte pass: autorisatiecontroles server-side verplaatsen, geheimen naar correcte omgevingsconfiguratie verplaatsen, de grens testen tussen wat een gebruiker mag doen en wat jouw code daadwerkelijk afdwingt, en bevestigen dat een geweigerd verzoek veilig faalt in plaats van informatie te lekken over waarom het faalde. [LaunchStudio](https://launchstudio.eu/nl/) wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het beveiligen van productieapplicaties voor klanten waaronder Vodafone en TNO — dezelfde engineeringdiscipline, specifiek afgestemd op wat het prototype van een AI-native founder nodig heeft voordat het live gaat.
+U heeft geen formele achtergrond in cybersecurity nodig om een eerste inspectieronde uit te voeren op uw eigen prototype — u heeft ongeveer twintig minuten nodig en de bereidheid om actief te proberen uw eigen product te breken in plaats van het te gebruiken zoals bedoeld. Dit is geen vervanging voor een professionele technische audit, maar het is een effectieve methode om de meest voor de hand liggende gaten op te sporen vóórdat iemand anders dat doet, en het geeft u een veel concreter startpunt wanneer u in gesprek gaat met een software-engineer.
 
-Manifera's beveiligingsreviewproces loopt door engineeringteams verspreid over het hoofdkantoor in Amsterdam aan de Herengracht 420 en het ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh City, wat LaunchStudio in staat stelt snel te bewegen op het tijdschema van een founder zonder in te leveren op de review zelf.
+**Doorloop deze vijf controles zélf:**
 
-[Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) — voordat een echte gebruiker het gat vindt dat jouw demo nooit testte.
+- **Open de Developer Tools van uw browser en inspecteer het Network-tabblad.** Klik door elke "premium-", "beheerders-" of "afgeschermde" functionaliteit in uw applicatie en kijk welke data er daadwerkelijk terugkomt in de serverrespons, en niet slechts wat de gebruikersinterface toont — als de volledige dataset binnenkomt en de frontend er simpelweg voor kiest om delen ervan te verbergen, is de beperking puur cosmetisch.
+- **Probeer een beveiligde URL rechtstreeks op te vragen in plaats van er naartoe te klikken.** Als een pagina een actieve login of een specifieke rol vereist, open deze dan in een incognitovenster zonder enige actieve sessie en kijk wat er daadwerkelijk wordt ingeladen.
+- **Doorzoek uw eigen frontend-bundel op gevoelige sleutels.** Bekijk de paginabroncode ("view source") of zoek in de gecompileerde JavaScript-bestanden naar termen zoals "key", "secret" of "token" — alles wat een echte inlogwaarde oplevert in plaats van een tijdelijke placeholder moet direct verhuizen naar de serverzijde.
+- **Probeer een record-ID in de URL te manipuleren.** Als uw applicatie een record toont op basis van een ID (een factuur, een document, een profiel), pas dat getal of identificatieteken dan minimaal aan en kijk of u een foutmelding krijgt of daadwerkelijk de gegevens van een andere gebruiker te zien krijgt.
+- **Controleer wat een mislukt verzoek prijsgeeft.** Voer doelbewust een verkeerd wachtwoord of een ongeldig verzoek in en lees de foutmelding zorgvuldig — een melding die expliciet bevestigt of een e-mailadres al in uw systeem bestaat, lekt stiekem meer informatie dan veilig is.
+
+Geen van deze controles vereist het schrijven van code, en geen ervan kost meer dan een paar minuten. Wat ze echter niet kunnen vangen, is het hiaat dat zich uitsluitend voordoet onder specifieke randvoorwaarden — dat ene endpoint waarvan u het bestaan vergeten was, een rolcontrole die overal geldt behalve op één specifieke route, of een validatieregel die wel op het formulier maar niet op de onderliggende API is afgedwongen. Dat is exact de klasse van bevindingen waar een gestructureerde technische review voor bestaat.
+
+## Hoe het Dichten van de Kloof Er Daadwerkelijk Uitziet
+
+Werkelijk 'AI secure' worden betekent niet dat u uw product volledig opnieuw moet bouwen. Het vraagt om een gerichte, specifieke slag: het verplaatsen van autorisatiecontroles naar de serverzijde, het onderbrengen van geheimen in een veilige omgevingsconfiguratie, het testen van de grens tussen wat een gebruiker mag doen en wat uw code daadwerkelijk afdwingt, en het bevestigen dat een geweigerd verzoek veilig faalt zonder gevoelige redenen prijs te geven. [LaunchStudio](https://launchstudio.eu/nl/) wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het beveiligen van productie-applicaties voor toonaangevende opdrachtgevers — dezelfde engineeringdiscipline, specifiek afgestemd op wat het prototype van een AI-native oprichter nodig heeft vóór de officiële marktintroductie.
+
+Het beoordelingsproces van Manifera verloopt via engineeringteams verspreid over het hoofdkantoor in Amsterdam aan de Herengracht 420 en het ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh City. Hierdoor kan LaunchStudio snel schakelen binnen de tijdlijn van een oprichter, zonder concessies te doen aan de grondigheid van de review zelf.
+
+[Praat met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) — vóórdat een echte gebruiker de kloof ontdekt die uw demo nooit heeft getest.
 
 ## Echt voorbeeld
 
@@ -75,3 +113,52 @@ Niet voor het onderliggende risico — een abonnementsomzeiling kost een kleine 
 ### Zou dit gat gevangen kunnen zijn met geautomatiseerde scantools in plaats van een menselijke review?
 
 Sommige geautomatiseerde tools vlaggen bepaalde categorieën van dit probleem, maar een client-side-only-toestemmingscontrole die een syntactisch geldige, correct geformatteerde respons teruggeeft is makkelijk voor geautomatiseerde scanners om volledig te missen — precies het soort geval waar een specifieke menselijke review, in plaats van een generieke scan, doorgaans vangt wat tooling alleen niet doet.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Als een founder niet kan coderen, hoe zou hij dan zelfs weten om specifiek naar een \"server-side\"-controle te vragen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dat zou hij doorgaans niet, en dat zou ook niet moeten hoeven — dit is precies waarom LaunchStudio's intakeproces gebouwd is rond een founder die beschrijft wat de functie zou moeten doen, niet diagnosticeert waar de controle momenteel zit; dat vertalen naar een specifieke technische fix is de taak van het engineeringteam, niet van de founder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Een beveiligingsengineer zou kunnen beweren dat elke fix opnieuw getest moet worden door iemand anders dan de persoon die hem maakte — werkt LaunchStudio zo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, in de praktijk — de engineer die een fix zoals die van Daan implementeert is niet dezelfde persoon die hem afvinkt, een basisprincipe van functiescheiding rechtstreeks overgenomen van Manifera's enterprise-opdrachten, waar dezelfde discipline geldt ongeacht klantgrootte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit het soort gat waar Herre Roelevink naar verwees toen hij de verschuiving richting architectuur en beveiliging beschreef als de echte uitdaging nu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is een bijna perfect voorbeeld — Roelevinks eigen achtergrond met het runnen van CyberDevOps (nu CFLW Cyber Strategies) naast TNO was specifiek opgebouwd rond het vinden van precies deze categorie onzichtbare, structurele gaten, wat de lens is die hij heeft meegebracht in hoe LaunchStudio's reviewproces afgebakend wordt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Doet het ertoe dat FitTrack Pro een kleine consumenten-app is in plaats van een enterprise-systeem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet voor het onderliggende risico — een abonnementsomzeiling kost een kleine founder proportioneel evenveel echte omzet als een grotere inbreuk een enterprise kost, wat deel uitmaakt van waarom LaunchStudio zijn reviewrigoureusheid niet naar beneden schaalt alleen omdat het bedrijf klein is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zou dit gat gevangen kunnen zijn met geautomatiseerde scantools in plaats van een menselijke review?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sommige geautomatiseerde tools vlaggen bepaalde categorieën van dit probleem, maar een client-side-only-toestemmingscontrole die een syntactisch geldige, correct geformatteerde respons teruggeeft is makkelijk voor geautomatiseerde scanners om volledig te missen — precies het soort geval waar een specifieke menselijke review, in plaats van een generieke scan, doorgaans vangt wat tooling alleen niet doet."
+      }
+    }
+  ]
+}
+</script>

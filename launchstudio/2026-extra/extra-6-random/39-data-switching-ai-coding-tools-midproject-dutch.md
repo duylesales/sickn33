@@ -46,6 +46,21 @@ Niets hiervan is exotisch advies — het is standaardpraktijk voor elke database
 
 LaunchStudio brengt Manifera's enterprise-grade engineeringdiscipline naar precies dit soort cross-tool-migratiewerk, waarbij schema-mismatches tussen tools worden opgelost zonder dat uw frontend hoeft te worden herbouwd. Ons engineeringcentrum in Ho Chi Minh-stad behandelt een gestage stroom van deze migraties voor oprichters die precies dit probleem hebben. U kunt [ons uw project sturen voor een gratis beoordeling](https://launchstudio.eu/nl/#contact) van wat een veilige migratie tussen tools daadwerkelijk zou vereisen. Voor meer over de database- en backend-discipline achter dit soort werk, zie Manifera's praktijk in [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
+## Schema-Gewoontes Die een Toekomstige Migratie Gevaarlijker Maken
+
+AI-codeertools genereren vaak razendsnel databasemodellen om een gevraagde feature zo snel mogelijk werkend te krijgen in de gebruikersinterface. Daarbij sluipen er echter subtiele gewoontes in het databaseschema die een latere migratie naar een volwassen productie-infrastructuur bijzonder riskant maken. Vermijd deze vier valkuilen:
+
+**1. Het ontbreken van vreemde sleutels (Foreign Keys) en relationele integriteit.** Veel AI-tools slaan relaties op als losse tekst- of getalvelden zonder formele constraints in de database. Hierdoor kunnen er records worden verwijderd terwijl gekoppelde gegevens blijven rondzwerven als 'wezen' (orphan records), wat bij een latere migratie leidt tot corrupte tabellen.
+
+**2. Het dumpen van ongestructureerde data in JSONB-kolommen.** Om snel te kunnen werken, stopt een AI-tool complexe structuren vaak in één grote JSON-blob in plaats van nette, genormaliseerde tabellen. Dit lijkt flexibel, maar maakt het afdwingen van datatypes, indexering en strikte autorisatie op rijniveau nagenoeg onmogelijk naarmate het datavolume groeit.
+
+**3. Inconsistente naamgevingsconventies en datatypes.** Het ene model gebruikt `camelCase` veldnamen, het andere `snake_case`, en datums worden soms als ISO-strings en soms als UNIX-timestamps opgeslagen. Deze inconsistentie leidt bij elke query tot verwarring en maakt geautomatiseerde schematests kwetsbaar.
+
+**4. Het ontbreken van migratiescripts met versiebeheer.** Als schemawassingen handmatig in een cloud-dashboard worden uitgevoerd in plaats van via formele migratiebestanden (zoals Prisma- of Drizzle-migraties in git), heeft niemand een betrouwbaar overzicht van de databasestatus.
+
+Door vanaf de allereerste ontwikkeldag schone schemagewoontes af te dwingen, zorgt u ervoor dat uw data-infrastructuur moeiteloos kan meegroeien zonder dat er ooit een kostbare, risicovolle noodoperatie nodig is.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: historische records die de overdracht niet overleefden
@@ -92,11 +107,46 @@ Ja, het belangrijkste engineeringcentrum van Manifera in Ho Chi Minh-stad behand
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why does switching AI coding tools risk data loss if I'm not changing databases?", "acceptedAnswer": { "@type": "Answer", "text": "Each tool has its own assumptions about database schema structure, and moving between tools can introduce silent mismatches during any migration step, even on the same underlying database." } },
-    { "@type": "Question", "name": "How do I know if a schema mismatch has already caused data loss?", "acceptedAnswer": { "@type": "Answer", "text": "Spot-check historical records against an independent backup taken before the switch, since silent data loss often produces no errors and has to be actively checked for." } },
-    { "@type": "Question", "name": "What's the single most important precaution before switching AI coding tools mid-project?", "acceptedAnswer": { "@type": "Answer", "text": "Take an independent, raw database snapshot before letting the new tool touch anything, so you have a verified before-state to compare against." } },
-    { "@type": "Question", "name": "Can LaunchStudio recover data lost during a tool migration, or only prevent future loss?", "acceptedAnswer": { "@type": "Answer", "text": "Both. LaunchStudio's engineers can often recover lost records from earlier backups while correcting the underlying schema mismatch to prevent recurrence." } },
-    { "@type": "Question", "name": "Does the Ho Chi Minh City team handle this kind of cross-tool migration work directly?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Manifera's main engineering center in Ho Chi Minh City regularly handles schema reconciliation and data recovery for exactly this scenario." } }
+    {
+      "@type": "Question",
+      "name": "Waarom brengt het wisselen van AI-codeertool risico op gegevensverlies met zich mee als ik niet van database wissel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat elke tool zijn eigen aannames heeft over hoe het databaseschema gestructureerd zou moeten zijn, en wisselen tussen tools stille mismatches kan introduceren tijdens elke migratiestap, zelfs op dezelfde onderliggende database."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of een schema-mismatch al gegevensverlies heeft veroorzaakt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Controleer steekproefsgewijs historische records tegen een onafhankelijke back-up gemaakt vóór de wissel — stil gegevensverlies produceert vaak geen fouten, dus het moet actief gecontroleerd worden in plaats van als afwezig aangenomen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de belangrijkste voorzorgsmaatregel voordat u halverwege een project van AI-codeertool wisselt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Maak een onafhankelijke, ruwe momentopname van de database voordat u de nieuwe tool iets laat aanraken, zodat u een geverifieerde \"voor\"-toestand heeft om tegen te vergelijken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan LaunchStudio gegevens herstellen die verloren zijn gegaan bij een toolmigratie, of alleen toekomstig verlies voorkomen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beide — de technici van LaunchStudio kunnen vaak verloren records herstellen uit eerdere back-ups en tegelijk de onderliggende schema-mismatch corrigeren om herhaling te voorkomen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Behandelt het team in Ho Chi Minh-stad dit soort cross-tool-migratiewerk rechtstreeks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, het belangrijkste engineeringcentrum van Manifera in Ho Chi Minh-stad behandelt regelmatig schema-reconciliatie en gegevensherstel voor oprichters die halverwege een project van AI-codeertool wisselen."
+      }
+    }
   ]
 }
 </script>

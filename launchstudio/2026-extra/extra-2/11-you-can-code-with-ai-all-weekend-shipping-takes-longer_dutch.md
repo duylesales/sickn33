@@ -135,50 +135,42 @@ Het achteraf toevoegen van verificatie vereist een beleidsbeslissing over bestaa
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is niet-geverifieerde aanmelding een kleine of fundamentele beveiligingskloof?",
+      "name": "Zou een identiteits- en toegangsspecialist een niet-geverifieerde aanmelding noemen als een \"kleine\" kloof of een \"fundamentele\"?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Fundamenteel — veel stroomafwaartse logica neemt aan dat de account-e-mail oprecht eigendom is van de houder."
+        "text": "Fundamenteel – identiteitsverificatie wordt typisch behandeld als een van de eerste dingen die een correct authenticatiesysteem tot stand brengt. Zoveel stroomafwaartse logica (wachtwoord-resets, meldingen, accountherstel) neemt namelijk stilzwijgend aan dat het e-mailadres in het dossier oprecht bezeten wordt door de accounthouder."
       }
     },
     {
       "@type": "Question",
-      "name": "Maakt dit probleem alleen uit voor producten met gevoelige meldingen?",
+      "name": "Maakt dit probleem alleen uit voor producten die gevoelige meldingen verzenden, of maakt het breder uit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, het maakt breed uit, hoewel de consequenties schalen met hoe gevoelig meldingen zijn."
+        "text": "Het maakt breed uit, hoewel de consequenties schalen met de gevoeligheid – zelfs een product met lage inzet staat voor echte reputatie- en ondersteuningskosten door verwarde, niet-betrokken derde partijen die e-mails ontvangen over accounts die ze nooit hebben aangemaakt."
       }
     },
     {
       "@type": "Question",
-      "name": "Verschilt enterprise authenticatie-ervaring van de behoeften van een kleine startup?",
+      "name": "Vormt authenticatie-ervaring bij enterprise-klanten het werk voor kleine startups?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het verificatieprincipe is identiek; wat verschilt is volume en specifieke integratievereisten."
+        "text": "Het onderliggende verificatieprincipe is identiek ongeacht de schaal; wat verschilt is volume en specifieke integratievereisten, wat exact is waarom LaunchStudio elk traject afstemt op de daadwerkelijke situatie van de oprichter."
       }
     },
     {
       "@type": "Question",
-      "name": "Weerspiegelt deze case dat de oprichterseconomie enterprise-rigor nodig heeft?",
+      "name": "Zou dit probleem ook bestaan bij Supabase Auth of Firebase Auth?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, identiteitsverificatie is exact de rigor die grotere klanten nooit zouden overslaan."
+        "text": "Ja, als verificatie niet specifiek is ingeschakeld en afgedwongen – beide platformen ondersteunen e-mailverificatie als een ingebouwde functie, maar het moet typisch expliciet ingeschakeld worden en gecontroleerd worden in de applicatielogica."
       }
     },
     {
       "@type": "Question",
-      "name": "Zou deze kloof nog steeds mogelijk zijn bij Supabase Auth of Firebase Auth?",
+      "name": "Wat gebeurt er als een oprichter dit pas ontdekt na het verzamelen van duizenden gebruikers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, als verificatie niet expliciet is ingeschakeld en gecontroleerd in de applicatielogica."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat gebeurt er als een oprichter dit pas ontdekt na duizenden gebruikers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het vereist een beleidsbeslissing over bestaande accounts. Het is herstelbaar nhưng vereist meer zorg."
+        "text": "Het achteraf toevoegen van verificatie vereist een beleidsbeslissing over bestaande accounts – ze als geverifieerd beschouwen of ze dwingen te verifiëren bij hun volgende inlogbeurt. Het is herstelbaar, maar vereist meer zorg dan het inbouwen vanaf dag één."
       }
     }
   ]

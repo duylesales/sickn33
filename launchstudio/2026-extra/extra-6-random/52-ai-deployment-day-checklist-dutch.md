@@ -42,6 +42,19 @@ AI-codeerassistenten zijn uitstekend in het end-to-end koppelen van een functie 
 
 Manifera brengt 11+ jaar aan productie-engineeringervaring naar precies dit soort kloof, met technici gevestigd in Singapore die oprichters in de regio ondersteunen met deploymentbeoordelingen vóór de lancering, niet erna. Als u toewerkt naar uw eigen deploymentdag, kunt u [praten met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) voordat u pusht, of bekijken hoe Manifera [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) structureert voor teams die dit soort beoordeling ingebouwd willen hebben in hun proces in plaats van er achteraf aan vast te plakken.
 
+## Als U Zojuist een Gelekte Sleutel Heeft Gevonden: Het Eerste Uur, Stap voor Stap
+
+De eerdere checklist was bedoeld om een lek te voorkomen. Dit stappenplan is voor de oprichter die die fase helaas al voorbij is — die zojuist een API-sleutel heeft ontdekt in een publieke git-commit of in een door de browser gedownloade JavaScript-bundel. Blijf kalm en voer binnen het eerste uur deze vier stappen uit:
+
+**Minuut 0-15: Roteer de Sleutel Onmiddellijk (Niet Eerst Code Bewerken).** Ga direct naar het dashboard van de betreffende provider (bijvoorbeeld Stripe, OpenAI of Supabase) en trek de gelekte sleutel in ('Revoke' of 'Roll Key'). Maak een nieuwe sleutel aan. Begin *niet* met het bewerken van uw broncode of het pushen van nieuwe commits; zolang de oude sleutel actief is bij de provider, kan iedereen die hem heeft gekopieerd er misbruik van maken.
+
+**Minuut 15-30: Inspecteer de Verbruiks- en Toegangslogs.** Controleer in het dashboard van de provider direct de activiteitslogs sinds het moment van de git-push. Zijn er ongebruikelijke pieken in API-aanroepen, zijn er data-exports uitgevoerd of zijn er onbekende IP-adressen actief geweest? Zo weet u direct of het lek daadwerkelijk is geëxploiteerd of dat u op tijd was.
+
+**Minuut 30-45: Verwijder het Geheim uit de Git-Geschiedenis.** Een nieuwe commit maken waarin u de sleutel verwijdert, volstaat *niet* — de sleutel blijft immers voor altijd zichtbaar in eerdere commits. Gebruik tools zoals `git-filter-repo` of BFG Repo-Cleaner om het geheim definitief uit de volledige commit-historie te wissen, of vraag een ervaren engineer om de repository op te schonen.
+
+**Minuut 45-60: Verplaats het Geheim naar een Veilige Omgevingsvariabele.** Plaats de nieuwe sleutel uitsluitend in uw lokale `.env`-bestand (dat in `.gitignore` staat) en in het beveiligde configuratiedashboard van uw hostingprovider (zoals Vercel). Verifieer dat de sleutel aan de serverzijde blijft en nooit meer met een `NEXT_PUBLIC_` prefix in de frontend belandt.
+
+Door snel en methodisch te handelen, beperkt u een potentieel catastrofaal incident tot een beheersbare operationele verstoring.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de sleutel in het volle zicht
@@ -88,11 +101,46 @@ Nee, het is een deploymentprocesrisico dat geldt ongeacht welke AI-codeertool de
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why do API keys end up exposed in the frontend so often?", "acceptedAnswer": { "@type": "Answer", "text": "Because development environments frequently mix client-side and server-side configuration in one place, and unless that's explicitly split before deployment, secrets meant for the server can get bundled into code that ships to the browser." } },
-    { "@type": "Question", "name": "How can I check if my own app has this issue right now?", "acceptedAnswer": { "@type": "Answer", "text": "Open your deployed app in a browser, open dev tools, and search the network requests and loaded scripts for any API key string — if it appears anywhere in that view, it's exposed." } },
-    { "@type": "Question", "name": "What should I do if I find an exposed key?", "acceptedAnswer": { "@type": "Answer", "text": "Rotate it immediately with the provider, then move the code that uses it to a server-side endpoint so the key never needs to leave your own infrastructure." } },
-    { "@type": "Question", "name": "Does LaunchStudio review deployments before they go live?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — this is a standard part of our pre-launch review, and our engineers, including the team based in Singapore, specifically check for exactly this class of exposure before a founder pushes to production." } },
-    { "@type": "Question", "name": "Is this only a risk with Cursor?", "acceptedAnswer": { "@type": "Answer", "text": "No, it's a deployment-process risk that applies regardless of which AI coding tool built the app — the fix is the same either way: separate environments, and never let secrets reach client-side code." } }
+    {
+      "@type": "Question",
+      "name": "Waarom komen API-sleutels zo vaak blootgesteld te liggen in de frontend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat ontwikkelomgevingen vaak client-side en server-side configuratie op één plek mengen, en tenzij dit expliciet wordt gescheiden vóór deployment, kunnen geheimen die voor de server bedoeld zijn, terechtkomen in code die naar de browser wordt verzonden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik nu controleren of mijn eigen app dit probleem heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open uw gedeployde app in een browser, open devtools, en doorzoek de netwerkverzoeken en geladen scripts op elke API-sleuteltekenreeks — als deze ergens in die weergave verschijnt, is deze blootgesteld."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik doen als ik een blootgestelde sleutel vind?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Roteer deze onmiddellijk bij de provider, en verplaats vervolgens de code die deze gebruikt naar een server-side eindpunt, zodat de sleutel nooit uw eigen infrastructuur hoeft te verlaten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Beoordeelt LaunchStudio deployments voordat ze live gaan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — dit is een standaardonderdeel van onze pre-launch beoordeling, en onze technici, waaronder het team gevestigd in Singapore, controleren specifiek op precies dit soort blootstelling voordat een oprichter naar productie pusht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit alleen een risico bij Cursor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, het is een deploymentprocesrisico dat geldt ongeacht welke AI-codeertool de app heeft gebouwd — de oplossing is in beide gevallen hetzelfde: scheid omgevingen, en laat geheimen nooit client-side code bereiken."
+      }
+    }
   ]
 }
 </script>

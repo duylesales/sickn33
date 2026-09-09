@@ -56,6 +56,14 @@ Blended teams work when the org chart complexity is acknowledged rather than pap
 
 If you're structuring a blended engagement from scratch, Manifera's [dedicated teams](https://www.manifera.com/services/dedicated-teams/) model is built specifically around this integration pattern — engineers who join your existing ceremonies and tooling rather than operating as a separate outsourced unit.
 
+## Timezone Overlap and Code Review Latency: The Metric Nobody Tracks
+
+Blended teams with Vietnam-based engineers (GMT+7) and a US or European in-house core typically run on 3-5 hours of real-time overlap per working day — enough for a shared standup and a live pairing window, not enough to run every code review synchronously. That gap makes pull request turnaround the metric that actually predicts whether the blend is working, not sprint velocity. A healthy blended board holds median PR review latency under 24 hours even across the timezone gap, achieved by treating the first two overlap hours as a review-clearing window before anyone starts new work, rather than by requiring same-day live reviews.
+
+Standup timing matters more than most VPs expect: anchoring the daily sync at 8:30-9:00am CET/CEST lands at roughly 1:30-2:00pm ICT, which is workable for a full-day Vietnam shift without pushing anyone into a pre-dawn or post-midnight call — a schedule that quietly erodes retention within two to three quarters. On-call and incident response need an explicit handoff protocol too: define which severity levels can wait for overlap hours versus which require a Vietnam-side engineer with production access to act solo, and document the escalation path before the first incident, not during it.
+
+Teams that instrument these three numbers — overlap hours, PR latency, and standup landing time — catch integration drift within a sprint or two. Teams that only watch velocity typically don't notice until a quarter of quietly declining code quality has already accumulated.
+
 ## Frequently Asked Questions
 
 ### What ratio of in-house to vendor engineers works best on a blended squad?
@@ -73,6 +81,18 @@ Yes, and excluding them is the most common quiet failure in blended teams. Engag
 ### How do you handle a vendor engineer's dual reporting line to their delivery lead?
 Name it explicitly in the team's working agreement rather than pretending it doesn't exist. Document who the vendor's delivery lead is, what triggers an escalation, and how capacity changes get communicated in advance, since most confusion arises when this second reporting line is treated as invisible until a conflict surfaces.
 
+### (Scenario: standup consistently lands at 6am or 11pm for one side of the blended team) How should a VP of Engineering set standup timing across a CET and ICT timezone split?
+Anchor the daily sync in the 3-5 hour real overlap window — typically 8:30-9:00am CET, which lands around 1:30-2:00pm ICT — rather than defaulting to whichever timezone has organizational seniority. A standup that consistently pushes one side into pre-dawn or late-night hours erodes retention on that side within two to three quarters even if the work itself is going well.
+
+### (Scenario: pull requests from the Vietnam-based half of the team sit unreviewed for two or three days) What PR review process actually closes the cross-timezone review gap?
+Treat the first hour or two of daily overlap as a dedicated review-clearing window before anyone picks up new work, rather than expecting same-day synchronous reviews across a partial-overlap schedule. Track median PR review latency explicitly — anything creeping past 24 hours is a leading indicator of integration drift that sprint velocity numbers won't show you yet.
+
+### (Scenario: a production incident happens outside the daily overlap window and only vendor engineers are online) Who should be authorized to act on a severity-1 incident when in-house engineers aren't reachable?
+Define escalation tiers in advance: lower-severity issues wait for overlap hours, but severity-1 incidents need a named vendor-side engineer with full production access and explicit authority to act solo, documented before the first incident rather than negotiated during one. Without that pre-agreement, the team either delays critical fixes or improvises access decisions under pressure.
+
+### (Scenario: sprint velocity looks healthy but code quality has quietly declined over the last two quarters) What early-warning metrics catch blended-team integration drift before velocity does?
+Overlap hours actually used, median PR review latency, and how close standup timing sits to each side's core working hours are the three leading indicators — velocity is a lagging one that often stays flat while these degrade. Instrumenting those three lets a VP of Engineering catch drift within a sprint or two instead of a quarter.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -82,7 +102,11 @@ Name it explicitly in the team's working agreement rather than pretending it doe
     {"@type": "Question", "name": "Should vendor engineers have their own column or swimlane on the sprint board?", "acceptedAnswer": {"@type": "Answer", "text": "No. A genuinely blended team uses one backlog and one Definition of Done with no visible split by employer. Labeling tickets by vendor versus in-house on a shared board is one of the fastest ways to create a perceived two-tier team even when that was never the intent."}},
     {"@type": "Question", "name": "How should production access differ for vendor engineers versus employees?", "acceptedAnswer": {"@type": "Answer", "text": "Access should be role-based and tied to the individual engineer rather than the vendor company, using named accounts and scoped IAM roles matched to actual work. Offboarding a rotating vendor engineer should trigger the same deprovisioning checklist as an employee departure, not a lighter-touch process."}},
     {"@type": "Question", "name": "Do vendor engineers need to be included in architecture and design decisions?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and excluding them is the most common quiet failure in blended teams. Engagements that limit vendor engineers to implementing specs written elsewhere plateau at execution-only value, while engagements that pull them into design review and RFC discussions tend to catch design flaws earlier and compound in value over time."}},
-    {"@type": "Question", "name": "How do you handle a vendor engineer's dual reporting line to their delivery lead?", "acceptedAnswer": {"@type": "Answer", "text": "Name it explicitly in the team's working agreement rather than pretending it doesn't exist. Document who the vendor's delivery lead is, what triggers an escalation, and how capacity changes get communicated in advance, since most confusion arises when this second reporting line is treated as invisible until a conflict surfaces."}}
+    {"@type": "Question", "name": "How do you handle a vendor engineer's dual reporting line to their delivery lead?", "acceptedAnswer": {"@type": "Answer", "text": "Name it explicitly in the team's working agreement rather than pretending it doesn't exist. Document who the vendor's delivery lead is, what triggers an escalation, and how capacity changes get communicated in advance, since most confusion arises when this second reporting line is treated as invisible until a conflict surfaces."}},
+    {"@type": "Question", "name": "How should a VP of Engineering set standup timing across a CET and ICT timezone split?", "acceptedAnswer": {"@type": "Answer", "text": "Anchor the daily sync in the 3-5 hour real overlap window, typically 8:30-9:00am CET landing around 1:30-2:00pm ICT, rather than defaulting to whichever timezone has organizational seniority. A standup that consistently pushes one side into pre-dawn or late-night hours erodes retention on that side within two to three quarters."}},
+    {"@type": "Question", "name": "What PR review process actually closes the cross-timezone review gap?", "acceptedAnswer": {"@type": "Answer", "text": "Treat the first hour or two of daily overlap as a dedicated review-clearing window before anyone picks up new work, and track median PR review latency explicitly, since anything creeping past 24 hours is a leading indicator of integration drift."}},
+    {"@type": "Question", "name": "Who should be authorized to act on a severity-1 incident when in-house engineers aren't reachable?", "acceptedAnswer": {"@type": "Answer", "text": "Define escalation tiers in advance: lower-severity issues wait for overlap hours, but severity-1 incidents need a named vendor-side engineer with full production access and explicit authority to act solo, documented before the first incident occurs."}},
+    {"@type": "Question", "name": "What early-warning metrics catch blended-team integration drift before velocity does?", "acceptedAnswer": {"@type": "Answer", "text": "Overlap hours actually used, median PR review latency, and how close standup timing sits to each side's core working hours are the three leading indicators, letting a VP of Engineering catch drift within a sprint or two instead of a quarter."}}
   ]
 }
 </script>

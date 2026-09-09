@@ -56,6 +56,17 @@ Manifera's development engagements are provisioned under least-privilege, time-b
 
 If your organization is about to grant a development vendor access to production cloud infrastructure and wants a documented access control agreement in writing before day one, talk to Manifera's team about how we structure vendor access for security-sensitive engagements.
 
+## A Quarterly Access Review, Not Just an Onboarding Checklist
+
+Everything above covers what to verify before granting access. Just as important, and far more often skipped, is a recurring review while the engagement is active — the eleven-month gap in this article's opening scenario wasn't caught at onboarding, it was caught by a routine review that should have happened much sooner. Run this four-point check quarterly for any active vendor engagement with cloud access:
+
+1. **Cross-reference active credentials against current vendor headcount on your project.** Any credential tied to someone who's rotated off is a finding, not a formality — flag and revoke within the same review cycle.
+2. **Spot-check that access scope still matches current project phase.** Permissions granted for an early infrastructure-setup phase often remain long after that phase ends and are never scoped back down.
+3. **Confirm MFA and SSO enrollment is still active for every vendor account**, not just verified once at initial provisioning.
+4. **Pull your own independent audit log** (not the vendor's) and sample a handful of actions against what the vendor's team reports doing — a mismatch here is a higher-priority finding than almost anything else on this list.
+
+A quarterly cadence catches drift within roughly 90 days instead of eleven months. Assign this review to a named owner on your security team, not "whoever remembers" — the original healthtech incident had a documented offboarding process on paper; what it lacked was anyone specifically accountable for checking that the process had actually run.
+
 ## Frequently Asked Questions
 
 ### What is least-privilege access for a development vendor?
@@ -77,6 +88,22 @@ No, not exclusively. Maintain independent, cloud provider-native audit logging o
 ### What should an access control clause in a vendor contract specify?
 
 It should specify the least-privilege scoping approach, MFA and SSO requirements, a numeric offboarding SLA with a verification step, independent audit logging rights retained by your organization, and a defined secrets management and rotation standard.
+
+### (Scenario: A Security Lead is deciding how often to review active vendor access after signing a strong access control contract) How often should I review a vendor's active access permissions during an ongoing engagement, not just at onboarding?
+
+Quarterly, at minimum, with a named owner on your security team responsible for running it. A strong contract clause at signing doesn't self-enforce — the eleven-month exposure gap in this article's scenario existed despite a documented offboarding process, because no one was specifically accountable for verifying it actually ran.
+
+### (Scenario: A quarterly access review finds a credential still active for a contractor who rotated off the project two months earlier) What should I do if a quarterly access review finds a credential still active for someone who's already left the vendor's team?
+
+Revoke it immediately within the same review cycle and treat it as a process failure worth raising with the vendor directly, not just a housekeeping fix. A single missed revocation is a signal worth investigating for a pattern — ask the vendor to walk through why their offboarding process didn't catch this specific case.
+
+### (Scenario: A Security Lead wants to compare the vendor's self-reported activity log against independent cloud provider logs) How do I actually compare a vendor's self-reported activity against my own independent audit log?
+
+Sample a handful of specific actions or time windows from your own cloud provider-native logging (CloudTrail or equivalent) and ask the vendor to independently confirm what their team did during those same windows without showing them your log first. A mismatch between the two accounts, even a small one, is a higher-priority finding than most other items on a routine review.
+
+### (Scenario: An engagement was scoped for an initial infrastructure buildout phase six months ago, and the project has since moved into steady-state maintenance) Does access scope need to be reviewed even if a vendor's permissions were correctly minimal at the start of the engagement?
+
+Yes. Permissions that were appropriately scoped for an early, more intensive project phase often remain unchanged long after the project moves into a lower-access-need phase like steady-state maintenance. Access scope should shrink as project needs shrink, and that adjustment rarely happens automatically without a scheduled review to trigger it.
 
 <script type="application/ld+json">
 {
@@ -107,6 +134,26 @@ It should specify the least-privilege scoping approach, MFA and SSO requirements
       "@type": "Question",
       "name": "What should an access control clause in a vendor contract specify?",
       "acceptedAnswer": { "@type": "Answer", "text": "It should specify least-privilege scoping, MFA and SSO requirements, a numeric offboarding SLA with a verification step, independent audit logging rights, and a defined secrets management and rotation standard." }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I review a vendor's active access permissions during an ongoing engagement, not just at onboarding?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Quarterly, at minimum, with a named owner on your security team responsible for running it. A strong contract clause doesn't self-enforce, which is exactly how an eleven-month exposure gap can persist despite a documented offboarding process on paper." }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if a quarterly access review finds a credential still active for someone who's already left the vendor's team?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Revoke it immediately within the same review cycle and raise it with the vendor as a process failure, not just a housekeeping fix. A single missed revocation is worth investigating for a broader pattern." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I actually compare a vendor's self-reported activity against my own independent audit log?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sample specific actions or time windows from your own cloud provider-native logging and ask the vendor to independently confirm what their team did during those windows without showing them your log first. Any mismatch is a high-priority finding." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does access scope need to be reviewed even if a vendor's permissions were correctly minimal at the start of the engagement?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Permissions scoped for an early, intensive project phase often remain unchanged after the project moves into a lower-access-need phase like steady-state maintenance, and that adjustment rarely happens without a scheduled review." }
     }
   ]
 }

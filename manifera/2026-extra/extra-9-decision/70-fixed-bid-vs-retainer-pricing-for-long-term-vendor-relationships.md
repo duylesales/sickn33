@@ -54,6 +54,12 @@ Neither model is universally correct — a fixed bid is still the right choice f
 
 Manifera's 160+ delivered projects span both models, and our finance-facing reporting is built to make either one defensible to your board — quarterly utilization detail for retainers, milestone-linked acceptance criteria for fixed-bid phases. Talk to our Amsterdam team about which structure fits your relationship's current stage before your next renewal locks in a model that made sense eighteen months ago but may not fit now.
 
+## A Worked Example: Structuring the Hybrid Split
+
+Take a mid-size engagement running four senior engineers at a blended €9,000/month/engineer capacity rate — roughly €36,000/month in retained capacity. A defensible hybrid structure allocates 70-80% of that capacity (2.8-3.2 FTE-equivalents) to the retainer, covering ongoing roadmap work, bug fixes, and iterative feature delivery, while reserving 20-30% as a fixed-bid carve-out budget for discrete initiatives that surface mid-year, such as a compliance-driven certification project or a platform migration with an external deadline. Each carve-out gets its own fixed price and acceptance criteria, quoted against the reserved budget rather than requiring a renegotiation of the base retainer.
+
+This split gives Finance two numbers to track instead of one ambiguous blended rate: a fixed monthly retainer line that never moves without a formal capacity change request, and a variable carve-out line that only grows when a specific, board-visible initiative justifies it. CFOs who skip this split and let carve-out work silently absorb into "retainer scope creep" typically discover eighteen months later that the team's actual output no longer matches the retained hours on paper — the fix is enforcing a hard boundary at the time each carve-out is proposed, not retroactively during an annual audit.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -82,6 +88,18 @@ In several long-running client relationships, converting from sequential fixed-b
 ### What should a CFO ask for before agreeing to a retainer renewal?
 Ask for quarterly capacity utilization reporting that shows specifically what the retained hours produced, comparable in rigor to how a fixed-bid milestone would be reviewed. A vendor confident in the retainer's value should readily provide this without resistance.
 
+### (Scenario: negotiating a three-year retainer contract) How should a CFO handle annual rate escalation clauses in a multi-year retainer?
+Cap the escalation to a named index, such as Dutch CPI, or a fixed 3-5% annual ceiling, rather than accepting an open "market rate adjustment" clause that lets the vendor reset pricing unilaterally at renewal. Multi-year retainers without a capped escalation clause routinely see 8-12% single-year increases once a vendor decides the relationship has become too valuable to price competitively.
+
+### (Scenario: ending a retainer contract mid-billing-cycle) What happens to unused retainer hours if the contract ends mid-cycle?
+This should be defined explicitly in the contract rather than left to interpretation. Most well-drafted retainers either roll unused hours into the next month, capped at 10-20% of monthly capacity, or treat them as non-refundable — confirm which rule applies before signing, not during an exit negotiation.
+
+### (Scenario: budgeting an offshore retainer priced in a foreign currency) How should a CFO account for currency risk in an offshore retainer contract?
+Insist on invoicing in your home currency, EUR for most Manifera clients, which shifts FX risk onto the vendor rather than your budget forecast. If a vendor insists on invoicing in USD or another currency, build a 5-8% FX buffer into the annual budget rather than assuming the rate at signing holds for the full contract term.
+
+### (Scenario: comparing retainer quotes from multiple vendors) How do you know if a retainer's blended hourly rate is competitive?
+Break the blended rate down by seniority mix, since a retainer quoting a single blended number can hide a team weighted toward junior engineers billed at senior rates. Ask for the specific seniority composition behind the blended figure, such as one senior, two mid-level, and one junior, and compare that composition against competing proposals.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -91,7 +109,11 @@ Ask for quarterly capacity utilization reporting that shows specifically what th
     {"@type": "Question", "name": "What's the biggest risk of a retainer model?", "acceptedAnswer": {"@type": "Answer", "text": "The main risk is reduced budget elasticity and less built-in scrutiny, since there's no discrete deliverable moment forcing a value conversation the way a fixed-bid milestone does. This is manageable with a quarterly capacity utilization report reviewed with the same rigor as any other recurring vendor spend."}},
     {"@type": "Question", "name": "When does fixed bid pricing still make sense in a long-term vendor relationship?", "acceptedAnswer": {"@type": "Answer", "text": "Fixed bid remains the right choice for genuinely bounded, one-off initiatives with a hard deadline or tightly defined scope, even within an otherwise ongoing relationship. Many long-term engagements use a hybrid: a retainer for ongoing capacity, with fixed-bid carve-outs for specific bounded projects."}},
     {"@type": "Question", "name": "How much administrative overhead does switching from fixed bid to retainer actually save?", "acceptedAnswer": {"@type": "Answer", "text": "In several long-running client relationships, converting from sequential fixed-bid phases to a retainer after the initial build reduced administrative overhead — time spent scoping, quoting, and negotiating rather than delivering — by roughly 15% to 20% of total engagement time over the following year."}},
-    {"@type": "Question", "name": "What should a CFO ask for before agreeing to a retainer renewal?", "acceptedAnswer": {"@type": "Answer", "text": "Ask for quarterly capacity utilization reporting that shows specifically what the retained hours produced, comparable in rigor to how a fixed-bid milestone would be reviewed. A vendor confident in the retainer's value should readily provide this without resistance."}}
+    {"@type": "Question", "name": "What should a CFO ask for before agreeing to a retainer renewal?", "acceptedAnswer": {"@type": "Answer", "text": "Ask for quarterly capacity utilization reporting that shows specifically what the retained hours produced, comparable in rigor to how a fixed-bid milestone would be reviewed. A vendor confident in the retainer's value should readily provide this without resistance."}},
+    {"@type": "Question", "name": "How should a CFO handle annual rate escalation clauses in a multi-year retainer?", "acceptedAnswer": {"@type": "Answer", "text": "Cap the escalation to a named index, such as Dutch CPI, or a fixed 3-5% annual ceiling, rather than an open \"market rate adjustment\" clause that lets the vendor reset pricing unilaterally. Uncapped multi-year retainers routinely see 8-12% single-year increases at renewal."}},
+    {"@type": "Question", "name": "What happens to unused retainer hours if the contract ends mid-cycle?", "acceptedAnswer": {"@type": "Answer", "text": "This should be defined explicitly in the contract. Most well-drafted retainers either roll unused hours into the next month, capped at 10-20% of monthly capacity, or treat them as non-refundable — confirm which rule applies before signing, not during an exit negotiation."}},
+    {"@type": "Question", "name": "How should a CFO account for currency risk in an offshore retainer contract?", "acceptedAnswer": {"@type": "Answer", "text": "Insist on invoicing in your home currency, which shifts FX risk onto the vendor. If a vendor insists on invoicing in another currency, build a 5-8% FX buffer into the annual budget rather than assuming the signing-day rate holds for the full contract term."}},
+    {"@type": "Question", "name": "How do you know if a retainer's blended hourly rate is competitive?", "acceptedAnswer": {"@type": "Answer", "text": "Break the blended rate down by seniority mix, since a single blended number can hide a team weighted toward junior engineers billed at senior rates. Ask for the specific seniority composition behind the figure and compare that against competing proposals, not just the headline rate."}}
   ]
 }
 </script>

@@ -7,6 +7,31 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Het Verborgen Workflowprobleem: Waarom AI-code Tests Doorstaat Maar Faalt Bij Echt Gebruik
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Het Verborgen Workflowprobleem: Waarom AI-code Tests Doorstaat Maar Faalt Bij Echt Gebruik",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/hidden-workflow-problem-ai-code-passes-tests-fails-real-use"
+  }
+}
+</script>
+
+
 Een groen vinkje op een geslaagde testsuite voelt als bewijs. Het is eigenlijk bewijs van iets aanzienlijk smaller dan het lijkt: dat jouw code correct gedraagt voor precies de scenario's die jouw tests beschrijven. Echte gebruikers volgen de scenario's die jouw tests beschrijven niet — ze volgen paden door jouw product die niemand specifiek anticipeerde, en het is precies in dat gat, tussen "getest" en "daadwerkelijk gebruikt," waar verborgen workflowaannames leven.
 
 ## Wat Een Verborgen Workflowaanname Daadwerkelijk Is
@@ -38,6 +63,18 @@ Reserveer toegewijde tijd — apart van functieontwikkeling en apart van het sch
 [LaunchStudio](https://launchstudio.eu/nl/) omvat precies dit soort verkennend adversarieel testen als onderdeel van zijn productiegereedheidsreview, specifiek jagend op verborgen workflowaannames voorbij wat een standaard testsuite dekt, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
 
 [Laat jouw app testen zoals echte gebruikers het daadwerkelijk zullen gebruiken, niet alleen zoals je verwachtte](https://launchstudio.eu/nl/#calculator) — tests doorstaan en echt gebruik overleven zijn verschillende beweringen.
+
+## Een Startchecklist: Vijf Flows om Doelbewust te Breken Vóór de Lancering
+
+Een founder die aan de vooravond van lancering staat weet vaak niet waar te beginnen met testen. Vijf uiterst effectieve destructieve tests om mee te starten:
+
+1. **De dubbelklik op de betaalknop**: Klik zo snel mogelijk tien keer achter elkaar op de aankoopknop om te zien of er tien transacties worden gestart.
+2. **De verbroken netwerkverbinding tijdens een bestandsupload**: Trek de internetkabel eruit bij 50% van een upload en observeer het herstelgedrag.
+3. **De sessie-diefstal test**: Log in op browser A, kopieer de sessie-cookie naar browser B, log uit op browser A en controleer of browser B direct wordt geblokkeerd.
+4. **De SQL/Script injectie**: Vul `<script>alert(1)</script>` in elk tekstveld in en controleer of dit veilig wordt ge-escaped.
+5. **De ongeldige datum-invoer**: Vul 31 februari in bij datumvelden om te kijken of de backend dit netjes afvangt.
+
+[LaunchStudio](https://launchstudio.eu/nl/) voert deze vijandige tests systematisch uit als onderdeel van onze Launch Ready service.
 
 ## Echt voorbeeld
 
@@ -77,3 +114,52 @@ Een paar gerichte uren specifiek toegewijd aan het proberen van onverwachte sequ
 ### Vereist het repareren van een verborgen workflowaanname, zoals Iwans toestandsbeheerprobleem, doorgaans significante herarchitectuur?
 
 Doorgaans niet — zoals in Iwans geval was de fix het toevoegen van correcte toestandsafhandeling voor een reeds bestaande flow, niet de flow zelf herstructureren, consistent met het bredere punt van deze serie dat productiegereedheidswerk doorgaans additief en gericht is in plaats van een herbouw te vereisen.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe verschilt verkennend adversarieel testen van het smoke-testen elders in deze serie behandeld?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Smoke tests verifiëren specifieke, vooraf gedefinieerde scenario's betrouwbaar slagen bij elke codewijziging, automatisch gedraaid; verkennend testen is een handmatig, open-einde ontdekkingsproces specifiek zoekend naar scenario's die niemand dacht te definiëren als testgeval om te beginnen — de twee zijn complementair, geen vervangingen voor elkaar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik de terugknop-bug die Iwan tegenkwam gevonden hebben zonder een toegewijde verkennende sessie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Realistisch, alleen via een echte gebruiker die het tegenkomt en verwarrend, moeilijk te beschrijven gedrag rapporteert, of via dit soort doelbewust, toegewijd verkennend testen — de bug vereiste een specifieke navigatieactie die geen vooraf gedefinieerd testscenario toevallig omvatte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit soort verborgen workflowaanname gebruikelijker in specifiek meerstapsflows, of geldt het breed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is het meest acuut in meerstaps, stateful flows zoals Iwans onboardingproces, aangezien ze meer gelegenheid hebben voor buiten-volgorde of onderbroken interactie, hoewel het onderliggende principe — ongeteste aannames over gebruiksvolgorde — van toepassing is op elke functie met meer dan één mogelijk pad erdoorheen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel tijd moet een founder begroten voor verkennend adversarieel testen vóór lancering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een paar gerichte uren specifiek toegewijd aan het proberen van onverwachte sequenties over jouw kritieke flows brengt doorgaans de meest consequentiële verborgen aannames naar boven, vergelijkbaar in scope met de smoke-test-tijdsinvestering elders in deze serie behandeld, hoewel de activiteit zelf kwalitatief anders is — open-einde verkenning in plaats van bekende scenario's bevestigen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vereist het repareren van een verborgen workflowaanname, zoals Iwans toestandsbeheerprobleem, doorgaans significante herarchitectuur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doorgaans niet — zoals in Iwans geval was de fix het toevoegen van correcte toestandsafhandeling voor een reeds bestaande flow, niet de flow zelf herstructureren, consistent met het bredere punt van deze serie dat productiegereedheidswerk doorgaans additief en gericht is in plaats van een herbouw te vereisen."
+      }
+    }
+  ]
+}
+</script>

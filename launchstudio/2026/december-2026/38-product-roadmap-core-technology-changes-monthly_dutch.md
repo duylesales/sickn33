@@ -73,11 +73,54 @@ De "technologie-gewoonte" is makkelijk te onderschrijven, maar raakt in de prakt
 
 Cap de tijdsinvesterings bewust: 30 tot 60 minuten gefocuste review per maand is doorgaans ruim voldoende.
 
-## Belangrijkste inzichten
+### Belangrijkste inzichten
 
 - **Stuur op klantuitkomsten**: Leg plannen vast op functioneel niveau, en houd de specifieke technische implementatie flexibel.
 - **Bouw een abstractielaag**: Een model-agnostische architectuur voorkomt dat een provider-wijziging uw hele roadmap verstoort.
 - **Korte technische sprints**: Beperk gedetailleerde technische plannen tot kortere cycli van enkele weken.
+
+### Dynamisch Roadmappen: Het 30-60-90 Dagen Horizon-Model
+
+In een technologisch landschap waar AI-modellen en frameworks maandelijks verouderen, is een statische jaar-roadmap een recept voor kapitaalverspilling. Succesvolle oprichters hanteren een flexibel drie-fasen model:
+- **Horizon 1 (0-30 Dagen — Harde Executie):** Vaste, onveranderlijke sprints gericht op kernfunctionaliteit, pre-launch hardening, beveiliging en betalingsbetrouwbaarheid. Geen tussentijdse koerswijzigingen toegestaan.
+- **Horizon 2 (30-60 Dagen — Gevalideerde Verbeteringen):** Features die wachten op feedback van de eerste betalende klanten. Specificaties worden pas 14 dagen voor de geplande start definitief bevroren.
+- **Horizon 3 (60-90 Dagen — Strategische Verkenning):** Experimentele ideeën en evaluatie van nieuwe modelcapaciteiten (zoals multimodaliteit of agentic workflows). Dient als flexibele buffer die maandelijks wordt herzien.
+
+### Waarom Architectuur-Flexibiliteit Belangrijker Is Dan Feature-Snelheid
+
+Wanneer de onderliggende modellen elke maand krachtiger en goedkoper worden, is hard gecodeerde logica uw grootste vijand. Een ervaren senior engineer ontwerpt daarom met het oog op modulariteit:
+- **Ontkoppelde Prompt-Templates:** Bewaar prompts niet als hardgecodeerde strings in uw broncode, maar in een flexibel config-bestand of headless CMS. Hierdoor kan uw team prompts verfijnen zonder dat een volledige softwaredeployment nodig is.
+- **Provider-Agnostische Tool Calling:** Zorg dat functie-aanroepen (tool calls) zijn gedefinieerd volgens universele JSON-schemas, zodat u moeiteloos kunt schakelen tussen OpenAI function calling, Anthropic tool use of lokale open-source agentic frameworks.
+- **Geïsoleerde Vector Stores:** Koppel uw applicatie niet vast aan één specifieke vector database; implementeer een adapter-laag zodat u later zonder datamigratie kunt overstappen tussen Supabase pgvector, Pinecone of Qdrant.
+
+### Het Opzetten van een Maandelijkse Technologie-Review Sprint
+
+Om te voorkomen dat uw tech-stack achterop raakt of juist bezwijkt onder 'shiny object syndrome', plant u op de eerste maandag van elke maand een vaste audit van twee uur in:
+1. **Model Prijs-Prestatie Review:** Controleer of er nieuwe modellen zijn gelanceerd die uw huidige taken sneller of 50% goedkoper kunnen uitvoeren (bijvoorbeeld migreren van GPT-4o naar GPT-4o-mini voor standaard classificaties).
+2. **Context-Window & Caching Optimalisatie:** Evalueer of uw documentverwerking kan profiteren van provider-side prompt caching om API-kosten met 50% tot 80% te verlagen.
+3. **Database Performance Audit:** Controleer query-tijden in Supabase of Cloud SQL en identificeer ontbrekende indexen vóór de maandelijkse piek.
+4. **Architectuur-Ontkoppeling:** Verifieer dat recente feature-toevoegingen netjes binnen de adapter-interfaces zijn gebleven en niet rechtstreeks aan specifieke provider-SDK's zijn vastgekoppeld.
+
+### Het Kwartaal-Audit Framework voor Evolving AI Stacks
+
+Het maandelijks herzien van uw technologiestack voorkomt dat uw startup vastroest in verouderde patronen:
+- **Evaluatie van Context-Window Efficiëntie:** Onderzoek maandelijks of nieuwe modelversies u in staat stellen complexe retrieval-augmented generation (RAG) pipelines te vereenvoudigen door grotere context-vensters met ingebouwde caching te benutten.
+- **Database Indexering & Latency Profiling:** Analyseer continu de `pg_stat_statements` logs in PostgreSQL om opkomende query-bottlenecks proactief op te lossen voordat ze merkbaar worden voor gebruikers.
+- **Vendor Lock-in Preventie:** Zorg dat alle AI-functies communiceren via abstracte interfaces, zodat u binnen één werkdag kunt overstappen naar een andere leverancier bij prijswijzigingen of prestatieverlies.
+
+### De Drie Architectuurprincipes voor Maximale Aanpasbaarheid
+
+Om te voorkomen dat technologische shifts uw hele product lamleggen, richt u uw software in volgens drie vuistregels:
+1. **Model-Agnostische Gegevenscontracten:** Zorg dat uw interne businesslogica communiceert via generieke interfaces in plaats van provider-specifieke parameters. Wisselen tussen OpenAI, Anthropic en Mistral wordt daardoor een configuratiekwestie in plaats van een herschrijving.
+2. **Asynchrone Event-Queues:** Splits zware AI-verwerkingen los van uw synchrone webserver met behulp van Redis of RabbitMQ. Dit voorkomt dat trage provider-API's uw gebruikersinterface blokkeren.
+3. **Continue Kwaliteitsmonitoring:** Meet maandelijks de nauwkeurigheid en responstijden van uw AI-features op een vaste testset om te verifiëren of modelupdates uw kernfunctionaliteit niet degraderen.
+
+### Concreet Stappenplan voor Architectuur-Evaluatie
+
+Voer elke maand deze drie technische controles uit:
+- **Index-Fragmentatie in PostgreSQL:** Controleer met `VACUUM ANALYZE` of veelgebruikte tabellen nog optimaal reageren op zoekopdrachten.
+- **Cache-Hit Ratio van API-Aanroepen:** Verifieer dat herhaalde gebruikersprompts voor minimaal 60% worden afgehandeld via Redis-caching.
+- **Dependency Health Check:** Update verouderde npm-pakketten om kwetsbaarheden tijdig te elimineren.
 
 ## Echt voorbeeld
 

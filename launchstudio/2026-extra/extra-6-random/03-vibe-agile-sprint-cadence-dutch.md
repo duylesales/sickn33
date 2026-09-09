@@ -35,6 +35,21 @@ De oplossing is niet om Agile los te laten — het is om de eenheid van beoordel
 
 Manifera brengt de procesdiscipline van 120+ technici en 160+ opgeleverde projecten naar precies dit probleem — beoordelingscadansen bouwen die zijn afgestemd op AI-output in plaats van integraal overgenomen uit pre-AI Agile-draaiboeken. Ons team, waaronder technici gevestigd in Ho Chi Minhstad die rechtstreeks werken in de codebases die oprichters ons sturen, behandelt elke door AI gegenereerde pull request als een eigen te beoordelen eenheid in plaats van iets om door te wuiven omdat de demo er goed uitzag. Als uw huidige sprintritme altijd één release achterloopt op de code die u genereert, [bereken dan wat een echte productiebeoordeling zou kosten](https://launchstudio.eu/nl/#calculator) voordat technische schuld sneller groeit dan u die kunt opsporen. Manifera's bredere benadering van gestructureerde [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) is gebouwd op hetzelfde principe: beoordelingscapaciteit moet meegroeien met output, niet andersom.
 
+## Vier Categorieën van AI-Gegenereerde Wijzigingen, en Hoe Snel Elk Beoordeling Vereist
+
+Niet elke door AI gegenereerde codewijziging brengt hetzelfde risiconiveau met zich mee. Door alle wijzigingen over één kam te scheren, ontstaat precies de overbelasting die 'vibe Agile' onhoudbaar maakt: men beoordeelt óf alles met dezelfde loodzware bureaucratie (wat niemand volhoudt), óf men laat alles ongezien doorstromen naar productie. Door wijzigingen in te delen in vier heldere categorieën brengt u focus aan:
+
+**Categorie één: cosmetisch en visueel.** Tekstuele aanpassingen, witruimtes, typografie, knopkleuren en de lay-out van instellingenpagina's. Deze wijzigingen kunnen snel worden doorgevoerd met minimale controle. Een snelle visuele inspectie in de browser volstaat doorgaans, want het risico van een foutje beperkt zich tot een lelijke knop en nooit tot een datalek.
+
+**Categorie twee: nieuwe, geïsoleerde functionaliteit.** Een nieuwe informatieve pagina, een geëxporteerd rapport of een zelfstandig onderdeel dat geen bestaande data-toegangslogica raakt en niet schrijft naar gedeelde kerntabellen. Dit verdient een aandachtige doorlezing — niet per se regel voor regel, maar voldoende om te begrijpen wat de code doet en vast te stellen dat er geen onjuiste aannames worden gedaan. Een beoordeling op dezelfde dag is hier passend.
+
+**Categorie drie: wijzigingen in bestaande, gedeelde logica.** Alles wat een functie, een database-query of een component wijzigt waar andere onderdelen van de applicatie al op steunen. Dit is de plek waar de kostbaarste bugs doorgaans ontstaan — niet in gloednieuwe code, maar in bestaande code die subtiel en onbedoeld is aangepast. Deze categorie vereist een diepgaande inspectie met de specifieke vraag: "welke andere onderdelen roepen dit aan, en voldoet deze wijziging nog steeds aan hun verwachtingen?"
+
+**Categorie vier: authenticatie, autorisatie, betalingen en toegangsbeheer.** Wijzigingen die betrekking hebben op gebruikersidentiteit, toegangsrechten, betaaltransacties of data-isolatie. Deze categorie wordt *altijd* voorafgaand aan een merge beoordeeld, zonder uitzondering, bij voorkeur door een ervaren tweede paar ogen. Niet omdat AI hier statistisch meer fouten maakt, maar omdat de bedrijfsimpact van een beveiligings- of betaalfout oneindig veel groter is dan bij de overige categorieën.
+
+Door codewijzigingen stelselmatig op deze wijze te sorteren, behoudt een solo-oprichter de snelheid bij categorieën één en twee (het leeuwendeel van het dagelijkse werk), terwijl de volledige aandacht wordt gereserveerd voor de kritieke categorieën drie en vier.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: burn-out tegen sprint drie
@@ -81,11 +96,46 @@ Voor wijzigingen met een laag risico vaak wel — maar voor authenticatie, betal
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why doesn't a standard two-week sprint work well with AI-generated code?", "acceptedAnswer": { "@type": "Answer", "text": "Sprint length assumes a balance between code production speed and review speed, and AI tools can generate far more code per session than a solo founder can carefully review in the same window." } },
-    { "@type": "Question", "name": "What should replace the standard sprint cadence for AI-native founders?", "acceptedAnswer": { "@type": "Answer", "text": "Shorter, output-triggered review checkpoints tied to what was actually generated, with security-sensitive changes prioritized for closer review." } },
-    { "@type": "Question", "name": "Does this mean Agile doesn't work for AI-native founders?", "acceptedAnswer": { "@type": "Answer", "text": "The ceremonies still have value, but the unit of review needs to be resized around AI output volume rather than borrowed unchanged from human-paced development." } },
-    { "@type": "Question", "name": "How does Manifera help with this kind of process problem?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineers, including the team in Ho Chi Minh City, build review cadences calibrated to AI-generated output, drawing on 160+ delivered projects of process experience." } },
-    { "@type": "Question", "name": "Can one founder realistically review all AI-generated code alone?", "acceptedAnswer": { "@type": "Answer", "text": "For low-risk changes often yes, but authentication, payments, and data-access logic benefit from a second technical reviewer." } }
+    {
+      "@type": "Question",
+      "name": "Waarom werkt een standaard sprint van twee weken niet goed met door AI gegenereerde code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat de sprintlengte uitgaat van een ruwe balans tussen hoe snel code wordt geproduceerd en hoe snel deze kan worden beoordeeld, en AI-tools per sessie veel meer code kunnen produceren dan een solo-oprichter zorgvuldig kan controleren binnen datzelfde tijdsbestek."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet de standaard sprintcadans vervangen voor AI-native oprichters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kortere, door output getriggerde beoordelingscheckpoints die reageren op wat er daadwerkelijk is gegenereerd, in plaats van een vaste kalendercyclus, met beveiligingsgevoelige wijzigingen die prioriteit krijgen voor nauwere beoordeling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Betekent dit dat Agile niet werkt voor AI-native oprichters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet precies — de ceremonies hebben nog steeds waarde, maar de eenheid van beoordeling moet opnieuw worden afgestemd op het AI-outputvolume in plaats van ongewijzigd te worden overgenomen uit menselijk-getempoede ontwikkeling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe helpt Manifera bij dit soort procesprobleem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De technici van Manifera, waaronder het team in Ho Chi Minhstad, bouwen beoordelingscadansen die specifiek zijn afgestemd op door AI gegenereerde output als onderdeel van productiegereedheidstrajecten, voortbouwend op 160+ opgeleverde projecten aan procesexpertise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan één oprichter realistisch alle door AI gegenereerde code alleen beoordelen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor wijzigingen met een laag risico vaak wel — maar voor authenticatie, betalingen en gegevenstoegangslogica vangt een tweede technische beoordelaar problemen op die solo-beoordeling bij een hoog volume betrouwbaar mist."
+      }
+    }
   ]
 }
 </script>

@@ -37,6 +37,17 @@ Als u alleen bouwt met een AI-codeertool, ervaart u de app zoals deze bedoeld is
 
 Het team van 120+ engineers van Manifera, werkzaam vanuit Amsterdam en daarbuiten, behandelt deze specifieke kloof — UI-niveau beperking die doorgaat voor echte autorisatie — als een van de eerste dingen die het waard zijn om te controleren in elke door AI gegenereerde codebase. Als u een tweede paar ogen wilt op de vraag of de rollen in uw eigen app daadwerkelijk worden afgedwongen of alleen anders worden weergegeven, loopt onze [processpagina](https://launchstudio.eu/nl/#process) door hoe die beoordeling werkt, en de pagina ["over ons"](https://www.manifera.com/about-us/) van Manifera behandelt de bredere technische achtergrond daarachter.
 
+## De Drie Lagen Waar Autorisatie Moet Leven, en Waar AI-Tools Meestal Stoppen
+
+Het fundamentele beveiligingsprobleem van door AI gegenereerde software is dat autorisatie vrijwel altijd op de verkeerde plek wordt geïmplementeerd. Een volwassen architectuur dwingt toegangscontrole af op drie opeenvolgende lagen:
+
+**Laag 1: De Presentatielaag (De Frontend UI).** Knoppen verbergen, menu-opties uitschakelen of gebruikers omleiden als ze geen beheerder zijn. Dit is waar 99% van de AI-prompts stopt. Het is belangrijk voor een prettige gebruikerservaring, maar biedt *nul komma nul* daadwerkelijke beveiliging. Iedereen met minimale technische kennis kan immers rechtstreeks netwerkverzoeken versturen buiten de interface om.
+
+**Laag 2: De Toepassings- en API-Laag (Server Middleware).** Zodra een HTTP-verzoek binnenkomt op de server, controleert middleware of de sessie geldig is en of de gebruiker de vereiste rol bezit om dit specifieke endpoint aan te roepen. Dit filtert onbevoegde verzoeken af voordat ze de database bereiken.
+
+**Laag 3: De Databaselaag (Row-Level Security & Database Constraints).** Dit is de ultieme verdedigingslinie. Zelfs als een programmeur in Laag 2 per ongeluk een filter vergeet in een query, weigert de database zélf de data uit te leveren tenzij de actieve sessie expliciet eigenaar is van het record.
+
+AI-codeertools implementeren standaard uitsluitend Laag 1. Pas wanneer u Laag 2 en Laag 3 formeel laat inrichten door ervaren engineers, is uw applicatie daadwerkelijk beveiligd tegen datalekken.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: het portaal waar elk lid iedereen kon bewerken
@@ -83,11 +94,46 @@ Nee. In de meeste gevallen, inclusief dat van Mees, betekent het het toevoegen v
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is user AI personalization the same as a permission system?", "acceptedAnswer": { "@type": "Answer", "text": "No. Personalization decides what gets displayed to a given role. A permission system decides what a given account is actually allowed to read or change, and that check has to happen on the server, not just in the interface." } },
-    { "@type": "Question", "name": "How would I know if my app has this gap?", "acceptedAnswer": { "@type": "Answer", "text": "Try to deliberately break your own rules by attempting to view or edit another account's data through a direct request rather than the normal interface. If it works, the enforcement only exists in the UI." } },
-    { "@type": "Question", "name": "Why do AI coding tools get this wrong so often?", "acceptedAnswer": { "@type": "Answer", "text": "Interface-level role display is visible and demoable, so it gets built carefully. Server-side authorization is invisible during normal use, so it's easy for a generated codebase to assume it rather than actually implement it." } },
-    { "@type": "Question", "name": "What does Manifera's team specifically check for in a review like this?", "acceptedAnswer": { "@type": "Answer", "text": "Whether every data-touching request verifies ownership against the authenticated account at the server and database layer, not just whether the interface hides certain buttons from certain roles." } },
-    { "@type": "Question", "name": "Does fixing this require rebuilding the whole app?", "acceptedAnswer": { "@type": "Answer", "text": "No. In most cases it means adding server-side ownership checks to the specific endpoints handling sensitive data, without touching the frontend the founder already built." } }
+    {
+      "@type": "Question",
+      "name": "Is \"user AI\"-personalisatie hetzelfde als een rechtensysteem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Personalisatie bepaalt wat aan een bepaalde rol wordt getoond. Een rechtensysteem bepaalt wat een bepaald account daadwerkelijk mag lezen of wijzigen, en die controle moet plaatsvinden op de server, niet alleen in de interface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik weten of mijn app deze kloof heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Probeer doelbewust uw eigen regels te breken — probeer de gegevens van een ander account te bekijken of te bewerken door een verzoek rechtstreeks aan te passen in plaats van door de normale interface te klikken. Als dit lukt, bestaat de handhaving alleen in de UI."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom gaan AI-codeertools hier zo vaak de fout in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rolweergave op interfaceniveau is zichtbaar en demonstreerbaar, dus wordt het zorgvuldig gebouwd. Autorisatie aan de serverzijde is onzichtbaar tijdens normaal gebruik, dus is het makkelijk voor een gegenereerde codebase om dit te veronderstellen in plaats van daadwerkelijk te implementeren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar controleert het team van Manifera specifiek op bij een dergelijke beoordeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Of elk verzoek dat gegevens raakt het eigendom verifieert tegen het geauthenticeerde account op server- en databaseniveau, niet alleen of de interface bepaalde knoppen verbergt voor bepaalde rollen — een patroon dat de technici van Manifera herhaaldelijk zien in door AI gegenereerde apps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vereist het oplossen hiervan het herbouwen van de hele app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. In de meeste gevallen, inclusief dat van Mees, betekent het het toevoegen van autorisatiecontroles aan de serverzijde voor de specifieke eindpunten die gevoelige gegevens verwerken, zonder de frontend aan te raken die de oprichter al had gebouwd."
+      }
+    }
   ]
 }
 </script>

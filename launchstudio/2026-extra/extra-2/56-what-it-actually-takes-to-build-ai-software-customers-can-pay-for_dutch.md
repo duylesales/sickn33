@@ -35,7 +35,8 @@ Om AI-software te bouwen die klanten oprecht genoeg vertrouwen om voor te betale
 
 ## Waarom opslag aan de client-zijde voelt als een handige, neutrale keuze
 
-Het opslaan van gegevens zoals een betalingstoken-referentie, het opgeslagen adres van een gebruiker, of sessiedetails in de `localStorage` van de browser is een snelle manier om die gegevens gerede te maken voor de interface zonder een extra serververzoek. Het is ook het patroon dat de meeste tutorials en codevoorbeelden standaard demonstreren. Een AI-coderingsassistent die getraind is op diezelfde voorbeeldcode erft datzelfde standaardgedrag.
+Het bewaren van gegevens zoals een betaaltoken-referentie, het opgeslagen bezorgadres van een klant of sessiedetails in de `localStorage` van de browser is een razendsnelle en laagdrempelige manier om die data direct beschikbaar te maken voor de gebruikersinterface zonder bij elke interactie een extra netwerkverzoek naar de server te hoeven sturen. Het is een buitengewoon handig patroon waar AI-codeertools instinctief naar grijpen, simpelweg omdat het direct werkt en de frontend-code overzichtelijk houdt. Het is bovendien het patroon dat het leeuwendeel van online tutorials en code-voorbeelden standaard laat zien: een ontwikkelaar die uitlegt hoe je data overal in een React-app beschikbaar maakt, heeft immers geen enkele reden om enterprise-beveiligingsprotocollen te modelleren. Een AI-tool die getraind is op die publieke code erft diezelfde standaardvoorkeur automatisch over.
+
 
 ## Waarom Local Storage specifiek een ongerelateerde kwetsbaarheid uitvergroot
 
@@ -57,6 +58,28 @@ Manifera's beveiligingsbeoordelingen voor gegevensopslag in de frontend worden u
 
 [Klaar om te lanceren? Weken, geen maanden, van prototype tot productie](https://launchstudio.eu/nl/#contact).
 
+## Wat Thuishoort in Local Storage, en Wat Beslist Niet
+
+Niet alles hoeft rigoureus uit `localStorage` te worden verbannen — het behandelen als universeel verboden is net zo onpraktisch als het behandelen als universeel veilig. De nuttige vraag is in welke specifieke categorie een bepaald gegeven valt.
+
+**Over het algemeen prima geschikt voor Local Storage:**
+
+- Voorkeuren voor de gebruikersinterface — donkere modus (dark mode), status van een ingeklapte menubalk, taalvoorkeur of het laatst geopende tabblad.
+- Niet-gevoelige concepten van formulierinvoer die het gebruikersgemak vergroten — tijdelijk opgeslagen tekst van een review waaraan wordt gewerkt, zodat deze niet verloren gaat bij een browser-crash.
+- Data die elders al openbaar beschikbaar is, waarbij lokale opslag louter dient als prestatie-optimalisatie om laadtijden te versnellen.
+
+**Absoluut ongeschikt voor Local Storage (moet naar beveiligde cookies of de backend):**
+
+- Authenticatietokens, sessiesleutels en JWT's — alles wat, indien uitgelezen door een kwaadaardig script, dat script in staat stelt te handelen namens de ingelogde gebruiker.
+- Opgeslagen bezorgadressen, telefoonnummers of persoonlijke contactgegevens van klanten.
+- Iedere verwijzing naar betaalmethoden, transactietokens of creditcardgegevens.
+- Gegevens waarvan de openbaarmaking de ene klant in staat zou stellen de gegevens van een andere klant in te zien of te wijzigen.
+
+**De test die elk twijfelgeval direct beslecht:**
+
+Stel uzelf bij elk gegeven in `localStorage` de directe vraag: "Als een toekomstige, nog onbekende scriptkwetsbaarheid een aanvaller in staat stelt om vandaag alles in `localStorage` uit te lezen, wat is dan het allerslechtste dat ermee kan gebeuren?" Bij een donkere modus-voorkeur is dat 'iemand ontdekt dat u van donkere thema's houdt' — volstrekt onschadelijk. Bij een sessietoken of opgeslagen adres ziet het antwoord er heel anders uit. Dat verschil bepaalt exact waar de data hoort te leven. Een proactieve migratie van gevoelige data naar afgeschermde server-side sessies voorkomt dat latere scriptlekken ooit kunnen escaleren tot een volwaardig datalek, wat de continuïteit van uw platform direct veiligstelt.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De opslagkeuze die een kleine fout groter maakte
@@ -76,25 +99,25 @@ Een ongerelateerde, relatief kleine scripting-kwetsbaarheid ontdekt in een nieuw
 
 ## Veelgestelde vragen
 
-### Zou een frontend-beveiligingsspecialist Local Storage beschouwen als inherent onveilig?
+### Waarom is het opslaan van authenticatietokens in `localStorage` zo riskant?
 
-Veilig voor oprecht niet-gevoelige gegevens (zoals interface-voorkeuren), maar ongeschikt voor gevoelige gegevens vanwege de directe toegankelijkheid voor elk script op de pagina.
+Omdat `localStorage` geen enkel beveiligingsmechanisme heeft om toegang te beperken: elk script dat op het domein wordt uitgevoerd (inclusief externe scripts voor advertenties, chatwidgets of analytics) heeft volledige lees- en schrijftoegang. Als uw applicatie ooit een XSS-kwetsbaarheid bevat, kan een aanvaller alle opgeslagen tokens direct stelen.
 
-### Geldt dit risico alleen als er daadwerkelijk al een scripting-kwetsbaarheid bestaat?
+### Wat is het veilige alternatief voor het bewaren van inlogsessies in de browser?
 
-In praktische termen ja, het risico wordt gerealiseerd in combinatie met een scripting-fout. Maar aangezien er continu functies worden toegevoegd, is het beperken van blootstelling een redelijke voorzorgsmaatregel.
+Het opslaan van sessietokens in `HttpOnly`, `Secure` cookies. Deze cookies worden door de browser automatisch meegestuurd bij netwerkverzoeken naar uw API, maar zijn volledig onzichtbaar en ontoegankelijk voor JavaScript-code op de pagina.
 
-### Maakt brede ervaring met frontend-architectuur uit voor het opvangen van dit cumulatieve risico?
+### Is `localStorage` dan helemaal nergens goed voor?
 
-Ja, aangezien het herkennen van dit specifieke cumulatieve risico vereist dat men het patroon in meerdere contexten heeft zien spelen.
+Zeker wel — voor gegevens die volstrekt niet gevoelig zijn en waarvan openbaarmaking geen enkel risico oplevert, zoals de voorkeur voor een donkere modus, de taalinstelling van de website of de status van een ingeklapte menubalk.
 
-### Weerspiegelt deze casus de visie op risico's die alleen in combinatie verschijnen?
+### Manifera ontwerpt frontend-architecturen voor complexe SaaS-producten — hoe pakt het team sessieopslag aan?
 
-Rechtstreeks – op zichzelf veroorzaakte de opslagkeuze geen zichtbaar probleem. Pas in combinatie met een afzonderlijke fout werd de echte consequentie duidelijk.
+Manifera hanteert een 'defense-in-depth' benadering waarbij sessietokens uitsluitend via beveiligde cookies worden uitgewisseld, gecombineerd met Content Security Policies (CSP) die voorkomen dat kwaadaardige scripts überhaupt op de pagina kunnen worden geladen.
 
-### Is het migreren weg van Local Storage voor gevoelige gegevens verstorend voor een al live product?
+### Is de overstap van `localStorage` naar veilige cookies ingewikkeld voor een live applicatie?
 
-Het kan zorgvuldig worden geïmplementeerd om verstoring te voorkomen, typisch door geleidelijk te migreren en te zorgen dat bestaande sessies correct blijven functioneren.
+Nee, de backend moet worden aangepast om het token via een Set-Cookie header terug te sturen in plaats van in de JSON-body van de login-respons, en de frontend-aanroepen moeten worden geconfigureerd om credentials mee te sturen (`credentials: 'include'`). Dit kan worden doorgevoerd zonder downtime.
 
 <script type="application/ld+json">
 {
@@ -103,42 +126,42 @@ Het kan zorgvuldig worden geïmplementeerd om verstoring te voorkomen, typisch d
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Lưu trữ dữ liệu nhạy cảm ở LocalStorage (Trình duyệt) nguy hiểm thế nào?",
+      "name": "Waarom is het opslaan van authenticatietokens in `localStorage` zo riskant?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rất nguy hiểm — LocalStorage có thể bị đọc trực tiếp bởi bất kỳ đoạn script nào chạy trên trang (nếu dính lỗi XSS), làm lộ Token đăng nhập, địa chỉ và thông tin cá nhân."
+        "text": "Omdat `localStorage` geen enkel beveiligingsmechanisme heeft om toegang te beperken: elk script dat op het domein wordt uitgevoerd (inclusief externe scripts voor advertenties, chatwidgets of analytics) heeft volledige lees- en schrijftoegang. Als uw applicatie ooit een XSS-kwetsbaarheid bevat, kan een aanvaller alle opgeslagen tokens direct stelen."
       }
     },
     {
       "@type": "Question",
-      "name": "Dữ liệu nào ĐƯỢC PHÉP lưu ở LocalStorage và dữ liệu nào KHÔNG NÊN?",
+      "name": "Wat is het veilige alternatief voor het bewaren van inlogsessies in de browser?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ĐƯỢC PHÉP: Cấu hình Dark/Light Mode, ngôn ngữ hiển thị. KHÔNG NÊN: Token xác thực (JWT), Session ID, thông tin thẻ/thanh toán, địa chỉ/Email người dùng."
+        "text": "Het opslaan van sessietokens in `HttpOnly`, `Secure` cookies. Deze cookies worden door de browser automatisch meegestuurd bij netwerkverzoeken naar uw API, maar zijn volledig onzichtbaar en ontoegankelijk voor JavaScript-code op de pagina."
       }
     },
     {
       "@type": "Question",
-      "name": "Giải pháp thay thế an toàn cho LocalStorage để lưu Token là gì?",
+      "name": "Is `localStorage` dan helemaal nergens goed voor?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chuyển sang lưu trữ trong Cookie được bật cờ HttpOnly, Secure và SameSite=Strict (Server-managed Cookie)."
+        "text": "Zeker wel — voor gegevens die volstrekt niet gevoelig zijn en waarvan openbaarmaking geen enkel risico oplevert, zoals de voorkeur voor een donkere modus, de taalinstelling van de website of de status van een ingeklapte menubalk."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao AI tool lại luôn sinh code lưu Token vào LocalStorage mặc định?",
+      "name": "Manifera ontwerpt frontend-architecturen voor complexe SaaS-producten — hoe pakt het team sessieopslag aan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì code lưu/đọc Token ở LocalStorage cực kỳ đơn giản và phổ biến trên các bài hướng dẫn (Tutorials) công khai mà AI học được."
+        "text": "Manifera hanteert een 'defense-in-depth' benadering waarbij sessietokens uitsluitend via beveiligde cookies worden uitgewisseld, gecombineerd met Content Security Policies (CSP) die voorkomen dat kwaadaardige scripts überhaupt op de pagina kunnen worden geladen."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian di chuyển dữ liệu từ LocalStorage sang HttpOnly Cookie cho App live mất bao lâu?",
+      "name": "Is de overstap van `localStorage` naar veilige cookies ingewikkeld voor een live applicatie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường hoàn thành trong 5-7 ngày làm việc mà không làm gián đoạn các phiên đăng nhập hiện tại của người dùng."
+        "text": "Nee, de backend moet worden aangepast om het token via een Set-Cookie header terug te sturen in plaats van in de JSON-body van de login-respons, en de frontend-aanroepen moeten worden geconfigureerd om credentials mee te sturen (`credentials: 'include'`). Dit kan worden doorgevoerd zonder downtime."
       }
     }
   ]

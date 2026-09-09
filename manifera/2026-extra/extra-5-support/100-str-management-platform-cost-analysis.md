@@ -86,6 +86,10 @@ Diakopes Thessaloniki proceeded with a realistically scoped platform build meeti
 
 Before committing to a short-term rental management platform budget, insist on a cost estimate modeled against your realistic multi-channel, multi-city portfolio scale, not small-scale internal testing conditions. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic short-term rental platform cost scoping exercise.
 
+## Where This Goes Wrong: iCal Polling Latency vs. Real-Time API Sync
+
+The specific technical gap that produces most double-bookings in a production STR portfolio: not every channel offers a real-time push API for availability updates, and several major channels and homeowner calendars still rely on iCal feed exports that get polled on a fixed interval — typically every 15 minutes to several hours, depending on the channel's own publishing schedule, not the platform's request frequency. A booking confirmed on a channel with a 4-hour iCal refresh cycle leaves a real double-booking window open on every other channel until the next poll, regardless of how well the platform's own real-time locking logic works internally. Budgeting for this correctly means treating channel connections in two distinct tiers: API-connected channels get atomic real-time locking, while iCal-only sources need a separate mitigation layer — shortened polling intervals, a booking-buffer rule blocking adjacent-date bookings near an iCal-sourced reservation, and guest-facing messaging disclosing the platform's actual sync latency for that specific channel. Portfolios operating above roughly 30% of listings on iCal-only channels should budget dedicated engineering for this mitigation layer specifically, since it's the single most common source of guest-facing double-booking incidents in production STR platforms, not the atomic-locking logic itself.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial short-term rental platform estimate) Why do short-term rental platform cost estimates often come in significantly under actual cost?
@@ -108,6 +112,22 @@ Registration, night-cap, and tax rules genuinely vary by city and are increasing
 
 Calendar synchronization across channels and cities must remain reliable without a single point of failure, requiring genuinely robust multi-city infrastructure.
 
+### (Scenario: CTO scoping security deposit handling) How should the platform handle security deposit holds and disputed damage claims?
+
+The platform needs a distinct escrow-state machine per booking tracking hold placement, release timing, and partial-claim adjustments, since a naive implementation that treats a deposit as a simple additional charge can't correctly handle a partial claim disputed by the guest weeks after checkout while other bookings against the same listing continue processing.
+
+### (Scenario: compliance lead scoping tax remittance) Should local tax remittance to cities be automated end-to-end or routed through manual review?
+
+Automate calculation and collection at booking time, but route actual remittance through a reviewable queue for at least the first several cycles per new city, since city-specific remittance portals and filing formats vary enough that fully automated submission without a verification step risks a filing error across an entire portfolio's bookings for that city.
+
+### (Scenario: product lead scoping guest identity verification) Why does guest ID verification need dedicated engineering beyond a simple checkbox?
+
+Cities with active short-term rental enforcement increasingly require the platform to retain verifiable guest identity records for a defined retention period and produce them on regulatory request, which means ID verification needs structured storage and retrieval infrastructure, not just a one-time verification API call discarded after booking confirmation.
+
+### (Scenario: CTO scoping host payout timing) Why does host payout timing need to be decoupled from each channel's own settlement schedule?
+
+Channels settle to the platform on their own cadence, sometimes 24-48 hours after checkout, and a platform promising hosts a fixed payout schedule needs its own ledger-based accrual system that pays hosts on the platform's schedule while separately reconciling against each channel's actual settlement timing, rather than passing channel settlement delay directly through to hosts.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +137,11 @@ Calendar synchronization across channels and cities must remain reliable without
     { "@type": "Question", "name": "(Scenario: engineering lead scoping channel-sync) Why is channel-sync harder to scale correctly than it appears in small-scale testing?", "acceptedAnswer": { "@type": "Answer", "text": "Real-time locking across multiple channels prevents double-booking at real scale, different from a single-channel test." } },
     { "@type": "Question", "name": "(Scenario: revenue lead scoping dynamic pricing) Why does dynamic-pricing integration require more than a simple static field?", "acceptedAnswer": { "@type": "Answer", "text": "Variable local demand signals across a diverse portfolio require sophisticated, bounded pricing logic." } },
     { "@type": "Question", "name": "(Scenario: CTO planning multi-city compliance) Why does compliance reporting deserve substantial, ongoing engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Registration, night-cap, and tax rules vary by city and are actively enforced, requiring per-city configurability." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for multi-city expansion) Why does serving multiple cities add real backend infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Calendar synchronization across channels and cities must remain reliable, requiring genuinely robust multi-city infrastructure." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for multi-city expansion) Why does serving multiple cities add real backend infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Calendar synchronization across channels and cities must remain reliable, requiring genuinely robust multi-city infrastructure." } },
+    { "@type": "Question", "name": "(Scenario: CTO scoping security deposit handling) How should the platform handle security deposit holds and disputed damage claims?", "acceptedAnswer": { "@type": "Answer", "text": "A distinct escrow-state machine per booking tracks hold placement, release timing, and partial-claim adjustments, since deposits can't be treated as a simple additional charge." } },
+    { "@type": "Question", "name": "(Scenario: compliance lead scoping tax remittance) Should local tax remittance to cities be automated end-to-end or routed through manual review?", "acceptedAnswer": { "@type": "Answer", "text": "Automate calculation and collection, but route remittance through reviewable queues for early cycles per city, since portal and filing formats vary enough to risk portfolio-wide filing errors." } },
+    { "@type": "Question", "name": "(Scenario: product lead scoping guest identity verification) Why does guest ID verification need dedicated engineering beyond a simple checkbox?", "acceptedAnswer": { "@type": "Answer", "text": "Cities with active enforcement require retaining verifiable guest identity records for a defined period and producing them on regulatory request, needing structured storage, not a discarded one-time API call." } },
+    { "@type": "Question", "name": "(Scenario: CTO scoping host payout timing) Why does host payout timing need to be decoupled from each channel's own settlement schedule?", "acceptedAnswer": { "@type": "Answer", "text": "Channels settle on their own cadence, so the platform needs a ledger-based accrual system paying hosts on a fixed schedule while separately reconciling against actual channel settlement timing." } }
   ]
 }
 </script>

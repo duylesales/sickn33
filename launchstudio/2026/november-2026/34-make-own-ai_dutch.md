@@ -73,6 +73,18 @@ Het bouwen van een professionele RAG-pijplijn vereist specialistische data-engin
 3. **Multi-Tenant Isolatie:** Row Level Security (RLS) die wiskundig uitsluit dat klantdata tussen organisaties lekt.
 4. **Hybride Zoeken & Reranking:** Combinatie van vector-overeenkomsten met trefwoordherkenning (BM25) en Cross-Encoder rerankers voor maximale accuratesse.
 
+### Van DIY-Prototype naar Commercieel Schaalbaar Platform
+
+Zelf een AI-applicatie in elkaar zetten is geweldig voor conceptvalidatie, maar productie vereist een professionele fundering:
+1. **Transactieveiligheid bij Betalingen:** We implementeren betrouwbare webhook-verwerking met automatische herpogingen en idempotentiesleutels voor naadloze facturatie via Stripe of Mollie.
+2. **Connection Pooling voor Databases:** We bundelen databaseverbindingen met PgBouncer, zodat uw applicatie honderden gelijktijdige gebruikers soepel aankan zonder connectielimieten te overschrijden.
+3. **Duidelijke API-Versiebeheer:** We structureren endpoints volgens open standaarden, wat toekomstige uitbreidingen en mobiele app-koppelingen aanzienlijk vereenvoudigt.
+
+### Van Idee naar Duurzaam Softwarebedrijf
+
+Zorg voor een vliegende start met een professionele enterprise-infrastructuur:
+1. **Volledige Eigendomsrechten:** Uw code, uw servers en uw data — 100% vrij van vendor lock-in.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De Juridische Oprichter Die €40.000 Verbrandde Aan GPU's

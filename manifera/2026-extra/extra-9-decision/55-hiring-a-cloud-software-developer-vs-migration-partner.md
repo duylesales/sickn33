@@ -62,6 +62,12 @@ If your instinct going into this comparison was "I just need one good cloud deve
 
 Get a custom team proposal within 48 hours, scoped specifically to whether your project needs one developer or a structured migration team — an honest scoping conversation costs you nothing and prevents the far more expensive mistake of discovering the wrong choice three months into the project.
 
+## A Scoping Worksheet: Turning the Decision Into a Number
+
+Rather than deciding on instinct, score your project across five factors, 0-2 points each, for a possible 10: number of interconnected systems involved (0 = one, 1 = two-three, 2 = four or more); compliance exposure (0 = none, 1 = general data handling, 2 = GDPR residency or industry-specific regulation); expected project duration (0 = under 4 weeks, 1 = 4-12 weeks, 2 = over 12 weeks); tolerance for a stalled project if your one hire is unavailable for two weeks (0 = high tolerance, 2 = low tolerance); and internal technical oversight capacity to catch a solo hire's blind spots (0 = strong in-house cloud expertise already, 2 = none).
+
+A score of 0-3 points toward a single developer hire. A score of 4-6 is a genuine toss-up that should be resolved by which specific factor scored highest — compliance exposure alone at a 2 is usually enough to tip a toss-up toward a partner, given the asymmetric downside of a compliance mistake versus the cost savings of a solo hire. A score of 7-10 is a clear signal you need the structured partner model regardless of how the budget conversation feels in the room. Run this scoring exercise before requesting proposals, not after, since it changes what you should even be asking vendors to bid on.
+
 ## Frequently Asked Questions
 
 ### When is hiring a single cloud software developer enough for a project?
@@ -78,6 +84,22 @@ Yes, a dedicated team model built around scalable engagement can typically adjus
 
 ### What are the biggest risks of choosing a solo developer for a project that actually needs a full migration team?
 The primary risks are continuity (the project stalling if the developer becomes unavailable), underestimated discovery work leading to scope creep, and gaps in compliance-related architecture decisions that a generalist may not have specific experience navigating. These risks tend to surface a few months into the project rather than immediately, which is why the initial cost comparison alone can be misleading.
+
+### (Scenario: A CEO scored a project at 5 points on the scoping worksheet, a genuine toss-up between the two options) How do I break a tie when the scoping worksheet score lands in the toss-up range?
+
+Look at which specific factor drove the score rather than treating the total as the final word. A tie driven primarily by compliance exposure should tip toward a partner given the asymmetric downside of a compliance mistake, while a tie driven by project duration alone, with low compliance risk, can often still go to a strong solo hire with a defined check-in cadence.
+
+### (Scenario: A startup already has one in-house engineer with cloud experience considering handling a migration with contractor help) Does having some internal cloud expertise change the calculus between hiring a solo developer and a full partner?
+
+Yes, it reduces the oversight-capacity factor in the scoring worksheet, since an internal team member can catch blind spots a solo external hire might miss. But it doesn't offset a high compliance or multi-system score on its own — internal oversight capacity is one of five factors, not a substitute for the others.
+
+### (Scenario: A CEO is deciding whether to run the migration in-house with existing staff instead of hiring externally at all) Should I consider having existing in-house developers handle a cloud migration instead of hiring externally at all?
+
+Only if they have specific migration experience and can be freed from their current workload for the project's full duration — a migration run by developers splitting attention with unrelated feature work tends to accumulate the same discovery-phase underestimation risk as a solo external hire, without even the benefit of specialized migration experience.
+
+### (Scenario: A CEO's project scored high on the worksheet but the migration partner's proposal comes in well above the solo-developer budget originally planned) What if the scoping worksheet says I need a partner but the budget was set for a solo developer's rate?
+
+Revisit the budget rather than the scope — a project that genuinely needs a partner's structure will cost more in unplanned rework and continuity risk if forced into a solo-hire budget, often exceeding the original partner quote once the compounding discovery-phase overruns are counted.
 
 <script type="application/ld+json">
 {
@@ -130,6 +152,26 @@ The primary risks are continuity (the project stalling if the developer becomes 
       "@type": "Question",
       "name": "What are the biggest risks of choosing a solo developer for a project that actually needs a full migration team?",
       "acceptedAnswer": {"@type": "Answer", "text": "The primary risks are continuity if the project stalls when the developer becomes unavailable, underestimated discovery work leading to scope creep, and gaps in compliance-related architecture decisions that a generalist may not have specific experience navigating. These risks tend to surface a few months into the project rather than immediately, which is why the initial cost comparison alone can be misleading."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do I break a tie when the scoping worksheet score lands in the toss-up range?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Look at which specific factor drove the score rather than treating the total as final. A tie driven primarily by compliance exposure should tip toward a partner given the asymmetric downside of a compliance mistake, while a tie driven by duration alone can often go to a strong solo hire."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does having some internal cloud expertise change the calculus between hiring a solo developer and a full partner?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes, it reduces the oversight-capacity factor since an internal team member can catch blind spots. But it doesn't offset a high compliance or multi-system score on its own, since internal oversight is one of five factors, not a substitute for the others."}
+    },
+    {
+      "@type": "Question",
+      "name": "Should I consider having existing in-house developers handle a cloud migration instead of hiring externally at all?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Only if they have specific migration experience and can be freed from their current workload for the project's full duration. Developers splitting attention with unrelated feature work tend to accumulate the same discovery-phase underestimation risk as a solo external hire."}
+    },
+    {
+      "@type": "Question",
+      "name": "What if the scoping worksheet says I need a partner but the budget was set for a solo developer's rate?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Revisit the budget rather than the scope. A project that genuinely needs a partner's structure will cost more in unplanned rework and continuity risk if forced into a solo-hire budget, often exceeding the original partner quote once overruns are counted."}
     }
   ]
 }

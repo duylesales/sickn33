@@ -106,7 +106,7 @@ Vergelijk dat met € 800 tot € 7.500 voor professionele productie-engineering
 
 [Boek een gratis architectuurbeoordeling van 15 minuten](https://launchstudio.eu/nl/#contact) en ontvang een concreet specificatiedocument voor uw AI-geassisteerde project.
 
-## Belangrijkste inzichten
+### Belangrijkste inzichten
 
 - **AI versnelt de frontend, niet de beveiliging**: Codegeneratietools zoals Cursor en Lovable bouwen prachtige interfaces, maar missen server-side validatie, rate limiting en veilige database-architectuur.
 - **Voorkom de hergeschreven-code valkuil**: Reguliere freelancers willen AI-code vaak volledig opnieuw schrijven. LaunchStudio behoudt uw AI-frontend en verstevigt uitsluitend de backend-infrastructuur.
@@ -130,4 +130,75 @@ Hij nam contact op met LaunchStudio na het lezen van een casestudy op de LaunchS
 > — **Marco Visconti, Oprichter, ProposalForge (Amsterdam)**
 
 **Kosten & Doorlooptijd:** € 5.500 (Launch & Grow Pakket) — productieklaar en uitgerold in 14 werkdagen.
+---
 
+## Veelgestelde vragen
+
+### Is het de moeite waard om in LaunchStudio te investeren als ik zelf kan programmeren en alleen backend-ondersteuning nodig heb?
+
+Ja. Zelfs ervaren ontwikkelaars profiteren van gespecialiseerde productie-engineering. Het vanaf nul bouwen van authenticatie, betalingsverwerking en deployment-infrastructuur kost weken en brengt beveiligingsrisico's met zich mee. Het engineeringteam van LaunchStudio heeft honderden applicaties gehard, waardoor uw infrastructuur vanaf dag één beproefde standaarden volgt.
+
+### Welke specifieke beveiligingslekken introduceren AI-assistentietools doorgaans in de code?
+
+De meest voorkomende kwetsbaarheden zijn: blootgestelde API-sleutels in client-side code, ontbrekende Row Level Security (RLS) op databasetabellen, invoervalidatie die alleen in de frontend draait, onbeveiligde API-endpoints zonder authenticatie-middleware en hardcoded geheimen in configuratiebestanden. De beveiligingsaudit van Manifera vangt al deze risico's af tijdens de intake.
+
+### Moet ik mijn databaseschema ontwerpen vóór of nádat ik AI-assistentietools gebruik?
+
+Erna. Laat de AI-tool een initieel schema genereren op basis van uw applicatielogica, en laat dit vervolgens beoordelen en optimaliseren door een professionele engineer. Deze aanpak combineert de snelheid van AI voor de initiële structuur met de zekerheid van juiste indexering, relaties en beveiligingsbeperkingen. LaunchStudio neemt schemabeoordeling standaard op in elk project.
+
+### Hoe verhoudt LaunchStudio zich tot het inhuren van een deeltijd of freelance CTO?
+
+Een interim of deeltijd CTO biedt strategische begeleiding, maar schrijft doorgaans geen productiecode. LaunchStudio levert kant-en-klare productie-infrastructuur via hands-on engineering. De twee kunnen complementair zijn: een deeltijd CTO helpt bij architectuurbeslissingen, terwijl LaunchStudio deze uitvoert. Voor vroege oprichters is LaunchStudio alleen doorgaans al ruimschoots voldoende.
+
+### Zullen de aanpassingen van LaunchStudio mijn codebase moeilijker begrijpelijk maken voor AI-tools?
+
+Nee, integendeel. LaunchStudio schrijft specifiek door AI leesbare code: schone ontwerppatronen, consistente naamgeving en grondige documentatie. Het engineeringteam van Manifera ontwerpt elke aanpassing zodanig dat deze volledig compatibel blijft met Lovable, Cursor en Bolt, zodat u na de lancering zonder wrijving AI-tools kunt blijven gebruiken.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is het de moeite waard om in LaunchStudio te investeren als ik zelf kan programmeren en alleen backend-ondersteuning nodig heb?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Zelfs ervaren programmeurs besparen weken aan tijd en voorkomen beveiligingsrisico's door authenticatie, betalingen en deployment over te laten aan gespecialiseerde engineers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke specifieke beveiligingslekken introduceren AI-assistentietools doorgaans in de code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Veelvoorkomende lekken zijn: API-sleutels in de client, ontbrekende Row Level Security (RLS), ontbrekende endpoint-beveiliging en hardcoded secrets in configuraties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik mijn databaseschema ontwerpen vóór of nádat ik AI-assistentietools gebruik?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Erna. Laat de AI een initieel schema genereren op basis van uw logica en laat een engineer de indexering, foreign keys en beveiliging optimaliseren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verhoudt LaunchStudio zich tot het inhuren van een deeltijd of freelance CTO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een interim CTO geeft advies maar bouwt zelden zelf. LaunchStudio levert hands-on productie-infrastructuur tegen een vaste prijs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zullen de aanpassingen van LaunchStudio mijn codebase moeilijker begrijpelijk maken voor AI-tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Wij schrijven specifiek AI-leesbare, schone code met consistente naamgeving en documentatie zodat u tools als Cursor en Lovable kunt blijven gebruiken."
+      }
+    }
+  ]
+}
+</script>

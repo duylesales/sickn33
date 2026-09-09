@@ -57,8 +57,7 @@ Een oprichter die een vaste-prijs engineeringofferte beoordeelt, zou "wat gebeur
 
 [Vraag ons direct hoe wij scopewijzigingen afhandelen voordat u zich ergens toe verbindt](https://launchstudio.eu/nl/#contact) — de meeste oprichters vinden dat het antwoord het is wat werkelijk hun vertrouwen wint.
 
-## Real example
-
+## Echt voorbeeld
 ### Een SaaS-Oprichter in de Praktijk: De Scopewijziging Die Werd Uitgelegd, Niet Opgedrongen
 
 Boudewijn Reitsma, een voormalig magazijnoperations-manager en nu oprichter in Tilburg, bouwde PayTrail, een SaaS voor onkostenregistratie en declaratieverwerking voor kleine logistieke bedrijven, met Bolt. Boudewijns aanvankelijke offerte van LaunchStudio dekte een afgebakende set problemen die tijdens de scoping werden gevonden: hardcoded API-credentials en ontbrekende webhook-verificatie op PayTrails betalingsintegratie.

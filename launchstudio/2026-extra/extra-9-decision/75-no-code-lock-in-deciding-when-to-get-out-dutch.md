@@ -67,7 +67,7 @@ Weeg drie elementen gezamenlijk af in plaats van impulsief te reageren op één 
 
 [Laat ons uw no-code applicatie zien en wij vertellen u gratis hoe sterk uw vendor lock-in daadwerkelijk is](https://launchstudio.eu/nl/#contact) — de meeste oprichters ontdekken dat de situatie minder alarmerend is dan gevreesd, of juist exact zo urgent als ze al vermoedden.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De Overstap van een Onderwijsplatform: De Offerte Die de Doorslag Gaf
 

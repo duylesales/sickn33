@@ -39,6 +39,17 @@ Dit is geen technische herbouw — het is huiswerk, gevolgd door een beslissing.
 
 De technici van Manifera, werkend vanuit Ho Chi Minhstad, helpen AI-native oprichters routinematig bij precies dit soort privacybeoordeling op providerniveau als onderdeel van het voorbereiden van een product op echte klantcontrole — niet omdat de oplossing ingewikkeld is, maar omdat oprichters zich zelden bewust zijn van het bestaan van de vraag totdat deze rechtstreeks aan hen wordt gesteld. Als u zich voorbereidt om dit soort vraag zelfverzekerd te beantwoorden, kunt u [ons de link naar uw prototype sturen en wij geven u gratis advies](https://launchstudio.eu/nl/#contact) over wat u eerst moet controleren. De pagina ['over ons'](https://www.manifera.com/about-us/) van Manifera behandelt de bredere compliance- en productiediscipline waar dit soort beoordeling binnen valt.
 
+## De Drie Vormen van "Wat Gebeurt Er Met Mijn Data?" Waar Men Daadwerkelijk naar Vraagt
+
+Wanneer zakelijke klanten of toezichthouders vragen wat er met hun data gebeurt, bedoelen ze vrijwel nooit één algemene vraag. Ze doelen op drie fundamenteel verschillende aspecten van gegevensverwerking. Zo beantwoordt u elk onderdeel feitelijk en helder:
+
+**1. Het Bewaar- en Toegangsaspect (Data-at-Rest & Isolation).** Wie kan er intern bij de data? Wordt klantdata gescheiden bewaard en hebben uw eigen medewerkers alleen toegang via strikt gelogde beheeraccounts met multifactorauthenticatie? Garandeer dat er geen ongecontroleerde bulk-exports naar lokale laptops van medewerkers plaatsvinden.
+
+**2. Het Model-Trainingsaspect (AI Privacy & Retention).** Wordt klantdata gebruikt om de openbare AI-modellen van leveranciers (zoals OpenAI of Anthropic) te trainen? U moet zwart-op-wit kunnen aantonen dat u gebruikmaakt van zakelijke API-overeenkomsten met een expliciet 'Zero Data Retention' beleid, waarbij data na verwerking direct wordt gewist en nooit voor modeltraining wordt benut.
+
+**3. Het Verwijderings- en Eigendomsaspect (Data Deletion & Retention).** Wat gebeurt er als de klant zijn contract opzegt? Beschikt uw applicatie over een geautomatiseerde procedure om alle klantgegevens binnen dertig dagen definitief en onomkeerbaar te wissen uit productiedatabases en historische back-ups?
+
+Door proactief onderscheid te maken tussen deze drie dimensies, laat u zien dat u privacy en databescherming serieus neemt en neemt u direct de grootste zorgen van zakelijke beslissers weg.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de vraag die hij niet kon beantwoorden over zijn eigen product
@@ -85,11 +96,46 @@ Ja — gerenommeerde providers kunnen nog steeds bewaar- of trainingsgebruiksvoo
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Do AI model providers always retain the data sent to them?", "acceptedAnswer": { "@type": "Answer", "text": "It varies significantly by provider and plan — some retain data by default, some offer no-retention tiers, and some use submitted data to improve their models unless you opt out. It has to be checked per provider, not assumed." } },
-    { "@type": "Question", "name": "How do I find out what my AI provider actually does with my data?", "acceptedAnswer": { "@type": "Answer", "text": "Read the specific data retention and usage terms published for the plan you're actually using, not just the provider's general marketing language — the details often differ by tier." } },
-    { "@type": "Question", "name": "What should I do if I find my current plan doesn't meet my customers' expectations?", "acceptedAnswer": { "@type": "Answer", "text": "Look for a plan tier with an explicit no-retention or opt-out option, or consider a different provider if your current one doesn't offer one that matches what your product promises customers." } },
-    { "@type": "Question", "name": "Does Manifera help with this kind of privacy review?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — our team, including engineers based in Ho Chi Minh City, helps founders review their AI provider's terms and align their product's actual data handling with what it implicitly promises customers." } },
-    { "@type": "Question", "name": "Is this really a \"privacy issue\" if the AI provider is a reputable company?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — reputable providers can still have retention or training-use terms that don't match what a founder's own customers were led to expect, and that mismatch is the actual issue, not the provider's trustworthiness." } }
+    {
+      "@type": "Question",
+      "name": "Bewaren AI-modelproviders altijd de gegevens die naar hen worden gestuurd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dit verschilt aanzienlijk per provider en abonnement — sommige bewaren gegevens standaard, sommige bieden no-retention-tiers, en sommige gebruiken ingediende gegevens om hun modellen te verbeteren tenzij u zich afmeldt. Het moet per provider worden gecontroleerd, niet aangenomen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kom ik erachter wat mijn AI-provider daadwerkelijk met mijn gegevens doet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lees de specifieke gegevensbewaar- en gebruiksvoorwaarden die zijn gepubliceerd voor het abonnement dat u daadwerkelijk gebruikt, niet alleen de algemene marketingtaal van de provider — de details verschillen vaak per tier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik doen als ik merk dat mijn huidige abonnement niet aan de verwachtingen van mijn klanten voldoet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zoek naar een abonnementstier met een expliciete no-retention- of opt-outoptie, of overweeg een andere provider als uw huidige provider er geen aanbiedt die past bij wat uw product klanten belooft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Helpt Manifera met dit soort privacybeoordeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — ons team, waaronder technici gevestigd in Ho Chi Minhstad, helpt oprichters de voorwaarden van hun AI-provider te beoordelen en de daadwerkelijke gegevensverwerking van hun product af te stemmen op wat het impliciet aan klanten belooft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit echt een \"privacykwestie\" als de AI-provider een gerenommeerd bedrijf is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — gerenommeerde providers kunnen nog steeds bewaar- of trainingsgebruiksvoorwaarden hebben die niet overeenkomen met wat de eigen klanten van een oprichter werd voorgespiegeld, en die mismatch is het eigenlijke probleem, niet de betrouwbaarheid van de provider."
+      }
+    }
   ]
 }
 </script>

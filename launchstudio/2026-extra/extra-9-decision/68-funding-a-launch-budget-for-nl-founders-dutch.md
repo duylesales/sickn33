@@ -73,7 +73,7 @@ Deze opties sluiten elkaar geenszins uit. Voor een oprichter met een iets groter
 
 [Beschrijf uw project — wij reageren binnen één werkdag](https://launchstudio.eu/nl/#contact) met een realistische vaste prijsindicatie, zodat u exact weet welk bedrag u daadwerkelijk moet financieren.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De subsidieaanvraag die langer duurde dan de oplossing
 

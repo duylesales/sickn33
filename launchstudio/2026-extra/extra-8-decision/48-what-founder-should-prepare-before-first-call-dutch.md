@@ -65,8 +65,7 @@ Het is verleidelijk om het ideale eindresultaat te beschrijven zonder de echte b
 
 [Boek het gesprek en breng mee wat je hebt](https://launchstudio.eu/nl/#contact) — ook een onvolledig voorbereide oprichter krijgt een bruikbare scope; een voorbereide oprichter krijgt meteen een nauwkeurige.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Het Gesprek dat Twee Keer Zo Snel Verliep
 
 Saskia Overduin, voormalig eventplanner en nu oprichter in Oisterwijk, bouwde met Lovable PrepDeck, een AI-tool die draaiboeken en leverancierschecklists genereert voor kleine evenementenbureaus. Voorafgaand aan haar eerste gesprek met LaunchStudio wist Saskia niet goed wat ze kon verwachten, dus besteedde ze de avond ervoor twintig minuten aan het opschrijven van precies wat ze wél wist: PrepDeck draaide op Supabase en Vercel, gebruikte Stripe voor één abonnementsvorm, had 40 actieve betalende gebruikers, en haar echte deadline was een vakbeurs in de trouwbranche, zes weken later, waar ze het aan potentiële resellerpartners wilde demonstreren.

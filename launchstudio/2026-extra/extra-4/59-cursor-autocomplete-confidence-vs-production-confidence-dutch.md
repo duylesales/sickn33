@@ -103,6 +103,10 @@ De beoordeling wordt uitgevoerd door Manifera's engineeringteam, inclusief de gr
 
 Ja, als de testmatrix een eenmalige handmatige controle blijft – elke toekomstige wijziging in de buurt van die machtigingslogica is een verse kans voor een vergelijkbare kloof om er doorheen te glippen. Daarom moet de matrix draaien als een geautomatiseerde test bij elke relevante wijziging.
 
+### Wat kost een autorisatie-audit en rol-matrix testset bij LaunchStudio?
+
+Het auditeren van autorisaties, herstellen van role-combination bugs en bouwen van een geautomatiseerde testmatrix kost gemiddeld €900 en duurt 5 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

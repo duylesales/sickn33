@@ -45,6 +45,17 @@ Een oprichter die oprecht uitstekend is in prompten en redelijk goed in het beoo
 
 De oplossing is niet om even bekwaam te worden in alle drie. Het is om te herkennen in welke van de drie u zwak bent en daar specifiek hulp bij te zoeken, in plaats van aan te nemen dat algemene AI-codeervaardigheid dat afdekt. LaunchStudio brengt Manifera's enterprise-grade engineering — dezelfde standaard achter meer dan 160 opgeleverde projecten — specifiek naar de architectuurlaag waarin technische oprichters het vaakst onderinvesteren. Onze technici, werkend vanuit Ho Chi Minh-stad, stappen routinematig precies in waar de prompt- en diffbeoordelingsvaardigheden van een oprichter sterk zijn, maar het onderliggende datamodel een tweede, ervarener paar ogen nodig heeft. U kunt [met een technicus praten die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) over welke van de drie vaardigheden uw eigen product mogelijk mist. De aanpak van Manifera voor softwarearchitectuur staat beschreven op de pagina [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
+## Een Snelle Zelfevaluatie: Op Welk van de Drie Punten Schiet U Daadwerkelijk Tekort?
+
+Succesvol software bouwen met AI vereist een harmonieuze balans tussen drie pijlers: *Snelheid van Bouwen*, *Diepgang van Begrip* en *Operationele Beheersing*. Bepaal waar uw grootste zwakke plek zit:
+
+**Zwak in Snelheid:** U blijft eindeloos piekeren over architectuur vóórdat u één regel code heeft geschreven en durft geen prototypes te tonen aan klanten. *Oplossing:* Laat de teugels vieren; gebruik AI-tools om binnen 48 uur een klikbaar prototype neer te zetten en toets de marktvraag direct.
+
+**Zwak in Begrip:** U bouwt razendsnel schermen achter elkaar, maar heeft geen flauw idee hoe de data onder de motorkap stroomt of wat er gebeurt als er iets misgaat. *Oplossing:* Investeer tijd in het begrijpen van uw datamodel en de HTTP-cyclus; stop met blind prompts accepteren.
+
+**Zwak in Beheersing:** U begrijpt de app en hij werkt lokaal prima, maar u heeft geen back-ups, geen gescheiden productieomgeving, geen monitoring en geen noodplan. *Oplossing:* Dit is uw grootste risico. Schakel direct een ervaren partner in voor een professionele hardening-ronde vóórdat u live gaat.
+
+Wanneer u uw eigen zwakke plek eerlijk onder ogen ziet, stopt u met het overmatig versterken van wat u al goed kunt en pakt u gericht de blinde vlek aan die uw startup werkelijk bedreigt.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: sterk in twee vaardigheden, zwak in de derde
@@ -91,11 +102,46 @@ Beide — het team beoordeelt en herstructureert bestaande door AI gegenereerde 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Are prompting, diff review, and architecture really that different as skills?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — prompting is about description, diff review is about critical reading, and architecture is about anticipating structural needs. Strength in one doesn't transfer to the others." } },
-    { "@type": "Question", "name": "Which of the three skills matters most for a solo founder?", "acceptedAnswer": { "@type": "Answer", "text": "All three matter, but architecture is most often skipped because weakness there doesn't surface until a supposedly simple change requires restructuring the whole data model." } },
-    { "@type": "Question", "name": "Can I learn data architecture the same way I learned prompting?", "acceptedAnswer": { "@type": "Answer", "text": "It's learnable but develops mainly through experience seeing data models fail to extend, which is why an experienced second opinion is often faster." } },
-    { "@type": "Question", "name": "How would I know if my own product has this gap before it becomes a problem?", "acceptedAnswer": { "@type": "Answer", "text": "Check whether your data model was designed around your first customer's specific setup or built to accommodate variation — the former is a warning sign." } },
-    { "@type": "Question", "name": "Does Manifera's Ho Chi Minh City team only fix architecture, or help build it from scratch too?", "acceptedAnswer": { "@type": "Answer", "text": "Both — the team reviews and restructures existing data models and can also architect new ones from the start for founders who want it right the first time." } }
+    {
+      "@type": "Question",
+      "name": "Zijn prompten, diffbeoordeling en architectuur echt zo verschillend als vaardigheden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — prompten gaat over beschrijving, diffbeoordeling gaat over kritisch lezen van output, en architectuur gaat over het anticiperen op structurele behoeften die de huidige functie niet blootlegt. Sterkte in de ene draagt niet over naar de andere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke van de drie vaardigheden is het belangrijkst voor een solo-oprichter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alle drie zijn belangrijk, maar architectuur is degene die het vaakst wordt overgeslagen, omdat zwakte daarin niet zichtbaar wordt totdat een verandering die eenvoudig zou moeten zijn, blijkt te vereisen dat het hele datamodel wordt geherstructureerd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik data-architectuur op dezelfde manier leren als ik prompten heb geleerd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is aan te leren, maar het ontwikkelt zich anders — voornamelijk door ervaring met het zien mislukken van datamodellen bij uitbreiding, en precies daarom is een ervaren tweede mening vaak sneller dan het leren via uw eigen kostbare fouten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik weten of mijn eigen product dit gat heeft voordat het een probleem wordt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vraag uzelf af of uw datamodel is ontworpen rond de specifieke opzet van uw allereerste klant, of gebouwd om variatie vanaf het begin te ondersteunen — als het het eerste is, is een ervaren architectuurbeoordeling voordat u schaalt de moeite waard."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Repareert het Ho Chi Minh-stad-team van Manifera alleen architectuur, of helpt het ook bij het vanaf nul opbouwen ervan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beide — het team beoordeelt en herstructureert bestaande door AI gegenereerde datamodellen, zoals bij Milan, en kan ook een nieuw model architecteren vanaf het begin voor oprichters die het meteen goed willen doen, bij hun eerste klant en niet pas bij hun tweede."
+      }
+    }
   ]
 }
 </script>

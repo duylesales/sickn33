@@ -65,8 +65,7 @@ WordPress wint wanneer: het product een contentzware site is met standaard e-com
 
 [Breng ons het prototype dat u al heeft gebouwd](https://launchstudio.eu/nl/#contact) — het snelste pad naar productie loopt meestal via de code die u al heeft, niet via een platformwissel.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De WordPress-Omweg Die Terugleidde Naar Het Prototype
 
 Eva Smits, pilatesinstructeur in Eindhoven, bouwde BalansBoek, een door Lovable aangedreven boekings- en voortgangsapp voor boutique fitnessstudio's. Een WordPress-consultant offreerde €2.800 om BalansBoek te herbouwen met Amelia (boekingsplugin), MemberPress (memberships), en WooCommerce (aankoop van lesspakketten), met als argument dat het WordPress-ecosysteem op de lange termijn makkelijker te onderhouden zou zijn.

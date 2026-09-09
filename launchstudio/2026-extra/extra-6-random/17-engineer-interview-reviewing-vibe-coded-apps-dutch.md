@@ -45,6 +45,19 @@ Antwoord: Dat een netjes ogende app en een veilige app niet hetzelfde zijn, en d
 
 Manifera brengt meer dan 11 jaar productie-engineeringervaring naar precies dit soort beoordeling, en onze Amsterdamse engineers doen dit werk dagelijks bij Lovable-, Bolt-, Cursor- en v0-projecten. Als u een tweede paar ogen op uw eigen prototype wilt, kunt u [ons uw prototypelink sturen voor gratis advies](https://launchstudio.eu/nl/#contact) voordat u uw eigen versie van Milans webhookbug op de harde manier ontdekt. Voor een breder beeld van hoe dit soort engineeringbeoordeling past in grotere builds, zie Manifera's [diensten voor webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
+## Een Snelle Zelfevaluatie: Drie Vragen over Uw Eigen App Vóór U Lanceert
+
+U hoeft geen doorgewinterde software-architect te zijn om een eerste risico-inventarisatie van uw eigen applicatie uit te voeren. Vóórdat u de deuren opent voor betalende klanten of uw product presenteert aan investeerders, dient u deze drie kritieke vragen eerlijk te beantwoorden:
+
+**1. Wat gebeurt er als een gebruiker midden in een betaaltransactie zijn browser sluit?** Wordt de betaling wel afgeschreven door Stripe, maar krijgt de gebruiker nooit zijn abonnement geactiveerd in uw database? Zonder idempotente webhook-verwerking en status-synchronisatie aan de serverzijde leidt dit direct tot gefrustreerde klanten en handmatige administratieve correcties.
+
+**2. Kan een kwaadwillende gebruiker uw database leegtrekken via publieke API's?** Heeft u gecontroleerd of uw zoek- of exportfuncties begrensd zijn met paginering en rate limiting? Als een gebruiker met één enkel cURL-commando tienduizenden records tegelijk kan downloaden, staat uw data open voor scraping en misbruik.
+
+**3. Blijven persoonlijke gegevens bewaard na het verwijderen van een account?** Voldoet uw applicatie aan de AVG-verplichting inzake het 'recht op vergetelheid'? Als een gebruiker op 'Account opheffen' klikt, worden zijn persoonsgegevens dan daadwerkelijk definitief verwijderd of geanonimiseerd uit alle databasetabellen, back-ups en logs, of verdwijnt simpelweg de frontend-weergave?
+
+Wanneer u op één van deze vragen het antwoord schuldig moet blijven, is uw applicatie nog niet klaar voor productie. Het oplossen van deze drie punten vóór de lancering kost doorgaans een fractie van de tijd en reputatieschade die ontstaat wanneer ze in het openbaar misgaan.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De dubbele-klantbug in KlantStroom
@@ -91,11 +104,46 @@ Gerichte beoordelingen en reparaties zoals hier beschreven vallen doorgaans in h
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What does 'vibe-coded' actually mean?", "acceptedAnswer": { "@type": "Answer", "text": "It refers to software built largely by describing what you want in natural language to an AI coding tool like Lovable, Bolt, Cursor, or v0, rather than writing the code by hand." } },
-    { "@type": "Question", "name": "Do LaunchStudio's engineers rewrite vibe-coded apps or just review them?", "acceptedAnswer": { "@type": "Answer", "text": "Both, depending on what's found. Most reviews end in a targeted fix rather than a full rewrite." } },
-    { "@type": "Question", "name": "Why does an AI-generated app look clean but still have hidden bugs?", "acceptedAnswer": { "@type": "Answer", "text": "AI coding tools optimize for producing working code for the cases you describe, not for flagging edge cases you didn't mention, so the result looks uniformly polished even where logic is incomplete." } },
-    { "@type": "Question", "name": "Where is the engineer quoted in this interview based?", "acceptedAnswer": { "@type": "Answer", "text": "Part of the team is based in Amsterdam, LaunchStudio's European hub, though reviews are handled across Manifera's broader engineering team." } },
-    { "@type": "Question", "name": "How much does a code review like this typically cost?", "acceptedAnswer": { "@type": "Answer", "text": "Targeted reviews and fixes typically fall in the €400–€1,500 range, within LaunchStudio's standard €800–€7,500 project pricing." } }
+    {
+      "@type": "Question",
+      "name": "Wat betekent \"vibe-coded\" eigenlijk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het verwijst naar software die grotendeels is gebouwd door in natuurlijke taal te beschrijven wat u wilt aan een AI-coderingstool zoals Lovable, Bolt, Cursor of v0, in plaats van de code met de hand te schrijven — de term beschrijft het proces, geen oordeel over het resultaat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Herschrijven de engineers van LaunchStudio vibe-coded apps of beoordelen ze deze alleen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beide, afhankelijk van wat er wordt gevonden — de meeste beoordelingen eindigen in een gerichte reparatie in plaats van een herschrijving, vergelijkbaar met hoe Milans webhookprobleem werd opgelost zonder de rest van KlantStroom aan te raken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom ziet een door AI gegenereerde app er netjes uit maar heeft hij toch verborgen bugs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat AI-coderingstools optimaliseren voor het produceren van werkende code voor de gevallen die u beschrijft, niet voor het signaleren van de edge cases die u niet noemde — het resultaat ziet er uniform gepolijst uit, ook waar de logica onvolledig is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is de geïnterviewde engineer gevestigd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een deel van het team is gevestigd in Amsterdam, de Europese hub van LaunchStudio, hoewel beoordelingen zoals die van Milan worden afgehandeld door engineers uit het bredere team van Manifera."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel kost een codebeoordeling zoals die van Milan doorgaans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gerichte beoordelingen en reparaties zoals hier beschreven vallen doorgaans in het bereik van € 400–€ 1.500, afhankelijk van de scope, ruim binnen de standaard projectprijzen van € 800–€ 7.500 van LaunchStudio."
+      }
+    }
   ]
 }
 </script>

@@ -67,6 +67,18 @@ AI-codetools zoals Cursor schrijven moeiteloos een simpele `fetch()` naar OpenAI
 2. **Fouttolerante Middleware:** Automatische *exponential backoff* en retry-logica. Krijgt de server een `429 Rate Limit` fout, dan wacht het 2 seconden en probeert het opnieuw zonder dat de gebruiker een foutmelding ziet.
 3. **Semantische Caching:** Vraagt een gebruiker om advies dat 5 minuten eerder al is beantwoord, dan levert de Redis-cache direct het antwoord op en wordt de betaalde AI API overgeslagen.
 
+### Robuust API-Ontwerp voor AI-Integraties
+
+Het betrouwbaar aanroepen van externe AI-API's vereist gespecialiseerde middleware om uitval te voorkomen:
+1. **Exponentiële Backoff en Rate Limiting:** We bouwen intelligente retry-logica die netwerkstoringen opvangt zonder de servers van externe aanbieders te overbelasten.
+2. **Token Budgeting en Monitoring:** We meten het verbruik per API-call en waarschuwen automatisch bij onverwachte verbruikspieken.
+3. **Strikte Egress Filtering:** Geen enkel extern API-verzoek verlaat uw virtuele cloud zonder validatie op gevoelige interne configuratiegegevens.
+
+### Voorspelbare Foutafhandeling bij Externe API's
+
+Vang externe storingen soepel op zonder verstoring van bedrijfsprocessen:
+1. **Graceful Fallbacks:** Toon altijd een constructieve en contextuele fallback-respons aan uw eindgebruikers.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De E-commerce Plugin Die Crashte Tijdens Black Friday

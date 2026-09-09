@@ -57,8 +57,7 @@ Het signaal dat een bedrijfsonderdeel precies in dit patroon vastzit, is meestal
 
 [Vraag een vaste scope aan die uw interne team kan beoordelen voordat er iets start](https://launchstudio.eu/nl/#contact) — de meeste bedrijfsonderdelen zijn één scoping call verwijderd van het vrijmaken van een vastgelopen prototype zonder de IT-achterstand te vergroten.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een SaaS-Oprichter in de Praktijk: Vrijgemaakt Zonder op de Wachtrij te Wachten
 
 Reinier Oldenkamp, een operations lead die intern productverantwoordelijke werd bij een middelgroot logistiek bedrijf in Eindhoven, bouwde ShiftDesk, een AI-ondersteunde planningstool voor magazijndiensten, met Bolt, als neventraject om een op spreadsheets gebaseerd proces te vervangen dat het operations-team wekelijks uren kostte. ShiftDesk werkte goed genoeg in een interne pilot dat het management het goedkeurde voor bredere uitrol — in afwachting van IT's goedkeuring voor gegevensverwerking en toegangscontrole.

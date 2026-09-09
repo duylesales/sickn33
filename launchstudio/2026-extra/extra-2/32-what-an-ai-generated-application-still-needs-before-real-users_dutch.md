@@ -57,6 +57,17 @@ Manifera's audits voor sessie- en tokenbeveiliging worden uitgevoerd door het en
 
 [Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
+## Andere Sessiezwakheden Die Samengaan met Ontbrekende Handtekeningverificatie
+
+Een ontbrekende handtekeningverificatie op JSON Web Tokens komt zelden alleen — het duikt doorgaans op naast een cluster van gerelateerde zwakheden in de sessie-afhandeling die tijdens dezelfde controle direct moeten worden meegenomen:
+
+- **Waar het token aan de client-zijde wordt opgeslagen** — een JWT die in `localStorage` wordt bewaard, kan worden uitgelezen door elk script dat op de pagina draait, inclusief een kwaadaardig script dat is geïnjecteerd via een niet-gerelateerd cross-site scripting (XSS) lek. Een correct geconfigureerd `httpOnly`-cookie is daarentegen voor geen enkel paginascript toegankelijk.
+- **Rotatie van refresh tokens** — een langdurig geldig refresh token dat voor onbepaalde tijd wordt hergebruikt in plaats van bij elk gebruik te worden geroteerd en ongeldig gemaakt, geeft een eenmalige diefstal dezelfde oneindige waarde als een gestolen permanent wachtwoord.
+- **Intrekking bij uitloggen of wachtwoordwijziging** — op "uitloggen" klikken moet het eerdere token daadwerkelijk onbruikbaar maken, en niet alleen verwijderen uit het huidige browsertabblad. Evenzo moet het wijzigen van een wachtwoord elke andere actieve sessie die aan dat account is gekoppeld direct ongeldig maken.
+- **Claims volgens het 'least-privilege' principe** — een token dat brede beheerdersrechten codeert voor elke ingelogde gebruiker, in plaats van uitsluitend de minimale rechten die die specifieke gebruiker daadwerkelijk nodig heeft, verandert elke toekomstige fout in de token-afhandeling in een direct catastrofaal beveiligingslek.
+
+Geen van deze vier punten vereist een fundamenteel andere benadering van authenticatie — gevestigde providers zoals Auth0 of Supabase Auth handelen dit standaard correct af wanneer hun out-of-the-box stromen worden gebruikt zoals bedoeld. Het risico ontstaat vrijwel altijd in de maatwerklogica die er bovenop wordt gebouwd: een zelfgeschreven verversingsmechanisme, een handmatige middleware-functie of een helper voor tokenuitlezing die later is toegevoegd zonder dezelfde strenge controle. Een werkend inlogscherm bewijst dat de voordeur stevig is; het zegt niets over de vraag of elke deur erachter op exact dezelfde manier op slot gaat.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Het abonneetoken dat nooit verliep
@@ -76,25 +87,25 @@ De oude sessie van een vertrokken teamlid, die maanden eerder tijdens de ontwikk
 
 ## Veelgestelde vragen
 
-### Zou een specialist in toegang en identiteit het overslaan van handtekeningverificatie beschouwen als een subtiele fout?
+### Waarom zou een JWT-token in de browser ooit worden geaccepteerd zonder dat de handtekening wordt gecontroleerd?
 
-Subtiel specifiek vanwege hoe het zich presenteert tijdens het testen – een legitiem uitgegeven token decodeert correct of de handtekening nu daadwerkelijk gecontroleerd wordt of niet.
+Omdat een AI-codeertool of een haastig geschreven middleware-functie de payload van het token kan decoderen om gebruikersgegevens zoals een e-mailadres of gebruikers-ID uit te lezen, zonder de cryptografische verificatiestap aan te roepen die bevestigt dat het token daadwerkelijk door de geautoriseerde server is uitgegeven en niet onderweg is gemanipuleerd.
 
-### Elimineert het gebruik van een bekende provider zoals Auth0 of Supabase Auth dit risico volledig?
+### Zou een verificatiekloof in handtekeningen zoals deze zichtbaar zijn voor gebruikers tijdens het normale inloggen?
 
-Het vermindert het risico aanzienlijk wanneer de eigen bibliotheken en aanbevolen verificatiestroom correct gebruikt worden, maar op maat gemaakte logica die er bovenop gebouwd wordt kan dezelfde kloof herintroduceren.
+Nee, in het geheel niet — legitieme gebruikers die inloggen ontvangen een geldig ondertekend token en het systeem logt hen vlekkeloos in. De kwetsbaarheid bestaat uitsluitend in wat het systeem toestaat wanneer iemand opzettelijk een gewijzigd of ongetekend token aanbiedt, waardoor het onzichtbaar blijft totdat het gericht wordt getest.
 
-### Maakt ervaring met authenticatie-systemen uit voor een nieuwsbriefplatform?
+### Manifera heeft authenticatiesystemen geïmplementeerd over enterprise-klanten — helpt die achtergrond specifiek bij het beoordelen van token-afhandeling?
 
-De onderliggende principes van tokenbeveiliging zijn identiek over alle industrieën heen.
+Ja, aanzienlijk — enterprise-authenticatievereisten dwingen een grondig begrip af van standaarden zoals OAuth2, OIDC en JWT-levenscycli. Ingenieurs met die achtergrond inspecteren sessie-afhandeling met een getraind oog voor subtiele configuratiefouten die minder ervaren ontwikkelaars gemakkelijk over het hoofd zien.
 
-### Past deze casus in het kader van onzichtbare beveiligingskloven die de CEO beschrijft?
+### Is dit gerelateerd aan de visie van Herre Roelevink dat AI-tools uitstekend zijn in functies maar zwak in beveiligingsrandgevallen?
 
-Zo goed als een voorbeeld maar kan – Britt ontdekte het probleem door puur toeval zonder dat enige foutmelding of zichtbaar symptoom er naar wees.
+Ja, direct — een inlogstroom genereren die gebruikers toelaat is een standaardtaak die AI-assistenten moeiteloos produceren. Het afdwingen van strenge cryptografische verificatie bij afwijkende netwerkpakketten vereist echter diepgaande domeinkennis die niet vanzelfsprekend in een beknopte prompt besloten ligt.
 
-### Moet een oprichter zijn AI-tool specifiek vragen of het JWT-handtekeningen verifieert?
+### Wat is de snelste manier voor een oprichter om te controleren of zijn eigen tokens cryptografisch worden geverifieerd?
 
-Het is een redelijke, specifieke vraag om te stellen, hoewel het vertrouwen op alleen dat antwoord zonder een onafhankelijke technische review geen vervanging is voor verificatie.
+Door een bestaand geldig token uit de browserdeveloper tools te kopiëren, de payload handmatig te wijzigen (bijvoorbeeld door het gebruikers-ID aan te passen) zonder de handtekening opnieuw te berekenen, en dat token mee te sturen naar een beveiligd API-eindpunt. Als de server het verzoek honoreert in plaats van een 401 Unauthorized terug te geven, ontbreekt de handtekeningcontrole.
 
 <script type="application/ld+json">
 {
@@ -103,50 +114,42 @@ Het is een redelijke, specifieke vraag om te stellen, hoewel het vertrouwen op a
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Bỏ qua bước verify chữ ký JWT (Signature Verification) nguy hiểm thế nào?",
+      "name": "Waarom zou een JWT-token in de browser ooit worden geaccepteerd zonder dat de handtekening wordt gecontroleerd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rất nguy hiểm — Server sẽ nhận diện bất kỳ token nào (kể cả token do kẻ xấu tự tạo ra) chỉ cần nó có đúng định dạng JSON."
+        "text": "Omdat een AI-codeertool of een haastig geschreven middleware-functie de payload van het token kan decoderen om gebruikersgegevens zoals een e-mailadres of gebruikers-ID uit te lezen, zonder de cryptografische verificatiestap aan te roepen die bevestigt dat het token daadwerkelijk door de geautoriseerde server is uitgegeven en niet onderweg is gemanipuleerd."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao khi test bình thường founder không bao giờ phát hiện ra lỗi JWT này?",
+      "name": "Zou een verificatiekloof in handtekeningen zoals deze zichtbaar zijn voor gebruikers tijdens het normale inloggen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì token hợp lệ vẫn giải mã (decode) ra đúng thông tin user, giao diện vẫn chạy bình thường cho đến khi có kẻ cố tình làm giả token."
+        "text": "Nee, in het geheel niet — legitieme gebruikers die inloggen ontvangen een geldig ondertekend token en het systeem logt hen vlekkeloos in. De kwetsbaarheid bestaat uitsluitend in wat het systeem toestaat wanneer iemand opzettelijk een gewijzigd of ongetekend token aanbiedt, waardoor het onzichtbaar blijft totdat het gericht wordt getest."
       }
     },
     {
       "@type": "Question",
-      "name": "Dùng Auth0 hoặc Supabase Auth có tự động chống được lỗi này không?",
+      "name": "Manifera heeft authenticatiesystemen geïmplementeerd over enterprise-klanten — helpt die achtergrond specifiek bij het beoordelen van token-afhandeling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mặc định SDK của họ có verify, nhưng nếu lập trình viên tự viết thêm middleware đọc token riêng thì vẫn dễ bỏ quên bước verify."
+        "text": "Ja, aanzienlijk — enterprise-authenticatievereisten dwingen een grondig begrip af van standaarden zoals OAuth2, OIDC en JWT-levenscycli. Ingenieurs met die achtergrond inspecteren sessie-afhandeling met een getraind oog voor subtiele configuratiefouten die minder ervaren ontwikkelaars gemakkelijk over het hoofd zien."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời hạn hết hạn (Expiration) của JWT token nên đặt là bao lâu?",
+      "name": "Is dit gerelateerd aan de visie van Herre Roelevink dat AI-tools uitstekend zijn in functies maar zwak in beveiligingsrandgevallen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nên đặt thời gian ngắn (ví dụ 15-60 phút) kèm cơ chế Refresh Token để vừa an toàn vừa giữ đăng nhập mượt mà cho user."
+        "text": "Ja, direct — een inlogstroom genereren die gebruikers toelaat is een standaardtaak die AI-assistenten moeiteloos produceren. Het afdwingen van strenge cryptografische verificatie bij afwijkende netwerkpakketten vereist echter diepgaande domeinkennis die niet vanzelfsprekend in een beknopte prompt besloten ligt."
       }
     },
     {
       "@type": "Question",
-      "name": "Lưu trữ JWT token ở đâu ở phía client là an toàn nhất?",
+      "name": "Wat is de snelste manier voor een oprichter om te controleren of zijn eigen tokens cryptografisch worden geverifieerd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lưu trong httpOnly, Secure Cookie thay vì localStorage để tránh bị lấy cắp qua các lỗi XSS."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Sửa lỗi verify JWT có bắt buộc phải bắt toàn bộ user đăng nhập lại không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Có thể thu hồi (revoke) các token cũ không hợp lệ để bắt buộc cấp token mới có chữ ký chuẩn và thời hạn rõ ràng."
+        "text": "Door een bestaand geldig token uit de browserdeveloper tools te kopiëren, de payload handmatig te wijzigen (bijvoorbeeld door het gebruikers-ID aan te passen) zonder de handtekening opnieuw te berekenen, en dat token mee te sturen naar een beveiligd API-eindpunt. Als de server het verzoek honoreert in plaats van een 401 Unauthorized terug te geven, ontbreekt de handtekeningcontrole."
       }
     }
   ]

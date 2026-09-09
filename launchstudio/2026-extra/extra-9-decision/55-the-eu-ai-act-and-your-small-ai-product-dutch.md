@@ -110,7 +110,7 @@ Het gestructureerd doorlopen van deze risicoclassificatie en het tijdig doorvoer
 
 [Plan een kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) om exact te bepalen in welke risicocategorie uw AI-functionaliteit valt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een SaaS-Oprichter in Actie: De Functionaliteit Die Anders Was Dan Ze Leek
 

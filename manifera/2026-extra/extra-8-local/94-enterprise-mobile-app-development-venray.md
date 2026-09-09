@@ -97,6 +97,10 @@ An enterprise mobile app built with a superficial SSO integration typically cost
 
 The exposure that should concern a CTO most is the operational cost of a slow deprovisioning process discovered during an incident rather than an audit: a single unrevoked mobile session tied to a departed employee or contractor accessing warehouse or fleet data can trigger an incident response, forensic review, and potential regulatory notification that easily runs into tens of thousands of euros once legal and IT time are included — a cost a properly federated, short-lived token architecture is specifically designed to prevent. Most CTOs who insist on true SSO federation from the outset recover the modest additional upfront cost many times over the first time it prevents exactly this scenario. Talk to a Manifera architect about auditing your current or planned mobile app's identity architecture at [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## Technical Deep-Dive: The Four Details a Vendor's Architecture Diagram Often Skips
+
+A federation diagram that looks correct on a whiteboard can still fail in four specific ways once built. First, mobile OAuth clients are "public clients" that cannot securely hold a client secret, so the app must implement Authorization Code flow with PKCE (Proof Key for Code Exchange) rather than a legacy implicit flow or a flow that embeds a static secret in the compiled binary — any vendor proposing the latter is proposing an extractable credential. Second, tokens must be stored in the platform's hardware-backed secure enclave — iOS Keychain or Android Keystore — never in shared preferences, a plist, or application-level storage, since those locations are trivially readable on a rooted or jailbroken device. Third, certificate pinning on the token-exchange endpoint prevents a man-in-the-middle interception of the authorization code or refresh token on an untrusted network, which matters specifically for drivers connecting through public wifi at delivery depots. Fourth, gating access to a cached refresh token behind a biometric check (Face ID, fingerprint) adds a local security layer without weakening the federation model itself — the biometric protects the device-level token vault, while the identity provider remains the sole authority over whether that token is still valid at all. A vendor's proposal should name all four explicitly; a proposal that only says "we use OAuth" without addressing storage and pinning has described half an architecture.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO reviewing a vendor's claim of "SSO support") How do I verify a vendor's SSO claim actually means proper federation, not a branded login screen?
@@ -119,6 +123,22 @@ Shared devices require MDM enrollment awareness so the app can confirm device co
 
 Yes, centralizing authentication events through the identity provider's own logs means an auditor can answer who accessed the system, from what device, and when, from a single authoritative source, rather than reconciling separate app-specific login records.
 
+### (Scenario: CTO deciding whether biometric unlock complicates the SSO model) Does adding Face ID or fingerprint unlock weaken or strengthen the SSO security model?
+
+It strengthens it, provided it's implemented correctly — biometrics gate access to the device-level secure token vault as a local layer, while the identity provider still remains the sole authority over whether the underlying token is actually valid, so a biometric bypass never grants access the identity provider itself hasn't authorized.
+
+### (Scenario: CTO choosing between native development and a cross-platform framework) Does true OIDC federation work the same way in React Native or Flutter as it does in native iOS and Android?
+
+Yes, provided the implementation uses the platform's native secure storage (Keychain or Keystore) via a properly vetted bridge library rather than a pure-JavaScript or Dart token store, since a cross-platform convenience layer that bypasses hardware-backed storage reintroduces the exact vulnerability proper federation is meant to close.
+
+### (Scenario: CTO with an existing live app built on weak SSO wondering if a full rebuild is required) We already have a mobile app in production with weak SSO — can this be retrofitted without a full rebuild?
+
+Usually yes — the authentication layer can be replaced with proper OIDC federation, secure token storage, and conditional access integration as an isolated module while the rest of the app's features remain largely untouched, though every existing session needs to be force-expired during the cutover.
+
+### (Scenario: CTO with BYOD drivers or partner-company staff who aren't on company-managed devices) How does the identity architecture handle drivers or partners using their own unmanaged devices?
+
+BYOD access is scoped through app-level conditional access policies that don't require full MDM enrollment but still enforce device-compliance checks, short token lifetimes, and app-container isolation, giving IT a middle tier between full company-device trust and no verification at all.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -128,7 +148,11 @@ Yes, centralizing authentication events through the identity provider's own logs
     { "@type": "Question", "name": "(Scenario: CTO managing seasonal or contract logistics staff) How quickly is access actually revoked when a driver or warehouse worker's contract ends?", "acceptedAnswer": { "@type": "Answer", "text": "With true OIDC federation and short-lived access tokens, deactivating the account in your identity provider revokes mobile access within hours rather than requiring a separate manual step inside the app." } },
     { "@type": "Question", "name": "(Scenario: CTO concerned about connectivity gaps in cold storage or rural delivery areas) Can the app still work securely when a driver or warehouse worker has no signal?", "acceptedAnswer": { "@type": "Answer", "text": "A properly designed app caches a validated, time-bound token securely on the device for offline use and re-validates automatically once connectivity returns." } },
     { "@type": "Question", "name": "(Scenario: CTO evaluating shared warehouse handheld devices) Does SSO work the same way on a shared warehouse scanner as it does on a personal phone?", "acceptedAnswer": { "@type": "Answer", "text": "Shared devices require MDM enrollment awareness so the app can confirm device compliance status before granting access, since a shared device carries materially higher exposure than a personally assigned phone." } },
-    { "@type": "Question", "name": "(Scenario: CTO preparing for a security audit) Will proper SSO integration make our next security audit easier?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, centralizing authentication events through the identity provider's own logs lets an auditor answer who accessed the system, from what device, and when, from a single authoritative source." } }
+    { "@type": "Question", "name": "(Scenario: CTO preparing for a security audit) Will proper SSO integration make our next security audit easier?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, centralizing authentication events through the identity provider's own logs lets an auditor answer who accessed the system, from what device, and when, from a single authoritative source." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding whether biometric unlock complicates the SSO model) Does adding Face ID or fingerprint unlock weaken or strengthen the SSO security model?", "acceptedAnswer": { "@type": "Answer", "text": "It strengthens it when implemented correctly, since biometrics gate the local device token vault while the identity provider remains the sole authority over whether the underlying token is valid." } },
+    { "@type": "Question", "name": "(Scenario: CTO choosing between native development and a cross-platform framework) Does true OIDC federation work the same way in React Native or Flutter as it does in native iOS and Android?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, provided the implementation uses the platform's native secure storage via a properly vetted bridge library rather than a pure JavaScript or Dart token store." } },
+    { "@type": "Question", "name": "(Scenario: CTO with an existing live app built on weak SSO wondering if a full rebuild is required) We already have a mobile app in production with weak SSO — can this be retrofitted without a full rebuild?", "acceptedAnswer": { "@type": "Answer", "text": "Usually yes, the authentication layer can be replaced as an isolated module while the rest of the app's features remain largely untouched, though existing sessions must be force-expired during cutover." } },
+    { "@type": "Question", "name": "(Scenario: CTO with BYOD drivers or partner-company staff who aren't on company-managed devices) How does the identity architecture handle drivers or partners using their own unmanaged devices?", "acceptedAnswer": { "@type": "Answer", "text": "BYOD access is scoped through app-level conditional access policies that enforce device-compliance checks, short token lifetimes, and app-container isolation without requiring full MDM enrollment." } }
   ]
 }
 </script>

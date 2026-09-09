@@ -107,6 +107,10 @@ Dezelfde categorie van problemen – een standaardwaarde afgestemd op gebruik op
 
 Ideaal gezien ja – een beoordeling van de verbindingspool kost een paar dagen en is aanzienlijk goedkoper om proactief te doen dan tijdens een live gebruikspiek.
 
+### Wat kost het uitharden van DB-pools en schaalbaarheid bij LaunchStudio?
+
+Het afstemmen van connection pools, toevoegen van pooling-middleware en monitoring op infrastructuur kost gemiddeld €800 en duurt 4 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

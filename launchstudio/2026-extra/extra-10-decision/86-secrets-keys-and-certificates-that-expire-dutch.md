@@ -87,7 +87,7 @@ Ga er vanuit dat het ooit gebeurt. Volg dan direct deze vaste volgorde:
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in enterprise security audits) scannen we repositories op gelekte credentials, richten we zero-downtime sleutelrotatie in en implementeren we SSL-verloopmonitoring tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw security-hygiëne met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw geheimen veilig blijven.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Het Certificaat Dat Verliep op Zaterdagochtend
 

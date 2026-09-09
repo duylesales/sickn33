@@ -68,6 +68,12 @@ MLS integration quality is difficult to evaluate from a sales demo because demos
 
 If your IT team needs an independent technical review of a shortlisted CRM vendor's MLS integration architecture before signing a multi-year contract, Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) team can run that evaluation alongside your procurement process, including reviewing RESO certification documentation and testing sample data feeds. Our [portfolio](https://www.manifera.com/portfolio/) includes integration work across regulated data-licensing environments where getting the mapping right the first time mattered as much as the feature set.
 
+## Setting the Staleness Threshold: What "Real-Time" Should Actually Mean in Writing
+
+Vendors describe MLS sync as "real-time" without a number attached far more often than any other integration claim in real estate CRM procurement, and the actual refresh interval varies enormously in practice — from genuine webhook-driven push updates (sub-minute) to polling intervals of 15, 30, or even 60 minutes marketed under the same "real-time" language. Get the polling or push interval in writing and set a maximum acceptable staleness window contractually: 5 minutes or less for status changes (active to pending, pending to sold) is a reasonable standard for a brokerage in a competitive market where showing an under-contract listing creates real liability, while a 15-30 minute window may be acceptable for slower-moving markets or secondary data (school district updates, HOA fee changes).
+
+Build a specific SLA metric around this: percentage of listing status changes reflected in the CRM within the contractual staleness window, measured monthly, not just an uptime percentage that says nothing about sync freshness. A vendor unwilling to commit to a specific, measurable staleness SLA — as opposed to a qualitative "real-time" claim — is worth pressure-testing during the RFP with a live sandbox comparison against your MLS's actual update cadence before signature, not after the first missed showing.
+
 ## Frequently Asked Questions
 
 ### What's the difference between RETS and RESO Web API for MLS integration?
@@ -84,6 +90,18 @@ It happens more often than brokerages expect — MLS rules on broker attribution
 
 ### How do I evaluate data portability before signing a real estate CRM contract?
 Request written confirmation of export formats for contact, transaction, and commission history, and clarify whether historical MLS data pulled into the CRM remains accessible after you leave the platform — this matters for states with transaction record retention requirements.
+
+### (Scenario: The vendor's RESO certification only covers the Property resource, not Media or Member) What if a vendor's RESO certification only covers some data resources, not the full standard?
+Ask specifically which RESO resources (Property, Media, Member, Office, OpenHouse) the certification actually covers, since a vendor can be legitimately certified on core listing data while handling photos, agent records, or open house data through custom, uncertified logic — and test those specific uncertified paths in the sandbox rather than assuming certification on one resource implies compliance across all of them.
+
+### (Scenario: Leadership wants to switch CRM vendors during peak listing season despite the risk described in this article) Is there ever a safe way to switch real estate CRM vendors mid-listing-season?
+Generally no for the MLS integration layer specifically — run the new vendor's feed in parallel against the current system for at least two to three weeks before cutover so any field-mapping or sync-frequency gaps surface while the old system is still the source of truth, and if leadership insists on a hard business deadline, negotiate that deadline against the parallel-run window rather than skipping it.
+
+### (Scenario: The regional MLS is merging with a neighboring MLS, changing the data feed mid-contract) What happens to a CRM integration if the MLS itself merges or changes its data feed structure?
+This is a foreseeable event in many regions and should be addressed contractually before it happens — confirm the vendor's obligation and timeline commitment to re-certify and remap fields if your MLS changes its feed structure or merges with another MLS, since an MLS-side change is outside the vendor's control but the resulting integration gap is still the brokerage's operational risk.
+
+### (Scenario: A vendor's RESO certification listed in their sales deck was issued three years ago with no evidence of renewal) How do you verify a vendor's RESO certification is actually current?
+Check the certification directly against RESO's own published certification registry rather than relying on the vendor's sales materials, since certifications can lapse or apply to a prior version of the vendor's platform that's since changed. A vendor citing a multi-year-old certification with no evidence of subsequent renewal or recertification against current standards warrants a direct follow-up question before it's taken at face value.
 
 <script type="application/ld+json">
 {
@@ -114,6 +132,26 @@ Request written confirmation of export formats for contact, transaction, and com
       "@type": "Question",
       "name": "How do I evaluate data portability before signing a real estate CRM contract?",
       "acceptedAnswer": {"@type": "Answer", "text": "Request written confirmation of export formats for contact, transaction, and commission history, and clarify whether historical MLS data pulled into the CRM remains accessible after you leave the platform — this matters for states with transaction record retention requirements."}
+    },
+    {
+      "@type": "Question",
+      "name": "What if a vendor's RESO certification only covers some data resources, not the full standard?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Ask specifically which RESO resources the certification actually covers, since a vendor can be legitimately certified on core listing data while handling photos, agent records, or open house data through custom, uncertified logic — test those uncertified paths in the sandbox."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is there ever a safe way to switch real estate CRM vendors mid-listing-season?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Generally no for the MLS integration layer specifically — run the new vendor's feed in parallel against the current system for at least two to three weeks before cutover so field-mapping or sync-frequency gaps surface while the old system is still the source of truth."}
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to a CRM integration if the MLS itself merges or changes its data feed structure?",
+      "acceptedAnswer": {"@type": "Answer", "text": "This is a foreseeable event that should be addressed contractually before it happens — confirm the vendor's obligation and timeline commitment to re-certify and remap fields if your MLS changes its feed structure or merges with another MLS."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do you verify a vendor's RESO certification is actually current?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Check the certification directly against RESO's own published certification registry rather than relying on the vendor's sales materials, since certifications can lapse or apply to a prior version of the vendor's platform that's since changed."}
     }
   ]
 }

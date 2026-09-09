@@ -66,6 +66,15 @@ Het overbruggen van de leercurve naar de Enterprise AI-Stack kost teams vaak maa
 2. **Telemetry & Observability:** Wij implementeren **Langfuse** of **Helicone**, waardoor u exact kunt zien hoeveel tokens elke gebruiker verbruikt en waarom specifieke prompts eventueel hallucineerden.
 3. **Ingebouwde Beveiliging:** Wij configureren PII-masking proxies (Microsoft Presidio) en semantische firewalls (NeMo Guardrails) aan de rand van uw netwerk voor directe SOC2- en AVG-naleving.
 
+### Infrastructuur-Eisen voor Betrouwbare AI-Software
+
+Het leveren van AI-functionaliteit met gegarandeerde Service Level Agreements (SLA's) stelt specifieke eisen aan de onderliggende server- en netwerkinfrastructuur:
+1. **Gedistribueerde Caching en Rate Pacing:** Door antwoorden op veelvoorkomende prompts direct vanuit een gedistribueerde Redis-cache te serveren, ontlasten we externe model-API's en houden we de gemiddelde reactietijd stabiel onder de 100 milliseconden.
+2. **Multi-Model Routering en Fallbacks:** Als een primair model onbereikbaar is of met capaciteitsproblemen kampt, schakelt onze architectuur binnen 200 milliseconden over naar een alternatieve provider met vergelijkbare redeneercapaciteit, zonder dat de transactie van de gebruiker mislukt.
+3. **Dedicated GPU-Allocatie en Serverless Scaling:** Voor op maat gefinetunede open-source modellen (zoals Llama-modellen) configureren we serverless GPU-clusters (zoals Modal, RunPod of AWS SageMaker) met automatische scale-to-zero functionaliteit om onnodige serverkosten buiten kantooruren te elimineren.
+4. **Realtime Latency & Token Budgeting:** We bewaken de time-to-first-token (TTFT) en tokens-per-second (TPS) met geavanceerde monitoring. Zodra een endpoint trager wordt dan de afgesproken norm, treden geautomatiseerde schalingsregels in werking.
+5. **Dataminimalisatie en Veilige Egress:** Alle uitgaande payloads worden gecontroleerd door een outbound proxy die voorkomt dat interne systeemparameters of vertrouwelijke klantdata onbedoeld worden meegestuurd naar externe AI-diensten.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: Het EdTech-Platform Dat Bezwiekte Onder Succes

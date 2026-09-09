@@ -84,6 +84,69 @@ AI-programmeerassistenten bouwen snelle demo's en slaan beveiligingshardening st
 - **Geen API-keys in de browser**: De meest voorkomende fout in AI-prototypes is het aanroepen van OpenAI/Anthropic direct vanaf de client-side.
 - **Test de afwijkende paden**: Fouten in data-isolatie en rate limiting worden pas zichtbaar als u bewust abrupte of verkeerde verzoeken stuurt.
 
+### De 6 Niet-Onderhandelbare Beveiligingscontroles voor Livegang
+
+Voordat uw AI-applicatie de eerste echte klant verwelkomt, moeten deze zes controles 100% zijn afgevinkt:
+1. **Volledige Eliminatie van Client-Side Secrets:** Geen enkele `service_role` key, database-wachtwoord of private API-token mag aanwezig zijn in de browser-bundel.
+2. **Row Level Security (RLS) Actief op Alle Tabellen:** Elke tabel met gebruikersdata moet expliciet worden beschermd door RLS-policies die ongeautoriseerde toegang blokkeren.
+3. **Strikte Input-Validatie met Zod:** Alle API-endpoints moeten inkomende payloads controleren op geldige datatypes en lengtes om SQL-injecties en payload-aanvallen te voorkomen.
+4. **Idempotente Webhooks:** Webhook-handlers voor betalingen en externe triggers moeten duplicate events registreren en veilig negeren.
+5. **API Rate Limiting:** Bescherm dure LLM-endpoints met rate limiting via Upstash Redis tegen misbruik en buitensporige kosten.
+6. **Encrypted Backups & Disaster Recovery:** Automatische dagelijkse database-backups met een gedocumenteerde en geteste herstelprocedure.
+
+### Diepgaande Beveiligingsarchitectuur voor AI Web-Applicaties
+
+Zorg vóór de officiële livegang voor deze geavanceerde beveiligingsmaatregelen:
+- **Volledige Isolatie van Geheime Sleutels:** Gebruik een gecentraliseerde secret manager en verifieer dat geen enkele API-key in de frontend terechtkomt.
+- **Robuuste Row Level Security Policies:** Test met geautomatiseerde integratietests dat ongeautoriseerde select-, update- en delete-opdrachten altijd nul rijen beïnvloeden.
+- **API Rate Limiting met Redis:** Beperk het aantal verzoeken per IP-adres en per gebruikersaccount om denial-of-service aanvallen en ongewenste token-rekeningen te voorkomen.
+- **Disaster Recovery & Encrypted Backups:** Richt dagelijkse point-in-time backups in en documenteer een concreet herstelplan bij dataverlies.
+
+### Geavanceerde Beveiligingscontroles voor Enterprise AI SaaS
+
+Voorkom beveiligingsincidenten met deze diepgaande maatregelen:
+- **Volledige Isolatie van Gevoelige Sleutels:** Gebruik een centrale secrets-manager en verifieer dat geen enkele beheersleutel in client-side code lekt.
+- **Input-Sanitizing & Schema-Validatie:** Controleer alle inkomende API-aanroepen met Zod om injectie-aanvallen en payload-fouten uit te sluiten.
+- **Geautomatiseerde Kwetsbaarheidsscans:** Scan dependencies wekelijks op bekende beveiligingslekken in uw CI/CD-pipeline.
+
+### PostgreSQL Row Level Security (RLS) Implementatiepatroon
+
+Een waterdichte multi-tenant isolatie vereist dat het database-schema zelf afdwingt dat gebruikers uitsluitend data binnen hun eigen organisatie kunnen benaderen:
+
+```sql
+-- Inschakelen van RLS op de documententabel
+ALTER TABLE documents ENABLE ROW LEVEL SECURITY;
+
+-- Beleid voor selectie: gebruikers zien alleen documenten van hun eigen organisatie
+CREATE POLICY "Users can only view tenant documents"
+ON documents FOR SELECT
+USING (
+  organization_id IN (
+    SELECT org_id FROM organization_members
+    WHERE user_id = auth.uid() AND status = 'active'
+  )
+);
+
+-- Beleid voor invoegen: organisatie-ID moet overeenkomen met het lidmaatschap van de gebruiker
+CREATE POLICY "Users can only insert into own tenant"
+ON documents FOR INSERT
+WITH CHECK (
+  organization_id IN (
+    SELECT org_id FROM organization_members
+    WHERE user_id = auth.uid() AND role IN ('admin', 'editor')
+  )
+);
+```
+
+Door deze policies direct in PostgreSQL te definiëren, is datalekken tussen verschillende zakelijke klanten fysiek onmogelijk — zelfs als een ontwikkelaar per abuis een filter vergeet in de backend-code.
+
+### De 3 Meest Gemaakte Fouten bij Livegang
+
+Vermijd deze veelvoorkomende valkuilen tijdens uw pre-launch fase:
+1. **Vergeten Row Level Security:** Zorg dat Supabase RLS expliciet aan staat op elke productietabel.
+2. **Hardgecodeerde API-Sleutels:** Controleer dat client-side JavaScript geen beheerwachtwoorden bevat.
+3. **Ontbrekende Rate Limiting:** Beveilig uw login-routes tegen geautomatiseerde brute-force aanvallen.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Het behalen van de ondergrens vóór een regionale lancering

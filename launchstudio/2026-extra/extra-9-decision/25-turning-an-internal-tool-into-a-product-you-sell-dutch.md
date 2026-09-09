@@ -85,7 +85,7 @@ Qua investering valt het transformeren van een interne tool naar een volwaardig 
 
 Voor een technische oprichter is het geruststellende nieuws dat niets hiervan speculatieve architectuur betreft. Het is een heldere, afgebakende lijst van datamodellen en middleware, waarbij elk afzonderlijk onderdeel zwart-op-wit testbaar is. Het risico schuilt erin dat deze leemtes onzichtbaar blijven zolang u de enige gebruiker bent. [Ga in gesprek met een software-engineer die AI-gegenereerde code doorgrondt](https://launchstudio.eu/nl/#contact) vóórdat uw tweede klant u op een datalek wijst — of bekijk [de technologieselectie van onze engineers](https://www.manifera.com/about-us/manifera-technologies/) om te zien in welke deskundige handen u uw codebase toevertrouwt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een indie hacker in actie: de interne tool die verkocht werd vóórdat het een product was
 

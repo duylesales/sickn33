@@ -69,8 +69,7 @@ Omdat Manifera's 120+ engineers gezamenlijk de specialistische disciplines dekke
 
 [Vergelijk de kosten van uw volgende technische aanname met een voorstel van LaunchStudio](https://launchstudio.eu/nl/#contact).
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een Scale-Up-Oprichter in de Praktijk: €75.000 Besparen op de Loonlijst in Jaar Eén
 
 Sjoerd van der Meer, oprichter van HuurVast (een leasebeheer- en huurderscommunicatieplatform in Utrecht), haalde een angelronde van €120.000 op. Zijn oorspronkelijke plan was om een fulltime senior engineer aan te nemen voor €75.000/jaar plus recruiterkosten om zijn Bolt-prototype te hardenen en facturatie en integraties te bouwen.

@@ -39,6 +39,23 @@ Op het moment dat er echt geld van eigenaar wisselt, houdt de kostprijs van een 
 
 LaunchStudio brengt de enterprise-grade engineering van Manifera naar de oprichterseconomie, specifiek voor deze overgang — het nemen van een in een weekend gebouwde AI-app en die ondersteunbaar maken zonder de frontend van de oprichter te herbouwen. Ons team, waaronder engineers gevestigd in Amsterdam, behandelt precies dit soort productie-hardening werk als een afgebakend, omschreven traject. U kunt [bekijken welk pakket past bij waar uw app zich momenteel bevindt](https://launchstudio.eu/nl/#packages) voordat uw volgende betalende klant het gat voor u ontdekt. Voor meer over hoe Manifera dit soort werk benadert, zie [onze webapp-ontwikkelingsdiensten](https://www.manifera.com/services/web-app-develop/).
 
+## De Zelfevaluatie Ondersteunbaarheid: Zes Vragen Vóór Uw Volgende Klantaanmelding
+
+U hoeft geen externe auditor in te schakelen om te bepalen of uw applicatie klaar is om betalende klanten structureel te ondersteunen. Zes eerlijke vragen vertellen u vrijwel alles wat u moet weten:
+
+**1. "Als een klant meldt dat zijn data verdwenen is, kunt u binnen vijf minuten achterhalen wat er gebeurd is?"** Beschikt u over gestructureerde logging waarin acties van specifieke gebruikers herleidbaar zijn, of moet u gissen in het luchtledige?
+
+**2. "Kunt u een individuele klant tijdelijk deactiveren zonder de database handmatig te bewerken?"** Beschikt uw applicatie over een beheerfunctie om accounts te blokkeren bij misbruik of wanbetaling?
+
+**3. "Krijgt u direct een melding wanneer een achtergrondtaak of webhook faalt?"** Of ontdekt u pas dat facturen niet zijn aangemaakt wanneer de klant klaagt dat zijn betaling niet is verwerkt?
+
+**4. "Heeft u een gedocumenteerde procedure om een corrupte databasetabel te herstellen?"** Weet u precies welke commando's u moet uitvoeren om een point-in-time back-up terug te zetten?
+
+**5. "Is uw documentatie begrijpelijk voor een externe engineer die u vannacht moet bijstaan?"** Ligt er een beknopte handleiding klaar waarin staat hoe de server draait en waar de omgevingsvariabelen staan?
+
+**6. "Heeft u duidelijke contact- en escalatiekanalen ingericht voor uw gebruikers?"** Weten klanten waar ze terechtkunnen bij storingen en wat uw responstijd is?
+
+Scoort u op meer dan twee vragen een 'nee', neem dan een pas op de plaats. Een applicatie die niet ondersteund kan worden, verandert bij succes in een operationele nachtmerrie.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: gebouwd in een weekend, getest door tien vastgoedbeheerders
@@ -85,11 +102,46 @@ Ja, dit wordt vaak achteraf gedaan, en het is precies het soort afgebakend produ
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the difference between a built app and a supportable app?", "acceptedAnswer": { "@type": "Answer", "text": "A built app works in a demo. A supportable app has logging, tested backups, and enough visibility that problems can be diagnosed and fixed once real customers depend on it." } },
-    { "@type": "Question", "name": "Why doesn't this gap show up while an app is still in testing?", "acceptedAnswer": { "@type": "Answer", "text": "Testing rarely generates the volume or unpredictability of real daily paying-customer usage, which is what exposes missing logging, backups, and diagnostics." } },
-    { "@type": "Question", "name": "What should a founder check before signing paying customers?", "acceptedAnswer": { "@type": "Answer", "text": "Whether there's logging that records what the app does, a tested backup and restore process, and a way to diagnose problems without guesswork." } },
-    { "@type": "Question", "name": "Does LaunchStudio help with this specific transition?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Manifera's team, including engineers based in Amsterdam, specializes in making a weekend-built AI app supportable for real customer usage without rebuilding the frontend." } },
-    { "@type": "Question", "name": "Can logging and backups be added after an app already has paying customers?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, this is commonly done after the fact as a scoped production-hardening engagement." } }
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen een gebouwde app en een ondersteunbare app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een gebouwde app werkt in een demo of tijdens eerste tests. Een ondersteunbare app heeft logging, geteste back-ups, en genoeg zichtbaarheid zodat een oprichter problemen kan diagnosticeren en oplossen zodra echte klanten er dagelijks van afhankelijk zijn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom komt dit gat niet aan het licht terwijl een app nog wordt getest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat testen zelden het volume, de onvoorspelbaarheid, of de echte inzet van dagelijks gebruik door betalende klanten genereert, en dat is precies wat ontbrekende logging, back-ups en diagnostiek blootlegt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet een oprichter controleren voordat hij betalende klanten aanmeldt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Of er logging is die registreert wat de app daadwerkelijk doet, een getest back-up- en herstelproces, en een manier om een probleem zonder giswerk te diagnosticeren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Helpt LaunchStudio bij deze specifieke overgang?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Het team van Manifera, waaronder engineers gevestigd in Amsterdam, specialiseert zich in het ondersteunbaar maken van een in een weekend gebouwde AI-app voor echt klantgebruik zonder de frontend te herbouwen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen logging en back-ups worden toegevoegd nadat een app al betalende klanten heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, dit wordt vaak achteraf gedaan, en het is precies het soort afgebakend productie-hardening werk dat LaunchStudio regelmatig behandelt."
+      }
+    }
   ]
 }
 </script>

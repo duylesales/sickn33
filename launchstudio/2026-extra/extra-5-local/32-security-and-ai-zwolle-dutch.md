@@ -90,20 +90,53 @@ Manifera's eigen team van meer dan 120 engineers, deels gecoördineerd vanuit on
 ### Hoe snel kan een beveiligingsbeoordeling plaatsvinden vóór mijn lancering?
 De meeste op beveiliging gerichte beoordelingen en herstelwerkzaamheden worden binnen 5 tot 10 werkdagen afgerond, afhankelijk van de omvang. Beschrijf uw project en we reageren binnen één werkdag met een realistische tijdlijn.
 
-### Wat is een IDOR-kwetsbaarheid, en waarom noemt u deze specifiek?
-Een onveilige directe objectreferentie (IDOR) gebeurt wanneer uw app records blootlegt via eenvoudige, raadbare sleutels — zoals `/orders/1042` — zonder te controleren of de aanvragende gebruiker daadwerkelijk bevoegd is om dat specifieke record te zien. Het is een van de meest voorkomende en eenvoudigst te misbruiken problemen die we vinden in door AI opgezette apps, omdat opeenvolgende ID's de standaarduitvoer zijn van de meeste AI-codingtools.
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is met AI gegenereerde code altijd onveilig?", "acceptedAnswer": { "@type": "Answer", "text": "Niet altijd, maar het is standaard vaak onvolledig qua beveiliging. Gaten zoals een open databasebeleid en onverifieerde webhooks komen veel voor." } },
-    { "@type": "Question", "name": "Wat omvat een beoordeling op het gebied van beveiliging en AI bij LaunchStudio daadwerkelijk?", "acceptedAnswer": { "@type": "Answer", "text": "Een audit van authenticatie, databasetoegang, geheimen, invoervalidatie en betalingsstromen, met fixes uitgevoerd zonder de frontend te raken." } },
-    { "@type": "Question", "name": "Is LaunchStudio alleen voor in Zwolle gevestigde oprichters?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, LaunchStudio bedient oprichters in heel Nederland en de Benelux vanuit haar hoofdkantoor in Amsterdam." } },
-    { "@type": "Question", "name": "Wie voert het beveiligingswerk daadwerkelijk uit?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's eigen team van 120+ engineers, deels gecoördineerd vanuit de Singapore hub, hetzelfde team achter projecten voor Vodafone en CFLW." } },
-    { "@type": "Question", "name": "Hoe snel kan een beveiligingsbeoordeling plaatsvinden vóór mijn lancering?", "acceptedAnswer": { "@type": "Answer", "text": "De meeste op beveiliging gerichte beoordelingen worden afgerond binnen 5 tot 10 werkdagen, afhankelijk van de omvang." } },
-    { "@type": "Question", "name": "Wat is een IDOR-kwetsbaarheid, en waarom noemt u deze specifiek?", "acceptedAnswer": { "@type": "Answer", "text": "Een IDOR gebeurt wanneer een app records toont via raadbare sleutels zonder autorisatiecontrole. Het is een van de meest voorkomende kwetsbaarheden in AI-apps." } }
+    {
+      "@type": "Question",
+      "name": "Is met AI gegenereerde code altijd onveilig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet altijd, maar het is standaard vaak onvolledig qua beveiliging. Gaten zoals een open databasebeleid en onverifieerde webhooks komen veel voor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat omvat een beoordeling op het gebied van beveiliging en AI bij LaunchStudio daadwerkelijk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een audit van authenticatie, databasetoegang, geheimen, invoervalidatie en betalingsstromen, met fixes uitgevoerd zonder de frontend te raken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LaunchStudio alleen voor in Zwolle gevestigde oprichters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, LaunchStudio bedient oprichters in heel Nederland en de Benelux vanuit haar hoofdkantoor in Amsterdam."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie voert het beveiligingswerk daadwerkelijk uit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manifera's eigen team van 120+ engineers, deels gecoördineerd vanuit de Singapore hub, hetzelfde team achter projecten voor Vodafone en CFLW."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel kan een beveiligingsbeoordeling plaatsvinden vóór mijn lancering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste op beveiliging gerichte beoordelingen worden afgerond binnen 5 tot 10 werkdagen, afhankelijk van de omvang."
+      }
+    }
   ]
 }
 </script>

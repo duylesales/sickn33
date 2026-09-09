@@ -137,50 +137,42 @@ Nee – zoals WachtPost's case rechtstreeks toont, biedt een correct geïmplemen
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Zouden ervaren auditors verbaasd zijn dat een beveiligingsproduct deze kloof had?",
+      "name": "Zou een ervaren beveiligingsauditor verbaasd zijn dat een op beveiliging gericht product deze specifieke kloof had?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet in het bijzonder — auditors verwachten elk pad voor het aanmaken van accounts onafhankelijk te controleren."
+        "text": "Niet in het bijzonder – auditors verwachten specifiek elk pad voor het aanmaken van accounts onafhankelijk te controleren, precies omdat secundaire paden zo gebruikelijk inconsistent zijn met het hoofdpad."
       }
     },
     {
       "@type": "Question",
-      "name": "Is opslag van wachtwoorden in platte tekst nog steeds veelvoorkomend?",
+      "name": "Is het opslaan van wachtwoorden in platte tekst nog steeds een veelvoorkomend probleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, vooral in secundaire paden, aangezien een nieuw codepad niet automatisch de lessen erft."
+        "text": "Het blijft veelvoorkomend specifiek in secundaire of later toegevoegde paden, zelfs in voor het overige goed gebouwde producten."
       }
     },
     {
       "@type": "Question",
-      "name": "Vormt een cybersecurity-achtergrond de beoordelingsmethodologie?",
+      "name": "Vormt een cybersecurity-achtergrond via CFLW de beoordelingsmethodologie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, het behandelen van elk accountpad als verdacht totdat het geverifieerd is komt uit die praktijk."
+        "text": "Ja, het vormt de methodologie rechtstreeks – het behandelen van elk pad voor het aanmaken van accounts als onafhankelijk verdacht totdat het geverifieerd is, is een gewoonte die voortvloeit uit toegewijde cybersecurity-praktijk."
       }
     },
     {
       "@type": "Question",
-      "name": "Vereist dit soort audit toegang tot live klantgegevens?",
+      "name": "Vereist dit soort audit toegang tot de live gebruikersdatabase van een oprichter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, het kan beoordeeld worden door de codepaden te bekijken zonder directe toegang tot live data."
+        "text": "Het kan typisch beoordeeld worden door de codepaden zelf te beoordelen zonder dat er rechtstreekse toegang tot live klantgegevens nodig is."
       }
     },
     {
       "@type": "Question",
-      "name": "Moet een oprichter aannemen dat hetzelfde patroon overal gebruikt is?",
+      "name": "Moet een oprichter aannemen dat zijn AI-tool overal hetzelfde authenticatiepatroon gebruikte?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee — een correcte primaire stroom biedt geen garantie over later toegevoegde secundaire stromen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe moeten reeds getroffen accounts met plattekst-wachtwoorden behandeld worden?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ze moeten gedwongen roteren via een reset-e-mail, aangezien blootgestelde plattekst als gecompromitteerd geldt."
+        "text": "Nee – zoals WachtPost's case rechtstreeks toont, biedt een correct geïmplementeerde primaire stroom geen garantie over secundaire of later toegevoegde stromen."
       }
     }
   ]

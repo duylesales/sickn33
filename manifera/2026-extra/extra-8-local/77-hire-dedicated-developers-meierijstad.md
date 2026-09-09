@@ -80,6 +80,10 @@ A senior developer hired directly in the Meierijstad/Brainport corridor currentl
 
 For a CTO who has already burned a quarter on a stalled local search, the more consequential number may be the roadmap cost of continued delay rather than the hourly rate difference itself — but both numbers point the same direction. [Book a senior architect call with Manifera](https://www.manifera.com/contact-us/) to scope your specific dedicated-developer requirement this week.
 
+## Contract Terms Checklist: What to Insist On in Writing Before Signing
+
+A "dedicated developer" agreement is only as strong as the four clauses most vendors would rather leave implicit. First, IP assignment: every line of code, architecture document, and design artifact produced must transfer to the client on creation, not on invoice payment or contract close — a Meierijstad CTO should reject any vendor contract silent on this point. Second, a data-processing addendum (DPA) compliant with GDPR, specifying exactly which client systems and personal data categories the dedicated developer can access, since Vietnam-based execution on a Brainport logistics platform's customer or shipment data still falls fully under EU data-protection obligations regardless of where the engineer sits. Third, a named notice period for both scaling down and full termination — 2-4 weeks is standard for a well-run dedicated-developer model, versus the months of severance exposure a direct Dutch hire can carry. Fourth, an explicit tech-stack matching guarantee: the contract should specify that proposed candidates are screened against the client's actual stack (in Meierijstad's case, frequently a mix of logistics-integration middleware, .NET or Node backends, and IoT data pipelines feeding Brainport-corridor supply chains), not a generalist pool assigned after signing. A vendor unwilling to put any of these four in writing is signaling more about the arrangement than a sales call ever will.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO whose local senior-developer search has stalled for a full quarter) At what point does it make sense to stop the local search and hire dedicated developers instead?
@@ -102,6 +106,22 @@ A well-structured dedicated-developer engagement is scalable up or down on a def
 
 Approximately €7,360 per month per developer through Manifera versus approximately €16,720 per month for a local senior hire in the Meierijstad/Brainport market — roughly 56% lower, with onboarding to independent contribution in about 2 weeks versus a 10-14 week search.
 
+### (Scenario: CTO concerned about who owns code once the engagement ends) Who owns the IP for code written by a dedicated developer sourced through Manifera?
+
+The client owns all code, architecture documents, and design artifacts on creation, not on invoice payment or contract close — this should be an explicit assignment clause in the contract, not an assumption left to default copyright rules.
+
+### (Scenario: CTO worried about GDPR exposure with a Vietnam-based developer touching EU customer data) How is GDPR compliance handled when a dedicated developer works from Vietnam on our Meierijstad company's codebase?
+
+A data-processing addendum specifies exactly which systems and personal-data categories the developer can access; EU data-protection obligations apply fully regardless of where the engineer is physically located, so the DPA — not the developer's location — is what governs compliance.
+
+### (Scenario: CTO wanting to de-risk the arrangement with a trial before a longer commitment) Can we trial a dedicated developer before committing to a longer engagement?
+
+Yes — a scoped 2-4 week onboarding sprint against a defined roadmap slice functions as a natural trial period, with the same notice-period flexibility applying if the fit isn't right before scaling to a longer-term engagement.
+
+### (Scenario: CTO needing developers who match a specific logistics/IoT tech stack already in use) Can Manifera match dedicated developers to our existing logistics-integration and IoT tech stack rather than assigning generalists?
+
+Candidate matching is scoped against the client's actual stack — for a Brainport-corridor logistics platform, typically specific backend frameworks and IoT data-pipeline experience — during the Week 1 scoping call, not assigned from a generalist pool after signing.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -111,7 +131,11 @@ Approximately €7,360 per month per developer through Manifera versus approxima
     { "@type": "Question", "name": "(Scenario: CTO worried a \"dedicated developer\" is really a shared contractor) How do I know a dedicated developer is actually dedicated and not split across other client accounts?", "acceptedAnswer": { "@type": "Answer", "text": "Insist on full access parity — the same repository, CI/CD, and ticketing access as an in-house hire, plus participation in your actual sprint cadence." } },
     { "@type": "Question", "name": "(Scenario: CTO evaluating onboarding risk for an external hire) What's the biggest reason dedicated-developer engagements underperform?", "acceptedAnswer": { "@type": "Answer", "text": "Skipped onboarding, not skill gaps. A structured onboarding sprint with an internal mentor pairing determines whether the engagement reaches independent productivity." } },
     { "@type": "Question", "name": "(Scenario: CTO comparing commitment risk between a direct hire and a dedicated developer) What happens if the roadmap need shrinks after I've staffed dedicated developers?", "acceptedAnswer": { "@type": "Answer", "text": "A well-structured engagement is scalable up or down on a defined notice period without the severance obligations a direct hire would carry." } },
-    { "@type": "Question", "name": "(Scenario: CTO budgeting a two-developer dedicated hire) What does hiring two dedicated developers through Manifera cost compared to two local hires?", "acceptedAnswer": { "@type": "Answer", "text": "Approximately €7,360 per month per developer through Manifera versus approximately €16,720 per month for a local senior hire in the Meierijstad/Brainport market." } }
+    { "@type": "Question", "name": "(Scenario: CTO budgeting a two-developer dedicated hire) What does hiring two dedicated developers through Manifera cost compared to two local hires?", "acceptedAnswer": { "@type": "Answer", "text": "Approximately €7,360 per month per developer through Manifera versus approximately €16,720 per month for a local senior hire in the Meierijstad/Brainport market." } },
+    { "@type": "Question", "name": "(Scenario: CTO concerned about who owns code once the engagement ends) Who owns the IP for code written by a dedicated developer sourced through Manifera?", "acceptedAnswer": { "@type": "Answer", "text": "The client owns all code, architecture documents, and design artifacts on creation, not on invoice payment or contract close, via an explicit assignment clause in the contract." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about GDPR exposure with a Vietnam-based developer touching EU customer data) How is GDPR compliance handled when a dedicated developer works from Vietnam on our Meierijstad company's codebase?", "acceptedAnswer": { "@type": "Answer", "text": "A data-processing addendum specifies exactly which systems and personal-data categories the developer can access; EU data-protection obligations apply fully regardless of the engineer's physical location." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting to de-risk the arrangement with a trial before a longer commitment) Can we trial a dedicated developer before committing to a longer engagement?", "acceptedAnswer": { "@type": "Answer", "text": "A scoped 2-4 week onboarding sprint against a defined roadmap slice functions as a natural trial period, with the same notice-period flexibility applying before scaling to a longer engagement." } },
+    { "@type": "Question", "name": "(Scenario: CTO needing developers who match a specific logistics/IoT tech stack already in use) Can Manifera match dedicated developers to our existing logistics-integration and IoT tech stack rather than assigning generalists?", "acceptedAnswer": { "@type": "Answer", "text": "Candidate matching is scoped against the client's actual stack during the Week 1 scoping call, not assigned from a generalist pool after signing." } }
   ]
 }
 </script>

@@ -49,6 +49,23 @@ Het gevaar is niet het gebruiken van een dev AI-tool in plaats van een developer
 
 De technici van Manifera, werkend vanuit Singapore, bestaan specifiek voor de categorie beslissingen die een dev AI-tool niet kan nemen — niet om de tool te vervangen, maar om ernaast te zitten precies waar oordeelsvermogen, niet codegeneratie, daadwerkelijk nodig is. Als u een beslispunt heeft bereikt waar uw tool u niet doorheen kan helpen redeneren, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) om het door te spreken met iemand die dat wel kan. De praktijk van Manifera voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) is precies rond dit soort oordeelsvermogen op schaal gebouwd, voor beslissingen die te ingrijpend zijn om over te laten aan een tool zonder belang bij de uitkomst.
 
+## Een Snelle Zelfevaluatie: Is Dit een Prompt-Vraag of een Oordeelsvraag?
+
+Wanneer u tegen een technisch probleem aanloopt, is de belangrijkste vaardigheid van een AI-native oprichter om direct te herkennen welk gereedschap nodig is: volstaat een extra prompt aan uw AI-tool, of vereist de situatie het oordeel van een ervaren engineer? Gebruik deze meetlat:
+
+**Het is een Prompt-Vraag als:**
+- De scope puur visueel of tekstueel is (lay-out, kleuren, formuliervelden, animaties).
+- Het gaat om een opzichzelfstaande component die geen invloed heeft op bestaande data.
+- Er een duidelijke documentatiepagina van een API bestaat die u letterlijk aan het model kunt voeden.
+- Het risico van een foutje minimaal is en direct zichtbaar is in de browser.
+
+**Het is een Oordeelsvraag als:**
+- Het gaat om de structuur van uw datamodel en relaties tussen verschillende gebruikersgroepen.
+- Het betrekking heeft op geld, betalingsstatussen, facturatie of gevoelige persoonsgegevens.
+- Er keuzes moeten worden gemaakt over de afweging tussen prestaties, kosten en beveiliging.
+- U merkt dat de AI-tool na drie opeenvolgende pogingen nog steeds fouten introduceert of code overschrijft.
+
+Blijf niet urenlang vruchteloos prompten op fundamentele oordeelsvragen. Schakel voor die beslissingen tijdig menselijke engineeringexpertise in; dat bespaart u dagen aan frustratie en garandeert een stabiel fundament.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de beslissing die zijn tool niet kon nemen
@@ -95,11 +112,46 @@ Als de vraag het afwegen van uw specifieke budget, groeiprognoses, of risicotole
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is a dev AI tool basically the same as hiring a developer?", "acceptedAnswer": { "@type": "Answer", "text": "No — a dev AI tool replaces the mechanical work of turning a clear specification into code, while a human developer's core value is judgment on tradeoffs the tool has no independent way to evaluate." } },
-    { "@type": "Question", "name": "What kinds of decisions should founders not leave entirely to a dev AI tool?", "acceptedAnswer": { "@type": "Answer", "text": "Anything involving genuine tradeoffs under incomplete information — infrastructure scaling, architectural decisions with long-term consequences, or anything where the right answer depends on business context the tool doesn't have." } },
-    { "@type": "Question", "name": "Does this mean founders should stop using dev AI tools for serious projects?", "acceptedAnswer": { "@type": "Answer", "text": "Not at all — it means using them for what they're excellent at, fast and accurate code generation from clear specs, while bringing in human judgment for decisions that require weighing real tradeoffs." } },
-    { "@type": "Question", "name": "How does Manifera fit into this without replacing the dev AI tool a founder already uses?", "acceptedAnswer": { "@type": "Answer", "text": "Our engineers, including the team based in Singapore, work alongside a founder's existing AI-built codebase, focusing specifically on the judgment calls and architecture decisions the tool was never designed to make." } },
-    { "@type": "Question", "name": "How do I know when I've hit a decision that needs human judgment rather than another prompt?", "acceptedAnswer": { "@type": "Answer", "text": "If the question involves weighing your specific budget, growth projections, or risk tolerance against multiple plausible technical paths, that's a signal it needs human judgment, not just another well-worded prompt." } }
+    {
+      "@type": "Question",
+      "name": "Is een dev AI-tool eigenlijk hetzelfde als een developer inhuren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee — een dev AI-tool vervangt het mechanische werk van het omzetten van een duidelijke specificatie in code, terwijl de kernwaarde van een menselijke developer het oordeelsvermogen is over afwegingen die de tool geen onafhankelijke manier heeft om te beoordelen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke soorten beslissingen moeten oprichters niet volledig aan een dev AI-tool overlaten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alles met echte afwegingen onder onvolledige informatie — infrastructuurschaling, architecturale beslissingen met langetermijngevolgen, of alles waarbij het \"juiste\" antwoord afhangt van bedrijfscontext die de tool niet heeft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Betekent dit dat oprichters moeten stoppen met dev AI-tools gebruiken voor serieuze projecten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Helemaal niet — het betekent ze gebruiken voor waar ze uitstekend in zijn (snelle, accurate codegeneratie op basis van duidelijke specificaties) terwijl u menselijk oordeelsvermogen inschakelt voor beslissingen die echte afwegingen vereisen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe past Manifera hierin zonder de dev AI-tool te vervangen die een oprichter al gebruikt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Onze technici, waaronder het team gevestigd in Singapore, werken naast de bestaande AI-gebouwde codebase van een oprichter, met specifieke focus op de oordeelsbeslissingen en architecturale keuzes waarvoor de tool nooit was ontworpen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik wanneer ik een beslissing heb bereikt die menselijk oordeel nodig heeft in plaats van nog een prompt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Als de vraag het afwegen van uw specifieke budget, groeiprognoses, of risicotolerantie tegen meerdere plausibele technische paden inhoudt, is dat een signaal dat het menselijk oordeel nodig heeft, niet zomaar een goed geformuleerde prompt."
+      }
+    }
   ]
 }
 </script>

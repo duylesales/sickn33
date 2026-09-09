@@ -90,19 +90,23 @@ Veel bureaus vinden dit eng en hopen dat het incident vanzelf vergeten wordt. Ma
 2. **Vingerwijzen midden in de crisis:** Zeggen dat *"het prototype van de klant zelf al gammel in elkaar zat"* mag technisch waar zijn, maar klinkt midden in een storing als defensief indekken. Bewaar de analyse van de grondoorzaak voor de schriftelijke debriefing achteraf.
 3. **Onrealistische deadlines toezeggen:** Beloven dat het "binnen tien minuten opgelost is" wanneer het in werkelijkheid drie kwartier duurt, vernietigt elk restje geloofwaardigheid. Kies voor een eerlijk: *"We hebben nog geen definitieve hersteltijd, maar dit zijn de acties die we nu uitvoeren."*
 
-## Evalueer Uw Interne Incident Response
+## Evalueer Uw Interne Incident Response, Los van de Klantevaluatie
 
-Nadat het stof is neergedaald, voert u een interne evaluatie uit met uw team en uw ontwikkelpartner: niet over de code, maar over het proces. Werd de klant snel genoeg geïnformeerd? Verliep de communicatie met de partner soepel of ging er context verloren? Hadden we direct toegang tot de juiste logbestanden? Gebruik elk incident om de procedure aan te scherpen voor de volgende keer.
+Nadat de debriefing naar de klant is verzonden, voert u een tweede, strikt interne evaluatie uit met uw eigen team en uw technische partner. Deze sessie richt zich op een fundamenteel andere vraag: niet alleen wat er technisch gebeurde, maar hoe de incidentrespons zélf heeft gefunctioneerd. Hoorde de klant snel genoeg van u? Verliep de overdracht tussen u en uw technische partner soepel, of ging er cruciale context verloren in de vertaalslag? Beschikte u direct over de toegang en informatie die u nodig had om updates met vertrouwen door te geven, of zat u langer op uw partner te wachten dan de klant op u had mogen wachten? 
+
+Deze interne debriefing is de plek waar u uw incidentrespons-procedure daadwerkelijk verbetert voor een volgende keer — iets wat bij voldoende klanttrajecten over meerdere jaren onvermijdelijk opnieuw zal voorkomen, ongeacht hoe bekwaam uw technische partner ook is. Behandel elk incident, zodra het eenmaal is opgelost, als een uitgelezen kans om de responsketen zelf aan te scherpen, en niet slechts als het verhelpen van de specifieke bug die de crisis veroorzaakte.
 
 ## Wat Dit Betekent Voor de Selectie van Uw Ontwikkelpartner
 
-Een lanceringsincident is het ultieme moment waarop uw technische partner wordt getest. Een partner die traag reageert, ontwijkend communiceert of direct in de verdediging schiet, maakt uw werk als bureau onmogelijk. Een partner die direct paraat staat, helder communiceert en verantwoordelijkheid neemt, maakt de crisis beheersbaar. Vraag een potentiële ontwikkelpartner daarom altijd hoe zij in het verleden reële productiestoringen hebben opgelost.
+Een lanceringsincident is tevens het moment waarop uw keuze voor een technische partner op de proef wordt gesteld op een manier die in een verkoopgesprek nooit naar voren komt. Een partner die traag reageert, vaag blijft over wat er is gebeurd of defensief reageert op de oorzaak, maakt elke bovenstaande stap aanzienlijk zwaarder. Daarentegen maakt een partner die direct reageert, kristalhelder communiceert en zonder excuses eigenaarschap toont, het hele proces dramatisch eenvoudiger te beheersen. 
+
+Dit is een doorslaggevend criterium om expliciet mee te wegen bij het selecteren en doorlichten van een partner vóórdat u hen nodig heeft in een crisissituatie, en niet pas wanneer alles vlekkeloos verloopt. Vraag elke technische partner die u overweegt direct hoe zij in het verleden zijn omgegaan met een reële productiestoring, en luister scherp of het antwoord daadwerkelijk eigenaarschap bevat over wat er misging, in plaats van alleen een beschrijving van de uiteindelijke technische oplossing.
 
 [LaunchStudio](https://launchstudio.eu/nl/) beschouwt proactieve incidentbeheersing als een vast onderdeel van elke samenwerking, ondersteund door [Manifera's 11+ jaar ervaring met bedrijfskritische softwaresystemen](https://www.manifera.com/portfolio/) voor veeleisende opdrachtgevers zoals TNO en CFLW. Dezelfde discipline die we inzetten om software in één keer goed te lanceren, hanteren we wanneer er onverhoopt toch iets misgaat.
 
 Loopt een livegang op dit moment spaak? [Laat direct een ervaren engineer meekijken](https://launchstudio.eu/nl/#contact) — nu het probleem nog actief impact heeft op uw klant.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Niels Kramer: De Lanceringsdag Die de Relatie Versterkte
 

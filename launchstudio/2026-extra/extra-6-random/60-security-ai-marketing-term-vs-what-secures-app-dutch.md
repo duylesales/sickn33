@@ -40,6 +40,17 @@ Echte beveiligingsdekking voor een AI-gegenereerde app betekent doelbewust contr
 
 LaunchStudio brengt Manifera's enterprise-grade engineering — meer dan 11 jaar ervaring, meer dan 120 technici, werk vertrouwd door klanten zoals Vodafone en TNO — naar precies dit soort beoordeling met volledige reikwijdte, waarbij ons Amsterdamse team de beveiligingsbadge van een leverancier behandelt als een startpunt, nooit als een conclusie. Als u vertrouwt op de goedkeuring van een scantool en wilt weten wat die daadwerkelijk dekte, kunt u [berekenen wat een volledige beveiligingsbeoordeling zou kosten](https://launchstudio.eu/nl/#calculator) en het verschil zelf zien. De praktijk van Manifera voor [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/) behandelt autorisatie, isolatie en incidentgereedheid als eersteklas vereisten, geen bijzaken die worden toegevoegd bovenop een geslaagde scan.
 
+## Een Tien-Minuten Test om te Controleren Wat Uw Security-Badge Écht Dekt
+
+Veel oprichters plaatsen met trots een 'Secure by Design' of 'SSL Secured' badge op hun website en wanen zich veilig. Het kost slechts tien minuten om te controleren wat die badge in de praktijk werkelijk voorstelt:
+
+**Minuut 1-3: Controleer het SSL/TLS-Certificaat.** Ga naar `ssllabs.com/ssltest/` en vul uw domeinnaam in. Binnen twee minuten ziet u een score (A+, A, B, etc.). Dit toont aan of uw transportbeveiliging up-to-date is en verouderde protocollen uitsluit.
+
+**Minuut 4-6: Controleer Beveiligingsheaders.** Ga naar `securityheaders.com` en test uw URL. Beschikt uw applicatie over een sterke Content Security Policy (CSP), Strict-Transport-Security (HSTS) en X-Frame-Options om 'clickjacking' te voorkomen? De meeste door AI gegenereerde backends scoren hier standaard een 'F' omdat deze headers nooit zijn geconfigureerd.
+
+**Minuut 7-10: Voer de Handmatige URL-Manipulatie Test Uit.** Log in op uw applicatie, kopieer de URL van een gevoelige pagina (bijvoorbeeld een rapport of factuur), open een incognitovenster en plak de link. Wordt u direct doorgestuurd naar het inlogscherm, of toont de pagina alsnog data? Pas vervolgens in de URL het ID-nummer aan. Kunt u data van een ander account zien?
+
+Als uw badge uitsluitend slaat op een gratis HTTPS-certificaat van uw hostingprovider terwijl uw headers ontbreken en autorisatie openstaat, is uw badge slechts een schijnveiligheid. Een echte security-status bewijst zichzelf op de achtergrond, niet met een plaatje op de homepage.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de badge die één ding controleerde
@@ -86,11 +97,46 @@ Vraag de leverancier rechtstreeks welke categorieën de scan controleert, en laa
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What does a typical Security AI scanning badge actually check?", "acceptedAnswer": { "@type": "Answer", "text": "Most are built to scan source code for patterns resembling hardcoded secrets, like API keys or passwords committed in plain text — a real and useful check, but a narrow one." } },
-    { "@type": "Question", "name": "Does passing a secrets scan mean an application is secure overall?", "acceptedAnswer": { "@type": "Answer", "text": "No. It means one specific category, leaked secrets in source code, was checked. Authorization logic, rate limiting, tenant isolation, and incident response are separate categories entirely, none of which a secrets scanner evaluates." } },
-    { "@type": "Question", "name": "Why would a vendor market a narrow tool under the broad word security?", "acceptedAnswer": { "@type": "Answer", "text": "Because security is a broad, reassuring term, and using it for a narrow feature isn't necessarily dishonest — but it does mean founders need to ask specifically what was checked rather than assume the badge covers everything." } },
-    { "@type": "Question", "name": "What does Herre Roelevink mean by architecture being the real challenge now?", "acceptedAnswer": { "@type": "Answer", "text": "He's pointing to the shift from whether an idea can become working software to whether that software can hold up structurally, which includes authorization and security architecture that a single automated scan can't confirm on its own." } },
-    { "@type": "Question", "name": "How would I find out what my own security badge actually covers?", "acceptedAnswer": { "@type": "Answer", "text": "Ask the vendor directly what categories the scan checks, and separately, have someone review authorization, rate limiting, and data isolation specifically — Manifera's engineers, including the Amsterdam team, do exactly this kind of full-scope review for AI-native founders." } }
+    {
+      "@type": "Question",
+      "name": "Wat controleert een typische \"Security AI\"-scanbadge daadwerkelijk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste zijn gebouwd om broncode te scannen op patronen die lijken op hardcoded geheimen, zoals API-sleutels of wachtwoorden die in platte tekst zijn vastgelegd — een echte en nuttige controle, maar een smalle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Betekent het slagen voor een geheimenscan dat een applicatie in het algemeen veilig is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Het betekent dat één specifieke categorie — gelekte geheimen in broncode — is gecontroleerd. Autorisatielogica, rate limiting, tenant-isolatie en incidentrespons zijn volledig aparte categorieën, waarvan geen enkele door een geheimenscanner wordt beoordeeld."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom zou een leverancier een smalle tool onder de brede term \"beveiliging\" vermarkten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat \"beveiliging\" een breed, geruststellend woord is, en het gebruiken voor een smalle functie is niet per se oneerlijk — maar het betekent wel dat oprichters specifiek moeten vragen wat er is gecontroleerd in plaats van aan te nemen dat de badge alles dekt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat bedoelt Herre Roelevink met architectuur als de echte huidige uitdaging?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hij wijst op de verschuiving van \"kan dit idee werkende software worden\" naar \"kan deze software structureel standhouden,\" wat autorisatie, beveiligingsarchitectuur en volwassenheid omvat die één geautomatiseerde scan niet zelfstandig kan bevestigen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kom ik erachter wat mijn eigen beveiligingsbadge daadwerkelijk dekt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vraag de leverancier rechtstreeks welke categorieën de scan controleert, en laat daarnaast specifiek autorisatie, rate limiting en gegevensisolatie beoordelen — de technici van Manifera, waaronder het Amsterdamse team, doen precies dit soort beoordeling met volledige reikwijdte voor AI-native oprichters."
+      }
+    }
   ]
 }
 </script>

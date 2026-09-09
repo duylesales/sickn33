@@ -39,6 +39,19 @@ Niet "hebben we een AI-beveiligingsfunctie?" maar "wie doet het terugkerende wer
 
 Achter de lanceringen van LaunchStudio staat het team van Manifera van meer dan 120 doorgewinterde technici, en onze hub in Singapore werkt met oprichters specifiek aan het omzetten van "we hebben een beveiligingsfunctie" naar "we hebben een beveiligingspraktijk" — toegangsbeoordelingen, patchcadans en monitoring die stilletjes op de achtergrond draait in plaats van in een pitch deck te leven. Als u wilt weten hoe die doorlopende dekking eruitziet, leggen onze [details over het supportpakket](https://launchstudio.eu/nl/#packages) dit uit, en Manifera's praktijk voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) past dezelfde discipline toe voor enterprise-klanten op veel grotere schaal.
 
+## De Vier Praktijken Die Schuilgaan Achter het Woord 'Beveiliging'
+
+Het woord 'beveiliging' is een containerbegrip dat oprichters vaak verlamt omdat het zo breed klinkt. In de praktijk van een moderne software-applicatie bestaat 95% van beveiliging echter uit slechts vier concrete, alledaagse disciplines:
+
+**1. Toegangsbeheer en Autorisatie (Wie Mag Wat Zien).** Het strikt scheiden van gebruikersdata via Row-Level Security en middleware. Zorg dat niemand records kan opvragen puur door een ID-nummer in de URL aan te passen.
+
+**2. Geheimenbeheer (Geen Sleutels op Straat).** Het isoleren van API-tokens, database-wachtwoorden en Stripe-keys in veilige omgevingsvariabelen aan de serverzijde, en het uitsluiten van configuratiebestanden via `.gitignore`.
+
+**3. Invoersanitisatie en Validatie (Geloof Geen Enkele Input).** Alle invoer van gebruikers én externe API's strikt controleren met validatieschema's (zoals Zod) vóórdat het de database raakt, om SQL-injecties en XSS-aanvallen uit te sluiten.
+
+**4. Verkeersbegrenzing (Rate Limiting en DDoS-Wering).** Het limiteren van het aantal pogingen per minuut op inlog- en zoekformulieren, zodat geautomatiseerde scripts uw infrastructuur niet kunnen overbelasten.
+
+Wanneer u deze vier disciplines structureel op orde heeft, is uw applicatie veiliger dan 90% van de prototypes op het internet, en kunt u zakelijke klanten met een gerust hart verwelkomen.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de functie die niet de praktijk was
@@ -85,11 +98,46 @@ LaunchStudio heeft een hub in Singapore die de regio Zuidoost-Azië bedient, naa
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the actual difference between an AI security feature and a security practice?", "acceptedAnswer": { "@type": "Answer", "text": "A feature is a single built capability. A practice is the recurring discipline of patching, access review, and monitoring that keeps the whole system safe over time." } },
-    { "@type": "Question", "name": "Can an AI-built app be secure without a dedicated security team?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but someone needs to own the recurring practice of checking advisories, reviewing access, and monitoring logs, even as a part-time engagement." } },
-    { "@type": "Question", "name": "How does LaunchStudio help with security practice, not just features?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio's team, backed by Manifera's 120+ engineers, sets up ongoing patch cadences, access reviews, and monitoring after launch." } },
-    { "@type": "Question", "name": "Is having one AI-powered security feature a red flag by itself?", "acceptedAnswer": { "@type": "Answer", "text": "No, it's legitimate. The red flag is treating it as evidence the whole system is secure." } },
-    { "@type": "Question", "name": "Where is LaunchStudio's team based for founders in Southeast Asia?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio has a hub in Singapore serving Southeast Asia, alongside Amsterdam and Ho Chi Minh City." } }
+    {
+      "@type": "Question",
+      "name": "Wat is het daadwerkelijke verschil tussen een AI-beveiligingsfunctie en een beveiligingspraktijk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een functie is één enkele gebouwde capaciteit, zoals anomaliedetectie op één type gebeurtenis. Een praktijk is de terugkerende discipline van patchen, toegangsbeoordeling en monitoring die het hele systeem in de loop van de tijd veilig houdt, niet alleen het ene ding waar de functie op let."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een door AI gebouwde app veilig zijn zonder toegewijd beveiligingsteam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, maar er moet iemand — intern of extern — verantwoordelijk zijn voor de terugkerende praktijk: het controleren van kwetsbaarheidsadviezen, het beoordelen van toegang en het monitoren van logs, zelfs als die iemand een parttime inzet is in plaats van een volledige aanstelling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe helpt LaunchStudio met beveiligingspraktijk, niet alleen functies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het team van LaunchStudio, ondersteund door de meer dan 120 technici van Manifera, zet doorlopende patchcadansen, toegangsbeoordelingen en monitoring op voor oprichters na de lancering, in plaats van beveiliging te behandelen als een eenmalig bouwitem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het hebben van één AI-aangedreven beveiligingsfunctie op zichzelf een rode vlag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee — het is een legitieme capaciteit. De rode vlag is die ene functie behandelen als bewijs dat het hele systeem veilig is, wat een andere en veel bredere claim is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is het team van LaunchStudio gevestigd voor oprichters in Zuidoost-Azië?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio heeft een hub in Singapore die de regio Zuidoost-Azië bedient, naast het Europese hoofdkantoor in Amsterdam en het engineeringcentrum in Ho Chi Minh-stad."
+      }
+    }
   ]
 }
 </script>

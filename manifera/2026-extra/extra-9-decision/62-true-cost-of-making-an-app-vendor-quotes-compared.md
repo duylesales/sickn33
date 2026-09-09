@@ -120,6 +120,12 @@ Talk to one of our senior architects about your specific challenge and get a lik
 }
 </script>
 
+## A Reusable Scoring Table for Your Own Three Quotes
+
+Build a table with one row per vendor and one column per factor, then score each cell 0-2: named engineers with stated seniority (0 = unnamed/TBD, 2 = named with seniority), QA process specificity (0 = "testing included," 2 = a defined device matrix), warranty period (0 = none stated, 2 = 60+ days with acceptance criteria), revision rounds (0 = one, 2 = three or more), documentation handover (0 = unmentioned, 2 = named deliverable), and post-launch maintenance structure (0 = no plan, 2 = usage-scaled retainer). That's a possible 12 points per vendor.
+
+Applied to the three quotes above: Quote A (freelancer marketplace) scores roughly 1-2 out of 12. Quote B (boutique agency) scores 8-9, strong on paper but with a rigid maintenance retainer dragging down the post-launch column. Quote C (structured offshore team) scores 10-11, the highest total despite sitting in the middle of the price range — which is exactly the pattern worth internalizing: the score, not the headline number, is what should drive the recommendation you bring to your CFO.
+
 ## Frequently Asked Questions
 
 ### Why does the cost of making an app vary so much between vendor quotes for the same spec?
@@ -136,6 +142,22 @@ Yes, when the team operates under clear Agile governance with confirmed working-
 
 ### How long should discovery take before I get a firm app development quote?
 A properly scoped discovery phase for a mid-complexity app typically takes one to two weeks, not several. A discovery phase priced or scheduled significantly longer than that is often a sign the agency is billing broadly rather than scoping tightly.
+
+### (Scenario: A VP of Engineering scored three quotes and found the mid-priced offshore quote outscored the most expensive agency bid) How can a mid-priced quote outscore the most expensive quote on a line-item scorecard?
+
+Because price and completeness aren't the same axis — a premium agency's higher number often reflects overhead like office costs and senior billing rates applied broadly, not necessarily more complete coverage of QA, warranty, and post-launch terms. A structured mid-tier quote can price these line items more precisely without carrying that overhead, which is exactly why scoring line items rather than comparing totals changes the recommendation.
+
+### (Scenario: A vendor's quote scores well everywhere except the maintenance retainer, which is a flat senior-rate fee regardless of actual ticket volume) Why does a flat maintenance retainer priced at senior billing rates score poorly compared to a usage-scaled one?
+
+Because it locks in a fixed monthly cost sized for the busiest possible month regardless of actual post-launch workload, which rarely matches real usage patterns after the first few months. A usage-scaled retainer that adjusts with ticket volume and infrastructure load reflects actual cost of ownership far more accurately over a multi-year period.
+
+### (Scenario: A VP of Engineering wants to present the scoring table to a CFO who only cares about the bottom-line number) How do I explain a line-item scoring table to a CFO who only wants to see the bottom-line comparison?
+
+Frame the score as a predictor of total cost of ownership, not just build quality — a low-scoring cheap quote frequently generates change orders and a rocky maintenance phase that erode its apparent savings within the first year. Presenting the score alongside a projected 24-month total cost, not just the initial quote, translates the comparison into language a CFO evaluates by default.
+
+### (Scenario: A vendor disputes their low score on the scorecard and claims their quote covers everything, just not written down explicitly) What should I do if a vendor pushes back on a low scorecard score, insisting their quote covers everything implicitly?
+
+Ask them to confirm each missing item in writing as an amendment to the proposal before scoring it again. A vendor whose practices genuinely cover the missing items will have no difficulty documenting them; a vendor who resists formalizing verbal assurances is confirming that the gap was real, not just a scoring technicality.
 
 <script type="application/ld+json">
 {

@@ -58,7 +58,7 @@ Als een Series A-gesprek in het verschiet ligt en uw deploymentproces nog steeds
 
 LaunchStudio wordt geëxploiteerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 en geleid door Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink het verwoordt: *"We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring in precies dat vakgebied."* Door "Nederlands management te combineren met Vietnamees meesterschap", onderhoudt Manifera hoofdkantoren in **Amsterdam, Nederland** (Herengracht 420), een Aziatische hub in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minh-stad, Vietnam** (Pho Quang Street), met enterprise-klanten waaronder Vodafone en TNO. Via LaunchStudio implementeren senior engineeringteams geautomatiseerd testen, gefaseerde deployment, deploymentlogging en rollback-mogelijkheid rondom uw bestaande AI-builder-codebase, en veranderen ze deze in een productieklare MVP die bestand is tegen technische due diligence binnen 1 tot 3 weken, zonder een rebuild. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/nl/#contact) of bekijk hoe het [maatwerk software-ontwikkelteam van Manifera](https://www.manifera.com/services/custom-software-development/) deploymentinfrastructuur aanpakt voor startups in de financieringsfase.
 
-## Echt Voorbeeld
+## Echt voorbeeld
 
 ### Een AI-native Founder in Actie: Een Deploy-script Dat Bijna een Ronde Kostte
 

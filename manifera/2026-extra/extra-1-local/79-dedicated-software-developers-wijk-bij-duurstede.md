@@ -68,6 +68,14 @@ Manifera structured a two-developer pod with proportional governance oversight a
 
 A CFO at a small company who evaluates dedicated developers using enterprise-scale ROI assumptions either overstates the expected savings or wrongly dismisses a genuinely sound option, both of which lead to a worse decision than a properly scaled model would produce. Building a small-team ROI model costs nothing beyond asking a vendor for one instead of accepting a generic enterprise case study. [Talk to Manifera about a small-team ROI model](https://www.manifera.com/contact-us/).
 
+## The Small-Team Cost Breakdown
+
+Run the numbers for a two-developer pod supporting a production-planning tool: at a blended offshore rate of roughly €50-60/hour, two developers cost approximately €17,000-20,000 per month fully loaded. Proportional governance — a fractional architect and QA oversight rather than a dedicated in-house layer — adds another 12-18% on top for a small pod, versus 6-8% at enterprise scale, because the fixed governance floor doesn't shrink even when headcount does.
+
+Against a "do nothing" baseline, a food-processing company running production planning on spreadsheets typically loses 3-6 hours per week per planner to manual reconciliation and error correction — for a small operation with two to three planners, that's 6-18 hours weekly, or roughly €1,500-4,500 in fully loaded labor cost, before counting the cost of a planning error that misallocates a production run.
+
+Three numbers matter more than the headline monthly rate: the minimum viable team size (most tools of this scope need at least two developers for continuity if one is unavailable, not one), the flex-capacity cost (typically a 15-25% rate premium to add a third developer temporarily versus committing to it year-round), and the governance floor (roughly 0.3-0.5 FTE of architectural oversight regardless of whether the pod is two people or twenty).
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO at a small company evaluating dedicated developers) Why don't enterprise outsourcing ROI case studies apply to a two-to-three-person engagement?
@@ -90,6 +98,22 @@ Because budget certainty and the ability to add or reduce capacity for specific 
 
 Ask for a model scaled specifically to the actual team size being considered, with governance and flexibility costs priced proportionally rather than diluted from an enterprise case study.
 
+### (Scenario: CFO worried a vendor won't take on a small engagement) Do most outsourcing vendors have minimum team-size requirements that exclude a two-person engagement?
+
+Many enterprise-focused vendors set five-plus developer minimums to make their overhead work, which is exactly why a CFO evaluating a small engagement should confirm minimum commitment size before requesting a proposal, rather than discovering it after a sales call.
+
+### (Scenario: CFO concerned about key-person risk in a two-developer pod) What happens if one of only two dedicated developers becomes unavailable mid-project?
+
+A properly structured small pod includes documented architecture and shared context specifically so a second developer or a fast substitute can cover continuity, which is why a two-developer minimum, not one, is the realistic floor for anything beyond a short-lived prototype.
+
+### (Scenario: CFO evaluating food-processing-specific compliance costs) Does food-processing traceability and compliance data add meaningfully to a small team's development cost?
+
+Yes, typically 10-15% more engineering time than a generic production tool, because traceability requirements — batch-level audit trails, allergen flagging, recall-readiness reporting — add data-model and validation complexity even at small scale.
+
+### (Scenario: CFO deciding between a fixed small pod and flexible capacity) Is it cheaper to commit to three developers year-round or keep two and flex up temporarily?
+
+For most small companies with seasonal peak-planning needs, flexing a third developer in for 2-3 months at a 15-25% rate premium costs less overall than carrying a third developer's full salary the other nine months of the year.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +123,11 @@ Ask for a model scaled specifically to the actual team size being considered, wi
     { "@type": "Question", "name": "(Scenario: CFO trying to define the right comparison baseline) What should a small company actually compare dedicated developer costs against?", "acceptedAnswer": { "@type": "Answer", "text": "Often the opportunity cost of not building the tool at all, or continuing to rely on a fragile manual process, rather than a direct local-hire comparison." } },
     { "@type": "Question", "name": "(Scenario: CFO worried governance overhead makes small engagements inefficient) Is governance overhead proportionally more expensive for a small team?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a two-person pod still needs the same architectural oversight a larger pod needs, making governance a proportionally larger share of total cost." } },
     { "@type": "Question", "name": "(Scenario: CFO valuing budget flexibility for a small company) Why does scaling flexibility matter more for a small company than a large one?", "acceptedAnswer": { "@type": "Answer", "text": "Budget certainty and the ability to adjust capacity without renegotiating a large contract matters disproportionately when the overall budget is small." } },
-    { "@type": "Question", "name": "(Scenario: CFO trying to build a realistic case for a small engagement) How should a CFO build an ROI case for a small dedicated developer engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for a model scaled specifically to the actual team size, with governance and flexibility costs priced proportionally rather than diluted from an enterprise case study." } }
+    { "@type": "Question", "name": "(Scenario: CFO trying to build a realistic case for a small engagement) How should a CFO build an ROI case for a small dedicated developer engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for a model scaled specifically to the actual team size, with governance and flexibility costs priced proportionally rather than diluted from an enterprise case study." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried a vendor won't take on a small engagement) Do most outsourcing vendors have minimum team-size requirements that exclude a two-person engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Many enterprise-focused vendors set five-plus developer minimums, so confirming minimum commitment size before requesting a proposal avoids wasted sales cycles." } },
+    { "@type": "Question", "name": "(Scenario: CFO concerned about key-person risk in a two-developer pod) What happens if one of only two dedicated developers becomes unavailable mid-project?", "acceptedAnswer": { "@type": "Answer", "text": "A properly structured small pod documents architecture and shared context so a second developer or fast substitute can cover continuity, making two developers the realistic floor beyond a short prototype." } },
+    { "@type": "Question", "name": "(Scenario: CFO evaluating food-processing-specific compliance costs) Does food-processing traceability and compliance data add meaningfully to a small team's development cost?", "acceptedAnswer": { "@type": "Answer", "text": "Typically 10-15% more engineering time than a generic production tool, due to batch-level audit trails, allergen flagging, and recall-readiness reporting requirements." } },
+    { "@type": "Question", "name": "(Scenario: CFO deciding between a fixed small pod and flexible capacity) Is it cheaper to commit to three developers year-round or keep two and flex up temporarily?", "acceptedAnswer": { "@type": "Answer", "text": "For most small companies with seasonal peaks, flexing a third developer in for 2-3 months at a 15-25% rate premium costs less than carrying that role year-round." } }
   ]
 }
 </script>

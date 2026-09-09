@@ -123,7 +123,7 @@ Elk van deze uitspraken is een afleidingsmanoeuvre. Blijf doorvragen naar het co
 
 **Plan een vrijblijvend gesprek van 15 minuten en leg uw security questionnaire rechtstreeks aan ons voor — wij beantwoorden uw vragen direct en feitelijk tijdens het gesprek.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een SaaS-Oprichter in Actie: De Vragenlijst Die de Deal Bijna Blokkeerde
 

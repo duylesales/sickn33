@@ -49,6 +49,21 @@ Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoor
 
 LaunchStudio brengt de enterprise-grade engineeringdiscipline van Manifera naar precies dit soort afgebakende, eerlijke beoordeling, en onze vestiging in Singapore behandelt een gestage stroom van deze beoordelingen voor zowel oprichters uit Zuidoost-Azië als Europa. U kunt [uw project beschrijven en een productiegereedheidsbeoordeling aanvragen](https://launchstudio.eu/nl/#contact) die dezelfde duidelijke grens trekt als het rapport van Sophie. Voor meer informatie over de engineeringstandaard achter deze beoordelingen, zie de praktijk van Manifera op het gebied van [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/), opgebouwd bij meer dan 160 zakelijke projecten.
 
+## Welke Review Heeft U Daadwerkelijk Nodig? Een Helder Overzicht van de Opties
+
+Niet elke applicatie heeft op elk moment behoefte aan een complete, tienduizend euro kostende penetratietest door een gespecialiseerd securitybedrijf. Afhankelijk van uw bedrijfsfase kiest u het type technische evaluatie dat exact aansluit bij uw actuele risicoprofiel:
+
+**Optie 1: De Pre-Launch Architectuur- en Autorisatiescan.** Dit is de ideale review voor vroege AI-gegenereerde prototypes die binnenkort live gaan met hun eerste betalende gebruikers. Focus: het opsporen van ontbrekende server-side autorisatie, hardcoded geheimen, onveilige API-endpoints en het ontbreken van basale foutafhandeling. Doorlooptijd: 2 tot 4 dagen. Kosten: bescheiden en direct rendabel.
+
+**Optie 2: De AVG- en Compliance-Audit.** Noodzakelijk zodra u gevoelige persoonsgegevens verwerkt of zakelijke B2B-klanten bedient die strenge privacygaranties eisen. Focus: dataminimalisatie, veilige opslag binnen de EU, encryptie in rust en overdracht, bewaartermijnen en verwerkersovereenkomsten. Doorlooptijd: circa 1 week.
+
+**Optie 3: De Formele Penetratietest (Pentest).** Pas relevant wanneer u substantiële tractie heeft, aanzienlijke bedragen verwerkt of wanneer enterprise-contracten en verzekeraars dit expliciet contractueel eisen. Een ethisch hacker probeert actief in te breken in uw systemen om kwetsbaarheden bloot te leggen. Doorlooptijd: 1 tot 2 weken. Kosten: aanzienlijk.
+
+**Optie 4: De Schaalbaarheids- en Performance-Audit.** Zinvol wanneer uw gebruikersaantallen snel toenemen en u merkt dat query's vertragen of de serverkosten onevenredig stijgen. Focus: database-indexering, caching-strategieën, connectiepooling en achtergrondverwerking.
+
+Kies de review die past bij uw huidige fase. Voor 95% van de AI-native startups in de pre-launch fase biedt Optie 1 (de gerichte architectuur- en autorisatiescan) exact de noodzakelijke bescherming tegen een fractie van de kosten van zwaardere audits.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: een rapport correct lezen
@@ -93,11 +108,46 @@ Ja, de vestiging in Singapore behandelt productiegereedheidsbeoordelingen voor o
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Does a high production-readiness score mean my product is good?", "acceptedAnswer": { "@type": "Answer", "text": "No. It means authentication, data handling, deployment configuration, and resilience are in good shape. It says nothing about business logic, UX, or market fit." } },
-    { "@type": "Question", "name": "What specific categories does a LaunchStudio production-readiness review cover?", "acceptedAnswer": { "@type": "Answer", "text": "Authentication and authorization, data handling and encryption, deployment configuration, and basic resilience under unexpected input or load." } },
-    { "@type": "Question", "name": "Why doesn't the review evaluate whether my app's core feature actually works well?", "acceptedAnswer": { "@type": "Answer", "text": "That's a product and business logic question, not a security or stability question, requiring a different kind of evaluation." } },
-    { "@type": "Question", "name": "What does Herre Roelevink mean by \"the challenge is no longer turning good ideas into software\"?", "acceptedAnswer": { "@type": "Answer", "text": "He's describing a shift toward architecture and security as the harder problem for AI-generated products, exactly what a production-readiness score measures." } },
-    { "@type": "Question", "name": "Does LaunchStudio's Singapore team produce these reports directly?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the Singapore hub handles production-readiness assessments for founders across Southeast Asia and Europe using the same scoped methodology." } }
+    {
+      "@type": "Question",
+      "name": "Betekent een hoge productiegereedheidsscore dat mijn product goed is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Het betekent dat de categorieën die het dekt — authenticatie, gegevensverwerking, implementatieconfiguratie, veerkracht — in goede staat zijn. Het zegt niets over bedrijfslogica, UX of marktfit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke specifieke categorieën dekt een productiegereedheidsbeoordeling van LaunchStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Authenticatie en autorisatie, gegevensverwerking en versleuteling, implementatieconfiguratie, en basale veerkracht bij onverwachte invoer of belasting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom beoordeelt de beoordeling niet of de kernfunctie van mijn app daadwerkelijk goed werkt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat dat een product- en bedrijfslogicavraag is, geen beveiligings- of stabiliteitsvraag — er is een ander soort evaluatie nodig om die te beantwoorden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat bedoelt Herre Roelevink met \"de uitdaging is niet langer om goede ideeën om te zetten in software\"?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hij beschrijft een verschuiving naar architectuur en beveiliging als het moeilijkere probleem voor door AI gegenereerde producten, en dat is precies wat een productiegereedheidsscore is gebouwd om te meten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Stelt het Singaporese team van LaunchStudio deze rapporten zelf op?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, de vestiging in Singapore behandelt productiegereedheidsbeoordelingen voor oprichters in heel Zuidoost-Azië en Europa, volgens dezelfde afgebakende methodologie."
+      }
+    }
   ]
 }
 </script>

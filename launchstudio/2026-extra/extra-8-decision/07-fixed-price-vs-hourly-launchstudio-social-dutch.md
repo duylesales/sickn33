@@ -1,21 +1,21 @@
-🚨 Ze offreerde haar klant een vaste prijs van €4.500. Haar freelance ontwikkelaar declareerde op uurbasis en schoot met 23 uur door de schatting heen — waardoor haar winstmarge volledig verdampte. 😳
+🚨 Ze offreerde haar klant een vaste prijs van €4.500. Haar onderaannemer factureerde per uur. De inschatting liep met 23 uur uit — en ze betaalde elke euro overschrijding uit eigen zak. 😳
 
-Als u software doorverkoopt onder een vaste offerte, is uurbasis-facturatie geen betaalkeuze — het is een enorm risico dat u zelf absorbeert. Dit is de valkuil: 🧠
+Als u technisch werk doorverkoopt onder uw eigen vaste offerte, is een uurtarief geen prijsmodel. Het is een risico dat u absorbeert voor iemand anders. Dit is de valkuil: 🧠
 
-❌ De freelancer controleert de uren — u heeft nul controle
-❌ Uw klantprijs staat vast zodra de deal getekend is
-❌ Elke overschrijding in uren gaat direct ten koste van uw marge
-❌ Uurbasis beloont traag werken in plaats van senior expertise
+❌ De leverancier bepaalt de uren — u heeft er nul controle over
+❌ Uw klantprijs staat muurvast zodra u de deal sluit
+❌ Een overschrijding in uren heeft maar één plek om te landen: uw marge
+❌ Factureren per uur beloont traag werken, niet de expertise waar u voor betaalt
 
-✅ Een vaste prijs dwingt de partner om het probleem vooraf echt te doorgronden
-✅ Scope vooraf vastgelegd op basis van een technische audit
-✅ Geen stilzwijgende extra uren op de factuur
-✅ Een rotsvast inkoopbedrag waarop u met vertrouwen uw eigen winstmarge bouwt
+✅ Een vaste prijs vereist dat de leverancier het probleem eerst echt begrijpt
+✅ Scope vooraf benoemd, gekoppeld aan een echte audit, geprijsd vóór de start
+✅ Als de scope werkelijk verandert, wordt er opnieuw geoffreerd — nooit stilletjes extra uren
+✅ Een betrouwbaar bedrag waarop u met een gerust hart uw eigen klantofferte kunt bouwen
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering, factureren we nooit per uur — exact om deze reden. 💶
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise productie-engineering, factureren we nooit per uur — exact om deze reden. 💶
 
-Lottes resultaat: Volgende project opgeleverd binnen 10 dagen voor exact de vaste inkoopprijs van €2.200, met €2.600 beschermde marge. 🚀
+Haar resultaat: haar volgende klantproject werd netjes binnen budget en tijdlijn opgeleverd, met haar marge volledig intact. 🚀
 
-👉 Vraag een vaste prijs aan voor uw volgende klantproject: https://launchstudio.eu/nl/blog/fixed-price-vs-hourly-launchstudio
+👉 Vraag een offerte met vaste prijs aan voor uw volgende klanttraject: https://launchstudio.eu/nl/blog/fixed-price-vs-hourly-launchstudio
 
-#AgencyLife #WhiteLabel #LaunchStudio #Manifera #Freelance #VastePrijs #ScopeCreep
+#AgencyLife #WhiteLabel #LaunchStudio #Manifera #Freelance #ScopeCreep

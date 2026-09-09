@@ -77,7 +77,7 @@ Welk model u uiteindelijk ook kiest: het meest waardevolle technische fundament 
 
 [Plan een introductiegesprek van 15 minuten](https://launchstudio.eu/nl/#contact) om te bespreken welk model daadwerkelijk aansluit bij de kostenstructuur van uw product voordat u een van beide definitief inbouwt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een SaaS-oprichter in actie: De gratis tier die meer kostte dan het product opbracht
 

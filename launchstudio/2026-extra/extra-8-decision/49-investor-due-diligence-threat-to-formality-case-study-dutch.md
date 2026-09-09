@@ -61,8 +61,7 @@ Oprichters die dit goed aanpakken, behandelen productiehardening als onderdeel v
 
 [Vertel ons over je fundraisingtimeline](https://launchstudio.eu/nl/#contact) — hoe eerder dit werk gebeurt ten opzichte van het openen van een data room, hoe meer het functioneert als voorbereiding in plaats van crisisrespons.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een SaaS Oprichter Scale-Up in de Praktijk: De Lacune Dichten Voordat de Beoordelaar Hem Vond
 
 Wolfgang Haas, een oprichter uit Frankfurt, bouwde LedgerTrust, een AI-ondersteunde tool voor het reconciliëren van declaraties voor kleine accountantskantoren, met Cursor en een Supabase-backend. Wolfgang had LedgerTrust bootstrapped tot een bescheiden maar groeiend betalend klantenbestand, en een seed-stage fonds begon serieuze gesprekken over het leiden van een ronde, met een termsheet verwacht binnen enkele weken, mits standaard due diligence.

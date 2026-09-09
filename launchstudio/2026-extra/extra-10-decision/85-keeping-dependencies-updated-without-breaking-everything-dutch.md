@@ -85,7 +85,7 @@ Beoordeel dit nuchter:
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in software-onderhoud en legacy-modernisering) richten we dependency-automatisering, lockfile-hygiëne en gerichte testsuites in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw codebase-onderhoud met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw software wendbaar en veilig blijft.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Twee Jaar Achterstallig Onderhoud en Een Deadline van Zes Weken
 

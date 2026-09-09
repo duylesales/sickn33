@@ -57,6 +57,18 @@ Manifera's audits voor sessiebeveiliging worden uitgevoerd door het engineeringt
 
 [Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
+## Sessiebeheer Verder Dan Uitloggen: Wat U Nog Meer Moet Controleren
+
+Het ongeldig maken van een sessie bij het uitloggen is een belangrijk startpunt, maar het is slechts één schakel in de bredere levenscyclus van gebruikersauthenticatie. Een volwaardige controle inspecteert het gehele sessiebeheer:
+
+- **Automatische sessieverlooptijd (Session Expiry)** — verloopt een inlogtoken automatisch na een redelijke periode van inactiviteit, of blijft het voor altijd geldig zolang de gebruiker niet handmatig op 'Uitloggen' klikt? Een oneindig geldig token betekent dat een eenmaal ontvreemd token voor altijd toegang blijft bieden.
+- **Sessie-intrekking bij wachtwoordwijziging** — wanneer een gebruiker zijn wachtwoord wijzigt of herstelt, moet de backend gegarandeerd alle andere actieve sessies van dat account direct beëindigen.
+- **Beperking van gelijktijdige sessies (Concurrent Sessions)** — voor gevoelige zakelijke applicaties is het wenselijk om inzicht te hebben in het aantal actieve sessies per account en oude sessies automatisch af te sluiten wanneer vanaf een nieuw apparaat wordt ingelogd.
+- **Veilige verversing van tokens (Refresh Token Rotation)** — als uw architectuur gebruikmaakt van korte sessietokens in combinatie met refresh tokens, moet elk refresh token bij gebruik direct worden geroteerd en ongeldig worden gemaakt voor toekomstig hergebruik.
+- **Opslaglocatie van inloggegevens in de browser** — zorg ervoor dat sessietokens uitsluitend worden opgeslagen in `HttpOnly`, `Secure` cookies en nooit in `localStorage`, waar ze kwetsbaar zijn voor diefstal via XSS-aanvallen.
+
+Sessiebeveiliging is een doorlopend proces gedurende de hele gebruikerssessie. Het systematisch controleren van deze stappen waarborgt dat de achterdeur net zo goed vergrendeld is als de voordeur.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Het uitloggen dat niemand daadwerkelijk uitlogde
@@ -76,25 +88,25 @@ Een IT-vaardige leraar die het gedrag van het platform testte uit professionele 
 
 ## Veelgestelde vragen
 
-### Zou een sessiebeheerspecialist onvolledige uitlog-ongeldigverklaring beschouwen als een veelvoorkomende kloof?
+### Zou een sessiespecialist onvolledige uitlog-invalidatie beschouwen als een veelvoorkomend gebrek?
 
-Ja, vrij veelvoorkomend – het bouwen van een uitlogfunctie die de zichtbare interface bijwerkt is de meer voor de hand liggende eis, terwijl het server-side ongeldig maken een afzonderlijke stap is.
+Ja, zeer gebruikelijk — het bouwen van een uitlogknop die de gebruikersinterface visueel update en het token uit de browser wist is direct zichtbaar en eenvoudig te testen. Het daadwerkelijk ongeldig maken van het token op de authenticatieserver vereist een specifieke backend-invalidatielaag die in snelle prototypes vaak ontbreekt.
 
-### Geldt dit risico alleen voor gedeelde apparaten zoals in klaslokalen?
+### Is dit risico alleen relevant voor gedeelde apparaten (zoals op scholen of kantoren), of ook voor individuele gebruikers?
 
-Het geldt ook voor individuele gebruikers, hoewel het praktische risico urgenter is op gedeelde apparaten.
+Het is direct acuut op gedeelde apparaten waar een volgende gebruiker het vorige account kan overnemen, maar ook voor individuele gebruikers: als een apparaat wordt gestolen of een netwerkaanval plaatsvindt, blijft een niet-geïnvalideerd token bruikbaar, zelfs nadat de gebruiker meende veilig te zijn uitgelogd.
 
-### Maakt ervaring met consumenten- en institutionele producten uit voor gedeelde apparaten?
+### Manifera bouwt applicaties voor zowel consumenten als zakelijke instellingen — helpt die ervaring bij het signaleren van sessierisico's?
 
-Ja, aangezien het begrijpen van de specifieke gebruikscontext vormgeeft aan welke risico's het meest dringend zijn.
+Ja, het begrijpen van de operationele context (gedeelde werkplekken versus individuele smartphones) bepaalt hoe streng sessies moeten worden beheerd. Manifera implementeert levenscyclusbeheer voor sessies dat voldoet aan enterprise-beveiligingsstandaarden.
 
-### Vangt deze casus het verschil tussen "ziet er correct uit" en "is correct" goed op?
+### Hoe sluit deze case aan bij de visie van Herre Roelevink over het verschil tussen 'lijkt correct' en 'is correct'?
 
-Zo goed als een enkel voorbeeld maar kan – de interface zag er compleet correct uit, terwijl het onderliggende gedrag betekenisvol verschilde.
+Perfect — in de browser van de oprichter werkte de uitlogknop vlekkeloos: het scherm sprong naar de homepage en de naam verdween. Het onderliggende token bleef op de achtergrond echter springlevend. Dat verschil tussen uiterlijke werking en diepe technische realiteit is exact waar LaunchStudio op toetst.
 
-### Kan een oprichter zijn eigen uitlogfunctie op deze kloof testen zonder diepe technische kennis?
+### Kan een oprichter zelf controleren of zijn sessietokens na het uitloggen daadwerkelijk dood zijn?
 
-Het vereist enige technische vaardigheid met tools die het mogelijk maken om een eerder buitgemaakt verzoek opnieuw te verzenden, wat niet elke oprichter paraat heeft.
+Ja, door een beveiligd netwerkverzoek vanuit de developer tools te kopiëren (als cURL-commando), vervolgens in de browser op 'Uitloggen' te klikken, en daarna exact hetzelfde cURL-verzoek opnieuw uit te voeren in de terminal. Als de server nog steeds data retourneert, is het token server-side niet geïnvalideerd.
 
 <script type="application/ld+json">
 {
@@ -103,42 +115,42 @@ Het vereist enige technische vaardigheid met tools die het mogelijk maken om een
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Nút Đăng xuất (Logout) trên giao diện đã ẩn đi thì session ở Backend đã thực sự bị hủy chưa?",
+      "name": "Zou een sessiespecialist onvolledige uitlog-invalidatie beschouwen als een veelvoorkomend gebrek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chưa chắc — rất nhiều ứng dụng chỉ xóa Token ở LocalStorage phía Client chứ không gửi lệnh Revoke/Blacklist Token lên Server, khiến Token cũ vẫn dùng lại được."
+        "text": "Ja, zeer gebruikelijk — het bouwen van een uitlogknop die de gebruikersinterface visueel update en het token uit de browser wist is direct zichtbaar en eenvoudig te testen. Het daadwerkelijk ongeldig maken van het token op de authenticatieserver vereist een specifieke backend-invalidatielaag die in snelle prototypes vaak ontbreekt."
       }
     },
     {
       "@type": "Question",
-      "name": "Lỗi đăng xuất không hủy Session nguy hiểm nhất ở môi trường nào?",
+      "name": "Is dit risico alleen relevant voor gedeelde apparaten (zoals op scholen of kantoren), of ook voor individuele gebruikers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nguy hiểm nhất ở máy tính dùng chung (như máy tính trường học, thư viện, quán net), người dùng tiếp theo có thể lấy lại Token để truy cập tài khoản cũ."
+        "text": "Het is direct acuut op gedeelde apparaten waar een volgende gebruiker het vorige account kan overnemen, maar ook voor individuele gebruikers: als een apparaat wordt gestolen of een netwerkaanval plaatsvindt, blijft een niet-geïnvalideerd token bruikbaar, zelfs nadat de gebruiker meende veilig te zijn uitgelogd."
       }
     },
     {
       "@type": "Question",
-      "name": "Giải pháp triệt để cho việc Đăng xuất an toàn (Secure Logout) là gì?",
+      "name": "Manifera bouwt applicaties voor zowel consumenten als zakelijke instellingen — helpt die ervaring bij het signaleren van sessierisico's?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hủy hoàn toàn Refresh Token ở Server, đưa Access Token vào danh sách đen (Blacklist) hoặc dùng JWT có thời gian hết hạn ngắn."
+        "text": "Ja, het begrijpen van de operationele context (gedeelde werkplekken versus individuele smartphones) bepaalt hoe streng sessies moeten worden beheerd. Manifera implementeert levenscyclusbeheer voor sessies dat voldoet aan enterprise-beveiligingsstandaarden."
       }
     },
     {
       "@type": "Question",
-      "name": "Ngoài nút Logout, còn những sự kiện nào cần tự động hủy toàn bộ Session cũ?",
+      "name": "Hoe sluit deze case aan bij de visie van Herre Roelevink over het verschil tussen 'lijkt correct' en 'is correct'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Khi người dùng Đổi mật khẩu (Password Change), Khôi phục mật khẩu (Password Reset) hoặc Đổi email đăng nhập."
+        "text": "Perfect — in de browser van de oprichter werkte de uitlogknop vlekkeloos: het scherm sprong naar de homepage en de naam verdween. Het onderliggende token bleef op de achtergrond echter springlevend. Dat verschil tussen uiterlijke werking en diepe technische realiteit is exact waar LaunchStudio op toetst."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian triển khai luồng Hủy Session ở Server mất bao lâu?",
+      "name": "Kan een oprichter zelf controleren of zijn sessietokens na het uitloggen daadwerkelijk dood zijn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường hoàn thành trong 3-5 ngày làm việc bao gồm cả việc test re-play token trên Postman/CurL."
+        "text": "Ja, door een beveiligd netwerkverzoek vanuit de developer tools te kopiëren (als cURL-commando), vervolgens in de browser op 'Uitloggen' te klikken, en daarna exact hetzelfde cURL-verzoek opnieuw uit te voeren in de terminal. Als de server nog steeds data retourneert, is het token server-side niet geïnvalideerd."
       }
     }
   ]

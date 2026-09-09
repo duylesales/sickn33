@@ -40,6 +40,19 @@ Dit is zelden een klusje van vijf minuten, omdat de meeste AI-codeertools deze l
 
 LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met 11+ jaar ervaring in het auditen van precies dit soort opgebouwde toegang in door AI gegenereerde codebases. Ons Amsterdamse team voert deze audit standaard uit bij het overnemen van het project van een oprichter. Als u wilt weten hoe de toegangslijst van uw eigen app er eigenlijk uitziet, kunt u [berekenen wat een volledige toegangsaudit zou kosten](https://launchstudio.eu/nl/#calculator), en de praktijk [webapplicatie-ontwikkeling](https://www.manifera.com/services/web-app-develop/) van Manifera behandelt de bredere technische context achter dat werk.
 
+## Een Toegangsaudit van 20 Minuten Die U Vandaag Kunt Uitvoeren
+
+U hoeft geen cybersecuritybedrijf in te huren om vast te stellen wie er momenteel allemaal toegang heeft tot de digitale kroonjuwelen van uw onderneming. Met deze overzichtelijke audit van twintig minuten brengt u direct orde op zaken:
+
+**Minuut 1-5: De GitHub / GitLab Repository Ledenlijst.** Open uw repository-instellingen en bekijk het tabblad 'Collaborators & Teams'. Wie staan daar tussen? Ziet u freelancers die drie maanden geleden voor het laatst aan het project hebben gewerkt, of voormalige stagiairs? Verwijder iedereen die niet vandaag actief betrokken is bij de ontwikkeling.
+
+**Minuut 6-10: De Hosting- en Cloud-Dashboards (Vercel, AWS, Supabase).** Wie heeft er admin-rechten op uw productie-infrastructuur? Heeft uw externe ontwikkelaar een eigen account met minimale rechten ('Viewer' of 'Developer'), of gebruikt iedereen hetzelfde gedeelde beheerderswachtwoord? Schakel multifactorauthenticatie (2FA) verplicht in voor alle actieve teamleden.
+
+**Minuut 11-15: De Betalings- en E-maildiensten (Stripe, Postmark, Resend).** Wie kan er direct bij uw financiële transacties en klantcommunicatie? Beperk toegang tot Stripe strikt tot de oprichters; ontwikkelaars hebben in productie hooguit leesrechten nodig voor webhook-logs, geen bevoegdheden om uitbetalingen of terugstortingen te initiëren.
+
+**Minuut 16-20: Roteer Verouderde API-Sleutels.** Als u net een freelancer heeft laten vertrekken die toegang had tot uw productie-omgevingsvariabelen, genereer dan direct nieuwe database-wachtwoorden en API-tokens.
+
+Deze eenvoudige controle van twintig minuten sluit in één klap de meest voorkomende achterdeuren af en garandeert dat alleen bevoegde mensen controle uitoefenen over uw platform.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de testsleutel die niemand had ingetrokken
@@ -86,11 +99,46 @@ U kunt beginnen door elke integratie in de instellingen van uw project op te som
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "How do I find out which AI providers have access to my app right now?", "acceptedAnswer": { "@type": "Answer", "text": "Go through your project's integration and API key settings one at a time and ask what each one is currently used for, since most AI coding tools don't summarize this in one place automatically." } },
-    { "@type": "Question", "name": "Why do old test keys keep working after the feature they supported is gone?", "acceptedAnswer": { "@type": "Answer", "text": "Because nothing automatically revokes a key just because its original purpose ended. It stays active until someone specifically goes back and removes it." } },
-    { "@type": "Question", "name": "Does my AI model provider automatically have access to customer-uploaded content?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the specific integration and its scope, which is why checking each connection individually matters rather than assuming a single blanket answer." } },
-    { "@type": "Question", "name": "How often does Manifera's team find forgotten access like this?", "acceptedAnswer": { "@type": "Answer", "text": "Often enough that it's now a standard step in Amsterdam-based reviews Manifera runs when taking over an AI-generated project." } },
-    { "@type": "Question", "name": "Is this something I can check myself without a full audit?", "acceptedAnswer": { "@type": "Answer", "text": "You can start by listing every integration in your project's settings and asking what each is for, but a full audit checking scope, not just existence, is more reliable for anything holding real customer data." } }
+    {
+      "@type": "Question",
+      "name": "Hoe kom ik erachter welke AI-aanbieders op dit moment toegang hebben tot mijn app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doorloop de integratie- en API-sleutelinstellingen van uw project één voor één en vraag waar elk item op dit moment voor wordt gebruikt — de meeste AI-codeertools vatten dit niet automatisch op één plek samen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom blijven oude testsleutels werken nadat de functie die ze ondersteunden is verdwenen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat niets een sleutel automatisch intrekt alleen omdat het oorspronkelijke doel is beëindigd. Hij blijft actief totdat iemand er specifiek naar teruggaat en hem verwijdert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heeft mijn AI-modelaanbieder automatisch toegang tot door klanten geüploade content?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dat hangt af van de specifieke integratie en de reikwijdte ervan — precies waarom het controleren van elke verbinding afzonderlijk belangrijker is dan het aannemen van één alomvattend antwoord."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe vaak vindt het team van Manifera dit soort vergeten toegang?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vaak genoeg dat het nu een standaardstap is in de Amsterdamse beoordelingen die Manifera uitvoert bij het overnemen van een door AI gegenereerd project — opgebouwde, niet-ingetrokken toegang is een van de meest voorkomende bevindingen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik dit zelf controleren zonder een volledige audit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U kunt beginnen door elke integratie in de instellingen van uw project op te sommen en te vragen waar elk item voor dient, maar een volledige audit — die de reikwijdte controleert, niet alleen het bestaan — is de betrouwbaardere route voor alles wat echte klantgegevens bevat."
+      }
+    }
   ]
 }
 </script>

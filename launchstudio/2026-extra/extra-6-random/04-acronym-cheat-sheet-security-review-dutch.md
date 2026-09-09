@@ -47,6 +47,23 @@ Geen van deze termen is ingewikkeld zodra ze zijn uitgelegd. Het probleem is dat
 
 De technici van LaunchStudio, werkzaam vanuit onder meer Amsterdam, doorlopen precies deze checklist — RLS, RBAC, JWT-afhandeling, CORS-configuratie en blootstelling van credentials — bij elke prototypebeoordeling. Als u een rondleiding door uw eigen app wilt in dezelfde gewone taal, [boek dan een gratis intakegesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en wij vertellen u welke van deze vijf termen daadwerkelijk op uw codebase van toepassing zijn. Voor een diepere blik op hoe deze principes opschalen naar enterprise-grade builds, zie [Manifera's bedrijfsachtergrond](https://www.manifera.com/about-us/).
 
+## Nog Vijf Termen Die U Zult Horen Tijdens een Vervolggesprek
+
+De vijf termen die eerder zijn besproken, dekken de basis af die in vrijwel elk verkennend gesprek naar voren komt. Zodra een technische audit echter dieper gaat — of wanneer er een kwetsbaarheid is aangetroffen en u samen met technici aan hersteloplossingen werkt — duiken onvermijdelijk de volgende vijf concepten op. Hier is de uitleg in gewone mensentaal, zonder jargon:
+
+**IDOR — Insecure Direct Object Reference.** Dit is de formele beveiligingsterm voor het ontbreken van autorisatiecontroles: een kwetsbaarheid waarbij een gebruiker toegang krijgt tot een database-record simpelweg door het record-ID in de URL of het API-verzoek te raden of te wijzigen. Zegt een engineer "dit eindpunt is kwetsbaar voor IDOR", dan bedoelt men exact het probleem waarbij Klant A de facturen van Klant B kan inzien door `/factuur/101` aan te passen naar `/factuur/102`.
+
+**Rate Limiting.** Dit reguleert hoeveel verzoeken een individuele gebruiker of IP-adres binnen een bepaalde tijdspanne mag uitvoeren. Zonder rate limiting kan een kwaadwillend script uw inlogscherm, registratieformulier of API duizenden keren per minuut bestoken — wat leidt tot torenhoge serverkosten, een overbelaste database of succesvolle brute-force wachtwoordaanvallen. AI-codeertools configureren dit zelden standaard, omdat een lokale ontwikkeldemo immers nooit met duizenden verzoeken tegelijk wordt getest.
+
+**Webhook Signature Verification.** Wanneer uw applicatie statusupdates ontvangt van externe platforms (zoals Stripe, Mollie of SendGrid) via een webhook, controleert 'signature verification' of het inkomende bericht daadwerkelijk afkomstig is van die partij. Zonder deze cryptografische handtekeningcontrole kan iedereen een nep-verzoek naar uw webhook-URL sturen met de melding "betaling geslaagd", waarna uw systeem onterecht betaalde toegang verleent.
+
+**ORM — Object-Relational Mapping.** De softwarelaag die de programmeertaal van uw applicatie vertaalt naar database-query's (zoals Prisma, Drizzle of TypeORM). Dit is cruciaal omdat een goed geconfigureerde ORM gevaarlijke database-aanvallen (zoals SQL-injectie) nagenoeg onmogelijk maakt, terwijl ruwe, handgeschreven SQL-query's die om de ORM heen werken dit risico direct herintroduceren als ze niet uiterst zorgvuldig zijn opgesteld.
+
+**Least Privilege (Minimale Bevoegdheden).** Geen specifieke tool, maar een fundamenteel beveiligingsprincipe: elk onderdeel van uw infrastructuur — een database-gebruiker, een API-sleutel of een microservice — mag uitsluitend beschikken over de minimale rechten die strikt noodzakelijk zijn om zijn taak uit te voeren. Een backend die met volledige beheerdersrechten (zoals `postgres` superuser) verbindt met de database, schendt dit principe en maakt van een klein softwarelek een catastrofale inbreuk.
+
+Met deze vijf begrippen op zak verandert een technisch vervolggesprek van een eenzijdige lezing in een constructieve dialoog, waardoor u als oprichter gefundeerde beslissingen kunt nemen.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de term die hij nog nooit had gehoord
@@ -93,11 +110,46 @@ U hoeft de code niet zelf te schrijven, maar het herkennen van termen als RLS, R
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the single most important acronym to understand before a security review?", "acceptedAnswer": { "@type": "Answer", "text": "RLS (Row-Level Security) is the most common gap found in AI-generated apps, controlling whether the database itself enforces data ownership." } },
-    { "@type": "Question", "name": "Is RBAC the same thing as RLS?", "acceptedAnswer": { "@type": "Answer", "text": "No. RBAC controls what different user roles can do, while RLS controls which specific rows of data a user can access." } },
-    { "@type": "Question", "name": "Why would my API keys end up exposed if I never wrote them into the frontend myself?", "acceptedAnswer": { "@type": "Answer", "text": "AI coding tools sometimes place credentials in client-accessible code by default during scaffolding, and it's easy to miss without a specific check." } },
-    { "@type": "Question", "name": "Does Herre Roelevink's team check for these issues personally?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio's review standards, shaped by CEO Herre Roelevink, are applied by the Amsterdam-based engineering team to every project review." } },
-    { "@type": "Question", "name": "Do I need to learn these terms to run a security-conscious startup?", "acceptedAnswer": { "@type": "Answer", "text": "Not to write code yourself, but recognizing terms like RLS, RBAC, JWT, and CORS helps you ask sharper questions during any review." } }
+    {
+      "@type": "Question",
+      "name": "Wat is het belangrijkste acroniem om te begrijpen vóór een beveiligingsbeoordeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RLS (Row-Level Security) — het meest voorkomende gat dat LaunchStudio vindt in door AI gegenereerde apps, en het begrijpen ervan helpt u te vragen of uw database daadwerkelijk gegevenseigendom afdwingt, niet alleen uw frontend."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is RBAC hetzelfde als RLS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. RBAC bepaalt wat verschillende typen gebruikers *mogen doen* (rollen en rechten), terwijl RLS bepaalt welke specifieke *rijen* data een gebruiker kan zien of wijzigen, ongeacht zijn rol."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom zouden mijn API-sleutels blootgesteld raken als ik ze zelf nooit in de frontend heb geschreven?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI-codeertools plaatsen credentials soms standaard in client-toegankelijke code tijdens het scaffolden, vooral vroeg in een project, en het is makkelijk te missen tenzij iemand specifiek de gepubliceerde code controleert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Controleert het team van Herre Roelevink deze problemen persoonlijk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, heeft de beoordelingsnormen van het bedrijf gebouwd rond precies dit soort architectuur- en beveiligingsgat, en het in Amsterdam gevestigde engineeringteam past die norm toe op elke beoordeling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik deze termen leren om een beveiligingsbewust startup te runnen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U hoeft de code niet zelf te schrijven, maar het herkennen van termen als RLS, RBAC, JWT en CORS stelt u in staat scherpere vragen te stellen en te beoordelen of een review daadwerkelijk dekte wat ertoe doet."
+      }
+    }
   ]
 }
 </script>

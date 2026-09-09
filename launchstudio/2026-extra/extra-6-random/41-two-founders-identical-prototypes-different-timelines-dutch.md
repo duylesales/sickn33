@@ -49,6 +49,23 @@ LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedr
 
 Voor oprichters die nieuwsgierig zijn naar de technische standaard achter die review: Manifera's [praktijk voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft meer dan 160 projecten opgeleverd met dezelfde nauwkeurigheid.
 
+## Vijf Signalen Dat U de Splitsing Nadert
+
+In het leven van elke succesvolle startup komt er een moment waarop de informele 'vibe coding' methode zijn absolute grens bereikt en de splitsing naar professionele engineering onvermijdelijk wordt. Let op deze vijf vroege waarschuwingssignalen:
+
+**1. U verliest meer tijd aan het corrigeren van prompts dan aan het bouwen van features.** Wanneer u een half uur bezig bent om de AI-tool via allerlei omwegen te smeken een eenvoudige databasequery niet telkens te overschrijven, is de tool niet langer een versneller maar een rem op uw productiviteit.
+
+**2. Nieuwe functionaliteiten introduceren onvoorspelbare regressies.** Het oplossen van een probleem op pagina A zorgt er plotseling voor dat pagina B een wit scherm toont. Dit gebrek aan isolatie betekent dat de complexiteit van de applicatie het contextvenster van de AI-tool is ontgroeid.
+
+**3. U kunt compliance-vragenlijsten van klanten niet met droge ogen invullen.** Wanneer een potentiële zakelijke klant vraagt naar uw Disaster Recovery Plan, auditlogs en encryptienormen, beseft u dat 'ik heb een prompt ingetoetst' geen acceptabel antwoord is voor een security-officer.
+
+**4. De server- en API-kosten exploderen zonder duidelijke reden.** Omdat de code inefficiënte databasequery's bevat en externe AI-modellen synchroon aanroept voor basale datatransformaties, schieten uw maandelijkse cloudrekeningen door het dak.
+
+**5. U overweegt de eerste technische medewerker of partner aan te nemen.** Zodra u een externe engineer vraagt om mee te kijken, heeft u behoefte aan standaarden, documentatie en een schone ontwikkelstraat.
+
+Wanneer u deze splitsing herkent, vecht er dan niet tegen. Zie het als een felicitatie: uw product heeft de conceptfase overleefd en is klaar voor het echte werk.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de drie maanden die Noor niet zag aankomen
@@ -95,11 +112,46 @@ Zodra het prototype iets verwerkt dat lijkt op echte gebruikersgegevens — zelf
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why would two nearly identical prototypes end up with such different launch dates?", "acceptedAnswer": { "@type": "Answer", "text": "The prototypes themselves rarely explain the gap. The deciding factor is usually whether an independent security and architecture review happened early, before real user data entered the system, or was postponed until problems surfaced on their own." } },
-    { "@type": "Question", "name": "Isn't a security review something you can just do later, once the product has traction?", "acceptedAnswer": { "@type": "Answer", "text": "You can, but the cost of fixing the same issue rises the longer it sits, because other features get built assuming it doesn't exist. A review that would take days early can take weeks or months once it's discovered downstream." } },
-    { "@type": "Question", "name": "How does Manifera's team approach this kind of early review?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineers, based in Amsterdam and across offices in Singapore and Ho Chi Minh City, treat an early review as a structured audit of authentication, data access, and infrastructure, independent of how polished the frontend looks in a demo." } },
-    { "@type": "Question", "name": "Does a review like this require rebuilding the frontend a founder already built?", "acceptedAnswer": { "@type": "Answer", "text": "No. LaunchStudio's approach is specifically designed to work around the founder's existing frontend, fixing backend, security, and infrastructure issues without asking the founder to start over." } },
-    { "@type": "Question", "name": "What's a reasonable point in a project to schedule this kind of review?", "acceptedAnswer": { "@type": "Answer", "text": "As soon as the prototype handles anything resembling real user data, even a small pilot group, rather than waiting until a launch date is already on the calendar." } }
+    {
+      "@type": "Question",
+      "name": "Waarom zouden twee bijna identieke prototypes zulke verschillende lanceerdata krijgen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De prototypes zelf verklaren het verschil zelden. De doorslaggevende factor is meestal of er vroeg, voordat er echte gebruikersgegevens in het systeem kwamen, een onafhankelijke beveiligings- en architectuurreview heeft plaatsgevonden, of dat die werd uitgesteld tot problemen vanzelf opdoken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een beveiligingsreview niet gewoon later, zodra het product tractie heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dat kan, maar de kosten van het repareren van hetzelfde probleem stijgen naarmate het langer blijft liggen, omdat andere features worden gebouwd in de veronderstelling dat het niet bestaat. Een review die vroeg dagen zou kosten, kan weken of maanden kosten zodra hij verderop in het traject wordt ontdekt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe pakt het team van Manifera dit soort vroege review aan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De technici van Manifera, gevestigd in Amsterdam en met kantoren in Singapore en Ho Chi Minh-stad, behandelen een vroege review als een gestructureerde audit van authenticatie, datatoegang en infrastructuur — los van hoe gepolijst de frontend eruitziet in een demo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vereist zo'n review dat de frontend die een oprichter al gebouwd heeft, opnieuw wordt gebouwd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. De aanpak van LaunchStudio is specifiek ontworpen om te werken rondom de bestaande frontend van de oprichter, en lost backend-, beveiligings- en infrastructuurproblemen op zonder de oprichter te vragen opnieuw te beginnen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is een redelijk moment in een project om dit soort review in te plannen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zodra het prototype iets verwerkt dat lijkt op echte gebruikersgegevens — zelfs een kleine pilotgroep — in plaats van te wachten tot er al een lanceerdatum op de kalender staat."
+      }
+    }
   ]
 }
 </script>

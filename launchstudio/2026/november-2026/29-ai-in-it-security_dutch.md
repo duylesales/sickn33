@@ -66,6 +66,15 @@ Slagen voor een CISO-audit vereist defensieve software-engineering die geautomat
 3. **Onveranderlijke Audit-Trails:** Logging van elke prompt, modelrespons en datawijziging voor compliance-rapportages.
 4. **Compliance-Documentatie:** Aanleveren van complete datastroomdiagrammen en encryptiespecificaties voor uw security-questionnaires.
 
+### IT-Beveiliging en Compliance voor AI-Gedreven Bedrijfsapplicaties
+
+Voor zakelijke afnemers is technische beveiliging geen optie maar een harde voorwaarde. LaunchStudio implementeert de vereiste enterprise-standaarden:
+1. **Versleuteling in Rust en Tijdens Transport:** Alle data in transit wordt afgedwongen over TLS 1.3 met sterke cryptografische ciphers. Database-opslag en backups worden standaard versleuteld met AES-256, inclusief veilige sleutelrotatie via cloud key vaults.
+2. **Rolgebaseerde Toegangscontrole (RBAC):** We bouwen een granulair permissiemodel waarin beheerders, medewerkers en gasten strikt gescheiden bevoegdheden hebben, inclusief verificatie op serverniveau bij elk afzonderlijk API-verzoek.
+3. **Ondersteuning voor Multi-Factor Authenticatie (MFA):** We integreren naadloze MFA via TOTP (zoals Google Authenticator) of hardwarebeveiligingssleutels (WebAuthn/FIDO2), wat ongeautoriseerde toegang bij gecompromitteerde wachtwoorden effectief uitsluit.
+4. **Onweerlegbare Audit-Logging:** Alle veiligheidsrelevante gebeurtenissen (inlogpogingen, rolwijzigingen, data-exports en verwijderingen) worden weggeschreven naar een append-only logopslag die beschermd is tegen manipulatie.
+5. **Periodieke Kwetsbaarheidsscans:** We richten geautomatiseerde beveiligingsscanners in die uw applicatie continu controleren op bekende kwetsbaarheden volgens de OWASP Top 10 standaarden.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De FinTech-App Die Faalde Voor De SOC2-Audit

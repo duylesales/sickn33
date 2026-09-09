@@ -56,6 +56,19 @@ Vraag, voordat u instemt met de voorgestelde scope van een agentschap, om een tw
 
 Onze technici in Amsterdam, samen met collega's in Singapore en Ho Chi Minh-stad, zijn regelmatig de tweede mening die oprichters inschakelen na een verkooppraatje zoals Job ontving — en de bevinding is vaker wel dan niet dat een gerichte fix het karwei had geklaard. LaunchStudio's fixed-scope prijsmodel (doorgaans € 800–€ 7.500, geleverd in één tot drie weken) bestaat specifiek zodat oprichters een concrete, gespecificeerde scope kunnen vergelijken met wat een agentschap heeft voorgesteld. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera, een bedrijf met meer dan 11 jaar ervaring in productie-engineering — u kunt [zien hoe een fixed-scope offerte voor uw daadwerkelijke bevindingen eruit zou zien](https://launchstudio.eu/nl/#calculator) voordat u zich aan iets groters verbindt.
 
+## De Vervolgvragen Die een Echte Technische Beoordeling Onderscheiden van een Verkooppraatje
+
+Wanneer u een bureau of freelance adviseur uitnodigt om uw AI-codebase te beoordelen, hoort u binnen tien minuten of u te maken heeft met een commerciële verkoper of met een integere productie-engineer. Let op de volgende subtiele verschillen in de dialoog:
+
+**Het Verkooppraatje:** Begint vrijwel onmiddellijk met het afkraken van uw huidige code ("Wie heeft dit gebouwd? Dit kan echt niet, we moeten alles direct vanaf nul herbouwen in ons eigen framework"). Men vraagt nauwelijks naar uw zakelijke doelstellingen en stuurt binnen 24 uur een vage, torenhoge offerte voor een complete herbouw.
+
+**De Echte Technische Beoordeling:** Toont respect voor wat u in korte tijd hebt neergezet en vraagt direct door naar uw concrete risico's: *"Welke functionaliteiten genereren momenteel de meeste omzet, waar maken klanten melding van haperingen, en hoe is autorisatie op de gevoeligste datatabellen geregeld?"*
+
+**Stel Deze Beslissende Vervolgvraag:** *"Als we besluiten om uitsluitend de drie meest kritieke beveiligingsgaten te dichten en de rest van de werkende code intact te laten, hoe pakt u dat dan aan?"* Een partij met echte engineeringkwaliteit schetst direct een pragmatisch plan van aanpak voor een gerichte reparatie. Een verkoper zal aarzelen en herhalen dat deelreparaties "onmogelijk" zijn.
+
+Kies altijd voor de partner die uw onderneming vooruit helpt met pragmatische, gerichte oplossingen in plaats van degene die uw vorderingen kleiner maakt om zijn eigen urenstapel te vergroten.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de herbouw die BouwPlan nooit nodig had
@@ -102,11 +115,46 @@ LaunchStudio wordt aangedreven door de technici van Manifera, werkend vanuit Ams
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "How can I tell if an agency's \"rebuild\" recommendation is justified?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for the specific technical reason the existing frontend or backend can't be kept. If the answer stays general rather than pointing to concrete, named issues, the rebuild recommendation deserves a second opinion before you accept it." } },
-    { "@type": "Question", "name": "Is it normal to get a second opinion before signing with an agency?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and a confident, accurate assessment should hold up under a second review. Any pitch that discourages a second opinion is itself worth treating with more caution." } },
-    { "@type": "Question", "name": "What should a trustworthy technical assessment actually include?", "acceptedAnswer": { "@type": "Answer", "text": "A specific, itemized list of findings, naming the actual issues, like a missing permission check or an unvalidated file upload, rather than a general description of \"code quality issues\" or \"technical debt.\"" } },
-    { "@type": "Question", "name": "How does LaunchStudio's pricing compare to a traditional agency rebuild?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio works on a fixed-scope model, typically 800 to 7,500 euros depending on the project, delivered in one to three weeks, roughly 20% of what a traditional agency engagement often costs for comparable work." } },
-    { "@type": "Question", "name": "Where is LaunchStudio's engineering team based?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio is powered by Manifera's engineers, working from Amsterdam as the European headquarters, with additional teams in Singapore and Ho Chi Minh City." } }
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik weten of de \"herbouw\"-aanbeveling van een agentschap gerechtvaardigd is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vraag om de specifieke technische reden waarom de bestaande frontend of backend niet behouden kan blijven. Als het antwoord algemeen blijft in plaats van concrete, benoemde problemen aan te wijzen, verdient de herbouwaanbeveling een tweede mening voordat u die accepteert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het normaal om een tweede mening te vragen voordat u met een agentschap tekent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, en een zelfverzekerde, accurate beoordeling zou standhouden onder een tweede beoordeling. Elk verkooppraatje dat een tweede mening ontmoedigt, verdient op zichzelf al meer voorzichtigheid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet een betrouwbare technische beoordeling daadwerkelijk bevatten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een specifieke, gespecificeerde lijst met bevindingen, die de daadwerkelijke problemen benoemt, zoals een ontbrekende machtigingscontrole of een niet-gevalideerde bestandsupload, in plaats van een algemene beschrijving van \"codekwaliteitsproblemen\" of \"technische schuld\"."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verhoudt de prijsstelling van LaunchStudio zich tot een traditionele agentschapsherbouw?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio werkt met een fixed-scope model, doorgaans € 800 tot € 7.500 afhankelijk van het project, geleverd in één tot drie weken, ongeveer 20% van wat een traditionele agentschapsopdracht vaak kost voor vergelijkbaar werk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is het technische team van LaunchStudio gevestigd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio wordt aangedreven door de technici van Manifera, werkend vanuit Amsterdam als Europees hoofdkantoor, met aanvullende teams in Singapore en Ho Chi Minh-stad."
+      }
+    }
   ]
 }
 </script>

@@ -78,6 +78,17 @@ The next AI software developer candidate who presents an impressive portfolio de
 
 Request a shortlist of vetted AI engineers within 48 hours from Manifera's delivery team, each already screened against this same portfolio-depth standard before you ever see a resume.
 
+## Scoring the Seven Questions: A Weighted Rubric for Panel Hires
+
+When more than one interviewer is involved in a team augmentation hire, a shared numeric rubric prevents the "felt stronger" problem where two panelists reach opposite conclusions from the same conversation. Score each of the seven questions 0-2 (0 = vague/evasive, 1 = partial specificity, 2 = fully specific and verifiable), with two questions weighted double because they're the hardest to fake:
+
+- **Question 1 (individual ownership) and Question 7 (verification contact) count double** — a candidate scoring 2 on both but weak elsewhere is still a stronger signal than one scoring evenly across all seven at 1.
+- **A total score below 8 out of 16** is a hard stop for any team augmentation role expected to contribute independently within weeks — there isn't time to discover the portfolio-reality gap after start date.
+- **A score of 12+** clears the bar for fast-tracking to a technical working session rather than a second full portfolio round.
+- Log the score per question, not just the total, so a panel can see whether a low total came from one bad answer (recoverable with follow-up) or a consistent pattern across all seven (not recoverable).
+
+This turns seven subjective questions into a comparable number across your whole shortlist, which matters most exactly when two interviewers disagree.
+
 ## Frequently Asked Questions
 
 ### How do I tell if an AI software developer's portfolio project was a genuine individual contribution?
@@ -99,6 +110,22 @@ A thorough conversation covering all seven questions in this list typically take
 ### Is it worth hiring an AI software developer who has strong technical skills but a thin portfolio?
 
 Yes, in many cases, provided the technical skills are verified through a working session or technical interview rather than relying on the portfolio alone. A thin portfolio often reflects limited opportunity rather than limited ability, especially for candidates earlier in their career, and shouldn't automatically be weighted the same as a portfolio that raises the specific red flags described in this guide.
+
+### (Scenario: Two interviewers on a hiring panel walk away with opposite impressions of the same AI developer candidate) How do I reconcile disagreement between panel interviewers who scored the same candidate differently?
+
+Compare the per-question scores rather than just the totals — disagreement usually traces to one or two specific questions where interviewers weighted vague answers differently, not a wholesale difference in impression. Revisit those specific questions together against the recorded notes before defaulting to a tie-breaker vote.
+
+### (Scenario: A candidate for a team augmentation role scores well on technical questions but only 6 out of 16 on the portfolio rubric) Should a strong technical interview score override a weak portfolio vetting score for a team augmentation hire?
+
+No, not for a role expected to contribute independently within weeks. A strong technical interview verifies raw skill, but a weak portfolio score specifically signals unverified ownership claims and untested production judgment — the exact gap that surfaces expensively after start date on a fast-ramp augmentation role.
+
+### (Scenario: A candidate's only portfolio project was a six-person team effort with no individually attributable component) How should I score a candidate whose entire portfolio consists of team-credited projects with no individual attribution?
+
+Shift the emphasis to Questions 3 and 6 — the decision-you'd-change and unglamorous-work questions — since a genuine team contributor can still answer those with specific, first-hand detail even without a solo project to point to. A candidate who can't produce specificity on those two either, despite claiming team involvement, is a weaker signal regardless of the team credit.
+
+### (Scenario: A candidate specialized in AI model research rather than production deployment) How does the seven-question rubric change for a candidate who specializes in AI research rather than production engineering?
+
+Reweight Questions 2 and 4, which assume production traffic and post-launch ownership, toward experimental rigor and result validation instead, and keep Questions 1, 3, 6, and 7 as originally scored since ownership, judgment, tedious work, and verifiability apply equally to research work. Forcing a research specialist through unmodified production-focused scoring produces a false negative on an otherwise strong candidate.
 
 <script type="application/ld+json">
 {
@@ -129,6 +156,26 @@ Yes, in many cases, provided the technical skills are verified through a working
       "@type": "Question",
       "name": "Is it worth hiring an AI software developer who has strong technical skills but a thin portfolio?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, in many cases, provided technical skills are verified through a working session rather than relying on the portfolio alone. A thin portfolio often reflects limited opportunity rather than limited ability." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I reconcile disagreement between panel interviewers who scored the same candidate differently?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Compare the per-question scores rather than the totals. Disagreement usually traces to one or two specific questions weighted differently, not a wholesale difference in impression, so revisit those questions together against recorded notes." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a strong technical interview score override a weak portfolio vetting score for a team augmentation hire?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, not for a role expected to contribute independently within weeks. A strong technical score verifies raw skill, but a weak portfolio score signals unverified ownership claims and untested production judgment, which surfaces expensively after start date." }
+    },
+    {
+      "@type": "Question",
+      "name": "How should I score a candidate whose entire portfolio consists of team-credited projects with no individual attribution?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Shift emphasis to the decision-you'd-change and unglamorous-work questions, since a genuine team contributor can still answer those with first-hand specificity without a solo project. Lack of specificity there is a weaker signal regardless of team credit." }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the seven-question rubric change for a candidate who specializes in AI research rather than production engineering?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Reweight the production-traffic and post-launch-ownership questions toward experimental rigor and result validation instead, keeping ownership, judgment, tedious-work, and verifiability questions as originally scored. Unmodified production-focused scoring produces a false negative on a strong research specialist." }
     }
   ]
 }

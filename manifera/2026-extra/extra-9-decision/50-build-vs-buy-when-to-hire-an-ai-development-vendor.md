@@ -67,6 +67,12 @@ If you're a founder weighing whether your AI feature has outgrown its off-the-sh
 }
 </script>
 
+## Modeling Your Own Crossover Point, Not the Benchmark
+
+The 8,000-15,000 user range cited above is a starting reference, not a number to plug into your own board deck unmodified — the actual crossover depends on three inputs specific to your product. First, **per-user token intensity**: a product where each user triggers a handful of AI calls per session crosses over later than one where AI is invoked continuously, since the SaaS cost curve is driven by call volume, not headcount. Second, **your current per-token or per-seat rate** relative to the underlying model API's raw cost — off-the-shelf tools typically carry a 3-6x markup over the raw inference cost, so a tool priced closer to raw cost pushes your crossover point later. Third, **engineering cost of ownership** post-launch: a custom system still needs monitoring, retraining, and on-call support, typically 10-15% of the original build cost annually, which needs to be netted against the SaaS fees you're eliminating.
+
+A quick way to sanity-check where you stand: take your current monthly AI tooling spend, multiply by 12, and compare it against a rough custom-build quote plus that 10-15% annual maintenance figure. If your current annualized SaaS spend already exceeds roughly 60-70% of a custom build's first-year total cost, you're past your crossover point regardless of where your user count sits relative to the generic benchmark.
+
 ## Frequently Asked Questions
 
 ### How do I know if my AI feature is core enough to justify custom development?
@@ -88,6 +94,22 @@ A well-scoped first engagement focused on a single high-value workflow typically
 ### Is it ever wrong to move to custom AI development, even if a competitor has?
 
 Yes. If your AI feature is genuinely peripheral to your product's core value proposition, staying on an off-the-shelf tool indefinitely can be the more disciplined choice, since the engineering investment required for custom development is better spent on your actual differentiator.
+
+### (Scenario: A founder's product triggers dozens of AI calls per user session rather than a handful) Does high per-user AI call volume change when the build-versus-buy crossover point arrives?
+
+Yes, significantly. A product invoking AI continuously throughout a session hits the crossover point at a much lower user count than one making a handful of calls per session, since off-the-shelf SaaS pricing scales with call volume rather than headcount. Model your actual calls-per-user, not just total users, when estimating your own crossover.
+
+### (Scenario: A founder is comparing a wrapper tool's per-token price against what the underlying model API would cost directly) How do I find out how much markup an off-the-shelf AI tool is charging over the raw model API cost?
+
+Compare the tool's published per-call or per-seat price against the public per-token pricing of the underlying model provider they're likely using, which is often disclosed or inferable from the tool's marketing. A 3-6x markup over raw inference cost is typical for off-the-shelf AI tools, and a markup meaningfully above that range pushes your crossover point earlier than the generic benchmark suggests.
+
+### (Scenario: A founder built a custom AI system and is budgeting for year two after the initial build) What ongoing costs should I budget for after a custom AI system replaces an off-the-shelf tool?
+
+Budget roughly 10-15% of the original build cost annually for monitoring, retraining, and on-call support — a custom system doesn't eliminate operational cost, it shifts it from a SaaS subscription to an internal or vendor-managed maintenance line item. Skipping this budget line is the most common reason founders underestimate custom AI's true total cost of ownership.
+
+### (Scenario: A founder's current AI SaaS bill has crept up faster than expected but their user count is still below 8,000) Can a founder be past the build-versus-buy crossover point even below the typical user-count benchmark?
+
+Yes. The user-count range is a rough reference point, not a hard threshold — if your annualized SaaS spend already exceeds roughly 60-70% of a custom build's first-year total cost, you're effectively past your crossover point regardless of where your user count sits relative to the generic benchmark.
 
 <script type="application/ld+json">
 {
@@ -118,6 +140,26 @@ Yes. If your AI feature is genuinely peripheral to your product's core value pro
       "@type": "Question",
       "name": "Is it ever wrong to move to custom AI development, even if a competitor has?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes. If your AI feature is genuinely peripheral to your product's core value, staying on an off-the-shelf tool indefinitely can be the more disciplined choice, freeing engineering investment for your actual differentiator." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does high per-user AI call volume change when the build-versus-buy crossover point arrives?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, significantly. A product invoking AI continuously per session hits the crossover point at a much lower user count than one making a handful of calls per session, since SaaS pricing scales with call volume, not headcount." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find out how much markup an off-the-shelf AI tool is charging over the raw model API cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Compare the tool's published per-call or per-seat price against the public per-token pricing of the underlying model provider. A 3-6x markup over raw inference cost is typical; a markup meaningfully above that pushes your crossover point earlier." }
+    },
+    {
+      "@type": "Question",
+      "name": "What ongoing costs should I budget for after a custom AI system replaces an off-the-shelf tool?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Budget roughly 10-15% of the original build cost annually for monitoring, retraining, and on-call support. A custom system shifts operational cost from a SaaS subscription to an internal or vendor-managed maintenance line item, it doesn't eliminate it." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a founder be past the build-versus-buy crossover point even below the typical user-count benchmark?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The user-count range is a rough reference, not a hard threshold. If annualized SaaS spend already exceeds roughly 60-70% of a custom build's first-year total cost, you're effectively past crossover regardless of user count." }
     }
   ]
 }

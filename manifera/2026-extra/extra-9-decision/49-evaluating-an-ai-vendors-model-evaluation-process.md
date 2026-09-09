@@ -60,6 +60,12 @@ For a CTO who doesn't have an internal ML evaluation specialist to run this asse
 
 If your team is shortlisting AI development vendors and wants a technical partner who can walk you through a live evaluation harness rather than another rehearsed demo, get in touch with Manifera's Amsterdam-based team to see one in action before you commit.
 
+## A Weighted Scorecard for the Six Signals
+
+Score each finalist vendor 0-2 on the six signals covered above — eval harness demonstrability, golden dataset provenance, hallucination benchmarking, human review staffing, non-determinism methodology, and red-teaming practice — for a possible 12 points total. Weight eval harness demonstrability and hallucination benchmarking double, since those two are hardest to fake convincingly in a single call and correlate most strongly with actual production reliability across the vendor evaluations we've supported.
+
+A useful threshold: a vendor scoring below 6 of 16 weighted points is very likely describing an ad hoc testing practice regardless of how confident the pitch sounds, and should not be trusted with a customer-facing or high-stakes AI feature without a significant scope-of-work addition to build evaluation infrastructure first. A vendor scoring 12+ has a genuine, demonstrable practice worth paying a premium for. In the 22 vendor evaluations referenced above, the score gap between the vendor ultimately selected and the runner-up averaged 4-5 points on this scale — a wide enough margin that the choice was rarely close once the scorecard was filled in, even when the sales pitches themselves had sounded comparably polished.
+
 ## Frequently Asked Questions
 
 ### What is an AI model evaluation harness?
@@ -81,6 +87,22 @@ There's no universal number, but high-stakes outputs — anything touching prici
 ### Should a vendor red-team their own AI systems before deployment?
 
 Yes, particularly for any customer-facing AI feature, since prompt injection and jailbreak attempts are realistic threats rather than theoretical ones. A vendor with a mature practice will describe a specific red-teaming cadence and a process for turning newly discovered vulnerabilities into regression tests.
+
+### (Scenario: A CTO scored two finalist vendors on the six-signal scorecard and got 5 points and 13 points respectively) How big a scorecard gap between finalist vendors is actually meaningful, versus noise?
+
+A gap of 4-5 points or more out of 16 weighted points is meaningful and tends to correlate with a real difference in production reliability, not evaluation noise. Smaller gaps of 1-2 points are more likely to reflect how well a specific vendor representative articulated their process on that particular call rather than a true capability difference.
+
+### (Scenario: A vendor demonstrates a live eval harness convincingly but goes vague when asked for a hallucination rate number) Can a vendor have a genuinely good eval harness but still be weak on hallucination benchmarking specifically?
+
+Yes, and it's a common pattern worth scoring separately rather than assuming one strong signal implies the others. A vendor can have solid infrastructure for running test cases and measuring latency while never having built the specific factuality-checking methodology that hallucination benchmarking requires — which is exactly why the scorecard weights these as two distinct signals rather than one combined "testing quality" score.
+
+### (Scenario: A vendor claims their evaluation practice is "mature" but has only ever worked on internal tools, not customer-facing AI features) Does an AI vendor's evaluation maturity for internal tools transfer to customer-facing feature work?
+
+Not automatically. Internal-tool evaluation often skips red-teaming and tight hallucination thresholds because the consequences of a bad output are lower-stakes and contained to employees. Ask specifically for evaluation examples from customer-facing or public-facing engagements before assuming an internal-tools track record transfers directly.
+
+### (Scenario: A CTO wants to keep using this scorecard after signing, not just during vendor selection) How often should the six-signal evaluation scorecard be re-run after a vendor is selected and the contract signed?
+
+Re-run it at least quarterly, or before any major model version upgrade, using the same weighted criteria as the original vendor selection. Evaluation rigor that was genuine at contract signing can erode under delivery pressure, and the scorecard is the same tool for catching that drift as it was for the initial vendor comparison.
 
 <script type="application/ld+json">
 {
@@ -111,6 +133,26 @@ Yes, particularly for any customer-facing AI feature, since prompt injection and
       "@type": "Question",
       "name": "Should a vendor red-team their own AI systems before deployment?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, particularly for customer-facing AI features, since prompt injection and jailbreak attempts are realistic threats. A mature vendor describes a specific red-teaming cadence and a process for turning discovered vulnerabilities into regression tests." }
+    },
+    {
+      "@type": "Question",
+      "name": "How big a scorecard gap between finalist vendors is actually meaningful, versus noise?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A gap of 4-5 points or more out of 16 weighted points is meaningful and tends to correlate with real production reliability differences. Smaller gaps of 1-2 points more likely reflect how well a representative articulated their process on a given call." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a vendor have a genuinely good eval harness but still be weak on hallucination benchmarking specifically?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, this is a common pattern worth scoring separately. A vendor can have solid test-case infrastructure while never having built the specific factuality-checking methodology hallucination benchmarking requires, which is why the scorecard treats them as distinct signals." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does an AI vendor's evaluation maturity for internal tools transfer to customer-facing feature work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not automatically. Internal-tool evaluation often skips red-teaming and tight hallucination thresholds because bad outputs are lower-stakes and contained to employees. Ask for evaluation examples from customer-facing engagements specifically." }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should the six-signal evaluation scorecard be re-run after a vendor is selected and the contract signed?",
+      "acceptedAnswer": { "@type": "Answer", "text": "At least quarterly, or before any major model version upgrade, using the same weighted criteria as the original selection. Evaluation rigor genuine at signing can erode under delivery pressure, and the scorecard catches that drift." }
     }
   ]
 }

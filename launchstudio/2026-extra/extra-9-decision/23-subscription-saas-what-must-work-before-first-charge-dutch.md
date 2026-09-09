@@ -89,7 +89,7 @@ Die laatste praktische test brengt meer verborgen weeffouten aan het licht dan w
 
 Richt de abonnementscyclus eenmalig degelijk in en u hoeft er nooit meer naar om te kijken. Maakt u hier fouten, dan staat er achter elk groeicijfer dat u het komende jaar presenteert een pijnlijk vraagteken. Twijfelt u over hoe uw prototype momenteel omgaat met de acht bovenstaande fasen? [Plan een kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en we lopen uw facturatiestroom samen door — of bekijk hoe [Manifera](https://www.manifera.com/services/web-app-develop/), het software-engineeringbedrijf achter LaunchStudio, complexe webapplicaties bouwt waarin de financiële administratie te allen tijde waterdicht moet zijn.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een SaaS-oprichter in actie: de maand waarin omzet en werkelijkheid uit elkaar liepen
 

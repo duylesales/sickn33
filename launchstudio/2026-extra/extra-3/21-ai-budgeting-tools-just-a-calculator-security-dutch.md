@@ -102,10 +102,6 @@ De gelaagde prioritering benadering die in bredere richtlijnen wordt behandeld g
 
 Onwaarschijnlijk, aangezien functionele testen bevestigen dat de verbinding werkt en correcte gegevens retourneert, wat het deed – de kloof zat specifiek in hoe de onderliggende toegangstokens werden opgeslagen en beschermd, een dimensie die functionele testen niet natuurlijk onderzoeken.
 
-### Geldt deze mate van controle voor budgetteringstools die alleen handmatig ingevoerde uitgaven bijhouden zonder enige bankintegratie?
-
-In mindere mate – handmatig ingevoerde financiële gegevens rechtvaardigen nog steeds echte zorgvuldigheid voor authenticatie en toegangscontrole, hoewel de specifieke verhoogde zorg rond toegangstokens van derden niet geldt zonder dat er een daadwerkelijke bankverbinding aanwezig is.
-
 ### Hoe moet een oprichter een financiële dataleverancier evalueren voordat hij integreert, voorbij het vergelijken van API-documentatie?
 
 Het controleren van de regelgevende status van de leverancier, hoe nauw zijn tokens zijn begrensd, of hij zijn eigen kopie van transactiegegevens bewaart, en zijn staat van dienst op het gebied van incidentbekendmaking geeft een veel completer beeld dan alleen het vergelijken van integratiegemak of documentatiekwaliteit – de technische integratie en de daadwerkelijke vertrouwensbeslissing zijn afzonderlijke vragen die het waard zijn om afzonderlijk te evalueren.
@@ -145,14 +141,6 @@ Het controleren van de regelgevende status van de leverancier, hoe nauw zijn tok
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Onwaarschijnlijk — functionele testen bevestigen dat de verbinding werkt; de kloof zat in de opslag van de tokens."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Geldt deze controle ook voor tools zonder bankintegratie?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In mindere mate — authenticatie blijft gelden, hoewel de specifieke verhoogde zorg rond toegangstokens vervalt."
       }
     },
     {

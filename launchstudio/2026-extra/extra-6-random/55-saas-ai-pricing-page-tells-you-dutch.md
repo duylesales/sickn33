@@ -39,6 +39,19 @@ Wanneer een inkoopteam een gebruiksgebaseerde prijspagina leest en al vraagt naa
 
 Als u uw SaaS-product voorbereidt op precies dit soort onderzoek, is het de moeite waard om [te berekenen wat een productiegereedheidsbeoordeling van uw architectuur zou kosten](https://launchstudio.eu/nl/#calculator) voordat het inkoopteam van een prospect de vraag voor u stelt. Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) voor enterprise-klanten is opgebouwd rond precies deze discipline — tenantisolatie afgedwongen op elke laag, niet alleen op de factuur.
 
+## Een Pre-Sales Checklist: Wat U Moet Verifiëren Vóórdat een Klant Vraagt naar Isolatie
+
+Wachten tot de security-officer van een grote zakelijke prospect tijdens een inkoopgesprek vraagt hoe data-isolatie is geregeld, is de duurste manier om te ontdekken waar uw architectuur staat. Loop deze checklist vooraf door zodat u met zelfvertrouwen aan tafel zit:
+
+**Controleer de Multi-Tenancy Implementatie:** Is elke databasetabel voorzien van een expliciete `tenantId` of `organizationId` kolom? Wordt deze scheiding op applicatieniveau bij elke query handmatig gefilterd, of wordt deze deterministisch afgedwongen via PostgreSQL Row-Level Security (RLS)? Zakelijke klanten eisen dat een menselijke programmeerfout in een nieuwe query nooit kan leiden tot het lekken van andermans data.
+
+**Documenteer de Encryptiestandaarden:** Zorg dat u direct kunt benoemen welke encryptieprotocollen actief zijn: TLS 1.3 voor data in overdracht en AES-256 voor data in rust (inclusief automatische back-ups).
+
+**Verifieer de Fysieke Hostinglocatie:** Weet exact in welke datacenters uw gegevens en die van uw subverwerkers worden bewaard. Binnen de EU is opslag binnen de Europese Economische Ruimte (bijvoorbeeld AWS Frankfurt, Azure Amsterdam) vaak een harde contractuele eis.
+
+**Zorg voor een Getoetste Verwerkersovereenkomst (DPA):** Zorg dat u een kant-en-klare, juridisch kloppende DPA als download klaar heeft staan, inclusief een actuele lijst van alle externe partijen (zoals OpenAI, Stripe, hostingproviders) die data namens u verwerken.
+
+Wanneer u deze punten vooraf paraat heeft, straalt uw onderneming direct enterprise-volwassenheid uit en transformeert u security van een verkoopobstakel in een krachtig verkoopargument.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de vraag die de prijspagina eerst beantwoordde
@@ -85,11 +98,46 @@ Nee — het is een volkomen normaal en vaak slim prijsmodel. Het probleem is nie
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why would a pricing page reveal anything about data architecture?", "acceptedAnswer": { "@type": "Answer", "text": "Because pricing structure implies how usage is tracked and separated per customer, and experienced buyers infer whether that separation is enforced throughout the system or only at the billing layer." } },
-    { "@type": "Question", "name": "What is per-tenant data isolation?", "acceptedAnswer": { "@type": "Answer", "text": "It's the guarantee that one customer's data can never be accessed, queried, or affected by another customer's activity, enforced at the database and application layer rather than assumed from the interface." } },
-    { "@type": "Question", "name": "How would I know if my own SaaS product has this gap?", "acceptedAnswer": { "@type": "Answer", "text": "If tenant isolation has never been explicitly tested with automated checks that attempt cross-tenant access, it's worth assuming it hasn't been verified, regardless of how the billing or usage tracking appears to behave." } },
-    { "@type": "Question", "name": "Does Manifera help SaaS founders prepare for enterprise security scrutiny?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — our engineers, including the team based in Singapore, regularly review AI-built SaaS architectures specifically for tenant isolation gaps before founders enter enterprise sales cycles." } },
-    { "@type": "Question", "name": "Is usage-based pricing itself a red flag?", "acceptedAnswer": { "@type": "Answer", "text": "No — it's a completely normal and often smart pricing model. The issue isn't the pricing choice, it's whether the isolation implied by that pricing is actually enforced underneath it." } }
+    {
+      "@type": "Question",
+      "name": "Waarom zou een prijspagina iets onthullen over gegevensarchitectuur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat prijsstructuur impliceert hoe gebruik wordt bijgehouden en gescheiden per klant, en ervaren kopers afleiden of die scheiding wordt afgedwongen door het hele systeem, of alleen op de factureringslaag."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is per-tenant gegevensisolatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is de garantie dat de gegevens van de ene klant nooit toegankelijk, opvraagbaar of beïnvloedbaar zijn door de activiteit van een andere klant, afgedwongen op database- en applicatieniveau in plaats van aangenomen op basis van de interface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik weten of mijn eigen SaaS-product deze kloof heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Als tenantisolatie nooit expliciet is getest met geautomatiseerde controles die tenant-overschrijdende toegang proberen, kunt u er beter van uitgaan dat het niet is geverifieerd, ongeacht hoe de facturering of gebruikstracking eruitziet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Helpt Manifera SaaS-oprichters zich voor te bereiden op enterprise-beveiligingsonderzoek?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — onze technici, waaronder het team gevestigd in Singapore, beoordelen regelmatig door AI gebouwde SaaS-architecturen specifiek op tenantisolatiekloven voordat oprichters enterprise-verkoopcycli ingaan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is gebruiksgebaseerde prijsstelling zelf een rode vlag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee — het is een volkomen normaal en vaak slim prijsmodel. Het probleem is niet de prijskeuze, het is of de isolatie die door die prijsstelling wordt geïmpliceerd, daadwerkelijk eronder wordt afgedwongen."
+      }
+    }
   ]
 }
 </script>

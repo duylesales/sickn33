@@ -74,6 +74,28 @@ Naast de directe financiële vergelijking brengt het opnemen van een ontwikkelaa
 - **Afgebakend werk vraagt om contanten**: Gebruik geld voor specifieke klussen (zoals een lancering) en bewaar aandelen uitsluitend voor echte, langdurige co-founders.
 - **Zorg altijd voor IP-overdracht**: Zonder getekende rechtenoverdracht blijft de code juridisch eigendom van de ontwikkelaar.
 
+### Strategische Richtlijnen voor Equity-Onderhandelingen met Developers
+
+Wanneer u overweegt om ontwikkelhulp te belonen met aandelen (equity), hanteert u deze strikte vuistregels:
+- **Standaard 4-Jaar Vesting met 1-Jaar Cliff:** Geef nooit direct aandelen weg. Koppel aandelenopties altijd aan een vierjarige vestingperiode met een cliff van twaalf maanden om te voorkomen dat vertrekkende ontwikkelaars met uw bedrijfskapitaal weglopen.
+- **Koppel Aandelen aan Resultaat, Niet Aanwezigheid:** Definieer duidelijke operationele mijlpalen (zoals livegang en eerste 50 betalende klanten) vóórdat opties versneld kunnen vesten.
+- **Houd de Cap Table Schoon voor Toekomstige Investeerders:** Investeerders in een latere fase eisen dat het leeuwendeel van de aandelen in handen is van fulltime actieve oprichters.
+
+### De Juridische IP Assignment Overeenkomst
+
+Naast het vastleggen van vesting-termijnen is er één juridisch document dat absoluut onmisbaar is: de **Intellectual Property (IP) Assignment Agreement**. Zonder dit getekende document bezit de individuele ontwikkelaar juridisch gezien nog steeds het auteursrecht op de geschreven code, zelfs als u hem heeft betaald of aandelen heeft toegekend. Eis vóór de eerste werkdag dat alle intellectuele eigendomsrechten, octrooien, datamodellen en documentatie onvoorwaardelijk worden overgedragen aan de vennootschap. Toekomstige investeerders controleren dit document als allereerste tijdens de due diligence.
+
+### Aandelen vs. Cash: De Gevaarlijke Illusie van 'Gratis' Hulp
+
+Wanneer een oprichter 15% van zijn bedrijf weggeeft aan een ontwikkelaar in plaats van € 6.000 fixed-price te betalen, voelt dat op de korte termijn als een slimme besparing. Bij een bescheiden exit van € 3 miljoen kost die vroege beslissing u echter € 450.000 aan contant geld. Bovendien leidt een grote minderheidsaandeelhouder die na zes maanden niet meer actief meewerkt tot ernstige cap-table problemen bij vervolgrondes. Het betalen van een vast marktconform bedrag voor concrete resultaten houdt uw aandelenkapitaal in eigen hand en voorkomt langdurige juridische geschillen.
+
+### Cap Table Bescherming en Vesting Structurering voor Solo-Oprichters
+
+Het weggeven van aandelen aan externe partijen brengt grote risico's met zich mee voor toekomstige financieringsrondes:
+- **Reverse Vesting Overeenkomsten:** Als een developer toch aandelen ontvangt, moet er altijd een 'reverse vesting' schema worden vastgelegd waarbij de vennootschap het recht heeft niet-geveste aandelen tegen nominale waarde terug te kopen bij vertrek.
+- **Geen Stemrecht op Technische Aandelen:** Beperk eventuele aandelenparticipaties van externe partijen tot certificaten van aandelen (zonder stemrecht) via een Stichting Administratiekantoor (STAK) om de bestuurlijke controle 100% bij de oprichter te houden.
+- **Bescherming van Uw Runway:** Het betalen van een marktconform fixed-price tarief aan LaunchStudio is op de lange termijn vele malen voordeliger en beschermt uw eigendom voor de echte groeifase.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Het afwijzen van een 15% aandelen-aanbod voor een klus van €3.000

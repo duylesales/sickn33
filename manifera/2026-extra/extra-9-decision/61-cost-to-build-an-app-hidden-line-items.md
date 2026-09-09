@@ -86,6 +86,12 @@ None of this means fixed-price contracts are a bad idea for a first app — for 
 
 Get a custom team proposal within 48 hours that breaks down every line item before you commit a single euro.
 
+## Scoring Three Quotes Side by Side: A Simple Point System
+
+Turn the seven line items into a quick scorecard rather than comparing headline totals alone. For each quote, award one point per line item that's priced explicitly and by name — discovery deliverable, integrations listed individually, design revision round count, App Store rejection handling, warranty window with acceptance criteria, device/OS testing matrix, and post-launch infrastructure cost — for a possible 7 points.
+
+A quote scoring **0-2** is a placeholder dressed up as a number; treat its total as unreliable regardless of how professional the document looks. A quote scoring **3-5** has priced the basics but likely still has gaps worth clarifying before signing — ask specifically about whichever items are missing rather than assuming they're bundled in in good faith. A quote scoring **6-7** is the one whose final invoice is statistically most likely to resemble what you signed. In practice, the highest-scoring quote in a stack of three is rarely the lowest number — but it's the one that predicts your actual first-year spend most accurately, which is the number that actually matters to your runway.
+
 ## Frequently Asked Questions
 
 ### What is the realistic cost to build an app for a first-time founder?
@@ -102,6 +108,22 @@ Not usually. Base development quotes typically stop at launch, while hosting, mo
 
 ### How do I know if a vendor's app development quote is missing hidden costs?
 Ask for a line-item breakdown rather than a single total, request the discovery documentation the quote was built against, and confirm in writing what warranty period covers post-launch defects. A vendor unable to produce any of these has likely under-scoped the project.
+
+### (Scenario: A founder has three quotes ranging from €24,000 to €58,000 for what looks like the same feature list) How do I compare three wildly different app development quotes when they all describe similar features?
+
+Score each quote against the seven line items — discovery, integrations, design rounds, App Store handling, warranty, QA device matrix, and infrastructure — awarding one point per item explicitly priced. The quote with the highest score, not the lowest total, is the one most likely to match your actual final spend, since a low headline number usually means several of these items were left out rather than genuinely negotiated down.
+
+### (Scenario: A founder's cheapest quote lists "cross-platform tested" with no further detail) What does it mean if a vendor's quote says "cross-platform tested" without listing specific devices or OS versions?
+
+It's a marketing phrase standing in for a QA plan, not a QA plan itself. Ask the vendor to name the specific device and OS version matrix they test against; a vendor with genuine QA discipline will have this list ready, while one without it will need to construct an answer on the spot.
+
+### (Scenario: A founder is deciding whether to spend an extra €4,000 upfront on a discovery sprint before requesting fixed-price quotes) Is it worth paying for a standalone discovery sprint before requesting quotes from multiple vendors, rather than after picking one?
+
+Yes, and it often improves quote comparability too — when every vendor bids against the same written specification instead of their own interpretation of a short call, the resulting quotes become genuinely comparable on price rather than each one silently scoping a different app.
+
+### (Scenario: A founder signs a fixed-price contract that doesn't mention a warranty period at all) What happens if my signed contract doesn't mention a warranty period for post-launch defects?
+
+Every post-launch issue becomes a case-by-case negotiation over whether it's a covered bug or a billable new feature, with the vendor holding more leverage in that conversation than you do after launch. Push to add a specific warranty window, typically 30-90 days, with defined acceptance criteria before signing rather than trying to negotiate one in after a dispute has already started.
 
 <script type="application/ld+json">
 {
@@ -146,6 +168,38 @@ Ask for a line-item breakdown rather than a single total, request the discovery 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ask for a line-item breakdown rather than a single total, request the discovery documentation the quote was built against, and confirm in writing what warranty period covers post-launch defects. A vendor unable to produce any of these has likely under-scoped the project."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I compare three wildly different app development quotes when they all describe similar features?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Score each quote against the seven line items, awarding one point per item explicitly priced. The quote with the highest score, not the lowest total, is most likely to match your actual final spend, since a low headline number usually means several items were left out."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does it mean if a vendor's quote says \"cross-platform tested\" without listing specific devices or OS versions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's a marketing phrase standing in for a QA plan, not a QA plan itself. Ask the vendor to name their specific device and OS version testing matrix; a vendor with genuine QA discipline will have this list ready."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it worth paying for a standalone discovery sprint before requesting quotes from multiple vendors, rather than after picking one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and it improves quote comparability too. When every vendor bids against the same written specification instead of their own interpretation of a short call, the resulting quotes become genuinely comparable on price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if my signed contract doesn't mention a warranty period for post-launch defects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every post-launch issue becomes a case-by-case negotiation over whether it's a covered bug or billable new feature. Push to add a specific warranty window, typically 30-90 days, with defined acceptance criteria before signing."
       }
     }
   ]

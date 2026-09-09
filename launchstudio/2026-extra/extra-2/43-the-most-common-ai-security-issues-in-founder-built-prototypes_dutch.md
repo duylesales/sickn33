@@ -61,6 +61,18 @@ Manifera's audits voor verificatie en authenticatie worden uitgevoerd door het e
 
 [Controleer de prijs met onze projectcalculator](https://launchstudio.eu/nl/#calculator).
 
+## Hoe U Codes Kunt Snelheidsbeperken en Laten Vervallen Zonder Legitieme Gebruikers te Scharen
+
+Een verificatiecode die nooit vervalt of onbeperkt kan worden geraden, is een open uitnodiging voor geautomatiseerde brute-force aanvallen. Een effectieve beveiliging balanceert robuuste bescherming met een frictieloze ervaring voor de eerlijke gebruiker:
+
+- **Stel een strikte vervaltermijn in op elke code** — een numerieke verificatiecode (OTP) via e-mail of sms moet binnen 5 tot maximaal 10 minuten vervallen. Een code die uren of dagen geldig blijft, geeft kwaadwillenden veel te veel tijd voor geautomatiseerde aanvalspogingen.
+- **Beperk het aantal pogingen per sessie** — sta maximaal 3 tot 5 invoerpogingen toe per gegenereerde code. Zodra die drempel wordt overschreden, moet de code definitief ongeldig worden gemaakt en moet de gebruiker een nieuwe code aanvragen.
+- **Hanteer een afkoelperiode tussen nieuwe aanvragen (rate limiting)** — voorkom dat een gebruiker (of script) elke seconde een nieuwe verificatie-e-mail of sms kan triggeren door minimaal 60 seconden wachttijd af te dwingen tussen opeenvolgende verzoeken. Dit beschermt ook direct tegen torenhoge sms-kosten.
+- **Maak eerdere codes direct ongeldig zodra een nieuwe wordt aangevraagd** — er mag op elk moment slechts één actieve verificatiecode per actie bestaan. Als een gebruiker op 'Opnieuw verzenden' klikt, moet de vorige code per direct onbruikbaar worden.
+- **Bied duidelijke foutmeldingen zonder gevoelige details te lekken** — vertel de gebruiker duidelijk wanneer een code is verlopen of dat het maximaal aantal pogingen is bereikt, met een heldere optie om een nieuwe code aan te vragen.
+
+Deze beschermende maatregelen worden geïmplementeerd in de backend-validatielogica en vereisen geen ingrijpende verandering in het uiterlijk van uw inlog- of bevestigingsscherm.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De incheckcode die iemand simpelweg raadde
@@ -80,25 +92,25 @@ Een medewerker van de locatie merkte een onbekende naam op die binnen enkele min
 
 ## Veelgestelde vragen
 
-### Zou een beveiligingsspecialist korte numerieke codes als inherent zwakker beschouwen dan langere alfanumerieke codes?
+### Zou een authenticatie-ingenieur het ontbreken van een vervaltermijn op verificatiecodes beschouwen als een ernstig ontwerplek?
 
-Qua combinaties wel, maar de daadwerkelijke, praktische bescherming komt primair voort uit snelheidsbeperking (rate limiting) en verloop in plaats van lengte alleen.
+Ja, zonder twijfel — een verificatiecode (OTP) die onbeperkt geldig blijft en zonder snelheidsbeperking kan worden getest, verandert tweefactorauthenticatie in een schijnveiligheid. Geautomatiseerde scripts kunnen een numerieke code van 4 of 6 cijfers binnen enkele minuten raden als er geen limiet op het aantal pogingen staat.
 
-### Geldt dit soort kloof alleen voor incheck- of verificatiecodes?
+### Geldt dit risico alleen voor sms- en e-mailverificatie, of ook voor andere tijdelijke tokens?
 
-Het is breder – hetzelfde onderliggende patroon geldt voor elke korte, raadbare inloggegeven die overal in een systeem wordt gebruikt (wachtwoord-resetcodes, 2FA-codes).
+Het geldt voor elk type eenmalig token: links voor het opnieuw instellen van een wachtwoord, e-mailbevestigingstokens, uitnodigingscodes en API-sessietokens. Elk tijdelijk geheim moet een strikte vervaltijd hebben en na gebruik of overschrijding van het aantal pogingen direct worden vernietigd.
 
-### Maakt brede ervaring met verificatiestromen uit voor het opvangen van zo'n specifieke casus?
+### Manifera heeft authenticatiesystemen gebouwd voor gereguleerde sectoren — hoe beïnvloedt die ervaring de omgang met OTP-codes?
 
-Ja, omdat het onderliggende patroon om op te controleren hetzelfde is, ongeacht de specifieke toepassing.
+In gereguleerde sectoren zijn cryptografisch veilige random generators, strikte rate limiting per IP en per gebruikersaccount, en onmiddellijke invalidatie na gebruik wettelijke verplichtingen. Manifera past deze beproefde standaarden standaard toe op elk prototype dat doorgroeit naar productie.
 
-### Weerspiegelt deze casus de visie op het controleren van laagdrempelige functies?
+### Is dit een van de architectuurkloven die volgens Herre Roelevink onzichtbaar blijven tijdens normale gebruikerstests?
 
-Rechtstreeks – een incheckcode lijkt aanvankelijk een kleine gemaksvoorziening, exact het soort onderschatte functie dat een grondige beoordeling opvangt.
+Exact — tijdens een normale demo voert de oprichter de zojuist ontvangen code binnen 30 seconden in. Alles lijkt vlekkeloos te werken. Het feit dat diezelfde code 24 uur later nog steeds geldig zou zijn geweest en vatbaar was voor brute-force aanvallen, valt pas op wanneer een engineer er gericht met vijandige intentie naar kijkt.
 
-### Moet een oprichter elk verificatiemechanisme specifiek vermelden voor een review?
+### Wat is de aanbevolen geldigheidstermijn voor een e-mail- of sms-verificatiecode?
 
-Het geven van een algemene beschrijving helpt, maar het systematisch vinden van elke instantie van dit specifieke patroon in een codebase is het werk van de beoordelaar.
+Een geldigheid van 5 tot maximaal 10 minuten, gecombineerd met een limiet van maximaal 3 tot 5 invoerpogingen per code. Wordt die limiet overschreden, dan moet de code direct ongeldig worden gemaakt en moet de gebruiker een nieuwe aanvragen.
 
 <script type="application/ld+json">
 {
@@ -107,42 +119,42 @@ Het geven van een algemene beschrijving helpt, maar het systematisch vinden van 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Mã xác thực ngắn (Short PIN Code 4-6 số) có dễ bị mò (Brute-Force) không?",
+      "name": "Zou een authenticatie-ingenieur het ontbreken van een vervaltermijn op verificatiecodes beschouwen als een ernstig ontwerplek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rất dễ mò nếu không giới hạn số lần nhập — mã 4 số chỉ có 10.000 tổ hợp, bot tự động có thể thử xong trong vài phút."
+        "text": "Ja, zonder twijfel — een verificatiecode (OTP) die onbeperkt geldig blijft en zonder snelheidsbeperking kan worden getest, verandert tweefactorauthenticatie in een schijnveiligheid. Geautomatiseerde scripts kunnen een numerieke code van 4 of 6 cijfers binnen enkele minuten raden als er geen limiet op het aantal pogingen staat."
       }
     },
     {
       "@type": "Question",
-      "name": "Giải pháp bảo vệ an toàn cho mã PIN/OTP ngắn là gì?",
+      "name": "Geldt dit risico alleen voor sms- en e-mailverificatie, of ook voor andere tijdelijke tokens?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Giới hạn số lần thử (Rate Limit tối đa 5 lần), đặt thời gian hết hạn ngắn (10-15 phút) và khóa tạm thời IP nếu nhập sai quá nhiều."
+        "text": "Het geldt voor elk type eenmalig token: links voor het opnieuw instellen van een wachtwoord, e-mailbevestigingstokens, uitnodigingscodes en API-sessietokens. Elk tijdelijk geheim moet een strikte vervaltijd hebben en na gebruik of overschrijding van het aantal pogingen direct worden vernietigd."
       }
     },
     {
       "@type": "Question",
-      "name": "Thông báo lỗi khi nhập sai mã PIN/OTP nên trả về như thế nào?",
+      "name": "Manifera heeft authenticatiesystemen gebouwd voor gereguleerde sectoren — hoe beïnvloedt die ervaring de omgang met OTP-codes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nên trả về thông báo chung chung 'Mã không hợp lệ hoặc đã hết hạn' thay vì chi tiết lý do để tránh lộ thông tin cho hacker."
+        "text": "In gereguleerde sectoren zijn cryptografisch veilige random generators, strikte rate limiting per IP en per gebruikersaccount, en onmiddellijke invalidatie na gebruik wettelijke verplichtingen. Manifera past deze beproefde standaarden standaard toe op elk prototype dat doorgroeit naar productie."
       }
     },
     {
       "@type": "Question",
-      "name": "Lỗi thiếu Rate Limit mã PIN có chỉ xảy ra ở tính năng Check-in sự kiện không?",
+      "name": "Is dit een van de architectuurkloven die volgens Herre Roelevink onzichtbaar blijven tijdens normale gebruikerstests?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, nó xuất hiện ở mã OTP xác thực Email/SMS, mã Quên mật khẩu và mã Xác thực 2 bước (2FA)."
+        "text": "Exact — tijdens een normale demo voert de oprichter de zojuist ontvangen code binnen 30 seconden in. Alles lijkt vlekkeloos te werken. Het feit dat diezelfde code 24 uur later nog steeds geldig zou zijn geweest en vatbaar was voor brute-force aanvallen, valt pas op wanneer een engineer er gericht met vijandige intentie naar kijkt."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian bổ sung Rate Limit và Expiration cho mã xác thực mất bao lâu?",
+      "name": "Wat is de aanbevolen geldigheidstermijn voor een e-mail- of sms-verificatiecode?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường hoàn thành rất nhanh trong 3-6 ngày làm việc bao gồm cả việc thử nghiệm các kịch bản khóa IP."
+        "text": "Een geldigheid van 5 tot maximaal 10 minuten, gecombineerd met een limiet van maximaal 3 tot 5 invoerpogingen per code. Wordt die limiet overschreden, dan moet de code direct ongeldig worden gemaakt en moet de gebruiker een nieuwe aanvragen."
       }
     }
   ]

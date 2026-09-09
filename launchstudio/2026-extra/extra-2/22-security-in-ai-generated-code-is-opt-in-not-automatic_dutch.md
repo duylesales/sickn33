@@ -59,17 +59,17 @@ Manifera's beoordelingen van opslagbeveiliging worden uitgevoerd door het engine
 
 [Stuur de link van uw prototype door voor een gratis beoordeling](https://launchstudio.eu/nl/#contact).
 
-## Een checklist voor het auditeren van elke opslag-bucket die uw app gebruikt
+## Een Checklist voor het Auditeren van Elke Opslag-Bucket Die Uw App Gebruikt
 
-Een volledig openbare bucket is de meest duidelijke versie van dit probleem, maar het is zelden de enige die het waard is om te controleren.
+Een volledig openbare bucket is de meest voor de hand liggende versie van dit probleem, maar het is zelden de enige die het controleren waard is. Een mentaal model gericht op één enkel probleem — "is mijn bucket openbaar, ja of nee" — ziet verschillende gerelateerde misconfiguraties over het hoofd die exact hetzelfde risico op blootstelling veroorzaken:
 
-**Loop door deze vragen voor elke opslag-bucket waar uw app naar schrijft:**
+- **Is de bucket zelf opzoekbaar (listable), zelfs als individuele bestanden een directe link vereisen?** Een bucket die mappenlijsten toestaat, laat iedereen elke bestandsnaam die erin zit opsommen, zelfs als de bestanden zelf zijn gemarkeerd als privé — wat de namen van vertrouwelijke uploads direct blootstelt aan iedereen die de hoofdadres van de bucket bezoekt.
+- **Hoe lang blijven uw ondertekende URL's geldig?** Een ondertekende URL is slechts zo beschermend als zijn vervaltijd — een ondertekende URL die na tien minuten vervalt is een echte toegangscontrole, terwijl een ondertekende URL die na een jaar vervalt functioneel identiek is aan een openbare link zodra iemand deze deelt of opslaat.
+- **Heeft u vergeten staging-, back-up- of test-buckets overgehouden van eerdere ontwikkeling?** Deze bevatten vaak kopieën van dezelfde gevoelige bestanden, gemaakt tijdens het testen en vervolgens vergeten, die blijven bestaan met permissies die nooit zijn aangescherpt voor productie.
+- **Is uw CORS-configuratie breder geopend dan nodig is?** Een overdreven tolerante cross-origin resource sharing (CORS)-regel op een opslag-bucket kan een script dat op een heel andere website draait in staat stellen om bestanden namens een bezoeker op te halen, waardoor een secundaire route naar gegevens ontstaat die verder correct beveiligd leken.
+- **Heeft de opslagservice van uw app een gescheiden beheerdersaccount?** Als de inloggegevens die uw app gebruikt om bestanden te uploaden volledige beheerdersrechten hebben over uw gehele cloud-opslagaccount, kan een lek van die ene API-sleutel veel meer blootstellen dan alleen de bucket die uw app daadwerkelijk gebruikt.
 
-- **Is de bucket zelf oprijstbaar (listable), zelfs als individuele bestanden een directe link vereisen?** Een bucket die mappenlijsten toestaat laat iedereen elke bestandsnaam die erin zit opsommen.
-- **Hoe lang blijven uw ondertekende URL's geldig?** Een ondertekende URL is slechts zo beschermend als zijn vervalvenster.
-- **Heeft u vergeten staging-, backup- of test-buckets van eerdere ontwikkeling?** Deze bevatten vaak kopieën van dezelfde gevoelige bestanden.
-- **Is uw CORS-configuratie afgebakend tot uw daadwerkelijke domein?** Een te brede CORS-policy kan een kwaadwillige site geauthenticeerde verzoeken laten doen namens het slachtoffer.
-- **Zijn bestandsnamen voorspelbaar of opeenvolgend?** Gebruik willekeurige, niet-raadbare identificaties om gokpogingen volledig te elimineren.
+Het doorlopen van deze checklist vereist geen diepgaande cloud-beveiligingsexpertise — het vereist simpelweg het besef dat bestandsopslag een eigen set afzonderlijke instellingen heeft die apart moeten worden gecontroleerd van de code van de applicatie zelf.
 
 ## Echt voorbeeld
 
@@ -117,50 +117,42 @@ Gedeeltelijk via de visuele "openbaar/privé" indicator in het dashboard van de 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Lỗi để public storage bucket có phổ biến không?",
+      "name": "Zou een cloud-infrastructuurspecialist dit noemen als een zeldzame verkeerde configuratie of een veelvoorkomende?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rất phổ biến trên toàn ngành, khác biệt khi dùng AI là không có dev kinh nghiệm review cấu hình mặc định trước khi live."
+        "text": "Veelvoorkomend in de hele industrie – het verschil bij bouwen met AI-ondersteuning is simpelweg dat er niet noodzakelijkerwijs iemand met ervaring is die de standaardconfiguratie beoordeelt voordat deze live gaat."
       }
     },
     {
       "@type": "Question",
-      "name": "Các cloud provider lớn (AWS, Firebase, Supabase) có an toàn mặc định không?",
+      "name": "Geldt dit risico voor alle grote cloudproviders?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tùy dịch vụ, nhưng rủi ro để lộ file vẫn xảy ra trên mọi provider nếu không được cấu hình quyền truy cập rõ ràng."
+        "text": "Het onderliggende risico – een opslaglocatie die bereikbaar is zonder de juiste authenticatie – is mogelijk bij vrijwel alle grote providers als het niet bewust anders geconfigureerd wordt."
       }
     },
     {
       "@type": "Question",
-      "name": "Dữ liệu liên quan đến trẻ em và giấy tờ tùy thân nhạy cảm thế nào?",
+      "name": "Is data uit de kinderopvangsector uniek gevoelig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Đặc biệt nhạy cảm vì chứa thông tin cá nhân của trẻ em, dễ bị lợi dụng để đánh cắp danh tính kéo dài nhiều năm."
+        "text": "Het behoort tot de gevoeliger categorieën aangezien er zowel minderjarigen als identiteitsdocumenten bij betrokken zijn, hoewel de technische herstelling identiek is."
       }
     },
     {
       "@type": "Question",
-      "name": "Signed URL có thời hạn dài có an toàn như private file không?",
+      "name": "Is een opslagfout een goed voorbeeld van de architectuurkloof die de CEO beschrijft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, signed URL tồn tại quá lâu (vài tuần/tháng) về bản chất gần như một file public nếu bị lỡ chia sẻ hoặc lưu cache."
+        "text": "Een heel direct voorbeeld – dit is architectuur in de meest letterlijke zin, een configuratiebeslissing die één keer genomen wordt en onzichtbaar is tenzij specifiek beoordeeld."
       }
     },
     {
       "@type": "Question",
-      "name": "Làm sao để tự kiểm tra bucket của mình có bị public không?",
+      "name": "Kan een oprichter de toegangstinstellingen van zijn opslag-bucket zelf controleren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kiểm tra nhãn public/private trên dashboard cloud provider và thử mở URL file từ trình duyệt ẩn danh không đăng nhập."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Cách xử lý chuẩn nhất cho các file giấy tờ cá nhân tải lên là gì?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Chuyển bucket sang Private, chỉ tạo Signed URL có thời hạn ngắn (vài phút) khi người dùng hợp lệ yêu cầu xem."
+        "text": "Gedeeltelijk via de visuele \"openbaar/privé\" indicator in het dashboard van de cloudprovider, hoewel het bevestigen dat elk bestand dit volgt een volledige beoordeling vereist."
       }
     }
   ]

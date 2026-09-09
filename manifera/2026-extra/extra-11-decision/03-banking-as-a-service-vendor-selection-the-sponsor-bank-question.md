@@ -66,6 +66,12 @@ A banking-as-a-service platform with excellent developer documentation and a med
 
 Manifera has helped fintechs architect the abstraction and reconciliation layers that sit between their product and a BaaS provider, reducing lock-in and giving engineering teams independent visibility into ledger state rather than relying solely on the vendor's dashboard. If you are scoping a BaaS integration or evaluating a migration after a vendor's regulatory trouble, [our engineering team](https://www.manifera.com/contact-us/) can walk through the technical architecture with you before you commit a roadmap to it — and our [portfolio](https://www.manifera.com/portfolio/) includes fintech integration work built around exactly this kind of third-party risk.
 
+## The Interchange Economics Most CTOs Overlook Until the Term Sheet
+
+Sponsor bank asset size determines your interchange revenue, not just your compliance risk. Under the Durbin Amendment, debit interchange caps at $0.21 + 0.05% of transaction value for banks holding over $10 billion in assets — but banks under that threshold are exempt, and most BaaS sponsor banks are deliberately structured under $10B specifically to access uncapped interchange, often 1.5%-2%+ per transaction. Verify which regime your sponsor bank falls under before modeling program revenue, and get explicit confirmation in the term sheet rather than an assumption based on "most of our clients see X."
+
+Beyond interchange, examine three recurring cost items: program management fees (typically 10-30 basis points of processed volume on top of pure processing costs), minimum monthly commitments that persist regardless of transaction volume (commonly $5,000-$25,000/month for early-stage programs), and card issuance and replacement costs that some platforms bundle opaquely into a single "per active card" line item. Ask for a fully loaded cost model at three volume tiers — launch, 10x, 100x — because platforms that look cheap at launch volume frequently have margin structures that penalize exactly the growth you are trying to build toward.
+
 ## Frequently Asked Questions
 
 ### What is a sponsor bank in a banking-as-a-service arrangement?
@@ -82,6 +88,18 @@ Whether the platform maintains a real-time, reconciled sub-account ledger that t
 
 ### Do KYC and AML obligations fully transfer to the BaaS vendor?
 Not entirely. The sponsor bank retains ultimate regulatory responsibility, and your own fintech typically retains third-party risk management obligations under current regulatory expectations. A written responsibility matrix clarifying which controls each party owns should be part of any BaaS contract.
+
+### (Scenario: Comparing sponsor banks under and over the Durbin Amendment threshold) Does sponsor bank asset size affect our program's interchange revenue?
+Yes, directly. Sponsor banks under $10 billion in assets are exempt from the Durbin Amendment's debit interchange cap of $0.21 + 0.05%, and can charge 1.5%-2%+ per transaction instead — most BaaS platforms deliberately route through exempt banks for this reason. Confirm your sponsor bank's exempt status in writing before modeling program economics, since a bank crossing the $10B threshold during your contract term can materially cut your interchange revenue overnight.
+
+### (Scenario: Doing due diligence before signing a multi-year BaaS contract) What early warning signs indicate a BaaS vendor is heading toward a sponsor bank consent order?
+Watch for public regulatory actions against the specific sponsor bank, not just the platform, repeated changes in named sponsor banks within a short period, and vendor reluctance to share recent third-party risk management audit results. A platform that has quietly switched sponsor banks more than once in the past two years is signaling relationship instability worth investigating before you sign.
+
+### (Scenario: Fintech planning US and EU expansion) Can a single BaaS vendor relationship support both US and EU banking rails?
+Rarely with one contract. US BaaS platforms operate through FDIC-chartered sponsor banks under US banking law, while EU operations require an e-money institution or credit institution license under separate national regulators — most vendors offering "global" BaaS are actually stitching together two entirely separate sponsor relationships behind one API, so verify the actual underlying entity and licensing for each region rather than assuming single-vendor simplicity.
+
+### (Scenario: Technical evaluation of a vendor's reconciliation architecture) What API-level signals indicate a BaaS vendor's ledger reconciliation is batch-based rather than real-time?
+Ask specifically whether balance and transaction webhooks fire synchronously at the moment of settlement or only after a nightly reconciliation job. A vendor whose API documentation references "end-of-day balance updates" or a "T+1 ledger sync" is running batch reconciliation regardless of how real-time their transaction API feels to end users.
 
 <script type="application/ld+json">
 {
@@ -112,6 +130,26 @@ Not entirely. The sponsor bank retains ultimate regulatory responsibility, and y
       "@type": "Question",
       "name": "Do KYC and AML obligations fully transfer to the BaaS vendor?",
       "acceptedAnswer": {"@type": "Answer", "text": "Not entirely. The sponsor bank retains ultimate regulatory responsibility, and your own fintech typically retains third-party risk management obligations under current regulatory expectations. A written responsibility matrix clarifying which controls each party owns should be part of any BaaS contract."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does sponsor bank asset size affect our program's interchange revenue?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes, directly. Sponsor banks under $10 billion in assets are exempt from the Durbin Amendment's debit interchange cap of $0.21 + 0.05%, and can charge 1.5%-2%+ per transaction instead — most BaaS platforms deliberately route through exempt banks for this reason. Confirm your sponsor bank's exempt status in writing before modeling program economics."}
+    },
+    {
+      "@type": "Question",
+      "name": "What early warning signs indicate a BaaS vendor is heading toward a sponsor bank consent order?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Watch for public regulatory actions against the specific sponsor bank, not just the platform, repeated changes in named sponsor banks within a short period, and vendor reluctance to share recent third-party risk management audit results. A platform that has quietly switched sponsor banks more than once in the past two years is signaling relationship instability."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can a single BaaS vendor relationship support both US and EU banking rails?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Rarely with one contract. US BaaS platforms operate through FDIC-chartered sponsor banks under US banking law, while EU operations require an e-money institution or credit institution license under separate national regulators, so most 'global' BaaS vendors are stitching together two separate sponsor relationships behind one API."}
+    },
+    {
+      "@type": "Question",
+      "name": "What API-level signals indicate a BaaS vendor's ledger reconciliation is batch-based rather than real-time?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Ask whether balance and transaction webhooks fire synchronously at the moment of settlement or only after a nightly reconciliation job. A vendor whose API documentation references 'end-of-day balance updates' or a 'T+1 ledger sync' is running batch reconciliation regardless of how real-time their transaction API feels to end users."}
     }
   ]
 }

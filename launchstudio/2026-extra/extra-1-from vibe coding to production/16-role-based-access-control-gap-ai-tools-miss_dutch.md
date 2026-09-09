@@ -7,6 +7,31 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Rolgebaseerde Toegangscontrole: Het Gat Dat AI-tools Consequent Missen
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Rolgebaseerde Toegangscontrole: Het Gat Dat AI-tools Consequent Missen",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/role-based-access-control-gap-ai-tools-miss"
+  }
+}
+</script>
+
+
 Vraag een AI-codeertool om "een adminpaneel toe te voegen," en het zal dat doen, overtuigend — een aparte sectie, een admin-ogende interface, functionaliteit die de UI van een gewone gebruiker niet toont. Wat het doorgaans niet zal doen, zonder specifieke en bewuste instructie, is server-side verifiëren dat de persoon die de onderliggende API-endpoints van dat paneel benadert daadwerkelijk adminrechten heeft, in tegenstelling tot simpelweg de URL ontdekt of geraden te hebben.
 
 ## Waarom Dit Specifieke Gat Zo Consistent Is Over Tools Heen
@@ -36,6 +61,14 @@ Algemeen beveiligingstesten mist dit specifieke patroon soms omdat de applicatie
 [LaunchStudio](https://launchstudio.eu/nl/) test rolgebaseerde toegangscontrole op precies dit architectuurniveau — verifiëren dat de server onafhankelijk rollen bepaalt en afdwingt, niet alleen dat de interface correct rendert — gesteund door Manifera's cybersecuritygeïnformeerde engineeringpraktijken.
 
 [Laat jouw rolgebaseerde toegangscontrole testen waar het daadwerkelijk toe doet](https://launchstudio.eu/nl/#calculator) — een correct ogend adminpaneel en een correct beveiligd paneel zijn niet dezelfde bewering.
+
+## Waarom Dit Specifieke, Niet Generieke, Tests Verdient
+
+Generieke beveiligingstests missen dit specifieke autorisatiepatroon regelmatig omdat de applicatie aan de oppervlakte ogenschijnlijk correct functioneert — reguliere gebruikers zien reguliere schermen, beheerders zien beheerdersschermen, exact zoals de frontend is ontworpen.
+
+Het blootleggen van de kwetsbaarheid vereist de gerichte aanpak die elders in deze serie is beschreven: gebruik de geldige sessiecookies van een laag-geprivilegieerd account en vuur direct gemanipuleerde HTTP-verzoeken af op API-routes voor beheerders (zoals `/api/admin/users` of `/api/settings/billing`). Alleen wanneer de backend-server zelfstandig een onverbiddelijke `403 Forbidden` retourneert — ongeacht welke frontend-parameters worden meegestuurd — is er sprake van werkelijke autorisatie.
+
+[LaunchStudio](https://launchstudio.eu/nl/) test rolgebaseerde toegangscontrole op dit diepe API-niveau als vast onderdeel van het Launch Ready-traject, zodat beheerdersrechten daadwerkelijk afgedwongen worden en niet slechts visueel verborgen zijn.
 
 ## Echt voorbeeld
 
@@ -77,3 +110,52 @@ Het is bijzonder ingrijpend in elke applicatie met meer dan één gebruikersrol 
 ### Hoe kan ik verifiëren dat een fix hiervoor daadwerkelijk werkte, in plaats van simpelweg te vertrouwen dat het is aangepakt?
 
 Draai de exacte test opnieuw die het gat naar boven bracht — probeer hetzelfde recht-claimende verzoek met de credentials van een account met lagere rechten — en bevestig dat de server nu een weigering teruggeeft (doorgaans een 403-respons) in plaats van de voorheen toegankelijke data, wat een direct verifieerbare, binaire uitkomst is in plaats van iets waar je op moet vertrouwen.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik weten of mijn app deze specifieke fout heeft, waarbij rol vertrouwd wordt vanuit de client in plaats van server-side geverifieerd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De specifieke test is een actie proberen gereserveerd voor een hoger bevoegde rol met de credentials van een account met lagere rechten, waarbij het verzoek gewijzigd is om de hogere rol te claimen — als de server voldoet in plaats van te weigeren, wordt rol vertrouwd vanuit de client, wat precies het patroon is om naar te zoeken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit anders dan het algemene API-niveau-authenticatiegat elders in deze serie behandeld?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gerelateerd maar apart — authenticatie bevestigt wie je bent, terwijl rolgebaseerde toegangscontrole bepaalt wat die specifieke identiteit mag doen; een app kan solide authenticatie hebben (identiteit correct verifiëren) terwijl dit specifieke RBAC-gat nog steeds aanwezig is (een geclaimde rol incorrect vertrouwen in plaats van een onafhankelijk geverifieerde)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vereist het repareren hiervan het herstructureren van hoe rollen in mijn applicatie gedefinieerd zijn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet noodzakelijk — de roldefinities zelf (wat een admin kan doen versus een gewone gebruiker) zijn meestal prima zoals oorspronkelijk ontworpen; de fix zit specifiek in hoe de server bepaalt welke rol van toepassing is op het huidige verzoek, niet in het permissiemodel zelf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit gat gebruikelijker in bepaalde soorten applicaties dan andere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is bijzonder ingrijpend in elke applicatie met meer dan één gebruikersrol en enige data of functionaliteit bedoeld om beperkt te worden tussen hen — apps met slechts één ongedifferentieerd gebruikerstype hebben deze specifieke blootstelling niet, hoewel de meeste B2B- en multi-tenant-SaaS-producten precies dit soort roldistinctie hebben."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik verifiëren dat een fix hiervoor daadwerkelijk werkte, in plaats van simpelweg te vertrouwen dat het is aangepakt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Draai de exacte test opnieuw die het gat naar boven bracht — probeer hetzelfde recht-claimende verzoek met de credentials van een account met lagere rechten — en bevestig dat de server nu een weigering teruggeeft (doorgaans een 403-respons) in plaats van de voorheen toegankelijke data, wat een direct verifieerbare, binaire uitkomst is in plaats van iets waar je op moet vertrouwen."
+      }
+    }
+  ]
+}
+</script>

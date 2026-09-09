@@ -72,6 +72,10 @@ Manifera implemented a tagging strategy attributing every resource to a team and
 
 Companies without a formal FinOps practice commonly waste 30% or more of their cloud spend on idle, oversized, or unattributed resources — for a company spending $2 million annually, that's $600,000 or more recoverable every year. A focused FinOps engagement typically pays for itself within the first month of implementation through rightsizing and reserved-capacity savings alone. [Talk to Manifera](https://www.manifera.com/contact-us/) about FinOps consulting that gets your cloud invoice growing in line with your business, not ahead of it.
 
+## The FinOps Implementation Timeline: What a CFO Should See in 90 Days
+
+Weeks 1-2 focus on visibility: a tagging enforcement policy pushed at the infrastructure-as-code level so every new resource is attributed on creation, plus a baseline audit of the trailing 90 days of billing data broken down by team, environment, and service — this step alone typically surfaces 8-12% of spend as instantly attributable to already-decommissioned projects nobody had turned off. Weeks 3-6 are rightsizing: compute and database instances get evaluated against actual CPU and memory utilization percentiles rather than averages, which hide bursty underprovisioning — a standard finding at this stage is 25-35% of instances running below 15% average utilization. Weeks 6-10 cover commitment strategy: reserved capacity or savings-plan purchases are sized against the trailing three-month utilization baseline, deliberately leaving 15-20% of predictable load on-demand as a buffer against architecture changes, because over-committing to reserved capacity is its own waste category, not a hedge against it. Weeks 10-12 bring automation live: non-production shutdown scheduling activates, and a monthly cost-allocation report starts shipping to each team lead with their own line item, not a buried row in an aggregate bill. By day 90, a properly run FinOps engagement has typically realized 20-30% of its eventual savings, with the remainder compounding over the following two quarters as teams begin optimizing against a number they can finally see. A CFO should treat month four, not month one, as the point to start holding engineering accountable for a specific waste-reduction percentage.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO whose cloud bill is growing faster than revenue) Why does cloud infrastructure spend often grow faster than the business itself?
@@ -94,6 +98,22 @@ For predictable, steady baseline workloads, where committing to reserved capacit
 
 Often within the first month, through rightsizing and reserved-capacity savings alone, before accounting for ongoing waste-prevention gains.
 
+### (Scenario: CFO whose infrastructure spans AWS, Azure, and GCP simultaneously) How does cloud cost optimization work when spend is split across multiple cloud providers?
+
+Each provider has its own pricing model, discount structure, and native cost-reporting tool, so multi-cloud FinOps requires a normalized cost model that maps all three onto common categories — otherwise a CFO is comparing three incompatible bills instead of one governed total.
+
+### (Scenario: CFO who only finds out about a spend spike when the monthly invoice arrives) Can cloud cost overruns be caught before the invoice arrives instead of after?
+
+Yes — anomaly-detection alerting on daily spend by service and team flags an unusual spike within 24-48 hours of it starting, versus discovering it weeks later on the monthly bill when the cost has already been fully incurred.
+
+### (Scenario: CFO whose engineering team has moved workloads to Kubernetes) Why is cost optimization harder once workloads move to Kubernetes and containers?
+
+Because a Kubernetes cluster's bill is a single aggregate number covering many pods, namespaces, and teams sharing the same underlying nodes, so cost allocation requires cluster-level tooling that attributes spend per namespace or workload — without it, container adoption actually makes the anonymous-bill problem worse, not better.
+
+### (Scenario: CFO worried reserved capacity commitments could become a liability) What's the downside risk if we commit to reserved capacity and our usage later drops?
+
+An over-sized reserved or committed-use purchase becomes its own waste category, since the commitment is paid regardless of actual usage — sound FinOps practice sizes commitments against trailing utilization and deliberately leaves 15-20% of predictable load on-demand as a buffer against exactly this scenario.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,7 +123,11 @@ Often within the first month, through rightsizing and reserved-capacity savings 
     { "@type": "Question", "name": "(Scenario: CFO trying to estimate how much cloud waste exists in the budget) How much of typical cloud spend is actually waste?", "acceptedAnswer": { "@type": "Answer", "text": "Industry benchmarks find 30% or more of cloud spend without a formal FinOps practice is waste." } },
     { "@type": "Question", "name": "(Scenario: CFO wanting cloud costs attributed to specific teams) How does cost allocation tagging help control cloud spend?", "acceptedAnswer": { "@type": "Answer", "text": "It attributes spend to a specific team or product, turning an anonymous bill into numbers each team owns." } },
     { "@type": "Question", "name": "(Scenario: CFO deciding between on-demand and reserved cloud pricing) When does reserved or committed-use cloud capacity make sense over on-demand pricing?", "acceptedAnswer": { "@type": "Answer", "text": "For predictable, steady baseline workloads, cutting costs 30-50% versus the on-demand premium." } },
-    { "@type": "Question", "name": "(Scenario: CFO wondering how quickly a FinOps effort pays off) How quickly does a FinOps engagement typically pay for itself?", "acceptedAnswer": { "@type": "Answer", "text": "Often within the first month, through rightsizing and reserved-capacity savings alone." } }
+    { "@type": "Question", "name": "(Scenario: CFO wondering how quickly a FinOps effort pays off) How quickly does a FinOps engagement typically pay for itself?", "acceptedAnswer": { "@type": "Answer", "text": "Often within the first month, through rightsizing and reserved-capacity savings alone." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose infrastructure spans AWS, Azure, and GCP simultaneously) How does cloud cost optimization work when spend is split across multiple cloud providers?", "acceptedAnswer": { "@type": "Answer", "text": "It requires a normalized cost model mapping each provider's pricing and reporting onto common categories, rather than comparing three incompatible bills." } },
+    { "@type": "Question", "name": "(Scenario: CFO who only finds out about a spend spike when the monthly invoice arrives) Can cloud cost overruns be caught before the invoice arrives instead of after?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — anomaly-detection alerting on daily spend flags an unusual spike within 24-48 hours instead of on the monthly bill weeks later." } },
+    { "@type": "Question", "name": "(Scenario: CFO whose engineering team has moved workloads to Kubernetes) Why is cost optimization harder once workloads move to Kubernetes and containers?", "acceptedAnswer": { "@type": "Answer", "text": "A cluster's bill is one aggregate covering many pods and teams sharing nodes, so cost allocation requires cluster-level tooling attributing spend per namespace or workload." } },
+    { "@type": "Question", "name": "(Scenario: CFO worried reserved capacity commitments could become a liability) What's the downside risk if we commit to reserved capacity and our usage later drops?", "acceptedAnswer": { "@type": "Answer", "text": "An over-sized commitment becomes its own waste category since it's paid regardless of usage, which is why sound practice sizes commitments against trailing utilization and leaves 15-20% on-demand as a buffer." } }
   ]
 }
 </script>

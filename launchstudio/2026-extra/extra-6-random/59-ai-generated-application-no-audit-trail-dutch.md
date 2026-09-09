@@ -40,6 +40,23 @@ Een audit trail achteraf toevoegen is meestal aanvullend in plaats van verstoren
 
 Onze technici, gevestigd in Ho Chi Minh-stad als onderdeel van het bredere engineeringteam van Manifera, behandelen audit trail-hiaten als een van de standaardcontroles in een productieklaarheidsbeoordeling, juist omdat ze zo gemakkelijk over het hoofd worden gezien en zo ingrijpend zijn de ene keer dat ze nodig zijn. Als uw applicatie iets geschilgevoeligs verwerkt, is het de moeite waard om [uw project door ons proces te laten beoordelen](https://launchstudio.eu/nl/#process) voordat het eerste geschil zich aandient in plaats van erna. Het [portfolio](https://www.manifera.com/portfolio/) van Manifera omvat verschillende systemen die precies voor dit soort verantwoordingsvereiste zijn gebouwd in gereguleerde en publieke context.
 
+## Welke Handelingen Moeten Daadwerkelijk Gelogd Worden, en Welke Niet?
+
+Het blind loggen van elke muisklik en elk verzoek leidt tot overvolle logbestanden, torenhoge opslagkosten en het risico dat gevoelige gegevens onbedoeld worden vastgelegd. Een professionele audittrail focust uitsluitend op handelingen die zakelijk en juridisch relevant zijn:
+
+**Wat U Altijd Moet Loggen (De Kern-Auditrail):**
+- **Authenticatie-events:** Succesvolle inlogpogingen, mislukte inlogpogingen, wachtwoord-resets en sessie-beëindigingen.
+- **Autorisatiefouten:** Elk HTTP-403 verzoek waarbij een gebruiker probeerde een record te openen waarvoor hij geen rechten had.
+- **Financiële transacties:** Aanmaken van abonnementen, verwerking van betalingen, restituties en wijzigingen in betaalmethoden.
+- **Cruciale data-mutaties:** Het aanmaken, wijzigen of verwijderen van gebruikersaccounts, organisaties of gevoelige bedrijfsinstellingen.
+- **Data-export acties:** Het downloaden van bulk-rapportages of klantoverzichten.
+
+**Wat U Nooit Moet Loggen:**
+- Wachtwoorden in plaintext, creditcardnummers of volledige API-tokens.
+- Gevoelige persoonlijke berichten of documentinhoud.
+- Elk triviaal GET-verzoek voor statische bestanden (zoals afbeeldingen en CSS).
+
+Zorg dat elk logbericht vier vaste velden bevat: *Wie* (userId), *Wat* (actie), *Wanneer* (ISO-timestamp) en *Resultaat* (succes/fout). Daarmee voldoet u direct aan de strengste zakelijke compliance-eisen.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: het geschil dat niets kon beslechten
@@ -86,11 +103,46 @@ Alles wat registraties, goedkeuringen, financiële dossiers, of andere gegevens 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What exactly is an audit trail?", "acceptedAnswer": { "@type": "Answer", "text": "It's a record of meaningful changes in an application — what changed, who made the change, and exactly when — kept separately from the main data so it can be reviewed later if a dispute arises." } },
-    { "@type": "Question", "name": "Why don't AI coding tools add this automatically?", "acceptedAnswer": { "@type": "Answer", "text": "Because building a form or workflow feature doesn't inherently require logging its history, and unless that's explicitly requested, most AI-generated builds simply don't include it." } },
-    { "@type": "Question", "name": "How would I know if my app already has one?", "acceptedAnswer": { "@type": "Answer", "text": "Check whether there's any record, anywhere in the system, of who changed a specific field and when — if that information doesn't exist independently of the current state of the data, there's no audit trail." } },
-    { "@type": "Question", "name": "Is adding an audit trail disruptive to an existing application?", "acceptedAnswer": { "@type": "Answer", "text": "No — it's typically an additive logging layer that doesn't change how existing features behave, which is why it can usually be added without touching the frontend at all." } },
-    { "@type": "Question", "name": "Which kinds of applications need this most urgently?", "acceptedAnswer": { "@type": "Answer", "text": "Anything handling registrations, approvals, financial records, or other data where a dispute about who did what could plausibly arise — municipal, healthcare, and financial tools are common examples, but the risk applies wherever a record's accuracy might be challenged." } }
+    {
+      "@type": "Question",
+      "name": "Wat is precies een audit trail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is een dossier van betekenisvolle wijzigingen in een applicatie — wat er veranderde, wie de wijziging maakte, en exact wanneer — apart bijgehouden van de hoofdgegevens zodat het later kan worden beoordeeld als er een geschil ontstaat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom voegen AI-codeertools dit niet automatisch toe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat het bouwen van een formulier- of workflowfunctie niet inherent vereist dat de geschiedenis ervan wordt gelogd, en tenzij dat expliciet wordt gevraagd, bevatten de meeste AI-gegenereerde builds dit gewoon niet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik weten of mijn app er al een heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Controleer of er ergens in het systeem een dossier bestaat van wie een specifiek veld heeft veranderd en wanneer — als die informatie niet onafhankelijk van de huidige staat van de gegevens bestaat, is er geen audit trail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het toevoegen van een audit trail verstorend voor een bestaande applicatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee — het is doorgaans een aanvullende logboeklaag die niet verandert hoe bestaande functies zich gedragen, wat de reden is waarom het meestal kan worden toegevoegd zonder de frontend ook maar aan te raken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke soorten applicaties hebben dit het dringendst nodig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alles wat registraties, goedkeuringen, financiële dossiers, of andere gegevens verwerkt waarbij een geschil over wie wat deed plausibel kan ontstaan — gemeentelijke, zorg- en financiële tools zijn veelvoorkomende voorbeelden, maar het risico geldt overal waar de nauwkeurigheid van een dossier kan worden betwist."
+      }
+    }
   ]
 }
 </script>

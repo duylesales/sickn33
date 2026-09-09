@@ -88,20 +88,53 @@ Manifera's engineeringteam van meer dan 120 engineers, met ontwikkelcapaciteit i
 ### Wat is een realistisch budget voor een heropbouw van de backend?
 De meeste projecten variëren van € 800 tot € 7.500 afhankelijk van de complexiteit, geleverd in één tot drie weken — ongeveer een vijfde van wat een traditioneel ontwikkelbureau zou rekenen.
 
-### Hoe kan ik zelf op gelijktijdigheidsproblemen testen voordat ik contact opneem met iemand?
-Open uw app in twee browsetabbladen ingelogd als dezelfde of gerelateerde accounts, en probeer hetzelfde record in beide te bewerken. Als de ene opslag de andere stilletjes overschrijft zonder waarschuwing, is dat een helder signaal dat uw backend geen afhandeling voor gelijktijdigheid heeft geconfigureerd.
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Zal LaunchStudio veranderen hoe mijn AI-frontend eruitziet of zich gedraagt?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, LaunchStudio werkt uitsluitend aan backend-systemen — API's, databases, authenticatie en infrastructuur." } },
-    { "@type": "Question", "name": "Hoe weet ik of mijn in Almere gebouwde frontend een backend-probleem heeft?", "acceptedAnswer": { "@type": "Answer", "text": "Waarschuwingssignalen zijn onder meer wisselvallige fouten onder belasting, verdwijnende data, en verslechterende prestaties bij groei." } },
-    { "@type": "Question", "name": "Werkt LaunchStudio met oprichters buiten Almere en Flevoland?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, LaunchStudio bedient oprichters in heel Nederland en de Benelux." } },
-    { "@type": "Question", "name": "Wie bouwt de backend-infrastructuur?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineeringteam van 120+ engineers met ontwikkelcapaciteit in Ho Chi Minh City." } },
-    { "@type": "Question", "name": "Wat is een realistisch budget voor een heropbouw van de backend?", "acceptedAnswer": { "@type": "Answer", "text": "De meeste projecten variëren van € 800 tot € 7.500, geleverd in 1 tot 3 weken." } },
-    { "@type": "Question", "name": "Hoe kan ik zelf op gelijktijdigheidsproblemen testen?", "acceptedAnswer": { "@type": "Answer", "text": "Open de app in twee tabbladen ingelogd als gerelateerde accounts en bewerk hetzelfde record in beide. Een stille overschrijving duidt op ontbrekende afhandeling." } }
+    {
+      "@type": "Question",
+      "name": "Zal LaunchStudio veranderen hoe mijn AI-frontend eruitziet of zich gedraagt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, LaunchStudio werkt uitsluitend aan backend-systemen — API's, databases, authenticatie en infrastructuur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of mijn in Almere gebouwde frontend een backend-probleem heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Waarschuwingssignalen zijn onder meer wisselvallige fouten onder belasting, verdwijnende data, en verslechterende prestaties bij groei."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werkt LaunchStudio met oprichters buiten Almere en Flevoland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, LaunchStudio bedient oprichters in heel Nederland en de Benelux."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie bouwt de backend-infrastructuur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manifera's engineeringteam van 120+ engineers met ontwikkelcapaciteit in Ho Chi Minh City."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is een realistisch budget voor een heropbouw van de backend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste projecten variëren van € 800 tot € 7.500, geleverd in 1 tot 3 weken."
+      }
+    }
   ]
 }
 </script>

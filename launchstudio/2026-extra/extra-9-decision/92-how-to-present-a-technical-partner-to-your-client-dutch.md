@@ -95,7 +95,7 @@ Achter LaunchStudio staat [Manifera's team van 120+ ervaren software-engineers](
 
 Wilt u sparren over de beste presentatie naar uw klant, of wilt u dat een van onze engineers aanschuift als benoemde specialist? [Plan een kennismaking van 15 minuten](https://launchstudio.eu/nl/#contact) en we stemmen samen de juiste aanpak af.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Studio Oudshoorn: De Vraag Die Alles Veranderde
 

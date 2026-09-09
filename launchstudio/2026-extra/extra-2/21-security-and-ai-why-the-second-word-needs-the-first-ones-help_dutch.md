@@ -65,10 +65,15 @@ Een oprichter hoeft niet te wachten op een formele compliance-beoordeling om een
 
 **Stel deze vier vragen over elke functie die toegang verleent tot of deelt met de gegevens van een andere persoon:**
 
-- Kunt u nu meteen laten zien wanneer een specifieke gebruiker een specifiek persoon toegang heeft verleend – niet "ja, ze klikten op accepteren" uit het geheugen, maar een daadwerkelijk record met tijdstempel dat u op verzoek kunt opvragen?
-- Als toegang later wordt ingetrokken, bewaart iets dan het feit dat het ooit heeft bestaan en voor hoe lang?
-- Toont het record wie de toegang daadwerkelijk heeft geautoriseerd, of leidt het systeem het auteurschap af van wie er toevallig op dat moment was ingelogd?
-- Als een toezichthouder of een boos familielid om deze geschiedenis zou vragen over zes maanden, kunt u het dan binnen een dag produceren?
+- Kunt u nu meteen laten zien wanneer een specifieke gebruiker een specifiek persoon toegang heeft verleend – niet "ja, ze klikten op accepteren, daar ben ik vrijwel zeker van" uit het geheugen, maar een daadwerkelijk record met tijdstempel dat u op verzoek direct kunt opvragen?
+- Als toegang later wordt ingetrokken, bewaart iets dan het feit dat het ooit heeft bestaan en voor hoe lang, of verdwijnt het record simpelweg op het moment dat de toegang eindigt, waardoor alleen de huidige staat overblijft?
+- Toont het record wie de toegang daadwerkelijk heeft geautoriseerd, of leidt het systeem het auteurschap simpelweg af van wie er toevallig op dat moment was ingelogd – een subtiel maar cruciaal verschil als een account ooit werd gedeeld of gecompromitteerd?
+- Als een toezichthouder, een verzekeraar of een boos familielid over zes maanden om deze geschiedenis zou vragen, kunt u deze dan binnen een dag overleggen, of zou u deze moeten reconstrueren uit oude supporttickets en aannames?
+
+Een "nee" op een van deze vragen is allerminst ongebruikelijk voor een eerste versie van een product. AI-codeertools hebben geen ingebouwde reden om toestemmingssporen toe te voegen, tenzij een prompt daar specifiek om vroeg. Bijna elke solo-bouwer start daarom exact op dit punt — het is de standaard, niet de uitzondering. Waar het om gaat, is het behandelen van een "nee" als een afgebakende, oplosbare technische taak in plaats van een vage, sluimerende zorg in uw achterhoofd.
+
+De oplossing zelf is in de meeste gevallen compacter dan het klinkt: een enkele nieuwe databasetabel die vastlegt wie wat heeft gedaan, met wiens gegevens en wanneer, geschreven naast de bestaande autorisatiecode zonder enig onderdeel daarvan te hoeven vervangen. Het raakt doorgaans niet aan hoe de functionaliteit eruitziet of aanvoelt voor de eindgebruikers — de verandering is volledig onzichtbaar voor gebruikers en draait puur om wat het systeem achteraf onomstotelijk kan bewijzen.
+
 
 ## Echt voorbeeld
 
@@ -89,25 +94,25 @@ Een familiegeschil over wie de toegang van een specifieke zorgverlener had geaut
 
 ## Veelgestelde vragen
 
-### Zou een functionaris voor gegevensbescherming (FG/DPO) ontbrekende toestemmings-logging beschouwen als een technische of een governance-kloof?
+### Zou een functionaris voor gegevensbescherming (FG/DPO) ontbrekende toestemmingsregistratie beschouwen als een technische of een beleidsmatige kloof?
 
-Beide in de praktijk – het is een governance-vereiste (het aantonen van een rechtmatige grondslag voor de verwerking) waaraan moet worden voldaan via een specifiek technisch mechanisme (een daadwerkelijk auditspoor).
+Beide in de praktijk, en de overlap is precies waar het om draait — het is een beleidsmatige en wettelijke vereiste (het aantonen van een geldige rechtmatige grondslag voor de gegevensverwerking) waaraan voldaan moet worden via een specifiek technisch mechanisme (een daadwerkelijk, onveranderlijk auditspoor). Geen van beide invalshoeken op zichzelf geeft volledig weer waarom dit bewuste technische engineering vereist in plaats van uitsluitend een statisch juridisch beleidsdocument.
 
-### Geldt dit soort kloof alleen voor gezondheidsgerelateerde producten?
+### Geldt dit soort kloof alleen voor gezondheidsgerelateerde producten, of veel breder?
 
-Het geldt het meest dringend voor gezondheidsgerelateerde en andere gevoelige gegevensproducten vanwege de verhoogde nalevingsdrempel, maar elk product dat persoonlijke gegevens verwerkt onder een expliciete toestemmingsgrondslag heeft baat bij hetzelfde soort auditeerbare spoor.
+Het geldt het meest acuut voor gezondheidsgerelateerde en andere gevoelige gegevensproducten vanwege de aanzienlijk strengere wettelijke nalevingsdrempel onder de AVG, maar elk product dat persoonsgegevens verwerkt op basis van expliciete toestemming profiteert van exact ditzelfde type controleerbare auditspoor. De stelling 'we zijn er vrij zeker van dat dit destijds geautoriseerd was' is immers een uiterst zwakke verdediging bij elk juridisch of operationeel geschil.
 
-### Vormt ervaring met onderzoeksprojecten zoals bij TNO het ontwerp voor toestemmings-logging?
+### Manifera heeft gewerkt met onderzoeksgerichte instellingen zoals TNO aan datagevoelige projecten — beïnvloedt die achtergrond hoe toestemmingslogging wordt ontworpen?
 
-Ja – projecten met gevoelige onderzoeksgegevens vereisen al lang exact dit soort aantoonbaar, auditeerbaar toestemmingsspoor.
+Ja, direct — projecten met gevoelige onderzoeks- en gezondheidsdata vereisen al decennialang exact dit soort aantoonbare, auditeerbare toestemmingssporen. Ditzelfde beproefde ontwerppatroon vertaalt zich één-op-één naar een door een solo-oprichter gebouwd ouderenzorgplatform dat voor vergelijkbare, zij het kleinschaligere, wettelijke verplichtingen staat.
 
-### Weerspiegelt dit de verschuiving naar verantwoorde architectuur die de CEO beschrijft?
+### Is dit het soort kloof waarnaar CEO Herre Roelevink verwijst wanneer hij de verschuiving beschrijft van software bouwen naar software verantwoord ontwerpen?
 
-Ja, precies – een toestemmingslogboek is niet een functie waar een gebruiker rechtstreeks mee communiceert of opmerkt, wat exact de categorie is van onzichtbare architecturale beslissingen.
+Ja, exact — een toestemmingslogboek is geen visuele feature waarmee een eindgebruiker rechtstreeks interacteert of die direct opvalt in een interface. Het valt precies in de categorie van onzichtbare architectuurbeslissingen die Roelevink herhaaldelijk heeft aangewezen als het moeilijkere, minder vanzelfsprekende onderdeel van softwareontwikkeling in het huidige AI-tijdperk.
 
-### Kan een oprichter een handmatige spreadsheet gebruiken als vervanging voor correcte toestemmings-logging?
+### Zou een oprichter basis-toestemmingslogging zelf kunnen toevoegen zonder volledige audit, simpelweg door een spreadsheet bij te houden?
 
-Het kan dienen als een tijdelijke oplossing, maar het schaalt niet betrouwbaar en blijft niet synchroon met de daadwerkelijke status van het systeem.
+Een handmatig bijgehouden overzicht kan tijdelijk dienen als een noodoplossing, maar het schaalt niet betrouwbaar en is extreem vatbaar voor menselijke fouten, vergetelheid of het uit de pas lopen met de daadwerkelijke staat van het product. Een technisch ontworpen, 'append-only' logboek dat direct gekoppeld is aan de code die toegang verleent, is het enige dat daadwerkelijk garandeert dat de administratie nooit geruisloos kan afwijken van de werkelijkheid.
 
 <script type="application/ld+json">
 {
@@ -116,50 +121,42 @@ Het kan dienen als een tijdelijke oplossing, maar het schaalt niet betrouwbaar e
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Lỗi thiếu consent logging là lỗi kỹ thuật hay lỗi quản trị?",
+      "name": "Zou een functionaris voor gegevensbescherming (FG/DPO) ontbrekende toestemmingsregistratie beschouwen als een technische of een beleidsmatige kloof?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cả hai — đây là yêu cầu quản trị (chứng minh cơ sở pháp lý) phải được đáp ứng bằng cơ chế kỹ thuật (audit trail)."
+        "text": "Beide in de praktijk, en de overlap is precies waar het om draait — het is een beleidsmatige en wettelijke vereiste (het aantonen van een geldige rechtmatige grondslag voor de gegevensverwerking) waaraan voldaan moet worden via een specifiek technisch mechanisme (een daadwerkelijk, onveranderlijk auditspoor). Geen van beide invalshoeken op zichzelf geeft volledig weer waarom dit bewuste technische engineering vereist in plaats van uitsluitend een statisch juridisch beleidsdocument."
       }
     },
     {
       "@type": "Question",
-      "name": "Thiếu audit log có chỉ ảnh hưởng tới các app y tế/sức khỏe không?",
+      "name": "Geldt dit soort kloof alleen voor gezondheidsgerelateerde producten, of veel breder?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nghiêm trọng nhất ở y tế, nhưng bất kỳ sản phẩm nào xử lý dữ liệu cá nhân theo sự đồng ý đều cần audit log."
+        "text": "Het geldt het meest acuut voor gezondheidsgerelateerde en andere gevoelige gegevensproducten vanwege de aanzienlijk strengere wettelijke nalevingsdrempel onder de AVG, maar elk product dat persoonsgegevens verwerkt op basis van expliciete toestemming profiteert van exact ditzelfde type controleerbare auditspoor. De stelling 'we zijn er vrij zeker van dat dit destijds geautoriseerd was' is immers een uiterst zwakke verdediging bij elk juridisch of operationeel geschil."
       }
     },
     {
       "@type": "Question",
-      "name": "Kinh nghiệm làm việc với TNO có giúp ích gì cho thiết kế consent log?",
+      "name": "Manifera heeft gewerkt met onderzoeksgerichte instellingen zoals TNO aan datagevoelige projecten — beïnvloedt die achtergrond hoe toestemmingslogging wordt ontworpen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, các dự án nghiên cứu dữ liệu nhạy cảm đòi hỏi quy chuẩn lưu vết nghiêm ngặt, áp dụng hoàn hảo cho startup."
+        "text": "Ja, direct — projecten met gevoelige onderzoeks- en gezondheidsdata vereisen al decennialang exact dit soort aantoonbare, auditeerbare toestemmingssporen. Ditzelfde beproefde ontwerppatroon vertaalt zich één-op-één naar een door een solo-oprichter gebouwd ouderenzorgplatform dat voor vergelijkbare, zij het kleinschaligere, wettelijke verplichtingen staat."
       }
     },
     {
       "@type": "Question",
-      "name": "Dùng file Excel/Google Sheet ghi thủ công thay cho consent log có được không?",
+      "name": "Is dit het soort kloof waarnaar CEO Herre Roelevink verwijst wanneer hij de verschuiving beschrijft van software bouwen naar software verantwoord ontwerpen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chỉ là giải pháp tạm thời, không thể mở rộng và rất dễ bị lệch khỏi trạng thái thực tế của hệ thống."
+        "text": "Ja, exact — een toestemmingslogboek is geen visuele feature waarmee een eindgebruiker rechtstreeks interacteert of die direct opvalt in een interface. Het valt precies in de categorie van onzichtbare architectuurbeslissingen die Roelevink herhaaldelijk heeft aangewezen als het moeilijkere, minder vanzelfsprekende onderdeel van softwareontwikkeling in het huidige AI-tijdperk."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian lưu trữ consent audit log nên là bao lâu?",
+      "name": "Zou een oprichter basis-toestemmingslogging zelf kunnen toevoegen zonder volledige audit, simpelweg door een spreadsheet bij te houden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nên lưu trữ trong toàn bộ thời gian tài khoản hoạt động cộng thêm một khoảng thời gian đệm sau khi đóng tài khoản."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Sửa lỗi thiếu consent logging có làm thay đổi giao diện người dùng không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Không, toàn bộ sửa đổi nằm ở backend database (append-only table), hoàn toàn vô hình với người dùng cuối."
+        "text": "Een handmatig bijgehouden overzicht kan tijdelijk dienen als een noodoplossing, maar het schaalt niet betrouwbaar en is extreem vatbaar voor menselijke fouten, vergetelheid of het uit de pas lopen met de daadwerkelijke staat van het product. Een technisch ontworpen, 'append-only' logboek dat direct gekoppeld is aan de code die toegang verleent, is het enige dat daadwerkelijk garandeert dat de administratie nooit geruisloos kan afwijken van de werkelijkheid."
       }
     }
   ]

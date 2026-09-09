@@ -57,16 +57,20 @@ Manifera's engineeringwerk voor prijzen en transactiebeveiliging wordt geleverd 
 
 [Bekijk wat uw project zou kosten met onze calculator](https://launchstudio.eu/nl/#calculator).
 
-## Waar door de client vertrouwde waarden zich nog meer verbergen
+## Waar Door de Client Vertrouwde Waarden Zich Nog Meer Verbergen
 
-Afrekenprijzen zijn de meest zichtbare versie van deze kloof, maar het is zelden de enige plek waar een door de frontend berekend getal wordt vertrouwd zonder verificatie aan de serverzijde:
+De uiteindelijke prijs bij het afrekenen is de meest zichtbare manifestatie van deze kloof, maar het is zelden de enige plek waar een getal dat door de frontend is berekend klakkeloos wordt vertrouwd zonder verificatie op de server. Een gerichte controle van elke door AI gegenereerde applicatie zou specifiek elk van deze punten moeten controleren:
 
-- **Verzend- en bezorgkosten** — berekend op basis van adres of gewicht, maar net zo gemakkelijk te manipuleren als het niet op de server wordt herberekend.
-- **Btw-berekening** — een inschatting aan de frontend is handig voor weergave, maar mag nooit het daadwerkelijk afgeschreven bedrag bepalen.
-- **Aantal- en voorraadlimieten** — een frontend die voorkomt dat een gebruiker een 11e artikel toevoegt is een gemak, geen handhaving, tenzij de server het 11e artikel ook weigert.
-- **Loyaliteitspunten en beloningen** — het puntensaldo en de korting moeten server-side worden herberekend op basis van de transactiegeschiedenis.
-- **Kortingscode-stapeling** — een frontend die het combineren van twee codes voorkomt zegt niets over of de server dezelfde regel afdwingt.
-- **Abonnementsniveau-toegang** — een "Pro"-badge tonen op basis van een lokale status is een weergavekeuze, geen toegangsbepaling.
+- **Verzend- en bezorgkosten** — berekend op basis van adres, gewicht of een gekozen leversnelheid. Deze zijn net zo gemakkelijk te onderscheppen en te manipuleren als een kortingstotaal als de server het bedrag niet onafhankelijk opnieuw berekent op basis van de werkelijke ordergegevens.
+- **Btw- en belastingberekeningen** — met name in producten die meerdere landen of regio's bedienen, waar een frontend-schatting handig is voor de weergave, maar nooit het bedrag mag zijn dat daadwerkelijk in rekening wordt gebracht.
+- **Hoeveelheids- en voorraadlimieten** — een frontend die voorkomt dat een gebruiker een elfde artikel toevoegt aan een winkelmandje met een limiet van tien, is een puur visueel gebruikersgemak en geen handhaving, tenzij de server dat elfde artikel ook onafhankelijk weigert.
+- **Loyaliteitspunten en beloningen** — een lopend puntensaldo en de korting die het ontgrendelt, moeten altijd op de server worden herberekend vanuit de werkelijke transactiegeschiedenis van de gebruiker, en nooit als een gerapporteerd getal van de client worden aangenomen.
+- **Het stapelen van coupons en kortingen** — een frontend die netjes voorkomt dat twee elkaar uitsluitende kortingscodes in de interface worden gecombineerd, zegt helemaal niets over de vraag of de server diezelfde beperking zelfstandig afdwingt.
+- **Toegangscontrole tot abonnementsniveaus** — een "Pro"-badge die wordt getoond op basis van een lokaal in de cache opgeslagen abonnementsstatus is een weergavekeuze, geen autorisatiecontrole, tenzij elke beveiligde actie het werkelijke niveau van de gebruiker opnieuw op de server verifieert.
+
+Het patroon dat al deze zes punten verbindt is identiek: een waarde die correct wordt berekend of weergegeven in de browser wordt ergens in de backend behandeld alsof het correct kunnen berekenen ervan hetzelfde is als vertrouwd kunnen worden om het eerlijk te rapporteren. Dat zijn twee wezenlijk verschillende garanties. Slechts één daarvan overleeft een gebruiker die de ontwikkelaarstools van zijn browser opent om de grenzen van uw systeem te testen in plaats van de app alleen netjes te gebruiken.
+
+Een oprichter zonder technische achtergrond kan zelf een ruwe versie van deze audit uitvoeren: vraag u bij elk van de bovenstaande zes items af: "als ik deze waarde in mijn browser zou aanpassen voordat ik het formulier verstuur, zou de server dat dan überhaupt merken?" Een volmondig "ja, het verzoek wordt dan geweigerd" op alle zes de vragen is de minimale maatstaf om de prijs- en toegangslogica van een product productierijp te noemen. Elk twijfelachtig antwoord verdient een grondige technische controle voordat echte klanten — met hun browser tools — op schaal met uw product gaan werken.
 
 ## Echt voorbeeld
 
@@ -114,50 +118,42 @@ Het hangt er van af hoe de integratie is aangesloten – het gebruik van een geh
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Tin tưởng số tiền tính toán từ Frontend gửi lên có phải lỗi phổ biến không?",
+      "name": "Zou een betalingsingenieur het vertrouwen op een berekend frontend-totaal beschouwen als een veelvoorkomende fout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rất phổ biến khi dựng app nhanh bằng AI tool tập trung vào UI, quên mất việc phải tính toán lại độc lập ở Server."
+        "text": "Vrij veelvoorkomend, specifiek bij producten die snel gebouwd zijn met een UI-first tool. Het is het natuurlijke bijproduct van het eerst bouwen van de prettige prijsweergave en het behandelen van verificatie aan de serverzijde als een latere zorg."
       }
     },
     {
       "@type": "Question",
-      "name": "Lỗi này có chỉ xảy ra với ứng dụng có công thức giá phức tạp không?",
+      "name": "Beïnvloedt dit probleem alleen producten met ingewikkelde prijzen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ảnh hưởng lớn nhất ở giá tùy biến nhiều option, nhưng bất kỳ sản phẩm nào nhận số tiền từ client đều có rủi ro này."
+        "text": "Het maakt het meest uit voor aanpasbare prijzen met meerdere componenten zoals RouteDroom's excursies, hoewel elk product dat een door de client gerapporteerd bedrag accepteert hier risico bij loopt."
       }
     },
     {
       "@type": "Question",
-      "name": "Dùng widget checkout của các cổng thanh toán (Stripe/Mollie) có hết lỗi này không?",
+      "name": "Maakt ervaring over meerdere transactionele sectoren uit voor het opvangen van zo'n kloof?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tùy cách tích hợp: nếu dùng Hosted Checkout tạo order từ Server thì an toàn, nếu tự truyền số tiền từ Frontend vào SDK thì vẫn bị."
+        "text": "Ja, aangezien het onderliggende principe (vertrouw nooit een door de client gerapporteerd totaal) identiek is over sectoren."
       }
     },
     {
       "@type": "Question",
-      "name": "Ngoài giá tiền checkout, những giá trị nào ở Frontend hay bị sửa lén?",
+      "name": "Weerspiegelt dit de kloof tussen visuele afwerking en structurele beveiliging?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Phí ship, tiền thuế, số lượng giới hạn, số điểm thưởng quy đổi và trạng thái gói cước (Pro/Free)."
+        "text": "Precies – RouteDroom's frontend was oprecht goed gebouwd en gaf elke visuele indruk van correctheid, wat exact de kloof is die LaunchStudio sluit."
       }
     },
     {
       "@type": "Question",
-      "name": "Làm sao để tự kiểm tra xem Server có tính lại giá độc lập không?",
+      "name": "Als een oprichter een bekende checkout-widget gebruikt, geldt dit risico dan nog steeds?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mở tab Network trên trình duyệt, sửa payload số tiền trong request checkout và gửi đi xem Server có từ chối không."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Khắc phục lỗi này có làm giảm trải nghiệm mượt mà của giao diện không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Không, UI vẫn tính toán hiển thị tức thì cho user xem, chỉ có bước chốt đơn là Server tự tính lại chính xác."
+        "text": "Het hangt er van af hoe de integratie is aangesloten – het gebruik van een gehoste checkout van een provider met prijsinstelling aan de serverzijde vermijdt dit risico grotendeels."
       }
     }
   ]

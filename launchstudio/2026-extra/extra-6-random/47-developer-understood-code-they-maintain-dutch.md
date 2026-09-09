@@ -51,6 +51,19 @@ Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoor
 
 Ons team in Amsterdam, gesteund door de 120+ engineers van Manifera, stapt regelmatig precies in dit soort lacune — het doorlezen van door AI gegenereerde code die niemand volledig heeft geverifieerd en het documenteren van wat die daadwerkelijk doet. LaunchStudio brengt diezelfde standaard, gebruikt in Manifera's [portfolio van 160+ opgeleverde projecten](https://www.manifera.com/portfolio/), naar producten op oprichtersschaal. Heeft uw eigen onboardinggesprek meer vragen opgeroepen dan beantwoord, dan kunt u [spreken met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
+## Waarom 'Het Werkt Al Die Tijd Al Prima' de Zwakste Geruststelling Is
+
+Wanneer technici wijzen op een ontbrekende autorisatiecontrole of het ontbreken van database-transacties, reageren niet-technische oprichters regelmatig met: *"Maar de app draait nu al drie maanden live en er is nog nooit iets misgegaan."* Dit is om drie fundamentele redenen de gevaarlijkste illusie in softwareontwikkeling:
+
+**1. Het Ontbreken van Detectie Is Geen Bewijs van Afwezigheid.** Als uw backend geen beveiligingsincidenten of ongeautoriseerde data-opvragingen logt, kan een nieuwsgierige gebruiker of concurrent al maandenlang stiekem records downloaden zonder dat u het ooit merkt. U weet niet dat het goed gaat; u weet alleen dat niemand het u heeft verteld.
+
+**2. Risico Schalen Exponentieel met Gebruikersaantallen.** Een race-condition die optreedt wanneer twee gebruikers binnen dezelfde seconde op een knop drukken, gebeurt bij tien gebruikers wellicht eens per jaar. Bij duizend actieve gebruikers gebeurt het dagelijks. Een sluimerende ontwerpfout wordt pas zichtbaar op het moment dat de belasting toeneemt.
+
+**3. De wet van Murphy in Software-Engineering.** Fouten treden steevast op het meest ongelegen moment op: tijdens een live demonstratie voor een belangrijke investeerder, op Black Friday of midden in het weekend. Vertrouwen op geluk is geen zakelijke strategie.
+
+Neem signalen van kwetsbaarheden serieus, ongeacht hoe rustig het verleden leek. Het verhelpen van een latent probleem kost een fractie van de reputatieschade die ontstaat wanneer het probleem zich uiteindelijk onvermijdelijk in het openbaar manifesteert.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de onboardingvragen die een lacune blootlegden die niemand kende
@@ -97,11 +110,46 @@ Hij wijst op een verschuiving van "kan dit idee software worden" naar "kan deze 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the best type of question to ask a new developer during onboarding?", "acceptedAnswer": { "@type": "Answer", "text": "A specific question about one real feature, how it works step by step in plain language, reveals far more than a general question like \"do you understand the codebase,\" which almost anyone will answer yes to regardless of actual familiarity." } },
-    { "@type": "Question", "name": "Is it a bad sign if a new developer says \"I don't know yet\" during onboarding?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. An honest \"I don't know yet, let me check\" is a healthier answer than a vague, confident one that never gets specific, since the former shows the developer knows the limits of what they've verified." } },
-    { "@type": "Question", "name": "How does Manifera help when a founder discovers a comprehension gap like Fien's?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineers, based in Amsterdam alongside teams in Singapore and Ho Chi Minh City, read through the actual code, verify what it does against what's assumed, and produce documentation both the founder and the development team can rely on going forward." } },
-    { "@type": "Question", "name": "Does this kind of gap mean the original AI-generated code was badly written?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily badly written, but often under-verified. AI tools tend to produce code that works for common cases without anyone confirming the edge cases were handled deliberately rather than by accident." } },
-    { "@type": "Question", "name": "What did Herre Roelevink mean about the shift in software needs?", "acceptedAnswer": { "@type": "Answer", "text": "He's pointing to a shift from \"can this idea become software\" to \"can this software mature into something secure and well-architected enough to rely on,\" which is exactly the kind of gap a comprehension check during onboarding can expose early." } }
+    {
+      "@type": "Question",
+      "name": "Wat is het beste type vraag om tijdens onboarding aan een nieuwe developer te stellen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een specifieke vraag over één echte feature — hoe die stap voor stap werkt, in gewone taal — onthult veel meer dan een algemene vraag als \"begrijp je de codebase,\" die vrijwel iedereen bevestigend zal beantwoorden ongeacht de daadwerkelijke bekendheid ermee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het een slecht teken als een nieuwe developer tijdens onboarding zegt \"dat weet ik nog niet\"?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet noodzakelijk. Een eerlijk \"dat weet ik nog niet, laat ik het even checken\" is een gezonder antwoord dan een vaag, zelfverzekerd antwoord dat nooit concreet wordt, omdat het eerste laat zien dat de developer de grenzen kent van wat hij heeft geverifieerd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe helpt Manifera wanneer een oprichter een begripslacune ontdekt zoals bij Fien?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De technici van Manifera, gevestigd in Amsterdam samen met teams in Singapore en Ho Chi Minh-stad, lezen de daadwerkelijke code, verifiëren wat die doet ten opzichte van wat wordt aangenomen, en produceren documentatie waar zowel de oprichter als het ontwikkelteam voortaan op kunnen vertrouwen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Betekent dit soort lacune dat de originele door AI gegenereerde code slecht geschreven was?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet noodzakelijk slecht geschreven, maar vaak onvoldoende geverifieerd. AI-tools produceren vaak code die werkt voor gangbare gevallen, zonder dat iemand bevestigt dat de edge cases bewust zijn afgehandeld in plaats van bij toeval."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat bedoelde Herre Roelevink met de verschuiving in softwarebehoeften?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hij wijst op een verschuiving van \"kan dit idee software worden\" naar \"kan deze software uitgroeien tot iets veiligs en goed genoeg gearchitecteerd om op te vertrouwen,\" precies het soort lacune dat een begripscontrole tijdens onboarding vroeg kan blootleggen."
+      }
+    }
   ]
 }
 </script>

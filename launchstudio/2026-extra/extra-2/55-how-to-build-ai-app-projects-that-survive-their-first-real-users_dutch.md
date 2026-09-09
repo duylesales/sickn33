@@ -43,11 +43,13 @@ Het bouwen van een terugbetalingsformulier dat een bestelreferentie en een reden
 
 ## Stap drie: Zie waarom dit slaagt voor elke test met echte, correcte bestellingen
 
-Het testen van een terugbetalingsfunctie met behulp van echte, bestaande bestellingen die toebehoren aan het test-account levert elke keer correcte resultaten op. Niets aan dit natuurlijke testproces onthult wat er gebeurt als iemand verwijst naar een bestelling die niet bestaat of niet van hem is.
+Het testen van een retour- of terugbetalingsfunctie met reële, bestaande bestellingen die daadwerkelijk toebehoren aan het eigen testaccount levert elke keer een correct resultaat op. Het beschreven scenario — een legitieme klant die restitutie aanvraagt voor zijn eigen echte order — is immers exact waarop de functionaliteit tijdens de bouw is getest. Niets aan dit natuurlijke testproces onthult wat er gebeurt wanneer iemand opzettelijk verwijst naar een bestelling die helemaal niet bestaat of die toebehoort aan een andere klant. Een oprichter die zijn eigen afrekenstroom test, gebruikt logischerwijs zijn eigen testorders; er is geen vanzelfsprekende aanleiding om een verzonnen ordernummer in te voeren, omdat dat zou vereisen dat men de functie bewust probeert te breken.
+
 
 ## Stap vier: Begrijp het specifieke frauderisico dat dit creëert
 
-Zonder juiste verificatie kan een terugbetalingsverzoek dat verwijst naar een gefabriceerde of gewijzigde bestelreferentie potentieel verwerkt en uitbetaald worden. Dit creëert effectief een mechanisme om geld uit het bedrijf te trekken zonder enige legitieme onderliggende transactie – een financieel risico met directe schade.
+Zonder deugdelijke backend-verificatie kan een terugbetalingsverzoek dat verwijst naar een verzonnen of gemanipuleerd ordernummer potentieel worden verwerkt en uitbetaald, ongeacht of een dergelijke bestelling ooit daadwerkelijk heeft plaatsgevonden. Dit creëert effectief een mechanisme om direct geld aan de onderneming te onttrekken zonder enige legitieme onderliggende transactie — een wezenlijk ernstiger risico dan een eenvoudige visuele fout. Dit risico schaalt bovendien op een bijzonder pijnlijke manier: in tegenstelling tot een gewone bug die per toeval wordt ontdekt, is een ongecontroleerde terugbetalingsroute herhaalbaar. Iedereen die het patroon eenmaal ontdekt, kan het keer op keer geautomatiseerd toepassen totdat iemand het toevallig opmerkt in de financiële boekhouding.
+
 
 ## Stap vijf: Implementeer verificatie zonder legitieme terugbetalingen te bemoeilijken
 
@@ -56,6 +58,18 @@ Een correcte herstelling verifieert het bestaan, het eigendom en de huidige teru
 Manifera's engineering voor bedrijfslogica en fraudepreventie wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
 
 [Krijg uw betalingsstroom getest tegen mislukkingsomstandigheden uit de echte wereld](https://launchstudio.eu/nl/#calculator).
+
+## Een Checklist voor Elke Functie Die Geld Verplaatst op Basis van een Gebruikersclaim
+
+Terugbetalingen zijn slechts één voorbeeld van een bredere categorie: elke functionaliteit waarbij een gebruiker verwijst naar een entiteit (een bestelling, een tegoedbon, een verwijzingsbonus of een eerdere betaling) en het systeem actie onderneemt — doorgaans met financiële gevolgen — op basis van de aanname dat die referentie legitiem is. Ditzelfde controlekader geldt voor al deze functies:
+
+- **Verifieert de backend de actuele status van de oorspronkelijke transactie?** Vertrouw nooit op een claim van de frontend ('deze bestelling is geretourneerd'). De server moet zelfstandig in de database verifiëren of de order daadwerkelijk is betaald, niet eerder is terugbetaald en binnen het geldige retourvenster valt.
+- **Wordt het terug te betalen bedrag berekend op de server?** Accepteer nooit een bedragsparameter vanuit de browser van de gebruiker. Het restitutiebedrag moet altijd door de backend worden berekend op basis van de opgeslagen orderregels.
+- **Is de actie idempotent gemaakt?** Als een gebruiker meerdere keren snel achter elkaar op 'Terugbetaling aanvragen' klikt, of als een netwerkverzoek wordt herhaald, mag er gegarandeerd slechts één enkele terugbetaling worden geïnitieerd.
+- **Worden alle financiële acties vastgelegd in een onveranderlijk auditlogboek?** Elke transactie, creditering of terugbetaling moet worden gelogd met een tijdstempel, het betrokken gebruikers-ID en de specifieke reden.
+- **Vereisen uitzonderlijke of hoge bedragen handmatige goedkeuring?** Bouw een drempelwaarde in waarbij terugbetalingen boven een bepaald bedrag automatisch in een moderatiewachtrij voor de oprichter belanden in plaats van direct geautomatiseerd te worden uitbetaald.
+
+Het consequent toepassen van deze checklist voorkomt dat geautomatiseerde retour- en verrekenstromen veranderen in onbedoelde geldlekken voor uw onderneming.
 
 ## Echt voorbeeld
 
@@ -76,25 +90,25 @@ Een financiële controle opmerkte verschillende verwerkte terugbetalingen die ve
 
 ## Veelgestelde vragen
 
-### Zou een fraudepreventiespecialist ongecontroleerde terugbetalingsverzoeken beschouwen als een veelvoorkomende kloof?
+### Waarom gaan AI-gegenereerde betaal- en retourstromen zo vaak de fout in bij gebruikersclaims?
 
-Ja, vrij veelvoorkomend – het bouwen van een terugbetalingsformulier is het rechtstreeks beschreven deel, terwijl het verifiëren van de onderliggende bestelling een afzonderlijke controle is.
+Omdat een AI-tool de prompt letterlijk volgt: 'maak een knop waarmee de gebruiker een bestelling kan retourneren'. De tool koppelt de knop aan een API-aanroep die het order-ID en het bedrag meestuurt, zonder zelfstandig te bedenken dat de server onafhankelijk moet verifiëren of die order daadwerkelijk bestaat, is betaald en niet eerder is gerestitueerd.
 
-### Geldt dit risico alleen voor abonnementsproducten?
+### Zou een e-commerce specialist dit beschouwen als een van de meest schadelijke mogelijke bugs?
 
-Het geldt voor elke functie die een uitbetaling of krediet verwerkt op basis van een door een gebruiker vermelde transactie (terugbetalingen, tegoeden, punten).
+Ja, absoluut — in tegenstelling tot abstracte informatieve datalekken leidt een onbeveiligde retour- of crediteringstroom direct tot direct financieel verlies. Kwaadwillenden kunnen geautomatiseerd orders claimen die ze nooit hebben geplaatst en zo direct geld onttrekken aan het platform.
 
-### Maakt ervaring met fraudebestendige transactiesystemen uit voor een kleinere app?
+### Hoe waarborgt Manifera de integriteit van betaal- en afrekenstromen bij maatwerksoftware?
 
-Ja, rechtstreeks – het specifieke verificatiepatroon (bevestig bestaan, eigendom en status) is een standaard, herhaalbare praktijk, ongeacht het transactievolume.
+Door strikte scheiding van client- en serverlogica: de client mag uitsluitend een intentie tot actie doorgeven, terwijl alle berekeningen, orderstatussen, voorraadcontroles en communicatie met payment service providers (PSP's zoals Mollie of Stripe) exclusief en cryptografisch beveiligd op de backend plaatsvinden.
 
-### Illustreert deze terugbetalingscasus een risico dat direct echt geld kost?
+### Hoe illustreert deze case de opmerking van Herre Roelevink over kwetsbaarheden die echt geld kosten?
 
-Heel rechtstreeks – in tegenstelling tot puur theoretische risico's had deze kloof al geresulteerd in een echt, kwantificeerbaar financieel verlies voordat het werd opgevangen.
+Roelevink benadrukt regelmatig dat beveiliging in software niet slechts een theoretisch compliance-vinkje is, maar een directe waarborg voor de financiële levensvatbaarheid van een onderneming. Een logicafout in geldstromen kan een startup binnen enkele dagen failliet laten lopen als er geen rem op zit.
 
-### Moet een oprichter zijn eigen transactierecords periodiek controleren?
+### Wat is de belangrijkste regel voor elke feature die met betalingen of saldo's werkt?
 
-Het periodiek controleren van terugbetalingsrecords op verzoeken die niet overeenkomen met een echte transactie is een goede gewoonte, hoewel het een reactieve controle is die pas wat opmerkt als het geld al is uitbetaald.
+Vertrouw nooit een enkel veld dat door de client wordt aangeleverd met betrekking tot bedragen, kortingen of transactiegeschiedenis. Bereken elk bedrag opnieuw op de server en dwing idempotentie af voor elke mutatie.
 
 <script type="application/ld+json">
 {
@@ -103,42 +117,42 @@ Het periodiek controleren van terugbetalingsrecords op verzoeken die niet overee
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Lỗi hoàn tiền giả (Fake Refund Vulnerability) trong tính năng Hoàn tiền là gì?",
+      "name": "Waarom gaan AI-gegenereerde betaal- en retourstromen zo vaak de fout in bij gebruikersclaims?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lỗi không kiểm tra xem Mã đơn hàng (Order ID) có tồn tại thật hay không và có thuộc về đúng User đó không trước khi kích hoạt lệnh hoàn tiền tự động."
+        "text": "Omdat een AI-tool de prompt letterlijk volgt: 'maak een knop waarmee de gebruiker een bestelling kan retourneren'. De tool koppelt de knop aan een API-aanroep die het order-ID en het bedrag meestuurt, zonder zelfstandig te bedenken dat de server onafhankelijk moet verifiëren of die order daadwerkelijk bestaat, is betaald en niet eerder is gerestitueerd."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao AI tool lại hay sinh ra tính năng Refund thiếu bước Verify Order?",
+      "name": "Zou een e-commerce specialist dit beschouwen als een van de meest schadelijke mogelijke bugs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì AI chỉ tạo form nhận thông tin Order ID + Lý do rồi gọi hàm Refund API theo đúng mô tả, mà không tự thêm bước truy vấn Database để đối soát."
+        "text": "Ja, absoluut — in tegenstelling tot abstracte informatieve datalekken leidt een onbeveiligde retour- of crediteringstroom direct tot direct financieel verlies. Kwaadwillenden kunnen geautomatiseerd orders claimen die ze nooit hebben geplaatst en zo direct geld onttrekken aan het platform."
       }
     },
     {
       "@type": "Question",
-      "name": "Checklist cần thiết cho mọi tính năng có chuyển/hoàn tiền (Money-moving features)?",
+      "name": "Hoe waarborgt Manifera de integriteit van betaal- en afrekenstromen bij maatwerksoftware?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "1. Kiểm tra đối tượng có tồn tại thật không. 2. Kiểm tra người yêu cầu có chính chủ không. 3. Kiểm tra tính năng đã từng được thực thi chưa (chống lặp lại double-payout)."
+        "text": "Door strikte scheiding van client- en serverlogica: de client mag uitsluitend een intentie tot actie doorgeven, terwijl alle berekeningen, orderstatussen, voorraadcontroles en communicatie met payment service providers (PSP's zoals Mollie of Stripe) exclusief en cryptografisch beveiligd op de backend plaatsvinden."
       }
     },
     {
       "@type": "Question",
-      "name": "Lỗi này có xảy ra ở các tính năng khác ngoài Hoàn tiền (Refund) không?",
+      "name": "Hoe illustreert deze case de opmerking van Herre Roelevink over kwetsbaarheden die echt geld kosten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, nó xuất hiện ở tính năng Nhập mã giới thiệu (Referral Code), Đổi điểm thưởng (Loyalty Points) và Nhập Voucher giảm giá."
+        "text": "Roelevink benadrukt regelmatig dat beveiliging in software niet slechts een theoretisch compliance-vinkje is, maar een directe waarborg voor de financiële levensvatbaarheid van een onderneming. Een logicafout in geldstromen kan een startup binnen enkele dagen failliet laten lopen als er geen rem op zit."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian sửa và siết chặt luồng Logic Hoàn tiền/Thanh toán mất bao lâu?",
+      "name": "Wat is de belangrijkste regel voor elke feature die met betalingen of saldo's werkt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường hoàn thành trong 4-6 ngày làm việc bao gồm cả việc viết các bản Integration Test kiểm tra kịch bản mã đơn giả."
+        "text": "Vertrouw nooit een enkel veld dat door de client wordt aangeleverd met betrekking tot bedragen, kortingen of transactiegeschiedenis. Bereken elk bedrag opnieuw op de server en dwing idempotentie af voor elke mutatie."
       }
     }
   ]

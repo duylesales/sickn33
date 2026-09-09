@@ -52,6 +52,33 @@ Dit is precies wat er gebeurt binnen het proces van LaunchStudio. Elk auditrappo
 
 Voor oprichters die willen begrijpen hoe deze audits passen binnen het bredere traject van prototype naar productie: de [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera hanteert dezelfde discipline voor beveiligingsbeoordelingen die wordt toegepast op de 160+ zakelijke projecten van het bedrijf, afgeschaald naar budgetten van oprichters.
 
+## Een Beknopt Woordenboek: Wat de Tien Meest Voorkomende Bevindingen Betekenen
+
+De ernst-aanduidingen in een auditrapport (Critical, High, Medium, Low) geven aan hoe urgent een probleem is, maar ze leggen niet uit wat de bevinding technisch inhoudt. Hier is de vertaling in begrijpelijk Nederlands voor de tien meest voorkomende auditbevindingen in AI-codebases:
+
+**1. Hardcoded Credentials (Kritiek):** API-sleutels of database-wachtwoorden staan letterlijk als tekst in de broncode. Iedereen met leestoegang tot de repository kan direct bij uw live data.
+
+**2. Missing Authorization Middleware (Kritiek):** API-endpoints controleren wel of iemand is ingelogd, maar niet of die persoon het recht heeft om de opgevraagde gegevens van een andere gebruiker in te zien.
+
+**3. SQL Injection / Raw Query Vulnerability (Kritiek/Hoog):** Gebruikersinvoer wordt direct in een database-commando geplakt zonder filtering, waardoor aanvallers eigen opdrachten kunnen uitvoeren om data te stelen of wissen.
+
+**4. Unvalidated Redirects (Medium):** De applicatie stuurt gebruikers na het inloggen door naar een URL uit een parameter zonder te controleren of deze binnen uw domein valt, wat phishing mogelijk maakt.
+
+**5. Missing Rate Limiting (Hoog/Medium):** Er zit geen rem op het aantal pogingen per minuut op inlog- of betaalschermen, waardoor geautomatiseerde bots het systeem kunnen overbelasten of wachtwoorden kunnen raden.
+
+**6. Overly Permissive CORS Policy (Medium):** De server accepteert netwerkverzoeken vanaf elk willekeurig ander domein (`*`), waardoor kwaadaardige websites data kunnen proberen uit te wisselen namens een ingelogde gebruiker.
+
+**7. Stale or Vulnerable Dependencies (Medium/Laag):** De gebruikte externe bibliotheken (npm-packages) bevatten bekende beveiligingslekken die moeten worden bijgewerkt naar een recentere patch-versie.
+
+**8. Sensitive Data in Client Logs (Laag):** De frontend print gevoelige informatie (zoals tokens of persoonlijke gegevens) naar de browser-console via `console.log`, wat zichtbaar is voor iedereen die de devtools opent.
+
+**9. Missing CSRF Protection (Hoog/Medium):** Formulieren bevatten geen unieke anti-vervalsings-tokens, waardoor een aanvaller een gebruiker ongemerkt een actie kan laten uitvoeren op uw site.
+
+**10. Lack of Database Indexes (Prestatie/Laag):** Veelgebruikte zoekvelden hebben geen index in de database, waardoor query's bij groeiende tabellen steeds trager worden en uiteindelijk time-outs veroorzaken.
+
+Met dit overzicht begrijpt u direct de strekking van elk auditrapport en kunt u samen met uw ontwikkelpartner gericht prioriteiten stellen voor het herstel.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Tessa Groen verandert een muur van jargon in een checklist
@@ -98,11 +125,46 @@ De audits van LaunchStudio worden uitgevoerd door het engineeringteam van Manife
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What does \"Critical\" actually mean in a security audit?", "acceptedAnswer": { "@type": "Answer", "text": "It means the vulnerability could be exploited right now with minimal effort, typically resulting in data theft, account takeover, or financial loss. Critical findings should be fixed before any further customer growth." } },
-    { "@type": "Question", "name": "Do I need to understand the code to understand the report?", "acceptedAnswer": { "@type": "Answer", "text": "No. A properly written report explains each finding in terms of business impact, not just technical mechanism. If your report only makes sense to another engineer, ask for a plain-language rewrite." } },
-    { "@type": "Question", "name": "How does LaunchStudio make audit reports easier to read?", "acceptedAnswer": { "@type": "Answer", "text": "Every LaunchStudio security audit includes a plain-language executive summary and an optional walkthrough call with an engineer from Manifera's team." } },
-    { "@type": "Question", "name": "Is it normal for a first audit to find several issues?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, most AI-generated prototypes were built for speed, not security. What matters is severity distribution and whether Critical and High items get closed before launch." } },
-    { "@type": "Question", "name": "Where is the team behind these audits based?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio's audits are run by Manifera's engineering team, headquartered in Amsterdam, with additional engineering capacity in Singapore and Ho Chi Minh City." } }
+    {
+      "@type": "Question",
+      "name": "Wat betekent \"Critical\" eigenlijk in een beveiligingsaudit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het betekent dat de kwetsbaarheid nu meteen kan worden uitgebuit met minimale moeite, meestal resulterend in datadiefstal, accountovername of financieel verlies. Critical-bevindingen moeten worden opgelost vóór verdere klantgroei."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik de code begrijpen om het rapport te begrijpen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Een goed geschreven rapport legt elke bevinding uit in termen van zakelijke impact — wat kan er gebeuren en met wie — niet alleen het technische mechanisme. Als uw rapport alleen zin heeft voor een andere engineer, vraag dan om een herschrijving in gewone taal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe maakt LaunchStudio auditrapporten makkelijker te lezen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Elke beveiligingsaudit van LaunchStudio omvat een executive summary in gewone taal en een optioneel toelichtingsgesprek met een engineer van het team van Manifera, zodat oprichters de ernstgraden niet alleen hoeven te interpreteren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het normaal dat een eerste audit meerdere problemen vindt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. De meeste door AI gegenereerde prototypes zijn gebouwd voor snelheid, niet voor beveiliging, dus het vinden van meerdere problemen bij een eerste audit is te verwachten. Wat telt, is de verdeling van de ernst en of Critical- en High-items worden gesloten vóór lancering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is het team achter deze audits gevestigd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De audits van LaunchStudio worden uitgevoerd door het engineeringteam van Manifera, met hoofdkantoor in Amsterdam aan de Herengracht 420, met aanvullende engineeringcapaciteit in Singapore en Ho Chi Minhstad."
+      }
+    }
   ]
 }
 </script>

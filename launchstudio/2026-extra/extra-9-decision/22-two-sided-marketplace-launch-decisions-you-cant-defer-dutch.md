@@ -85,7 +85,7 @@ Een marktplaats gebouwd in Lovable of Bolt arriveert doorgaans met visueel aantr
 
 De beslissingen in dit artikel vergen een middag om vast te stellen en één tot twee weken om robuust te implementeren. Neemt u deze beslissingen pas na de lancering, dan kost het u maanden en talloze excuses aan uw aanbieders. Twijfelt u over hoe de betalingen in uw prototype momenteel exact lopen? Dan is die twijfel op zichzelf al het antwoord. [Deel de link naar uw prototype voor een kosteloze analyse](https://launchstudio.eu/nl/#contact) — of bekijk hoe [Manifera](https://www.manifera.com/portfolio/), de organisatie achter LaunchStudio, bedrijfskritische transactiesystemen heeft gerealiseerd voor opdrachtgevers waar geldstromen vanaf de allereerste dag foutloos moesten functioneren.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een marktplaats in actie: de wekelijkse uitbetaling die de architectuur blootlegde
 

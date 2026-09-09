@@ -7,6 +7,31 @@ Doelgroep: AI-Native Founder (niet-technisch)
 
 # Wat "Van Vibe Coding Naar Productie" Eigenlijk Betekent
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wat \"Van Vibe Coding Naar Productie\" Eigenlijk Betekent",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/what-vibe-coding-to-production-actually-means"
+  }
+}
+</script>
+
+
 "Het is eigenlijk al klaar, ik hoef het alleen nog te lanceren." Bijna elke founder die met Lovable, Bolt of Cursor een prototype heeft vibe-coded, zegt wel een variant van deze zin — en bijna iedereen ontdekt dat de weg van vibe coding naar productie een aparte engineeringfase is, geen formaliteit die je er na het bouwen nog even bij plakt. Na genoeg AI-gegenereerde codebases te hebben bekeken om het patroon met bijna mechanische consistentie te zien terugkeren, is het de moeite waard om precies uit te leggen waarom "het werkt" en "het is klaar" antwoorden zijn op twee verschillende vragen, en waarom dat verschil structureel is, niet cosmetisch.
 
 ## Twee Verschillende Activiteiten Met Dezelfde Naam
@@ -32,6 +57,22 @@ De instinctieve angst, zodra een founder de kloof begrijpt, is dat het dichten e
 [LaunchStudio](https://launchstudio.eu/nl/) bestaat specifiek voor deze fase — een werkend AI-gegenereerd prototype van vibe coding naar productie brengen zonder de frontend aan te raken die je al hebt gebouwd, gesteund door Manifera's engineeringteam en hun 11+ jaar ervaring met het verharden van software voor precies deze realistische omstandigheden.
 
 [Beschrijf wat je hebt gebouwd en waar je vastzit](https://launchstudio.eu/nl/#contact) — de meeste founders staan dichter bij productie dan ze denken, ze hebben alleen de specifieke kloof nog niet in kaart gebracht.
+
+## Een Snelle Zelftest: Drie Vragen Die Onthullen Waar Je Daadwerkelijk Staat
+
+Voordat je je committeert aan een volledige audit, onthullen drie gerichte vragen betrouwbaar hoe ver een prototype daadwerkelijk van productie afstaat, ongeacht de technische achtergrond van de bouwer.
+
+Ten eerste: als je een van de eigen netwerkverzoeken van je app kopieert naar een tool zoals Postman en niets anders wijzigt dan het gebruikers-ID (bijvoorbeeld van `user_101` naar `user_102`), geeft de server dan direct de data van die andere gebruiker terug — of wordt het verzoek strikt geweigerd met een 403 Forbidden?
+
+Ten tweede: doorzoek je eigen codebase, niet alleen in de huidige actieve bestanden maar in de complete Git-geschiedenis (`git log -S`), op patronen zoals "api_key", "sk_", of "postgres://" — staat er ergens een echt geheim gecodeerd in een commit die je later dacht te hebben verwijderd?
+
+Ten derde: verbreek je internetverbinding halverwege een verzoek naar een externe API die je app aanroept (zoals Stripe, OpenAI of Supabase), en kijk wat de eindgebruiker te zien krijgt — een duidelijke, vriendelijke foutmelding met een herstelmogelijkheid, of een compleet bevroren interface en een oneindige laadanimatie?
+
+De meeste founders kunnen deze drie tests binnen vijftien minuten uitvoeren, en de eerlijke antwoorden voorspellen met opmerkelijke precisie hoeveel verhardingswerk er nog nodig is voordat echte klanten worden toegelaten.
+
+[LaunchStudio](https://launchstudio.eu/nl/) bestaat specifiek voor deze cruciale transitiefase — het brengen van een werkend, door AI gegenereerd prototype van vibe coding naar volwaardige productie zonder de frontend aan te raken die je al hebt gebouwd, ondersteund door Manifera's senior engineeringteam en hun 11+ jaar ervaring met het verharden van bedrijfskritische software.
+
+[Beschrijf wat je hebt gebouwd en waar de twijfels zitten](https://launchstudio.eu/nl/#contact) — de meeste founders zijn aanzienlijk dichter bij productie dan ze vrezen, mits de blinde vlekken methodisch worden gedicht.
 
 ## Echt voorbeeld
 
@@ -73,3 +114,52 @@ Het geldt breed over AI-codeertools, aangezien ze allemaal geoptimaliseerd zijn 
 ### Hoe lang duurt het doorgaans om dit gat te dichten zodra het geïdentificeerd is?
 
 Voor de meeste prototypes met één product sluit LaunchStudio's Launch Ready-pakket de kernproblemen binnen één tot drie weken tegen een vaste prijs, hoewel de exacte tijdlijn afhangt van welke specifieke dimensies — geheimen, authenticatie, betalingen, hosting — werk nodig hebben, en hoe diep die problemen daadwerkelijk zitten zodra een engineer de codebase daadwerkelijk opent, wat precies is wat het initiële scopinggesprek is ontworpen om vast te stellen voordat er enige toezegging wordt gedaan.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Als mijn prototype perfect werkt in elke test die ik zelf uitvoer, waarom zou het dan niet productieklaar zijn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat je eigen testen het bedoelde pad door de interface beoefenen — de kant van de vertrouwensgrens die jij controleert — terwijl productiegereedheid gaat over wat er aan de andere kant gebeurt: directe API-aanroepen, misvormde input, gelijktijdige gebruikers, en randgevallen die een enkele founder die handmatig test structureel onwaarschijnlijk ooit zal triggeren, zoals Sannes casus illustreert. De demo en het aanvalsoppervlak zijn simpelweg niet hetzelfde terrein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of mijn specifieke prototype een gat heeft zoals dat van Sanne, zonder te wachten tot een klant het vraagt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een gestructureerde audit die specifiek de API-laag direct test — je eigen interface omzeilend zoals een echte kwaadwillende of een nieuwsgierige technische gebruiker zou doen — is de betrouwbare manier om erachter te komen, in plaats van te wachten op een externe trigger zoals een verloren deal, een supportticket, of een incident. LaunchStudio's initiële scopinggesprek brengt doorgaans precies dit soort gat naar boven voordat het een van beide wordt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Betekent \"van vibe coding naar productie\" dezelfde checklist voor elk type app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De algemene dimensies — geheimen, authenticatie, foutafhandeling, testen, observability — zijn breed toepasbaar omdat ze hetzelfde vertrouwensgrensprobleem weerspiegelen ongeacht wat je app doet. Het specifieke risico en de prioriteitsvolgorde verschuiven afhankelijk van welke data je app verwerkt: een tool die gezondheidsdata verwerkt, zoals die van Sanne, rechtvaardigt meer urgentie specifiek op toegangscontrole, terwijl een app zonder gevoelige data maar met zware externe API-afhankelijkheid mogelijk foutafhandeling eerst prioriteert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit gat specifiek voor één AI-codeertool, of geldt het over Lovable, Bolt, Cursor en andere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het geldt breed over AI-codeertools, aangezien ze allemaal geoptimaliseerd zijn om snel functionele, demo-klare output te genereren door frontend en backend standaard als één coöperatief systeem te behandelen — wat precies is wat een prompt-naar-app-workflow in eerste instantie magisch laat aanvoelen. Het gat is een categoriekenmerk van hoe deze tools ontworpen zijn om te werken, geen fout specifiek voor de implementatie van één tool."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt het doorgaans om dit gat te dichten zodra het geïdentificeerd is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor de meeste prototypes met één product sluit LaunchStudio's Launch Ready-pakket de kernproblemen binnen één tot drie weken tegen een vaste prijs, hoewel de exacte tijdlijn afhangt van welke specifieke dimensies — geheimen, authenticatie, betalingen, hosting — werk nodig hebben, en hoe diep die problemen daadwerkelijk zitten zodra een engineer de codebase daadwerkelijk opent, wat precies is wat het initiële scopinggesprek is ontworpen om vast te stellen voordat er enige toezegging wordt gedaan."
+      }
+    }
+  ]
+}
+</script>

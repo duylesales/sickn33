@@ -74,6 +74,22 @@ Het bepalen van een gezonde prijsstelling vóór de officiële lancering vereist
 
 **Behandel deze pre-launch inschatting als een hypothese.** Zodra echte gebruikersdata binnenkomt, vervangt u de theoretische modellen direct door gemeten kosten en herijkt u de staffels waar nodig.
 
+### Winstgevend Prijzen: Het Buffer- en Tiersysteem voor AI SaaS
+
+Onvoorspelbare token- en inference-kosten vereisen een doordachte prijsstrategie om negatieve marges te voorkomen:
+1. **Ingebouwde Marge-Buffer van 35%:** Bereken uw abonnementsprijs altijd op basis van de p90-tokenverbruikers, plus een veiligheidsmarge van minimaal 35% om periodieke uitschieters op te vangen.
+2. **Gestaffelde Limieten met Zachte Caps:** Communiceer "onbeperkt" gebruik voor fair-use, maar implementeer een zachte cap waarbij zware gebruikers na een drempelwaarde worden gerouteerd naar snellere, goedkopere modellen (zoals GPT-4o-mini).
+3. **Prepaid Token Bundels voor Power Users:** Laat gebruikers die extra capaciteit nodig hebben eenvoudig aanvullende prepaid-tegoedbundels aanschaffen via Stripe Checkout.
+
+- **Gedetailleerde Token Accounting per Klant:** Registreer in uw database bij elk API-verzoek exact de verbruikte input- en output-tokens gekoppeld aan de `organization_id`. Dit biedt direct inzicht in welke klanten de hoogste marges opleveren.
+- **Transparante Factuurspecificatie:** Toon klanten in hun maandoverzicht een heldere grafiek van hun dagelijks tokenverbruik; dit verhoogt de betalingsbereidheid en voorkomt betalingsbetwistingen.
+
+### Realtime Kostenbewaking en Noodstop-Mechanismen
+
+Onverwachte tokenrekeningen kunnen de financiële gezondheid van een vroege startup direct bedreigen:
+- **Harde Uitgavenlimieten:** Stel bij uw LLM-aanbieders en database-hosts automatische drempelwaarden in die API-sleutels pauzeren zodra 80% van het maandbudget is bereikt.
+- **Transparante Fair-Use Beleidsregels:** Communiceer duidelijk naar zakelijke gebruikers welke gebruiksvolumes onder het standaardtarief vallen en wanneer een overstap naar een enterprise-bundel noodzakelijk is.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Van verlieslatende power users naar 18% omzetgroei

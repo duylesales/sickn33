@@ -102,6 +102,10 @@ Nee – documentatie legt uit hoe de code werkt en waarom; een audit evalueert o
 
 Voeg een korte beslissingslogboek-invoer toe aan elke wijziging die de bestaande documentatie onjuist zou maken, geschreven op het moment dat de wijziging plaatsvindt – een gewoonte die aanzienlijk goedkoper te onderhouden is dan een periodieke volledige herschrijfbeurt.
 
+### Wat kost het opstellen van overdrachtsdocumentatie bij LaunchStudio?
+
+Een volledige codebase doorlezing en inwerk-overdrachtsdocumentatie kost gemiddeld €1.050 en duurt 6 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

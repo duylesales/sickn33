@@ -61,6 +61,30 @@ Manifera's beveiligingsbeoordelingen voor deellinks worden uitgevoerd door het e
 
 [Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
+## Waar "Lijkt Ingetrokken" Nog Meer Niet Betekent "Is Ingetrokken"
+
+Het intrekken van een deellink is slechts één voorbeeld van een breder patroon dat over een complete applicatie moet worden gecontroleerd: elke functie waarbij het verwijderen van een item uit een zichtbare lijst gemakkelijk wordt verward met het daadwerkelijk deactiveren van de onderliggende bron die het lijstitem vertegenwoordigt.
+
+**API-sleutels en toegangstokens**
+
+Een knop 'Verwijderen' of 'Intrekken' op een beheerpagina voor API-sleutels moet die sleutel direct ongeldig maken op de backend. Als de authenticatielaag niet controleert of een aangeboden sleutel de status 'ingetrokken' heeft, kan een verwijderde sleutel verzoeken blijven authenticeren, onzichtbaar voor iedereen die alleen naar het nu lege lijstje kijkt.
+
+**Verwijderde teamleden of samenwerkers**
+
+Het verwijderen van een gebruiker uit een team of werkruimte in de interface moet per direct een einde maken aan diens toegang via elk kanaal — inclusief actieve browsersessies, openstaande mobiele app-tokens of achtergrondprocessen. Een verwijderd lid dat via een achtergebleven sessie data kan blijven inzien, vertoont exact dezelfde ontwerpfout als een niet-geïnvalideerde deellink.
+
+**Opgezegde abonnementen en gedowngrade pakketten**
+
+Een opgezegd abonnement moet direct de toegang blokkeren tot de premiumfuncties die dat abonnement ontgrendelde — en niet alleen stoppen met tonen van de badge 'Actief' in het dashboard, terwijl achterliggende feature-gates nog dagenlang vertrouwen op een verouderde cache-status.
+
+**Wachtwoordresets en de optie "Overal uitloggen"**
+
+Een gebruiker die zijn wachtwoord reset omdat hij vermoedt dat zijn account is gecompromitteerd, wil één specifiek resultaat: alle bestaande sessies direct beëindigen. Als deze actie uitsluitend de huidige browsersessie beëindigt, kan een aanvaller met een reeds actief token ongehinderd doorgaan.
+
+**De gemeenschappelijke deler**
+
+In elk van deze gevallen geldt: een visuele actie in de interface (verwijderen, opzeggen, intrekken) moet aantoonbaar doorwerken tot in de diepste validatielaag van de database en authenticatieserver. Een oprichter die zijn product auditeert, moet zich bij elke verwijderfunctie afvragen: als ik dit item hier verwijder en vervolgens de oude directe link aanroep, werkt die dan daadwerkelijk niet meer?
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De gedeelde link die het partnerschap overleefde
@@ -80,25 +104,25 @@ Maanden na het beëindigen van een specifiek partnerschap ontdekte een boerderij
 
 ## Veelgestelde vragen
 
-### Zou een specialist in toegangsbeheer ineffectieve link-intrekking beschouwen als een veelvoorkomende kloof?
+### Waarom is het verwijderen van een item uit een lijst in de UI niet hetzelfde als intrekken op de server?
 
-Ja, vrij veelvoorkomend – het bouwen van een "verwijder uit mijn lijst"-actie is het rechtstreeks zichtbare gedeelte, terwijl daadwerkelijke ongeldigverklaring aan de serverzijde een afzonderlijke eis is.
+Omdat een snel gebouwde interface vaak alleen het record in de frontend verwijdert of een vlaggetje in de tabel wist, zonder de onderliggende authenticatie- of deellink-service te instrueren dat de cryptografische link of API-sleutel zelf ongeldig is verklaard.
 
-### Geldt dit risico alleen voor boer-tot-bord of partnerschapsplatformen?
+### Zou een gebruiker dit per ongeluk ontdekken, of vereist dit een hacker?
 
-Nee, het geldt voor elke functie die deelbare links aanbiedt met een intrekoptie (gedeelde documenten, kalenders, dashboards).
+Zeer vaak ontdekken gebruikers dit per toeval: iemand die eerder een deellink had opgeslagen in zijn browserbladwijzers klikt er weken nadat de samenwerking is beëindigd op, en ziet tot zijn verbazing dat alle vertrouwelijke documenten nog steeds live worden ingeladen.
 
-### Maakt ervaring met veilige deelsystemen uit voor een kleinere app?
+### Manifera bouwt veilige deelsystemen voor zakelijke klanten — hoe wordt intrekking waterdicht gemaakt?
 
-Ja, rechtstreeks – het onderliggende principe (intrekking moet de bron zelf ongeldig maken, niet alleen een lijstweergave) is identiek.
+Door deellinks en tokens op te slaan met een unieke identifier die bij elke aanroep op de backend wordt geverifieerd tegen de database op actieve status (`is_active = true`) en vervaldatum, zodat intrekking direct en onherroepelijk realtime effect heeft.
 
-### Weerspiegelt deze deellink-casus het verschil tussen "ziet er compleet uit" en "is compleet"?
+### Hoe weerspiegelt dit de observatie van Herre Roelevink over 'complete' features die onder de motorkap lek zijn?
 
-Precies – de functie zag er compleet uit en werkte vanuit elke hoek die een oprichter natuurlijk zou testen, terwijl het onderliggende gedrag afweek.
+De oprichter test de knop 'Deellink intrekken'. De link verdwijnt uit het overzichtsscherm. Visueel functioneert de feature voor 100%. Pas wanneer iemand de originele URL direct test, blijkt de achterdeur wijd open te staan. Dit is het archetype van de prototype-kloof.
 
-### Is er een eenvoudige manier voor een oprichter om zijn eigen intrekfuncties te testen?
+### Wat is de eenvoudigste test die een oprichter kan uitvoeren op zijn eigen deelfuncties?
 
-Het testen vereist het opslaan van een geldige deellink, het intrekken ervan via de normale interface, en vervolgens rechtstreeks proberen de oorspronkelijke opgeslagen link te openen.
+Kopieer een actieve deellink, open deze in een incognitovenster om te zien dat het werkt, trek de link in via het reguliere beheerdersaccount, en ververs het incognitovenster. Als de inhoud nog steeds zichtbaar is, functioneert de intrekking niet.
 
 <script type="application/ld+json">
 {
@@ -107,42 +131,42 @@ Het testen vereist het opslaan van een geldige deellink, het intrekken ervan via
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Nút Hủy liên kết chia sẻ (Revoke Share Link) chỉ ẩn link khỏi giao diện có an toàn không?",
+      "name": "Waarom is het verwijderen van een item uit een lijst in de UI niet hetzelfde als intrekken op de server?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không an toàn — nếu Server không xóa Token của Link đó trong Database, ai đã lưu hoặc Bookmark URL đó vẫn truy cập xem dữ liệu bình thường."
+        "text": "Omdat een snel gebouwde interface vaak alleen het record in de frontend verwijdert of een vlaggetje in de tabel wist, zonder de onderliggende authenticatie- of deellink-service te instrueren dat de cryptografische link of API-sleutel zelf ongeldig is verklaard."
       }
     },
     {
       "@type": "Question",
-      "name": "Các trường hợp 'Tưởng là đã Hủy nhưng Server vẫn mở' thường gặp ở đâu?",
+      "name": "Zou een gebruiker dit per ongeluk ontdekken, of vereist dit een hacker?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Xóa API Key nhưng Key cũ vẫn gọi được, Xóa thành viên khỏi Team nhưng Token cũ vẫn đọc được DB, và Đổi mật khẩu nhưng không đăng xuất các thiết bị cũ."
+        "text": "Zeer vaak ontdekken gebruikers dit per toeval: iemand die eerder een deellink had opgeslagen in zijn browserbladwijzers klikt er weken nadat de samenwerking is beëindigd op, en ziet tot zijn verbazing dat alle vertrouwelijke documenten nog steeds live worden ingeladen."
       }
     },
     {
       "@type": "Question",
-      "name": "Cách xử lý triệt để tính năng Thu hồi/Hủy quyền chia sẻ (Revocation) là gì?",
+      "name": "Manifera bouwt veilige deelsystemen voor zakelijke klanten — hoe wordt intrekking waterdicht gemaakt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mỗi lần người dùng bấm Revoke, Server phải đổi trạng thái Link/Token thành `is_active = false` hoặc xóa hoàn toàn bản ghi khỏi Database."
+        "text": "Door deellinks en tokens op te slaan met een unieke identifier die bij elke aanroep op de backend wordt geverifieerd tegen de database op actieve status (`is_active = true`) en vervaldatum, zodat intrekking direct en onherroepelijk realtime effect heeft."
       }
     },
     {
       "@type": "Question",
-      "name": "Cách tự kiểm tra tính năng Hủy Share Link cực đơn giản?",
+      "name": "Hoe weerspiegelt dit de observatie van Herre Roelevink over 'complete' features die onder de motorkap lek zijn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tạo Link chia sẻ -> Copy URL sang trình duyệt Ẩn danh (Incognito) xem thử -> Bấm Nút Hủy trên Admin -> F5 lại trình duyệt Ẩn danh xem có bị chặn 404/403 không."
+        "text": "De oprichter test de knop 'Deellink intrekken'. De link verdwijnt uit het overzichtsscherm. Visueel functioneert de feature voor 100%. Pas wanneer iemand de originele URL direct test, blijkt de achterdeur wijd open te staan. Dit is het archetype van de prototype-kloof."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian sửa lỗi Hủy Share Link ở Server mất bao lâu?",
+      "name": "Wat is de eenvoudigste test die een oprichter kan uitvoeren op zijn eigen deelfuncties?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường hoàn thành trong 3-5 ngày làm việc bao gồm cả việc viết hàm re-validate token ở Middleware."
+        "text": "Kopieer een actieve deellink, open deze in een incognitovenster om te zien dat het werkt, trek de link in via het reguliere beheerdersaccount, en ververs het incognitovenster. Als de inhoud nog steeds zichtbaar is, functioneert de intrekking niet."
       }
     }
   ]

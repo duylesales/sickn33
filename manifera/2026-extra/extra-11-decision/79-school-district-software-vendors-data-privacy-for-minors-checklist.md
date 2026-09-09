@@ -66,6 +66,10 @@ Vetting a school district software vendor for minors' data privacy means reading
 
 Manifera builds and integrates education technology with student data privacy requirements treated as a first-class architectural constraint from day one, not a compliance checklist applied after the product is built. See our [custom software development](https://www.manifera.com/services/custom-software-development/) and [web app development](https://www.manifera.com/services/web-app-develop/) work, and our related guide on [edtech vendors and FERPA and student data privacy compliance](https://www.manifera.com/blog/edtech-software-vendors-ferpa-and-student-data-privacy-compliance) for the broader edtech compliance landscape this checklist sits within. [Contact us](https://www.manifera.com/contact-us/) if your district needs an independent technical and contractual review of a shortlisted vendor before board approval.
 
+## Implementation Checklist: Scoring a Vendor's Free vs. Paid Tier Separately
+
+Never score a K-12 vendor's compliance posture once for the whole platform — the free and paid tiers frequently run on different data-handling rules, and districts almost always pilot on the free tier first. Run this five-point check against the exact tier your district would deploy: (1) does the free tier's privacy policy explicitly cross-reference the same subprocessor list and advertising prohibition as the paid tier, or does it silently carve out an exception; (2) is the state-mandated data privacy agreement template signed for the specific product SKU you're procuring, since some vendors sign it only for their enterprise tier; (3) does the free tier collect analytics data the paid tier configuration allows you to disable; (4) is data deletion upon downgrade or cancellation contractually guaranteed at the same 30-90 day standard, or does the free tier's terms of service reserve a longer retention window; (5) does the vendor's sales team volunteer this distinction unprompted, or only when directly asked — a vendor who proactively flags tier differences during procurement is a materially lower-risk partner than one who lets a district assume parity. Districts that skip this tier-specific check are the ones who discover, as in this article's opening example, that the version they actually deployed wasn't the version they evaluated.
+
 ## Frequently Asked Questions
 
 ### What's the difference between FERPA, COPPA, and PPRA for school vendor evaluation?
@@ -82,6 +86,18 @@ A contractual data deletion or return obligation with a specific timeline, typic
 
 ### Are breach notification requirements different for student data than for general commercial data?
 Often yes. Many states impose stricter or additional notification requirements for student data breaches, including in some cases mandatory notification to the state education department in addition to affected families, and shorter notification timelines than general breach notification statutes provide. Contract terms should meet these specific requirements, not just general commercial breach norms.
+
+### (Scenario: district piloted a vendor's free tier for a semester before committing to the paid tier) Do we need to re-run the full privacy review before upgrading?
+Yes — re-verify the subprocessor list, data privacy agreement, and advertising prohibition specifically against the paid tier's terms, since vendors frequently change data handling practices between tiers. Treat the upgrade as a new procurement decision rather than an extension of the pilot's approval, because the pilot's compliance findings don't automatically carry over.
+
+### (Scenario: a shortlisted vendor's data privacy agreement is signed only for their enterprise SKU, not the mid-tier product the district actually needs) How do we handle this gap in negotiation?
+Request the vendor extend the signed state-mandated data privacy agreement to explicitly cover the specific SKU your district is procuring, in writing, before signature — a verbal assurance that "the same terms apply" isn't enforceable if a dispute arises later. If the vendor resists formally extending the agreement to your actual tier, treat that resistance itself as a signal about how seriously they take the distinction.
+
+### (Scenario: compliance officer needs to explain to a school board why a "FERPA compliant" vendor still failed the district's review) What's the concise way to frame this for a non-technical board?
+Explain that FERPA compliance is a floor, not a ceiling — it governs one dispute point (disclosure of records) but says nothing about advertising use, subprocessor sharing, or state-specific deletion requirements, all of which the district's review additionally screens for. A vendor can be fully FERPA compliant and still fail on advertising prohibitions or state law, which is precisely the gap a marketing claim of "FERPA compliant" is designed to obscure.
+
+### (Scenario: a subprocessor the vendor added six months into the contract turns out to be an ad-tech analytics firm) What recourse does the district have if the contract didn't include a subprocessor-notification clause?
+Without a contractual notification-and-objection right, the district's recourse is limited to whatever general termination clauses exist in the master agreement, which is exactly why that clause needs to be negotiated before signature rather than assumed. This is the strongest argument for building the subprocessor-notification requirement into every new K-12 vendor contract going forward, regardless of how compliant the vendor appears at signing.
 
 <script type="application/ld+json">
 {
@@ -112,6 +128,26 @@ Often yes. Many states impose stricter or additional notification requirements f
       "@type": "Question",
       "name": "Are breach notification requirements different for student data than for general commercial data?",
       "acceptedAnswer": {"@type": "Answer", "text": "Often yes. Many states impose stricter or additional notification requirements for student data breaches, including in some cases mandatory notification to the state education department in addition to affected families, and shorter notification timelines than general breach notification statutes provide. Contract terms should meet these specific requirements, not just general commercial breach norms."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: district piloted a vendor's free tier for a semester before committing to the paid tier) Do we need to re-run the full privacy review before upgrading?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes — re-verify the subprocessor list, data privacy agreement, and advertising prohibition specifically against the paid tier's terms, since vendors frequently change data handling practices between tiers. Treat the upgrade as a new procurement decision rather than an extension of the pilot's approval."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a shortlisted vendor's data privacy agreement is signed only for their enterprise SKU, not the mid-tier product the district actually needs) How do we handle this gap in negotiation?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Request the vendor extend the signed data privacy agreement to explicitly cover the specific SKU your district is procuring, in writing, before signature. If the vendor resists formally extending the agreement to your actual tier, treat that resistance as a signal."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: compliance officer needs to explain to a school board why a \"FERPA compliant\" vendor still failed the district's review) What's the concise way to frame this for a non-technical board?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Explain that FERPA compliance is a floor, not a ceiling — it governs disclosure of records but says nothing about advertising use, subprocessor sharing, or state-specific deletion requirements, all of which the district's review additionally screens for."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a subprocessor the vendor added six months into the contract turns out to be an ad-tech analytics firm) What recourse does the district have if the contract didn't include a subprocessor-notification clause?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Without a contractual notification-and-objection right, the district's recourse is limited to whatever general termination clauses exist in the master agreement — which is why that clause needs to be negotiated before signature, for every new K-12 vendor contract going forward."}
     }
   ]
 }

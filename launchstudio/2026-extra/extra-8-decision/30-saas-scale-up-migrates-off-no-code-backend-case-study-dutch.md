@@ -50,8 +50,7 @@ Het terugvalplan verdient specifiek meer aandacht dan oprichters het vooraf door
 
 [Vertel ons waar uw huidige backend begint te kraken](https://launchstudio.eu/nl/#contact) — de meeste migraties zijn veel meer afgebakend, en veel minder verstorend, dan oprichters aanvankelijk verwachten.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Uitgroeien Boven het Platform Dat Hem Op Weg Hielp
 
 Lars Wieringa, oprichter van StockSync, een voorraadbeheer-SaaS voor kleine webshops die oorspronkelijk was gebouwd op een no-code backendplatform, had StockSync in achttien maanden laten groeien van tien pilotklanten naar iets meer dan tweehonderd betalende accounts. Wat bij lancering een efficiënte, snel te bouwen backend was geweest, was een bron van terugkerende pijn geworden: de laadtijden van het dashboard waren gestaag opgelopen naarmate het datavolume groeide, en een potentiële grotere retailketen had tijdens technische evaluatie specifiek zorgen geuit over hoe StockSync data tussen klantaccounts isoleerde op het onderliggende platform.

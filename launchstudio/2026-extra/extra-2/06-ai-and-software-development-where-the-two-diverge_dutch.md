@@ -118,18 +118,18 @@ Die oordeelsvorming is exact waar een beoordeling voor is – een oprichter die 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Biedt versleuteling alleen voldoende dekking voor AVG-verplichtingen bij gezondheidsgegevens?",
+      "name": "Biedt versleuteling alleen voldoende dekking voor AVG-verplichtingen bij gezondheidsgerelateerde gegevens?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet volledig op zichzelf — versleuteling is één waarborg onder meerdere die de AVG verwacht, zoals bewaarlimieten en rechtmatige grondslag."
+        "text": "Niet volledig op zichzelf – versleuteling is één specifieke technische waarborg onder meerdere die de AVG verwacht (inclusief rechtmatige grondslag, bewaarlimieten en toegangscontroles). Het pakt dus één echt risico aan zonder op zichzelf te fungeren als volledige naleving."
       }
     },
     {
       "@type": "Question",
-      "name": "Is dit probleem specifiek voor de dierenartsindustrie?",
+      "name": "Is dit specifiek een probleem in de dierenartsindustrie, of geldt het breder voor andere verticals?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, het geldt breed voor elk product dat gezondheids-, financiële- of identiteitsgerelateerde gegevens verwerkt."
+        "text": "Het geldt breed – elk product dat gezondheids-, financiële- of identiteitsgerelateerde gegevens verwerkt staat voor dezelfde onderliggende vraag. De medische geschiedenis van dieren is simpelweg een duidelijk, concreet voorbeeld van een gegevenscategorie die oprichters niet altijd intuïtief als gevoelig herkennen."
       }
     },
     {
@@ -137,31 +137,23 @@ Die oordeelsvorming is exact waar een beoordeling voor is – een oprichter die 
       "name": "Vormt werk op het gebied van cybersecurity hoe gegevensgevoeligheid wordt beoordeeld?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, het behandelen van gevoelige gegevenscategorieën als categorieën die standaard afzonderlijke afhandeling vereisen draagt direct over."
+        "text": "Ja – het behandelen van bepaalde gegevenscategorieën als categorieën die standaard een afzonderlijke afhandeling vereisen is een gewoonte die overgedragen wordt vanuit meer op beveiliging gefocuste trajecten naar LaunchStudio's beoordelingen."
       }
     },
     {
       "@type": "Question",
-      "name": "Nieuwt een beheerd platform zoals Supabase de noodzaak voor deze beoordeling weg?",
+      "name": "Zou een oprichter die een beheerd platform zoals Supabase gebruikt nog steeds dit soort beoordeling nodig hebben?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, het biedt de infrastructuur maar beslist niet welke specifieke velden die bescherming verdienen."
+        "text": "Ja – Supabase en vergelijkbare platformen bieden de infrastructuur om versleuteling en toegangsbeheer te implementeren, maar ze beslissen niet automatisch welke van uw specifieke velden die behandeling verdienen. Die oordeelsvorming vereist nog steeds een bewuste beoordeling van uw daadwerkelijke datamodel."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe weet een oprichter welke velden gevoelig zijn zonder juridische achtergrond?",
+      "name": "Hoe weet een oprichter welke velden in zijn schema als \"gevoelig\" tellen zonder juridische achtergrond?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In gewone taal beschrijven welke gegevens worden verzameld is genoeg voor ingenieurs om te identificeren wat bescherming nodig heeft."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Heeft elk niveau-drie of niveau-vier veld exact dezelfde bescherming nodig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Niet noodzakelijkerwijs — de toepasselijke bescherming varieert per specifieke regelgeving en hoe de data wordt gebruikt."
+        "text": "Die oordeelsvorming is exact waar een beoordeling voor is – een oprichter die in gewone taal beschrijft welke gegevens zijn product verzamelt is voldoende voor LaunchStudio's ingenieurs om te identificeren welke velden aanvullende bescherming rechtvaardigen."
       }
     }
   ]

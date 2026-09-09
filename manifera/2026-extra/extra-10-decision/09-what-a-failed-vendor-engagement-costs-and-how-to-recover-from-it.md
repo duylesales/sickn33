@@ -62,6 +62,17 @@ A failed vendor engagement costs far more than its invoice total once delayed te
 
 If you are assessing a codebase or a recovery path after a difficult engagement, Manifera runs structured technical due diligence and recovery-focused [dedicated team](https://www.manifera.com/services/dedicated-teams/) engagements built specifically around this kind of honest starting audit — see our [contact page](https://www.manifera.com/contact-us/) to talk through where things stand.
 
+## The Four-Cost Framework: Sizing a Failure Before You Report It
+
+Boards react better to a structured breakdown than a single number, so size the failure across four buckets before your first conversation about it:
+
+1. **Direct spend** — invoiced fees for work discarded or redone, typically 20-35% of total impact. Include internal staff hours spent firefighting; most CFOs omit this and understate the bucket by a third.
+2. **Technical debt carry cost** — estimate remediation hours from the audit, then multiply by 1.5-2x to account for the fact that unwinding rushed work under time pressure runs slower than building it correctly would have.
+3. **Schedule/market cost** — count from the day the failure was first suspected internally, not the day it was formally acknowledged; this "denial gap" frequently adds 4-8 weeks that never appear in a project timeline retrospective.
+4. **Reputational cost** — proxy it with two numbers: the number of internal engineers who explicitly flagged concerns about the next vendor decision, and (if customer-facing) the support-ticket volume increase in the 90 days following the failure becoming visible externally.
+
+Report all four buckets together, even when three of them are estimates rather than invoiced figures — a board that later learns the real cost was 3x the direct-spend number loses more trust than one told an honest range upfront.
+
 ## Frequently Asked Questions
 
 ### How much of a failed vendor engagement's cost is just the wasted spend?
@@ -78,6 +89,18 @@ The most common mistake is rushing to select a replacement vendor under continue
 
 ### How can I prevent a vendor engagement from failing the same way again?
 Institute a genuine, data-driven performance review cadence and define escalation triggers and decision authority in writing before the next engagement begins, rather than relying on informal check-ins. Structural, threshold-based escalation catches warning signs earlier than depending on individual judgment under pressure, which is typically what failed the first time.
+
+### (Scenario: board meeting in 48 hours) I have to brief the board on a failed engagement in two days and I only have the direct spend number so far — what do I say?
+Present the direct spend figure as a floor, not the total, and state explicitly that technical debt, schedule, and reputational costs are being quantified through an audit already underway. A board told "this is the confirmed minimum, full picture in two weeks" retains more trust than one given a single number that later turns out to be a fraction of the real cost.
+
+### (Scenario: engineering team wants to go fully in-house after the failure) Our engineering leads are pushing to bring everything in-house after this failure instead of trying another vendor — is that an overcorrection?
+Often yes — a team that lived through a failure tends to conflate "this specific vendor and selection process failed" with "outsourcing itself is the risk," which is a bias worth naming directly in the recovery conversation. Fix the governance and due-diligence process that actually failed before concluding the model itself was wrong.
+
+### (Scenario: existing codebase of uncertain quality) The failed vendor left us a codebase that technically runs in production — do we have to rewrite it, or can the next team build on it?
+Don't assume either answer; commission a blameless technical audit first, since failed engagements typically show defect density two to three times higher than stable comparable code, but severity varies enormously by case. The audit cost is small relative to discovering six months into a new engagement that the foundation was unsound.
+
+### (Scenario: customer-facing reliability damage) The failed engagement caused visible reliability problems for our customers — how long should we expect trust repair to take relative to the technical fix?
+Expect customer trust repair to take measurably longer than the underlying technical fix, since customers register reliability problems emotionally rather than on an engineering timeline. Track support-ticket sentiment and churn signals for at least 90 days post-fix rather than declaring the reputational issue closed once the system is stable again.
 
 <script type="application/ld+json">
 {
@@ -122,6 +145,38 @@ Institute a genuine, data-driven performance review cadence and define escalatio
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Institute a genuine, data-driven performance review cadence and define escalation triggers and decision authority in writing before the next engagement begins, rather than relying on informal check-ins. Structural, threshold-based escalation catches warning signs earlier than depending on individual judgment under pressure, which is typically what failed the first time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: board meeting in 48 hours) I have to brief the board on a failed engagement in two days and I only have the direct spend number so far — what do I say?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Present the direct spend figure as a floor, not the total, and state explicitly that technical debt, schedule, and reputational costs are being quantified through an audit already underway. A board told \"this is the confirmed minimum, full picture in two weeks\" retains more trust than one given a single number that later turns out to be a fraction of the real cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: engineering team wants to go fully in-house after the failure) Our engineering leads are pushing to bring everything in-house after this failure instead of trying another vendor — is that an overcorrection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often yes — a team that lived through a failure tends to conflate \"this specific vendor and selection process failed\" with \"outsourcing itself is the risk,\" which is a bias worth naming directly in the recovery conversation. Fix the governance and due-diligence process that actually failed before concluding the model itself was wrong."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: existing codebase of uncertain quality) The failed vendor left us a codebase that technically runs in production — do we have to rewrite it, or can the next team build on it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Don't assume either answer; commission a blameless technical audit first, since failed engagements typically show defect density two to three times higher than stable comparable code, but severity varies enormously by case. The audit cost is small relative to discovering six months into a new engagement that the foundation was unsound."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: customer-facing reliability damage) The failed engagement caused visible reliability problems for our customers — how long should we expect trust repair to take relative to the technical fix?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Expect customer trust repair to take measurably longer than the underlying technical fix, since customers register reliability problems emotionally rather than on an engineering timeline. Track support-ticket sentiment and churn signals for at least 90 days post-fix rather than declaring the reputational issue closed once the system is stable again."
       }
     }
   ]

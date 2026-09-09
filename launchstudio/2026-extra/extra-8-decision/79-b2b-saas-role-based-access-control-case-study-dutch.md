@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een B2B SaaS-Oprichter Voegt Rolgebaseerde Toegangscontrole Toe Vóór Haar Eerste Enterprise-Klant"
+Titel: "Case Study: Een B2B SaaS-Oprichter Voegt Rolgebaseerde Toegangscontrole Toe Vóór Haar Eerste Enterprise-Klant"
 Trefwoorden: rolgebaseerde toegangscontrole SaaS, RBAC-implementatie, enterprise toegangscontrole, multi-rol SaaS, beheerderspaneel rechten, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: SaaS-Oprichter Scale-Up
 ---
 
-# Praktijkvoorbeeld: Een B2B SaaS-Oprichter Voegt Rolgebaseerde Toegangscontrole Toe Vóór Haar Eerste Enterprise-Klant
+# Case Study: Een B2B SaaS-Oprichter Voegt Rolgebaseerde Toegangscontrole Toe Vóór Haar Eerste Enterprise-Klant
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een B2B SaaS-Oprichter Voegt Rolgebaseerde Toegangscontrole Toe Vóór Haar Eerste Enterprise-Klant",
+  "headline": "Case Study: Een B2B SaaS-Oprichter Voegt Rolgebaseerde Toegangscontrole Toe Vóór Haar Eerste Enterprise-Klant",
   "description": "Een enterprise-prospect zei ja — op voorwaarde van rolgebaseerde toegangscontrole die het prototype niet had. Hoe LaunchStudio RBAC implementeerde in 8 dagen zonder de met Lovable gebouwde frontend van de oprichter aan te raken.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/nl/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },

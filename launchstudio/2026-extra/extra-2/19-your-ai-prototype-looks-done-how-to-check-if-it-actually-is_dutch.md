@@ -59,16 +59,24 @@ Manifera's beveiligingsaudits voor betalingen worden uitgevoerd door het enginee
 
 [Beschrijf wat u bouwt — we antwoorden binnen één werkdag](https://launchstudio.eu/nl/#contact).
 
-## Voorbij Stripe-sleutels: Een volledigere audit van uw frontend-pakket
+## Verder Dan Stripe-Sleutels: Een Volledige Frontend-Bundel Audit
 
-Het controleren op een blootgestelde geheime sleutel van Stripe is een goede eerste stap, maar dezelfde onderliggende fout – een inloggegeven uitsluitend voor de server dat belandt in code die naar de browser van elke bezoeker wordt gestuurd – kan ook bij meerdere andere diensten gebeuren.
+Het controleren op een gelekte geheime Stripe-sleutel (`sk_live_`) is een uitstekende eerste stap, maar dezelfde onderliggende fout — een servergeheim dat per ongeluk terechtkomt in de publieke JavaScript-code die naar elke browser wordt gestuurd — doet zich voor bij tal van andere diensten.
 
-**Zoek ook in uw pakket naar deze patronen**
+**Doorzoek uw client-bundel specifiek op deze patronen:**
 
-- **Supabase**: een `service_role` sleutel (die rij-niveau beveiliging/Row Level Security volledig omzeilt) per ongeluk gebruikt waar de beperkte `anon` sleutel hoort
-- **AWS inloggegevens**: een toegangssleutel en geheim koppel bedoeld voor server-side SDK-aanroepen, af en toe hardcoded tijdens een snelle integratie
-- **Database verbindings-tekenreeksen**: een volledige verbindings-URL, inclusief gebruikersnaam en wachtwoord, soms rechtstreeks gebruikt in frontend-code tijdens het vroege prototypen
-- **API-sleutels van derden met verhoogde machtigingen**: elke dienst die zowel een beperkte, frontend-veilige sleutel als een sleutel met volledigere toegang biedt
+- **Supabase Service Role Keys:** Een `service_role` sleutel omzeilt Row-Level Security volledig. Als deze per ongeluk wordt gebruikt op de plek waar de publieke `anon` sleutel hoort, kan elke bezoeker uw volledige database uitlezen en wissen.
+- **AWS Toegangsreferenties:** Een Access Key ID en Secret Access Key bedoeld voor server-side beheer die tijdens een snelle test hardcoded in een component zijn achtergebleven.
+- **Database-Connectiestrings:** Een complete verbindings-URL inclusief gebruikersnaam en wachtwoord, soms direct in de frontend geplakt om "even snel data te laten zien".
+- **AI-Provider API-Sleutels:** OpenAI- of Anthropic-tokens met verhoogde bevoegdheden die direct vanuit de browser worden aangeroepen, waardoor kwaadwillenden op uw kosten modellen kunnen aanroepen.
+
+**Onthoud: "Verwijderd uit de code" betekent nog niet "veilig"**
+
+Als u een geheim ontdekt in de frontend en het verwijdert via een nieuwe commit, moet u de sleutel direct intrekken en roteren bij de betreffende leverancier. De oude versie van de JavaScript-bundel kan immers nog wekenlang gecached staan in browsers van bezoekers, bewaard zijn door een CDN, of al gekopieerd zijn door geautomatiseerde webscrapers.
+
+**Bouw de geheimen-check in als geautomatiseerde stap in uw uitrolproces**
+
+Een eenmalige controle vóór lancering biedt geen garantie voor wijzigingen die drie maanden later worden doorgevoerd. Voeg een eenvoudig pre-commit script of een GitHub Action toe die uw broncode automatisch scant op bekende tokenpatronen vóórdat een build naar productie mag worden uitgerold.
 
 ## Echt voorbeeld
 
@@ -116,50 +124,42 @@ De sleutel moet onmiddellijk in het dashboard van de provider worden geroteerd (
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Nhầm lẫn giữa publishable key và secret key có phải lỗi của người mới?",
+      "name": "Zou een betalingsingenieur het verwarren van openbare en geheime sleutels beschouwen als een fout voor beginners?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không chỉ người mới, lập trình viên có kinh nghiệm cũng dễ nhầm vì cả 2 key đều trông giống nhau và đều chạy được khi test."
+        "text": "Beide – het is een bekende valkuil waar ervaren ontwikkelaars specifiek voor worden geleerd om op te letten, maar het blijft veelvoorkomend omdat de twee sleuteltypen er oppervlakkig vergelijkbaar uitzien en beide \"werken\" tijdens het testen."
       }
     },
     {
       "@type": "Question",
-      "name": "Tự kiểm tra tab Network của trình duyệt có bắt được 100% key lộ không?",
+      "name": "Vangt het zelf controleren van het tabblad Netwerk van de browser elke mogelijke sleutelblootstelling op?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không hoàn toàn — nó bắt được key nhúng ở frontend, nhưng audit chuyên nghiệp còn kiểm tra cả cấu hình server và log gián tiếp."
+        "text": "Nee – het vangt sleutels op die rechtstreeks in zichtbare frontend-code zijn ingebed, maar een volledige audit controleert ook de serverconfiguratie."
       }
     },
     {
       "@type": "Question",
-      "name": "Phân biệt publishable và secret key có chỉ có ở Stripe không?",
+      "name": "Is het onderscheid tussen openbare en geheime sleutels specifiek voor Stripe?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, cấu trúc key 2 lớp này là chuẩn chung của hầu hết cổng thanh toán như Mollie, PayPal, Braintree."
+        "text": "Nee, dezelfde twee-laags sleutelstructuur is standaard over vrijwel alle grote betalingsverwerkers, inclusief Mollie en PayPal."
       }
     },
     {
       "@type": "Question",
-      "name": "Khắc phục lỗi lộ Stripe secret key có cần viết lại ứng dụng không?",
+      "name": "Vereist het herstellen van een integratiefout zoals deze het herbouwen van de app?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, giao diện và luồng checkout giữ nguyên 100%, chỉ cần đưa secret key về xử lý ở backend server."
+        "text": "Nee, direct – Wouter's afrekenstroom en formulieren bleven volledig ongeraakt. De herstelling leefde volledig in hoe en waar sleutels gebruikt werden."
       }
     },
     {
       "@type": "Question",
-      "name": "Cần làm gì ngay lập tức khi phát hiện secret key bị dính vào frontend code?",
+      "name": "Wat moet een oprichter doen zodra een geheim in de frontend wordt gevonden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rotate (thu hồi key cũ, tạo key mới) ngay trên dashboard của provider và xóa key khỏi frontend codebase."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Các secret nào khác hay bị nhầm lẫn đưa vào frontend ngoài Stripe key?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Supabase service_role key, AWS secret access key, và Database connection strings chứa username/password."
+        "text": "De sleutel moet onmiddellijk in het dashboard van de provider worden geroteerd (invalideren en nieuw genereren). Het simpelweg verwijderen uit de code beschermt niet tegen eerdere lekken."
       }
     }
   ]

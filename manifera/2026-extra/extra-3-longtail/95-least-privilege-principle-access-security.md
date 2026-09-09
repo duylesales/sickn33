@@ -80,6 +80,12 @@ Achaïki Asfaleies now runs a formal quarterly access review as standard practic
 
 Commission a genuine, thorough access audit examining current permissions against current actual need, not just initial provisioning decisions made long ago — the gap between the two tends to grow silently over a system's life without anyone deciding it should. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a least-privilege access architecture review.
 
+## By The Numbers: What a First-Time Access Audit Typically Finds
+
+Across engagements where a software development company runs a first-ever comprehensive access audit on a system that's been live for three or more years, a consistent pattern shows up regardless of industry: roughly 20-30% of active accounts and service integrations hold access broader than their current function requires, and a meaningful subset of those — typically 5-10% of the total — belong to former employees, former contractors, or completed integrations that were never formally offboarded. Service accounts and API integrations are disproportionately represented in the excess-access group, often accounting for 40% or more of flagged findings despite being a much smaller share of total accounts, precisely because they're set up once for a specific task and then rarely revisited the way a human user's access naturally gets scrutinized during role changes or performance reviews.
+
+The remediation cost scales roughly linearly with how long the audit has been deferred: an annual access review typically clears a small, manageable backlog in a day or two of focused work, while a first-ever audit after several years of unchecked accumulation regularly takes one to two weeks of dedicated review across accounts, service integrations, and database-level grants before a genuinely accurate least-privilege baseline is established. For any software services engagement touching regulated personal data, this audit should run before, not after, a GDPR compliance review — access-layer minimization gaps are a distinct finding category from data-collection gaps and won't surface from a data inventory alone.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CISO discovering excess access during a routine audit) Why do systems consistently accumulate excess access permissions over time even without any specific security failure?
@@ -102,6 +108,22 @@ Yes, and often with more, since service accounts and integrations frequently car
 
 The risk isn't in normal operation — it's that if the account is ever compromised, the damage an attacker can do is bounded by the account's total privileges, not by what the account legitimately uses, making unused excess access a pure liability with no offsetting benefit.
 
+### (Scenario: procurement lead evaluating a software development company's security practices before signing) What should I ask a software development company to confirm they implement least privilege by default rather than granting broad access for development convenience?
+
+Ask for their default access provisioning policy for new engagements and whether periodic access reviews are a standing deliverable or a one-time setup step — a vendor that treats revocation as an ongoing process, not just initial scoping, is meaningfully more disciplined.
+
+### (Scenario: startup founder without a dedicated security team wondering if this applies at their scale) Does the principle of least privilege matter for a small team that doesn't have a dedicated security function yet?
+
+Yes, arguably more — a small team has fewer people to notice when a departed co-founder's or early contractor's access was never revoked, so building a simple offboarding checklist tied to role and contract changes matters even without formal security tooling.
+
+### (Scenario: engineering lead deciding how to scope a new third-party integration) How should least privilege apply when connecting a new third-party analytics or marketing tool to a production database?
+
+Grant the integration read-only access to only the specific tables or fields it actually needs, never a full database credential, and set a calendar reminder to review that access against the integration's actual current use within six months.
+
+### (Scenario: GDPR compliance officer preparing for a data protection authority inquiry) Would an access audit gap like the one in this article actually be flagged during a formal GDPR compliance review, or only in a security-specific audit?
+
+It depends entirely on the review's scope — a compliance review focused on data collection and consent records can miss it entirely, which is why access-layer minimization deserves its own explicit checklist item rather than being assumed to be covered by a broader compliance process.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -111,7 +133,11 @@ The risk isn't in normal operation — it's that if the account is ever compromi
     { "@type": "Question", "name": "(Scenario: compliance officer connecting access control to GDPR) How does the principle of least privilege connect specifically to GDPR compliance?", "acceptedAnswer": { "@type": "Answer", "text": "It supports data minimization at the access-control layer, since excess access to personal data is a minimization gap on its own." } },
     { "@type": "Question", "name": "(Scenario: IT manager trying to prevent this accumulation proactively) What's the most effective way to prevent excess access from accumulating in the first place?", "acceptedAnswer": { "@type": "Answer", "text": "Automate revocation tied to specific triggers like contract end dates and role changes, rather than relying on manual follow-through." } },
     { "@type": "Question", "name": "(Scenario: security lead trying to prioritize a review) Should service accounts and integrations be reviewed with the same rigor as human user accounts?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and often with more — service accounts frequently carry broad access and are reviewed far less often than human accounts." } },
-    { "@type": "Question", "name": "(Scenario: founder trying to understand the real risk of excess access) What's the actual risk of an unused excess permission that's never being actively exploited?", "acceptedAnswer": { "@type": "Answer", "text": "If the account is ever compromised, damage is bounded by total privileges, not actual use, making unused excess access a pure liability." } }
+    { "@type": "Question", "name": "(Scenario: founder trying to understand the real risk of excess access) What's the actual risk of an unused excess permission that's never being actively exploited?", "acceptedAnswer": { "@type": "Answer", "text": "If the account is ever compromised, damage is bounded by total privileges, not actual use, making unused excess access a pure liability." } },
+    { "@type": "Question", "name": "(Scenario: procurement lead evaluating a software development company's security practices before signing) What should I ask a software development company to confirm they implement least privilege by default rather than granting broad access for development convenience?", "acceptedAnswer": { "@type": "Answer", "text": "Ask whether periodic access reviews are a standing deliverable or a one-time setup step — treating revocation as ongoing is a strong signal of discipline." } },
+    { "@type": "Question", "name": "(Scenario: startup founder without a dedicated security team wondering if this applies at their scale) Does the principle of least privilege matter for a small team that doesn't have a dedicated security function yet?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, arguably more — a small team has fewer people to notice a departed co-founder's or contractor's access was never revoked, so a simple offboarding checklist matters even without formal tooling." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead deciding how to scope a new third-party integration) How should least privilege apply when connecting a new third-party analytics or marketing tool to a production database?", "acceptedAnswer": { "@type": "Answer", "text": "Grant read-only access to only the specific tables or fields needed, never a full database credential, and review that access against actual use within six months." } },
+    { "@type": "Question", "name": "(Scenario: GDPR compliance officer preparing for a data protection authority inquiry) Would an access audit gap like the one in this article actually be flagged during a formal GDPR compliance review, or only in a security-specific audit?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on scope — a compliance review focused on data collection and consent can miss it, so access-layer minimization deserves its own explicit checklist item." } }
   ]
 }
 </script>

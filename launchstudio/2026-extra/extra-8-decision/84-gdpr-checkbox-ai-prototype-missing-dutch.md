@@ -65,8 +65,7 @@ Voor oprichters die verkopen aan scholen, gemeenten, zorginstellingen of elke ge
 
 [Vraag een volledige privacy- en GDPR-architectuurbeoordeling aan voor uw prototype](https://launchstudio.eu/nl/#contact) — lanceer door heel de EU met volledig juridisch vertrouwen.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: SafeData voor Nederlandse Scholen
 
 Klaas-Jan Veenstra, een onderwijsconsultant in Zwolle, bouwde LeerkrachtLiaison, een AI-aangedreven ouder-leerkrachtcommunicatieportaal gebouwd met Lovable en Supabase. Drie basisschoolbesturen in Overijssel gingen akkoord om het platform te trialen onder één voorwaarde: het moest de leveranciersbeoordeling van hun gemeentelijke Functionaris Gegevensbescherming (FG) doorstaan.

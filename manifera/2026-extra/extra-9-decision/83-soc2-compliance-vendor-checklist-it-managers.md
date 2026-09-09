@@ -78,6 +78,10 @@ It's also worth building this checklist into a repeatable internal process rathe
 
 If you're currently comparing SOC2 documentation from shortlisted vendors and want a second set of eyes on what the report scope actually covers, talk to one of our senior architects — we review vendor compliance documentation as part of our own due diligence process and can walk through what questions your specific report should be answering.
 
+## The Five Trust Services Criteria: Confirming Which Ones Your Vendor Was Actually Tested Against
+
+A SOC2 report isn't tested against a single fixed standard — it's scoped to a subset of five Trust Services Criteria, and which ones were selected changes what the report actually proves. Security is the only mandatory criterion; every SOC2 report includes it, covering access control, network security, and change management. Availability tests uptime commitments and disaster recovery — relevant if you're relying on vendor-hosted infrastructure, largely irrelevant if engineers work inside your own environment. Processing Integrity tests whether data is processed completely, accurately, and on time — directly relevant for any vendor handling financial transactions or billing logic. Confidentiality tests how non-public information is protected beyond basic access control, relevant whenever contracts, source code, or business data are shared. Privacy, the least commonly included, tests handling of personal data against a stated privacy notice — critical if the engagement touches customer PII, largely optional otherwise. A vendor citing "SOC2 compliant" without specifying which criteria were tested may be technically accurate while covering only Security, the minimum bar, while your engagement actually needs Confidentiality and Processing Integrity tested too. Check the report's cover page for the specific criteria list before assuming broader coverage than what was actually audited — this single line often reveals more about real compliance depth than the exceptions section most IT Managers jump to first.
+
 ## Frequently Asked Questions
 
 ### What is the difference between a SOC2 Type I and Type II report for a vendor?
@@ -94,6 +98,18 @@ SOC2 reports typically cover a defined observation period and are renewed annual
 
 ### How do I turn SOC2 compliance verification into an enforceable contract term?
 Work with legal to include a specific compliance warranty clause requiring the vendor to maintain their audited control environment, a contractual right to request updated SOC2 reports annually, and a defined notification obligation for security incidents or material control failures. A vague "reasonable security practices" clause provides little recourse compared to specific, measurable obligations.
+
+### (Scenario: A vendor's SOC2 report only lists Security as the tested criterion, but your engagement will process customer PII) What should you require before signing?
+Ask the vendor directly whether they can expand their next audit cycle to include Privacy and Confidentiality criteria, and in the meantime request supplementary documentation — a data processing agreement and specific access-control evidence — covering the gap the current report doesn't test. A Security-only report is not equivalent to a Privacy-tested report, regardless of how confidently the vendor describes themselves as SOC2 compliant.
+
+### (Scenario: An offshore staff augmentation vendor has no SOC2 report at all, only an ISO 27001 certification) Is that an acceptable substitute?
+It can be, since ISO 27001 tests a broadly overlapping set of information security controls, but confirm the certification's scope statement covers the specific team and systems touching your data, the same way you'd check a SOC2 report's boundary. Ask when their most recent surveillance audit was completed, since ISO certifications also degrade in relevance if the underlying audit is stale.
+
+### (Scenario: Last year's report showed one exception in an access review, remediated within days) What should you specifically check at this year's renewal?
+Confirm the remediation held — ask whether the same control was tested again in the new observation period and passed cleanly, rather than simply accepting that last year's issue was "fixed." A control that required a second correction in consecutive audit cycles is a materially different signal than one that was caught once and never recurred.
+
+### (Scenario: Your internal risk committee now wants documented SOC2 verification for every vendor with system access, not just the largest ones) How do you build this into a repeatable process?
+Create a standard compliance due diligence software vendor checklist covering all seven checks above, require it at initial signing and annually thereafter for every vendor above a defined access-risk threshold, and store completed checklists in a central file your risk committee can audit directly rather than reconstructing vendor-by-vendor from memory when asked.
 
 <script type="application/ld+json">
 {
@@ -138,6 +154,38 @@ Work with legal to include a specific compliance warranty clause requiring the v
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Work with legal to include a specific compliance warranty clause requiring the vendor to maintain their audited control environment, a contractual right to request updated SOC2 reports annually, and a defined notification obligation for security incidents or material control failures. A vague \"reasonable security practices\" clause provides little recourse compared to specific, measurable obligations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor's SOC2 report only lists Security as the tested criterion, but your engagement will process customer PII) What should you require before signing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask whether the vendor can expand their next audit cycle to include Privacy and Confidentiality criteria, and in the meantime request supplementary documentation covering the gap the current report doesn't test."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: An offshore staff augmentation vendor has no SOC2 report at all, only an ISO 27001 certification) Is that an acceptable substitute?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It can be, since ISO 27001 tests a broadly overlapping set of controls, but confirm the certification's scope statement covers the specific team and systems touching your data, and check when the most recent surveillance audit was completed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Last year's report showed one exception in an access review, remediated within days) What should you specifically check at this year's renewal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Confirm the remediation held — ask whether the same control was tested again in the new observation period and passed cleanly, rather than accepting that last year's issue was simply fixed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Your internal risk committee now wants documented SOC2 verification for every vendor with system access, not just the largest ones) How do you build this into a repeatable process?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Create a standard compliance checklist covering all seven checks, require it at initial signing and annually thereafter for every vendor above a defined access-risk threshold, and store completed checklists centrally for audit."
       }
     }
   ]

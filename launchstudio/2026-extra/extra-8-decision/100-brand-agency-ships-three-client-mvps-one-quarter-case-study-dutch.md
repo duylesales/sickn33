@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een Brandingbureau Levert Drie Client-MVP's In Eén Kwartaal Met LaunchStudio Als Backendpartner"
+Titel: "Case Study: Een Brandingbureau Levert Drie Client-MVP's In Eén Kwartaal Met LaunchStudio Als Backendpartner"
 Trefwoorden: brandingbureau MVP-lanceringen, bureaupartner productoplevering, white-label softwareontwikkelbureau, bureauomzet schalen digitale producten, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: Bureau / Freelancer (White-Label Partner)
 ---
 
-# Praktijkvoorbeeld: Een Brandingbureau Levert Drie Client-MVP's In Eén Kwartaal Met LaunchStudio Als Backendpartner
+# Case Study: Een Brandingbureau Levert Drie Client-MVP's In Eén Kwartaal Met LaunchStudio Als Backendpartner
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een Brandingbureau Levert Drie Client-MVP's In Eén Kwartaal Met LaunchStudio Als Backendpartner",
+  "headline": "Case Study: Een Brandingbureau Levert Drie Client-MVP's In Eén Kwartaal Met LaunchStudio Als Backendpartner",
   "description": "Hoe een strategisch branding- en marketingbureau in Amsterdam haar businessmodel transformeerde van eenmalige visuele identiteiten naar full-cycle digitale productlanceringen, met de oplevering van drie client-MVP's en €78.000 aan projectomzet in 90 dagen.",
   "author": {
     "@type": "Organization",

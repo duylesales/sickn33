@@ -59,24 +59,28 @@ Manifera's uithardingswerk voor infrastructuur wordt geleverd door het engineeri
 
 [Deel uw prototypelink — we kijken er gratis naar](https://launchstudio.eu/nl/#contact).
 
-## Het bouwen van een complete checklist voor upload-uitharding
+## Een Complete Upload-Hardening Checklist Opstellen
 
-Limieten op bestandsgrootte alleen sluiten deze kloof niet volledig – een grondige upload-uithardingsstap omvat meerdere afzonderlijke faalmodi die een met AI gegenereerde uploadfunctie typisch openlaat tenzij expliciet anders geïnstrueerd.
+Alleen het instellen van een maximale bestandsgrootte lost het beveiligingshiaat niet volledig op — een grondige upload-hardening dekt meerdere faalscenario's af die een door AI gegenereerde uploadfunctionaliteit standaard openlaat tenzij er expliciet opdracht voor wordt gegeven.
 
-**Dwing limieten af op de server, in deze volgorde van prioriteit**
+**Dwing beperkingen af op de server, in deze strikte volgorde van prioriteit:**
 
-1. **Maximale bestandsgrootte** — geweigerd voordat het gehele bestand überhaupt geaccepteerd wordt, en niet pas achteraf gecontroleerd
-2. **Toegestane bestandstypen, gecontroleerd op daadwerkelijke bestandsinhoud, niet alleen de extensie** — een bestand dat hernoemd is van `.exe` naar `.jpg` moet nog steeds worden opgevangen, wat het inspecteren van de daadwerkelijke headerbytes van het bestand vereist
-3. **Snelheidslimieten per gebruiker** — het aftoppen van hoeveel uploads een enkel account kan uitvoeren binnen een bepaald venster
-4. **Totaal opslagquota per account** — voorkomen dat één account een onredelijk volume aan opgeslagen bestanden verzamelt, zelfs via vele kleine uploads
+1. **Maximale bestandsgrootte:** Weiger te grote bestanden al vóórdat de volledige payload op de server is binnengehaald, in plaats van de controle pas achteraf uit te voeren.
+2. **Toegestane bestandstypen, gecontroleerd op werkelijke bestandsinhoud (MIME-type en Magic Bytes):** Een bestand dat simpelweg is hernoemd van `.exe` naar `.jpg` moet direct worden onderschept. Dit vereist inspectie van de header-bytes van het bestand, niet blind vertrouwen op de extensie die de gebruiker meegeeft.
+3. **Snelheidslimieten per gebruiker (Rate Limiting):** Begrens hoeveel uploads één account binnen een bepaalde tijdspanne mag uitvoeren, onafhankelijk van de individuele bestandsgrootte.
+4. **Totale opslagquota per account:** Voorkom dat één enkel account een onredelijk groot volume aan bestanden ophoopt via talloze kleine, individueel conforme uploads.
 
-**Vertrouw niet op frontend-validatie alleen**
+**Vertrouw nooit uitsluitend op frontend-validatie**
 
-Een bestandskiezer die alleen `.jpg` en `.png` accepteert in de browser is een bruikbaarheids-aardigheidje, en geen beveiligingscontrole – iedereen kan het volledig omzeilen door een verzoek rechtstreeks naar het uploadeindpunt te sturen met een tool zoals curl of Postman. Elke beperking die er toe doet moet opnieuw op de server worden afgedwongen.
+Een bestandskiezer in de browser die alleen `.jpg` en `.png` accepteert, is een stukje gebruiksgemak, geen beveiligingsmaatregel. Iedereen kan deze restrictie moeiteloos omzeilen door verzoeken direct naar het upload-endpoint te sturen via tools zoals cURL of Postman. Elke beperking die ertoe doet, moet onverbiddelijk opnieuw op de server worden gevalideerd.
 
-**Stel kostengrens-waarschuwingen in als een tweede verdedigingslinie**
+**Richt kosten-alerts in als tweede verdedigingslinie**
 
-Zelfs een goed geconfigureerde uploadfunctie heeft baat bij een facturatie-waarschuwing die is ingesteld op een drempel betekenisvol boven het normale verwachte gebruik – dit voorkomt geen piek, maar het verandert een stil, langzaam opbouwend kostenprobleem in een melding op dezelfde dag.
+Zelfs een goed geconfigureerde uploadfunctie heeft baat bij een financieel waarschuwingssignaal bij uw opslagprovider (zoals AWS S3, Cloudflare R2 of DigitalOcean Spaces) dat afgaat ruim boven het verwachte normale verbruik. Dit voorkomt een sluipende kostenexplosie die pas drie weken later op de factuur wordt ontdekt.
+
+**Denk aan de verwerkingspijplijn achter de opslag**
+
+Als geüploade bestanden verdere achtergrondprocessen triggeren — zoals beeldoptimalisatie, virusscans of AI-analyses — kan een malafide of misvormd bestand onevenredig veel computecapaciteit opslokken of de achtergrondtaak laten crashen. Elke verwerkingspijplijn dient bestanden onafhankelijk te valideren vóórdat de verwerking start. Test vóór de lancering altijd met een doelbewust te groot bestand en een snelle reeks opeenvolgende uploads om te zien of uw systeem netjes overeind blijft.
 
 ## Echt voorbeeld
 
@@ -124,50 +128,42 @@ Onwaarschijnlijk – het onderliggende patroon (uploads geaccepteerd zonder bepe
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is een onbeperkt upload-eindpunt een hosting- of code-herstelling?",
+      "name": "Zou een DevOps-ingenieur dit behandelen als een hosting-configuratieherstelling of een applicatiecode-herstelling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Voornamelijk een applicatiecode-herstelling, aangezien contextuele beperkingen afdwinging in de app zelf vereisen."
+        "text": "Voornamelijk een applicatiecode-herstelling – hoewel sommige hostingplatformen limieten op verzoekgrootte bieden op infrastructuurniveau, moeten de meer precieze beperkingen (toegestane bestandstypen, snelheidslimieten per gebruiker) worden afgedwongen in de applicatie zelf."
       }
     },
     {
       "@type": "Question",
-      "name": "Werd dit veroorzaakt door kwaadwillige opzet of een ongeluk?",
+      "name": "Werd Julia's situatie veroorzaakt door een kwaadwillige actor, of had het net zo gemakkelijk een ongeluk kunnen zijn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het is onduidelijk, en de ontbrekende beperking maakt geen onderscheid tussen een fout en misbruik."
+        "text": "Het is oprecht onduidelijk welke van de twee, en die dubbelzinnigheid is onderdeel van het punt – een onbeperkt uploadeindpunt is evenzeer blootgesteld aan een onschuldige fout als aan een opzettelijke poging tot misbruik."
       }
     },
     {
       "@type": "Question",
-      "name": "Maakt multi-cloud infrastructuurervaring uit voor deze herstelling?",
+      "name": "Maakt Manifera's infrastructuurervaring over AWS, Azure en DigitalOcean uit voor een herstelling die zo specifiek is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, de herstelling omvat vaak zowel applicatielogica als provider-specifieke instellingen."
+        "text": "Ja, omdat de correcte herstelling vaak het configureren van beperkingen op zowel de applicatielaag als de specifieke instellingen van het hostingplatform omvat."
       }
     },
     {
       "@type": "Question",
-      "name": "Weerspiegelt dit het onderscheid tussen architectuur en functie-output?",
+      "name": "Is dit het soort productie-kloof waar de CEO naar verwijst bij het bespreken van architectuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — một upload feature hoạt động tốt theo demo nhưng thiếu giới hạn kích thước là thiếu sót về kiến trúc."
+        "text": "Ja – een uploadfunctie die correct functioneert is een succes qua functie-output volgens elke demo-standaard, terwijl de ontbrekende grootte- en snelheidsbeperkingen een zuiver architecturale omissie zijn."
       }
     },
     {
       "@type": "Question",
-      "name": "Had het kiezen van een andere AI-tool dit voorkomen?",
+      "name": "Had Julia dit kunnen voorkomen door een andere AI-tool te kiezen in plaats van v0?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Onwaarschijnlijk — AI-tools chấp nhận upload không giới hạn mặc định trừ khi được yêu cầu cụ thể."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Waarom is frontend validatie alleine không đủ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bất kỳ ai cũng có thể bỏ qua frontend file picker bằng cách gửi request trực tiếp qua curl hoặc Postman."
+        "text": "Onwaarschijnlijk – het onderliggende patroon (uploads geaccepteerd zonder beperking tenzij expliciet gevraagd) is gebruikelijk over AI-coderingsassistenten in het algemeen."
       }
     }
   ]

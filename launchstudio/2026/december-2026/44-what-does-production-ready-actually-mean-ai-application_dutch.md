@@ -93,6 +93,24 @@ De vier pijlers blijven abstract totdat ze worden gekoppeld aan concrete, toetsb
 
 **De wisselwerking tussen de pijlers:** Deze vier pijlers staan niet los van elkaar. Het blind optimaliseren van één pijler kan een andere ondermijnen: te agressieve rate-limiting voor de beveiliging kan legitieme gelijktijdige gebruikers blokkeren en zo de betrouwbaarheid schaden. Monitoring toevoegen zonder eerst een datalek in de autorisatie te dichten zorgt er alleen voor dat u sneller weet dat u data lekt, zonder het onderliggende probleem op te lossen. Een echte productierijpheidsaudit evalueert daarom alle vier de pijlers in hun onderlinge samenhang.
 
+### De Vier Pijlers van een Echte Productierijpe AI-Applicatie
+
+Productierijpheid betekent dat uw software bestand is tegen de harde realiteit van betalende gebruikers:
+- **Veiligheid:** Waterdichte autorisatie op databaseniveau, encrypted secrets en volledige AVG-naleving.
+- **Betrouwbaarheid:** Zero-downtime architectuur, geautomatiseerde backups en proactieve uptime monitoring.
+- **Schaalbaarheid:** Connection pooling, geoptimaliseerde database-query's en bescherming tegen verkeerspieken.
+- **Commerciële Integriteit:** Vlekkeloze abonnementsfacturatie, idempotente webhooks en geautomatiseerde facturen.
+
+- **Duidelijke Service Level Agreements (SLA):** Een productierijp platform definieert meetbare doelen voor beschikbaarheid (minimaal 99,9% uptime) en responstijden voor bedrijfskritische flows.
+- **Onafhankelijk Beveiligingscertificaat:** Een gedocumenteerd auditrapport waarin staat dat de codebase is getoetst op de OWASP Top 10 en vrij is van bekende kwetsbaarheden.
+
+### De Drie Graden van Foutbestendigheid (Fault Tolerance)
+
+Een echte productieklare architectuur onderscheidt zich door drie mechanismen:
+1. **Graceful Degradation:** Als de primaire LLM-provider uitvalt, toont de app geen wit scherm, maar schakelt automatisch over naar een fallback-model of presenteert een duidelijke melding met behoud van opgeslagen data.
+2. **Asynchrone Achtergrondverwerking:** Zware taken (zoals document-OCR of batch-embeddings) draaien op een aparte worker-queue via Redis/BullMQ, zodat HTTP-verzoeken binnen 200ms afsluiten.
+3. **Point-in-Time Database Herstel:** Backups worden continu gestreamd (WAL-archivering), zodat data bij een menselijke fout tot op de seconde nauwkeurig kan worden hersteld.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Het verschil ontdekt tussen 'werkt' en 'klaar'

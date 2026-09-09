@@ -50,6 +50,19 @@ Vet a fractional CTO candidate the way you'd vet any senior hire: ask for refere
 
 For most non-technical founders without a validated, deeply technical core product, the choice isn't fractional CTO versus dev vendor — it's fractional CTO plus vendor versus vendor alone, with the fractional CTO providing the technical judgment that makes the vendor relationship actually work well. Reserve the full equity-aligned technical co-founder path for the specific case where deep, sustained technical ownership is genuinely core to the product's differentiation. Manifera regularly works alongside fractional CTOs as the execution partner in exactly this structure — supporting the technical oversight a fractional CTO provides with a [dedicated team](https://www.manifera.com/services/offshore-software-development/) that reports into whatever cadence and process the CTO sets up. Learn more about how we structure these collaborative engagements on [our way of working](https://www.manifera.com/about-us/our-way-of-working/) page.
 
+## Vetting a Fractional CTO: The Red Flags That Predict a Bad Engagement
+
+Roughly 30-40% of fractional CTO engagements that stall out within the first six months trace back to one root cause: no written scope defining what "technical leadership" actually covers, so the founder and the CTO drift into different assumptions about deliverables within a few weeks. Screen candidates against a concrete checklist rather than a general resume review:
+
+- **References from at least two founders they guided through an actual vendor selection**, not general engineering-leadership references — ask those references specifically whether the CTO caught anything a founder would have missed.
+- **No equity in the arrangement.** A fractional CTO who wants equity instead of (or alongside) a cash retainer has a harder time staying an independent check on vendor spend, since their incentives start to resemble a co-founder's rather than an evaluator's.
+- **A capped monthly retainer, not open-ended hourly billing** — hourly arrangements with no cap are the single most common source of scope creep in fractional engagements.
+- **No prior relationship with the vendor being evaluated.** A fractional CTO referred by, or previously employed by, the vendor under consideration cannot give an independent read on that vendor's proposal.
+- **An explicit vendor-oversight cadence written into the contract** — biweekly architecture review, contract review before signing, monthly reporting checks — not "advisory support as needed."
+- **A 30-day exit clause.** If a fractional CTO relationship isn't producing clear technical judgment within the first quarter, the cost of ending it should be low.
+
+Founders who skip this vetting most often end up with a fractional CTO who functions as an expensive rubber stamp rather than an actual check on vendor decisions.
+
 ## Frequently Asked Questions
 
 ### What does a fractional CTO actually do if they don't write code?
@@ -72,6 +85,22 @@ When the product's core differentiation is a genuinely hard, sustained technical
 
 With a clear scope of hours and deliverables — architecture review, vendor management, hiring support — rather than an open-ended advisory retainer, references from founders they've guided through a vendor selection specifically, and an explicit three-month review point to assess fit before committing longer term.
 
+### (Scenario: fractional CTO candidate asks for equity instead of a cash retainer) Should a founder ever pay a fractional CTO in equity rather than cash?
+
+Generally no — equity blurs the independence that makes a fractional CTO useful for evaluating vendors objectively, since their incentives start to resemble a co-founder's rather than a neutral evaluator's. If cash is genuinely constrained, a small cash retainer plus a modest advisor-level equity grant (well under 1%) is a safer structure than equity-only compensation.
+
+### (Scenario: a founder already has a troubled vendor relationship underway) Can a fractional CTO be brought in mid-engagement to fix a vendor relationship that's already gone wrong?
+
+Yes, and it's one of the more common ways founders first engage a fractional CTO — they audit the existing contract and deliverables, assess whether the vendor's technical claims and timeline are credible, and either renegotiate scope and accountability with the current vendor or manage a structured transition to a new one.
+
+### (Scenario: founder can't afford a €4,000-plus monthly retainer) What's the minimum viable fractional CTO engagement for a founder with a very small budget?
+
+A one-time paid technical audit before signing a vendor contract — typically a few hundred to low thousands of euros for a single review of the proposed architecture, timeline, and contract terms — captures most of the risk-reduction value of ongoing fractional CTO oversight at a fraction of the monthly cost, even without an ongoing retainer.
+
+### (Scenario: fractional CTO recommends replacing the current dev vendor) How does a fractional CTO decide whether to fix a vendor relationship or recommend switching vendors entirely?
+
+They typically weigh whether the problems are process-level (unclear scope, weak reporting cadence — fixable through renegotiation) versus capability-level (the vendor genuinely lacks the technical skill or has produced code with structural quality issues — usually not fixable), and factor in switching costs like codebase handover risk before recommending a change.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -81,7 +110,11 @@ With a clear scope of hours and deliverables — architecture review, vendor man
     {"@type": "Question", "name": "How much does a fractional CTO typically cost compared to a technical co-founder?", "acceptedAnswer": {"@type": "Answer", "text": "A fractional CTO typically runs €4,000-€10,000 per month for 10-20 hours a week with no equity dilution. A technical co-founder usually takes 15-30% equity, which on a company that later raises at a multi-million-euro valuation can represent far more total value than a year or two of fractional CTO fees — though it also brings full-time, equity-aligned commitment a fractional arrangement doesn't."}},
     {"@type": "Question", "name": "Can a fractional CTO and a development vendor work together?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and it's often the strongest configuration for non-technical founders — the fractional CTO handles technical strategy, vendor oversight, and architecture decisions, while the vendor executes the actual build. This works best when the fractional CTO is involved from vendor selection onward, not brought in after problems surface."}},
     {"@type": "Question", "name": "When is a full technical co-founder worth the equity cost?", "acceptedAnswer": {"@type": "Answer", "text": "When the product's core differentiation is a genuinely hard, sustained technical problem — not a standard application build — or when the founder wants a full company-building partner beyond engineering execution. For most standard product builds, a fractional CTO plus a strong vendor achieves comparable technical outcomes without the equity cost."}},
-    {"@type": "Question", "name": "How should a founder structure a fractional CTO engagement?", "acceptedAnswer": {"@type": "Answer", "text": "With a clear scope of hours and deliverables — architecture review, vendor management, hiring support — rather than an open-ended advisory retainer, references from founders they've guided through a vendor selection specifically, and an explicit three-month review point to assess fit before committing longer term."}}
+    {"@type": "Question", "name": "How should a founder structure a fractional CTO engagement?", "acceptedAnswer": {"@type": "Answer", "text": "With a clear scope of hours and deliverables — architecture review, vendor management, hiring support — rather than an open-ended advisory retainer, references from founders they've guided through a vendor selection specifically, and an explicit three-month review point to assess fit before committing longer term."}},
+    {"@type": "Question", "name": "Should a founder ever pay a fractional CTO in equity rather than cash?", "acceptedAnswer": {"@type": "Answer", "text": "Generally no — equity blurs the independence that makes a fractional CTO useful for evaluating vendors objectively. If cash is constrained, a small cash retainer plus a modest advisor-level equity grant (well under 1%) is safer than equity-only compensation."}},
+    {"@type": "Question", "name": "Can a fractional CTO be brought in mid-engagement to fix a vendor relationship that's already gone wrong?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — they audit the existing contract and deliverables, assess whether the vendor's technical claims and timeline are credible, and either renegotiate scope and accountability with the current vendor or manage a structured transition to a new one."}},
+    {"@type": "Question", "name": "What's the minimum viable fractional CTO engagement for a founder with a very small budget?", "acceptedAnswer": {"@type": "Answer", "text": "A one-time paid technical audit before signing a vendor contract — typically a few hundred to low thousands of euros — captures most of the risk-reduction value of ongoing fractional CTO oversight at a fraction of the monthly retainer cost."}},
+    {"@type": "Question", "name": "How does a fractional CTO decide whether to fix a vendor relationship or recommend switching vendors entirely?", "acceptedAnswer": {"@type": "Answer", "text": "They weigh whether the problems are process-level (unclear scope, weak reporting cadence — usually fixable through renegotiation) versus capability-level (the vendor lacks the technical skill or has produced structurally weak code — usually not fixable), and factor in switching costs like codebase handover risk."}}
   ]
 }
 </script>

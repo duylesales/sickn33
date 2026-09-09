@@ -59,19 +59,26 @@ Manifera's log- en gegevensafhandelingsaudits worden uitgevoerd door het enginee
 
 [Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact).
 
-## Een praktische auditmethode voor het vinden van gevoelige gegevens in uw eigen logboeken
+## Een Praktische Audit-Methode om Gevoelige Data in Uw Eigen Logs te Vinden
 
-Een oprichter heeft geen toegewijde compliance-tool nodig om een betekenisvolle eerste stap hierin te zetten – een systematische zoekopdracht door de codebase en een blik op wat er daadwerkelijk is opgeslagen vangt de meeste veelvoorkomende gevallen op.
+Een oprichter heeft geen kostbare gespecialiseerde compliance-software nodig om een eerste, zeer effectieve inspectie uit te voeren — een systematische zoektocht door de codebase en een blik op wat er daadwerkelijk in logbestanden wordt weggeschreven, brengt de meeste risico's direct aan het licht.
 
-**Zoek eerst in de codebase naar log-aanroepen**
+**Doorzoek de codebase als eerste op alle log-aanroepen**
 
-Grep uw codebase voor veelvoorkomende logfunctienamen (`console.log`, `logger.info`, `logger.debug`, `print`) en beoordeel elk resultaat specifiek op wat er wordt doorgegeven. Niet of de log-regel zelf er verdacht uitziet, maar of een van de argumenten een volledig verzoekobject, een volledig gebruikersobject, of een variabele die transactie-, account- of persoonlijke gegevens bevat omvat.
+Zoek in uw repository naar functies zoals `console.log`, `logger.info`, `logger.debug` en `print`. Inspecteer bij elk zoekresultaat wat er exact als argument wordt meegegeven. Let er scherp op of er complete request-objecten, volledige gebruikersobjecten of variabelen met transactie- of privégegevens worden gelogd.
 
-**Let op deze bijzonder veelvoorkomende patronen**
+**Let specifiek op deze veelvoorkomende patronen:**
+- Het loggen van het volledige HTTP-verzoek "voor foutopsporing", waardoor elk meegestuurd formulierveld (inclusief wachtwoorden en adressen) letterlijk in de serverlogs belandt.
+- Foutafhandeling (`catch(error)`) waarbij het complete foutobject inclusief context en databasequery's naar de console wordt geprint.
+- Logging op de externe integratielaag: veel oprichters vermijden gevoelige logs in hun eigen code, maar printen vervolgens wel de volledige inkomende en uitgaande JSON-payloads van externe API's.
 
-- Het loggen van een geheel verzoek- of responsobject "voor debugging", wat elk veld dat het bevat vastlegt, inclusief velden die maanden later zijn toegevoegd
-- Het loggen van foutobjecten die de volledige context bevatten van wat ze heeft getriggerd
-- Het loggen bij de API-integratielaag — veel oprichters vermijden zorgvuldig het loggen van gevoelige gegevens in hun eigen applicatiecode, en loggen vervolgens het volledige verzoek en antwoord van elke API-oproep van een derde partij voor het debuggen van integratieproblemen
+**Controleer de bewaartermijn van uw hostingplatform**
+
+Veel cloudplatforms (zoals Vercel, Datadog of AWS) bewaren logs standaard voor onbepaalde tijd tenzij u dit handmatig configureert. In het kader van de AVG/GDPR bent u verplicht logbestanden niet langer te bewaren dan strikt noodzakelijk (doorgaans 30 tot 90 dagen voor operationele diagnostiek).
+
+**Stap over op gestructureerde logging met automatische maskering**
+
+In plaats van erop te vertrouwen dat elke ontwikkelaar eraan denkt gevoelige velden niet te loggen, ondersteunen moderne loggingbibliotheken (zoals Pino of Winston) automatische veldmaskering: veldnamen zoals `password`, `token`, `iban` en `email` worden dan automatisch vervangen door `[REDACTED]`, ongeacht wie de logaanroep doet.
 
 ## Echt voorbeeld
 
@@ -119,50 +126,42 @@ Over het algemeen wel, hoewel de urgentie schaalt met de gevoeligheid – alle p
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is plaintext loggen van transacties một vấn đề GDPR hay quản lý dữ liệu nói chung?",
+      "name": "Zou een compliance-specialist dit behandelen als een specifiek AVG-probleem, of een breder gegevensafhandelingsprobleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cả hai — nó vi phạm nguyên tắc tối thiểu hóa dữ liệu của GDPR nhưng mask log cũng là best practice kỹ thuật độc lập với luật."
+        "text": "Beide in de praktijk – het in platte tekst loggen van persoonlijke financiële gegevens roept AVG-relevante zorgen op rond dataminimalisatie en passende technische waarborgen, maar de onderliggende engineering-herstelling is een goede praktijk onafhankelijk van enige specifieke regelgeving."
       }
     },
     {
       "@type": "Question",
-      "name": "Masking dữ liệu nhạy cảm trong log có phải là kỹ thuật tiêu chuẩn không?",
+      "name": "Is het maskeren van gevoelige gegevens in logboeken een standaard techniek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, các thư viện structured logging hiện đại đều hỗ trợ mask theo tên field, chỉ cần cấu hình bật lên."
+        "text": "Standaard en welbekend onder ingenieurs met toegewijde beveiligings- of compliance-ervaring – gestructureerde log-frameworks ondersteunen algemeen maskering op veldniveau."
       }
     },
     {
       "@type": "Question",
-      "name": "Kinh nghiệm làm việc trong lĩnh vực regulated có giúp ích gì không?",
+      "name": "Biedt ervaring met gereguleerde industrieën een voordeel bij het opvangen van zo'n kloof?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, các ngành đòi hỏi tuân thủ cao luôn bắt buộc phải kiểm toán luồng log như một quy trình tiêu chuẩn."
+        "text": "Ja – trajecten in gereguleerde industrieën vereisen routinematig exact dit soort log- en gegevensstroomaudits als een vanzelfsprekendheid."
       }
     },
     {
       "@type": "Question",
-      "name": "Làm sao để tìm nhanh các dòng log nghi ngờ lộ data nhạy cảm?",
+      "name": "Was Herre Roelevink's eerdere werk bij TNO aan een \"Dark Web Monitor\" relevant hier?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Grep toàn bộ codebase các lệnh console.log, logger.info và kiểm tra xem có truyền nguyên object request/user vào không."
+        "text": "Rechtstreeks relevant – dat project hield zich specifiek bezig met het volgen van hoe gevoelige gegevens op onverwachte plekken blootgesteld raken."
       }
     },
     {
       "@type": "Question",
-      "name": "Ngoài application log, còn nơi nào khác dễ vô tình chứa data nhạy cảm?",
+      "name": "Is een log-audit nog steeds de moeite waard als het product geen financiële gegevens verwerkt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Các công cụ theo dõi lỗi (như Sentry) và log của các dịch vụ bên thứ ba (API integration log)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Nên đặt thời gian lưu trữ log (retention policy) bao lâu là hợp lý?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Tùy thuộc vào yêu cầu nghiệp vụ, nhưng nên giới hạn số ngày thay vì để mặc định vĩnh viễn trên hosting platform."
+        "text": "Over het algemeen wel, hoewel de urgentie schaalt met de gevoeligheid – alle persoonlijke gegevens (namen, e-mails, gezondheidsinformatie) hebben baat bij dezelfde maskeringsdiscipline."
       }
     }
   ]

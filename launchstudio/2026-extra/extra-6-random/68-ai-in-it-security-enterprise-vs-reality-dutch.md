@@ -38,6 +38,19 @@ De meeste AI-native SaaS-producten hebben in dit stadium een basaal activiteiten
 
 De technici van Manifera — vertrouwd door klanten als Vodafone en TNO voor projecten met precies deze compliancevereisten — hebben SaaS-oprichters geholpen om de specifieke kloof tussen activiteitenlogging en audit-grade logging te dichten voordat een deal ervan afhing. Ons team in Singapore, onderdeel van de bredere groep van 120+ engineers van Manifera, heeft direct met oprichters gewerkt die zich voorbereidden op zakelijke inkoopbeoordelingen. Als u een soortgelijk gesprek tegemoet gaat, [praat dan met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) vóór uw volgende beveiligingsbeoordeling, in plaats van tijdens. Het [portfolio](https://www.manifera.com/portfolio/) van Manifera bevat compliancewerk voor bedrijven dat relevant is voor precies deze kloof.
 
+## Een Activiteitenlog Omzetten naar Iets Dat een Auditor Daadwerkelijk Accepteert
+
+Veel oprichters denken dat een simpele tabel met 'laatst ingelogd' voldoende is voor zakelijke compliance. Een professionele auditor van een enterprise-klant prikt daar echter binnen vijf minuten doorheen. Een volwaardige auditlog die toetsing doorstaat, voldoet aan deze vier strikte eisen:
+
+**1. Onveranderbaarheid (Immutability).** Auditlogs mogen door *niemand* worden gewijzigd of overschreven, zelfs niet door de hoofdbeheerder van het systeem. Schrijf logs weg naar een 'append-only' tabel of een externe logdienst (zoals Datadog, Axiom of AWS CloudWatch) waar records cryptografisch zijn vergrendeld.
+
+**2. Verplichte Contextvelden.** Elk gelogd event moet minimaal bevatten: `timestamp` (in UTC met milliseconden), `actor_id` (wie voerde de actie uit), `target_id` (op welke data had het betrekking), `action` (bijvoorbeeld `invoice.downloaded`), `ip_address` en `status` (succes of weigering).
+
+**3. Gescheiden Opslag van Gevoelige Data.** De auditlog registreert dát een document is geraadpleegd, maar bewaart nooit de inhoud van het document zelf of de persoonsgegevens die erin staan. Zo voorkomt u dat de auditlog zelf een AVG-veiligheidsrisico wordt.
+
+**4. Formele Bewaartermijnen en Automatische Archivering.** Zorg voor een beleid waarin logs minimaal 12 tot 24 maanden bewaard blijven voor forensisch onderzoek, waarna ze automatisch worden geanonimiseerd of gearchiveerd naar goedkope koude opslag (zoals AWS S3 Glacier).
+
+Wanneer u deze audittrail kunt tonen tijdens een inkooptraject, neemt u direct alle formele compliance-bezwaren van enterprise-beveiligingsteams weg.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de vraag waarop het activiteitenlogboek geen antwoord had
@@ -84,11 +97,46 @@ Ja. Het team van Manifera in Singapore, onderdeel van de bredere groep van 120+ 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What does AI in IT security typically mean to an enterprise buyer?", "acceptedAnswer": { "@type": "Answer", "text": "It usually implies structured, exportable audit logging, controls resembling a framework like SOC 2, and documented incident response, a higher bar than most AI-generated SaaS products have by default." } },
-    { "@type": "Question", "name": "Is a basic activity log the same as audit logging?", "acceptedAnswer": { "@type": "Answer", "text": "No. An activity log records major events for internal debugging; audit logging is structured, comprehensive, and exportable in a format a formal reviewer or auditor can work with directly." } },
-    { "@type": "Question", "name": "Should I stop using AI-related language in my pitch to avoid this gap?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. Just make sure what's behind the language matches what a technical reviewer will find, rather than letting the phrase imply more than your app currently delivers." } },
-    { "@type": "Question", "name": "How quickly can structured audit logging actually be built?", "acceptedAnswer": { "@type": "Answer", "text": "It varies by application, but in one case, full audit logging plus incident response documentation took 8 business days once the specific requirements were clear." } },
-    { "@type": "Question", "name": "Does Manifera help founders prepare specifically for enterprise procurement reviews?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Manifera's Singapore team, part of the wider 120+ engineer group with experience on enterprise clients like Vodafone and TNO, regularly helps founders close this kind of gap before a deal is at risk." } }
+    {
+      "@type": "Question",
+      "name": "Wat betekent \"AI in IT-beveiliging\" doorgaans voor een zakelijke koper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het impliceert meestal gestructureerde, exporteerbare auditlogging, controles die lijken op een framework zoals SOC 2, en gedocumenteerde incidentrespons — een hogere lat dan de meeste door AI gegenereerde SaaS-producten standaard hebben."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is een basaal activiteitenlogboek hetzelfde als auditlogging?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Een activiteitenlogboek registreert belangrijke gebeurtenissen voor interne debugging; auditlogging is gestructureerd, uitgebreid en exporteerbaar in een formaat waarmee een formele beoordelaar of auditor rechtstreeks kan werken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik stoppen met AI-gerelateerde taal in mijn pitch om deze kloof te vermijden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet per se — zorg er alleen voor dat wat erachter zit overeenkomt met wat een technische beoordelaar zal vinden, in plaats van de uitdrukking meer te laten impliceren dan uw app op dit moment levert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel kan gestructureerde auditlogging daadwerkelijk worden gebouwd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dit verschilt per applicatie, maar in het geval van Roos duurde volledige auditlogging plus documentatie van incidentrespons 8 werkdagen zodra de specifieke vereisten duidelijk waren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Helpt Manifera oprichters specifiek bij het voorbereiden van zakelijke inkoopbeoordelingen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Het team van Manifera in Singapore, onderdeel van de bredere groep van 120+ engineers met ervaring bij zakelijke klanten als Vodafone en TNO, helpt oprichters regelmatig om precies deze kloof te dichten voordat een deal op het spel staat."
+      }
+    }
   ]
 }
 </script>

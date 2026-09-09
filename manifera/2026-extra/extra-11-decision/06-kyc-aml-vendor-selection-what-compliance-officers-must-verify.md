@@ -91,6 +91,14 @@ Manifera has built integration layers connecting KYC/AML screening vendors into 
 }
 </script>
 
+## By the Numbers: Benchmarking a Vendor's Real Alert Economics
+
+Industry-wide, only 1-5% of AML alerts convert into an actual filed SAR — a vendor pitching a 20%+ conversion rate as a selling point is more likely signaling under-alerting than efficiency, and that's a finding an examiner will draw the same conclusion about. Fully-loaded cost per manually reviewed alert for a mid-market compliance team typically runs $25-$60, meaning a vendor generating even 500 extra alerts a month over a better-tuned competitor is costing you $12,500-$30,000 in analyst time annually before you've caught a single additional bad actor.
+
+For identity verification specifically, benchmark document-plus-liveness checks against a 10-15 second completion target; anything consistently over 30 seconds measurably increases onboarding abandonment, and vendors rarely volunteer their own p95 latency unprompted, so ask for it directly rather than accepting an average. On sanctions list refresh, best-in-class vendors sync OFAC SDN updates within 15-30 minutes of publication; anything on a 24-hour batch cycle should be treated as a material gap, not a rounding error, given how often enforcement actions land same-day.
+
+For Enhanced Due Diligence, a well-scoped review of a genuinely high-risk customer should run 15-25 minutes with the right case management tooling; if your analysts are averaging 60+ minutes per EDD case, the bottleneck is very often the vendor's workflow UI, not your team's diligence.
+
 ## Frequently Asked Questions
 
 ### Why isn't a KYC/AML vendor's detection rate alone a useful metric?
@@ -107,6 +115,18 @@ Model drift is the gradual degradation of a scoring or matching model's accuracy
 
 ### How should we evaluate a KYC/AML vendor's integration with our existing systems?
 Have your engineering team review the actual API documentation and test integration latency directly, separate from the compliance-facing product demo. Slow identity verification response times or brittle integration with onboarding and case management tooling can undermine even a technically strong screening engine.
+
+### (Scenario: A compliance officer is reviewing a vendor's pitch that highlights a high SAR conversion rate) Is a high SAR-to-alert conversion rate actually a good sign in a vendor evaluation?
+Not necessarily. Industry-wide SAR conversion typically runs 1-5% of total alerts, so a vendor advertising a conversion rate well above that range is more likely under-alerting on genuine risk than screening more efficiently, which is a finding an examiner would view the same way.
+
+### (Scenario: A fintech is weighing analyst headcount against a vendor's alert tuning before signing) How do we estimate the real analyst staffing cost a KYC/AML vendor's alert volume will create?
+Multiply the vendor's realistic monthly alert-per-customer figure by your fully-loaded cost per reviewed alert, typically $25-$60 for a mid-market team, and compare that recurring cost across shortlisted vendors, not just their license fee. A cheaper license paired with a poorly tuned alert engine frequently costs more in analyst hours than a pricier, better-tuned competitor.
+
+### (Scenario: A compliance team is deciding whether to escalate a slow document verification flow as a vendor risk) What identity verification response time should we treat as a red flag during vendor evaluation?
+Benchmark document-plus-liveness verification against a 10-15 second target; consistent results above 30 seconds measurably increase onboarding abandonment and suggest the vendor's underlying verification pipeline isn't built for production volume. Ask for the vendor's own p95 latency figure rather than an average, since averages hide the tail that actually drives drop-off.
+
+### (Scenario: An EDD case queue is taking far longer than expected to clear) Our analysts are spending far longer than expected on Enhanced Due Diligence reviews — is that a vendor problem or a team problem?
+It's frequently a vendor workflow problem: a well-designed case management interface should support a genuinely high-risk EDD review in 15-25 minutes, and consistent 60+ minute reviews usually point to poor information surfacing or manual data-gathering steps in the tool, not analyst diligence. Audit the vendor's case UI directly with an analyst before assuming the team needs more training.
 
 <script type="application/ld+json">
 {
@@ -137,6 +157,26 @@ Have your engineering team review the actual API documentation and test integrat
       "@type": "Question",
       "name": "How should we evaluate a KYC/AML vendor's integration with our existing systems?",
       "acceptedAnswer": {"@type": "Answer", "text": "Have your engineering team review the actual API documentation and test integration latency directly, separate from the compliance-facing product demo. Slow identity verification response times or brittle integration with onboarding and case management tooling can undermine even a technically strong screening engine."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is a high SAR-to-alert conversion rate actually a good sign in a vendor evaluation?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. Industry-wide SAR conversion typically runs 1-5% of total alerts, so a vendor advertising a conversion rate well above that range is more likely under-alerting on genuine risk than screening more efficiently, which is a finding an examiner would view the same way."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do we estimate the real analyst staffing cost a KYC/AML vendor's alert volume will create?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Multiply the vendor's realistic monthly alert-per-customer figure by your fully-loaded cost per reviewed alert, typically $25-$60 for a mid-market team, and compare that recurring cost across shortlisted vendors, not just their license fee. A cheaper license paired with a poorly tuned alert engine frequently costs more in analyst hours than a pricier, better-tuned competitor."}
+    },
+    {
+      "@type": "Question",
+      "name": "What identity verification response time should we treat as a red flag during vendor evaluation?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Benchmark document-plus-liveness verification against a 10-15 second target; consistent results above 30 seconds measurably increase onboarding abandonment and suggest the vendor's underlying verification pipeline isn't built for production volume. Ask for the vendor's own p95 latency figure rather than an average, since averages hide the tail that actually drives drop-off."}
+    },
+    {
+      "@type": "Question",
+      "name": "Our analysts are spending far longer than expected on Enhanced Due Diligence reviews — is that a vendor problem or a team problem?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It's frequently a vendor workflow problem: a well-designed case management interface should support a genuinely high-risk EDD review in 15-25 minutes, and consistent 60+ minute reviews usually point to poor information surfacing or manual data-gathering steps in the tool, not analyst diligence. Audit the vendor's case UI directly with an analyst before assuming the team needs more training."}
     }
   ]
 }

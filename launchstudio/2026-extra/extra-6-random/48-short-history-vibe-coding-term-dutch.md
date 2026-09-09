@@ -53,6 +53,19 @@ Dat is geen reden om deze manier van bouwen te vermijden — het is precies hoe 
 
 Onze technici in Singapore, samen met teams in Amsterdam en Ho Chi Minh-stad, werken met oprichters over het hele spectrum — van de oorspronkelijke, nauwere betekenis van vibe coding tot oprichters die samen met AI-tools rechtstreeks coderen. LaunchStudio brengt Manifera's enterprise-grade engineeringstandaard naar beide. Als u bouwt zoals Owen deed — door resultaten te beschrijven in plaats van code te lezen — kunt u [ons de link naar uw prototype sturen en wij geven u gratis advies](https://launchstudio.eu/nl/#contact) over wat u moet controleren voordat u opschaalt.
 
+## Een Snelle Zelfevaluatie: Welk Type 'Vibe Coder' Bent U Daadwerkelijk?
+
+De term 'vibe coding' wordt door iedereen gebruikt, maar de praktijk kent drie fundamenteel verschillende typen oprichters, elk met hun eigen specifieke behoeften en valkuilen. Bepaal waar u staat:
+
+**Type A: De Concept-Validator (De Snelle Verkenner).** Uw doel is om binnen 48 uur een klikbaar prototype te bouwen om te testen of potentiële klanten überhaupt geïnteresseerd zijn. U geeft niets om database-architectuur of schaalbaarheid; u wilt puur 'vibe' en visuele tractie. *Advies:* Ga zo snel mogelijk door, maar laat nog geen echte betalende klanten toe op deze code.
+
+**Type B: De Solopreneur met Groeiambitie.** U heeft de eerste betalende klanten binnengehaald en wilt gestaag doorgroeien naar € 10.000 maandomzet (MRR). U merkt dat kleine bugs uw tijd beginnen op te slokken en dat u bang bent om nieuwe updates uit te rollen. *Advies:* Dit is hét moment voor een gerichte hardening-slag: zet autorisatie strak, richt back-ups in en isoleer uw productieomgeving.
+
+**Type C: De Enterprise-Scale Schaler.** U bedient zakelijke B2B-klanten of verwerkt aanzienlijke transactievolumes. U heeft formele beveiligingsrapportages, SLA's en strikte compliance nodig om grote contracten af te sluiten. *Advies:* U heeft een vaste engineeringpartner of professionele productiestudio nodig die uw platform continu bewaakt en verstevigt volgens enterprise-normen.
+
+Door uw eigen type scherp te diagnosticeren, voorkomt u dat u gereedschappen of werkwijzen hanteert die niet passen bij uw actuele ondernemersfase.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: volledig bouwen door beschrijving
@@ -99,11 +112,46 @@ U kunt het proces en de pakketten van LaunchStudio rechtstreeks verkennen op de 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What did \"vibe coding\" originally mean, more precisely?", "acceptedAnswer": { "@type": "Answer", "text": "It originally described building software purely by describing desired outcomes in natural language to an AI tool, without reading or writing the underlying code directly, as opposed to the broader, looser usage that now covers almost any AI-assisted development." } },
-    { "@type": "Question", "name": "Is \"vibe coding\" now used as a negative or dismissive term?", "acceptedAnswer": { "@type": "Answer", "text": "It's used both ways depending on context, sometimes as a neutral or even celebratory description of a new kind of builder, and sometimes dismissively to suggest a lack of technical rigor. Neither usage reflects the term's original, more specific meaning." } },
-    { "@type": "Question", "name": "Does building this way mean a product is automatically less secure?", "acceptedAnswer": { "@type": "Answer", "text": "Not automatically, but a founder who never reads the underlying code has no personal way to verify security or edge-case handling, which makes an independent review more important than it would be for a founder actively reviewing the code themselves." } },
-    { "@type": "Question", "name": "How does Manifera work with founders who built purely by description, like Owen?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineers, working from Singapore, Amsterdam, and Ho Chi Minh City, review the resulting codebase directly and translate findings into plain language, matching the description-first style the founder is already used to." } },
-    { "@type": "Question", "name": "Where can I learn more about how LaunchStudio helps AI-built products reach production?", "acceptedAnswer": { "@type": "Answer", "text": "You can explore LaunchStudio's process and packages directly on the LaunchStudio site to see how a review and production launch typically works." } }
+    {
+      "@type": "Question",
+      "name": "Wat betekende \"vibe coding\" oorspronkelijk, preciezer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het beschreef oorspronkelijk het bouwen van software puur door gewenste resultaten in natuurlijke taal te beschrijven aan een AI-tool, zonder de onderliggende code rechtstreeks te lezen of te schrijven, in tegenstelling tot het bredere, losjere gebruik dat nu vrijwel elke AI-ondersteunde ontwikkeling dekt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wordt \"vibe coding\" nu gebruikt als een negatieve of afwijzende term?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het wordt op beide manieren gebruikt, afhankelijk van de context — soms als een neutrale of zelfs feestelijke beschrijving van een nieuw soort bouwer, en soms afwijzend om een gebrek aan technische grondigheid te suggereren. Geen van beide gebruiken weerspiegelt de oorspronkelijke, specifiekere betekenis van de term."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Betekent bouwen op deze manier dat een product automatisch minder veilig is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet automatisch, maar een oprichter die de onderliggende code nooit leest, heeft geen persoonlijke manier om beveiliging of randgevalafhandeling te verifiëren, wat een onafhankelijke beoordeling belangrijker maakt dan voor een oprichter die de code zelf actief beoordeelt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe werkt Manifera met oprichters die puur door beschrijving hebben gebouwd, zoals Owen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De technici van Manifera, werkend vanuit Singapore, Amsterdam en Ho Chi Minh-stad, beoordelen de resulterende codebase rechtstreeks en vertalen bevindingen naar gewone taal, passend bij de beschrijving-eerst-stijl waaraan de oprichter al gewend is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar kan ik meer leren over hoe LaunchStudio met AI gebouwde producten naar productie helpt brengen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U kunt het proces en de pakketten van LaunchStudio rechtstreeks verkennen op de [LaunchStudio-site](https://launchstudio.eu/nl/#process) om te zien hoe een beoordeling en productielancering doorgaans verlopen."
+      }
+    }
   ]
 }
 </script>

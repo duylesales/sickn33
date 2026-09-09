@@ -33,6 +33,7 @@ De informatie was op het exacte moment van generatie voorhanden, maar is niet op
 Dit lijkt een klein technisch detail in uw datamodel, maar het heeft een lange staart:
 Het bepaalt of u vragen van klanten kunt beantwoorden, of u kwaliteitsverlies kunt diagnosticeren na een modelupdate, en of uw zakelijke klanten door de audits van hun toezichthouders komen (zeker onder de Europese AI Act en de AVG).
 
+
 ## Wat U Verplicht Moet Vastleggen Per Gegenereerd Resultaat
 
 De gegenereerde tekst zélf is het minst interessante onderdeel. Zes stuks metadata maken de output betrouwbaar en auditeerbaar:
@@ -46,6 +47,7 @@ De gegenereerde tekst zélf is het minst interessante onderdeel. Zes stuks metad
 
 Dit vergt geen complex apart subsysteem: het zijn slechts enkele extra kolommen in uw bestaande PostgreSQL-tabel.
 
+
 ## Toon de Gebruiker Waar het Vandaan Komt (*Show Your Work*)
 
 Herkomstregistratie is niet alleen bedoeld voor interne diagnostiek; het is een **essentiële vertrouwensfeature** voor uw klanten:
@@ -57,20 +59,32 @@ Herkomstregistratie is niet alleen bedoeld voor interne diagnostiek; het is een 
 
 Dit is van levensbelang in professionele sectoren: een accountant, jurist of arts die uw software gebruikt **moet** kunnen verantwoorden welke data automatisch is samengesteld.
 
+
 ## Opslaan of On-Demand Hergenereren?
 
-Er zijn twee manieren om met AI-resultaten om te gaan:
+Er zijn twee manieren om met AI-resultaten om te gaan, met een duidelijke vuistregel om tussen beide te kiezen.
 
-- **Sla de Output Op in de Database:** Wanneer de generatie kostbaar of traag is, wanneer de uitkomst stabiel moet blijven in de tijd (bijv. een juridisch rapport of een historische offerte), of wanneer meerdere collega's hetzelfde resultaat bekijken. Opgeslagen data is razendsnel, kost niets om opnieuw te tonen en vormt een sluitende audit trail.
-- **Regenereer 'On-the-Fly':** Wanneer de onderliggende brondata voortdurend realtime muteert of wanneer tijdelijke inzichten worden gevraagd.
+**Sla de output op** wanneer het genereren kostbaar of traag is, wanneer de uitkomst stabiel moet blijven in de tijd, herhaaldelijk gelezen zal worden, of onderdeel vormt van een formeel dossier — alles waar een klant later naar kan verwijzen met de vraag wat er precies stond. Opgeslagen data is razendsnel, kost niets om opnieuw te raadplegen en is volledig auditeerbaar.
 
-*Wat u absoluut moet vermijden:* Bij elk paginabezoek opnieuw een AI-aanroep doen voor dezelfde vraag. Omdat taalmodellen non-deterministisch zijn, ziet de gebruiker vandaag een andere formulering of conclusie dan gisteren. Dat wekt direct de indruk dat uw software onbetrouwbaar is.
+**Regenereer on-demand** wanneer de onderliggende data voortdurend wijzigt, wanneer actuele versheid belangrijker is dan historische consistentie, of wanneer het opslaan van de gegenereerde inhoud specifieke privacy- of beveiligingsbezwaren oproept.
 
-Slaat u data op? Bied dan altijd een duidelijke knop aan: **"Samenvatting opnieuw genereren"**, waarbij de eerdere versie in de geschiedenis bewaard blijft.
+De tussenvariant is wat u te allen tijde moet vermijden: telkens opnieuw genereren en een ander antwoord tonen op exact dezelfde vraag. Klanten interpreteren dat volkomen terecht als software die onbetrouwbaar is. Omdat taalmodellen non-deterministisch zijn en variëren tussen aanroepen, moet alles wat een klant zou kunnen vergelijken — een samenvatting die gisteren is gelezen, een risicoscore die met een collega is besproken — direct worden opgeslagen in plaats van opnieuw berekend.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in enterprise software-ontwerp) implementeren we complete audit trails, metadata-modellen en bronverwijzingen tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-datamodel met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw software voldoet aan professionele normen.
+Biedt u opgeslagen output aan? Voorzie dan altijd een expliciete hergeneratie-optie. Een duidelijke knop "Opnieuw genereren", waarbij de eerdere versie in de geschiedenis behouden blijft, geeft de klant controle en biedt u waardevolle vergelijkingsdata. En wanneer de onderliggende brondata verandert, markeer de afgeleide output dan zichtbaar als verouderd (*stale*) in plaats van deze stilzwijgend op de achtergrond te overschrijven, zodat de klant zelf kan beslissen wanneer herberekening gewenst is.
 
-## Praktijkvoorbeeld
+Het registreren van herkomst en het ontwerpen van doordacht regeneratiegedrag vraagt slechts een kleine hoeveelheid databaseschema- en interface-werk, maar levert een onevenredig grote waarde op voor support, productkwaliteit en klantvertrouwen. Toch ontbreekt dit vrijwel standaard bij haastig gebouwde AI-prototypes, waar output gedachteloos in een losse tekstkolom wordt gedumpt en vergeten. LaunchStudio, ondersteund door meer dan 11 jaar enterprise software-ervaring bij Manifera, ontwerpt AI-features vanaf dag één met volledige *provenance* en versiebeheer. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een grondige review binnen één werkdag.
+
+## Herkomst (*Provenance*) Maakt Continue Verbetering Mogelijk
+
+De reden om al deze metadata vast te leggen is niet alleen verantwoording en compliance. Het is vooral dat u zonder deze data uw AI-functionaliteit simpelweg niet systematisch kunt verbeteren.
+
+Met volledige *provenance* kunt u concrete antwoorden geven op vragen die anders puur gokwerk blijven: veranderde de outputkwaliteit toen de modelversie werd geüpdatet; presteert de promptversie van maart beter dan die van juni; welke typen gebruikersinvoer leiden tot de meeste handmatige correcties; en zijn fouten geconcentreerd bij de data van één specifieke klant of gelijkmatig verdeeld? Elk van deze vragen is een eenvoudige databasequery op uw eigen logs, en elk queryresultaat wijst direct naar een specifieke, gerichte optimalisatieactie.
+
+Zonder deze herkomstdata verwordt feature-optimalisatie tot het intuïtief aanpassen van een prompt en hopen dat het beter aanvoelt. Dat is precies de reden waarom veel startups eindeloos heen en weer blijven schakelen tussen promptvarianten zonder enig feitelijk bewijs over welke versie nu echt superieur was.
+
+Eén belangrijk aandachtspunt rondom gegevensbewaring: opgeslagen invoer en uitvoer zijn volwaardige klantgegevens. Ze bevatten soms gevoeliger informatie dan het oorspronkelijke record waaraan ze zijn gekoppeld, en vallen onder exact dezelfde bewaar- en verwijderingsplichten als alle andere persoonsgegevens. Het vaststellen van bewaartermijnen voor AI-gegenereerde content en invoer — en garanderen dat verwijderverzoeken (AVG/GDPR) ook deze tabellen bereiken — hoort thuis in hetzelfde databeleid dat de rest van uw applicatie reguleert.
+
+## Echt voorbeeld
 
 ### Niemand Kon Nog Vertellen Welke Notities de AI Had Geschreven
 
@@ -91,6 +105,7 @@ De supervisor kon niet aantonen of een collega de notitie had ingetikt of dat he
 > — **Iris van Kampen, Oprichter, Dossierlijn**
 
 **Kosten & Doorlooptijd:** AI audit trail datamodel, interface labels en provenance tracking opgeleverd in 3 werkdagen.
+
 
 ## Veelgestelde Vragen
 

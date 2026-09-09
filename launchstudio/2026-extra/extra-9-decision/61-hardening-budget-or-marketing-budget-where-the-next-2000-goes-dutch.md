@@ -120,7 +120,7 @@ Bij twijfel geldt in de softwarewereld altijd: **geef voorrang aan het dichten v
 
 [Beschrijf uw project en ontvang binnen één werkdag een vaste prijsopgave](https://launchstudio.eu/nl/#contact) — zodat uw keuze voor de besteding van die € 2.000 gebaseerd is op concrete feiten in plaats van aannames.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Scale-Up Oprichter in Actie: De Advertentiecampagne Die Bijna Eerst Ging
 

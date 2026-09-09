@@ -43,6 +43,21 @@ In vrijwel elk geval dat we hebben beoordeeld, wijst het eerlijke antwoord op de
 
 Onze engineers — werkzaam vanuit Ho Chi Minh-stad, waar Manifera zijn belangrijkste engineeringcentrum heeft — beoordelen deze precieze afweging bijna wekelijks, omdat het het meest voorkomende splitsingspunt is voor technische medeoprichters die een Bolt- of Lovable-prototype evalueren. Achter LaunchStudio staat Manifera's team van 120+ ervaren engineers, en het beoordelingsproces is bewust zo opgezet dat "repareren of herschrijven" met bewijs wordt beantwoord, niet met een onderbuikgevoel. Als u midden in een discussie zit met een technische medeoprichter, kunt u [het project beschrijven en een gerichte beoordeling krijgen](https://launchstudio.eu/nl/#contact) voordat een van beide partijen zich zes weken vastlegt op het verkeerde antwoord. Het team voor [aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera past dezelfde repareer-eerst-discipline toe op zakelijke codebases, niet alleen op door AI gegenereerde.
 
+## Hoe een Gerichte Reparatie Er Stap voor Stap Uitziet
+
+Zodra de drie diagnostische vragen uitwijzen dat een gerichte reparatie ('fix, not rewrite') de juiste route is, is het van groot belang te begrijpen hoe een professioneel hersteltraject in zijn werk gaat. Een succesvolle scoping bestaat uit vier opeenvolgende stappen die het fundament verstevigen zonder de werkende frontend te verstoren:
+
+**Stap 1: Het vastleggen van de actuele baseline (Snapshot & Test Harness).** Vóórdat er ook maar één regel code wordt gewijzigd, leggen technici de huidige status vast. Er worden geautomatiseerde end-to-end tests opgesteld die het bestaande 'happy path' doorlopen. Dit garandeert dat alle functionaliteiten die momenteel goed werken voor uw gebruikers, tijdens het herstelproces onaangetast blijven.
+
+**Stap 2: Beveiliging van de datalaag en autorisatie.** De technici trekken een harde grens rond de database. Ontbrekende Row-Level Security (RLS) policies worden geactiveerd, ongeauthenticeerde data-eindpunten worden afgesloten met middleware, en alle query's worden voorzien van strikte gebruikers- en organisatie-filters. Dit lost in één klap het grootste veiligheidsrisico op.
+
+**Stap 3: Implementatie van foutafhandeling en asynchrone verwerking.** Zware API-aanroepen en foutgevoelige externe integraties worden losgekoppeld van de directe gebruikersinterface en ondergebracht in asynchrone wachtrijen met automatische herpogingen. Foutmeldingen worden voorzien van duidelijke gebruikersberichten in plaats van witte schermen of cryptische JSON-fouten.
+
+**Stap 4: Schoonmaken van configuraties en logging.** Hardcoded geheimen worden definitief verwijderd uit de git-geschiedenis en veilig ondergebracht in omgevingsvariabelen. Er wordt centrale foutmonitoring (zoals Sentry) ingericht, zodat u bij storingen direct weet wat er misgaat nog vóór een klant contact opneemt.
+
+Dit gestructureerde stappenplan duurt doorgaans enkele dagen tot maximaal twee weken, kost slechts een fractie van een volledige herbouw en levert een robuuste, veilige applicatie op die direct klaar is voor commerciële groei.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De herschrijving van zes weken die niet nodig was
@@ -89,11 +104,46 @@ Een gerichte reparatie van een geïsoleerd defect duurt doorgaans een paar dagen
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is it ever right for a technical co-founder to insist on a full rewrite?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the defects are systemic, such as a database schema fundamentally wrong for the product's scale. Most AI-tool defects, though, are isolated and fixable without a full rewrite." } },
-    { "@type": "Question", "name": "How does LaunchStudio decide between a fix and a rewrite?", "acceptedAnswer": { "@type": "Answer", "text": "Our engineers, including the team based in Ho Chi Minh City, start with a concrete list of defects rather than a general impression of the code, then scope the smallest safe change that resolves them." } },
-    { "@type": "Question", "name": "What if my technical co-founder still doesn't trust the fix?", "acceptedAnswer": { "@type": "Answer", "text": "We provide a written scope of exactly what was changed and why, so a skeptical technical co-founder can review the specific diff rather than relying on trust alone." } },
-    { "@type": "Question", "name": "Does Manifera only work with non-technical founders?", "acceptedAnswer": { "@type": "Answer", "text": "No. A meaningful share of our work involves technical co-founders and CTOs who want an outside engineering team to validate whether a fix or a rewrite is the right call on AI-generated code." } },
-    { "@type": "Question", "name": "How long does a scoped fix usually take compared to a rewrite?", "acceptedAnswer": { "@type": "Answer", "text": "A scoped fix for an isolated defect typically takes a few days to a couple of weeks, compared to the four-to-eight-week range common for unnecessary full rewrites." } }
+    {
+      "@type": "Question",
+      "name": "Is het ooit terecht dat een technische medeoprichter aandringt op een volledige herschrijving?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, als de defecten systemisch zijn — bijvoorbeeld een databaseschema dat fundamenteel ongeschikt is voor de schaal van het product — dan kan een herschrijving van die specifieke laag gerechtvaardigd zijn. De meeste AI-tooldefecten zijn echter geïsoleerd en oplosbaar zonder de rest van de codebase aan te raken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe beslist LaunchStudio tussen een reparatie en een herschrijving?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Onze engineers, waaronder het team gevestigd in Ho Chi Minh-stad, beginnen met een concrete lijst van defecten in plaats van een algemene indruk van de code, en bepalen vervolgens de kleinst mogelijke veilige wijziging die deze oplost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat als mijn technische medeoprichter de reparatie nog steeds niet vertrouwt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We leveren een geschreven scope van precies wat er is gewijzigd en waarom, zodat een sceptische technische medeoprichter de specifieke diff kan beoordelen in plaats van alleen op vertrouwen te varen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werkt Manifera alleen met niet-technische oprichters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee — een aanzienlijk deel van ons werk bestaat precies hieruit: technische medeoprichters en CTO's die een extern engineeringteam willen laten valideren of een reparatie of een herschrijving de juiste keuze is voor door AI gegenereerde code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt een gerichte reparatie doorgaans in vergelijking met een herschrijving?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een gerichte reparatie van een geïsoleerd defect duurt doorgaans een paar dagen tot een paar weken, afhankelijk van de complexiteit, vergeleken met de vier tot acht weken die we vaak zien bij onnodige volledige herschrijvingen."
+      }
+    }
   ]
 }
 </script>

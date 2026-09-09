@@ -78,6 +78,19 @@ Het tegenovergestelde gevaar — te vaak mailen met nietszeggende marketingpraat
 ### Het Heractiveren van Slapende Inschrijvers
 Een deel van elke lijst opent na verloop van tijd geen e-mails meer, simpelweg omdat het dagelijks leven doordraait. Een kort, laagdrempelig *"Nog steeds geïnteresseerd?"* mailtje kort vóór de officiële lancering re-activeert vaak een aanzienlijk deel van deze groep.
 
+### Wachtlijst-Optimalisatie: Van E-mailverzameling naar Hoge Conversie
+
+Een wachtlijst die converteert naar betalende klanten vereist continue activatie en duidelijke prikkels:
+1. **Directe Waarde na Inschrijving:** Bied nieuwe aanmeldingen direct een interactieve mini-tool, een exclusieve template of een geautomatiseerde analyse van hun data aan.
+2. **Transparante Toegangsgolven (Cohort Onboarding):** Laat gebruikers in gecontroleerde groepen van 25 tot 50 personen toe. Dit voorkomt dat uw database overbelast raakt en creëert een gevoel van exclusiviteit.
+3. **Early-Bird Prijsgarantie:** Bied wachtlijst-leden een levenslange korting van 20% of extra tokens als ze binnen 48 uur na ontvangst van hun uitnodiging hun abonnement activeren.
+
+### Micro-Onboarding en Conversie-Optimalisatie vóór de Lancering
+
+Een passieve e-maillijst levert zelden actieve betalers op. Succesvolle oprichters transformeren hun wachtlijst in een interactieve trechter door direct na inschrijving twee gerichte vragen te stellen over de concrete workflow van de gebruiker. Hiermee kwalificeert u leads automatisch en kunt u VIP-toegang verlenen aan prospects met de hoogste betaalbereidheid.
+
+Bovendien zorgt een transparante statuspagina gekoppeld aan realtime webhook-notificaties ervoor dat gebruikers op de hoogte blijven van releasedatums. Wanneer de deuren openen, stuurt een geautomatiseerde Stripe Checkout-campagne met tijdelijke onboarding-bonussen de conversieratio structureel boven de gebruikelijke industriestandaard van 2 naar meer dan 12 procent.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: 180 gekwalificeerde leads omgezet in 61 betalende klanten

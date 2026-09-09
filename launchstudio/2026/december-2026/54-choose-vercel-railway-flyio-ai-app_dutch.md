@@ -81,11 +81,60 @@ Kiezen tussen Vercel, Railway en Fly.io regelt waar uw applicatielogica draait, 
 
 Pas op voor de fout waarbij serverless functies rechtstreeks zonder connection pooler op een traditionele database worden aangesloten — dit kan bij gelijktijdig gebruik leiden tot het uitputten van het maximaal aantal databaseverbindingen.
 
-## Belangrijkste inzichten
+### Belangrijkste inzichten
 
 - **Vercel voor Next.js frontend**: Ideaal voor serverless apps, maar let op de uitvoeringstijd-limieten bij langdurige AI-taken.
 - **Railway voor achtergrondjobs**: Perfect voor batch AI-verwerking, geplande cron-jobs en permanente backend-processen.
 - **Let op connection pooling**: Gebruik bij serverless op Vercel altijd Supabase/Neon met connection pooling om database-crashes te voorkomen.
+
+### Gedetailleerde Vergelijking: Vercel vs. Railway vs. Fly.io
+
+De keuze voor het juiste hostingplatform bepaalt uw ontwikkelgemak en operationele kosten:
+- **Vercel (De Standaard voor Next.js & Edge):** Ongeëvenaard gebruiksgemak voor React/Next.js frontends, automatische edge-caching en preview-deployments. Uitstekend voor snelle lanceringen, maar kan kostbaar worden bij langdurige serverless runtime taken (timeouts na 60 seconden op standaard accounts).
+- **Railway (Eenvoud voor Full-Stack & Achtergrondtaken):** Ideaal voor applicaties met een volwaardige backend (Node.js, Python, Docker) en langlopende background workers (zoals Redis-queues). Biedt transparante prijzen op basis van daadwerkelijk CPU- en RAM-verbruik.
+- **Fly.io (Lage Latency & Globale Containerdistributie):** De krachtigste optie voor applicaties die overal ter wereld microseconden-latency vereisen. Vereist meer Docker- en netwerkkennis, maar biedt maximale flexibiliteit voor databases en WebSocket-servers.
+
+### Architectuuranalyse: Hostingkeuzes voor Eigentijdse AI SaaS
+
+De keuze tussen Vercel, Railway en Fly.io hangt nauw samen met uw achtergrondverwerking:
+- **Vercel:** Uitstekend voor snelle, serverless Next.js applicaties en wereldwijde caching. Let op execution time limits bij zware AI-bewerkingen.
+- **Railway:** De aangewezen keuze voor applicaties met Docker-containers, Redis-queues en langdurige background jobs met voorspelbare maandelijkse kosten.
+- **Fly.io:** Optimale prestaties voor gedistribueerde applicaties die overal ter wereld minimale netwerk-latency vereisen.
+
+### Operationele Kosten en Schaalbaarheidsoverwegingen
+
+De juiste hostingpartner voorkomt onnodige migraties in een later stadium:
+- **Serverless Beperkingen:** Houd rekening met execution time-outs bij Vercel voor langdurige achtergrondtaken en kies voor een dedicated worker op Railway voor zware batchverwerking.
+- **Wereldwijde Latency:** Fly.io biedt superieure snelheid wanneer uw gebruikersbasis wereldwijd verspreid is en lokale dataverwerking vereist.
+- **Database Netwerkverbindingen:** Plaats uw database en applicatieservers in dezelfde cloud-regio om onnodige netwerkvertraging te elimineren.
+
+### Beslisboom: Welk Platform Past Bij Welke Groeifase?
+
+Gebruik deze operationele criteria om de juiste infrastructuur te kiezen:
+1. **Fase 1 (MVP & Eerste Klanten):** Vercel voor de Next.js frontend gecombineerd met Supabase Managed PostgreSQL. Minimale operationele overhead, directe git-integratie en royale gratis tiers.
+2. **Fase 2 (Complexe AI-Pipelines & Achtergrondtaken):** Voeg een Railway instantie toe voor langdurige taken, zoals het verwerken van grote documenten via Python/LangChain workers en Redis queues, waardoor u niet tegen Vercel's serverless timeout van 60 seconden aanloopt.
+3. **Fase 3 (Internationale Schaal & Strikte Data-Soevereiniteit):** Migreer latency-gevoelige services naar Fly.io om containers direct in Europese datacenters (Amsterdam, Frankfurt) te draaien met minimale netwerkvertraging.
+
+### Technische Vergelijkingstabel voor Cloud-Hosting
+
+Kies het juiste platform op basis van uw architectuur:
+- **Vercel:** Superieur voor React en Next.js applicaties met wereldwijde content delivery via edge-servers.
+- **Railway:** Uitstekend voor container-applicaties, Docker-omgevingen en langdurige asynchrone taken.
+- **Fly.io:** Optimale keuze wanneer minimale latency en directe controle over Europese datacenters vereist zijn.
+
+### Gedetailleerde Vergelijking van Egress-Kosten en Worker-Limieten
+
+Bij het hosten van AI-applicaties zijn niet de compute-kosten de grootste kostenpost, maar onverwachte egress fees en execution timeouts op serverless architecturen. Vercel is onovertroffen voor frontend rendering en edge routing met Next.js, maar serverless functies stuiten op een harde executielimiet (maximaal 15 tot 60 seconden afhankelijk van het plan), wat funest is voor zware LLM-verwerking of batch-analyses.
+
+Railway en Fly.io bieden daarentegen volwaardige Docker-containers die continu kunnen draaien. Hierdoor kunt u langdurige achtergrondprocessen zoals PDF-parsing, video-transcriptie en chunking uitvoeren zonder risico op afgebroken HTTP-verbindingen:
+
+| Platform | Ideale Use-Case | Grootste Valstrik | Kostenbeheersing |
+| :--- | :--- | :--- | :--- |
+| **Vercel** | Next.js Frontend & Edge API | Serverless timeouts bij streaming | Strikte spend limits instellen |
+| **Railway** | Managed Postgres & API Services | Kosten lopen lineair op bij continu geheugengebruik | Geheugenallocatie handmatig capen |
+| **Fly.io** | Gedistribueerde backend workers | Complexer netwerk- en volumebeheer | Machines automatisch uitschakelen bij inactiviteit |
+
+Een beproefd patroon is een hybride architectuur: host de UI en frontend API op Vercel voor wereldwijde CDN-prestaties, en routeer langdurige AI-achtergrondtaken naar een private container-omgeving op Fly.io of Railway.
 
 ## Echt voorbeeld
 

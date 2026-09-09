@@ -126,7 +126,7 @@ Dat is de werkelijke beslissing waar dit artikel om draait: niet of Bolt de verk
 
 Wilt u een second opinion van senior engineers die dagelijks AI-gegenereerde code auditen? Deel uw repository met ons en u ontvangt binnen één werkdag een heldere lijst met bevindingen, zonder verkooppraatjes.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De grep die € 340 aan API-tegoed kostte
 

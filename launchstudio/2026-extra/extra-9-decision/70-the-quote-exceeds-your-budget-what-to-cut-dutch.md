@@ -73,7 +73,7 @@ Wanneer u zelf de code niet kunt lezen of technische claims niet inhoudelijk kun
 
 [Stuur ons uw externe offerte en wij laten u kosteloos zien welke onderdelen daarin puur optioneel zijn](https://launchstudio.eu/nl/#contact).
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De offerte die kleiner werd zonder riskanter te worden
 

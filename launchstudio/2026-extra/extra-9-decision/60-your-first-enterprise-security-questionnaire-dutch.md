@@ -105,7 +105,7 @@ Het samenstellen van deze documentatie en het praktisch dichttimmeren van uw bev
 
 [Plan een kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) om uw beveiligingsopzet door te lichten vóórdat uw volgende grote verkoopkans stagneert op een security questionnaire.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een SaaS-Oprichter in Actie: De Vragenlijst Die Bijna een Deal met Zes Cijfers Blokkeerde
 

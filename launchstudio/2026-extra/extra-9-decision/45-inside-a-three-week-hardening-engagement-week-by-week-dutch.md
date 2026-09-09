@@ -138,7 +138,7 @@ Door deze fasering vooraf te kennen, bent u op de juiste momenten maximaal effec
 
 **Wilt u een vast geprijsde offerte inclusief een gedetailleerd week-voor-week draaiboek voor uw SaaS-product? Neem contact op met LaunchStudio — we brengen binnen één werkdag de exacte stappen voor uw platform in kaart.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Scale-Up in Actie: De Datamigratie Die op Dag Acht Werd Ontdekt
 

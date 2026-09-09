@@ -77,7 +77,7 @@ Wanneer een model definitief met pensioen gaat, volgt u een vaste migratiestraat
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste software engineering) implementeren we modulaire model-abstracties, regressieteststraten en versiebeheer tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-migratiestrategie met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat externe modelupdates uw dienstverlening nooit verstoren.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### De Uitfaseringsbrief Die Drie Weken Te Laat Werd Gelezen
 

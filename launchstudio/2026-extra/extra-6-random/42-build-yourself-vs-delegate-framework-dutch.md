@@ -56,6 +56,21 @@ Het raamwerk betaalt zich alleen uit als u het gebruikt vóórdat u code schrijf
 
 Ons team, werkend vanuit Singapore samen met collega's in Amsterdam en Ho Chi Minh-stad, beoordeelt precies dit soort bouwen-of-uitbesteden-beslissingen wanneer we binnenkomende prototypes beoordelen — het is vaak de enkele grootste hefboom om het pad naar lancering van een oprichter te verkorten. LaunchStudio brengt Manifera's enterprise-grade engineering, dezelfde standaard die wordt gebruikt in Manifera's [praktijk voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/), naar precies dit soort beslissingen. Wilt u een tweede mening over waar uw eigen build zich in deze matrix bevindt, dan kunt u [zien wat een review met vaste scope zou kosten](https://launchstudio.eu/nl/#calculator).
 
+## De Opgeloste-Problemen-Checklist: Wat Vrijwel Altijd Thuishoort in het Delegeer-Kwadrant
+
+Veel oprichters verspillen kostbare tijd en engineeringcapaciteit door het wiel opnieuw uit te vinden voor problemen die door de software-industrie al decennia geleden definitief zijn opgelost. Deze zaken horen standaard thuis in het 'Delegeer- of Koop-Kwadrant':
+
+**1. Authenticatie en Identiteitsbeheer.** Bouw nooit uw eigen inlogsysteem, wachtwoord-resets of tweefactorauthenticatie (2FA). Gebruik bewezen oplossingen zoals Supabase Auth, Clerk of Auth0. Zij hebben honderden beveiligingsexperts in dienst die niets anders doen dan zorgen dat inlogstromen veilig zijn.
+
+**2. Betalingsverwerking en Facturatie.** Probeer niet zelf creditcardgegevens op te slaan of complexe btw-regels binnen de EU te programmeren. Integreer Stripe Checkout of Mollie. Zij handhaven PSD2-compliance en verzorgen veilige checkout-stromen volgens de strengste standaarden.
+
+**3. Transactionele E-mailbezorging.** Ga niet klooien met eigen SMTP-servers die direct op spam-blacklists belanden. Schakel diensten in zoals Postmark of Resend, die SPF-, DKIM- en DMARC-authenticatie standaard optimaal afhandelen.
+
+**4. Hosting en Wereldwijde Edge-Infrastructuur.** Beheer geen eigen virtuele servers (VPS) als u geen doorgewinterde DevOps-engineer bent. Platforms zoals Vercel, Fly.io of AWS ECS nemen serverbeveiliging, TLS-certificaten en automatische uitrol volledig uit handen.
+
+Besteed uw schaarse ontwikkeltijd uitsluitend aan uw unieke bedrijfswaarde en workflow — hetgeen wat uw bedrijf daadwerkelijk onderscheidt van de concurrentie. De rest delegeert u aan gevestigde standaarden.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: drie weken besteed aan het opnieuw uitvinden van Auth0
@@ -100,11 +115,46 @@ Voor een afgebakend onderdeel zoals authenticatie gaat het vaak om een kwestie v
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "How do I know if something is a \"solved problem\" worth delegating?", "acceptedAnswer": { "@type": "Answer", "text": "If the feature has a well-known name and several established, widely-used providers already offering it, like authentication, payments, or email delivery, it's almost always a solved problem worth delegating rather than building from scratch." } },
-    { "@type": "Question", "name": "What if delegating a solved problem still feels like giving up control?", "acceptedAnswer": { "@type": "Answer", "text": "Delegating to a mature provider often gives you more control in practice, since you inherit years of security patches and edge-case handling you'd otherwise have to discover yourself, one incident at a time." } },
-    { "@type": "Question", "name": "Does LaunchStudio only handle backend delegation, or does it touch the frontend too?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio focuses on backend, security, payments, auth, database, and hosting work, and is specifically designed to integrate with the frontend a founder has already built in tools like Cursor, Lovable, or Bolt, not to replace it." } },
-    { "@type": "Question", "name": "Where is Manifera's engineering team based?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineers work across three hubs: Amsterdam as the European headquarters, Singapore serving Southeast Asia, and Ho Chi Minh City as the main engineering center." } },
-    { "@type": "Question", "name": "How long does it typically take to swap a custom-built system for a managed one?", "acceptedAnswer": { "@type": "Answer", "text": "For a contained piece like authentication, it's often a matter of days rather than weeks, since the work is replacing one component rather than rebuilding the product around it." } }
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of iets een \"opgelost probleem\" is dat ik moet uitbesteden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Als de feature een bekende naam heeft en er meerdere gevestigde, veelgebruikte aanbieders zijn die het al aanbieden — zoals authenticatie, betalingen of e-maillevering — is het vrijwel altijd een opgelost probleem dat het waard is om uit te besteden in plaats van vanaf nul te bouwen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat als het uitbesteden van een opgelost probleem toch aanvoelt als het opgeven van controle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Uitbesteden aan een volwassen provider geeft u in de praktijk vaak juist meer controle, omdat u jaren aan beveiligingspatches en edge-case-afhandeling erft die u anders zelf, incident voor incident, zou moeten ontdekken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Behandelt LaunchStudio alleen backend-uitbesteding, of raakt het ook de frontend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio richt zich op backend, beveiliging, betalingen, authenticatie, database en hostingwerk, en is specifiek ontworpen om te integreren met de frontend die een oprichter al heeft gebouwd in tools als Cursor, Lovable of Bolt — niet om die te vervangen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is het engineeringteam van Manifera gevestigd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De technici van Manifera werken vanuit drie hubs: Amsterdam als Europees hoofdkantoor, Singapore voor Zuidoost-Azië, en Ho Chi Minh-stad als het belangrijkste engineeringcentrum."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt het gewoonlijk om een custom-gebouwd systeem te vervangen door een beheerd systeem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor een afgebakend onderdeel zoals authenticatie gaat het vaak om een kwestie van dagen in plaats van weken, omdat het werk bestaat uit het vervangen van één component in plaats van het herbouwen van het product eromheen."
+      }
+    }
   ]
 }
 </script>

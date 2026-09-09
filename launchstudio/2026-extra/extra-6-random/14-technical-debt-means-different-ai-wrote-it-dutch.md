@@ -39,6 +39,23 @@ Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoor
 
 LaunchStudio, gesteund door Manifera's team van engineers gevestigd in Amsterdam en daarbuiten, beoordeelt door AI gegenereerde codebases specifiek op dit patroon voordat productiewerk wordt aanbevolen. Als u vermoedt dat uw eigen door AI gebouwde product dit soort schuld stilletjes over uw bestanden heeft liggen, kunt u [praten met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) over een beoordeling. Voor een blik op de productiegerichte engineeringdiscipline die wij toepassen, zie [de aanpak van Manifera voor webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
+## Vijf Signalen Dat Uw Codebase Momenteel Dit Soort Technische Schuld Bevat
+
+U heeft geen volledige externe audit nodig om een eerste, betrouwbare inschatting te maken van de vraag of uw door AI gegenereerde codebase structurele technische schuld met zich meedraagt. Let op de volgende vijf waarschuwingssignalen die direct zichtbaar zijn in uw dagelijkse ontwikkelproces:
+
+**1. Het 'Jenga-effect' bij kleine wijzigingen.** Vraagt u de AI-tool om een ogenschijnlijk simpele wijziging door te voeren — zoals het aanpassen van een knoptekst of het toevoegen van één formulierveld — en breekt daardoor plotseling een compleet ander onderdeel van de applicatie af? Dit duidt op een gebrek aan modulaire architectuur en het ontbreken van type-veiligheid, waardoor afhankelijkheden onzichtbaar door elkaar heen lopen.
+
+**2. Eindeloze duplicatie van datalogica.** Kijk eens rond in uw broncode. Ziet u op tien verschillende plekken vrijwel identieke databasequery's of API-aanroepen staan, telkens net iets anders geformuleerd door de AI? Dit ontbreken van een centrale data-toegangslaag (zoals een repository-pattern of herbruikbare services) betekent dat u bij elke toekomstige aanpassing tien plekken moet bijwerken — en er gegarandeerd eentje vergeet.
+
+**3. Geheimen en API-sleutels die rondzwerven in componenten.** Als API-tokens, database-wachtwoorden of externe endpoints hardcoded in frontend-bestanden (`.tsx`, `.jsx` of `.vue`) staan in plaats van netjes geïsoleerd in een beschermde `.env`-configuratie aan de serverzijde, loopt u direct een ernstig beveiligingsrisico zodra de app publiek toegankelijk wordt.
+
+**4. Het ontbreken van geautomatiseerde integratietests.** Bevat uw projectmap geen enkele test (`*.test.ts` of `*.spec.ts`), of zijn er alleen tests die door de AI zijn gegenereerd en die altijd 'groen' aangeven omdat ze triviale beweringen testen? Zonder echte tests bouwt u blind voort op code waarvan niemand de randvoorwaarden bewaakt.
+
+**5. Onbegrepen foutmeldingen die worden 'opgelost' met hacks.** Heeft de AI-tool herhaaldelijk instructies toegevoegd zoals `any`, `// @ts-ignore` of lege `catch {}`-blokken om compilatiefouten te laten verdwijnen? Dit verbergt fouten slechts voor het oog; in productie crasht de applicatie alsnog op het moment dat een gebruiker onverwachte invoer levert.
+
+Herkent u twee of meer van deze signalen, dan is het tijd om pas op de plaats te maken. Voortbouwen op een wankele codebase maakt herstelwerkzaamheden later exponentieel duurder.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De bug die op acht plekken leefde
@@ -85,11 +102,46 @@ Ja, het consolideren van gedupliceerde logica in gedeelde functies is gericht we
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why is AI-generated technical debt harder to spot than human-created debt?", "acceptedAnswer": { "@type": "Answer", "text": "There's no decision trail, since nobody consciously chose the shortcut, so there's no comment or note pointing reviewers toward the problem." } },
-    { "@type": "Question", "name": "Does clean-looking code mean the codebase doesn't have this kind of debt?", "acceptedAnswer": { "@type": "Answer", "text": "No, AI-generated debt is often structural and spans multiple files, so a single file can look clean while logic is duplicated elsewhere." } },
-    { "@type": "Question", "name": "What does Herre Roelevink mean by the shift toward \"architecture and maturity\"?", "acceptedAnswer": { "@type": "Answer", "text": "He describes how the hard part of AI-built software has moved from generating working code to structuring it so it holds up in production." } },
-    { "@type": "Question", "name": "How would Manifera's engineers find duplicated logic across a large codebase?", "acceptedAnswer": { "@type": "Answer", "text": "They search systematically for near-identical functions and patterns across files rather than reviewing each file in isolation." } },
-    { "@type": "Question", "name": "Can this kind of debt be fixed without rebuilding the whole product?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, consolidating duplicated logic into shared functions is targeted work that doesn't require a full rewrite." } }
+    {
+      "@type": "Question",
+      "name": "Waarom is door AI gegenereerde technische schuld moeilijker te spotten dan door mensen gecreëerde schuld?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat er geen beslissingsspoor is — niemand koos bewust voor de shortcut, dus er is geen opmerking, herinnering of to-donotitie die toekomstige beoordelaars naar het probleem wijst."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Betekent er netjes uitziende code dat de codebase dit soort schuld niet heeft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Door AI gegenereerde schuld is vaak structureel en overspant meerdere bestanden, dus elk afzonderlijk bestand kan er netjes uitzien terwijl dezelfde logica stilletjes elders wordt gedupliceerd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat bedoelt Herre Roelevink met de verschuiving naar \"architectuur en volwassenheid\"?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hij beschrijft hoe het moeilijke deel van door AI gebouwde software is verschoven van het genereren van werkende code naar het beoordelen en structureren van die code zodat deze standhoudt onder echt productiegebruik."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zouden de engineers van Manifera gedupliceerde logica vinden in een grote codebase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ze zoeken systematisch naar bijna-identieke functies en patronen in bestanden, in plaats van elk bestand afzonderlijk te beoordelen, wat is hoe dit soort schuld zich doorgaans verbergt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan dit soort schuld worden opgelost zonder het hele product te herbouwen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, het consolideren van gedupliceerde logica in gedeelde functies is gericht werk dat alleen de betrokken bestanden raakt, zonder een volledige herschrijving te vereisen."
+      }
+    }
   ]
 }
 </script>

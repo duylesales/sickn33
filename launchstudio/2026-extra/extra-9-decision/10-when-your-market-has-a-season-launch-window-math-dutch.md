@@ -87,7 +87,7 @@ Het [Launch & Grow-pakket van LaunchStudio](https://launchstudio.eu/nl/#packages
 
 Deel de openingsdatum van uw komende seizoen en de huidige staat van uw prototype met ons — wij reageren binnen één werkdag met een gedetailleerde terugrekentijdlijn en het exacte startmoment voor uw engineering.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een oprichter in festival-tooling in actie: De week die niet mocht verschuiven
 

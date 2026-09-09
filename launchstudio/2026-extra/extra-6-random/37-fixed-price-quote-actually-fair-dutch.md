@@ -50,6 +50,19 @@ Eerlijk betekent niet goedkoopst. Het betekent dat de prijs leesbaar is — u ku
 
 LaunchStudio is precies rond dit principe gebouwd — elke opdracht wordt afgebakend en geprijsd als een gespecificeerde uitsplitsing voordat er een eurosymbool aan wordt gekoppeld, en dat is waarom vaste-prijsopdrachten doorgaans in de range van € 800–€ 7.500 vallen voor een afgebakende scope. Ons Amsterdamse team loodst oprichters rechtstreeks door deze specificatie heen. U kunt [een schatting voor uw eigen project berekenen](https://launchstudio.eu/nl/#calculator) als startpunt voordat u dit vergelijkt met andere offertes. Voor een breder beeld van hoe geschaalde engineeringprijzen werken, zie Manifera's praktijk in [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/), toegepast op meer dan 160 opgeleverde projecten.
 
+## Het Verschil Tussen Twee Gedetailleerde Offertes Regel voor Regel Lezen
+
+Wanneer u voor dezelfde opdracht twee offertes ontvangt — bijvoorbeeld één van € 3.000 en één van € 12.000 — ontstaat al snel verwarring. Het verschil zit zelden in pure winstmarge; het openbaart zich wanneer u de specificaties regel voor regel naast elkaar legt:
+
+**De Goedkope Offerte (€ 3.000):** Bevat doorgaans uitsluitend 'happy path' werkzaamheden. Men bouwt de schermen, koppelt de API's en verifieert handmatig of het werkt. Wat er ontbreekt in de regels: geautomatiseerde integratietests, autorisatiecontroles aan de serverzijde, gedetailleerde foutafhandeling, rate limiting, logging en documentatie. Men levert een prototype op dat werkt zolang niemand een fout maakt.
+
+**De Solide Offerte (€ 12.000):** Begroot exact de onzichtbare productielaag die nodig is voor stabiliteit. U ziet posten zoals: "Opzetten geautomatiseerde CI/CD-pipeline", "Implementatie Row-Level Security policies", "Idempotente webhook-verwerking met herpogingswachtrijen", "Inrichten gecentraliseerde foutmonitoring via Sentry" en "30 dagen schriftelijke garantie op beveiligingsfouten".
+
+**De Vraag Die U Zich Moet Stellen:** Bent u een vroege hypothese aan het testen waarbij weggooien na drie weken een reële optie is? Dan volstaat de eerste offerte wellicht. Bouwt u echter aan een bedrijf waarin echte klanten gaan betalen en rekenen op betrouwbaarheid? Dan is het prijsverschil van de tweede offerte geen extra kostenpost, maar de premie van een verzekering tegen gegarandeerde latere downtime en reputatieschade.
+
+Door offertes niet op het totaalbedrag maar op de onderliggende kwaliteitsgaranties te beoordelen, voorkomt u dat een goedkope start uiteindelijk leidt tot de duurste vergissing uit uw ondernemerscarrière.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: drie offertes, één spreadsheet
@@ -94,11 +107,46 @@ Ja, het in Amsterdam gevestigde team van LaunchStudio doorloopt dit specificatie
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the fastest way to tell if a fixed-price quote is inflated?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for an itemized breakdown. A vendor unwilling to show their reasoning component by component is the clearest early warning sign." } },
-    { "@type": "Question", "name": "Why do quotes for the \"same\" scope of work vary so much between vendors?", "acceptedAnswer": { "@type": "Answer", "text": "Usually the vendors aren't actually quoting the same scope. One may include testing or migration, another may exclude it, another may quote a broader fix than asked for." } },
-    { "@type": "Question", "name": "Should I always choose the middle-priced quote?", "acceptedAnswer": { "@type": "Answer", "text": "No. Choose the quote whose itemized breakdown most closely matches your own independently written scope, regardless of where it lands numerically." } },
-    { "@type": "Question", "name": "How does LaunchStudio structure its fixed-price quotes to stay fair?", "acceptedAnswer": { "@type": "Answer", "text": "Every engagement is broken into itemized components before pricing, which is why most engagements land in the €800–€7,500 range for a clearly defined scope." } },
-    { "@type": "Question", "name": "Does the Amsterdam team help founders build their own itemized scope before comparing vendors?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LaunchStudio's Amsterdam-based team regularly works through this itemization process directly with founders evaluating multiple quotes." } }
+    {
+      "@type": "Question",
+      "name": "Wat is de snelste manier om te zien of een vaste-prijsofferte is opgeblazen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vraag om een gespecificeerde uitsplitsing. Een leverancier die niet bereid is zijn redenering onderdeel voor onderdeel te tonen, is het duidelijkste vroege waarschuwingssignaal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom variëren offertes voor \"dezelfde\" scope zo sterk tussen leveranciers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Meestal omdat de leveranciers eigenlijk niet dezelfde scope offreren — de een neemt misschien testen of migratie mee, de ander sluit dat uit, en weer een ander offreert een bredere fix dan werd gevraagd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik altijd de offerte met de middelste prijs kiezen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Kies de offerte waarvan de gespecificeerde uitsplitsing het beste overeenkomt met uw eigen, onafhankelijk opgestelde scope, ongeacht waar deze qua bedrag uitkomt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe structureert LaunchStudio zijn vaste-prijsoffertes om eerlijk te blijven?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Elke opdracht wordt uitgesplitst in gespecificeerde onderdelen vóór de prijsbepaling, en dat is waarom de meeste vaste-prijsopdrachten in de range van € 800–€ 7.500 vallen voor een duidelijk afgebakende scope."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Helpt het Amsterdamse team oprichters bij het opstellen van hun eigen gespecificeerde scope voordat ze leveranciers vergelijken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, het in Amsterdam gevestigde team van LaunchStudio doorloopt dit specificatieproces regelmatig rechtstreeks samen met oprichters die meerdere offertes beoordelen."
+      }
+    }
   ]
 }
 </script>

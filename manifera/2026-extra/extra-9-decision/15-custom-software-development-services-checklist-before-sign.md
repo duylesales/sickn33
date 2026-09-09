@@ -80,6 +80,12 @@ None of these eight items require a lawyer to identify — they require an engin
 
 Book a 30-minute architecture and contract review with one of our senior team members before you sign anything — we'll go through your current SOW against this checklist with you, whether or not you end up working with us.
 
+## The Ninth Item: Liability Caps and Data Processing Terms
+
+Most eight-point SOW checklists stop before the clause that determines what happens if something actually goes wrong. Check the liability cap specifically — many vendor-drafted SOWs cap total liability at the value of fees paid in the prior one or three months, which on a €150,000 annual engagement can leave you covering the bulk of a security incident's real cost yourself. Push for a cap tied to a meaningful multiple of the contract's annual value, or an uncapped carve-out specifically for data breaches, IP infringement, and gross negligence — the three failure modes that actually produce catastrophic cost.
+
+If any EU user data touches the build, the SOW needs a Data Processing Agreement (DPA) referenced explicitly, not assumed to exist in a master agreement you haven't checked. Confirm it names the sub-processors actually involved (cloud hosting, monitoring tools, any third-party APIs handling personal data), specifies breach notification within 72 hours per GDPR Article 33, and states where data is processed and stored geographically. A vendor operating a distributed delivery model should be able to produce this without friction — if a finalist hesitates on naming their actual sub-processor list, that hesitation belongs on the same red-flag list as an unnamed engineering team.
+
 ## Frequently Asked Questions
 
 ### What's the biggest mistake CTOs make when reviewing a statement of work for custom software development services?
@@ -96,6 +102,18 @@ You should receive full, current repository access and documentation regardless 
 
 ### Is it normal to negotiate SOW terms with a custom software development vendor before signing?
 Yes, and a vendor's willingness to negotiate specific, reasonable terms — especially around IP transfer, termination, and acceptance criteria — is itself a useful signal of how they'll behave once the contract is actually in effect.
+
+### (Scenario: A vendor's proposed liability cap is limited to one month of fees on a large annual engagement) What liability cap is reasonable in a custom software development services SOW?
+A cap limited to a single month of fees is thin protection on a large annual engagement; push for a cap tied to a meaningful multiple of annual contract value, with an uncapped carve-out for data breaches, IP infringement, and gross negligence specifically.
+
+### (Scenario: A CTO discovers the vendor hasn't named its sub-processors for a build handling EU customer data) What should a Data Processing Agreement in a custom software development SOW specify?
+It should name the actual sub-processors involved (hosting, monitoring, third-party APIs touching personal data), commit to GDPR-compliant breach notification within 72 hours, and state where data is processed and stored geographically — not just reference a generic privacy policy.
+
+### (Scenario: A dedicated development team's SOW doesn't mention what happens to unfinished work-in-progress at contract end) What happens to in-progress, unmerged code if a custom software development contract ends mid-sprint?
+The SOW should explicitly guarantee access to all commits, including unmerged branches and work-in-progress, not just code that has reached a completed milestone — otherwise you may lose partially finished work that has real value but hasn't formally shipped.
+
+### (Scenario: A CTO wants to benchmark a vendor's proposed SLA response times against industry norms before signing) What response time should a custom software development services SOW commit to for critical production issues?
+Look for a tiered SLA — commonly under 1-4 hours acknowledgment for critical/production-down issues, under 24 hours for major issues, and 2-3 business days for minor ones — with the acknowledgment and resolution targets stated separately, since vendors sometimes blur the two to look faster than they are.
 
 <script type="application/ld+json">
 {
@@ -126,6 +144,26 @@ Yes, and a vendor's willingness to negotiate specific, reasonable terms — espe
       "@type": "Question",
       "name": "Is it normal to negotiate SOW terms with a custom software development vendor before signing?",
       "acceptedAnswer": {"@type": "Answer", "text": "Yes, and a vendor's willingness to negotiate specific, reasonable terms — especially around IP transfer, termination, and acceptance criteria — is itself a useful signal of how they'll behave once the contract is actually in effect."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor's proposed liability cap is limited to one month of fees on a large annual engagement) What liability cap is reasonable in a custom software development services SOW?",
+      "acceptedAnswer": {"@type": "Answer", "text": "A cap limited to a single month of fees is thin protection on a large annual engagement; push for a cap tied to a meaningful multiple of annual contract value, with an uncapped carve-out for data breaches, IP infringement, and gross negligence specifically."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A CTO discovers the vendor hasn't named its sub-processors for a build handling EU customer data) What should a Data Processing Agreement in a custom software development SOW specify?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It should name the actual sub-processors involved (hosting, monitoring, third-party APIs touching personal data), commit to GDPR-compliant breach notification within 72 hours, and state where data is processed and stored geographically — not just reference a generic privacy policy."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A dedicated development team's SOW doesn't mention what happens to unfinished work-in-progress at contract end) What happens to in-progress, unmerged code if a custom software development contract ends mid-sprint?",
+      "acceptedAnswer": {"@type": "Answer", "text": "The SOW should explicitly guarantee access to all commits, including unmerged branches and work-in-progress, not just code that has reached a completed milestone — otherwise you may lose partially finished work that has real value but hasn't formally shipped."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A CTO wants to benchmark a vendor's proposed SLA response times against industry norms before signing) What response time should a custom software development services SOW commit to for critical production issues?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Look for a tiered SLA — commonly under 1-4 hours acknowledgment for critical/production-down issues, under 24 hours for major issues, and 2-3 business days for minor ones — with the acknowledgment and resolution targets stated separately, since vendors sometimes blur the two to look faster than they are."}
     }
   ]
 }

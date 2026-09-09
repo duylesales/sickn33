@@ -39,6 +39,21 @@ Een nuttige vuistregel: als een functie gedeelde staat tussen meer dan één geb
 
 LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en ons team in Amsterdam werkt met oprichters aan precies deze overdracht — het punt waarop door AI gegenereerde code een tweede, in engineering getraind paar ogen nodig heeft voordat het echte verkeer ontmoet. U kunt zien hoe die review past in een lancering via ons [stap-voor-stap-proces](https://launchstudio.eu/nl/#process), en Manifera's eigen [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) laat dezelfde discipline zien toegepast op enterprise-schaal.
 
+## Vijf Signalen Dat een Feature Technisch Inzicht Vereist, Niet Slechts een Prompt
+
+Niet elke functionaliteit kan worden opgelost door simpelweg te blijven prompten tegen een AI-tool. Herken de vijf signalen waarbij u het prompten moet staken en een ervaren software-engineer moet raadplegen:
+
+**1. De Functionaliteit Behandelt Financiële Transacties of Facturatie.** Wanneer code geld afschrijft, btw berekent of commissies verdeelt, leidt een subtiele afrondingsfout of ontbrekende databasetransactie direct tot administratieve en fiscale claims.
+
+**2. De Functionaliteit Vereist Asynchrone Wachtrijen en Herpogingen.** Als een taak langer dan tien seconden duurt (zoals bulk-imports, videoverwerking of complexe RAG-analyses), kan een HTTP-aanroep het niet synchroon afhandelen. Dit vereist een robuuste achtergrondinfrastructuur (zoals Redis/BullMQ).
+
+**3. Er Is Sprake van Strikte Gegevensscheiding Tussen Concurrerende Bedrijven.** Als Klant A en Klant B elkaars data onder geen beding mogen zien, mag de autorisatie niet rusten op aannames in de frontend, maar moet deze wiskundig afgedwongen worden op databaseniveau.
+
+**4. De AI-Tool Draait Na Drie Pogingen Nog Steeds in Cirkels.** Wanneer de tool bij het oplossen van bug A telkens bug B herintroduceert, heeft het model de complexiteit van de interacties niet meer in zijn contextvenster en is menselijk architectonisch inzicht vereist.
+
+**5. U Moet Voldoen aan Formele Regelgeving (AVG, NIS2, ISO 27001).** Compliance vraagt om deterministische garanties en documentatie, niet om probabilistische gissingen van een taalmodel.
+
+Tijdig escaleren naar een menselijke expert bespaart u dagen aan frustratie en voorkomt kostbare constructiefouten in uw kernproduct.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de dienst die niemand dubbel had mogen boeken
@@ -85,11 +100,46 @@ De Europese hub van LaunchStudio bevindt zich in Amsterdam, naast engineeringcen
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is AI-generated code the same as engineered code?", "acceptedAnswer": { "@type": "Answer", "text": "Not automatically. AI-generated code is often syntactically correct for the scenario it was prompted with, but engineering also covers concurrency, edge cases, and trade-offs that need a review pass." } },
-    { "@type": "Question", "name": "What kinds of features need a human review pass most urgently?", "acceptedAnswer": { "@type": "Answer", "text": "Anything involving shared or limited state, such as bookings, shifts, inventory, or payments, since single-user testing won't surface concurrency bugs." } },
-    { "@type": "Question", "name": "Does LaunchStudio review AI-generated code from tools like Cursor, Lovable, or Bolt?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LaunchStudio's team, backed by Manifera's 11+ years of production engineering experience, audits AI-generated codebases from all three tools for concurrency, security, and architecture gaps." } },
-    { "@type": "Question", "name": "How do I know if my app has a race condition like RoosterKoppel's?", "acceptedAnswer": { "@type": "Answer", "text": "A common tell is a feature that works fine tested alone but produces inconsistent results under simultaneous use, like duplicate claims on one shared resource." } },
-    { "@type": "Question", "name": "Where is LaunchStudio's engineering team based?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio's European hub is in Amsterdam, alongside engineering centers in Singapore and Ho Chi Minh City." } }
+    {
+      "@type": "Question",
+      "name": "Is door AI gegenereerde code hetzelfde als geëngineerde code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet automatisch. Door AI gegenereerde code is vaak syntactisch correct en functioneel deugdelijk voor het scenario waarvoor werd geprompt, maar engineering omvat ook gelijktijdigheid, randgevallen en afwegingsbeslissingen die een reviewronde vereisen die een prompt alleen niet uitvoert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke soorten functies hebben het dringendst een menselijke reviewronde nodig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alles wat gedeelde of beperkte staat betreft — boekingen, diensten, voorraad, betalingen, of elke resource die meerdere gebruikers tegelijk kunnen claimen — omdat dit precies de scenario's zijn die testen met één gebruiker niet aan het licht brengt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Beoordeelt LaunchStudio door AI gegenereerde code van tools zoals Cursor, Lovable of Bolt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Het team van LaunchStudio, ondersteund door Manifera's meer dan 11 jaar ervaring in productie-engineering, audit regelmatig door AI gegenereerde codebases van alle drie de tools op de gaten in gelijktijdigheid, beveiliging en architectuur die niet naar voren komen bij een snelle handmatige test."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of mijn app een race condition heeft zoals die van RoosterKoppel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een veelvoorkomend signaal is een functie die correct werkt wanneer die alleen wordt getest, maar inconsistente resultaten oplevert bij gelijktijdig gebruik — twee boekingen voor één tijdslot, twee opnames van hetzelfde saldo, of dubbele claims op een gedeelde resource."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is het engineeringteam van LaunchStudio gevestigd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De Europese hub van LaunchStudio bevindt zich in Amsterdam, naast engineeringcentra in Singapore en Ho Chi Minh-stad, wat oprichters dekking geeft voor reviews en fixes over meerdere tijdzones heen."
+      }
+    }
   ]
 }
 </script>

@@ -74,6 +74,12 @@ Request a proposal built around the specific scope of your project, sized to slo
 }
 </script>
 
+## Time-Budgeting the Funnel: What Each Stage Actually Costs You in Hours
+
+Put real hours against the three-stage funnel before committing to it, because founders consistently underestimate this. Sourcing eight to twelve vendors — initial research, outreach, and a light portfolio screen — realistically costs 4-6 hours spread across a week. The proposal stage with three to five vendors is where time compounds fast: budget 2-3 hours per vendor for a scoping call plus proposal review, or 8-15 hours total, typically across two weeks once you account for scheduling friction across different time zones and calendars.
+
+Deep diligence on two to three finalists is the heaviest stage per vendor — budget 4-6 hours each for reference calls (30-45 minutes per reference, typically two to three references), a technical Q&A session with named engineers, and scorecard documentation, or 8-18 hours total. Across the full funnel, a disciplined founder should expect to invest roughly 20-40 hours of genuine evaluation time over four to six weeks for a significant, multi-month engagement decision. If your actual search is running past six weeks with no finalist emerging, that is usually a shortlist-sizing problem, not a market-thinness problem — the fix is narrowing the field, not extending the search timeline further.
+
 ## Frequently Asked Questions
 
 ### How many vendors should I get proposals from?
@@ -90,6 +96,18 @@ Deliberately cut the field before diligence quality degrades further. Identify t
 
 ### Does shortlist size depend on the size of the project?
 Yes. A smaller, lower-stakes project can reasonably be decided from a lighter shortlist of two to three vendors, while a larger, longer-term commitment justifies the full three-stage funnel down to two or three finalists receiving genuinely deep diligence.
+
+### (Scenario: A founder's vendor search has stretched past six weeks with no finalist chosen) What does it mean if my vendor search is dragging past six weeks with no decision?
+It usually signals a shortlist-sizing problem rather than a thin market — most likely too many vendors still active in parallel, diluting diligence quality at every stage. Cut the field to two or three genuine finalists rather than extending the search timeline further.
+
+### (Scenario: A founder wants to know how many hours to actually block on their calendar for vendor evaluation) How many hours should I budget for a full vendor evaluation process as a founder?
+Plan for roughly 20-40 hours of genuine evaluation time spread across four to six weeks for a significant, multi-month engagement — split roughly between light sourcing, proposal review and scoping calls, and deep diligence on your final two or three candidates.
+
+### (Scenario: A founder is deciding between running the shortlist process solo or looping in a co-founder or advisor) Should I run vendor shortlist evaluation alone or involve someone else on my team?
+Involve at least one other person for the deep diligence stage specifically, even informally — a second set of ears on reference calls and technical Q&A sessions catches signals a single evaluator under time pressure often misses, without meaningfully slowing the process down.
+
+### (Scenario: A founder found one vendor they love after a single strong first call and wants to skip the rest of the funnel) Is it ever safe to skip the shortlist funnel entirely after one great first call?
+Rarely, and generally not advisable for a significant engagement — a single vendor evaluated in isolation, however strong the first impression, is being judged against your expectations rather than a real market comparison, which is a weaker basis for a decision this consequential.
 
 <script type="application/ld+json">
 {
@@ -134,6 +152,38 @@ Yes. A smaller, lower-stakes project can reasonably be decided from a lighter sh
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. A smaller, lower-stakes project can reasonably be decided from a lighter shortlist of two to three vendors, while a larger, longer-term commitment justifies the full three-stage funnel down to two or three finalists receiving genuinely deep diligence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A founder's vendor search has stretched past six weeks with no finalist chosen) What does it mean if my vendor search is dragging past six weeks with no decision?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It usually signals a shortlist-sizing problem rather than a thin market — most likely too many vendors still active in parallel, diluting diligence quality at every stage. Cut the field to two or three genuine finalists rather than extending the search timeline further."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A founder wants to know how many hours to actually block on their calendar for vendor evaluation) How many hours should I budget for a full vendor evaluation process as a founder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plan for roughly 20-40 hours of genuine evaluation time spread across four to six weeks for a significant, multi-month engagement — split roughly between light sourcing, proposal review and scoping calls, and deep diligence on your final two or three candidates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A founder is deciding between running the shortlist process solo or looping in a co-founder or advisor) Should I run vendor shortlist evaluation alone or involve someone else on my team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Involve at least one other person for the deep diligence stage specifically, even informally — a second set of ears on reference calls and technical Q&A sessions catches signals a single evaluator under time pressure often misses, without meaningfully slowing the process down."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A founder found one vendor they love after a single strong first call and wants to skip the rest of the funnel) Is it ever safe to skip the shortlist funnel entirely after one great first call?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rarely, and generally not advisable for a significant engagement — a single vendor evaluated in isolation, however strong the first impression, is being judged against your expectations rather than a real market comparison, which is a weaker basis for a decision this consequential."
       }
     }
   ]

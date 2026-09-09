@@ -61,8 +61,7 @@ Geen van deze drie vragen test op codeervaardigheid, en dat is opzettelijk — c
 
 [Vertel ons wat u heeft gebouwd en waar u zich zorgen over maakt](https://launchstudio.eu/nl/#contact) — hetzelfde scopinggesprek dat deze drie vragen bedoeld zijn om af te korten.
 
-## Real example
-
+## Echt voorbeeld
 ### Een Technische Solo-Oprichter in de Praktijk: Het Interview Dat Bijna Verkeerd Ging
 
 Merijn Aaldering, een voormalig recruiter en nu indie hacker in Hattem, bouwde HireGrip, een AI-ondersteunde tool voor kandidaatscreening voor kleine bureaus, met Cursor en veel AI-gegenereerde scaffolding rond de delen die hij geen tijd had om handmatig te schrijven. Merijn kon code goed genoeg lezen om zich te redden, maar niet goed genoeg om zijn eigen oordeel over beveiliging te vertrouwen, dus plaatste hij een freelance vacature om iemand te vinden die het afmaken van de hardening kon voltooien voordat zijn eerste betalende bureausklant live ging.

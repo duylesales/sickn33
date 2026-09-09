@@ -56,6 +56,19 @@ Manifera's DevOps support engagements define response and resolution time separa
 
 If you're comparing DevOps vendor proposals and want to see real incident response performance data rather than a contractual target on a slide, ask Manifera's team for reference calls with clients on a comparable support plan before you sign.
 
+## Six Phrases Worth Redlining Before You Sign
+
+Certain phrases recur across DevOps vendor SLA templates specifically because they preserve wiggle room the sales conversation never surfaces. Flag these on sight:
+
+1. **"Response" with no defined meaning** — insist on "response means an assigned engineer actively investigating, confirmed by a named individual," not just "acknowledged."
+2. **"Best efforts" attached to resolution time** — this phrase converts a resolution commitment into a non-binding aspiration; resolution targets need a hard number, or a penalty clause tied to missing it, not "best efforts."
+3. **"Severity determined by [Vendor]"** with no objective criteria attached — replace with named, measurable thresholds (percentage of users affected, revenue-generating systems down) and a disagreement-escalation path.
+4. **"Business hours" left undefined** — specify time zone and days explicitly; "business hours" read in the vendor's time zone can mean your 2am incident waits eight hours for a response.
+5. **Penalty caps below roughly 10-15% of monthly fees** — a cap much lower than this rarely creates real financial pressure on a vendor relative to the cost of adequate on-call staffing.
+6. **"Historical performance available upon request"** with no data attached to the proposal — if it's genuinely available, ask for it before signing, not after; a vendor confident in their numbers includes them unprompted.
+
+Redlining these six phrases before signature costs you one negotiation round. Discovering them during a live outage costs considerably more.
+
 ## Frequently Asked Questions
 
 ### What's the difference between response time and resolution time in an incident SLA?
@@ -77,6 +90,22 @@ They're usually enforceable but not always meaningful, since many penalty clause
 ### Should I track incident response times myself, separately from the vendor's own reporting?
 
 Yes. Maintaining your own log of report time, actual engagement time, and resolution time from day one gives you objective grounds to raise concerns early and essential documentation if you ever need to invoke a penalty clause or renegotiate at contract renewal.
+
+### (Scenario: A vendor's draft SLA states resolution targets will be met using "best efforts" rather than a hard commitment) Why does a "best efforts" qualifier on a resolution time target matter so much in an SLA?
+
+Because it converts what reads like a commitment into a non-binding aspiration with no enforceable consequence if missed. A resolution time worth including in a contract at all needs either a hard number tied to a penalty clause, or it should be labeled honestly as a target rather than dressed up as an SLA commitment.
+
+### (Scenario: An IT Manager's company operates across European time zones but the vendor's SLA defines "business hours" without specifying which time zone) What happens if a vendor's SLA references "business hours" without specifying a time zone?
+
+The vendor's own time zone typically governs by default, which can mean a genuine after-hours incident for your team waits far longer than expected if the vendor operates on a different clock. Specify the time zone and exact hours explicitly in the contract rather than assuming a shared understanding of "business hours."
+
+### (Scenario: A vendor's proposed penalty clause caps service credits at 3% of the monthly contract value) Is a penalty clause capped at a low percentage of monthly fees actually worth negotiating higher?
+
+Yes. A cap around 3% of monthly fees rarely creates meaningful financial pressure relative to the cost of adequate on-call staffing, so the vendor has little incentive beyond reputation to invest in hitting the SLA reliably. Push for a cap in the 10-15% range or higher for a Sev-1 miss specifically, since that's the incident category where the gap matters most.
+
+### (Scenario: A vendor's sales rep says historical performance data is "available upon request" but nothing is included in the written proposal) What does it mean if a vendor says historical SLA performance data is "available upon request" but doesn't include it in the proposal?
+
+It's worth testing directly rather than accepting at face value — ask for it before signing, not after. A vendor genuinely confident in their numbers typically includes them proactively as a competitive advantage; a vendor who stalls or never quite produces the data after being asked is telling you the numbers likely don't support the pitch.
 
 <script type="application/ld+json">
 {
@@ -107,6 +136,26 @@ Yes. Maintaining your own log of report time, actual engagement time, and resolu
       "@type": "Question",
       "name": "Should I track incident response times myself, separately from the vendor's own reporting?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes. A self-maintained log of report time, engagement time, and resolution time gives you objective grounds to raise concerns early and documentation for invoking a penalty clause or renegotiating at renewal." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does a \"best efforts\" qualifier on a resolution time target matter so much in an SLA?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It converts what reads like a commitment into a non-binding aspiration with no enforceable consequence if missed. A resolution time worth including needs a hard number tied to a penalty clause, or it should be labeled honestly as a target." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if a vendor's SLA references \"business hours\" without specifying a time zone?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The vendor's own time zone typically governs by default, which can mean an after-hours incident for your team waits far longer than expected. Specify the time zone and exact hours explicitly rather than assuming shared understanding." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a penalty clause capped at a low percentage of monthly fees actually worth negotiating higher?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. A cap around 3% of monthly fees rarely creates meaningful financial pressure relative to on-call staffing costs. Push for a cap in the 10-15% range or higher for a Sev-1 miss specifically." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does it mean if a vendor says historical SLA performance data is \"available upon request\" but doesn't include it in the proposal?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Test it directly before signing. A vendor confident in their numbers typically includes them proactively; one who stalls or never quite produces the data after being asked is telling you the numbers likely don't support the pitch." }
     }
   ]
 }

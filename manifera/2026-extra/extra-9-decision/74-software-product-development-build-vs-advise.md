@@ -82,6 +82,12 @@ Bring this comparison into your final vendor conversations directly. Ask each fi
 
 See how we helped early-stage founders in similar positions navigate this exact build-versus-advise decision in our portfolio, and let's figure out together which model fits where your product actually is today.
 
+## Five Signals That Reveal Which Model a Vendor Actually Practices
+
+Sales conversations blur the line between these two models more than proposals do, so watch for concrete tells rather than self-description. First, ask how many questions their team asked about your specification during the sales process itself — a pure execution vendor typically asks fewer than five clarifying questions before quoting, while a genuine build-and-advise partner usually asks fifteen or more, including several that challenge an assumption rather than just clarify a detail. Second, check whether their proposal includes a named discovery deliverable with its own price line, versus discovery folded invisibly into "Phase 1 development." Third, ask who on their team would attend a product strategy conversation — a pure execution vendor sends a project manager; an advisory partner sends someone with product or domain background who can push back credibly.
+
+Fourth, request to see a discovery report template from a past engagement; a vendor that genuinely practices build-and-advise can produce one immediately, unprompted. Fifth, watch the pricing structure itself: advisory work billed at the same rate as execution work is a red flag, since real strategic input from senior people typically costs more per hour than implementation work, and a vendor blending the two into one flat rate is usually underinvesting in one of them.
+
 ## Frequently Asked Questions
 
 ### What is the difference between a pure execution software vendor and a build-and-advise partner?
@@ -98,6 +104,18 @@ Yes, and it often should. Many engagements start advisory-heavy during the highe
 
 ### How do I make sure I'm paying for the right model in my contract?
 State the model explicitly in the statement of work. If you want pure execution, specify that the vendor should flag implementation issues only, not challenge product decisions. If you want advisory input, define a discovery phase with its own deliverable and cost before committing to the full build budget.
+
+### (Scenario: realizing mid-build that the original spec has flaws) Can I renegotiate from pure execution to build-and-advise mid-contract?
+Yes, and it's a common and reasonable request — most execution-focused vendors can pause active sprints to run a short discovery review on a specific problem area, priced as a discrete add-on rather than a full contract renegotiation. Raise it as soon as you notice the gap, since the cost of pausing to fix a scoping issue grows the more sprints get built on top of the flawed assumption.
+
+### (Scenario: budgeting an MVP and unsure how much to allocate to discovery) What percentage of total MVP budget should discovery reasonably represent?
+For a build-and-advise engagement, structured discovery typically represents 8-15% of total MVP budget, corresponding to one to three weeks of discovery work relative to a typical three-to-five month MVP build. A discovery quote exceeding roughly 20% of total budget without a correspondingly complex domain is worth questioning.
+
+### (Scenario: deciding internally whether the team needs advisory input at all) How do I know if my internal team is confident enough in the spec to skip advisory input?
+Run the validated, assumed, or guessed gut-check formally with your actual founding or product team, not just your own opinion. If your co-founders or product lead disagree with each other on more than one rating, that disagreement itself is a signal you need outside advisory input regardless of any individual's confidence.
+
+### (Scenario: a vendor claims to offer both execution and advisory services equally well) Can one vendor genuinely do both models well, or should I use separate vendors?
+A single vendor can do both well if the two functions are staffed and priced distinctly — a discovery-focused lead engaging on strategy, with a separate execution team handling build — rather than the same generalist trying to do both simultaneously. Manifera's Amsterdam-led discovery paired with Ho Chi Minh City execution keeps both functions genuinely resourced within one engagement.
 
 <script type="application/ld+json">
 {
@@ -150,6 +168,26 @@ State the model explicitly in the statement of work. If you want pure execution,
       "@type": "Question",
       "name": "How do I make sure I'm paying for the right model in my contract?",
       "acceptedAnswer": {"@type": "Answer", "text": "State the model explicitly in the statement of work, and if you want advisory input, define a discovery phase with its own deliverable and cost before committing to the full build budget."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can I renegotiate from pure execution to build-and-advise mid-contract?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes — most execution-focused vendors can pause active sprints to run a short discovery review on a specific problem area, priced as a discrete add-on rather than a full contract renegotiation. Raise it as soon as you notice the gap, since the cost grows the more sprints get built on the flawed assumption."}
+    },
+    {
+      "@type": "Question",
+      "name": "What percentage of total MVP budget should discovery reasonably represent?",
+      "acceptedAnswer": {"@type": "Answer", "text": "For a build-and-advise engagement, structured discovery typically represents 8-15% of total MVP budget, corresponding to one to three weeks of discovery relative to a typical three-to-five month MVP build."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if my internal team is confident enough in the spec to skip advisory input?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Run the validated, assumed, or guessed gut-check formally with your actual founding or product team. If your co-founders or product lead disagree with each other on more than one rating, that's a signal you need outside advisory input."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can one vendor genuinely do both models well, or should I use separate vendors?",
+      "acceptedAnswer": {"@type": "Answer", "text": "A single vendor can do both well if the two functions are staffed and priced distinctly, with a discovery-focused lead engaging on strategy and a separate execution team handling build, rather than one generalist doing both."}
     }
   ]
 }

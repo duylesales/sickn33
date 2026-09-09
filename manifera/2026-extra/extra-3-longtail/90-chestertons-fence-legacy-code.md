@@ -79,6 +79,10 @@ The entire failure pattern this article describes depends on one specific condit
 
 Before removing any legacy code that looks confusing or unnecessary, invest the time to check version control history and issue trackers for the reason it was originally added — the investigation is cheaper than reintroducing a previously fixed problem. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a disciplined approach to legacy code cleanup.
 
+## Red Flags That a "Confusing" Function Is Actually Load-Bearing
+
+Not every unexplained line of code carries equal risk, and a custom development company doing legacy triage should weight investigation effort accordingly. Five signals correlate strongly with a piece of code being a disguised bug fix rather than genuine cruft: (1) A conditional that checks a narrow, oddly specific value — a particular currency code, a specific date range, a single customer ID — rather than a general case; specificity like this is almost never arbitrary. (2) A `git blame` showing the line was added in a small, standalone commit rather than as part of a larger feature commit, since isolated commits are disproportionately likely to be targeted fixes. (3) A commit message using words like "fix," "workaround," "edge case," or "prevent," even without further detail — these are the strongest textual signal available and are worth a full-text search across the repository's commit history before any related removal. (4) Code that duplicates logic found elsewhere but with one additional check the other copy lacks — this is a classic signature of a fix applied to one code path but never backported to its sibling. (5) Any validation or check placed immediately before an external API call, a payment operation, or a data write, since defensive checks cluster precisely at the boundaries where past incidents are most likely to have occurred. A custom software solution with any of these five markers should never be removed on a single reviewer's judgment alone.
+
 ## Frequently Asked Questions
 
 ### (Scenario: engineer facing confusing legacy code during cleanup) How do I decide whether a confusing piece of legacy code is safe to remove?
@@ -101,6 +105,22 @@ Remove it cautiously with strong test coverage and active monitoring afterward, 
 
 Budget real investigation time into the modernization scope from the start, and prioritize documenting institutional knowledge from anyone still available who worked on the original system before that knowledge is lost entirely.
 
+### (Scenario: product owner deciding whether to fund investigation time in a sprint) How much time should a team realistically budget for investigating a single confusing legacy function before deciding to remove it?
+
+Typically 30 minutes to two hours per function — a version control history check and an issue tracker search usually surfaces the reason quickly if one exists, and if nothing turns up after that window, escalate to asking colleagues rather than open-ended digging.
+
+### (Scenario: CTO evaluating a custom development company's legacy modernization proposal) What should I ask a custom development company to confirm they actually practice this discipline rather than just cleaning code quickly?
+
+Ask them to walk through their actual code review checklist for legacy removals — a vendor with a genuine practice will describe a specific required step (history check, issue tracker search) rather than a general assurance that their engineers are "careful."
+
+### (Scenario: engineer working in a codebase with no commit history or documentation at all) What if the legacy custom software solution has no version control history at all, just a single import of the existing code?
+
+Treat every non-obvious conditional as a potential fence by default, add monitoring before any removal, and rely on institutional knowledge and staged rollouts to substitute for the missing historical record investigation would normally provide.
+
+### (Scenario: founder inheriting a software product from an acquired company) Does Chesterton's Fence apply differently to a software product acquired through M&A versus one built in-house?
+
+The risk is higher, not lower — an acquired software product's original engineers are rarely still reachable, so investigation should front-load a structured interview with any available original team members before they disperse, since that window closes permanently once they're gone.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -110,7 +130,11 @@ Budget real investigation time into the modernization scope from the start, and 
     { "@type": "Question", "name": "(Scenario: team lead worried this means never cleaning up old code) Does this mean legacy code should never be removed or simplified?", "acceptedAnswer": { "@type": "Answer", "text": "No — Chesterton's Fence argues for investigating before removing, not against removal itself once the reasoning is understood." } },
     { "@type": "Question", "name": "(Scenario: engineering manager trying to prevent this mistake systematically) How can a team build this discipline into its standard process, rather than relying on individual engineers remembering to check?", "acceptedAnswer": { "@type": "Answer", "text": "Add a documented investigation step to the code review checklist for removal of unfamiliar legacy code." } },
     { "@type": "Question", "name": "(Scenario: engineer unable to find any explanation for confusing code) What should I do if I genuinely can't find any explanation for why confusing code exists?", "acceptedAnswer": { "@type": "Answer", "text": "Remove it cautiously with strong test coverage and active monitoring afterward, rather than leaving it untouched indefinitely." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to reduce this risk during a legacy system inheritance) How does this apply specifically when inheriting an entire unfamiliar legacy system from a previous team or vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Budget real investigation time into the modernization scope, and prioritize documenting institutional knowledge before it's lost." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to reduce this risk during a legacy system inheritance) How does this apply specifically when inheriting an entire unfamiliar legacy system from a previous team or vendor?", "acceptedAnswer": { "@type": "Answer", "text": "Budget real investigation time into the modernization scope, and prioritize documenting institutional knowledge before it's lost." } },
+    { "@type": "Question", "name": "(Scenario: product owner deciding whether to fund investigation time in a sprint) How much time should a team realistically budget for investigating a single confusing legacy function before deciding to remove it?", "acceptedAnswer": { "@type": "Answer", "text": "Typically 30 minutes to two hours per function — a history and issue tracker check usually surfaces the reason quickly, or signals it's time to ask colleagues." } },
+    { "@type": "Question", "name": "(Scenario: CTO evaluating a custom development company's legacy modernization proposal) What should I ask a custom development company to confirm they actually practice this discipline rather than just cleaning code quickly?", "acceptedAnswer": { "@type": "Answer", "text": "Ask them to walk through their actual code review checklist for legacy removals — a genuine practice includes a specific required step, not just a general assurance of carefulness." } },
+    { "@type": "Question", "name": "(Scenario: engineer working in a codebase with no commit history or documentation at all) What if the legacy custom software solution has no version control history at all, just a single import of the existing code?", "acceptedAnswer": { "@type": "Answer", "text": "Treat every non-obvious conditional as a potential fence by default, add monitoring before removal, and rely on institutional knowledge and staged rollouts instead of missing history." } },
+    { "@type": "Question", "name": "(Scenario: founder inheriting a software product from an acquired company) Does Chesterton's Fence apply differently to a software product acquired through M&A versus one built in-house?", "acceptedAnswer": { "@type": "Answer", "text": "The risk is higher — front-load a structured interview with any available original team members before that window closes permanently." } }
   ]
 }
 </script>

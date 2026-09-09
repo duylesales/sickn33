@@ -90,6 +90,21 @@ Wanneer LaunchStudio een AI-prototype klaarmaakt voor productie, volgt het proce
 4. **Het Oneindige Loop-Risico:** Onvolledige dependency-arrays in `useEffect` hooks die ongemerkt duizenden onnodige API-aanroepen triggeren.
 5. **Kopieer-Plak Configuratie:** Onveilige CORS- of cookie-instellingen die letterlijk zijn overgenomen uit beginnershandleidingen.
 
+### Professionele Engineeringdiscipline voor AI-Gegenereerde Codebases
+
+De overgang van experimenteel programmeren met AI naar duurzame enterprise software vereist gevestigde methodologieën die LaunchStudio standaard toepast:
+1. **Modulaire Domeinarchitectuur:** Wij herstructureren monolithische spaghetti-bestanden naar duidelijke domeinlagen (Domain-Driven Design), waarbij bedrijfslogica, data-toegang en AI-orkestratie strikt gescheiden blijven en onafhankelijk kunnen worden getest.
+2. **Geautomatiseerde Integratietests:** Waar AI-coderingstools vaak stoppen bij oppervlakkige unit tests met fictieve mocks, bouwen onze engineers end-to-end integratietests met echte databases en stub-services om reële gebruikersstromen te verifiëren.
+3. **Strikte Type-Safety en Statische Analyse:** We dwingen 100% type-dekking af met TypeScript en geavanceerde linters (zoals ESLint en SonarQube) om subtiele type-coercion bugs en ongedefinieerde variabelen vroegtijdig te elimineren.
+4. **Database Indexering en Query-Optimalisatie:** Veel door AI gegenereerde queries voeren volledige table-scans uit. Wij analyseren execution plans, voegen samengestelde B-tree en GIN-indexen toe en optimaliseren databank-joins voor consistente milliseconde-prestaties onder piekdruk.
+5. **Gedocumenteerde Architectuurbesluiten (ADR's):** Elke fundamentele ontwerpkeuze wordt vastgelegd in gestructureerde Architecture Decision Records in uw repository, zodat toekomstige engineers precies begrijpen waarom specifieke componenten op deze wijze zijn opgebouwd.
+
+### Kwaliteitsstandaarden voor Industriële AI-Software
+
+Het overbruggen van experimentele code naar betrouwbare enterprise-systemen vereist structurele methoden:
+1. **Strikte CI/CD Kwaliteitspoorten:** Builds worden automatisch tegengehouden zodra testdekking daalt of statische code-analyse nieuwe waarschuwingen genereert.
+2. **Gedocumenteerde Architectuurbesluiten (ADR's):** Belangrijke ontwerpkeuzes worden transparant vastgelegd om toekomstig onderhoud eenvoudig en voorspelbaar te houden.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De Backend Developer Die Een Backend Nodig Had

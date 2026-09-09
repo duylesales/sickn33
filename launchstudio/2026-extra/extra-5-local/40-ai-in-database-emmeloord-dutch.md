@@ -90,20 +90,53 @@ Manifera's engineeringteam van meer dan 120 engineers, gecoördineerd via ons ka
 ### Hoeveel kost een traject voor het verharden van een database doorgaans?
 De meeste audits van databaseschema's en herstelwerkzaamheden vallen binnen LaunchStudio's standaardbereik van € 800 tot € 7.500, afgerond in één tot drie weken afhankelijk van de complexiteit van het schema.
 
-### Moet ik row-level security of controles op applicatieniveau gebruiken voor autorisatie?
-Doorgaans beide. RLS werkt als een niet-onderhandelbare basis afgedwongen op de databaselaag ongeacht welk codepad de data raakt, terwijl logica op applicatieniveau meer genuanceerde, contextafhankelijke zakelijke regels daarbovenop afhandelt.
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Kan ik mijn eigen databaseschema zelf op deze problemen controleren?", "acceptedAnswer": { "@type": "Answer", "text": "Technische oprichters kunnen controleren op ontbrekende indexen, opeenvolgende ID's en het ontbreken van migratiebestanden." } },
-    { "@type": "Question", "name": "Wat bedoelde Herre Roelevink met dat architectuur en beveiliging de echte uitdaging zijn?", "acceptedAnswer": { "@type": "Answer", "text": "Ideeën in software omzetten is opgelost door AI; de echte uitdaging is de architectuur en beveiliging voor productierijpheid." } },
-    { "@type": "Question", "name": "Werkt LaunchStudio alleen met agrarische tech-oprichters in Emmeloord?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, LaunchStudio bedient oprichters in alle sectoren in Nederland en de Benelux." } },
-    { "@type": "Question", "name": "Wie voert de audit van het databaseschema uit?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineeringteam van 120+ engineers met 160+ enterprise-projecten." } },
-    { "@type": "Question", "name": "Hoeveel kost een traject voor het verharden van een database doorgaans?", "acceptedAnswer": { "@type": "Answer", "text": "De meeste audits en herstelwerkzaamheden vallen binnen € 800 tot € 7.500, afgerond in 1 tot 3 weken." } },
-    { "@type": "Question", "name": "Moet ik row-level security of controles op applicatieniveau gebruiken voor autorisatie?", "acceptedAnswer": { "@type": "Answer", "text": "Doorgaans beide. RLS biedt een basis op databaseniveau, terwijl applicatielogica meer genuanceerde zakelijke regels afhandelt." } }
+    {
+      "@type": "Question",
+      "name": "Kan ik mijn eigen databaseschema zelf op deze problemen controleren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technische oprichters kunnen controleren op ontbrekende indexen, opeenvolgende ID's en het ontbreken van migratiebestanden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat bedoelde Herre Roelevink met dat architectuur en beveiliging de echte uitdaging zijn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ideeën in software omzetten is opgelost door AI; de echte uitdaging is de architectuur en beveiliging voor productierijpheid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werkt LaunchStudio alleen met agrarische tech-oprichters in Emmeloord?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, LaunchStudio bedient oprichters in alle sectoren in Nederland en de Benelux."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie voert de audit van het databaseschema uit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manifera's engineeringteam van 120+ engineers met 160+ enterprise-projecten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel kost een traject voor het verharden van een database doorgaans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste audits en herstelwerkzaamheden vallen binnen € 800 tot € 7.500, afgerond in 1 tot 3 weken."
+      }
+    }
   ]
 }
 </script>

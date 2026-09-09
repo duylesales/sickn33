@@ -60,6 +60,12 @@ Choose a single vendor when your architecture is tightly coupled and your team c
 
 Manifera works both models: as a sole delivery partner running full-stack ownership, or as a domain-scoped [dedicated team](https://www.manifera.com/services/dedicated-teams/) operating cleanly alongside an existing internal or external team. If you are weighing which structure fits your architecture, our [offshore software development](https://www.manifera.com/services/offshore-software-development/) team can walk through where your system boundaries actually sit.
 
+## Calculating Your Actual Concentration Exposure
+
+Most IT managers stop the risk-diversification analysis at "the vendor could disappear" without pricing what a single-vendor outage actually costs. Run this instead: multiply your average weekly revenue tied to a vendor-maintained system by the realistic replacement ramp time — 3-4 weeks for a modular system with clean documentation, 10-14 weeks for an undocumented monolith — and you get concentration exposure in real terms. For a company doing €2M in annual revenue through a vendor-maintained system, a 10-week outage risk at even a conservative 15% revenue impact prices concentration risk above €55,000, which is the figure to weigh against the 10-20% coordination tax a second vendor adds to annual delivery spend.
+
+Vendor consolidation strategies frequently skip this comparison and default to whichever option was cheaper last quarter, rather than modeling the tail risk. Recalculate the exposure figure at every contract renewal, not just when a vendor scare forces the conversation, and require any vendor holding sole custody of a revenue-critical system to demonstrate bench depth — at least three engineers who could pick up the account within two weeks of ramp — as a renewal condition rather than a nice-to-have.
+
 ## Frequently Asked Questions
 
 ### Is a multi-vendor strategy always safer than a single-vendor one?
@@ -76,6 +82,18 @@ The most common mistake is splitting vendors along an organizational line rather
 
 ### How much extra does coordinating two vendors typically cost?
 On tightly coupled systems, expect 10-20% more time spent on cross-team alignment and integration debugging compared to a single vendor working the same scope. On cleanly separated systems with a well-defined API boundary, this overhead can drop close to zero.
+
+### (Scenario: evaluating whether to consolidate an entire stack with one vendor) How do I verify a vendor's bench depth before consolidating my whole stack with them?
+Ask for named backup engineers who have actually touched your codebase in the past quarter, not just a headcount figure, and request evidence of at least one internal rotation or handoff on your account. A vendor that cannot name a second engineer familiar with your systems has effectively no bench, regardless of company size.
+
+### (Scenario: two vendors left sharing one monolith after an acquisition) We inherited two vendors on the same monolith after an acquisition — how do we fix it?
+Don't try to run both indefinitely on the shared codebase; pick one to own the monolith outright within one quarter and reassign the other to a cleanly bounded satellite system or transition them out. A shared monolith with two vendors compounds the coordination tax without any risk-diversification benefit, since a failure on either side can still break the whole system.
+
+### (Scenario: procurement wants a second vendor purely for negotiating leverage) Is it worth adding a second vendor purely to create pricing leverage on the first?
+Only if you also give the second vendor a real, separately-owned piece of the system. Otherwise you pay the full coordination tax for a negotiating tactic that a documented benchmark and a competitive renewal clause could achieve for free.
+
+### (Scenario: presenting a vendor-count decision to the board) What should I show the board when justifying a single-vendor versus multi-vendor decision?
+Present the concentration-exposure calculation in euros alongside the coordination-tax percentage for the alternative, not a qualitative risk narrative — boards respond to comparable numbers, and a documented exposure figure also satisfies the resilience-assessment expectation regulators like DORA and NIS2 increasingly look for.
 
 <script type="application/ld+json">
 {
@@ -131,6 +149,38 @@ On tightly coupled systems, expect 10-20% more time spent on cross-team alignmen
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "On tightly coupled systems, expect 10-20% more time spent on cross-team alignment and integration debugging compared to a single vendor working the same scope. On cleanly separated systems with a well-defined API boundary, this overhead can drop close to zero."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify a vendor's bench depth before consolidating my whole stack with them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask for named backup engineers who have actually touched your codebase in the past quarter, not just a headcount figure, and request evidence of at least one internal rotation or handoff on your account. A vendor that cannot name a second engineer familiar with your systems has effectively no bench, regardless of company size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "We inherited two vendors on the same monolith after an acquisition — how do we fix it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Don't try to run both indefinitely on the shared codebase; pick one to own the monolith outright within one quarter and reassign the other to a cleanly bounded satellite system or transition them out. A shared monolith with two vendors compounds the coordination tax without any risk-diversification benefit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it worth adding a second vendor purely to create pricing leverage on the first?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if you also give the second vendor a real, separately-owned piece of the system. Otherwise you pay the full coordination tax for a negotiating tactic that a documented benchmark and a competitive renewal clause could achieve for free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I show the board when justifying a single-vendor versus multi-vendor decision?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Present the concentration-exposure calculation in euros alongside the coordination-tax percentage for the alternative, not a qualitative risk narrative — boards respond to comparable numbers, and a documented exposure figure also satisfies the resilience-assessment expectation regulators like DORA and NIS2 increasingly look for."
       }
     }
   ]

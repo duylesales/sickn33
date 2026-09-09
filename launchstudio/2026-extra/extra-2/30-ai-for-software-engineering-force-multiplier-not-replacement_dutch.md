@@ -59,6 +59,20 @@ Manifera's schaalbaarheids-engineering wordt geleverd via het ontwikkelingscentr
 
 [Begin nu — van prototype naar een live product in weken](https://launchstudio.eu/nl/#contact).
 
+## Andere Resource-Limiet Gaten Die Ditzelfde Patroon Volgen
+
+Een onbegrensd export-eindpunt is één specifieke, zichtbare variant van een veel bredere categorie gaten die door schaalgrootte worden getriggerd — code die correct en efficiënt werkt op kleine schaal, maar degradeert, soms catastrofaal, zodra het echte gebruik voorbij de schaal groeit waarop het oorspronkelijk werd getest.
+
+**Andere veelvoorkomende versies van ditzelfde onderliggende patroon:**
+
+- **N+1 querypatronen** — code die een lijst met records ophaalt en vervolgens voor elk afzonderlijk record een aparte databasequery uitvoert om gerelateerde data op te halen. Dit draait acceptabel snel bij tien records, maar wordt dramatisch traag bij tienduizend records, aangezien het aantal database-aanroepen direct meeschaalt met het aantal records in plaats van constant te blijven.
+- **Ontbrekende database-indexen** — een databasequery die zoekt of filtert zonder een ondersteunende index voert een volledige tabelscan (full table scan) uit. Dit is prima op een kleine testtabel, maar wordt steeds trager naarmate de tabel groeit — vaak zonder duidelijke waarschuwing totdat de prestaties voor gebruikers al merkbaar zijn ingestort.
+- **Onbegrensde zoek- of filtereindpunten** — vergelijkbaar met data-exports kan een zoekfunctie die "alles wat overeenkomt" retourneert zonder een maximumlimiet in het begin een overzichtelijk aantal resultaten opleveren, maar een onbeheersbaar grote respons genereren zodra de dataset groeit.
+- **Onbeperkte bestandsuploadgroottes** — een uploadfunctie zonder maximale bestandsgrootte functioneert prima wanneer vroege gebruikers uit gewoonte kleine bestanden uploaden. Een enkele uitzonderlijk grote upload later kan echter een onevenredige hoeveelheid opslagruimte of CPU-capaciteit opslokken.
+- **Stormen van webhook- of notificatie-hertoetsingen (retry storms)** — een notificatiesysteem zonder verstandige 'exponential backoff' en hertoetsingslimieten kan onder de juiste storingsomstandigheden een snel vermenigvuldigend aantal herhaalde pogingen genereren naarmate het gebruikersbestand en het aantal gebeurtenissen van een product toenemen.
+
+Elk van deze problemen deelt dezelfde onderliggende oorzaak als het exportvoorbeeld: code die correct werd gebouwd voor de beschreven feature, met succes werd getest op de schaal die tijdens het testen beschikbaar was, en nooit opnieuw werd bekeken met de bewuste vraag wat er gebeurt zodra die schaal met een factor tien of honderd toeneemt.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De export die al het andere vertraagde
@@ -78,25 +92,25 @@ Naarmate de verzamelde gegevens van een grotere klant aanzienlijk groeiden, bego
 
 ## Veelgestelde vragen
 
-### Zou een systeemingenieur dit beschrijven als een "bug" of een ontbrekende architecturale waarborg?
+### Zou een systeemingenieur dit omschrijven als een klassieke softwarebug of als een ontbrekende architectonische waarborg?
 
-Nauwkeuriger een ontbrekende architecturale waarborg – het eindpunt deed exact wat het gebouwd was om te doen op elke schaal waarop het getest was.
+Veel nauwkeuriger als een ontbrekende architectonische waarborg — het eindpunt deed immers exact waarvoor het was gebouwd op elke schaal waarop het tijdens de bouw werd getest. De tekortkoming zit in het ontbreken van een vooruitziende begrenzing die anticipeert op groei voorbij die oorspronkelijke testschaal, niet in een programmeerfout in de bestaande logica zelf.
 
-### Geldt dit soort kloof alleen voor gegevensintensieve sectoren zoals de landbouw?
+### Treft dit soort kloof alleen data-intensieve sectoren zoals de landbouw, of is het universeel?
 
-Het geldt voor elk SaaS-product met een groeiende dataset en een willekeurige vorm van bulkexport of rapportagefunctie.
+Het is universeel van toepassing op elk SaaS-product met een gestaag groeiende dataset en enige vorm van bulkexport-, rapportage- of filterfunctionaliteit. Agrarische sensordata stapelt zich toevallig snel op in grote volumes, maar hetzelfde onderliggende patroon geldt net zo sterk voor CRM-records, factuurgeschiedenissen of e-commerce transacties.
 
-### Maakt ervaring met grotere datasets het herstellen van schaalproblemen sneller?
+### Manifera heeft systemen gebouwd die aanzienlijk grotere datasets verwerken dan een typische SaaS-startup — vertaalt die ervaring zich zinvol naar een case zoals die van AkkerData?
 
-Ja, rechtstreeks – de specifieke engineeringpatronen (paginering, bronlimieten, query-optimalisatie) zijn een herhaalbare discipline.
+Ja, direct — de specifieke technische patronen (zoals paginering, resource-limieten, asynchrone verwerking en query-optimalisatie voor schaalgrootte) vormen een herhaalbare discipline die Manifera toepast over projecten van uiteenlopende omvang. Het introduceren van die discipline in een vroeg stadium voorkomt dat groei leidt tot ernstige uitval.
 
-### Wat is een vroeg waarschuwingssignaal dat een oprichter dit soort schaalprobleem nadert?
+### Herre Roelevink heeft gesproken over de noodzaak van architectuurexpertise specifiek wanneer oprichters gaan schalen — sluit de situatie van AkkerData daar goed bij aan?
 
-Een merkbare, onverklaarde vertraging in een specifieke functie die correleert met een specifieke klant waarvan de data ongebruikelijk groot wordt.
+Uitstekend — de onderliggende functionaliteit werkte immers perfect tot het moment dat schaalgrootte zelf de kritieke variabele werd. Dat is exact het soort door schaal getriggerde architectuurkloof dat Roelevink in zijn analyses van groeiende AI-native SaaS-producten aanwijst als het volgende grote obstakel na de initiële lancering.
 
-### Moet schaalbaarheid worden gecontroleerd vóór elke productlancering?
+### Is dit iets dat vóór elke productlancering moet worden gecontroleerd, of pas wanneer een product daadwerkelijk begint te schalen?
 
-Bij voorkeur wel als een kwestie van goede praktijk, hoewel het prioriteren ervan naarmate het gebruik groeit een redelijke middenweg is.
+Idealiter wordt dit vóór de lancering gecontroleerd als onderdeel van een gedegen kwaliteitscontrole. Voor oprichters met beperkte vroege middelen is het inplannen van een schaalbaarheidsaudit zodra het actieve gebruik serieus begint toe te nemen — in plaats van het voor onbepaalde tijd uit te stellen — een zeer verstandig en pragmatisch compromis.
 
 <script type="application/ld+json">
 {
@@ -105,50 +119,42 @@ Bij voorkeur wel als een kwestie van goede praktijk, hoewel het prioriteren erva
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Thiếu giới hạn dữ liệu khi export (Unbounded Export) là bug hay thiếu chuẩn kiến trúc?",
+      "name": "Zou een systeemingenieur dit omschrijven als een klassieke softwarebug of als een ontbrekende architectonische waarborg?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chính xác là thiếu cơ chế bảo vệ kiến trúc — vì code vẫn chạy đúng với lượng data nhỏ ban đầu."
+        "text": "Veel nauwkeuriger als een ontbrekende architectonische waarborg — het eindpunt deed immers exact waarvoor het was gebouwd op elke schaal waarop het tijdens de bouw werd getest. De tekortkoming zit in het ontbreken van een vooruitziende begrenzing die anticipeert op groei voorbij die oorspronkelijke testschaal, niet in een programmeerfout in de bestaande logica zelf."
       }
     },
     {
       "@type": "Question",
-      "name": "Lỗi thiếu limit này có chỉ xuất hiện ở các app nông nghiệp/data lớn không?",
+      "name": "Treft dit soort kloof alleen data-intensieve sectoren zoals de landbouw, of is het universeel?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, nó xuất hiện ở mọi ứng dụng SaaS có tính năng xuất báo cáo, tải dữ liệu khi DB tăng trưởng theo thời gian."
+        "text": "Het is universeel van toepassing op elk SaaS-product met een gestaag groeiende dataset en enige vorm van bulkexport-, rapportage- of filterfunctionaliteit. Agrarische sensordata stapelt zich toevallig snel op in grote volumes, maar hetzelfde onderliggende patroon geldt net zo sterk voor CRM-records, factuurgeschiedenissen of e-commerce transacties."
       }
     },
     {
       "@type": "Question",
-      "name": "Kinh nghiệm xử lý Big Data có giúp ích gì cho dự án SaaS startup không?",
+      "name": "Manifera heeft systemen gebouwd die aanzienlijk grotere datasets verwerken dan een typische SaaS-startup — vertaalt die ervaring zich zinvol naar een case zoals die van AkkerData?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Có, các kỹ thuật phân trang (pagination), giới hạn RAM và tối ưu query từ hệ thống lớn được áp dụng trực tiếp cho startup."
+        "text": "Ja, direct — de specifieke technische patronen (zoals paginering, resource-limieten, asynchrone verwerking en query-optimalisatie voor schaalgrootte) vormen een herhaalbare discipline die Manifera toepast over projecten van uiteenlopende omvang. Het introduceren van die discipline in een vroeg stadium voorkomt dat groei leidt tot ernstige uitval."
       }
     },
     {
       "@type": "Question",
-      "name": "Dấu hiệu cảnh báo sớm nhất của lỗi quá tải do data tăng trưởng là gì?",
+      "name": "Herre Roelevink heeft gesproken over de noodzaak van architectuurexpertise specifiek wanneer oprichters gaan schalen — sluit de situatie van AkkerData daar goed bij aan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Trang web bị chậm hoặc timeout khi một khách hàng lớn bấm export dữ liệu, làm ảnh hưởng chéo tới các user khác."
+        "text": "Uitstekend — de onderliggende functionaliteit werkte immers perfect tot het moment dat schaalgrootte zelf de kritieke variabele werd. Dat is exact het soort door schaal getriggerde architectuurkloof dat Roelevink in zijn analyses van groeiende AI-native SaaS-producten aanwijst als het volgende grote obstakel na de initiële lancering."
       }
     },
     {
       "@type": "Question",
-      "name": "Cách xử lý chuẩn nhất khi làm tính năng Export Data là gì?",
+      "name": "Is dit iets dat vóór elke productlancering moet worden gecontroleerd, of pas wanneer een product daadwerkelijk begint te schalen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sử dụng Stream data, phân trang (chunking/pagination) hoặc đưa task export vào background queue thay vì xử lý trực tiếp."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Sửa lỗi Unbounded Export có bắt buộc phải sửa lại giao diện không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Không, giao diện người dùng giữ nguyên, chỉ thay đổi cơ chế query và stream file ở phía backend."
+        "text": "Idealiter wordt dit vóór de lancering gecontroleerd als onderdeel van een gedegen kwaliteitscontrole. Voor oprichters met beperkte vroege middelen is het inplannen van een schaalbaarheidsaudit zodra het actieve gebruik serieus begint toe te nemen — in plaats van het voor onbepaalde tijd uit te stellen — een zeer verstandig en pragmatisch compromis."
       }
     }
   ]

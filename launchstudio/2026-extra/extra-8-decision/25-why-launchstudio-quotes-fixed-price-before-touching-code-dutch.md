@@ -50,8 +50,7 @@ Het is ook redelijk om te vragen wat er gebeurt als de oprichter halverwege het 
 
 [Boek een scopinggesprek en zie het proces zelf](https://launchstudio.eu/nl/#contact) — de meeste oprichters ontvangen binnen hetzelfde gesprek een gespecificeerde offerte met vaste prijs.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Gebrand door een Uurtariefschatting, Toen het Alternatief Getoond
 
 Naomi Kramer, oprichter van ShiftBoard, een met Bolt gebouwde personeelsplanningstool voor retailketens in Roosendaal, had eerder een freelance developer op uurbasis ingehuurd om een aantal planningsconflicten in de app op te lossen. De oorspronkelijke schatting was twaalf uur; de uiteindelijke factuur, zes weken later, was voor meer dan zestig, zonder duidelijke verantwoording over wat er zo lang had geduurd, behalve een algemeen gevoel dat "er meer speelde dan verwacht."

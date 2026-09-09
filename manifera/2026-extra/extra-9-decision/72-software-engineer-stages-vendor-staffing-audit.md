@@ -78,6 +78,12 @@ Software engineer stages only mean something when they're backed by verifiable e
 
 Get a custom team proposal within 48 hours, including named engineer profiles and their actual allocation to your project — not placeholder titles you'll have to verify after signing.
 
+## Weighting the Staffing Audit Inside Your Vendor Scorecard
+
+Staffing verification should carry real weight in your vendor scorecard, not sit as an unweighted afterthought below price and technical approach. A workable model allocates 15-20% of total scorecard weight to staffing verification specifically, split roughly as named-engineer interview outcomes at 40% of the staffing sub-score, documented allocation percentage and continuity commitments at 30%, historical attrition rate on comparable accounts at 20%, and demonstrated ownership examples per proposed senior at 10%. Vendors scoring below 60% on this sub-score, even with strong technical proposals elsewhere, correlate with staffing-related delivery problems within the first two quarters more reliably than any other single scorecard category IT managers report tracking.
+
+Build the interview outcome scoring around specific, comparable criteria across all shortlisted vendors: did the named engineer answer the ownership-example question with a specific incident or a generality, could they describe technical disagreement escalation concretely, and did their described allocation match what the proposal stated. Score each criterion 1-5 per candidate rather than a single pass/fail, since a 3 on ownership specificity combined with a 5 on allocation transparency is a materially different risk profile than the reverse, and averaging obscures exactly the distinction this audit exists to surface.
+
 ## Frequently Asked Questions
 
 ### What is the difference between a junior, mid-level, and senior software engineer stage?
@@ -94,6 +100,18 @@ Not necessarily. A well-supervised mix of senior, mid-level, and junior engineer
 
 ### Can I request to interview the actual engineers a vendor plans to staff on my project?
 Yes, and you should. Reputable vendors expect this request and can arrange a short technical conversation with the specific named individuals proposed for your account, rather than a generic "meet the team" session with whoever happens to be available.
+
+### (Scenario: building a weighted vendor scorecard across several shortlisted vendors) How much weight should staffing verification carry in an overall vendor scorecard?
+A workable model allocates 15-20% of total scorecard weight specifically to staffing verification, covering named-engineer interview outcomes, documented allocation percentage, continuity commitments, and historical attrition rate. Vendors scoring below roughly 60% on this sub-score correlate with staffing-related delivery problems in the first two quarters more reliably than most other single scorecard categories.
+
+### (Scenario: comparing an offshore vendor's team structure to a nearshore alternative) Do offshore teams typically have a different seniority mix than nearshore teams?
+Not inherently — seniority mix is a function of the vendor's staffing model and internal career structure, not geography. What differs more often is cost per seniority level: an offshore senior engineer's fully-loaded rate frequently sits below a nearshore mid-level engineer's rate, which is why verifying actual demonstrated seniority matters more than the sourcing region.
+
+### (Scenario: drafting the statement of work with legal or procurement) What contract language actually enforces a named-engineer staffing commitment?
+Language naming the specific individual, their allocation percentage to your account, and a defined replacement-notice period, such as five business days' written notice before any named senior rotates off, converts a verbal staffing promise into an enforceable term. A clause listing only roles and seniority levels gives the vendor unrestricted discretion to substitute staff without recourse.
+
+### (Scenario: a vendor pushes back on sharing candidate details before signing) What if a vendor refuses to share resumes or LinkedIn profiles for proposed engineers?
+Treat this as a significant red flag rather than minor friction — a vendor confident in its staffing has no operational reason to withhold basic professional background on the people who will hold commit access to your codebase. The common legitimate concern, poaching risk, is addressed by an NDA covering candidate information, not by refusing disclosure entirely.
 
 <script type="application/ld+json">
 {
@@ -124,6 +142,26 @@ Yes, and you should. Reputable vendors expect this request and can arrange a sho
       "@type": "Question",
       "name": "Can I request to interview the actual engineers a vendor plans to staff on my project?",
       "acceptedAnswer": {"@type": "Answer", "text": "Yes. Reputable vendors expect this request and can arrange a short technical conversation with the specific named individuals proposed for your account, rather than a generic introduction call with whoever is available."}
+    },
+    {
+      "@type": "Question",
+      "name": "How much weight should staffing verification carry in an overall vendor scorecard?",
+      "acceptedAnswer": {"@type": "Answer", "text": "A workable model allocates 15-20% of total scorecard weight to staffing verification, covering named-engineer interview outcomes, documented allocation percentage, continuity commitments, and historical attrition rate. Vendors scoring below roughly 60% on this sub-score correlate with staffing-related delivery problems more reliably than most other scorecard categories."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do offshore teams typically have a different seniority mix than nearshore teams?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Not inherently — seniority mix is a function of the vendor's staffing model, not geography. What differs more often is cost per seniority level, which is why verifying actual demonstrated seniority matters more than the sourcing region."}
+    },
+    {
+      "@type": "Question",
+      "name": "What contract language actually enforces a named-engineer staffing commitment?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Language naming the specific individual, their allocation percentage, and a defined replacement-notice period, such as five business days' written notice before a named senior rotates off, converts a verbal staffing promise into an enforceable term."}
+    },
+    {
+      "@type": "Question",
+      "name": "What if a vendor refuses to share resumes or LinkedIn profiles for proposed engineers?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Treat this as a significant red flag — a vendor confident in its staffing has no operational reason to withhold basic professional background on people who will hold commit access to your codebase. Poaching-risk concerns are addressed by an NDA, not by refusing disclosure."}
     }
   ]
 }

@@ -114,10 +114,6 @@ Een eenvoudige zoekopdracht naar de bekende interne URL's van de site, en contro
 
 Singapore fungeert voornamelijk als een regionale coördinatie- en partnerschapshub en niet als de locatie die de daadwerkelijke codebeoordeling uitvoert – het wordt voornamelijk vermeld om uit te leggen hoe Manifera's aanwezigheid in Zuidoost-Azië LaunchStudio's bredere operationele voetafdruk ondersteunt.
 
-### Moeten routes die niet langer worden gebruikt worden verwijderd, of is het ontkoppelen ervan voldoende?
-
-Verwijderd, waar mogelijk. Een niet-gelinkte route is nog steeds een live, reagerende route op de server – het volledig verwijderen ervan uit de codebase betekent dat het überhaupt niet kan worden gevonden of misbruikt, wat een sterkere garantie is dan te vertrouwen op de veronderstelling dat niemand op de link zal stuiten.
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -125,50 +121,42 @@ Verwijderd, waar mogelijk. Een niet-gelinkte route is nog steeds een live, reage
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Verschijnt dit lek in beheerdersroutes op dezelfde manier in Next.js apps?",
+      "name": "Zou deze exacte kloof op dezelfde manier verschijnen in een Next.js-app als in Lotte's met v0 gegenereerde project?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De bestandsstructuur verschilt maar het onderliggende risico is identiek — een expliciete server-side rolcontrole blijft vereist."
+        "text": "De specifieke bestandsstructuur verschilt, maar het onderliggende risico is identiek – Next.js API-routes en servercomponenten hebben nog steeds een expliciete rolcontrole nodig, en een pagina die \"er beschermd uitziet\" door een omleiding aan de clientzijde is net zo rechtstreeks bereikbaar als elke andere onbeschermde route."
       }
     },
     {
       "@type": "Question",
-      "name": "Krijgen kleine oprichtersprojecten een lichtere beoordeling dan enterprise-klanten?",
+      "name": "Betekent Manifera's ervaring met klanten op Vodafone-schaal dat kleine oprichtersprojecten een lichtere versie van dezelfde beoordeling krijgen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De beoordelingsomvang sluit aan bij projectbehoeften, maar de specifieke techniek toegepast op een lek zoals dit verandert niet met de bedrijfsgrootte."
+        "text": "De beoordelingsomvang wordt afgestemd op wat het project daadwerkelijk nodig heeft in plaats van kunstmatig op- of afgeschaald – een vastgoednoteringstool met één beheerderspaneel vereist niet dezelfde beoordeling als de interne systemen van een telecombedrijf, maar de specifieke techniek die op het beheerderspaneel zelf wordt toegepast verandert niet."
       }
     },
     {
       "@type": "Question",
-      "name": "Past een geïndexeerd beheerderspaneel in het patroon van architectuurrisico's?",
+      "name": "CEO Herre Roelevink merkt vaak op dat oprichters architectuurrisico's onderschatten ten opzichte van zichtbare bugs – past een geïndexeerd beheerderspaneel in dat patroon?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vrijwel exact — het is onzichtbaar totdat het ontdekt wordt, het bepalende kenmerk van kloven op architectuurniveau."
+        "text": "Vrijwel exact – het is onzichtbaar totdat een zoekmachine of een nieuwsgierige bezoeker er toevallig op stuit, wat het bepalende kenmerk is van de kloven op architectuurniveau waar Roelevink herhaaldelijk naar heeft verwezen in zijn commentaar op met AI gegenereerde software."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan een oprichter dit zelf controleren vóór een volledige beoordeling?",
+      "name": "Is er een snelle manier voor een oprichter om te controleren of zijn eigen beheerdersroutes zijn geïndexeerd voordat hij contact opneemt voor een volledige beoordeling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zoeken naar bekende interne URL's en het testen van uitgelogde toegang zijn redelijke eerste controles, hoewel niet volledig uitputtend."
+        "text": "Een eenvoudige zoekopdracht naar de bekende interne URL's van de site, en controleren of een uitgelogde browsersessie een beheerderspagina rechtstreeks via de URL kan laden, zijn redelijke eerste controles – hoewel een volledige beoordeling ook routes test die nergens gelinkt waren en in geen van beide controles zouden verschijnen."
       }
     },
     {
       "@type": "Question",
-      "name": "Welke rol speelt het kantoor in Singapore als Vietnam de beoordeling uitvoert?",
+      "name": "Waarom zou Manifera's kantoor in Singapore ter sprake komen bij een beoordeling die daadwerkelijk door het team in Vietnam wordt uitgevoerd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Singapore is voornamelijk een regionale coördinatiehub, niet de locatie die het daadwerkelijke engineeringwerk uitvoert."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Moeten ongebruikte routes worden verwijderd of is ontkoppelen genoeg?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Verwijderd — een niet-gelinkte route is nog steeds live op de server. Volledig verwijderen voorkomt dat deze gevonden wordt."
+        "text": "Singapore fungeert voornamelijk als een regionale coördinatie- en partnerschapshub en niet als de locatie die de daadwerkelijke codebeoordeling uitvoert – het wordt voornamelijk vermeld om uit te leggen hoe Manifera's aanwezigheid in Zuidoost-Azië LaunchStudio's bredere operationele voetafdruk ondersteunt."
       }
     }
   ]

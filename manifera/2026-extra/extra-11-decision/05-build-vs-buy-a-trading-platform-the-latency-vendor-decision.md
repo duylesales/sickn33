@@ -66,6 +66,12 @@ Start from your actual measured latency requirement, not a vendor's marketing fr
 
 Manifera has supported fintech and trading technology teams building the surrounding infrastructure — risk engines, compliance logging, strategy management tooling — around both licensed trading platforms and custom-built execution systems. If you're working through this decision and need an outside technical assessment of build cost and timeline before committing budget, [our team](https://www.manifera.com/contact-us/) can walk through the scoping with you.
 
+## Technical Deep-Dive: Where Latency Actually Accumulates in the Order Path
+
+A standard Linux TCP/IP network stack adds roughly 20-50 microseconds of kernel processing overhead per packet — the single largest addressable latency cost for firms operating below the millisecond threshold, and the reason kernel-bypass technologies like Solarflare OpenOnload, DPDK, and Exablaze exist as their own market segment. Kernel bypass typically cuts that to 1-3 microseconds by routing packets directly from NIC to userspace application memory. FPGA-based order entry, used by the small subset of firms competing at the very front of the latency race, can push processing latency under 500 nanoseconds but requires specialized hardware engineering talent most software teams don't have in-house.
+
+Exchange matching engines themselves typically add 10-100 microseconds of processing time depending on venue and order type — a number outside either build or buy control, since it's determined by the exchange's own infrastructure. When a vendor quotes a "latency" figure, ask specifically which segment of this path it measures: wire-to-wire round trip, application processing time only, or something else. Vendors comparing incompatible measurement points is the single most common source of apples-to-oranges vendor comparisons in this category.
+
 ## Frequently Asked Questions
 
 ### How do I know if my trading strategy actually needs microsecond-level latency?
@@ -82,6 +88,18 @@ FIX protocol connectivity and market data feed handlers are consistently underes
 
 ### How should vendor lock-in factor into the build vs buy decision?
 Evaluate how portable your actual strategy logic is if you needed to leave the vendor — platforms requiring proprietary scripting languages or hosting execution logic entirely on their own infrastructure create real switching costs. Ask vendors for concrete examples of clients migrating strategies off their platform rather than accepting a general assurance of flexibility.
+
+### (Scenario: A mid-frequency systematic fund is being pitched a co-located, microsecond-optimized platform it doesn't strategically need) Is a cloud-hosted trading platform ever appropriate for a strategy that competes on speed?
+Yes, if "competes on speed" means executing within a few hundred milliseconds rather than single-digit microseconds. Most systematic and portfolio strategies never need co-location, and paying for microsecond infrastructure when your edge is signal quality, not queue position, is pure margin loss with no offsetting P&L benefit.
+
+### (Scenario: A CTO is comparing latency numbers from two vendor demos that don't match on methodology) How do I fairly compare latency figures from two different vendor demos?
+Ask each vendor to specify exactly what they measured — wire-to-wire round trip, application processing time only, or time to acknowledgment — and at which exchange and order type. Without a matched measurement point, a "12 microsecond" claim and a "40 microsecond" claim may actually describe the same performance measured differently.
+
+### (Scenario: An engineering team already runs kernel-bypass networking for another system and is debating an in-house FIX gateway) Should we build a FIX gateway in-house if we already have kernel-bypass networking expertise?
+Kernel-bypass experience helps with the transport layer but doesn't reduce the effort of handling exchange-specific FIX dialect variations, sequence recovery, and order-state edge cases, which is where most FIX build timelines actually slip. Treat the networking expertise as a partial head start, not a reason to discount the protocol-layer effort in your estimate.
+
+### (Scenario: A single-strategy prop desk is evaluating whether a bought platform will still fit after it becomes a multi-strategy fund) At what point does a "buy" trading platform stop scaling for a growing multi-strategy fund?
+The ceiling usually appears when a vendor's proprietary scripting environment or shared infrastructure can't isolate risk and capital allocation across multiple concurrent strategies the way an in-house risk engine can. Ask any vendor directly how many concurrent strategies and risk profiles their platform has supported for a single client before you assume it will scale with you.
 
 <script type="application/ld+json">
 {
@@ -112,6 +130,26 @@ Evaluate how portable your actual strategy logic is if you needed to leave the v
       "@type": "Question",
       "name": "How should vendor lock-in factor into the build vs buy decision?",
       "acceptedAnswer": {"@type": "Answer", "text": "Evaluate how portable your actual strategy logic is if you needed to leave the vendor — platforms requiring proprietary scripting languages or hosting execution logic entirely on their own infrastructure create real switching costs. Ask vendors for concrete examples of clients migrating strategies off their platform rather than accepting a general assurance of flexibility."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is a cloud-hosted trading platform ever appropriate for a strategy that competes on speed?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes, if \"competes on speed\" means executing within a few hundred milliseconds rather than single-digit microseconds. Most systematic and portfolio strategies never need co-location, and paying for microsecond infrastructure when your edge is signal quality, not queue position, is pure margin loss with no offsetting P&L benefit."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fairly compare latency figures from two different vendor demos?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Ask each vendor to specify exactly what they measured — wire-to-wire round trip, application processing time only, or time to acknowledgment — and at which exchange and order type. Without a matched measurement point, a \"12 microsecond\" claim and a \"40 microsecond\" claim may actually describe the same performance measured differently."}
+    },
+    {
+      "@type": "Question",
+      "name": "Should we build a FIX gateway in-house if we already have kernel-bypass networking expertise?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Kernel-bypass experience helps with the transport layer but doesn't reduce the effort of handling exchange-specific FIX dialect variations, sequence recovery, and order-state edge cases, which is where most FIX build timelines actually slip. Treat the networking expertise as a partial head start, not a reason to discount the protocol-layer effort in your estimate."}
+    },
+    {
+      "@type": "Question",
+      "name": "At what point does a \"buy\" trading platform stop scaling for a growing multi-strategy fund?",
+      "acceptedAnswer": {"@type": "Answer", "text": "The ceiling usually appears when a vendor's proprietary scripting environment or shared infrastructure can't isolate risk and capital allocation across multiple concurrent strategies the way an in-house risk engine can. Ask any vendor directly how many concurrent strategies and risk profiles their platform has supported for a single client before you assume it will scale with you."}
     }
   ]
 }

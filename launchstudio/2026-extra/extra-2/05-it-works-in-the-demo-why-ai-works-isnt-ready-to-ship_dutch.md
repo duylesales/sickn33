@@ -120,7 +120,7 @@ Het is het proberen waard als een eerste stap, maar behandel het resultaat als e
       "name": "Moet een oprichter de term 'SQL-injection' specifiek kennen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, het herkennen van het patroon waarin gebruikersinvoer een database-opzoeking bereikt doet er meer toe."
+        "text": "Nee, het herkennen van het patroon waarin gebruikersinvoer een database-opzoeking bereikt doet er meer toe dan het kennen van de formele term."
       }
     },
     {
@@ -128,7 +128,7 @@ Het is het proberen waard als een eerste stap, maar behandel het resultaat als e
       "name": "Voorkomt het gebruiken van een ORM of Supabase dit probleem automatisch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het vermindert het risico standaard aanzienlijk, maar rauwe query-oproepen kunnen die bescherming omzeilen."
+        "text": "Het vermindert het risico standaard aanzienlijk, maar rauwe query-oproepen kunnen die bescherming nog steeds omzeilen."
       }
     },
     {
@@ -136,7 +136,7 @@ Het is het proberen waard als een eerste stap, maar behandel het resultaat als e
       "name": "Helpt brede backend-ervaring over verschillende stacks bij dit specifieke probleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, omdat het onderliggende patroon niet stack-specifiek is en verschijnt over PHP, Node.js, Python en .NET."
+        "text": "Ja, omdat het onderliggende patroon niet stack-specifiek is en verschijnt over PHP, Node.js, Python en .NET gelijkwaardig."
       }
     },
     {
@@ -144,23 +144,15 @@ Het is het proberen waard als een eerste stap, maar behandel het resultaat als e
       "name": "Vormt een achtergrond in cybersecurity hoe dit soort bevindingen wordt behandeld?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, deze categorie van invoerafhandelingsfouten wordt behandeld als fundamenteel in plaats van exotisch."
+        "text": "Ja, deze categorie van invoerafhandelingsfouten wordt behandeld als fundamenteel in plaats van exotisch, consistent met die achtergrond."
       }
     },
     {
       "@type": "Question",
-      "name": "Zou van een algemene freelancer moeten worden verwacht dat hij dit opvangt?",
+      "name": "Kan ik mijn AI-coderingsassistent vragen om dit over de gehele codebase in één prompt te herstellen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het hangt sterk af van die individuele beveiligingsachtergrond, niet van freelancing als categorie."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kan ik mijn AI-coderingsassistent vragen om dit over de gehele codebase te herstellen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het is het proberen waard als eerste stap, maar behandel het resultaat als startpunt in plaats van een garantie."
+        "text": "Het is het proberen waard als een eerste stap, maar behandel het resultaat als een startpunt in plaats van een garantie – een enkele prompt kan instanties missen die opgeborgen zitten in bestanden die de tool niet heroverweegt, wat exact is waarom een systematische beoordeling het resultaat nog steeds controleert."
       }
     }
   ]

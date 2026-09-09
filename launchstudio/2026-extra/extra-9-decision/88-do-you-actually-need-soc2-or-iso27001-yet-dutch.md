@@ -88,11 +88,13 @@ De oprichters die maximaal rendement halen uit een certificeringstraject, zijn z
 
 Wie daarentegen direct begint met een formeel audittraject zonder die basis, betaalt de compliance-adviseur de eerste twee maanden tegen een hoog uurtarief om exact diezelfde basisprocedures op te stellen onder hoge tijdsdruk. Door eerst te zorgen voor degelijke documentatie en een pentest sluit u vandaag al uw zakelijke deals, en legt u tegelijkertijd het fundament voor een soepele, stressvrije audit zodra de markt daarom vraagt.
 
+Het is daarnaast belangrijk om eerlijk te zijn over wie binnen een klein bedrijf dit werk feitelijk uitvoert, want die persoon is zelden een voltijdse compliance-medewerker. In de praktijk komt het neer op de oprichter of een technisch leider die dit oppakt naast diens bestaande verantwoordelijkheden. Dat is exact de reden waarom het pragmatische tussenpad — afgebakend, haalbaar binnen enkele weken en met een duidelijke eindstreep — ook daadwerkelijk wordt voltooid, terwijl een vaag, open doel zoals "we moeten uiteindelijk SOC 2 halen" vaak kwartalen lang onaangeroerd blijft liggen, simpelweg omdat niemand een aaneengesloten blok tijd kan vinden om aan iets van die omvang te beginnen zonder een harde deadline. Het behandelen van security-readiness als een reeks kleine, afgebakende opleveringen in plaats van één kolossaal compliance-project is net zozeer een projectmanagementbeslissing als een technische keuze.
+
 Het [team van LaunchStudio](https://launchstudio.eu/nl/#contact), ondersteund door Manifera's 11+ jaar ervaring in het beveiligen van productiesystemen voor veeleisende organisaties zoals TNO en CFLW Cyber Strategies, helpt SaaS-bedrijven bij het inrichten van een pragmatische security-posture die inkopers direct overtuigt.
 
 [Bereken via onze prijscalculator](https://launchstudio.eu/nl/#calculator) wat een gerichte security readiness pass — questionnaire-ondersteuning, beleidsdocumentatie en technische audit — kost ten opzichte van een langdurig certificeringstraject.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Nederlandse FinTech-SaaS Voorkomt een Voorbarige Audit
 

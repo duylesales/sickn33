@@ -60,6 +60,12 @@ Beyond the technical test, verify: production experience with the specific EHR p
 
 The vendors worth shortlisting are the ones who can describe your specific EHR's quirks unprompted — Epic's App Orchard review cycle, Cerner's Ignite sandbox behavior, or the ADT feed format your ancillary lab system actually sends — rather than reciting FHIR as a universal solvent. Interoperability competency is demonstrated through specifics, not slide decks. Manifera's engineering teams have built both legacy HL7 v2 interfaces and FHIR-based application integrations for healthcare platforms, and our [portfolio](https://www.manifera.com/portfolio/) reflects that range. If your integration project also needs to satisfy HIPAA business associate obligations around the PHI flowing through it, see our companion piece on [the BAA clauses that actually protect you](https://www.manifera.com/blog/hipaa-compliant-software-vendors-the-baa-clauses-that-actually-protect-you) — the two decisions should happen in the same due diligence pass.
 
+## Implementation Checklist: Scoping an EHR Integration Timeline Realistically
+
+A production-grade HL7 v2 interface, built and tested against a single EHR endpoint with standard ADT/ORU/ORM message types, typically takes 3-6 weeks of engineering time once the interface engine and network access are in place — but that estimate roughly doubles for a non-standard ancillary system whose message segments deviate from the EHR's default implementation guide, which is common enough that "standard HL7" should never be assumed without a sample message review first. FHIR-based work follows a different curve: a single-resource, read-only FHIR integration against a well-documented sandbox can ship in 2-4 weeks, while a full SMART on FHIR app launch with OAuth2 scope negotiation and token refresh handling routinely takes 4-6 weeks on its own, before EHR vendor review even begins.
+
+Budget the Epic App Orchard or Oracle Health Ignite review cycle as its own line item, not a buffer folded into development — 4-8 weeks is typical, and higher-risk integrations touching write-back capability or bulk data can run longer. For Bulk FHIR ($export) work specifically, confirm the vendor has handled NDJSON file output at real scale (tens of thousands of patient records, not a sandbox's few dozen test patients), since job polling and large-file handling behave very differently at production volume than in a demo. A vendor who can't give you a week-by-week breakdown across these phases, distinguishing legacy v2 work from FHIR work from vendor certification, has not actually scoped your project yet.
+
 ## Frequently Asked Questions
 
 ### Is FHIR replacing HL7 v2 entirely?
@@ -76,6 +82,18 @@ Bulk Data Access ($export) is an asynchronous, population-level data retrieval p
 
 ### How long does EHR vendor sandbox certification typically take?
 Epic's and Oracle Health's app review and production readiness processes commonly take 4-8 weeks after development is complete, sometimes longer for higher-risk integrations. Build this into your project timeline as a distinct phase, not an afterthought tacked onto development.
+
+### (Scenario: A CTO is comparing two integration bids where one is priced much lower for what appears to be the same HL7 v2 scope) A vendor quoted us half the time of another bidder for the same HL7 v2 interface — what should we check before trusting the lower number?
+Ask both vendors whether they've actually reviewed a sample message from the specific ancillary system involved, not just assumed a standard implementation guide applies. Non-standard segment usage is common enough that a lower bid based on "standard HL7" assumptions often turns into a change order once real messages are examined.
+
+### (Scenario: A hospital IT team is planning a bulk data export project for a quality reporting initiative) Our Bulk FHIR project only worked in the vendor's demo with a few dozen patients — is that a red flag before we scale to our full population?
+Yes, treat it as unproven at production scale. Job polling behavior, NDJSON file size handling, and export completion time can all behave very differently against tens of thousands of records than against a sandbox's handful of test patients, so ask specifically for a reference project that ran Bulk FHIR at population scale before committing.
+
+### (Scenario: A vendor's proposal doesn't distinguish between legacy interface work and FHIR work in its timeline) Should we accept a single lump-sum timeline that doesn't break out HL7 v2 work from FHIR work?
+No. Legacy HL7 v2 and FHIR-based work follow genuinely different effort curves and risk profiles, and a vendor who hasn't broken out the phases likely hasn't scoped each one independently. Ask for a week-by-week breakdown that separates interface engine work, FHIR resource work, and EHR vendor certification review.
+
+### (Scenario: A CTO is negotiating scope for an integration that includes write-back capability into the EHR) Does write-back functionality change the EHR certification review timeline compared to read-only access?
+Yes, meaningfully. Write-back capability introduces additional patient safety and data integrity review at the EHR vendor level, and Epic's and Oracle Health's review cycles for write-enabled integrations commonly run longer than the standard 4-8 week window for read-only access. Confirm with the EHR vendor's own program directly rather than relying solely on your integration vendor's estimate.
 
 <script type="application/ld+json">
 {
@@ -106,6 +124,26 @@ Epic's and Oracle Health's app review and production readiness processes commonl
       "@type": "Question",
       "name": "How long does EHR vendor sandbox certification typically take?",
       "acceptedAnswer": {"@type": "Answer", "text": "Epic's and Oracle Health's app review and production readiness processes commonly take four to eight weeks after development is complete, sometimes longer for higher-risk integrations. This should be built into the project timeline as a distinct phase, not an afterthought tacked onto development."}
+    },
+    {
+      "@type": "Question",
+      "name": "A vendor quoted us half the time of another bidder for the same HL7 v2 interface — what should we check before trusting the lower number?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Ask both vendors whether they've actually reviewed a sample message from the specific ancillary system involved, not just assumed a standard implementation guide applies. Non-standard segment usage is common enough that a lower bid based on \"standard HL7\" assumptions often turns into a change order once real messages are examined."}
+    },
+    {
+      "@type": "Question",
+      "name": "Our Bulk FHIR project only worked in the vendor's demo with a few dozen patients — is that a red flag before we scale to our full population?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes, treat it as unproven at production scale. Job polling behavior, NDJSON file size handling, and export completion time can all behave very differently against tens of thousands of records than against a sandbox's handful of test patients, so ask specifically for a reference project that ran Bulk FHIR at population scale before committing."}
+    },
+    {
+      "@type": "Question",
+      "name": "Should we accept a single lump-sum timeline that doesn't break out HL7 v2 work from FHIR work?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. Legacy HL7 v2 and FHIR-based work follow genuinely different effort curves and risk profiles, and a vendor who hasn't broken out the phases likely hasn't scoped each one independently. Ask for a week-by-week breakdown that separates interface engine work, FHIR resource work, and EHR vendor certification review."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does write-back functionality change the EHR certification review timeline compared to read-only access?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes, meaningfully. Write-back capability introduces additional patient safety and data integrity review at the EHR vendor level, and Epic's and Oracle Health's review cycles for write-enabled integrations commonly run longer than the standard 4-8 week window for read-only access. Confirm with the EHR vendor's own program directly rather than relying solely on your integration vendor's estimate."}
     }
   ]
 }

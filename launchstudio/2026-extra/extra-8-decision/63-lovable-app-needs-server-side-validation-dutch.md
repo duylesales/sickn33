@@ -57,8 +57,7 @@ Lovable genereert frontend-first. Zijn taak is om vanuit een prompt een werkende
 
 [Stuur ons uw Lovable-app en wij vertellen u precies welke invoer niet server-side wordt gevalideerd](https://launchstudio.eu/nl/#contact) — de lijst is meestal korter dan u zou vrezen, en het oplossen ervan gaat sneller dan u zou verwachten.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Het Formulier Dat Iedereen Alles Liet Boeken
 
 Wouter Prins, eigenaar van een fysiotherapiepraktijk in Delft, bouwde BeweegBoek, een door Lovable aangedreven boekingsapp waarmee patiënten afspraken konden inplannen, behandeltypes konden selecteren en intakenotities konden achterlaten. De frontendvalidatie was minutieus — afspraakslots toonden alleen beschikbare tijden, behandelselectie was een dropdown met vooraf ingestelde opties, en het notitieveld had een limiet van 500 tekens. Alles oogde potdicht.

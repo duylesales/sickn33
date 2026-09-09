@@ -113,6 +113,10 @@ Omdat het representatief is voor de bredere kloof waar Manifera in gespecialisee
 
 Ja, als ze hetzelfde verzendende domein delen – e-mailproviders volgen de reputatie per domein. Een nieuwsbrief met een hoog aantal spamklachten kan dus ook de transactionele afleverbaarheid naar beneden trekken. Dat is waarom het scheiden van transactionele en marketing-e-mail op verschillende subdomeinen, elk met een eigen SPF/DKIM-opzet, voorkomt dat de ene de andere beïnvloedt.
 
+### Hoe voorkom je dat marketingmails transactiemails beïnvloeden?
+
+Gebruik gescheiden subdomeinen: mail.app.com voor transactiemails (recepten, logins) en news.app.com voor marketing. Elk met eigen SPF/DKIM.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

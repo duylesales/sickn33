@@ -50,8 +50,7 @@ Dit betekent ook dat een solo-oprichter niet hoeft te raden welke van de tiental
 
 [Stuur ons de vragenlijst van uw koper](https://launchstudio.eu/nl/#contact) — de meeste solo-oprichters zitten dichter bij slagen dan ze denken, zodra de daadwerkelijke scope wordt afgezet tegen wat de koper heeft gestuurd.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Eén Oprichter, Eén Vragenlijst, Eén Deadline
 
 Milan de Vries, een solo indie hacker in Venlo, bouwde AuditTrail, een met Cursor gebouwde compliance-loggingtool voor kleine logistieke bedrijven, helemaal alleen over acht maanden. Een middelgrote vrachtmakelaar ging akkoord met een betaalde enterprise trial, op voorwaarde dat Milan binnen twee weken een lichte beveiligingsvragenlijst zou voltooien over toegangscontroles, versleuteling en incidentrespons — een deadline waarvan Milan, terwijl hij hem alleen aan zijn bureau las, besefte dat hij geen team had om hem daarbij te helpen.

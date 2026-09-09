@@ -61,6 +61,18 @@ Manifera's beoordelingen voor omgevingsconfiguratie worden uitgevoerd door het e
 
 [Gebruik onze calculator om te zien wat dit daadwerkelijk zou kosten](https://launchstudio.eu/nl/#calculator).
 
+## Een Praktische Checklist voor Omgevingsscheiding voor Oprichters
+
+Verwarring tussen ontwikkel-, test- en productieomgevingen komt verrassend vaak voor en blijft na lancering vaak geruisloos onopgemerkt. Een gestructureerde, herhaalbare checklist voorkomt pijnlijke vergissingen:
+
+- **Geef API-sleutels en inloggegevens een ondubbelzinnige naam per omgeving** — een omgevingsvariabele met de naam `STRIPE_SECRET_KEY_PROD` is veel moeilijker per ongeluk te verwarren dan twee generieke variabelen die alleen verschillen door het bestand waarin ze staan.
+- **Spoor ontwikkel-, staging- en productiedata fysiek van elkaar** — gebruik afzonderlijke databases, aparte secret managers en gescheiden cloudaccounts, zodat het per ongeluk overschrijven van productiedata vanuit staging technisch onmogelijk wordt gemaakt.
+- **Plaats een duidelijke visuele indicator in de staging-omgeving** — een opvallende gekleurde balk bovenaan het scherm met de tekst 'STAGING' voorkomt dat teamleden testacties uitvoeren op het live product of omgekeerd.
+- **Controleer alle omgevingsspecifieke configuratiewaarden direct vóór elke uitrol** — maak van de verificatie van database-URL's en API-sleutels een verplichte, bewuste stap in het deployment-proces.
+- **Verifieer periodiek via externe dashboards of productie daadwerkelijk in live-modus draait** — controleer bijvoorbeeld in het Stripe- of Mollie-dashboard of recente transacties als reële live-betalingen binnenkomen en niet in testmodus worden verwerkt.
+
+Een checklist verandert goede intenties in een herhaalbare procedure die menselijke fouten bij nachtelijke of gehaaste deployments betrouwbaar uitsluit. Het consequent hanteren van deze verificatiestappen beschermt uw live klandizie tegen onbedoelde storingen en bewaart de integriteit en betrouwbaarheid van uw productie-omgeving.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De abonnementsboxen gefactureerd via het verkeerde systeem
@@ -80,25 +92,25 @@ Verschillende vroege abonnees meldden ongebruikelijk lange vertragingen bij het 
 
 ## Veelgestelde vragen
 
-### Zou een DevOps-specialist het verwisselen van inloggegevens voor omgevingen beschouwen als een veelvoorkomende fout?
+### Zou een DevOps-specialist het verwisselen van omgevingssleutels beschouwen als een veelvoorkomende menselijke fout?
 
-Ja, veelvoorkomend genoeg dat veel ervaren engineeringteams geautomatiseerde omgevingscontroles implementeren om het specifiek te voorkomen.
+Ja, zo gebruikelijk dat professionele engineeringteams geautomatiseerde deployment-controles inrichten om het technisch onmogelijk te maken. Onder tijdsdruk tijdens een lancering is het handmatig knippen en plakken van API-sleutels tussen dashboards een van de meest gemaakte fouten.
 
-### Geldt dit alleen voor betalingsintegraties?
+### Geldt dit risico uitsluitend voor betalingsintegraties, of voor alle externe diensten?
 
-Het geldt voor elke dienst met afzonderlijke staging- en productie-inloggegevens (e-mailproviders, analysetools, externe API's).
+Voor vrijwel elke externe cloudservice: transactionele e-maildiensten (SendGrid, Postmark), analysetools, sms-gateways en AI-modellen (OpenAI API-sleutels). Een testsleutel in productie breekt functionaliteit; een productiesleutel in testomgevingen kan echte data en tegoeden verbruiken.
 
-### Maakt ervaring met omgevingsconfiguraties bij enterprise-uitrollen uit voor een kleinere app?
+### Hoe waarborgt Manifera strikte omgevingsscheiding bij complexe enterprise-implementaties?
 
-Ja, rechtstreeks – het handhaven van een strikte scheiding tussen staging- en productie-omgevingen is een standaard discipline.
+Door gebruik te maken van geautomatiseerde secret managers, Infrastructure-as-Code (IaC) en strikt gescheiden cloudaccounts voor ontwikkel-, staging- en productieomgevingen, waardoor inloggegevens nooit handmatig via bestanden worden uitgewisseld.
 
-### Illustreert deze omgevings-verwisseling de beperkingen van AI-tools?
+### Hoe sluit deze situatie aan bij de stelling van Herre Roelevink dat AI-tools uitvoeren wat gevraagd wordt, maar context missen?
 
-Precies – de AI-tool gebruikte getrouw welke inloggegeven het ook kreeg, zonder basis om onafhankelijk te beoordelen of het overeenkwam met de bedoelde omgeving.
+De AI-assistent implementeert keurig de code met de variabele die de ontwikkelaar aanlevert. De tool kan niet zelfstandig beoordelen of een specifieke Stripe-sleutel hoort bij een testaccount of bij een live rekening. Dat overzicht vereist menselijke regie en procesdiscipline.
 
-### Is er een eenvoudige gewoonte die een oprichter kan aannemen om dit risico te verminderen?
+### Wat is de eenvoudigste gewoonte die een oprichter kan aanleren om dit risico direct te minimaliseren?
 
-Het duidelijk en consistent labelen van inloggegevens per omgeving en het specifiek dubbelchecken voor elke productie-uitrol vermindert dit risico betekenisvol.
+Geef omgevingsvariabelen direct een ondubbelzinnige prefix (zoals `PROD_` versus `STAGING_`) en maak er een vaste regel van om direct na elke live gang in het dashboard van de externe dienst te verifiëren of er daadwerkelijk live-gebeurtenissen binnenkomen.
 
 <script type="application/ld+json">
 {
@@ -107,42 +119,42 @@ Het duidelijk en consistent labelen van inloggegevens per omgeving en het specif
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Sự khác biệt giữa AI viết code (Write code) và AI sửa lỗi (Fix code) là gì?",
+      "name": "Zou een DevOps-specialist het verwisselen van omgevingssleutels beschouwen als een veelvoorkomende menselijke fout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI viết code tạo ra tính năng theo mô tả; còn AI sửa lỗi đòi hỏi phải tự phát hiện ra các lỗi kiến trúc/cấu hình mà người dùng không hề nhắc tới trong prompt."
+        "text": "Ja, zo gebruikelijk dat professionele engineeringteams geautomatiseerde deployment-controles inrichten om het technisch onmogelijk te maken. Onder tijdsdruk tijdens een lancering is het handmatig knippen en plakken van API-sleutels tussen dashboards een van de meest gemaakte fouten."
       }
     },
     {
       "@type": "Question",
-      "name": "Nhầm lẫn API Key giữa môi trường Staging và Production nguy hiểm thế nào?",
+      "name": "Geldt dit risico uitsluitend voor betalingsintegraties, of voor alle externe diensten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "App vẫn chạy 'mượt' không báo lỗi, nhưng giao dịch thật của khách hàng bị xử lý qua cổng test, gây mất dữ liệu thanh toán hoặc chậm trễ xác nhận."
+        "text": "Voor vrijwel elke externe cloudservice: transactionele e-maildiensten (SendGrid, Postmark), analysetools, sms-gateways en AI-modellen (OpenAI API-sleutels). Een testsleutel in productie breekt functionaliteit; een productiesleutel in testomgevingen kan echte data en tegoeden verbruiken."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao AI tool không tự nhắc founder rằng họ đang dán nhầm Staging API Key?",
+      "name": "Hoe waarborgt Manifera strikte omgevingsscheiding bij complexe enterprise-implementaties?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì AI chỉ nhận chuỗi ký tự API Key và đưa vào code, nó không thể tự kiểm tra xem chuỗi đó thuộc môi trường Test hay Live trên server nhà cung cấp."
+        "text": "Door gebruik te maken van geautomatiseerde secret managers, Infrastructure-as-Code (IaC) en strikt gescheiden cloudaccounts voor ontwikkel-, staging- en productieomgevingen, waardoor inloggegevens nooit handmatig via bestanden worden uitgewisseld."
       }
     },
     {
       "@type": "Question",
-      "name": "Các thói quen tốt để tránh nhầm lẫn cấu hình môi trường (Environment Config)?",
+      "name": "Hoe sluit deze situatie aan bij de stelling van Herre Roelevink dat AI-tools uitvoeren wat gevraagd wordt, maar context missen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Đặt tên rõ ràng (STRIPE_PROD_KEY vs STRIPE_TEST_KEY), phân tách file .env riêng biệt và hiển thị banner cảnh báo 'STAGING' trên giao diện test."
+        "text": "De AI-assistent implementeert keurig de code met de variabele die de ontwikkelaar aanlevert. De tool kan niet zelfstandig beoordelen of een specifieke Stripe-sleutel hoort bij een testaccount of bij een live rekening. Dat overzicht vereist menselijke regie en procesdiscipline."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian rà soát và phân tách môi trường chuẩn hóa cho ứng dụng mất bao lâu?",
+      "name": "Wat is de eenvoudigste gewoonte die een oprichter kan aanleren om dit risico direct te minimaliseren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thường hoàn thành trong 3-5 ngày làm việc bao gồm cả việc cấu hình biến môi trường an toàn trên Cloud."
+        "text": "Geef omgevingsvariabelen direct een ondubbelzinnige prefix (zoals `PROD_` versus `STAGING_`) en maak er een vaste regel van om direct na elke live gang in het dashboard van de externe dienst te verifiëren of er daadwerkelijk live-gebeurtenissen binnenkomen."
       }
     }
   ]

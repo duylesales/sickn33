@@ -114,7 +114,7 @@ Het verifiëren van de technische feiten — welke datastromen lopen er, welke v
 
 [Beschrijf uw project en ontvang binnen één werkdag](https://launchstudio.eu/nl/#contact) specifieke feedback over wat uw algemene voorwaarden en privacybeleid moeten dekken.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: Het Privacybeleid Dat Een Ander Product Beschreef
 

@@ -41,6 +41,21 @@ De rode draad is niet welke tool de "beste" is — het is dat alle drie hun reik
 
 LaunchStudio wordt ondersteund door Manifera — vertrouwd door zakelijke klanten waaronder Vodafone, TNO en CFLW — en ons engineeringteam, met een hub in Singapore die deze tools nauwlettend volgt over verschillende tijdzones heen, besteedt echte tijd aan het begrijpen van wat er tussen AI-toolversies is veranderd, juist omdat oprichters ons projecten brengen die zich over twee tijdperken van dezelfde tool uitstrekken. Als uw project een toolwissel of een grote versiesprong heeft doorgemaakt, [krijg dan een gratis beoordeling van uw prototype](https://launchstudio.eu/nl/#contact) voordat u er per ongeluk achter komt wat er kapot is gegaan. U kunt ook zien hoe Manifera denkt over [langetermijn-webapplicatieontwikkeling](https://www.manifera.com/services/web-app-develop/) voorbij de releasecyclus van welke AI-tool dan ook.
 
+## Een Pre-Migratie Checklist Voordat U Mid-Build van Tool Wisselt
+
+Halverwege een ontwikkeltraject overstappen naar een andere tool is op zichzelf niet per se riskant — talloze oprichters doen dit met succes. Het échte risico ontstaat wanneer u overstapt zonder een gerichte controle uit te voeren op die zaken die niet automatisch of naadloos meeverhuizen tussen verschillende ecosystemen. Voordat u uw codebase van de ene AI-builder naar de andere migreert, voorkomt het doorlopen van deze vier controles dagen aan onnodige herstelwerkzaamheden.
+
+**Controleer de eigendomsrechten van uw geheimen en omgevingsvariabelen.** Verschillende tools slaan API-sleutels, databasereferenties en Stripe-tokens op geheel eigen manieren op. Sommige tools bewaren ze in een eigen cloud-dashboard, andere injecteren ze rechtstreeks in een `.env`-bestand en weer andere coderen ze vast in configuratiebestanden. Maak vóór export een inventaris van elke API-sleutel en controleer na import of ze niet plotseling in de publieke frontend-code terecht zijn gekomen.
+
+**Inspecteer de authenticatiestatus en het sessiebeheer.** Als uw eerste tool gebruikmaakte van een ingebouwde auth-service (zoals Supabase Auth, Clerk of een platform-eigen wrapper), ga er dan niet van uit dat de nieuwe tool die tokens en sessies automatisch herkent. Test na de import direct of inloggen, uitloggen en token-vernieuwing nog intact zijn, en verifieer dat beveiligde routes niet per ongeluk openbaar zijn geworden.
+
+**Breng de database-koppeling en migraties in kaart.** Een frontend-georiënteerde AI-tool genereert vaak mock-data of tijdelijke tabellen die prima werken in een lokale preview, maar bij een overstap naar een backend-omgeving volledig opnieuw moeten worden gestructureerd. Exporteer uw database-schema expliciet (inclusief foreign keys, constraints en datatypes) en valideer dat de nieuwe tool geen 'schaduwschema' met afwijkende veldnamen probeert op te bouwen.
+
+**Verifieer serverfuncties en webhook-eindpunten.** Als uw oorspronkelijke prototype afhankelijk was van serverless Edge Functions of webhooks van externe diensten, moet u controleren waar die logica na de migratie daadwerkelijk wordt uitgevoerd. Een frontend-tool kan een serverfunctie gemakkelijk omzetten in een onveilige client-side API-aanroep als de migratie-instructies niet specifiek genoeg zijn.
+
+Het kost minder dan een uur om deze vier punten puntsgewijs af te vinken vóórdat u de nieuwe tool vraagt om "de volgende grote feature" toe te voegen. Doet u dat niet, dan bouwt de nieuwe tool voort op een instabiel fundament, waardoor latere fouten exponentieel moeilijker te diagnosticeren zijn.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de login die de verhuizing niet overleefde
@@ -87,11 +102,46 @@ Over het algemeen wel, tenzij er een specifieke mogelijkheid ontbreekt — en al
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is it risky to switch AI coding tools mid-project?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, especially for custom logic hand-written on top of the original tool's scaffolding, since newer tools don't always preserve conventions and breaks can be silent." } },
-    { "@type": "Question", "name": "Which AI coding tool has changed the most since launch?", "acceptedAnswer": { "@type": "Answer", "text": "Cursor's shift from inline autocomplete to autonomous multi-file agent editing is the biggest change in scope among the major tools." } },
-    { "@type": "Question", "name": "How do I know if a tool migration broke something?", "acceptedAnswer": { "@type": "Answer", "text": "Manually testing every user role and workflow end-to-end, then adding automated integration tests, is the reliable way to catch silent breaks." } },
-    { "@type": "Question", "name": "Does Manifera's team track updates across all major AI coding tools?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, engineers across Manifera's offices, including the Singapore hub, follow release changes across Lovable, Bolt, Cursor, and v0." } },
-    { "@type": "Question", "name": "Should I finish a project in the tool I started it in?", "acceptedAnswer": { "@type": "Answer", "text": "Generally yes unless there's a specific missing capability, and any switch should be followed by a full regression test of existing custom logic." } }
+    {
+      "@type": "Question",
+      "name": "Is het risicovol om halverwege een project van AI-codeertool te wisselen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dat kan, vooral voor aangepaste logica die u zelf bovenop de scaffolding van de oorspronkelijke tool hebt geschreven — nieuwere tools behouden conventies niet altijd op dezelfde manier, en breuken kunnen stil zijn in plaats van foutmeldingen te geven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke AI-codeertool is sinds de lancering het meest veranderd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alle drie zijn aanzienlijk uitgebreid, maar Cursors verschuiving van inline-autocomplete naar autonome meerbestands-agentbewerking vertegenwoordigt de grootste verandering in hoeveel de tool zelfstandig doet, zonder direct toezicht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of een toolmigratie iets heeft kapotgemaakt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Handmatig elke gebruikersrol en workflow end-to-end testen is de enige betrouwbare manier — geautomatiseerde integratietests, die de technici van LaunchStudio toevoegen tijdens productiebeoordelingen, vangen dit voortaan permanent op."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Volgt het team van Manifera updates bij alle grote AI-codeertools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Technici in de vestigingen van Manifera, waaronder de hub in Singapore, volgen releasewijzigingen in Lovable, Bolt, Cursor en v0 juist omdat oprichters projecten inbrengen die meerdere toolversies overspannen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik een project afmaken in de tool waarin ik het ben begonnen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Over het algemeen wel, tenzij er een specifieke mogelijkheid ontbreekt — en als u wel wisselt, is een volledige regressietest van bestaande aangepaste logica essentieel voordat u de migratie als voltooid beschouwt."
+      }
+    }
   ]
 }
 </script>

@@ -53,7 +53,7 @@ Twee faalpatronen komen stelselmatig voor wanneer oprichters deze lijst invullen
 
 De waarde zit niet in het totaalgetal, maar in de specifieke dimensies die een 0 of 1 scoren. Dit vormt uw concrete prioriteitenlijst vóór de volgende groeifase. Een oprichter die een financieringsronde, enterprise-salestraject of grote marketingcampagne ingaat, kan de scorecard richten op de dimensies die daar direct invloed op hebben: enterprise-deals maken dimensies 4, 5, 8 en 10 urgent, terwijl een Series A-audit focust op 1, 3, 6 en 9.
 
-## Een Praktijkvoorbeeld van de Scoring
+## Een Uitgewerkt Rekenvoorbeeld van de Scoring
 
 Om de score concreet te maken, bekijken we hoe een vroege oprichter drie dimensies evalueert. Bij Deployment-zekerheid scoort een oprichter die als enige naar productie pusht zonder geautomatiseerde checks een 0 — niet omdat het misging, maar omdat niets een foutieve deploy tegenhoudt. Heeft hij een staging-omgeving toegevoegd met een handmatig testscript, dan is dat een 1 (gedeeltelijk, niet afgedwongen). Een 2 vereist dat de check automatisch en blokkerend is in CI. Bij Geheimenbeheer scoort een oprichter die API-sleutels naar environment variables heeft verplaatst maar nooit de oude Git-historie heeft geschoond een 1, geen 2. Het verwarren van "we hebben het gerepareerd" met "we hebben geverifieerd dat er geen restschade is" is de meest voorkomende reden van overschatting.
 
@@ -74,6 +74,15 @@ Elk van deze tien dimensies vertegenwoordigt een individuele beslissing die een 
 Wacht niet tot een investeerder, enterprise-klant of verkeerspiek uw kwetsbaarheden blootlegt. Laat uw platform engineering volwassenheid professioneel auditen op basis van hard bewijs.
 
 LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink benadrukt: *"We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en security die nodig zijn om die producten volwassen te maken. Daarin hebben we elf jaar ervaring."* Met de combinatie van "Nederlands management en Vietnamese engineeringkracht" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een vestiging in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio voorzien senior engineers uw bestaande AI-prototype van productieklare beveiliging, geteste betaalintegraties, schaalbare hosting en geautomatiseerde kwaliteitsborging — waarmee uw prototype in 1 tot 3 weken verandert in een robuuste MVP, zonder herbouw. [Vraag vandaag nog een offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) van Manifera AI-applicaties klaarmaakt voor enterprise-kwaliteit.
+
+### Toepassing van de Platform Engineering Maturity Scorecard
+
+Het periodiek evalueren van uw platformarchitectuur aan de hand van deze scorecard stelt technische leiders in staat om gerichte verbeteringen door te voeren:
+1. **Identificatie van Architectonische Knelpunten:** Door de tien dimensies systematisch te scoren, wordt direct inzichtelijk welke onderdelen (zoals geautomatiseerde deployments, observability of data-isolatie) achterblijven bij de gewenste volwassenheidsstandaard.
+2. **Prioritering van Technische Schuld:** In plaats van ad-hoc brandjes te blussen, helpt de scorecard om technische schuld te kwantificeren en te prioriteren op basis van reële impact op schaalbaarheid en stabiliteit.
+3. **Voorbereiding op Investeringsrondes:** Investeerders en technische auditoren hanteren vergelijkbare criteria tijdens een Due Diligence. Een aantoonbaar hoge score op platform engineering vergroot het vertrouwen en versnelt het investeringstraject.
+4. **Verhoging van de Ontwikkelsnelheid:** Een volwassen platform met self-service infrastructure en geautomatiseerde teststraten stelt uw team in staat om nieuwe functies in dagen in plaats van weken veilig naar productie te brengen.
+5. **Structurele Beveiligingsborging:** Continue toepassing van de scorecard zorgt ervoor dat beveiligings- en compliancenormen automatisch meegroeien met de omvang van uw gebruikersbestand en applicatiecomplexiteit.
 
 ## Echt voorbeeld
 

@@ -60,6 +60,12 @@ Vendor standardization across a PE portfolio is a real value-creation lever, but
 
 Manifera works with PE-backed operating teams to provide standardized development capacity across a portfolio without forcing premature platform migration — see our [custom software development](https://www.manifera.com/services/custom-software-development/) services for how a single delivery relationship can scale across multiple portfolio companies at different points in their integration timeline.
 
+## Modeling the Standardization Business Case: A Worked Example
+
+Run the math before committing capital to a migration, not after. A mid-sized portfolio company paying EUR 180,000/year for a standalone CRM against a portfolio-negotiated rate of EUR 130,000/year for the same seat count looks like an obvious EUR 50,000 annual win. But subtract a realistic migration cost — typically 0.5-1.5x the annual contract value for a CRM migration including data cleansing, integration rebuild, and a 4-8 week productivity dip during cutover — and the payback period often stretches to 18-24 months rather than the immediate win the headline number implies. Below an 18-month payback, most PE operating partners proceed; above 30 months, the standardization case usually loses to just waiting for the existing contract's natural renewal date.
+
+Termination penalties change the math further: a contract with 12+ months remaining and a 100% remaining-term penalty for early exit effectively doubles the migration cost, since the fund pays both the penalty and the new vendor's onboarding simultaneously. Portfolio CFOs who build a simple three-line model — annual savings, one-time migration cost, remaining contract exit penalty — before every standardization decision catch roughly a third of proposed migrations that don't actually pay back within the fund's typical hold horizon, saving that migration effort for a category where the math genuinely works.
+
 ## Frequently Asked Questions
 
 ### Should a PE firm mandate vendor standardization immediately after each acquisition?
@@ -76,6 +82,18 @@ A defined technology or vendor council with representation from both the fund's 
 
 ### When does vendor standardization actually destroy value instead of creating it?
 When it disrupts an operationally embedded system during an already-fragile post-acquisition integration period, particularly if it contributes to key staff attrition — the replacement cost of experienced operating staff typically exceeds a year or more of the licensing savings a forced migration was chasing. Standardization decisions should always weigh migration and disruption cost against the projected savings, not just compare license price.
+
+### (Scenario: A portfolio company CFO pushes back on a mandated vendor switch citing integration fatigue) How should a fund respond when an operating company resists a mandated standardization decision?
+Test the resistance against the published business-case threshold rather than overriding it by fund authority alone — if the payback period and disruption risk genuinely don't clear the bar, the operating company's pushback is correct and the migration should wait for natural renewal; if it does clear the bar, the vendor council should document the decision and set a defined implementation date rather than leaving it as an open negotiation.
+
+### (Scenario: A new platform add-on is acquired mid-way through standardizing the existing portfolio) Should a newly acquired company be folded into the existing standardization roadmap immediately, or given its own 100-day runway first?
+Give it the full 100-day assessment window before folding it in — forcing an acquisition still stabilizing its own operations onto a portfolio-wide vendor decision compounds two disruptions at once. The new company's vendor inventory should feed into the next standardization cycle rather than triggering an accelerated, unplanned migration.
+
+### (Scenario: The fund is preparing the portfolio for exit and a prospective buyer's diligence team flags fragmented vendor contracts) How does vendor standardization affect exit valuation and buyer due diligence?
+A consolidated, well-documented vendor stack with clean contract assignability reduces a buyer's perceived integration risk and removes a common source of price chips during diligence; funds typically prioritize finishing commodity-category standardization and cleaning up contract assignability clauses in the 12-18 months before an anticipated exit for exactly this reason.
+
+### (Scenario: Outsourced development capacity, not off-the-shelf software, is the category being standardized) Does the standardization logic change for outsourced development vendors versus SaaS platforms?
+Less than most CFOs expect — a single dedicated development partner can absorb portfolio-wide custom work under one rate card without forcing every portfolio company onto identical technology first, since the standardization benefit (one relationship, comparable delivery quality, portfolio-wide capacity flexing) doesn't require the underlying platforms themselves to be unified.
 
 <script type="application/ld+json">
 {
@@ -120,6 +138,38 @@ When it disrupts an operationally embedded system during an already-fragile post
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "When it disrupts an operationally embedded system during an already-fragile post-acquisition integration period, particularly if it contributes to key staff attrition — the replacement cost of experienced operating staff typically exceeds a year or more of the licensing savings a forced migration was chasing. Standardization decisions should always weigh migration and disruption cost against the projected savings, not just compare license price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should a fund respond when an operating company resists a mandated standardization decision?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Test the resistance against the published business-case threshold rather than overriding it by fund authority alone — if payback period and disruption risk don't clear the bar, the pushback is correct and the migration should wait for natural renewal; if it does clear the bar, the vendor council should document the decision and set a defined implementation date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a newly acquired company be folded into the existing standardization roadmap immediately, or given its own 100-day runway first?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Give it the full 100-day assessment window before folding it in — forcing a still-stabilizing acquisition onto a portfolio-wide vendor decision compounds two disruptions at once. Its vendor inventory should feed into the next standardization cycle rather than trigger an accelerated, unplanned migration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does vendor standardization affect exit valuation and buyer due diligence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A consolidated, well-documented vendor stack with clean contract assignability reduces a buyer's perceived integration risk and removes a common source of price chips during diligence; funds typically prioritize finishing commodity-category standardization and contract assignability cleanup in the 12-18 months before an anticipated exit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the standardization logic change for outsourced development vendors versus SaaS platforms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Less than most CFOs expect — a single dedicated development partner can absorb portfolio-wide custom work under one rate card without forcing every portfolio company onto identical technology first, since the benefit doesn't require the underlying platforms themselves to be unified."
       }
     }
   ]

@@ -60,6 +60,12 @@ Neither a purely global vendor strategy nor a fully decentralized regional model
 
 Manifera works as exactly this kind of regional execution partner within a global framework — providing [dedicated development teams](https://www.manifera.com/about-us/setting-up-your-offshore-team/) aligned to a specific subsidiary's time zone and requirements, operating under whatever global compliance baseline the parent organization has set.
 
+## Pricing Localization: What a Single Global Rate Actually Costs by Subsidiary
+
+A headquarters-negotiated global rate applied uniformly across subsidiaries routinely distorts local economics in both directions. A blended rate that represents reasonable value against a Western European or US market benchmark can represent 2-3x the going local market rate in Eastern Europe or Latin America, making the subsidiary's IT budget look bloated relative to local peers and creating exactly the internal pressure that drives a Polish or Brazilian team toward a shadow regional vendor. Conversely, the same global rate can undervalue specialized local talent in a competitive market, making it hard for the subsidiary to actually secure the vendor's better people, who get allocated to engagements with higher effective margins elsewhere in the portfolio.
+
+Build a purchasing-power or local-market-rate adjustment into the global framework agreement rather than a flat rate applied everywhere — a common approach indexes the regional rate to a defined basket of local market benchmarks, reviewed annually, with the global framework setting the ceiling and floor rather than a single fixed number. Organizations that skip this step and mandate a flat global rate typically see 15-25% of subsidiaries deviate from the mandated vendor within two years, almost always because the rate is locally uncompetitive rather than too cheap — a predictable, measurable outcome of pricing a global contract off a single headquarters benchmark.
+
 ## Frequently Asked Questions
 
 ### What kinds of systems genuinely benefit from a single global vendor across subsidiaries?
@@ -76,6 +82,18 @@ A global framework agreement setting baseline commercial terms, security standar
 
 ### Who should decide whether a system falls under the global vendor or a regional partner?
 This requires explicit, published governance scope — which system categories are centrally mandated versus open to regional selection within a compliance baseline, and a defined exception process. Without this clarity, organizations drift toward ungoverned shadow vendor relationships as subsidiaries route around a mandate that doesn't fit their situation.
+
+### (Scenario: A newly acquired subsidiary already has a long-standing regional vendor relationship predating the acquisition) Should a newly acquired subsidiary's existing regional vendor be folded into the global framework or replaced?
+Evaluate it against the same compliance and security baseline every regional partner must meet before deciding either way — if it passes, folding the existing relationship into the framework as an approved regional partner preserves institutional knowledge and avoids an unnecessary disruptive migration; only replace it if it fails the baseline or the relationship carries the kind of undocumented key-person risk covered in M&A vendor due diligence.
+
+### (Scenario: A subsidiary operates in a country with data localization laws the global vendor's infrastructure can't meet) What if a subsidiary's jurisdiction legally requires data to stay in-country and the global vendor has no local infrastructure?
+This is a hard legal constraint, not a negotiable preference — either confirm the global vendor can stand up genuinely in-country infrastructure (not just a regional data center that doesn't satisfy the specific statute) or scope that subsidiary's data-handling system as a mandatory regional exception in the governance framework, documented explicitly rather than left as an unresolved compliance gap.
+
+### (Scenario: The global framework agreement is denominated in a single currency across subsidiaries facing different currency volatility) How should currency risk be handled in a global vendor framework spanning multiple currencies?
+Either denominate regional execution contracts in local currency with a defined FX review clause tied to the global framework's core terms, or build an explicit FX collar into the master agreement that adjusts effective rates if a subsidiary's local currency moves beyond a defined band — a single fixed exchange rate baked into a multi-year contract routinely becomes a source of dispute well before the contract's natural renewal.
+
+### (Scenario: Leadership wants a periodic health-check on whether the hybrid model is still working two years in) What metrics indicate a hybrid global/regional vendor model needs rebalancing?
+Track the number of undocumented shadow vendor relationships surfacing per subsidiary, support response times against each region's working hours, the frequency of exception requests to the global framework, and cost variance between the framework's assumed rate and local market benchmarks — a rising trend in any of these is the earliest reliable signal that the global/regional split needs adjusting before it becomes ungoverned sprawl.
 
 <script type="application/ld+json">
 {
@@ -120,6 +138,38 @@ This requires explicit, published governance scope — which system categories a
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "This requires explicit, published governance scope — which system categories are centrally mandated versus open to regional selection within a compliance baseline, and a defined exception process. Without this clarity, organizations drift toward ungoverned shadow vendor relationships as subsidiaries route around a mandate that doesn't fit their situation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a newly acquired subsidiary's existing regional vendor be folded into the global framework or replaced?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evaluate it against the same compliance and security baseline every regional partner must meet before deciding either way — if it passes, folding it in as an approved regional partner preserves institutional knowledge; only replace it if it fails the baseline or carries undocumented key-person risk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if a subsidiary's jurisdiction legally requires data to stay in-country and the global vendor has no local infrastructure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a hard legal constraint, not a negotiable preference — either confirm the global vendor can stand up genuinely in-country infrastructure or scope that subsidiary's data-handling system as a mandatory regional exception in the governance framework, documented explicitly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should currency risk be handled in a global vendor framework spanning multiple currencies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Either denominate regional execution contracts in local currency with a defined FX review clause, or build an explicit FX collar into the master agreement that adjusts effective rates beyond a defined band — a single fixed exchange rate baked into a multi-year contract routinely becomes a source of dispute."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What metrics indicate a hybrid global/regional vendor model needs rebalancing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Track undocumented shadow vendor relationships surfacing per subsidiary, support response times against each region's working hours, the frequency of exception requests to the global framework, and cost variance against local market benchmarks — a rising trend in any of these is an early signal the split needs adjusting."
       }
     }
   ]

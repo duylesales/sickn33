@@ -93,7 +93,7 @@ Vertrouw niet uitsluitend op waarschuwingse-mails van cloudproviders: die arrive
 
 Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in infrastructurele optimalisatie) voeren we grondige kosten- en database-audits uit tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw infrastructuurkosten met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw applicatie razendsnel schaalt tegen minimale kosten.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Eén Klant, Eén Ontbrekende Index, €430 Extra Kosten
 

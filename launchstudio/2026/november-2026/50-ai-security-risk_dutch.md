@@ -63,6 +63,15 @@ U kunt exfiltratie niet stoppen door simpelweg "wees veilig" in de prompt te sch
 2. **Schakel 2 Breken (Least Privilege & RLS):** Wij dwingen Row Level Security (RLS) af in de vectordatabase. Zelfs als het model gemanipuleerd wordt, weigert de database de data omdat de sessie van de aanvaller geen autorisatietoken heeft voor andere gebruikers.
 3. **Schakel 3 Breken (Veilige Rendering & CSP):** Wij laten de frontend nooit ongecontroleerde markdown renderen. Externe afbeeldings- en script-tags worden gestript. Daarnaast dwingt een strikt Content Security Policy (CSP) af dat de browser van de gebruiker geen verbinding mag maken met ongeautoriseerde domeinen.
 
+### Beheersing van Afhankelijkheden en Risico's van Derde Partijen
+
+Wanneer uw kernproduct afhankelijk is van externe AI-modellen en API-leveranciers, is professioneel risicobeheer essentieel voor de bedrijfscontinuïteit:
+1. **Multi-Provider Redundantie:** We ontwerpen de architectuur zodanig dat uw applicatie niet afhankelijk is van één specifieke aanbieder, maar naadloos kan schakelen tussen Azure, AWS, Anthropic en OpenAI bij regionale storingen of tariefwijzigingen.
+2. **Monitoring van Model Drift en Gedragsveranderingen:** Omdat modelleveranciers regelmatig updates doorvoeren die de uitvoer subtiel kunnen beïnvloeden, voeren we geautomatiseerde regressietests uit om onverwachte gedragswijzigingen direct te detecteren.
+3. **Strikte Service Level Agreements (SLA's):** We implementeren agressieve timeout-mechanismen en circuit breakers die voorkomen dat een haperende externe API uw gehele applicatie lamlegt.
+4. **Gegevensisolatie en Zero-Retention Verificatie:** We controleren en borgen dat externe leveranciers voldoen aan strikte zero-data-retention voorwaarden, zodat uw bedrijfsgeheimen en klantdata nooit op servers van derden worden bewaard voor analyse.
+5. **Duidelijke Noodplannen (Disaster Recovery):** We stellen beproefde protocollen op waarin exact staat beschreven hoe uw team handelt bij een langdurige uitval van een grote cloudaanbieder, inclusief geteste overschakeling naar lokale fallback-infrastructuur.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De Klantenservice-Bot Die Klantgegevens Lekte

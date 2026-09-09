@@ -95,6 +95,10 @@ Ja – elke wijziging die inhoudt dat wordt bijgewerkt waar de DNS-records van e
 
 Niet noodzakelijkerwijs – de meeste hostingplatformen beginnen pas met het leveren van het TLS-certificaat van een nieuw domein zodra ze detecteren dat DNS naar hen wijst. Dit kan een afzonderlijk HTTPS-foutvenster creëren, zelfs nadat DNS zelf schoon is omgezet.
 
+### Wat kost een begeleide zero-downtime domeinmigratie bij LaunchStudio?
+
+Een DNS-audit en zero-downtime migratieprotocol kost gemiddeld €450 en duurt 2 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

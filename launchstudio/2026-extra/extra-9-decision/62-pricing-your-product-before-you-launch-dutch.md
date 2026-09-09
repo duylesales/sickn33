@@ -90,6 +90,10 @@ De complexiteit ontstaat in de randvoorwaarden:
 
 Een softwaresysteem dat puur is ontworpen rondom eenmalige transacties mist vaak het concept van een doorlopende klantrelatie in het datamodel. Als er een reële kans bestaat dat u later overstapt op een SaaS-abonnement, zorg er dan voor dat uw database vanaf dag één gebruikers accounts toekent met een abonnementsstatus, zelfs als die status initieel "levenslang actief" luidt. Dat voorkomt een complete databaserevisie in een later stadium.
 
+## Kiezen Vooraf vs. Achteraf: De Kosten van Facturatie Herstructureren na Lancering
+
+Het wijzigen van prijsmodellen na de lancering is een volkomen normaal en gezond onderdeel van het runnen van een SaaS-onderneming — talloze succesvolle producten stappen over van een vast tarief naar staffels, of van een eenmalige aankoop naar een abonnement, naarmate ze ontdekken wat klanten daadwerkelijk waarderen. Wat kostbaar is, is niet de prijswijziging op zichzelf, maar de ontdekking dat het onderliggende datamodel de nieuwe prijsstructuur niet kan ondersteunen zonder ingrijpend herstelwerk, omdat niets in de registratie van verbruik, accounts of rechten rekening hield met een tweede model. Een backend die is gebouwd voor vaste prijzen en later staffels nodig heeft, moet pakket-herkenning achteraf inbouwen in elke feature gate in de codebase; een backend die is gebouwd voor eenmalige aankopen en later abonnementen vereist, moet verlengings- en opzeggingslogica toevoegen die nooit deel uitmaakte van het oorspronkelijke ontwerp. Dit betekent geenszins dat u op dag één al moet bouwen voor elk denkbaar toekomstig model — het betekent dat de initiële prijsbeslissing moet worden genomen met minimaal een globaal beeld van waar het bedrijf heen kan groeien, zodat de eerste bouwversie een tweede model niet bij voorbaat onmogelijk maakt.
+
 ## Het Btw-Vraagstuk Dat Uw Prijspagina Niet Laat Zien
 
 Een fundamentele beslissing die vaak per abuis wordt overgeslagen: zijn de getoonde bedragen op uw prijspagina inclusief of exclusief btw?
@@ -109,7 +113,7 @@ Het meenemen van betaal- en abonnementsarchitectuur in de scopingfase is een vas
 
 [Gebruik onze prijscalculator](https://launchstudio.eu/nl/#calculator) om direct te zien wat uw specifieke prijsmodel toevoegt aan de technische ontwikkelingsscope.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een SaaS-Oprichter in Actie: De Tier Die Nog Niet Bestond
 

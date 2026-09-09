@@ -52,8 +52,7 @@ Een externe beoordeling brengt ook iets mee dat een solo-oprichter structureel n
 
 [Vertel ons wat uw lokale tests nog niet hebben gedekt](https://launchstudio.eu/nl/#contact) — een kort scopinggesprek brengt de lokaal-naar-productie-kloof doorgaans binnen enkele minuten in kaart.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Het Lokale Vertrouwen van een Technische Oprichter Ontmoet de Productierealiteit
 
 Yara Hulshof, een zelflerende developer in Dordrecht, bouwde PulseMetrics, een met v0 gebouwd analyticsdashboard voor webshops, en testte weken grondig op haar eigen laptop voor de lancering. Zelfverzekerd over haar code omdat hij nog nooit had gefaald tijdens haar eigen uitgebreide lokale tests, opende ze PulseMetrics voor haar eerste vijftig betalende klanten op lanceerdag zonder stagingomgeving of loadtest.

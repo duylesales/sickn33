@@ -85,20 +85,17 @@ Wees u ervan bewust welke substantiële meerwaarde uw bureau-marge van 30% tot 4
 
 Geen van deze diensten is gratis, en geen enkele klant verwacht dat u dit voor niets doet.
 
-## Wat Doet U Bij Meerwerk (Scope Creep)?
+## Wat Er Gebeurt Als de Scope Wijzigt Nadat U Heeft Geoffreerd
 
-Een fixed-price aanbieding blijft alleen winstgevend als u vooraf contractueel vastlegt hoe omgegaan wordt met wijzigingen tijdens de bouw. Bij white-label projecten hakt meerwerk er dubbel in: de onderaannemer brengt extra uren in rekening, en u besteedt extra onbetaalde uren aan overleg.
+Offreren tegen een vaste prijs blijft alleen zuiver en eerlijk als u vóórdat het traject start ook heeft vastgelegd wat er gebeurt wanneer de klant vraagt om iets wat buiten de oorspronkelijke scope valt. Bij een uitbesteed project raakt 'scope creep' uw marge immers dubbel: één keer tegenover de vaste prijs van de onderaannemer (die doorgaans niet meebeweegt zonder formele wijzigingsopdracht), en één keer tegenover uw eigen onbetaalde uren die u kwijt bent aan het managen van het gesprek over waarom dat zo is. De bureaus die dit vlekkeloos aanpakken, verankeren de grens direct in het voorstel zelf, in begrijpelijke taal die de klant leest vóór ondertekening: "Deze offerte dekt [specifieke opleverpunten]. Verzoeken buiten deze scope worden behandeld via een afzonderlijke wijzigingsopdracht (change order), vooraf begroot vóórdat het werk begint." Die ene zin doet meer om uw marge gedurende de looptijd van een project te beschermen dan welk opslagpercentage dan ook, omdat het een ongemakkelijke heronderhandeling halverwege het project verandert in een vooraf afgesproken procedure die de klant al verwacht.
 
-Voorkom dit met één heldere passage in uw voorstel:
-> *"Deze vaste prijs dekt exact de hierboven gespecificeerde functionaliteiten. Verzoeken die buiten deze scope vallen, worden vooraf begroot via een afzonderlijke wijzigingsopdracht (change order) en pas uitgevoerd na schriftelijk akkoord."*
+Wanneer er vervolgens een wijzigingsverzoek binnenkomt — en bij klantgericht werk gebeurt dat vrijwel gegarandeerd, doorgaans rond het middelpunt van de bouw zodra de klant echte voortgang ziet en begint op te merken wat er nog meer wenselijk zou zijn — is de juiste aanpak om dit op exact dezelfde manier te prijzen als de oorspronkelijke scope. Vraag eerst de werkelijke meerkosten van het extra werk op bij uw onderaannemer, en pas daarna dezelfde cost-plus logica toe in plaats van ter plekke een getal te kiezen dat gevoelsmatig proportioneel lijkt. Een klant die halverwege vraagt om een referral-programma toe te voegen, vraagt niet om een vriendendienst; het behandelen van zo'n verzoek als een snelle, informeel geprijsde toevoeging is precies hoe een project met gezonde marges geruisloos afglijdt naar een project dat net quitte speelt tegen de tijd dat het live gaat. De bureaus die hun marges over een heel jaar aan white-label werk het beste beschermen, zijn zelden de bureaus met de hoogste papieren opslag — het zijn de bureaus met de strakste discipline rondom wat een "ja" tegen een scopewijziging daadwerkelijk kost vóórdat ze die uitspreken.
 
-Dient een klant halverwege een extra verzoek in (zoals een referral-module)? Prijs dit exact volgens hetzelfde cost-plus stramien: vraag de meerprijs op bij uw technische partner, tel uw projectmanagement en marge erbij op, en stuur een beknopt voorstel. Zo blijft elk project van start tot finish winstgevend.
+[LaunchStudio](https://launchstudio.eu/nl/) is specifiek ontworpen om te fungeren als vaste, betrouwbare inkooppartner voor bureau-offertes — een bekende, vooraf geoffreerde bandbreedte in plaats van een onvoorspelbare kostenpost, ondersteund door [Manifera's 11+ jaar ervaring in softwareontwikkeling](https://www.manifera.com/services/custom-software-development/), zodat uw margeberekening start vanaf een getal waar u daadwerkelijk op kunt bouwen.
 
-[LaunchStudio](https://launchstudio.eu/nl/) is specifiek ontworpen om te fungeren als vaste, betrouwbare inkooppartner voor bureau-offertes. Met vaste pakketprijzen en de garantie van Manifera's 11+ jaar ervaring in softwareontwikkeling, bouwt u uw offertes op een kostprijs die niet onverwacht muteert.
+Gebruik onze [prijscalculator](https://launchstudio.eu/nl/#calculator) om uw eigen opslag bij het volgende voorstel vooraf te toetsen — de meeste bureaus zijn verrast door hoe dicht hun intuïtieve getal ligt bij het verdedigbare getal zodra de concrete kostenposten eenmaal bij naam worden genoemd.
 
-[Gebruik onze prijscalculator](https://launchstudio.eu/nl/#calculator) om direct te berekenen welke inkoopkosten horen bij uw volgende klantcase, zodat u direct met betrouwbare marges kunt offreren.
-
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Utrechts Bureau Prijst Zonder Schuldgevoel
 

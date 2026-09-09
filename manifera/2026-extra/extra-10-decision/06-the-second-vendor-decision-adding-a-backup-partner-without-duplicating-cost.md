@@ -60,6 +60,12 @@ A backup vendor earns its cost when it is structured as a standing, low-hours re
 
 If you are structuring a continuity plan and need a partner who can start from genuine codebase familiarity rather than a cold start, Manifera's [dedicated teams](https://www.manifera.com/services/dedicated-teams/) engagements are built to scale quickly precisely because our teams maintain that kind of standing technical readiness — see our [portfolio](https://www.manifera.com/portfolio/) for examples of engagements structured around fast activation.
 
+## Running an Annual Activation Drill
+
+A backup vendor relationship that has never actually been tested is a paper insurance policy, and COOs consistently discover the gap only during a real activation event, when discovering it is most expensive. Run a scoped activation drill once a year: give the backup vendor a real but low-stakes production-adjacent ticket — a small feature or a bug fix on a non-critical path — and hold them to the activation clause's committed ramp timeframe as if it were a live event, even though it isn't. Time it precisely: if the contract promises a two-to-four-week scale-up and the drill takes six, that gap is exactly the exposure your continuity plan currently carries, and it is far cheaper to discover in a scheduled drill than during an actual primary-vendor failure.
+
+Budget the drill as part of the standby cost — typically an additional 5-10 hours beyond the standing monthly retainer — and document the results as part of your annual continuity review rather than as an informal check-in. A drill that reveals gaps is not a failure of the backup relationship; it is the entire point of running one. A backup arrangement that has never been drilled is a compliance liability in any audit that asks for evidence of tested business continuity, not just a documented plan.
+
 ## Frequently Asked Questions
 
 ### How much does a backup software vendor typically cost?
@@ -76,6 +82,18 @@ Define specific, non-vague conditions in the contract before any crisis: primary
 
 ### Does a backup vendor need the same security certifications as the primary vendor?
 Yes, and this should be verified independently, not assumed by association with the primary vendor. An activation event under crisis conditions is the worst time to discover the backup vendor lacks GDPR-compliant data handling, SOC 2, or ISO 27001 certification equivalent to what your primary vendor carries.
+
+### (Scenario: audit committee wants evidence a continuity plan actually works) How do I prove to an auditor that our backup vendor arrangement actually works, not just exists on paper?
+Run and document an annual activation drill, timed against the contract's committed ramp period. Auditors evaluating DORA or SOC 2-adjacent continuity requirements increasingly ask for evidence of tested, not just documented, continuity, and a drill log is the artifact that satisfies this.
+
+### (Scenario: deciding whether to disclose the arrangement to the primary vendor) Should I tell my primary vendor I've engaged a backup vendor?
+Most COOs disclose it, framed as standard business continuity practice rather than a vote of no confidence. A primary vendor who reacts defensively to a reasonable continuity measure is itself a data point worth noting, while most established vendors recognize this as normal practice among mature clients.
+
+### (Scenario: the vetted backup vendor also serves competing clients) Is it a problem if the backup vendor competes directly with the primary vendor for other clients?
+It's rarely a practical problem and sometimes an advantage, since a competitor backup vendor is strongly motivated to perform well during activation as a chance to win more of your business. Just ensure both vendors' confidentiality and non-solicitation terms are explicit given their shared exposure to your codebase.
+
+### (Scenario: a small company can't justify a paid standby retainer) We're too small for a formal backup vendor retainer — what's the minimum viable version?
+Negotiate a right-of-first-refusal activation agreement with no standing monthly hours: a signed commitment from a vetted secondary vendor to prioritize your activation call within an agreed number of weeks, in exchange for periodic light-touch codebase walkthroughs. It's weaker than a paid standby arrangement but far stronger than no backup relationship at all.
 
 <script type="application/ld+json">
 {
@@ -120,6 +138,38 @@ Yes, and this should be verified independently, not assumed by association with 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, and this should be verified independently, not assumed by association with the primary vendor. An activation event under crisis conditions is the worst time to discover the backup vendor lacks GDPR-compliant data handling, SOC 2, or ISO 27001 certification equivalent to what your primary vendor carries."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I prove to an auditor that our backup vendor arrangement actually works, not just exists on paper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Run and document an annual activation drill, timed against the contract's committed ramp period. Auditors evaluating DORA or SOC 2-adjacent continuity requirements increasingly ask for evidence of tested, not just documented, continuity, and a drill log is the artifact that satisfies this."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I tell my primary vendor I've engaged a backup vendor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most COOs disclose it, framed as standard business continuity practice rather than a vote of no confidence. A primary vendor who reacts defensively to a reasonable continuity measure is itself a data point worth noting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it a problem if the backup vendor competes directly with the primary vendor for other clients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's rarely a practical problem and sometimes an advantage, since a competitor backup vendor is strongly motivated to perform well during activation as a chance to win more of your business. Just ensure both vendors' confidentiality and non-solicitation terms are explicit given their shared exposure to your codebase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "We're too small for a formal backup vendor retainer — what's the minimum viable version?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Negotiate a right-of-first-refusal activation agreement with no standing monthly hours: a signed commitment from a vetted secondary vendor to prioritize your activation call within an agreed number of weeks, in exchange for periodic light-touch codebase walkthroughs."
       }
     }
   ]

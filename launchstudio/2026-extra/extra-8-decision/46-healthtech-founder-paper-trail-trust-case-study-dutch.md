@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een Healthtech-Oprichter Bouwt Vertrouwen Op Met een Papieren Spoor, Niet Alleen Code"
+Titel: "Case Study: Een Healthtech-Oprichter Bouwt Vertrouwen Op Met een Papieren Spoor, Niet Alleen Code"
 Trefwoorden: healthtech-compliancedocumentatie, audittrail SaaS, vertrouwen healthtech-koper, beveiligingsdocumentatie voor kopers, omgang met zorgdata, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: SaaS-Oprichter Scale-Up
 ---
 
-# Praktijkvoorbeeld: Een Healthtech-Oprichter Bouwt Vertrouwen Op Met een Papieren Spoor, Niet Alleen Code
+# Case Study: Een Healthtech-Oprichter Bouwt Vertrouwen Op Met een Papieren Spoor, Niet Alleen Code
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een Healthtech-Oprichter Bouwt Vertrouwen Op Met een Papieren Spoor, Niet Alleen Code",
+  "headline": "Case Study: Een Healthtech-Oprichter Bouwt Vertrouwen Op Met een Papieren Spoor, Niet Alleen Code",
   "description": "Healthtech-kopers willen niet alleen veilige code, ze willen bewijs dat ze aan hun eigen compliance-afdeling kunnen overhandigen. Een praktijkvoorbeeld van waarom de documentatie van een beveiligingsfix vaak net zo zwaar weegt voor een verkoop als de fix zelf.",
   "author": {
     "@type": "Organization",
@@ -61,8 +61,7 @@ De oprichters die dit goed navigeren, haasten zich niet om documentatie te produ
 
 [Vertel ons waar uw kopers om vragen](https://launchstudio.eu/nl/#contact) — een scoping call is de snelste manier om te ontdekken of uw huidige gat technisch, documentair, of beide is.
 
-## Real example
-
+## Echt voorbeeld
 ### Een SaaS-Oprichter Scale-Up in de Praktijk: De Deal Winnen Met Het Bestand, Niet Alleen De Fix
 
 Priya Chandrasekaran, een voormalig ziekenhuisoperationsmanager en nu oprichter in Utrecht, bouwde VitalChart, een AI-ondersteunde tool voor het samenvatten van zorgnotities voor kleine fysiotherapie- en revalidatiepraktijken, met Lovable. VitalCharts toegangscontroles en gegevensverwerking waren, tegen de tijd dat Priya een middelgrote regionale revalidatiekliniekgroep benaderde als haar eerste multi-locatieklant, oprecht solide — het kernbeveiligingswerk was maanden eerder al gedaan.

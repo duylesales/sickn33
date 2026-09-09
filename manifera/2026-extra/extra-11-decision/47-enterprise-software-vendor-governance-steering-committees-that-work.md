@@ -58,6 +58,12 @@ A vendor steering committee that meets on schedule but doesn't catch problems wh
 
 Manifera operates within client governance structures as a matter of course, providing independently verifiable delivery data rather than relying solely on vendor-curated status reporting — see our [our way of working](https://www.manifera.com/about-us/our-way-of-working/) page for how we structure engagement reporting and cadence around actual project risk.
 
+## Sizing the Committee: A Tier Matrix for Cadence and Escalation Thresholds
+
+A workable governance model assigns each vendor relationship to one of three tiers and applies a defined cadence and escalation threshold per tier, rather than debating structure fresh for every vendor. Tier 1 (revenue-critical or customer-facing systems, first-year engagements, contract value above a defined threshold — commonly EUR 250,000+ annually): monthly operational review plus quarterly strategic session, with automatic escalation on any milestone showing zero measurable progress across a single reporting period. Tier 2 (important but non-critical systems, established relationships past year one): quarterly review with a two-consecutive-period escalation trigger. Tier 3 (commodity or low-impact systems): semi-annual review, escalation only on a hard SLA breach.
+
+Most enterprise IT organizations running eight or more active vendor relationships find roughly 15-20% qualify for Tier 1 treatment, 40-50% land in Tier 2, and the remainder in Tier 3 — a distribution that keeps steering committee time proportionate to actual risk rather than spreading equal attention across every relationship. Publish this tier assignment and its criteria alongside the RACI and escalation rules, and re-tier vendors at each annual review rather than leaving assignments static as a relationship matures or a system's criticality changes.
+
 ## Frequently Asked Questions
 
 ### How often should a vendor steering committee meet?
@@ -74,6 +80,18 @@ Independently verifiable data the client side controls directly — actual syste
 
 ### What should be documented after every steering committee meeting?
 A specific decision record — not just minutes — capturing what was decided, who decided it, what alternatives were considered and rejected, and named owners with dates for resulting action items. This record is what lets the governance structure survive personnel turnover on either the client or vendor side.
+
+### (Scenario: A vendor resists granting client-side visibility into their internal delivery tracking) How should IT Managers respond when a vendor resists giving visibility into internal delivery tracking?
+Treat resistance to shared visibility as itself a governance signal worth escalating, not a negotiable preference — write minimum reporting transparency (shared board or ticketing access, not just curated status decks) into the contract renewal terms if it isn't already there, and flag the resistance explicitly to the steering committee's Accountable owner rather than accepting a vendor-curated summary as a permanent substitute.
+
+### (Scenario: The organization runs a dozen active vendor relationships and steering committee overhead is becoming unmanageable) How can an organization scale vendor governance across many concurrent vendor relationships without drowning in meetings?
+Apply the tier matrix rigorously rather than giving every vendor a dedicated committee — batch Tier 3 vendors into a single consolidated quarterly review covering several relationships at once, and reserve dedicated, individual committee time for Tier 1 and Tier 2 vendors where the risk actually warrants a standalone session.
+
+### (Scenario: A new IT Manager inherits an existing vendor steering committee that's clearly ceremonial) What's the fastest way to diagnose whether an inherited steering committee is actually functional?
+Pull the last four meetings' decision records (or minutes, if no formal record exists) and check for two things: whether any meeting produced a decision with a named owner and a deadline, and whether any status reported as "on track" was later contradicted by an actual delivery slip. A committee with no traceable decisions and a history of status surprises is ceremonial regardless of how well-attended it is.
+
+### (Scenario: The vendor's delivery team operates in a significantly different time zone) How should committee cadence and reporting change for an offshore or nearshore vendor relationship?
+Keep the tier-based cadence, but shift toward asynchronous, written status updates between live sessions rather than relying solely on synchronous meetings that inevitably favor one side's working hours — and confirm the vendor's own escalation triggers fire on their local clock, not on a headquarters time zone that delays how quickly a real issue reaches the committee.
 
 <script type="application/ld+json">
 {
@@ -118,6 +136,38 @@ A specific decision record — not just minutes — capturing what was decided, 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A specific decision record — not just minutes — capturing what was decided, who decided it, what alternatives were considered and rejected, and named owners with dates for resulting action items. This record is what lets the governance structure survive personnel turnover on either the client or vendor side."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should IT Managers respond when a vendor resists giving visibility into internal delivery tracking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat the resistance as itself a governance signal worth escalating — write minimum reporting transparency into the contract renewal terms if it isn't already there, and flag the resistance explicitly to the steering committee's Accountable owner rather than accepting a vendor-curated summary as a permanent substitute."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can an organization scale vendor governance across many concurrent vendor relationships without drowning in meetings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apply the tier matrix rigorously rather than giving every vendor a dedicated committee — batch lower-tier vendors into a single consolidated quarterly review covering several relationships at once, and reserve dedicated committee time for the vendors whose risk actually warrants a standalone session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the fastest way to diagnose whether an inherited steering committee is actually functional?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pull the last four meetings' decision records and check whether any meeting produced a decision with a named owner and deadline, and whether any status reported as on track was later contradicted by an actual delivery slip. No traceable decisions plus a history of status surprises means it's ceremonial regardless of attendance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should committee cadence and reporting change for an offshore or nearshore vendor relationship?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keep the tier-based cadence, but shift toward asynchronous, written status updates between live sessions rather than relying solely on synchronous meetings that favor one side's working hours, and confirm escalation triggers fire on the vendor's local clock rather than a headquarters time zone that delays how quickly issues reach the committee."
       }
     }
   ]

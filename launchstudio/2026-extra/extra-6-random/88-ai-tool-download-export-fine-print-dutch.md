@@ -43,6 +43,21 @@ Als u een nieuw AI-codeerplatform evalueert voor een toekomstig project, lees da
 
 LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het helpen van oprichters om door AI gegenereerde prototypes naar infrastructuur te verplaatsen die ze volledig zelf bezitten, en ons team, werkend vanuit Amsterdam, behandelt routinematig precies dit soort export en migratie voor oprichters die net hebben ontdekt wat de voorwaarden van hun platform daadwerkelijk zeggen. Als u midden in een export zit en een tweede blik wilt op wat u ziet, kunt u [uw project beschrijven via ons proces](https://launchstudio.eu/nl/#process) en wij helpen u begrijpen waarmee u daadwerkelijk instemt. De bredere ervaring van Manifera met het verplaatsen van software tussen platforms staat beschreven op de pagina [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
+## Een Zoek-en-Vind Lijst: Exacte Woorden om met Ctrl-F te Zoeken in Algemene Voorwaarden
+
+Niemand leest met plezier de algemene voorwaarden van twintig pagina's van cloud- en AI-leveranciers. Open het document in uw browser, druk op Ctrl+F (of Cmd+F) en zoek specifiek naar deze vijf beslissende termen:
+
+**1. Zoek op: "train" of "training"** Controleer of de leverancier uw gegevens mag gebruiken voor het trainen van eigen modellen. Zoek naar zinnen als *"We do not use customer data to train our models"* (veilig) versus *"You grant us a perpetual right to use inputs to improve our services"* (gevaarlijk).
+
+**2. Zoek op: "retention" of "retain"** Hoe lang bewaart de leverancier uw data op zijn servers voor misbruikcontrole? Dertig dagen is gebruikelijk, maar voor gevoelige data eist u 'Zero Retention'.
+
+**3. Zoek op: "sub-processor" of "third party"** Welke andere bedrijven schakelt de leverancier stiekem in? In het kader van de AVG moet u al deze partijen kunnen verantwoorden aan uw eigen klanten.
+
+**4. Zoek op: "indemnif" (Indemnification)** Vrijwaart de aanbieder u tegen claims van derden wegens inbreuk op auteursrechten door gegenereerde content?
+
+**5. Zoek op: "governing law" of "jurisdiction"** Welk recht is van toepassing? Voor Europese bedrijven is Nederlands recht of een rechtbank binnen de EU oneindig veel veiliger dan arbitrage in Californië of Delaware.
+
+Binnen vijf minuten heeft u de juridische kern blootgelegd en weet u exact of u een zakelijk verantwoorde overeenkomst aangaat.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de exportknop die meer vragen opriep dan beantwoordde
@@ -89,11 +104,46 @@ Ja — het team stapt regelmatig midden in een migratie in om geëxporteerde cod
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Do all AI coding tools retain rights to reuse generated code for training?", "acceptedAnswer": { "@type": "Answer", "text": "It varies by platform and can change over time, which is why checking the current terms directly matters before depending on a tool long-term." } },
-    { "@type": "Question", "name": "Is retained training rights the same as the platform owning my code?", "acceptedAnswer": { "@type": "Answer", "text": "No, they're separate. A platform can grant you ownership while still retaining a right to use the code for training future models." } },
-    { "@type": "Question", "name": "What should I do if I find a concerning clause in a platform I've already built on?", "acceptedAnswer": { "@type": "Answer", "text": "Consider accelerating export and migration to infrastructure you fully control, limiting how much of your product remains subject to those terms." } },
-    { "@type": "Question", "name": "Does exporting my code from an AI tool remove me from its terms entirely?", "acceptedAnswer": { "@type": "Answer", "text": "Not automatically — terms already agreed to may still apply to code generated on the platform, even after export, depending on the wording." } },
-    { "@type": "Question", "name": "Can Manifera's Amsterdam team help with a migration that's already underway?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the team regularly steps in mid-migration to review exported code and move it onto infrastructure the founder fully controls." } }
+    {
+      "@type": "Question",
+      "name": "Behouden alle AI-codeertools rechten om gegenereerde code te hergebruiken voor training?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dit verschilt per platform en verandert in de loop van de tijd, en precies daarom is het rechtstreeks controleren van de huidige voorwaarden — niet een marketingsamenvatting — belangrijk voordat u iets bouwt waarvan u van plan bent op de lange termijn afhankelijk te zijn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn behouden trainingsrechten hetzelfde als het platform dat mijn code bezit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, dat zijn aparte zaken. Een platform kan u duidelijk eigendom van uw code toekennen en tegelijkertijd een apart recht behouden om het, of patronen daaruit, te gebruiken voor het trainen van toekomstige modellen — lees beide clausules apart."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik doen als ik een verontrustende clausule vind in een platform waarop ik al heb gebouwd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Overweeg om uw export en migratie naar infrastructuur die u volledig zelf beheert te versnellen, wat beperkt hoeveel van het doorlopende leven van uw product onderworpen blijft aan de voorwaarden van dat platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Verwijdert het exporteren van mijn code uit een AI-tool mij volledig uit de voorwaarden ervan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet automatisch — de voorwaarden waarmee u instemde tijdens het gebruik van het platform kunnen nog steeds van toepassing zijn op code die daar al is gegenereerd, zelfs na export, afhankelijk van de specifieke bewoordingen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan het Amsterdamse team van Manifera helpen bij een migratie die al bezig is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — het team stapt regelmatig midden in een migratie in om geëxporteerde code te beoordelen, te bevestigen dat deze compleet en functioneel is, en deze te verplaatsen naar infrastructuur die de oprichter volledig zelf beheert."
+      }
+    }
   ]
 }
 </script>

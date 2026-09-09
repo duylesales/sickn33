@@ -41,6 +41,19 @@ Die verschuiving is het hele argument van dit stuk in één zin: de schaarse vaa
 
 Als uw weekendbouw twee dagen kostte, loopt een realistische hardeningsronde — authenticatie, back-ups, monitoring, een supportproces, een beveiligingsbeoordeling — voor een klein product doorgaans van een paar dagen tot een paar weken gericht engineeringwerk, niet omdat het moeilijker is dan de bouw, maar omdat het een compleet ander soort werk is, een dat AI-tools niet zelfstandig zijn gebouwd om te doen. De technici van LaunchStudio, werkend vanuit Ho Chi Minh-stad, specialiseren zich specifiek in dit traject — een door AI gebouwd weekendprototype nemen en het ongeglamoureuze werk doen dat er iets van maakt waarop een betalende klant daadwerkelijk kan vertrouwen. U kunt [ruwweg berekenen wat uw specifieke hardeningsronde zou kosten](https://launchstudio.eu/nl/#calculator) voordat u te diep gaat in het op de harde manier ontdekken van de gaten. De bredere aanpak van Manifera om prototypes naar productievolwassenheid te brengen staat beschreven op de [over-ons-pagina](https://www.manifera.com/about-us/).
 
+## De Overige 80% Ontleed: Vier Categorieën op een Rij
+
+De bekende '80/20-regel' geldt dubbel en dwars voor softwareontwikkeling met AI: de eerste 20% van de tijd levert een werkend prototype op dat 80% van de functionaliteit toont. De overige 80% van de tijd en energie zit echter in de onzichtbare randvoorwaarden die nodig zijn voor een levensvatbaar bedrijf. Deze vallen uiteen in vier categorieën:
+
+**1. Uitzonderings- en Foutafhandeling (25%).** Wat gebeurt er als de creditcard geweigerd wordt, de gebruiker halverwege de wifi verliest, of de AI-provider een time-out geeft? Het bouwen van robuuste 'unhappy paths' en herstelmechanismen kost aanzienlijk meer tijd dan de basisinterface.
+
+**2. Beveiliging, Autorisatie en Data-Isolatie (25%).** Het inrichten van Row-Level Security, rate limiting, encryptie en sessiebeheer. Dit is de onzichtbare muur die uw bedrijf beschermt tegen datalekken en claims.
+
+**3. Observability, Logging en Beheerfuncties (15%).** Het bouwen van admin-schermen om gebruikers te ondersteunen, auditlogs om acties te herleiden en foutmonitoring om storingen te detecteren vóórdat klanten bellen.
+
+**4. Compliance, Juridische Vormgeving en AVG (15%).** Cookiebanners die echt werken, getoetste verwerkersovereenkomsten, back-upprocedures en exportfuncties voor het recht op dataportabiliteit.
+
+Wie deze overige 80% vooraf herkent en begroot, voorkomt dat een veelbelovend prototype strandt in de harde realiteit van de markt.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: het weekend dat twee dagen kostte, en de hardening die tien weken kostte
@@ -87,11 +100,46 @@ LaunchStudio specialiseert zich specifiek in het naar productie brengen van best
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is it realistic to actually build a working app with AI in a weekend?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, tools like Lovable, Bolt, Cursor, and v0 genuinely can produce a working app over a weekend — the realistic expectation is that this is the start, not the end, of the work." } },
-    { "@type": "Question", "name": "Why does production hardening take so much longer than the initial build?", "acceptedAnswer": { "@type": "Answer", "text": "AI tools are optimized for visible, demonstrable functionality, while hardening work has no equivalent obvious signal and only becomes visible when it's needed and missing." } },
-    { "@type": "Question", "name": "What does Herre Roelevink mean by \"the architecture and security needed to bring products to maturity\"?", "acceptedAnswer": { "@type": "Answer", "text": "He's describing a shift where building software is no longer the hard part; the structural and security work to make it production-ready is what now requires real engineering experience." } },
-    { "@type": "Question", "name": "How much should I budget for hardening after an AI-built weekend prototype?", "acceptedAnswer": { "@type": "Answer", "text": "It varies, but a realistic range for a small product is typically a few days to a few weeks of focused engineering work." } },
-    { "@type": "Question", "name": "Does LaunchStudio only do hardening, or can it also help with the original build?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio specializes in taking existing AI-generated prototypes to production without rebuilding the founder's frontend, which is exactly the stage most weekend builds need help with next." } }
+    {
+      "@type": "Question",
+      "name": "Is het realistisch om daadwerkelijk een werkende app met AI in een weekend te bouwen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — tools zoals Lovable, Bolt, Cursor en v0 kunnen oprecht een werkende app in een weekend produceren. De realistische verwachting om te stellen is dat dit het begin van het werk is, niet het einde."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom duurt productiehardening zoveel langer dan de eerste bouw?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat AI-tools zijn geoptimaliseerd voor zichtbare, aantoonbare functionaliteit, terwijl hardeningswerk — back-ups, monitoring, beveiliging, supportprocessen — geen equivalent duidelijk signaal heeft en pas zichtbaar wordt op het moment dat het nodig is en ontbreekt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat bedoelt Herre Roelevink met \"de architectuur en beveiliging die nodig zijn om producten tot volwassenheid te brengen\"?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hij beschrijft de verschuiving in wat daadwerkelijk schaars is in AI-native ontwikkeling: een idee omzetten in werkende software is niet langer het moeilijke deel, terwijl het structurele en beveiligingswerk om die software productieklaar te maken nog steeds echte engineeringervaring vereist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel moet ik begroten voor hardening na een door AI gebouwd weekendprototype?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het varieert per product, maar een realistisch bereik voor een klein product is doorgaans een paar dagen tot een paar weken gericht engineeringwerk, ruwweg evenredig aan wat Nova's proces van tien weken samenperste."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Doet LaunchStudio alleen hardening, of kan het ook helpen met de oorspronkelijke bouw?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio specialiseert zich specifiek in het naar productie brengen van bestaande door AI gegenereerde prototypes zonder de frontend van de oprichter opnieuw te bouwen, wat precies de fase is waarmee de meeste weekendbouwsels vervolgens hulp nodig hebben."
+      }
+    }
   ]
 }
 </script>

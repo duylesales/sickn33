@@ -83,7 +83,7 @@ Het [Launch Ready pakket van LaunchStudio](https://launchstudio.eu/nl/#packages)
 
 Deel de URL van uw directory met ons en wij leveren u kosteloos een overzicht van de kwetsbaarheden die u moet aanpakken vóórdat u betaalde plaatsingen inschakelt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Niet-Technische Oprichter in Actie: De Vermelding Die Niet Meer van Haar Was
 

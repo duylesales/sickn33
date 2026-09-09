@@ -41,6 +41,17 @@ Het praktische advies voor een technische solo-oprichter: stap periodiek terug v
 
 Onze technici, werkend vanuit een team gebaseerd in Singapore, besteden een aanzienlijk deel van hun tijd aan precies dit soort consolidatieronde op door AI gebouwde codebases — niet herschrijven, maar de bestaande patronen consistent genoeg maken zodat nieuwe functies niet meer botsen met oude. LaunchStudio brengt Manifera's enterprise-grade engineering naar de oprichterseconomie, en als uw maand zes er anders uitziet dan uw maand één, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) om te bespreken hoe een consolidatieronde eruit zou zien voor uw specifieke codebase. De bredere aanpak van Manifera voor duurzame softwarearchitectuur staat beschreven op de pagina [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
+## Drie Vormen van Code-Drift Die Zich Sessie na Sessie Opeenhopen
+
+Wanneer u over een periode van enkele maanden intensief 'vibe codeert' met AI-tools, ontstaat er een subtiel fenomeen genaamd 'Code Drift': de codebasis raakt langzaam maar zeker gefragmenteerd omdat het model bij elke nieuwe sessie andere keuzes maakt. Let op deze drie vormen:
+
+**1. Conventie-Drift (Stijl- en Bibliotheekfragmentatie).** In sessie één gebruikt de AI Tailwind CSS; in sessie vier importeert hij plotseling losse CSS-modules; en in sessie acht installeert hij een zware UI-bibliotheek voor één simpele pop-up. Uw bundelgrootte explodeert en de visuele stijl raakt versnipperd.
+
+**2. Data-Toegangsdrift (Architectuurversnippering).** Op sommige pagina's gebruikt de code directe database-aanroepen via een ORM; op andere pagina's roept hij serverless edge-functies aan; en elders gebruikt hij verouderde REST-endpoints. Het ontbreken van één consistente architectuur maakt centraal rechtenbeheer nagenoeg onmogelijk.
+
+**3. Foutafhandelingsdrift (Inconsistente Gebruikerservaring).** Het ene formulier toont keurige inline foutmeldingen; het andere scherm geeft een pop-up toast; en een derde scherm crasht stilzwijgend zonder enige melding aan de gebruiker.
+
+Om code-drift tegen te gaan, moet u periodiek een 'consolidatieslag' uitvoeren: ruim overbodige bibliotheken op, standaardiseer uw data-aanroepen en dwing één consistente foutafhandeling af door de hele applicatie.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: dezelfde functie, vier keer zo langzaam
@@ -87,11 +98,46 @@ Over het algemeen wel — elke extra AI-sessie bovenop inconsistente patronen vo
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Is the month-one speedup from AI in development an illusion?", "acceptedAnswer": { "@type": "Answer", "text": "No, it's real — early in a project AI tools genuinely compress build time because the codebase is still small and consistent." } },
-    { "@type": "Question", "name": "Why does the same AI tool feel slower months later?", "acceptedAnswer": { "@type": "Answer", "text": "The codebase around the tool accumulates inconsistent patterns across separate sessions, and new features have to reconcile those differences." } },
-    { "@type": "Question", "name": "How do I know if my codebase has hit the \"month six\" slowdown?", "acceptedAnswer": { "@type": "Answer", "text": "If you can't quickly name where a common pattern like data fetching lives in your code, consolidation is likely overdue." } },
-    { "@type": "Question", "name": "Can this be fixed without a full rebuild?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, in most cases a consolidation pass standardizes existing patterns rather than replacing the codebase." } },
-    { "@type": "Question", "name": "Does this problem get worse the longer I wait?", "acceptedAnswer": { "@type": "Answer", "text": "Generally yes, since each additional session tends to add another variation rather than resolve existing ones." } }
+    {
+      "@type": "Question",
+      "name": "Is de versnelling van maand één in AI-ontwikkeling een illusie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, het is echt en meetbaar — vroeg in een project comprimeren AI-tools daadwerkelijk de bouwtijd voor eenvoudige functies, omdat de codebase nog klein en consistent is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom voelt dezelfde AI-tool maanden later langzamer aan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De tool zelf wordt niet langzamer; de codebase eromheen stapelt inconsistente patronen op over afzonderlijke sessies, en elke nieuwe functie moet die verschillen verzoenen voordat hij kan worden gebouwd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of mijn codebase de \"maand zes\"-vertraging heeft bereikt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een goed signaal is of u snel kunt aanwijzen waar een veelvoorkomend patroon — datophaling, formulierafhandeling, foutstatussen — leeft in uw code. Als het eerlijke antwoord luidt \"het hangt ervan af welk deel\", is consolidatie waarschijnlijk hoognodig."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan dit worden opgelost zonder een volledige herbouw?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, in de meeste gevallen. Een consolidatieronde, zoals degene die de in Singapore gevestigde technici van Manifera uitvoerden voor DevReplace, standaardiseert bestaande patronen in plaats van de codebase te vervangen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wordt dit probleem erger naarmate u langer wacht?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Over het algemeen wel — elke extra AI-sessie bovenop inconsistente patronen voegt doorgaans nog een variatie toe in plaats van de bestaande op te lossen, dus hoe eerder een consolidatie plaatsvindt, hoe kleiner deze blijft."
+      }
+    }
   ]
 }
 </script>

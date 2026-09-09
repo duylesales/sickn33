@@ -7,6 +7,31 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Cursor Bracht Je 80% Ver. Wat Zijn De Andere 20%?
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cursor Bracht Je 80% Ver. Wat Zijn De Andere 20%?",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/cursor-got-you-80-percent-there-other-20-percent"
+  }
+}
+</script>
+
+
 Cursor bekleedt een oprecht andere positie dan volledig autonome AI-appbouwers: het is een AI-verrijkte IDE, wat betekent dat een technische founder actief gegenereerde code regel voor regel beoordeelt, bewerkt, en aanstuurt in plaats van een black-box-output volledig te accepteren. Dit produceert een echt, betekenisvol kwaliteitsverschil — en ook een specifieke, voorspelbare valkuil, omdat "ik heb deze code beoordeeld" en "deze code is productieverhard" niet dezelfde bewering zijn, zelfs voor een founder met oprechte codeervaardigheid.
 
 ## Waarom Cursor-gebruikers Specifiek Het Resterende Gat Onderschatten
@@ -34,6 +59,16 @@ De meest efficiënte manier om je resterende gaten te lokaliseren is niet je eig
 [LaunchStudio](https://launchstudio.eu/nl/) beoordeelt Cursor-gebouwde codebases met precies dit onderscheid in gedachten — de kwaliteit van wat je hebt gebouwd respecterend terwijl specifiek de adversariële en infrastructuurdimensies onderzocht worden die je eigen review van nature niet dekt, gesteund door Manifera's engineeringdiscipline over 160+ opgeleverde projecten.
 
 [Vind jouw specifieke resterende 20%](https://launchstudio.eu/nl/#calculator) — een tweede paar ogen met een ander mandaat dan het jouwe vangt op wat je eigen review structureel niet kan.
+
+## Een Praktische Manier om Jouw Specifieke 20% te Vinden
+
+De meest effectieve methode om de resterende 20% aan technische gaten in een met Cursor gebouwde codebase te ontdekken, is niet het nóg een keer doorlezen van je eigen code. Een tweede lezing door dezelfde persoon stuit immers meestal op exact dezelfde aannames als de eerste keer.
+
+De oplossing ligt in het toepassen van doelgerichte 'adversarial' praktijktests: probeer doelbewust API-endpoints aan te roepen zonder sessiekoekje, simuleer netwerkfouten bij externe webhooks, en doorzoek de Git-geschiedenis op verweesde tokens. Dit zijn fundamenteel andere activiteiten dan feature-ontwikkeling — ze testen de robuustheid onder omstandigheden die tijdens normaal bouwen nooit spontaan optreden.
+
+[LaunchStudio](https://launchstudio.eu/nl/) beoordeelt met Cursor gebouwde projecten met precies deze technische blik: met respect voor de functionaliteit die je al hebt gerealiseerd, terwijl we doelgericht de infrastructuur, databereikbaarheid en autorisatielagen verharden die bij een visuele inspectie onzichtbaar blijven.
+
+[Ontdek welke specifieke 20% van jouw applicatie nog aandacht vraagt](https://launchstudio.eu/nl/#calculator) — een onafhankelijk paar senior ogen ziet direct wat een founder van nature mist.
 
 ## Echt voorbeeld
 
@@ -73,3 +108,52 @@ Ja, tot een betekenisvolle mate — geautomatiseerde dependency-scantools bestaa
 ### Vermindert eerdere professionele codeerervaring, zoals die van Koen, hoeveel productiegereedheidswerk doorgaans nodig is?
 
 Het vermindert doorgaans specifiek het applicatielogica-kwaliteitsgat, aangezien ervaren ontwikkelaars vanaf het begin zorgvuldigere code schrijven, maar het elimineert niet de hier beschreven adversarieel testen-, dependency-, en infrastructuurgaten, die grotendeels onafhankelijk zijn van het vaardigheidsniveau van de oorspronkelijke ontwikkelaar.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Als ik technisch genoeg ben om Cursor effectief te gebruiken, waarom zou ik dan überhaupt een externe review nodig hebben?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat het hier beschreven gat niet over codeercompetentie gaat — het gaat over de structurele blinde vlek van het beoordelen van je eigen werk, en over categorieën (dependency-positie, infrastructuurconfiguratie) die volledig buiten de applicatiecode zelf bestaan, ongeacht hoe vaardig de ontwikkelaar die die code beoordeelt toevallig is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is de dependency-kwetsbaarheid die Koen vond een veelvoorkomend probleem, of een ongewoon randgeval?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is een veelvoorkomend en goed gedocumenteerd probleem in de softwareindustrie in het algemeen, niet uniek voor AI-ondersteunde ontwikkeling — niet-onderhouden dependencies met bekende kwetsbaarheden zijn een standaardcategorie beveiligingszorg die vereist het ecosysteem rond je code te controleren, niet alleen de code die je persoonlijk schreef."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe is een review van Cursor-gebouwde code anders dan het beoordelen van code van een volledig autonome tool zoals Lovable of Bolt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De startkwaliteit van de applicatielogica zelf is doorgaans hoger, gegeven actieve ontwikkelaarsbetrokkenheid, wat betekent dat de review zich meer kan focussen op de adversariële en infrastructuurdimensies en minder op basale logicacorrectheid — hoewel de specifieke gaten nog steeds bewust, apart testen vereisen in plaats van meer code lezen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik mijn eigen dependencies zelf auditen op bekende kwetsbaarheden zonder externe hulp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, tot een betekenisvolle mate — geautomatiseerde dependency-scantools bestaan en vangen veel bekende kwetsbaarheden automatisch op, hoewel een volledige review doorgaans ook onderhoudsactiviteit en licentiegeschiktheid overweegt, wat bredere beoordeling vereist dan een geautomatiseerde scan alleen biedt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vermindert eerdere professionele codeerervaring, zoals die van Koen, hoeveel productiegereedheidswerk doorgaans nodig is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het vermindert doorgaans specifiek het applicatielogica-kwaliteitsgat, aangezien ervaren ontwikkelaars vanaf het begin zorgvuldigere code schrijven, maar het elimineert niet de hier beschreven adversarieel testen-, dependency-, en infrastructuurgaten, die grotendeels onafhankelijk zijn van het vaardigheidsniveau van de oorspronkelijke ontwikkelaar."
+      }
+    }
+  ]
+}
+</script>

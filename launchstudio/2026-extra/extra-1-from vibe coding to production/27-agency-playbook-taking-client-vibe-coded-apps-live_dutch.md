@@ -7,6 +7,31 @@ Doelgroep: Agency / Freelancer (White-Label Partner)
 
 # Het Agency-draaiboek Voor Klant-vibe-gecodeerde Apps Live Brengen
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Het Agency-draaiboek Voor Klant-vibe-gecodeerde Apps Live Brengen",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/agency-playbook-taking-client-vibe-coded-apps-live"
+  }
+}
+</script>
+
+
 Een groeiend aandeel agencyklanten komt nu binnen met iets waar traditionele intakeprocessen niet omheen gebouwd waren: een werkend, AI-gegenereerd prototype in plaats van een blanco briefing of een set wireframes. Dit verandert de daadwerkelijke opdracht, en agencies die deze prototypes beoordelen met een traditionele "we beoordelen en schatten een bouw"-lens neigen ofwel de scope drastisch te overschatten (een volledige herbouw voorstellen die de klant niet wil noch nodig heeft) ofwel het drastisch te onderschatten (aannemen dat "het werkt al" minimale resterende inspanning betekent).
 
 ## Waarom Traditionele Intake-aannames Niet Schoon Overdragen
@@ -36,6 +61,21 @@ Voor agencies die deze capaciteit willen zonder diepe interne expertise op te bo
 [LaunchStudio](https://launchstudio.eu/nl/) werkt met agencies en freelancers als een white-label-productiepartner specifiek voor AI-gegenereerde klantprototypes, en levert het audit- en verhardingswerk onder jouw branding, gesteund door Manifera's engineeringteam en hun specifieke ervaring over 160+ opgeleverde projecten die precies dit patroon overspannen.
 
 [Verken een white-label-partnerschap voor jouw AI-native klanten](https://launchstudio.eu/nl/#contact) — "Jouw branding, onze engineering."
+
+## Veelvoorkomende Bezwaren van Klanten Tijdens een Auditgesprek, en Hoe Ze te Beantwoorden
+
+Klanten die ervan overtuigd zijn dat hun met AI gebouwde prototype 'eigenlijk al klaar' is, sputteren vaak tegen wanneer een bureau een initiële audit voorstelt. Enkele klassieke bezwaren en de doeltreffende antwoorden:
+
+**"Het werkt toch al — waarom moet ik betalen om iemand ernaar te laten kijken?"**
+*Antwoord*: "Er is een essentieel verschil tussen functioneel werken onder ideale omstandigheden en veilig operationeel zijn onder productieomstandigheden. Een auto zonder remmen rijdt ook vooruit totdat je moet stoppen. De audit voorkomt dat je eerste betalende klant het ontbreken van de remmen ontdekt."
+
+**"Kunnen we niet gewoon lanceren en eventuele bugs oplossen als ze opduiken?"**
+*Antwoord*: "Functionele UI-foutjes kun je inderdaad achteraf fixen. Datalekken, gecompromitteerde API-sleutels en verloren betalingen echter niet — die veroorzaken onomkeerbare reputatieschade en AVG-boetes bij je eerste lancering."
+
+**"Heeft de AI-tool dit niet automatisch al veilig gemaakt?"**
+*Antwoord*: "AI-tools optimaliseren voor snelle visuele resultaten, niet voor infrastructurele afscherming. Ze verbergen administratieve knoppen in de UI, maar beveiligen de onderliggende endpoints niet standaard tegen misbruik."
+
+[LaunchStudio](https://launchstudio.eu/nl/) ondersteunt agencies met white-label auditrapporten die deze risico's helder en overtuigend inzichtelijk maken voor eindklanten.
 
 ## Echt voorbeeld
 
@@ -75,3 +115,52 @@ Het geldt breed, hoewel de specifieke waardepropositie verschilt — niet-techni
 ### Wat is de typische uitkomstverdeling — hebben de meeste AI-gegenereerde klantprototypes grote verharding nodig, of is Diederiks relatief lichte scope typisch?
 
 Het varieert aanzienlijk naar welke tool het prototype bouwde en wat het product doet, zoals elders in deze serie behandeld — de waarde van de audit-eerst-aanpak is specifiek dat het onthult welk scenario van toepassing is voor een gegeven klant, in plaats van ofwel een herbouw ofwel een lichte opknapbeurt aan te nemen vóór daadwerkelijk kijken.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe verschilt het auditen van een AI-gegenereerd klantprototype van het typische codereviewproces van een agency voor overgenomen codebases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De specifieke patronen om op te controleren zijn anders en voorspelbaarder — de terugkerende gaten doorheen deze serie behandeld (geheimen, alleen-frontend-auth, ontbrekende foutafhandeling) zijn consistent genoeg over AI-gegenereerde codebases heen dat een gerichte audit zowel sneller als specifieker nuttig is dan een generieke \"beoordeel deze overgenomen code\"-review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Betekent white-label-partnerschap dat de klant van de agency nooit direct interacteert met de partner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doorgaans wel — de opdracht draait onder de branding en klantrelatie van de agency, met het werk van de partner geleverd als onderdeel van het eigen dienstenaanbod van de agency, vergelijkbaar met hoe veel technische onderaannemingsrelaties in de industrie al opereren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou een agency een audit-eerst-opdracht zoals die van Diederik moeten prijzen, relatief aan hun traditionele projectprijzen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De audit zelf wordt doorgaans geprijsd als een aparte, kleinere, snel-doorlooptijd-dienst, met het daaropvolgende verhardings- of bouwwerk apart geprijsd gebaseerd op de specifieke bevindingen van de audit — deze tweestapsstructuur laat de agency accuraat voorstellen in plaats van scope te gokken voordat een codebase daadwerkelijk onderzocht is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is deze audit-eerst-aanpak alleen relevant voor agencies die niet-technische foundersklanten bedienen, of geldt het ook voor technische klanten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het geldt breed, hoewel de specifieke waardepropositie verschilt — niet-technische klanten profiteren van de gewone-taal-vertaling van bevindingen, terwijl technische klanten meer direct profiteren van de snelheid van een gerichte audit versus vanaf nul schatten alsof er nog geen code bestond."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de typische uitkomstverdeling — hebben de meeste AI-gegenereerde klantprototypes grote verharding nodig, of is Diederiks relatief lichte scope typisch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het varieert aanzienlijk naar welke tool het prototype bouwde en wat het product doet, zoals elders in deze serie behandeld — de waarde van de audit-eerst-aanpak is specifiek dat het onthult welk scenario van toepassing is voor een gegeven klant, in plaats van ofwel een herbouw ofwel een lichte opknapbeurt aan te nemen vóór daadwerkelijk kijken."
+      }
+    }
+  ]
+}
+</script>

@@ -7,6 +7,31 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Waarom Dependencykeuzes Gemaakt Door AI-tools Een Tweede Blik Nodig Hebben
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Waarom Dependencykeuzes Gemaakt Door AI-tools Een Tweede Blik Nodig Hebben",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/why-dependency-choices-ai-tools-need-second-look"
+  }
+}
+</script>
+
+
 Elke keer dat jouw AI-codeertool een package installeert om een taak te volbrengen — een bestandsformaat parsen, verbinden met een dienst, een UI-component renderen — maakt het een beslissing namens jou, en het is de moeite waard precies te zijn over welk criterium die beslissing daadwerkelijk optimaliseert, omdat het smaller is dan "de beste beschikbare keuze" en het gat tussen de twee meer ertoe doet dan de meeste founders beseffen.
 
 ## Waarvoor AI-tools Daadwerkelijk Optimaliseren Bij Het Selecteren Van Een Dependency
@@ -36,6 +61,17 @@ Een geautomatiseerde dependency-kwetsbaarheidsscan draaien — een categorie too
 [LaunchStudio](https://launchstudio.eu/nl/) draait dependency-audits — controlerend onderhoudsactiviteit, bekende kwetsbaarheden, en licentiefit — als standaardonderdeel van elke codebasereview, gesteund door Manifera's engineeringdiscipline in het evalueren van de volledige technologiestack, niet alleen de applicatielogica erbovenop.
 
 [Laat jouw dependencies controleren op de risico's die niet zichtbaar zijn bij normaal gebruik](https://launchstudio.eu/nl/#calculator) — deze categorie is onzichtbaar tot iets er specifiek op controleert.
+
+## Hoe Je Binnen een Uur een Eigen Dependency-Audit Uitvoert
+
+Je hebt geen gespecialiseerd security-team nodig om de grootste risico's in je externe bibliotheken op te sporen. Doorloop deze vier stappen:
+
+1. **Draai de ingebouwde security scanner**: Voer `npm audit` of `pnpm audit` uit in je terminal en bekijk welke pakketten gemarkeerd zijn als 'Critical' of 'High'.
+2. **Schoon ongebruikte pakketten op**: AI-tools installeren vaak meerdere bibliotheken voor dezelfde taak (bijv. zowel `axios` als `fetch`, of drie verschillende iconen-sets). Verwijder alles wat niet strikt noodzakelijk is.
+3. **Controleer licenties**: Gebruik een tool als `license-checker` om te verifiëren dat er geen GPL-licenties in je commerciële software zijn geslopen.
+4. **Fix bekende kwetsbaarheden**: Voer `npm audit fix` uit voor veilige patches binnen dezelfde semver-range.
+
+[LaunchStudio](https://launchstudio.eu/nl/) voert diepgaande dependency-audits uit en saneert verouderde pakketten zonder je bestaande code te breken.
 
 ## Echt voorbeeld
 
@@ -75,3 +111,52 @@ Gerelateerd maar apart — die begeleiding dekt kwetsbaarheden in code die de AI
 ### Kunnen dependencyproblemen zoals Youri's licentieprobleem gerepareerd worden zonder de rest van de applicatie te verstoren?
 
 Doorgaans wel, zoals in Youri's geval — één specifieke dependency vervangen met een functioneel equivalent alternatief is doorgaans een begrensde, gerichte wijziging in plaats van iets dat bredere applicatiewijzigingen vereist, consistent met het bredere punt van deze serie dat de meeste productiegereedheidsfixes additief en gericht zijn.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik weten of mijn eigen app een licentieprobleem heeft zoals Youri's voordat het een due-diligence-blokkade wordt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een dependency-audit draaien die specifiek licentietypes controleert tegen jouw beoogde commerciële gebruik, in plaats van te wachten tot due diligence van een externe partij het naar boven brengt, is de proactieve aanpak — de specifieke tools en het proces zijn hetzelfde ongeacht of je de controle draait voor jouw eigen gemoedsrust of je voorbereidt op externe controle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is controleren op bekende kwetsbaarheden in dependencies iets dat eenmalig moet gebeuren, of doorlopend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doorlopend — nieuwe kwetsbaarheden worden ontdekt en bekendgemaakt in bestaande, voorheen-schone packages na verloop van tijd, wat betekent dat een dependency die zes maanden geleden een controle doorstond niet gegarandeerd vandaag nog steeds schoon is, vergelijkbaar in principe met het doorlopende karakter van de observability-praktijken elders in deze serie behandeld."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Garandeert het gebruiken van een populair, bekend package dat het veilig is op deze drie risicodimensies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Populariteit correleert met maar garandeert geen veiligheid op geen van de drie dimensies — zelfs bekende packages raken af en toe onbeheerd, ontwikkelen bekendgemaakte kwetsbaarheden, of dragen licentievoorwaarden incompatibel met bepaald commercieel gebruik, wat betekent dat de specifieke controle nog steeds ertoe doet ongeacht de algemene reputatie van een package."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verschilt dit dependencyrisico van de algemene \"AI-code is niet automatisch veilig\"-mythe elders in deze serie behandeld?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gerelateerd maar apart — die begeleiding dekt kwetsbaarheden in code die de AI-tool daadwerkelijk zelf genereerde; dit dekt risico in externe packages die de AI-tool alleen selecteerde en installeerde, een andere categorie die andere verificatie vereist (externe packagedatabases en licenties controleren, niet jouw eigen applicatielogica reviewen)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen dependencyproblemen zoals Youri's licentieprobleem gerepareerd worden zonder de rest van de applicatie te verstoren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doorgaans wel, zoals in Youri's geval — één specifieke dependency vervangen met een functioneel equivalent alternatief is doorgaans een begrensde, gerichte wijziging in plaats van iets dat bredere applicatiewijzigingen vereist, consistent met het bredere punt van deze serie dat de meeste productiegereedheidsfixes additief en gericht zijn."
+      }
+    }
+  ]
+}
+</script>

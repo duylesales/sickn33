@@ -55,6 +55,19 @@ De waarde van deze drie vragen zit er niet in dat ze op dag één perfecte antwo
 
 Ons team, gevestigd in Ho Chi Minh-stad samen met collega's in Amsterdam en Singapore, werkt met oprichters specifiek aan het concreet maken van deze drie antwoorden — echt infrastructuureigendom, duidelijke gegevenscontrole, en een gedocumenteerd pad vooruit, ongeacht wat een bepaalde AI-tool vervolgens doet. LaunchStudio wordt mogelijk gemaakt door Manifera, een bedrijf met meer dan 11 jaar ervaring in productie-engineering over meer dan 160 opgeleverde projecten, en dit soort eigendomsverheldering is een routineonderdeel van het productieklaar maken van een project. Wilt u een rechtstreeks antwoord op deze drie vragen over uw eigen product, dan kunt u [een gratis intakegesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact).
 
+## Hoe U Eerlijke Antwoorden Voorbereidt op Alle Drie de Vragen Vóórdat Iemand Ze Stelt
+
+Wanneer investeerders, zakelijke klanten of overnamekandidaten ontdekken dat uw software grotendeels met behulp van AI is gebouwd, stellen ze onvermijdelijk drie kritieke vragen. Wie overtuigend en eerlijk antwoordt, wekt direct diep vertrouwen. Zo bereidt u deze antwoorden professioneel voor:
+
+**Vraag 1: "Wie begrijpt deze code als er morgen een ernstige bug optreedt?"** *Uw antwoord:* Erken openhartig dat AI de initiële regels heeft gegenereerd, maar toon direct aan dat de kernarchitectuur is beoordeeld en vastgelegd door professionele engineers. Laat uw architectuurdocumentatie en geautomatiseerde testsuite zien. Dit bewijst dat u niet afhankelijk bent van willekeurige prompts, maar de controle stevig in handen heeft.
+
+**Vraag 2: "Hoe garandeert u dat klantdata strikt gescheiden en veilig blijft?"** *Uw antwoord:* Wijs op de formele scheidingsmechanismen in uw database: Row-Level Security policies die op databaseniveau zijn geconfigureerd en getoetst met geautomatiseerde autorisatietests. Toon aan dat data-isolatie wiskundig en deterministisch wordt afgedwongen, onafhankelijk van wat de AI-laag doet.
+
+**Vraag 3: "Wat is uw intellectueel eigendom als iedereen dezelfde AI-tools kan gebruiken?"** *Uw antwoord:* Maak duidelijk dat uw verdedigbare waarde niet schuilt in generieke code, maar in uw gesloten datamodellen, uw unieke integraties met bedrijfsprocessen van klanten en uw vermogen om een veilige, betrouwbare productie-ervaring te leveren.
+
+Door deze antwoorden vooraf scherp geformuleerd te hebben, transformeert u een potentieel wantrouwende ondervraging in het ultieme bewijs van uw operationele volwassenheid.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de due-diligencevragen die niemand eerst had gesteld
@@ -101,11 +114,46 @@ Nee. De frontend en de AI-tool die is gebruikt om die te bouwen, kunnen precies 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why don't startup advisors typically ask about infrastructure ownership?", "acceptedAnswer": { "@type": "Answer", "text": "Most advisors specialize in strategy, fundraising, or go-to-market questions rather than technical infrastructure, and a smooth product demo gives no visible signal that ownership or data control might be unclear underneath it." } },
-    { "@type": "Question", "name": "What's the risk of not knowing who controls your infrastructure?", "acceptedAnswer": { "@type": "Answer", "text": "The risk usually surfaces during a formal process, like investor diligence or a partnership agreement, when someone specifically needs a clear, verifiable answer, and \"I'm not sure, the AI tool handles that\" can stall or derail the process." } },
-    { "@type": "Question", "name": "How does Manifera help founders answer these three questions?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineers, working from Ho Chi Minh City, Amsterdam, and Singapore, document a project's existing infrastructure and data flows, then migrate ownership to accounts the founder's company fully controls, independent of any single AI platform." } },
-    { "@type": "Question", "name": "Is this relevant even for a very early-stage founder with no investors yet?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Establishing clear ownership early is far cheaper and simpler than untangling it later under the time pressure of an active due diligence or partnership process." } },
-    { "@type": "Question", "name": "Does switching to founder-owned infrastructure require changing the AI tool used to build the product?", "acceptedAnswer": { "@type": "Answer", "text": "No. The frontend and the AI tool used to build it can stay exactly as they are. This is specifically about the hosting, database, and infrastructure layer underneath, not the tool used for development." } }
+    {
+      "@type": "Question",
+      "name": "Waarom vragen startupadviseurs doorgaans niet naar infrastructuureigendom?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste adviseurs specialiseren zich in strategie, financiering of go-to-marketvragen in plaats van technische infrastructuur, en een soepele productdemo geeft geen zichtbaar signaal dat eigendom of gegevenscontrole eronder onduidelijk zou kunnen zijn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het risico van niet weten wie controle heeft over uw infrastructuur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het risico duikt meestal op tijdens een formeel proces, zoals due diligence door investeerders of een partnerschapsovereenkomst, wanneer iemand specifiek een duidelijk, verifieerbaar antwoord nodig heeft, en \"ik weet het niet zeker, de AI-tool regelt dat\" een proces kan vertragen of doen ontsporen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe helpt Manifera oprichters deze drie vragen te beantwoorden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De technici van Manifera, werkend vanuit Ho Chi Minh-stad, Amsterdam en Singapore, documenteren de bestaande infrastructuur en gegevensstromen van een project, en migreren vervolgens eigendom naar accounts die volledig eigendom zijn van het bedrijf van de oprichter, onafhankelijk van een bepaald AI-platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit ook relevant voor een heel vroeg-fase oprichter zonder investeerders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Vroeg duidelijk eigendom vaststellen is veel goedkoper en eenvoudiger dan het later ontrafelen onder de tijdsdruk van een actief due-diligence- of partnerschapsproces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vereist overstappen naar door de oprichter beheerde infrastructuur dat de gebruikte AI-tool verandert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. De frontend en de AI-tool die is gebruikt om die te bouwen, kunnen precies blijven zoals ze zijn. Dit gaat specifiek over de hosting-, database- en infrastructuurlaag eronder, niet over de tool die is gebruikt voor de ontwikkeling."
+      }
+    }
   ]
 }
 </script>

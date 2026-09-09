@@ -39,6 +39,19 @@ Vraag uzelf eerlijk af: is er een specifieke week of seizoen in aantocht waarin 
 
 LaunchStudio, mogelijk gemaakt door Manifera's meer dan 11 jaar softwareontwikkelingservaring, werkt met oprichters in en rond Ho Chi Minh-stad om de overstap van een gratis laag te plannen voordat een voorspelbare drukke periode aanbreekt, niet erdoor. U kunt met onze [prijscalculator](https://launchstudio.eu/nl/#calculator) een helder beeld krijgen van wat die overstap doorgaans kost, en het [portfolio](https://www.manifera.com/portfolio/) van Manifera toont hetzelfde schaalwerk geleverd voor veel grotere klanten.
 
+## De Vier Vormen van Knijpen Die Schuilgaan Achter 'Gratis'
+
+Wanneer een cloudplatform of AI-provider een royale 'gratis' tier aanbiedt, betalen oprichters vaak met een andere, onzichtbare munt: throttling (het opzettelijk afknijpen van prestaties). Let op deze vier vormen van throttling die uw gebruikerservaring stiekem verstieren:
+
+**1. CPU- en Concurrency-Knijpen.** Gratis servers krijgen slechts een fractie van een virtuele CPU-kern toegewezen. Zodra twee gebruikers tegelijkertijd een zware berekening starten, schiet de reactietijd omhoog van 200 milliseconden naar tien seconden.
+
+**2. Koude Starts (Cold Starts).** Na tien minuten inactiviteit wordt uw servercontainer stilgelegd. De eerstvolgende bezoeker moet wachten tot het complete besturingssysteem en runtime opnieuw zijn opgestart, wat resulteert in een tergend trage eerste laadtijd.
+
+**3. Kunstmatige Wachtrijen bij Externe AI-Aanroepen.** Gratis of lage-tier API-sleutels krijgen de laagste prioriteit bij modelleveranciers. Tijdens wereldwijde piekuren krijgen betalende klanten voorrang, terwijl verzoeken van uw gratis sleutel in lange wachtrijen belanden of time-outs genereren.
+
+**4. Bandbreedte- en Netwerkklimaten.** Het downloaden van grote bestanden of PDF-exports wordt kunstmatig begrensd op lage snelheden.
+
+Bespaar niet op de verkeerde zaken. Een bescheiden investering in betaalde tiers elimineert deze knelpunten onmiddellijk en bezorgt uw bezoekers de snelle, professionele ervaring die ze verwachten.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: vertraagd tijdens de drukste week van het jaar
@@ -85,11 +98,46 @@ Een groot deel van dit infrastructuurwerk loopt via het engineeringcentrum van L
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why do free AI app builder tiers throttle exactly during busy periods?", "acceptedAnswer": { "@type": "Answer", "text": "Throttling limits are designed around request volume, which is highest during busy periods, exactly when shared, capped infrastructure is most likely to bind." } },
-    { "@type": "Question", "name": "Isn't it cheaper to just stay on the free tier as long as possible?", "acceptedAnswer": { "@type": "Answer", "text": "Only in months nothing goes wrong. A throttling failure during a critical week usually costs far more than the savings from delaying an upgrade." } },
-    { "@type": "Question", "name": "How do I know when to move off a free tier?", "acceptedAnswer": { "@type": "Answer", "text": "If a predictable busy period is ahead, plan the move for the week before it, not the week the failure happens." } },
-    { "@type": "Question", "name": "Can LaunchStudio help size infrastructure for peak demand in advance?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LaunchStudio's engineers, backed by Manifera, migrate founders onto infrastructure sized for peak load with capacity alerts set up in advance." } },
-    { "@type": "Question", "name": "Where is LaunchStudio's engineering center that handles these migrations?", "acceptedAnswer": { "@type": "Answer", "text": "Much of this work runs through LaunchStudio's engineering center in Ho Chi Minh City, alongside Amsterdam and Singapore." } }
+    {
+      "@type": "Question",
+      "name": "Waarom vertragen gratis lagen van AI-appbouwers precies tijdens drukke periodes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat vertragingslimieten zijn ontworpen rond aanvraagvolume, en aanvraagvolume is precies tijdens drukke periodes het hoogst — dat is wanneer de gedeelde, begrensde infrastructuur van een gratis laag het meest waarschijnlijk bijt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het niet gewoon goedkoper om zo lang mogelijk op de gratis laag te blijven?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alleen in de maanden waarin niets misgaat. De kost van een vertragingsfalen tijdens een kritieke week is doorgaans veel hoger dan de besparing van het uitstellen van een upgrade, zodra verloren vertrouwen en nood-migratiekosten worden meegeteld."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik wanneer ik van een gratis laag moet afstappen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Als er een voorspelbare drukke periode in aantocht is — een seizoen, een lancering, een promotie — plan de overstap dan de week ervoor, niet de week dat het gebeurt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan LaunchStudio helpen infrastructuur vooraf af te stemmen op piekvraag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, de technici van LaunchStudio, ondersteund door Manifera, migreren regelmatig oprichters van gratis lagen naar infrastructuur die is afgestemd op werkelijke piekbelasting, met capaciteitsmeldingen die vooraf worden opgezet voor bekende drukke periodes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar bevindt zich het engineeringcentrum van LaunchStudio dat deze migraties afhandelt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een groot deel van dit infrastructuurwerk loopt via het engineeringcentrum van LaunchStudio in Ho Chi Minh-stad, naast de hubs in Amsterdam en Singapore."
+      }
+    }
   ]
 }
 </script>

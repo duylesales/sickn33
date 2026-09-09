@@ -56,6 +56,10 @@ A G2C digital services vendor should be evaluated on whether the platform genuin
 
 Manifera has supported public sector and citizen-facing digital service builds where accessibility and inclusive design were core requirements from the RFP stage forward, not retrofitted after launch. See our [custom software development](https://www.manifera.com/services/custom-software-development/) and [web app development](https://www.manifera.com/services/web-app-develop/) capabilities, and our related guides on [higher education vendor WCAG accessibility compliance](https://www.manifera.com/blog/higher-education-software-vendors-wcag-accessibility-compliance-audit) and [government digital services vendor security clearance requirements](https://www.manifera.com/blog/choosing-a-government-digital-services-vendor-security-clearance-requirements) for adjacent public sector procurement considerations. [Contact us](https://www.manifera.com/contact-us/) if your procurement process needs an independent accessibility and inclusion review of a shortlisted G2C vendor.
 
+## Where This Goes Wrong: The Assisted-Channel Gap Nobody Scores
+
+The single most common G2C procurement failure isn't a missing accessibility feature — it's a vendor proposal that treats the assisted channel (phone, in-person, kiosk) as an operational afterthought the government will "figure out separately," rather than an integrated part of the platform architecture. In practice this shows up as three specific gaps: a call center or in-person staff interface that requires re-entering data the citizen already submitted online, because the assisted channel wasn't built against the same backend as the self-service flow; no shared case or transaction ID between channels, so a resident who starts online and finishes by phone has to explain their situation from scratch to a staff member with no visibility into the abandoned session; and a vendor pricing model that only quotes the self-service platform, leaving the government to separately fund and staff the assisted channel with no vendor accountability for how well the two connect. Score this explicitly in the RFP: require the vendor to demonstrate a live handoff from a self-service session to a staff-assisted one, showing the staff member's screen pulling the citizen's existing data rather than starting blank. A vendor who can't demonstrate this in the proposal stage will not solve it after go-live, when the political cost of the gap is dramatically higher than a lost procurement scoring point.
+
 ## Frequently Asked Questions
 
 ### What accessibility documentation should a G2C vendor be able to provide?
@@ -72,6 +76,18 @@ Confirm exactly where citizen data physically resides, whether the vendor's stan
 
 ### What contract terms are specific to public sector G2C vendor agreements?
 A defined public records retention and export obligation independent of the vendor's standard retention policy, a service continuity plan covering what happens to citizen access if the vendor relationship ends, and transparency and appeal-rights provisions for any automated decision-making that affects citizen eligibility or benefits.
+
+### (Scenario: call center volume increased after a self-service portal launched, mirroring the article's opening example) How do we diagnose whether the vendor's platform or the service design is at fault?
+Pull the call center logs and categorize call reasons — if the majority are residents who started the online flow and couldn't finish it, the failure is in the platform's completion rate and assisted-channel handoff, not a general service-design problem. Request the vendor's own completion-rate analytics for the affected flows as a first diagnostic step, since a properly instrumented platform should already surface where residents are abandoning.
+
+### (Scenario: procurement lead is evaluating two vendors, one cheaper with a generic VPAT and one pricier with a flow-specific accessibility audit) How should the price difference factor into the scoring?
+Treat the flow-specific audit as evidence of genuine accessibility engineering rather than a compliance checkbox, and weight it accordingly in the RFP scoring rubric rather than treating both VPATs as equivalent because both technically exist. The cheaper vendor's generic VPAT tells you their platform was audited once, broadly — it does not tell you the specific citizen-facing permit or benefits flow your residents will use was ever tested.
+
+### (Scenario: a benefits eligibility determination will be partly automated by the new platform) What should the RFP require regarding algorithmic transparency before this goes live?
+Require the vendor to document, in plain language, exactly which factors the automated determination weighs and in what order, plus a defined human appeal path for any resident who disputes the outcome. Under emerging algorithmic accountability rules, a government body deploying automated eligibility determinations without a documented appeal mechanism is exposed regardless of how accurate the vendor claims the automation is.
+
+### (Scenario: jurisdiction requires citizen data to stay within national borders but the vendor's support team operates from a different country) Does that violate data residency requirements?
+It depends on whether support staff have direct data access or only metadata/ticket-level visibility — confirm this distinction explicitly rather than accepting "our support team doesn't touch the data" as a given. If support staff can view actual citizen records to resolve tickets, that access needs to be evaluated against the residency requirement exactly as rigorously as the primary hosting infrastructure.
 
 <script type="application/ld+json">
 {
@@ -102,6 +118,26 @@ A defined public records retention and export obligation independent of the vend
       "@type": "Question",
       "name": "What contract terms are specific to public sector G2C vendor agreements?",
       "acceptedAnswer": {"@type": "Answer", "text": "A defined public records retention and export obligation independent of the vendor's standard retention policy, a service continuity plan covering what happens to citizen access if the vendor relationship ends, and transparency and appeal-rights provisions for any automated decision-making that affects citizen eligibility or benefits."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: call center volume increased after a self-service portal launched, mirroring the article's opening example) How do we diagnose whether the vendor's platform or the service design is at fault?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Pull the call center logs and categorize call reasons — if most are residents who started the online flow and couldn't finish, the failure is in the platform's completion rate and assisted-channel handoff. Request the vendor's own completion-rate analytics as a first diagnostic step."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: procurement lead is evaluating two vendors, one cheaper with a generic VPAT and one pricier with a flow-specific accessibility audit) How should the price difference factor into the scoring?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Treat the flow-specific audit as evidence of genuine accessibility engineering and weight it accordingly, rather than treating both VPATs as equivalent. A generic VPAT tells you the platform was audited broadly — not that the specific citizen-facing flow your residents use was ever tested."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a benefits eligibility determination will be partly automated by the new platform) What should the RFP require regarding algorithmic transparency before this goes live?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Require the vendor to document in plain language which factors the automated determination weighs, plus a defined human appeal path for disputed outcomes. A government body deploying automated eligibility determinations without a documented appeal mechanism is exposed regardless of the automation's claimed accuracy."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: jurisdiction requires citizen data to stay within national borders but the vendor's support team operates from a different country) Does that violate data residency requirements?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It depends on whether support staff have direct data access or only metadata/ticket-level visibility — confirm this explicitly. If support staff can view actual citizen records, that access needs to be evaluated against the residency requirement as rigorously as the primary hosting infrastructure."}
     }
   ]
 }

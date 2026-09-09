@@ -7,6 +7,31 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Het Weekendframework: Zes Dingen Tussen Jouw Prototype En Lancering
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Het Weekendframework: Zes Dingen Tussen Jouw Prototype En Lancering",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/weekend-framework-six-things-prototype-launch"
+  }
+}
+</script>
+
+
 De meeste technische founders nemen aan dat het dichten van de kloof van vibe coding naar productie weken ongeglamoureus infrastructuurwerk vereist. In de praktijk dekken zes specifieke, goed afgebakende fixes het overgrote deel van wat ontbreekt — en een founder die al kan programmeren kan de meeste hiervan realistisch in een geconcentreerd weekend doorwerken, mits ze de items aanpakken in de volgorde die een ervaren engineer daadwerkelijk zou kiezen, wat niet de volgorde is die de meeste mensen instinctief zouden kiezen.
 
 ## Waarom Volgorde Meer Uitmaakt Dan De Lijst Zelf
@@ -44,6 +69,19 @@ Voor een founder met werkende technische vaardigheden vereisen deze zes items op
 [LaunchStudio](https://launchstudio.eu/nl/) voert precies dit framework uit voor founders die liever Manifera's engineers het professioneel laten uitvoeren dan er hun eigen weekend aan te besteden — dezelfde zes dimensies, dezelfde volgordelogica, geleverd tegen een vaste prijs en tijdlijn.
 
 [Vraag een afgebakende schatting aan voor jouw specifieke gaten](https://launchstudio.eu/nl/#calculator) — de meeste prototypes hebben niet alle zes met gelijke urgentie nodig, en een goede scope vertelt je welke er specifiek het meest toe doen voor jouw app.
+
+## Een Verificatiechecklist voor Elk van de Zes Onderdelen
+
+Een onderdeel van deze lijst afronden en verifiëren dat het ook écht waterdicht functioneert zijn twee wezenlijk verschillende beweringen. De kloof daartussen is precies waar solofounders zichzelf het vaakst onbedoeld voor de gek houden. Een beknopte, concrete controle voor elk van de zes pijlers:
+
+- **Geheimen en omgevingsvariabelen**: Voer een volledige scan van de Git-geschiedenis uit tegen je eigen `.env`-patronen (met tools zoals `trufflehog` of `git-secrets`) en bevestig dat dit nul resultaten oplevert, in plaats van alleen aan te nemen dat je huidige lokale bestanden schoon zijn.
+- **Foutafhandeling**: Verbreek je netwerkverbinding halverwege een aanroep naar een externe service en stel vast dat de gebruiker een specifieke, contextuele foutmelding ziet in plaats van een oneindige spinner, een wit scherm of een generieke browsercrash.
+- **Authenticatie en autorisatie**: Gebruik een geldig sessietoken van Account A en probeer de gegevens van Account B rechtstreeks via de API op te vragen, waarbij je de eigen frontend-interface volledig omzeilt; een onverbiddelijke `403 Forbidden` statuscode is de enige acceptabele uitkomst.
+- **CI-pipeline**: Push bewust een commit die een kleine component breekt of een syntaxfout bevat, en controleer of de automated pipeline dit daadwerkelijk detecteert en de deployment direct blokkeert, in plaats van erop te vertrouwen dat het wel zal werken.
+- **Testdekking**: Schrijf ten minste drie geautomatiseerde integratietests die het primaire conversiepad (aanmelden, betalen, kerntaak afronden) van begin tot eind verifiëren; als een van deze breekt, mag de build onder geen beding slagen.
+- **Basale observability**: Trigger opzettelijk een ongeziene serverfout (een 500-error) en controleer binnen hoeveel seconden je daarvan een melding ontvangt in je log-dashboard of foutmonitoringsysteem, inclusief het exacte stacktrace-bestand en regelnummer.
+
+[LaunchStudio](https://launchstudio.eu/nl/) biedt deze verificatielaag als een vaste audit en implementatie — we nemen je prototype onder de loep en verharden de zes pijlers zonder je UI te verstoren.
 
 ## Echt voorbeeld
 
@@ -83,3 +121,52 @@ Het is grotendeels een eenmalige opzet die vervolgens automatisch draait bij elk
 ### Hoe weet ik of het specifieke risicoprofiel van mijn app betekent dat sommige van deze zes items meer uitmaken dan andere?
 
 Dit hangt sterk af van wat je app doet en aanraakt — een app die betalingen of gevoelige persoonlijke data verwerkt zou authenticatie en geheimen boven de rest moeten prioriteren volgens de hier beschreven impactstraal-logica, terwijl een laag-risico intern tool sommige items redelijkerwijs kan deprioriteren, wat precies het soort beoordeling is dat een goed scopinggesprek oplost in plaats van een generieke checklist.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kan ik echt alle zes items zelf in één weekend afronden als ik geen codeerachtergrond heb?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Realistisch gezien nee — de \"weekend\"-schatting gaat uit van bestaande technische vaardigheid met de betrokken tools en concepten, zoals bij Thijs, wiens eerdere ervaring met logistieke software betekende dat hij time-outs en retries al conceptueel begreep voordat hij de code aanraakte. Niet-technische founders moeten doorgaans sommige of alle zes items delegeren, wat precies de kerndienst is die LaunchStudio biedt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welk van de zes items wordt het vaakst overgeslagen door founders die dit zelf proberen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Authenticatie en autorisatie op API-niveau is het vaakst onvolledige item, aangezien het het minst zichtbaar is bij normaal testen — het inlogscherm in de frontend werkt prima, wat verhult dat de onderliggende API geen equivalente bescherming heeft tenzij iemand het bewust test door de interface te omzeilen, wat de meeste zelfsturende founders niet bedenken te doen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het mogelijk om het framework te splitsen, zoals Thijs deed, en alleen hulp te krijgen bij een deel ervan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — LaunchStudio bakent opdrachten af rond welke specifieke gaten een founder ook identificeert, of dat nu alle zes items zijn of een gerichte subset die een technische founder al gedeeltelijk zelf heeft aangepakt, met de opdracht dienovereenkomstig geprijsd op basis van de daadwerkelijk resterende scope."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vereist het opzetten van een CI-pijplijn doorlopend onderhoud, of is het een eenmalige opzet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is grotendeels een eenmalige opzet die vervolgens automatisch draait bij elke toekomstige codewijziging, hoewel het baat heeft bij periodieke herziening naarmate je codebase en testdekking groeien — nieuwe functies hebben soms nieuwe smoke tests nodig om betekenisvol beschermend te blijven, maar dit is een investering met laag onderhoud in verhouding tot de doorlopende bescherming die het biedt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of het specifieke risicoprofiel van mijn app betekent dat sommige van deze zes items meer uitmaken dan andere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dit hangt sterk af van wat je app doet en aanraakt — een app die betalingen of gevoelige persoonlijke data verwerkt zou authenticatie en geheimen boven de rest moeten prioriteren volgens de hier beschreven impactstraal-logica, terwijl een laag-risico intern tool sommige items redelijkerwijs kan deprioriteren, wat precies het soort beoordeling is dat een goed scopinggesprek oplost in plaats van een generieke checklist."
+      }
+    }
+  ]
+}
+</script>

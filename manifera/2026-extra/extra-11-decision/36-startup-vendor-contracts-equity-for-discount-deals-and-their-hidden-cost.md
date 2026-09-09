@@ -50,6 +50,19 @@ Before agreeing to any equity component in a vendor contract, get an independent
 
 Equity-for-discount vendor deals feel like a clever way to stretch limited pre-seed or seed cash, but they routinely cost far more in diluted, compounding cap table value than the cash saved upfront, and they introduce due diligence friction at exactly the moments — fundraising rounds — when a clean cap table matters most. If cash is the real constraint, deferred payment terms or a modest cash discount for a longer commitment solve the problem without the permanent cost. Manifera works with early-stage founders on cash-based, milestone-tied engagement structures specifically because they keep the cap table clean through every future round — see how we structure early-stage engagements in [our way of working](https://www.manifera.com/about-us/our-way-of-working/), and read more on protecting your fundraising position in our related piece on [choosing a vendor before a fundraising round](https://www.manifera.com/blog/choosing-a-software-vendor-before-a-fundraising-round-due-diligence-readiness).
 
+## Contract Clauses That Make an Equity-for-Services Deal Less Dangerous
+
+If a founder decides to move forward with any equity component, specific contract language matters more than the headline percentage. Insist on these clauses before signing:
+
+- **Standard 4-year vesting with a 1-year cliff**, identical to an employee grant — never immediate full vesting on signing, which leaves the vendor holding the entire stake even if the engagement ends after month two.
+- **A single-trigger clawback** tied to material breach or early termination for cause, so an underperforming vendor doesn't walk away with equity earned for work never delivered.
+- **No board seat or information rights** attached to the grant — vendor equity should carry the same passive economic rights as a small employee option pool grant, not governance rights appropriate to a lead investor.
+- **A capped stake, typically under 2%** for a single MVP-scale engagement — deals proposing 5% or more for one build should trigger real scrutiny, since that level is disproportionate to a bounded, several-month engagement.
+- **Explicit 409A documentation obligations** written into the agreement, naming who commissions the valuation and who bears the cost, so it isn't discovered as a gap during Series A diligence.
+- **A right of first refusal or repurchase option** for the company if the vendor relationship ends, so an unvested or partially vested stake doesn't sit indefinitely on the cap table held by a vendor no longer providing any services.
+
+Every one of these clauses costs nothing to negotiate upfront and prevents the exact cleanup work that otherwise surfaces during a priced round.
+
 ## Frequently Asked Questions
 
 ### Is it ever a good idea to pay a software vendor in equity instead of cash?
@@ -72,6 +85,22 @@ A 409A valuation is the independent appraisal used to price employee stock optio
 
 Deferred payment terms — paying a portion of the fee 60-90 days after invoice — or a modest cash discount (10-20%) in exchange for a longer engagement commitment. Both address genuine cash constraints without the permanent, compounding cap table cost that equity introduces.
 
+### (Scenario: vendor proposes an equity grant with no vesting schedule) What should a founder do if a vendor's proposed equity-for-services deal has no vesting attached?
+
+Reject or renegotiate it — a fully vested grant on signing means the vendor keeps the entire stake even if the engagement is terminated after the first milestone. Insist on standard 4-year vesting with a 1-year cliff, identical to an employee grant, before agreeing to any equity component.
+
+### (Scenario: founder already granted vendor equity before consulting a lawyer) What's the fix if a founder already signed an equity-for-services deal without proper 409A documentation?
+
+Commission a retroactive 409A valuation and proper grant documentation as soon as possible, ideally well before a priced round begins — cleaning this up proactively, with a startup lawyer, costs far less in time and legal fees than discovering the gap mid-diligence when an investor's counsel flags it.
+
+### (Scenario: vendor requests a large equity stake for a single MVP build) How much vendor equity for one MVP engagement should raise a red flag?
+
+Anything above roughly 2% for a single, bounded MVP-scale build is disproportionate and worth real scrutiny — a 5% or higher ask for one project is a common sign the vendor is pricing in a portfolio-style bet rather than a fair trade for the actual discount offered.
+
+### (Scenario: founder wants to offer equity to keep a long-term vendor relationship exclusive) Does offering a vendor equity help lock in a better long-term working relationship?
+
+Not reliably — equity doesn't create the accountability a strong contract does, and it introduces cap table risk that a standard retainer or long-term services agreement with clear SLAs and renewal terms achieves without dilution. A multi-year contract with defined milestones is a more effective retention tool than equity for a services relationship.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -81,7 +110,11 @@ Deferred payment terms — paying a portion of the fee 60-90 days after invoice 
     {"@type": "Question", "name": "How much does a 5% vendor equity stake actually cost a founder?", "acceptedAnswer": {"@type": "Answer", "text": "More than it appears. On a company that later raises at a €15 million post-money valuation, a 5% stake is worth €750,000 on paper — and unlike a one-time cash payment, it dilutes alongside every founder and investor at every subsequent funding round, making it a recurring cost rather than a one-time trade."}},
     {"@type": "Question", "name": "Why do investors care about vendor equity on the cap table?", "acceptedAnswer": {"@type": "Answer", "text": "Investors review the cap table closely during due diligence and want to understand why a service provider holds equity, whether it came with any control rights, and whether it signals an ongoing dependency. An unusually large stake or one without standard vesting is a common source of due diligence friction that can slow down or complicate a round."}},
     {"@type": "Question", "name": "What is a 409A valuation and why does vendor equity affect it?", "acceptedAnswer": {"@type": "Answer", "text": "A 409A valuation is the independent appraisal used to price employee stock options fairly for tax purposes. Equity issued to a vendor for services rather than cash needs to be properly documented and valued, and handshake deals without this documentation routinely surface as a gap during Series A due diligence."}},
-    {"@type": "Question", "name": "What's a safer alternative to equity for a cash-constrained startup?", "acceptedAnswer": {"@type": "Answer", "text": "Deferred payment terms — paying a portion of the fee 60-90 days after invoice — or a modest cash discount (10-20%) in exchange for a longer engagement commitment. Both address genuine cash constraints without the permanent, compounding cap table cost that equity introduces."}}
+    {"@type": "Question", "name": "What's a safer alternative to equity for a cash-constrained startup?", "acceptedAnswer": {"@type": "Answer", "text": "Deferred payment terms — paying a portion of the fee 60-90 days after invoice — or a modest cash discount (10-20%) in exchange for a longer engagement commitment. Both address genuine cash constraints without the permanent, compounding cap table cost that equity introduces."}},
+    {"@type": "Question", "name": "What should a founder do if a vendor's proposed equity-for-services deal has no vesting attached?", "acceptedAnswer": {"@type": "Answer", "text": "Reject or renegotiate it — a fully vested grant on signing means the vendor keeps the entire stake even if the engagement ends after the first milestone. Insist on standard 4-year vesting with a 1-year cliff, identical to an employee grant."}},
+    {"@type": "Question", "name": "What's the fix if a founder already signed an equity-for-services deal without proper 409A documentation?", "acceptedAnswer": {"@type": "Answer", "text": "Commission a retroactive 409A valuation and proper grant documentation as soon as possible, ideally before a priced round begins — cleaning this up proactively costs far less than discovering the gap mid-diligence."}},
+    {"@type": "Question", "name": "How much vendor equity for one MVP engagement should raise a red flag?", "acceptedAnswer": {"@type": "Answer", "text": "Anything above roughly 2% for a single, bounded MVP-scale build is disproportionate — a 5% or higher ask for one project is a common sign the vendor is pricing in a portfolio-style bet rather than a fair trade for the discount offered."}},
+    {"@type": "Question", "name": "Does offering a vendor equity help lock in a better long-term working relationship?", "acceptedAnswer": {"@type": "Answer", "text": "Not reliably — equity doesn't create the accountability a strong contract does, and it introduces cap table risk. A multi-year contract with defined milestones and renewal terms is a more effective retention tool than equity for a services relationship."}}
   ]
 }
 </script>

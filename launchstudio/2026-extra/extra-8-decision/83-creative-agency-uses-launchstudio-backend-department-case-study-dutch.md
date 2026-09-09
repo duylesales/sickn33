@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een Creatief Bureau Gebruikt LaunchStudio Als Zijn Backend-Afdeling"
+Titel: "Case Study: Een Creatief Bureau Gebruikt LaunchStudio Als Zijn Backend-Afdeling"
 Trefwoorden: creatief bureau white-label backend, bureau engineeringpartner, digitale studio full-stack levering, backendontwikkeling uitbesteden bureau, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: Bureau / Freelancer (White-Label Partner)
 ---
 
-# Praktijkvoorbeeld: Een Creatief Bureau Gebruikt LaunchStudio Als Zijn Backend-Afdeling
+# Case Study: Een Creatief Bureau Gebruikt LaunchStudio Als Zijn Backend-Afdeling
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een Creatief Bureau Gebruikt LaunchStudio Als Zijn Backend-Afdeling",
+  "headline": "Case Study: Een Creatief Bureau Gebruikt LaunchStudio Als Zijn Backend-Afdeling",
   "description": "Hoe een 8-koppig ontwerp- en brandingbureau in Utrecht uitbreidde naar maatwerk webapplicaties zonder senior software engineers aan te nemen, met LaunchStudio als hun stille technische motor.",
   "author": {
     "@type": "Organization",
@@ -63,8 +63,7 @@ De mechanica van een white-label-opdracht is bewust ongeglamoureerd. LaunchStudi
 
 [Ga in partnerschap met LaunchStudio om full-stack ontwikkeling aan te bieden zonder de aannemeoverhead](https://launchstudio.eu/nl/#contact) — lever grotere scopes en bescherm uw marges.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een Creatief Bureau in de Praktijk: Studio Koppel (Utrecht)
 
 Studio Koppel is een 8-koppig branding- en interactief ontwerpbureau gevestigd in Utrecht, geleid door medeoprichter en Creative Director Maarten van Leeuwen. Een langdurige klant — een duurzame-energieconsultancy met meer dan 150 zakelijke accounts — benaderde Studio Koppel om een interactief CO2-voetafdrukauditportaal te ontwerpen en bouwen met klantlogins, geautomatiseerde PDF-rapportgeneratie en abonnementsfacturering.

@@ -68,6 +68,14 @@ Manifera introduced a depth-probing interview process for the client's subsequen
 
 A full-stack developer hired on resume breadth alone but lacking real depth anywhere in the stack tends to produce diffuse, low-severity quality issues spread across the entire codebase, harder to catch and fix than a concentrated defect would be, because no single area is obviously the problem. Depth-probing interviews cost a slightly longer hiring process relative to the ongoing cost of diffuse quality issues across a codebase. [Talk to Manifera about depth-tested full-stack hiring](https://www.manifera.com/contact-us/).
 
+## The Depth-Probing Scorecard
+
+A structured depth-probing loop replaces one generic 60-minute technical interview with three shorter, sharper sessions totaling roughly the same time: a 20-minute single-layer depth probe, a 45-60 minute realistic full-feature exercise, and a 15-minute past-project trade-off discussion. The added structure costs almost no extra interviewer time — it redistributes it toward signal instead of coverage.
+
+Score each candidate on three axes, not one aggregate impression: depth (can they go three levels deep on follow-up questions in at least one layer without falling back to generic answers), integration (does their full-feature exercise show the data model and interface decisions actually informing each other, or were they built independently and glued together), and specificity (do their trade-off answers name a real constraint — a specific poultry-house sensor's polling interval, a specific query that needed an index — versus a textbook trade-off).
+
+For a farm-management platform specifically, weight the depth probe toward whichever layer touches IoT sensor ingestion or time-series data handling, since that's where agri-tech platforms most often fail — not in the CRUD-heavy business logic every candidate has seen before, but in handling irregular, high-volume sensor data from poultry-house environmental controls reliably. A candidate who can go deep there but is merely competent elsewhere is a stronger hire than one who's evenly mediocre across all four layers.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO hiring full-stack developers based on resume review) Why is resume breadth a weak signal for full-stack developer quality?
@@ -90,6 +98,22 @@ Ask about a specific technology choice they'd make differently in hindsight, on 
 
 A realistic full-feature exercise built end-to-end reveals genuine cross-layer integration far better than isolated, layer-specific puzzles tested independently.
 
+### (Scenario: CTO planning interview loop time budget) How much longer does a depth-probing interview loop take compared to a standard full-stack interview?
+
+Roughly the same total time, restructured — a 20-minute depth probe, a 45-60 minute full-feature exercise, and a 15-minute trade-off discussion, replacing a single generic 60-90 minute technical round with the same time budget redirected toward actual signal.
+
+### (Scenario: CTO hiring specifically for a poultry-sector IoT integration) Does a farm-management platform integrating poultry-house sensors require different full-stack depth than a typical business application?
+
+Yes — the depth probe should weight toward time-series and IoT data handling specifically, since agri-tech platforms most often fail on irregular, high-volume sensor ingestion from environmental controls, not on the CRUD-heavy business logic every candidate has already seen.
+
+### (Scenario: CTO building a mixed team of specialists and full-stack developers) Should full-stack developers replace narrow specialists on a team, or work alongside them?
+
+Alongside — full-stack developers are best used for features that span layers and need someone who sees the whole picture, while specialists still own the architecturally sensitive core of their layer; treating full-stack hires as specialist replacements erodes the depth a platform eventually needs.
+
+### (Scenario: CTO concerned about AI-assisted take-home submissions) Can AI coding assistants make a shallow candidate's take-home exercise falsely look like real depth?
+
+Yes, which is why the live trade-off discussion matters more now than the take-home artifact itself — asking a candidate to defend a specific decision from their own submission in real time, unscripted, exposes whether they understood what was built or generated it without absorbing the reasoning.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +123,11 @@ A realistic full-feature exercise built end-to-end reveals genuine cross-layer i
     { "@type": "Question", "name": "(Scenario: CTO trying to design a better full-stack interview) What's a better test than asking about many different technologies separately?", "acceptedAnswer": { "@type": "Answer", "text": "A depth probe within a single layer reveals the underlying rigor that predicts quality more reliably than broad, shallow coverage." } },
     { "@type": "Question", "name": "(Scenario: CTO worried about diffuse quality issues in production) What does hiring a breadth-only developer typically produce in real production code?", "acceptedAnswer": { "@type": "Answer", "text": "Recurring, low-severity quality issues spread across the entire codebase, harder to catch than a concentrated defect." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to verify genuine hands-on experience) How can we tell if a candidate's experience with a technology is genuine or superficial?", "acceptedAnswer": { "@type": "Answer", "text": "Ask about a specific technology choice they'd make differently in hindsight on a real past project. Genuine experience produces specific answers." } },
-    { "@type": "Question", "name": "(Scenario: CTO deciding how to structure a full-stack coding exercise) Should a full-stack coding exercise test each layer separately or as an integrated whole?", "acceptedAnswer": { "@type": "Answer", "text": "A realistic full-feature exercise built end-to-end reveals genuine cross-layer integration far better than isolated, layer-specific puzzles." } }
+    { "@type": "Question", "name": "(Scenario: CTO deciding how to structure a full-stack coding exercise) Should a full-stack coding exercise test each layer separately or as an integrated whole?", "acceptedAnswer": { "@type": "Answer", "text": "A realistic full-feature exercise built end-to-end reveals genuine cross-layer integration far better than isolated, layer-specific puzzles." } },
+    { "@type": "Question", "name": "(Scenario: CTO planning interview loop time budget) How much longer does a depth-probing interview loop take compared to a standard full-stack interview?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly the same total time, restructured into a 20-minute depth probe, a 45-60 minute full-feature exercise, and a 15-minute trade-off discussion." } },
+    { "@type": "Question", "name": "(Scenario: CTO hiring specifically for a poultry-sector IoT integration) Does a farm-management platform integrating poultry-house sensors require different full-stack depth than a typical business application?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the depth probe should weight toward time-series and IoT data handling, since agri-tech platforms most often fail on irregular sensor ingestion rather than standard business logic." } },
+    { "@type": "Question", "name": "(Scenario: CTO building a mixed team of specialists and full-stack developers) Should full-stack developers replace narrow specialists on a team, or work alongside them?", "acceptedAnswer": { "@type": "Answer", "text": "Alongside, using full-stack developers for cross-layer features while specialists retain ownership of the architecturally sensitive core of their layer." } },
+    { "@type": "Question", "name": "(Scenario: CTO concerned about AI-assisted take-home submissions) Can AI coding assistants make a shallow candidate's take-home exercise falsely look like real depth?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, which is why a live, unscripted trade-off discussion defending the submission matters more now than the take-home artifact itself." } }
   ]
 }
 </script>

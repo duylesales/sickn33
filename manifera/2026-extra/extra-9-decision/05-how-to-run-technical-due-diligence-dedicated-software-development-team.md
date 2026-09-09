@@ -86,6 +86,12 @@ Weight the categories according to what actually matters for your specific proje
 
 Request a custom team proposal within 48 hours and ask us to walk you through exactly this kind of evidence for a team matched to your stack — we would rather earn the engagement through scrutiny than around it.
 
+## A Weighted Scoring Rubric for the Five Categories
+
+Score each of the five due diligence categories on a 1-5 scale, then apply weights matched to your project's actual risk profile rather than splitting evenly. A reasonable default weighting: code review evidence 25%, CI/CD maturity 20%, architecture documentation 20%, performance benchmarks 15%, security posture 20% — adjusted upward on security and performance for regulated or high-traffic products. A vendor scoring below 3 on any single category should trigger a follow-up request for more evidence before you proceed, regardless of how strong the overall weighted average looks, since a single weak category (commonly security posture, in our experience reviewing vendor evidence) tends to be where the real operational risk concentrates.
+
+Set a numeric pass threshold before you start scoring, not after — a weighted average below 3.5 out of 5 across all five categories is a reasonable bar for a dedicated team engagement expected to run 12+ months, since the cost of a mismatch compounds over a long engagement in a way it would not for a short project. Concretely, a team that cannot produce a p95 latency figure with a named tool (CI/CD/performance gap), has only "LGTM" pull request comments (code review gap), or has no documented offboarding checklist (security gap) should each cost roughly one full point off that category's score, not a fractional deduction — these are binary maturity signals, not matters of degree.
+
 ## Frequently Asked Questions
 
 ### What is the single most revealing artifact to request during technical due diligence?
@@ -102,6 +108,18 @@ Five focused categories — code review evidence, CI/CD maturity, architecture d
 
 ### What if a dedicated software development team refuses to share any of these artifacts?
 Treat refusal as meaningful information rather than a formality to work around. Reasonable redaction to protect other clients' confidentiality is normal and expected, but outright refusal to provide any evidence in these categories suggests the underlying practices may not exist to the degree claimed.
+
+### (Scenario: VP of Engineering comparing three shortlisted vendors with different strengths) How do I compare vendors when one scores highest on security but another scores highest on CI/CD maturity?
+Apply your project's risk-weighted rubric consistently across all vendors rather than picking whichever category feels most urgent in the moment, since an inconsistent weighting invites post-hoc rationalization of a gut preference. For a regulated product, weight security posture higher across the board; for a fast-iterating early-stage product, weight CI/CD speed and architecture flexibility higher — but apply the same weights to every vendor being compared.
+
+### (Scenario: dedicated team engagement already six months in, no due diligence was done at signing) Can I run this same technical due diligence audit retroactively on a team I already work with?
+Yes, and it is a useful exercise even mid-engagement, since it surfaces process gaps before they cause an incident rather than after. Frame it internally as a maturity check rather than an accusation, and use the same five-category rubric to identify where to invest in tightening process going forward.
+
+### (Scenario: startup CTO with no dedicated DevOps hire to interpret pipeline artifacts) I don't have deep DevOps expertise on my own team — how do I evaluate a CI/CD configuration file I can't fully read?
+Focus on three yes/no questions rather than reading the raw configuration: does a failing automated test block deployment, is there a staged rollout or feature-flag mechanism rather than an all-at-once release, and is there a defined rollback procedure that does not require manual intervention. A vendor's own engineers should be able to answer all three clearly regardless of your own technical depth.
+
+### (Scenario: fintech VP of Engineering weighting the rubric before scoring vendors) Should performance benchmarks ever outweigh security posture in the scoring rubric?
+Generally no for a data-handling product — security posture gaps create regulatory and breach exposure that a performance issue does not, so most fintech and healthtech engagements should weight security at or above 25% regardless of how performance-sensitive the product is. Reserve a performance-heavy weighting for genuinely latency-critical products, such as real-time trading or gaming systems, where a millisecond regression has direct business impact.
 
 <script type="application/ld+json">
 {
@@ -146,6 +164,38 @@ Treat refusal as meaningful information rather than a formality to work around. 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Treat refusal as meaningful information rather than a formality to work around. Reasonable redaction to protect other clients' confidentiality is normal and expected, but outright refusal to provide any evidence in these categories suggests the underlying practices may not exist to the degree claimed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I compare vendors when one scores highest on security but another scores highest on CI/CD maturity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apply your project's risk-weighted rubric consistently across all vendors rather than picking whichever category feels most urgent in the moment, since an inconsistent weighting invites post-hoc rationalization of a gut preference. For a regulated product, weight security posture higher across the board; for a fast-iterating early-stage product, weight CI/CD speed and architecture flexibility higher — but apply the same weights to every vendor being compared."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I run this same technical due diligence audit retroactively on a team I already work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and it is a useful exercise even mid-engagement, since it surfaces process gaps before they cause an incident rather than after. Frame it internally as a maturity check rather than an accusation, and use the same five-category rubric to identify where to invest in tightening process going forward."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I don't have deep DevOps expertise on my own team — how do I evaluate a CI/CD configuration file I can't fully read?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Focus on three yes/no questions rather than reading the raw configuration: does a failing automated test block deployment, is there a staged rollout or feature-flag mechanism rather than an all-at-once release, and is there a defined rollback procedure that does not require manual intervention. A vendor's own engineers should be able to answer all three clearly regardless of your own technical depth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should performance benchmarks ever outweigh security posture in the scoring rubric?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally no for a data-handling product — security posture gaps create regulatory and breach exposure that a performance issue does not, so most fintech and healthtech engagements should weight security at or above 25% regardless of how performance-sensitive the product is. Reserve a performance-heavy weighting for genuinely latency-critical products, such as real-time trading or gaming systems, where a millisecond regression has direct business impact."
       }
     }
   ]

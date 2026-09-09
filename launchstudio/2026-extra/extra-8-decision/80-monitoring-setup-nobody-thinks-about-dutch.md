@@ -55,8 +55,7 @@ LaunchStudio configureert monitoring als onderdeel van elke Launch & Grow-opdrac
 
 [Zet monitoring op voordat uw volgende gebruiker een probleem ontdekt dat u had kunnen opvangen](https://launchstudio.eu/nl/#contact).
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Storing Die Niemand Meldde
 
 Jeroen Smit, een indie hacker in Groningen, draaide zijn met Lovable gebouwde SaaS zes weken lang voordat hij — via een terloops gesprek met een gebruiker — ontdekte dat de API de voorgaande 72 uur 500-fouten had teruggegeven aan alle gebruikers buiten Nederland. Het probleem was een Vercel edge-functie die crashte op verzoeken zonder de `Accept-Language`-header, wat alleen gebruikers trof wier browsers deze niet meestuurden. Jeroens eigen browser stuurde de header altijd mee, dus zijn handmatige controles toonden een perfect werkend product.

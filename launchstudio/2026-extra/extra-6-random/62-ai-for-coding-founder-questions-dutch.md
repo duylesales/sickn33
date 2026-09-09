@@ -55,6 +55,19 @@ Geen van deze vragen komt vanzelf naar boven terwijl u demovideo's aan het verge
 
 De technici van Manifera — hetzelfde team achter 160+ opgeleverde projecten voor klanten als Vodafone en TNO — hebben genoeg door AI gegenereerde codebases van Lovable, Bolt, Cursor en v0 beoordeeld om te weten dat de tools grotendeels overeenkomen in demokwaliteit en sterk uiteenlopen bij precies deze onopvallende standaardinstellingen. Ons team in Singapore, verantwoordelijk voor het Zuidoost-Aziatische deel van het werk van LaunchStudio, doorloopt deze zelfde checklist met oprichters, zowel voordat als nadat ze al een tool hebben gekozen. Als u nog aan het beslissen bent, [boek dan een gratis intakegesprek van 15 minuten](https://launchstudio.eu/nl/#contact) en leg uw shortlist voor aan iemand die u de tool niet probeert te verkopen. Voor het trackrecord in softwareontwikkeling achter dat advies is de praktijk [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) van Manifera de moeite waard.
 
+## Waarschuwingssignalen in Antwoorden, Zelfs Wanneer de Demo Geweldig Was
+
+Tijdens een demonstratie kan een ontwikkelaar of leverancier een verbluffend soepele presentatie geven. Het gevaar schuilt in de antwoorden die worden gegeven zodra u kritische technische vragen stelt. Let op deze vier rode vlaggen:
+
+**Rode Vlag 1: "Dat is te technisch om uit te leggen."** Een senior engineer die zijn vak verstaat, kan complexe beveiligingsconcepten altijd in heldere, begrijpelijke taal uitleggen aan een niet-technische oprichter. Wie zich verschuilt achter jargon of neerbuigend doet over technische vragen, maskeert vaak eigen onzekerheid of ontbrekende architectuur.
+
+**Rode Vlag 2: Reflexmatige Zelfverzekerdheid zonder Nadenken.** Op elke vraag — hoe complex ook — direct roepen: "Ja hoor, geen probleem, dat hebben we al lang geregeld." Echte software-engineering kent altijd afwegingen (trade-offs). Een betrouwbare expert antwoordt genuanceerd: *"Dat onderdeel is goed beveiligd, maar op die specifieke integratie moeten we nog een extra validatielaag toevoegen."*
+
+**Rode Vlag 3: Geen Verantwoording Kunnen Afleggen over Afhankelijkheden.** Als men niet kan vertellen welke externe bibliotheken zijn gebruikt en waarom, heeft men de code simpelweg door een AI laten genereren zonder te controleren wat er daadwerkelijk is geïnstalleerd.
+
+**Rode Vlag 4: Geen Vaste Afspraken over Foutoplossing na Oplevering.** Als een partij weigert om contractuele garanties te bieden op het kosteloos herstellen van beveiligingsfouten binnen dertig dagen na oplevering, geloven ze zelf niet in de soliditeit van hun werk.
+
+Laat u nooit verblinden door een flitsende gebruikersinterface; het zijn de antwoorden op de lastige vragen die bepalen of u met een betrouwbare partner in zee gaat.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de tool gekozen op demosnelheid alleen
@@ -101,11 +114,46 @@ Zijn punt — dat de uitdaging nu draait om architectuur en volwassenheid, niet 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the single most overlooked question when comparing AI for coding tools?", "acceptedAnswer": { "@type": "Answer", "text": "Whether user roles and permissions are enforced on the server or only displayed differently in the interface — it rarely comes up in a demo but determines whether your data is actually protected." } },
-    { "@type": "Question", "name": "Should I ask about these things before or after picking a tool?", "acceptedAnswer": { "@type": "Answer", "text": "Before, ideally. But if you've already picked one, running the checklist against what you've built is still worth doing before your first real customer signs up." } },
-    { "@type": "Question", "name": "Does Manifera help founders evaluate tools, or only fix problems after the fact?", "acceptedAnswer": { "@type": "Answer", "text": "Both. Manifera's Singapore-based team, part of the broader 120+ engineer group, works with founders at the comparison stage as well as after something's already gone wrong." } },
-    { "@type": "Question", "name": "Is password reset really something AI coding tools skip by default?", "acceptedAnswer": { "@type": "Answer", "text": "It's inconsistent. Some generate a full flow automatically; others generate only the visible signup screen and leave reset and verification for the founder to add." } },
-    { "@type": "Question", "name": "What does Herre Roelevink's view on this shift mean for tool selection?", "acceptedAnswer": { "@type": "Answer", "text": "His point that the challenge now is architecture and maturity, not just generating an idea into software, applies directly: the tool that demos fastest isn't necessarily the one whose defaults hold up once real customers arrive." } }
+    {
+      "@type": "Question",
+      "name": "Wat is de meest over het hoofd geziene vraag bij het vergelijken van AI for coding-tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Of gebruikersrollen en rechten op de server worden afgedwongen of alleen anders worden weergegeven in de interface — dit komt zelden voor in een demo, maar bepaalt of uw gegevens daadwerkelijk beschermd zijn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik hier vragen over stellen vóór of na het kiezen van een tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Idealiter ervoor. Maar als u al een tool hebt gekozen, is het doorlopen van de checklist tegen wat u hebt gebouwd nog steeds de moeite waard voordat uw eerste echte klant zich aanmeldt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Helpt Manifera oprichters bij het evalueren van tools, of alleen bij het achteraf oplossen van problemen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beide. Het team van Manifera in Singapore, onderdeel van de bredere groep van 120+ engineers, werkt met oprichters zowel in de vergelijkingsfase als nadat er al iets is misgegaan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is wachtwoordherstel echt iets dat AI-codeertools standaard overslaan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is inconsistent. Sommige genereren automatisch een volledige stroom; andere genereren alleen het zichtbare aanmeldscherm en laten herstel en verificatie over aan de oprichter om toe te voegen — wat makkelijk over het hoofd wordt gezien totdat een echte gebruiker het nodig heeft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat betekent de visie van Herre Roelevink op deze verschuiving specifiek voor het kiezen van een tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zijn punt — dat de uitdaging nu draait om architectuur en volwassenheid, niet alleen om het genereren van een idee tot software — is hier direct van toepassing: de tool die het snelst demonstreert, is niet noodzakelijk degene wiens standaardinstellingen standhouden zodra echte klanten arriveren."
+      }
+    }
   ]
 }
 </script>

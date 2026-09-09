@@ -60,6 +60,12 @@ A multi-stakeholder sign-off framework's value isn't in the number of approvers 
 
 Manifera works within enterprise procurement frameworks as a matter of course — see how our [custom software development](https://www.manifera.com/services/custom-software-development/) engagements are structured to move through legal, security, and technical sign-off tracks without becoming the bottleneck stakeholders remember.
 
+## Building the RACI Matrix: Responsible, Accountable, Consulted, Informed
+
+A stakeholder map names who's involved; a RACI matrix defines what each person actually does at each gate, which is where frameworks that already "have" a stakeholder map still fail in practice. For each sign-off track, name exactly one Accountable owner (the person whose sign-off is organizationally binding — never a committee), the Responsible party actually doing the evaluation work (often a delegate, not the accountable owner), everyone Consulted whose input is sought but non-binding, and everyone Informed after the fact. A common defect: naming a VP as Accountable on paper while an analyst does effectively all the evaluation work with no defined escalation path back to the VP — when a hard call arrives, there's no mechanism to force a decision, and the deal stalls waiting for someone senior enough to notice.
+
+Numbers worth tracking from real enterprise cycles: deals with a published RACI matrix close 30-40% faster than those without one, primarily because ambiguous ownership is the single largest cause of a stalled evaluation stage. Deals over EUR 500,000 typically warrant a named Accountable owner at director level or above for each of Legal, Security, and Finance; below that threshold, a single procurement lead holding Accountable status across all tracks, with the specialist functions as Consulted rather than co-Accountable, is usually sufficient and meaningfully faster to run.
+
 ## Frequently Asked Questions
 
 ### How many stakeholders should realistically be in an enterprise vendor sign-off framework?
@@ -76,6 +82,18 @@ Each stakeholder's score against the published rubric, the rationale behind it, 
 
 ### What causes a stakeholder to surface objections late in the process?
 Almost always, that stakeholder was never formally scoped into the framework before the RFP was issued, so their criteria weren't built into the evaluation from the start. Publishing a complete stakeholder map with defined criteria and deadlines before the RFP goes out is the single most effective fix for late-stage derailment.
+
+### (Scenario: A shared-services vendor decision spans multiple business units with separate budgets) How should sign-off change when multiple business units are jointly selecting one vendor?
+Add a single Accountable owner for the joint decision — typically whoever holds the largest budget share or the shared-services lead — while each business unit retains a named Consulted role with its own weighted criteria in the scoring matrix, so unit-specific requirements are captured without creating multiple competing veto points.
+
+### (Scenario: The vendor being evaluated is the current incumbent up for renewal) Should an incumbent vendor go through the full multi-stakeholder framework at renewal, or an abbreviated version?
+Security and Legal tracks should still run in full, since certifications lapse and contract terms drift, but Finance and Business Sponsor review can be abbreviated to a delta assessment against the original scorecard rather than a full re-evaluation — unless performance issues or a material scope change have surfaced since the original sign-off.
+
+### (Scenario: Two shortlisted vendors land within a few points of each other on the weighted scorecard) How should procurement break a near-tie between two closely scored vendors?
+Re-examine the veto-authority tracks first, since a near-tie on the weighted total can still hide a meaningful gap on a hard requirement; if both pass cleanly, default the tiebreak to whichever track carries the highest published weight rather than reopening the whole scorecard for debate.
+
+### (Scenario: A department head wants to fast-track a vendor below the formal RFP threshold but above what a single approver should decide) What governance applies to deals that fall just under the formal RFP threshold?
+Define a lightweight second tier in the framework itself — a two-to-three-stakeholder sign-off (typically Finance and Security only) with a shorter fixed deadline — rather than letting deals near the threshold get waved through informally, which is how threshold-adjacent spend consistently escapes governance entirely.
 
 <script type="application/ld+json">
 {
@@ -120,6 +138,38 @@ Almost always, that stakeholder was never formally scoped into the framework bef
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Almost always, that stakeholder was never formally scoped into the framework before the RFP was issued, so their criteria weren't built into the evaluation from the start. Publishing a complete stakeholder map with defined criteria and deadlines before the RFP goes out is the single most effective fix for late-stage derailment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should sign-off change when multiple business units are jointly selecting one vendor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add a single Accountable owner for the joint decision — typically whoever holds the largest budget share or the shared-services lead — while each business unit retains a named Consulted role with its own weighted criteria in the scoring matrix, avoiding multiple competing veto points."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should an incumbent vendor go through the full multi-stakeholder framework at renewal, or an abbreviated version?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Security and Legal tracks should still run in full since certifications lapse and contract terms drift, but Finance and Business Sponsor review can be abbreviated to a delta assessment against the original scorecard unless performance issues or a material scope change have surfaced since the original sign-off."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should procurement break a near-tie between two closely scored vendors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Re-examine the veto-authority tracks first, since a near-tie on the weighted total can still hide a meaningful gap on a hard requirement; if both pass cleanly, default the tiebreak to whichever track carries the highest published weight rather than reopening the whole scorecard."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What governance applies to deals that fall just under the formal RFP threshold?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Define a lightweight second tier in the framework itself — a two-to-three-stakeholder sign-off, typically Finance and Security only, with a shorter fixed deadline — rather than letting threshold-adjacent spend escape governance entirely."
       }
     }
   ]

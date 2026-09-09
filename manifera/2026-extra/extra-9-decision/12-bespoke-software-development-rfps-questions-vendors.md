@@ -92,6 +92,12 @@ With over 160 delivered projects and 120+ clients across a decade, Manifera's ow
 
 Bring your RFP to our engineering leads for a free technical read — we'll give you a straight answer on where your current shortlist stands up and where it doesn't.
 
+## The Paper Trail: Financial and Contractual Due Diligence Beyond the Interview
+
+Four documents catch a reseller that a well-rehearsed interview won't. First, ask for the vendor's professional liability and cyber-errors-and-omissions insurance certificate naming your organization as an additional insured — a genuine engineering employer carries this as a matter of course; a broker of subcontracted capacity often can't produce it without involving a third party. Second, request headcount by employment type: how many of the engineers proposed for your project are direct, full-time employees versus contractors or subcontracted staff. A vendor unwilling to give a specific number, even roughly, is telling you the ratio doesn't favor their pitch.
+
+Third, check the entity actually signing the master services agreement against the entity described in the sales materials — enterprise buyers routinely discover, only at contract review, that the signing entity is a shell reseller layered above the engineering organization doing the actual work. Fourth, ask for average engineer tenure at the company, not team-wide averages padded by long-tenured account managers; under 18 months average tenure on the engineering side is a leading indicator of the churn that will show up as unfamiliar faces on your project by month six. None of these four checks requires legal counsel to run — a procurement analyst can complete all four in an afternoon, and a vendor's response speed to the request is itself a data point.
+
 ## Frequently Asked Questions
 
 ### How long should a bespoke software development RFP evaluation take from shortlist to signature?
@@ -108,6 +114,18 @@ Any single failed gate question — inability to name the team, refusal of conti
 
 ### How do dedicated development teams differ from typical RFP-driven project vendors on support?
 A dedicated team model keeps the same engineers responsible for both building and supporting the system, which shortens incident response time significantly compared to a project vendor that hands support to a separate, unfamiliar team after go-live.
+
+### (Scenario: A finalist's proposal is signed by a different legal entity than the one that ran the sales process) Why does the contracting entity on the SOW matter if the sales team seemed legitimate?
+Because the entity that signs the master services agreement is the one legally accountable for delivery, IP transfer, and liability — if it differs from the organization that pitched you, you may be contracting with a shell layered above the actual engineering team, with weaker recourse if something goes wrong.
+
+### (Scenario: A vendor won't disclose what share of their proposed team are direct employees versus subcontractors) Should I disqualify a bespoke software development vendor that won't share its employee-to-contractor ratio?
+Treat continued refusal as a gate failure, not a minor gap. A vendor confident in a strong direct-employment ratio volunteers the number readily, since it's a competitive advantage; persistent vagueness usually means the ratio favors subcontracted staff they'd rather you not evaluate.
+
+### (Scenario: Comparing average engineer tenure across RFP finalists) What average engineer tenure should I look for when evaluating software vendor due diligence on team stability?
+Look for average tenure above 18-24 months on the engineering side specifically, not blended with longer-tenured account managers. Lower tenure predicts higher mid-project turnover, which directly threatens continuity on a multi-quarter bespoke build.
+
+### (Scenario: Legal wants proof of insurance before approving the RFP finalist) What insurance should a bespoke software development vendor carry, and why ask for it during RFP evaluation rather than after signing?
+Ask for professional liability and cyber-errors-and-omissions coverage naming your organization as an additional insured, requested before signature rather than after. A vendor's ability to produce this quickly is itself a signal of organizational maturity, since a genuine engineering employer maintains it as standard practice.
 
 <script type="application/ld+json">
 {
@@ -138,6 +156,26 @@ A dedicated team model keeps the same engineers responsible for both building an
       "@type": "Question",
       "name": "How do dedicated development teams differ from typical RFP-driven project vendors on support?",
       "acceptedAnswer": {"@type": "Answer", "text": "A dedicated team model keeps the same engineers responsible for both building and supporting the system, which shortens incident response time significantly compared to a project vendor that hands support to a separate, unfamiliar team after go-live."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A finalist's proposal is signed by a different legal entity than the one that ran the sales process) Why does the contracting entity on the SOW matter if the sales team seemed legitimate?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Because the entity that signs the master services agreement is the one legally accountable for delivery, IP transfer, and liability — if it differs from the organization that pitched you, you may be contracting with a shell layered above the actual engineering team, with weaker recourse if something goes wrong."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor won't disclose what share of their proposed team are direct employees versus subcontractors) Should I disqualify a bespoke software development vendor that won't share its employee-to-contractor ratio?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Treat continued refusal as a gate failure, not a minor gap. A vendor confident in a strong direct-employment ratio volunteers the number readily, since it's a competitive advantage; persistent vagueness usually means the ratio favors subcontracted staff they'd rather you not evaluate."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Comparing average engineer tenure across RFP finalists) What average engineer tenure should I look for when evaluating software vendor due diligence on team stability?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Look for average tenure above 18-24 months on the engineering side specifically, not blended with longer-tenured account managers. Lower tenure predicts higher mid-project turnover, which directly threatens continuity on a multi-quarter bespoke build."}
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Legal wants proof of insurance before approving the RFP finalist) What insurance should a bespoke software development vendor carry, and why ask for it during RFP evaluation rather than after signing?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Ask for professional liability and cyber-errors-and-omissions coverage naming your organization as an additional insured, requested before signature rather than after. A vendor's ability to produce this quickly is itself a signal of organizational maturity, since a genuine engineering employer maintains it as standard practice."}
     }
   ]
 }

@@ -77,6 +77,10 @@ Manifera runs legacy modernization engagements with named decommissioning milest
 }
 </script>
 
+## Implementation Checklist: Finding the Seams Before You Commit to Either Pattern
+
+Before choosing a pattern, run a two-week technical spike specifically to answer one question: how bounded is your legacy system actually? Map every module's data dependencies and count how many other modules read or write its internal state directly rather than through a defined interface — a system where most modules touch fewer than two or three others' internals has clean seams and favors strangler-fig; a system where modules reach into five or more others' internal state is tightly coupled and may need an untangling phase before either pattern works cleanly. Separately, inventory your routing layer options: do you have an API gateway, load balancer, or feature-flag system already capable of directing traffic between old and new implementations at the request level, or does one need to be built first as prerequisite infrastructure (typically 4-8 weeks of work that should be scoped and budgeted separately from the migration itself). Finally, get a written answer from any vendor on data consistency strategy specifically: dual-write with reconciliation jobs, event-sourcing with replay capability, or a defined cutover order that avoids concurrent writes to both systems during transition. A vendor without a specific, technical answer to that last question is underscoping the part of strangler-fig migrations that produces the subtlest and costliest production bugs.
+
 ## Frequently Asked Questions
 
 ### Is the strangler-fig pattern always safer than a big-bang rewrite?
@@ -93,6 +97,18 @@ The most common cause is the absence of a named decommissioning milestone for th
 
 ### What is the biggest risk specific to a big-bang cutover?
 The biggest risk is discovering a critical functional gap in production on cutover day, with no fallback if the rollback plan is weak or untested. A vendor proposing big-bang should demonstrate a concrete, tested rollback strategy and a structured feature-parity validation process before cutover, not just a target ship date.
+
+### (Scenario: our legacy billing module is tightly coupled to five other modules that read its internal state directly) Should we untangle the coupling first, or can a vendor strangle a tightly coupled system without that separate phase?
+A genuinely tightly coupled module usually needs a dedicated untangling phase — introducing a defined interface or facade in front of the coupled internals — before it can be safely strangled, and skipping straight to extraction risks breaking the other modules that depend on direct internal access. Ask the vendor to scope this untangling work as its own explicit phase with its own timeline, not folded silently into the migration estimate.
+
+### (Scenario: our CTO is worried the routing layer itself becomes a new single point of failure during a multi-year strangler-fig migration) How do we make sure the routing/proxy layer doesn't become its own legacy liability by the time the migration finishes?
+Treat the routing layer as production infrastructure from day one, not throwaway migration tooling — require the vendor to build it with the same monitoring, redundancy, and on-call runbooks as any other critical service, and get an explicit decommissioning plan for the routing layer itself once migration completes, since a routing layer nobody planned to retire becomes exactly the kind of undocumented legacy the project was meant to eliminate.
+
+### (Scenario: leadership wants a hard commitment on total migration cost before approving a strangler-fig project, but the incremental nature makes that hard to estimate upfront) How should we structure vendor pricing for a strangler-fig migration given the inherent difficulty of estimating the full scope upfront?
+Price the first two or three bounded migration pieces as a fixed-scope engagement to establish real velocity data, then use that measured pace to project the remaining pieces' cost and timeline rather than accepting a single all-up estimate before any real seam has been extracted. A vendor willing to structure pricing this way is signaling confidence in their own estimate; one insisting on a single upfront fixed price for the entire multi-year migration is either padding heavily or guessing.
+
+### (Scenario: we're migrating a system that processes financial transactions and can't tolerate data inconsistency even briefly during the transition) What data consistency approach is safest for a strangler-fig migration involving financial data specifically?
+For financial data, dual-write with real-time reconciliation and a strict single-source-of-truth designation per data entity at any given time is safer than eventual-consistency approaches — require the vendor to name, for each migrated piece, exactly which system is authoritative during the transition window and how reconciliation discrepancies get alerted and resolved before they reach a customer-facing statement or invoice.
 
 <script type="application/ld+json">
 {
@@ -137,6 +153,38 @@ The biggest risk is discovering a critical functional gap in production on cutov
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "The biggest risk is discovering a critical functional gap in production on cutover day, with no fallback if the rollback plan is weak or untested. A vendor proposing big-bang should demonstrate a concrete, tested rollback strategy and a structured feature-parity validation process before cutover, not just a target ship date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: our legacy billing module is tightly coupled to five other modules that read its internal state directly) Should we untangle the coupling first, or can a vendor strangle a tightly coupled system without that separate phase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A genuinely tightly coupled module usually needs a dedicated untangling phase — introducing a defined interface or facade in front of the coupled internals — before it can be safely strangled. Ask the vendor to scope this untangling work as its own explicit phase with its own timeline, not folded silently into the migration estimate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: our CTO is worried the routing layer itself becomes a new single point of failure during a multi-year strangler-fig migration) How do we make sure the routing/proxy layer doesn't become its own legacy liability by the time the migration finishes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat the routing layer as production infrastructure from day one, requiring the same monitoring, redundancy, and on-call runbooks as any other critical service, and get an explicit decommissioning plan for the routing layer itself once migration completes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: leadership wants a hard commitment on total migration cost before approving a strangler-fig project, but the incremental nature makes that hard to estimate upfront) How should we structure vendor pricing for a strangler-fig migration given the inherent difficulty of estimating the full scope upfront?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Price the first two or three bounded migration pieces as a fixed-scope engagement to establish real velocity data, then use that measured pace to project the remaining pieces' cost rather than accepting a single all-up estimate before any real seam has been extracted."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: we're migrating a system that processes financial transactions and can't tolerate data inconsistency even briefly during the transition) What data consistency approach is safest for a strangler-fig migration involving financial data specifically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For financial data, dual-write with real-time reconciliation and a strict single-source-of-truth designation per data entity is safer than eventual-consistency approaches. Require the vendor to name which system is authoritative during the transition window and how discrepancies get alerted and resolved."
       }
     }
   ]

@@ -65,8 +65,7 @@ LaunchStudio is specifiek gebouwd voor het scenario waarin een niet-technische o
 
 [Beschrijf uw prototype en krijg een vaste-prijsofferte](https://launchstudio.eu/nl/#contact) — bepaal daarna of het bedrag meer logisch is dan een vacature.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Bootcamp-Aanwerving Die een LaunchStudio-Traject Werd
 
 Annelies de Graaf, voormalig eventplanner in Den Haag, bouwde FeestFlow, een AI-gedreven feestplanningstool die locaties, cateraars en entertainment koppelt aan budget en gastenaantal, met Lovable. Klaar om te lanceren, nam ze een bootcamp-afgestudeerde aan van een gerenommeerd Amsterdams programma tegen €30/uur.

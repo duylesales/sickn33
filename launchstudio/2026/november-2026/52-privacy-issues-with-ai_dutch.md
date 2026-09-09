@@ -60,6 +60,13 @@ Om privacy-vraagstukken structureel op te lossen moeten softwarearchitecten stri
 2. **Deterministische PII-Anonimisering:** Wij plaatsen lokale proxies (zoals Microsoft Presidio) binnen uw eigen netwerk. Voordat een prompt naar het model gaat, maskeert de proxy alle persoonsgegevens en vervangt ze door anonieme tokens (bijv. `[GEBRUIKER_ID_GEANONIMISEERD]`). Het AI-model ziet nooit echte persoonsgegevens.
 3. **Row Level Security (RLS) op Databaseniveau:** Wij dwingen tenant-isolatie af op het laagste infrastructuurniveau. De PostgreSQL-database weigert fysiek elke zoekopdracht naar data die niet hoort bij het geauthenticeerde JWT-token van de gebruiker.
 
+### Praktische AVG-Borging bij AI-Gedreven Gegevensverwerking
+
+Het eerbiedigen van privacyrechten van gebruikers vergt concrete architectonische maatregelen:
+1. **Anonimisering aan de Bron:** Persoonsidentificeerbare informatie wordt vóór transmissie naar externe modelleveranciers vervangen door pseudo-identifiers.
+2. **Transparante Toestemmingsmechanismen:** We bouwen granulaire opt-in en opt-out interfaces voor het gebruik van gegevens in AI-gebaseerde analyses.
+3. **Geautomatiseerde Verwijderingsprotocollen:** Het uitoefenen van het recht op vergetelheid wist gebruikersgegevens onmiddellijk uit alle databases, indexen en caches.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De HealthTech-App Die Werd Afgewezen Wegens AVG-Risico's

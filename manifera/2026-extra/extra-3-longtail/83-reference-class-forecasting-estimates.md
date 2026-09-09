@@ -85,6 +85,12 @@ A practical way to apply this framework without necessarily needing a vendor to 
 
 Before accepting a detailed bottom-up estimate at face value, ask your vendor for a reference-class-adjusted range based on actual outcomes from comparable past projects — specificity in an estimate isn't the same as accuracy. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about getting a reference-class-informed estimate for your project.
 
+## By The Numbers: Typical Overrun Ranges by Project Type
+
+Published megaproject and IT-project studies converge on a rough pattern that's useful even without access to a vendor's proprietary data. Custom software development cost overruns cluster around three bands: greenfield internal tools with few external dependencies tend to run 15-30% over their original bottom-up estimate; projects with three or more third-party integrations (payment processors, legacy system APIs, regulatory data feeds) typically run 35-55% over; and projects involving a domain the vendor hasn't built in before — a new regulatory environment, an unfamiliar hardware interface — regularly exceed 60-80% over their original number. Mobile app development cost estimates follow a similar but compressed version of the same curve, since app store review cycles and platform API changes introduce a narrower but still reliable band of unplanned friction, typically 20-40% over initial estimates for anything beyond a single-platform MVP.
+
+The practical use of these bands isn't precision — it's a sanity check. If a vendor's bottom-up custom software development pricing for an integration-heavy platform shows zero built-in contingency, that's not evidence of unusual efficiency; per the reference class data above, it's evidence the estimate hasn't been adjusted for anything the reference class would predict. A founder who sees a bottom-up number land inside these bands after adjustment has more reason to trust it than one who sees a suspiciously clean, unadjusted total.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO reviewing a detailed bottom-up estimate) Why would a detailed, task-by-task estimate still be unreliable?
@@ -107,6 +113,22 @@ Ask what specific factors define the class — complexity, integration count, do
 
 Track actual outcomes, not just original estimates, across your own past projects, and build reference classes from that real data over time — the method depends on having genuine historical outcome data available to draw from.
 
+### (Scenario: founder comparing two vendor quotes with different overrun assumptions) Why do two custom software development pricing quotes for the same scope differ so much on contingency?
+
+One vendor is likely presenting a raw bottom-up total while the other has already applied a reference-class adjustment for integration count and domain novelty — the lower number isn't necessarily cheaper, it's often just unadjusted, and the gap tends to close (against you) once the project actually starts.
+
+### (Scenario: founder budgeting a mobile app development cost with multiple integrations) Does reference class forecasting apply differently to mobile apps than custom platforms?
+
+Yes — mobile app development cost overruns are usually driven by app store review cycles and platform API changes rather than the domain-novelty friction seen in custom platforms, so a mobile-specific reference class should weight review and compliance delays more heavily than integration count alone.
+
+### (Scenario: CFO asked to approve a budget with an unfamiliar adjustment method) How do I justify a reference-class-adjusted budget number to finance stakeholders who expect a fixed bottom-up figure?
+
+Present both numbers side by side with the reference class's actual historical overrun data as the justification — finance stakeholders generally accept a documented, data-backed adjustment more readily than an unexplained contingency line, since it replaces a guess with a track record.
+
+### (Scenario: startup founder with no internal project history to draw a reference class from) What if my company has never run a comparable project before and has no historical data of its own?
+
+Use your vendor's reference class instead of trying to build one internally — a vendor like Manifera that tracks actual outcomes across its own delivered projects can supply the reference class you don't yet have, which is precisely the scenario reference class forecasting was designed to help with.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -116,7 +138,11 @@ Track actual outcomes, not just original estimates, across your own past project
     { "@type": "Question", "name": "(Scenario: founder trying to get a more accurate cost estimate) What should I ask a vendor for instead of just a bottom-up estimate?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for a reference-class-adjusted estimate based on actual historical outcomes from genuinely comparable past projects." } },
     { "@type": "Question", "name": "(Scenario: CTO skeptical that past projects predict a new one) How can outcomes from different past projects predict a specific new project's cost?", "acceptedAnswer": { "@type": "Answer", "text": "It uses the reference class's actual overrun pattern as a statistically grounded adjustment, since unforeseeable friction reliably occurs across comparable projects." } },
     { "@type": "Question", "name": "(Scenario: founder trying to evaluate whether a vendor's reference class is legitimate) How do I know if a vendor's reference class is genuinely comparable to my project?", "acceptedAnswer": { "@type": "Answer", "text": "Ask what specific factors define the class — complexity, integration count, domain novelty — rather than accepting a superficial label as sufficient." } },
-    { "@type": "Question", "name": "(Scenario: engineering manager building internal estimation practice) How can we start applying reference class forecasting to our own project estimates?", "acceptedAnswer": { "@type": "Answer", "text": "Track actual outcomes, not just original estimates, across your own past projects, and build reference classes from that real data over time." } }
+    { "@type": "Question", "name": "(Scenario: engineering manager building internal estimation practice) How can we start applying reference class forecasting to our own project estimates?", "acceptedAnswer": { "@type": "Answer", "text": "Track actual outcomes, not just original estimates, across your own past projects, and build reference classes from that real data over time." } },
+    { "@type": "Question", "name": "(Scenario: founder comparing two vendor quotes with different overrun assumptions) Why do two custom software development pricing quotes for the same scope differ so much on contingency?", "acceptedAnswer": { "@type": "Answer", "text": "One vendor is likely presenting a raw bottom-up total while the other has applied a reference-class adjustment for integration count and domain novelty — the lower number is often just unadjusted, not cheaper." } },
+    { "@type": "Question", "name": "(Scenario: founder budgeting a mobile app development cost with multiple integrations) Does reference class forecasting apply differently to mobile apps than custom platforms?", "acceptedAnswer": { "@type": "Answer", "text": "Mobile app development cost overruns are usually driven by app store review cycles and platform API changes, so a mobile-specific reference class should weight review and compliance delays more heavily than integration count." } },
+    { "@type": "Question", "name": "(Scenario: CFO asked to approve a budget with an unfamiliar adjustment method) How do I justify a reference-class-adjusted budget number to finance stakeholders who expect a fixed bottom-up figure?", "acceptedAnswer": { "@type": "Answer", "text": "Present both numbers side by side with the reference class's actual historical overrun data as justification — a documented adjustment is generally more persuasive to finance than an unexplained contingency line." } },
+    { "@type": "Question", "name": "(Scenario: startup founder with no internal project history to draw a reference class from) What if my company has never run a comparable project before and has no historical data of its own?", "acceptedAnswer": { "@type": "Answer", "text": "Use your vendor's reference class instead — a vendor that tracks actual outcomes across its own delivered projects can supply the reference class you don't yet have." } }
   ]
 }
 </script>

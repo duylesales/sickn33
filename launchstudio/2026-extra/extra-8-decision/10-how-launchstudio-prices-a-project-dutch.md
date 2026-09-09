@@ -1,6 +1,6 @@
 ---
 Titel: "Hoe LaunchStudio Een Project Prijst: De Echte Wiskunde Achter Onze Offertes"
-Trefwoorden: LaunchStudio prijzen, vaste prijs MVP hardening, software project prijsmodel, kosten productiegereedheid, scoping call offerte, LaunchStudio, Manifera
+Trefwoorden: LaunchStudio prijzen, vaste prijs MVP hardening, prijsmodel softwareprojecten, kosten productiegereedheid, intakegesprek prijsstelling, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: SaaS Oprichter Scale-Up
 ---
@@ -12,7 +12,8 @@ Doelgroep: SaaS Oprichter Scale-Up
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Hoe LaunchStudio Een Project Prijst: De Echte Wiskunde Achter Onze Offertes",
-  "description": "Een prijspagina die pakketten toont van €800 tot €7.500 roept een logische vraag op: wat bepaalt waar een specifiek project landt? Een transparante analyse van wat er gemeten wordt tijdens scoping en hoe dit vertaalt naar een vast getal.",
+  "description": "Een prijspagina die €800 tot €7.500 toont verdeeld over vier pakketten roept een logische vraag op: wat bepaalt waar een specifiek project belandt? Een overzicht van wat er exact wordt gemeten tijdens de intake en hoe dit vertaalt naar een vaste prijs.",
+  "inLanguage": "nl-NL",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -31,74 +32,69 @@ Doelgroep: SaaS Oprichter Scale-Up
 }
 </script>
 
-Een prijspagina die vier pakketten toont variërend van €800 tot €7.500 roept bij elke serieuze oprichter een logische en terechte vraag op: waar landt mijn specifieke project precies binnen deze bandbreedtes, en waarom? Het eerlijke antwoord is dat dit afhangt van wat een scoping call en codebase review daadwerkelijk aantreffen. Maar de logica achter hoe die bevindingen worden vertaald naar een exact bedrag is 100% uitlegbaar. 
+Een tarievenpagina met vier pakketten variërend van €800 tot €7.500 roept bij elke oprichter die serieus een budget probeert op te stellen een begrijpelijke vraag op: waar belandt mijn specifieke project, en waarom? Het eerlijke antwoord is geen simpele formule die een oprichter zelf kan invullen voordat hij met iemand heeft gesproken — het hangt af van wat een intakegesprek en codebase-review daadwerkelijk aan het licht brengen. Maar de onderliggende logica waarmee die bevindingen worden vertaald naar een vast getal is volkomen helder uit te leggen. Begrijpen hoe dat werkt, is precies wat een brede prijsrange op een website verandert in een concreet, betrouwbaar bedrag waar een oprichter daadwerkelijk op kan plannen.
 
-Het begrijpen van deze wiskunde transformeert een brede prijsbandbreedte op een website naar een helder, betrouwbaar getal waar een oprichter met vol vertrouwen omheen kan plannen.
+## Waarom Prijspagina's Ranges Tonen, Geen Vaste Getallen
 
-## Waarom Prijzen Bandbreedtes Tonen in Plaats van Één Vast Getal
+De bandbreedte binnen elk pakketniveau bestaat omdat een categorie zoals "Launch Ready" een type werk beschrijft — het beveiligen van authenticatie, beheer van API-sleutels en verificatie van betalingen — en geen statische checklist die voor elk project identiek is. Een Launch Ready-opdracht voor een app met één enkele functionaliteit en één betaalkoppeling bevindt zich aan de onderkant van die prijsrange. Hetzelfde pakket voor een app met een complexer datamodel of een tweede, minder gangbare betaalmethode valt hoger uit binnen hetzelfde niveau, zonder dat het direct noodzakelijk is om naar een zwaarder pakket over te stappen. De prijsrange markeert de grenzen van wat een niveau omvat; het intakegesprek bepaalt waarbinnen die grenzen een specifiek project daadwerkelijk landt.
 
-De bandbreedte binnen elk pakket bestaat omdat "Launch Ready" bijvoorbeeld een categorie werk beschrijft — geheimenbeheer, basisauthenticatie, betalingsverificatie — en geen identieke checklist voor elk project. 
+## De Vier Pakketten en Wat Ze Werkelijk van Elkaar Scheidt
 
-Een Launch Ready traject voor een eenvoudige single-feature app met één Stripe-koppeling zit aan de onderkant van de bandbreedte (€800); hetzelfde pakket voor een app met een iets complexer datamodel of een tweede betaalmethode zit hoger binnen diezelfde tier (€1.500), zonder dat het nodig is om direct naar het volgende pakket door te schuiven. De bandbreedte communiceert de grenzen van wat een tier dekt; de scoping call bepaalt waar een project exact binnen die grenzen landt.
+Launch Ready (€800–1.500) dekt de universele basiskwetsbaarheden: beheer van geheimen en omgevingsvariabelen, basisauthenticatie en betalingsverificatie voor een overzichtelijke applicatie met één product. Launch & Grow (€1.500–3.500) breidt dit uit naar complexere autorisatielogica, zoals op rollen gebaseerde toegangscontrole (RBAC) voor meerdere gebruikerstypen, en past doorgaans bij producten met een uitgebreidere functionaliteit of een vroege gebruikersgroep die er al dagelijks op leunt. Relaunch & Scale (€2.500–4.500) richt zich op structureel complexere situaties — multi-tenant data-isolatie, diepere integraties met externe diensten, of een platform dat zich voorbereidt op een grootschalige uitrol waarbij de gevolgen van een beveiligingslek vele malen groter zijn. Enterprise Hardening (€5.000–7.500) is bedoeld voor producten met strikte compliance-eisen, veeleisende uptime-verwachtingen, of een architectuur die dermate complex is dat een diepgaande gelijktijdige audit over alle risicocategorieën vereist is.
 
-## De Vier Tiers en Wat Hen Daadwerkelijk Scheidt
+## Wat het Intakegesprek Daadwerkelijk Meet
 
-1. **Launch Ready (€800 – €1.500):** Dekt de meest universele basisgaten — geheimenbeheer, veilige authenticatie en betalingsverificatie voor een ongecompliceerde single-product setup.
-2. **Launch & Grow (€1.500 – €3.500):** Breidt uit naar geavanceerdere autorisatie, zoals rolgebaseerde toegangscontrole (RBAC) voor meerdere gebruikerstypen, en past bij apps met een rijkere functieset of vroege actieve gebruikers.
-3. **Relaunch & Scale (€2.500 – €4.500):** Richt zich op structureel complexere situaties — multi-tenant data-isolatie, meerdere third-party API-integraties of platforms die zich voorbereiden op een grootschalige zakelijke uitrol.
-4. **Enterprise Hardening (€5.000 – €7.500):** Geschikt voor platforms met formele compliance-eisen (zoals AVG/GDPR, SOC2, HIPAA), strikte uptime-eisen of complexe infrastructuren die gelijktijdige audits over alle risicocategorieën vereisen.
+Tijdens het intakegesprek en de eerste verkenning van de codebase meet het team een specifieke set variabelen die voorspellen hoeveel werk een gedegen oplossing daadwerkelijk kost: hoeveel verschillende risicocategorieën zijn daadwerkelijk aanwezig versus hoeveel de oprichter zelf vermoedt; hoe diep die problemen geworteld zijn zodra een engineer de code induikt (een oppervlakkig authenticatiehiaat versus een permissiefout die door tientallen samenhangende features heen loopt vraagt immers om een volstrekt andere hoeveelheid werk); hoeveel externe integraties er zijn en hoe gevoelig deze momenteel zijn geconfigureerd; en hoe het datamodel in elkaar zit. Een single-tenant app met één type gebruiker is structureel aanzienlijk eenvoudiger te beveiligen dan een multi-tenant platform dat verschillende rollen over meerdere organisaties bedient.
 
-## Wat Wordt Er Gemeten Tijdens de Scoping Call?
+## Waarom Twee Schijnbaar Gelijke Projecten Verschillende Offertes Krijgen
 
-Tijdens de scoping call en initiële review meten onze senior engineers een specifieke set variabelen die voorspellen hoeveel werk een veilige oplossing vereist:
-- **Aantal Risicocategorieën:** Hoeveel verschillende kwetsbaarheden zijn daadwerkelijk aanwezig versus wat de oprichter vermoedt.
-- **Diepte van de Codebase:** Zit een authenticatieprobleem oppervlakkig in de routing, of is het diep verweven in tientallen onderling afhankelijke componenten.
-- **Integratiecomplexiteit:** Hoeveel externe API's en webhooks worden gebruikt en hoe gevoelig zijn deze geconfigureerd.
-- **Datamodelstructuur:** Een single-tenant app met één rol is technisch aanzienlijk eenvoudiger te beveiligen dan een multi-tenant platform met verschillende rollen over meerdere organisaties.
+Twee oprichters kunnen oppervlakkig gezien vrijwel identieke producten voorleggen — beide met AI gebouwde SaaS-tools, beide met klantdata, beide op zoek naar "security fixes" — en toch aanzienlijk verschillende offertes ontvangen. De bepalende factor is immers niet de productcategorie, maar wat de audit onder de motorkap aantreft. Een product dat door een AI-tool schoon is opgezet met een handvol afgebakende kwesties kost minder om productieklaar te maken dan een product waarbij één vroege ontwerpfout — zoals inconsistente roldefinities — is doorgesijpeld naar tientallen schermen en functies, zelfs als beide producten er aan de buitenkant even gelikt uitzien. Dit is precies de reden waarom LaunchStudio nooit offreert op basis van een productomschrijving alleen; dezelfde omschrijving kan een totaal andere hoeveelheid werk maskeren.
 
-## Waarom Twee Vergelijkbare Projecten Verschillende Offertes Kunnen Krijgen
+## Wat een Project Naar een Hoger Pakket Stuwt
 
-Twee oprichters kunnen oppervlakkig gezien identieke producten beschrijven — beiden een AI-gestuurde SaaS-tool, beiden verwerking van klantdata, beiden behoefte aan "beveiliging" — en toch een andere offerte ontvangen. De bepalende factor is immers niet de productcategorie, maar wat de audit onder de motorkap aantreft.
+Bepaalde specifieke bevindingen verschuiven een offerte betrouwbaar naar de bovenkant van een range of naar een volgend niveau: gevoeligheid van data die striktere compliancedocumentatie vereist, meerdere verschillende gebruikersrollen die elk onafhankelijk getoetste toegangsgrenzen vereisen, meerdere API-koppelingen van derden die elk afzonderlijk moeten worden doorgelicht, of een bestaande actieve gebruikersbasis die het risico van aanpassingen tijdens de overgang verhoogt. Geen van deze factoren is een willekeurige upsell: elke factor correspondeert direct met aanwijsbaar extra engineeringwerk dat de scope van een lager niveau niet dekt. Het intakegesprek benoemt altijd exact welke bevinding verantwoordelijk is voor een pakketadvies, zodat een oprichter niet simpelweg een hoger getal hoeft te slikken.
 
-Een app die netjes door een AI-tool is gestructureerd met enkele geïsoleerde fouten kost minder engineeringtijd om te harden dan een app waarbij een vroege architectuurkeuze — zoals inconsistente roltoewijzing — door tientallen bestanden is gepropageerd. Daarom offreert LaunchStudio nooit puur op basis van een tekstuele productomschrijving.
+[LaunchStudio](https://launchstudio.eu/nl/) prijst elk traject volgens deze transparante logica, ondersteund door Manifera's 11+ jaar ervaring in enterprise productie-engineering om een feitelijke audit te vertalen naar een bedrag waar oprichters met een gerust hart op kunnen plannen.
 
-[LaunchStudio](https://launchstudio.eu/nl/) prijst elk traject volgens deze transparante logica, ondersteund door Manifera's 11+ jaar ervaring in enterprise software-engineering.
+[Ontdek de werkelijke berekening achter uw offerte](https://launchstudio.eu/nl/#contact) — tijdens een intakegesprek ziet u exact welke bevindingen bepalen waar uw project uitkomt.
 
-[Ontdek de exacte wiskunde achter uw project](https://launchstudio.eu/nl/#contact) — een gratis scoping call laat u exact zien welke bevindingen uw prijs bepalen.
+## Echt voorbeeld
+### Een SaaS-Oprichter in de Praktijk: Begrijpen Waarom Haar Offerte Niet in het Laagste Pakket Viel
 
-## Real example
+Anouk Peters, voormalig data-analist en nu oprichter in Delft, bouwde MetricMerge: een B2B-analyticsdashboard dat marketingdata van meerdere klantaccounts aggregeert voor kleine marketingbureaus, ontwikkeld met Bolt. Anouk had op basis van de tarievenpagina gerekend op een offerte voor Launch Ready in het laagste segment, en was aanvankelijk verrast toen het intakegesprek uitmondde in een advies voor Relaunch & Scale, tegen ongeveer het dubbele van wat ze had begroot.
 
-### Een SaaS-Oprichter in de Praktijk: Begrijpen Waarom Haar Offerte Niet de Laagste Tier Was
+In plaats van het bedrag klakkeloos te accepteren, vroeg Anouk gericht wat het hogere niveau rechtvaardigde. Het team van Manifera liep de feitelijke auditbevindingen stap voor stap met haar door: MetricMerge's multi-tenant architectuur, waarbij de data van elk afzonderlijk bureau strikt geïsoleerd moest blijven van andere accounts, kende inconsistente data-scoping in zes van de elf dashboard-views. Dit was een structureel ander en omvangrijker probleem dan de single-tenant authenticatielogica waar Launch Ready op is geprijsd, en sloot naadloos aan op de gedefinieerde scope van Relaunch & Scale (multi-tenant data-isolatie).
 
-Anouk Peters, een data-analist in Delft, bouwde met behulp van Bolt een B2B-analytics dashboard genaamd MetricMerge waarmee marketingbureaus campagnedata over meerdere klantaccounts kunnen aggregeren. Anouk had gerekend op een Launch Ready-offerte aan de onderkant van de prijslijst, en was aanvankelijk verrast toen de scoping call Relaunch & Scale adviseerde, ongeveer het dubbele van haar oorspronkelijke verwachting.
+**Resultaat:** Doordat de specifieke kwetsbaarheden exact werden aangewezen, begreep Anouk precies waarvoor ze betaalde en gaf ze akkoord op Relaunch & Scale. Daarmee werden alle zes de lekkende dashboard-views gecorrigeerd met centrale tenant-filtering — een kwetsbaarheid die, indien onopgemerkt, ertoe had geleid dat het ene bureau vroeg of laat de vertrouwelijke marketingdata van een ander bureau had kunnen inzien.
 
-In plaats van het getal klakkeloos te accepteren of af te wijzen, vroeg Anouk wat de hogere tier rechtvaardigde. Het Manifera-team liet haar de concrete bevindingen zien: MetricMerge's multi-tenant architectuur, waarbij data van elk bureau strikt gescheiden moest blijven, had inconsistente scoping in 6 van de 11 dashboard-weergaven. Dit was een structureel complexer probleem dan de single-tenant authenticatie die Launch Ready dekt, en paste exact binnen de gedefinieerde scope van Relaunch & Scale.
+> *"Ik wilde bijna protesteren tegen de prijs voordat ik begreep wat deze inhield. Zodra ik de specifieke views zag die openstonden, was het bedrag volkomen logisch — het was geen hoger getal voor hetzelfde probleem, het was een groter probleem dan ik zelf had doorzien."*  
+> — **Anouk Peters, Founder, MetricMerge (Delft)**
 
-**Resultaat:** Omdat de specifieke risico's helder werden aangetoond, begreep Anouk exact waarvoor ze betaalde. Ze keurde het Relaunch & Scale-project goed, waarbij alle 6 weergaven werden voorzien van waterdichte multi-tenant isolatielogica — een lek dat er anders voor had gezorgd dat bureaus elkaars vertrouwelijke campagnedata hadden kunnen inzien.
-
-> *"Ik wilde bijna afhaken op de prijs totdat ik begreep wat het daadwerkelijk dekte. Toen ik zag dat data van verschillende bureaus door elkaar kon lopen, werd het getal volkomen logisch — het was geen hogere prijs voor hetzelfde werk, het was een veel groter risico dan ik had gerealiseerd."*  
-> — **Anouk Peters, Oprichter MetricMerge (Delft)**
-
-**Kosten & Doorlooptijd:** €3.600 (Relaunch & Scale Pakket, multi-tenant data-isolatie over 6 dashboard-weergaven) — live in 13 werkdagen.
+**Kosten & Tijdlijn:** €3.600 (Relaunch & Scale Pakket, multi-tenant data-isolatie over zes dashboard-views) — live in 13 werkdagen.
 
 ---
 
 ## Veelgestelde Vragen
 
-### Waarom kan LaunchStudio geen exacte prijs geven vóór de scoping call?
-Een accurate prijs hangt af van wat de scoping call en codebase review concreet aantreffen — het aantal risicocategorieën, de codediepte en het datamodel — wat niet betrouwbaar kan worden ingeschat op basis van een korte beschrijving alleen.
+### Waarom kan LaunchStudio mij geen exacte prijs geven vóór het intakegesprek?
+
+Een betrouwbare prijs is afhankelijk van wat het intakegesprek en de codebase-review feitelijk aantreffen — hoeveel risicocategorieën aanwezig zijn, hoe diep ze in de code zitten en hoe complex het datamodel is. Dat kan niet verantwoord worden ingeschat op basis van een globale productomschrijving alleen, zoals Anouk's situatie bewees.
 
 ### Wat is het daadwerkelijke verschil tussen Launch Ready en Launch & Grow?
-Launch Ready dekt universele basisgaten (geheimenbeheer, authenticatie, betalingen) voor een eenvoudig single-product; Launch & Grow breidt uit naar complexere autorisatie (zoals rollen voor meerdere gebruikerstypen) voor rijkere applicaties.
 
-### Waarom viel mijn offerte hoger uit dan ik op basis van de prijspagina had verwacht?
-De scoping call benoemt exact de technische bevinding die hiervoor verantwoordelijk is (zoals multi-tenant datalekken of meerdere third-party API's), zodat de prijs een weerspiegeling is van identificeerbaar engineeringwerk in plaats van een willekeurige upsell.
+Launch Ready dekt universele basiszaken zoals geheimbeheer en basisauthenticatie voor een eenvoudig enkelvoudig product; Launch & Grow breidt dit uit naar complexere autorisatie zoals rolgebaseerde toegangscontrole over meerdere gebruikerstypen bij uitgebreidere producten.
 
-### Kunnen twee producten in dezelfde branche heel verschillende offertes krijgen?
-Ja. De bepalende factor is de onderliggende code-architectuur en kwetsbaarheden, niet de branche. Een schone AI-codebase kost minder tijd om te harden dan een codebase met diep geneste architectuurfouten.
+### Waarom viel mijn offerte in een hoger pakket uit dan ik op de prijspagina had verwacht?
 
-### Is de prijs onderhandelbaar nadat de scoping call is afgerond?
-De prijs weerspiegelt de afgesproken scope. Als een oprichter het budget wil verlagen door bijvoorbeeld alleen de meest kritieke beveiligingsgaten als eerste aan te pakken, passen we de scope en prijs daar transparant op aan.
+Het intakegesprek benoemt altijd exact de onderliggende bevinding, zoals multi-tenant data-isolatie of meervoudige externe integraties die individuele revisie vereisen, zodat het pakket aanwijsbaar extra technisch werk weerspiegelt in plaats van een willekeurige verhoging.
+
+### Kunnen twee producten in dezelfde branche sterk verschillende offertes krijgen?
+
+Ja — de doorslaggevende factor is wat de audit onder de motorkap aantreft, niet de branche. Een schone codebase met afgebakende issues kost minder dan een codebase waarin een vroege architectuurfout door tientallen features heen woekert.
+
+### Is de prijs ooit onderhandelbaar zodra het intakegesprek is afgerond?
+
+De prijs weerspiegelt de overeengekomen scope. Als een oprichter de scope wil inperken door bijvoorbeeld alleen de meest kritieke bevindingen als eerste aan te pakken, is dat een volkomen legitiem gesprek, en wordt de prijs transparant aangepast aan die gereduceerde scope.
 
 <script type="application/ld+json">
 {
@@ -107,10 +103,10 @@ De prijs weerspiegelt de afgesproken scope. Als een oprichter het budget wil ver
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom kan LaunchStudio geen exacte prijs geven vóór de scoping call?",
+      "name": "Waarom kan LaunchStudio mij geen exacte prijs geven vóór het intakegesprek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een accurate vaste prijs vereist inzicht in de werkelijke codediepte, risicocategorieën en datastructuur, wat pas zichtbaar wordt bij een technische review."
+        "text": "Omdat de prijs afhangt van de diepte van risico's, aantal integraties en complexiteit van het datamodel in de echte code, wat niet uit een omschrijving blijkt."
       }
     },
     {
@@ -118,31 +114,31 @@ De prijs weerspiegelt de afgesproken scope. Als een oprichter het budget wil ver
       "name": "Wat is het daadwerkelijke verschil tussen Launch Ready en Launch & Grow?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Launch Ready richt zich op basisbeveiliging voor single-product apps; Launch & Grow dekt geavanceerde rolgebaseerde autorisatie en rijkere functiesets."
+        "text": "Launch Ready lost basisrisico's op voor enkelvoudige apps; Launch & Grow dekt geavanceerdere autorisatie en rolgebaseerde toegang voor rijkere functionaliteit."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom viel mijn offerte hoger uit dan ik op basis van de prijspagina had verwacht?",
+      "name": "Waarom viel mijn offerte in een hoger pakket uit dan ik op de prijspagina had verwacht?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De scoping call toont specifieke onderliggende risico's aan (zoals multi-tenant datalekken) die extra engineeringwerk vereisen."
+        "text": "De intake wijst specifieke diepere oorzaken aan, zoals multi-tenant scheiding, waardoor de scope en het vereiste engineeringwerk aantoonbaar groter zijn."
       }
     },
     {
       "@type": "Question",
-      "name": "Kunnen twee producten in dezelfde branche heel verschillende offertes krijgen?",
+      "name": "Kunnen twee producten in dezelfde branche sterk verschillende offertes krijgen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, de offerte wordt bepaald door de technische kwaliteit en diepte van de AI-code, niet door de uiterlijke productcategorie."
+        "text": "Ja, want de prijs volgt de kwaliteit en complexiteit van de onderliggende code en architectuur, niet het uiterlijk of de categorie van de app."
       }
     },
     {
       "@type": "Question",
-      "name": "Is de prijs onderhandelbaar nadat de scoping call is afgerond?",
+      "name": "Is de prijs ooit onderhandelbaar zodra het intakegesprek is afgerond?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De prijs is gekoppeld aan de scope; het aanpassen van prioriteiten om binnen een budget te blijven is altijd mogelijk en wordt expliciet herrekend."
+        "text": "De prijs volgt de afgesproken scope; wie de investering wil verlagen kan kiezen voor een gerichtere scope die eerst de hoogste risico's afdekt."
       }
     }
   ]

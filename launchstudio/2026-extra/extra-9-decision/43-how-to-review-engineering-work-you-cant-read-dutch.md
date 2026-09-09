@@ -116,7 +116,7 @@ Software beoordelen zonder code te kunnen lezen draait om het opeisen van de jui
 
 **Wilt u weten hoe een solide acceptatiechecklist eruitziet voor uw specifieke prototype? Plan een kort gesprek van 15 minuten met LaunchStudio: we denken direct met u mee over de kritische testpunten voor uw livegang.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Oprichter in Actie: Het Checklist-Punt Dat een Ernstig Datalek Voorkwam
 

@@ -123,6 +123,10 @@ Onze ingenieurs standaardiseren de omgevingsconfiguratie als in versiebeheer opg
 
 Niet als ze daadwerkelijke geheime waarden bevatten – leg de structurele configuratie vast, zoals functievlaggen en niet-gevoelige instellingen, en verwijs naar welk geheim geladen moet worden uit een secret manager of de omgevingsopslag van uw hostingplatform, in plaats van echte API-sleutels of wachtwoorden vast te leggen in de git-geschiedenis.
 
+### Wat kost een omgevings-audit bij LaunchStudio?
+
+Een omgevings- en deployment audit inclusief config-as-code migratie kost gemiddeld €800 en duurt circa 5 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

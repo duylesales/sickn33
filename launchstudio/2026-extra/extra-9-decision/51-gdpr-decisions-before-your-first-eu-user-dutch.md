@@ -94,7 +94,7 @@ Alle bovenstaande stappen kan een oprichter prima zelfstandig beredeneren en imp
 
 [Beschrijf uw project](https://launchstudio.eu/nl/#contact) en ontvang binnen één werkdag een concreet overzicht van wat uw huidige aanmeldflow nog mist om AVG-proof te zijn.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: Het Vinkje Dat Niet Volstond
 

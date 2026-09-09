@@ -64,30 +64,38 @@ Dit is geen hogere wiskunde, maar het zijn wél tientallen uren aan precisiewerk
 
 ## De Kostenladder: Wachten bij 10, 100 en 1.000 Gebruikers
 
-Dezelfde ontwerpfout — bijvoorbeeld het ontbreken van Row-Level Security op een Supabase-tabel — kent sterk verschillende prijskaartjes afhankelijk van het moment waarop u ingrijpt:
+Exact dezelfde onderliggende ontwerpfout — neem bijvoorbeeld een ontbrekend of te permissief Row-Level Security (RLS) beleid op een centrale Supabase- of PostgreSQL-tabel — kost dramatisch verschillende bedragen om op te lossen, afhankelijk van het exacte moment waarop u de fout ontdekt en aanpakt:
 
-- **Onder de 10 gebruikers (vrienden, bekenden, vroege testers):** Een typische ingreep binnen het [Launch Ready-pakket](https://launchstudio.eu/nl/#packages), doorgaans aan de onderkant van de bandbreedte (€800–€3.500). Er is nagenoeg geen migratierisico en geen druk op uptime.
-- **Rond de 100 actieve gebruikers:** De technische fix is hetzelfde, maar vereist nu datamigraties, fallback-scripts en het ontzien van actieve sessies. Het werk verschuift naar de bovenkant van de Launch Ready-bandbreedte of richting Launch & Grow.
-- **Bij 1.000+ gebruikers en omzet:** Dezelfde weeffout is nu een acuut bedrijfsrisico. De reparatie moet gepaard gaan met forensisch logonderzoek om uit te sluiten dat er in het verleden data is ingezien door onbevoegden — wat onder de AVG kan leiden tot een verplichte datalekmelding bij de Autoriteit Persoonsgegevens. Dit is geen reguliere optimalisatie meer, maar acute crisisbeheersing.
+- **Onder de 10 gebruikers (vrienden, familie en welwillende vroege testers):**
+  Dit valt zuiver binnen het vaste **Launch Ready** pakket, doorgaans aan de onderkant van de prijsband van €800 tot €3.500. Er is immers nog nauwelijks sprake van productiedata, het risico bij een datamigratie is nagenoeg nul, en u ervaart geen enkele druk op uptime terwijl de code en databasepolicies worden gecorrigeerd.
+- **Rond de 100 echte, onbekende gebruikers:**
+  De technische ingreep zelf is identiek, maar moet nu worden uitgevoerd zonder dat actieve gebruikerssessies worden verbroken of lopende acties mislukken. Dit betekent dat migratietests, veilige deployment-stappen en een sluitend rollback-plan verplichte onderdelen van de klus worden in plaats van bijzaak. Dit duwt dezelfde categorie werkzaamheden direct naar de bovenkant van de Launch Ready band, of richting het **Launch & Grow** traject zodra ook betalingen en e-mailstromen betrokken zijn.
+- **Bij 1.000+ gebruikers met substantiële omzet:**
+  Hetzelfde beveiligingslek is niet langer een preventieve kwaliteitsverbetering, maar een acuut incidentrisico. Elke reparatie moet nu gepaard gaan met een pijnlijk en grondig forensisch onderzoek: zijn er in het verleden al klantgegevens gelekt of ingezien door onbevoegden? Afhankelijk van de aard van de gegevens brengt dit directe wettelijke meldplichten onder de AVG met zich mee richting toezichthouders en getroffen klanten. Dit is geen overzichtelijk afgebakend softwaretraject meer — het is incident response vermomd als hardening, en het kost een veelvoud aan directe advocaat- en consultancykosten, verlies van kostbare oprichterstijd, en onherstelbare deuken in het vertrouwen van uw klanten.
+## Drie Vragen Die Uw Werkelijke Situatie Blootleggen
 
-## Drie Vragen Die Uw Werkelijke Situatie Onthullen
+Vóórdat u besluit om de noodzakelijke technische fundamenten nog een kwartaal voor u uit te schuiven, beantwoordt u deze drie vragen volstrekt eerlijk:
 
-Wees eerlijk tegen uzelf:
-1. **Slaat uw app momenteel privégegevens op van echte personen die ingezien kunnen worden als een rechtencontrole faalt?** Zo ja, dan bent u de fase van "nog geen marktsignaal" definitief voorbij.
-2. **Stelt u uit wegens een gebrek aan tractie, of omdat technische terminologie u doet terugschrikken?** *"Ik weet nog niet of mensen dit willen"* is faseren. *"Ik zoek die security later wel uit"* is uitstelgedrag.
-3. **Als er morgen door een succesvolle post plotseling vijftig vreemden registreren, houdt uw applicatie dan stand?** Of moet u deze beveiligingsslag dan onder paniek en tijdsdruk uitvoeren?
-
+1. **Slaat uw applicatie op dit moment al privégegevens van minimaal één echte gebruiker op die een andere ingelogde gebruiker zou kunnen inzien als een autorisatiecheck hapert?**
+   Als het eerlijke antwoord ja luidt, bevindt u zich niet langer in het 'nog geen marktsignaal'-kamp, ongeacht of u 5 of 500 gebruikers heeft. Vanaf het moment dat u vreemden vraagt om persoonlijke data aan u toe te vertrouwen, rust op u de plicht die data te beschermen.
+2. **Stelt u het werk uit omdat u daadwerkelijk nog geen marktvraag heeft gevalideerd, of omdat het technische jargon u intimideert en u doet verlangen naar het openen van een ander tabblad?**
+   Let scherp op de zinnen die u tegen uzelf uitspreekt: *"Ik weet nog niet zeker of iemand dit product echt wil"* is legitiem faseren. *"Ik zoek die beveiligings- en databasezaken later wel een keer uit"* is struisvogelpolitiek vermomd als een strategisch plan.
+3. **Als vijftig volslagen vreemden zich morgen registreren na een succesvolle marketingactie, overleeft uw huidige setup dat dan, of zou u exact hetzelfde technische herstelwerk moeten verrichten onder acute tijdsdruk en paniek?**
+   Als het antwoord luidt *"onder zware druk"*, bespaart u met wachten helemaal geen tijd. U kiest er simpelweg voor om exact hetzelfde werk later uit te voeren, onder slechtere omstandigheden, met hogere kosten en in het volle zicht van het publiek.
 ## De Middenweg: Bewust Faseren met Harde Triggers
 
-U hoeft niet direct duizenden euro's uit te geven om toch verantwoord te ondernemen. Hanteer de professionele middenweg:
-- Leg een **onwrikbare basis** vast: zet nooit API-sleutels in de frontend, handhaaf permissies altijd op de server, en verzamel nooit meer persoonsgegevens dan strikt nodig voor de huidige testfase.
-- Koppel uitstel aan een **expliciete, meetbare trigger**: *"We harden de betaalflow zodra we 10 betalende klanten hebben die we niet persoonlijk kennen"* of *"We auditen autorisatierollen vóórdat we de tweede testgroep toelaten"*.
+Legitiem wachten en roekeloos uitstellen zijn niet de enige twee opties — er bestaat een solide, verantwoorde middenweg, en dat is exact de strategie die doorgewinterde software-ondernemers hanteren:
 
-Een uitgestelde beslissing met een vooraf vastgelegde trigger is professioneel leiderschap. Een uitgestelde beslissing zonder trigger is hopen dat het noodlot u overslaat.
+Zorg te allen tijde voor het minimale, niet-onderhandelbare basisniveau, zelfs vóórdat er sprake is van substantiële tractie: exposeer nooit API-sleutels of databasegeheimen aan de client-zijde, sla nooit meer persoonsgegevens op dan strikt vereist is voor de huidige testfase, en bouw functies nooit op de gemakzuchtige aanname dat *"niemand dit voorlopig toch echt gebruikt"*.
 
-Binnen LaunchStudio en Manifera zien onze engineers beide patronen dagelijks voorbijkomen. Het dichttimmeren van de basis vóórdat u groeit is altijd een fractie van de prijs van een reparatie achteraf. [Bereken direct wat het beveiligen van uw prototype vandaag kost via onze prijscalculator](https://launchstudio.eu/nl/#calculator).
+Formuleer vervolgens expliciete, meetbare **triggers** voor de volgende fasen:
+- *"We richten geautomatiseerde betalingsaudits en webhook-idempotentie in zodra we 10 betalende klanten hebben die we niet persoonlijk kennen."*
+- *"We laten onze autorisatiematrix en databasepolicies extern auditen vóórdat we live gaan op Product Hunt of starten met betaalde advertenties."*
 
-## Praktijkvoorbeeld
+Een uitgestelde beslissing waaraan een expliciete, meetbare voorwaarde is gekoppeld, is een volwassen strategische beslissing. Een uitgestelde beslissing zonder enige voorwaarde is louter hopen dat de onvermijdelijke deadline nooit zal aanbreken. Dat onderscheid is het hele verschil tussen de oprichter die verstandig faseert en de oprichter die geruisloos een torenhoge schuld opbouwt. De senior engineers van LaunchStudio, ondersteund door Manifera's elf jaar ervaring in enterprise-software, zien beide patronen voortdurend langskomen — en het tweede patroon is altijd oneindig veel duurder om achteraf te repareren dan wanneer het op dag één correct was neergezet.
+
+Wachten is een uitstekende strategie wanneer het een besluit is met een harde trigger. Het is een gevaarlijke gewoonte wanneer er geen trigger is — want de trigger arriveert immers hoe dan ook, maar dan in de vorm van een acuut incident in plaats van een beheerste keuze. [Voer uw huidige setup in onze online prijscalculator in](https://launchstudio.eu/nl/#calculator) en ontdek direct wat het kost om deze gaten vandaag professioneel te dichten, vergeleken met wat exact dezelfde kwetsbaarheid kost zodra echte gebruikers ervan afhankelijk zijn.
+## Echt voorbeeld
 
 ### Een Fysiotherapie-Planningstool Die Acht Maanden Wachtte
 

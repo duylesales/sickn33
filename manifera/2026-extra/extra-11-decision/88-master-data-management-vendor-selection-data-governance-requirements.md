@@ -54,6 +54,10 @@ The vendors worth shortlisting are the ones who push you to choose a governance 
 
 Manifera helps organizations scope MDM implementations around the right governance model and builds the integration layer connecting MDM hubs to operational systems as part of our [custom software development](https://www.manifera.com/services/custom-software-development/) practice — see [our way of working](https://www.manifera.com/about-us/our-way-of-working/) for how we approach governance-first data projects, or [get in touch](https://www.manifera.com/contact-us/) to talk through your master data landscape.
 
+## By The Numbers: Sizing the Match/Merge Proof-of-Concept Correctly
+
+A representative MDM proof-of-concept needs specific sizing to produce a trustworthy accuracy signal, not a vendor's cherry-picked demo sample. Pull a minimum of 5,000-10,000 real customer or product records from your actual source systems, weighted toward the entities most likely to have duplicates — high-transaction-volume accounts, records with manual data-entry history, and any entity type that spans multiple business units under different naming conventions, since duplicates cluster disproportionately in exactly these categories. Expect a genuinely messy B2B customer dataset to show a true duplicate rate somewhere between 8% and 20% once probabilistic matching runs — if the vendor's proof-of-concept reports under 3%, the sample was likely too clean or too small to be representative. Score the results on both false-positive and false-negative rates explicitly, not blended accuracy: a false-merge rate above roughly 0.5% on high-value entities (the ones with real transaction history attached) is disqualifying regardless of overall accuracy, because a single wrongly merged enterprise customer can corrupt downstream billing, contracts, and reporting in ways that take months to unwind. Budget the proof-of-concept at two to three weeks minimum — a same-week "instant results" demo is testing the vendor's marketing dataset, not yours.
+
 ## Frequently Asked Questions
 
 ### How do we decide which MDM governance model — registry, consolidation, coexistence, or centralized — fits our organization?
@@ -70,6 +74,19 @@ It depends heavily on underlying data quality, so ask vendors for a realistic es
 
 ### Should MDM governance and broader data platform governance be handled by the same tooling?
 Ideally they're at least integrated, not fully separate — disconnected governance and lineage tracking between an MDM hub and an analytics platform creates two sources of truth about who's allowed to touch what data, undermining the purpose of governance in the first place.
+
+### (Scenario: distribution company discovers "Northgate Logistics" exists in nine systems with four different tax ID formats, mirroring this article's opening example) What governance model should handle this specific kind of legal-entity fragmentation going forward?
+Consolidation or coexistence style, depending on whether downstream systems need the corrected golden record written back — registry alone would flag the duplicate cluster but leave the nine inconsistent tax ID formats uncorrected in their source systems. Given tax ID is a legally authoritative field, pair whichever model you choose with a survivorship rule that defers specifically to your ERP or legal entity register for that field, not a generic most-recent-wins default.
+
+### (Scenario: a proof-of-concept vendor reports a 99.7% match accuracy figure with no breakdown of false positives versus false negatives) How should a CTO respond to this claim?
+Request the false-positive and false-negative rates separately, and specifically ask what percentage of matches were high-value entities with active transaction history, since a blended accuracy figure can mask a small but costly false-merge rate concentrated in exactly the records that matter most. A vendor unable or unwilling to break down the number this way hasn't measured accuracy rigorously enough to trust the headline figure.
+
+### (Scenario: business users in three regional offices currently create customer records independently with no shared approval process) Is a centralized MDM governance model realistic for this organization right now?
+Not immediately — centralized governance requires source systems to create and edit master data through the hub, which is a significant workflow change for teams accustomed to independent record creation. Registry or consolidation style is a more realistic starting point, with centralized governance introduced later once the organization has demonstrated it can operate under the tighter approval workflow a hub requires.
+
+### (Scenario: a data steward's manual review decisions on ambiguous matches don't appear to improve the automated matching engine's accuracy over time) What should this prompt the CTO to check with the vendor?
+Verify explicitly whether the platform's matching engine actually incorporates steward decisions as feedback into future automated scoring, or whether stewardship is a one-off manual override with no learning loop back into the algorithm. Some MDM platforms market "active learning" without a real feedback mechanism, and this gap only becomes visible months into production when match quality plateaus instead of improving.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -113,6 +130,38 @@ Ideally they're at least integrated, not fully separate — disconnected governa
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ideally they're at least integrated, not fully separate — disconnected governance and lineage tracking between an MDM hub and an analytics platform creates two sources of truth about who's allowed to touch what data, undermining the purpose of governance in the first place."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: distribution company discovers \"Northgate Logistics\" exists in nine systems with four different tax ID formats, mirroring this article's opening example) What governance model should handle this specific kind of legal-entity fragmentation going forward?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Consolidation or coexistence style, depending on whether downstream systems need the corrected golden record written back. Pair whichever model you choose with a survivorship rule that defers to your ERP or legal entity register for the tax ID field specifically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a proof-of-concept vendor reports a 99.7% match accuracy figure with no breakdown of false positives versus false negatives) How should a CTO respond to this claim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Request the false-positive and false-negative rates separately, and ask what percentage of matches were high-value entities with active transaction history. A blended accuracy figure can mask a small but costly false-merge rate concentrated in exactly the records that matter most."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: business users in three regional offices currently create customer records independently with no shared approval process) Is a centralized MDM governance model realistic for this organization right now?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not immediately — centralized governance requires source systems to create and edit master data through the hub, a significant workflow change. Registry or consolidation style is a more realistic starting point, with centralized governance introduced later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: a data steward's manual review decisions on ambiguous matches don't appear to improve the automated matching engine's accuracy over time) What should this prompt the CTO to check with the vendor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Verify whether the platform's matching engine actually incorporates steward decisions as feedback into future scoring, or whether stewardship is a one-off manual override with no learning loop. Some platforms market \"active learning\" without a real feedback mechanism."
       }
     }
   ]

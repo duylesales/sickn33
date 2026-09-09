@@ -62,6 +62,12 @@ The client-facing dashboard is the least revealing part of a wealth management p
 
 Manifera has supported wealth and asset management firms building the reconciliation and custody integration layers that sit underneath advisor-facing platforms, where accuracy and audit trail integrity were non-negotiable design constraints from day one. If your firm needs an independent technical review of a prospective vendor's custody integration architecture, our [about us](https://www.manifera.com/about-us/) page and [contact page](https://www.manifera.com/contact-us/) are good starting points to bring our engineering team into that evaluation before a contract is signed.
 
+## By the Numbers: Reconciliation Benchmarks a Compliance Officer Can Actually Verify
+
+A mature wealth management platform's reconciliation exception rate should run well under 1% of daily position and transaction records; a vendor reporting exception rates above 2-3% on a sustained basis is telling you the underlying integration, not the client base, is the problem. Time-to-resolution for a flagged discrepancy should be measured in hours, not days — ask for the median and the 90th-percentile resolution time separately, since a strong median can hide a long tail of unresolved items sitting open for weeks. On SOC 2 Type II reports specifically, treat any report covering less than a six-month audit window with skepticism, since a shorter observation period gives the auditor less opportunity to catch control failures that only surface at volume or under stress.
+
+For held-away account aggregation, ask what percentage of aggregated connections fail or require re-authentication in a given month; a well-integrated Plaid or Akoya connection layer should see single-digit percentage monthly failure rates, and anything materially higher signals brittle credential handling that will generate ongoing advisor and client friction. Finally, on T+1 confirmation loops, request the vendor's actual measured lag between trade execution at the custodian and confirmation reflected in the platform — under 15 minutes is a reasonable target for a genuinely real-time confirmation architecture; multi-hour lag means the platform is still effectively operating on batch logic dressed up as real-time.
+
 ## Frequently Asked Questions
 
 ### What is the difference between batch file, SWIFT, and API custody integration?
@@ -78,6 +84,18 @@ Shorter settlement cycles compress the window in which a platform must receive a
 
 ### How should held-away account data be handled differently from custodied account data?
 Held-away accounts, aggregated through services like Plaid or Akoya, should have aggregation credentials stored with bank-grade encryption and tokenization rather than plaintext, and access should be logically segregated with audit logging that distinguishes normal advisor access from anomalous cross-book access.
+
+### (Scenario: A compliance officer is reviewing a vendor's reconciliation exception report for the first time) What reconciliation exception rate should worry a compliance officer reviewing a vendor reference?
+Treat a sustained exception rate above 2-3% of daily records as a warning sign that the integration itself, not client-specific data quality, is generating the discrepancies. A well-run platform should sit well under 1%, and you should ask for both the median and 90th-percentile time-to-resolution, not just an average that can hide a long tail of stale open items.
+
+### (Scenario: A firm is evaluating a vendor whose SOC 2 Type II report covers only a short audit window) Is a SOC 2 Type II report covering just three or four months as reliable as one covering a full year?
+No. A shorter audit window gives the independent auditor less opportunity to observe controls under real operating stress, including volume spikes and edge cases that a brief observation period may simply not encounter. Prefer a report covering at least six months, and ask directly why a shorter window was chosen if that's what's offered.
+
+### (Scenario: Advisors are complaining that client-linked bank accounts keep needing to be reconnected) Our advisors report held-away accounts frequently need re-authentication — is that normal or a vendor red flag?
+Some periodic re-authentication is normal, but a well-integrated aggregation layer should see single-digit percentage monthly failure or re-auth rates. Materially higher rates point to brittle credential handling or an underlying aggregation provider relationship the vendor hasn't tuned well, and it's worth asking the vendor for their actual measured rate rather than accepting an assurance that "this happens to everyone."
+
+### (Scenario: A compliance officer is trying to confirm a platform's T+1 confirmation loop is genuinely real-time) How do we verify a vendor's confirmation loop is actually keeping pace with T+1 settlement rather than just claiming to?
+Ask for the vendor's actual measured lag between trade execution at the custodian and confirmation reflected in the platform, ideally from a live reference client, not a theoretical architecture diagram. Under 15 minutes is a reasonable benchmark for genuine real-time confirmation; multi-hour lag indicates batch processing still sits underneath a real-time-looking interface.
 
 <script type="application/ld+json">
 {
@@ -108,6 +126,26 @@ Held-away accounts, aggregated through services like Plaid or Akoya, should have
       "@type": "Question",
       "name": "How should held-away account data be handled differently from custodied account data?",
       "acceptedAnswer": {"@type": "Answer", "text": "Held-away accounts, aggregated through services like Plaid or Akoya, should have aggregation credentials stored with bank-grade encryption and tokenization rather than plaintext, and access should be logically segregated with audit logging that distinguishes normal advisor access from anomalous cross-book access."}
+    },
+    {
+      "@type": "Question",
+      "name": "What reconciliation exception rate should worry a compliance officer reviewing a vendor reference?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Treat a sustained exception rate above 2-3% of daily records as a warning sign that the integration itself, not client-specific data quality, is generating the discrepancies. A well-run platform should sit well under 1%, and you should ask for both the median and 90th-percentile time-to-resolution, not just an average that can hide a long tail of stale open items."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is a SOC 2 Type II report covering just three or four months as reliable as one covering a full year?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. A shorter audit window gives the independent auditor less opportunity to observe controls under real operating stress, including volume spikes and edge cases that a brief observation period may simply not encounter. Prefer a report covering at least six months, and ask directly why a shorter window was chosen if that's what's offered."}
+    },
+    {
+      "@type": "Question",
+      "name": "Our advisors report held-away accounts frequently need re-authentication — is that normal or a vendor red flag?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Some periodic re-authentication is normal, but a well-integrated aggregation layer should see single-digit percentage monthly failure or re-auth rates. Materially higher rates point to brittle credential handling or an underlying aggregation provider relationship the vendor hasn't tuned well, and it's worth asking the vendor for their actual measured rate rather than accepting an assurance that \"this happens to everyone.\""}
+    },
+    {
+      "@type": "Question",
+      "name": "How do we verify a vendor's confirmation loop is actually keeping pace with T+1 settlement rather than just claiming to?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Ask for the vendor's actual measured lag between trade execution at the custodian and confirmation reflected in the platform, ideally from a live reference client, not a theoretical architecture diagram. Under 15 minutes is a reasonable benchmark for genuine real-time confirmation; multi-hour lag indicates batch processing still sits underneath a real-time-looking interface."}
     }
   ]
 }

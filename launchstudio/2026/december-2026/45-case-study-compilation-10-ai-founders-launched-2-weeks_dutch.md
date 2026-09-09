@@ -79,6 +79,23 @@ Wanneer we deze tien projecten als een dataset analyseren in plaats van als tien
 
 **9 van de 10 oprichters hadden een professionele achtergrond volledig buiten de IT.** Ze waren dierenarts-leverancier, hospitality-adviseur, pluimveehouder of charter-schipper. Dit weerspiegelt wie er vandaag de dag écht bouwt met Lovable, Bolt, v0 en Cursor, en vormt precies de doelgroep voor wie de kloof naar een productierijpe backend het grootst is.
 
+### Gemeenschappelijke Succesfactoren uit Onze Pre-Launch Sprints
+
+Een analyse van tien succesvolle AI-startups die binnen twee weken lanceerden toont drie duidelijke patronen:
+1. **Meedogenloze Scope-Focus:** Ze beperkten hun initiële lancering tot één kernprobleem dat ze uitzonderlijk goed oplosten.
+2. **Behoud van de Werkende Frontend:** Ze verspilden geen tijd aan het opnieuw ontwerpen van de interface, maar vertrouwden op hun AI-gebouwde UI.
+3. **Professionele Backend-Delegatie:** Ze besteedden de complexe beveiliging en infrastructuur uit aan senior engineers, waardoor ze zelf 100% van hun tijd konden richten op marketing en verkoop.
+
+- **Vroegtijdige Klantgesprekken:** De meest succesvolle oprichters begonnen al met de voorverkoop en demo's terwijl LaunchStudio de technische hardening uitvoerde, waardoor ze direct op dag één betalende abonnees hadden.
+- **Transparante Communicatie naar Gebruikers:** Ze communiceerden eerlijk over hun roadmap en betrokken vroege gebruikers actief bij het verbeteren van de AI-prompts.
+
+### Diepgaande Lessen uit Twee Weken Hardening Sprints
+
+Wat onderscheidt de startups die binnen 14 dagen winstgevend werden?
+- **Strikte Beperking tot de MVP-Kern:** Ze weerstonden de verleiding om tientallen secundaire instellingen te bouwen en lanceerden met één vlekkeloze kernfunctionaliteit.
+- **Directe Inrichting van Betaalsystemen:** Ze lieten gebruikers niet gratis testen, maar vroegen vanaf dag één om een creditcard via een geoptimaliseerde Stripe Checkout.
+- **Besteed Complexe Beveiliging Uit:** Door Row Level Security en database-indexering direct door senior engineers te laten inrichten, voorkwamen ze kostbare post-launch incidenten.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Het elfde succesverhaal in detail

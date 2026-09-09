@@ -90,6 +90,10 @@ Costruzioni Generali Foggia proceeded with a realistically scoped platform build
 
 Before committing to a construction management platform budget, insist on a cost estimate modeled against your actual BIM tool diversity, document control rigor requirements, field connectivity conditions, and multi-party project structure, not a simplified demo scenario. [Talk to one of our senior architects](https://www.manifera.com/contact-us/) about a realistic construction management platform cost scoping exercise.
 
+## By the Numbers: A Realistic Construction Platform Budget Split
+
+For a general contracting firm scoping a custom software development build against its actual project complexity, a realistic budget allocation looks roughly like: BIM/IFC data interoperability, including schema-version handling and import validation across each design tool the firm's subcontractor mix actually uses, 20-25% of total cost; document control with revision tracking and currency enforcement, 20-25%, a category worth weighting heavily given the direct safety and rework cost of an outdated drawing reaching a jobsite; offline-first mobile field architecture with conflict-aware sync, 20-25%, scaling with the number of simultaneous field users a project realistically runs; multi-party access control modeled against the firm's actual subcontractor and stakeholder count, 15-20%; with the remainder covering the scheduling dashboard most initial demos emphasize. A practical scoping checklist: (1) list every distinct design tool format subcontractors on the firm's next major project will actually submit, not just the firm's own primary tool; (2) confirm whether field connectivity at the actual jobsite is genuinely intermittent or effectively absent for stretches, since these require different sync-conflict engineering; (3) count the actual number of distinct organizations needing scoped access on a typical project, not a simplified two-party assumption. As a rough anchor, a platform supporting a multi-subcontractor commercial project with genuine offline field requirements commonly runs €150,000-€350,000 for a first production-ready software system development build; a quote well under that for comparable project complexity usually means BIM interoperability or offline sync was scoped against a single clean data source rather than real jobsite conditions.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO evaluating an initial construction platform estimate) Why do construction management platform cost estimates often come in significantly under actual cost?
@@ -112,6 +116,22 @@ Construction sites frequently have unreliable connectivity, and genuine field us
 
 Construction projects typically involve multiple distinct organizations needing appropriately scoped access, requiring genuinely flexible access control considerably more complex than a simplified single-organization permission model.
 
+### (Scenario: firm owner comparing off-the-shelf construction software to a custom build) When does a general contractor need custom software engineering instead of an off-the-shelf construction management tool?
+
+Off-the-shelf tools typically handle a single dominant BIM format and a simplified organizational structure well, so custom engineering earns its cost once the firm's actual subcontractor tool diversity, document control rigor, or multi-party access complexity exceeds what the off-the-shelf software product's generic configuration options can represent without workaround processes outside the system.
+
+### (Scenario: IT lead scoping sync conflict resolution) What happens when two field users edit the same record while both are offline, and why does resolving this correctly cost real engineering time?
+
+The platform needs deterministic conflict resolution logic — typically last-write-wins with a visible flag, or field-level merge for non-overlapping edits — surfaced clearly to users rather than silently discarding one person's offline work, and building this correctly for construction-specific record types (schedules, RFIs, field reports) is a genuine software system development task, not a generic sync library configuration.
+
+### (Scenario: project executive scoping subcontractor onboarding) How much additional engineering does onboarding each new subcontractor's design tool typically require after the platform is already live?
+
+Each new IFC-exporting tool a subcontractor introduces typically requires validating that tool's specific export quirks against the platform's import logic, since IFC compliance varies meaningfully across vendor implementations in practice, meaning onboarding cost doesn't disappear after initial launch but recurs modestly with each new subcontractor relationship.
+
+### (Scenario: safety manager evaluating document control ROI) What's a concrete way to measure whether a construction platform's document control is actually preventing outdated-revision errors on site?
+
+Track the number of times a field user attempts to open or reference a superseded document revision and is blocked or redirected to the current one; a platform showing zero such interceptions after weeks of active field use is more likely failing to enforce revision currency than actually preventing the underlying error.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,7 +141,11 @@ Construction projects typically involve multiple distinct organizations needing 
     { "@type": "Question", "name": "(Scenario: engineering lead scoping BIM integration) Why does BIM data interoperability cost more than a single-source integration suggests?", "acceptedAnswer": { "@type": "Answer", "text": "Real projects involve multiple design tools, requiring genuine IFC-based interoperability, not a single data source assumption." } },
     { "@type": "Question", "name": "(Scenario: quality manager scoping document control) Why does document version control deserve dedicated engineering budget beyond basic file storage?", "acceptedAnswer": { "@type": "Answer", "text": "Outdated drawing revisions can cause costly, safety-critical errors, requiring rigorous version tracking beyond simple storage." } },
     { "@type": "Question", "name": "(Scenario: field operations lead scoping mobile reliability) Why does mobile field reliability require more than validating on office connectivity?", "acceptedAnswer": { "@type": "Answer", "text": "Sites frequently have unreliable connectivity, requiring offline-first architecture invisible under office-only validation." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for multi-party projects) Why does multi-party access control deserve dedicated budget for construction platforms specifically?", "acceptedAnswer": { "@type": "Answer", "text": "Projects involve multiple organizations needing scoped access, requiring flexibility beyond a single-organization model." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for multi-party projects) Why does multi-party access control deserve dedicated budget for construction platforms specifically?", "acceptedAnswer": { "@type": "Answer", "text": "Projects involve multiple organizations needing scoped access, requiring flexibility beyond a single-organization model." } },
+    { "@type": "Question", "name": "(Scenario: firm owner comparing off-the-shelf construction software to a custom build) When does a general contractor need custom software engineering instead of an off-the-shelf construction management tool?", "acceptedAnswer": { "@type": "Answer", "text": "Custom engineering earns its cost once subcontractor tool diversity, document control rigor, or access complexity exceeds generic configuration options." } },
+    { "@type": "Question", "name": "(Scenario: IT lead scoping sync conflict resolution) What happens when two field users edit the same record while both are offline, and why does resolving this correctly cost real engineering time?", "acceptedAnswer": { "@type": "Answer", "text": "The platform needs deterministic conflict resolution surfaced clearly to users, a genuine engineering task for construction-specific record types, not generic sync configuration." } },
+    { "@type": "Question", "name": "(Scenario: project executive scoping subcontractor onboarding) How much additional engineering does onboarding each new subcontractor's design tool typically require after the platform is already live?", "acceptedAnswer": { "@type": "Answer", "text": "Each new tool requires validating its export quirks against import logic, since IFC compliance varies across vendors, so onboarding cost recurs with each new subcontractor." } },
+    { "@type": "Question", "name": "(Scenario: safety manager evaluating document control ROI) What's a concrete way to measure whether a construction platform's document control is actually preventing outdated-revision errors on site?", "acceptedAnswer": { "@type": "Answer", "text": "Track how often a field user is blocked from opening a superseded revision; zero interceptions after weeks of use suggests weak enforcement, not prevention." } }
   ]
 }
 </script>

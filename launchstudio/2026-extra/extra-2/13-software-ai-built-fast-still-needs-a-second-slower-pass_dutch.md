@@ -130,50 +130,42 @@ Onderdeel van het proces van het introductiegesprek is specifiek het identificer
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is een open CORS-beleid een configuratie- of codeprobleem?",
+      "name": "Zou een infrastructuuringenieur een open CORS-beleid beschrijven als een configuratieprobleem of een codeprobleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Configuratie specifiek, wat het gemakkelijk maakt om op een permissieve standaardwaarde te laten staan."
+        "text": "Configuratie specifiek – het is typisch een instelling in plaats van applicatielogica, wat onderdeel is van waarom het zo gemakkelijk is om op een permissieve standaardwaarde te laten staan."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan een oprichter de CORS-configuratie zelf controleren?",
+      "name": "Kan een oprichter zijn eigen CORS-configuratie zelf controleren zonder externe hulp?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, hoewel het bepalen van de juiste allow-list baat heeft bij een toegewijde beoordeling."
+        "text": "Een oprichter kan de huidige CORS-configuratie rechtstreeks controleren in de instellingen of middleware-code van zijn API, hoewel het correct bepalen van de juiste toegestane lijst typisch baat heeft bij een toegewijde beoordeling."
       }
     },
     {
       "@type": "Question",
-      "name": "Vormt enterprise-ervaring de CORS-configuratie voor kleinere producten?",
+      "name": "Vormt enterprise-klantervaring de CORS-configuratie voor kleinere producten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, het principe van expliciete allow-lists is identiek ongeacht de bedrijfsgrootte."
+        "text": "Ja – het onderliggende principe (expliciete toegestane lijsten, niet standaard open) is identiek ongeacht de bedrijfsgrootte."
       }
     },
     {
       "@type": "Question",
-      "name": "Moet een open CORS-beleid halverwege de ontwikkeling direct gefixt worden?",
+      "name": "Is een open CORS-beleid iets dat het moment dat het wordt opgemerkt moet worden hersteld, zelfs halverwege de ontwikkeling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet noodzakelijk halverwijs, nhưng wel vóór de lancering mệt thực tế data."
+        "text": "Niet noodzakelijkerwijs halverwege de ontwikkeling – een opzettelijk open beleid tijdens actieve vroege opbouw is een redelijke, veelvoorkomende afweging; het specifieke risico is alleen het onbeoordeeld uitrollen van diezelfde open configuratie zodra er echte gebruikerssessies en echte partnerintegraties bij betrokken zijn."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe wordt voorkomen dat một CORS fix làm hỏng integratie legitiem?",
+      "name": "Hoe verifieert LaunchStudio dat een CORS-herstelling een legitieme integratie niet heeft gebroken die een oprichter vergat te vermelden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Trước khi làm allow-list, tất cả origin hợp lệ (frontend, staging, partners) đều được liệt kê đầy đủ."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is het risico van origin '*' gecombineerd met credentials: true?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dit staat toe dat sessie-cookies cross-origin meesturen, một nguy cơ bảo mật nghiêm trọng."
+        "text": "Onderdeel van het proces van het introductiegesprek is specifiek het identificeren van elke legitieme oorsprong die een product moet ondersteunen – frontend-domeinen, staging-omgevingen, partnerintegraties – voordat de toegestane lijst wordt geïmplementeerd."
       }
     }
   ]

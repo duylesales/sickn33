@@ -7,6 +7,31 @@ Doelgroep: Technische Solo Founder / Indie Hacker
 
 # Ratelimitering: De Ontbrekende Laag Tussen Jouw API En Misbruik
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ratelimitering: De Ontbrekende Laag Tussen Jouw API En Misbruik",
+  "description": "",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/rate-limiting-missing-layer-between-api-and-abuse"
+  }
+}
+</script>
+
+
 Authenticatie beantwoordt "wie is dit." Autorisatie beantwoordt "wat mogen ze doen." Geen van beide beantwoordt een derde, even belangrijke vraag: hoeveel keer, in hoe kort een venster, mogen ze het doen — en AI-gegenereerde API's, zelfs die met de authenticatie- en autorisatiegaten elders in deze serie behandeld correct gedicht, hebben vaak helemaal geen antwoord op deze derde vraag, wat een specifieke, aparte blootstelling achterlaat die correcte identiteitsverificatie alleen niet aanpakt.
 
 ## Waarom Correcte Auth Geen Ratebescherming Impliceert
@@ -36,6 +61,18 @@ De directe test: probeer een snelle sequentie verzoeken tegen jouw inlog-endpoin
 [LaunchStudio](https://launchstudio.eu/nl/) implementeert gekalibreerde ratelimitering over authenticatie- en kostengevoelige endpoints als standaardonderdeel van productieverharding, en beschermt tegen zowel beveiligingsmisbruik als onbegrensde AI-kostenblootstelling, gesteund door Manifera's engineeringervaring over productieapplicaties die echte-wereld-verkeerspatronen afhandelen.
 
 [Bevestig dat jouw app niet misbruikt kan worden bij onbeperkt volume](https://launchstudio.eu/nl/#calculator) — correcte authenticatie omvat deze bescherming niet standaard.
+
+## Een Strategie voor Rate Limiting Kiezen: Drie Veelvoorkomende Aanpakken
+
+Zodra je hebt vastgesteld dat rate limiting noodzakelijk is, bepaalt het gekozen algoritme hoe effectief je beschermd bent zonder legitieme gebruikers te frustreren. Drie beproefde methoden met elk hun eigen afweging:
+
+**Vast Tijdvenster (Fixed Window)**: Aanroepen worden geteld binnen een vast blok (bijv. maximaal 100 verzoeken per kalenderuur). Eenvoudig te implementeren, maar kwetsbaar voor een piek vlak voor en vlak na de venstergrens (de 'burst at the boundary').
+
+**Glijdend Venster (Sliding Window Log / Counter)**: Berekent het aantal verzoeken over de afgelopen 60 seconden vanaf het huidige moment. Dit vlakt pieken perfect af en voorkomt misbruik op grensintervallen, ideaal voor login- en betaal-endpoints.
+
+**Token Bucket**: Geeft gebruikers een 'emmer' met tokens die continu met een vaste snelheid wordt bijgevuld. Uitstekend voor applicaties die incidentele bursts van legitieme gebruikers moeten toestaan, maar constante overbelasting willen afkappen.
+
+[LaunchStudio](https://launchstudio.eu/nl/) richt schaalbare rate limiting in op API-gateways en reverse proxies (bijv. via Redis of Cloudflare) ter bescherming van je backend.
 
 ## Echt voorbeeld
 
@@ -75,3 +112,52 @@ Het is een goed gedocumenteerd, gebruikelijk patroon over webapplicaties in het 
 ### Hoe kan ik gepaste ratelimietdrempels bepalen voor mijn eigen specifieke applicatie?
 
 Baseer drempels op jouw daadwerkelijk geobserveerde legitieme gebruikspatronen (hoe vaak een oprechte gebruiker realistisch interacteert met een gegeven endpoint) plus een redelijke buffer, in plaats van een willekeurig getal — dit vereist doorgaans enig oordeel specifiek voor de daadwerkelijke gebruikspatronen van jouw product, wat een scopinggesprek gepast kan helpen kalibreren.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik weten of mijn eigen app blootgesteld is aan dit soort onbegrensd kostenrisico voordat een onverwachte rekening het naar boven brengt, zoals bij Casper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Direct controleren of enige ratelimiet bestaat op jouw AI-model-aanroepende endpoints en jouw inlog-endpoint — door zelf een snelle sequentie verzoeken te proberen en te observeren of iets het blokkeert of vertraagt — is de concrete test, in plaats van te wachten tot een echte rekening de blootstelling onthult."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is ratelimitering iets dat aangepaste implementatie vereist, of bieden de meeste hosting- of API-frameworks het standaard?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Veel frameworks en hostingplatforms bieden ratelimiteringsmogelijkheden als beschikbare functie, maar — vergelijkbaar met het idempotentiepunt elders in deze serie behandeld — ze correct gebruiken vereist ze doelbewust te configureren en toe te passen op de juiste endpoints, wat niet automatisch gebeurt zonder specifieke implementatie-inspanning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Draagt ratelimitering het risico legitieme gebruikers te blokkeren of te frustreren als het te strak gekalibreerd is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, wat waarom kalibratie naar oprechte legitieme gebruikspatronen ertoe doet — een limiet ver onder wat echte gebruikers ooit natuurlijk nodig zouden hebben creëert onnodige wrijving, wat het belangrijk maakt limieten te baseren op daadwerkelijke verwachte gebruikspatronen in plaats van een willekeurig, overdreven conservatief getal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Caspers specifieke incident — een onverklaarde volumepiek van één account — een gebruikelijk patroon, of een ongewoon randgeval?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is een goed gedocumenteerd, gebruikelijk patroon over webapplicaties in het algemeen, niet uniek voor AI-native producten, hoewel de AI-kostenamplificatiedimensie specifiek een nieuwere, AI-native-specifieke versie is van een langdurige algemene risicocategorie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik gepaste ratelimietdrempels bepalen voor mijn eigen specifieke applicatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baseer drempels op jouw daadwerkelijk geobserveerde legitieme gebruikspatronen (hoe vaak een oprechte gebruiker realistisch interacteert met een gegeven endpoint) plus een redelijke buffer, in plaats van een willekeurig getal — dit vereist doorgaans enig oordeel specifiek voor de daadwerkelijke gebruikspatronen van jouw product, wat een scopinggesprek gepast kan helpen kalibreren."
+      }
+    }
+  ]
+}
+</script>

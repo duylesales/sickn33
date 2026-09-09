@@ -126,7 +126,7 @@ Leg dit ritme vast bij de aftrap en u krijgt wat veel oprichters voor onmogelijk
 
 **Vertel ons over uw project en uw gewenste manier van samenwerken — u ontvangt binnen één werkdag een passend communicatievoorstel en een realistische planning.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Oprichter in Actie: De Week Die Zijn Middagen Terugkreeg
 

@@ -43,6 +43,23 @@ Een onderbuikgevoel onderschat systematisch de vertrouwenskosten, omdat die kost
 
 Achter LaunchStudio staat het team van meer dan 120 ervaren engineers van Manifera, en ons team gevestigd in Ho Chi Minhstad voert precies dit soort gestructureerde risicotriage uit wanneer scale-up-oprichters ons een backlog met bekende door AI gegenereerde gaten aandragen — waarbij wordt gescheiden wat veilig kan wachten van wat stilletjes kosten opbouwt. U kunt [berekenen wat het sluiten van uw hoogst scorende gaten zou kosten](https://launchstudio.eu/nl/#calculator) voordat u besluit om nog een kwartaal uit te stellen. Voor meer over hoe wij dit soort engineeringwerk afbakenen, zie [het portfolio van Manifera](https://www.manifera.com/portfolio/).
 
+## Zes Vragen Vóórdat U het Volgende Item Uitstelt naar 'Fase Twee'
+
+De verleiding is altijd groot om lastige technische taken door te schuiven naar 'Fase Twee' onder het mom van snelheid. Sommige zaken kunnen inderdaad wachten, maar andere moeten direct worden opgelost om latere rampen te voorkomen. Stel deze zes vragen vóórdat u een taak uitstelt:
+
+**1. "Als we dit nu niet doen, moeten we straks dan alle bestaande data migreren?"** Als het uitstellen van een schemarestrictie betekent dat u over drie maanden duizenden records handmatig moet opschonen, los het dan nú op.
+
+**2. "Brengt dit uitstel direct een veiligheids- of aansprakelijkheidsrisico met zich mee?"** Autorisatiecontroles en encryptie horen nóóit thuis in Fase Twee. Een datalek in Fase Eén betekent dat Fase Twee nooit wordt bereikt.
+
+**3. "Breekt dit de gebruikerservaring voor de allereerste betalende klant?"** Zaken zoals foutieve facturatie of niet-ontvangen welkomstmails vernietigen het vertrouwen direct bij de eerste interactie.
+
+**4. "Kost het nu een uur en straks twee weken?"** Het toevoegen van een foreign key constraint kost bij aanvang vijf minuten, maar vereist na livegang een complexe databasemigratie met downtime.
+
+**5. "Is het een 'must-have' voor compliance of puur een 'nice-to-have' feature?"** Wees meedogenloos: schrap overbodige toeters en bellen, maar beknibbel nooit op operationele stabiliteit.
+
+**6. "Kunnen we dit oplossen door een bewezen externe dienst in te schakelen?"** Waarom een feature uitstellen als een bestaande integratie (zoals Postmark of Clerk) het probleem binnen een middag definitief oplost?
+
+Gebruik deze vragen als filter. Alleen taken die puur optionele functionaliteit toevoegen zónder architectonische schuld te creëren, verdienen een plek op de roadmap voor Fase Twee.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: het gat dat op alles laag scoorde behalve op vertrouwen
@@ -89,11 +106,46 @@ Ja — het kader werkt met terugwerkende kracht op elke bekende lijst met gaten;
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's wrong with using \"has it caused an incident\" as a priority signal?", "acceptedAnswer": { "@type": "Answer", "text": "It measures luck and timing rather than actual risk size. An undiscovered gap isn't safer over time — it's just undiscovered, while more of the product sits downstream of it." } },
-    { "@type": "Question", "name": "What are the three axes in this risk framework?", "acceptedAnswer": { "@type": "Answer", "text": "Exposure, detectability by the wrong person, and trust cost if discovered — each scored 1 to 5 and multiplied together." } },
-    { "@type": "Question", "name": "Why does trust cost matter as much as engineering effort?", "acceptedAnswer": { "@type": "Answer", "text": "Trust cost often shows up as quiet churn instead of a support ticket, making it easy to underweight until a customer mentions it while leaving." } },
-    { "@type": "Question", "name": "Does Manifera help scale-up founders triage a backlog of known security gaps?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Manifera's team, including engineers based in Ho Chi Minh City, scores existing backlogs on exposure, detectability, and trust cost." } },
-    { "@type": "Question", "name": "Can this framework be applied to a backlog that's already months old?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, it works retroactively on any known list of gaps as long as exposure and detectability are assessed honestly." } }
+    {
+      "@type": "Question",
+      "name": "Wat is er mis met \"heeft het een incident veroorzaakt\" als prioriteringssignaal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het meet geluk en timing, niet de daadwerkelijke omvang van het risico. Een gat dat nog niet is ontdekt, is niet veiliger — het is gewoon nog niet ontdekt, en elke maand die verstrijkt brengt meer van uw product en klantenbestand stroomafwaarts ervan te liggen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat zijn de drie assen in dit risicokader?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Blootstelling (hoeveel van het product zich achter het gat bevindt), detecteerbaarheid (hoe makkelijk de verkeerde persoon het zou kunnen tegenkomen), en vertrouwenskosten (wat het aan klantvertrouwen zou kosten als het wordt ontdekt)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom is vertrouwenskosten net zo belangrijk als engineering-inspanning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vertrouwenskosten manifesteren zich vaak als stille churn in plaats van een supportticket, waardoor het makkelijk is ze te onderschatten totdat een klant het noemt op weg naar de uitgang, zoals bij RisicoGrip gebeurde."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Helpt Manifera scale-up-oprichters bij het trieren van een backlog met bekende beveiligingsgaten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Het team van Manifera, waaronder engineers gevestigd in Ho Chi Minhstad, scoort regelmatig bestaande backlogs op blootstelling, detecteerbaarheid en vertrouwenskosten om te scheiden wat kan wachten van wat niet kan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan dit kader worden toegepast op een backlog die al maanden oud is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — het kader werkt met terugwerkende kracht op elke bekende lijst met gaten; de enige vereiste is eerlijkheid over blootstelling en detecteerbaarheid in plaats van te vertrouwen op \"er is nog niets gebeurd\"."
+      }
+    }
   ]
 }
 </script>

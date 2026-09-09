@@ -1,17 +1,17 @@
 ---
-Titel: "Praktijkvoorbeeld: Een UX-Studio Voegt Technische Oplevering Toe Aan Haar Dienstenmenu — Van Vandaag Op Morgen"
+Titel: "Case Study: Een UX-Studio Voegt Technische Oplevering Toe Aan Haar Dienstenmenu — Van Vandaag Op Morgen"
 Trefwoorden: UX-studio ontwikkelingspartner, technische oplevering designstudio, white-label app-lancering, dienstenaanbod agency uitbreiden, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelgroep: Bureau / Freelancer (White-Label Partner)
 ---
 
-# Praktijkvoorbeeld: Een UX-Studio Voegt Technische Oplevering Toe Aan Haar Dienstenmenu — Van Vandaag Op Morgen
+# Case Study: Een UX-Studio Voegt Technische Oplevering Toe Aan Haar Dienstenmenu — Van Vandaag Op Morgen
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Praktijkvoorbeeld: Een UX-Studio Voegt Technische Oplevering Toe Aan Haar Dienstenmenu — Van Vandaag Op Morgen",
+  "headline": "Case Study: Een UX-Studio Voegt Technische Oplevering Toe Aan Haar Dienstenmenu — Van Vandaag Op Morgen",
   "description": "Hoe een 5-koppige UX/UI-designstudio in Rotterdam haar gemiddelde klantprojectomvang meer dan verdriedubbelde door design-only werk te herprijzen naar full-stack productlanceringen, mogelijk gemaakt door LaunchStudio's white-label backendteam.",
   "author": {
     "@type": "Organization",

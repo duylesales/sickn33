@@ -69,6 +69,12 @@ The vendors worth shortlisting can describe their FHIR maturity, TEFCA participa
 }
 </script>
 
+## By the Numbers: Testing an Aggregator's Advertised Network Against Reality
+
+A vendor's "10,000+ organizations" connectivity claim typically decomposes into a wide spread of connection quality once you inspect specific sources: expect direct, real-time FHIR endpoints for a minority of that network, often 20-30%, with the remainder running through HL7 v2 translation layers or batch-updated data broker relationships that can lag actual clinical events by hours to over a day. Before committing, request a source-by-source breakdown for the specific health systems and payers your product actually needs, not the vendor's aggregate marketing figure — a network that's 95% strong for your target geography and use case is a very different proposition than one that's 95% strong nationally but weak specifically where your users are.
+
+On Inferno conformance testing specifically, a mature vendor should be able to produce a passing test suite run covering the specific FHIR resources your product depends on — Patient, Observation, MedicationRequest, and similar — updated within the last 6-12 months, since US Core profile requirements and Inferno's own test criteria evolve. A vendor citing a conformance test run from two or three years ago is showing you evidence that predates several rounds of profile updates. For TEFCA-participating vendors, also ask how many permitted-purpose query types (treatment, payment, operations, individual access) they actually support in production today versus on their roadmap — participation status alone doesn't guarantee every exchange purpose is live.
+
 ## Frequently Asked Questions
 
 ### What's the difference between a direct integration vendor and an aggregator?
@@ -85,6 +91,18 @@ Da Vinci IGs are built on top of base FHIR but add payer-specific resource profi
 
 ### What happens to our integration if we switch interoperability vendors later?
 Portability depends on whether the vendor exposed genuinely standard FHIR resources or a proprietary data model layered on top of FHIR. Ask vendors directly about this before committing, since a proprietary abstraction layer can make switching vendors later far more expensive than the initial integration suggested.
+
+### (Scenario: A CTO is skeptical of a vendor's aggregate connectivity number and wants a more rigorous check) How do we actually verify a vendor's "10,000+ organizations" connectivity claim instead of taking it at face value?
+Ask for a source-by-source breakdown of connection type — direct FHIR, HL7 v2 translation, or batch data broker — specifically for the health systems and payers your product actually needs, not the vendor's aggregate figure. A network can look strong nationally while being weak in exactly the geography or care setting your users depend on.
+
+### (Scenario: A vendor produces a conformance test result that turns out to be several years old) The vendor showed us an Inferno test pass from three years ago — does that still count as current proof of conformance?
+Not really. US Core profile requirements and Inferno's own test criteria have evolved meaningfully since then, so a multi-year-old conformance run predates several rounds of profile updates. Ask for a run completed within the last 6-12 months covering the specific resources your product depends on.
+
+### (Scenario: A product team assumes a TEFCA-participating vendor supports every exchange purpose they need) A vendor participates in TEFCA — does that mean they support every type of data query we might need?
+No. TEFCA participation status doesn't guarantee every permitted-purpose query type — treatment, payment, operations, individual access — is actually live in production for that vendor today. Ask specifically which exchange purposes are production-ready now versus still on their roadmap.
+
+### (Scenario: A CTO is deciding how much weight to give data freshness in a vendor scorecard) How much does data latency actually matter if our use case isn't time-sensitive?
+It matters less for retrospective analytics but can matter enormously for anything clinician- or patient-facing in near real time, so weight it according to your actual use case rather than treating "real-time capable" as a universal requirement. Get the vendor's documented per-source latency figures rather than a single blended average, since a strong overall average can still hide sources that lag by a day or more.
 
 <script type="application/ld+json">
 {
@@ -115,6 +133,26 @@ Portability depends on whether the vendor exposed genuinely standard FHIR resour
       "@type": "Question",
       "name": "What happens to our integration if we switch interoperability vendors later?",
       "acceptedAnswer": {"@type": "Answer", "text": "Portability depends on whether the vendor exposed genuinely standard FHIR resources or a proprietary data model layered on top of FHIR. This should be asked about directly before committing, since a proprietary abstraction layer can make switching vendors later far more expensive than the initial integration suggested."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do we actually verify a vendor's \"10,000+ organizations\" connectivity claim instead of taking it at face value?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Ask for a source-by-source breakdown of connection type — direct FHIR, HL7 v2 translation, or batch data broker — specifically for the health systems and payers your product actually needs, not the vendor's aggregate figure. A network can look strong nationally while being weak in exactly the geography or care setting your users depend on."}
+    },
+    {
+      "@type": "Question",
+      "name": "The vendor showed us an Inferno test pass from three years ago — does that still count as current proof of conformance?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Not really. US Core profile requirements and Inferno's own test criteria have evolved meaningfully since then, so a multi-year-old conformance run predates several rounds of profile updates. Ask for a run completed within the last 6-12 months covering the specific resources your product depends on."}
+    },
+    {
+      "@type": "Question",
+      "name": "A vendor participates in TEFCA — does that mean they support every type of data query we might need?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. TEFCA participation status doesn't guarantee every permitted-purpose query type — treatment, payment, operations, individual access — is actually live in production for that vendor today. Ask specifically which exchange purposes are production-ready now versus still on their roadmap."}
+    },
+    {
+      "@type": "Question",
+      "name": "How much does data latency actually matter if our use case isn't time-sensitive?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It matters less for retrospective analytics but can matter enormously for anything clinician- or patient-facing in near real time, so weight it according to your actual use case rather than treating \"real-time capable\" as a universal requirement. Get the vendor's documented per-source latency figures rather than a single blended average, since a strong overall average can still hide sources that lag by a day or more."}
     }
   ]
 }

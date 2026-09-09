@@ -41,6 +41,23 @@ Verwacht dat de zin precies blijft betekenen wat hij vandaag betekent: een drama
 
 LaunchStudio, vanuit zijn Europese hoofdkantoor in Amsterdam, bestaat specifiek voor dat tweede deel — de delen van een project waarover geen enkele codeertool zelfstandig beslist. Als u iets heeft gebouwd met Lovable, Bolt, Cursor of v0 en u niet zeker weet waar de oordeelslacunes in uw eigen product zitten, is ons [gratis advies](https://launchstudio.eu/nl/#contact) een snelle manier om dat te ontdekken, en de [over-ons-pagina](https://www.manifera.com/about-us/) van Manifera vertelt het langere verhaal achter de elf jaar achter dat oordeel.
 
+## De Terugkerende Oordeelsbeslissingen, Geordend per Categorie
+
+Tijdens het bouwen van een softwareproduct met behulp van AI zult u merken dat bepaalde fundamentele afwegingen steeds opnieuw de kop opsteken. Door deze terugkerende beslissingen te categoriseren, ontwikkelt u een helder kompas:
+
+**1. Categorie Snelheid versus Stabiliteit (Wanneer Neem U Technische Schuld?).**
+- *De vuistregel:* Accepteer technische schuld in de presentatielaag (UI, teksten, animaties) om snel markttractie te testen. Accepteer *nooit* technische schuld in de datalaag, autorisatie of betalingsverwerking.
+
+**2. Categorie Zelf Bouwen versus Kopen (Make or Buy).**
+- *De vuistregel:* Koop of delegeer alles wat een gestandaardiseerd infrastructuurprobleem is (auth via Clerk, betalingen via Stripe, hosting via Vercel). Bouw uitsluitend zelf wat uw unieke concurrentievoordeel vormt.
+
+**3. Categorie Deterministisch versus Probabilistisch (Waar Past AI?).**
+- *De vuistregel:* Gebruik taalmodellen voor creatieve interpretatie, samenvattingen en classificatie. Gebruik deterministische code en databases voor rechtenbeheer, financiële transacties en statusovergangen.
+
+**4. Categorie Herstellen versus Herbouwen (Fix or Rewrite).**
+- *De vuistregel:* Herbouw uitsluitend als het onderliggende datamodel fundamenteel faalt. In 90% van de gevallen volstaat een gerichte hardening-slag waarbij u de ontbrekende autorisatie en vangrails toevoegt rondom de bestaande code.
+
+Met deze beproefde principes navigeert u moeiteloos door het moderne technologielandschap, houdt u maximale vaart in uw onderneming en bouwt u aan een duurzaam, waardevol en schaalbaar softwarebedrijf.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: waar het typewerk niet meer genoeg was
@@ -85,11 +102,46 @@ Het Europese hoofdkantoor van LaunchStudio bevindt zich in Amsterdam, met engine
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What does 'AI for development' actually replace, in one sentence?", "acceptedAnswer": { "@type": "Answer", "text": "It replaces the mechanical work of writing syntactically correct code quickly, not the judgment calls about concurrency, trade-offs, security, and architecture." } },
-    { "@type": "Question", "name": "Will AI eventually replace the judgment layer too, as tools improve?", "acceptedAnswer": { "@type": "Answer", "text": "The pattern points the other way: as tools get faster, founders reach the judgment layer sooner with less experience, making it more important, not less." } },
-    { "@type": "Question", "name": "Why does Herre Roelevink say the challenge has shifted from building software to maturing it?", "acceptedAnswer": { "@type": "Answer", "text": "Because AI tools have largely solved turning ideas into software quickly. What's left is the architecture and security work needed for production maturity." } },
-    { "@type": "Question", "name": "How does LaunchStudio help with the judgment calls AI tools don't make?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio's engineers, backed by Manifera's 120+ engineers, review AI-generated products for concurrency, ownership, infrastructure, and security gaps without rebuilding the frontend." } },
-    { "@type": "Question", "name": "Where is LaunchStudio based, and does location matter for this kind of work?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio's European headquarters is in Amsterdam, with hubs in Singapore and Ho Chi Minh City." } }
+    {
+      "@type": "Question",
+      "name": "Wat vervangt \"AI voor ontwikkeling\" daadwerkelijk, in één zin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het vervangt het mechanische werk van snel syntactisch correcte code schrijven. Het vervangt niet de oordeelsbeslissingen over gelijktijdigheid, afwegingen, beveiliging en architectuur die bepalen of die code standhoudt in productie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zal AI uiteindelijk ook de oordeelslaag vervangen, naarmate tools verbeteren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Over de honderd producten die in deze reeks aan bod kwamen, wijst het patroon de andere kant op: naarmate AI-tools sneller worden, bereiken oprichters de oordeelslaag eerder en met minder ervaring, wat die laag belangrijker maakt om goed te doen, niet minder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom zegt Herre Roelevink dat de uitdaging is verschoven van software bouwen naar het laten rijpen ervan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat AI-tools grotendeels het probleem hebben opgelost van het snel omzetten van een idee in werkende software. Wat overblijft, volgens Roelevink, CEO van LaunchStudio en Managing Director van Manifera, is het architectuur- en beveiligingswerk dat nodig is om die software naar productierijpheid te brengen — het deel waar Manifera elf jaar ervaring rond heeft opgebouwd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe helpt LaunchStudio met de oordeelsbeslissingen die AI-tools niet nemen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De technici van LaunchStudio, ondersteund door Manifera's meer dan 120 engineers en meer dan 160 opgeleverde projecten, beoordelen door AI gegenereerde producten specifiek op de beslissingen die in deze reeks aan bod kwamen — gelijktijdigheid, eigendomscontroles, infrastructuuromvang, beveiligingspraktijk — en fixen wat ontbreekt zonder de frontend van de oprichter te herbouwen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar is LaunchStudio gevestigd, en maakt locatie uit voor dit soort werk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het Europese hoofdkantoor van LaunchStudio bevindt zich in Amsterdam, met engineeringhubs in Singapore en Ho Chi Minh-stad, wat oprichters een team met dezelfde oordeelsgerichte aanpak over meerdere tijdzones geeft."
+      }
+    }
   ]
 }
 </script>

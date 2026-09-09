@@ -113,7 +113,7 @@ Het waterdicht inrichten van uw betaalinfrastructuur — van VIES-validatie in d
 
 [Spreek met een engineer die uw facturatieconfiguratie kan doorlichten](https://launchstudio.eu/nl/#contact) voordat een enterprise-klant een conforme factuur eist die u niet kunt leveren.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een SaaS-Oprichter in Actie: De Factuur Die Door de Financiële Afdeling Werd Geweigerd
 

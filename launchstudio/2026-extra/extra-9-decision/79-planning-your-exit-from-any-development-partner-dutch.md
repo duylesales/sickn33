@@ -71,7 +71,7 @@ Wanneer u de bovenstaande disciplines hanteert, verloopt de overgang naar een ni
 
 [Bespreek met een software engineer die AI-code doorgrondt](https://launchstudio.eu/nl/#contact) hoe een vlekkeloze overdrachtsstructuur voor uw specifieke softwarestack eruit hoort te zien, ongeacht of u uiteindelijk met ons samenwerkt.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Het Herschreven Contract van een Indie Hacker: De Clausule Die Milan Bijna Had Gemist
 

@@ -65,6 +65,12 @@ Manifera architects AI features with model portability as a deliberate design in
 
 If you are scoping an AI feature and want an architecture that survives a provider's pricing change or deprecation notice without an emergency rewrite, [talk to our Amsterdam team](https://www.manifera.com/contact-us/) about how we build in model portability from the first sprint.
 
+## Technical Deep-Dive: What Provider Abstraction Actually Looks Like
+
+An abstraction layer isn't a single library swap — it's three separate concerns that get conflated in vendor pitches. First, a **request interface** that normalizes prompts, system messages, and function-calling schemas into a provider-neutral format, translated to each target provider's specific API shape at call time. Second, a **response normalizer** that maps each provider's structured-output format, token usage reporting, and error codes back to a common schema your application code actually consumes. Third, an **eval harness** that runs your feature's real prompts against a candidate replacement provider before cutover, scoring output quality against your production baseline rather than trusting a vendor's marketed benchmark.
+
+The eval harness is the piece most vendors skip, and it's the one that actually determines whether a migration is safe. Without it, "the abstraction layer works" only means requests succeed — not that output quality holds. Budget for the harness to run against at minimum 200-500 representative production prompts before trusting a provider switch on a revenue-driving feature; fewer than that and edge-case regressions in tone, format compliance, or reasoning quality can slip through undetected until customers notice. Ask a vendor finalist whether their abstraction proposal includes this eval harness as a named deliverable, or only the request/response translation layer — the translation layer alone tells you a migration is technically possible, not that it's safe to execute under a deprecation deadline.
+
 ## Frequently Asked Questions
 
 ### How much extra does building a model-agnostic abstraction layer cost?
@@ -82,6 +88,22 @@ Faster than typical infrastructure decisions — model deprecations happen on cy
 ### What should I ask a vendor before they build an AI feature on a single model provider?
 Ask directly how many engineering days a migration would take if your chosen model version were deprecated tomorrow, based on how they plan to architect the integration. A vendor who has genuinely considered lock-in risk will have a real estimate ready.
 
+### (Scenario: A vendor's abstraction layer proposal only covers request/response translation, with no evaluation testing before cutover) Is a request-response translation layer alone enough to safely migrate LLM providers?
+
+No. Translation alone tells you a migration is technically possible — requests succeed against the new provider — but says nothing about whether output quality holds. An eval harness run against at least 200-500 representative production prompts before cutover is what actually confirms a migration is safe, not just functional.
+
+### (Scenario: A CTO is scoping a revenue-driving AI feature and weighing a smaller, cheaper vendor proposal against a more thorough one) How do I know if a vendor's lock-in mitigation proposal is genuinely thorough or just a checkbox?
+
+Ask them to name the eval harness as a specific line item with a prompt-count target, separate from the request/response translation work. A vendor who bundles "abstraction" as one vague deliverable without naming an evaluation step is very likely proposing the cheaper, incomplete version without saying so.
+
+### (Scenario: A product team's core AI feature depends on a provider's especially strong structured-output mode that competitors don't match) What if the AI feature depends on a capability only one provider offers well, making full abstraction impossible?
+
+In that case, full provider-agnostic abstraction may not be achievable, and a vendor should say so directly rather than force a leaky abstraction. The realistic mitigation is documenting the specific dependency, monitoring that provider's roadmap for that capability, and building the rest of the pipeline (data handling, evals, fine-tuning pipelines) as portable as possible so only the narrow dependent piece requires a rewrite if forced to migrate.
+
+### (Scenario: A startup's AI feature was built two years ago against a model version that's now been deprecated with 90 days notice) What's the realistic timeline to migrate an AI feature that was never architected for portability once a deprecation notice arrives?
+
+Without prior abstraction work, expect a full rewrite of prompt logic, output parsing, and any fine-tuning or embedding pipelines, which for a moderately complex feature typically takes several weeks to a few months depending on team size — often close to, or exceeding, the deprecation notice window itself. This is precisely the scenario the upfront 10-20% abstraction investment is meant to prevent.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -91,7 +113,11 @@ Ask directly how many engineering days a migration would take if your chosen mod
     {"@type": "Question", "name": "What happens to a fine-tuned model or embeddings if I switch LLM providers?", "acceptedAnswer": {"@type": "Answer", "text": "Neither is typically portable. A fine-tuned model cannot be pointed at a different provider's infrastructure, and embeddings from one provider are generally incompatible with a vector index built for a different provider's dimensions."}},
     {"@type": "Question", "name": "Should every AI feature be built with provider abstraction, or only some?", "acceptedAnswer": {"@type": "Answer", "text": "Not every feature needs it. A minor, non-critical AI feature may not justify the overhead, while a core, revenue-driving AI feature almost always justifies the upfront investment."}},
     {"@type": "Question", "name": "How fast do LLM providers actually change pricing and deprecate models?", "acceptedAnswer": {"@type": "Answer", "text": "Faster than typical infrastructure decisions — model deprecations happen on cycles measured in months, and per-token pricing has shifted meaningfully multiple times across major providers within a single calendar year."}},
-    {"@type": "Question", "name": "What should I ask a vendor before they build an AI feature on a single model provider?", "acceptedAnswer": {"@type": "Answer", "text": "Ask how many engineering days a migration would take if your chosen model version were deprecated tomorrow, based on how they plan to architect the integration."}}
+    {"@type": "Question", "name": "What should I ask a vendor before they build an AI feature on a single model provider?", "acceptedAnswer": {"@type": "Answer", "text": "Ask how many engineering days a migration would take if your chosen model version were deprecated tomorrow, based on how they plan to architect the integration."}},
+    {"@type": "Question", "name": "Is a request-response translation layer alone enough to safely migrate LLM providers?", "acceptedAnswer": {"@type": "Answer", "text": "No. Translation alone confirms a migration is technically possible, not that output quality holds. An eval harness run against at least 200-500 representative production prompts before cutover is what confirms a migration is actually safe."}},
+    {"@type": "Question", "name": "How do I know if a vendor's lock-in mitigation proposal is genuinely thorough or just a checkbox?", "acceptedAnswer": {"@type": "Answer", "text": "Ask them to name the eval harness as a specific line item with a prompt-count target, separate from request/response translation work. A vendor bundling abstraction as one vague deliverable is likely proposing the incomplete version without saying so."}},
+    {"@type": "Question", "name": "What if the AI feature depends on a capability only one provider offers well, making full abstraction impossible?", "acceptedAnswer": {"@type": "Answer", "text": "Full abstraction may not be achievable, and a vendor should say so rather than force a leaky one. The realistic mitigation is documenting the dependency, monitoring that provider's roadmap, and keeping the rest of the pipeline portable."}},
+    {"@type": "Question", "name": "What's the realistic timeline to migrate an AI feature that was never architected for portability once a deprecation notice arrives?", "acceptedAnswer": {"@type": "Answer", "text": "Expect a full rewrite of prompt logic, output parsing, and any fine-tuning or embedding pipelines, typically several weeks to a few months for a moderately complex feature, often close to or exceeding the deprecation notice window itself."}}
   ]
 }
 </script>

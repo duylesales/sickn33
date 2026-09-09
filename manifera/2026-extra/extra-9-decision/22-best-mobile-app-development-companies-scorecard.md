@@ -86,6 +86,12 @@ If you'd like a second set of eyes on your own shortlist, [see how we've helped 
 
 Choosing among the best mobile app development companies isn't about finding the one with the flashiest case studies — it's about finding the one whose compliance posture, team stability, and communication protocol match what your organization actually needs to sleep well after the contract is signed. Run your current finalists through all seven criteria before you make the call, and don't accept a vague answer on any of them. If a vendor can't produce a real SLA document, a named reference in your vertical, or a straight answer on team tenure within a single conversation, treat that as the scorecard result — the absence of an answer is itself the data point.
 
+## A Worked Weighting Example: Scoring Three Finalists in Practice
+
+Weighting only works if you actually run the numbers, so here's a concrete example for a regulated-industry build. Set data security at 25% weight, team stability at 20%, communication cadence at 15%, technical stack transparency at 15%, SLA specificity at 15%, and vertical portfolio depth plus post-launch support splitting the remaining 10%. Score three finalists 1-5 per category: Vendor A scores a 5 on data security but only a 2 on team stability (unweighted average 3.4); Vendor B scores evenly across the board at 3s and 4s (unweighted average 3.6); Vendor C scores a 5 on communication but a 2 on data security (unweighted average 3.4).
+
+Run the weighted math and Vendor A's weighted score comes out around 3.5, Vendor B's around 3.55, and Vendor C's drops to roughly 3.15 once the 25% data-security weight punishes its weak score there. The unweighted averages made all three look nearly tied; the weighted scores expose that Vendor C is a materially worse fit for a compliance-sensitive build despite its strongest single category. This is the entire point of building the scorecard before the finalist calls, not during them — a live conversation makes it too easy to let a strong personal rapport with one vendor's team quietly override what the numbers actually say.
+
 ## Frequently Asked Questions
 
 ### How do I compare the best mobile app development companies when their portfolios look similar?
@@ -108,6 +114,22 @@ It should specify response-time commitments by severity level, named escalation 
 
 Yes, more than most IT managers initially assume. A vendor with several hours of working-day overlap with your team turns most questions into same-day exchanges rather than 24-hour delays, which compounds meaningfully over a multi-month project and directly affects delivery speed.
 
+### (Scenario: An IT manager's unweighted scorecard shows two finalists tied but one has a much weaker compliance answer) Why would a weighted scorecard change the outcome when an unweighted average shows two finalists tied?
+
+Because an unweighted average treats every criterion as equally important, which flattens exactly the signal a weighted score is designed to surface — a finalist tied on average but weak specifically on data security should score noticeably worse once that criterion carries the weight a compliance-sensitive project actually requires.
+
+### (Scenario: An IT manager's engineering stakeholder and procurement colleague disagree on how to weight the scorecard) How should I resolve disagreement between internal stakeholders on scorecard weighting?
+
+Surface the disagreement before scoring finalists, not after — have each stakeholder independently propose weights for all seven criteria, then reconcile the differences in a short discussion. This is far cheaper than discovering the disagreement three months into a live contract when a compliance gap or team turnover issue actually materializes.
+
+### (Scenario: A regulated-industry build has three finalists whose scores are all within half a point of each other on the weighted scorecard) What should I do if all my finalists score within half a point of each other on the weighted scorecard?
+
+Move to direct verification on the highest-weighted criteria specifically — for a compliance-sensitive build, request the actual SOC 2 or ISO 27001 documentation rather than a description of it, since a near-tie on paper often resolves quickly once you ask for underlying evidence instead of self-reported scores.
+
+### (Scenario: An IT manager wants to know whether to double-weight vertical experience for a first-of-its-kind product with no direct comparable) Should I weight vertical portfolio depth heavily if my product doesn't have a clean industry comparable?
+
+Weight it lower and shift that weight toward team stability and communication cadence instead — without a clean vertical comparable to evaluate, a vendor's process discipline and continuity become better predictors of success than claimed industry-specific experience that may not actually transfer.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +139,11 @@ Yes, more than most IT managers initially assume. A vendor with several hours of
     {"@type": "Question", "name": "What compliance questions should I ask a mobile app development company before signing?", "acceptedAnswer": {"@type": "Answer", "text": "Ask where data is processed and stored during development, whether they follow documented SOC 2 or ISO 27001 practices, and what their process is if a device with project access is lost or an engineer departs mid-project."}},
     {"@type": "Question", "name": "Why does team turnover matter when choosing a mobile app development company?", "acceptedAnswer": {"@type": "Answer", "text": "High turnover means the institutional knowledge about your app's architecture can leave with a departing engineer, creating delays and quality risk. Ask for an actual average tenure figure and a documented handover process for key-person departures."}},
     {"@type": "Question", "name": "What should a proper SLA from a mobile app development company include?", "acceptedAnswer": {"@type": "Answer", "text": "It should specify response-time commitments by severity level, named escalation contacts rather than a shared inbox, and defined remediation timelines for critical post-launch bugs, not vague language without numbers."}},
-    {"@type": "Question", "name": "Does timezone overlap actually matter when selecting among top mobile app development companies?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A vendor with several hours of working-day overlap with your team turns most questions into same-day exchanges rather than 24-hour delays, which compounds meaningfully over a multi-month project."}}
+    {"@type": "Question", "name": "Does timezone overlap actually matter when selecting among top mobile app development companies?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A vendor with several hours of working-day overlap with your team turns most questions into same-day exchanges rather than 24-hour delays, which compounds meaningfully over a multi-month project."}},
+    {"@type": "Question", "name": "(Scenario: An IT manager's unweighted scorecard shows two finalists tied but one has a much weaker compliance answer) Why would a weighted scorecard change the outcome when an unweighted average shows two finalists tied?", "acceptedAnswer": {"@type": "Answer", "text": "Because an unweighted average treats every criterion as equally important, which flattens exactly the signal a weighted score is designed to surface — a finalist tied on average but weak specifically on data security should score noticeably worse once that criterion carries the weight a compliance-sensitive project actually requires."}},
+    {"@type": "Question", "name": "(Scenario: An IT manager's engineering stakeholder and procurement colleague disagree on how to weight the scorecard) How should I resolve disagreement between internal stakeholders on scorecard weighting?", "acceptedAnswer": {"@type": "Answer", "text": "Surface the disagreement before scoring finalists, not after — have each stakeholder independently propose weights for all seven criteria, then reconcile the differences in a short discussion. This is far cheaper than discovering the disagreement three months into a live contract."}},
+    {"@type": "Question", "name": "(Scenario: A regulated-industry build has three finalists whose scores are all within half a point of each other on the weighted scorecard) What should I do if all my finalists score within half a point of each other on the weighted scorecard?", "acceptedAnswer": {"@type": "Answer", "text": "Move to direct verification on the highest-weighted criteria specifically — for a compliance-sensitive build, request the actual SOC 2 or ISO 27001 documentation rather than a description of it, since a near-tie on paper often resolves quickly once you ask for underlying evidence instead of self-reported scores."}},
+    {"@type": "Question", "name": "(Scenario: An IT manager wants to know whether to double-weight vertical experience for a first-of-its-kind product with no direct comparable) Should I weight vertical portfolio depth heavily if my product doesn't have a clean industry comparable?", "acceptedAnswer": {"@type": "Answer", "text": "Weight it lower and shift that weight toward team stability and communication cadence instead — without a clean vertical comparable to evaluate, a vendor's process discipline and continuity become better predictors of success than claimed industry-specific experience that may not actually transfer."}}
   ]
 }
 </script>

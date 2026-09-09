@@ -70,6 +70,15 @@ Niet-technische oprichters zijn uitstekend in het ontwerpen van prototypes omdat
 - Wij implementeren Redis-caching om API-kosten onder controle te houden.
 - Wij richten asynchrone cloud-deployments en SOC2/AVG-beveiliging in.
 
+### Hardening-Stappen van Prototype naar Schaalbaar Product
+
+Om een pril AI-prototype voor te bereiden op intensief zakelijk gebruik, voert het engineeringteam van LaunchStudio een gestructureerd hardening-traject uit:
+1. **Database Connection Pooling:** Prototypes openen vaak voor elk verzoek een nieuwe databaseverbinding, wat bij enkele tientallen gelijktijdige gebruikers leidt tot `connection limit exceeded` crashes. Wij implementeren PgBouncer of Prisma Accelerate om honderden gelijktijdige verzoeken efficiënt te bundelen over een stabiele pool van verbindingen.
+2. **In-Memory Caching met Redis:** Veelgebruikte referentiegegevens, gebruikerssessies en frequente zoekresultaten worden gecachet in Redis met slimme time-to-live (TTL) configuraties, waardoor de primaire databasebelasting met wel 70% afneemt.
+3. **Graceful Degradation & Timeout Handling:** Elk extern API-verzoek naar een LLM-leverancier wordt voorzien van strikte timeouts (bijvoorbeeld maximaal 8 seconden). Als een externe service hapert, schakelt de applicatie over op een beknoptere fallback-respons in plaats van oneindig te blijven laden.
+4. **Beveiligde Input Sanitization:** Alle tekstvelden en bestandsuploads worden grondig gecontroleerd op kwaadaardige code, SQL-injectiepatronen en extreem lange prompts die ontworpen zijn om buffer-overflows of extreme tokenkosten te veroorzaken.
+5. **Gedetailleerde Health Check Endpoints:** We bouwen diepgaande `/healthz` en `/readyz` endpoints die continu de status van de database, cache, wachtrijen en externe AI-koppelingen monitoren voor geautomatiseerde uptime-detectie.
+
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: De PropTech-Startup Die Bijna Bezweek Onder Zijn Eigen Succes

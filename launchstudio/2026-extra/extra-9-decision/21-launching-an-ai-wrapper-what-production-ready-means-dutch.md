@@ -85,7 +85,7 @@ Wat gerust kan wachten: automatische failover tussen meerdere modelproviders, se
 
 Reken eerst uw eigen getallen door: het aantal tokens per handeling, het verbruik van een actieve gebruiker en de werkelijke kostprijs per abonnement. Als de uitkomst u zorgen baart, is dat waardevolle feedback op uw prijsmodel, geen reden om stil te blijven staan. [Bereken wat uw traject kost via de calculator](https://launchstudio.eu/nl/#calculator), of lees hoe [Manifera](https://www.manifera.com/services/custom-software-development/), het software-engineeringbedrijf achter LaunchStudio, bedrijfskritische systemen realiseert waarin betrouwbaarheid per afzonderlijk verzoek wordt afgerekend.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een scale-up in actie: de wrapper die geld verloor op zijn meest loyale klanten
 

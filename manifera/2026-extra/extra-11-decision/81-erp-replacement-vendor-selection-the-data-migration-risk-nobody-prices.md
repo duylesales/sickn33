@@ -60,6 +60,10 @@ The vendors worth shortlisting for an ERP replacement are the ones who ask to pr
 
 Manifera runs ERP replacement and legacy data migration projects with data profiling built into the due diligence phase, not billed as a change order after signature — see our approach to [custom software development](https://www.manifera.com/services/custom-software-development/) and how we structure [offshore delivery teams](https://www.manifera.com/services/offshore-software-development/) around this kind of high-stakes migration work. If you're evaluating vendors for an ERP replacement and want a second opinion on a migration plan before you sign, [get in touch](https://www.manifera.com/contact-us/).
 
+## By The Numbers: What a Real Mock Cycle Report Should Show
+
+A credible vendor's mock cycle reporting should follow a predictable trajectory, and you should ask to see it in numbers, not adjectives. Mock 1 against a full production-volume extract typically surfaces exceptions on 8-15% of records for a moderately messy legacy system (duplicate master records, broken foreign keys, encoding mismatches) — if a vendor reports under 2% on Mock 1, either your data is unusually clean or they ran it against a sanitized sample rather than the true extract, and you should ask which. Mock 2 should show exceptions dropping by 70-85% from Mock 1 if the team fixed root causes in the transform logic rather than manually patching individual bad records — a Mock 2 that only improves 20-30% signals symptom-patching that will resurface at cutover. Reconciliation tolerance for financial control totals (AR, AP, GL trial balance) should be zero variance, not "within 1%" — a 1% variance on a $50M AR ledger is $500,000 unaccounted for, which is not an acceptable migration outcome regardless of how it's framed in a summary slide. Load timing should be measured and reported in Mock 3 against the actual production freeze window, with a documented buffer of at least 20% — a delta load timed to exactly fit the freeze window with zero margin is a plan that fails the first time source data volume runs higher than the rehearsal.
+
 ## Frequently Asked Questions
 
 ### How much should ERP data migration realistically cost as a percentage of the total project budget?
@@ -76,6 +80,19 @@ For complex, multi-system consolidations or highly customized legacy environment
 
 ### What should be in the rollback plan if cutover validation fails?
 A documented go/no-go checklist with objective, pre-agreed pass criteria, a defined maximum number of open P1 defects, and a tested procedure for reverting to the legacy system without data loss for transactions that occurred during the cutover window. If the vendor can't produce this document before cutover weekend, that's a sign the plan doesn't exist yet.
+
+### (Scenario: Mock 1 reconciliation report shows less than 2% exceptions on a system known to have years of manual data entry) What should a CTO suspect?
+Suspect the vendor ran Mock 1 against a cleaned or sampled subset rather than the true full-volume production extract, since a genuinely messy legacy dataset rarely reconciles that cleanly on the first pass. Ask directly for the extraction methodology and row counts used, and compare them against your actual production table counts before accepting the result.
+
+### (Scenario: finance lead refuses to sign off on cutover because a reconciliation variance report shows a small AP discrepancy) How should a CTO handle this disagreement with the migration vendor?
+Back the finance lead — a documented, non-zero variance on control totals is exactly the kind of unresolved discrepancy a go/no-go checklist should block on, regardless of how small it looks in percentage terms. Require the vendor to trace the specific discrepancy to its source records before rescheduling cutover, rather than accepting a vendor's assurance that it's immaterial.
+
+### (Scenario: legacy ERP has an undocumented custom field that a downstream finance report has silently depended on for years) How do we catch this before it breaks in migration?
+This is precisely what the pre-contract data profiling pass is designed to surface — insist the vendor's profiling scope explicitly includes cross-referencing custom fields against known downstream reports and integrations, not just the core object tables. Interview finance, ops, and any team with a legacy reporting dependency directly during discovery, since institutional knowledge about undocumented field usage rarely lives in the ERP's own schema documentation.
+
+### (Scenario: two vendors quote migration at similar total cost but very differently structured line items) How should a CTO compare the quotes meaningfully?
+Compare the number of mock cycles, the depth of reconciliation reporting promised (raw variance reports versus summary percentages), and whether data profiling happens before or after contract signature — these structural differences predict overrun risk far better than the headline total. A lower quote with only two mock cycles and summary-only reconciliation is a higher-risk bet than a similarly priced quote with three mock cycles and contractual raw reporting access.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -119,6 +136,38 @@ A documented go/no-go checklist with objective, pre-agreed pass criteria, a defi
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A documented go/no-go checklist with objective, pre-agreed pass criteria, a defined maximum number of open P1 defects, and a tested procedure for reverting to the legacy system without data loss for transactions that occurred during the cutover window. If the vendor can't produce this document before cutover weekend, that's a sign the plan doesn't exist yet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Mock 1 reconciliation report shows less than 2% exceptions on a system known to have years of manual data entry) What should a CTO suspect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suspect the vendor ran Mock 1 against a cleaned or sampled subset rather than the true full-volume production extract. Ask directly for the extraction methodology and row counts used, and compare them against your actual production table counts before accepting the result."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: finance lead refuses to sign off on cutover because a reconciliation variance report shows a small AP discrepancy) How should a CTO handle this disagreement with the migration vendor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Back the finance lead — a documented, non-zero variance on control totals should block cutover regardless of how small it looks in percentage terms. Require the vendor to trace the discrepancy to its source records rather than accepting an assurance that it's immaterial."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: legacy ERP has an undocumented custom field that a downstream finance report has silently depended on for years) How do we catch this before it breaks in migration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is what the pre-contract data profiling pass is designed to surface — insist the scope explicitly includes cross-referencing custom fields against known downstream reports and integrations. Interview finance, ops, and any team with a legacy reporting dependency directly during discovery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: two vendors quote migration at similar total cost but very differently structured line items) How should a CTO compare the quotes meaningfully?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Compare the number of mock cycles, the depth of reconciliation reporting promised, and whether data profiling happens before or after contract signature — these structural differences predict overrun risk better than the headline total."
       }
     }
   ]

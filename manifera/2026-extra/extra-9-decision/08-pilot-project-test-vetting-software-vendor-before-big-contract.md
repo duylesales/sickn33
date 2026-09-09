@@ -100,6 +100,12 @@ Talk to our Amsterdam team about structuring a paid pilot around a real piece of
 }
 </script>
 
+## Pricing the Pilot: What a Real Statement of Work Costs
+
+Budget the pilot as a genuine, priced deliverable, not a rounding error you hope the vendor absorbs. For a two-to-four-week pilot with two to three engineers at a typical offshore dedicated-team rate, expect a real cost in the range of $8,000-$20,000 depending on team size and stack complexity — meaningfully more than a token engagement, but a fraction of a percent of a six- or seven-figure annual contract. Vendors quoting a pilot at near-zero cost are usually signaling one of two things: they plan to staff it with a B-team they would not otherwise bill at full rate, or they intend to recover the discount later through the full contract's pricing.
+
+Structure the payment in two tranches — 50% at pilot kickoff, 50% on delivery acceptance — so both sides have skin in the outcome rather than the vendor carrying full risk or you paying entirely upfront with no leverage if delivery disappoints. Negotiate upfront whether the pilot fee credits against the full contract if you proceed; most vendors will agree to this since it removes your objection that the pilot is a sunk cost rather than an investment in the eventual engagement. If a vendor refuses any credit arrangement at all, ask why — it is a reasonable, commonly granted concession, and refusal is worth understanding before you commit further budget.
+
 ## Frequently Asked Questions
 
 ### How long should a vendor pilot project last?
@@ -116,6 +122,18 @@ Both matter, but process behavior under mild pressure — escalation speed, comm
 
 ### What if the pilot reveals problems with the vendor?
 Treat it as a successful pilot, not a wasted one. A bounded, paid pilot that surfaces a bad fit costs a fraction of what discovering the same gaps six months into a full contract would cost, both in budget and in the disruption of replacing a vendor mid-engagement.
+
+### (Scenario: CTO negotiating pilot pricing with a vendor offering it for free) Why should I insist on paying for a pilot instead of accepting a vendor's offer to do it for free?
+A free pilot changes the vendor's incentive structure — they are more likely to staff it with junior or bench engineers rather than the senior team you would actually work with, since there is no real revenue at stake to justify committing top resources. Paying a real, if modest, fee ensures the pilot reflects the team and quality you would actually get in the full engagement.
+
+### (Scenario: CTO wants pilot fee credited against the eventual full contract) Will vendors typically credit the pilot fee toward the full contract if I proceed?
+Most reputable vendors will agree to this if you negotiate it explicitly before the pilot starts, since it removes the objection that the pilot is a sunk cost separate from the real engagement. Get this credit arrangement written into the pilot statement of work itself, not left as a verbal understanding to be honored later.
+
+### (Scenario: pilot performed well but the CTO's board wants harder proof before approving the full budget) How do I present a successful pilot's results to a board or budget committee?
+Present the written scorecard results against the pre-agreed pass criteria, not a narrative summary, alongside the actual delivered code and sprint reports as evidence. A board is far more likely to approve a full engagement when shown measurable process metrics — escalation speed, communication clarity scores — than a qualitative account of how the pilot "felt."
+
+### (Scenario: two finalist vendors both want to run a pilot simultaneously) Should I run parallel pilots with two finalist vendors at once, or sequential pilots with one at a time?
+Parallel pilots, run against the same or comparable scoped deliverables with the same scorecard, give you a direct head-to-head comparison under identical conditions and timeline pressure, which sequential pilots cannot fully replicate since market and internal conditions shift between them. The added cost of running two pilots simultaneously is usually justified for a contract large enough to warrant a pilot in the first place.
 
 <script type="application/ld+json">
 {
@@ -160,6 +178,38 @@ Treat it as a successful pilot, not a wasted one. A bounded, paid pilot that sur
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Treat it as a successful pilot, not a wasted one. A bounded, paid pilot that surfaces a bad fit costs a fraction of what discovering the same gaps six months into a full contract would cost, both in budget and in the disruption of replacing a vendor mid-engagement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why should I insist on paying for a pilot instead of accepting a vendor's offer to do it for free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A free pilot changes the vendor's incentive structure — they are more likely to staff it with junior or bench engineers rather than the senior team you would actually work with, since there is no real revenue at stake to justify committing top resources. Paying a real, if modest, fee ensures the pilot reflects the team and quality you would actually get in the full engagement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will vendors typically credit the pilot fee toward the full contract if I proceed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most reputable vendors will agree to this if you negotiate it explicitly before the pilot starts, since it removes the objection that the pilot is a sunk cost separate from the real engagement. Get this credit arrangement written into the pilot statement of work itself, not left as a verbal understanding to be honored later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I present a successful pilot's results to a board or budget committee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Present the written scorecard results against the pre-agreed pass criteria, not a narrative summary, alongside the actual delivered code and sprint reports as evidence. A board is far more likely to approve a full engagement when shown measurable process metrics — escalation speed, communication clarity scores — than a qualitative account of how the pilot felt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I run parallel pilots with two finalist vendors at once, or sequential pilots with one at a time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Parallel pilots, run against the same or comparable scoped deliverables with the same scorecard, give you a direct head-to-head comparison under identical conditions and timeline pressure, which sequential pilots cannot fully replicate since market and internal conditions shift between them. The added cost of running two pilots simultaneously is usually justified for a contract large enough to warrant a pilot in the first place."
       }
     }
   ]

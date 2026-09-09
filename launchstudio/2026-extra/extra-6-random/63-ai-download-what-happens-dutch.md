@@ -39,6 +39,17 @@ Dit is precies de valkuil: de app werkte. U testte hem binnen de preview van de 
 
 Het technische team van Manifera — met 11+ jaar productie-ervaring over 160+ opgeleverde projecten — behandelt precies deze kloof als een van de eerste dingen die het waard zijn om te controleren wanneer een oprichter een door AI gegenereerde app van het oorspronkelijke platform af verplaatst. Ons engineeringcentrum in Ho Chi Minhstad behandelt een gestage stroom van precies dit soort migratiewerk. Als u van plan bent om zelf van een platform af te stappen, [stuur ons uw prototypelink en wij geven u gratis advies](https://launchstudio.eu/nl/#contact) over wat er waarschijnlijk kapot gaat voordat u er op de harde manier achter komt. Het [portfolio](https://www.manifera.com/portfolio/) van Manifera bevat meerdere projecten die precies zo zijn begonnen.
 
+## Drie Categorieën van Zaken Die de Overstap Meestal Niet Overleven
+
+Wanneer u een codebase migreert van de ene ontwikkelomgeving naar een volwaardig productieplatform, verhuist 90% van de code ogenschijnlijk vlekkeloos mee. Het gevaar schuilt echter in de 10% die de overtocht structureel niet overleeft. Let met name op deze drie categorieën:
+
+**1. Lokale Sessie- en Opslagmechanismen.** Prototypes gebruiken vaak eenvoudige `localStorage`-oplossingen of tijdelijke cookies om gebruikersstatussen bij te houden. Zodra u overstapt naar een schaalbare architectuur met meerdere serverless-instanties of edge-servers, verdwijnt deze gedeelde status en worden gebruikers willekeurig uitgelogd of geconfronteerd met lege dashboards.
+
+**2. Impliciete Databaserelaties Zonder Schema-Definities.** In vroege prototypes vertrouwen AI-tools regelmatig op aannames in de frontend over welke gegevens bij elkaar horen, zonder dat dit formeel is vastgelegd in databasemigraties. Bij een migratie naar een strikt relationele database (zoals PostgreSQL met Prisma of Drizzle) weigert het systeem plotseling te starten omdat constraints en relaties ontbreken.
+
+**3. Ongedocumenteerde Serverless Helper-Functies.** Veel tools injecteren kleine helper-functies of proxy-routes om CORS-problemen lokaal te omzeilen. Zodra de code buiten het oorspronkelijke platform wordt gedeployd, falen deze aanroepen geruisloos omdat de onderliggende cloud-infrastructuur niet meeverhuist.
+
+Door direct na elke migratie gericht te inspecteren op deze drie categorieën, voorkomt u dat u dagenlang zoekt naar vage foutmeldingen en zet u uw nieuwe ontwikkelomgeving direct op een stabiele koers.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de export die de configuratie achterliet
@@ -85,11 +96,46 @@ Test de geëxporteerde versie op uw eigen hosting voordat u erop vertrouwt, en h
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Does every AI coding tool exclude configuration from its export?", "acceptedAnswer": { "@type": "Answer", "text": "It varies by tool, but it's common enough that verifying an export's completeness before self-hosting is worth doing regardless of which platform you used." } },
-    { "@type": "Question", "name": "How would I know something is missing before my app breaks?", "acceptedAnswer": { "@type": "Answer", "text": "Compare every configuration reference in your code against the files actually included in the export — anything referenced but not present is a strong signal something didn't make the trip." } },
-    { "@type": "Question", "name": "Why doesn't the export process warn founders about this?", "acceptedAnswer": { "@type": "Answer", "text": "The export is built to package visible application code, not to audit platform-level configuration against what the app needs to run independently." } },
-    { "@type": "Question", "name": "Is this something Manifera's team sees often?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Manifera's Ho Chi Minh City engineering center handles migrations off AI coding platforms regularly, and incomplete exports are one of the most consistent issues across tools." } },
-    { "@type": "Question", "name": "What should I do before I download my app's code to move it?", "acceptedAnswer": { "@type": "Answer", "text": "Test the exported version on your own hosting before you rely on it, and keep a list of every environment-level setting the platform's dashboard shows you, so you can confirm it made the export." } }
+    {
+      "@type": "Question",
+      "name": "Sluit elke AI-codeertool configuratie uit van zijn export?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het verschilt per tool, maar het komt vaak genoeg voor dat het controleren van de volledigheid van een export vóór het zelf hosten de moeite waard is, ongeacht welk platform u gebruikte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou ik weten dat er iets ontbreekt voordat mijn app kapot gaat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vergelijk elke configuratieverwijzing in uw code met de bestanden die daadwerkelijk in de export zijn opgenomen — alles waarnaar wordt verwezen maar dat niet aanwezig is, is een sterk signaal dat er iets niet is meegekomen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom waarschuwt het exportproces oprichters hier niet voor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De export is gebouwd om zichtbare applicatiecode te bundelen, niet om platformconfiguratie te toetsen aan wat de app nodig heeft om zelfstandig te draaien — die kloof valt simpelweg niet onder de taak van de exportfunctie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ziet het team van Manifera dit vaak?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Ons engineeringcentrum in Ho Chi Minhstad behandelt regelmatig migraties van AI-codeerplatformen af, en onvolledige exports zijn een van de meest consistente problemen bij alle tools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik doen voordat ik de code van mijn app download om deze te verplaatsen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Test de geëxporteerde versie op uw eigen hosting voordat u erop vertrouwt, en houd een lijst bij van elke instelling op omgevingsniveau die het dashboard van het platform u toont, zodat u kunt bevestigen dat deze de export heeft gehaald."
+      }
+    }
   ]
 }
 </script>

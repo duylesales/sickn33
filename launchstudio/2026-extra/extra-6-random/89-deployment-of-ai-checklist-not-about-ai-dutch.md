@@ -45,6 +45,19 @@ Geen van deze punten heeft iets met AI te maken, en precies daarom worden ze weg
 
 Onze technici, gebaseerd in Singapore, doorlopen precies deze checklist als een standaard pre-lanceringsronde, specifiek omdat de door AI gegenereerde functie zelden de eerste storing veroorzaakt — de infrastructuurbasics eronder wel. LaunchStudio brengt Manifera's enterprise-grade engineering naar dit soort pre-lanceringsbeoordeling, en als u een lanceringsdatum nadert en deze lijst tegen uw specifieke opzet wilt laten controleren, kunt u [een gratis intro-gesprek van 15 minuten boeken](https://launchstudio.eu/nl/#contact) vóór de inzetdag in plaats van erna. De bredere ervaring van Manifera met inzet en infrastructuur staat beschreven op de pagina [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
+## De Checklist Is Géén Eenmalige Gebeurtenis — Wanneer U Hem Opnieuw Moet Doorlopen
+
+Het doorlopen van de pre-launch checklist is een fantastische mijlpaal, maar software is nooit 'af'. Na de initiële lancering zijn er vier specifieke triggers die vereisen dat u de checklist opnieuw formeel afvinkt:
+
+**1. Bij Elke Uitbreiding van het Datamodel.** Zodra u een nieuwe tabel toevoegt of relaties tussen bestaande entiteiten wijzigt (bijvoorbeeld het introduceren van teamrollen of sub-organisaties), moet u direct verifiëren of Row-Level Security en foreign key constraints zijn bijgewerkt.
+
+**2. Bij de Integratie van een Nieuwe Externe Betaal- of API-Dienst.** Voegt u Mollie toe naast Stripe, of koppelt u een nieuwe AI-provider? Verifieer direct of de webhooks cryptografisch worden gecontroleerd, omgevingsvariabelen veilig zijn opgeslagen en time-outafhandeling actief is.
+
+**3. Vóór Elke Formele Verkoopdemonstratie aan een Enterprise-Klant.** Wanneer een grote zakelijke prospect meekijkt, wilt u absolute zekerheid dat demonstratie-accounts strikt gescheiden zijn van echte klantdata en dat logs storingsvrij draaien.
+
+**4. Minimaal Eens per Kwartaal als Vaste Routine.** Zelfs als er ogenschijnlijk weinig is veranderd, verlopen certificaten, ontstaan er nieuwe beveiligingslekken in externe bibliotheken en raken testomgevingen vervuild. Een kwartaalroutine van twee uur houdt uw platform permanent gezond.
+
+Door deze checklist in te bedden als een vast onderdeel van uw bedrijfscyclus, voorkomt u dat uw beveiligingsniveau langzaam verwatert en behoudt u permanent grip op uw technologie.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de checklist die alles dekte behalve wat er kapotging
@@ -91,11 +104,46 @@ Ja — deze exacte checklist weerspiegelt een standaardonderdeel van het pre-lan
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why do database connection pool limits cause outages so often?", "acceptedAnswer": { "@type": "Answer", "text": "Default configurations are typically tuned for light development traffic and rarely revisited before real concurrent users arrive." } },
-    { "@type": "Question", "name": "Isn't a deployment checklist supposed to focus on the AI feature I built?", "acceptedAnswer": { "@type": "Answer", "text": "It's natural to focus there, but in practice the AI-generated feature rarely breaks first — the generic infrastructure basics underneath it usually do." } },
-    { "@type": "Question", "name": "How do I know if my connection pool limit is set too low?", "acceptedAnswer": { "@type": "Answer", "text": "Check the configured limit against a realistic estimate of simultaneous users at launch and test under that load rather than relying on the default." } },
-    { "@type": "Question", "name": "What's the fastest way to catch this kind of issue before launch day?", "acceptedAnswer": { "@type": "Answer", "text": "A pre-launch review by someone experienced in production infrastructure typically catches this class of issue in under a day." } },
-    { "@type": "Question", "name": "Does Manifera's Singapore team handle this kind of pre-launch review regularly?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, this checklist reflects a standard part of the pre-launch process the Singapore-based team runs for founders approaching deployment." } }
+    {
+      "@type": "Question",
+      "name": "Waarom veroorzaken limieten voor databaseverbindingspools zo vaak storingen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat standaardconfiguraties doorgaans zijn afgestemd op licht ontwikkelverkeer en zelden worden herzien voordat er echte, gelijktijdige gebruikers opduiken, waardoor de limiet precies wordt geraakt op het moment dat het product begint te slagen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zou een inzetchecklist zich niet moeten richten op de AI-functie die ik heb gebouwd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is logisch om daar de focus te leggen, maar in de praktijk gaat de door AI gegenereerde functie zelden als eerste kapot — de generieke infrastructuurbasics eronder meestal wel, en die verdienen evenveel aandacht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of mijn verbindingspoollimiet te laag is ingesteld?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vergelijk de geconfigureerde limiet met een realistische schatting van hoeveel gelijktijdige gebruikers of verzoeken uw app bij lancering zou kunnen zien, en test onder die belasting in plaats van te vertrouwen op de standaardwaarde."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de snelste manier om dit soort probleem vóór de lanceringsdag op te sporen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een pre-lanceringsbeoordeling door iemand met ervaring in productie-infrastructuur, die de hier genoemde basics tegen uw specifieke opzet controleert, ontdekt dit soort probleem doorgaans binnen een dag."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Voert het Singapore-team van Manifera dit soort pre-lanceringsbeoordeling regelmatig uit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — deze exacte checklist weerspiegelt een standaardonderdeel van het pre-lanceringsproces dat het in Singapore gevestigde team uitvoert voor oprichters die een inzetdatum naderen."
+      }
+    }
   ]
 }
 </script>

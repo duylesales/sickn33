@@ -68,6 +68,14 @@ Manifera rebuilt the platform's architecture with geographic redundancy and grac
 
 A disaster-recovery plan that's documented but never rehearsed routinely performs far worse than expected during an actual disruption, because untested assumptions fail under real conditions in ways a paper plan never reveals — a gap that costs hours of critical downtime precisely when a system is most needed. Regular rehearsal and resilience-first architecture cost a defined testing investment relative to the cost of an untested recovery taking many times longer than planned. [Talk to Manifera about resilience-engineered digital transformation](https://www.manifera.com/contact-us/).
 
+## Implementation Checklist: The Resilience Metrics That Actually Matter
+
+Two numbers separate a genuinely resilience-engineered platform from one that merely claims to be: Recovery Time Objective (RTO) and Recovery Point Objective (RPO), both defined per critical function, not as one blanket figure for the whole system. For a property-assessment coordination platform, the RTO for core assessment-intake functions should target under 60 minutes, while a non-critical reporting dashboard can tolerate an RTO measured in hours — treating them identically wastes resilience budget on the wrong components. RPO — how much data loss is acceptable — should target under 5 minutes for active assessment records via continuous replication, not the 24-hour window a nightly-backup-only architecture implies.
+
+A practical vendor-evaluation checklist: ask for the last three actual disaster-recovery rehearsal dates and their measured recovery times (not the plan's theoretical numbers); confirm hosting spans at least two geographically separate regions with automated failover, not manual DNS cutover; verify field-facing components — property assessors working with intermittent connectivity in the earthquake-affected area — support offline-first data capture with conflict-resolution sync, since a field assessor's connectivity is often the first thing to degrade during regional disruption; and require graceful-degradation behavior documented per component, specifying exactly which functions stay up when others fail.
+
+A vendor who can answer all four with dates, numbers, and specifics has resilience discipline. A vendor who answers only with "we have a DR plan" does not.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO choosing a digital transformation partner for infrastructure-adjacent systems) Why does resilience engineering need to be an explicit requirement rather than assumed?
@@ -90,6 +98,22 @@ So a localized disruption in one area doesn't take down the entire system, parti
 
 Case experience suggests the difference can be an order of magnitude, with rehearsed recovery completing in well under an hour compared to many hours for an untested plan encountering unexpected real-world conditions.
 
+### (Scenario: CTO defining resilience targets in an RFP) What RTO and RPO targets should a property-assessment coordination platform in an earthquake-affected region set?
+
+Set them per function, not as one blanket figure — core assessment-intake functions should target an RTO under 60 minutes and an RPO under 5 minutes via continuous replication, while non-critical reporting can tolerate a longer RTO and a nightly-backup-level RPO.
+
+### (Scenario: CTO worried about field assessors losing connectivity during a disruption) How should the platform handle property assessors working in the field when connectivity degrades during a regional event?
+
+Build offline-first data capture with conflict-resolution sync for field-facing components, since a field assessor's connectivity is often the first thing to degrade during regional disruption, and assessments captured offline need to reconcile cleanly once connectivity returns.
+
+### (Scenario: CTO integrating with regional energy-transition data systems) Does integrating with regional grid or energy-transition data sources introduce additional resilience requirements?
+
+Yes — treat external energy-grid or utility data integrations as a dependency that can fail independently of your own platform, with graceful degradation ensuring core coordination functions keep working on cached or last-known data rather than failing outright when an external feed goes down.
+
+### (Scenario: CTO writing resilience requirements into an RFP) What specific questions should an RFP ask to distinguish genuine resilience discipline from a checkbox claim?
+
+Ask for the dates and measured recovery times of the last three actual disaster-recovery rehearsals, confirmation of automated multi-region failover versus manual DNS cutover, and per-component graceful-degradation documentation — vague answers citing only "we have a DR plan" signal an untested plan.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,7 +123,11 @@ Case experience suggests the difference can be an order of magnitude, with rehea
     { "@type": "Question", "name": "(Scenario: CTO with an existing disaster-recovery plan that's never been tested) Is a documented disaster-recovery plan enough without actual rehearsal?", "acceptedAnswer": { "@type": "Answer", "text": "No, an untested plan frequently contains assumptions that fail under real conditions, only revealed through actual rehearsal." } },
     { "@type": "Question", "name": "(Scenario: CTO trying to avoid whole-system failure during partial disruption) What design principle keeps critical functions running when some system components fail?", "acceptedAnswer": { "@type": "Answer", "text": "Graceful degradation, where critical functions continue operating even if some non-critical components go down." } },
     { "@type": "Question", "name": "(Scenario: CTO evaluating geographic infrastructure risk) Why does hosting architecture need geographic redundancy for a regionally critical system?", "acceptedAnswer": { "@type": "Answer", "text": "So a localized disruption doesn't take down the entire system, particularly important for infrastructure-coordination platforms." } },
-    { "@type": "Question", "name": "(Scenario: CTO trying to estimate the value of rehearsed disaster recovery) How much faster is a rehearsed recovery compared to an untested one?", "acceptedAnswer": { "@type": "Answer", "text": "The difference can be an order of magnitude, with rehearsed recovery completing in well under an hour versus many hours for an untested plan." } }
+    { "@type": "Question", "name": "(Scenario: CTO trying to estimate the value of rehearsed disaster recovery) How much faster is a rehearsed recovery compared to an untested one?", "acceptedAnswer": { "@type": "Answer", "text": "The difference can be an order of magnitude, with rehearsed recovery completing in well under an hour versus many hours for an untested plan." } },
+    { "@type": "Question", "name": "(Scenario: CTO defining resilience targets in an RFP) What RTO and RPO targets should a property-assessment coordination platform in an earthquake-affected region set?", "acceptedAnswer": { "@type": "Answer", "text": "Per function: core assessment-intake functions should target an RTO under 60 minutes and an RPO under 5 minutes, while non-critical reporting can tolerate looser targets." } },
+    { "@type": "Question", "name": "(Scenario: CTO worried about field assessors losing connectivity during a disruption) How should the platform handle property assessors working in the field when connectivity degrades during a regional event?", "acceptedAnswer": { "@type": "Answer", "text": "Build offline-first data capture with conflict-resolution sync for field-facing components, so offline assessments reconcile cleanly once connectivity returns." } },
+    { "@type": "Question", "name": "(Scenario: CTO integrating with regional energy-transition data systems) Does integrating with regional grid or energy-transition data sources introduce additional resilience requirements?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, treat external energy-grid integrations as an independently failing dependency, with graceful degradation to cached data if the external feed goes down." } },
+    { "@type": "Question", "name": "(Scenario: CTO writing resilience requirements into an RFP) What specific questions should an RFP ask to distinguish genuine resilience discipline from a checkbox claim?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for dates and measured times of the last three DR rehearsals, confirmation of automated multi-region failover, and per-component graceful-degradation documentation." } }
   ]
 }
 </script>

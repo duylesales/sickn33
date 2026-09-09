@@ -62,6 +62,12 @@ Manifera's own proposal and contracting process is built to move through paralle
 
 A six-month RFP timeline is rarely six months of necessary diligence — it's usually eleven or twelve weeks of real evaluation work stretched across twenty-six weeks by sequential stages that could run in parallel and approval steps with no deadline attached. A Procurement Lead who maps their own organization's timeline against these five stages will almost always find the same pattern: rigorous evaluation, undermined by structural sequencing debt everywhere around it.
 
+## The Timeline Audit: A Stage-by-Stage Budget to Hold Your Organization To
+
+Publish a target week count per stage before the next RFP starts, and track actual versus budget at each gate — this single habit is what separates organizations that compress their timeline from those that discuss compression every cycle and never change anything. A realistic budget: RFP drafting, 2-3 weeks; vendor response window, 3-4 weeks; evaluation and scoring including reference checks, 3-4 weeks; parallel legal and security review, 3-4 weeks (not 6-8 run sequentially); final approval, 3-5 business days against a hard SLA. That totals 12-16 weeks — the same range this article's stage breakdown targets — and gives procurement a concrete number to defend when a stakeholder pushes back on a compressed timeline as "too fast."
+
+Track variance by stage, not just total elapsed time: a stage that consistently runs 50% over its budget across multiple RFP cycles points to a structural problem (understaffed legal team, no security SLA, an approver who's chronically unavailable) that a single tighter deadline won't fix on its own. Organizations that run this audit for two or three consecutive RFP cycles typically identify one or two stages responsible for 80% of their overrun — usually legal/security sequencing or final approval — and fixing just those two stages closes most of the gap to the 12-16 week target without touching evaluation rigor at all.
+
 ## Frequently Asked Questions
 
 ### What's a realistic timeline for a well-run enterprise software RFP?
@@ -78,6 +84,18 @@ Requiring a specific individual's synchronous or in-person sign-off rather than 
 
 ### How can a Procurement Lead tell which RFP delays are necessary versus avoidable?
 Necessary delay protects evaluation rigor — scoring, reference checks, and genuine technical or legal assessment. Avoidable delay is sequencing debt — stages waiting on each other with no real dependency, or approvals waiting on an individual's calendar rather than a defined SLA. Mapping the actual timeline against the five core RFP stages usually makes the split obvious.
+
+### (Scenario: A strong vendor asks for an extension beyond the standard 3-4 week response window) Should procurement grant a response-window extension request from a vendor?
+A short, defined extension (a few days to a week) for a specific, stated reason is reasonable and doesn't distort the process; an open-ended or repeated extension request is itself useful evaluation data, since a vendor who can't mobilize a response team within a clearly scoped window is signaling something about how they'll perform under delivery deadlines later.
+
+### (Scenario: The internal legal team is a single generalist counsel handling every RFP alongside other work) What if the organization doesn't have the legal or security staffing to run parallel review tracks?
+Running tracks in parallel is a scheduling change, not a headcount requirement — even a single legal reviewer can work security's flagged items and their own contract review concurrently across the same weeks rather than sequentially, provided both tracks have their own hard deadline. Where true capacity is the constraint, that's a staffing gap worth surfacing to leadership directly, since it's adding weeks to every enterprise deal the organization runs.
+
+### (Scenario: A stakeholder introduces a new requirement mid-evaluation that wasn't in the original RFP) How should procurement handle a stakeholder introducing a new requirement mid-evaluation?
+Log it, but don't let it silently restart the clock: assess whether it's material enough to require a clarification round with vendors (rare) or can be captured as a follow-up question to finalists without reopening the full RFP (common). This is also the argument for the requirements workshop upfront — a late requirement is nearly always a signal that a stakeholder wasn't properly represented during RFP drafting.
+
+### (Scenario: A mid-market deal well under the enterprise threshold is being run through the full RFP process) Should every vendor deal use the full RFP timeline, or can it be scaled down for smaller purchases?
+No — define a tiered process with a lighter-weight track (a shortened 4-6 week cycle with fewer required approvals) for deals below a defined spend threshold, reserving the full 12-16 week process for deals that genuinely warrant the full stakeholder set. Running every purchase through the enterprise-grade process is itself a form of process debt that slows down decisions that don't need the full rigor.
 
 <script type="application/ld+json">
 {
@@ -122,6 +140,38 @@ Necessary delay protects evaluation rigor — scoring, reference checks, and gen
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Necessary delay protects evaluation rigor — scoring, reference checks, and genuine technical or legal assessment. Avoidable delay is sequencing debt — stages waiting on each other with no real dependency, or approvals waiting on an individual's calendar rather than a defined SLA. Mapping the actual timeline against the five core RFP stages usually makes the split obvious."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should procurement grant a response-window extension request from a vendor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A short, defined extension for a specific stated reason is reasonable; an open-ended or repeated extension request is itself useful evaluation data, since a vendor who can't mobilize within a clearly scoped window is signaling something about performance under delivery deadlines later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the organization doesn't have the legal or security staffing to run parallel review tracks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Running tracks in parallel is a scheduling change, not a headcount requirement — even a single reviewer can work both sets of flagged items concurrently across the same weeks rather than sequentially, provided both tracks have their own hard deadline. Where true capacity is the constraint, that's a staffing gap worth surfacing to leadership directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should procurement handle a stakeholder introducing a new requirement mid-evaluation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Log it, but don't let it silently restart the clock: assess whether it's material enough to require a clarification round with vendors (rare) or can be captured as a follow-up question to finalists without reopening the full RFP (common). A late requirement is nearly always a signal a stakeholder wasn't properly represented during drafting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should every vendor deal use the full RFP timeline, or can it be scaled down for smaller purchases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — define a tiered process with a lighter-weight track, a shortened 4-6 week cycle with fewer required approvals, for deals below a defined spend threshold, reserving the full 12-16 week process for deals that genuinely warrant the full stakeholder set."
       }
     }
   ]

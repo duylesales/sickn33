@@ -91,6 +91,12 @@ Manifera has built the integration and product layers around open banking data f
 }
 </script>
 
+## By the Numbers: PSD2 Article 32 Performance Signals Worth Checking
+
+Article 32 quarterly statistics are public, and the numbers vary far more across banks than most vendor pitches acknowledge. A well-run dedicated interface should sustain 99.5%+ availability and respond to consent and account information calls within 1-2 seconds under normal load; several major EU banks' published statistics have shown availability dipping into the 97-98% range during specific quarters, which sounds close on paper but translates into hours of real monthly downtime across your user base. Pull the last four quarters of Article 32 data, not just the most recent one, for every bank in your target coverage — a single bad quarter might be a one-off incident, but a recurring pattern across multiple quarters is a structural reliability problem your vendor needs a specific mitigation for.
+
+On certificate management, budget for QWAC/QSEAL renewal at minimum 30 days before expiry with automated monitoring, since manual, calendar-dependent renewal processes are the single most common cause of unplanned multi-bank outages reported across the industry. On SCA reauthorization specifically, a mature vendor should be able to quote a completion rate above 85% for the 90-day reconfirmation flow; anything meaningfully below that number, or a vendor unable to produce the figure at all, signals a flow that is quietly bleeding users on a fixed quarterly schedule.
+
 ## Frequently Asked Questions
 
 ### How do I verify an open banking vendor's TPP authorization independently?
@@ -107,6 +113,18 @@ A dedicated interface is a purpose-built API for TPPs, while a modified customer
 
 ### Should we test an open banking vendor beyond their standard sandbox environment?
 Yes. Sandbox environments typically behave more predictably than real production bank connections, which vary in response time, error formatting, and edge-case handling. Requesting access to a broader pre-production testing pool covering your actual target banks catches integration issues a clean sandbox demo will not surface.
+
+### (Scenario: A CTO is reviewing a vendor's coverage claims for the specific banks their product needs) How should we use published Article 32 statistics when comparing vendors' bank coverage?
+Pull at least the last four quarters of Article 32 data for every bank in your target market, since a single bad quarter can be a one-off incident while a recurring pattern signals a structural reliability problem. Ask the vendor directly how their platform routes around or mitigates known-poor performers rather than treating every bank connection as equally reliable.
+
+### (Scenario: A product team is trying to diagnose an unexplained certificate-related outage) What's the most common technical cause of an unplanned open banking integration outage?
+Lapsed QWAC or QSEAL certificates from manual, calendar-dependent renewal processes are the most frequently cited cause industry-wide. Confirm the vendor renews at minimum 30 days before expiry with automated monitoring and alerting, not a person remembering a date on a spreadsheet.
+
+### (Scenario: A CTO is trying to set a realistic target for the 90-day reauthorization flow before launch) What SCA reauthorization completion rate should we treat as acceptable from a vendor?
+Look for a demonstrated completion rate above 85% across the vendor's existing client base; a vendor unable to produce this figure at all is a bigger red flag than a merely mediocre one, since it suggests they aren't tracking the metric that most directly predicts your churn. Below roughly 70%, expect a visible, recurring churn spike on your own 90-day cycle.
+
+### (Scenario: A fintech targeting the Netherlands and UK is comparing vendor coverage across both regimes) Does a vendor's PSD2 authorization in the EU automatically cover UK open banking requirements?
+No. The UK operates its own parallel open banking regime post-Brexit under the FCA, separate from EU national competent authorities like the DNB, so a vendor needs distinct authorization and often distinct technical integration for UK coverage. Verify UK and EU authorization status independently rather than assuming one implies the other.
 
 <script type="application/ld+json">
 {
@@ -137,6 +155,26 @@ Yes. Sandbox environments typically behave more predictably than real production
       "@type": "Question",
       "name": "Should we test an open banking vendor beyond their standard sandbox environment?",
       "acceptedAnswer": {"@type": "Answer", "text": "Yes. Sandbox environments typically behave more predictably than real production bank connections, which vary in response time, error formatting, and edge-case handling. Requesting access to a broader pre-production testing pool covering your actual target banks catches integration issues a clean sandbox demo will not surface."}
+    },
+    {
+      "@type": "Question",
+      "name": "How should we use published Article 32 statistics when comparing vendors' bank coverage?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Pull at least the last four quarters of Article 32 data for every bank in your target market, since a single bad quarter can be a one-off incident while a recurring pattern signals a structural reliability problem. Ask the vendor directly how their platform routes around or mitigates known-poor performers rather than treating every bank connection as equally reliable."}
+    },
+    {
+      "@type": "Question",
+      "name": "What's the most common technical cause of an unplanned open banking integration outage?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Lapsed QWAC or QSEAL certificates from manual, calendar-dependent renewal processes are the most frequently cited cause industry-wide. Confirm the vendor renews at minimum 30 days before expiry with automated monitoring and alerting, not a person remembering a date on a spreadsheet."}
+    },
+    {
+      "@type": "Question",
+      "name": "What SCA reauthorization completion rate should we treat as acceptable from a vendor?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Look for a demonstrated completion rate above 85% across the vendor's existing client base; a vendor unable to produce this figure at all is a bigger red flag than a merely mediocre one, since it suggests they aren't tracking the metric that most directly predicts your churn. Below roughly 70%, expect a visible, recurring churn spike on your own 90-day cycle."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does a vendor's PSD2 authorization in the EU automatically cover UK open banking requirements?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. The UK operates its own parallel open banking regime post-Brexit under the FCA, separate from EU national competent authorities like the DNB, so a vendor needs distinct authorization and often distinct technical integration for UK coverage. Verify UK and EU authorization status independently rather than assuming one implies the other."}
     }
   ]
 }

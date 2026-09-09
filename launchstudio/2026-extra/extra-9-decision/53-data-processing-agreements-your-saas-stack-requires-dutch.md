@@ -119,19 +119,23 @@ Het inschakelen van een gespecialiseerde jurist loont op drie specifieke momente
 
 Een eenmalige juridische review van uw eigen DPA-template, die u vervolgens gestandaardiseerd aan al uw toekomstige klanten kunt voorleggen, is de meest verstandige inzet van juridisch budget die u kunt doen.
 
-## Het Juiste Moment om Dit In te Richting
+## Het Juiste Moment om Dit In te Richten
 
 Het ideale moment om uw subverwerkersadministratie op te zetten is niet op uw allereerste programmeerdag, maar evenmin op het moment dat een enterprise-klant er halsoverkop om vraagt.
 
 Wie te vroeg begint, documenteert een softwarestack die wekelijks verandert. Wie wacht tot een grote klant erom vraagt, moet onder grote tijdsdruk en het toeziend oog van een kritische inkoper improviseren.
 
-Het ideale kantelpunt is: **zodra uw eerste betalende B2B-klant aan boord komt en de kern van uw architectuur (hosting, database, e-mail en betalingen) stabiel is**. Zelfs als die eerste klant er niet expliciet om vraagt: de tweede klant doet dat gegarandeerd. Door het papierwerk dan al gereed te hebben, voorkomt u dat een kansrijke verkoopdeal onnodig weken vertraging oploopt.
+Het ideale kantelpunt is: **zodra uw eerste betalende B2B-klant aan boord komt en de kern van uw architectuur (hosting, database, e-mail en betalingen) stabiel is**. Zelfs als die eerste klant er niet expliciet om vraagt: de tweede klant doet dat gegarandeerd. Door het papierwerk dan al gereed te hebben, voorkomt u dat een kansrijke verkoopdeal onnodig weken vertraging oploopt. Door de lijst elk kwartaal kort te herzien, of telkens wanneer een nieuwe tool aan de stack wordt toegevoegd, blijft deze accuraat zonder een zware onderhoudslast te worden.
 
-Het samenstellen van een sluitende subverwerkerslijst en het gereedmaken van uw architectuur voor enterprise-toetsingen is een vast onderdeel van de hardening-trajecten van [LaunchStudio](https://launchstudio.eu/nl/), gebaseerd op de 11+ jaar praktijkervaring van Manifera met veeleisende zakelijke klanten.
+## Waarom Dit Zich Terugverdient Vóórdat Ernaar Gevraagd Wordt
 
-[Plan een gesprek met een engineer](https://launchstudio.eu/nl/#contact) die uw stack doorloopt en u exact vertelt welke overeenkomsten u al heeft en welke u nog mist.
+De oprichters die dit proces succesvol doorlopen, zijn niet degenen met de meest geavanceerde juridische afdeling — het zijn simpelweg de ondernemers die de leveranciersinventarisatie voltooid hadden vóórdat de eerste enterprise-klant ernaar vroeg. Hierdoor is de reactie op "stuur ons uw DPA en subverwerkerslijst" een e-mail die nog dezelfde dag de deur uitgaat met een bestaand document als bijlage, in plaats van een hectische zoektocht van twee weken die de deal stillegt. Verkooptrajecten in het enterprise-segment duren van nature al lang genoeg; zichtbaar onvoorbereid zijn op standaard papierwerk dat een concurrent wél direct paraat heeft, is een volstrekt vermijdbare reden om een deal te verliezen die inhoudelijk perfect bij uw product aansloot.
 
-## Praktijkvoorbeeld
+Het samenstellen van een sluitende subverwerkerslijst over een echte productiestack en het inrichten van een DPA die een inkoopteam daadwerkelijk accepteert, is precies het soort operationele funderingswerk dat [LaunchStudio](https://launchstudio.eu/nl/) levert naast beveiligingshardening — gevoed door meer dan 11 jaar ervaring van Manifera met enterprise-deals die exact op dit soort voorbereiding vallen of staan.
+
+[Plan een gesprek met een engineer](https://launchstudio.eu/nl/#contact) die uw daadwerkelijke stack doorloopt en u tool voor tool vertelt welke verwerkersovereenkomsten u al heeft en welke u nog mist.
+
+## Echt voorbeeld
 
 ### Een SaaS-Oprichter in Actie: De Inkoopmail Die een Deal Blokkeerde
 

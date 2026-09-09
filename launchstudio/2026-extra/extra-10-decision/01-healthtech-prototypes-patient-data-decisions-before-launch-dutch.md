@@ -81,7 +81,7 @@ De engineers van LaunchStudio implementeren encryptie in rust, bouwen een waterd
 
 Het technisch op orde brengen van uw fundament — encryptie, logging, hostingregio en toestemmingsarchitectuur — zorgt ervoor dat het gesprek met uw jurist of de functionaris gegevensbescherming van een zorginstelling kort en soepel verloopt, in plaats van te verzanden in een maandenlange blokkade. [Deel uw projectdetails met ons](https://launchstudio.eu/nl/#contact); u ontvangt binnen één werkdag een concrete analyse van wat er al solide staat en wat er moet gebeuren voordat een zorgpraktijk met een gerust hart kan tekenen.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Fysiotherapie-Triagetool Leert het Verschil Tussen een Symptoom en een Naam
 

@@ -103,7 +103,7 @@ Druk deze checklist af en leg hem naast uw eigen applicatie. Wat uw volgende sta
 
 Stuur ons de link naar uw Lovable-project en wij vertellen u exact welke van deze zes kloven in uw codebase aanwezig zijn — kosteloos, vrijblijvend en met een eerlijk antwoord binnen één werkdag.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een oprichter ontdekt wat er onder de motorkap van haar prototype ontbrak
 

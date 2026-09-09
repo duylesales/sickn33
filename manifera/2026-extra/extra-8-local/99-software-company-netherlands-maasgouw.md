@@ -97,6 +97,10 @@ A vendor relationship that collapses mid-project due to unaddressed financial in
 
 Beyond the catastrophic-failure scenario, a properly negotiated SLA with real financial penalties typically improves incident response time meaningfully compared to an aspirational, non-penalized commitment, which for a platform tracking live cargo and vessel movement translates directly into fewer costly scheduling disruptions across a typical operating year. Most CFOs who adopt this evaluation standard recoup the modest additional diligence cost many times over the first time it either prevents a vendor-continuity crisis or simply produces a faster, better-enforced incident response. Bring your own vendor shortlist to a Manifera principal for an independent contract review at [www.manifera.com/contact-us/](https://www.manifera.com/contact-us/).
 
+## What Financial Due Diligence on a Vendor Actually Looks At
+
+Checking a software vendor's financial stability doesn't require an accountant, but it does require four specific documents most CFOs never ask for. First, request the vendor's KvK (Chamber of Commerce) extract and most recent filed annual accounts — Dutch companies above a certain size threshold must file these, and a vendor unwilling to share basic filed financials for a multi-year engagement is itself a signal worth weighing. Second, ask directly how many active client engagements the vendor is currently running relative to total headcount — a boutique agency running six-figure engagements for twelve clients with a team of eight is carrying a concentration risk that shows up the moment one or two clients churn simultaneously. Third, ask how long the company has operated at its current or larger headcount, since a recent, unexplained team contraction is one of the earliest visible signals of financial strain, well before a formal insolvency filing. Fourth, ask what percentage of revenue comes from the vendor's three largest clients — a vendor overly dependent on one or two large accounts carries the same concentrated-dependency risk a CFO would flag in any other supplier relationship. None of these four questions require special access or a paid credit report; they simply require actually asking, which most vendor evaluations skip entirely.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CFO comparing two vendor proposals that look nearly identical) Two proposals look almost the same on price and features — what should actually break the tie?
@@ -119,6 +123,22 @@ A real SLA specifies a concrete uptime percentage, defined response times by sev
 
 No — a written case study is marketing material selected because it presents favorably, while a direct conversation with a comparable-industry reference client typically surfaces operational details about responsiveness and day-to-day collaboration that a case study is never going to include.
 
+### (Scenario: CFO unsure exactly what to request during a vendor's financial due-diligence review) What specific documents should we request from a vendor to actually conduct financial due diligence?
+
+Ask for the vendor's KvK extract and most recently filed annual accounts, how many active engagements the team is currently running relative to headcount, and what share of revenue comes from their three largest clients — none require a paid credit report, just a direct ask most CFOs skip.
+
+### (Scenario: CFO negotiating escrow with a vendor that seems reluctant) If a vendor resists agreeing to source-code escrow, is that itself a red flag?
+
+Yes — escrow costs a vendor almost nothing to agree to if they have no intention of ever being unable to deliver, so genuine reluctance to commit to it is worth treating as a signal about the vendor's confidence in their own continuity, not a routine negotiating point to concede on.
+
+### (Scenario: CFO setting concrete SLA targets for a live vessel-tracking platform) What uptime and response-time targets are actually appropriate for a fleet-tracking platform tracking live vessel movement?
+
+For a platform where scheduling decisions depend on current data, 99.5% or higher uptime with a defined response time under one hour for severity-one incidents is a reasonable baseline, tightened further for any component directly feeding time-critical lock or berth scheduling.
+
+### (Scenario: CFO wanting to confirm cargo and vessel data won't get locked into a proprietary format) What format should our cargo and vessel data be exportable in to avoid a costly extraction project later?
+
+Standard, non-proprietary formats such as CSV or JSON with documented schemas, exportable on demand through a self-service function or API rather than requiring a vendor-run extraction project — the test is whether the CFO's own team could pull a complete data export without needing the vendor's active cooperation.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -128,7 +148,11 @@ No — a written case study is marketing material selected because it presents f
     { "@type": "Question", "name": "(Scenario: CFO who has never asked a vendor about its own financial health) Is it reasonable to ask a software vendor about their own financial stability before signing?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a CFO would routinely check the financial stability of any other critical supplier, and a software vendor building a business-critical platform deserves the same due diligence." } },
     { "@type": "Question", "name": "(Scenario: CFO unfamiliar with source-code escrow) What does source-code escrow actually protect against?", "acceptedAnswer": { "@type": "Answer", "text": "Escrow guarantees a legal path to the current codebase and documentation if the vendor becomes unable to continue the engagement, protecting the business from losing access to a partially built platform." } },
     { "@type": "Question", "name": "(Scenario: CFO reviewing a vendor's proposed SLA language) How do I know if an SLA is a real commitment or just reassuring language?", "acceptedAnswer": { "@type": "Answer", "text": "A real SLA specifies a concrete uptime percentage, defined response times by severity, and financial penalties tied to missed commitments; aspirational language without these specifics commits the vendor to nothing enforceable." } },
-    { "@type": "Question", "name": "(Scenario: CFO relying on a vendor's written case studies) Are written case studies a reliable substitute for speaking to a vendor's past clients directly?", "acceptedAnswer": { "@type": "Answer", "text": "No, a written case study is marketing material selected because it presents favorably, while a direct reference conversation typically surfaces operational details a case study would never include." } }
+    { "@type": "Question", "name": "(Scenario: CFO relying on a vendor's written case studies) Are written case studies a reliable substitute for speaking to a vendor's past clients directly?", "acceptedAnswer": { "@type": "Answer", "text": "No, a written case study is marketing material selected because it presents favorably, while a direct reference conversation typically surfaces operational details a case study would never include." } },
+    { "@type": "Question", "name": "(Scenario: CFO unsure exactly what to request during a vendor's financial due-diligence review) What specific documents should we request from a vendor to actually conduct financial due diligence?", "acceptedAnswer": { "@type": "Answer", "text": "Ask for the KvK extract and most recently filed annual accounts, how many active engagements the team runs relative to headcount, and what share of revenue comes from their three largest clients." } },
+    { "@type": "Question", "name": "(Scenario: CFO negotiating escrow with a vendor that seems reluctant) If a vendor resists agreeing to source-code escrow, is that itself a red flag?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, escrow costs a vendor almost nothing to agree to if they have no intention of ever being unable to deliver, so reluctance is a signal worth weighing rather than a routine negotiating point." } },
+    { "@type": "Question", "name": "(Scenario: CFO setting concrete SLA targets for a live vessel-tracking platform) What uptime and response-time targets are actually appropriate for a fleet-tracking platform tracking live vessel movement?", "acceptedAnswer": { "@type": "Answer", "text": "99.5% or higher uptime with a defined response time under one hour for severity-one incidents is a reasonable baseline, tightened further for components feeding time-critical scheduling." } },
+    { "@type": "Question", "name": "(Scenario: CFO wanting to confirm cargo and vessel data won't get locked into a proprietary format) What format should our cargo and vessel data be exportable in to avoid a costly extraction project later?", "acceptedAnswer": { "@type": "Answer", "text": "Standard, non-proprietary formats such as CSV or JSON with documented schemas, exportable on demand without requiring the vendor's active cooperation." } }
   ]
 }
 </script>

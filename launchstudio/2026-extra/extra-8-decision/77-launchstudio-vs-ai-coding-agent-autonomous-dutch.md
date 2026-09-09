@@ -48,8 +48,7 @@ Dit zijn precies de gebieden waar het Manifera-team van LaunchStudio zich op ric
 
 [Stuur uw prototype — AI-gegenereerd of agent-versterkt — en krijg een menselijke beoordeling van wat er ontbreekt](https://launchstudio.eu/nl/#contact).
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: De Door een Agent Geschreven Code Die Zijn Eigen Tests Doorstond
 
 Ruben Peters, een productdesigner in Utrecht, gebruikte een AI coding agent om zijn met Lovable gebouwde projectmanagementtool WerkStroom "productieklaar" te maken. De agent draaide 45 minuten, produceerde 23 commits en rapporteerde: "Alle beveiligingsverbeteringen toegepast. Tests slagen." De commits bevatten inputvalidatie op formuliervelden, HTTPS-afdwinging en rate limiting op het inlogendpoint.

@@ -70,6 +70,10 @@ You don't need to run through all eight items in a single conversation, and you 
 
 If you're currently finalizing a vendor decision and want a second, independent perspective on the answers you've received, schedule a free consultation with our Amsterdam team — we're happy to help you pressure-test a shortlist even if you ultimately choose to work with someone else.
 
+## Scoring the Checklist: A Simple Weighting System for Non-Technical Founders
+
+Founders comparing two or three finalists often struggle to weigh eight qualitative answers against each other objectively. A simple scoring approach fixes this: score each of the eight checklist items 0 (evasive or vague), 1 (partial, general answer), or 2 (specific, concrete, verifiable answer) during your evaluation calls, for a maximum of 16 points per vendor. In practice, vendors worth signing typically score 11 or higher, with especially strong answers on items 2 (actual team), 3 (scope disagreement process), and 7 (code ownership) — these three carry outsized weight because they're the hardest to fake and the most expensive to get wrong after signing. A vendor scoring below 8 total, or scoring 0 on more than two items, is showing a pattern rather than an isolated weak moment, regardless of how strong their portfolio or day rate looks. Weight items 2, 3, and 7 double when tallying your final score, since a vague answer on team composition, scope handling, or code ownership predicts a specific, expensive failure mode later — a rotating team you never approved, a scope dispute with no defined process, or a code ownership fight when you try to switch vendors. Use this score alongside price and portfolio, not instead of them, to make the final approval decision defensible to a co-founder or board member who wasn't on the calls.
+
 ## Frequently Asked Questions
 
 ### What is technical due diligence for a software vendor?
@@ -86,6 +90,18 @@ High engineer turnover at a vendor makes it difficult to maintain institutional 
 
 ### Should code ownership be specifically addressed during technical due diligence?
 Yes. Your contract should explicitly state that you own all code, documentation, and intellectual property produced under the engagement, reviewed by your own legal counsel, with no ambiguity about reusable components or frameworks the vendor might claim partial ownership over. This is one of the most common gaps founders discover only when trying to switch vendors later.
+
+### (Scenario: Two finalist vendors both score similarly on the eight-item checklist) Is it fine to let price be the deciding factor at that point?
+Yes — once both vendors clear a strong bar on the harder-to-fake items (team composition, scope process, code ownership), price and cultural fit are legitimate tiebreakers rather than compromises. The checklist exists to filter out vendors carrying hidden structural risk, not to identify a single "correct" winner among genuinely comparable finalists.
+
+### (Scenario: A vendor gave you three glowing references immediately but hesitated noticeably when asked for a reference involving a real problem) How much weight should that hesitation carry?
+Treat it as a meaningful signal rather than a disqualifying one — ask a direct follow-up about what happened on their most difficult recent project and how it was resolved, and judge the specificity of that unprompted answer. A vendor who eventually gives a concrete, honest account after initial hesitation is different from one who deflects entirely.
+
+### (Scenario: You're a solo founder without a technical co-founder to evaluate a vendor's answers) How do you compensate for the gap in technical judgment?
+Use the scoring system above almost mechanically — score specificity and confidence rather than technical correctness, since a vendor's willingness to give concrete, verifiable answers is evaluable without a technical background. Consider paying an independent technical advisor for a single two-hour review call before signing a contract above a meaningful budget threshold.
+
+### (Scenario: A vendor's answer to the team-scaling question was vague, but every other checklist item scored strongly) Is this alone a dealbreaker?
+Not on its own — ask a direct follow-up with a specific scenario ("if I needed two more engineers in six weeks, walk me through exactly what happens") before scoring it a zero, since scaling flexibility is sometimes underprepared as a talking point even at otherwise strong vendors. Weight it less heavily than team composition, scope handling, or code ownership when tallying your final decision.
 
 <script type="application/ld+json">
 {
@@ -130,6 +146,38 @@ Yes. Your contract should explicitly state that you own all code, documentation,
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. Your contract should explicitly state that you own all code, documentation, and intellectual property produced under the engagement, reviewed by your own legal counsel, with no ambiguity about reusable components or frameworks the vendor might claim partial ownership over. This is one of the most common gaps founders discover only when trying to switch vendors later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Two finalist vendors both score similarly on the eight-item checklist) Is it fine to let price be the deciding factor at that point?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — once both vendors clear a strong bar on the harder-to-fake items, price and cultural fit are legitimate tiebreakers rather than compromises."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor gave you three glowing references immediately but hesitated noticeably when asked for a reference involving a real problem) How much weight should that hesitation carry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat it as a meaningful signal rather than a disqualifying one — ask a direct follow-up about what happened on their most difficult recent project and judge the specificity of that unprompted answer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: You're a solo founder without a technical co-founder to evaluate a vendor's answers) How do you compensate for the gap in technical judgment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Score specificity and confidence rather than technical correctness, since a vendor's willingness to give concrete, verifiable answers is evaluable without a technical background, and consider a paid independent technical advisor for a single review call."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A vendor's answer to the team-scaling question was vague, but every other checklist item scored strongly) Is this alone a dealbreaker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not on its own — ask a direct follow-up with a specific scaling scenario before scoring it a zero, and weight it less heavily than team composition, scope handling, or code ownership in your final decision."
       }
     }
   ]

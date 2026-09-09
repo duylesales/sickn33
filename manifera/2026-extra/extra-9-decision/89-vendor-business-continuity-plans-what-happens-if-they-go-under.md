@@ -89,6 +89,10 @@ Request our standard business continuity documentation and escrow terms before y
 }
 </script>
 
+## Calculating the Real Cost of a Vendor Failure Without Continuity Protections
+
+Model this as a CFO would model any counterparty default. Without escrow or a transition assistance clause, a mid-engagement vendor collapse typically forces a full rebuild-and-rehire cycle: sourcing a new vendor takes four to eight weeks, that new team needs an additional six to twelve weeks of ramp-up on an undocumented codebase with no institutional knowledge transfer available, and any active sprint work in flight at the moment of collapse is effectively lost. For a mid-sized engagement running $30,000-$60,000 per month in fees, that's roughly three to five months of reduced or zero output — $90,000 to $300,000 in stalled value, before counting the premium of an emergency vendor search conducted from a position of urgency rather than choice. Compare that to escrow costs, typically $2,000-$5,000 annually for a verified, build-tested arrangement, and a transition assistance clause, which costs nothing beyond negotiation time since it only activates on termination. The math isn't close: escrow and transition clauses cost roughly 1-3% of a single year's engagement value to potentially avoid a loss equal to several months of that same spend. Present this comparison explicitly to your board or risk committee rather than assuming the cost-benefit is self-evident — a CFO who quantifies this exposure gets faster sign-off on continuity clauses than one who argues from principle alone.
+
 ## Frequently Asked Questions
 
 ### What is source code escrow and why does a CFO need to require it?
@@ -105,6 +109,18 @@ Watch for unusual eagerness to lock in long upfront payment terms, staff turnove
 
 ### Does a larger vendor automatically carry less business continuity risk?
 Not necessarily. Size matters less than profitability, client base diversification, and low key-person dependency. A smaller, profitable, process-driven vendor can carry lower continuity risk than a larger vendor burning cash toward a funding milestone.
+
+### (Scenario: A prospective vendor resists a source code escrow request, insisting it's unnecessary since they're "well funded") How do you respond?
+Point out that escrow protects against operational failure modes beyond bankruptcy — an acquisition, a leadership dispute, or a sudden restructuring can all disrupt access to your codebase even at a well-capitalized company. Frame the request as standard supplier risk management applied consistently across your vendor portfolio, not a judgment about this specific vendor's finances.
+
+### (Scenario: Mid-contract, your vendor announces they're being acquired by a larger company) What continuity questions should you raise immediately?
+Ask directly whether your named team, project governance, and delivery model will remain intact post-acquisition, request written confirmation that existing contract terms including escrow and transition clauses survive the change of ownership, and ask for advance notice of any infrastructure consolidation the acquiring company plans, since that's a separate risk from the acquisition itself.
+
+### (Scenario: You have a source code escrow agreement in place, but no one has ever verified the deposited code actually builds and runs) What's the practical exposure?
+The exposure is significant — an untested escrow deposit can turn out to be an incomplete or outdated snapshot the day you actually need it, which defeats the purpose of the arrangement entirely. Request the escrow agent run a build verification test at least annually, and require the vendor to certify the deposit is current as part of every renewal cycle.
+
+### (Scenario: Your board wants a single quantified continuity-risk number across your entire vendor portfolio, not just one vendor) How do you build that view?
+Score each vendor against the same financial-health and structural-resilience indicators above, multiply each vendor's estimated failure-cost exposure by a rough probability weighting based on ownership structure and financial signals, and sum the results into a single portfolio-level exposure figure your board can track quarter over quarter alongside other counterparty risk categories.
 
 <script type="application/ld+json">
 {
@@ -149,6 +165,38 @@ Not necessarily. Size matters less than profitability, client base diversificati
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Not necessarily. Size matters less than profitability, client base diversification, and low key-person dependency. A smaller, profitable, process-driven vendor can carry lower continuity risk than a larger vendor burning cash toward a funding milestone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: A prospective vendor resists a source code escrow request, insisting it's unnecessary since they're 'well funded') How do you respond?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Point out that escrow protects against operational failure modes beyond bankruptcy — an acquisition, leadership dispute, or restructuring can all disrupt codebase access even at a well-capitalized company."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Mid-contract, your vendor announces they're being acquired by a larger company) What continuity questions should you raise immediately?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask whether your named team and delivery model remain intact post-acquisition, request written confirmation that existing escrow and transition clauses survive the ownership change, and ask for advance notice of any planned infrastructure consolidation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: You have a source code escrow agreement in place, but no one has ever verified the deposited code actually builds and runs) What's the practical exposure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The exposure is significant — an untested escrow deposit can turn out to be an incomplete or outdated snapshot the day you actually need it, defeating the purpose of the arrangement entirely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Your board wants a single quantified continuity-risk number across your entire vendor portfolio) How do you build that view?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Score each vendor against the same financial-health and structural-resilience indicators, multiply each vendor's estimated failure-cost exposure by a probability weighting, and sum the results into one trackable portfolio-level figure."
       }
     }
   ]

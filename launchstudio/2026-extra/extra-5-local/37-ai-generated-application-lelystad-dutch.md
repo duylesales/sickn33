@@ -94,20 +94,53 @@ Manifera's engineeringteam — 120+ engineers met 160+ opgeleverde enterprise-pr
 ### Hoe lang duurt een volledige beoordeling vóór de lancering?
 De meeste beoordelingen en bijbehorende herstelwerkzaamheden worden binnen één tot twee weken afgerond, afhankelijk van hoeveel punten op de checklist werk vereisen. Beschrijf uw project en we reageren binnen één werkdag.
 
-### Als ik niet alles op de checklist kan herstellen vóór de lancering, waar moet ik dan als eerste prioriteit aan geven?
-Herstel in volgorde van impactbereik (blast radius), en niet van gemak. Beleidsregels voor databasetoegang die de data van elke klant aan elke andere klant zouden kunnen blootstellen moeten bijna altijd op de eerste plaats komen, gevolgd door betalingsverificatie als er al geld van hand tot hand gaat, terwijl punten met een lager risico zoals randgevallen bij authenticatie veilig kort na de lancering afgerond kunnen worden.
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Hoe verschilt een beoordeling van een met AI gegenereerde applicatie van een algemene codebeoordeling?", "acceptedAnswer": { "@type": "Answer", "text": "Het richt zich specifiek op gaten die AI-tools achterlaten, zoals databasebeveiliging, betalingsverificatie en gelijktijdigheid." } },
-    { "@type": "Question", "name": "Kan ik deze checklist zelf doorlopen voordat ik contact opneem met LaunchStudio?", "acceptedAnswer": { "@type": "Answer", "text": "Sommige punten kunnen zelf worden gecontroleerd, maar zaken zoals row-level security vereisen doorgaans de controle van een engineer." } },
-    { "@type": "Question", "name": "Bedient LaunchStudio oprichters buiten Lelystad en Flevoland?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, LaunchStudio werkt met oprichters in heel Nederland en de Benelux vanuit haar hoofdkantoor in Amsterdam." } },
-    { "@type": "Question", "name": "Wie beoordeelt de applicatie tegen deze checklist?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineeringteam van 120+ engineers, met 160+ enterprise-projecten, voert de beoordeling en herstelwerkzaamheden uit." } },
-    { "@type": "Question", "name": "Hoe lang duurt een volledige beoordeling vóór de lancering?", "acceptedAnswer": { "@type": "Answer", "text": "De meeste beoordelingen en herstelwerkzaamheden worden binnen één tot twee weken afgerond, afhankelijk van de omvang." } },
-    { "@type": "Question", "name": "Als ik niet alles kan herstellen vóór de lancering, waar moet ik dan prioriteit aan geven?", "acceptedAnswer": { "@type": "Answer", "text": "Herstel in volgorde van impactbereik. Databasetoegang moet eerst komen, gevolgd door betalingsverificatie als er al transacties zijn." } }
+    {
+      "@type": "Question",
+      "name": "Hoe verschilt een beoordeling van een met AI gegenereerde applicatie van een algemene codebeoordeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het richt zich specifiek op gaten die AI-tools achterlaten, zoals databasebeveiliging, betalingsverificatie en gelijktijdigheid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik deze checklist zelf doorlopen voordat ik contact opneem met LaunchStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sommige punten kunnen zelf worden gecontroleerd, maar zaken zoals row-level security vereisen doorgaans de controle van een engineer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bedient LaunchStudio oprichters buiten Lelystad en Flevoland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, LaunchStudio werkt met oprichters in heel Nederland en de Benelux vanuit haar hoofdkantoor in Amsterdam."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie beoordeelt de applicatie tegen deze checklist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manifera's engineeringteam van 120+ engineers, met 160+ enterprise-projecten, voert de beoordeling en herstelwerkzaamheden uit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt een volledige beoordeling vóór de lancering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste beoordelingen en herstelwerkzaamheden worden binnen één tot twee weken afgerond, afhankelijk van de omvang."
+      }
+    }
   ]
 }
 </script>

@@ -33,9 +33,10 @@ Doelgroep: AI-Native oprichter (Niet-technisch)
 
 "Kunt u mijn account en alles wat ermee samenhangt verwijderen?" is een volkomen redelijk, steeds vaker voorkomend verzoek. Het is ook exact het moment waarop veel AI-privacyproblemen ophouden theoretisch te zijn en een dringend, specifiek probleem worden – omdat "verwijder mijn account" aanzienlijk meer blijkt in te houden dan het verwijderen van één regel uit één tabel. En weinig met AI gebouwde prototypen werden ooit specifiek gevraagd om die complexiteit af te handelen.
 
-## Waarom verzoeken om accountverwijdering meer onthullen dan ze lijken te doen
+## Waarom verzoeken om accountverwijdering meer onthullen dan ze lijken
 
-Een functie voor "account verwijderen" die simpelweg het inlogrecord van een gebruiker verwijdert kan tijdens het testen oprecht compleet voelen – het account verdwijnt, inloggen stopt met werken, klaar. Wat het typisch niet adresseert: de gegevens van de gebruiker die verspreid liggen over andere gerelateerde tabellen – boekingsgeschiedenis, berichten, geüploade documenten, activiteitslogboeken. Niets daarvan wordt aangeraakt door het verwijderen van een enkel accountrecord.
+Een functie voor "account verwijderen" die simpelweg het inlogrecord van een gebruiker uit de database wist, kan tijdens het testen oprecht compleet aanvoelen — het account verdwijnt, inloggen lukt niet meer, klaar. Waar het doorgaans geen rekening mee houdt: de persoonsgegevens van de gebruiker die verspreid liggen over tal van gerelateerde tabellen — boekingsgeschiedenis, verzonden berichten, geüploade documenten en activiteitenlogs — waarvan niets wordt geraakt door het verwijderen van één enkel accountrecord. Een oprichter die deze functie test, controleert natuurlijk de enige belofte die "account verwijderen" visueel maakt — dat het account weg is en niet langer kan inloggen — zonder enige directe aanleiding om na te gaan of een boekingsrecord dat verwijst naar dat zojuist verwijderde account nog onaangeroerd ergens anders in dezelfde database staat.
+
 
 ## Waarom de AVG (GDPR) meer vereist dan een verwijderde inlog
 
@@ -57,6 +58,19 @@ Manifera's gegevensinfrastructuur- en verwijderingswerk wordt geleverd via het o
 
 [Pak een gratis introductiegesprek van 15 minuten](https://launchstudio.eu/nl/#contact).
 
+## In Kaart Brengen Waar Gebruikersgegevens Daadwerkelijk Leven Vóórdat een Verzoek Binnenkomt
+
+Een daadwerkelijke, AVG-conforme gegevensverwijdering begint met een systematische inventarisatie van elke locatie waar de persoonsgegevens van een gebruiker kunnen belanden, en niet alleen van de voor de hand liggende hoofdgebruikerstabel. Voor een typisch door AI gebouwd product moet die inventarisatie doorgaans het volgende omvatten:
+
+1. **De primaire gebruikers- of accounttabel** — het vanzelfsprekende startpunt, en de enige plek die de meeste snel in elkaar gezette verwijderfuncties daadwerkelijk leegmaken.
+2. **Gerelateerde tabellen en koppeltabellen** — boekingen, bestellingen, berichten, reviews en elk ander database-record dat via een foreign key naar de gebruiker verwijst in plaats van direct op het accountrecord te staan.
+3. **Geüploade bestanden en objectopslag** — profielfoto's, scans van identiteitsbewijzen of bijlagen die zijn opgeslagen in een externe cloud-opslag (zoals S3) in plaats van in de hoofddatabase. Een script dat zich alleen op de SQL-database richt, slaat deze bestanden volledig over.
+4. **Integraties met externe diensten** — data die is doorgestuurd naar een e-mailmarketingsysteem, een analyseplatform, een betaalprovider of een klantenservicetool. Elk van deze platforms bewaart een kopie buiten uw eigen systeem en vereist een eigen verwijder- of anonimiseringsverzoek.
+5. **Geautomatiseerde back-ups** — gegevens die zijn vastgelegd in reguliere back-ups die zijn gemaakt vóórdat het verwijderverzoek werd verwerkt. Dit vereist een duidelijk gedocumenteerd bewaarbeleid dat vastlegt na hoeveel dagen back-ups definitief worden overschreven.
+6. **Systeem- en foutenlogs** — serverlogs die per ongeluk persoonsgegevens (zoals een e-mailadres in een querystring of een IP-adres in een foutmelding) hebben vastgelegd als bijeffect van normale monitoring.
+
+Het opstellen van deze datamap is een eenmalige investering die zichzelf direct uitbetaalt zodra er een officieel verwijderverzoek binnenkomt, in plaats van dat er onder tijdsdruk handmatig gezocht moet worden. Het is ook iets dat actueel moet blijven wanneer een nieuwe functie een nieuwe opslaglocatie voor gebruikersdata introduceert.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Het verwijderverzoek dat niet volledig verwijderde
@@ -76,25 +90,25 @@ Een gebruiker die om volledige accountverwijdering vroeg vanwege algemene privac
 
 ## Veelgestelde vragen
 
-### Zou een specialist in gegevensbescherming dit beschouwen als een veelvoorkomende kloof?
+### Waarom volstaat het uitvoeren van een `DELETE FROM users WHERE id = ?` query niet voor een echt AVG-verwijderverzoek?
 
-Zeer veelvoorkomend – uitgebreide gegevensverwijdering vereist een niveau van systematische gegevensinrichting dat zelden van nature gebeurt tijdens snelle, op functies gerichte ontwikkeling.
+Omdat een moderne applicatie gebruikersgegevens verspreidt over talloze secundaire tabellen (zoals orders, auditlogs, chatberichten), externe clouddiensten (zoals e-mailsoftware en betalingsverwerkers) en geüploade bestanden in objectopslag. Al die locaties moeten worden meegenomen.
 
-### Geldt dit alleen voor producten die in de EU actief zijn vanwege de AVG?
+### Wat gebeurt er met gegevens van een verwijderde gebruiker die nog aanwezig zijn in database-backups?
 
-Het geldt het meest rechtstreeks voor producten die de EU bedienen vanwege specifieke wettelijke vereisten, hoewel het oprecht en uitgebreid verwijderen van gegevens op verzoek een steeds meer verwachte praktijk is.
+De AVG erkent dat het direct overschrijven van historische back-up-tapes technisch disproportioneel kan zijn. De richtlijn vereist echter dat er een duidelijk gedocumenteerd retentiebeleid is (waarbij back-ups na bijvoorbeeld 30 of 90 dagen definitief vervallen) en dat data niet opnieuw wordt hersteld als een back-up wordt teruggezet.
 
-### Maakt ervaring met gereguleerde gegevensarchitectuur uit voor een kleinere consumenten-app?
+### Hoe helpt Manifera bedrijven bij het inrichten van AVG-conforme data-architecturen?
 
-Ja, rechtstreeks – de discipline van het systematisch in kaart brengen van waar persoonlijke gegevens daadwerkelijk leven is een overdraagbare praktijk.
+Manifera ontwerpt systematische datamaps en geautomatiseerde anonimiserings- en verwijderingspipelines. Hierdoor kunnen organisaties met één druk op de knop persoonsgegevens wissen of anonimiseren over alle databases en aangesloten externe API's heen.
 
-### Weerspiegelt dit de kloof tussen architectuur en functiesnelheid?
+### Mag een bedrijf bepaalde gebruikersgegevens bewaren, zelfs na een expliciet verwijderverzoek?
 
-Precies – gegevensverwijdering is fundamenteel een architecturale taak over een heel systeem in plaats van een enkele functie om te bouwen.
+Ja, gegevens die wettelijk verplicht bewaard moeten blijven (zoals facturen en transactiegegevens voor de Belastingdienst, doorgaans 7 jaar) mogen en moeten worden bewaard, mits ze worden geïsoleerd en uitsluitend voor dat wettelijke doel worden gebruikt.
 
-### Is het de moeite waard om dit proactief aan te pakken voordat er een verzoek binnenkomt?
+### Wat is de maximale termijn om te reageren op een officieel AVG-verzoek tot gegevenswissing?
 
-Het proactief aanpakken is aanzienlijk eenvoudiger dan er reactief op te reageren, aangezien wettelijke termijnen voor reactie echte tijdsdruk creëren zodra er een daadwerkelijk verzoek binnenkomt.
+Onder de AVG moet een organisatie zonder onnodige vertraging en in elk geval binnen één maand na ontvangst van het verzoek reageren en actie ondernemen. Bij complexe verzoeken kan deze termijn met twee maanden worden verlengd, mits de gebruiker hiervan tijdig op de hoogte wordt gesteld.
 
 <script type="application/ld+json">
 {
@@ -103,50 +117,42 @@ Het proactief aanpakken is aanzienlijk eenvoudiger dan er reactief op te reagere
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Yêu cầu xóa tài khoản (Delete Account) theo chuẩn GDPR đòi hỏi những gì?",
+      "name": "Waarom volstaat het uitvoeren van een `DELETE FROM users WHERE id = ?` query niet voor een echt AVG-verwijderverzoek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yêu cầu xóa sạch hoặc ẩn danh toàn bộ dữ liệu cá nhân (lịch sử giao dịch, tin nhắn, file upload, log) chứ không chỉ đơn thuần là xóa dòng user trong bảng Accounts."
+        "text": "Omdat een moderne applicatie gebruikersgegevens verspreidt over talloze secundaire tabellen (zoals orders, auditlogs, chatberichten), externe clouddiensten (zoals e-mailsoftware en betalingsverwerkers) en geüploade bestanden in objectopslag. Al die locaties moeten worden meegenomen."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao tính năng xóa tài khoản do AI viết lại thường bị thiếu sót?",
+      "name": "Wat gebeurt er met gegevens van een verwijderde gebruiker die nog aanwezig zijn in database-backups?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì AI chỉ viết lệnh delete từ bảng users chính, không tự động truy quét toàn bộ các bảng liên quan (booking, message, notification)."
+        "text": "De AVG erkent dat het direct overschrijven van historische back-up-tapes technisch disproportioneel kan zijn. De richtlijn vereist echter dat er een duidelijk gedocumenteerd retentiebeleid is (waarbij back-ups na bijvoorbeeld 30 of 90 dagen definitief vervallen) en dat data niet opnieuw wordt hersteld als een back-up wordt teruggezet."
       }
     },
     {
       "@type": "Question",
-      "name": "Dữ liệu người dùng thường nằm rải rác ở những đâu ngoài Database?",
+      "name": "Hoe helpt Manifera bedrijven bij het inrichten van AVG-conforme data-architecturen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nằm ở các File Upload (S3/Cloud Storage), các công cụ bên thứ 3 (Email marketing, Analytics), Bản sao lưu (Backups) và Server Logs."
+        "text": "Manifera ontwerpt systematische datamaps en geautomatiseerde anonimiserings- en verwijderingspipelines. Hierdoor kunnen organisaties met één druk op de knop persoonsgegevens wissen of anonimiseren over alle databases en aangesloten externe API's heen."
       }
     },
     {
       "@type": "Question",
-      "name": "Không ở Châu Âu (không dính GDPR) thì có cần làm chuẩn tính năng xóa dữ liệu không?",
+      "name": "Mag een bedrijf bepaalde gebruikersgegevens bewaren, zelfs na een expliciet verwijderverzoek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rất nên làm — tôn trọng quyền riêng tư là tiêu chuẩn chung tạo niềm tin cho người dùng toàn cầu hiện nay."
+        "text": "Ja, gegevens die wettelijk verplicht bewaard moeten blijven (zoals facturen en transactiegegevens voor de Belastingdienst, doorgaans 7 jaar) mogen en moeten worden bewaard, mits ze worden geïsoleerd en uitsluitend voor dat wettelijke doel worden gebruikt."
       }
     },
     {
       "@type": "Question",
-      "name": "Nên xử lý việc xóa dữ liệu pro-active hay chờ có user yêu cầu mới làm?",
+      "name": "Wat is de maximale termijn om te reageren op een officieel AVG-verzoek tot gegevenswissing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nên quy hoạch luồng xóa (Data Mapping) trước để tránh bị cuống và vi phạm thời hạn xử lý khi có yêu cầu thực tế."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Thời gian xây dựng quy trình Data Erasure chuẩn mất bao lâu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Thường hoàn thành trong 5-7 ngày làm việc bao gồm cả bước truy vết toàn bộ sơ đồ cơ sở dữ liệu."
+        "text": "Onder de AVG moet een organisatie zonder onnodige vertraging en in elk geval binnen één maand na ontvangst van het verzoek reageren en actie ondernemen. Bij complexe verzoeken kan deze termijn met twee maanden worden verlengd, mits de gebruiker hiervan tijdig op de hoogte wordt gesteld."
       }
     }
   ]

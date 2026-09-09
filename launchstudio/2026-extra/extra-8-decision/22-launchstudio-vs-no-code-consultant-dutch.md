@@ -63,8 +63,7 @@ De uitzondering die het vermelden waard is, is wanneer het featurewerk zelf gevo
 
 [Beschrijf wat er echt niet werkt](https://launchstudio.eu/nl/#contact) — een korte scoping call identificeert doorgaans binnen enkele minuten of de fix een no-code workflow is of een backend hardening-slag.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### De Verkeerde Helper Eerst Inhuren
 
 Iris Dekker, een voormalig restaurantmanager in Maastricht, bouwde MenuMind, een v0-gegenereerde tool die automatisch wekelijkse menuplannen genereert voor kleine restaurants op basis van seizoensingrediënten en dieetbeperkingen. Toen bèta-restaurants meldden dat de ene locatie af en toe de leveranciersprijzen van een andere locatie kon zien, ging Iris ervan uit dat het probleem in de workflowconfiguratie zat en huurde ze een no-code consultant in om MenuMinds automatiseringslogica te bekijken.

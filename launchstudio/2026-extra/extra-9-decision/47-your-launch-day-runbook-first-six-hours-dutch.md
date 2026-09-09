@@ -132,7 +132,7 @@ Zes uur gestructureerd vliegen op instrumenten, vier actieve dashboards en drie 
 
 Plan een voorbereidend gesprek vóór uw lanceringsweek in plaats van halverwege de chaos — een uur vooraf investeren in uw draaiboek levert oneindig veel meer op dan een paniekoverleg om 14:20 uur.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Scale-Up in Actie: Vijf Uur Onzichtbare Uitval Voorkomen
 

@@ -46,8 +46,7 @@ Oprichters onderschatten hun eigen tijdlijn consequent in de ene richting en ove
 
 [Krijg uw daadwerkelijke tijdlijn, geen gok](https://launchstudio.eu/nl/#contact) — een kort scopinggesprek regelt doorgaans in minuten wat een oprichter alleen weken kan blijven betwijfelen.
 
-## Real example
-
+## Echt voorbeeld
 ### Een SaaS-Oprichter in de Praktijk: De Verrassing van Drie Dagen
 
 Quirijn Baas, een accountant die oprichter werd in Zwolle, bouwde FactuurFlow, een facturatie- en uitgaventool voor kleine Nederlandse bedrijven, met Bolt. Quirijn ging ervan uit dat FactuurFlow de volledige opdracht van drie weken nodig zou hebben die hij had zien gequoteerd voor de complexere marktplaats-app van een vriend — zijn product oogde, naar eigen zeggen, "minstens zo ingewikkeld" van buitenaf, met een dashboard, terugkerende facturatie en PDF-generatie die allemaal soepel werkten in zijn eigen tests.

@@ -33,16 +33,20 @@ Dit ene fundamentele verschil breekt stilzwijgende aannames op drie niveaus tege
 In vroege prototypes merkt de ontwikkelaar hier niets van: hij test met korte voorbeeldzinnetjes en heeft het nodige geduld. 
 In productie leidt dit echter tot mysterieuze storingen die ten onrechte worden toegeschreven aan *"fouten in het AI-model"*, terwijl het in werkelijkheid pure time-out-problemen in de netwerkinfrastructuur zijn.
 
+
 ## Wie Bepaalt de Time-out? (De Kortste Wint Áltijd)
 
-Er is in een webarchitectuur zelden sprake van één time-out. Er zijn er meerdere, en **de kortste limiet in de keten trekt altijd aan het langste eind**:
+Er is in een webarchitectuur zelden sprake van één enkele time-out. Er zijn er meerdere, en de kortste limiet in de keten trekt altijd aan het langste eind.
 
-- **Het Serverless Platform:** Vaak begrensd op 10, 15 of maximaal 60 seconden.
-- **De Reverse Proxy / Load Balancer:** Cloudflare hanteert standaard een time-out van 100 seconden op HTTP-verzoeken.
-- **Het Geduld van de Gebruiker:** Dit is de échte bottleneck. Na 8 tot 10 seconden zonder enige visuele feedback verliest 70% van de gebruikers zijn geduld.
+**Het hostingplatform** beëindigt HTTP-verzoeken meedogenloos na een vaste periode — gebruikelijk tussen de 10 en 60 seconden op moderne serverless platforms (zoals Vercel of AWS Lambda). Soms is dit configureerbaar, maar vaak ook niet. Dit is de valkuil waar de meeste teams intrappen, omdat de limiet volledig onzichtbaar blijft totdat een zware AI-aanroep deze overschrijdt.
 
-Twee onontkoombare conclusies:
-Iedere AI-bewerking die potentieel langer duurt dan 15 seconden **kan niet als een standaard synchroon HTTP-verzoek worden uitgevoerd**. En de menselijke perceptie — niet de technische serverlimiet — moet bepalen hoe u de gebruikersinterface ontwerpt.
+**Elke reverse proxy of load balancer** vóór uw applicatie (zoals Cloudflare of AWS ALB) hanteert zijn eigen strikte limiet (bijvoorbeeld 100 seconden), waarna de verbinding zonder pardon wordt verbroken met een 504 Gateway Timeout.
+
+**De browser** verbreekt een verzoek dat langere tijd helemaal niets retourneert, en een mobiele gebruiker op een wankele 4G/5G-verbinding verliest de connectie vaak nog veel sneller.
+
+**De klant zelf** geeft het echter al lang vóór al deze technische limieten op. Acht tot tien seconden staren naar een statische spinner zonder enige visuele verandering is het moment waarop mensen opnieuw gaan klikken, de pagina vernieuwen, wegnavigeren of simpelweg concluderen dat uw product kapot is.
+
+Hieruit volgen twee onontkoombare conclusies. Alles wat potentieel langer duurt dan de harde limiet van uw hostingplatform kan onmogelijk binnen een standaard synchroon HTTP-verzoek draaien, ongeacht uw voorkeur. En het geduld van de klant — niet de serverconfiguratie — is de échte ontwerprandvoorwaarde die de architectuur van uw gebruikerservaring moet dicteren.
 
 ## Streaming Lost de Perceptie Op, Niet de Totale Duur
 
@@ -58,36 +62,44 @@ Bovendien houdt de continue stroom aan datatoken de HTTP-verbinding actief, waar
 - **Zeer Zware Taken:** Processen die minuten duren (zoals het analyseren van een dataset met 500 rijen) horen nooit een live browserverbinding open te houden.
 - **Achtergrondverwerking:** Zaken waar de gebruiker niet actief naar zit te kijken.
 
+
 ## Wanneer Moet het een Asynchrone Achtergrondtaak Worden?
 
-De ontwerpregel is glashelder:
-> **Als een bewerking langer kan duren dan 20 seconden, of als de klant tijdens het wachten redelijkerwijs iets anders kan gaan doen, hoort de taak thuis in een Background Job Queue.**
+De ontwerpregel is glashelder: als een bewerking de time-outlimiet van het hostingplatform zou kunnen overschrijden, of als de klant tijdens het wachten redelijkerwijs iets anders kan gaan doen, hoort de taak thuis in een asynchrone achtergrondtaak (*background job*).
 
-Het patroon is klassiek en beproefd:
-1. De browser stuurt het brondocument op.
-2. Uw API accepteert het verzoek direct met een HTTP `202 Accepted` status en retourneert een uniek `job_id`.
-3. Een dedicated background worker (zoals BullMQ, Celery of Temporal) pakt de taak op en handelt de zware LLM-aanroepen af.
-4. De frontend toont een nette statusbalk en pollt periodiek (of luistert via WebSockets) naar updates.
+Dat patroon is al decennialang beproefd bij import- en exportfunctionaliteiten: accepteer het verzoek, retourneer direct een status HTTP 202 met een unieke taak-ID, verwerk het werk in een dedicated achtergrondwerker, en breng de gebruiker op de hoogte zodra het klaar is. De klant ziet een wachtrijstatus, vervolgens voortgang, en uiteindelijk het resultaat — en kan zonder enig risico zijn browsertabblad sluiten of zijn laptop dichtklappen. Dat is de eigenschap die er het allermeest toe doet voor elke bewerking die meer dan enkele seconden in beslag neemt.
 
-**De allergrootste winst:** De klant kan zijn laptop dichtklappen of het tabblad sluiten. Wanneer hij een uur later terugkeert, staat het geanalyseerde rapport kant-en-klaar op hem te wachten in zijn dashboard.
+Dit geldt voor een complete categorie van AI-functionaliteiten: het analyseren van omvangrijke documenten, het genereren van data voor elke rij in een tabel, workflows met meerdere sequentiële modelaanroepen, en elke taak waarbij de output een downloadbaar bestand (PDF, CSV) is in plaats van directe schermtekst.
 
-Twee cruciale details:
-- **Toon Reële Voortgang:** Toon *"Pagina 18 van 45 analyseren..."* in plaats van een oneindig draaiend cirkeltje. Een langere wachttijd mét een getal voelt aanzienlijk korter dan een kortere wachttijd zonder enige informatie.
-- **Sla Resultaten Persistent Op:** Zorg dat voltooid werk nooit verloren gaat als de gebruiker per ongeluk wegnavigeert.
+Twee cruciale details maken hierbij het verschil tussen een achtergrondtaak die helpt en een die frustreert. **Toon betekenisvolle voortgang** — *"Pagina 12 van 40 verwerken..."* in plaats van een oneindige animatie — want een grenzeloze wachttijd zonder cijfers voelt veel zwaarder dan een langere wachttijd mét een getal. En **zorg dat het resultaat persistent wordt opgeslagen**, zodat een klant die een uur later terugkeert zijn document kant-en-klaar aantreft, in plaats van te moeten ontdekken dat al het werk verloren ging bij het wegnavigeren.
 
-## Annuleren Zonder Geld te Verspillen
+Het bouwen van AI-functies die platformlimieten respecteren, streamen waar het nuttig is en migreren naar achtergrondtaken waar dat noodzakelijk is, is gewoon degelijk production-grade software-ontwerp. Het is tevens de meest voorkomende faalfactor bij haastig in elkaar geklikte AI-prototypes waar zware modelaanroepen rechtstreeks in de synchrone request-handler zijn geplaatst. LaunchStudio, ondersteund door meer dan 11 jaar enterprise engineering-ervaring bij Manifera, structureert deze verwerkingspaden zodat ze vlekkeloos blijven presteren onder reële piekbelasting. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een grondige architectuur-review binnen één werkdag.
 
-Twee randgevallen die in prototypes vrijwel altijd vergeten worden:
+## Annuleren en Foutafhandeling Zonder Werk te Verliezen
 
-### 1. De Klant Annuleert de Generatie
-Biedt u een "Stop"-knop aan? Zorg dan dat deze via een `AbortController` daadwerkelijk de netwerkverbinding naar OpenAI of Anthropic direct verbreekt! Doet u dit niet, dan verbergt uw frontend de tekst weliswaar, maar blijft het model op de achtergrond rustig duizenden betaalde tokens genereren op uw creditcard.
+Er zijn twee cruciale uitzonderingstoestanden waar prototypes doorgaans dramatisch mee omgaan.
 
-### 2. Raak Nooit de Input van de Klant Kwijt
-Niets wekt zoveel woede bij gebruikers op als een lang document of een zorgvuldig getypte prompt die na een time-outfout spoorloos verdwenen is uit het invoerveld. Bewaar de invoer altijd in de lokale applicatiestatus of browseropslag (*localStorage*).
+**De klant annuleert de actie of verlaat de pagina.** Een gebruiker moet een generatie op elk gewenst moment kunnen stoppen. En dat stoppen moet ook daadwerkelijk de achterliggende modelaanroep onmiddellijk beëindigen via een , in plaats van het proces stilletjes door te laten draaien op uw creditcard bij de modelprovider. Omgekeerd moet een klant die zijn tabblad sluit tijdens een achtergrondtaak het voltooide resultaat gewoon kunnen terugvinden bij terugkomst: voor die rekentijd is immers al betaald en er is geen enkele reden om de uitkomst weg te gooien.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in robuuste cloud-architecturen) richten we asynchrone job-queues, SSE-streaming en fouttolerante interfaces in tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-verwerkingsarchitectuur met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat zware analyses vlekkeloos draaien.
+**De aanroep faalt halverwege.** Model-API's retourneren fouten, rate-limits en incidentele interne time-outs. Voer bij tijdelijke netwerkfouten automatisch één retry uit met een korte exponentiële back-off. Maak daarbij een scherp onderscheid tussen een rate-limit (die moet wachten en opnieuw proberen) en een ongeldig verzoek of validatiefout (die voor eeuwig identiek zal blijven falen). En laat een gebruiker nooit achter met een spinner die oneindig blijft draaien omdat de foutafhandeling simpelweg niet is geïmplementeerd — een eerlijke foutmelding met een duidelijke knop "Opnieuw proberen" is oneindig veel beter.
 
-## Praktijkvoorbeeld
+Time-outs aan uw eigen kant vragen om een bewuste beslissing: stel een eigen harde tijdslimiet in voor hoe lang uw backend op een model wacht — altijd korter dan de hosting- of proxylimiet. Daarmee houdt u zélf de regie over de foutafhandeling, in plaats van dat uw proces halverwege bot wordt afgekapt door de infrastructuur zonder dat er iets gelogd of opgeslagen wordt.
+
+## Ontwerp de Wachttijd Zélf
+
+Naast de onderliggende technische mechanica bepaalt vooral het ontwerp van de interface tijdens het wachten hoe lang die wachttijd voor de gebruiker daadwerkelijk aanvoelt.
+
+**Benoem specifiek wat er gebeurt.** *"Document inlezen..."*, gevolgd door *"Samenvatting opstellen..."* is materieel veel beter dan een generiek laadwieltje. Het toont immers feitelijke voortgang in plaats van die slechts te veronderstellen.
+
+**Geef een eerlijke verwachting vooraf.** De mededeling *"Dit duurt doorgaans ongeveer 20 seconden"* voorkomt effectief dat een klant bij seconde acht al concludeert dat er iets misgaat.
+
+**Laat de gebruiker ondertussen iets anders doen.** Een asynchrone achtergrondtaak met een notificatie bij afronding is duizend keer prettiger dan een blokkerende pop-upmodal die de hele applicatie bevriest.
+
+**Raak nooit de invoer van de klant kwijt.** Mocht een generatie onverhoopt toch mislukken, dan moet de door de gebruiker ingevoerde prompt of tekst ongewijzigd in het invoerveld blijven staan. Het kwijtraken van een zorgvuldig geformuleerde instructie omdat een API-aanroep time-outte, is een ogenschijnlijk klein incident dat tot buitenproportioneel veel frustratie leidt.
+
+En waar een sneller resultaat van lagere kwaliteit direct beschikbaar is, kunt u overwegen dat eerst te tonen en vervolgens te verfijnen — bijvoorbeeld een ruw uittreksel in een halve seconde tonen terwijl het model op de achtergrond een diepere analyse genereert. Of dat passend is, hangt af van de specifieke feature; wanneer dat zo is, neemt het de wachttijdbeleving nagenoeg volledig weg.
+
+## Echt voorbeeld
 
 ### De Feature Die Alleen Werkte bij Korte Contracten
 
@@ -111,6 +123,7 @@ Ongeveer 22% van alle geüploade documenten strandde op deze manier. Nora dacht 
 > — **Nora Bakkali, Oprichter, Contractlens**
 
 **Kosten & Doorlooptijd:** Asynchrone queue-architectuur, progress tracking en timeout-mitigatie opgeleverd in 3 werkdagen.
+
 
 ## Veelgestelde Vragen
 

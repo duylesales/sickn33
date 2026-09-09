@@ -140,7 +140,7 @@ Granulaire toegang is geen kwestie van wantrouwen; het is een ontwerpkeuze die u
 
 **Wilt u uw huidige rollen en permissies laten controleren door engineers die dagelijks AI-gegenereerde software doorlichten? Neem contact op met LaunchStudio: we kijken graag met u mee.**
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een Indie Hacker in Actie: De Sleutel Die Acht Maanden Actief Bleef
 

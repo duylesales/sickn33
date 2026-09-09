@@ -69,7 +69,7 @@ Elke bovenstaande fase steunt op één randvoorwaarde: één enkel "break-glass"
 
 [Bespreek met een software engineer die AI-gegenereerde code doorgrondt](https://launchstudio.eu/nl/#contact) wat uw specifieke softwarestack nodig heeft in een break-glass-document — de meeste solo-oprichters missen zonder het te weten minstens twee van de vijf bovenstaande fasen.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Het Eerste Echte Incident van een Solo Indie Hacker: De Gelekte API-sleutel in een Publieke Repo
 

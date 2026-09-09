@@ -57,15 +57,18 @@ Manifera's beoordelingen van frontend-beveiliging worden uitgevoerd door het eng
 
 [Haal uw project door onze prijscalculator](https://launchstudio.eu/nl/#calculator).
 
-## Een gids voor niet-technische oprichters om dit zelf te spotten
+## Een Gids voor Niet-Technische Oprichters om Dit Zelf te Signaleren
 
-Een oprichter zonder beveiligingsachtergrond kan nog steeds een globale, veilige eerste controle uitvoeren op zijn eigen website voordat hij een professionele beoordeling inschakelt.
+Een oprichter zonder achtergrond in beveiliging kan nog steeds een ruwe, veilige eerste controle uitvoeren op zijn eigen website voordat er een professionele audit plaatsvindt. Het zal niet zo grondig zijn als een volwaardige inspectie, maar het haalt de meest voor de hand liggende gevallen er direct uit.
 
-**Een veilige manier met laag risico om elk openbaar inzendingsveld te testen:**
+**Een veilige manier met laag risico om elk openbaar invoerveld te testen:**
 
-- Dien normaal uitziende tekst in het veld in die een duidelijke markering bevat, zoals `<b>test</b>`, in een reactie- of beoordelingsveld dat u beheert.
-- Bekijk de pagina waar die inzending weer wordt getoond. Als het woord "test" vetgedrukt verschijnt in plaats van dat de letterlijke tekens `<b>test</b>` als platte tekst verschijnen, renderst het veld ingediende HTML in plaats van het te escapen.
-- Herhaal dit op elk afzonderlijk soort openbaar invoerveld op de site.
+- Voer gewone tekst in het veld in die een kenmerkende opmaakmarkering bevat, zoals `<b>test</b>`, in een reactie-, review- of bio-veld dat u beheert.
+- Bekijk de pagina waar die inzending vervolgens wordt weergegeven. Als het woord "test" vetgedrukt verschijnt in plaats van dat de letterlijke tekens `<b>test</b>` als platte tekst worden getoond, rendert het veld ingediende HTML in plaats van het te escapen — een krachtig signaal dat hetzelfde veld ook een daadwerkelijk kwaadaardig script zou uitvoeren, en niet alleen onschuldige vetgedrukte opmaak.
+- Herhaal dit op elk afzonderlijk type openbaar invoerveld op de site — getuigenissen, reacties, profielbiografieën en bijschriften bij bestandsuploads gedragen zich vaak verschillend van elkaar, zelfs op dezelfde site, omdat elk veld op een ander moment of door een ander onderliggend component kan zijn gebouwd.
+- Als u zelfs maar één veld vindt dat ruwe opmaak op deze manier rendert, behandel dan elk soortgelijk veld op de site als verdacht totdat een grondige controle het tegendeel bevestigt, in plaats van aan te nemen dat het probleem beperkt is tot het ene veld dat u toevallig heeft getest.
+
+Deze test gebruikt met opzet een onschuldige opmaaktag, zodat een oprichter dit veilig kan uitvoeren op zijn eigen live site zonder enig risico om daadwerkelijk iets schadelijks te activeren. Het is een waardevol eerste signaal, geen vervanging voor de grondigere analyse van een toegewijde audit — een test die door een oprichter wordt uitgevoerd vangt alleen de meest directe, zichtbare versie van het probleem op, terwijl een professionele beoordeling controleert op subtielere variaties die eenvoudigere verdedigingen omzeilen.
 
 ## Echt voorbeeld
 
@@ -157,6 +160,55 @@ Sommige wel, maar de dekking varieert aanzienlijk, en een menselijke beoordeling
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Có thể bắt được một số trường hợp đơn giản, nhưng kiểm tra thủ công bởi chuyên gia vẫn chính xác hơn."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Zou een specialist in frontend-beveiliging opslag-cross-site scripting beschouwen als een zeldzame kwetsbaarheid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, het is eigenlijk een van de langst bestaande en meest welbekende kwetsbaarheidsklassen in webontwikkeling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Voorkomt het gebruik van een modern framework zoals React of Next.js dit automatisch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het vermindert het risico aanzienlijk bij de standaardinstellingen, maar de bescherming kan nog steeds omzeild worden door specifieke API's die rauwe HTML injecteren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is deze kwetsbaarheid specifiek voor portfolio-websites van kleine bedrijven?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het beïnvloedt elke applicatie met door gebruikers gegenereerde inhoud die aan andere gebruikers wordt getoond, ongeacht de grootte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Maakt ervaring met meerdere frontend-frameworks uit voor het opvangen van dit probleem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, aangezien elk framework zijn eigen specifieke patronen en valkuilen rond het escapen van inhoud heeft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zou dit soort kloof automatisch opgevangen zijn door een geautomatiseerde code-scanning tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sommige wel, maar de dekking varieert aanzienlijk, en een menselijke beoordeling blijft betrouwbaarder voor minder duidelijke variaties."
       }
     }
   ]

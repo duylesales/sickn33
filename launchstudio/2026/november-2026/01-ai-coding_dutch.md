@@ -100,7 +100,7 @@ Uw applicatie verhuist van een lokale omgeving naar een professionele productie-
 
 AI coding heeft u de perfecte vliegende start gegeven. Professionele engineering en architectuur zorgen ervoor dat u daadwerkelijk de finishlijn behaalt. [Bereken direct de exacte investering voor uw project](https://launchstudio.eu/#calculator) met onze online prijscalculator, of [plan een vrijblijvend adviesgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) om uw prototype te bespreken met onze experts.
 
-## Belangrijkste Inzichten
+### Belangrijkste inzichten
 
 - AI coding tools genereren in recordtijd aantrekkelijke interfaces, maar laten kritieke backend-architectuur, Row Level Security en server-side validatie standaard achterwege.
 - Ongeveer 45% van alle AI-gegenereerde software bevat ernstige beveiligingslekken doordat taalmodellen optimaliseren voor werking in plaats van defensieve beveiliging.

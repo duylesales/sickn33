@@ -61,6 +61,19 @@ Manifera's engineering voor concurrency en databasevergrendeling wordt geleverd 
 
 [Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/nl/#calculator).
 
+## Andere Plekken Waar Ditzelfde Foutpatroon Zich Verbergt Buiten Boekingen
+
+Race conditions zijn niet uniek voor kamer- en bureaureserveringen — hetzelfde patroon van "eerst controleren, dan handelen" (check-then-act) duikt overal op waar een beperkte bron kan worden geclaimd. Het herkennen van dit patroon helpt een oprichter om het te signaleren op plekken die helemaal niet op een boekingssysteem lijken.
+
+**Veelvoorkomende plekken waar dit exacte patroon verschijnt:**
+
+- **Kortings- en couponcodes** — een promotie van het type "beperkt tot de eerste 100 klanten" die wordt gecontroleerd en vervolgens toegepast als twee afzonderlijke stappen, kan ruim boven de 100 keer worden verzilverd als er voldoende verzoeken vlak na elkaar binnenkomen. Elk verzoek kan immers slagen voor de controle op het aantal voordat een ervan klaar is met het ophogen van de teller.
+- **Betaal- en afrekenstromen** — een knop "betaling verzenden" waar twee keer snel achter elkaar op wordt geklikt, hetzij door een ongeduldige klant of door een automatische netwerkhertoetsing, kan leiden tot dubbele afschrijvingen als het systeem de inzending niet als één enkele, beschermde transactie behandelt.
+- **Voorraadaantallen** — een e-commerceproduct met een beperkte voorraad, waarbij het controleren en verlagen als afzonderlijke stappen plaatsvindt, kan oververkocht raken op exact dezelfde manier als een vergaderruimte dubbel geboekt kan worden, met exact dezelfde onderliggende oorzaak.
+- **Registratie van gebruikersnamen of handles** — twee registraties voor dezelfde unieke gebruikersnaam die vlak na elkaar binnenkomen, kunnen beide slagen als de uniekheid wordt gecontroleerd voordat een van beide registraties daadwerkelijk wordt vastgelegd in de database. Dit laat de database achter in een inconsistente staat die achteraf vaak pijnlijk lastig op te schonen is.
+
+De technische oplossing is consistent over al deze scenario's: het mechanisme dat ervoor zorgt dat een boekingscontrole en vastlegging atomair plaatsvinden, werkt op precies dezelfde manier voor het verzilveren van coupons of het verlagen van voorraad. Een oprichter die dit patroon één keer heeft laten herstellen in een specifiek deel van zijn product, moet nog steeds expliciet vragen of dezelfde correctie overal elders is toegepast waar dezelfde vorm van het probleem kan optreden — een audit die uitsluitend is gericht op "de boekingsstroom" kan een identieke, onaangeroerde bug direct ernaast in de afrekenstroom achterlaten.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: Het bureau dat twee keer werd geboekt door twee verschillende mensen
@@ -107,50 +120,42 @@ Uiterst onwaarschijnlijk, aangezien echte gelijktijdigheid niet op een natuurlij
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Lỗi Race Condition (trùng lịch/trùng đơn) có phổ biến không?",
+      "name": "Zou een database-ingenieur dit soort race condition beschouwen als een veelvoorkomende categorie van bugs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rất phổ biến trong hệ thống có nhiều người dùng đồng thời, đây là lỗi kinh điển khi logic check-availability và create-booking tách rời nhau."
+        "text": "Ja, extreem welbekend – race conditions rond controleer-en-acteer-volgordes zijn een van de klassieke categorieën in gelijktijdige systemen in het algemeen."
       }
     },
     {
       "@type": "Question",
-      "name": "Lỗi này có chỉ xuất hiện ở ứng dụng đặt phòng/đặt lịch không?",
+      "name": "Is deze bug specifiek voor boekingssystemen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, nó xuất hiện ở mọi ứng dụng có tài nguyên giới hạn như bán vé, mã giảm giá limited, hay quản lý kho hàng."
+        "text": "Het verschijnt overal waar een beperkte bron wordt gecontroleerd en vervolgens geclaimd als twee afzonderlijke stappen – voorraadsystemen, kaartverkoop, of zelfs gebruikersnaamregistratie."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao khi test một mình founder không bao giờ phát hiện ra lỗi này?",
+      "name": "Maakt ervaring met grotere productiesystemen deze herstelling sneller?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì khi test một mình các thao tác diễn ra tuần tự, trong khi race condition chỉ xảy ra khi 2 request gửi lên cùng một milisecond."
+        "text": "Ja, rechtstreeks – concurrency-veilige ontwerppatronen zijn een standaard, herhaalbaar onderdeel van de engineering-praktijk."
       }
     },
     {
       "@type": "Question",
-      "name": "Giải pháp kỹ thuật chuẩn nhất để fix triệt để lỗi double-booking là gì?",
+      "name": "Wat is de beste manier om te voorkomen dat twee verzoeken hetzelfde id dubbel claimen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sử dụng Atomic Database Transaction và Row-Level Locking (như SELECT FOR UPDATE) ở tầng database."
+        "text": "Het gebruik van atomaire database-transacties (zoals `SELECT ... FOR UPDATE` in SQL) om het record tijdelijk te vergrendelen totdat de transactie is afgerond."
       }
     },
     {
       "@type": "Question",
-      "name": "Sửa lỗi Race Condition ở backend có làm đổi giao diện người dùng không?",
+      "name": "Kan handmatig testen alleen deze bug opvangen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, toàn bộ giao diện và luồng UX/UI giữ nguyên, chỉ có xử lý khoá dữ liệu ở tầng database backend."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Fix race condition ở luồng booking có tự động fix các luồng khác không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Không, mỗi luồng (ví dụ: checkout, áp voucher) cần được áp dụng logic locking riêng biệt."
+        "text": "Uiterst onwaarschijnlijk, aangezien echte gelijktijdigheid niet op een natuurlijke manier wordt geproduceerd door handmatig testen van één actie tegelijk."
       }
     }
   ]

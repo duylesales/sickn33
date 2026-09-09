@@ -46,8 +46,7 @@ Een oprichter die heeft leren omgaan met één beveiligingsaudit, draagt die gel
 
 [Krijg een audit die u zelf daadwerkelijk kunt lezen](https://launchstudio.eu/nl/#contact) — de meeste oprichters vinden het rapport zelf net zo waardevol als de fixes die erop volgen.
 
-## Real example
-
+## Echt voorbeeld
 ### Een AI-Native Oprichter in de Praktijk: Van Vermijden naar Eigenaarschap
 
 Ilse Kwakman, een voormalig maatschappelijk werker die oprichter werd in Groningen, bouwde PleegNet, een AI-ondersteunde matchingtool die pleeggezinnen koppelt aan kinderen op basis van compatibiliteitsfactoren die casemanagers invoeren, met Lovable. Toen LaunchStudio haar eerste audit opleverde, was Ilses plan om direct naar de samenvatting te gaan en het Manifera-team gewoon "op te laten lossen wat er staat" — de eerste pagina's van het rapport, vol termen als "role-based access control" en "PII-blootstelling," voelden alsof ze voor iemand anders waren bedoeld.

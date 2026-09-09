@@ -66,24 +66,28 @@ De conclusie van ervaren security-architecten is dan ook helder:
 
 ## De Vijf Architectonische Veiligheidsmuren
 
-### 1. Geef het Model Nooit Meer Rechten Dan de Gebruiker Heeft
-Wanneer een AI-model namens een klant een actie uitvoert, moet elke databasetoegang worden begrensd door de reguliere sessie-autorisatie van die specifieke gebruiker. Dwing dit af in uw eigen backend-code, nooit op basis van het 'oordeel' van het LLM. Een geslaagde injectie kan dan nooit data van andere klanten uitlezen.
+Omdat u prompt-injectie niet 100% kunt uitsluiten, moet uw softwarearchitectuur zo zijn ontworpen dat een succesvolle manipulatie strikt ingeperkt blijft (*containment*):
 
-### 2. Voorkeur voor Read-Only en Verplichte Menselijke Bevestiging
-Laat een AI-model e-mails opstellen als *concept*, maar laat het nooit zelfstandig op de verzendknop drukken. Laat het model een statuswijziging *voorstellen*, maar dwing een fysieke muisklik van de gebruiker af om de actie goed te keuren. Dit transformeert een stille overname in een zichtbare prompt waar de gebruiker direct vraagtekens bij zet.
+1. **Geef het taalmodel nooit meer bevoegdheden dan de individuele gebruiker bezit:** Als de AI-functie draait voor een ingelogde klant, moet elke database-query of actie die het model initieert strikt begrensd worden door de autorisatieregels en Row Level Security van die specifieke gebruiker. Een geslaagde injectie kan daardoor nooit data bereiken waar de gebruiker zelf handmatig ook niet bij kon.
+2. **Kies voor read-only en vereis menselijke bevestiging voor acties (*Human-in-the-loop*):** Een model dat een concept-antwoord klaarzet voor een medewerker is oneindig veel veiliger dan een model dat autonoom e-mails verstuurt. Een model dat een databasewijziging voorstelt is veilig; een model dat direct een `UPDATE` uitvoert is levensgevaarlijk. Een menselijke klik tussen het model en de actie verandert een geruisloze overname in een opvallende waarschuwing.
+3. **Scheid betrouwbare instructies strikt van onbetrouwbare gebruikersdata:** Gebruik de officiële `system`-, `developer`- en `user`-rollen van de modelprovider zoals bedoeld. Verpak externe invoer expliciet in afgebakende XML- of JSON-blokken (zoals `<untrusted_content>...</untrusted_content>`) en instrueer het model dat tekst binnen deze tags uitsluitend mag worden geanalyseerd, nooit uitgevoerd.
+4. **Valideer de output, niet alleen de input:** Als het model een status moet retourneren uit een lijst van vier opties (`GOEDGEKEURD`, `AFGEKEURD`, `HERZIEN`, `ONVOLLEDIG`), valideer dat strikt via JSON-schema's (*Structured Outputs*). Als de output afwijkt, weigert uw backend de actie direct.
+5. **Plaats nooit bedrijfsgeheimen of API-sleutels in de systeemprompt:** Ga er altijd vanuit dat uw systeemprompt vroeg of laat integraal wordt uitgelezen door een slimme gebruiker. Sla API-sleutels, interne wachtwoorden en privégegevens van andere klanten nooit op in de promptcontext.
 
-### 3. Scheid Vertrouwde Instructies van Onvertrouwde Data
-Houd uw systeeminstructies en externe klantdata strikt gescheiden via officiële modelrollen (`system`, `user`). Omsluit externe bestanden altijd met duidelijke afbakeningslabels (bijv. `<untrusted_input>...</untrusted_input>`) en instrueer het model dat deze data uitsluitend geanalyseerd mag worden.
+Het zodanig inrichten van AI-functionaliteit dat een geslaagde injectie softwarematig wordt geïsoleerd, is een specialistische software engineering discipline. In AI-gegenereerde prototypes ontbreekt dit vrijwel altijd, omdat LLM's prompts standaard als één grote, samengevoegde string genereren. LaunchStudio, ondersteund door meer dan 11 jaar software engineering ervaring bij Manifera, herstructureert AI-features zodat modeltoegang diep in de database wordt begrensd door dezelfde permissies als de rest van uw product. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een audit binnen één werkdag.
+## De Vraag Die U Moet Stellen Vóórdat U Gaat Bouwen
 
-### 4. Valideer de Output via Strikte Schema's
-Verwacht u dat het model een status teruggeeft uit een lijst van drie opties? Dwing dit af met *Structured Outputs* (JSON Schema). Valideer de datastructuur aan de serverkant vóórdat u er iets mee doet. Dit voorkomt dat gemanipuleerde tekst ontsnapt naar uw frontend.
+Voor elke AI-feature die u plant, bepaalt één fundamentele vraag hoeveel van deze beveiligingslagen u daadwerkelijk moet optuigen: **Wiens tekst leest het model precies, en welke concrete handelingen mag het model uitvoeren op basis van die tekst?**
 
-### 5. Plaats Nooit Geheimen in Uw Systeemprompt
-Ga er vanuit dat elke systeemprompt vroeg of laat kan worden uitgelezen via *jailbreaking*. Zet daarom nooit API-sleutels, database-wachtwoorden of vertrouwelijke bedrijfsgeheimen in de prompttekst.
+- **Laag risico:** Het model leest uitsluitend de eigen getypte invoer van de ingelogde gebruiker en retourneert uitsluitend tekst aan diezelfde gebruiker (zoals een schrijfassistent).
+- **Substantieel risico:** Het model verwerkt tekst die is aangeleverd door externe derden — geüploade pdf's van sollicitanten, gecrawlde webpagina's, inkomende e-mails of klantenservicetickets.
+- **Hoog risico:** Het model heeft de bevoegdheid om op basis van de analyse daadwerkelijk acties uit te voeren in uw applicatie of externe API's (zoals betalingen autoriseren of records updaten).
+- **Acuut gevaar:** Het model voert acties uit op data die toebehoort aan een ándere partij dan degene die de invoer leverde — exact het punt waar AI-features in gedeelde B2B-werkruimtes routinematig belanden.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in enterprise cybersecurity) reviewen we AI-pipelines, ontwerpen we permissiestructuren en implementeren we veilige RAG-architecturen tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-beveiliging met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat externe data uw software niet overneemt.
-
-## Praktijkvoorbeeld
+Twee operationele maatregelen bieden hier onmisbare bescherming:
+Ten eerste: **log alle inkomende prompts en uitgaande modelresponses systematisch** (inclusief tokens en metadata) in een beveiligde audittabel. Wanneer een model bizar gedrag vertoont, kunt u exact reconstrueren welke payload werd aangeboden.
+Ten tweede: **geef gebruikers een prominente knop om een verdachte of foutieve modeloutput direct te melden**. Een alerte zakelijke klant die opmerkt dat een antwoord nergens op slaat, is in de praktijk uw allerbeste detectiesysteem voor actieve prompt-injecties.
+## Echt voorbeeld
 
 ### Het CV Dat Zijn Eigen Beoordeling Herschreef
 

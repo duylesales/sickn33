@@ -112,6 +112,22 @@ Serving regulated-content clients across jurisdictions requires configurable sto
 
 Terminology consistency depends on synchronized propagation of approved terminology decisions across languages, requiring genuinely distributed infrastructure with the operational complexity of keeping terminology databases correctly synchronized.
 
+### (Scenario: CTO deciding whether to integrate third-party machine translation engines) How much does MT engine integration add to the platform's real engineering cost?
+
+Beyond the API call itself, budget for per-engine confidence-score normalization, a fallback routing layer for when a preferred engine returns low-confidence output, and per-language-pair quality benchmarking, since MT engine quality varies significantly by target language and a single fixed threshold across all languages produces inconsistent post-editing workload.
+
+### (Scenario: engineering lead scoping translator payment infrastructure) Does translator payment and multi-country withholding logic belong in the platform cost model?
+
+Yes, and it's frequently scoped separately by mistake: paying translators across dozens of countries requires per-jurisdiction withholding tax logic, multi-currency payout rails, and invoice reconciliation tied back to segment-level word counts, which is a distinct engineering workstream from the editorial workflow itself.
+
+### (Scenario: product lead migrating off a legacy TMS) What's the biggest hidden cost in migrating translation memory data from a legacy TMS?
+
+Segment-alignment quality: legacy TMX exports frequently contain misaligned source-target pairs accumulated over years of manual fixes, and a naive bulk import propagates that misalignment into the new engine's fuzzy-match scoring, so budget for an alignment-validation pass before cutover, not just a data transfer script.
+
+### (Scenario: CTO planning platform uptime commitments) Why does a localization platform need disaster recovery scoped separately from standard redundancy?
+
+Standard infrastructure redundancy protects against server failure, but a localization platform's real exposure is in-flight segment loss during active concurrent editing sessions across many time zones simultaneously, requiring transaction-level replication and point-in-time recovery for the translation memory specifically, not just application-layer failover.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,7 +137,11 @@ Terminology consistency depends on synchronized propagation of approved terminol
     { "@type": "Question", "name": "(Scenario: engineering lead scoping translation memory) Why is translation memory harder to scale correctly than it appears in small-scale testing?", "acceptedAnswer": { "@type": "Answer", "text": "Data integrity depends on handling many concurrent translators, requiring different architecture at scale than a small test environment needs." } },
     { "@type": "Question", "name": "(Scenario: product lead scoping quality-review systems) Why does quality-review workflow require more than a simple approval checkbox?", "acceptedAnswer": { "@type": "Answer", "text": "Reviewer workload balancing and auditable review history for regulated clients require genuinely robust workflow infrastructure." } },
     { "@type": "Question", "name": "(Scenario: CTO planning data residency capability) Why does multi-jurisdiction data residency infrastructure deserve substantial, ongoing engineering investment?", "acceptedAnswer": { "@type": "Answer", "text": "Serving regulated clients across jurisdictions requires configurable storage, processing, and access routing at the project level." } },
-    { "@type": "Question", "name": "(Scenario: CTO planning for multi-language reach) Why does serving many target languages simultaneously add real platform infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Terminology consistency requires synchronized propagation across languages, needing distributed infrastructure with real operational complexity." } }
+    { "@type": "Question", "name": "(Scenario: CTO planning for multi-language reach) Why does serving many target languages simultaneously add real platform infrastructure cost?", "acceptedAnswer": { "@type": "Answer", "text": "Terminology consistency requires synchronized propagation across languages, needing distributed infrastructure with real operational complexity." } },
+    { "@type": "Question", "name": "(Scenario: CTO deciding whether to integrate third-party machine translation engines) How much does MT engine integration add to the platform's real engineering cost?", "acceptedAnswer": { "@type": "Answer", "text": "Budget for confidence-score normalization, fallback routing for low-confidence output, and per-language-pair quality benchmarking, since MT quality varies significantly by target language." } },
+    { "@type": "Question", "name": "(Scenario: engineering lead scoping translator payment infrastructure) Does translator payment and multi-country withholding logic belong in the platform cost model?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, per-jurisdiction withholding tax logic, multi-currency payout rails, and invoice reconciliation tied to segment-level word counts form a distinct engineering workstream from the editorial workflow." } },
+    { "@type": "Question", "name": "(Scenario: product lead migrating off a legacy TMS) What's the biggest hidden cost in migrating translation memory data from a legacy TMS?", "acceptedAnswer": { "@type": "Answer", "text": "Segment-alignment quality from legacy TMX exports requires a validation pass before cutover, since misaligned pairs propagate into the new engine's fuzzy-match scoring." } },
+    { "@type": "Question", "name": "(Scenario: CTO planning platform uptime commitments) Why does a localization platform need disaster recovery scoped separately from standard redundancy?", "acceptedAnswer": { "@type": "Answer", "text": "Real exposure is in-flight segment loss during active concurrent editing across time zones, requiring transaction-level replication and point-in-time recovery for translation memory specifically." } }
   ]
 }
 </script>

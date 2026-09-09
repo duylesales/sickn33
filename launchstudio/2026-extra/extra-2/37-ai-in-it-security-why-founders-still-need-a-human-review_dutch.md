@@ -61,6 +61,18 @@ Manifera's implementatie van authenticatiebeleid wordt geleverd via het ontwikke
 
 [Beschrijf uw product aan ons — we reageren binnen één werkdag](https://launchstudio.eu/nl/#contact).
 
+## Een Wachtwoordbeleid Opstellen Dat Niet Bestraffend Aanvoelt
+
+Een wachtwoordbeleid kan het risico voor uw platform aanzienlijk verlagen óf echte gebruikers mateloos frustreren — en vaak beide tegelijk als het is ontworpen rondom verouderde aannames. Een paar beproefde principes houden het beleid aan de effectieve kant:
+
+- **Geef de voorkeur aan lengte boven complexe tekenregels.** Het vereisen van een langere minimumlengte (12 tekens is een uitstekende moderne basis) doet veel meer voor de daadwerkelijke veiligheid dan het afdwingen van een mengeling van hoofdletters, cijfers en symbolen. Dat laatste dwingt gebruikers vaak juist naar voorspelbare patronen ("Wachtwoord1!") die formeel aan de regel voldoen maar nauwelijks veiliger zijn.
+- **Controleer tegen lijsten met bekende datalekken**, en niet alleen op lengte of opmaak. Een wachtwoord kan perfect lang zijn en aan elke complexiteitseis voldoen, terwijl het tegelijkertijd voorkomt in openbare lijsten van miljarden gelekte inloggegevens die actief worden gebruikt voor credential-stuffing aanvallen. Een controle via een dienst zoals de Have I Been Pwned API onderschept dit direct.
+- **Beperk mislukte inlogpogingen (rate limiting)**, zodat zelfs een zwakker wachtwoord niet zomaar kan worden geraden via geautomatiseerde aanvallen op één enkel account. Dit voegt een cruciale tweede beschermingslaag toe die niet alleen afhangt van de discipline van de gebruiker.
+- **Bied duidelijke, directe feedback tijdens het typen** in plaats van een vage afwijzing na het verzenden van het formulier. Iemand direct laten zien dat een wachtwoord langer moet zijn terwijl diegene typt, voorkomt de frustratie van een algemene foutmelding nadat er al op 'Aanmelden' is geklikt.
+- **Bewaar tweefactorauthenticatie (2FA) voor risicovollere handelingen**, zoals het wijzigen van financiële gegevens, het exporteren van data of het aanpassen van accountinstellingen, in plaats van dit dwingend op te leggen bij elke alledaagse login. Dit balanceert optimale veiligheid met een frictieloze ervaring voor routinematig gebruik.
+
+Geen van deze vijf aanbevelingen vereist een ingrijpende herstructurering van uw onboarding. Het zijn gerichte verfijningen van de validatielogica achter één enkel formulierveld, die direct kunnen worden geïmplementeerd zonder dat de rest van de productervaring verandert.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: De account-inlog die iedereen kon gokken
@@ -80,25 +92,25 @@ Een bezorgde vroege gebruiker vermeldde terloops dat ze "schoonmaak123" als haar
 
 ## Veelgestelde vragen
 
-### Zou een specialist in identiteitsbeveiliging dit beschouwen als een kloof met lage prioriteit?
+### Waarom is het afdwingen van willekeurige speciale tekens minder effectief dan het vereisen van een langer wachtwoord?
 
-Nee – het accepteren van zwakke wachtwoorden wordt consequent behandeld als een fundamenteel item met hoge prioriteit. Het is namelijk de meest directe, veelvoorkomende ingang voor accountinbreuken.
+Omdat gebruikers bij complexe tekenvereisten vaak voorspelbare patronen kiezen (zoals een hoofdletter aan het begin en een uitroepteken aan het einde), wat computers nauwelijks vertraagt. Een langer wachtwoord (passphrase) vergroot de combinatieruimte exponentieel en is voor mensen veel makkelijker te onthouden.
 
-### Vermindert het vereisen van een sterker wachtwoord het risico betekenisvol?
+### Hoe werkt het controleren van wachtwoorden tegen lijsten met bekende datalekken zonder de privacy van de gebruiker te schenden?
 
-Het vermindert het risico aanzienlijk tegen de meest veelvoorkomende geautomatiseerde methoden (credential stuffing en simpel gokken).
+Via technieken zoals 'k-anonymity' (gebruikt door diensten zoals Have I Been Pwned). Hierbij berekent de server de SHA-1 hash van het wachtwoord en stuurt uitsluitend de eerste 5 tekens van die hash naar de API. De volledige hash en het wachtwoord zelf verlaten uw systeem nooit.
 
-### Maakt ervaring over veel verschillende producten uit bij het bepalen van het juiste beleid?
+### Past Manifera deze moderne wachtwoordstandaarden toe bij het bouwen van maatwerksoftware?
 
-Ja, aangezien de juiste balans tussen beveiliging en wrijving bij het aanmelden oprecht verschilt per context en doelgroep.
+Ja, Manifera volgt de nieuwste richtlijnen van toonaangevende instanties zoals NIST en OWASP. Dit betekent dat ouderwetse regels (zoals verplichte periodieke wachtwoordwijzigingen) worden vervangen door effectieve controles tegen gelekte wachtwoorden en rate limiting.
 
-### Past dit in het kader van basisdiscipline voor oprichters?
+### Wat is het risico als een applicatie geen snelheidsbeperking (rate limiting) heeft op het inlogscherm?
 
-Ja, rechtstreeks – minimale wachtwoordsterkte-vereisten zijn al lange tijd een standaardpraktijk bij grotere organisaties.
+Zonder rate limiting kan een aanvaller geautomatiseerde 'credential stuffing' of brute-force aanvallen uitvoeren, waarbij miljoenen combinaties van gebruikersnamen en wachtwoorden per uur worden getest totdat er een overeenkomst wordt gevonden.
 
-### Moeten oprichters wachtwoordvereisten proactief specificeren bij het prompte van AI-tools?
+### Is tweefactorauthenticatie (2FA) verplicht voor elk type webapplicatie?
 
-Het helpt om het proactief te specificeren, hoewel het vertrouwen op alleen het onthouden daarvan kwetsbaar is vergeleken met een systematische beoordeling achteraf.
+Niet wettelijk verplicht voor elk consumentenplatform, maar sterk aanbevolen voor elke applicatie die gevoelige persoonlijke data, financiële transacties of zakelijke gegevens beheert. Het biedt een essentiële verdedigingslinie wanneer inloggegevens van een gebruiker elders zijn gelekt.
 
 <script type="application/ld+json">
 {
@@ -107,50 +119,42 @@ Het helpt om het proactief te specificeren, hoewel het vertrouwen op alleen het 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Để ngỏ mật khẩu yếu (Weak Password) có phải là lỗi bảo mật nhỏ?",
+      "name": "Waarom is het afdwingen van willekeurige speciale tekens minder effectief dan het vereisen van een langer wachtwoord?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Không, đây là lỗi nền tảng ưu tiên cao vì nó là con đường ngắn nhất để kẻ xấu chiếm đoạt tài khoản (Account Takeover)."
+        "text": "Omdat gebruikers bij complexe tekenvereisten vaak voorspelbare patronen kiezen (zoals een hoofdletter aan het begin en een uitroepteken aan het einde), wat computers nauwelijks vertraagt. Een langer wachtwoord (passphrase) vergroot de combinatieruimte exponentieel en is voor mensen veel makkelijker te onthouden."
       }
     },
     {
       "@type": "Question",
-      "name": "Tại sao AI tool lại tạo form đăng ký cho phép đặt mật khẩu yếu như '123456'?",
+      "name": "Hoe werkt het controleren van wachtwoorden tegen lijsten met bekende datalekken zonder de privacy van de gebruiker te schenden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vì trong prompt bạn chỉ bảo 'tạo form đăng ký', AI sẽ viết code cơ bản nhất chứ không tự động thêm rule validate độ mạnh mật khẩu."
+        "text": "Via technieken zoals 'k-anonymity' (gebruikt door diensten zoals Have I Been Pwned). Hierbij berekent de server de SHA-1 hash van het wachtwoord en stuurt uitsluitend de eerste 5 tekens van die hash naar de API. De volledige hash en het wachtwoord zelf verlaten uw systeem nooit."
       }
     },
     {
       "@type": "Question",
-      "name": "Tấn công Credential Stuffing là gì và có ảnh hưởng đến startup nhỏ không?",
+      "name": "Past Manifera deze moderne wachtwoordstandaarden toe bij het bouwen van maatwerksoftware?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Là việc bot tự động dùng danh sách email/pass bị lộ từ các vụ hack khác để thử đăng nhập. Nó quét tự động toàn bộ web trên internet không phân biệt lớn nhỏ."
+        "text": "Ja, Manifera volgt de nieuwste richtlijnen van toonaangevende instanties zoals NIST en OWASP. Dit betekent dat ouderwetse regels (zoals verplichte periodieke wachtwoordwijzigingen) worden vervangen door effectieve controles tegen gelekte wachtwoorden en rate limiting."
       }
     },
     {
       "@type": "Question",
-      "name": "Nên đặt quy tắc độ mạnh mật khẩu như thế nào để vừa an toàn vừa mượt cho user?",
+      "name": "Wat is het risico als een applicatie geen snelheidsbeperking (rate limiting) heeft op het inlogscherm?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ưu tiên độ dài (tối thiểu 12 ký tự) thay vì bắt buộc đủ ký tự đặc biệt/hoa thường gây phiền, kết hợp check qua API HaveIBeenPwned."
+        "text": "Zonder rate limiting kan een aanvaller geautomatiseerde 'credential stuffing' of brute-force aanvallen uitvoeren, waarbij miljoenen combinaties van gebruikersnamen en wachtwoorden per uur worden getest totdat er een overeenkomst wordt gevonden."
       }
     },
     {
       "@type": "Question",
-      "name": "Thời gian bổ sung Password Policy chuẩn vào ứng dụng mất bao lâu?",
+      "name": "Is tweefactorauthenticatie (2FA) verplicht voor elk type webapplicatie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rất nhanh, thường hoàn thành trong 3-5 ngày làm việc bao gồm cả giao diện thông báo gợi ý độ mạnh mật khẩu real-time."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Mật khẩu dài (Passphrase) có thực sự an toàn hơn mật khẩu ngắn chứa ký tự đặc biệt?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Có, độ dài làm tăng số lượng tổ hợp bot phải dò hơn nhiều so với ký tự đặc biệt, đồng thời dễ nhớ hơn với người dùng thật."
+        "text": "Niet wettelijk verplicht voor elk consumentenplatform, maar sterk aanbevolen voor elke applicatie die gevoelige persoonlijke data, financiële transacties of zakelijke gegevens beheert. Het biedt een essentiële verdedigingslinie wanneer inloggegevens van een gebruiker elders zijn gelekt."
       }
     }
   ]

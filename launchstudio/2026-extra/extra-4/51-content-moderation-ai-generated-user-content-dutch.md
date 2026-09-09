@@ -108,6 +108,10 @@ Niet betekenisvol – een controle door een beleidsclassifier voegt doorgaans mi
 
 Zelfde kloof verschijnt ongeacht of u Cursor, Bolt, Lovable of v0 heeft gebruikt – moderatie is niet iets wat deze tools standaard genereren voor gebruikersinhoud of door AI gegenereerde inhoud.
 
+### Wat kost het inrichten van AI content-moderatie bij LaunchStudio?
+
+Het bouwen van een dubbele moderatielaag (input filter + AI output queue) kost gemiddeld €950 en duurt 6 werkdagen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

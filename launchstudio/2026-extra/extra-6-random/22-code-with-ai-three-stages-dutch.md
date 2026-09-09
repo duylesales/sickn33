@@ -41,6 +41,19 @@ Dit is ook waar hulp van buitenaf zichzelf terugverdient. LaunchStudio bestaat s
 
 Voor een bredere blik op hoe professionele teams AI-ondersteunde ontwikkeling op schaal structureren, hanteert de [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) van Manifera dezelfde discipline van concept-en-daarna-beoordeling in klantprojecten.
 
+## Zelfevaluatie: In Welke Fase Bevindt Uw Codebase Zich Daadwerkelijk?
+
+De drie fasen van softwareontwikkeling met AI (Experiment, Validatie en Productie) worden gedefinieerd door wat 'coderen met AI' op elk niveau betekent. Oprichters overschatten echter regelmatig de fase waarin hun codebase zich werkelijk bevindt. Gebruik deze snelle zelfevaluatie om uw werkelijke positie te bepalen:
+
+**Fase 1: Experiment (De Bouwfase).** U bevindt zich hier als u nog dagelijks nieuwe schermen toevoegt, het datamodel regelmatig volledig omgooit en uw voornaamste doel is om te zien of het idee visueel en functioneel overtuigt. U test de app alleen zelf en er staat nog geen echte klantdata in het systeem. Hier is snelheid alles en is diepe architectuur nog niet aan de orde.
+
+**Fase 2: Validatie (De Pilotfase).** U bent in deze fase aangeland zodra de eerste 5 tot 20 vriendelijke proefgebruikers met het systeem werken. Er worden echte taken uitgevoerd en er ontstaat echte data. Hier begint de overgang: u moet nuRow-Level Security inrichten, zorgen dat gebruikers elkaars data niet kunnen zien, en eenvoudige foutmonitoring aanzetten om te zien waar gebruikers vastlopen.
+
+**Fase 3: Productie (De Schalingsfase).** U bevindt zich in Fase 3 zodra onbekende gebruikers betalen voor de dienst en vertrouwen op de beschikbaarheid ervan. U kunt zich geen handmatige database-correcties meer veroorloven. In deze fase zijn geautomatiseerde CI/CD-pijplijnen, formele back-upprocedures, strikte AVG-naleving en monitoring met alerts absolute vereisten.
+
+Wees realistisch: een Fase 1-codebase behandelen alsof deze al in Fase 3 zit, leidt tot onnodige vertraging. Maar een Fase 1-prototype live zetten voor betalende Fase 3-klanten zonder de noodzakelijke hardening, is een recept voor een gegarandeerd zakelijk drama.
+
+
 ## Echt voorbeeld
 
 ### Een technische solo-oprichter in actie: Bas Verkerk leert dat de zin drie betekenissen heeft
@@ -87,11 +100,46 @@ LaunchStudio put uit de hubs van Manifera in Amsterdam (Europees hoofdkantoor), 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Does \"coded with AI\" mean the same thing at every startup stage?", "acceptedAnswer": { "@type": "Answer", "text": "No. At prototype stage it usually means the AI wrote most of the code with light human editing. At MVP stage it means AI drafts and a human reviews. At scale-up stage it means AI is one tool inside a full professional engineering workflow." } },
-    { "@type": "Question", "name": "Why does this distinction matter when hiring contractors?", "acceptedAnswer": { "@type": "Answer", "text": "Contractors price and scope work very differently depending on which stage they assume you mean, so being specific avoids scope disputes." } },
-    { "@type": "Question", "name": "At what stage should a founder bring in outside engineering help?", "acceptedAnswer": { "@type": "Answer", "text": "Most founders benefit from outside help at the transition from MVP to scale-up, when AI-drafted code needs production-grade security, payments, and auth." } },
-    { "@type": "Question", "name": "How does LaunchStudio treat AI-generated code differently at this stage?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio applies professional review discipline to AI-generated code without discarding the founder's existing frontend work, backed by Manifera's 120+ engineers." } },
-    { "@type": "Question", "name": "Where does LaunchStudio's engineering team operate from?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio draws on Manifera's hubs in Amsterdam, Singapore, and Ho Chi Minh City." } }
+    {
+      "@type": "Question",
+      "name": "Betekent \"gecodeerd met AI\" hetzelfde in elke startupfase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. In de prototypefase betekent het meestal dat de AI het meeste van de code schreef met lichte menselijke bewerking. In de MVP-fase betekent het dat AI concepten opstelt en een mens ze beoordeelt. In de scale-upfase betekent het dat AI één tool is binnen een volledige professionele engineeringworkflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom is dit onderscheid belangrijk bij het inhuren van contractors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contractors prijzen en scopen werk heel anders, afhankelijk van welke fase ze aannemen dat u bedoelt. Specifiek zijn voorkomt scopegeschillen en voorkomt dat contractors code herschrijven die al is gehard."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "In welke fase moet een oprichter externe engineeringhulp inschakelen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste oprichters hebben het meeste baat bij externe hulp bij de overgang van MVP naar scale-up, wanneer door AI opgestelde code moet worden ingepakt in productiekwaliteit-beveiliging, betalingen en auth, zonder volledige herbouw."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe behandelt LaunchStudio door AI gegenereerde code anders in deze fase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, ondersteund door de 120+ engineers van Manifera, past professionele beoordelingsdiscipline toe — beveiligingsaudits, correcte auth, databaseverharding — op door AI gegenereerde code zonder het bestaande frontendwerk van de oprichter weg te gooien."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Van waaruit opereert het engineeringteam van LaunchStudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio put uit de hubs van Manifera in Amsterdam (Europees hoofdkantoor), Singapore (hub voor Zuidoost-Azië) en Ho Chi Minhstad (belangrijkste engineeringcentrum)."
+      }
+    }
   ]
 }
 </script>

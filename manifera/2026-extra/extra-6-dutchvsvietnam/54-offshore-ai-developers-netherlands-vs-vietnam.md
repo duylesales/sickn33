@@ -74,6 +74,12 @@ Run the numbers side by side and the gap isn't marginal. A single Netherlands-ba
 
 If your board is asking for a decision this quarter, the comparison above is the one to bring to that meeting. [Talk to Manifera about structuring an Amsterdam-governed AI pod](https://www.manifera.com/contact-us/).
 
+## Technical Deep-Dive: What the Three-Specialist AI Pod Actually Covers
+
+The MLOps, retrieval architecture, and evaluation engineering split isn't arbitrary — it maps to the three failure points that sink most in-house AI initiatives. MLOps ownership means someone is responsible for model versioning, deployment pipelines, and inference cost monitoring from day one, rather than a data scientist bolting deployment onto a role they weren't hired for; without it, a working prototype routinely stalls for two to three months trying to reach production. Retrieval architecture covers the vector database, chunking strategy, and embedding pipeline design specific to a RAG-based system — the difference between a demo that works on ten test documents and a system that holds up against fifty thousand. Evaluation engineering is the discipline most local hiring skips entirely: a dedicated function building labeled test sets, tracking accuracy and hallucination rates release over release, and gating deployment against a defined threshold rather than shipping on developer confidence alone.
+
+A single local AI/ML generalist hire typically covers one, maybe two, of these three competently. The Fenwick pilot's 91% accuracy result came specifically from having evaluation engineering as a dedicated function from week one, not bolted on after the fact.
+
 ## Frequently Asked Questions
 
 ### (Scenario: CTO preparing a board recommendation this quarter) We need to decide this quarter. What's the fastest way to get a real comparison, not a sales pitch?
@@ -96,6 +102,22 @@ Significantly more easily. Adding specialists to an established pod typically ta
 
 Yes — a scoped six-to-eight week pilot on a contained use case, like Fenwick's document-classification proof of concept, is the standard way to verify delivery quality before expanding the engagement.
 
+### (Scenario: CTO concerned about GDPR when sending customer data to an offshore AI pod) Is it safe to route customer data to an offshore AI pod for model evaluation or fine-tuning given GDPR?
+
+Yes, provided a Data Processing Agreement is signed with an Amsterdam-domiciled entity that scopes and logs data access, and evaluation datasets are anonymized or synthetic wherever the use case allows it — the accountable party for GDPR purposes remains the EU entity, not the offshore execution team.
+
+### (Scenario: CTO wanting specifics on the evaluation function) What does a dedicated evaluation engineering function actually track sprint over sprint?
+
+A labeled test set scored for accuracy and hallucination rate on every model or prompt change, with results logged release over release and a defined threshold, commonly 90%+ accuracy on the target task, gating whether a change ships to production.
+
+### (Scenario: CTO comparing MLOps role cost specifically) What's the fully-loaded cost difference specifically for an MLOps specialist role between a Netherlands hire and a Vietnam pod seat?
+
+A Netherlands-based MLOps specialist typically runs well into six figures fully loaded annually; an equivalent seat within an Amsterdam-governed Vietnam pod typically costs 55-70% less for comparable seniority, reflecting genuine labor-market differences rather than a capability gap.
+
+### (Scenario: CTO wondering about inference cost management) Does the offshore pod also manage LLM API and inference cost optimization, or only build the pipeline?
+
+A properly scoped MLOps function within the pod owns ongoing inference cost monitoring and optimization, prompt or response caching strategy, and cost-per-query tracking as a standing responsibility, not just initial pipeline construction — a gap many in-house teams discover only after the first surprising API bill.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,7 +127,11 @@ Yes — a scoped six-to-eight week pilot on a contained use case, like Fenwick's
     { "@type": "Question", "name": "(Scenario: CTO worried about losing internal engineering buy-in) How do we get internal engineering buy-in for an offshore decision over a local hire?", "acceptedAnswer": { "@type": "Answer", "text": "Frame it as capability, not cost-cutting: a pod delivers specialist coverage across disciplines a single local hire can't match, usually a more persuasive internal argument than a pure cost comparison." } },
     { "@type": "Question", "name": "(Scenario: CTO wanting to know actual onboarding speed) How long before an offshore AI pod is actually shipping production work?", "acceptedAnswer": { "@type": "Answer", "text": "With a documented ramp-up plan, most pods reach full sprint productivity within three to four weeks of contract signature." } },
     { "@type": "Question", "name": "(Scenario: CTO concerned about scaling later) If the initiative grows, how easily can we scale the team compared to hiring more locally?", "acceptedAnswer": { "@type": "Answer", "text": "Significantly more easily. Adding specialists to an established pod typically takes weeks, versus repeating a multi-month recruiting cycle for each additional local hire." } },
-    { "@type": "Question", "name": "(Scenario: CTO wanting independent verification before committing) Can we validate quality before committing to the full engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a scoped six-to-eight week pilot on a contained use case is the standard way to verify delivery quality before expanding the engagement." } }
+    { "@type": "Question", "name": "(Scenario: CTO wanting independent verification before committing) Can we validate quality before committing to the full engagement?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, a scoped six-to-eight week pilot on a contained use case is the standard way to verify delivery quality before expanding the engagement." } },
+    { "@type": "Question", "name": "(Scenario: CTO concerned about GDPR when sending customer data to an offshore AI pod) Is it safe to route customer data to an offshore AI pod for model evaluation or fine-tuning given GDPR?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, provided a Data Processing Agreement is signed with an Amsterdam-domiciled entity that scopes and logs data access, and evaluation datasets are anonymized or synthetic wherever the use case allows it." } },
+    { "@type": "Question", "name": "(Scenario: CTO wanting specifics on the evaluation function) What does a dedicated evaluation engineering function actually track sprint over sprint?", "acceptedAnswer": { "@type": "Answer", "text": "A labeled test set scored for accuracy and hallucination rate on every model or prompt change, with results logged release over release and a defined threshold gating whether a change ships to production." } },
+    { "@type": "Question", "name": "(Scenario: CTO comparing MLOps role cost specifically) What's the fully-loaded cost difference specifically for an MLOps specialist role between a Netherlands hire and a Vietnam pod seat?", "acceptedAnswer": { "@type": "Answer", "text": "A Netherlands-based MLOps specialist typically runs well into six figures fully loaded annually; an equivalent seat within an Amsterdam-governed Vietnam pod typically costs 55-70% less for comparable seniority." } },
+    { "@type": "Question", "name": "(Scenario: CTO wondering about inference cost management) Does the offshore pod also manage LLM API and inference cost optimization, or only build the pipeline?", "acceptedAnswer": { "@type": "Answer", "text": "A properly scoped MLOps function within the pod owns ongoing inference cost monitoring, prompt or response caching strategy, and cost-per-query tracking as a standing responsibility, not just initial pipeline construction." } }
   ]
 }
 </script>

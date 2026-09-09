@@ -60,6 +60,12 @@ Selecting a vendor for a multi-year digital transformation program requires eval
 
 Manifera structures long-term engagements around exactly this kind of durability — staffing continuity, phase-gated scope, and transparent commercial terms — see our [dedicated teams](https://www.manifera.com/about-us/setting-up-your-offshore-team/) model and [our way of working](https://www.manifera.com/about-us/our-way-of-working/) for how we build transformation partnerships meant to last.
 
+## The Financial Diligence Checklist: What to Actually Request Before Signature
+
+Financial and ownership diligence on a prospective multi-year vendor should be proportionate to contract size, but a minimum baseline applies to any program above roughly $2-3M in total committed spend. Request: three years of financial statements or, for private companies without public filings, a third-party credit report; an explicit ownership structure disclosure, including any PE ownership and that fund's typical hold period (a fund in year four of a typical five-to-seven-year hold is a materially different risk than one in year one); and a revenue concentration statement — what percentage of the vendor's total revenue this program would represent, since anything above roughly 15-20% signals real strategic importance to the vendor, while anything under 2-3% signals the account could be deprioritized without material impact to them.
+
+Weight the diligence effort by program length and spend: for programs under two years or under $2M, a lighter check (basic incorporation and financial health confirmation) is proportionate; for five-year, eight-figure programs, budget for an actual third-party financial diligence engagement — the same rigor a private equity acquirer would apply to a target company, since in cost-and-risk terms, a multi-year vendor commitment of that size functions similarly to acquiring a dependency on that company's continued health.
+
 ## Frequently Asked Questions
 
 ### Why does a vendor's financial and ownership stability matter for a multi-year program selection?
@@ -76,6 +82,18 @@ Escalation terms should be reviewed and renegotiated at each phase gate rather t
 
 ### What should an exit ramp for a multi-year vendor relationship include?
 Defined termination rights (for convenience versus for cause), knowledge transfer and documentation obligations that survive termination, clear ownership of source code and architecture documentation, and a contractually obligated transition period supporting handover to a successor. This should be negotiated at signature, while both parties still have full goodwill, not improvised if the relationship later deteriorates.
+
+### (Scenario: The leading candidate is a small, founder-led boutique firm rather than a large SI) How should financial and continuity diligence differ when evaluating a small, founder-led vendor versus a large integrator?
+Concentration and key-person risk both run higher, not lower, so diligence should focus more specifically on what happens to the engagement if the founder becomes unavailable — succession planning, whether other senior staff have genuine delivery authority independent of the founder, and whether the firm carries any key-person insurance or documented continuity plan, since a boutique firm rarely has the organizational depth a larger SI has to absorb a single person's departure.
+
+### (Scenario: The selected vendor is acquired by another firm midway through year two of the program) What should a CTO do if the selected vendor gets acquired partway through the program?
+Immediately re-run the staffing continuity and change-of-control provisions negotiated at signature — confirm named personnel commitments still hold under the new ownership, request an explicit statement of the acquirer's intentions for the account, and treat the next phase-gate review as an early checkpoint on whether the relationship's fundamentals (team, pricing, priority) have genuinely changed rather than waiting for a scheduled annual review to raise it.
+
+### (Scenario: Finance wants a single locked five-year price for budget certainty rather than phase-gated pricing) How should a CTO respond when finance wants a locked multi-year price instead of phase-gated contracting?
+Reframe the trade-off explicitly: a locked price trades away the ability to exit or renegotiate if the vendor underperforms or requirements shift, which on a five-year horizon is a near-certainty, not a remote risk. A phase-gated structure with a capped escalation range per phase gives finance meaningful budget predictability without surrendering the off-ramp a single locked commitment removes entirely.
+
+### (Scenario: The transformation program requires coordinating a lead systems integrator alongside several smaller specialist vendors) How does vendor selection change when a multi-year program needs a lead integrator plus several specialist vendors working together?
+Select and contract the lead integrator with explicit subcontractor governance authority — the ability to set delivery standards and escalation processes the specialist vendors must follow — rather than treating each specialist relationship as independent, since uncoordinated specialist vendors are where multi-vendor transformation programs most commonly lose coherence over a multi-year term.
 
 <script type="application/ld+json">
 {
@@ -120,6 +138,38 @@ Defined termination rights (for convenience versus for cause), knowledge transfe
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Defined termination rights (for convenience versus for cause), knowledge transfer and documentation obligations that survive termination, clear ownership of source code and architecture documentation, and a contractually obligated transition period supporting handover to a successor. This should be negotiated at signature, while both parties still have full goodwill, not improvised if the relationship later deteriorates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should financial and continuity diligence differ when evaluating a small, founder-led vendor versus a large integrator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Concentration and key-person risk both run higher, so diligence should focus specifically on what happens if the founder becomes unavailable — succession planning, whether other senior staff have genuine delivery authority independent of the founder, and whether the firm has any documented continuity plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should a CTO do if the selected vendor gets acquired partway through the program?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Immediately re-run the staffing continuity and change-of-control provisions negotiated at signature, request an explicit statement of the acquirer's intentions for the account, and treat the next phase-gate review as an early checkpoint on whether the relationship's fundamentals have genuinely changed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should a CTO respond when finance wants a locked multi-year price instead of phase-gated contracting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reframe the trade-off explicitly: a locked price trades away the ability to exit or renegotiate if the vendor underperforms or requirements shift, which on a five-year horizon is near-certain. A phase-gated structure with a capped escalation range per phase gives budget predictability without surrendering the off-ramp entirely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does vendor selection change when a multi-year program needs a lead integrator plus several specialist vendors working together?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Select and contract the lead integrator with explicit subcontractor governance authority — the ability to set delivery standards and escalation processes the specialist vendors must follow — rather than treating each specialist relationship as independent."
       }
     }
   ]

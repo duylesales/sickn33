@@ -41,6 +41,17 @@ De praktische oplossing hiervoor is goedkoop: lees, voordat u een door AI gegene
 
 Onze engineers, waaronder het team gevestigd in Singapore, besteden een aanzienlijk deel van elke codebase-review specifiek aan het opsporen van precies dit patroon — fouten die tot zwijgen werden gebracht in plaats van opgelost. LaunchStudio brengt de enterprise-grade engineering van Manifera naar de oprichterseconomie, en een deel daarvan is het behandelen van "de fout is weg" als het begin van een beoordeling, niet als het einde ervan. Wilt u een tweede paar ogen op een fix die een AI-tool u heeft gegeven, dan kunt u [uw project beschrijven via ons proces](https://launchstudio.eu/nl/#process) en een eerlijk antwoord krijgen. Voor hoe wij denken over engineering-discipline in bredere zin, zie [de aanpak van Manifera voor softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/).
 
+## De Drie Gezichten van 'Opgelost'
+
+Wanneer een AI-tool of een externe ontwikkelaar meldt dat een bug "is opgelost", kan die bewering drie totaal verschillende betekenissen hebben. Het is essentieel dat u als oprichter weet welke variant er daadwerkelijk is geleverd:
+
+**1. 'Opgelost' door Verberging (Cosmetisch).** De foutmelding verschijnt niet meer in beeld omdat het invoerveld is uitgeschakeld of omdat een lege `catch {}`-instructie de fout geruisloos inslikt. Het onderliggende probleem bestaat nog steeds, maar niemand ziet het meer. Dit is de gevaarlijkste vorm van een oplossing.
+
+**2. 'Opgelost' voor het Happy Path (Puntoplossing).** De specifieke testcase die de fout veroorzaakte werkt nu wel, maar de onderliggende logica is niet fundamenteel aangepast. Voert een gebruiker net een iets andere waarde in, dan crasht de applicatie alsnog op exact dezelfde regel code.
+
+**3. 'Opgelost' door Architectonische Versteviging (Structureel).** De oorzaak is weggenomen op het juiste niveau: er is een typesafe validatieschema toegevoegd aan de API-route, de database handhaaft een harde constraint, en er is een geautomatiseerde integratietest geschreven die garandeert dat deze fout nooit meer ongemerkt kan terugkeren.
+
+Vraag bij elke belangrijke bugfix altijd: *"Hebben we alleen de melding verborgen, of hebben we een geautomatiseerde test die bewijst dat de onderliggende oorzaak definitief is opgelost?"* Daarmee dwingt u structurele kwaliteit af.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de bug die leerde zich te verbergen
@@ -87,11 +98,46 @@ Vraag rechtstreeks waarom de onderliggende waarde ongeldig of null was, en waar 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Does an AI that fixes code actually understand the bug it's fixing?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. It understands the error it was shown and how to make that specific error stop occurring, which can be very different from understanding why the bug happened." } },
-    { "@type": "Question", "name": "How can I tell if an AI fix silenced a bug instead of solving it?", "acceptedAnswer": { "@type": "Answer", "text": "Read the diff. Broad try/catch blocks, silent default returns, or early exits with no logging are signs the symptom was suppressed rather than the cause addressed." } },
-    { "@type": "Question", "name": "Why is this riskier for a solo founder than for a team?", "acceptedAnswer": { "@type": "Answer", "text": "There is usually no second reviewer questioning whether a fix is real or cosmetic, so a silenced bug can reach production and stay invisible for weeks." } },
-    { "@type": "Question", "name": "Can LaunchStudio review fixes an AI tool has already made?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Manifera's engineers, including the Singapore-based team, audit existing AI-generated fixes to check whether errors were resolved at the root or just hidden." } },
-    { "@type": "Question", "name": "What should I ask an AI coding tool before accepting a bug fix?", "acceptedAnswer": { "@type": "Answer", "text": "Ask why the underlying value was invalid or null and where it originates. A genuine fix can answer that; a cosmetic one usually can't." } }
+    {
+      "@type": "Question",
+      "name": "Begrijpt een AI die code repareert daadwerkelijk de bug die hij oplost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet noodzakelijk. Hij begrijpt de fout die hem werd getoond en hoe die specifieke fout te laten stoppen, wat een enger en soms heel ander iets is dan begrijpen waarom de bug ontstond."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik zien of een AI-fix een bug tot zwijgen bracht in plaats van hem op te lossen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lees de diff. Als de fix een brede try/catch toevoegt, een stille standaard-return, of een vroegtijdige uitgang zonder logging, dan is het waarschijnlijk dat het symptoom werd onderdrukt in plaats van de oorzaak aangepakt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom is dit risicovoller voor een solo-oprichter dan voor een team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een solo-oprichter heeft meestal geen tweede reviewer die zich afvraagt of een fix echt of cosmetisch is, waardoor een tot zwijgen gebrachte bug rechtstreeks naar productie kan gaan en weken onzichtbaar kan blijven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan LaunchStudio fixes beoordelen die een AI-tool al heeft gemaakt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. De engineers van Manifera, waaronder het team in Singapore, auditen regelmatig bestaande door AI gegenereerde fixes specifiek om te controleren of fouten bij de kern zijn opgelost of alleen zijn opgevangen en verborgen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik een AI-codeertool vragen voordat ik een bugfix accepteer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vraag rechtstreeks waarom de onderliggende waarde ongeldig of null was, en waar deze vandaan komt. Een echte fix kan die vraag beantwoorden; een cosmetische meestal niet."
+      }
+    }
   ]
 }
 </script>

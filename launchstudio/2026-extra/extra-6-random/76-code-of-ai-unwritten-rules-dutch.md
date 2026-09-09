@@ -37,6 +37,19 @@ Eén bug is één bug — repareerbaar, ingeperkt, te vinden met genoeg testen. 
 
 Onze engineers gevestigd in Amsterdam besteden een aanzienlijk deel van elke codebase-review aan het specifiek zoeken naar dit patroon — het opgebouwde spoor van minst-restrictieve standaarden die zijn gekozen bij elk punt dat uw prompt openliet. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en dit soort standaardaudit is precies de discipline die die ervaring meebrengt naar een review. U kunt [verkennen wat LaunchStudio daadwerkelijk doet](https://launchstudio.eu/nl/) voordat u besluit of uw eigen app dit soort controle nodig heeft. Voor de bredere engineeringfilosofie erachter, zie [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
 
+## Een Snelle Methode om Standaardinstellingen Boven Tafel te Halen Waar U Nooit Bewust voor Heeft Gekozen
+
+Wachten tot een security-audit of een inkoopvragenlijst van een klant u confronteert met sluimerende standaardinstellingen is riskant. Een veel snellere en proactievere methode is om zélf gericht op zoek te gaan aan de hand van deze vier concrete controlepunten:
+
+**1. Inspecteer de CORS-Headers op Wildcards.** Zoek in uw backend-code naar `Access-Control-Allow-Origin`. Staat daar letterlijk een asterisk (`*`) ingevuld? Dan accepteert uw server verzoeken vanaf elke willekeurige website op aarde. Pas dit aan zodat uitsluitend uw eigen domeinnaam en staging-omgevingen expliciet worden toegestaan.
+
+**2. Controleer Standaard Database-Rechten.** Verbindt uw applicatie met de database via de standaard `postgres` of `root` superuser? Dit is de gevaarlijkste standaardwaarde: als één query lekt, heeft de aanvaller direct volledige controle over het hele databasesysteem. Creëer een applicatiespecifieke gebruiker met minimale lees- en schrijfrechten.
+
+**3. Verifieer Sessie- en Cookie-Attributen.** Zorg dat authenticatiecookies altijd zijn voorzien van de vlaggen `HttpOnly`, `Secure` en `SameSite=Lax` (of `Strict`). Zonder deze instellingen kunnen kwaadaardige scripts in de browser sessietokens rechtstreeks uitlezen via cross-site scripting (XSS).
+
+**4. Controleer de Foutmeldingen in Productie.** Toont uw applicatie bij een serverfout een gedetailleerde 'stack trace' met bestandsnamen en databaseregelnummers aan de eindgebruiker? Schakel gedetailleerde debug-foutmeldingen in productie direct uit; toon een vriendelijke melding en log de technische details uitsluitend intern.
+
+Door deze vier standaardinstellingen binnen een half uur na te lopen, dicht u direct de meest voorkomende kwetsbaarheden die AI-tools standaard achterlaten.
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de standaarden die niemand koos
@@ -83,11 +96,46 @@ Ja, het corrigeren van toestemmingen en toegangsstandaarden is doorgaans een con
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why do AI coding tools default to the least-restrictive option?", "acceptedAnswer": { "@type": "Answer", "text": "Restrictive configurations require more setup and decisions, and a tool optimized for fast working code has no built-in reason to add friction the prompt didn't request." } },
-    { "@type": "Question", "name": "How would a founder even notice this kind of gap?", "acceptedAnswer": { "@type": "Answer", "text": "Usually not through normal use since the app behaves as intended. It typically surfaces during a security review, a compliance questionnaire, or a direct inspection of settings." } },
-    { "@type": "Question", "name": "Is this a bug, or is it working as designed?", "acceptedAnswer": { "@type": "Answer", "text": "It's working as designed from the tool's perspective. The gap is that the prompt never specified caution, so the tool never applied it." } },
-    { "@type": "Question", "name": "Does Manifera specifically audit for this pattern of defaults?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Manifera's team, including engineers based in Amsterdam, reviews codebases specifically for accumulated least-restrictive defaults." } },
-    { "@type": "Question", "name": "Can these defaults be corrected without rebuilding the app?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, correcting permissions and access defaults is typically a configuration and backend-layer fix that doesn't require frontend changes." } }
+    {
+      "@type": "Question",
+      "name": "Waarom kiezen AI-codeertools standaard voor de minst-restrictieve optie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat restrictieve configuraties meer beslissingen en instellingen vereisen, en een tool die is geoptimaliseerd voor snelle, werkende code geen ingebouwde reden heeft om wrijving toe te voegen waar de prompt niet om vroeg."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zou een oprichter dit soort gat zelfs maar opmerken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Meestal niet door normaal gebruik — de app gedraagt zich precies zoals bedoeld. Het komt doorgaans aan het licht tijdens een beveiligingsreview, de compliance-vragenlijst van een klant, of een directe inspectie van database- en toestemmingsinstellingen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is dit een bug, of werkt het zoals ontworpen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het werkt precies zoals ontworpen vanuit het perspectief van de tool — het heeft de prompt uitgevoerd zoals gegeven. Het gat is dat de prompt nooit voorzichtigheid specificeerde, dus de tool paste die nooit toe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Audit Manifera specifiek op dit patroon van standaarden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Engineers van het team van Manifera, waaronder degenen gevestigd in Amsterdam, beoordelen codebases specifiek op opgebouwde minst-restrictieve standaarden, niet alleen individuele bugs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen deze standaarden worden gecorrigeerd zonder de app opnieuw te bouwen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, het corrigeren van toestemmingen en toegangsstandaarden is doorgaans een configuratie- en backend-laagfix die geen wijzigingen aan de bestaande frontend vereist."
+      }
+    }
   ]
 }
 </script>

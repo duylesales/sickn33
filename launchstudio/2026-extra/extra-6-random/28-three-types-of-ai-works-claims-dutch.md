@@ -39,6 +39,21 @@ Het gevaarlijke deel van dit hele raamwerk is dat type één, twee en drie er va
 
 Heeft u recent "het werkt" gezegd over een functie en weet u niet zeker welk type u bedoelde, dan is die onzekerheid het waard om op te lossen voordat klanten het voor u oplossen. [Stuur ons de link naar uw prototype voor gratis advies](https://launchstudio.eu/nl/#contact) over onder welk type "het werkt" uw app op dit moment daadwerkelijk opereert. Het team van Manifera voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) past dezelfde gestructureerde testdiscipline toe op enterprise-producten, waar de kostprijs van een onontdekte type-één-claim in een andere orde van grootte wordt gemeten.
 
+## Een Basischecklist om Zelf Type Drie ('Productierijp') te Bereiken
+
+De overstap maken van "de app werkt prima voor mij op mijn laptop" naar "de software blijft overeind onder omstandigheden die ik zelf nooit heb getest", vereist in eerste instantie geen compleet QA-team of kostbare testsuites. Het vereist vooral dat u doelbewust situaties simuleert die u als bouwer normaal gesproken instinctief vermijdt:
+
+**1. De Twee-Browsers-Tegelijk Test.** Open twee verschillende browsers (bijvoorbeeld Chrome en Firefox) of één normaal venster en één incognitovenster. Log in met twee verschillende testaccounts (Klant A en Klant B). Wijzig gegevens van Klant A en verifieer dat Klant B die wijzigingen niet ziet én op geen enkele manier via de URL toegang kan krijgen tot de records van Klant A.
+
+**2. De Verbroken Verbinding Test.** Open de Developer Tools in uw browser, ga naar het tabblad 'Network', en zet de snelheid op 'Slow 3G' of klik halverwege een formulierinzending op 'Offline'. Reageert de interface met een duidelijke foutmelding en de mogelijkheid om het opnieuw te proberen, of bevriest het scherm en raakt de data corrupt?
+
+**3. De Ongeldige Invoer en Grenswaarden Test.** Voer in tekstvelden extreem lange teksten in (10.000 tekens), gebruik vreemde tekensets (zoals Chinese karakters, emoji's en HTML-tags zoals `<script>`), en voer negatieve getallen in op plekken waar prijzen of aantallen worden gevraagd. Een productierijpe app weigert deze invoer netjes met een validatiemelding aan de serverzijde.
+
+**4. De Dubbelklik en Race-Condition Controle.** Klik tien keer razendsnel achter elkaar op de knop 'Bestelling afronden' of 'Account aanmaken'. Wordt er netjes één enkele transactie verwerkt, of staan er plotseling tien identieke records in uw database en worden er tien bevestigingsmails verstuurd?
+
+Door deze basale stresstests stelselmatig uit te voeren vóórdat u uw eerste echte gebruikers toelaat, vangt u de meest gênante fouten af en tilt u uw software naar een niveau van betrouwbaarheid dat zakelijke klanten verwachten.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de admin-only app van Jesse van Dam
@@ -85,11 +100,46 @@ De engineers van Manifera, waaronder die gevestigd in Singapore, zijn getraind o
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the difference between the three types of \"it works\" claims?", "acceptedAnswer": { "@type": "Answer", "text": "Type one means it works for the founder's own account only. Type two means a small group has tried it within limited conditions. Type three means it's been deliberately tested beyond the founder's own use." } },
-    { "@type": "Question", "name": "Why is type three so hard to reach on your own?", "acceptedAnswer": { "@type": "Answer", "text": "It requires testing scenarios you have no personal reason to try, like different account types or out-of-order actions." } },
-    { "@type": "Question", "name": "How do role-based bugs like Jesse van Dam's usually get discovered?", "acceptedAnswer": { "@type": "Answer", "text": "Usually by accident, when someone with a different account type uses the app and something silently fails that never failed for the founder." } },
-    { "@type": "Question", "name": "Does reaching type three require rebuilding the app?", "acceptedAnswer": { "@type": "Answer", "text": "No, it typically requires structured testing and targeted fixes rather than a full rebuild." } },
-    { "@type": "Question", "name": "How does Manifera's team approach testing for this gap?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineers, including those based in Singapore, explicitly test across account types and conditions the founder hasn't personally tried." } }
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen de drie soorten \"het werkt\"-claims?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Type één betekent dat het alleen werkt voor het eigen account van de oprichter. Type twee betekent dat een kleine groep testers het heeft geprobeerd, nog steeds binnen een beperkt scala aan omstandigheden. Type drie betekent dat het doelbewust is getest onder omstandigheden die de oprichter zelf niet natuurlijk zou proberen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom is type drie zo moeilijk op eigen kracht te bereiken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat het vereist dat u scenario's test waar u persoonlijk geen reden toe heeft — verschillende accounttypes, handelingen in een onverwachte volgorde, edge-case-toestemmingen — die zich niet vanzelf onthullen door normaal gebruik van uw eigen product."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe worden rolgebonden bugs zoals die van Jesse van Dam meestal ontdekt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Meestal per toeval, wanneer iemand met een ander accounttype of toestemmingsniveau de app voor het eerst gebruikt en er iets stilzwijgend faalt dat nooit faalde voor de oprichter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vereist het bereiken van type drie een herbouw van de app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Meestal is gestructureerd testen en gerichte oplossingen voor specifieke logica nodig, zoals in het geval van MeldPunt, geen herbouw van het product zelf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe pakt het team van Manifera het testen voor deze kloof aan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De engineers van Manifera, waaronder die gevestigd in Singapore, zijn getraind om expliciet te testen over accounttypes en omstandigheden die de oprichter zelf niet heeft geprobeerd, in plaats van één succesvolle test te accepteren als bewijs dat de functie werkt."
+      }
+    }
   ]
 }
 </script>

@@ -72,6 +72,18 @@ There's also a practical middle ground worth considering if your organization is
 
 Talk to one of our senior architects about your specific stack and modernization plans before you commit — a short technical conversation now is considerably cheaper than a migration project you didn't budget for later, and it costs you nothing but the time it takes to ask the questions this article laid out.
 
+## Five Signals to Check in Fifteen Minutes of a Real Code Review
+
+You don't need to be a developer to run this check — you need fifteen minutes with someone who is, looking at a redacted repository from a candidate vendor's past project. Five specific signals separate a portable codebase from one quietly built to entrench a single vendor:
+
+1. **Dependency versions are pinned and current**, not frozen at whatever was available when the project started three years ago with no update history since.
+2. **Folder structure matches a widely recognized convention** for the framework in use, not a custom layout that only makes sense with tribal knowledge.
+3. **A README exists and is dated recently**, not a stub written once at kickoff and never touched again as the system evolved.
+4. **Configuration and secrets are externalized**, not hardcoded into files that would require rewriting to hand off to infrastructure a new team controls.
+5. **Custom abstractions are documented with a "why," not just a "what"** — a wrapper around a standard library function needs a comment explaining the business reason it exists, or a new team will assume it's load-bearing when it isn't, or vice versa.
+
+Score a candidate vendor 0-5 on this list using one of their own past projects as the sample. A score below 3 is a strong predictor of the exact welded-in dependency this article is about — and it's checkable before you sign, not after a modernization budget request three years from now.
+
 ## Frequently Asked Questions
 
 ### What is software stack lock-in and why does it matter during vendor selection?
@@ -88,6 +100,22 @@ Ask for a documentation sample from a comparable past project, confirm in writin
 
 ### Is vendor lock-in only a risk for large enterprise software systems?
 No, lock-in risk scales with how central a system becomes to daily operations rather than with its original budget or company size. A smaller internal tool built with poor documentation and non-standard conventions can become just as difficult to replace as an expensive enterprise platform once it becomes embedded in daily workflows.
+
+### (Scenario: An IT Manager reviews a candidate vendor's sample repository and finds a README last updated at project kickoff two years ago) What does a stale README from a past project actually tell me about a vendor's lock-in risk?
+
+It's one of the most reliable single signals available, because a README that stopped being updated after kickoff means documentation was treated as a one-time deliverable rather than an ongoing practice. A vendor who keeps documentation current as a codebase evolves is far more likely to hand you a portable system than one who wrote it once to satisfy an early client request.
+
+### (Scenario: A candidate vendor's sample project scores 4 out of 5 on the portability checklist but has hardcoded configuration values) Should hardcoded configuration alone disqualify a vendor even if the rest of the codebase looks portable?
+
+Not automatically, but it's worth a direct follow-up question rather than dismissal, since hardcoded secrets and configuration are one of the more common and fixable portability gaps. Ask specifically how they'd propose externalizing configuration during onboarding, and treat a vague or defensive answer as more concerning than the finding itself.
+
+### (Scenario: An IT Manager only has access to redacted code samples, not full repositories, when evaluating vendor finalists) Can I run the five-signal portability check on a redacted code sample instead of the full repository?
+
+Yes, all five signals — dependency pinning, folder structure, README currency, configuration externalization, and documented abstractions — are visible in a redacted sample as long as the vendor doesn't strip out the structural and documentation elements along with the sensitive business logic. Ask specifically for a sample that preserves structure and comments even where the business logic itself is redacted.
+
+### (Scenario: A vendor's sample repository scores well on the checklist, but the IT Manager wants a second opinion before committing) How much weight should the five-signal code review carry relative to the four myths and the "what to verify" checklist earlier in this article?
+
+Treat it as complementary, not a replacement — the myths and verification checklist test what a vendor says and commits to in writing, while the five-signal review tests what they've actually done on a past project. A vendor who talks well but scores poorly on the code review, or vice versa, is exactly the mismatch this two-part evaluation is designed to catch.
 
 <script type="application/ld+json">
 {
@@ -118,6 +146,26 @@ No, lock-in risk scales with how central a system becomes to daily operations ra
       "@type": "Question",
       "name": "Is vendor lock-in only a risk for large enterprise software systems?",
       "acceptedAnswer": {"@type": "Answer", "text": "No, lock-in risk scales with how central a system becomes to daily operations rather than with its original budget or company size. A smaller internal tool built with poor documentation and non-standard conventions can become just as difficult to replace as an expensive enterprise platform once it becomes embedded in daily workflows."}
+    },
+    {
+      "@type": "Question",
+      "name": "What does a stale README from a past project actually tell me about a vendor's lock-in risk?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It's one of the most reliable single signals available, since a README that stopped updating after kickoff means documentation was a one-time deliverable, not an ongoing practice. A vendor who keeps documentation current is far more likely to hand you a portable system."}
+    },
+    {
+      "@type": "Question",
+      "name": "Should hardcoded configuration alone disqualify a vendor even if the rest of the codebase looks portable?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Not automatically, but it's worth a direct follow-up question, since hardcoded secrets and configuration are a common and fixable gap. Ask how they'd propose externalizing configuration during onboarding, and treat a defensive answer as more concerning than the finding itself."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can I run the five-signal portability check on a redacted code sample instead of the full repository?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes, all five signals are visible in a redacted sample as long as the vendor doesn't strip structural and documentation elements along with sensitive business logic. Ask for a sample that preserves structure and comments even where business logic is redacted."}
+    },
+    {
+      "@type": "Question",
+      "name": "How much weight should the five-signal code review carry relative to the four myths and the verification checklist earlier in this article?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Treat it as complementary, not a replacement. The myths and checklist test what a vendor says and commits to in writing, while the code review tests what they've actually done on a past project — the mismatch between the two is exactly what this evaluation is designed to catch."}
     }
   ]
 }

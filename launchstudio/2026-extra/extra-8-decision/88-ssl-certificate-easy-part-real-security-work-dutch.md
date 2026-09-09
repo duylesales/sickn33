@@ -70,8 +70,7 @@ Voordat een AI-gebouwd prototype echte klantdata verwerkt of betalingen afhandel
 
 [Plan een uitgebreide beveiligingsaudit voor uw applicatie](https://launchstudio.eu/nl/#contact) — ga live in de wetenschap dat de data van uw gebruikers écht beschermd is.
 
-## Praktijkvoorbeeld
-
+## Echt voorbeeld
 ### Een Indie Hacker in de Praktijk: Van Groen Slotje naar Enterprise Beveiligingsgoedkeuring
 
 Lennart de Boer, een ontwikkelaar in Delft, bouwde OfferteGenie — een AI-tool die offertes genereert voor bouwprojecten van aannemers. Hij deployde op Vercel met automatische SSL en ging ervan uit dat zijn beveiliging compleet was.

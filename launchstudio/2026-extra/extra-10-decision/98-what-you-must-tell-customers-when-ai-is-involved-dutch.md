@@ -29,56 +29,73 @@ Deze verschuiving raakt vroege startups en indie-hackers even hard als grote ent
 
 Als software-oprichter hoeft u geen jurist te worden. U moet wél weten welke features een meldingsplicht triggeren, wáár u die melding in uw applicatie moet tonen en hoe u geautomatiseerde besluitvorming juridisch afbakent.
 
+
 ## Drie Bronnen van Verplichtingen
 
-Het helpt om de drie juridische kaders strikt uit elkaar te houden:
+Het helpt om de juridische en praktische verplichtingen rondom AI scherp van elkaar te scheiden, omdat ze vanuit verschillende invalshoeken van toepassing zijn.
 
-### 1. De Transparantieregels van de EU AI Act (Artikel 50)
-Dit is de kern voor reguliere softwareproducten:
-- **Interactie met mensen:** Eindgebruikers moeten tijdig en duidelijk worden geïnformeerd dat zij communiceren met een AI-systeem (zoals een chatbot) en niet met een echt mens.
-- **Gegenereerde content:** Teksten, afbeeldingen of audio die door AI zijn gegenereerd of gemanipuleerd en die redelijkerwijs voor authentiek kunnen worden aangezien, moeten als zodanig herkenbaar zijn (via visuele labels of machine-leesbare watermerken).
+**De transparantieregels van de Europese AI-verordening (EU AI Act).** Dit zijn de regels die het meest direct relevant zijn voor alledaagse softwareproducten. In de kern: mensen moeten verplicht worden geïnformeerd wanneer ze interacteren met een AI-systeem in plaats van een mens (zoals een AI-chatbot of supportassistent), en bepaalde door AI gegenereerde of bewerkte content moet herkenbaar zijn als zodanig. Deze transparantie-eisen gelden ongeacht of het onderliggende systeem wordt geclassificeerd als een hoogrisicosysteem; het zijn de eerste verplichtingen waarmee een typisch SaaS-product te maken krijgt.
 
-### 2. Geautomatiseerde Besluitvorming onder de AVG (Artikel 22)
-Dit is een lang bestaande, zware verplichting die losstaat van de AI Act:
-Wanneer een besluit dat juridische of vergelijkbare wezenlijke gevolgen heeft voor een persoon (zoals kredietwaardigheid, toelating, huurtoewijzing of schorsing van een account) **volledig geautomatiseerd** wordt genomen, heeft de betrokkene specifieke rechten:
-- Het recht op begrijpelijke uitleg over de onderliggende logica.
-- Het recht op **menselijke tussenkomst**.
-- Het recht om het besluit formeel aan te vechten.
+**De AVG-regels rondom geautomatiseerde besluitvorming (AVG art. 22).** Dit is een al lang bestaande wetgeving die volledig losstaat van de AI Act. Wanneer een besluit uitsluitend gebaseerd is op geautomatiseerde verwerking en rechtsgevolgen heeft of een betrokkene in aanmerkelijke mate treft — zoals bij geschiktheid voor een baan, kredietwaardigheid, uitkeringsclaims of het opschorten van een account — heeft het individu specifieke rechten: het recht op zinvolle informatie over de achterliggende logica, het recht op menselijke tussenkomst, en het recht om het besluit aan te vechten. Dit is een zware juridische verplichting, en deze wordt geactiveerd door de maatschappelijke consequentie van het besluit, niet door de specifieke technologie.
 
-### 3. De Beroepsplichten van Uw Zakelijke Klanten
-Wanneer een accountant, advocaat, zorgverlener of woningcorporatie uw software gebruikt, hebben zij een wettelijke zorgplicht naar hun eigen cliënten. Zij móeten weten welke gegevens automatisch zijn gegenereerd om hun eigen beroepsaansprakelijkheid te waarborgen.
+**Sectorspecifieke beroepsregels en de eigen verplichtingen van uw klanten.** Een arts, accountant, financieel adviseur of jurist die uw software gebruikt, heeft professionele tuchtrechtelijke en ethische plichten over waarop hij mag vertrouwen en wat hij moet openbaren. Zelfs wanneer een wet u als softwareleverancier niet direct bindt, moet uw product uw zakelijke klanten in staat stellen om aan hún professionele verplichtingen te voldoen — wat in de praktijk betekent dat zij exact moeten kunnen zien welke gegevens automatisch door AI zijn gegenereerd.
+
+De pragmatische vuistregel voor een groeiend softwareproduct: ga ervan uit dat u gebruikers altijd moet vertellen wanneer ze met een machine communiceren en wanneer content door een machine is gegenereerd, en behandel elke functie die een zwaarwegend besluit over een persoon neemt als een proces dat verplicht een mens in de loop vereist.
 
 ## Waar Hoort de Mededeling Thuis?
 
-Een vage disclaimer van één regel, ergens verstopt in artikel 14 van uw algemene voorwaarden, **voldoet volgens toezichthouders aan geen enkele eis**.
+Een weggemoffelde regel onderaan uw algemene voorwaarden stelt niemand tevreden, en zeker geen toezichthouder. Transparantie en openbaarmaking moeten plaatsvinden op de exacte plek waar de gebruiker met de feature in aanraking komt.
 
-De melding moet worden geplaatst op de exacte plek waar de gebruiker met de feature in aanraking komt:
+**Bij conversatiefuncties en chatbots.** Als een klant of eindgebruiker redelijkerwijs zou kunnen denken dat hij met een menselijke medewerker chat, meld dan direct bij aanvang van de conversatie helder en ondubbelzinnig dat het een geautomatiseerde AI-assistent betreft. Dit is de duidelijkste eis uit de AI Act en de eenvoudigste om direct te implementeren.
 
-- **Bij Chatbots en Conversatie-interfaces:** Direct bij de opening van het gesprek. Een nuchtere melding: *"U chat met de virtuele AI-assistent van [Product]"*. Bied daarnaast altijd een duidelijke optie aan om doorverbonden te worden met een menselijke medewerker.
-- **Bij Gegenereerde Samenvattingen en Rapporten:** Plaats een subtiel label direct boven of onder de tekst: *"Automatisch samengesteld door AI — controleer belangrijke termijnen en bedragen altijd zelf"*.
-- **In Uw Helpcentrum en Documentatie:** Een transparant overzicht van welke AI-modellen worden gebruikt, welke data wordt verwerkt en waar deze data wordt gehost.
+**Bij gegenereerde content in de gebruikersinterface.** Label gegenereerde tekst direct in het scherm waar deze verschijnt, niet in een extern helpcenter-artikel. Een subtiele badge of tekstlabel naast een samenvatting, conceptbericht of adviesrapport (*"Samenvatting gegenereerd door AI — controleer vóór verzending"*) volstaat en kost slechts enkele minuten om in te bouwen.
+
+**Bij content die naar de buitenwereld wordt gepubliceerd.** Alles wat uw product produceert en extern gepubliceerd kan worden — teksten, afbeeldingen, audiofragmenten — moet herkenbaar zijn als machine-gegenereerd. Waar machineleesbare watermerken of metadata (*watermarking*) technisch haalbaar zijn, bieden modelproviders daar steeds vaker ondersteuning voor; waar dat ontbreekt, is een zichtbare schriftelijke vermelding het praktische minimum.
+
+**In uw technische documentatie.** Een heldere beschrijving van welke functies AI benutten, welke specifieke data zij verwerken, en bij welke externe hostingproviders dat gebeurt. Niet primair voor toezichthouders, maar vooral voor de zakelijke IT- en compliance officer die hierom vraagt tijdens het inkooptraject, en voor uw eigen interne overzicht.
+
+De visuele plaatsing weegt veel zwaarder dan breedsprakigheid. Niemand zit te wachten op een alinea juridisch jargon; een beknopte, eerlijke instructie direct bij de knop werkt vele malen beter.
 
 ## Beslissingen Over Mensen Vereisen Altijd een Mens (*Human-in-the-Loop*)
 
-Het grootste juridische risico zit niet in een chatbot, maar in **geautomatiseerde besluitvorming**. En die bouwen founders vaak per ongeluk in.
+De verplichting die het grootste juridische en aansprakelijkheidsrisico met zich meebrengt is niet openbaarmaking — het is **volledig geautomatiseerde besluitvorming**, en dat wordt verrassend vaak per ongeluk gebouwd.
 
-Stel: uw software scoort sollicitanten, classificeert subsidieaanvragen of bepaalt de urgentie van huurdersreparaties:
-Als het algoritme op basis van die score zélfstandig een verzoek afwijst of achteraan in de wachtrij plaatst, overtreedt u AVG Artikel 22!
+Een softwareproduct dat sollicitanten automatisch afwijst op basis van een cv-score, fraudemeldingen prioriteert, kredietlimieten toekent, accounts blokkeert of mensen rangschikt voor toegang tot een dienst, neemt beslissingen met aanzienlijke gevolgen voor individuen. Als die besluiten uitsluitend autonoom door het AI-algoritme worden genomen, verleent de AVG (art. 22) de getroffen personen verstrekkende rechten, en stelt de Europese AI Act buitengewoon strenge conformiteitseisen aan dergelijke hoogrisicosystemen.
 
-**De oplossing:** Zorg dat het AI-model uitsluitend een **advies** formuleert. Een bevoegde medewerker moet de beslissing beoordelen, over de juiste context beschikken om gemotiveerd af te wijken, en de definitieve keuze handmatig bevestigen. Registreer in uw database wie de beslissing heeft genomen en wanneer.
+De eenvoudigste en meest robuuste manier om juridisch veilig te blijven, is garanderen dat altijd een mens de uiteindelijke beslissing neemt (*Human-in-the-Loop*). En dan geen medewerker die gedachteloos een lijst van vijftig records blind goedkeurt (*rubber-stamping*), maar een professional die het specifieke dossier daadwerkelijk kan inzien, over voldoende context beschikt om gefundeerd af te wijken van het AI-advies, en dat in de praktijk ook regelmatig doet. Het AI-model stelt een concept voor; een bevoegd mens hakt de knoop door en dat wordt vastgelegd.
+
+Drie concrete ontwerpregels maken dit in de praktijk juridisch verdedigbaar:
+1. De AI-output wordt in de interface visueel gepresenteerd als een advies of concept, nooit als een onherroepelijk vonnis.
+2. De menselijke beoordelaar kan direct inzien op welke brondata en argumenten de aanbeveling is gebaseerd.
+3. Het definitieve besluit — inclusief de identiteit van de medewerker die de actie accordeerde en de exacte tijdstempel — wordt onveranderlijk vastgelegd in een auditlog.
+
+Het bouwen van AI-functies met heldere disclosures op de juiste plekken, menselijke controle waar beslissingen gevolgen hebben, en een sluitende audit trail die beide aantoont, is een specifiek en afgebakend stuk software-engineering. LaunchStudio, ondersteund door meer dan 11 jaar enterprise engineering-ervaring bij Manifera, implementeert deze patronen als vast onderdeel van het klaarmaken van AI-applicaties voor echte zakelijke klanten. [Beschrijf uw project](https://launchstudio.eu/nl/#contact) voor een grondige review binnen één werkdag.
 
 ## Transparantie Is de Beste Vorm van Zelfbescherming
 
-Buiten de wet om is openheid simpelweg uw beste commerciële schild:
+Laten we het strikt juridische kader even terzijde schuiven: het puur commerciële argument wijst exact dezelfde kant op.
 
-- Een **niet-gelabelde AI-fout** wordt door de klant ervaren als een ernstige softwarebug of een flagrante leugen van uw bedrijf.
-- Een **duidelijk gelabelde AI-suggestie** is een handig concept dat de gebruiker geacht werd even kort na te kijken.
+Een ongelabelde AI-output die een ernstige fout of hallucinatie bevat, is een directe leugen die door uw softwareproduct zélf als absolute waarheid wordt verkondigd. Een expliciet gelabelde output is daarentegen een conceptvoorstel dat de gebruiker nadrukkelijk werd uitgenodigd om zelf te verifiëren. Het verschil in hoe een juridische klacht of aansprakelijkheidsstelling verloopt is gigantisch — en het kost u slechts één regel tekst in de gebruikersinterface.
 
-Het verschil in de afhandeling van een juridische klacht of aansprakelijkheidsstelling is gigantisch — en het kost u letterlijk één regel tekst in uw interface. Bovendien zijn gebruikers in 2026 volwassen genoeg: zij waarderen eerlijkheid over AI-inzet juist meer dan valse pretenties van menselijkheid.
+Het openlijk labelen van AI tempert bovendien de verwachtingen van de gebruiker en reduceert uw supporttickets drastisch. Klanten die weten dat een tekst automatisch is opgesteld, accepteren een kleine onvolkomenheid als iets normaals in plaats van als een defect dat onmiddellijk moet worden geëscaleerd. En in professionele zakelijke omgevingen stelt het uw klanten in staat om aan hun eigen beroepsaansprakelijkheid te voldoen — wat dikwijls de enige reden is waarom ze uw software überhaupt mogen aanschaffen.
 
-Bij LaunchStudio en Manifera (met meer dan 11 jaar ervaring in enterprise software) implementeren we EU AI Act-transparantielabels, *Human-in-the-Loop* besluitvormingsflows en compliance-overzichten tijdens onze [Launch Ready-trajecten](https://launchstudio.eu/nl/#packages). [Bespreek uw AI-transparantie met ons](https://launchstudio.eu/nl/#contact) — wij zorgen dat uw software voldoet aan de nieuwste Europese regelgeving.
+De angst die sommige oprichters uiten — dat het toegeven van AI-inzet het vertrouwen in hun product zou ondermijnen — is inmiddels achterhaald. Zakelijke gebruikers gaan er anno 2026 al standaard van uit dat er AI in het spel is. De softwarebedrijven die reputatieschade oplopen zijn niet de partijen die transparant zijn, maar juist de producten die AI heimelijk probeerden te verbergen en ontmaskerd werden.
 
-## Praktijkvoorbeeld
+## Wat U Nú Al Moet Documenteren
+
+Maak vandaag nog een beknopt intern register aan (een zogenaamd AI-inventarisatiedocument) en werk dit bij zodra er features bijkomen of wijzigen. Dit document bevat:
+- Welke specifieke features binnen uw applicatie maken gebruik van externe of interne AI, en voor welk doel?
+- Welke datavelden worden door elke feature verstuurd, en naar welke modelprovider?
+- Waar vindt de gegevensverwerking geografisch plaats (*data residency*)?
+- Wordt de output direct aan een mens getoond ter beoordeling, of wordt er automatisch een actie op ondernomen?
+- Vormt de output op enigerlei wijze een besluit of score over een individu?
+- Welke transparantiemelding (*disclosure*) wordt exact getoond aan de gebruiker, en op welke plek in de interface?
+
+Het opstellen van dit overzicht kost u hooguit een uur werk, maar dient gelijktijdig drie cruciale doelen: het beantwoordt direct 90% van de security- en inkoopvragenlijsten van grote zakelijke klanten; het vormt het fundament van uw verplichte AVG-privacybeleid; en het stelt u in staat om exact te bepalen of uw software geraakt wordt wanneer nieuwe bepalingen uit de Europese AI Act stapsgewijs in werking treden.
+
+Dit artikel vormt geen juridisch advies. Een softwareproduct dat ingrijpende beslissingen over mensen neemt of opereert in een sterk gereguleerde sector (zoals de medische of financiële wereld) moet altijd een gespecialiseerde jurist raadplegen. Maar een compleet en actueel AI-register is de absolute voorwaarde voor dat adviesgesprek — en het hebben ervan maakt dat gesprek kort, to-the-point en betaalbaar.
+
+## Echt voorbeeld
 
 ### De Klantenservice-Bot Die Voor een Mens Werd Aangezien
 
@@ -101,6 +118,7 @@ De juridische afdeling van de corporatie stelde een direct onderzoek in en concl
 > — **Eline Vos, Oprichter, Huurhulp**
 
 **Kosten & Doorlooptijd:** AI transparantie-UI, Human-in-the-Loop workflows en EU compliance documentatie opgeleverd in 3 werkdagen.
+
 
 ## Veelgestelde Vragen
 

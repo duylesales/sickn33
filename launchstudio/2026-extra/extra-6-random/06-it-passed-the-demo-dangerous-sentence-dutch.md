@@ -35,6 +35,21 @@ Dit is eigenlijk een kloof tussen twee heel verschillende soorten vertrouwen. "H
 
 LaunchStudio brengt Manifera's team van 120+ ervaren technici naar precies deze kloof, en voert de gelijktijdigheids-, belastings- en faalpadtests uit die een solo-demo structureel niet kan dekken, met technici gevestigd in Ho Chi Minhstad die gespecialiseerd zijn in het stresstesten van door AI gegenereerde backends voordat echte gebruikers de scheuren vinden. Als uw app alleen ooit door uzelf is getest, [praat dan met een technicus die door AI gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) over wat een echte pre-launchtest daadwerkelijk dekt. Manifera's eigen proces voor [softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/) behandelt dit soort testen als een verplichte fase, niet als een optionele extra.
 
+## De Blinde Vlekken Die een Solo-Demo Structureel Niet Kan Detecteren
+
+Gelijktijdigheid (concurrency) is het meest in het oog springende voorbeeld van een blinde vlek bij lokale demonstraties, maar het is slechts één van de vier categorieën van condities die een solo-demo van nature niet kan testen. Wie zijn applicatie uitsluitend test als één enkele gebruiker op één enkel apparaat, mist structureel de volgende dynamieken:
+
+**1. Gelijktijdige gegevensmanipulatie (Race Conditions).** Wanneer twee gebruikers tegelijkertijd exact dezelfde actie uitvoeren — zoals het reserveren van het laatste beschikbare tijdslot, het inwisselen van een eenmalige kortingscode of het bijwerken van dezelfde inventaris — faalt een eenvoudige `SELECT` gevolgd door een `UPDATE`. Zonder database-transacties en vergrendelingsmechanismen (zoals database locks of unieke constraints) kunnen beide handelingen slagen, met dubbele boekingen of inconsistente saldi tot gevolg.
+
+**2. Sessie-inconsistenties over meerdere apparaten.** Een solo-oprichter test doorgaans in één browser. In de echte wereld logt een klant in op zowel desktop als mobiel, opent meerdere tabbladen tegelijk of blijft dagenlang ingelogd op een verouderde sessie. Als tokens niet correct worden gesynchroniseerd of herroepen bij wachtwoordwijzigingen, leidt dit tot onverklaarbare uitlogfouten of ongeautoriseerde toegang via oude sessies.
+
+**3. Netwerklatentie en mislukte tussenstappen.** Op uw lokale ontwikkelmachine heeft elk netwerkverzoek een latentie van 0 milliseconden en slaagt elke aanroep direct. In productie hebben mobiele gebruikers haperende 4G-verbindingen en vallen API-aanroepen halverwege uit. Een applicatie die niet is ontworpen om tijdelijke netwerkfouten elegant op te vangen, blijft hangen in oneindige laadanimaties of creëert half-voltooide records in de database.
+
+**4. Echte datavolumes versus lege tabellen.** Een prototype met vijf testrecords reageert razendsnel, zelfs met ongeïndexeerde query's en inefficiënte loops. Zodra er duizenden rijen in de database staan, lopen dezelfde ongeoptimaliseerde database-aanroepen vast in time-outs en trekken ze het gehele serverplatform plat.
+
+Een demo bewijst uitsluitend dat de functionaliteit werkt onder de meest ideale omstandigheden die denkbaar zijn. Productierijpheid betekent dat de software ook betrouwbaar blijft functioneren wanneer omstandigheden verre van ideaal zijn.
+
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: het ticket dat twee mensen tegelijk kochten
@@ -81,11 +96,46 @@ Probeer dezelfde actie vanuit twee browsersessies tegelijk te triggeren, dubbelk
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Why doesn't a successful demo prove an app is production-ready?", "acceptedAnswer": { "@type": "Answer", "text": "A demo run by one person tests a single familiar path, while production use involves multiple simultaneous users and failure conditions a founder wouldn't naturally reproduce alone." } },
-    { "@type": "Question", "name": "What kind of bugs only show up under concurrent use?", "acceptedAnswer": { "@type": "Answer", "text": "Race conditions, such as two people successfully purchasing the same last ticket, where the system doesn't check for a simultaneous conflict." } },
-    { "@type": "Question", "name": "Do AI coding tools handle concurrency by default?", "acceptedAnswer": { "@type": "Answer", "text": "Usually not unless explicitly requested — most AI-generated flows are built and validated against a single-path, single-user scenario." } },
-    { "@type": "Question", "name": "How does LaunchStudio test for this before launch?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineers, including the team in Ho Chi Minh City, run load and concurrency tests simulating simultaneous users to surface race conditions." } },
-    { "@type": "Question", "name": "What should I test myself before assuming my app is ready?", "acceptedAnswer": { "@type": "Answer", "text": "Try the same action from two browser sessions at once, double-click submit buttons, and interrupt a flow midway to catch common production-breaking bugs." } }
+    {
+      "@type": "Question",
+      "name": "Waarom bewijst een geslaagde demo niet dat een app productieklaar is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een demo uitgevoerd door één persoon test één bekend pad, terwijl echt productiegebruik meerdere gelijktijdige gebruikers, faalcondities en edge cases met zich meebrengt die een oprichter alleen niet natuurlijk zou reproduceren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat voor bugs verschijnen alleen bij gelijktijdig gebruik?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Race conditions — zoals twee mensen die succesvol hetzelfde laatste ticket kopen, of hetzelfde voorraaditem — waarbij twee acties bijna op hetzelfde moment gebeuren en het systeem niet controleert op het conflict."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Handelen AI-codeertools gelijktijdigheid standaard af?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Meestal niet, tenzij expliciet gevraagd. De meeste door AI gegenereerde stromen worden gebouwd en gevalideerd tegen een scenario met één pad en één gebruiker, wat precies is wat een demo ook test."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe test LaunchStudio hierop vóór de lancering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De technici van Manifera, waaronder het team in Ho Chi Minhstad, voeren belastings- en gelijktijdigheidstests uit die meerdere gelijktijdige gebruikers dezelfde actie laten uitvoeren, specifiek ontworpen om race conditions aan het licht te brengen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik zelf testen voordat ik aanneem dat mijn app klaar is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Probeer dezelfde actie vanuit twee browsersessies tegelijk te triggeren, dubbelklik op verzendknoppen en onderbreek een stroom halverwege — deze eenvoudige tests vangen een verrassend aantal productiebrekende bugs."
+      }
+    }
   ]
 }
 </script>

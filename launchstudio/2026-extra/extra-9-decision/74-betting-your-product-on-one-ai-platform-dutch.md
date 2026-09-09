@@ -65,7 +65,7 @@ Kennisgevingen over het stopzetten van een model (deprecation notices) geven doo
 
 [Beschrijf uw huidige AI-architectuur en wij brengen uw specifieke leveranciersrisico's binnen één werkdag in kaart](https://launchstudio.eu/nl/#contact) — de meeste oprichters schrikken van de mate waarin hun codebase verweven is geraakt met één specifieke API-structuur.
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Het Leermoment van een AI-Schrijftool: De Deprecatiemelding Tijdens de Lanceerweek
 

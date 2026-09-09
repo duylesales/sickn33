@@ -61,6 +61,12 @@ Beyond the seven steps above, build in a specific "customer communication trigge
 
 Book a pre-launch technical review with our engineering team before you flip the switch — [reach out to us](https://www.manifera.com/contact-us/) with your go-live date and we'll walk through your specific migration plan against this checklist while there's still time to fix any gaps.
 
+## The DNS TTL Mistake That Doubles Your Cutover Window
+
+A detail teams routinely miss until it costs them: DNS Time-To-Live (TTL) values need to be lowered days before cutover, not the night of. If your current DNS record carries a standard 24-hour or even 4-hour TTL, some portion of global DNS resolvers and ISP caches will keep serving the old IP address for that full duration after you flip the record, meaning some customers hit the old platform and some hit the new one simultaneously — a split-brain state that's especially dangerous if the old platform's database is no longer accepting writes. Lower the TTL to 300 seconds (5 minutes) at least 48 hours before cutover, confirm the lowered value has actually propagated by querying from multiple geographic locations, and only then proceed with the DNS change itself.
+
+The same principle applies to CDN and browser caching, which independently extends the same risk. Purge your CDN's edge cache immediately after cutover rather than waiting for natural expiry, and set `Cache-Control` headers on the new platform's critical pages (checkout, cart, account) to prevent browsers from serving stale cached versions to returning visitors who last visited the old site minutes before the switch. Teams that handle DNS TTL correctly but skip the CDN purge step still see a meaningful percentage of go-live support tickets from customers seeing a mix of old and new page elements — a visually confusing, entirely avoidable failure mode that has nothing to do with the new platform's actual functionality.
+
 ## Frequently Asked Questions
 
 ### How far in advance should we freeze scope before a webshop platform migration go-live?
@@ -77,6 +83,18 @@ A single, specifically named person should hold rollback authority, along with a
 
 ### How long should we monitor closely after a webshop platform migration go-live?
 Assign dedicated, specific monitoring ownership for at least the first 72 hours post-launch, covering checkout conversion, error rates, and customer support ticket themes, with predefined thresholds for escalation. Many issues that seem resolved in the first few hours resurface once traffic patterns normalize over a full business cycle, so don't scale monitoring back too early.
+
+### (Scenario: DNS TTL left at default before cutover) How early should we lower our DNS TTL before a webshop migration go-live?
+Lower the TTL to around 300 seconds at least 48 hours before cutover, and confirm the lowered value has actually propagated by querying from multiple geographic locations before proceeding. Skipping this step means some customers keep hitting the old platform for up to 24 hours after cutover while others reach the new one, a split-brain state that's especially dangerous once the old database stops accepting writes.
+
+### (Scenario: multi-region CDN serving cached pages post-cutover) Do we need to manually purge our CDN cache after a webshop migration, or will it expire naturally?
+Purge the CDN's edge cache immediately after cutover rather than waiting for natural expiry, since edge nodes in different regions can serve stale cached pages for hours depending on your existing cache TTL settings. Also set explicit `Cache-Control` headers on checkout, cart, and account pages on the new platform to stop browsers from serving stale cached versions to returning visitors.
+
+### (Scenario: third-party analytics and tag manager scripts not re-verified) What third-party scripts most often break silently during a webshop platform migration?
+Google Tag Manager containers, conversion pixels for ad platforms, and customer support chat widgets are the most common casualties, since they're frequently embedded via the old platform's specific templating system rather than a portable snippet. Verify each third-party script fires correctly on the new platform's checkout and confirmation pages specifically, since a broken conversion pixel there silently corrupts your ad spend attribution for weeks before anyone notices.
+
+### (Scenario: native mobile app deep links pointing to old webshop URLs) Will our mobile app's deep links still work after a webshop platform migration?
+Only if the new platform's URL structure matches what your app's deep links expect, or if you've mapped equivalent redirects at the app-link association file level (apple-app-site-association or Digital Asset Links for Android), which is a separate check from your website's own SEO redirects. Test deep links from an actual installed app build against the new production environment before go-live, since app store review cycles mean a broken deep link can't be hotfixed as quickly as a website redirect.
 
 <script type="application/ld+json">
 {
@@ -138,6 +156,26 @@ Assign dedicated, specific monitoring ownership for at least the first 72 hours 
       "@type": "Question",
       "name": "How long should we monitor closely after a webshop platform migration go-live?",
       "acceptedAnswer": {"@type": "Answer", "text": "Assign dedicated monitoring ownership for at least the first 72 hours post-launch, covering checkout conversion, error rates, and support ticket themes, with predefined thresholds for escalation. Many issues resurface once traffic patterns normalize over a full business cycle."}
+    },
+    {
+      "@type": "Question",
+      "name": "How early should we lower our DNS TTL before a webshop migration go-live?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Lower the TTL to around 300 seconds at least 48 hours before cutover, and confirm the lowered value has propagated by querying from multiple geographic locations before proceeding. Skipping this means some customers keep hitting the old platform for up to 24 hours after cutover while others reach the new one, a dangerous split-brain state."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do we need to manually purge our CDN cache after a webshop migration, or will it expire naturally?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Purge the CDN's edge cache immediately after cutover rather than waiting for natural expiry, since edge nodes in different regions can serve stale cached pages for hours. Also set explicit Cache-Control headers on checkout, cart, and account pages to stop browsers from serving stale cached versions to returning visitors."}
+    },
+    {
+      "@type": "Question",
+      "name": "What third-party scripts most often break silently during a webshop platform migration?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Google Tag Manager containers, ad conversion pixels, and customer support chat widgets are the most common casualties, since they're often embedded via the old platform's specific templating system. Verify each script fires correctly on the new platform's checkout and confirmation pages specifically, since a broken conversion pixel there silently corrupts ad spend attribution."}
+    },
+    {
+      "@type": "Question",
+      "name": "Will our mobile app's deep links still work after a webshop platform migration?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Only if the new platform's URL structure matches what your app's deep links expect, or if you've mapped equivalent redirects at the app-link association file level, which is separate from your website's own SEO redirects. Test deep links from an installed app build against the new production environment before go-live."}
     }
   ]
 }
