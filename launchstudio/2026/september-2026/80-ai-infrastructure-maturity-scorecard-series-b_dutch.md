@@ -1,121 +1,144 @@
 ---
-Titel: "De Definitieve AI Infrastructuur Volwassenheids-Scorecard: Bent u Klaar voor Series B Due Diligence?"
-Keywords: Series B Due Diligence, AI Infrastructuur Volwassenheid, Technische Due Diligence, Investor Readiness, AI SaaS Schalen, LaunchStudio, Manifera
+Title: "De Ultieme AI Infrastructuur Volwassenheids-Scorecard: Bent U Klaar voor Series B Diligence?"
+Keywords: Series B Diligence, AI Infrastructuur Volwassenheid, Technische Due Diligence, Investor Readiness, AI SaaS Schalen, LaunchStudio, Manifera
 Buyer Stage: Decision
 ---
 
-# De Definitieve AI Infrastructuur Volwassenheids-Scorecard: Bent u Klaar voor Series B Due Diligence?
+# De Ultieme AI Infrastructuur Volwassenheids-Scorecard: Bent U Klaar voor Series B Diligence?
 
-Een Series B-investeringsronde stelt heel andere eisen aan een AI SaaS-oprichter dan eerdere rondes. Waar Seed- en Series A-investeerders voornamelijk gokken op het team, de markt en vroege tractie, is bij een Series B een diepgaand technisch due diligence-onderzoek een absolute zekerheid. Dit onderzoek wordt uitgevoerd door doorgewinterde specialisten van wie het werk bestaat uit het blootleggen van het verschil tussen wat de pitchdeck belooft en wat de codebase in werkelijkheid presteert. Voor een oprichter van wie het product begon als een prototype in Lovable, Bolt of Cursor en inmiddels is uitgegroeid tot een serieuze onderneming, is dit het moment waarop opgebouwde technische schuld verandert in een tastbaar investeringsrisico. Deze scorecard behandelt de tien domeinen die investeerders standaard auditeren, en wat "volwassen" in de praktijk betekent.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Ultieme AI Infrastructuur Volwassenheids-Scorecard: Bent U Klaar voor Series B Diligence?",
+  "description": "Ontdek de tien cruciale pijlers waarop venture capital auditors uw AI SaaS infrastructuur controleren tijdens een Series B technische due diligence.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-09-30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/ai-infrastructure-maturity-scorecard-series-b"
+  }
+}
+</script>
 
-## Domein 1: Data-Isolatie en Toegangsbeheer
+Een Series B financieringsronde legt een fundamenteel ander type druk op de schouders van een AI SaaS-oprichter dan eerdere investeringsrondes. Waar Seed- en Series A-investeerders voornamelijk inzetten op de kwaliteiten van het oprichtersteam, de potentiële marktomvang en vroege commerciële tractie, is een diepgaande technische due diligence bij een Series B ronde een absolute zekerheid. Dit onderzoek wordt uitgevoerd door gespecialiseerde externe auditors wier enige taak het is om de pijnlijke kloof bloot te leggen tussen wat de pitch deck van de oprichter belooft en wat de daadwerkelijke broncode van de applicatie in de praktijk presteert. Voor een oprichter wiens product ooit begon als een snel gegenereerd prototype in Lovable, Bolt of Cursor en sindsdien is uitgegroeid tot een serieuze, omzetgenererende onderneming, is deze due diligence het moment waarop opgebouwde technische schuld ophoudt een abstract vraagstuk te zijn. Het verandert in een keiharde, gedetailleerde lijst met risicopunten die de auditpartner rechtstreeks overhandigt aan het investment committee van het investeringsfonds. Deze scorecard behandelt de tien specifieke pijlers die technische due diligence teams steevast onder de loep nemen, en wat een volwaardige "investor-ready" status op elk van die vlakken inhoudt.
 
-Investeerders vragen specifiek hoe u garandeert dat data van klant A onder geen beding zichtbaar kan zijn voor klant B. "We hebben Row Level Security (RLS)" volstaat niet — een overtuigend antwoord bevat documentatie van beleidsregels en het bewijs van geautomatiseerde *adversarial testing* (penetratietests) die aantonen dat ongeautoriseerde toegang actief wordt geblokkeerd. Een groen vinkje in een dashboard zonder testrapporten wordt door ervaren auditors als een direct waarschuwingssignaal gezien.
+## Pijler 1: Data-Isolatie en Toegangsbeheer
 
-## Domein 2: Betrouwbaarheid van Betalingen en Facturatie
+Auditors vragen direct, specifiek en indringend hoe u garandeert dat gegevens van de ene zakelijke klant onder geen enkel scenario zichtbaar kunnen worden voor een andere klant. Het simpele antwoord "we hebben Row Level Security ingeschakeld in Supabase" volstaat geenszins — een geloofwaardig en overtuigend antwoord omvat formeel gedocumenteerd bewijs dat de databasepolicies correct zijn geconfigureerd, bij voorkeur ondersteund door een auditrapport van *adversarial penetration testing* waarin actief is geprobeerd om data over tenant-grenzen heen te forceren. Een groen vinkje bij "RLS enabled" in een dashboard zonder diepgaande testresultaten wordt door een ervaren auditor direct gezien als een rode vlag in plaats van een pluspunt.
 
-Auditors controleren of uw omzetregistratie waterdicht is: worden betalingen gevalideerd via cryptografisch ondertekende backend-webhooks, of leunt het systeem op kwetsbare client-side bevestigingen? Een geschiedenis van handmatige correcties bij facturatiefouten signaleert operationele risico's in uw gerapporteerde omzetcijfers.
+## Pijler 2: Betalingsinfrastructuur en Facturatierobuustheid
 
-## Domein 3: Beheersing van LLM- en API-Kosten
+Het diligence-team toetst nauwgezet of uw gerapporteerde omzetcijfers architectonisch betrouwbaar zijn: worden abonnementen en betalingen bevestigd via cryptografisch ondertekende en geverifieerde server-side webhooks (bijvoorbeeld vanuit Stripe), of leunt uw systeem op client-side bevestigingen die transacties geruisloos kunnen missen? Een operationele geschiedenis vol handmatige factuurcorrecties — waarbij supportmedewerkers betalingsfouten met de hand moeten rechtbreien — signaleert een gebrekkige software-architectuur die direct als een operationeel risico wordt ingeprijsd.
 
-Omdat LLM-kosten een substantieel deel van de kostenstructuur van een AI SaaS vormen, vragen investeerders doelgericht naar kostenbeveiligingen: handhaaft u tokenbudgetten per gebruiker of abonnementsvorm op applicatieniveau, zijn retries begrensd, en is er realtime monitoring die kostenexplosies voorkomt voordat ze de brutomarge aantasten?
+## Pijler 3: LLM Kostenbeheersing en Marges
 
-## Domein 4: Uptime en Incidenthistorie
+Aangezien een aanzienlijk deel van de kostenstructuur van een AI SaaS rechtstreeks bestaat uit API-kosten voor taalmodellen, stellen auditors uiterst scherpe vragen over kostenbeheersing: beschikt u over tokenbudgetten per gebruiker of abonnementslaag die direct in code worden afgedwongen? Zijn uw API-aanroepen voorzien van begrensde retry-logica en monitoring die weglopende kosten in de kiem smoort voordat uw brutomarges eronder lijden? Een oprichter die hier geen sluitend antwoord op heeft, geeft beleggers impliciet het signaal dat de gepresenteerde brutomarges in het deck gepaard gaan met een aanzienlijk neerwaarts risico.
 
-Verwacht dat investeerders concrete uptime-statistieken opvragen in plaats van mondelinge toezeggingen. Tevens kijken ze naar uw incident response-processen: is er een gedocumenteerd draaiboek (*runbook*), bereiken alerts binnen enkele minuten een technicus, en worden incidenten geëvalueerd met gestructureerde post-mortems?
+## Pijler 4: Uptime, Beschikbaarheid en Incidentmanagement
 
-## Domein 5: Schaalbaarheid van de Database
+Verwacht dat investeerders vragen om feitelijke uptime-statistieken over de afgelopen twaalf maanden, en niet slechts een mondelinge toezegging dat "de app vrijwel nooit platligt". Er zal worden doorgevraagd naar uw incident response procedures: is er een gedocumenteerd draaiboek (runbook), ontvangen engineers binnen enkele minuten een geautomatiseerde oproep bij een storing, en hanteert het team een structurele post-mortem werkwijze die aantoont dat de organisatie structureel leert van storingen in plaats van ad-hoc brandjes te blussen?
 
-Een audit-team modelleert uw groeiprognoses tegen uw huidige infrastructuur en vraagt: wat breekt er als het gebruikersaantal verdrievoudigt? Een enkele Postgres-database zonder read replicas, zonder geoptimaliseerde connection pooling en met trage, ongeïndexeerde queries vormt een direct schaalbaarheidsrisico voor de geprojecteerde groei.
+## Pijler 5: Schaalbaarheid van de Database
 
-## Domein 6: Gereedheid voor Multi-Regio en Data Residency
+Een due diligence team dat uw groeimodellen toetst, analyseert exact waar uw applicatie als eerste bezwijkt wanneer het aantal actieve gebruikers binnen twaalf maanden verdubbelt of verdrievoudigt. Een enkele Postgres-instantie zonder read replicas, zonder professionele connection pooling en met ongeïndexeerde query's die onder de huidige belasting al latentie vertonen, is een kwantificeerbare technische schuldpost. Een mismatch tussen uw commerciële groeiambities en de feitelijke capaciteit van uw datalaag is precies het soort knelpunt dat due diligence aan het licht brengt.
 
-Als uw groeiplan expansie naar de VS, Europa of Azië omvat, beoordeelt het due diligence-team of uw architectuur data residency onder de AVG (GDPR) of lokale wetgeving ondersteunt, of dat hiervoor eerst een tijdrovende herbouw van de database nodig is.
+## Pijler 6: Gereedheid voor Multi-Regio en Datasoevereiniteit
 
-## Domein 7: Beveiligingsstatus Buiten Toegangsbeheer
+Wanneer uw internationale groeiplannen expansie naar de Verenigde Staten, de Europese Unie of andere jurisdicties met strikte wetgeving rondom datasoevereiniteit omvatten, onderzoekt het auditteam of uw infrastructuur deze expansie technisch direct aankan, of dat er eerst een ingrijpende herbouw noodzakelijk is. Dat onderscheid bepaalt immers in hoge mate hoe snel uw geprojecteerde buitenlandse omzet daadwerkelijk gerealiseerd kan worden.
 
-Naast klantscheiding kijkt het onderzoek naar geheimenbeheer (staan er API-sleutels blootgesteld in client-code?), bescherming tegen *prompt injection* en SSRF bij AI-agents, en of de codebase ooit is onderworpen aan een onafhankelijke security audit of penetratietest.
+## Pijler 7: Beveiligingshouding Buiten Toegangsbeheer
 
-## Domein 8: Compliancedocumentatie
+Buiten pure tenant-isolatie toetst de audit op professioneel geheimenbeheer: staan er nergens geheime API-sleutels of database-wachtwoorden in de frontendcode of publieke GitHub-repository's? Beschikt uw software over mitigaties tegen prompt injection en SSRF (Server-Side Request Forgery) in autonome agent-workflows? En is de applicatie ooit formeel onderworpen aan een onafhankelijke security audit of penetratietest, in plaats van de aanname dat alles veilig is omdat er tot nu toe nog geen incident is gemeld?
 
-Voor B2B AI SaaS-bedrijven die verkopen aan enterprise-klanten controleert de audit of er een realistisch traject ligt naar certificeringen zoals SOC 2 of ISO 27001, of er een standaard Data Processing Agreement (DPA) aanwezig is, en waar klantdata precies wordt verwerkt in relatie tot de Europese AI Act.
+## Pijler 8: Compliance en Juridische Documentatie
 
-## Domein 9: Leveranciers- en Afhankelijkheidsrisico's
+Voor B2B AI SaaS-bedrijven die leveren aan gereguleerde markten of enterprise-afnemers toetst het diligence-team of u beschikt over — of een aantoonbaar pad heeft naar — de compliancedocumenten die zakelijke klanten vereisen: een SOC 2 Type II status of een actief traject daarheen, een standaard verwerkersovereenkomst (DPA) en volledige transparantie over waar en hoe AI-modellen persoonsgegevens verwerken in het kader van de AVG/GDPR en de Europese AI Act.
 
-Investeerders vragen wat er met uw platform gebeurt als een specifieke LLM-provider een storing heeft of zijn tarieven drastisch wijzigt: beschikt u over fallback-mechanismen en multi-provider ondersteuning, of vormt één externe API een *single point of failure* voor uw gehele bedrijfsvoering?
+## Pijler 9: Leveranciersafhankelijkheid en Uitvalrisico's
 
-## Domein 10: Teamstructuur en 'Bus Factor'
+Investeerders vragen steeds vaker wat er met uw product gebeurt wanneer een specifieke LLM-leverancier (zoals OpenAI of Anthropic) te maken krijgt met een langdurige storing of plotselinge prijsverhogingen. Beschikt uw software over een multi-provider fallback-architectuur, of is de complete kernfunctionaliteit van uw bedrijf een single point of failure die volledig afhankelijk is van de API-beschikbaarheid van één externe partij?
 
-Tot slot toetst het onderzoek of de kennis van de infrastructuur is gedocumenteerd en overdraagbaar is, of dat alle cruciale systeeminformatie uitsluitend in het hoofd van één oprichter zit — een aanzienlijk risico voor elke investeerder.
+## Pijler 10: Structuur van het Engineeringteam en de 'Bus Factor'
 
-## Waarom Series B Due Diligence een Heel Andere Meetlat Hanteert
+Tot slot beoordeelt het diligence-team of de kennis van uw technische infrastructuur formeel is gedocumenteerd en verdeeld over een team, of dat alle cruciale architectuurkennis exclusief opgeslagen zit in het hoofd van één enkele technische oprichter. Het ontbreken van schriftelijke architectuurdocumentatie en een gevaarlijk lage 'bus factor' vormen voor elke investeerder een substantieel continuïteitsrisico.
 
-Eerdere controles vroegen: "werkt dit bij onze huidige schaal?". Series B due diligence stelt een veel strengere, toekomstgerichte vraag: "ondersteunt deze architectuur bewezen de groeiprognoses die in de pitchdeck worden geclaimd, en kunt u dat aantonen met testrapporten?". Een database die probleemloos 8.000 gebruikers bedient, bewijst niet automatisch dat hij standhoudt bij de 40.000 gebruikers die in het financiële model staan. Due diligence is ontworpen om kwetsbaarheden op te sporen vóórdat ze in productie escaleren.
+## Waarom Series B Diligence een Veel Hogere Lat Hanteert
+
+Het is cruciaal om te begrijpen waarom deze scorecard een wezenlijk andere exercitie is dan eerdere technische checks. In een eerdere fase vraagt men doorgaans: "blijft de app in de lucht bij ons huidige aantal gebruikers?" — een vraag over de operationele status van vandaag. Series B diligence stelt echter een vooruitblikkende, kritische en inquisitoire vraag: "ondersteunt deze software-architectuur, zoals deze er nu exact bijstaat, aantoonbaar en geloofwaardig het groeipad van 10x dat in de pitch deck wordt voorgespiegeld, en kunt u dat met harde testrapporten bewijzen in plaats van slechts beweren?"
+
+Dat is een fundamenteel hogere lat. Een database die probleemloos 8.000 actieve gebruikers bedient, bewijst niet automatisch dat deze bestand is tegen de 40.000 gebruikers die uw Series B model binnen achttien maanden voorspelt. Een auditpartner modelleert die schaalbaarheidskloof expliciet. Een architectuur zonder gedocumenteerde capaciteitsanalyses leest als een ongeïdentificeerd risico onder elk gepresenteerd groeicijfer. Hetzelfde geldt voor beveiliging: de uitspraak dat "alles tot nu toe prima heeft gewerkt" is in een due diligence meeting categorisch onvoldoende. Een audit bestaat immers om exact die risico's op te sporen die tot nu toe toevallig nog niet zijn geëxplodeerd.
 
 ## Eerlijk Zelf Evalueren
 
-Vrijwel geen enkele startup scoort vlekkeloos op alle tien de domeinen aan het begin van een Series B-ronde. Investeerders verwachten verbeterpunten. Een oprichter die zijn lacunes kent en een concreet herstelplan met tijdslijnen kan overleggen, wekt echter enorm veel vertrouwen vergeleken met iemand die de vragen tijdens de audit voor het eerst hoort.
+Slechts een uiterst zeldzame oprichter scoort vlekkeloos op alle tien de gebieden bij het ingaan van een Series B traject. Dat is op zichzelf geen diskwalificatie. Investeerders en auditpartners verwachten dat er hiaten naar voren komen. Waar het om draait is hoe u daarmee omgaat: een oprichter die elk knelpunt specifiek, deskundig en met een concreet saneringsplan en tijdpad kan toelichten, maakt een volstrekt andere, volwassen indruk dan iemand die de vraag voor het eerst met open mond hoort tijdens de audit meeting. Het doel van deze scorecard is niet het behalen van een perfecte tien; het is exact weten waar uw zwakke plekken zitten vóórdat een externe auditor ze voor u blootlegt, zodat u ze proactief kunt oplossen of het gesprek kunt ingaan met een overtuigend plan.
 
-## Waarom Vooraf Gaten Dichten Meer Oplevert Dan het Kost
+## Waarom Het Dichten van Gaten Vóór de Audit Zich Direct Terugbetaalt
 
-De rekensom is eenvoudig: een negatieve bevinding op het gebied van data-isolatie, facturatie of kostenbeheersing leidt niet alleen tot lastige gesprekken, maar drukt direct de bedrijfswaardering of kan een deal zelfs laten klappen. Een professioneel engineeringtraject om de belangrijkste hiaten te dichten kost doorgaans enkele duizenden euro's en 1 tot 3 weken werk. Afgezet tegen de impact op een investeringsronde van miljoenen is dat een uiterst rendabele investering.
+De financiële rekensom is glashelder: een negatieve bevinding tijdens de technische due diligence rondom data-isolatie, facturatie of kostenbeheersing leidt niet slechts tot een ongemakkelijk gesprek. Het resulteert direct in lagere bedrijfswaarderingen, strengere contractvoorwaarden of, in het slechtste geval, het definitief afhaken van de leidende investeerder. Een gericht *production-hardening* traject via LaunchStudio dat de meest materiële risico's op deze scorecard oplost, vergt doorgaans slechts enkele duizenden euro's en één tot drie weken ontwikkeltijd. Afgewogen tegen de miljoenenimpact van een verlaagde waardering is het proactief dichten van deze gaten een van de meest rendabele investeringen die een oprichter kan doen.
 
 ## Belangrijkste Inzichten
 
-- Series B technische due diligence toetst data-isolatie, facturatie, kostenbeheersing, uptime, database-schaalbaarheid, multi-regio, security, compliance, leveranciersrisico en team-documentatie.
+- Series B technische due diligence toetst structureel op data-isolatie, facturatierobuustheid, LLM kostenbeheersing, uptime, databaseschaalbaarheid, multi-regio gereedheid, beveiliging, compliance, leveranciersrisico en de bus factor.
 
-- Mondelinge toezeggingen zoals "we gebruiken RLS" zijn onvoldoende; auditors verlangen gedocumenteerd testbewijs.
+- Uitspraken zoals "RLS staat aan" of "we hebben nooit downtime gehad" zijn ontoereikend; auditors eisen gedocumenteerd, getest bewijs en penetratietestrapporten.
 
-- Een mismatch tussen uw groeiprognoses en de daadwerkelijke databasecapaciteit is exact het soort risico dat een audit blootlegt.
+- Een mismatch tussen uw geprojecteerde commerciële groei en de feitelijke capaciteit van uw database is exact het soort risico waar auditors direct over rapporteren aan het investeringscomité.
 
-- Het kennen van uw zwakke punten met een concreet herstelplan is belangrijker dan een fictieve perfecte score.
+- Vrijwel geen enkele startup scoort vlekkeloos op alle tien punten; professioneel inzicht in uw eigen verbeterpunten en een geloofwaardig saneringsplan maken het cruciale verschil.
 
-- Het proactief oplossen van kwetsbaarheden vóór de audit beschermt uw bedrijfswaardering en versnelt het investeringstraject aanzienlijk.
+- Het proactief dichten van materiële gaten vóór de audit kost doorgaans 1 tot 3 weken en voorkomt miljoenschade aan uw bedrijfswaardering tijdens de onderhandelingen.
 
-## Zorg dat uw Infrastructuur Audit-Ready Is Vóórdat Investeerders Vragen Stellen
+## Maak Uw Infrastructuur Diligence-Ready Vóórdat Investeerders Erom Vragen
 
-Evalueer uw platform aan de hand van deze scorecard en los de infrastructurele knelpunten op die van doorslaggevend belang zijn voor investeerders.
+Loop deze scorecard kritisch door en dicht direct de fundamentele gaten die voor een technische auditor van doorslaggevend belang zijn.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software engineering-bedrijf opgericht in 2014 onder leiding van Oprichter & Managing Director **Herre Roelevink**. Manifera brengt 11+ jaar ervaring in productie-engineering en enterprise-klanten zoals Vodafone en TNO mee naar elk due diligence-voorbereidingstraject voor AI SaaS-oprichters. Met de filosofie "Nederlands management gecombineerd met Vietnamees meesterschap" heeft Manifera haar hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een Asia-hub in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio auditeren senior engineeringteams uw infrastructuur tegen de exacte criteria van technische investeerders en dichten zij de belangrijkste hiaten — waarmee uw prototype in 1 tot 3 weken verandert in een audit-klare, robuuste onderneming, zonder herbouw. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe het [maatwerk software development team](https://www.manifera.com/nl/services/maatwerk-software-ontwikkeling/) van Manifera codebases voorbereidt op schaalvergroting en investeringsrondes.
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software engineering bedrijf opgericht in **2014** onder leiding van Oprichter & Managing Director **Herre Roelevink**. Manifera brengt meer dan 11 jaar ervaring in enterprise software-engineering en toonaangevende klanten zoals Vodafone en TNO mee naar elk diligence-traject voor AI SaaS-oprichters. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamese engineeringkracht", beschikt Manifera over een Europees hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420), een Aziatische hub in **Singapore** (100 Tras Street) en een primary development center in **Ho Chi Minhstad, Vietnam** (Pho Quang Street). Via LaunchStudio auditeren onze senior engineeringteams uw infrastructuur exact volgens de maatstaven van een technische due diligence, en dichten wij de belangrijkste materiële gaten — waarmee uw prototype binnen 1 tot 3 weken verandert in een volwassen, enterprise-grade en diligence-ready softwareproduct, zonder dat een complete herbouw nodig is. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/nl/#contact) of ontdek hoe Manifera's [maatwerk software development team](https://www.manifera.com/services/custom-software-development/) technische due diligence audits en software-hardening aanpakt voor met AI gebouwde codebases.
 
 ## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: B2B Contract Intelligence Platform
 
-Casper, voormalig bedrijfsjurist, gebruikte **Cursor** om een platform te bouwen dat AI inzette om risicoclausules in grote contractportfolio's te analyseren voor juridische afdelingen. Met een Series B term sheet op zak en een technische due diligence gepland voor de volgende maand, toetste Casper zijn platform aan deze scorecard en ontdekte drie substantiële gaten: RLS-policies die nooit via penetratietests waren geverifieerd, geen begrensde retry-logica op zijn LLM-aanroepen, en een enkele Postgres-database die bij de huidige belasting al latentie vertoonde, ver vóór de geprojecteerde 3x groei.
+Casper, voormalig bedrijfsjurist, gebruikte **Cursor** om een platform te bouwen dat via AI risicovolle clausules en afwijkingen detecteerde in grote contractportfolio's voor juridische afdelingen. Met een getekende Series B term sheet op zak en de technische due diligence gepland voor de daaropvolgende maand, toetste Casper zijn eigen infrastructuur aan deze scorecard. Hij ontdekte drie substantiële gaten: zijn RLS-policies waren weliswaar aanwezig maar nooit getest met een penetratietest, zijn LLM-aanroepen misten begrensde retry-logica, en zijn enkele Postgres-database vertoonde bij zijn huidige schaal al periodieke vertragingen, ver vóór de 3x groei die zijn deck aan investeerders beloofde.
 
-Casper schakelde LaunchStudio in om alle drie de punten vóór de start van de audit op te lossen. Het team voerde penetratietests uit op data-isolatie en documenteerde de resultaten, implementeerde begrensde retries met een hard bestedingsplafond, en migreerde de database naar een schaalbare read-replica architectuur.
+Casper schakelde LaunchStudio in om alle drie de knelpunten definitief op te lossen vóórdat de audit begon. Ons team voerde uitgebreide adversarial penetratietests uit op de RLS-policies en documenteerde de resultaten, implementeerde begrensde retries met een hard bestedingsplafond, en migreerde zijn datalaag naar een read-replica architectuur bemeten op zijn verwachte groei.
 
-**Resultaat:** Caspers technische due diligence sloot af met nul materiële opmerkingen op de aangepakte onderdelen. De auditor prees specifiek de vooraf overhandigde RLS-testrapporten als een bewijs van volwassenheid.
+**Resultaat:** Caspers technische due diligence werd afgerond met nul materiële opmerkingen op de drie geteste gebieden. De auditor prees in zijn rapport expliciet de proactief aangeleverde penetratietestdocumentatie als een uitzonderlijk volwassen signaal voor een AI startup.
 
-**Kosten & Doorlooptijd:** €5.900 (Enterprise Hardening Pakket) — alle verbeterpunten gerealiseerd en gedocumenteerd in 15 werkdagen.
-
----
+**Kosten & Doorlooptijd:** €5.900 (Enterprise Hardening Pakket) — complete sanering en verificatie over alle drie de pijlers succesvol afgerond binnen 15 werkdagen.
 
 ---
 
----
 ## Veelgestelde Vragen
 
-### Waar letten technische due diligence teams specifiek op tijdens een Series B ronde?
+### Welke zaken controleert een technisch due diligence team exact tijdens een Series B ronde?
 
-Zij beoordelen: data-isolatie en tenant-scheiding, betrouwbaarheid van betalingen en facturatie, beheersing van LLM API-kosten, uptime en incidentprocessen, schaalbaarheid van de database tegen groeiprognoses, multi-regio gereedheid, algehele security en secret management, compliancedocumentatie (SOC 2, AVG), afhankelijkheid van externe AI-providers, en documentatie van de architectuur.
+De controle richt zich steevast op tien kerngebieden: data-isolatie en tenant-scheiding, de betrouwbaarheid van de facturatiestroom, LLM kostenbeheersing, uptime en incidentmanagement, de schaalbaarheid van de database tegen het licht van uw groeiprognoses, gereedheid voor multi-regio en datasoevereiniteit, de algehele beveiligingshouding, juridische en compliance-documentatie, leveranciersrisico's en de concentratie van kennis binnen het team (bus factor).
 
-### Is het inschakelen van Row Level Security voldoende om de data-isolatie audit te doorstaan?
+### Volstaat het hebben van Row Level Security om te slagen voor een audit op data-isolatie?
 
-Nee, niet op zichzelf. Auditors verlangen bewijs dat het beleid correct is geconfigureerd en dat het via geautomatiseerde *adversarial tests* is beproefd op cross-tenant datalekken. Veel AI-builders leveren RLS op met regels die in de praktijk niets tegenhouden.
+Nee, beslist niet. Auditors vragen steeds vaker om schriftelijk bewijs dat de policies inhoudelijk correct zijn afgesteld en dat ze zijn onderworpen aan gesimuleerde aanvallen (adversarial testing). Een groen vinkje in het Supabase-dashboard volstaat niet, omdat AI-ontwikkeltools regelmatig RLS inschakelen met standaardregels die in de praktijk niets tegenhouden.
 
-### Hoeveel kost het om infrastructurele verbeterpunten vóór de audit op te lossen?
+### Hoeveel kost het doorgaans om infrastructurele tekortkomingen vóór een audit op te lossen?
 
-De meeste trajecten voor het dichten van de meest kritieke gaten kosten enkele duizenden euro's en duren 1 tot 3 weken, doorgaans vallend onder de pakketten Relaunch & Scale of Enterprise Hardening.
+De meeste gerichte trajecten om de meest urgente risico's op te lossen kosten enkele duizenden euro's en nemen 1 tot 3 weken in beslag. Dit valt doorgaans binnen het Relaunch & Scale pakket of het Enterprise Hardening pakket, afhankelijk van het aantal pijlers dat versterkt moet worden.
 
-### Wat gebeurt er als een audit-team een ernstig technisch tekort ontdekt?
+### Wat gebeurt er als een due diligence team ernstige tekortkomingen ontdekt die niet zijn opgelost?
 
-Afhankelijk van de ernst kan een bevinding op het gebied van dataveiligheid of onbeheerste kosten leiden tot een lagere waardering, zwaardere investeringsvoorwaarden of in het slechtste geval het intrekken van het investeringsaanbod.
+Afhankelijk van de ernst kunnen substantiële bevindingen rondom data-isolatie, facturatiefouten of ontbrekende kostenbeheersing direct leiden tot een lagere bedrijfswaardering, ongunstigere contractvoorwaarden of zelfs het intrekken van de investering. Een oprichter die bekende verbeterpunten proactief benoemt met een helder saneringsplan staat vele malen sterker dan iemand die overvallen wordt door de vragen.
 
-### Moet ik deze scorecard zelf invullen of laten beoordelen door een specialist?
+### Moet ik deze scorecard zelf invullen of een externe specialist inschakelen?
 
-Zelf invullen is een uitstekende eerste stap om inzicht te krijgen. Een onafhankelijke technische audit door een externe specialist biedt de zekerheid dat blinde vlekken worden blootgelegd aan de hand van exact dezelfde criteria die investeerders hanteren.
+Het is verstandig om de scorecard eerst zelf kritisch te doorlopen om te inventariseren waar u mogelijke risico's vermoedt. Het inschakelen van een externe specialist zoals LaunchStudio voegt grote waarde toe bij twijfel: een onafhankelijke technische audit volgens exact dezelfde criteria die investeerders hanteren, legt blinde vlekken bloot die oprichters over het hoofd zien doordat zij te dicht op hun eigen product staan.
 
 <script type="application/ld+json">
 {
@@ -124,42 +147,42 @@ Zelf invullen is een uitstekende eerste stap om inzicht te krijgen. Een onafhank
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waar letten technische due diligence teams specifiek op tijdens een Series B ronde?",
+      "name": "Welke zaken controleert een technisch due diligence team exact tijdens een Series B ronde?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zij beoordelen: data-isolatie en tenant-scheiding, betrouwbaarheid van betalingen en facturatie, beheersing van LLM API-kosten, uptime en incidentprocessen, schaalbaarheid van de database tegen groeiprognoses, multi-regio gereedheid, algehele security en secret management, compliancedocumentatie (SOC 2, AVG), afhankelijkheid van externe AI-providers, en documentatie van de architectuur."
+        "text": "De controle richt zich steevast op tien kerngebieden: data-isolatie en tenant-scheiding, de betrouwbaarheid van de facturatiestroom, LLM kostenbeheersing, uptime en incidentmanagement, de schaalbaarheid van de database tegen het licht van uw groeiprognoses, gereedheid voor multi-regio en datasoevereiniteit, de algehele beveiligingshouding, juridische en compliance-documentatie, leveranciersrisico's en de concentratie van kennis binnen het team (bus factor)."
       }
     },
     {
       "@type": "Question",
-      "name": "Is het inschakelen van Row Level Security voldoende om de data-isolatie audit te doorstaan?",
+      "name": "Volstaat het hebben van Row Level Security om te slagen voor een audit op data-isolatie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, niet op zichzelf. Auditors verlangen bewijs dat het beleid correct is geconfigureerd en dat het via geautomatiseerde adversarial tests is beproefd op cross-tenant datalekken. Veel AI-builders leveren RLS op met regels die in de praktijk niets tegenhouden."
+        "text": "Nee, beslist niet. Auditors vragen steeds vaker om schriftelijk bewijs dat de policies inhoudelijk correct zijn afgesteld en dat ze zijn onderworpen aan gesimuleerde aanvallen (adversarial testing). Een groen vinkje in het Supabase-dashboard volstaat niet, omdat AI-ontwikkeltools regelmatig RLS inschakelen met standaardregels die in de praktijk niets tegenhouden."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoeveel kost het om infrastructurele verbeterpunten vóór de audit op te lossen?",
+      "name": "Hoeveel kost het doorgaans om infrastructurele tekortkomingen vóór een audit op te lossen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De meeste trajecten voor het dichten van de meest kritieke gaten kosten enkele duizenden euro's en duren 1 tot 3 weken, doorgaans vallend onder de pakketten Relaunch & Scale of Enterprise Hardening."
+        "text": "De meeste gerichte trajecten om de meest urgente risico's op te lossen kosten enkele duizenden euro's en nemen 1 tot 3 weken in beslag. Dit valt doorgaans binnen het Relaunch & Scale pakket of het Enterprise Hardening pakket, afhankelijk van het aantal pijlers dat versterkt moet worden."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat gebeurt er als een audit-team een ernstig technisch tekort ontdekt?",
+      "name": "Wat gebeurt er als een due diligence team ernstige tekortkomingen ontdekt die niet zijn opgelost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Afhankelijk van de ernst kan een bevinding op het gebied van dataveiligheid of onbeheerste kosten leiden tot een lagere waardering, zwaardere investeringsvoorwaarden of in het slechtste geval het intrekken van het investeringsaanbod."
+        "text": "Afhankelijk van de ernst kunnen substantiële bevindingen rondom data-isolatie, facturatiefouten of ontbrekende kostenbeheersing direct leiden tot een lagere bedrijfswaardering, ongunstigere contractvoorwaarden of zelfs het intrekken van de investering. Een oprichter die bekende verbeterpunten proactief benoemt met een helder saneringsplan staat vele malen sterker dan iemand die overvallen wordt door de vragen."
       }
     },
     {
       "@type": "Question",
-      "name": "Moet ik deze scorecard zelf invullen of laten beoordelen door een specialist?",
+      "name": "Moet ik deze scorecard zelf invullen of een externe specialist inschakelen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zelf invullen is een uitstekende eerste stap om inzicht te krijgen. Een onafhankelijke technische audit door een externe specialist biedt de zekerheid dat blinde vlekken worden blootgelegd aan de hand van exact dezelfde criteria die investeerders hanteren."
+        "text": "Het is verstandig om de scorecard eerst zelf kritisch te doorlopen om te inventariseren waar u mogelijke risico's vermoedt. Het inschakelen van een externe specialist zoals LaunchStudio voegt grote waarde toe bij twijfel: een onafhankelijke technische audit volgens exact dezelfde criteria die investeerders hanteren, legt blinde vlekken bloot die oprichters over het hoofd zien doordat zij te dicht op hun eigen product staan."
       }
     }
   ]

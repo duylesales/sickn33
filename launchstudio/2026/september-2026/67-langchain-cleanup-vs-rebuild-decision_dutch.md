@@ -97,6 +97,10 @@ De tutorials en startertemplates van LangChain zijn gebouwd rond de volledige ab
 
 Een opschoning, waarbij het LangChain-gebruik redelijk beperkt is, duurt doorgaans 1 tot 2 weken en valt onder het pakket Launch & Grow. Een volledige herbouw van de orkestratielaag, nodig wanneer LangChain door de hele codebase verweven is, duurt doorgaans 2 tot 4 weken en valt onder het pakket Relaunch & Scale, afhankelijk van hoeveel afzonderlijke AI-functies het product heeft.
 
+### Kan LaunchStudio helpen bij de migratie van LangChain naar native SDK's zoals de Vercel AI SDK?
+
+Jazeker. LaunchStudio is gespecialiseerd in het refactoren van overmatig complexe LangChain-architecturen naar lichte, productieklare implementaties met behulp van native client-libraries of de Vercel AI SDK. We verwijderen overbodige abstractielagen, vereenvoudigen het debuggen en zorgen voor volledige streaming- en edge-ondersteuning zonder de gebruikerservaring van uw applicatie te veranderen.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -132,6 +136,14 @@ Een opschoning, waarbij het LangChain-gebruik redelijk beperkt is, duurt doorgaa
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Een opschoning, waarbij het LangChain-gebruik redelijk beperkt is, duurt doorgaans 1 tot 2 weken en valt onder het pakket Launch & Grow. Een volledige herbouw van de orkestratielaag, nodig wanneer LangChain door de hele codebase verweven is, duurt doorgaans 2 tot 4 weken en valt onder het pakket Relaunch & Scale, afhankelijk van hoeveel afzonderlijke AI-functies het product heeft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan LaunchStudio helpen bij de migratie van LangChain naar native SDK's zoals de Vercel AI SDK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jazeker. LaunchStudio is gespecialiseerd in het refactoren van overmatig complexe LangChain-architecturen naar lichte, productieklare implementaties met behulp van native client-libraries of de Vercel AI SDK. We verwijderen overbodige abstractielagen, vereenvoudigen het debuggen en zorgen voor volledige streaming- en edge-ondersteuning zonder de gebruikerservaring van uw applicatie te veranderen."
       }
     }
   ]

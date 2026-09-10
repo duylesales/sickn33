@@ -102,29 +102,27 @@ Zij schakelde **LaunchStudio (door Manifera)** in. Het team implementeerde afzen
 
 ---
 
----
-
 ## Veelgestelde Vragen
 
-### Wat is the difference between a chatbot and an AI Support Agent?
+### Wat is het verschil tussen een traditionele chatbot en een AI-supportagent?
 
-Old chatbots use rigid decision trees. An AI Support Agent uses LLMs connected to your Help Center via RAG to understand natural language and provide a conversational, highly specific answer grounded in your actual documentation.
+Ouderwetse chatbots werken met rigide beslisbomen en vooraf geprogrammeerde antwoorden. Een AI-supportagent maakt gebruik van LLM's die via RAG zijn gekoppeld aan uw Help Center. Hierdoor begrijpt de agent natuurlijke taal en levert deze contextuele, zeer specifieke antwoorden die gegrond zijn in uw daadwerkelijke documentatie.
 
-### Hoe werkt an AI agent know the answers to my specific product?
+### Hoe weet een AI-agent de antwoorden op vragen over mijn specifieke product?
 
-It uses Retrieval-Augmented Generation (RAG). It searches your custom Help Center articles and past resolved tickets first, retrieves the most relevant chunks, and answers based only on that retrieved content rather than general knowledge.
+De agent gebruikt Retrieval-Augmented Generation (RAG). Bij een klantvraag doorzoekt het systeem eerst uw Help Center-artikelen en eerder opgeloste supporttickets, haalt de meest relevante tekstfragmenten op en formuleert uitsluitend op basis van die bronnen een betrouwbaar antwoord, in plaats van te gissen met algemene trainingsdata.
 
-### Can an AI agent perform actions, like issuing refunds?
+### Kan een AI-supportagent ook zelfstandig acties uitvoeren, zoals het verwerken van terugbetalingen?
 
-Yes. Modern AI agents can be granted API access via defined Actions. The AI can query Stripe to verify a payment and autonomously trigger a refund if it aligns with your written company policy, though higher-risk actions should require confirmation.
+Ja. Moderne AI-agenten kunnen via beveiligde API-actions acties triggeren. De agent kan bijvoorbeeld in Stripe een betaling verifiëren en autonoom een terugbetaling initiëren als dit binnen uw gestelde beleidskaders valt. Voor transacties met een hoger financieel risico wordt doorgaans een menselijke fiatteringsstap ingebouwd.
 
-### When should the AI hand off to a human?
+### Wanneer moet de AI-agent een gesprek overdragen aan een menselijke medewerker?
 
-AI should handle Tier 1 support (passwords, basic billing). It should instantly route to a human, with conversation context attached, if it detects high user frustration, low-confidence knowledge-base matches, or a complex technical issue.
+De AI dient eerstelijns support af te handelen (zoals wachtwoordresets of veelvoorkomende factuurvragen). Zodra het systeem sterke klantfrustratie detecteert, de betrouwbaarheidsscore van de kennisbank te laag is of er sprake is van een complex technisch probleem, moet het gesprek direct worden overgedragen aan een menselijke specialist, inclusief de volledige gespreksgeschiedenis en context.
 
-### Hoe werkt LaunchStudio relate to Manifera when building support automation?
+### Hoe verhoudt LaunchStudio zich tot Manifera bij het bouwen van support-automatisering?
 
-LaunchStudio is Manifera's productized offering for AI-native founders — it hardens the backend of an existing AI prototype (webhook handling, deduplication, action scoping, encryption) without rebuilding the frontend. It draws on the same 11+ years of production engineering Manifera has applied across 160+ delivered projects since 2014. Read more about [Manifera's custom software development practice](https://www.manifera.com/services/custom-software-development/).
+LaunchStudio is het productized dienstenaanbod van Manifera voor AI-native oprichters. Het versterkt en beveiligt de backend van een bestaand AI-prototype (webhook-afhandeling, ontdubbeling, action-scoping en encryptie) zonder dat u de frontend opnieuw hoeft te bouwen. Hierbij wordt geput uit dezelfde 11+ jaar ervaring en meer dan 160 opgeleverde enterprise softwareprojecten van Manifera sinds 2014. Lees meer over [Manifera's maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 <script type="application/ld+json">
 {
@@ -133,44 +131,45 @@ LaunchStudio is Manifera's productized offering for AI-native founders — it ha
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat is the difference between a chatbot and an AI Support Agent?",
+      "name": "Wat is het verschil tussen een traditionele chatbot en een AI-supportagent?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Old chatbots use rigid decision trees. An AI Support Agent uses LLMs connected to your Help Center via RAG to understand natural language and provide a conversational, highly specific answer grounded in your actual documentation."
+        "text": "Ouderwetse chatbots werken met rigide beslisbomen en vooraf geprogrammeerde antwoorden. Een AI-supportagent maakt gebruik van LLM's die via RAG zijn gekoppeld aan uw Help Center. Hierdoor begrijpt de agent natuurlijke taal en levert deze contextuele, zeer specifieke antwoorden die gegrond zijn in uw daadwerkelijke documentatie."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe werkt an AI agent know the answers to my specific product?",
+      "name": "Hoe weet een AI-agent de antwoorden op vragen over mijn specifieke product?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It uses Retrieval-Augmented Generation (RAG). It searches your custom Help Center articles and past resolved tickets first, retrieves the most relevant chunks, and answers based only on that retrieved content rather than general knowledge."
+        "text": "De agent gebruikt Retrieval-Augmented Generation (RAG). Bij een klantvraag doorzoekt het systeem eerst uw Help Center-artikelen en eerder opgeloste supporttickets, haalt de meest relevante tekstfragmenten op en formuleert uitsluitend op basis van die bronnen een betrouwbaar antwoord, in plaats van te gissen met algemene trainingsdata."
       }
     },
     {
       "@type": "Question",
-      "name": "Can an AI agent perform actions, like issuing refunds?",
+      "name": "Kan een AI-supportagent ook zelfstandig acties uitvoeren, zoals het verwerken van terugbetalingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Modern AI agents can be granted API access via defined Actions. The AI can query Stripe to verify a payment and autonomously trigger a refund if it aligns with your written company policy, though higher-risk actions should require confirmation."
+        "text": "Ja. Moderne AI-agenten kunnen via beveiligde API-actions acties triggeren. De agent kan bijvoorbeeld in Stripe een betaling verifiëren en autonoom een terugbetaling initiëren als dit binnen uw gestelde beleidskaders valt. Voor transacties met een hoger financieel risico wordt doorgaans een menselijke fiatteringsstap ingebouwd."
       }
     },
     {
       "@type": "Question",
-      "name": "When should the AI hand off to a human?",
+      "name": "Wanneer moet de AI-agent een gesprek overdragen aan een menselijke medewerker?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI should handle Tier 1 support (passwords, basic billing). It should instantly route to a human, with conversation context attached, if it detects high user frustration, low-confidence knowledge-base matches, or a complex technical issue."
+        "text": "De AI dient eerstelijns support af te handelen (zoals wachtwoordresets of veelvoorkomende factuurvragen). Zodra het systeem sterke klantfrustratie detecteert, de betrouwbaarheidsscore van de kennisbank te laag is of er sprake is van een complex technisch probleem, moet het gesprek direct worden overgedragen aan een menselijke specialist, inclusief de volledige gespreksgeschiedenis en context."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe werkt LaunchStudio relate to Manifera when building support automation?",
+      "name": "Hoe verhoudt LaunchStudio zich tot Manifera bij het bouwen van support-automatisering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio is Manifera's productized offering for AI-native founders — it hardens the backend of an existing AI prototype (webhook handling, deduplication, action scoping, encryption) without rebuilding the frontend. It draws on the same 11+ years of production engineering Manifera has applied across 160+ delivered projects since 2014. Read more about Manifera's custom software development practice."
+        "text": "LaunchStudio is het productized dienstenaanbod van Manifera voor AI-native oprichters. Het versterkt en beveiligt de backend van een bestaand AI-prototype (webhook-afhandeling, ontdubbeling, action-scoping en encryptie) zonder dat u de frontend opnieuw hoeft te bouwen. Hierbij wordt geput uit dezelfde 11+ jaar ervaring en meer dan 160 opgeleverde enterprise softwareprojecten van Manifera sinds 2014. Lees meer over Manifera's maatwerk softwareontwikkeling."
       }
     }
   ]
 }
 </script>
+

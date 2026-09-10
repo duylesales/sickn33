@@ -32,7 +32,17 @@ Voor oprichters van wie de technische behoefte daadwerkelijk beperkt blijft tot 
 
 ## Beide Inzetten Zonder Mismatch
 
-Oprichters die dit succesvol aanpakken, houden beide trajecten strikt gescheiden: een marketingbureau voor groeimarketing en campagnepagina's, en een gespecialiseerde partij zoals LaunchStudio voor de diepgaande technische hardening van de applicatie vóórdat er echte gebruikers en betalingen op binnenkomen.
+Oprichters die deze valkuil succesvol vermijden, houden de twee trajecten vanaf de allereerste dag expliciet gescheiden: een marketingbureau (met of zonder intern development-team) voor de groei-executie, campagne-optimalisatie en conversietests, en een gespecialiseerde engineeringpartner zoals LaunchStudio voor de diepgaande technische hardening, databasebeveiliging en infrastructuur die een AI-builder MVP vereist voordat echte gebruikers en betalingsstromen live gaan. 
+
+Het samenvoegen van beide werelden in één enkele "all-in" retainer leidt er in de praktijk steevast toe dat u betaalt voor de tweede categorie werkzaamheden zonder ooit de specialistische aandacht te ontvangen die dit vereist. Dit gat openbaart zich vrijwel altijd op het slechtst denkbare moment: tijdens een security review van een enterprise-klant of midden in een betalingsstoring tijdens een live lancering, in plaats van tijdens een geplande interne audit.
+
+## Waarom Deze Mismatch Steeds Vaker Voorkomt, Niet Minder
+
+Het is belangrijk om te begrijpen waarom dit specifieke patroon juist de laatste tijd zoveel vaker de kop opsteekt, in plaats van aan te nemen dat dit altijd al zo is geweest. AI-builders zoals Lovable, Bolt en Cursor hebben het voor een generalistische ontwikkelaar — inclusief iemand wiens voornaamste ervaring ligt bij frontend-marketingsites — oprecht eenvoudig gemaakt om een project te openen, een zichtbare wijziging door te voeren en deze direct te publiceren. De tool neemt immers een groot deel van het steigerwerk uit handen waar vroeger diepgaande backend-expertise voor nodig was om er überhaupt aan te beginnen. 
+
+Die laagdrempeligheid levert in veel contexten een enorm voordeel op, maar verlaagt tegelijkertijd de drempel voor een team om over te komen alsof ze "de technische kant volledig beheersen", zonder dat ze noodzakelijkerwijs over het beveiligingsspecifieke oordeelsvermogen beschikken. Ze weten vaak niet hoe een robuuste Row-Level Security policy er in PostgreSQL daadwerkelijk uit moet zien zodra deze is ingeschakeld, of dat een webhook-handtekening daadwerkelijk cryptografisch wordt geverifieerd in plaats van puur aanwezig te zijn in de code. 
+
+De AI-builder laat een ontwikkelaar zonder die specialistische kennis met alle plezier wijzigingen aanbrengen die er aan de voorkant correct uitzien en een oppervlakkige test glansrijk doorstaan. Dat is exact hoe een oprichter ten onrechte gaat geloven dat haar applicatie "beveiligd" is door een bureau dat tastbare vooruitgang boekte op de onderdelen die ze begrepen, terwijl de fundamentele componenten die specialistische security-kennis vereisen, volledig onaangeroerd bleven.
 
 ## Belangrijkste Inzichten
 

@@ -98,29 +98,27 @@ Hij ging een partnerschap aan met **LaunchStudio (door Manifera)** om een gehard
 
 ---
 
----
-
 ## Veelgestelde Vragen
 
-### Waarom is extracting data from PDFs so difficult?
+### Waarom is het extraheren van data uit PDF-bestanden zo complex?
 
-PDF text is positioned using absolute X and Y coordinates rather than logical reading order. Traditional tools cannot understand multi-column layouts or borderless tables without that context, resulting in scrambled text outputs.
+Tekst in een PDF wordt opgeslagen op basis van absolute X- en Y-coördinaten in plaats van een logische leesvolgorde. Traditionele extractietools kunnen complexe lay-outs met meerdere kolommen of tabellen zonder randen daardoor niet goed interpreteren, wat leidt tot door elkaar gehusselde tekstfragmenten.
 
-### How do Vision Models solve the PDF problem?
+### Hoe lossen Vision AI-modellen het PDF-probleem op?
 
-Vision Models (like GPT-4o or Claude Sonnet) look at a rendered image of the PDF page. Because they have spatial awareness, they can accurately 'read' complex tables, checkboxes, and charts exactly as a human eye would, regardless of the underlying layout structure.
+Vision-modellen (zoals GPT-4o of Claude Sonnet) analyseren een gerenderde afbeelding van de PDF-pagina. Dankzij ruimtelijk inzicht kunnen zij complexe tabellen, selectievakjes en grafieken net zo nauwkeurig 'lezen' en begrijpen als een menselijk oog, ongeacht de onderliggende technische bestandsstructuur.
 
-### Wat is 'Structured Data' extraction?
+### Wat houdt gestructureerde data-extractie ('Structured Outputs') precies in?
 
-It means forcing the AI to return data in a strict, typed JSON format (e.g., `{"invoice_number": "123", "total_amount": 500.00}`) rather than a conversational paragraph, allowing your backend to validate and automatically ingest the data into a database.
+Dit betekent dat het AI-model wordt gedwongen om data te retourneren in een strikt, getypeerd JSON-formaat (zoals `{"factuurnummer": "123", "totaalbedrag": 500.00}`) in plaats van vrije lopende tekst. Hierdoor kan uw backend de gegevens direct valideren en geautomatiseerd opslaan in een database.
 
-### Hoe kan ik force the AI to return JSON?
+### Hoe dwingt u het AI-model af om uitsluitend geldige JSON te retourneren?
 
-You use 'Structured Outputs' in the API call. You provide a strict JSON Schema detailing exactly what keys, data types, and required fields you need, and the model is constrained to output only valid JSON matching that schema.
+Dit gebeurt via 'Structured Outputs' in de API-aanroep. U definieert een strikt JSON Schema met alle vereiste velden, datatypes en validatieregels. Het model wordt wiskundig beperkt om uitsluitend syntax-valide JSON te genereren die exact voldoet aan uw schema.
 
-### Is a PDF extraction feature something LaunchStudio builds standalone, or as part of a bigger app?
+### Bouwt LaunchStudio een PDF-extractiefunctie als losstaande module of als onderdeel van een grotere applicatie?
 
-Either. Many founders come to LaunchStudio with an existing AI prototype that just needs the extraction pipeline hardened — cost-optimized, validated, and reviewed for accuracy — without touching the rest of the app. Manifera's broader [custom software development](https://www.manifera.com/services/custom-software-development/) team also builds document pipelines from scratch when there's no existing prototype to extend.
+Beide is mogelijk. Veel oprichters kloppen bij LaunchStudio aan met een bestaand AI-prototype waarbij uitsluitend de extractie-pipeline gehard, kostenefficiënt ingericht en gevalideerd moet worden, zonder de rest van de app aan te passen. Het bredere engineeringteam van Manifera voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) bouwt daarnaast complete documentverwerkingspipelines vanaf de grond af op wanneer er nog geen prototype aanwezig is.
 
 <script type="application/ld+json">
 {
@@ -129,44 +127,45 @@ Either. Many founders come to LaunchStudio with an existing AI prototype that ju
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom is extracting data from PDFs so difficult?",
+      "name": "Waarom is het extraheren van data uit PDF-bestanden zo complex?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "PDF text is positioned using absolute X and Y coordinates rather than logical reading order. Traditional tools cannot understand multi-column layouts or borderless tables without that context, resulting in scrambled text outputs."
+        "text": "Tekst in een PDF wordt opgeslagen op basis van absolute X- en Y-coördinaten in plaats van een logische leesvolgorde. Traditionele extractietools kunnen complexe lay-outs met meerdere kolommen of tabellen zonder randen daardoor niet goed interpreteren, wat leidt tot door elkaar gehusselde tekstfragmenten."
       }
     },
     {
       "@type": "Question",
-      "name": "How do Vision Models solve the PDF problem?",
+      "name": "Hoe lossen Vision AI-modellen het PDF-probleem op?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vision Models (like GPT-4o or Claude Sonnet) look at a rendered image of the PDF page. Because they have spatial awareness, they can accurately 'read' complex tables, checkboxes, and charts exactly as a human eye would, regardless of the underlying layout structure."
+        "text": "Vision-modellen (zoals GPT-4o of Claude Sonnet) analyseren een gerenderde afbeelding van de PDF-pagina. Dankzij ruimtelijk inzicht kunnen zij complexe tabellen, selectievakjes en grafieken net zo nauwkeurig 'lezen' en begrijpen als een menselijk oog, ongeacht de onderliggende technische bestandsstructuur."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is 'Structured Data' extraction?",
+      "name": "Wat houdt gestructureerde data-extractie ('Structured Outputs') precies in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It means forcing the AI to return data in a strict, typed JSON format (e.g., {\"invoice_number\": \"123\", \"total_amount\": 500.00}) rather than a conversational paragraph, allowing your backend to validate and automatically ingest the data into a database."
+        "text": "Dit betekent dat het AI-model wordt gedwongen om data te retourneren in een strikt, getypeerd JSON-formaat (zoals {\"factuurnummer\": \"123\", \"totaalbedrag\": 500.00}) in plaats van vrije lopende tekst. Hierdoor kan uw backend de gegevens direct valideren en geautomatiseerd opslaan in een database."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe kan ik force the AI to return JSON?",
+      "name": "Hoe dwingt u het AI-model af om uitsluitend geldige JSON te retourneren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You use 'Structured Outputs' in the API call. You provide a strict JSON Schema detailing exactly what keys, data types, and required fields you need, and the model is constrained to output only valid JSON matching that schema."
+        "text": "Dit gebeurt via 'Structured Outputs' in de API-aanroep. U definieert een strikt JSON Schema met alle vereiste velden, datatypes en validatieregels. Het model wordt wiskundig beperkt om uitsluitend syntax-valide JSON te genereren die exact voldoet aan uw schema."
       }
     },
     {
       "@type": "Question",
-      "name": "Is a PDF extraction feature something LaunchStudio builds standalone, or as part of a bigger app?",
+      "name": "Bouwt LaunchStudio een PDF-extractiefunctie als losstaande module of als onderdeel van een grotere applicatie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Either. Many founders come to LaunchStudio with an existing AI prototype that just needs the extraction pipeline hardened — cost-optimized, validated, and reviewed for accuracy — without touching the rest of the app. Manifera's broader custom software development team also builds document pipelines from scratch when there's no existing prototype to extend."
+        "text": "Beide is mogelijk. Veel oprichters kloppen bij LaunchStudio aan met een bestaand AI-prototype waarbij uitsluitend de extractie-pipeline gehard, kostenefficiënt ingericht en gevalideerd moet worden, zonder de rest van de app aan te passen. Het bredere engineeringteam van Manifera voor maatwerk softwareontwikkeling bouwt daarnaast complete documentverwerkingspipelines vanaf de grond af op wanneer er nog geen prototype aanwezig is."
       }
     }
   ]
 }
 </script>
+

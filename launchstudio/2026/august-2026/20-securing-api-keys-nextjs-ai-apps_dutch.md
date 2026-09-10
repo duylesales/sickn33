@@ -108,29 +108,27 @@ Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam verplaats
 
 ---
 
----
-
 ## Veelgestelde Vragen
 
-### Hoe werkt an API key get stolen?
+### Hoe worden API-sleutels het vaakst gestolen of gelekt?
 
-The most common ways are pushing the key to a public GitHub repository, or executing the AI provider call on the client-side React code with a `NEXT_PUBLIC_` prefix, allowing anyone to find the key in their browser's JavaScript bundle.
+De twee meest voorkomende oorzaken zijn het per ongeluk committen en pushen van `.env`-bestanden naar een publieke GitHub-repository, en het aanroepen van AI-providers vanuit de client-side frontendcode met een `NEXT_PUBLIC_`-voorvoegsel, waardoor de sleutel openbaar zichtbaar wordt in de gecompileerde JavaScript-bundel in de browser.
 
-### Wat is the NEXT_PUBLIC_ prefix?
+### Wat doet het NEXT_PUBLIC_ voorvoegsel precies in Next.js?
 
-In Next.js, any environment variable starting with `NEXT_PUBLIC_` is bundled directly into the public JavaScript sent to every visitor's browser. Never use this prefix for secret API keys or any other credential.
+In Next.js wordt elke omgevingsvariabele met het voorvoegsel `NEXT_PUBLIC_` tijdens de build-fase direct geïnjecteerd in de publieke JavaScript-code die naar elke websitebezoeker wordt gestuurd. Gebruik dit voorvoegsel daarom nooit voor geheime API-sleutels, database-wachtwoorden of andere vertrouwelijke inloggegevens.
 
-### Hoe kan ik secure an OpenAI or Anthropic call in Next.js?
+### Hoe beveilig ik een OpenAI- of Anthropic-aanroep in Next.js?
 
-Use Server Actions or Route Handlers. The frontend sends only the prompt to your backend. The backend reads the secure, non-prefixed environment variable, calls the AI provider, and returns the result to the frontend — the key itself never leaves the server.
+Maak gebruik van Server Actions of Route Handlers. De frontend stuurt uitsluitend de prompt of input van de gebruiker naar uw eigen backend. Uw backend leest de beveiligde omgevingsvariabele (zonder `NEXT_PUBLIC_`), voert de API-aanroep uit naar de AI-leverancier en streamt het resultaat terug naar de frontend — de geheime sleutel verlaat de server daardoor nooit.
 
-### Hoe kan ik securely store a user's API key in a BYOK model?
+### Hoe sla ik API-sleutels van gebruikers veilig op bij een BYOK-model?
 
-Never store it in plain text in your database. Encrypt the API key with AES-256-GCM on your server before writing it to Supabase, keep the encryption key in a dedicated secrets manager, and decrypt it only in memory for the duration of the API call.
+Sla dergelijke sleutels nooit als platte tekst op in uw database. Versleutel de API-sleutel direct op uw backend met AES-256-GCM voordat u deze wegschrijft naar de database, bewaar de encryptiesleutel in een gespecialiseerde secrets manager, en ontsleutel de sleutel uitsluitend tijdelijk in het werkgeheugen tijdens de API-aanroep.
 
-### Is a Next.js security audit something LaunchStudio does on its own, or is that a Manifera service?
+### Voert LaunchStudio een Next.js security audit zelfstandig uit, of is dit een dienst van Manifera?
 
-LaunchStudio is Manifera's productized offering specifically for AI-native founders — a security audit and hardening pass on an existing Lovable, Bolt, Cursor, or v0 prototype is exactly the kind of fixed-scope engagement LaunchStudio runs. It draws directly on Manifera's 11+ years of production security experience, the same expertise the company applies to its enterprise [custom software development](https://www.manifera.com/services/custom-software-development/) work.
+LaunchStudio is het gespecialiseerde fixed-scope aanbod van Manifera voor AI-native oprichters. Een grondige security audit en het dichttimmeren van bestaande prototypes (gebouwd met Lovable, Bolt, Cursor of v0) is precies waarvoor LaunchStudio is ingericht. Hierbij wordt direct geput uit Manifera's 11+ jaar ervaring en meer dan 160 opgeleverde projecten in [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 <script type="application/ld+json">
 {
@@ -139,44 +137,45 @@ LaunchStudio is Manifera's productized offering specifically for AI-native found
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hoe werkt an API key get stolen?",
+      "name": "Hoe worden API-sleutels het vaakst gestolen of gelekt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The most common ways are pushing the key to a public GitHub repository, or executing the AI provider call on the client-side React code with a NEXT_PUBLIC_ prefix, allowing anyone to find the key in their browser's JavaScript bundle."
+        "text": "De twee meest voorkomende oorzaken zijn het per ongeluk committen en pushen van .env-bestanden naar een publieke GitHub-repository, en het aanroepen van AI-providers vanuit de client-side frontendcode met een NEXT_PUBLIC_-voorvoegsel, waardoor de sleutel openbaar zichtbaar wordt in de gecompileerde JavaScript-bundel in de browser."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is the NEXT_PUBLIC_ prefix?",
+      "name": "Wat doet het NEXT_PUBLIC_ voorvoegsel precies in Next.js?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In Next.js, any environment variable starting with NEXT_PUBLIC_ is bundled directly into the public JavaScript sent to every visitor's browser. Never use this prefix for secret API keys or any other credential."
+        "text": "In Next.js wordt elke omgevingsvariabele met het voorvoegsel NEXT_PUBLIC_ tijdens de build-fase direct geïnjecteerd in de publieke JavaScript-code die naar elke websitebezoeker wordt gestuurd. Gebruik dit voorvoegsel daarom nooit voor geheime API-sleutels, database-wachtwoorden of andere vertrouwelijke inloggegevens."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe kan ik secure an OpenAI or Anthropic call in Next.js?",
+      "name": "Hoe beveilig ik een OpenAI- of Anthropic-aanroep in Next.js?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Use Server Actions or Route Handlers. The frontend sends only the prompt to your backend. The backend reads the secure, non-prefixed environment variable, calls the AI provider, and returns the result to the frontend — the key itself never leaves the server."
+        "text": "Maak gebruik van Server Actions of Route Handlers. De frontend stuurt uitsluitend de prompt of input van de gebruiker naar uw eigen backend. Uw backend leest de beveiligde omgevingsvariabele (zonder NEXT_PUBLIC_), voert de API-aanroep uit naar de AI-leverancier en streamt het resultaat terug naar de frontend — de geheime sleutel verlaat de server daardoor nooit."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe kan ik securely store a user's API key in a BYOK model?",
+      "name": "Hoe sla ik API-sleutels van gebruikers veilig op bij een BYOK-model?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Never store it in plain text in your database. Encrypt the API key with AES-256-GCM on your server before writing it to Supabase, keep the encryption key in a dedicated secrets manager, and decrypt it only in memory for the duration of the API call."
+        "text": "Sla dergelijke sleutels nooit als platte tekst op in uw database. Versleutel de API-sleutel direct op uw backend met AES-256-GCM voordat u deze wegschrijft naar de database, bewaar de encryptiesleutel in een gespecialiseerde secrets manager, en ontsleutel de sleutel uitsluitend tijdelijk in het werkgeheugen tijdens de API-aanroep."
       }
     },
     {
       "@type": "Question",
-      "name": "Is a Next.js security audit something LaunchStudio does on its own, or is that a Manifera service?",
+      "name": "Voert LaunchStudio een Next.js security audit zelfstandig uit, of is dit een dienst van Manifera?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio is Manifera's productized offering specifically for AI-native founders — a security audit and hardening pass on an existing Lovable, Bolt, Cursor, or v0 prototype is exactly the kind of fixed-scope engagement LaunchStudio runs. It draws directly on Manifera's 11+ years of production security experience, the same expertise the company applies to its enterprise custom software development work."
+        "text": "LaunchStudio is het gespecialiseerde fixed-scope aanbod van Manifera voor AI-native oprichters. Een grondige security audit en het dichttimmeren van bestaande prototypes (gebouwd met Lovable, Bolt, Cursor of v0) is precies waarvoor LaunchStudio is ingericht. Hierbij wordt direct geput uit Manifera's 11+ jaar ervaring en meer dan 160 opgeleverde projecten in maatwerk softwareontwikkeling."
       }
     }
   ]
 }
 </script>
+

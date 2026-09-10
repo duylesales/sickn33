@@ -4,6 +4,13 @@
 
 ### Tháng 09
 
+#### Ngày 10
+
+- **Tạo ảnh minh họa siêu thực cho cụm `extra-9-decision` (Hoàn thành Bài 06)**:
+  - Tạo mới và cắt chuẩn tỷ lệ 16:9 (`1365x768`, center-crop) cho Bài 06 thuộc thư mục `manifera/2026-extra/extra-9-decision/`:
+    - [`06-fixed-price-vs-time-material-which-contract-model-protects-you_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/06-fixed-price-vs-time-material-which-contract-model-protects-you_pic.jpg) (Phòng phân tích tài chính doanh nghiệp cao cấp, góc nhìn over-the-shoulder từ phía sau Nữ CFO Châu Âu mặc blazer màu than ngồi trước bàn điều hành gỗ tối màu với màn hình đôi hiển thị biểu đồ ngân sách & burn-rate procurement, bên cạnh Giám đốc Giao nhận Kỹ thuật cao cấp Việt Nam mặc sơ mi navy đứng thuyết trình tiến độ bàn giao milestone trên tablet, cửa kính kịch trần nhìn ra skyline thành phố Châu Âu).
+  - **Tạm dừng trước Bài 07**: Công cụ tạo ảnh native hệ thống (`gemini-3.1-flash-image`) đạt ngưỡng giới hạn hạn ngạch (mã lỗi 429 RESOURCE_EXHAUSTED). Tuân thủ nghiêm ngặt quy tắc Workspace (không sử dụng pollinations.ai), tạm dừng quy trình tạo ảnh và báo cáo người dùng.
+
 #### Ngày 09
 
 - **Tạo ảnh minh họa siêu thực cho cụm `extra-9-decision` (Hoàn thành Bài 01 - Bài 05)**:

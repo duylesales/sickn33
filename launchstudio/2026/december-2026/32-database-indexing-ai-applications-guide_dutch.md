@@ -96,7 +96,7 @@ Het optimaliseren van een PostgreSQL-database voor AI-applicaties vereist een ge
 - **Periodieke Index-Heropbouw & VACUUM ANALYZE:** Plan een wekelijkse database-onderhoudstaak in om indexfragmentatie tegen te gaan en statistieken bij te werken voor de PostgreSQL query planner.
 - **Monitoring van Trage Query's via pg_stat_statements:** Analyseer maandelijks welke query's het hoogste percentage van de totale database-tijd consumeren en voeg gerichte samengestelde (composite) indexen toe.
 
-### Praktijkvoorbeeld: EXPLAIN ANALYZE van Trage Vector Queries
+### Echt voorbeeld: EXPLAIN ANALYZE van Trage Vector Queries
 
 Wanneer u in PostgreSQL zoekt naar vergelijkbare vector embeddings met de cosine distance operator (`<=>`), kan een query zonder index gemakkelijk 1.200 milliseconden duren bij 50.000 rijen. Door een HNSW index aan te maken met geoptimaliseerde parameters (`m = 16, ef_construction = 64`):
 

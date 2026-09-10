@@ -126,7 +126,7 @@ LaunchStudio en Manifera transformeren kwetsbare prototypes naar schaalbare, con
     },
     {
       "@type": "Question",
-      "name": "Wat is het voordeel van một Message Queue (zoals Redis en BullMQ)?",
+      "name": "Wat is het voordeel van een Message Queue (zoals Redis en BullMQ)?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Het ontkoppelt trage LLM-aanroepen van de API-laag door verzoeken asynchroon in een wachtrij te plaatsen en direct een Job ID terug te sturen."

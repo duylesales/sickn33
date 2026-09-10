@@ -88,7 +88,7 @@ Kampt uw AI-dashboard met een laag dagelijks actief gebruik? **LaunchStudio** bo
 
 LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren ontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minhstad, Vietnam**, om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en productieklaar te maken. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/nl/#contact).
 
-## Real example
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in de Praktijk: Inloggegevens Beveiligen Voor Een Slack AI Dev Bot
 

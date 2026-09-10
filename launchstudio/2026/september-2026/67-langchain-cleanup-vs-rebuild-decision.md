@@ -97,6 +97,10 @@ LangChain's tutorials and starter templates are built around its full abstractio
 
 A cleanup, where LangChain usage is reasonably contained, typically takes 1 to 2 weeks and falls under the Launch & Grow package. A full rebuild of the orchestration layer, needed when LangChain is tangled throughout the codebase, typically takes 2 to 4 weeks and falls under the Relaunch & Scale package, depending on how many distinct AI features the product has.
 
+### Can LaunchStudio help me migrate from LangChain to native SDKs like Vercel AI SDK?
+
+Yes. LaunchStudio specializes in refactoring overgrown LangChain architectures into lightweight, production-grade implementations using native client libraries or the Vercel AI SDK. We strip away redundant abstractions, simplify debugging, and ensure full streaming and edge-readiness without altering your application's user experience.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -132,6 +136,14 @@ A cleanup, where LangChain usage is reasonably contained, typically takes 1 to 2
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A cleanup, where LangChain usage is reasonably contained, typically takes 1 to 2 weeks and falls under the Launch & Grow package. A full rebuild of the orchestration layer, needed when LangChain is tangled throughout the codebase, typically takes 2 to 4 weeks and falls under the Relaunch & Scale package, depending on how many distinct AI features the product has."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LaunchStudio help me migrate from LangChain to native SDKs like Vercel AI SDK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. LaunchStudio specializes in refactoring overgrown LangChain architectures into lightweight, production-grade implementations using native client libraries or the Vercel AI SDK. We strip away redundant abstractions, simplify debugging, and ensure full streaming and edge-readiness without altering your application's user experience."
       }
     }
   ]

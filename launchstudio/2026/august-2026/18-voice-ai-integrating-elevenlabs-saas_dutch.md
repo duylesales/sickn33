@@ -99,29 +99,27 @@ Zij werkte samen met **LaunchStudio (door Manifera)**. Het team herstructureerde
 
 ---
 
----
-
 ## Veelgestelde Vragen
 
-### Why use ElevenLabs instead of OpenAI's TTS?
+### Waarom kiezen voor ElevenLabs in plaats van OpenAI's standaard TTS?
 
-ElevenLabs provides hyper-realistic voices with emotional nuance, breathing sounds, low-latency streaming, and advanced voice cloning capabilities that many standard TTS providers currently cannot match at the same fidelity.
+ElevenLabs biedt hyperrealistische stemmen met emotionele nuances, ademhalingsgeluiden, ultralage streaminglatentie en geavanceerde voice-cloning mogelijkheden die de meeste standaard TTS-leveranciers qua natuurgetrouwheid niet kunnen evenaren.
 
-### Wat is WebRTC and why is it used for Voice AI?
+### Wat is WebRTC en waarom is het essentieel voor Voice AI?
 
-WebRTC is a real-time communication protocol built for bi-directional audio streaming with sub-500ms latency. Combined with a Voice Activity Detector, it's what makes an AI conversation feel natural and allows the user to interrupt the AI mid-sentence.
+WebRTC is een realtime communicatieprotocol ontworpen voor bidirectionele audiostreaming met een latentie van minder dan 500 ms. In combinatie met een Voice Activity Detector (VAD) zorgt dit ervoor dat een AI-spraakgesprek natuurlijk aanvoelt en gebruikers de AI midden in een zin kunnen onderbreken.
 
-### How expensive is Voice AI?
+### Hoe hoog zijn de kosten voor Voice AI in productie?
 
-It is expensive relative to text. A 15-minute conversational session with a high-quality ElevenLabs voice, plus STT and LLM costs, can run $1 or more per session. You cannot offer unlimited voice plans on standard $20/mo subscriptions without a hard credit ceiling.
+Voice AI is aanzienlijk duurder dan tekstgebaseerde AI. Een interactieve spraaksessie van 15 minuten met een premium ElevenLabs-stem, gecombineerd met STT (spraak-naar-tekst) en LLM-inferentie, kost al snel $1 of meer per sessie. U kunt daarom geen ongelimiteerde spraakabonnementen aanbieden voor standaardtarieven van $20 per maand zonder een hard kredietplafond.
 
-### How do you handle interruptions?
+### Hoe handelt u onderbrekingen (interruptions) door de gebruiker af?
 
-Your frontend runs a Voice Activity Detector. When the user speaks while the AI is talking, it instantly signals the backend via WebSocket to cancel the ElevenLabs audio stream, stop playback, and cancel any in-flight LLM generation so the AI doesn't keep talking over the user.
+Uw frontend draait een Voice Activity Detector. Zodra de gebruiker begint te praten terwijl de AI nog aan het woord is, stuurt de frontend direct een signaal via WebSockets naar de backend om de ElevenLabs-audiostream te annuleren, het afspelen te stoppen en de lopende LLM-generatie af te breken, zodat de AI niet door de gebruiker heen blijft praten.
 
-### Does LaunchStudio build custom voice AI products, or just fix broken ones?
+### Bouwt LaunchStudio complete maatwerk Voice AI-producten of optimaliseren jullie bestaande prototypes?
 
-Both. Most engagements start with a founder's existing ElevenLabs integration built in Lovable, Bolt, or Cursor that has a latency, cost, or consent gap — LaunchStudio, backed by Manifera's 11+ years of engineering since 2014, hardens that pipeline. For ground-up builds, Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) team scopes the full voice architecture.
+Beide. De meeste samenwerkingen starten vanuit een bestaand AI-prototype van een oprichter (gebouwd in Lovable, Bolt of Cursor) met uitdagingen rondom latentie, kosten of data-toestemming — LaunchStudio, gesteund door Manifera's 11+ jaar ervaring sinds 2014, hardt en optimaliseert deze pipeline. Voor projecten vanaf nul ontwerpt het [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) team van Manifera de complete spraakarchitectuur.
 
 <script type="application/ld+json">
 {
@@ -130,44 +128,45 @@ Both. Most engagements start with a founder's existing ElevenLabs integration bu
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why use ElevenLabs instead of OpenAI's TTS?",
+      "name": "Waarom kiezen voor ElevenLabs in plaats van OpenAI's standaard TTS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ElevenLabs provides hyper-realistic voices with emotional nuance, breathing sounds, low-latency streaming, and advanced voice cloning capabilities that many standard TTS providers currently cannot match at the same fidelity."
+        "text": "ElevenLabs biedt hyperrealistische stemmen met emotionele nuances, ademhalingsgeluiden, ultralage streaminglatentie en geavanceerde voice-cloning mogelijkheden die de meeste standaard TTS-leveranciers qua natuurgetrouwheid niet kunnen evenaren."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is WebRTC and why is it used for Voice AI?",
+      "name": "Wat is WebRTC en waarom is het essentieel voor Voice AI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "WebRTC is a real-time communication protocol built for bi-directional audio streaming with sub-500ms latency. Combined with a Voice Activity Detector, it's what makes an AI conversation feel natural and allows the user to interrupt the AI mid-sentence."
+        "text": "WebRTC is een realtime communicatieprotocol ontworpen voor bidirectionele audiostreaming met een latentie van minder dan 500 ms. In combinatie met een Voice Activity Detector (VAD) zorgt dit ervoor dat een AI-spraakgesprek natuurlijk aanvoelt en gebruikers de AI midden in een zin kunnen onderbreken."
       }
     },
     {
       "@type": "Question",
-      "name": "How expensive is Voice AI?",
+      "name": "Hoe hoog zijn de kosten voor Voice AI in productie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It is expensive relative to text. A 15-minute conversational session with a high-quality ElevenLabs voice, plus STT and LLM costs, can run $1 or more per session. You cannot offer unlimited voice plans on standard $20/mo subscriptions without a hard credit ceiling."
+        "text": "Voice AI is aanzienlijk duurder dan tekstgebaseerde AI. Een interactieve spraaksessie van 15 minuten met een premium ElevenLabs-stem, gecombineerd met STT (spraak-naar-tekst) en LLM-inferentie, kost al snel $1 of meer per sessie. U kunt daarom geen ongelimiteerde spraakabonnementen aanbieden voor standaardtarieven van $20 per maand zonder een hard kredietplafond."
       }
     },
     {
       "@type": "Question",
-      "name": "How do you handle interruptions?",
+      "name": "Hoe handelt u onderbrekingen (interruptions) door de gebruiker af?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your frontend runs a Voice Activity Detector. When the user speaks while the AI is talking, it instantly signals the backend via WebSocket to cancel the ElevenLabs audio stream, stop playback, and cancel any in-flight LLM generation so the AI doesn't keep talking over the user."
+        "text": "Uw frontend draait een Voice Activity Detector. Zodra de gebruiker begint te praten terwijl de AI nog aan het woord is, stuurt de frontend direct een signaal via WebSockets naar de backend om de ElevenLabs-audiostream te annuleren, het afspelen te stoppen en de lopende LLM-generatie af te breken, zodat de AI niet door de gebruiker heen blijft praten."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio build custom voice AI products, or just fix broken ones?",
+      "name": "Bouwt LaunchStudio complete maatwerk Voice AI-producten of optimaliseren jullie bestaande prototypes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both. Most engagements start with a founder's existing ElevenLabs integration built in Lovable, Bolt, or Cursor that has a latency, cost, or consent gap — LaunchStudio, backed by Manifera's 11+ years of engineering since 2014, hardens that pipeline. For ground-up builds, Manifera's custom software development team scopes the full voice architecture."
+        "text": "Beide. De meeste samenwerkingen starten vanuit een bestaand AI-prototype van een oprichter (gebouwd in Lovable, Bolt of Cursor) met uitdagingen rondom latentie, kosten of data-toestemming — LaunchStudio, gesteund door Manifera's 11+ jaar ervaring sinds 2014, hardt en optimaliseert deze pipeline. Voor projecten vanaf nul ontwerpt het maatwerk softwareontwikkeling team van Manifera de complete spraakarchitectuur."
       }
     }
   ]
 }
 </script>
+

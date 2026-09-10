@@ -103,29 +103,27 @@ Zij schakelde **LaunchStudio (door Manifera)** in. Het team integreerde Firecraw
 
 ---
 
----
-
 ## Veelgestelde Vragen
 
-### Why can't I just use Python Requests to scrape a website?
+### Waarom kan ik niet simpelweg Python Requests gebruiken om een website te scrapen?
 
-Modern websites use JavaScript to load data dynamically after the initial HTML loads. A simple request only pulls the blank HTML shell. You must use a 'headless browser' to execute the JavaScript and let the page hydrate before scraping the text.
+Moderne websites maken gebruik van JavaScript (zoals React of Vue) om data dynamisch in te laden nadat de initiële HTML is binnengehaald. Een eenvoudig HTTP-verzoek downloadt uitsluitend het lege HTML-skelet. U heeft een headless browser nodig om de JavaScript-code uit te voeren en de pagina volledig te laten renderen ('hydraten') voordat u de tekst kunt scrapen.
 
-### How do scraping tools bypass Cloudflare?
+### Hoe omzeilen professionele scraping-tools anti-bot systemen zoals Cloudflare?
 
-Anti-bot tools block automated traffic based on IP address reputation and browser fingerprints. Advanced scraping infrastructure uses residential or ISP IP proxies and mimics real Chrome browser signals to bypass these checks.
+Geavanceerde anti-bot systemen blokkeren geautomatiseerd verkeer op basis van IP-reputatie en browser-fingerprints. Professionele scraping-infrastructuur maakt gebruik van residentiële proxy's en bootst reële browserkenmerken (TLS-ciphers, canvas-rendering, navigatie-headers) van Google Chrome na om inspecties geruisloos te passeren.
 
-### Wat is Firecrawl, and how is it different from Browserless?
+### Wat is Firecrawl en waarin verschilt het van Browserless?
 
-Firecrawl is a scraping API designed for AI: it handles headless browsing and returns clean Markdown or structured JSON automatically. Browserless gives you raw programmatic control over a headless Chrome instance for logins, clicks, and custom interactions — many apps use both.
+Firecrawl is een scraping-API specifiek ontworpen voor AI: het handelt headless browsing automatisch af en retourneert direct schone Markdown of gestructureerde JSON. Browserless biedt daarentegen directe programmatische controle over een headless Chrome-instantie via Puppeteer/Playwright voor complexe logins, klikreeksen en formulierinteracties — veel geavanceerde AI-apps gebruiken beide gecombineerd.
 
-### Why shouldn't I feed raw HTML to an LLM?
+### Waarom moet ik vermijden om ruwe HTML direct aan een LLM te voeden?
 
-Raw HTML is filled with formatting code, navigation chrome, and scripts. Feeding 20,000 tokens of HTML to an LLM to find a single paragraph wastes API budget and confuses the model. Always clean it to Markdown or plain text first.
+Ruwe HTML zit vol overbodige opmaaktags, navigatiemenu's, tracking-scripts en CSS. Het voeden van tienduizenden onnodige HTML-tokens aan een LLM om één specifieke alinea te extraheren verspilt gigantische hoeveelheden API-budget en verwart het taalmodel. Converteer webpagina's daarom altijd eerst naar schone Markdown of platte tekst.
 
-### Is web scraping for AI legal?
+### Is web scraping voor AI-toepassingen juridisch toegestaan?
 
-It depends heavily on what you scrape and how. Respecting `robots.txt`, rate-limiting requests, and avoiding paywalled or authenticated content without permission are important safeguards; LaunchStudio, backed by Manifera's engineering experience since 2014, builds scraping pipelines with these boundaries designed in from the start rather than bolted on after a legal complaint.
+Dat hangt sterk af van welke data u verzamelt en op welke manier. Het respecteren van `robots.txt`, het toepassen van strikte rate-limiting en het vermijden van content achter een betaalmuur of inlogscherm zonder toestemming zijn cruciale randvoorwaarden. LaunchStudio, ondersteund door Manifera's engineeringexpertise sinds 2014, richt scraping-pipelines vanaf het eerste begin in met deze strikte ethische en juridische kaders ingebouwd.
 
 <script type="application/ld+json">
 {
@@ -134,44 +132,45 @@ It depends heavily on what you scrape and how. Respecting `robots.txt`, rate-lim
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why can't I just use Python Requests to scrape a website?",
+      "name": "Waarom kan ik niet simpelweg Python Requests gebruiken om een website te scrapen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Modern websites use JavaScript to load data dynamically after the initial HTML loads. A simple request only pulls the blank HTML shell. You must use a 'headless browser' to execute the JavaScript and let the page hydrate before scraping the text."
+        "text": "Moderne websites maken gebruik van JavaScript (zoals React of Vue) om data dynamisch in te laden nadat de initiële HTML is binnengehaald. Een eenvoudig HTTP-verzoek downloadt uitsluitend het lege HTML-skelet. U heeft een headless browser nodig om de JavaScript-code uit te voeren en de pagina volledig te laten renderen ('hydraten') voordat u de tekst kunt scrapen."
       }
     },
     {
       "@type": "Question",
-      "name": "How do scraping tools bypass Cloudflare?",
+      "name": "Hoe omzeilen professionele scraping-tools anti-bot systemen zoals Cloudflare?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Anti-bot tools block automated traffic based on IP address reputation and browser fingerprints. Advanced scraping infrastructure uses residential or ISP IP proxies and mimics real Chrome browser signals to bypass these checks."
+        "text": "Geavanceerde anti-bot systemen blokkeren geautomatiseerd verkeer op basis van IP-reputatie en browser-fingerprints. Professionele scraping-infrastructuur maakt gebruik van residentiële proxy's en bootst reële browserkenmerken (TLS-ciphers, canvas-rendering, navigatie-headers) van Google Chrome na om inspecties geruisloos te passeren."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is Firecrawl, and how is it different from Browserless?",
+      "name": "Wat is Firecrawl en waarin verschilt het van Browserless?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Firecrawl is a scraping API designed for AI: it handles headless browsing and returns clean Markdown or structured JSON automatically. Browserless gives you raw programmatic control over a headless Chrome instance for logins, clicks, and custom interactions — many apps use both."
+        "text": "Firecrawl is een scraping-API specifiek ontworpen voor AI: het handelt headless browsing automatisch af en retourneert direct schone Markdown of gestructureerde JSON. Browserless biedt daarentegen directe programmatische controle over een headless Chrome-instantie via Puppeteer/Playwright voor complexe logins, klikreeksen en formulierinteracties — veel geavanceerde AI-apps gebruiken beide gecombineerd."
       }
     },
     {
       "@type": "Question",
-      "name": "Why shouldn't I feed raw HTML to an LLM?",
+      "name": "Waarom moet ik vermijden om ruwe HTML direct aan een LLM te voeden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Raw HTML is filled with formatting code, navigation chrome, and scripts. Feeding 20,000 tokens of HTML to an LLM to find a single paragraph wastes API budget and confuses the model. Always clean it to Markdown or plain text first."
+        "text": "Ruwe HTML zit vol overbodige opmaaktags, navigatiemenu's, tracking-scripts en CSS. Het voeden van tienduizenden onnodige HTML-tokens aan een LLM om één specifieke alinea te extraheren verspilt gigantische hoeveelheden API-budget en verwart het taalmodel. Converteer webpagina's daarom altijd eerst naar schone Markdown of platte tekst."
       }
     },
     {
       "@type": "Question",
-      "name": "Is web scraping for AI legal?",
+      "name": "Is web scraping voor AI-toepassingen juridisch toegestaan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends heavily on what you scrape and how. Respecting robots.txt, rate-limiting requests, and avoiding paywalled or authenticated content without permission are important safeguards; LaunchStudio, backed by Manifera's engineering experience since 2014, builds scraping pipelines with these boundaries designed in from the start rather than bolted on after a legal complaint."
+        "text": "Dat hangt sterk af van welke data u verzamelt en op welke manier. Het respecteren van robots.txt, het toepassen van strikte rate-limiting en het vermijden van content achter een betaalmuur of inlogscherm zonder toestemming zijn cruciale randvoorwaarden. LaunchStudio, ondersteund door Manifera's engineeringexpertise sinds 2014, richt scraping-pipelines vanaf het eerste begin in met deze strikte ethische en juridische kaders ingebouwd."
       }
     }
   ]
 }
 </script>
+
