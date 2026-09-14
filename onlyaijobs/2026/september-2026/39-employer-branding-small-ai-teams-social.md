@@ -1,11 +1,11 @@
-Een groot bedrijf overtuigt kandidaten met een gepolijste employer branding-video. Een klein AI-team heeft dat budget niet — en probeert het vaak toch te imiteren, met matig resultaat.
+💡 A large company convinces candidates with a polished employer branding video. A small AI team doesn't have that budget — and often tries to imitate it anyway, with mediocre results.
 
-Wat wél overtuigt, kost geen geld: een concreet, huidig probleem in plaats van een missieverklaring. Eerlijkheid over de staat van je data en infrastructuur — dat filtert niet af, het trekt juist de juiste kandidaten aan. Direct contact met wie er al werkt, zonder tussenkomst van HR.
+💰 What does convince costs no money: a concrete, current problem instead of a mission statement. Honesty about the state of your data and infrastructure — it doesn't put people off, it attracts the right candidates. Direct contact with the people who already work there, without HR in between.
 
-Niet elke kandidaat wil bij een grote, gestructureerde organisatie werken. Wees expliciet over wat je bent.
+✅ Not every candidate wants to work at a large, structured organisation. Be explicit about what you are.
 
-Plaats je vacature — eerste plaatsing gratis: info@onlyaijobs.eu
+📢 Post your vacancy — first listing free: info@onlyaijobs.eu
 
-Lees het volledige verhaal: https://onlyaijobs.eu/blog/employer-branding-voor-kleine-ai-teams
+📖 Read the full story: https://onlyaijobs.eu/blog/employer-branding-small-ai-teams
 
-#OnlyAIJobs #EmployerBranding #Werving #Nederland
+#OnlyAIJobs #EmployerBranding #Recruitment #Netherlands

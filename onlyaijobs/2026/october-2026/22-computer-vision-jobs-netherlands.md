@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-10-22",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/computer-vision-jobs-netherlands"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/computer-vision-jobs-netherlands"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Computer vision careers"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Organization", "name": "Philips"},
+    {"@type": "Organization", "name": "Thermo Fisher Scientific"},
+    {"@type": "Organization", "name": "ASML"},
+    {"@type": "Organization", "name": "Lely"},
+    {"@type": "Organization", "name": "Vanderlande"},
+    {"@type": "ResearchOrganization", "name": "QUVA Lab (University of Amsterdam and Qualcomm)"},
+    {"@type": "CollegeOrUniversity", "name": "Wageningen University & Research"},
+    {"@type": "Legislation", "name": "EU Medical Device Regulation (EU) 2017/745"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"},
+    {"@type": "GovernmentOrganization", "name": "Dutch Data Protection Authority (Autoriteit Persoonsgegevens)"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ The core technical skill — building and evaluating models that extract informa
 ## Why a Single Job Search Misses Most of This Work
 
 Searching "computer vision engineer" surfaces only postings that use that exact phrase, missing the much larger volume of vision work embedded inside "Quality Inspector (Automated)," "Robotics Perception Engineer," or "Precision Agriculture Researcher."
-
-## Where to Start
-
-Search by the underlying skill and by category rather than by a single expected title, and be open to postings from industries you wouldn't immediately associate with computer vision.
-
-Browse current AI, machine learning and data vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Deeper Look at Why Vision Work Fragments Across Industries
 
@@ -111,6 +119,47 @@ The practical value of this map is that it converts an abstract national search 
 The practical texture of computer vision work has shifted meaningfully over recent years, and candidates entering now should understand the direction of travel. Increasingly capable general-purpose vision models have reduced the amount of task-specific training required for many straightforward recognition problems, which has shifted the centre of gravity of applied work further toward the surrounding engineering: acquisition design, evaluation, edge deployment and integration into operational systems.
 
 For candidates, this reinforces rather than undermines the advice throughout this article. The parts of the work that remain hardest to automate away — understanding the physical setup, defining what actually constitutes a defect or a condition of interest, building evaluation that catches real failures, deploying under genuine constraints — are precisely the parts that domain engagement and applied experience build. A candidate who invests in those capabilities is investing in the durable portion of the discipline rather than in the portion most exposed to being commoditised by the next generation of general-purpose models.
+
+## Named Employers and Research Groups Across Dutch Computer Vision
+
+The fragmentation described in this article becomes clearer when you attach names to each domain.
+
+**Medical imaging.** **Philips**, with major research and development activities in Eindhoven and Best, works on imaging systems and AI-based image analysis. Academic medical centres run their own imaging AI research groups.
+
+**Scientific instruments and semiconductors.** **Thermo Fisher Scientific** develops electron microscopes in Eindhoven, where image processing and reconstruction are central. **ASML** in Veldhoven relies on metrology and inspection, where image-based measurement at nanometre scale is critical.
+
+**Agriculture and livestock.** **Lely**, based in Maassluis, builds milking and barn robots that use vision and sensors to work with animals. **Wageningen University & Research** applies computer vision to plant phenotyping, crop monitoring and food quality.
+
+**Logistics automation.** **Vanderlande**, headquartered in Veghel, develops automated material handling systems for warehouses, parcel hubs and airports, where vision supports item recognition, picking and baggage handling.
+
+**Academic research.** The **QUVA Lab**, a collaboration between the University of Amsterdam and Qualcomm, is one of the best-known Dutch research labs for deep learning and computer vision. TU Delft, Eindhoven University of Technology and the University of Twente also run strong vision and robotics groups.
+
+## Regulation That Differs by Vision Domain
+
+Because computer vision spreads across so many sectors, the regulatory context changes from job to job:
+
+| Domain | Key framework | What it means in practice |
+|---|---|---|
+| Medical imaging | **EU Medical Device Regulation (EU) 2017/745** | Image analysis software used for diagnosis is often a medical device, requiring clinical evaluation and quality management |
+| Biometrics and surveillance | **EU Artificial Intelligence Act** and GDPR | Certain uses of remote biometric identification are prohibited or strictly limited; biometric data is a special category of personal data |
+| Industrial inspection | Machinery and product safety rules | Vision used as a safety function must meet safety requirements |
+| Automotive and robotics | Vehicle type approval and functional safety standards | Perception systems must demonstrate safe behaviour under defined conditions |
+
+The **Dutch Data Protection Authority** has taken a strict line on facial recognition, including imposing a substantial fine on a company that built a database of facial images scraped from the internet. Candidates working in any vision domain involving people should expect privacy to be a design constraint from the first day.
+
+## Key Takeaways
+
+- Dutch computer vision work is spread across medical imaging, scientific instruments, semiconductors, agriculture, logistics and robotics.
+- Named employers range from Philips, Thermo Fisher Scientific and ASML to Lely and Vanderlande, with research at the QUVA Lab, TU Delft, TU/e, Twente and Wageningen.
+- The physical setup and labelling effort often matter more than model architecture.
+- Regulation differs by domain: the Medical Device Regulation, the AI Act, the GDPR and product safety rules.
+- Build a cross-domain portfolio and search by category rather than a single job title.
+
+## Where to Start
+
+Search by the underlying skill and by category rather than by a single expected title, and be open to postings from industries you wouldn't immediately associate with computer vision.
+
+Browse current AI, machine learning and data vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

@@ -17,7 +17,16 @@ Content Format: Decision-Stage Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-01",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/how-long-should-ai-hiring-take"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/how-long-should-ai-hiring-take"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Length of AI and data hiring processes"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Legislation", "name": "Dutch Civil Code (Burgerlijk Wetboek), Book 7 — notice periods"},
+    {"@type": "GovernmentOrganization", "name": "Immigratie- en Naturalisatiedienst (IND)"},
+    {"@type": "Thing", "name": "Bouwvakantie"},
+    {"@type": "Organization", "name": "NVP Sollicitatiecode"},
+    {"@type": "Legislation", "name": "Algemene verordening gegevensbescherming (AVG/GDPR)"}
+  ]
 }
 </script>
 
@@ -38,12 +47,6 @@ Every stakeholder in an AI hiring process has a legitimate reason to want their 
 ## A Practical Fix
 
 Audit your current process for what each stage actually tests, and consolidate any two stages that test overlapping skills. Set an internal maximum elapsed time from application to offer, and communicate proactively between stages even when there's no update — silence is read as a signal, so replace it with one you control.
-
-## Where to Start
-
-If you're currently losing strong candidates mid-process, the highest-leverage fix is usually reducing elapsed time and redundant stages, not adding new assessment methods.
-
-Post your open AI, machine learning or data role — the first listing is free — by emailing a link to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
 
 ## An Audit Template for Your Current Process
 
@@ -81,6 +84,73 @@ Sometimes a genuine delay is unavoidable — a key decision-maker is on leave, a
 ## Why Fixing This Process Pays Off Beyond Just This Round of Hiring
 
 An efficient, well-communicated hiring process doesn't just help you win this specific candidate — it shapes your company's reputation among the broader pool of AI/ML/Data candidates in the Netherlands, a genuinely small and networked community where candidates often discuss their interview experiences with peers considering the same company. A reputation for a respectful, efficient process compounds as a recruiting asset over time, while a reputation for a slow, disorganized one can quietly cost you candidates in future searches who heard about a bad experience secondhand before ever applying themselves.
+
+## The Real Timeline Includes What Happens After the Offer
+
+Hiring managers often measure the process from application to signed offer. In the Netherlands, the time from signed offer to first working day adds a predictable delay that should be planned for from the start.
+
+**Notice periods.** Under Dutch law, an employee's statutory notice period is one month unless the contract says otherwise, and contracts can extend it, within legal limits. Many experienced AI professionals have agreed notice periods of one or two months, and resignations typically take effect at the end of a calendar month. A candidate who signs in mid-March may therefore not be able to start until early May or later.
+
+**Work and residence permits.** For non-EU candidates, the employer usually applies to the **IND** for a highly skilled migrant permit. Recognised sponsors benefit from a faster procedure, but document collection, possible entry visas and relocation still add weeks. Build this into the timeline rather than treating it as a surprise.
+
+**Relocation.** Candidates moving from abroad or across the country often need time to find housing — frequently the longest step of all.
+
+| Phase | Typical duration to plan for | What you control |
+|---|---|---|
+| Sourcing and applications | 1–3 weeks | Channel choice and posting quality |
+| Screening and interviews | 1.5–3 weeks with a tight process | Number of stages, scheduling, feedback speed |
+| Offer and negotiation | A few days to 1 week | Pre-approved salary ranges and decision authority |
+| Notice period | Commonly 1–2 months | Nothing, except flexible start dates |
+| Permit and relocation (if applicable) | Several weeks or more | Recognised sponsor status, relocation support |
+
+The practical lesson: a process that takes six weeks to reach an offer, followed by a two-month notice period, means roughly three and a half months without the hire. Every week saved in the part you control matters more than it looks.
+
+## Seasonal Patterns in the Dutch Hiring Calendar
+
+Several Dutch calendar effects predictably slow hiring processes.
+
+**Summer holidays.** Dutch school summer holidays are staggered by region, and many decision-makers take two to three weeks off in July and August. Industrial and construction-related employers may also be affected by the traditional *bouwvakantie*, the regional summer holiday period in the construction sector. Processes that start in late June often stall.
+
+**The December and year-end period.** Budget cycles, holidays and year-end closings slow decisions, while January is a common moment for professionals to start looking for a new role.
+
+**May holidays and bridge days.** The spring period with several public holidays and school breaks can create scheduling gaps.
+
+Plan interview panels and decision dates around these periods, and tell candidates in advance when a known holiday will affect the timeline.
+
+## A Sample Three-Week Process That Keeps Signal High
+
+| Day | Step | Owner |
+|---|---|---|
+| Day 1–3 | Application review and response to every applicant | Recruiter |
+| Day 4–6 | 30-minute structured screening call covering practical fit and two judgment questions | Recruiter |
+| Day 7–10 | Technical interview combining project walkthrough and a practical problem | Two engineers |
+| Day 11–14 | System design or case discussion plus team conversation, scheduled on the same day | Hiring manager and team |
+| Day 15–17 | Debrief within 48 hours, references, decision | Hiring manager |
+| Day 18–21 | Offer, negotiation and signature | Hiring manager and HR |
+
+This structure removes the most common redundancy — separate take-home and live-coding rounds testing the same skill — and eliminates the multi-week gap before the final conversation.
+
+## Communication Standards Worth Committing To
+
+- **Acknowledge every application** within a few working days.
+- **Share the full process and expected timeline** in the first call.
+- **Give feedback within two working days** after each interview stage, even if it is only a status update.
+- **Tell rejected candidates clearly** instead of letting silence answer for you; the Dutch AI community is small, and candidates talk.
+- **Respect data protection.** Under the **AVG**, retain applicant data only as long as necessary and ask for consent if you want to keep candidates on file. The **NVP Sollicitatiecode** also describes good practice for informing candidates throughout the procedure.
+
+## Key Takeaways
+
+- Drop-off is driven by elapsed time, redundant stages and silence, not just by the number of stages.
+- In the Netherlands, notice periods and permit or relocation steps add weeks or months after the offer, so speed before the offer matters even more.
+- Dutch summer holidays, the bouwvakantie and year-end periods predictably slow hiring; plan around them.
+- A three-week process from application to offer is achievable with consolidated stages and fast debriefs.
+- Commit to communication standards: acknowledgement, a shared timeline, feedback within two working days and clear rejections.
+
+## Where to Start
+
+If you're currently losing strong candidates mid-process, the highest-leverage fix is usually reducing elapsed time and redundant stages, not adding new assessment methods.
+
+Post your open AI, machine learning or data role — the first listing is free — by emailing a link to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
 
 ## Frequently Asked Questions
 

@@ -1,11 +1,11 @@
-Een carrièreservice die studenten adviseert "eerst lokaal te kijken" geeft een advies dat moeilijk te operationaliseren is zonder een concreet instrument.
+💡 A career service that advises students to "look locally first" gives advice that is hard to act on without a concrete tool.
 
-Een algemene vacaturesite toont plaatsnamen, geen exacte afstand, en rangschikt deels op advertentiebudget. Een gespecialiseerde, adresniveau-vacaturebank maakt "kijk lokaal" voor het eerst concreet te checken — in minder dan een minuut, zonder dat de carrièreservice zelf iets hoeft te bouwen.
+💰 A general job site shows place names, not exact distance, and partly ranks by advertising budget. A specialist, address-level job board makes "look locally" checkable for the first time — in under a minute, without the career service having to build anything.
 
-Een korte vermelding in een nieuwsbrief of op een carrièrepagina is genoeg om te beginnen. Geen nieuw programma, een kleine toevoeging.
+✅ A short mention in a newsletter or on a careers page is enough to start. Not a new programme, a small addition.
 
-Neem contact op: info@onlyaijobs.eu
+✉️ Get in touch: info@onlyaijobs.eu
 
-Lees het volledige verhaal: https://onlyaijobs.eu/blog/universiteiten-en-niche-vacaturebanken-samenwerking
+📖 Read the full story: https://onlyaijobs.eu/blog/universities-and-niche-job-boards-partnership
 
-#OnlyAIJobs #Universiteit #Carrièreservice #Nederland
+#OnlyAIJobs #University #CareerServices #Netherlands

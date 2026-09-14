@@ -17,7 +17,18 @@ Content Format: Decision-Stage Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-27",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/writing-ai-job-description-that-filters"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/writing-ai-job-description-that-filters"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Writing job descriptions for AI and machine learning roles"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Legislation", "name": "Algemene wet gelijke behandeling"},
+    {"@type": "Legislation", "name": "Equal Treatment in Employment (Age Discrimination) Act"},
+    {"@type": "GovernmentOrganization", "name": "Netherlands Institute for Human Rights"},
+    {"@type": "Legislation", "name": "EU Pay Transparency Directive (EU) 2023/970"},
+    {"@type": "Organization", "name": "NVP Sollicitatiecode"},
+    {"@type": "Thing", "name": "schema.org JobPosting"},
+    {"@type": "GovernmentOrganization", "name": "Immigratie- en Naturalisatiedienst (IND)"}
+  ]
 }
 </script>
 
@@ -34,12 +45,6 @@ Most AI job descriptions are optimised, intentionally or not, to attract as many
 ## What to Leave Out
 
 Generic language about "passion for innovation" or "fast-paced environment" filters nothing — every company uses it, so it carries no information a candidate can act on. Space spent on it is space not spent on the specifics that would actually help the right candidate recognise themselves in the posting.
-
-## Where to Start
-
-Rewrite your next AI job posting around one specific, current problem the hire would work on in their first month, and separate genuine requirements from nice-to-haves explicitly. Fewer, better-matched applications save more time than a larger unfiltered pool ever will.
-
-Post your open AI, machine learning or data role — the first listing is free — by emailing a link to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
 
 ## A Before-and-After Comparison of the Same Role
 
@@ -81,6 +86,71 @@ A recurring source of vague, filtering-free job postings is that they're drafted
 ## How to Know When Your Rewritten Posting Is Actually Working
 
 Rather than assuming a more specific posting is automatically better, track a concrete before-and-after comparison for your own hiring: the ratio of interview-worthy candidates to total applicants, before and after adopting a more specific, filtering-oriented posting style. A genuine improvement in this ratio, even a modest one, justifies the additional time a well-written posting takes, and gives you a data-backed answer the next time someone on your team suggests reverting to a faster, more generic template under time pressure.
+
+## A Section-by-Section Template for Dutch AI Vacancies
+
+The following structure puts the filtering information where candidates look for it, and covers the practical details that specialist candidates in the Netherlands expect.
+
+| Section | What to write | Why it filters |
+|---|---|---|
+| **Title** | A conventional title plus a qualifier, e.g. "Machine Learning Engineer – Forecasting" | Helps the right candidates find it and the wrong ones skip it |
+| **The problem** | The concrete challenge of the first three to six months | Candidates self-select on the work itself |
+| **Data and stack** | Data sources, volumes, quality issues, tools and cloud platform | Signals technical honesty and maturity |
+| **Team** | Team size, roles, reporting line, who reviews the work | Resolves seniority and support questions early |
+| **Must-have** | Three to five genuine requirements | Filters without scaring off strong candidates |
+| **Nice-to-have** | Optional skills, clearly labelled | Invites candidates who can learn quickly |
+| **Location and work pattern** | Exact office address, office days per week, remote policy | Commute and hybrid fit decided before applying |
+| **Language** | Working language(s) and the level truly required | Avoids unnecessary exclusion of international candidates |
+| **Salary and terms** | Salary range or scale, CAO if applicable, pension, training budget | Reduces late-stage withdrawals |
+| **Sponsorship** | Whether the organisation is an IND recognised sponsor | Saves time for international candidates |
+| **Process** | Stages, technical assessment format, expected timeline | Shows respect for candidates' time |
+
+## Legal Requirements That Shape the Wording
+
+In the Netherlands, several rules affect what a vacancy may say. Specificity is good; specificity about the wrong things is a legal risk.
+
+**Equal treatment.** The **Algemene wet gelijke behandeling** prohibits distinctions on grounds such as religion, belief, political opinion, race, sex, nationality, sexual orientation and civil status, and the **Equal Treatment in Employment (Age Discrimination) Act** prohibits age discrimination in employment unless objectively justified. Phrases such as "young team", "recent graduate" used as a hard requirement for an experienced role, or "native speaker" when professional fluency would do, can create risk. The **Netherlands Institute for Human Rights** (College voor de Rechten van de Mens) assesses complaints about discriminatory recruitment.
+
+**Language requirements.** Requiring Dutch is legitimate when the work genuinely requires it — for example contact with Dutch-speaking clients or policy documents. Be specific about the level and the reason; blanket requirements exclude candidates unnecessarily.
+
+**Pay transparency.** The **EU Pay Transparency Directive (EU) 2023/970** requires employers to provide information on initial pay or its range before the interview stage and bans asking candidates about their pay history. Member states had until June 2026 to implement it; check the status of the Dutch implementing legislation. Including a salary range now aligns with where the law is heading and is one of the strongest filters available.
+
+**Data protection.** Applicant data is subject to the AVG (GDPR). State how long you keep applications and ask for consent if you want to keep candidates on file for future roles.
+
+**Good practice codes.** The **NVP Sollicitatiecode** sets out principles for fair and transparent recruitment procedures that many Dutch employers refer to in their vacancies.
+
+## Make the Posting Machine-Readable, Not Just Human-Readable
+
+A well-written vacancy also needs to be findable. Search engines and job aggregators read structured data, and the schema.org **JobPosting** vocabulary is the standard way to provide it.
+
+- **Required properties** for eligibility in job search features include the title, description, date posted, hiring organisation and job location.
+- **Recommended properties** include salary (`baseSalary`), employment type, and an expiry date (`validThrough`).
+- **Remote roles** can be marked with `jobLocationType` set to telecommute, combined with `applicantLocationRequirements` to state which countries candidates may work from.
+- **Accuracy matters.** The structured data must match the visible vacancy text; mismatches can make a posting ineligible for rich results.
+
+For candidates, the practical benefit is that an exact address, salary range and employment type become filterable — which is exactly the information that separates a relevant application from a wasted one.
+
+## Common Pitfalls Specific to AI Roles
+
+- **Listing every framework ever used.** TensorFlow, PyTorch, JAX, scikit-learn, XGBoost and three cloud platforms in one posting signals that nobody decided what the role is.
+- **"PhD required" for applied roles.** Unless the role involves genuine research, this excludes strong practitioners and narrows the pool for no benefit.
+- **Buzzword stacking.** "GenAI, LLMs, agents, computer vision and MLOps" in a single mid-level role suggests an unrealistic scope.
+- **Hiding the data reality.** Candidates discover it in the first week anyway; stating it upfront prevents early attrition.
+- **No mention of evaluation or governance** for roles affecting customers, credit, hiring or health — experienced candidates read this as immaturity.
+
+## Key Takeaways
+
+- Build the posting around a concrete first-months problem, honest data description and explicit must-haves versus nice-to-haves.
+- Include exact location, work pattern, language requirement, salary range, sponsorship status and process.
+- Respect Dutch equal treatment law, be specific about genuine language needs, and prepare for pay transparency obligations.
+- Add accurate schema.org JobPosting structured data so salary, location and remote status are machine-readable.
+- Avoid framework dumps, unnecessary PhD requirements and buzzword-stacked scopes.
+
+## Where to Start
+
+Rewrite your next AI job posting around one specific, current problem the hire would work on in their first month, and separate genuine requirements from nice-to-haves explicitly. Fewer, better-matched applications save more time than a larger unfiltered pool ever will.
+
+Post your open AI, machine learning or data role — the first listing is free — by emailing a link to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
 
 ## Frequently Asked Questions
 

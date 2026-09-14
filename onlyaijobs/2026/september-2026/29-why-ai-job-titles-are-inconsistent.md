@@ -17,7 +17,19 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-20",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/why-ai-job-titles-are-inconsistent"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/why-ai-job-titles-are-inconsistent"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "AI and machine learning job titles"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Occupation", "name": "AI Engineer"},
+    {"@type": "Occupation", "name": "Machine Learning Engineer"},
+    {"@type": "Occupation", "name": "Data Scientist"},
+    {"@type": "Occupation", "name": "Applied Scientist"},
+    {"@type": "Occupation", "name": "Research Engineer"},
+    {"@type": "Thing", "name": "ESCO (European Skills, Competences, Qualifications and Occupations)"},
+    {"@type": "Thing", "name": "ISCO-08"},
+    {"@type": "Thing", "name": "schema.org JobPosting"}
+  ]
 }
 </script>
 
@@ -38,12 +50,6 @@ Established engineering disciplines have had decades for titles to converge arou
 ## A Practical Way to Search Past This
 
 Search by category and by the actual responsibilities listed, not by matching a single expected title. Keep a mental checklist of the questions that actually matter to you — modeling versus infrastructure emphasis, research versus applied focus — and evaluate each posting against that checklist regardless of what it calls itself.
-
-## Where to Start
-
-Stop filtering exclusively by title, and start reading the first three bullet points of a posting's responsibilities before deciding whether it matches what you're looking for.
-
-Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), filtered by category rather than title alone.
 
 ## A Practical Checklist to Use Instead of a Title
 
@@ -88,6 +94,78 @@ Employers frustrated by receiving mismatched applications due to title ambiguity
 ## Why This Confusion Creates a Genuine Opportunity for Careful Candidates
 
 Precisely because most candidates apply based on title-matching rather than doing the deeper analysis described in this article, candidates willing to invest the extra effort to read past titles and ask clarifying questions gain a real, if modest, competitive advantage — they're more likely to end up in roles that actually fit them, reducing early attrition risk, and they demonstrate a level of diligence in the interview process itself that reflects well on them as a candidate. The confusion in the market isn't just an obstacle to navigate around; for a sufficiently careful candidate, it's also a filter that works in their favor against less diligent competition.
+
+## The Dutch Layer: Bilingual Titles Multiply the Confusion
+
+In the Netherlands, title inconsistency has an extra dimension: vacancies are written in English, in Dutch, or in a mixture of both. The same role can appear under very different labels depending on the employer's working language and sector.
+
+| English title | Common Dutch or mixed variants | Where the Dutch variant is most common |
+|---|---|---|
+| Data Scientist | Data scientist, datawetenschapper (rare), data-analist (when analysis-heavy) | Government, healthcare, SMEs |
+| Machine Learning Engineer | ML-engineer, machine learning engineer, software engineer AI | Industrial and high-tech companies |
+| AI Engineer | AI-engineer, AI-specialist, AI-ontwikkelaar | Consultancies, SMEs, public sector |
+| Research Engineer / Researcher | Onderzoeker, wetenschappelijk programmeur | Universities, research institutes |
+| AI Governance Lead | Adviseur data & AI, adviseur verantwoorde AI, algoritme-expert | Ministries, municipalities, insurers |
+| Data Engineer | Data engineer, datamanagement specialist, BI-ontwikkelaar | Retail, logistics, public sector |
+| Analytics / BI | BI-specialist, informatieanalist, data-analist | Almost all sectors |
+
+The practical consequence is that a search strategy using only English keywords misses a significant share of Dutch-language vacancies, and vice versa. Searching in both languages — or starting from a category rather than a keyword — is the only way to see the complete picture.
+
+A useful set of search terms to combine, in both languages:
+
+- **Modelling:** machine learning, ML, AI, kunstmatige intelligentie, voorspelmodel, data science
+- **Engineering:** engineer, ontwikkelaar, developer, platform, MLOps
+- **Research:** researcher, onderzoeker, research engineer, promovendus, postdoc
+- **Governance:** AI governance, verantwoorde AI, algoritmes, compliance, AI Act
+
+## Why the "AI Engineer" Title Changed Meaning Recently
+
+The title **AI Engineer** has shifted more than any other in the past few years. Before large language models became widely available through APIs, it was often a loose synonym for machine learning engineer. Since then, it has increasingly come to describe engineers who build applications on top of foundation models: retrieval-augmented generation, prompt and context design, agent workflows, evaluation of model outputs, and integration of models into existing software.
+
+That shift explains much of the current confusion. Some employers still use "AI Engineer" in the older sense; others use it specifically for generative AI application development; and some use it for both within the same organisation. When you see the title, check whether the responsibilities mention model training and feature pipelines (older sense) or LLM integration, retrieval and evaluation (newer sense).
+
+Similarly, **Applied Scientist** became popular through large international technology companies, where it often denotes a research-trained scientist who works on product problems. Dutch employers that adopt the title do not always adopt that definition.
+
+## Formal Classifications Exist — Employers Just Don't Use Them
+
+Title inconsistency is not caused by a lack of taxonomies. Several formal classification systems exist:
+
+**ESCO.** The European Commission's multilingual classification of skills, competences and occupations describes occupations such as data scientist and various ICT roles in all EU languages, including Dutch. It is used in EU labour-market tools and by some public employment services.
+
+**ISCO-08.** The International Labour Organization's International Standard Classification of Occupations underpins national statistics and ESCO's occupational structure.
+
+**Structured data on job pages.** The schema.org **JobPosting** vocabulary, which job boards use to make vacancies eligible for search features such as Google's job listings, includes fields for the title, the occupational category and the skills required. When filled in carefully, those fields help search engines match a vacancy to the right searches regardless of the exact wording of the title.
+
+The gap is that employers write titles for recruitment marketing, not for classification. The result is a structured framework at the level of statistics and search engines, and continued improvisation at the level of individual vacancy texts.
+
+## How a Category-Based Board Maps Titles to Work
+
+A specialist board can reduce this problem by classifying roles by the work itself. OnlyAIJobs uses categories such as Development, Machine Learning, Research, Infrastructure, Ethics & Governance, Robotics Engineer, AI Product, Computer Vision, Generative AI, Quality Control and Security and Safety. Mapping typical titles onto those categories illustrates the idea:
+
+| If the title says | Check the category | Because the work is often |
+|---|---|---|
+| AI Engineer | Generative AI or Development | LLM application development or software integration |
+| ML Engineer | Machine Learning or Infrastructure | Training and deployment |
+| Data Scientist | Machine Learning or Research | Modelling and experimentation |
+| MLOps / Platform Engineer | Infrastructure | Serving, monitoring, pipelines |
+| Adviseur data & AI | Ethics & Governance | Policy, risk and compliance |
+| Vision Engineer | Computer Vision or Robotics Engineer | Perception and inspection |
+
+Starting from the category and then reading responsibilities is faster, and less error-prone, than trying every title variant in two languages.
+
+## Key Takeaways
+
+- AI job titles are inconsistent because the field professionalised faster than conventions could form.
+- In the Netherlands, bilingual vacancies add Dutch variants such as data-analist, onderzoeker and adviseur data & AI.
+- "AI Engineer" increasingly means building applications on foundation models, but older usage persists.
+- ESCO, ISCO-08 and schema.org JobPosting provide formal structure, yet employers rarely align titles with them.
+- Search by category and responsibilities, in both English and Dutch, rather than by a single title.
+
+## Where to Start
+
+Stop filtering exclusively by title, and start reading the first three bullet points of a posting's responsibilities before deciding whether it matches what you're looking for.
+
+Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), filtered by category rather than title alone.
 
 ## Frequently Asked Questions
 

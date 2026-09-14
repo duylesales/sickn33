@@ -17,7 +17,19 @@ Content Format: Regional Market Analysis
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-04",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-groningen"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-groningen"},
+  "inLanguage": "en",
+  "about": [{"@type": "Place", "name": "Groningen"}, {"@type": "Place", "name": "Northern Netherlands"}],
+  "mentions": [
+    {"@type": "CollegeOrUniversity", "name": "University of Groningen"},
+    {"@type": "ResearchOrganization", "name": "Bernoulli Institute for Mathematics, Computer Science and Artificial Intelligence"},
+    {"@type": "CollegeOrUniversity", "name": "Hanze University of Applied Sciences"},
+    {"@type": "Hospital", "name": "University Medical Center Groningen (UMCG)"},
+    {"@type": "Place", "name": "Zernike Campus"},
+    {"@type": "Place", "name": "Eemshaven"},
+    {"@type": "Organization", "name": "New Energy Coalition"},
+    {"@type": "Organization", "name": "Groningen Seaports"}
+  ]
 }
 </script>
 
@@ -59,6 +71,67 @@ The honest reading of this table is not "Groningen is better." It is that the tw
 The number that matters to an individual candidate is not total listings in a city. It is listings divided by realistic competition for each one. A market with a hundred listings and ten thousand applicants per posting can be structurally worse for an individual than a market with fifteen listings and forty applicants per posting — especially once a candidate accounts for the fact that they can only work one job, not a market share of jobs.
 
 This is the same logic OnlyAIJobs applies at the level of a single street address rather than a city: raw volume is a weak proxy for whether a specific opportunity is good for a specific person. Distance, competition, and fit matter more than a city's position on a national ranking that was never measuring what you actually need to know.
+
+## The University of Groningen and the Northern Talent Pipeline
+
+The claim that Groningen has a genuine AI labour market rests first on its knowledge institutions, and they are more substantial than the rankings suggest.
+
+**University of Groningen (Rijksuniversiteit Groningen, RUG).** One of the oldest universities in the Netherlands and one of the earliest Dutch universities to offer Artificial Intelligence as a dedicated degree programme. Its AI research sits largely within the **Bernoulli Institute for Mathematics, Computer Science and Artificial Intelligence**, part of the Faculty of Science and Engineering, with groups working on machine learning, autonomous systems, cognitive modelling and computational intelligence. The university also operates its own high-performance computing infrastructure for research, which means graduates frequently arrive with hands-on experience of large-scale compute rather than only notebook-scale experiments.
+
+**Hanze University of Applied Sciences.** Groningen's university of applied sciences trains ICT, data and engineering students with a strong applied focus, and runs research groups on energy transition and healthy ageing that bring students into direct contact with regional employers.
+
+**University Medical Center Groningen (UMCG).** One of the largest academic hospitals in the Netherlands. Medical imaging, population-health data and clinical prediction models generate a steady flow of data science and research-engineering positions.
+
+**Zernike Campus.** The science and innovation campus on the north side of the city, where the university's science faculties, Hanze facilities and a cluster of start-ups and innovation programmes sit close together. For a candidate, it functions as the physical centre of the city's technical labour market.
+
+The effect on hiring is specific. Every year, a cohort of AI, computing science and data science graduates finishes in Groningen. Many would prefer to stay in the north if they could see enough work to justify it. Employers that make themselves visible to that cohort face much less competition for it than they would in Amsterdam.
+
+## Energy, Infrastructure and Data: The Regional Context in Detail
+
+The energy-transition work mentioned earlier is not a vague theme. It follows from concrete regional history and infrastructure.
+
+**The end of Groningen gas.** For decades the Groningen gas field was the largest natural gas field in Western Europe. Extraction-induced earthquakes led the Dutch state to wind production down and ultimately close the field. That transition created long-running programmes around damage assessment, building reinforcement, subsidence monitoring and regional economic renewal — all of which depend on geospatial data, sensor data and risk modelling.
+
+**Hydrogen and renewable energy.** The northern Netherlands has positioned itself as a hydrogen region, with the **New Energy Coalition** and partners running programmes on hydrogen production, storage and industrial use. Forecasting renewable supply, balancing grid congestion and planning infrastructure are data problems with real operational stakes.
+
+**Eemshaven and Groningen Seaports.** The port at Eemshaven, managed by **Groningen Seaports**, is a landing point for offshore wind power and home to large-scale data centre infrastructure, including Google's data centre that supports its europe-west4 cloud region. That concentration of energy and compute infrastructure creates specialised roles in energy analytics, infrastructure operations and data-centre efficiency.
+
+**Agri-food and the wider north.** Groningen, Drenthe and Friesland together form a substantial agricultural and food-processing region. Precision agriculture, crop and yield modelling and supply-chain forecasting are growing areas, even when the employer describes itself as an agricultural cooperative rather than a technology company.
+
+## A Realistic Search Radius for the North
+
+Groningen's labour market extends beyond the city, but distances in the north are larger than in the Randstad, so the radius needs to be deliberate.
+
+| From Groningen city | Approximate travel time | What it adds to your search |
+|---|---|---|
+| Zernike Campus and Groningen city | Cycling distance | University, UMCG, start-ups, most city employers |
+| Assen (Drenthe) | Around 20 minutes by train | Provincial government, TT-related and industrial employers |
+| Leeuwarden (Friesland) | Around 35–40 minutes by train | Water technology, dairy and food, provincial services |
+| Eemshaven and Delfzijl | Around 40–50 minutes by car | Energy, port, data-centre and chemical industry roles |
+| Zwolle | Around one hour by train | Insurance, logistics and e-commerce employers |
+| Amsterdam | Around two hours by train | Occasional office days for hybrid roles only |
+
+The last row matters for hybrid arrangements. An engineer who lives in Groningen and works for a Randstad employer with one or two office days per week is a common pattern — but it only works if the employer's hybrid policy is written down. Ask for it explicitly before accepting.
+
+## Job Titles to Search in the North
+
+| Sector | Titles you are likely to see | What the work usually involves |
+|---|---|---|
+| Energy and grid | Data analyst energy transition, grid analyst, forecasting specialist | Load and renewable forecasting, congestion analysis |
+| Academic hospital and health research | Clinical data scientist, research data manager, onderzoeker | Imaging, population health, prediction models |
+| University research | PhD candidate, postdoc, research software engineer | Machine learning research, HPC workflows, research tools |
+| Agriculture and food | Data analyst precision agriculture, supply chain analyst | Yield modelling, sensor data, logistics |
+| Public sector and reinforcement programmes | Informatieanalist, geodata specialist | Geospatial analysis, risk and damage data |
+
+Many of these vacancies are published in Dutch even when the working language is English, so search in both languages.
+
+## Key Takeaways
+
+- Groningen's AI market is under-advertised rather than small, and competition per vacancy is usually lower than in the Randstad.
+- The University of Groningen, its Bernoulli Institute, Hanze and UMCG produce a steady local pipeline of AI and data talent.
+- Energy-transition work — gas-field closure, hydrogen, offshore wind and grid congestion — drives much of the region's applied modelling.
+- Eemshaven's energy and data-centre infrastructure creates specialised roles that rarely carry an AI title.
+- Define your radius deliberately: Assen, Leeuwarden and Eemshaven belong to the same market; Amsterdam only works for hybrid roles.
 
 ## Where to Start
 

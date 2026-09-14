@@ -17,7 +17,21 @@ Content Format: Decision-Stage Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-14",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/hiring-internationally-vs-locally-ai-roles"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/hiring-internationally-vs-locally-ai-roles"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "International versus local hiring for AI roles"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "GovernmentOrganization", "name": "Immigration and Naturalisation Service (IND)"},
+    {"@type": "Thing", "name": "Highly skilled migrant scheme (kennismigrant)"},
+    {"@type": "Thing", "name": "EU Blue Card"},
+    {"@type": "Thing", "name": "Orientation year for highly educated persons"},
+    {"@type": "Thing", "name": "30% ruling"},
+    {"@type": "Organization", "name": "IN Amsterdam"},
+    {"@type": "Organization", "name": "Holland Expat Center South"},
+    {"@type": "Organization", "name": "Expat Center East Netherlands"},
+    {"@type": "Thing", "name": "EU free movement of workers"},
+    {"@type": "Thing", "name": "Dutch language requirements in vacancies"}
+  ]
 }
 </script>
 
@@ -32,12 +46,6 @@ Opening a search to international candidates is often treated as an obviously go
 ## When Local Hiring Is Usually the Better Default
 
 For a role with a realistic local candidate pool — most applied ML, data engineering and generalist data science roles — the added complexity of international hiring rarely pays for itself, and a specialist board's address-level, distance-sorted local candidates already surface a meaningfully wider pool than a company's own network alone.
-
-## Where to Start
-
-Before defaulting to opening a search internationally, check honestly whether the role is a genuinely rare specialization or a role with a realistic local pool you simply haven't reached yet — the second case has a cheaper fix.
-
-Post your open AI, machine learning or data role — first listing free — at info@onlyaijobs.eu.
 
 ## A Deeper Look at the Hidden Cost of Assuming Your Local Pool Is Too Small
 
@@ -129,6 +137,42 @@ Ask how many international hires the organisation has sponsored, and when the mo
 Ask what language internal documentation and technical discussions actually use, and request a specific example rather than a general assurance. The difference between an organisation that operates in English and one that switches to English when you are present determines a great deal about your effectiveness.
 
 Ask what support exists beyond the legal process — housing, registration, connecting with other international colleagues. The answer indicates whether the organisation has thought about the transition as a whole or only about the paperwork required to employ you.
+
+## The Named Routes for Hiring From Abroad
+
+International hiring in the Netherlands runs through a limited number of well-defined routes:
+
+| Route | Who it applies to | Key points for employers |
+|---|---|---|
+| **EU free movement** | Citizens of EU and EEA countries and Switzerland | No work permit needed; the main costs are relocation and onboarding |
+| **Highly skilled migrant scheme** | Non-EU professionals earning above an annually indexed salary threshold | The employer must be a recognised sponsor with the **IND**; recognised sponsors benefit from a faster procedure |
+| **EU Blue Card** | Highly qualified non-EU workers meeting EU criteria | Offers more mobility within the EU; conditions differ from the national scheme |
+| **Orientation year for highly educated persons** | Recent graduates of Dutch or top international universities | Allows working without a permit during the orientation year, and a lower salary threshold for a subsequent highly skilled migrant permit |
+| **30% ruling** | Eligible employees recruited from abroad | A tax facility, applied for jointly by employer and employee, which makes net pay more competitive; its duration and percentage have been reduced in recent rules |
+
+Salary thresholds, the 30% ruling's conditions and IND procedures change periodically, so check current figures with the IND and the Dutch Tax Administration rather than relying on older information.
+
+## Support Organisations That Lower the Operational Cost
+
+Regional expat centres combine municipal registration, IND formalities and practical information in one place, which reduces the burden on both employer and new hire. Examples include **IN Amsterdam** for the Amsterdam region, **Holland Expat Center South** for the Eindhoven region and **Expat Center East Netherlands** for Twente and surrounding areas. Other regions have comparable services. For a small employer without an HR department experienced in immigration, these centres can make the difference between a smooth and a painful first international hire.
+
+## The Language Question
+
+Many Dutch AI teams work in English, which makes international hiring practical. But language requirements should be deliberate, not accidental. If a role involves extensive contact with Dutch-speaking operational staff, customers or government bodies, requiring Dutch — or offering Dutch language training during the first year — is legitimate. Requiring Dutch for a role that is entirely English-speaking in practice narrows the pool unnecessarily and may raise equal treatment questions. State in the vacancy which language the team works in and what level of Dutch, if any, is actually needed.
+
+## Key Takeaways
+
+- Default to a well-targeted local search first; widen internationally when the specialisation genuinely requires it.
+- EU free movement, the highly skilled migrant scheme, the EU Blue Card and the orientation year are the main routes; recognised sponsorship with the IND speeds things up.
+- The 30% ruling makes offers more competitive but has become less generous; check current rules.
+- Expat centres such as IN Amsterdam, Holland Expat Center South and Expat Center East Netherlands reduce the operational burden.
+- Set language requirements deliberately based on the actual work, and state them clearly in the vacancy.
+
+## Where to Start
+
+Before defaulting to opening a search internationally, check honestly whether the role is a genuinely rare specialization or a role with a realistic local pool you simply haven't reached yet — the second case has a cheaper fix.
+
+Post your open AI, machine learning or data role — first listing free — at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

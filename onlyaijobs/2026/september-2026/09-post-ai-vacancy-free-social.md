@@ -1,9 +1,9 @@
-Een vacature op Indeed zetten kost een paar klikken. De stapel cv's doorspitten van kandidaten die "IT" op hun profiel hebben maar nog nooit een model hebben getraind, kost een halve werkdag.
+💡 Posting a vacancy on Indeed takes a few clicks. Wading through CVs from candidates who have "IT" in their profile but have never trained a model takes half a working day.
 
-Dat is geen kritiek op de sollicitanten — het is een voorspelbaar gevolg van een matching-algoritme dat "AI" gebruikt om bereik te vergroten, niet om te filteren. Op een gespecialiseerd platform heeft het publiek zichzelf al gefilterd, en hangt zichtbaarheid niet af van advertentiebudget.
+💰 That's not a criticism of applicants — it's a predictable result of a matching algorithm that uses "AI" to increase reach, not to filter. On a specialist platform, the audience has already filtered itself, and visibility doesn't depend on advertising budget.
 
-Geen dashboard, geen account: stuur ons een link naar je vacature en je eerste plaatsing is gratis.
+📢 No dashboard, no account: send us a link to your vacancy and your first posting is free.
 
-Lees de volledige analyse: https://onlyaijobs.eu/blog/gratis-ai-vacature-plaatsen
+📖 Read the full analysis: https://onlyaijobs.eu/blog/post-ai-vacancy-free
 
-#OnlyAIJobs #Werving #AIRecruitment #Nederland
+#OnlyAIJobs #Recruitment #AIRecruitment #Netherlands

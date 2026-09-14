@@ -17,7 +17,21 @@ Content Format: Decision-Stage Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-10",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/designing-technical-assessments-ai-hiring"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/designing-technical-assessments-ai-hiring"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Technical assessments in AI hiring"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Thing", "name": "NVP Recruitment Code (NVP Sollicitatiecode)"},
+    {"@type": "GovernmentOrganization", "name": "Dutch Data Protection Authority (Autoriteit Persoonsgegevens)"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"},
+    {"@type": "Legislation", "name": "Equal Treatment Act (Algemene wet gelijke behandeling)"},
+    {"@type": "Legislation", "name": "Equal Treatment on Grounds of Disability or Chronic Illness Act"},
+    {"@type": "GovernmentOrganization", "name": "Netherlands Institute for Human Rights (College voor de Rechten van de Mens)"},
+    {"@type": "Thing", "name": "Work sample tests"},
+    {"@type": "Thing", "name": "Structured interviews"},
+    {"@type": "Thing", "name": "Schmidt and Hunter (1998) meta-analysis of selection methods"},
+    {"@type": "Legislation", "name": "General Data Protection Regulation (GDPR)"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ A take-home assignment that asks candidates to implement a classic algorithm fro
 ## Why Copied Templates Fail
 
 An assessment copied from a generic template tests generic skills, not what this specific role actually needs — which means strong performance on the assessment correlates weakly with strong performance in the actual job.
-
-## Where to Start
-
-Design your next assessment around a real, anonymized problem from your own team's actual work, scoped to a reasonable time commitment, and ask candidates to justify their reasoning, not just produce a correct output.
-
-Post your open AI, machine learning or data role — first listing free — at info@onlyaijobs.eu.
 
 ## A Deeper Look at Why Copied Assessments Fail Quietly
 
@@ -134,6 +142,38 @@ The complementary check is asking recent hires how the assessment compared to th
 Pulling the preceding sections into a practical form: before sending an assessment, confirm that it derives from a real problem your team has faced rather than from a template, that it tests the specific capabilities that distinguish strong performers in this role, that the stated time commitment is one your own team members have verified, that evaluation criteria are written down before submissions arrive, and that at least two people will score independently before discussing.
 
 Confirm also that the assessment is proportionate to the seniority of the role, that candidates are told why it exists and what it evaluates, and that you have a plan for providing at least brief feedback afterward. None of these steps takes long individually, and together they convert an assessment from a ritual into an instrument that actually improves the hiring decision.
+
+## What Selection Research Says About Assessment Formats
+
+Decades of research in personnel psychology support some of the recommendations in this article. A widely cited meta-analysis by **Schmidt and Hunter (1998)** found that **work sample tests** and **structured interviews** are among the better predictors of job performance, while unstructured interviews and years of experience predict considerably less well. Later research has refined the exact numbers, but the practical message holds: assessments that closely resemble real work, scored against predefined criteria, tend to predict better than puzzles or informal conversations.
+
+For AI roles, this supports assessments built around realistic tasks — interpreting a flawed model evaluation, cleaning a small messy dataset, or designing a monitoring approach — combined with a structured debrief in which every candidate is asked the same core questions.
+
+## The Legal Frame for Assessments in the Netherlands
+
+- **Equal treatment.** Under the **Equal Treatment Act**, selection must not discriminate on grounds such as origin, religion, sex or nationality. Language requirements must be justified by the job. The **Netherlands Institute for Human Rights** assesses complaints.
+- **Reasonable accommodation.** Under the **Equal Treatment on Grounds of Disability or Chronic Illness Act**, employers must make effective adjustments where needed, for example extra time for a candidate with dyslexia, unless this imposes a disproportionate burden. Mention in your assessment invitation how candidates can request accommodations.
+- **Candidate data.** Assessment results are personal data under the **GDPR**. The **Dutch Data Protection Authority** advises deleting applicant data within four weeks after the procedure ends unless the candidate consents to longer retention.
+- **Automated scoring.** If you use AI tools to score assessments or screen candidates, note that the **EU Artificial Intelligence Act** classifies AI systems used for recruitment and selection as high-risk, with obligations around human oversight, transparency and bias management.
+- **Fair process.** The **NVP Recruitment Code** recommends transparency about the selection procedure and its steps — including what an assessment involves and how much time it takes.
+
+## Handling Generative AI in Take-Home Assignments
+
+Generative AI tools have changed take-home assignments. Instead of trying to ban their use — which is hard to verify — many teams now state explicitly whether AI assistance is allowed and ask candidates to describe how they used it. The follow-up conversation then becomes the real test: can the candidate explain every choice, spot weaknesses in the generated parts and extend the solution live? That approach reflects how the work is actually done today and keeps the assessment fair for candidates who are transparent.
+
+## Key Takeaways
+
+- Design assessments around the actual role instead of copying templates; test judgement on realistic tasks.
+- Selection research, including Schmidt and Hunter's meta-analysis, supports work samples and structured interviews.
+- Respect equal treatment rules, offer reasonable accommodations and handle assessment data under the GDPR.
+- AI-based scoring in recruitment is high-risk under the AI Act and requires human oversight.
+- Be explicit about generative AI use in take-homes and use the debrief to test real understanding.
+
+## Where to Start
+
+Design your next assessment around a real, anonymized problem from your own team's actual work, scoped to a reasonable time commitment, and ask candidates to justify their reasoning, not just produce a correct output.
+
+Post your open AI, machine learning or data role — first listing free — at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

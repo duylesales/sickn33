@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-09",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/mlops-infrastructure-jobs-netherlands"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/mlops-infrastructure-jobs-netherlands"},
+  "inLanguage": "en",
+  "about": [{"@type": "Occupation", "name": "MLOps Engineer"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "SoftwareApplication", "name": "Kubernetes"},
+    {"@type": "SoftwareApplication", "name": "MLflow"},
+    {"@type": "SoftwareApplication", "name": "Azure Machine Learning"},
+    {"@type": "SoftwareApplication", "name": "Google Vertex AI"},
+    {"@type": "SoftwareApplication", "name": "Amazon SageMaker"},
+    {"@type": "Organization", "name": "SURF"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"},
+    {"@type": "Legislation", "name": "Digital Operational Resilience Act (DORA)"},
+    {"@type": "Thing", "name": "ISO/IEC 42001"},
+    {"@type": "GovernmentOrganization", "name": "De Nederlandsche Bank"}
+  ]
 }
 </script>
 
@@ -38,12 +52,6 @@ MLOps sits at the intersection of software infrastructure, data engineering and 
 ## How to Search for a Role That Doesn't Have a Consistent Name
 
 Searching only for "MLOps" will miss roles titled ML Platform Engineer, AI Infrastructure Engineer, or even a DevOps posting with model-deployment responsibilities buried in the fourth bullet point. Reading the actual responsibilities, not just the title, is the only reliable filter for this specific function.
-
-## Where to Start
-
-If you specialize in the intersection of infrastructure and machine learning, don't rely on a single search term. Filter by category and read past the title to the responsibilities listed — this function is defined by what it does more than by what any one company happens to call it.
-
-Browse current MLOps, AI infrastructure and machine learning vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## The Three Departmental Origins of an MLOps Posting
 
@@ -84,6 +92,64 @@ For engineers looking to move into MLOps from an adjacent background, the most e
 ## Why Hybrid Backgrounds Are Becoming More Valuable, Not Less
 
 As more Dutch companies move beyond their first one or two production models toward running many models simultaneously, the premium on engineers who combine infrastructure literacy with genuine modeling context — rather than being purely one or the other — is likely to grow, not shrink. A pure infrastructure specialist without modeling context can build a technically solid deployment pipeline that nonetheless misses important model-specific failure modes; a pure modeling specialist without infrastructure context can design excellent models that never reliably reach production. The specific value of this specialization lies precisely in bridging both worlds, which is why candidates who've deliberately built comfort on both sides of this divide, regardless of which side they started from, tend to find themselves increasingly sought after as the Dutch AI market matures beyond its current early-stage concentration of single-model deployments.
+
+## The Tooling Landscape in Dutch MLOps Vacancies
+
+Because titles are unreliable, the tools named in a vacancy are one of the best indicators of whether a role is genuinely MLOps. The following components appear repeatedly in Dutch postings.
+
+| Layer | Commonly named tools and platforms | What it signals |
+|---|---|---|
+| Orchestration and containers | Kubernetes, Docker, Helm | Serving and scaling models as services |
+| Infrastructure as code | Terraform, Bicep, Pulumi | Reproducible environments; DevOps-born role |
+| Pipelines and workflow | Apache Airflow, Kubeflow Pipelines, Azure Data Factory, dbt | Retraining automation; data-engineering-born role |
+| Experiment tracking and registry | MLflow, Weights & Biases | Model versioning and promotion discipline |
+| Managed ML platforms | Azure Machine Learning, Google Vertex AI, Amazon SageMaker, Databricks | Cloud-centred team; platform choice shapes daily work |
+| Monitoring and observability | Prometheus, Grafana, OpenTelemetry, drift-monitoring libraries | Production maturity and on-call expectations |
+| LLM operations | Vector databases, evaluation frameworks, prompt and model gateways | Generative AI in production, a fast-growing sub-specialism |
+
+**Cloud geography matters in the Netherlands.** Microsoft Azure is widely used among Dutch enterprises and public organisations, and its West Europe region is located in the Netherlands. Google Cloud operates its europe-west4 region from Eemshaven in Groningen. AWS serves Dutch customers from regions in other European countries. Regulated organisations often choose platforms partly on data residency, so an MLOps engineer's platform experience can be a deciding factor for a specific employer.
+
+**Academic and research compute.** In research settings, **SURF** — the collaborative IT organisation for Dutch education and research — operates the national supercomputer Snellius and related services. MLOps-style roles in academia often involve scheduling GPU workloads on shared clusters rather than cloud-native serving.
+
+## Regulation Turns MLOps Into a Compliance Function
+
+In the Netherlands, as elsewhere in the EU, several regulatory frameworks translate directly into MLOps requirements. This is one of the main reasons the role is becoming more senior.
+
+**EU AI Act.** For high-risk AI systems, the regulation requires risk management, data governance, technical documentation, automatic logging of events, accuracy and robustness measures, human oversight and post-market monitoring. Almost every one of those requirements is implemented, in practice, by the pipeline, registry and monitoring stack an MLOps engineer builds.
+
+**DORA.** The **Digital Operational Resilience Act**, applicable since January 2025, sets requirements for ICT risk management, incident reporting, resilience testing and third-party risk in the financial sector. At Dutch banks, insurers and payment institutions supervised by **De Nederlandsche Bank (DNB)** and the AFM, models in production are part of that ICT landscape — which brings incident management and third-party cloud risk into MLOps work.
+
+**AVG (GDPR).** Retraining pipelines that process personal data must respect purpose limitation, retention limits and data subject rights. Deleting data from a training set, and knowing which model versions were trained on it, is an MLOps problem.
+
+**ISO/IEC 42001.** The international standard for AI management systems, published in 2023, gives organisations a certifiable framework for governing AI. Companies pursuing certification need traceable pipelines, documented controls and monitoring evidence — again, largely MLOps output.
+
+For candidates, this means that experience with audit trails, model registries, lineage and incident processes is no longer a "nice to have". At regulated Dutch employers it is often the core of the job.
+
+## Where MLOps Roles Concentrate Geographically
+
+MLOps demand follows production AI, so it clusters where models run at scale:
+
+- **Amsterdam and the Zuidas:** banks, payment companies, insurers and scale-ups running many models under DORA and AI Act pressure.
+- **Utrecht and Amersfoort:** financial services, insurance and public-sector organisations with strict governance requirements.
+- **Eindhoven and the Brainport region:** edge and embedded deployment for industrial and high-tech products, where MLOps extends to devices on factory floors.
+- **Rotterdam and The Hague:** logistics, energy and government organisations with operational models and security constraints.
+- **Groningen:** energy and data-centre infrastructure around Eemshaven.
+
+Hybrid arrangements are common for MLOps roles, but on-call duties and incident response can impose practical limits on how far from the office you can live. Ask how incidents are handled before assuming a role is fully remote.
+
+## Key Takeaways
+
+- MLOps is defined by function — deployment, retraining, monitoring and reliability — not by a consistent title.
+- The tool list in a vacancy reveals whether a role is DevOps-born, data-science-born or data-engineering-born.
+- Azure's Dutch region, Google Cloud's Eemshaven region and SURF's research infrastructure shape platform choices in the Netherlands.
+- The AI Act, DORA, the AVG and ISO/IEC 42001 turn MLOps into a compliance-critical function at regulated employers.
+- Demand concentrates in Amsterdam, Utrecht, Eindhoven, Rotterdam, The Hague and Groningen; clarify on-call expectations for hybrid roles.
+
+## Where to Start
+
+If you specialize in the intersection of infrastructure and machine learning, don't rely on a single search term. Filter by category and read past the title to the responsibilities listed — this function is defined by what it does more than by what any one company happens to call it.
+
+Browse current MLOps, AI infrastructure and machine learning vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

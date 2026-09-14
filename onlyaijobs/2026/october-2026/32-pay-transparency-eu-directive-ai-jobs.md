@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-01",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/pay-transparency-eu-directive-ai-jobs"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/pay-transparency-eu-directive-ai-jobs"},
+  "inLanguage": "en",
+  "about": [{"@type": "Legislation", "name": "EU Pay Transparency Directive (EU) 2023/970"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "GovernmentOrganization", "name": "Netherlands Institute for Human Rights (College voor de Rechten van de Mens)"},
+    {"@type": "Legislation", "name": "Equal Treatment Act (Algemene wet gelijke behandeling)"},
+    {"@type": "Legislation", "name": "Equal Treatment of Men and Women Act"},
+    {"@type": "Thing", "name": "Gender pay gap reporting"},
+    {"@type": "Thing", "name": "Joint pay assessment"},
+    {"@type": "Thing", "name": "Works council (ondernemingsraad)"},
+    {"@type": "Thing", "name": "ORBA job evaluation method"},
+    {"@type": "Organization", "name": "AWVN (General Employers' Association)"},
+    {"@type": "GovernmentOrganization", "name": "Statistics Netherlands (CBS)"},
+    {"@type": "Thing", "name": "Right to pay information"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ Employers will need to think about pay equity more systematically than an ad hoc
 ## Why This Matters Specifically for AI Roles
 
 AI and ML roles have historically had some of the widest, least standardized salary ranges in tech, partly because of the title inconsistency discussed elsewhere on this site. Pay transparency rules will likely force more employers to define what a given AI title actually means internally, since a wide undefined range becomes harder to justify once it must be disclosed.
-
-## Where to Start
-
-Don't rely on general commentary like this article for exact compliance details — check current guidance from an authoritative Dutch source, and expect to see more salary ranges appear in job postings over time as these rules take hold.
-
-Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Deeper Look at Why This Directive Specifically Targets Information Asymmetry
 
@@ -118,6 +126,45 @@ Official Dutch government sources publishing on employment law are the authorita
 For candidates, the practical approach is less about tracking legislative detail and more about observing what actually appears in postings. As disclosure becomes more common in your specialisation, the useful information arrives directly through the job market itself, and the ranges you observe across many postings tell you more about your practical position than any summary of the underlying regulation would.
 
 What is worth understanding conceptually, rather than tracking in detail, is the direction of travel: toward more disclosure rather than less, across an expanding rather than contracting set of employers. Planning on that basis is reasonable even without knowing precisely when each specific obligation takes effect.
+
+## The Concrete Obligations in the Directive
+
+The **EU Pay Transparency Directive (EU) 2023/970** had to be transposed by member states by June 2026. Its main obligations, as set out in the directive itself, are:
+
+| Obligation | What it requires | Who benefits |
+|---|---|---|
+| **Pay information before employment** | Applicants must receive information about the initial pay or pay range, for example in the vacancy or before the interview | Candidates |
+| **Ban on pay history questions** | Employers may not ask applicants about their current or previous pay | Candidates |
+| **Transparent pay criteria** | Employees must have access to the criteria used to set pay, pay levels and pay progression | Employees |
+| **Right to information** | Employees can request information on their own pay level and average pay levels, broken down by sex, for workers doing the same work or work of equal value | Employees |
+| **Gender pay gap reporting** | Employers with 150 or more employees report from 2027 (with further reporting cycles), and employers with 100–149 employees later, on a phased schedule | Employees and society |
+| **Joint pay assessment** | If reporting reveals an unexplained gender pay gap of at least 5% in a category of workers that isn't remedied, employers must carry out a joint pay assessment with worker representatives | Employees |
+
+The Dutch government has been preparing national implementing legislation; national timing and details can differ from the EU deadline, so check the current status of the Dutch implementing act when evaluating an offer.
+
+## Dutch Institutions and Tools That Matter Here
+
+**Netherlands Institute for Human Rights.** The Institute assesses complaints about unequal treatment, including unequal pay, under the **Equal Treatment Act** and the **Equal Treatment of Men and Women Act**. Its opinions aren't binding but carry considerable weight.
+
+**Works councils.** In organisations with a works council, pay structures and job evaluation systems are areas where the council has advisory or consent rights, and the directive strengthens the role of worker representatives in joint pay assessments.
+
+**Job evaluation systems.** Many Dutch employers classify roles using structured job evaluation methods, such as the **ORBA** method developed by the employers' association **AWVN**. For AI roles — often new and inconsistently titled — how a role is classified in such a system determines its salary scale, which makes it worth asking how the classification was made.
+
+**Statistics Netherlands (CBS).** CBS publishes statistics on pay differences between men and women, which provide the national context for the gender pay gap discussion.
+
+## Key Takeaways
+
+- The Pay Transparency Directive requires pay ranges before employment and bans questions about pay history.
+- Employees gain rights to pay criteria and pay information; larger employers must report gender pay gaps on a phased schedule.
+- An unexplained gap of 5% or more that isn't remedied triggers a joint pay assessment with worker representatives.
+- The Netherlands Institute for Human Rights, works councils and job evaluation methods such as ORBA shape how transparency works in practice.
+- AI roles will likely show wide ranges at first; use disclosed ranges to compare offers, and check the status of Dutch implementing law.
+
+## Where to Start
+
+Don't rely on general commentary like this article for exact compliance details — check current guidance from an authoritative Dutch source, and expect to see more salary ranges appear in job postings over time as these rules take hold.
+
+Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

@@ -17,7 +17,20 @@ Content Format: Regional Market Analysis
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-17",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-haarlem"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-haarlem"},
+  "inLanguage": "en",
+  "about": [{"@type": "Place", "name": "Haarlem"}, {"@type": "Place", "name": "Zuid-Kennemerland"}],
+  "mentions": [
+    {"@type": "GovernmentOrganization", "name": "Province of Noord-Holland"},
+    {"@type": "Hospital", "name": "Spaarne Gasthuis"},
+    {"@type": "CollegeOrUniversity", "name": "Inholland University of Applied Sciences"},
+    {"@type": "Place", "name": "Haarlemmermeer"},
+    {"@type": "Place", "name": "Schiphol"},
+    {"@type": "Place", "name": "Hoofddorp"},
+    {"@type": "Organization", "name": "Tata Steel IJmuiden"},
+    {"@type": "Place", "name": "Bollenstreek"},
+    {"@type": "Place", "name": "Metropoolregio Amsterdam"}
+  ]
 }
 </script>
 
@@ -30,12 +43,6 @@ The area's logistics-adjacent position near Schiphol, combined with a base of re
 ## Why the Default Assumption Deserves a Second Look
 
 The reflex to commute into Amsterdam is often driven by search habit rather than a deliberate comparison. A candidate who has genuinely compared a local Haarlem role against an equivalent Amsterdam commute — factoring in the actual daily time cost — sometimes finds the local option is a better trade even at a somewhat lower prestige or brand recognition, especially if the role itself is a good technical fit.
-
-## Where to Start
-
-Before defaulting to an Amsterdam commute, check what's actually listed locally in Haarlem, and weigh the real commute time difference explicitly rather than assuming the larger market is automatically the better choice.
-
-Browse current AI, machine learning and data vacancies in and around Haarlem at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## The Entity Landscape Around Haarlem
 
@@ -77,6 +84,68 @@ Beyond the specific job-search dynamics discussed, it's worth noting what Haarle
 ## Why This City Rewards a Patient, Long-Term Search More Than an Urgent One
 
 Because Haarlem's local job market is smaller and less visible than Amsterdam's, a candidate under significant time pressure to find a role quickly may reasonably default to the larger, more visible Amsterdam market simply because it offers more immediate options to search through. A candidate with more flexibility in timeline, however, benefits from the patience to specifically monitor Haarlem-local openings as they appear, since the lower competition per role means a well-timed application to a genuinely good local fit can outperform a rushed application into the much more competitive Amsterdam pool.
+
+## Haarlem's Place in the Regional Map
+
+Haarlem is the capital of the province of **Noord-Holland** and part of the **Metropoolregio Amsterdam**. It is often described as a commuter city, but it sits at the centre of a surprisingly varied set of economic areas, each with its own data work.
+
+| Area | Distance from Haarlem | Economic character | Relevant data work |
+|---|---|---|---|
+| **Haarlem city** | — | Provincial government, healthcare, business services, retail | Public-sector information analysis, hospital analytics, customer data |
+| **Haarlemmermeer (Hoofddorp, Schiphol area)** | Around 20–30 minutes by bus or car | Aviation, logistics, international offices, one of the country's largest data-centre locations | Operations forecasting, logistics planning, data infrastructure |
+| **IJmond (Velsen, IJmuiden)** | Around 20–30 minutes | Heavy industry and port activity, including the Tata Steel works | Process data, predictive maintenance, emissions and energy analytics |
+| **Bollenstreek (around Lisse and Hillegom)** | Around 20–30 minutes | Flower bulbs and horticulture | Supply and demand forecasting, logistics, crop data |
+| **Amsterdam Sloterdijk and Centraal** | Around 10–15 minutes by train | Business services, tech, finance | The full Amsterdam market for hybrid roles |
+| **Leiden** | Around 20–25 minutes by train | Life sciences and university research | Bioinformatics, clinical and research data |
+
+This map changes the "commute to Amsterdam or nothing" framing. From Haarlem, Leiden's life sciences cluster, the industrial data of the IJmond and the logistics and data-centre economy of the Haarlemmermeer are all within reach — often via connections that do not run through Amsterdam at all.
+
+## Named Local Employers and Institutions
+
+**Province of Noord-Holland.** The provincial government is based in Haarlem and works with data on mobility, spatial planning, nature, water and energy — work usually titled as information analysis or policy advice rather than AI.
+
+**Spaarne Gasthuis.** One of the larger hospital organisations in the region, with locations in Haarlem and Hoofddorp. Hospital data work includes capacity planning, patient flow and quality reporting, under strict health-data regulation.
+
+**Inholland University of Applied Sciences.** Inholland has a campus in Haarlem and trains ICT, business and engineering students. For local employers, it is a source of interns and graduates who often prefer to stay in the region.
+
+**Tata Steel IJmuiden.** The steelworks in the neighbouring IJmond area is one of the largest industrial sites in the Netherlands. The combination of process optimisation, maintenance, energy use and the push to reduce emissions creates substantial industrial data work, typically listed under process, maintenance or operations titles.
+
+**The Haarlemmermeer data-centre cluster.** The municipality of Haarlemmermeer, which includes Hoofddorp and the Schiphol area, is one of the main data-centre locations in the Amsterdam region. For data engineers and infrastructure specialists, this adds roles in data-centre operations, energy efficiency and cloud infrastructure.
+
+## Connections That Make the Radius Work
+
+**Rail.** Haarlem station has frequent connections to Amsterdam and to Leiden and The Hague, which puts both the Amsterdam and the Leiden–The Hague labour markets within easy reach.
+
+**Bus rapid transit to Schiphol and Hoofddorp.** High-frequency regional bus lines connect Haarlem with Hoofddorp and Schiphol, which is relevant for the Haarlemmermeer employers above. Check the current routes and journey times in a journey planner such as 9292, as regional bus networks change over time.
+
+**Cycling.** Within Haarlem and to neighbouring towns such as Heemstede, Bloemendaal and Velsen, cycling is a realistic daily commute, which is exactly the kind of short journey that makes a local role worth considering.
+
+## Job Titles to Look For Around Haarlem
+
+| Area | Titles you are likely to see | What the work usually involves |
+|---|---|---|
+| Provincial government and public bodies | Informatieanalist, data-adviseur, beleidsmedewerker data | Mobility, spatial planning, environmental and energy data |
+| Hospitals and care | BI-specialist, data-analist zorg | Capacity planning, patient flow, quality reporting |
+| Aviation and logistics around Schiphol | Operations analyst, planning analyst, data scientist | Forecasting passenger and cargo flows, resource planning |
+| Heavy industry in the IJmond | Process data analyst, reliability engineer, data scientist | Predictive maintenance, process optimisation, emissions data |
+| Data centres in the Haarlemmermeer | Data centre engineer, infrastructure specialist | Energy efficiency, cooling, capacity and uptime |
+| Horticulture in the Bollenstreek | Supply chain analyst, commercial analyst | Supply and demand forecasting, logistics |
+
+Searching these titles alongside the usual AI and machine learning terms, and filtering by distance from Haarlem rather than by city name, reveals a local market that a default Amsterdam-focused search leaves out almost entirely.
+
+## Key Takeaways
+
+- Haarlem is the capital of Noord-Holland and part of the Metropoolregio Amsterdam, but its labour market extends well beyond commuting into Amsterdam.
+- The Haarlemmermeer (Schiphol, Hoofddorp, data centres), the IJmond (Tata Steel) and the Bollenstreek add logistics, industrial and horticultural data work within half an hour.
+- The Province of Noord-Holland, Spaarne Gasthuis and Inholland are concrete local employers or talent sources.
+- Rail to Amsterdam and Leiden, bus rapid transit to Schiphol and cycling make a distance-based search more useful than a city filter.
+- Weigh local roles against Amsterdam commutes explicitly, including hybrid office days.
+
+## Where to Start
+
+Before defaulting to an Amsterdam commute, check what's actually listed locally in Haarlem, and weigh the real commute time difference explicitly rather than assuming the larger market is automatically the better choice.
+
+Browse current AI, machine learning and data vacancies in and around Haarlem at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

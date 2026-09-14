@@ -1,11 +1,11 @@
-"Remote mogelijk" in een vacaturetekst kan van alles betekenen: volledig op afstand, of twee verplichte kantoordagen met flexibele taal eromheen. Die vaagheid kost meer tijd dan hij bespaart.
+💡 "Remote possible" in a job ad can mean anything: fully remote, or two mandatory office days wrapped in flexible language. That vagueness costs more time than it saves.
 
-Vermeld het exacte aantal kantoordagen, niet "af en toe". Vermeld of er kernuren-overlap wordt verwacht. Vermeld hoe beslissingen worden gedocumenteerd voor wie niet op kantoor is — kandidaten die eerder in een slecht georganiseerd remote-team zaten, vragen hier altijd naar.
+🏠 State the exact number of office days, not "occasionally." State whether core-hours overlap is expected. State how decisions are documented for people who aren't in the office — candidates who've been in a poorly organised remote team always ask.
 
-Specificiteit filtert kandidaten die niet passen, en overtuigt juist wie er wél naar zocht.
+✅ Specificity filters out candidates who don't fit, and convinces exactly those who were looking for it.
 
-Plaats je vacature — eerste plaatsing gratis: info@onlyaijobs.eu
+📢 Post your vacancy — first listing free: info@onlyaijobs.eu
 
-Lees het volledige verhaal: https://onlyaijobs.eu/blog/remote-vriendelijke-ai-vacatures-wat-te-vermelden
+📖 Read the full story: https://onlyaijobs.eu/blog/remote-friendly-ai-vacancies-what-to-include
 
-#OnlyAIJobs #RemoteWerk #Werving #Nederland
+#OnlyAIJobs #RemoteWork #Recruitment #Netherlands

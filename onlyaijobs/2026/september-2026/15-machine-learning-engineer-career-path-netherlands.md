@@ -17,7 +17,17 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-06",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/machine-learning-engineer-career-path-netherlands"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/machine-learning-engineer-career-path-netherlands"},
+  "inLanguage": "en",
+  "about": [{"@type": "Occupation", "name": "Machine Learning Engineer"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"},
+    {"@type": "Legislation", "name": "Dutch Civil Code (Burgerlijk Wetboek), Book 7"},
+    {"@type": "GovernmentOrganization", "name": "Immigratie- en Naturalisatiedienst (IND)"},
+    {"@type": "Organization", "name": "ESCO (European Skills, Competences, Qualifications and Occupations)"},
+    {"@type": "Organization", "name": "Loonwijzer"},
+    {"@type": "Organization", "name": "CAO Metalektro"}
+  ]
 }
 </script>
 
@@ -34,12 +44,6 @@ A "Senior Machine Learning Engineer" title at a five-person startup and the same
 ## A Practical Way to Evaluate a Posting
 
 Instead of anchoring on the title, look at three things in the job description: what decisions the role is expected to make independently, whether production incidents are explicitly part of the role, and how many other specialists the role would work alongside. Those three answers tell you more about actual seniority than the word before "Engineer."
-
-## Where to Start
-
-If you're evaluating your next move by title alone, you're comparing labels that different companies define differently. Look at scope, accountability and team structure instead, and treat the title as a starting point for questions rather than an answer.
-
-Browse current machine learning, AI and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), filtered by category and distance from home.
 
 ## A Framework for Reading Any ML Engineer Posting
 
@@ -85,6 +89,62 @@ When an offer arrives with a title that doesn't clearly reflect the scope you we
 ## Why This Title Confusion Is Unlikely to Resolve Through Individual Effort Alone
 
 It's tempting to think that if enough individual candidates push back on inflated or ambiguous titles, the market will eventually self-correct. In practice, title conventions are set at the company level based on internal competitive pressures — a company competing for talent against employers with inflated titles feels pressure to inflate its own titles to remain competitive in how the role reads to a candidate scanning multiple postings quickly. This is a collective-action problem that no single candidate's negotiation can solve, which is exactly why the practical response has to be personal and ongoing (evaluating each role by its actual substance) rather than waiting for the broader market to standardize on your behalf. Treat every future job search, for the remainder of your career, as requiring this same substance-over-title evaluation, rather than assuming the problem will have resolved itself by your next move.
+
+## The Dutch Vocabulary of Levels: Junior, Medior, Senior and Beyond
+
+The Netherlands has one level label that international candidates often do not recognise: **medior**. It sits between junior and senior and is widely used in Dutch vacancies, especially at small and mid-sized companies. A "Medior ML Engineer" is typically expected to work independently on well-scoped problems, contribute to design discussions and need review mainly at key decision points.
+
+Above senior, Dutch employers are less consistent than large US technology companies. Some use **lead** or **principal**; others use **staff**; many smaller employers have no formal level above senior at all, and progression continues through a management route such as team lead or head of data.
+
+| Level label in Dutch vacancies | Typical scope | Common alternative labels |
+|---|---|---|
+| Junior / Starter | Defined tasks with close review | Graduate, Trainee, Associate |
+| Medior | Independent ownership of a module or model | Mid-level, ML Engineer (without prefix) |
+| Senior | Architectural trade-offs, mentoring, production accountability | Senior, Specialist |
+| Lead / Principal / Staff | Cross-team technical direction, standards, roadmap influence | Tech Lead, Principal Engineer, Expert |
+| Management track | People leadership and hiring | Team Lead, Engineering Manager, Head of Data & AI |
+
+The European **ESCO** classification — the EU's multilingual taxonomy of skills and occupations — describes occupations such as data scientist and ICT roles in a standardised way, but employers rarely map their own levels to it. In practice, the table above is a better guide than any formal framework.
+
+## Structured Pay: CAOs, Salary Sources and Realistic Comparisons
+
+Pay progression for ML engineers in the Netherlands depends heavily on the type of employer.
+
+**Employers with a collective labour agreement.** Industrial companies may fall under agreements such as the **CAO Metalektro**; banks, insurers, universities, hospitals and government bodies have their own CAOs. Salary scales and increments are published, which makes level transitions visible: moving from one scale to the next is the formal equivalent of a promotion.
+
+**Employers without a CAO.** Most technology companies and start-ups set pay individually. Level definitions and salary bands may exist internally but are rarely published, which makes the title-versus-scope analysis in this article more important.
+
+**Where to cross-check salary expectations.** Sources such as **Loonwijzer** (the Dutch WageIndicator site), anonymised salary platforms and recruitment agencies' salary guides can help you sanity-check an offer. Treat each as indicative rather than definitive: sample sizes for specialised ML roles are often small, and figures are rarely split by the scope differences that matter most.
+
+**Total compensation, Dutch style.** When comparing offers, include the statutory holiday allowance (*vakantiegeld*, at least 8% of gross salary), any thirteenth month or year-end bonus, the pension scheme and employer contribution, travel allowance and training budget. Two offers with the same gross monthly salary can differ significantly once these are added.
+
+## Employment Terms That Change With Seniority
+
+Several contractual terms become more important as you move up.
+
+**Probation periods.** Under Dutch law, a probation period (*proeftijd*) is only allowed in certain contracts, is capped at one month for fixed-term contracts of up to two years and at two months for permanent contracts, and must be agreed in writing.
+
+**Fixed-term contracts.** The Dutch chain rule (*ketenregeling*) generally allows up to three consecutive fixed-term contracts within three years before a contract becomes permanent. Senior candidates can often negotiate a permanent contract from the start.
+
+**Non-compete clauses.** A *concurrentiebeding* must be agreed in writing and, in a fixed-term contract, requires a specific written justification. Senior ML engineers with knowledge of proprietary models or data are more likely to be asked to sign one; read the scope, duration and geography carefully.
+
+**AI literacy and compliance responsibilities.** Since February 2025, the **EU AI Act** has required organisations that provide or deploy AI systems to take measures to ensure a sufficient level of AI literacy among their staff. At senior level, ML engineers are increasingly expected to contribute to that — through internal documentation, training and risk assessments — which is one of the clearest new markers of seniority in the Dutch market.
+
+**Sponsorship for international engineers.** Highly skilled migrant salary thresholds set by the **IND** differ by age band and are indexed annually. A level change that comes with a salary change can affect eligibility, so international engineers should check the current thresholds when negotiating.
+
+## Key Takeaways
+
+- Titles are set company by company; judge seniority by ownership, accountability, breadth and collaboration.
+- "Medior" is a standard Dutch level between junior and senior; above senior, labels vary widely.
+- CAO employers publish salary scales; technology companies usually do not, so cross-check offers with multiple sources.
+- Compare total compensation, including holiday allowance, pension, bonuses and training budget.
+- Probation, chain-rule and non-compete terms matter more as seniority increases, as do AI Act literacy and compliance responsibilities.
+
+## Where to Start
+
+If you're evaluating your next move by title alone, you're comparing labels that different companies define differently. Look at scope, accountability and team structure instead, and treat the title as a starting point for questions rather than an answer.
+
+Browse current machine learning, AI and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), filtered by category and distance from home.
 
 ## Frequently Asked Questions
 

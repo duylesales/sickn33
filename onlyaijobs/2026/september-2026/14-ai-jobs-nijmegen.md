@@ -17,7 +17,20 @@ Content Format: Regional Market Analysis
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-05",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-nijmegen"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-nijmegen"},
+  "inLanguage": "en",
+  "about": [{"@type": "Place", "name": "Nijmegen"}, {"@type": "Place", "name": "Arnhem-Nijmegen region"}],
+  "mentions": [
+    {"@type": "CollegeOrUniversity", "name": "Radboud University"},
+    {"@type": "ResearchOrganization", "name": "Donders Institute for Brain, Cognition and Behaviour"},
+    {"@type": "ResearchOrganization", "name": "Max Planck Institute for Psycholinguistics"},
+    {"@type": "Hospital", "name": "Radboudumc"},
+    {"@type": "CollegeOrUniversity", "name": "HAN University of Applied Sciences"},
+    {"@type": "Place", "name": "Novio Tech Campus"},
+    {"@type": "Organization", "name": "AcademicTransfer"},
+    {"@type": "Legislation", "name": "EU Medical Device Regulation (MDR)"},
+    {"@type": "Legislation", "name": "Wet medisch-wetenschappelijk onderzoek met mensen (WMO)"}
+  ]
 }
 </script>
 
@@ -34,12 +47,6 @@ Where a scale-up's AI team optimises for iteration speed, a research-adjacent em
 ## Why This Segment Rarely Shows Up in a Generic Job Search
 
 Research-adjacent employers recruit differently than product companies — through academic networks, institutional postings, and word of mouth — long before a role reaches a general job board. A candidate relying only on keyword search sees a market that looks thinner than it is, because the recruiting channel itself is different, not because the roles don't exist.
-
-## Where to Start
-
-If you value methodological depth over shipping velocity, and you're comfortable with slower, more rigorous evaluation cycles, Nijmegen's health-data and cognitive-science-adjacent employers are worth looking at directly rather than through a generic national search.
-
-Browse current AI, machine learning and data vacancies in and around Nijmegen at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), filtered by category and distance from home.
 
 ## The Entity Landscape: Research-Adjacent Employers in Nijmegen
 
@@ -82,6 +89,63 @@ Beyond technical competence, candidates who do well in Nijmegen's research-adjac
 ## How Publication and Output Expectations Differ From Industry Norms
 
 A meaningful difference candidates should understand before entering this market: research-adjacent roles often carry an explicit or implicit expectation of eventual publication or public presentation of results, in a way that most industry data science roles don't. This isn't merely an academic formality — it means your work is built, from the outset, with a level of rigor and documentation sufficient to survive external scrutiny by people who weren't part of your original team and have no institutional incentive to be generous in their assessment. This standard shapes the entire working process, from how experiments are logged to how negative results are handled, in ways that candidates coming from a "ship and iterate" industry background sometimes find initially unfamiliar but, over time, often come to value as a genuinely useful discipline that improves the quality of their work even after they eventually move to less publication-driven roles.
+
+## The Institutions Behind "Research-First", by Name
+
+The research tradition this article describes is concentrated in a small number of institutions, most of them on or near the same campus in the south of the city.
+
+**Radboud University.** Nijmegen's university has offered Artificial Intelligence as a degree programme for decades, with an unusually strong orientation towards cognition, language and human behaviour rather than purely engineering-driven AI. Its Institute for Computing and Information Sciences (iCIS) covers machine learning, data science, software science and digital security — the latter a well-known Radboud strength.
+
+**Donders Institute for Brain, Cognition and Behaviour.** One of the largest cognitive neuroscience research institutes in Europe, spanning Radboud University and Radboudumc. Its work on brain imaging, neural computation and cognitive modelling generates data-intensive research-engineering roles in signal processing, neuroimaging analysis and computational modelling.
+
+**Max Planck Institute for Psycholinguistics.** Located on the Radboud campus, the institute studies language, cognition and communication. For engineers interested in speech and language technology from a scientific rather than product angle, it is one of the most distinctive employers in the country.
+
+**Radboudumc.** The academic medical centre has a strong reputation in medical image analysis, with research groups that have developed and validated AI models for applications such as radiology and pathology. Clinical data science here sits at the intersection of research, patient care and regulatory approval.
+
+**HAN University of Applied Sciences.** With campuses in Nijmegen and Arnhem, the HAN trains applied ICT, health and engineering professionals and runs applied research programmes with regional healthcare and industry partners.
+
+**Novio Tech Campus.** An innovation campus in Nijmegen focused on health technology and semiconductors, hosting start-ups and scale-ups in medical devices, diagnostics and chip technology — a natural home for small AI teams spun out of the region's research base.
+
+## Regulation That Shapes Health-Data AI Work in Nijmegen
+
+Candidates coming from consumer ML are often surprised by how much of the engineering in clinical AI is determined by regulation. Four frameworks come up repeatedly.
+
+| Framework | What it governs | What it means for an engineer |
+|---|---|---|
+| **EU Medical Device Regulation (MDR)** | Software, including AI, intended for medical purposes such as diagnosis | Models may need to be developed under a quality management system, with clinical evaluation and CE marking before use in care |
+| **EU AI Act** | AI systems by risk level; many medical AI systems fall into the high-risk category | Additional documentation, risk management and human-oversight requirements alongside the MDR |
+| **AVG (GDPR)** | Personal data, with health data as a special category | Strict legal bases, data minimisation, pseudonymisation and data protection impact assessments |
+| **WMO (Medical Research Involving Human Subjects Act)** | Medical research involving human participants | Research protocols may require review by a medical research ethics committee (METC) before data collection |
+
+The practical consequence is that the "slower pace" discussed above is often a regulatory reality rather than an organisational preference. An engineer who understands these frameworks can move faster within them — which is exactly why that understanding is valued in interviews.
+
+## Academic Employment Conditions and Where Vacancies Appear
+
+Because much of Nijmegen's AI work is university- or hospital-affiliated, it helps to know how academic employment works in the Netherlands.
+
+**Collective labour agreements.** University staff fall under the **CAO Nederlandse Universiteiten**, and academic hospital staff under the **CAO umc**. Salary scales, annual increments and benefits such as a year-end bonus and holiday allowance are set collectively and published openly.
+
+**PhD candidates are usually employees.** Unlike in many countries, Dutch PhD candidates (*promovendi*) are typically employed by the university on a fixed-term contract with a salary, pension contributions and employee rights. For an engineer considering a research career, that changes the financial calculation considerably.
+
+**Grant-driven hiring.** Many research positions are funded through grants, including those of the Dutch Research Council (**NWO**) and European programmes. That explains the grant-cycle hiring rhythm described above and why positions are often fixed-term.
+
+**Where to look.** Academic vacancies in the Netherlands are published on institutional career pages and on **AcademicTransfer**, the national platform for academic jobs, while European research positions also appear on EURAXESS. Industry-adjacent roles at campus companies and hospital data teams are the ones most likely to appear on a specialist AI board.
+
+**Commute radius.** Arnhem is roughly fifteen minutes away by train, 's-Hertogenbosch roughly half an hour and Utrecht under an hour, and the German border is close by. A radius-based search captures Arnhem's energy and health employers alongside Nijmegen's research institutions.
+
+## Key Takeaways
+
+- Nijmegen's AI market is built around Radboud University, the Donders Institute, the Max Planck Institute for Psycholinguistics, Radboudumc and the HAN.
+- Health-data AI work here is shaped by the MDR, the AI Act, the AVG and the WMO, which explains the slower, more rigorous pace.
+- Academic roles follow CAO scales and grant cycles; Dutch PhD candidates are usually salaried employees.
+- Research vacancies appear first on institutional sites and AcademicTransfer; campus companies and hospital data teams are more likely to use specialist boards.
+- Include Arnhem and the wider region in your search radius.
+
+## Where to Start
+
+If you value methodological depth over shipping velocity, and you're comfortable with slower, more rigorous evaluation cycles, Nijmegen's health-data and cognitive-science-adjacent employers are worth looking at directly rather than through a generic national search.
+
+Browse current AI, machine learning and data vacancies in and around Nijmegen at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), filtered by category and distance from home.
 
 ## Frequently Asked Questions
 

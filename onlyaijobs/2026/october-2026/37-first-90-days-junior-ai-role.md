@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-06",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/first-90-days-junior-ai-role"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/first-90-days-junior-ai-role"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "First 90 days in a junior AI role"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Thing", "name": "Probation period (proeftijd) under the Dutch Civil Code"},
+    {"@type": "Legislation", "name": "Transparent and Predictable Working Conditions Act"},
+    {"@type": "Legislation", "name": "EU Directive (EU) 2019/1152 on transparent and predictable working conditions"},
+    {"@type": "Thing", "name": "Chain rule for fixed-term contracts (ketenregeling)"},
+    {"@type": "Thing", "name": "Performance review (functioneringsgesprek)"},
+    {"@type": "Thing", "name": "Company doctor (bedrijfsarts)"},
+    {"@type": "Legislation", "name": "Gatekeeper Improvement Act (Wet verbetering poortwachter)"},
+    {"@type": "Thing", "name": "Collective labour agreement (CAO)"},
+    {"@type": "Thing", "name": "Code review"},
+    {"@type": "Thing", "name": "Onboarding plan"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ Most junior hires spend their first 90 days trying to prove technical competence
 ## Why Technical Output Alone Isn't the Full Picture
 
 A technically correct piece of work delivered without context, communication or awareness of existing constraints can land worse than a slightly rougher piece of work delivered with good judgment about when to ask, share and check in.
-
-## Where to Start
-
-In your first 90 days, prioritize asking questions early, understanding existing systems before proposing changes, and sharing progress incrementally — technical skill is necessary, but these habits are what actually get evaluated most closely in a new role.
-
-Browse current junior AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Deeper Look at Why Timing Judgment Is So Hard to Self-Assess
 
@@ -119,6 +127,45 @@ The most common recoverable problem is a mismatch between what you were told the
 A second recoverable problem is insufficient access or support. If you are blocked on something and the blockage has persisted for more than a week or two, escalating is appropriate rather than presumptuous. New hires frequently interpret persistent blockers as a test of resourcefulness when they are usually just an oversight nobody has noticed.
 
 The genuinely difficult case is discovering that the role or the organisation is a poor fit in ways that will not resolve. Even here, the productive response is a direct conversation rather than an immediate exit, because some fit problems are fixable through a change in scope or team, and because leaving very quickly carries costs that a candid conversation might avoid.
+
+## The Dutch Employment Rules That Shape Your First Months
+
+The first 90 days of a Dutch job are also framed by a handful of legal rules worth knowing, so you understand what is normal and what isn't.
+
+**Probation period.** Under the Dutch Civil Code, a probation period must be agreed in writing and is limited in length: no probation period is allowed for contracts of six months or less, a maximum of one month applies to contracts longer than six months but shorter than two years, and a maximum of two months applies to contracts of two years or more and to permanent contracts. Collective labour agreements can deviate in some cases. During probation, both parties can end the contract with immediate effect, which is why the behaviours described in this article matter so early.
+
+**Information about your terms.** The **Transparent and Predictable Working Conditions Act**, which implements **EU Directive (EU) 2019/1152**, requires employers to inform new employees in writing about essential terms of employment within a short period after starting. It also requires employers to provide mandatory training free of charge and to count it as working time.
+
+**Fixed-term contracts.** Many junior roles start with a fixed-term contract. Under the chain rule (*ketenregeling*), a series of fixed-term contracts generally converts into a permanent contract after more than three contracts or after a total duration of more than three years, unless a collective labour agreement provides otherwise. Knowing where you are in that chain helps you interpret conversations about extension.
+
+**Performance conversations.** Dutch organisations commonly hold a *functioneringsgesprek* (a two-way conversation about how the work is going) and a *beoordelingsgesprek* (a formal assessment). Asking in your first month when these take place, and what criteria are used, is entirely normal.
+
+**Illness.** If you fall ill, your employer and the company doctor (*bedrijfsarts*) follow a structured reintegration process under the **Gatekeeper Improvement Act**. Employers continue to pay at least 70% of salary during illness, often more under a collective labour agreement.
+
+## A Simple 90-Day Plan You Can Share With Your Manager
+
+| Period | Focus | Visible output |
+|---|---|---|
+| Weeks 1–2 | Access, data landscape, people | A written map of the main data sources and who owns them |
+| Weeks 3–6 | First small, real contribution | A merged pull request, a fixed pipeline issue or a short analysis that answered a real question |
+| Weeks 7–10 | Understanding a larger problem | A written problem statement with open questions, reviewed with a senior colleague |
+| Weeks 11–13 | Reflection and next steps | A short summary of what you learned, what you'd improve, and agreed goals for the next quarter |
+
+Sharing a plan like this in your first week signals exactly the proactive, transparent behaviour managers watch for.
+
+## Key Takeaways
+
+- The first 90 days are judged mainly on question timing, transparency about progress and understanding the team's context.
+- Probation periods in the Netherlands are short and legally limited, which makes early behaviour especially important.
+- The Transparent and Predictable Working Conditions Act entitles you to written terms and free mandatory training.
+- Know where you stand under the chain rule, and ask early about performance conversation timing and criteria.
+- A simple, shared 90-day plan with visible outputs builds trust faster than technical brilliance alone.
+
+## Where to Start
+
+In your first 90 days, prioritize asking questions early, understanding existing systems before proposing changes, and sharing progress incrementally — technical skill is necessary, but these habits are what actually get evaluated most closely in a new role.
+
+Browse current junior AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

@@ -1,9 +1,9 @@
-"Bij een startup werk je aan alles, bij een enterprise ben je een radertje" — een cliché dat vaak klopt, maar weinig zegt over wat dat concreet betekent voor je werkdag.
+💡 "At a startup you work on everything, at an enterprise you're a cog in the machine" — a cliché that's often true, but says little about what it concretely means for your working day.
 
-Wat écht verandert: hoeveel van het probleem al voor je is opgelost (infrastructuur erven vs. zelf bouwen), hoe snel een beslissing wordt genomen, en wat er gebeurt als je project niet werkt. Bij een startup kan een mislukt experiment het voortbestaan van het team raken; bij een enterprise verdwijnt het vaker in een groter portfolio.
+🚀 What really changes: how much of the problem has already been solved for you (inheriting infrastructure vs. building it yourself), how quickly decisions are made, and what happens when your project doesn't work. At a startup, a failed experiment can affect the team's survival; at an enterprise, it more often disappears into a larger portfolio.
 
-Vraag hiernaar expliciet in een gesprek, in plaats van te vertrouwen op het cliché.
+✅ Ask about this explicitly in an interview, instead of relying on the cliché.
 
-Lees het volledige verhaal: https://onlyaijobs.eu/blog/startup-vs-enterprise-ai-carriere
+📖 Read the full story: https://onlyaijobs.eu/blog/startup-vs-enterprise-ai-career
 
-#OnlyAIJobs #Carrièreadvies #Startup #AIWerk
+#OnlyAIJobs #CareerAdvice #Startup #AIWork

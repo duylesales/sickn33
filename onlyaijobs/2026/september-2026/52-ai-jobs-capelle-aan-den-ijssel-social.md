@@ -1,9 +1,9 @@
-Capelle aan den IJssel ligt in de schaduw van Rotterdam, en dat is precies waarom de e-commerce- en consumentendienstenbedrijven die er gevestigd zijn zelden op eigen kracht in een landelijke zoekopdracht verschijnen. De haven trekt alle aandacht.
+💡 Capelle aan den IJssel lies in Rotterdam's shadow — which is exactly why the e-commerce and consumer services companies based there rarely show up on their own in a national job search. The port draws all the attention.
 
-Wat hier gebeurt: vraagvoorspelling, klantsegmentatie en aanbevelingslogica op consumentenschaal — qua toolset dicht bij wat een Amsterdamse scale-up doet, zonder de merknaamzichtbaarheid.
+🚀 What happens here: demand forecasting, customer segmentation and recommendation logic at consumer scale — a toolset close to what an Amsterdam scale-up uses, without the brand visibility.
 
-Een kandidaat die naar "AI Rotterdam" zoekt, richt zich vaak onbewust op de haven. Breid je zoekgebied uit naar de directe omgeving.
+✅ A candidate searching "AI Rotterdam" often unconsciously focuses on the port. Broaden your search to the immediate area.
 
-Bekijk actuele vacatures: https://onlyaijobs.eu/blog/ai-vacatures-capelle-aan-den-ijssel
+🔎 Browse current jobs: https://onlyaijobs.eu/blog/ai-jobs-capelle-aan-den-ijssel
 
-#OnlyAIJobs #AIVacatures #Rotterdam #DataScience
+#OnlyAIJobs #AIJobs #Rotterdam #DataScience

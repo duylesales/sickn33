@@ -17,7 +17,21 @@ Content Format: Decision-Stage Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-13",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/competing-with-big-tech-salaries-dutch-employer"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/competing-with-big-tech-salaries-dutch-employer"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Competing for AI talent against big tech salaries"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Organization", "name": "Booking.com"},
+    {"@type": "Organization", "name": "Adyen"},
+    {"@type": "Organization", "name": "Google"},
+    {"@type": "Organization", "name": "Microsoft"},
+    {"@type": "Thing", "name": "Employee stock option taxation in the Netherlands"},
+    {"@type": "Thing", "name": "30% ruling"},
+    {"@type": "GovernmentOrganization", "name": "Immigration and Naturalisation Service (IND)"},
+    {"@type": "Legislation", "name": "Flexible Working Act (Wet flexibel werken)"},
+    {"@type": "Legislation", "name": "EU Pay Transparency Directive (EU) 2023/970"},
+    {"@type": "Thing", "name": "Part-time work culture in the Netherlands"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ A smaller Dutch employer trying to match a large tech company's salary offer dir
 ## Why This Only Works If You're Honest About the Trade-off
 
 Pretending you can match big-tech compensation when you can't wastes everyone's time. Being explicit that the trade is lower salary for more ownership and faster impact lets the right candidates self-select in, rather than discovering the mismatch after accepting.
-
-## Where to Start
-
-Be explicit in your job posting and interviews about what you genuinely offer instead of salary parity — ownership, speed, and direct access — rather than avoiding the salary conversation or overpromising.
-
-Post your open AI, machine learning or data role — first listing free — at info@onlyaijobs.eu.
 
 ## A Deeper Look at Why Ownership Is a Genuinely Different Value Proposition, Not a Consolation Prize
 
@@ -109,6 +117,38 @@ The factors that persuaded them to join must remain true. A candidate who accept
 It also helps to acknowledge the trade openly rather than pretending it does not exist. Managers who periodically check whether the compensating factors are still materialising — and who respond when the answer is no — retain these employees considerably better than managers who avoid the subject.
 
 Finally, closing the gap over time where possible matters. An employee who accepted below-market compensation and sees no movement over several years reasonably concludes the trade was permanent rather than temporary, and the market alternative becomes progressively harder to decline.
+
+## Who You Are Actually Competing Against
+
+In the Dutch AI labour market, "big tech" means a specific set of employers. International technology companies such as **Google** and **Microsoft** have significant operations in the Netherlands, and Dutch-grown tech companies such as **Booking.com** and **Adyen** are known for competitive pay for engineering and data roles. Large banks, insurers and consultancies also pay at the upper end of the market. These employers set salary expectations, particularly in Amsterdam, even for candidates who never apply to them.
+
+A smaller employer rarely wins a head-to-head salary comparison with these organisations. But most candidates in the Dutch market never receive such an offer, and many who could deliberately choose otherwise.
+
+## Levers Specific to the Dutch Market
+
+**Working hours and flexibility.** The Netherlands has one of the highest shares of part-time work in the European Union, and a four-day working week is widely accepted, including among highly skilled professionals. Offering a genuine 32- or 36-hour week at a proportionally adjusted salary, and generous handling of requests under the **Flexible Working Act**, is a lever many large employers apply less flexibly.
+
+**Equity that is actually worth something.** Dutch tax rules for employee stock options were changed in 2023 so that employees can, under conditions, defer taxation until shares become tradable, reducing the problem of paying tax on paper gains. For start-ups and scale-ups, a well-explained option plan can be a real part of the proposition — provided you explain strike price, vesting and exit scenarios honestly.
+
+**International hiring support.** Becoming a recognised sponsor with the **IND** and applying the **30% ruling** for eligible international hires makes a smaller employer competitive for candidates from abroad, where net income and a smooth relocation matter as much as gross salary.
+
+**Transparent pay.** Under the **EU Pay Transparency Directive**, pay ranges must be shared with applicants before the interview. Smaller employers who publish realistic ranges early, and explain the total package, avoid losing candidates late in the process when salary expectations turn out not to match.
+
+**Regional cost of living.** Outside Amsterdam and Utrecht, housing costs are considerably lower. For employers in Brabant, Gelderland, Overijssel, Limburg or the north, a salary that looks lower in gross terms can offer comparable or better purchasing power — an argument worth making with concrete examples.
+
+## Key Takeaways
+
+- A smaller employer can't win a pure salary war against Booking.com, Adyen, Google, Microsoft or large banks, but most candidates weigh more than salary.
+- Ownership, impact, flexibility and learning are genuine value propositions when described honestly and specifically.
+- Dutch-specific levers include part-time and four-day weeks, improved stock option taxation, IND sponsorship and the 30% ruling.
+- Publishing realistic pay ranges early, as the Pay Transparency Directive requires, prevents late-stage mismatches.
+- Regional employers can use lower living costs as a concrete, quantifiable argument.
+
+## Where to Start
+
+Be explicit in your job posting and interviews about what you genuinely offer instead of salary parity — ownership, speed, and direct access — rather than avoiding the salary conversation or overpromising.
+
+Post your open AI, machine learning or data role — first listing free — at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

@@ -17,7 +17,22 @@ Content Format: Regional Market Analysis
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-01",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-den-haag"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-den-haag"},
+  "inLanguage": "en",
+  "about": [{"@type": "Place", "name": "The Hague (Den Haag)"}],
+  "mentions": [
+    {"@type": "GovernmentOrganization", "name": "Autoriteit Persoonsgegevens"},
+    {"@type": "GovernmentOrganization", "name": "Statistics Netherlands (CBS)"},
+    {"@type": "GovernmentOrganization", "name": "Nationaal Cyber Security Centrum (NCSC)"},
+    {"@type": "GovernmentOrganization", "name": "International Criminal Court"},
+    {"@type": "GovernmentOrganization", "name": "Europol"},
+    {"@type": "GovernmentOrganization", "name": "Eurojust"},
+    {"@type": "ResearchOrganization", "name": "TNO"},
+    {"@type": "Organization", "name": "The Hague Security Delta"},
+    {"@type": "CollegeOrUniversity", "name": "Leiden University Campus The Hague"},
+    {"@type": "CollegeOrUniversity", "name": "The Hague University of Applied Sciences"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"}
+  ]
 }
 </script>
 
@@ -36,12 +51,6 @@ Where a scale-up measures an AI team's success in engagement or conversion, a mi
 ## Why This Work Is Invisible to a Keyword Search
 
 A search for "AI engineer Den Haag" mostly returns nothing, not because the roles don't exist, but because they are titled "Data Analist," "Adviseur Data & AI," or "Beleidsmedewerker Data" — vocabulary written by HR and policy departments, not by a tech-recruiting function fluent in AI job titles. Filtering by category rather than title is the only way this segment becomes visible at all.
-
-## Where to Start
-
-If governance-heavy, high-accountability modeling work interests you more than a consumer feature pipeline, Den Haag is worth evaluating specifically because it selects against people who only want to ship fast — and for people who want their models to survive an audit.
-
-Browse current AI, machine learning and data vacancies in and around Den Haag at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), filtered by category and distance from home.
 
 ## The Entity Landscape: Who Actually Hires Here
 
@@ -90,6 +99,64 @@ Engineers who come from a pure product background sometimes find this combinatio
 ## How Compensation and Career Trajectories Actually Compare
 
 A common assumption is that governance-adjacent public-sector-influenced roles pay less than private-sector AI engineering roles, and while this can be true in raw salary terms for entry-level positions, the picture is more nuanced once you account for the full career arc. Specialists who build deep expertise in AI governance, particularly the specific combination of technical and regulatory literacy described above, become increasingly valuable as more of the private sector faces the same EU AI Act pressures that have already driven Den Haag's hiring — meaning a few years of Den Haag experience can position someone for private-sector governance roles (discussed elsewhere on this site) that carry compensation closer to, or sometimes exceeding, general AI engineering roles, precisely because the required combination of skills remains genuinely scarce.
+
+## The Named Institutions Behind Den Haag's Data Work
+
+The general categories above become much more useful once you attach names to them. These are the organisations that most shape the city's data and AI labour market.
+
+| Segment | Organisations in or around Den Haag | Typical data and AI work |
+|---|---|---|
+| Central government | Ministries and executive agencies of the Rijksoverheid | Policy analysis, risk models, forecasting, algorithm governance |
+| Supervisors and statistics | **Autoriteit Persoonsgegevens (AP)**, **Statistics Netherlands (CBS)** | Algorithm oversight, privacy-preserving statistics, official data production |
+| Cyber security | **Nationaal Cyber Security Centrum (NCSC)**, **The Hague Security Delta (HSD)** campus | Threat detection, anomaly detection, security analytics |
+| International law and justice | **International Criminal Court**, International Court of Justice at the Peace Palace, **Europol**, **Eurojust**, OPCW | Case-management analytics, document search, digital evidence, multilingual NLP |
+| Applied research | **TNO**, with defence, safety and security research in The Hague | Sensor data, decision support, defence and security AI |
+| Education | **Leiden University Campus The Hague**, **The Hague University of Applied Sciences**, TU Delft nearby | Research on governance and security; pipeline of data and security graduates |
+| Financial services | Insurers and financial groups with head offices in the city, such as NN Group and Aegon | Actuarial modelling, model risk, fraud detection |
+
+Two of these deserve extra attention for AI engineers.
+
+**The Autoriteit Persoonsgegevens** is the Dutch data protection authority and has also been given a coordinating role in the supervision of algorithms and AI in the Netherlands. That makes The Hague the place where Dutch expectations for algorithmic transparency are articulated — and where public bodies and companies feel them first.
+
+**Europol and Eurojust** are EU agencies with their own recruitment procedures, eligibility rules and selection timelines. Their data and analytics vacancies are published through their own channels and EU recruitment portals, which is one reason they are almost entirely absent from commercial job boards.
+
+## Why the Childcare Benefits Scandal Still Shapes Government AI Hiring
+
+No account of AI work in Den Haag is complete without the *toeslagenaffaire*. Over several years, the Dutch Tax and Customs Administration wrongly treated thousands of parents as fraudsters in the childcare benefits system. Investigations showed that risk-classification practices, including the use of nationality as a factor, contributed to discriminatory outcomes; the Autoriteit Persoonsgegevens found that the processing of applicants' nationality was unlawful and discriminatory. The scandal led to the resignation of the Dutch cabinet in January 2021.
+
+The consequences for data work in government are still visible in how roles are defined:
+
+- **The national Algoritmeregister**, in which government organisations publish information about the algorithms they use.
+- **Human-rights impact assessments** such as the IAMA (Impact Assessment Mensenrechten en Algoritmes) before high-impact algorithms are deployed.
+- **Stronger internal oversight**, with privacy officers, legal advisers and ethics committees involved in model design rather than only in review.
+
+For a candidate, this history explains why interviews for government data roles include questions about bias, proportionality and explainability — and why an engineer who can discuss those topics concretely is at a real advantage.
+
+## Practical Realities of Public-Sector Employment in The Hague
+
+**Transparent pay scales.** Most central government roles fall under the **CAO Rijk**, and vacancies usually state the salary scale. That makes comparisons easier than in the private sector, where ranges are often undisclosed.
+
+**Security screening.** Roles designated as positions of trust (*vertrouwensfuncties*) require a security clearance investigation, carried out by or on behalf of the AIVD or MIVD. The process can add weeks to a hiring timeline and may involve requirements about the countries where you have lived. Ask early whether a role requires it.
+
+**Language requirements.** Many government roles expect professional Dutch, particularly where the work involves policy documents or parliamentary processes. International organisations, by contrast, typically work in English and sometimes French.
+
+**Entry routes.** Government traineeships such as the Rijks I-traineeship provide a structured entry route into data and IT roles across ministries for recent graduates.
+
+**Commute geography.** Den Haag Centraal, Den Haag HS and Laan van NOI serve different parts of the city, and Delft, Leiden, Zoetermeer and Rijswijk are all within a short train or tram ride. A radius-based search captures employers in those municipalities that a "Den Haag" filter would miss.
+
+## Key Takeaways
+
+- Den Haag's AI market is defined by government, supervisors, international institutions, security organisations and regulated finance.
+- The Autoriteit Persoonsgegevens, CBS, NCSC, TNO, Europol, Eurojust and the international courts all generate data work that is rarely titled "AI".
+- The childcare benefits scandal made bias assessment, transparency and human-rights impact assessments standard parts of government data work.
+- Expect CAO Rijk salary scales, possible security screening and Dutch language requirements in public-sector roles.
+- Search by distance to include Delft, Leiden, Zoetermeer and Rijswijk.
+
+## Where to Start
+
+If governance-heavy, high-accountability modeling work interests you more than a consumer feature pipeline, Den Haag is worth evaluating specifically because it selects against people who only want to ship fast — and for people who want their models to survive an audit.
+
+Browse current AI, machine learning and data vacancies in and around Den Haag at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), filtered by category and distance from home.
 
 ## Frequently Asked Questions
 

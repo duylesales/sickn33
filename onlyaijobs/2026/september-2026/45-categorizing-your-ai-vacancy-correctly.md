@@ -17,7 +17,16 @@ Content Format: Decision-Stage Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-06",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/categorizing-your-ai-vacancy-correctly"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/categorizing-your-ai-vacancy-correctly"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Categorising AI, machine learning and data vacancies"}],
+  "mentions": [
+    {"@type": "Organization", "name": "OnlyAIJobs"},
+    {"@type": "Thing", "name": "schema.org JobPosting occupationalCategory"},
+    {"@type": "Thing", "name": "ESCO (European Skills, Competences, Qualifications and Occupations)"},
+    {"@type": "Thing", "name": "ISCO-08"},
+    {"@type": "Thing", "name": "Google job search structured data guidelines"}
+  ]
 }
 </script>
 
@@ -38,12 +47,6 @@ Job posting templates are often set up by whichever department historically owne
 ## A Quick Check Before Posting
 
 Ask what percentage of the role's actual day-to-day work is modeling, data science or ML-specific, versus general software engineering. If that percentage is meaningful, categorize accordingly — regardless of what a department's default template assumes.
-
-## Where to Start
-
-Review your next AI-adjacent vacancy before posting and confirm it's categorized by its actual content, not by which department's template it started from.
-
-Post your open AI, machine learning or data role — correctly categorized, and free for the first listing — by emailing a link to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
 
 ## A Simple Audit for Your Currently Open Roles
 
@@ -81,6 +84,73 @@ Some roles genuinely and legitimately span two categories almost equally, which 
 ## Why This Small Discipline Reflects Broader Hiring Process Maturity
 
 A company that categorizes its AI/ML/Data roles carefully and consistently is often, not coincidentally, a company that has thought carefully about other aspects of its hiring process too — job description quality, interview structure, response times. None of these individually is a large signal on its own, but a candidate evaluating multiple opportunities can reasonably treat careful categorization as one small data point among several suggesting an employer that takes its hiring process seriously, rather than treating a job board's category filter as pure administrative housekeeping irrelevant to their decision.
+
+## The OnlyAIJobs Category System, Explained Role by Role
+
+OnlyAIJobs uses eleven categories in its job filter. Choosing the right one — or the right combination, where a listing spans two — determines which candidates see your vacancy.
+
+| Category | Belongs here if the role mainly involves | Typical titles |
+|---|---|---|
+| **Machine Learning** | Training, evaluating and deploying predictive or statistical models | ML Engineer, Data Scientist, Applied Scientist |
+| **Development** | Building software that uses or integrates AI components | Software Engineer (AI), AI Engineer, Backend Engineer with ML integration |
+| **Research** | Developing new methods, publishing or advancing the state of the art | Research Scientist, Research Engineer, PhD position |
+| **Infrastructure** | ML platforms, pipelines, serving, monitoring and compute | MLOps Engineer, ML Platform Engineer, Data Engineer |
+| **Generative AI** | Applications built on large language or generative models | LLM Engineer, AI Engineer (GenAI), Conversational AI Developer |
+| **Computer Vision** | Image and video understanding, inspection, perception | Computer Vision Engineer, Vision Engineer |
+| **Robotics Engineer** | Perception, control and AI in physical systems | Robotics Engineer, Autonomy Engineer |
+| **AI Product** | Product management and strategy for AI-driven products | AI Product Manager, Product Owner Data & AI |
+| **Ethics & Governance** | Risk, compliance, responsible AI and regulatory work | AI Governance Lead, Responsible AI Specialist |
+| **Quality Control** | Testing, validation and quality assurance of AI systems or AI-driven inspection | ML Test Engineer, AI Quality Engineer |
+| **Security and Safety** | Securing AI systems, AI for security, and AI safety | AI Security Engineer, ML Security Researcher |
+
+Two practical observations follow from this list.
+
+**Generic "Development" is the most common miscategorisation.** Many AI-heavy roles default to Development because it resembles a software engineering template. If the role's core output is a model or an AI-driven feature, Machine Learning, Generative AI or Computer Vision is usually more accurate.
+
+**Specialised categories can offer outsized visibility.** When the site's catalogue was reviewed in September 2026, several categories — including AI Product, Computer Vision, Generative AI, Quality Control and Security and Safety — had few or no active listings. A correctly categorised role in one of those categories faces very little competition for the attention of candidates filtering specifically for that work.
+
+## Beyond Category: The Other Filters That Shape Visibility
+
+Category is not the only filter candidates use. On OnlyAIJobs, candidates can also filter by city, by work type — Full-time, Part-time, Internship or Remote — and by how recently a vacancy was posted, and they can see the distance between a vacancy and their home.
+
+That makes three further details important when you submit a vacancy:
+
+1. **The exact address of the workplace**, so distance-based search works correctly.
+2. **The correct work type**, especially for internships and remote roles, which candidates often filter for explicitly.
+3. **A current posting date**, since stale listings drop out of "recently posted" filters; update or repost roles that remain open for a long time.
+
+## Categorisation on Your Own Website: Structured Data
+
+Categorisation matters on your own careers page too, because search engines read structured data.
+
+**The `occupationalCategory` property.** The schema.org **JobPosting** vocabulary includes an `occupationalCategory` field. It can contain a category code from an occupational classification — for example ISCO-08, which underpins the European **ESCO** classification — which helps search engines and aggregators understand what the job is, independent of the title's wording.
+
+**Title hygiene.** Google's guidelines for job posting structured data recommend using the actual job title in the title field, without extraneous information such as company names, salary, locations or promotional text. Clean, conventional titles combined with accurate categories are more likely to be matched to the right searches.
+
+**Consistency across channels.** Use the same role definition on your careers page, on specialist boards and in aggregators. A role that is "Machine Learning Engineer" on one site and "Software Developer" on another sends mixed signals to candidates and search engines alike.
+
+## A Decision Procedure for Hybrid Roles
+
+When a role spans categories, answer these questions in order:
+
+1. **What is the primary output?** A trained model (Machine Learning), an application using a model (Development or Generative AI), a platform (Infrastructure), a new method (Research) or a policy framework (Ethics & Governance)?
+2. **Which skill is rarest?** If one half of the role is common and the other scarce, categorise by the scarce half, because those candidates depend most on precise filtering.
+3. **Which candidates would you regret missing?** Picture the ideal hire and the category they would filter on.
+4. **Can you describe both halves in the text?** Use the category for the primary audience and make the secondary skills explicit in the first paragraph of the description.
+
+## Key Takeaways
+
+- Miscategorising an AI-heavy role under a generic engineering category hides it from specialist candidates.
+- OnlyAIJobs uses eleven categories; Development is the most common default mistake for model-centred roles.
+- Specialised categories with few listings can give correctly categorised roles outsized visibility.
+- Exact address, correct work type and a current posting date matter as much as category for being found.
+- On your own site, use schema.org JobPosting with a clean title and an accurate `occupationalCategory`, and keep role definitions consistent across channels.
+
+## Where to Start
+
+Review your next AI-adjacent vacancy before posting and confirm it's categorized by its actual content, not by which department's template it started from.
+
+Post your open AI, machine learning or data role — correctly categorized, and free for the first listing — by emailing a link to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
 
 ## Frequently Asked Questions
 

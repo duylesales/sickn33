@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-10-31",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/evaluating-startup-funding-stability-before-joining"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/evaluating-startup-funding-stability-before-joining"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Evaluating startup financial stability before joining"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "GovernmentOrganization", "name": "Netherlands Chamber of Commerce (KVK)"},
+    {"@type": "Organization", "name": "Techleap.nl"},
+    {"@type": "Organization", "name": "Dealroom"},
+    {"@type": "Organization", "name": "Invest-NL"},
+    {"@type": "GovernmentOrganization", "name": "Netherlands Enterprise Agency (RVO)"},
+    {"@type": "Thing", "name": "WBSO R&D tax credit"},
+    {"@type": "Thing", "name": "Innovation Credit (Innovatiekrediet)"},
+    {"@type": "Thing", "name": "Central Insolvency Register"},
+    {"@type": "GovernmentOrganization", "name": "UWV (Employee Insurance Agency)"},
+    {"@type": "Thing", "name": "Wage guarantee scheme in case of bankruptcy"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ An exciting AI product demo tells you nothing about whether the company funding 
 ## Why This Isn't About Avoiding Startups
 
 This isn't an argument against joining early-stage companies — it's an argument for asking the same due-diligence questions an investor would ask, since you're making a similar kind of bet with your time and career.
-
-## Where to Start
-
-Prepare two or three direct, matter-of-fact questions about runway and team trajectory for your final conversation, and treat evasive or vague answers as information in themselves.
-
-Browse current AI, machine learning and data roles across the Netherlands, at startups and established companies alike, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Deeper Look at Reading the Signals Beyond the Direct Answer
 
@@ -118,6 +126,38 @@ Establish the financial position directly: runway in months, funding mix, and wh
 Then weigh what you learn against what you are giving up by not taking the alternative, rather than against an abstract standard of what constitutes acceptable risk. A startup opportunity that looks risky in isolation may be entirely reasonable given what the alternative offers, and one that looks stable may still be a poor choice if the compensating upside is absent.
 
 Candidates who work through this deliberately make better decisions than those who rely on impressions formed during interviews, and the effort required is a few well-chosen questions rather than an extensive investigation.
+
+## Named Sources You Can Check Before Accepting an Offer
+
+Much of the due diligence described in this article can be grounded in public sources specific to the Netherlands.
+
+**Netherlands Chamber of Commerce (KVK).** The trade register shows a company's legal form, registration date, directors and, for many companies, filed annual accounts. Small companies may file abbreviated accounts, and filings lag behind reality, but a company that is persistently late with filing or has recently changed directors deserves follow-up questions.
+
+**Central Insolvency Register.** The public register of insolvency proceedings shows whether a company — or related entities in its group — has been involved in bankruptcy or suspension of payments.
+
+**Startup ecosystem data.** **Dealroom**, an Amsterdam-based data platform, tracks funding rounds and investors for startups and scale-ups, and **Techleap.nl**, the Dutch public-private organisation supporting the tech ecosystem, publishes insights on the state of Dutch tech funding. Together they show when a company last raised money and from whom.
+
+**Public funding instruments.** Many Dutch AI startups use government instruments. The **WBSO** is an R&D tax credit that reduces wage costs for research and development work, administered by the **Netherlands Enterprise Agency (RVO)**, which also manages the **Innovation Credit** for risky development projects. **Invest-NL** and regional development funds invest in innovative companies. Such funding signals external validation, but it is often tied to milestones — worth asking about.
+
+## What Happens to Employees If a Dutch Employer Goes Bankrupt
+
+Understanding the safety net helps you weigh startup risk realistically. If an employer is declared bankrupt, employees in the Netherlands can generally rely on the **wage guarantee scheme** administered by **UWV**, which takes over payment of outstanding wages, holiday allowance and pension contributions for a limited period, subject to conditions and maximums. The receiver can terminate employment contracts with a shortened notice period. After that, standard unemployment benefit rules apply, depending on your work history.
+
+This safety net doesn't remove the disruption of losing a job, and it doesn't cover the value of stock options, which usually become worthless in a bankruptcy. That is precisely why assessing runway before joining matters more than relying on protection afterwards.
+
+## Key Takeaways
+
+- A compelling product doesn't prove a startup can fund your role; ask about runway, revenue and the timing of the next funding round.
+- Use KVK filings, the Central Insolvency Register, Dealroom and Techleap.nl to ground your assessment.
+- Public instruments such as WBSO, the Innovation Credit and Invest-NL signal validation but often come with milestones.
+- The UWV wage guarantee scheme offers limited protection in bankruptcy; stock options generally don't survive it.
+- Asking about financial stability professionally rarely harms your candidacy — how a startup answers is itself a signal.
+
+## Where to Start
+
+Prepare two or three direct, matter-of-fact questions about runway and team trajectory for your final conversation, and treat evasive or vague answers as information in themselves.
+
+Browse current AI, machine learning and data roles across the Netherlands, at startups and established companies alike, at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

@@ -1,9 +1,9 @@
-Studeer je AI, Data Science of Machine Learning in Brabant? Grote kans dat je al eens dacht: "voor een goede stage moet ik wel naar Amsterdam of Utrecht." Dat is meestal niet waar.
+💡 Studying AI, data science or machine learning in Brabant? Chances are you've thought: "for a good internship, I'll have to go to Amsterdam or Utrecht." That's usually not true.
 
-Vacaturesites tonen vooral wat andere mensen zoeken, en de meeste zoekvolume komt uit steden met de meeste studenten. Bedrijven die wél in Brabant werven — van hightech tot logistiek — hebben vaak geen budget voor Randstad-achtige employer branding, dus verdwijnt hun vacature onder bedrijven die wél adverteren.
+💰 Job sites mainly show what other people search for, and most search volume comes from the cities with the most students. Companies that do recruit in Brabant — from high-tech to logistics — often have no budget for Randstad-style employer branding, so their vacancy disappears beneath companies that do advertise.
 
-Dichterbij is geen compromis. Het is alleen minder vaak op je tijdlijn beland.
+✅ Closer to home isn't a compromise. It just shows up on your feed less often.
 
-Lees het hele verhaal en bekijk actuele stages: https://onlyaijobs.eu/blog/ai-stage-noord-brabant
+📖 Read the full story and browse current internships: https://onlyaijobs.eu/blog/ai-internships-noord-brabant
 
-#OnlyAIJobs #AIStage #Brabant #DataScience #Studenten
+#OnlyAIJobs #AIInternship #Brabant #DataScience #Students

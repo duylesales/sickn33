@@ -17,7 +17,24 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-22",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/relocating-netherlands-ai-job"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/relocating-netherlands-ai-job"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Relocating to the Netherlands for an AI or machine learning job"}],
+  "mentions": [
+    {"@type": "GovernmentOrganization", "name": "Immigratie- en Naturalisatiedienst (IND)"},
+    {"@type": "GovernmentOrganization", "name": "Belastingdienst"},
+    {"@type": "Thing", "name": "30% ruling (30%-regeling)"},
+    {"@type": "Thing", "name": "Highly skilled migrant scheme (kennismigrantenregeling)"},
+    {"@type": "Legislation", "name": "EU Blue Card Directive"},
+    {"@type": "Thing", "name": "Burgerservicenummer (BSN)"},
+    {"@type": "Thing", "name": "DigiD"},
+    {"@type": "Legislation", "name": "Wet betaalbare huur"},
+    {"@type": "GovernmentOrganization", "name": "Huurcommissie"},
+    {"@type": "Organization", "name": "IN Amsterdam"},
+    {"@type": "Organization", "name": "The Hague International Centre"},
+    {"@type": "Organization", "name": "Holland Expat Center South"},
+    {"@type": "Organization", "name": "International Welcome Center North"}
+  ]
 }
 </script>
 
@@ -30,12 +47,6 @@ An AI job advertisement in the Netherlands will tell you the tech stack, the tea
 **What the realistic commute radius around the office actually contains.** A relocation package rarely tells you that a genuinely comfortable and affordable place to live might be in a smaller town rather than the city where the office sits — information that a distance-based job and housing search surfaces far better than a company's relocation packet does.
 
 **How the 30% ruling applies to your specific salary and contract type,** rather than assuming it applies uniformly — eligibility and duration depend on specifics worth confirming with the employer or an advisor before treating it as guaranteed take-home income.
-
-## Where to Start
-
-Ask about sponsorship track record and realistic timelines directly, and research the actual commute geography around the office rather than assuming the advertised city name is where you'll end up living.
-
-Once you've done that groundwork, browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), which shows the exact location and distance for each listing rather than just a city name.
 
 ## A Practical Pre-Acceptance Checklist
 
@@ -79,6 +90,66 @@ Beyond the practical logistics already discussed, one of the more overlooked pre
 ## Why Your First Six Months' Housing Choice Shouldn't Be Treated as Permanent
 
 Candidates under time pressure sometimes treat their first housing decision in the Netherlands as a long-term commitment, accepting a suboptimal location or arrangement because it was available quickly during a stressful relocation window. It's worth explicitly treating your first housing arrangement as provisional — a place to land while you learn the actual geography of commutes, neighborhoods and communities firsthand, with a deliberate plan to reassess and potentially move within your first year once you have real, lived information rather than pre-arrival guesswork to base a more permanent decision on.
+
+## Residence Permits: The Routes AI Professionals Actually Use
+
+Citizens of the EU, EEA and Switzerland can live and work in the Netherlands without a work permit. For others, three routes cover most AI and ML hires.
+
+| Route | Key conditions | Practical notes |
+|---|---|---|
+| **Highly skilled migrant** (*kennismigrant*) | Employer must be a recognised sponsor (*erkend referent*) with the **IND**; salary must meet the applicable threshold | The most common route. Thresholds are indexed annually and are lower for people under 30 and for recent graduates. No specific diploma requirement. Recognised sponsors can use a faster application process |
+| **EU Blue Card** | Higher education qualification or, for ICT professionals, relevant professional experience; salary threshold; a work contract of sufficient duration | Offers mobility advantages within the EU. The employer does not have to be a recognised sponsor |
+| **Orientation year** (*zoekjaar hoogopgeleiden*) | Graduated from a Dutch or qualifying foreign higher education institution within the required period | Free to work during the year; a lower salary threshold can apply when switching to the highly skilled migrant route afterwards |
+
+Nationals of some countries also need a provisional residence permit (MVV) to enter; for recognised sponsors, the employer usually submits a combined application. Your partner can generally live and work in the Netherlands on a dependent permit linked to a highly skilled migrant or Blue Card permit. Highly skilled migrants are not required to complete the Dutch civic integration programme. Always check the current conditions on the IND website, as thresholds and procedures change.
+
+## The 30% Ruling in Concrete Terms
+
+The **30% ruling** (*30%-regeling*) allows employers to pay part of the salary of eligible incoming employees as a tax-free allowance for extraterritorial costs. It is valuable, but its conditions are specific.
+
+- **Recruited from abroad.** You must have lived more than 150 kilometres from the Dutch border for more than 16 of the 24 months before starting work in the Netherlands.
+- **Specific expertise.** In practice this is tested through a salary norm, which is indexed annually and lower for employees under 30 with a master's degree.
+- **Maximum duration.** The ruling applies for a maximum of five years, reduced by earlier periods of work or residence in the Netherlands.
+- **Recent changes.** Legislation has capped the allowance at a salary ceiling and reduces the maximum tax-free percentage from 30% to 27% from 2027.
+- **Application timing.** Employer and employee apply jointly to the **Belastingdienst**. Applying within four months of starting employment allows the ruling to apply from the start date.
+
+The ruling can make a large difference to net income, so ask the employer whether it will apply for it and whether the offer is expressed with or without it — and have your eligibility checked before you compare offers.
+
+## The First Administrative Steps After Arrival
+
+| Step | What it involves | Why it matters |
+|---|---|---|
+| **Register with the municipality** | Registration in the Personal Records Database (BRP) at your municipality of residence | You receive your citizen service number (**BSN**), needed for work, tax, healthcare and banking |
+| **Apply for DigiD** | The Dutch government's digital login | Needed for the tax authority, benefits, healthcare and many public services |
+| **Take out health insurance** | Basic health insurance (*basisverzekering*) is mandatory for residents working in the Netherlands, generally within four months of registration or starting work | Premiums are backdated; healthcare allowance (*zorgtoeslag*) may apply depending on income |
+| **Open a Dutch bank account** | Usually requires a BSN and proof of address | Salary payments and rent are typically made from a Dutch account |
+| **Exchange your driving licence** | Depends on your country of issue; handled by the RDW | Some licences can be exchanged, others require Dutch driving tests |
+
+**Expat centres simplify this considerably.** Regional one-stop centres such as **IN Amsterdam**, **The Hague International Centre**, **Holland Expat Center South** in the Eindhoven region and **International Welcome Center North** in Groningen combine IND services with municipal registration for eligible newcomers, often in a single appointment. Ask your employer which centre serves your future office location.
+
+## Housing: The Hardest Part, and How to Reduce the Risk
+
+**Understand the rental segments.** The Dutch rental market is split into social housing (with long waiting lists, rarely accessible to newcomers), regulated mid-range rent and free-sector rent. The **Wet betaalbare huur** (Affordable Rent Act), in effect since July 2024, extended rent regulation to a larger share of mid-range homes, which has changed supply in some cities.
+
+**Know your rights.** The **Huurcommissie** (Rent Tribunal) handles disputes about rent levels and service costs. Excessive agency fees charged to tenants for services performed for the landlord are not permitted.
+
+**Avoid scams.** Never pay a deposit or rent before viewing a property — in person or through a trusted representative — and verifying that the landlord or agent is genuine. Rental scams targeting international newcomers are common.
+
+**Use distance strategically.** Cities such as Amsterdam and Utrecht are among the tightest markets. Towns within a reasonable train commute — for example Haarlem, Almere or Amersfoort for the Randstad, or Helmond and Veldhoven for Eindhoven — can widen your options considerably. This is exactly where knowing the exact address of the office, rather than the city name, pays off.
+
+## Key Takeaways
+
+- Most non-EU AI professionals use the highly skilled migrant route, the EU Blue Card or the orientation year; check your employer's recognised sponsor status early.
+- The 30% ruling has strict eligibility rules, a five-year maximum, a salary cap and a reduction to 27% from 2027.
+- Register with the municipality for a BSN, apply for DigiD and arrange mandatory health insurance promptly.
+- Expat centres in Amsterdam, The Hague, Eindhoven and Groningen combine immigration and registration services.
+- Housing is the biggest risk: know the rental segments and your rights, avoid scams and use commute distance to widen your search.
+
+## Where to Start
+
+Ask about sponsorship track record and realistic timelines directly, and research the actual commute geography around the office rather than assuming the advertised city name is where you'll end up living.
+
+Once you've done that groundwork, browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), which shows the exact location and distance for each listing rather than just a city name.
 
 ## Frequently Asked Questions
 

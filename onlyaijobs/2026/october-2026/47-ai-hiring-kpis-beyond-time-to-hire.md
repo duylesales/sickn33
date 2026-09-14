@@ -17,7 +17,21 @@ Content Format: Decision-Stage Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-16",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-hiring-kpis-beyond-time-to-hire"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-hiring-kpis-beyond-time-to-hire"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Hiring metrics for AI roles"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Thing", "name": "Quality of hire"},
+    {"@type": "Thing", "name": "First-year retention rate"},
+    {"@type": "Thing", "name": "Offer acceptance rate"},
+    {"@type": "Thing", "name": "Source of hire"},
+    {"@type": "Thing", "name": "Candidate Net Promoter Score (cNPS)"},
+    {"@type": "Legislation", "name": "General Data Protection Regulation (GDPR)"},
+    {"@type": "GovernmentOrganization", "name": "Dutch Data Protection Authority (Autoriteit Persoonsgegevens)"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"},
+    {"@type": "Legislation", "name": "EU Pay Transparency Directive (EU) 2023/970"},
+    {"@type": "Thing", "name": "NVP Recruitment Code (NVP Sollicitatiecode)"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ Time-to-hire is easy to measure, which is exactly why so many hiring processes o
 ## Why Time-to-Hire Alone Distorts Decisions
 
 Optimizing purely for speed pushes toward the fastest available candidate rather than the best fit, and can mask a pattern of rushed, low-quality hires behind an impressive-looking metric.
-
-## Where to Start
-
-Add at least one longer-horizon metric — 12-month retention by source, or a structured 6-month quality check-in — alongside time-to-hire, so speed isn't the only signal shaping your hiring decisions.
-
-Post your open AI, machine learning or data role — first listing free — at info@onlyaijobs.eu.
 
 ## A Deeper Look at Why Time-to-Hire Became the Default Metric in the First Place
 
@@ -118,6 +126,45 @@ A short question to candidates at the conclusion of a process — successful or 
 The reason this matters commercially rather than merely ethically is that candidate experience propagates. In a market where the relevant community for a specialisation may number in the hundreds nationally, a process that consistently frustrates candidates accumulates a reputation that reaches people before they ever apply. Several employers described in the regional analyses on this site compete in exactly such markets.
 
 Collecting this feedback costs a single question and reading the answers. Acting on it — shortening a process that candidates found excessive, adding communication where they experienced silence — addresses precisely the issues the hiring process analysis elsewhere on this site identifies as driving candidate withdrawal.
+
+## Definitions of Commonly Used Hiring Metrics
+
+To make hiring metrics comparable over time, define them precisely. These are the most common, with a practical definition for small AI teams:
+
+| Metric | Practical definition | What it tells you |
+|---|---|---|
+| **Time-to-hire** | Days from a candidate's first contact to accepting the offer | Speed of the process — not whether the hire was good |
+| **Offer acceptance rate** | Accepted offers divided by offers made | Whether your proposition and process convince the candidates you want |
+| **Source of hire** | The channel through which hired candidates first applied | Which channels deliver hires, not just applications |
+| **Quality of hire** | A structured rating by the manager after six and twelve months, against the role's defined success criteria | Whether the selection process predicts real performance |
+| **First-year retention rate** | Share of hires still employed after twelve months, excluding planned fixed-term endings | Whether expectations set during hiring matched reality |
+| **Candidate Net Promoter Score (cNPS)** | Candidates' likelihood to recommend applying, asked after the process — including rejected candidates | Candidate experience and employer reputation |
+
+For AI roles, quality of hire is the most valuable and the hardest to measure. Defining two or three concrete success criteria for the role before hiring — for example, "a model in production within six months" or "a data pipeline trusted by the operations team" — makes the later rating far more meaningful.
+
+## Collecting Hiring Data Responsibly
+
+Hiring metrics involve personal data, which brings legal limits:
+
+- **Purpose limitation and retention.** Under the **GDPR**, candidate data collected for a selection procedure can't simply be reused for other purposes. The **Dutch Data Protection Authority** advises deleting applicant data within four weeks after a procedure unless the candidate consents to longer retention. For long-term metrics, use aggregated or anonymised data.
+- **Diversity data.** Data about ethnicity, health or other special categories is subject to strict conditions. If you want to monitor diversity in hiring, use voluntary, anonymous and aggregated methods, and seek advice before collecting such data.
+- **AI-based analytics.** If you use AI tools to score or rank candidates, the **EU Artificial Intelligence Act** classifies such systems as high-risk, with requirements around human oversight, bias management and documentation.
+- **Pay equity as a metric.** Under the **EU Pay Transparency Directive**, larger employers must report on gender pay gaps. Tracking starting salaries of new hires by gender and role is a practical early indicator that helps prevent gaps from forming at the point of hiring.
+- **Transparent process.** The **NVP Recruitment Code** recommends transparency towards candidates about the procedure, which also supports collecting honest candidate experience feedback.
+
+## Key Takeaways
+
+- Time-to-hire measures speed, not success; pair it with quality of hire and first-year retention.
+- Define offer acceptance rate, source of hire, quality of hire, retention and cNPS precisely so trends are comparable.
+- Set concrete success criteria for each AI role before hiring to make quality-of-hire ratings meaningful.
+- Respect GDPR retention and purpose limits, handle diversity data carefully and treat AI-based candidate scoring as high-risk.
+- Start with a small, sustainable metric set and connect results to concrete process changes.
+
+## Where to Start
+
+Add at least one longer-horizon metric — 12-month retention by source, or a structured 6-month quality check-in — alongside time-to-hire, so speed isn't the only signal shaping your hiring decisions.
+
+Post your open AI, machine learning or data role — first listing free — at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

@@ -1,9 +1,9 @@
-Arnhem laat zich niet makkelijk in één economische categorie plaatsen: enerzijds energiebedrijven middenin de duurzame transitie, anderzijds een kleinere maar reële mode- en creatieve-technologiescene.
+💡 Arnhem doesn't fit easily into one economic category: on one side, energy companies in the middle of the renewable transition; on the other, a smaller but real fashion and creative technology scene.
 
-Beide segmenten worden getiteld door afdelingen die het werk niet als "AI-functie" zien — "data-analist energietransitie" of "trendanalist", niet "machine learning engineer". Filteren op categorie is de enige manier om beide zichtbaar te maken.
+🔍 Both segments are titled by departments that don't see the work as an "AI role" — "energy transition data analyst" or "trend analyst," not "machine learning engineer." Filtering by category is the only way to make both visible.
 
-Kijk gericht naar het segment dat je interesseert, in plaats van een generieke landelijke zoekopdracht.
+✅ Look specifically at the segment that interests you, instead of a generic national search.
 
-Bekijk actuele vacatures: https://onlyaijobs.eu/blog/ai-vacatures-arnhem
+🔎 Browse current jobs: https://onlyaijobs.eu/blog/ai-jobs-arnhem
 
-#OnlyAIJobs #AIVacatures #Arnhem #Energie
+#OnlyAIJobs #AIJobs #Arnhem #Energy

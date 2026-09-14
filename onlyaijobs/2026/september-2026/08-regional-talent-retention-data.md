@@ -17,7 +17,21 @@ Content Format: Policy Brief
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-18",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/regional-talent-retention-data"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/regional-talent-retention-data"},
+  "inLanguage": "en",
+  "about": [{"@type": "Place", "name": "Noord-Brabant"}, {"@type": "Thing", "name": "Regional talent retention"}],
+  "mentions": [
+    {"@type": "GovernmentOrganization", "name": "Province of Noord-Brabant"},
+    {"@type": "Organization", "name": "Brainport Development"},
+    {"@type": "Organization", "name": "Brabantse Ontwikkelings Maatschappij (BOM)"},
+    {"@type": "Organization", "name": "Midpoint Brabant"},
+    {"@type": "ResearchOrganization", "name": "Research Centre for Education and the Labour Market (ROA)"},
+    {"@type": "GovernmentOrganization", "name": "Statistics Netherlands (CBS)"},
+    {"@type": "CollegeOrUniversity", "name": "Eindhoven University of Technology"},
+    {"@type": "CollegeOrUniversity", "name": "Tilburg University"},
+    {"@type": "CollegeOrUniversity", "name": "Jheronimus Academy of Data Science"},
+    {"@type": "Place", "name": "Randstad"}
+  ]
 }
 </script>
 
@@ -48,6 +62,79 @@ This is a narrow but concrete thing a regional partner can point candidates towa
 ## What This Is Not
 
 This is not a claim that a job board can measure or reverse regional brain drain on its own, and it should not be presented to a board or a council as if it were. It is a narrow, concrete tool that addresses one identifiable part of the problem — visibility of existing local opportunity for AI/ML/Data roles specifically — alongside the harder, longer-term work of attracting and retaining employers that any regional strategy still has to do.
+
+## The Geography Behind the Founding Observation
+
+The pattern OnlyAIJobs was built around has a specific geography. The **Randstad** — the urban ring formed by Amsterdam, Rotterdam, The Hague and Utrecht and their surrounding municipalities — has long been the Netherlands' dominant labour market for business services, finance, government and much of the technology sector. **Noord-Brabant**, south of the major rivers, has a different economic structure: high-tech manufacturing around Eindhoven, logistics around Tilburg, Waalwijk and Venlo, food production in the northeast and a dense network of small and mid-sized industrial companies.
+
+For AI, machine learning and data graduates, that difference matters. The Randstad's employers are larger, more visible and more heavily advertised. Brabant's employers are frequently industrial or logistics firms whose data roles are titled as process, planning or quality positions. A graduate who searches for "AI" will therefore see a Randstad-weighted picture of the market, even when the region they studied in has relevant roles close by.
+
+## The Brabant Talent Pipeline, by Institution
+
+The province trains a large share of the country's technical and data talent, which is precisely why retention is a policy question here.
+
+| Institution | Location | Relevant programmes and output |
+|---|---|---|
+| **Eindhoven University of Technology (TU/e)** | Eindhoven | Computer science, data science, electrical and mechanical engineering, AI systems research |
+| **Tilburg University** | Tilburg | Data science, econometrics, cognitive science and artificial intelligence |
+| **Jheronimus Academy of Data Science (JADS)** | 's-Hertogenbosch | Joint TU/e–Tilburg University data science programmes with a business focus |
+| **Fontys University of Applied Sciences** | Eindhoven, Tilburg, Venlo and other locations | Applied ICT, AI and data programmes with extensive internship networks |
+| **Avans University of Applied Sciences** | Breda, 's-Hertogenbosch and other locations | Applied informatics and engineering |
+| **Breda University of Applied Sciences (BUas)** | Breda | Games, media, logistics, applied data science and AI |
+
+Every graduating cohort from these institutions faces the same decision: search regionally, or default to the Randstad. The retention question is essentially whether the region's own employers are visible at that moment.
+
+## The Regional Organisations Already Working on This
+
+Several Brabant organisations already have a mandate that overlaps with talent visibility.
+
+**Province of Noord-Brabant.** The provincial government sets economic and talent policy for the region and funds programmes around innovation, education and the labour market.
+
+**Brainport Development.** The economic development organisation for the Eindhoven region coordinates cooperation between companies, knowledge institutions and government, and works on talent attraction and retention for the high-tech ecosystem.
+
+**Brabantse Ontwikkelings Maatschappij (BOM).** The provincial development company invests in and supports innovative companies across Brabant, which gives it relationships with exactly the kinds of growing firms whose vacancies graduates do not see.
+
+**Midpoint Brabant.** The regional cooperation for Midden-Brabant, around Tilburg, connects government, education and business in a region with a strong logistics and services profile.
+
+None of these organisations needs a new programme to act on visibility. Each already has employer relationships, communication channels and a reason to care whether graduates stay.
+
+## Data a Region Can Use to Test the Visibility Hypothesis
+
+This article is careful to treat the "graduates leave because of visibility" pattern as a hypothesis rather than a statistic. Regions can test it with data sources that already exist.
+
+| Source | What it can show | How it relates to visibility |
+|---|---|---|
+| **Nationale Alumni Enquête**, coordinated by the **Research Centre for Education and the Labour Market (ROA)** | Labour-market outcomes of recent higher-education graduates | Where graduates work after studying, by field of study |
+| **Statistics Netherlands (CBS)** | Statistics on population movements, commuting and regional employment | Whether young, highly educated residents move out of the region |
+| **Institutional alumni data** | Employers and locations of alumni from specific programmes | Programme-level evidence for AI, data science and computing graduates |
+| **Graduate surveys at the moment of job search** | Which employers students know and where they plan to search | The most direct measure of visibility itself |
+| **Address-level vacancy data** | Which AI, ML and data vacancies exist within a given radius | The supply side graduates could have seen |
+
+The strongest test combines the last two: if graduates can name few regional AI employers while address-level data shows relevant vacancies nearby, the visibility gap is real and measurable. If both show little local opportunity, the region has an employer problem, not a visibility problem — and needs a different response.
+
+## A Practical Indicator Set for a Retention Pilot
+
+| Indicator | Measured by | Frequency |
+|---|---|---|
+| Visible regional AI, ML and data vacancies | Count of address-level listings within the pilot radius | Monthly |
+| Participating employers | Employers that made at least one vacancy visible | Quarterly |
+| Graduate awareness | Short survey among final-year students on regional employers they know | Once per cohort |
+| Regional applications | Applications from pilot-institution graduates to regional employers, reported by employers | Quarterly |
+| Regional placements | Graduates hired by regional employers within twelve months of graduation | Annually |
+
+Reporting these indicators honestly, including when results are modest, is what turns a job board from a marketing claim into a useful input for regional policy.
+
+## The Same Pattern Outside Brabant
+
+Noord-Brabant is where OnlyAIJobs' founding observation comes from, but the underlying dynamic is not unique to it. Groningen and the wider north face a similar question about whether graduates of the University of Groningen and Hanze stay in the region. Twente asks it about University of Twente and Saxion graduates, and Limburg about graduates of Maastricht University and Zuyd. In each case a strong regional university, a dispersed set of industrial and service employers, and a gravitational pull towards the Randstad combine in the same way. The indicators and data sources described above transfer directly: any region with a university, a set of employers doing AI-adjacent work and a development agency can test whether its retention problem is one of opportunity or of visibility.
+
+## Key Takeaways
+
+- The founding observation concerns Brabant graduates moving to the Randstad partly because regional employers are less visible.
+- TU/e, Tilburg University, JADS, Fontys, Avans and BUas make Brabant a major producer of AI and data talent.
+- The Province of Noord-Brabant, Brainport Development, the BOM and Midpoint Brabant already have mandates and relationships relevant to visibility.
+- ROA's Nationale Alumni Enquête, CBS statistics, alumni data, graduate surveys and address-level vacancy data can test whether the gap is visibility or opportunity.
+- A small indicator set — visible vacancies, participating employers, awareness, applications and placements — makes a retention pilot measurable.
 
 ## Where to Start
 

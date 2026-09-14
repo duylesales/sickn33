@@ -17,7 +17,20 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-25",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-engineer-vs-machine-learning-engineer-titles"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-engineer-vs-machine-learning-engineer-titles"},
+  "inLanguage": "en",
+  "about": [{"@type": "Occupation", "name": "AI Engineer"}, {"@type": "Occupation", "name": "Machine Learning Engineer"}],
+  "mentions": [
+    {"@type": "Thing", "name": "Retrieval-augmented generation (RAG)"},
+    {"@type": "Thing", "name": "LoRA fine-tuning"},
+    {"@type": "SoftwareApplication", "name": "PyTorch"},
+    {"@type": "SoftwareApplication", "name": "Hugging Face Transformers"},
+    {"@type": "Organization", "name": "Mistral AI"},
+    {"@type": "Thing", "name": "GPT-NL"},
+    {"@type": "ResearchOrganization", "name": "TNO"},
+    {"@type": "Organization", "name": "SURF"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"}
+  ]
 }
 </script>
 
@@ -30,12 +43,6 @@ At companies that do draw a line, "AI Engineer" more often leans toward integrat
 ## Why the Underlying Skills Overlap More Than the Titles Suggest
 
 Both roles typically require comfort with production systems, data pipelines, and evaluation methodology. Both increasingly touch large language models in some form. The genuinely distinguishing question is less "which title" and more "does this role build models from your own data, integrate pre-built ones, or some mix of both" — a question the job description usually answers more reliably than the title does.
-
-## Where to Start
-
-Don't filter out a posting because of its title alone. Read the actual day-to-day responsibilities, and ask directly in a first conversation whether the role leans toward building custom models or integrating existing ones — the answer matters more than which of the two titles is printed at the top.
-
-Browse current AI Engineer, Machine Learning Engineer and related roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Concrete Set of Questions to Resolve the Ambiguity
 
@@ -77,6 +84,62 @@ Choosing to specialize primarily in integration-layer work versus model-training
 ## Why Employers Are Increasingly Valuing Comfort With Both Layers
 
 As the AI industry matures, an increasing number of roles genuinely require comfort with both the integration layer and the model layer simultaneously — building a product feature that combines a fine-tuned custom component with an integrated foundation-model component is an increasingly common pattern, not an edge case. Candidates who've deliberately built experience across both layers, even if not equally deep in each, are positioning themselves well for this convergence, while candidates who've specialized narrowly in only one layer may find their skill set increasingly represents only half of what a growing share of postings actually require.
+
+## The Two Skill Stacks, Side by Side
+
+When a Dutch employer does draw a line between the two titles, the tools and concepts in the vacancy usually reveal which side of it the role sits on.
+
+| Area | Typical "AI Engineer" emphasis | Typical "ML Engineer" emphasis |
+|---|---|---|
+| **Models** | Foundation models via APIs or hosted open-weight models | Custom models trained on proprietary data |
+| **Core techniques** | Retrieval-augmented generation (RAG), prompt and context design, tool use and agents | Feature engineering, supervised learning, fine-tuning, including parameter-efficient methods such as LoRA |
+| **Frameworks** | LLM orchestration frameworks, vector databases, API gateways | PyTorch, scikit-learn, Hugging Face Transformers, gradient boosting libraries |
+| **Evaluation** | Output quality, hallucination and groundedness checks, human review, guardrails | Offline metrics, validation strategies, drift and performance monitoring |
+| **Data work** | Document ingestion, chunking, embeddings, access control on sources | Training datasets, labelling, feature pipelines |
+| **Cost drivers** | Tokens, latency and API pricing | Compute for training and serving |
+| **Typical products** | Assistants, search, document processing, workflow automation | Forecasting, ranking, classification, fraud detection, computer vision |
+
+A posting that lists vector databases and evaluation of LLM outputs is almost certainly the first kind of role, whatever it is called. A posting that lists feature stores, training pipelines and model validation is almost certainly the second.
+
+## The European and Dutch Context for Foundation-Model Work
+
+Two factors make the AI Engineer side of this distinction look slightly different in the Netherlands than in the United States.
+
+**Data residency and supplier choice.** Dutch employers in finance, healthcare and the public sector often require that data stays within the EU. That influences which foundation-model providers and hosting options they can use: EU-hosted cloud services, European model providers such as **Mistral AI**, or open-weight models run on the organisation's own infrastructure. AI Engineers in these organisations therefore spend more time on hosting, access control and data protection than a quick prototype would suggest.
+
+**Dutch-language models.** Many Dutch applications need to handle Dutch text well. **GPT-NL**, a Dutch initiative involving **TNO**, the Netherlands Forensic Institute and **SURF**, aims to develop an open, transparent Dutch language model built with attention to data sovereignty and copyright. For engineers working on Dutch-language applications, evaluating model performance in Dutch — not just English — is a practical part of the job.
+
+**The AI Act and general-purpose AI.** The **EU AI Act** introduced obligations for providers of general-purpose AI models from August 2025. Most Dutch employers integrating foundation models are downstream users rather than model providers, but organisations that substantially modify models, or build systems that fall into high-risk categories, take on documentation and risk-management responsibilities. AI Engineers are increasingly expected to understand where their system sits in that framework.
+
+## How Interviews Differ Between the Two Roles
+
+Because the underlying work differs, so do interview processes, even when the titles are used interchangeably.
+
+**Integration-leaning roles** often include a practical exercise such as building a small retrieval pipeline over a set of documents, designing an evaluation approach for a generative feature, or discussing how to prevent sensitive data from leaking through a model's outputs. System design questions focus on latency, cost and reliability of calls to external or hosted models.
+
+**Model-building roles** more often include a modelling case — for example choosing a validation strategy for time-dependent data, diagnosing a model that performs well offline but poorly in production, or discussing trade-offs between model complexity and interpretability. Coding exercises tend to involve data manipulation and training code.
+
+**Both** increasingly include questions about monitoring, failure modes and responsible use. If you are unsure which kind of role you are interviewing for, ask the recruiter which type of technical assessment to expect — the answer usually settles the question.
+
+## A Short Self-Assessment
+
+1. Do you enjoy designing systems around models you did not train, and optimising for cost, latency and output quality? You will likely enjoy integration-leaning AI Engineer roles.
+2. Do you enjoy working with training data, experimentation and model behaviour at the level of weights and metrics? You will likely enjoy model-building ML Engineer roles.
+3. Do you want to stay adaptable as the boundary shifts? Build one project in each layer — for example a retrieval assistant over Dutch public documents and a custom forecasting model on open data — and be able to discuss both.
+
+## Key Takeaways
+
+- The distinction between AI Engineer and ML Engineer is real at some employers but inconsistent across the market.
+- The tool list reveals the role: vector databases and output evaluation point to integration; feature pipelines and training point to model building.
+- EU data residency, European model providers, Dutch-language requirements and initiatives such as GPT-NL shape foundation-model work in the Netherlands.
+- The AI Act adds responsibilities, especially for organisations that substantially modify models or build high-risk systems.
+- Ask which type of technical assessment to expect; it usually reveals the true nature of the role.
+
+## Where to Start
+
+Don't filter out a posting because of its title alone. Read the actual day-to-day responsibilities, and ask directly in a first conversation whether the role leans toward building custom models or integrating existing ones — the answer matters more than which of the two titles is printed at the top.
+
+Browse current AI Engineer, Machine Learning Engineer and related roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

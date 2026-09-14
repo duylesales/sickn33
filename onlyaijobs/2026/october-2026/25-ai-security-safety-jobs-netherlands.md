@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-10-25",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-security-safety-jobs-netherlands"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-security-safety-jobs-netherlands"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "AI security and safety careers"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "GovernmentOrganization", "name": "National Cyber Security Centre (NCSC-NL)"},
+    {"@type": "GovernmentOrganization", "name": "General Intelligence and Security Service (AIVD)"},
+    {"@type": "Organization", "name": "Hague Security Delta"},
+    {"@type": "ResearchOrganization", "name": "TNO"},
+    {"@type": "Thing", "name": "OWASP Top 10 for Large Language Model Applications"},
+    {"@type": "Thing", "name": "MITRE ATLAS"},
+    {"@type": "Thing", "name": "NIST AI 100-2 Adversarial Machine Learning taxonomy"},
+    {"@type": "Organization", "name": "ENISA"},
+    {"@type": "Legislation", "name": "EU Cyber Resilience Act"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ Building a model and figuring out how it can be attacked or how it fails are two
 ## Why This Category Is Small but Growing
 
 Most organizations build models before they think seriously about how those models could be attacked or misused — security work tends to follow adoption rather than lead it, which is part of why this category is still small relative to general ML engineering, even as underlying demand grows with broader AI deployment.
-
-## Where to Start
-
-If you have a background in traditional cybersecurity or adversarial machine learning, this category rewards that combination specifically — search by concept (adversarial, red-teaming, robustness) rather than a single standard title.
-
-Browse current AI, machine learning and security-adjacent data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Deeper Look at the Three Attack Surfaces This Work Addresses
 
@@ -123,6 +131,49 @@ One characteristic distinguishes this specialisation from most others covered on
 Techniques for finding weaknesses in AI systems are equally applicable to defending them and to attacking them, which places genuine ethical weight on how practitioners conduct themselves. The norms that have developed in conventional security — testing only with authorisation, disclosing findings responsibly to those able to fix them, avoiding harm to users of the systems being examined — carry over directly and are taken as seriously here.
 
 For candidates entering the field, this matters practically as well as ethically. Demonstrated understanding of and adherence to these norms is something hiring managers actively assess, and a candidate whose visible work suggests carelessness about authorisation or disclosure will struggle regardless of technical capability.
+
+## Frameworks That Give This Emerging Field a Shared Language
+
+Because formal credentials are still scarce, practitioners rely on public frameworks to structure their work:
+
+- **OWASP Top 10 for Large Language Model Applications.** A widely used list of the most critical security risks for LLM-based applications, including prompt injection, insecure output handling and sensitive information disclosure.
+- **MITRE ATLAS.** A knowledge base of adversary tactics and techniques against AI systems, modelled on the well-known MITRE ATT&CK framework.
+- **NIST AI 100-2.** A taxonomy and terminology of adversarial machine learning attacks and mitigations published by the US National Institute of Standards and Technology.
+- **ENISA publications.** The EU Agency for Cybersecurity has published reports on AI threats and on securing machine learning algorithms.
+
+Being able to map a test plan to these frameworks is one of the fastest ways to show credibility in interviews.
+
+## Dutch Organisations Shaping AI Security
+
+**National Cyber Security Centre (NCSC-NL).** The national centre publishes guidance and threat assessments and works with vital sectors on cybersecurity, increasingly including AI-related risks.
+
+**General Intelligence and Security Service (AIVD).** The Dutch intelligence service has published guidance for organisations on developing and deploying AI systems securely, highlighting threats such as data poisoning, input manipulation and model theft.
+
+**Hague Security Delta.** The Dutch security cluster, headquartered in The Hague, connects companies, government and knowledge institutions working on cybersecurity and security innovation.
+
+**TNO.** Carries out applied research into cybersecurity and trustworthy AI for government and industry.
+
+## Regulation That Creates Demand
+
+- **EU Artificial Intelligence Act.** Requires high-risk AI systems to achieve an appropriate level of accuracy, robustness and cybersecurity, including resilience against attempts to manipulate training data or inputs. Providers of general-purpose AI models with systemic risk must carry out adversarial testing.
+- **EU Cyber Resilience Act.** Introduces cybersecurity requirements for products with digital elements, including software, throughout their life cycle.
+- **NIS2 Directive.** Raises cybersecurity obligations for essential and important entities, whose AI systems are part of their attack surface.
+
+Together, these rules turn AI security from a research interest into a compliance need, which is why this small category is expected to keep growing.
+
+## Key Takeaways
+
+- AI security and safety focus on how models fail or get attacked — a discipline distinct from building models.
+- OWASP's LLM Top 10, MITRE ATLAS, NIST AI 100-2 and ENISA reports provide a shared vocabulary in a field without established credentials.
+- NCSC-NL, the AIVD, Hague Security Delta and TNO shape the Dutch AI security landscape.
+- The AI Act's robustness and cybersecurity requirements, the Cyber Resilience Act and NIS2 create structural demand.
+- Being early in this specialisation is an advantage, provided you combine security skills with a strong professional ethic.
+
+## Where to Start
+
+If you have a background in traditional cybersecurity or adversarial machine learning, this category rewards that combination specifically — search by concept (adversarial, red-teaming, robustness) rather than a single standard title.
+
+Browse current AI, machine learning and security-adjacent data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

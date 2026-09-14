@@ -1,11 +1,11 @@
-Een senior AI-kandidaat heeft al te veel vacatureteksten gelezen die veel beloven en weinig concreets zeggen. Die ervaring maakt hen sceptisch — en ze screenen een tekst anders dan een junior.
+💡 A senior AI candidate has already read too many job ads that promise a lot and say little that's concrete. That experience makes them sceptical — and they screen a text differently from a junior.
 
-Wat werkt: een concreet technisch probleem in plaats van een missieverklaring ("we hebben een model dat X doet en worstelt met Y" i.p.v. "we willen AI inzetten om te innoveren"). Eerlijkheid over technische schuld — het niet noemen ervan wekt wantrouwen, niet vertrouwen. En laat een technisch teamlid meeschrijven aan de tekst.
+🛡️ What works: a concrete technical problem instead of a mission statement ("we have a model that does X and struggles with Y" instead of "we want to use AI to innovate"). Honesty about technical debt — leaving it out creates distrust, not trust. And have a technical team member co-write the text.
 
-Generieke taal schrikt senioren sneller af dan junioren.
+✅ Generic language puts seniors off faster than juniors.
 
-Plaats je vacature — eerste plaatsing gratis: info@onlyaijobs.eu
+📢 Post your vacancy — first listing free: info@onlyaijobs.eu
 
-Lees het volledige verhaal: https://onlyaijobs.eu/blog/wat-maakt-een-ai-vacature-serieus-voor-senioren
+📖 Read the full story: https://onlyaijobs.eu/blog/what-makes-ai-vacancy-credible-to-seniors
 
-#OnlyAIJobs #Werving #SeniorTalent #Nederland
+#OnlyAIJobs #Recruitment #SeniorTalent #Netherlands

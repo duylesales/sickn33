@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-08",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-research-roles-netherlands"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-research-roles-netherlands"},
+  "inLanguage": "en",
+  "about": [{"@type": "Occupation", "name": "AI Research Scientist"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "ResearchOrganization", "name": "Innovation Center for Artificial Intelligence (ICAI)"},
+    {"@type": "ResearchOrganization", "name": "Centrum Wiskunde & Informatica (CWI)"},
+    {"@type": "ResearchOrganization", "name": "TNO"},
+    {"@type": "ResearchOrganization", "name": "Royal Netherlands Aerospace Centre (NLR)"},
+    {"@type": "ResearchOrganization", "name": "ESA ESTEC"},
+    {"@type": "Organization", "name": "ELLIS"},
+    {"@type": "GovernmentOrganization", "name": "Dutch Research Council (NWO)"},
+    {"@type": "Organization", "name": "AiNed"},
+    {"@type": "Organization", "name": "SURF"},
+    {"@type": "Organization", "name": "AcademicTransfer"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ Product-company hiring is driven by roadmap and headcount planning: a team needs
 ## What This Means for a Job Search
 
 If you're specifically looking for research work, treat scarcity on a job board as a signal to widen your search method, not your ambition — check institutional pages directly, and treat a specialist board's research-category listings as a supplement to, not a replacement for, staying connected to the relevant academic and professional networks.
-
-## Where to Start
-
-Filter by the research category on a specialist board to catch postings as they appear, but don't rely on it exclusively — for AI research specifically, direct outreach and network visibility still matter more than they do for product engineering roles.
-
-Browse current AI research, machine learning and data vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## The Entity Landscape of Dutch AI Research
 
@@ -81,6 +89,65 @@ Candidates without a traditional academic pipeline into research — for instanc
 ## What Long-Term Financial Planning Looks Like in This Career Path
 
 Because research funding cycles are inherently less predictable than a product company's roadmap-driven hiring, professionals building a career in this space benefit from financial planning that explicitly accounts for potential gaps between grant-funded positions — maintaining a larger financial buffer than might be typical advice for someone in a more stable product-company career track, and being realistic about the possibility of a multi-month gap between one grant-funded position ending and the next beginning. This isn't a reason to avoid this career path, but it is a practical planning consideration that's rarely discussed explicitly alongside the more commonly cited advice about building academic networks and staying visible within the relevant research community.
+
+## A Map of Dutch AI Research Employers, by Name
+
+The three categories above — universities, corporate labs and institutes — become far more searchable once you know the specific organisations in each.
+
+| Category | Organisations | What kind of research roles they offer |
+|---|---|---|
+| Research universities | University of Amsterdam, Vrije Universiteit Amsterdam, TU Delft, Eindhoven University of Technology, University of Twente, Utrecht University, Leiden University, Radboud University, University of Groningen, Maastricht University, Tilburg University | PhD positions, postdocs, assistant professorships, research engineers |
+| National research institutes | **Centrum Wiskunde & Informatica (CWI)** in Amsterdam | Foundational machine learning, algorithms, cryptography, scientific computing |
+| Applied research organisations | **TNO**, **Royal Netherlands Aerospace Centre (NLR)** | Applied AI for defence, mobility, energy, aerospace and industry |
+| International research centres | **ESA ESTEC** in Noordwijk, the European Space Agency's largest establishment | Earth observation data, autonomy, space systems engineering |
+| Public-private lab networks | **Innovation Center for Artificial Intelligence (ICAI)** | Industry-funded PhD positions in joint labs between universities and companies |
+| Corporate research | Research departments of high-tech and industrial companies, especially around High Tech Campus Eindhoven | Applied research tied to products: imaging, semiconductors, healthcare, sensing |
+| European networks | **ELLIS** units, including ELLIS Unit Amsterdam | Excellence-focused PhD and postdoc programmes with European mobility |
+
+**ICAI deserves special attention.** It is a Dutch network of AI labs in which universities collaborate with companies, public organisations and research institutes, typically structured around a cohort of PhD candidates working on a shared theme. For candidates who want research depth with a direct line to real-world problems, ICAI labs are one of the most distinctive entry points in the country — and their vacancies often appear in bursts when a new lab is launched.
+
+## How Dutch Research Funding Shapes When Roles Appear
+
+The grant life cycle described above has concrete names in the Netherlands.
+
+**NWO.** The **Dutch Research Council** is the main national funder of academic research. Its *Talent Programme* — known by its three stages **Veni**, **Vidi** and **Vici** — funds individual researchers at different career stages and frequently creates PhD and postdoc positions within the awarded projects. NWO's thematic and cooperation programmes add further positions, often with industry partners.
+
+**AiNed.** A national AI programme funded through the Dutch National Growth Fund (*Nationaal Groeifonds*), aimed at accelerating the development and application of AI in the Netherlands. Programmes like this create waves of research and innovation positions over several years.
+
+**European funding.** The European Research Council (ERC) funds individual research excellence, and the Marie Skłodowska-Curie Actions (MSCA) fund doctoral networks and postdoctoral fellowships with explicit international mobility requirements. MSCA positions are among the few research roles designed specifically for candidates moving between countries.
+
+**Compute infrastructure.** **SURF**, the collaborative organisation for IT in Dutch education and research, operates the national supercomputer Snellius and other research computing services. Availability of this kind of shared infrastructure is part of why Dutch academic groups can pursue computationally demanding AI research — and it is worth asking about compute access when evaluating a position.
+
+## Academic Career Stages and Employment Terms
+
+Dutch academic job titles do not map neatly onto international equivalents, which makes vacancy texts harder to read for international candidates.
+
+| Dutch title | Common English equivalent | Typical terms |
+|---|---|---|
+| Promovendus | PhD candidate | Usually a salaried, fixed-term employee position, commonly around four years |
+| Postdoc | Postdoctoral researcher | Fixed-term, project-funded |
+| Universitair docent (UD) | Assistant professor | Often a tenure-track position with teaching duties |
+| Universitair hoofddocent (UHD) | Associate professor | Permanent, with research leadership |
+| Hoogleraar | Full professor | Chair holder, group leader |
+| Research engineer / wetenschappelijk programmeur | Research software engineer | Supports research groups with software, data and infrastructure |
+
+University positions fall under the **CAO Nederlandse Universiteiten**, with published salary scales. Research software engineering roles are an increasingly important route for experienced industry engineers into academia: they value production-quality engineering, and they are less dependent on publication record than postdoc positions.
+
+**Where research vacancies are published.** Dutch academic positions appear on institutional websites and on **AcademicTransfer**, the national platform for academic vacancies; European research positions appear on EURAXESS. Community events such as the **BNAIC/BeNeLearn** conference, which brings together the AI and machine learning research communities of the Benelux, are a practical way to build the network visibility this article recommends.
+
+## Key Takeaways
+
+- Dutch AI research employers include research universities, CWI, TNO, NLR, ESA ESTEC, corporate research groups and ICAI's public-private labs.
+- Hiring follows funding: NWO's Veni, Vidi and Vici, AiNed, the ERC and MSCA programmes create positions in waves.
+- Dutch PhD candidates are usually salaried employees, and university positions follow CAO NU salary scales.
+- Research software engineering is a growing route into academia for experienced industry engineers.
+- Combine institutional sites, AcademicTransfer and EURAXESS with a specialist board and network events such as BNAIC/BeNeLearn.
+
+## Where to Start
+
+Filter by the research category on a specialist board to catch postings as they appear, but don't rely on it exclusively — for AI research specifically, direct outreach and network visibility still matter more than they do for product engineering roles.
+
+Browse current AI research, machine learning and data vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

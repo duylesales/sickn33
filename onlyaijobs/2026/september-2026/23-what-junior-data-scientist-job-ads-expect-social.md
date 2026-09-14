@@ -1,9 +1,9 @@
-Een "junior data scientist"-vacature somt vaak twaalf tools op en "affiniteit met machine learning, statistiek en business". Lees je dat letterlijk, dan voldoet vrijwel niemand — ook geen senior.
+💡 A "junior data scientist" job ad often lists twelve tools and "an affinity with machine learning, statistics and business." Read literally, almost nobody qualifies — not even a senior.
 
-Wat werkgevers in de praktijk zwaarder wegen: kunnen redeneren over een probleem, niet alleen een tool gebruiken. Communicatie over resultaten aan iemand zonder technische achtergrond. Bereidheid om te leren binnen het team.
+👥 What employers weigh more heavily in practice: reasoning about a problem, not just using a tool. Explaining results to someone without a technical background. Willingness to learn within the team.
 
-Laat je niet weerhouden door een vacature waar je "maar" zes van de twaalf tools beheerst.
+✅ Don't be put off by a vacancy where you "only" master six of the twelve tools.
 
-Lees het volledige verhaal en bekijk junior vacatures: https://onlyaijobs.eu/blog/wat-verwachten-junior-data-scientist-vacatures
+📖 Read the full story and browse junior vacancies: https://onlyaijobs.eu/blog/what-junior-data-scientist-job-ads-expect
 
-#OnlyAIJobs #DataScience #JuniorVacature #Carrièreadvies
+#OnlyAIJobs #DataScience #JuniorJobs #CareerAdvice

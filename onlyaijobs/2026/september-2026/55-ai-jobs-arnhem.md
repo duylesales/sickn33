@@ -1,108 +1,197 @@
 ---
-Title: "AI-vacatures in Arnhem: energie, mode-technologie en een stad tussen twee werelden"
-Keywords: ai vacatures arnhem, data scientist arnhem, machine learning gelderland, energie data nederland, OnlyAIJobs
+Title: "AI Jobs in Arnhem: Energy, Fashion Technology and a City Between Two Worlds"
+Keywords: ai jobs arnhem, data scientist arnhem, machine learning gelderland, energy data netherlands, OnlyAIJobs
 Buyer Stage: Consideration / Job Search
-Target Persona: B (Ervaren AI/ML-engineer)
+Target Persona: B (Experienced AI or ML engineer)
 Content Format: Regional Market Analysis
 ---
 
-# AI-vacatures in Arnhem: energie, mode-technologie en een stad tussen twee werelden
+# AI Jobs in Arnhem: Energy, Fashion Technology and a City Between Two Worlds
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-vacatures in Arnhem: energie, mode-technologie en een stad tussen twee werelden",
-  "description": "Arnhem combineert een energiesector in transitie met een kleinere creatieve mode-technologiescene, wat een AI-arbeidsmarkt oplevert die niet in één simpel label past.",
+  "headline": "AI Jobs in Arnhem: Energy, Fashion Technology and a City Between Two Worlds",
+  "description": "Arnhem combines an energy sector in transition with a smaller creative fashion technology scene, producing an AI labour market that doesn't fit one simple label.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-16",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-vacatures-arnhem"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-arnhem"},
+  "inLanguage": "en",
+  "about": [{"@type": "Place", "name": "Arnhem"}, {"@type": "Place", "name": "Gelderland"}],
+  "mentions": [
+    {"@type": "Organization", "name": "TenneT"},
+    {"@type": "Organization", "name": "Alliander"},
+    {"@type": "Place", "name": "Industriepark Kleefse Waard (IPKW)"},
+    {"@type": "CollegeOrUniversity", "name": "ArtEZ University of the Arts"},
+    {"@type": "CollegeOrUniversity", "name": "HAN University of Applied Sciences"},
+    {"@type": "Hospital", "name": "Rijnstate"},
+    {"@type": "Organization", "name": "Oost NL"},
+    {"@type": "GovernmentOrganization", "name": "Netherlands Authority for Consumers and Markets (ACM)"},
+    {"@type": "Thing", "name": "Grid congestion"}
+  ]
 }
 </script>
 
-Arnhem laat zich niet makkelijk in één economische categorie plaatsen, en dat maakt de lokale AI-arbeidsmarkt net zo divers: enerzijds energiebedrijven die middenin de transitie naar duurzame opwekking en netbeheer zitten, anderzijds een kleinere maar reële mode- en creatieve-technologiescene die de stad al decennia kenmerkt.
+Arnhem doesn't fit easily into a single economic category, and that makes its local AI labour market just as diverse: on one side, energy companies in the middle of the transition to renewable generation and grid management; on the other, a smaller but real fashion and creative technology scene that has characterised the city for decades.
 
-## Twee heel verschillende soorten datawerk
+## Two Very Different Kinds of Data Work
 
-**Energie en netbeheer.** Voorspelling van energievraag, optimalisatie van netbelasting en risicoanalyse rond de transitie naar duurzame opwekking zijn reële, technisch veeleisende toepassingen van machine learning — zelden onder die naam geadverteerd, vaker als "data-analist energietransitie".
+**Energy and grid management.** Forecasting energy demand, optimising grid load and analysing risk around the transition to renewable generation are real, technically demanding applications of machine learning — rarely advertised under that name, more often as "energy transition data analyst."
 
-**Mode- en creatieve technologie.** De mode-georiënteerde opleidingstraditie van de stad levert een kleinere stroom werk op rond productvisualisatie, trendvoorspelling en supply chain-data in de mode-industrie — een niche die zelden op een algemeen vacatureplatform wordt herkend als datawerk.
+**Fashion and creative technology.** The city's fashion-oriented education tradition produces a smaller stream of work around product visualisation, trend forecasting and supply chain data in the fashion industry — a niche rarely recognised as data work on a general job platform.
 
-## Waarom dit zelden als AI-werk wordt herkend
+## Why This Is Rarely Recognised as AI Work
 
-Beide segmenten worden getiteld door afdelingen die het werk niet als "AI-functie" zien — een energiebedrijf noemt het "data-analist" of "planner", een modebedrijf noemt het "trendanalist" of "supply chain planner". Filteren op categorie is de enige manier om beide zichtbaar te maken.
+Both segments are titled by departments that don't see the work as an "AI role" — an energy company calls it "data analyst" or "planner," a fashion company calls it "trend analyst" or "supply chain planner." Filtering by category is the only way to make both visible.
 
-## Waar te beginnen
+## Why These Two Segments Are Rarely Shown Side by Side on the Same Job Site
 
-Als je specifiek geïnteresseerd bent in energie-gerelateerd modelleerwerk of in de kleinere mode-technologieniche, kijk dan gericht naar wat er in en rond Arnhem openstaat, in plaats van te vertrouwen op een generieke landelijke zoekopdracht.
+Energy and fashion are such different worlds that even a specialist platform rarely mentions them in the same breath — and yet they exist literally in the same city, which makes Arnhem an unusually varied labour market for anyone willing to look beyond one sector.
 
-Bekijk actuele AI-, machine learning- en datavacatures in en rond Arnhem op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
+## Comparison Table: Energy vs. Fashion Technology in Arnhem
 
-## Waarom deze twee segmenten zelden op dezelfde vacaturesite naast elkaar worden gezet
-
-Energie en mode zijn zulke verschillende werelden dat zelfs een gespecialiseerd platform ze zelden in dezelfde adem noemt — en toch bestaan ze letterlijk in dezelfde stad, wat Arnhem tot een ongebruikelijk gevarieerde arbeidsmarkt maakt voor wie bereid is verder te kijken dan één sector.
-
-## Vergelijkingstabel: energie vs. mode-technologie in Arnhem
-
-| Aspect | Energie en netbeheer | Mode- en creatieve technologie |
+| Aspect | Energy and grid management | Fashion and creative technology |
 |---|---|---|
-| Kernvaardigheid | Tijdreeksvoorspelling, netoptimalisatie | Trendvoorspelling, visualisatie |
-| Foutmarge | Operationeel, soms veiligheidskritisch | Commercieel, esthetisch |
-| Typische werkgeversgrootte | Middelgroot tot groot | Klein tot middelgroot |
-| Zichtbaarheid op vacatureplatforms | Laag | Zeer laag |
+| Core skill | Time series forecasting, grid optimisation | Trend forecasting, visualisation |
+| Margin for error | Operational, sometimes safety-critical | Commercial, aesthetic |
+| Typical employer size | Medium to large | Small to medium |
+| Visibility on job platforms | Low | Very low |
 
-## Wat dit betekent voor een gerichte zoektocht
+## What This Means for a Targeted Search
 
-Bepaal eerst welk van de twee segmenten je interesseert, en zoek vervolgens gericht binnen dat segment — een generieke zoekopdracht naar "AI Arnhem" levert waarschijnlijk resultaten op uit geen van beide, simpelweg omdat beide segmenten hun eigen, niet-AI-vocabulaire gebruiken. Filteren op categorie in plaats van op stad alleen is hier essentieel, niet optioneel.
+First decide which of the two segments interests you, then search specifically within that segment — a generic search for "AI Arnhem" probably returns results from neither, simply because both segments use their own, non-AI vocabulary. Filtering by category rather than by city alone is essential here, not optional.
 
-## Een concreet scenario van hoe deze twee werelden elkaar zelden raken
+## A Concrete Scenario of How These Two Worlds Rarely Meet
 
-Een data scientist met ervaring in de energiesector solliciteert nooit bij een mode-technologiebedrijf, en andersom — niet omdat de onderliggende vaardigheden niet zouden overlappen (beide vereisen tijdreeksanalyse en voorspellend modelleerwerk), maar omdat de sector-specifieke vocabulaire en netwerken van beide werelden elkaar nauwelijks kruisen. Een kandidaat die bereid is om buiten de eigen sector-bubbel te kijken, kan hierdoor toegang krijgen tot een deel van de arbeidsmarkt dat de meeste andere kandidaten uit dezelfde technische achtergrond nooit overwegen.
+A data scientist with experience in the energy sector never applies to a fashion technology company, and vice versa — not because the underlying skills don't overlap (both require time series analysis and predictive modelling), but because the sector-specific vocabulary and networks of the two worlds barely cross. A candidate willing to look outside their own sector bubble can therefore gain access to a part of the labour market that most other candidates with the same technical background never consider.
 
-## Een veelvoorkomend misverstand over sector-specifieke ervaring
+## A Common Misconception About Sector-Specific Experience
 
-Kandidaten nemen vaak aan dat ervaring in bijvoorbeeld de energiesector hen ongeschikt maakt voor een rol in mode-technologie, of andersom. In werkelijkheid is de onderliggende technische vaardigheid — tijdreeksvoorspelling, patroonherkenning, statistische modellering — grotendeels overdraagbaar tussen deze twee sectoren; wat ontbreekt is specifieke domeinkennis, die in de praktijk sneller op te bouwen is dan de kernvaardigheden zelf.
+Candidates often assume that experience in, for example, the energy sector makes them unsuitable for a role in fashion technology, or the other way round. In reality, the underlying technical skill — time series forecasting, pattern recognition, statistical modelling — is largely transferable between these two sectors; what is missing is specific domain knowledge, which in practice can be built up faster than the core skills themselves.
 
-## Waarom Arnhem's diversiteit een onderbenutte troef is voor flexibele kandidaten
+## Why Arnhem's Diversity Is an Underused Asset for Flexible Candidates
 
-Voor een kandidaat die niet vastzit aan één specifieke sector, biedt Arnhem's ongebruikelijke combinatie van energie en mode-technologie een zeldzame mogelijkheid om binnen dezelfde regionale arbeidsmarkt van sector te wisselen zonder te hoeven verhuizen — een flexibiliteit die de meeste andere Nederlandse steden, met hun meer eenzijdige economische profiel, niet bieden.
+For a candidate not tied to one specific sector, Arnhem's unusual combination of energy and fashion technology offers a rare chance to switch sectors within the same regional labour market without having to move — a flexibility most other Dutch cities, with their more one-sided economic profiles, don't offer.
 
-## Hoe je bepaalt welk van de twee segmenten beter bij je past
+## How to Decide Which of the Two Segments Suits You Better
 
-Als je twijfelt tussen de energiekant en de mode-technologiekant van Arnhem's arbeidsmarkt, is een nuttige vraag: haal je meer voldoening uit werk met directe, meetbare operationele impact (energie en netbeheer) of uit werk met een creatieve, esthetische component (mode-technologie)? Beide vereisen vergelijkbare technische vaardigheden, maar de dagelijkse voldoening die je eruit haalt, hangt sterk af van welk soort probleem je intrinsiek motiveert — een vraag die belangrijker is voor je langetermijntevredenheid dan welk segment op dit moment toevallig meer vacatures heeft.
+If you are torn between the energy side and the fashion technology side of Arnhem's labour market, a useful question is: do you get more satisfaction from work with direct, measurable operational impact (energy and grid management) or from work with a creative, aesthetic component (fashion technology)? Both require comparable technical skills, but the daily satisfaction you get from them depends heavily on which kind of problem motivates you intrinsically — a question more important for your long-term satisfaction than which segment happens to have more vacancies right now.
 
-## Waarom deze combinatie in de toekomst mogelijk nog relevanter wordt
+## Why This Combination May Become Even More Relevant
 
-Naarmate de energietransitie in Nederland verder voortschrijdt, is de verwachting dat de vraag naar datawerk rond netbeheer en energieopslag structureel zal groeien, onafhankelijk van conjunctuurschommelingen in andere sectoren. Voor kandidaten die nu al interesse hebben in deze specifieke combinatie van vaardigheden, betekent dit dat vroege ervaring in deze regio een strategisch voordeel kan zijn voor een carrière die de komende jaren waarschijnlijk alleen maar relevanter wordt.
+As the energy transition in the Netherlands progresses, demand for data work around grid management and energy storage is expected to grow structurally, independent of economic fluctuations in other sectors. For candidates already interested in this particular combination of skills, early experience in this region can be a strategic advantage for a career that will probably only become more relevant in the coming years.
 
-## Veelgestelde vragen
+## Arnhem as Energy Capital: The Named Organisations
 
-### (Scenario: kandidaat die twijfelt of Arnhem een serieuze AI-markt heeft) Heeft Arnhem een serieuze AI-arbeidsmarkt, of is het te divers om als één markt te zien?
-Het is inderdaad divers — energie- en netbeheerbedrijven enerzijds, een kleinere mode- en creatieve-technologiescene anderzijds. Beide zijn reëel maar bedienen heel verschillende profielen.
+The energy sector in Arnhem is not an abstract category. The city is home to some of the most important organisations in the Dutch energy system.
 
-### (Scenario: kandidaat die geïnteresseerd is in energie-gerelateerd werk) Wat voor datawerk gebeurt er specifiek in de energiesector rond Arnhem?
-Voorspelling van energievraag, optimalisatie van netbelasting en risicoanalyse rond de duurzame energietransitie — technisch veeleisend werk, zelden geadverteerd onder de naam "AI".
+**TenneT.** The national operator of the high-voltage grid has its headquarters in Arnhem. TenneT is responsible for transporting electricity across the high-voltage grid in the Netherlands and a large part of Germany, and for keeping supply and demand in balance. Forecasting wind and solar supply, balancing, asset maintenance and planning grid expansions are intensive data and modelling challenges.
 
-### (Scenario: kandidaat die geïnteresseerd is in mode-technologie) Is er echt datawerk in de mode-industrie rond Arnhem?
-Ja, al is het een kleinere niche — productvisualisatie, trendvoorspelling en supply chain-data in de mode-industrie, zelden herkend als datawerk op een algemeen platform.
+**Alliander.** The grid operator behind Liander, among others, responsible for regional electricity and gas networks in large parts of Gelderland, North Holland, Flevoland and Friesland, is also based in Arnhem. Regional grid operators work with data on connections, consumption, outages and grid capacity.
 
-### (Scenario: kandidaat die niets vindt via een zoekmachine) Waarom vind ik dit soort vacatures niet als ik op "AI Arnhem" zoek?
-Omdat beide segmenten worden getiteld door afdelingen die het werk niet als AI-functie zien, met termen als "data-analist energietransitie" of "trendanalist" in plaats van AI-vocabulaire.
+**Industriepark Kleefse Waard (IPKW).** This business park in Arnhem, originally an industrial site, has developed into a cluster for energy and sustainability companies, with test and laboratory facilities. The former KEMA high-voltage laboratories in Arnhem are internationally known for testing grid components.
 
-### (Scenario: kandidaat die wil weten hoe te zoeken) Hoe zoek ik gericht naar dit soort werk in Arnhem?
-Filter op categorie in plaats van op functietitel, en kijk specifiek naar het segment dat je interesseert — energie of mode-technologie — in plaats van een brede, generieke zoekopdracht.
+**Oost NL.** The regional development agency for Gelderland and Overijssel supports innovation, including in energy, and is an entry point to smaller companies in the energy transition.
+
+## Grid Congestion: Why Energy Data Now Needs Scarce Talent
+
+The energy transition has created a concrete problem that greatly increases demand for data work: **grid congestion**. In large parts of the Netherlands, the electricity grid is full, so new large consumers and generators sometimes have to wait a long time for a connection or expansion.
+
+For data scientists and engineers, that means work on:
+
+- **Grid load forecasting** per grid section, hour and season, with more and more solar panels, heat pumps and charging points.
+- **Smarter use of existing capacity**, for example through flexible contracts and congestion management.
+- **Investment prioritisation**, to decide which grid expansions solve the biggest bottlenecks.
+- **Outage and maintenance prediction** for cables, transformers and substations.
+
+The **Netherlands Authority for Consumers and Markets (ACM)** is the Dutch energy market regulator and sets rules determining how grid operators allocate capacity. Anyone who understands how regulation, engineering and data come together has a clear advantage in this sector.
+
+## The Fashion and Creative Side by Name
+
+**ArtEZ University of the Arts.** Arnhem's fashion tradition is closely linked to ArtEZ's fashion programme, which enjoys international recognition and has produced designers active in the global fashion industry. A creative ecosystem of designers, studios and small fashion companies has grown up around the programme.
+
+**Data work in fashion.** In the fashion industry, it is about demand and trend forecasting, inventory and production planning, return prediction in e-commerce, visual search and recommender systems and — with sustainability in mind — reducing overproduction. That last application fits remarkably well with Arnhem's broader sustainability profile.
+
+## Education, Healthcare and Accessibility
+
+**HAN University of Applied Sciences.** With campuses in Arnhem and Nijmegen, HAN trains large numbers of ICT, engineering and healthcare professionals, and carries out applied research, including in energy and sustainability.
+
+**Rijnstate.** The large hospital in Arnhem adds a healthcare segment with data on capacity, quality and patient flows.
+
+| From Arnhem | Indicative train travel time | What it offers |
+|---|---|---|
+| Nijmegen | Around a quarter of an hour | Radboud University, Radboudumc, health data |
+| Ede-Wageningen | Around 15–20 minutes | Agrifood research and Foodvalley |
+| Utrecht | Around 35–40 minutes | Broad data market in finance, healthcare and government |
+| Germany | Direct ICE connection towards the Ruhr area | Cross-border energy and industrial market |
+
+Arnhem, Nijmegen and Ede together form a labour market with energy, health, agrifood and creative industries within half an hour of each other. Check current travel times in the NS journey planner.
+
+## The German Dimension of Arnhem's Energy Market
+
+Arnhem is close to the German border and has a direct ICE connection towards the Ruhr area. For energy data work, that is more than a travel detail: besides the Dutch high-voltage grid, TenneT also manages a large part of the German grid, and the Dutch and German electricity systems are closely interconnected. Questions around cross-border flows, integrating offshore wind and coordination between national grid operators therefore come up daily. For a candidate who speaks German as well as English, or has experience with European energy markets, this opens doors that stay closed in other Dutch cities.
+
+## Job Titles and Skills to Look For in Arnhem
+
+Because almost none of these vacancies has "AI" in the title, it helps to know which names the work appears under and which skills employers expect.
+
+| Sector | Job titles you'll come across | Skills often asked for |
+|---|---|---|
+| High-voltage grid and system services | Grid management data scientist, system operations analyst, forecasting specialist | Time series models, Python, knowledge of electricity grids and balancing |
+| Regional grid operators | Grid analyst, data engineer, asset management specialist | Geodata and GIS, data quality, predictive maintenance |
+| Energy companies and installers | Energy transition data analyst, flexibility specialist | Consumption data, optimisation, energy market knowledge |
+| Fashion and e-commerce | Trend analyst, demand planner, returns analyst | Demand forecasting, image recognition, customer data |
+| Healthcare | BI specialist, healthcare data analyst | SQL, dashboards, capacity planning |
+
+**Screening for critical infrastructure.** Energy infrastructure counts as critical infrastructure. Employers in this sector may therefore ask for a Certificate of Conduct (VOG) or additional screening, and access to certain systems and data is strictly regulated. Factor that into the lead time of an application.
+
+**Domain knowledge can be learned, but not ignored.** Grid operators rarely look for candidates who already know everything about electricity grids. They do expect willingness to quickly master basic concepts such as grid capacity, peak load and congestion management. A candidate who can explain in an interview why a wrong load forecast has operational consequences makes an immediate difference.
+
+**Fashion speaks a different language.** In the fashion industry, the conversation is about collections, seasons, sizing and returns. Anyone who can translate models into less overproduction and fewer returns connects with both commercial goals and the sustainability ambitions the sector is increasingly held to.
+
+## Key Takeaways
+
+- Arnhem is an energy capital with the headquarters of TenneT and Alliander and the energy cluster at Industriepark Kleefse Waard.
+- Grid congestion makes forecasting, capacity management and maintenance prediction urgent data work; the ACM sets the rules.
+- The fashion tradition is linked to ArtEZ; data work in fashion revolves around demand, inventory, returns and sustainability.
+- HAN, Rijnstate and Oost NL complete the regional ecosystem.
+- Nijmegen, Ede-Wageningen and Utrecht are a short trip away; search by distance and category.
+
+## Where to Start
+
+If you are specifically interested in energy-related modelling work or in the smaller fashion technology niche, look specifically at what is open in and around Arnhem instead of relying on a generic national search.
+
+Browse current AI, machine learning and data jobs in and around Arnhem at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
+
+## Frequently Asked Questions
+
+### (Scenario: candidate unsure whether Arnhem has a serious AI market) Does Arnhem have a serious AI labour market, or is it too diverse to see as one market?
+It is indeed diverse — energy and grid management companies on one side, a smaller fashion and creative technology scene on the other. Both are real but serve very different profiles.
+
+### (Scenario: candidate interested in energy-related work) What kind of data work happens specifically in the energy sector around Arnhem?
+Forecasting energy demand, optimising grid load and analysing risk around the renewable energy transition — technically demanding work, rarely advertised under the name "AI."
+
+### (Scenario: candidate interested in fashion technology) Is there really data work in the fashion industry around Arnhem?
+Yes, although it is a smaller niche — product visualisation, trend forecasting and supply chain data in the fashion industry, rarely recognised as data work on a general platform.
+
+### (Scenario: candidate who finds nothing via a search engine) Why don't I find these vacancies when I search for "AI Arnhem"?
+Because both segments are titled by departments that don't see the work as an AI role, using terms like "energy transition data analyst" or "trend analyst" instead of AI vocabulary.
+
+### (Scenario: candidate who wants to know how to search) How do I search specifically for this kind of work in Arnhem?
+Filter by category rather than job title, and look specifically at the segment that interests you — energy or fashion technology — instead of a broad, generic search.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Heeft Arnhem een serieuze AI-arbeidsmarkt, of is het te divers om als één markt te zien?", "acceptedAnswer": {"@type": "Answer", "text": "Het is divers — energie- en netbeheerbedrijven enerzijds, een kleinere mode- en creatieve-technologiescene anderzijds. Beide zijn reëel."}},
-    {"@type": "Question", "name": "Wat voor datawerk gebeurt er specifiek in de energiesector rond Arnhem?", "acceptedAnswer": {"@type": "Answer", "text": "Voorspelling van energievraag, optimalisatie van netbelasting en risicoanalyse rond de duurzame energietransitie."}},
-    {"@type": "Question", "name": "Is er echt datawerk in de mode-industrie rond Arnhem?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, al is het een kleinere niche — productvisualisatie, trendvoorspelling en supply chain-data in de mode-industrie."}},
-    {"@type": "Question", "name": "Waarom vind ik dit soort vacatures niet als ik op \"AI Arnhem\" zoek?", "acceptedAnswer": {"@type": "Answer", "text": "Beide segmenten worden getiteld door afdelingen die het werk niet als AI-functie zien."}},
-    {"@type": "Question", "name": "Hoe zoek ik gericht naar dit soort werk in Arnhem?", "acceptedAnswer": {"@type": "Answer", "text": "Filter op categorie in plaats van op functietitel, en kijk specifiek naar het segment dat je interesseert."}}
+    {"@type": "Question", "name": "Does Arnhem have a serious AI labour market, or is it too diverse to see as one market?", "acceptedAnswer": {"@type": "Answer", "text": "It is diverse — energy and grid management companies on one side, a smaller fashion and creative technology scene on the other. Both are real."}},
+    {"@type": "Question", "name": "What kind of data work happens specifically in the energy sector around Arnhem?", "acceptedAnswer": {"@type": "Answer", "text": "Forecasting energy demand, optimising grid load and analysing risk around the renewable energy transition."}},
+    {"@type": "Question", "name": "Is there really data work in the fashion industry around Arnhem?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, although it is a smaller niche — product visualisation, trend forecasting and supply chain data in the fashion industry."}},
+    {"@type": "Question", "name": "Why don't I find these vacancies when I search for \"AI Arnhem\"?", "acceptedAnswer": {"@type": "Answer", "text": "Both segments are titled by departments that don't see the work as an AI role."}},
+    {"@type": "Question", "name": "How do I search specifically for this kind of work in Arnhem?", "acceptedAnswer": {"@type": "Answer", "text": "Filter by category rather than job title, and look specifically at the segment that interests you."}}
   ]
 }
 </script>

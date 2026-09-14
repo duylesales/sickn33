@@ -17,7 +17,18 @@ Content Format: Policy Brief
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-07",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/esg-commute-sustainability-case-local-hiring"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/esg-commute-sustainability-case-local-hiring"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Commuting emissions and local hiring in sustainability reporting"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Thing", "name": "GHG Protocol Scope 3 Category 7: Employee commuting"},
+    {"@type": "Legislation", "name": "Corporate Sustainability Reporting Directive (CSRD)"},
+    {"@type": "Thing", "name": "European Sustainability Reporting Standards (ESRS) E1"},
+    {"@type": "Legislation", "name": "Besluit CO2-reductie werkgebonden personenmobiliteit (WPM)"},
+    {"@type": "GovernmentOrganization", "name": "Netherlands Enterprise Agency (RVO)"},
+    {"@type": "WebSite", "name": "CO2emissiefactoren.nl"},
+    {"@type": "GovernmentOrganization", "name": "Netherlands Institute for Transport Policy Analysis (KiM)"}
+  ]
 }
 </script>
 
@@ -38,12 +49,6 @@ A candidate who doesn't know that a suitable role exists ten minutes from home m
 ## What This Is Not
 
 This is not a claim that job-board visibility meaningfully offsets a region's total commuting emissions on its own, and it shouldn't be presented as a headline sustainability initiative. It's a small, concrete, low-cost piece of a much larger picture that regional organizations are already working on.
-
-## Where to Start
-
-If your organization already engages with local employers on sustainability or economic development, consider whether encouraging visible, address-level job listings fits alongside that work — a low-effort addition rather than a new program.
-
-Reach out to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss whether this fits your region's existing initiatives.
 
 ## Where This Fits Within a Broader ESG Framework
 
@@ -81,6 +86,59 @@ As sustainability reporting requirements across the EU continue to expand in sco
 ## Why This Argument Works Best When Paired With Concrete Numbers, Not Just Principle
 
 Sustainability officers evaluating many competing potential initiatives respond better to a concrete, even if modest, projected impact than to a purely qualitative argument about "removing information barriers." Where possible, pairing this proposal with an internal estimate — even a rough one, based on your own company's actual new-hire commute patterns over the past year — of how many new hires might plausibly have chosen a closer role had they known about it, makes the case considerably more persuasive than the general principle alone, turning an abstract argument into something a sustainability team can actually evaluate and potentially act on.
+
+## The Reporting Frameworks, Named
+
+"Commuting emissions" appear in several specific frameworks that Dutch organisations already work with. Knowing them makes the local-hiring argument concrete for sustainability officers.
+
+**GHG Protocol, Scope 3 Category 7.** The Greenhouse Gas Protocol's Corporate Value Chain (Scope 3) Standard defines fifteen categories of indirect emissions. **Category 7, "Employee commuting"**, covers emissions from employees travelling between home and work in vehicles not owned or operated by the company, and can optionally include emissions from teleworking. It is the category in which commute distance shows up in a corporate carbon footprint.
+
+**CSRD and ESRS E1.** The EU's **Corporate Sustainability Reporting Directive (CSRD)** requires in-scope companies to report according to the **European Sustainability Reporting Standards (ESRS)**. The climate standard, **ESRS E1**, includes disclosure of gross Scope 1, 2 and 3 greenhouse gas emissions, where Scope 3 categories are material. The EU has since adopted measures to postpone reporting for later waves of companies and has proposed simplifications to the scope and content of the requirements, so organisations should check which obligations apply to them and when.
+
+**The Dutch WPM reporting obligation.** Independently of the CSRD, the Netherlands introduced the **Besluit CO2-reductie werkgebonden personenmobiliteit (WPM)**. Employers with 100 or more employees must report annually on business travel and commuting by their employees, including kilometres travelled and the modes of transport used, from which CO2 emissions are calculated. Reports are submitted through the **Netherlands Enterprise Agency (RVO)**. For many Dutch employers, this is the most immediate and concrete reason to pay attention to commute distances.
+
+**Emission factors.** In the Netherlands, **CO2emissiefactoren.nl** provides a commonly used, publicly available list of emission factors for transport modes and energy, which organisations use to convert kilometres travelled into CO2 emissions.
+
+| Framework | Who it applies to | What it requires regarding commuting |
+|---|---|---|
+| GHG Protocol Scope 3 Category 7 | Organisations reporting a full carbon footprint voluntarily or under other frameworks | Estimation of employee commuting emissions |
+| CSRD / ESRS E1 | In-scope companies, according to the current phase-in rules | Disclosure of Scope 3 emissions where material |
+| WPM (Netherlands) | Employers with 100 or more employees | Annual reporting of commuting and business travel data via RVO |
+
+## A Simple Calculation Sustainability Teams Can Use
+
+To show why local hiring matters in these frameworks, the calculation is straightforward:
+
+1. **Collect commute distances and modes** for new hires over the past year, using the same data gathered for WPM reporting where available.
+2. **Apply emission factors** per kilometre and mode, for example from CO2emissiefactoren.nl.
+3. **Multiply by commuting days**, adjusting for hybrid work patterns.
+4. **Model a scenario** in which a share of long-distance commuters had instead been hired from within a shorter radius, or had chosen a nearby employer.
+5. **Report the difference** as an indicative potential reduction, clearly labelled as an estimate.
+
+The purpose is not to claim precise savings from job-board visibility, but to make the relationship between hiring radius and reported emissions visible to decision-makers. Mode matters as much as distance: a short car commute can emit more than a longer train journey, while cycling emits close to nothing — which is why distance-based job search works best alongside good cycling and public transport options.
+
+## Where Regional Organisations Fit In
+
+For regional development agencies, municipalities and business associations, the WPM obligation creates a practical opening.
+
+- **Employers already collect the data.** Organisations subject to WPM know their employees' commute patterns and have an incentive to reduce emissions per kilometre.
+- **Regional mobility programmes exist.** Many Dutch regions run programmes with employers to reduce peak-hour car traffic and encourage cycling and public transport. Making nearby vacancies visible is a natural addition to those conversations.
+- **Research is available.** The **Netherlands Institute for Transport Policy Analysis (KiM)** and CBS publish analyses of Dutch commuting patterns that regional organisations can use to frame the discussion with local data.
+- **Talent retention and sustainability reinforce each other.** A graduate who finds a suitable job near home stays in the region and commutes less — the same outcome serves both economic development and climate goals.
+
+## Key Takeaways
+
+- Commuting emissions are formally covered by GHG Protocol Scope 3 Category 7 and, where material, by ESRS E1 under the CSRD.
+- In the Netherlands, the WPM obligation requires employers with 100 or more employees to report commuting and business travel annually via RVO.
+- Emission factors from CO2emissiefactoren.nl allow organisations to convert commute data into an indicative emissions scenario.
+- Job visibility at address level is a small, low-cost lever that complements, rather than replaces, mobility and housing policy.
+- Regional organisations can connect local hiring to existing WPM and mobility programmes, serving both talent retention and climate goals.
+
+## Where to Start
+
+If your organization already engages with local employers on sustainability or economic development, consider whether encouraging visible, address-level job listings fits alongside that work — a low-effort addition rather than a new program.
+
+Reach out to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss whether this fits your region's existing initiatives.
 
 ## Frequently Asked Questions
 

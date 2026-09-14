@@ -17,7 +17,21 @@ Content Format: Decision-Stage Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-12",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/retaining-ai-talent-after-hiring"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/retaining-ai-talent-after-hiring"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Retaining AI and data talent"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "ResearchOrganization", "name": "TNO"},
+    {"@type": "GovernmentOrganization", "name": "Statistics Netherlands (CBS)"},
+    {"@type": "Thing", "name": "Netherlands Working Conditions Survey (NEA)"},
+    {"@type": "Thing", "name": "30% ruling"},
+    {"@type": "Thing", "name": "Notice period under the Dutch Civil Code"},
+    {"@type": "Thing", "name": "Non-compete clause (concurrentiebeding)"},
+    {"@type": "Legislation", "name": "Flexible Working Act (Wet flexibel werken)"},
+    {"@type": "Legislation", "name": "EU Pay Transparency Directive (EU) 2023/970"},
+    {"@type": "Thing", "name": "Sustainable employability (duurzame inzetbaarheid)"},
+    {"@type": "Thing", "name": "Exit interviews"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ An AI hire who leaves after a year rarely cites salary as the primary reason in 
 ## Why This Requires More Than a Retention Bonus
 
 A compensation increase addresses the wrong layer of the problem if the underlying issue is that someone's work never ships or their scope quietly narrowed — the departure risk returns once the bonus's effect wears off.
-
-## Where to Start
-
-Check directly, before it becomes a resignation conversation, whether a hire's actual work matches what was described at hiring, and whether there's a visible path for their work to reach production and their scope to grow.
-
-Post your open AI, machine learning or data role — first listing free — at info@onlyaijobs.eu.
 
 ## A Deeper Look at Why "Work That Never Ships" Is So Corrosive
 
@@ -132,6 +140,38 @@ If your scope has drifted, asking for an explicit conversation about what the ro
 If growth has stalled, proposing a specific expansion of scope rather than asking generally about progression gives a manager something concrete to say yes to, which is considerably easier than responding to an open question about career development.
 
 In each case, the conversation is worth having before the decision to leave has been made, because these problems are frequently addressable and rarely addressed until someone names them.
+
+## Dutch Data and Rules That Frame Retention
+
+**Working conditions research.** The **Netherlands Working Conditions Survey (NEA)**, conducted by **TNO** and **Statistics Netherlands (CBS)**, regularly measures work pressure, autonomy, burnout complaints and job satisfaction among Dutch employees. Its findings consistently show that high work pressure combined with low autonomy is a key risk factor for stress-related complaints — which aligns with the structural causes of departure described in this article, such as work that never ships and unclear priorities.
+
+**Notice periods.** Under the Dutch Civil Code, an employee's statutory notice period is one month, unless a different period is agreed in writing within legal limits. That short default means an AI specialist who has decided to leave can do so quickly — retention has to happen long before a resignation letter.
+
+**Non-compete clauses.** A non-compete clause must be agreed in writing and, in fixed-term contracts, requires a written justification of compelling business interests. Courts can limit or set aside clauses that disproportionately harm the employee. Relying on a non-compete to retain AI talent is legally uncertain and damages trust; it is not a retention strategy.
+
+**Flexible working.** The **Flexible Working Act** allows employees of employers with ten or more staff to request changes to working hours, schedule or place of work. Handling such requests generously is one of the cheapest retention measures available.
+
+**Pay transparency.** The **EU Pay Transparency Directive** gives employees the right to request information about average pay levels for comparable work. Unexplained pay differences within AI teams will become visible, so reviewing pay structures proactively reduces a future source of departures.
+
+**The 30% ruling cliff.** For international employees, the **30% ruling** applies for a limited maximum period. When it expires, net income drops noticeably. Employers who don't anticipate this moment often see international AI specialists leave around the expiry date — a predictable, preventable departure.
+
+## Sustainable Employability as a Retention Frame
+
+Dutch employers and collective agreements increasingly speak of *duurzame inzetbaarheid* — sustainable employability: keeping employees healthy, motivated and skilled throughout their careers. For AI roles, that translates into concrete measures: protected time for learning, rotation between projects, clear specialist career paths that don't require becoming a manager, and realistic workloads. Framing retention this way connects it to existing HR policies and budgets, which makes it easier to fund than ad hoc retention bonuses.
+
+## Key Takeaways
+
+- AI specialists usually leave for structural reasons — work that never ships, scope drift and missing growth paths — not salary alone.
+- NEA research by TNO and CBS links high work pressure and low autonomy to stress-related complaints.
+- A one-month statutory notice period means retention must happen early; non-compete clauses are no substitute.
+- Anticipate pay transparency requests and the expiry of the 30% ruling for international staff.
+- Use sustainable employability — learning time, specialist tracks, realistic workloads — as a structural retention frame.
+
+## Where to Start
+
+Check directly, before it becomes a resignation conversation, whether a hire's actual work matches what was described at hiring, and whether there's a visible path for their work to reach production and their scope to grow.
+
+Post your open AI, machine learning or data role — first listing free — at info@onlyaijobs.eu.
 
 ## Frequently Asked Questions
 

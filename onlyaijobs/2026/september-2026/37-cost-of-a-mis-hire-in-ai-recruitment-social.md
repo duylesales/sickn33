@@ -1,11 +1,11 @@
-Een verkeerde AI-aanname wordt meestal gemeten in het uitbetaalde salaris. Dat is de kleinste kostenpost.
+💡 A wrong AI hire is usually measured in the salary paid. That's the smallest cost.
 
-De grotere kosten: vertraagde projecten met een keteneffect, begeleidingstijd van je bestaande senior team dat ten koste gaat van hun eigen werk, en een tweede wervingsronde die niet bij nul begint maar bij beschadigd vertrouwen. Een publiek dat al specifiek naar AI/ML/Data zoekt, verkleint dit risico niet tot nul — maar wel structureel.
+💰 The larger costs: delayed projects with a knock-on effect, supervision time from your existing senior team at the expense of their own work, and a second recruitment round that doesn't start at zero but with damaged trust. An audience already specifically looking for AI/ML/Data doesn't reduce this risk to zero — but it does reduce it structurally.
 
-Reken deze kosten mee voordat je de tijdsinvestering in een specialistischer kanaal afweegt.
+✅ Count these costs before you weigh the time invested in a more specialist channel.
 
-Plaats je vacature — eerste plaatsing gratis: info@onlyaijobs.eu
+📢 Post your vacancy — first listing free: info@onlyaijobs.eu
 
-Lees het volledige verhaal: https://onlyaijobs.eu/blog/de-prijs-van-een-mismatch-bij-ai-werving
+📖 Read the full story: https://onlyaijobs.eu/blog/cost-of-a-mis-hire-in-ai-recruitment
 
-#OnlyAIJobs #Werving #AIRecruitment #Nederland
+#OnlyAIJobs #Recruitment #AIRecruitment #Netherlands

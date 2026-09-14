@@ -1,9 +1,9 @@
-"Ga je door naar een onderzoeksmaster, of zoek je nu al een baan?" — een vraag die vaak wordt gesteld alsof er één juist antwoord bestaat. Dat is niet zo.
+💡 "Will you continue with a research master, or look for a job now?" — a question often asked as if there is one right answer. There isn't.
 
-Een onderzoeksmaster geeft diepgang en toegang tot rollen die expliciet om die achtergrond vragen — vaak in onderzoeksgroepen of gespecialiseerde teams. Direct werken geeft praktijkervaring met productiesystemen en echte deadlines, dingen die een master zelden leert.
+🎓 A research master gives depth and access to roles that explicitly ask for that background — often in research groups or specialised teams. Going straight into a job gives practical experience with production systems and real deadlines, things a master rarely teaches.
 
-De vraag die er echt toe doet: wil je over vijf jaar werk doen waar een onderzoeksachtergrond een vereiste voor is, of werk waar praktijkervaring zwaarder weegt?
+✅ The question that really matters: in five years, do you want to do work that requires a research background, or work where practical experience weighs more?
 
-Lees het volledige verhaal: https://onlyaijobs.eu/blog/onderzoeksmaster-of-baan-in-ai
+📖 Read the full story: https://onlyaijobs.eu/blog/research-master-or-first-ai-job
 
-#OnlyAIJobs #Carrièreadvies #AI #Studenten
+#OnlyAIJobs #CareerAdvice #AI #Students

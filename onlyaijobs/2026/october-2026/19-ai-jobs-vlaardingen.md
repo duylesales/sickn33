@@ -17,7 +17,21 @@ Content Format: Regional Market Analysis
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-10-19",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-vlaardingen"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-vlaardingen"},
+  "inLanguage": "en",
+  "about": [{"@type": "Place", "name": "Vlaardingen"}, {"@type": "Place", "name": "Rotterdam region"}],
+  "mentions": [
+    {"@type": "Organization", "name": "Unilever"},
+    {"@type": "Place", "name": "Wageningen Campus"},
+    {"@type": "ResearchOrganization", "name": "Wageningen Food & Biobased Research"},
+    {"@type": "CollegeOrUniversity", "name": "Delft University of Technology (TU Delft)"},
+    {"@type": "Organization", "name": "Rotterdam Food Cluster"},
+    {"@type": "Place", "name": "Port of Rotterdam"},
+    {"@type": "GovernmentOrganization", "name": "Netherlands Food and Consumer Product Safety Authority (NVWA)"},
+    {"@type": "Legislation", "name": "EU Novel Food Regulation (EU) 2015/2283"},
+    {"@type": "Legislation", "name": "EU Food Information to Consumers Regulation (EU) No 1169/2011"},
+    {"@type": "Thing", "name": "Sensory analysis standards (ISO)"}
+  ]
 }
 </script>
 
@@ -30,12 +44,6 @@ Food science R&D data work involves modeling sensory and chemical properties, op
 ## Why This Segment Gets Overlooked
 
 A candidate searching "AI jobs Rotterdam" defaults to the port and logistics character of the wider region, missing the more research-oriented food science work sitting a few kilometers away with an entirely different profile.
-
-## Where to Start
-
-If R&D-style data work in food science interests you, look at Vlaardingen specifically rather than assuming the entire Rotterdam region behaves like the port itself.
-
-Browse current AI, machine learning and data vacancies in and around Vlaardingen at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## The Entity Landscape of Vlaardingen's Food-Science Presence
 
@@ -111,6 +119,55 @@ Reading a handful of published papers in food science journals that involve stat
 Speaking directly with someone already working in this area, even briefly, surfaces practical realities that no article can convey — how much of their week is analysis versus meetings, how much autonomy they have over which questions get investigated, whether they feel professionally isolated as the sole statistical voice in a scientific team. Most practitioners are willing to answer a specific, well-framed question from someone genuinely considering the field.
 
 Finally, attempting a small self-directed analysis using publicly available sensory or food-quality datasets provides direct experience of the methodological demands discussed throughout this article. That experience — including discovering which parts you find engaging and which you find frustrating — is worth more than any amount of further reading about the field in the abstract.
+
+## An Honest Note on How the R&D Landscape Has Shifted
+
+Vlaardingen's reputation as a food science research location comes largely from **Unilever**, which ran a major research laboratory in the city for decades. That laboratory made Vlaardingen a recognised name in food science, trained generations of food scientists and attracted specialised suppliers, labs and consultancies to the area.
+
+In 2019, Unilever moved its global foods research and development to a new innovation centre on **Wageningen Campus**. That move is important context for any candidate: the largest single food R&D employer is no longer based in Vlaardingen. What remains is an ecosystem shaped by that history — specialised laboratories, ingredient and food companies, consultancies and professionals with deep food science experience — alongside a professional network that now runs along the Rotterdam–Delft–Wageningen axis.
+
+For candidates, this means two things. First, search the wider region rather than expecting one large R&D employer in the city itself. Second, the career logic described in this article — food science R&D as a research-oriented discipline with its own methods — applies more strongly than ever, but the employers are spread across more locations.
+
+## The Wider Ecosystem Within Reach
+
+**Wageningen Food & Biobased Research.** The applied research institute of Wageningen University & Research works on food quality, processing and new protein sources, and collaborates with companies across the Netherlands.
+
+**TU Delft.** Offers research and education in biotechnology, process technology and food-related engineering, and is a short distance from Vlaardingen.
+
+**Rotterdam Food Cluster.** An initiative connecting food companies, education and government in the Rotterdam region, with attention to food innovation, logistics and healthy food.
+
+**Port of Rotterdam.** Beyond logistics, the port area hosts food processing and ingredient companies — including oils, fats and other commodities — that run their own laboratories and quality functions.
+
+## Regulation That Shapes Food R&D Data
+
+- **EU Novel Food Regulation (EU) 2015/2283.** New foods and ingredients, including many alternative proteins, require authorisation based on scientific dossiers — which depend on careful experimental data and analysis.
+- **EU Food Information to Consumers Regulation (EU) No 1169/2011.** Governs labelling, including nutrition declarations and allergen information, which formulation changes directly affect.
+- **Nutrition and health claims rules.** Claims about health effects must be substantiated scientifically and authorised at EU level.
+- **Sensory analysis standards.** International ISO standards describe methods for sensory testing and panel management, providing the methodological vocabulary sensory scientists use.
+- **Food safety supervision.** In the Netherlands, the **NVWA** supervises food safety and labelling compliance.
+
+## Typical Job Titles to Search For
+
+| Employer type | Job titles to search for |
+|---|---|
+| Food and ingredient companies | Data scientist R&D, statistician, formulation scientist, sensory scientist |
+| Laboratories and testing facilities | Data analyst laboratory, method development specialist |
+| Research institutes | Researcher food quality, research data scientist |
+| Consultancies | Food innovation consultant, regulatory affairs specialist |
+
+## Key Takeaways
+
+- Vlaardingen's food science reputation comes from decades of Unilever research; Unilever moved its global foods R&D to Wageningen Campus in 2019.
+- Food R&D data work centres on designed experiments, sensory panel data and expensive, small datasets.
+- The ecosystem now runs along the Rotterdam–Delft–Wageningen axis, including Wageningen Food & Biobased Research, TU Delft and the Rotterdam Food Cluster.
+- Novel food authorisation, labelling rules, health claims regulation and ISO sensory standards shape the work.
+- Search by category across the wider region rather than expecting a single large employer in Vlaardingen.
+
+## Where to Start
+
+If R&D-style data work in food science interests you, look at Vlaardingen specifically rather than assuming the entire Rotterdam region behaves like the port itself.
+
+Browse current AI, machine learning and data vacancies in and around Vlaardingen at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

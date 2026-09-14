@@ -1,114 +1,186 @@
 ---
-Title: "Hoe Nederlandse bedrijven hun AI-teams structureren: van één data scientist tot een volledig team"
-Keywords: ai team structuur, data science team nederland, hoe ai teams zijn opgebouwd, ai organisatie bedrijf, OnlyAIJobs
+Title: "How Dutch Companies Structure Their AI Teams: From a Single Data Scientist to a Full Team"
+Keywords: ai team structure, data science team netherlands, how ai teams are organised, ai organisation company, OnlyAIJobs
 Buyer Stage: Consideration / Job Search
-Target Persona: B (Ervaren AI/ML-engineer)
+Target Persona: B (Experienced AI or ML engineer)
 Content Format: Career Guide
 ---
 
-# Hoe Nederlandse bedrijven hun AI-teams structureren: van één data scientist tot een volledig team
+# How Dutch Companies Structure Their AI Teams: From a Single Data Scientist to a Full Team
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Hoe Nederlandse bedrijven hun AI-teams structureren: van één data scientist tot een volledig team",
-  "description": "De organisatiestructuur rond een AI-vacature bepaalt in de praktijk meer over je werkervaring dan de functietitel. Een overzicht van de meest voorkomende structuren bij Nederlandse werkgevers.",
+  "headline": "How Dutch Companies Structure Their AI Teams: From a Single Data Scientist to a Full Team",
+  "description": "The organisational structure around an AI vacancy determines more about your working experience in practice than the job title. An overview of the most common structures at Dutch employers.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-26",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/hoe-nederlandse-bedrijven-ai-teams-structureren"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/how-dutch-companies-structure-ai-teams"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Organisational structure of AI and data teams"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Thing", "name": "Center of Excellence"},
+    {"@type": "Thing", "name": "Hub-and-spoke model"},
+    {"@type": "Thing", "name": "Data mesh"},
+    {"@type": "Organization", "name": "ING"},
+    {"@type": "Thing", "name": "Data Protection Officer"},
+    {"@type": "Organization", "name": "Netherlands AI Coalition (NL AIC)"},
+    {"@type": "Legislation", "name": "General Data Protection Regulation (GDPR)"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"}
+  ]
 }
 </script>
 
-Solliciteren op "data scientist" bij een bedrijf met één datateam van drie mensen is een fundamenteel andere ervaring dan dezelfde titel bij een bedrijf met een volwassen AI-organisatie van tientallen specialisten. Geen van beide is beter — maar het verschil bepaalt in de praktijk meer over je dagelijkse werk dan de functietitel zelf ooit kan.
+Applying for "data scientist" at a company with one data team of three people is a fundamentally different experience from the same title at a company with a mature AI organisation of dozens of specialists. Neither is better — but in practice the difference determines more about your daily work than the job title itself ever can.
 
-## De meest voorkomende structuren
+## The Most Common Structures
 
-**De eenzame generalist.** Eén persoon die alles doet: data verzamelen, opschonen, modelleren, presenteren aan het management. Veel autonomie, maar ook weinig sparringpartners voor technische keuzes — je bent zelf de senior, ongeacht je titel.
+**The lone generalist.** One person who does everything: collecting data, cleaning it, modelling, presenting to management. Lots of autonomy, but also few sparring partners for technical choices — you are the senior yourself, regardless of your title.
 
-**Het kleine, gemengde team.** Twee tot vijf mensen die samen de volledige pijplijn dekken, vaak zonder strikte rolverdeling. Je leert breed, maar diepgang in een specifiek deelgebied komt trager dan in een groter, gespecialiseerd team.
+**The small, mixed team.** Two to five people who together cover the full pipeline, often without a strict division of roles. You learn broadly, but depth in a specific subfield comes more slowly than in a larger, specialised team.
 
-**De gespecialiseerde afdeling.** Aparte rollen voor data engineering, modellering, MLOps en soms onderzoek, met duidelijke overdrachtspunten tussen teams. Meer diepgang per rol, maar ook meer afhankelijkheid van andere teams om iets voor elkaar te krijgen.
+**The specialised department.** Separate roles for data engineering, modelling, MLOps and sometimes research, with clear handover points between teams. More depth per role, but also more dependence on other teams to get things done.
 
-## Waarom dit zelden expliciet in de vacature staat
+## Why This Rarely Appears Explicitly in the Vacancy
 
-Een vacaturetekst beschrijft de functie, niet de organisatiestructuur eromheen. Een bedrijf met één datateam en een bedrijf met een hele AI-divisie kunnen bijna identieke functietitels en zelfs vergelijkbare taken opsommen, terwijl de dagelijkse realiteit compleet anders is.
+A job ad describes the role, not the organisational structure around it. A company with one data team and a company with an entire AI division can list almost identical job titles and even comparable tasks, while the daily reality is completely different.
 
-## Waar te beginnen
+## Signals to Recognise a Team Structure Before Your Interview
 
-Vraag expliciet naar de grootte en samenstelling van het team waar je in terecht zou komen, en naar wie je technische beslissingen zou bespreken. Dat is een betrouwbaarder signaal dan de functietitel of zelfs de takenlijst in de vacature.
+**The number of LinkedIn profiles with a data-related title at the company.** A rough but useful first indication of team size, which you can check before you even apply.
 
-Bekijk actuele AI-, machine learning- en datavacatures bij bedrijven van elke omvang in Nederland op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
+**How the job ad itself is written.** A text describing one broad profile (from data collection to presenting to management) more often points to a small team; a text describing a narrow, specific component more often points to a specialised department.
 
-## Signalen om een teamstructuur te herkennen vóór je gesprek
+**Who conducts the interview.** In a first conversation, are you talking to the CTO or founder, or to a specific team lead within a larger data division? That difference is informative in itself.
 
-**Het aantal LinkedIn-profielen met een datagerelateerde titel bij het bedrijf.** Een grove maar bruikbare eerste indicatie van teamgrootte, te checken voordat je zelfs maar solliciteert.
+## Comparison Table: Signals per Structure Type
 
-**Hoe de vacaturetekst zelf is geschreven.** Een tekst die één breed profiel beschrijft (van data-verzameling tot presentatie aan het management) wijst vaker op een klein team; een tekst die een smal, specifiek onderdeel beschrijft wijst vaker op een gespecialiseerde afdeling.
-
-**Wie het gesprek voert.** Praat je in een eerste gesprek met de CTO of oprichter zelf, of met een specifieke teamlead binnen een grotere datadivisie? Dat verschil is zelf al informatief.
-
-## Vergelijkingstabel: signalen per structuurtype
-
-| Signaal | Eenzame generalist | Klein gemengd team | Gespecialiseerde afdeling |
+| Signal | Lone generalist | Small mixed team | Specialised department |
 |---|---|---|---|
-| Aantal datagerelateerde profielen op LinkedIn | 1 | 2-5 | 5+ |
-| Wie voert het sollicitatiegesprek | Oprichter/CTO direct | Een van de weinige teamleden | Specifieke teamlead of HR-partner |
-| Breedte van de vacaturetekst | Zeer breed | Gemiddeld breed | Smal en specifiek |
-| Typische besluitvormingssnelheid | Hoog, direct | Gemiddeld | Lager, meer afstemming |
+| Number of data-related LinkedIn profiles | 1 | 2–5 | 5+ |
+| Who conducts the interview | Founder/CTO directly | One of the few team members | Specific team lead or HR partner |
+| Breadth of the job ad | Very broad | Moderately broad | Narrow and specific |
+| Typical decision-making speed | High, direct | Medium | Lower, more alignment |
 
-## Waarom je dit vóór het gesprek wilt weten, niet erna
+## Why You Want to Know This Before the Interview, Not After
 
-Deze signalen checken voordat je solliciteert, verandert niet alleen of je de baan wilt — het verandert ook welke vragen je stelt en waarop je let tijdens het gesprek zelf. Iemand die weet dat ze bij een eenzame-generalist-structuur solliciteert, kan gerichter vragen naar externe sparringmogelijkheden; iemand die weet dat het een gespecialiseerde afdeling is, kan gerichter vragen naar de overdrachtspunten tussen teams. Voorbereiding op basis van deze signalen levert een beter gesprek op dan een generieke set standaardvragen.
+Checking these signals before you apply doesn't just change whether you want the job — it also changes which questions you ask and what you pay attention to during the interview itself. Someone who knows they are applying to a lone-generalist structure can ask more specifically about external sparring opportunities; someone who knows it is a specialised department can ask more specifically about handover points between teams. Preparation based on these signals produces a better conversation than a generic set of standard questions.
 
-## Een concreet scenario: hetzelfde functietitel, twee compleet verschillende ervaringen
+## A Concrete Scenario: The Same Job Title, Two Completely Different Experiences
 
-Twee "data scientists" bij twee verschillende bedrijven hebben exact dezelfde titel. Bij bedrijf A ben je de enige data scientist, rapporteer je direct aan de oprichter, en moet je zelf beslissen over elke technische keuze zonder collega om te sparren. Bij bedrijf B ben je een van de acht data scientists in een gestructureerde afdeling, met een teamlead, wekelijkse technische reviews, en duidelijke overdrachtspunten naar data engineering. Beide bedrijven noemen hun vacature "data scientist", maar de dagelijkse ervaring verschilt fundamenteel — niet omdat een van de twee bedrijven het "verkeerd" doet, maar omdat de teamstructuur zelf een andere realiteit creëert die de functietitel alleen niet kan overbrengen.
+Two "data scientists" at two different companies have exactly the same title. At company A, you are the only data scientist, you report directly to the founder, and you have to decide on every technical choice yourself without a colleague to spar with. At company B, you are one of eight data scientists in a structured department, with a team lead, weekly technical reviews and clear handover points to data engineering. Both companies call their vacancy "data scientist," but the daily experience differs fundamentally — not because one of the two companies is doing it "wrong," but because the team structure itself creates a different reality that the job title alone can't convey.
 
-## Een veelvoorkomend misverstand over kleine teams
+## A Common Misconception About Small Teams
 
-Kandidaten nemen soms aan dat een klein team automatisch een minder professionele of minder serieuze werkomgeving betekent dan een grote, gestructureerde afdeling. Dat is een misvatting: een klein team kan net zo (of soms zelfs meer) technisch rigoureus zijn, alleen zonder de formele structuren die een grotere afdeling nodig heeft om dezelfde mate van kwaliteitscontrole te bereiken. De afwezigheid van formele structuur is geen bewijs van gebrek aan kwaliteit — het is een ander soort organisatie.
+Candidates sometimes assume that a small team automatically means a less professional or less serious working environment than a large, structured department. That is a misconception: a small team can be just as (or sometimes even more) technically rigorous, just without the formal structures a larger department needs to achieve the same level of quality control. The absence of formal structure is not proof of a lack of quality — it is a different kind of organisation.
 
-## Waarom dit besef je moet meenemen in hoe je een aanbod beoordeelt
+## Why You Should Take This Into Account When Assessing an Offer
 
-Zodra je begrijpt dat teamstructuur minstens zo veel invloed heeft op je dagelijkse ervaring als de functietitel zelf, verandert dat hoe je een aanbod zou moeten beoordelen: niet alleen op salaris en titel, maar expliciet op de vraag of de structuur van het team — eenzame generalist, klein gemengd team, of gespecialiseerde afdeling — past bij wat je op dit moment in je carrière zoekt.
+Once you understand that team structure has at least as much influence on your daily experience as the job title itself, it changes how you should assess an offer: not only on salary and title, but explicitly on whether the team's structure — lone generalist, small mixed team or specialised department — suits what you are looking for at this point in your career.
 
-## Hoe teamstructuur verandert naarmate een bedrijf groeit
+## How Team Structure Changes as a Company Grows
 
-Een team dat je vandaag als "eenzame generalist"-structuur aantreft, kan binnen twee jaar zijn uitgegroeid tot een klein gemengd team, en binnen vijf jaar tot een gespecialiseerde afdeling, naarmate het bedrijf groeit. Dit betekent dat de structuur die je bij aanname aantreft niet noodzakelijk de structuur is waarin je over een paar jaar werkt — een relevante overweging als je specifiek op zoek bent naar de ervaring van vroeg meebouwen aan een groeiend team, in plaats van in te stappen bij een reeds volwassen, gestructureerde afdeling.
+A team you find today as a "lone generalist" structure can grow into a small mixed team within two years, and into a specialised department within five, as the company grows. This means the structure you find when you are hired is not necessarily the structure you will work in a few years later — a relevant consideration if you are specifically looking for the experience of helping build a growing team early, rather than joining an already mature, structured department.
 
-## Waarom dit besef ook relevant is voor hoe je jezelf positioneert bij een sollicitatie
+## Why This Also Matters for How You Position Yourself in an Application
 
-Als je weet dat een bedrijf zich momenteel in de "eenzame generalist"-fase bevindt maar van plan is snel te groeien, kun je jezelf expliciet positioneren als iemand die niet alleen het huidige, brede werk aankan, maar ook geïnteresseerd is in het meebouwen van een groter team naarmate het bedrijf groeit — een aantrekkelijke eigenschap voor een werkgever die op zoek is naar iemand die met het bedrijf meegroeit, in plaats van iemand die alleen het huidige, afgebakende takenpakket zoekt.
+If you know a company is currently in the "lone generalist" phase but plans to grow quickly, you can explicitly position yourself as someone who can not only handle the current broad work, but is also interested in helping build a larger team as the company grows — an attractive quality for an employer looking for someone who grows with the company, rather than someone who only wants the current, defined set of tasks.
 
-## Veelgestelde vragen
+## The Organisational Models Behind the Three Structures
 
-### (Scenario: kandidaat die twijfelt tussen een klein en een groot team) Is een klein datateam een nadeel ten opzichte van een grote, gespecialiseerde AI-afdeling?
-Niet per se — een klein team geeft meer autonomie en bredere ervaring, terwijl een grote afdeling meer diepgang en sparringpartners biedt. Het hangt af van wat je op dit moment in je carrière zoekt.
+The three structures above describe the size of a team. Organisations also differ in where the AI team sits in the organisation. Three models are most common in the Netherlands.
 
-### (Scenario: kandidaat die eenzaamheid in een team vreest) Wat betekent het als ik de enige data scientist in het bedrijf zou zijn?
-Het betekent veel autonomie, maar ook dat je zelf de senior bent voor technische keuzes, ongeacht je eigen titel of ervaringsniveau. Vraag naar externe sparringmogelijkheden als dat je zorgen baart.
+| Model | How it works | Advantages | Disadvantages for you as an engineer |
+|---|---|---|---|
+| **Central (Center of Excellence)** | One central data and AI team serves the whole organisation | Strong professional community, shared standards, good supervision | Distance from the business; many prioritisation discussions |
+| **Hub-and-spoke (federated)** | A central team sets up the platform and standards; data scientists work embedded in business units | Balance between proximity to the business and professional support | Divided loyalty: you sometimes report to two managers |
+| **Fully embedded** | Data people sit in product teams or departments, without a central AI department | Fast impact, short lines of communication | Few peers, divergent ways of working, little knowledge sharing |
 
-### (Scenario: kandidaat die de vacaturetekst als volledig beeld ziet) Waarom vertelt de vacaturetekst niet hoe het team is opgebouwd?
-Omdat een vacaturetekst de functie beschrijft, niet de organisatiestructuur eromheen. Twee vrijwel identieke vacatures kunnen bij compleet verschillend gestructureerde teams horen.
+**The squad model.** A number of large Dutch organisations have introduced agile ways of working with squads, tribes and chapters. **ING** is a well-known example of a Dutch bank that applied this way of organising at scale. In such a model, a data scientist sits in a multidisciplinary squad, while a "chapter" connects peers across squads for knowledge sharing and development. At such organisations, ask explicitly who your chapter lead is and how professional growth is organised.
 
-### (Scenario: kandidaat die wil weten wat te vragen) Wat moet ik vragen om de teamstructuur helder te krijgen voordat ik een aanbod accepteer?
-Vraag naar de grootte en samenstelling van het team, wie welke rol vervult, en met wie je technische beslissingen zou bespreken. Dat geeft een concreter beeld dan de vacaturetekst zelf.
+**Data mesh.** Some data-heavy organisations work according to data mesh principles, in which domain teams own their data as a "product," supported by a central self-service data platform. For a data engineer, that often means working within a domain team with clear agreements on data quality and access.
 
-### (Scenario: kandidaat die twijfelt over doorgroeimogelijkheden) Welke structuur biedt meer doorgroeimogelijkheden op de lange termijn?
-Dat verschilt per bedrijf en per persoon — een klein team kan sneller leiderschapservaring bieden naarmate het groeit, terwijl een grote afdeling vaker een duidelijker carrièrepad met vastere niveaus heeft.
+## Roles That Appear in Mature AI Organisations
+
+As an organisation grows, roles emerge around the AI team that affect the daily experience.
+
+- **Chief Data Officer or Head of Data & AI.** Ultimately responsible for data strategy, and often the person who decides which AI projects get budget.
+- **Data Protection Officer.** Public bodies and organisations that process sensitive data at large scale must appoint a Data Protection Officer under the **GDPR**. For AI projects involving personal data, the DPO is a standing conversation partner.
+- **AI governance or responsible AI specialist.** Because of the **EU Artificial Intelligence Act**, more and more organisations have someone who inventories AI systems, classifies risks and monitors documentation.
+- **Product owner for data and AI products.** Translates business questions into priorities and prevents an AI team from steering only by technical interest.
+- **ML platform team.** In specialised departments, a separate team builds the infrastructure on which data scientists train and deploy their models.
+
+The more of these roles there are, the further an organisation has moved towards the specialised structure — and the fewer of these responsibilities you have to carry yourself.
+
+## Public Organisations and SMEs: Two Separate Worlds
+
+**Government.** Ministries, implementing agencies and municipalities often organise data and AI work in a central team or information management department, with strong involvement of privacy, legal and ethics advisers. Publishing algorithms in the national **Algorithm Register** and conducting impact assessments in advance are common practice. Large municipalities such as Amsterdam have taken their own initiatives in this area for years. Expect more alignment, but also clear frameworks.
+
+**SMEs.** Dutch business consists largely of small and medium-sized enterprises. There, the lone generalist or the small mixed team is the norm, often supplemented with external parties: an IT service provider for infrastructure or a consultant for a specific project. Networks such as the **Netherlands AI Coalition (NL AIC)**, in which business, government and knowledge institutions collaborate on AI, and regional innovation programmes are important sources of knowledge for these companies — and, for you as a lone generalist, a way to find peers.
+
+## Questions for Your Job Interview
+
+1. How many people work in data and AI roles, and how are those roles distributed?
+2. Is there a central team, a hub-and-spoke model, or are data people embedded in departments?
+3. Who do I report to on content, and who do I report to hierarchically?
+4. Who reviews my code and models?
+5. Is there an ML platform, or do I build the infrastructure myself?
+6. What role do the Data Protection Officer, legal and AI governance play in projects?
+7. How does the company expect the team to grow over the next two years?
+
+## Red Flags in the Team Structure
+
+- Nobody can explain who reviews your code or models.
+- You report to someone with no affinity for data, and there is no professional supervision elsewhere.
+- There is an "AI strategy," but not a single model in production and no budget for infrastructure.
+- The data team sits under a department with other priorities that regularly changes ownership.
+- The company expects one person to carry data engineering, modelling, MLOps and governance, without the time or help to match.
+
+None of these signals has to be a reason to drop out, but each deserves an explicit question in the interview.
+
+## Key Takeaways
+
+- Team size (generalist, small team, department) and organisational model (central, hub-and-spoke, embedded) together determine your daily work.
+- Squads and chapters, as at ING, and data mesh principles occur at larger Dutch organisations.
+- Roles such as CDO, Data Protection Officer, AI governance specialist and ML platform team are signals of a mature AI organisation.
+- Government works with more frameworks and alignment; SMEs more often with generalists and external partners.
+- Ask targeted questions about reporting lines, code review, infrastructure and growth.
+
+## Where to Start
+
+Ask explicitly about the size and composition of the team you would join, and about who you would discuss technical decisions with. That is a more reliable signal than the job title or even the list of tasks in the vacancy.
+
+Browse current AI, machine learning and data vacancies at companies of every size in the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
+
+## Frequently Asked Questions
+
+### (Scenario: candidate torn between a small and a large team) Is a small data team a disadvantage compared with a large, specialised AI department?
+Not necessarily — a small team offers more autonomy and broader experience, while a large department offers more depth and sparring partners. It depends on what you are looking for at this point in your career.
+
+### (Scenario: candidate afraid of being isolated in a team) What does it mean if I would be the only data scientist in the company?
+It means a lot of autonomy, but also that you are the senior for technical choices yourself, regardless of your own title or level of experience. Ask about external sparring opportunities if that worries you.
+
+### (Scenario: candidate who treats the job ad as the full picture) Why doesn't the job ad say how the team is structured?
+Because a job ad describes the role, not the organisational structure around it. Two nearly identical vacancies can belong to completely differently structured teams.
+
+### (Scenario: candidate who wants to know what to ask) What should I ask to get the team structure clear before accepting an offer?
+Ask about the size and composition of the team, who fills which role, and who you would discuss technical decisions with. That gives a more concrete picture than the job ad itself.
+
+### (Scenario: candidate unsure about growth opportunities) Which structure offers more growth opportunities in the long term?
+That differs per company and per person — a small team can offer leadership experience sooner as it grows, while a large department more often has a clearer career path with more fixed levels.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is een klein datateam een nadeel ten opzichte van een grote, gespecialiseerde AI-afdeling?", "acceptedAnswer": {"@type": "Answer", "text": "Niet per se — een klein team geeft meer autonomie en bredere ervaring, een grote afdeling meer diepgang en sparringpartners."}},
-    {"@type": "Question", "name": "Wat betekent het als ik de enige data scientist in het bedrijf zou zijn?", "acceptedAnswer": {"@type": "Answer", "text": "Het betekent veel autonomie, maar ook dat je zelf de senior bent voor technische keuzes, ongeacht je eigen ervaringsniveau."}},
-    {"@type": "Question", "name": "Waarom vertelt de vacaturetekst niet hoe het team is opgebouwd?", "acceptedAnswer": {"@type": "Answer", "text": "Omdat een vacaturetekst de functie beschrijft, niet de organisatiestructuur eromheen."}},
-    {"@type": "Question", "name": "Wat moet ik vragen om de teamstructuur helder te krijgen voordat ik een aanbod accepteer?", "acceptedAnswer": {"@type": "Answer", "text": "Vraag naar de grootte en samenstelling van het team, wie welke rol vervult, en met wie je technische beslissingen zou bespreken."}},
-    {"@type": "Question", "name": "Welke structuur biedt meer doorgroeimogelijkheden op de lange termijn?", "acceptedAnswer": {"@type": "Answer", "text": "Dat verschilt per bedrijf en persoon — een klein team kan sneller leiderschapservaring bieden, een grote afdeling heeft vaker een duidelijker carrièrepad."}}
+    {"@type": "Question", "name": "Is a small data team a disadvantage compared with a large, specialised AI department?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — a small team offers more autonomy and broader experience, a large department more depth and sparring partners."}},
+    {"@type": "Question", "name": "What does it mean if I would be the only data scientist in the company?", "acceptedAnswer": {"@type": "Answer", "text": "It means a lot of autonomy, but also that you are the senior for technical choices yourself, regardless of your own level of experience."}},
+    {"@type": "Question", "name": "Why doesn't the job ad say how the team is structured?", "acceptedAnswer": {"@type": "Answer", "text": "Because a job ad describes the role, not the organisational structure around it."}},
+    {"@type": "Question", "name": "What should I ask to get the team structure clear before accepting an offer?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about the size and composition of the team, who fills which role, and who you would discuss technical decisions with."}},
+    {"@type": "Question", "name": "Which structure offers more growth opportunities in the long term?", "acceptedAnswer": {"@type": "Answer", "text": "That differs per company and person — a small team can offer leadership experience sooner, a large department more often has a clearer career path."}}
   ]
 }
 </script>

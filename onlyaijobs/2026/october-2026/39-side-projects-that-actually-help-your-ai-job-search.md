@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-08",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/side-projects-that-actually-help-your-ai-job-search"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/side-projects-that-actually-help-your-ai-job-search"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Portfolio side projects for AI job seekers"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Thing", "name": "data.overheid.nl (Dutch national open data portal)"},
+    {"@type": "GovernmentOrganization", "name": "Statistics Netherlands (CBS) StatLine"},
+    {"@type": "GovernmentOrganization", "name": "Royal Netherlands Meteorological Institute (KNMI) Data Platform"},
+    {"@type": "GovernmentOrganization", "name": "RDW Open Data"},
+    {"@type": "Thing", "name": "PDOK (Public Services on the Map)"},
+    {"@type": "GovernmentOrganization", "name": "Rijkswaterstaat Waterinfo"},
+    {"@type": "Organization", "name": "GitHub"},
+    {"@type": "Organization", "name": "Hugging Face"},
+    {"@type": "Legislation", "name": "General Data Protection Regulation (GDPR)"},
+    {"@type": "Legislation", "name": "EU Database Directive"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ Two candidates can each list "built a machine learning project" on their CV and 
 ## What Doesn't Move the Needle Much
 
 Following a well-known tutorial exactly, without a personal twist or extension, signals that you can follow instructions — a real but limited skill compared to defining and solving your own problem. Hiring managers have seen the same tutorial project many times and generally recognize it immediately.
-
-## Where to Start
-
-Pick one project you've already done and make its outcome, iteration process and verifiability explicit and visible — often more valuable than starting an entirely new project from scratch.
-
-Browse current junior AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Deeper Look at Why Verifiability Matters More Than Sophistication
 
@@ -128,6 +136,48 @@ For a candidate with no professional experience in the field, portfolio work is 
 For a candidate with substantial professional experience, portfolio projects rarely change hiring outcomes and the same time is usually better spent on the professional visibility discussed in the networking analysis elsewhere on this site.
 
 The transition point is worth recognising because candidates sometimes continue investing heavily in portfolio work long after it has stopped being the binding constraint on their search, while neglecting the professional relationships that have become more consequential.
+
+## Named Dutch Open Data Sources for Realistic Projects
+
+One of the easiest ways to make a side project relevant to Dutch employers is to build it on Dutch public data. These sources are real, messy enough to be interesting, and familiar to many hiring managers:
+
+| Source | What it contains | Project ideas |
+|---|---|---|
+| **data.overheid.nl** | The national open data portal, listing datasets from many government bodies | A search across municipal datasets, or combining several local datasets |
+| **CBS StatLine** | Official statistics from Statistics Netherlands on population, economy, labour and more | Regional labour market analyses, demographic forecasting |
+| **KNMI Data Platform** | Weather and climate data from the Royal Netherlands Meteorological Institute | Demand forecasting with weather effects, energy or agriculture models |
+| **RDW Open Data** | Vehicle registration data from the Netherlands Vehicle Authority | Analysis of fleet electrification by region or brand |
+| **PDOK** | Government geodata, including maps, addresses and buildings | Spatial analyses, commuting radius tools, location-based models |
+| **Rijkswaterstaat Waterinfo** | Water levels, flows and water quality measurements | Time series forecasting and anomaly detection |
+
+Projects on these sources speak the language of Dutch employers in government, logistics, energy, mobility and agriculture — exactly the sectors where much of the country's applied data work happens.
+
+## Legal and Ethical Care in Side Projects
+
+A side project can hurt your search if it ignores legal limits. Keep a few rules in mind:
+
+- **Personal data.** Scraping or publishing data about identifiable people falls under the **GDPR**, even in a hobby project. Use aggregated or anonymised data, or public datasets explicitly intended for reuse.
+- **Licences and database rights.** Check the licence of every dataset. Many government datasets are published under open licences, but other sources may be protected by copyright or by database rights under the **EU Database Directive**.
+- **Terms of service.** Many websites prohibit automated scraping in their terms; respect them.
+- **Model and data cards.** Documenting intended use, limitations and data sources — for example when publishing a model on **Hugging Face** — shows maturity that employers notice.
+
+## Presenting the Project
+
+Host code on **GitHub** with a clear README: the question, the data, the approach, the results and what you would do next. For interactive demos, a hosted app or a notebook with visible outputs lets a hiring manager judge the work in minutes. A short write-up linked from your LinkedIn profile turns the project into a conversation starter.
+
+## Key Takeaways
+
+- Projects that help are verifiable, based on real data and aimed at the kind of employer you want.
+- Dutch open data sources — data.overheid.nl, CBS StatLine, KNMI, RDW, PDOK and Rijkswaterstaat — make projects instantly relevant to Dutch employers.
+- Respect the GDPR, dataset licences, database rights and website terms in every project.
+- Document projects clearly on GitHub, with model or data cards where relevant.
+- Two or three well-documented, domain-relevant projects are usually enough; after your first relevant job, portfolio work matters less.
+
+## Where to Start
+
+Pick one project you've already done and make its outcome, iteration process and verifiability explicit and visible — often more valuable than starting an entirely new project from scratch.
+
+Browse current junior AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

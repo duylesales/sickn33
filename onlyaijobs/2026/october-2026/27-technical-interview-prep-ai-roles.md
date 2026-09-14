@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-10-27",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/technical-interview-prep-ai-roles"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/technical-interview-prep-ai-roles"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Technical interviews for AI roles"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Thing", "name": "NVP Recruitment Code (NVP Sollicitatiecode)"},
+    {"@type": "GovernmentOrganization", "name": "Dutch Data Protection Authority (Autoriteit Persoonsgegevens)"},
+    {"@type": "Legislation", "name": "General Data Protection Regulation (GDPR)"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"},
+    {"@type": "Legislation", "name": "EU Pay Transparency Directive (EU) 2023/970"},
+    {"@type": "GovernmentOrganization", "name": "Immigration and Naturalisation Service (IND)"},
+    {"@type": "GovernmentOrganization", "name": "Justis (Certificate of Conduct / VOG)"},
+    {"@type": "Thing", "name": "STAR interview method"},
+    {"@type": "Thing", "name": "Take-home assignments"},
+    {"@type": "Organization", "name": "OnlyAIJobs"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ A candidate who spends the week before an interview drilling algorithm puzzles i
 ## Why Over-Preparing for Algorithms Can Backfire
 
 Spending disproportionate prep time on algorithmic puzzles at the expense of practicing how you'd talk through a past project's tradeoffs means you're strong on the smaller part of the evaluation and underprepared for the larger part.
-
-## Where to Start
-
-Practice narrating past projects out loud — the framing decisions, the evaluation choices, the mistakes and what you learned from them — at least as much as you practice algorithmic problems.
-
-Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Deeper Look at How to Practice Judgment, Not Just Recall
 
@@ -115,6 +123,46 @@ A final practical observation: interview preparation is frequently treated as a 
 A more sustainable approach treats the core material as a durable asset. Preparing two or three project walkthroughs thoroughly — including the decision points, limitations and outcomes discussed above — produces material that serves across many interviews with only light adaptation. Practising these until they can be delivered fluently, and recording yourself once to hear where they ramble, is an investment that pays across an entire search rather than a single conversation.
 
 The same applies to the failure and uncertainty questions: having genuinely reflected on a small number of relevant experiences produces answers that work across many contexts, and the reflection itself often surfaces professional insights worth having independently of any interview.
+
+## Know Your Rights in a Dutch Selection Process
+
+Preparing for an interview also means knowing what employers may and may not ask of you.
+
+- **NVP Recruitment Code.** The Dutch Association for Personnel Management & Organisation Development (NVP) publishes a recruitment code with guidelines for fair selection procedures, covering topics such as transparency about the process, feedback and handling of applicant data. Many Dutch employers use it as a reference.
+- **Applicant data and the GDPR.** Employers may only process applicant data necessary for the procedure. The **Dutch Data Protection Authority** advises deleting application data within four weeks after the procedure ends, unless the applicant consents to a longer retention period.
+- **Reference checks and online screening.** Employers should inform you before contacting references or screening your online presence, and such checks must be proportionate.
+- **Certificate of Conduct (VOG).** Some roles require a Certificate of Conduct issued by **Justis**, the screening authority of the Ministry of Justice and Security. Employers should mention this in advance.
+- **Salary questions.** Under the **EU Pay Transparency Directive**, which member states must implement by June 2026, employers must provide pay range information before the interview and may not ask about your pay history.
+
+## When AI Is Used to Assess You
+
+Ironically, candidates for AI roles are increasingly assessed with AI tools themselves — automated CV screening, recorded video interviews or coding assessments with automated scoring. Under the **EU Artificial Intelligence Act**, AI systems used for recruitment and selection are classified as high-risk, which brings obligations around human oversight, transparency and risk management. The GDPR also gives you rights regarding automated decision-making with significant effects. It is perfectly reasonable to ask whether AI tools are used in the process and whether a human reviews the outcome.
+
+## Practical Formats You Are Likely to Encounter
+
+| Format | What it tests | How to prepare |
+|---|---|---|
+| Project walkthrough | Depth, ownership, judgement | Prepare two projects using a structure such as the **STAR method** (situation, task, action, result), including what went wrong |
+| Case question | Problem framing under ambiguity | Practise asking clarifying questions before proposing a solution |
+| Take-home assignment | Practical skills and communication | Ask about the expected time investment; document assumptions and trade-offs clearly |
+| Live coding | Fluency with data manipulation and basic algorithms | Practise pandas or SQL tasks and explaining your reasoning aloud |
+| Culture and team interview | Collaboration and working style | Prepare examples of disagreeing constructively and learning from feedback |
+
+For international candidates, ask early whether the employer is a recognised sponsor with the **IND**, since that determines whether a highly skilled migrant permit is possible. Vacancies on **OnlyAIJobs** show the employer and exact location, which helps you research a company before the first conversation.
+
+## Key Takeaways
+
+- Judgement-based questions decide most AI hiring outcomes more than algorithmic puzzles.
+- Prepare strong project walkthroughs, ambiguous case questions and honest answers about failure.
+- The NVP Recruitment Code, GDPR guidance on applicant data and the Pay Transparency Directive protect candidates in Dutch procedures.
+- AI tools used in recruitment are high-risk under the AI Act; you may ask how they are used and whether a human reviews outcomes.
+- Prepare differently per segment and build a reusable foundation of project stories and case practice.
+
+## Where to Start
+
+Practice narrating past projects out loud — the framing decisions, the evaluation choices, the mistakes and what you learned from them — at least as much as you practice algorithmic problems.
+
+Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

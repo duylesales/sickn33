@@ -1,11 +1,11 @@
-Een gemeente die aan inwoners wil laten zien dat er lokaal interessant werk is, heeft vaak weinig meer dan een generieke verwijzing naar "de vacaturebank". Dat vertelt niemand welke specifieke rol op welke afstand van hun huis openstaat.
+💡 A municipality that wants to show residents there is interesting local work often has little more than a generic reference to "the job board." That tells nobody which specific role is open at what distance from their home.
 
-Een adresniveau-vacaturebank maakt dat concreet — niet "er is werk in onze gemeente" als abstracte bewering, maar een direct te checken lijst. Bruikbaar voor communicatie richting inwoners, ondersteuning van bestaande werkgeversrelaties, en onderbouwing van vestigingsbeleid.
+🏛️ An address-level job board makes it concrete — not "there is work in our municipality" as an abstract claim, but a directly checkable list. Useful for communication with residents, supporting existing employer relationships, and substantiating business location policy.
 
-Geen vervanging van arbeidsmarktbeleid — een concreet, laagdrempelig instrument voor een specifiek zichtbaarheidsprobleem.
+✅ Not a replacement for labour market policy — a concrete, low-threshold tool for a specific visibility problem.
 
-Neem contact op: info@onlyaijobs.eu
+✉️ Get in touch: info@onlyaijobs.eu
 
-Lees het volledige verhaal: https://onlyaijobs.eu/blog/gemeente-economische-zaken-zichtbare-vacatures
+📖 Read the full story: https://onlyaijobs.eu/blog/municipal-economic-affairs-visible-ai-vacancies
 
-#OnlyAIJobs #Gemeente #EconomischeZaken #Nederland
+#OnlyAIJobs #Municipality #EconomicAffairs #Netherlands

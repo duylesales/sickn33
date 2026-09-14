@@ -1,9 +1,9 @@
-Maastricht ligt fysiek dichter bij Aken en Luik dan bij Amsterdam. Die grensligging, gecombineerd met een sterk internationaal georiënteerde universiteit, geeft de stad een AI-arbeidsmarkt die anders aanvoelt — internationaler, en sterk verbonden met gezondheidszorg en life sciences.
+💡 Maastricht is physically closer to Aachen and Liège than to Amsterdam. That border location, combined with a strongly internationally oriented university, gives the city an AI labour market that feels different — more international, and closely tied to healthcare and life sciences.
 
-Klinische data-analyse en gezondheidsonderzoek, vergelijkbaar met wat je in Nijmegen of Leiden ziet, maar met een nadrukkelijker internationale component door de nabijheid van Duitse en Belgische werkgevers.
+🎓 Clinical data analysis and health research, similar to what you see in Nijmegen or Leiden, but with a more pronounced international component thanks to nearby German and Belgian employers.
 
-Als je openstaat voor een internationalere werkomgeving, is dit de moeite van het overwegen waard.
+✅ If you're open to a more international work environment, it's worth considering.
 
-Bekijk actuele vacatures: https://onlyaijobs.eu/blog/ai-vacatures-maastricht
+🔎 Browse current jobs: https://onlyaijobs.eu/blog/ai-jobs-maastricht
 
-#OnlyAIJobs #AIVacatures #Maastricht #Limburg
+#OnlyAIJobs #AIJobs #Maastricht #Limburg

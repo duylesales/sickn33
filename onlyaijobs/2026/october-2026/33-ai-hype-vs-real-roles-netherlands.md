@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-11-02",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-hype-vs-real-roles-netherlands"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-hype-vs-real-roles-netherlands"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Distinguishing real AI roles from hype-driven job postings"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "GovernmentOrganization", "name": "Statistics Netherlands (CBS)"},
+    {"@type": "Thing", "name": "CBS AI Monitor"},
+    {"@type": "Thing", "name": "EU Digital Decade targets"},
+    {"@type": "Organization", "name": "Netherlands AI Coalition (NL AIC)"},
+    {"@type": "Organization", "name": "Techleap.nl"},
+    {"@type": "Organization", "name": "Dealroom"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"},
+    {"@type": "Thing", "name": "AI literacy obligation (Article 4, AI Act)"},
+    {"@type": "Thing", "name": "Strategic Action Plan for Artificial Intelligence (Netherlands)"},
+    {"@type": "Organization", "name": "OnlyAIJobs"}
+  ]
 }
 </script>
 
@@ -36,12 +50,6 @@ Not every company posting an "AI" role has a real, funded plan behind it. Some p
 **Vague ambition without a current system.** "Help us leverage AI to transform the business" with no mention of an existing system or dataset could mean you'd be the first person figuring out what that means — not necessarily bad, but a different job than the posting implies.
 
 **No clear reporting structure.** If it's unclear who you'd report to or how big the team is, ask directly — this is a fair, normal question, not a red flag on your part.
-
-## Where to Start
-
-Don't rule out a vague-sounding posting automatically — some genuinely early-stage roles are still worth taking. But go into the conversation with specific questions that separate real momentum from aspiration, rather than assuming the posting tells the whole story either way.
-
-Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Deeper Look at Why Aspiration-Heavy Postings Happen in Good Faith
 
@@ -116,6 +124,38 @@ Organisations in sectors where AI adoption is more reputationally visible — co
 Research-adjacent employers, discussed in the Nijmegen, Leiden and Wageningen analyses, rarely exhibit either pattern, because their work is defined by funded projects with specified objectives. Vagueness in a posting from such an employer is more often a drafting artefact than a signal about substance.
 
 Recognising which part of the market a posting comes from adjusts how much weight to place on its vagueness, and prevents a candidate from applying a single interpretive rule across employers whose situations genuinely differ.
+
+## What Public Data Says About Real AI Adoption in the Netherlands
+
+The gap between AI aspiration and AI reality isn't just anecdotal; public statistics help put job postings in context.
+
+**Statistics Netherlands (CBS).** CBS publishes figures on the use of AI technologies by Dutch companies, including through its AI Monitor. These figures consistently show that AI adoption is much higher among large companies than among small and medium-sized enterprises, and that it varies strongly by sector. For candidates, this means an "AI role" at a large company in finance or ICT is statistically more likely to be backed by existing infrastructure than a similar posting at a small company in a sector with low adoption — although individual companies of course differ.
+
+**EU Digital Decade targets.** The European Union has set a target for 75% of EU companies to use cloud computing, big data or AI by 2030. National and European ambitions like this encourage companies to signal AI activity — a driver of aspirational postings as well as real investment.
+
+**Dutch policy.** The Netherlands published a **Strategic Action Plan for Artificial Intelligence** in 2019, and public-private initiatives such as the **Netherlands AI Coalition (NL AIC)** promote adoption across sectors. Organisations such as **Techleap.nl** and data platforms such as **Dealroom** show where venture funding for AI companies actually goes.
+
+## How Regulation Changes the Picture
+
+The **EU Artificial Intelligence Act** makes real AI work more visible in two ways. First, since February 2025, organisations that provide or deploy AI systems must take measures to ensure sufficient **AI literacy** among their staff — an obligation that pushes companies to formalise who does what with AI. Second, organisations deploying high-risk AI systems face governance obligations that require dedicated people and processes. A company that can explain how it approaches these obligations is far more likely to have a real, funded AI function than one that can't.
+
+## Using Job Platforms to Spot the Difference
+
+On a specialist job board such as **OnlyAIJobs**, vacancies are categorised by type of work — Development, Machine Learning, Research, Infrastructure, Ethics & Governance, AI Product and others — and shown with the employer and exact location. Comparing how precisely a posting fits a category is a quick first filter: a real role usually maps clearly onto one or two categories, while an aspirational posting often mixes responsibilities from five categories without a clear centre.
+
+## Key Takeaways
+
+- Real, funded roles name concrete problems, existing data, team structure and reporting lines; aspirational postings list buzzwords.
+- CBS figures show AI adoption is much higher at large companies and varies strongly by sector — useful context for judging a posting.
+- EU Digital Decade targets and Dutch AI policy encourage companies to signal AI activity, which drives both real investment and aspiration.
+- The AI Act's AI literacy and governance obligations push companies to formalise AI work — ask how they handle them.
+- An undefined role can be the right choice, provided you protect yourself with clear agreements about scope, resources and evaluation.
+
+## Where to Start
+
+Don't rule out a vague-sounding posting automatically — some genuinely early-stage roles are still worth taking. But go into the conversation with specific questions that separate real momentum from aspiration, rather than assuming the posting tells the whole story either way.
+
+Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

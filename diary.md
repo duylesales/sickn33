@@ -615,3 +615,27 @@
     - Đủ 5 FAQ, đúng thứ tự mục, thân bài ≥ 1.800 từ.
     - 0 tham chiếu slug cũ. Chưa commit.
   - **Còn tồn**: `october-2026/` còn khoảng 22 bài tiếng Hà Lan.
+- **15:46**: Audit và viết bổ sung **toàn bộ 60 bài** trong [`onlyaijobs/2026/october-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/october-2026/) theo chuẩn SEO/GEO-entity, 100% tiếng Anh:
+  - **Kết quả audit**:
+    - Thực tế có 26 bài tiếng Hà Lan (không phải khoảng 22 như ước tính trước).
+    - 29 bài quá ngắn (358–1.680 từ).
+    - Cả 60 bài thiếu `inLanguage`/`about`/`mentions` và Key Takeaways, CTA nằm giữa bài.
+  - **Xử lý**:
+    - Dịch và viết lại 26 bài tiếng Hà Lan, mở rộng các bài ngắn.
+    - Tái cấu trúc các bài dài tiếng Anh bằng script: thêm mục thực thể thật, Key Takeaways, CTA ở cuối.
+    - Đổi slug sang tiếng Anh cho 27 bài (`git rm` file cũ); không có tham chiếu slug cũ nào trong repo.
+    - Bài 19 (Vlaardingen) đính chính việc Unilever chuyển R&D thực phẩm sang Wageningen năm 2019.
+  - **Kiểm định**:
+    - 60/60 JSON-LD hợp lệ, `inLanguage: en`, đủ 5 FAQ, đúng thứ tự mục.
+    - Thân bài 1.802–2.781 từ (trung bình 2.094). 0 cụm từ tiếng Hà Lan còn sót.
+  - **Lưu ý**: October không có bài social. Chưa commit.
+- **15:52**: Viết **60 bài social** cho [`onlyaijobs/2026/october-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/october-2026/), theo mẫu tháng 9 (file `<số>-<slug>-social.md`, 100% tiếng Anh):
+  - **Nội dung**:
+    - Mỗi bài có đoạn mở đầu, 1–2 đoạn nêu thực thể và ý chính của bài gốc, và một câu chốt.
+    - Không bịa số liệu; chỉ nêu những thực thể đã có trong bài gốc (ASML, Chemelot, North Sea Port, Borssele, Wet DBA, AI Act…).
+  - **CTA theo persona**:
+    - Ứng viên (01–40, 56–60): "Browse current jobs: https://onlyaijobs.eu/jobs".
+    - Nhà tuyển dụng (41–50): "Post your vacancy — first listing free: info@onlyaijobs.eu".
+    - Đối tác vùng (51–55): "Get in touch: info@onlyaijobs.eu".
+  - **Link và hashtag**: dòng "Read the full story" lấy slug trực tiếp từ tên file bài viết; hashtag có #OnlyAIJobs và các thẻ theo chủ đề.
+  - **Kiểm định**: 60/60 file có link khớp slug và file bài gốc tồn tại, dài 70–200 từ, không có từ tiếng Hà Lan. Chưa commit.

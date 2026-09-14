@@ -1,9 +1,9 @@
-Breda combineert een creatieve/game-opleidingstraditie met een agrifood-sector die in stilte datagedreven is geworden. Twee heel verschillende soorten AI-werk die elkaar zelden raken in een vacaturetekst.
+💡 Breda combines a creative technology and games education tradition with an agrifood sector that has quietly become data-driven. Two very different kinds of AI work that rarely meet in a job ad.
 
-Procedurele generatie en gedragsmodellen in creatieve technologie. Oogstvoorspelling en kwaliteitscontrole in agrifood. Beide worden getiteld door afdelingen die het zelf niet als "AI-functie" zien — "technical artist" of "kwaliteitsanalist", niet "machine learning engineer".
+🤖 Procedural generation and behaviour models in creative technology. Harvest forecasting and quality control in agrifood. Both are titled by departments that don't see them as an "AI role" — "technical artist" or "quality analyst," not "machine learning engineer."
 
-Filteren op categorie in plaats van trefwoord is de enige manier om beide zichtbaar te maken.
+✅ Filtering by category instead of keyword is the only way to make both visible.
 
-Lees de volledige analyse en bekijk actuele vacatures: https://onlyaijobs.eu/blog/ai-vacatures-breda
+📖 Read the full analysis and browse current vacancies: https://onlyaijobs.eu/blog/ai-jobs-breda
 
-#OnlyAIJobs #AIVacatures #Breda #Brabant #Agrifood
+#OnlyAIJobs #AIJobs #Breda #Brabant #Agrifood

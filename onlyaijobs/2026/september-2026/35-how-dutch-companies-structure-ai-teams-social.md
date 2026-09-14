@@ -1,9 +1,9 @@
-Solliciteren op "data scientist" bij een bedrijf met één datateam van drie mensen is een fundamenteel andere ervaring dan dezelfde titel bij een bedrijf met tientallen specialisten. Geen van beide is beter, maar het bepaalt meer over je dagelijkse werk dan de titel zelf.
+💡 Applying for "data scientist" at a company with one data team of three people is a fundamentally different experience from the same title at a company with dozens of specialists. Neither is better, but it determines more about your daily work than the title itself.
 
-De eenzame generalist: veel autonomie, weinig sparringpartners. Het kleine, gemengde team: breed leren, trager diepgang. De gespecialiseerde afdeling: meer diepgang, meer afhankelijkheid van andere teams.
+👥 The lone generalist: lots of autonomy, few sparring partners. The small, mixed team: broad learning, slower depth. The specialised department: more depth, more dependence on other teams.
 
-Vraag expliciet naar teamgrootte en samenstelling — dat vertelt meer dan de vacaturetekst.
+✅ Ask explicitly about team size and composition — it tells you more than the job ad.
 
-Lees het volledige verhaal: https://onlyaijobs.eu/blog/hoe-nederlandse-bedrijven-ai-teams-structureren
+📖 Read the full story: https://onlyaijobs.eu/blog/how-dutch-companies-structure-ai-teams
 
-#OnlyAIJobs #AITeam #Carrièreadvies #Nederland
+#OnlyAIJobs #AITeam #CareerAdvice #Netherlands

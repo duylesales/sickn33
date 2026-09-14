@@ -1,9 +1,9 @@
-Amersfoort wordt door de meeste kandidaten behandeld als een woonplaats die toevallig dicht bij Utrecht en Amsterdam ligt — niet als bestemming voor werk op zich. Jammer, want de stad heeft een reële verzekerings- en dienstverleningssector met datawerk rond risicomodellering en fraudedetectie.
+💡 Most candidates treat Amersfoort as a place to live that happens to be close to Utrecht and Amsterdam — not as a work destination in its own right. A shame, because the city has a real insurance and services sector with data work around risk modelling and fraud detection.
 
-De centrale ligging in Nederland betekent een relatief korte reistijd vanuit een breder gebied dan je zou denken — iets waar weinig kandidaten expliciet naar kijken.
+🚲 Its central location means a relatively short commute from a wider area than you'd think — something few candidates explicitly look at.
 
-Overweeg Amersfoort als werklocatie op zich, niet alleen als woonplaats.
+✅ Consider Amersfoort as a work location in its own right, not just a place to live.
 
-Bekijk actuele vacatures: https://onlyaijobs.eu/blog/ai-vacatures-amersfoort
+🔎 Browse current jobs: https://onlyaijobs.eu/blog/ai-jobs-amersfoort
 
-#OnlyAIJobs #AIVacatures #Amersfoort #Nederland
+#OnlyAIJobs #AIJobs #Amersfoort #Netherlands

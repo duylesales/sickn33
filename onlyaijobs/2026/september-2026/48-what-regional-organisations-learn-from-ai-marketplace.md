@@ -1,114 +1,183 @@
 ---
-Title: "Wat regionale organisaties kunnen leren van een tweezijdige AI-marketplace"
-Keywords: regionale ontwikkeling ai, tweezijdige marketplace vacatures, brainport model, regionale samenwerking werkgevers, OnlyAIJobs
+Title: "What Regional Organisations Can Learn From a Two-Sided AI Marketplace"
+Keywords: regional development ai, two-sided marketplace jobs, brainport model, regional employer collaboration, OnlyAIJobs
 Buyer Stage: Awareness / Regional Partnership
-Target Persona: D (Regionale overheid, techhub of brancheorganisatie)
+Target Persona: D (Regional government, tech hub or industry association)
 Content Format: Policy Brief
 ---
 
-# Wat regionale organisaties kunnen leren van een tweezijdige AI-marketplace
+# What Regional Organisations Can Learn From a Two-Sided AI Marketplace
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Wat regionale organisaties kunnen leren van een tweezijdige AI-marketplace",
-  "description": "Een marketplace die werkgevers en werkzoekenden verbindt, moet allebei tegelijk bedienen om te werken — een dynamiek die ook relevant is voor regionale economische ontwikkeling.",
+  "headline": "What Regional Organisations Can Learn From a Two-Sided AI Marketplace",
+  "description": "A marketplace connecting employers and job seekers has to serve both at once to work — a dynamic that is also relevant to regional economic development.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-09",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/wat-regionale-organisaties-leren-van-ai-marketplace"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/what-regional-organisations-learn-from-ai-marketplace"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Two-sided marketplaces and regional economic development"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Person", "name": "Jean Tirole"},
+    {"@type": "Person", "name": "Jean-Charles Rochet"},
+    {"@type": "Organization", "name": "Brainport Development"},
+    {"@type": "Organization", "name": "Brabant Development Agency (BOM)"},
+    {"@type": "Organization", "name": "InnovationQuarter"},
+    {"@type": "Organization", "name": "Oost NL"},
+    {"@type": "Organization", "name": "Northern Netherlands Development Agency (NOM)"},
+    {"@type": "Thing", "name": "Region Deals (Regio Deals)"},
+    {"@type": "Thing", "name": "Human Capital Agendas of the Dutch top sectors"}
+  ]
 }
 </script>
 
-Een vacaturebank die alleen werkzoekenden aantrekt zonder genoeg werkgevers, of alleen werkgevers zonder genoeg werkzoekenden, werkt voor geen van beide kanten — een klassiek "kip-en-ei"-probleem van elke tweezijdige marketplace. Regionale economische ontwikkeling heeft precies dezelfde structuur, alleen wordt dat zelden zo benoemd.
+A job board that only attracts job seekers without enough employers, or only employers without enough job seekers, works for neither side — a classic chicken-and-egg problem of every two-sided marketplace. Regional economic development has exactly the same structure; it is just rarely described that way.
 
-## De parallel, concreet gemaakt
+## The Parallel, Made Concrete
 
-Een regio die talent wil vasthouden, moet tegelijk aantrekkelijke werkgelegenheid hebben én ervoor zorgen dat afgestudeerden die werkgelegenheid daadwerkelijk zien. Investeren in alleen het een of het ander lost het probleem niet op: bedrijven aantrekken zonder zichtbaarheid voor lokaal talent levert geen retentie op, en enkel awareness-campagnes zonder reële werkgelegenheid leveren een loos advies op.
+A region that wants to retain talent must have attractive employment and, at the same time, make sure graduates actually see that employment. Investing in only one or the other doesn't solve the problem: attracting companies without visibility to local talent produces no retention, and awareness campaigns without real employment produce empty advice.
 
-## Wat dit betekent voor prioritering
+## What This Means for Prioritisation
 
-**Zichtbaarheid is vaak de goedkopere kant van het probleem.** Een regio met reële werkgelegenheid maar een zichtbaarheidsprobleem lost dat relatief goedkoop op, vergeleken met het aantrekken van compleet nieuwe werkgevers. Beide zijn nodig op de lange termijn, maar zichtbaarheid is de kant die het snelst te verbeteren is met bestaande middelen.
+**Visibility is often the cheaper side of the problem.** A region with real employment but a visibility problem can solve it relatively cheaply compared with attracting entirely new employers. Both are needed in the long term, but visibility is the side that can be improved fastest with existing resources.
 
-**Bestaande werkgeversrelaties zijn het startpunt, niet nieuwe acquisitie.** Regionale organisaties hebben vaak al relaties met lokale werkgevers via andere programma's — het aanmoedigen van die werkgevers om vacatures zichtbaar te maken, is een lagere drempel dan het werven van geheel nieuwe bedrijven.
+**Existing employer relationships are the starting point, not new acquisition.** Regional organisations often already have relationships with local employers through other programmes — encouraging those employers to make vacancies visible is a lower threshold than recruiting entirely new companies.
 
-**Succes is meetbaar op kleine schaal voordat je het opschaalt.** Een pilot met een handvol werkgevers en een concrete verwijzing naar studenten of werkzoekenden is een haalbare eerste stap om te testen of de aanpak werkt, voordat je het regiobreed uitrolt.
+**Success can be measured on a small scale before scaling up.** A pilot with a handful of employers and a concrete referral to students or job seekers is a feasible first step to test whether the approach works, before rolling it out across the region.
 
-## Waar te beginnen
+## Three Marketplace Principles That Apply Directly
 
-Bekijk je huidige regionale strategie door de lens van een tweezijdige marketplace: waar zit het echte tekort — te weinig werkgelegenheid, of te weinig zichtbaarheid van bestaande werkgelegenheid? Dat bepaalt waar de eerste investering het meeste oplevert.
+**Cold start is the real problem, not long-term scale.** Every marketplace initially struggles with too little supply or too little demand to attract the other side — a region with a talent retention problem has exactly the same structure, and the solution starts with the smallest, most concrete piece of supply or demand you can activate, not with a large, all-encompassing plan.
 
-Neem contact op via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) om te bespreken hoe dit past bij het werk van je organisatie.
+**Liquidity in one specific segment beats broad but thin coverage.** A marketplace that first focuses on one specific niche (for example, only AI/ML vacancies in one sub-region) and achieves full coverage there builds trust faster than an attempt to serve an entire province at once.
 
-## Drie marketplace-principes die direct toepasbaar zijn
+**Trust from both sides is fragile and builds asymmetrically.** Employers only trust a platform once there are candidates; candidates only trust it once there are vacancies. This chicken-and-egg problem calls for a deliberate first move from one of the two sides, not for waiting until both grow by themselves.
 
-**Cold-start is het echte probleem, niet lange-termijn schaal.** Elke marketplace worstelt in het begin met te weinig aanbod of te weinig vraag om de andere kant aan te trekken — een regio met een talent-retentieprobleem heeft precies dezelfde structuur, en de oplossing begint met het kleinste, meest concrete stukje aanbod of vraag dat je kunt activeren, niet met een groot, allesomvattend plan.
+## Comparison Table: Traditional Regional Approach vs. Marketplace Thinking
 
-**Liquiditeit op één specifiek segment verslaat brede maar dunne dekking.** Een marketplace die zich eerst richt op één specifieke niche (bijvoorbeeld alleen AI/ML-vacatures in één subregio) en daar volledige dekking bereikt, bouwt sneller vertrouwen op dan een poging om in één keer een hele provincie te bedienen.
-
-**Vertrouwen van beide kanten is broos en asymmetrisch op te bouwen.** Werkgevers vertrouwen een platform pas als er al kandidaten zijn; kandidaten vertrouwen het pas als er al vacatures zijn. Dit kip-en-ei-probleem vraagt om een bewuste eerste zet vanuit een van de twee kanten, niet om te wachten tot beide vanzelf groeien.
-
-## Vergelijkingstabel: traditionele regionale aanpak vs. marketplace-denken
-
-| Aspect | Traditionele regionale aanpak | Marketplace-denken toegepast |
+| Aspect | Traditional regional approach | Marketplace thinking applied |
 |---|---|---|
-| Startpunt | Breed beleid voor de hele regio | Eén specifiek, smal segment volledig bedienen |
-| Prioriteit | Nieuwe werkgevers aantrekken | Zichtbaarheid van bestaand aanbod eerst |
-| Meetpunt van succes | Aantal nieuwe vestigingen | Aantal daadwerkelijke matches op het smalle segment |
-| Tijdshorizon voor eerste resultaat | Jaren | Maanden |
+| Starting point | Broad policy for the whole region | Fully serve one specific, narrow segment |
+| Priority | Attract new employers | Visibility of existing supply first |
+| Measure of success | Number of new establishments | Number of actual matches in the narrow segment |
+| Time horizon for first result | Years | Months |
 
-## Waarom dit een andere manier van rapporteren aan bestuurders vraagt
+## Why This Calls for a Different Way of Reporting to Administrators
 
-Een marketplace-aanpak levert in het begin bewust kleine, smalle resultaten op — dat voelt voor een bestuurder die gewend is aan brede beleidsdoelen soms als een teleurstellend laag ambitieniveau. Het tegenovergestelde is waar: een klein, volledig bediend segment is het bewijs dat het onderliggende mechanisme werkt, en de basis waarop je vervolgens schaalt. Communiceer dit expliciet vooraf, zodat een klein eerste resultaat niet verkeerd wordt geïnterpreteerd als falen.
+A marketplace approach deliberately produces small, narrow results at first — which can feel like a disappointingly low level of ambition to an administrator used to broad policy goals. The opposite is true: a small, fully served segment is proof that the underlying mechanism works, and the basis on which you then scale. Communicate this explicitly in advance, so a small first result isn't misinterpreted as failure.
 
-## Een concreet scenario: hoe een pilot er in de praktijk uit zou zien
+## A Concrete Scenario: What a Pilot Would Look Like in Practice
 
-Een regionale ontwikkelingsorganisatie kiest, in plaats van een provinciebrede aanpak, voor een pilot met tien lokale werkgevers in één specifieke sector (bijvoorbeeld AI/ML/Data-gerelateerd werk) en één specifieke doelgroep (recent afgestudeerden van één technische opleiding). Ze meten gedurende drie maanden hoeveel studenten daadwerkelijk een van deze tien werkgevers overwegen die ze anders niet hadden gevonden. Dit smalle experiment kost weinig, levert binnen een kwartaal meetbare data op, en geeft de organisatie een concreet, verdedigbaar verhaal om aan bestuurders te presenteren voordat er wordt geïnvesteerd in een grotere uitrol.
+Instead of a province-wide approach, a regional development organisation chooses a pilot with ten local employers in one specific sector (for example, AI/ML/Data-related work) and one specific target group (recent graduates of one technical programme). For three months, they measure how many students actually consider one of these ten employers they would not otherwise have found. This narrow experiment costs little, produces measurable data within a quarter, and gives the organisation a concrete, defensible story to present to administrators before investing in a larger rollout.
 
-## Een veelvoorkomend misverstand over wat "succes" in deze context betekent
+## A Common Misconception About What "Success" Means in This Context
 
-Bestuurders die gewend zijn aan brede beleidsdoelen verwachten soms dat een eerste pilot al meetbare impact op regionale werkgelegenheidscijfers moet laten zien. Dat is een verkeerde maatstaf voor deze fase — het juiste succescriterium voor een eerste pilot is of het onderliggende mechanisme (zichtbaarheid leidt tot meer lokale sollicitaties) daadwerkelijk werkt op kleine schaal, niet of het al meetbaar is op het niveau van de hele regionale economie.
+Administrators used to broad policy goals sometimes expect a first pilot to already show measurable impact on regional employment figures. That is the wrong yardstick for this phase — the right success criterion for a first pilot is whether the underlying mechanism (visibility leads to more local applications) actually works on a small scale, not whether it is already measurable at the level of the entire regional economy.
 
-## Waarom deze marketplace-logica zich ook uitstrekt tot hoe je communiceert over voortgang
+## Why This Marketplace Logic Also Extends to How You Communicate Progress
 
-Een marketplace-aanpak vraagt niet alleen om een andere manier van werken, maar ook om een andere manier van rapporteren: in plaats van kwartaalupdates te formuleren rond brede regionale indicatoren, rapporteer je vooruitgang op het specifieke, smalle segment waarop je je richt — hoeveel werkgevers zijn aangesloten, hoeveel matches zijn er gemaakt binnen dat segment — en bouw je vanaf daar uit, in plaats van vanaf het begin te proberen een volledig regionaal verhaal te vertellen.
+A marketplace approach requires not only a different way of working, but also a different way of reporting: instead of framing quarterly updates around broad regional indicators, you report progress on the specific, narrow segment you are targeting — how many employers have joined, how many matches have been made within that segment — and build out from there, instead of trying to tell a complete regional story from the start.
 
-## Hoe je dit principe kunt toepassen buiten de AI-sector specifiek
+## How to Apply This Principle Beyond the AI Sector
 
-Hoewel dit artikel zich richt op AI/ML/Data-werkgelegenheid, is de onderliggende marketplace-logica — begin smal, bereik liquiditeit op één segment, breid daarna uit — een algemeen toepasbaar principe voor elke regionale organisatie die worstelt met een vergelijkbaar kip-en-ei-probleem, ongeacht de specifieke sector. Een regio die dit principe eenmaal succesvol heeft toegepast op één sector, bouwt intern een herbruikbare aanpak op die vervolgens sneller op een tweede of derde sector kan worden toegepast, met minder onzekerheid over of de aanpak daadwerkelijk werkt.
+Although this article focuses on AI/ML/Data employment, the underlying marketplace logic — start narrow, achieve liquidity in one segment, then expand — is a generally applicable principle for any regional organisation struggling with a similar chicken-and-egg problem, regardless of sector. A region that has successfully applied this principle to one sector builds a reusable internal approach that can then be applied faster to a second or third sector, with less uncertainty about whether it actually works.
 
-## Waarom dit type denken zelden van nature binnen overheidsorganisaties ontstaat
+## Why This Kind of Thinking Rarely Arises Naturally Within Government Organisations
 
-Overheidsorganisaties zijn doorgaans ingericht rond brede, gelijkmatige dienstverlening aan de hele bevolking of regio, niet rond het bewust bevoordelen van één smal segment om daar eerst liquiditeit te bereiken — een aanpak die in de private sector, waar marketplace-denken is ontstaan, veel gangbaarder is. Dit betekent dat het introduceren van marketplace-denken binnen een regionale overheidsorganisatie vaak een bewuste, expliciete cultuuromslag vereist, geen vanzelfsprekende toepassing van bestaande werkwijzen.
+Government organisations are usually set up around broad, even service provision to the entire population or region, not around deliberately favouring one narrow segment to reach liquidity there first — an approach much more common in the private sector, where marketplace thinking originated. This means that introducing marketplace thinking within a regional government organisation often requires a deliberate, explicit cultural shift, not a natural application of existing working methods.
 
-## Veelgestelde vragen
+## The Economic Theory Behind the Chicken-and-Egg Problem
 
-### (Scenario: regionale organisatie die overweegt in werkgeversacquisitie te investeren) Moeten we investeren in het aantrekken van nieuwe werkgevers, of in zichtbaarheid van bestaande vacatures?
-Dat hangt af van waar het echte tekort zit. Als er al reële werkgelegenheid is die onvoldoende zichtbaar is voor lokaal talent, is zichtbaarheid vaak de goedkopere en snellere investering dan het aantrekken van compleet nieuwe werkgevers.
+The comparison between a job board and a region is not a metaphor but an application of a well-researched economic concept.
 
-### (Scenario: organisatie die twijfelt of dit nieuwe relaties vergt) Moeten we nieuwe werkgeversrelaties opbouwen om dit te laten werken?
-Niet per se — bestaande relaties via andere programma's zijn vaak een goed startpunt. Het aanmoedigen van werkgevers die je al kent om vacatures zichtbaar te maken, is een lagere drempel dan nieuwe acquisitie.
+**Two-sided markets.** Economists **Jean-Charles Rochet** and **Jean Tirole** laid the foundations of the theory of two-sided markets in the early 2000s: platforms that bring together two different groups, where the value for one group depends on the size and quality of the other. Tirole received the Nobel Prize in Economics in 2014 for his work on market power and regulation, which includes this research. Job boards, credit card networks and marketplaces are textbook examples.
 
-### (Scenario: organisatie die bang is voor een te grote, onzekere investering) Hoe testen we of deze aanpak werkt zonder meteen groot te investeren?
-Begin met een pilot bij een handvol werkgevers en een concrete verwijzing naar studenten of werkzoekenden, en meet of dat daadwerkelijk tot meer lokale sollicitaties leidt voordat je het regiobreed uitrolt.
+**Network effects and liquidity.** Two-sided markets create indirect network effects: more employers attract more job seekers and vice versa. "Liquidity" means that a participant who joins the platform has a reasonable chance of finding a suitable match. Below a certain threshold that chance is too small and both sides drop out — the cold-start problem.
 
-### (Scenario: organisatie die het kip-en-ei-probleem herkent maar niet weet waar te beginnen) Wat is de eerste stap als we zowel een werkgevers- als een zichtbaarheidsprobleem hebben?
-Begin met zichtbaarheid van de werkgelegenheid die al bestaat — dat is doorgaans de goedkopere kant van het probleem en levert sneller meetbare resultaten op dan nieuwe werkgeversacquisitie.
+**What this means for regions.** A region with AI companies but insufficient visibility among graduates sits exactly below that liquidity threshold: the employers are there, but to a student the chance of a match feels too small to search locally. Increasing visibility lowers that threshold without a single new company having to arrive.
 
-### (Scenario: organisatie die wil weten of dit een vervanging is van bestaand beleid) Vervangt dit onze bestaande economische ontwikkelingsstrategie?
-Nee — het is een aanvullende lens om te bepalen waar de eerste investering het meest oplevert, geen vervanging van bestaand beleid.
+**OnlyAIJobs itself faces this challenge too.** A specialist job board has to gather enough vacancies to be interesting to job seekers, and enough job seekers to be interesting to employers. That is exactly why the first vacancy is free and why partnerships with regional partners are so valuable: it is the same logic, seen from the other side.
+
+## The Dutch Regional Landscape: Who Can Activate Which Side
+
+The Netherlands has a network of organisations that can each influence part of the two-sided market.
+
+| Type of organisation | Examples | Which side they can activate |
+|---|---|---|
+| **Regional development agencies** | Brainport Development, Brabant Development Agency (BOM), InnovationQuarter, Oost NL, Northern Netherlands Development Agency (NOM) | Employers: through existing portfolios and innovation programmes |
+| **Regional partnerships** | Midpoint Brabant and similar triple-helix partnerships | Both sides: government, education and business together |
+| **Educational institutions** | Research universities, universities of applied sciences, vocational colleges | Job seekers: students and alumni |
+| **Municipalities and provinces** | Economic affairs departments, provincial programmes | Both sides: employer contacts and communication with residents |
+| **National-regional cooperation** | Region Deals | Resources for regional challenges, including talent retention |
+| **Top sectors** | Human Capital Agendas of the top sectors | Alignment between education and labour market needs in sectors such as high tech and ICT |
+
+The lesson from marketplace theory is that each of these parties can only activate one side well. A development agency has employer contacts but little direct line to students; a university of applied sciences has students but limited insight into all regional employers. Cooperation between them is not a nice-to-have, but the condition for reaching liquidity.
+
+## Indicators That Fit Marketplace Thinking
+
+Anyone setting up a pilot needs different indicators than classic regional economic figures.
+
+| Indicator | What it measures | Why it is relevant |
+|---|---|---|
+| **Supply in the segment** | Number of visible AI, ML and data vacancies within the pilot region | Is there enough to give a student a real choice? |
+| **Active employers** | Number of employers that have made at least one vacancy visible | Breadth of supply, not just volume |
+| **Reach among the target group** | Number of students or alumni who received or used the referral | Has the demand side actually been reached? |
+| **Local applications** | Applications to pilot employers from the target group | The mechanism: does visibility lead to action? |
+| **Matches** | Internships or jobs resulting from the pilot | The ultimate result |
+| **Repeat use** | Employers posting a second vacancy | Trust from the supply side |
+
+## A Pilot Design in Five Steps
+
+1. **Choose one segment and one sub-region**, for example AI and data roles within a radius of thirty kilometres around one city.
+2. **Activate supply first** through existing employer contacts: ten to twenty employers who make their vacancies visible.
+3. **Then activate demand** through one or two educational institutions in the same sub-region, aimed at graduating students.
+4. **Measure for three to six months** using the indicators above.
+5. **Report honestly** on what worked and what didn't, and only then decide on expanding to a second segment or sub-region.
+
+## Key Takeaways
+
+- Rochet and Tirole's theory of two-sided markets explains why regions and job boards struggle with the same chicken-and-egg problem.
+- Liquidity, not scale, is the first goal: a student must see a real chance of a local match.
+- Regional development agencies, educational institutions, municipalities, Region Deals and top sectors can each activate one side; together they reach liquidity.
+- Measure with marketplace indicators: supply, active employers, reach, local applications, matches and repeat use.
+- Start with one segment in one sub-region, activate supply first and then demand.
+
+## Where to Start
+
+Look at your current regional strategy through the lens of a two-sided marketplace: where is the real shortage — too little employment, or too little visibility of existing employment? That determines where the first investment pays off most.
+
+Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss how this fits your organisation's work.
+
+## Frequently Asked Questions
+
+### (Scenario: regional organisation considering investing in employer acquisition) Should we invest in attracting new employers, or in the visibility of existing vacancies?
+That depends on where the real shortage is. If there is already real employment that is insufficiently visible to local talent, visibility is often a cheaper and faster investment than attracting entirely new employers.
+
+### (Scenario: organisation unsure whether this requires new relationships) Do we need to build new employer relationships to make this work?
+Not necessarily — existing relationships through other programmes are often a good starting point. Encouraging employers you already know to make vacancies visible is a lower threshold than new acquisition.
+
+### (Scenario: organisation afraid of a large, uncertain investment) How do we test whether this approach works without investing heavily straight away?
+Start with a pilot with a handful of employers and a concrete referral to students or job seekers, and measure whether it actually leads to more local applications before rolling it out region-wide.
+
+### (Scenario: organisation that recognises the chicken-and-egg problem but doesn't know where to start) What is the first step if we have both an employer problem and a visibility problem?
+Start with the visibility of employment that already exists — that is usually the cheaper side of the problem and produces measurable results faster than new employer acquisition.
+
+### (Scenario: organisation wanting to know whether this replaces existing policy) Does this replace our existing economic development strategy?
+No — it is an additional lens to determine where the first investment pays off most, not a replacement for existing policy.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Moeten we investeren in het aantrekken van nieuwe werkgevers, of in zichtbaarheid van bestaande vacatures?", "acceptedAnswer": {"@type": "Answer", "text": "Dat hangt af van waar het echte tekort zit. Als er al werkgelegenheid is die onvoldoende zichtbaar is, is zichtbaarheid vaak de snellere investering."}},
-    {"@type": "Question", "name": "Moeten we nieuwe werkgeversrelaties opbouwen om dit te laten werken?", "acceptedAnswer": {"@type": "Answer", "text": "Niet per se — bestaande relaties via andere programma's zijn vaak een goed startpunt."}},
-    {"@type": "Question", "name": "Hoe testen we of deze aanpak werkt zonder meteen groot te investeren?", "acceptedAnswer": {"@type": "Answer", "text": "Begin met een pilot bij een handvol werkgevers en meet of dat tot meer lokale sollicitaties leidt voordat je opschaalt."}},
-    {"@type": "Question", "name": "Wat is de eerste stap als we zowel een werkgevers- als een zichtbaarheidsprobleem hebben?", "acceptedAnswer": {"@type": "Answer", "text": "Begin met zichtbaarheid van bestaande werkgelegenheid — dat is doorgaans de goedkopere kant van het probleem."}},
-    {"@type": "Question", "name": "Vervangt dit onze bestaande economische ontwikkelingsstrategie?", "acceptedAnswer": {"@type": "Answer", "text": "Nee — het is een aanvullende lens, geen vervanging van bestaand beleid."}}
+    {"@type": "Question", "name": "Should we invest in attracting new employers, or in the visibility of existing vacancies?", "acceptedAnswer": {"@type": "Answer", "text": "That depends on where the real shortage is. If employment already exists but is insufficiently visible, visibility is often the faster investment."}},
+    {"@type": "Question", "name": "Do we need to build new employer relationships to make this work?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — existing relationships through other programmes are often a good starting point."}},
+    {"@type": "Question", "name": "How do we test whether this approach works without investing heavily straight away?", "acceptedAnswer": {"@type": "Answer", "text": "Start with a pilot with a handful of employers and measure whether it leads to more local applications before scaling up."}},
+    {"@type": "Question", "name": "What is the first step if we have both an employer problem and a visibility problem?", "acceptedAnswer": {"@type": "Answer", "text": "Start with the visibility of existing employment — that is usually the cheaper side of the problem."}},
+    {"@type": "Question", "name": "Does this replace our existing economic development strategy?", "acceptedAnswer": {"@type": "Answer", "text": "No — it is an additional lens, not a replacement for existing policy."}}
   ]
 }
 </script>

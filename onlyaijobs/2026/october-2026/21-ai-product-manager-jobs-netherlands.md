@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-10-21",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-product-manager-jobs-netherlands"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-product-manager-jobs-netherlands"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "AI Product Manager role"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"},
+    {"@type": "Thing", "name": "AI literacy obligation (Article 4, AI Act)"},
+    {"@type": "Thing", "name": "ISO/IEC 42001 AI management system standard"},
+    {"@type": "Thing", "name": "NIST AI Risk Management Framework"},
+    {"@type": "Thing", "name": "Algorithm Register of the Dutch government"},
+    {"@type": "Organization", "name": "Netherlands AI Coalition (NL AIC)"},
+    {"@type": "Organization", "name": "Booking.com"},
+    {"@type": "Organization", "name": "Adyen"},
+    {"@type": "Organization", "name": "ING"},
+    {"@type": "Organization", "name": "OnlyAIJobs"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ A traditional product manager decides what to build and why. An AI Product Manag
 ## Why Hiring for This Role Is Inconsistent
 
 Because the role is new, some companies hire a traditional product manager and expect them to pick up AI literacy on the job, while others hire a technical person and expect them to develop product instincts. Neither approach is wrong, but it means two "AI Product Manager" postings can require almost opposite starting skill sets.
-
-## Where to Start
-
-If you're evaluating this path, ask directly which direction the company is hiring from — product-first or technical-first — since that answer predicts what your first six months actually look like far better than the title does.
-
-Browse current AI, machine learning and product-adjacent data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Deeper Look at the Probabilistic-Thinking Requirement
 
@@ -107,6 +115,46 @@ The unsettled nature of this role, discussed throughout this article, might reas
 Roles in a defined, mature category come with clear expectations, established career ladders and correspondingly limited scope for an individual to shape what the role becomes. Roles in a category still forming offer the opposite trade: less certainty about what you are stepping into, but genuine influence over how the function is defined within your organisation and, for practitioners who become visible in the wider professional community, some influence over how it is understood more broadly.
 
 For candidates who find that prospect energising rather than unsettling, the current moment in AI product management is unusually favourable, precisely because the definitional work has not yet been done by anyone else.
+
+## The Regulatory Vocabulary an AI Product Manager Needs
+
+In the Netherlands, an AI Product Manager increasingly acts as the bridge between product ambitions and European regulation. A working knowledge of the following frameworks is fast becoming an expected part of the role:
+
+- **EU Artificial Intelligence Act.** The AI Act distinguishes between providers and deployers of AI systems and sets obligations based on risk level. Product managers need to know whether their product could fall into a high-risk category — for example AI used in recruitment, credit scoring or access to essential services — because that determines documentation, human oversight and conformity requirements. Since February 2025, the Act also requires organisations to take measures for sufficient **AI literacy** among staff who work with AI systems.
+- **ISO/IEC 42001.** The international standard for AI management systems gives organisations a structured way to govern AI development, and product managers are often involved in implementing its processes.
+- **NIST AI Risk Management Framework.** Although American, this framework is widely used internationally as a practical vocabulary for mapping, measuring and managing AI risks.
+- **GDPR.** Personal data in training data and product usage requires a legal basis, and automated decisions with significant effects come with specific rights for individuals.
+- **Algorithm Register.** Product managers working with or for Dutch public organisations should know that government bodies publish information about the algorithms they use.
+
+## Where AI Product Management Roles Appear in the Dutch Market
+
+Companies whose core product depends on data and machine learning tend to be the first to formalise the AI Product Manager role. Dutch examples of organisations known for data-driven products include **Booking.com** in travel, **Adyen** in payments and **ING** in banking — along with many scale-ups and SaaS companies. In practice, the role also appears at insurers, logistics companies and public organisations that are building their first AI-enabled services, often under titles such as "Product Owner Data," "Product Manager Machine Learning" or "Product Lead AI."
+
+The **Netherlands AI Coalition (NL AIC)**, a public-private partnership stimulating AI development and adoption, and product management communities and meetups in Amsterdam, Utrecht and Eindhoven are useful places to meet practitioners and understand how different organisations define the role.
+
+On **OnlyAIJobs**, product-oriented AI roles are grouped in the AI Product category, which helps surface vacancies that don't use a consistent title.
+
+## A Practical Checklist for Your First 90 Days as an AI Product Manager
+
+1. **Map every model in your product** — what it predicts, on what data, with what known limitations.
+2. **Define success metrics at two levels** — model metrics and user or business outcomes — and make the link between them explicit.
+3. **Classify regulatory risk** with legal and privacy colleagues, including whether the AI Act applies to your use case.
+4. **Establish a feedback loop** for errors reported by users or operations staff.
+5. **Agree on a monitoring and retraining process** with the engineering team, including who decides when a model is taken offline.
+
+## Key Takeaways
+
+- The AI Product Manager role combines product management with probabilistic thinking about model behaviour.
+- The AI Act, including its AI literacy obligation, ISO/IEC 42001, the NIST AI RMF and the GDPR form the role's regulatory vocabulary.
+- Data-driven companies such as Booking.com, Adyen and ING, plus scale-ups, insurers and public organisations, hire for this role under varied titles.
+- Assess whether an organisation is ready for the role before accepting it.
+- Search by category — such as the AI Product category on OnlyAIJobs — rather than by one fixed title.
+
+## Where to Start
+
+If you're evaluating this path, ask directly which direction the company is hiring from — product-first or technical-first — since that answer predicts what your first six months actually look like far better than the title does.
+
+Browse current AI, machine learning and product-adjacent data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

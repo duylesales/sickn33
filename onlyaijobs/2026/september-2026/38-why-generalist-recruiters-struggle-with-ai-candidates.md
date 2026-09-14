@@ -17,7 +17,18 @@ Content Format: Decision-Stage Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-29",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/why-generalist-recruiters-struggle-with-ai-candidates"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/why-generalist-recruiters-struggle-with-ai-candidates"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Screening and vetting AI and machine learning candidates"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Organization", "name": "ABU (Algemene Bond Uitzendondernemingen)"},
+    {"@type": "Organization", "name": "NBBU"},
+    {"@type": "Organization", "name": "Stichting Normering Arbeid (SNA)"},
+    {"@type": "Legislation", "name": "Wet allocatie arbeidskrachten door intermediairs (Waadi)"},
+    {"@type": "Organization", "name": "NVP Sollicitatiecode"},
+    {"@type": "Legislation", "name": "Algemene verordening gegevensbescherming (AVG/GDPR)"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"}
+  ]
 }
 </script>
 
@@ -34,12 +45,6 @@ A generalist recruiter screening for a backend role can reasonably judge years o
 ## What Tends to Work Better
 
 Involving a technical team member early in screening, even briefly, catches mismatches that a keyword pass misses. Asking candidates to walk through a past project's tradeoffs — not just its final metric — surfaces the judgment that a CV can't show. And posting through a channel where the applicant pool has already self-selected for genuine AI/ML/Data interest reduces the volume of clearly mismatched applications before screening even starts.
-
-## Where to Start
-
-If screening capacity is the bottleneck, the highest-leverage fix isn't a better keyword list — it's a smaller, more self-selected pool of applicants to begin with, plus early technical involvement in reviewing the ones that do apply.
-
-Post your open AI, machine learning or data role — the first listing is free — by emailing a link to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
 
 ## A Practical Screening Framework a Non-Technical Recruiter Can Use
 
@@ -81,6 +86,63 @@ Rather than requesting ad hoc technical help for every single candidate, a more 
 ## Why This Investment Compounds Across Every Future AI Hire
 
 A rubric built carefully once for a specific role type can be reused, with minor adjustments, for every future opening of that same role type — meaning the upfront investment in getting this right pays dividends across every subsequent hire, not just the one that prompted building it. Recruiting teams that build a small library of these role-specific rubrics over time develop a genuinely differentiated screening capability compared to teams that continue relying on generic keyword matching for every new AI-adjacent role that comes through their pipeline.
+
+## A Ready-Made Rubric: Five Questions and What Good Answers Sound Like
+
+A non-technical recruiter can use the following questions in a first screening call. The recruiter does not need to judge the technical correctness of every detail — only whether the answer shows the reasoning pattern of an experienced practitioner. A technical colleague can calibrate the rubric once for the specific role.
+
+| Question | Weak answer pattern | Strong answer pattern |
+|---|---|---|
+| "How did you decide whether your model was good enough?" | Quotes a single metric, such as "95% accuracy" | Explains why a metric fits the business problem, compares against a simple baseline, mentions trade-offs such as false positives versus false negatives |
+| "Tell me about a model that didn't work." | Cannot name one, or blames the data vaguely | Describes a specific failure, diagnosis and what changed afterwards |
+| "How did you split your data for testing?" | "80/20 random split" without context | Explains why the split matched the problem, for example time-based splits for forecasting or grouping to avoid leakage |
+| "What happened after the model went live?" | "Another team handled that" with no curiosity | Describes monitoring, drift, feedback from users or retraining decisions |
+| "When would you not use machine learning?" | Struggles to answer | Gives examples where rules, simple statistics or process changes are better |
+
+These questions work because they probe judgment — baseline thinking, evaluation choices, awareness of data leakage and production reality — rather than vocabulary. Candidates who have genuinely done the work tend to answer them concretely and comfortably, while candidates relying on keywords usually cannot.
+
+## Working With Recruitment Agencies in the Netherlands
+
+Many Dutch employers hiring for AI roles work with external recruitment or staffing agencies. Understanding the landscape helps you get better results from them.
+
+**Industry associations and certification.** The **ABU** and the **NBBU** are the two main Dutch associations for staffing agencies, each with its own collective labour agreement for temporary workers. The **SNA** quality mark, based on the NEN 4400-1 standard, certifies that agencies comply with rules on wages, taxes and the identity of workers. For secondment or temporary placements, checking this certification protects you from liability risks.
+
+**Registration and legal framework.** The **Wet allocatie arbeidskrachten door intermediairs (Waadi)** sets rules for making workers available to other organisations, including the principle that temporary workers are entitled to comparable pay. The Netherlands has also been introducing a mandatory licensing system for organisations that supply workers, which will make checking an agency's admission status part of standard due diligence.
+
+**Specialist versus generalist agencies.** Specialist data and AI recruiters typically have technical screening capability and networks in the community; generalist agencies often rely on the keyword matching this article describes. If you use a generalist agency, give them the rubric above and ask them to report candidates' answers rather than just their CVs.
+
+**Clear agreements.** Agree in advance on fee structures, guarantee periods if a placement ends early, exclusivity, and how candidates' personal data will be handled.
+
+## Compliance Points That Affect Screening
+
+**Data protection.** Candidate CVs contain personal data. Under the **AVG**, agencies and employers need a legal basis for sharing and storing them, candidates must be informed, and data should not be kept longer than necessary. Sending unsolicited CVs between organisations without the candidate's knowledge is a common and avoidable risk.
+
+**Fair procedures.** The **NVP Sollicitatiecode** describes principles for transparent and careful recruitment, including informing candidates about the procedure and treating their data carefully. Using the same structured questions for every candidate also supports equal treatment.
+
+**Automated screening tools.** AI systems that filter or rank applications, or evaluate candidates, are classified as high-risk under the **EU Artificial Intelligence Act**. If your applicant tracking system or agency uses such tools, you need to understand how they work, ensure human oversight and be able to inform candidates — and you should be wary of any tool that simply reproduces keyword matching at scale.
+
+## A Four-Step Screening Flow That Balances Speed and Signal
+
+1. **Pre-filtered sourcing.** Post on channels where applicants are specifically looking for AI, ML or data work.
+2. **Structured recruiter call (20–30 minutes).** Practical fit — location, salary expectations, work permit, notice period — plus two or three rubric questions.
+3. **Technical review (15 minutes).** A technical colleague reviews the rubric notes and one project write-up or code sample.
+4. **Technical interview.** Only candidates who pass steps 2 and 3 enter the full technical process.
+
+This flow keeps technical colleagues' time focused where it adds the most value, while ensuring no candidate reaches a full interview loop on the strength of keywords alone.
+
+## Key Takeaways
+
+- Keyword screening detects tool familiarity, not modelling judgment — the core competency of AI roles.
+- A five-question rubric on evaluation, failure, data splitting, production and when not to use ML lets non-technical recruiters surface judgment.
+- In the Netherlands, check agency associations (ABU, NBBU), SNA certification and the Waadi framework when using staffing partners.
+- Handle CVs in line with the AVG and the NVP Sollicitatiecode, and treat automated screening tools as high-risk under the AI Act.
+- Use a four-step flow: pre-filtered sourcing, structured recruiter call, short technical review, then full technical interview.
+
+## Where to Start
+
+If screening capacity is the bottleneck, the highest-leverage fix isn't a better keyword list — it's a smaller, more self-selected pool of applicants to begin with, plus early technical involvement in reviewing the ones that do apply.
+
+Post your open AI, machine learning or data role — the first listing is free — by emailing a link to [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu).
 
 ## Frequently Asked Questions
 

@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-10-26",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/salary-negotiation-ai-jobs-netherlands"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/salary-negotiation-ai-jobs-netherlands"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Salary negotiation for AI jobs"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Thing", "name": "Holiday allowance (vakantiegeld)"},
+    {"@type": "Thing", "name": "Collective labour agreements (CAO)"},
+    {"@type": "Thing", "name": "30% ruling"},
+    {"@type": "GovernmentOrganization", "name": "Immigration and Naturalisation Service (IND)"},
+    {"@type": "Legislation", "name": "EU Pay Transparency Directive (EU) 2023/970"},
+    {"@type": "Legislation", "name": "Future Pensions Act (Wet toekomst pensioenen)"},
+    {"@type": "Thing", "name": "Non-compete clause (concurrentiebeding)"},
+    {"@type": "GovernmentOrganization", "name": "Dutch Tax Administration (Belastingdienst)"},
+    {"@type": "Thing", "name": "Employee stock options"},
+    {"@type": "Thing", "name": "Travel and home-working allowances"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ An approach copied from US tech-industry negotiation advice — competing offers
 ## What Rarely Works Here
 
 Presenting a competing offer as leverage in an aggressive, US-style way can read as adversarial in a culture that generally favors directness paired with collaboration rather than pressure tactics. It's more effective to state your actual priorities clearly and ask what's genuinely flexible, rather than manufacturing urgency.
-
-## Where to Start
-
-Ask directly what's flexible in an offer — salary band, non-cash terms, or scope — rather than assuming a fixed negotiation script from a different market will translate directly.
-
-Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Deeper Look at Why Dutch Negotiation Culture Differs
 
@@ -125,6 +133,49 @@ The most important structural difference is timing. Internal compensation decisi
 The second difference is that internal negotiations are evaluated against a record rather than against an impression. This makes documentation valuable: a manager arguing your case to their own leadership needs specifics, and a colleague who has kept a clear record of what they delivered and what it enabled makes that argument far easier to make than one who relies on their manager's memory.
 
 The third difference is that scope changes often precede compensation changes rather than following them. In many organisations, the practical route to higher compensation runs through demonstrably taking on responsibilities associated with a higher band, then making the case that the role has effectively changed. Candidates who understand this sequence position themselves deliberately rather than waiting for compensation to catch up to work they are already doing.
+
+## Named Building Blocks of a Dutch Offer
+
+Several components are specific to the Dutch employment system and should be checked in every offer:
+
+| Component | How it works | What to check |
+|---|---|---|
+| **Holiday allowance** | By law, employees receive at least 8% of their gross annual salary as holiday allowance, usually paid in May or June | Whether the quoted salary includes or excludes it |
+| **Thirteenth month or bonus** | Common in some sectors and collective agreements, not a legal requirement | Whether it is guaranteed or performance-based |
+| **Collective labour agreement (CAO)** | Sector agreements set salary scales, working hours and benefits | Which scale and step you are placed in, and whether negotiation is possible within it |
+| **Pension** | Employer pension schemes are common; the Dutch pension system is transitioning under the Future Pensions Act | Employer and employee contribution percentages |
+| **30% ruling** | A tax facility for eligible employees recruited from abroad, allowing part of salary to be paid tax-free under conditions | Eligibility, salary threshold and whether the employer will apply |
+| **Travel and home-working allowances** | Tax-free allowances up to limits set by the Tax Administration | Whether both are offered and how they apply to your work pattern |
+
+## Legal Developments That Strengthen Your Position
+
+**EU Pay Transparency Directive (EU) 2023/970.** Member states must transpose the directive by June 2026. It requires employers to provide information about the starting salary or salary range before the interview, prohibits asking applicants about their pay history, and gives employees the right to request information about average pay levels for comparable work. For candidates, this makes it more normal to ask about salary ranges early — and harder for employers to anchor an offer on your current salary.
+
+**Future Pensions Act (Wet toekomst pensioenen).** The Dutch pension system is moving to a new contribution-based structure, with pension schemes transitioning over a period of several years. When comparing offers, look at the contribution level rather than only at the name of the pension fund.
+
+**Non-compete clauses.** A non-compete clause must be agreed in writing, and in a fixed-term contract it is only valid if the employer justifies it with compelling business interests. Negotiating the scope and duration of a non-compete clause is often more achievable than negotiating a higher base salary.
+
+## Considerations for International Candidates
+
+For highly skilled migrants, the **Immigration and Naturalisation Service (IND)** sets minimum salary thresholds that change annually, with different thresholds based on age and a lower threshold for recent graduates. The employer must be a recognised sponsor. The **30% ruling** has been changed in recent years, including a shorter maximum duration and a phased reduction of the percentage in future years, so check the current rules with the **Dutch Tax Administration** or a tax adviser rather than relying on older information.
+
+## Equity at Dutch Start-Ups and Scale-Ups
+
+Employee stock options are more common at start-ups and scale-ups than at traditional Dutch employers. When evaluating options, ask about the strike price, vesting schedule, what happens when you leave, and when tax is due. Dutch tax rules for employee stock options were adjusted to reduce the problem of paying tax before shares can be sold, but the details matter, so treat equity as uncertain upside rather than guaranteed compensation.
+
+## Key Takeaways
+
+- Dutch negotiation culture rewards preparation, reasoning and attention to non-cash terms over aggressive bidding.
+- Check holiday allowance, thirteenth month, CAO scale, pension contributions and allowances in every offer.
+- The EU Pay Transparency Directive makes asking about salary ranges normal and bans pay history questions.
+- International candidates should check current IND salary thresholds and the updated 30% ruling.
+- Non-compete clauses and equity terms are often more negotiable than base salary.
+
+## Where to Start
+
+Ask directly what's flexible in an offer — salary band, non-cash terms, or scope — rather than assuming a fixed negotiation script from a different market will translate directly.
+
+Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

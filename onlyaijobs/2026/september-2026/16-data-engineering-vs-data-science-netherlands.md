@@ -17,7 +17,19 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-07",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/data-engineering-vs-data-science-netherlands"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/data-engineering-vs-data-science-netherlands"},
+  "inLanguage": "en",
+  "about": [{"@type": "Occupation", "name": "Data Engineer"}, {"@type": "Occupation", "name": "Data Scientist"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Occupation", "name": "Analytics Engineer"},
+    {"@type": "SoftwareApplication", "name": "dbt"},
+    {"@type": "SoftwareApplication", "name": "Apache Airflow"},
+    {"@type": "SoftwareApplication", "name": "Apache Spark"},
+    {"@type": "SoftwareApplication", "name": "Microsoft Azure"},
+    {"@type": "SoftwareApplication", "name": "Google Cloud"},
+    {"@type": "Legislation", "name": "EU Data Act"},
+    {"@type": "Legislation", "name": "Algemene verordening gegevensbescherming (AVG/GDPR)"}
+  ]
 }
 </script>
 
@@ -34,12 +46,6 @@ At a large, mature organization these are usually separate roles with separate t
 ## Why This Matters More at Smaller Dutch Companies
 
 A candidate who wants to build models and instead spends most of a first year fixing broken pipelines will be unhappy regardless of how the offer letter was worded. The fix is not to avoid smaller companies — it's to ask directly, before accepting, what percentage of the role is pipeline work versus modeling work today, and how that's expected to shift as the team grows.
-
-## Where to Start
-
-Read past the title to the actual bullet points, and if the split between infrastructure work and modeling work isn't clear from the posting, ask directly in a first conversation. It's a normal question, and how an employer answers it tells you a lot about how clearly they've thought about the role themselves.
-
-Browse current data engineering, data science and AI vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Where the Two Disciplines Actually Diverge
 
@@ -81,6 +87,64 @@ Rather than betting your career development entirely on one discipline or the ot
 ## Why This Blended-Role Reality Will Likely Persist Longer in the Netherlands
 
 Some emerging AI markets, particularly in the US, have matured to the point where data engineering and data science have cleanly separated into distinct career tracks with distinct hiring pipelines, even at mid-sized companies. The Dutch market, with its larger proportion of small and medium-sized enterprises relative to giant tech employers, is likely to retain more blended roles for longer, simply because fewer companies here reach the scale where full role specialization becomes cost-effective. Candidates planning a multi-decade career in this market should expect to encounter blended roles regularly throughout their career, not just as an early-career phenomenon that resolves once they gain seniority — the blending is a structural feature of the Dutch company-size distribution, not merely a symptom of junior-level ambiguity.
+
+## The Third Role Hiding Between the Two: Analytics Engineer and Its Dutch Variants
+
+The binary of data engineering versus data science is itself becoming outdated. Several roles now sit in between, and Dutch vacancies use them inconsistently.
+
+| Title you may see | What the work usually is | Closer to |
+|---|---|---|
+| **Data Engineer** | Ingestion pipelines, orchestration, infrastructure, data platform | Engineering |
+| **Analytics Engineer** | Transforming raw data into tested, documented models for analysis, often with dbt | Between the two |
+| **BI-specialist / BI Developer** | Data models and dashboards in tools such as Power BI | Analytics |
+| **Data-analist** | Analysis, reporting, stakeholder questions | Analytics / science |
+| **Data Scientist** | Statistical modelling, experimentation, prediction | Science |
+| **ML Engineer** | Putting models into production, serving, monitoring | Engineering with modelling knowledge |
+
+The **analytics engineer** role emerged precisely because the gap between raw pipelines and trustworthy analysis was too large for either data engineers or data scientists to fill comfortably. If a Dutch "Data Scientist" vacancy spends most of its description on SQL transformations, testing and documentation, it is often an analytics engineering role in practice.
+
+## What the Tooling in a Vacancy Tells You
+
+The tools listed in a posting are one of the most reliable signals of the real split, because hiring managers tend to list what the team uses every day.
+
+**Signals of data engineering work.** Apache Airflow or another orchestrator, Apache Spark, Kafka, dbt, Terraform, Azure Data Factory, Microsoft Fabric, Databricks, Snowflake or BigQuery, and phrases such as "data platform", "ingestion" or "data quality monitoring".
+
+**Signals of data science work.** Experiment design, statistical modelling, scikit-learn, PyTorch, forecasting, causal inference, A/B testing and phrases such as "stakeholder insights" or "model validation".
+
+**Signals of a blended role.** A tool list that contains both groups in roughly equal measure, combined with a small team size or the phrase "first data hire". This is not a red flag, but it is a reason to ask about the actual time split.
+
+**The cloud context in the Netherlands.** Microsoft Azure is widely used by Dutch enterprises and public organisations, and its West Europe region is located in the Netherlands. Google Cloud's europe-west4 region is based in Eemshaven in Groningen. AWS is also common but serves Dutch customers from regions in neighbouring countries. For regulated employers concerned with data residency, this can shape the stack — and therefore the skills a vacancy asks for.
+
+## Regulation Touches Both Roles Differently
+
+Two European frameworks affect data engineers and data scientists in different ways.
+
+**The AVG (GDPR).** Data engineers are typically responsible for implementing privacy by design: access controls, pseudonymisation, retention policies and data lineage. Data scientists are responsible for using personal data only for compatible purposes and for recognising when a model's inputs or outputs create privacy risks. In blended roles, one person carries both responsibilities — another reason to clarify expectations before accepting.
+
+**The EU Data Act.** Applicable since September 2025, the Data Act creates rules on access to and sharing of data generated by connected products and related services, and on switching between data processing services such as cloud providers. For data engineers at manufacturers and industrial companies — a large employer group in the Netherlands — it adds concrete work around data access, portability and interoperability.
+
+## A Practical Checklist Before You Apply
+
+1. Count the bullet points in the posting that describe infrastructure versus analysis or modelling.
+2. Compare the tool list with the signals above.
+3. Check who the role reports to: an engineering or platform lead, or an analytics, product or research lead.
+4. Look at team size; "first data hire" almost always means a blended role.
+5. In the first conversation, ask for last quarter's actual time split, not the intended future split.
+6. Ask who is responsible for data quality incidents and privacy implementation.
+
+## Key Takeaways
+
+- Data engineering is judged on reliability; data science on insight and predictive quality.
+- Small and mid-sized Dutch companies often combine both, and the title reflects whichever half the hiring manager thought of first.
+- Analytics engineer, BI-specialist and ML engineer roles sit between the two classic disciplines.
+- The tool list and reporting line are stronger signals than the title.
+- The AVG and the EU Data Act create different responsibilities for engineering and science work.
+
+## Where to Start
+
+Read past the title to the actual bullet points, and if the split between infrastructure work and modeling work isn't clear from the posting, ask directly in a first conversation. It's a normal question, and how an employer answers it tells you a lot about how clearly they've thought about the role themselves.
+
+Browse current data engineering, data science and AI vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

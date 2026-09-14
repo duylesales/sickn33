@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-10-24",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/quality-control-ai-jobs-netherlands"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/quality-control-ai-jobs-netherlands"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "AI in manufacturing quality control"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Organization", "name": "Holland Innovative"},
+    {"@type": "Place", "name": "Brainport Industries Campus"},
+    {"@type": "Organization", "name": "Smart Industry NL"},
+    {"@type": "ResearchOrganization", "name": "TNO"},
+    {"@type": "Thing", "name": "ISO 9001"},
+    {"@type": "Thing", "name": "IATF 16949"},
+    {"@type": "Thing", "name": "Statistical process control"},
+    {"@type": "Thing", "name": "Six Sigma"},
+    {"@type": "Legislation", "name": "EU Machinery Regulation (EU) 2023/1230"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ Unlike a recommendation system where a wrong output is a minor inconvenience, a 
 ## Why This Category Is Hard to Search For
 
 Titles like "Kwaliteitsingenieur" or "Inspectietechnicus" don't signal the underlying computer vision and statistical work, and manufacturing employers rarely compete for tech-scene visibility the way consumer AI companies do.
-
-## Where to Start
-
-If you're interested in computer vision or anomaly detection applied to a domain with real physical stakes, quality control in manufacturing is worth searching by category rather than by AI-specific titles.
-
-Browse current AI, machine learning and data vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Deeper Look at the False-Reject/False-Accept Trade-off
 
@@ -107,6 +115,46 @@ The most reliable approach is to identify manufacturers in your accessible geogr
 A second approach is to search by the technical vocabulary the field actually uses rather than by AI terminology: terms relating to statistical process control, machine vision inspection, defect detection or process capability surface roles that "machine learning engineer" never will.
 
 Third, for candidates willing to invest slightly more effort, approaching manufacturers directly with a specific, informed proposal — identifying a category of problem you could address and demonstrating you understand their operational context — receives more serious consideration in this sector than in markets saturated with speculative applications, particularly at mid-sized manufacturers without a dedicated data function who may not have considered that such a role is available to them.
+
+## Named Players in Dutch Manufacturing Quality and Smart Industry
+
+**Smart Industry NL.** The national programme that brings together industry, knowledge institutions and government to digitalise Dutch manufacturing. It has supported so-called fieldlabs — practical environments where companies test technologies such as machine vision, sensors and data analytics on real production problems.
+
+**Brainport Industries Campus.** A campus in Eindhoven where high-tech suppliers, education and research share facilities, with a focus on smart manufacturing for the high-tech supply chain.
+
+**TNO.** The Netherlands Organisation for Applied Scientific Research works with manufacturers on topics including smart manufacturing, flexible production and inspection.
+
+**Holland Innovative.** An Eindhoven-based company that works on reliability engineering, quality and data analysis for high-tech and manufacturing clients — an example of the consultancy layer where quality engineering and data science meet. Holland Innovative has posted vacancies on OnlyAIJobs.
+
+## Standards and Methods That Frame the Work
+
+| Standard or method | What it covers | Why it matters for AI in quality control |
+|---|---|---|
+| **ISO 9001** | Quality management systems | Changes to inspection processes must fit into a documented, controlled quality system |
+| **IATF 16949** | Quality management for automotive suppliers | Strict requirements for process control, traceability and measurement system analysis |
+| **Statistical process control** | Control charts and process capability | The shared language of quality engineers; AI models are judged against it |
+| **Six Sigma** | Structured improvement methodology | Many quality teams use its define-measure-analyse-improve-control cycle to introduce new tools |
+| **Measurement system analysis** | Reliability of measurement systems | An automated inspection system is itself a measurement system and must be proven reliable |
+
+## Regulation to Keep in Mind
+
+- **EU Machinery Regulation (EU) 2023/1230.** Applies from January 2027 and addresses machinery with safety functions based on self-evolving behaviour, relevant when vision or AI systems perform safety-related tasks.
+- **EU Artificial Intelligence Act.** AI systems used as safety components of products covered by EU product legislation can fall into the high-risk category.
+- **Product liability.** The revised EU Product Liability Directive explicitly covers software, including AI systems, which raises the importance of documented validation.
+
+## Key Takeaways
+
+- Automated quality control is a genuine machine learning application, rarely advertised with AI vocabulary.
+- The false-reject/false-accept trade-off and statistical process control are the foundations of the field.
+- Smart Industry NL, Brainport Industries Campus, TNO and consultancies such as Holland Innovative shape the Dutch ecosystem.
+- ISO 9001, IATF 16949, measurement system analysis and Six Sigma frame how AI inspection systems are introduced.
+- The Machinery Regulation, the AI Act and product liability rules increase the need for documented validation.
+
+## Where to Start
+
+If you're interested in computer vision or anomaly detection applied to a domain with real physical stakes, quality control in manufacturing is worth searching by category rather than by AI-specific titles.
+
+Browse current AI, machine learning and data vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

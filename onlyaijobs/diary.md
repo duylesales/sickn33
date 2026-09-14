@@ -1,5 +1,83 @@
 # Diary
 
+## 2026-09-14 (Chiều)
+
+- **17:40**: Thêm **icon (emoji)** cho toàn bộ **120 bài social** của OnlyAIJobs ([`september-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/september-2026/) và [`october-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/october-2026/)) để bài sinh động, dễ đọc lướt hơn:
+  - **Cách đặt**: mỗi đoạn mở đầu bằng đúng 1 icon, không lặp icon trong cùng một bài, 4–5 icon/bài; dòng hashtag giữ nguyên. Tiết chế theo giọng văn "thực tế, không kêu gào" (§6.1 [`onlyaijobs_info.md`](file:///Users/duyle/sickn33/onlyaijobs/onlyaijobs_info.md)).
+  - **Quy ước**: 💡 câu mở đầu · ✅ câu chốt · 🔎 "Browse current jobs" · 📢 "Post your vacancy" · ✉️ "Get in touch" · 📖 "Read the full story / Full breakdown"; đoạn thân bài chọn icon theo chủ đề (💰 lương/chi phí, 🚲 đi lại/biên giới, 🎓 thực tập/học tập, 📜 hợp đồng/luật, 🤖 dữ liệu/mô hình, 🔍 tìm kiếm/chức danh, 🛡️ an toàn/rủi ro…).
+  - **Kiểm định**: 120/120 file khi bỏ icon trùng khớp từng byte với bản trước (không đổi chữ nào); 0 bài lặp icon (đã sửa tay bài 30 tháng 9, câu "Read it twice" bị nhận nhầm là CTA). Chưa commit.
+
+- **15:52**: Viết **60 bài social** cho [`onlyaijobs/2026/october-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/october-2026/), theo mẫu tháng 9 (file `<số>-<slug>-social.md`, 100% tiếng Anh):
+  - **Nội dung**:
+    - Mỗi bài có đoạn mở đầu, 1–2 đoạn nêu thực thể và ý chính của bài gốc, và một câu chốt.
+    - Không bịa số liệu; chỉ nêu những thực thể đã có trong bài gốc (ASML, Chemelot, North Sea Port, Borssele, Wet DBA, AI Act…).
+  - **CTA theo persona**:
+    - Ứng viên (01–40, 56–60): "Browse current jobs: https://onlyaijobs.eu/jobs".
+    - Nhà tuyển dụng (41–50): "Post your vacancy — first listing free: info@onlyaijobs.eu".
+    - Đối tác vùng (51–55): "Get in touch: info@onlyaijobs.eu".
+  - **Link và hashtag**: dòng "Read the full story" lấy slug trực tiếp từ tên file bài viết; hashtag có #OnlyAIJobs và các thẻ theo chủ đề.
+  - **Kiểm định**: 60/60 file có link khớp slug và file bài gốc tồn tại, dài 70–200 từ, không có từ tiếng Hà Lan. Chưa commit.
+
+- **15:46**: Audit và viết bổ sung **toàn bộ 60 bài** trong [`onlyaijobs/2026/october-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/october-2026/) theo chuẩn SEO/GEO-entity (không tính FAQ), 100% tiếng Anh:
+  - **Kết quả audit ban đầu**:
+    - 26/60 bài viết bằng tiếng Hà Lan.
+    - 29 bài quá ngắn: nhóm 01–14 có 358–1.224 từ, nhóm 48–60 có 358–569 từ, bài 44 và 47 khoảng 1.600 từ.
+    - Cả 60 bài thiếu `inLanguage`/`about`/`mentions`, thiếu "Key Takeaways" và có CTA nằm giữa bài.
+  - **Viết lại / dịch sang tiếng Anh**:
+    - Viết lại toàn bộ 26 bài tiếng Hà Lan và mở rộng các bài ngắn.
+    - Các bài dài tiếng Anh (15, 17, 19, 21–27, 31–33, 37, 39, 41, 43–45, 47) được tái cấu trúc bằng script: thêm schema, chèn mục thực thể + Key Takeaways, chuyển CTA xuống cuối.
+  - **Thực thể thật bổ sung (ví dụ)**:
+    - Tổ chức, doanh nghiệp: TU Delft, Deltares, WUR, NPEC, Kadaster, Beeld & Geluid, Wetsus, Automotive Campus Helmond, Tradeport Venlo, Royal Schiphol Group, RDW, NAM, ASTRON/LOFAR, Seed Valley, ASML, Thales Nederland, Chemelot, North Sea Port, Borssele Wind Farm Zone.
+    - Luật và chuẩn mực: AI Act, Seveso III, EU ETS, NIS2, Pay Transparency Directive, Wet DBA, Waadi, WAB, NVP Sollicitatiecode.
+  - **Nguyên tắc nội dung**: không bịa số liệu. Bài 19 (Vlaardingen) được đính chính rằng Unilever đã chuyển R&D thực phẩm sang Wageningen Campus năm 2019.
+  - **Đổi slug sang tiếng Anh cho 27 bài**:
+    - 26 bài tiếng Hà Lan và bài 54 (slug cũ chứa "gemeente").
+    - Ví dụ: `ai-vacatures-*` → `ai-jobs-*`, `zzp-vs-vast-contract-fiscale-overwegingen` → `freelance-or-permanent-contract-tax-considerations`.
+    - File mới tạo bằng Write, file cũ xoá bằng `git rm`. Không có chỗ nào khác trong repo trỏ tới slug cũ.
+  - **Kiểm định tự động**:
+    - 60/60 JSON-LD hợp lệ, `inLanguage: en`, `@id` khớp slug, ≥5 mentions.
+    - Đủ 5 FAQ, thứ tự Key Takeaways → Where to Start → FAQ, CTA có link.
+    - Thân bài 1.802–2.781 từ (trung bình 2.094). 0 cụm từ tiếng Hà Lan còn sót.
+  - **Lưu ý**: thư mục `october-2026/` không có bài social nào (tháng 9 có). Chưa commit.
+
+- **14:15**: Chuyển **toàn bộ bài tiếng Hà Lan** trong [`onlyaijobs/2026/september-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/september-2026/) sang **tiếng Anh**, đúng yêu cầu gốc là 100% tiếng Anh:
+  - **Viết lại 23 bài + 23 bài social** (06, 09, 11, 13, 22, 23, 24, 27, 28, 32, 35, 37, 39, 41, 44, 47, 48, 49, 52, 53, 55, 57, 59):
+    - Giữ nguyên độ sâu thực thể, bảng biểu và 5 FAQ.
+    - `inLanguage` đổi từ `nl` sang `en`.
+    - Tiêu đề mục thống nhất: "Key Takeaways", "Where to Start", "Frequently Asked Questions".
+    - Tên cơ quan/luật Hà Lan ghi tên tiếng Anh trước, tên gốc trong ngoặc.
+  - **Đổi slug + tên file bằng `git mv` cho 24 cặp bài**:
+    - Thay `ai-vacatures-*` → `ai-jobs-*`.
+    - Ví dụ: `gratis-ai-vacature-plaatsen` → `post-ai-vacancy-free`; `brainport-model-elders-in-nederland` → `brainport-model-beyond-eindhoven`.
+    - `@id` schema và link trong bài social cập nhật theo slug mới.
+  - **Chuẩn hóa tên cơ quan trong 8 bài tiếng Anh sẵn có** (07, 08, 10, 21, 33, 36, 46, 54): CBS → Statistics Netherlands, KiM, RVO, ROA, College voor de Rechten van de Mens → Netherlands Institute for Human Rights…
+  - **Giữ lại có chủ đích**:
+    - Bảng thuật ngữ tin tuyển dụng tiếng Hà Lan có dịch nghĩa ở bài 23 (hữu ích cho ứng viên quốc tế).
+    - Tên riêng không dịch (Vrije Universiteit, Nationale Vacaturebank, Regio Foodvalley).
+    - Từ khóa tìm kiếm tiếng Hà Lan trong trường `Keywords` (ví dụ `ai vacatures amsterdam`).
+  - **Kiểm định tự động**:
+    - 60/60 JSON-LD hợp lệ, `inLanguage: en`, `@id` khớp slug.
+    - Đủ 5 FAQ, đúng thứ tự Key Takeaways → Where to Start → FAQ.
+    - Thân bài ≥ 1.800 từ, link social khớp slug.
+    - 0 tham chiếu slug cũ trong repo. Chưa commit.
+  - **Còn tồn**: thư mục `october-2026/` vẫn còn khoảng 22 bài tiếng Hà Lan, chưa động đến.
+
+## 2026-09-14 (Sáng)
+
+- **11:26**: Viết bổ sung chuyên sâu **toàn bộ 60 bài** trong [`onlyaijobs/2026/september-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/september-2026/) để đạt chuẩn SEO/GEO-entity (không tính phần FAQ):
+  - **Độ dài phần thân (không tính FAQ + schema)**: trước 802–1.710 từ (trung bình ~1.230) → sau **1.807–2.467 từ (trung bình 1.952)**, tương đương chuẩn bài Manifera (~2.000 từ).
+  - **Chiều sâu thực thể (entity)**: bổ sung các thực thể thật, kiểm chứng được cho từng bài:
+    - Trường đại học, viện nghiên cứu và campus (TU/e, EAISI, JADS, UvA, CWI, RUG, Radboud, Donders, LUMC, Leiden Bio Science Park, UT, Brightlands, WUR…)
+    - Cơ quan nhà nước và luật (IND, 30%-regeling, AI Act, AVG, DORA, Solvency II, CSRD/ESRS E1, WPM, Wet DBA, NVP Sollicitatiecode, EU Pay Transparency Directive…)
+    - Tuyến giao thông, cụm ngành và nhà tuyển dụng đang có tin trên OnlyAIJobs (Heijmans, Rexel, VINCI Energies)
+  - **Nguyên tắc nội dung**: tuân thủ `onlyaijobs_info.md`, không bịa số liệu thị trường; mốc pháp lý chưa chắc chắn được ghi kèm khuyến nghị kiểm tra nguồn chính thức.
+  - **Schema Article**: thêm `inLanguage`, `about` và `mentions` cho cả 60 bài. Giữ nguyên 5 FAQ và schema `FAQPage`.
+  - **Cấu trúc bài**:
+    - Chuyển CTA "Where to Start / Waar te beginnen" từ giữa bài xuống cuối (trước FAQ) ở hơn 50 bài.
+    - Thêm phần "Key Takeaways / Kernpunten" ngay trước CTA.
+    - Sửa lỗi bài 59 (Maastricht) có CTA nằm giữa bài.
+  - **Kiểm định tự động**: 60/60 JSON-LD hợp lệ, 60/60 đủ 5 FAQ, mỗi bài đúng 1 CTA ở cuối có link, 0 bài dưới 1.800 từ. Diff: 60 file thay đổi. Bài social không bị động đến. Chưa commit.
+
 ## 2026-09-08 (Chiều)
 
 - **18:35**: Làm bộ tài liệu marketing cho **OnlyAIJobs** — thư mục `onlyaijobs/` trước đó chỉ có 3 báo cáo audit, không có tài liệu thương hiệu hay kế hoạch nào. Trước khi viết, đã **quét trực tiếp https://onlyaijobs.eu** để lấy dữ liệu thật.

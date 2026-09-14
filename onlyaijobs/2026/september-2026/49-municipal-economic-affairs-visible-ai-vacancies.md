@@ -1,118 +1,199 @@
 ---
-Title: "Wat een gemeente economische zaken kan doen met zichtbare, lokale AI-vacatures"
-Keywords: gemeente economische zaken ai, lokale vacatures zichtbaarheid, gemeente talentbeleid, regionale werkgelegenheid ai, OnlyAIJobs
+Title: "What a Municipal Economic Affairs Department Can Do With Visible, Local AI Vacancies"
+Keywords: municipality economic affairs ai, local vacancies visibility, municipal talent policy, regional ai employment, OnlyAIJobs
 Buyer Stage: Awareness / Regional Partnership
-Target Persona: D (Gemeente of afdeling economische zaken)
+Target Persona: D (Municipality or economic affairs department)
 Content Format: Policy Brief
 ---
 
-# Wat een gemeente economische zaken kan doen met zichtbare, lokale AI-vacatures
+# What a Municipal Economic Affairs Department Can Do With Visible, Local AI Vacancies
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Wat een gemeente economische zaken kan doen met zichtbare, lokale AI-vacatures",
-  "description": "Een gemeente die lokale werkgelegenheid wil laten zien aan inwoners, heeft weinig instrumenten die verder gaan dan een generiek vacatureoverzicht. Adresniveau-vacaturedata biedt een concreter alternatief.",
+  "headline": "What a Municipal Economic Affairs Department Can Do With Visible, Local AI Vacancies",
+  "description": "A municipality that wants to show residents local employment has few tools beyond a generic vacancy overview. Address-level vacancy data offers a more concrete alternative.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-10",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/gemeente-economische-zaken-zichtbare-vacatures"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/municipal-economic-affairs-visible-ai-vacancies"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Municipal economic policy and visibility of local AI vacancies"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "GovernmentOrganization", "name": "Association of Netherlands Municipalities (VNG)"},
+    {"@type": "GovernmentOrganization", "name": "UWV (Employee Insurance Agency)"},
+    {"@type": "Thing", "name": "Employer Service Points (Werkgeversservicepunten)"},
+    {"@type": "Thing", "name": "Labour market regions (arbeidsmarktregio's)"},
+    {"@type": "Thing", "name": "LISA (National Information System of Employment)"},
+    {"@type": "GovernmentOrganization", "name": "Statistics Netherlands (CBS)"},
+    {"@type": "GovernmentOrganization", "name": "Netherlands Chamber of Commerce (KVK)"},
+    {"@type": "Legislation", "name": "Participation Act (Participatiewet)"},
+    {"@type": "Legislation", "name": "General Data Protection Regulation (GDPR)"}
+  ]
 }
 </script>
 
-Een gemeente die aan haar inwoners wil laten zien dat er lokaal interessant werk is, heeft vaak weinig meer dan een generiek verwijzing naar "de vacaturebank" of een lijst van bedrijven op een bedrijventerrein. Dat is geen concreet instrument — het vertelt een inwoner niet welke specifieke rol op welke specifieke afstand van hun huis openstaat.
+A municipality that wants to show its residents that there is interesting work locally often has little more than a generic reference to "the job board" or a list of companies on a business park. That isn't a concrete tool — it doesn't tell a resident which specific role is open at what specific distance from their home.
 
-## Waarom dit relevant is voor gemeentelijk beleid
+## Why This Is Relevant to Municipal Policy
 
-Gemeenten met een technologiesector of kenniscluster — vaak met AI-, ML- of datawerk erin — willen laten zien dat die werkgelegenheid er is, zowel richting inwoners als richting potentiële vestigers. Een adresniveau-vacaturebank maakt dat concreet: niet "er is werk in onze gemeente" als abstracte bewering, maar een direct te checken lijst van openstaande rollen met exacte afstand.
+Municipalities with a technology sector or knowledge cluster — often including AI, ML or data work — want to show that this employment exists, both to residents and to companies considering settling there. An address-level job board makes that concrete: not "there is work in our municipality" as an abstract claim, but a directly checkable list of open roles with exact distance.
 
-## Hoe dit past bij bestaand gemeentelijk werk
+## How This Fits With Existing Municipal Work
 
-**Communicatie richting inwoners.** Een verwijzing op een gemeentelijke website of in een lokale nieuwsbrief kost weinig en geeft inwoners een concreet instrument in plaats van een algemene bewering.
+**Communication with residents.** A reference on the municipal website or in a local newsletter costs little and gives residents a concrete tool instead of a general claim.
 
-**Ondersteuning van werkgevers op bedrijventerreinen.** Als de gemeente al contact onderhoudt met lokale werkgevers voor vestigingsbeleid of vergunningen, is het aanmoedigen van een gratis eerste vacatureplaatsing een kleine, logische toevoeging.
+**Support for employers on business parks.** If the municipality already maintains contact with local employers about business location policy or permits, encouraging a free first vacancy listing is a small, logical addition.
 
-**Onderbouwing van vestigingsbeleid.** Een zichtbare lijst van lokale AI/ML/Data-vacatures is een concreet, verifieerbaar signaal richting bedrijven die overwegen zich in de gemeente te vestigen — sterker dan een algemene bewering over "een aantrekkelijk vestigingsklimaat".
+**Substantiating business location policy.** A visible list of local AI/ML/Data vacancies is a concrete, verifiable signal to companies considering settling in the municipality — stronger than a general claim about "an attractive business climate."
 
-## Wat dit niet is
+## What This Is Not
 
-Dit is geen vervanging van gemeentelijk arbeidsmarktbeleid of vestigingsbeleid, en het lost geen structureel tekort aan werkgelegenheid op als dat er is. Het is een concreet, laagdrempelig instrument voor het specifieke probleem van zichtbaarheid van werkgelegenheid die al bestaat.
+This is not a replacement for municipal labour market or business location policy, and it doesn't solve a structural shortage of employment if there is one. It is a concrete, low-threshold tool for the specific problem of visibility of employment that already exists.
 
-## Waar te beginnen
+## Three Concrete Applications Within Existing Municipal Work
 
-Bekijk of een verwijzing naar zichtbare, lokale AI/ML/Data-vacatures past bij bestaande communicatie richting inwoners of bestaande werkgeversrelaties, als een kleine toevoeging in plaats van een nieuw beleidsproject.
+**On the municipal website, in the section on working and doing business.** A short, up-to-date reference next to existing information about local business parks and location options.
 
-Neem contact op via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) om te bespreken of dit past bij het werk van je gemeente.
+**In an annual economic monitor or report.** Visible vacancy data can add a concrete, verifiable data point alongside existing figures on business establishments and employment.
 
-## Drie concrete toepassingen binnen bestaand gemeentelijk werk
+**As a topic in existing employer consultations.** Economic affairs account managers who already talk to local companies can bring up the free first vacancy listing as a practical point.
 
-**Op de gemeentelijke website, in de sectie voor werken en ondernemen.** Een korte, actuele verwijzing naast bestaande informatie over lokale bedrijventerreinen en vestigingsmogelijkheden.
+## Comparison Table: Generic Claim vs. Verifiable Data
 
-**In een jaarlijkse economische monitor of rapportage.** Zichtbare vacaturedata kan een concreet, verifieerbaar datapunt toevoegen naast bestaande cijfers over bedrijfsvestigingen en werkgelegenheid.
-
-**Als gespreksonderwerp bij bestaand werkgeversoverleg.** Accountmanagers economische zaken die toch al met lokale bedrijven spreken, kunnen het gratis eerste vacature plaatsen als praktisch punt meenemen.
-
-## Vergelijkingstabel: generieke bewering vs. verifieerbare data
-
-| Aspect | "Er is hier veel werkgelegenheid" | Zichtbare, adresniveau vacaturelijst |
+| Aspect | "There is plenty of employment here" | Visible, address-level vacancy list |
 |---|---|---|
-| Verifieerbaarheid door een inwoner | Laag | Hoog — direct te checken |
-| Bruikbaar in een rapportage | Beperkt, moeilijk te onderbouwen | Concreet datapunt |
-| Kosten om te onderhouden | Geen, maar ook geen bewijskracht | Minimaal — bestaat al elders |
-| Geloofwaardigheid richting pers/bestuur | Wisselend | Hoger door verifieerbaarheid |
+| Verifiability for a resident | Low | High — directly checkable |
+| Usable in a report | Limited, hard to substantiate | Concrete data point |
+| Cost to maintain | None, but also no evidential value | Minimal — it already exists elsewhere |
+| Credibility with press/administrators | Variable | Higher thanks to verifiability |
 
-## Waarom dit ook de relatie met lokale werkgevers kan versterken
+## Why This Can Also Strengthen the Relationship With Local Employers
 
-Een gemeente die actief attendeert op de mogelijkheid om gratis een vacature te plaatsen, biedt lokale werkgevers een concreet, kosteloos voordeel — iets tastbaars in een relatie die anders vaak beperkt blijft tot vergunningen en regelgeving. Dit kleine gebaar kan de toon van het bredere contact tussen gemeente en ondernemer merkbaar verbeteren, simpelweg omdat het voor de eerste keer iets is wat de gemeente de ondernemer aanreikt in plaats van andersom.
+A municipality that actively points out the option to post a vacancy for free offers local employers a concrete, cost-free benefit — something tangible in a relationship that otherwise often stays limited to permits and regulations. This small gesture can noticeably improve the tone of the wider contact between municipality and business owner, simply because for once it is something the municipality offers the business rather than the other way round.
 
-## Een concreet scenario van hoe dit een bestaand gesprek verrijkt
+## A Concrete Scenario of How This Enriches an Existing Conversation
 
-Een accountmanager economische zaken bezoekt een lokaal bedrijf voor een regulier gesprek over vestigingsvoorwaarden. Aan het einde van het gesprek noemt de accountmanager terloops: "Wist je trouwens dat je gratis een eerste vacature kunt plaatsen op een platform dat specifiek AI- en datavacatures toont op adresniveau?" Dit kost geen extra afspraak, geen extra tijd buiten het geplande gesprek, en geeft de accountmanager iets tastbaars om aan te bieden in een relatie die anders vooral over regelgeving en vergunningen gaat. Voor het bedrijf is dit een kleine, kosteloze toevoeging; voor de gemeente is het een investering van letterlijk één zin in een gesprek dat toch al gepland stond.
+An economic affairs account manager visits a local company for a regular conversation about location conditions. At the end of the conversation, the account manager mentions in passing: "By the way, did you know you can post a first vacancy for free on a platform that shows AI and data vacancies specifically at address level?" This costs no extra appointment and no extra time beyond the planned conversation, and gives the account manager something tangible to offer in a relationship that is otherwise mainly about regulations and permits. For the company it is a small, free addition; for the municipality it is an investment of literally one sentence in a conversation that was already scheduled.
 
-## Een veelvoorkomend misverstand over wie dit initiatief zou moeten nemen
+## A Common Misconception About Who Should Take This Initiative
 
-Gemeenten nemen soms aan dat dit soort informatie het beste via een aparte, nieuwe communicatiecampagne verspreid moet worden. In de praktijk is de meest effectieve verspreiding vaak de simpelste: het toevoegen van één zin aan gesprekken en communicatie die al plaatsvinden, in plaats van een nieuw kanaal op te zetten dat extra middelen en aandacht vraagt om op te bouwen.
+Municipalities sometimes assume this kind of information is best spread through a separate, new communication campaign. In practice, the most effective distribution is often the simplest: adding one sentence to conversations and communication that already take place, instead of setting up a new channel that requires extra resources and attention to build.
 
-## Waarom dit ook de perceptie van de gemeente bij lokale ondernemers kan verbeteren
+## Why This Can Also Improve How Local Business Owners Perceive the Municipality
 
-Een gemeente die vooral wordt geassocieerd met regelgeving, vergunningen en handhaving, krijgt met dit soort kleine, kosteloze tips een kans om zich ook te positioneren als een partner die actief meedenkt over de groei van een bedrijf — een relatief goedkope manier om de toon van de relatie tussen gemeente en ondernemer merkbaar te verbeteren.
+A municipality that is mainly associated with regulations, permits and enforcement gets a chance, with small, free tips like this, to also position itself as a partner that actively thinks along about a company's growth — a relatively cheap way to noticeably improve the tone of the relationship between municipality and business owner.
 
-## Hoe je dit kunt meten zonder een ingewikkeld nieuw systeem op te zetten
+## How to Measure This Without Setting Up a Complicated New System
 
-Een gemeente hoeft geen uitgebreid nieuw monitoringsysteem op te zetten om te zien of deze aanpak iets oplevert — een simpele, periodieke check (bijvoorbeeld elk kwartaal) van hoeveel bedrijven daadwerkelijk gebruik hebben gemaakt van de gratis eerste vacatureplaatsing na een gemeentelijke vermelding, volstaat als eerste indicator. Dit hoeft geen perfecte attributie te zijn — zelfs een ruwe schatting geeft een gemeente voldoende basis om te beslissen of de aanpak de moeite waard is om voort te zetten of uit te breiden.
+A municipality doesn't need an extensive new monitoring system to see whether this approach produces anything — a simple, periodic check (for example, every quarter) of how many companies actually used the free first vacancy listing after a municipal mention is enough as a first indicator. It doesn't need perfect attribution — even a rough estimate gives a municipality enough basis to decide whether the approach is worth continuing or expanding.
 
-## Waarom dit initiatief zich goed leent voor samenwerking tussen buurgemeenten
+## Why This Initiative Lends Itself Well to Cooperation Between Neighbouring Municipalities
 
-Gemeenten die dicht bij elkaar liggen, kunnen deze aanpak gezamenlijk oppakken in plaats van elk apart het wiel opnieuw uit te vinden — een gedeelde communicatie-inspanning richting lokale werkgevers in een hele regio, in plaats van gemeente voor gemeente, bespaart tijd en zorgt voor een consistentere boodschap richting bedrijven die vaak toch al over gemeentegrenzen heen opereren.
+Municipalities close to each other can take up this approach together instead of each reinventing the wheel — a shared communication effort towards local employers across a whole region, rather than municipality by municipality, saves time and ensures a more consistent message to companies that often operate across municipal boundaries anyway.
 
-## Veelgestelde vragen
+## Where This Fits in the Municipal Toolkit
 
-### (Scenario: gemeente die twijfelt of dit meerwaarde heeft boven een generiek vacatureoverzicht) Wat voegt dit toe ten opzichte van een generieke verwijzing naar "de vacaturebank"?
-Een adresniveau-vacaturebank toont exacte afstand tot huis voor specifiek AI/ML/Data-werk, wat een inwoner direct kan checken, in plaats van een algemene bewering dat er lokaal werk is.
+Municipalities have several roles in the labour market. Visibility of local AI vacancies touches on several of them, without becoming a new task.
 
-### (Scenario: gemeente die denkt dat dit een groot project vergt) Is dit een groot beleidsproject, of iets kleiners?
-Iets kleiners — het is een concrete toevoeging aan bestaande communicatie richting inwoners of bestaande werkgeversrelaties, geen nieuw beleidsproject op zichzelf.
+| Municipal role | Existing instrument | How visible AI vacancies fit in |
+|---|---|---|
+| **Economic affairs and business location policy** | Account management, business parks, location promotion | Verifiable evidence of local knowledge-based employment for companies considering settling |
+| **Work and income** | Implementation of the **Participation Act**, reintegration | Limited direct overlap; AI vacancies are mostly highly skilled work, but a clear picture of the local labour market also helps in retraining conversations |
+| **Regional employer services** | **Employer Service Points** in the 35 **labour market regions**, where municipalities and **UWV** cooperate | Existing employer contacts can be pointed to visible vacancy listings |
+| **Education and talent** | Cooperation with vocational colleges, universities of applied sciences and research universities in the region | Point graduates to employment nearby |
+| **Sustainability and mobility** | Mobility programmes with employers | Shorter commuting distances support mobility goals |
 
-### (Scenario: gemeente die dit wil gebruiken voor vestigingsbeleid) Kan dit helpen bij het aantrekken van nieuwe bedrijven naar de gemeente?
-Het kan een concreet, verifieerbaar signaal zijn over bestaande lokale werkgelegenheid, wat sterker overkomt dan een algemene bewering over het vestigingsklimaat — maar het vervangt geen breder vestigingsbeleid.
+The core: it isn't a new policy area, but a connecting element between departments that are each already in conversation with employers or residents.
 
-### (Scenario: gemeente die twijfelt of dit werkgeversrelaties dupliceert) Overlapt dit met contact dat we al hebben met lokale werkgevers?
-Niet als duplicatie — het is een kleine, logische toevoeging aan bestaand contact, bijvoorbeeld via vestigingsbeleid of vergunningen, waarbij je werkgevers aanmoedigt vacatures zichtbaar te maken.
+## Data Municipalities Already Use — and What Vacancy Data Adds
 
-### (Scenario: gemeente die wil weten of dit een structureel tekort oplost) Lost dit een structureel tekort aan werkgelegenheid op als dat er is?
-Nee — het lost specifiek het zichtbaarheidsprobleem op voor werkgelegenheid die al bestaat. Een structureel tekort vergt bredere economische ontwikkelingsmaatregelen.
+For economic monitoring, municipalities often work with established sources. Vacancy data complements them on one specific point.
+
+| Source | What it shows | Limitation for this purpose |
+|---|---|---|
+| **LISA** (National Information System of Employment) | Establishments and employed persons by location and sector | Shows jobs that exist, not which vacancies are open now |
+| **CBS** statistics, such as key figures by district and neighbourhood | Population, employment and commuting at aggregated level | No current vacancies, often published with a delay |
+| **KVK** trade register | Registered companies and establishments | Says nothing about open positions |
+| **UWV** labour market information | Regional labour market developments and tightness by occupational group | Broad, not very specific for AI and data work |
+| **Address-level vacancy data** | Current AI, ML and data vacancies with exact location | Only the part of the market that has been made visible there |
+
+Together, these sources give a more complete picture: LISA and CBS show which employment is structurally present, vacancy data shows which opportunities are open to a resident today. Always present vacancy data as a complement, with a clear source and date, and not as a complete picture of the local labour market.
+
+## Preconditions for a Municipality
+
+**Neutrality.** A municipality should preferably not refer exclusively to one commercial party. Present a reference as one of the available tools, alongside, for example, UWV's vacancy services, and be transparent about what each tool offers.
+
+**No personal data.** A reference to a job board requires no exchange of data about residents or job seekers. Municipalities process a lot of sensitive personal data in the social domain; under the **GDPR**, that data should not be shared with external platforms for this kind of purpose.
+
+**No procurement needed.** A link on the municipal website or a tip in an employer conversation is not a contract or service agreement. Only if a municipality were to purchase services itself would the usual procurement rules apply.
+
+**Accessibility.** Municipal web pages must meet the accessibility requirements for government websites; keep references and explanations simple and easy to read.
+
+## Cooperating Within the Region
+
+Because labour markets don't stop at the municipal boundary, cooperation is the obvious route.
+
+- **Through the labour market region.** The regional Employer Service Point is a natural channel to get the message to employers in several municipalities at once.
+- **Through regional development agencies** and partnerships that already have contact with innovative companies in the region.
+- **Through the VNG.** The **Association of Netherlands Municipalities** shares knowledge and good practices between municipalities; a successful local approach can be followed more widely that way.
+
+## An Example Text for the Municipal Website
+
+A reference doesn't have to be long. A text like this fits in the "Working and doing business" section:
+
+> **Working in [municipality] in AI, data and technology**
+> Companies in our municipality and region work on data, software and artificial intelligence — often without you knowing them. Want to know which roles are open now and how far they are from your home? Take a look at, among others, [address-level job board] and UWV's vacancy services. Are you an employer who wants to make your vacancy visible? Contact our account management team or the Employer Service Point in the region.
+
+## Common Mistakes to Avoid
+
+- **Presenting one party as the only solution.** Name several tools and be transparent about what each offers.
+- **Leaving outdated information online.** Check references at least once a year.
+- **Making promises about employment.** Present vacancy data as a snapshot, not a guarantee.
+- **Leaving it at communication only.** The biggest gain is in the conversation with employers, not just a web page.
+
+## Key Takeaways
+
+- Visible AI vacancies connect economic affairs, employer services, education and mobility without creating a new policy area.
+- Employer Service Points in the 35 labour market regions are an existing channel for reaching employers.
+- Vacancy data complements LISA, CBS, KVK and UWV labour market information with current, location-specific opportunities.
+- Take neutrality, the GDPR, procurement rules and accessibility into account.
+- Cooperate at the level of the labour market region and share experiences through regional partners and the VNG.
+
+## Where to Start
+
+Check whether a reference to visible, local AI/ML/Data vacancies fits your existing communication with residents or existing employer relationships, as a small addition rather than a new policy project.
+
+Get in touch via [info@onlyaijobs.eu](mailto:info@onlyaijobs.eu) to discuss whether this fits your municipality's work.
+
+## Frequently Asked Questions
+
+### (Scenario: municipality unsure whether this adds value over a generic vacancy overview) What does this add compared with a generic reference to "the job board"?
+An address-level job board shows the exact distance from home for AI/ML/Data work specifically, which a resident can check directly, instead of a general claim that there is local work.
+
+### (Scenario: municipality that thinks this requires a big project) Is this a large policy project, or something smaller?
+Something smaller — it is a concrete addition to existing communication with residents or existing employer relationships, not a new policy project in itself.
+
+### (Scenario: municipality wanting to use this for business location policy) Can this help attract new companies to the municipality?
+It can be a concrete, verifiable signal about existing local employment, which comes across as stronger than a general claim about the business climate — but it doesn't replace broader business location policy.
+
+### (Scenario: municipality unsure whether this duplicates employer relationships) Does this overlap with contact we already have with local employers?
+Not as duplication — it is a small, logical addition to existing contact, for example through business location policy or permits, in which you encourage employers to make vacancies visible.
+
+### (Scenario: municipality wanting to know whether this solves a structural shortage) Does this solve a structural shortage of employment if there is one?
+No — it specifically solves the visibility problem for employment that already exists. A structural shortage requires broader economic development measures.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Wat voegt dit toe ten opzichte van een generieke verwijzing naar \"de vacaturebank\"?", "acceptedAnswer": {"@type": "Answer", "text": "Een adresniveau-vacaturebank toont exacte afstand tot huis voor specifiek AI/ML/Data-werk, direct te checken door een inwoner."}},
-    {"@type": "Question", "name": "Is dit een groot beleidsproject, of iets kleiners?", "acceptedAnswer": {"@type": "Answer", "text": "Iets kleiners — een concrete toevoeging aan bestaande communicatie of werkgeversrelaties."}},
-    {"@type": "Question", "name": "Kan dit helpen bij het aantrekken van nieuwe bedrijven naar de gemeente?", "acceptedAnswer": {"@type": "Answer", "text": "Het kan een concreet signaal zijn over bestaande lokale werkgelegenheid, maar vervangt geen breder vestigingsbeleid."}},
-    {"@type": "Question", "name": "Overlapt dit met contact dat we al hebben met lokale werkgevers?", "acceptedAnswer": {"@type": "Answer", "text": "Niet als duplicatie — het is een kleine, logische toevoeging aan bestaand contact."}},
-    {"@type": "Question", "name": "Lost dit een structureel tekort aan werkgelegenheid op als dat er is?", "acceptedAnswer": {"@type": "Answer", "text": "Nee — het lost specifiek het zichtbaarheidsprobleem op voor werkgelegenheid die al bestaat."}}
+    {"@type": "Question", "name": "What does this add compared with a generic reference to \"the job board\"?", "acceptedAnswer": {"@type": "Answer", "text": "An address-level job board shows the exact distance from home for AI/ML/Data work specifically, directly checkable by a resident."}},
+    {"@type": "Question", "name": "Is this a large policy project, or something smaller?", "acceptedAnswer": {"@type": "Answer", "text": "Something smaller — a concrete addition to existing communication or employer relationships."}},
+    {"@type": "Question", "name": "Can this help attract new companies to the municipality?", "acceptedAnswer": {"@type": "Answer", "text": "It can be a concrete signal about existing local employment, but it doesn't replace broader business location policy."}},
+    {"@type": "Question", "name": "Does this overlap with contact we already have with local employers?", "acceptedAnswer": {"@type": "Answer", "text": "Not as duplication — it is a small, logical addition to existing contact."}},
+    {"@type": "Question", "name": "Does this solve a structural shortage of employment if there is one?", "acceptedAnswer": {"@type": "Answer", "text": "No — it specifically solves the visibility problem for employment that already exists."}}
   ]
 }
 </script>

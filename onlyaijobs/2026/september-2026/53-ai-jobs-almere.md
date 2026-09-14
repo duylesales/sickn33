@@ -1,106 +1,191 @@
 ---
-Title: "AI-vacatures in Almere: een jonge stad die haar eigen datamarkt nog aan het bouwen is"
-Keywords: ai vacatures almere, data scientist almere, machine learning flevoland, remote werken almere, OnlyAIJobs
+Title: "AI Jobs in Almere: A Young City Still Building Its Own Data Market"
+Keywords: ai jobs almere, data scientist almere, machine learning flevoland, remote work almere, OnlyAIJobs
 Buyer Stage: Consideration / Job Search
-Target Persona: B (Ervaren AI/ML-engineer)
+Target Persona: B (Experienced AI or ML engineer)
 Content Format: Regional Market Analysis
 ---
 
-# AI-vacatures in Almere: een jonge stad die haar eigen datamarkt nog aan het bouwen is
+# AI Jobs in Almere: A Young City Still Building Its Own Data Market
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-vacatures in Almere: een jonge stad die haar eigen datamarkt nog aan het bouwen is",
-  "description": "Almere is een van de jongste grote steden van Nederland, met een groeiende maar nog kleine lokale datamarkt en een bevolking die vaak forenst naar Amsterdam.",
+  "headline": "AI Jobs in Almere: A Young City Still Building Its Own Data Market",
+  "description": "Almere is one of the youngest large cities in the Netherlands, with a growing but still small local data market and a population that often commutes to Amsterdam.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-14",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-vacatures-almere"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-almere"},
+  "inLanguage": "en",
+  "about": [{"@type": "Place", "name": "Almere"}, {"@type": "Place", "name": "Flevoland"}],
+  "mentions": [
+    {"@type": "Place", "name": "Amsterdam Metropolitan Area"},
+    {"@type": "CollegeOrUniversity", "name": "Windesheim Flevoland"},
+    {"@type": "CollegeOrUniversity", "name": "Aeres University of Applied Sciences Almere"},
+    {"@type": "Organization", "name": "Horizon Flevoland"},
+    {"@type": "Event", "name": "Floriade Expo 2022"},
+    {"@type": "Place", "name": "Lelystad"},
+    {"@type": "Place", "name": "Almere Centrum station"}
+  ]
 }
 </script>
 
-Almere is een van de jongste grote steden van Nederland, gebouwd om de druk op Amsterdam te verlichten — en dat verleden is nog steeds zichtbaar in hoe de arbeidsmarkt werkt. Veel inwoners forenzen dagelijks naar Amsterdam voor werk, ook voor datarollen, terwijl de lokale werkgeversbasis in Almere zelf nog relatief jong en groeiend is.
+Almere is one of the youngest large cities in the Netherlands, built to relieve pressure on Amsterdam — and that past is still visible in how the labour market works. Many residents commute to Amsterdam daily for work, including for data roles, while the local employer base in Almere itself is still relatively young and growing.
 
-## Wat dit betekent voor een lokale zoekopdracht
+## What This Means for a Local Search
 
-Omdat een groot deel van de beroepsbevolking richting Amsterdam forenst, is de lokale vraag naar AI- en datarollen in Almere zelf nog beperkter dan in gevestigde steden — maar niet afwezig. Groeiende bedrijven in logistiek, publieke dienstverlening en regionale dienstverlening bouwen geleidelijk eigen datacapaciteit op, vaak zonder dat dit breed wordt geadverteerd.
+Because a large part of the workforce commutes towards Amsterdam, local demand for AI and data roles in Almere itself is more limited than in established cities — but not absent. Growing companies in logistics, public services and regional services are gradually building their own data capacity, often without advertising it widely.
 
-## Waarom afstand hier een dubbele rol speelt
+## Why Distance Plays a Double Role Here
 
-Voor iemand die in Almere woont, is de vraag niet alleen "is er lokaal werk", maar ook "is de forensreis naar Amsterdam de moeite waard vergeleken met een kleinere, dichterbij gelegen rol". Dat is precies de afweging die een vacaturebank op adresniveau inzichtelijk maakt, in plaats van een aanname dat Amsterdam automatisch de betere optie is.
+For someone living in Almere, the question isn't just "is there local work," but also "is the commute to Amsterdam worth it compared with a smaller, closer role." That is exactly the trade-off an address-level job board makes visible, instead of assuming Amsterdam is automatically the better option.
 
-## Waar te beginnen
+## Why Almere's History Still Shapes the Labour Market
 
-Vergelijk niet alleen op functietitel of bedrijfsnaam, maar leg de daadwerkelijke reistijd van een lokale Almeerse vacature naast die van een vergelijkbare rol in Amsterdam, voordat je aanneemt dat forenzen de enige optie is.
+Almere was built as an overspill city for Amsterdam, which means the commuting culture towards Amsterdam is more deeply rooted than in a city that grew organically around its own economy. That historical pattern is slowly changing as the city ages and builds its own business base, but it explains why the reflex to look at Amsterdam is stronger here than in, for example, Haarlem or Purmerend.
 
-Bekijk actuele AI-, machine learning- en datavacatures in en rond Almere op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
+## Comparison Table: Commuting Behaviour in Comparable Cities Near Amsterdam
 
-## Waarom Almere's geschiedenis nog steeds de arbeidsmarkt vormt
-
-Almere werd gebouwd als ontlastingsstad voor Amsterdam, wat betekent dat de forenscultuur richting Amsterdam dieper geworteld is dan in een stad die organisch is gegroeid rond haar eigen economie. Dat historische patroon verandert langzaam, naarmate de stad ouder wordt en een eigen bedrijvenbestand opbouwt, maar het verklaart waarom de reflex om naar Amsterdam te kijken hier sterker is dan in bijvoorbeeld Haarlem of Purmerend.
-
-## Vergelijkingstabel: forensgedrag in vergelijkbare Amsterdam-nabije steden
-
-| Stad | Historische reden voor forensgedrag | Sterkte van de forensreflex |
+| City | Historical reason for commuting | Strength of the commuting reflex |
 |---|---|---|
-| Almere | Bewust gebouwd als ontlastingsstad | Zeer sterk |
-| Haarlem | Organisch gegroeide, oudere stad | Gemiddeld |
-| Purmerend | Gegroeid als forensstad, maar langer gevestigd | Gemiddeld tot sterk |
-| Hoofddorp | Gegroeid rond Schiphol-economie | Zwakker, eigen economisch zwaartepunt |
+| Almere | Deliberately built as an overspill city | Very strong |
+| Haarlem | Organically grown, older city | Moderate |
+| Purmerend | Grew as a commuter town, but established longer | Moderate to strong |
+| Hoofddorp | Grew around the Schiphol economy | Weaker, its own economic centre of gravity |
 
-## Wat dit concreet betekent voor een lokale zoektocht
+## What This Concretely Means for a Local Search
 
-Juist omdat de forensreflex in Almere zo sterk is, is de lokale markt relatief onderbelicht ten opzichte van haar daadwerkelijke omvang — een groeiende stad met een groeiend bedrijvenbestand trekt nog steeds minder lokale sollicitanten aan dan je zou verwachten op basis van het aantal inwoners. Voor wie bereid is om voorbij de forensreflex te kijken, betekent dit potentieel minder concurrentie per lokale vacature dan in vergelijkbaar grote, langer gevestigde steden.
+Precisely because the commuting reflex in Almere is so strong, the local market is relatively underexposed compared with its actual size — a growing city with a growing business base still attracts fewer local applicants than you would expect based on its population. For those willing to look beyond the commuting reflex, this potentially means less competition per local vacancy than in similarly sized, longer-established cities.
 
-## Een concreet scenario van de forensafweging in de praktijk
+## A Concrete Scenario of the Commuting Trade-Off in Practice
 
-Een data-analist die in Almere woont, overweegt een rol in Amsterdam versus een vergelijkbare rol bij een lokaal Almeers bedrijf. De Amsterdamse rol biedt een net iets hoger salaris en een bekendere bedrijfsnaam. De dagelijkse reistijd naar Amsterdam bedraagt echter 50 minuten per traject via trein en metro, terwijl de Almeerse rol op fietsafstand ligt. Reken je de extra reistijd om in jaarlijkse uren — zoals elders op deze site is uitgewerkt — dan kost de Amsterdamse keuze al snel meerdere werkweken per jaar aan extra reistijd, een kostenpost die zelden expliciet wordt meegewogen tegenover het iets hogere salaris.
+A data analyst living in Almere is weighing a role in Amsterdam against a comparable role at a local Almere company. The Amsterdam role offers a slightly higher salary and a better-known company name. The daily commute to Amsterdam, however, is 50 minutes each way by train and metro, while the Almere role is within cycling distance. Converting the extra travel time into annual hours — as worked out elsewhere on this site — the Amsterdam choice quickly costs several working weeks a year in extra travel time, a cost rarely weighed explicitly against the slightly higher salary.
 
-## Een veelvoorkomend misverstand over wat "kansrijker" betekent
+## A Common Misconception About What "Better Prospects" Means
 
-Kandidaten in Almere nemen soms aan dat een Amsterdamse werkgever per definitie meer carrièrekansen biedt dan een lokale Almeerse werkgever, puur vanwege de naamsbekendheid. Dat is een aanname die zelden expliciet wordt getoetst — een groeiend lokaal bedrijf kan net zo veel, of zelfs meer, doorgroeimogelijkheden bieden dan een grote, gevestigde Amsterdamse werkgever waar je een van velen bent in een specifiek afgebakende rol.
+Candidates in Almere sometimes assume an Amsterdam employer by definition offers more career opportunities than a local Almere employer, purely because of name recognition. That assumption is rarely tested explicitly — a growing local company can offer as many, or even more, growth opportunities than a large, established Amsterdam employer where you are one of many in a narrowly defined role.
 
-## Waarom dit patroon zich waarschijnlijk langzaam zal wijzigen naarmate Almere ouder wordt
+## Why This Pattern Will Probably Change Slowly as Almere Ages
 
-Naarmate Almere's eigen bedrijvenbestand verder groeit en meer historie opbouwt, zal de forensreflex richting Amsterdam waarschijnlijk geleidelijk afnemen — een patroon dat je ook bij andere, oudere forenssteden in Nederland ziet. Voor kandidaten die nu al in Almere wonen, betekent dit dat de huidige onderbelichting van de lokale markt een tijdelijk venster van kans is, niet een permanente structurele situatie.
+As Almere's own business base grows further and builds more history, the commuting reflex towards Amsterdam will probably decline gradually — a pattern you also see in other, older commuter towns in the Netherlands. For candidates already living in Almere, this means the current underexposure of the local market is a temporary window of opportunity, not a permanent structural situation.
 
-## Hoe de groei van Almere de komende jaren de lokale markt waarschijnlijk zal veranderen
+## How Almere's Growth Will Probably Change the Local Market in Coming Years
 
-Almere behoort tot de snelst groeiende gemeenten van Nederland qua inwonertal, wat op termijn ook een groeiend lokaal bedrijvenbestand met zich meebrengt. Kandidaten die nu al bereid zijn om de lokale markt serieus te overwegen, positioneren zich vroeg in wat waarschijnlijk een geleidelijk groeiende, en dus steeds minder onderbelichte, regionale arbeidsmarkt wordt — een window of opportunity dat zich in de tijd waarschijnlijk zal versmallen naarmate meer kandidaten dit patroon zelf gaan herkennen.
+Almere is among the fastest-growing municipalities in the Netherlands by population, which over time also brings a growing local business base. Candidates willing to take the local market seriously now position themselves early in what is likely to become a gradually growing, and therefore less underexposed, regional labour market — a window of opportunity that will probably narrow over time as more candidates recognise this pattern themselves.
 
-## Waarom dit ook relevant is voor werkgevers die zich in Almere vestigen
+## Why This Is Also Relevant to Employers Settling in Almere
 
-Voor werkgevers die overwegen zich in Almere te vestigen, is de keerzijde van de huidige onderbelichting van de lokale markt een reëel voordeel: een lokale kandidatenpool die nog niet wordt overspoeld door concurrerende werkgevers, met potentieel lagere wervingskosten en minder concurrentie om talent dan in een verzadigde markt als Amsterdam. Dit is een argument dat zelden expliciet wordt gebruikt in gesprekken over vestigingslocaties, maar dat voor een werkgever met flexibiliteit in vestigingskeuze het overwegen waard is.
+For employers considering settling in Almere, the flip side of the current underexposure of the local market is a real advantage: a local candidate pool not yet flooded by competing employers, with potentially lower recruitment costs and less competition for talent than in a saturated market like Amsterdam. It is an argument rarely used explicitly in location discussions, but worth considering for an employer with flexibility in its choice of location.
 
-## Veelgestelde vragen
+## Almere in Facts: From Polder to Flevoland's Largest City
 
-### (Scenario: inwoner van Almere die automatisch naar Amsterdam kijkt) Moet ik automatisch naar Amsterdam kijken voor een AI-baan als ik in Almere woon?
-Niet per se — leg eerst de daadwerkelijke reistijd en inhoud van een lokale Almeerse vacature naast een vergelijkbare rol in Amsterdam, in plaats van aan te nemen dat forenzen de enige optie is.
+The "young city" in the title is literally young. Almere is built on land reclaimed from the water only in the twentieth century, as part of the Flevopolder. The first residents arrived in the second half of the 1970s, and within a few decades Almere grew into the largest municipality in the province of Flevoland — larger than the provincial capital, **Lelystad**.
 
-### (Scenario: kandidaat die denkt dat Almere geen lokale markt heeft) Is er sowieso lokale AI/data-werkgelegenheid in Almere?
-Ja, al is die kleiner en minder zichtbaar dan in gevestigde steden — groeiende bedrijven in logistiek, publieke dienstverlening en regionale dienstverlening bouwen geleidelijk eigen datacapaciteit op.
+Almere is part of the **Amsterdam Metropolitan Area**, the partnership of municipalities around Amsterdam that coordinates economy, housing and accessibility at regional level. In 2022 the city hosted the **Floriade Expo**, the international horticultural exhibition, for which a new city district was developed.
 
-### (Scenario: kandidaat die twijfelt waarom deze markt zo weinig zichtbaar is) Waarom is de lokale AI-markt in Almere zo weinig zichtbaar?
-Omdat een groot deel van de beroepsbevolking naar Amsterdam forenst, wat betekent dat lokale werkgevers minder concurreren om zichtbaarheid op landelijke platforms dan werkgevers in gevestigde steden.
+That history explains the pattern in this article: the city was designed around housing for people who worked elsewhere. Its own business base is growing, but is younger than in cities that developed around their own economy over centuries.
 
-### (Scenario: kandidaat die wil weten hoe deze afweging te maken) Hoe weeg ik een lokale Almeerse rol af tegen forenzen naar Amsterdam?
-Vergelijk de daadwerkelijke reistijd en inhoud van beide opties concreet, in plaats van aan te nemen dat een grotere stad automatisch een betere kans biedt.
+## Accessibility: Which Labour Markets Are Within Reach
 
-### (Scenario: kandidaat die twijfelt of deze markt zal groeien) Zal de lokale AI-markt in Almere groeien?
-Dat is niet iets waar wij een landelijke voorspelling over doen — bekijk de actuele vacatures zelf om een actueel beeld te krijgen in plaats van op een aanname te vertrouwen.
+Almere has several railway stations, including Almere Centrum, Almere Poort and Almere Buiten, and lies on the railway line between Amsterdam and Lelystad.
+
+| Destination | Indicative train travel time from Almere Centrum | What it offers |
+|---|---|---|
+| Amsterdam Zuid and Amsterdam Centraal | Around 20 to 30 minutes | Zuidas, Amsterdam Science Park and the Amsterdam tech sector |
+| Schiphol and Hoofddorp | Around half an hour | Aviation, travel and logistics data |
+| Utrecht | Under an hour, depending on the connection | Financial services, healthcare and government |
+| Lelystad | Around a quarter of an hour | Provincial government, logistics, aviation development |
+| Hilversum | Around half an hour | Media and creative industry |
+
+Check current travel times in the NS journey planner. The pattern is clear: from Almere you can commute to almost the entire northern Randstad, but precisely because of that, local supply is easily overlooked.
+
+## The Local Ecosystem Players
+
+Although the local data market is smaller than Amsterdam's, there are concrete organisations shaping it.
+
+**Windesheim Flevoland.** The Almere campus of Windesheim University of Applied Sciences offers bachelor's programmes, including ICT-related ones, and is an important source of locally trained talent that doesn't necessarily want to go to Amsterdam.
+
+**Aeres University of Applied Sciences Almere.** Focused on topics including green space, food and sustainability — themes connected to Flevoland's agricultural and spatial challenges, where data on soil, water and area development is becoming increasingly important.
+
+**Horizon Flevoland.** Flevoland's development agency supports innovation and business activity in the province and is a logical entry point for seeing which companies in the region are growing.
+
+**Flevoland as an agricultural and logistics province.** Flevoland's polders are among the most productive agricultural areas in the Netherlands, and the province has a growing logistics sector along the A6. Precision agriculture, logistics planning and spatial data are therefore real, if underexposed, data themes in the region.
+
+## The Type of Data Work You Can Expect in and Around Almere
+
+| Sector | Examples of data problems | Typical job titles |
+|---|---|---|
+| Logistics and distribution | Inventory planning, route optimisation, warehouse automation | Supply chain analyst, planner, logistics data analyst |
+| Public services | Policy information, neighbourhood data, capacity planning | Information analyst, data adviser |
+| Healthcare and welfare | Capacity planning, care utilisation, quality | Healthcare data analyst, BI specialist |
+| Business services and IT | Customer data, software, cloud infrastructure | Data engineer, BI developer |
+| Agrifood in Flevoland | Yield forecasting, soil and water data | Precision agriculture data analyst |
+
+## Hybrid Working Changes the Trade-Off
+
+For Almere residents, hybrid working is an important factor. With two office days a week in Amsterdam, the travel time cost becomes smaller, but not zero. Conversely, a local Almere employer with a flexible policy can be especially attractive: short travel time on office days plus flexibility on other days. So filter by distance from your home and by work type at the same time, and ask about the concrete number of office days for both options.
+
+## For Employers in Almere: Visibility Is Half the Work
+
+The underexposure of the local market is an opportunity for Almere employers. Anyone who makes an AI or data vacancy visible with an exact address reaches exactly the residents who currently travel to Amsterdam every day and would welcome a shorter commute. Explicitly state the travel time and flexibility advantages: cycling distance, fixed home-working days or flexible start times. Those are arguments an Amsterdam employer simply can't offer an Almere resident.
+
+## Checklist: Comparing an Almere Role With an Amsterdam Role
+
+Use these points to compare two offers fairly, instead of only setting salary and company name side by side:
+
+1. **Door-to-door travel time per office day**, including transfers and the last stretch from the station.
+2. **Number of office days per week**, and whether that number is set in the contract or policy.
+3. **Travel allowance**, and whether it covers the full cost of a train subscription.
+4. **Home-working allowance** for the days you don't go to the office.
+5. **Flexibility around start and finish times**, which can weigh heavily with a long commute and childcare.
+6. **Content of the role**: which problem do you solve, with how many peers, and with what growth opportunities?
+7. **Stability and growth phase of the employer**, both at the local company and at the larger Amsterdam organisation.
+
+Filling in these points concretely often reveals that the difference between the two options is much smaller — or much larger — than the salary difference suggests.
+
+## Key Takeaways
+
+- Almere is a young, fast-grown city in Flevoland and part of the Amsterdam Metropolitan Area.
+- The strong commuting reflex towards Amsterdam leaves local AI and data supply underexposed.
+- Amsterdam, Schiphol, Utrecht, Lelystad and Hilversum are reachable from Almere; that is exactly why local work is often skipped.
+- Windesheim Flevoland, Aeres University of Applied Sciences Almere and Horizon Flevoland form the local ecosystem.
+- Logistics, public services, healthcare, IT and agrifood provide data work that is rarely called "AI"; search by distance and category.
+
+## Where to Start
+
+Don't compare only on job title or company name — set the actual travel time of a local Almere vacancy against a comparable role in Amsterdam before assuming commuting is the only option.
+
+Browse current AI, machine learning and data jobs in and around Almere at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
+
+## Frequently Asked Questions
+
+### (Scenario: Almere resident who automatically looks at Amsterdam) Should I automatically look at Amsterdam for an AI job if I live in Almere?
+Not necessarily — first compare the actual travel time and content of a local Almere vacancy with a comparable role in Amsterdam, instead of assuming commuting is the only option.
+
+### (Scenario: candidate who thinks Almere has no local market) Is there any local AI/data employment in Almere at all?
+Yes, although it is smaller and less visible than in established cities — growing companies in logistics, public services and regional services are gradually building their own data capacity.
+
+### (Scenario: candidate wondering why this market is so hard to see) Why is the local AI market in Almere so hard to see?
+Because a large part of the workforce commutes to Amsterdam, which means local employers compete less for visibility on national platforms than employers in established cities.
+
+### (Scenario: candidate who wants to know how to weigh this up) How do I weigh a local Almere role against commuting to Amsterdam?
+Compare the actual travel time and content of both options concretely, instead of assuming a bigger city automatically offers a better opportunity.
+
+### (Scenario: candidate unsure whether this market will grow) Will the local AI market in Almere grow?
+That isn't something we make a national prediction about — look at the current vacancies yourself for an up-to-date picture instead of relying on an assumption.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Moet ik automatisch naar Amsterdam kijken voor een AI-baan als ik in Almere woon?", "acceptedAnswer": {"@type": "Answer", "text": "Niet per se — leg eerst de daadwerkelijke reistijd en inhoud van een lokale Almeerse vacature naast een vergelijkbare rol in Amsterdam."}},
-    {"@type": "Question", "name": "Is er sowieso lokale AI/data-werkgelegenheid in Almere?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, al is die kleiner en minder zichtbaar — groeiende bedrijven in logistiek en dienstverlening bouwen geleidelijk eigen datacapaciteit op."}},
-    {"@type": "Question", "name": "Waarom is de lokale AI-markt in Almere zo weinig zichtbaar?", "acceptedAnswer": {"@type": "Answer", "text": "Een groot deel van de beroepsbevolking forenst naar Amsterdam, waardoor lokale werkgevers minder concurreren om landelijke zichtbaarheid."}},
-    {"@type": "Question", "name": "Hoe weeg ik een lokale Almeerse rol af tegen forenzen naar Amsterdam?", "acceptedAnswer": {"@type": "Answer", "text": "Vergelijk de daadwerkelijke reistijd en inhoud van beide opties concreet, in plaats van aan te nemen dat een grotere stad automatisch beter is."}},
-    {"@type": "Question", "name": "Zal de lokale AI-markt in Almere groeien?", "acceptedAnswer": {"@type": "Answer", "text": "Bekijk de actuele vacatures zelf voor een actueel beeld in plaats van op een landelijke aanname te vertrouwen."}}
+    {"@type": "Question", "name": "Should I automatically look at Amsterdam for an AI job if I live in Almere?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily — first compare the actual travel time and content of a local Almere vacancy with a comparable role in Amsterdam."}},
+    {"@type": "Question", "name": "Is there any local AI/data employment in Almere at all?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, although it is smaller and less visible — growing companies in logistics and services are gradually building their own data capacity."}},
+    {"@type": "Question", "name": "Why is the local AI market in Almere so hard to see?", "acceptedAnswer": {"@type": "Answer", "text": "A large part of the workforce commutes to Amsterdam, so local employers compete less for national visibility."}},
+    {"@type": "Question", "name": "How do I weigh a local Almere role against commuting to Amsterdam?", "acceptedAnswer": {"@type": "Answer", "text": "Compare the actual travel time and content of both options concretely, instead of assuming a bigger city is automatically better."}},
+    {"@type": "Question", "name": "Will the local AI market in Almere grow?", "acceptedAnswer": {"@type": "Answer", "text": "Look at the current vacancies yourself for an up-to-date picture instead of relying on a national assumption."}}
   ]
 }
 </script>

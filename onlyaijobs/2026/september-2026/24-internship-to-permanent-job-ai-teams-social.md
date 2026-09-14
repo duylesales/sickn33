@@ -1,9 +1,9 @@
-Een stage bij een AI-team levert bijna altijd een scriptie op. Lang niet altijd een aanbod voor een vaste baan — en het verschil zit zelden in hoe goed het onderzoek was.
+💡 An internship with an AI team almost always produces a thesis. It doesn't always produce an offer of a permanent job — and the difference rarely lies in how good the research was.
 
-Wat wél het verschil maakt: zichtbaarheid buiten je eigen begeleider (een vaste baan is zelden de beslissing van één persoon), iets bouwen dat het team na je stage nog gebruikt, en vroeg vragen naar wat er na de stage gebeurt — niet pas in de laatste week, wanneer de budgetplanning allang rond is.
+💰 What does make the difference: visibility beyond your own supervisor (a permanent job is rarely one person's decision), building something the team still uses after your internship, and asking early what happens next — not in the last week, when budget planning was settled long ago.
 
-Twee stagiairs met vergelijkbare kwaliteit kunnen heel verschillende uitkomsten hebben, puur hierdoor.
+✅ Two interns of comparable quality can have very different outcomes, purely because of this.
 
-Lees het volledige verhaal: https://onlyaijobs.eu/blog/stage-naar-vaste-baan-ai-teams
+📖 Read the full story: https://onlyaijobs.eu/blog/internship-to-permanent-job-ai-teams
 
-#OnlyAIJobs #Stage #AITeam #Carrièreadvies
+#OnlyAIJobs #Internship #AITeam #CareerAdvice

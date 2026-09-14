@@ -17,7 +17,19 @@ Content Format: Regional Ecosystem Analysis
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-01",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-eindhoven"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-eindhoven"},
+  "inLanguage": "en",
+  "about": [{"@type": "Place", "name": "Eindhoven"}, {"@type": "Place", "name": "Brainport Eindhoven"}],
+  "mentions": [
+    {"@type": "CollegeOrUniversity", "name": "Eindhoven University of Technology (TU/e)"},
+    {"@type": "ResearchOrganization", "name": "Eindhoven Artificial Intelligence Systems Institute (EAISI)"},
+    {"@type": "CollegeOrUniversity", "name": "Jheronimus Academy of Data Science (JADS)"},
+    {"@type": "CollegeOrUniversity", "name": "Fontys University of Applied Sciences"},
+    {"@type": "Place", "name": "High Tech Campus Eindhoven"},
+    {"@type": "Place", "name": "Automotive Campus Helmond"},
+    {"@type": "Organization", "name": "Brainport Development"},
+    {"@type": "Organization", "name": "ASML"}
+  ]
 }
 </script>
 
@@ -66,6 +78,48 @@ Brainport's reputation rests on a handful of globally known names, but the regio
 
 On OnlyAIJobs, employers currently listing in and around this region include Cegeka Nederland, whose AI governance work reflects how seriously regulated industries are now taking compliance, and Holland Innovative, which sits in exactly the reliability-and-data-analysis niche that industrial AI depends on. Neither is a household name outside the region. Both are doing work that an engineer bored of recommendation systems would find substantial.
 
+## The Knowledge Infrastructure: TU/e, EAISI, JADS and Fontys
+
+Eindhoven's AI market is unusual in how directly its education and research institutions feed specific kinds of industrial work.
+
+**Eindhoven University of Technology (TU/e).** The region's anchor institution. TU/e's strength has always been engineering that has to work in the physical world — mechanical, electrical, control systems, applied physics — and its AI research inherits that orientation. Graduates tend to arrive with a systems mindset rather than a purely statistical one, which is exactly what the region's employers screen for.
+
+**Eindhoven Artificial Intelligence Systems Institute (EAISI).** TU/e's institute for AI, set up to combine data, algorithms and physical systems research across faculties. Its focus areas — high-tech systems, mobility, health and energy — map almost one-to-one onto the sectors that hire AI engineers in the region. If a Brainport employer describes a project as "AI for high-tech systems", EAISI is often somewhere in its academic network.
+
+**Jheronimus Academy of Data Science (JADS).** A joint initiative of TU/e and Tilburg University, based in 's-Hertogenbosch. JADS combines data science with business and entrepreneurship, and its graduates frequently end up in the data and analytics roles of Brabant firms that are not tech companies at all.
+
+**Fontys University of Applied Sciences.** Fontys ICT in Eindhoven trains a large volume of applied software and data engineers and runs extensive internship programmes with regional companies. For many small and mid-sized Brainport employers, Fontys is the primary hiring pipeline.
+
+The implication for experienced engineers is that Eindhoven employers are used to evaluating candidates against a very specific profile: people who understand constraints. If your background is consumer ML, the adjustment is not learning new mathematics but learning to present your work in terms of reliability, latency and failure cost.
+
+## Mapping the Brainport Region by Campus and Corridor
+
+Brainport Eindhoven is best understood as a set of connected clusters rather than one city. **Brainport Development**, the region's economic development organisation, promotes it as a triple-helix region in which companies, knowledge institutions and government cooperate closely — and that cooperation is visible in the physical layout.
+
+| Location | What clusters there | AI and data work you are likely to find |
+|---|---|---|
+| High Tech Campus Eindhoven | Corporate R&D departments, start-ups, test facilities | Embedded AI, sensor data, research-to-product engineering |
+| TU/e Campus | University research, spin-outs | Research engineering, prototyping, applied AI projects |
+| Strijp-S and Strijp-T | Former Philips industrial sites turned tech and creative hubs | Scale-ups, software houses, design-tech |
+| Veldhoven | ASML headquarters and its supplier ecosystem | Metrology data, process control, computational lithography support |
+| Helmond (Automotive Campus) | Automotive and smart mobility companies | Perception, vehicle data, testing and validation |
+| Best, Son and Nuenen | Precision engineering and systems suppliers | Machine vision, predictive maintenance, test automation |
+| Oss and the northeast | Life sciences and manufacturing | Process analytics, quality control |
+
+The presence of **ASML** in Veldhoven matters well beyond ASML's own vacancies. A company of that scale pulls hundreds of suppliers into the region, and many of those suppliers need data and machine learning capability to meet the quality and traceability requirements of their largest customer. These are exactly the employers that do not advertise on national job boards.
+
+## Working Conditions Specific to Industrial AI Employers
+
+Several practical differences between Brainport employers and Randstad tech companies rarely appear in advertisements.
+
+**Collective labour agreements.** Many industrial employers in the region fall under sector agreements such as the **CAO Metalektro**, which sets salary scales, working hours and allowances. That makes pay more structured and less negotiable at entry, but more predictable over time. Tech-sector employers usually have no CAO and more individual negotiation.
+
+**On-site expectations.** When your model runs on a machine, part of your work has to happen near the machine. Fully remote arrangements are less common than in software-only companies; hybrid schedules with fixed lab or cleanroom days are typical.
+
+**Export control and confidentiality.** Semiconductor and high-tech employers operate under strict confidentiality and, in some areas, export-control regimes. This can affect which projects a candidate can discuss at interview, which parts of the work can be done remotely, and occasionally which nationalities can be granted access to certain programmes. Ask early rather than assuming.
+
+**Long product cycles.** A model deployed in industrial equipment may run for a decade. Documentation, validation and maintainability carry more weight than rapid iteration — a contrast many engineers from consumer platforms find surprisingly satisfying.
+
 ## The Salary Conversation, Corrected
 
 Engineers often assume the Randstad pays more and therefore reason that a move north is a promotion. The comparison is usually made incorrectly.
@@ -74,9 +128,21 @@ The relevant figure is not gross salary. It is gross salary minus housing cost, 
 
 There is a second-order effect that matters more over a career. In a smaller ecosystem, a competent engineer becomes known quickly. The distance between you and the person making architectural decisions is shorter. That is worth more, five years out, than a first-year salary difference.
 
+## Titles to Search in Brainport
+
+Beyond "machine learning engineer", search for *vision engineer*, *computer vision engineer*, *software engineer (embedded AI)*, *systems engineer*, *test automation engineer*, *data engineer*, *process engineer (data)* and *reliability engineer*. In the Brainport region, these titles often describe roles where machine learning is a substantial part of the work.
+
 ## The OnlyAIJobs Standard
 
 OnlyAIJobs is built for exactly this problem. Every vacancy is shown at its exact street address with the distance from where you live, so Veldhoven and Helmond stop being separate searches and become part of one radius. Every listing is an AI, machine learning, data, vision or robotics role, so industrial engineering vacancies with a heavy ML component are not buried under general IT. And no employer can pay for a higher position, so a precision manufacturer with one vacancy appears on the same terms as a multinational.
+
+## Key Takeaways
+
+- Eindhoven's machine learning is physically coupled: vision, predictive maintenance and process control under hard latency and failure-cost constraints.
+- The region's AI employers are spread across Veldhoven, Helmond, Best, Son, Nuenen and Oss, not only Eindhoven.
+- TU/e, EAISI, JADS and Fontys shape a hiring culture that values systems thinking over leaderboard results.
+- ASML's supplier ecosystem creates a large number of under-advertised data and ML roles.
+- Expect CAO-based pay structures at industrial employers, more on-site work, and confidentiality requirements.
 
 ## Where to Start
 

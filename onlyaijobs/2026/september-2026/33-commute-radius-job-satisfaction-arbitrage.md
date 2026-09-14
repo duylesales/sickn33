@@ -17,7 +17,18 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-24",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/commute-radius-job-satisfaction-arbitrage"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/commute-radius-job-satisfaction-arbitrage"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Commute time and job satisfaction"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Thing", "name": "Commuting paradox (Stutzer and Frey)"},
+    {"@type": "GovernmentOrganization", "name": "Office for National Statistics (UK)"},
+    {"@type": "GovernmentOrganization", "name": "Netherlands Institute for Transport Policy Analysis (KiM)"},
+    {"@type": "GovernmentOrganization", "name": "Statistics Netherlands (CBS)"},
+    {"@type": "Organization", "name": "NS (Nederlandse Spoorwegen)"},
+    {"@type": "Organization", "name": "9292"},
+    {"@type": "GovernmentOrganization", "name": "Belastingdienst"}
+  ]
 }
 </script>
 
@@ -30,12 +41,6 @@ Salary is concrete and comparable at the moment of decision. Commute cost is dif
 ## A Rough Way to Make the Trade Visible
 
 Multiply the daily round-trip commute difference between two offers by roughly 230 working days a year, and you get a number in hours that's easy to dismiss in the abstract and much harder to dismiss once it's sitting next to a salary figure. An extra hour a day is roughly 230 hours a year — nearly six standard working weeks spent commuting rather than doing anything else. Whether that trade is worth it depends entirely on you, but it should be an explicit trade, not an invisible one.
-
-## Where to Start
-
-Before comparing salary lines, put the realistic daily commute time for each offer next to the number. If a job board only shows you a city name rather than an actual address, you're comparing offers with an entire variable missing.
-
-Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), shown at exact address level with distance from your home.
 
 ## Turning the Abstract Trade-off Into a Concrete Number
 
@@ -73,6 +78,64 @@ The hours-based calculation described above treats all commute time as equally c
 ## Why This Calculation Should Be Revisited, Not Just Done Once at Hiring
 
 Commute costs aren't static once you accept a role — public transit schedules change, roads get more congested as a region grows, and your own tolerance for a given commute can shift as your personal circumstances change (a new relationship, children, changing energy levels). Treating this calculation as a one-time exercise at the point of accepting a job misses the value of periodically reassessing whether a commute that was tolerable two years ago remains tolerable now, and whether that reassessment should factor into decisions about staying in a role, negotiating more remote flexibility, or considering a move closer to your workplace.
+
+## What Research Says About Commuting and Wellbeing
+
+The intuition that commuting erodes satisfaction is supported by a substantial body of research.
+
+**The commuting paradox.** Economists Alois Stutzer and Bruno Frey analysed German panel data and found that people with longer commutes reported systematically lower life satisfaction — and that higher pay or cheaper housing did not fully compensate for it. Standard economic theory predicts that people would only accept a longer commute if they were fully compensated; the finding that they were not became known as the *commuting paradox*.
+
+**Wellbeing measurements.** The UK's **Office for National Statistics** examined commuting and personal wellbeing and found that commuters generally reported lower life satisfaction, lower happiness and higher anxiety than non-commuters, with the effects varying by duration and mode of travel.
+
+**Mode matters.** Across studies, active commuting such as cycling and walking is generally associated with better wellbeing outcomes than long car or multi-transfer public transport commutes — which is directly relevant in the Netherlands, where cycling is a realistic commute mode for a large share of workers.
+
+These findings do not mean a longer commute is always wrong. They do show that people predictably underestimate its cost when making a decision, which is exactly the bias this article's calculation is designed to correct.
+
+## The Dutch Commute in Context
+
+The Netherlands has distinctive commuting conditions that change how the calculation should be made.
+
+**Dense rail network, variable last mile.** The NS intercity network connects major cities quickly, but the total door-to-door time depends heavily on the "last mile" from the station to the office. An office on a business park outside the city can add twenty minutes by bus or bike to an otherwise fast train journey. Journey planners such as the **NS** app and **9292** show realistic door-to-door times including transfers.
+
+**The bicycle and the e-bike.** Cycling is an ordinary commute mode in the Netherlands, and the spread of e-bikes has extended the realistic cycling radius considerably. A fifteen-kilometre e-bike commute can be faster and more predictable than a car commute through congestion at peak times.
+
+**Road congestion.** The Randstad's motorway network is heavily congested at peak hours, which makes car commute times variable. A drive that takes thirty minutes off-peak can take much longer during rush hour.
+
+**Public research on mobility.** The **Netherlands Institute for Transport Policy Analysis (KiM)**, the Dutch government's mobility research institute, and **CBS** publish regular analyses of commuting patterns and travel times in the Netherlands, useful if you want to understand broader trends in your region.
+
+## Financial Side of the Commute in the Netherlands
+
+The time cost is the largest, but the money cost also differs by employer.
+
+| Element | How it typically works | What to check in an offer |
+|---|---|---|
+| **Travel allowance** | Employers may reimburse commuting tax-free up to a per-kilometre maximum set by the Belastingdienst, or reimburse public transport costs | Whether the employer pays the full amount, a capped amount or nothing |
+| **Public transport business card** | Some employers provide a card for train and public transport travel | Whether it covers only commuting or also private travel |
+| **Bike schemes** | Employers can offer a bike or e-bike through a lease or purchase scheme with favourable tax treatment | Whether a scheme exists and how it is structured |
+| **Home-working allowance** | A tax-free daily allowance for days worked from home; not combinable with a travel allowance on the same day | The number of office days required and how both allowances are handled |
+| **Company car or mobility budget** | Less common for AI roles; taxation depends on private use | Actual cost after tax, not just availability |
+
+Two offers with identical gross salaries can therefore differ in both hours and euros once commuting is included. Put both into the comparison.
+
+## Hybrid Work Changes the Numbers, Not the Principle
+
+Hybrid arrangements reduce the number of commuting days, but they do not make the commute irrelevant. With two office days a week, a 60-minute daily round-trip difference still amounts to roughly 90 hours a year; with three office days, around 140 hours. The calculation simply uses office days rather than all working days.
+
+Hybrid policies also change over time. An employer that allows two office days today may ask for three or four later. When a commute is only acceptable under the current hybrid policy, it is worth asking how stable that policy is — and, where possible, getting the arrangement in writing.
+
+## Key Takeaways
+
+- Research on the commuting paradox and wellbeing shows that people underestimate the cost of long commutes.
+- In the Netherlands, door-to-door time depends on the last mile, peak congestion and whether cycling is a realistic option.
+- Use journey planners such as NS and 9292 to measure realistic door-to-door times for each offer.
+- Include travel allowances, public transport cards, bike schemes and home-working allowances in the financial comparison.
+- For hybrid roles, calculate with office days and check how stable the hybrid policy is.
+
+## Where to Start
+
+Before comparing salary lines, put the realistic daily commute time for each offer next to the number. If a job board only shows you a city name rather than an actual address, you're comparing offers with an entire variable missing.
+
+Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs), shown at exact address level with distance from your home.
 
 ## Frequently Asked Questions
 

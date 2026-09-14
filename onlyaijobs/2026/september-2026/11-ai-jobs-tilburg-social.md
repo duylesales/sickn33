@@ -1,9 +1,9 @@
-Tilburg staat zelden op een lijst van "Nederlandse tech-steden" — en toch combineert de stad een universitaire data science-traditie met een van de grootste logistieke knooppunten van het land.
+💡 Tilburg rarely makes a list of "Dutch tech cities" — and yet the city combines a university data science tradition with one of the largest logistics hubs in the country.
 
-Een vacature bij een logistiek bedrijf noemt zelden "machine learning" expliciet — vaker "supply chain analist" of "planning & optimalisatie". Wie alleen op AI-trefwoorden zoekt, mist precies het deel van de Tilburgse markt dat het grootst is.
+🔍 A vacancy at a logistics company rarely mentions "machine learning" explicitly — more often "supply chain analyst" or "planning & optimisation." If you only search for AI keywords, you miss exactly the largest part of the Tilburg market.
 
-Twee werelden naast elkaar: methodologisch strikt onderzoekswerk, en toegepast modelleerwerk dat vandaag een vrachtwagen efficiënter laat rijden.
+✅ Two worlds side by side: methodologically rigorous research work, and applied modelling that makes a truck run more efficiently today.
 
-Lees de volledige analyse en bekijk actuele vacatures: https://onlyaijobs.eu/blog/ai-vacatures-tilburg
+📖 Read the full analysis and browse current vacancies: https://onlyaijobs.eu/blog/ai-jobs-tilburg
 
-#OnlyAIJobs #AIVacatures #Tilburg #DataScience #Brabant
+#OnlyAIJobs #AIJobs #Tilburg #DataScience #Brabant

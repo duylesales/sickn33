@@ -17,7 +17,17 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-21",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/evaluating-ai-team-maturity-from-job-posting"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/evaluating-ai-team-maturity-from-job-posting"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Evaluating AI team maturity"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Thing", "name": "Google Cloud MLOps maturity levels"},
+    {"@type": "Thing", "name": "Microsoft MLOps maturity model"},
+    {"@type": "Thing", "name": "ISO/IEC 42001"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"},
+    {"@type": "GovernmentOrganization", "name": "Kamer van Koophandel (KVK)"},
+    {"@type": "Thing", "name": "Algoritmeregister"}
+  ]
 }
 </script>
 
@@ -30,12 +40,6 @@ A job posting is written before you ever speak to anyone at the company, which m
 **Whether the role has already failed once.** A very specific, unusually detailed list of requirements sometimes indicates a team that hired the wrong person for this role before and is now overcorrecting. That's not necessarily a red flag — it can mean a company that learned from a mistake — but it's worth asking about directly.
 
 **Whether engineering and business stakeholders wrote it together.** A posting heavy on business outcomes with no mention of technical stack, data infrastructure or evaluation approach suggests the requisition may not have had real technical input yet, which often means the role's scope is still being figured out — sometimes an opportunity to shape it, sometimes a sign of disorganization.
-
-## Where to Start
-
-Read a posting twice: once for what it's asking for, once for what it reveals about how the team thinks about the problem. Bring specific questions from that second reading into your first conversation rather than waiting to discover the answers after accepting an offer.
-
-Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Reading Checklist for Any AI Job Posting
 
@@ -79,6 +83,79 @@ The reading skill described in this article doesn't stop being useful once you m
 ## Why This Skill Becomes More, Not Less, Valuable as You Gain Seniority
 
 Junior candidates often have less latitude to be selective about which roles they pursue, making this evaluation skill feel like a luxury they can't fully act on yet. As you gain seniority and options, the ability to quickly and accurately triage which opportunities are worth deeper investigation becomes increasingly valuable — senior candidates typically field more inbound opportunities than they have time to seriously pursue, and the fast, reliable filtering this reading skill provides becomes a genuine time-management asset, not just a way to avoid one bad interview process.
+
+## Using Established Maturity Models as a Reading Lens
+
+You don't have to invent your own scale for AI team maturity. Two widely referenced MLOps maturity frameworks provide useful vocabulary for interpreting a posting.
+
+**Google Cloud's MLOps levels.** Google's architecture guidance describes three levels: **level 0**, where models are trained and deployed manually; **level 1**, where the ML pipeline is automated so models can be retrained continuously; and **level 2**, where CI/CD automation covers the pipeline itself, so new pipeline versions can be built, tested and deployed reliably.
+
+**Microsoft's MLOps maturity model.** Microsoft describes a progression from no MLOps, through DevOps without MLOps, automated training and automated model deployment, to full MLOps automated operations, with increasing automation, traceability and monitoring at each stage.
+
+Mapping posting language to these levels is surprisingly reliable:
+
+| Phrase in the posting | Likely maturity | What you would be doing |
+|---|---|---|
+| "Help us explore how AI can add value" | Pre-level 0: no models in production | Discovery, data audits, first proof of concept |
+| "Build and deploy our first models" | Level 0: manual training and deployment | Everything end-to-end, often by hand |
+| "Improve and scale our existing models" | Between level 0 and 1 | Automating retraining, adding monitoring |
+| "Own our feature store / model registry / retraining pipelines" | Level 1 | Operating and extending automated pipelines |
+| "Improve our ML platform, CI/CD for ML and governance tooling" | Level 2 | Platform engineering for many teams and models |
+
+None of these levels is "good" or "bad" as a place to work. Level 0 offers blank-page influence; level 2 offers scale and specialisation. The point is to know which one you are signing up for.
+
+## Governance Signals: A Newer Dimension of Maturity
+
+Since the **EU Artificial Intelligence Act** entered into force, AI maturity has a second axis alongside technical automation: governance. Postings increasingly reveal where a team stands on it.
+
+**High-maturity signals.** Mentions of model documentation, risk classification, bias or fairness testing, human oversight, monitoring for drift and incidents, an AI governance or responsible AI function, or alignment with a standard such as **ISO/IEC 42001** for AI management systems.
+
+**Low-maturity signals.** No mention of data protection, evaluation or oversight in a role that clearly involves personal data or consequential decisions — for example credit, hiring, insurance, healthcare or public services.
+
+**Public-sector transparency.** For Dutch government organisations, the national **Algoritmeregister** is a useful outside check: if the organisation publishes information about its algorithms there, you can see what kinds of systems it runs and how it describes their oversight before you apply.
+
+## Research Beyond the Posting: Dutch Sources That Confirm the Signals
+
+A posting is a starting point. Several public sources help you verify what it suggests.
+
+**KVK Handelsregister.** The Dutch Chamber of Commerce's trade register confirms a company's legal form, registration and basic details, and many Dutch companies file annual accounts with the KVK. For smaller employers, that tells you whether the company is established or very new.
+
+**Annual reports and investor information.** Larger companies often describe their data and AI strategy, investments and risks in annual reports. A company that mentions AI in a posting but never in its strategy documents may be earlier in its journey than the posting suggests.
+
+**Engineering blogs, open-source repositories and conference talks.** A team that writes about its ML platform, maintains public repositories or presents at community events such as PyData meetups has usually reached a level of maturity where there is something to share.
+
+**The team on professional networks.** Looking at how many people currently hold data, ML or AI roles at the company — and how long they have stayed — gives a rough picture of team size and retention.
+
+**Former employees and your network.** A short conversation with someone who has worked there often resolves questions that no public source can.
+
+## A Scoring Sheet You Can Reuse
+
+Score each posting from 0 to 2 on six dimensions, then use the total to decide how much time to invest.
+
+| Dimension | 0 points | 1 point | 2 points |
+|---|---|---|---|
+| Problem concreteness | Only ambition | General domain | Named system and limitation |
+| Technical authorship | Generic buzzwords | Some tools named | Specific stack, data and constraints |
+| Production state | No models live | Some models, manual process | Automated pipelines and monitoring |
+| Governance awareness | Absent where relevant | Mentioned generally | Specific practices or standards |
+| Team context | Silent | Team size or manager named | Team size, reporting line and collaborators |
+| Outside evidence | None found | Some mentions | Blog, talks, repositories or clear strategy |
+
+A score of 9 to 12 suggests a clearly defined role; 5 to 8 calls for targeted questions; 0 to 4 means you should treat the first conversation as discovery of whether a real role exists yet.
+
+## Key Takeaways
+
+- A job posting is one of the few unfiltered artefacts in a hiring process; read it for what it reveals, not just what it asks.
+- Google's and Microsoft's MLOps maturity models provide a vocabulary to map posting language to real operational states.
+- Governance signals — documentation, risk classification, oversight and standards such as ISO/IEC 42001 — are now part of AI maturity.
+- Verify signals with the KVK register, annual reports, engineering blogs, the Algoritmeregister and your network.
+- Use a simple scoring sheet to decide how much time a posting deserves.
+
+## Where to Start
+
+Read a posting twice: once for what it's asking for, once for what it reveals about how the team thinks about the problem. Bring specific questions from that second reading into your first conversation rather than waiting to discover the answers after accepting an offer.
+
+Browse current AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

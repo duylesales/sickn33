@@ -17,7 +17,21 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-10-23",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/generative-ai-engineer-jobs-netherlands"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/generative-ai-engineer-jobs-netherlands"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "Generative AI Engineer role"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "Thing", "name": "GPT-NL"},
+    {"@type": "ResearchOrganization", "name": "TNO"},
+    {"@type": "Organization", "name": "SURF"},
+    {"@type": "Thing", "name": "Snellius national supercomputer"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"},
+    {"@type": "Thing", "name": "General-Purpose AI Code of Practice"},
+    {"@type": "Legislation", "name": "EU Copyright in the Digital Single Market Directive (EU) 2019/790"},
+    {"@type": "GovernmentOrganization", "name": "Dutch Data Protection Authority (Autoriteit Persoonsgegevens)"},
+    {"@type": "Thing", "name": "Dutch government-wide vision on generative AI"},
+    {"@type": "Thing", "name": "Retrieval-augmented generation (RAG)"}
+  ]
 }
 </script>
 
@@ -34,12 +48,6 @@ Content Format: Career Guide
 ## Why the Range Causes Real Mismatches
 
 A candidate who wants to fine-tune models can accept a role that turns out to be almost entirely prompt engineering and API integration, and vice versa. Because the title is new and unstandardized, this mismatch happens more often here than with more established titles.
-
-## Where to Start
-
-Ask directly in an interview: does this role touch model weights at all, or is it entirely built on top of existing foundation models through prompting and retrieval? That single question resolves most of the ambiguity the title itself doesn't.
-
-Browse current AI, machine learning and generative AI vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## A Deeper Look at the Three Layers Hiding Under One Title
 
@@ -118,6 +126,40 @@ Integration-layer roles are the most numerous by a wide margin, because most org
 Evaluation-layer roles are fewer in absolute number but growing, and the supply of practitioners with genuine expertise is thinner than demand, which produces favourable conditions for candidates who develop this specialisation deliberately.
 
 Model-layer roles remain the smallest category and concentrate in a limited number of organisations with the scale and the specific need to justify the investment. Candidates whose ambitions lie here should target those organisations specifically rather than expecting the broader volume of generative AI hiring to include many such positions.
+
+## The Dutch and European Generative AI Landscape
+
+Several named initiatives and rules shape generative AI work in the Netherlands.
+
+**GPT-NL.** An initiative by **TNO**, **SURF** and the Netherlands Forensic Institute to develop an open Dutch-language large language model, trained with attention to data quality, transparency and respect for copyright. It reflects a broader Dutch and European interest in language models that fit local languages and values.
+
+**SURF and national compute.** SURF, the cooperative ICT organisation for Dutch education and research, operates the **Snellius** national supercomputer, which researchers use for large-scale model training and experimentation.
+
+**Government policy.** The Dutch government published a government-wide vision on generative AI, setting out opportunities and risks for society and the public sector. Public organisations have been cautious about using public generative AI tools with sensitive data, which affects how generative AI is introduced in government-related projects.
+
+## Rules Every Generative AI Engineer in Europe Should Know
+
+- **EU Artificial Intelligence Act.** Introduces obligations for providers of general-purpose AI models, including technical documentation and a policy to respect EU copyright law, with additional obligations for models with systemic risk. The **General-Purpose AI Code of Practice** gives providers a voluntary route to demonstrate compliance. The Act also requires transparency when people interact with AI systems and labelling of AI-generated or manipulated content in certain cases.
+- **Copyright and text and data mining.** Under the **EU Copyright in the Digital Single Market Directive**, text and data mining for commercial purposes is allowed unless rights holders have expressly reserved their rights, for example through machine-readable opt-outs. This matters when building training or fine-tuning datasets.
+- **GDPR.** Personal data in prompts, retrieval sources, training data or outputs needs a legal basis and appropriate safeguards. The **Dutch Data Protection Authority** has warned organisations about data breaches caused by employees entering personal data into AI chatbots.
+
+## What Integration Work Looks Like in Practice
+
+Most Dutch generative AI roles sit in the integration layer. A typical project connects a language model to an organisation's documents through **retrieval-augmented generation (RAG)**: documents are split, embedded and stored in a vector index, relevant passages are retrieved for each question, and the model answers with references. The hard parts are rarely the model call itself, but document quality, access rights (users must never see documents they aren't allowed to see), evaluation of answer correctness, handling of Dutch-language content and monitoring for errors after launch.
+
+## Key Takeaways
+
+- The Generative AI Engineer title covers integration, fine-tuning and evaluation work — ask which layer a role involves.
+- GPT-NL, SURF and the Snellius supercomputer illustrate Dutch investment in open, language-specific models.
+- The AI Act's general-purpose AI obligations and Code of Practice, EU text and data mining rules and the GDPR shape the work.
+- Most Dutch roles focus on RAG-style integration, where data quality, access control and evaluation are the real challenges.
+- Evaluation is emerging as a specialisation in its own right.
+
+## Where to Start
+
+Ask directly in an interview: does this role touch model weights at all, or is it entirely built on top of existing foundation models through prompting and retrieval? That single question resolves most of the ambiguity the title itself doesn't.
+
+Browse current AI, machine learning and generative AI vacancies across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

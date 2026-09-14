@@ -17,7 +17,20 @@ Content Format: Career Guide
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-12",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-portfolio-without-experience"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-portfolio-without-experience"},
+  "inLanguage": "en",
+  "about": [{"@type": "Thing", "name": "AI and data science portfolio for junior candidates"}, {"@type": "Place", "name": "Netherlands"}],
+  "mentions": [
+    {"@type": "GovernmentOrganization", "name": "Statistics Netherlands (CBS)"},
+    {"@type": "WebSite", "name": "data.overheid.nl"},
+    {"@type": "WebSite", "name": "PDOK"},
+    {"@type": "GovernmentOrganization", "name": "KNMI"},
+    {"@type": "Organization", "name": "Nationaal Dataportaal Wegverkeer (NDW)"},
+    {"@type": "Organization", "name": "Kaggle"},
+    {"@type": "Organization", "name": "Hugging Face"},
+    {"@type": "Organization", "name": "GitHub"},
+    {"@type": "Legislation", "name": "Algemene verordening gegevensbescherming (AVG/GDPR)"}
+  ]
 }
 </script>
 
@@ -34,12 +47,6 @@ Most student AI portfolios contain the same project: a Kaggle dataset, a noteboo
 ## What Doesn't Matter as Much as Students Think
 
 A slightly higher accuracy score than another candidate's similar project rarely moves the needle — hiring managers reviewing junior portfolios are looking for judgment and process, not a leaderboard position. Spending disproportionate time squeezing out another percentage point is usually time better spent on a second, more original project.
-
-## Where to Start
-
-Pick a problem nobody handed you pre-cleaned, be honest in your write-up about what didn't work, and get at least one piece of work running somewhere outside a notebook. Three imperfect, original projects beat one polished, familiar one.
-
-Once your portfolio is ready, browse current junior AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Three Project Archetypes, Ranked by What They Actually Signal
 
@@ -80,6 +87,71 @@ Many students hold back from including a project in their portfolio because they
 ## Building a Portfolio Iteratively Rather Than All at Once
 
 Rather than treating portfolio-building as a single, time-boxed sprint before a job search begins, the strongest portfolios tend to develop iteratively over many months, with each project building on lessons from the last — a first project that reveals you don't yet know how to properly validate a model leads directly into a second project where validation becomes the explicit focus. This iterative pattern, if you can articulate it honestly in an interview ("my first project taught me I was overconfident about generalization, so my second project specifically tested for that"), demonstrates a trajectory of growing judgment that a single, isolated, polished project — however impressive on its own — simply cannot convey on its own.
+
+## Dutch Open Data Sources That Make Projects Stand Out
+
+A self-defined project needs data that nobody has pre-packaged for you. The Netherlands is unusually rich in public data, and using it has a second advantage: a Dutch hiring manager immediately recognises the context of your project.
+
+| Source | What it contains | Project ideas it enables |
+|---|---|---|
+| **CBS StatLine** (Statistics Netherlands) | Official statistics on population, economy, housing, energy, labour and more, often down to municipality or neighbourhood level | Regional forecasting, neighbourhood-level analysis, labour-market trends |
+| **data.overheid.nl** | The national catalogue of open government datasets | Finding domain-specific data from ministries, provinces and municipalities |
+| **PDOK** | Public geospatial services, including national registries such as addresses and buildings (BAG) | Spatial analysis, building-level energy or mobility projects |
+| **KNMI Data Platform** | Weather, climate and seismological data from the Royal Netherlands Meteorological Institute | Weather-dependent forecasting, climate analysis, energy demand |
+| **NDW** (Nationaal Dataportaal Wegverkeer) | Road traffic data such as flows, speeds and incidents | Traffic prediction, congestion analysis, anomaly detection |
+| **Municipal open data portals** | City-level data from municipalities such as Amsterdam, Rotterdam and Utrecht | Urban mobility, waste, public space and housing projects |
+
+Combining two of these sources — for example CBS neighbourhood statistics with PDOK building data, or NDW traffic data with KNMI weather — is exactly the kind of framing work the self-defined project archetype rewards. It also forces you to deal with mismatched granularity, missing values and changing definitions over time: the real work of data science.
+
+## Where to Publish and How to Deploy Cheaply
+
+The deployed project archetype does not require a paid cloud account.
+
+**GitHub.** The default place for code. A clear README with the problem statement, data sources, approach, results, limitations and instructions to run the project is often read before any CV.
+
+**Hugging Face.** Useful for sharing trained models and datasets, and its Spaces feature lets you host simple interactive demos built with tools such as Gradio or Streamlit.
+
+**Containers.** Packaging your project with Docker and a small API (for example using FastAPI) shows that you understand how a model is run by someone other than you.
+
+**Kaggle.** Still valuable for learning, benchmarking and demonstrating persistence — just not as the only item in your portfolio.
+
+**A short write-up.** A blog post or a well-structured project page that explains your reasoning makes it easy for a recruiter to forward your work to a technical colleague.
+
+## Legal and Ethical Checks Dutch Employers Notice
+
+Portfolio projects occasionally raise concerns that undermine an otherwise strong application. Three checks prevent that.
+
+**Personal data and the AVG.** Scraping social media profiles or using datasets containing identifiable individuals can conflict with the GDPR (in Dutch, the *AVG*). Prefer aggregated or anonymised open data, and if personal data is unavoidable, explain your legal and ethical reasoning in the README.
+
+**Licences and terms of use.** Check the licence of each dataset and the terms of any website or API you use. Open government data in the Netherlands is generally published under open licences, but not every dataset is free of restrictions.
+
+**Bias and limitations.** A short section on who your model might disadvantage, and why, is increasingly expected. Dutch employers are aware of high-profile algorithmic failures in the public sector, and candidates who address fairness proactively stand out.
+
+## How Dutch Employers Actually Review a Junior Portfolio
+
+In practice, a junior AI application in the Netherlands is often screened in three short stages: a recruiter or hiring manager scans your CV and motivation letter, a technical team member opens one or two links, and — if you pass — you discuss a project in depth during an interview or technical assignment.
+
+Design your portfolio for that sequence:
+
+1. **Put your best project first**, with a one-line description of the problem and your role.
+2. **Make the README readable in two minutes**: problem, data, approach, result, limitation, next step.
+3. **Link directly from your CV** to the project, not only to your GitHub profile.
+4. **Mention the Dutch context** when relevant, for example "using CBS and KNMI data to forecast neighbourhood energy demand".
+5. **Prepare to explain one decision in depth**, such as why you chose a particular validation strategy.
+
+## Key Takeaways
+
+- Self-defined and deployed projects signal more than familiar competition projects.
+- Dutch open data from CBS, data.overheid.nl, PDOK, the KNMI and the NDW makes projects original and locally relevant.
+- GitHub, Hugging Face, Docker and a simple API are enough to show deployment skills without a cloud budget.
+- Respect the AVG, dataset licences and fairness considerations; employers notice.
+- Structure your portfolio for a fast screening process: best project first, readable README, direct links.
+
+## Where to Start
+
+Pick a problem nobody handed you pre-cleaned, be honest in your write-up about what didn't work, and get at least one piece of work running somewhere outside a notebook. Three imperfect, original projects beat one polished, familiar one.
+
+Once your portfolio is ready, browse current junior AI, machine learning and data roles across the Netherlands at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
 
 ## Frequently Asked Questions
 

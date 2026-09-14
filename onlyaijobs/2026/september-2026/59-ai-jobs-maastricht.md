@@ -1,106 +1,190 @@
 ---
-Title: "AI-vacatures in Maastricht: een grensregio met een internationaal talentprofiel"
-Keywords: ai vacatures maastricht, data scientist limburg, machine learning maastricht, internationale ai vacatures nederland, OnlyAIJobs
+Title: "AI Jobs in Maastricht: A Border Region With an International Talent Profile"
+Keywords: ai jobs maastricht, data scientist limburg, machine learning maastricht, international ai jobs netherlands, OnlyAIJobs
 Buyer Stage: Consideration / Job Search
-Target Persona: B (Ervaren AI/ML-engineer)
+Target Persona: B (Experienced AI or ML engineer)
 Content Format: Regional Market Analysis
 ---
 
-# AI-vacatures in Maastricht: een grensregio met een internationaal talentprofiel
+# AI Jobs in Maastricht: A Border Region With an International Talent Profile
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-vacatures in Maastricht: een grensregio met een internationaal talentprofiel",
-  "description": "Maastricht ligt op het kruispunt van Nederland, België en Duitsland, met een internationale universiteit en een gezondheidszorgsector die een eigen soort AI-arbeidsmarkt oplevert.",
+  "headline": "AI Jobs in Maastricht: A Border Region With an International Talent Profile",
+  "description": "Maastricht sits at the crossroads of the Netherlands, Belgium and Germany, with an international university and a healthcare sector that produce a distinctive kind of AI labour market.",
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-20",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-vacatures-maastricht"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-maastricht"},
+  "inLanguage": "en",
+  "about": [{"@type": "Place", "name": "Maastricht"}, {"@type": "Place", "name": "Euregio Meuse-Rhine"}],
+  "mentions": [
+    {"@type": "CollegeOrUniversity", "name": "Maastricht University"},
+    {"@type": "ResearchOrganization", "name": "Department of Advanced Computing Sciences (Maastricht University)"},
+    {"@type": "Hospital", "name": "Maastricht UMC+"},
+    {"@type": "CollegeOrUniversity", "name": "Zuyd University of Applied Sciences"},
+    {"@type": "Organization", "name": "Brightlands"},
+    {"@type": "GovernmentOrganization", "name": "Statistics Netherlands (CBS) Heerlen"},
+    {"@type": "Organization", "name": "APG"},
+    {"@type": "CollegeOrUniversity", "name": "RWTH Aachen University"},
+    {"@type": "Organization", "name": "LIOF"},
+    {"@type": "Organization", "name": "GrensInfoPunt"}
+  ]
 }
 </script>
 
-Maastricht ligt fysiek dichter bij Aken en Luik dan bij Amsterdam, en die grensligging, gecombineerd met een sterk internationaal georiënteerde universiteit, geeft de stad een AI-arbeidsmarkt die anders aanvoelt dan de rest van Nederland — internationaler qua samenstelling, en sterk verbonden met gezondheidszorg en life sciences.
+Maastricht is physically closer to Aachen and Liège than to Amsterdam, and that border location, combined with a strongly internationally oriented university, gives the city an AI labour market that feels different from the rest of the Netherlands — more international in composition, and closely tied to healthcare and life sciences.
 
-## Wat dit grensregio-karakter concreet betekent
+## What This Border Region Character Concretely Means
 
-Een kandidaat die in Maastricht zoekt naar AI- of datawerk, concurreert vaak met een internationaler samengestelde kandidatenpool dan in een vergelijkbare Nederlandse stad verder van de grens — deels door de universiteit, deels door de nabijheid van Duitse en Belgische werkgevers die soms ook Nederlandse kandidaten werven.
+A candidate looking for AI or data work in Maastricht often competes with a more internationally composed candidate pool than in a comparable Dutch city further from the border — partly because of the university, partly because of the proximity of German and Belgian employers who sometimes also recruit Dutch candidates.
 
-## Wat voor datawerk hier daadwerkelijk gebeurt
+## What Kind of Data Work Actually Happens Here
 
-De sterke gezondheidszorg- en life sciences-oriëntatie van de regio levert werk op rond klinische data-analyse en gezondheidsonderzoek, vergelijkbaar in aard met wat je in Nijmegen of Leiden ziet, maar met een nadrukkelijker internationale en grensoverschrijdende component.
+The region's strong healthcare and life sciences orientation produces work around clinical data analysis and health research, similar in nature to what you see in Nijmegen or Leiden, but with a more pronounced international and cross-border component.
 
-## Waar te beginnen
+## What the International Composition Means for an Application
 
-Als je openstaat voor een internationalere werkomgeving en geïnteresseerd bent in gezondheidszorg- of onderzoeksgerelateerd datawerk, is Maastricht de moeite van het overwegen waard — kijk specifiek naar de regio in plaats van aan te nemen dat serieus AI-werk alleen in de Randstad te vinden is.
+A more international candidate pool doesn't necessarily mean more competition in absolute numbers — it means a different kind of competition, in which English skills and experience with international collaboration can weigh more heavily than in a purely Dutch regional market. For a candidate comfortable in an international work environment, this can be a real advantage over a more monocultural regional team elsewhere in the country.
 
-Bekijk actuele AI-, machine learning- en datavacatures in en rond Maastricht op [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
+## Comparison Table: Maastricht vs. a Comparable Dutch University City
 
-## Wat de internationale samenstelling concreet betekent voor een sollicitatie
-
-Een internationalere kandidatenpool betekent niet per se meer concurrentie in absolute aantallen — het betekent een andere soort concurrentie, waarbij Engelstalige vaardigheden en ervaring met internationale samenwerking zwaarder kunnen wegen dan in een puur Nederlandse regionale markt. Voor een kandidaat die zich prettig voelt in een internationale werkomgeving, kan dit een reëel voordeel zijn ten opzichte van een monocultureler regionaal team elders in het land.
-
-## Vergelijkingstabel: Maastricht vs. een vergelijkbare Nederlandse universiteitsstad
-
-| Aspect | Maastricht | Vergelijkbare, niet-grensregio universiteitsstad |
+| Aspect | Maastricht | Comparable non-border university city |
 |---|---|---|
-| Internationale samenstelling kandidatenpool | Hoog | Gemiddeld tot laag |
-| Grensoverschrijdende werkgeversrelaties | Reëel aanwezig | Zelden aanwezig |
-| Voertaal op de werkvloer | Vaak Engels, ook intern | Vaker Nederlands |
-| Toegankelijkheid voor internationale kandidaten | Hoger dan gemiddeld | Lager dan gemiddeld |
+| International composition of the candidate pool | High | Moderate to low |
+| Cross-border employer relationships | Genuinely present | Rarely present |
+| Working language | Often English, internally too | More often Dutch |
+| Accessibility for international candidates | Higher than average | Lower than average |
 
-## Waarom dit ook relevant is voor Nederlandse kandidaten, niet alleen internationale
+## Why This Is Also Relevant to Dutch Candidates, Not Only International Ones
 
-Een Nederlandse kandidaat die overweegt om internationaler te gaan werken zonder direct naar het buitenland te verhuizen, vindt in Maastricht een tussenweg: een regio waar Engels een grotere rol speelt en waar grensoverschrijdende samenwerking normaal is, zonder de stap te hoeven zetten om daadwerkelijk in een ander land te gaan wonen.
+A Dutch candidate considering more international work without moving abroad straight away finds a middle ground in Maastricht: a region where English plays a bigger role and cross-border collaboration is normal, without having to actually go and live in another country.
 
-## Een concreet scenario van internationale samenwerking in de praktijk
+## A Concrete Scenario of International Collaboration in Practice
 
-Een onderzoeksgroep verbonden aan de universiteit in Maastricht werkt samen met een gezondheidszorginstelling net over de Duitse grens aan een gedeeld klinisch dataproject. Het team bestaat uit Nederlandse, Duitse en internationale onderzoekers, de voertaal is Engels, en de samenwerking vereist bekendheid met zowel Nederlandse als Duitse regelgeving rond medische data. Een kandidaat die dit soort werk zoekt, vindt in Maastricht een concentratie van precies dit soort grensoverschrijdende, internationale complexiteit die in een monocultureel Nederlandse regio simpelweg niet bestaat.
+A research group affiliated with the university in Maastricht works with a healthcare institution just across the German border on a shared clinical data project. The team consists of Dutch, German and international researchers, the working language is English, and the collaboration requires familiarity with both Dutch and German rules on medical data. A candidate looking for this kind of work finds in Maastricht a concentration of exactly this kind of cross-border, international complexity that simply doesn't exist in a monocultural Dutch region.
 
-## Een veelvoorkomend misverstand over wat "internationaal werken" betekent
+## A Common Misconception About What "Working Internationally" Means
 
-Kandidaten associëren internationaal werken vaak met verhuizen naar het buitenland. Maastricht biedt een tussenweg die zelden expliciet wordt overwogen: een internationale werkomgeving, met collega's en soms werkgevers uit meerdere landen, zonder dat je zelf naar een ander land hoeft te verhuizen — een optie die specifiek voor mensen met een gezin of andere redenen om in Nederland te blijven, een reëel alternatief kan zijn.
+Candidates often associate working internationally with moving abroad. Maastricht offers a middle way that is rarely considered explicitly: an international work environment, with colleagues and sometimes employers from several countries, without having to move to another country yourself — an option that can be a real alternative, especially for people with a family or other reasons to stay in the Netherlands.
 
-## Waarom deze grensregio-dynamiek zich waarschijnlijk zal versterken, niet verzwakken
+## Why This Border Region Dynamic Is Likely to Strengthen, Not Weaken
 
-Naarmate Europese samenwerking op het gebied van gezondheidszorg, onderzoek en regelgeving verder toeneemt, is de verwachting dat grensregio's zoals Maastricht een groeiende, niet krimpende, rol zullen spelen als knooppunt voor dit soort internationale samenwerking — wat deze regio op langere termijn aantrekkelijker maakt voor kandidaten die nu al internationaal georiënteerd werk zoeken.
+As European cooperation in healthcare, research and regulation increases further, border regions like Maastricht are expected to play a growing, not shrinking, role as hubs for this kind of international collaboration — making the region more attractive in the longer term for candidates already seeking internationally oriented work.
 
-## Hoe je je sollicitatie aanpast voor deze internationale context
+## How to Adapt Your Application for This International Context
 
-Een sollicitatie voor een rol in Maastricht's internationale onderzoeksomgeving verdient een net iets andere nadruk dan een sollicitatie voor een puur Nederlandse werkgever elders in het land: benadruk expliciet je ervaring met internationale samenwerking, je comfort met Engels als voertaal in een professionele context, en eventuele kennis van of ervaring met grensoverschrijdende regelgeving indien relevant. Deze elementen wegen hier zwaarder mee dan bij een vergelijkbare rol in een monocultureel Nederlandse regio.
+An application for a role in Maastricht's international research environment deserves a slightly different emphasis than one for a purely Dutch employer elsewhere in the country: explicitly highlight your experience with international collaboration, your comfort with English as a professional working language, and any knowledge of or experience with cross-border regulation where relevant. These elements weigh more heavily here than for a comparable role in a monocultural Dutch region.
 
-## Waarom deze regio ook aantrekkelijk is voor wie een internationale carrière overweegt zonder emigratie
+## Why This Region Also Appeals to Those Considering an International Career Without Emigrating
 
-Voor kandidaten die op termijn een internationale carrière ambiëren maar nu nog niet willen emigreren, biedt Maastricht een waardevolle tussenstap: internationale werkervaring opdoen, een internationaal netwerk opbouwen, en wennen aan grensoverschrijdende samenwerking, allemaal terwijl je in Nederland blijft wonen. Deze ervaring kan later een sterke basis vormen mocht je alsnog besluiten om internationaler te gaan werken, zonder dat je die stap nu al definitief hoeft te zetten.
+For candidates who aspire to an international career eventually but don't want to emigrate yet, Maastricht offers a valuable intermediate step: gaining international work experience, building an international network and getting used to cross-border collaboration, all while continuing to live in the Netherlands. This experience can later be a strong foundation should you still decide to work more internationally, without having to take that step definitively now.
 
-## Veelgestelde vragen
+## The Knowledge Institutions by Name
 
-### (Scenario: kandidaat die twijfelt of Maastricht een serieuze AI-markt heeft) Heeft Maastricht een serieuze AI-arbeidsmarkt, ondanks de afstand tot de Randstad?
-Ja, met een eigen karakter — sterk verbonden met gezondheidszorg en life sciences, en internationaler qua samenstelling door de grensligging en de universiteit.
+"An internationally oriented university" and "a strong healthcare sector" become concrete once you know the institutions.
 
-### (Scenario: kandidaat die twijfelt over concurrentie) Is de concurrentie voor AI-vacatures in Maastricht anders dan elders in Nederland?
-Vaak internationaler qua samenstelling, deels door de universiteit en de nabijheid van Duitse en Belgische werkgevers die soms ook Nederlandse kandidaten werven.
+**Maastricht University (UM).** Founded in 1976 and one of the most international universities in the Netherlands, with a large share of international students and many English-taught programmes. The university is known for its problem-based learning model. The **Department of Advanced Computing Sciences** — formerly known as Data Science and Knowledge Engineering — conducts research and teaching in areas including artificial intelligence, machine learning, robotics, game theory and optimisation, and produces graduates in data science and AI every year.
 
-### (Scenario: kandidaat die geïnteresseerd is in gezondheidszorg-datawerk) Wat voor datawerk gebeurt er specifiek in de gezondheidszorgsector rond Maastricht?
-Klinische data-analyse en gezondheidsonderzoek, vergelijkbaar in aard met wat je in Nijmegen of Leiden ziet, met een nadrukkelijker internationale component.
+**Maastricht UMC+.** The academic hospital combines patient care, research and education, and is strong in areas including cardiovascular research, oncology, imaging and precision medicine. That is the source of the clinical data analysis work this article describes.
 
-### (Scenario: kandidaat die twijfelt of dit anders is dan andere universiteitssteden) Wat maakt Maastricht anders dan andere Nederlandse universiteitssteden voor AI-werk?
-De grensligging bij België en Duitsland en de sterk internationaal georiënteerde universiteit geven de regio een kandidatenpool en werkgeversbasis die internationaler is dan in vergelijkbare steden verder van de grens.
+**Zuyd University of Applied Sciences.** With locations in Maastricht, Heerlen and Sittard, Zuyd trains professionals in areas including ICT, healthcare and engineering, and carries out applied research with regional partners.
 
-### (Scenario: kandidaat die wil weten hoe te zoeken) Hoe zoek ik gericht naar AI-werk in de regio Maastricht?
-Filter op categorie en afstand tot huis, en kijk specifiek naar gezondheidszorg- en onderzoeksgerelateerde werkgevers in de regio in plaats van een generieke landelijke zoekopdracht.
+## Brightlands: Limburg's Four Campuses
+
+Limburg has organised its innovation around **Brightlands**, a network of four campuses, each with its own theme.
+
+| Campus | Location | Theme | Relevant data work |
+|---|---|---|---|
+| **Brightlands Maastricht Health Campus** | Maastricht | Health and life sciences, around Maastricht UMC+ and the university | Clinical data, medical imaging, precision medicine |
+| **Brightlands Chemelot Campus** | Geleen/Sittard | Chemistry and materials, next to the Chemelot industrial complex | Process data, materials research, predictive maintenance |
+| **Brightlands Smart Services Campus** | Heerlen | Data, digital services and data science | Data science, AI applications, government and pension data |
+| **Brightlands Campus Greenport Venlo** | Venlo | Agrifood, nutrition and health | Food chains, horticulture and logistics data |
+
+**Heerlen as a data city.** The Smart Services Campus in Heerlen is no coincidence. Heerlen hosts large offices of data-intensive organisations, including one of the two main locations of **Statistics Netherlands (CBS)** and pension administrator **APG**, which serves the ABP pension fund among others. Both organisations work with huge amounts of data and have roles in data engineering, statistics and data science. Heerlen is about half an hour's travel from Maastricht.
+
+**LIOF.** Limburg's regional development agency supports innovation and entrepreneurship in the province and is a logical entry point for getting to know growing companies around the Brightlands campuses.
+
+## The Euregio Meuse-Rhine in Practice
+
+The "border region" in this article has an official form: the **Euregio Meuse-Rhine**, a cross-border partnership between South Limburg, the Belgian provinces of Limburg and Liège, the German-speaking Community of Belgium and the Aachen region. Maastricht, where the Maastricht Treaty was signed in 1992, lies literally at its centre.
+
+| From Maastricht | What's there | Relevance for AI and data work |
+|---|---|---|
+| **Aachen (Germany)** | **RWTH Aachen University**, one of Germany's largest technical universities, with extensive research in AI, robotics and production engineering | Research collaboration, industrial AI, cross-border jobs |
+| **Liège (Belgium)** | University of Liège, industry and logistics | French-speaking labour market with logistics and industrial data |
+| **Hasselt and Genk (Belgium)** | Hasselt University, manufacturing and logistics | Dutch-speaking border market |
+| **Heerlen and Sittard-Geleen** | CBS, APG, Chemelot | Large data-intensive employers within the Netherlands |
+
+There are direct train connections between Maastricht, Heerlen and Aachen, and between Maastricht and Liège. Check current timetables, as cross-border connections change regularly.
+
+## Cross-Border Work: Arrange It in Advance
+
+Anyone living in the Netherlands and going to work in Belgium or Germany — or the other way round — deals with different systems for tax, social security and pensions. That doesn't have to be an obstacle, but it deserves preparation. The regional **GrensInfoPunt** (cross-border information point) provides independent information to cross-border workers and employers on taxes, social security, health insurance and employment law. Check this before accepting an offer, and if you work from home in your country of residence, check what that means for your social security.
+
+## International Graduates: Stay or Leave
+
+Because of its large share of international students, Maastricht faces a specific question: how much of that talent stays in the region after graduating? Graduates from outside the EU can, under conditions, apply to the IND for the orientation year for highly educated persons and then work as highly skilled migrants, with a lower salary threshold if they start work shortly after their studies. Language plays a big role: anyone who doesn't speak Dutch depends on English-speaking employers, which in South Limburg are mainly found in research, healthcare innovation and international companies. A visible overview of English-language AI and data vacancies in the region increases the chance that international talent doesn't automatically leave for Amsterdam or abroad.
+
+## Job Titles by Sector in South Limburg
+
+| Sector | Employer type | Job titles to search for |
+|---|---|---|
+| Health and life sciences | Academic hospital, research groups, health tech companies | Clinical data scientist, researcher, bioinformatician, data manager |
+| Chemistry and materials | Companies and research institutes around Chemelot | Process data analyst, R&D data scientist, process optimisation specialist |
+| Statistics and pensions | Large data-intensive organisations in Heerlen | Data engineer, statistician, methodologist, data scientist |
+| Education and research | University and university of applied sciences | PhD candidate, postdoc, researcher, research software engineer |
+| Logistics and agrifood | Companies around Venlo and the border region | Supply chain analyst, planner, logistics data analyst |
+
+## Language as a Distinguishing Factor
+
+In and around Maastricht, language is more often a variable than elsewhere in the Netherlands. International research groups usually work in English. Government and public organisations such as statistics and pension institutions often require Dutch. At employers working with German or Belgian partners, German or French can be a clear plus.
+
+For a candidate, that means two things. First: read the language requirement in a vacancy carefully, because it largely determines who is realistically eligible. Second: anyone who speaks Dutch or German as well as English has a bigger playing field in this border region than in a purely Dutch or purely international labour market. A basic command of German or French is therefore not a hobby in South Limburg, but a career advantage.
+
+## Key Takeaways
+
+- Maastricht University, its Department of Advanced Computing Sciences, Maastricht UMC+ and Zuyd University of Applied Sciences form the knowledge base.
+- The four Brightlands campuses connect health, chemistry, data services and agrifood across Limburg.
+- Heerlen, with CBS and APG among others, is a major data employer half an hour from Maastricht.
+- The Euregio Meuse-Rhine brings RWTH Aachen, Liège and Hasselt within reach; cross-border work is realistic.
+- For cross-border work, get advice in advance from the GrensInfoPunt on tax, social security and health insurance.
+
+## Where to Start
+
+If you are open to a more international work environment and interested in healthcare or research-related data work, Maastricht is worth considering — look specifically at the region instead of assuming serious AI work can only be found in the Randstad.
+
+Browse current AI, machine learning and data jobs in and around Maastricht at [onlyaijobs.eu/jobs](https://onlyaijobs.eu/jobs).
+
+## Frequently Asked Questions
+
+### (Scenario: candidate unsure whether Maastricht has a serious AI market) Does Maastricht have a serious AI labour market, despite its distance from the Randstad?
+Yes, with its own character — closely tied to healthcare and life sciences, and more international in composition thanks to the border location and the university.
+
+### (Scenario: candidate unsure about competition) Is competition for AI vacancies in Maastricht different from elsewhere in the Netherlands?
+It is often more international in composition, partly because of the university and the proximity of German and Belgian employers who sometimes also recruit Dutch candidates.
+
+### (Scenario: candidate interested in healthcare data work) What kind of data work happens specifically in the healthcare sector around Maastricht?
+Clinical data analysis and health research, similar in nature to what you see in Nijmegen or Leiden, with a more pronounced international component.
+
+### (Scenario: candidate wondering whether this differs from other university cities) What makes Maastricht different from other Dutch university cities for AI work?
+The border location next to Belgium and Germany and the strongly internationally oriented university give the region a candidate pool and employer base that is more international than in comparable cities further from the border.
+
+### (Scenario: candidate who wants to know how to search) How do I search specifically for AI work in the Maastricht region?
+Filter by category and distance from home, and look specifically at healthcare and research-related employers in the region instead of a generic national search.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Heeft Maastricht een serieuze AI-arbeidsmarkt, ondanks de afstand tot de Randstad?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, met een eigen karakter — sterk verbonden met gezondheidszorg en life sciences, en internationaler qua samenstelling."}},
-    {"@type": "Question", "name": "Is de concurrentie voor AI-vacatures in Maastricht anders dan elders in Nederland?", "acceptedAnswer": {"@type": "Answer", "text": "Vaak internationaler qua samenstelling, deels door de universiteit en de nabijheid van Duitse en Belgische werkgevers."}},
-    {"@type": "Question", "name": "Wat voor datawerk gebeurt er specifiek in de gezondheidszorgsector rond Maastricht?", "acceptedAnswer": {"@type": "Answer", "text": "Klinische data-analyse en gezondheidsonderzoek, met een nadrukkelijker internationale component dan elders."}},
-    {"@type": "Question", "name": "Wat maakt Maastricht anders dan andere Nederlandse universiteitssteden voor AI-werk?", "acceptedAnswer": {"@type": "Answer", "text": "De grensligging bij België en Duitsland en de internationaal georiënteerde universiteit geven een internationalere kandidatenpool."}},
-    {"@type": "Question", "name": "Hoe zoek ik gericht naar AI-werk in de regio Maastricht?", "acceptedAnswer": {"@type": "Answer", "text": "Filter op categorie en afstand tot huis, en kijk specifiek naar gezondheidszorg- en onderzoeksgerelateerde werkgevers."}}
+    {"@type": "Question", "name": "Does Maastricht have a serious AI labour market, despite its distance from the Randstad?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, with its own character — closely tied to healthcare and life sciences, and more international in composition."}},
+    {"@type": "Question", "name": "Is competition for AI vacancies in Maastricht different from elsewhere in the Netherlands?", "acceptedAnswer": {"@type": "Answer", "text": "It is often more international in composition, partly because of the university and the proximity of German and Belgian employers."}},
+    {"@type": "Question", "name": "What kind of data work happens specifically in the healthcare sector around Maastricht?", "acceptedAnswer": {"@type": "Answer", "text": "Clinical data analysis and health research, with a more pronounced international component than elsewhere."}},
+    {"@type": "Question", "name": "What makes Maastricht different from other Dutch university cities for AI work?", "acceptedAnswer": {"@type": "Answer", "text": "The border location next to Belgium and Germany and the internationally oriented university give a more international candidate pool."}},
+    {"@type": "Question", "name": "How do I search specifically for AI work in the Maastricht region?", "acceptedAnswer": {"@type": "Answer", "text": "Filter by category and distance from home, and look specifically at healthcare and research-related employers."}}
   ]
 }
 </script>

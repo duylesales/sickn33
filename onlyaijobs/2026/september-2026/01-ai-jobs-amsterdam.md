@@ -17,7 +17,18 @@ Content Format: Regional Market Analysis
   "author": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "publisher": {"@type": "Organization", "name": "OnlyAIJobs", "url": "https://onlyaijobs.eu"},
   "datePublished": "2026-09-01",
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-amsterdam"}
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://onlyaijobs.eu/blog/ai-jobs-amsterdam"},
+  "inLanguage": "en",
+  "about": [{"@type": "Place", "name": "Amsterdam"}, {"@type": "Place", "name": "Metropoolregio Amsterdam"}],
+  "mentions": [
+    {"@type": "CollegeOrUniversity", "name": "University of Amsterdam"},
+    {"@type": "CollegeOrUniversity", "name": "Vrije Universiteit Amsterdam"},
+    {"@type": "ResearchOrganization", "name": "Centrum Wiskunde & Informatica"},
+    {"@type": "Place", "name": "Amsterdam Science Park"},
+    {"@type": "Place", "name": "Zuidas"},
+    {"@type": "GovernmentOrganization", "name": "Immigratie- en Naturalisatiedienst (IND)"},
+    {"@type": "Legislation", "name": "EU Artificial Intelligence Act"}
+  ]
 }
 </script>
 
@@ -71,6 +82,54 @@ Two examples visible on OnlyAIJobs illustrate the pattern. Sendcloud and Stichti
 
 The practical consequence: your shortlist should be built from the actual population of vacancies, not from the subset that advertised hardest this week.
 
+## The Institutions Behind Amsterdam's AI Talent Pool
+
+Amsterdam's AI labour market is shaped as much by its research institutions as by its employers, and understanding them tells you something concrete about who you are competing with and who is hiring.
+
+**University of Amsterdam (UvA).** The Informatics Institute and the Amsterdam Machine Learning Lab (AMLab) have produced a steady stream of graduates and PhDs in deep learning, probabilistic modelling and computer vision. Several of the UvA's research labs are co-funded with industry — the QUVA Lab with Qualcomm and the Delta Lab with Bosch are two long-standing examples — which means a share of the city's most technical ML work sits in industrial research groups rather than in product teams.
+
+**Vrije Universiteit Amsterdam (VU).** Strong in knowledge representation, network science and applied data science, with a graduate profile that leans towards hybrid AI and information systems rather than pure deep learning.
+
+**Centrum Wiskunde & Informatica (CWI).** The national research institute for mathematics and computer science, located at **Amsterdam Science Park** alongside UvA's science faculty. CWI is where much of the Netherlands' foundational work on algorithms, cryptography and machine learning theory happens, and its alumni are found throughout the city's quantitative teams.
+
+**Amsterdam University of Applied Sciences (HvA).** Less visible in rankings, but a major source of data engineers and applied ML practitioners who move directly into industry.
+
+What this means for your search is practical. For junior and mid-level roles, you compete against a large pipeline of locally trained graduates, many with thesis projects done inside companies. For senior and specialist roles, the dynamic reverses: Amsterdam employers compete for a limited pool of engineers who can run production systems, and the ones without an employer brand struggle most. That is exactly where the under-advertised vacancies accumulate.
+
+## The Real Market Is the Metropolitan Region, Not the Municipality
+
+Administratively, Amsterdam is one municipality. Economically, the relevant unit is the **Metropoolregio Amsterdam (MRA)** — a cooperation of around thirty municipalities across Noord-Holland and Flevoland that share one labour market, one rail network and one housing problem.
+
+Treating the MRA as your search area changes the map considerably:
+
+| Area | Typical AI and data work | Why it gets missed |
+|---|---|---|
+| Zuidas | Banking, payments, legal-tech, consultancies | It is the part everyone already sees |
+| Amsterdam Science Park | Research groups, university spin-outs | Roles are often posted as "researcher" or "postdoc" |
+| Amsterdam Noord and Houthavens | Media, creative-tech and scale-ups | Smaller employers with no recruitment budget |
+| Sloterdijk and Westpoort | Logistics, port-related and operations data | Filed under operations, not AI |
+| Amstelveen | International firms' Dutch offices, consultancies | Separate municipality, excluded by a city filter |
+| Hoofddorp and the Schiphol area | Aviation, travel and logistics analytics | Separate municipality, often a shorter commute from the west |
+| Almere | Growing business parks, public-sector and service firms | Assumed to be a commuter town rather than an employer base |
+
+Two travel facts illustrate how misleading the city tag is. A train from Haarlem reaches Amsterdam Centraal in roughly fifteen minutes, and Almere Centrum is roughly twenty-five minutes from the city by rail. Yet a candidate living in Amsterdam Oost can easily spend longer reaching an office in Sloterdijk than a candidate in Almere spends reaching Amsterdam Zuid. City names describe administration; door-to-door time describes your life.
+
+## What International Engineers Should Check Before Accepting an Amsterdam Offer
+
+A large share of Amsterdam's AI engineers relocated from outside the Netherlands, and the job advertisement typically omits the three factors that most affect whether an offer actually works.
+
+**Whether the employer is a recognised sponsor.** Non-EU candidates hired under the highly skilled migrant (*kennismigrant*) scheme need an employer that is a recognised sponsor (*erkend referent*) with the **Immigratie- en Naturalisatiedienst (IND)**. Large employers almost always are. Smaller, under-advertised employers sometimes are not — which does not rule them out, but it adds a step you should ask about in the first conversation, not the last.
+
+**How the 30% ruling applies to you.** The Dutch tax facility for incoming employees (the *30%-regeling*) remains a meaningful part of many relocation offers, but its rules were tightened by legislation in recent years, including a reduction of the maximum tax-free percentage from 2027. Treat any offer that leans heavily on it as something to verify with a tax adviser against your own start date rather than as a fixed number.
+
+**Housing before salary.** Amsterdam's rental market is one of the tightest in Europe. An offer in Hoofddorp, Haarlem or Almere that lets you live closer to the office in a less contested housing market can be worth more in practice than a nominally higher Zuidas salary that forces a long commute from wherever you can find a flat.
+
+## Compliance Work Is Becoming a Core Amsterdam AI Skill
+
+Amsterdam's concentration of banks, payment companies, insurers and consultancies makes it one of the places in the Netherlands where the **EU Artificial Intelligence Act** is changing job content fastest. The regulation entered into force in August 2024 and applies in phases, with obligations for high-risk systems — including many credit-scoring and certain employment-related uses — following later in the rollout.
+
+In practice, this shows up in vacancies as responsibilities rather than titles: model documentation, risk classification, bias testing, human-oversight design, and cooperation with compliance and legal teams. Engineers who combine solid production ML with the ability to document and defend a model are scarce in the Zuidas cluster, and that scarcity is not yet reflected in how the roles are titled. Read the responsibilities; the governance component is often where the seniority is hidden.
+
 ## The OnlyAIJobs Standard
 
 OnlyAIJobs applies three rules that a generalist board structurally cannot.
@@ -80,6 +139,14 @@ OnlyAIJobs applies three rules that a generalist board structurally cannot.
 **Exact location, not a city tag.** Each vacancy is mapped to a street address and shown with its distance from you. Adjacent municipalities surface naturally instead of being excluded by a city-name filter.
 
 **Equal visibility.** No employer can buy a higher position. A twelve-person company in Amstelveen appears on the same terms as a multinational on the Zuidas. This is not a courtesy to small employers; it is what makes the list usable as evidence about the market rather than as a ranking of advertising budgets.
+
+## Key Takeaways
+
+- The Amsterdam companies you see most often are the ones with the largest advertising budgets, not necessarily the best matches.
+- Amsterdam's AI demand splits into platform engineering, enterprise and consultancy, product teams with an AI layer, and research-adjacent work — the last two are nearly invisible to keyword search.
+- The relevant search area is the Metropoolregio Amsterdam, including Amstelveen, Hoofddorp, Haarlem and Almere, not the municipality.
+- UvA, VU, CWI and HvA create strong competition for junior roles and a shortage of senior production engineers.
+- International candidates should check recognised-sponsor status, the current 30% ruling rules, and housing before comparing salaries.
 
 ## Where to Start
 
