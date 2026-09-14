@@ -586,7 +586,7 @@
   - **Bài 30**: `30-mobile-app-vendor-portfolio-red-flags-screenshots-dont-show.md` -> [`30-mobile-app-vendor-portfolio-red-flags-screenshots-dont-show_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/30-mobile-app-vendor-portfolio-red-flags-screenshots-dont-show_pic.jpg) (*Góc chụp flat-lay từ trên xuống bàn đá slate, đối chiếu portfolio lung linh trên iPad Pro với ứng dụng thật 2.1 sao bị bỏ bê 3 năm trên App Store của smartphone, hồ sơ audit khoanh bút đỏ, cà phê cold brew và kính mắt*).
   - **Bài 31**: `31-web-application-development-vendor-code-quality-testing.md` -> [`31-web-application-development-vendor-code-quality-testing_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/31-web-application-development-vendor-code-quality-testing_pic.jpg) (*Bàn làm việc kỹ thuật cao cấp, màn hình cong siêu rộng hiển thị dashboard SonarQube Pass 92.4% test coverage, màn hình dọc hiển thị PR GitHub, CTO Hà Lan và Nữ Kiến trúc sư Phần mềm Việt Nam thảo luận mã nguồn*).
   - **Bài 32**: `32-web-development-company-red-flags-non-technical-founder.md` -> [`32-web-development-company-red-flags-non-technical-founder_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/32-web-development-company-red-flags-non-technical-founder_pic.jpg) (*Góc chụp nghiêng trong lounge vườn ươm khởi nghiệp ấm cúng, Cố vấn CTO Việt Nam phân tích các điều khoản bẫy cấm truy cập Git và thanh toán T&M không chặn trần cho Nữ Founder Châu Âu bên tách trà ấm*).
-- **14:07**: Khi tiếp tục với **Bài 33** (`33-spa-vs-pwa-vs-traditional-web-app-development.md`), công cụ native (`gemini-3.1-flash-image`) chạm quota giới hạn (mã lỗi `429 RESOURCE_EXHAUSTED`, thời gian reset dự kiến vào lúc **18:56:39 GMT+7**). Cập nhật đầy đủ inventory và nhật ký, tạm dừng chờ phiên tiếp theo theo quy định Workspace.
+- **14:07**: Khi tiếp tục với **Bài 33** (`33-spa-vs-pwa-vs-traditional-web-app-development.md`), công cụ native (`gemini-3.1-flash-image`) chạm quota giới hạn (mã lỗi `429 RESOURCE_EXHAUSTED`, thời gian reset dự kiến vào lúc **18:56:39 GMT+7**). Cập nhật nhật ký tiến độ, tạm dừng chờ phiên tiếp theo theo quy định Workspace.
 - **11:26**: Viết bổ sung chuyên sâu **toàn bộ 60 bài** trong [`onlyaijobs/2026/september-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/september-2026/) để đạt chuẩn SEO/GEO-entity (không tính phần FAQ):
   - **Độ dài phần thân (không tính FAQ + schema)**: trước 802–1.710 từ (trung bình ~1.230) → sau **1.807–2.467 từ (trung bình 1.952)**, tương đương chuẩn bài Manifera (~2.000 từ).
   - **Chiều sâu thực thể (entity)**: bổ sung các thực thể thật, kiểm chứng được cho từng bài:
@@ -600,3 +600,18 @@
     - Thêm phần "Key Takeaways / Kernpunten" ngay trước CTA.
     - Sửa lỗi bài 59 (Maastricht) có CTA nằm giữa bài.
   - **Kiểm định tự động**: 60/60 JSON-LD hợp lệ, 60/60 đủ 5 FAQ, mỗi bài đúng 1 CTA ở cuối có link, 0 bài dưới 1.800 từ. Diff: 60 file thay đổi. Bài social không bị động đến. Chưa commit.
+- **14:15**: Chuyển **toàn bộ bài tiếng Hà Lan** trong [`onlyaijobs/2026/september-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/september-2026/) sang **tiếng Anh**, đúng yêu cầu gốc là 100% tiếng Anh:
+  - **Viết lại 23 bài + 23 bài social** (06, 09, 11, 13, 22, 23, 24, 27, 28, 32, 35, 37, 39, 41, 44, 47, 48, 49, 52, 53, 55, 57, 59):
+    - Giữ nguyên độ sâu thực thể, bảng biểu và 5 FAQ.
+    - `inLanguage` đổi từ `nl` sang `en`.
+    - Tiêu đề mục thống nhất: "Key Takeaways", "Where to Start", "Frequently Asked Questions".
+  - **Đổi slug + tên file bằng `git mv` cho 24 cặp bài**:
+    - Thay `ai-vacatures-*` → `ai-jobs-*`.
+    - Ví dụ: `brainport-model-elders-in-nederland` → `brainport-model-beyond-eindhoven`.
+    - `@id` schema và link social cập nhật theo slug mới.
+  - **Chuẩn hóa tên cơ quan Hà Lan sang tên tiếng Anh** trong 8 bài tiếng Anh sẵn có (07, 08, 10, 21, 33, 36, 46, 54).
+  - **Kiểm định tự động**:
+    - 60/60 JSON-LD hợp lệ, `inLanguage: en`, `@id` khớp slug.
+    - Đủ 5 FAQ, đúng thứ tự mục, thân bài ≥ 1.800 từ.
+    - 0 tham chiếu slug cũ. Chưa commit.
+  - **Còn tồn**: `october-2026/` còn khoảng 22 bài tiếng Hà Lan.
