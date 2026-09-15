@@ -1,5 +1,21 @@
 # Diary
 
+## 2026-09-15 (Sáng)
+
+- **11:25**: Viết mới **60 bài chuyên sâu chuẩn SEO/GEO-entity** (không tính FAQ) cho [`onlyaijobs/2026/november-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/november-2026/), 100% tiếng Anh, theo đúng khung bài tháng 9–10:
+  - **Phân bổ chủ đề** (không trùng slug nào với 120 bài tháng 9–10):
+    - **01–15, 56–60 — thị trường theo thành phố/vùng (Persona B)**: Heerlen, Best, Oss, Noordwijk, De Bilt, Amstelveen, Aalsmeer, Zaanstad, Den Helder, Lelystad, Westland, Drachten, Achterhoek, Veghel, Eemshaven–Delfzijl · Waalwijk, Moerdijk, Vlissingen, Boxmeer, Bergen op Zoom.
+    - **16–40 — hướng dẫn nghề nghiệp (Persona B, 3 bài Persona A)**: vận trù học/tối ưu hoá, dữ liệu không gian, quản trị dữ liệu/data steward, hệ gợi ý, AI giọng nói, NLP tiếng Hà Lan, AI y tế, chuyển dịch năng lượng, ngân hàng–bảo hiểm, khu vực công, research software engineer, consultancy vs in-house, analytics engineer, analyst → data scientist, part-time/4 ngày, hợp đồng lao động, IP & dự án cá nhân, chứng chỉ, PhD → ngành, quay lại sau nghỉ dài, đánh giá tin nhắn recruiter, CV, motivation letter, bài take-home, xử lý bị từ chối.
+    - **41–50 — nhà tuyển dụng (Persona C)**: dải lương theo Pay Transparency Directive, AI Act trong tuyển dụng, GDPR khi sàng lọc, SME tuyển data hire đầu tiên, thực tập sinh/afstudeerstage, đào tạo nội bộ vs tuyển mới, từ chối ứng viên, ML engineer hay data scientist trước, dùng agency, vì sao ứng viên từ chối offer.
+    - **51–55 — tổ chức vùng (Persona D)**: tỉnh & giữ chân nhân tài, hogeschool/lectoraat, science park/campus, thu hút người quay về (terugkeerders), AiNed & đầu tư AI quốc gia.
+  - **Cấu trúc mỗi bài**: frontmatter (Title/Keywords/Buyer Stage/Target Persona/Content Format) → H1 → schema `Article` (`inLanguage: en`, `about`, 10 `mentions`) → thân bài có bảng, kịch bản thực tế, "Common Misconception" → Key Takeaways → Where to Start (CTA có link) → 5 FAQ dạng "(Scenario: …)" + schema `FAQPage`.
+  - **CTA theo persona**: ứng viên → "Browse current jobs" (onlyaijobs.eu/jobs); nhà tuyển dụng → "first listing free — info@onlyaijobs.eu"; tổ chức vùng → "Get in touch via info@onlyaijobs.eu".
+  - **Ngày đăng**: 2026-11-01 → 2026-11-30, 2 bài/ngày (bài n = ngày ⌈n/2⌉). Lưu ý: bài 32–60 của tháng 10 cũng mang ngày tháng 11 từ trước, nên hai tháng chồng lịch.
+  - **Nguyên tắc nội dung**: không bịa số liệu thị trường, không nêu mức lương cụ thể; các mốc pháp lý chưa chắc chắn được ghi kèm khuyến nghị kiểm tra nguồn chính thức (lịch áp dụng nghĩa vụ high-risk của AI Act, luật loontransparantie của Hà Lan, EUDR, Wtta, 30%-regeling, việc RIVM chuyển sang Utrecht Science Park).
+  - **Quy trình**: viết từng đợt 2–4 bài, chạy script kiểm định sau mỗi đợt; nhiều bài ra ngắn hơn chuẩn nên đã bổ sung mục thực chất (câu hỏi phỏng vấn, kịch bản, bối cảnh pháp lý/ngành) cho tới khi đạt. Phát hiện và viết bù dải bài 16–20 bị sót trong kế hoạch ban đầu.
+  - **Kiểm định tự động cuối**: 60/60 file đánh số 01–60; 60/60 JSON-LD hợp lệ, `@id` khớp slug, headline khớp Title và H1, ngày đúng lịch; đủ 5 FAQ và đúng thứ tự Key Takeaways → Where to Start → FAQ, CTA có link; thân bài (không tính schema + FAQ) **1.800–2.078 từ, trung bình 1.901**; 0 slug trùng tháng 9–10.
+  - **Chưa làm**: bài social cho tháng 11, ảnh minh hoạ, rà soát thủ công từng thực thể. Chưa commit.
+
 ## 2026-09-14 (Chiều)
 
 - **17:40**: Thêm **icon (emoji)** cho toàn bộ **120 bài social** của OnlyAIJobs ([`september-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/september-2026/) và [`october-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/october-2026/)) để bài sinh động, dễ đọc lướt hơn:
