@@ -6,8 +6,8 @@
 
 #### Ngày 16
 
-- **Tạo ảnh minh họa siêu thực cho cụm `extra-9-decision` - Phiên sáng (Hoàn thành tiếp Bài 47 - Bài 53, nâng tổng lên 53/100 bài)**:
-  - Tiếp tục quy trình tạo mới và cắt chuẩn tỷ lệ 16:9 (`1365x768`, center-crop JPEG quality 95) cho 7 bài tiếp theo:
+- **Tạo ảnh minh họa siêu thực cho cụm `extra-9-decision` (Hoàn thành tiếp Bài 47 - Bài 54, nâng tổng lên 54/100 bài)**:
+  - Tiếp tục quy trình tạo mới và cắt chuẩn tỷ lệ 16:9 (`1365x768`, center-crop JPEG quality 95) cho 8 bài tiếp theo:
     - [`47-llm-vendor-lock-in-questions-before-you-build-on-one-model_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/47-llm-vendor-lock-in-questions-before-you-build-on-one-model_pic.jpg) (Studio thiết kế kiến trúc Berlin, bàn vẽ kỹ thuật số hiển thị Multi-Provider LLM Gateway Architecture, CTO Châu Âu và Kiến trúc sư Hệ thống Việt Nam dùng bút cảm ứng rà soát nút chuyển đổi dự phòng failover).
     - [`48-ai-data-privacy-clauses-vendors-dont-volunteer_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/48-ai-data-privacy-clauses-vendors-dont-volunteer_pic.jpg) (Phòng pháp chế Frankfurt nhìn ra tháp tài chính, phụ lục DPA Schedule B khoanh đỏ điều khoản xóa bỏ trọng số mô hình phái sinh, Certificate of Destruction có dấu mộc xanh, Giám đốc Tuân thủ Châu Âu và Nữ Luật sư Việt Nam rà soát điều khoản).
     - [`49-evaluating-an-ai-vendors-model-evaluation-process_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/49-evaluating-an-ai-vendors-model-evaluation-process_pic.jpg) (Phòng lab kiểm thử Stockholm, bàn đứng gỗ bạch dương, màn hình cong kép hiển thị hệ thống đo kiểm LLM tự động trên Golden Dataset 5.000 prompt, tỷ lệ ảo giác 0.7%, CTO Châu Âu và Kỹ sư AI QA Việt Nam đối chiếu kết quả).
@@ -15,7 +15,8 @@
     - [`51-choosing-a-devops-software-partner-pipeline-audit_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/51-choosing-a-devops-software-partner-pipeline-audit_pic.jpg) (Trung tâm điều hành DevOps Eindhoven, checklist kiểm toán 5 tầng pipeline, màn hình 4K treo tường hiển thị sơ đồ CI/CD live: Source -> Test -> SonarQube -> Docker -> Canary, CEO Châu Âu và Nữ Kiến trúc sư DevOps Việt Nam rà soát quy trình).
     - [`52-deployment-in-software-contracts-sla-downtime_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/52-deployment-in-software-contracts-sla-downtime_pic.jpg) (Bàn họp Zurich, hợp đồng phụ lục SLA highlight điều khoản phạt gián đoạn release > 15 phút khấu trừ 25% phí tháng, bảng tính thiệt hại 14.200 €/giờ, laptop hiển thị timeline sự cố 55 phút).
     - [`53-development-in-the-cloud-migration-partner-gdpr_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/53-development-in-the-cloud-migration-partner-gdpr_pic.jpg) (Studio điện toán đám mây Amsterdam nhìn ra kênh đào, bản vẽ kỹ thuật chủ quyền dữ liệu EU khóa vùng Frankfurt & Amsterdam đối chiếu đường truyền US gạch chéo đỏ, iPad chọn vùng lưu trữ, Nữ Founder Châu Âu và Lead Cloud Architect Việt Nam thảo luận).
-  - **Tạm dừng trước Bài 54**: Công cụ native chạm giới hạn quota (`429 RESOURCE_EXHAUSTED`). Tuân thủ nghiêm ngặt quy định Workspace (không dùng pollinations.ai, giữ nguyên file inventory).
+    - [`54-software-stack-lock-in-vendor-decision_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/54-software-stack-lock-in-vendor-decision_pic.jpg) (Phòng hiện đại hóa IT doanh nghiệp Frankfurt nhìn ra skyline hoàng hôn, báo cáo kiểm toán TCO 10 năm mở rộng đối chiếu kiến trúc đóng Proprietary khóa nhà cung cấp vs kiến trúc mở Decoupled, cốc gốm FRA_IT, tablet hiển thị sơ đồ phụ thuộc mô-đun, IT Manager Châu Âu và Nữ Kiến trúc sư Giải pháp Việt Nam phân tích biểu đồ).
+  - **Tạm dừng trước Bài 55**: Công cụ native chạm giới hạn quota (`429 RESOURCE_EXHAUSTED`). Tuân thủ nghiêm ngặt quy định Workspace (không dùng pollinations.ai, giữ nguyên file inventory).
 
 #### Ngày 15
 
