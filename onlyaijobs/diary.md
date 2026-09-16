@@ -1,5 +1,47 @@
 # Diary
 
+## 2026-09-16 (Tối)
+
+- **20:05**: Viết tiếp **20 bài Decision (61–80)** cho [`onlyaijobs/extra-2026/extra-1-decision/`](file:///Users/duyle/sickn33/onlyaijobs/extra-2026/extra-1-decision/), nâng cụm này lên **80 bài**. Giữ nguyên chuẩn và **CTA miễn phí** như 60 bài đầu (không có gói trả phí cho người tìm việc).
+  - **Phân bổ chủ đề** (không trùng slug với 180 bài 2026 lẫn 60 bài đầu):
+    - **61–66 — bối cảnh của vị trí**: tiếp quản việc từ consultancy (insourcing), quy trình phỏng vấn lộn xộn có nên nhận, làm hệ thống AI thuộc nhóm high-risk, data product owner vs ở lại kỹ thuật, vào công ty vừa thất bại một dự án AI, khi có ứng viên nội bộ bị loại để nhận mình.
+    - **67–72 — vai trò và phát triển**: vai trò kèm cặp junior/career changer, data team trực thuộc IT/tài chính/bộ phận kinh doanh/CDO, vị trí sống bằng trợ cấp hoặc một khách hàng, vào giữa lúc di trú nền tảng, là người senior nhất nhóm, đổi chuyên môn trong AI.
+    - **73–78 — tổ chức và con người**: công ty không có HR/ondernemingsraad, làm người data thứ hai, công ty bán AI vs dùng AI nội bộ, chuyển nội bộ vs đổi công ty, nhóm mang nợ kỹ thuật nặng, quản lý vừa tuyển mình thì nghỉ.
+    - **79–80 — tiền và địa lý**: thưởng biến đổi vs lương cố định (kèm phần LTIP/thưởng hoãn), nhận việc ở nước ngoài hay ở lại Hà Lan (kèm phương án thứ ba: remote cho chủ nước ngoài).
+  - **Ngày đăng**: bài 61–62 = 2026-12-31; từ bài 63 lịch tràn sang **2027-01-01 → 2027-01-09**, vẫn 2 bài/ngày (bài n = ngày ⌈(n−62)/2⌉ của tháng 01/2027). Đã sửa `check_decision.py` để kiểm đúng quy tắc hai đoạn này.
+  - **Thực thể pháp lý/thị trường dùng trong đợt này**: AI Act (Annex III, phân biệt **provider vs deployer**), GDPR/DPIA, Autoriteit Persoonsgegevens, Wet op de ondernemingsraden (ngưỡng 50 nhân viên), NVP Sollicitatiecode, CAO và **job family quyết định thang lương**, ketenregeling, transitievergoeding, UWV, Verordening 883/2004, SVB/AOW, Wet beloningsbeleid financiële ondernemingen (trần thưởng khu vực tài chính), Pay Transparency Directive, Arbowet/Arbeidstijdenwet. Mọi mốc chưa chắc chắn (thuế, lịch áp dụng AI Act, trần thưởng, quy định uitzend) đều kèm khuyến nghị kiểm tra nguồn chính thức.
+  - **Kiểm định tự động cuối**: **80/80 file, 0 lỗi** — JSON-LD hợp lệ, `@id` khớp slug, headline khớp Title/H1, `Buyer Stage: Decision`, ngày đúng lịch mới, đủ 5 FAQ và đúng thứ tự Real example → Key Takeaways → Where to Start → FAQ, CTA có link, 0 slug trùng; thân bài (không tính schema + FAQ) **1.820–2.159 từ, trung bình 1.939**; 0 tiêu đề trùng trong cùng bài.
+  - **Nhịp làm việc**: mỗi lượt chạy kiểm định cho các bài cũ **song song** với viết 2 bài mới; các bài mới thường ra 1.450–1.750 từ nên luôn cần một vòng bổ sung mục thực chất (bối cảnh pháp lý, cách đọc tin tuyển dụng, cách thương lượng, 90 ngày đầu) — đây là chi phí cố định của mỗi đợt, không phải sự cố.
+  - **Chưa làm**: bài social cho cụm 80 bài, ảnh minh hoạ, rà soát thủ công từng thực thể. Chưa commit.
+
+## 2026-09-16 (Chiều)
+
+- **14:40**: Viết **60 bài stage Decision** cho [`onlyaijobs/extra-2026/extra-1-decision/`](file:///Users/duyle/sickn33/onlyaijobs/extra-2026/extra-1-decision/), 100% tiếng Anh, nhắm người tìm việc:
+  - **Quyết định về CTA (đã hỏi lại người dùng)**: yêu cầu ban đầu là "để user đăng ký sử dụng gói"; theo [`onlyaijobs_info.md`](file:///Users/duyle/sickn33/onlyaijobs/onlyaijobs_info.md) §2.1 site **không có gói trả phí cho người tìm việc**, nên đã dừng hỏi và người dùng chọn **CTA miễn phí**. Cả 60 bài kết bằng "Browse current AI, machine learning and data jobs by category and distance, **free and without an account**" → `onlyaijobs.eu/jobs`; không bịa gói, giá, hay tính năng chưa có (email alerts, trang chi tiết, hồ sơ/apply on-site).
+  - **Phân bổ chủ đề** (không trùng slug với 180 bài 2026 đã có):
+    - **01–06 — chọn kênh tìm việc**: OnlyAIJobs vs LinkedIn/Indeed, board chuyên biệt vs tổng hợp, board vs agency, tìm theo thành phố vs theo khoảng cách, trang tuyển dụng của công ty.
+    - **07–13 — lúc ứng tuyển**: đạt 60% yêu cầu, nhận biết tin thật/còn hiệu lực, ứng tuyển ngay hay chờ, số đơn mỗi tuần, junior ở công ty phi công nghệ, hợp đồng xác định thời hạn, follow-up.
+    - **14–27 — offer và điều kiện**: counteroffer, chọn giữa hai offer, học tiếng Hà Lan, internship/traineeship, nghỉ trong năm đầu, chuyển vùng, chấp nhận lương thấp hơn, chuyên sâu vs tổng quát, công vs tư, đàm phán khi đã công bố dải lương, báo với sếp hiện tại, assessment, trực on-call, ứng tuyển lại sau khi bị từ chối.
+    - **28–46 — bản chất công việc và rủi ro**: equity startup, lo ngại đạo đức, chức danh vs phạm vi, thử việc/freelance trước, công ty đang bị mua lại, screening an ninh, nhận offer chưa gặp team, dữ liệu chưa tồn tại, bảo trì mô hình cũ, sếp phi kỹ thuật, stack lạ, đi công tác nhiều, thay người nghỉ đột ngột, quản lý vs kỹ thuật, data engineering thuê ngoài, non-compete, prototype GenAI, lĩnh vực nhàm chán, ngành suy giảm.
+    - **47–58 — hình thức làm việc và hợp đồng**: remote toàn phần, chủ nước ngoài không có pháp nhân NL, consultancy vs in-house, tuần 4 ngày, làm data một mình, hợp đồng qua uitzend/payroll, nền tảng AI mua sẵn, vai trò BI khi muốn làm ML, scale-up vs doanh nghiệp lớn, PhD vs ngành, team khác múi giờ, offer có deadline khi còn quy trình khác.
+    - **59–60 — quyết định tổng**: có nên đổi việc vào lúc này, và khung ra quyết định cuối cùng.
+  - **Cấu trúc mỗi bài**: frontmatter → H1 → schema `Article` (`inLanguage: en`, `about`, 10 `mentions`) → thân bài có bảng/kịch bản → **Real example** (một tình huống có địa danh cụ thể) → Key Takeaways → Where to Start (CTA có link) → 5 FAQ "(Scenario: …)" + schema `FAQPage`.
+  - **Ngày đăng**: 2026-12-01 → 2026-12-30, 2 bài/ngày (bài n = ngày ⌈n/2⌉).
+  - **Nguyên tắc nội dung**: không bịa số liệu hay mức lương; thực thể pháp lý Hà Lan/EU dùng đúng vai trò (Waadi, WAB, Wet flexibel werken, Arbowet/Arbeidstijdenwet, Rome I, Verordening 883/2004, ketenregeling, transitievergoeding, UWV, IND, NVP Sollicitatiecode, CAO NU, AI Act, GDPR, Pay Transparency Directive); mốc chưa chắc chắn đều kèm khuyến nghị kiểm tra nguồn chính thức (thuế, 30%-regeling, thuiswerkvergoeding, các phase uitzend).
+  - **Kiểm định tự động cuối**: **60/60 file, 0 lỗi** — JSON-LD hợp lệ, `@id` khớp slug, headline khớp Title/H1, `Buyer Stage: Decision`, ngày đúng lịch, đủ 5 FAQ và đúng thứ tự Key Takeaways → Where to Start → FAQ, CTA có link, 0 slug trùng với 2026 đã có; thân bài (không tính schema + FAQ) **1.828–2.159 từ, trung bình 1.949**. Checker còn chặn mọi cách diễn đạt gợi ý gói trả phí (`subscription`, `paid plan`, `pricing page`, `€ <số>`, `/month`, `upgrade to`).
+  - **Sửa trong lúc làm**: checker báo nhầm cụm "applications per month" ở bài 10 → sửa regex thay vì sửa bài; hầu hết các đợt viết đều ngắn hơn chuẩn nên bổ sung mục thực chất (bối cảnh pháp lý, câu hỏi phỏng vấn, cách xử lý sau khi nhận việc) rồi chạy lại; bài 60 bị thêm nhầm một tiêu đề `## Real example` trùng khi chèn đoạn, đã gỡ.
+  - **Chưa làm**: bài social cho cụm này, ảnh minh hoạ, rà soát thủ công từng thực thể. Chưa commit.
+
+## 2026-09-16 (Sáng)
+
+- **09:12**: Viết **60 bài social** cho [`onlyaijobs/2026/november-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/november-2026/), mỗi bài viết tháng 11 có đúng 1 bài social (`<số>-<slug>-social.md`), 100% tiếng Anh:
+  - **Nội dung**: mỗi bài có câu mở đầu, 2–3 đoạn nêu thực thể và ý chính của bài gốc (không bịa số liệu, không nêu mức lương cụ thể), và một câu chốt.
+  - **Icon**: áp dụng ngay quy ước đã dùng cho 120 bài tháng 9–10 — mỗi đoạn mở đầu bằng 1 icon, 5–7 icon/bài, không lặp icon trong cùng bài; 💡 mở đầu · ✅ câu chốt · 🔎 "Browse current jobs" · 📢 "Post your vacancy" · ✉️ "Get in touch" · 📖 "Read the full story"; đoạn thân bài chọn icon theo chủ đề.
+  - **CTA theo persona**: ứng viên (01–40, 56–60) → `onlyaijobs.eu/jobs`; nhà tuyển dụng (41–50) → "first listing free: info@onlyaijobs.eu"; tổ chức vùng (51–55) → "Get in touch: info@onlyaijobs.eu".
+  - **Kiểm định tự động**: 60/60 bài social khớp 1-1 với bài viết (không thiếu, không mồ côi); link "Read the full story" khớp slug bài gốc; đúng CTA theo persona; dòng hashtag bắt đầu bằng `#OnlyAIJobs`; mọi đoạn (trừ hashtag) đều có icon và không lặp icon trong bài; độ dài **123–157 từ, trung bình 139** (chuẩn 70–200).
+  - **Sửa trong lúc kiểm định**: bài 39 lặp icon ✅ (đổi 1 icon thành 📋); bài 47 và 50 dùng ⏱️ nằm ngoài dải icon mà script và bộ icon tháng 9–10 dùng, đã đổi thành 🕒 cho đồng bộ.
+  - **Trạng thái**: thư mục `november-2026/` nay có 120 tệp (60 bài + 60 social). Chưa commit.
+
 ## 2026-09-15 (Sáng)
 
 - **11:25**: Viết mới **60 bài chuyên sâu chuẩn SEO/GEO-entity** (không tính FAQ) cho [`onlyaijobs/2026/november-2026/`](file:///Users/duyle/sickn33/onlyaijobs/2026/november-2026/), 100% tiếng Anh, theo đúng khung bài tháng 9–10:
