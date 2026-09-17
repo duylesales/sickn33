@@ -145,6 +145,16 @@ Most of what makes this work is within a manager's gift and costs almost nothing
 
 If several of these requests meet resistance, that is useful information about how much the team has thought about working with international colleagues — which is the thing you were trying to find out.
 
+## If You Are Also New to the Country
+
+Being the only international in a team is one situation; arriving in the Netherlands at the same time is a heavier one, and it is worth separating the two.
+
+In the first months your colleagues are also your main source of practical knowledge — how registration with the municipality works, what the health insurance obligation means, which bank account arrangements are normal, how the housing market behaves. In a team where several people have been through it, that knowledge is freely available. In a team where nobody has, every question requires explanation from someone who has never had to think about it.
+
+Ask what relocation support exists and whether anyone in the organisation has handled it before. Larger employers often have a process and an adviser; smaller ones may offer help that is genuine and improvised. Either is workable if you know which it is.
+
+And give the two adjustments separate timelines in your own mind. Professional settling takes a few months; settling in a country takes longer, and confusing the two makes people conclude the job is wrong when what is actually hard is everything around it.
+
 ## Real example
 
 ### A data scientist in Enschede who asked how long the last one stayed

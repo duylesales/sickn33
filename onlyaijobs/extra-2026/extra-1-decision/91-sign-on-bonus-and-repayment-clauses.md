@@ -132,6 +132,24 @@ And if the employer refuses every amendment while insisting the role is attracti
 - The clause is vague about amounts, triggers or calculation.
 - The employer resists any discussion of it at all.
 
+## Retention Payments Are a Different Animal
+
+Sign-on money is paid to get you through the door. Retention money is paid to keep you somewhere you might otherwise leave, and it appears in specific circumstances: an acquisition, a platform migration, a regulatory programme, or the run-up to a company sale.
+
+The structure is usually simple — an amount payable on a future date if you are still employed — and the details decide whether it is worth anything.
+
+**What counts as "still employed".** Employed on the date, or employed and not under notice? Many arrangements exclude anyone who has resigned, which means handing in your notice a week early can cost the entire amount.
+
+**What happens if the employer ends the contract.** A well-drafted arrangement pays out on redundancy or termination by the employer; a poorly drafted one does not, which turns the payment into a one-sided bet.
+
+**Whether it is contractual.** A retention amount described in a conversation is not a retention arrangement. Ask for the document.
+
+**Timing and tax.** These amounts are taxed as income when paid, which can land awkwardly, and the treatment of a payment spanning a transaction is worth checking with an adviser.
+
+**What you are being asked to give up.** A retention payment is compensation for staying through a period you might not otherwise choose — a reorganisation, an integration, a stressful migration. Judge the amount against that, not against your salary.
+
+The negotiation points are ordinary: payment on employer-initiated termination, a clear definition of the qualifying date, and where possible, staged payments rather than a single cliff. Employers who are serious about keeping people through a transition usually agree to all three, because the alternative is losing the person before the date.
+
 ## Real example
 
 ### An engineer in Eindhoven who asked for a sliding scale

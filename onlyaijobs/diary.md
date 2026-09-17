@@ -1,5 +1,22 @@
 # Diary
 
+## 2026-09-17 (Sáng)
+
+- **10:30**: Viết tiếp **20 bài Decision (81–100)** cho [`onlyaijobs/extra-2026/extra-1-decision/`](file:///Users/duyle/sickn33/onlyaijobs/extra-2026/extra-1-decision/), nâng cụm này lên **100 bài**. Giữ nguyên chuẩn và **CTA miễn phí** (không có gói trả phí cho người tìm việc).
+  - **Phân bổ chủ đề** (không trùng slug với 180 bài 2026 lẫn 80 bài trước):
+    - **81–86 — tin tuyển dụng và bản chất công việc**: tin không công bố dải lương, vai trò bắt buộc có mặt tại chỗ mỗi ngày, làm hệ thống AI giám sát chính nhân viên công ty, công ty bị điều tra/vi phạm dữ liệu, team nói tiếng Anh nhưng dữ liệu là tiếng Hà Lan, thừa kế một mô hình mình cho là sai.
+    - **87–92 — tổ chức và điều khoản**: gia nhập tổ chức đang bị điều tra, là người nước ngoài duy nhất trong team, vai trò nặng phần gán nhãn dữ liệu, công ty muốn tự huấn luyện mô hình riêng, thưởng ký hợp đồng kèm điều khoản hoàn trả, thời hạn báo trước dài.
+    - **93–98 — vị trí trong tổ chức**: tooling nội bộ vs sản phẩm cho khách hàng, team tuyển rất nhanh, xe lease vs lương cao hơn, điều khoản thử việc, tooling phân tích cũ (SAS/SPSS/Access), startup có nhà sáng lập phi kỹ thuật.
+    - **99–100 — nhịp công việc và hậu quyết định**: công việc theo mùa cao điểm, và bài chốt: khi công việc không đúng như đã hứa thì làm gì.
+  - **Ngày đăng**: **2027-01-10 → 2027-01-19**, 2 bài/ngày (bài n = ngày ⌈(n−62)/2⌉ của tháng 01/2027).
+  - **Thực thể pháp lý/thị trường dùng trong đợt này**: Pay Transparency Directive (thông tin lương trước phỏng vấn, không hỏi lịch sử lương), AI Act (Art. 5 cấm suy đoán cảm xúc nơi làm việc, Annex III việc làm/quản lý lao động, phân biệt provider–deployer), WOR art. 27 (quyền **chấp thuận** của OR với hệ thống giám sát nhân sự), Autoriteit Persoonsgegevens, Wet bescherming klokkenluiders, studiekostenbeding + Richtlijn (EU) 2019/1152, art. 7:672 BW (opzegtermijn, gấp đôi phía chủ), art. 7:652 BW (proeftijd: 0 / 1 / 2 tháng theo loại hợp đồng), bijtelling xe lease, mobiliteitsbudget, Arbeidstijdenwet, overgang van onderneming. Mọi con số biến động (thuế, bijtelling, trần thưởng, mốc AI Act) đều kèm khuyến nghị kiểm tra nguồn chính thức.
+  - **Kiểm định tự động cuối**: **100/100 file, 0 lỗi**; đánh số liên tục 1–100; thân bài (không tính schema + FAQ) **1.819–2.159 từ, trung bình 1.930** (riêng cụm 81–100 trung bình 1.895); 0 slug trùng; 0 tiêu đề trùng trong cùng bài.
+  - **Ba sự cố và cách xử lý**:
+    - `check_decision.py` đọc số bài bằng 2 ký tự đầu tên file → **bài 100 bị hiểu là bài 10** (sai ngày, sai slug). Đã đổi sang regex `(\d+)-(.+)`; cũng đã bổ sung quy tắc ngày hai đoạn (≤62 → 2026-12, ≥63 → 2027-01).
+    - Bài 82 bị checker bắt từ `subscription` (quy tắc chặn ngôn ngữ gói trả phí). Đây là cảnh báo đúng nên **sửa bài** ("public transport subscription" → "public transport pass"), không nới regex.
+    - Khi chèn mục mới vào bài 97, mình vô tình thêm một tiêu đề `## Real example` trùng và đặt sai chỗ (đúng lỗi từng mắc ở bài 60). Đã gỡ và xác nhận lại bằng script.
+  - **Chưa làm**: bài social cho cụm 100 bài, ảnh minh hoạ, rà soát thủ công từng thực thể. Đã commit và push.
+
 ## 2026-09-16 (Tối)
 
 - **20:05**: Viết tiếp **20 bài Decision (61–80)** cho [`onlyaijobs/extra-2026/extra-1-decision/`](file:///Users/duyle/sickn33/onlyaijobs/extra-2026/extra-1-decision/), nâng cụm này lên **80 bài**. Giữ nguyên chuẩn và **CTA miễn phí** như 60 bài đầu (không có gói trả phí cho người tìm việc).

@@ -688,3 +688,6 @@
   - **Dọn dẹp triệt để:** Xóa bỏ 68 file social mồ côi bị lệch slug từ các lần chạy trước; đưa thư mục về đúng cấu trúc chuẩn **180 file markdown** (60 bài viết gốc + 60 bài social EN + 60 bài social NL).
   - **Kiểm toán tự động:** Đạt 100% pass (60/60 tên founder khớp, 60/60 chi phí & timeline khớp, 60/60 kết quả định lượng khớp, 0 câu chuyển ý trùng lặp, 0 link lỗi).
   - Lưu trữ master script đồng bộ tại [`launchstudio/sys/sync_all_social.py`](file:///Users/duyle/sickn33/launchstudio/sys/sync_all_social.py).
+- **10:30 - 12:10**: Viết tiếp và hoàn thiện **20 bài Decision (81–100)** cho [`onlyaijobs/extra-2026/extra-1-decision/`](file:///Users/duyle/sickn33/onlyaijobs/extra-2026/extra-1-decision/), nâng cụm này lên đủ **100 bài**:
+  - Tuân thủ đầy đủ cấu trúc 5 FAQ + JSON-LD `FAQPage` schema, CTA miễn phí cho người tìm việc, các quy định pháp lý EU/Hà Lan (Pay Transparency Directive, AI Act, WOR art. 27, Wet bescherming klokkenluiders, art. 7:672 BW, art. 7:652 BW).
+  - Kiểm tra 100/100 file đạt chuẩn, 0 lỗi schema. Đã commit và push đồng bộ lên GitHub.

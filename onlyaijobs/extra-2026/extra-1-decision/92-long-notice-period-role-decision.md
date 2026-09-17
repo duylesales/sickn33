@@ -122,6 +122,36 @@ Most employers will wait for a candidate they want, and some cannot, especially 
 - You are in a phase where you may need to move quickly — a partner's relocation, a visa consideration, an uncertain employer.
 - The employer will not discuss it at all, which tells you how other reasonable requests will be received.
 
+## What the Notice Period Is Actually Like
+
+Candidates think about notice as a delay. In practice it is a distinct phase of employment with its own dynamics, and knowing them makes a long period easier to manage.
+
+**Your influence ends the day you resign.** Decisions about the roadmap, the architecture and the team are made without you from that moment, whatever anyone says. Expect it rather than resenting it.
+
+**The counteroffer usually arrives within days.** Decide in advance what you would do, because the conversation is much easier when the answer already exists. Accepting a counteroffer after resigning changes how you are seen regardless of the outcome.
+
+**Handover is the work.** In a data role, the valuable handover is not a document listing systems: it is the undocumented knowledge — why a threshold is set where it is, which source cannot be trusted, what breaks in December. Write that down. It is the most professional thing you can leave behind, and it is remembered.
+
+**Access and permissions get removed early in some organisations,** particularly in finance and the public sector. If you need access to complete a handover, say so at the start rather than discovering it in week six.
+
+**Holiday balances are usually settled,** either taken during the period or paid out. Agree which, in writing, early — it is the most common source of friction at the end.
+
+**Garden leave happens.** Some employers prefer you not to work the period. If that is a possibility, ask how it would be handled, since being paid not to work is pleasant and being told on the day is not.
+
+**Leave well, deliberately.** The Dutch data community is small, your manager will be somewhere else in three years, and the way you spend your last two months is what colleagues remember about working with you.
+
+## If Your Current Notice Is Already Long
+
+If you are reading this because you are trapped rather than because you are signing, a few things help.
+
+**Start searching earlier than feels necessary.** With three months' notice, a process that takes two months means five months from first conversation to first day. Plan backwards from when you want to start.
+
+**Say it in the first conversation, not the last.** Employers can plan around a known constraint and dislike discovering one at the offer stage.
+
+**Ask your employer for an earlier release when you resign.** Many agree, particularly if the handover is complete and no replacement is waiting. The worst outcome of asking is the notice period you already had.
+
+**Offer something in exchange.** A documented handover, a training session for whoever takes over, availability for questions for a few weeks afterwards. Employers release people more readily when the risk of doing so is visibly lower.
+
 ## Real example
 
 ### A data engineer in Utrecht who read the clause before signing

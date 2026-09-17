@@ -129,6 +129,52 @@ This is not an argument against internal roles — platform teams in organisatio
 - You enjoy experimentation and measurement.
 - You have platform experience already and want the other half.
 
+## How Internal Platforms Actually Fail
+
+If you take internal work, it helps to know the failure modes, because they are consistent across organisations and largely avoidable.
+
+**Built without users.** A team designs the platform it would want, launches it, and discovers that the analysts continue exporting to spreadsheets because the new tool does not fit how they actually work. The remedy is unglamorous: sit with three users for a day before designing anything.
+
+**Adoption assumed rather than earned.** Internal tools have captive users in theory and competitors in practice — the old process, the spreadsheet, the direct database connection someone still has. A platform nobody switches to is a cost with no benefit.
+
+**Too general, too early.** Building for every future case produces something that serves no present one. Platforms that succeed usually start by solving one team's problem completely and then generalising.
+
+**No product ownership.** Without someone deciding what the platform is for, it becomes a request queue, and request queues have no architecture.
+
+**Migration never finishes.** The new platform runs alongside the old one indefinitely, doubling maintenance and halving the benefit. Decommissioning is the deliverable, not the launch.
+
+**Invisible success.** Nothing breaks, so nobody notices, and the team is reduced in the next cost exercise.
+
+## What to Build in Your First Year
+
+If you join an internal team, three things produce disproportionate returns.
+
+**Make something faster that people do daily.** Not the grand platform: the twenty-minute wait that six analysts hit every morning. It buys the goodwill that funds everything else.
+
+**Instrument your own platform.** Usage, failures, time-to-value for a new data source. You cannot argue for a platform whose use you cannot describe.
+
+**Retire something.** Every legacy pipeline or report you remove is permanent cost reduction, and it is the easiest thing to explain to a budget holder.
+
+Do those three and the visibility problem largely solves itself, because you will have numbers, users who advocate for you and a line in the cost report that moved in the right direction.
+
+## The Hybrid That Often Beats Both
+
+There is a third arrangement worth looking for, and it is increasingly common in Dutch organisations: platform work embedded in a product or business team rather than in a central function.
+
+You build the pipelines, tooling and deployment capability for one domain — claims, planning, energy trading, patient flow — sitting with the people who use the output. In practice this combines most of the advantages of each option.
+
+**You keep the engineering depth,** because you are still building infrastructure rather than dashboards.
+
+**You gain the visibility,** because your work is attached to a business outcome that somebody reports on.
+
+**Adoption is not a separate problem,** since the users are in the room.
+
+**Your budget usually sits with the business unit,** which makes it easier to defend than a central cost line.
+
+The trade-off is reach: you solve one domain's problems well rather than the organisation's problems partially, and you may duplicate what another unit built. Some organisations manage that with a small central team setting standards and embedded engineers doing the work, which is the arrangement most people find satisfying.
+
+When comparing offers, ask where the role sits and who the users are. An embedded platform role is frequently advertised with the same wording as a central one and is a different job.
+
 ## Real example
 
 ### An engineer in Groningen who made the platform measurable

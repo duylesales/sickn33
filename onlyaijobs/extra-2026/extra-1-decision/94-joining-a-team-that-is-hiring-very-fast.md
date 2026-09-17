@@ -137,6 +137,22 @@ Find the person who has been there longest and spend time with them. In a team w
 
 And expect the first quarter to feel chaotic. In a team that is doubling, it is chaotic for everyone, including the people who look settled.
 
+## The Hiring Process Itself Is Evidence
+
+A team that is hiring quickly reveals a great deal through how it hires, and you experience that process directly before you have to decide anything.
+
+**Did the technical conversation have substance?** Teams under pressure to fill seats sometimes lower the bar without admitting it. If your technical interview was superficial, ask yourself who else passed through it — your future colleagues were assessed the same way.
+
+**Who interviewed you?** If you met only the manager and a recruiter, the team has no say in who joins it, which usually means onboarding is nobody's responsibility either.
+
+**How fast was the process?** Speed is often good and can indicate desperation. A process that moved from application to offer in five days, for a role that requires judgement, is worth a question about how many people they still need to hire.
+
+**Was the role described consistently?** In fast-scaling teams, roles are frequently created faster than they are defined, and inconsistent descriptions predict a first quarter spent negotiating what your job is.
+
+**Did anyone push back on you?** A good sign, oddly. Interviewers who probe and disagree are protecting a standard; interviewers who agree with everything are filling a seat.
+
+Ask, directly: how many people have you hired this year, and how many did you turn down? The ratio tells you whether a standard is being held, and managers who are proud of their hiring answer it immediately.
+
 ## Real example
 
 ### An engineer in Amsterdam who asked to speak to the last person hired

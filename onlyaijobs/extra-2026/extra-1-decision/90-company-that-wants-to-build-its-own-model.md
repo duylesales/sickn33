@@ -146,6 +146,14 @@ The question employers answer least well is what the model's life looks like onc
 
 Ask who owns the model in year three and what that team looks like. An organisation that has thought about this is serious; one that has not is planning a build rather than a capability — and a build that nobody maintains is the most expensive way to arrive back where you started.
 
+## Open Weights Changed the Calculation
+
+One reason these projects have become plausible for ordinary organisations is that capable open-weights models exist to build on. That shifts the question from "can we train a model" to "which base model do we adapt, and under what licence".
+
+Ask which base model is intended and what its licence permits — terms vary considerably, and some restrict commercial use, redistribution or particular applications. An organisation that has not read the licence of the model it plans to build its strategy on has not yet started the project.
+
+Ask also what happens when a better base model appears, because one will. A plan that assumes a single adaptation, once, tends to be overtaken within a year; a plan built around a repeatable pipeline — corpus, adaptation, evaluation — survives the next release and is the version worth joining.
+
 ## Real example
 
 ### An engineer in Amsterdam who asked about compute in the first interview
