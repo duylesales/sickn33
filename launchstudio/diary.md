@@ -3,6 +3,58 @@
 ## 2026
 
 ### Tháng 09
+#### Ngày 17
+
+- **11:20**: Viết mới **40 bài tiếng Anh** cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) (thư mục trước đó trống, không có kế hoạch từ khoá sẵn nên tự lên đề tài từ bộ keyword được giao):
+  - **Bộ từ khoá gốc**: Lovable, Bolt, Cursor, Replit, lovable hosting, lovable supabase, lovable custom domain, lovable seo, lovable developer, lovable expert, vibe coding developer, lovable security, supabase security, ai app security.
+  - **Phân bổ 40 chủ đề**:
+    - **01–06 — nền tảng & bề mặt**: nơi app Lovable thực sự chạy (preview vs production), custom domain (DNS/SSL/email/callback), mặc định của Lovable+Supabase, service role key lọt frontend, 5 lỗ hổng hay gặp, vì sao app Lovable không lên Google.
+    - **07–12 — người và công cụ**: thuê lovable developer, lovable expert vs freelancer tổng quát, vibe coding developer làm gì, Bolt vs Lovable (khoảng cách tới production), rời Replit về hạ tầng riêng, phần runtime mà Cursor không nhìn thấy.
+    - **13–20 — tiền, danh tính, dữ liệu**: thanh toán sau khi bấm Pay (webhook/đối soát/hoá đơn–VAT), session–role–admin flag, nơi để secrets, hiệu năng khi dữ liệu thật, restore test, rate limiting & chống lạm dụng, 7 câu hỏi privacy của khách NL, cookie banner & analytics.
+    - **21–30 — vận hành**: test cho app AI sinh, bàn giao codebase, PWA vs native, chi phí vận hành Lovable+Supabase, 4 dấu hiệu nên rời builder, email giao dịch (SPF/DKIM/DMARC), search, incident response cho founder một mình, thêm tính năng AI (prompt injection/validate output), upload file đúng cách.
+    - **31–40 — quy mô & khách doanh nghiệp**: xoá dữ liệu/erasure, đồng thời (lost update, double submit, race), công cụ support, app song ngữ NL–EN, checklist tuần trước go-live, job chạy nền âm thầm chết, cấp quyền cho cộng tác viên đầu tiên, tích hợp hệ thống của khách, security review thực tế gồm gì, và bài chốt: thứ tự đúng từ prototype → product.
+  - **Ngày đăng**: **2027-06-03 → 2027-07-12**, 1 bài/ngày, nối tiếp `extra-10-decision` (kết thúc 2027-06-02).
+  - **Cấu trúc**: theo đúng mẫu `extra-10` — frontmatter (Title/Keywords/Buyer Stage/Target Persona) → H1 → schema `Article` (author LaunchStudio, publisher Manifera, `@id` = `launchstudio.eu/en/blog/<slug>`) → thân bài → CTA vào `#packages`/`#contact` → `## Real example` (câu chuyện founder + quote + Cost & Timeline) → 5 FAQ + schema `FAQPage`.
+  - **Tuân thủ `launchstudio_info.md`**: mỗi bài nhắc **Manifera** và ít nhất 1 GEO-entity (Amsterdam/HCMC + thành phố NL của case study); chỉ dùng số liệu có trong brief (80% dự án AI không lên production, 45% code AI có lỗ hổng, €800–€7.500, €49/tháng, 11 năm, Vodafone/TNO/CFLW); luân phiên kiểu mở bài và CTA theo §8.3; không copy FAQ giữa các bài; persona trải đều A/B/C.
+  - **Kiểm định tự động** (`check_extra11.py` viết mới cho cụm này): **40/40 file, 0 lỗi** — JSON-LD hợp lệ và đúng `@type`/`@context`, `@id` khớp slug, publisher = Manifera, author = LaunchStudio, ngày đúng lịch 1 bài/ngày, đủ 5 `###` trong FAQ và 5 entity trong `FAQPage`, có CTA `launchstudio.eu/en/#…`, có nhắc Manifera trong thân bài; thân bài (không tính schema + FAQ) **1.827–2.051 từ, trung bình 1.909**; **0 slug trùng** với 1.325 slug đã có trong `2026/` và `2026-extra/`; 0 tiêu đề trùng trong cùng bài; 0 ký tự lạ.
+  - **Bốn sự cố và cách xử lý**:
+    - Bài 17: viết nhầm `"@type": "The Restore Test"` trong schema `Article`. Script lúc đó **không bắt được** vì chỉ đọc các trường con → đã sửa bài **và** siết script kiểm `@type`/`@context` cho cả cụm.
+    - Bộ lọc file của script loại trừ mọi tên chứa `dutch`, vô tình **bỏ qua bài 19** (`19-privacy-questions-**dutch**-customers-ask-ai-apps.md`) khiến nó báo 19 file thay vì 20 → đổi sang loại trừ đúng hậu tố `-dutch`/`_dutch`, giữ nguyên slug vì slug có giá trị SEO.
+    - Bài 33: lọt ký tự `記` trong đoạn vừa thêm → đã gỡ và bổ sung bước quét ký tự ngoài Latin cho toàn cụm.
+    - Nhịp cố định: bài mới luôn ra **1.400–1.700 từ**, nên mỗi đợt đều cần một vòng bổ sung mục thực chất (checklist vận hành, bối cảnh NL, cách thương lượng, 90 ngày đầu) — chi phí cố định của quy trình, không phải sự cố.
+  - **12:05 — sửa lại toàn bộ 40 title cho chuẩn SEO/GEO**: title ban đầu viết theo giọng biên tập nên **không chứa từ khoá chính** (ví dụ "Where Your Lovable App Actually Runs…"). Đã viết lại cả 40 title để từ khoá xuất hiện ngay trong title (`Lovable Hosting:`, `Lovable Custom Domain:`, `Supabase Security:`, `Lovable SEO:`, `AI App Security…`, `Vibe Coding Developer:`…), biến thể cấu trúc để không bị mẫu hoá theo §8.3. Mỗi title nằm ở **3 vị trí** (frontmatter `Title`, H1, `headline` trong schema) và script kiểm định bắt buộc cả ba khớp nhau → dùng script sửa đồng loạt thay vì sửa tay 120 chỗ. Kết quả: 40/40 bài đổi title thành công, kiểm định lại **0 lỗi**, 0 title trùng nhau, mỗi title chứa đúng từ khoá chính. **Slug/`@id` giữ nguyên** (phần lớn đã mang từ khoá sẵn); nếu muốn đồng bộ slug với title mới thì đó là một đợt riêng vì sẽ đổi tên file và URL.
+  - **14:30 — viết tiếp 20 bài (41–60)**, nâng cụm `extra-11-lovable=bolt-replit` lên **60 bài**. Rút kinh nghiệm đợt đầu: **title mang từ khoá ngay từ khi viết**, không phải sửa lại sau.
+    - **Lịch đăng**: **2027-07-13 → 2027-08-01**, 1 bài/ngày, nối tiếp bài 40.
+    - **Phân bổ chủ đề**: auth Supabase (social login/magic link/organisations), xử lý khi bị báo lỗ hổng bảo mật, 5 trang SEO mọi SaaS cần, Bolt → production, Cursor rules & context, checklist Replit trước khi có người dùng thật, Lovable hosting vs Vercel/Netlify, migration schema sau launch, edge functions và ranh giới tin cậy, custom domain nâng cao (subdomain/redirect/multi-brand), giá thuê lovable developer ở NL, cách brief–scope–verify với lovable expert, portfolio cho vibe coding developer, dependencies không do mình chọn, 2FA và khôi phục tài khoản, structured data & answer engines, realtime khi nào đáng dùng, uptime/SLA cam kết được gì, chọn Bolt/Cursor/Replit theo kiểu founder, và thuê ngoài hay tuyển in-house.
+    - **Kiểm định cuối**: **60/60 file, 0 lỗi**, đánh số liền 1–60; thân bài **1.811–2.047 từ, trung bình 1.910**; 0 slug trùng với 1.325 slug cũ; 0 tiêu đề trùng trong bài; 0 ký tự lạ; **20/20 title mới chứa từ khoá chính**, 0 title trùng, dài nhất 67 ký tự.
+  - **Đang làm tiếp**: bản tiếng Hà Lan (`*-dutch.md`), ảnh minh hoạ `_pic.png`. (Lưu ý tuân thủ không sửa checkmark `extra_content_inventory.md`).
+
+- **11:45**: Hoàn thành tạo trọn vẹn **120 bài social media (60 bài tiếng Anh `*-social.md` + 60 bài tiếng Hà Lan `*-social-dutch.md`)** cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) theo chuẩn xác phong cách, cấu trúc và định dạng của `extra-10-decision`:
+  - **Bản tiếng Anh (`[number]-[slug]-social.md`)**:
+    - Hook 🚨 đánh trúng vấn đề thực tế của founder/app tại các thành phố Hà Lan (Rotterdam, Amsterdam, Utrecht, Eindhoven, v.v.).
+    - Bối cảnh & cảnh báo hạ tầng 🧠.
+    - 4 rủi ro kỹ thuật ❌ (database connection pooling, lộ secret keys ở client-side, thiếu telemetry/backups, rate limit...).
+    - 4 giải pháp production hardening ✅ từ đội ngũ kỹ sư.
+    - Định vị giá trị LaunchStudio & bảo chứng năng lực 11+ năm enterprise software engineering từ Manifera.
+    - Kết quả chuyển đổi thực tế từ case study 🚀.
+    - CTA link chuẩn xác: `https://launchstudio.eu/en/blog/[slug]`.
+    - 6 hashtags chiến lược: `#Lovable #VibeCoding #... #LaunchStudio #Manifera`.
+  - **Bản tiếng Hà Lan (`[number]-[slug]-social-dutch.md`)**:
+    - Emoji nhận diện theo chủ đề + hook đặt vấn đề trực diện cho Dutch founders & tech leaders.
+    - Đoạn phân tích bối cảnh rủi ro khi đưa ứng dụng Lovable/Bolt/Replit vào vận hành thực tế.
+    - `Waar het vaak misgaat bij [chủ đề]:` với 4 gạch đầu dòng ❌.
+    - `Wat u wél moet inrichten vóór [mục tiêu]:` với 4 gạch đầu dòng ✅.
+    - Khối giải pháp chuyên sâu từ LaunchStudio & Manifera.
+    - Kết quả đo lường được 💡.
+    - CTA link tiếng Hà Lan chuẩn xác: `https://launchstudio.eu/nl/blog/[slug]`.
+    - 6 hashtags tiếng Hà Lan tương ứng.
+  - **Kiểm định tự động toàn diện**: Script kiểm toán độc lập quét qua 180 file trong thư mục:
+    - 60 bài viết gốc tiếng Anh.
+    - 60 bài social tiếng Anh (`*-social.md`).
+    - 60 bài social tiếng Hà Lan (`*-social-dutch.md`).
+    - **100% Pass**: 0 lỗi thiếu file, 0 link sai slug, 0 bài thiếu hashtags, 0 bài bị cắt ngắn.
+    - Toàn bộ 4 script tạo sinh tự động được lưu trữ tại `launchstudio/sys/` (`generate_batch_01_15.py`, `generate_batch_16_30.py`, `generate_batch_31_45.py`, `generate_batch_46_60.py`).
+
 #### Ngày 10
 
 - **10:25**: Hoàn thành việc **KIỂM TOÁN TOÀN DIỆN, DỊCH BỔ SUNG 1:1, ĐỒNG BỘ H2, CHUẨN HÓA 5 FAQS VÀ SCHEMA JSON-LD 100% HOÀN HẢO CHO TOÀN BỘ 500 BÀI VIẾT TIẾNG HÀ LAN TRONG THƯ MỤC `launchstudio/2026/` (NGOẠI TRỪ `july-2026/`)**:
