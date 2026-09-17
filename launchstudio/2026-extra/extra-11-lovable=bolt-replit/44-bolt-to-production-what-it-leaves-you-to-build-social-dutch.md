@@ -1,25 +1,23 @@
-⚡ Werkt uw Bolt-prototype vlekkeloos in de browser, maar raakt uw app na deployment alle reserveringen kwijt zodra de server opnieuw opstart?
+⚡ Rens Kuiper bouwde Tafelvrij in Bolt: een reserveringsapp voor 4 restaurants in Maastricht. De mobiele interface zag er prachtig uit. Maar in productie mislukten aanbetalingen door ontbrekende webhooks, raakten reserveringen kwijt tijdens de vrijdagavond-piek en bleek de database alleen in de browser te draaien. 😳
 
-Bolt genereert razendsnel full-stack code in WebContainers. Maar een prototype omzetten naar echte productie vraagt om een persistente cloud-infrastructuur.
+Bolt bouwt razendsnel prototypes in browser-containers, maar laat de hele productie-backend aan u over. Waar het misgaat:
 
-Waar het vaak misgaat bij de overgang van Bolt naar productie:
+❌ Bolt's tijdelijke WebContainer aanzien voor een permanente, schaalbare cloud-backend
+❌ Geen gehoste productiedatabase, back-upregime of Europese datasoevereiniteit hebben
+❌ Ontbrekende webhook-handlers waardoor betaalstatussen niet worden verwerkt
+❌ Geen deployment pipeline, staging-omgeving of monitoring hebben voor live beheer
 
-❌ Data opslaan in een lokaal SQLite-bestand dat verdwijnt zodra een serverless container herstart
-❌ Geen persistente PostgreSQL-database met connection pooling of automatische back-ups
-❌ Ontbrekende omgevingsvariabelen en geheimen op live platforms zoals Vercel of Render
-❌ Geen geautomatiseerde CI/CD-straat, waardoor updates handmatig en foutgevoelig worden doorgevoerd
+Wat u wél moet inrichten vóór u ontdekt dat uw prototype niet kan draaien zonder backend:
 
-Wat u wél moet inrichten vóór uw restaurant- of winkelklanten data kwijtraken:
+✅ Bolt-code exporteren naar een zelfstandige Next.js codebase in een eigen GitHub repository
+✅ Een dedicated PostgreSQL database inrichten binnen de EU met Point-in-Time Recovery
+✅ Idempotente webhook-koppelingen bouwen voor foutloze verwerking van aanbetalingen
+✅ Professionele CI/CD-straten en realtime uptime-monitoring activeren
 
-✅ Migratie van in-memory data naar een volwaardige beheerde PostgreSQL-cloud (Supabase/Neon)
-✅ Ontkoppeling van bestandsuploads naar externe cloud-opslag (S3) in plaats van lokale schijf
-✅ Inrichten van een professionele Git-deploystraat met staging- en productiescheiding
-✅ Koppelen van transactionele e-mail, eigen domein-DNS en 24/7 storingsmonitoring
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, voorzien we uw Bolt-prototype van de robuuste backend en infrastructuur die nodig zijn voor echte zakelijke transacties.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, bouwen we de ontbrekende productielaag onder uw Bolt-prototype zodat uw app betrouwbaar blijft draaien.
+💡 Het resultaat: Rens Kuiper liet Tafelvrij binnen 9 werkdagen productieklaar maken voor € 3.900 (datamodel, hosting-pipeline, betaalwebhooks, back-ups). De 4 restaurants draaiden een topweekend zonder één verloren reservering en verwerkten direct 38 aanbetalingen. 🚀
 
-💡 Zo migreerde restaurant-app Tafelvrij in Maastricht binnen 6 dagen naar managed PostgreSQL en draaide een druk weekend zonder één verloren boeking.
+👉 Lees wat u moet bouwen om een Bolt-prototype veilig naar productie te brengen: https://launchstudio.eu/nl/blog/bolt-to-production-what-it-leaves-you-to-build
 
-👉 Lees wat Bolt overlaat aan infrastructureel werk vóórdat u veilig live kunt: https://launchstudio.eu/nl/blog/bolt-to-production-what-it-leaves-you-to-build
-
-#Bolt #WebContainers #CloudInfrastructuur #PostgreSQL #LaunchStudio #Manifera
+#Bolt #VibeCoding #SoftwareOntwikkeling #WebApps #LaunchStudio #Manifera

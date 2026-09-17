@@ -1,25 +1,23 @@
-🔐 Kan een gebruiker admin-rechten krijgen door simpelweg `role: admin` in te stellen in zijn browser-DevTools?
+🔒 Marijn Kuipers bouwde DierZorg in Lovable voor 11 dierenklinieken rond Apeldoorn. Vlak voor een belangrijke samenwerking bleek uit een security audit dat medewerkers van Kliniek A patiëntendossiers en facturen van Kliniek B konden inzien door simpelweg een ID-parameter in de browser aan te passen. 😳
 
-Als uw AI-app autorisaties controleert op basis van client-side state in plaats van server-side databasepolicies, heeft u géén beveiliging maar een schijnvertoning.
+Inloggen is iets anders dan autorisatie. Waar het vaak misgaat bij gebruikersrollen en rechten in AI-apps:
 
-Waar het vaak misgaat bij gebruikersrollen en sessies in AI-apps:
+❌ Vertrouwen op een simpele `is_admin` boolean in een door gebruikers aanpasbaar profiel
+❌ Geen strikte scheiding tussen verschillende organisaties (multi-tenancy) op databaseniveau
+❌ Rollen opslaan in de browser-storage waar ze handmatig bewerkt kunnen worden
+❌ Geen actieve sessie-intrekking wanneer een medewerker uit dienst treedt of rechten verliest
 
-❌ Rollen (`isAdmin: true`) opslaan in localStorage of React-state zonder servervalidatie
-❌ Knoppen verbergen in de frontend in plaats van API-endpoints daadwerkelijk te vergrendelen
-❌ Gebrek aan strikte multi-tenant isolatie: gebruikers kunnen elkaars organisatiedata inzien
-❌ Sessies blijven oneindig actief, zelfs nadat een medewerker is verwijderd of het wachtwoord is gereset
+Wat u wél moet inrichten vóór u meerdere organisaties op één platform toelaat:
 
-Wat u wél moet inrichten vóór u gevoelige bedrijfsdata deelt:
+✅ Strikte multi-tenant Row Level Security afdwingen op basis van geverifieerd organisatielidmaatschap
+✅ Rollenstructuren en permissies vastleggen in beveiligde tabellen buiten het bereik van de frontend
+✅ Gebruikmaken van cryptografisch ondertekende custom JWT claims via server-side Edge Functions
+✅ Geautomatiseerde permissietests opnemen in uw deployment pipeline tegen datalekken
 
-✅ Strikte Row Level Security gebaseerd op cryptografisch gevalideerde server-tokens
-✅ Autorisatiechecks uitsluitend uitvoeren in de database of beveiligde Edge Functions
-✅ Dwingende organisatie-ID scheiding op elke query om data-lekkage tussen klanten uit te sluiten
-✅ Directe server-side sessie-intrekking en veilige refresh token rotatie
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we waterdichte multi-tenant autorisaties in zodat data tussen uw klanten 100% gescheiden blijft.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we waterdichte Multi-Tenant Role-Based Access Control (RBAC) in die elke data-overtreding onmogelijk maakt.
+💡 Het resultaat: Marijn Kuipers liet DierZorg binnen 9 werkdagen beveiligen voor € 3.700 (Launch Ready Package: rollenmodel, multi-tenancy, permissietests). Zes weken later tekende een keten van 9 praktijken na een vlekkeloze audit en draaien de tests automatisch bij elke deploy. 🚀
 
-💡 Zo haalde dierenartsenplatform DierZorg in Apeldoorn het contract binnen met een groep van 9 praktijken na een vlekkeloze security-audit.
+👉 Leer hoe u multi-tenant rechten en sessies in Supabase correct beveiligt: https://launchstudio.eu/nl/blog/sessions-roles-and-admin-flags-in-ai-built-apps
 
-👉 Lees hoe u rollen, sessies en admin-rechten waterdicht beveiligt: https://launchstudio.eu/nl/blog/sessions-roles-and-admin-flags-in-ai-built-apps
-
-#Supabase #Cybersecurity #RBAC #MultiTenant #LaunchStudio #Manifera
+#Supabase #Autorisatie #MultiTenancy #AVG #LaunchStudio #Manifera

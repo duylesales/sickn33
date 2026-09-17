@@ -1,25 +1,23 @@
-🔍 Kan een gebruiker andermans dossiers bekijken door één cijfer in de URL te veranderen? Bij AI-gebouwde prototypes is dit gat in 9 van de 10 gevallen aanwezig.
+🛡️ Ilse Kramer bouwde ScheldeScan in Lovable voor schade-experts rond Dordrecht. Schadefoto's van voertuigen bleken echter opgeslagen in een publieke bucket met opeenvolgende URL's, zonder rate limiting. Iedereen kon vertrouwelijke schaderapporten en privégegevens zo van het web plukken. 😳
 
-AI-generators bouwen interfaces die prachtig werken in demo's, maar vergeten server-side autorisatiegrenzen te dicteren.
+AI-generators bouwen snelle interfaces maar ontwerpen geen dreigingsmodellen. Waar het vaak misgaat:
 
-Waar het vaak misgaat bij beveiligingsgaten in AI-prototypes:
+❌ Onbeveiligde upload-endpoints die kwaadaardige scripts accepteren zonder server-validatie
+❌ Gevoelige bestanden en schaderapporten in openbare storage buckets met voorspelbare URL's
+❌ Client-side autorisatiechecks (`isAdmin`) die eenvoudig te omzeilen zijn in de browser
+❌ Geen rate limiting op formulieren, waardoor endpoints kwetsbaar zijn voor scraping
 
-❌ IDOR-kwetsbaarheden: numerieke ID's in URL's geven ongeautoriseerd toegang tot vreemde dossiers
-❌ Validaties draaien puur in de browser en worden eenvoudig omzeild via DevTools
-❌ Public storage buckets maken gevoelige geüploade foto's en pdf's voor iedereen vindbaar
-❌ Formulieren zonder rate-limiting zijn vatbaar voor geautomatiseerde spam en scraping
+Wat u wél moet inrichten vóór u zakelijke klanten aansluit:
 
-Wat u wél moet inrichten vóór uw eerste zakelijke audit:
+✅ Server-side magic-byte validatie en bestandstype-verificatie bij alle uploads
+✅ Privé-opslag met kortlopende, cryptografisch ondertekende URL's (Signed URLs)
+✅ Autorisatie afdwingen in de database op basis van cryptografisch gevalideerde JWT-tokens
+✅ Integratie van slimme rate limiting en botbeveiliging op alle publieke endpoints
 
-✅ Strikte server-side autorisatie per record op basis van tenant-UUID's en sessiecontext
-✅ Waterdichte validatie van bedrijfslogica en prijzen in backend Edge Functions
-✅ Afgeschermde opslagbuckets met tijdelijke gesigneerde URL's (signed URLs)
-✅ Effectieve rate limiting en abuse protection op alle publieke endpoints
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, voeren we diepgaande security audits uit om kwetsbaarheden te dichten vóórdat kwaadwillenden ze vinden.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, voeren we grondige security reviews uit die uw AI-prototype beschermen tegen pijnlijke datalekken.
+💡 Het resultaat: Ilse Kramer liet ScheldeScan binnen 7 werkdagen beveiligen voor € 3.200 (Launch Ready Package: access control, upload hardening, rate limiting). Vijf weken later doorstond het platform vlekkeloos de IT-veiligheidstoets van een grote verzekeraar. 🚀
 
-💡 Zo doorstond schade-expertiseplatform ScheldeScan in Dordrecht de zware security-vragenlijst van een grote verzekeraar.
+👉 Lees de 5 gevaarlijkste beveiligingslekken in AI-gebouwde webapplicaties: https://launchstudio.eu/nl/blog/lovable-security-holes-found-in-review
 
-👉 Bekijk de 5 meest voorkomende beveiligingsfouten in AI-apps: https://launchstudio.eu/nl/blog/lovable-security-holes-found-in-review
-
-#Lovable #Cybersecurity #IDOR #Datalek #LaunchStudio #Manifera
+#Cybersecurity #Lovable #VibeCoding #Beveiliging #LaunchStudio #Manifera

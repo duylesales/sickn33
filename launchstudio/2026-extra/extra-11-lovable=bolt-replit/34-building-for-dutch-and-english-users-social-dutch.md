@@ -1,25 +1,23 @@
-🌍 Is uw app vertaald naar het Nederlands, maar toont de kalender Amerikaanse datumnotaties (03/04)? Voor u het weet staan patiënten in april op de stoep in plaats van maart.
+🇳🇱 Lotte Verhoeven bouwde Praktijkplanner in Lovable voor 60 zorgpraktijken in Noord-Brabant. De app mengde Nederlands en Engels, data stonden op zijn Amerikaans (MM/DD/JJJJ) en facturen bevatten geen Nederlandse btw-vermeldingen — waardoor patiënten op de verkeerde dag verschenen en boekhouders facturen afkeurden. 😳
 
-Internationalisering (i18n) is veel meer dan tekstjes vertalen. Datumnotaties, komma's versus punten en e-mailtemplates zorgen vaak voor grote verwarring.
+Meertaligheid is meer dan tekst vertalen; het vraagt om lokale datum-, valuta- en belastingformaten. Waar het misgaat:
 
-Waar het vaak misgaat bij tweetalige apps (Nederlands en Engels):
+❌ Teksten hardcoderen in componenten waardoor vertalingen versnipperd en incompleet raken
+❌ Amerikaanse datumformaten tonen waardoor Nederlandse gebruikers afspraken missen
+❌ Facturen genereren zonder verplichte KvK-nummers, btw-specificaties of 'btw-verlegd' teksten
+❌ Automatische mails in het Engels versturen naar Nederlandse gebruikers door verkeerde triggers
 
-❌ Verwarrende datumnotaties (MM/DD/YYYY vs DD-MM-YYYY) die leiden tot verkeerde afspraken
-❌ Decimale komma's (€ 12,50) die formuliervalidaties laten crashen omdat de code een punt verwacht
-❌ Bevestigingsmails die standaard in het Engels worden verstuurd naar Nederlandstalige klanten
-❌ Ontbrekende hreflang-tags waardoor Google de verkeerde taalversie toont in zoekresultaten
+Wat u wél moet inrichten vóór taal- en datumverwarring leidt tot weglopende klanten:
 
-Wat u wél moet inrichten vóór internationale en Nederlandse gebruikers in de war raken:
+✅ Alle teksten extraheren naar gestructureerde vertaalbestanden via moderne i18n-frameworks
+✅ Datums, valuta en getallen strikt formatteren volgens de Nederlandse `nl-NL` standaard
+✅ Facturen dynamisch laten voldoen aan alle eisen van de Nederlandse Belastingdienst
+✅ Taalvoorkeuren van gebruikers opslaan in het profiel voor consistente e-mailcommunicatie
 
-✅ Cultuurbewuste datumformattering met uitgeschreven maandnamen ('14 apr 2026') ter voorkoming van fouten
-✅ Robuuste getalparsing met `Intl.NumberFormat` die zowel punten als komma's naadloos accepteert
-✅ Taalvoorkeur opslaan in het gebruikersprofiel en transactionele mails dynamisch lokaliseren
-✅ Nette subpad-routering (`/nl/` en `/en/`) met correcte canonieke en hreflang-structuren
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we meertalige platformen zo in dat ze naadloos aansluiten op zowel de Nederlandse markt als internationale expansie.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we tweetalige applicaties in die zowel voor expats als Nederlandse gebruikers vlekkeloos aanvoelen.
+💡 Het resultaat: Lotte Verhoeven liet Praktijkplanner binnen 7 werkdagen tweetalig inrichten voor € 3.250 (i18n, locale formatting, Nederlandse facturatie). Foutieve afspraken daalden naar nul, facturen voldeden aan alle fiscale eisen en twee twijfelende praktijken tekenden alsnog bij. 🚀
 
-💡 Zo verdwenen verkeerde afspraakdata bij Praktijkplanner in Eindhoven als sneeuw voor de zon en verdrievoudigden de expat-boekingen.
+👉 Lees hoe u uw webapplicatie vlekkeloos tweetalig (NL/EN) inricht: https://launchstudio.eu/nl/blog/building-for-dutch-and-english-users
 
-👉 Ontdek hoe u uw webapplicatie vlekkeloos tweetalig inricht voor de Nederlandse markt: https://launchstudio.eu/nl/blog/building-for-dutch-and-english-users
-
-#i18n #Lokalisatie #Meertalig #Lovable #LaunchStudio #Manifera
+#i18n #Lokalisatie #WebApps #NederlandseMarkt #LaunchStudio #Manifera

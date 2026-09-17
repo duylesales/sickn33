@@ -1,25 +1,23 @@
-🎟️ Ziet uw Cursor-code er perfect uit, maar worden dezelfde theaterstoelen of hotelkamers bij drukte dubbel verkocht?
+🎭 Wouter Bleeker bouwde Podiumkaart in Cursor voor theaters in Haarlem en Leiden. De code oogde perfect en doorstond unit tests. Maar toen de kaartverkoop startte, kwamen 42 transacties gelijktijdig binnen: zonder atomische database-locking werden stoelen dubbel verkocht, terwijl Wouter geen idee had door het ontbreken van runtime logging. 😳
 
-Cursor is een briljante code-assistent, maar heeft geen flauw benul van runtime-realiteit: database-vergrendelingen, netwerklatentie en gelijktijdige gebruikerspieken.
+Cursor ziet uw broncode, maar ziet niet wat er tijdens piekbelasting in runtime gebeurt. Waar het vaak misgaat:
 
-Waar het vaak misgaat bij de blinde vlekken van Cursor:
+❌ Cursor stelt nette code voor die onder gelijktijdige belasting gevaarlijke race conditions veroorzaakt
+❌ Ontbreken van runtime observability: geen centrale error tracking of performancemonitoring
+❌ Database-uitputting door het ontbreken van geconfigureerde connection pools
+❌ Haperende webhooks van betaalproviders die stilvallen zonder retry-mechanisme
 
-❌ Niet-atomaire controles ('eerst checken, dan wegschrijven') die leiden tot dubbele boekingen
-❌ Cursor ziet niet wat er gebeurt als een mobiele verbinding halverwege een betaling wegvalt
-❌ Ontbreken van database-level row locks (`FOR UPDATE`) bij schaarse voorraad of tickets
-❌ De aanname dat code die lokaal werkt, automatisch schaalt naar honderden gelijktijdige gebruikers
+Wat u wél moet inrichten vóór uw platform piekdrukte te verwerken krijgt:
 
-Wat u wél moet inrichten vóór uw platform onder druk bezwijkt:
+✅ Implementatie van atomische database-transacties en strikte concurrency controls
+✅ Inrichten van realtime foutmonitoring en directe alarmering bij haperende processen
+✅ Configuratie van database connection pooling om pieken betrouwbaar op te vangen
+✅ Bouw van idempotente webhook-handlers met automatische herpogingen bij storingen
 
-✅ Implementatie van database-level transacties en unieke constraints op reserveringen
-✅ Toepassen van optimistische of pessimistische locking bij kritieke voorraadmutaties
-✅ Grondige stresstests en latency-simulaties vóór grote ticketreleases of lanceringen
-✅ Architectuurcontrole door senior engineers op gedistribueerde foutafhandeling
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, wapenen we uw Cursor-codebase tegen onzichtbare runtime-fouten en piekbelastingen.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, beveiligen we uw applicatie tegen de verborgen runtime-gevaren die AI-editors niet kunnen detecteren.
+💡 Het resultaat: Wouter Bleeker liet Podiumkaart binnen 6 werkdagen herstructureren voor € 2.800 (transactie-rewrite, logging, load testing). Twee maanden later draaide het theater 11 uitverkochte voorstellingen met 0 dubbele boekingen en werd een provider-hapering al na 11 minuten automatisch gedetecteerd. 🚀
 
-💡 Zo draaide ticketplatform Podiumkaart in Haarlem elf uitverkochte voorstellingen achter elkaar zonder een enkele dubbele reservering.
+👉 Ontdek welke runtime-risico's verborgen zitten in uw Cursor-code: https://launchstudio.eu/nl/blog/what-cursor-cannot-see-runtime-half-of-your-app
 
-👉 Lees wat Cursor niet ziet over de runtime-helft van uw app: https://launchstudio.eu/nl/blog/what-cursor-cannot-see-runtime-half-of-your-app
-
-#Cursor #VibeCoding #RaceConditions #SoftwareKwaliteit #LaunchStudio #Manifera
+#Cursor #VibeCoding #Performance #SoftwareOntwikkeling #LaunchStudio #Manifera

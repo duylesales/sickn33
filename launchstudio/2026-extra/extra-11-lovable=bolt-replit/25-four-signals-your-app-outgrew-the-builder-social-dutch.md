@@ -1,25 +1,25 @@
-🚀 Loopt u vast in Lovable omdat nieuwe prompts telkens bestaande features slopen? Dan heeft uw applicatie het prototype-stadium ontgroeid.
+🚀 Emma Zwart runde Vakvraag voor 300 aannemers en inspecteurs in Gelderland. Toen een grote zakelijke klant enterprise Single Sign-On en Git-codebase-eigendom eiste, adviseerden consultants haar om haar Lovable-app weg te gooien en € 20.000 te reserveren voor een complete herbouw. 😳
 
-AI-bouwers zijn ongeëvenaard voor snelheid. Maar zodra enterprise-eisen (zoals SAML SSO of complexe workflows) opduiken, is een volwassen architectuur nodig.
+U hoeft uw AI-builder niet zomaar weg te gooien. Slim exporteren naar een eigen Git-repo combineert no-code snelheid met enterprise controle:
 
-Waar het vaak misgaat bij het ontgroeien van een AI-builder:
+Waar het vaak misgaat bij het moment van exporteren uit Lovable naar een eigen codebase:
 
-❌ Prompt-conflicten: een verzoek voor een nieuwe functie breekt onverwacht eerdere onderdelen
-❌ Zakelijke klanten eisen integraties (zoals Microsoft Entra SSO) die de builder niet ondersteunt
-❌ Achtergrondprocessen en bulk-taken lopen vast tegen de limieten van standaard no-code hosting
-❌ Angst om wijzigingen door te voeren omdat een veilige lokale testomgeving ontbreekt
+❌ Denken dat u uw werkende Lovable-app moet weggooien voor een dure € 20k rebuild
+❌ Aanlopen tegen platformlimieten bij complexe achtergrondtaken of enterprise SSO
+❌ Geen betrouwbare Git-sync workflow hebben tussen GitHub en de visual builder
+❌ Geadviseerd worden door bureaus die u willen opsluiten in maatwerkcode die u zelf niet meer kunt bewerken
 
-Wat u wél moet inrichten vóór uw groei volledig stagneert:
+Wat u wél moet inrichten vóór u onnodig tienduizenden euro's uitgeeft aan een complete herbouw:
 
-✅ De hosting en deployment loskoppelen naar een eigen pipeline met behoud van bewerkbaarheid in Lovable
-✅ Implementatie van zakelijke SSO-koppelingen en robuuste achtergrondtaken (background workers)
-✅ Modularisering van de codebase zodat features onafhankelijk van elkaar kunnen worden uitgebreid
-✅ Een hybride ontwikkelmodel: AI voor snelle UI-bouw, senior engineers voor de complexe kernlogica
+✅ Uw Lovable-project bidirectioneel synchroniseren met een eigen GitHub repository
+✅ Een zuivere export inrichten naar een standaard Next.js of Vite stack op eigen infrastructuur
+✅ Complexe zakelijke logica ontkoppelen naar microservices terwijl de UI in Lovable bewerkbaar blijft
+✅ 100% eigendom over intellectueel eigendom, deployment pipelines en hosting behouden
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, begeleiden we scale-ups bij de soepele overstap van prototype naar een enterprise-waardige software-architectuur.
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, begeleiden we founders bij de overstap van prototype naar een enterprise repository — met behoud van wendbaarheid.
 
-💡 Zo voldeed kennisplatform Vakvraag in Nijmegen binnen 5 weken aan alle enterprise-eisen en sloot haar grootste zakelijke contract ooit.
+💡 Het resultaat: Emma Zwart liet de repository-migratie en staging-pipeline binnen 8 werkdagen inrichten voor € 3.150. Het enterprise contract werd 5 weken later getekend en 14 maanden later past ze zelf nog steeds moeiteloos UI-elementen aan in Lovable. 🚀
 
-👉 Herken de 4 signalen dat uw app klaar is voor de volgende stap: https://launchstudio.eu/nl/blog/four-signals-your-app-outgrew-the-builder
+👉 Ontdek de 4 signalen dat het tijd is om uw Lovable-project naar eigen beheer te brengen: https://launchstudio.eu/nl/blog/four-signals-your-app-outgrew-the-builder
 
-#Lovable #SoftwareArchitectuur #ScaleUp #Enterprise #LaunchStudio #Manifera
+#Lovable #Git #SoftwareOntwikkeling #Codebase #LaunchStudio #Manifera

@@ -1,25 +1,23 @@
-⚡ Wordt uw Lovable-applicatie trager naarmate er meer data binnenkomt? Bij 1.000 records duurt een pagina vaak ineens 8 seconden.
+⚡ Fenna Hoekman bouwde Kookstudio in Zwolle voor kookworkshops en recepten. In demo's werkte alles snel. Maar toen 80 deelnemers tegelijk data opvroegen, liep de laadtijd op naar 9 seconden: ongeïndexeerde queries, trage joins en ongecomprimeerde 4MB foto's joegen het database-CPU-verbruik naar 85%. 😳
 
-AI-bouwers schrijven queries die vlot ogen bij 10 testitems, maar bij echte datahoeveelheden uw database-CPU naar 100% jagen.
+Een prototype test met 10 regels proefdata; productie draait op duizenden records. Waar het vaak misgaat bij datagroeipijnen:
 
-Waar het vaak misgaat bij prestatieproblemen in AI-apps:
+❌ Ontbrekende B-tree database-indexen waardoor bij elke klik een volledige table-scan plaatsvindt
+❌ De frontend haalt alle kolommen op (`SELECT *`) in plaats van gerichte, gepagineerde subsets
+❌ Grote foto's rechtstreeks laden zonder automatische WebP-compressie of thumbnails
+❌ N+1 query cascades in React-componenten die de database onnodig zwaar belasten
 
-❌ N+1 query-lussen die databaseverzoeken herhalen voor elk afzonderlijk lijstitem
-❌ Ontbrekende database-indexen op foreign keys en veelgebruikte filterkolommen
-❌ Ongeschaalde originele foto's van meerdere megabytes direct inladen in overzichtspagina's
-❌ Zware filter- en sorteerlogica uitvoeren in de browser in plaats van in de database
+Wat u wél moet inrichten vóór uw platform traag wordt voor betalende gebruikers:
 
-Wat u wél moet inrichten vóór uw gebruikers massaal afhaken:
+✅ Grondige analyse van trage queries en gerichte indexering op filterkolommen
+✅ Implementatie van snelle keyset-paginering en efficiënte server-side data-projecties
+✅ Automatische afbeeldingscompressie via CDN met WebP-formaat en caching
+✅ Query-optimalisatie via PostgreSQL views en geconsolideerde Edge RPC-functies
 
-✅ Gerichte B-tree database-indexen aanmaken op alle actieve filter- en koppelvelden
-✅ Query's consolideren met relationele joins en performante server-side views
-✅ Automatische afbeeldingscompressie en CDN-thumbnailgeneratie bij elke upload
-✅ Server-side paginering en indexering voor directe laadtijden onder 1 seconde
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, tunen we databases en assets zodat uw platform soepel blijft draaien bij duizenden gelijktijdige records.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, optimaliseren we uw database en queries zodat uw app razendsnel blijft schalen.
+💡 Het resultaat: Fenna Hoekman liet Kookstudio binnen 5 werkdagen optimaliseren voor € 2.200 (query-optimalisatie, indexen, CDN image pipeline). De laadtijd daalde van 9 seconden naar onder de 800ms en de databasebelasting kelderde van 85% naar onder de 12%. 🚀
 
-💡 Zo daalde de laadtijd van receptenplatform Kookstudio in Zwolle van 9 seconden naar minder dan 1 seconde op mobiel.
+👉 Lees hoe u uw Lovable- en Supabase-app voorbereidt op echte datavolumes: https://launchstudio.eu/nl/blog/where-time-goes-when-ai-built-apps-get-slow
 
-👉 Lees waar de laadtijd naartoe gaat in AI-apps en hoe u dit versnelt: https://launchstudio.eu/nl/blog/where-time-goes-when-ai-built-apps-get-slow
-
-#Lovable #WebPerformance #Supabase #Optimalisatie #LaunchStudio #Manifera
+#Performance #Supabase #Lovable #Database #LaunchStudio #Manifera

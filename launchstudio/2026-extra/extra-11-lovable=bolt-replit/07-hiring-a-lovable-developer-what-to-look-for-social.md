@@ -1,21 +1,21 @@
-🚨 Anouk built Rooster in Lovable and hired a freelancer to add complex features. Two weeks later, the freelancer had generated 4,000 lines of spaghetti prompts, broke existing shifts, and couldn't explain how the database constraints worked. 😳
+🚨 Anouk Peeters built Rooster, a shift-planning tool for hospitality venues in Breda, in Lovable. She paid a marketplace freelancer €6,500 to 'make it production ready'. The job took 11 weeks instead of 3, and the freelancer rebuilt the frontend in a custom framework she couldn't edit — destroying her ability to use Lovable. 😳
 
-Prompting an AI builder is not the same as software engineering. Here's what separates real Lovable developers from prompt hobbyists: 🧠
+Hiring a developer for an AI-generated codebase requires very different vetting than traditional software development. Here's what goes wrong: 🧠
 
-❌ Hiring freelancers who solve bugs by generating more code prompts, compounding technical debt
-❌ Candidates who don't understand relational databases, SQL transactions, or Row Level Security
-❌ Lack of version control discipline — editing directly in preview without Git branches or staging
-❌ No understanding of third-party API rate limits, error states, or idempotency
+❌ Hiring traditional coders who reflexively throw away your AI prototype and demand a €15k rebuild
+❌ Engaging developers with zero production hardening experience in Supabase, RLS, and auth
+❌ No escrow, no milestone deliverables, and zero verified client reference checks
+❌ Freelancers locking founders out of their own code by migrating away from accessible builder platforms
 
-✅ Test candidates on architectural debugging: asking what happens when a webhook fails or network drops
-✅ Require proof of database modeling proficiency and handwritten SQL migration experience
-✅ Mandate Git-based development workflows with pull requests and local preview verification
-✅ Verify their ability to transition an app from prototype tools to standalone production hosts
+✅ Start with a small, paid trial sprint (€250–€500) on a real production hardening task
+✅ Verify hands-on expertise in backend architecture: RLS, database pooling, and secret isolation
+✅ Require engineers to preserve your frontend workflow so you can continue editing in Lovable or Cursor
+✅ Demand documented deployment pipelines, runbooks, and strict codebase ownership from day one
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, our senior engineers bring architectural rigor to your AI build, ensuring your code remains clean, stable, and maintainable. 👥
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we harden your backend while preserving your frontend — keeping you 100% in control of your Lovable product. 👥
 
-Her result: Rooster went live in 19 business days with a clean codebase, allowing Anouk to confidently iterate on new features herself. 🚀
+Her result: Anouk Peeters switched to LaunchStudio starting with a €280 paid trial task, followed by a €3,400 Launch Ready Package live in 19 business days. She added two features herself in Lovable the following month at less than half the cost of the first disaster. 🚀
 
-👉 Read the essential questions you must ask before hiring a Lovable developer: https://launchstudio.eu/en/blog/hiring-a-lovable-developer-what-to-look-for
+👉 Learn how to properly evaluate and hire a Lovable specialist: https://launchstudio.eu/en/blog/hiring-a-lovable-developer-what-to-look-for
 
-#Lovable #Hiring #VibeCoding #TechRecruitment #LaunchStudio #Manifera
+#Lovable #VibeCoding #SoftwareEngineering #Hiring #LaunchStudio #Manifera

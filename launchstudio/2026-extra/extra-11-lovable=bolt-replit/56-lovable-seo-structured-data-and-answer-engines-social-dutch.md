@@ -1,25 +1,25 @@
-🤖 Vraagt een potentiële klant aan ChatGPT of Perplexity naar software in uw branche en noemt de AI alleen uw concurrenten? Zonder gestructureerde data bestaat u niet voor AI-zoekmachines.
+🤖 Marit Sluijter runde Vakwijzer in Lovable voor 14 opleidingsinstituten rond Apeldoorn. Wanneer potentiële klanten ChatGPT of Perplexity vroegen naar Vakwijzer, toonden AI-zoekmachines verouderde info van een failliete concurrent — omdat de app geen enkele gestructureerde JSON-LD schema-markup of machineleesbare entiteitsdata bevatte. 😳
 
-Moderne zoekmachines zijn 'Answer Engines'. Als uw website geen JSON-LD schema's en semantische HTML bevat, kunnen AI-modellen uw product niet citeren of aanbevelen.
+Traditionele SEO mikt op zoekwoorden; Answer Engine Optimization (AEO) richt zich op AI-kennisgrafieken. Hoe u AI-zoekmachines voedt:
 
-Waar het vaak misgaat bij structured data en AI-zoekmachines (AEO):
+Waar het vaak misgaat bij gestructureerde data (JSON-LD), Schema.org en AI Answer Engines (AEO):
 
-❌ Client-side pagina's die voor AI-crawlers leeg lijken omdat JavaScript niet direct wordt uitgevoerd
-❌ Het ontbreken van gestructureerde JSON-LD schema's (`SoftwareApplication`, `Organization`, `FAQPage`)
-❌ Vage marketingteksten gebruiken in plaats van heldere, feitelijke definities die AI direct kan citeren
-❌ Geen duidelijke entiteitskoppeling tussen uw merk, oprichters en vestigingsplaats op het web
+❌ Client-side apps serveren lege HTML-shells waar AI-zoekbots en crawlers geen chocola van kunnen maken
+❌ Het ontbreken van gestructureerde `JSON-LD` schema's (`SoftwareApplication`, `Organization`, `FAQPage`)
+❌ Inconsistente bedrijfsgegevens en prijzen waardoor taalmodellen verkeerde feiten hallucineren
+❌ Geen machineleesbare feature-overzichten of feitelijke entiteitsverwijzingen aanbieden
 
-Wat u wél moet inrichten vóór uw concurrenten alle AI-zoekaanvragen wegkapen:
+Wat u wél moet inrichten vóór AI-zoekmachines zoals ChatGPT en Perplexity uw merk verkeerd presenteren:
 
-✅ Gevalideerde JSON-LD structured data direct server-side injecteren in de broncode van uw pagina's
-✅ Heldere definitiezinnen en vergelijkingstabellen opnemen die AI-modellen direct kunnen overnemen
-✅ Een gestructureerde FAQ-sectie inrichten die rijke snippets en directe antwoorden in Google oplevert
-✅ Uw entiteit versterken door consistente koppelingen met officiële registers, LinkedIn en kvk-data
+✅ Pre-rendered HTML leveren met complete, geneste Schema.org JSON-LD scripts
+✅ `SoftwareApplication` markup implementeren met actuele prijzen, functionaliteiten en licenties
+✅ `FAQPage` schema toevoegen voor Google Rich Snippets en directe bronvermelding in AI-antwoorden
+✅ Entiteitsconsistentie testen en valideren via de Google Rich Results Test en Search Console
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, optimaliseren we uw applicatie voor zowel klassieke Google-SEO als moderne AI Answer Engines (Perplexity, SearchGPT).
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, optimaliseren we uw applicatie voor zowel Google als AI-zoekmachines zodat u altijd accuraat geciteerd wordt.
 
-💡 Zo werd adviesplatform Vakwijzer in Apeldoorn binnen 7 weken de nummer 1 aanbevolen oplossing in Perplexity en zag demo-aanvragen direct verdubbelen.
+💡 Het resultaat: Marit Sluijter liet Vakwijzer binnen 6 werkdagen optimaliseren voor € 2.400 (pre-rendering, gestructureerde data over alle paginatypes, entiteitsvalidatie). Binnen 7 weken stond Vakwijzer bovenaan in Google en Perplexity, met twee nieuwe zakelijke klanten die via AI-zoekmachines binnenkwamen. 🚀
 
-👉 Lees hoe u structured data inzet om geciteerd te worden door AI-zoekmachines: https://launchstudio.eu/nl/blog/lovable-seo-structured-data-and-answer-engines
+👉 Lees hoe u uw webapplicatie vindbaar maakt voor ChatGPT, Perplexity en Google: https://launchstudio.eu/nl/blog/lovable-seo-structured-data-and-answer-engines
 
-#AEO #SEO #StructuredData #AIZoekmachines #LaunchStudio #Manifera
+#SEO #AEO #Schema #JSONLD #LaunchStudio #Manifera

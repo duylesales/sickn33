@@ -1,21 +1,21 @@
-🚨 Tessa pitched Planbaar to a Dutch healthcare network. The meeting was electric. Then the compliance officer asked 7 questions about GDPR data residency, sub-processors, and AI training opt-outs — and Tessa couldn't answer any of them. 😳
+🚨 Tessa Blom built Planbaar to schedule home-care visits for healthcare teams in Deventer. Two care teams loved it informally. But when a larger regional care provider prepared to sign, their DPO sent a 19-question privacy assessment — and Tessa discovered her database was sitting in a US data center, lacked deletion workflows, and had zero access logging. 😳
 
-Dutch enterprise and B2B buyers don't buy promises; they demand a verifiable compliance dossier: 🧠
+Dutch enterprise and healthcare buyers take GDPR compliance seriously. Here are the questions that will block your sale: 🧠
 
-❌ Hosting customer data in US regions without Standard Contractual Clauses (SCCs) or DPA
-❌ Using AI APIs that retain prompt data for model retraining by default
-❌ No comprehensive sub-processor registry listing third-party analytics, hosting, and mail vendors
-❌ Lacking an automated workflow to process GDPR Article 17 'Right to Erasure' requests
+❌ Storing sensitive personal or health data in US cloud regions without European data sovereignty
+❌ No automated 'Right to be Forgotten' workflows to wipe customer data upon request
+❌ Zero read-access logging to answer 'who inspected which patient record and when'
+❌ Using sub-processors (analytics, email, AI) without valid Data Processing Agreements (Verwerkersovereenkomsten)
 
-✅ Pin all application databases and storage strictly to EU regions (Frankfurt or Amsterdam)
-✅ Execute zero-data-retention agreements with all LLM and third-party API providers
-✅ Prepare a turnkey Data Processing Agreement (DPA) and clear sub-processor disclosure page
-✅ Build structured GDPR data export and deletion workflows directly into your admin tool
+✅ Migrate databases and file storage strictly to EU regions (Amsterdam or Frankfurt)
+✅ Implement automated GDPR deletion and data export endpoints
+✅ Add immutable access audit logging for all sensitive personal records
+✅ Draft comprehensive Data Processing Agreements and sub-processor registries for enterprise review
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we build the compliance infrastructure that turns tough DPO reviews into signed contracts. 🇳🇱
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we prepare your software to breeze through demanding Dutch enterprise and healthcare privacy audits. 📋
 
-Her result: Planbaar passed the reassessment six weeks later and now closes B2B deals by including their compliance package upfront. 🚀
+Her result: Tessa Blom completed the Launch Ready Package in 12 business days for €4,200 (region migration, data path cleanup, retention/deletion, access logging, export). Planbaar passed the 19-question assessment six weeks later, closed the enterprise contract, and upgraded an existing client. 🚀
 
-👉 See the 7 privacy questions Dutch buyers ask before signing with an AI app: https://launchstudio.eu/en/blog/privacy-questions-dutch-customers-ask-ai-apps
+👉 Prepare your AI SaaS for the 7 privacy questions every Dutch buyer asks: https://launchstudio.eu/en/blog/privacy-questions-dutch-customers-ask-ai-apps
 
-#GDPR #AVG #Privacy #DataResidency #LaunchStudio #Manifera
+#GDPR #AVG #Privacy #HealthTech #LaunchStudio #Manifera

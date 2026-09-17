@@ -1,25 +1,23 @@
-🛡️ Kan een medewerker zijn eigen declaratie van € 800 goedkeuren door simpelweg `approved: true` mee te sturen naar uw Edge Function? Server-side code is niet automatisch veilig.
+🛡️ Bram Osinga bouwde Declaratie in Lovable voor onkostendeclaraties bij 7 accountantskantoren in Hilversum. Werknemers dienden declaraties in, kantooreigenaren keurden goed. Een audit wees echter uit dat de Supabase Edge Functions goedkeuringen verwerkten zonder verificatie van de afzender: medewerkers konden hun eigen declaraties goedkeuren door simpelweg een payload-parameter aan te passen. 😳
 
-Een serverless functie aanmaken is niet genoeg. Als de functie niet als eerste stap verifieert wie de aanvrager is en welke rol die heeft, staat de achterdeur wagenwijd open.
+Code verplaatsen naar een Edge Function maakt het pas veilig als u de server-side vertrouwensgrenzen strikt controleert. Waar het misgaat:
 
-Waar het vaak misgaat bij beveiliging van Supabase Edge Functions:
+❌ Denken dat Edge Functions automatisch veilig zijn zonder het inlogtoken (JWT) van de gebruiker te valideren
+❌ De almachtige `service_role` key gebruiken in functies zonder autorisatiechecks per organisatie
+❌ Ongevalideerde JSON-payloads van de browser klakkeloos vertrouwen en wegschrijven
+❌ Geen rate limiting toepassen waardoor gevoelige functies vatbaar zijn voor brute-force misbruik
 
-❌ Functies vertrouwen blind op parameters uit de HTTP-request payload zonder autorisatiecheck
-❌ Nalaten om het JWT-sessietoken van de aanroeper te valideren via `supabase.auth.getUser()`
-❌ De almachtige `service_role` key gebruiken in functies zonder te controleren of de gebruiker wel admin is
-❌ Geen CORS-beperkingen of rate limiting instellen op openbaar bereikbare serverless endpoints
+Wat u wél moet inrichten vóór gebruikers ongeoorloofd data manipuleren via de backend:
 
-Wat u wél moet inrichten vóór onbevoegden zichzelf beheerdersrechten toekennen:
+✅ Bij elke functie-aanroep cryptografisch verifiëren wie de ingelogde gebruiker is via het JWT-token
+✅ Database-acties strikt beperken tot de specifieke organisatie en rol van de geverifieerde gebruiker
+✅ Inkomende request-data strikt valideren via Zod-schema's vóór verwerking in de database
+✅ Strikte rate limiting en gestructureerde auditlogging activeren op alle publieke endpoints
 
-✅ Elke Edge Function laten starten met strikte cryptografische tokenvalidatie van de beller
-✅ Server-side controleren of het geverifieerde account de benodigde rechten bezit in de rollentabel
-✅ Het gebruik van de `service_role` key beperken tot strikt gevalideerde en gelogde handelingen
-✅ Strikte CORS-headers en rate limiting configureren op alle publieke API-aanroepen
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, controleren en beveiligen we server-side Edge Functions zodat uw zakelijke logica 100% fraudebestendig is.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, trekken we harde server-side beveiligingsgrenzen rond uw Edge Functions.
+💡 Het resultaat: Bram Osinga liet 6 Edge Functions binnen 5 werkdagen beveiligen voor € 2.300 (caller-verificatie, inputvalidatie, key scoping, rate limiting, logging). Het lek werd vóór de lancering gedicht en de controlerend accountant ontving een sluitende security-verklaring. 🚀
 
-💡 Zo dichtte declaratieplatform Declaratie in Hilversum een kritiek autorisatiegat vóór de officiële lancering en stelde accountants volledig gerust.
+👉 Lees hoe u Supabase Edge Functions waterdicht beveiligt tegen manipulatie: https://launchstudio.eu/nl/blog/supabase-security-edge-functions-and-boundaries
 
-👉 Ontdek waar de beveiligingsgrens hoort te liggen bij Supabase Edge Functions: https://launchstudio.eu/nl/blog/supabase-security-edge-functions-and-boundaries
-
-#Supabase #EdgeFunctions #Cybersecurity #Autorisatie #LaunchStudio #Manifera
+#Supabase #EdgeFunctions #Beveiliging #WebApps #LaunchStudio #Manifera

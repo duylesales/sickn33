@@ -1,21 +1,21 @@
-🚨 Joke's digital agency built a portal for an enterprise client using Lovable. On a Sunday night, an API token expired. The client called in panic — but there was no runbook, no architecture map, and nobody knew where secrets lived. 😳
+🚨 Bureau Nordkaap, a six-person digital studio in Leeuwarden led by Joke Hoekstra, delivered a custom membership platform for a regional cycling association using Bolt. The client was delighted. But when an out-of-hours server issue struck months later, the client had no runbooks, credentials were tied to an ex-employee's personal email, and nobody knew how to restart the worker jobs. 😳
 
-Delivering an AI codebase without an operational runbook is handing over a ticking time bomb. Here's what real handover requires: 🧠
+A codebase without handover documentation is a technical hostage situation. Here's what a professional handover requires: 🧠
 
-❌ Handing over GitHub repos without explaining database migrations, seed data, or RLS policies
-❌ Undocumented environment secrets scattered across developer laptops and third-party dashboards
-❌ No step-by-step incident runbook for rotating expired keys or rolling back bad deployments
-❌ Clients left stranded when simple operational tasks require calling the original builder
+❌ Third-party hosting and database accounts registered under freelancer personal emails instead of company domains
+❌ Zero architectural documentation explaining data models, background jobs, and API boundaries
+❌ Missing environment variable manifests and secret recovery documentation
+❌ Founders left without written operational runbooks for outages, backups, and routine maintenance
 
-✅ Provide a comprehensive architectural blueprint detailing data flows, services, and trust boundaries
-✅ Deliver an operational runbook with exact procedures for secrets rotation, backups, and restarts
-✅ Standardize local development environments using Docker and automated database seeding
-✅ Conduct a live handover session training the client's internal team on day-to-day operations
+✅ Transfer 100% of domain, cloud, and database accounts to verified client organization credentials
+✅ Produce clean architectural blueprints detailing schemas, integrations, and third-party dependencies
+✅ Document a comprehensive runbook for staging deployments, rollback procedures, and emergency restarts
+✅ Conduct a live recorded handover walkthrough validating that founders can operate the app independently
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we turn messy AI codebases into cleanly documented, maintainable assets ready for any engineering team. 📋
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we guarantee complete operational independence with structured handovers and clear runbooks. 📁
 
-Her result: Bureau Nordkaap deployed eleven subsequent projects with standard runbooks; three weekend incidents were resolved in under 20 minutes by client teams themselves. 🚀
+Her result: Joke Hoekstra commissioned LaunchStudio for a standardized handover pack across their builds for €1,400 in 3 business days (handover pack, accounts migration, runbooks). Across 11 subsequent client projects, all three out-of-hours incidents were resolved immediately by non-original developers following the runbook. 🚀
 
-👉 Discover what a professional handover package for an AI app must contain: https://launchstudio.eu/en/blog/handing-over-an-ai-built-codebase
+👉 Use our production handover checklist before making your final developer payment: https://launchstudio.eu/en/blog/handing-over-an-ai-built-codebase
 
-#CodeHandover #Lovable #SoftwareDocumentation #DevOps #LaunchStudio #Manifera
+#Codebase #Handover #DevOps #Startups #LaunchStudio #Manifera

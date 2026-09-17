@@ -1,21 +1,21 @@
-🚨 Sander hosted Leerlijn on Replit for 400 exam students. Then a regional school wanted to sign an enterprise pilot — until their DPO asked: 'Where are servers located, and why did the app take 30 seconds to wake up?' 😳
+🚨 Sander Vos ran Leerlijn, an exam preparation course platform for 600 secondary school students in Arnhem, entirely on Replit for eight months. When an educational partnership offered a major contract, their school privacy officer demanded SOC2/GDPR compliance, dedicated EU hosting, and strict access controls that Replit's shared container environment couldn't provide. 😳
 
-Replit is fantastic for rapid sandboxing, but commercial enterprise deals require real infrastructure control: 🧠
+Replit is incredible for prototyping and learning, but scaling a business demands dedicated cloud infrastructure: 🧠
 
-❌ Containers going to sleep on inactivity, causing 30-second cold start delays that alienate users
-❌ Local ephemeral storage: files uploaded to the container disappear when Replit restarts instances
-❌ US-based default server hosting without EU GDPR data transfer safeguards or SOC2 compliance
-❌ High pricing tiers when scaling compute and memory compared to standard cloud infrastructure
+❌ Shared runtime environments with unpredictable container cold starts and noisy-neighbor throttling
+❌ Database instances without automated Point-in-Time Recovery or enterprise backup guarantees
+❌ Non-EU data residency creating compliance blockers for Dutch institutions and schools
+❌ High platform lock-in making deployment pipelines and custom staging workflows impossible
 
-✅ Containerize the application with Docker and deploy to dedicated EU cloud infrastructure
-✅ Separate user uploads and static assets into S3/Supabase Storage with CDN caching
-✅ Migrate embedded SQLite databases to managed, pooled PostgreSQL with automated backups
-✅ Implement zero-downtime health checks and predictable auto-scaling
+✅ Migrate application code to dedicated Git repositories with automated CI/CD pipelines
+✅ Move relational data to a dedicated PostgreSQL database hosted in Frankfurt or Amsterdam
+✅ Implement strict secret rotation, environment segregation, and staging environments
+✅ Establish real-time uptime monitoring, error alerting, and verified disaster recovery runbooks
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we migrate Replit apps smoothly onto your own cloud infrastructure without losing momentum. 📦
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we execute seamless, zero-downtime infrastructure migrations from Replit to modern cloud stacks. 🚀
 
-His result: Leerlijn passed the school's privacy and infrastructure audit two weeks later, signing their first multi-school annual license. 🚀
+His result: Sander Vos completed the migration in 11 business days for €3,600 (database move to EU region, secrets rotation, deployment pipeline). The school's privacy officer approved the platform two weeks later, unlocking an institutional contract worth over four times the migration cost. 🚀
 
-👉 Learn how to move your Replit app to dedicated infrastructure safely: https://launchstudio.eu/en/blog/moving-a-replit-app-to-your-own-infrastructure
+👉 Plan your smooth migration from Replit to your own reliable cloud stack: https://launchstudio.eu/en/blog/moving-a-replit-app-to-your-own-infrastructure
 
-#Replit #CloudMigration #Docker #GDPR #LaunchStudio #Manifera
+#Replit #CloudMigration #DevOps #Infrastructure #LaunchStudio #Manifera

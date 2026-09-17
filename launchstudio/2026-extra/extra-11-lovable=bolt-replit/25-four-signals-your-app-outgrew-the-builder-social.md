@@ -1,21 +1,21 @@
-🚨 Emma ran Vakvraag on Lovable. When an enterprise client required a custom SSO integration and a complex multi-stage approval workflow, prompts started overwriting existing code, and updates stalled for weeks. 😳
+🚨 Emma Zwart's app, Vakvraag, matched small construction firms with independent inspectors across Gelderland (300 active firms). When an enterprise customer required custom Single Sign-On and enterprise Git compliance, consultants told Emma she had to discard her Lovable app entirely and budget €20,000 for a total rebuild. 😳
 
-AI builders are unmatched for zero-to-one velocity. But knowing when to separate the deployment pipeline is critical: 🧠
+You don't always need to discard your builder. Knowing how and when to export to your own Git repo preserves your speed: 🧠
 
-❌ Prompt thrashing: asking the AI to add a new complex feature breaks three existing workflows
-❌ Enterprise clients demanding custom Single Sign-On (SAML/Okta) or dedicated audit logs
-❌ Complex background workers and multi-stage workflows hitting the runtime limits of no-code platforms
-❌ Fear of editing code because nobody has a safe local development environment or Git staging branch
+❌ Assuming you must throw away your Lovable prototype and spend €20k+ on a ground-up rewrite
+❌ Hitting builder platform limitations around custom background jobs, complex binaries, or enterprise SSO
+❌ Lacking a clean Git sync workflow to manage code in GitHub while retaining builder iteration
+❌ Consultants pushing proprietary frameworks that lock you out of future no-code visual edits
 
-✅ Eject the deployment and hosting layer to dedicated infrastructure (Vercel/Docker) while keeping code editable
-✅ Implement enterprise-grade SSO and asynchronous task queues on standard cloud services
-✅ Structure a clean modular codebase where new features don't interfere with core business logic
-✅ Maintain a hybrid workflow: use AI for rapid feature iterations, and senior engineering for core plumbing
+✅ Sync your Lovable project bidirectionally with a private GitHub repository
+✅ Eject cleanly into a standard Next.js or Vite codebase deployed on independent infrastructure
+✅ Keep visual UI editing active in Lovable while moving complex business logic into external services
+✅ Retain 100% intellectual property, deployment control, and codebase portability
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help scaling startups graduate from builder limits to enterprise maturity smoothly. 🚀
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help founders transition from visual builders to enterprise repos without losing visual agility. 🚀
 
-Her result: Vakvraag moved to an enterprise-ready pipeline, signed the client contract in five weeks, and continued editing UI features in Lovable seamlessly. 🚀
+Her result: Emma Zwart completed the repository ownership and pipeline migration in 8 business days for €3,150 (repository ownership, build config, staging pipeline, region migration). She closed the enterprise contract 5 weeks later, and 14 months on, she still comfortably edits UI features in Lovable. 🚀
 
-👉 Identify the four clear signals that your app has outgrown its prototype builder: https://launchstudio.eu/en/blog/four-signals-your-app-outgrew-the-builder
+👉 Learn the 4 signs it's time to export from Lovable to your own codebase: https://launchstudio.eu/en/blog/four-signals-your-app-outgrew-the-builder
 
-#Lovable #SoftwareArchitecture #ScaleUp #EnterpriseSaaS #LaunchStudio #Manifera
+#Lovable #Git #SoftwareArchitecture #Nextjs #LaunchStudio #Manifera

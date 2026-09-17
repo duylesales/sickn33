@@ -1,25 +1,23 @@
-🔐 Geeft u een externe freelancer toegang tot uw Supabase-project? Pas op: 4 van de 5 oprichters vergeten na afloop de super-admin rechten weer in te trekken.
+👥 Nadine Peters runde Kliniekagenda in Lovable voor 11 privéklinieken in Breda met patiëntendossiers en afspraken. In twee jaar tijd werkte ze met vier freelancers — waarbij ze productiewachtwoorden en API-sleutels via Slack deelde zonder deze ooit in te trekken na afloop van de opdracht. 😳
 
-Een hoofdwachtwoord delen via WhatsApp of Slack is vragen om datalekken. Professioneel toegangsbeheer vereist strikte scheiding van rechten.
+Productiewachtwoorden delen met externe krachten is de snelste route naar een datalek. Waar het misgaat bij developer access:
 
-Waar het vaak misgaat bij toegangsbeheer voor externe ontwikkelaars:
+❌ Externe krachten direct toegang geven tot de live productiedatabase met echte patiëntgegevens
+❌ Beheerderswachtwoorden en API-sleutels als platte tekst delen via chatkanalen
+❌ Geen sleutelrotatie of toegangsintrekking uitvoeren zodra een freelancer klaar is
+❌ Geen auditlogs bijhouden van wie welke wijzigingen in de database of codebase heeft gedaan
 
-❌ Gedeelde accounts gebruiken in plaats van persoonlijke, traceerbare inloggegevens met 2FA
-❌ Volledige database-eigendomsrechten geven aan iemand die alleen een knopje in de frontend hoeft te stijlen
-❌ Freelancers rechtstreeks laten werken op de live productie-database met echte klantdata
-❌ Geen gestructureerd offboarding-proces: verlopen accounts blijven maandenlang actief
+Wat u wél moet inrichten vóór een ex-medewerker of gelekt account uw platform in gevaar brengt:
 
-Wat u wél moet inrichten vóór een ex-medewerker of gehackte laptop uw data lekt:
+✅ Een aparte staging-omgeving inrichten met uitsluitend geanonimiseerde testdata
+✅ Gedetailleerde, rolgebaseerde Git-rechten toekennen zonder direct eigenaarschap te delen
+✅ Professionele password managers inzetten met tijdgebonden en intrekbare deellinks
+✅ Een vast offboarding-protocol hanteren met automatische sleutelrotatie na elk project
 
-✅ Toepassen van het 'Least Privilege'-principe: alleen toegang geven tot wat strikt noodzakelijk is
-✅ Lokale ontwikkelomgevingen inrichten met fictieve testdata in plaats van echte persoonsgegevens
-✅ Verplichte tweetrapsverificatie (2FA) afdwingen op alle Git-, database- en cloudaccounts
-✅ Een formeel offboarding-stappenplan hanteren dat toegangsrechten direct bij afronding intrekt
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we veilige ontwikkelstraten in zodat externe krachten snel kunnen bouwen zónder ooit bij uw gevoelige klantdata te kunnen.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we veilige ontwikkelstraten in zodat u zorgeloos kunt samenwerken met externe specialisten.
+💡 Het resultaat: Nadine Peters liet de toegangsbeveiliging van Kliniekagenda binnen 6 werkdagen saneren voor € 2.700 (accountscheiding, sleutelrotatie, staging met testdata, auditlogs). De klinieken ontvingen een sluitend beveiligingsrapport en het protocol is al tweemaal vlekkeloos toegepast. 🚀
 
-💡 Zo saneerde medisch platform Kliniekagenda in Breda haar toegangslijsten en doorstond de strenge privacy-audit van een ziekenhuisgroep.
+👉 Lees hoe u externe ontwikkelaars veilig toegang geeft tot uw project: https://launchstudio.eu/nl/blog/giving-access-to-your-first-collaborator
 
-👉 Lees hoe u externe ontwikkelaars veilig toegang geeft tot uw AI-applicatie: https://launchstudio.eu/nl/blog/giving-access-to-your-first-collaborator
-
-#Toegangsbeheer #Cybersecurity #AVG #DevOps #LaunchStudio #Manifera
+#Beveiliging #Toegangsbeheer #AVG #DevOps #LaunchStudio #Manifera

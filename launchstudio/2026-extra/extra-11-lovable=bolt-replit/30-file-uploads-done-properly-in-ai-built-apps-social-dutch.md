@@ -1,25 +1,23 @@
-📁 Uploaden gebruikers foto's of documenten in uw app? Pas op: onbewerkte foto's bevatten vaak exacte EXIF-gps-coördinaten van het woonadres van uw gebruikers.
+🖼️ Ravi Mehta bouwde Vintagehoek in Lovable voor vintage meubels in Haarlem. Verkopers fotografeerden meubels thuis. Uit een audit bleek echter dat foto's alle EXIF-metadata behielden — waardoor exacte GPS-huisadressen van verkopers openbaar waren — terwijl ongecomprimeerde 8MB foto's de cloudfactuur opdreven en mobiele browsers deden haperen. 😳
 
-Een uploadknop bouwen is simpel. Maar zonder metadata-stripping, MIME-validatie en bucket-beveiliging creëert u een levensgroot privacy- en beveiligingslek.
+Bestandsuploads zijn het gevaarlijkste aanvalsoppervlak voor privacylekken en onnodige cloudkosten. Waar het misgaat:
 
-Waar het vaak misgaat bij bestandsuploads in AI-apps:
+❌ Foto's uploaden zonder EXIF-data te wissen, waardoor exacte GPS-locaties van gebruikers op straat liggen
+❌ Zware 8MB smartphone-foto's opslaan waardoor mobiele gebruikers eindeloos moeten wachten
+❌ Alleen controleren op bestandsextensie (`.jpg`) in plaats van server-side verificatie van de binaire magic bytes
+❌ Documenten bewaren in openbare mappen in plaats van beveiligde opslag met tijdelijke links
 
-❌ Foto's opslaan inclusief EXIF-locatiedata, waardoor privégegevens op straat komen te liggen
-❌ Opslagbuckets staan op 'public', waardoor iedereen vertrouwelijke uploads direct kan downloaden
-❌ Alleen controleren op bestandsextensies (`.jpg`), waardoor kwaadaardige scripts geüpload kunnen worden
-❌ Originele 15MB bestanden direct serveren, wat leidt tot torenhoge opslag- en bandbreedtekosten
+Wat u wél moet inrichten vóór een datalek of torenhoge opslagrekening uw reputatie schaadt:
 
-Wat u wél moet inrichten vóór een datalek uw reputatie schaadt:
+✅ Automatisch alle privacygevoelige EXIF-locatiedata strippen direct bij het uploaden
+✅ Afbeeldingen server-side comprimeren en omzetten naar modern WebP-formaat
+✅ Server-side magic-byte verificatie afdwingen om kwaadaardige bestanden direct te blokkeren
+✅ Opslag strikt afschermen met kortlopende cryptografisch ondertekende URL's (Signed URLs)
 
-✅ Automatisch strippen van alle EXIF-metadata en converteren naar geoptimaliseerde WebP-bestanden
-✅ Opslagbuckets vergrendelen met Row Level Security en beveiligde tijdelijke downloadlinks (signed URLs)
-✅ Server-side validatie van bestandsinhoud (magic bytes) om malware betrouwbaar te weren
-✅ Geautomatiseerde thumbnail-generatie om laadtijden en bandbreedtekosten met 75% te verlagen
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we veilige upload-pipelines in die gebruikersprivacy beschermen en opslagkosten minimaliseren.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we veilige, privacybestendige bestandsuploads in die voldoen aan de hoogste security-eisen.
+💡 Het resultaat: Ravi Mehta liet de upload-infrastructuur van Vintagehoek binnen 6 werkdagen saneren voor € 2.650 (uploadvalidatie, EXIF-stripping, image pipeline, private storage). Opslag- en datakosten daalden met 75%, pagina's laden onder 1 seconde op mobiel en het GPS-datalek werd definitief gedicht. 🚀
 
-💡 Zo beschermde marktplaats Vintagehoek in Haarlem de thuislocaties van haar antiekhandelaren en bracht pagina-laadtijden terug naar onder 1 seconde.
+👉 Ontdek hoe u bestandsuploads in uw webapplicatie veilig en AVG-proof inricht: https://launchstudio.eu/nl/blog/file-uploads-done-properly-in-ai-built-apps
 
-👉 Ontdek hoe u bestandsuploads veilig en AVG-proof inricht in uw app: https://launchstudio.eu/nl/blog/file-uploads-done-properly-in-ai-built-apps
-
-#SupabaseStorage #Uploads #Cybersecurity #Privacy #LaunchStudio #Manifera
+#Uploads #Beveiliging #Privacy #WebApps #LaunchStudio #Manifera

@@ -1,25 +1,23 @@
-🔐 Beheert uw SaaS gevoelige data en kan iemand met één gestolen wachtwoord direct inloggen? Voor zakelijke software is tweetrapsverificatie (2FA) geen luxe meer, maar een absolute vereiste.
+🔐 Erik Vlietstra runde Salarisplan in Lovable voor 11 accountantskantoren in Zwolle met salarisdata en IBAN's. Toen de telefoon van een klantmedewerker werd gestolen, bleek Salarisplan geen 2FA-herstelflow of sessie-intrekking te hebben: Erik moest in allerijl handmatig in de database duiken uit angst voor manipulatie van salarisbetalingen. 😳
 
-Zonder 2FA en een waterdicht herstelprotocol omzeilen aanvallers uw beveiliging via social engineering of gecompromitteerde wachtwoordlijsten.
+Tweefactorauthenticatie is pas de helft van het werk; een zwakke herstelflow maakt 2FA nutteloos. Waar het misgaat:
 
-Waar het vaak misgaat bij tweetrapsverificatie en accountherstel:
+❌ Gevoelige financiële software aanbieden met alleen een wachtwoord zonder verplichte 2FA/MFA
+❌ Geen eenmalige cryptografische noodcodes verstrekken voor wanneer een telefoon zoekraakt
+❌ Het ontbreken van een 'Meld af op alle apparaten' knop bij diefstal of uitdiensttreding
+❌ Wachtwoord-resetlinks die via de mail worden gestuurd en zo de hele 2FA-beveiliging omzeilen
 
-❌ Vertrouwen op enkelvoudige wachtwoorden voor apps die financiële, salaris- of medische data beheren
-❌ Wachtwoorden handmatig resetten op basis van een simpel e-mailtje naar de helpdesk
-❌ Noodherstelcodes in platte tekst opslaan of gebruikers geen back-upcodes meegeven
-❌ Actieve sessies niet direct ongeldig maken op andere apparaten na een wachtwoordwijziging
+Wat u wél moet inrichten vóór een gestolen apparaat toegang geeft tot gevoelige klantdata:
 
-Wat u wél moet inrichten vóór een accountovername uw bedrijfsvoering lamlegt:
+✅ Verplichte TOTP tweefactorauthenticatie afdwingen via Supabase Auth MFA voor alle beheerders
+✅ Gehashte eenmalige backup-codes genereren en veilig laten opslaan bij activatie
+✅ Directe server-side intrekking van alle actieve sessies forceren bij een wachtwoordwijziging
+✅ Strikte beheerder-overrides inrichten met verplichte verificatie via het kantoor
 
-✅ Verplichte TOTP 2FA (via apps zoals Google Authenticator) afdwingen voor alle beheerders en gebruikers
-✅ Eenmalige, cryptografisch gehashte noodcodes genereren die gebruikers veilig kunnen bewaren
-✅ Een strikt verificatieprotocol hanteren bij handmatige accountherstelverzoeken
-✅ Directe en automatische beëindiging van alle actieve sessies zodra inloggegevens worden aangepast
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we bankwaardige 2FA- en herstelflows in zodat uw applicatie beschermd blijft tegen accountovernames.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we bankwaardige 2FA- en accountherstelstromen in die social engineering kansloos maken.
+💡 Het resultaat: Erik Vlietstra liet Salarisplan binnen 6 werkdagen beveiligen voor € 2.700 (noodcodes, sessiebeheer, 2FA-handhaving, beheerprocedures). Er trad nul financiële schade op, alle 11 kantoren bleven klant en latere toestelwissels werden soepel afgehandeld via self-service. 🚀
 
-💡 Zo voerde salarissoftware Salarisplan in Zwolle verplichte 2FA in voor alle aangesloten praktijken en haalde twee grote medische deals binnen.
+👉 Lees hoe u tweefactorauthenticatie en herstelprocedures waterdicht inricht: https://launchstudio.eu/nl/blog/ai-app-security-two-factor-and-account-recovery
 
-👉 Lees hoe u tweetrapsverificatie en veilig accountherstel inricht in uw app: https://launchstudio.eu/nl/blog/ai-app-security-two-factor-and-account-recovery
-
-#2FA #Cybersecurity #MFA #Accountbeveiliging #LaunchStudio #Manifera
+#2FA #MFA #Beveiliging #Supabase #LaunchStudio #Manifera

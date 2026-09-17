@@ -1,21 +1,21 @@
-🚨 Selma built Leerpunt on Replit for 11 corporate training cohorts. One Monday, the container restarted — and wiped two weeks of submitted assignments because files were stored in the sandbox's ephemeral filesystem. 😳
+🚨 Selma Bouhali built Leerpunt on Replit for 11 corporate training cohorts across Nijmegen. When an enterprise financial institution agreed to train 200 managers, their IT audit revealed the app ran on an ephemeral Replit container with shared resources, public environment variables, and zero verified database backup restores — threatening to kill the contract. 😳
 
-Replit is a playground, not a production cluster. Here's what founders must verify before real users arrive: 🧠
+Replit containers are built for rapid coding, not enterprise SLA compliance. Here's what you must harden before real users arrive: 🧠
 
-❌ Ephemeral storage: files uploaded to local container directories vanish whenever Replit restarts or sleeps
-❌ Container cold starts: apps taking 20-30 seconds to wake up after periods of inactivity, losing visitors
-❌ Defaulting to US servers with no GDPR data processing agreements or data sovereignty compliance
-❌ Lack of automated deployment rollbacks when code edits break the running instance
+❌ Running live customer traffic on ephemeral development containers with cold-start latency spikes
+❌ Storing sensitive API keys and database credentials in unencrypted `.env` files within shared containers
+❌ Zero automated database Point-in-Time Recovery or off-site backup snapshots
+❌ Lacking a dedicated staging environment, forcing untested bug fixes directly onto live learners
 
-✅ Decouple all user uploads to external persistent cloud storage (S3 or Supabase Storage)
-✅ Migrate local SQLite files to a managed, pooled PostgreSQL cloud database with automated backups
-✅ Deploy on dedicated EU production infrastructure with zero-sleep container guarantees
-✅ Implement Git-based branch deployments with automated health check verification
+✅ Migrate application code to a dedicated GitHub repository with automated CI/CD pipelines
+✅ Move relational data to a dedicated PostgreSQL database in Frankfurt or Amsterdam with daily verified backups
+✅ Enforce secret rotation and environment isolation via secure secret management vaults
+✅ Configure dedicated staging environments and real-time uptime monitoring with SMS alerts
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we transition Replit projects into durable, enterprise-compliant cloud applications. 📦
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we transition Replit MVPs into dedicated, enterprise-grade cloud environments that satisfy corporate procurement teams. 🚀
 
-Her result: Leerpunt migrated to managed cloud storage and dedicated EU hosting in 5 days, completing subsequent cohorts with zero data loss. 🚀
+Her result: Selma Bouhali completed the migration and infrastructure hardening in 7 business days for €3,100 (storage migration, database move with backups, access rules, secrets, deployment path). The bank's security team approved the platform within a week, securing Leerpunt's largest corporate contract. 🚀
 
-👉 Learn what you must check before sending real users to a Replit project: https://launchstudio.eu/en/blog/replit-projects-what-to-check-before-real-users
+👉 Audit your Replit project before launching to paying enterprise customers: https://launchstudio.eu/en/blog/replit-projects-what-to-check-before-real-users
 
-#Replit #CloudHosting #DataPersistence #DevOps #LaunchStudio #Manifera
+#Replit #CloudMigration #EnterpriseSaaS #DevOps #LaunchStudio #Manifera

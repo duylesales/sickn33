@@ -1,21 +1,21 @@
-🚨 Marloes ran Praktijkbeheer with €8,000 monthly recurring revenue. Her investors urged her to hire a full-time €85,000/year senior engineer immediately. She hesitated — and discovered that hiring too early would burn 90% of her runway on one salary. 😳
+🚨 Marloes Timmerman ran Praktijkbeheer in Lovable for 28 healthcare practices across Gelderland. Her investors urged her to immediately hire a full-time senior engineer for €85,000/year plus taxes. She hesitated — discovering that hiring in-house too early would burn 90% of her early runway on fixed overhead before new clinical modules were even validated. 😳
 
-Hiring a full-time engineer before product-market fit is the #1 startup killer. Here's when to outsource vs when to hire: 🧠
+Hiring a full-time senior engineer before achieving scalable retention is a top startup killer. Here's how to pace engineering talent: 🧠
 
-❌ Burning early cash flow on high fixed tech salaries before validating scalable customer retention
-❌ Hiring an in-house engineer who spends their first two months untangling undocumented AI prototype code
-❌ Founders becoming full-time technical managers instead of focusing on sales and customer acquisition
-❌ Relying on low-quality freelance platforms where developers disappear mid-project without accountability
+❌ Burning early runway on €85k+ fixed annual salaries before achieving repeatable unit economics
+❌ Hiring an engineer who spends months untangling undocumented AI prototype code without clear specs
+❌ Founders becoming full-time IT managers instead of focusing on customer acquisition and distribution
+❌ Relying on low-accountability marketplace freelancers who disappear when production bugs occur
 
-✅ Stage 1 (€0 - €15k MRR): Use a fractional engineering partner like LaunchStudio for flexible, high-leverage hardening
-✅ Stage 2 (€15k - €40k MRR): Refactor code, document architecture, and establish automated CI/CD and runbooks
-✅ Stage 3 (€40k+ MRR): Hire your first full-time in-house engineer into a clean, documented, enterprise-ready codebase
-✅ Preserve capital and runway to invest in sales, distribution, and sustainable business growth
+✅ Stage 1 (€0–€15k MRR): Partner with fractional specialists like LaunchStudio for high-leverage hardening
+✅ Stage 2 (€15k–€40k MRR): Refactor code, automate CI/CD, and establish comprehensive operational runbooks
+✅ Stage 3 (€40k+ MRR): Hire your first full-time engineer into a pristine, documented, enterprise-ready codebase
+✅ Preserve valuable cash flow to invest aggressively in sales, distribution, and product validation
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we act as your high-leverage fractional CTO and engineering team until hiring in-house makes financial sense. 👥
 
-Her result: Marloes scaled Praktijkbeheer with LaunchStudio for twelve months, then hired an engineer who onboarded and shipped features in week one. 🚀
+Her result: Marloes Timmerman scaled Praktijkbeheer with LaunchStudio on €49/month managed hosting plus flexible engineering retainers for 14 months. When she finally hired in-house, the new engineer shipped their first feature in week one into a clean, documented codebase — saving over €50,000 in early overhead. 🚀
 
-👉 Decide whether your startup needs an external Lovable partner or a full-time in-house hire: https://launchstudio.eu/en/blog/lovable-developer-or-in-house-hire
+👉 Decide whether your startup needs a fractional partner or a full-time in-house hire: https://launchstudio.eu/en/blog/lovable-developer-or-in-house-hire
 
 #FractionalCTO #TechHiring #StartupRunway #SaaSGrowth #LaunchStudio #Manifera

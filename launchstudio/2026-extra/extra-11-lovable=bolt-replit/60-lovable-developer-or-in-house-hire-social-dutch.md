@@ -1,25 +1,25 @@
-👥 Staat u op het punt een fulltime senior developer aan te nemen voor € 85.000 per jaar? Pas op: te vroeg een vaste ontwikkelaar aannemen is de nummer 1 reden waarom vroege startups stranden.
+👥 Marloes Timmerman runde Praktijkbeheer in Lovable voor 28 zorgpraktijken in Gelderland. Investeerders drongen aan om direct een vaste senior engineer aan te nemen voor € 85.000 per jaar. Marloes aarzelde: ze ontdekte dat te vroeg vast aannemen 90% van haar runway zou opbranden vóórdat nieuwe zorgmodules inhoudelijk gevalideerd waren. 😳
 
-Vóórdat u bewezen product-market fit heeft, is een vast personeelslid een enorme vaste kostenpost. Weten wanneer u extern bouwt versus intern aanneemt beschermt uw runway.
+Te vroeg een vaste developer aannemen is de nummer 1 reden waarom vroege startups stranden. Weten wanneer u extern bouwt versus vast aanneemt:
 
-Waar het vaak misgaat bij de keuze tussen uitbesteden en intern aannemen:
+Waar het vaak misgaat bij de keuze tussen een externe specialist en een vaste in-house developer:
 
-❌ Uw kostbare vroege kapitaal verbranden aan vaste salariskosten vóórdat uw retentie stabiel is
-❌ Een vaste engineer aannemen die de eerste 3 maanden bezig is om ongeordende AI-code te ontcijferen
-❌ Oprichters veranderen in fulltime IT-managers in plaats van zich te focussen op verkoop en groei
-❌ Vertrouwen op losse marktplaats-freelancers die midden in een project spoorloos verdwijnen
+❌ Kostbaar kapitaal verbranden aan vaste salariskosten vóórdat de product-market fit stabiel is
+❌ Een vaste engineer aannemen die maandenlang bezig is om ongeordende AI-code te ontcijferen
+❌ Oprichters die veranderen in fulltime HR- en IT-managers in plaats van te focussen op klanten
+❌ Vertrouwen op losse marktplaats-freelancers die spoorloos verdwijnen bij productieproblemen
 
-Wat u wél moet inrichten vóór u uw financiële runway opbrandt aan vaste salarissen:
+Wat u wél moet inrichten vóór uw financiële runway opbrandt aan vaste personeelskosten:
 
-✅ Fase 1 (€ 0 - € 15k MRR): Werk met een flexibele specialist zoals LaunchStudio voor gerichte productie-hardening
-✅ Fase 2 (€ 15k - € 40k MRR): Optimaliseer de architectuur, documenteer runbooks en richt CI/CD-straten in
-✅ Fase 3 (€ 40k+ MRR): Neem uw eerste vaste software engineer aan op een schone, professionele codebase
-✅ Behoud uw flexibiliteit en investeer vroege middelen maximaal in marketing en klantenwerving
+✅ Fase 1 (€ 0–€ 15k MRR): Flexibel samenwerken met LaunchStudio voor gerichte productie-hardening
+✅ Fase 2 (€ 15k–€ 40k MRR): Codebase documenteren, CI/CD-straten inrichten en runbooks opstellen
+✅ Fase 3 (€ 40k+ MRR): Uw eerste vaste software engineer aannemen op een schone, professionele codebase
+✅ Vroege middelen maximaal investeren in verkoop, marketing en klantbehoud
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, fungeren we als uw flexibele 'fractional CTO' en engineeringteam totdat een vaste aanstelling bedrijfseconomisch verstandig is.
 
-💡 Zo schaalde praktijksoftware Praktijkbeheer in Arnhem een jaar lang flexibel door, waarna haar eerste vaste engineer binnen week één al nieuwe features opleverde.
+💡 Het resultaat: Marloes Timmerman werkte 14 maanden flexibel samen met LaunchStudio (€ 49/maand managed hosting plus retainers). Toen zij haar eerste vaste engineer aannam, leverde deze al in week één de eerste feature op in een schone, gedocumenteerde codebase — wat meer dan € 50.000 aan vroege overhead bespaarde. 🚀
 
-👉 Ontdek wanneer u kiest voor een externe Lovable-partner versus een vaste aanstelling: https://launchstudio.eu/nl/blog/lovable-developer-or-in-house-hire
+👉 Ontdek wanneer u kiest voor een externe partner versus een vaste ontwikkelaar: https://launchstudio.eu/nl/blog/lovable-developer-or-in-house-hire
 
-#Inhuren #FractionalCTO #StartupRunway #SaaSOpschaling #LaunchStudio #Manifera
+#Inhuren #FractionalCTO #StartupRunway #SaaSGroei #LaunchStudio #Manifera

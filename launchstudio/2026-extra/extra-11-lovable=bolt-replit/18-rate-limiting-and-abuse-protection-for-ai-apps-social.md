@@ -1,4 +1,4 @@
-🚨 Nadia built Taalmaatje for language learners. Overnight, an anonymous script hammered her OpenAI translation endpoint 60,000 times. Her API bill hit €2,400 in 8 hours because she had zero rate limiting. 😳
+🚨 Nadia el Amrani built Taalmaatje in Lovable for 340 language learners in Eindhoven. Someone registered an account in 15 seconds, extracted the request format, and hammered her AI model endpoint 60,000 times over nine days as a free translation proxy — with zero rate limiting or spending caps in place. 😳
 
 Public AI endpoints without abuse guards are blank checks written to strangers. Here's how to protect your budget: 🧠
 
@@ -14,7 +14,7 @@ Public AI endpoints without abuse guards are blank checks written to strangers. 
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we install enterprise rate-limiting shields that keep your AI features fast and your bills predictable. 🛡️
 
-Her result: Taalmaatje cut AI infrastructure costs back to 4% of the peak spike, scaling to hundreds of subscribers with total cost certainty. 🚀
+Her result: Nadia el Amrani secured Taalmaatje in 4 business days for €1,750 (rate limiting, verification, bot protection, spending caps, and alerts). AI model costs dropped back to roughly 4% of the peak month and have scaled predictably with subscriber growth. 🚀
 
 👉 Protect your AI application from expensive automated abuse and bot scraping: https://launchstudio.eu/en/blog/rate-limiting-and-abuse-protection-for-ai-apps
 

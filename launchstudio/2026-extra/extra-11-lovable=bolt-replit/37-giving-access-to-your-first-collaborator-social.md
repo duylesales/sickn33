@@ -1,21 +1,21 @@
-🚨 Nadine ran Kliniekagenda with sensitive patient appointments. During an enterprise security check, she audited team permissions: four freelance developers she had hired months ago still held unrestricted super-admin keys to her live Supabase database. 😳
+🚨 Nadine Peters ran Kliniekagenda in Lovable for 11 private clinics in Breda, holding patient records and appointment history. Over two years, she worked with four different freelance contractors — sharing master database passwords, production API keys, and admin logins over Slack without ever rotating credentials after offboarding. 😳
 
-Handing out master project keys to freelancers is the fastest way to leak customer data. Access control requires discipline: 🧠
+Sharing master production credentials with contractors is the #1 cause of accidental data breaches. Here's how to delegate safely: 🧠
 
-❌ Sharing primary project logins and master passwords over chat instead of individual named accounts
-❌ Granting full database owner permissions when a developer only needs frontend repository access
-❌ Allowing direct developer write access to live production databases without a local or staging buffer
-❌ Zero offboarding process: forgetting to revoke API tokens and repository invites when contracts conclude
+❌ Giving external developers direct access to production databases holding live customer data
+❌ Sharing admin passwords and API secrets in plain text over Slack or email
+❌ Failing to revoke access, rotate keys, and invalidate tokens when contractors finish work
+❌ No audit logging tracking which external contractor modified which system components
 
-✅ Enforce Principle of Least Privilege: invite developers with restricted roles on isolated Git repositories
-✅ Spin up local Supabase development environments with seeded dummy data — never production patient records
-✅ Require Two-Factor Authentication (2FA) across GitHub, Supabase, and hosting dashboards
-✅ Maintain a documented collaborator offboarding checklist that revokes access immediately upon project completion
+✅ Provision a dedicated staging environment populated strictly with anonymized seed data
+✅ Grant granular, role-based repository permissions (GitHub Teams) instead of owner credentials
+✅ Use centralized password managers (1Password) with time-limited credential sharing
+✅ Execute a strict contractor offboarding checklist including mandatory credential rotation
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we configure secure multi-developer environments that protect your IP and customer data. 🔐
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help founders establish secure developer access controls and credential hygiene. 👥
 
-Her result: Nadine purged stale access, isolated production data behind strict RBAC, and passed the clinic group's privacy audit with flying colors. 🚀
+Her result: Nadine Peters completed the access separation and security hardening in 6 business days for €2,700 (account separation, credential rotation, staging with generated data, access logging). Kliniekagenda passed its clinic privacy review, and the offboarding checklist has since been used twice without issue. 🚀
 
-👉 Learn how to safely grant access to external developers without risking your database: https://launchstudio.eu/en/blog/giving-access-to-your-first-collaborator
+👉 Secure your production database before onboarding your next developer: https://launchstudio.eu/en/blog/giving-access-to-your-first-collaborator
 
-#AccessControl #Cybersecurity #TeamManagement #Supabase #LaunchStudio #Manifera
+#Security #AccessControl #Freelancers #DevOps #LaunchStudio #Manifera

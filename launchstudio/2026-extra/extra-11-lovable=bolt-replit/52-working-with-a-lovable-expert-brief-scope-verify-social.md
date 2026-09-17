@@ -1,21 +1,21 @@
-🚨 Sanne hired an external specialist for Groenplan with a vague brief: 'Make it faster and production-ready.' Two weeks and €3,000 later, she received a list of minor CSS tweaks and zero backend security hardening. 😳
+🚨 Sanne Wouters had a Lovable prototype for Groenplan, a maintenance-scheduling tool for landscaping firms around Breda, with a pilot starting in 5 weeks. Her first freelancer spent 3 weeks tweaking button animations and color schemes, leaving database persistence, payment webhooks, and access controls completely unbuilt — putting the client pilot in jeopardy. 😳
 
-Vague briefs produce vague invoices. Working with a Lovable expert requires a sharp 3-part framework: Brief, Scope, and Verify: 🧠
+Vague briefs produce vanity work. Here is how technical founders brief, scope, and verify work with an external Lovable expert: 🧠
 
-❌ Writing open-ended briefs without defining specific measurable acceptance criteria
-❌ Allowing developers to work on aesthetic tweaks before securing critical database and payment flows
-❌ No definition of 'done': assuming a feature works because a screenshot was shared
-❌ Paying final invoices before independently verifying error logs, auth boundaries, and mobile responsiveness
+❌ Providing vague, open-ended feature wishlists instead of structured technical requirements
+❌ Allowing developers to spend billable hours polishing UI aesthetics while core backend plumbing remains broken
+❌ Failing to define written acceptance criteria for critical security, payment, and data workflows
+❌ Paying 100% upfront without verifying staging deliverables against automated test suites
 
-✅ Brief with precision: specify exact data flows, user roles, external API integrations, and constraints
-✅ Scope in sequential milestones: Security & DB first, Core Workflows second, Infrastructure third
-✅ Establish concrete verification tests: verify that unauthenticated users cannot access private tables
-✅ Require an operational walkthrough session before signing off on final project completion
+✅ Write structured technical briefs focusing on data schemas, state transitions, and edge cases
+✅ Prioritize the 'invisible half' first: authentication, RLS, payment webhooks, and automated backups
+✅ Require interactive staging demonstrations and automated test passes before milestone sign-off
+✅ Establish clear codebase documentation and runbook handovers as mandatory contract deliverables
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we work with transparent milestones and verifiable engineering checklists so you always know what you get. 📝
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we work to rigorous, transparent milestones that ensure your software is hardened predictably and on schedule. 📋
 
-Her result: Sanne used our structured brief template, launched her B2B pilot with four landscaping firms on time, and added two new features herself in week two. 🚀
+Her result: Sanne Wouters partnered with LaunchStudio on a structured 13-business-day scope for €3,600 (persistence, access control, deployment with backups, monitoring, documented handover). The pilot started on time with four landscaping firms, and Sanne added two features herself in Lovable the following month. 🚀
 
-👉 Download the 3-part framework to brief, scope, and verify work with a Lovable expert: https://launchstudio.eu/en/blog/working-with-a-lovable-expert-brief-scope-verify
+👉 Learn how to brief, scope, and verify work with a Lovable specialist: https://launchstudio.eu/en/blog/working-with-a-lovable-expert-brief-scope-verify
 
-#LovableExpert #ProjectManagement #SoftwareBrief #StartupFounders #LaunchStudio #Manifera
+#ProjectManagement #Lovable #SoftwareEngineering #Hiring #LaunchStudio #Manifera

@@ -1,25 +1,23 @@
-🪵 Klikken twee gebruikers op exact hetzelfde moment op 'Boek nu' en verkoopt uw platform 14 plekken in een zaal voor 12 personen?
+🪵 Marloes Huisman lanceerde Ambachtsklas in Utrecht met 12 workshop-plekken voor houtbewerking. Toen de inschrijving opende, betaalden 19 cursisten binnen 40 seconden: door een simpele read-then-write zonder atomische vergrendeling overboekte het systeem 7 betalende klanten. 😳
 
-AI-codeertooling test met één gebruiker tegelijk. Zodra meerdere mensen tegelijkertijd data bewerken, ontstaan er 'race conditions' en overschrijven updates elkaar.
+Als twee gebruikers in dezelfde milliseconde klikken, faalt naïeve databasecode. Waar het misgaat bij gelijktijdige gebruikers:
 
-Waar het vaak misgaat bij gelijktijdige bewerkingen en race conditions:
+❌ Voorraad of plekken bijwerken via losse `SELECT` en `UPDATE` queries zonder database-lock
+❌ Dubbele betalingen doordat ongeduldige gebruikers twee keer achter elkaar op 'Betalen' klikken
+❌ Overschrijffouten in dashboards waarbij de laatste opslagactie eerdere wijzigingen stilletjes wist
+❌ Vertrouwen op knopvergrendelingen in de browser die bij netwerkhaperingen geen bescherming bieden
 
-❌ Eerst beschikbaarheid controleren en daarna pas reserveren zonder database-vergrendeling
-❌ Verloren updates: twee medewerkers passen hetzelfde dossier aan en overschrijven elkaars data
-❌ Ontbreken van unieke database-constraints die overboeking op dataniveau fysiek onmogelijk maken
-❌ Vertrouwen op knoppen in de browser in plaats van atomaire server-transacties
+Wat u wél moet inrichten vóór piekdrukte leidt tot overboekingen en dubbele afschrijvingen:
 
-Wat u wél moet inrichten vóór klanten boos voor een volle workshopruimte staan:
+✅ Atomische database-operaties en `SELECT FOR UPDATE` vergrendelingen afdwingen in PostgreSQL
+✅ Idempotentie-sleutels implementeren op alle mutaties en betaalprocessen tegen dubbelklikken
+✅ Optimistic concurrency control toepassen via versienummers of timestamp-validaties
+✅ Geautomatiseerde concurrency- en loadtests opnemen in uw deployment pipeline
 
-✅ Implementatie van PostgreSQL row-level locks (`SELECT ... FOR UPDATE`) bij schaarse voorraad
-✅ Toepassen van optimistische locking met versienummers (`version_id`) op bewerkbare records
-✅ Inrichten van atomaire SQL-transacties voor reserveringen, betalingen en voorraadmutaties
-✅ Heldere foutmeldingen tonen zodra een reservering net voor iemands neus is weggekaapt
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, saneren we concurrency-fouten zodat uw applicatie rotsvast presteert tijdens flash sales en inschrijfgolven.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, beveiligen we uw database tegen race conditions zodat gelijktijdige acties altijd consistent verlopen.
+💡 Het resultaat: Marloes Huisman liet atomische capaciteitsverwerking en idempotentie inrichten binnen 5 werkdagen voor € 2.500. Twee maanden later draaide Ambachtsklas een uitverkochte reeks van 6 workshops met precies 0 overboekingen. 🚀
 
-💡 Zo draaide workshopbedrijf Ambachtsklas in Utrecht zes uitverkochte reeksen achter elkaar zonder één enkele dubbele boeking.
+👉 Ontdek hoe u race conditions en dubbele boekingen effectief voorkomt: https://launchstudio.eu/nl/blog/two-people-editing-the-same-record
 
-👉 Lees hoe u gelijktijdige database-bewerkingen en race conditions voorkomt: https://launchstudio.eu/nl/blog/two-people-editing-the-same-record
-
-#Supabase #PostgreSQL #RaceConditions #Boekingen #LaunchStudio #Manifera
+#Concurrency #PostgreSQL #Database #WebApps #LaunchStudio #Manifera

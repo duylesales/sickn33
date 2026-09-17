@@ -1,25 +1,23 @@
-🔑 Staat uw Supabase `service_role` key per ongeluk in uw frontend code? Pas op: deze sleutel omzeilt élke Row Level Security en geeft volledige beheerdersrechten.
+🔐 Thomas de Wit bouwde Factuurly in Cursor voor 180 zzp'ers in Utrecht. Tijdens een code-audit bleek zijn Supabase `service_role` key direct in de client-side JavaScript-bundle te staan — waarmee elke bezoeker volledige admin-rechten had om facturen van alle gebruikers in te zien of te wissen. 😳
 
-AI-codeertools zetten gevoelige environment variables regelmatig in de frontend bundle, waar iedere bezoeker via DevTools bij kan.
+De `service_role` key omzeilt alle Row Level Security. Waar het vaak misgaat bij API-sleutels in AI-code:
 
-Waar het vaak misgaat bij beheerderstoegang in client-side code:
+❌ `service_role` geheimen geplaatst in client-side omgevingsvariabelen (`NEXT_PUBLIC_` of `VITE_`)
+❌ Frontend die rechtstreeks beheeracties uitvoert zonder tussenkomst van beveiligde backend functies
+❌ Admin-sleutels die ongemerkt in versiebeheer (Git) terechtkomen
+❌ Ontbreken van geautomatiseerde build-time checks tegen het uitlekken van privileged keys
 
-❌ De `service_role` secret staat gedefinieerd onder `NEXT_PUBLIC_` of `VITE_` variabelen
-❌ Browserclients voeren rechtstreeks administratieve acties uit op de database
-❌ Gevoelige API-sleutels staan ongecodeerd in de openbare Git-geschiedenis
-❌ Geen geautomatiseerde CI/CD-controles om publicatie van geheime sleutels te blokkeren
+Wat u wél moet inrichten vóór u opschaalt naar betalende gebruikers:
 
-Wat u wél moet inrichten vóór uw applicatie veilig is:
+✅ Grondige audit van alle frontend bundles op gelekte beheerderstoegang
+✅ Directe rotatie van gecompromitteerde `service_role` tokens in Supabase
+✅ Verplaatsing van admin-queries naar strikt geauthenticeerde Edge Functions
+✅ Implementatie van geautomatiseerde CI/CD-secret scanners om sleutellekken uit te sluiten
 
-✅ Strikte isolatie van de `service_role` key binnen server-side Edge Functions
-✅ Onmiddellijke sleutelrotatie in Supabase zonder downtime voor actieve gebruikers
-✅ Diepgaande audit van database-logs om misbruik met terugwerkende kracht uit te sluiten
-✅ Implementatie van build-time secret scanning in de deployment pipeline
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, controleren en isoleren we uw API-credentials zodat beheerdersrechten altijd op de server blijven.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, saneren we uw geheimenbeheer en trekken we harde server-side grenzen rond uw data.
+💡 Het resultaat: Thomas de Wit liet Factuurly binnen 5 werkdagen beveiligen voor € 1.900 (sleutelrotatie, Edge Functions, RLS en CI-checks). Het lek werd binnen een week gedicht en het platform draait veilig door voor 180 zzp'ers. 🚀
 
-💡 Zo dichtte facturatietool Factuurly in Utrecht haar datalek binnen 48 uur en voorkwam reputatieschade bij 180 betalende zzp'ers.
+👉 Controleer direct of uw frontend bundle gevoelige admin-sleutels bevat: https://launchstudio.eu/nl/blog/supabase-service-role-key-exposure-risk
 
-👉 Lees hoe u uw Supabase-sleutels controleert en beveiligt: https://launchstudio.eu/nl/blog/supabase-service-role-key-exposure-risk
-
-#Supabase #Cybersecurity #Datalek #VibeCoding #LaunchStudio #Manifera
+#Supabase #Beveiliging #VibeCoding #WebApps #LaunchStudio #Manifera

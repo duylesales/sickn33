@@ -1,25 +1,25 @@
-📐 Heeft Cursor drie verschillende manieren verzonnen om dezelfde klantdata op te halen in uw app? Zonder regels verandert AI-code binnen een maand in onleesbare spaghetti.
+📐 Pepijn Aalbers bouwde Offertetool in Cursor voor 120 installatiebedrijven in Noord-Holland. Na 7 maanden aannam hij een parttime developer aan: deze was twee weken kwijt om dubbele database-helpers, tegenstrijdige API-routes en ongecoördineerde AI-code te ontwarren omdat Cursor zonder richtlijnen had gewerkt. 😳
 
-Cursor codeert razendsnel, maar zonder duidelijke instructies verzint het model bij elke prompt nieuwe patronen. Zo houdt u uw AI-codebase beheersbaar:
+Zonder duidelijke contextregels genereert AI tegenstrijdige patronen en technische schuld. Hoe u uw Cursor-codebase strak houdt:
 
-Waar het vaak misgaat bij het onderhouden van Cursor-codebases:
+Waar het vaak misgaat bij het gebruik van `.cursorrules` en contextmanagement in AI-ontwikkeling:
 
-❌ Architectuur-drift: tegenstrijdige datastructuren en codeerstijlen binnen hetzelfde project
-❌ Het ontbreken van een `.cursorrules`-bestand waardoor de AI uw standaarden moet raden
-❌ Vervuilde context-vensters waarin verouderde bestanden verkeerde antwoorden uitlokken
-❌ Nieuwe teamleden zijn weken bezig om ongeordende AI-code te ontrafelen
+❌ Cursor die in elk bestand andere library-keuzes en codeerconventies voorstelt
+❌ Wildgroei aan dubbele helperfuncties en overlappende databaseclients in uw project
+❌ AI-prompts die bestaande logica breken doordat contextbestanden te groot of chaotisch zijn
+❌ Nieuwe developers die verdwalen omdat kennis alleen in eerdere chatgeschiedenis zat
 
-Wat u wél moet inrichten vóór uw app ononderhoudbaar wordt voor echte ontwikkelaars:
+Wat u wél moet inrichten vóór technische schuld uw ontwikkelsnelheid volledig lamlegt:
 
-✅ Een modulair `.cursorrules`-bestand opstellen met strikte afspraken over frameworks, state en typing
-✅ Gerichte context meegeven via `@-mentions` in plaats van de hele repository lukraak in te laden
-✅ Vastleggen van eenduidige patronen voor data-fetching, authenticatie en error-handling
-✅ Periodieke code reviews door senior engineers om architectuurregels consistent te handhaven
+✅ Een waterdicht `.cursorrules` bestand opstellen met strikte afspraken over stack en architectuur
+✅ Korte, gerichte contextdocumenten aanmaken voor datamodellen en API-structuren
+✅ Dubbele data-fetching helpers saneren naar één eenduidige, getypeerde servicelaag
+✅ Geautomatiseerde type-checks en linters afdwingen via Git pre-commit hooks
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we professionele Cursor-regels en projectstructuren in voor schaalbare startups.
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, structureren we AI-codebases met heldere regels en architectuurkaders zodat software beheersbaar blijft bij teamgroei.
 
-💡 Zo voerde offertetool Offertetool in Alkmaar strikte Cursor-regels in; een nieuwe developer leverde zijn eerste grote feature binnen 3 dagen op in plaats van 2 weken.
+💡 Het resultaat: Pepijn Aalbers liet de codebase van Offertetool standaardiseren binnen 6 werkdagen voor € 2.600 (consolidatieslag, migraties, rules-bestand, tests). De nieuwe developer leverde zijn volgende feature al binnen 3 dagen op in plaats van 2 weken. 🚀
 
-👉 Ontdek hoe u met Cursor rules en context uw codebase strak en professioneel houdt: https://launchstudio.eu/nl/blog/cursor-rules-and-context-keeping-code-maintainable
+👉 Lees hoe u met slimme contextregels uw Cursor-codebase toekomstbestendig maakt: https://launchstudio.eu/nl/blog/cursor-rules-and-context-keeping-code-maintainable
 
-#Cursor #CursorRules #CodeKwaliteit #SoftwareArchitectuur #LaunchStudio #Manifera
+#Cursor #CleanCode #SoftwareOntwikkeling #Productiviteit #LaunchStudio #Manifera

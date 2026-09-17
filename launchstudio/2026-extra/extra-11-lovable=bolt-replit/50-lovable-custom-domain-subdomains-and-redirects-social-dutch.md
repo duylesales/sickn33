@@ -1,25 +1,23 @@
-🌐 Rankt uw testomgeving `staging.uwdomein.nl` hoger in Google dan uw echte website? Verkeerd geconfigureerde subdomeinen lekken testdata en verwarren uw klanten.
+🌐 Wouter Claassen zette Zaalplanner live op `app.zaalplanner.nl` voor sportzalen in Tilburg. Een maand later bleek Google een onbeveiligde testomgeving (`staging.zaalplanner.nl`) te hebben geïndexeerd, terwijl sessie-cookies lekten tussen de test- en live-omgeving — waardoor testaccounts actieve productiegegevens overschreven. 😳
 
-Een subdomain opzetten voor uw app (`app.`) naast uw marketingwebsite (`www.`) vraagt om een doordachte aanpak van cookies, SSL-certificaten en no-index regels.
+Een professionele domeinstructuur vereist strikte subdomein-scheiding, cookie-scoping en canonieke redirects. Waar het misgaat:
 
-Waar het vaak misgaat bij subdomeinen, redirects en multi-brand setups:
+❌ Zoekmachines per ongeluk testomgevingen laten indexeren door ontbrekende headers of wachtwoorden
+❌ Inlogcookies te breed instellen op het hoofddomein waardoor test- en live-sessies door elkaar lopen
+❌ Geen canonieke 301-redirects tussen `www` en root-domeinen, wat SEO-waarde versnippert
+❌ Mislukte API-calls door verkeerd geconfigureerde Cross-Origin Resource Sharing (CORS) regels
 
-❌ Staging-omgevingen worden openbaar geïndexeerd door Google door ontbrekende `noindex`-headers
-❌ Gebruikers moeten opnieuw inloggen wanneer ze wisselen tussen uw marketingpagina en de app
-❌ Wildcard SSL-certificaten falen op geneste subdomeinen waardoor beveiligingswaarschuwingen ontstaan
-❌ Tegenstrijdige redirects tussen www en non-www die uw SEO-waarde versnipperen
+Wat u wél moet inrichten vóór domeinfouten uw zoekpositie schaden of sessielekken veroorzaken:
 
-Wat u wél moet inrichten vóór uw staging-data open en bloot op Google staat:
+✅ Alle staging- en testsubdomeinen afschermen achter verplichte authenticatie of IP-whitelists
+✅ Inlogcookies strikt binden aan het exacte subdomein (`app.domein.nl`) tegen dataschade
+✅ Strikte 301-redirects en HSTS-headers afdwingen op DNS- en edge-niveau
+✅ Een apart subdomein inrichten voor transactionele e-mail gescheiden van de webservers
 
-✅ Strikte `X-Robots-Tag: noindex`-headers en wachtwoordbeveiliging op alle testomgevingen
-✅ Een geconsolideerde cookie-domeinstrategie (`.uwdomein.nl`) voor naadloze Single Sign-On
-✅ Geautomatiseerde wildcard SSL-dekking over alle primaire en klant-specifieke subdomeinen
-✅ Permanente 301-redirects die alle zoekwaarde concentreren op uw officiële productiedomein
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we uw complete domein- en routeringsinfrastructuur in volgens de strengste security- en SEO-normen.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we waterdichte domein-, subdomein- en routeringsstructuren in die uw merk en SEO beschermen.
+💡 Het resultaat: Wouter Claassen liet de domeinstructuur van Zaalplanner binnen 3 werkdagen saneren voor € 1.600 (domeinstructuur, staging-beveiliging, cookie-scoping, redirects). De staging-pagina's verdwenen binnen 3 weken uit Google en sessiefouten zijn definitief verleden tijd. 🚀
 
-💡 Zo verdween de testomgeving van zaalverhuurder Zaalplanner in Tilburg binnen 3 weken uit Google en verdubbelde het organische verkeer naar de echte site.
+👉 Lees hoe u subdomeinen, cookies en redirects foutloos inricht voor uw SaaS: https://launchstudio.eu/nl/blog/lovable-custom-domain-subdomains-and-redirects
 
-👉 Ontdek hoe u subdomeinen en redirects professioneel inricht voor uw SaaS: https://launchstudio.eu/nl/blog/lovable-custom-domain-subdomains-and-redirects
-
-#CustomDomain #DNS #Subdomeinen #SEO #LaunchStudio #Manifera
+#DNS #Domeinen #Beveiliging #DevOps #LaunchStudio #Manifera

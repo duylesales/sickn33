@@ -1,21 +1,21 @@
-🚨 Lieke ran Kruidenbox on Lovable with Stripe. Two months in, she checked Stripe balances: 19 active customers had stopped being billed, and 4 customers were double-charged because webhook handlers had no idempotency. 😳
+🚨 Lieke Verbeek's app, Kruidenbox, sold monthly herb-growing subscriptions in Utrecht via Lovable and Mollie. Month one was smooth with 140 subscribers. But in month two, 19 subscriptions quietly lapsed due to expired cards without a dunning flow, and 4 customers were billed twice because webhooks were processed without idempotency or reconciliation. 😳
 
-A 'Payment Successful' screen is easy. The post-checkout lifecycle is where subscription apps bleed money: 🧠
+Adding a 'Pay Now' button is easy. Building subscription logic, dunning, and VAT reconciliation is where production engineering begins: 🧠
 
-❌ Webhook listeners lacking idempotency keys, re-executing actions when Stripe retries deliveries
-❌ Database records marked as 'active' on initial checkout with zero handling for subscription renewals or churn
-❌ No automated dunning flows when a customer's credit card expires or payment fails
-❌ Invoices missing compliant Dutch/EU VAT numbers and breakdown requirements
+❌ Payment webhooks processed without idempotency keys, causing double-charges on network retries
+❌ Database subscriptions updated immediately on checkout instead of listening for verified webhook events
+❌ No automated dunning flows or graceful downgrades when credit cards expire or fail
+❌ Zero automated daily reconciliation between payment processor settlement logs and database revenue
 
-✅ Build idempotent webhook processing that verifies event signatures and records event IDs
-✅ Synchronize subscription lifecycle events (created, renewed, past_due, canceled) bidirectionally
-✅ Implement automated grace periods, email notifications, and self-serve billing portals
-✅ Automate EU VAT calculation and compliant PDF invoice generation directly in the billing loop
+✅ Build idempotent webhook listeners with cryptographic signature verification
+✅ Implement asynchronous subscription entitlement state machines decoupled from checkout sessions
+✅ Automate multi-step dunning emails and payment method update flows
+✅ Set up nightly automated reconciliation scripts matching bank payouts to internal orders
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we make sure your payment plumbing captures every euro and stays 100% compliant with EU tax rules. 💳
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we engineer ironclad payment and subscription lifecycles that protect your revenue and accounting. 💳
 
-Her result: Kruidenbox recovered eleven lapsed subscriptions, refunded overcharges immediately, and automated all monthly Dutch VAT invoicing. 🚀
+Her result: Lieke Verbeek completed the Launch & Grow payment scope in 7 business days for €3,300 (webhooks, entitlement model, dunning, reconciliation). All 19 lapsed subscribers were contacted (11 reinstated), the 4 overcharged customers were refunded before chargebacks, and monthly revenue has matched bank settlements exactly ever since. 🚀
 
-👉 Discover what really breaks in AI apps after the customer clicks Pay: https://launchstudio.eu/en/blog/lovable-payments-what-breaks-after-checkout
+👉 Bulletproof your Mollie and Stripe integration before launching subscriptions: https://launchstudio.eu/en/blog/lovable-payments-what-breaks-after-checkout
 
-#Lovable #Stripe #PaymentIntegrations #SaaS #LaunchStudio #Manifera
+#Mollie #Stripe #Fintech #Subscriptions #LaunchStudio #Manifera

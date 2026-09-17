@@ -1,25 +1,23 @@
-📈 Heeft uw Lovable-applicatie honderden pagina's met waardevolle content, maar ziet Googlebot alleen een leeg wit scherm?
+🔍 Daan Hoekstra zette Werkplaats live met 340 atelier- en workshopruimtes in Groningen en Friesland. Zes weken na de Lovable-lancering bleek Google slechts 3 van de 340 pagina's geïndexeerd te hebben — omdat crawlers van zoekmachines alleen een leeg `<div id='root'></div>` scherm zagen. 😳
 
-AI-bouwers genereren Client-Side Rendered (CSR) Single Page Apps. Als Google uw JavaScript niet snel kan uitvoeren, wordt uw content simpelweg niet geïndexeerd.
+Een client-side Single Page App (SPA) rankt niet organisch als zoekmachines geen HTML-content kunnen lezen. Waar het vaak misgaat:
 
-Waar het vaak misgaat bij vindbaarheid van AI-gebouwde sites:
+❌ Puur client-side React-rendering waardoor zoekbots alleen een leeg HTML-skelet ontvangen
+❌ Dynamische detailpagina's zonder unieke meta-titels, beschrijvingen en Open Graph tags
+❌ Ontbreken van geautomatiseerde XML-sitemaps en correcte `robots.txt` sturing
+❌ Trage JavaScript-laadtijden op mobiel die de Core Web Vitals onderuithalen
 
-❌ Crawlers ontvangen een lege `<div id='root'>` zonder server-side gerenderde HTML-tekst
-❌ Dynamische Open Graph- en Twitter-cards ontbreken bij het delen op LinkedIn of WhatsApp
-❌ Geen automatische XML-sitemap die meegroeit wanneer nieuwe database-items worden aangemaakt
-❌ Slechte Core Web Vitals-scores door logge, niet-geoptimaliseerde JavaScript-bundels
+Wat u wél moet inrichten vóór u investeert in marketing of advertenties:
 
-Wat u wél moet inrichten vóór organische groei via Google:
+✅ Server-Side Rendering (SSR) of statische pre-rendering voor alle openbare pagina's
+✅ Dynamische generatie van unieke SEO- en social share-metadata per record
+✅ Automatische XML-sitemap generatie gekoppeld aan Google Search Console
+✅ Optimalisatie van Core Web Vitals en bundle-splitting voor razendsnelle mobiele weergave
 
-✅ Server-side prerendering of statische paginageneratie voor alle openbare landingspagina's
-✅ Dynamische injectie van meta-tags en JSON-LD structured data direct in de initiële HTML
-✅ Geautomatiseerde XML-sitemaps die direct synchroniseren met uw database-updates
-✅ Code-splitting en caching-optimalisaties om glansrijk door Core Web Vitals te komen
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, bouwen we uw client-side prototype om naar een razendsnelle, perfect indexeerbare applicatie die wél scoort in Google.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, maken we uw Lovable-applicatie razendsnel en optimaal vindbaar voor zoekmachines en AI-answer engines.
+💡 Het resultaat: Daan Hoekstra liet de SEO-architectuur van Werkplaats inrichten binnen 9 werkdagen voor € 2.600. Geïndexeerde pagina's stegen van 3 naar 291 binnen 5 weken, met de eerste organische boeking uit Leeuwarden in week 7. 🚀
 
-💡 Zo schoot marktplaats Werkplaats in Groningen binnen 5 weken van 3 naar 291 geïndexeerde pagina's en ontving direct haar eerste organische reservering.
+👉 Ontdek waarom uw Lovable-app nu niet rankt en hoe u dit definitief oplost: https://launchstudio.eu/nl/blog/lovable-seo-why-ai-built-sites-dont-rank
 
-👉 Ontdek waarom AI-sites niet ranken en hoe u dit definitief oplost: https://launchstudio.eu/nl/blog/lovable-seo-why-ai-built-sites-dont-rank
-
-#Lovable #SEO #GoogleSearch #CoreWebVitals #LaunchStudio #Manifera
+#SEO #Lovable #VibeCoding #Webontwikkeling #LaunchStudio #Manifera

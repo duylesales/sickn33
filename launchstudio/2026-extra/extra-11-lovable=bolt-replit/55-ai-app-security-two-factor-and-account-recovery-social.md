@@ -1,21 +1,21 @@
-🚨 Erik built Salarisplan for payroll management. A malicious actor used the public contact form to impersonate a clinic manager, claiming they were locked out. With no verified recovery process, a junior admin reset the email — handing over the entire account. 😳
+🚨 Erik Vlietstra ran Salarisplan in Lovable: a payroll-preparation tool for 11 accountancy practices around Zwolle holding employee salaries and IBAN details. When a client employee's mobile phone was stolen, Salarisplan lacked Two-Factor Authentication recovery flows and session revocation — forcing Erik into an emergency manual database intervention while fearing payroll data manipulation. 😳
 
-Passwords alone are obsolete for sensitive SaaS. Without 2FA and strict recovery protocols, social engineering bypasses your best code: 🧠
+Two-Factor Authentication is only half the battle. If your account recovery flow is weak, attackers bypass 2FA entirely: 🧠
 
-❌ Relying on single-factor passwords for applications handling financial, medical, or HR data
-❌ Ad-hoc account recovery: resetting passwords via unverified email requests or support chat messages
-❌ Storing 2FA backup codes in plaintext or failing to provide cryptographic recovery keys
-❌ Session cookies that remain valid across all devices even after an account password or 2FA key is changed
+❌ Offering basic username/password logins without mandatory Two-Factor Authentication (2FA/MFA) for financial tools
+❌ Lacking cryptographic offline backup recovery codes for users who lose their authenticator app
+❌ No instant 'Sign out of all devices' session revocation mechanism when an employee leaves or loses a device
+❌ Weak account recovery flows (like simple email reset links) that completely bypass 2FA protections
 
-✅ Enforce Time-Based One-Time Password (TOTP) 2FA via authenticator apps across all privileged accounts
-✅ Generate single-use, cryptographically hashed recovery backup codes during 2FA enrollment
-✅ Establish strict identity verification protocols for manual account recovery requests
-✅ Automatically revoke all active sessions across all devices upon password or 2FA credential changes
+✅ Implement mandatory Time-based One-Time Password (TOTP) 2FA using Supabase Auth MFA
+✅ Generate cryptographically hashed, single-use backup recovery codes upon 2FA setup
+✅ Enforce immediate server-side session revocation across all active refresh tokens on password change
+✅ Build organization-level administrative override flows with mandatory dual-approval
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we implement bank-grade 2FA and secure account recovery workflows that defeat social engineering. 🔐
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we architect enterprise MFA and bulletproof account recovery systems that protect mission-critical business data. 🔐
 
-His result: Salarisplan enforced mandatory TOTP 2FA across all client accounts, prevented financial loss, and earned enterprise security sign-off from two new medical practices. 🚀
+His result: Erik Vlietstra completed the 2FA and account recovery overhaul in 6 business days for €2,700 (recovery codes, device management, re-authentication, security notifications, organisation enforcement). Zero financial loss occurred, all 11 practices remained on board, and two recovery requests since have been handled self-service without issue. 🚀
 
-👉 Protect your sensitive SaaS with robust two-factor authentication and account recovery: https://launchstudio.eu/en/blog/ai-app-security-two-factor-and-account-recovery
+👉 Implement enterprise Two-Factor Authentication and secure recovery in your app: https://launchstudio.eu/en/blog/ai-app-security-two-factor-and-account-recovery
 
-#TwoFactorAuth #Cybersecurity #MFA #AccountSecurity #LaunchStudio #Manifera
+#Cybersecurity #MFA #TwoFactor #Supabase #LaunchStudio #Manifera

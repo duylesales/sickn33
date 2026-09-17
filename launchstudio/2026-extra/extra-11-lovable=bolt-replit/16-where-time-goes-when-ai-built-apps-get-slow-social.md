@@ -1,21 +1,21 @@
-🚨 Fenna launched Kookstudio with 200 recipes. At 1,000 recipes, her browse page took 9 seconds to load. Users abandoned the app, and her database CPU hit 95% from unindexed query loops. 😳
+🚨 Fenna Hoekman built Kookstudio in Zwolle to manage workshop bookings and recipe libraries. Everything flew during local demos. But when 80 participants loaded upcoming dates and recipes simultaneously, pages took 9 seconds to load — because unindexed queries, sequential joins, and uncompressed 4MB food photos drove database CPU to 85%. 😳
 
-AI tools generate code that works fast with 10 records. Here's where performance collapses at scale: 🧠
+Prototypes run on 10 rows of mock data. Production runs on thousands. Here's why AI-built databases slow to a crawl under real data: 🧠
 
-❌ N+1 query loops fetching relational data inside client component render cycles
-❌ Foreign keys and filter columns missing database indexes, forcing sequential table scans
-❌ Megabyte-sized uncompressed images downloaded directly from storage buckets without thumbnail resizing
-❌ Heavy client-side sorting and filtering that freezes mobile browser main threads
+❌ Missing B-tree indexes on foreign keys and filter columns, forcing full table scans on every request
+❌ Frontend fetching entire database records (`SELECT *`) instead of lightweight paginated subsets
+❌ Massive uncompressed images loaded directly from storage without responsive thumbnail resizing
+❌ N+1 query cascades running in loops across nested client-side React components
 
-✅ Add targeted B-tree indexes on all foreign keys, status columns, and search filters
-✅ Batch database queries into single relational joins or server-side views
-✅ Implement automatic image compression and CDN thumbnail generation on upload
-✅ Shift heavy pagination and search filtering to PostgreSQL database indexes
+✅ Audit database slow queries and add composite indexes on frequently filtered columns
+✅ Implement keyset pagination and server-side query projections for all public feeds
+✅ Integrate an automated CDN image transformation pipeline with WebP compression
+✅ Refactor data fetching into optimized PostgreSQL database views and joined Edge RPCs
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we diagnose performance bottlenecks and turn sluggish AI apps into sub-second powerhouses. ⚡
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we optimize database queries and asset delivery so your app stays fast as your user base scales. ⚡
 
-Her result: Kookstudio's browse page dropped from 9 seconds to under 1 second on mobile, and database CPU usage plummeted from 95% to 8%. 🚀
+Her result: Fenna Hoekman completed the performance overhaul in 5 business days for €2,200 (query optimization, indexes, image pipeline, bundle splitting). Mobile page load dropped from 9 seconds to under 800ms, and database CPU fell from 85% to under 12% during peak holiday bookings. 🚀
 
-👉 Find out where the performance bottlenecks are hiding in your app: https://launchstudio.eu/en/blog/where-time-goes-when-ai-built-apps-get-slow
+👉 Learn how to optimize your Lovable and Supabase app for real production data: https://launchstudio.eu/en/blog/where-time-goes-when-ai-built-apps-get-slow
 
-#Lovable #WebPerformance #Supabase #DatabaseOptimization #LaunchStudio #Manifera
+#Performance #Supabase #Lovable #DatabaseOptimization #LaunchStudio #Manifera

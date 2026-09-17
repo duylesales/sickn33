@@ -1,21 +1,21 @@
-🚨 Wouter launched Zaalplanner on `app.zaalplanner.nl`. A month later, he searched his brand on Google: his staging environment `staging.zaalplanner.nl` was ranking #1 with test dummy data, outranking his actual production site. 😳
+🚨 Wouter Claassen launched Zaalplanner on `app.zaalplanner.nl` for community halls and sports centres around Tilburg. A month later, search engines indexed an unprotected staging domain (`staging.zaalplanner.nl`), and auth cookies configured on the root domain bled across environments — causing live user sessions to corrupt and staging test accounts to overwrite production data. 😳
 
-Multi-domain and subdomain architecture requires deliberate SEO and SSL hygiene. Here's what goes wrong: 🧠
+Managing multi-domain SaaS architecture requires precise subdomain routing, cookie scoping, and canonical redirects: 🧠
 
-❌ Staging and internal subdomains left publicly indexable without `X-Robots-Tag: noindex` or password protection
-❌ Wildcard SSL certificates failing on multi-level subdomains (`test.preview.domain.com`)
-❌ Session cookies bleeding across subdomains or failing to persist when users jump between marketing and app
-❌ Missing canonical 301 redirects between non-www, www, and application subdomains
+❌ Allowing search engines to crawl and index private staging environments due to missing headers
+❌ Scoping authentication cookies to the root domain (`.domain.com`), allowing session leakage across staging and production
+❌ Missing canonical 301 redirects between `www` and root apex domains, splitting SEO authority
+❌ Misconfigured CORS policies rejecting valid API requests from brand subdomains
 
-✅ Enforce HTTP Basic Auth and `noindex` headers across 100% of staging and test environments
-✅ Implement a unified cookie domain strategy (`.yourdomain.com`) for seamless single-sign-on between web and app
-✅ Configure automated wildcard SSL provisioning covering all production and client-branded subdomains
-✅ Establish strict canonical 301 redirects that consolidate search engine ranking power onto the primary domain
+✅ Protect all staging and development subdomains behind HTTP Basic Auth or VPN IP whitelisting
+✅ Scope authentication cookies strictly to fully qualified hostnames (`app.domain.com`)
+✅ Implement strict 301 canonical redirects and HSTS preloading at the DNS and edge layer
+✅ Configure dedicated email sending subdomains (`mail.domain.com`) isolated from web routing
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we configure clean subdomain routing, unified sessions, and bulletproof staging barriers. 🌐
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we configure pristine DNS, subdomain, and routing architectures that eliminate cross-environment security risks. 🌐
 
-His result: staging test pages disappeared from Google in 3 weeks, authentication sessions unified, and production search authority surged. 🚀
+His result: Wouter Claassen completed the domain structure overhaul in 3 business days for €1,600 (domain structure, staging protection, session scoping, certificates, redirects, sending subdomain). Staging pages disappeared from search within three weeks, session corruption ended, and Zaalplanner has a rock-solid domain foundation. 🚀
 
-👉 Learn how to structure custom domains, subdomains, and redirects properly: https://launchstudio.eu/en/blog/lovable-custom-domain-subdomains-and-redirects
+👉 Master subdomain routing, cookie scoping, and redirects for your web application: https://launchstudio.eu/en/blog/lovable-custom-domain-subdomains-and-redirects
 
-#CustomDomain #DNS #Subdomains #SEO #LaunchStudio #Manifera
+#DNS #CustomDomain #DevOps #WebSecurity #LaunchStudio #Manifera

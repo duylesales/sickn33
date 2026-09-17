@@ -1,21 +1,21 @@
-🚨 Tim was a talented freelance developer in Groningen. His portfolio was full of gorgeous AI-generated web prototypes. But clients kept ghosting after technical reference calls because nobody believed his apps could survive real production. 😳
+🚨 Tim Roorda freelanced around Groningen building applications in Lovable and Cursor. His portfolio showcased 11 projects — all gorgeous UI screenshots. But he was consistently losing enterprise contracts to established agencies because corporate clients saw only prototype concepts with zero proof of production security, database pooling, or GDPR compliance. 😳
 
-Pretty UI screenshots don't win serious clients anymore. Production-grade proof is what separates commodity prompters from senior engineers: 🧠
+Pretty UI screenshots prove you can prompt. A production portfolio proves you can ship software that survives the real world: 🧠
 
-❌ Portfolios filled with visual Figma/AI mockups that have zero real paying users or concurrency testing
-❌ No proof of understanding database security, Row Level Security, or GDPR compliance
-❌ Inability to discuss how you handle incident response, failed webhooks, or zero-downtime migrations
-❌ Competing on price against overseas prompters because your portfolio doesn't demonstrate engineering rigor
+❌ Showcasing shallow screenshot galleries with zero technical explanation of underlying architecture
+❌ Failing to demonstrate how production concerns (security, backups, auth, performance) were engineered
+❌ Leaving client logos unreferenced without verifiable case study outcomes or quantitative metrics
+❌ Positioning as a cheap prompt-operator rather than a high-leverage production software engineer
 
-✅ Showcase production hardening case studies: document how you secured RLS, solved race conditions, and cut cloud costs
-✅ Highlight real telemetry: uptime percentages, sub-second latency scores, and automated test coverage
-✅ Demonstrate operational runbooks, disaster recovery plans, and enterprise compliance questionnaires you helped pass
-✅ Position yourself as the bridge between rapid AI prototyping and rock-solid enterprise stability
+✅ Structure portfolio case studies around concrete business challenges, technical risks, and measured outcomes
+✅ Highlight architectural decisions: Row Level Security, transactional integrity, and database pooling
+✅ Include verified client quotes, delivery timelines, and quantitative metrics (speed gains, cost reductions)
+✅ Position yourself as a production hardening partner who takes AI prototypes safely across the finish line
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we champion developers who master both AI speed and classical systems discipline. 💼
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help developers and agencies build enterprise-grade technical credibility that wins premium client contracts. 💼
 
-His result: Tim added production hardening case studies to his portfolio; his client close rate doubled in three months, commanding twice his previous rates. 🚀
+His result: Tim Roorda spent two weekends rewriting his portfolio around production engineering and launched one small product properly. His conversion from first conversation to paid client engagement roughly doubled over the next quarter, with two enterprise clients citing his security case studies as the exact reason they hired him. 🚀
 
-👉 Learn how to build a vibe coding portfolio that proves you can ship safely at scale: https://launchstudio.eu/en/blog/vibe-coding-developer-portfolio-shipping-safely
+👉 Upgrade your developer portfolio to showcase production engineering over AI screenshots: https://launchstudio.eu/en/blog/vibe-coding-developer-portfolio-shipping-safely
 
-#VibeCoding #DeveloperCareer #PortfolioBuilding #SoftwareEngineering #LaunchStudio #Manifera
+#Portfolio #Freelancing #VibeCoding #CareerGrowth #LaunchStudio #Manifera

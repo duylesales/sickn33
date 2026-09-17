@@ -1,21 +1,21 @@
-🚨 Bram built Declaratie for medical expense claims. A clever user noticed the approval Edge Function accepted an `approved: true` parameter from the client without verifying if the user was an admin — allowing staff to approve their own €800 claims. 😳
+🚨 Bram Osinga built Declaratie in Lovable: an expense-claim tool for 7 accountancy practices in Hilversum. Employees submitted claims and practice owners approved them. But an audit revealed Supabase Edge Functions accepted approval requests without caller authorization verification, allowing employees to approve their own expense payouts simply by sending a modified payload parameter. 😳
 
-Edge Functions are not automatically secure just because they run on the server. If they don't verify caller identity, they are open gates: 🧠
+Moving logic to Edge Functions doesn't make it secure unless you strictly verify authorization boundaries on the server: 🧠
 
-❌ Edge Functions accepting sensitive parameters directly from HTTP payloads without server-side validation
-❌ Failing to extract and verify the user's JWT bearer token against Supabase Auth inside the function
-❌ Using the `service_role` key inside Edge Functions without applying role-based authorization checks first
-❌ No rate limiting or CORS domain restriction on public Edge Function HTTP endpoints
+❌ Assuming Edge Functions are automatically secure without validating the caller's JWT authentication token
+❌ Using the privileged `service_role` key inside Edge Functions without checking row-level ownership
+❌ Accepting unvalidated JSON payloads from client browsers without schema enforcement
+❌ Failing to implement rate limits on sensitive functions, leaving them vulnerable to automated brute-force attacks
 
-✅ Always verify caller identity using `supabase.auth.getUser(token)` as the very first line of execution
-✅ Query user role tables on the server to verify administrative privileges before executing sensitive mutations
-✅ Restrain `service_role` execution to strictly bounded, validated operations with audit logs
-✅ Configure strict CORS policies and rate limiting on all deployed Edge Functions
+✅ Extract and cryptographically verify the user's JWT token on every Edge Function invocation
+✅ Scope all database operations inside Edge Functions to verified user organizations and roles
+✅ Validate incoming request bodies against strict Zod schemas before executing business logic
+✅ Enforce IP-based rate limiting, input sanitization, and structured audit logging
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we design airtight server-side boundaries that prevent privilege escalation and unauthorized actions. 🛡️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we audit and secure Edge Functions to ensure server-side business logic is truly tamper-proof. 🛡️
 
-His result: Declaratie closed the authorization flaw before launch, satisfying the practice owners' accountant and safeguarding thousands of expense claims. 🚀
+His result: Bram Osinga completed the Edge Function authorization hardening in 5 business days for €2,300 (caller verification across 6 functions, input validation, key scoping, rate limiting, logging). The flaw was sealed before launch, and an accountant's audit was satisfied with written security documentation. 🚀
 
-👉 Learn where the security boundary sits in Supabase Edge Functions: https://launchstudio.eu/en/blog/supabase-security-edge-functions-and-boundaries
+👉 Secure your Supabase Edge Functions and API trust boundaries before launching: https://launchstudio.eu/en/blog/supabase-security-edge-functions-and-boundaries
 
-#Supabase #EdgeFunctions #Cybersecurity #AuthSecurity #LaunchStudio #Manifera
+#Supabase #EdgeFunctions #Cybersecurity #Serverless #LaunchStudio #Manifera

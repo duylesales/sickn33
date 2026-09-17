@@ -1,21 +1,21 @@
-🚨 Wouter built Podiumkaart in Cursor. The code looked immaculate in the editor. But on opening night, two patrons bought seat B-14 simultaneously because Cursor couldn't see the database transaction race condition. 😳
+🚨 Wouter Bleeker built Podiumkaart in Cursor for theatre venues in Haarlem and Leiden. The code was pristine and passed unit tests. But when ticket sales opened for a popular show, 42 concurrent transactions hit the database at once: without atomic locking, seats were sold twice, and a payment timeout left Wouter completely blind because Cursor had never configured error monitoring. 😳
 
-Cursor writes brilliant code, but it is blind to the runtime world: latency, concurrent traffic, and database race conditions: 🧠
+Cursor sees your code, but it is blind to what happens at runtime under real concurrency and production load: 🧠
 
-❌ AI writing non-atomic check-then-insert queries that cause double-bookings during traffic spikes
-❌ Ignoring network latency between browser, Edge Functions, and database clusters
-❌ Missing optimistic locking or database row-level locking (`SELECT ... FOR UPDATE`)
-❌ Assuming local developer environment responsiveness translates to hundreds of mobile devices
+❌ Cursor suggests syntactically perfect database queries that create race conditions under concurrent load
+❌ Zero automated runtime observability: no structured logging, APM telemetry, or error trackers
+❌ Unpredictable connection exhaustion because AI editors don't configure connection pools
+❌ Third-party API webhook failures silently ignored without dead-letter queues or retry logic
 
-✅ Implement database-level atomic constraints and transactional locks for all scarce resources
-✅ Architect state machines that handle async network interruptions and partial failures
-✅ Simulate real concurrent load and edge-case latency before major marketing pushes
-✅ Bridge the gap between AI code generation and distributed systems engineering
+✅ Implement atomic database transactions (`SELECT FOR UPDATE`) and optimistic concurrency control
+✅ Instrument applications with comprehensive runtime telemetry and instant alert channels
+✅ Configure robust database pooling with PgBouncer to absorb sudden user spikes
+✅ Build idempotent webhook handlers with automated exponential backoff retries
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we harden the runtime reality that AI code assistants cannot see. 🎟️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we bridge the gap between AI-assisted code and resilient, production-hardened runtime systems. ⚡
 
-His result: Podiumkaart handled eleven sold-out performances across Haarlem with zero duplicate bookings and instant seat locking. 🚀
+His result: Wouter Bleeker completed the transaction rewrite and observability overhaul in 6 business days for €2,800. Two months later, the same venue ran a sold-out run of 11 performances without a single duplicate booking, and a provider timeout was caught 11 minutes before the venue called. 🚀
 
-👉 See the runtime blind spots Cursor leaves in your application: https://launchstudio.eu/en/blog/what-cursor-cannot-see-runtime-half-of-your-app
+👉 Uncover the critical runtime blindspots lurking in your Cursor codebase: https://launchstudio.eu/en/blog/what-cursor-cannot-see-runtime-half-of-your-app
 
-#Cursor #VibeCoding #Concurrency #DatabaseEngineering #LaunchStudio #Manifera
+#Cursor #VibeCoding #Observability #Concurrency #LaunchStudio #Manifera

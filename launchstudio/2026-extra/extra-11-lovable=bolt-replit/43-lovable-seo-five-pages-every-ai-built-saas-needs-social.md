@@ -1,21 +1,21 @@
-🚨 Femke built Planbaas in Lovable: a single slick landing page with an app link. After 3 months, organic search traffic was virtually zero. Buyers looking for 'Planbaas pricing' or 'Planbaas vs Calendly' found empty search results. 😳
+🚨 Femke Roelofs ran Planbaas, a shift-scheduling tool in Lovable for 22 hospitality businesses in Deventer and Zwolle. The app was clean and functional, but the entire website was a single homepage saying 'smarter scheduling for modern teams'. As a result, search engines ignored it, and organic customer inquiries stagnated at just one per month. 😳
 
-A single landing page cannot rank for multiple intent stages. Every commercial SaaS needs five essential structural pages: 🧠
+A single landing page cannot capture organic search intent. Every SaaS needs these 5 programmatic pages to win customers: 🧠
 
-❌ Single-page apps stuffing pricing, features, and FAQs onto one URL that confuses search crawlers
-❌ No dedicated 'Alternative to X' or competitor comparison pages capturing high-intent evaluation searches
-❌ Hiding pricing behind signup walls, losing buyers who search specifically for subscription costs
-❌ Missing dedicated Security and Compliance pages required by enterprise procurement evaluators
+❌ Building a single-page marketing site that tries to rank for every keyword on one URL
+❌ Missing dedicated competitor alternative and comparison pages capturing high-intent searchers
+❌ No industry-specific landing pages speaking directly to distinct target customer segments
+❌ Leaving pricing, feature documentation, and integration pages unindexed by search engines
 
-✅ Page 1: Dedicated Transparent Pricing page with detailed tier breakdown and FAQ schema
-✅ Page 2: High-intent Competitor Comparison pages ('Alternative to [Competitor]') with feature matrices
-✅ Page 3: Integration Directory showcasing third-party tools (Stripe, Google Calendar, Zapier)
-✅ Page 4: Security & GDPR Compliance page addressing data residency, sub-processors, and hosting
+✅ Build dedicated competitor comparison pages (e.g. 'Alternative to X') targeting evaluators
+✅ Create industry-focused landing pages (e.g. 'Scheduling for Hospitality in Netherlands')
+✅ Implement static pre-rendering and clean semantic HTML hierarchy for all public routes
+✅ Add structured JSON-LD SoftwareApplication schema markup across all product pages
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we build the complete five-page SaaS SEO architecture that turns searchers into qualified buyers. 📄
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we transform single-page AI prototypes into search-engine authority machines that drive steady organic pipeline. 📈
 
-Her result: Planbaas added the four missing pages; indexed URLs grew from 3 to 11, and organic demo inquiries tripled within ten weeks. 🚀
+Her result: Femke Roelofs deployed the 5-page SEO architecture in 5 business days for €2,300 (page structure, pre-rendering, metadata, schema, sitemap). Ten weeks later, indexed pages grew from 3 to 11, and organic inquiries jumped from 1 to 9 per month — with the alternatives page generating over half of all leads. 🚀
 
-👉 Build the five essential SEO pages every AI-built SaaS application needs: https://launchstudio.eu/en/blog/lovable-seo-five-pages-every-ai-built-saas-needs
+👉 Build the 5 essential SEO pages that every AI-generated SaaS needs: https://launchstudio.eu/en/blog/lovable-seo-five-pages-every-ai-built-saas-needs
 
-#LovableSEO #SaaSMarketing #SEOStrategy #ContentArchitecture #LaunchStudio #Manifera
+#SEO #SaaSGrowth #Lovable #ContentMarketing #LaunchStudio #Manifera

@@ -1,21 +1,21 @@
-🚨 Miriam spent €8,000 trying to wrap her Lovable healthcare rota into native iOS and Android apps. Apple rejected it twice for guideline violations, while her nursing staff just wanted a fast mobile schedule on their phones. 😳
+🚨 Miriam Aalders built Zorgrooster in Lovable: a shift rota tool for home-care teams in Enschede. Within two months, four team leads demanded 'a mobile app', and a development agency quoted €38,000 to build native iOS and Android apps — which would have burned nearly her entire startup runway before validating mobile retention. 😳
 
-Most founders think they need App Store presence. For workflow apps, a Progressive Web App (PWA) delivers 95% of the power at 10% of the friction: 🧠
+Native apps cost 5x more to build and maintain, and App Store approval slows iteration to a crawl. Here's why PWAs win for MVPs: 🧠
 
-❌ Wasting months and thousands of euros fighting App Store review guidelines for simple internal tools
-❌ Managing three disparate codebases (web, iOS, Android) that constantly drift out of sync
-❌ Losing 30% of in-app revenue to Apple and Google payment processing commissions
-❌ Forcing users through multi-step app store downloads instead of instant mobile access
+❌ Spending €30k+ building duplicate native codebases (Swift and Kotlin) for an unproven MVP
+❌ Apple and Google App Store review cycles blocking critical bug fixes for days during launch week
+❌ Paying 15% to 30% App Store transaction fees on subscriptions and digital services
+❌ Managing three separate codebases (Web, iOS, Android) with a solo founder budget
 
-✅ Configure a high-performance Progressive Web App (PWA) with web app manifest and offline caching
-✅ Implement native Web Push Notifications that work across modern iOS and Android browsers
-✅ Maintain a single, unified codebase that updates instantly on the web without app store approval delays
-✅ Reserve native wrappers only for apps requiring specialized device hardware (Bluetooth, background GPS)
+✅ Configure a Progressive Web App (PWA) with service workers, offline caching, and home-screen install
+✅ Implement native-feel touch interactions, bottom sheets, and responsive mobile layouts
+✅ Set up web push notifications via the Web Push API without paying App Store fees
+✅ Ship instant updates to all devices simultaneously on every Git commit
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we help you choose the right mobile delivery model without wasting budget on unnecessary native wrappers. 📱
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we turn Lovable web apps into high-performance Progressive Web Apps that feel completely native on iOS and Android. 📱
 
-Her result: 71 out of 94 nurses installed Zorgrooster as a PWA in week one, shift notifications arrived in seconds, and Miriam saved €12,000 in native maintenance. 🚀
+Her result: Miriam Aalders turned Zorgrooster into a production PWA in 6 business days for €2,300 (PWA setup, mobile interface pass, web push notifications). Within a month, 71 of 94 care staff installed it on their home screens, shift acknowledgements sped up by 11 minutes, and she saved the €38,000 native budget entirely. 🚀
 
-👉 Learn when your Lovable app needs a PWA versus a native mobile build: https://launchstudio.eu/en/blog/lovable-app-on-mobile-pwa-or-native
+👉 Learn why a Progressive Web App is the smartest mobile strategy for AI MVPs: https://launchstudio.eu/en/blog/lovable-app-on-mobile-pwa-or-native
 
-#PWA #MobileApps #Lovable #AppDevelopment #LaunchStudio #Manifera
+#PWA #MobileApps #Lovable #StartupCosts #LaunchStudio #Manifera

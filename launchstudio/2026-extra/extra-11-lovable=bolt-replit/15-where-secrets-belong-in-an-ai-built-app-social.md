@@ -1,21 +1,21 @@
-🚨 Stefan built Bezorgroute for catering companies. One morning, his Mapbox bill hit €1,800: an automated bot scraped his routing API key straight out of his public frontend JavaScript bundle. 😳
+🚨 Stefan Rombouts built Bezorgroute in Cursor: a delivery route optimizer for small catering firms around Tilburg. The app called a commercial mapping API for routing. Because the API key was stored in a prefixed environment variable, it was compiled directly into the client-side JavaScript bundle — where scrapers found it and racked up €1,800 in unmetered billing. 😳
 
-AI generators love convenience, which is why they put API keys in frontend code. Here's how secrets get stolen: 🧠
+If an API key is in your frontend code, it is public to the entire world. Here's how secrets get leaked: 🧠
 
-❌ Hardcoding paid third-party API keys (OpenAI, Google Maps, Resend) into React components
-❌ Prefixing private keys with `VITE_` or `NEXT_PUBLIC_`, mistakenly believing they are hidden
-❌ Committing `.env` files with live production secrets into version-controlled repositories
-❌ No usage quotas, rate limits, or domain restrictions configured in provider dashboards
+❌ Prefixing private API secrets with `VITE_` or `NEXT_PUBLIC_`, embedding them in browser bundles
+❌ Allowing frontends to make third-party API requests directly without a backend proxy
+❌ Committing unencrypted `.env` files with production database credentials to GitHub
+❌ Missing billing quotas and anomaly spending alerts in third-party API dashboards
 
-✅ Route all third-party API calls through server-side Edge Functions that hold secrets securely
-✅ Restrict API keys with strict HTTP referrers, IP whitelists, and hard billing budget alerts
-✅ Use modern secret management tooling and automate secret rotation upon exposure
-✅ Implement build linter checks that fail immediately if private keys appear in frontend bundles
+✅ Move all external API calls behind authenticated server-side proxy Edge Functions
+✅ Store secrets exclusively in server environment configurations or dedicated secret vaults
+✅ Enforce secret rotation policies and automated CI scanners (e.g. GitGuardian)
+✅ Set hard spending caps and anomaly webhook alerts across all third-party provider dashboards
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we extract secrets from client code and build secure server proxies that protect your wallet. 🛡️
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we lock down API secret boundaries to protect your credentials and your bank account. 🔑
 
-His result: Stefan's mapping costs returned to baseline and stayed predictable for fourteen months across dozens of catering clients. 🚀
+His result: Stefan Rombouts completed the credential audit and proxy rebuild in 4 business days for €1,650 (key rotation, server-side proxy with rate limiting, pipeline checks). Mapping expenses returned to normal and have scaled predictably with subscribers for 14 months, with zero further exposures. 🚀
 
-👉 Learn where API keys and secrets actually belong in an AI-built application: https://launchstudio.eu/en/blog/where-secrets-belong-in-an-ai-built-app
+👉 Audit your API secret architecture before unexpected bills arrive: https://launchstudio.eu/en/blog/where-secrets-belong-in-an-ai-built-app
 
-#Lovable #Cybersecurity #APIKeys #CloudCosts #LaunchStudio #Manifera
+#Cybersecurity #APISecrets #Cursor #WebDevelopment #LaunchStudio #Manifera

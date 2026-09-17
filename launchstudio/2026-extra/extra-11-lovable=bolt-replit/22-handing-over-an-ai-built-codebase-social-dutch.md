@@ -1,25 +1,23 @@
-📋 Draagt u een AI-gebouwd platform over aan een klant of intern team? Zonder operationeel draaiboek leidt het eerste verlopen API-token direct tot een crisissituatie.
+📁 Bureau Nordkaap, een digitaal bureau in Leeuwarden onder leiding van Joke Hoekstra, leverde een ledenplatform voor een wielerbond via Bolt. Klant dolblij. Maar toen maanden later 's avonds een serverfout optrad, bleken API-sleutels gekoppeld aan het privé-mailadres van een ex-medewerker en ontbrak elk draaiboek voor herstart. 😳
 
-Een Git-repository overdragen is geen oplevering. Een professionele overdracht bevat documentatie, architectuurschema's en herstelprocedures.
+Software overdragen zonder degelijke documentatie creëert enorme operationele kwetsbaarheid. Waar het misgaat:
 
-Waar het vaak misgaat bij de overdracht van AI-codebases:
+❌ Cloud- en database-accounts die op persoonlijke e-mailadressen van externe freelancers staan geregistreerd
+❌ Geen architectuurdocumentatie over datamodellen, achtergrondtaken en externe API-koppelingen
+❌ Ontbrekende documentatie van omgevingsvariabelen en geheime productiesleutels
+❌ Oprichters achterlaten zonder operationeel draaiboek voor updates, back-up-restore of storingen
 
-❌ Alleen de code overdragen zonder uitleg over databasemigraties, seed data of RLS-regels
-❌ Niet-gedocumenteerde API-sleutels verspreid over verschillende accounts en persoonlijke laptops
-❌ Geen incident-runbook voor het roteren van geheimen of het terugdraaien van foutieve releases
-❌ De klant kan eenvoudige beheeracties niet zelfstandig uitvoeren en blijft afhankelijk van de bouwer
+Wat u wél moet inrichten vóór u de laatste factuur aan een developer betaalt:
 
-Wat u wél moet inrichten vóór de klant vastloopt bij het eerste incident:
+✅ Volledige overdracht van alle accounts (cloud, database, domein) naar zakelijke organisatie-e-mails
+✅ Heldere architectuurschetsen en datamodellen vastleggen in een centrale repository-wiki
+✅ Een operationeel runbook leveren voor deployments, rollbacks en noodherstel
+✅ Een interactieve overdrachtssessie organiseren waarin de opdrachtgever zelfstandig leert schakelen
 
-✅ Een heldere architectuurblauwdruk met datastromen, externe API's en autorisatielagen
-✅ Een operationeel 'runbook' met stappenplannen voor back-ups, deployment en herstel
-✅ Gestandaardiseerde lokale setup-instructies en geautomatiseerde testscripts
-✅ Een interactieve overdrachtssessie waarin de operationele werking stap voor stap wordt getoetst
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, leveren we gestructureerde overdrachtspakketten en runbooks zodat u altijd 100% eigenaar en meester over uw eigen techniek blijft.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, leveren we software op met de documentatie en runbooks die professionele IT-organisaties eisen.
+💡 Het resultaat: Joke Hoekstra liet een uniform overdrachtspakket inrichten binnen 3 werkdagen voor € 1.400. Bij 11 volgende projecten werden drie incidenten buiten kantooruren direct opgelost door andere developers én door de klant zelf aan de hand van het runbook. 🚀
 
-💡 Zo leverde bureau Bureau Nordkaap in Leeuwarden 11 projecten op met complete draaiboeken; drie weekendstoringen werden door klanten binnen 20 minuten zelf opgelost.
+👉 Download onze complete checklist voor een professionele software-overdracht: https://launchstudio.eu/nl/blog/handing-over-an-ai-built-codebase
 
-👉 Lees wat er in een volwaardige overdracht van een AI-codebase hoort: https://launchstudio.eu/nl/blog/handing-over-an-ai-built-codebase
-
-#CodeOverdracht #Lovable #Documentatie #DevOps #LaunchStudio #Manifera
+#Overdracht #Documentatie #SoftwareOntwikkeling #Runbook #LaunchStudio #Manifera

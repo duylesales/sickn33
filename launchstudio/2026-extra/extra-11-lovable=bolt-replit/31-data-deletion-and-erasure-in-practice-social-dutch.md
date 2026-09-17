@@ -1,25 +1,23 @@
-⚖️ Vraagt een gebruiker om verwijdering volgens de AVG en zet u simpelweg `is_deleted = true` in de database? Pas op: een soft-delete is géén wettelijke gegevenswissing.
+⚖️ Hanneke Doorn runde Buurtkracht voor buurtgemeenschappen in Zwolle. Twee bewoners dienden een formeel AVG-verwijderverzoek in. Hanneke wiste hun accounts in `auth.users`, maar door falende foreign keys bleven privégegevens, telefoonnummers en adressen intact in 8 gerelateerde databasetabellen en mailings. 😳
 
-Als verwijderde gebruikersnamen blijven opduiken in zoekresultaten, e-maillijsten of back-ups, overtreedt u direct Artikel 17 van de AVG.
+Een rij wissen in uw gebruikerstabel is géén AVG-conforme gegevenswissing. Waar het vaak misgaat bij het Recht op vergetelheid:
 
-Waar het vaak misgaat bij AVG-gegevenswissing in Supabase:
+❌ Een account wissen terwijl persoonsgegevens achterblijven in gekoppelde databasetabellen
+❌ Vergeten om data te wissen bij externe subverwerkers zoals mailproviders en betalingsdiensten
+❌ Ontbreken van geautomatiseerde bewaartermijnen waardoor data voor altijd opgeslagen blijft
+❌ Geen audittrail kunnen tonen aan toezichthouders dat data definitief en onomkeerbaar is gewist
 
-❌ Soft-deletes gebruiken waardoor persoonsgegevens vindbaar blijven voor achtergrondtaken en exports
-❌ Persoonsgegevens blijven achter in gekoppelde tabellen (zoals reacties, logs en notificaties)
-❌ Geüploade pasfoto's en documenten blijven oneindig opvraagbaar in cloudopslag-buckets
-❌ Geen onderscheid tussen data die gewist móet worden en facturen die 7 jaar bewaard moeten blijven
+Wat u wél moet inrichten vóór een privacy-toezichthouder of FG uw werkwijze afkeurt:
 
-Wat u wél moet inrichten vóór een privacy-klacht escaleert naar de toezichthouder:
+✅ Databaseregels inrichten met cascading anonimisering en geautomatiseerde purge-workers
+✅ Geautomatiseerde API-triggers bouwen die dataverwijdering doorvoeren bij alle externe diensten
+✅ Strikte retentie- en bewaartermijnen afdwingen op logs, back-ups en documentopslag
+✅ Geverifieerde verwijderbevestigingen genereren voor formele AVG-dossiers
 
-✅ Inrichten van geautomatiseerde cascading deletes of onomkeerbare pseudonimisering van historische data
-✅ Directe verwijdering van gekoppelde mediabestanden en documenten uit opslagbuckets
-✅ Juridisch sluitend retentiebeleid dat fiscale bewaarplichten verenigt met het recht op vergetelheid
-✅ Geautomatiseerde bevestigingsrapporten die exact aantonen welke data conform de wet is gewist
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we geautomatiseerde AVG-verwijderstromen in zodat u altijd aantoonbaar compliant bent met de privacywetgeving.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we data-lifecycle- en verwijderstromen in die 100% voldoen aan de AVG.
+💡 Het resultaat: Hanneke Doorn liet Buurtkracht binnen 7 werkdagen AVG-veilig inrichten voor € 3.400 (verwijder-architectuur, schema-regels, retentie-automatisering). Het platform slaagde voor de privacytoets van de gemeente Zwolle zonder ook maar één achtergebleven record. 🚀
 
-💡 Zo handelde buurtplatform Buurtkracht in Zwolle privacyverzoeken juridisch sluitend af en doorstond glansrijk een gemeentelijke audit.
+👉 Lees hoe u dataverwijdering en bewaartermijnen AVG-proof inricht in uw app: https://launchstudio.eu/nl/blog/data-deletion-and-erasure-in-practice
 
-👉 Ontdek hoe u gegevenswissing en AVG-erasure technisch correct inricht: https://launchstudio.eu/nl/blog/data-deletion-and-erasure-in-practice
-
-#AVG #GDPR #Privacy #Supabase #LaunchStudio #Manifera
+#AVG #GDPR #Privacy #Databeveiliging #LaunchStudio #Manifera

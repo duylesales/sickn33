@@ -1,25 +1,23 @@
-👥 Huurt u een 'Lovable-expert' in om uw app uit te breiden? Pas op: een prompt intikken is iets heel anders dan betrouwbare software-architectuur neerzetten.
+👥 Anouk Peeters bouwde Rooster, een shift-planning tool voor horecazaken in Breda, in Lovable. Ze betaalde een freelancer op een marktplaats € 6.500 voor 'productie-hardening'. Het duurde 11 weken in plaats van 3, en de freelancer herschreef de hele frontend naar eigen code waardoor Anouk niets meer kon aanpassen in Lovable. 😳
 
-Veel zelfbenoemde AI-developers lossen bugs op door nog meer prompts te genereren, met onbeheersbare spaghetti-code en vastlopende databases tot gevolg.
+Een developer inhuren voor een AI-codebase vraagt om een heel ander selectieproces dan traditionele IT. Waar het vaak misgaat:
 
-Waar het vaak misgaat bij het inhuren van Lovable-ontwikkelaars:
+❌ Ontwikkelaars inhuren die uw AI-prototype meteen willen weggooien voor een dure € 15k rebuild
+❌ Freelancers selecteren zonder aantoonbare ervaring met Supabase RLS en productie-architectuur
+❌ Grote vaste bedragen betalen zonder kleine proefopdracht of geverifieerde referenties
+❌ Verlies van controle doordat de developer de code weghaalt uit uw vertrouwde no-code/AI omgeving
 
-❌ Freelancers die 'vibe coden' zonder kennis van relationele databases of Row Level Security
-❌ Rechtstreeks wijzigingen doorvoeren in de live-omgeving zonder Git-versiebeheer of staging
-❌ Bugs stapelen zich op omdat niemand begrijpt wat de AI onder de motorkap genereert
-❌ Geen kennis van rate-limits, webhook-idempotentie of foutafhandeling bij API-koppelingen
+Wat u wél moet inrichten vóór u duizenden euro's verspilt aan verkeerde uren:
 
-Wat u wél moet inrichten vóór u iemand aanneemt:
+✅ Start altijd met een betaalde proefopdracht (€ 250–€ 500) op een specifiek hardening-onderdeel
+✅ Toets vooraf diepgaande kennis van backend-architectuur, database-pooling en databeveiliging
+✅ Eis dat uw frontend intact blijft zodat u zelfstandig in Lovable of Cursor kunt blijven doorontwikkelen
+✅ Leg volledige codebase-eigendom, documentatie en deployment-runbooks contractueel vast
 
-✅ Toets kandidaten op databasekennis: vraag hoe zij race conditions en RLS-beleid inrichten
-✅ Eis een professionele Git-workflow met duidelijke pull requests en changelogs
-✅ Controleer of de ontwikkelaar begrijpt hoe backend Edge Functions veilig worden aangeroepen
-✅ Kies voor ervaren engineers die weten wanneer AI volstaat en wanneer maatwerkcode vereist is
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, versterken we uw applicatie onder de motorkap terwijl u 100% eigenaar en beheerder blijft van uw Lovable-omgeving.
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, leveren we senior ontwikkelaars die uw AI-prototype voorzien van robuuste, herbruikbare en veilige productiecode.
+💡 Het resultaat: Anouk Peeters stapte over naar LaunchStudio via een proeftaak van € 280, gevolgd door een Launch Ready Package van € 3.400 binnen 19 werkdagen. Ze bouwde de maand erna zelf twee features bij in Lovable tegen minder dan de helft van de eerdere kosten. 🚀
 
-💡 Zo ging personeelsplanner Rooster in Breda binnen 19 werkdagen live met een stabiele codebase die de oprichter nu zelfstandig kan beheren.
+👉 Lees de complete gids voor het inhuren van een betrouwbare Lovable developer: https://launchstudio.eu/nl/blog/hiring-a-lovable-developer-what-to-look-for
 
-👉 Ontdek de kritieke interviewvragen voor Lovable-ontwikkelaars: https://launchstudio.eu/nl/blog/hiring-a-lovable-developer-what-to-look-for
-
-#Lovable #Inhuren #SoftwareEngineering #VibeCoding #LaunchStudio #Manifera
+#Lovable #Inhuren #VibeCoding #SoftwareOntwikkeling #LaunchStudio #Manifera

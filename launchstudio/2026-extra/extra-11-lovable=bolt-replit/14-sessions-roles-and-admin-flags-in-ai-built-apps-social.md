@@ -1,21 +1,21 @@
-🚨 Marijn built DierZorg for independent vet clinics. A tech-savvy vet opened DevTools, changed `role: 'user'` to `role: 'admin'` in localStorage, and unlocked patient records and financials across every clinic on the platform. 😳
+🚨 Marijn Kuipers built DierZorg in Lovable as a shared platform for 11 independent veterinary clinics around Apeldoorn. Prior to an institutional review, a security audit revealed that an authenticated staff member at Clinic A could access medical records, patient files, and billing data for Clinic B simply by altering a query parameter in the browser URL. 😳
 
-If your app trusts role flags stored in the browser, you don't have security — you have an illusion: 🧠
+Authentication proves who a user is; authorization determines what they can touch. Don't mix them up: 🧠
 
-❌ Storing authorization roles (`isAdmin`, `organizationId`) in browser state or unverified JWT claims
-❌ Frontend components conditionally hiding buttons instead of enforcing backend API authorization
-❌ Single-tenant assumptions: querying tables by user ID without checking clinic/organization boundaries
-❌ Sessions that never invalidate on password reset or role revocation
+❌ Relying on a simple `is_admin` boolean flag stored in user-editable profiles
+❌ Failing to enforce multi-tenant organization boundaries at the database row level
+❌ Storing sensitive session claims client-side where users can manipulate them in browser storage
+❌ Missing server-side token revocation when user permissions change or staff are offboarded
 
-✅ Enforce multi-tenant Row Level Security based strictly on verified server-side session tokens
-✅ Validate role permissions exclusively inside Supabase database functions or Edge Functions
-✅ Separate tenant data cryptographically with mandatory organization-level foreign keys
-✅ Implement instant server-side session revocation and refresh token rotation
+✅ Implement strict multi-tenant Row Level Security policies checking organization memberships
+✅ Store role hierarchies and permissions in verified database tables, never in client metadata
+✅ Use custom JWT claims minted securely by server-side Edge Functions
+✅ Build automated permission testing into your CI pipeline to catch privilege leaks before release
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we lock down multi-tenant RBAC architectures so no user can ever cross organization walls. 🔐
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we architect enterprise multi-tenant authorization systems that guarantee strict data separation. 🔒
 
-His result: DierZorg passed a nine-practice veterinary group's security audit, scaling across twenty practices with airtight tenant isolation. 🚀
+His result: Marijn Kuipers completed the Launch Ready Package in 9 business days for €3,700 (role model, tenancy isolation, session hardening, permission tests). Six weeks later, a 9-practice veterinary group signed on following a spotless security review, and DierZorg runs permission tests on every deploy. 🚀
 
-👉 Audit your role-based access control before a user hacks your admin panel: https://launchstudio.eu/en/blog/sessions-roles-and-admin-flags-in-ai-built-apps
+👉 Verify your Supabase RBAC and session security before adding multi-tenant clients: https://launchstudio.eu/en/blog/sessions-roles-and-admin-flags-in-ai-built-apps
 
-#Supabase #Cybersecurity #RBAC #MultiTenant #LaunchStudio #Manifera
+#Supabase #Auth #Security #MultiTenancy #LaunchStudio #Manifera

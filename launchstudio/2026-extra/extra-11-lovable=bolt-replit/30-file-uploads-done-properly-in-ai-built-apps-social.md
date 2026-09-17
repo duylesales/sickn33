@@ -1,21 +1,21 @@
-🚨 Ravi built Vintagehoek for antique dealers. A buyer noticed uploaded camera photos contained raw EXIF GPS coordinates — pinpointing the exact home addresses and storage barns of high-value antique sellers. 😳
+🚨 Ravi Mehta built Vintagehoek in Lovable: a marketplace for second-hand furniture in Haarlem. Sellers took photos at home and listed items. But an audit revealed uploaded images retained unstripped EXIF metadata — exposing sellers' private home GPS coordinates — while uncompressed 8MB smartphone photos exhausted cloud bandwidth and crashed mobile browsers. 😳
 
-File upload forms look innocent. In reality, they are the number one vector for data leaks, malware, and ballooning storage bills: 🧠
+File uploads are the single most dangerous vector for security breaches and storage cost spikes. Here is the production upload standard: 🧠
 
-❌ Storing uploaded photos with unstripped EXIF metadata, exposing users' precise physical locations
-❌ Leaving storage buckets publicly readable, allowing web scrapers to download private documents
-❌ Relying on browser-reported file extensions without verifying actual MIME types on the server
-❌ Accepting massive 20MB camera raw images without compression, destroying page load speeds
+❌ Uploading files directly to public storage buckets without stripping sensitive EXIF GPS location data
+❌ Allowing uncompressed 5–10MB phone images to overload mobile browsers and inflate CDN bandwidth bills
+❌ Accepting file extensions without inspecting true underlying file MIME magic bytes on the server
+❌ Generating public, permanent URLs for private documents instead of time-limited signed links
 
-✅ Automatically strip all EXIF metadata and re-encode images to WebP/JPEG upon upload
-✅ Restrict storage buckets with authenticated Row Level Security and temporary signed URLs
-✅ Verify file signatures (magic bytes) on the server to block disguised malicious files
-✅ Implement automatic image resizing pipelines that create responsive web thumbnails instantly
+✅ Strip all EXIF geolocation metadata automatically on upload before saving files to storage
+✅ Compress, resize, and convert images to WebP format via an automated serverless image pipeline
+✅ Verify file types using server-side magic-byte inspection to permanently block malicious payloads
+✅ Store private files in private storage buckets accessible only via cryptographically signed URLs
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we build bulletproof file upload pipelines that protect user privacy and optimize storage costs. 📁
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we engineer hardened, optimized file upload pipelines that protect privacy and slash storage overhead. 🖼️
 
-His result: Vintagehoek eliminated location data exposure, cut storage costs by 75%, and accelerated listing page loads to under one second. 🚀
+His result: Ravi Mehta completed the file upload overhaul in 6 business days for €2,650 (upload validation, metadata stripping, image pipeline, signed access, existing file cleanup). Storage and bandwidth bills fell by 75%, mobile listing pages load in under 1 second, and the home coordinates privacy leak was completely eliminated. 🚀
 
-👉 Learn how to handle file uploads properly and securely in an AI-built app: https://launchstudio.eu/en/blog/file-uploads-done-properly-in-ai-built-apps
+👉 Secure and optimize your web app's file upload pipeline today: https://launchstudio.eu/en/blog/file-uploads-done-properly-in-ai-built-apps
 
-#SupabaseStorage #FileUploads #Cybersecurity #Privacy #LaunchStudio #Manifera
+#FileUploads #Cybersecurity #Privacy #WebDevelopment #LaunchStudio #Manifera

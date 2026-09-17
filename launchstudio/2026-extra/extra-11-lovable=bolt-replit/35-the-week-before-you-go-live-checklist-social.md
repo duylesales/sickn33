@@ -1,21 +1,21 @@
-🚨 Daan was 48 hours away from launching Voorraadje to 11 retail stores in Maastricht. A last-minute pre-flight audit caught 3 critical landmines: DNS TTL set to 48 hours, staging database pointing to production Stripe, and missing SPF records. 😳
+🚨 Daan Coppens had a launch date for Voorraadje, a stock-tracking tool for 11 retail stores in Maastricht and Heerlen. With 48 hours to go-live, a pre-flight audit revealed his Stripe webhooks were unverified, email DNS lacked SPF/DKIM, and no backup restore had ever been tested — putting his entire launch at immediate risk. 😳
 
-Going live shouldn't be a leap of faith. Here's the pre-flight checklist that separates smooth launches from disasters: 🧠
+Seven days before go-live is when unseen technical omissions surface. Here is your mandatory pre-flight launch checklist: 🧠
 
-❌ DNS Time-To-Live (TTL) left at 86,400 seconds, meaning domain fixes take 24-48 hours to propagate worldwide
-❌ Staging and preview environments sharing live Stripe keys, triggering real card charges during test runs
-❌ No rate-limiting or bot protection on signup forms, risking instant spam contamination
-❌ Unverified database backup restores and missing uptime monitoring alerts
+❌ Launching on a preview platform domain instead of a verified, SSL-secured custom domain
+❌ Payment webhooks unverified, risking missing revenue states and duplicate fulfillment
+❌ Transactional emails failing spam filters because SPF, DKIM, and DMARC were never verified
+❌ Zero automated error tracking, leaving founders oblivious when real users encounter bugs
 
-✅ Lower DNS TTL to 300 seconds one week before cutover for rapid rollback capability
-✅ Strictly isolate environment variables and verify test keys across all non-production branches
-✅ Execute an end-to-end smoke test verifying real payment capture, email delivery, and auth redirects
-✅ Establish active external uptime alerts and verify database restore procedures 7 days prior
+✅ Complete an end-to-end payment audit verifying webhooks, refund flows, and idempotency
+✅ Audit domain DNS records for email deliverability (SPF/DKIM/DMARC) and SSL coverage
+✅ Rehearse a complete database restore drill in an isolated staging environment
+✅ Instrument Sentry or PostHog to receive instant mobile alerts on unhandled frontend errors
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, our Launch Ready audit runs a 24-point pre-flight checklist that guarantees a calm, flawless go-live. 🚀
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we execute comprehensive pre-launch audits that guarantee a calm, incident-free go-live. 🚀
 
-His result: Daan postponed by 4 days to fix all three issues; launch day went off without a single lost transaction across all eleven retail shops. 🚀
+His result: Daan Coppens completed the emergency pre-launch hardening in 4 business days for €3,050 (access control remediation, payment webhook, email authentication, recovery rehearsal). All 11 shops launched smoothly on schedule with zero cross-store data leakage. 🚀
 
-👉 Run through the 24-point pre-flight checklist before taking your app live: https://launchstudio.eu/en/blog/the-week-before-you-go-live-checklist
+👉 Download the definitive 7-day pre-launch checklist for AI-built web applications: https://launchstudio.eu/en/blog/the-week-before-you-go-live-checklist
 
-#LaunchChecklist #DevOps #GoLive #SaaSLaunch #LaunchStudio #Manifera
+#GoLive #Checklist #Startups #DevOps #LaunchStudio #Manifera

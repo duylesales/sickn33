@@ -5,6 +5,16 @@
 ### Tháng 09
 #### Ngày 17
 
+- **12:05**: Hoàn thành viết và **đồng bộ hóa 100% tên Founder, ứng dụng, thành phố, số liệu kỹ thuật và chi phí/thời gian thực tế** cho toàn bộ **120 bài social media (60 bài tiếng Anh `*-social.md` + 60 bài tiếng Hà Lan `*-social-dutch.md`)** thuộc cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/):
+  - **Đồng bộ hóa tuyệt đối với Case Study bài gốc (`## Real example`):**
+    - Sử dụng họ tên đầy đủ của Founder (Bram Verhoeven, Sanne Bakker, Joris Nieuwenhuis, Thomas de Wit, Ilse Kramer, Daan Hoekstra, Anouk Peeters, Joost Meijer, Ruben Elsinga, Maud Sanders, Sander Vos, Fenna Hoekman, v.v.).
+    - Tích hợp số liệu định lượng chi tiết vào Hook (900 người chơi padel, 60 người đặt sân trong 20 phút, lỗi sập kết nối từ user 31, 340 người dùng, 60.000 lượt gọi API, 18.000 danh mục sản phẩm, v.v.).
+    - Tích hợp chi phí chính xác, gói dịch vụ, thời gian triển khai và kết quả định lượng vào Result (ví dụ: `€2.400 Launch Ready Package trong 8 ngày làm việc + €49/tháng managed hosting`, `xử lý mượt mà đợt ra mắt 400 hội viên không downtime`, `vượt qua bài kiểm tra an ninh bảo hiểm sau 5 tuần`, v.v.).
+  - **Chuẩn hóa slug file và CTA URL:** Khớp 100% slug file social với slug bài viết gốc (`https://launchstudio.eu/en/blog/[slug]` và `https://launchstudio.eu/nl/blog/[slug]`).
+  - **Dọn dẹp triệt để:** Xóa bỏ 68 file social mồ côi bị lệch slug từ các lần chạy trước; đưa thư mục về đúng cấu trúc chuẩn **180 file markdown** (60 bài viết gốc + 60 bài social EN + 60 bài social NL).
+  - **Kiểm toán tự động:** Đạt 100% pass (60/60 tên founder khớp, 60/60 chi phí & timeline khớp, 60/60 kết quả định lượng khớp, 0 câu chuyển ý trùng lặp, 0 link lỗi).
+  - Lưu trữ master script đồng bộ tại [`launchstudio/sys/sync_all_social.py`](file:///Users/duyle/sickn33/launchstudio/sys/sync_all_social.py).
+
 - **11:20**: Viết mới **40 bài tiếng Anh** cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) (thư mục trước đó trống, không có kế hoạch từ khoá sẵn nên tự lên đề tài từ bộ keyword được giao):
   - **Bộ từ khoá gốc**: Lovable, Bolt, Cursor, Replit, lovable hosting, lovable supabase, lovable custom domain, lovable seo, lovable developer, lovable expert, vibe coding developer, lovable security, supabase security, ai app security.
   - **Phân bổ 40 chủ đề**:

@@ -1,21 +1,21 @@
-🚨 Koen grew Tweedehands Atelier to 1,000 active users. Suddenly, his monthly Supabase and compute invoices quadrupled from €60 to €340/month — all because of two unindexed queries and uncompressed asset downloads. 😳
+🚨 Koen Bruinsma's app, Tweedehands Atelier, was a craft equipment marketplace in Amersfoort with 1,200 registered users built on Lovable and Supabase. His monthly infrastructure bill steadily climbed to become the single largest operational expense, threatening his modest commission margins as unoptimized queries and uncompressed image storage triggered costly serverless tiers. 😳
 
-AI infrastructure looks cheap during development. Scaling to 1,000+ users exposes the hidden cost multipliers: 🧠
+Free tiers expire fast when real users start uploading media and running queries. Here's what your AI app actually costs to run: 🧠
 
-❌ Unindexed queries triggering expensive disk IOPS spikes and requiring higher database compute tiers
-❌ Serving original multi-megabyte image assets that inflate cloud egress bandwidth bills
-❌ Edge Functions invoked on every single asset request without edge caching headers
-❌ Overpaying for third-party AI tokens and services due to redundant, un-cached prompt executions
+❌ Supabase database compute charges scaling exponentially due to unindexed queries and runaway connections
+❌ Storage and egress bandwidth charges exploding from unoptimized multi-megabyte user photo uploads
+❌ Third-party API and AI token consumption compounding silently without hard monthly spend ceilings
+❌ Paying premium cloud rates for inefficient prototype architectures that could run on lean tiers
 
-✅ Optimize queries and add covering indexes to stay comfortable on lean database tiers
-✅ Implement CDN caching and responsive asset transformations to cut bandwidth by 75%
-✅ Cache idempotent API calls and AI completions to slash external token expenses
-✅ Establish real-time cost monitoring and automated billing alerts before surprises happen
+✅ Add database indexes and connection pooling to safely downgrade to lean, predictable compute tiers
+✅ Implement client-side and Edge WebP image compression to slash bandwidth egress by up to 80%
+✅ Establish strict monthly budget caps, spending webhooks, and cost telemetry alerts
+✅ Consolidate architecture onto managed hosting with fixed maintenance from €49/month
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we audit your cloud economics and optimize code so scaling up doesn't blow up your margins. 💰
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we audit and refactor cloud architectures to slash runaway infrastructure costs by up to 75%. 💰
 
-His result: monthly infrastructure spend fell by 75% back to under €90/month, while page load times dropped from 4 seconds to 800ms. 🚀
+His result: Koen Bruinsma completed the cost-optimization overhaul in 5 business days for €2,100 (image pipeline, indexes, orphan cleanup, logging and alerts). Monthly infrastructure bills dropped to roughly a quarter (25%), mobile browse speed dropped from >4s to <1s, and he safely moved to a smaller database tier. 🚀
 
-👉 Learn what it actually costs to run Lovable and Supabase at 1,000+ active users: https://launchstudio.eu/en/blog/cost-of-running-lovable-supabase-at-scale
+👉 Calculate the real production cost of running your Lovable and Supabase app: https://launchstudio.eu/en/blog/cost-of-running-lovable-supabase-at-scale
 
-#CloudCosts #Supabase #Lovable #SaaSMargins #LaunchStudio #Manifera
+#CloudCosts #Supabase #Lovable #Architecture #LaunchStudio #Manifera

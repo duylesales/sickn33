@@ -1,25 +1,25 @@
-🇳🇱 Verkoopt u software aan Nederlandse bedrijven of instellingen? Bereid u voor: de Functionaris Gegevensbescherming (FG) stelt 7 vragen die uw deal kunnen maken of breken.
+📋 Tessa Blom bouwde Planbaar voor thuiszorgplanning in Deventer. Twee zorgteams gebruikten het informeel. Maar toen een grote zorgorganisatie wilde tekenen, stuurde hun FG een privacy-audit van 19 vragen: de database bleek in de VS te draaien, dataverwijdering was onmogelijk en er was geen enkele auditlog van dossierinzage. 😳
 
-Nederlandse B2B-klanten accepteren geen vage beloftes. Ze eisen concrete antwoorden over hostinglocaties, subverwerkers en AI-trainingsverboden.
+Nederlandse zakelijke en zorgklanten stellen strenge eisen aan de AVG. Waar AI-apps stuiten op afwijzingen:
 
-Waar het vaak misgaat bij AVG-vragen van Nederlandse B2B-kopers:
+Waar het vaak misgaat bij AVG- en privacyvragen van Nederlandse zakelijke klanten:
 
-❌ Klantgegevens opslaan in Amerikaanse datacenters zonder geldige doorgifte-instrumenten
-❌ AI-modellen gebruiken die prompts en bedrijfsgeheimen standaard gebruiken voor modeltraining
-❌ Geen actueel register van subverwerkers voor hosting, analytics en e-maildiensten
-❌ Geen geteste procedure voor het wettelijke recht op vergetelheid (AVG art. 17)
+❌ Persoons- of zorggegevens opslaan in Amerikaanse cloudregio's zonder Europese datasoevereiniteit
+❌ Geen geautomatiseerde workflow voor het 'Recht op vergetelheid' (verwijderverzoeken)
+❌ Geen auditlogging om aan te tonen wie welk zorgdossier op welk tijdstip heeft ingezien
+❌ Subverwerkers inschakelen zonder sluitende verwerkersovereenkomsten (VOK's)
 
-Wat u wél moet inrichten vóór u met zakelijke inkopers om tafel gaat:
+Wat u wél moet inrichten vóór een security officer uw verkoopgesprek blokkeert:
 
-✅ Exclusieve opslag van databases en back-ups binnen de EU (Amsterdam of Frankfurt)
-✅ Contractuele zero-retention afspraken met AI-providers (geen opslag voor training)
-✅ Een kant-en-klare Verwerkersovereenkomst (VOK) met inzichtelijke subverwerkerslijst
-✅ Geautomatiseerde export- en verwijderstromen voor privacyverzoeken in uw backend
+✅ Databases en bestandsopslag exclusief hosten binnen de EU (Amsterdam/Frankfurt)
+✅ Geautomatiseerde endpoints inrichten voor AVG-dataverwijdering en export
+✅ Onwijzigbare logging implementeren voor alle lees- en schrijfacties op gevoelige data
+✅ Sluitende verwerkersovereenkomsten en een helder subverwerkersoverzicht klaarleggen
 
-Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, richten we uw applicatie en documentatie zo in dat elke privacy officer direct groen licht geeft.
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterprise engineering, maken we uw software AVG-proof zodat u moeiteloos door privacy-audits van Nederlandse zorg- en enterprise-inkopers komt.
 
-💡 Zo doorstond planningsplatform Planbaar in Deventer 6 weken later glansrijk de herbeoordeling van een regionale zorginstelling.
+💡 Het resultaat: Tessa Blom bracht Planbaar binnen 12 werkdagen op AVG-niveau voor € 4.200 (Launch Ready Package: regiomigratie, data-opschoning, bewaartermijnen, auditlogs). Planbaar slaagde zes weken later voor de 19-vragen audit en sloot het enterprise zorgcontract succesvol af. 🚀
 
-👉 Bekijk de 7 privacyvragen die elke Nederlandse zakelijke klant stelt: https://launchstudio.eu/nl/blog/privacy-questions-dutch-customers-ask-ai-apps
+👉 Lees de 7 cruciale privacyvragen die Nederlandse zakelijke klanten u gaan stellen: https://launchstudio.eu/nl/blog/privacy-questions-dutch-customers-ask-ai-apps
 
-#AVG #GDPR #Privacy #EnterpriseSales #LaunchStudio #Manifera
+#AVG #GDPR #Privacy #ZorgTech #LaunchStudio #Manifera

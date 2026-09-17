@@ -1,21 +1,21 @@
-🚨 Pepijn hired a second developer for Offertetool. The new hire spent 4 days trying to understand the codebase: Cursor had written 3 completely different patterns to fetch customers, 2 different auth checks, and zero architecture documentation. 😳
+🚨 Pepijn Aalbers built Offertetool in Cursor: a quotation tool used by 120 installation firms across Noord-Holland. After seven months coding alone, Pepijn hired a part-time developer who spent two frustrating weeks untangling duplicate database helpers, inconsistent API routes, and conflicting schema changes caused by unguided AI prompts. 😳
 
-Cursor writes code fast, but without strict rules, it introduces inconsistency with every prompt. Here's how to keep generated code maintainable: 🧠
+Without strict context rules, AI code editors hallucinate duplicate patterns and create compounding technical debt: 🧠
 
-❌ Prompt drift: generating conflicting architecture patterns across components in the same application
-❌ No `.cursorrules` configuration, forcing the model to guess your coding standards and conventions
-❌ Bloated context windows where outdated files pollute the AI's understanding of current requirements
-❌ New developers wasting weeks deciphering chaotic, unstructured AI-generated spaghetti code
+❌ Cursor generating conflicting architectural patterns across different files without consistent conventions
+❌ Duplicate utility functions and competing database clients scattered across the repository
+❌ AI prompts rewriting working business logic because context files were too large or disorganized
+❌ New team members unable to prompt effectively without shared, repo-level instructions
 
-✅ Author a strict, modular `.cursorrules` file defining directory structures, state libraries, and patterns
-✅ Provide targeted `@context` files rather than feeding whole codebases into AI prompts
-✅ Establish clear architectural guardrails: standard query hooks, unified auth wrappers, and typed schemas
-✅ Conduct human senior engineering reviews on every AI-generated pull request before merging
+✅ Establish a structured `.cursorrules` file defining strict tech stack, linting, and design patterns
+✅ Curate lightweight architectural context documentation (`TECH_STACK.md` and schema definitions)
+✅ Consolidate duplicate data-fetching helpers into a unified, type-safe API client layer
+✅ Enforce automated linting and type-checking in Git pre-commit hooks to block bad AI code
 
-At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we configure precision Cursor environments and enforce maintainable architecture standards. 📐
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, we audit and organize AI codebases with structured context systems that keep engineering clean as teams grow. 📐
 
-His result: Pepijn established clear Cursor rules; his new developer shipped their first major feature in 3 days instead of 2 weeks. 🚀
+His result: Pepijn Aalbers completed the codebase consolidation and context standardization in 6 business days for €2,600 (consolidation pass, schema migrations, rules file, architectural notes, tests). The new developer shipped their next feature in 3 days instead of 2 weeks, with AI prompts consistently following repository standards. 🚀
 
-👉 Learn how to use Cursor rules and context to keep your codebase clean and maintainable: https://launchstudio.eu/en/blog/cursor-rules-and-context-keeping-code-maintainable
+👉 Learn how to configure `.cursorrules` to keep your AI-assisted codebase maintainable: https://launchstudio.eu/en/blog/cursor-rules-and-context-keeping-code-maintainable
 
-#Cursor #CursorRules #CodeQuality #SoftwareArchitecture #LaunchStudio #Manifera
+#Cursor #DeveloperTools #CleanCode #SoftwareArchitecture #LaunchStudio #Manifera
