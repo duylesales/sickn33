@@ -674,4 +674,11 @@
     - **Bài 54**: `54-software-stack-lock-in-vendor-decision_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/54-software-stack-lock-in-vendor-decision_pic.jpg) (*Phòng hiện đại hóa IT doanh nghiệp Frankfurt nhìn ra skyline hoàng hôn, báo cáo kiểm toán TCO 10 năm mở rộng đối chiếu kiến trúc đóng Proprietary khóa nhà cung cấp vs kiến trúc mở Decoupled, cốc gốm FRA_IT, tablet hiển thị sơ đồ phụ thuộc mô-đun, IT Manager Châu Âu và Nữ Kiến trúc sư Giải pháp Việt Nam phân tích biểu đồ*).
 - **13:05**: Chạm giới hạn quota công cụ native (`429 RESOURCE_EXHAUSTED`) khi chuẩn bị tạo Bài 55. Tuân thủ nghiêm ngặt quy định Workspace (không dùng pollinations.ai, không sửa file inventory). Tạm dừng chờ phiên tiếp theo.
 
+## 2026-09-17
+
+- **09:03**: Nhận yêu cầu tiếp tục tạo ảnh minh họa siêu thực từ Bài 55 (`55-hiring-a-cloud-software-developer-vs-migration-partner.md`). Công cụ native `generate_image` trả về lỗi quota `429 RESOURCE_EXHAUSTED` (`You have exhausted your capacity on this model. Your quota will reset after 96h4m20s` - mốc reset: `2026-09-21T02:07:55Z`).
+  - Tuân thủ nghiêm ngặt quy định Workspace trong `.agents/AGENTS.md`: tuyệt đối không sử dụng `pollinations.ai`, không tự ý chỉnh sửa hay đánh dấu checkmark vào file inventory `manifera/extra-content_inventory.md`.
+  - Thông báo chi tiết tới người dùng về tình trạng quota để chờ đến kỳ reset hoặc bổ sung API key thay thế (OpenAI / Midjourney / Gemini key mới có quota).
+
+
 

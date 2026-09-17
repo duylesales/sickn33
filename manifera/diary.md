@@ -575,3 +575,13 @@
   - **Extra 11**: Industry-Specific Vendor Selection & Regulatory Compliance (Decision Stage) - 100 articles
 - Structured with an optimized 8-column schema (omitting all Dutch-specific columns as Manifera extra content has no Dutch translations): `No.`, `Tiêu đề (Title)`, `Từ khóa (Keywords)`, `Giai đoạn`, `Bài viết`, `Tóm lược`, `Ước tính views/tháng`, and `Bài Social Media`.
 - Verified 1,100/1,100 data rows with zero missing fields and zero broken links.
+
+## September 2026 - Extra-9-Decision Image Generation Progress (Articles 01 - 54 Completed)
+- **Tiến độ tạo ảnh minh họa siêu thực (Extra-9-Decision)**:
+  - **Bài 01 - 32**: Đã hoàn thành và lưu ảnh định dạng 16:9 (`1365x768`, JPEG quality 95) trong các phiên trước.
+  - **Bài 33 - 46**: Hoàn thành ngày 15/09/2026, lưu ảnh và commit `0c559802`.
+  - **Bài 47 - 53**: Hoàn thành sáng ngày 16/09/2026, lưu ảnh và commit `9adf48a6`.
+  - **Bài 54**: Hoàn thành trưa ngày 16/09/2026, lưu ảnh [`54-software-stack-lock-in-vendor-decision_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/54-software-stack-lock-in-vendor-decision_pic.jpg), commit `0fc96870`.
+  - **Bài 55 (`55-hiring-a-cloud-software-developer-vs-migration-partner.md`)**: Thử tạo ảnh ngày 17/09/2026 lúc 09:03, chạm giới hạn quota API native `generate_image` (`429 RESOURCE_EXHAUSTED`, thời gian reset báo lại sau ~96h vào `2026-09-21T02:07:55Z`).
+  - Tuân thủ quy định: không sử dụng pollinations.ai, không chỉnh sửa file inventory, báo cáo người dùng.
+
