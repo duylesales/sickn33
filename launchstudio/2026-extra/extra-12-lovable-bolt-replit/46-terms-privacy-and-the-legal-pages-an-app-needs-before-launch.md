@@ -90,6 +90,18 @@ Beyond the standard sections, five points cause most of the disputes small produ
 
 Each of these is written once and settles a category of disagreement permanently. They are also the sections a business customer's reviewer looks for, because their absence signals terms that were never thought about — which is precisely what a generated document is.
 
+## Make Them Readable
+
+One last thing, which is not a legal requirement and has a measurable commercial effect: write them so a person can read them.
+
+European rules increasingly expect plain language in consumer terms, and in practice a short document that people understand produces fewer disputes than a long one they did not read. Two structural choices do most of the work.
+
+Put a plain-language summary at the top of each section — one sentence saying what the clause means — with the formal text below. Several Dutch companies do this and it is uniformly well received, because it lets a reader find the two clauses they actually care about.
+
+And keep the whole thing to a length someone might finish. Terms for a small SaaS should be two to four pages. Anything longer is either copied from a company with an entirely different risk profile or is protecting against scenarios that cannot happen to you.
+
+The test worth applying before publishing: give the terms to someone who is not a lawyer and ask them three questions — what happens to my data if I leave, what happens if I want a refund, and what am I not allowed to do with this. If they cannot find the answers in two minutes, the document is not doing its job, however accurate it is.
+
 ## Setting This Up
 
 For a product approaching launch this is typically one to two days plus a review: terms written from what the service actually does, with Dutch law and jurisdiction, defensible liability limits, and consumer protections handled correctly if you sell to consumers; a privacy policy written from your data inventory rather than a template; cookie information if needed, or the cookie-free route; company identification in the footer with legal name, address, KvK and VAT numbers; agreement recorded per user with a version and timestamp; a change process with notice; old versions retained; and a single review by a Dutch lawyer before launch.
