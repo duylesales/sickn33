@@ -691,3 +691,11 @@
 - **10:30 - 12:10**: Viết tiếp và hoàn thiện **20 bài Decision (81–100)** cho [`onlyaijobs/extra-2026/extra-1-decision/`](file:///Users/duyle/sickn33/onlyaijobs/extra-2026/extra-1-decision/), nâng cụm này lên đủ **100 bài**:
   - Tuân thủ đầy đủ cấu trúc 5 FAQ + JSON-LD `FAQPage` schema, CTA miễn phí cho người tìm việc, các quy định pháp lý EU/Hà Lan (Pay Transparency Directive, AI Act, WOR art. 27, Wet bescherming klokkenluiders, art. 7:672 BW, art. 7:652 BW).
   - Kiểm tra 100/100 file đạt chuẩn, 0 lỗi schema. Đã commit và push đồng bộ lên GitHub.
+
+## 2026-09-18
+
+- **11:11**: Kiểm tra khả năng tạo hình ảnh (`generate_image`) theo yêu cầu người dùng cho Bài 55 (`55-hiring-a-cloud-software-developer-vs-migration-partner.md`).
+  - Hệ thống trả về lỗi quota `429 RESOURCE_EXHAUSTED` đối với model `gemini-3.1-flash-image`:
+    `"You have exhausted your capacity on this model. Your quota will reset after 69h56m39s."` (mốc reset: **`2026-09-21T02:07:55Z`**, tức **09:07 sáng ngày 21/09/2026** giờ Việt Nam).
+  - **Tuân thủ nghiêm ngặt quy định Workspace trong `.agents/AGENTS.md`**: Tuyệt đối không sử dụng `pollinations.ai`, không tự ý chỉnh sửa hay đánh dấu checkmark vào file inventory `manifera/extra-content_inventory.md`.
+  - Thông báo minh bạch cho người dùng về thời gian chờ reset quota hoặc phương án cấu hình API key thay thế (OpenAI / Midjourney / Gemini API key có hạn mức riêng).
