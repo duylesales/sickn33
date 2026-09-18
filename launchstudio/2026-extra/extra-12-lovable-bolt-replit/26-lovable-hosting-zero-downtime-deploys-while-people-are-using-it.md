@@ -98,6 +98,10 @@ The discipline that keeps this from becoming its own problem: remove the flag on
 
 Used well, flags change what a release feels like. The deployment becomes routine and uneventful, and the decision to expose something to customers becomes a separate, reversible act taken when you are watching.
 
+One more practical benefit specific to products like these: a flag is the only safe way to ship something an AI session built quickly. The code can be in production, reviewed at leisure, exercised by you alone, and promoted or deleted on evidence rather than on confidence.
+
+That is a genuinely different way to work, and it suits the way these products are actually built: quickly, in bursts, by a founder who cannot review everything before it ships but can absolutely decide what customers get to see.
+
 ## Setting This Up
 
 For an existing product this is typically half a day plus a habit: migrations reviewed against the two-way compatibility rule, expand-and-contract adopted for every column removal or rename, backfills batched and run as resumable background jobs ahead of the release that needs them, API responses changed additively with old endpoints retired on a delay, a build identifier exposed so the client can detect a newer version and offer a reload, a deployment checklist short enough to follow, and rollback identified and timed.
