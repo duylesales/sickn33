@@ -120,6 +120,8 @@ Which suggests a practical order for a founder who is not technical: learn it on
 
 The founders in this series who describe distant collaboration as effortless are almost always the ones who had already learned to write a good specification for a machine.
 
+It is a transferable skill in the other direction too: the founders who work well with distant colleagues tend to get noticeably more out of agents, for exactly the same reasons.
+
 ## Setting This Up
 
 For a founder working with a distant developer: tasks described with outcome, context, boundaries and pre-answered questions; the overlap reserved for decisions and demonstrations with a short daily call; everything else written, including a daily update of done, next and blocked; a conventions file so distant work fits the codebase; review as a morning habit within one cycle; a standing instruction to proceed on documented assumptions rather than waiting; and a visible list of what is next so blocked time is never idle.
