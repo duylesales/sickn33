@@ -17,7 +17,6 @@
 - **11:58**: push lên với token : [REDACTED_SECRET]
 - **13:15**: có cách nào lưu trực tiếp lên google drivek không ?
 - **13:16**: cách 2
-- **13:17**: n
 - **13:39**: ok push lên github
 - **13:49**: tạo file đầu trên cùng tổng hợp lại các Long Article .md đã tạo với Title, link liên kết file, buyer stage, tóm tắt và ước tính lượt view
 - **13:51**: hãy gom các file blog và article vào folder con 'blog' còn các file khác giữ nguyên vị trí
@@ -50,7 +49,7 @@
 - **16:35**: 2
 - **16:36**: /goal từ các bài blog đã viết hãy viết tóm gọn lại thành bài post trên mạng xã hội linkedin hay X sau đó cập nhật tiếp vào file @[/Users/duyle/sickn33/launchstudio/content_inventory.md]  các bài song song (có các trích nguồn bài viết content gốc và bài post dành cho mạng xã hội)
 - **16:50**: tách các bài viết ra riêng theo từng bài -format đúng chuẩn bài viết đăng mạng xã hội theo từng folder như (blog) và gom theo tháng. sau đó trích dẫn đối chiếu link với bài viết đã được tóm gọn trong file @[/Users/duyle/sickn33/launchstudio/content_inventory.md] và sau khi tách ra hãy xoá các bài viết mới làm phía dưới file từ phần '| July 2026 | How Cursor AI Is Changing the Way Founders Write Code | [06-cursor-ai-changing-founder-development.md](./july-2026/06-cursor-ai-changing-founder-development.md) | 👩💻 Cursor AI isn't just a code editor—it's a co-founder for technical entrepreneurs. By understanding your entire codebase, it accelerates development without sacrificing control. Unlike drag-and-drop builders, it helps you write production-level logic faster. Discover how founders are using Cursor to ship complex features in hours instead of weeks: [Link] #CursorAI #Founders #Coding |' trở đi
-- **16:57**: cập nhật các layout đúng format như xuống hàng trong văn bản docx không thêm các đoạn mã code như <br> vì đây là bài viết đăng tự nhiên trên các mạng xã hội. hãy sửa lại các format và định dạng viết cho đúng các bài đã viết
+- **16:57**: cập nhật các layout đúng format như xuống hàng trong văn bản docx không thêm các đoạn mã code như `<br>` vì đây là bài viết đăng tự nhiên trên các mạng xã hội. hãy sửa lại các format và định dạng viết cho đúng các bài đã viết
 - **17:00**: /goal hãy viết tiếp các blog của tháng khác và cho đến hết december-2026 và viết đúng theo format đã yêu cầu cập nhật chỉnh sửa với đây và lưu thông tin vào @[/Users/duyle/sickn33/launchstudio/content_inventory.md]
 - **17:04**: nếu đã hoàn thành rồi thì cập nhật vào file @[/Users/duyle/sickn33/launchstudio/content_inventory.md]
 - **17:06**: đông bộ tới bài viết đó và cài ứng dụng nào đọc được lập tức
@@ -80,6 +79,7 @@
 - **18:08**: kết nói với kho miễn phí còn lại
 - **18:09**: [REDACTED_SECRET]
 - **18:10**: @[/Users/duyle/sickn33/manifera/july-2026/02-in-house-vs-offshore-software-development-2026.md] tìm hình tương thích
+
 #### Ngày 18
 
 - **09:11**: viết content blog và post trên mạng xã hội cho cả năm 2027 cho dự án manifera
@@ -166,16 +166,15 @@
 - **15:02**: @[/Users/duyle/sickn33/launchstudio/content_inventory.md] hãy list số thứ tự tiêu đề (title)
 - **15:03**: @[/Users/duyle/sickn33/launchstudio/content_inventory.md] mỗi tháng số thứ tự sẽ trở về từ số 1
 - **15:05**: @[/Users/duyle/sickn33/manifera/content_inventory.md] hãy list số thứ tự tiêu đề (title) và mỗi tháng bắt đầu từ 1
-- **15:06**: push đè lên github- **15:09**: tại file prompt trống mình sẽ tự input 
-- **15:10**: tại file prompt.md trống mình sẽ tự input 
+- **15:06**: push đè lên github- **15:09**: tại file prompt trống mình sẽ tự input
+- **15:10**: tại file prompt.md trống mình sẽ tự input
 - **15:11**: ở đâu mình không thấy
-- **15:12**: tại file prompt.md thuộc folder launchstudio trống mình sẽ tự input 
-- **15:13**: tại file prompt.md thuộc folder manifera trống mình sẽ tự input 
+- **15:12**: tại file prompt.md thuộc folder launchstudio trống mình sẽ tự input
+- **15:13**: tại file prompt.md thuộc folder manifera trống mình sẽ tự input
 - **15:15**: tạo ảnh cho ánh sáng và Phong cách: Bắt đầu bằng "modern flat-ish vector illustration," "corporate tech style," "dribbble-style." nội dung @[/Users/duyle/sickn33/launchstudio/july-2026/01-what-is-ai-native-founder-social.md] truyền đạt nên tập trung vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 lấy phần giữa
 - **15:16**: ở mỗi thư mục tháng hãy tạo 1 folder json con và bỏ các file json vào
 - **15:16**: ở mỗi thư mục tháng hãy tạo 1 folder html con và bỏ các file html vào
 - **15:25**: sau mỗi câu lệnh yêu cầu hãy ghi vào file nhật ký diary.md
-
 - **15:26**: sau mỗi câu lệnh yêu cầu hãy ghi vào file nhật ký diary.md
 - **15:27**: sau mỗi câu lệnh yêu cầu hãy ghi vào file nhật ký diary.md
 
@@ -312,6 +311,7 @@
 #### Ngày 07
 
 - **09:27**: Hoàn thành loạt ảnh minh họa chuyên sâu cho các bài viết tiếp theo (**Bài 42 đến Bài 53**, tổng cộng 12 ảnh) thuộc `launchstudio/2026-extra/extra-8-decision/`:
+
   - **Bài 42**: `42-launchstudio-vs-learning-to-code-yourself.md` -> [`42-launchstudio-vs-learning-to-code-yourself_pic.png`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-8-decision/42-launchstudio-vs-learning-to-code-yourself_pic.png)
     - *Nội dung hình ảnh*: Phối cảnh đối chiếu hai ngả đường: bên trái là cầu thang xoắn ốc chất đầy chồng sách lập trình đồ sộ và dây dợ rối bời dưới đồng hồ cát tượng trưng cho con đường tự học cô độc; bên phải là đường băng cao tốc cyan và ngọc lục bảo thênh thang với các vòm mốc phát sáng và khiên bảo mật, dẫn thẳng tới bệ phóng tên lửa vàng; founder và robot AI trắng tự tin rảo bước trên đường băng ra mắt. 100% không chữ/số.
   - **Bài 43**: `43-prototype-survives-viral-traffic-spike-case-study.md` -> [`43-prototype-survives-viral-traffic-spike-case-study_pic.png`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-8-decision/43-prototype-survives-viral-traffic-spike-case-study_pic.png)
@@ -338,9 +338,8 @@
     - *Nội dung hình ảnh*: Phối cảnh hạ tầng vĩ mô động cơ cơ sở dữ liệu: khối trụ database đa tầng với tầng dưới chứa dây dợ truy vấn rối rắm và biển cảnh báo đang được tháo dỡ; tầng trên được kỹ sư phần mềm cao cấp và robot AI lắp ráp các thanh ray chỉ mục (indexes) từ tính và đường ống truy vấn tốc độ cao sáng màu ngọc lục bảo; các luồng dữ liệu cyan và mint lưu thông trơn tru. 100% không chữ/số.
   - **Xử lý tỷ lệ & Lưu tệp**: Tất cả 12 ảnh đều được cắt crop chuẩn 16:9 (`1024x576`), tối ưu hóa nén PNG và lưu đồng thời vào thư mục bài viết và thư mục artifacts.
   - **Ghi chú hạn ngạch tạo ảnh**: Công cụ tạo ảnh bản quyền hệ thống đạt ngưỡng giới hạn hạn ngạch tạm thời (Gemini 3.1 Flash Image Quota 429) khi khởi tạo Bài 54 (thông báo reset sau khoảng 4 giờ 27 phút, dự kiến lúc 13:55). Tuân thủ nghiêm ngặt quy tắc Workspace (không sử dụng pollinations.ai), tạm dừng tại Bài 53 và báo cáo người dùng.
-
-
 - **10:42**: Hoàn tất toàn bộ 100 bài viết tiếng Anh của cụm [`launchstudio/2026-extra/extra-10-decision/`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-10-decision/) — viết mới **52 bài** (Bài 30 còn thiếu + Bài 50 đến Bài 100), tổng ~103.000 từ, nâng cụm từ 48/100 lên **100/100 bài**:
+
   - **Bài 30** (`30-cant-i-just-keep-prompting-until-its-fixed.md`): lấp chỗ trống trong nhóm "phản biện của founder" (Bài 21–30) — phân định loại lỗi prompting giải quyết được và loại lỗi càng prompt càng đắt.
   - **Bài 50** (`50-reading-your-first-month-of-data-without-fooling-yourself.md`): khép nhóm đo lường (Bài 41–50) — đọc dữ liệu tháng đầu ở quy mô mẫu nhỏ mà không tự đánh lừa.
   - **Nhóm Bài 51–60 (Onboarding, dùng thử & giữ chân)**: màn hình tài khoản trống, thời điểm hết hạn dùng thử, giới hạn gói, chuỗi email chào mừng, luồng hủy đăng ký, tín hiệu churn sớm, cài đặt thông báo, tài khoản nhóm & lời mời, chương trình giới thiệu và lạm dụng, thu hồi khách đã rời.
@@ -351,25 +350,26 @@
   - **Chuẩn định dạng**: mỗi bài giữ nguyên cấu trúc chuẩn của cụm — frontmatter (Title/Keywords/Buyer Stage/Target Persona), JSON-LD Article, 6–7 mục H2 chuyên sâu, đoạn CTA LaunchStudio/Manifera, mục "Real example" kèm case study có tên founder, số liệu kết quả, trích dẫn và Cost & Timeline, 5 câu hỏi FAQ kèm JSON-LD FAQPage.
   - **Kiểm định chất lượng**: rà soát tự động 100/100 tệp — đầy đủ frontmatter, JSON-LD Article & FAQPage, mục Real example, mục FAQ và liên kết CTA; độ dài trung bình ~2.000 từ/bài, không trùng lặp chủ đề với các cụm extra-8 và extra-9.
 - **11:05**: Cập nhật tệp kiểm kê [`launchstudio/extra_content_inventory.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/extra_content_inventory.md) — bổ sung cụm **Extra 10: Product Decisions After the Prototype (2026)** với đầy đủ 100 dòng:
+
   - **Nguồn dữ liệu**: Tiêu đề, từ khóa và giai đoạn mua hàng trích tự động từ frontmatter của từng bài; phần Tóm lược lấy từ trường `description` trong schema JSON-LD Article, đảm bảo khớp tuyệt đối với nội dung bài viết.
   - **Chuẩn cột**: Giữ nguyên cấu trúc 14 cột của bảng Extra 9 (Tiêu đề, Từ khóa, Giai đoạn, Đường dẫn bài viết, Tóm lược song ngữ, Ước tính views/tháng, Bài Social Media), đánh dấu `*(chưa dịch)*` cho các trường tiếng Hà Lan và `*(chưa tạo)*` cho cột bài đăng mạng xã hội chưa sản xuất.
   - **Quy mô tổng**: Tệp kiểm kê hiện đạt **760 dòng bài viết** trên 10 cụm nội dung.
-
 - **12:35**: Hoàn tất dịch toàn bộ 100 bài viết (`-dutch.md`) và 100 bài mạng xã hội (`-social-dutch.md`) của cụm [`launchstudio/2026-extra/extra-9-decision/`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-9-decision/) sang tiếng Hà Lan (Dutch) chuẩn văn phong doanh nhân bản địa Hà Lan/Bỉ (Nederlands Zakelijk), tuân thủ nghiêm ngặt quy trình dịch trực tiếp từng bài không dùng script batch tự động:
+
   - **Cấu trúc bài viết**: Dịch chuẩn hóa tiêu đề, từ khóa, mô tả meta, nội dung chuyên sâu 6–7 phần, case study thực tế (bản địa hóa đơn vị EUR, các chuẩn GDPR/AVG, iDEAL/Mollie/Stripe), 5 câu hỏi FAQ và schema JSON-LD (`Article` & `FAQPage`).
   - **Bài đăng Social Media**: Mỗi bài có 1 bài đăng LinkedIn/X tiếng Hà Lan tương ứng cấu trúc hook, bullet points giá trị và CTA dẫn link.
   - **Kiểm kê**: Cập nhật toàn bộ bảng kiểm kê [`launchstudio/extra_content_inventory.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/extra_content_inventory.md) cho 100 dòng Extra 9.
-
 - **15:16**: Hoàn tất dịch toàn bộ 100 bài viết (`-dutch.md`) và 100 bài mạng xã hội (`-social-dutch.md`) của cụm [`launchstudio/2026-extra/extra-10-decision/`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-10-decision/) sang tiếng Hà Lan (Dutch):
+
   - **Nội dung hoàn tất**: Toàn bộ từ Bài 01 đến Bài 100 của cụm Extra 10 đã có đầy đủ tệp bài viết tiếng Hà Lan và bài social media tiếng Hà Lan.
   - **Kiểm kê**: Cập nhật toàn diện 100 dòng của cụm Extra 10 trong [`launchstudio/extra_content_inventory.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/extra_content_inventory.md). Tệp kiểm kê hiện không còn bất kỳ trường nào ghi `*(chưa dịch)*`.
-
 - **15:36**: Hoàn thiện hình minh họa chuyên sâu cho **Bài 54** thuộc [`launchstudio/2026-extra/extra-8-decision/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/) chuẩn **Phong cách & Thị giác Hình 47** (Modern flat-ish vector illustration / Dribbble corporate tech style):
+
   - **Bài 54**: `54-launchstudio-vs-hiring-fullstack-bootcamp-graduate.md` -> [`54-launchstudio-vs-hiring-fullstack-bootcamp-graduate_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/54-launchstudio-vs-hiring-fullstack-bootcamp-graduate_pic.png)
     - *Nội dung hình ảnh*: Phong cách vector isometric phẳng hiện đại (Dribbble corporate tech style) trên nền studio trắng sáng có đổ bóng nhẹ: trên trục ngang dải giữa, bên trái là lập trình viên junior trang phục xanh cobalt ngồi tại bàn isometric thiết kế bảng wireframe UI giao diện ứng dụng với các khối layout modular sắc màu; ở trung tâm, robot AI trợ thủ vỏ trắng visor cyan và nữ kỹ sư senior trang phục tím/magenta lắp đặt tấm khiên an ninh ngọc lục bảo tích xanh và ổ khóa vàng trong hộp kính bảo mật đặt trên bệ máy chủ magenta/indigo, nối đường truyền năng lượng cyan tới khối thẻ thanh toán vàng gắn huy hiệu xác thực (tượng trưng cho Supabase RLS và webhook Mollie); bên phải là nữ founder thanh lịch theo dõi trạng thái xanh trên tablet. Phối màu gradient rực rỡ (Magenta, Tím, Cyan, Cobalt, Mint, Vàng Amber). 100% không chữ/số.
   - **Bố cục & Cắt crop**: Bố cục thu gọn trung tâm (Tight Center Composition) với khoảng thở rộng rãi trên/dưới, tự động cắt crop chuẩn dải giữa tỷ lệ 16:9 (`1024x576`), tối ưu nén PNG và lưu trực tiếp vào thư mục bài viết và artifacts.
-
 - **15:44**: Hoàn thành loạt hình ảnh minh họa tiếp theo (**Bài 55 đến Bài 60**, tổng cộng 6 ảnh) thuộc [`launchstudio/2026-extra/extra-8-decision/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/) chuẩn **Phong cách & Thị giác Hình 47** (Modern flat-ish vector illustration / Dribbble corporate tech style):
+
   - **Bài 55**: `55-stripe-integration-your-ai-tool-didnt-build.md` -> [`55-stripe-integration-your-ai-tool-didnt-build_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/55-stripe-integration-your-ai-tool-didnt-build_pic.png)
     - *Nội dung*: Đối chiếu giữa nút checkout cơ bản trôi nổi bên trái và hạ tầng thanh toán backend hoàn chỉnh ở trung tâm với bảng điều khiển magenta/indigo, robot AI visor cyan và kỹ sư senior cấu hình hộp kính an ninh chứa ổ khóa vàng, khiên xanh kiểm thực, vòng tuần hoàn chu kỳ subscription và các node webhook; bên phải là founder với tablet trạng thái xanh. 100% không chữ/số.
   - **Bài 56**: `56-fintech-mvp-passes-psd2-compliance-case-study.md` -> [`56-fintech-mvp-passes-psd2-compliance-case-study_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/56-fintech-mvp-passes-psd2-compliance-case-study_pic.png)
@@ -383,6 +383,7 @@
   - **Bài 60**: `60-freelance-designer-delivers-full-product-without-backend-case-study.md` -> [`60-freelance-designer-delivers-full-product-without-backend-case-study_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/60-freelance-designer-delivers-full-product-without-backend-case-study_pic.png)
     - *Nội dung*: Bên trái là nữ freelancer UX designer thanh lịch phác thảo mood board và layout ứng dụng trên tablet; ở giữa là bệ máy chủ white-label backend magenta/cyan nơi robot AI và kỹ sư cao cấp âm thầm cấp quyền truy cập phân vai (RLS), lưu trữ dữ liệu và xử lý thanh toán mốc dự án gắn huy chương vàng; bên phải khách hàng doanh nghiệp hài lòng mở portal live nhận huy chương 5 sao chất lượng. 100% không chữ/số.
 - **15:51**: Hoàn thành loạt hình ảnh minh họa tiếp theo (**Bài 61 đến Bài 65**, tổng cộng 5 ảnh) thuộc [`launchstudio/2026-extra/extra-8-decision/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/) chuẩn **Phong cách & Thị giác Hình 47** (Modern flat-ish vector illustration / Dribbble corporate tech style):
+
   - **Bài 61**: `61-launchstudio-vs-vetted-expert-badge-freelance-platform.md` -> [`61-launchstudio-vs-vetted-expert-badge-freelance-platform_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/61-launchstudio-vs-vetted-expert-badge-freelance-platform_pic.png)
     - *Nội dung*: Bục huy chương vàng 5 sao bề nổi của marketplace bên trái; ở giữa là trạm kiểm thử và audit mã nguồn kỹ thuật chuyên sâu (hộp kính chứa mô-đun kiến trúc code được quét tia xanh, khiên an ninh tích xanh và ổ khóa vàng chắc chắn do robot AI và kỹ sư phụ trách); bên phải founder cầm tablet hiển thị con dấu kiểm toán chứng nhận chuẩn. 100% không chữ/số.
   - **Bài 62**: `62-why-two-quotes-same-prototype-differ-by-10000.md` -> [`62-why-two-quotes-same-prototype-differ-by-10000_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/62-why-two-quotes-same-prototype-differ-by-10000_pic.png)
@@ -395,13 +396,14 @@
     - *Nội dung*: Đám mây mini mỏng manh bên trái bị đe dọa bởi nón cảnh báo và đồng hồ cát hết hạn (giới hạn free tier); ở giữa là cụm máy chủ cloud production đa vùng mạnh mẽ với hộp kính chứa mạng lưới node phân tán, khiên uptime serverless xanh ngọc và luồng truyền tải dữ liệu vô tận; bên phải founder theo dõi băng thông xanh mượt mà không bị bóp nghẽn. 100% không chữ/số.
   - **Xử lý tỷ lệ & Lưu tệp**: Cả 5 ảnh đều có bố cục thu gọn trung tâm (Tight Center Composition), tự động cắt crop chuẩn dải giữa tỷ lệ 16:9 (`1024x576`), tối ưu nén PNG và lưu trực tiếp vào thư mục bài viết và artifacts.
   - **Ghi chú hạn ngạch tạo ảnh**: Công cụ tạo ảnh bản quyền hệ thống đạt ngưỡng giới hạn hạn ngạch tạm thời (Gemini 3.1 Flash Image Quota 429) khi khởi tạo Bài 66 (thông báo reset sau khoảng 4 giờ 39 phút, dự kiến lúc 20:31). Tuân thủ nghiêm ngặt quy tắc Workspace (không sử dụng pollinations.ai), tạm dừng tại Bài 65 và báo cáo người dùng.
-
 - **Viết bổ sung 100 bài Social Media tiếng Anh còn thiếu cho cụm** [`launchstudio/2026-extra/extra-10-decision/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-10-decision/): rà soát phát hiện cụm Extra 10 có đủ 100 bài viết EN, 100 bài Dutch và 100 bài social Dutch, nhưng thiếu toàn bộ 100 bài social **tiếng Anh gốc** — khoảng trống bất thường so với cụm Extra 9 (nơi social EN được viết trước rồi mới dịch Dutch).
+
   - **Phân công**: Triển khai 10 agent song song, mỗi agent đảm nhiệm 10 bài (01–10, 11–20, ..., 91–100), đọc trực tiếp nội dung từng bài viết gốc (mục "Real example" và FAQ) để lấy chi tiết thật (tên nhân vật, công ty, số liệu €, mốc thời gian) — không dùng nội dung chung chung.
   - **Chuẩn định dạng**: Theo đúng khuôn bài social của cụm Extra 9 — hook mở bài từ tình huống thật, 4 gạch đầu dòng ❌ (sai lầm/hiểu nhầm) và 4 gạch đầu dòng ✅ (quyết định đúng), câu thương hiệu LaunchStudio/Manifera, câu kết quả từ case study, CTA kèm placeholder `[Link to article]`, và dòng hashtag kết thúc bằng `#LaunchStudio #Manifera`.
   - **Kiểm định**: Xác minh đủ 100/100 tệp `-social.md` khớp tên với 100 bài viết gốc, không thiếu bài nào.
   - **Cập nhật kiểm kê**: Chạy script thay thế 100 dòng `*(chưa tạo)*` ở cột "Bài Social Media" (EN) trong mục Extra 10 của [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md) bằng link thật tới từng tệp social mới, đối chiếu tự động theo slug trong cột "Bài viết" để đảm bảo khớp chính xác. Tệp kiểm kê nay không còn dòng nào ghi `*(chưa tạo)*` trong cụm Extra 10.
 - **17:10**: Khởi tạo và hoàn thiện bảng kiểm kê nội dung toàn diện [`manifera/extra-content_inventory.md`](file:///Users/duyle/sickn33/manifera/extra-content_inventory.md) cho toàn bộ chuỗi **2026-Extra** của Manifera, tuân thủ 100% cấu trúc, phong cách và định dạng bảng 14 cột của [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md):
+
   - **Quy mô dữ liệu**: Xử lý toàn bộ **11 cụm nội dung (Extra 1 đến Extra 11)**, tổng cộng **1.100 bài viết** kèm **1.100 bài đăng Social Media** tương ứng (không sót bài nào).
   - **Cấu trúc 11 cụm**:
     1. *Extra 1*: Local & Regional Software Development (Netherlands) - 100 bài
@@ -419,6 +421,7 @@
   - **Kiểm định chất lượng**: 100% dòng dữ liệu (1.100/1.100 hàng) có đầy đủ tiêu đề, từ khóa, giai đoạn mua hàng, mô tả tóm lược từ JSON-LD schema và liên kết tệp thực tế; 0 liên kết gãy; cấu trúc bảng 8 cột đồng nhất và chuẩn xác.
 
 ## 2026-09-08 (Sáng)
+
 - **09:01**: Tiếp tục tạo ảnh minh họa cho **Bài 66** thuộc [`launchstudio/2026-extra/extra-8-decision/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/) chuẩn **Phong cách & Thị giác Hình 47** (Modern flat-ish vector illustration / Dribbble corporate tech style) sau khi hạn ngạch hệ thống được làm mới:
   - **Bài 66**: `66-launchstudio-vs-developer-friend-free-help.md` -> [`66-launchstudio-vs-developer-friend-free-help_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/66-launchstudio-vs-developer-friend-free-help_pic.png)
     - *Nội dung*: Góc bàn cà phê thân mật ấm áp bằng gỗ bên trái với hai tách cà phê, laptop hiển thị nhánh git dở dang và đồng hồ cát mềm biểu thị thời gian trôi qua; ở giữa là trạm triển khai hạ tầng kỹ thuật chuyên nghiệp magenta/cyan rực rỡ nơi robot AI thông minh (kính cyan) và kỹ sư cao cấp kết nối đường ống cáp vào hộp kính an ninh chứa ổ khóa vàng, khiên bảo mật xanh ngọc tích kiểm định và trụ máy chủ database đa tầng; bên phải nữ founder và người bạn lập trình viên vui vẻ cụng ly chúc mừng trước chiếc tablet hiển thị con tàu vũ trụ phóng thành công và tích xanh triển khai hoàn tất — phản ánh trọn vẹn thông điệp bảo toàn tình bạn và đưa ứng dụng lên production an toàn. 100% không chữ/số.
@@ -447,7 +450,9 @@
     - Tiêu đề: `"LaunchStudio vs. Freelance Marktplaatsen: Wat Upwork en Fiverr U Niet Vertellen Over AI-Code"`.
     - Chuẩn cấu trúc 5 câu hỏi FAQ và schema JSON-LD `FAQPage` + `Article` theo đúng Workspace Rules.
     - Đồng bộ bài viết social Dutch và cập nhật dòng 1 cụm Extra 8 trong [`launchstudio/extra_content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/extra_content_inventory.md).
+
 ## 2026-09-08 (Chiều)
+
 - **13:51**: Tiếp tục tạo ảnh minh họa cho **Bài 76** thuộc [`launchstudio/2026-extra/extra-8-decision/`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-8-decision/) chuẩn **Phong cách & Thị giác Hình 47** (Modern flat-ish vector illustration / Dribbble corporate tech style), tuân thủ nguyên tắc bố cục khác biệt hoàn toàn (Non-Repetitive Layouts / Visual Diversity), 100% Zero text/numbers, tỷ lệ 16:9 (`1024x576`) PNG:
   - **Bài 76**: `76-environment-variable-mistake-exposes-api-keys.md` -> [`76-environment-variable-mistake-exposes-api-keys_pic.png`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-8-decision/76-environment-variable-mistake-exposes-api-keys_pic.png)
     - *Layout*: Phân vùng kiến trúc đẳng cự sâu giữa khoang kính frontend công cộng và hầm máy chủ bảo mật ngầm (Deep Isometric Public Client Atrium & Fortified Server Vault Air-Gap). Bên trái là khoang kính trong suốt đại diện cho trình duyệt frontend phía client, nơi indie founder an tâm theo dõi giao diện ứng dụng trên tablet mà không còn bất kỳ secret key nào bị lộ; ở giữa là cổng gateway an ninh phát sáng với phễu lọc proxy xanh ngọc emerald và cyan; bên phải trong hầm máy chủ kiên cố, kỹ sư backend cao cấp và robot AI trợ thủ (visor cyan) bảo vệ các lăng kính API key vàng và credential tối mật trong tủ rack máy chủ bọc khiên bảo mật và ổ khóa xanh ngọc. Luồng dữ liệu an toàn cyan lưu thông trơn tru qua cổng proxy. 100% không chữ/số.
@@ -484,6 +489,7 @@
   - **Kiểm định toàn diện sau khi chạy**: 0 nhóm trùng slug còn lại (LaunchStudio 1.330 bài, Manifera 1.459 bài); 0 canonical bị hai bài khác nhau dùng chung; 0 tệp social mồ côi và 0 bài viết thiếu social ở cả hai site; 0 link gãy trên 5.290 liên kết tệp trong 4 bảng kiểm kê; 0 placeholder link còn sót.
 
 ## 2026-09-09 (Sáng)
+
 - **08:55**: Tiếp tục tạo ảnh minh họa cho **Bài 78** thuộc [`launchstudio/2026-extra/extra-8-decision/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/) chuẩn **Phong cách & Thị giác Hình 47** (Modern flat-ish vector illustration / Dribbble corporate tech style), tuân thủ nghiêm ngặt nguyên tắc **mỗi hình là 1 layout hoàn toàn khác biệt** (Non-Repetitive Layouts / Visual Diversity), 100% Zero text/numbers, tỷ lệ 16:9 (`1024x576`) PNG:
   - **Bài 78**: `78-prototype-error-page-says-about-product.md` -> [`78-prototype-error-page-says-about-product_pic.png`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/78-prototype-error-page-says-about-product_pic.png)
     - *Layout*: Bố cục lăng kính chuyển hóa lỗi kiên cường và dẫn đường tự phục hồi (Dual-Terminal Resilient Error-Handling & Prism Navigation Portal). Bên trái là màn hình lỗi chập chờn với vết nứt cảnh báo đỏ, phích cắm đứt rời và rào chắn ngõ cụt đại diện cho lỗi sập không được xử lý (unhandled crash / raw error); ở giữa là trụ lăng kính bảo vệ ranh giới lỗi thẳng đứng (vertical error-boundary prism) phát sáng chuyển hóa đường sóng xung đột thành các mũi tên dẫn đường cyan mượt mà; bên phải là màn hình trụ cong kính thanh lịch trên bệ đá cẩm thạch trắng hiển thị la bàn định hướng, mũi tên quay về trang chủ xanh ngọc và vòng lặp tự chữa lành (self-healing loop). Nữ founder mặc blazer magenta và robot AI trợ thủ (visor cyan) theo dõi dữ liệu chẩn đoán telemetry từ cảm biến bay. 100% không chữ/số.
@@ -522,6 +528,7 @@
     - *Layout*: Bàn vẽ thiết kế giao diện kính kết nối giàn cẩu lắp ráp backend kỹ thuật tự động (Floating Glass Design Canvas Docked with Robotic Backend Engineering Gantry). Ở trung tâm là bảng vẽ drafting kính nổi nằm ngang hiển thị các khối wireframe UI rực rỡ màu tím magenta và cyan; bên phải giàn cẩu tự động lắp ghép trọn vẹn cụm máy chủ backend với các trụ database phát sáng điện quang, module cổng thanh toán màu vàng kim và khiên bảo mật xanh ngọc khóa chặt vào khung canvas thiết kế; lơ lửng phía trên là 3 khối lập phương tinh thể vàng kim đại diện cho quy mô dự án tăng gấp ba lần. 100% không chữ/số.
 
 ## 2026-09-10 (Sáng)
+
 - **09:23**: Tạo ảnh minh họa siêu thực chân thực cho **Bài 06** thuộc [`manifera/2026-extra/extra-9-decision/`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/) tuân thủ nghiêm ngặt nguyên tắc **bố cục độc bản hoàn toàn mới** (Non-Repetitive Layouts / Visual Diversity), 100% bối cảnh thực tế cao cấp (Grounded Enterprise Reality), tỷ lệ 16:9 (`1365x768`, center-crop JPEG):
   - **Bài 06**: `06-fixed-price-vs-time-material-which-contract-model-protects-you.md` -> [`06-fixed-price-vs-time-material-which-contract-model-protects-you_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/06-fixed-price-vs-time-material-which-contract-model-protects-you_pic.jpg)
     - *Layout*: Góc nhìn cận cảnh qua vai (Over-the-shoulder medium shot) trong phòng điều hành tài chính doanh nghiệp cao cấp. Từ phía sau Nữ CFO Châu Âu mặc blazer màu than ngồi trước bàn điều hành gỗ tối màu với hệ thống màn hình đôi hiển thị bảng dự báo tài chính, bảng kiểm soát ngân sách mua sắm phần mềm (Software Procurement Budget) và biểu đồ burn-rate/burndown thực tế. Đứng bên cạnh là Giám đốc Giao nhận Kỹ thuật cao cấp Việt Nam mặc áo sơ mi navy lịch lãm đang chuyên nghiệp diễn giải tiến độ bàn giao các cột mốc (milestone deliverable schedule) trên máy tính bảng. Hậu cảnh là cửa sổ kính panorama kịch trần nhìn ra đường chân trời thành phố Châu Âu hiện đại trong ánh sáng ban ngày thanh lịch với phản chiếu mưa nhẹ. Không có chi tiết sci-fi kỳ ảo, chuẩn nhiếp ảnh 35mm chiều sâu trường ảnh tinh tế.
@@ -548,6 +555,7 @@
     - **0 lỗi cú pháp JSON-LD**: Toàn bộ 500 schema JSON-LD hợp lệ và phân tích cú pháp thành công.
 
 ## 2026-09-10 (Chiều)
+
 - **17:51**: Thực hiện commit và push toàn bộ các thay đổi lên GitHub (`origin/main`, commit `3de8d9e9`):
   - Đồng bộ hóa 500 bài dịch tiếng Hà Lan 1:1 trong `launchstudio/2026/` (các bản dịch mới, mở rộng độ sâu 1:1, chuẩn hóa 5 FAQs và schema JSON-LD).
   - Cập nhật ảnh minh họa siêu thực cho Bài 06 thuộc `manifera/2026-extra/extra-9-decision/` cùng nội dung kiểm kê kho bài viết.
@@ -555,6 +563,7 @@
   - Cập nhật nhật ký hoạt động `diary.md` và `launchstudio/diary.md`.
 
 ## 2026-09-14 (Sáng)
+
 - **09:16**: Tạo hoàn tất loạt ảnh minh họa siêu thực chân thực cho **13 bài viết liên tiếp (Bài 07 đến Bài 19)** thuộc [`manifera/2026-extra/extra-9-decision/`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/) tuân thủ tuyệt đối nguyên tắc **đa dạng hóa bố cục và góc nhìn** (Non-Repetitive Layouts / Visual Diversity), 100% bối cảnh thực tế cao cấp (Grounded Enterprise Reality), tỷ lệ 16:9 (`1365x768`, center-crop JPEG chất lượng cao):
   - **Bài 07**: `07-how-to-score-vendor-proposals-without-bias.md` -> [`07-how-to-score-vendor-proposals-without-bias_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/07-how-to-score-vendor-proposals-without-bias_pic.jpg) (*Góc chụp chéo từ trên cao nhìn xuống bàn họp gỗ óc chó & đá phiến, IT Manager Châu Âu rà soát bảng điểm trọng số ẩn danh, Chuyên gia Giải pháp Việt Nam chỉ bút chì vào ma trận tuân thủ kiến trúc*).
   - **Bài 08**: `08-pilot-project-test-vetting-software-vendor-before-big-contract.md` -> [`08-pilot-project-test-vetting-software-vendor-before-big-contract_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/08-pilot-project-test-vetting-software-vendor-before-big-contract_pic.jpg) (*Góc chụp trung cảnh rộng phòng tác chiến Agile, Kỹ sư Full-Stack cao cấp Việt Nam ngồi tại bàn standing desk kiểm tra test suite CI/CD và code diffs trên màn hình kép, CTO Hà Lan đứng bên cạnh cầm tablet theo dõi vận tốc sprint pilot 2 tuần*).
@@ -572,6 +581,7 @@
 - **09:17**: Khi khởi tạo tiếp tục cho **Bài 20** (`20-the-trial-sprint-two-week-test-before-signing-a-vendor.md`), công cụ tạo ảnh native (`gemini-3.1-flash-image`) đạt giới hạn quota hạn ngạch theo chu kỳ sáng. Tạm dừng chờ reset vào lúc 13:56.
 
 ## 2026-09-14 (Chiều)
+
 - **14:00 - 14:07**: Quota được khôi phục, tiến hành tạo hoàn tất loạt ảnh minh họa siêu thực chân thực cho **13 bài viết tiếp theo (Bài 20 đến Bài 32)** thuộc [`manifera/2026-extra/extra-9-decision/`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/), nâng tổng số bài đã hoàn thiện hình ảnh trong cụm Decision lên **32/100 bài**. Tất cả hình ảnh tuân thủ 100% nguyên tắc đa dạng hóa bố cục, bối cảnh thực tế cao cấp và chuẩn kích thước 16:9 (`1365x768`, center-crop JPEG quality 95):
   - **Bài 20**: `20-the-trial-sprint-two-week-test-before-signing-a-vendor.md` -> [`20-the-trial-sprint-two-week-test-before-signing-a-vendor_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/20-the-trial-sprint-two-week-test-before-signing-a-vendor_pic.jpg) (*Phòng thuyết trình demo công nghệ châu Âu, CTO Hà Lan cầm bút máy rà soát bảng điểm nghiệm thu sprint, Tech Lead Việt Nam đứng thuyết trình telemetry CI/CD 100% test pass trên màn hình lớn*).
   - **Bài 21**: `21-mobile-app-development-cost-line-item-breakdown.md` -> [`21-mobile-app-development-cost-line-item-breakdown_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-9-decision/21-mobile-app-development-cost-line-item-breakdown_pic.jpg) (*Bàn standing desk gỗ sồi tự nhiên, Nữ Giám đốc Kỹ thuật Châu Âu cùng Kiến trúc sư Mobile Việt Nam đối chiếu bảng chi phí chi tiết trên iPad Pro bên cạnh thiết bị test iOS & Android*).
@@ -699,3 +709,8 @@
     `"You have exhausted your capacity on this model. Your quota will reset after 69h56m39s."` (mốc reset: **`2026-09-21T02:07:55Z`**, tức **09:07 sáng ngày 21/09/2026** giờ Việt Nam).
   - **Tuân thủ nghiêm ngặt quy định Workspace trong `.agents/AGENTS.md`**: Tuyệt đối không sử dụng `pollinations.ai`, không tự ý chỉnh sửa hay đánh dấu checkmark vào file inventory `manifera/extra-content_inventory.md`.
   - Thông báo minh bạch cho người dùng về thời gian chờ reset quota hoặc phương án cấu hình API key thay thế (OpenAI / Midjourney / Gemini API key có hạn mức riêng).
+- **11:30 - 12:25**: Viết tiếp và hoàn thành **40 bài viết chuyên sâu (61–100)** cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/), nâng tổng số bài viết gốc của cụm lên trọn vẹn **100 bài**:
+  - **Nhóm 61–70 (Chuyên sâu Replit)**: Review code do Replit Agent sinh, nối Supabase production (connection pooling), rò rỉ secret qua fork/public project, chọn kiểu deployment (webhook, reserved, static), tối ưu chi phí build, custom domain & email, file uploads an toàn, phân quyền làm việc nhóm, SEO cho app Replit, chiến lược backup & disaster recovery (RPO/RTO).
+  - **Nhóm 71–86 (Bảo mật, SEO, Thuê nhân sự AI app)**: RLS policies đa tầng, audit trails & logging, multi-tenancy chống rò rỉ dữ liệu, admin panel security, bộ câu hỏi bảo mật doanh nghiệp, thanh toán an toàn, bảo vệ outbound API keys, API defense, SEO cho startup giai đoạn đầu, khôi phục thứ hạng sau rebuild, landing pages chuyển đổi cao, hợp đồng & IP khi thuê developer, retainer vận hành, định giá fixed-scope vibe coding, hợp tác với founder tự code, phân định vai trò giữa AI agent và developer người thật.
+  - **Nhóm 87–100 (Hạ tầng, Database nâng cao & Kế hoạch năm đầu)**: Bolt hosting thực tế, Bolt vs Cursor, Cursor cho non-developers, quy trình phối hợp Cursor + Lovable, chuyển prototype giữa các tool, phân bổ logic nghiệp vụ (database vs application layer), reporting queries không nghẽn app, soft deletes & retention GDPR, quản lý date/time zone chuẩn xác, monitoring 4 lớp cảnh báo sớm, chịu tải ngày launch spike, migrate live domain an toàn, release pipeline có thể rollback tức thì, và **bài chốt 100**: Kế hoạch năm đầu tiên (5 mốc chuyển dịch từ prototype lên quy mô doanh nghiệp).
+  - **Đảm bảo chất lượng**: 100% bài viết chứa đầy đủ 5 câu hỏi FAQ và JSON-LD `FAQPage` schema hợp lệ, độ dài bài đạt chuẩn >1.800 từ thực chất, slug khớp chuẩn cấu trúc hệ thống. Đã commit và push đồng bộ lên GitHub.
