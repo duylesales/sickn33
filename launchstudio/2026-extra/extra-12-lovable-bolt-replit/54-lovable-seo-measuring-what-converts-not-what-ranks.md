@@ -88,6 +88,28 @@ Two practical consequences. Review quarterly rather than monthly for content dec
 
 The one exception worth acting on immediately: a page with impressions and almost no clicks. That is a title and description problem, it is visible within weeks, and fixing it costs ten minutes — which makes it the only fast feedback loop in this discipline.
 
+## Decide What to Do With the Answer
+
+Measurement earns its keep only when it changes what gets written, and that requires a decision rule agreed with yourself in advance rather than a debate each quarter.
+
+A rule that works for small products: at each quarterly review, sort pages by signups. The top group tells you a subject that works — write two more articles on it, going deeper rather than broader. The middle group is fine and needs nothing. The bottom group, after six months with meaningful traffic and no signups, is a subject that attracts the wrong audience; stop writing about it, and consider whether the existing pages should be updated to speak to buyers or simply left alone.
+
+The harder decision is what to do with a page that brings a lot of traffic and no customers. The instinct is to keep it because the number is large. The honest reading is that it is attracting people who are not buyers, and every further article on that theme compounds the mistake — which is exactly the pattern in the example above.
+
+Keeping such a page costs nothing and it is not a candidate for deletion; the mistake is only in writing more like it. Write what the small converting page suggests instead, and check again in three months.
+
+## Watch for the Page That Was Working
+
+One failure mode is worth a specific check because it is invisible in a report of what is doing well: a page that used to produce customers and has quietly stopped.
+
+Causes are mundane. A competitor published something better. The search results for that query changed shape. Your page's information went out of date and readers notice. A site change broke the link between the article and the signup route it used to feed. Or the page was accidentally deindexed by a robots directive somebody added to a template.
+
+None of these announces itself. The page still exists, still looks fine, and produces nothing.
+
+The check is one line in the quarterly review: compare each page's signups against the same quarter last year, and look at anything that has fallen substantially. Usually the answer is content that aged; occasionally it is a technical fault that has been costing you customers for months.
+
+This is also the argument for keeping the measurement in your own database rather than in a tool with a retention limit. Comparing this quarter with the one two years ago is only possible if the data is still there, and it is the comparison that catches slow decline — which is the kind that nobody notices until the total has moved enough to be alarming.
+
 ## Setting This Up
 
 For an existing product this is typically half a day: first landing page and referrer captured on arrival and copied to the account at signup, a monthly query producing signups, conversion rate and revenue per page, the search console reviewed monthly for impressions without clicks, unexpected queries and near-miss pages, metrics that produce no decisions removed from whatever dashboard you look at, an optional free-text question at signup asking how people found you, and a quarterly review that decides what to write and what to update based on the result.
