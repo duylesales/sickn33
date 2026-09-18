@@ -102,6 +102,18 @@ There is a version of this work where a founder spends six months optimising the
 
 If the answer is nothing, and the reason is that you were evaluating tools, the tools are not the problem.
 
+## Where the Category Is Heading
+
+Two shifts are visible enough to plan around, without needing to predict details.
+
+Assistants are moving from completing code to completing tasks. Rather than suggesting the next lines, they take a described goal, work across files, run things, read the result and iterate. That changes what the human does: less typing, more specifying and reviewing, and a much greater premium on being able to state precisely what you want and to tell whether you got it.
+
+And the context they can hold is growing, which reduces the problem of a model seeing only part of the picture — the cause of several failures described throughout this series, including the two-file bug that survived three sessions.
+
+Both shifts point the same way for a founder deciding what to invest in. The skills that increase in value are specifying clearly, reviewing critically and knowing your own product's rules. The skills that decrease are the mechanical ones the tools now do better.
+
+Which is a reason to put the effort into the things this series keeps returning to — the conventions file, the tests, the decisions log, the review habits — rather than into keeping up with which editor released what. Those artefacts get more useful as the tools get more capable, because a more capable tool follows a clear specification further. A vague one just does more, faster, in a direction nobody chose.
+
 ## Setting This Up
 
 For a founder choosing or switching, this is an afternoon: a real task from your own project attempted in each candidate, noting project understanding, adherence to your conventions, the size of its changes and whether it fits how you work; the terms checked for retention, training and processing location, with a business tier evaluated if you have customer obligations; a conventions file in the repository so whichever tool you choose follows your patterns; and the habits that matter more than the choice — commit before every session, read the diff, one request at a time, a small test suite.
