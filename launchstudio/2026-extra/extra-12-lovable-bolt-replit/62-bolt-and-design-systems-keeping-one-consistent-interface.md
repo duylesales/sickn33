@@ -88,6 +88,18 @@ None of these is a reason to build a design system on its own. They are the reas
 
 The counsel against over-engineering still applies. Define the tokens you use, not the ones a large company would need. A product with eight colours and one spacing scale gets all of the above; a product with a hundred tokens and a theming architecture has built a design system as a project rather than as a tool, and that is a different and usually unnecessary undertaking.
 
+## Content Is Part of the System Too
+
+The inconsistency that founders notice is visual. The one customers notice is in the words, and it drifts for exactly the same reason.
+
+A generated product accumulates three ways of saying the same thing. The button is "Opslaan" on one screen and "Bewaren" on another. Errors are sometimes apologetic sentences and sometimes technical fragments. The thing your product is about is called a client on one screen, a customer on the next and an account in the settings — which is the vocabulary problem the schema article in this series describes, surfacing in the interface where users meet it.
+
+Add a short section to the conventions file. The words your product uses for its concepts, with the ones it does not use listed beside them. The standard labels for common actions. The tone for error messages — what happened, and what to do about it. Whether you address users as "je" or "u", which in Dutch is a decision that must be made once and applied everywhere, and which generated copy will otherwise mix within a single screen.
+
+Half a page, and it does the same work the tokens do: it converts an open question into a short menu, for you and for whatever writes the next screen.
+
+It is also the cheapest of all the work in this article. Nothing needs building, nothing needs converting, and the effect on how finished a product feels is out of proportion to the effort — particularly for a Dutch product, where a mixture of formal and informal address reads as carelessness rather than as variety.
+
 ## Setting This Up
 
 For an existing application this is typically one to two days: an inventory of colours, spacing values and component variants in use; a token set defined — six to ten colours, one spacing scale, three or four type sizes, one radius and one shadow; an accessible component library adopted and styled with the tokens, or a dozen components built; screens converted to use them; arbitrary values removed so the only available choices are the defined ones; the tokens and component list written into the repository's conventions file so coding assistants follow them; and a check in the monthly review for newly introduced values.
