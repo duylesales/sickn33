@@ -110,6 +110,8 @@ A line in a file per demonstration — date, prospect, version, dataset — take
 
 It is also useful internally: three months of those lines tells you which scenarios you actually demonstrate, which is usually a shorter list than the product's feature set and a good guide to what the marketing pages should emphasise.
 
+One further use: when a prospect who went quiet returns a year later, the record tells you what they saw and what has changed since, which turns a cold conversation into a warm one.
+
 ## Setting This Up
 
 For an agency or founder demonstrating regularly this is typically half a day, once: a reusable demonstration dataset of invented but realistic data, a template project cloned per prospect with its own database, credentials and storage, outbound email disabled by the absence of credentials rather than by configuration, a deployment link rather than project access, protected by a password or individual accounts with a time limit, a noindex directive, a visible banner on every screen, and a written statement of what the demonstration is sent alongside the link.

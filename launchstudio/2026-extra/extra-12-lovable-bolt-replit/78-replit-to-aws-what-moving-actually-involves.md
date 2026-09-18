@@ -112,6 +112,8 @@ Two things to have ready for that conversation. The requirement stated precisely
 
 If the answer is genuinely no, you now have a documented reason for the migration, which is also what your board, your advisers and your own future self will want to see.
 
+Keep whatever they tell you in writing. A commitment about region or certification made in an email is what you show the customer whose procurement asked, and it is considerably faster than arranging your own attestation.
+
 ## Setting This Up
 
 For a product with a genuine reason to move this is typically two to four weeks: the requirement stated specifically and tested against smaller alternatives, the destination chosen — frequently a managed application platform rather than a raw cloud provider, the application containerised and deployed behind a load balancer with certificates, the database migrated to a managed instance with verification, storage copied with URLs generated at read time, scheduled work re-established, and then the implicit layer built deliberately: networking, logging, metrics, alerting, backups with a tested restore, secret storage, deployment automation and administrative access control — with the ongoing operational cost budgeted as time or as a managed arrangement.
