@@ -170,6 +170,18 @@ Tuscany's startup ecosystem includes robotics, biotech, digital health, fintech 
 
 Visit a research lab open day in Pisa or Pontedera; meeting researchers in person often leads to thesis projects and first positions.
 
+## International Students in Tuscany
+
+Tuscany's universities attract international students, particularly in English-taught master's programmes in computer science, AI and engineering. International graduates can find English-speaking roles in research groups and some startups, while learning Italian opens up industry positions. Non-EU graduates should check residence permit options for job seeking after graduation.
+
+## Staying Connected
+
+Keep in touch with supervisors and classmates; Tuscany's research community is close-knit, and recommendations matter.
+
+## One More Tip
+
+Apply early for research fellowships; in Italy they are often announced with short deadlines and few applicants notice them in time.
+
 ## Real example
 
 ### A Pisa graduate who joined a robotics spin-off
