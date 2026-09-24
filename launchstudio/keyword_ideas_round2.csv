@@ -1,0 +1,79 @@
+cluster,ad_group,keyword,match_type,intent,ads_priority,volume_signal,notes
+B1-TanStack,AG-TANSTACK,lovable tanstack start,Phrase,Research,P1,Unverified-A,Lovable đổi stack 13/05/2026; không tự migrate dự án cũ
+B1-TanStack,AG-TANSTACK,lovable tanstack migration,Phrase,Service,P1,Unverified-A,nextlovable.com bán audit $299
+B1-TanStack,AG-TANSTACK,migrate lovable to tanstack,Phrase,Service,P1,Unverified-A,
+B1-TanStack,AG-TANSTACK,upgrade lovable project tanstack,Phrase,How-to,P1,Unverified-A,Trùng tên trang docs Lovable
+B1-TanStack,AG-TANSTACK,lovable react vite to tanstack,Phrase,How-to,P2,Unverified-B,
+B1-TanStack,AG-TANSTACK,lovable ssr,Phrase,Research,P2,Unverified-B,
+B1-TanStack,AG-TANSTACK,lovable ssr upgrade,Phrase,How-to,P2,Unverified-A,nextlovable bán audit $199
+B1-TanStack,AG-TANSTACK,lovable old stack,Phrase,Research,P2,Unverified-B,
+B1-TanStack,AG-TANSTACK,lovable project still on vite,Phrase,Research,P2,Unverified-C,
+B1-TanStack,AG-TANSTACK,lovable stack change 2026,Phrase,Research,P3,Unverified-C,
+B1-TanStack,AG-TANSTACK,lovable tanstack migration service,Phrase,Service,P1,Unverified-B,Intent thuê cao nhất cụm
+B1-TanStack,AG-TANSTACK,lovable seo ssr problem,Phrase,Fix,P2,Unverified-C,Nối với vấn đề SEO app Lovable
+B2-Payments,AG-PADDLE,lovable payments,Phrase,Research,P1,Unverified-A,Lovable Payments powered by Paddle
+B2-Payments,AG-PADDLE,lovable paddle,Phrase,Research,P1,Unverified-A,
+B2-Payments,AG-PADDLE,lovable payments vs stripe,Phrase,Compare,P1,Unverified-B,
+B2-Payments,AG-PADDLE,lovable paddle checkout,Phrase,Fix,P2,Unverified-B,
+B2-Payments,AG-PADDLE,lovable paddle domain flagged,Phrase,Fix,P2,Unverified-B,Changelog có tính năng resubmit flagged domain
+B2-Payments,AG-PADDLE,lovable payments not working,Phrase,Fix,P2,Unverified-B,
+B2-Payments,AG-PADDLE,lovable payments fees,Phrase,Cost,P2,Unverified-B,
+B2-Payments,AG-PADDLE,lovable subscription setup,Phrase,How-to,P2,Unverified-B,
+B2-Payments,AG-PADDLE,paddle vs stripe for saas,Phrase,Compare,P2,Unverified-B,Rộng hơn volume cao hơn
+B3-Cloud,AG-LOVCLOUD,lovable cloud,Phrase,Research,P1,Unverified-A,
+B3-Cloud,AG-LOVCLOUD,lovable cloud pricing,Phrase,Cost,P1,Unverified-B,
+B3-Cloud,AG-LOVCLOUD,lovable cloud vs supabase,Phrase,Compare,P1,Unverified-B,Câu hỏi quyết định quan trọng
+B3-Cloud,AG-LOVCLOUD,lovable database scaling,Phrase,Research,P2,Unverified-B,
+B3-Cloud,AG-LOVCLOUD,lovable cloud storage limit,Phrase,Research,P2,Unverified-C,Upload cap tới 5GB
+B3-Cloud,AG-LOVCLOUD,lovable database pressure,Phrase,Fix,P3,Unverified-C,Đúng tên tính năng mới 07/09
+B3-Cloud,AG-LOVCLOUD,lovable cloud performance,Phrase,Fix,P2,Unverified-C,
+B3-Cloud,AG-LOVCLOUD,do i need lovable cloud,Phrase,Decision,P2,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable whatsapp business,Phrase,How-to,P2,Unverified-C,Connector ra 15/09
+B4-Connectors,AG-CONNECT,lovable power bi,Phrase,How-to,P3,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable cloudflare integration,Phrase,How-to,P2,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable mapbox,Phrase,How-to,P3,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable firebase messaging,Phrase,How-to,P3,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable posthog,Phrase,How-to,P3,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable xero,Phrase,How-to,P3,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable google analytics,Phrase,How-to,P2,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable gitlab sync,Phrase,Fix,P2,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable bitbucket sync,Phrase,Fix,P2,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable apollo.io,Phrase,How-to,P3,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable figma plugin,Phrase,How-to,P3,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable clickhouse,Phrase,How-to,P3,Unverified-C,
+B4-Connectors,AG-CONNECT,lovable tally forms,Phrase,How-to,P3,Unverified-C,
+B5-MCP,AG-MCP,lovable mcp server,Phrase,How-to,P2,Unverified-B,
+B5-MCP,AG-MCP,lovable mcp setup,Phrase,How-to,P2,Unverified-C,
+B5-MCP,AG-MCP,lovable agent integrations,Phrase,Research,P2,Unverified-C,
+B5-MCP,AG-MCP,publish lovable app as mcp,Phrase,How-to,P3,Unverified-C,
+B5-MCP,AG-MCP,lovable slack integration,Phrase,How-to,P2,Unverified-C,Ra 26/08
+B5-MCP,AG-MCP,lovable goal command,Phrase,How-to,P3,Unverified-C,Tính năng /goal chạy 10 tiếng
+B6-Enterprise,AG-ENT,lovable sso setup,Phrase,How-to,P2,Unverified-B,
+B6-Enterprise,AG-ENT,lovable scim,Phrase,How-to,P3,Unverified-C,
+B6-Enterprise,AG-ENT,lovable 2fa enforcement,Phrase,How-to,P3,Unverified-C,Bắt buộc từ 11/09
+B6-Enterprise,AG-ENT,lovable trust center,Phrase,Research,P3,Unverified-C,
+B6-Enterprise,AG-ENT,lovable enterprise security,Phrase,Research,P2,Unverified-B,
+B6-Enterprise,AG-ENT,lovable api key revoked,Phrase,Fix,P2,Unverified-C,Tự động thu hồi key GitHub bị lộ
+B6-Enterprise,AG-ENT,lovable security insights,Phrase,Research,P3,Unverified-C,
+B7-FAQ,AG-FAQ,lovable favicon,Phrase,How-to,P2,Unverified-A,Được ghi nhận là FAQ phổ biến nhất
+B7-FAQ,AG-FAQ,lovable mobile layout broken,Phrase,Fix,P2,Unverified-B,
+B7-FAQ,AG-FAQ,lovable drafts,Phrase,How-to,P3,Unverified-C,Tính năng mới 09/09
+B7-FAQ,AG-FAQ,lovable chat mode,Phrase,How-to,P3,Unverified-C,
+B7-FAQ,AG-FAQ,lovable preview slow,Phrase,Fix,P2,Unverified-C,
+B7-FAQ,AG-FAQ,lovable project wont load,Phrase,Fix,P2,Unverified-C,
+B8-OtherTools,AG-OTHER,base44 export code,Phrase,How-to,P2,Unverified-A,Xuất hiện trong gig Fiverr cùng nhóm
+B8-OtherTools,AG-OTHER,base44 to production,Phrase,Service,P2,Unverified-B,
+B8-OtherTools,AG-OTHER,v0 to production,Phrase,Service,P2,Unverified-A,
+B8-OtherTools,AG-OTHER,v0 export nextjs,Phrase,How-to,P2,Unverified-A,appstuck có bài riêng
+B8-OtherTools,AG-OTHER,rocket new app,Phrase,Research,P3,Unverified-C,
+B8-OtherTools,AG-OTHER,windsurf production code,Phrase,Research,P3,Unverified-C,
+B8-OtherTools,AG-OTHER,firebase studio deploy,Phrase,Fix,P3,Unverified-C,
+B8-OtherTools,AG-OTHER,claude code production ready,Phrase,Research,P2,Unverified-C,
+B8-OtherTools,AG-OTHER,replit agent 3,Phrase,Research,P3,Unverified-C,
+B8-OtherTools,AG-OTHER,figma make to production,Phrase,Service,P3,Unverified-C,
+B9-Competitor,AG-COMP,nextlovable,Phrase,Compare,P2,Unverified-B,Đối thủ bán audit 199-299 USD
+B9-Competitor,AG-COMP,nextlovable alternative,Phrase,Compare,P2,Unverified-C,
+B9-Competitor,AG-COMP,lovable audit service,Phrase,Service,P1,Unverified-B,
+B9-Competitor,AG-COMP,lovable migration service,Phrase,Service,P1,Unverified-B,
+B9-Competitor,AG-COMP,vibeappscanner,Phrase,Compare,P3,Unverified-C,Công cụ quét bảo mật Lovable
+B9-Competitor,AG-COMP,lovable security scanner,Phrase,Service,P2,Unverified-B,
