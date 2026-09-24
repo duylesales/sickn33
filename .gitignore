@@ -8,3 +8,4 @@ awesome-agentic-advertising/
 **/.DS_Store
 .claude/
 scratch/
+.~lock.*
