@@ -1,0 +1,167 @@
+keyword_en,keyword_nl,nl_autocomplete,real_dutch_form,top_dutch_suggestion
+host lovable project,lovable project hosten,NO,,
+self host lovable project,lovable project zelf hosten,NO,,
+host lovable project on github,lovable project hosten op github,NO,,
+host lovable app,lovable app hosten,NO,,
+self host lovable app,lovable app zelf hosten,NO,,
+host lovable website,lovable website hosten,EXACT,,lovable website hosten
+lovable hosting,lovable hosting,EXACT,,lovable hosting
+lovable hosting cost,lovable hosting kosten,EXACT,,lovable hosting kosten
+lovable hosting price,lovable hosting prijs,NO,lovable hosting price (EN),
+lovable hosting plans,lovable hosting pakketten,NO,lovable hosting plans (EN),
+lovable hosting fees,lovable hosting tarieven,NO,,
+lovable hosting limits,lovable hosting limieten,NO,,
+lovable hosting options,lovable hosting opties,NO,,
+lovable hosting provider,lovable hosting provider,EXACT,,lovable hosting provider
+lovable hosting service,lovable hosting dienst,NO,,
+lovable hosting free,lovable hosting gratis,NO,,
+lovable hosting reddit,lovable hosting reddit,EXACT,,lovable hosting reddit
+lovable custom domain,lovable eigen domein,NO,,
+lovable custom domain not working,lovable eigen domein werkt niet,NO,,
+lovable custom domain ssl,lovable eigen domein ssl,NO,,
+lovable custom domain dns,lovable eigen domein dns,NO,,
+lovable domain not working,lovable domein werkt niet,NO,,
+lovable dns error,lovable dns fout,NO,,
+lovable dns records,lovable dns records,EXACT,,lovable dns records
+lovable dns points to prohibited ip,lovable dns verwijst naar verboden ip,NO,,
+lovable cloudflare error 1000,lovable cloudflare fout 1000,NO,,
+lovable 404,lovable 404,EXACT,,lovable 404
+lovable 404 error,lovable 404 fout,NO,,
+lovable proxy error 404,lovable proxy fout 404,NO,,
+lovable to vercel 404,lovable naar vercel 404,NO,lovable to vercel 404,lovable to vercel 404
+lovable publishing failed,lovable publiceren mislukt,NO,,
+lovable build unsuccessful,lovable build mislukt,NO,,
+lovable tanstack start,lovable tanstack start,EXACT,,lovable tanstack start
+lovable deploy to vercel,lovable deployen naar vercel,NO,,
+lovable deploy to aws,lovable deployen naar aws,NO,,
+migrate lovable to vercel,lovable migreren naar vercel,NO,,
+lovable migration tool,lovable migratietool,NO,,
+lovable migrate project,lovable project migreren,NO,,
+lovable export code,lovable code exporteren,NO,,
+lovable export to github,lovable exporteren naar github,NO,,
+lovable self hosted,lovable zelf gehost,NO,,
+can lovable host my app,kan lovable mijn app hosten,NO,,
+lovable stripe,lovable stripe,EXACT,,lovable stripe
+lovable stripe integration,lovable stripe integratie,NO,,
+lovable stripe checkout,lovable stripe checkout,EXACT,,lovable stripe checkout
+lovable stripe webhook,lovable stripe webhook,EXACT,,lovable stripe webhook secret
+lovable stripe webhook secret,lovable stripe webhook secret,EXACT,,lovable stripe webhook secret
+lovable stripe api key,lovable stripe api key,EXACT,,lovable stripe api key
+lovable stripe connect,lovable stripe connect,NO,stripe connect lovable,stripe connect lovable
+lovable stripe supabase,lovable stripe supabase,EXACT,,lovable stripe supabase
+lovable payments vs stripe,lovable payments vs stripe,EXACT,,lovable payments vs stripe
+lovable add stripe,stripe toevoegen aan lovable,NO,,
+connect lovable to stripe,lovable koppelen aan stripe,NO,,
+does lovable use stripe,gebruikt lovable stripe,NO,,
+can lovable integrate stripe,kan lovable stripe integreren,NO,,
+lovable payment integration,lovable betaalintegratie,NO,,
+lovable payment gateway,lovable betaalprovider,NO,,
+lovable payment processor,lovable betaalverwerker,NO,,
+lovable payment system,lovable betaalsysteem,NO,,
+lovable payments integration,lovable payments integratie,NO,,
+lovable paddle,lovable paddle,EXACT,,lovable paddle
+lovable one time payment,lovable eenmalige betaling,NO,,
+lovable ideal,lovable ideal,EXACT,stripe ideal,lovable ideal
+lovable mollie,lovable mollie,EXACT,mollie integratie / mollie of stripe,lovable mollie
+ideal payment gateway,ideal betaalprovider,EXACT,,ideal betaalprovider
+ideal payment method netherlands,ideal betaalmethode nederland,NO,,
+best database for lovable,beste database voor lovable,NO,,
+database for lovable,database voor lovable,NO,database lovable,database lovable
+what database lovable use,welke database gebruikt lovable,NO,,
+lovable database options,lovable database opties,NO,,
+lovable cloud vs supabase,lovable cloud vs supabase,EXACT,,lovable cloud vs supabase
+lovable cloud vs supabase pricing,lovable cloud vs supabase prijzen,NO,,
+lovable cloud or supabase,lovable cloud of supabase,NO,lovable cloud supabase,lovable cloud supabase
+lovable cloud vs supabase reddit,lovable cloud vs supabase reddit,EXACT,,lovable cloud vs supabase reddit
+lovable cloud to supabase migration tool,lovable cloud naar supabase migratietool,NO,,
+lovable cloud to supabase migration,lovable cloud naar supabase migratie,NO,,
+lovable cloud to supabase exporter,lovable cloud naar supabase exporttool,NO,,
+lovable cloud to supabase extension,lovable cloud naar supabase extensie,NO,,
+migrate lovable cloud to supabase,lovable cloud migreren naar supabase,NO,,
+how to migrate lovable cloud to supabase,hoe migreer je lovable cloud naar supabase,NO,,
+can i migrate from lovable cloud to supabase,kan ik migreren van lovable cloud naar supabase,NO,,
+switch from lovable cloud to supabase,overstappen van lovable cloud naar supabase,NO,,
+change lovable cloud to supabase,lovable cloud wijzigen naar supabase,NO,,
+lovable database migration,lovable database migratie,NO,,
+migrate lovable database to supabase,lovable database migreren naar supabase,NO,,
+lovable database cost,lovable database kosten,NO,,
+lovable database limit,lovable database limiet,NO,,
+lovable cloud database pricing,lovable cloud database prijzen,NO,,
+lovable cloud storage limit,lovable cloud opslaglimiet,NO,,
+lovable external database,lovable externe database,NO,,
+lovable own database,lovable eigen database,NO,,
+lovable database security,lovable database beveiliging,NO,,
+lovable database error saving new user,lovable database fout bij opslaan nieuwe gebruiker,NO,,
+lovable database backup,lovable database backup,EXACT,,lovable database backup
+can lovable apps scale,kunnen lovable apps opschalen,NO,,
+lovable supabase,lovable supabase,EXACT,,lovable supabase
+lovable supabase integration,lovable supabase integratie,NO,,
+lovable supabase setup,lovable supabase instellen,NO,,
+lovable supabase tutorial,lovable supabase handleiding,NO,,
+connect lovable to supabase,lovable koppelen aan supabase,NO,,
+using lovable with supabase,lovable gebruiken met supabase,NO,,
+lovable supabase rls,lovable supabase rls,EXACT,rls supabase,lovable supabase rls
+lovable row level security,lovable beveiliging op rijniveau,NO,,
+lovable supabase security,lovable supabase beveiliging,NO,,
+lovable supabase vulnerability,lovable supabase kwetsbaarheid,NO,,
+lovable security vulnerability,lovable veiligheidslek,NO,,
+lovable app vulnerability,lovable app kwetsbaarheid,NO,,
+lovable cve,lovable cve,EXACT,,lovable cve
+lovable data exposure,lovable datalek,EXACT,,lovable datalek
+lovable api key exposed,lovable api key gelekt,NO,,
+lovable anon key,lovable anon key,EXACT,,lovable anon key
+lovable service role key,lovable service role key,EXACT,,lovable service role key
+lovable supabase service role key,lovable supabase service role key,EXACT,,lovable supabase service role key
+lovable app security,lovable app beveiliging,NO,is lovable veilig,
+lovable app safe,is lovable app veilig,NO,,
+lovable security audit,lovable beveiligingsaudit,NO,,
+lovable code review,lovable code review,EXACT,,lovable code review
+lovable secrets manager,lovable secrets manager,EXACT,,lovable secrets manager
+lovable failed to get supabase secrets,lovable kan supabase secrets niet ophalen,NO,,
+lovable supabase connection failed,lovable supabase verbinding mislukt,NO,,
+lovable supabase not working,lovable supabase werkt niet,NO,,
+lovable supabase error,lovable supabase fout,NO,,
+lovable cors error,lovable cors fout,NO,,
+lovable auth network request failed,lovable auth netwerkverzoek mislukt,NO,,
+lovable auth error code 47,lovable auth foutcode 47,NO,,
+oauth lovable app help,oauth lovable app hulp,NO,,
+lovable supabase edge functions,lovable supabase edge functions,EXACT,,lovable supabase edge functions
+lovable supabase limits,lovable supabase limieten,NO,,
+lovable supabase self hosted,lovable supabase zelf gehost,NO,,
+lovable use own supabase,lovable eigen supabase gebruiken,NO,,
+lovable supabase migrations,lovable supabase migraties,NO,,
+i vibe coded an app now what,ik heb een app gevibecode wat nu,NO,,
+fix my vibe coded app,mijn gevibecode app laten repareren,NO,,
+fix vibe coded app,gevibecode app repareren,NO,,
+vibe coded my app hired a dev,app gevibecode developer ingehuurd,NO,,
+upwork vibe coded app,upwork gevibecode app,NO,,
+vibe coded app audit,gevibecode app audit,NO,,
+vibe coded app security,gevibecode app beveiliging,NO,,
+vibe coded app security check,gevibecode app beveiligingscheck,NO,,
+vibe coded app security checklist,gevibecode app beveiligingschecklist,NO,,
+vibe coded app security scanner,gevibecode app beveiligingsscanner,NO,,
+vibe coded app scanner,gevibecode app scanner,NO,,
+vibe coded app checker,gevibecode app checker,NO,,
+vibe coded app security issues,gevibecode app beveiligingsproblemen,NO,,
+vibe coded app security breach,gevibecode app beveiligingsinbreuk,NO,,
+vibe coded app gets hacked,gevibecode app gehackt,NO,,
+how to secure vibe coded apps,hoe beveilig je gevibecode apps,NO,,
+how to deploy vibe coded apps,hoe deploy je gevibecode apps,NO,,
+how to launch vibe coded app,hoe lanceer je een gevibecode app,NO,,
+production vibe coded apps,gevibecode apps in productie,NO,,
+vibe coded app wall of shame,gevibecode app wall of shame,NO,,
+vibe coded apps are trash,gevibecode apps zijn slecht,NO,,
+vercel 404 not_found vite,vercel 404 not_found vite,EXACT,,vercel 404 not_found vite
+vercel 404 not found after deployment,vercel 404 niet gevonden na deployment,NO,,
+vercel 404 not found on refresh,vercel 404 niet gevonden na verversen,NO,,
+supabase rls checker,supabase rls checker,EXACT,,supabase rls checker
+supabase rls disabled in public,supabase rls uitgeschakeld in public,NO,,
+check supabase security,supabase beveiliging controleren,NO,,
+supabase security issues,supabase beveiligingsproblemen,NO,,
+supabase security advisor,supabase security advisor,EXACT,,supabase security advisor
+supabase rls best practices,supabase rls richtlijnen,NO,,
+stripe webhook not working,stripe webhook werkt niet,NO,,
+stripe webhook not firing,stripe webhook wordt niet geactiveerd,NO,,
+stripe test mode to live mode,stripe testmodus naar live modus,NO,,
+stripe checkout not working,stripe checkout werkt niet,NO,,
+self host supabase,supabase zelf hosten,NO,,

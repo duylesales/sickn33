@@ -1,0 +1,25 @@
+Keyword,English_Translation_Meaning,Monthly_Search_Volume,Three_Month_Change,YoY_Change,Competition,Top_Bid_Low_EUR,Top_Bid_High_EUR,Category,Commercial_Intent
+pentest,"Penetration test (Ethical hacking test)",2400,-16%,-33%,Vừa,4.51,31.12,Pentest,High - Head term kiểm thử xâm nhập
+penetratietest,"Penetration test (Native Dutch word for pentest)",1000,-18%,-28%,Vừa,6.10,43.70,Pentest,High - Từ thuần Hà Lan cho pentest
+iso 27001 audit,"ISO 27001 security audit",320,-57%,-18%,Vừa,6.85,30.82,Compliance,High - Doanh nghiệp cần chứng chỉ ISO
+it audit,"IT systems audit",320,-46%,-33%,Vừa,2.87,7.49,Audit,Medium - Audit hệ thống CNTT
+nis2 compliance,"NIS2 directive compliance (New EU cybersecurity law)",260,-46%,-18%,Cao,3.70,12.32,Compliance,High - Chỉ thị an ninh mạng mới của EU
+code review,"Source code review / audit",210,0%,+50%,Vừa,5.71,54.88,Code,Very High - Audit & rà soát mã nguồn (CPC tới 54€)
+iso 27001 certificering kosten,"ISO 27001 certification cost",170,-36%,+40%,Cao,6.87,26.72,Compliance,Very High - Khảo giá chứng chỉ ISO
+security audit,"Information security audit",140,-55%,-29%,Vừa,3.96,15.95,Audit,High - Đánh giá an toàn thông tin
+avg compliance,"GDPR compliance ('AVG' is the Dutch term for GDPR)",110,-71%,-56%,Vừa,1.94,5.28,AVG/GDPR,High - Tuân thủ luật dữ liệu AVG tại NL
+pentest website,"Website penetration test",70,-25%,-40%,Cao,5.08,39.76,Pentest,High - Kiểm thử bảo mật website
+avg check,"GDPR / privacy data check",50,-20%,-43%,Vừa,1.35,3.77,AVG/GDPR,Medium - Rà soát dữ liệu AVG
+cyber security audit,"Cybersecurity audit",50,-67%,-50%,Vừa,6.74,17.87,Audit,High - Đánh giá an ninh mạng
+datalek voorkomen,"Prevent data breach ('datalek' = data leak / breach)",50,0%,-67%,Vừa,—,—,Security,Medium - Phòng chống rò rỉ dữ liệu
+pentest kosten,"Penetration test cost",50,0%,-50%,Cao,9.70,35.67,Pentest,Very High - Khảo giá dịch vụ pentest
+pentest laten uitvoeren,"Have a penetration test conducted / executed",50,-64%,+100%,Vừa,12.83,50.96,Pentest,Very High - Thuê làm pentest (YoY +100%)
+technische due diligence,"Technical due diligence (Tech audit for funding/M&A)",40,-50%,-50%,Vừa,1.90,5.88,Due Diligence,Very High - Thẩm định kỹ thuật gọi vốn/M&A
+kosten pentest,"Cost of penetration test",30,0%,0%,Cao,9.69,30.61,Pentest,Very High - Chi phí làm pentest
+penetratietest kosten,"Penetration test cost (Native Dutch word)",30,0%,0%,Cao,—,—,Pentest,Very High - Khảo giá penetratietest
+avg audit,"GDPR compliance audit",20,-50%,0%,Cao,2.84,5.56,AVG/GDPR,High - Audit tuân thủ luật riêng tư AVG
+it due diligence,"IT infrastructure due diligence",20,-67%,0%,Vừa,2.22,5.09,Due Diligence,Very High - Thẩm định CNTT
+due diligence software,"Software codebase due diligence",10,0%,+∞,Cao,4.42,12.01,Due Diligence,High - Thẩm định phần mềm
+ethical hacker inhuren,"Hire an ethical hacker ('inhuren' = hire)",10,-100%,-100%,—,—,—,Pentest,High - Thuê hacker mũ trắng
+kwetsbaarheidsscan,"Vulnerability scan ('kwetsbaarheid' = vulnerability)",10,0%,0%,Cao,—,—,Audit,Medium - Quét lỗ hổng tự động
+pentest webapplicatie,"Web application penetration test",10,0%,+∞,Thấp,—,—,Pentest,High - Pentest ứng dụng web

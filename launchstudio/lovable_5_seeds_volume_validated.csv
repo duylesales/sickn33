@@ -1,0 +1,173 @@
+seed,keyword,match_type,intent,whose_problem,ads_or_seo,priority,notes,autocomplete_validated
+S1-Host,host lovable project,phrase,Decision,your_app,ADS,P1,"SEED GOC - la truy van that, duy nhat trong 5 seed duoc autocomplete khop chinh xac",YES
+S1-Host,self host lovable project,phrase,Decision,your_app,ADS,P1,"Bien the self-host, dong co kiem soat",YES
+S1-Host,host lovable project on github,phrase,How-to,your_app,SEO,P3,Tutorial,YES
+S1-Host,host lovable app,phrase,Decision,your_app,ADS,P1,,YES
+S1-Host,self host lovable app,phrase,Decision,your_app,ADS,P1,,YES
+S1-Host,host lovable website,phrase,Decision,your_app,ADS,P2,,YES
+S1-Host,lovable hosting,phrase,Research,your_app,ADS,P2,Head term cua cum - rong nhung dung chu de,YES
+S1-Host,lovable hosting cost,phrase,Cost,your_app,ADS,P1,Lovable that su ton $91-131/thang,YES
+S1-Host,lovable hosting price,phrase,Cost,your_app,ADS,P1,,YES
+S1-Host,lovable hosting plans,phrase,Cost,your_app,ADS,P2,,YES
+S1-Host,lovable hosting fees,phrase,Cost,your_app,ADS,P2,,YES
+S1-Host,lovable hosting limits,phrase,Cost,your_app,ADS,P2,Nguoi dang cham tran,YES
+S1-Host,lovable hosting options,phrase,Research,your_app,ADS,P2,,YES
+S1-Host,lovable hosting provider,phrase,Service,your_app,ADS,P1,Dang tim NHA CUNG CAP - intent dich vu,YES
+S1-Host,lovable hosting service,phrase,Service,your_app,ADS,P1,Intent dich vu ro nhat cum S1,YES
+S1-Host,lovable hosting free,phrase,Cost,your_app,SEO,P4,Tim mien phi - khong mua,YES
+S1-Host,lovable hosting reddit,phrase,Research,your_app,SEO,P4,"Muon y kien dong nghiep, khong muon vendor",YES
+S1-Host,lovable custom domain,phrase,Decision,your_app,ADS,P2,,YES
+S1-Host,lovable custom domain not working,phrase,Fix,your_app,ADS,P1,"Loi THAT cua app khach, khong phai Lovable hong",YES
+S1-Host,lovable custom domain ssl,phrase,Fix,your_app,ADS,P2,,YES
+S1-Host,lovable custom domain dns,phrase,Fix,your_app,ADS,P2,,YES
+S1-Host,lovable domain not working,phrase,Fix,your_app,ADS,P1,,YES
+S1-Host,lovable dns error,phrase,Fix,your_app,ADS,P1,,YES
+S1-Host,lovable dns records,phrase,How-to,your_app,SEO,P3,,YES
+S1-Host,lovable dns points to prohibited ip,phrase,Fix,your_app,ADS,P2,Loi rat cu the - nguoi tim da mac ket,YES
+S1-Host,lovable cloudflare error 1000,phrase,Fix,your_app,ADS,P2,Loi DNS khi tro custom domain,YES
+S1-Host,lovable 404,phrase,Fix,your_app,ADS,P1,,YES
+S1-Host,lovable 404 error,phrase,Fix,your_app,ADS,P1,,YES
+S1-Host,lovable proxy error 404,phrase,Fix,your_app,ADS,P2,,YES
+S1-Host,lovable to vercel 404,phrase,Fix,your_app,ADS,P1,Loi deploy sang Vercel,YES
+S1-Host,lovable publishing failed,phrase,Fix,your_app,ADS,P1,,YES
+S1-Host,lovable build unsuccessful,phrase,Fix,your_app,ADS,P1,,YES
+S1-Host,lovable tanstack start,phrase,Research,your_app,ADS,P2,Stack moi tu 13/05/2026,YES
+S1-Host,lovable deploy to vercel,phrase,How-to,your_app,SEO,P3,,YES
+S1-Host,lovable deploy to aws,phrase,How-to,your_app,ADS,P2,AWS = du an lon hon,YES
+S1-Host,migrate lovable to vercel,phrase,Service,your_app,ADS,P1,,YES
+S1-Host,lovable migration tool,phrase,Service,tool_seeker,ADS,P1,Tim CONG CU - xem ket luan ve lead magnet,YES
+S1-Host,lovable migrate project,phrase,Service,your_app,ADS,P1,,YES
+S1-Host,lovable export code,phrase,How-to,your_app,SEO,P3,,YES
+S1-Host,lovable export to github,phrase,How-to,your_app,SEO,P3,,YES
+S1-Host,lovable self hosted,phrase,Decision,your_app,ADS,P2,,YES
+S1-Host,can lovable host my app,phrase,Research,your_app,SEO,P3,Cau hoi truoc khi dung Lovable,YES
+S2-Stripe,lovable stripe,phrase,Research,your_app,ADS,P2,Head term,YES
+S2-Stripe,lovable stripe integration,exact,Research,your_app,ADS,P1,Cum manh nhat chu de Stripe. EXACT de kiem soat.,YES
+S2-Stripe,lovable stripe checkout,phrase,Research,your_app,ADS,P2,,YES
+S2-Stripe,lovable stripe webhook,phrase,Fix,your_app,ADS,P1,Webhook = diem vo pho bien nhat,YES
+S2-Stripe,lovable stripe webhook secret,phrase,Fix,your_app,ADS,P1,Signing secret phai nam trong Lovable Secrets,YES
+S2-Stripe,lovable stripe api key,phrase,Fix,your_app,ADS,P2,,YES
+S2-Stripe,lovable stripe connect,phrase,Research,your_app,ADS,P1,Marketplace = du an gia tri cao,YES
+S2-Stripe,lovable stripe supabase,phrase,Research,your_app,ADS,P2,Webhook chay bang Supabase Edge Function,YES
+S2-Stripe,lovable payments vs stripe,phrase,Compare,your_app,ADS,P1,Dang chon - thoi diem tu van,YES
+S2-Stripe,lovable add stripe,phrase,How-to,your_app,SEO,P3,,YES
+S2-Stripe,connect lovable to stripe,phrase,How-to,your_app,SEO,P3,,YES
+S2-Stripe,does lovable use stripe,phrase,Research,your_app,SEO,P4,Cau hoi tim hieu,YES
+S2-Stripe,can lovable integrate stripe,phrase,Research,your_app,SEO,P4,,YES
+S3-Pay,lovable payment integration,phrase,Research,your_app,ADS,P1,Bien the ngan cua seed 3 - cai nay CO tim kiem,YES
+S3-Pay,lovable payment gateway,phrase,Decision,your_app,ADS,P1,,YES
+S3-Pay,lovable payment processor,phrase,Decision,your_app,ADS,P2,,YES
+S3-Pay,lovable payment system,phrase,Decision,your_app,ADS,P2,,YES
+S3-Pay,lovable payments integration,phrase,Research,your_app,ADS,P1,,YES
+S3-Pay,lovable paddle,phrase,Research,your_app,ADS,P2,"Paddle = merchant of record, bo loi khac Stripe",YES
+S3-Pay,lovable one time payment,phrase,Research,your_app,ADS,P2,,YES
+S3-Pay,lovable ideal,phrase,Decision,MIXED,ADS,P2,CAN THAN: co the la 'tra tien cho Lovable bang iDEAL',YES
+S3-Pay,lovable mollie,phrase,Decision,your_app,ADS,P1,LOI THE NL - Mollie khong nam trong Lovable Payments,YES
+S3-Pay,ideal toevoegen aan website,phrase,Service,your_app,ADS,P1,🇳🇱 TOT NHAT cho NL - intent dich vu ro rang,YES
+S3-Pay,ideal betaling toevoegen aan website,phrase,Service,your_app,ADS,P1,"🇳🇱 Dai hon, intent cao hon",YES
+S3-Pay,ideal integreren in website,phrase,Service,your_app,ADS,P1,🇳🇱,YES
+S3-Pay,ideal payment gateway,phrase,Decision,your_app,ADS,P2,Khong gan thuong hieu,YES
+S3-Pay,ideal payment method netherlands,phrase,Research,your_app,SEO,P3,,YES
+S3-Pay,lovable add payment method,phrase,MIXED,lovable_platform,NEGATIVE,-,🔴 Gan chac la 'doi the tra tien cho Lovable',YES
+S3-Pay,lovable change payment method,phrase,Support,lovable_platform,NEGATIVE,-,🔴 Billing cua Lovable,YES
+S3-Pay,lovable payment methods,phrase,MIXED,lovable_platform,NEGATIVE,-,🔴 Lan nghia nang,YES
+S4-DB,best database for lovable,phrase,Decision,your_app,ADS,P1,Bien the ngan cua seed 4 - CAI NAY co tim kiem,YES
+S4-DB,database for lovable,phrase,Decision,your_app,ADS,P1,,YES
+S4-DB,what database lovable use,phrase,Research,your_app,SEO,P3,,YES
+S4-DB,lovable database options,phrase,Decision,your_app,ADS,P1,,YES
+S4-DB,lovable cloud vs supabase,phrase,Compare,your_app,ADS,P1,CUM MANH NHAT S4 - 6 site canh tranh,YES
+S4-DB,lovable cloud vs supabase pricing,phrase,Cost,your_app,ADS,P1,~$300/thang vs $35-75 o 10k user,YES
+S4-DB,lovable cloud or supabase,phrase,Compare,your_app,ADS,P1,,YES
+S4-DB,lovable cloud vs supabase reddit,phrase,Compare,your_app,SEO,P4,Muon y kien dong nghiep,YES
+S4-DB,lovable cloud to supabase migration tool,phrase,Service,tool_seeker,ADS,P1,🥇 TIM CONG CU - cum manh nhat toan bo nghien cuu,YES
+S4-DB,lovable cloud to supabase migration,phrase,Service,your_app,ADS,P1,🥇,YES
+S4-DB,lovable cloud to supabase exporter,phrase,Service,tool_seeker,ADS,P1,🥇,YES
+S4-DB,lovable cloud to supabase extension,phrase,Service,tool_seeker,ADS,P1,,YES
+S4-DB,migrate lovable cloud to supabase,phrase,Service,your_app,ADS,P1,,YES
+S4-DB,how to migrate lovable cloud to supabase,phrase,How-to,your_app,SEO,P2,How-to nhung chu de mua - viet bai + CTA,YES
+S4-DB,can i migrate from lovable cloud to supabase,phrase,Research,your_app,ADS,P2,Chi lam duoc tu 07/2026,YES
+S4-DB,switch from lovable cloud to supabase,phrase,Service,your_app,ADS,P1,,YES
+S4-DB,change lovable cloud to supabase,phrase,Service,your_app,ADS,P1,,YES
+S4-DB,lovable database migration,phrase,Service,your_app,ADS,P1,,YES
+S4-DB,migrate lovable database to supabase,phrase,Service,your_app,ADS,P1,,YES
+S4-DB,lovable database cost,phrase,Cost,your_app,ADS,P2,,YES
+S4-DB,lovable database limit,phrase,Cost,your_app,ADS,P2,,YES
+S4-DB,lovable cloud database pricing,phrase,Cost,your_app,ADS,P1,,YES
+S4-DB,lovable cloud storage limit,phrase,Cost,your_app,ADS,P2,,YES
+S4-DB,lovable external database,phrase,Decision,your_app,ADS,P2,,YES
+S4-DB,lovable own database,phrase,Decision,your_app,ADS,P2,,YES
+S4-DB,lovable database security,phrase,Security,your_app,ADS,P1,,YES
+S4-DB,lovable database error saving new user,phrase,Fix,your_app,ADS,P1,Loi SX that - thuong la RLS chan insert,YES
+S4-DB,lovable database backup,phrase,Service,your_app,ADS,P2,,YES
+S4-DB,can lovable apps scale,phrase,Research,your_app,ADS,P2,,YES
+S5-Supa,lovable supabase,phrase,Research,your_app,ADS,P2,Head term,YES
+S5-Supa,lovable supabase integration,phrase,Research,your_app,ADS,P2,,YES
+S5-Supa,lovable supabase setup,phrase,How-to,your_app,SEO,P3,,YES
+S5-Supa,lovable supabase tutorial,phrase,How-to,your_app,SEO,P4,Tutorial thuan - khong bid,YES
+S5-Supa,connect lovable to supabase,phrase,How-to,your_app,SEO,P3,Bien the ngan cua seed 5,YES
+S5-Supa,using lovable with supabase,phrase,How-to,your_app,SEO,P3,Gan nhat voi seed 5 goc,YES
+S5-Supa,lovable supabase rls,phrase,Security,your_app,ADS,P1,Loi bao mat nghiem trong nhat,YES
+S5-Supa,lovable row level security,phrase,Security,your_app,ADS,P1,,YES
+S5-Supa,lovable supabase security,phrase,Security,your_app,ADS,P1,,YES
+S5-Supa,lovable supabase vulnerability,phrase,Security,your_app,ADS,P1,CVE-2025-48757,YES
+S5-Supa,lovable security vulnerability,phrase,Security,your_app,ADS,P1,,YES
+S5-Supa,lovable app vulnerability,phrase,Security,your_app,ADS,P1,,YES
+S5-Supa,lovable cve,phrase,Security,your_app,ADS,P2,Nguoi tim da bao dong,YES
+S5-Supa,lovable data exposure,phrase,Security,your_app,ADS,P1,,YES
+S5-Supa,lovable api key exposed,phrase,Security,your_app,ADS,P1,Co che cua CVE: anon_key nhung trong client,YES
+S5-Supa,lovable anon key,phrase,Security,your_app,ADS,P2,,YES
+S5-Supa,lovable service role key,phrase,Security,your_app,ADS,P1,Service role key lot ra client = toan quyen DB,YES
+S5-Supa,lovable supabase service role key,phrase,Security,your_app,ADS,P1,,YES
+S5-Supa,lovable app security,phrase,Security,your_app,ADS,P1,,YES
+S5-Supa,lovable app safe,phrase,Security,your_app,ADS,P2,,YES
+S5-Supa,lovable security audit,phrase,Service,your_app,ADS,P1,🥇 Intent dich vu + bao mat,YES
+S5-Supa,lovable code review,phrase,Service,your_app,ADS,P1,🥇,YES
+S5-Supa,lovable secrets manager,phrase,How-to,your_app,SEO,P3,,YES
+S5-Supa,lovable failed to get supabase secrets,phrase,Fix,your_app,ADS,P1,"Loi cu the, app khach hong",YES
+S5-Supa,lovable supabase connection failed,phrase,Fix,your_app,ADS,P1,,YES
+S5-Supa,lovable supabase not working,phrase,Fix,your_app,ADS,P1,,YES
+S5-Supa,lovable supabase error,phrase,Fix,your_app,ADS,P2,,YES
+S5-Supa,lovable cors error,phrase,Fix,your_app,ADS,P1,,YES
+S5-Supa,lovable auth network request failed,phrase,Fix,your_app,ADS,P2,,YES
+S5-Supa,lovable auth error code 47,phrase,Fix,your_app,ADS,P2,,YES
+S5-Supa,oauth lovable app help,phrase,Fix,your_app,ADS,P2,OAuth redirect = 15% ca hong,YES
+S5-Supa,lovable supabase edge functions,phrase,Research,your_app,ADS,P2,,YES
+S5-Supa,lovable supabase limits,phrase,Cost,your_app,ADS,P2,,YES
+S5-Supa,lovable supabase self hosted,phrase,Decision,your_app,ADS,P2,,YES
+S5-Supa,lovable use own supabase,phrase,Decision,your_app,ADS,P1,,YES
+S5-Supa,lovable supabase migrations,phrase,Service,your_app,ADS,P2,,YES
+S6-Trigger,i vibe coded an app now what,phrase,Decision,your_app,ADS,P1,"🥇🥇 TRUY VAN HOAN HAO - dung thoi diem can giup, khong ai bid",YES
+S6-Trigger,fix my vibe coded app,phrase,Service,your_app,ADS,P1,🥇 Intent dich vu tuyet doi,YES
+S6-Trigger,fix vibe coded app,phrase,Service,your_app,ADS,P1,🥇,YES
+S6-Trigger,vibe coded my app hired a dev,phrase,Hire,your_app,ADS,P1,🥇 Dang tim hieu ve viec THUE dev,YES
+S6-Trigger,upwork vibe coded app,phrase,Hire,your_app,ADS,P2,Dang di tim freelancer,YES
+S6-Trigger,vibe coded app audit,phrase,Service,your_app,ADS,P1,🥇,YES
+S6-Trigger,vibe coded app security,phrase,Security,your_app,ADS,P1,"🥇 Cum bao mat manh nhat, khong gan thuong hieu",YES
+S6-Trigger,vibe coded app security check,phrase,Security,tool_seeker,ADS,P1,🥇 Tim cong cu,YES
+S6-Trigger,vibe coded app security checklist,phrase,Security,tool_seeker,ADS,P1,Lead magnet hoan hao,YES
+S6-Trigger,vibe coded app security scanner,phrase,Security,tool_seeker,ADS,P1,,YES
+S6-Trigger,vibe coded app scanner,phrase,Security,tool_seeker,ADS,P1,,YES
+S6-Trigger,vibe coded app checker,phrase,Security,tool_seeker,ADS,P1,,YES
+S6-Trigger,vibe coded app security issues,phrase,Security,your_app,ADS,P2,,YES
+S6-Trigger,vibe coded app security breach,phrase,Security,your_app,ADS,P2,,YES
+S6-Trigger,vibe coded app gets hacked,phrase,Security,your_app,ADS,P2,Noi dung canh bao - bat nguoi dang lo,YES
+S6-Trigger,how to secure vibe coded apps,phrase,How-to,your_app,SEO,P2,How-to nhung chu de mua - viet bai + CTA audit,YES
+S6-Trigger,how to deploy vibe coded apps,phrase,How-to,your_app,SEO,P2,,YES
+S6-Trigger,how to launch vibe coded app,phrase,How-to,your_app,SEO,P2,,YES
+S6-Trigger,production vibe coded apps,phrase,Decision,your_app,ADS,P2,,YES
+S6-Trigger,vibe coded app wall of shame,phrase,Research,your_app,SEO,P3,Noi dung - bat traffic canh bao,YES
+S6-Trigger,vibe coded apps are trash,phrase,Research,your_app,SEO,P4,Tam ly hoai nghi,YES
+S7-Trigger,vercel 404 not_found vite,phrase,Fix,your_app,ADS,P2,Vite = stack Lovable truoc TanStack. Rat cu the.,YES
+S7-Trigger,vercel 404 not found after deployment,phrase,Fix,your_app,ADS,P2,,YES
+S7-Trigger,vercel 404 not found on refresh,phrase,Fix,your_app,ADS,P2,Loi SPA routing kinh dien,YES
+S7-Trigger,supabase rls checker,phrase,Security,tool_seeker,ADS,P1,🥇 Tim cong cu kiem RLS,YES
+S7-Trigger,supabase rls disabled in public,phrase,Security,your_app,ADS,P1,Canh bao that cua Supabase dashboard,YES
+S7-Trigger,check supabase security,phrase,Security,tool_seeker,ADS,P1,,YES
+S7-Trigger,supabase security issues,phrase,Security,your_app,ADS,P2,,YES
+S7-Trigger,supabase security advisor,phrase,Security,tool_seeker,ADS,P2,,YES
+S7-Trigger,supabase rls best practices,phrase,How-to,your_app,SEO,P3,,YES
+S7-Trigger,stripe webhook not working,phrase,Fix,your_app,ADS,P3,⚠️ Canh tranh RAT lon + dev se tu sua,YES
+S7-Trigger,stripe webhook not firing,phrase,Fix,your_app,ADS,P3,⚠️,YES
+S7-Trigger,stripe test mode to live mode,phrase,Fix,your_app,ADS,P2,Dung thoi diem chuyen sang that,YES
+S7-Trigger,stripe checkout not working,phrase,Fix,your_app,ADS,P3,⚠️ Canh tranh lon,YES
+S7-Trigger,self host supabase,phrase,Decision,your_app,ADS,P3,⚠️ Phan lon la dev tu lam,YES

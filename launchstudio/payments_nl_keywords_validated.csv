@@ -1,0 +1,59 @@
+ad_group,keyword,match_type,intent,whose_problem,priority,kp_volume,notes,autocomplete_validated
+AG-IDEAL,ideal integratie,phrase,Service,business,P1,10,SEED GOC. Autocomplete sach: chi 'ideal integratie' + '...website'. Tot nhat trong 4 seed.,YES
+AG-IDEAL,ideal integratie website,phrase,Service,business,P1,,Bien the thuong mai truc tiep,YES
+AG-IDEAL,ideal integreren in website,phrase,Service,business,P1,,"Dang dong tu, y dinh thue ro",YES
+AG-IDEAL,ideal koppelen aan website,phrase,Service,business,P1,,Bien the an toan cua 'ideal koppelen',YES
+AG-IDEAL,ideal koppelen aan webshop,phrase,Service,business,P1,,"Webshop = co doanh thu, ngan sach that",YES
+AG-IDEAL,ideal toevoegen aan website,phrase,Service,business,P1,,Da xac nhan o nghien cuu truoc,YES
+AG-IDEAL,ideal betaling toevoegen aan website,phrase,Service,business,P1,,"Cum dai nhat, y dinh cao nhat",YES
+AG-IDEAL,ideal voor webshop,phrase,Decision,business,P2,,,YES
+AG-IDEAL,ideal in webshop,phrase,Decision,business,P2,,,YES
+AG-IDEAL,ideal webshop,phrase,Decision,business,P2,,Head term cua cum,YES
+AG-IDEAL,webshop ideal toevoegen,phrase,Service,business,P1,,"Dao thu tu, van y dinh thue",YES
+AG-IDEAL,webshop ideal betalingen,phrase,Service,business,P2,,,YES
+AG-IDEAL,ideal api,phrase,Service,developer,P1,,Nguoi tim la dev - du an ky thuat,YES
+AG-IDEAL,ideal api documentation,phrase,Research,developer,P3,,Doc chu khong thue. Kiem Search Terms.,YES
+AG-IDEAL,ideal api key,phrase,Service,developer,P2,,,YES
+AG-IDEAL,stripe ideal,phrase,Service,business,P1,260,"VOLUME CAO NHAT bo nay. CPC 1,85-11,92 EUR.",YES
+AG-IDEAL,stripe integratie,phrase,Service,business,P1,,,YES
+AG-IDEAL,ideal koppelen,exact,MIXED,MIXED,P3,10,SEED GOC nhung Y DINH LAN: 7/10 goi y la nguoi tieu dung. EXACT + negative nang.,YES
+AG-PAYPAL,paypal webshop,phrase,Service,business,P1,,Dang PayPal CO y dinh doanh nghiep,YES
+AG-PAYPAL,paypal webshop integration,phrase,Service,business,P1,,,YES
+AG-PAYPAL,paypal betalen webshop,phrase,Service,business,P2,,,YES
+AG-PAYPAL,paypal pos webshop,phrase,Service,business,P3,,POS = ban ca offline,YES
+AG-PAYPAL,paypal checkout,phrase,Service,business,P1,,Checkout = luon la context thuong mai,YES
+AG-PAYPAL,paypal checkout integration,phrase,Service,business,P1,,,YES
+AG-PAYPAL,paypal checkout button,phrase,Service,business,P2,,,YES
+AG-PAYPAL,paypal checkout websites,phrase,Service,business,P2,,,YES
+AG-PAYPAL,paypal button,phrase,Service,business,P2,,,YES
+AG-PAYPAL,paypal button for website,phrase,Service,business,P1,,,YES
+AG-PAYPAL,paypal button checkout,phrase,Service,business,P2,,,YES
+AG-PAYPAL,paypal api,phrase,Service,developer,P1,,,YES
+AG-PAYPAL,paypal api key,phrase,Service,developer,P2,,,YES
+AG-PAYPAL,paypal api credentials,phrase,Service,developer,P2,,,YES
+AG-PAYPAL,paypal api payment,phrase,Service,developer,P2,,,YES
+AG-MOLLIE,mollie integratie,phrase,Service,business,P1,,"Mollie la PSP Ha Lan, khong nam trong Lovable Payments",YES
+AG-MOLLIE,mollie integratie website,phrase,Service,business,P1,,,YES
+AG-MOLLIE,mollie integratie shopify,phrase,Service,business,P2,,"Shopify = co san app, canh tranh voi plugin mien phi",YES
+AG-MOLLIE,mollie koppelen,phrase,Service,MIXED,P3,,"CAN THAN: goi y toan 'aan snelstart/exact online' = ke toan, khong phai webshop",YES
+AG-MULTISAFEPAY,multisafepay ideal,phrase,Service,business,P1,,"PSP Ha Lan, user goi y them",YES
+AG-MULTISAFEPAY,multisafepay api,phrase,Service,developer,P1,,,YES
+AG-MULTISAFEPAY,multisafepay api key,phrase,Service,developer,P2,,,YES
+AG-MULTISAFEPAY,multisafepay api docs,phrase,Research,developer,P3,,,YES
+AG-MULTISAFEPAY,multisafepay website api key,phrase,Service,developer,P2,,,YES
+AG-MULTISAFEPAY,multisafepay test api,phrase,Service,developer,P2,,,YES
+AG-WERO,wero integratie,phrase,Service,business,P1,,🥇 WERO THAY THE IDEAL - cua so first-mover,YES
+AG-WERO,wero koppelen,phrase,Service,business,P1,,🥇,YES
+AG-WERO,wero webshop,phrase,Decision,business,P1,,🥇 Chu webshop dang chuan bi,YES
+AG-WERO,wero webshops,phrase,Decision,business,P2,,,YES
+AG-WERO,wero zakelijk,phrase,Decision,business,P1,,"'zakelijk' = doanh nghiep, loai nguoi tieu dung",YES
+AG-WERO,wero ideal,phrase,Research,MIXED,P2,,Lan voi nguoi tieu dung hoi Wero la gi,YES
+AG-KEUZE,betaalprovider vergelijken,phrase,Compare,business,P1,,Dang chon PSP - thoi diem tu van,YES
+AG-KEUZE,betaalmethoden webshop,phrase,Decision,business,P1,,,YES
+AG-KEUZE,welke betaalmethoden webshop,phrase,Decision,business,P1,,,YES
+AG-KEUZE,multisafepay vs mollie,phrase,Compare,business,P1,,Hai PSP Ha Lan - khach dang can quyet,YES
+AG-KEUZE,multisafepay of mollie,phrase,Compare,business,P1,,,YES
+AG-KEUZE,multisafepay vs stripe,phrase,Compare,business,P1,,,YES
+AG-KEUZE,mollie of stripe,phrase,Compare,business,P1,,,YES
+AG-KEUZE,wat is beter mollie of stripe,phrase,Compare,business,P1,,Cau hoi day du = y dinh tu van cao nhat,YES
+AG-KEUZE,payment service provider nederland,phrase,Decision,business,P2,,,YES
