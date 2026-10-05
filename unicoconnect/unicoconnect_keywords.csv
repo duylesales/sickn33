@@ -1,0 +1,107 @@
+group,keyword,match_type,intent,channel,market,priority,note,autocomplete_geo,validated
+A-Brand,unico connect reviews,exact,Trust,ADS,IN+US,P1,"Phong thu brand: SERP dang bi job board chiem. Dan ve case studies, KHONG dan ve careers.","in,us",YES
+A-Brand,unico connect private limited reviews,exact,Trust,ADS,IN+US,P1,"Phong thu brand: SERP dang bi job board chiem. Dan ve case studies, KHONG dan ve careers.","in,us",YES
+A-Brand,unico connect linkedin,exact,Trust,ADS,IN+US,P1,"Phong thu brand: SERP dang bi job board chiem. Dan ve case studies, KHONG dan ve careers.","in,us",YES
+A-Brand,unico connect private limited,exact,Trust,ADS,IN+US,P1,"Phong thu brand: SERP dang bi job board chiem. Dan ve case studies, KHONG dan ve careers.","in,us",YES
+A-Brand,unico connect llp,exact,Trust,ADS,IN+US,P1,"Phong thu brand: SERP dang bi job board chiem. Dan ve case studies, KHONG dan ve careers.",in,YES
+B-AI-Agent,ai agent development company,phrase,Service,ADS,US,P1,LOI CORE. Deal size lon nhat. Bid US-only.,in,YES
+B-AI-Agent,ai agent development company usa,phrase,Service,ADS,US,P1,LOI CORE. Deal size lon nhat. Bid US-only.,"in,us",YES
+B-AI-Agent,ai agent development company in usa,phrase,Service,ADS,US,P1,LOI CORE. Deal size lon nhat. Bid US-only.,"in,us",YES
+B-AI-Agent,ai agent development agency,phrase,Service,ADS,US,P1,LOI CORE. Deal size lon nhat. Bid US-only.,"in,us",YES
+B-AI-Agent,ai agent development services,phrase,Service,ADS,US,P1,LOI CORE. Deal size lon nhat. Bid US-only.,in,YES
+B-AI-Agent,ai agent development companies,phrase,Service,ADS,US,P1,LOI CORE. Deal size lon nhat. Bid US-only.,us,YES
+B-AI-Agent,best ai agent development company in usa,phrase,Service,ADS,US,P1,LOI CORE. Deal size lon nhat. Bid US-only.,"in,us",YES
+B-AI-Agent,ai agent development company near me,phrase,Service,ADS,US,P1,"Near-me = y dinh cao, CPC thap hon head term.","in,us",YES
+B-AI-Agent,ai agent developers near me,phrase,Service,ADS,US,P1,"Near-me = y dinh cao, CPC thap hon head term.","in,us",YES
+B-AI-Agent,ai agent development company in india,phrase,Service,ADS,IN,P3,"Thi truong IN: gia thap, chi chay neu con ngan sach.","in,us",YES
+B-AI-Agent,ai agent development cost,phrase,Cost,SEO,US,P1,"Da co bai /blogs/ai-agent-development-cost-2026. De SEO, dung bid.","in,us",YES
+B-AI-Agent,ai agent development cost in usa,phrase,Cost,SEO,US,P1,"Da co bai /blogs/ai-agent-development-cost-2026. De SEO, dung bid.","in,us",YES
+C-Agentic,agentic ai development services,phrase,Service,ADS,US,P1,"Thuat ngu enterprise, nguoi gõ thuong la buyer that.","in,us",YES
+C-Agentic,agentic ai integration services,phrase,Service,ADS,US,P1,"Thuat ngu enterprise, nguoi gõ thuong la buyer that.","in,us",YES
+C-Agentic,agentic ai company in usa,phrase,Service,ADS,US,P1,"Thuat ngu enterprise, nguoi gõ thuong la buyer that.","in,us",YES
+C-Agentic,agentic ai company near me,phrase,Service,ADS,US,P1,"Thuat ngu enterprise, nguoi gõ thuong la buyer that.","in,us",YES
+C-Agentic,agentic ai poc to production,phrase,Problem,ADS,US,P1,"VANG. Ho da co POC that bai. Dung noi dau cua ho, trung voi positioning cua Unico.","in,us",YES
+C-Agentic,agentic ai development companies in india,phrase,Service,SEO,IN,P3,,in,YES
+C-Agentic,agentic ai company in india,phrase,Service,SEO,IN,P3,,"in,us",YES
+C-Agentic,agentic ai development platform,phrase,Research,SEO,US,P3,"Ho tim PHAN MEM, khong tim agency. Loai khoi ads.","in,us",YES
+D-AI-Automation,ai automation agency near me,phrase,Service,ADS,US,P1,Dung dang near-me/usa. Xem canh bao o §6.,"in,us",YES
+D-AI-Automation,ai automation company near me,phrase,Service,ADS,US,P1,Dung dang near-me/usa. Xem canh bao o §6.,"in,us",YES
+D-AI-Automation,ai automation companies near me,phrase,Service,ADS,US,P1,Dung dang near-me/usa. Xem canh bao o §6.,"in,us",YES
+D-AI-Automation,ai automation company in usa,phrase,Service,ADS,US,P1,Dung dang near-me/usa. Xem canh bao o §6.,"in,us",YES
+D-AI-Automation,ai automation agency cost,phrase,Cost,ADS,US,P2,,us,YES
+D-AI-Automation,ai automation agency for business,phrase,Cost,ADS,US,P2,,"in,us",YES
+D-AI-Automation,ai automation agency,exact,Mixed,ADS,US,P4,"🔴 CHI Exact. Broad/Phrase se dinh nguoi MUON MO agency (course, business model).","in,us",YES
+D-AI-Automation,ai automation agency in mumbai,phrase,Service,SEO,IN,P3,,in,YES
+D-AI-Automation,ai automation agency in india,phrase,Service,SEO,IN,P3,,in,YES
+D-AI-Automation,ai automation agency in us,phrase,Service,SEO,IN,P3,,"in,us",YES
+E-AI-Consulting,ai consulting company in usa,phrase,Service,ADS,US,P1,"Deal advisory, margin cao nhat.","in,us",YES
+E-AI-Consulting,ai consulting companies in usa,phrase,Service,ADS,US,P1,"Deal advisory, margin cao nhat.",us,YES
+E-AI-Consulting,ai consulting company near me,phrase,Service,ADS,US,P1,"Deal advisory, margin cao nhat.","in,us",YES
+E-AI-Consulting,ai consulting services near me,phrase,Service,ADS,US,P1,"Deal advisory, margin cao nhat.","in,us",YES
+E-AI-Consulting,ai consulting firms near me,phrase,Service,ADS,US,P1,"Deal advisory, margin cao nhat.","in,us",YES
+E-AI-Consulting,ai consultant firms,phrase,Service,ADS,US,P1,"Deal advisory, margin cao nhat.",us,YES
+E-AI-Consulting,ai consulting rates,phrase,Cost,SEO,US,P2,"Noi dung, khong bid.","in,us",YES
+E-AI-Consulting,ai consulting company in india,phrase,Service,SEO,IN,P3,,"in,us",YES
+E-AI-Consulting,ai consulting companies in india,phrase,Service,SEO,IN,P3,,"in,us",YES
+F-AI-Dev-US,ai development company in usa,phrase,Service,ADS,US,P2,Head term dat. Chi chay khi B/C/E da bao hoa ngan sach.,"in,us",YES
+F-AI-Dev-US,ai software development company in usa,phrase,Service,ADS,US,P2,Head term dat. Chi chay khi B/C/E da bao hoa ngan sach.,"in,us",YES
+F-AI-Dev-US,ai software development company usa,phrase,Service,ADS,US,P2,Head term dat. Chi chay khi B/C/E da bao hoa ngan sach.,"in,us",YES
+F-AI-Dev-US,custom ai development company in usa,phrase,Service,ADS,US,P2,Head term dat. Chi chay khi B/C/E da bao hoa ngan sach.,"in,us",YES
+F-AI-Dev-US,ai product development company in usa,phrase,Service,ADS,US,P2,Head term dat. Chi chay khi B/C/E da bao hoa ngan sach.,"in,us",YES
+F-AI-Dev-US,best ai development company in usa,phrase,Service,ADS,US,P2,Head term dat. Chi chay khi B/C/E da bao hoa ngan sach.,"in,us",YES
+F-AI-Dev-US,ai development company in new york,phrase,Service,ADS,US,P2,Head term dat. Chi chay khi B/C/E da bao hoa ngan sach.,"in,us",YES
+F-AI-Dev-US,ai software development company in new york,phrase,Service,ADS,US,P2,Head term dat. Chi chay khi B/C/E da bao hoa ngan sach.,"in,us",YES
+F-AI-Dev-US,ai development cost,phrase,Cost,SEO,US,P1,"Da co bai. SEO/GEO, dung bid.","in,us",YES
+F-AI-Dev-US,ai development cost 2026,phrase,Cost,SEO,US,P1,"Da co bai. SEO/GEO, dung bid.","in,us",YES
+F-AI-Dev-US,ai app development cost,phrase,Cost,SEO,US,P1,"Da co bai. SEO/GEO, dung bid.","in,us",YES
+G-Chatbot-Voice,ai chatbot development company in usa,phrase,Service,ADS,US,P2,,"in,us",YES
+G-Chatbot-Voice,chatbot development company in usa,phrase,Service,ADS,US,P2,,us,YES
+G-Chatbot-Voice,hire ai chatbot developers,phrase,Service,ADS,US,P2,,"in,us",YES
+G-Chatbot-Voice,hire chatbot developer,phrase,Service,ADS,US,P2,,us,YES
+G-Chatbot-Voice,cost to build ai chatbot,phrase,Cost,SEO,US,P2,Khoang trong noi dung: chua co bai ve voice agent cost.,in,YES
+G-Chatbot-Voice,ai voice agent development cost,phrase,Cost,SEO,US,P2,Khoang trong noi dung: chua co bai ve voice agent cost.,"in,us",YES
+H-Hire-Talent,hire ai developers in usa,phrase,Service,ADS,US,P1,"Khop truc tiep voi /hire/*. Chu ky dai, ticket thap hon nhung chu ky ban ngan hon.","in,us",YES
+H-Hire-Talent,hire ai engineers in usa,phrase,Service,ADS,US,P1,"Khop truc tiep voi /hire/*. Chu ky dai, ticket thap hon nhung chu ky ban ngan hon.","in,us",YES
+H-Hire-Talent,hire ai agent developers,phrase,Service,ADS,US,P1,"Khop truc tiep voi /hire/*. Chu ky dai, ticket thap hon nhung chu ky ban ngan hon.","in,us",YES
+H-Hire-Talent,hire dedicated ai developers,phrase,Service,ADS,US,P1,"Khop truc tiep voi /hire/*. Chu ky dai, ticket thap hon nhung chu ky ban ngan hon.","in,us",YES
+H-Hire-Talent,hire ai development team,phrase,Service,ADS,US,P1,"Khop truc tiep voi /hire/*. Chu ky dai, ticket thap hon nhung chu ky ban ngan hon.","in,us",YES
+H-Hire-Talent,hire ai development company,phrase,Service,ADS,US,P1,"Khop truc tiep voi /hire/*. Chu ky dai, ticket thap hon nhung chu ky ban ngan hon.","in,us",YES
+H-Hire-Talent,hire generative ai developers,phrase,Service,ADS,US,P1,"Khop truc tiep voi /hire/*. Chu ky dai, ticket thap hon nhung chu ky ban ngan hon.","in,us",YES
+H-Hire-Talent,hire langchain developers,phrase,Service,ADS,US,P1,"Khop truc tiep voi /hire/*. Chu ky dai, ticket thap hon nhung chu ky ban ngan hon.","in,us",YES
+H-Hire-Talent,hire claude code developer,phrase,Service,ADS,US,P1,🥇 Gan nhu khong ai bid. Khop voi /hire/claude-developer. Dac sac nhat trong nhom.,"in,us",YES
+H-Hire-Talent,hire ai chatbot developers,phrase,Service,ADS,US,P2,,"in,us",YES
+H-Hire-Talent,hire ai app developers,phrase,Service,ADS,US,P2,,"in,us",YES
+H-Hire-Talent,hire chatgpt developers,phrase,Service,ADS,US,P2,,"in,us",YES
+H-Hire-Talent,hire ai developers in india,phrase,Service,SEO,IN,P3,Nguoi gõ dang san gia re. Margin mong.,"in,us",YES
+H-Hire-Talent,hire ai engineers india,phrase,Service,SEO,IN,P3,Nguoi gõ dang san gia re. Margin mong.,"in,us",YES
+I-Custom-SW,custom software development company near me,phrase,Service,ADS,US,P2,Near-me re hon head term `custom software development company`.,"in,us",YES
+I-Custom-SW,custom software development services near me,phrase,Service,ADS,US,P2,Near-me re hon head term `custom software development company`.,"in,us",YES
+I-Custom-SW,custom software developer near me,phrase,Service,ADS,US,P2,Near-me re hon head term `custom software development company`.,"in,us",YES
+I-Custom-SW,best custom software development company in usa,phrase,Service,SEO,US,P3,"🔴 Truy van `best/top` -> Google tra listicle, khong tra vendor. Ads o day bounce cao. De GEO.","in,us",YES
+I-Custom-SW,best software development company usa,phrase,Service,SEO,US,P3,"🔴 Truy van `best/top` -> Google tra listicle, khong tra vendor. Ads o day bounce cao. De GEO.","in,us",YES
+I-Custom-SW,certified software development company in usa,phrase,Service,SEO,US,P3,"🔴 Truy van `best/top` -> Google tra listicle, khong tra vendor. Ads o day bounce cao. De GEO.","in,us",YES
+J-Workspace,google workspace reseller india,phrase,Service,ADS,IN,P1,"🥇 CPC re nhat toan tai khoan, y dinh thuong mai ro. Da co landing page san.","in,us",YES
+J-Workspace,google workspace partner india,phrase,Service,ADS,IN,P1,"🥇 CPC re nhat toan tai khoan, y dinh thuong mai ro. Da co landing page san.","in,us",YES
+J-Workspace,google workspace partner mumbai,phrase,Service,ADS,IN,P1,"🥇 CPC re nhat toan tai khoan, y dinh thuong mai ro. Da co landing page san.","in,us",YES
+J-Workspace,authorized google workspace reseller in india,phrase,Service,ADS,IN,P1,"🥇 CPC re nhat toan tai khoan, y dinh thuong mai ro. Da co landing page san.","in,us",YES
+J-Workspace,google workspace distributor in india,phrase,Service,ADS,IN,P1,"🥇 CPC re nhat toan tai khoan, y dinh thuong mai ro. Da co landing page san.","in,us",YES
+J-Workspace,google workspace partner near me,phrase,Service,ADS,IN,P2,,"in,us",YES
+J-Workspace,best google workspace reseller in india,phrase,Service,ADS,IN,P2,,"in,us",YES
+J-Workspace,google workspace pricing plans india,phrase,Cost,ADS,IN,P2,Y dinh gia hạn/so sanh gia = thoi diem doi nha cung cap. Da co /google-workspace-pricing-india.,"in,us",YES
+J-Workspace,google workspace enterprise pricing india,phrase,Cost,ADS,IN,P2,Y dinh gia hạn/so sanh gia = thoi diem doi nha cung cap. Da co /google-workspace-pricing-india.,"in,us",YES
+J-Workspace,google workspace renewal pricing india,phrase,Cost,ADS,IN,P2,Y dinh gia hạn/so sanh gia = thoi diem doi nha cung cap. Da co /google-workspace-pricing-india.,"in,us",YES
+J-Workspace,google workspace price increase india,phrase,Cost,ADS,IN,P2,Y dinh gia hạn/so sanh gia = thoi diem doi nha cung cap. Da co /google-workspace-pricing-india.,"in,us",YES
+J-Workspace,cheapest google workspace reseller india,phrase,Cost,SEO,IN,P4,"`cheapest` = san gia, loai khoi ads.","in,us",YES
+J-Workspace,google workspace reseller delhi,phrase,Cost,SEO,IN,P4,"`cheapest` = san gia, loai khoi ads.",in,YES
+K-Claude-Code,claude code enterprise pricing,phrase,Cost,SEO,US,P2,"🔴 BAY: ho muon mua TU ANTHROPIC, khong thue tu van. Chi lam noi dung, TUYET DOI khong bid.","in,us",YES
+K-Claude-Code,claude code enterprise license cost,phrase,Cost,SEO,US,P2,"🔴 BAY: ho muon mua TU ANTHROPIC, khong thue tu van. Chi lam noi dung, TUYET DOI khong bid.","in,us",YES
+K-Claude-Code,claude code for teams pricing,phrase,Cost,SEO,US,P2,"🔴 BAY: ho muon mua TU ANTHROPIC, khong thue tu van. Chi lam noi dung, TUYET DOI khong bid.","in,us",YES
+K-Claude-Code,claude code for teams cost,phrase,Cost,SEO,US,P2,"🔴 BAY: ho muon mua TU ANTHROPIC, khong thue tu van. Chi lam noi dung, TUYET DOI khong bid.","in,us",YES
+K-Claude-Code,claude code enterprise plan pricing,phrase,Cost,SEO,US,P2,"🔴 BAY: ho muon mua TU ANTHROPIC, khong thue tu van. Chi lam noi dung, TUYET DOI khong bid.","in,us",YES
+K-Claude-Code,claude code for dev teams,phrase,Research,SEO,US,P3,Noi dung + GEO. Khong bid.,"in,us",YES
+K-Claude-Code,claude code implementation plan,phrase,Research,SEO,US,P3,Noi dung + GEO. Khong bid.,"in,us",YES
+K-Claude-Code,claude code agency agents,phrase,Research,SEO,US,P3,Noi dung + GEO. Khong bid.,"in,us",YES
+L-Xano-NoCode,xano developer,phrase,Research,SEO,US,P4,🔴 Cau thuong mai gan nhu bang khong trong autocomplete. 4 landing page Xano -> chi nuoi bang SEO.,in,YES
+L-Xano-NoCode,xano backend developer,phrase,Research,SEO,US,P4,🔴 Cau thuong mai gan nhu bang khong trong autocomplete. 4 landing page Xano -> chi nuoi bang SEO.,"in,us",YES
+L-Xano-NoCode,weweb + xano developer,phrase,Research,SEO,US,P4,🔴 Cau thuong mai gan nhu bang khong trong autocomplete. 4 landing page Xano -> chi nuoi bang SEO.,"in,us",YES
+L-Xano-NoCode,what is xano,phrase,Research,SEO,US,P4,🔴 Cau thuong mai gan nhu bang khong trong autocomplete. 4 landing page Xano -> chi nuoi bang SEO.,"in,us",YES

@@ -1,0 +1,24 @@
+cluster,keyword,volume_month,competition,competition_vi,top_bid_low_eur,top_bid_high_eur,change_3m,change_yoy,match_type,stack_fit,kp_group,note
+Generic-NL,developer inhuren,70,High,Cao,"2,69","14,67",0%,-67%,phrase,Cao,seed,"🥇 Head term, volume cao nhat (70)"
+Stack-NL,java developer inhuren,40,Medium,Vừa,—,—,-67%,0%,phrase,Thap,idea,"Enterprise/legacy, lech stack"
+Stack-NL,php developer inhuren,40,Medium,Vừa,"10,87","42,63",0%,0%,phrase,Thap,idea,"Volume cao + bid cao nhat (42,63 EUR) nhung PHP khong phai stack cua launchstudio"
+Generic-NL,software developer inhuren,40,High,Cao,—,—,0%,0%,phrase,Cao,idea,Bien the head term
+Role-NL,front end developer inhuren,30,High,Cao,"3,45","9,05",0%,0%,phrase,Cao,idea,"🥇 Khop stack. Bid thap nhat trong nhom co du lieu (3,45-9,05 EUR)"
+Stack-NL,react developer inhuren,30,Medium,Vừa,"4,11","14,31",-60%,+100%,phrase,Cao,idea,🥇 Khop stack nhat. YoY +100%
+Generic-NL,software ontwikkelaar inhuren,30,High,Cao,—,—,+∞,0%,phrase,Cao,idea,"Bien the head term, tieng Ha Lan thuan"
+Mobile-NL,app developer inhuren,20,High,Cao,"5,16","8,15",+∞,0%,phrase,Cao,idea,Khop nhanh mobile/app
+Stack-NL,django developer inhuren,20,Low,Thấp,—,—,0%,+∞,phrase,Trung binh,idea,"Python framework, khop vua"
+Role-NL,full stack developer inhuren,20,n/a,—,—,—,-100%,-100%,phrase,Cao,idea,🥇 Khop mo hinh ban hang nhat
+Stack-NL,net developer inhuren,20,High,Cao,"9,92","21,34",0%,0%,phrase,Thap,idea,"Microsoft stack, lech. Luu y: KP cat chu '.' -> truy van that la '.net developer inhuren'"
+Generic-NL,ontwikkelaar inhuren,20,n/a,—,—,—,0%,0%,phrase,Cao,seed,Dang tieng Ha Lan thuan cua head term
+Stack-NL,php programmeur inhuren,20,Low,Thấp,—,—,0%,0%,phrase,Thap,idea,
+Stack-NL,python developer inhuren,20,Low,Thấp,—,—,0%,+∞,phrase,Trung binh,idea,Khop nhanh AI/backend
+Stack-NL,angular developer inhuren,10,n/a,—,—,—,-100%,0%,exact,Trung binh,idea,"Framework cu hon React, lech vua"
+Role-NL,backend developer inhuren,10,n/a,—,—,—,-100%,-100%,exact,Cao,idea,Khop stack
+CMS-NL,drupal developer inhuren,10,High,Cao,"2,72","12,38",0%,0%,exact,Thap,idea,"Legacy CMS, lech stack"
+Generic-NL,hire dev,10,High,Cao,—,—,0%,0%,exact,Trung binh,seed,"Tieng Anh, trong thi truong NL. Xem canh bao §3"
+Mobile-NL,ios developer inhuren,10,n/a,—,—,—,0%,0%,exact,Trung binh,idea,Khop nhanh mobile
+Stack-NL,net ontwikkelaar inhuren,10,Low,Thấp,—,—,-50%,+∞,exact,Thap,idea,"Nhu tren, dang tieng Ha Lan cua '.net'"
+Generic-NL,software ontwikkelaars inhuren,10,n/a,—,—,—,0%,-100%,exact,Cao,idea,"Dang so nhieu cua tren, nen gop vao 1 ad group"
+Stack-NL,web developer inhuren,10,High,Cao,—,—,+∞,0%,exact,Cao,idea,
+CMS-NL,wordpress developer inhuren,10,Low,Thấp,—,—,0%,+∞,exact,Thap,idea,"Legacy CMS, lech stack"

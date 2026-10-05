@@ -1,0 +1,90 @@
+group,keyword,match_type,intent,audience,priority,notes,autocomplete_validated
+A-Brand-Money,goodfirms get listed,phrase,Service,VENDOR,P1,🥇 Truy van tien bac truc tiep: muon duoc liet ke,YES
+A-Brand-Money,goodfirms listing,phrase,Service,VENDOR,P1,🥇,YES
+A-Brand-Money,goodfirms business listing,phrase,Service,VENDOR,P1,🥇,YES
+A-Brand-Money,goodfirms pricing,phrase,Cost,VENDOR,P1,🥇 Dang xem gia goi $300-18.000/thang,YES
+A-Brand-Money,goodfirms register,phrase,Service,VENDOR,P1,,YES
+A-Brand-Money,goodfirms sign up,phrase,Service,VENDOR,P1,,YES
+A-Brand-Money,goodfirms create account,phrase,Service,VENDOR,P1,,YES
+A-Brand-Money,goodfirms company registration,phrase,Service,VENDOR,P1,,YES
+A-Brand-Money,goodfirms company profile,phrase,Service,VENDOR,P2,,YES
+A-Brand-Money,goodfirms badge,phrase,Service,VENDOR,P2,Badge la dong luc chinh de vendor tra tien,YES
+A-Brand-Money,goodfirms widget,phrase,Service,VENDOR,P2,,YES
+A-Brand-Money,goodfirms awards,phrase,Service,VENDOR,P2,,YES
+A-Brand-Money,goodfirms pro,phrase,Cost,VENDOR,P2,,YES
+A-Brand-Money,goodfirms platform,phrase,Research,VENDOR,P3,,YES
+A-Brand-Money,goodfirms directory,phrase,Research,VENDOR,P2,,YES
+A-Brand-Money,goodfirms b2b,phrase,Research,VENDOR,P3,,YES
+B-Brand-Trust,is goodfirms legit,phrase,Trust,VENDOR,P1,🥇 Dang do du truoc khi tra tien. PHAI own truy van nay.,YES
+B-Brand-Trust,goodfirms reviews,phrase,Trust,VENDOR,P1,🥇,YES
+B-Brand-Trust,goodfirms.co reviews,phrase,Trust,VENDOR,P1,,YES
+B-Brand-Trust,goodfirms rating,phrase,Trust,MIXED,P2,,YES
+B-Brand-Trust,goodfirms reddit,phrase,Trust,VENDOR,P1,Dang tim y kien doc lap - noi dung phai thuyet phuc,YES
+B-Brand-Trust,goodfirms alternatives,phrase,Compare,VENDOR,P1,🔴 PHONG THU: nguoi dang tim duong ra,YES
+B-Brand-Trust,goodfirms vs clutch,phrase,Compare,VENDOR,P1,🥇 So sanh truc tiep doi thu lon nhat,YES
+B-Brand-Trust,goodfirms and clutch,phrase,Compare,VENDOR,P2,,YES
+B-Brand-Trust,clutch or goodfirms,phrase,Compare,VENDOR,P1,,YES
+B-Brand-Trust,goodfirms clutch,phrase,Compare,VENDOR,P2,,YES
+B-Brand-Trust,clutch goodfirms designrush,phrase,Compare,VENDOR,P2,So sanh 3 ben,YES
+B-Brand-Trust,goodfirms website,phrase,Nav,MIXED,P3,Dieu huong - CPC re nhung gia tri thap,YES
+C-Competitor,clutch co alternatives,phrase,Compare,VENDOR,P1,"🥇 BAT BUOC dung dang 'clutch co', KHONG dung 'clutch' tran",YES
+C-Competitor,clutch.co pricing,phrase,Cost,VENDOR,P1,🥇 Nguoi soc gia Clutch ($2.000-15.000) la khach cua GoodFirms,YES
+C-Competitor,clutch co reviews,phrase,Trust,VENDOR,P1,,YES
+C-Competitor,designrush reviews,phrase,Trust,VENDOR,P1,"Brand sach, khong dong am",YES
+C-Competitor,designrush pricing,phrase,Cost,VENDOR,P1,,YES
+C-Competitor,techbehemoths reviews,phrase,Trust,VENDOR,P2,Brand sach,YES
+C-Competitor,appfutura badge,phrase,Service,VENDOR,P2,Brand sach,YES
+C-Competitor,capterra alternatives,phrase,Compare,VENDOR,P1,Brand sach (khac han 'g2'),YES
+C-Competitor,trustradius,exact,Compare,VENDOR,P2,EXACT - brand rieng,YES
+C-Competitor,expertise.com,exact,Compare,VENDOR,P2,EXACT,YES
+C-Competitor,upcity,exact,Compare,VENDOR,P3,EXACT - 'upcity lite' la nhieu,YES
+C-Competitor,sortlist,exact,Compare,VENDOR,P3,EXACT - lan voi 'shortlisted',YES
+C-Competitor,the manifest,exact,Compare,VENDOR,P3,EXACT - lan voi 'the manifesto',YES
+D-Listing,b2b software review sites,phrase,Decision,VENDOR,P1,🥇 Dang tim NEN liet ke o dau,YES
+D-Listing,b2b software review platform,phrase,Decision,VENDOR,P1,🥇,YES
+D-Listing,b2b review sites,phrase,Decision,VENDOR,P1,,YES
+D-Listing,b2b review platforms,phrase,Decision,VENDOR,P1,,YES
+D-Listing,best b2b directories,phrase,Decision,VENDOR,P1,🥇,YES
+D-Listing,b2b business listing sites,phrase,Service,VENDOR,P1,,YES
+D-Listing,agency listing sites,phrase,Service,VENDOR,P1,🥇 Dung doi tuong: agency muon duoc liet ke,YES
+D-Listing,digital marketing agency listing sites,phrase,Service,VENDOR,P1,🥇,YES
+D-Listing,software listing sites,phrase,Service,VENDOR,P1,,YES
+D-Listing,software directory sites,phrase,Service,VENDOR,P2,,YES
+D-Listing,it business listing sites,phrase,Service,VENDOR,P1,,YES
+D-Listing,software business listing sites,phrase,Service,VENDOR,P1,,YES
+D-Listing,company listing sites,phrase,Service,MIXED,P2,Rong - can negative,YES
+D-Listing,saas directory submission,phrase,Service,VENDOR,P1,🥇 Y dinh tuyet doi,YES
+D-Listing,saas directory submission service,phrase,Service,VENDOR,P1,🥇 Dang muon THUE lam,YES
+D-Listing,saas directory submission sites,phrase,Service,VENDOR,P1,,YES
+D-Listing,saas directory listing,phrase,Service,VENDOR,P1,,YES
+D-Listing,saas listing sites,phrase,Service,VENDOR,P1,,YES
+D-Listing,saas product listing sites,phrase,Service,VENDOR,P2,,YES
+D-Listing,saas business listing sites,phrase,Service,VENDOR,P2,,YES
+D-Listing,software review website,phrase,Decision,MIXED,P2,,YES
+D-Listing,software review sites,phrase,Decision,MIXED,P2,,YES
+D-Listing,third party review sites,phrase,Decision,VENDOR,P2,,YES
+E-Reviews,get client reviews,phrase,Service,VENDOR,P1,Thu review la ly do #2 vendor dung GoodFirms,YES
+E-Reviews,collect client reviews,phrase,Service,VENDOR,P1,,YES
+E-Reviews,client review platform,phrase,Service,VENDOR,P1,,YES
+E-Reviews,client review software,phrase,Service,VENDOR,P2,,YES
+E-Reviews,review widget for website,phrase,Service,VENDOR,P2,Widget = tai san GoodFirms cung cap,YES
+E-Reviews,agency awards,phrase,Service,VENDOR,P2,Award/badge = dong luc marketing,YES
+E-Reviews,agency badge,phrase,Service,VENDOR,P3,,YES
+F-Leads,buy b2b leads,phrase,Service,VENDOR,P2,GoodFirms ban lead - nhung y dinh nay thuong gia re,YES
+F-Leads,b2b lead generation platforms,phrase,Decision,VENDOR,P2,,YES
+F-Leads,how to get leads for agency,phrase,How-to,VENDOR,P3,"How-to - noi dung, khong bid",YES
+F-Leads,how to get leads for digital marketing agency,phrase,How-to,VENDOR,P3,Noi dung,YES
+F-Leads,how to get clients for my marketing agency,phrase,How-to,VENDOR,P3,Noi dung,YES
+F-Leads,request for proposal software development,phrase,Decision,BUYER,P2,Buyer co ngan sach that - bat dau RFP,YES
+G-Buyer,top software development companies,phrase,Decision,BUYER,P3,⚠️ Canh tranh voi chinh khach hang tra tien,YES
+G-Buyer,top mobile app development companies,phrase,Decision,BUYER,P3,⚠️,YES
+G-Buyer,top web development companies,phrase,Decision,BUYER,P3,⚠️,YES
+G-Buyer,top digital marketing agencies,phrase,Decision,BUYER,P3,⚠️,YES
+G-Buyer,top ai development companies,phrase,Decision,BUYER,P2,"Chu de nong 2026, CPC con thap hon cac nganh cu",YES
+G-Buyer,software development company reviews,phrase,Trust,BUYER,P2,Dang vet mot vendor cu the - gan GoodFirms nhat,YES
+G-Buyer,it outsourcing companies,phrase,Decision,BUYER,P3,⚠️,YES
+G-Buyer,compare software companies,phrase,Compare,BUYER,P2,,YES
+H-Software,best crm software,phrase,Decision,BUYER,P3,"⚠️ CPC rat cao, G2/Capterra thong tri",YES
+H-Software,best erp software,phrase,Decision,BUYER,P3,⚠️,YES
+H-Software,best project management software,phrase,Decision,BUYER,P3,⚠️,YES
+H-Software,best hr software,phrase,Decision,BUYER,P3,⚠️,YES
