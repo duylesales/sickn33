@@ -1,0 +1,67 @@
+cluster,keyword,match_type,intent,language,role,priority,note,autocomplete_geo,validated
+A-Lovable-Stripe,lovable stripe integration,phrase,Fix/Howto,EN,ADS+SEO,P1,"Cum manh nhat. Loi cu the, nguoi dung dang mac ket.","nl,us",YES
+A-Lovable-Stripe,lovable ai stripe integration,phrase,Fix/Howto,EN,ADS+SEO,P1,"Cum manh nhat. Loi cu the, nguoi dung dang mac ket.","nl,us",YES
+A-Lovable-Stripe,lovable dev stripe integration,phrase,Fix/Howto,EN,ADS+SEO,P1,"Cum manh nhat. Loi cu the, nguoi dung dang mac ket.","nl,us",YES
+A-Lovable-Stripe,does lovable have stripe integration,phrase,Fix/Howto,EN,ADS+SEO,P1,"Cum manh nhat. Loi cu the, nguoi dung dang mac ket.","nl,us",YES
+A-Lovable-Stripe,lovable stripe checkout,phrase,Fix/Howto,EN,ADS+SEO,P1,"Cum manh nhat. Loi cu the, nguoi dung dang mac ket.","nl,us",YES
+A-Lovable-Stripe,lovable stripe webhook,phrase,Fix/Howto,EN,ADS+SEO,P1,"Cum manh nhat. Loi cu the, nguoi dung dang mac ket.","nl,us",YES
+A-Lovable-Stripe,payment gateway lovable,phrase,Fix/Howto,EN,ADS+SEO,P1,"Cum manh nhat. Loi cu the, nguoi dung dang mac ket.","nl,us",YES
+A-Lovable-Stripe,loveable stripe integration,exact,Fix,EN,ADS,P2,Sai chinh ta pho bien - da validate. Them vao de khong mat traffic.,"nl,us",YES
+A-Lovable-Stripe,lovable stripe webhook secret,phrase,Security,EN,SEO,P1,Cau noi sang trang /ai-app-security. Secret key bi lo.,"nl,us",YES
+A-Lovable-Stripe,lovable stripe api key,phrase,Security,EN,SEO,P1,Cau noi sang trang /ai-app-security. Secret key bi lo.,"nl,us",YES
+A-Lovable-Stripe,lovable stripe connect,phrase,Howto,EN,SEO,P2,,"nl,us",YES
+A-Lovable-Stripe,lovable stripe api,phrase,Howto,EN,SEO,P2,,"nl,us",YES
+A-Lovable-Stripe,lovable stripe supabase,phrase,Howto,EN,SEO,P2,,"nl,us",YES
+A-Lovable-Stripe,bolt new stripe integration,phrase,Fix/Howto,EN,ADS+SEO,P2,Mo rong sang Bolt/Replit.,"nl,us",YES
+A-Lovable-Stripe,bolt and stripe,phrase,Fix/Howto,EN,ADS+SEO,P2,Mo rong sang Bolt/Replit.,"nl,us",YES
+A-Lovable-Stripe,replit stripe integration,phrase,Fix/Howto,EN,ADS+SEO,P2,Mo rong sang Bolt/Replit.,"nl,us",YES
+B-Lovable-DB,lovable database integration,phrase,Howto,EN,ADS+SEO,P1,Cum database lõi.,"nl,us",YES
+B-Lovable-DB,lovable database connection,phrase,Howto,EN,ADS+SEO,P1,Cum database lõi.,"nl,us",YES
+B-Lovable-DB,lovable database supabase,phrase,Howto,EN,ADS+SEO,P1,Cum database lõi.,"nl,us",YES
+B-Lovable-DB,lovable supabase integration,phrase,Howto,EN,ADS+SEO,P1,Cum database lõi.,"nl,us",YES
+B-Lovable-DB,lovable supabase connection,phrase,Howto,EN,ADS+SEO,P1,Cum database lõi.,"nl,us",YES
+B-Lovable-DB,lovable database migration,phrase,Fix/Howto,EN,ADS+SEO,P1,Migration + export = y dinh thue nguoi lam cao nhat trong cum DB.,"nl,us",YES
+B-Lovable-DB,lovable supabase migrations,phrase,Fix/Howto,EN,ADS+SEO,P1,Migration + export = y dinh thue nguoi lam cao nhat trong cum DB.,"nl,us",YES
+B-Lovable-DB,lovable database export,phrase,Fix/Howto,EN,ADS+SEO,P1,Migration + export = y dinh thue nguoi lam cao nhat trong cum DB.,"nl,us",YES
+B-Lovable-DB,lovable database backup,phrase,Fix/Howto,EN,ADS+SEO,P1,Migration + export = y dinh thue nguoi lam cao nhat trong cum DB.,"nl,us",YES
+B-Lovable-DB,lovable database security,phrase,Security,EN,SEO,P1,Cau noi sang /ai-app-security.,"nl,us",YES
+B-Lovable-DB,lovable supabase service role key,phrase,Security,EN,SEO,P1,Cau noi sang /ai-app-security.,"nl,us",YES
+B-Lovable-DB,lovable supabase auth,phrase,Fix/Howto,EN,SEO,P2,,"nl,us",YES
+B-Lovable-DB,lovable supabase edge functions,phrase,Fix/Howto,EN,SEO,P2,,"nl,us",YES
+B-Lovable-DB,lovable supabase dashboard,phrase,Fix/Howto,EN,SEO,P2,,"nl,us",YES
+B-Lovable-DB,lovable database access,phrase,Fix/Howto,EN,SEO,P2,,"nl,us",YES
+B-Lovable-DB,lovable database api,phrase,Fix/Howto,EN,SEO,P2,,"nl,us",YES
+B-Lovable-DB,lovable database limit,phrase,Research,EN,SEO,P3,"Y dinh nghien cuu. Noi dung, khong bid.","nl,us",YES
+B-Lovable-DB,lovable database pricing,phrase,Research,EN,SEO,P3,"Y dinh nghien cuu. Noi dung, khong bid.","nl,us",YES
+B-Lovable-DB,lovable database options,phrase,Research,EN,SEO,P3,"Y dinh nghien cuu. Noi dung, khong bid.","nl,us",YES
+B-Lovable-DB,lovable database storage,phrase,Research,EN,SEO,P3,"Y dinh nghien cuu. Noi dung, khong bid.","nl,us",YES
+B-Lovable-DB,lovable supabase alternative,phrase,Research,EN,SEO,P3,"Y dinh nghien cuu. Noi dung, khong bid.","nl,us",YES
+B-Lovable-DB,lovable supabase self hosted,phrase,Research,EN,SEO,P3,"Y dinh nghien cuu. Noi dung, khong bid.","nl,us",YES
+B-Lovable-DB,lovable supabase n8n,phrase,Research,EN,SEO,P3,"Y dinh nghien cuu. Noi dung, khong bid.","nl,us",YES
+B-Lovable-DB,hire supabase developers,phrase,Service,EN,ADS,P2,Y dinh thue/di tru ro rang.,"nl,us",YES
+B-Lovable-DB,firebase to supabase,phrase,Service,EN,ADS,P2,Y dinh thue/di tru ro rang.,us,YES
+C-Stripe-Service,stripe integration specialist,phrase,Service,EN,ADS,P2,Y dinh thue chung. CPC cao hon cum Lovable.,us,YES
+C-Stripe-Service,stripe integration consultant,phrase,Service,EN,ADS,P2,Y dinh thue chung. CPC cao hon cum Lovable.,us,YES
+C-Stripe-Service,stripe integration services,phrase,Service,EN,ADS,P2,Y dinh thue chung. CPC cao hon cum Lovable.,"nl,us",YES
+C-Stripe-Service,payment gateway integration services,phrase,Service,EN,ADS,P2,Y dinh thue chung. CPC cao hon cum Lovable.,"nl,us",YES
+C-Stripe-Service,payment gateway integration specialist,phrase,Service,EN,ADS,P2,Y dinh thue chung. CPC cao hon cum Lovable.,us,YES
+C-Stripe-Service,stripe integration help,phrase,Support,EN,SEO,P4,"CANH BAO: phan lon muon support CUA STRIPE, khong thue agency.",us,YES
+C-Stripe-Service,stripe integration support,phrase,Support,EN,SEO,P4,"CANH BAO: phan lon muon support CUA STRIPE, khong thue agency.",us,YES
+C-Stripe-Service,payment gateway integration charges,phrase,Cost,EN,SEO,P3,,"nl,us",YES
+D-NL-Payments,mollie integratie website,phrase,Service,NL,ADS,P1,Da co plan rieng: xem google_ads_plan_payments_nl.md,"nl,us",YES
+D-NL-Payments,mollie integratie shopify,phrase,Service,NL,ADS,P1,Da co plan rieng: xem google_ads_plan_payments_nl.md,"nl,us",YES
+D-NL-Payments,payment gateways in netherlands,phrase,Research,NL,SEO,P2,,nl,YES
+D-NL-Payments,payment gateway nederland,phrase,Research,NL,SEO,P2,,nl,YES
+D-NL-Payments,payment gateways europe,phrase,Research,NL,SEO,P2,,nl,YES
+E-NL-API,api koppeling,phrase,Service,NL,ADS,P2,Dang NL AN TOAN. KHONG dung 'integratie specialist' - xem bay o §3.,nl,YES
+E-NL-API,api koppeling maken,phrase,Service,NL,ADS,P2,Dang NL AN TOAN. KHONG dung 'integratie specialist' - xem bay o §3.,nl,YES
+E-NL-API,api koppeling website,phrase,Service,NL,ADS,P2,Dang NL AN TOAN. KHONG dung 'integratie specialist' - xem bay o §3.,"nl,us",YES
+E-NL-API,api koppelingen,phrase,Service,NL,ADS,P2,Dang NL AN TOAN. KHONG dung 'integratie specialist' - xem bay o §3.,nl,YES
+E-NL-API,api integraties,phrase,Service,NL,ADS,P2,Dang NL AN TOAN. KHONG dung 'integratie specialist' - xem bay o §3.,nl,YES
+E-NL-API,database koppelen,phrase,Service,NL,ADS,P2,Dang NL AN TOAN. KHONG dung 'integratie specialist' - xem bay o §3.,"nl,us",YES
+F-Generic-API,api integration services,phrase,Service,EN,SKIP,P4,🔴 KHONG BID. Autocomplete bi agency offshore (India/Delhi) va ServiceNow/Odoo chiem.,"nl,us",YES
+F-Generic-API,api integration companies,phrase,Service,EN,SKIP,P4,🔴 KHONG BID. Autocomplete bi agency offshore (India/Delhi) va ServiceNow/Odoo chiem.,"nl,us",YES
+F-Generic-API,api integration specialist,phrase,Service,EN,SKIP,P4,🔴 KHONG BID. Autocomplete bi agency offshore (India/Delhi) va ServiceNow/Odoo chiem.,"nl,us",YES
+F-Generic-API,custom api integration services,phrase,Service,EN,SKIP,P4,🔴 KHONG BID. Autocomplete bi agency offshore (India/Delhi) va ServiceNow/Odoo chiem.,"nl,us",YES
+F-Generic-API,api integration service providers,phrase,Service,EN,SKIP,P4,🔴 KHONG BID. Autocomplete bi agency offshore (India/Delhi) va ServiceNow/Odoo chiem.,"nl,us",YES
+F-Generic-API,api integration cost,phrase,Service,EN,SKIP,P4,🔴 KHONG BID. Autocomplete bi agency offshore (India/Delhi) va ServiceNow/Odoo chiem.,"nl,us",YES

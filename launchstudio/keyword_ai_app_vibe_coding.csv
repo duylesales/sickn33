@@ -1,0 +1,66 @@
+cluster,keyword,match_type,intent,language,role,priority,note,autocomplete_geo,source
+A-Hire-VibeCoding,hire vibe coding developers,phrase,Hire,EN,ADS,P1,"Y dinh thue ro rang, khong bi nhiem job-seeker.","nl,us",autocomplete
+A-Hire-VibeCoding,hire vibe coding expert,phrase,Hire,EN,ADS,P1,"Y dinh thue ro rang, khong bi nhiem job-seeker.","nl,us",autocomplete
+A-Hire-VibeCoding,senior vibe coding developer,phrase,Hire,EN,ADS,P1,"Y dinh thue ro rang, khong bi nhiem job-seeker.","nl,us",autocomplete
+A-Hire-VibeCoding,vibe coding cleanup services,phrase,Service,EN,ADS,P1,Dang AN TOAN cua cum cleanup. Xem bay §3.,"nl,us",autocomplete
+A-Hire-VibeCoding,vibe coding cleanup company,phrase,Service,EN,ADS,P1,Dang AN TOAN cua cum cleanup. Xem bay §3.,"nl,us",autocomplete
+A-Hire-VibeCoding,vibe code cleanup services,phrase,Service,EN,ADS,P1,Dang AN TOAN cua cum cleanup. Xem bay §3.,"nl,us",autocomplete
+A-Hire-VibeCoding,vibe code cleanup company,phrase,Service,EN,ADS,P1,Dang AN TOAN cua cum cleanup. Xem bay §3.,"nl,us",autocomplete
+A-Hire-VibeCoding,vibe coding cleanup expert,phrase,Service,EN,ADS,P1,Dang AN TOAN cua cum cleanup. Xem bay §3.,"nl,us",autocomplete
+A-Hire-VibeCoding,vibe code security audit,phrase,Service,EN,ADS+SEO,P1,Cau noi sang /ai-app-security.,"nl,us",autocomplete
+A-Hire-VibeCoding,vibe coding auditor,phrase,Service,EN,ADS+SEO,P1,Cau noi sang /ai-app-security.,"nl,us",autocomplete
+A-Hire-VibeCoding,best vibe coding service,phrase,Service,EN,SEO,P2,Truy van 'best' -> Google tra listicle. De SEO/GEO.,"nl,us",autocomplete
+A-Hire-VibeCoding,best vibe coding services,phrase,Service,EN,SEO,P2,Truy van 'best' -> Google tra listicle. De SEO/GEO.,"nl,us",autocomplete
+A-Hire-VibeCoding,vibe coding service replit,phrase,Service,EN,ADS,P2,,"nl,us",autocomplete
+B-Hire-Lovable,hire lovable ai developers,phrase,Hire,EN,ADS,P1,🔴 CHI dung dang nay. KHONG bid 'lovable agency' tran - xem bay §3.,"nl,us",autocomplete
+B-Hire-Lovable,hire lovable expert,phrase,Hire,EN,ADS,P1,🔴 CHI dung dang nay. KHONG bid 'lovable agency' tran - xem bay §3.,"nl,us",autocomplete
+B-Hire-Lovable,lovable developer hire,phrase,Hire,EN,ADS,P1,🔴 CHI dung dang nay. KHONG bid 'lovable agency' tran - xem bay §3.,"nl,us",autocomplete
+B-Hire-Lovable,lovable dev freelancer,phrase,Hire,EN,ADS,P1,🔴 CHI dung dang nay. KHONG bid 'lovable agency' tran - xem bay §3.,"nl,us",autocomplete
+B-Hire-Lovable,lovable development agency,phrase,Hire,EN,ADS,P1,🔴 CHI dung dang nay. KHONG bid 'lovable agency' tran - xem bay §3.,"nl,us",autocomplete
+B-Hire-Lovable,lovable dev agency,phrase,Hire,EN,ADS,P1,🔴 CHI dung dang nay. KHONG bid 'lovable agency' tran - xem bay §3.,"nl,us",autocomplete
+B-Hire-Lovable,lovable dev expert,phrase,Hire,EN,ADS,P1,🔴 CHI dung dang nay. KHONG bid 'lovable agency' tran - xem bay §3.,"nl,us",autocomplete
+B-Hire-Lovable,lovable ai expert,phrase,Hire,EN,ADS,P1,🔴 CHI dung dang nay. KHONG bid 'lovable agency' tran - xem bay §3.,"nl,us",autocomplete
+B-Hire-Lovable,lovable experts,phrase,Hire,EN,ADS,P2,,"nl,us",autocomplete
+B-Hire-Lovable,lovable ai agency,phrase,Hire,EN,ADS,P2,,"nl,us",autocomplete
+B-Hire-Lovable,fix.lovable app,exact,Fix,EN,SEO,P3,"Dang URL/brand. Chi Exact, theo doi sat.","nl,us",autocomplete
+C-Hire-Other-Tools,hire cursor developers,phrase,Hire,EN,ADS,P2,Cursor it bi homonym hon Bolt/Lovable.,"nl,us",autocomplete
+C-Hire-Other-Tools,hire cursor ai developers,phrase,Hire,EN,ADS,P2,Cursor it bi homonym hon Bolt/Lovable.,"nl,us",autocomplete
+C-Hire-Other-Tools,how to fix bolt app,phrase,Fix,EN,SKIP,P4,"🔴 KHONG BID: 'bolt app' = app goi xe Bolt, khong phai bolt.new. Xem bay §3.","nl,us",autocomplete
+D-Research-Head,vibe coding,phrase,Research,EN,SEO,P2,Head term bao hoa. Chi SEO/GEO.,"us,nl",seed
+D-Research-Head,what is vibe coding,phrase,Research,EN,SEO,P2,Head term bao hoa. Chi SEO/GEO.,"us,nl",seed
+D-Research-Head,vibe coder vs expert,phrase,Research,EN,SEO,P3,,"nl,us",autocomplete
+D-Research-Head,vibe coding as a service cognizant,phrase,Competitor,EN,SEO,P3,Cognizant da vao san nay.,"nl,us",autocomplete
+E-NEGATIVE,vibe code cleanup jobs,n/a,Job/Partner,EN,NEGATIVE,P1,🔴 Nguoi tim viec + partner program cua Lovable.,"nl,us",autocomplete
+E-NEGATIVE,vibe code cleanup specialist job,n/a,Job/Partner,EN,NEGATIVE,P1,🔴 Nguoi tim viec + partner program cua Lovable.,"nl,us",autocomplete
+E-NEGATIVE,vibe code cleanup specialist linkedin,n/a,Job/Partner,EN,NEGATIVE,P1,🔴 Nguoi tim viec + partner program cua Lovable.,"nl,us",autocomplete
+E-NEGATIVE,vibe code cleanup specialist salary,n/a,Job/Partner,EN,NEGATIVE,P1,🔴 Nguoi tim viec + partner program cua Lovable.,"nl,us",autocomplete
+E-NEGATIVE,vibe code cleanup engineer,n/a,Job/Partner,EN,NEGATIVE,P1,🔴 Nguoi tim viec + partner program cua Lovable.,"nl,us",autocomplete
+E-NEGATIVE,vibe coding cleanup jobs,n/a,Job/Partner,EN,NEGATIVE,P1,🔴 Nguoi tim viec + partner program cua Lovable.,"nl,us",autocomplete
+E-NEGATIVE,vibe coding cleanup linkedin,n/a,Job/Partner,EN,NEGATIVE,P1,🔴 Nguoi tim viec + partner program cua Lovable.,"nl,us",autocomplete
+E-NEGATIVE,vibe coding cleanup engineer,n/a,Job/Partner,EN,NEGATIVE,P1,🔴 Nguoi tim viec + partner program cua Lovable.,"nl,us",autocomplete
+E-NEGATIVE,lovable expert jobs,n/a,Job/Partner,EN,NEGATIVE,P1,🔴 Nguoi tim viec + partner program cua Lovable.,"nl,us",autocomplete
+E-NEGATIVE,become a lovable expert,n/a,Job/Partner,EN,NEGATIVE,P1,🔴 Nguoi tim viec + partner program cua Lovable.,"nl,us",autocomplete
+E-NEGATIVE,lovable expert program,n/a,Job/Partner,EN,NEGATIVE,P1,🔴 Nguoi tim viec + partner program cua Lovable.,"nl,us",autocomplete
+E-NEGATIVE,lovable agency partner,n/a,Job/Partner,EN,NEGATIVE,P1,🔴 Nguoi tim viec + partner program cua Lovable.,"nl,us",autocomplete
+E-NEGATIVE,vibe code cleanup meaning,n/a,Curiosity,EN,NEGATIVE,P1,🔴 Tim nghia cua tu / meme.,"nl,us",autocomplete
+E-NEGATIVE,vibe code cleanup specialist meaning,n/a,Curiosity,EN,NEGATIVE,P1,🔴 Tim nghia cua tu / meme.,"nl,us",autocomplete
+E-NEGATIVE,vibe coding cleanup meaning,n/a,Curiosity,EN,NEGATIVE,P1,🔴 Tim nghia cua tu / meme.,"nl,us",autocomplete
+E-NEGATIVE,vibe code cleanup specialist meme,n/a,Curiosity,EN,NEGATIVE,P1,🔴 Tim nghia cua tu / meme.,"nl,us",autocomplete
+E-NEGATIVE,vibe coding vulnerability as a service meme,n/a,Curiosity,EN,NEGATIVE,P1,🔴 Tim nghia cua tu / meme.,"nl,us",autocomplete
+E-NEGATIVE,vibe code cleanup prompt,n/a,Curiosity,EN,NEGATIVE,P1,🔴 Tim nghia cua tu / meme.,"nl,us",autocomplete
+E-NEGATIVE,vibe coding cleanup prompt,n/a,Curiosity,EN,NEGATIVE,P1,🔴 Tim nghia cua tu / meme.,"nl,us",autocomplete
+E-NEGATIVE,best vibe coding expert in india,n/a,Offshore/Free,EN,NEGATIVE,P1,🔴 San gia / offshore.,"nl,us",autocomplete
+E-NEGATIVE,best vibe coding expert in chennai,n/a,Offshore/Free,EN,NEGATIVE,P1,🔴 San gia / offshore.,"nl,us",autocomplete
+E-NEGATIVE,best vibe coding expert in dubai,n/a,Offshore/Free,EN,NEGATIVE,P1,🔴 San gia / offshore.,"nl,us",autocomplete
+E-NEGATIVE,best vibe coding expert in singapore,n/a,Offshore/Free,EN,NEGATIVE,P1,🔴 San gia / offshore.,"nl,us",autocomplete
+E-NEGATIVE,free vibe coding service,n/a,Offshore/Free,EN,NEGATIVE,P1,🔴 San gia / offshore.,"nl,us",autocomplete
+E-NEGATIVE,lovable branding agency,n/a,Homonym,EN,NEGATIVE,P1,🔴 'Lovable' la tinh tu -> hang branding/design.,"nl,us",autocomplete
+E-NEGATIVE,lovable design agency,n/a,Homonym,EN,NEGATIVE,P1,🔴 'Lovable' la tinh tu -> hang branding/design.,"nl,us",autocomplete
+E-NEGATIVE,lovable web design agency,n/a,Homonym,EN,NEGATIVE,P1,🔴 'Lovable' la tinh tu -> hang branding/design.,"nl,us",autocomplete
+E-NEGATIVE,lovable services inc,n/a,Homonym,EN,NEGATIVE,P1,🔴 'Lovable' la tinh tu -> hang branding/design.,us,autocomplete
+E-NEGATIVE,lovable agency template,n/a,Homonym,EN,NEGATIVE,P1,🔴 'Lovable' la tinh tu -> hang branding/design.,"nl,us",autocomplete
+E-NEGATIVE,lovable agency website,n/a,Homonym,EN,NEGATIVE,P1,🔴 'Lovable' la tinh tu -> hang branding/design.,"nl,us",autocomplete
+F-NL,prototype laten maken,phrase,Service,NL,ADS+SEO,P1,Dang NL AN TOAN. KHONG dung 'app aanmaken' - xem bay §3.,nl,autocomplete
+F-NL,van prototype naar productie,phrase,Service,NL,ADS+SEO,P1,Dang NL AN TOAN. KHONG dung 'app aanmaken' - xem bay §3.,"nl,us",autocomplete
+F-NL,prototype productie,phrase,Service,NL,ADS+SEO,P1,Dang NL AN TOAN. KHONG dung 'app aanmaken' - xem bay §3.,nl,autocomplete
+F-NL,lovable nederlands,phrase,Service,NL,ADS+SEO,P1,Dang NL AN TOAN. KHONG dung 'app aanmaken' - xem bay §3.,nl,autocomplete
