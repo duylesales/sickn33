@@ -1,7 +1,7 @@
-# 🚀 Landing page `/ai-app-into-production` — Content brief + Lovable prompt
+# 🚀 Landing page `/ai-app-into-production` — Content brief + Lovable prompt (v2: Pre-flight / Launch Control)
 
 > **Ngày:** 06/10/2026 · **URL đích:** `https://launchstudio.eu/ai-app-into-production` (hiện **404**)
-> **Design reference:** `https://launchstudio.eu/` (NL) và `https://launchstudio.eu/en/` (EN)
+> **Thương hiệu:** giữ màu, font, gradient của `launchstudio.eu` · **Phong cách:** mới hoàn toàn, không bám theo trang hiện tại
 > **Token đã trích trực tiếp từ** `wp-content/themes/launchstudio/style.css`
 
 ---
@@ -73,177 +73,13 @@ Một URL để gửi cho prospect sau cuộc gọi đầu. Ở deal size của 
 
 ---
 
-## 3. 🎨 Design system — token chính xác từ theme
+## 3. 🎨 Thương hiệu giữ nguyên, phong cách đổi hoàn toàn
 
-Copy nguyên khối này vào Lovable. Đây là giá trị thật trong `style.css`, không phải phỏng đoán.
+### Giữ (nhận diện thương hiệu)
 
 ```css
 :root{
-  /* màu */
-  --navy:#0B1D35;   /* text chính + heading */
-  --bg:#F8FAFE;     /* nền trang (trắng hơi xanh) */
-  --white:#FFF;     /* nền card */
-  --ok:#0D9668;     /* xanh - pass/thành công */
-  --red:#DC2626;    /* đỏ - fail/rủi ro */
-  --amb:#D97706;    /* hổ phách - cảnh báo */
-  --gs:#2F80ED;     /* gradient start - xanh dương */
-  --ge:#14B8A6;     /* gradient end - teal */
-  --grd:linear-gradient(135deg,#2F80ED 0%,#14B8A6 100%);
-
-  /* thang chữ */
-  --text:#0B1D35;   /* chính */
-  --ts:#384860;     /* phụ */
-  --tm:#64748B;     /* mờ */
-  --tf:#94A3B8;     /* rất mờ */
-
-  /* viền */
-  --bd:#E2E8F0;     /* viền thường */
-  --bs:#EEF2F7;     /* viền nhạt / surface */
-
-  /* font */
-  --fh:'Satoshi',system-ui,sans-serif;        /* HEADING */
-  --fb:'Inter',system-ui,sans-serif;          /* BODY */
-  --fa:'Instrument Serif',Georgia,serif;      /* ACCENT (nhấn, in nghiêng) */
-
-  /* bán kính */
-  --r:12px; --rs:10px; --rp:999px; --rl:20px; --rx:24px;
-
-  /* shadow - nhiều lớp, rất nhẹ */
-  --ss:0 0 0 1px rgba(0,0,0,.03),0 2px 4px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04);
-  --sm:0 0 0 1px rgba(0,0,0,.02),0 4px 8px rgba(0,0,0,.03),0 16px 32px rgba(0,0,0,.06);
-  --sl:0 0 0 1px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04),0 24px 48px rgba(0,0,0,.08);
-
-  /* chuyển động */
-  --t:.28s; --ease:cubic-bezier(.22,1,.36,1);
-}
-```
-
-### Nạp font — ⚠️ Satoshi KHÔNG có trên Google Fonts
-
-```html
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,600,500,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-```
-
-Satoshi lấy từ **Fontshare** (api.fontshare.com). Lovable mặc định hay dùng Google Fonts — nếu không nêu rõ, nó sẽ fallback sang Inter cho heading và **trang sẽ trông lệch ngay lập tức**.
-
-### Typography và spacing đúng theo theme
-
-| Phần tử | Giá trị |
-|---|---|
-| `h1` | `--fh`, 700, `clamp(34px,4.2vw,52px)`, line-height **1.08**, letter-spacing **−1.5px**, navy |
-| `h2` | `--fh`, 700, `clamp(28px,3.5vw,44px)`, line-height **1.12**, letter-spacing **−0.8px**, navy |
-| `body` | `--fb`, 16px, line-height **1.65**, `-webkit-font-smoothing:antialiased` |
-| Body nhỏ | 14px, `--tm`, line-height 1.7 |
-| Caption | 12–12.5px, `--tf`/`--tm` |
-| Section padding | **100px 0** desktop · **72px 0** mobile |
-| Hero padding | **72px 0 56px** desktop · **56px 0 40px** mobile |
-| Card | `padding:20–24px`, `border:1px solid var(--bd)`, `border-radius:var(--rl)` (20px) |
-| Card hover | `border-color:rgba(37,99,235,.15)`, `box-shadow:var(--ss)` |
-| Button hover | `translateY(-2px)`, `box-shadow:0 14px 34px rgba(47,128,237,.22),0 6px 14px rgba(11,29,53,.1)` |
-| Icon trong button | hover → `translateX(2px)`, transition `.2s` |
-
-**Đặc trưng thị giác cần giữ:** nền sáng `#F8FAFE`, card trắng viền mảng xám-xanh, shadow rất nhẹ nhiều lớp (không bao giờ shadow đậm), letter-spacing âm ở heading, gradient xanh→teal chỉ dùng cho điểm nhấn (button chính, số liệu, badge) — **không dùng gradient làm nền section lớn**.
-
----
-
-## 4. 📝 Cấu trúc nội dung — 9 section
-
-Thứ tự theo logic bán hàng: nhận diện vấn đề → cho đi kiến thức → chứng minh → chuyển đổi.
-
-### S1 — Hero
-- **Eyebrow:** `FOR LOVABLE · BOLT · REPLIT · CURSOR · V0 BUILDERS`
-- **H1:** `Your AI app works. That doesn't mean it's ready to launch.`
-- **Sub:** `Lovable, Bolt and Replit get you to a working prototype fast. The gap between "it works on my screen" and "real users can't break it" is six specific things — and none of them are in the prompt.`
-- **CTA chính:** `Get a free production-readiness audit` → form
-- **CTA phụ:** `See the 6-point checklist ↓` → anchor S3
-- **Trust strip:** `Working code stays · No full rebuild · Fixed scope, fixed price`
-
-> 💡 Cố tình nêu tên công cụ ngay ở eyebrow. Đó là thứ giúp LLM biết trang này nói về Lovable/Bolt/Replit — và là thứ phân biệt trang này với trang chủ.
-
-### S2 — Nhận diện vấn đề (3 cột)
-
-| Dấu hiệu | Giải thích |
-|---|---|
-| **It demos fine** | Nó chạy đẹp khi bạn tự bấm. Nó chưa gặp người dùng cố tình bấm sai. |
-| **The keys are in the code** | API key hardcoded trong file frontend. Ai mở DevTools cũng thấy. |
-| **Nothing tells you when it breaks** | Không log, không alert. Người dùng đầu tiên gặp lỗi cũng là người báo lỗi cho bạn. |
-
-### S3 — ⭐ Trọng tâm: framework 6 điểm
-
-Đây là section quan trọng nhất của trang. Lấy nguyên từ `extra-1/02-weekend-framework-six-things-prototype-launch.md`.
-
-Mỗi điểm là một card có: số thứ tự, tiêu đề, *"Vì sao AI tool bỏ qua"*, và **một cách tự kiểm tra**.
-
-| # | Điểm | Cách tự kiểm (đưa thật vào trang) |
-|---|---|---|
-| 1 | **Secrets & environment variables** | Mở DevTools → Sources → tìm `sk_`, `api_key`. Thấy gì là có vấn đề. |
-| 2 | **Structured error handling** | Ngắt mạng giữa lúc submit form. App báo lỗi rõ hay treo trắng? |
-| 3 | **Auth & authorization ở tầng API** | Copy URL của user A, mở bằng tài khoản user B. Có chặn không? |
-| 4 | **CI pipeline chặn deploy lỗi** | Push một commit cố tình lỗi. Có bị chặn trước khi lên production? |
-| 5 | **Test coverage cho 3–5 flow quan trọng** | Liệt kê flow làm bạn mất khách nếu vỡ. Có test nào cho chúng? |
-| 6 | **Observability cơ bản** | App lỗi lúc 3 giờ sáng. Sáng ra bạn có biết không? |
-
-> 🔴 **Phải cho đi thật.** Nếu mỗi card chỉ nói "cái này quan trọng, liên hệ chúng tôi", trang mất toàn bộ giá trị GEO và prospect không tin. Cách tự kiểm phải là thứ người đọc làm được ngay trong 5 phút.
-
-### S4 — Widget tự chấm điểm (tương tác)
-
-Theo đúng mô hình "Launch Readiness Checklist" đã có trên trang chủ, nhưng phiên bản kỹ thuật hơn: 6 câu hỏi yes/no → điểm 0–6 → kết quả theo mức:
-
-| Điểm | Kết quả | Màu |
-|---:|---|---|
-| 5–6 | `Close. One or two gaps to close.` | `--ok` |
-| 3–4 | `Halfway. The risky half is usually what's left.` | `--amb` |
-| 0–2 | `Not launch-ready. Good news: this is a known list, not a mystery.` | `--red` |
-
-Sau khi có điểm → CTA: `Get these items fixed →`. Điểm được đưa vào hidden field của form.
-
-### S5 — "Production-ready không có nghĩa là build lại"
-
-Phản bác nỗi sợ lớn nhất. Nguồn: `extra-1/32-production-ready-doesnt-mean-rebuilt-debunking-common-fear.md`.
-
-Dạng so sánh 2 cột: **What we keep** (UI, logic nghiệp vụ, schema, công sức đã bỏ ra) vs **What we add** (secret management, API auth, CI, test, observability, error handling).
-
-### S6 — Quy trình 3 bước
-
-Giữ đúng nhịp "3 steps to going live" của trang chủ để thống nhất: **Audit (free, 48h)** → **Fixed-scope plan** → **Launch**.
-
-### S7 — Giá minh bạch
-
-Dùng lại `.cmp-card` của theme, 3 cột, cột giữa `hl` (highlight, viền `--gs`). Lấy mức giá đúng từ trang chủ — **không tự đặt số mới**.
-
-### S8 — Social proof
-
-Testimonial + số liệu. Dùng gradient `--grd` cho con số.
-
-### S9 — Form liên hệ
-
-| Trường | Ghi chú |
-|---|---|
-| Name, Email | bắt buộc |
-| **Which tool did you build with?** | select: Lovable / Bolt / Replit / Cursor / v0 / Other — **dữ liệu phân loại cực giá trị** |
-| **Repo or live URL** | optional |
-| What's blocking you? | textarea |
-| **Budget range** | select, bắt buộc — sàng lọc (xem `conversion_attribution_setup.md` §4) |
-| 🔒 hidden | `click_id`, `click_type`, `landing`, `source`, `readiness_score` |
-
----
-
-## 5. 🤖 Prompt cho Lovable.dev
-
-> Paste nguyên khối dưới đây. Viết bằng tiếng Anh vì Lovable xử lý tiếng Anh tốt hơn đáng kể.
-
-```
-Build a single, self-contained landing page as ONE static `index.html` file with all CSS
-in one inline <style> block and all JS in one inline <script> block. No React, no build
-step, no router, no external dependencies except the three font links below. This page
-will be pasted into a WordPress page template, so it must work as a standalone HTML file.
-
-=== DESIGN SYSTEM — USE THESE EXACT VALUES, DO NOT SUBSTITUTE ===
-
-:root{
-  --navy:#0B1D35; --bg:#F8FAFE; --white:#FFF;
+  --navy:#0B1D35; --navy-2:#102A4C; --bg:#F8FAFE; --white:#FFF;
   --ok:#0D9668; --red:#DC2626; --amb:#D97706;
   --gs:#2F80ED; --ge:#14B8A6;
   --grd:linear-gradient(135deg,#2F80ED 0%,#14B8A6 100%);
@@ -252,216 +88,296 @@ will be pasted into a WordPress page template, so it must work as a standalone H
   --fh:'Satoshi',system-ui,sans-serif;
   --fb:'Inter',system-ui,sans-serif;
   --fa:'Instrument Serif',Georgia,serif;
-  --r:12px; --rs:10px; --rp:999px; --rl:20px; --rx:24px;
-  --ss:0 0 0 1px rgba(0,0,0,.03),0 2px 4px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04);
-  --sm:0 0 0 1px rgba(0,0,0,.02),0 4px 8px rgba(0,0,0,.03),0 16px 32px rgba(0,0,0,.06);
-  --sl:0 0 0 1px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04),0 24px 48px rgba(0,0,0,.08);
-  --t:.28s; --ease:cubic-bezier(.22,1,.36,1);
+  --fm:'JetBrains Mono',ui-monospace,monospace;
 }
+```
 
-FONTS — load exactly these three. Satoshi is from Fontshare, NOT Google Fonts.
-Do not replace Satoshi with a Google font:
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,600,500,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+- Bảng màu navy + gradient xanh→teal · font Satoshi / Inter / Instrument Serif · letter-spacing âm ở heading
+- ⚠️ Satoshi lấy từ **Fontshare**, không có trên Google Fonts. Prompt đã ghi rõ để Lovable không tự thay font.
+
+### Đổi (phong cách tự do) — concept **"Pre-flight / Launch Control"**
+
+"Into production" = **phóng**. Cả trang là một buổi kiểm tra trước khi phóng tên lửa:
+
+| Yếu tố | Site hiện tại | Trang này |
+|---|---|---|
+| Ẩn dụ | Không có | **Đếm ngược phóng tên lửa**: hero dừng ở `HOLD`, CTA cuối trang đếm tiếp tới `LIFTOFF` |
+| Bố cục | Card nhẹ, thoáng | **Editorial mạnh**: chữ rất to, số thứ tự khổng lồ `01/06`, đường kẻ mảnh như bảng điều khiển |
+| Hình ảnh | Icon SVG | **Bảng Launch Control** (card navy trên nền sáng), đèn trạng thái, thanh tiến độ bị kẹt ở 80% |
+| Tương tác | Widget tách riêng | **Checklist 6 điểm vừa là nội dung vừa là bộ tự chấm điểm** → ra kết luận GO / NO-GO → CTA |
+| Chi tiết | — | Thanh "Launch readiness" dính trên cùng, lấp đầy theo tiến độ cuộn trang |
+
+> 💡 **Khác trang `/ai-app-vibe-coding`:** trang đó dùng hero tối toàn màn và khung chat AI. Trang này hero **sáng**, chữ editorial to, chỉ có **một khối navy** (bảng Launch Control). Hai trang nhìn là biết cùng thương hiệu nhưng không giống nhau.
+
+---
+
+## 4. 📝 Cấu trúc nội dung v2 — Pain → Solution → bổ trợ → CTA
+
+**Bỏ theo yêu cầu:** bảng giá, form. Mọi CTA trỏ ra trang liên hệ/đặt lịch, có mang theo `gclid`/`utm_*` và điểm tự chấm.
+**Giữ lại có chủ đích:** 6 cách tự kiểm tra (mỗi cách 1 dòng). Theo §2, đây là thứ làm nên giá trị GEO của trang. Bỏ đi thì trang chỉ là bản sao trang chủ.
+
+| # | Section | Vai trò | Thông điệp |
+|---|---|---|---|
+| S1 | **Hero + Launch Control** | 🪝 Hook | `Your app is 6 checks away from launch.` Đếm ngược T−10 → dừng ở **HOLD** |
+| S2 | **Stuck at 80%** | 😬 Pain | Thanh tiến độ Idea ✓ → Prototype ✓ → **[kẹt]** → Launch + 3 sự thật ngắn |
+| S3 | **6-point pre-flight** | ✅ Solution + tương tác | Mỗi điểm: vì sao AI bỏ qua · tự kiểm thế nào · Yes/No → ra GO/NO-GO |
+| S4 | Not a rebuild | Bổ trợ | Giữ gì / thêm gì |
+| S5 | Flight plan | Bổ trợ | 3 bước: free audit 48h → fixed-scope plan → launch |
+| S6 | Proof | Bổ trợ | Placeholder số liệu + testimonial |
+| S7 | FAQ | Bổ trợ | 3 câu |
+| S8 | **Liftoff CTA** | 🎯 Chốt | Đếm ngược tiếp `3 · 2 · 1` → `Let's get you cleared for launch.` |
+
+### Vì sao cách này thuyết phục và đẩy CTA
+
+1. **H1 đưa ra một con số cụ thể và hữu hạn.** "6 checks away" biến nỗi lo mơ hồ thành một danh sách làm được, khác với "app chưa sẵn sàng" chung chung.
+2. **Đếm ngược dừng ở HOLD tạo cảm giác dở dang.** Người đọc muốn thấy nó chạy tiếp, và chỉ ở CTA cuối trang nó mới chạy tiếp.
+3. **Tự chấm điểm cá nhân hoá CTA.** Sau khi trả lời 6 câu, nút đổi chữ theo kết quả (`Fix my 4 failed checks`). Đây là CTA chuyển đổi mạnh nhất trang.
+4. **Có 3 điểm CTA:** hero → sau kết quả chấm điểm → cuối trang. Không nhồi thêm.
+
+---
+
+## 5. 🤖 Prompt cho Lovable.dev (v2)
+
+> Paste nguyên khối. Viết bằng tiếng Anh vì Lovable xử lý tiếng Anh tốt hơn.
+
+```
+Build a single, self-contained landing page as ONE static `index.html` file: all CSS in
+one inline <style> block, all JS in one inline <script> block. No React, no build step,
+no router, no external dependencies except the four font links below. It will be pasted
+into a WordPress page template, so it must work standalone.
+
+WHAT THIS PAGE IS
+LaunchStudio takes apps built with AI coding tools (Lovable, Bolt, Replit, Cursor, v0)
+and makes them production-ready without rebuilding them. Audience: a founder whose app
+works but who is stuck before launch. The whole page uses ONE metaphor: a rocket
+PRE-FLIGHT CHECK. Launch is on HOLD until six checks pass. Story arc: PAIN, then
+SOLUTION (the six checks, interactive), then short supporting sections, then a final
+LIFTOFF call to action. Copy is short, confident and specific. Never mock the reader
+for using AI tools. There is NO pricing and NO form on this page; every CTA links out.
+
+=== BRAND — KEEP EXACTLY ===
+:root{
+  --navy:#0B1D35; --navy-2:#102A4C; --bg:#F8FAFE; --white:#FFF;
+  --ok:#0D9668; --red:#DC2626; --amb:#D97706;
+  --gs:#2F80ED; --ge:#14B8A6;
+  --grd:linear-gradient(135deg,#2F80ED 0%,#14B8A6 100%);
+  --text:#0B1D35; --ts:#384860; --tm:#64748B; --tf:#94A3B8;
+  --bd:#E2E8F0; --bs:#EEF2F7;
+  --on-dark:#E6EDF7; --on-dark-m:#A3B3CA; --line-dark:rgba(255,255,255,.09);
+  --fh:'Satoshi',system-ui,sans-serif;
+  --fb:'Inter',system-ui,sans-serif;
+  --fa:'Instrument Serif',Georgia,serif;
+  --fm:'JetBrains Mono',ui-monospace,monospace;
+  --rp:999px; --rs:10px; --rl:20px; --rx:28px;
+  --t:.3s; --ease:cubic-bezier(.22,1,.36,1);
+}
+FONTS — exactly these. Satoshi is from Fontshare, NOT Google Fonts. Never substitute:
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-TYPOGRAPHY — exact:
-- body: var(--fb), 16px, line-height 1.65, color var(--text), background var(--bg),
-  -webkit-font-smoothing:antialiased
-- h1: var(--fh), weight 700, clamp(34px,4.2vw,52px), line-height 1.08,
-  letter-spacing -1.5px, color var(--navy)
-- h2: var(--fh), weight 700, clamp(28px,3.5vw,44px), line-height 1.12,
-  letter-spacing -0.8px, color var(--navy)
-- h3: var(--fh), weight 600, 20px, letter-spacing -0.3px
-- small text: 14px, color var(--tm), line-height 1.7
-- captions: 12.5px, color var(--tf)
+=== STYLE — "LAUNCH CONTROL EDITORIAL" (this is a NEW style, do not make it look like a
+generic SaaS template) ===
+- Page background var(--bg). Bold editorial typography: very large Satoshi headings
+  with tight negative letter-spacing, generous whitespace, thin 1px hairline rules
+  (var(--bd)) separating blocks like a control panel.
+- h1: var(--fh) 900, clamp(44px,7vw,92px), line-height .98, letter-spacing -3px
+- h2: var(--fh) 700, clamp(32px,4.5vw,56px), line-height 1.04, letter-spacing -1.5px
+- h3: var(--fh) 700, 21px, letter-spacing -0.4px
+- body: var(--fb) 16px/1.65, color var(--ts)
+- Labels, counters, status text: var(--fm), 12px, uppercase, letter-spacing 1.5px.
+  Every section starts with a mono label like "[ 01 — STATUS ]".
+- Huge outline numbers ("01" to "06") in Satoshi 900, 120px, transparent fill with a
+  1.5px var(--bd) text stroke, sitting behind content as decoration.
+- Exactly TWO dark navy blocks on the page: the hero Launch Control panel and the final
+  Liftoff band. Everything else is light. This contrast is the signature.
+- Status colours are semantic: var(--red) = fail/hold, var(--amb) = warning,
+  var(--ok) = pass/go. Gradient is the brand accent: primary buttons, gradient text on
+  1–2 key words, the progress bar fill.
+- var(--fa) italic for at most 3 emphasis words on the page.
+- All visuals built in HTML/CSS/SVG. NO stock photos, NO cartoon rockets, NO robots, NO
+  emoji. A rocket is only ever implied by words and a minimal 1.5px line icon.
+- Primary button: var(--grd), white, radius var(--rp), padding 16px 30px, var(--fh) 700,
+  with a right arrow that slides 3px on hover; hover lifts 2px with
+  box-shadow 0 16px 36px rgba(47,128,237,.3).
+- Secondary button: transparent, 1px solid var(--navy), color var(--navy), radius
+  var(--rp); hover fills var(--navy) with white text.
+- Max width 1180px, 20px side padding (16px under 768px). Sections 120px 0 desktop,
+  76px 0 mobile.
 
-LAYOUT:
-- max content width 1140px, centered, 20px side padding, 16px on mobile
-- section padding: 100px 0 desktop, 72px 0 under 768px
-- hero padding: 72px 0 56px desktop, 56px 0 40px mobile
-- cards: background var(--white), padding 24px, border 1px solid var(--bd),
-  border-radius var(--rl), box-shadow var(--ss)
-- card hover: border-color rgba(37,99,235,.15), box-shadow var(--sm),
-  transition all var(--t) var(--ease)
-- primary button: background var(--grd), white text, border-radius var(--rp),
-  padding 14px 28px, font var(--fh) weight 600
-- primary button hover: translateY(-2px),
-  box-shadow 0 14px 34px rgba(47,128,237,.22), 0 6px 14px rgba(11,29,53,.1)
-- secondary button: transparent bg, 1px solid var(--bd), color var(--navy),
-  border-radius var(--rp)
-- arrow/icon inside buttons: translateX(2px) on hover, transition .2s
+STICKY TOP BAR (global): a 56px bar, white at 85% with backdrop blur, bottom hairline.
+Left: "LaunchStudio" wordmark in var(--fh) 700. Centre (hidden on mobile): mono label
+"LAUNCH READINESS" and a 160px progress bar that fills with var(--grd) as the user
+scrolls the page. Right: small primary button "Free pre-flight" (data-cta).
 
-VISUAL CHARACTER — critical to match the existing site:
-- Light, airy, clinical. Background is the near-white blue #F8FAFE, never pure white
-  for the page, never dark mode.
-- Shadows are ALWAYS soft and multi-layered. Never a single heavy shadow.
-- Headings use tight NEGATIVE letter-spacing. This is the signature of the brand.
-- The blue-to-teal gradient is an ACCENT only: primary buttons, big stat numbers,
-  small badges. NEVER a full-width section background, never behind body text.
-- Use Instrument Serif (var(--fa)) in italic very sparingly — one or two emphasis
-  phrases in headings maximum.
-- Generous whitespace. Do not compress sections.
-- No stock photos. No illustrations of robots. No emoji in the UI.
-  Use simple inline SVG icons with 1.5px stroke, currentColor, 20x20.
+=== SECTIONS, IN ORDER ===
 
-=== PAGE CONTENT — 9 SECTIONS IN THIS ORDER ===
+S1 HERO — light background, two columns (copy 55% left, Launch Control panel right),
+stacked on mobile with copy first.
+Left:
+- Mono label: "[ FOR LOVABLE · BOLT · REPLIT · CURSOR · V0 ]"
+- H1: 'Your app is <span class=grad>6 checks</span> away from launch.'
+- Sub, 19px var(--ts), max 520px: "It works on your screen. Real users need it to
+  survive. We run the pre-flight, fix what fails, and get you live — without
+  rebuilding what you made."
+- Buttons: primary "Book my free pre-flight check" (data-cta), secondary "Run the
+  checks yourself" (href #preflight).
+- Mono micro-row, var(--tm): "✓ Code stays yours   ✓ No full rebuild   ✓ Audit in 48h"
+  (draw the ticks as inline SVG, not characters).
 
-S1 HERO (left-aligned text, max 760px wide, not centered)
-- Eyebrow, uppercase, 12px, letter-spacing 1.2px, color var(--gs):
-  "FOR LOVABLE · BOLT · REPLIT · CURSOR · V0 BUILDERS"
-- H1: "Your AI app works. That doesn't mean it's ready to launch."
-- Sub (18px, var(--ts), max 620px): "Lovable, Bolt and Replit get you to a working
-  prototype fast. The gap between 'it works on my screen' and 'real users can't break
-  it' is six specific things — and none of them are in the prompt."
-- Two buttons side by side: primary "Get a free production-readiness audit"
-  (anchor #audit), secondary "See the 6-point checklist" (anchor #checklist)
-- Below buttons, a thin row of three items separated by middots, 13px var(--tm):
-  "Your working code stays" · "No full rebuild" · "Fixed scope, fixed price"
+Right — LAUNCH CONTROL PANEL (the hook): a navy card (var(--navy), radius var(--rx),
+1px var(--line-dark) border, faint 32px grid pattern inside, large soft shadow).
+- Top row in var(--fm): "LAUNCH CONTROL" left, "my-app.lovable.app" right in
+  var(--on-dark-m).
+- A big mono countdown, 64px, var(--on-dark): animates T-10, T-09 … down to T-04
+  (one step every 450ms), then FREEZES and swaps to "HOLD" in var(--red) with a slow
+  pulsing glow.
+- Below it, six check rows, each: a 10px status light, the check name in var(--fm)
+  13px, and a status word on the right. While the countdown runs, rows tick over one by
+  one from "CHECKING…" to their final state:
+    Secrets & env vars ......... FAIL  (red)
+    Error handling ............. FAIL  (red)
+    API authorization .......... FAIL  (red)
+    CI pipeline ................ WARN  (amber)
+    Critical-flow tests ........ FAIL  (red)
+    Monitoring & alerts ........ WARN  (amber)
+- Bottom strip: "LAUNCH STATUS" and a red pill "NO-GO · 6 checks unresolved".
+Under prefers-reduced-motion, render the final state immediately.
 
-S2 PROBLEM — 3 cards in a row (stack on mobile)
-Each card: a small SVG icon in a 40x40 rounded square with background var(--bs),
-an h3, and 2 sentences of body text.
-1. "It demos fine" — "It behaves when you click through it yourself. It has never met
-   a user who clicks the wrong thing on purpose."
-2. "The keys are in the code" — "API keys hardcoded into frontend files. Anyone who
-   opens DevTools can read them, and they will."
-3. "Nothing tells you when it breaks" — "No logs, no alerts. Your first user to hit an
-   error is also your error reporting system."
+S2 PAIN — "STUCK AT 80%" (light)
+- Mono label "[ 01 — WHERE YOU ARE ]"
+- H2: "You're not stuck building. You're stuck <em>launching.</em>"
+- A full-width horizontal progress track with four stops: "Idea", "Prototype",
+  "Production", "Launch". Idea and Prototype have green filled dots and a gradient
+  filled line; the line stops at ~80% between Prototype and Production, where a
+  pulsing red marker with a mono tooltip says "YOU ARE HERE · prompt #47". Production
+  and Launch are hollow grey. The fill animates from 0 to 80% on scroll into view.
+  On mobile the track turns vertical.
+- Three editorial rows below, each separated by a hairline, laid out as big statement
+  (var(--fh) 700 28px var(--navy)) left and one-line explanation right:
+    "It demos fine."  —  "It has never met a user who clicks the wrong thing on purpose."
+    "The keys are in the code."  —  "Open DevTools and anyone can read them."
+    "Nothing tells you when it breaks."  —  "Your first angry user is your monitoring."
+- Closing line, var(--fh) 600 22px: "So you keep prompting. And keep not launching."
 
-S3 THE SIX-POINT FRAMEWORK — id="checklist". THE MOST IMPORTANT SECTION.
-H2: "What 'production-ready' actually means"
-Sub: "Six items, in this order. The order matters more than the list — each one makes
-the next one safer to do."
-Then 6 cards in a 2-column grid (1 column on mobile). Each card has:
-- A large number (var(--fh), 800, 26px) with the gradient as text fill
-- h3 title
-- One paragraph: why AI coding tools skip it
-- A visually distinct "Check it yourself" block: background var(--bs),
-  border-radius var(--rs), padding 14px, 13.5px monospace-ish, label
-  "CHECK IT YOURSELF" in 11px uppercase letter-spacing 1px color var(--tf)
+S3 SOLUTION — THE 6-POINT PRE-FLIGHT (light, id="preflight") — THE CORE OF THE PAGE
+- Mono label "[ 02 — PRE-FLIGHT ]"
+- H2: "Six checks stand between you and launch."
+- Sub: "Run them yourself in five minutes. Be honest — this stays in your browser."
+- Layout: on desktop, a two-column area: the six checks on the left (65%), a STICKY
+  readiness gauge on the right (35%). On mobile the gauge becomes a sticky bar at the
+  bottom of the viewport while this section is in view.
+- Each check is a row with: the big outline number behind it, h3 title, a line
+  "Why AI skipped it:" + text, a highlighted mono box "CHECK IT YOURSELF" (background
+  var(--bs), radius var(--rs)) + text, and two pill buttons "Pass" / "Fail"
+  (aria-pressed). Choosing Pass turns the row's status light green; Fail turns it red.
+  1. "Secrets & environment variables"
+     Why: "The demo needs the key, so the tool puts it where the demo can reach it —
+     your frontend."
+     Check: "DevTools → Sources → search 'sk_' or 'api_key'. Found anything? It's public."
+  2. "Error handling on external calls"
+     Why: "Prompts describe the happy path. Nobody prompts for 'what if Stripe times out'."
+     Check: "Kill your wifi mid-submit. Clear message, or blank screen?"
+  3. "Authorization at the API level"
+     Why: "Hiding a button looks like access control. The API still answers anyone."
+     Check: "Open user A's URL while logged in as user B. Blocked?"
+  4. "A CI pipeline that blocks bad deploys"
+     Why: "Deploy-on-every-change is a feature while building, a liability with users."
+     Check: "Push a commit you know is broken. Does anything stop it?"
+  5. "Tests on the flows that matter"
+     Why: "Full test suites feel slow, so tests get skipped — when 3 to 5 would do."
+     Check: "List the flows that lose you a customer if they break. Any test for them?"
+  6. "Monitoring & alerts"
+     Why: "Logging feels like 'later'. Later is after a customer reports the outage."
+     Check: "Your app errors at 3am. Do you know before your users do?"
+- READINESS GAUGE (white card, radius var(--rx), hairline border, soft shadow):
+  a circular SVG ring that fills with var(--grd) as checks pass, centre text
+  "X / 6" in var(--fh) 900 56px. Below, a mono status line and a verdict with
+  aria-live="polite":
+    0 answered → "AWAITING CHECKS" (var(--tm))
+    6 passed → "GO" (var(--ok)): "Cleared. Want a second pair of eyes before liftoff?"
+    4–5 passed → "HOLD" (var(--amb)): "Close. The last gaps are usually the risky ones."
+    0–3 passed → "NO-GO" (var(--red)): "Not launch-ready — but it's a known list, not a
+    mystery."
+  Then a primary button (data-cta) whose label updates live:
+    no answers → "Get a free pre-flight check"
+    some fails → "Fix my N failed checks"  (N = number of Fail answers)
+    all pass   → "Book a final review"
+  Append readiness_score=X and failed=1,3,5 (the failed item numbers) to its link.
 
-1. Secrets and environment variables
-   Why skipped: "The tool needs the key to make the demo work, so it puts the key
-   where the demo can reach it — the frontend."
-   Check: "Open DevTools → Sources → search for 'sk_' or 'api_key'. If anything
-   comes up, it is public."
+S4 NOT A REBUILD (light)
+- Mono label "[ 03 — WHAT CHANGES ]"
+- H2: "Not a rebuild. A pre-flight."
+- Two columns separated by a vertical hairline:
+  "STAYS" (mono, var(--ok)) — Your UI and design · Your business logic · Your database
+  schema · Your product decisions · The weeks you already put in
+  "ADDED" (mono, var(--gs)) — Secret management · API-level authorization · Error
+  handling · A CI pipeline · Tests on critical flows · Logging and alerts
+  Each item a row with a small check or plus SVG; rows slide in from their side on
+  scroll.
 
-2. Structured error handling for external calls
-   Why skipped: "Prompts describe the happy path. Nobody prompts for 'what if Stripe
-   times out'."
-   Check: "Turn off your wifi mid-way through submitting a form. Does the app explain
-   what happened, or go blank?"
+S5 FLIGHT PLAN (light)
+- Mono label "[ 04 — FLIGHT PLAN ]"
+- H2: "Three steps to liftoff."
+- Three columns joined by a dashed line with a small moving dot travelling along it
+  (static under reduced motion). Step number in mono "STEP 01" etc.
+  01 "Free pre-flight audit" — "Send the repo or live URL. Written report against the
+     six checks within 48 hours. No call needed."
+  02 "Fixed-scope plan" — "Exactly what gets fixed, how long it takes, agreed before we
+     start."
+  03 "Launch" — "We close the gaps in your repo. You ship. You own all of it."
 
-3. Authentication and authorization at the API level
-   Why skipped: "Hiding a button in the UI looks like access control. The API
-   underneath usually still answers anyone who asks."
-   Check: "Copy a URL while logged in as user A. Open it logged in as user B.
-   Are you blocked?"
+S6 PROOF (light)
+- Mono label "[ 05 — MISSION LOG ]"
+- H2: "Founders who made it off the pad."
+- Three stats: numbers in gradient text, var(--fh) 900 56px; mono labels below.
+  Use "—" placeholders with <!-- REPLACE with real figures. Prefer outcomes: apps
+  launched, payments processed, funding raised after launch -->
+- Two testimonial cards: quote in var(--fa) italic 22px, then name, role and a mono tag
+  like "BUILT WITH LOVABLE". Placeholder text with <!-- REPLACE with real testimonial -->.
+- Do NOT invent client logos, certification badges or award seals.
 
-4. A CI pipeline that blocks bad deploys
-   Why skipped: "The tool deploys on every change. That is a feature while you build
-   and a liability once you have users."
-   Check: "Push a commit you know is broken. Does anything stop it reaching
-   production?"
+S7 FAQ (light) — <details>/<summary> accordion, max 760px, plus icon rotating to x.
+  "Will you rebuild my app?" — "No. We keep what works and add what's missing."
+  "Which tools do you work with?" — "Lovable, Bolt, Replit, Cursor, v0 — anything that
+   produces a real codebase."
+  "Who owns the code?" — "You. Your repo, your accounts, your infrastructure."
 
-5. Test coverage for the handful of flows that actually matter
-   Why skipped: "Full test suites are slow to write, so they get skipped entirely —
-   when 3 to 5 tests would cover the real risk."
-   Check: "Write down the flows that lose you a customer if they break. Sign-up,
-   payment, data export. Is there a single test for any of them?"
+S8 LIFTOFF CTA — dark navy band, full width, faint grid, two soft radial glows in
+#2F80ED and #14B8A6, centered content.
+- When it scrolls into view, a big mono countdown resumes from where the hero froze:
+  "T-03 · T-02 · T-01" then "LIFTOFF" in gradient text, while a thin vertical gradient
+  line shoots upward behind it (pure CSS).
+- H2 white: "Let's get you <em>cleared</em> for launch."
+- Sub, var(--on-dark-m) 19px: "Free pre-flight audit. Written report in 48 hours.
+  No obligation."
+- Primary button, larger: "Book my free pre-flight check" (data-cta).
+- Mono micro-line under the button, var(--on-dark-m): "Lovable · Bolt · Replit ·
+  Cursor · v0"
 
-6. Basic observability
-   Why skipped: "Logging feels like something to add later. Later is usually after
-   the first outage you found out about from a customer."
-   Check: "Your app throws an error at 3am. Do you know about it before your
-   users tell you?"
+FOOTER: one slim hairline row, 13px var(--tm): "© LaunchStudio · launchstudio.eu"
 
-S4 SELF-SCORE WIDGET — interactive, vanilla JS
-H2: "Score your own app"
-Sub: "Six yes/no questions. Takes two minutes. No email required."
-Six toggle rows, one per framework item, each with a short question and
-Yes / No buttons (pill-shaped, selected state uses var(--grd)).
-Live score display: a large number "X / 6" using the gradient as text fill.
-Result message below, which changes with the score:
-- 5-6 → color var(--ok): "Close. One or two gaps left to close."
-- 3-4 → color var(--amb): "Halfway. The risky half is usually what's left."
-- 0-2 → color var(--red): "Not launch-ready yet. The good news: this is a known
-  list, not a mystery."
-Below the result, a primary button "Get these items fixed" that scrolls to #audit
-AND writes the score into the form's hidden input named "readiness_score".
-
-S5 "PRODUCTION-READY DOES NOT MEAN REBUILT"
-H2: "Production-ready doesn't mean rebuilt"
-Sub: "The most common fear, and the most common misunderstanding. We are not
-throwing away what you built."
-Two columns side by side, equal width:
-- Left card, border-left 3px solid var(--ok), heading "What stays":
-  Your UI and design · Your business logic · Your database schema ·
-  Your product decisions · The weeks you already spent
-- Right card, border-left 3px solid var(--gs), heading "What gets added":
-  Secret management · API-level authorization · Error handling on external calls ·
-  A CI pipeline · Tests on critical flows · Logging and alerts
-Each item as a row with a small check or plus SVG icon.
-
-S6 PROCESS — 3 steps, horizontal on desktop with a thin connecting line
-H2: "How it works"
-1. "Free audit, 48 hours" — "Send us the repo or the live URL. You get a written
-   report against the six points above. No call required, no obligation."
-2. "Fixed-scope plan" — "You see exactly what gets done, what it costs and how long
-   it takes, before anything starts."
-3. "Launch" — "We close the gaps, you ship. Your code, your repo, your accounts —
-   you own all of it."
-
-S7 PRICING — 3 cards, middle one highlighted
-Use placeholder labels "TIER_1 / TIER_2 / TIER_3" and "€—" for prices, with an HTML
-comment <!-- REPLACE with pricing from launchstudio.eu/en/ --> above the block.
-Middle card: background var(--white), border-color var(--gs),
-box-shadow 0 0 0 1px var(--gs), var(--sm), plus a small pill badge
-"MOST CHOSEN" using var(--grd).
-
-S8 SOCIAL PROOF
-H2: "What others experience"
-A row of three stat blocks — big number using the gradient as text fill,
-label below in 13px var(--tm). Use placeholders "—" with an HTML comment
-<!-- REPLACE with real figures -->.
-Below, two testimonial cards: quote in var(--fa) italic 18px, then name and role
-in 13px var(--tm).
-
-S9 CONTACT FORM — id="audit"
-H2: "Describe your project. We handle the rest."
-Sub: "Send the repo or the URL. You get the audit back in 48 hours."
-Form fields, stacked, max-width 620px:
-- Name (text, required)
-- Email (email, required)
-- "Which tool did you build with?" (select, required): Lovable, Bolt, Replit,
-  Cursor, v0, Other
-- "Repo or live URL" (url, optional)
-- "What's blocking you?" (textarea, 4 rows)
-- "Budget range" (select, required): "Under €5k", "€5k–15k", "€15k–40k",
-  "€40k+", "Not sure yet"
-- Five hidden inputs, named exactly: click_id, click_type, landing, source,
-  readiness_score
-- Submit button, primary style, full width: "Request free audit"
-Inputs: background var(--white), border 1px solid var(--bd),
-border-radius var(--rs), padding 13px 16px, font var(--fb) 15px.
-Focus state: border-color var(--gs), box-shadow 0 0 0 3px rgba(47,128,237,.1),
-no default outline.
-
-Add this script at the end to populate the hidden fields from a cookie named
-ls_click (read it defensively inside try/catch, and set source to 'organic_or_other'
-when no click id is present).
+=== JS (vanilla, small) ===
+- const CTA_URL = "https://launchstudio.eu/en/#contact"; // REPLACE with real contact
+  or booking URL. Every element with data-cta gets href = CTA_URL plus query params.
+- Attribution: copy gclid, gbraid, wbraid, utm_source, utm_medium, utm_campaign,
+  utm_term, utm_content from location.search onto every data-cta link, plus
+  landing=ai-app-into-production. The S3 button also adds readiness_score and failed.
+- Hero countdown + check rows, scroll progress bar, S2 track fill, S3 scoring and live
+  button label, S4/S5 reveals, S8 countdown — IntersectionObserver for all scroll
+  triggers, each animation runs once.
 
 === TECHNICAL REQUIREMENTS ===
-- Semantic HTML: one <h1>, section elements, <label> bound to every input.
-- Fully responsive. Single breakpoint at 768px is enough. No horizontal scroll at
-  360px width.
-- Accessible: visible focus rings on all interactive elements, aria-live on the
-  score result, 4.5:1 contrast minimum for body text.
-- Respect prefers-reduced-motion: disable transforms and transitions inside it.
-- No dark mode. The page is light only, matching the existing site.
-- Self-contained: one HTML file, inline CSS and JS, only the three font links
-  as external resources.
+- Semantic HTML, exactly one <h1>, <section aria-labelledby>, buttons are <button>,
+  links are <a>.
+- Responsive, single 768px breakpoint, no horizontal scroll at 360px. The hero panel
+  stays visible on mobile, scaled down.
+- Contrast at least 4.5:1, including muted text on navy. Visible focus rings
+  (2px solid var(--ge), 3px offset).
+- prefers-reduced-motion: no countdowns, no moving dot, no slides; show final states.
+- Status is never conveyed by colour alone: always a word (PASS/FAIL/WARN/GO/NO-GO).
+- One HTML file, inline CSS and JS, only the four font links external.
 ```
 
 ---
@@ -470,23 +386,23 @@ when no click id is present).
 
 | # | Việc | Ghi chú |
 |---|---|---|
-| 1 | Thay giá thật từ `launchstudio.eu/en/` | Lovable để placeholder `€—` |
-| 2 | Thay số liệu social proof thật | Đừng để placeholder lên production |
-| 3 | Chuyển vào WordPress | Lưu thành page template trong theme `launchstudio`, hoặc dán vào Custom HTML block |
-| 4 | **Quyết định URL** | Đề xuất `/en/ai-app-into-production` + hreflang. Xem §1③ |
-| 5 | **Quyết định index hay noindex** | Nếu dùng *chỉ* cho ads → `noindex`, đo lường sạch. Nếu muốn giá trị GEO → **index**, và phải đảm bảo nội dung thật sâu hơn trang chủ |
-| 6 | Gắn middleware cookie `ls_click` | Code ở `conversion_attribution_setup.md` §2② |
-| 7 | Nối form vào CRM + conversion action `Qualified Lead` | `conversion_attribution_setup.md` §4 |
-| 8 | Thêm schema `FAQPage` + `HowTo` | 6 điểm framework là `HowTo` rất tự nhiên — tăng khả năng được LLM trích |
-| 9 | Internal link từ 60 bài `extra-1` về trang này | Đây là cách trang có authority mà không cần search volume |
-| 10 | Nếu `noindex`: gỡ khỏi sitemap và menu | Nếu không thủ thuật đo lường ở §2 mất tác dụng |
+| 1 | 🔴 **Thay `CTA_URL`** | Trỏ tới trang liên hệ/đặt lịch thật. Kiểm tra `gclid`, `utm_*`, `readiness_score`, `failed` có đi theo |
+| 2 | Cho trang liên hệ đọc `readiness_score` + `failed` | Điền sẵn vào form ở đó → sales biết ngay khách yếu ở đâu |
+| 3 | Thay số liệu và testimonial thật ở S6 | Không có số thật thì bỏ khối stat, giữ testimonial |
+| 4 | Kiểm tra hero và gauge trên mobile 360px | Launch Control panel và thanh gauge dính dưới đáy không được che nội dung |
+| 5 | Xác nhận "48h" còn đúng | Lấy từ quy trình trên trang chủ. Đổi ở cả S1, S5, S8 nếu thay đổi |
+| 6 | Chuyển vào WordPress | Page template trong theme `launchstudio`, hoặc Custom HTML block |
+| 7 | **Quyết định URL** | Đề xuất `/en/ai-app-into-production` + hreflang. Xem §1③ |
+| 8 | **Quyết định index hay noindex** | Xem ghi chú bên dưới |
+| 9 | Gắn middleware cookie `ls_click` + conversion `Qualified Lead` | `conversion_attribution_setup.md` §2② và §4. Giờ ghi nhận ở trang liên hệ |
+| 10 | Internal link từ 60 bài `extra-1` về trang này | Cách để trang có authority mà không cần search volume |
 
-> 🔴 **Mục 5 là quyết định quan trọng nhất và hai lựa chọn loại trừ nhau.**
+> 🔴 **Mục 8 là quyết định quan trọng nhất, và hai lựa chọn loại trừ nhau.**
 >
 > **`noindex`** → đo lường ads sạch tuyệt đối, nhưng mất toàn bộ giá trị GEO.
-> **`index`** → có thể được LLM trích dẫn, nhưng mất khả năng nói "mọi form từ URL này là từ ads".
+> **`index`** → có thể được LLM trích dẫn, nhưng mất khả năng nói "mọi lead từ URL này là từ ads".
 >
-> **Đề xuất của tôi: chọn `index`.** Lý do: giá trị GEO của trang này lớn hơn giá trị đo lường, vì bạn vẫn đo được bằng `gclid` trong hidden field (đã có ở §9), chỉ là không tuyệt đối. Còn giá trị GEO thì không có cách nào khác để có. Nếu cần một trang đo sạch cho ads, tạo thêm một bản `noindex` riêng ở URL khác — rẻ hơn nhiều so với việc hy sinh GEO.
+> **Đề xuất: chọn `index`.** Vẫn đo được qua `gclid` gắn vào link CTA, chỉ là không tuyệt đối. Còn giá trị GEO (6 cách tự kiểm tra ở S3) thì không có đường nào khác để có. Nếu cần một trang đo sạch cho ads, tạo thêm bản `noindex` ở URL khác.
 
 ---
 
@@ -496,14 +412,13 @@ Không cần viết lại từ đầu. Trang này là bản tổng hợp của:
 
 | Section | Nguồn |
 |---|---|
-| S3 framework 6 điểm | `extra-1/02-weekend-framework-six-things-prototype-launch.md` |
-| S2 vấn đề | `extra-1/03-why-ai-code-looks-done-not-safe-to-ship.md` · `extra-1/18-why-it-works-on-my-machine-isnt-production-ready.md` |
+| S3 pre-flight 6 điểm | `extra-1/02-weekend-framework-six-things-prototype-launch.md` |
+| S2 pain | `extra-1/03-why-ai-code-looks-done-not-safe-to-ship.md` · `extra-1/18-why-it-works-on-my-machine-isnt-production-ready.md` |
 | S3 điểm 1 | `extra-1/04-hardcoded-secrets-problem-nobody-notices.md` |
 | S3 điểm 2 | `extra-1/06-structured-error-handling-what-ai-coding-tool-skipped.md` |
 | S3 điểm 3 | `extra-1/07-authentication-looks-done-demo-api-level.md` |
 | S3 điểm 4 | `extra-1/08-lovable-prototype-needs-ci-pipeline-before-launch.md` |
 | S3 điểm 5 | `extra-1/09-three-to-five-user-flows-worth-testing-before-you-ship.md` |
 | S3 điểm 6 | `extra-1/10-observability-production-step-vibe-coders-forget.md` |
-| S4 widget | `extra-1/45-production-readiness-score-grade-your-own-ai-built-app.md` |
-| S5 không build lại | `extra-1/32-production-ready-doesnt-mean-rebuilt-debunking-common-fear.md` |
-| S7 giá | `extra-1/38-diy-vs-freelancer-vs-launchstudio-cost-timeline-comparison.md` |
+| S3 gauge tự chấm điểm | `extra-1/45-production-readiness-score-grade-your-own-ai-built-app.md` |
+| S4 không build lại | `extra-1/32-production-ready-doesnt-mean-rebuilt-debunking-common-fear.md` |

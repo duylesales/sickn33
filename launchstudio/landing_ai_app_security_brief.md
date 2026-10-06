@@ -1,7 +1,7 @@
-# 🔒 Landing page `/ai-app-security` — Content brief + Lovable prompt
+# 🔒 Landing page `/ai-app-security` — Content brief + Lovable prompt (v2: X-ray / Glass App)
 
 > **Ngày:** 06/10/2026 · **URL đích:** `https://launchstudio.eu/ai-app-security` (hiện **404**)
-> **Design reference:** `launchstudio.eu/` (NL) · `launchstudio.eu/en/` (EN) — token trích từ `themes/launchstudio/style.css`
+> **Thương hiệu:** giữ màu, font, gradient của `launchstudio.eu` · **Phong cách:** mới hoàn toàn, khác hai landing page vibe-coding và into-production
 > **File liên quan:** `keyword_research_lovable_vibecoding_security.md` · `volume_analysis_results.md` · `conversion_attribution_setup.md`
 
 ---
@@ -139,9 +139,9 @@ Việc Lovable ban đầu phủ nhận rồi quy trách nhiệm cho HackerOne **
 
 ---
 
-## 4. 🎨 Design system — token chính xác từ theme
+## 4. 🎨 Thương hiệu giữ nguyên, phong cách đổi hoàn toàn
 
-Giống hệt trang trước. Đã đối chiếu 0 sai lệch với `style.css` live.
+### Giữ (nhận diện thương hiệu)
 
 ```css
 :root{
@@ -154,156 +154,86 @@ Giống hệt trang trước. Đã đối chiếu 0 sai lệch với `style.css`
   --fh:'Satoshi',system-ui,sans-serif;
   --fb:'Inter',system-ui,sans-serif;
   --fa:'Instrument Serif',Georgia,serif;
-  --r:12px; --rs:10px; --rp:999px; --rl:20px; --rx:24px;
-  --ss:0 0 0 1px rgba(0,0,0,.03),0 2px 4px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04);
-  --sm:0 0 0 1px rgba(0,0,0,.02),0 4px 8px rgba(0,0,0,.03),0 16px 32px rgba(0,0,0,.06);
-  --sl:0 0 0 1px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04),0 24px 48px rgba(0,0,0,.08);
-  --t:.28s; --ease:cubic-bezier(.22,1,.36,1);
+  --fm:'JetBrains Mono',ui-monospace,monospace;
 }
 ```
 
-⚠️ **Satoshi từ Fontshare, không có trên Google Fonts:**
-```html
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,600,500,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-```
+Màu navy, gradient xanh→teal, font Satoshi (Fontshare) / Inter / Instrument Serif, letter-spacing âm ở heading.
 
-| Phần tử | Giá trị |
+### Đổi — concept **"X-ray / Glass App"**
+
+Nỗi đau thật của nhóm khách này **không phải "app bị lỗi"** mà là **"tôi không nhìn thấy được ai đang đọc dữ liệu của tôi"**. Vì vậy cả trang xoay quanh **sự nhìn xuyên thấu**:
+
+| Yếu tố | Thiết kế |
 |---|---|
-| `h1` | `--fh` 700, `clamp(34px,4.2vw,52px)`, lh **1.08**, ls **−1.5px** |
-| `h2` | `--fh` 700, `clamp(28px,3.5vw,44px)`, lh **1.12**, ls **−0.8px** |
-| `body` | `--fb` 16px, lh **1.65**, antialiased |
-| Section | **100px 0** desktop · **72px 0** mobile |
-| Hero | **72px 0 56px** · **56px 0 40px** mobile |
-| Card | padding 24px, `1px solid var(--bd)`, radius `--rl` (20px), shadow `--ss` |
-| Button hover | `translateY(-2px)` + `0 14px 34px rgba(47,128,237,.22),0 6px 14px rgba(11,29,53,.1)` |
+| Hero | **Bố cục giữa**, chữ lớn ở trên và một browser mock rộng ở dưới, hiển thị một app SaaS bình thường. **Một thấu kính tròn đi theo con trỏ** (mobile thì tự lướt) soi xuyên lớp giao diện để lộ lớp dưới: JSON thô có email khách, `service_role` key, `SELECT * FROM customers` |
+| Ẩn dụ phụ | **Hồ sơ vụ việc có thanh che (redaction)**: các thanh navy che dữ kiện, cuộn tới đâu mở ra tới đó |
+| Không khí | Sáng, điềm tĩnh, kiểu **báo cáo điều tra**: nhiều khoảng trắng, chữ mono cho dữ kiện, nhãn `SOURCE ↗` cạnh mọi số liệu. **Không phải trang báo động** |
+| Màu đỏ | Chỉ xuất hiện trong lớp dữ liệu bị lộ dưới thấu kính và nhãn severity. Không có section nào nền đỏ |
 
-**Riêng trang security:** dùng `--red` / `--amb` / `--ok` làm hệ màu trạng thái cho severity, nhưng **tiết chế**. Trang phải trông như một báo cáo kỹ thuật bình tĩnh, **không phải trang báo động**. Nền vẫn `#F8FAFE` sáng, không dark mode, không màu đỏ tràn section.
-
----
-
-## 5. 📝 Cấu trúc nội dung — 10 section
-
-### S1 — Hero
-- **Eyebrow:** `LOVABLE · BOLT · REPLIT · CURSOR · SUPABASE`
-- **H1:** `Your AI app is live. Nobody has checked who else can read it.`
-- **Sub:** `In April 2026, every Lovable project created before November 2025 was readable by any free user for 48 days — source code, database credentials, AI chat history. No warning was sent. Most founders still don't know.`
-- **CTA chính:** `Check my app — free, 48 hours`
-- **CTA phụ:** `What exactly gets checked ↓`
-- **Trust strip:** `Free audit · Written report · No obligation · We fix it or you take the report elsewhere`
-
-### S2 — ⭐ Hai sự cố (trọng tâm, đặt ngay sau hero)
-
-Hai card lớn, mỗi card là một timeline. Không trang trí, trình bày như một bản ghi nhận sự việc. **Mỗi dữ kiện có link nguồn ngoài.**
-
-**Card A — April 2026, platform-level (BOLA)**
-```
-3 Mar 2026    Matt Palmer reports via HackerOne
-Mar 2026      Patched — but only for projects created after Nov 2025
-~48 days      Older projects remained readable. No notification sent.
-What leaked   Source code · DB credentials · AI chat history · customer data
-Why it spreads  Lovable apps embed Supabase, Stripe and Google API keys
-```
-→ Dưới card: một hộp nhấn mạnh `Was your project created before November 2025?` + button `Check my app`
-
-**Card B — May 2025, app-level (CVE-2025-48757, CWE-863)**
-```
-Scope     Lovable through 15 Apr 2025
-Scanned   1,645 apps from Lovable's public showcase
-Found     170 apps (~10.3%) · 303 endpoints
-How       Readable/writable with the public anon key — RLS was never enabled
-Leaked    Emails, addresses, in some cases API keys
-Root cause  Supabase ships new tables with RLS off by default
-```
-
-> ⚠️ Không in điểm CVSS. Nêu CWE-863 là đủ và chính xác.
-
-### S3 — Sáu lỗ hổng phổ biến nhất + cách tự kiểm
-
-Giống cấu trúc framework ở trang `/ai-app-into-production`, nhưng góc security. 6 card, mỗi card có severity pill và một bước tự kiểm 2 phút.
-
-| # | Lỗ hổng | Severity | Cách tự kiểm |
+| | `/ai-app-vibe-coding` | `/ai-app-into-production` | **`/ai-app-security`** |
 |---|---|---|---|
-| 1 | **RLS not enabled on Supabase tables** | 🔴 Critical | Supabase → Table Editor. Bảng nào không có badge "RLS enabled" là đọc được công khai. |
-| 2 | **Service role key in frontend** | 🔴 Critical | DevTools → Sources → tìm `service_role`. Thấy là bất kỳ ai cũng ghi được vào DB của bạn. |
-| 3 | **Authorization only in the UI** | 🔴 Critical | Copy URL khi đăng nhập user A, mở bằng user B. Có chặn không? |
-| 4 | **Public project visibility** | 🟠 High | Lovable → project settings. Public nghĩa là code + chat history đọc được, không chỉ app đã publish. |
-| 5 | **No rate limiting on API routes** | 🟠 High | Gửi 200 request liên tiếp vào endpoint login. Có bị chặn? |
-| 6 | **Secrets in git history** | 🟡 Medium | `git log -p \| grep -iE "sk_live\|service_role\|password"`. Xoá file không xoá history. |
-
-> 🔴 Mỗi bước tự kiểm phải **làm được thật trong 2 phút**. Đây là điều kiện để LLM trích dẫn và để prospect tin. Nếu card chỉ nói "cái này rủi ro, hãy liên hệ", trang mất toàn bộ giá trị.
-
-### S4 — Widget tự chấm (6 câu, giống trang trước nhưng thang risk)
-
-| Số lỗ hổng | Kết quả | Màu |
-|---:|---|---|
-| 0 | `Clean on the basics. Worth a deeper look at auth logic.` | `--ok` |
-| 1–2 | `Two gaps. Both are same-day fixes.` | `--amb` |
-| 3+ | `Your database is very likely readable right now.` | `--red` |
-
-Điểm ghi vào hidden field `risk_score`.
-
-### S5 — Phạm vi audit (minh bạch — chống so giá $199)
-
-Bảng 2 cột: **What the free audit covers** vs **What it doesn't** (ví dụ: không phải pentest đầy đủ, không phải ISO/SOC2 certification, không review mã của third-party vendor).
-
-> 💡 Nêu rõ cái **không** làm là thứ tạo uy tín và lọc khách sai. Scanner tự động không dám viết phần này.
-
-### S6 — "Audit miễn phí. Giá nằm ở việc vá."
-
-Định vị trực diện chống đối thủ bán báo cáo $199. Ba bước: **Free audit (48h)** → **Fixed-scope fix plan** → **Re-test và ký xác nhận**.
-
-### S7 — `Technische due diligence` (section riêng, đơn hàng lớn nhất)
-
-Đối tượng khác hẳn: founder đang gọi vốn, hoặc investor đang soi target. Keyword `technische due diligence` = 40/tháng, cao nhất cụm.
-
-- **H2:** `Raising a round? Investors will look at this code.`
-- Nội dung: what a technical DD covers, what AI-generated code specifically triggers, deliverable là báo cáo gửi được cho investor
-- **Có nút ngôn ngữ riêng sang bản NL** — đây là cụm mà NL quan trọng nhất
-
-### S8 — AVG / GDPR compliance
-
-Trên bản EN: ngắn, dẫn sang bản NL. **Trên bản NL: đây là section lớn, dùng từ "AVG" xuyên suốt.** Nội dung: personsgegevens, datalek-meldplicht, verwerkersovereenkomst.
-
-### S9 — Social proof + certifications
-
-Số liệu + testimonial. Nếu có chứng chỉ security nào thật thì đặt ở đây. **Nếu không có, bỏ hẳn — đừng tạo badge trông như chứng chỉ.**
-
-### S10 — Form
-
-| Trường | Ghi chú |
-|---|---|
-| Name, Email | bắt buộc |
-| **Built with** | select: Lovable / Bolt / Replit / Cursor / v0 / Other |
-| **Project created before Nov 2025?** | select: Yes / No / Not sure — ⭐ **nối trực tiếp với hook ở S1** |
-| **Repo or live URL** | optional |
-| **Using Supabase?** | Yes / No / Not sure |
-| What worries you most? | textarea |
-| **Reason for audit** | select: Launching soon / Investor DD / Enterprise customer asked / Already had an incident / Just want to know — ⭐ **phân loại giá trị đơn hàng ngay tại form** |
-| 🔒 hidden | `click_id`, `click_type`, `landing`, `source`, `risk_score` |
-
-> 💡 Trường `Reason for audit` là trường giá trị nhất trên trang. `Investor DD` và `Enterprise customer asked` là hai lý do có ngân sách và deadline thật.
+| Hero | Tối, chat AI 2 cột | Sáng, bảng đếm ngược 2 cột | **Sáng, bố cục giữa, thấu kính X-ray tương tác** |
+| Ẩn dụ | Tối → sáng | Phóng tên lửa | **Nhìn xuyên thấu / hồ sơ bị che** |
+| Tương tác chính | Toggle Before/After | Pass/Fail → GO/NO-GO | **Câu hỏi "trước 11/2025?" + thước đo độ phơi nhiễm Locked ↔ Glass** |
 
 ---
 
-## 6. 🤖 Prompt cho Lovable.dev
+## 5. 📝 Cấu trúc nội dung v2 — Pain → Solution → bổ trợ → CTA
 
-> Paste nguyên khối. Tiếng Anh vì Lovable xử lý tốt hơn đáng kể.
+**Bỏ theo yêu cầu:** form (mọi CTA trỏ ra trang liên hệ, mang theo tham số). Trang vốn không có bảng giá.
+**Giữ có chủ đích:** 2 sự cố có nguồn và 6 cách tự kiểm tra. Đây là "vũ khí thật" ở §2 và là lý do LLM trích dẫn trang.
+**Rút gọn:** AVG chỉ còn 1 dải ngắn dẫn sang bản NL. Phạm vi audit gộp vào phần Solution.
+
+| # | Section | Vai trò | Thông điệp |
+|---|---|---|---|
+| S1 | **Hero X-ray** | 🪝 Hook | `Your users see your app. Who else sees your data?` |
+| S2 | **The case file** | 😬 Pain (sự thật) | 2 sự cố, thanh che mở dần, mọi dữ kiện có link nguồn. Cuối section là câu hỏi **"Project tạo trước 11/2025?"** Yes/No/Not sure |
+| S3 | **Exposure check** | 😬→✅ Tự kiểm tra | 6 lỗ hổng + bước tự kiểm 2 phút → thước đo **Locked ↔ Glass** → CTA cá nhân hoá |
+| S4 | **Free audit, paid fix** | ✅ Solution | 3 bước: audit 48h → vá → re-test + thư xác nhận. Kèm "Covers / Doesn't cover" |
+| S5 | Due diligence | Bổ trợ (đơn lớn nhất) | `Raising a round? Investors will open this code.` |
+| S6 | AVG strip | Bổ trợ | 1 dòng + link sang bản NL |
+| S7 | Proof | Bổ trợ | Placeholder |
+| S8 | FAQ | Bổ trợ | 3 câu |
+| S9 | **Final CTA** | 🎯 Chốt | Thấu kính trở lại, lần này lớp dưới **đã khoá**: `Make your app opaque again.` |
+
+### Vì sao cách này đánh đúng nỗi đau
+
+1. **Người đọc tự soi.** Họ rê chuột và *thấy* email khách hàng hiện ra dưới một giao diện trông rất bình thường. Đó chính là nỗi sợ của họ, nhưng không có câu chữ nào hù doạ.
+2. **Câu hỏi "trước 11/2025?" biến tin tức thành việc cá nhân.** Ai chọn "Yes" hoặc "Not sure" sẽ nhận một dòng riêng và một CTA riêng. Đây là hook mạnh nhất theo §2.
+3. **Hình ảnh khép vòng.** Hero là app trong suốt, CTA cuối là app được khoá lại. Toàn bộ câu chuyện bán hàng nằm trong hai hình ảnh đó.
+4. **Định vị chống đối thủ $199:** "audit miễn phí, chúng tôi lấy tiền ở việc vá", nói rõ ngay ở S4.
+
+---
+
+## 6. 🤖 Prompt cho Lovable.dev (v2)
+
+> Paste nguyên khối. Tiếng Anh vì Lovable xử lý tốt hơn.
 
 ```
-Build a single, self-contained landing page as ONE static `index.html` file, with all CSS
-in one inline <style> block and all JS in one inline <script> block. No React, no build
-step, no router, no external dependencies except the three font links below. This file
-will be pasted into a WordPress page template, so it must work standalone.
+Build a single, self-contained landing page as ONE static `index.html` file: all CSS in
+one inline <style> block, all JS in one inline <script> block. No React, no build step,
+no router, no external dependencies except the four font links below. It will be pasted
+into a WordPress page template, so it must work standalone.
 
-The subject is security auditing for apps built with AI coding tools (Lovable, Bolt,
-Replit, Cursor, v0). The tone is a calm technical report, NOT an alarm page. Factual,
-precise, zero hype. The reader is a non-technical founder who shipped something real and
-does not know what to check.
+WHAT THIS PAGE IS
+LaunchStudio audits and FIXES security in apps built with AI coding tools (Lovable,
+Bolt, Replit, Cursor, v0), especially apps on Supabase. The audit is free; LaunchStudio
+earns its fee by fixing what it finds, then re-testing. Audience: founders whose app is
+live or about to be, who cannot see who else can read their data. Story arc: PAIN
+(verifiable facts), SOLUTION, short supporting sections, final CTA.
+Visual concept for the whole page: X-RAY / GLASS — seeing through a normal-looking app
+to the exposed data underneath, and finally locking it.
+There is NO pricing and NO form on this page; every CTA links out.
 
-=== DESIGN SYSTEM — USE THESE EXACT VALUES, DO NOT SUBSTITUTE ===
+TONE — MANDATORY
+Calm, factual, investigative. Like a well-sourced report, never an alarm. Never use the
+words "dangerous", "disaster", "hacked", "nightmare", and never say or imply "don't
+use Lovable" — the readers ARE Lovable users and the page respects the tool. Every
+factual claim about an incident shows a small "SOURCE ↗" link. Do not print any CVSS
+score.
 
+=== BRAND — KEEP EXACTLY ===
 :root{
   --navy:#0B1D35; --bg:#F8FAFE; --white:#FFF;
   --ok:#0D9668; --red:#DC2626; --amb:#D97706;
@@ -314,256 +244,233 @@ does not know what to check.
   --fh:'Satoshi',system-ui,sans-serif;
   --fb:'Inter',system-ui,sans-serif;
   --fa:'Instrument Serif',Georgia,serif;
-  --r:12px; --rs:10px; --rp:999px; --rl:20px; --rx:24px;
-  --ss:0 0 0 1px rgba(0,0,0,.03),0 2px 4px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04);
-  --sm:0 0 0 1px rgba(0,0,0,.02),0 4px 8px rgba(0,0,0,.03),0 16px 32px rgba(0,0,0,.06);
-  --sl:0 0 0 1px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04),0 24px 48px rgba(0,0,0,.08);
-  --t:.28s; --ease:cubic-bezier(.22,1,.36,1);
+  --fm:'JetBrains Mono',ui-monospace,monospace;
+  --rp:999px; --rs:10px; --rl:18px; --rx:26px;
+  --t:.3s; --ease:cubic-bezier(.22,1,.36,1);
 }
-
-FONTS — load exactly these three. Satoshi comes from Fontshare, NOT Google Fonts.
-Never substitute a Google font for Satoshi:
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,600,500,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+FONTS — exactly these. Satoshi is from Fontshare, NOT Google Fonts. Never substitute:
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-TYPOGRAPHY — exact:
-- body: var(--fb), 16px, line-height 1.65, color var(--text), background var(--bg),
-  -webkit-font-smoothing:antialiased
-- h1: var(--fh) 700, clamp(34px,4.2vw,52px), line-height 1.08, letter-spacing -1.5px,
-  color var(--navy)
-- h2: var(--fh) 700, clamp(28px,3.5vw,44px), line-height 1.12, letter-spacing -0.8px
-- h3: var(--fh) 600, 20px, letter-spacing -0.3px
-- small: 14px, var(--tm), line-height 1.7 · caption: 12.5px, var(--tf)
-- monospace blocks: ui-monospace, 'SF Mono', Menlo, monospace, 13px
+=== STYLE — "FORENSIC GLASS" (a new style; do NOT make it look like a generic SaaS
+template, a hacker terminal, or a dark cyber-security site) ===
+- LIGHT page, background var(--bg). Calm, spacious, documentary. Think investigative
+  report meets premium product page.
+- h1: var(--fh) 900, clamp(42px,6.4vw,84px), line-height 1, letter-spacing -2.5px,
+  CENTERED.
+- h2: var(--fh) 700, clamp(30px,4.2vw,52px), line-height 1.06, letter-spacing -1.2px
+- h3: var(--fh) 700, 20px, letter-spacing -0.3px
+- body: var(--fb) 16px/1.7, color var(--ts)
+- Facts, dates, keys, labels: var(--fm) 13px. Section labels are mono, uppercase,
+  letter-spacing 1.5px, in the form "FILE 01 · THE INCIDENTS".
+- Glass surfaces: white at 70% opacity, backdrop-filter blur(14px), 1px solid
+  rgba(11,29,53,.08), radius var(--rx), very soft layered shadow.
+- REDACTION BARS are a signature element: solid var(--navy) bars with radius 3px that
+  cover facts and slide away (scaleX to 0 from the left, 500ms) when the line scrolls
+  into view. The text underneath must exist in the DOM for screen readers and SEO.
+- Red only for exposed data and severity labels. Green only for "secured" states.
+  Gradient for primary buttons, the lens ring, and 1–2 key words as gradient text.
+- var(--fa) italic for at most 3 emphasis words on the page.
+- All visuals in HTML/CSS/SVG. NO stock photos, NO hooded hackers, NO padlock clip-art,
+  NO matrix code rain, NO emoji. Icons: inline SVG, 1.5px stroke, 20x20.
+- Primary button: var(--grd), white, radius var(--rp), padding 16px 30px, var(--fh) 700,
+  hover lift 2px + box-shadow 0 16px 36px rgba(47,128,237,.3). Secondary: transparent,
+  1px solid var(--navy), color var(--navy), radius var(--rp).
+- Max width 1180px, 20px side padding (16px under 768px). Sections 116px 0 desktop,
+  76px 0 mobile.
 
-LAYOUT:
-- max width 1140px, centered, 20px side padding (16px under 768px)
-- section padding 100px 0 desktop, 72px 0 under 768px
-- hero padding 72px 0 56px desktop, 56px 0 40px mobile
-- cards: var(--white), padding 24px, 1px solid var(--bd), border-radius var(--rl),
-  box-shadow var(--ss)
-- card hover: border-color rgba(37,99,235,.15), box-shadow var(--sm),
-  transition all var(--t) var(--ease)
-- primary button: background var(--grd), white, border-radius var(--rp),
-  padding 14px 28px, var(--fh) 600
-- primary hover: translateY(-2px), box-shadow 0 14px 34px rgba(47,128,237,.22),
-  0 6px 14px rgba(11,29,53,.1)
-- secondary button: transparent, 1px solid var(--bd), color var(--navy), radius var(--rp)
+=== SECTIONS, IN ORDER ===
 
-SEVERITY PILLS — small, uppercase, 11px, letter-spacing .8px, border-radius var(--rp),
-padding 4px 10px:
-- Critical: color var(--red), background rgba(220,38,38,.08)
-- High: color var(--amb), background rgba(217,119,6,.08)
-- Medium: color var(--tm), background var(--bs)
-- Clean/pass: color var(--ok), background rgba(13,150,104,.08)
+S1 HERO — X-RAY (centered)
+- Mono label: "FOR LOVABLE · BOLT · REPLIT · CURSOR · SUPABASE APPS"
+- H1: 'Your users see your app. <span class=grad>Who else</span> sees your data?'
+- Sub, 19px var(--ts), max 640px, centered: "AI-built apps can ship with the database
+  door open — and nothing on screen tells you. We find what's exposed, fix it, and prove
+  it's closed. The audit is free."
+- Buttons centered: primary "Check my app for free" (data-cta), secondary "See what
+  gets exposed" (href #case-file).
+- Mono micro-row: "Free audit · Written report in 48h · We fix it, or you keep the report"
 
-VISUAL CHARACTER — critical to match the existing site:
-- Light, airy, clinical. Page background is #F8FAFE, never pure white, NEVER dark mode.
-- Shadows are always soft and multi-layered. Never one heavy shadow.
-- Headings use tight NEGATIVE letter-spacing — this is the brand signature.
-- The blue-teal gradient is an ACCENT only: primary buttons, big stat numbers, small
-  badges. NEVER a full-width section background, never behind body text.
-- Red is used ONLY in small severity pills and single result lines. Never a red section
-  background, never a red hero. This page must read as a calm report, not a warning siren.
-- Instrument Serif italic very sparingly — one or two emphasis phrases maximum.
-- No stock photos, no shield/padlock clip art, no hacker-in-a-hoodie imagery, no emoji
-  in the UI. Use simple inline SVG icons, 1.5px stroke, currentColor, 20x20.
+THE X-RAY MOCK (the hook), full container width below the copy, max 1040px:
+A browser window (glass surface, top bar with three dots and a URL pill
+"app.yourstartup.com/dashboard"). Inside are TWO stacked layers of identical size:
+- TOP layer — a clean, friendly SaaS dashboard drawn in HTML/CSS: sidebar, a greeting
+  "Good morning, Sam", three KPI tiles, and a "Recent customers" table with avatars,
+  names and a status pill. Looks perfectly normal and safe.
+- BOTTOM layer — the same area as raw exposed data on a pale grid, var(--fm) 12.5px:
+    GET /rest/v1/customers?select=*      200 OK   (anon key)
+    { "email": "j.devries@…", "phone": "+31 6…", "address": "Keizersgracht…" }
+    { "email": "m.jansen@…", "iban": "NL91 ABNA ••••" }
+    SUPABASE_SERVICE_ROLE_KEY = "eyJhbGciOi…"
+    RLS: disabled  ·  table: customers  ·  policies: 0
+  Exposed values are underlined in var(--red); small red mono tags float beside them:
+  "PUBLIC", "NO RLS", "SECRET IN BUNDLE".
+- A circular LENS (180px; 120px on mobile) with a 2px gradient ring and a soft outer
+  glow reveals the bottom layer inside the circle (CSS clip-path: circle() on the
+  bottom layer, position driven by CSS variables set from pointer position).
+  On desktop the lens follows the pointer inside the window. On touch devices and when
+  idle for 3s, the lens auto-sweeps along a slow figure-eight path. Keyboard users can
+  focus the window and move the lens with arrow keys.
+- Caption under the window, mono 12px var(--tm), centered:
+  "Illustration. The pattern behind CVE-2025-48757: tables readable with the public key."
+- Under prefers-reduced-motion: no following or sweeping; show a static split — left
+  half top layer, right half bottom layer, divided by a vertical gradient line.
 
-=== PAGE CONTENT — 10 SECTIONS IN THIS ORDER ===
+S2 PAIN — THE CASE FILE (id="case-file")
+- Label: "FILE 01 · THE INCIDENTS"
+- H2: "This isn't hypothetical. It's on the record."
+- Two case cards side by side (stacked on mobile), glass surfaces. Each card: a mono
+  header row (case date left, "PLATFORM-LEVEL" or "APP-LEVEL" tag right), an h3, and a
+  list of fact rows "LABEL ........ value" where each value starts covered by a
+  redaction bar that slides away on scroll (stagger 120ms). Each card ends with
+  "SOURCE ↗" links.
+  Card A — h3 "Spring 2026 · Lovable platform authorization flaw"
+    Reported ........ 3 Mar 2026, via HackerOne
+    Type ............ Broken object-level authorization (BOLA)
+    Patched ......... March 2026 — for projects created after Nov 2025
+    Older projects .. readable for ~48 days, no notification sent
+    Exposed ......... source code · database credentials · AI chat history
+    <!-- REPLACE: link SOURCE to TNW, Computing, The Register, OECD AI Incidents -->
+  Card B — h3 "May 2025 · CVE-2025-48757 (CWE-863)"
+    Scanned ......... 1,645 apps from Lovable's public showcase
+    Affected ........ 170 apps (~10.3%) · 303 endpoints
+    How ............. readable/writable with the public anon key
+    Root cause ...... Row Level Security never enabled on Supabase tables
+    Exposed ......... emails, addresses, some API keys
+    <!-- REPLACE: link SOURCE to NVD / Intruder / Pluto Security -->
+- Neutral note under the cards, 14px var(--tm): "Lovable patched the platform flaw.
+  The app-level gaps are configuration — they stay open until someone closes them."
+- THE PERSONAL QUESTION (wide glass bar, centered):
+  Big text, var(--fh) 700 26px: "Was your project created before November 2025?"
+  Three pill buttons: "Yes" · "No" · "Not sure". On click, an aria-live line appears:
+    Yes → "Then it sat in the exposed window. Rotate your keys and get it checked."
+    Not sure → "That's the most common answer. A free check settles it in 48 hours."
+    No → "Good. The app-level gaps below still apply to every project."
+  and a primary button "Check my app for free" (data-cta) with created_before=yes|no|unsure
+  appended to its link.
 
-S1 HERO (left-aligned, max 780px, not centered)
-- Eyebrow, uppercase 12px letter-spacing 1.2px color var(--gs):
-  "LOVABLE · BOLT · REPLIT · CURSOR · SUPABASE"
-- H1: "Your AI app is live. Nobody has checked who else can read it."
-- Sub (18px var(--ts), max 640px): "In April 2026, every Lovable project created before
-  November 2025 was readable by any free user for 48 days — source code, database
-  credentials, AI chat history. No warning was sent. Most founders still don't know."
-- Primary button "Check my app — free, 48 hours" (anchor #audit),
-  secondary "What exactly gets checked" (anchor #checks)
-- Thin row below, 13px var(--tm), middot separated: "Free audit" · "Written report" ·
-  "No obligation" · "We fix it, or you take the report elsewhere"
+S3 EXPOSURE CHECK (id="check")
+- Label: "FILE 02 · CHECK IT YOURSELF"
+- H2: "Six gaps. Two minutes each."
+- Sub: "Run these yourself. Your answers stay in your browser."
+- Layout: on desktop, the six items in a 2-column grid on the left (70%) and a STICKY
+  exposure meter on the right (30%). On mobile the meter becomes a slim sticky bar at
+  the bottom while this section is in view.
+- Each item is a white card: severity tag (mono 11px pill: CRITICAL red / HIGH amber /
+  MEDIUM grey-blue), h3, a mono "TRY THIS" box on var(--bs), and three small toggles
+  "Exposed" · "Secure" · "Not sure" (aria-pressed).
+  1. CRITICAL — "RLS off on Supabase tables" — Try: "Supabase → Table Editor. Any table
+     without 'RLS enabled' is publicly readable."
+  2. CRITICAL — "Service role key in the frontend" — Try: "DevTools → Sources → search
+     'service_role'. If it's there, anyone can write to your database."
+  3. CRITICAL — "Authorization only in the UI" — Try: "Open user A's URL while logged in
+     as user B. Blocked?"
+  4. HIGH — "Public project visibility" — Try: "Lovable → project settings. Public can
+     mean code and chat history, not just the live app."
+  5. HIGH — "No rate limiting on login" — Try: "Fire 200 login attempts in a row. Does
+     anything stop you?"
+  6. MEDIUM — "Secrets in git history" — Try: "git log -p | grep -iE
+     'sk_live|service_role|password'. Deleting a file doesn't delete history."
+- EXPOSURE METER (glass card): a vertical (desktop) / horizontal (mobile) scale from
+  "LOCKED" (top, green) to "GLASS" (bottom, red). A marker slides as answers change:
+  Exposed = 2 points, Not sure = 1 point, Secure = 0. A small preview square above the
+  scale shows a tiny version of the hero dashboard whose opacity drops as the score
+  rises — the app literally turns to glass. Verdict with aria-live:
+    no answers → "Answer to see your exposure"
+    0 → "Locked on the basics. Auth logic is where the subtle gaps hide."
+    1–4 → "Some glass. These are usually same-day fixes."
+    5+ → "Your data is very likely readable right now."
+  Primary button (data-cta) with a live label:
+    no answers → "Get a free audit"
+    otherwise → "Close my N gaps"  (N = Exposed + Not sure count)
+  Append risk_score and exposed=1,2,… to its link.
 
-S2 THE TWO INCIDENTS — the most important section. Two large cards side by side
-(stack under 768px). Present as a factual record, not marketing. Each card has a small
-label at top, an h3, and a definition-list style timeline with the label in 12px
-uppercase var(--tf) and the value in 14px var(--text). Add a placeholder
-<a href="#" class="src">Source</a> after each card with an HTML comment
-<!-- ADD source links: The Register, TNW, Computing, OECD AI Incidents -->
+S4 SOLUTION — FREE AUDIT, PAID FIX
+- Label: "FILE 03 · WHAT WE DO"
+- H2: 'Reports are cheap. <em>Closed</em> gaps aren't.'
+- Sub, max 640px: "Scanners sell you a list. We hand you the list for free — and get
+  paid to close it."
+- Three steps in a row joined by a thin line; each step icon morphs from an open
+  circle to a check as it scrolls into view:
+  01 "Free audit" — "Repo or live URL. Written findings within 48 hours."
+  02 "We fix it" — "Fixed scope, agreed upfront, done in your repo."
+  03 "Re-test & sign-off" — "We verify every fix and give you a letter you can forward
+     to customers or investors."
+- Below, two compact columns separated by a hairline:
+  "THE AUDIT COVERS" (mono, var(--ok)): Supabase RLS & policies · Keys and secrets ·
+  API authorization · Auth flows · Rate limiting · Git history
+  "IT ISN'T" (mono, var(--tm)): A full penetration test · An ISO or SOC 2 certification
+  · A review of third-party vendors' code
+  One line under: "Saying what we don't do is how you know the rest is real."
 
-Card A — label "APRIL 2026 · PLATFORM-LEVEL", h3 "Broken object level authorization"
-  3 Mar 2026     Reported via HackerOne by researcher Matt Palmer
-  Mar 2026       Patched — but only for projects created after November 2025
-  ~48 days       Older projects stayed readable. No notification was sent.
-  What leaked    Source code, database credentials, AI chat history, customer data
-  Why it spread  Lovable apps commonly embed Supabase, Stripe and Google API keys
-Below the card, a highlighted callout box (background var(--bs), border-left 3px solid
-var(--red), border-radius var(--rs), padding 18px):
-  "Was your project created before November 2025?" + inline primary button "Check my app"
+S5 DUE DILIGENCE (a glass panel with a soft gradient border)
+- Label: "FILE 04 · RAISING A ROUND"
+- H2: "Investors will open this code."
+- Text, max 600px: "Technical due diligence on an AI-built codebase looks for the same
+  six gaps — plus how fast you can fix them. Walk in with a report and a sign-off
+  letter instead of surprises."
+- Mono row of three deliverables: "Investor-ready report · Fix plan with timeline ·
+  Sign-off letter"
+- Secondary button "Prepare for due diligence" (data-cta, adds reason=investor_dd)
+- Small link: "Nederlands: technische due diligence ↗" (href /ai-app-beveiliging,
+  <!-- REPLACE when the NL page exists -->)
 
-Card B — label "MAY 2025 · APP-LEVEL", h3 "CVE-2025-48757 — missing row level security"
-  Classification  CWE-863, Incorrect Authorization
-  Scope           Lovable through 15 April 2025
-  Scanned         1,645 apps from Lovable's public showcase
-  Found           170 apps (~10.3%), 303 endpoints
-  How             Readable and writable with the public anon key, because RLS had never
-                  been enabled on those tables
-  Leaked          Emails, addresses, in some cases API keys
-  Root cause      Supabase creates new tables with RLS switched off by default
-Add an HTML comment: <!-- Do NOT add a CVSS score: sources disagree (8.26 vs 9.3) -->
+S6 AVG STRIP — one slim row, mono label "NL", text: "Dutch customers? We cover AVG:
+personal data, datalek-meldplicht and verwerkersovereenkomsten." Link "Lees in het
+Nederlands ↗" to /ai-app-beveiliging.
 
-Then one short clarifying paragraph, 15px var(--ts), max 720px:
-"These are two different kinds of problem. The 2025 CVE was a configuration gap in apps
-people built, made likely by a default that ships switched off. The 2026 issue was in
-Lovable's own platform. Both are fixable, and neither is a reason to stop using these
-tools — but both are reasons to check what you shipped."
+S7 PROOF
+- Label: "FILE 05 · AFTER THE FIX"
+- H2: "Founders who closed the gaps."
+- Three stats, numbers in gradient text var(--fh) 900 52px, mono labels. Use "—" with
+  <!-- REPLACE with real figures: apps audited, critical gaps closed, avg. days to fix -->
+- Two testimonial cards: quote var(--fa) italic 21px, name, role, mono tag "BUILT WITH
+  LOVABLE". Placeholders with <!-- REPLACE with real testimonial -->.
+- Do NOT invent certification badges, ISO logos, award seals or client logos.
 
-S3 THE SIX MOST COMMON GAPS — id="checks"
-H2: "The six gaps we find most often"
-Sub: "Each one has a two-minute check you can run yourself, right now, without us."
-Six cards in a 2-column grid (1 column mobile). Each card: severity pill top-right,
-a number in var(--fh) 800 26px with gradient text fill, h3, one paragraph on why AI
-tools leave this gap, then a "RUN THIS CHECK" block (background var(--bs), radius
-var(--rs), padding 14px, monospace 13px, label 11px uppercase letter-spacing 1px
-color var(--tf)).
+S8 FAQ — <details> accordion, max 760px.
+  "Is Lovable unsafe?" — "No. It's a fast way to build. The gaps come from defaults
+   and missing configuration, which is fixable."
+  "Do I need to stop my app during the audit?" — "No. We work read-only until you
+   approve fixes."
+  "Who sees my code?" — "Only the engineers on your audit, under NDA if you want one."
 
-1. Critical — "RLS not enabled on Supabase tables"
-   Why: "Supabase creates every new table with row level security switched off. The app
-   works perfectly without it, so nothing ever tells you it is missing."
-   Check: "Supabase → Table Editor. Any table without an 'RLS enabled' badge is readable
-   by anyone holding your public key."
+S9 FINAL CTA — the X-ray returns, closed
+- A smaller version of the hero window (max 720px) with the lens sweeping, but the
+  bottom layer now shows:
+    GET /rest/v1/customers?select=*      401 Unauthorized
+    RLS: enabled  ·  policies: 4  ·  secrets: server-side
+  with green "SECURED" tags instead of red.
+- H2 centered: 'Make your app <span class=grad>opaque</span> again.'
+- Sub: "Free audit. Written report in 48 hours. You decide what happens next."
+- Primary button, larger: "Check my app for free" (data-cta)
 
-2. Critical — "Service role key in the frontend"
-   Why: "The service role key bypasses every security rule by design. It ends up in
-   frontend code because that is where the call that needed it was written."
-   Check: "DevTools → Sources → search for 'service_role'. If it appears, anyone can
-   write to your database."
+FOOTER: one hairline row, 13px var(--tm): "© LaunchStudio · launchstudio.eu"
 
-3. Critical — "Authorization only in the UI"
-   Why: "Hiding a button is not access control. The API underneath usually still answers
-   anyone who asks it directly."
-   Check: "Copy a URL while logged in as one user. Open it as a different user. Are you
-   actually blocked, or just missing a menu item?"
-
-4. High — "Project visibility set to public"
-   Why: "'Public' sounds like it refers to the published app. It also exposed the source
-   code and the AI chat history."
-   Check: "Open your project settings and read what 'public' actually covers for your
-   plan."
-
-5. High — "No rate limiting on API routes"
-   Why: "Nobody prompts for rate limiting. It only matters once someone decides to
-   point a script at your login endpoint."
-   Check: "Send 200 requests in a row to your login route. Does anything slow down or
-   block you?"
-
-6. Medium — "Secrets left in git history"
-   Why: "Deleting the file removes it from the current version, not from history. The
-   key is still there in an earlier commit."
-   Check: "git log -p | grep -iE 'sk_live|service_role|password'"
-
-S4 SELF-ASSESSMENT WIDGET — vanilla JS
-H2: "Check your own app"
-Sub: "Six questions. Two minutes. No email required."
-Six rows, one per gap above, each a short question with Yes / No / Not sure pill buttons
-(selected state uses var(--grd)). Count the number of gaps found.
-Large result number "X of 6" using gradient text fill, with an aria-live region:
-- 0 gaps  → var(--ok): "Clean on the basics. Auth logic is still worth a closer look."
-- 1-2     → var(--amb): "Two gaps. Both are usually same-day fixes."
-- 3+      → var(--red): "Your database is very likely readable right now."
-Count every "Not sure" as a gap, and say so in a 12.5px note under the widget.
-Then a primary button "Get these checked properly" that scrolls to #audit and writes the
-count into the hidden input named "risk_score".
-
-S5 AUDIT SCOPE — two columns, equal width
-H2: "What the free audit covers — and what it doesn't"
-Left card, border-left 3px solid var(--ok), h3 "Covered":
-  RLS and table-level access · Key and secret exposure (frontend + git history) ·
-  API-level authorization on your real endpoints · Project visibility settings ·
-  Rate limiting on auth routes · A written report you keep
-Right card, border-left 3px solid var(--tf), h3 "Not covered":
-  A full penetration test · ISO 27001 or SOC 2 certification ·
-  Third-party vendor code review · Infrastructure and network testing ·
-  Load and performance testing
-Below, 14px var(--tm): "If you need a full pentest or a certification audit, say so and
-we will tell you who to call. That is a different job."
-
-S6 POSITIONING — H2: "The audit is free. The value is in the fix."
-One paragraph, 16px var(--ts), max 720px: "Automated scanners will sell you a report for
-a couple of hundred euros. A report is not a fixed app. We give you the findings for
-free because the findings are the easy part — then you decide whether we close the gaps
-or you take the report to someone else."
-Then three steps, horizontal on desktop with a thin connecting line:
-1. "Free audit, 48 hours" — "Send the repo or the live URL. Written report back in two
-   working days. No call required."
-2. "Fixed-scope fix plan" — "Exactly what gets fixed, what it costs, how long it takes.
-   Before anything starts."
-3. "Re-test and sign-off" — "We re-run every check and give you the written
-   confirmation. Useful when a customer or an investor asks."
-
-S7 TECHNICAL DUE DILIGENCE — give this its own distinct section with a subtle
-background change (background var(--white), with a top and bottom 1px solid var(--bd))
-H2: "Raising a round? Investors will read this code."
-Sub: "Technical due diligence on an AI-generated codebase asks different questions than
-it did three years ago. Those questions have predictable answers, and you can prepare
-them in advance."
-Three cards:
-- "What gets looked at" — "Architecture decisions, dependency risk, secret handling,
-  test coverage, and whether one person leaving stops the product."
-- "What AI-generated code triggers specifically" — "Reviewers now ask how much was
-  generated, who reviewed it, and whether anyone on the team can explain the parts
-  that matter."
-- "What you get" — "A report written to be forwarded. Findings, severity, remediation
-  status, and what was fixed before the round."
-Primary button: "Prepare for technical due diligence"
-
-S8 AVG / GDPR — keep SHORT on this English page
-H2: "AVG and GDPR for AI-built apps"
-Two short paragraphs covering personal data handling, breach notification duty, and
-processor agreements, then a link styled as a secondary button:
-"Read this in Dutch — AVG compliance" pointing to "/ai-app-beveiliging" with an HTML
-comment <!-- NL version: expand this section substantially and use the word AVG, not GDPR -->
-
-S9 SOCIAL PROOF
-H2: "What others experience"
-Three stat blocks, big numbers with gradient text fill, labels 13px var(--tm). Use "—"
-placeholders with <!-- REPLACE with real figures -->.
-Two testimonial cards: quote in var(--fa) italic 18px, then name and role 13px var(--tm),
-also placeholders.
-Do NOT invent certification badges or trust seals.
-
-S10 CONTACT FORM — id="audit"
-H2: "Send it over. Report back in 48 hours."
-Form, stacked, max-width 620px:
-- Name (text, required)
-- Email (email, required)
-- "Built with" (select, required): Lovable, Bolt, Replit, Cursor, v0, Other
-- "Was your project created before November 2025?" (select, required): Yes, No, Not sure
-- "Using Supabase?" (select): Yes, No, Not sure
-- "Repo or live URL" (url, optional)
-- "What worries you most?" (textarea, 4 rows)
-- "Reason for the audit" (select, required): "Launching soon", "Investor due diligence",
-  "An enterprise customer asked", "We already had an incident", "Just want to know"
-- Five hidden inputs named exactly: click_id, click_type, landing, source, risk_score
-- Submit, primary, full width: "Request free audit"
-Inputs: var(--white) background, 1px solid var(--bd), border-radius var(--rs),
-padding 13px 16px, var(--fb) 15px. Focus: border-color var(--gs),
-box-shadow 0 0 0 3px rgba(47,128,237,.1), no default outline.
-Add a 12.5px var(--tf) line under the submit button: "We do not run anything against
-your app without written permission."
-
-Add a script at the end that reads a cookie named ls_click inside try/catch and fills
-the hidden fields, setting source to 'organic_or_other' when no click id is present.
+=== JS (vanilla, small) ===
+- const CTA_URL = "https://launchstudio.eu/en/#contact"; // REPLACE with the real
+  contact or booking URL. Every [data-cta] gets href = CTA_URL + query params.
+- Attribution: copy gclid, gbraid, wbraid, utm_source, utm_medium, utm_campaign,
+  utm_term, utm_content from location.search onto every data-cta link, plus
+  landing=ai-app-security. Section-specific params: created_before (S2), risk_score
+  and exposed (S3), reason=investor_dd (S5).
+- Lens (pointer / auto-sweep / arrow keys, via requestAnimationFrame), redaction
+  reveals, S2 question, S3 scoring + live button label + preview opacity, S4 step
+  morph. IntersectionObserver for scroll triggers; each runs once.
 
 === TECHNICAL REQUIREMENTS ===
-- Semantic HTML, exactly one <h1>, <section> elements, <label> bound to every input.
+- Semantic HTML, exactly one <h1>, <section aria-labelledby>, buttons are <button>,
+  links are <a>. Redacted text stays in the DOM (bars are decorative, aria-hidden).
+- The X-ray mock is decorative: aria-hidden on both layers, with a visually-hidden
+  description: "Illustration: a normal dashboard with customer data exposed underneath."
 - Responsive, single 768px breakpoint, no horizontal scroll at 360px.
-- Accessible: visible focus rings, aria-live on the widget result, 4.5:1 minimum
-  contrast, and severity never communicated by colour alone — always include the text
-  label.
-- Respect prefers-reduced-motion: disable transforms and transitions.
-- Light mode only. No dark mode.
-- One HTML file, inline CSS and JS, only the three font links external.
+- Contrast at least 4.5:1. Visible focus rings (2px solid var(--ge), 3px offset).
+- prefers-reduced-motion: no lens movement, no bar slides, no morphs; final states.
+- Severity and status never by colour alone: always a word (CRITICAL, EXPOSED,
+  SECURED…).
+- One HTML file, inline CSS and JS, only the four font links external.
 ```
 
 ---
@@ -572,20 +479,21 @@ the hidden fields, setting source to 'organic_or_other' when no click id is pres
 
 | # | Việc | Ghi chú |
 |---|---|---|
-| 1 | 🔴 **Tra lại CVE-2025-48757 trên NVD** | Nguồn vênh CVSS 8.26 vs 9.3. Không in số nếu chưa chắc |
-| 2 | 🔴 **Thêm link nguồn thật cho cả hai sự cố** | The Register, TNW, Computing, OECD AI Incidents. **Không dẫn blog SEO của đối thủ** |
-| 3 | Thay placeholder social proof | Đừng để `—` lên production |
-| 4 | **Quyết định URL** + hreflang | Đề xuất `/en/ai-app-security` + `/ai-app-beveiliging` |
-| 5 | **Viết bản NL — không dịch máy** | Mở rộng hẳn phần AVG + due diligence, giữ EN cho tên lỗi kỹ thuật |
-| 6 | Schema `Service` + `FAQPage` + `HowTo` | 6 bước tự kiểm là `HowTo` rất tự nhiên |
-| 7 | Internal link từ các bài security có sẵn | `keyword_research_lovable_vibecoding_security.md` §1.2: đây là lý do page phải có trước |
-| 8 | Middleware cookie `ls_click` | `conversion_attribution_setup.md` §2② |
-| 9 | Conversion action `Qualified Lead` | Phân tầng theo trường `Reason for the audit` |
-| 10 | ⚖️ **Rà lại tông giọng lần cuối** | Mục tiêu: không câu nào có thể đọc thành cáo buộc. Chỉ sự kiện + nguồn |
+| 1 | 🔴 **Tra lại CVE-2025-48757 trên NVD** | Prompt đã cấm in CVSS. Kiểm tra lại cả mốc 15/4/2025 và số 1.645 / 170 / 303 |
+| 2 | 🔴 **Gắn link nguồn thật vào mọi nút `SOURCE ↗`** | The Register, TNW, Computing, OECD AI Incidents, NVD. **Không dẫn blog SEO của đối thủ** |
+| 3 | 🔴 **Rà lại tông giọng lần cuối** | Không câu nào được đọc thành cáo buộc. Chỉ sự kiện + nguồn. Kiểm tra cả FAQ "Is Lovable unsafe?" |
+| 4 | 🔴 **Thay `CTA_URL`** | Kiểm tra `gclid`, `utm_*`, `created_before`, `risk_score`, `exposed`, `reason` có đi theo sang trang đích |
+| 5 | Cho trang liên hệ đọc các tham số trên | `reason=investor_dd` và `created_before=yes` là hai lead nóng nhất → chấm điểm `Qualified Lead` cao hơn |
+| 6 | Kiểm tra thấu kính X-ray trên mobile | Tự lướt mượt, không giật, không che mất nội dung ở 360px |
+| 7 | Dữ liệu giả dưới thấu kính | Phải là dữ liệu bịa rõ ràng (đã che `…`, `••••`). Không dùng tên/email thật |
+| 8 | Thay số liệu và testimonial thật ở S7 | Không có thì bỏ khối stat |
+| 9 | **Quyết định URL** + hreflang | `/en/ai-app-security` + `/ai-app-beveiliging` |
+| 10 | **Viết bản NL — không dịch máy** | Mở rộng AVG + due diligence, giữ EN cho tên lỗi kỹ thuật (§3②) |
+| 11 | Middleware cookie `ls_click` | `conversion_attribution_setup.md` §2②, giờ ghi nhận ở trang liên hệ |
 
-> 🔴 **Mục 1, 2 và 10 không được bỏ qua.** Trang này nêu tên một công ty thật và một CVE thật. Chính xác về dữ kiện vừa là nghĩa vụ, vừa là **chính thứ khiến LLM trích dẫn bạn** thay vì trích vibeappscanner. Một con số CVSS sai sẽ phá huỷ uy tín của cả trang.
+> 🔴 **Mục 1, 2 và 3 không được bỏ qua.** Trang nêu tên một công ty thật và một CVE thật. Chính xác về dữ kiện vừa là nghĩa vụ, vừa là thứ khiến LLM trích dẫn bạn thay vì vibeappscanner.
 
-> 💡 **Khác với `/ai-app-into-production`, trang này nên `index`, không `noindex`.** Nó có volume thật (~70/tháng), có đối thủ xác minh, và có hai entity (`CVE-2025-48757`, sự cố Lovable 4/2026) mà LLM sẽ tra. Nếu cần một URL đo lường ads sạch, tạo bản sao `noindex` riêng.
+> 💡 **Trang này nên `index`.** Có volume thật (~70/tháng), có đối thủ xác minh, và có hai entity (`CVE-2025-48757`, sự cố Lovable 2026) mà LLM sẽ tra. Nếu cần URL đo ads sạch, tạo bản sao `noindex` riêng.
 
 ---
 

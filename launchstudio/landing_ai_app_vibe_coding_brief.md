@@ -1,4 +1,4 @@
-# ⚡ Landing page `/ai-app-vibe-coding` — Content brief + Lovable prompt
+# ⚡ Landing page `/ai-app-vibe-coding` — Content brief + Lovable prompt (v2: vibe style, Pain → Solution)
 
 > **Ngày:** 06/10/2026 · **URL đích:** `https://launchstudio.eu/ai-app-vibe-coding` (hiện **404**)
 > **File kèm:** `keyword_ai_app_vibe_coding.csv` (65 kw — **34 dùng được, 30 negative**)
@@ -261,137 +261,82 @@ Giống ba trang trước, đã đối chiếu 0 sai lệch với `style.css` li
 | Card | padding 24px, `1px solid var(--bd)`, radius `--rl`, shadow `--ss` |
 | Button hover | `translateY(-2px)` + `0 14px 34px rgba(47,128,237,.22),0 6px 14px rgba(11,29,53,.1)` |
 
-**Riêng trang pillar này:** vì nhiệm vụ là phân luồng, ba thẻ dẫn sang spoke phải là phần tử thị giác mạnh nhất sau hero — dùng `--sm` shadow và gradient cho icon, không để chúng trông như link phụ ở cuối trang.
+### 🎨 Hướng thiết kế v2 — "Builder-native": từ hỗn loạn tối → sạch sáng
+
+Giữ **nhận diện thương hiệu** (bảng màu, gradient xanh–teal, Satoshi/Inter/Instrument Serif, letter-spacing âm, shadow mềm), nhưng **đổi phong cách** cho hợp dân vibe coding:
+
+| Yếu tố | v1 (cũ) | v2 (mới) |
+|---|---|---|
+| Hero | Sáng, chữ trái, tĩnh | **Nền navy `#0B1D35`**, lưới mờ + glow gradient, **mock khung chat AI builder có animation** |
+| Hình ảnh | Chỉ icon SVG | UI giả lập bằng code: khung chat, toast cảnh báo, thẻ "bug" kiểu console, toggle Before/After |
+| Font phụ | — | Thêm **JetBrains Mono** cho chi tiết code/terminal (chỉ làm điểm nhấn) |
+| Kể chuyện bằng màu | Sáng toàn trang | **Tối = app vibe-coded đang ẩn lỗi → Sáng = app đã được launchstudio xử lý**. Phần Solution chuyển sang nền sáng như site hiện tại |
+
+> 💡 Ẩn dụ tối → sáng chính là thông điệp bán hàng: người đọc *thấy* app của họ đi từ trạng thái rối sang trạng thái sạch, trước khi đọc chữ nào.
+
+**Ba thẻ dẫn sang spoke vẫn giữ** (nằm trong phần Solution) để trang làm đúng vai trò pillar ở §1.
 
 ---
 
-## 7. 📝 Cấu trúc nội dung — 10 section
+## 7. 📝 Cấu trúc nội dung v2 — Pain → Solution → bổ trợ
 
-### S1 — Hero
-- **Eyebrow:** `LOVABLE · BOLT · REPLIT · CURSOR · V0`
-- **H1:** `Vibe coding got you a working app. We make it a real one.`
-- **Sub:** `You prompted your way to something that works. Now it needs to be secure, take real money, survive real users, and still be maintainable when you hire your first engineer. That's a different job, and it's the only one we do.`
-- **CTA chính:** `Get a free audit`
-- **CTA phụ:** `See what it costs ↓` ← **đẩy giá lên trước, vì đối thủ không có**
-- **Trust strip:** `Published pricing · Your code stays yours · No full rebuild`
+**Đã bỏ theo yêu cầu:** bảng giá, form liên hệ. Mọi CTA trỏ ra trang liên hệ/đặt lịch hiện có của launchstudio.eu.
+**Đã bỏ để ngắn gọn:** Enablement (S7 cũ), Kho nội dung (S9 cũ). Có thể thêm lại sau nếu cần.
 
-### S2 — ⭐ Ba đường phân luồng (quan trọng nhất ở trang pillar)
+> ⚠️ §4 từng khuyên đẩy giá công khai lên làm lợi thế. Bỏ giá là quyết định có đánh đổi: trang mất một điểm khác biệt so với instinctools. Bù lại bằng hook mạnh hơn ở hero và phần "$25 gig" thẳng thắn.
 
-Ba thẻ lớn, mỗi thẻ dẫn sang một spoke. Đây là lý do tồn tại của trang.
+| # | Section | Vai trò | Thông điệp chính |
+|---|---|---|---|
+| S1 | **Hero** | 🪝 Hook | `Your AI said "Done." It wasn't.` + chat mock bật cảnh báo |
+| S2 | **Pain** | 😬 Nhận diện | 6 lỗi ẩn, viết bằng ngôn ngữ founder chứ không phải ngôn ngữ dev |
+| S3 | **Solution** | ✅ Giải pháp | `We keep the vibe. We add the engineering.` + toggle Before/After + 3 thẻ spoke |
+| S4 | How it works | Bổ trợ | 3 bước, không có biểu mẫu |
+| S5 | $25 gig? | Bổ trợ (bắt buộc, xem §5) | Thừa nhận gig có chỗ dùng → tăng độ tin |
+| S6 | Who it's for | Bổ trợ | 4 pill nhận diện |
+| S7 | FAQ | Bổ trợ | 4 phản đối, trả lời 1–2 câu |
+| S8 | Proof | Bổ trợ | Placeholder số liệu + testimonial thật |
+| S9 | **Final CTA** | 🎯 Chốt | `Stop prompting. Start launching.` — nền navy, đối xứng với hero |
 
-| Thẻ | Câu hỏi nhận diện | Dẫn tới |
-|---|---|---|
-| **Finish it** | "It works on my screen but I can't launch it" | `/ai-app-into-production` |
-| **Secure it** | "I don't know who can read my database" | `/ai-app-security` |
-| **Connect it** | "Payments or the database are broken" | `/ai-app-integrations` |
+### Vì sao hero này hút
 
-Mỗi thẻ: icon, tiêu đề, một câu nhận diện vấn đề, 3 bullet, link.
-
-### S3 — Đối tượng này là ai (nhận diện)
-
-Bốn chân dung ngắn: solo founder non-technical · founder có chút code · agency nhận app vibe-coded của khách · team nội bộ dùng AI tool nhưng không có senior review.
-
-> 💡 Chân dung thứ 3 và 4 là người instinctools đang bán cho. Nêu ra để không tự giới hạn vào solo founder.
-
-### S4 — Bốn phản đối, trả lời thẳng
-
-Học cấu trúc FAQ của instinctools nhưng trả lời cụ thể hơn:
-
-| Phản đối | Hướng trả lời |
-|---|---|
-| **"Phải build lại từ đầu không?"** | Không. Nêu rõ cái gì giữ, cái gì thêm. |
-| **"Người của bạn là dev thật hay cũng vibe code?"** | Câu đắt nhất. Trả lời thẳng: ai review, kinh nghiệm bao lâu, dùng công cụ gì (Semgrep/CodeQL/SonarQube). |
-| **"Sao không thuê gig $25 trên Fiverr?"** | 🔴 **Bắt buộc có** — xem S6. |
-| **"IP thuộc về ai?"** | Code của bạn, repo của bạn, account của bạn. |
-
-### S5 — ⭐ Giá công bố (lợi thế cạnh tranh trực tiếp)
-
-Đặt **cao trên trang**, không ở cuối. Ba mức theo spoke:
-
-| Gói | Giá | Nội dung |
-|---|---|---|
-| Production readiness | `từ €—` | — |
-| Security audit + fix | `từ €—` | — |
-| Payment/database setup | `€1.500–2.500` | Theo `google_ads_plan_payments_nl.md` §11 |
-
-> 🔴 Lấy giá thật từ `launchstudio.eu/en/`. Tôi để placeholder vì không muốn tự đặt số.
->
-> 💡 Thêm một dòng ngay dưới bảng: *"instinctools, Suffescom and most agencies in this space don't publish prices. We do, because you should be able to rule us out in thirty seconds."* — biến minh bạch thành luận điểm bán hàng.
-
-### S6 — 🔴 `$25 gig vs studio` (bắt buộc)
-
-Trực tiếp xử lý cảnh báo §3.5 của research. Bảng so sánh thật, không chê bai:
-
-| | Fiverr gig $25–50 | launchstudio |
-|---|---|---|
-| Sửa được lỗi bạn chỉ ra | ✅ | ✅ |
-| Tìm lỗi bạn **chưa biết là có** | ❌ | ✅ |
-| Kiểm RLS / secret / webhook | ❌ | ✅ |
-| Chịu trách nhiệm khi vỡ sau 3 tháng | ❌ | ✅ |
-| Báo cáo gửi được cho investor | ❌ | ✅ |
-| Phù hợp khi | Một lỗi cụ thể, đã biết | Chuẩn bị launch / gọi vốn / có khách enterprise |
-
-> 💡 **Hàng cuối là hàng quan trọng nhất.** Nó thừa nhận gig $25 có chỗ dùng hợp lý — điều đó làm tăng độ tin của cả bảng, và lọc đúng người không phải khách của bạn.
-
-### S7 — Enablement program (dòng doanh thu thứ hai)
-
-Lấy từ instinctools. Bán cho công ty có team dev riêng: chọn công cụ, context engineering, security protocol, CI guardrail, review process.
-
-- **H2:** `Or teach your team to do this safely`
-- 4 bullet, một CTA riêng: `Talk about team enablement`
-
-> ⚠️ Chỉ đưa section này lên nếu thật sự định bán. Một trang quảng cáo dịch vụ không tồn tại sẽ tạo lead không chốt được.
-
-### S8 — Chứng minh
-
-Số liệu + testimonial. Nếu có chỉ số dạng "vốn khách gọi được sau launch" hoặc "doanh thu xử lý qua payment đã tích hợp", dùng nó — mạnh hơn "X năm kinh nghiệm". **Nếu chưa có chứng chỉ ISO thì bỏ hẳn, đừng tạo badge trông như chứng chỉ.**
-
-### S9 — Kho nội dung (tài sản GEO)
-
-Link tới 60 bài `extra-1` theo nhóm chủ đề. Đây là chỗ pillar nhận và truyền authority.
-
-### S10 — Form
-
-| Trường | Ghi chú |
-|---|---|
-| Name, Email | bắt buộc |
-| **Built with** | Lovable / Bolt / Replit / Cursor / v0 / Other |
-| **What do you need?** | Finish it / Secure it / Connect payments or DB / Not sure — ⭐ phân luồng |
-| **Who are you?** | Solo founder / Founder with some code / Agency with a client app / In-house team |
-| **Live URL or repo** | optional |
-| Mô tả ngắn | textarea |
-| **Budget range** | select, bắt buộc |
-| 🔒 hidden | `click_id`, `click_type`, `landing`, `source` |
+1. **Câu "Done." là câu mọi người dùng Lovable/Bolt đã thấy.** H1 lấy đúng câu đó và lật lại → nhận diện ngay trong 2 giây.
+2. **Chat mock diễn lại trải nghiệm của chính họ:** gõ prompt → AI báo xong → rồi cảnh báo đỏ bật lên. Người đọc không cần được *thuyết phục* là có vấn đề, họ *xem* nó xảy ra.
+3. **Không chê người dùng AI.** Thông điệp là "AI đưa bạn đến 80%, chúng tôi làm 20% còn lại", không phải "vibe coding là rác".
 
 ---
 
-## 8. 🤖 Prompt cho Lovable.dev
+## 8. 🤖 Prompt cho Lovable.dev (v2)
 
 ```
-Build a single, self-contained landing page as ONE static `index.html` file, with all CSS
-in one inline <style> block and all JS in one inline <script> block. No React, no build
-step, no router, no external dependencies except the three font links below. This file
-will be pasted into a WordPress page template, so it must work standalone.
+Build a single, self-contained landing page as ONE static `index.html` file: all CSS in
+one inline <style> block, all JS in one inline <script> block. No React, no build step,
+no router, no external dependencies except the four font links below. This file will be
+pasted into a WordPress page template, so it must work standalone.
 
-This is a PILLAR page for a service category: fixing and finishing apps built with AI
-coding tools (Lovable, Bolt, Replit, Cursor, v0) — commonly called vibe coding. Its main
-job is to route the reader to one of three deeper pages, and to state pricing openly
-because competitors hide theirs. Audience: a founder who shipped something that works
-and now needs it to be real. Tone: direct, specific, confident without hype. Never
-mock the reader for using AI tools.
+WHAT THIS PAGE IS
+A landing page for LaunchStudio, a studio that takes apps built with AI coding tools
+(Lovable, Bolt, Replit, Cursor, v0 — "vibe coding") and makes them production-ready:
+secure, with working payments, and maintainable. Audience: founders who prompted their
+way to a working app and now sense it isn't really ready. Story arc: PAIN first, then
+SOLUTION, then short supporting sections. Copy is short and punchy. Tone: confident,
+a little playful, builder-to-builder. Never mock the reader for using AI tools — the
+message is "AI got you 80% there, we do the last 20%".
+There is NO pricing section and NO form on this page. Every CTA links out.
 
-=== DESIGN SYSTEM — USE THESE EXACT VALUES, DO NOT SUBSTITUTE ===
+=== BRAND — KEEP THESE EXACT TOKENS ===
 
 :root{
-  --navy:#0B1D35; --bg:#F8FAFE; --white:#FFF;
+  --navy:#0B1D35; --navy-2:#0F2747; --bg:#F8FAFE; --white:#FFF;
   --ok:#0D9668; --red:#DC2626; --amb:#D97706;
   --gs:#2F80ED; --ge:#14B8A6;
   --grd:linear-gradient(135deg,#2F80ED 0%,#14B8A6 100%);
   --text:#0B1D35; --ts:#384860; --tm:#64748B; --tf:#94A3B8;
   --bd:#E2E8F0; --bs:#EEF2F7;
+  --on-dark:#E6EDF7; --on-dark-m:#9FB0C8; --line-dark:rgba(255,255,255,.08);
   --fh:'Satoshi',system-ui,sans-serif;
   --fb:'Inter',system-ui,sans-serif;
   --fa:'Instrument Serif',Georgia,serif;
+  --fm:'JetBrains Mono',ui-monospace,monospace;
   --r:12px; --rs:10px; --rp:999px; --rl:20px; --rx:24px;
   --ss:0 0 0 1px rgba(0,0,0,.03),0 2px 4px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04);
   --sm:0 0 0 1px rgba(0,0,0,.02),0 4px 8px rgba(0,0,0,.03),0 16px 32px rgba(0,0,0,.06);
@@ -399,194 +344,231 @@ mock the reader for using AI tools.
   --t:.28s; --ease:cubic-bezier(.22,1,.36,1);
 }
 
-FONTS — load exactly these three. Satoshi comes from Fontshare, NOT Google Fonts.
-Never substitute a Google font for Satoshi:
+FONTS — load exactly these. Satoshi comes from Fontshare, NOT Google Fonts. Never
+substitute it:
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,600,500,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-TYPOGRAPHY — exact:
-- body: var(--fb), 16px, line-height 1.65, color var(--text), background var(--bg),
-  -webkit-font-smoothing:antialiased
-- h1: var(--fh) 700, clamp(34px,4.2vw,52px), line-height 1.08, letter-spacing -1.5px
-- h2: var(--fh) 700, clamp(28px,3.5vw,44px), line-height 1.12, letter-spacing -0.8px
-- h3: var(--fh) 600, 20px, letter-spacing -0.3px
-- small: 14px var(--tm) line-height 1.7 · caption: 12.5px var(--tf)
+TYPOGRAPHY
+- body: var(--fb) 16px, line-height 1.65, antialiased
+- h1: var(--fh) 700, clamp(40px,6vw,76px), line-height 1.02, letter-spacing -2px
+- h2: var(--fh) 700, clamp(30px,4vw,48px), line-height 1.08, letter-spacing -1px
+- h3: var(--fh) 600, 19px, letter-spacing -0.3px
+- Tight NEGATIVE letter-spacing on all headings is the brand signature — keep it.
+- var(--fm) only for code-like details: chat text, severity tags, file names, toasts.
+- var(--fa) italic for at most 3 emphasis words on the whole page.
 
-LAYOUT:
-- max width 1140px, centered, 20px side padding (16px under 768px)
-- section padding 100px 0 desktop, 72px 0 under 768px
-- hero padding 72px 0 56px desktop, 56px 0 40px mobile
-- cards: var(--white), padding 24px, 1px solid var(--bd), border-radius var(--rl),
-  box-shadow var(--ss)
-- card hover: border-color rgba(37,99,235,.15), box-shadow var(--sm),
-  transition all var(--t) var(--ease)
-- primary button: background var(--grd), white, border-radius var(--rp),
-  padding 14px 28px, var(--fh) 600
-- primary hover: translateY(-2px), box-shadow 0 14px 34px rgba(47,128,237,.22),
-  0 6px 14px rgba(11,29,53,.1)
-- secondary button: transparent, 1px solid var(--bd), color var(--navy), radius var(--rp)
+LAYOUT
+- max width 1160px centered, 20px side padding (16px under 768px)
+- sections 112px 0 desktop, 72px 0 under 768px
+- light cards: var(--white), 1px solid var(--bd), radius var(--rl), shadow var(--ss);
+  hover: shadow var(--sm), translateY(-3px), transition all var(--t) var(--ease)
+- primary button: background var(--grd), white, radius var(--rp), padding 15px 30px,
+  var(--fh) 600 16px; hover translateY(-2px) + box-shadow 0 14px 34px rgba(47,128,237,.32)
+- ghost button on dark: transparent, 1px solid rgba(255,255,255,.18), color var(--on-dark)
+- ghost button on light: transparent, 1px solid var(--bd), color var(--navy)
 
-VISUAL CHARACTER — critical to match the existing site:
-- Light, airy, clinical. Page background #F8FAFE, never pure white, NEVER dark mode.
-- Shadows always soft and multi-layered. Never one heavy shadow.
-- Headings use tight NEGATIVE letter-spacing — the brand signature.
-- Blue-teal gradient is an ACCENT only: primary buttons, big numbers, small badges,
-  and the three routing card icons. NEVER a full-width section background, never
-  behind body text.
-- Instrument Serif italic very sparingly — one or two emphasis phrases maximum.
-- No stock photos, no AI/robot/brain imagery, no emoji in the UI. Simple inline SVG
-  icons only, 1.5px stroke, currentColor, 20x20 (28x28 for the three routing cards).
+VISUAL DIRECTION — "builder-native", dark chaos → light clarity
+- Hero, Pain and Final CTA sit on DARK navy (var(--navy)) — this is "your app as it is
+  now, hiding problems". The Solution section and everything after it sit on LIGHT
+  var(--bg) — "your app after LaunchStudio". The switch from dark to light between Pain
+  and Solution is the visual climax: use a soft 160px vertical gradient fade from
+  var(--navy) to var(--bg) between them.
+- Dark sections: a faint 40px grid pattern (1px lines, rgba(255,255,255,.035)) and one
+  or two large blurred radial glows using #2F80ED and #14B8A6 at 18–25% opacity.
+- All imagery is built in HTML/CSS/SVG: chat windows, code snippets, toasts, terminal
+  cards. NO stock photos, NO robots, brains or generic AI art, NO emoji anywhere.
+- Icons: inline SVG, 1.5px stroke, currentColor, 20x20.
+- The blue-teal gradient is an accent: buttons, gradient text on 1–2 key words, icon
+  tiles, glows. Never behind paragraphs.
+- Red (--red) and amber (--amb) appear ONLY in the Pain story (severity tags, warning
+  toasts). Green (--ok) appears ONLY in the Solution story. Colour carries the narrative.
 
-=== PAGE CONTENT — 10 SECTIONS IN THIS ORDER ===
+=== PAGE CONTENT — 9 SECTIONS IN THIS ORDER ===
 
-S1 HERO (left-aligned, max 780px, not centered)
-- Eyebrow, uppercase 12px letter-spacing 1.2px color var(--gs):
-  "LOVABLE · BOLT · REPLIT · CURSOR · V0"
-- H1: "Vibe coding got you a working app. We make it a real one."
-- Sub (18px var(--ts), max 650px): "You prompted your way to something that works. Now
-  it needs to be secure, take real money, survive real users, and still be maintainable
-  when you hire your first engineer. That is a different job, and it is the only one
-  we do."
-- Primary button "Get a free audit" (anchor #contact),
-  secondary "See what it costs" (anchor #pricing)
-- Thin row below, 13px var(--tm), middot separated: "Published pricing" ·
-  "Your code stays yours" · "No full rebuild"
+S1 HERO (dark) — two columns on desktop (copy left 52%, visual right), stacked on mobile
+with copy first.
+Left:
+- Pill chip, var(--fm) 12.5px, 1px solid var(--line-dark), color var(--on-dark-m),
+  a small pulsing teal dot before the text:
+  "Built with Lovable · Bolt · Replit · Cursor · v0?"
+- H1, color white: 'Your AI said <em>"Done."</em> It wasn't.'
+  The em is var(--fa) italic, weight 400, with the gradient as text fill
+  (background-clip:text).
+- Sub, 19px var(--on-dark-m), max 520px:
+  "Vibe coding got you 80% there. We handle the last 20% — security, payments and
+  everything that breaks with real users — without rebuilding what you made."
+- Buttons: primary "Get a free audit" (href = CTA_URL, see JS), ghost "See what
+  breaks" (href #pain, with a small down-arrow SVG).
+- Trust row, 13px var(--on-dark-m), separated by small dots:
+  "Your code stays yours" · "No full rebuild" · "Real engineers, not more prompts"
 
-S2 THREE ROUTES — the most important section on this page. Three large cards in a row
-(stack under 768px), each visually prominent: box-shadow var(--sm), a 28x28 SVG icon in
-a 48x48 rounded tile with the gradient as background and white stroke, an h3, one
-italic identifying question in var(--fa) 17px color var(--ts), three short bullets, and
-a text link with a right-arrow SVG.
-H2: "Three things break. Pick the one that sounds like you."
+Right — ANIMATED AI-BUILDER MOCK (the hook of the page):
+A window card (background var(--navy-2), 1px solid var(--line-dark), radius var(--rx),
+large soft shadow, three small grey dots in a top bar, title "my-saas-app" in var(--fm)).
+Inside, a chat sequence that plays once when the page loads:
+  1. User bubble types in letter by letter (var(--fm) 14px):
+     "build me a booking app with stripe payments and user logins"
+  2. After 600ms, an assistant bubble with a green check icon:
+     "Done! Your app is ready to deploy."  followed by a small fake "Deploy" button
+     that gets a pressed state.
+  3. Then three warning toasts slide in from the right, 500ms apart, stacking over the
+     lower part of the window, each with a severity tag in var(--fm) 11px uppercase:
+     [CRITICAL, red]  "Row Level Security disabled on table `bookings`"
+     [CRITICAL, red]  "STRIPE_SECRET_KEY exposed in client bundle"
+     [HIGH, amber]    "Webhook /api/stripe → 404 · 0 of 37 payments recorded"
+     Toasts: background rgba(220,38,38,.10) or rgba(217,119,6,.10), 1px border in the
+     same hue at 35%, light text, slight blur backdrop.
+  4. Small caption under the window, var(--fm) 12px var(--on-dark-m):
+     "// what your AI builder won't tell you"
+With prefers-reduced-motion: show the final state immediately, no typing, no sliding.
 
-Card 1 — h3 "Finish it"
-  Question: "It works on my screen, but I cannot launch it."
-  Bullets: Secrets and environment variables · Error handling and CI · Tests on the
-  flows that matter
-  Link: "Production readiness" → /ai-app-into-production
+S2 PAIN (dark) — id="pain"
+- Small label, var(--fm) 12px uppercase, color var(--red): "> npm run audit"
+- H2 white: "It looks finished. Here's what's hiding underneath."
+- Six "bug cards" in a 3x2 grid (1 column on mobile). Dark card style: background
+  rgba(255,255,255,.03), 1px solid var(--line-dark), radius var(--rl), padding 24px.
+  Each card: severity tag (var(--fm) 11px, coloured pill), h3 in white, one line in
+  15px var(--on-dark-m). Cards fade-and-rise in on scroll, staggered 80ms.
+  1. CRITICAL — "Anyone can read your database" —
+     "Row Level Security is off. One API call exposes every user's data."
+  2. CRITICAL — "Your secret keys ship to the browser" —
+     "Stripe or OpenAI keys sit in your frontend. Someone else runs up your bill."
+  3. HIGH — "Payments succeed. Orders don't." —
+     "The webhook never fires. The money arrives, your app never finds out."
+  4. HIGH — "One weird input, blank screen" —
+     "No error handling. Users leave and you never learn why."
+  5. MEDIUM — "Every fix breaks two things" —
+     "You're on prompt #47 of 'fix the login'. No tests catch what broke."
+     Inside this card add a tiny mono stack of three struck-through lines in
+     var(--tf): "fix the login" / "fix the login again" / "pls just fix the login"
+  6. MEDIUM — "No developer wants to touch it" —
+     "Your first engineer opens the repo and quotes you a rewrite."
+- Bridge line centered under the grid, var(--fh) 600 22px white:
+  "None of this shows in the preview. <span gradient text>All of it shows at launch.</span>"
 
-Card 2 — h3 "Secure it"
-  Question: "I do not know who else can read my database."
-  Bullets: Row level security · Exposed keys · API-level authorization
-  Link: "Security audit" → /ai-app-security
+[dark → light gradient fade here]
 
-Card 3 — h3 "Connect it"
-  Question: "Payments or the database are quietly broken."
-  Bullets: Stripe, Mollie and iDEAL · Webhooks that never fire · Migrations and backups
-  Link: "Payments and databases" → /ai-app-integrations
+S3 SOLUTION (light)
+- Small label, var(--fm) 12px uppercase, color var(--ok): "> all checks passed"
+- H2: 'We keep the vibe. We add the <em>engineering.</em>' (em = var(--fa) italic)
+- Sub 18px var(--ts), max 620px: "Your UI, your logic and your product decisions stay.
+  We fix what the prompt never covered — inside your repo."
 
-S3 WHO THIS IS FOR — four compact cards in a 2x2 grid, each an h3 and two sentences
-H2: "Who we work with"
-1. "Solo founders, non-technical" — "You built it with prompts and it works. You have
-   no way to tell what is missing."
-2. "Founders who code a little" — "You know enough to be worried, and not enough to
-   be sure."
-3. "Agencies holding a client's vibe-coded app" — "You inherited it and now you own
-   the risk. We work white-label."
-4. "In-house teams using AI tools" — "The code ships fast. Nobody senior is reviewing
-   what it ships."
+Part A — BEFORE / AFTER TOGGLE (interactive, the "wow" moment of the light half):
+A large white card (shadow var(--sl), radius var(--rx)) with a segmented toggle at the
+top: "Vibe-coded" | "Production-ready". Default is "Vibe-coded". Below, six rows that
+mirror the six pain cards. In "Vibe-coded" state each row shows a red cross icon and the
+problem in var(--fm); in "Production-ready" state each row animates (staggered 60ms) to a
+green check icon and the fix:
+  RLS disabled                 → Row Level Security on every table
+  Keys in the client bundle    → Secrets in server-side env, keys rotated
+  Webhooks silently failing    → Verified webhooks, every payment recorded
+  No error handling            → Graceful errors + logging you can read
+  No tests                     → Tests on the flows that make you money
+  Unreadable codebase          → Clean structure your first hire can own
+Auto-flip to "Production-ready" once when the card first scrolls into view (skip the
+animation under reduced motion). The toggle remains clickable. Use role="tablist" or
+aria-pressed buttons, and announce the state for screen readers.
 
-S4 FOUR OBJECTIONS — accordion or four stacked cards, each an h3 question and a
-direct answer in 15px var(--ts). Answer plainly, no marketing language.
-H2: "The four things people ask first"
-1. "Do you rebuild it from scratch?" — "No. Your UI, your business logic, your database
-   schema and your product decisions stay. We add the parts that were never in the
-   prompt: secret management, API-level authorization, error handling, CI, tests and
-   logging."
-2. "Are your people real developers, or do they vibe code too?" — "We use AI tools
-   daily, and every change is reviewed by an engineer who can explain it. Security
-   findings are confirmed with static analysis — Semgrep, CodeQL and SonarQube — not
-   by asking a model whether the code is safe."
-3. "Why not a 25 dollar gig instead?" — "Sometimes that is the right call. See the
-   comparison below."
-4. "Who owns the code and the IP?" — "You do. Your repo, your accounts, your
-   infrastructure. We work in your environment and hand it back."
+Part B — THREE ROUTES (keep — this page routes readers to deeper pages)
+Intro line, var(--fh) 600 22px: "Start where it hurts most."
+Three cards in a row (stacked on mobile), shadow var(--sm). Each: 48x48 rounded tile
+with the gradient background and a white 24px SVG icon, h3, one italic question in
+var(--fa) 18px var(--ts), three short bullets, and a text link with an arrow SVG that
+nudges right on hover.
+  "Finish it" — "It works on my screen, but I can't launch it." —
+    Secrets & env vars · Error handling & CI · Tests on key flows —
+    link "Production readiness" → /ai-app-into-production
+  "Secure it" — "Who else can read my database?" —
+    Row Level Security · Exposed keys · API authorization —
+    link "Security audit" → /ai-app-security
+  "Connect it" — "Payments or data are quietly broken." —
+    Stripe, Mollie & iDEAL · Webhooks · Migrations & backups —
+    link "Payments & databases" → /ai-app-integrations
 
-S5 PRICING — id="pricing". Place this HIGH on the page, not at the bottom.
-H2: "What it costs"
-Sub: "Three starting points, matched to the three routes above."
-Three cards in a row, the middle one highlighted (background var(--white), border-color
-var(--gs), box-shadow 0 0 0 1px var(--gs) and var(--sm)):
-1. "Production readiness" — price "from €—" with <!-- REPLACE from launchstudio.eu/en/ -->
-2. "Security audit and fix" — price "from €—" with the same comment
-3. "Payment and database setup" — price "€1,500 – €2,500"
-Each card lists four short line items.
-Below the three cards, one line in 15px var(--ts), max 720px:
-"Most agencies in this space do not publish prices. We do, because you should be able
-to rule us out in thirty seconds."
+S4 HOW IT WORKS (light)
+H2: "From 'it works on my machine' to live. Three steps."
+Three numbered steps in a horizontal row connected by a thin dashed line (vertical on
+mobile). Numbers in gradient text, var(--fh) 700 44px.
+  01 "Send us the link" — "Repo or live URL. Lovable, Bolt, Replit, Cursor or v0 —
+     all fine."
+  02 "Get a plain-English audit" — "What's broken, what's risky, what to fix first."
+  03 "We fix it in your repo" — "Reviewed by engineers, merged into your code, handed
+     back. You keep shipping."
 
-S6 GIG COMPARISON — a real comparison table, 3 columns: criterion, "Freelance gig
-($25–50)", "LaunchStudio". Use a check SVG in var(--ok) and a cross SVG in var(--tf) —
-never colour alone, always keep the row label readable.
-H2: "When a 25 dollar gig is enough, and when it is not"
-Rows:
-  "Fixes a bug you can point at" — yes / yes
-  "Finds the problems you do not know about" — no / yes
-  "Checks row level security, exposed keys and webhooks" — no / yes
-  "Still answerable if it breaks in three months" — no / yes
-  "Produces a report you can forward to an investor" — no / yes
-Final row, styled differently (background var(--bs)), label "Right choice when":
-  "One specific bug you already identified" / "Launching, raising, or an enterprise
-  customer started asking questions"
-Under the table, 14px var(--tm): "If you have one clear bug and no deadline, a gig is
-genuinely the cheaper answer. We are the answer when you do not know what you are
-looking for."
+S5 THE $25 GIG QUESTION (light, background var(--white) band with 1px var(--bd) top and
+bottom)
+H2: "Can't I just hire a $25 gig?" (keep the quotation marks visible on the page)
+Sub, 18px var(--ts): "For one bug you already found? Honestly, yes."
+A real <table>, max 820px, three columns: criterion | "Freelance gig" | "LaunchStudio".
+Check SVG in var(--ok), cross SVG in var(--tf), each with visually-hidden "Yes"/"No".
+  "Fixes the bug you point at" — yes / yes
+  "Finds the bugs you don't know about" — no / yes
+  "Checks database security, keys and webhooks" — no / yes
+  "Still around if it breaks in 3 months" — no / yes
+Final row on var(--bs), label "Best when":
+  "One known bug, no deadline" / "You're about to launch, raise or sign a big customer"
 
-S7 ENABLEMENT — its own section with a subtle background change (background var(--white)
-with 1px solid var(--bd) top and bottom)
-H2: "Or teach your team to do this safely"
-Sub: "Some teams do not want to outsource. They want to keep moving fast with AI tools
-without shipping the same six gaps every time."
-Four short cards: "Tool selection and setup" / "Context engineering and prompt
-standards" / "Security guardrails and CI gates" / "A review process that scales"
-Secondary button: "Talk about team enablement"
-Add an HTML comment above: <!-- Remove this whole section if enablement is not an
-actual offering yet -->
+S6 WHO IT'S FOR (light) — one compact row, no cards
+Label, var(--fm) 12px uppercase var(--tm): "Built for"
+Four pills (white, 1px var(--bd), radius var(--rp), 15px, small icon each):
+"Solo founders" · "Founders who code a little" · "Agencies with a client's AI-built app"
+· "Teams shipping fast with AI tools"
 
-S8 PROOF
-H2: "What others experience"
-Three stat blocks, big numbers with gradient text fill, labels 13px var(--tm). Use "—"
-placeholders with <!-- REPLACE with real figures. Prefer client outcomes (funding
-raised after launch, revenue processed) over years-in-business -->
-Two testimonial cards: quote in var(--fa) italic 18px, name and role 13px var(--tm).
-Do NOT invent certification badges, ISO logos or award seals.
+S7 FAQ (light) — accordion using <details>/<summary>, max 760px, plus/minus icon that
+rotates. H2: "Quick answers"
+  "Do you rebuild it from scratch?" — "No. We keep what works and add what's missing:
+   security, error handling, tests and CI."
+  "Do your people vibe code too?" — "We use AI tools daily. Every change is reviewed by
+   an engineer, and security issues are confirmed with static analysis (Semgrep, CodeQL,
+   SonarQube) — not by asking a model."
+  "Which tools do you support?" — "Lovable, Bolt, Replit, Cursor, v0, and anything that
+   produces a normal codebase."
+  "Who owns the code?" — "You. Your repo, your accounts, your infrastructure."
 
-S9 LIBRARY — H2: "Everything we have written about this"
-Four grouped link lists, each with a group heading in 12px uppercase letter-spacing 1px
-color var(--tf) and 4 to 6 placeholder links:
-"Getting to production" / "Security" / "Payments and data" / "Tool-specific guides"
-Add <!-- REPLACE with real article links from the content library -->
+S8 PROOF (light)
+H2: "Founders who shipped"
+Three stat blocks: big numbers in gradient text (var(--fh) 700 48px), labels 14px
+var(--tm). Use "—" placeholders with:
+<!-- REPLACE with real figures. Prefer client outcomes (apps launched, funding raised
+after launch, payments processed) over years in business -->
+Two testimonial cards: quote in var(--fa) italic 20px, name + role + "Built with
+Lovable" style tag in var(--fm) 12px. Placeholder text with <!-- REPLACE with real
+testimonial -->.
+Do NOT invent certification badges, ISO logos, award seals or client logos.
 
-S10 CONTACT FORM — id="contact"
-H2: "Tell us where you are stuck."
-Form, stacked, max-width 620px:
-- Name (text, required)
-- Email (email, required)
-- "Built with" (select, required): Lovable, Bolt, Replit, Cursor, v0, Other
-- "What do you need?" (select, required): "Finish it", "Secure it",
-  "Connect payments or database", "Not sure yet"
-- "Who are you?" (select, required): "Solo founder", "Founder who codes a little",
-  "Agency with a client app", "In-house team"
-- "Live URL or repo" (url, optional)
-- "Tell us briefly what is going on" (textarea, 4 rows)
-- "Budget range" (select, required): "Under €1k", "€1k–5k", "€5k–15k", "€15k+",
-  "Not sure yet"
-- Four hidden inputs named exactly: click_id, click_type, landing, source
-- Submit, primary, full width: "Request free audit"
-Inputs: var(--white), 1px solid var(--bd), border-radius var(--rs), padding 13px 16px,
-var(--fb) 15px. Focus: border-color var(--gs), box-shadow 0 0 0 3px rgba(47,128,237,.1),
-no default outline.
+S9 FINAL CTA (dark, same grid + glow treatment as the hero, centered)
+- A mono line in var(--on-dark-m) with a strike-through animation:
+  "> fix the login again"  (the strike draws across on scroll into view)
+- H2 white, larger (clamp(36px,5vw,60px)):
+  'Stop prompting. <span gradient text>Start launching.</span>'
+- Sub, 18px var(--on-dark-m): "Free audit. Plain-English report. No obligation."
+- Primary button "Get my free audit" (href = CTA_URL)
+
+FOOTER: one slim line, 13px var(--tm) on var(--bg): "© LaunchStudio · launchstudio.eu"
+
+=== JS ===
+- const CTA_URL = "https://launchstudio.eu/en/#contact"; // REPLACE with real contact
+  or booking URL. Set it on every element with data-cta.
+- Attribution: read gclid, gbraid, wbraid, utm_source, utm_medium, utm_campaign,
+  utm_term, utm_content from location.search and append any that exist to CTA_URL on
+  every data-cta link, plus landing=ai-app-vibe-coding.
+- Hero chat sequence, scroll reveals (IntersectionObserver), Before/After toggle,
+  auto-flip once, strike-through on S9. Keep it small, vanilla, no libraries.
 
 === TECHNICAL REQUIREMENTS ===
-- Semantic HTML, exactly one <h1>, <section> elements, <label> bound to every input.
-- Responsive, single 768px breakpoint, no horizontal scroll at 360px.
-- Accessible: visible focus rings, 4.5:1 minimum contrast, comparison table marked up
-  as a real <table> with <th scope>, and yes/no never shown by colour or icon alone —
-  include screen-reader text.
-- Respect prefers-reduced-motion: disable transforms and transitions.
-- Light mode only. No dark mode.
-- One HTML file, inline CSS and JS, only the three font links external.
+- Semantic HTML, exactly one <h1>, <section> elements with aria-labelledby.
+- Responsive, single 768px breakpoint, no horizontal scroll at 360px. On mobile the hero
+  mock stays visible but scales down; toasts stack inside the window.
+- Contrast at least 4.5:1 on both dark and light sections (check the muted text on
+  navy). Visible focus rings (2px var(--ge) outline, 3px offset).
+- prefers-reduced-motion: disable typing, sliding, staggering and transforms; show all
+  final states.
+- Severity and yes/no never conveyed by colour alone — always text or hidden labels.
+- One HTML file, inline CSS and JS, only the four font links external.
 ```
 
 ---
@@ -598,13 +580,13 @@ no default outline.
 | 1 | 🔴 **Quyết định kiến trúc pillar/spoke** | Xem §1. Không làm bước này thì 4 trang ăn thịt nhau |
 | 2 | 🔴 **Áp 30 negative keyword ở cấp tài khoản** | Xem §2 và §3. Đây là phần quyết định của cụm này |
 | 3 | 🔴 **Cập nhật research §4.2** | `vibe coding cleanup specialist` không phải "xác minh mạnh nhất" — xem §2 |
-| 4 | Thay giá placeholder bằng giá thật | Lấy từ `launchstudio.eu/en/` |
-| 5 | **Quyết định có bán enablement không** | Nếu không, xoá hẳn S7. Đừng quảng cáo dịch vụ chưa có |
-| 6 | Link nội bộ 4 chiều | Pillar → 3 spoke, và 3 spoke → pillar |
-| 7 | Link 60 bài `extra-1` về pillar | Đây là cách pillar có authority |
-| 8 | Nạp 34 kw dùng được vào Keyword Planner | Chưa có volume thật, trừ `bolt ai` 1.300 (research §3.2) |
-| 9 | Schema `Service` + `FAQPage` | 4 phản đối ở S4 là `FAQPage` tự nhiên |
-| 10 | Middleware cookie `ls_click` | `conversion_attribution_setup.md` §2② |
+| 4 | 🔴 **Thay `CTA_URL`** | Trỏ tới trang liên hệ/đặt lịch thật. Kiểm tra tham số `gclid`/`utm_*` có đi theo sang trang đích |
+| 5 | Kiểm tra animation hero trên mobile | Chat mock + 3 toast phải đọc được ở 360px, không tràn |
+| 6 | Thay số liệu và testimonial placeholder ở S8 | Không có số thật thì bỏ khối stat, giữ testimonial |
+| 7 | Link nội bộ 4 chiều | Pillar → 3 spoke, và 3 spoke → pillar |
+| 8 | Link 60 bài `extra-1` về pillar | Bỏ kho nội dung khỏi trang thì phải link từ bài về đây |
+| 9 | Nạp 34 kw dùng được vào Keyword Planner | Chưa có volume thật, trừ `bolt ai` 1.300 (research §3.2) |
+| 10 | Middleware cookie `ls_click` | `conversion_attribution_setup.md` §2② — giờ ghi nhận ở trang liên hệ, không phải form trên trang này |
 
 ---
 

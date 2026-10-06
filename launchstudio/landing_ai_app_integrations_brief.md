@@ -1,4 +1,4 @@
-# 🔌 Landing page `/ai-app-integrations` — Content brief + Lovable prompt
+# 🔌 Landing page `/ai-app-integrations` — Content brief + Lovable prompt (v2: Live Wire / Money Flow)
 
 > **Ngày:** 06/10/2026 · **URL đích:** `https://launchstudio.eu/ai-app-integrations` (hiện **404**)
 > **Phạm vi:** payment gateways + databases
@@ -162,9 +162,9 @@ Hub `/ai-app-integrations` nên được xây **cho GEO và bán hàng trước*
 
 ---
 
-## 6. 🎨 Design system — token chính xác từ theme
+## 6. 🎨 Thương hiệu giữ nguyên, phong cách đổi hoàn toàn
 
-Giống hai trang trước. Đã đối chiếu 0 sai lệch với `style.css` live.
+### Giữ (nhận diện thương hiệu)
 
 ```css
 :root{
@@ -177,128 +177,78 @@ Giống hai trang trước. Đã đối chiếu 0 sai lệch với `style.css` l
   --fh:'Satoshi',system-ui,sans-serif;
   --fb:'Inter',system-ui,sans-serif;
   --fa:'Instrument Serif',Georgia,serif;
-  --r:12px; --rs:10px; --rp:999px; --rl:20px; --rx:24px;
-  --ss:0 0 0 1px rgba(0,0,0,.03),0 2px 4px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04);
-  --sm:0 0 0 1px rgba(0,0,0,.02),0 4px 8px rgba(0,0,0,.03),0 16px 32px rgba(0,0,0,.06);
-  --sl:0 0 0 1px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04),0 24px 48px rgba(0,0,0,.08);
-  --t:.28s; --ease:cubic-bezier(.22,1,.36,1);
 }
 ```
 
-⚠️ **Satoshi từ Fontshare, không có trên Google Fonts:**
-```html
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,600,500,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-```
+Màu navy, gradient xanh→teal, font Satoshi (Fontshare) / Inter / Instrument Serif, letter-spacing âm ở heading. Logo nhà cung cấp vẫn dùng **SVG đơn sắc**, không dùng logo màu gốc.
 
-| Phần tử | Giá trị |
+### Đổi — concept **"Live Wire / Money Flow"**
+
+Nỗi đau của nhóm khách này **không nhìn thấy được bằng mắt**: checkout báo "Paid" nhưng tiền không về tới app, dữ liệu không có backup. Nên trang **vẽ dòng tiền ra** thành một sơ đồ sống:
+
+| Yếu tố | Thiết kế |
 |---|---|
-| `h1` | `--fh` 700, `clamp(34px,4.2vw,52px)`, lh **1.08**, ls **−1.5px** |
-| `h2` | `--fh` 700, `clamp(28px,3.5vw,44px)`, lh **1.12**, ls **−0.8px** |
-| `body` | `--fb` 16px, lh **1.65**, antialiased |
-| Section | **100px 0** desktop · **72px 0** mobile |
-| Card | padding 24px, `1px solid var(--bd)`, radius `--rl` (20px), shadow `--ss` |
-| Button hover | `translateY(-2px)` + `0 14px 34px rgba(47,128,237,.22),0 6px 14px rgba(11,29,53,.1)` |
+| Hero | **Hai cột ngang nhau 50/50**: pain bên trái, **sơ đồ dòng tiền có animation** bên phải. Đồng xu € chạy dọc dây từ Customer → Checkout → Stripe → Webhook → App → Database. **Webhook bị đứt**, xu rơi xuống ô "Not recorded", bộ đếm tăng dần |
+| Ngôn ngữ hình ảnh | **Bản đồ tàu điện / dây dẫn**: dây dày 6px tô gradient, ga tròn bo lớn, nút hình viên thuốc |
+| Nền | **Các mảng màu pastel** nhạt từ màu thương hiệu (xanh nhạt `#EAF2FE`, teal nhạt `#E6F7F5`) xen kẽ, kèm **bento card** bo 28px. Không lưới, không nền tối, không kính mờ |
+| Cảm giác | Thân thiện, rõ ràng, hơi vui, như một sản phẩm fintech hiện đại. Không kỹ thuật nặng, không báo động |
 
-**Riêng trang này:** cần **logo nhà cung cấp** (Stripe, Mollie, iDEAL, PayPal, Supabase…). Dùng SVG đơn sắc đổ `currentColor` màu `--tm`, cao 24px, đặt trong khung `--bs` — **không dùng logo màu gốc**, vì một hàng logo nhiều màu sẽ phá vỡ ngay bảng màu lạnh của theme.
+| | Vibe-coding | Into-production | Security | **Integrations** |
+|---|---|---|---|---|
+| Hero | Tối, chat AI | Sáng, đếm ngược | Sáng, bố cục giữa, X-ray | **Pastel, 50/50, sơ đồ dòng tiền** |
+| Ẩn dụ | Tối → sáng | Phóng tên lửa | Nhìn xuyên thấu | **Dây đứt → dây nối lại** |
+| Tương tác chính | Gạt Before/After | Pass/Fail → GO | Thước đo Locked ↔ Glass | **Bấm vào ga trên bản đồ, nối dây đứt** |
+| Bề mặt | Card tối | Đường kẻ mảnh editorial | Kính mờ | **Bento pastel, dây gradient dày** |
 
 ---
 
-## 7. 📝 Cấu trúc nội dung — 9 section
+## 7. 📝 Cấu trúc nội dung v2 — Pain ngay trên cùng → Solution → bổ trợ → CTA
 
-### S1 — Hero
-- **Eyebrow:** `STRIPE · MOLLIE · iDEAL · PAYPAL · SUPABASE · POSTGRES`
-- **H1:** `Your app works. Taking money and storing data is where it breaks.`
-- **Sub:** `Payments and databases are the two integrations AI coding tools get almost right. Almost is the problem: the checkout works in test mode, the webhook never fires, and the database has no backup.`
-- **CTA chính:** `Tell us what's broken`
-- **CTA phụ:** `See the 8 things that break ↓`
-- **Trust strip:** `Fixed scope · From €800 · We're not a payment provider`
+**Bỏ theo yêu cầu:** giá (kể cả "From €800" ở trust strip) và form. Mọi CTA trỏ ra trang liên hệ, mang theo tham số.
+**Giữ bắt buộc:** dòng `We're not a payment provider` ngay ở hero (lý do ở `google_ads_plan_payments_nl.md` §10: tự lọc người tiêu dùng muốn mở tài khoản iDEAL).
 
-> 🔴 **Dòng "We're not a payment provider" là bắt buộc**, lấy nguyên tinh thần từ `google_ads_plan_payments_nl.md` §10: *"Dù negative list có tốt đến đâu, vẫn sẽ có người tiêu dùng và người muốn mở tài khoản iDEAL lọt vào. Một dòng ở đầu trang khiến họ tự rời đi trước khi gửi form."*
-
-### S2 — Hai mảng, hai nỗi đau (2 card lớn)
-
-**Card A — Payments:** test mode sang live, webhook không fire, subscription/abonnementen, refund & dispute, iDEAL/SEPA/Bancontact cho thị trường NL, secret key bị lộ.
-
-**Card B — Databases:** RLS chưa bật, không có backup, migration sau khi đã có user thật, export/khoá nhà cung cấp, connection pooling, dữ liệu không lưu được.
-
-### S3 — ⭐ Tám lỗi phổ biến + cách tự kiểm (trọng tâm)
-
-Giống cấu trúc hai trang trước. Mỗi card có cách tự kiểm làm được trong 2 phút.
-
-| # | Lỗi | Mảng | Cách tự kiểm |
+| # | Section | Vai trò | Thông điệp |
 |---|---|---|---|
-| 1 | **Webhook không fire** | Pay | Stripe Dashboard → Webhooks → xem failed deliveries. Phần lớn thấy 100% fail mà không biết. |
-| 2 | **Vẫn ở test mode** | Pay | Thử trả bằng thẻ thật €1. Không về được tiền thật là vẫn test key. |
-| 3 | **Secret key ở frontend** | Pay | DevTools → Sources → tìm `sk_live`. Thấy là bất kỳ ai cũng rút tiền được. |
-| 4 | **Không xử lý payment failed** | Pay | Dùng thẻ test `4000 0000 0000 0002` (decline). App báo rõ hay treo? |
-| 5 | **Không có iDEAL** (thị trường NL) | Pay | iDEAL chiếm phần lớn thanh toán online ở Hà Lan. Chỉ có card = mất khách NL. |
-| 6 | **RLS chưa bật** | DB | Supabase → Table Editor. Bảng nào thiếu badge "RLS enabled" là đọc được công khai. |
-| 7 | **Không có backup** | DB | Khôi phục DB về trạng thái 3 ngày trước. Làm được không? |
-| 8 | **Chưa từng chạy migration** | DB | Đổi một cột khi đã có user thật. Có kế hoạch hay chỉ sửa trực tiếp production? |
+| S1 | **Hero = Pain** (50/50) | 🪝😬 | `Your checkout says "Paid." Your app never heard about it.` + sơ đồ xu rơi ở webhook đứt |
+| S2 | **Solution** (50/50 đảo chiều) | ✅ | Cùng sơ đồ, giờ **mọi đồng xu tới nơi**. `We wire it so every payment lands.` + 3 kết quả |
+| S3 | **The line map** (tự kiểm) | Bổ trợ tương tác | 8 ga trên 2 tuyến (Payments, Database). Bấm ga → bước tự kiểm 2 phút → đánh dấu → dây nối lại hoặc đứt |
+| S4 | **Selling in NL** | Bổ trợ (lợi thế địa phương §4) | iDEAL · Mollie · Bancontact · SEPA + hàng logo đơn sắc |
+| S5 | How it works | Bổ trợ | 3 bước |
+| S6 | Clear lines | Bổ trợ | "We do / We don't" (không phải PSP, không mở tài khoản PSP thay bạn…) |
+| S7 | Related | Hub/spoke | Lộ key → `/ai-app-security` · Chưa launch → `/ai-app-into-production` |
+| S8 | Proof | Bổ trợ | Placeholder |
+| S9 | **Final CTA** | 🎯 | Dây sáng chạy ngang màn hình, `Let every payment land.` |
 
-### S4 — Widget tự chấm (8 câu → `integration_score`)
+### Vì sao hero này đánh đúng nỗi đau
 
-| Số lỗi | Kết quả | Màu |
-|---:|---|---|
-| 0–1 | `Solid. Worth checking webhook retries.` | `--ok` |
-| 2–4 | `Normal for an AI-built app. All fixable.` | `--amb` |
-| 5+ | `You are likely losing payments right now.` | `--red` |
-
-### S5 — Phủ sóng nhà cung cấp
-
-Grid logo đơn sắc + một dòng mỗi nhà cung cấp. **Nhấn Mollie/iDEAL/Bancontact** — đây là thứ đối thủ quốc tế không có.
-
-### S6 — ⭐ `Lovable + Mollie / iDEAL` (section riêng)
-
-Cơ hội ở §4. Nội dung: Lovable không hỗ trợ sẵn PSP Hà Lan; đây là cách nối; đây là thứ cần nếu bán ở Hà Lan.
-
-> ⚠️ Xác minh trạng thái "Lovable Payments" trước khi viết — xem cảnh báo ở §4.
-
-### S7 — Giá & phạm vi
-
-Theo đúng khuyến nghị `google_ads_plan_payments_nl.md` §11: **đừng bán lẻ "tích hợp iDEAL €800"**, bán gói hoàn chỉnh **€1.500–2.500** (iDEAL + PayPal + SEPA + Bancontact + webhook + abonnementen + kiểm thử).
-
-Lý do trong plan: *"Cùng một lead, cùng CAC, biên lợi nhuận gấp đôi. Và khách muốn iDEAL gần như luôn cũng muốn các phương thức khác — bán lẻ từng cái là tự hạ giá mình."*
-
-Thêm bảng **What we don't do**: không mở tài khoản PSP thay bạn, không phải payment provider, không xử lý tranh chấp/chargeback thay bạn, không làm PCI-DSS certification.
-
-### S8 — Liên kết sang hai trang kia (hub/spoke)
-
-Ba thẻ dẫn sang: `/ai-app-security` (nếu secret key đã lộ) · `/ai-app-into-production` (nếu chưa launch) · các trang NL PSP (nếu bán ở Hà Lan).
-
-### S9 — Form
-
-| Trường | Ghi chú |
-|---|---|
-| Name, Email | bắt buộc |
-| **Built with** | Lovable / Bolt / Replit / Cursor / v0 / Custom code / Other |
-| **What do you need?** | multi: Payments / Database / Both |
-| **Payment provider** | Stripe / Mollie / PayPal / MultiSafepay / Adyen / Not chosen yet / Other |
-| **Selling in the Netherlands?** | Yes / No — ⭐ phân luồng sang spoke NL |
-| **Database** | Supabase / Firebase / Postgres / MySQL / Not sure |
-| **Live URL or repo** | optional |
-| What's broken? | textarea |
-| 🔒 hidden | `click_id`, `click_type`, `landing`, `source`, `integration_score` |
+1. **Hai cột ngang nhau, nhìn một lần là hiểu:** chữ nói "tiền không về tới app", hình cho thấy đúng đồng xu đang rơi. Hover vào từng pain bullet bên trái thì điểm tương ứng trên sơ đồ sáng lên.
+2. **Bộ đếm "Not recorded: 3… 7… 12" biến lỗi vô hình thành tiền mất đếm được.** Đây là nỗi sợ thật của founder bán hàng.
+3. **S2 lặp lại đúng sơ đồ đó nhưng đã được sửa.** Phần Solution không cần giải thích dài, người đọc thấy ngay sự khác biệt.
 
 ---
 
-## 8. 🤖 Prompt cho Lovable.dev
+## 8. 🤖 Prompt cho Lovable.dev (v2)
+
+> Paste nguyên khối. Tiếng Anh vì Lovable xử lý tốt hơn.
 
 ```
-Build a single, self-contained landing page as ONE static `index.html` file, with all CSS
-in one inline <style> block and all JS in one inline <script> block. No React, no build
-step, no router, no external dependencies except the three font links below. This file
-will be pasted into a WordPress page template, so it must work standalone.
+Build a single, self-contained landing page as ONE static `index.html` file: all CSS in
+one inline <style> block, all JS in one inline <script> block. No React, no build step,
+no router, no external dependencies except the three font links below. It will be
+pasted into a WordPress page template, so it must work standalone.
 
-Subject: a service page for fixing payment gateway and database integrations in apps
-built with AI coding tools (Lovable, Bolt, Replit, Cursor, v0). Audience: a founder who
-shipped something that works, but whose checkout or database is quietly broken. Tone:
-practical, specific, calm. No hype, no fear-mongering.
+WHAT THIS PAGE IS
+LaunchStudio fixes payments and databases in apps built with AI coding tools (Lovable,
+Bolt, Replit, Cursor, v0): Stripe, Mollie, iDEAL, PayPal, webhooks, subscriptions,
+Supabase/Postgres, backups and migrations. Audience: founders whose app is live or
+nearly live, where money or data quietly goes missing. The PAIN is the very first thing
+on the page. Story arc: PAIN (hero), SOLUTION, short supporting sections, final CTA.
+Visual concept for the whole page: LIVE WIRE / MONEY FLOW — payments and data drawn as
+coins travelling along transit-map wires; broken wires drop coins, fixed wires deliver.
+There is NO pricing and NO form on this page; every CTA links out.
+Tone: clear, friendly, concrete, a little playful. Never alarmist, never mocking.
 
-=== DESIGN SYSTEM — USE THESE EXACT VALUES, DO NOT SUBSTITUTE ===
-
+=== BRAND — KEEP EXACTLY ===
 :root{
   --navy:#0B1D35; --bg:#F8FAFE; --white:#FFF;
   --ok:#0D9668; --red:#DC2626; --amb:#D97706;
@@ -306,221 +256,245 @@ practical, specific, calm. No hype, no fear-mongering.
   --grd:linear-gradient(135deg,#2F80ED 0%,#14B8A6 100%);
   --text:#0B1D35; --ts:#384860; --tm:#64748B; --tf:#94A3B8;
   --bd:#E2E8F0; --bs:#EEF2F7;
+  --tint-b:#EAF2FE; --tint-t:#E6F7F5; --tint-r:#FDECEC;
   --fh:'Satoshi',system-ui,sans-serif;
   --fb:'Inter',system-ui,sans-serif;
   --fa:'Instrument Serif',Georgia,serif;
-  --r:12px; --rs:10px; --rp:999px; --rl:20px; --rx:24px;
-  --ss:0 0 0 1px rgba(0,0,0,.03),0 2px 4px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04);
-  --sm:0 0 0 1px rgba(0,0,0,.02),0 4px 8px rgba(0,0,0,.03),0 16px 32px rgba(0,0,0,.06);
-  --sl:0 0 0 1px rgba(0,0,0,.02),0 8px 16px rgba(0,0,0,.04),0 24px 48px rgba(0,0,0,.08);
-  --t:.28s; --ease:cubic-bezier(.22,1,.36,1);
+  --rp:999px; --rm:16px; --rb:28px;
+  --t:.32s; --ease:cubic-bezier(.22,1,.36,1);
 }
-
-FONTS — load exactly these three. Satoshi comes from Fontshare, NOT Google Fonts.
-Never substitute a Google font for Satoshi:
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,600,500,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+FONTS — exactly these three. Satoshi is from Fontshare, NOT Google Fonts. Never
+substitute:
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
-TYPOGRAPHY — exact:
-- body: var(--fb), 16px, line-height 1.65, color var(--text), background var(--bg),
-  -webkit-font-smoothing:antialiased
-- h1: var(--fh) 700, clamp(34px,4.2vw,52px), line-height 1.08, letter-spacing -1.5px
-- h2: var(--fh) 700, clamp(28px,3.5vw,44px), line-height 1.12, letter-spacing -0.8px
-- h3: var(--fh) 600, 20px, letter-spacing -0.3px
-- small: 14px var(--tm) line-height 1.7 · caption: 12.5px var(--tf)
-- monospace: ui-monospace, 'SF Mono', Menlo, monospace, 13px
+=== STYLE — "LIVE WIRE" (a new style: do NOT use a dark hero, a background grid,
+glassmorphism, terminal/monospace aesthetics, or a generic SaaS template) ===
+- Light and friendly. Sections alternate soft pastel washes made from brand colours:
+  var(--bg), var(--tint-b), var(--tint-t), white. Section edges are gentle 48px-radius
+  curves (the next section's background overlaps with rounded top corners).
+- BENTO CARDS: white, radius var(--rb), no border, shadow
+  0 1px 2px rgba(11,29,53,.04), 0 12px 32px rgba(11,29,53,.06). Hover: lift 4px.
+- WIRES: the signature element. 6px thick SVG paths with rounded caps and joins,
+  stroked with the brand gradient (define an SVG linearGradient #2F80ED → #14B8A6).
+  STATIONS: 22px white circles with a 5px gradient ring. Broken wires: a gap with two
+  small frayed ends and a red spark. Coins: 18px circles filled var(--grd) with a white
+  "€" in Satoshi 700.
+- Typography: h1 var(--fh) 900, clamp(38px,5vw,66px), line-height 1.02, letter-spacing
+  -2px · h2 var(--fh) 700, clamp(30px,4vw,50px), line-height 1.06, letter-spacing
+  -1.2px · h3 var(--fh) 700, 20px · body var(--fb) 16px/1.7, var(--ts).
+- Section labels: small pill chips (var(--white), radius var(--rp), 13px var(--fh) 600,
+  a 8px gradient dot before the text), e.g. "● The leak".
+- Amounts and counters in var(--fh) 900 with tabular numbers (no monospace font).
+- var(--fa) italic for at most 3 emphasis words on the page.
+- Red only for broken wires, dropped coins and "broken" states. Green only for
+  delivered/working. Gradient for wires, coins, primary buttons, 1–2 key words.
+- All visuals in inline SVG/CSS. NO stock photos, NO 3D renders, NO emoji. Icons: inline
+  SVG, 1.75px stroke, rounded caps, 22x22.
+- Provider logos (Stripe, Mollie, iDEAL, PayPal, Bancontact, Supabase, Postgres): simple
+  monochrome inline SVG wordmarks or text wordmarks filled var(--tm), 22px tall, inside
+  white pill tiles. Never the original brand colours.
+  <!-- REPLACE with self-hosted monochrome SVG logos -->
+- Primary button: var(--grd), white, radius var(--rp), padding 16px 30px, var(--fh) 700,
+  arrow slides 3px on hover, hover lift 2px + shadow 0 16px 36px rgba(20,184,166,.28).
+  Secondary: white, color var(--navy), radius var(--rp), shadow like bento cards.
+- Max width 1200px, 24px side padding (16px under 768px). Sections 112px 0 desktop,
+  72px 0 mobile.
 
-LAYOUT:
-- max width 1140px, centered, 20px side padding (16px under 768px)
-- section padding 100px 0 desktop, 72px 0 under 768px
-- hero padding 72px 0 56px desktop, 56px 0 40px mobile
-- cards: var(--white), padding 24px, 1px solid var(--bd), border-radius var(--rl),
-  box-shadow var(--ss)
-- card hover: border-color rgba(37,99,235,.15), box-shadow var(--sm),
-  transition all var(--t) var(--ease)
-- primary button: background var(--grd), white, border-radius var(--rp),
-  padding 14px 28px, var(--fh) 600
-- primary hover: translateY(-2px), box-shadow 0 14px 34px rgba(47,128,237,.22),
-  0 6px 14px rgba(11,29,53,.1)
-- secondary button: transparent, 1px solid var(--bd), color var(--navy), radius var(--rp)
+=== SECTIONS, IN ORDER ===
 
-PROVIDER LOGOS — IMPORTANT:
-Render provider names (Stripe, Mollie, iDEAL, PayPal, MultiSafepay, Adyen, Supabase,
-Postgres, Firebase) as simple MONOCHROME inline SVG wordmarks or plain text in var(--fh)
-weight 600, filled with currentColor set to var(--tm), max-height 24px, each inside a
-tile with background var(--bs) and border-radius var(--rs). Do NOT use full-colour brand
-logos and do NOT fetch logos from external URLs — a multi-coloured logo row would break
-the cool palette of this site.
+S1 HERO = PAIN. Background var(--tint-b). TWO EQUAL COLUMNS SIDE BY SIDE (50/50),
+vertically centred, 56px gap. Copy left, animated illustration right. On mobile: copy
+first, illustration directly below it, full width.
+LEFT:
+- Pill chip: "● Stripe · Mollie · iDEAL · Supabase"
+- H1: 'Your checkout says <em>"Paid."</em> Your app never heard about it.'
+  (em = var(--fa) italic, gradient text)
+- Sub, 18px, max 500px: "AI coding tools get payments and databases almost right.
+  Almost means the webhook never fires, the order never saves, and there's no backup
+  when it matters."
+- Three pain rows, each a small white pill-card with a red-tinted icon tile
+  (var(--tint-r)) and one line. Each row is linked to a point on the diagram
+  (data-node). Hover or focus on a row highlights that node with a pulse:
+    "Money arrives. The order doesn't."          → node: webhook
+    "Test mode is still on in production."       → node: checkout
+    "No backup. One bad migration from zero."    → node: database
+- Buttons: primary "Find my leaks" (data-cta), secondary "See how it should work"
+  (href #fixed).
+- Required disclaimer line, 13px var(--tm), with a small info icon:
+  "We're a development studio, not a payment provider. We don't open accounts or
+  process payments."
 
-VISUAL CHARACTER — critical to match the existing site:
-- Light, airy, clinical. Page background #F8FAFE, never pure white, NEVER dark mode.
-- Shadows always soft and multi-layered. Never one heavy shadow.
-- Headings use tight NEGATIVE letter-spacing — the brand signature.
-- Blue-teal gradient is an ACCENT only: primary buttons, big stat numbers, small badges.
-  NEVER a full-width section background, never behind body text.
-- Red only in small status pills and single result lines. No red section backgrounds.
-- Instrument Serif italic very sparingly — one or two emphasis phrases maximum.
-- No stock photos, no credit-card or coin illustrations, no emoji in the UI. Simple
-  inline SVG icons only, 1.5px stroke, currentColor, 20x20.
+RIGHT — THE MONEY FLOW DIAGRAM (animated SVG inside a large white bento card,
+aspect ratio about 5:4):
+- Stations along a wire that bends like a transit map, each with an icon and a label
+  (13px var(--fh) 600): "Customer" → "Checkout" → "Stripe" → "Webhook" → "Your app"
+  → "Database". A short branch from "Your app" goes to "Email receipt".
+- COINS (€) are emitted from "Customer" every 900ms and travel along the wire
+  (use SVG path + getPointAtLength, or CSS offset-path).
+- The wire between "Webhook" and "Your app" is BROKEN: a visible gap, frayed ends, a
+  small red spark that flickers. Every coin that reaches the gap drops (falls with
+  slight rotation, fades to red) into a rounded tray below labelled "Not recorded".
+- A live counter on the tray, var(--fh) 900 28px var(--red): "Not recorded: 1, 2, 3…"
+  counting each dropped coin, and a small label "€ paid, order missing".
+- The "Database" station shows a small amber tag "Last backup: never".
+- The "Checkout" station shows a small amber tag "TEST MODE".
+- A tiny caption under the card, 12.5px var(--tm): "Illustration of a webhook that
+  never reaches your app."
+- Under prefers-reduced-motion: no moving coins; show three coins frozen mid-fall
+  under the gap and the counter at a static "12".
 
-=== PAGE CONTENT — 9 SECTIONS IN THIS ORDER ===
+S2 SOLUTION — id="fixed". Background white. TWO EQUAL COLUMNS, MIRRORED (illustration
+LEFT, copy RIGHT) so it visually answers the hero.
+LEFT — the SAME diagram, now repaired: the gap is joined by a glowing gradient
+segment, coins travel all the way and land in "Database" with a soft green tick burst;
+"Checkout" tag reads "LIVE" (green), "Database" tag reads "Backed up daily" (green).
+A counter, var(--ok): "Recorded: every payment". The repair animates once when the
+section scrolls into view: the gap closes with a quick "zip" along the wire.
+RIGHT:
+- Pill chip: "● The fix"
+- H2: "We wire it so every payment lands."
+- Sub: "We keep your app and rebuild only the plumbing — tested end to end, with real
+  money, before we hand it back."
+- Three outcome rows with green-tinted icon tiles (var(--tint-t)):
+    "Payments that reach your app" — "Verified webhooks, retries, failed-payment
+     handling, live keys done right."
+    "Methods your customers expect" — "Cards, iDEAL, Bancontact, SEPA, PayPal and
+     subscriptions."
+    "Data you can't lose" — "Row Level Security, daily backups, safe migrations."
+- Primary button "Fix my payments" (data-cta).
 
-S1 HERO (left-aligned, max 780px, not centered)
-- Eyebrow, uppercase 12px letter-spacing 1.2px color var(--gs):
-  "STRIPE · MOLLIE · iDEAL · PAYPAL · SUPABASE · POSTGRES"
-- H1: "Your app works. Taking money and storing data is where it breaks."
-- Sub (18px var(--ts), max 640px): "Payments and databases are the two integrations AI
-  coding tools get almost right. Almost is the problem: the checkout works in test mode,
-  the webhook never fires, and the database has no backup."
-- Primary button "Tell us what's broken" (anchor #contact),
-  secondary "See the 8 things that break" (anchor #breaks)
-- Thin row below, 13px var(--tm), middot separated: "Fixed scope" · "From €800" ·
-  "We are not a payment provider"
-  (That last item matters — keep it in the hero, it filters out consumers looking for
-  payment support.)
+S3 THE LINE MAP — self-check. Background var(--tint-t). id="map"
+- Pill chip: "● Check your lines"
+- H2: "Eight places money and data go missing."
+- Sub: "Tap a station, run the two-minute check, tell us what you found. Your answers
+  stay in your browser."
+- A wide bento card containing a transit map with TWO horizontal lines (stacked
+  vertically on mobile):
+  PAYMENTS LINE (blue end of the gradient), 5 stations:
+    1 "Webhooks" · 2 "Live mode" · 3 "Secret keys" · 4 "Failed payments" · 5 "iDEAL"
+  DATABASE LINE (teal end), 3 stations:
+    6 "Row Level Security" · 7 "Backups" · 8 "Migrations"
+  Wire segments between stations start grey and dashed (unknown).
+- Clicking a station opens a detail panel below the map (accordion-style, one open at
+  a time) with: title, "Try this:" text, and three pill buttons "Works" · "Broken" ·
+  "Not sure" (aria-pressed).
+  1 "Webhooks" — "Stripe Dashboard → Developers → Webhooks → check failed deliveries.
+     Many AI-built apps show 100% failed and nobody noticed."
+  2 "Live mode" — "Pay €1 with a real card. If no real money arrives, you're still on
+     test keys."
+  3 "Secret keys" — "DevTools → Sources → search 'sk_live'. If it's there, anyone can
+     issue refunds or read your customers."
+  4 "Failed payments" — "Use Stripe's decline test card 4000 0000 0000 0002. Clear
+     message, or a frozen screen?"
+  5 "iDEAL" — "Selling in the Netherlands? Check your checkout offers iDEAL. Card-only
+     checkouts lose Dutch buyers."
+  6 "Row Level Security" — "Supabase → Table Editor. Any table without 'RLS enabled' is
+     publicly readable."
+  7 "Backups" — "Try restoring your database to how it was three days ago. Can you?"
+  8 "Migrations" — "Change one column with real users on board. Is there a plan, or do
+     you edit production directly?"
+- Visual feedback: "Works" turns the station green and the wire segments touching it
+  solid gradient; "Broken" turns it red and shows a frayed gap with a spark on the
+  segment; "Not sure" turns it amber with a dotted segment.
+- A readout bar under the map (white pill): "Solid connections: X / 8" in var(--fh)
+  900, plus a short message (aria-live):
+    0–1 broken or unsure → "Solid. Worth a look at webhook retries."
+    2–4 → "Normal for an AI-built app. All fixable."
+    5+  → "Money is very likely slipping through right now."
+  and a primary button (data-cta) with a live label:
+    no answers → "Get a free check"
+    otherwise → "Fix my N broken lines" (N = Broken + Not sure)
+  Append integration_score and broken=1,4,7 (station numbers) to its link.
+- Note under the readout, 14px: "Found an exposed secret key? That's a security issue
+  first →" linking to /ai-app-security.
 
-S2 TWO AREAS — two large cards side by side (stack under 768px)
-Card A, h3 "Payments": a list with small SVG icons —
-  Test mode to live · Webhooks that never fire · Subscriptions and recurring billing ·
-  Refunds and disputes · iDEAL, SEPA and Bancontact for the Dutch market ·
-  Secret keys that ended up in the frontend
-Card B, h3 "Databases": —
-  Row level security that was never switched on · No backups · Migrations after you
-  already have real users · Export and vendor lock-in · Connection pooling under load ·
-  Data that silently does not save
+S4 SELLING IN THE NETHERLANDS — background white
+- TWO EQUAL COLUMNS: left copy, right a bento mock of a checkout sheet.
+- Pill chip: "● Made for NL"
+- H2: "Selling in the Netherlands? Your checkout needs iDEAL."
+- Text, max 480px: "AI builders tend to default to a card checkout. Dutch customers
+  pay with iDEAL. We add iDEAL, Bancontact and SEPA through Mollie or Stripe, and make
+  them work with your subscriptions and webhooks."
+  <!-- VERIFY: check current native payment support in Lovable before publishing -->
+- Small link "Lees in het Nederlands ↗" (href /nl/ideal-integratie
+  <!-- REPLACE when the NL page exists -->).
+- RIGHT: a phone-shaped checkout card with a payment-method list: "iDEAL" (selected,
+  gradient ring), "Bancontact", "Card", "PayPal". The selection rotates every 2.5s with
+  a smooth slide, and the "Pay €49" button gives a small tick animation each time.
+  Static under reduced motion.
+- Below both columns, a single row of monochrome provider pills: Stripe · Mollie ·
+  iDEAL · Bancontact · PayPal · Supabase · Postgres, gently auto-scrolling as a
+  marquee (paused on hover, static under reduced motion).
 
-S3 THE EIGHT THINGS THAT BREAK — id="breaks". The most important section.
-H2: "The eight things we find broken most often"
-Sub: "Each one has a check you can run yourself in two minutes, without us."
-Eight cards in a 2-column grid (1 column mobile). Each card: a small pill top-right
-reading either "PAYMENTS" or "DATABASE" (background var(--bs), color var(--tm), 11px
-uppercase letter-spacing .8px, border-radius var(--rp)), a number in var(--fh) 800 26px
-with gradient text fill, an h3, one short paragraph on why AI tools get this wrong, and
-a "RUN THIS CHECK" block (background var(--bs), border-radius var(--rs), padding 14px,
-monospace 13px, label 11px uppercase letter-spacing 1px color var(--tf)).
+S5 HOW IT WORKS — background var(--tint-b)
+- H2: "From leaking to landing in three stops."
+- A horizontal wire with three big stations (vertical on mobile); a coin travels from
+  stop 1 to stop 3 when the section scrolls into view.
+  01 "Free check" — "Send the repo or live URL. We trace every payment and data path."
+  02 "Fixed-scope plan" — "What gets fixed, how long it takes, agreed before we start."
+  03 "Tested with real money" — "We verify end to end in live mode, then hand it back.
+     Your code, your accounts."
 
-1. PAYMENTS — "The webhook never fires"
-   Why: "The checkout redirect works, so it looks finished. The webhook is what actually
-   tells your app the money arrived, and nothing complains when it is missing."
-   Check: "Stripe Dashboard → Developers → Webhooks → look at failed deliveries. Many
-   founders find 100% failure here and had no idea."
+S6 CLEAR LINES — background white, two bento cards side by side
+  "WE DO" (green chip): Stripe & Mollie integration · Webhooks & retries ·
+  Subscriptions · iDEAL, Bancontact, SEPA, PayPal · Supabase RLS, backups, migrations
+  "WE DON'T" (grey chip): Open payment-provider accounts for you · Process or hold
+  payments · Handle disputes or chargebacks for you · PCI-DSS certification
 
-2. PAYMENTS — "Still running in test mode"
-   Why: "Test keys and live keys look nearly identical, and test mode is what you built
-   against for weeks."
-   Check: "Pay €1 with a real card. If the money never lands in your account, you are
-   still on test keys."
+S7 RELATED — background var(--tint-t), two compact bento link cards with arrows:
+  "Keys already exposed?" → "Security audit" (/ai-app-security)
+  "Not launched yet?" → "Production readiness" (/ai-app-into-production)
 
-3. PAYMENTS — "Secret key in the frontend"
-   Why: "The call that needed the secret key was written in frontend code, because that
-   is where the button was."
-   Check: "DevTools → Sources → search for 'sk_live'. If it appears, anyone can move
-   money out of your account."
+S8 PROOF — background white
+- H2: "Founders whose payments now land."
+- Three stats in gradient text, var(--fh) 900 52px. "—" placeholders with
+  <!-- REPLACE with real figures: payments processed after the fix, apps connected,
+  avg. days to fix -->
+- Two testimonial bento cards: quote var(--fa) italic 21px, name, role, a chip
+  "Lovable + Mollie". Placeholders with <!-- REPLACE with real testimonial -->.
+- Do NOT invent certification badges, award seals or client logos.
 
-4. PAYMENTS — "Failed payments are not handled"
-   Why: "Prompts describe a successful purchase. Declines, expired cards and 3D Secure
-   challenges are a different code path nobody asked for."
-   Check: "Pay with the Stripe test card 4000 0000 0000 0002, which always declines.
-   Does your app explain what happened, or just stop?"
+S9 FINAL CTA — background var(--tint-b) with a large rounded white bento in the
+centre.
+- Behind the bento, one long gradient wire runs edge to edge across the screen with
+  coins flowing continuously and all arriving at a station icon on the right with a
+  soft green pulse.
+- Inside the bento, centred:
+  H2: 'Let every payment <span class=grad>land.</span>'
+  Sub: "Free check. We trace your payment and data paths and tell you exactly what's
+  leaking."
+  Primary button, larger: "Find my leaks" (data-cta)
+  Disclaimer, 13px var(--tm): "Development studio, not a payment provider."
 
-5. PAYMENTS — "No iDEAL, and you are selling in the Netherlands"
-   Why: "AI tools default to card payments because that is what the global examples use.
-   iDEAL is the dominant online payment method in the Netherlands."
-   Check: "Open your own checkout as a Dutch customer. Is iDEAL there? If not, you are
-   asking Dutch buyers to use their least preferred option."
+FOOTER: one slim row, 13px var(--tm): "© LaunchStudio · launchstudio.eu"
 
-6. DATABASE — "Row level security was never enabled"
-   Why: "Supabase creates every new table with row level security switched off. The app
-   works fine without it, so nothing ever tells you."
-   Check: "Supabase → Table Editor. Any table without an 'RLS enabled' badge is readable
-   by anyone holding your public key."
-
-7. DATABASE — "There are no backups"
-   Why: "Backups are a setting, not a feature, so they are never part of the prompt."
-   Check: "Try to restore your database to how it looked three days ago. Can you?"
-
-8. DATABASE — "No migration has ever been run"
-   Why: "While building, changing a column is harmless. Once real users have real rows,
-   the same change can lose data."
-   Check: "Rename a column that is in use. Is there a migration process, or would you
-   edit production directly?"
-
-S4 SELF-CHECK WIDGET — vanilla JS
-H2: "Check your own integrations"
-Sub: "Eight questions. Two minutes. No email required."
-Eight rows matching the eight items above, each a short question with Yes / No /
-Not sure pill buttons (selected state uses var(--grd)). Count issues found; count every
-"Not sure" as an issue and state that in a 12.5px note.
-Large result "X of 8" with gradient text fill, in an aria-live region:
-- 0-1 → var(--ok): "Solid. Still worth checking webhook retries."
-- 2-4 → var(--amb): "Normal for an AI-built app. All of these are fixable."
-- 5+  → var(--red): "You are very likely losing payments right now."
-Then a primary button "Get these fixed" that scrolls to #contact and writes the count
-into the hidden input named "integration_score".
-
-S5 PROVIDERS WE CONNECT
-H2: "What we connect"
-Two labelled groups of monochrome provider tiles as described above:
-"Payments" — Stripe, Mollie, iDEAL, PayPal, MultiSafepay, Adyen, SEPA, Bancontact
-"Data" — Supabase, Postgres, Firebase, MySQL, Neon
-Under the payments group, one line in 14px var(--ts): "Mollie, iDEAL and Bancontact
-matter if you sell in the Netherlands or Belgium. Most international agencies do not
-set these up."
-
-S6 LOVABLE + DUTCH PAYMENT PROVIDERS — give this its own section with a subtle
-background change (background var(--white) with 1px solid var(--bd) top and bottom)
-H2: "Lovable, Mollie and iDEAL"
-Three short cards: "Why it is not built in" / "How we connect it" / "What you get".
-Keep copy to two sentences per card and leave an HTML comment above the section:
-<!-- VERIFY current Lovable Payments iDEAL/Mollie support before publishing this -->
-Primary button: "Add iDEAL to my Lovable app"
-
-S7 PRICING AND SCOPE
-H2: "What it costs"
-Present ONE bundled package, not a per-provider price list: a single highlighted card
-(background var(--white), border-color var(--gs), box-shadow 0 0 0 1px var(--gs) and
-var(--sm)) titled "Complete payment setup", price "€1,500 – €2,500", and a list:
-iDEAL + PayPal + SEPA + Bancontact · webhook handling and retries · subscriptions ·
-refund and dispute flow · test coverage on the payment path · live-mode verification.
-Next to it a smaller plain card "Database work" with "From €800" and a short list.
-Then a two-column block "What we do" / "What we don't do". The second column must
-include: "Open a payment provider account for you" · "Act as your payment provider" ·
-"Handle your chargebacks and disputes" · "PCI-DSS certification".
-
-S8 RELATED — three small link cards, each with a one-line reason:
-"App not launched yet?" → /ai-app-into-production
-"Think a key has leaked?" → /ai-app-security
-"Selling in the Netherlands?" → /nl/ideal-integratie
-
-S9 CONTACT FORM — id="contact"
-H2: "Tell us what's broken."
-Form, stacked, max-width 620px:
-- Name (text, required)
-- Email (email, required)
-- "Built with" (select, required): Lovable, Bolt, Replit, Cursor, v0, Custom code, Other
-- "What do you need?" (checkbox group): Payments, Database, Both
-- "Payment provider" (select): Stripe, Mollie, PayPal, MultiSafepay, Adyen,
-  Not chosen yet, Other
-- "Selling in the Netherlands?" (select, required): Yes, No
-- "Database" (select): Supabase, Firebase, Postgres, MySQL, Not sure
-- "Live URL or repo" (url, optional)
-- "What's broken?" (textarea, 4 rows)
-- Five hidden inputs named exactly: click_id, click_type, landing, source,
-  integration_score
-- Submit, primary, full width: "Send it over"
-Inputs: var(--white), 1px solid var(--bd), border-radius var(--rs), padding 13px 16px,
-var(--fb) 15px. Focus: border-color var(--gs), box-shadow 0 0 0 3px rgba(47,128,237,.1),
-no default outline.
-Add a 12.5px var(--tf) line under submit: "We never ask for your live API keys by email."
+=== JS (vanilla, small) ===
+- const CTA_URL = "https://launchstudio.eu/en/#contact"; // REPLACE with the real
+  contact or booking URL. Every [data-cta] gets href = CTA_URL + query params.
+- Attribution: copy gclid, gbraid, wbraid, utm_source, utm_medium, utm_campaign,
+  utm_term, utm_content from location.search onto every data-cta link, plus
+  landing=ai-app-integrations. S3 adds integration_score and broken.
+- Coin animation with requestAnimationFrame along SVG paths; pause all animations when
+  their section is off-screen (IntersectionObserver) and when the tab is hidden.
+- Hero row ↔ node highlight, S2 repair "zip", S3 stations + readout + live button
+  label, S4 checkout rotation and marquee, S5 travelling coin.
 
 === TECHNICAL REQUIREMENTS ===
-- Semantic HTML, exactly one <h1>, <section> elements, <label> bound to every input.
-- Responsive, single 768px breakpoint, no horizontal scroll at 360px.
-- Accessible: visible focus rings, aria-live on the widget result, 4.5:1 minimum
-  contrast, and status never communicated by colour alone — always include a text label.
-- Respect prefers-reduced-motion: disable transforms and transitions.
-- Light mode only. No dark mode.
+- Semantic HTML, exactly one <h1>, <section aria-labelledby>, <button> for actions,
+  <a> for links. Diagrams are decorative (aria-hidden) with a visually-hidden text
+  description of what they show. S3 stations are real buttons with aria-expanded and
+  readable labels.
+- Two-column sections: CSS grid 1fr 1fr with equal heights and vertical centring on
+  desktop; single column under 768px. No horizontal scroll at 360px; the hero diagram
+  scales to full width on mobile and stays legible.
+- Contrast at least 4.5:1 on all pastel backgrounds. Visible focus rings (2px solid
+  var(--ge), 3px offset).
+- prefers-reduced-motion: no moving coins, marquee, zips or rotations; show final
+  states.
+- Status never by colour alone: always a word (Works, Broken, Not sure, TEST MODE,
+  LIVE).
 - One HTML file, inline CSS and JS, only the three font links external.
 ```
 
@@ -530,16 +504,20 @@ Add a 12.5px var(--tf) line under submit: "We never ask for your live API keys b
 
 | # | Việc | Ghi chú |
 |---|---|---|
-| 1 | 🔴 **Nạp 66 kw vào Keyword Planner** | Xem §5. Chưa có volume thật — đừng cấp ngân sách trước |
-| 2 | 🔴 **Xác minh trạng thái Lovable Payments với iDEAL/Mollie** | Quyết định S6 viết thế nào. Xem §4 |
-| 3 | Thay logo bằng SVG đơn sắc tự host | Đừng fetch logo từ CDN ngoài — vừa chậm vừa rủi ro thương hiệu |
-| 4 | Thay giá placeholder bằng giá thật | €1.500–2.500 là đề xuất từ plan payments §11, cần bạn chốt |
-| 5 | **Quyết định URL** + hreflang | Cùng vấn đề namespace: đề xuất `/en/ai-app-integrations` |
-| 6 | **Giữ 6 trang NL trong plan payments** | Hub này **không** thay thế chúng. Xem §1 |
-| 7 | Negative keyword: thêm khối `re-integratie` và `systeemintegratie` | Xem §3 bẫy 1 và 2 |
-| 8 | Internal link 3 chiều giữa 3 landing page | S8 là một nửa; hai trang kia cần link ngược lại |
-| 9 | Schema `Service` + `FAQPage` + `HowTo` | 8 bước tự kiểm là `HowTo` tự nhiên |
-| 10 | Middleware cookie `ls_click` | `conversion_attribution_setup.md` §2② |
+| 1 | 🔴 **Nạp 66 kw vào Keyword Planner** | Xem §5. Chưa có volume thật, đừng cấp ngân sách trước |
+| 2 | 🔴 **Xác minh Lovable Payments có hỗ trợ iDEAL/Mollie chưa** | Ảnh hưởng trực tiếp câu chữ ở S4 (prompt đã để comment `VERIFY`). Xem §4 |
+| 3 | 🔴 **Thay `CTA_URL`** | Kiểm tra `gclid`, `utm_*`, `integration_score`, `broken` có đi theo sang trang đích |
+| 4 | Giữ dòng "not a payment provider" ở hero và CTA cuối | Bắt buộc, để tự lọc người tiêu dùng (`google_ads_plan_payments_nl.md` §10) |
+| 5 | Thay logo bằng SVG đơn sắc tự host | Không fetch logo từ CDN ngoài |
+| 6 | Kiểm tra animation đồng xu trên mobile 360px | Sơ đồ phải đọc được nhãn ga, không giật, tự dừng khi ra khỏi màn hình |
+| 7 | Thay số liệu và testimonial thật ở S8 | Không có thì bỏ khối stat |
+| 8 | **Quyết định URL** + hreflang | Đề xuất `/en/ai-app-integrations` |
+| 9 | **Giữ 6 trang NL trong plan payments** | Hub này không thay thế chúng (§1). S4 link xuống `/nl/ideal-integratie` |
+| 10 | Negative keyword: khối `re-integratie` và `systeemintegratie` | Xem §3 bẫy 1 và 2 |
+| 11 | Internal link 3 chiều giữa các landing page | S7 là một nửa; trang security và production cần link ngược lại |
+| 12 | Middleware cookie `ls_click` | `conversion_attribution_setup.md` §2②, giờ ghi nhận ở trang liên hệ |
+
+> 💡 **Lưu ý về giá:** bản này bỏ giá theo yêu cầu. Khuyến nghị bán gói €1.500–2.500 thay vì lẻ €800 (`google_ads_plan_payments_nl.md` §11) vẫn đúng, nhưng giờ áp dụng ở bước báo giá sau buổi kiểm tra miễn phí, không nằm trên trang.
 
 ---
 
