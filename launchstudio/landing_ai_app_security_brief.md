@@ -195,7 +195,7 @@ Nỗi đau thật của nhóm khách này **không phải "app bị lỗi"** mà
 | S6 | AVG strip | Bổ trợ | 1 dòng + link sang bản NL |
 | S7 | Proof | Bổ trợ | Placeholder |
 | S8 | FAQ | Bổ trợ | 3 câu |
-| S9 | **Final CTA** | 🎯 Chốt | Thấu kính trở lại, lần này lớp dưới **đã khoá**: `Make your app opaque again.` |
+| S9 | **Final CTA** | 🎯 Chốt | Thấu kính trở lại, lần này lớp dưới **đã khoá**: `Make your data private again.` |
 
 ### Vì sao cách này đánh đúng nỗi đau
 
@@ -443,7 +443,7 @@ S9 FINAL CTA — the X-ray returns, closed
     GET /rest/v1/customers?select=*      401 Unauthorized
     RLS: enabled  ·  policies: 4  ·  secrets: server-side
   with green "SECURED" tags instead of red.
-- H2 centered: 'Make your app <span class=grad>opaque</span> again.'
+- H2 centered: 'Make your data <span class=grad>private</span> again.'
 - Sub: "Free audit. Written report in 48 hours. You decide what happens next."
 - Primary button, larger: "Check my app for free" (data-cta)
 
