@@ -2,6 +2,155 @@
 
 ## 2026
 
+### Tháng 10
+#### Ngày 12
+
+- **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-8-decision/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/) từ bài 07 đến 20**:
+  - **Quy chuẩn mỹ thuật & phong cách**: Tuân thủ tuyệt đối quy tắc không dùng cliché văn phòng / chỉ trỏ màn hình / bảng trắng. Từng hình ảnh được đặt trong bối cảnh thực tế gắn liền với nhân vật & lĩnh vực trong `## Real example`:
+    - **07 (Lotte Jansen)**: Bàn gỗ sồi mộc trong nhà ống kênh cổ Den Bosch, rà soát bảng tài chính in giấy với bút mực đỏ, bánh stroopwafel & cà phê.
+    - **08 (Niels de Boer)**: Trạm chuyển phát logistics xe đạp điện & xe tải tại Leiden lúc sáng sớm, kẹp hồ sơ lộ trình và tablet bền bỉ.
+    - **09 (Wouter Smits)**: Tạp dề vải canvas tại bàn đá cẩm thạch bistro Breda, tablet hiển thị sơ đồ đặt bàn & máy quẹt thẻ trên khay da.
+    - **10 (Anouk Peters)**: Vườn ươm nhà kính TU Delft, kẹp hồ sơ acrylic chứa sơ đồ kiến trúc database đa người thuê (multi-tenant RLS).
+    - **11 (Daniel Verbeek)**: Bờ kè sông lát đá ẩm ướt Deventer tựa xe tải giao hàng, tablet điều phối đội xe, bình giữ nhiệt.
+    - **12 (Lieke Terpstra)**: Ghế bành da cũ tại quán cà phê sách Nijmegen, bút dạ quang tô hợp đồng chuyển nhượng IP, tách trà & đèn đọc sách bằng đồng.
+    - **13 (Robbert Kloosterman)**: Bàn đứng inox tại trung tâm vận hành bán lẻ Enschede, tablet lịch ca trực, sổ checklist an ninh doanh nghiệp, máy quét mã vạch.
+    - **14 (Freek Aalbers)**: Bàn thớt bếp dinh dưỡng ẩm thực tại Arnhem, tablet đặt trên giá gỗ hiển thị lịch ăn uống, sung tươi & hương thảo.
+    - **15 (Marieke Hendriks)**: Bàn thu âm podcast tại Groningen với cửa sổ cách âm nhìn ra tháp Martinitoren, tai nghe trên cổ, tablet hiển thị sóng âm.
+    - **16 (Bram Oosterhuis)**: Phòng tư vấn thuế/kế toán tại Apeldoorn bên bàn óc chó, hồ sơ thuế buộc dây đỏ, tablet cổng nộp chứng từ bảo mật.
+    - **17 (Josefien Brandsma)**: Xưởng may thời trang Zwolle bên bàn cắt gỗ thông, sào áo quần, điện thoại gắn dock hiển thị app phối đồ.
+    - **18 (Willem Postma)**: Sân gạch cổ Amersfoort bên bàn gỗ tếch ngoài trời, tách espresso, bảng so sánh báo giá nhà thầu với ghi chú bút mực, tablet log kiểm toán bảo mật multi-tenant RLS.
+    - **19 (Annika Visser)**: Studio ẩm thực / lab món ăn tại Leeuwarden bên quầy thiếc, bánh mì sourdough, nồi đồng treo tường, tài liệu bóc tách gói dịch vụ Launch & Grow (€2.900).
+    - **20 (Tessa Dijkhuizen)**: Studio yoga phong cách Bắc Âu tại Breda trên ghế dài gỗ tần bì, chiếu thảm yoga cuộn, tablet lịch đặt chỗ giáo viên yoga & bảng checklist go/no-go đánh dấu bút mực.
+  - **Quy chuẩn kỹ thuật**: Crop trung tâm chuẩn tỉ lệ 16:9 và resize về kích thước chuẩn LaunchStudio **`1024x576` PNG** bằng công cụ [`launchstudio/sys/crop_to_launchstudio.py`](file:///Users/duyle/sickn33/launchstudio/sys/crop_to_launchstudio.py).
+- **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) từ bài 01 đến 14**:
+  - **Quy chuẩn mỹ thuật & phong cách**: Tuân thủ nghiêm ngặt chỉ dẫn trong `AGENTS.md` (đa dạng góc chụp, macro/cận cảnh/nội thất kiến trúc/góc nhìn nghiêng, không lặp lại bố cục, chân thực sát đời thực, không dùng phép ẩn dụ trừu tượng, không dùng cliché công sở):
+    - **01 (Bram Verhoeven - CourtSlot Rotterdam)**: Sân padel trong nhà mặt kính khung thép xanh lam tại Rotterdam, bàn sồi mộc với vợt & bóng padel, sổ da ghi tay, tablet lịch đặt sân.
+    - **02 (Sanne Bakker - Shiftly Amsterdam)**: Quầy phục vụ đá cẩm thạch viền đồng trong brasserie boutique Amsterdam nhìn ra kênh rạch qua cửa sổ vòm thế kỷ 17, tạp dề linen, tablet lịch ca trực horeca.
+    - **03 (Joris Nieuwenhuis - LesMatch Eindhoven)**: Không gian học tập hiện đại ốp gỗ tiêu âm gần TU Eindhoven, sách bài tập vật lý ghi tay, tai nghe over-ear, tablet lịch dạy kèm.
+    - **04 (Thomas de Wit - Factuurly Utrecht)**: Góc tĩnh vật bàn óc chó trong studio nhà cổ ven kênh Utrecht, xấp hoá đơn freelancer in giấy với thuế BTW, bút máy đồng, kính đọc sách đồi mồi, laptop bảng tổng kết hoá đơn.
+    - **05 (Ilse Kramer - ScheldeScan Dordrecht)**: Xưởng giám định thiệt hại xe hiện đại Dordrecht với sàn epoxy xám, xe sedan dưới đèn kiểm định, xe đẩy kim loại với máy đo độ dày lớp sơn, tablet Getac siêu bền hiển thị hồ sơ giám định xe.
+    - **06 (Daan Hoekstra - Werkplaats Groningen)**: Xưởng mộc thủ công ngập tràn ánh sáng tại Groningen với tường gạch cổ, bào gỗ và đục trên vách pegboard, bàn thợ mộc với thước thợ gấp, tablet danh mục không gian xưởng sáng tạo.
+    - **07 (Anouk Peeters - Rooster Breda)**: Bàn gỗ sồi trong xưởng gạch công nghiệp cải tạo tại Breda, hợp đồng freelance statement-of-work in giấy đánh dấu bút mực xanh, tách cappuccino, laptop tài liệu kỹ thuật & commit log.
+    - **08 (Joost Meijer - Studio Meridiaan Utrecht)**: Bàn họp gỗ tần bì dài trong studio thiết kế tối giản Utrecht nhìn ra mái nhà cổ kính, bảng mood board AURA Wellness Studio, mẫu vải linen & gạch men, tablet prototype thẻ thành viên.
+    - **09 (Ruben Elsinga - Kassabon Nijmegen)**: Bàn làm việc phiến đá tối màu studio Nijmegen, xấp hoá đơn bán lẻ in giấy Albert Heijn / SPAR, điện thoại soi khung quét OCR hoá đơn, tách cà phê gốm đốm mộc.
+    - **10 (Maud Sanders - Bezorgd Zwolle)**: Khu đóng gói bánh mì sourdough thủ công Zwolle sáng sớm, kệ bánh mì nóng hổi, túi giấy kraft in tên tiệm bánh, khay gỗ, tablet lộ trình giao bánh quanh thành phố.
+    - **11 (Sander Vos - Leerlijn Arnhem)**: Thư viện trường trung học hiện đại Arnhem nhìn ra sân trường rợp bóng cây, sách ôn thi Examenbundel Wiskunde A & Binas, hộp bút trong suốt, laptop cổng luyện thi trắc nghiệm.
+    - **12 (Wouter Bleeker - Podiumkaart Haarlem)**: Quầy bán vé phòng vé nhà hát kịch lịch sử Haarlem nhìn vào khán phòng ghế nhung đỏ và đèn chùm vàng, cuống vé in số ghế, chuông đồng, tablet sơ đồ chọn ghế rạp hát.
+    - **13 (Lieke Verbeek - Kruidenbox Utrecht)**: Xưởng ươm thảo mộc nhà kính đô thị ven kênh Utrecht, hộp đăng ký thảo mộc bằng giấy kraft với hạt giống basil/thyme, bình xịt đồng cổ điển, tablet dashboard doanh thu thuê bao.
+    - **14 (Marijn Kuipers - DierZorg Apeldoorn)**: Bàn khám inox phòng khám thú y hiện đại Apeldoorn, ống nghe y tế xanh, sổ Europees Dierenpaspoort đóng dấu microchip, dụng cụ soi tai, tablet hồ sơ bệnh án thú y.
+  - **Quy chuẩn kỹ thuật**: Crop trung tâm chuẩn tỉ lệ 16:9 và resize về kích thước chuẩn LaunchStudio **`1024x576` PNG** bằng công cụ [`launchstudio/sys/crop_to_launchstudio.py`](file:///Users/duyle/sickn33/launchstudio/sys/crop_to_launchstudio.py).
+  - **Trạng thái Quota**: Đã hoàn tất đến bài 14 (`01` đến `14`); gặp giới hạn quota gọi API native image (`gemini-3.1-flash-image`) ở bài 15 (`429 RESOURCE_EXHAUSTED`, thời gian chờ reset còn ~4h48m, mốc reset 15:26:30Z / ~22:26 giờ địa phương). Dừng và báo cáo người dùng theo đúng quy định tại `AGENTS.md`.
+
+- **Dịch thủ công chuẩn mực sang tiếng Hà Lan (không dùng python script) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) hoàn tất trọn vẹn 100/100 bài (từ bài 01 đến 100)**:
+  - Dịch trọn vẹn, tự nhiên, văn phong chuyên nghiệp của ngành công nghệ Hà Lan (B2B SaaS, Dutch enterprise & startup ecosystem).
+  - Chuẩn hoá frontmatter tiếng Hà Lan (`Titel`, `Trefwoorden`, `Koperfase`, `Doelgroep`).
+  - Tích hợp đầy đủ JSON-LD schema `Article` (tiếng Hà Lan, URL `https://launchstudio.eu/nl/...`).
+  - Bản địa hoá chi tiết `## Echt voorbeeld` (giữ trọn vẹn thông tin founder, số liệu, chi phí, gói LaunchStudio).
+  - Đảm bảo đúng **5 câu hỏi thường gặp (`## Veelgestelde vragen`)** kèm JSON-LD schema `FAQPage` (tuân thủ nghiêm ngặt rule của workspace).
+  - Các bài đã hoàn thành:
+    - **01**: `01-where-lovable-apps-run-hosting-explained-dutch.md` (Bram Verhoeven - CourtSlot Rotterdam)
+    - **02**: `02-lovable-custom-domain-dns-ssl-pitfalls-dutch.md` (Sanne Bakker - Shiftly Amsterdam)
+    - **03**: `03-lovable-supabase-default-project-what-you-get-dutch.md` (Joris Nieuwenhuis - LesMatch Eindhoven)
+    - **04**: `04-supabase-service-role-key-exposure-risk-dutch.md` (Thomas de Wit - Factuurly Utrecht)
+    - **05**: `05-lovable-security-holes-found-in-review-dutch.md` (Ilse Kramer - ScheldeScan Dordrecht)
+    - **06**: `06-lovable-seo-why-ai-built-sites-dont-rank-dutch.md` (Daan Hoekstra - Werkplaats Groningen)
+    - **07**: `07-hiring-a-lovable-developer-what-to-look-for-dutch.md` (Anouk Peeters - Rooster Breda)
+    - **08**: `08-lovable-expert-versus-general-freelancer-dutch.md` (Joost Meijer - Studio Meridiaan Utrecht)
+    - **09**: `09-what-a-vibe-coding-developer-actually-does-dutch.md` (Ruben Elsinga - Kassabon Nijmegen)
+    - **10**: `10-bolt-or-lovable-which-prototype-is-closer-to-production-dutch.md` (Maud Sanders - Bezorgd Zwolle & Pieter van Loon - Verzuim)
+    - **11**: `11-moving-a-replit-app-to-your-own-infrastructure-dutch.md` (Sander Vos - Leerlijn Arnhem)
+    - **12**: `12-what-cursor-cannot-see-runtime-half-of-your-app-dutch.md` (Wouter Bleeker - Podiumkaart Haarlem)
+    - **13**: `13-lovable-payments-what-breaks-after-checkout-dutch.md` (Lieke Verbeek - Kruidenbox Utrecht)
+    - **14**: `14-sessions-roles-and-admin-flags-in-ai-built-apps-dutch.md` (Marijn Kuipers - DierZorg Apeldoorn)
+    - **15**: `15-where-secrets-belong-in-an-ai-built-app-dutch.md` (Stefan Rombouts - Bezorgroute Tilburg)
+    - **16**: `16-where-time-goes-when-ai-built-apps-get-slow-dutch.md` (Fenna Hoekman - Kookstudio Zwolle)
+    - **17**: `17-the-restore-test-proving-recovery-before-you-need-it-dutch.md` (Bas Oosterhuis - Sportief Almere)
+    - **18**: `18-rate-limiting-and-abuse-protection-for-ai-apps-dutch.md` (Nadia el Amrani - Taalmaatje Eindhoven)
+    - **19**: `19-privacy-questions-dutch-customers-ask-ai-apps-dutch.md` (Tessa Blom - Planbaar Deventer)
+    - **20**: `20-analytics-and-consent-in-ai-built-apps-dutch.md` (Rik Doornbos - Vakwerk Arnhem)
+    - **21**: `21-testing-an-ai-generated-app-before-launch-dutch.md` (Jelle Vroomen - Sportlokaal Zaanstad)
+    - **22**: `22-handing-over-an-ai-built-codebase-dutch.md` (Joke Hoekstra - Bureau Nordkaap Leeuwarden)
+    - **23**: `23-lovable-app-on-mobile-pwa-or-native-dutch.md` (Miriam Aalders - Zorgrooster Enschede)
+    - **24**: `24-cost-of-running-lovable-supabase-at-scale-dutch.md` (Koen Bruinsma - Tweedehands Atelier Amersfoort)
+    - **25**: `25-four-signals-your-app-outgrew-the-builder-dutch.md` (Emma Zwart - Vakvraag Nijmegen)
+    - **26**: `26-transactional-email-that-actually-arrives-dutch.md` (Pim Haverkamp - Urenboek Zoetermeer)
+    - **27**: `27-search-in-ai-built-apps-what-actually-works-dutch.md` (Wietse Kamphuis - Onderdeelshop Drachten)
+    - **28**: `28-incident-response-for-solo-founders-dutch.md` (Thijs Marsman - Werkbon Alkmaar)
+    - **29**: `29-adding-an-ai-feature-what-changes-technically-dutch.md` (Sanne Koopmans - Sollicitatiescan Amersfoort)
+    - **30**: `30-file-uploads-done-properly-in-ai-built-apps-dutch.md` (Ravi Mehta - Vintagehoek Haarlem)
+    - **31**: `31-data-deletion-and-erasure-in-practice-dutch.md` (Hanneke Doorn - Buurtkracht Zwolle)
+    - **32**: `32-two-people-editing-the-same-record-dutch.md` (Marloes Huisman - Ambachtsklas Utrecht)
+    - **33**: `33-support-tooling-before-customers-ask-dutch.md` (Youssef Bakkali - Bijlesnet Tilburg)
+    - **34**: `34-building-for-dutch-and-english-users-dutch.md` (Lotte Verhoeven - Praktijkplanner Eindhoven)
+    - **35**: `35-the-week-before-you-go-live-checklist-dutch.md` (Daan Coppens - Voorraadje Maastricht)
+    - **36**: `36-scheduled-jobs-that-silently-stop-dutch.md` (Steven Bogaerts - Huurmaat Arnhem)
+    - **37**: `37-giving-access-to-your-first-collaborator-dutch.md` (Nadine Peters - Kliniekagenda Breda)
+    - **38**: `38-integrating-with-a-customers-existing-system-dutch.md` (Karin Moeskops - Leverbaar Zutphen)
+    - **39**: `39-what-a-security-review-actually-looks-like-dutch.md` (Anne-Fleur Sluiter - Bewaarplan Apeldoorn)
+    - **40**: `40-from-prototype-to-product-the-order-that-works-dutch.md` (Bo Klaassen - Groeiplan Utrecht)
+    - **41**: `41-lovable-supabase-auth-social-login-and-magic-links-dutch.md` (Ilja Verweij - Baanplanner Amersfoort)
+    - **42**: `42-ai-app-security-when-someone-reports-a-vulnerability-dutch.md` (Maarten Doornbos - Kluisje Zoetermeer)
+    - **43**: `43-lovable-seo-five-pages-every-ai-built-saas-needs-dutch.md` (Femke Roelofs - Planbaas Deventer)
+    - **44**: `44-bolt-to-production-what-it-leaves-you-to-build-dutch.md` (Rens Kuiper - Tafelvrij Maastricht)
+    - **45**: `45-cursor-rules-and-context-keeping-code-maintainable-dutch.md` (Pepijn Aalbers - Offertetool Alkmaar)
+    - **46**: `46-replit-projects-what-to-check-before-real-users-dutch.md` (Selma Bouhali - Leerpunt Nijmegen)
+    - **47**: `47-lovable-hosting-vs-vercel-and-netlify-dutch.md` (Tessa van Dijk - Zorgmaatje Apeldoorn)
+    - **48**: `48-lovable-supabase-migrations-after-launch-dutch.md` (Joost Brand - Ruimteplan Almere)
+    - **49**: `49-supabase-security-edge-functions-and-boundaries-dutch.md` (Bram Osinga - Declaratie Hilversum)
+    - **50**: `50-lovable-custom-domain-subdomains-and-redirects-dutch.md` (Wouter Claassen - Zaalplanner Tilburg)
+    - **51**: `51-lovable-developer-rates-in-the-netherlands-dutch.md` (Nienke Hulst - Klusmaat Zwolle)
+    - **52**: `52-working-with-a-lovable-expert-brief-scope-verify-dutch.md` (Sanne Wouters - Groenplan Breda)
+    - **53**: `53-vibe-coding-developer-portfolio-shipping-safely-dutch.md` (Tim Roorda - Groningen)
+    - **54**: `54-lovable-security-dependencies-you-did-not-choose-dutch.md` (Denise Kuiper - Boekhoudmaat Utrecht)
+    - **55**: `55-ai-app-security-two-factor-and-account-recovery-dutch.md` (Erik Vlietstra - Salarisplan Zwolle)
+    - **56**: `56-lovable-seo-structured-data-and-answer-engines-dutch.md` (Marit Sluijter - Vakwijzer Apeldoorn)
+    - **57**: `57-lovable-supabase-realtime-when-live-updates-are-worth-it-dutch.md` (Youri Hendriks - Ritplanner Eindhoven)
+    - **58**: `58-lovable-hosting-uptime-and-what-an-sla-commits-you-to-dutch.md` (Ruud Bosman - Inspectiepunt Deventer)
+    - **59**: `59-bolt-cursor-or-replit-which-fits-which-founder-dutch.md` (Lotte Gerritsen - Klantboek Utrecht)
+    - **60**: `60-lovable-developer-or-in-house-hire-dutch.md` (Marloes Timmerman - Praktijkbeheer Arnhem)
+    - **61**: `61-replit-agent-code-review-before-you-ship-dutch.md` (Freek Wiersma - Werkbriefje Zutphen)
+    - **62**: `62-replit-and-supabase-wiring-a-database-that-survives-dutch.md` (Tessa Oomen - Wachtlijst Tiel)
+    - **63**: `63-replit-security-forks-secrets-and-public-projects-dutch.md` (Joris Veenstra - Routeplan Leiden)
+    - **64**: `64-replit-deployments-which-type-fits-your-app-dutch.md` (Sanne Kuipers - Bezetting Deventer)
+    - **65**: `65-replit-costs-at-real-usage-what-scales-and-what-surprises-dutch.md` (Ruben Daalder - Offerteklaar Alkmaar)
+    - **66**: `66-replit-custom-domain-going-live-on-your-own-address-dutch.md` (Ilse Brandsma - Proefles Breda)
+    - **67**: `67-replit-file-uploads-where-user-files-should-live-dutch.md` (Nadia el Amrani - Verwijzing Roosendaal)
+    - **68**: `68-replit-for-teams-collaboration-without-leaking-access-dutch.md` (Wouter Stam - Stam Digitaal Amersfoort)
+    - **69**: `69-replit-seo-making-your-app-findable-dutch.md` (Marleen Hoogendijk - Zzp-Uren Gouda)
+    - **70**: `70-replit-backups-and-recovery-what-happens-if-you-lose-it-dutch.md` (Daan Poelman - Voorraadje Venlo)
+    - **71**: `71-supabase-security-row-level-security-policies-that-hold-dutch.md` (Koen Vermeulen - Ledenadmin Helmond)
+    - **72**: `72-ai-app-security-logging-and-audit-trails-you-will-need-dutch.md` (Lotte Wijnands - Dienstrooster Assen)
+    - **73**: `73-lovable-supabase-multi-tenancy-without-leaking-data-dutch.md` (Pieter Blom - Huurbeheer Dordrecht)
+    - **74**: `74-ai-app-security-admin-panels-and-the-access-nobody-audits-dutch.md` (Stijn Groenewoud - Aanmelder Zwolle)
+    - **75**: `75-ai-app-security-answering-a-security-questionnaire-dutch.md` (Femke Ravensbergen - Keuringsrapport Middelburg)
+    - **76**: `76-lovable-security-what-changes-when-you-take-payments-dutch.md` (Bas Tolhuizen - Lesgeld Roermond)
+    - **77**: `77-ai-app-security-the-keys-you-hand-out-to-integrations-dutch.md` (Merel Duijvestein - Bouwdossier Almere)
+    - **78**: `78-ai-app-security-protecting-an-api-your-customers-call-dutch.md` (Tim Roozendaal - Bezorgtijd Tilburg)
+    - **79**: `79-lovable-seo-keyword-research-when-nobody-searches-yet-dutch.md` (Sophie Wierda - Toolboxx Hoorn)
+    - **80**: `80-lovable-seo-recovering-rankings-after-a-rebuild-dutch.md` (Annelies ter Horst - Klusofferte Ede)
+    - **81**: `81-lovable-seo-landing-pages-that-rank-and-convert-dutch.md` (Nienke Haverkamp - Praktijkruimte Nijmegen)
+    - **82**: `82-lovable-developer-contract-scope-ip-and-payment-terms-dutch.md` (Marijke Doornbos - Planbord Leeuwarden)
+    - **83**: `83-lovable-developer-retainer-what-ongoing-support-covers-dutch.md` (Erik Vosmeijer - Huismeester Emmen)
+    - **84**: `84-vibe-coding-developer-rates-pricing-fixed-scope-work-dutch.md` (Sem Bruggeman - Groningen)
+    - **85**: `85-vibe-coding-developer-clients-who-built-it-themselves-dutch.md` (Yara Postma - Delft)
+    - **86**: `86-lovable-developer-or-ai-agent-what-still-needs-a-person-dutch.md` (Gijs Wagenaar - Kweekplan Naaldwijk)
+    - **87**: `87-bolt-hosting-where-a-bolt-app-should-actually-live-dutch.md` (Luuk Hendrickx - Standplaats Venray)
+    - **88**: `88-bolt-vs-cursor-prototyping-speed-against-maintainability-dutch.md` (Esmée Blankestijn - Bandenopslag Apeldoorn)
+    - **89**: `89-cursor-for-non-developers-what-it-can-and-cannot-do-dutch.md` (Hanneke Voskuil - Pensionplanner Barneveld)
+    - **90**: `90-cursor-and-lovable-together-a-workflow-that-fits-dutch.md` (Ivo Schaminée - Servicecontract Oss)
+    - **91**: `91-replit-and-bolt-moving-a-prototype-between-tools-dutch.md` (Ties Kroeze - Zwemles Purmerend)
+    - **92**: `92-lovable-supabase-where-business-logic-belongs-dutch.md` (Carola Mudde - Declaratie Sittard)
+    - **93**: `93-lovable-supabase-reporting-queries-that-do-not-slow-you-dutch.md` (Maartje Klaassen - Verbruik Almelo)
+    - **94**: `94-lovable-supabase-soft-deletes-archiving-and-what-you-keep-dutch.md` (Wendy Bosman - Personeelsdossier Hengelo)
+    - **95**: `95-lovable-supabase-time-zones-and-dates-done-correctly-dutch.md` (Noortje Haan - Trainingsschema Utrecht)
+    - **96**: `96-lovable-hosting-monitoring-and-knowing-before-customers-do-dutch.md` (Bram Kooistra - Sleutelkluis Zandvoort)
+    - **97**: `97-lovable-hosting-surviving-a-launch-day-spike-dutch.md` (Thijs Damen - Startbewijs Doetinchem)
+    - **98**: `98-lovable-custom-domain-migrating-a-live-domain-safely-dutch.md` (Vincent Bogaers - Taxatierapport Bergen op Zoom)
+    - **99**: `99-lovable-hosting-releases-you-can-undo-dutch.md` (Mark Oudshoorn - Kassakoppeling Gorinchem)
+    - **100**: `100-lovable-bolt-cursor-and-replit-your-first-year-plan-dutch.md` (Lianne de Ruiter - Bezoekregistratie Veenendaal)
+
+
+
 ### Tháng 09
 #### Ngày 18
 

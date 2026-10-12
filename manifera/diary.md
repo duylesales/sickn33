@@ -4,6 +4,14 @@
 
 ### Tháng 10
 
+#### Ngày 09
+
+- **Tạo ảnh minh họa siêu thực cho cụm `extra-11-decision` - Phiên sáng (Hoàn thành Bài 39, nâng tổng lên 39/100 bài)**:
+  - **Triển khai Bài 39 theo phong cách documentary tài liệu điện ảnh**:
+    - [`39-accelerator-startups-vendor-selection-under-a-90-day-clock_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026-extra/extra-11-decision/39-accelerator-startups-vendor-selection-under-a-90-day-clock_pic.jpg) (Không gian vườn ươm khởi nghiệp accelerator tại Dogpatch San Francisco lúc chạng vạng tối, hai nhà sáng lập làm việc tập trung cao độ bên bàn kim loại công nghiệp ngập tràn giấy ghi chú sprint, cốc cà phê, đèn bàn màu hổ phách, phía sau là cửa sổ nhìn ra tuyến xe điện đường phố và không gian làm việc năng động).
+    - Cắt và nén chuẩn tỷ lệ 16:9 (`1365x768`, center-crop JPEG quality 95) qua `manifera/sys/crop_to_16_9.py`.
+  - **Tạm dừng trước Bài 40**: Ngay sau khi xử lý thành công Bài 39, hạn ngạch tuần của model native `gemini-3.1-flash-image` tiếp tục báo cạn (`429 RESOURCE_EXHAUSTED`, thời điểm hồi phục hạn ngạch: `2026-10-12T02:07:55Z` - tức khoảng 09:07 GMT+7 ngày 12/10/2026). Tuân thủ nghiêm ngặt quy định Workspace không dùng pollinations.ai, bảo toàn chất lượng hình ảnh và chờ mở thêm quota hoặc API key thay thế.
+
 #### Ngày 07
 
 - **Tạo ảnh minh họa siêu thực cho cụm `extra-11-decision` - Phiên sáng (Hoàn thành Bài 31 - Bài 38, nâng tổng lên 38/100 bài)**:
