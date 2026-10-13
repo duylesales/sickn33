@@ -3,6 +3,26 @@
 ## 2026
 
 ### Tháng 10
+#### Ngày 13
+
+- **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) từ bài 15 đến 27**:
+  - **Quy chuẩn mỹ thuật & phong cách**: Tuân thủ nghiêm ngặt chỉ dẫn trong `AGENTS.md` (đa dạng góc chụp, macro/cận cảnh/nội thất kiến trúc/bàn làm việc chuyên ngành, không lặp lại bố cục, chân thực sát đời thực, không dùng phép ẩn dụ trừu tượng, không dùng cliché công sở):
+    - **15 (Stefan Rombouts - Bezorgroute Tilburg)**: Bãi bốc hàng dịch vụ ăn uống tiệc Tilburg, xe tải giao hàng mở thùng sau, tablet gắn trên giá xe hiển thị lộ trình.
+    - **16 (Fenna Hoekman - Kookstudio Zwolle)**: Bếp thử nghiệm ẩm thực Zwolle, chảo đồng, dao bếp đầu bếp chuyên nghiệp, tablet công thức món ăn & thời gian chuẩn bị.
+    - **17 (Bas Oosterhuis - Sportief Almere)**: Phòng truyền thống câu lạc bộ thể thao Almere, tủ cúp bạc & cờ lưu niệm, laptop hiển thị quy trình kiểm tra phục hồi sao lưu dữ liệu (restore test).
+    - **18 (Nadia el Amrani - Taalmaatje Eindhoven)**: Bàn học thư viện Eindhoven, giáo trình tiếng Hà Lan NT2, tai nghe, laptop hiển thị bảng điều khiển giới hạn tần suất API (rate limiting).
+    - **19 (Tessa Blom - Planbaar Deventer)**: Bàn làm việc điều dưỡng chăm sóc tại nhà Deventer, ống nghe, túi y tế, tài liệu checklist bảo mật quyền riêng tư GDPR/AVG.
+    - **20 (Rik Doornbos - Vakwerk Arnhem)**: Bàn văn phòng hiện trường nhà thầu cơ điện Arnhem, mũ bảo hộ vàng, cuộn bản vẽ thi công, laptop hiển thị cấu hình analytics tự lưu trữ không cookie.
+    - **21 (Jelle Vroomen - Sportlokaal Zaanstad)**: Quầy lễ tân nhà thi đấu Zaanstad, vợt cầu lông, sổ ca trực, laptop chạy bộ kiểm thử tự động Playwright trước giờ mở cửa.
+    - **22 (Joke Hoekstra - Bureau Nordkaap Leeuwarden)**: Bàn làm việc kiến trúc Leeuwarden, bản vẽ CAD in lớn, tài liệu bàn giao mã nguồn runbook & sơ đồ kiến trúc in đóng gáy xoắn.
+    - **23 (Miriam Aalders - Zorgrooster Enschede)**: Phòng nghỉ nhân viên điều dưỡng bệnh viện Enschede, bình cà phê, điện thoại thông minh cài ứng dụng web tiến bộ (PWA) lịch trực ca.
+    - **24 (Koen Bruinsma - Tweedehands Atelier Amersfoort)**: Xưởng phục chế đồ gỗ thủ công mỹ nghệ Amersfoort, đục gỗ, bào mộng, laptop bảng dự toán chi phí cơ sở dữ liệu Supabase & hạ tầng.
+    - **25 (Emma Zwart - Vakvraag Nijmegen)**: Bàn vẽ kiểm định xây dựng Nijmegen, thước đo laser, mũ công trình, laptop bảng mã nguồn phân tách kiến trúc đa dịch vụ.
+    - **26 (Pim Haverkamp - Urenboek Zoetermeer)**: Văn phòng dịch vụ tính giờ làm việc Zoetermeer, máy tính hiển thị cấu hình bản ghi DNS DKIM/SPF/DMARC gửi email giao dịch, xấp hoá đơn.
+    - **27 (Wietse Kamphuis - Onderdeelshop Drachten)**: Kho phụ tùng máy móc nông nghiệp Drachten/Friesland, bánh răng cơ khí nặng, van thuỷ lực, laptop dã chiến tìm kiếm danh mục phụ tùng.
+  - **Quy chuẩn kỹ thuật**: Crop trung tâm chuẩn tỉ lệ 16:9 và resize về kích thước chuẩn LaunchStudio **`1024x576` PNG** bằng công cụ [`launchstudio/sys/crop_to_launchstudio.py`](file:///Users/duyle/sickn33/launchstudio/sys/crop_to_launchstudio.py).
+  - **Trạng thái Quota**: Đã hoàn tất thành công từ bài 15 đến bài 27 (tổng cộng 27/100 ảnh đã hoàn thành). Gặp giới hạn quota gọi API native image (`gemini-3.1-flash-image`) ở bài 28 (`429 RESOURCE_EXHAUSTED`, thời gian chờ reset ~4h43m, khoảng 13:49 giờ địa phương). Dừng và báo cáo người dùng theo đúng quy định tại `AGENTS.md`.
+
 #### Ngày 12
 
 - **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-8-decision/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-8-decision/) từ bài 07 đến 20**:
