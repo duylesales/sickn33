@@ -5,6 +5,23 @@
 ### Tháng 10
 #### Ngày 13
 
+- **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) từ bài 28 đến 39**:
+  - **Quy chuẩn mỹ thuật & phong cách**: Tuân thủ nghiêm ngặt chỉ dẫn trong `AGENTS.md` (luân phiên tương phản góc máy N và N+1, cấm tiệt công thức laptop trên bàn, chân thực sát đời thực theo từng case study):
+    - **28 (Thijs Marsman - Werkbon Alkmaar)**: Over-the-shoulder thợ kỹ thuật HVAC trong xưởng bảo trì thiết bị cơ điện Alkmaar, cầm máy quét chẩn đoán hiện trường.
+    - **29 (Sanne Koopmans - Sollicitatiescan Amersfoort)**: Architectural wide-angle trung tâm tuyển dụng & nhân sự hiện đại Amersfoort, trần gỗ cao, buồng họp kính cách âm.
+    - **30 (Ravi Mehta - Vintagehoek Haarlem)**: Macro cận cảnh đôi bàn tay thợ thủ công đo mộng đồng và thớ gỗ tủ teak cổ điển bằng thước cặp cơ khí trong xưởng mộc Haarlem.
+    - **31 (Hanneke Doorn - Buurtkracht Zwolle)**: High-angle từ tầng lửng nhìn xuống trung tâm cộng đồng dân cư Zwolle, kết cấu lan can thép, sàn gỗ hình học, ánh sáng giếng trời.
+    - **32 (Marloes Huisman - Ambachtsklas Utrecht)**: First-person POV bước vào xưởng gốm thủ công Utrecht, bàn xoay gốm đang hoạt động, giá phơi đồ đất nung.
+    - **33 (Youssef Bakkali - Bijlesnet Tilburg)**: Low-angle hất lên hệ vì kèo gỗ đan chéo và các tầng ban công học tập của học viện giáo dục Tilburg.
+    - **34 (Lotte Verhoeven - Praktijkplanner Eindhoven)**: Over-the-shoulder chuyên viên vật lý trị liệu hướng dẫn bệnh nhân phục hồi chức năng vận động trong phòng khám Eindhoven.
+    - **35 (Daan Coppens - Voorraadje Maastricht)**: Architectural wide-angle khu phố mua sắm boutique cổ kính Maastricht lúc chạng vạng, nhà gạch thế kỷ 17, cửa hàng kính sáng đèn, xe đạp trên đường lát đá.
+    - **36 (Steven Bogaerts - Huurmaat Arnhem)**: Construction bay trong trạm bảo dưỡng máy móc cơ giới cho thuê Arnhem, chuyên viên kiểm tra đường ống thuỷ lực xe đào mini.
+    - **37 (Nadine Peters - Kliniekagenda Breda)**: Macro cực cận cảnh bàn tay cắm khoá bảo mật phần cứng (hardware security key) vào cổng trạm dữ liệu phòng khám y tế Breda.
+    - **38 (Karin Moeskops - Leverbaar Zutphen)**: Architectural wide-angle kho phân phối & bán buôn nông sản thực phẩm Zutphen, kệ hàng thép nhiều tầng, xe nâng reach-truck.
+    - **39 (Anne-Fleur Sluiter - Bewaarplan Apeldoorn)**: Over-the-shoulder kiểm toán viên vận hành vô-lăng cơ khí xoay giá lưu trữ hồ sơ tài chính di động trong hầm lưu trữ Apeldoorn.
+  - **Quy chuẩn kỹ thuật**: Crop trung tâm chuẩn tỉ lệ 16:9 và resize về kích thước chuẩn LaunchStudio **`1024x576` PNG** bằng công cụ [`launchstudio/sys/crop_to_launchstudio.py`](file:///Users/duyle/sickn33/launchstudio/sys/crop_to_launchstudio.py).
+  - **Trạng thái Quota**: Đã hoàn tất thành công từ bài 28 đến bài 39 (tổng cộng 39/100 ảnh đã hoàn thành). Gặp giới hạn quota gọi API native image (`gemini-3.1-flash-image`) ở bài 40 (`429 RESOURCE_EXHAUSTED`, thời gian chờ reset ~4h29m, dự kiến khoảng 19:39 giờ địa phương). Dừng và báo cáo người dùng theo đúng quy định tại `AGENTS.md`.
+
 - **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) từ bài 15 đến 27**:
   - **Quy chuẩn mỹ thuật & phong cách**: Tuân thủ nghiêm ngặt chỉ dẫn trong `AGENTS.md` (đa dạng góc chụp, macro/cận cảnh/nội thất kiến trúc/bàn làm việc chuyên ngành, không lặp lại bố cục, chân thực sát đời thực, không dùng phép ẩn dụ trừu tượng, không dùng cliché công sở):
     - **15 (Stefan Rombouts - Bezorgroute Tilburg)**: Bãi bốc hàng dịch vụ ăn uống tiệc Tilburg, xe tải giao hàng mở thùng sau, tablet gắn trên giá xe hiển thị lộ trình.
