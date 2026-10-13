@@ -22,6 +22,9 @@
     - **27 (Wietse Kamphuis - Onderdeelshop Drachten)**: Kho phụ tùng máy móc nông nghiệp Drachten/Friesland, bánh răng cơ khí nặng, van thuỷ lực, laptop dã chiến tìm kiếm danh mục phụ tùng.
   - **Quy chuẩn kỹ thuật**: Crop trung tâm chuẩn tỉ lệ 16:9 và resize về kích thước chuẩn LaunchStudio **`1024x576` PNG** bằng công cụ [`launchstudio/sys/crop_to_launchstudio.py`](file:///Users/duyle/sickn33/launchstudio/sys/crop_to_launchstudio.py).
   - **Trạng thái Quota**: Đã hoàn tất thành công từ bài 15 đến bài 27 (tổng cộng 27/100 ảnh đã hoàn thành). Gặp giới hạn quota gọi API native image (`gemini-3.1-flash-image`) ở bài 28 (`429 RESOURCE_EXHAUSTED`, thời gian chờ reset ~4h43m, khoảng 13:49 giờ địa phương). Dừng và báo cáo người dùng theo đúng quy định tại `AGENTS.md`.
+  - **Quy tắc bắt buộc đã cập nhật vào `AGENTS.md` (Strict Sequencing & No-Desk Rule)**:
+    - **Tương phản liền kề tuyệt đối**: Hai ảnh nằm cạnh nhau (N và N+1) TUYỆT ĐỐI KHÔNG được lặp lại góc máy hay phong cách layout (nếu bài N là macro chi tiết phần cứng thì bài N+1 phải là góc kiến trúc rộng hoặc over-the-shoulder tương tác người thật; không bao giờ để hai ảnh liên tiếp cùng chụp một góc tĩnh vật).
+    - **Cấm tiệt công thức "thiết bị để trên bàn"**: Nghiêm cấm mặc định dùng công thức lười biếng "laptop/tablet nằm trên mặt bàn". Phải xoay tua linh hoạt giữa: Architectural Wide-Angle (không có bàn ở tiền cảnh), Over-the-shoulder thao tác thực địa, First-person POV, Macro linh kiện/cáp nối/bảo mật vật lý, Low-angle hất lên kết cấu công nghiệp, và không gian di động (trong thùng xe, lối đi server, giàn giáo, phòng kỹ thuật).
 
 #### Ngày 12
 
