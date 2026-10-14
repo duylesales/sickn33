@@ -3,6 +3,21 @@
 ## 2026
 
 ### Tháng 10
+#### Ngày 14
+
+- **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) từ bài 40 đến 47**:
+  - **Quy chuẩn mỹ thuật & phong cách**: Tuân thủ tuyệt đối quy tắc bắt buộc trong `AGENTS.md` (tương phản góc máy liền kề $N$ và $N+1$, cấm tiệt công thức "thiết bị để trên bàn", xoay tua giữa 6 visual archetypes):
+    - **40 (Bo Klaassen - Groeiplan Utrecht)**: *Architectural Wide-Angle* — Không gian gác mái studio ven kênh Utrecht ngập tràn nắng sớm, dầm gỗ cổ, cửa sổ vòm nhìn ra tháp Dom, bảng kính từ tính với các thẻ bơi mục tiêu chiến lược, nhóm huấn luyện viên thảo luận (hoàn toàn không có bàn/laptop ở tiền cảnh).
+    - **41 (Ilja Verweij - Baanplanner Amersfoort)**: *Tactile Macro / Extreme Close-up* — Bàn tay vận động viên cầm smartphone quét mã QR xác thực vào đầu đọc thẻ trụ thép không gỉ tại cổng vào sân padel ngoài trời Amersfoort, vợt padel sợi carbon, bóng vàng trong túi lưới, sân cỏ nhân tạo xanh lam phía sau.
+    - **42 (Maarten Doornbos - Kluisje Zoetermeer)**: *Low-Angle Upward* — Góc thấp sát sàn đá nhìn hất lên hành lang kỹ thuật kính lúc chạng vạng tối tại Zoetermeer, trần lộ máng cáp công nghiệp, kỹ sư an ninh kiểm tra bảng điều khiển truy cập tủ rack máy chủ gắn tường.
+    - **43 (Femke Roelofs - Planbaas Deventer)**: *First-Person POV Walking* — Góc nhìn thứ nhất dạo bước trên phố gạch cổ Deventer lúc sáng sớm, ánh đèn vàng ấm từ tiệm bánh, người quản lý quán xếp bàn ghế mây ngoài vỉa hè, xe đạp chở giỏ mây tựa tường gạch.
+    - **44 (Rens Kuiper - Tafelvrij Maastricht)**: *High-Angle Mezzanine View* — Từ ban công sắt uốn trên tầng lửng nhìn xuống đại sảnh nhà hàng vòm đá cổ kính Maastricht, nhân viên trải khăn bàn trắng và ly pha lê, bục đón khách bằng gỗ chạm khắc.
+    - **45 (Pepijn Aalbers - Offertetool Alkmaar)**: *Over-the-shoulder Active Motion* — Chuyên viên giám định công trình đội mũ bảo hộ và áo phản quang đứng giữa công trường cải tạo gác mái Alkmaar, dùng thước đo laser kỹ thuật số chiếu tia đỏ lên xà gồ gỗ thế kỷ trước.
+    - **46 (Selma Bouhali - Leerpunt Nijmegen)**: *Architectural Wide-Angle* — Toàn cảnh giảng đường đào tạo hiện đại với các hàng ghế bậc thang gỗ uốn lượn tại Nijmegen, vách kính thông tầng nhìn ra cây xanh, bảng trình chiếu tương tác kỹ thuật số.
+    - **47 (Tessa van Dijk - Zorgmaatje Apeldoorn)**: *Linear Cold Aisle Corridor* — Lối đi kỹ thuật trung tâm dữ liệu đám mây tại Hà Lan, hai dãy tủ rack máy chủ thép đen đục lỗ, đèn LED sợi quang nhấp nháy, máng cáp vàng và cáp mạng xanh, kỹ sư mặc đồ chống tĩnh điện bước đi giữa lối.
+  - **Quy chuẩn kỹ thuật**: Crop trung tâm chuẩn tỉ lệ 16:9 và resize về kích thước chuẩn LaunchStudio **`1024x576` PNG** bằng công cụ [`launchstudio/sys/crop_to_launchstudio.py`](file:///Users/duyle/sickn33/launchstudio/sys/crop_to_launchstudio.py).
+  - **Trạng thái Quota**: Đã hoàn tất thành công từ bài 40 đến bài 47 (tổng cộng 47/100 ảnh đã hoàn thành). Gặp giới hạn quota gọi API native image (`gemini-3.1-flash-image`) ở bài 48 (`429 RESOURCE_EXHAUSTED`). Dừng và báo cáo người dùng theo đúng quy định tại `AGENTS.md`.
+
 #### Ngày 13
 
 - **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) từ bài 28 đến 39**:
