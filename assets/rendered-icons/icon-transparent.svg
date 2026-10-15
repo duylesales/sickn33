@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="brandGradient" x1="20%" y1="90%" x2="90%" y2="20%">
+      <stop offset="0%" stop-color="#1E65E6" />
+      <stop offset="35%" stop-color="#1B87D8" />
+      <stop offset="70%" stop-color="#14A8BA" />
+      <stop offset="100%" stop-color="#0EB8A0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded squircle container with open top-right corner -->
+  <path d="M 110.50 67.00 L 76.00 67.00 A 17.50 17.50 0 0 0 58.50 84.50 L 58.50 119.80 A 17.50 17.50 0 0 0 76.00 137.30 L 110.50 137.30 A 17.50 17.50 0 0 0 128.00 119.80 L 128.00 89.00" fill="none" stroke="url(#brandGradient)" stroke-width="7.60" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Arrow shaft and head -->
+  <path d="M 113.50 90.00 L 158.50 45.00" fill="none" stroke="url(#brandGradient)" stroke-width="7.60" stroke-linecap="round" />
+  <path d="M 115.50 45.00 L 158.50 45.00 L 158.50 87.00" fill="none" stroke="url(#brandGradient)" stroke-width="7.60" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Terminal Prompt -->
+  <path d="M 78.00 96.60 L 91.50 111.90 L 78.00 127.10" fill="none" stroke="#0F1D33" stroke-width="6.80" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 103.50 121.20 L 122.50 121.20" fill="none" stroke="#0F1D33" stroke-width="6.80" stroke-linecap="round" />
+</svg>
