@@ -3,6 +3,26 @@
 ## 2026
 
 ### Tháng 10
+#### Ngày 19
+
+- **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) từ bài 48 đến 60**:
+  - **Quy chuẩn mỹ thuật & phong cách**: Tuân thủ nghiêm ngặt chỉ dẫn cập nhật trong `AGENTS.md` (bám sát nội dung kỹ thuật cốt lõi của bài viết thay vì ví dụ Real Example, tương phản góc máy liền kề $N$ và $N+1$, cấm tiệt công thức "thiết bị để trên bàn", xoay tua giữa 6 visual archetypes):
+    - **48 (Lovable Supabase Migrations)**: *Over-the-shoulder / Active Motion* — Phòng điều hành trung tâm giám sát di trú cơ sở dữ liệu PostgreSQL trực tiếp, màn hình cong hiển thị dual-write sync, backfill throughput và query latency waterfalls.
+    - **49 (Supabase Security Edge Functions)**: *Tactile Macro / Extreme Close-up* — Bàn tay đeo găng kỹ thuật cắm đầu nối quang LC-duplex bọc giáp vào cổng gateway biên bảo mật "EDGE-GATEWAY-TRUSTED-ZONE", đèn LED xanh lục/hổ phách phản chiếu trên mặt nhôm phay xước.
+    - **50 (Lovable Custom Domain & Subdomains)**: *Architectural Wide-Angle* — Toàn cảnh đại sảnh trung tâm định tuyến DNS và trạm trung chuyển Internet (IXP), trần công nghiệp cao, hệ máng cáp quang vàng uốn lượn trên không, sàn chống tĩnh điện, vách kính nhìn vào phòng NOC.
+    - **51 (Lovable Developer Rates)**: *Over-the-shoulder / Collaborative Active Motion* — Chuyên gia kiến trúc phần mềm chỉ bút stylus lên bảng kính phác thảo phạm vi bàn giao fixed-scope và các cổng kiểm toán bảo mật database trong phòng tư vấn kính nhìn ra kênh đào Amsterdam lúc chạng vạng.
+    - **52 (Working With a Lovable Expert)**: *Low-Angle Upward Architectural* — Góc thấp sát sàn bê tông bóng nhìn hất lên giếng trời gỗ-kính của trung tâm công nghệ, các trụ kính thẳng đứng hiển thị kiểm thử CI/CD tự động thành công và checklist nghiệm thu mốc bàn giao.
+    - **53 (Vibe Coding Developer Portfolio)**: *First-Person POV / Walking Perspective* — Bàn tay cầm thiết bị chẩn đoán công nghiệp hiển thị đường cong stress-test 99.99% uptime khi bước qua phòng thí nghiệm kiểm thử máy chủ và hệ thống staging.
+    - **54 (Dependencies You Did Not Choose)**: *High-Angle Mezzanine View* — Từ cầu đi bộ thép nhìn xuống tầng tác chiến an ninh mạng, các khoang phân tích tròn có vách kính hiển thị đồ thị phụ thuộc dependency node-and-link và bản đồ nhiệt lỗ hổng CVE.
+    - **55 (Two-Factor Authentication & Account Recovery)**: *Tactile Macro / Extreme Close-up* — Ngón tay chạm vào cảm biến điện dung mạ vàng phát sáng của khóa bảo mật phần cứng FIDO2 cắm trên trạm mật mã, cạnh thẻ in mã phục hồi khẩn cấp.
+    - **56 (Lovable SEO & Answer Engines)**: *Over-the-shoulder / Active Motion* — Kỹ sư tìm kiếm phân tích đồ thị tri thức ngữ nghĩa 3D (semantic ontology), cấu trúc JSON-LD schema và điểm tin cậy trích dẫn AI trên màn hình độ phân giải siêu cao trong phòng nghiên cứu.
+    - **57 (Supabase Realtime Live Updates)**: *Non-Desk / In-Transit Environments* — Buồng lái điều khiển đoàn tàu đường sắt giám sát viễn trắc với màn hình gắn giảm chấn hiển thị luồng WebSocket thời gian thực và lưu lượng Pub/Sub, nhìn ra đường ray mưa mờ sương tại vùng polder Hà Lan lúc rạng đông.
+    - **58 (Hosting Uptime & SLA Commits)**: *Low-Angle Upward Architectural* — Góc thấp nhìn lên cụm máy phát điện dự phòng khổng lồ và hệ thống busway cao thế vàng của trung tâm dữ liệu chuẩn Tier IV lúc chạng vạng, biểu trưng cho cam kết hạ tầng 99.99% SLA uptime.
+    - **59 (Bolt, Cursor or Replit Comparison)**: *First-Person POV / Walking Perspective* — Bước qua cầu bộ hành gỗ-thép trong vườn ươm công nghệ tràn ngập ánh sáng tự nhiên từ mái răng cưa, các phòng lab kính hiển thị bảng so sánh luồng AI: prompt scaffolding, AST diffs và container runtime.
+    - **60 (Lovable Developer or In-House Hire)**: *Over-the-shoulder / Executive Interaction* — Trưởng bộ phận kỹ thuật phỏng vấn kiến trúc sư phần mềm trưởng trong phòng họp kính nhìn ra mặt nước IJ Amsterdam, trên vách kính vẽ sơ đồ phân cấp đội ngũ và ma trận code ownership.
+  - **Quy chuẩn kỹ thuật**: Crop trung tâm chuẩn tỉ lệ 16:9 và resize về kích thước chuẩn LaunchStudio **`1024x576` PNG** bằng công cụ [`launchstudio/sys/crop_to_launchstudio.py`](file:///Users/duyle/sickn33/launchstudio/sys/crop_to_launchstudio.py).
+  - **Trạng thái Quota**: Đã hoàn tất thành công từ bài 48 đến bài 60 (tổng cộng 60/100 ảnh đã hoàn thành). Gặp giới hạn quota gọi API native image (`gemini-3.1-flash-image`) ở bài 61 (`429 RESOURCE_EXHAUSTED`, thời gian chờ reset ~4h49m, dự kiến khoảng 14:17 giờ địa phương). Dừng và báo cáo người dùng theo đúng quy định tại `AGENTS.md`.
+
 #### Ngày 14
 
 - **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) từ bài 40 đến 47**:
