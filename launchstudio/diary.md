@@ -3,6 +3,25 @@
 ## 2026
 
 ### Tháng 10
+#### Ngày 20
+
+- **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) từ bài 61 đến 72**:
+  - **Quy chuẩn mỹ thuật & phong cách**: Tuân thủ nghiêm ngặt chỉ dẫn cập nhật trong `AGENTS.md` (bám sát nội dung kỹ thuật cốt lõi của bài viết thay vì ví dụ Real Example, tương phản góc máy liền kề $N$ và $N+1$, cấm tiệt công thức "thiết bị để trên bàn", xoay tua giữa 6 visual archetypes):
+    - **61 (Replit Agent Code Review)**: *Low-Angle Upward Architectural* — Phòng mái vòm kiểm toán phần mềm hình tròn với các cột kính uốn cong hiển thị cây diff cú pháp và nhật ký commit của AI agent bằng màu ngọc lục bảo và lục lam.
+    - **62 (Replit & Supabase Wiring)**: *Tactile Macro / Extreme Close-up* — Bàn tay kỹ sư mang găng ESD cắm khay ổ cứng enterprise U.2 NVMe vào khung máy chủ PostgreSQL chuyên dụng, chốt cơ khí khóa vào vị trí với đèn LED trạng thái xanh lục phát sáng ổn định.
+    - **63 (Replit Security Forks & Secrets)**: *High-Angle Mezzanine View* — Từ cầu thép trên cao nhìn xuống phòng tác chiến quản lý secrets mã hóa, các khoang kính cách âm hiển thị luồng xoay vòng khóa API và nhật ký dự án bị cách ly bằng sắc hổ phách và xanh đá phiến.
+    - **64 (Replit Deployments Types)**: *Over-the-shoulder / Active Motion* — Kỹ sư vận hành đứng trong phòng điều hành đám mây, chỉ tay lên tường giám sát hiển thị trực tiếp 4 kiến trúc runtime: Reserved Always-On, Autoscale Pods, Cron Workers và Webhook Gateways.
+    - **65 (Replit Costs & Scaling)**: *Architectural Wide-Angle* — Đại sảnh hoạch định FinOps trần cao lúc chạng vạng với vách kính nhìn ra các tòa tháp thành phố, tường gỗ tiêu âm gắn màn hình theo dõi mức đốt token AI, chi phí egress database và ngưỡng giới hạn chi tiêu.
+    - **66 (Replit Custom Domain & DNS)**: *First-Person POV / Walking Perspective* — Góc nhìn thứ nhất cầm tablet công nghiệp Panasonic hiển thị bản đồ truyền bá DNS Anycast toàn cầu và trạng thái xác thực SSL/TLS hợp lệ khi bước dọc hành lang cáp quang viễn thông.
+    - **67 (Replit File Uploads & Object Storage)**: *Low-Angle Upward Architectural* — Góc thấp sát sàn nhìn hất lên các cột máy chủ lưu trữ đối tượng petabyte cao vút, rãnh đèn LED ngọc lam dọc thân máy biểu thị các khoang lưu trữ mã hóa an toàn và đường ống cách ly file.
+    - **68 (Replit for Teams Collaboration)**: *Over-the-shoulder / Collaborative Active Motion* — Trưởng nhóm kỹ thuật dùng bút stylus phác thảo ranh giới phân quyền RBAC và cách ly Staging/Production trên màn hình tương tác trước các kỹ sư trong studio tràn ngập ánh sáng.
+    - **69 (Replit SEO & Findable Apps)**: *Architectural Wide-Angle* — Đại sảnh trung tâm hạ tầng web crawler trần thép cao, màn hình cong khổng lồ hiển thị dòng thác thu thập dữ liệu bot, tiền kết xuất HTML phía máy chủ và đồ thị độ phủ lập chỉ mục.
+    - **70 (Replit Backups & Recovery)**: *Tactile Macro / Extreme Close-up* — Cánh tay robot tự động của kho lưu trữ lạnh kẹp băng từ LTO-9 gắn nhãn "IMMUTABLE-SNAPSHOT-ARCHIVE-PITR" chuẩn bị nạp vào khe đọc, tia laser đỏ căn chỉnh và đèn quang học xanh lục báo trạng thái hợp lệ.
+    - **71 (Supabase Row Level Security Policies)**: *Over-the-shoulder / Active Motion* — Chuyên gia bảo mật phân tích cây chính sách SQL RLS trên màn hình cong siêu rộng: xác thực tenant_isolation và kiểm thử tấn công xâm nhập bị từ chối với 0 bản ghi rò rỉ.
+    - **72 (AI App Security Logging & Audit Trails)**: *Non-Desk / In-Transit Environments* — Bên trong xe chỉ huy cơ động ứng phó sự cố an ninh mạng (Mobile Command SOC van) vào buổi tối mưa, các màn hình gắn giảm chấn hiển thị luồng audit log bất biến và dòng thời gian pháp y kỹ thuật số.
+  - **Quy chuẩn kỹ thuật**: Crop trung tâm chuẩn tỉ lệ 16:9 và resize về kích thước chuẩn LaunchStudio **`1024x576` PNG** bằng công cụ [`launchstudio/sys/crop_to_launchstudio.py`](file:///Users/duyle/sickn33/launchstudio/sys/crop_to_launchstudio.py).
+  - **Trạng thái Quota**: Đã hoàn tất thành công từ bài 61 đến bài 72 (tổng cộng 72/100 ảnh đã hoàn thành). Gặp giới hạn quota gọi API native image (`gemini-3.1-flash-image`) ở bài 73 (`429 RESOURCE_EXHAUSTED`, thời gian chờ reset ~4h48m). Dừng và báo cáo người dùng theo đúng quy định tại `AGENTS.md`.
+
 #### Ngày 19
 
 - **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) từ bài 48 đến 60**:
