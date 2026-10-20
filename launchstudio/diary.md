@@ -5,7 +5,7 @@
 ### Tháng 10
 #### Ngày 20
 
-- **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) từ bài 61 đến 72**:
+- **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) từ bài 61 đến 73**:
   - **Quy chuẩn mỹ thuật & phong cách**: Tuân thủ nghiêm ngặt chỉ dẫn cập nhật trong `AGENTS.md` (bám sát nội dung kỹ thuật cốt lõi của bài viết thay vì ví dụ Real Example, tương phản góc máy liền kề $N$ và $N+1$, cấm tiệt công thức "thiết bị để trên bàn", xoay tua giữa 6 visual archetypes):
     - **61 (Replit Agent Code Review)**: *Low-Angle Upward Architectural* — Phòng mái vòm kiểm toán phần mềm hình tròn với các cột kính uốn cong hiển thị cây diff cú pháp và nhật ký commit của AI agent bằng màu ngọc lục bảo và lục lam.
     - **62 (Replit & Supabase Wiring)**: *Tactile Macro / Extreme Close-up* — Bàn tay kỹ sư mang găng ESD cắm khay ổ cứng enterprise U.2 NVMe vào khung máy chủ PostgreSQL chuyên dụng, chốt cơ khí khóa vào vị trí với đèn LED trạng thái xanh lục phát sáng ổn định.
@@ -19,8 +19,9 @@
     - **70 (Replit Backups & Recovery)**: *Tactile Macro / Extreme Close-up* — Cánh tay robot tự động của kho lưu trữ lạnh kẹp băng từ LTO-9 gắn nhãn "IMMUTABLE-SNAPSHOT-ARCHIVE-PITR" chuẩn bị nạp vào khe đọc, tia laser đỏ căn chỉnh và đèn quang học xanh lục báo trạng thái hợp lệ.
     - **71 (Supabase Row Level Security Policies)**: *Over-the-shoulder / Active Motion* — Chuyên gia bảo mật phân tích cây chính sách SQL RLS trên màn hình cong siêu rộng: xác thực tenant_isolation và kiểm thử tấn công xâm nhập bị từ chối với 0 bản ghi rò rỉ.
     - **72 (AI App Security Logging & Audit Trails)**: *Non-Desk / In-Transit Environments* — Bên trong xe chỉ huy cơ động ứng phó sự cố an ninh mạng (Mobile Command SOC van) vào buổi tối mưa, các màn hình gắn giảm chấn hiển thị luồng audit log bất biến và dòng thời gian pháp y kỹ thuật số.
+    - **73 (Lovable Supabase Multi-Tenancy)**: *High-Angle Mezzanine View* — Từ cầu đi bộ thép trên cao nhìn xuống sàn kiểm thử cơ sở dữ liệu multi-tenant đám mây, các phân vùng lục giác phát sáng phân định ranh giới cách ly tenant, các trụ màn hình treo tường hiển thị luồng 'MULTI-TENANT ISOLATION ENGINE', 'SHARED SCHEMA // TENANT_ID STRICT FILTERING' và kiểm chứng 100% ngăn chặn rò rỉ dữ liệu chéo.
   - **Quy chuẩn kỹ thuật**: Crop trung tâm chuẩn tỉ lệ 16:9 và resize về kích thước chuẩn LaunchStudio **`1024x576` PNG** bằng công cụ [`launchstudio/sys/crop_to_launchstudio.py`](file:///Users/duyle/sickn33/launchstudio/sys/crop_to_launchstudio.py).
-  - **Trạng thái Quota**: Đã hoàn tất thành công từ bài 61 đến bài 72 (tổng cộng 72/100 ảnh đã hoàn thành). Gặp giới hạn quota gọi API native image (`gemini-3.1-flash-image`) ở bài 73 (`429 RESOURCE_EXHAUSTED`, thời gian chờ reset ~4h48m). Dừng và báo cáo người dùng theo đúng quy định tại `AGENTS.md`.
+  - **Trạng thái Quota**: Đã hoàn tất thành công từ bài 61 đến bài 73 (tổng cộng 73/100 ảnh đã hoàn thành). Gặp giới hạn quota gọi API native image (`gemini-3.1-flash-image`) ở bài 74 (`429 RESOURCE_EXHAUSTED`, thời gian chờ reset ~1h09m, dự kiến khoảng 14:33 giờ địa phương). Dừng và báo cáo người dùng theo đúng quy định tại `AGENTS.md`.
 
 #### Ngày 19
 
