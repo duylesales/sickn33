@@ -21,63 +21,63 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Wie zich verdiept in het naar productie brengen van AI-gegenereerde software, stuit rondom betalingen onvermijdelijk op één specifiek woord: webhook. *"Bevestig betalingen uitsluitend via geverifieerde webhooks."* *"De webhook handler is niet idempotent."* Voor niet-technische ondernemers klinkt dit als nodeloos jargon. In werkelijkheid is het een van de meest fundamentele en krachtige concepten voor elke webapp die geld verwerkt — en het verkeerd begrijpen ervan is de directe oorzaak van talloze haperende transacties en gefrustreerde klanten in AI-gebouwde apps.
+Hebt u iets gelezen over AI-code naar productie brengen, dan hebt u één woord steeds weer naast betalingen zien staan: webhook. "Bevestig betalingen via geverifieerde webhooks." "De webhookhandler is niet idempotent." Voor niet-technische oprichters klinkt dat als jargon. Het is eigenlijk een van de eenvoudigste en belangrijkste ideeën bij het runnen van een app die geld ontvangt — en een misverstand erover zit achter veel van de betaalproblemen in AI-gebouwde apps.
 
-## Een webhook is als een telefonische terugbelafspraak
+## Een Webhook Is een Terugbelafspraak
 
-Stel u voor dat u telefonisch een bestelling plaatst bij een speciaalzaak en de medewerker zegt: *"Zodra uw pakket klaarstaat, bellen wij u direct terug."* U hoeft niet elke tien minuten zelf te bellen om te vragen of het al zover is; zíj nemen contact met ú op.
+Stel dat u telefonisch iets bestelt en te horen krijgt: "We bellen u terug als het klaar is." U blijft niet bellen om ernaar te vragen; zij bellen u.
 
-Een webhook doet exact hetzelfde, maar dan tussen softwaresystemen. Uw webapplicatie geeft aan een externe dienst — zoals Mollie, Stripe of een bezorgdienst — een specifiek webadres door en zegt: *"Zodra er iets belangrijks gebeurt, stuur je direct een seintje naar dit adres."* Wanneer een betaling slaagt, mislukt, wordt teruggestort of betwist, stuurt de betaalprovider automatisch een officieel statusbericht rechtstreeks naar uw server.
+Een webhook is precies dat voor software. Uw app geeft een dienst — Mollie, Stripe, een vervoerder — een adres en zegt: "Als er iets gebeurt, stuur dan hier een bericht naartoe." Als de betaling slaagt, mislukt, wordt terugbetaald of betwist, stuurt de betaalaanbieder een bericht naar dat adres op uw server.
 
-## Waarom online betalingen niet zonder terugbelbericht kunnen
+## Waarom Betalingen een Terugbelafspraak Nodig Hebben Voordat AI-Code naar Productie Gaat
 
-Dit is het typische traject wanneer een klant afrekent met iDEAL of creditcard:
+Dit gebeurt er als een klant met iDEAL of een kaart betaalt:
 
-1. Uw webapp stuurt de klant door naar de beveiligde betaalpagina van de payment provider.
-2. De klant autoriseert de betaling in de eigen bank-app of vult kaartgegevens in.
-3. De klant wordt teruggestuurd naar de bedankpagina op uw website.
+1. Uw app stuurt de klant naar de pagina van de betaalaanbieder.
+2. De klant betaalt in zijn bankapp of op de betaalpagina.
+3. De klant wordt teruggestuurd naar uw bedankpagina.
 
-De verleidelijke kortere weg — en de route die AI-codeertools stelselmatig genereren — is om stap 3 te beschouwen als het definitieve bewijs van betaling: *"de bezoeker is immers op de bedankpagina beland, dus er is betaald."* Maar die aanname is buitengewoon onbetrouwbaar:
+De verleidelijke kortere weg — en die AI-tools vaak genereren — is stap 3 als bewijs van betaling te behandelen: "ze hebben de bedankpagina bereikt, dus ze hebben betaald." Maar stap 3 is onbetrouwbaar:
 
-- Klanten sluiten na het afronden in hun bank-app direct de browser en keren nooit terug.
-- Mobiele internetverbindingen vallen onderweg net even weg.
-- Sommige klanten klikken sneller terug dan dat de bank de transactie definitief heeft verwerkt.
-- Iedereen kan de URL van uw bedankpagina handmatig intikken zonder ook maar een cent te betalen.
+- Klanten sluiten de bankapp en komen nooit terug.
+- Verbindingen vallen weg op mobiel.
+- Sommigen keren terug voordat de betaling echt is verwerkt.
+- Iedereen kan het adres van uw bedankpagina intypen.
 
-Het officiële terugbelbericht van de betaalprovider (de webhook) vindt áltijd plaats, ongeacht wat de browser van de consument doet. Het is het rechtstreekse, onweerlegbare bericht van de bank aan uw server over wat er daadwerkelijk met het geld is gebeurd.
+De terugbelafspraak van de betaalaanbieder (de webhook) vindt plaats ongeacht wat de browser van de klant doet. Het is de aanbieder die uw server rechtstreeks vertelt wat er echt is gebeurd.
 
-## Wat er structureel misgaat zonder webhooks
+## Wat Er Misgaat Zonder Webhooks
 
-- **Wel betaald, maar nergens geregistreerd:** de klant rekent succesvol af, sluit het browsertabblad, en uw app markeert de bestelling nooit als betaald. De klant mailt boos; u kunt de order niet terugvinden.
-- **Wel geregistreerd, maar nooit betaald:** een bezoeker bezoekt handmatig de bedankpagina en uw app levert direct de bestelling of dienst uit.
-- **Terugbetalingen worden gemist:** een geannuleerde order die u via het Mollie-dashboard terugstort, wordt nooit doorgegeven aan uw app, waardoor de klant gratis toegang blijft behouden.
-- **Abonnementen lopen geruisloos scheef:** mislukte automatische incasso's bereiken uw database niet, waardoor gebruikers maandenlang onbetaald van uw software profiteren.
+- **Betaald maar niet geregistreerd:** de klant betaalde, sloot het tabblad, en uw app markeerde de bestelling nooit als betaald. Hij mailt u boos; u kunt zijn betaling niet vinden.
+- **Geregistreerd maar niet betaald:** iemand bereikt de bedankpagina zonder te betalen, en uw app levert.
+- **Gemiste terugbetalingen en annuleringen:** een terugbetaling in het betaaldashboard bereikt uw app nooit, dus de klant houdt toegang.
+- **Afdrijvende abonnementen:** mislukte verlengingen bereiken uw app niet; gebruikers houden maandenlang premiumtoegang.
 
-## Hoe een veilige webhook-inrichting eruitziet
+## Hoe een Correcte Webhookinrichting Eruitziet
 
-**Verifieer altijd de afzender.** Iedereen kan kwaadwillend een nepbericht met *"status: betaald"* naar uw webhook-adres sturen. Een professionele implementatie controleert of het bericht daadwerkelijk van uw betaalprovider afkomstig is — Stripe ondertekent elk webhook-bericht cryptografisch; bij Mollie vraagt uw server na ontvangst van het seintje direct zelf de officiële status op via de officiële Mollie API.
+**Verifieer de afzender.** Iedereen zou een nep-bericht "betaling geslaagd" naar uw webhookadres kunnen sturen. Een correcte inrichting controleert of het bericht echt van de aanbieder komt — Stripe ondertekent zijn webhooks; bij Mollie zoekt de app na een melding de betaalstatus rechtstreeks op via de API.
 
-**Wees voorbereid op herhalingen (Idempotentie).** Betaalproviders versturen hetzelfde statusbericht gerust meerdere keren als uw server niet snel genoeg antwoordt. Uw applicatie moet dubbele berichten herkennen en voorkomen dat er twee bevestigingsmails uitgaan of twee keer tegoed wordt bijgeschreven.
+**Ga om met herhalingen.** Aanbieders kunnen dezelfde melding meer dan eens sturen. Uw app moet herhalingen herkennen en bijvoorbeeld niet twee bevestigingsmails versturen of twee keer lestegoed toevoegen. Engineers noemen dat idempotentie.
 
-**Houd rekening met willekeurige volgorde.** Berichten kunnen over het internet soms in een andere volgorde binnenkomen dan verwacht. De app moet altijd de actuele status in de database verifiëren in plaats van uit te gaan van een vaste chronologie.
+**Ga om met de volgorde.** Berichten kunnen in een andere volgorde aankomen. De app hoort de actuele status te controleren in plaats van een volgorde aan te nemen.
 
-**Reageer razendsnel en verwerk op de achtergrond.** Het webhook-eindpunt hoort het bericht binnen enkele milliseconden te bevestigen met een status 200 OK. Zware taken (zoals factuur-pdf's genereren of bevestigingsmails versturen) horen thuis in een asynchrone achtergrondtaak.
+**Reageer snel en verwerk veilig.** Het webhook-endpoint bevestigt de ontvangst snel en doet zwaarder werk (e-mails, facturen) op de achtergrond.
 
-**Monitoring en foutwaarschuwingen.** Mislukte webhook-verwerkingen moeten direct een melding genereren; dashboards van Stripe en Mollie tonen alle bezorgpogingen.
+**Log en monitor.** Mislukte webhookbezorgingen horen iemand te waarschuwen; aanbieders tonen bezorgpogingen in hun dashboards.
 
-**Testomgeving en productie strikt gescheiden houden.** Testwebhooks mogen onder geen beding productiedata overschrijven.
+**Houd test en live gescheiden.** Webhooks in testmodus mogen nooit live data beïnvloeden.
 
-## De bedankpagina blijft waardevol
+## De Bedankpagina Doet er Nog Steeds Toe
 
-De bedankpagina is nog steeds onmisbaar — maar uitsluitend om de klant een vriendelijke bevestiging en instructies te tonen. Het mag nooit de plek zijn die beslist óf er betaald is. Een beproefd patroon: de pagina toont *"we verifiëren uw betaling..."* en springt op groen zodra de webhook op de achtergrond succesvol is verwerkt.
+De bedankpagina blijft nuttig — om de klant een vriendelijk bericht te tonen. Ze hoort alleen niet te bepalen of hij heeft betaald. Een goed patroon: de pagina toont "we bevestigen uw betaling" en werkt zich bij zodra de webhook is verwerkt.
 
-## Webhooks buiten het betalingsverkeer
+## Webhooks Buiten Betalingen
 
-Hetzelfde principe geldt voor track-and-trace updates van PostNL of DHL, voltooide digitale handtekeningen via SignRequest, wijzigingen in Google Agenda en koppelingen met uw CRM. Overal waar een externe partij een statuswijziging als eerste waarneemt, is een beveiligde webhook dé manier waarop uw applicatie betrouwbaar op de hoogte wordt gebracht.
+Hetzelfde idee geldt voor verzendupdates, voltooide elektronische handtekeningen, agendawijzigingen en veel koppelingen. Overal waar een andere dienst iets als eerste weet, is een geverifieerde webhook de manier waarop uw app het hoort te horen.
 
-## Een veilige Mollie webhook-handler in code
+## Een Webhookhandler, Uitgeschreven
 
-In een professionele productie-omgeving ziet een Mollie webhook-handler er op de server als volgt uit:
+Voor werk van AI-code naar productie met betalingen ziet een Mollie-webhookhandler die de regels uit dit artikel volgt er ongeveer zo uit:
 
 ```typescript
 export async function POST(req: Request) {
@@ -85,146 +85,142 @@ export async function POST(req: Request) {
   const paymentId = String(form.get("id") ?? "");
   if (!paymentId) return new Response("ok", { status: 200 });
 
-  // 1. Vertrouw nooit blind op het bericht: haal de echte status op bij Mollie
+  // 1. Vertrouw nooit de melding zelf: haal de echte status op bij Mollie
   const payment = await mollie.payments.get(paymentId);
 
-  // 2. Idempotente database-update: handel alleen als de status daadwerkelijk verandert
+  // 2. Idempotente update: alleen handelen als de status echt verandert
   await db.transaction(async (tx) => {
     const order = await tx.orders.findByPaymentId(paymentId, { forUpdate: true });
     if (!order || order.paymentStatus === payment.status) return;
-    
     await tx.orders.update(order.id, { paymentStatus: payment.status });
-    
-    if (payment.status === "paid") {
-      await tx.jobs.enqueue("send-confirmation", { orderId: order.id });
-    }
-    if (payment.status === "expired" || payment.status === "canceled") {
-      await tx.seats.release(order.id);
-    }
+    if (payment.status === "paid") await tx.jobs.enqueue("send-confirmation", { orderId: order.id });
+    if (payment.status === "expired" || payment.status === "canceled") await tx.seats.release(order.id);
   });
 
-  // 3. Bevestig direct; zware taken draaien asynchroon op de achtergrond
+  // 3. Snel bevestigen; zwaar werk gebeurt in achtergrondtaken
   return new Response("ok", { status: 200 });
 }
 ```
 
-Bij Stripe werkt het net iets anders — Stripe ondertekent de ruwe payload met een uniek geheim, waarna de server de handtekening valideert — maar de drie grondbeginselen zijn identiek: verifieer de herkomst, verwerk idempotent en bevestig razendsnel.
+De aanpak van Stripe verschilt — het ondertekent elk event, en de handler verifieert de handtekening met het webhookgeheim vóór de verwerking — maar de principes zijn identiek: verifiëren, idempotent handelen, snel reageren.
 
-## Betaalstatussen die u verplicht moet afhandelen
+## Betaalstatussen die U Moet Afhandelen
 
-| Status | Betekenis | Wat uw applicatie hoort te doen |
+| Status | Betekenis | Wat de app hoort te doen |
 | --- | --- | --- |
-| Open / Pending | Klant heeft de betaling nog niet voltooid | Reservering tijdelijk vasthouden |
-| Paid | Betaling definitief ontvangen | Order bevestigen, factuur sturen, toegang verlenen |
-| Failed | Betalingspoging mislukt | Klant informeren, herhaalpoging aanbieden |
-| Expired | Betalingstermijn verlopen | Reservering of voorraad direct weer vrijgeven |
-| Canceled | Door klant of beheerder geannuleerd | Reservering annuleren, eventueel klant informeren |
-| Refunded (Teruggestort) | Geld teruggestort naar klant | Order bijwerken, rechten intrekken, capaciteit vrijgeven |
-| Charged back (Betwist) | Klant heeft betaling gestorneerd via bank | Order markeren, beheerder waarschuwen, dispuut openen |
+| Open / in afwachting | Klant heeft de betaling nog niet afgerond | Reservering een beperkte tijd vasthouden |
+| Betaald | Geld bevestigd | Bestelling bevestigen, bevestiging sturen, toegang geven |
+| Mislukt | Betaalpoging mislukt | Klant informeren, opnieuw proberen aanbieden, reservering kort vasthouden |
+| Verlopen | Klant heeft nooit afgerond | Reservering vrijgeven |
+| Geannuleerd | Klant of handelaar heeft geannuleerd | Reservering vrijgeven, zo nodig informeren |
+| Terugbetaald (volledig of gedeeltelijk) | Geld teruggestort | Bestelling bijwerken, zo nodig toegang intrekken, capaciteit vrijgeven |
+| Chargeback | Klant heeft bij de bank bezwaar gemaakt | Bestelling markeren, eigenaar informeren, het geschillenproces van de aanbieder volgen |
 
-Door AI gegenereerde code implementeert meestal alleen de status "Paid". Elk van de overige statussen vertegenwoordigt echter echte klanten, echte voorraad en echt geld.
+AI-gegenereerde betaalcode handelt doorgaans alleen "betaald" af. Elke andere status staat voor echte klanten en echt geld.
 
-## Webhooks degelijk testen
+## Webhooks Goed Testen
 
-Betaalproviders bieden uitgebreide sandbox-omgevingen en testtools om fictieve webhooks af te vuren. Test vóór de lancering: een succesvolle betaling waarbij het browsertabblad halverwege wordt gesloten; een mislukte transactie; een verlopen betaling; een terugboeking vanuit het dashboard; een dubbel binnengekomen webhook; een webhook die arriveert vóórdat de klant terugkeert; en een webhook die pas na tien minuten vertraging binnenkomt. Gebruik hulpmiddelen zoals ngrok of de provider CLI om webhooks lokaal te ontvangen.
+Betaalaanbieders bieden testmodi en tools om testevents te sturen. Test vóór de lancering: een geslaagde betaling waarbij het tabblad vóór het terugkeren is gesloten; een mislukte betaling; een verlopen betaling; een terugbetaling vanuit het dashboard; dezelfde webhook die twee keer wordt bezorgd; een webhook die aankomt voordat de klant naar de site terugkeert; en een webhook die na een lange vertraging aankomt. Voor lokale ontwikkeling sturen tunneltools of CLI's van aanbieders webhooks door naar uw eigen machine. Automatiseer de belangrijkste gevallen in integratietests tegen de testmodus van de aanbieder.
 
-## Automatische reconciliatie als vangnet
+## De Gezondheid van Webhooks Monitoren
 
-Mocht een webhook door een serverstoring of verbroken netwerkverbinding een tijdje niet afgeleverd zijn, dan zorgt een geautomatiseerde dagelijkse reconciliatie voor herstel: een geplande taak vergelijkt de lijst met geslaagde transacties bij de betaalprovider met de als betaald gemarkeerde orders in uw eigen database. Afwijkingen worden automatisch gesignaleerd en gecorrigeerd nog voordat klanten er hinder van ondervinden.
+Webhooks kunnen stilletjes falen: uw endpoint geeft fouten, loopt in een time-out of is na een domeinwijziging verkeerd geconfigureerd. Volg de bezorging in het dashboard van de aanbieder, log elke ontvangen webhook met de uitkomst, stel meldingen in als het aantal mislukkingen een drempel overschrijdt, en stem dagelijks af — vergelijk betalingen die bij de aanbieder als betaald staan met bestellingen die in uw database als betaald staan. Elk verschil wijst op een webhookprobleem voordat klanten het merken.
 
-## Eerste stap
+## Hetzelfde Patroon voor Andere Diensten
 
-Inspecteer direct waar in uw broncode een bestelling op "betaald" wordt gezet. Gebeurt dat zodra een bezoeker de bedankpagina bezoekt, of pas wanneer een geverifieerde webhook is verwerkt? Is het de eerste optie, pas dit dan met prioriteit aan.
+Dezelfde discipline geldt voor andere diensten: aanbieders van elektronische handtekeningen die melden dat een document is ondertekend, vervoerders die een bezorging melden, agendadiensten die wijzigingen melden, CRM's die updates sturen. Verifieer bij elk de bron, verwerk idempotent, ga om met events in de verkeerde volgorde en monitor mislukkingen. Eenmaal goed geïmplementeerd voor betalingen, is het patroon makkelijk te hergebruiken.
+
+## Scheiding van Omgevingen voor Webhooks
+
+Elke omgeving heeft een eigen webhookconfiguratie nodig: development en staging wijzen naar hun eigen endpoints met sleutels in testmodus; productie wijst naar het productie-endpoint met live sleutels. Ze mengen veroorzaakt enkele van de meest verwarrende bugs — stagingbestellingen die door productie-events als betaald worden gemarkeerd, of productiewebhooks die verloren gaan aan een staging-URL. Leg in uw documentatie vast welke webhook-URL bij welke omgeving hoort.
+
+## Als het Misgaat: Afstemming
+
+Faalden webhooks een tijd — bijvoorbeeld nadat een deployment het endpoint brak — gebruik dan de API van de aanbieder om de betalingen in die periode op te vragen en ze af te stemmen met uw bestellingen. Markeer ontbrekende bevestigingen, verstuur vertraagde e-mails en geef capaciteit zo nodig vrij of wijs die opnieuw toe. Houd een afstemmingsscript klaar; dat maakt van een stressvol incident een routinecorrectie.
+
+## Abonnementen Voegen Meer Events Toe
+
+Abonnementen leveren maandenlang een stroom aan webhook-events op: proefperiode gestart, proefperiode loopt af, verlenging geslaagd, verlenging mislukt, nieuwe poging geslaagd, abonnement opgezegd, abonnement gewijzigd, betaalmethode bijgewerkt. Elk event hoort de toegang van en communicatie met de klant bij te werken. Een veelvoorkomend gat in AI-gebouwde SaaS-apps is dat alleen de eerste betaling wordt afgehandeld: klanten houden toegang na mislukte verlengingen, of verliezen die ondanks geslaagde nieuwe pogingen. Koppel elk abonnementsevent dat uw aanbieder stuurt aan een duidelijke actie in uw app, en test de levenscyclus van begin tot eind in testmodus, inclusief een mislukte verlenging gevolgd door een geslaagde nieuwe poging.
+
+## Beveiligingsoverwegingen voor Webhook-Endpoints
+
+Webhook-endpoints zijn noodzakelijkerwijs openbaar, dus behandel ze als onbetrouwbare ingangen: verifieer handtekeningen of zoek de status op via de API van de aanbieder; accepteer alleen de verwachte HTTP-methoden en contenttypes; beperk de grootte van verzoeken; reageer zonder interne details prijs te geven; log verzoeken zonder gevoelige data; en pas rate limits toe als de aanbieder geen laag volume garandeert. Laat een webhook-payload nooit zonder verificatie direct waarden als bedragen of statussen in uw database instellen.
+
+## Webhooks Uitleggen aan Uw Team
+
+Voor niet-technische teamleden die klantvragen beantwoorden, helpt een eenvoudige uitleg: "de betaalaanbieder vertelt ons systeem rechtstreeks wanneer een betaling slaagt; de bedankpagina is alleen een bericht." Met dat begrip weten supportmedewerkers dat ze de betaalstatus van de bestelling (bijgewerkt door de webhook) moeten controleren in plaats van een screenshot van een bedankpagina van een klant te vertrouwen, en weten ze wie ze moeten benaderen als statussen niet kloppen.
+
+## Een Checklist voor Gereedheid van Webhooks
+
+Vóór de lancering: webhook-URL's per omgeving geconfigureerd; verificatie van elk event (handtekening of opzoeken via de API); idempotente verwerking op basis van de betaal- of event-ID; alle betaal- en abonnementsstatussen gekoppeld aan acties; zwaar werk verplaatst naar achtergrondtaken; logging en meldingen bij mislukkingen; dagelijkse afstemming tussen aanbieder en database; tests voor gesloten tabbladen, duplicaten, vertragingen, terugbetalingen en mislukkingen; en een afstemmingsscript klaar voor incidenten. Met deze zaken op hun plek weet uw app precies één keer van elke betaling — en hoeven klanten nooit te bewijzen dat ze hebben betaald.
+
+## Eerste Stap
+
+Zoek de code die een bestelling als betaald markeert. Draait die als de klant uw bedankpagina bereikt in plaats van wanneer een geverifieerde webhook binnenkomt, dan is dat het eerste wat u moet veranderen.
+
+## Waarom Dit Ertoe Doet voor Klanten
+
+Klanten zien nooit webhooks, maar ze merken het direct als ze ontbreken: een boeking die na het betalen niet verschijnt, een dubbele afschrijving, toegang die na het opzeggen doorloopt of ondanks een geslaagde verlenging verdwijnt. Elk daarvan leidt tot een supportgesprek, een terugbetaling of een verloren klant. Een correct geïmplementeerde webhookflow maakt betalingen saai in de beste zin van het woord — ze werken gewoon, elke keer, of de klant nu terugkeert naar uw site of halverwege zijn bankapp sluit. Voor oprichters is die betrouwbaarheid wat marketing en groei mogelijk maakt zonder de voortdurende zorg op de achtergrond of het geld wel klopt met de bestellingen.
 
 ## Onthoud
 
-De bedankpagina is er voor de bezoeker; de webhook is er voor uw administratie. Uitsluitend de webhook mag bepalen of een transactie daadwerkelijk is betaald.
+De bedankpagina is voor de klant; de webhook is voor uw administratie. Alleen de webhook hoort te bepalen wat er is betaald.
 
-## Waar LaunchStudio u bij helpt
+## Waar LaunchStudio Past
 
-Het professioneel inrichten van betaalbevestigingen via geverifieerde webhooks vormt een vast onderdeel van vrijwel elk LaunchStudio-project: foutloze Mollie- of Stripe-koppelingen, afhandeling van dubbele meldingen, automatische synchronisatie van restituties en abonnementen, en actieve webhook-monitoring. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het integreren van betalings- en bedrijfssystemen, opererend vanuit Amsterdam (Herengracht 420), Singapore en Ho Chi Minh City. Bekijk [Manifera's technologieën](https://www.manifera.com/about-us/manifera-technologies/); de [officiële webhook-documentatie van Mollie](https://docs.mollie.com/reference/webhooks) legt de technische werking glashelder uit.
+Betaalbevestiging via geverifieerde webhooks is onderdeel van bijna elk project van LaunchStudio waarbij geld een rol speelt: webhooks van Mollie of Stripe correct ingericht, herhalingen afgehandeld, terugbetalingen en abonnementswijzigingen gesynchroniseerd, monitoring op zijn plek. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring in het koppelen van betaal- en bedrijfssystemen, dat werkt vanuit Amsterdam (Herengracht 420), Singapore en Ho Chi Minh-stad. Zie [de technologieën van Manifera](https://www.manifera.com/about-us/manifera-technologies/); [de webhookdocumentatie van Mollie](https://docs.mollie.com/reference/webhooks) legt hun aanpak helder uit.
 
-[Bespreek uw project](https://launchstudio.eu/nl/#contact) als uw webapplicatie betalingen verwerkt en u wilt controleren of uw betaalflow waterdicht is.
+[Beschrijf uw project](https://launchstudio.eu/nl/#contact) als uw app betalingen ontvangt en u niet zeker weet hoe hij weet dat ze zijn geslaagd.
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Een Kookworkshopbedrijf Dat Betalingen Kwijtraakte
+### Een AI-Native Oprichter in Actie: Een Bedrijf in Kookworkshops dat Zijn Betalingen Niet Kon Vinden
 
-Rick Jonker, chef-kok en ondernemer in Hattem, bouwde Pannenklaar met behulp van Lovable: kookliefhebbers reserveren een plek voor een kookworkshop, betalen via Mollie en ontvangen automatisch een bevestiging met het menu en de voorbereidende instructies. De workshops verkochten fantastisch — soms zelfs iets te goed.
+Rick Jonker, kok die kookworkshops geeft in Hattem, bouwde Pannenklaar in Lovable: gasten boeken een plek in een workshop, betalen via Mollie en ontvangen een bevestiging met het menu en de ingrediëntenlijst. De workshops verkochten goed — soms te goed.
 
-Iedere week ontstonden er merkwaardige situaties. Er stonden deelnemers in de kookstudio met een bankafschrift waaruit bleek dat ze betaald hadden, terwijl hun naam niet in het boekingssysteem stond. Andere boekingen stonden in de app keurig als betaald gemarkeerd, maar in het Mollie-dashboard was geen cent binnengekomen — dit bleken bezoekers te zijn die het tabblad hadden heropend via de browsergeschiedenis. Wanneer Rick een annulering verwerkte via Mollie, kwam de plek in de app nooit automatisch vrij, waardoor populaire workshops onterecht als "volgeboekt" bleven staan. Rick had nog nooit van een webhook gehoord; de app bevestigde orders simpelweg op het moment dat iemand op de bedankpagina belandde.
+Elke week bracht een paar raadsels. Gasten kwamen aan met een bankafschrift waarop de betaling stond, maar zonder boeking in het systeem. Andere boekingen stonden als betaald gemarkeerd zonder bijbehorende betaling in Mollie — sommige van gasten die het tabblad hadden gesloten en via de bedanklink in hun geschiedenis waren teruggekomen. Terugbetalingen in het Mollie-dashboard gaven de plek nooit vrij, waardoor workshops als vol werden getoond terwijl ze dat niet waren. Rick had geen idee wat een webhook was; de app bevestigde boekingen zodra gasten de bedankpagina bereikten.
 
-In vijf werkdagen tijd implementeerden de engineers van LaunchStudio volwaardige Mollie-webhooks die bij elk signaal de actuele status via de API ophalen. Boekingsbevestigingen werden uitsluitend gekoppeld aan die officiële status; dubbele en vertraagde berichten werden netjes idempotent afgevangen; cursusplaatsen werden bij annuleringen en verlopen sessies direct weer vrijgegeven; bevestigingsmails verhuisden naar een asynchrone wachtrij; er kwamen foutwaarschuwingen; en de administratie van de afgelopen twee maanden werd volledig gladgestreken.
+In vijf werkdagen implementeerden de engineers van LaunchStudio Mollie-webhooks die bij elke melding de betaalstatus opzochten, maakten ze de bevestiging van boekingen alleen afhankelijk van die status, handelden ze herhaalde meldingen en meldingen in de verkeerde volgorde af, gaven ze plekken automatisch vrij bij terugbetalingen en verlopen betalingen, verplaatsten ze bevestigingsmails naar een achtergrondtaak die door de webhook wordt gestart, voegden ze meldingen toe bij mislukte verwerking van webhooks, en stemden ze de boekingen van de afgelopen twee maanden af met de gegevens van Mollie.
 
-**Resultaat:** Onvindbare betalingen en spookboekingen behoren definitief tot het verleden. Vrijgekomen cursusplaatsen na annuleringen worden nu automatisch opnieuw verkocht, wat Rick circa €600 per maand aan extra omzet oplevert. Zijn maandagochtend besteedt hij voortaan aan koken in plaats van administratief uitzoekwerk.
+**Resultaat:** Niet-gekoppelde betalingen en spookboekingen stopten volledig. Plekken die door terugbetalingen vrijkomen, worden nu opnieuw verkocht, wat naar schatting € 600 per maand aan workshopomzet oplevert, en Rick besteedt zijn maandagochtenden aan koken in plaats van afstemmen.
 
-> *"Ik dacht dat de bedankpagina bewees dat er betaald was. Het bleek dat Mollie me de waarheid al die tijd al probeerde te vertellen — ik luisterde alleen niet."*
+> *"Ik dacht dat de bedankpagina betekende dat iemand had betaald. Het bleek dat Mollie me al die tijd de waarheid probeerde te vertellen — ik luisterde alleen niet."*
 > — **Rick Jonker, Oprichter, Pannenklaar (Hattem)**
 
-**Kosten & Tijdlijn:** €1.350 (Launch Ready-pakket: betaalwebhooks, automatisch stoelenbeheer, datareconciliatie en monitoring) — afgerond in 5 werkdagen.
+**Kosten & Tijdlijn:** € 1.350 (Launch Ready-pakket: betaalwebhooks, vrijgave van plekken, afstemming en monitoring) — afgerond in 5 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Wat is een webhook in begrijpelijke taal?
-Een automatisch seintje dat een externe dienst (zoals een betaalprovider) rechtstreeks naar de server van uw applicatie stuurt zodra er iets belangrijks gebeurt — vergelijkbaar met een afgesproken telefonische terugbelactie.
+### Wat is een webhook in eenvoudige woorden?
 
-### Waarom mag mijn app een betaling niet bevestigen op de bedankpagina?
-Omdat een klant het tabblad kan sluiten vóórdat de pagina laadt, de mobiele verbinding kan wegvallen of iemand de URL van de bedankpagina rechtstreeks kan intikken zonder daadwerkelijk te betalen. Alleen de webhook van de provider geeft uitsluitsel over de werkelijke betaling.
+Een bericht dat een dienst naar de server van uw app stuurt als er iets gebeurt, zoals een geslaagde betaling — net als een beloofde terugbelafspraak.
+
+### Waarom hoort mijn app betalingen niet op de bedankpagina te bevestigen?
+
+Omdat klanten misschien niet terugkeren, terugkeren voordat de betaling is verwerkt, of de pagina bereiken zonder te betalen. De webhook van de aanbieder meldt wat er echt is gebeurd.
 
 ### Wat betekent het verifiëren van een webhook?
-Vaststellen dat het binnengekomen bericht gegarandeerd afkomstig is van de officiële provider — hetzij door cryptografische controle van de digitale handtekening (Stripe), hetzij door de actuele status direct na ontvangst zelf op te vragen via de provider-API (Mollie).
 
-### Hoe pakt Manifera integraties met betaalsystemen aan?
-Met geverifieerde webhooks, idempotente verwerking tegen dubbele transacties, automatische statussynchronisatie en dagelijkse reconciliatie — beproefde methoden uit ruim elf jaar softwareontwikkeling voor zakelijke systemen.
+Bevestigen dat het bericht echt van de aanbieder komt — via een controle van de handtekening of door de betaalstatus op te zoeken via de API van de aanbieder — zodat nepmeldingen worden genegeerd.
 
-### Hebben haperende betalingen invloed op de online reputatie van mijn bedrijf?
-Zeker. Klanten die wel geld overmaken maar vervolgens geen bevestiging ontvangen, plaatsen snel negatieve recensies op Google en Trustpilot, wat direct doorwerkt in zoekmachines en AI-koopaanbevelingen.
+### Hoe pakt Manifera betaalkoppelingen aan?
+
+Met geverifieerde webhooks, idempotente verwerking, afstemming en monitoring — patronen die in meer dan tien jaar koppelen van betaal- en bedrijfssystemen zijn verfijnd.
+
+### Beïnvloeden betaalproblemen de online reputatie?
+
+Ja. Klanten die betalen en niet worden herkend, klagen openbaar, en die klachten bepalen wat zoekmachines en AI-assistenten over uw bedrijf zeggen.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat is een webhook in begrijpelijke taal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Een automatisch statusbericht dat een externe dienst rechtstreeks naar uw server stuurt zodra er een gebeurtenis plaatsvindt, zoals een geslaagde betaling."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Waarom mag mijn app een betaling niet bevestigen op de bedankpagina?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Omdat bezoekers de pagina kunnen verlaten vóór de afronding of de pagina kunnen openen zonder te betalen; alleen de webhook toont de werkelijke transactiestatus."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat betekent het verifiëren van een webhook?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Controleren dat het bericht daadwerkelijk afkomstig is van de betaalprovider via een handtekeningcontrole of een directe statusopvraag via de officiële API."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe pakt Manifera integraties met betaalsystemen aan?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Met geverifieerde webhooks, idempotente verwerking ter voorkoming van dubbele acties, foutmonitoring en automatische administratieve reconciliatie."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hebben haperende betalingen invloed op de online reputatie van mijn bedrijf?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja; onduidelijkheid over betalingen leidt tot klachten en negatieve beoordelingen die direct zichtbaar worden in zoekmachines en AI-assistenten."
-      }
-    }
+    { "@type": "Question", "name": "Wat is een webhook in eenvoudige woorden?", "acceptedAnswer": { "@type": "Answer", "text": "Een bericht dat een dienst naar uw server stuurt als er iets gebeurt, zoals een beloofde terugbelafspraak." } },
+    { "@type": "Question", "name": "Waarom hoort mijn app betalingen niet op de bedankpagina te bevestigen?", "acceptedAnswer": { "@type": "Answer", "text": "Klanten keren misschien niet terug of bereiken de pagina zonder te betalen; de webhook van de aanbieder meldt de werkelijkheid." } },
+    { "@type": "Question", "name": "Wat betekent het verifiëren van een webhook?", "acceptedAnswer": { "@type": "Answer", "text": "Bevestigen dat het bericht van de aanbieder komt, via een handtekening of het opzoeken van de status via de API." } },
+    { "@type": "Question", "name": "Hoe pakt Manifera betaalkoppelingen aan?", "acceptedAnswer": { "@type": "Answer", "text": "Geverifieerde webhooks, idempotente verwerking, afstemming en monitoring." } },
+    { "@type": "Question", "name": "Beïnvloeden betaalproblemen de online reputatie?", "acceptedAnswer": { "@type": "Answer", "text": "Ja; openbare klachten bepalen wat zoek- en AI-assistenten zeggen." } }
   ]
 }
 </script>

@@ -22,121 +22,151 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Utrecht kent een specifiek type startup-oprichter. Velen zijn afkomstig van de Universiteit Utrecht, de Hogeschool Utrecht of het Utrecht Science Park; een aanzienlijk deel is actief in de zorg, het onderwijs of duurzaamheid; en een steeds groter aandeel bestaat uit niet-technische oprichters die naast hun vaste baan of adviespraktijk met behulp van Lovable of Bolt een waardevolle tool hebben gebouwd. Wanneer zij het punt bereiken waarop hun prototype klaarstaat voor echte klanten, zijn de vragen die zij stellen opvallend eensgezind. Hieronder vind je de vragen die LaunchStudio het vaakst hoort van Utrechtse ondernemers, voorzien van eerlijke en nuchtere antwoorden.
+Utrecht heeft een eigen soort oprichter. Velen komen uit de universiteit en het Science Park, een flink aantal uit de zorg en het onderwijs, en een groeiend deel zijn niet-technische oprichters die naast andere verplichtingen iets nuttigs bouwden met Lovable of Bolt. Wanneer ze op het punt komen een AI-prototype naar productie te brengen, zijn de vragen die ze stellen opvallend consistent. Dit zijn de vragen die LaunchStudio het vaakst van Utrechtse oprichters hoort, met eerlijke antwoorden.
 
-## "Moet er echt nog iets gebeuren? De app werkt toch al?"
+## "Moet Ik Echt Iets Doen? Het Werkt Toch Al."
 
-Hij werkt voor jóu, tijdens gecontroleerde tests. Productierijpheid draait om de vraag of de applicatie veilig en onverstoorbaar blijft functioneren voor volslagen vreemden, op piekmomenten en wanneer jij niet achter je scherm zit.
+Het werkt voor jou. Bij productie gaat het erom of het veilig werkt voor vreemden, wanneer jij niet meekijkt.
 
-De technische kloof is aan de buitenkant zelden zichtbaar. De meest voorkomende kwetsbaarheden in AI-prototypes — in Utrecht net zo goed als elders — zijn autorisatieregels die uitsluitend in de frontend zitten (waardoor een ingelogde bezoeker via een aangepaste URL andermans dossiers kan inzien), API-sleutels die openbaar in de paginabron rondslingeren, betalingen die als voldaan worden beschouwd zodra de browser terugkeert, en back-ups die nog nooit in de praktijk zijn hersteld. Uit onderzoek blijkt dat circa 45% van de door AI gegenereerde code kwetsbaarheden bevat, en dat 80% van de met AI gestarte projecten nooit de daadwerkelijke productiefase bereikt.
+De kloof is van buitenaf zelden zichtbaar. De meest voorkomende bevindingen in AI-prototypes uit welke stad ook — Utrecht inbegrepen — zijn toegangsregels die alleen in de interface worden afgedwongen (zodat een ingelogde gebruiker door een URL te veranderen bij de data van een ander kan), API-sleutels zichtbaar in de paginabron, betalingen die door de browser als geslaagd worden gemarkeerd in plaats van door de betaalprovider, en geen back-ups die iemand heeft getest. Cijfers uit de branche suggereren dat 45% van de AI-gegenereerde code een beveiligingskwetsbaarheid bevat, en dat zo'n 80% van de AI-gebouwde projecten productie helemaal nooit haalt.
 
-Een snelle test die je direct zelf kunt doen: maak twee testaccounts aan en probeer via de adresbalk van je browser met Account B bij de gegevens van Account A te komen. Lukt dat? Dan heb je direct je antwoord.
+Een snelle manier om het zelf te testen: maak twee accounts aan en probeer de data van het ene account te openen terwijl je als het andere bent ingelogd. Lukt dat, dan heb je je antwoord.
 
-## "Wat gaat dit traject mij kosten?"
+## "Wat Gaat Het Kosten?"
 
-Voor de meeste werkende prototypes liggen de kosten tussen de € 800 en € 7.500, vastgesteld als vaste projectprijs vooraf. De exacte investering hangt af van wat er staat en wat er ontbreekt:
+Voor de meeste werkende prototypes tussen € 800 en € 7.500, vooraf vastgelegd. De bandbreedte hangt af van wat je hebt gebouwd en wat er ontbreekt:
 
-- Een informatieve tool of lead-generator met formulieren: doorgaans aan de onderkant van de schaal.
-- Een reserverings- of bestelapplicatie met betalingsafhandeling: in het middensegment.
-- Een volwaardige SaaS met teamaccounts, rollen, abonnementsbeheer en een admin-omgeving: in het hogere segment.
+- Een website of eenvoudige tool met een formulier: meestal aan de onderkant.
+- Een boekings- of bestelapp met betalingen: in het midden.
+- Een SaaS met accounts, abonnementen, teams en een beheergedeelte: aan de bovenkant.
 
-Met onze [online prijscalculator](https://launchstudio.eu/nl/#calculator) bereken je binnen één minuut een realistische indicatie. Na een vrijblijvend kennismakingsgesprek van 15 minuten ontvang je een gegarandeerde vaste offerte.
+Met de [prijscalculator](https://launchstudio.eu/nl/#calculator) van LaunchStudio maak je in ongeveer een minuut een schatting door te kiezen wat je hebt gebouwd, wat je al hebt en wat je nodig hebt. Na een gesprek van 15 minuten krijg je een exacte vaste prijs.
 
-## "Hoe lang duurt de stap van AI-prototype naar productie?"
+## "Hoe Lang Duurt het van AI-Prototype naar Productie?"
 
-Doorgaans één tot drie weken. De grootste bedreiging voor de planning is zelden de software engineering zelf; het is scope-uitdijing tijdens de rit en vertraging bij het overdragen van cloudinloggegevens aan het begin. Omdat veel Utrechtse oprichters hun startup combineren met een baan of studie, adviseren we om in de eerste dagen een paar uur vrij te maken om accounts te koppelen en inhoudelijke vragen vlot te beantwoorden.
+Doorgaans één tot drie weken. Het grootste risico voor de planning is niet de engineering; het is scope die tijdens het project groeit en trage toegang tot accounts in het begin. Utrechtse oprichters combineren hun startup vaak met ander werk, dus het helpt om in de eerste dagen een paar uur vrij te maken om toegang te verlenen en vragen te beantwoorden.
 
-## "Kan ik iDEAL integreren? Mijn Nederlandse klanten verwachten dat."
+## "Kan Ik iDEAL Gebruiken? Mijn Klanten Verwachten Het."
 
-Absoluut, en dat is ook dringend aan te bevelen. Nederlandse consumenten en zakelijke afnemers verwachten bij het afrekenen vrijwel unaniem iDEAL. Veel AI-prompts leveren standaard uitsluitend creditcardbetalingen via Stripe op, simpelweg omdat Amerikaanse trainingsdata dat als standaard hanteert. Zowel Stripe als Mollie ondersteunt iDEAL uitstekend; Mollie (met het hoofdkantoor aan de Keizersgracht in Amsterdam) is onder Nederlandse oprichters bijzonder populair vanwege de lokale ondersteuning en vertrouwde uitstraling.
+Ja, en dat moet je ook doen. Nederlandse klanten verwachten bij het afrekenen overweldigend vaak iDEAL, en veel AI-prototypes komen binnen met alleen kaartbetalingen via Stripe, omdat de tools daar standaard voor kiezen. Zowel Stripe als Mollie ondersteunt iDEAL; Mollie, met het hoofdkantoor in Amsterdam, is een populaire keuze voor Nederlandse oprichters die lokale ondersteuning willen.
 
-Minstens zo belangrijk als de keuze voor de betaalprovider is de technische afhandeling: de app mag een betaling pas definitief toekennen zodra jouw server een cryptografisch geverifieerde *webhook* van de bank ontvangt — en dus nooit puur op basis van de bezoeker die terugkeert op de bedankpagina. Die ene aanpassing voorkomt vrijwel alle mismatches tussen bankrekening en gebruikersstatus.
+Belangrijker dan de aanbieder is hoe de app te weten komt dat een betaling is gelukt. Dat moet op je server worden bevestigd door een geverifieerde webhook van de aanbieder — niet door de browser van de klant die terugkeert naar een bedankpagina. Die ene wijziging voorkomt de meeste betaalafwijkingen die we zien.
 
-## "Hoe zit het met de AVG (GDPR)? Ik verwerk persoonsgegevens."
+## "Hoe Zit Het met de AVG? Ik Heb Data van Gebruikers."
 
-Voor een typische startup-applicatie heb je een handvol concrete maatregelen nodig, waarvoor je in eerste instantie echt geen duur advocatenkantoor hoeft in te schakelen:
+Je hebt een paar concrete dingen nodig, waarvoor je bij een typische kleine app geen jurist nodig hebt:
 
-- **Weet waar je data staat:** Veel AI-bouwers spinnen databases standaard op in Amerikaanse datacenters. Voor Nederlandse gebruikers is een datacenter binnen de Europese Unie (zoals Frankfurt of Ierland) de veiligste en juridisch meest zuivere keuze.
-- **Inventariseer je verwerkers:** Elke externe partij die persoonsgegevens verwerkt — hosting, database, e-maildienst, analytics — hoort thuis in je privacyverklaring, ondersteund met een verwerkersovereenkomst (die clouddiensten standaard online aanbieden).
-- **Zorg voor een werkende verwijderprocedure:** Als een gebruiker een beroep doet op het 'recht op vergetelheid', moet je diens persoonsgegevens binnen een maand volledig kunnen wissen.
-- **Weet hoe te handelen bij een datalek:** Een ernstig incident waarbij persoonsgegevens zijn gelekt, moet binnen 72 uur worden gemeld bij de Autoriteit Persoonsgegevens.
+- **Weet waar je data staat.** Veel AI-gebouwde apps maken hun database standaard aan in een Amerikaanse regio. Een EU-regio is de eenvoudigste keuze voor Nederlandse gebruikers.
+- **Maak een lijst van je verwerkers.** Elke dienst die persoonsgegevens raakt — hosting, database, e-mail, analyse — hoort in je privacyverklaring, met een verwerkersovereenkomst (de meeste aanbieders bieden er online een aan).
+- **Kunnen verwijderen.** Vraagt een gebruiker om verwijdering, dan moet je zijn data binnen een maand kunnen wissen.
+- **Weet wat je doet als er iets lekt.** Een datalek met persoonsgegevens moet mogelijk binnen 72 uur worden gemeld bij de Autoriteit Persoonsgegevens.
 
-De [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/) biedt uitstekende praktische handvatten voor het mkb. Bevat jouw app medische gegevens of data van schoolkinderen — veelvoorkomend in het Utrechtse ecosysteem — geef dit dan direct aan, want daarvoor gelden striktere wettelijke kaders.
+De [Autoriteit Persoonsgegevens](https://autoriteitpersoonsgegevens.nl/en) publiceert heldere uitleg voor kleine organisaties. Verwerkt je app gezondheids- of onderwijsdata over kinderen — gebruikelijk in de Utrechtse startupscene — vraag dan om een nauwkeuriger blik, omdat er strengere regels gelden.
 
-## "Blijf ik na de lancering 100% eigenaar van mijn code?"
+## "Blijf Ik Eigenaar van Mijn Code?"
 
-Zonder uitzondering: ja. Alle broncode staat en blijft in jouw eigen GitHub-repository en op jouw eigen cloudaccounts. LaunchStudio documenteert wat er is aangepast en waarom, en zorgt dat de code netjes leesbaar blijft voor Lovable, Bolt of Cursor, zodat je daarna zelfstandig kunt blijven doorbouwen. Er is geen sprake van een vendor lock-in en geen verplicht maandelijks abonnement; managed hosting voor € 49 per maand is optioneel.
+Altijd. De code blijft in jouw repository, op jouw accounts. LaunchStudio documenteert wat er is veranderd en waarom, en houdt de code leesbaar voor Lovable, Bolt en Cursor, zodat je zelf verder kunt bouwen. Er is geen lock-in en geen verplicht onderhoudscontract; beheerde hosting voor € 49 per maand is optioneel.
 
-## "Moet ik voor overleg naar Amsterdam komen?"
+## "Moet Ik naar Amsterdam Komen?"
 
-Nee hoor. Het gehele traject verloopt soepel online: een omschrijving van je project, een intakegesprek via video, en vervolgens het technische werk met regelmatige updates via Slack of e-mail. Mocht je wel graag fysiek aan tafel zitten: vanaf station Utrecht Centraal sta je met de intercity binnen 25 minuten op Amsterdam Centraal, vanwaar het hoofdkantoor van Manifera aan de Herengracht 420 op loopafstand ligt.
+Nee. Alles verloopt online: een beschrijving van je project, een videogesprek van 15 minuten, en daarna het werk zelf met updates naarmate het vordert. Dat gezegd hebbende: Utrecht ligt zo'n 25 minuten met de trein van Amsterdam Centraal, en Manifera, het moederbedrijf van LaunchStudio, heeft zijn Europese kantoor aan de Herengracht 420 — op korte loopafstand van het station — als je liever persoonlijk afspreekt.
 
-## "Wat verwachten zakelijke klanten in de regio Utrecht?"
+## "Wat Verwachten Klanten uit Utrechtse Sectoren?"
 
-De Utrechtse economie leunt sterk op zorg, onderwijs, life sciences, overheid en zakelijke dienstverlening. Klanten in deze sectoren stellen specifieke eisen:
+De Utrechtse economie leunt op zorg, onderwijs, duurzaamheid, publieke dienstverlening en zakelijke dienstverlening, en klanten in elke sector brengen verwachtingen mee die een traject van AI-prototype naar productie vormgeven.
 
-- **Zorggerelateerde applicaties:** planners voor fysiotherapeuten, GGZ-tools of vitaliteitsapps verwerken al snel bijzondere persoonsgegevens. Klanten vragen hier direct naar expliciete toestemming, logging van inzages en AVG-conformiteit. Grotere zorginstellingen toetsen bovendien vaak op de NEN 7510-norm voor informatiebeveiliging in de zorg.
-- **Onderwijstools:** software voor basisscholen, het mbo of de universiteit raakt vaak minderjarigen. Scholen verlangen standaard een verwerkersovereenkomst conform het landelijke Privacyconvenant Onderwijs, minimale datacollectie en duidelijke bewaartermijnen.
-- **Overheidsinstanties:** de gemeente Utrecht, provinciale diensten en waterschappen hanteren strenge inkoopvoorwaarden rondom digitale toegankelijkheid (WCAG-richtlijnen) en exit-strategieën.
+**Apps rond de zorg** — planning voor zorgverleners, informatietools voor patiënten, welzijnsapps — raken snel aan gezondheidsdata. Verwacht vragen over bijzondere persoonsgegevens, uitdrukkelijke toestemming, het loggen van toegang en waar data wordt gehost. Ziekenhuizen en grotere praktijken vragen mogelijk ook naar NEN 7510, de Nederlandse norm voor informatiebeveiliging in de zorg.
 
-Als we weten op welke sector jouw eerste klanten zich richten, stemmen we de prioriteiten van het productietraject daar direct op af.
+**Onderwijstools** voor scholen en de universiteit betreffen vaak leerlingen onder de 16 of studentgegevens. Scholen verwachten doorgaans een verwerkersovereenkomst op basis van het modelconvenant van de onderwijssector, minimale dataverzameling en duidelijke bewaartermijnen.
 
-## "Wat vraagt een regionale investeerder of incubator?"
+**Apps voor duurzaamheid en energie** koppelen vaak met slimme meters, laadpalen of gebouwsystemen, waardoor betrouwbaarheid van API's en data van apparaten in de scope komen.
 
-Utrecht heeft een bloeiend ecosysteem van incubators, universitaire programma's en fondsen zoals ROM Utrecht Region. Oprichters die hier aankloppen krijgen steevast een vast setje technische vragen voorgelegd:
+**Klanten uit de publieke sector** — de gemeente, de provincie, waterschappen — vragen naar toegankelijkheid, beveiligingsbaselines en exitplannen, en kopen in via formele aanbestedingen.
 
-| Vraag van de investeerder | Wat men écht wil weten | Het juiste antwoord |
+Weten tot welke van deze je eerste klanten behoren, vertelt je welke onderdelen van productierijpheid voorrang krijgen.
+
+## "Wat Vraagt de Incubator of Investeerder?"
+
+Utrecht heeft een actief ondersteunend ecosysteem — incubators, universitaire programma's en regionale investeringsfondsen. Oprichters die daar doorheen gaan, melden een consistente set technische vragen:
+
+| Vraag | Wat ze eigenlijk controleren | Een sterk antwoord |
 | --- | --- | --- |
-| *"Wie bezit het intellectueel eigendom?"* | Juridisch risico op claims | Repository en accounts op naam van de BV, overdrachtsakte getekend |
-| *"Hoe is klantdata beveiligd?"* | Risico op reputatieschade | Server-side RLS, Europese database, geteste back-ups |
-| *"Kan deze app schalen?"* | Moet alles straks herbouwd worden? | Inzicht in de huidige databaselimieten en een helder schaalplan |
-| *"Wat als de AI-tool stopt?"* | Afhankelijkheid van derden | Schone code die zelfstandig kan draaien op standaard cloudhosting |
-| *"Wie verzorgt het onderhoud?"* | Sleutelpersoon-risico | Volledige documentatie, geautomatiseerde tests en duidelijke afspraken |
+| "Wie is eigenaar van de code?" | IE en zeggenschap | Repository en accounts van het bedrijf, IE-overdrachten getekend |
+| "Hoe is gebruikersdata beschermd?" | Risico op een schadelijk incident | Toegangsbeheer op de server, EU-hosting, geteste back-ups |
+| "Kan het schalen?" | Of groei een herbouw vraagt | Bekende knelpunten en een plan, geen belofte |
+| "Wat als de AI-tool verdwijnt?" | Afhankelijkheid van het platform | Exporteerbare code op standaardhosting |
+| "Wie onderhoudt het?" | Risico op afhankelijkheid van één persoon | Documentatie, tests en een benoemde onderhoudsafspraak |
 
-Een strak opleverdossier met positieve auditresultaten maakt tijdens dit soort gesprekken direct het verschil tussen een amateuristisch project en een serieuze propositie.
+Scherpe antwoorden, onderbouwd met een kort technisch overzicht, maken een merkbaar verschil in hoe serieus een jong product wordt genomen.
 
-## "Wie voert het technische werk daadwerkelijk uit?"
+## "Moet Ik in het Nederlands, Engels of Beide Bouwen?"
 
-Achter LaunchStudio staat het vaste team van Manifera: meer dan 120 senior software engineers. Manifera heeft ruim 11 jaar ervaring, meer dan 160 succesvolle projecten opgeleverd en werkt voor gerenommeerde partijen als Vodafone, TNO en CFLW. De engineering vindt grotendeels plaats in het ontwikkelcentrum aan Pho Quang Street in Ho Chi Minhstad, onder Nederlandse regie vanuit Amsterdam. Deze internationale opzet maakt het mogelijk om enterprise-kwaliteit te leveren tegen vaste tarieven die circa 20% bedragen van wat een traditioneel Nederlands bureau rekent. Lees meer over het team op [Manifera's over-ons pagina](https://www.manifera.com/about-us/).
+De Utrechtse gebruikers zijn gemengd: Nederlandse inwoners, internationale studenten en medewerkers van de universiteit en ziekenhuizen, en bedrijven die over de grens werken. Voor consumenten- en publieksapps is Nederlands meestal essentieel; voor B2B-tools en diensten voor studenten kan Engels de hoofdtaal zijn. Beide goed ondersteunen betekent alle tekst uit de code halen, inclusief transactionele e-mails en juridische documenten, in plaats van te vertrouwen op vertaling door de browser. Het betekent ook namen en adressen valideren met internationale tekens en notaties. Dit tijdens het productieproject doen, is veel goedkoper dan het na de lancering achteraf inbouwen.
+
+## "Hoe Vergelijk Ik Lokale Opties?"
+
+Utrechtse oprichters vergelijken meestal drie routes. Lokale freelancers zitten dichtbij en zijn flexibel, maar verschillen sterk in ervaring met AI-gegenereerde code, en facturatie per uur maakt kosten onzeker. Regionale bureaus brengen structuur en ontwerpcapaciteit, maar beginnen meestal met verkenning en stellen vaak voor opnieuw te bouwen. Een specialist als LaunchStudio richt zich alleen op de laatste kilometer tegen een vaste prijs, behoudt de frontend en werkt online met een basis in Amsterdam op 25 minuten afstand. De juiste keuze hangt af van of je product gedefinieerd is (specialist), ongedefinieerd (bureau) of doorlopend functiewerk nodig heeft (freelancer of team) — en veel oprichters combineren ze in de loop van de tijd.
+
+## "Hoe Ziet een Realistische Lanceringsmaand Eruit?"
+
+Voor een Utrechtse oprichter met een werkend prototype ziet een typische maand er zo uit: week één is het kennismakingsgesprek, de vaste offerte en de review; week twee en drie zijn de fixes, terwijl de oprichter teksten, de privacyverklaring en de eerste gebruikers voorbereidt; week vier is testen, lanceren en de eerste 48 uur ondersteuning. Oprichters die de startup combineren met een baan of studie, spreiden het voorbereidende werk vaak over avonden — wat goed werkt, omdat de engineering parallel loopt en niet afhangt van hun dagelijkse beschikbaarheid.
+
+## "Wat Zijn de Meest Voorkomende Bevindingen in Utrechtse Prototypes?"
+
+De problemen die LaunchStudio in AI-prototypes van Utrechtse oprichters vindt, zijn dezelfde als overal, maar hoe vaak ze voorkomen, zegt veel. In volgorde van hoe vaak ze verschijnen: toegangsbeheer dat alleen in de interface wordt afgedwongen; ontbrekende of ongeteste back-ups; een database die standaard in een Amerikaanse regio is aangemaakt; betalingen die door de redirect van de browser worden bevestigd in plaats van door een webhook; geheime sleutels in frontendcode; transactionele e-mails vanaf niet-geauthenticeerde domeinen die in de spam belanden; en accounts geregistreerd op persoonlijke adressen of die van oud-samenwerkingspartners. De meeste apps hebben er drie tot vijf. Geen ervan vereist een herbouw, en samen vertegenwoordigen ze doorgaans één tot twee weken gericht werk.
+
+Een nuttige oefening vóór je kennismakingsgesprek is de punten te controleren die je zelf kunt controleren: de twee-accountstest, het zoeken naar sleutels in de paginabron, de databaseregio in het dashboard van je aanbieder, en het e-mailadres van de eigenaar van elk account. Wie met die antwoorden binnenkomt, verkort de review en verlaagt vaak de offerte.
+
+## "Wat Gebeurt Er na de Lancering?"
+
+Bij de lancering begint het echte leren. Volg in de eerste weken dagelijks de foutregistratie en de aanmeldflow, praat met vroege gebruikers en weersta de neiging functies toe te voegen totdat het product zich voorspelbaar gedraagt. Beslis wie de app onderhoudt: jij met je AI-tool, een lokale freelancer, of beheerde hosting voor € 49 per maand via het Launch & Grow-pakket van LaunchStudio, dat hosting, SSL, monitoring, back-ups en beveiligingsupdates omvat. Wat je ook kiest: houd de overdrachtsdocumentatie actueel, herhaal de twee-accountstest na grote wijzigingen, en plan een korte review vóór je volgende grote mijlpaal — een financieringsronde, een contract in de publieke sector of een campagne die een golf nieuwe gebruikers brengt. Het Utrechtse ecosysteem beweegt snel zodra een product zich bewijst; een stabiel fundament laat je meebewegen.
+
+## "Is Het de Moeite Waard Om Het Goed te Doen voor een Kleine Lokale App?"
+
+Ja, omdat de kosten scheef verdeeld zijn. Een gericht productieproject voor een kleine Utrechtse app kost hooguit een paar duizend euro. Eén datalek, een week aan verloren boekingen of een mislukte aanbestedingsbeoordeling kost meer — in geld en in de lokale reputatie waarvan kleine, gemeenschapsgedreven producten afhangen.
+
+## "Wie Doet het Werk Eigenlijk?"
+
+Achter LaunchStudio staat het team van Manifera met 120+ ervaren engineers. Manifera is een softwareontwikkelbedrijf met 11+ jaar ervaring, 160+ projecten en klanten als Vodafone, TNO en CFLW. Het meeste engineeringwerk gebeurt in het ontwikkelcentrum van Manifera aan de Pho Quang-straat in Ho Chi Minh-stad, met aansturing vanuit Amsterdam en een hub in Singapore. Die combinatie maakt vaste prijzen van ongeveer 20% van traditionele bureautarieven mogelijk zonder te bezuinigen op kwaliteit. Meer over het team lees je op [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/).
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: De flexplek-uitwisseling voor Utrechtse coworking spaces
+### Een AI-Native Oprichter in Actie: Een App om Werkplekken te Ruilen tussen Utrechtse Coworkingruimtes
 
-Bas Oudshoorn beheert een verzamelgebouw voor zelfstandigen nabij Utrecht Centraal en bouwde met behulp van Bolt de applicatie Werkplekwissel: aangesloten flexwerkers konden via de app eenvoudig een dag een bureau reserveren bij bevriende locaties elders in Utrecht (onder meer in Lombok en bij het Science Park), direct per dagdeel afrekenen met iDEAL en zien welke vakgenoten er die dag aanwezig waren. Vier locaties deden mee aan de pilot; een vijfde wilde aansluiten.
+Bas Oudshoorn beheert een coworkingruimte bij Utrecht Centraal en bouwde Werkplekwissel in Bolt: leden van aangesloten coworkingruimtes in Utrecht konden voor een dag een werkplek op een andere locatie boeken, per boeking met iDEAL betalen, en zien wie er nog meer uit hun community aanwezig was. Vier ruimtes deden mee aan de pilot, en een vijfde, bij het Science Park, wilde aansluiten.
 
-Vóór de officiële uitrol liep Bas tegen praktische knelpunten aan. Betalingen verliepen via een Engelstalige Stripe-creditcardpagina, terwijl zijn gebruikers nadrukkelijk om iDEAL vroegen. Reserveringen werden als 'betaald' gemarkeerd zodra de browser terugkeerde, waardoor flexwerkers die het venster te vroeg sloten wel een bevestiging kregen maar er niets was afgeschreven. Bovendien konden leden van de ene locatie via de URL het complete ledenoverzicht van alle andere locaties inzien, inclusief privénummers. De database draaide in de VS en de app stond nog op een test-URL van Bolt.
+Voordat hij uitbreidde, stelde Bas elke vraag op deze lijst — en verschillende antwoorden waren ongemakkelijk. Betalingen liepen alleen via een Stripe-kaartbetaling, terwijl zijn leden steeds om iDEAL vroegen. Een boeking werd als betaald gemarkeerd wanneer het lid terugkwam van het afrekenen, dus het tabblad sluiten leverde boekingen op die betaald leken zonder betaling. Leden van de ene coworkingruimte konden de volledige ledenlijst van de andere bekijken, inclusief telefoonnummers. De database stond in een Amerikaanse regio, en de app draaide nog op een preview-URL van Bolt.
 
-De engineers van LaunchStudio schakelden de kassa om naar Mollie met iDEAL en creditcards, gevalideerd via cryptografische webhooks; schermden de ledenlijsten af via Row-Level Security zodat gebruikers alleen mede-reserveringen op dezelfde locatie zagen; verhuisden de database naar een Europees datacenter met dagelijkse back-ups; stelden een verwerkersoverzicht op voor de privacyverklaring; en lanceerden de applicatie op Bas' eigen domein inclusief staging en monitoring.
+De engineers van LaunchStudio zetten het afrekenen over naar Mollie met iDEAL en kaarten, bevestigd via geverifieerde webhooks; beperkten de ledenlijsten zodat leden alleen de mensen zagen die op dezelfde dag op dezelfde locatie waren ingecheckt, met een opt-in voor zichtbaarheid; migreerden de database naar een EU-regio met back-ups en een getest herstel; stelden de lijst met verwerkers voor de privacyverklaring van Bas op; en zetten de app op zijn eigen domein met staging en monitoring.
 
-**Resultaat:** Werkplekwissel breidde binnen drie maanden uit naar zeven Utrechtse verzamelgebouwen en verwerkt circa 900 flexplekreserveringen per maand. Ruim 80% van de betalingen loopt soepel via iDEAL en administratieve betalingsfouten daalden naar nul.
+**Resultaat:** Werkplekwissel breidde binnen drie maanden uit naar zeven Utrechtse coworkingruimtes en verwerkt zo'n 900 boekingen per maand. iDEAL is goed voor ongeveer 80% van de betalingen, en onbetaalde boekingen daalden naar nul.
 
-> *"Op elke vraag die ik stelde kreeg ik een nuchter, technisch antwoord zonder verkooppraatjes. Dat gaf me het vertrouwen dat de geldstromen en privégegevens van onze huurders écht goed geregeld zijn."*
+> *"Elke vraag die ik stelde, had een saai, specifiek antwoord. Dat is precies wat ik wilde — saai is wat je wilt van het deel van je app dat met geld omgaat."*
 > — **Bas Oudshoorn, Oprichter, Werkplekwissel (Utrecht)**
 
-**Kosten & Tijdlijn:** € 2.300 (Launch Ready-pakket: iDEAL-webhooks, databasemigratie, AVG-toegangsbeheer en staging) — afgerond binnen 10 werkdagen.
+**Kosten & Tijdlijn:** € 2.300 (Launch Ready-pakket met betalingen, toegangsbeheer en datamigratie) — afgerond in 10 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Werkt LaunchStudio ook met startende ondernemers uit de regio Utrecht?
+### Werkt LaunchStudio met oprichters uit Utrecht?
 
-Zeker. Het gehele intake- en ontwikkeltraject verloopt soepel digitaal, en voor wie behoefte heeft aan persoonlijk contact ligt het Europese kantoor van Manifera aan de Herengracht 420 in Amsterdam op slechts 25 minuten treinreizen van Utrecht Centraal.
+Ja. Het hele proces verloopt online, en het Europese kantoor van Manifera aan de Herengracht 420 in Amsterdam ligt op korte treinafstand van Utrecht, voor wie liever persoonlijk afspreekt.
 
-### Is het toevoegen van iDEAL aan een AI-prototype ingewikkeld?
+### Is iDEAL moeilijk toe te voegen aan een AI-prototype?
 
-Technisch gezien niet, mits je de juiste architectuur kiest. Zowel Mollie als Stripe ondersteunt iDEAL. De cruciale stap is het verplaatsen van de betalingsbevestiging naar een beveiligde server-webhook, zodat betalingsstatussen gegarandeerd 100% synchroon lopen met de bank.
+Meestal niet. Zowel Mollie als Stripe ondersteunt iDEAL. Het belangrijke werk is betalingen op de server bevestigen via geverifieerde webhooks, wat ook de meeste betaalafwijkingen in AI-gebouwde apps oplost.
 
-### Mijn app richt zich op studenten of scholen. Zijn er extra regels om rekening mee te houden?
+### Mijn app is voor studenten of scholen. Moet ik ergens speciaal op letten?
 
-Jazeker. Gegevens van studenten en minderjarigen vereisen scherpere privacywaarborgen en expliciete bewaartermijnen. Geef dit direct aan tijdens de intake; we zorgen dan dat de database-autorisatie en het bewaartermijnenbeleid hier naadloos op aansluiten.
+Ja. Data over kinderen en onderwijsgegevens kunnen strengere omgang en duidelijkere toestemming vereisen. Noem het in je kennismakingsgesprek, zodat de review de relevante toegangscontroles en bewaarinstellingen meeneemt.
 
-### Wat is het voordeel van Manifera's internationale structuur voor een Utrechtse startup?
+### Waarom doet de internationale opzet van Manifera ertoe voor een Utrechtse oprichter?
 
-Het combineert het beste van twee werelden: een Nederlands aanspreekpunt en juridische zekerheid in Amsterdam, gekoppeld aan de schaalgrootte en technische diepgang van ons ervaren ontwikkelcentrum in Ho Chi Minhstad. Daardoor leveren we enterprise-niveau tegen tarieven die bereikbaar zijn voor zelfstandige oprichters.
+Ze combineert Europees klantcontact en juridische aanwezigheid in Amsterdam met een ervaren engineeringcentrum in Ho Chi Minh-stad. Die mix maakt vaste prijzen ruim onder Nederlandse bureautarieven mogelijk, met behoud van standaarden op enterpriseniveau.
 
-### Helpt een professionele livegang bij de lokale vindbaarheid in Google en AI-zoekers?
+### Helpt een productielancering mijn app om in lokale zoekresultaten en AI-antwoorden te verschijnen?
 
-Absoluut. Een stabiel HTTPS-domein, snelle laadtijden op mobiel en heldere gestructureerde bedrijfsgegevens (inclusief vermelding van Utrecht in je Schema.org-data) zorgen ervoor dat zoekmachines en AI-assistenten jouw dienst met voorrang aanbevelen aan gebruikers in de regio.
+Het helpt. Een stabiel domein met HTTPS, snelle pagina's en duidelijke locatie-informatie (zoals "Utrecht" in je content en gestructureerde data) maken het zoekmachines en AI-antwoordmachines makkelijker je product aan lokale gebruikers aan te bevelen.
 
 <script type="application/ld+json">
 {
@@ -145,28 +175,28 @@ Absoluut. Een stabiel HTTPS-domein, snelle laadtijden op mobiel en heldere gestr
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Werkt LaunchStudio ook met startende ondernemers uit de regio Utrecht?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Het hele proces verloopt online, en Manifera's kantoor aan de Herengracht in Amsterdam ligt op slechts 25 minuten treinen van Utrecht." }
+      "name": "Werkt LaunchStudio met oprichters uit Utrecht?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Het proces verloopt online, en het Europese kantoor van Manifera aan de Herengracht 420 in Amsterdam ligt op korte treinafstand voor persoonlijke afspraken." }
     },
     {
       "@type": "Question",
-      "name": "Is het toevoegen van iDEAL aan een AI-prototype ingewikkeld?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nee. Zowel Mollie als Stripe ondersteunt iDEAL uitstekend. Het belangrijkste is de verificatie via cryptografische webhooks op de server." }
+      "name": "Is iDEAL moeilijk toe te voegen aan een AI-prototype?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Meestal niet. Mollie en Stripe ondersteunen iDEAL; het belangrijke werk is betalingen bevestigen via geverifieerde webhooks op de server." }
     },
     {
       "@type": "Question",
-      "name": "Mijn app richt zich op studenten of scholen. Zijn er extra regels om rekening mee te houden?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Data van minderjarigen en onderwijsinstellingen vereist strengere AVG-maatregelen, scherpere toegangsrechten en duidelijke bewaartermijnen." }
+      "name": "Mijn app is voor studenten of scholen. Moet ik ergens speciaal op letten?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Data van kinderen en onderwijsgegevens kunnen strengere omgang en toestemming vereisen, dus de review hoort relevante toegangscontroles en bewaartermijnen mee te nemen." }
     },
     {
       "@type": "Question",
-      "name": "Wat is het voordeel van Manifera's internationale structuur voor een Utrechtse startup?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nederlandse juridische zekerheid en regie in Amsterdam gecombineerd met een engineeringcentrum in Vietnam, waardoor enterprise-kwaliteit betaalbaar blijft." }
+      "name": "Waarom doet de internationale opzet van Manifera ertoe voor een Utrechtse oprichter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ze combineert Europees klantcontact in Amsterdam met een ervaren engineeringcentrum in Ho Chi Minh-stad, wat vaste prijzen onder Nederlandse bureautarieven mogelijk maakt." }
     },
     {
       "@type": "Question",
-      "name": "Helpt een professionele livegang bij de lokale vindbaarheid in Google en AI-zoekers?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Een snel HTTPS-domein met gestructureerde data en duidelijke Utrechtse locatiesignalen versterkt de zichtbaarheid in lokale zoek- en AI-resultaten." }
+      "name": "Helpt een productielancering mijn app om in lokale zoekresultaten en AI-antwoorden te verschijnen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Een stabiel HTTPS-domein, snelle pagina's en duidelijke locatie-informatie helpen zoek- en AI-antwoordmachines het product lokaal aan te bevelen." }
     }
   ]
 }

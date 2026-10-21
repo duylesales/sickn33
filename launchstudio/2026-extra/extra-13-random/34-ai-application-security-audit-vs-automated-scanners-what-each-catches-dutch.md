@@ -21,133 +21,187 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Technische oprichters vragen ons regelmatig of ze een handmatige beveiligingsaudit voor hun AI-applicatie kunnen overslaan door simpelweg de juiste tools te draaien. Het is een terechte vraag: moderne scanners zijn krachtig, vaak gratis en scannen een codebase binnen enkele seconden. Dependabot signaleert kwetsbare packages, Semgrep zoekt naar risicovolle codepatronen, OWASP ZAP bestookt de actieve webapplicatie en gitleaks speurt naar rondslingerende API-sleutels. Zet ze allemaal aan, zorg voor een groen dashboard en u kunt live. Het fundamentele probleem is echter niet dat geautomatiseerde tools zwak zijn. Het probleem is dat de meest voorkomende, catastrofale kwetsbaarheden in AI-gegenereerde code exact het type fouten zijn dat scanners structureel niet kúnnen zien.
+Technische oprichters vragen vaak of ze een handmatige beveiligingsaudit van hun AI-applicatie kunnen overslaan door de juiste tools te draaien. Het is een terechte vraag: de tools zijn goed, vaak gratis en draaien in seconden. Dependabot signaleert kwetsbare packages, Semgrep vindt riskante codepatronen, OWASP ZAP test de draaiende app, gitleaks vindt geheimen. Draai ze allemaal, krijg een groen dashboard, lanceer. Het probleem is niet dat de tools zwak zijn. Het is dat de meest voorkomende ernstige kwetsbaarheden in AI-gegenereerde apps precies het soort zijn dat tools structureel niet kunnen zien.
 
-## De Vier Families van Geautomatiseerde Scanners
+## De Vier Families van Geautomatiseerde Tools
 
-**Dependency-scanners (SCA — Software Composition Analysis)** — Dependabot, Snyk, npm audit, Renovate. Zij vergelijken uw externe packages met bekende kwetsbaarheidsdatabases (CVE's). Uiterst effectief in het vinden van bekende lekken in code van derden; ze weten echter niets van uw eigen unieke applicatielogica.
+**Scanners voor afhankelijkheden (SCA)** — Dependabot, Snyk, npm audit, Renovate. Ze vergelijken uw packages met databases van kwetsbaarheden. Uitstekend in het vinden van bekende problemen in code van derden; ze weten niets van uw eigen code.
 
-**Statische code-analyse (SAST — Static Application Security Testing)** — Semgrep, CodeQL, SonarQube, ESLint security plugins. Zij analyseren uw broncode op herkenbare patronen: SQL samengesteld uit losse strings, `eval`, `dangerouslySetInnerHTML` of zwakke cryptografie. Goed in het vangen van bekende syntaxrisico's; blind voor ontbrekende bedrijfslogica.
+**Statische analyse (SAST)** — Semgrep, CodeQL, SonarQube, beveiligingsplugins voor ESLint. Ze lezen uw broncode op zoek naar patronen: SQL opgebouwd uit strings, `eval`, `dangerouslySetInnerHTML`, zwakke cryptografie. Goed in bekende gevaarlijke patronen; blind voor ontbrekende logica.
 
-**Dynamische scanners (DAST — Dynamic Application Security Testing)** — OWASP ZAP, Burp Suite, Nuclei. Zij vallen de draaiende applicatie van buitenaf aan: ontbrekende HTTP-beveiligingsheaders, openbare paden, gereflecteerde cross-site scripting (XSS), misconfiguraties in TLS en bekende serverlekken. Sterk in oppervlakkige infrastructuurproblemen; niet in staat om uw datamodel te doorgronden.
+**Dynamische scanners (DAST)** — OWASP ZAP, de scanner van Burp Suite, Nuclei. Ze testen de draaiende applicatie: ontbrekende beveiligingsheaders, blootgestelde paden, gereflecteerde XSS, verkeerd geconfigureerde TLS, bekende serverkwetsbaarheden. Goed in configuratie- en oppervlakteproblemen; beperkt als het gaat om het begrijpen van uw datamodel.
 
-**Secret-scanners** — gitleaks, trufflehog, GitHub secret scanning. Zij doorzoeken broncode en Git-commithistorie op API-sleutels, privécertificaten en databasewachtwoorden. Buitengewoon effectief in hun specifieke taak.
+**Scanners voor geheimen** — gitleaks, trufflehog, GitHub secret scanning. Ze doorzoeken code en geschiedenis op inloggegevens. Zeer effectief in wat ze doen.
 
-## Wat Scanners Betrouwbaar Oplossen
+## Wat de Tools Betrouwbaar Vinden
 
-| Categorie kwetsbaarheid | SCA | SAST | DAST | Secret-scanners |
+| Probleem | SCA | SAST | DAST | Geheimen |
 | --- | --- | --- | --- | --- |
-| Verouderde packages met bekende CVE's | ✅ | | | |
-| Hardcoded API-sleutels in broncode of Git-historie | | Deels | Deels | ✅ |
-| SQL-injectie via string-concatenatie | | ✅ | Deels | |
-| Onveilige HTML-rendering in React | | ✅ | Deels | |
-| Ontbrekende security headers (CSP, HSTS) | | | ✅ | |
-| Openstaande debug-endpoints of testpagina's | | | ✅ | |
+| Kwetsbare packageversies | ✅ | | | |
+| Vastgecodeerde API-sleutels in code of geschiedenis | | Deels | Deels | ✅ |
+| SQL opgebouwd door strings samen te voegen | | ✅ | Deels | |
+| Onveilige HTML-weergave | | ✅ | Deels | |
+| Ontbrekende beveiligingsheaders, TLS-problemen | | | ✅ | |
+| Blootgestelde debug- of standaardpaden | | | ✅ | |
 
-Dit zijn zonder twijfel waardevolle controles. Elke AI-gebouwde webapplicatie zou deze tools standaard en continu moeten draaien in haar CI/CD-pijplijn.
+Dit zijn echte, waardevolle bevindingen. Elke AI-gebouwde app hoort deze tools doorlopend te draaien.
 
-## Wat Scanners Structureel Over het Hoofd Zien
+## Wat de Tools Structureel Missen
 
-Hier bevindt zich de lijst met kwetsbaarheden die het overgrote deel van de datalekken in AI-gegenereerde software veroorzaakt:
+Nu de lijst die het meest telt voor AI-gegenereerde apps:
 
-**Gebrekkig toegangsbeheer (Broken Object Level Authorization / BOLA / IDOR).** Een gebruiker kan de factuur van een andere klant inzien door simpelweg het factuurnummer in de URL of API-aanroep aan te passen. Voor een scanner is `GET /api/invoices/1041` die HTTP-statuscode 200 met een geldige factuur teruggeeft een vlekkeloos geslaagd verzoek. De scanner weet immers niet dat factuur 1041 toebehoort aan Klant B, terwijl de ingelogde gebruiker Klant A is. Dit is het nummer één risico in de OWASP Top 10 en veruit de meest voorkomende kritieke bevinding in AI-software.
+**Gebroken toegangsbeheer.** Een gebruiker kan het record van een andere gebruiker lezen door een ID te veranderen. Voor een scanner is `GET /api/invoices/1041` dat een factuur teruggeeft een geslaagd verzoek. Hij weet niet dat factuur 1041 van iemand anders is. Dit is de bovenste categorie in de OWASP Top 10 en de meest voorkomende kritieke bevinding in AI-gebouwde apps.
 
-**Ontbrekende autorisatie op beheerfuncties.** Een scanner ontdekt wellicht de route `/api/admin/delete-user`, maar kan niet beoordelen of de ingelogde testgebruiker met een gratis account die handeling wel of niet mag initiëren.
+**Ontbrekende autorisatie op beheerdersfuncties.** Een scanner vindt misschien `/admin`, maar kan niet zien of de ingelogde testgebruiker daar mag komen.
 
-**Aanwezige maar inhoudelijk ondeugdelijke databasepolicies.** Row-Level Security staat netjes ingeschakeld in PostgreSQL, maar met een policy zoals `using (true)`, of een policy die een veld controleert dat de frontend zelf mag meesturen. Een statische scanner ziet dat RLS 'enabled' is en vinkt de check groen af; de scanner begrijpt de bedrijfsregels niet.
+**Databasebeleid dat aanwezig is maar niet klopt.** Row level security aangezet met een policy als `using (true)`, of een policy die een veld controleert dat de client kan instellen. Statische tools zien dat RLS bestaat; ze kunnen niet beoordelen of de regel bij uw bedrijf past.
 
-**Fouten in de betalings- en voorraadlogica.** Bestellingen die als 'betaald' worden gemarkeerd op basis van een browser-redirect, betaalwebhooks zonder cryptografische handtekeningverificatie, prijzen die vanuit de frontend worden uitgelezen, of voorraadcontroles die vatbaar zijn voor race conditions. Dit zijn zuivere logicafouten, geen syntaxpatronen.
+**Fouten in betaallogica.** Bestellingen die als betaald worden gemarkeerd bij een redirect in de browser, webhooks zonder verificatie van de handtekening, prijzen die van de client worden overgenomen. Dit zijn logische fouten, geen patronen.
 
-**Mass Assignment (Onbedoelde parameter-toewijzing).** Een API-endpoint voor het bewerken van een gebruikersprofiel dat simpelweg `req.body` integraal naar de database wegschrijft. Stuurt een kwaadwillende bezoeker `role: "admin"` of `plan: "enterprise"` mee, dan wordt hij op slag beheerder.
+**Mass assignment.** Een update-endpoint dat `role` of `plan` van de client accepteert. Sommige SAST-regels vangen duidelijke gevallen; de meeste echte gevallen zien eruit als gewone omgang met objecten.
 
-**Data-uitwisseling tussen verschillende organisaties (Multi-Tenant Leaks).** Gegevens van Bedrijf X die opduiken in zoekresultaten of achtergrondtaken van Bedrijf Y, veelal door onvolledige JOIN-queries of gedeelde indexen.
+**Schendingen van bedrijfsregels.** Een kortingscode die onbeperkt bruikbaar is, een boeking die de capaciteit omzeilt, een proefperiode die met een nieuw e-mailadres opnieuw kan worden gestart.
 
-Het opsporen van deze kwetsbaarheden vereist diepgaand inzicht in wat de applicatie *behoort* te doen. Dat is exact wat een handmatige beveiligingsaudit toevoegt.
+**Lekken tussen tenants.** Data van de ene organisatie die in de query's van een andere verschijnt, vooral via joins, zoekfuncties of achtergrondtaken.
 
-## Hoe een Handmatige Beveiligingsaudit Anders Te Werk Gaat
+Hiervoor moet u begrijpen wat de app hoort te doen. Dat is wat een handmatige review toevoegt.
 
-Een ervaren auditor start vanuit het datamodel en de rollenstructuur: wie mag onder welke omstandigheden bij welke data? Vervolgens toetst de auditor of de broncode, databasepolicies en API-endpoints die regels daadwerkelijk afdwingen: policies handmatig lezen, requests simuleren onder verschillende gebruikerssessies, betalingsstromen end-to-end testen en doelgericht zoeken naar de blinde vlekken die AI-tools typisch achterlaten. Geautomatiseerde scanners worden tijdens een audit wel gebruikt, maar puur als ondersteunend gereedschap, niet als eindoordeel.
+## Hoe een Handmatige Beveiligingsaudit van een AI-Applicatie Anders Werkt
 
-## De Optimale Combinatie
+Een reviewer begint bij het datamodel en de rollen: wie hoort waartoe toegang te hebben. Daarna controleert hij of de code, het databasebeleid en de API's dat afdwingen — door policy's te lezen, verzoeken als verschillende gebruikers te testen, betaalflows van begin tot eind te volgen en te kijken naar de paden die AI-tools doorgaans openlaten. Tools worden tijdens de audit gebruikt, maar als instrumenten, niet als het oordeel.
 
-De keuze is niet "audit óf scanners"; de enige juiste aanpak is een doordachte integratie van beide:
+## De Combinatie Die Werkt
 
-1. **Continu in CI/CD:** Dependency-scans, secret-detectie en SAST op elke pull request. Dit kost vrijwel niets en voorkomt regressies.
-2. **Vóór de lancering en na ingrijpende releases:** Een gerichte handmatige audit gefocust op autorisatie, betalingsstromen en bedrijfslogica.
-3. **Periodiek op productie:** Een dynamische DAST-scan om configuratiedrift op servers tijdig te signaleren.
-4. **Blijvend in de testsuite:** Geautomatiseerde autorisatietests die direct zijn afgeleid uit de auditbevindingen — zoals een integratietest die bewijst dat Gebruiker A de factuur van Gebruiker B niet kan opvragen.
+Het juiste antwoord is niet audit of tools; het is beide, op de juiste plekken:
 
-Stap 4 vormt de cruciale brug. De handmatige audit ontdekt de logische kwetsbaarheden die scanners over het hoofd zien; de daaruit voortvloeiende unittests borgen die beveiliging vervolgens voor eeuwig in uw deployment-pijplijn.
+1. **Doorlopend, in CI:** scannen van afhankelijkheden, scannen op geheimen en SAST bij elke push. Ze zijn goedkoop en vangen regressies op.
+2. **Vóór de lancering en na grote wijzigingen:** een handmatige review gericht op toegangsbeheer, betalingen en bedrijfslogica.
+3. **Periodiek:** een DAST-scan van productie op configuratieverschuiving.
+4. **Permanent:** geautomatiseerde tests geschreven op basis van de bevindingen van de audit — bijvoorbeeld een test dat gebruiker A de factuur van gebruiker B niet kan lezen. Die maken van handmatige bevindingen een doorlopende bescherming, en dat is wat scanners niet kunnen bieden.
+
+Stap 4 is de brug. De audit ontdekt wat de tools niet kunnen; tests bewaken het daarna voorgoed.
+
+## De Tools in Één Middag Inrichten
+
+De geautomatiseerde helft van een programma voor beveiligingsaudits van AI-applicaties is goedkoop in te richten. Voor een typisch TypeScript-project op GitHub:
+
+- **Scannen van afhankelijkheden:** zet Dependabot-meldingen en beveiligingsupdates aan in de instellingen van de repository; voeg optioneel Renovate toe voor gegroepeerde updates.
+- **Scannen op geheimen:** zet GitHub secret scanning en push protection aan; voeg gitleaks toe aan CI om geschiedenis en pull requests te scannen.
+- **Statische analyse:** voeg Semgrep toe met de standaardregelsets voor JavaScript/TypeScript en uw framework, of zet CodeQL code scanning aan.
+- **Dynamisch scannen:** draai de baselinescan van OWASP ZAP volgens schema tegen staging — wekelijks is voor de meeste apps genoeg.
+- **Controle van headers:** draai Mozilla's HTTP Observatory tegen productie na elke deployment van infrastructuurwijzigingen.
+
+De hele inrichting kost een paar uur. Het doorlopende werk is het triëren van resultaten, en daar worstelen de meeste teams mee.
+
+## Scanneruitvoer Triëren Zonder te Verdrinken
+
+Een eerste scan van een AI-gebouwde codebase levert vaak tientallen of honderden bevindingen op. Een praktische triage:
+
+1. **Geheimen eerst.** Elk echt gevonden geheim wordt direct geroteerd, ongeacht al het andere.
+2. **Kritieke en hoge kwetsbaarheden in afhankelijkheden in productiecode**, vooral die met bekende exploits, daarna.
+3. **SAST-bevindingen in code voor authenticatie, betalingen of gebruikersinvoer** vóór bevindingen elders.
+4. **Markeer valse positieven expliciet** met een commentaar of onderdrukking die uitlegt waarom, zodat ze niet elke week terugkomen.
+5. **Bundel bevindingen met een laag risico** in een maandelijkse opruimactie.
+
+Tools zijn ontworpen om luidruchtig te zijn: ze waarschuwen liever te vaak dan dat ze iets missen. De waarde komt uit een consequente triageroutine, niet uit het bereiken van nul bevindingen.
 
 ## Autorisatietests Schrijven Die het Gat Dichten
 
-Aangezien scanners niet kunnen weten welke data aan welke gebruiker toebehoort, vormen gerichte autorisatietests de ultieme verdediging. Een beproefde structuur:
+Omdat scanners niet kunnen weten wie eigenaar hoort te zijn van welke data, zijn autorisatietests de manier om die kennis vast te leggen. Een eenvoudige structuur per resource:
 
 ```typescript
-describe("Toegangscontrole op facturen", () => {
-  it("eigenaar kan eigen factuur inzien", async () => {
-    const res = await ingelogdAls(alice).get(`/api/invoices/${aliceFactuur.id}`);
+describe("invoices access", () => {
+  it("owner can read own invoice", async () => {
+    const res = await asUser(alice).get(`/api/invoices/${aliceInvoice.id}`);
     expect(res.status).toBe(200);
   });
-  it("andere klant krijgt een 404 of 403", async () => {
-    const res = await ingelogdAls(bob).get(`/api/invoices/${aliceFactuur.id}`);
-    expect(res.status).toBe(404);
+  it("other customer cannot read it", async () => {
+    const res = await asUser(bob).get(`/api/invoices/${aliceInvoice.id}`);
+    expect(res.status).toBe(404); // of 403
   });
-  it("beheerder van een ander bedrijf heeft geen toegang", async () => {
-    const res = await ingelogdAls(externeAdmin).get(`/api/invoices/${aliceFactuur.id}`);
+  it("company admin of another company cannot read it", async () => {
+    const res = await asUser(otherAdmin).get(`/api/invoices/${aliceInvoice.id}`);
     expect(res.status).toBe(404);
   });
 });
 ```
 
-Door dit patroon toe te passen op alle gevoelige entiteiten, worden eventuele regressies — bijvoorbeeld wanneer een AI-tool tijdens een refactor per ongeluk een databasequery aanpast — onmiddellijk opgemerkt vóórdat de code naar productie gaat.
+Herhaal dit voor elk type resource en elke rol. Tests als deze hadden elk van de vier problemen in het voorbeeld hieronder opgevangen — en ze blijven ze opvangen wanneer een AI-tool een route opnieuw genereert.
 
-## Hoe LaunchStudio Helpt
+## Waar Tijd voor Handmatige Review het Best Wordt Besteed
 
-De beveiligingsaudit van LaunchStudio combineert de kracht van geautomatiseerde analysetools met diepgaande handmatige verificatie door senior software-engineers: het filteren van 'false positives' uit geautomatiseerde scans, gevolgd door een grondige inspectie van autorisatielogica, betalingsintegraties, multi-tenant grenzen en databasemachtigingen. Elke geconstateerde kwetsbaarheid wordt door ons direct opgelost én voorzien van een geautomatiseerde regressietest in uw CI/CD-straat.
+Een handmatige review heeft beperkte uren, dus ervaren reviewers besteden ze waar tools blind zijn: het datamodel en de eigendomsregels; databasebeleid (vooral uitzonderingen en gebruik van de service role); elk endpoint dat data wijzigt; betaal- en abonnementsflows van begin tot eind; beheer- en supporttools; toegang tot bestanden; grenzen tussen tenants in zoekfuncties, exports en achtergrondtaken; en bedrijfsregels zoals kortingen, limieten en proefperiodes. Scanneruitvoer wordt gelezen als input, niet als agenda.
 
-LaunchStudio wordt ondersteund door Manifera, onder leiding van CEO Herre Roelevink, medeoprichter van CyberDevOps (thans CFLW Cyber Strategies), dat in nauwe samenwerking met TNO geavanceerde systemen voor dreigingsanalyse ontwikkelde. Onze software-experts in Ho Chi Minhstad werken dagelijks met de modernste analysetools; het lokale contact verloopt via onze vestiging aan de Herengracht 420 in Amsterdam. Lees meer op de [technologiepagina van Manifera](https://www.manifera.com/about-us/manifera-technologies/) en bekijk de bekende risicopatronen in de [OWASP Top 10](https://owasp.org/www-project-top-ten/).
+## Resultaten Samenvoegen tot Eén Beeld
 
-Zijn al uw scanner-dashboards groen, maar wilt u absolute zekerheid vóórdat u live gaat? [Vraag een vaste offerte aan voor een gerichte beveiligingsaudit](https://launchstudio.eu/nl/#contact).
+Bevindingen uit tools en handmatige review horen in één lijst met één ernstschaal te belanden, zodat u over beide heen kunt prioriteren. Veel teams gebruiken hun issuetracker met een label "security" en een veld voor ernst. Bekijk de lijst in een vast ritme — bijvoorbeeld om de twee weken — en sluit items af met een verwijzing naar de oplossing en de test die haar beschermt.
+
+## Kosten Vergeleken over een Jaar
+
+Voor een kleine SaaS zijn de bovenstaande geautomatiseerde tools op kleine schaal grotendeels gratis of goedkoop. Een handmatige review kost doorgaans van enkele honderden tot een paar duizend euro, afhankelijk van de scope. Commerciële alles-in-één-beveiligingsplatforms kunnen per jaar meer kosten dan een gerichte handmatige review en toch logische fouten missen. De meest kosteneffectieve combinatie voor AI-gebouwde apps is meestal gratis geautomatiseerde tools in CI, autorisatietests die één keer worden geschreven, en een gerichte handmatige review vóór de lancering en vóór grote releases.
+
+## Kiezen tussen SAST-Tools
+
+Voor kleine teams is de keuze tussen tools voor statische analyse minder belangrijk dan er consequent één gebruiken. Semgrep is snel, eenvoudig in CI te draaien en heeft goede communityregels voor JavaScript- en TypeScript-frameworks; het laat u ook eenvoudige eigen regels schrijven — bijvoorbeeld het signaleren van elke routehandler die de database aanroept zonder uw autorisatiehulpfunctie aan te roepen. CodeQL, geïntegreerd met GitHub, doet diepere dataflowanalyse en is gratis voor openbare repositories en beschikbaar voor private via het beveiligingsaanbod van GitHub. SonarQube en SonarCloud combineren beveiligingscontroles met metingen van codekwaliteit. Kies er één, stem de regels af om ruis te verminderen en maak het een verplichte controle.
+
+## Eigen Regels: Uw Eigen Beveiligingsafspraken Vastleggen
+
+De waardevolste statische regels zijn vaak de regels die specifiek zijn voor uw codebase. Voorbeelden: elk bestand onder `app/api` moet `requireUser()` aanroepen; geen enkele clientcomponent mag importeren uit de module `server/secrets`; geen SQL-string mag met template literals worden opgebouwd; geen gebruik van de service role key van Supabase buiten de map `server/admin`. Een handvol van zulke regels maakt van uw afspraken geautomatiseerde controles — bijzonder waardevol wanneer AI-tools code genereren die die afspraken niet kent.
+
+## Wanneer U een Penetratietest Laat Uitvoeren
+
+Een penetratietest door een onafhankelijk bedrijf wordt de moeite waard wanneer klanten erom vragen, wanneer u op schaal zeer gevoelige data verwerkt, wanneer u certificeringen nastreeft, of na grote architectuurwijzigingen. Voor de meeste AI-gebouwde apps die zich op de lancering voorbereiden, is de volgorde die geld bespaart: geautomatiseerde tools plus autorisatietests, daarna een gerichte handmatige review met oplossingen, en daarna — indien nodig — een penetratietest die zich kan richten op resterende, subtielere risico's.
+
+## Een Beveiligingsroutine voor het Eerste Jaar
+
+Bij elkaar opgeteld ziet een realistische routine voor het eerste jaar van een AI-gebouwde SaaS er zo uit: tools die bij elke pull request draaien; een triagesessie om de twee weken; autorisatietests die bij elke nieuwe resource worden uitgebreid; een gerichte handmatige review vóór de lancering en vóór elke grote release; en een korte samenvatting van het beveiligingswerk voor klanten en investeerders. Het is bescheiden in kosten, en het dekt zowel de risico's die tools goed vinden als de risico's die alleen een mens die uw product begrijpt kan zien.
+
+## Waar LaunchStudio Past
+
+De review van LaunchStudio omvat het draaien van de geautomatiseerde tools en het interpreteren van hun uitvoer — veel bevindingen zijn valse positieven of hebben een laag risico — en richt daarna menselijke aandacht op toegangsbeheer, betalingen, tenantisolatie en bedrijfslogica. Bevindingen worden oplossingen en tests, en de tools worden in CI ingebouwd zodat de bescherming na de opdracht doorloopt.
+
+LaunchStudio wordt aangedreven door Manifera, wiens CEO Herre Roelevink medeoprichter was van CyberDevOps (nu CFLW Cyber Strategies), het bedrijf achter een product voor dark-webmonitoring dat met TNO is ontwikkeld. De engineers van Manifera in Ho Chi Minh-stad werken dagelijks met de hier genoemde tools; het Europese contact zit aan de Herengracht 420 in Amsterdam. Zie voor achtergrond [de technologieën van Manifera](https://www.manifera.com/about-us/manifera-technologies/) en de [OWASP Top 10](https://owasp.org/www-project-top-ten/).
+
+Staan uw scanners op groen en weet u het nog steeds niet zeker, [vraag dan een offerte tegen vaste prijs aan](https://launchstudio.eu/nl/#contact) voor een gerichte review.
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Groene Dashboards, Maar Openbare Parkeerplaatsen
+### Een AI-Native Oprichter in Actie: Groene Dashboards, Open Parkeerplaatsen
 
-Niels Brandsma, ervaren backend developer in Hoofddorp, bouwde SlotPark met Cursor: een platform waarmee bedrijven rondom Schiphol onbenutte parkeerplaatsen onderling delen met elkaars medewerkers, inclusief automatische maandfacturatie. Als technisch onderlegde oprichter liet hij niets aan het toeval over: Dependabot, Semgrep, gitleaks en een wekelijkse OWASP ZAP scan stonden allemaal aan. Alle dashboards kleurden vlekkeloos groen. Twaalf bedrijven en zo'n 400 werknemers maakten er gebruik van.
+Niels Brandsma, backendontwikkelaar in Hoofddorp, bouwde SlotPark met Cursor: bedrijven rond Schiphol delen ongebruikte parkeerplaatsen met elkaars werknemers via een boekingsapp, met maandelijkse facturatie. Omdat hij bewust met beveiliging bezig was, draaide Niels Dependabot, Semgrep, gitleaks en een wekelijkse OWASP ZAP-scan. Alles groen. Twaalf bedrijven en ongeveer 400 werknemers gebruikten het.
 
-Een potentiële grote corporate klant — een afhandelingsbedrijf op de luchthaven — eiste een onafhankelijke security-audit vóór ondertekening. De audit door LaunchStudio bracht geen enkele traditionele codekwetsbaarheid aan het licht die de scanners hadden gemist. Wél troffen de auditors vier logische fouten aan die geen enkele scanner had kunnen ontdekken. Elke willekeurige werknemer kon reserveringen van collega's bij ándere bedrijven inzien en annuleren door simpelweg het boekings-ID in de URL aan te passen (IDOR). De bedrijfsbeheerders-API controleerde weliswaar of een gebruiker 'admin' was, maar controleerde niet van wélk bedrijf, waardoor een beheerder van Bedrijf A de parkeertarieven en plekken van Bedrijf B kon wijzigen. Row-Level Security stond ingeschakeld op de tabel met boekingen, maar met een policy die leestoegang verleende aan álle geauthenticeerde accounts. En factuurbedragen werden berekend op basis van de prijs die de browser meestuurde tijdens de reservering.
+Een potentiële klant — een bedrijf in luchtvaartdiensten — eiste een onafhankelijke review voordat het tekende. De review van LaunchStudio vond geen problemen die de scanners in hun eigen categorieën hadden gemist. Wel vond ze er vier die ze niet hadden kunnen zien. Elke werknemer kon boekingen van andere bedrijven bekijken en annuleren door een boekings-ID te veranderen. De API voor bedrijfsbeheerders controleerde of de gebruiker beheerder was, maar niet van welk bedrijf, dus elke bedrijfsbeheerder kon de plaatsen en prijzen van een ander bedrijf bewerken. Row level security stond aan op de boekingentabel met een policy die leesacties toestond voor elke geauthenticeerde gebruiker. En factuurbedragen werden berekend op basis van prijzen die de client tijdens het boeken meestuurde.
 
-Binnen vijf werkdagen loste het engineeringteam van LaunchStudio de tenant- en eigendomscontroles op, herschreef de PostgreSQL RLS-policies naar strikte bedrijfs- en gebruikersscoping, verplaatste de prijsberekening naar de backend en schreef 27 geautomatiseerde autorisatietests die direct werden opgenomen in de GitHub Actions-pipeline van Niels.
+In vijf werkdagen herstelde het team de eigendoms- en tenantcontroles, herschreef het de RLS-policy's zodat ze per bedrijf en gebruiker afbakenen, verplaatste het de prijsberekening naar de server, en — voor Niels het belangrijkst — schreef het 27 geautomatiseerde autorisatietests voor elke rol en elke tenantgrens, toegevoegd aan dezelfde CI-pipeline als zijn scanners.
 
-**Resultaat:** De zakelijke klant tekende het contract direct na inzage in het eindrapport en de hertest. In het daaropvolgende jaar vingen de 27 autorisatietests twee regressiefouten af die door latere Cursor-aanpassingen waren geïntroduceerd — fouten waar de geautomatiseerde scanners, nog altijd op groen, straal aan voorbij waren gelopen.
+**Resultaat:** Het luchtvaartdienstenbedrijf tekende na ontvangst van het review- en hertestrapport. In het jaar daarna vingen de autorisatietests twee regressies op die de scanners, nog steeds groen, niet zagen.
 
-> *"Ik had vier verschillende beveiligingstools die me allemaal vertelden dat alles perfect in orde was. Ze hadden volkomen gelijk over alles wat ze konden zien. De ernstige lekken zaten alleen in wat ze niet konden zien."*
+> *"Ik had vier tools die me vertelden dat alles in orde was. Ze hadden gelijk over alles wat ze konden zien. De problemen zaten allemaal in wat ze niet konden zien."*
 > — **Niels Brandsma, Oprichter, SlotPark (Hoofddorp)**
 
-**Kosten & Tijdlijn:** €1.250 (gerichte beveiligingsaudit, herstel van autorisatie en prijslogica, en complete testsuite met 27 geautomatiseerde checks) — opgeleverd binnen 5 werkdagen.
+**Kosten & Tijdlijn:** € 1.250 (gerichte beveiligingsreview, oplossingen voor toegangsbeheer en prijzen, suite met autorisatietests) — afgerond in 5 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Kunnen geautomatiseerde security-scanners een handmatige beveiligingsaudit vervangen?
+### Kunnen geautomatiseerde scanners een beveiligingsaudit van een AI-applicatie vervangen?
 
-Nee. Scanners vullen een audit aan, maar kunnen deze niet vervangen. Ze zijn uitstekend in het vinden van bekende kwetsbaarheden in packages, syntactische fouten en configuratiegebreken, maar hebben geen enkel besef van uw bedrijfsregels en autorisatiematrix — exact het gebied waar de gevaarlijkste kwetsbaarheden in AI-applicaties schuilen.
+Nee. Ze vullen haar aan. Scanners vinden bekende kwetsbaarheden, patronen en configuratieproblemen; ze kunnen niet beoordelen of toegangsregels bij uw bedrijf passen, en daar zitten de ernstigste fouten in AI-gebouwde apps meestal.
 
-### Welke geautomatiseerde tools moet elke met AI gebouwde app minimaal draaien?
+### Welke geautomatiseerde tools hoort elke AI-gebouwde app te draaien?
 
-Minimaal drie tools in uw CI/CD-pipeline: dependency scanning (zoals Dependabot of Snyk), secret scanning (gitleaks of GitHub push protection) en een statische analysetool zoals Semgrep. Vul dit aan met periodieke DAST-scans van uw staging- en productieomgeving.
+Minimaal: scannen van afhankelijkheden (Dependabot of Snyk), scannen op geheimen (gitleaks of de ingebouwde scanning van GitHub) en een tool voor statische analyse zoals Semgrep in CI. Voeg periodieke dynamische scans van productie toe.
 
-### Hoe borg ik dat beveiligingsfouten na een audit niet stiekem terugkeren?
+### Hoe zorg ik dat bevindingen uit een audit opgelost blijven?
 
-Vertaal elke geconstateerde kwetsbaarheid op het gebied van autorisatie of bedrijfslogica direct naar een geautomatiseerde unottest die doelbewust de verboden handeling probeert uit te voeren. Laat deze tests verplicht slagen bij elke build in uw deploymentstraat.
+Maak van elke bevinding over toegangsbeheer of bedrijfslogica een geautomatiseerde test die de verboden actie probeert. Draai de tests in CI, zodat elke regressie de build laat mislukken.
 
-### Waarom benadrukt Manifera het belang van handmatige controle terwijl AI-tools steeds slimmer worden?
+### Waarom legt Manifera de nadruk op handmatige review terwijl tools beter worden?
 
-Omdat het onderscheid tussen 'syntax' en 'semantiek' principieel is. Een geautomatiseerde tool weet niet of een gebruiker bij een bepaald dossier hoort; dat vereist begrip van de zakelijke context en intentie. De security-expertise van Manifera combineert geavanceerde automatisering met ervaren menselijk inzicht.
+Omdat het gat structureel is, geen kwestie van toolkwaliteit. Tools weten niet wie eigenaar hoort te zijn van welke data. De beveiligingsachtergrond van Manifera, die teruggaat tot het werk van Herre Roelevink met TNO, weerspiegelt de opvatting dat oordeel en tooling elk hun plek hebben.
 
-### Helpt een officieel auditrapport bij het opbouwen van online reputatie en vertrouwen?
+### Helpt het doorstaan van beveiligingsscans bij vertrouwenssignalen online?
 
-Absoluut. B2B-kopers en enterprise-klanten verlangen aantoonbare garanties over informatiebeveiliging. Een transparante toelichting op geteste RLS-policies en continue CI-tests verhoogt de conversie in salestrajecten aanzienlijk en versterkt de online betrouwbaarheidssignalen (E-E-A-T) voor zoekmachines en AI-assistenten.
+Beveiligingsheaders en geldige TLS — die scanners controleren — zijn basale vertrouwenssignalen voor browsers en zoekmachines. Diepere beveiliging, geverifieerd door een review, beschermt de reputatie waarop AI-antwoordmachines en klanten vertrouwen.
 
 <script type="application/ld+json">
 {
@@ -156,28 +210,28 @@ Absoluut. B2B-kopers en enterprise-klanten verlangen aantoonbare garanties over 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Kunnen geautomatiseerde security-scanners een handmatige beveiligingsaudit vervangen?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nee. Scanners vinden bekende kwetsbaarheden maar kunnen autorisatie- en bedrijfslogica niet beoordelen." }
+      "name": "Kunnen geautomatiseerde scanners een beveiligingsaudit van een AI-applicatie vervangen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nee. Scanners vinden bekende problemen maar kunnen niet beoordelen of toegangsregels bij het bedrijf passen, en daar zitten fouten in AI-apps meestal." }
     },
     {
       "@type": "Question",
-      "name": "Welke geautomatiseerde tools moet elke met AI gebouwde app minimaal draaien?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Dependency scanning (Dependabot), secret scanning (gitleaks) en statische code-analyse (Semgrep) in CI/CD." }
+      "name": "Welke geautomatiseerde tools hoort elke AI-gebouwde app te draaien?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Scannen van afhankelijkheden, scannen op geheimen en statische analyse in CI, plus periodieke dynamische scans." }
     },
     {
       "@type": "Question",
-      "name": "Hoe borg ik dat beveiligingsfouten na een audit niet stiekem terugkeren?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Door elke auditbevinding om te zetten in een geautomatiseerde autorisatietest die in de deployment-pipeline draait." }
+      "name": "Hoe zorg ik dat bevindingen uit een audit opgelost blijven?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Maak van elke bevinding een geautomatiseerde test die de verboden actie probeert, uitgevoerd in CI." }
     },
     {
       "@type": "Question",
-      "name": "Waarom benadrukt Manifera het belang van handmatige controle terwijl AI-tools steeds slimmer worden?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Omdat tools de zakelijke context van gegevens niet kennen; menselijke beoordeling en tooling vullen elkaar aan." }
+      "name": "Waarom legt Manifera de nadruk op handmatige review terwijl tools beter worden?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Het gat is structureel: tools weten niet wie eigenaar hoort te zijn van welke data. Oordeel en tooling hebben elk een rol." }
     },
     {
       "@type": "Question",
-      "name": "Helpt een officieel auditrapport bij het opbouwen van online reputatie en vertrouwen?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Aantoonbare security audits en geverifieerde autorisatietests versnellen B2B-sales en versterken het vertrouwen." }
+      "name": "Helpt het doorstaan van beveiligingsscans bij vertrouwenssignalen online?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Headers en geldige TLS zijn basale vertrouwenssignalen; diepere, geverifieerde beveiliging beschermt de reputatie." }
     }
   ]
 }

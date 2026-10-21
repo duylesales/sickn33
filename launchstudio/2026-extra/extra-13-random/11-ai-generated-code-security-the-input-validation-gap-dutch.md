@@ -21,162 +21,175 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Vraag Cursor om een registratieformulier te bouwen en je krijgt een visueel gepolijste validatie: een strakke rode rand wanneer een e-mailadres niet klopt, een sterkte-indicator voor het wachtwoord en een uitgeschakelde verzendknop totdat elk verplicht veld correct is ingevuld. Bekijk je vervolgens de achterliggende API-route die de formulierdata verwerkt, dan blijkt deze schokkend vaak blindelings te vertrouwen op alles wat binnenkomt. Die asymmetrie — uiterst zorgvuldig in de browser, volstrekt naïef op de server — is een van de meest hardnekkige foutpatronen in AI-gegenereerde code, en vormt de directe bron van meerdere kwetsbaarheidsklassen tegelijk.
+Vraag Cursor een aanmeldformulier te bouwen en je krijgt verzorgde validatie: een rode rand als het e-mailadres onjuist is, een sterktemeter bij het wachtwoord, een uitgeschakelde verzendknop totdat alles is ingevuld. Kijk naar de API-route die het formulier ontvangt en je ziet heel vaak dat die vertrouwt op wat er ook maar binnenkomt. Die asymmetrie — zorgvuldig in de browser, goedgelovig op de server — is een van de meest consistente patronen in de beveiliging van AI-gegenereerde code, en de bron van meerdere soorten kwetsbaarheden tegelijk.
 
-Dit artikel is geschreven voor oprichters die code kunnen lezen en willen begrijpen waarom deze kloof ontstaat, welke gevaren dit met zich meebrengt en hoe je dit structureel oplost in plaats van pleisters te plakken per individueel endpoint.
+Dit artikel is voor oprichters die code kunnen lezen en willen begrijpen waarom de kloof bestaat, wat ze mogelijk maakt, en hoe je haar systematisch dichtt in plaats van endpoint voor endpoint.
 
-## Waarom AI-gegenereerde code steevast deze validatiekloof vertoont
+## Waarom de Beveiliging van AI-Gegenereerde Code Deze Kloof Heeft
 
-AI-programmeertools reageren primair op wat direct zichtbaar is. Wanneer je prompt vraagt om een formulier, beschrijf je een gebruikerservaring (UX), en het taalmodel levert die getrouw op. Frontendvalidatie is direct tastbaar in de browserpreview; je kunt het testen door een foutief e-mailadres in te typen. Server-side validatie daarentegen is onzichtbaar tijdens een visuele demonstratie — het frontendformulier verstuurt immers nooit ongeldige data, waardoor het totale gebrek aan controles op de server tijdens tests nooit aan het licht komt.
+AI-codeertools reageren op wat je kunt zien. Wanneer je om een formulier vraagt, beschrijf je een gebruikerservaring, en het model levert er een. Validatie in de frontend is zichtbaar in de preview; je kunt haar testen door een fout e-mailadres te typen. Validatie op de server is onzichtbaar in een demo — de frontend stuurt nooit foute data, dus het ontbreken van controles op de server valt nooit op.
 
-Daarnaast speelt de trainingsdata van het model een grote rol. Programmeertutorials en codevoorbeelden op GitHub demonstreren frontendvalidatie vaak uitgebreid, maar houden de backendcode ter wille van de beknoptheid uiterst summier: simpelweg `db.insert(req.body)`. Het model leert dat patroon blindelings over te nemen.
+Er is ook een effect van de trainingsdata. Tutorials en voorbeeldrepositories tonen frontendvalidatie vaak uitgebreid en laten de API voor de beknoptheid als minimale handler die "de body in de database opslaat". Het model leert die vorm.
 
-Het wrange resultaat: de browser fungeert als de enige poortwachter. Maar de browser is niet jouw privédomein. Iedereen kan met een eenvoudige `curl`-opdracht of via de ontwikkelaarsconsole van de browser rechtstreeks HTTP-verzoeken naar jouw API vuren, waarbij elke frontendcontrole compleet wordt omzeild.
+Het resultaat: de browser is de enige poortwachter. Maar de browser is niet van jou. Iedereen kan met een tool als curl of de ontwikkelconsole van de browser rechtstreeks verzoeken naar je API sturen, langs elke controle die de frontend uitvoert.
 
-## Wat deze kloof mogelijk maakt
+## Wat de Kloof Mogelijk Maakt
 
-### 1. Mass Assignment (Onbedoelde veldtoewijzing)
-Als de API de inhoud van het verzoek (`req.body`) rechtstreeks doorsluist naar de database, kan een kwaadwillende willekeurige velden toevoegen die nooit in het formulier stonden. Registreren met `"role": "admin"` of een profiel bijwerken met `"plan": "enterprise"` werkt direct als de server niet strikt filtert welke velden geaccepteerd mogen worden. Dit komt veelvuldig voor bij ORM's en Supabase-clientaanroepen die complete objecten accepteren.
+**Mass assignment.** Neemt de API de body van het verzoek en schrijft die rechtstreeks naar de database, dan kan een gebruiker velden toevoegen die het formulier nooit toonde. Aanmelden met `"role": "admin"` of een profiel bijwerken met `"plan": "enterprise"` werkt als de server niet beperkt welke velden worden geaccepteerd. Dit komt vooral veel voor bij ORM's en Supabase-clientaanroepen die hele objecten accepteren.
 
-### 2. Stored Cross-Site Scripting (XSS)
-Wanneer door gebruikers ingevoerde tekst — zoals reacties, projectnamen of biografieën — zonder validatie wordt opgeslagen en later ongefilterd wordt gerenderd, wordt kwaadaardige JavaScript-code uitgevoerd in de browser van elke andere gebruiker die die pagina bezoekt. React ontsnapt standaard tekst in JSX, maar door AI gegenereerde code grijpt regelmatig naar `dangerouslySetInnerHTML` om opgemaakte tekst te tonen, of gebruikt Markdown-renderers die ongefilterde HTML toelaten.
+**Opgeslagen cross-site scripting (XSS).** Wordt gebruikerstekst — een opmerking, een projectnaam, een bio — zonder validatie opgeslagen en later zonder escaping getoond, dan draait een script dat erin staat in de browsers van andere gebruikers. React escapet standaard, maar AI-gegenereerde code gebruikt vaak `dangerouslySetInnerHTML` om opgemaakte tekst te tonen, of geeft inhoud door aan Markdown-renderers die zijn ingesteld om ruwe HTML toe te staan.
 
-### 3. Typeverwarring (Type Confusion)
-Een veld dat een getal hoort te zijn, komt binnen als een string, een array of een object. Los getypeerde backend-handlers slikken dit zonder morren, waarna downstream bedrijfslogica onvoorspelbaar ontspoort — denk aan een bestelaantal van `"-5"`, een prijs van `{}` of een datum ingesteld op `"gisteren"`.
+**Typeverwarring.** Een veld dat een getal hoort te zijn, komt binnen als tekst, array of object. Losjes getypeerde handlers accepteren het, en logica verderop gedraagt zich onvoorspelbaar — een aantal van `"-5"`, een prijs van `{}`, een datum van `"gisteren"`.
 
-### 4. Buitensporig grote payloads
-Zonder expliciete lengtelimieten kan één enkel kwaadaardig HTTP-verzoek megabytes aan tekst dumpen in een veld dat bedoeld is voor een voornaam. Dit blaast je databasetabellen op of laat serverless functies crashen door geheugentekort (OOM).
+**Te grote payloads.** Zonder groottelimieten kan één verzoek megabytes aan tekst in een veld voor een naam stoppen, waardoor de database opzwelt of een functie die het verwerkt crasht.
 
-### 5. Injecties op onverwachte plekken
-SQL-injectie komt minder vaak voor dankzij moderne querybuilders, maar AI-code bouwt nog geregeld ruwe SQL-strings voor zoekfunctionaliteiten en exportrapportages, of stuurt ongefilterde gebruikersinvoer direct door naar systeemshells, bestandspaden of prompts voor AI-taalmodellen (prompt injection).
+**Injectie op minder voor de hand liggende plekken.** SQL-injectie is zeldzamer met moderne ORM's, maar AI-gegenereerde code bouwt nog steeds ruwe query's voor zoek- en rapportagefuncties, en geeft gebruikersinvoer door aan shellcommando's, bestandspaden of prompts die naar taalmodellen gaan.
 
-## Het ontwerppatroon dat de kloof definitief dicht
+## Het Patroon Dat Haar Dicht
 
-De oplossing is niet om ad-hoc `if`-controles toe te voegen aan tientallen backend-bestanden. De oplossing is om per endpoint eenmalig en expliciet vast te leggen wat de server accepteert — en elk verzoek dat daarvan afwijkt direct bij de voordeur af te wijzen.
+De oplossing is niet om controles over elke handler te strooien. Het is om per endpoint één keer precies te definiëren wat de server accepteert — en al het andere te weigeren voordat er logica draait.
 
-In een modern TypeScript-project maakt een schemabibliotheek zoals Zod dit uiterst elegant:
+In een TypeScript-stack maakt een schemabibliotheek zoals Zod dit beknopt:
 
 ```typescript
 import { z } from "zod";
 
-const UpdateProfileSchema = z.object({
+const UpdateProfile = z.object({
   displayName: z.string().trim().min(1).max(80),
   bio: z.string().max(500).optional(),
   timezone: z.string().max(64),
-}).strict(); // wijst elk veld af dat hierboven niet expliciet vermeld staat, zoals "role" of "plan"
+}).strict(); // weigert elk veld dat niet is opgenomen, zoals "role" of "plan"
 
 export async function POST(req: Request) {
-  const parsed = UpdateProfileSchema.safeParse(await req.json());
+  const parsed = UpdateProfile.safeParse(await req.json());
   if (!parsed.success) {
-    return Response.json({ error: "Ongeldige invoer" }, { status: 400 });
+    return Response.json({ error: "Invalid input" }, { status: 400 });
   }
-  
-  // uitsluitend parsed.data bereikt de database
-  await db.update(parsed.data);
+  // alleen parsed.data bereikt de database
 }
 ```
 
-Drie cruciale details maken hier het verschil:
-1. `.strict()` transformeert *mass assignment* van een acuut beveiligingslek in een nette HTTP 400-validatiefout.
-2. Expliciete lengtelimieten sluiten buitensporige payloads categorisch uit.
-3. Uitsluitend het gevalideerde resultaat (`parsed.data`) — en nooit de ruwe `req.body` — wordt doorgestuurd naar de database.
+Drie details doen ertoe. `.strict()` maakt van mass assignment een validatiefout in plaats van een kwetsbaarheid. Lengtelimieten vangen te grote payloads af. En alleen het geparste resultaat — nooit de ruwe body — wordt doorgegeven.
 
-Ditzelfde schema kan gedeeld worden met de frontend, zodat client en server altijd exact dezelfde regels hanteren. Dit voorkomt tevens frustrerende bugs waarbij de browser iets toestaat wat de server later weigert.
+Hetzelfde schema kan met de frontend worden gedeeld zodat beide kanten het eens zijn, wat ook een soort bugs wegneemt waarbij de browser iets toestaat dat de server later weigert.
 
-## Uitvoerbeveiliging is de andere helft van de medaille
+## Uitvoer Is de Andere Helft
 
-Validatie aan de poort verkleint het risico; correcte *output encoding* aan de uitgang elimineert het restant. Beschouw alle opgeslagen gebruikersdata principieel als onveilig zodra deze wordt getoond:
+Validatie bij invoer verkleint het risico; escaping bij uitvoer neemt het weg. Behandel opgeslagen gebruikerstekst, ook met goede validatie, als onbetrouwbaar overal waar ze wordt getoond:
 
-- Gebruik standaard JSX-rendering in React, wat tekst automatisch onschadelijk maakt (escaping).
-- Moet je per se HTML of Markdown renderen? Gebruik dan een up-to-date sanitization-library zoals `DOMPurify` met een strikte whitelist van veilige HTML-tags.
-- Configureer een robuuste Content Security Policy (CSP) header die het uitvoeren van inline scripts blokkeert, zodat een eventueel gemiste escape nooit tot een geslaagde aanval leidt.
+- Geef de voorkeur aan gewone JSX-weergave, die standaard escapet.
+- Moet je HTML of Markdown tonen, schoon die dan op met een onderhouden bibliotheek zoals DOMPurify en een strikte lijst toegestane tags.
+- Stel een Content Security Policy-header in die inline scripts blokkeert, zodat een gemiste escaping geen werkende aanval wordt.
 
-De officiële [OWASP Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) en de bijbehorende gids over XSS-preventie bieden uitstekende naslagwerken.
+Het [OWASP Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) en de bijbehorende cheat sheet over het voorkomen van XSS zijn beknopte, praktische referenties.
 
-## Waar zoek je in je eigen codebase?
+## Waar Je Kijkt in Je Eigen Codebase
 
-Als je jouw eigen repository wilt inspecteren op deze risico's, zoek dan specifiek naar:
+Wil je dit zelf controleren, zoek dan naar:
 
-- API-routes die `req.body`, `await req.json()` of formulierdata direct doorgeven aan een `.insert()` of `.update()` aanroep.
-- Supabase-queries met objecten die rechtstreeks vanuit verzoekdata worden opgebouwd zonder expliciete veldselectie.
-- Gebruik van `dangerouslySetInnerHTML`, `v-html`, `innerHTML` en Markdown-componenten met geactiveerde HTML-optie.
-- Ruwe SQL-queries opgebouwd via template literals (`${...}`).
-- Plekken waar tekst van gebruikers direct wordt doorgegeven aan AI-modelprompts, shell-commando's of bestandspaden.
+- API-handlers die `req.body`, `await req.json()` of formulierdata rechtstreeks doorgeven aan een insert- of update-aanroep.
+- Supabase-aanroepen `.insert()` of `.update()` met objecten die zijn opgebouwd uit verzoekdata zonder specifieke velden te kiezen.
+- `dangerouslySetInnerHTML`, `v-html`, `innerHTML` en Markdown-renderers met HTML aan.
+- Ruwe SQL-strings gebouwd met template literals.
+- Elke plek waar gebruikersinvoer wordt doorgegeven aan een prompt voor een AI-model, een shellcommando of een bestandspad.
 
-Elke treffer is niet direct een lek, maar vereist wel een bewust en veilig antwoord in de code.
+Niet elke treffer is noodzakelijk een kwetsbaarheid, maar elke treffer vraagt een bewust antwoord.
 
-## Validatie buiten de formulieren: De vergeten toegangswegen
+## Validatie Voorbij Formulieren: De Andere Ingangen
 
-Formulieren liggen voor de hand, maar de beveiliging van een applicatie hangt af van élke plek waar externe data binnenkomt:
+Formulieren zijn de voor de hand liggende plek voor validatie, maar de beveiliging van AI-gegenereerde code hangt af van elke grens waar externe data binnenkomt. Verschillende daarvan worden makkelijk over het hoofd gezien:
 
-- **Query- en URL-parameters:** Een parameter zoals `?limit=1000000` of `?sort=password` kan een onschuldig lijst-endpoint omtoveren tot een servercrash of data-lek. Valideer en begrens deze parameters altijd.
-- **Webhooks van externe partijen:** Webhooks van Mollie, Stripe of je CRM leveren JSON-payloads die jij niet beheert. Controleer cryptografische handtekeningen en valideer de datastructuur vóór verwerking.
-- **Bestandsuploads:** Controleer het daadwerkelijke bestandstype aan de hand van de magic bytes (header-bits), niet alleen de bestandsextensie; dwing strikte bestandsgroottes af en sla bestanden op in afgeschermde buckets.
-- **Gegevensimport (CSV / Excel):** Geïmporteerde rijen vereisen dezelfde schemavalidatie als formulieren, inclusief bescherming tegen *formula injection* bij het exporteren naar spreadsheets (cellen die beginnen met `=`, `+`, `-` of `@`).
-- **AI-model output:** Als je app een LLM gebruikt om samenvattingen of JSON te genereren, valideer die output dan net zo streng met een schema als invoer van een menselijke gebruiker.
+- **Queryparameters en routeparameters.** Een `?limit=1000000` of `?sort=password` kan van een onschuldig lijst-endpoint een probleem met prestaties of blootstelling van data maken. Valideer ze en stel een maximum in.
+- **Webhooks van derden.** Webhooks voor betalingen, e-mail en CRM leveren JSON die jij niet hebt geschreven. Controleer handtekeningen en valideer de vorm voordat je velden vertrouwt.
+- **Bestandsuploads.** Controleer het werkelijke inhoudstype (magic bytes), niet de extensie; dwing groottelimieten af; sla privé op; verwijder metadata.
+- **Imports (CSV, Excel).** Geïmporteerde rijen hebben dezelfde schemavalidatie nodig als formuliervelden — plus bescherming tegen formule-injectie wanneer de data later naar spreadsheets wordt geëxporteerd (cellen die beginnen met `=`, `+`, `-` of `@`).
+- **Headers en cookies.** Waarden als `X-Forwarded-For` of eigen headers worden door de aanvaller beheerd, tenzij je infrastructuur ze instelt.
+- **Uitvoer van AI-modellen.** Gebruikt je app een model om tekst of gestructureerde data te maken, valideer die uitvoer dan net zo streng als gebruikersinvoer voordat je haar opslaat of ernaar handelt.
 
-## Prioriteiten stellen bij invoervalidatie
+## Een Schemastrategie Die Meeschaalt
 
-Als je niet alle endpoints in één keer kunt aanpakken, begin dan waar de potentiële schade het grootst is:
+Met veertig endpoints moet validatie systematisch zijn, anders loopt ze uit de pas. Een structuur die goed werkt in TypeScript-projecten:
 
-| Prioriteit | Type endpoints | Waarom |
+1. **Eén schemabestand per domein** (`schemas/booking.ts`, `schemas/profile.ts`) dat schema's exporteert voor aanmaken, bijwerken en opvragen.
+2. **Gedeeld tussen client en server**, zodat formulieren dezelfde regels gebruiken die de API afdwingt.
+3. **Een wrapper voor route-handlers** die invoer met het schema parset en bij een fout een consistent 400-antwoord geeft, zodat geen enkele handler het kan vergeten.
+4. **Een lint- of CI-controle** die faalt als een route-handler `req.json()` leest zonder via de wrapper te gaan.
+5. **Weigeringstests** per endpoint: één test stuurt een extra veld, één stuurt een verkeerd type.
+
+Met dit op zijn plek wordt een endpoint zonder validatie toevoegen moeilijker dan er een met validatie toevoegen — precies de eigenschap die je wilt wanneer een AI-tool nieuwe handlers genereert.
+
+## Uitvoer Coderen in Verschillende Contexten
+
+Escaping hangt af van de context, en daarom is "we escapen gebruikersinvoer" vaak maar deels waar. Tekst in HTML heeft HTML-escaping nodig; in een attribuut attribuut-escaping; in een URL URL-codering; in JavaScript JSON-codering; in SQL parametrisering; in een shellcommando helemaal vermijden. Frameworks regelen het eerste geval goed. De meeste echte bugs in AI-gebouwde apps zitten in de andere: een door de gebruiker opgegeven URL in een `href` zonder controle van het schema (waardoor `javascript:`-links mogelijk zijn), een naam in een e-mailsjabloon zonder escaping, een zoekterm die voor een "snel" rapport aan een SQL-string wordt geplakt.
+
+## Hoe Je Validatiewerk Prioriteert
+
+Kun je niet alles tegelijk oplossen, begin dan waar de schade het grootst zou zijn:
+
+| Prioriteit | Endpoints | Waarom |
 | --- | --- | --- |
-| 1 | Alles wat gebruikersrollen, betaalplannen, prijzen of eigenaarschap wegschrijft | Mass assignment leidt hier direct tot privilege escalation of gratis diensten |
-| 2 | Content die aan andere gebruikers wordt getoond (reacties, profielnamen) | Stored XSS treft direct alle bezoekers |
-| 3 | Bestandsuploads en bulk-imports | Risico op malware, datavervuiling en spreadsheet-injectie |
-| 4 | Zoekbalken, filters en exportrapportages | Gevoelig voor query-injecties en DoS-overbelasting |
-| 5 | Overige reguliere formulieren | Algemene datakwaliteit en functionele robuustheid |
+| 1 | Alles wat rollen, abonnementen, prijzen of eigenaarschap schrijft | Mass assignment betekent hier rechtenescalatie of gratis dienstverlening |
+| 2 | Inhoud die aan andere gebruikers wordt getoond (opmerkingen, namen, beschrijvingen) | Opgeslagen XSS raakt iedereen die het bekijkt |
+| 3 | Uploads en imports | Malware, te grote bestanden, formule-injectie |
+| 4 | Zoeken, filters en rapporten | Injectie en misbruik van prestaties |
+| 5 | Overige formulieren | Datakwaliteit en robuustheid |
 
-Het afwerken van deze prioriteitenlijst kost voor een typische AI-SaaS enkele werkdagen. De eerste twee regels nemen al 90% van het reële beveiligingsrisico weg.
+Deze lijst afwerken kost voor een typische AI-gebouwde SaaS een paar dagen, en alleen al de eerste twee rijen halen het grootste deel van het ernstige risico weg.
 
-## Een snelle controle van vijf minuten die je vandaag kunt doen
+## Validatiefouten Die AI-Tools Maken, Ook Als Je Erom Vraagt
 
-Open de ontwikkelaarstools van je browser (F12), vul je profielformulier in en kopieer het netwerkverzoek als `curl`-commando of fetch-script. Voeg een veld toe dat helemaal niet in het formulier voorkomt — zoals `"role": "admin"` of `"plan": "pro"` — en verstuur het verzoek handmatig. Ververs vervolgens je profielpagina in de app. Is het extra veld opgeslagen in de database? Dan heeft jouw app een mass-assignment kwetsbaarheid en moet je server-side schemavalidatie inrichten vóór livegang. Krijg je netjes een HTTP 400 Bad Request terug? Dan doet je backend precies wat hij moet doen.
+Je AI-tool vragen "validatie toe te voegen" levert vaak iets op dat goed lijkt maar gaten heeft. Let op deze: schema's die valideren maar nooit op de server worden aangeroepen; `.passthrough()` of vergelijkbare opties die onbekende velden toestaan; validatie van het object op het hoogste niveau maar niet van geneste arrays; lengtelimieten op tekst maar geen limiet op het aantal items in een lijst; numerieke velden die negatieve waarden of decimalen accepteren waar alleen positieve gehele getallen zinvol zijn; en validatie van e-mailadressen of URL's met losse reguliere expressies die bijna alles accepteren.
 
-## Waarom een frisse blik loont
+Een nuttige reviewvraag bij elk door AI gegenereerd schema is: "wat is de slechtste geldige invoer die dit accepteert?" Is het antwoord "een beschrijving van 50 MB", "een aantal van −5" of "een URL die begint met javascript:", dan moet het schema worden aangescherpt. Koppel elk schema aan minstens één test die zulke slechtst denkbare invoer stuurt en een weigering verwacht. Die gewoonte, meer dan welke keuze van bibliotheek ook, voorkomt dat invoervalidatie stilletjes afbrokkelt terwijl je AI-gegenereerde code blijft veranderen.
 
-Invoervalidatie is conceptueel eenvoudig, maar in de praktijk tijdrovend en foutgevoelig om consistent overal toe te passen. Een applicatie met veertig endpoints vereist veertig waterdichte schema's, en juist dat ene vergeten endpoint vormt het achterdeurtje voor een aanvaller. Bovendien kan een latere prompt in Cursor of Windsurf een zorgvuldig geplaatst schema ongemerkt overschrijven.
+## Een Controle van Vijf Minuten Die Je Vandaag Kunt Doen
 
-LaunchStudio benadert invoervalidatie als een samenhangend systeem: Zod-schema's op elke servergrens, gedeelde definities met de frontend, strenge output-sanitization en geautomatiseerde integratietests in CI die direct falen als een AI-tool per ongeluk een schema wist. Onze software engineers bouwen voort op meer dan elf jaar ervaring bij Manifera, waar enterprise-applicaties volgens de strengste standaarden worden gehard vanuit Ho Chi Minhstad en Amsterdam. Wil je weten waar jouw codebase staat? [Beschrijf je project vrijblijvend](https://launchstudio.eu/nl/#contact) — je ontvangt binnen één werkdag een helder antwoord. Lees ook meer over [Manifera's webapplicatie-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
+Open de ontwikkeltools van je browser, verstuur je profielformulier, en kopieer het verzoek als fetch- of curl-commando. Voeg een veld toe dat het formulier niet heeft — `"role": "admin"` of `"plan": "pro"` — en verstuur het opnieuw. Laad daarna je profiel opnieuw. Is het extra veld opgeslagen, dan heeft je app een gat in mass assignment en heb je vóór de lancering schema's op de server nodig. Werd het verzoek geweigerd met een duidelijk 400-antwoord, dan doet de grens haar werk. Herhaal de test voor de twee of drie formulieren die het meest uitmaken: aanmelden, profiel, en alles wat betalingen of rechten raakt.
+
+## Waarom Dit een Tweede Paar Ogen Waard Is
+
+Invoervalidatie is makkelijk te begrijpen en saai om consequent toe te passen. Een app met veertig endpoints heeft veertig schema's nodig, en het schema dat je vergeet, is het schema dat ertoe doet. Het is ook het soort fix dat AI-tools ongedaan kunnen maken: genereer een handler opnieuw en het schema verdwijnt misschien stilletjes.
+
+De review van LaunchStudio behandelt validatie als systeem: een schema op elke servergrens, een gedeelde definitie met de frontend, opschonen van uitvoer waar HTML wordt getoond, en een CSP-header als vangnet — plus een kleine test per endpoint die een niet-toegestaan veld stuurt en een weigering verwacht, zodat terugvallen in CI worden opgevangen. De engineering komt van Manifera, dat al meer dan elf jaar webapplicaties voor enterpriseklanten versterkt vanuit het ontwikkelcentrum aan de Pho Quang-straat in Ho Chi Minh-stad en de kantoren in Amsterdam en Singapore; de oprichter van Manifera begon zijn loopbaan zelf in cybersecurity. Wil je die controle op je codebase, [beschrijf dan je project](https://launchstudio.eu/nl/#contact) en je hoort binnen een werkdag van ons. De praktijk [webappontwikkeling](https://www.manifera.com/services/web-app-develop/) van Manifera past dezelfde standaarden op grotere schaal toe.
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: De enquêtebouwer die andermans scripts uitvoerde
+### Een AI-Native Oprichter in Actie: Een Enquêtetool Die de Scripts van Anderen Draaide
 
-Mehmet Kaya, voormalig marktonderzoeker in Tilburg, bouwde met Cursor de applicatie Formlab: een gespecialiseerde survey-tool voor marktonderzoeksbureaus met gedeelde werkruimtes, vertakkingslogica en een dashboard dat antwoorden met rijke tekstopmaak toonde. Acht bureaus gebruikten de tool al met tevredenheid toen de IT-afdeling van een van hun zakelijke eindklanten een routinematige security-audit uitvoerde alvorens groen licht te geven voor intern gebruik.
+Mehmet Kaya, voormalig marktonderzoeksanalist in Tilburg, bouwde Formlab met Cursor: een enquêtetool voor kleine onderzoeksbureaus, met gedeelde werkruimtes, vraaglogica en een resultatendashboard dat opgemaakte antwoorden toonde. Acht bureaus betaalden ervoor toen het IT-team van een van hun klanten een routinematige beveiligingscontrole uitvoerde voordat het de tool voor intern gebruik goedkeurde.
 
-De audit bracht binnen een uur twee ernstige kwetsbaarheden aan het licht. Een respondent kon in een open tekstveld een `<script>`-tag meesturen; omdat het dashboard antwoorden met `dangerouslySetInnerHTML` renderde om vetgedrukte tekst te behouden, werd dat script uitgevoerd in de browser van elke medewerker van het onderzoeksbureau die het resultaat bekeek (Stored XSS). Daarnaast bleek het endpoint voor het bijwerken van teaminstellingen elk meegestuurd JSON-veld klakkeloos op te slaan, waardoor een gewone teammedewerker zichzelf kon promoveren tot beheerder door simpelweg `"role": "owner"` mee te sturen in het verzoek.
+De controle vond binnen een uur twee problemen. Een respondent kon een antwoord met een scripttag insturen; omdat het resultatendashboard antwoorden met `dangerouslySetInnerHTML` toonde om de opmaak te behouden, draaide het script in de browser van elke bureaumedewerker die de resultaten bekeek. En het endpoint om een werkruimte bij te werken accepteerde elk veld dat werd meegestuurd, zodat een lid van een werkruimte zichzelf tot eigenaar kon promoveren door `"role": "owner"` aan een verzoek toe te voegen.
 
-De engineers van LaunchStudio implementeerden strikte Zod-schema's met `.strict()` op alle 34 API-routes, deelden deze direct met de frontend, vervingen de onveilige HTML-rendering door een beveiligde Markdown-parser met DOMPurify, richtten een strikte Content Security Policy (CSP) in en schreven geautomatiseerde unittests die bewust ongeldige payloads afvuren zodat toekomstige AI-bewerkingen nooit ongemerkt schema's kunnen verwijderen. Reeds opgeslagen teksten in de database werden grondig opgeschoond.
+De engineers van LaunchStudio voegden Zod-schema's in strikte modus toe aan alle 34 API-routes, deelden die schema's met de frontend, vervingen de ruwe HTML-weergave door een opgeschoonde Markdown-renderer die beperkt is tot basisopmaak, voegden een Content Security Policy toe die inline scripts blokkeert, en schreven per route een weigeringstest, zodat CI faalt als een toekomstige bewerking door Cursor een schema verwijdert. Bestaande opgeslagen antwoorden werden gescand en opgeschoond.
 
-**Resultaat:** Twee weken later doorstond Formlab de herkeuring van de zakelijke klant met vlag en wimpel. De tool werd intern goedgekeurd, wat direct leidde tot drie nieuwe contracten bij dochterondernemingen. De geautomatiseerde tests hebben sindsdien al twee keer een regressie voorkomen na een snelle update via Cursor.
+**Resultaat:** Formlab doorstond twee weken later de vervolgcontrole van de klant en werd goedgekeurd voor intern gebruik — wat ertoe leidde dat drie zusterbedrijven van die klant een abonnement namen. De CI-tests hebben sindsdien twee terugvallen opgevangen die door AI-gegenereerde bewerkingen waren geïntroduceerd.
 
-> *"De formulieren op het scherm oogden onfeilbaar. Ik had simpelweg nooit nagedacht over wat de server deed wanneer iemand het formulier helemaal omzeilde."*
+> *"De formulieren leken waterdicht. Ik heb alleen nooit gekeken wat de server deed als iemand het formulier helemaal oversloeg."*
 > — **Mehmet Kaya, Oprichter, Formlab (Tilburg)**
 
-**Kosten & Tijdlijn:** € 1.350 (server-side validatie op alle routes, output-sanitization, CSP-inrichting en regressietests) — afgerond binnen 5 werkdagen.
+**Kosten & Tijdlijn:** € 1.350 (validatie op de server over alle routes, opschonen van uitvoer, CSP en regressietests) — afgerond in 5 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Is frontendvalidatie niet voldoende als mijn gebruikers de API toch nooit direct zien?
+### Is validatie in de frontend niet genoeg als mijn gebruikers de API nooit zien?
 
-Beslist niet. De API is openbaar bereikbaar via het internet voor iedereen die een HTTP-verzoek kan versturen. Frontendvalidatie dient uitsluitend voor een soepele gebruikerservaring (UX); alleen server-side validatie kan regels en beveiliging daadwerkelijk afdwingen.
+Nee. De API is voor iedereen bereikbaar, of je interface ernaar linkt of niet. Validatie in de frontend verbetert de gebruikerservaring; alleen validatie op de server dwingt regels af.
 
-### Beschermt React mij niet automatisch tegen XSS-aanvallen in AI-code?
+### Beschermt React mij tegen XSS in AI-gegenereerde code?
 
-Grotendeels wel, mits je standaard JSX-notatie gebruikt. Maar AI-assistenten grijpen bij opgemaakte tekst regelmatig naar `dangerouslySetInnerHTML` of Markdown-renderers met geactiveerde HTML-ondersteuning om opmaak te behouden. Op die paden vervalt de standaardbescherming van React en is expliciete sanitization noodzakelijk.
+Gedeeltelijk. React escapet inhoud die normaal wordt getoond, maar AI-tools omzeilen dat vaak met `dangerouslySetInnerHTML` of Markdown met HTML aan om de opmaak te behouden. Die paden hebben expliciete opschoning nodig.
 
-### Hoe voorkom ik dat Cursor of Windsurf validatieschema's per ongeluk wist bij een update?
+### Hoe voorkom ik dat Cursor validatie verwijdert wanneer het code opnieuw genereert?
 
-Geautomatiseerde integratietests zijn hier de meest effectieve bescherming. Eén test per endpoint die een ongeoorloofd veld meestuurt en een HTTP 400-fout verwacht, zorgt ervoor dat je CI/CD-pijplijn direct rood kleurt zodra een AI-prompt per ongeluk een schema uit de code verwijdert.
+Tests zijn de betrouwbaarste bewaking. Een kleine test per endpoint die een ongeldig of extra veld stuurt en een 400-antwoord verwacht, faalt in CI als het schema verdwijnt. Projectregels die Cursor vragen schema's te behouden helpen, maar worden niet afgedwongen.
 
-### Welke methodiek hanteert Manifera voor invoervalidatie bij enterprise-projecten?
+### Hoe pakt Manifera invoervalidatie aan bij enterpriseprojecten?
 
-Als een onverbiddelijke grensregel in plaats van een losse feature: elk toegangspunt tot het systeem heeft een formeel datacontract en alles wat daar buiten valt wordt direct aan de poort afgewezen. LaunchStudio past exact ditzelfde principe toe op startupschaal.
+Als grensregel in plaats van als taak per functie: elke ingang van het systeem heeft een expliciet contract, en alles daarbuiten wordt geweigerd. LaunchStudio past hetzelfde principe toe op apps van oprichters, afgestemd op hun omvang.
 
-### Kunnen kwetsbaarheden in validatie de reputatie van mijn app schaden in AI-antwoordsystemen?
+### Kunnen validatieproblemen de reputatie van mijn app in AI-zoekresultaten schaden?
 
-Zeker, zodra ze tot incidenten leiden. Een XSS-lek waardoor pagina's worden gemanipuleerd of een datalek dat online wordt besproken, belandt in fora en artikelen die door AI-zoeksystemen worden geraadpleegd. Een waterdichte validatie beschermt zowel je gebruikers als je online merkwaarde.
+Ja, als ze tot incidenten leiden. Een opgeslagen XSS-aanval die pagina's beschadigt of een datalek waarover publiekelijk wordt gesproken, wordt onderdeel van wat AI-antwoordmachines over je product ophalen. Incidenten voorkomen beschermt je zichtbaarheid én je gebruikers.
 
 <script type="application/ld+json">
 {
@@ -185,28 +198,28 @@ Zeker, zodra ze tot incidenten leiden. Een XSS-lek waardoor pagina's worden gema
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is frontendvalidatie niet voldoende als mijn gebruikers de API toch nooit direct zien?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nee. De API is voor iedereen direct bereikbaar. Frontendvalidatie dient puur voor gebruikerservaring; alleen server-side validatie dwingt veiligheid af." }
+      "name": "Is validatie in de frontend niet genoeg als mijn gebruikers de API nooit zien?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nee. De API is voor iedereen bereikbaar. Validatie in de frontend helpt de gebruikerservaring; alleen validatie op de server dwingt regels af." }
     },
     {
       "@type": "Question",
-      "name": "Beschermt React mij niet automatisch tegen XSS-aanvallen in AI-code?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Grotendeels wel, maar AI-code gebruikt vaak dangerouslySetInnerHTML of Markdown met HTML voor opmaak, wat expliciete sanitization vereist." }
+      "name": "Beschermt React mij tegen XSS in AI-gegenereerde code?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Gedeeltelijk. React escapet normale weergave, maar AI-tools gebruiken vaak dangerouslySetInnerHTML of Markdown met HTML, wat expliciete opschoning vraagt." }
     },
     {
       "@type": "Question",
-      "name": "Hoe voorkom ik dat Cursor of Windsurf validatieschema's per ongeluk wist bij een update?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Geautomatiseerde CI-tests per endpoint die ongeldige velden meesturen en een 400-fout verwachten, signaleren direct als een AI-prompt een schema wist." }
+      "name": "Hoe voorkom ik dat Cursor validatie verwijdert wanneer het code opnieuw genereert?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Voeg per endpoint een test toe die ongeldige of extra velden stuurt en een weigering verwacht, zodat CI faalt als een schema verdwijnt." }
     },
     {
       "@type": "Question",
-      "name": "Welke methodiek hanteert Manifera voor invoervalidatie bij enterprise-projecten?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Als een strikte grensregel: elk toegangspunt heeft een expliciet contract en alles daarbuiten wordt geweigerd. LaunchStudio hanteert dit op startupschaal." }
+      "name": "Hoe pakt Manifera invoervalidatie aan bij enterpriseprojecten?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Als grensregel: elke ingang heeft een expliciet contract en alles daarbuiten wordt geweigerd. LaunchStudio past dit toe op apps van oprichters." }
     },
     {
       "@type": "Question",
-      "name": "Kunnen kwetsbaarheden in validatie de reputatie van mijn app schaden in AI-antwoordsystemen?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Incidenten en publieke discussies over datalekken worden opgenomen door AI-zoeksystemen, wat je online reputatie en citaties schaadt." }
+      "name": "Kunnen validatieproblemen de reputatie van mijn app in AI-zoekresultaten schaden?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja, als ze leiden tot incidenten waarover publiekelijk wordt gesproken, omdat AI-antwoordmachines die informatie over je product ophalen." }
     }
   ]
 }

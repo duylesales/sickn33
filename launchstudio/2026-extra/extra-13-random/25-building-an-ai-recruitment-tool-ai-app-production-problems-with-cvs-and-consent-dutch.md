@@ -21,139 +21,161 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Een oprichtster in Friesland uploadde haar eerste echte batch cv's — 180 sollicitaties voor vacatures in de installatietechniek en lasbouw — in de wervingstool die ze in Lovable had gebouwd. De AI-matching functioneerde uitstekend. Recruiters waren laaiend enthousiast. Totdat een kandidaat verbaasd opbelde met de vraag waarom een bedrijf waar hij nog nooit van had gehoord hem plotseling benaderde. Toen pas realiseerde zij zich dat elke recruiter op het platform door álle cv's kon zoeken, inclusief kandidaten die gericht op één specifieke vacature bij één specifiek bedrijf hadden gesolliciteerd. Een klassiek voorbeeld van de acute productieproblemen waar AI-recruitmenttools tegenaan lopen.
+Een oprichter in Friesland uploadde haar eerste echte batch cv's — 180 sollicitaties voor vacatures in lassen en installatietechniek — in de recruitmenttool die ze in Lovable had gebouwd. De AI-matching werkte. Recruiters waren enthousiast. Toen mailde een kandidaat met de vraag waarom een bedrijf waar hij nooit had gesolliciteerd hem had gebeld, en besefte ze dat elke recruiter op het platform elk cv kon doorzoeken, inclusief kandidaten die op één specifieke vacature bij één specifiek bedrijf hadden gereageerd — een schoolvoorbeeld van de productieproblemen van AI-apps waar recruitmenttools tegenaan lopen.
 
-Als u een AI-recruitmenttool bouwt, bepalen deze uitdagingen of u veilig live kunt gaan: niet of de matching algoritmes werken, maar of kandidaatdata exact wordt behandeld zoals werkzoekenden, werkgevers en toezichthouders dat wettelijk eisen.
+Bouwt u een AI-recruitmenttool, dan zijn dit de problemen die bepalen of u kunt lanceren: niet of de matching werkt, maar of kandidaatdata wordt behandeld zoals kandidaten, werkgevers en toezichthouders verwachten.
 
-## Waarom CV's Gevoeliger Zijn Dan Ze Lijken
+## Waarom Cv's Gevoeliger Zijn dan Ze Lijken
 
-Een curriculum vitae staat per definitie bol van de persoonsgegevens: naam, woonadres, telefoonnummer, e-mailadres, geboortedatum, arbeidsverleden, diploma's en vaak een pasfoto. Daarnaast bevatten veel cv's indirecte gegevens die kandidaten liever niet met iedereen delen — gaten in de loopbaan door ziekte, nationaliteit, religieuze overtuiging afgeleid uit verenigingswerk of lidmaatschap van een vakbond. Een deel hiervan kwalificeert onder Artikel 9 van de AVG als bijzondere categorieën van persoonsgegevens, waarvoor een verzwaard beschermingsregime geldt.
+Een cv is per definitie persoonsgegevens: naam, adres, telefoon, e-mail, geboortedatum, werkervaring, opleiding, vaak een foto. Veel cv's bevatten ook informatie die kandidaten niet breed zouden delen — gaten door gezondheid, nationaliteit, religie die blijkt uit scholen of vrijwilligerswerk, functies binnen een vakbond. Een deel daarvan zijn bijzondere persoonsgegevens onder artikel 9 van de AVG, waarvoor strengere bescherming geldt.
 
-Bovendien is er bij werving sprake van een inherente machtsongelijkheid. Een sollicitant kan gegevens nauwelijks weigeren aan een potentiële werkgever. Toezichthouders houden het gebruik en bewaren van recruitmentdata daarom scherp in de gaten.
+Werving kent ook een machtsongelijkheid. Kandidaten kunnen moeilijk weigeren gegevens te delen met een mogelijke werkgever, en daarom letten toezichthouders extra op hoe wervingsdata wordt gebruikt en bewaard.
 
 ## Probleem 1: Iedereen Kan Alles Zien
 
-AI-gegenereerde recruitment-apps bevatten doorgaans één centrale databasetabel voor cv's met een algemene zoekfunctie. De visuele interface toont een recruiter wellicht alleen de kandidaten voor zijn eigen vacature, maar de onderliggende API levert simpelweg de volledige database terug. In een omgeving met meerdere werkgevers of wervingsbureaus leidt dit ertoe dat sollicitanten zichtbaar worden voor bedrijven waar zij nooit toestemming aan hebben gegeven.
+AI-gegenereerde recruitmentapps hebben meestal één cv-tabel en een zoekfunctie. De interface toont een recruiter misschien alleen de kandidaten voor zijn eigen vacatures, maar de API geeft alles terug. In een omgeving met meerdere werkgevers of een uitzendbureau betekent dat dat kandidaten worden blootgesteld aan organisaties waar ze nooit op hebben gesolliciteerd.
 
-In een productieklare architectuur is autorisatie strikt afgeschermd: de data van een kandidaat is uitsluitend zichtbaar voor de specifieke organisatie waarop is gesolliciteerd, afgedwongen op databaseniveau (Row-Level Security). Talentpools — waarin kandidaten instemmen om ook voor andere functies te worden benaderd — vereisen een afzonderlijke, expliciete toestemming.
+Het model voor productie beperkt de toegang expliciet: de gegevens van een kandidaat zijn zichtbaar voor de organisatie waarop hij heeft gesolliciteerd (of voor recruiters met wie hij heeft ingestemd te delen), afgedwongen in de database. Talentpools — waarin kandidaten ermee instemmen te worden overwogen voor andere functies — vereisen aparte, expliciete toestemming.
 
-## Probleem 2: CV's Onbeveiligd en voor Eeuwig Opgeslagen
+## Probleem 2: Cv's voor Altijd Opgeslagen, en Openbaar
 
-Geüploade cv's belanden in AI-prototypes vaak in openbare cloudopslag (storage buckets) met publiek toegankelijke URL's, omdat dit de eenvoudigste manier is om een PDF in de browser te tonen. Iedereen met de directe link — of iedereen die het bestandsnaampatroon raadt — kan ze zonder authenticatie downloaden. En er wordt nooit iets verwijderd.
+Geüploade cv-bestanden belanden vaak in opslagbuckets met openbare URL's, omdat dat de makkelijkste manier is om een bestand te tonen. Iedereen met de link — of iedereen die het patroon kan raden — kan ze downloaden. En er wordt nooit iets verwijderd.
 
-Een veilige inrichting vereist private cloudopslag met tijdelijk ondertekende links (signed URLs), automatische malwarescans bij het uploaden en geautomatiseerde retentieregels. De richtlijnen van de Autoriteit Persoonsgegevens stellen dat sollicitatiegegevens doorgaans binnen vier weken na afwijzing moeten worden gewist, of maximaal één jaar mogen worden bewaard mits de kandidaat hiervoor expliciet toestemming heeft gegeven. Uw software moet dit geautomatiseerd uitvoeren; recruiters doen dit in de praktijk nooit handmatig.
+Afhandeling op productieniveau betekent privéopslag met kortlevende ondertekende links, virusscans bij uploaden en bewaarregels. Richtlijnen van de Nederlandse toezichthouder geven al lang aan dat sollicitatiegegevens doorgaans binnen ongeveer vier weken na afloop van een procedure moeten worden verwijderd, of tot een jaar met toestemming van de kandidaat voor toekomstige vacatures. Uw tool moet dat automatisch uitvoeren; recruiters gaan het niet met de hand doen.
 
-## Probleem 3: Toestemming Die Niet Wordt Gelogd
+## Probleem 3: Toestemming Die Niet Wordt Vastgelegd
 
-"Door te solliciteren gaat u akkoord met onze privacyverklaring" geldt juridisch niet als een rechtsgeldige toestemmingsregistratie. Wanneer u kandidaten opneemt in een brede talentpool, profielen deelt met andere opdrachtgevers of data gebruikt voor het hertrainen van uw matchingmodel, heeft u een aantoonbare, ondubbelzinnige keuze nodig: wat heeft de kandidaat goedgekeurd, op welk tijdstip en bij welke versie van de voorwaarden? Bovendien moet een kandidaat die toestemming net zo eenvoudig kunnen intrekken als verlenen.
+"Door te solliciteren gaat u akkoord met ons privacybeleid" is geen registratie van toestemming. Houdt u kandidaten in een talentpool, deelt u ze met andere klanten of gebruikt u hun gegevens om de matching te trainen of te verbeteren, dan heeft u een duidelijke, vastgelegde keuze nodig: waarmee ze instemden, wanneer en met welke versie van de tekst. Kandidaten moeten die toestemming even makkelijk kunnen intrekken als ze die gaven.
 
-## Probleem 4: AI-Selectieregels en de EU AI Act
+## Probleem 4: Regels voor AI-Screening
 
-Werving en selectie is een van de domeinen die door de Europese AI-verordening (EU AI Act) expliciet als 'hoog risico' zijn geclassificeerd wanneer AI-systemen worden ingezet om kandidaten te screenen, te filteren of te rangschikken. Indien uw applicatie sollicitanten automatisch beoordeelt of afwijst, gelden er zware verplichtingen rondom risicomanagement, menselijk toezicht, transparantie en logging. Daarnaast verbiedt Artikel 22 van de AVG geautomatiseerde besluitvorming met rechtsgevolgen of vergelijkbare wezenlijke gevolgen, zoals een automatische afwijzing zonder tussenkomst van een mens.
+Werving is een van de gebieden die de EU AI Act als hoog risico classificeert wanneer AI-systemen worden gebruikt om kandidaten te screenen, te filteren of te beoordelen. Rangschikt of wijst uw tool kandidaten automatisch af, dan gelden verplichtingen rond risicobeheer, menselijk toezicht, transparantie en registratie, die de komende periode gefaseerd ingaan. Daarnaast beperkt artikel 22 van de AVG besluiten die uitsluitend op geautomatiseerde verwerking zijn gebaseerd en aanzienlijke gevolgen hebben, zoals afwijzing.
 
-In de praktijk moet een productieklare wervingsapplicatie altijd een mens in de besluitvormingscyclus (human-in-the-loop) houden, recruiters uitleggen wáárom een bepaalde matchscore tot stand is gekomen, beschermde persoonskenmerken uitsluiten van het algoritme (zowel direct als via proxies zoals pasfoto's of postcodes), scoringslogica nauwkeurig loggen en kandidaten informeren dat AI wordt gebruikt ter ondersteuning.
+In de praktijk hoort een recruitmenttool in productie een mens in de besluitvorming te houden, recruiters uit te leggen waarom een matchscore is gegeven, het gebruik van beschermde kenmerken te vermijden (direct of via proxy's zoals foto's, namen of postcodes), te loggen hoe scores tot stand kwamen en kandidaten te vertellen dat AI het proces ondersteunt. Het [overzicht van de EU AI Act](https://artificialintelligenceact.eu/) vat de eisen voor hoog risico samen.
 
-## Probleem 5: Inzage- en Verwijderingsrechten van Sollicitanten
+## Probleem 5: Rechten van Kandidaten
 
-Kandidaten kunnen te allen tijde inzage, correctie of verwijdering van hun gegevens eisen. Ook willen afgewezen kandidaten regelmatig weten welke gegevens over hen zijn vastgelegd. Een volwassen tool heeft een functie nodig om alle data over één persoon — sollicitaties, interne notities, gespreksverslagen en bestanden — direct te lokaliseren, te exporteren en permanent te wissen, inclusief uit zoekindexen en eventuele vector-embeddings die van het cv zijn gemaakt.
+Kandidaten kunnen om inzage, correctie of verwijdering van hun gegevens vragen. Ze kunnen ook vragen wat een organisatie na een afwijzing nog over hen bewaart. Een tool in productie heeft een manier nodig om alle gegevens over één persoon te vinden — over sollicitaties, notities, berichten en bestanden heen — ze te exporteren en volledig te verwijderen, ook uit zoekindexen en eventuele AI-embeddings die van hun cv zijn gemaakt.
 
 ## Probleem 6: Notities van Recruiters
 
-Recruiters maken aantekeningen. Soms zijn die notities ondoordacht of bevatten ze subjectieve, gevoelige observaties. Sollicitanten hebben het wettelijk recht om deze notities op te vragen via een AVG-inzageverzoek. De software moet notities strikt binnen de werkgeversorganisatie houden, recruiters stimuleren om feitelijk te formuleren en deze notities naadloos meenemen in geautomatiseerde opschoonprocedures.
+Recruiters schrijven notities. Soms zijn die notities onprofessioneel of bevatten ze gevoelige observaties. Kandidaten kunnen om inzage erin vragen. Tools moeten notities alleen zichtbaar maken binnen de werving organiserende organisatie, feitelijke inhoud stimuleren en ze opnemen in processen voor inzage en verwijdering.
 
-## Hoe een Productieklare AI-Recruitmenttool Eruitziet
+## Productieproblemen van AI-Apps Oplossen: Zo Ziet een Gereede Recruitmenttool Eruit
 
-- Toegangscontrole per organisatie, direct afgedwongen in de database
-- Private opslag van cv-bestanden, beveiligd met signed URL's en virusscans
-- Automatische gegevensverwijdering conform AVG-termijnen
-- Gelogde, intrekbare toestemmingsregistratie voor talentpools
-- Menselijke verificatie van AI-aanbevelingen, inclusief toelichting en auditlogs
-- Eenvoudig zoeken, exporteren en permanent wissen van kandidaatdata
-- Hosting binnen de EU, inclusief de API's voor taalmodellen
-- Een complete verwerkersovereenkomst voor elke partij die cv-data aanraakt
+- Toegang per organisatie afgedwongen in de database
+- Privéopslag van cv's, ondertekende links, scannen bij uploaden
+- Automatisch bewaren en verwijderen
+- Vastgelegde, intrekbare toestemming voor talentpools en delen
+- Menselijke beoordeling van AI-scores, met uitleg en logs
+- Zoeken, exporteren en volledig verwijderen per kandidaat
+- Hosting in de EU, ook voor verwerking door AI-modellen waar mogelijk
+- Een lijst met verwerkers die elke dienst omvat die met cv's in aanraking komt
 
-## Het Inrichten van een Waterdichte Toestemmingsflow
+## De Toestemmingsflow Goed Ontwerpen
 
-Toestemming wordt in de recruitmentwereld vaak verkeerd begrepen. Voor het verwerken van een directe sollicitatie op een specifieke vacature is de rechtsgrondslag niet 'toestemming', maar 'het nemen van precontractuele maatregelen op verzoek van de betrokkene'. Toestemming is uitsluitend vereist voor zaken die daarbuiten vallen: het bewaren van het profiel in een bredere talentpool, het doorsturen naar andere werkgevers of het gebruik van gegevens voor modeltraining. Een conforme toestemmingsflow werkt daarom als volgt:
+Toestemming bij werving wordt vaak verkeerd begrepen. Voor het verwerken van een sollicitatie op een specifieke vacature is de rechtsgrond meestal het nemen van stappen richting een mogelijke overeenkomst, niet toestemming. Toestemming wordt relevant voor wat daarbuiten valt: een kandidaat in een talentpool houden, zijn profiel met andere werkgevers delen of zijn gegevens gebruiken om de matching te verbeteren. Een productierijpe toestemmingsflow dus:
 
-- Legt in begrijpelijke taal uit wat er met de directe sollicitatie gebeurt, zonder om toestemming te vragen.
-- Biedt **afzonderlijke, niet-aangevinkte keuzevakjes** voor de talentpool, doorplaatsing en kwaliteitsverbetering.
-- Slaat elke keuze op inclusief de exacte getoonde wettekst, versienummer en tijdstempel.
-- Biedt kandidaten de mogelijkheid om hun keuzes met één klik te herzien via hun profiel of een link onderaan e-mails.
-- Verwijdert een kandidaat bij intrekking direct automatisch uit alle overkoepelende overzichten.
+- Legt in gewone taal uit wat er met de sollicitatie zelf gebeurt, zonder om toestemming te vragen.
+- Biedt **aparte, niet-aangevinkte keuzes** voor talentpools, delen en verbetering van het model.
+- Legt elke keuze vast met de exacte getoonde tekst, de versie en een tijdstempel.
+- Laat kandidaten hun keuzes wijzigen vanuit hun account of via een link in elke e-mail.
+- Voert intrekking automatisch door — de kandidaat wordt direct uit pools en gedeelde weergaven verwijderd.
 
-## Uitlegbare AI-Matchscores
+Een tabel met toestemmingsregistraties kan `candidate_id`, `purpose`, `granted`, `text_version`, `recorded_at` en `source` bevatten. Die kleine structuur beantwoordt de vraag die toezichthouders en werkgevers het vaakst stellen: "kunt u laten zien waarmee deze persoon instemde, en wanneer?"
 
-Wanneer uw applicatie kandidaten rangschikt, zullen zowel werkgevers als sollicitanten vragen naar de onderbouwing. Een transparante score toont exact welke functie-eisen matchen (certificaten, jaren relevante ervaring, talenkennis, regio) en welke onderdelen ontbreken, in plaats van één mystiek percentage. Beperk de input voor het algoritme strikt tot vacature-relevante criteria, log het versienummer van het prompt- of selectiemodel en behandel scores altijd als adviserend: de recruiter beslist, het algoritme ondersteunt. Deze opzet voldoet aan de eisen van de EU AI Act rondom transparantie en versterkt het vertrouwen van recruiters in uw platform.
+## AI-Matchscores Uitleggen
 
-## Indirecte Discriminatie (Proxy Bias) Voorkomen
+Rangschikt of scoort uw tool kandidaten, dan zullen recruiters en kandidaten vragen waarom. Een uitlegbare score laat zien aan welke eisen werd voldaan (certificaten, jaren ervaring, talen, locatie) en welke ontbraken, in plaats van één ondoorzichtig getal. Beperk de invoer van de score tot functierelevante criteria, log de versie van het model of de regels die de score maakten, en houd scores adviserend: de recruiter beslist, het systeem ondersteunt. Deze aanpak sluit aan bij de nadruk van de EU AI Act op menselijk toezicht en transparantie bij toepassingen met een hoog risico, en het maakt de tool nuttiger — recruiters vertrouwen suggesties die ze begrijpen.
 
-Zelfs wanneer beschermde kenmerken expliciet worden weggelaten, kunnen andere datavelden fungeren als proxy: postcodes (voor afkomst of inkomensniveau), afstudeerjaren (voor leeftijd), pasfoto's (voor geslacht, etniciteit en leeftijd), en loopbaangaten (voor zwangerschapsverlof of chronische ziekte). Praktische voorzorgsmaatregelen zijn onder meer: pasfoto's en geboortedata strikt verbergen voor het AI-matchingmodel, reistijdcategorieën gebruiken in plaats van exacte postcodes, en de scoringsuitkomsten periodiek controleren op onevenredige afwijkingen. Het is aanzienlijk eenvoudiger om dit vanaf de ontwerpfase in te bouwen dan achteraf te moeten verklaren waarom een model bepaalde groepen systematisch benadeelde.
+## Indirecte Discriminatie via Proxy's Vermijden
 
-## Geautomatiseerde Retentie in de Praktijk
+Ook als beschermde kenmerken worden uitgesloten, kunnen andere velden als proxy werken: postcode (voor etniciteit of inkomen), afstudeerjaar (voor leeftijd), foto's (voor geslacht, etniciteit en leeftijd), gaten in de loopbaan (voor ouderschapsverlof of ziekte), namen (voor herkomst). Praktische maatregelen zijn onder meer foto's en geboortedata weglaten uit wat de matchinglogica ziet, locatie op postcodeniveau niet in de score gebruiken (maar reisafstandsbanden), uitkomsten tussen groepen testen waar dat wettelijk mag en haalbaar is, en deze keuzes documenteren. Het is makkelijker dit vanaf het begin in te bouwen dan achteraf uit te leggen waarom een model een bepaalde groep bevoordeelde.
 
-Bewaartermijnen werken in de praktijk alleen wanneer ze geautomatiseerd worden uitgevoerd. Een beproefde indeling:
+## Bewaartermijnen in de Praktijk
 
-| Gegevenscategorie | Standaard bewaartermijn | Trigger voor verwijdering |
+Bewaarregels werken alleen als ze automatisch draaien. Een typische implementatie:
+
+| Data | Standaard bewaartermijn | Trigger |
 | --- | --- | --- |
-| Sollicitatie op specifieke vacature | Maximaal 4 weken na afronding procedure | Sluiting van de vacature |
-| Talentpool-profiel | Maximaal 12 maanden met toestemming | Registratiedatum; notificatie vóór verloop |
-| Recruiter-notities | Gelijk aan de bijbehorende sollicitatie | Gekoppeld aan de sollicitatierecord |
-| CV-documenten en vectoren | Gelijk aan het kandidaatprofiel | Gelijktijdig gewist met profiel |
-| Auditlogs | Langere termijn, geanonimiseerd | Vastgelegd in beveiligingsbeleid |
+| Sollicitatie op een vacature | Ongeveer vier weken na sluiting van de vacature | Wijziging van de vacaturestatus |
+| Profiel in de talentpool | Tot een jaar met toestemming | Datum van toestemming; herinnering vóór afloop |
+| Notities van recruiters | Gelijk aan de sollicitatie waar ze bij horen | Gekoppeld aan de sollicitatie |
+| Cv-bestanden en embeddings | Gelijk aan het profiel | Verwijderd met het profiel |
+| Auditlogs | Langer, zonder cv-inhoud | Apart vastgesteld |
 
-Een nachtelijke achtergrondtaak handhaaft deze regels en genereert een auditlog. Als een kandidaat vraagt: "hebben jullie mijn cv nog?", is het antwoord direct paraat en feitelijk juist.
+Een nachtelijke taak past deze regels toe, en een rapport laat zien wat er is verwijderd. Vraagt een kandidaat "heeft u mijn cv nog?", dan is het antwoord precies.
 
-## Afscheiding Tussen Werkgevers en Bureaus
+## Scheiding tussen Werkgevers en Bureaus
 
-Op een platform dat meerdere werkgevers bedient, moet de datascheiding waterdicht zijn: een werkgever ziet uitsluitend sollicitanten op de eigen vacatures en, uitsluitend na expliciete instemming, goedgekeurde talentpool-kandidaten; wervingsbureaus zien enkel kandidaten die zij zelf hebben aangedragen. Dwing deze regels af in de database (PostgreSQL RLS), pas ze toe op zoekindexen en vector-databases en valideer ze via geautomatiseerde beveiligingstests. Vrijwel alle datalekken in recruitmentsoftware ontstaan doordat zoekindexen niet tenant-gescheiden zijn opgezet.
+Op platforms die meerdere werkgevers of bureaus bedienen, moet de scheiding absoluut zijn: een werkgever ziet sollicitanten op zijn eigen vacatures en, alleen met toestemming, kandidaten uit de pool; bureaus zien alleen kandidaten die zij hebben voorgesteld of die zich hebben aangemeld. Dwing dit af in de database, pas het toe op zoekindexen en embeddings net zo goed als op tabellen, en test het met negatieve tests. Veel datalekken in werving gebeuren in zoekfuncties, waar één index alle tenants omvat.
+
+## Beveiliging van Kandidaataccounts
+
+Kandidaten solliciteren vaak één keer en vergeten hun account. Bied inloggen zonder wachtwoord of via een magische link met korte geldigheid, vermijd langlevende sessies, sta het verwijderen van een account toe zonder contact met support, en stuur cv's nooit als e-mailbijlage naar recruiters — stuur in plaats daarvan een link naar het platform. Eis voor recruiteraccounts meerfactorauthenticatie, omdat een gecompromitteerd recruiteraccount veel kandidaten tegelijk blootstelt.
+
+## Voorbereiden op Vragen van Werkgevers
+
+Werkgevers en uitzendbureaus vragen leveranciers van recruitmenttools steeds vaker naar verwerkersovereenkomsten, bewaartermijnen, AI-gebruik, biastests en hostinglocatie. Stel een kort document op dat deze vragen beantwoordt, in lijn met hoe het systeem werkelijk werkt. Het verkort verkooptrajecten en laat zien dat de productieproblemen van uw AI-app zijn opgelost voordat ze de problemen van uw klanten werden.
+
+## Verzoeken van Kandidaten Efficiënt Afhandelen
+
+Kandidaten oefenen hun AVG-rechten vaker uit dan gebruikers van veel andere apps, omdat het hen uitmaakt wie hun cv heeft. Bouw een weergave per kandidaat die alles verzamelt: sollicitaties, notities, berichten, bestanden, toestemmingsregistraties, matchscores en verzonden e-mails. Vanuit die weergave moeten medewerkers alles in een leesbaar formaat kunnen exporteren en in één actie kunnen verwijderen of anonimiseren, inclusief zoekindexen en embeddings. Log elk verzoek en de datum van afhandeling. Zo kost een verzoek dat anders uren zoeken zou vergen een paar minuten, en is de termijn van één maand geen bron van stress meer.
+
+## Beveiligingsincidenten Specifiek voor Werving
+
+Recruitmentplatforms trekken specifieke dreigingen aan: nepvacatures om cv's te verzamelen, frauduleuze "recruiters" die kandidaten benaderen, en overname van recruiteraccounts om kandidatendatabases te downloaden. Tegenmaatregelen zijn onder meer werkgeversaccounts verifiëren voordat vacatures live gaan, bulkdownloads beperken en bewaken, waarschuwen bij ongebruikelijke exportactiviteit, MFA eisen voor recruiters en kandidaten een eenvoudige manier geven om verdacht contact te melden. Deze maatregelen beschermen kandidaten direct en beschermen de reputatie van het platform bij werkgevers.
+
+## Hoe Het Er Goed Uitziet na de Lancering
+
+Een recruitmenttool die zijn productieproblemen als AI-app heeft opgelost, laat dat in de dagelijkse praktijk zien: recruiters zien alleen hun eigen kandidaten, cv's verdwijnen volgens schema, kandidaten kunnen hun toestemming inzien en wijzigen, matchscores komen met redenen, en elk verzoek over rechten wordt ruim binnen een maand afgesloten. Dat zijn de signalen waar werkgevers en toezichthouders naar kijken.
 
 ## Hoe LaunchStudio Helpt
 
-LaunchStudio implementeert deze compliance- en beveiligingsmaatregelen zonder dat de gebruiksvriendelijke interface van uw recruitmenttool verloren gaat. Wij zorgen voor de vaak over het hoofd geziene details: het verwijderen van cv-teksten uit foutregistratiesystemen, het configureren van zero-data retention op externe AI-API's, en het waarborgen dat verwijderingen daadwerkelijk doorwerken in vector-databases en back-upbestanden.
+Het werk van LaunchStudio aan recruitmenttools implementeert deze maatregelen met behoud van de interface die uw recruiters al waarderen. Het omvat ook de minder zichtbare delen: cv-tekst uit logs en foutrapporten verwijderen, zorgen dat AI-API-aanroepen waar mogelijk geen data bewaren, en controleren dat verwijderingen embeddings en back-ups binnen hun bewaartermijn bereiken.
 
-Achter LaunchStudio staat Manifera's team van meer dan 120 senior software engineers, met 11+ jaar ervaring verspreid over meer dan 160 projecten. Manifera heeft diepe wortels in complexe HR-systemen en datagedreven applicaties, en CEO Herre Roelevink's achtergrond in cybersecurity waarborgt een aanpak waarbij autorisatie, encryptie en auditability vanaf het fundament worden ingebouwd. De technische realisatie vindt plaats in ons softwarecentrum in Ho Chi Minhstad, met accountmanagement en ondersteuning via de Herengracht 420 in Amsterdam. Bekijk onze ervaring op het gebied van [softwareontwikkeling op maat bij Manifera](https://www.manifera.com/services/custom-software-development/).
+Achter LaunchStudio staat het team van Manifera met 120+ ervaren engineers, met 11+ jaar ervaring over 160+ projecten. De wortels van Manifera omvatten HR-gerelateerde en data-intensieve systemen, en de achtergrond in cybersecurity van CEO Herre Roelevink bepaalt mee hoe gevoelige data wordt behandeld. De engineering gebeurt in het ontwikkelcentrum in Ho Chi Minh-stad, met Europees contact via de Herengracht 420 in Amsterdam. Zie voor meer [maatwerksoftware van Manifera](https://www.manifera.com/services/custom-software-development/).
 
-Staan de eerste cv's al in uw testomgeving? [Plan vandaag nog een vrijblijvend adviesgesprek van 15 minuten](https://launchstudio.eu/nl/#contact) om onaangename verrassingen te voorkomen.
+Staan er al kandidaten in uw systeem, [plan dan liever eerder dan later een gratis kennismakingsgesprek van 15 minuten](https://launchstudio.eu/nl/#contact).
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Een Technisch Wervingsplatform in Friesland
+### Een AI-Native Oprichter in Actie: Een Recruitmentplatform voor Technische Vakken in Friesland
 
-Sophie Lambrecht, voorheen eigenares van een uitzendbureau voor technische vakmensen in Leeuwarden, bouwde Vakkracht met behulp van Lovable: een wervingsplatform waar installatie-, las- en bouwbedrijven vacatures plaatsen en een AI-model binnenkomende cv's matcht op harde eisen zoals VCA-certificaten, lasdiploma's en rijbewijzen. Twaalf installatiebedrijven en twee regionale uitzendbureaus sloten zich in het eerste kwartaal aan, en circa 1.400 vakmensen solliciteerden via het platform.
+Sophie Lambrecht, die in Leeuwarden een uitzendbureau voor technische vakken had geleid, bouwde Vakkracht in Lovable: een recruitmentplatform waarop installatie-, las- en bouwbedrijven vacatures plaatsen en een AI-model binnenkomende cv's matcht aan eisen zoals certificaten en rijbewijzen. Twaalf werkgevers en twee uitzendbureaus sloten zich in het eerste kwartaal aan, en ongeveer 1.400 kandidaten solliciteerden.
 
-De klacht van een sollicitant die werd benaderd door een onbekend bedrijf bracht het balletje aan het rollen. Een security review door LaunchStudio bracht aan het licht dat alle aangesloten recruiters via de API door álle sollicitanten konden zoeken; de geüploade PDF-bestanden stonden in een publieke Amazon S3 bucket met voorspelbare bestandsnamen; data werd nooit gewist; het vinkje voor opname in de talentpool stond standaard aangevinkt en werd nergens in de database gelogd; het AI-matchingmodel wees kandidaten met een score onder de 40% automatisch af zonder menselijke tussenkomst; en volledige cv-teksten werden onversleuteld weggeschreven in de foutopsporingsdienst van derden zodra het parseren mislukte.
+De hierboven beschreven klacht van een kandidaat leidde tot een review. LaunchStudio ontdekte dat alle recruiters via de API alle kandidaten konden doorzoeken; cv-bestanden stonden in een openbare opslagbucket met voorspelbare bestandsnamen; er werd nooit iets verwijderd; het vakje voor de talentpool was vooraf aangevinkt en werd nergens opgeslagen; de AI-matchscore zette kandidaten onder de 40% automatisch op "afgewezen" zonder menselijke beoordeling; en de volledige cv-tekst werd naar de foutregistratiedienst geschreven telkens als het parsen mislukte.
 
-Binnen elf werkdagen voerde het engineeringteam van LaunchStudio strikte Row-Level Security in per werkgeversorganisatie, verplaatste alle documenten naar een private bucket met tijdelijk ondertekende URL's en antiviruscontrole, configureerde geautomatiseerde dataverwijdering na vier weken (of twaalf maanden met expliciete toestemming), verving de automatische afwijzing door een review-wachtrij voor recruiters inclusief toelichting op de matchscore, filterde persoonsgegevens uit foutlogs en ontwikkelde een export- en verwijderknop die persoonsgegevens direct wiste uit zowel PostgreSQL als de vector-database.
+In elf werkdagen dwong het team toegang per organisatie af met row level security, verplaatste het cv's naar privéopslag met ondertekende links en malwarescans, implementeerde het automatische verwijdering vier weken na sluiting van een vacature (of twaalf maanden met vastgelegde toestemming voor de talentpool), verving het het vooraf aangevinkte vakje door een expliciete, geversioneerde toestemmingsregistratie met intrekking in één klik, veranderde het de automatische afwijzing in een beoordelingswachtrij voor recruiters met de uitleg van de match zichtbaar, verwijderde het cv-tekst uit logs, en bouwde het een tool voor export en verwijdering van kandidaatdata die ook embeddings verwijderde.
 
-**Resultaat:** Vakkracht informeerde de betrokken kandidaten en de toezichthouder transparant en ontving geen boetes of verdere klachten. Vervolgens sloot een groot regionaal detacheringsbureau — dat eerder afhaakte wegens privacyzorgen — zich alsnog aan, waardoor het platform binnen zes maanden doorgroeide naar 31 aangesloten werkgevers.
+**Resultaat:** Vakkracht informeerde op advies de getroffen kandidaten en de toezichthouder, zonder verdere klachten. Daarna tekende een regionaal uitzendbureau dat eerder om privacyredenen had afgehaakt, en groeide het platform binnen zes maanden naar 31 werkgevers.
 
-> *"Het AI-matchingalgoritme was het slimme onderdeel, en dat was waar niemand zich druk om maakte. Iedereen maakte zich zorgen over wie de cv's kon inzien — en daar hadden ze volkomen gelijk in."*
+> *"De matching was het slimme deel, en het deel waar niemand zich zorgen over maakte. Iedereen maakte zich zorgen over wie de cv's kon zien — en terecht."*
 > — **Sophie Lambrecht, Oprichter, Vakkracht (Leeuwarden)**
 
-**Kosten & Tijdlijn:** €3.300 (Launch Ready-pakket met multi-tenant databescherming, private opslag, geautomatiseerde retentie, toestemmingslogging en AI-toezichtflow) — opgeleverd binnen 11 werkdagen.
+**Kosten & Tijdlijn:** € 3.300 (Launch Ready-pakket met toegangsbeheer, opslag, bewaartermijnen, toestemming en beoordelingsworkflow voor AI) — afgerond in 11 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Hoe lang mag een AI-recruitmenttool cv's van sollicitanten bewaren?
+### Hoe lang mag een AI-recruitmenttool cv's bewaren?
 
-Volgens de richtlijnen van de Autoriteit Persoonsgegevens moeten sollicitatiegegevens doorgaans binnen vier weken na het beëindigen van de sollicitatieprocedure worden verwijderd, tenzij de kandidaat expliciet toestemming geeft om de gegevens maximaal één jaar te bewaren voor toekomstige vacatures. Automatiseer deze retentie direct in uw software.
+Richtlijnen van de Nederlandse toezichthouder wijzen doorgaans op verwijdering van sollicitatiegegevens binnen ongeveer vier weken na afloop van een procedure, of tot een jaar met toestemming van de kandidaat. Bouw bewaartermijnen in het systeem in, zodat het automatisch gebeurt.
 
-### Is de EU AI Act van toepassing op een kleine recruitment-startup?
+### Is de EU AI Act van toepassing op mijn kleine recruitmenttool?
 
-Zodra uw tool AI inzet voor het screenen, filteren of rangschikken van sollicitanten, valt dit onder de 'hoog-risico'-classificatie van de EU AI Act. Het borgen van menselijk toezicht, uitlegbare matchscores en auditlogs vormen nu al essentiële randvoorwaarden.
+Gebruikt uw tool AI om kandidaten te screenen, te filteren of te beoordelen, dan valt hij waarschijnlijk in de categorie hoog risico, met verplichtingen die gefaseerd ingaan. Mensen in de besluitvorming houden, scores uitleggen en processen loggen zijn nu al verstandige fundamenten.
 
-### Mogen sollicitanten inzage vragen in de interne notities van recruiters?
+### Kunnen kandidaten vragen wat recruiters over hen hebben geschreven?
 
-Ja. Op grond van het inzagerecht onder de AVG hebben kandidaten recht op inzage in alle persoonsgegevens die over hen worden verwerkt, inclusief gespreksnotities en evaluaties. De software moet deze notities per kandidaat snel kunnen verzamelen en exporteren.
+Ja. Onder de AVG kunnen kandidaten inzage vragen in persoonsgegevens over hen, en daar kunnen notities van recruiters onder vallen. Tools moeten notities per kandidaat vindbaar en exporteerbaar maken.
 
-### Welke meerwaarde biedt de achtergrond van Manifera voor recruitment-platforms?
+### Hoe helpt de beveiligingsachtergrond van Manifera recruitmentstartups?
 
-Sollicitatiegegevens zijn uiterst privacygevoelig. Dankzij de cybersecurity-expertise van CEO Herre Roelevink en Manifera's ervaring met enterprise HR-systemen worden multi-tenant datascheiding, encryptie en geautomatiseerde retentie vanaf de basis ingebouwd.
+Wervingsdata is gevoelig en aantrekkelijk voor misbruik. De cybersecurity-ervaring van Herre Roelevink en het werk van Manifera aan data-intensieve systemen vormen een aanpak waarin het afbakenen van toegang, bewaartermijnen en logging worden ingebouwd in plaats van later toegevoegd.
 
-### Helpt een zorgvuldige omgang met cv-data bij de online vindbaarheid van mijn platform?
+### Kan zorgvuldige omgang met data helpen hoe kandidaten mijn platform vinden?
 
-Zeker. Werkgevers en kandidaten zoeken actief naar betrouwbare partijen en hechten veel waarde aan transparantie. Heldere privacyvoorwaarden en een vlekkeloze reputatie zonder datalekken dragen positief bij aan aanbevelingen door zowel zoekmachines als AI-zoeksystemen.
+Ja. Kandidaten en werkgevers zoeken steeds vaker naar betrouwbare platforms, en AI-antwoordmachines putten uit reviews en openbare informatie. Een duidelijke privacypagina en een geschiedenis zonder incidenten ondersteunen aanbevelingen.
 
 <script type="application/ld+json">
 {
@@ -162,28 +184,28 @@ Zeker. Werkgevers en kandidaten zoeken actief naar betrouwbare partijen en hecht
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hoe lang mag een AI-recruitmenttool cv's van sollicitanten bewaren?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Standaard maximaal 4 weken na afloop van de sollicitatieprocedure, of tot 1 jaar met expliciete toestemming van de kandidaat. Richt dit geautomatiseerd in." }
+      "name": "Hoe lang mag een AI-recruitmenttool cv's bewaren?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nederlandse richtlijnen wijzen doorgaans op ongeveer vier weken na afloop van een procedure, of tot een jaar met toestemming. Automatiseer de bewaartermijnen." }
     },
     {
       "@type": "Question",
-      "name": "Is de EU AI Act van toepassing op een kleine recruitment-startup?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja, AI die kandidaten beoordeelt of filtert geldt als hoog risico. Menselijk toezicht, verklaarbare scores en proceslogging zijn verplicht." }
+      "name": "Is de EU AI Act van toepassing op mijn kleine recruitmenttool?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AI die kandidaten screent of beoordeelt valt waarschijnlijk onder hoog risico. Menselijke besluiten, uitgelegde scores en logging zijn verstandige fundamenten." }
     },
     {
       "@type": "Question",
-      "name": "Mogen sollicitanten inzage vragen in de interne notities van recruiters?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja, op grond van het AVG-inzagerecht kunnen interne notities worden opgevraagd. Zorg dat deze per kandidaat exporteerbaar en wisbaar zijn." }
+      "name": "Kunnen kandidaten vragen wat recruiters over hen hebben geschreven?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Het inzagerecht onder de AVG kan notities van recruiters omvatten, dus notities moeten per kandidaat vindbaar en exporteerbaar zijn." }
     },
     {
       "@type": "Question",
-      "name": "Welke meerwaarde biedt de achtergrond van Manifera voor recruitment-platforms?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Cybersecurity-expertise en ervaring met HR-systemen zorgen dat autorisatie, gegevensretentie en encryptie direct solide worden neergezet." }
+      "name": "Hoe helpt de beveiligingsachtergrond van Manifera recruitmentstartups?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Het zorgt ervoor dat afbakening van toegang, bewaartermijnen en logging voor gevoelige wervingsdata vanaf het begin worden ingebouwd." }
     },
     {
       "@type": "Question",
-      "name": "Helpt een zorgvuldige omgang met cv-data bij de online vindbaarheid van mijn platform?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja, betrouwbare platforms met transparante verwerking en een vlekkeloos trackrecord genieten de voorkeur van zakelijke klanten en AI-zoekmachines." }
+      "name": "Kan zorgvuldige omgang met data helpen hoe kandidaten mijn platform vinden?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Een duidelijke privacypagina en een schone staat van dienst ondersteunen vertrouwen en aanbevelingen door AI-antwoordmachines." }
     }
   ]
 }

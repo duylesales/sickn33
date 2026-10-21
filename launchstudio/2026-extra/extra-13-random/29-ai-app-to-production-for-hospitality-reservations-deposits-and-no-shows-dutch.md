@@ -21,120 +21,171 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Zaterdagavond, 19:30 uur. De zaak zit vol, maar twee tafels van vier personen blijven leeg omdat de gasten zonder afbericht niet zijn komen opdagen. Ondertussen moet het personeel aan de deur een stel teleurgesteld wegsturen. In de horeca zijn de winstmarges flinterdun en hakken no-shows er genadeloos in. Niet verwonderlijk dat steeds meer restauranteigenaren en innovatieve horeca-ondernemers met behulp van Bolt of Lovable hun eigen reserveringsapplicatie bouwen, compleet met aanbetalingen, sms-herinneringen en wachtlijsten. Het productierijp maken van zo'n AI-horeca-app vraagt echter om fundamentele keuzes die deels bedrijfskundig en deels technisch van aard zijn. Maakt u hierin fouten, dan openbaren die zich steevast op de drukste avond van de week.
+Zaterdag, 19:30. Het restaurant is vol, twee tafels voor vier zijn leeg omdat de gasten nooit kwamen opdagen, en een stel aan de deur wordt weggestuurd. De horeca draait op marges waarin no-shows pijn doen, en daarom bouwen zoveel restauranteigenaren en horecaondernemers met Bolt of Lovable reserveringstools met aanbetalingen, herinneringen en wachtlijsten. Die AI-app in de horeca naar productie brengen betekent een reeks beslissingen nemen die deels zakelijk en deels technisch zijn — en verkeerde keuzes worden zichtbaar op de drukste avond van de week.
 
-## Beslissing 1: Aanbetaling, Creditcardgarantie of Geen Financiële Drempel?
+## Beslissing 1: Aanbetaling, Kaartgarantie of Niets?
 
-Er zijn drie beproefde methoden om no-shows effectief tegen te gaan:
+Er zijn drie gangbare modellen om u tegen no-shows te beschermen:
 
-- **Voorafbetaalde aanbetaling (deposit)** — de gast betaalt direct bij het reserveren (bijvoorbeeld €10 per persoon via iDEAL) en dit bedrag wordt op de avond zelf in mindering gebracht op de rekening, of ingehouden bij een no-show.
-- **Creditcardgarantie** — betaalgegevens worden veilig opgeslagen (of er wordt een pre-autorisatie geplaatst) en het no-show tarief wordt pas geïncasseerd als de gast niet opdaagt of te laat annuleert.
-- **Geen betaling** — uitsluitend geautomatiseerde herinneringen via sms of e-mail, eventueel aangevuld met een registratie van eerdere no-shows.
+- **Vooruitbetaalde aanbetaling** — geld wordt bij het boeken afgeschreven en verrekend met de rekening of ingehouden bij een no-show.
+- **Kaartgarantie** — kaartgegevens worden opgeslagen (of een betaling wordt geautoriseerd) en alleen bij een no-show of late annulering afgeschreven.
+- **Geen betaling** — alleen herinneringen, eventueel met een registratie van no-shows.
 
-Elk model heeft specifieke technische implicaties. Aanbetalingen vereisen geautomatiseerde terugbetalingen bij tijdige annulering. Creditcardgaranties vereisen een veilige opslag via de Payment Service Provider (PCI-DSS compliant via tokens, nooit in uw eigen database) en een juridisch sluitende toestemming van de gast om later te mogen belasten. Tijdelijke creditcard-reserveringen (authorisation holds) vervallen doorgaans na enkele dagen, waardoor een reservering die drie weken vooruit is gemaakt op de avond zelf niet meer gegarandeerd is.
+Elk model heeft technische gevolgen. Aanbetalingen vereisen terugbetalingen bij annulering. Kaartgaranties vereisen veilige opslag van kaarten via de betaalaanbieder (nooit in uw eigen database) en een manier om later af te schrijven met voorafgaande toestemming van de gast. Autorisaties verlopen na een aantal dagen, dus een reservering op de kaart die drie weken van tevoren bij het boeken is geplaatst, is op de avond zelf niet meer geldig.
 
-AI-prototypes kiezen vrijwel altijd voor het mechanisme dat de AI toevallig als eerste genereerde, in plaats van de optie die past bij de bedrijfsvoering van het restaurant.
+AI-prototypes kiezen vaak het model dat de tool als eerste genereerde, in plaats van het model dat bij het bedrijf past.
 
-## Beslissing 2: Wat Zijn de Annuleringsregels en Handhaaft de Code Deze Correct?
+## Beslissing 2: Wat Zijn Uw Annuleringsregels, en Dwingt de Code Ze Af?
 
-"Kosteloos annuleren tot 24 uur voor aanvang" klinkt helder. In softwarecode vereist dit echter een berekening die rekening houdt met de lokale tijdzone (Europe/Amsterdam), een eenduidig peilmoment waarop de regel ingaat, automatische terugbetalingen via de API van Mollie of Stripe en onmiddellijke bevestigingsberichten naar de gast. Door AI gebouwde applicaties rekenen termijnen stelselmatig uit in UTC (waardoor de annuleringsdeadline afhankelijk van de zomertijd één of twee uur verschuift), verwerken terugbetalingen handmatig of keren helemaal niets uit omdat de terugbetalings-webhook simpelweg ontbreekt.
+"Gratis annuleren tot 24 uur van tevoren" klinkt eenvoudig. In code vereist het een berekening die rekening houdt met de juiste tijdzone, een duidelijk moment waarop de regel ingaat, automatische terugbetalingen of vrijgaven en duidelijke communicatie met de gast. AI-gegenereerde apps berekenen deadlines vaak in UTC (waardoor de regel een uur of twee verschuift), verwerken terugbetalingen handmatig, of betalen helemaal niets terug omdat niemand het heeft gekoppeld.
 
-Bovendien moeten de annuleringsvoorwaarden vóór het afronden van de boeking ondubbelzinnig aan de gast worden getoond conform het consumentenrecht. De tekst in de voorwaarden en de logica in de code moeten identiek zijn.
+Uw annuleringsvoorwaarden moeten ook duidelijk vóór het boeken worden getoond, en de verwachtingen uit het consumentenrecht gelden. De code en de voorwaarden moeten hetzelfde zeggen.
 
-## Beslissing 3: Hoe Wordt de Zaalcapaciteit Gemodelleerd?
+## Beslissing 3: Hoe Wordt Capaciteit Gemodelleerd?
 
-Een reserveringssysteem is in de kern een voorraadbeheersysteem voor zitplaatsen. Het eenvoudigste AI-gegenereerde model — een vast aantal boekingen per tijdslot — faalt binnen de kortste keren in een echt restaurant. Reële capaciteit hangt immers af van tafelafmetingen, bezettingsduur per tafel en de mogelijkheid om tafels samen te voegen.
+Een reserveringssysteem is een capaciteitssysteem. Het eenvoudigste AI-gegenereerde model — een vast aantal boekingen per tijdslot — faalt snel in echte restaurants, waar capaciteit afhangt van tafelgroottes, hoe lang tafels bezet zijn en welke tafels kunnen worden gecombineerd.
 
-Bepaal minimaal: reserveert u op tafels of op aantal couverts? Hoe lang duurt een 'sitting' (shift), en varieert die duur afhankelijk van de groepsgrootte? Kan het personeel de online capaciteit overrulen voor passanten (walk-ins)? Dwing de capaciteit vervolgens direct af in de database (met exclusieve constraints), zodat twee gasten die op exact hetzelfde moment de laatste tafel voor vier proberen te reserveren niet beiden slagen.
+Beslis minimaal: boekt u tafels of couverts? Hoe lang duurt een zitting, en verschilt dat per gezelschapsgrootte? Mag personeel de capaciteit overrulen voor walk-ins? Zorg er vervolgens voor dat capaciteit in de database wordt afgedwongen, zodat twee gasten die op hetzelfde moment de laatste tafel boeken niet allebei slagen.
 
-## Beslissing 4: Hoe Worden Betalingen Definitief Bevestigd?
+## Beslissing 4: Hoe Worden Betalingen Bevestigd?
 
-Net als bij elke betalingsflow moet de reservering uitsluitend worden bevestigd via een geverifieerde server-side webhook van de betaalprovider, en nooit op basis van de bezoeker die terugkeert naar de bedankpagina in zijn browser. Bij betaalmethoden zoals iDEAL en Bancontact, waarbij gasten worden doorgestuurd naar hun bank-app, sluiten veel gebruikers hun browser zodra de banktransactie is goedgekeurd. Een browser-afhankelijke bevestiging leidt er dan toe dat reeds betaalde reserveringen in het systeem blijven hangen als 'in behandeling' en per ongeluk aan een ander worden weggegeven.
+Zoals bij elke betaalflow moet de boeking worden bevestigd door de geverifieerde webhook van de betaalaanbieder, niet door de browser van de gast die terugkeert naar uw site. Bij iDEAL en Bancontact, die doorverwijzen naar bankapps, keren gasten vaak nooit terug — en bevestiging via de browser verliest dan betaalde boekingen of bevestigt onbetaalde.
 
-## Beslissing 5: Welke Gastgegevens Worden Opgeslagen?
+## Beslissing 5: Welke Gastgegevens Bewaart U?
 
-Reserveringssystemen verzamelen waardevolle persoonsgegevens: namen, telefoonnummers, e-mailadressen, allergieën, dieetwensen, speciale gelegenheden en interne bedieningsnotities. Allergieën en dieetinformatie kunnen kwalificeren als gezondheidsgegevens onder de AVG. Notities van het personeel kunnen soms persoonlijk of ongepast zijn.
+Reserveringssystemen verzamelen namen, telefoonnummers, e-mailadressen, allergieën, dieetwensen, bijzondere gelegenheden en soms notities over gasten. Allergieën en sommige dieetinformatie kunnen gezondheidsgegevens zijn. Notities van personeel kunnen persoonlijk en soms ongepast zijn.
 
-Bepaal vooraf welke data strikt noodzakelijk is, welk personeel toegang heeft (allergieën horen in de keuken, niet in marketinglijsten), hoe lang gegevens bewaard blijven en of u de gegevens mag inzetten voor nieuwsbrieven. Marketingmails naar gasten die enkel een tafel hebben gereserveerd vereisen een expliciete, afzonderlijke opt-in.
+Beslis wat u moet verzamelen, wie van het personeel het kan zien, hoe lang u het bewaart en of u het voor marketing gebruikt — waarvoor toestemming nodig is. Marketingmails aan gasten die alleen een reservering maakten, hebben een rechtsgrond nodig, meestal opt-in.
 
-## Beslissing 6: Wat Gebeurt Er Tijdens Topdrukte?
+## Beslissing 6: Wat Gebeurt Er op de Drukste Avond?
 
-Op piekmomenten verwerkt uw applicatie honderden aanvragen tegelijk en moet er een stroom aan herinneringsberichten de deur uit. Controleer vooraf of herinneringen worden verzonden via een betrouwbare transactionele sms- of e-maildienst met voldoende capaciteit, of de database gelijktijdige boekingspogingen aankan zonder locks te laten crashen, en of het bedieningsscherm soepel blijft draaien als de wifi in het restaurant even wegvalt.
+Drukke avonden brengen pieken in boekingen en een stroom herinneringsberichten. Controleer dat herinneringen via een echte sms- of e-mailaanbieder gaan met limieten die u niet zult bereiken, dat de database gelijktijdige boekingen aankan, en dat de schermen van het personeel blijven werken als de wifi in de keuken uitvalt.
 
-## Beslissing 7: Wie Is Eigenaar van het Gastenbestand?
+## Beslissing 7: Wie Is Eigenaar van de Relatie met de Gast?
 
-Wanneer uw platform meerdere horecazaken bedient, behoort het gastenbestand toe aan het individuele restaurant. Gastdata moet op databaseniveau strikt per horecazaak gescheiden zijn (tenant separation). Gastgegevens mogen onder geen beding zonder transparante grondslag en expliciete toestemming worden gedeeld tussen verschillende restaurants.
+Bedient uw product meerdere restaurants, dan is de gastenlijst van elk restaurant van dat restaurant. Data moet per locatie in de database worden gescheiden, en gastgegevens mogen niet tussen locaties worden gedeeld zonder duidelijke grondslag en transparantie.
 
-## Checklist voor Livegang in de Horeca
+## AI-App naar Productie: Een Checklist vóór de Lancering in de Horeca
 
-- No-show model definitief gekozen en betalingsinrichting hierop afgestemd
-- Annuleringsvoorwaarden berekend in lokale Nederlandse tijd, met automatische restitutie
-- Zaalcapaciteit en tafelschikking beveiligd op databaseniveau tegen dubbele boekingen
-- Betalingsbevestigingen verlopen uitsluitend via beveiligde server-webhooks (Mollie/Stripe)
-- Gastgegevens geminimaliseerd; allergie-informatie uitsluitend zichtbaar voor vloer en keuken
-- Toestemming voor marketingmails wordt los van de tafelreservering geregistreerd
-- Scheiding van data tussen verschillende restaurants gewaarborgd in de database
-- Geautomatiseerde herinneringen via professionele sms- en mailgateways getest op piekvolumes
+- No-showmodel gekozen, met bijpassende betaalimplementatie
+- Annuleringsregels afgedwongen in de lokale tijd van de locatie, met automatische terugbetalingen of vrijgaven
+- Capaciteit afgedwongen in de database, inclusief de wedloop om de laatste tafel
+- Betalingen bevestigd via geverifieerde webhooks
+- Gastgegevens geminimaliseerd, allergienotities beperkt tot relevant personeel
+- Marketingtoestemming apart vastgelegd
+- Scheiding van data per locatie
+- Herinneringen via betrouwbare aanbieders, getest op piekvolume
 
-## Het Modelleren van Tafels, Shifts en Bezettingsduur
+## Tafels, Wisselingen en Capaciteit Modelleren
 
-Het capaciteitsmodel vormt het kloppend hart van elk horecasysteem, en dit is precies waar AI-code het vaakst faalt. Een volwassen model omvat doorgaans:
+Het capaciteitsmodel is het hart van elk reserveringssysteem, en het is waar AI-gegenereerde code het zwakst is. Een model voor productie in een restaurant omvat meestal:
 
-- **Tafels** met minimale en maximale capaciteit, zone-indeling (binnen, terras, bar) en koppelingsmogelijkheden met buurtafels.
-- **Serviceperioden** (lunch, vroege shift, late shift) met vaste starttijden en uiterste inlooptijden.
-- **Tafeltijden** op basis van groepsgrootte — bijvoorbeeld 90 minuten voor twee personen, 120 minuten voor vier personen en 150 minuten voor grotere gezelschappen.
-- **Buffers** tussen twee reserveringen voor het afruimen en indekken van de tafel (bijvoorbeeld 15 minuten).
-- **Tafelreserves** voor passanten (walk-ins) of vaste gasten die niet via het openbare systeem geboekt kunnen worden.
-- **Uitzonderingen** — sluitingsdagen, besloten feesten of een gesloten terras bij regen.
+- **Tafels** met een minimum en maximum aantal couverts, een zone (binnen, terras, bar) en of ze met specifieke buren kunnen worden gecombineerd.
+- **Serviceperiodes** (lunch, eerste zitting, tweede zitting) met begintijden en laatste boekingstijden.
+- **Tafelduur** per gezelschapsgrootte — bijvoorbeeld 90 minuten voor twee, 120 voor vier, 150 voor grotere groepen — per dag aan te passen.
+- **Buffers** tussen zittingen voor afruimen en opnieuw dekken.
+- **Reserveringen** voor walk-ins, vaste gasten of VIP's die online boeken niet kan gebruiken.
+- **Uitzonderingen** — gesloten dagen, besloten evenementen, minder terrascapaciteit als het regent.
 
-Het algoritme beantwoordt vervolgens één exacte vraag: is er een specifieke tafel of combinatie van tafels beschikbaar voor dit gezelschap voor de volledige verblijfsduur inclusief buffer? De uiteindelijke reservering wordt vastgelegd met een database-constraint die voorkomt dat twee reserveringen dezelfde tafel voor overlappende tijden claimen.
+De boekingsengine beantwoordt dan een precieze vraag: is er een tafel of combinatie van tafels vrij voor deze gezelschapsgrootte, voor de volledige tafelduur, inclusief buffers? De uiteindelijke reservering moet worden weggeschreven met een database-constraint die voorkomt dat twee boekingen dezelfde tafel claimen voor overlappende tijdsbereiken.
 
-## Hoe LaunchStudio Helpt
+## Aanbetalingen en Kaartgaranties, Correct Geïmplementeerd
 
-LaunchStudio implementeert deze robuuste logica onder de gebruikersvriendelijke interface die u met AI heeft gebouwd: betaalintegraties met Mollie of Stripe (inclusief iDEAL-aanbetalingen en creditcard-tokens), tijdzone-correcte annuleringsdeadlines, databasematige capaciteitsborging, scheiding van horecalocaties en geautomatiseerde herinneringen. Horecaprojecten vallen doorgaans in het gunstige segment van onze vaste prijsrange van €800 tot €7.500.
+Wanneer u een AI-app voor de horeca naar productie brengt, vereisen betaalregels een precieze implementatie:
 
-LaunchStudio wordt aangedreven door Manifera, een softwarebedrijf met meer dan 11 jaar ervaring en meer dan 120 senior engineers verspreid over Amsterdam, Singapore en Ho Chi Minhstad. Lees meer over onze ervaring met [webapplicatie-ontwikkeling bij Manifera](https://www.manifera.com/services/web-app-develop/) en raadpleeg de [Mollie documentatie over webhooks](https://docs.mollie.com/) voor achtergrondinformatie over betrouwbare iDEAL-verwerking.
+| Model | Implementatiedetail | Veelgemaakte fout |
+| --- | --- | --- |
+| Vooruitbetaalde aanbetaling | Betaling bevestigd via webhook voordat de boeking definitief is; terugbetaling via API bij gratis annulering | Boeking bevestigd bij redirect in de browser |
+| Kaartgarantie (opgeslagen kaart) | Kaart opgeslagen via de aanbieder met toestemming van de klant voor latere afschrijvingen; alleen afschrijven volgens schriftelijk beleid | Kaartgegevens door de app zelf verwerkt |
+| Autorisatiereservering | Reservering op de kaart dicht bij de boekingsdatum geplaatst, automatisch vrijgegeven | Reservering weken vooraf geplaatst en verlopen |
+| No-showvergoeding | Afschrijven na het moment met duidelijke voorafgaande toestemming en bewijs van de no-show | Afschrijven zonder vastgelegde acceptatie van het beleid |
 
-Benieuwd naar de investering voor uw horeca-app? [Gebruik onze prijscalculator](https://launchstudio.eu/nl/#calculator) — selecteer "Tool" of "SaaS" en vink Betalingen aan.
+Bewaar de exacte tekst van het annulerings- en no-showbeleid die bij het boeken is getoond bij de reservering, zodat geschillen met feiten kunnen worden opgelost.
+
+## Herinneringen Die No-Shows Verminderen
+
+Herinneringen zijn de goedkoopste verdediging tegen no-shows. Een typisch effectieve reeks is een directe bevestiging, een herinnering de dag ervoor en, voor grotere groepen, een verzoek om een paar dagen vooraf te bevestigen of te annuleren. Voeg een annuleringslink in één klik toe die het beleid respecteert, zodat gasten tafels vrijgeven in plaats van stilletjes weg te blijven. Verstuur via een transactionele e-mail- of sms-aanbieder met correcte afzenderauthenticatie; sms is duurder maar vaak effectiever voor herinneringen op de dag zelf. Volg de bezorging van herinneringen en het no-showpercentage per kanaal om te zien wat bij uw gasten echt werkt.
+
+## Walk-Ins, Overrules en de Vloer
+
+Online boeken moet samengaan met wat er aan de deur gebeurt. Personeel moet walk-ins kunnen plaatsen, boekingen tussen tafels verplaatsen, een tafel die uitloopt verlengen en no-shows markeren — snel, op een tablet, tijdens de service. Elk van deze acties moet de beschikbaarheid voor online boekingen direct bijwerken, en elke actie moet worden gelogd met de naam van de medewerker. Overrules zijn nodig, maar een audittrail voorkomt verwarring als een gast een no-showvergoeding betwist.
+
+## Allergenen en Gastnotities
+
+Allergie-informatie moet de keuken betrouwbaar bereiken en wegblijven van plekken waar ze niet hoort. Sla ze op in een apart veld, toon ze duidelijk in de keuken- en vloerweergave voor die boeking, neem ze op in het servicesheet en sluit ze uit van marketingexports. Ook vrije notities verdienen zorg: personeel schrijft soms persoonlijke observaties op die gasten niet graag zouden lezen, en gasten kunnen inzage in hun gegevens vragen. Houd notities feitelijk en beperkt tot wat de service nodig heeft.
+
+## Koppelingen met de Rest van het Restaurant
+
+Reserveringssystemen zijn vaak gekoppeld aan kassasystemen, reviewplatforms en marketingtools. Elke koppeling voegt datastromen toe om te documenteren en inloggegevens om te beheren. Houd koppelingen bij de lancering minimaal — meestal de kassa om boekingen aan rekeningen te koppelen — en voeg andere pas toe als hun waarde duidelijk is. Gebruik inloggegevens per koppeling en log wat er wordt verstuurd.
+
+## Voorbereiden op Piekdagen
+
+Valentijnsdag, Moederdag, de feestdagen en lokale evenementen zoals carnaval brengen pieken in boekingen en wijzigingen op het laatste moment. Vóór elke piek: loadtest de boekingsflow, controleer dat de volumes aan herinneringen binnen uw e-mail- en sms-abonnementen passen, controleer dat betaalwebhooks snel worden verwerkt, instrueer personeel over procedures voor overrules en zorg dat iemand tijdens de boekingsdrukte de monitoring in de gaten houdt. Pieken zijn het moment waarop reserveringssystemen het vertrouwen van restauranteigenaren voor de rest van het jaar winnen of verliezen.
+
+## Groepen met Meerdere Locaties
+
+Groepen met meerdere restaurants hebben gescheiden data per locatie nodig, gedeelde gastprofielen alleen waar gasten daarmee hebben ingestemd, centrale rapportage voor eigenaren en rechten per locatie voor managers. Dwing scheiding af in de database, niet alleen in dashboards, zodat een manager van de ene locatie nooit de gastenlijst van een andere ziet.
+
+## Gastgegevens, Marketing en Toestemming
+
+Reserveringssystemen verzamelen waardevolle gastgegevens: bezoekfrequentie, gezelschapsgrootte, voorkeuren, bijzondere gelegenheden. Die voor marketing gebruiken — verjaardagsaanbiedingen, nieuwsbrieven, uitnodigingen voor evenementen — vereist doorgaans toestemming, apart van de boeking zelf vastgelegd. Bied bij het boeken een duidelijke, niet-aangevinkte optie, sla de toestemming op met datum en tekst, en verwerk afmeldingen direct in elke tool. Gasten die zich gerespecteerd voelen, komen eerder terug; gasten die na één boeking onverwacht marketing ontvangen, laten eerder een kritische review achter.
+
+## Cijfers Waar Restauranteigenaren om Geven
+
+Eigenaren beoordelen een reserveringssysteem op resultaten: online geboekte couverts, no-showpercentage, aandeel gevulde tafels, gemiddelde boekingstermijn en omzet die door aanbetalingen of vergoedingen is beschermd. Bouw een eenvoudig dashboard voor eigenaren dat deze per week en per serviceperiode toont. Het helpt eigenaren hun beleid bij te stellen — bijvoorbeeld alleen op zaterdagavond aanbetalingen vragen — en laat de waarde van uw product zien elke keer dat ze inloggen.
+
+## Een Testscript vóór de Lancering voor Horeca-Apps
+
+Loop vóór de lancering het volgende door: een boeking op de laatst beschikbare tafel vanuit twee browsers tegelijk; een boeking net binnen en net buiten de annuleringstermijn, in lokale tijd; een aanbetaling die in een bankapp wordt betaald terwijl het tabblad gesloten is; een terugbetaling die vanuit het dashboard van de betaalaanbieder wordt gestart; een walk-in die wordt geplaatst aan een tafel die online boekbaar was; en een allergienotitie die in de keukenweergave wordt gecontroleerd. Gedragen alle zes zich correct, dan is de app klaar voor een drukke zaterdag.
+
+Faalt er een, los het dan op voordat u de boekingen opent — een zaterdagavond is het slechtst denkbare moment om het te ontdekken.
+
+## Waar LaunchStudio Past
+
+LaunchStudio implementeert deze beslissingen onder de boekingsinterface die u bouwde: betaalmodellen met Mollie of Stripe (inclusief iDEAL en kaartgaranties die door de aanbieder worden afgehandeld), annuleringsregels in de juiste tijdzone, capaciteit afgedwongen in de database, scheiding per locatie en betrouwbare herinneringen. Horecaprojecten vallen meestal in het onderste tot middelste deel van de bandbreedte van € 800–€ 7.500.
+
+LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring en 120+ engineers in Amsterdam, Singapore en Ho Chi Minh-stad. Zie voor een overzicht van de aanpak van Manifera voor webapplicaties [webappontwikkeling van Manifera](https://www.manifera.com/services/web-app-develop/); [de documentatie van Mollie over betalingen en webhooks](https://docs.mollie.com/) is een goede externe referentie.
+
+Om te zien wat uw project zou kosten, [probeer de prijscalculator](https://launchstudio.eu/nl/#calculator) — selecteer "Tool" of "SaaS" en voeg Betalingen toe.
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Een Reserveringssysteem in Maastricht Tijdens Carnaval
+### Een AI-Native Oprichter in Actie: Een Maastrichtse Reserveringstool in het Carnavalsweekend
 
-Evi Janssens, restaurantmanager in Maastricht, ontwikkelde Tafelgarant in Bolt voor haar eigen bistro en bood de software vervolgens aan collega-ondernemers aan: gasten reserveren online, voldoen een aanbetaling van €10 per persoon via iDEAL of creditcard, ontvangen herinneringen en kunnen tot 24 uur van tevoren kosteloos annuleren. Negen restaurants in Maastricht en Heerlen maakten er gebruik van, goed voor zo'n 2.500 couverts per maand.
+Evi Janssens, restaurantmanager in Maastricht, bouwde Tafelgarant in Bolt voor haar eigen restaurant en bood het daarna aan anderen aan: gasten boeken online, betalen een aanbetaling van € 10 per persoon via iDEAL of kaart, krijgen herinneringen en kunnen tot 24 uur van tevoren gratis annuleren. Negen restaurants in Maastricht en Heerlen gebruikten het, goed voor zo'n 2.500 couverts per maand.
 
-Het carnavalsweekend legde alle zwakke plekken genadeloos bloot. Aanbetalingen werden pas bevestigd zodra de browser van de gast terugkeerde van Mollie; veel carnavalsvierders betaalden via hun mobiele bank-app en sloten direct het scherm af, waardoor hun reservering op "in behandeling" bleef staan en de tafel na 15 minuten aan iemand anders werd vergeven — met dubbele boekingen en woedende gasten met geldige betaalbewijzen tot gevolg. De annuleringsdeadline van 24 uur werd berekend in UTC, waardoor gasten die om 19:30 uur annuleerden voor een diner om 20:00 uur de volgende dag — keurig op tijd — onterecht werden geweigerd. Restituties moesten handmatig worden overgeboekt. De zaalcapaciteit was gebaseerd op een simpel aantal personen per halfuur zonder rekening te houden met tafels, waardoor twee grote groepen gelijktijdig dezelfde grote familietafel reserveerden. Bovendien waren allergienotities van álle negen restaurants via de API voor elk personeelslid zichtbaar.
+Het carnavalsweekend legde alles bloot. Aanbetalingen werden bevestigd zodra de browser van de gast terugkeerde van Mollie; veel gasten betaalden in hun bankapp en kwamen nooit terug, waardoor hun boekingen op "in afwachting" bleven staan en aan anderen werden vrijgegeven — met dubbel geboekte tafels en woedende gasten met betaalbewijzen als gevolg. De annuleringstermijn van 24 uur werd in UTC berekend, waardoor gasten die om 19:30 annuleerden voor een diner om 20:00 de volgende avond — nog binnen de gratis annuleringstermijn — werden geweigerd. Terugbetalingen gingen handmatig. Capaciteit was een vast aantal per half uur, zonder rekening te houden met tafelgroottes, en twee gezelschappen boekten tegelijk de laatste grote tafel. Allergienotities waren via de API zichtbaar voor alle personeelsaccounts van alle negen restaurants.
 
-De engineers van LaunchStudio schakelden de bevestiging direct om naar beveiligde Mollie-webhooks en synchroniseerden de carnavalsboekingen met terugwerkende kracht, herstelden de annuleringslogica naar de Nederlandse tijdzone met geautomatiseerde terugbetalingen, vervingen het tijdsblokkenmodel door een zaalcapaciteitsmodel op tafelniveau afgedwongen in PostgreSQL, scheidden de data per restaurant, schermden allergiedata af voor uitsluitend de keuken en zaal van de betreffende vestiging, en koppelden een betrouwbare transactionele sms- en e-mailgateway.
+De engineers van LaunchStudio verplaatsten de bevestiging van aanbetalingen naar geverifieerde Mollie-webhooks en verzoenden de carnavalsboekingen, implementeerden annuleringstermijnen in de tijdzone Europe/Amsterdam met automatische terugbetalingen, vervingen de telling per slot door een capaciteitsmodel op basis van tafels dat in de database wordt afgedwongen (inclusief de duur van een zitting per gezelschapsgrootte), scheidden data per restaurant, beperkten allergienotities tot het bedienend personeel en de keuken van die locatie, en verplaatsten herinneringen naar een transactionele e-mail- en sms-aanbieder met geauthenticeerde verzending.
 
-**Resultaat:** In de maanden daarna kende Tafelgarant nul dubbele boekingen meer. Het no-show percentage bij de aangesloten restaurants daalde tot onder de 2% van de couverts, en nog voor de start van het terrasseizoen sloten vier nieuwe restaurants zich aan.
+**Resultaat:** In de twee maanden daarna registreerde Tafelgarant geen dubbele boekingen. No-shows bij de deelnemende restaurants daalden tot onder de 2% van de couverts, en nog vier restaurants sloten zich aan vóór het terrasseizoen.
 
-> *"Onze gasten interesseert het niets hoe de techniek werkt. Ze willen gewoon dat de tafel klaarstaat als ze binnenlopen. Het carnavalsweekend bewees dat dit te vaak misging."*
+> *"Onze gasten maakt het niet uit hoe het boeken werkt. Het gaat ze erom dat de tafel er is als ze binnenkomen. Carnaval liet me zien dat dat vaak genoeg niet zo was om ertoe te doen."*
 > — **Evi Janssens, Oprichter, Tafelgarant (Maastricht)**
 
-**Kosten & Tijdlijn:** €2.950 (Launch Ready-pakket: betalingswebhooks, annuleringslogica, zaalcapaciteitsmodel en data-afscherming) — afgerond binnen 10 werkdagen.
+**Kosten & Tijdlijn:** € 2.950 (Launch Ready-pakket met betalingen, annuleringslogica, capaciteitsmodel en scheiding van data) — afgerond in 10 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Is een aanbetaling of een creditcardgarantie effectiever voor restaurants?
+### Is een vooruitbetaalde aanbetaling of een kaartgarantie beter voor restaurants?
 
-Aanbetalingen (zoals €10 p.p. via iDEAL) zijn technisch eenvoudiger te implementeren en uiterst effectief tegen no-shows. Creditcardgaranties voelen laagdrempeliger voor de gast, maar zijn technisch complexer omdat pre-autorisaties na enkele dagen verlopen en latere inhoudingen strenge voorafgaande toestemming vereisen. Veel restaurants eisen uitsluitend een aanbetaling op drukke avonden of voor gezelschappen vanaf vijf personen.
+Aanbetalingen zijn eenvoudiger te implementeren en zeer effectief tegen no-shows; kaartgaranties voelen vriendelijker voor gasten maar zijn complexer, omdat autorisaties verlopen en latere afschrijvingen duidelijke voorafgaande toestemming vereisen. Veel restaurants gebruiken aanbetalingen alleen voor grote groepen en drukke avonden.
 
-### Mag ik creditcardnummers van gasten opslaan in mijn eigen database?
+### Mag ik de kaartnummers van gasten in mijn eigen database opslaan?
 
-Nee, absoluut niet. Het zelf bewaren van creditcardgegevens is verboden onder de PCI-DSS beveiligingsstandaarden. Uw betaalprovider bewaart de creditcardgegevens in een gecertificeerde kluis; uw applicatie ontvangt uitsluitend een beveiligd token waarmee u conform de voorwaarden een incasso kunt initiëren.
+Nee. Kaartgegevens moeten worden opgeslagen door uw betaalaanbieder, die daarvoor is gecertificeerd. Uw app bewaart alleen een referentietoken om later met toestemming van de gast af te schrijven.
 
-### Waarom gaan annuleringsdeadlines vaak fout in AI-gebouwde software?
+### Waarom gaan annuleringstermijnen mis in AI-gebouwde apps?
 
-Omdat AI-modellen tijdsberekeningen standaard uitvoeren in UTC of de servertijdzone in plaats van de lokale tijd van het restaurant. Rond de overgang tussen zomer- en wintertijd en bij reserveringen op de late avond verschuift de deadline daardoor met één tot twee uur, wat leidt tot onterecht ingehouden aanbetalingen.
+Omdat tijden vaak in UTC of in de tijdzone van de server worden berekend in plaats van in de lokale tijd van de locatie. Rond de overgang naar zomer- of wintertijd en op late avonden verschuift de termijn dan een of twee uur.
 
-### Welke meerwaarde biedt Manifera voor horeca-software?
+### Hoe is de ervaring van Manifera van toepassing op horecatools?
 
-Manifera ontwikkelt al ruim 11 jaar bedrijfskritische transactiesystemen waar tijd, capaciteit en betalingen exact moeten synchroniseren. LaunchStudio past die enterprise-standaarden toe op reserveringstools, waar een volgeboekt restaurant op zaterdagavond geen enkele fout toestaat.
+Manifera heeft transactionele systemen gebouwd waarin timing, capaciteit en betalingen exact moeten kloppen. LaunchStudio past die ervaring toe op reserveringstools, waarin een vol restaurant op zaterdag op het spel staat.
 
-### Hoe zorgt een reserveringstool voor betere zichtbaarheid in AI-zoekresultaten?
+### Hoe kan een reserveringstool restaurants helpen in AI-zoekresultaten te verschijnen?
 
-Help aangesloten restaurants door actuele openingstijden, menukaarten en directe reserveringslinks te publiceren met Restaurant Schema.org structured data. AI-assistenten en zoekmachines beantwoorden vragen zoals "waar kan ik vanavond een tafel reserveren" steeds vaker direct op basis van deze gestructureerde, realtime data.
+Moedig restaurants aan om juiste openingstijden, menukaarten en boekingslinks met gestructureerde data te publiceren. AI-assistenten beantwoorden vragen als "waar kan ik vanavond een tafel boeken" steeds vaker met zulke informatie van betrouwbare, snelle pagina's.
 
 <script type="application/ld+json">
 {
@@ -143,28 +194,28 @@ Help aangesloten restaurants door actuele openingstijden, menukaarten en directe
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is een aanbetaling of een creditcardgarantie effectiever voor restaurants?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Aanbetalingen via iDEAL zijn eenvoudiger en zeer effectief tegen no-shows; creditcardgaranties zijn gastvriendelijker maar vereisen token-opslag en vervallen snel." }
+      "name": "Is een vooruitbetaalde aanbetaling of een kaartgarantie beter voor restaurants?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Aanbetalingen zijn eenvoudiger en effectief; kaartgaranties zijn vriendelijker maar complex, omdat autorisaties verlopen en latere afschrijvingen toestemming vereisen." }
     },
     {
       "@type": "Question",
-      "name": "Mag ik creditcardnummers van gasten opslaan in mijn eigen database?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nee. Creditcards moeten worden opgeslagen door een gecertificeerde betaalprovider; uw app bewaart uitsluitend een beveiligd referentietoken." }
+      "name": "Mag ik de kaartnummers van gasten in mijn eigen database opslaan?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nee. De betaalaanbieder bewaart kaartgegevens; de app bewaart alleen een referentietoken." }
     },
     {
       "@type": "Question",
-      "name": "Waarom gaan annuleringsdeadlines vaak fout in AI-gebouwde software?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Tijden worden vaak in UTC berekend in plaats van lokale tijd, waardoor deadlines rondom zomertijd of late shifts met uren verschuiven." }
+      "name": "Waarom gaan annuleringstermijnen mis in AI-gebouwde apps?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tijden worden vaak in UTC berekend in plaats van in de lokale tijd van de locatie, waardoor termijnen verschuiven rond zomertijd en op late avonden." }
     },
     {
       "@type": "Question",
-      "name": "Welke meerwaarde biedt Manifera voor horeca-software?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ervaring met transactionele systemen waar timing, zaalcapaciteit en betalingen naadloos moeten samenkomen op drukke zaterdagavonden." }
+      "name": "Hoe is de ervaring van Manifera van toepassing op horecatools?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ervaring met transactionele systemen waarin timing, capaciteit en betalingen exact moeten kloppen." }
     },
     {
       "@type": "Question",
-      "name": "Hoe zorgt een reserveringstool voor betere zichtbaarheid in AI-zoekresultaten?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Door actuele openingstijden en boekingslinks te verrijken met Restaurant Schema.org data die AI-zoekmachines direct gebruiken voor zoekopdrachten." }
+      "name": "Hoe kan een reserveringstool restaurants helpen in AI-zoekresultaten te verschijnen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Door restaurants te helpen juiste openingstijden, menukaarten en boekingslinks met gestructureerde data op snelle pagina's te publiceren." }
     }
   ]
 }

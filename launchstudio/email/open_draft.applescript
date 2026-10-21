@@ -24,6 +24,10 @@ on run argv
 	tell application "Mail"
 		activate
 		set msg to make new outgoing message with properties {subject:theSubject, html content:theHTML, visible:true}
+		-- BCC co dinh
+		tell msg
+			make new bcc recipient at end of bcc recipients with properties {address:"herre.roelevink@manifera.com"}
+		end tell
 		if recipientAddr is not "" then
 			tell msg
 				make new to recipient at end of to recipients with properties {address:recipientAddr}

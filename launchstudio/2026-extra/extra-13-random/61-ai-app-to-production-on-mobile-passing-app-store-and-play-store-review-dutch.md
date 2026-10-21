@@ -21,132 +21,187 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Op het web bepaal je helemaal zelf wanneer jouw applicatie live gaat. Op mobiel beslist een ander daarover. Moderne AI-tools zoals Bolt, Lovable en Cursor kunnen binnen enkele dagen een complete Expo- of React Native-app genereren, en veel ondernemers denken dat het naar productie brengen van die app simpelweg een kwestie is van op "Indienen" klikken. Totdat de eerste afwijzingsmail van Apple op de digitale deurmat ploft, kort daarna gevolgd door een tweede afkeuring van Google om een heel andere reden — waardoor de geplande lanceringsdatum weken vooruitschuift. Het beoordelingsproces van de app stores is echter geen willekeur. De redenen waarom met AI gebouwde mobiele apps worden afgewezen zijn uiterst voorspelbaar, en vrijwel allemaal vooraf te voorkomen.
+Op het web bepaal jij wanneer je app live gaat. Op mobiel doet iemand anders dat. Bolt, Lovable en Cursor kunnen inmiddels in een paar dagen een werkende Expo- of React Native-app maken, en veel oprichters gaan ervan uit dat die AI-app op mobiel naar productie brengen betekent op "indienen" drukken. Dan komt de eerste afwijzingsmail van Apple, gevolgd door een tweede van Google om een andere reden, en schuift de lanceringsdatum weken op. App-review is echter niet willekeurig. De redenen waarom AI-gebouwde apps zakken, zijn voorspelbaar, en de meeste zijn vóór het indienen op te lossen.
 
-## Waarom Mobiele Apps een Extra Poortwachter Hebben
+## Waarom AI-App naar Productie op Mobiel een Poortwachter Toevoegt
 
-De richtlijnen van Apple (App Review Guidelines) en het beleid van Google Play (Developer Program Policies) reiken veel verder dan de vraag: "werkt de code?". Beoordelaars controleren of jouw app compleet is, stabiel functioneert, volstrekt eerlijk is over welke data wordt verzameld, aan de juiste betalingsregels voldoet en de privacyrechten van gebruikers respecteert. Een webapplicatie die deze zaken negeert kan gewoon online blijven; een mobiele app die ze negeert, wordt domweg niet gepubliceerd.
+De App Review Guidelines van Apple en de Developer Program Policies van Google Play stellen regels die verder gaan dan "werkt het". Reviewers controleren of je app compleet en stabiel is, eerlijk over de data die hij verzamelt, eerlijk in hoe hij betalingen ontvangt en respectvol tegenover de rechten van gebruikers. Een webapp die deze regels negeert, kan nog steeds lanceren; een mobiele app die ze negeert, wordt niet gepubliceerd.
 
-AI-tools genereren mobiele programmacode op basis van dezelfde patronen die ze voor webapps gebruiken. Ze weten niet dat Apple verplicht dat gebruikers hun account rechtstreeks in de app kunnen verwijderen, of dat een inlogscherm zonder kant-en-klaar testaccount een directe afwijzing oplevert. Dat zijn immers regels van de app stores, geen algemene codeerpatronen.
+AI-tools genereren mobiele code uit dezelfde patronen die ze voor webapps gebruiken. Ze weten niet dat Apple accountverwijdering in de app vereist, of dat een inlogscherm zonder demo-account een directe afwijzing oplevert. Dat zijn regels van de stores, geen codepatronen.
 
-## De Meest Voorkomende Afwijzingsredenen voor AI-Apps
+## De Afwijzingen die AI-Gebouwde Apps het Vaakst Verzamelen
 
-**Geen optie om het account in de app te verwijderen.** Als gebruikers in de app een account kunnen aanmaken, eisen beide platforms dat ze dit account ook direct vanuit de app kunnen wissen (Google eist daarnaast een werkende weblink). Een melding als "stuur een e-mail om je account te verwijderen" is al jaren niet meer toegestaan.
+**Geen accountverwijdering in de app.** Kunnen gebruikers een account aanmaken, dan verwachten beide stores dat ze het ook vanuit de app kunnen verwijderen (Google vereist daarnaast een weblink). "Mail ons om je account te verwijderen" is niet meer genoeg.
 
-**De reviewers kunnen niet inloggen.** Vereist de app een account, dan moeten de reviewers geldige demo-inloggegevens ontvangen in de review-notities — en dat demo-account moet een actieve, gevulde interface tonen in plaats van een leeg wit scherm.
+**Reviewers kunnen niet inloggen.** Heeft de app een account nodig, dan hebben reviewers werkende demo-inloggegevens nodig in de notities bij het indienen — en het demo-account moet echte functionaliteit laten zien, geen leeg scherm.
 
-**Privacy-labels die niet overeenkomen met de werkelijkheid.** Apple's privacy-labels en Google's 'Gegevensveiligheid'-sectie (Data Safety Form) verplichten je exact te declareren welke gegevens je verzamelt en waarom. Dit geldt óók voor gegevens die worden verzameld door SDK's die je niet bewust hebt gekozen — zoals standaard analytics-pakketten of crash-reporters die de AI-tool stilletjes heeft meegeleverd. Zowel geautomatiseerde scanners als reviewers controleren of jouw opgave strookt met het feitelijke netwerkverkeer.
+**Privacylabels die niet kloppen met de werkelijkheid.** De privacylabels van Apple en het formulier Data safety van Google moeten aangeven welke data je verzamelt en waarom, inclusief data die wordt verzameld door SDK's die je niet bewust hebt gekozen — analytics, crashrapportage, de standaardinstellingen van de AI-tool. Reviewers en geautomatiseerde controles leggen de verklaringen naast het gedrag.
 
-**Aankopen van digitale content buiten de app store om.** Verkoop je digitale content, premium credits of in-app abonnementen, dan ben je over het algemeen verplicht het in-app betalingssysteem van Apple of Google te gebruiken. Fysieke producten en reële diensten in de fysieke wereld mogen wél via Stripe of Mollie worden afgerekend. Met AI gegenereerde apps kiezen hier bijna standaard de verkeerde route.
+**Betalingen voor digitale content buiten de store.** Digitale content of abonnementen verkopen die in de app worden gebruikt, moet doorgaans via het in-app-aankoopsysteem van de store, met beperkte uitzonderingen en regels die per regio verschillen. Fysieke goederen en diensten in de echte wereld kunnen Stripe of Mollie gebruiken. AI-gebouwde apps doen dit vaak in beide richtingen fout.
 
-**Crashes en placeholder-content.** "Lorem ipsum"-teksten, loze knoppen zonder actie, lege tabbladen of crashes op iets oudere smartphones leiden onverbiddelijk tot afwijzing wegens een onvolledige app.
+**Crashes en placeholdercontent.** "Lorem ipsum", kapotte knoppen, lege tabbladen en crashes op oudere apparaten leiden tot afwijzing wegens onvolledigheid.
 
-**Machtigingen zonder duidelijke motivatie.** Vraagt je app toegang tot de locatie, de camera of contacten, dan eist het besturingssysteem een heldere toelichting (*purpose string*) die direct gekoppeld is aan een voor de reviewer zichtbare functie.
+**Rechten zonder uitleg.** Vragen om locatie, camera of contacten vereist een duidelijke beschrijving van het doel en een reden die gekoppeld is aan een functie die de reviewer kan zien.
 
-**Inlogopties van derden.** Bied je inloggen via Google aan, dan verplichten de regels van Apple om ook 'Sign in with Apple' of een gelijkwaardige privacy-vriendelijke inlogmethode aan te bieden.
+**Inlogopties.** Bied je inloggen via derden aan, zoals Google, dan kunnen de regels van Apple vereisen dat je ook Sign in with Apple of een vergelijkbare privacyvriendelijke optie aanbiedt.
 
-## Wat de Backend Nodig Heeft Vóór Indiening
+## Wat de Backend Nodig Heeft vóór de Review
 
-Veel afwijzingen van app stores lijken mobiele problemen, maar zijn in werkelijkheid tekortkomingen in de backend:
+Store-review kijkt naar de app, maar veel afwijzingen zijn eigenlijk backendproblemen:
 
-- **Accountverwijdering moet écht wissen** — de backend heeft een endpoint nodig dat alle gebruikersgegevens, foto's en records daadwerkelijk verwijdert of anonimiseert uit de database, cloudopslag en externe tools.
-- **Demo-accounts hebben realistische testdata nodig** in productie die veilig getoond kan worden zonder bedrijfsgeheimen te lekken.
-- **Geheime API-sleutels horen niet thuis in de app-bundel.** Een mobiele app (APK of IPA) kan eenvoudig worden gedecompileerd; elk geheim dat erin staat moet als publiek bekend worden beschouwd.
-- **De API moet oudere app-versies blijven ondersteunen.** Gebruikers updaten hun apps niet allemaal tegelijk. Als je backend plotseling een veld weghaalt, crasht de app bij gebruikers die de update nog niet hebben geïnstalleerd.
+- **Accountverwijdering moet echt verwijderen** — de backend heeft een endpoint nodig dat de gegevens van de gebruiker verwijdert of anonimiseert in database, opslag en diensten van derden.
+- **Demo-accounts hebben seeddata nodig** in productie die veilig getoond kan worden.
+- **API-sleutels horen niet in de appbundle.** Een mobiel binair bestand kan worden uitgepakt; elk geheim erin moet als openbaar worden beschouwd.
+- **De API moet met oude appversies omgaan.** Eenmaal geïnstalleerd blijven oudere versies je backend maandenlang aanroepen. Ingrijpende API-wijzigingen breken gebruikers die je niet kunt dwingen te updaten.
 
-## Checklist Vóór Indiening
+## Een Checklist vóór het Indienen
 
-1. Accountverwijdering functioneert in de app én triggert een volledige verwijdering in de backend.
-2. Een werkend demo-account met realistische data staat klaar; inloggegevens zijn vermeld in de toelichting voor de reviewer.
-3. Privacy-labels en het Google Data Safety Form sluiten naadloos aan op elke geïntegreerde SDK.
-4. De juiste betalingsmethode is gekozen (In-App Purchases voor digitale goederen; Stripe/Mollie voor fysieke diensten).
-5. Alle placeholder-teksten zijn verwijderd; de app is getest op kleine en oudere telefoons.
-6. Machtigingsverzoeken bevatten begrijpelijke toelichtingen in de juiste taal.
-7. API-keys zijn verplaatst naar veilige backend-functies; endpoints zijn voorzien van versiebeheer (bijv. `/api/v1/`).
-8. De URL naar de privacyverklaring is actief en up-to-date.
-9. Crash-reporting (zoals Sentry of Crashlytics) is actief zodat je eventuele review-crashes direct zelf kunt inzien.
+1. Accountverwijdering in de app, gekoppeld aan een verwijderflow in de backend
+2. Demo-account met realistische data, inloggegevens in de reviewnotities
+3. Privacylabels en formulier Data safety afgestemd op elke SDK en datastroom
+4. Betaalmethode per producttype correct gekozen
+5. Geen placeholdercontent; getest op oudere en kleinere apparaten
+6. Toestemmingsvragen met duidelijke doelbeschrijvingen
+7. Geheimen naar de server verplaatst; API met versies
+8. URL van de privacyverklaring live en juist
+9. Crashrapportage aan, zodat je ziet wat reviewers zien
 
-## Beveiliging van Mobiele Apps
+## Als er Toch een Afwijzing Komt
 
-Mobiele applicaties vereisen specifieke security-maatregelen: bewaar inlogtokens in de beveiligde opslag van het besturingssysteem (iOS Keychain, Android Keystore) en nooit in onversleutelde `AsyncStorage`; dwing HTTPS af; log geen gevoelige klantgegevens naar de console van het toestel; beveilig deep-links tegen misbruik; en houd bedrijfsgeheimen en proprietary berekeningen altijd op de server.
+Lees hem zorgvuldig, los precies op wat wordt genoemd, en antwoord in het resolutiecentrum met een korte uitleg. Afwijzingen komen ook bij ervaren teams vaak voor; het doel is dat de jouwe over details gaan, niet over fundamentele zaken als verwijdering of betalingen.
+
+## Het Indieningspakket, Punt voor Punt
+
+Een AI-app op mobiel naar productie brengen gaat veel sneller als het indieningspakket de eerste keer compleet is. Bereid voor beide stores voor:
+
+| Onderdeel | App Store | Google Play |
+| --- | --- | --- |
+| Appnaam, ondertitel / korte beschrijving | Ja | Ja |
+| Screenshots per schermformaat | Vereiste formaten voor iPhone (en iPad indien ondersteund) | Telefoon (en tablet indien ondersteund) |
+| URL van de privacyverklaring | Vereist | Vereist |
+| Privacygegevens | App Privacy-"voedingslabels" | Formulier Data safety |
+| Demo-account en reviewnotities | Bij App Review Information | Bij instructies voor toegang tot de app |
+| Vragenlijst voor leeftijdsclassificatie | Ja | Vragenlijst voor contentclassificatie |
+| Accountverwijdering | Pad in de app vereist | Pad in de app en weblink |
+| Uitleg over betalingen (bij externe betalingen) | Uitleggen dat het om fysieke goederen/diensten gaat | Uitleggen volgens het beleid |
+| Support-URL en contact | Ja | Ja |
+
+Schrijf de reviewnotities als instructies voor een drukke collega: hoe je inlogt, welke functie je test, waarom een recht wordt gevraagd en waarom betalingen via Stripe of Mollie lopen (bijvoorbeeld: "boekingen zijn voor echte uitlaatdiensten voor honden").
+
+## Privacyverklaringen Nauwkeurig Invullen
+
+Privacyverklaringen zijn waar AI-gebouwde apps het vaakst inconsistent zijn. Bouw ze op vanuit een inventaris:
+
+1. Maak een lijst van elke SDK in de app (analytics, crashrapportage, kaarten, betalingen, pushnotificaties, AI-functies).
+2. Leg voor elke SDK vast welke data die verzamelt, of die aan de gebruiker is gekoppeld en of die voor tracking wordt gebruikt.
+3. Voeg data toe die je eigen backend verzamelt: accountgegevens, content, locatie, foto's, betalingen.
+4. Koppel alles aan de categorieën en doelen van de store.
+
+Bewaar de inventaris bij je code en werk hem bij als SDK's veranderen. Verklaringen die niet overeenkomen met het werkelijke gedrag kunnen leiden tot afwijzing of latere handhaving.
+
+## Pushnotificaties en Rechten Goed Geregeld
+
+Toestemmingsvragen beïnvloeden zowel de review als het vertrouwen van gebruikers. Vraag alleen om rechten wanneer de functie ze nodig heeft — locatie als een wandeling begint, camera als de gebruiker een foto wil toevoegen — met een kort uitlegscherm vóór de systeemvraag. Leg bij pushnotificaties uit wat gebruikers zullen ontvangen en laat ze categorieën in de app beheren. Sla apparaattokens veilig op, verwijder ze bij uitloggen en accountverwijdering, en stuur nooit gevoelige inhoud in de notificatietekst, omdat die op vergrendelschermen verschijnt.
+
+## Versies van Je API voor Geïnstalleerde Apps
+
+Mobiele apps kunnen niet op elk apparaat direct worden bijgewerkt. Je backend moet oudere versies nog een tijd blijven bedienen:
+
+- Neem de appversie op in de header van elk verzoek.
+- Maak backendwijzigingen waar mogelijk aanvullend; verwijder geen velden waarop oudere apps leunen.
+- Maak bij ingrijpende wijzigingen een nieuwe API-versie en onderhoud de oude gedurende een vastgestelde periode.
+- Implementeer een controle op de minimaal ondersteunde versie met een vriendelijk scherm "werk de app bij" voor echt incompatibele versies.
+- Volg de verdeling van appversies in gebruik, zodat je weet wanneer een oude API kan worden uitgefaseerd.
+
+## Gefaseerde Releases en Crashmonitoring
+
+Beide stores ondersteunen een geleidelijke uitrol: gefaseerde release in de App Store en percentages voor gefaseerde uitrol in Google Play. Breng eerst uit naar een klein deel, let op het percentage sessies zonder crash en op de foutregistratie, en breid dan uit. Crashrapportage (bijvoorbeeld Firebase Crashlytics of Sentry voor React Native) hoort vóór de eerste release aan te staan, met symbolicatie geconfigureerd zodat rapporten naar echte coderegels wijzen. Een crash die één apparaatmodel raakt, kan zo worden opgevangen en opgelost voordat hij iedereen bereikt.
+
+## Over-the-Air-Updates: Nuttig, met Grenzen
+
+Expo en React Native ondersteunen over-the-air-updates (OTA) voor JavaScript en assets, waarmee oplossingen zonder volledige store-release kunnen worden verspreid. Ze zijn waardevol voor dringende bugfixes, maar de regels van de stores beperken wat OTA-updates mogen veranderen — doorgaans niet het hoofddoel van de app of belangrijke nieuwe functies buiten wat is beoordeeld. Gebruik OTA voor oplossingen, laat functiewijzigingen via de normale review lopen, en test OTA-updates op stagingkanalen vóór productie.
+
+## Beveiligingsaspecten Specifiek voor Mobiele Apps
+
+Mobiele apps brengen eigen beveiligingsoverwegingen met zich mee: bewaar tokens in de veilige opslag van het platform (Keychain, Keystore) in plaats van gewone opslag; gebruik overal HTTPS en overweeg certificate pinning voor apps met een hoog risico; log geen gevoelige data naar apparaatlogs; bescherm deep links tegen misbruik om gevoelige acties zonder authenticatie te starten; en ga ervan uit dat het binaire bestand kan worden gedecompileerd, zodat bedrijfsregels en geheimen op de server horen.
+
+## Na de Goedkeuring: De Eerste Weken
+
+Goedkeuring is het begin. Volg in de eerste weken dagelijks reviews en beoordelingen, reageer op feedback, let op crash- en foutpercentages, en bereid een snelle vervolgrelease voor op problemen die echte gebruikers vinden. Vroege beoordelingen bepalen maandenlang de zichtbaarheid in de store, dus snel reageren op vroege problemen betaalt zich onevenredig terug.
+
+## In-App-Aankopen Afhandelen Wanneer Die Gelden
+
+Verkoopt je app digitale content of abonnementen die in de app worden gebruikt, dan vereisen de regels van de stores doorgaans in-app-aankopen, met enkele uitzonderingen per regio en categorie die in de loop van de tijd veranderen. Dat op productieniveau implementeren betekent bonnetjes of aankooptokens op je server valideren, luisteren naar de servermeldingen van de stores voor verlengingen, opzeggingen en terugbetalingen, en rechten in je database synchroon houden — het mobiele equivalent van betaalwebhooks. Diensten als RevenueCat vereenvoudigen dit voor beide stores. Store-aankopen combineren met webaankopen vraagt zorgvuldige logica voor rechten, zodat gebruikers dezelfde toegang krijgen waar ze ook betaalden.
+
+## Toegankelijkheid op Mobiel
+
+Beide platforms bieden schermlezers (VoiceOver, TalkBack), dynamische tekstgroottes en andere toegankelijkheidsinstellingen, en reviewers en gebruikers merken steeds vaker apps op die die negeren. Controleer dat knoppen toegankelijke labels hebben, tekst meeschaalt zonder lay-outs te breken, aanraakdoelen groot genoeg zijn en het kleurcontrast voldoende is. React Native en Flutter bieden allebei toegankelijkheidseigenschappen; door AI gegenereerde componenten laten ze vaak leeg.
+
+## Releases Plannen rond Reviewtijden
+
+Reviewtijden variëren van uren tot enkele dagen, en zijn rond feestdagen of beleidswijzigingen soms langer. Plan lanceringen met marge: dien ruim vóór marketingmomenten in, plan geen campagnes op de dag van indienen en houd een terugvaloptie (zoals de webversie) klaar als de review langer duurt dan verwacht. Na goedkeuring kun je de releasedatum handmatig plannen in plaats van direct te publiceren.
+
+## De Korte Versie
+
+Store-review beloont apps die compleet zijn, eerlijk over data, eerlijk over betalingen en respectvol tegenover de rechten van gebruikers. Bereid die vier dingen voor vóór je indient — verwijdering, verklaringen, betaalmodel en een werkend demo-account — en de review wordt een controlepunt in plaats van een muur.
 
 ## Waar LaunchStudio Past
 
-LaunchStudio helpt AI-native oprichters om de barrières van de mobiele app stores vlekkeloos te passeren: van de backend-implementatie van AVG-conforme accountverwijdering en het verwijderen van API-sleutels uit de app-bundel tot API-versiebeheer, betalingsarchitectuur, accurate privacy-declaraties en een waterdicht review-pakket. Het ontwerp en de schermen die je in Bolt of Lovable hebt gecreëerd blijven behouden; wij zorgen dat het geheel goedgekeurd wordt.
+LaunchStudio begeleidt AI-gebouwde mobiele apps door het deel dat de tools overslaan: accountverwijdering in de backend, geheimen uit het binaire bestand, versies van de API, betaalarchitectuur, nauwkeurige privacyverklaringen en een indieningspakket waarmee reviewers kunnen werken. De schermen die je bouwde, blijven zoals ze zijn. Projecten voor mobiele apps beginnen in de prijscalculator van LaunchStudio rond € 3.000.
 
-LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met ruim 11 jaar ervaring in het ontwikkelen en publiceren van native, React Native- en Flutter-apps voor zakelijke opdrachtgevers. De engineering vindt plaats in het ontwikkelcentrum in Ho Chi Minhstad, met kantoor aan de Herengracht 420 in Amsterdam. Lees vooraf ook altijd Apple's officiële [App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/).
+Manifera, het bedrijf achter LaunchStudio, levert al meer dan 11 jaar React Native- en Flutter-apps voor grote klanten; zie [mobiele appontwikkeling van Manifera](https://www.manifera.com/services/mobile-app-development/). De engineering gebeurt in het ontwikkelcentrum in Ho Chi Minh-stad, met klantcontact via de Herengracht 420 in Amsterdam. De [App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/) van Apple zijn het waard om vóór elke indiening één keer te lezen.
 
-Heb je zojuist een afwijzing van Apple of Google ontvangen? [Stuur ons je prototype-link](https://launchstudio.eu/nl/#contact) en we leggen je direct uit wat er nodig is voor goedkeuring.
+Ligt er een afwijzing in je inbox, [stuur ons dan de link naar je prototype](https://launchstudio.eu/nl/#contact) en we vertellen je wat ervoor nodig is.
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Een Hondenuitlaat-App Drie Keer Afgewezen
+### Een AI-Native Oprichter in Actie: Een Uitlaatapp die Drie Keer Werd Afgewezen
 
-Joost Verbruggen, professioneel hondenuitlater in Tilburg, bouwde Uitlaatmaatje in Bolt als een mobiele Expo-app: hondeneigenaren boeken wandelingen, uitlaters delen realtime GPS-locaties tijdens het uitlaten en uploaden foto's, en betalingen lopen via Stripe. De webversie werkte al prima voor zijn vaste klantenkring, en Joost wilde de app vóór de zomervakantie in zowel de Apple App Store als Google Play hebben.
+Joost Verbruggen, hondenuitlater in Tilburg, bouwde Uitlaatmaatje in Bolt als Expo-app: hondenbezitters boeken wandelingen, uitlaters delen tijdens de wandeling hun live locatie en uploaden foto's, en betalingen lopen via Stripe. De webversie werkte voor zijn eigen klanten, en hij wilde vóór de zomervakantie in beide app-stores staan.
 
-Apple wees de app binnen vijf weken drie keer achter elkaar af: eerst omdat het beoordelingsteam niet kon inloggen bij gebrek aan testgegevens, vervolgens omdat er geen in-app optie was om het account te verwijderen, en ten slotte omdat het privacy-label geen melding maakte van locatiedata en crash-analytics die werden verzameld door een SDK die Bolt automatisch had toegevoegd. Google Play blokkeerde de release om exact dezelfde reden. Tot overmaat van ramp ontdekte een bevriende developer die het Android-installatiebestand bekeek, dat zowel de geheime Stripe-sleutel als de Google Maps API-key ongecodeerd in de mobiele app-bundel stonden.
+Apple wees de app in vijf weken drie keer af: eerst omdat reviewers niet konden inloggen, daarna omdat er geen accountverwijdering in de app was, en daarna omdat het privacylabel de locatiedata en crashanalytics wegliet die werden verzameld door een SDK die Bolt had toegevoegd. Google markeerde het formulier Data safety om dezelfde reden. Ondertussen vond een vriend die de Android-build uitpakte de geheime Stripe-sleutel en de Google Maps-sleutel erin.
 
-De engineers van LaunchStudio grepen direct in: beide sleutels werden ingetrokken en vervangen, waarbij betalingen en kaartaanroepen voortaan veilig via backend-microservices verliepen; er werd een complete accountverwijderingsflow gebouwd die hondengegevens, wandelhistorie en Stripe-koppelingen netjes wiste; er werd API-versiebeheer ingericht; het demo-account werd voorzien van representatieve testwandelingen; elke externe SDK werd gedocumenteerd voor een foutloze privacy-opgave; en machtigingen voor locatie en camera kregen heldere Nederlandstalige doelomschrijvingen. Omdat het uitlaten van honden een fysieke dienst in de echte wereld betreft, was het gebruik van Stripe volkomen legaal — wat helder werd toegelicht in de begeleidende notities voor de reviewers.
+De engineers van LaunchStudio roteerden beide sleutels en verplaatsten het aanmaken van betalingen en de kaartaanroepen naar functies aan de serverkant, bouwden een verwijderflow in de backend die profielen, hondengegevens, wandelfoto's en locatiegeschiedenis verwijderde en Stripe-klanten annuleerde, voegden API-routes met versies toe zodat oudere builds bleven werken, vulden een demo-account met realistische wandelingen, documenteerden de dataverzameling van elke SDK voor nauwkeurige privacyverklaringen, en schreven duidelijke doelbeschrijvingen voor de rechten op locatie en camera. Wandelingen zijn diensten in de echte wereld, dus Stripe bleef de juiste keuze — en de reviewnotities zeiden dat ook.
 
-**Resultaat:** Uitlaatmaatje werd bij de eerstvolgende indiening door zowel Apple als Google direct goedgekeurd. In de eerste drie maanden na publicatie verwelkomde de mobiele app 640 hondeneigenaren en 38 uitlaters in de regio Tilburg en Breda.
+**Resultaat:** Uitlaatmaatje kwam bij de volgende indiening door de review van beide stores. In de eerste drie maanden op mobiel kreeg het er 640 hondenbezitters en 38 uitlaters bij rond Tilburg en Breda.
 
-> *"Ik dacht in het begin dat Apple gewoon dwarslag. Maar Apple bekeek mijn app simpelweg een stuk zorgvuldiger dan ik zelf had gedaan."*
+> *"Ik dacht dat de afwijzingen Apple was die moeilijk deed. Het was Apple die mijn app zorgvuldiger las dan ik had gedaan."*
 > — **Joost Verbruggen, Oprichter, Uitlaatmaatje (Tilburg)**
 
-**Kosten & Tijdlijn:** € 3.900 (Mobiele App-pakket: secrets beveiligen, verwijderflow, API-versiebeheer, privacy-declaraties en store-ondersteuning) — afgerond in 14 werkdagen.
+**Kosten & Tijdlijn:** € 3.900 (mobiele app: geheimen, verwijderflow, API-versies, privacyverklaringen en ondersteuning bij het indienen) — afgerond in 14 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Waarom worden met AI gebouwde mobiele apps zo vaak afgewezen door Apple en Google?
+### Waarom worden AI-gebouwde mobiele apps zo vaak afgewezen in de App Store?
 
-Omdat AI-tools wel werkende schermen en componenten genereren, maar geen rekening houden met het strenge beleid van de app stores. De meest voorkomende redenen zijn ontbrekende accountverwijdering, ontbrekende inloggegevens voor reviewers, foutieve privacy-labels en strijdige betalingsmethoden.
+Omdat AI-tools werkende code genereren, maar geen naleving van de regels van de store. De meest voorkomende redenen zijn ontbrekende accountverwijdering in de app, geen demo-login voor reviewers, onjuiste privacylabels en betaalmethoden die de regels van de store breken.
 
 ### Mag ik Stripe of Mollie gebruiken in mijn mobiele app?
 
-Voor fysieke goederen en diensten die in de echte wereld worden geleverd (zoals bezorging, kappersafspraken of hondenuitlaatservices) mag dat zonder meer. Voor puur digitale content, online cursussen of in-app functionaliteiten eisen de stores echter het gebruik van hun eigen in-app aankoopsysteem (In-App Purchases).
+Voor fysieke goederen en diensten in de echte wereld doorgaans wel. Voor digitale content of abonnementen die in de app worden gebruikt, vereisen de stores doorgaans hun eigen in-app-aankoopsystemen, met enkele regionale uitzonderingen. Controleer de actuele regels voor jouw type product.
 
-### Is het veilig om API-keys op te nemen in een mobiele app?
+### Is het veilig om API-sleutels in een mobiele app te zetten?
 
-Alleen publieke sleutels die expliciet zijn beperkt tot jouw specifieke bundle-ID of domein. Geheime sleutels — zoals API-keys van OpenAI, database-wachtwoorden of Stripe secret keys — kunnen eenvoudig uit de mobiele app worden gehaald en horen uitsluitend thuis op een beveiligde server.
+Alleen sleutels die bedoeld zijn om openbaar te zijn, beperkt tot een bundle-ID of domein. Alles wat geheim is — betaalsleutels, sleutels voor AI-API's, beheerderstokens — kan uit het binaire bestand worden gehaald en hoort op een server.
 
-### Hoe ondersteunt de mobiele expertise van Manifera bij store-goedkeuring?
+### Hoe helpt de mobiele ervaring van Manifera bij de store-review?
 
-Manifera ontwikkelt al ruim een decennium native en cross-platform (React Native, Flutter) apps voor enterprise-klanten. Daardoor weten de engineers precies welke criteria reviewers hanteren en hoe je een indiening voorbereidt die meteen de eerste keer slaagt.
+Manifera levert al meer dan tien jaar React Native- en Flutter-apps voor grote klanten, dus de engineers weten welke eisen reviewers handhaven en hoe je indieningen voorbereidt die slagen.
 
-### Hebben app store vermeldingen invloed op vindbaarheid in AI-zoeksystemen?
+### Beïnvloeden vermeldingen in de app-stores de vindbaarheid in AI-antwoordmachines?
 
-Zeker. Vermeldingen in officiële app stores met duidelijke omschrijvingen, positieve beoordelingen en een gekoppelde website behoren tot de belangrijkste bronnen die AI-zoekassistenten raadplegen wanneer ze software aanbevelen aan gebruikers.
+Ja. Store-vermeldingen met duidelijke beschrijvingen, reviews en een gekoppelde website horen bij de bronnen die AI-assistenten gebruiken bij het aanbevelen van apps. Een schone lancering zonder afwijzingen betekent ook dat reviews eerder beginnen binnen te komen.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Waarom worden met AI gebouwde mobiele apps zo vaak afgewezen door Apple en Google?",
-      "acceptedAnswer": { "@type": "Answer", "text": "AI-tools genereren werkende code maar negeren store-richtlijnen zoals accountverwijdering, reviewer-logins en privacy-labels." }
-    },
-    {
-      "@type": "Question",
-      "name": "Mag ik Stripe of Mollie gebruiken in mijn mobiele app?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja voor fysieke goederen en reële diensten; digitale content en in-app features vereisen store In-App Purchases." }
-    },
-    {
-      "@type": "Question",
-      "name": "Is het veilig om API-keys op te nemen in een mobiele app?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nee, mobiele binaries zijn te decompileren. Geheime tokens en API-keys moeten op een backend-server blijven." }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe ondersteunt de mobiele expertise van Manifera bij store-goedkeuring?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ruim 11 jaar ervaring met React Native en Flutter zorgt voor foutloze indieningen die direct voldoen aan alle richtlijnen." }
-    },
-    {
-      "@type": "Question",
-      "name": "Hebben app store vermeldingen invloed op vindbaarheid in AI-zoeksystemen?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja, app store vermeldingen, recensies en gekoppelde websites zijn primaire bronnen voor AI-zoekmodellen bij aanbevelingen." }
-    }
+    { "@type": "Question", "name": "Waarom worden AI-gebouwde mobiele apps zo vaak afgewezen in de App Store?", "acceptedAnswer": { "@type": "Answer", "text": "AI-tools genereren werkende code maar geen naleving van de storeregels: ontbrekende accountverwijdering in de app, geen demo-login, onjuiste privacylabels en niet-conforme betalingen zijn de gebruikelijke oorzaken." } },
+    { "@type": "Question", "name": "Mag ik Stripe of Mollie gebruiken in mijn mobiele app?", "acceptedAnswer": { "@type": "Answer", "text": "Doorgaans wel voor fysieke goederen en diensten in de echte wereld; digitale content die in de app wordt gebruikt vereist meestal in-app-aankopen van de store, met enkele regionale uitzonderingen." } },
+    { "@type": "Question", "name": "Is het veilig om API-sleutels in een mobiele app te zetten?", "acceptedAnswer": { "@type": "Answer", "text": "Alleen beperkte openbare sleutels. Geheime sleutels kunnen uit het binaire bestand worden gehaald en horen op een server." } },
+    { "@type": "Question", "name": "Hoe helpt de mobiele ervaring van Manifera bij de store-review?", "acceptedAnswer": { "@type": "Answer", "text": "Tien jaar React Native- en Flutter-levering betekent weten welke eisen reviewers handhaven en hoe je indieningen voorbereidt die slagen." } },
+    { "@type": "Question", "name": "Beïnvloeden vermeldingen in de app-stores de vindbaarheid in AI-antwoordmachines?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Vermeldingen, reviews en gekoppelde websites zijn bronnen die AI-assistenten gebruiken bij het aanbevelen van apps." } }
   ]
 }
 </script>

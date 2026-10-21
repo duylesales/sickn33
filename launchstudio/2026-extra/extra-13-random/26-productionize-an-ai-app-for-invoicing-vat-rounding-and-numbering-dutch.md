@@ -21,88 +21,96 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-Facturen lijken bedrieglijk eenvoudig: een lijst met regels, een subtotaal, btw-percentages, een eindtotaal, een factuurnummer en een datum. Dat is precies de reden waarom facturatie vaak het eerste SaaS-project is dat oprichters bouwen met behulp van Cursor of Bolt — én de reden waarom zoveel van die apps subtiele afwijkingen bevatten die pas aan het einde van het kwartaal aan het licht komen, wanneer een accountant de totalen controleert en stuit op kasverschillen van enkele centen verspreid over honderden facturen. Wanneer u een AI-app voor facturatie productierijp wilt maken, zit het werk niet in het ontwerp van het sjabloon, maar in de onverbiddelijke boekhoudkundige regels.
+Facturen lijken eenvoudig: een lijst regels, een subtotaal, btw, een totaal, een nummer en een datum. Daarom zijn ze een populaire eerste SaaS voor oprichters die met Cursor of Bolt bouwen — en daarom bevatten zoveel van die apps subtiele fouten die pas aan het einde van het kwartaal opduiken, wanneer een boekhouder totalen vergelijkt en die over honderden facturen een paar cent afwijken. Wilt u een AI-app voor facturatie productierijp maken, dan zit het werk niet in de lay-out. Het zit in de regels.
 
-## Stop met Floating-Point Berekeningen voor Geldbedragen
+## Om een AI-Facturatie-App Productierijp te Maken: Stop met Floating-Point-Geld
 
-Het allereerste wat gecontroleerd moet worden in AI-gegenereerde financiële code is hoe bedragen worden opgeslagen en berekend. In negen van de tien gevallen gebruikt AI standaard JavaScript-getallen — binaire floating-point getallen — die veel decimale breuken niet exact kunnen weergeven. De bewerking `0.1 + 0.2` resulteert in `0.30000000000000004`. Vermenigvuldig dat met aantallen, tel er btw bij op, sommeer over meerdere regels en rond pas aan het einde af, en uw totalen lopen onherroepelijk uit de pas.
+Het eerste wat u in AI-gegenereerde financiële code controleert: hoe worden bedragen opgeslagen en berekend? Heel vaak zijn het JavaScript-getallen — binaire floating point — die veel decimale waarden niet exact kunnen weergeven. `0.1 + 0.2` is `0.30000000000000004`. Vermenigvuldig met aantallen, tel btw op, sommeer over regels en rond aan het einde af, en de totalen gaan schuiven.
 
-De professionele oplossing is om geldbedragen uitsluitend op te slaan als gehele getallen (integers) in de kleinste munteenheid (centen), of gebruik te maken van een specifiek decimaal type in de database (`numeric` in PostgreSQL) in combinatie met een decimal-bibliotheek in de backend. Laat zwevende kommagetallen (floats) nooit in aanraking komen met bedragen die op een factuur verschijnen.
+De aanpak voor productie is geld op te slaan als gehele getallen in de kleinste eenheid (centen), of een decimaal type in de database te gebruiken (`numeric` in Postgres) en een decimale bibliotheek in de code. Laat nooit een float in aanraking komen met een bedrag dat op een factuur verschijnt.
 
 ```typescript
-// Opslaan en rekenen in hele centen
-const regelTotaalCenten = eenheidsPrijsCenten * aantal;          // 1999 * 3 = 5997 cent (€59,97)
-const btwCenten = Math.round(regelTotaalCenten * 21 / 100);       // 1259 cent (€12,59 btw, afgerond per regel)
+// Opslaan en rekenen in centen
+const lineTotalCents = unitPriceCents * quantity;          // 1999 * 3 = 5997
+const vatCents = Math.round(lineTotalCents * 21 / 100);     // 1259 (per regel afgerond)
 ```
 
-## Btw-Afronding: Per Factuurregel of Per Factuurtotaal?
+## Btw-Afronding: Per Regel of Per Factuur?
 
-Zelfs bij het rekenen in centen moet u een fundamentele architectuurkeuze maken: wáár vindt de afronding plaats? Het afronden van het btw-bedrag per afzonderlijke regel om die vervolgens op te tellen, kan één of twee cent verschillen van het berekenen van de btw over het geconsolideerde subtotaal van de factuur. Beide methoden zijn fiscaal verdedigbaar, mits de methode consistent wordt toegepast, goed is gedocumenteerd en aansluit op wat accountants en boekhoudpakketten verwachten. Het mengen van methoden — afronden per regel op het scherm, maar afronden over het totaal op de gegenereerde PDF — leidt geheid tot aansluitingsverschillen bij de btw-aangifte.
+Ook met gehele getallen moet u beslissen waar wordt afgerond. Btw per regel afronden en optellen kan een cent of twee verschillen van btw berekenen over het subtotaal van de factuur. Beide aanpakken kunnen acceptabel zijn, maar de methode moet consistent en gedocumenteerd zijn en overeenkomen met wat boekhoudsoftware en uw gebruikers verwachten. Gemengde aanpakken — per regel op het scherm, per factuur in de pdf — leveren precies de verschillen op die boekhouders vinden.
 
-Facturen met meerdere btw-tarieven (in Nederland 21%, 9% en 0%) vereisen altijd een gespecificeerd overzicht per tarief, waarbij de subtotalen per tarief exact moeten aansluiten op de factuurregels.
+Facturen met meerdere btw-tarieven (in Nederland 21%, 9% en 0%) hebben een uitsplitsing per tarief nodig, en de totalen per tarief moeten aansluiten op de factuurregels.
 
 ## Factuurnummers Moeten Doorlopend en Uniek Zijn
 
-Zowel de Nederlandse Belastingdienst als de Europese richtlijnen eisen dat facturen worden voorzien van een doorlopende, unieke nummering (u mag eventueel meerdere opeenvolgende reeksen hanteren, bijvoorbeeld per kalenderjaar). Door AI geschreven code kent factuurnummers vaak toe door het aantal bestaande records te tellen en er één bij op te tellen, of door het hoogste nummer op te zoeken. Bij gelijktijdige verzoeken krijgen twee gebruikers die op exact dezelfde seconde factureren hetzelfde nummer. En wanneer een conceptfactuur wordt gewist, loopt de nummering terug of ontstaan er gaten in de reeks.
+Nederlandse en EU-regels vereisen dat factuurnummers een unieke, doorlopende reeks vormen (u mag meerdere reeksen gebruiken, bijvoorbeeld per jaar). AI-gegenereerde code kent nummers vaak toe door bestaande facturen te tellen en er één bij op te tellen, of door het hoogste nummer plus één te nemen. Bij gelijktijdigheid krijgen twee facturen die op hetzelfde moment worden aangemaakt hetzelfde nummer. Na een verwijdering loopt de telling terug.
 
-De productiewaardige oplossing is een database-sequence of een specifieke teller-tabel die wordt opgehoogd binnen een transactie met een exclusieve row lock, toegekend op het exacte moment van definitief maken (definitieve uitreiking) — nooit bij het aanmaken van een concept, zodat verworpen concepten geen verboden gaten in de nummering achterlaten.
+De oplossing voor productie is een sequence op databaseniveau of een tellerrij die binnen een transactie met locking wordt bijgewerkt, per reeks, toegekend op het moment dat een factuur definitief wordt gemaakt — niet bij het aanmaken van een concept, zodat weggegooide concepten geen gaten achterlaten.
 
-## Uitgereikte Facturen Zijn Onveranderlijk (Immutable)
+## Uitgereikte Facturen Zijn Onveranderlijk
 
-Zodra een factuur definitief is verzonden naar een klant, mag deze onder geen enkel beding meer worden gewijzigd of verwijderd. Correcties dienen plaats te vinden via een creditnota die expliciet verwijst naar het oorspronkelijke factuurnummer, eventueel gevolgd door een gecorrigeerde nieuwe factuur. AI-gebouwde software voorziet vrijwel altijd in een "bewerken"-knop bij verzonden facturen, omdat een bewerkfunctie nu eenmaal standaard CRUD-functionaliteit is.
+Zodra een factuur is verstuurd, mag die nooit meer veranderen. Correcties worden gedaan met een creditnota die naar het origineel verwijst, zo nodig gevolgd door een nieuwe factuur. AI-gebouwde apps staan bijna altijd toe dat een verstuurde factuur wordt bewerkt, omdat "bewerken" een standaard CRUD-operatie is.
 
-In een productieklare facturatie-app is er een strikt onderscheid tussen conceptstatus en definitieve status. Uitgereikte facturen worden op databaseniveau vergrendeld tegen updates, en het bijbehorende PDF-bestand dat naar de klant is gestuurd wordt permanent gearchiveerd in object storage. Zo kan te allen tijde worden aangetoond wat de klant destijds exact heeft ontvangen.
+Facturatie op productieniveau maakt onderscheid tussen de status concept en uitgereikt. Uitgereikte facturen worden in de database vergrendeld (niet alleen in de interface), en de pdf die bij uitreiking wordt gegenereerd, wordt opgeslagen, zodat altijd exact kan worden gereproduceerd wat de klant heeft ontvangen. Creditnota's krijgen een eigen nummering en verwijzen naar het origineel.
 
-## Wettelijke Factuurvereisten
+## Verplichte Factuurinhoud
 
-Een geldige Nederlandse factuur moet voldoen aan dwingende wettelijke eisen, waaronder de volledige NAW-gegevens van zowel leverancier als afnemer, het btw-identificatienummer van de leverancier, datum van uitreiking, doorlopend factuurnummer, datum van de levering of dienst, specificatie van geleverde goederen/diensten, bedragen per btw-tarief en het totale btw-bedrag. Bij zakelijke grensoverschrijdende diensten binnen de EU (intracommunautair) is tevens het btw-nummer van de afnemer verplicht, samen met de vermelding "btw verlegd" (reverse charge). De [factuureisen van de Belastingdienst](https://www.belastingdienst.nl/) zetten deze regels puntsgewijs uiteen.
+Nederlandse facturen moeten specifieke informatie bevatten, waaronder de namen en adressen van leverancier en klant, het btw-nummer van de leverancier, de factuurdatum en het factuurnummer, een omschrijving van de goederen of diensten, de leveringsdatum, de bedragen per btw-tarief en het btw-bedrag. Voor B2B-diensten binnen de EU met verlegging zijn het btw-nummer van de klant en een vermelding van de verlegging vereist. De [factuureisen van de Belastingdienst](https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/belastingdienst/business/vat/vat_in_the_netherlands/invoicing_and_payment/invoice_requirements/) sommen ze volledig op.
 
-AI-gegenereerde lay-outs dekken de basisvelden meestal wel af, maar slaan fiscale uitzonderingen stelselmatig over: verlegde btw, de kleineondernemersregeling (KOR) en leveringen aan niet-EU klanten.
+AI-gegenereerde sjablonen bevatten de meeste hiervan standaard — en missen de randgevallen: verlegging, vrijstellingen voor kleine ondernemers, buitenlandse klanten.
 
-## PDF-Generatie en de Zes/Zevenjarige Bewaarplicht
+## Pdf's, E-mail en Bewaartermijnen
 
-Het serverless genereren van PDF-facturen leidt regelmatig tot time-outs bij facturen met veel regels, of faalt compleet bij speciale leestekens en vreemde valutasymbolen. PDF-generatie moet robuust zijn opgezet, uitvoerig zijn getest met honderden regels en bij voorkeur asynchroon op de achtergrond worden afgehandeld.
+Factuur-pdf's die in serverless functies worden gegenereerd, lopen bij langere facturen vaak in een time-out of mislukken bij speciale tekens. Het genereren moet robuust zijn, getest met lange lijsten regels en namen met accenten, en idealiter in een achtergrondtaak draaien.
 
-Ondernemers zijn wettelijk verplicht hun factuuradministratie minimaal zeven jaar te bewaren (tien jaar bij onroerend goed). Uw applicatie moet uitgereikte facturen en bijbehorende PDF's gedurende deze gehele periode conserveren, zelfs wanneer een gebruiker zijn abonnement opzegt of verzoekt om accountverwijdering. Dit botst direct met naïeve "verwijder mijn account"-scripts. Privacyrechten (AVG) en fiscale bewaarplichten moeten bewust worden geharmoniseerd: overbodige persoonsgegevens worden gewist, terwijl de fiscale brondocumenten conform de wettelijke termijn vergrendeld blijven in een fiscaal archief.
+Bedrijven moeten facturen in Nederland in het algemeen zeven jaar bewaren. Uw app moet uitgereikte facturen en hun pdf's gedurende die periode bewaren, ook als een gebruiker zijn abonnement opzegt — wat botst met naïeve logica voor "verwijder mijn account". Bewaarregels en verwijdering onder de AVG moeten bewust met elkaar worden verzoend: persoonsgegevens die niet nodig zijn voor de wettelijke administratie kunnen worden verwijderd, terwijl de factuur zelf wordt bewaard.
 
-## Een Datamodel Dat Boekhouders Vertrouwen
+## Betalingen en Reconciliatie
 
-Vrijwel alle fouten in AI-gebouwde facturatie-apps zijn terug te voeren op een gebrekkig datamodel. Een robuuste structuur scheidt concepten die in prototypes vaak op één hoop worden gegooid:
+Houdt uw app de betaalstatus bij, dan moet die worden bijgewerkt op basis van data van de bank of de betaalaanbieder, niet alleen via een handmatige schakelaar. Gedeeltelijke betalingen, te hoge betalingen en betalingen met het verkeerde kenmerk zijn normaal. Een app in productie koppelt betalingen aan facturen, signaleert afwijkingen en legt vast wie een status handmatig heeft gewijzigd.
 
-- **Debiteuren (Klanten):** factuurgegevens, land en btw-status (particulier of zakelijk, btw-nummer gevalideerd via VIES).
-- **Conceptfacturen:** vrij bewerkbaar, zonder definitief factuurnummer.
-- **Definitieve Facturen:** onveranderlijk, voorzien van een doorlopend volgnummer per serie, definitieve uitreikdatum en een gekoppeld PDF-archiefbestand.
-- **Factuurregels:** omschrijving, aantal, eenheidsprijs in centen, btw-tarief en de berekende regelbedragen die op het moment van uitreiking worden vastgelegd.
-- **Creditnota's:** met een eigen doorlopende nummerreeks, gekoppeld aan de oorspronkelijke factuur.
-- **Betalingen:** gekoppeld aan facturen, inclusief deelbetalingen en overbetalingen.
+## Toegang en Scheiding tussen Bedrijven
 
-Door de berekende bedragen op het moment van verzenden definitief vast te leggen in de database — in plaats van ze steeds opnieuw dynamisch te berekenen — blijft een factuur immuun voor latere prijswijzigingen of veranderde afrondingslogica in de code.
+Facturatie-apps bedienen vaak freelancers en kleine bedrijven, van wie sommigen meerdere bedrijven beheren. De facturen, klanten en nummerreeksen van elk bedrijf moeten gescheiden zijn — afgedwongen in de database — en boekhouders die worden uitgenodigd om mee te kijken, mogen alleen zien waartoe ze toegang hebben gekregen.
 
-## Onveranderlijkheid Afgedwongen in PostgreSQL
+## Een Datamodel Waar de Boekhouding op Kan Vertrouwen
 
-Alleen vertrouwen op het verbergen van de bewerkknop in de frontend is ontoereikend; API-calls en toekomstige AI-codegeneratie kunnen die beperking omzeilen. In PostgreSQL kan een database-trigger updates op definitieve facturen blokkeren:
+De meeste facturatieproblemen in AI-gebouwde apps zijn terug te voeren op het datamodel. Een structuur die kritisch onderzoek doorstaat, scheidt een paar begrippen die prototypes vaak samenvoegen:
+
+- **Klanten** met factuurgegevens en btw-status (bedrijf of consument, land, btw-nummer gevalideerd via VIES).
+- **Conceptfacturen**, vrij bewerkbaar, zonder nummer.
+- **Uitgereikte facturen**, onveranderlijk, met een doorlopend nummer per reeks, de uitreikingsdatum en een opgeslagen pdf.
+- **Factuurregels** met omschrijving, aantal, stukprijs in centen, btw-tarief en regeltotalen die bij uitreiking worden berekend en opgeslagen.
+- **Creditnota's**, met een eigen nummerreeks, die naar de oorspronkelijke factuur verwijzen.
+- **Betalingen**, gekoppeld aan facturen, inclusief gedeeltelijke en te hoge betalingen.
+
+Berekende totalen bij uitreiking opslaan — in plaats van ze later opnieuw te berekenen — beschermt uitgereikte documenten tegen wijzigingen in afrondingscode, belastingtarieven of productprijzen.
+
+## Onveranderlijkheid Afdwingen in de Database
+
+Vertrouwen op de interface om bewerkingen te voorkomen is niet genoeg, omdat API's en toekomstige AI-gegenereerde code eromheen kunnen. In Postgres kan een trigger updates van uitgereikte facturen blokkeren:
 
 ```sql
-CREATE OR REPLACE FUNCTION blokkeer_wijziging_definitieve_factuur()
+CREATE OR REPLACE FUNCTION prevent_issued_invoice_update()
 RETURNS trigger AS $$
 BEGIN
   IF OLD.status = 'issued' THEN
-    RAISE EXCEPTION 'Definitieve facturen kunnen niet worden gewijzigd; maak een creditnota aan';
+    RAISE EXCEPTION 'Issued invoices cannot be modified; create a credit note';
   END IF;
   RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
 
-CREATE TRIGGER facturen_onveranderlijk
+CREATE TRIGGER invoices_immutable
 BEFORE UPDATE ON invoices
-FOR EACH ROW EXECUTE FUNCTION blokkeer_wijziging_definitieve_factuur();
+FOR EACH ROW EXECUTE FUNCTION prevent_issued_invoice_update();
 ```
 
-Een identieke trigger op de factuurregels sluit de achterdeur. Hiermee blijft de administratieve integriteit gegarandeerd, ongeacht welk script een wijziging probeert door te voeren.
+Een vergelijkbare trigger op factuurregels sluit de andere deur. Hiermee geldt de regel ongeacht via welk codepad de wijziging wordt geprobeerd.
 
-## Doorlopende Nummering Zonder Gaten
+## Doorlopende Nummering Zonder Gaten of Dubbelen
 
-Een betrouwbaar mechanisme beheert tellers per reeks in een aparte tabel en hoogt deze op binnen dezelfde databasetransactie waarin de factuur definitief wordt gemaakt:
+Een robuust patroon houdt per reeks een teller bij in een eigen tabel en verhoogt die binnen dezelfde transactie die de factuur uitreikt:
 
 ```sql
 UPDATE invoice_series
@@ -111,72 +119,92 @@ WHERE series_id = $1
 RETURNING last_number;
 ```
 
-De rijvergrendeling (row lock) zorgt ervoor dat twee gelijktijdige aanvragen nooit hetzelfde nummer kunnen ontvangen, terwijl toekenning pas bij definitieve uitreiking voorkomt dat verworpen concepten gaten in de nummering slaan.
+De rijvergrendeling die de update neemt, zorgt ervoor dat twee gelijktijdige uitreikingen niet hetzelfde nummer kunnen krijgen, en het nummer pas bij uitreiking toekennen (niet bij het aanmaken van een concept) voorkomt gaten door weggegooide concepten. Neem het jaar of een reeksvoorvoegsel op als uw gebruikers een nummering als `2028-0042` prefereren.
 
-## Bijzondere Btw-Situaties
+## Bijzondere Btw-Situaties Afhandelen
 
-Facturatiesoftware voor zzp'ers en het mkb krijgt te maken met diverse fiscale situaties:
+Facturatie-apps voor freelancers en kleine bedrijven krijgen te maken met verschillende bijzondere gevallen:
 
-| Situatie | Wat moet er op de factuur staan? |
+| Situatie | Wat de factuur nodig heeft |
 | --- | --- |
-| B2B dienst naar ander EU-land | Btw-nummer afnemer, 0% btw, expliciete vermelding "btw verlegd" |
-| Kleineondernemersregeling (KOR) | Geen btw in rekening gebracht, vermelding van de vrijstelling |
-| Meerdere btw-tarieven op één factuur | Subtotalen en btw-bedragen per percentage uitgesplitst |
-| Klant buiten de EU | Doorgaans geen Nederlandse btw voor diensten, met passende toelichting |
-| Digitale dienst aan EU-consument | Btw van het land van de consument (af te dragen via éénloketsysteem / OSS) |
+| B2B-dienst aan een ander EU-land | Btw-nummer van de klant, 0% btw, vermelding "btw verlegd" |
+| Kleineondernemersregeling (KOR) | Geen btw berekend, vermelding van de vrijstelling |
+| Gemengde btw-tarieven op één factuur | Subtotalen en btw per tarief |
+| Klant buiten de EU | Meestal geen Nederlandse btw voor diensten, met passende vermelding |
+| Consument in een ander EU-land (digitale diensten) | Mogelijk btw van het land van de klant via OSS |
 
-De applicatie moet deze gegevensvelden gestructureerd verzamelen en de ingestelde rekenregels foutloos toepassen.
+Deze regels veranderen af en toe en kennen uitzonderingen; een boekhouder hoort ze voor uw gebruikers te bevestigen. De taak van de app is de benodigde feiten vast te leggen en de ingestelde regels consequent toe te passen.
 
-## Boekhoudkoppelingen en UBL-Facturatie
+## Exports voor Boekhouders en Boekhoudsoftware
 
-De boekhouder van uw eindgebruiker wil data kunnen exporteren: CSV- en UBL-bestanden (Universal Business Language) van facturen, creditnota's en betalingen per tijdvak, of een directe API-koppeling met Nederlandse boekhoudpakketten (zoals Exact Online, Moneybird of SnelStart). E-facturatie via UBL wint snel terrein in Europa en wordt voor B2G- en B2B-transacties in toenemende mate de norm. Door UBL-ondersteuning direct in te bouwen, is uw software klaar voor toekomstige wetgeving.
+De boekhouders van uw gebruikers willen data naar buiten: CSV- of UBL-exports van facturen, creditnota's en betalingen per periode, of directe koppelingen met Nederlandse boekhoudpakketten. Exports moeten exact overeenkomen met de opgeslagen, uitgereikte waarden en identificatoren bevatten waarmee de boekhouder betalingen kan afletteren. Standaarden voor e-facturatie winnen ook terrein in de EU; UBL vroeg ondersteunen maakt het makkelijker om aan toekomstige eisen te voldoen.
+
+## Geldlogica Testen
+
+Financiële code verdient een eigen testsuite: afronding met veel regels en gemengde tarieven, creditnota's voor deelbedragen, gelijktijdige uitreiking, gevallen met verlegging, valutanotatie in verschillende taalinstellingen en exports die tot dezelfde totalen optellen als het btw-overzicht. Property-based tests — die veel willekeurige facturen genereren en controleren dat de totalen altijd aansluiten — zijn bijzonder effectief in het vinden van de verschuiving op centniveau die handmatige tests missen.
+
+## Betalingen Koppelen en Herinneringen
+
+Freelancers geven het meest om betaald worden. Een facturatie-app die dit goed productierijp maakt, koppelt betalingen automatisch aan facturen: betaallinks op elke factuur (bijvoorbeeld via Mollie met iDEAL), statusupdates die via webhooks worden bevestigd, en het matchen van banktransacties op basis van het factuurnummer in het betalingskenmerk. Gedeeltelijke betalingen verlagen het openstaande bedrag in plaats van de factuur als betaald te markeren; te hoge betalingen worden gesignaleerd. Herinneringsmails volgen een schema dat de gebruiker bepaalt — een vriendelijke herinnering na de vervaldatum, later een strengere — en stoppen direct zodra de betaling binnenkomt. Elke herinnering wordt gelogd, want als een geschil ooit bij een incassotraject belandt, telt de geschiedenis.
+
+## Bewaartermijnen, Verwijdering en de Zevenjaarsregel
+
+Nederlandse bedrijven moeten hun administratie, inclusief facturen, in het algemeen zeven jaar bewaren. Voor een facturatie-SaaS botst dit met verzoeken om een account te verwijderen. Een gedegen aanpak scheidt de twee: wanneer een gebruiker zijn account verwijdert, worden zijn login en niet-vereiste persoonsgegevens verwijderd, terwijl uitgereikte facturen en creditnota's voor de wettelijke periode in een afgeschermd archief worden bewaard, met een export die de gebruiker vóór de verwijdering wordt aangeboden. Leg dit uit in uw voorwaarden en privacyverklaring, zodat gebruikers begrijpen waarom sommige gegevens blijven. Aan het einde van de bewaartermijn verwijdert een geplande taak de gearchiveerde documenten.
+
+## Meerdere Bedrijven en Toegang voor Boekhouders
+
+Veel freelancers hebben meer dan één bedrijf, en velen delen toegang met een boekhouder. Modelleer bedrijven als aparte entiteiten met hun eigen nummerreeksen, btw-instellingen en klanten. Geef boekhouders alleen-lezentoegang per bedrijf, gelogd, intrekbaar door de eigenaar en bij voorkeur met een eigen login in plaats van de inloggegevens van de eigenaar. Dwing dit af in de database, zodat een boekhouder die voor één bedrijf is uitgenodigd nooit de facturen van een ander ziet.
+
+## Wat Boekhouders als Eerste Controleren
+
+Als de boekhouders van uw gebruikers voor het eerst facturen uit uw app bekijken, controleren ze doorgaans vier dingen: doorlopende nummering zonder dubbelen, correcte btw per tarief en totalen die aansluiten, aanwezigheid van de verplichte factuurgegevens, en het gebruik van creditnota's voor correcties. Kloppen alle vier, dan verdient uw app aanbevelingen; faalt er één, dan het tegenovergestelde.
 
 ## Hoe LaunchStudio Helpt
 
-LaunchStudio start de optimalisatie van een facturatie-app bij de rekenkundige basis en de fiscale regels: geldrepresentatie in centen, afrondingsconsistentie, transactie-veilige nummering, database-onveranderlijkheid, creditnota's, verplichte factuurvelden en bewaartermijnen. Pas daarna richten we ons op de gebruikelijke productiezaken zoals multi-tenant scheiding, geautomatiseerde back-ups en uptime-monitoring — terwijl de frontend die u met AI heeft vormgegeven behouden blijft.
+De review van een facturatie-app door LaunchStudio begint bij de rekenkunde en de regels: geldtypen, afrondingsmethode, nummering, onveranderlijkheid, creditnota's, verplichte inhoud en bewaartermijnen, gevolgd door de gebruikelijke productiezaken — scheiding van toegang, geheimen, back-ups en monitoring. De frontend blijft zoals u hem bouwde.
 
-LaunchStudio wordt ondersteund door Manifera, een softwarebedrijf met meer dan 11 jaar ervaring in data-intensieve en financiële applicaties voor veeleisende opdrachtgevers zoals Statler BI. De backend-architectuur wordt gerealiseerd door onze ervaren engineers in Ho Chi Minhstad, met directe communicatie via onze vestiging aan de Herengracht 420 in Amsterdam. Lees meer over onze technische expertise op de [technologiepagina van Manifera](https://www.manifera.com/about-us/manifera-technologies/).
+LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring, inclusief werk voor op data en financiën gerichte klanten zoals Statler BI. De engineers van Manifera in Ho Chi Minh-stad doen het technische werk; het Europese contact loopt via Amsterdam. Meer over de stack staat op [de technologiepagina van Manifera](https://www.manifera.com/about-us/manifera-technologies/).
 
-Wilt u uw facturatie-app laten auditen of productierijp maken? [Meld uw project aan](https://launchstudio.eu/nl/#contact) — wij reageren binnen één werkdag.
+Voor een offerte, [beschrijf uw project](https://launchstudio.eu/nl/#contact) — we reageren binnen één werkdag.
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Drie Cent Verschil in een ZZP-Facturatie-App
+### Een AI-Native Oprichter in Actie: Een Facturatie-App voor Freelancers die Drie Cent Afweek
 
-Ayoub Benali, financieel administrateur in Schiedam, bouwde Nota Nu met behulp van Cursor: een overzichtelijke facturatie-app voor zzp'ers met offertes, facturen, iDEAL-betaallinks en een handig kwartaaloverzicht voor de btw-aangifte. Circa 260 zzp'ers betaalden €9 per maand toen een administratiekantoor dat meerdere gebruikers begeleidde aan de bel trok: de btw-totalen in het kwartaaloverzicht kwamen niet exact overeen met de optelsom van de individuele facturen — er zat een verschil in van enkele centen tot een paar euro per cliënt.
+Ayoub Benali, boekhouder in Schiedam, bouwde Nota Nu met Cursor: een facturatie-app voor freelancers met offertes, facturen, betalingsherinneringen en een btw-overzicht per kwartaal. Ongeveer 260 freelancers betaalden € 9 per maand toen een boekhouder die met verschillende van hen werkte een probleem signaleerde: de btw-totalen in het kwartaaloverzicht kwamen niet overeen met de som van de facturen, met afwijkingen van een paar cent tot een paar euro per klant.
 
-Een grondige technische audit door LaunchStudio legde de oorzaken bloot: bedragen werden als JavaScript-floats opgeslagen; btw werd op het scherm per regel afgerond maar in het kwartaaloverzicht over de totaalsom berekend; factuurnummers werden gegenereerd via "count + 1", wat leidde tot dubbele nummers wanneer twee facturen gelijktijdig werden verzonden en nummergaten na het wissen van concepten; reeds verzonden facturen bleven vrij bewerkbaar; er was geen voorziening voor intracommunautaire verlegging van btw; en de knop "account opheffen" wiste per direct alle facturen, inclusief documenten die gebruikers fiscaal zeven jaar moesten bewaren.
+De review van LaunchStudio vond bedragen opgeslagen als floats; btw die op het scherm per regel werd afgerond maar in het overzicht per factuur; factuurnummers gegenereerd als "aantal plus één", wat dubbele nummers opleverde voor twee gebruikers die tegelijk vanaf twee apparaten facturen maakten en na een verwijdering terugliep; uitgereikte facturen die volledig bewerkbaar waren; geen afhandeling van verlegging voor EU-klanten; en "account verwijderen" dat alle facturen direct wiste, inclusief die welke gebruikers wettelijk moesten bewaren.
 
-Binnen negen werkdagen migreerde het team van LaunchStudio alle financiële kolommen naar gehele centen met een sluitend dataconversiescript, standaardiseerde de btw-afronding overal strikt per regel, introduceerde transactie-veilige reeksteller-logica bij definitieve facturatie, vergrendelde uitgereikte facturen via PostgreSQL-triggers en archiveerde gegenereerde PDF's in private opslag, voegde creditnota's en btw-verlegd functionaliteit toe en richtte een fiscaal archief in waardoor facturen bij accountopzegging zeven jaar bewaard bleven. Bovendien ontving Ayoub een reconciliatierapport van alle historische afrondingsverschillen zodat getroffen zzp'ers dit eenvoudig konden corrigeren bij hun belastingaangifte.
+In negen werkdagen migreerde het team bedragen naar gehele centen met een gecontroleerde dataconversie, standaardiseerde het overal op btw-afronding per regel, voerde het transactionele nummering per reeks in, toegekend bij het definitief maken, vergrendelde het uitgereikte facturen en sloeg het hun pdf's op, voegde het creditnota's en facturen met verlegging toe, en veranderde het het verwijderen van een account zodat facturen zeven jaar worden bewaard terwijl andere persoonsgegevens worden verwijderd. Een rapport somde elke historische afwijking op, zodat gebruikers eerdere aangiften met hun boekhouder konden corrigeren.
 
-**Resultaat:** Kwartaaloverzichten sluiten sindsdien tot op de cent nauwkeurig aan. Nota Nu groeide in het daaropvolgende jaar door naar 610 betalende abonnees, en twee administratiekantoren bevelen de applicatie inmiddels actief aan bij startende zzp'ers.
+**Resultaat:** De btw-overzichten per kwartaal sluiten nu tot op de cent aan. Nota Nu groeide het jaar daarna naar 610 abonnees, en twee accountantskantoren begonnen het bij klanten aan te bevelen.
 
-> *"De app leek helemaal af omdat de facturen er visueel prachtig uitzagen. Maar boekhouden gaat niet om hoe het eruitziet; het gaat erom dat de cijfers onder de streep exact kloppen."*
+> *"De app leek af omdat de facturen er goed uitzagen. Bij boekhouding gaat het niet om er goed uitzien; het gaat om kloppen."*
 > — **Ayoub Benali, Oprichter, Nota Nu (Schiedam)**
 
-**Kosten & Tijdlijn:** €2.700 (Launch Ready-pakket: financiële afronding, nummeringstransacties, databasematige onveranderlijkheid, fiscale uitzonderingen en 7-jarige bewaarregels) — opgeleverd binnen 9 werkdagen.
+**Kosten & Tijdlijn:** € 2.700 (Launch Ready-pakket: omgang met geld, nummering, onveranderlijkheid, belastingregels en bewaartermijnen) — afgerond in 9 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Waarom kan een facturatie-app geen gewone JavaScript-getallen gebruiken voor geldbedragen?
+### Waarom kan een facturatie-app geen gewone JavaScript-getallen gebruiken voor geld?
 
-Omdat binaire floating-point getallen decimale breuken niet exact kunnen representeren. Hierdoor ontstaan afrondingsverschillen van fracties van centen die bij optellingen en btw-berekeningen cumuleren tot zichtbare kasverschillen. Gebruik altijd gehele getallen in centen of specifieke decimale datatypes.
+Omdat floating-point-getallen veel decimale waarden niet exact kunnen weergeven, wat kleine fouten veroorzaakt die zich opstapelen. Sla geld op als gehele centen of gebruik decimale typen.
 
-### Moet btw per afzonderlijke regel of over het factuurtotaal worden afgerond?
+### Moet btw per regel of per factuur worden afgerond?
 
-Beide methoden zijn fiscaal toegestaan, mits u dezelfde methode consequent en uniform toepast in de interface, op de PDF en in de periodieke btw-rapportages. Discrepanties ontstaan vrijwel altijd door het door elkaar gebruiken van beide rekenwijzen.
+Beide kunnen acceptabel zijn, mits consequent toegepast en in lijn met wat gebruikers en boekhouders verwachten. De fout is het mengen van methoden tussen schermen, pdf's en rapporten.
 
-### Mogen gebruikers een factuur aanpassen nadat deze naar de klant is verzonden?
+### Mogen gebruikers een factuur bewerken nadat die is verstuurd?
 
-Nee, absoluut niet. Een eenmaal uitgereikte factuur is definitief en onveranderlijk. Eventuele correcties moeten plaatsvinden door het uitreiken van een officiële creditnota die gekoppeld is aan het origineel.
+Dat zou niet moeten kunnen. Uitgereikte facturen horen onveranderlijk te zijn, met correcties via creditnota's die naar het origineel verwijzen.
 
-### Welke ervaring brengt Manifera mee voor financiële applicaties?
+### Wat brengt de ervaring van Manifera met op financiën gerichte klanten?
 
-Manifera ontwikkelt al ruim 11 jaar complexe bedrijfssystemen en business intelligence-platforms waar data tot op de cent nauwkeurig moet aansluiten. Onze engineers weten exact hoe afrondingsmethodieken, multi-valuta en audit trails betrouwbaar moeten worden geïmplementeerd.
+Ervaring met systemen waarin totalen exact moeten aansluiten — rapportage, BI en transactionele data — vormt een zorgvuldige omgang met geldtypen, afronding en audittrails.
 
-### Hoe kan een facturatie-app online autoriteit en vindbaarheid opbouwen?
+### Hoe kan een facturatie-app zichtbaarheid opbouwen bij freelancers die online zoeken?
 
-Publiceer praktische, feitelijk kloppende gidsen over Nederlandse factuureisen, btw-regels en intracommunautaire verlegging, verrijkt met gestructureerde schema-data. AI-zoekmachines en zoekplatformen citeren heldere, betrouwbare fiscale toelichtingen graag en verwijzen direct door naar de onderliggende software.
+Publiceer praktische gidsen over Nederlandse factuurregels, btw en verlegging, met gestructureerde data. AI-antwoordmachines citeren vaak duidelijke, juiste uitleg — en linken naar de tools erachter.
 
 <script type="application/ld+json">
 {
@@ -185,28 +213,28 @@ Publiceer praktische, feitelijk kloppende gidsen over Nederlandse factuureisen, 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom kan een facturatie-app geen gewone JavaScript-getallen gebruiken voor geldbedragen?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Floating-point getallen veroorzaken cumulatieve afrondingsfouten in decimale breuken. Reken altijd in hele centen (integers) of gebruik 'numeric' datatypes." }
+      "name": "Waarom kan een facturatie-app geen gewone JavaScript-getallen gebruiken voor geld?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Floating-point-getallen kunnen veel decimalen niet exact weergeven, wat zich opstapelende fouten veroorzaakt. Gebruik gehele centen of decimale typen." }
     },
     {
       "@type": "Question",
-      "name": "Moet btw per afzonderlijke regel of over het factuurtotaal worden afgerond?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Beide methoden zijn toegestaan mits overal consequent toegepast; het mengen van methoden tussen scherm en PDF veroorzaakt kasverschillen." }
+      "name": "Moet btw per regel of per factuur worden afgerond?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Beide kunnen werken als het overal consequent is; methoden mengen veroorzaakt afwijkingen." }
     },
     {
       "@type": "Question",
-      "name": "Mogen gebruikers een factuur aanpassen nadat deze naar de klant is verzonden?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nee. Uitgereikte facturen zijn wettelijk onveranderlijk; correcties dienen te worden verwerkt via een officiële creditnota." }
+      "name": "Mogen gebruikers een factuur bewerken nadat die is verstuurd?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nee. Uitgereikte facturen horen onveranderlijk te zijn en worden gecorrigeerd met creditnota's." }
     },
     {
       "@type": "Question",
-      "name": "Welke ervaring brengt Manifera mee voor financiële applicaties?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ruim 11 jaar ervaring met financiële BI- en transactiesystemen waar berekeningen en audit-trails exact moeten kloppen." }
+      "name": "Wat brengt de ervaring van Manifera met op financiën gerichte klanten?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Zorgvuldige omgang met geldtypen, afronding en audittrails, vanuit systemen waarin totalen exact moeten aansluiten." }
     },
     {
       "@type": "Question",
-      "name": "Hoe kan een facturatie-app online autoriteit en vindbaarheid opbouwen?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Door feitelijk juiste artikelen over btw-regels en factuureisen te publiceren met JSON-LD structured data, die door AI-zoekmachines worden geciteerd." }
+      "name": "Hoe kan een facturatie-app zichtbaarheid opbouwen bij freelancers die online zoeken?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Publiceer juiste gidsen over factuurregels en btw met gestructureerde data, die AI-antwoordmachines vaak citeren." }
     }
   ]
 }

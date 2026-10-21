@@ -21,178 +21,208 @@ Doelgroep: SaaS Oprichter Schaalvergroting
 }
 </script>
 
-Veel oprichters behandelen applicatiebeveiliging zoals de jaarlijkse APK-keuring van hun auto: plan een beveiligingsaudit in, repareer de geconstateerde kwetsbaarheden, ontvang een certificaat of eindrapport en beschouw het dossier voor de rest van het jaar als afgesloten. Voor software die zelden wijzigt werkt die aanpak prima. Maar voor een met AI gebouwde SaaS die wekelijks nieuwe functies naar productie brengt via Cursor of Lovable, is zo'n rapport binnen een maand hopeloos verouderd. Elk herschreven bestand, elk nieuw API-eindpunt en elk toegevoegd npm-pakket vormt een reële kans om de zojuist gerepareerde beveiligingsfouten ongemerkt opnieuw te introduceren. De echte vraag is dan ook niet óf u moet auditen, maar wat u organiseert in de periode tussen twee audits in.
+Veel oprichters behandelen beveiliging als een APK-keuring: een beveiligingsaudit van de AI-applicatie inplannen, de bevindingen oplossen, een schoon rapport ontvangen, klaar voor een jaar. Voor een product dat nauwelijks verandert, werkt dat. Voor een AI-gebouwde SaaS die elke week nieuwe functies uitbrengt met Cursor of Lovable, is het rapport binnen een maand verouderd. Elk opnieuw gegenereerd bestand, elk nieuw endpoint en elk toegevoegd package is een kans om de problemen die de audit oploste opnieuw te introduceren. De vraag is niet of u een audit laat doen, maar wat er tussen audits hoort te gebeuren.
 
-## Wat een eenmalige beveiligingsaudit oplevert
+## Wat een Eenmalige Beveiligingsaudit van een AI-Applicatie U Geeft
 
-- Een grondige momentopname van alle actuele risico's op één specifiek tijdstip
-- Concrete oplossingen voor de aangetroffen kwetsbaarheden (mits inbegrepen)
-- Een officieel auditrapport om te overleggen aan zakelijke klanten en investeerders
-- Een solide vertrekpunt (baseline) om toekomstige codewijzigingen aan te toetsen
+- Een momentopname van de risico's op een bepaald moment
+- Oplossingen voor de bevindingen (als die zijn inbegrepen)
+- Een rapport om aan klanten en investeerders te laten zien
+- Een basis om toekomstige wijzigingen mee te vergelijken
 
-Wat een eenmalige audit u uiteraard níét vertelt, is wat er gebeurt bij codewijzigingen van volgende week, welke externe bibliotheken volgende maand een beveiligingslek blijken te hebben, of hoe configuratiewijzigingen in uw clouddatabase de eerdere beveiliging langzaam uithollen.
+Het vertelt u niets over wijzigingen die daarna worden gemaakt, afhankelijkheden die volgende maand kwetsbaar worden, of het verschuiven van de configuratie in uw hosting en database.
 
-## Waarom bouwen met AI de spelregels verandert
+## Waarom Ontwikkelen met AI de Rekensom Verandert
 
-Bij softwareontwikkeling met behulp van AI wijzigt code in een veel hoger tempo en in veel grotere blokken tegelijk. Veelvoorkomende regressies na een succesvolle audit zijn:
+Bij ontwikkelen met AI verandert code sneller en in grotere stukken. Veelvoorkomende regressies na een audit zijn onder meer:
 
-- Een autorisatiecontrole die per ongeluk verdwijnt wanneer een API-route opnieuw wordt gegenereerd
-- Een nieuw eindpunt dat zonder enige rechtencontrole live wordt gezet
-- Een te ruim databasebeleid (zoals `true` in RLS) dat door de oprichter is toegevoegd "om even een rechtenfout op te lossen"
-- Een geheime API-sleutel die bij een prompt per ongeluk weer in de frontend-bundel belandt
-- Een nieuw extern softwarepakket dat bekende kwetsbaarheden bevat
-- Foutafhandeling die na een refactor weer ruwe databasedetails toont aan bezoekers
+- Een toegangscontrole die verdwijnt als een route opnieuw wordt gegenereerd
+- Een nieuw endpoint dat zonder autorisatie wordt aangemaakt
+- Een ruime databasepolicy die wordt toegevoegd "om een rechtenfout op te lossen"
+- Een geheim dat opnieuw in code aan de clientkant belandt
+- Een nieuw package met bekende kwetsbaarheden
+- Foutafhandeling die terugvalt op het teruggeven van ruwe fouten
 
-Geen van deze aanpassingen lijkt op zichzelf dramatisch. Samen hollen ze de waarde van een kostbare audit echter binnen enkele weken volledig uit.
+Geen van deze is dramatisch. Samen hollen ze een audit binnen enkele weken uit.
 
-## Wanneer een eenmalige audit volstaat
+## Wanneer een Eenmalige Audit Genoeg Is
 
-- Het softwareproduct verandert zelden (een stabiele interne tool of statische corporate website)
-- De verwerkte data is niet privacy- of bedrijfsgevoelig
-- Er zijn weinig gebruikers en geen veeleisende zakelijke klanten
-- Er zijn reeds ijzersterke geautomatiseerde tests ingericht in de deployment-pijplijn
+- Het product verandert zelden (een stabiele interne tool, een afgeronde website)
+- De data is niet erg gevoelig
+- Er zijn weinig gebruikers en geen veeleisende klanten
+- U hebt al sterke geautomatiseerde vangrails op hun plek
 
-## Wanneer continue beveiliging onmisbaar is
+## Wanneer Doorlopende Beveiliging Nodig Is
 
-- U brengt wekelijks of vaker nieuwe features uit, met name met behulp van AI-codeertools
-- U verwerkt persoonsgegevens, betalingen, medische data of bedrijfsgeheimen
-- Zakelijke B2B-klanten eisen continue garanties of sturen jaarlijkse security-vragenlijsten
-- Uw SaaS groeit hard in aantal gebruikers, beheerdersrollen en externe koppelingen
+- U brengt wekelijks of vaker wijzigingen uit, vooral met AI-tools
+- U verwerkt persoonlijke, financiële, gezondheids- of bedrijfsvertrouwelijke data
+- B2B-klanten verwachten doorlopende zekerheid of jaarlijkse vragenlijsten
+- U groeit en voegt functies, rollen en koppelingen toe
 
-## Hoe beheersbare continue beveiliging er in de praktijk uitziet
+## Hoe Lichte Doorlopende Beveiliging Eruitziet
 
-Doorlopende beveiliging voor een groeiende SaaS vereist geen duur intern securityteam. Het draait om een handvol effectieve mechanismen:
+Doorlopende beveiliging betekent voor een kleine SaaS geen securityteam. Het betekent een handvol mechanismen:
 
-**Geautomatiseerde vangrails (guardrails) in CI/CD.** Negatieve autorisatietests voor elke gebruikersrol en tenant-grens, geautomatiseerd scannen op geheime sleutels, kwetsbaarhedenscans op dependencies en geautomatiseerde controles op databasemigraties bij elke pull request. Dit vangt het leeuwendeel van menselijke en AI-fouten automatisch af.
+**Geautomatiseerde vangrails in CI.** Negatieve autorisatietests voor elke rol en elke grens tussen tenants, scannen op geheimen, controles op kwetsbaarheden in afhankelijkheden en controles op migraties bij elke pull request. Dat vangt de meeste regressies automatisch op.
 
-**Regelmatige updates van afhankelijkheden en hosting.** Voer periodieke, geteste updates uit in plaats van één keer per jaar een gigantische inhaalslag te moeten maken.
+**Updates van afhankelijkheden en platforms.** Regelmatige, geteste updates in plaats van een jaarlijkse inhaalslag.
 
-**Monitoring en actieve alerts.** Continue foutregistratie, vroegtijdige signalering van afwijkend dataverkeer, herhaaldelijk mislukte inlogpogingen en meldingen bij wijzigingen in databasebeleid.
+**Monitoring en meldingen.** Foutregistratie, ongebruikelijke verkeerspatronen, mislukte inlogpogingen en wijzigingen in toegangspolicy's.
 
-**Periodieke lichte audits.** Een gerichte evaluatie van uitsluitend de gewijzigde code sinds de vorige review — elk kwartaal of voorafgaand aan een grote lancering — in plaats van telkens een compleet nieuw onderzoek.
+**Periodieke lichte reviews.** Een gerichte review van de wijzigingen sinds de vorige — elk kwartaal, of vóór een grote release — in plaats van elke keer een volledige audit.
 
-**Een incidentenprotocol.** Duidelijke afspraken over wie wat doet, hoe datalekken binnen de wettelijke 72 uur aan de toezichthouder worden gemeld en hoe klanten tijdig worden geïnformeerd.
+**Een incidentplan.** Wie handelt, hoe datalekken binnen 72 uur worden beoordeeld en gemeld, en hoe klanten worden geïnformeerd.
 
-**Een actuele security-pagina.** Een transparant overzicht van uw beveiligingsmaatregelen waarmee vragenlijsten van zakelijke inkopers binnen tien minuten beantwoord kunnen worden.
+**Een levende beveiligingspagina.** Actueel gehouden, zodat vragenlijsten van klanten snel kunnen worden beantwoord.
 
-## Kostenvergelijking in perspectief
+## Kostenvergelijking
 
-| Onderdeel | Eenmalige audit | Audit gecombineerd met continue security |
+| | Eenmalige audit | Audit plus lichte doorlopende beveiliging |
 | --- | --- | --- |
-| Initiële investering | Audit en herstel van kwetsbaarheden | Audit, herstel én inrichten van CI-vangrails |
-| Maandelijkse kosten | Geen | Managed hosting, updates en monitoring (bijv. €49/mnd) |
-| Periodiek onderhoud | Telkens een kostbare nieuwe audit | Korte, gerichte kwartaalevaluaties |
-| Regressierisico | Groeit exponentieel bij elke update | Automatisch geblokkeerd in CI/CD |
-| Zekerheid voor B2B | Rapport veroudert razendsnel | Actueel bewijs van continue beheersing |
+| Vooraf | Review en oplossingen | Review, oplossingen en inrichting van vangrails |
+| Maandelijks | Niets | Managed hosting en updates (bijv. € 49/maand) |
+| Periodiek | Nieuwe volledige audit wanneer nodig | Korte gerichte reviews |
+| Risico op regressies | Groeit met elke wijziging | Grotendeels opgevangen in CI |
+| Zekerheid voor klanten | Rapport veroudert snel | Actueel bewijs |
 
-Voor vrijwel elke groeiende SaaS kost de tweede route initieel een fractie meer, maar over een heel jaar bekeken juist aanzienlijk minder — simpelweg omdat herhaalde volledige audits en het herstellen van acute beveiligingsincidenten vele malen duurder uitvallen.
+Voor de meeste groeiende SaaS-producten kost de tweede kolom vooraf iets meer en over een jaar veel minder — omdat volledige heraudits en het opruimen na incidenten duur zijn.
 
-## Een continu beveiligingsprogramma inrichten in vier lagen
+## Een Programma voor Doorlopende Beveiliging Ontwerpen voor een Kleine SaaS
+
+De stap van een eenmalige beveiligingsaudit van een AI-applicatie naar doorlopende beveiliging vereist geen securityteam. Een licht programma heeft vier lagen:
 
 | Laag | Activiteiten | Frequentie |
 | --- | --- | --- |
-| Geautomatiseerde vangrails | Negatieve permissietests, secret scanning, dependency checks in CI/CD | Bij elke codewijziging |
-| Beheerroutines | Software-updates, controle van beheerdersrechten, hersteltests van back-ups | Wekelijks tot maandelijks |
-| Menselijke reviews | Gerichte audits van recent toegevoegde functies en API-routes | Per kwartaal of voor grote releases |
-| Paraatheid | Incidentenprotocol, actuele documentatie en antwoorden voor zakelijke inkoop | Continu bijgewerkt |
+| Geautomatiseerde vangrails | Negatieve toegangstests, scannen op geheimen, controles op afhankelijkheden, linting van migraties in CI | Bij elke wijziging |
+| Hygiëneroutines | Updates van afhankelijkheden, toegangsreviews, hersteltests van back-ups | Wekelijks tot per kwartaal |
+| Menselijke reviews | Gerichte review van wijzigingen sinds de vorige review | Per kwartaal of vóór grote releases |
+| Gereedheid | Incidentprocedure, beveiligingspagina, antwoorden op vragenlijsten | Bijgewerkt als dingen veranderen |
 
-## Auditbevindingen omzetten in geautomatiseerde regressietests
+Elke laag is klein; samen houden ze de beveiliging actueel terwijl het product zich ontwikkelt.
 
-De meest effectieve methode om te voorkomen dat opgeloste fouten terugkeren, is om van elke auditbevinding een geautomatiseerde test te maken. Constateerde de auditor bijvoorbeeld dat een rapportage-endpoint data lekte van een ander bedrijf? Schrijf dan direct een integratietest die inlogt als Bedrijf B, het rapport van Bedrijf A probeert op te vragen en controleert of de server een keiharde 403 Forbidden teruggeeft. Ontdekte men een API-sleutel in de broncode? Voeg een test toe die de gecompileerde bundel doorzoekt op sleutelpatronen. Zo groeit uw testsuite uit tot een levend schild dat garandeert dat oude fouten nooit meer onopgemerkt terugkeren.
+## Vangrailtests Schrijven op Basis van Bevindingen uit Audits
 
-## Eerste stap
+De effectiefste manier om regressies te voorkomen, is van elke bevinding uit een audit een test te maken. Vond de audit bijvoorbeeld dat een rapportage-endpoint data van andere winkeliers blootstelde, voeg dan een test toe die inlogt als winkelier B en het rapport van winkelier A opvraagt, en een weigering verwacht. Vond de audit een geheim in de frontendbundle, voeg dan een CI-stap toe die de gebouwde bundle op sleutelpatronen scant. Na verloop van tijd wordt de testsuite een levend verslag van elke zwakte die het product ooit had — en een garantie dat geen ervan ongemerkt terugkeert.
 
-Selecteer de meest serieuze kwetsbaarheid uit uw laatste beveiligingsaudit en schrijf een geautomatiseerde test die faalt zodra die fout opnieuw zou opduiken. Voeg deze vandaag nog toe aan uw testpijplijn.
+## Verschuiving in Databasepolicy's Opsporen
+
+Databasepolicy's kunnen verschuiven als iemand een regel "tijdelijk" versoepelt om een probleem te debuggen. Bescherm daartegen door policy's in migratiebestanden onder versiebeheer te houden, een CI-controle te draaien die de gedeployde policy's vergelijkt met de repository, meldingen in te stellen als policy's buiten migraties om veranderen, en bij elke deployment de toegang voor elke rol te testen. Bij Supabase-projecten kan de databaselinter tabellen zonder RLS en andere veelvoorkomende problemen met policy's signaleren.
+
+## Afhankelijkheden Beheren Zonder te Verdrinken
+
+Meldingen over afhankelijkheden kunnen een klein team overspoelen. Een werkbare routine: bundel updates die niet over beveiliging gaan in een wekelijkse of tweewekelijkse batch; pas beveiligingsupdates voor productieafhankelijkheden binnen enkele dagen toe; negeer of plan meldingen voor tools die alleen bij ontwikkeling worden gebruikt; verwijder regelmatig ongebruikte afhankelijkheden; en laat CI-tests bepalen of updates veilig zijn. Tools voor geautomatiseerde updates met groepering verminderen de ruis aanzienlijk.
+
+## Lichte Reviews per Kwartaal
+
+Een review per kwartaal richt zich op wat er is veranderd: nieuwe endpoints en hun toegangscontroles, nieuwe tabellen en hun policy's, nieuwe koppelingen en hun inloggegevens, nieuwe afhankelijkheden, wijzigingen in authenticatie- of betaalflows, en eventuele incidenten. Voor een kleine SaaS kost het doorgaans een tot twee dagen en een fractie van een volledige audit. Het resultaat is een korte lijst met bevindingen en, idealiter, nieuwe vangrailtests.
+
+## Bewijs voor Klanten Actueel Houden
+
+B2B-klanten vragen steeds vaker om jaarlijkse updates over beveiliging. Houd een beveiligingspagina en een bank met antwoorden op vragenlijsten bij die de huidige staat weerspiegelen: datum van de laatste review, belangrijkste maatregelen, hosting en verwerkers, incidentprocedure en contactpersoon. Werk beide bij als het product wezenlijk verandert. Actuele, specifieke antwoorden verkorten verlengingen en bouwen vertrouwen op; verouderde antwoorden roepen vragen op.
+
+## Gereedheid voor Incidenten als Onderdeel van het Programma
+
+Doorlopende beveiliging omvat ook klaar zijn voor de dag dat er iets misgaat: een geschreven incidentprocedure, contactpersonen voor engineers en aanbieders, sjablonen om klanten en de gegevensbeschermingsautoriteit te informeren, en één oefening per jaar. Kleine bedrijven met een geoefend plan reageren in uren in plaats van dagen — en die snelheid bepaalt vaak hoe klanten het incident beoordelen.
+
+## Het Programma Begroten
+
+Voor een kleine AI-gebouwde SaaS combineert doorlopende beveiliging doorgaans: managed hosting en updates (ongeveer € 49 per maand bij LaunchStudio), een paar uur interne tijd per maand voor routines, en één of twee gerichte reviews per jaar. Vergeleken met de kosten van een volledige heraudit plus incidentrespons na een regressie, is het programma bescheiden — en het houdt bewijs over beveiliging klaar voor elk klantgesprek.
+
+## Metingen die Laten Zien of de Beveiliging Standhoudt
+
+Volg maandelijks een paar eenvoudige indicatoren: het aantal CI-runs dat door beveiligingscontroles werd geblokkeerd (en waarom), openstaande kwetsbaarheden in afhankelijkheden naar ernst en leeftijd, de tijd tot het toepassen van kritieke patches, uitgevoerde toegangsreviews, uitgevoerde hersteltests en incidenten of bijna-incidenten. Een gezond programma laat zien dat CI regelmatig problemen opvangt, weinig oude kwetsbaarheden en routines die volgens planning worden afgerond. Deze metingen vormen ook een overtuigende slide voor investeerders en grote klanten die vragen hoe beveiliging wordt beheerd.
+
+## Specifiek Omgaan met Wijzigingen met Hulp van AI
+
+Ontwikkelen met AI verandert het risicoprofiel: grote diffs, opnieuw gegenereerde bestanden en onbekende patronen. Pas het programma daarop aan: vereis menselijke review van wijzigingen die authenticatie, betalingen, policy's en migraties raken; houd instructies in de repository bij die de beveiligingsafspraken beschrijven; let op hulpfuncties die de toegangslaag omzeilen; en neem bij elke review de vraag "wat heeft de AI buiten het verzoek om veranderd?" op. Gecombineerd met vangrailtests zorgen deze werkwijzen ervoor dat de snelheid van AI-tools de resultaten van de audit niet uitholt.
+
+## Wanneer een Volledige Heraudit Gerechtvaardigd Is
+
+Lichte reviews per kwartaal dekken de meeste behoeften, maar sommige gebeurtenissen rechtvaardigen een volledige review: een grote architectuurwijziging, een overstap naar een nieuw platform, het toevoegen van een nieuwe categorie gevoelige data, het betreden van een gereguleerde markt, een significant beveiligingsincident, of een grote zakelijke klant die vers onafhankelijk bewijs vereist. Plan deze als projecten, waarbij de vangrailtests uit eerdere audits de reviewer een voorsprong geven.
+
+## Verantwoordelijkheid Delen met Uw Aanbieders
+
+Beheerde platforms nemen een deel van de beveiliging voor hun rekening — het patchen van infrastructuur, fysieke beveiliging, sommige netwerkbescherming. Begrijp per aanbieder waar de grens van de gedeelde verantwoordelijkheid ligt: wat zij beveiligen en wat van u blijft (uw code, toegangspolicy's, configuratie, geheimen, data). Doorlopende beveiliging richt zich op uw kant van die grens; de certificeringen en documentatie van de aanbieders dekken die van hen.
+
+## De Cultuur achter het Programma
+
+Tools en routines werken het best als het team beveiliging behandelt als onderdeel van kwaliteit in plaats van als een losstaande nalevingsoefening. Vier het als een CI-controle een probleem ving, bespreek bijna-incidenten openlijk en maak het makkelijk om zorgen te uiten. In kleine teams zet een oprichter die regelmatig vraagt "wat kan hier misgaan?" de toon die de lessen van een audit levend houdt, lang nadat het rapport is opgeborgen.
+
+## Eerste Stap
+
+Kies de ernstigste bevinding uit uw laatste audit en schrijf een test die zou falen als die terugkeerde. Voeg hem vandaag toe aan CI. Herhaal dat elke week voor de volgende bevinding.
+
+## Van Auditrapport naar Levend Programma
+
+Het verschil tussen een bedrijf dat een audit heeft gehad en een bedrijf dat beveiliging heeft, is wat er in de maanden daarna gebeurt. Bij het eerste ligt het rapport in een map terwijl de codebase elke week verandert en de bevindingen langzaam terugkeren. Bij het tweede werd elke bevinding een test, draaien routines volgens planning, richten reviews zich op wat er veranderde en ontvangen klanten actueel bewijs in plaats van een verouderende pdf. Voor een AI-gebouwde SaaS die snel uitbrengt, houdt alleen het tweede model gelijke tred met het product. Het hoeft niet duur of uitgebreid te zijn; het moet doorlopend zijn, een eigenaar hebben en zichtbaar zijn in de tools die het team al elke dag gebruikt.
 
 ## Onthoud
 
-Een audit toont u waar u stond op één specifieke dag; een continu beveiligingsprogramma toont u waar u vandaag staat — en dat is exact wat serieuze zakelijke klanten van u verlangen.
+Een audit vertelt u waar u op één dag stond; een programma vertelt u waar u vandaag staat — en dat is de vraag die klanten werkelijk stellen.
 
-## Waar LaunchStudio u bij helpt
+## Het Minimale Programma
 
-De audits van LaunchStudio laten blijvende vangrails achter in uw broncode: geautomatiseerde autorisatietests, geautomatiseerd scannen op gelekte sleutels en kwetsbare afhankelijkheden in uw CI/CD-pijplijn, en heldere documentatie. In combinatie met managed hosting via ons Launch & Grow-pakket (slechts €49 per maand) blijven beveiligingsupdates, back-ups en uptime-monitoring doorlopend gewaarborgd, aangevuld met gerichte kwartaalreviews. LaunchStudio wordt aangedreven door Manifera. CEO Herre Roelevink was medeoprichter van CyberDevOps (nu CFLW Cyber Strategies); onze software-engineers in Ho Chi Minh City onderhouden al ruim elf jaar bedrijfskritische systemen voor internationale opdrachtgevers, met kantoor aan de Herengracht 420 in Amsterdam. Bekijk [Manifera's offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/); het [OWASP SAMM-raamwerk](https://owaspsamm.org/) biedt een beproefd model voor stapsgewijze beveiligingsvolwassenheid.
+Doet u maar drie dingen: maak van bevindingen tests, werk afhankelijkheden volgens een schema bij en beoordeel elk kwartaal wat er is veranderd. Die drie gewoonten houden de meeste auditresultaten levend.
 
-[Vraag een vaste prijsopgave aan](https://launchstudio.eu/nl/#contact) voor een audit die uw SaaS ook op de lange termijn blijft beschermen.
+## Kort Gezegd
+
+Beveiliging is geen rapport dat u één keer per jaar koopt; het is een reeks kleine gewoonten die elke week draaien en regressies opvangen voordat klanten ze opmerken.
+
+## Waar LaunchStudio Past
+
+De audits van LaunchStudio laten vangrails achter: negatieve autorisatietests, scannen op geheimen en afhankelijkheden in CI, en documentatie. Met de managed hosting van het Launch & Grow-pakket voor € 49 per maand lopen beveiligingsupdates, back-ups en monitoring na het project door, en kunnen gerichte vervolgreviews vóór grote releases worden ingepland. LaunchStudio wordt aangedreven door Manifera, wiens CEO Herre Roelevink medeoprichter was van CyberDevOps (nu CFLW Cyber Strategies); de engineers in Ho Chi Minh-stad onderhouden productiesystemen voor grote klanten, met klantcontact in Amsterdam en Singapore. Zie [offshore development van Manifera](https://www.manifera.com/services/offshore-software-development/) voor afspraken op langere termijn; [OWASP SAMM](https://owaspsamm.org/) biedt een nuttig model om beveiliging in de loop van de tijd volwassener te maken.
+
+[Vraag een offerte tegen vaste prijs aan](https://launchstudio.eu/nl/#contact) voor een audit die u daarna blijft beschermen.
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Een Vloerenofferte-SaaS en een Verouderde Audit
+### Een AI-Native Oprichter in Actie: Een SaaS voor Vloerofferte en een Audit die Verouderde
 
-Laurens Dijkman, oprichter van Vloerwijzer in Heemskerk, ontwikkelde met behulp van Cursor een SaaS-platform voor vloerenspeciaalzaken: verkoopadviseurs meten op een tablet de kamers bij klanten thuis in, berekenen realtime materiaalkosten en leglonen, waarna consumenten direct digitaal ondertekenen en een aanbetaling doen. Na een audit door een freelance beveiliger een jaar eerder beschouwde Laurens de beveiliging als definitief afgerond. Veertig speciaalzaken maakten intensief gebruik van het platform.
+Laurens Dijkman, oprichter van Vloerwijzer in Heemskerk, bouwde met Cursor een SaaS voor vloerenwinkels: winkelpersoneel meet ruimtes op met een tablet, maakt offertes met materiaal- en arbeidskosten, en klanten tekenen en betalen online een aanbetaling. Na een beveiligingsaudit door een freelancer het jaar ervoor beschouwde Laurens de beveiliging als "klaar". Veertig winkels gebruikten het platform.
 
-Elf maanden en circa 300 met AI doorgevoerde codewijzigingen later ontdekte een IT-adviseur van een aangesloten retailer dat medewerkers via een nieuw rapportagescherm moeiteloos de calculaties, marges en klantgegevens van ándere winkels konden inzien. Een gerichte review door LaunchStudio bracht vier ernstige regressies aan het licht: het nieuwe rapportage-endpoint controleerde de winkelscheiding niet, een databasepolicy was tijdens een nachtelijke debugsessie permanent op `true` gezet, een geheime Google Maps API-sleutel was per ongeluk weer in de publieke frontend beland, en twee npm-pakketten bevatten inmiddels bekende kritieke kwetsbaarheden. Niets van dit alles was opgemerkt omdat er geen geautomatiseerde tests draaiden.
+Elf maanden en zo'n 300 wijzigingen met hulp van Cursor later ontdekte de IT-adviseur van een winkel dat personeel van de ene winkel via een nieuw rapportage-endpoint de offertes en marges van een andere winkel kon zien. De review van LaunchStudio van de wijzigingen sinds de audit vond vier regressies: het rapportage-endpoint zonder tenantcontroles, een databasepolicy die tijdens een debugsessie was versoepeld, een API-sleutel voor kaarten die weer in de frontendbundle stond, en twee afhankelijkheden met gepubliceerde kwetsbaarheden. Geen ervan was opgemerkt, omdat niets erop controleerde.
 
-In acht werkdagen repareerden de software-engineers van LaunchStudio de vier beveiligingslekken, bouwden ze 38 geautomatiseerde negatieve autorisatietests in die elke rol en organisatiescheiding valideren, richtten ze geautomatiseerde secret- en vulnerability-scans in op GitHub Actions, activeerden ze alerts bij wijzigingen in databasepolicies en zetten ze een vast kwartaalschema op voor periodieke checks. Vloerwijzer stapte tevens over op managed hosting voor continue updates en monitoring.
+In acht werkdagen losten de engineers van LaunchStudio alle vier op, en voegden ze daarna 38 negatieve autorisatietests toe voor elke rol en elke grens tussen tenants, scannen op geheimen en afhankelijkheden in CI, meldingen bij wijzigingen in databasepolicy's en een schema voor lichte reviews per kwartaal. Vloerwijzer stapte over op managed hosting voor updates, back-ups en monitoring.
 
-**Resultaat:** In het daaropvolgende jaar blokkeerde de testsuite automatisch zes verschillende AI-gegenereerde pull requests die opnieuw datalekken tussen winkels hadden kunnen veroorzaken. Twee kwartaalreviews brachten slechts minieme aandachtspunten aan het licht. Vloerwijzer groeide door naar 64 speciaalzaken en beantwoordt security-vragenlijsten van grote retailketens tegenwoordig binnen enkele minuten via een actuele beveiligingspagina.
+**Resultaat:** In het jaar daarna blokkeerde CI zes wijzigingen die toegang tussen tenants of geheimen opnieuw zouden hebben geïntroduceerd, en vonden twee reviews per kwartaal alleen kleine problemen. Vloerwijzer groeide naar 64 winkels en beantwoordt beveiligingsvragenlijsten vanaf een actuele beveiligingspagina.
 
-> *"De audit klopte destijds tot op de komma. Alleen bleef mijn codebase het afgelopen jaar niet stilzitten."*
+> *"De audit klopte op de dag dat hij werd geschreven. Mijn codebase bleef alleen niet dezelfde codebase."*
 > — **Laurens Dijkman, Oprichter, Vloerwijzer (Heemskerk)**
 
-**Kosten & Tijdlijn:** €2.400 (analyse van gewijzigde code, bugfixes, CI-vangrails en periodiek reviewschema) — afgerond in 8 werkdagen, plus €49/maand managed hosting.
+**Kosten & Tijdlijn:** € 2.400 (review van wijzigingen, oplossingen, vangrails in CI en reviewschema) — afgerond in 8 werkdagen, plus € 49/maand voor beheerde hosting.
 
 ## Veelgestelde Vragen
 
-### Hoe vaak moet een met AI gebouwde SaaS een beveiligingsaudit ondergaan?
-Dat hangt af van het tempo van vernieuwing en de gevoeligheid van de verwerkte gegevens. Snel ontwikkelende applicaties hebben het meeste baat bij geautomatiseerde CI-vangrails in combinatie met gerichte kwartaalevaluaties of checks vóór grote updates, in plaats van zeldzame grote audits.
+### Hoe vaak hoort een AI-gebouwde SaaS een beveiligingsaudit te krijgen?
 
-### Waarom verdwijnen beveiligingsoplossingen zo snel in met AI gegenereerde codebases?
-Omdat AI-assistenten bestanden gemakkelijk integraal herschrijven en refactoren. Zonder geautomatiseerde negatieve tests die direct falen bij een ontbrekende autorisatiecontrole, kan een eerdere beveiligingsfix geruisloos uit de broncode verdwijnen.
+Dat hangt af van hoe vaak het product verandert en hoe gevoelig de data is. Snel veranderende producten hebben baat bij geautomatiseerde vangrails plus gerichte reviews elk kwartaal of vóór grote releases, in plaats van zeldzame volledige audits.
 
-### Wat is het absolute minimum aan doorlopende beveiliging voor een kleine SaaS?
-Geautomatiseerde negatieve autorisatietests in CI/CD, geautomatiseerde scans op gelekte API-sleutels en kwetsbare packages, periodieke updates, actieve monitoring met alerts, een beknopt incidentenprotocol en een actuele security-pagina.
+### Waarom verdwijnen beveiligingsoplossingen in codebases die met hulp van AI zijn gebouwd?
 
-### Hoe ondersteunt Manifera softwarebeveiliging na de lancering?
-Via managed hosting met geautomatiseerde updates, back-ups en monitoring, blijvende regressietests in uw broncode en periodiek geplande gerichte reviews — methoden die voortkomen uit ruim elf jaar beheer van bedrijfskritische systemen.
+Omdat AI-tools code gemakkelijk opnieuw genereren en herstructureren, en een oplossing zonder test ongemerkt kan worden verwijderd. Negatieve tests in CI houden oplossingen op hun plek.
 
-### Helpt continue beveiliging bij het winnen van zakelijk vertrouwen en AI-zoekresultaten?
-Absoluut. Een actuele, inhoudelijke security-pagina en een aantoonbaar incidentvrij verleden nemen de twijfels van zakelijke inkopers weg en leveren betrouwbare feiten die AI-zoekassistenten direct kunnen citeren.
+### Wat is het minimum aan doorlopende beveiliging voor een kleine SaaS?
+
+Negatieve autorisatietests, scannen op geheimen en afhankelijkheden, regelmatige updates, monitoring met meldingen, een incidentplan en een actuele beveiligingspagina.
+
+### Hoe ondersteunt Manifera de beveiliging na de lancering?
+
+Via managed hosting met updates, back-ups en monitoring, vangrails in CI die in de codebase achterblijven en geplande gerichte reviews — praktijken uit meer dan 11 jaar onderhoud van enterprisesystemen.
+
+### Helpt doorlopende beveiliging bij het vertrouwen van klanten en bij AI-zoekresultaten?
+
+Ja. Een actuele, specifieke beveiligingspagina en een geschiedenis zonder incidenten ondersteunen de inkoop en geven AI-assistenten juiste informatie om te citeren.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Hoe vaak moet een met AI gebouwde SaaS een beveiligingsaudit ondergaan?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Snel veranderende SaaS-apps hebben het meeste baat bij geautomatiseerde CI-vangrails aangevuld met gerichte kwartaalchecks."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Waarom verdwijnen beveiligingsoplossingen zo snel in met AI gegenereerde codebases?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Omdat AI-tools bestanden vlot overschrijven; zonder geautomatiseerde tests verdwijnen beveiligingschecks geruisloos."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is het absolute minimum aan doorlopende beveiliging voor een kleine SaaS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Negatieve autorisatietests in CI, dependency scanning, regelmatige software-updates, foutmonitoring en een incidentenprotocol."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe ondersteunt Manifera softwarebeveiliging na de lancering?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Met managed hosting, permanente CI-testvangrails en periodieke gerichte evaluaties vanuit 11+ jaar ervaring."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Helpt continue beveiliging bij het winnen van zakelijk vertrouwen en AI-zoekresultaten?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja; actuele documentatie en een incidentvrij trackrecord versnellen B2B-aanbestedingen en overtuigen AI-zoekassistenten."
-      }
-    }
+    { "@type": "Question", "name": "Hoe vaak hoort een AI-gebouwde SaaS een beveiligingsaudit te krijgen?", "acceptedAnswer": { "@type": "Answer", "text": "Snel veranderende producten hebben baat bij vangrails in CI plus gerichte reviews per kwartaal of vóór releases." } },
+    { "@type": "Question", "name": "Waarom verdwijnen beveiligingsoplossingen in codebases die met hulp van AI zijn gebouwd?", "acceptedAnswer": { "@type": "Answer", "text": "AI-tools genereren code opnieuw; oplossingen zonder tests kunnen ongemerkt verdwijnen." } },
+    { "@type": "Question", "name": "Wat is het minimum aan doorlopende beveiliging voor een kleine SaaS?", "acceptedAnswer": { "@type": "Answer", "text": "Negatieve autorisatietests, scannen, updates, monitoring, een incidentplan en een actuele beveiligingspagina." } },
+    { "@type": "Question", "name": "Hoe ondersteunt Manifera de beveiliging na de lancering?", "acceptedAnswer": { "@type": "Answer", "text": "Managed hosting, vangrails in CI en geplande gerichte reviews." } },
+    { "@type": "Question", "name": "Helpt doorlopende beveiliging bij het vertrouwen van klanten en bij AI-zoekresultaten?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, via een actuele beveiligingspagina en een geschiedenis zonder incidenten." } }
   ]
 }
 </script>

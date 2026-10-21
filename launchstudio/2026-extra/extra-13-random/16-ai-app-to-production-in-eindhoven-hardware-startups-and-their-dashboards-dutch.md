@@ -22,133 +22,163 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-In de Brainport-regio Eindhoven krijgt de fysieke hardware de diepgaande engineering-aandacht die het verdient. Sensoren worden tot op de millimeter gekalibreerd, behuizingen worden grondig getest op trillingen en waterdichtheid, en firmware ondergaat strenge audits. Vervolgens wordt, vaak in de laatste weken voor de start van een belangrijke pilot, het online klantendashboard in een paar avonden in elkaar gezet met Cursor — want dat is *"gewoon het webgedeelte"*. Pas wanneer die AI-applicatie naar productie moet, ontdekken veel Eindhovense hardware-startups dat uitgerekend dat webgedeelte de plek is waar de data van hun klanten én de beveiligingssleutels van hun fysieke apparaten werkelijk leven.
+In de Brainportregio krijgt de hardware de engineeringaandacht die ze verdient. Sensoren worden gekalibreerd, behuizingen getest, firmware gereviewd. Dan wordt, vaak in de laatste weken vóór een pilot, het dashboard voor de klant in een paar avonden in Cursor gebouwd — omdat het "maar het webgedeelte" is. Bij het naar productie brengen van die AI-app ontdekken veel Eindhovense hardware-startups dat het webgedeelte juist de plek is waar de data van hun klanten, en de inloggegevens van hun apparaten, werkelijk leven.
 
-Dit artikel is geschreven voor technische oprichters rond Eindhoven — op de High Tech Campus, Strijp-S of vanuit een spin-off van de TU Eindhoven — van wie het apparaat ijzersterk in elkaar zit, maar het webdashboard door AI gegenereerd is.
+Dit artikel is voor technische oprichters rond Eindhoven — op de High Tech Campus, Strijp-S of bij een van de spin-offs van de universiteit — van wie het apparaat degelijk is en het dashboard door AI gebouwd.
 
-## Waarom hardware-dashboards fundamenteel afwijken van gewone SaaS
+## Waarom Hardwaredashboards een Ander Soort Webapp Zijn
 
-Een standaard webapplicatie ontvangt incidenteel HTTP-verzoeken van menselijke gebruikers die op knoppen klikken. Een IoT- of hardwaredashboard ontvangt doorlopend geautomatiseerde gegevensstromen van fysieke apparaten, en slechts af en toe een verzoek van een mens. Dat verandert werkelijk alles aan de productierijpheid:
+Een typische SaaS-app ontvangt verzoeken van mensen. Een hardwaredashboard ontvangt voortdurend verzoeken van apparaten, en af en toe van mensen. Dat verandert bijna alles aan productierijpheid:
 
-- **Het apparaat is óók een gebruiker:** Fysieke sensoren hebben een eigen identiteit, inloggegevens en specifieke rechten nodig — en in tegenstelling tot een mens kan een sensor niet even op *"wachtwoord vergeten"* klikken.
-- **Data stroomt onafgebroken binnen:** Enkele honderden apparaten die elke minuut hun status doorgeven, genereren per dag meer databasetransacties dan een gemiddelde SaaS-app in een hele maand verwerkt.
-- **De data bestaat uit tijdreeksen (Time-Series):** Gebruikers vragen om aggregaties en historische trends (*"gemiddelde luchtvochtigheid per uur over de afgelopen maand"*). Standaard databasetabellen lopen bij dergelijke queries op schaal genadeloos vast.
-- **Fouten hebben fysieke consequenties:** Als een dashboard op afstand commando's naar een machine kan sturen — zoals het openen van een klep of het verhogen van een temperatuur — transformeert een autorisatiefout direct in een fysiek veiligheids- en aansprakelijkheidsrisico.
+- **Het apparaat is ook een gebruiker.** Het heeft een identiteit, inloggegevens en rechten nodig — en in tegenstelling tot een mens kan het zijn wachtwoord niet herstellen.
+- **Data komt voortdurend binnen.** Een paar honderd apparaten die elke minuut rapporteren, leveren per dag meer schrijfacties op dan de meeste SaaS-apps in een maand zien.
+- **De data is een tijdreeks.** Query's vragen om bereiken en aggregaten ("gemiddelde luchtvochtigheid per uur vorige week"), en gewone tabellen gaan daar op schaal slecht mee om.
+- **Fouten zijn fysiek.** Een dashboard dat commando's naar apparaten kan sturen — een klep openen, een instelwaarde veranderen — maakt van een fout in toegangsbeheer een veiligheidsprobleem.
 
-AI-tools zoals Cursor of Lovable houden met geen van deze facetten rekening, tenzij je ze expliciet instrueert. Zonder die sturing produceren ze generieke code die uitgaat van menselijke browsers.
+AI-codeertools weten hier niets van tenzij je het ze vertelt, en zelfs dan leveren ze de meest gangbare patronen voor webapps op, die uitgaan van menselijke gebruikers.
 
-## Apparaat-identiteit: De meest voorkomende kwetsbaarheid
+## Identiteit van Apparaten: Het Meest Voorkomende Gat
 
-Het patroon dat LaunchStudio vrijwel altijd aantreft bij door AI gegenereerde hardware-dashboards: elk apparaat gebruikt exact dezelfde globale API-sleutel, hardcoded meegeprogrammeerd in de firmware, en het backend-endpoint vertrouwt blindelings op het `device_id` dat in de JSON-payload wordt meegestuurd.
+Het patroon dat LaunchStudio het vaakst vindt in AI-gebouwde hardwaredashboards: elk apparaat gebruikt dezelfde API-sleutel, vaak vastgecodeerd in de firmware, en het endpoint voor binnenkomende data vertrouwt elke `device_id` die het verzoek bevat.
 
-De risico's hiervan zijn enorm. Iedereen die de sleutel uit één apparaat uitleest — of simpelweg uit het firmware-updatebestand vist — kan namens elk willekeurig apparaat valse meetwaarden insturen voor elke willekeurige klant. Bovendien kan die centrale sleutel nooit worden ingetrokken zonder duizenden reeds geïnstalleerde apparaten in het veld gelijktijdig onklaar te maken.
+De gevolgen zijn ernstig. Iedereen die de sleutel uit één apparaat haalt — of uit het bestand van een firmware-update — kan als elk apparaat data sturen, voor elke klant. En de sleutel kan niet worden ingetrokken zonder elk apparaat in het veld bij te werken.
 
-De vereiste productiestructuur vereist **unieke inloggegevens per individueel apparaat**: elk apparaat ontvangt tijdens de provisioning een eigen cryptografisch token of certificaat. De backend leidt de identiteit van het apparaat af uit die geldige sleutel (en niet uit de meegestuurde verzoektekst), waardoor een gecompromitteerd apparaat direct individueel kan worden geblokkeerd zonder de rest van de vloot te raken.
+Het productiepatroon is inloggegevens per apparaat: elk apparaat krijgt bij het in gebruik nemen een eigen token of certificaat, de server leidt de identiteit van het apparaat af uit de inloggegevens in plaats van uit de body van het verzoek, en een gecompromitteerd apparaat kan afzonderlijk worden ingetrokken. Bij opzetten op basis van MQTT horen de toegangslijsten van de broker elk apparaat te beperken tot zijn eigen topics.
 
-## Gegevensinname (Ingestion) die de vloot overleeft
+## Binnenkomende Data Die de Vloot Overleeft
 
-AI-code schrijft inkomende meetwaarden meestal direct regel voor regel weg in de centrale database: één HTTP-verzoek is één `INSERT`. Met twintig sensoren tijdens een laboratoriumtest werkt dat prima. Met tweeduizend sensoren die elke dertig seconden rapporteren, praat je over ruim 5,7 miljoen schrijfacties per dag naar exact dezelfde database waarop klanten grafieken proberen te bekijken.
+AI-gegenereerde endpoints voor binnenkomende data schrijven elke meting meestal rechtstreeks naar de hoofddatabase, één rij per verzoek. Met twintig apparaten in een pilot gaat dat prima. Met tweeduizend apparaten die elke dertig seconden rapporteren, zijn dat meer dan vijf miljoen inserts per dag in dezelfde database die je dashboard bevraagt.
 
-Voor een betrouwbare productieomgeving is het volgende noodzakelijk:
-- **Batching en buffering:** Apparaten bufferen metingen en sturen ze gebundeld door; de backend plaatst ze in een wachtrij (queue) en schrijft ze in bulkblokken weg.
-- **Idempotentie:** Apparaten proberen metingen opnieuw te verzenden bij wankele mobiele verbindingen. Elke meting vereist een unieke tijdstempel-ID zodat herhalingen nooit tot dubbele records leiden.
-- **Back-pressure:** Als de server tijdelijk overbelast raakt, moet deze apparaten opdragen even te wachten (HTTP 429) in plaats van metingen geruisloos weg te gooien.
-- **Tijdvalidatie:** Sensoren met een ontregelde interne klok leveren metingen aan uit 1970 of uit het jaar 2045. De backend moet datums altijd server-side valideren.
+Wat productie nodig heeft:
 
-## Tijdreeksdata zonder hoofdpijn
+- **Bundelen en bufferen.** Apparaten of een gateway sturen metingen in batches; de server zet ze in een wachtrij en schrijft ze in bulk weg.
+- **Idempotentie.** Apparaten proberen het opnieuw wanneer de verbinding wegvalt. Elke meting heeft een unieke identificator nodig, zodat herhalingen geen duplicaten opleveren.
+- **Tegendruk.** Is de server traag, dan moet die apparaten vertellen te wachten, niet stilletjes data laten vallen.
+- **Tijd van het apparaat, gecontroleerd door de server.** Apparaten met een verkeerde klok leveren metingen uit 1970 of volgend jaar; de server hoort die te markeren.
 
-Gewone PostgreSQL-tabellen kunnen meetdata aan tot enkele miljoenen regels, waarna dashboards tergend traag worden. Praktische oplossingen om dit beheersbaar te houden zijn de `TimescaleDB`-extensie, datapartitionering op basis van tijdsintervallen en vooraf berekende statistieken (continue aggregaties per uur en per dag). Hierdoor scannen analysedashboards slechts enkele tientallen geaggregeerde rijen in plaats van miljoenen ruwe datapunten.
+## Tijdreeksdata Zonder Tijdreekspijn
 
-## Strikte scheiding tussen zakelijke klanten (Multi-Tenancy)
+Standaard Postgres-tabellen gaan tot op zekere hoogte acceptabel om met tijdreeksdata, en daarna worden dashboards stroperig traag. Opties die het beheersbaar houden, zijn de extensie TimescaleDB, partitioneren op tijd, en vooraf berekende samenvattingen (aggregaten per uur en per dag), zodat grafieken geen ruwe metingen hoeven te doorzoeken. Bewaartermijnen doen er ook toe: beslis hoe lang ruwe metingen worden bewaard voordat alleen aggregaten overblijven.
 
-Zakelijke B2B-klanten in de maakindustrie, glastuinbouw of logistiek eisen waterdichte datascheiding. In door AI gegenereerde dashboards filtert de frontend vaak visueel op klant, terwijl de API achter de schermen metingen van élk apparaat teruggeeft zodra iemand het serienummer raadt. Toegangsbeheer moet rotsvast op de server worden afgedwongen — bij voorkeur rechtstreeks in de database via Row-Level Security (RLS) gekoppeld aan de klantorganisatie.
+## Klanten Mogen Alleen Hun Eigen Apparaten Zien
 
-## Commando's vereisen meer zorg dan data
+B2B-klanten van hardware — kassen, fabrieken, woningcorporaties — verwachten strikte scheiding. Een AI-gebouwd dashboard filtert apparaten vaak per klant in de interface, terwijl de API de data van elk apparaat teruggeeft als erom wordt gevraagd. Scheiding tussen tenants moet op de server worden afgedwongen, bij voorkeur in de database met row level security gekoppeld aan de organisatie van de klant, en moet net zo goed gelden voor endpoints voor commando's.
 
-Kan het dashboard commando's terugsturen naar de machines in het veld? Behandel die route dan als het meest risicovolle onderdeel van je architectuur:
-- Strikte rolcontroles (niet elke medewerker van de klant mag bedrijfsparameters wijzigen).
-- Dubbele bevestiging voor ingrijpende acties.
-- Een waterdicht auditlogboek: wie heeft welk commando op welk tijdstip verstuurd?
-- Harde validatielimieten op serverniveau, zodat een typefout nooit een verwarmingselement naar een gevaarlijke temperatuur kan sturen.
+## Commando's Vragen Meer Zorg dan Data
 
-## Twee releasetempos die uit elkaar lopen: Firmware versus Cloud
+Kan je dashboard commando's naar apparaten sturen, behandel dat pad dan als het gevoeligste deel van het systeem: rolcontroles (niet elke gebruiker bij een klant mag instelwaarden veranderen), bevestiging bij ingrijpende acties, een auditlog van wie wat wanneer stuurde, en limieten op waarden zodat een tikfout een verwarming niet naar een onveilige temperatuur kan sturen.
 
-Hardware-startups hebben te maken met twee releasesnelheden die haaks op elkaar staan. Het webdashboard kan dagelijks van updates worden voorzien; firmware op duizenden fysieke modules in het veld wordt zelden, uiterst behoedzaam of soms helemaal nooit geüpdatet. Een productierijpe backend moet daarom moeiteloos overweg kunnen met oudere firmwareversies die al jaren draaien:
+## Firmware en Backend: Twee Releasecycli in de Pas Houden
 
-- **Versioneer elk API-endpoint:** Apparaten sturen hun actuele firmwareversie mee in de header; de server blijft oudere payloads ondersteunen totdat die versies bewust worden uitgefaseerd.
-- **Verwijder nooit zomaar velden:** Hernoem of wis nooit velden die door apparaten worden aangeleverd zonder een ruime overgangsperiode.
-- **Kies voor pull-gebaseerde configuratie:** Laat apparaten periodiek bij de server vragen of er nieuwe instellingen zijn, in plaats van instellingen ongevraagd te 'pushen'.
-- **Faseer firmware-updates:** Werk eerst 5% van de apparaten bij, monitor foutpercentages en verbindingsstabiliteit, en rol pas daarna verder uit.
+Hardware-startups hebben twee releasecycli die in heel verschillende tempo's bewegen. Het dashboard kan dagelijks worden bijgewerkt; firmware op duizenden apparaten in het veld wordt zelden, voorzichtig en soms nooit bijgewerkt. Een AI-app voor een apparaatproduct naar productie brengen betekent dat de backend jarenlang met oude firmware moet kunnen omgaan.
 
-## Relevante normen en standaarden voor hardware-klanten
+Praktische regels:
 
-B2B-afnemers en industriële inkopers toetsen leveranciers steeds vaker aan formele normen. De belangrijkste kaders waar Eindhovense oprichters mee te maken krijgen:
+- **Geef elke apparaat-API een versie.** Apparaten sturen bij elk verzoek een firmwareversie mee; de backend blijft oudere versies ondersteunen totdat ze bewust worden uitgefaseerd.
+- **Hernoem of verwijder nooit velden die apparaten sturen** zonder overgangsperiode. Voeg nieuwe velden toe naast de oude.
+- **Laat apparaten configuratie ophalen.** Apparaten vragen de backend om configuratie in plaats van dat die naar hen wordt gestuurd, zodat wijzigingen geleidelijk kunnen worden uitgerold en teruggedraaid.
+- **Rol firmware gefaseerd uit.** Werk 5% van de apparaten bij, let op foutpercentages en connectiviteit, en ga dan verder.
 
-| Norm of wetgeving | Toepassingsgebied | Wat dit betekent voor de web- en cloudkant |
+AI-gegenereerde backendcode houdt hier zelden rekening mee, omdat in een demo elk apparaat de firmware draait die het dashboard verwacht.
+
+## Beveiligingsnormen die Hardwareklanten Noemen
+
+B2B-klanten van hardware verwijzen bij inkoop steeds vaker naar formele normen. Degene die Eindhovense oprichters het vaakst tegenkomen:
+
+| Norm of regelgeving | Reikwijdte | Wat het betekent voor de webkant |
 | --- | --- | --- |
-| **ETSI EN 303 645** | Basisbeveiliging voor IoT | Geen universele standaardwachtwoorden, veilige updates, versleutelde communicatie |
-| **IEC 62443** | Industriële automatisering & OT | Strikte zonering, robuust toegangsbeheer, veilige ontwikkelprocessen |
-| **EU Cyber Resilience Act (CRA)** | Digitale producten verkocht in de EU | Verplichte kwetsbaarheidsafhandeling, beveiligingsupdates en documentatie gedurende de hele levenscyclus |
-| **ISO 27001** | Informatiebeveiligingsbeheer | Aantoonbare operationele processen en datacontroles |
+| ETSI EN 303 645 | Beveiligingsbasis voor IoT voor consumenten | Geen standaardwachtwoorden, een updatemechanisme, beveiligde communicatie |
+| IEC 62443 | Industriële automatisering en besturingssystemen | Zones, toegangsbeheer, veilige ontwikkelpraktijken |
+| EU Cyber Resilience Act | Producten met digitale elementen die in de EU worden verkocht | Omgaan met kwetsbaarheden, beveiligingsupdates, documentatie gedurende de levensduur van het product |
+| ISO 27001 | Beheer van informatiebeveiliging | Organisatorische maatregelen; vaak gevraagd aan de leverancier |
 
-Met name de Europese Cyber Resilience Act stelt zware eisen aan verbonden hardware en de bijbehorende cloudbackends. Wie de cloudarchitectuur nu al volgens deze standaarden inricht, voorkomt kostbare herbouwingen tijdens zakelijke audits.
+Vooral de Cyber Resilience Act zal veel verbonden producten raken die in de EU worden verkocht naarmate de verplichtingen ingaan, inclusief plichten om kwetsbaarheden af te handelen en te melden en beveiligingsupdates te leveren. De backend en het dashboard horen bij dat plaatje, omdat daar inloggegevens van apparaten, updates en klantdata samenkomen.
 
-## Vlootmonitoring: Weten wanneer apparaten stilvallen
+## Eigendom van en Toegang tot Data voor Klanten
 
-Standaard server-uptime monitoring volstaat niet voor een hardware-startup. Je moet direct weten wanneer apparaten stoppen met zenden: een sensor die stilvalt kan defect zijn, geen bereik hebben of gehackt zijn. Essentiële indicatoren zijn:
-- Het aantal apparaten dat per uur rapporteert vergeleken met de verwachte norm.
-- Apparaten met afwijkende verzendfrequenties (veel te veel of juist te weinig berichten).
-- Verdeling van firmwareversies over de actieve vloot.
-- Vertraging (ingestion lag) tussen de tijdstempel op het apparaat en het moment van opslag in de cloud.
+Industriële klanten willen vaak hun data: ruwe metingen geëxporteerd naar hun eigen systemen, API's voor hun datateams, bewaartermijnen die zij bepalen. Plan op API's voor klanten met sleutels en scopes per klant, rate limits, auditlogs van toegang en duidelijke contractuele afspraken over wie eigenaar is van de data en wat er aan het einde van het contract gebeurt. Vroeg een export en API bouwen voorkomt ook de losse verzoeken om CSV-bestanden die anders elke week engineeringtijd kosten.
 
-Automatische alerts op deze meetwaarden signaleren storingen vóórdat de klant erachter komt — meestal op het moment dat een kas oververhit raakt of een assemblagelijn hapert.
+## De Vloot Bewaken, Niet Alleen de Server
 
-## De ervaring van Manifera met industriële hardware
+Uptimebewaking van de server is niet genoeg voor een apparaatproduct. Je moet ook weten wanneer apparaten stil worden: een sensor die stopt met rapporteren, kan kapot, offline of gecompromitteerd zijn. Nuttige signalen zijn het aantal apparaten dat per uur rapporteert tegenover het verwachte aantal, apparaten met ongebruikelijke berichtfrequenties (te veel of te weinig), de verdeling van firmwareversies, en de vertraging tussen het tijdstip van een meting en de aankomst ervan. Meldingen hierop vangen problemen op die een klant anders als eerste zou ontdekken — meestal op het moment dat een kas oververhit raakt of een machine stopt.
 
-Eindhovense oprichters blinken traditioneel uit in embedded systems en elektrotechniek, maar hebben vaak minder affiniteit met schaalbare webbeveiliging en cloud-infrastructuur. Dat is een volkomen logische verdeling. LaunchStudio levert exact die ontbrekende schakel. Onze engineers worden ondersteund door Manifera, dat al meer dan 11 jaar software ontwikkelt voor veeleisende industriële opdrachtgevers, waaronder fabrikanten van sensor- en energiesystemen zoals Xpar Vision en MO Batteries.
+## Van Pilot naar Uitrol: Een Checklist
 
-De technische werkzaamheden worden uitgevoerd vanuit ons ontwikkelcentrum in Ho Chi Minhstad en gecoördineerd vanuit Amsterdam (op circa 80 minuten treinen van Eindhoven). Bekijk concrete voorbeelden in [Manifera's portfolio](https://www.manifera.com/portfolio/). Als externe beveiligingsstandaard voor IoT-systemen hanteren we de richtlijnen van [ETSI EN 303 645](https://www.etsi.org/technologies/consumer-iot-security).
+Bevestig, voordat je van een pilot opschaalt naar een uitrol bij een hele klant:
 
-Herken je deze uitdagingen in jouw huidige dashboard? [Plan een vrijblijvend gesprek met een engineer](https://launchstudio.eu/nl/#contact) die zowel AI-codebases als industriële hardware begrijpt.
+1. Inloggegevens per apparaat met intrekking zijn ingericht.
+2. De verwerking van binnenkomende data kan in een loadtest tien keer het pilotvolume aan.
+3. Opslag voor tijdreeksen heeft bewaartermijnen en samenvattingen ingesteld.
+4. Scheiding tussen tenants wordt afgedwongen en is getest.
+5. Commando's hebben rolcontroles, bevestiging, limieten en auditlogs.
+6. Firmware- en backendversies zijn compatibel over minstens twee releases.
+7. Bewaking van de vloot geeft meldingen bij stille apparaten.
+8. Een beveiligingsoverzicht ligt klaar voor het IT-team van de klant.
+
+Dit is de lijst die de engineers van klanten tijdens een besluit over uitrol doorlopen, vaak precies in deze volgorde.
+
+## Apparaatdata en de AVG
+
+Apparaatdata is niet automatisch anoniem. Metingen uit een kas zijn meestal bedrijfsdata, maar data van een slimme huissensor, een wearable of een voertuig kan laten zien wanneer iemand thuis is, hoe die zich verplaatst of hoe die leeft — en dat maakt het persoonsgegevens. Breng in kaart welke datastromen betrekking hebben op herkenbare personen, pas dataminimalisatie toe (aggregeer waar ruwe data niet nodig is), stel per stroom bewaartermijnen vast en documenteer de rechtsgrond. Bij B2B-producten treden klanten vaak op als verwerkingsverantwoordelijke en jij als verwerker, wat een verwerkersovereenkomst vereist en een duidelijke lijst met subverwerkers, inclusief cloud- en tijdreeksdiensten. Dit vroeg goed regelen, voorkomt ongemakkelijke gesprekken wanneer de privacyfunctionaris van een klant het product vóór de uitrol beoordeelt.
+
+## Het Team Rond een Hardwareproduct Bouwen
+
+Eindhovense oprichters hebben vaak sterke expertise in embedded systemen en elektronica en minder diepgang in webbeveiliging en beheer. Dat is een normale verdeling, en ze suggereert een praktische taakverdeling: het oprichtersteam is eigenaar van firmware, hardware en domeinkennis; een productiepartner versterkt de cloudkant, richt pipelines en monitoring in en documenteert het; en één persoon in het team wordt de interne eigenaar van het dashboard en leert van de achtergelaten documentatie en tests. Na verloop van tijd kan die interne eigenaar meer overnemen, ondersteund door periodieke reviews. Het is hetzelfde patroon dat Manifera bij industriële klanten heeft toegepast: specialisten waar specialisme ertoe doet, en kennis die wordt overgedragen in plaats van opgepot.
+
+## Wat Wachten tot na de Uitrol Kost
+
+Identiteit van apparaten of de verwerking van binnenkomende data repareren nadat duizenden apparaten zijn geïnstalleerd, is veel moeilijker dan ervoor: inloggegevens moeten via firmware-updates worden vervangen, sommige apparaten zijn maandenlang offline, en klanten moeten worden geïnformeerd. Voor hardwareproducten is het goedkoopste moment om de webkant op productieniveau te brengen tussen pilot en uitrol — het moment waarop wijzigingen elk apparaat nog snel bereiken en het aantal klanten dat door een overgang wordt geraakt klein is.
+
+## Kort Gezegd
+
+Bouw het dashboard met dezelfde zorg als het apparaat, want voor je klanten zijn die twee één product.
+
+## Van AI-App naar Productie in Eindhoven: Waarom Oprichters met LaunchStudio Werken
+
+Hardware-oprichters zijn meestal technisch en hebben weinig tijd. Ze hoeven niet te horen wat een API is; ze hebben iemand nodig die al eerder systemen voor apparaten heeft versterkt en dat in weken kan doen terwijl zij zich op het product richten. De engineers van LaunchStudio komen van Manifera, dat 11+ jaar ervaring heeft over 160+ projecten, inclusief klanten als Xpar Vision en MO Batteries, wier producten industriële en energiehardware omvatten. Het meeste engineeringwerk gebeurt in het ontwikkelcentrum van Manifera in Ho Chi Minh-stad, met aansturing via het kantoor van Manifera aan de Herengracht 420 in Amsterdam, zo'n 80 minuten met de trein vanaf Eindhoven. Zie [het portfolio van Manifera](https://www.manifera.com/portfolio/) voor voorbeelden.
+
+Voor de beveiligingskant van apparaatsystemen is de [ETSI EN 303 645-basis voor IoT voor consumenten](https://www.etsi.org/technologies/consumer-iot-security) een nuttige externe referentie, ook voor B2B-apparaten.
+
+Klinkt dit als jouw dashboard, [praat dan met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/nl/#contact) — en apparaten.
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Glastuinbouwsensoren met één gedeelde API-sleutel
+### Een AI-Native Oprichter in Actie: Kassensensoren met Eén Gedeelde Sleutel
 
-Pieter Hofstede, elektrotechnisch ingenieur die na een carrière bij een multinational in de regio Eindhoven zijn eigen startup SensaGrow begon, ontwikkelde draadloze multisensoren die continu temperatuur, luchtvochtigheid en CO₂ meten in professionele glastuinbouwkassen. De hardware was een technisch hoogstandje. Het bijbehorende online dashboard — in drie weken met Cursor in elkaar gezet met een Next.js-frontend en Supabase — diende aanvankelijk puur om meetwaarden te visualiseren. Vijf tuinders in het Westland testten een pilot met in totaal 340 sensoren. Een grote telerscoöperatie toonde serieuze interesse om 2.000 sensoren af te nemen.
+Pieter Hofstede, elektrotechnisch ingenieur die een groot Eindhovens techbedrijf verliet om SensaGrow te starten, bouwde draadloze sensoren die temperatuur, luchtvochtigheid en CO₂ meten in commerciële kassen. De hardware was zorgvuldig ontworpen. Het klantdashboard — gebouwd in Cursor met een Next.js-frontend en Supabase — was in ongeveer drie weken geschreven. Vijf telers in het Westland testten 340 sensoren, en een grotere coöperatie wilde er 2.000 uitrollen.
 
-Vóór de handtekening werd gezet, eiste de IT-consultant van de coöperatie een formeel security-overzicht. Pieter vroeg LaunchStudio om een snelle intake. De bevindingen logen er niet om: elke sensor gebruikte exact dezelfde API-sleutel, hardcoded in de C-firmware; het backend-endpoint accepteerde blindelings elk meegestuurd `device_id`. Ruwe metingen werden stuk voor stuk in één centrale databasetabel gedumpt, die inmiddels 40 miljoen rijen telde, waardoor de wekelijkse analysegrafieken er twintig seconden over deden om in te laden. Bovendien bleken tuinders elkaars klimaatdata via de API te kunnen inzien, en bevatte het commando om de kasventilatie handmatig te overschrijven geen enkele rolcontrole of audittrail.
+De IT-adviseur van de coöperatie vroeg om een beveiligingsoverzicht, en Pieter vroeg LaunchStudio om een review voordat hij antwoordde. Elke sensor gebruikte dezelfde API-sleutel, gecompileerd in de firmware; het endpoint voor binnenkomende data accepteerde elke `device_id` in het verzoek. Metingen werden één rij per verzoek naar één tabel geschreven die inmiddels 40 miljoen rijen bevatte, en de weekgrafieken van de telers deden er tot twintig seconden over. Telers konden via de API elkaars kasdata zien. Het commando in het dashboard om de ventilatie te overrulen had geen rolcontrole en geen auditlog.
 
-Binnen vijftien werkdagen voerde het team van LaunchStudio een complete herstructurering door: we richtten unieke tokens per sensor in met een centrale intrekkingslijst (meegeleverd in de eerstvolgende over-the-air firmware-update); bouwden een schaalbare innamewachtrij met gebundelde, idempotente schrijfacties; migreerden de historische data naar TimescaleDB met automatische uurgemiddelden; dwongen strikte Row-Level Security af op organisatieniveau; en beveiligden de handmatige ventilatiesturing achter rolcontroles, grenswaarden en een audittrail.
+In vijftien werkdagen voerde het team tokens per apparaat in, uitgegeven bij het in gebruik nemen en met een intrekkingslijst (uitgerold via de volgende firmware-update, waarbij de gedeelde sleutel na een overgangsperiode werd uitgefaseerd), bouwde het de verwerking van binnenkomende data opnieuw op rond een wachtrij met gebundelde, idempotente schrijfacties, verplaatste het metingen naar TimescaleDB met samenvattingen per uur en per dag, dwong het scheiding tussen tenants af met row level security, en beperkte het het overrulen van de ventilatie tot beheerrollen van telers, met bevestiging, waardelimieten en een audittrail.
 
-**Resultaat:** SensaGrow doorstond de strenge IT-audit van de coöperatie glansrijk en startte direct de uitrol van 2.000 sensoren. De analysegrafieken laden nu binnen één seconde in, en de backend verwerkt moeiteloos pieken van meer dan 60 metingen per seconde zonder enig dataverlies.
+**Resultaat:** SensaGrow doorstond de beveiligingsbeoordeling van de coöperatie en begon aan een uitrol van 2.000 sensoren. Weekgrafieken laden nu binnen een seconde, en de verwerking van binnenkomende data heeft pieken van meer dan 60 metingen per seconde aangekund zonder dataverlies.
 
-> *"Ik had een jaar besteed om de fysieke sensor onverwoestbaar te maken, en drie weken aan het dashboard dat bepaalde wie die data kon inzien. Voor de klant wás dat dashboard het eigenlijke product."*
+> *"Ik had een jaar besteed aan het betrouwbaar maken van de sensor en drie weken aan het ding dat bepaalde wie hem kon uitlezen. Vanuit de klant gezien was het dashboard het product."*
 > — **Pieter Hofstede, Oprichter, SensaGrow (Eindhoven)**
 
-**Kosten & Tijdlijn:** € 4.200 (Launch & Grow-pakket: apparaatauthenticatie, opname-wachtrijen, time-series opslag, tenant-beveiliging en commandocontroles) — afgerond binnen 15 werkdagen, plus € 49/maand voor beheerde hosting.
+**Kosten & Tijdlijn:** € 4.200 (Launch & Grow-pakket: identiteit van apparaten, pijplijn voor binnenkomende data, opslag voor tijdreeksen, scheiding tussen tenants en beheersing van commando's) — afgerond in 15 werkdagen, plus € 49/maand voor beheerde hosting.
 
 ## Veelgestelde Vragen
 
-### Kan LaunchStudio ook aanpassingen doen in de firmware van onze apparaten?
+### Kan LaunchStudio naast het dashboard ook aan firmware werken?
 
-LaunchStudio richt zich primair op de cloud- en serverzijde: API-architectuur, datastromen, databases, webdashboards en hosting. Aanpassingen die firmware-wijzigingen vereisen — zoals de overstap naar unieke tokens per apparaat — ontwerpen we in nauw overleg met jouw eigen firmware-engineers, die de apparaatcode implementeren.
+LaunchStudio richt zich op de web- en serverkant: API's, verwerking van binnenkomende data, databases, dashboards en hosting. Wijzigingen die firmware-updates vereisen — zoals de overstap naar inloggegevens per apparaat — worden samen met je firmwareteam ontworpen, dat de kant van het apparaat implementeert.
 
-### Is Supabase wel geschikt voor grote hoeveelheden industriële IoT-data?
+### Is Supabase geschikt voor IoT-data?
 
-Voor pilots en vloten van enkele duizenden apparaten zeker, mits gecombineerd met `TimescaleDB`, verstandige partities en continue aggregaties. Voor extreem grote vloten van tienduizenden apparaten met sub-seconde data adviseren we een dedicated time-series architectuur.
+Voor pilots en vloten van gemiddelde omvang wel, vooral met TimescaleDB, partitionering en samenvattingen. Zeer grote vloten hebben mogelijk eigen infrastructuur voor tijdreeksen nodig, en een review signaleert dat als je groeiplannen erom vragen.
 
-### Waarom is een gedeelde API-sleutel in firmware zo'n groot beveiligingsrisico?
+### Waarom is een gedeelde API-sleutel voor apparaten zo'n probleem?
 
-Omdat zodra één sensor fysiek wordt ontmanteld of een firmwarebestand wordt geanalyseerd, de sleutel voor álle apparaten op straat ligt. Je kunt die centrale sleutel niet intrekken zonder direct alle werkende apparaten in het veld plat te leggen.
+Omdat één uitgelezen sleutel elk apparaat en elke klant compromitteert, en hij niet kan worden ingetrokken zonder de hele vloot bij te werken. Inloggegevens per apparaat beperken de schade tot één apparaat en maken intrekken per apparaat mogelijk.
 
-### Welke meerwaarde biedt Manifera's industriële ervaring voor een Eindhovense startup?
+### Hoe helpt de ervaring van Manifera met industriële klanten Eindhovense startups?
 
-Manifera bouwt al jaren hoogwaardige besturings- en visualisatiesoftware voor industriële fabrikanten en hardwarebedrijven. Die ervaring zorgt ervoor dat we direct begrijpen hoe zwaar datavolumes drukken op databases en waarom fysieke commando's aan apparaten uitzonderlijke veiligheidswaarborgen vereisen.
+Manifera heeft software gebouwd voor klanten wier producten industriële en energiehardware omvatten. Die ervaring bepaalt hoe de engineers van LaunchStudio omgaan met identiteit van apparaten, datavolumes en de veiligheid van commando's — gebieden die algemene webdevelopers vaak onderschatten.
 
-### Draagt een solide IoT-dashboard bij aan de online vindbaarheid van een hardwarebedrijf?
+### Helpt een dashboard op productieniveau de online zichtbaarheid van een hardware-startup?
 
-Jazeker, zij het indirect. Hoewel het dashboard zelf achter een login zit, leidt een storingsvrij en veilig product tot tevreden B2B-referenties, sterke casestudy's en positieve reviews. Dit zijn exact de autoriteitssignalen waar zoekmachines en AI-antwoordsystemen naar speuren bij het aanbevelen van gespecialiseerde hardwareleveranciers.
+Het dashboard zelf zit meestal achter een login, maar een veilig, betrouwbaar product levert betere reviews, casestudy's en referenties van partners op — de content waaruit zoekmachines en AI-antwoordmachines putten bij het aanbevelen van leveranciers.
 
 <script type="application/ld+json">
 {
@@ -157,28 +187,28 @@ Jazeker, zij het indirect. Hoewel het dashboard zelf achter een login zit, leidt
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio ook aanpassingen doen in de firmware van onze apparaten?",
-      "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio richt zich op de server- en cloudarchitectuur. Wijzigingen in firmware ontwerpen we gezamenlijk, waarna jouw eigen team ze op de apparaten implementeert." }
+      "name": "Kan LaunchStudio naast het dashboard ook aan firmware werken?",
+      "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio richt zich op web- en serverwerk. Wijzigingen aan de kant van het apparaat, zoals inloggegevens per apparaat, worden samen ontworpen en door het firmwareteam van de oprichter geïmplementeerd." }
     },
     {
       "@type": "Question",
-      "name": "Is Supabase wel geschikt voor grote hoeveelheden industriële IoT-data?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Voor pilots en vloten tot duizenden apparaten prima, mits voorzien van TimescaleDB, aggregaties en partities. Zeer grote vloten krijgen dedicated time-series clusters." }
+      "name": "Is Supabase geschikt voor IoT-data?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Voor pilots en vloten van gemiddelde omvang wel, met TimescaleDB, partitionering en samenvattingen. Zeer grote vloten hebben mogelijk eigen infrastructuur voor tijdreeksen nodig." }
     },
     {
       "@type": "Question",
-      "name": "Waarom is een gedeelde API-sleutel in firmware zo'n groot beveiligingsrisico?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Eén uitgelekte sleutel compromitteert direct de hele vloot en alle klanten, en kan niet worden ingetrokken zonder elk apparaat in het veld tegelijk te breken." }
+      "name": "Waarom is een gedeelde API-sleutel voor apparaten zo'n probleem?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Eén uitgelezen sleutel compromitteert elk apparaat en elke klant en kan niet worden ingetrokken zonder de hele vloot bij te werken." }
     },
     {
       "@type": "Question",
-      "name": "Welke meerwaarde biedt Manifera's industriële ervaring voor een Eindhovense startup?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ervaring met industriële en hardware-opdrachtgevers zorgt dat Manifera direct weet hoe apparaat-identiteit, zware datainname en veilige machinecommando's moeten worden ingericht." }
+      "name": "Hoe helpt de ervaring van Manifera met industriële klanten Eindhovense startups?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Werk voor klanten met industriële en energiehardware bepaalt hoe engineers omgaan met identiteit van apparaten, datavolumes en de veiligheid van commando's." }
     },
     {
       "@type": "Question",
-      "name": "Draagt een solide IoT-dashboard bij aan de online vindbaarheid van een hardwarebedrijf?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Indirect wel. Een stabiel en gecertificeerd platform levert sterke klantreferenties en casestudy's op die AI-zoeksystemen benutten voor sectoraanbevelingen." }
+      "name": "Helpt een dashboard op productieniveau de online zichtbaarheid van een hardware-startup?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Indirect: een betrouwbaar product levert reviews, casestudy's en referenties op waaruit zoek- en AI-antwoordmachines putten." }
     }
   ]
 }

@@ -21,45 +21,51 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Een online community begint meestal met een hechte groep bekenden. Iedereen is vriendelijk, berichten blijven netjes on-topic en niemand uploadt vreemde bestanden. Maar zodra het platform groeit, ontdek je op een ochtend plotseling een spam-account dat links naar nepshops verspreidt, een lid dat een ander lastigvalt via privéberichten en een foto die nooit online had mogen verschijnen. Voor iedereen die een communityplatform bouwt met Lovable, Bolt of Cursor draait applicatiebeveiliging niet alleen om het buitenhouden van hackers. Het draait erom leden tegen elkaar te beschermen, en jou als beheerder te beschermen tegen de aansprakelijkheid van wat leden plaatsen.
+Een community begint met mensen die je kent. Iedereen is vriendelijk, berichten gaan over het onderwerp en niemand uploadt iets vreemds. Dan groeit het platform, en op een ochtend vind je een spamaccount dat links naar nepwinkels plaatst, een lid dat een ander via privéberichten lastigvalt en een foto die nooit geüpload had mogen worden. Voor iedereen die met Lovable of Bolt een communityplatform bouwt, gaat de beveiliging van AI-gegenereerde apps niet alleen over data beschermen tegen buitenstaanders. Het gaat over leden beschermen tegen elkaar, en jezelf beschermen tegen wat leden plaatsen.
 
-## Waarom Gebruikerscontent een Beveiligingsrisico Is
+## Wat Gebruikerscontent tot een Beveiligingsprobleem Maakt
 
-Elke functionaliteit waarmee gebruikers zelf content kunnen publiceren, opent een route voor misbruik:
+Elke functie waarmee gebruikers iets kunnen publiceren, opent een route voor misbruik:
 
-- **Berichten en reacties** kunnen phishinglinks, malware-scripts (XSS) of wettelijk verboden content bevatten.
-- **Uploads** kunnen virussen meedragen, gigantische bestanden zijn die je hostingfactuur opblazen, privacygevoelige data van anderen bevatten of expliciet materiaal tonen.
-- **Privéberichten** kunnen worden misbruikt voor online intimidatie, stalking of oplichting.
-- **Profielen** kunnen de identiteit van echte personen of bekende organisaties nabootsen.
-- **Stemmen en reacties** kunnen worden gemanipuleerd door geautomatiseerde bots en nepaccounts.
+- **Berichten en reacties** kunnen spam, phishinglinks, scripts of illegale content bevatten.
+- **Uploads** kunnen malware, enorme bestanden, persoonsgegevens van anderen of expliciet materiaal bevatten.
+- **Privéberichten** kunnen worden gebruikt voor intimidatie of oplichting.
+- **Profielen** kunnen zich voordoen als echte personen of organisaties.
+- **Reacties en stemmen** kunnen met nepaccounts worden gemanipuleerd.
 
-Met AI gegenereerde community-apps programmeren deze functies standaard als simpele 'opslaan en tonen'-operaties: zonder limieten, zonder meldknoppen en zonder enige ingebouwde beheermogelijkheid om in te grijpen bij incidenten.
+AI-gegenereerde community-apps implementeren al deze functies meestal als simpele aanmaak- en weergaveoperaties, zonder limieten, zonder meldfunctie en zonder manier om op een probleem te reageren.
 
-## De Technische Basis van Contentbeveiliging
+## De Technische Basis van de Beveiliging van AI-Gegenereerde Apps voor Communities
 
-**Veilige weergave (sanitisation).** Tekst van gebruikers moet vóór weergave strikt worden gefilterd en geëscaped, zodat een geplaatst bericht nooit kwaadaardige JavaScript-code kan uitvoeren in de browsers van andere leden (Cross-Site Scripting, XSS). Voor rijke tekst of Markdown is een strikte allow-list van HTML-tags noodzakelijk.
+**Veilige weergave.** Gebruikerstekst moet vóór weergave worden ge-escaped of gesanitiseerd, zodat een bericht geen scripts kan uitvoeren in de browsers van andere leden. Rich text en Markdown hebben een strikte allowlist nodig.
 
-**Upload-beperkingen.** Beperk de bestandsgrootte en toegestane extensies, controleer het werkelijke MIME-type op de server in plaats van blind te vertrouwen op de bestandsnaam, sla bestanden afgeschermd op via gesigneerde URL's en strip altijd GPS- en EXIF-locatiedata uit geüploade foto's — leden realiseren zich vaak niet dat hun vakantiefoto's exact hun woonadres onthullen.
+**Controles op uploads.** Beperk grootte en bestandstypen, controleer het werkelijke contenttype in plaats van de bestandsnaam, bewaar uploads waar passend privé met ondertekende links, en verwijder locatiemetadata uit foto's — leden beseffen vaak niet dat hun foto's verraden waar ze wonen.
 
-**Rate limiting.** Beperk hoe vaak een account berichten kan plaatsen, privéberichten kan sturen of accounts kan registreren vanaf hetzelfde IP-adres. De meeste geautomatiseerde spamaanvallen worden door fatsoenlijke drempels alleen al in de kiem gesmoord.
+**Rate limits.** Beperk hoe vaak een account kan posten, berichten kan sturen en zich vanaf hetzelfde adres kan aanmelden. De meeste spamgolven worden alleen al door verstandige rate limits gestopt.
 
-**Databasedekking voor besloten ruimtes.** Toegang tot privégroepen en directe berichten moet worden afgedwongen in de database via Row Level Security (RLS). Leden mogen nooit andermans privégesprekken kunnen lezen door simpelweg een ID in de URL aan te passen.
+**Toegangsbeheer voor privéruimtes.** Privégroepen en directe berichten moeten in de database worden afgedwongen, zodat leden geen gesprekken kunnen lezen waar ze geen deel van uitmaken door een ID te veranderen.
 
-## Moderatie-Tools Die Je Vóór de Groei Moet Inrichten
+**Signalen van accounts.** Nieuwe accounts die links plaatsen, veel accounts vanaf één IP, accounts die alleen vreemden berichten sturen — eenvoudige signalen vangen het meeste misbruik.
 
-- **Meldknoppen (Report)** bij elk bericht, reactie, profiel en privébericht.
-- **Een moderatiewachtrij** waar meldingen binnenkomen met de juiste context.
-- **Handhavingsacties:** content verbergen, formele waarschuwing sturen, tijdelijk dempen (mute), schorsen of permanent verbannen — afgedwongen op de server, niet slechts visueel in de browser.
-- **Blokkeren en dempen** voor leden zelf.
-- **Een onveranderlijk audit-log** van moderatiebesluiten voor consistentie en beroepsprocedures.
+## Moderatietools die Je Nodig Hebt Voordat Je Ze Nodig Hebt
 
-## De Digital Services Act (DSA) Geldt Ook voor Kleine Platforms
+- **Meldknoppen** bij berichten, reacties, profielen en privéberichten.
+- **Een moderatiewachtrij** waarin meldingen met context binnenkomen.
+- **Acties:** content verbergen, waarschuwen, dempen, schorsen en verbannen — afgedwongen op de server, niet alleen in de interface.
+- **Blokkeren en dempen** door leden zelf.
+- **Een auditlog** van moderatieacties, voor consistentie en bezwaarprocedures.
 
-De Europese Digital Services Act (DSA) is van toepassing op hostingdiensten en online platforms die gebruikerscontent opslaan en publiceren. Hoewel micro- en kleine ondernemingen zijn vrijgesteld van de zwaarste rapportageverplichtingen, gelden de basisprincipes voor vrijwel iedereen: een duidelijke 'notice-and-action'-procedure waarmee iedereen eenvoudig illegale content kan melden, een direct bereikbaar contactpunt, transparante gebruikersvoorwaarden en — wanneer je content verwijdert of een account blokkeert — een gemotiveerde toelichting (*statement of reasons*) aan de getroffen gebruiker. Bekijk het officiële [DSA-overzicht van de Europese Commissie](https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package).
+## De Digital Services Act Geldt Ook voor Kleine Platforms
 
-## Veilige Weergave van Gebruikerscontent in Code
+De Digital Services Act (DSA) van de EU geldt voor hostingdiensten, waaronder online platforms die gebruikerscontent opslaan en publiceren. Kleine en micro-ondernemingen zijn vrijgesteld van veel van de zwaardere verplichtingen, maar voor de meeste blijven basisplichten bestaan: een manier waarop iedereen illegale content kan melden (notice-and-action), een contactpunt, duidelijke voorwaarden over wat is toegestaan en — als je content verwijdert of accounts schorst — een motivering aan de betrokken gebruiker. Je moderatietools zijn ook de manier waarop je aan deze verplichtingen voldoet. Het [DSA-overzicht van de Europese Commissie](https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package) vat samen wie wat moet doen.
 
-Zo ziet een veilige implementatie in TypeScript eruit:
+## Privacy binnen de Community
+
+Leden delen meer dan ze beseffen: namen van kinderen in oudergroepen, gezondheidsdetails in steungroepen, locaties in hobbygroepen. Denk na over de standaardzichtbaarheid (alleen voor leden in plaats van openbaar), of content door zoekmachines wordt geïndexeerd, hoe lang verwijderde content in back-ups blijft en hoe een lid alles kan verwijderen wat hij heeft geplaatst.
+
+## Gebruikerscontent Sanitiseren, Concreet
+
+Voor de beveiliging van AI-gegenereerde apps in communities is de belangrijkste technische maatregel hoe gebruikerscontent wordt weergegeven. Een veilige aanpak voor berichten in Markdown-stijl:
 
 ```typescript
 import { marked } from "marked";
@@ -75,96 +81,137 @@ export function renderPost(markdown: string) {
 }
 ```
 
-De strikte allow-list behoudt de gewenste opmaak, maar verwijdert scripts, iframes, onerror-handlers en kwaadaardige links. Voeg daarnaast automatisch `rel="nofollow noopener"` toe aan externe links van gebruikers en implementeer een strikt Content Security Policy (CSP).
+De allowlist behoudt opmaak en verwijdert scripts, event handlers, iframes en `javascript:`-links. Voeg `rel="nofollow noopener"` toe aan links van gebruikers, en combineer sanitisatie met een Content Security Policy die inline scripts blokkeert als tweede verdedigingslinie.
 
-## Rate Limits en Regels voor Nieuwe Accounts
+## Rate Limits en Regels voor Nieuwe Accounts die de Meeste Spam Stoppen
 
-| Regel | Aanbevolen instelling | Effect |
+Spamgolven volgen voorspelbare patronen, en eenvoudige regels stoppen de meeste:
+
+| Regel | Voorbeeldinstelling | Effect |
 | --- | --- | --- |
-| Registraties per IP | Max. 5 per uur | Voorkomt geautomatiseerde massaregistratie |
-| E-mailverificatie | Verplicht vóór eerste post | Blokkeert wegwerp-inboxen en spam-bots |
-| Link-beperking nieuwe leden | Geen links in eerste 24 uur of eerste 3 posts | Schakelt de primaire payload van spammers uit |
-| Plaatsingsfrequentie | Max. 10 berichten per uur per account | Voorkomt flooding van fora en feeds |
-| Privéberichten naar onbekenden | Gelimiteerd voor nieuwe accounts | Beperkt ongevraagde spam en oplichting |
-| Duplicatendetectie | Zelfde tekst in meerdere groepen tegelijk | Detecteert en blokkeert copy-paste spam direct |
+| Aanmeldingen per IP | 5 per uur | Vertraagt het in bulk aanmaken van accounts |
+| E-mailverificatie vóór posten | Verplicht | Blokkeert wegwerpaanmeldingen |
+| Linklimiet voor nieuwe accounts | Geen links in de eerste 24 uur of eerste 3 berichten | Haalt de belangrijkste spamlading weg |
+| Postfrequentie | 10 berichten per uur per account | Voorkomt overspoelen |
+| Directe berichten aan niet-contacten | Beperkt voor nieuwe accounts | Vermindert benadering door oplichters |
+| Detectie van dubbele content | Dezelfde tekst in meerdere groepen | Vangt kopieer-en-plakspam |
+
+Stem de instellingen af op het gedrag van je community, en log wanneer regels afgaan zodat moderatoren patronen kunnen zien.
+
+## Een Moderatieworkflow Ontwerpen
+
+Een goede moderatieworkflow is snel voor moderatoren en eerlijk voor leden:
+
+1. **Melden:** leden melden content met een redencategorie en een optionele toelichting.
+2. **Triage:** meldingen komen in een wachtrij, gesorteerd op ernst en aantal meldingen; illegale content en bedreigingen worden gemarkeerd.
+3. **Besluit:** moderatoren zien de content, de context, de geschiedenis van het lid en eerdere acties, en kiezen dan een actie.
+4. **Actie:** content verbergen, waarschuwen, voor een periode dempen, schorsen of verbannen — afgedwongen op de server.
+5. **Melding:** het betrokken lid ontvangt een motivering en, waar passend, een mogelijkheid tot bezwaar.
+6. **Registratie:** elke actie wordt gelogd met moderator, reden en tijdstempel.
+
+Vooral vrijwillige moderatoren hebben baat bij duidelijke richtlijnen en standaardantwoorden, die besluiten consistent houden.
+
+## Notice-and-Action onder de DSA, Geïmplementeerd
+
+Voor hostingdiensten vereist de Digital Services Act een mechanisme waarmee iedereen — lid of niet — je kan informeren over content die hij illegaal acht. In de praktijk: een openbaar toegankelijk formulier of een link bij elk stuk content; velden voor de locatie van de content, een uitleg waarom die illegaal is en contactgegevens van de melder (met uitzonderingen voor bepaalde delicten); een ontvangstbevestiging; een tijdig besluit; en informatie aan de melder over de uitkomst. Beperk je content of accounts, geef de betrokken gebruiker dan een motivering. Bewaar registraties van meldingen en besluiten; ze zijn nuttig als autoriteiten ernaar vragen.
+
+## De Privacy van Leden by Design Beschermen
+
+Privacy-instellingen bepalen hoe veilig leden zich voelen. Verstandige standaarden voor communities: profielen alleen zichtbaar voor leden; locatie hooguit op het niveau van de stad; foto's ontdaan van metadata; leden kunnen hun activiteit verbergen, anderen blokkeren en bepalen wie hen berichten kan sturen; content in gevoelige groepen uitgesloten van zoekmachines; en verwijdering die de berichten van een lid verwijdert of anonimiseert volgens een duidelijk beleid. Communiceer deze instellingen helder tijdens de onboarding.
+
+## Afbeeldingen en Uploads op Schaal
+
+Communities genereren veel afbeeldingen. Plan naast beveiligingscontroles voor opslagkosten, compressie en thumbnails, en een proces voor gemelde afbeeldingen, inclusief illegaal materiaal. Voor illegale content waarbij minderjarigen betrokken zijn, gelden in Nederland en België specifieke meldplichten en meldpunten; zorg dat moderatoren de procedure kennen en dat zulk materiaal wordt verwijderd en zo nodig voor de autoriteiten wordt bewaard, nooit verder verspreid.
+
+## Moderatie Laten Meegroeien met de Community
+
+Naarmate communities groeien, moet moderatie meeschalen: werf vertrouwde leden als moderatoren met beperkte rollen, geef groepseigenaren tools om hun eigen groepen te modereren, gebruik geautomatiseerde markeringen voor duidelijke spam terwijl mensen betrokken blijven bij afwegingen, en houd de werklast van moderatoren in de gaten. Een community die sneller groeit dan haar moderatiecapaciteit, wordt meestal onveiliger voordat iemand het merkt.
+
+## De Gezondheid van de Community Meten
+
+Volg indicatoren naast het aantal leden: meldingen per duizend berichten, tijd tot afhandeling van meldingen, het aandeel nieuwe accounts dat spam plaatst, herhaaldelijke overtreders, ledenbehoud in groepen en blokkeeractiviteit. Stijgende meldingen bij stabiele afhandeltijden wijzen op gezonde waakzaamheid; stijgende afhandeltijden wijzen op overbelaste moderatoren.
+
+## Intimidatie Goed Afhandelen
+
+Intimidatie via privéberichten is een van de meest verontrustende ervaringen voor communityleden en een van de moeilijkste voor oprichters om zonder tools af te handelen. Geef leden de mogelijkheid om direct vanuit een gesprek te blokkeren en te melden; sta moderatoren toe gemelde gesprekken (en alleen die) te bekijken met toestemming van de melder; schort berichtrechten snel op terwijl een zaak wordt beoordeeld; en bewaar bewijs in plaats van accounts direct te verwijderen, omdat verwijdering ook het dossier wist dat nodig is voor bezwaar of een aangifte bij de politie. Schrijf een kort beleid over wat er na een melding gebeurt, en volg het consequent.
+
+## Communityrichtlijnen als Onderdeel van het Product
+
+Duidelijke richtlijnen verminderen de werklast van moderatie en maken besluiten verdedigbaar. Houd ze kort, specifiek en zichtbaar: wat welkom is, wat niet, wat er gebeurt als regels worden overtreden, hoe je meldt en hoe je bezwaar maakt. Link ze vanaf de aanmelding, de schermen om te posten en moderatiemeldingen. Onder de DSA moeten je voorwaarden contentbeperkingen en moderatieprocedures in duidelijke taal beschrijven — richtlijnen zijn de praktische vorm van die verplichting.
+
+## Commerciële Functies in Communities
+
+Veel communities voegen handel toe: verkoop van patronen, betaalde groepen, tickets voor evenementen, verkoop tussen leden. Elk daarvan introduceert betaalstromen, consumentenregels en mogelijke fraude. Behandel ze met dezelfde zorg als elke marktplaats: betalingen geverifieerd via webhooks, duidelijke voorwaarden over wie aan wie verkoopt, afhandeling van geschillen en informatie over handelaren waar leden beroepsmatig verkopen. Een community die plotseling transacties host zonder deze basis, trekt snel oplichters aan.
+
+## Lanceringschecklist voor Communityplatforms
+
+Vóór je een community breed openstelt: sanitisatie van content en CSP aanwezig; limieten op uploads en verwijderen van metadata; rate limits en regels voor nieuwe accounts; privégroepen en berichten afgedwongen in de database; meld-, blokkeer- en moderatietools werkend; formulier voor notice-and-action gepubliceerd; richtlijnen en voorwaarden live; moderatoren geïnstrueerd; logging en meldingen actief; en een plan voor het afhandelen van illegale content. Met deze zaken op hun plek brengt groei meer gesprek in plaats van meer chaos.
+
+## De Rol van de Oprichter in een Veilige Community
+
+Oprichters van kleine communities worden vaak automatisch moderator en handelen 's avonds laat meldingen af naast al het andere. Dat houdt maar even stand. Investeer vroeg in de tools hierboven, werf een paar vertrouwde leden als moderator, leg richtlijnen en procedures vast, en beoordeel elke maand de gezondheid van de community. Je rol verschuift van brandweerman naar hoeder: de toon zetten, de besluiten van moderatoren steunen en bepalen wanneer regels moeten veranderen. Communities waarin leden zich beschermd voelen, groeien via mond-tot-mondreclame, omdat mensen vrienden uitnodigen in ruimtes die ze vertrouwen. Dat vertrouwen rust op het onopvallende werk van sanitisatie, rate limits, moderatietools en duidelijke regels — precies de delen die een AI-tool weglaat als hij in een middag een prachtige community-app genereert.
+
+## Waar Je Begint
+
+Kun je deze week maar drie dingen doen, sanitiseer dan alle gebruikerscontent, voeg rate limits toe voor nieuwe accounts en zet een meldknop bij elk bericht en elk privébericht. Die drie wijzigingen nemen het grootste deel van het risico en het grootste deel van de spam weg.
 
 ## Waar LaunchStudio Past
 
-LaunchStudio voegt de cruciale security- en moderatielaag toe die AI-tools standaard overslaan: veilige rendering van teksten en links, gecontroleerde bestandsuploads met metadata-stripping, rate limiting, database-geïsoleerde privégroepen, complete meld- en moderatiestromen met server-afgedwongen sancties, audit-logging en een DSA-conforme 'notice-and-action'-procedure. Zonder dat er gesleuteld hoeft te worden aan de community-ervaring die je al hebt ontworpen.
+LaunchStudio voegt de laag van beveiliging en moderatie toe die communityoprichters overslaan: veilige weergave, controles op uploads, rate limits, privéruimtes afgedwongen in de database, workflows voor melden en modereren met handhaving aan de serverkant, auditlogging en flows voor notice-and-action die klaar zijn voor de DSA — zonder de community die je bouwde opnieuw te ontwerpen.
 
-LaunchStudio wordt ondersteund door Manifera — vertrouwd door partijen als Vodafone, TNO en CFLW — waarvan de engineers in Ho Chi Minhstad al meer dan 11 jaar veilige platformen met gebruikersinteractie bouwen, met accountmanagement vanuit Amsterdam en Singapore. Bekijk [Manifera's portfolio](https://www.manifera.com/portfolio/).
+LaunchStudio wordt ondersteund door Manifera — vertrouwd door Vodafone, TNO en CFLW — wiens engineers in Ho Chi Minh-stad al meer dan 11 jaar platforms voor gebruikers bouwen, met klantcontact vanuit Amsterdam en Singapore. Zie [het portfolio van Manifera](https://www.manifera.com/portfolio/).
 
-Groeit jouw online community sneller dan je handmatig kunt modereren? [Deel je project met ons](https://launchstudio.eu/nl/#contact) — we reageren binnen één werkdag.
+Groeit je community sneller dan je kunt modereren, [beschrijf dan je project](https://launchstudio.eu/nl/#contact) — we reageren binnen één werkdag.
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Een Breicommunity Die Ongewenst Publiek Trok
+### Een AI-Native Oprichter in Actie: Een Breicommunity die het Verkeerde Publiek Aantrok
 
-Lieke Mertens, breiontwerper in Zutphen, bouwde Breiclub in Lovable: een sfeervol communityplatform waar breiliefhebbers projecten delen, breipatronen kopen van zelfstandige ontwerpers, vragen stellen in themagroepen en elkaar privéberichten sturen. Binnen een jaar groeide de club naar ruim 9.000 leden in Nederland en Vlaanderen.
+Lieke Mertens, breiontwerper in Zutphen, bouwde Breiclub in Lovable: een community waarin breiers projecten delen, vragen stellen in groepen, elkaar berichten sturen en patronen kopen bij zelfstandige ontwerpers. Binnen een jaar groeide ze naar ongeveer 9.000 leden in Nederland en Vlaanderen.
 
-De snelle groei bracht echter problemen met zich mee waar Lieke technisch geen enkel gereedschap voor had. Geautomatiseerde spam-accounts overspoelden de fora met links naar dubieuze buitenlandse garenwebshops sneller dan Lieke ze handmatig kon wissen. Een mannelijk lid begon vrouwelijke leden stelselmatig lastig te vallen via privéberichten; de enige manier om dat te stoppen was zijn account handmatig uit de Supabase-database te verwijderen — waarmee tevens al het bewijsmateriaal voor de politie werd gewist. Foto's van breiwerken bevatten ongefilterde GPS-coördinaten van de woonhuizen van leden. Een kwaadaardig forumbericht met een verborgen `<script>`-tag zorgde er tijdelijk voor dat bezoekers van één groep werden doorgelinkt naar een phishingpagina. Bovendien bleek iedereen de afgeschermde privégroep "alleen voor ontwerpers" te kunnen lezen door simpelweg het groeps-ID in de URL aan te passen.
+De groei bracht problemen mee waarvoor Lieke geen tools had. Spamaccounts plaatsten links naar winkels met namaakgaren sneller dan zij ze kon verwijderen. Een lid viel een ander via privéberichten lastig, en de enige manier om dat te stoppen was het account van de dader in de database te verwijderen — waarmee ook het bewijs verdween. Projectfoto's bevatten de gps-locaties van de huizen van leden. Een bericht met een scripttag stuurde bezoekers in één groep korte tijd door, en iedereen kon de besloten groep "alleen voor ontwerpers" lezen door het ID ervan in de URL te veranderen.
 
-In negen werkdagen tijd implementeerden de engineers van LaunchStudio een complete beveiligings- en moderatiestructuur: alle gebruikerscontent werd gesaneerd via een strikte DOMPurify allow-list; foto-uploads kregen automatische EXIF-metadata stripping en groottebeperkingen; er kwamen rate limits voor nieuwe accounts inclusief een tijdelijke link-blokkade; de toegang tot privégroepen en directe berichten werd waterdicht afgedwongen via Row Level Security in PostgreSQL; er werden meldknoppen bij alle content geplaatst gekoppeld aan een overzichtelijk moderatiedashboard; sancties (dempen, schorsen, blokkeren) werden server-side ingericht inclusief formele motivering; leden kregen een blokkeerfunctie; en er kwam een openbaar notice-and-action meldformulier.
+In negen werkdagen sanitiseerden de engineers van LaunchStudio alle gebruikerscontent met een strikte allowlist, verwijderden ze fotometadata en voegden ze uploadlimieten toe, voerden ze rate limits in voor nieuwe accounts en het plaatsen van links, dwongen ze groepslidmaatschap en berichten af in de database, bouwden ze meldknoppen, een moderatiewachtrij, acties om te dempen, te schorsen en te verbannen met motiveringen, blokkeren door leden en een auditlog, en voegden ze een openbaar meldformulier voor illegale content toe.
 
-**Resultaat:** Het aantal spam-incidenten daalde binnen een week met meer dan 90%. Lieke en twee vrijwillige moderators handelen meldingen nu in minder dan twintig minuten per dag af via het dashboard, en Breiclub groeide in de daaropvolgende winter met een gerust hart door naar ruim 14.000 actieve leden.
+**Resultaat:** Spam daalde binnen een week met meer dan 90%, vooral door rate limits en regels voor nieuwe accounts. Lieke en twee vrijwillige moderatoren handelen meldingen nu in ongeveer twintig minuten per dag af, en Breiclub ging de winter daarna voorbij de 14.000 leden.
 
-> *"Ik bouwde een gezellige plek voor breiliefhebbers en vergat even dat een plek voor mensen helaas ook een plek is voor mensen met slechte bedoelingen."*
+> *"Ik bouwde een plek voor breiers en vergat dat een plek voor mensen ook een plek is voor mensen die zich misdragen."*
 > — **Lieke Mertens, Oprichter, Breiclub (Zutphen)**
 
-**Kosten & Tijdlijn:** € 2.300 (Launch Ready-pakket: contentbeveiliging, uploadsanitisatie, rate limits, databasetoegang en moderatietools) — afgerond in 9 werkdagen.
+**Kosten & Tijdlijn:** € 2.300 (Launch Ready-pakket: contentbeveiliging, uploads, rate limits, toegangsbeheer en moderatietools) — afgerond in 9 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Wat zijn de grootste beveiligingsrisico's bij een met AI gebouwd communityplatform?
+### Wat zijn de grootste beveiligingsrisico's in een AI-gebouwd communityplatform?
 
-Ongefilterde gebruikerscontent die kwaadaardige scripts uitvoert (XSS), uploads zonder groottebeperking of metadata-stripping, privégroepen die alleen in de frontend zijn afgeschermd en het ontbreken van rate limits tegen geautomatiseerde spam-accounts.
+Niet-gesanitiseerde gebruikerscontent die scripts uitvoert, uploads zonder limieten of verwijdering van metadata, privéruimtes die alleen in de interface worden afgedwongen, en geen rate limits tegen spam en nepaccounts.
 
-### Is de Digital Services Act (DSA) van toepassing op een kleine community?
+### Is de Digital Services Act van toepassing op mijn kleine community?
 
-Ja. Vrijwel elk platform dat content van gebruikers host en openbaar maakt, heeft basisverplichtingen onder de DSA, zoals het bieden van een laagdrempelige meldprocedure voor illegale content (notice-and-action) en het geven van een toelichting bij moderatie-ingrepen.
+De meeste platforms die gebruikerscontent hosten, hebben minstens basisplichten onder de DSA, zoals notice-and-action en motiveringen, ook al zijn kleine en micro-ondernemingen vrijgesteld van veel zwaardere verplichtingen.
 
-### Welke minimale moderatie-tools heeft een groeiend platform nodig?
+### Hoeveel moderatietools heeft een kleine community nodig?
 
-Minimaal: duidelijke meldknoppen bij elk bericht, een centrale moderatiewachtrij, de mogelijkheid om accounts server-side te dempen of te schorsen, een blokkeerfunctie voor leden onderling en een onveranderlijke audit-log van genomen besluiten.
+Minimaal: meldknoppen, een moderatiewachtrij, acties om te verbergen en te schorsen die op de server worden afgedwongen, blokkeren door leden en een auditlog.
 
-### Hoe waarborgt Manifera de veiligheid van platforms met user-generated content?
+### Hoe pakt Manifera platforms met gebruikerscontent aan?
 
-Door elk stukje gebruikersinvoer standaard als onbetrouwbaar te beschouwen en alle autorisaties en moderatieacties strikt op server- en databaseniveau af te dwingen en te loggen — werkwijzen gebaseerd op ruim 11 jaar software-ervaring.
+Door elke gebruikersinvoer als onbetrouwbaar te behandelen en elke moderatieactie als iets wat op de server moet worden afgedwongen en gelogd — praktijken uit meer dan tien jaar bouwen van systemen voor gebruikers.
 
-### Moet community-content openbaar vindbaar zijn voor zoekmachines?
+### Moet communitycontent zichtbaar zijn voor zoekmachines?
 
-Dat hangt af van het karakter van de community. Openbare, goed gemodereerde discussies trekken waardevolle nieuwe leden aan via zoekmachines en AI-zoekmodellen; gevoelige supportgroepen moeten echter altijd achter een inlog blijven en worden uitgesloten van webcrawlers via `noindex`.
+Dat hangt af van de verwachtingen van je leden. Openbare, goed gemodereerde content kan via zoekmachines en AI-antwoorden nieuwe leden aantrekken; gevoelige groepen horen alleen voor leden te zijn en van indexering te worden uitgesloten.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat zijn de grootste beveiligingsrisico's bij een met AI gebouwd communityplatform?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ongefilterde HTML (XSS), uploads met locatiedata, frontend-only afscherming van privégroepen en ontbrekende rate limits." }
-    },
-    {
-      "@type": "Question",
-      "name": "Is de Digital Services Act (DSA) van toepassing op een kleine community?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja, de basisplichten zoals notice-and-action en motivering van moderatiebesluiten gelden voor vrijwel elk platform dat gebruikerscontent host." }
-    },
-    {
-      "@type": "Question",
-      "name": "Welke minimale moderatie-tools heeft een groeiend platform nodig?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Meldknoppen, een moderatiewachtrij, server-afgedwongen sancties (mute/ban), lid-blokkades en een audit-log." }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe waarborgt Manifera de veiligheid van platforms met user-generated content?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Door input als onbetrouwbaar te behandelen en alle rechten en sancties op server- en databaseniveau te verankeren." }
-    },
-    {
-      "@type": "Question",
-      "name": "Moet community-content openbaar vindbaar zijn voor zoekmachines?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Openbare en goed gemodereerde fora helpen de vindbaarheid enorm; gevoelige onderwerpen horen afgeschermd te worden met noindex." }
-    }
+    { "@type": "Question", "name": "Wat zijn de grootste beveiligingsrisico's in een AI-gebouwd communityplatform?", "acceptedAnswer": { "@type": "Answer", "text": "Niet-gesanitiseerde content, onbeperkte uploads, privéruimtes alleen in de interface en ontbrekende rate limits." } },
+    { "@type": "Question", "name": "Is de Digital Services Act van toepassing op mijn kleine community?", "acceptedAnswer": { "@type": "Answer", "text": "De meeste hostingplatforms hebben basisplichten zoals notice-and-action en motiveringen, al zijn kleine bedrijven vrijgesteld van zwaardere verplichtingen." } },
+    { "@type": "Question", "name": "Hoeveel moderatietools heeft een kleine community nodig?", "acceptedAnswer": { "@type": "Answer", "text": "Meldknoppen, een moderatiewachtrij, op de server afgedwongen acties, blokkeren door leden en een auditlog." } },
+    { "@type": "Question", "name": "Hoe pakt Manifera platforms met gebruikerscontent aan?", "acceptedAnswer": { "@type": "Answer", "text": "Alle invoer is onbetrouwbaar, en moderatie wordt op de server afgedwongen en gelogd." } },
+    { "@type": "Question", "name": "Moet communitycontent zichtbaar zijn voor zoekmachines?", "acceptedAnswer": { "@type": "Answer", "text": "Openbare, gemodereerde content kan leden aantrekken; gevoelige groepen horen alleen voor leden en niet geïndexeerd te zijn." } }
   ]
 }
 </script>

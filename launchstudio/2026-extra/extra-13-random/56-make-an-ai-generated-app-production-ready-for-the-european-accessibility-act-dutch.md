@@ -21,138 +21,176 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Interfaces die door AI worden gegenereerd zien er op het eerste oog gelikt en modern uit. Tegelijkertijd sluiten ze vaak mensen uit die een schermlezer (screenreader) gebruiken, uitsluitend navigeren via het toetsenbord, grotere letters nodig hebben of tekst met laag contrast niet kunnen lezen. Sinds juni 2025 stelt de Europese Toegankelijkheidswet (*European Accessibility Act*, EAA) digitale toegankelijkheid wettelijk verplicht voor een groot aantal consumentgerichte diensten in de EU, waaronder webshops en boekingsplatforms. Voor ondernemers die een met AI gegenereerde app productierijp willen maken, is toegankelijkheid verschoven van een vrijblijvende wens naar een bewuste zakelijke beslissing.
+AI-gegenereerde interfaces zien er verzorgd uit. Ze laten ook vaak mensen in de steek die een schermlezer gebruiken, met het toetsenbord navigeren, grotere tekst nodig hebben of kleuren met weinig contrast niet kunnen onderscheiden. Sinds juni 2025 heeft de Europese Toegankelijkheidswet (European Accessibility Act, EAA) toegankelijkheid een wettelijke eis gemaakt voor veel digitale diensten voor consumenten in de EU, waaronder e-commerce. Voor oprichters die een AI-gegenereerde app productierijp willen maken, is toegankelijkheid verschoven van "leuk om te hebben" naar een beslissing die je bewust moet nemen.
 
-*Dit artikel biedt een praktisch technisch overzicht en geldt niet als juridisch advies.*
+Dit is een praktische gids, geen juridisch advies.
 
-## Beslissing 1: Is de EAA op Jouw Bedrijf van Toepassing?
+## Beslissing 1: Is de EAA op Jou van Toepassing?
 
-De EAA heeft betrekking op specifieke producten en diensten, waaronder e-commercediensten (het online verkopen van producten of diensten aan consumenten), consumentenbankieren, e-books, passagiersvervoer en elektronische communicatiediensten. De richtlijn is sinds 28 juni 2025 van kracht en in de Nederlandse wetgeving verankerd.
+De EAA dekt specifieke producten en diensten, waaronder e-commercediensten (online goederen of diensten aan consumenten verkopen), bankdiensten voor consumenten, e-books, diensten voor personenvervoer en elektronische communicatie. Ze geldt vanaf 28 juni 2025 en is omgezet in nationaal recht — in Nederland via wijzigingen in bestaande wetgeving.
 
-Twee aspecten zijn voor ondernemers doorslaggevend:
+Twee punten zijn voor oprichters het belangrijkst:
 
-- **Consumentgerichte e-commerce** — webshops, boekingsmodules en bestelplatforms waar consumenten aankopen doen — valt rechtstreeks onder de wet.
-- **Micro-ondernemingen die diensten verlenen** — organisaties met minder dan 10 werknemers én een jaaromzet of balanstotaal van maximaal 2 miljoen euro — zijn vrijgesteld van de verplichtingen voor diensten.
+- **E-commerce voor consumenten** — webwinkels, boekings- en bestelplatforms waar consumenten kopen — valt grotendeels binnen de reikwijdte.
+- **Micro-ondernemingen die diensten leveren** — minder dan 10 medewerkers en een jaaromzet of balanstotaal van maximaal € 2 miljoen — zijn vrijgesteld van de eisen voor diensten.
 
-Een solo-ondernemer met een kleine webwinkel kan vandaag dus vrijgesteld zijn, maar bedrijfsgroei brengt daar verandering in. Bovendien eisen zakelijke B2B-klanten, overheden en grote distributiepartners steeds vaker digitale toegankelijkheid van hun toeleveranciers, ongeacht bedrijfsgrootte. Veel oprichters kiezen er daarom voor om direct aan de norm te voldoen in plaats van de applicatie later tegen aanzienlijk hogere kosten te moeten verbouwen.
+De webwinkel van een solo-oprichter is vandaag dus misschien vrijgesteld, maar groei verandert dat, en B2B-klanten, publieke inkopers en partners eisen steeds vaker toegankelijkheid, ongeacht de wet. Veel oprichters kiezen ervoor vroeg aan de standaard te voldoen in plaats van later achteraf aan te passen.
 
-## Beslissing 2: Welke Standaard Moet Je Volgen?
+## Beslissing 2: Welke Standaard Volg Je?
 
-In de praktijk voldoe je aan de eisen van de EAA voor websites en apps door de geharmoniseerde Europese norm **EN 301 549** te volgen, waarin de internationale richtlijnen van **WCAG 2.1 niveau AA** integraal zijn opgenomen. Dit is de standaard die wereldwijd door softwareontwikkelaars en audit-tools wordt gehanteerd. Richten op WCAG 2.1 AA (of WCAG 2.2 AA) is de enige juiste en veilige technische keuze.
+In de praktijk wordt aan de eisen van de EAA voor websites en apps voldaan door de geharmoniseerde Europese norm EN 301 549 te volgen, die WCAG 2.1 niveau AA omvat. WCAG is de referentie die de meeste ontwikkelaars en tools gebruiken. Mikken op WCAG 2.1 AA (of 2.2 AA) is de verstandige keuze.
 
-## Beslissing 3: Wat Moet Er Worden Aangepast in een AI-Gegenereerde App?
+## Beslissing 3: Wat Moet Er Worden Opgelost om een AI-Gegenereerde App Productierijp te Maken?
 
-AI-codeertools herhalen consequent dezelfde toegankelijkheidsfouten. De meest voorkomende knelpunten zijn:
+AI-gegenereerde interfaces herhalen dezelfde gaten in toegankelijkheid. De meest voorkomende:
 
-- **Ontbrekende tekstalternatieven.** Afbeeldingen, iconen en knoppen die enkel uit een pictogram bestaan zonder alt-tekst of `aria-label`; een schermlezer zegt simpelweg "knop" zonder enige betekenis.
-- **Formuliervelden zonder labels.** Tijdelijke plaatshouders (placeholders) worden als veldlabel gebruikt; zodra de gebruiker begint te typen verdwijnt de tekst en screenreaders kondigen ze onbetrouwbaar aan.
-- **Te laag kleurcontrast.** Lichtgrijze tekst op een witte achtergrond ziet er strak uit, maar faalt genadeloos op minimale contrastverhoudingen.
-- **Toetsenbord-vallen en onzichtbare focus.** Zelfgebouwde dropdown-menu's, modals en datumkiezers die niet met de Tab-toets bediend kunnen worden, of blauwe focusranden die met `outline: none` zijn gewist voor het design.
-- **Klikbare div's.** Elementen die eruitzien als knoppen maar technisch zijn opgebouwd als een `<div>`, waardoor toetsenborden en hulpsoftware ze volledig negeren.
-- **Ontbrekende semantische structuur.** Geen logische kophiërarchie (H1, H2, H3), landmarks (`<main>`, `<nav>`) of unieke paginatitels, waardoor navigatie via voorleessoftware een doolhof wordt.
-- **Foutmeldingen die niet worden voorgelezen.** Invoervelden die alleen rood oplichten bij een fout, zonder gekoppelde tekstuele toelichting die door een schermlezer wordt uitgesproken.
-- **Animaties en tijdsdruk.** Carrousels die niet gepauzeerd kunnen worden, of sessie-timeouts die zonder waarschuwing verlopen.
+- **Ontbrekende tekstalternatieven.** Afbeeldingen, iconen en knoppen met alleen een icoon zonder alt-tekst of toegankelijk label; schermlezers kondigen "knop" aan zonder betekenis.
+- **Formuliervelden zonder labels.** Placeholders die als label worden gebruikt, verdwijnen tijdens het typen en worden niet betrouwbaar voorgelezen.
+- **Laag contrast.** Modieuze lichtgrijze tekst op wit voldoet niet aan de contrasteisen.
+- **Toetsenbordvallen en onzichtbare focus.** Eigen dropdowns, modals en datumkiezers die niet met het toetsenbord te bedienen zijn, of focusranden die om esthetische redenen zijn verwijderd.
+- **Klikbare divs.** Elementen die eruitzien als knoppen maar geen knoppen zijn, zodat toetsenborden en hulptechnologie ze negeren.
+- **Ontbrekende structuur.** Geen goede koppen, landmarks of paginatitels, waardoor navigeren met een schermlezer moeilijk is.
+- **Foutmeldingen die niet worden voorgelezen.** Validatiefouten die alleen in rood worden getoond, niet aan velden gekoppeld en niet aangekondigd.
+- **Beweging en timing.** Carrousels die niet kunnen worden gepauzeerd, sessie-time-outs zonder waarschuwing.
 
-Het goede nieuws: veruit de meeste van deze problemen kunnen technisch worden verholpen zonder het visuele ontwerp van je applicatie aan te tasten.
+De meeste hiervan zijn op te lossen zonder het visuele ontwerp te veranderen.
 
 ## Beslissing 4: Hoe Ga Je Testen?
 
-Geautomatiseerde scan-tools (zoals axe-core of Google Lighthouse) ontdekken ongeveer een derde tot de helft van alle toegankelijkheidsproblemen — met name contrastfouten, ontbrekende labels en semantische tags. De rest vereist handmatige verificatie: doorloop elke bedrijfskritieke gebruikersstroom uitsluitend met het toetsenbord (Tab, Enter, Spatie), test met een schermlezer (VoiceOver op Apple-apparaten of NVDA op Windows), zoom de browser in naar 200% en controleer hoe foutmeldingen worden gepresenteerd. Bepaal welke flows cruciaal zijn — doorgaans catalogus bekijken, productdetails, winkelwagen, checkout, accountbeheer en contact — en controleer deze grondig.
+Geautomatiseerde tools (zoals axe of Lighthouse) vangen ruwweg een derde tot de helft van de problemen — ontbrekende labels, contrast, structuur. De rest vraagt handmatige controle: navigeer elke kritieke flow alleen met het toetsenbord, test met een schermlezer (VoiceOver op Mac of iPhone, NVDA op Windows), zoom in tot 200% en controleer de foutafhandeling. Beslis welke flows kritiek zijn — doorgaans bladeren, productdetails, winkelmand, checkout, account en contact — en test die grondig.
 
 ## Beslissing 5: Wat Ga Je Publiceren?
 
-Diensten die onder de wet vallen, moeten verantwoording afleggen over hoe ze aan de toegankelijkheidseisen voldoen, doorgaans via een openbare toegankelijkheidsverklaring (*accessibility statement*). Zelfs als je bedrijf wettelijk is vrijgesteld, is een verklaring met je huidige nalevingsniveau, bekende verbeterpunten en een laagdrempelig contactpunt voor feedback een teken van professionele volwassenheid dat door klanten en zakelijke partners zeer wordt gewaardeerd.
+Diensten binnen de reikwijdte moeten informatie geven over hoe ze aan de toegankelijkheidseisen voldoen, gewoonlijk in een toegankelijkheidsverklaring. Ook buiten de reikwijdte van de EAA is een verklaring die je conformiteitsniveau, bekende beperkingen en een contactroute voor toegankelijkheidsproblemen beschrijft een goede praktijk die door kopers wordt gewaardeerd.
 
-## Beslissing 6: Hoe Voorkom Je Regressie bij Toekomstige AI-Updates?
+## Beslissing 6: Hoe Houd Je het Toegankelijk?
 
-AI-tools introduceren bij elke nieuwe prompt of hergeneratie vrolijk dezelfde toegankelijkheidsproblemen opnieuw. Voeg daarom geautomatiseerde toegankelijkheidschecks toe aan je continuous integration (CI) pipeline, neem toegankelijkheidseisen op in de systeemprompts of projectregels van je AI-tool ("gebruik altijd semantische `<button>` elementen met toegankelijke namen; verwijder nooit focusringen"), en test de kernflows opnieuw na grote updates.
+AI-tools kunnen bij elke regeneratie toegankelijkheidsproblemen opnieuw introduceren. Voeg geautomatiseerde toegankelijkheidscontroles toe aan je CI, neem toegankelijkheid op in de projectregels van je AI-tool ("alle interactieve elementen moeten native knoppen of links met een toegankelijke naam zijn"), en controleer kritieke flows opnieuw na grote wijzigingen.
 
-## Waarom Toegankelijkheid Ook Zakelijk Slim Is
+## Waarom Het Ook Zakelijk Verstandig Is
 
-Ongeveer één op de vijf inwoners van de Europese Unie heeft een blijvende functiebeperking, en nog eens miljoenen anderen ervaren tijdelijke of situationele beperkingen (zoals zonlicht op een telefoonscherm of een gebroken arm). Toegankelijke afrekenprocessen converteren simpelweg beter voor iedereen: duidelijke labels, zichtbare focus, hoog contrast en begrijpelijke foutmeldingen verlagen het percentage afgebroken bestellingen. Bovendien helpt een zuivere, semantische HTML-structuur zoekmachines en AI-zoeksystemen om jouw pagina's perfect te indexeren.
+Ongeveer één op de vijf mensen in de EU heeft een vorm van beperking, en veel meer mensen hebben tijdelijke of situationele beperkingen. Toegankelijke checkouts converteren beter voor iedereen: duidelijke labels, zichtbare focus, goed contrast en begrijpelijke foutmeldingen verminderen het aantal afhakers. Toegankelijke structuur helpt ook zoekmachines en AI-antwoordmachines je pagina's te begrijpen.
 
-## WCAG-Richtlijnen Vertalen naar AI-Componenten
+## WCAG Koppelen aan AI-Gegenereerde Componenten
 
-Om een AI-gegenereerde app productierijp te maken voor toegankelijkheid, helpt het om te weten op welke criteria AI-interfaces het vaakst falen en hoe de oplossing eruitziet:
+Om een AI-gegenereerde app productierijp te maken voor toegankelijkheid, helpt het te weten op welke WCAG-succescriteria AI-gebouwde interfaces het vaakst falen en hoe je dat oplost:
 
-| WCAG-criterium (2.1/2.2 AA) | Typische fout in AI-interfaces | Technische oplossing |
+| WCAG-criterium (2.1/2.2 AA) | Typische fout in AI-gebouwde interfaces | Oplossing |
 | --- | --- | --- |
-| 1.1.1 Niet-tekstuele content | Icoonknoppen zonder tekst; afbeeldingen zonder alt | `aria-label` op icoonknoppen; beschrijvende alt-tekst |
-| 1.3.1 Info en relaties | Div's opgemaakt als koppen; invoervelden zonder label | Semantische koppen (`<h1>`-`<h6>`); `<label>` gekoppeld met `for`/`id` |
-| 1.4.3 Contrast (minimum) | Lichtgrijze tekst op witte achtergrond | Tekstkleur donkerder maken naar minimaal 4.5:1 |
-| 1.4.11 Contrast van niet-tekst | Vage randen van invoervelden en focusringen | Duidelijk zichtbare randen en focusindicatoren |
-| 2.1.1 Toetsenbord | Zelfgebouwde custom select-boxen en kalenders | Toegankelijke primitieven of correcte toetsenbord-listeners |
-| 2.4.3 Focusvolgorde | Modals die focus niet vasthouden of herstellen | Focus-trap en focus-restore in dialogen |
-| 2.4.7 Focus zichtbaar | `outline: none` overal in CSS gezet | Duidelijke `:focus-visible` stijlen toevoegen |
-| 3.3.1 Foutidentificatie | Velden worden alleen rood zonder uitleg | Tekstuele foutmeldingen gekoppeld via `aria-describedby` |
-| 4.1.2 Naam, rol, waarde | Klikbare `<div>`- of `<span>`-tags | Echte `<button>`- en `<a>`-tags gebruiken |
-| 4.1.3 Statusberichten | Toast-meldingen worden niet opgemerkt | Toevoegen van `aria-live="polite"` gebieden |
+| 1.1.1 Niet-tekstuele content | Iconknoppen zonder naam; afbeeldingen zonder alt | `aria-label` op iconknoppen; betekenisvolle alt-tekst |
+| 1.3.1 Info en relaties | Divs opgemaakt als koppen; invoervelden zonder labels | Semantische koppen; `<label>` gekoppeld aan invoervelden |
+| 1.4.3 Contrast (minimum) | Lichtgrijze tekst op wit | Tekst donkerder maken tot minstens 4,5:1 |
+| 1.4.11 Contrast van niet-tekstuele content | Vage randen van invoervelden, focusranden | Sterkere randen en focusindicatoren |
+| 2.1.1 Toetsenbord | Eigen dropdowns en datumkiezers | Toegankelijke componentbibliotheken of correcte toetsenbordafhandeling |
+| 2.4.3 Focusvolgorde | Modals die focus niet vasthouden of teruggeven | Focusbeheer in dialogen |
+| 2.4.7 Focus zichtbaar | Overal `outline: none` | Zichtbare focusstijlen |
+| 3.3.1 Foutidentificatie | Fouten alleen in rood getoond | Tekstuele fouten gekoppeld aan velden |
+| 4.1.2 Naam, rol, waarde | Klikbare divs | Native knoppen en links |
+| 4.1.3 Statusberichten | Toasts die niet worden aangekondigd | `aria-live`-regio's |
 
-Het gebruik van beproefde 'headless' componentenbibliotheken — zoals Radix UI of React Aria primitives, waar veel moderne AI-builders gelukkig al deels op leunen — lost veel van deze toetsenbord- en focusproblemen direct bij de basis op.
+De meeste oplossingen zijn kleine codewijzigingen. Een toegankelijke componentbibliotheek gebruiken — bijvoorbeeld primitieven van Radix UI of React Aria, waarop veel AI-tools al bouwen — lost veel toetsenbord- en focusproblemen in één keer op.
 
-## Toegankelijkheid Borgen in het Ontwikkelproces
+## Testen met Echte Hulptechnologie
 
-Om te voorkomen dat toegankelijkheid verwatert zodra je weer nieuwe functies genereert met AI:
+Geautomatiseerde tools vinden een deel van de problemen; handmatig testen vindt de rest. Een praktische handmatige test voor elke kritieke flow:
 
-- **Linting:** integreer `eslint-plugin-jsx-a11y` om veelvoorkomende fouten direct in je code-editor te signaleren.
-- **Geautomatiseerde tests:** neem `axe-playwright` of Cypress-axe op in je end-to-end testsuite voor kritieke routes.
-- **Projectregels voor AI:** formuleer regels als: "Gebruik altijd native HTML5-formulierelementen; elk inputveld moet een zichtbaar label hebben; overschrijf focusstijlen nooit met none."
-- **Design tokens:** definieer een kleurenpalet waarin alle tekstcombinaties standaard voldoen aan de contrastnorm van 4.5:1.
+1. **Alleen toetsenbord:** tab door de hele flow. Kun je alles bereiken en bedienen? Is de focus altijd zichtbaar? Gaat de focus logisch dialogen in en uit?
+2. **Schermlezer:** luister met VoiceOver (macOS/iOS) of NVDA (Windows) naar de pagina. Worden koppen, knoppen, formuliervelden en fouten betekenisvol aangekondigd?
+3. **Zoom naar 200% en 400%:** loopt de content door zonder horizontaal scrollen of overlappen?
+4. **Instellingen voor minder beweging en hoog contrast:** blijft de interface bruikbaar?
+
+Leg de resultaten per flow vast. Herhaal na grote ontwerpwijzigingen.
+
+## Een Toegankelijkheidsverklaring Schrijven
+
+Een toegankelijkheidsverklaring beschrijft de standaard waarop je mikt (bijvoorbeeld WCAG 2.1 AA), de huidige status van conformiteit, bekende beperkingen met geplande oplossingen en data, hoe de verklaring tot stand kwam (zelfevaluatie of externe audit) en een contactpunt voor toegankelijkheidsproblemen met een verwachte reactietijd. Houd haar eerlijk en gedateerd. Een verklaring die twee bekende problemen en een plan noemt, wekt meer vertrouwen dan een die volledige conformiteit claimt zonder bewijs.
+
+## Toegankelijkheid in het Ontwikkelproces
+
+Om te voorkomen dat toegankelijkheid achteruitgaat — vooral als AI-tools componenten opnieuw genereren — bouw je haar in het proces in:
+
+- **Linting:** eslint-plugin-jsx-a11y signaleert veelvoorkomende problemen in de code.
+- **Geautomatiseerde tests:** axe-controles in end-to-endtests van kritieke flows.
+- **Projectregels voor AI-tools:** "Gebruik native knoppen en links; elk invoerveld heeft een zichtbaar label; verwijder geen focusranden."
+- **Design tokens:** kleuren die al aan de contrasteisen voldoen.
+- **Definitie van "klaar":** een toetsenbordcontrole voor elke nieuwe interactieve component.
+
+Deze maatregelen kosten per functie weinig en voorkomen later dure herstelwerkzaamheden.
+
+## Wie Is Vrijgesteld, en Waarom Velen Toch Voldoen
+
+Micro-ondernemingen die diensten leveren, zijn vrijgesteld van de eisen van de EAA voor diensten, maar veel kleine bedrijven kiezen er toch voor eraan te voldoen. Redenen zijn onder meer groei (later de drempel passeren betekent achteraf aanpassen), inkoop (publieke organisaties en grotere bedrijven eisen steeds vaker toegankelijkheid van leveranciers), marktomvang (een aanzienlijk deel van de klanten heeft er baat bij) en SEO, omdat semantische, toegankelijke pagina's voor zoekmachines makkelijker te begrijpen zijn.
 
 ## Documenten en Content, Niet Alleen Code
 
-Toegankelijkheid reikt verder dan louter de programmacode: PDF-facturen en algemene voorwaarden moeten digitaal leesbaar en gestructureerd zijn; video's hebben ondertiteling nodig; en productafbeeldingen moeten worden voorzien van relevante beschrijvingen. Voor webshops die met AI zijn gebouwd, vormen handmatig geüploade productfoto's vaak een bron van toegankelijkheidsfouten — een korte richtlijn voor medewerkers die content invoeren houdt de webshop ook na de livegang toegankelijk.
+Toegankelijkheid gaat ook over content: pdf's zoals facturen en voorwaarden horen getagd en leesbaar te zijn; video's hebben ondertiteling nodig; afbeeldingen in productoverzichten hebben beschrijvende alt-tekst nodig; en heldere, eenvoudige taal helpt iedereen. Bij webwinkels die met AI-tools zijn gegenereerd, zijn productbeschrijvingen en afbeeldingen die door medewerkers worden geüpload een doorlopende bron van toegankelijkheidsproblemen — een korte richtlijn voor wie de content beheert, houdt de site na de lancering toegankelijk.
 
-## Prioriteiten Stellen bij Beperkte Tijd
+## Oplossingen Prioriteren als de Tijd Kort Is
 
-Als je niet alles in één keer kunt aanpakken, prioritiseer dan op basis van de impact op de klantreis. Eerst de absolute 'blockers': alles wat een bezoeker met een toetsenbord of schermlezer fysiek verhindert om een bestelling af te ronden, een account aan te maken of contact op te nemen (toetsenbord-blokkades, niet-gelabelde verplichte velden, onbedienbare iDEAL-knoppen). Vervolgens de grote drempels: ontbrekende foutmeldingen, te laag contrast op essentiële informatie en onzichtbare focus. Tot slot optimalisaties: alt-teksten finetunen, kophiërarchie strak trekken en ondertiteling toevoegen.
+Kun je niet alles tegelijk oplossen, prioriteer dan naar de impact op het voltooien van kritieke taken. Eerst blokkades: alles wat een gebruiker van toetsenbord of schermlezer verhindert de checkout, aanmelding of contact af te ronden (toetsenbordvallen, verplichte velden zonder label, ontoegankelijke betaalstappen). Daarna grote barrières: foutmeldingen die niet worden aangekondigd, laag contrast bij essentiële tekst, ontbrekende zichtbaarheid van de focus. Daarna verbeteringen: kwaliteit van alt-teksten, kopstructuur, ondertiteling bij niet-essentiële video's. Leg het plan vast in je toegankelijkheidsverklaring, met streefdata.
+
+## Toegankelijkheid en Componenten van Derden
+
+Betaalformulieren, chatwidgets, cookiebanners, ingesloten kaarten en videospelers komen vaak van derden en zijn vaak minder toegankelijk dan je eigen code. Controleer ze in je handmatige tests. Kies aanbieders met gedocumenteerde ondersteuning voor toegankelijkheid, configureer ze voor toegankelijkheid waar dat kan, en vermeld onvermijdelijke beperkingen in je verklaring. Een cookiebanner die de toetsenbordfocus vasthoudt, kan een verder toegankelijke site onbruikbaar maken — en het is een van de eerste dingen die gebruikers tegenkomen.
+
+## Kosten in Perspectief
+
+Voor een typische AI-gebouwde webwinkel of boekingsapp kost het op WCAG 2.1 AA brengen van kritieke flows dagen in plaats van weken als het samen met ander productiewerk gebeurt, omdat de meeste oplossingen lokaal in componenten zitten. Later aanpassen is duurder: componenten vermenigvuldigen zich, content stapelt zich op en elk nieuw AI-gegenereerd scherm herhaalt dezelfde patronen. Toegankelijkheid aanpakken bij productiegereedheid — en vangrails toevoegen zodat nieuwe componenten haar erven — is de zuinigste weg.
+
+## Het Zakelijke Argument in Één Regel
+
+Een toegankelijke checkout verkoopt aan meer mensen, scoort beter, voldoet aan inkoopeisen en houdt je aan de goede kant van de Europese Toegankelijkheidswet — en dat maakt het een van de weinige productieverbeteringen die zich op meerdere fronten tegelijk terugbetalen.
+
+## Waar Je Deze Week Begint
+
+Kies je allerbelangrijkste flow — meestal de checkout of het aanmelden — en voer er de vier handmatige tests op uit: alleen toetsenbord, schermlezer, 200% zoom en minder beweging. Schrijf elke barrière op die je vindt, los eerst de blokkades op en voeg een geautomatiseerde axe-controle toe aan die flow zodat hij opgelost blijft. Herhaal dat daarna voor de volgende flow. Binnen een paar weken zijn de paden die voor je bedrijf het meest tellen voor iedereen bruikbaar, en heeft je AI-gegenereerde interface vangrails die dat zo houden terwijl hij zich verder ontwikkelt.
 
 ## Waar LaunchStudio Past
 
-LaunchStudio verhelpt toegankelijkheidsknelpunten in met AI gebouwde webapplicaties en shops zonder dat er een ingrijpend herontwerp nodig is: toevoegen van semantische labels en alt-teksten, subtiele contrastoptimalisaties binnen je bestaande huisstijl, volledige toetsenbordondersteuning, focusbeheer, logische paginastructuur, uitgesproken foutmeldingen en geautomatiseerde CI-controles. Dit wordt gecombineerd met handmatige toetsing van je kernprocessen en hulp bij het opstellen van een conforme toegankelijkheidsverklaring.
+LaunchStudio lost toegankelijkheid in AI-gebouwde interfaces op zonder ze opnieuw te ontwerpen: labels, alternatieven, contrastaanpassingen binnen je huisstijlpalet, toetsenbordondersteuning, focusbeheer, semantische structuur, aangekondigde foutmeldingen en geautomatiseerde controles in CI — gevolgd door handmatig testen van kritieke flows en hulp bij het opstellen van een toegankelijkheidsverklaring. Het past natuurlijk naast het versterken van beveiliging en betalingen in een Launch Ready-project.
 
-LaunchStudio wordt ondersteund door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in het bouwen van hoogwaardige webapplicaties voor organisaties met strenge compliance-eisen, opererend vanuit Amsterdam, Singapore en Ho Chi Minhstad. Bekijk [Manifera's maatwerk webapplicatie-ontwikkeling](https://www.manifera.com/services/web-app-develop/) en de [officiële informatiepagina over de EAA van de Europese Commissie](https://ec.europa.eu/social/main.jsp?catId=1202).
+LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring in het leveren van webapplicaties voor organisaties met formele eisen, vanuit Amsterdam, Singapore en Ho Chi Minh-stad. Zie [webappontwikkeling van Manifera](https://www.manifera.com/services/web-app-develop/) en de [EAA-pagina van de Europese Commissie](https://ec.europa.eu/social/main.jsp?catId=1202) voor het officiële overzicht.
 
-[Stuur ons je prototype-link](https://launchstudio.eu/nl/#contact) en we brengen kosteloos voor je in kaart hoe dicht jouw checkout al bij WCAG AA zit.
+[Stuur ons de link naar je prototype](https://launchstudio.eu/nl/#contact) en we vertellen je gratis hoe ver je checkout van WCAG AA verwijderd is.
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Een Tweedehands Boekenwebshop en een Schermlezer
+### Een AI-Native Oprichter in Actie: Een Webwinkel voor Tweedehands Boeken en een Schermlezer
 
-Rosa Veenstra, voormalig bibliothecaresse in Drachten, bouwde Boekenbus in Bolt: een webshop voor tweedehands boeken met een maandelijks verrassingsabonnement, zoekfunctie op genre en auteur, en een mobielvriendelijke checkout. Het bedrijf groeide hard naar 14 medewerkers in de inpakcentrale en klantenservice en een jaaromzet van ruim 2 miljoen euro, waardoor de onderneming formeel buiten de micro-ondernemersvrijstelling viel.
+Rosa Veenstra, voormalig bibliothecaris in Drachten, bouwde Boekenbus in Bolt: een webwinkel voor tweedehands boeken met een abonnement op een "verrassingsdoos", zoeken op genre en auteur, en een checkout die eerst voor mobiel is ontworpen. Het bedrijf was gegroeid naar 14 medewerkers in inpak en klantenservice en een omzet van meer dan € 2 miljoen, waardoor het buiten de vrijstelling voor micro-ondernemingen viel.
 
-Een blinde klant stuurde een e-mail waarin ze aangaf dat het haar niet lukte om een bestelling te plaatsen. Rosa schakelde LaunchStudio in voor een analyse. Een geautomatiseerde scan bracht 212 toegankelijkheidsproblemen aan het licht; handmatige tests bevestigden de ervaring van de klant. Knoppen die alleen uit een winkelmand-icoontje bestonden hadden geen tekstlabel; invulvelden gebruikten enkel placeholders; de genrefilter en adres-autocomplete waren maatwerkcomponenten die de toetsenbordfocus volledig vasthielden (keyboard trap); lichtgrijze tekst op een crèmekleurige achtergrond faalde op contrast; foutmeldingen in het afrekenproces verschenen enkel in het rood zonder te worden voorgelezen; en productafbeeldingen hadden geen alt-teksten.
+Een blinde klant mailde dat ze geen aankoop kon afronden. Rosa vroeg LaunchStudio om een review. Een geautomatiseerde scan vond 212 problemen; handmatig testen bevestigde de ervaring van de klant. Knoppen met alleen een icoon voor "in winkelmand" en "volgende" hadden geen labels; formuliervelden gebruikten placeholders als label; het genrefilter en de automatische aanvulling van adressen waren eigen componenten die de toetsenbordfocus vasthielden; de lichtgrijze tekst op crème voldeed overal niet aan de contrasteisen; fouten in de checkout verschenen alleen in rood, zonder aankondiging; en productafbeeldingen hadden geen alt-tekst.
 
-In negen werkdagen tijd brachten de engineers van LaunchStudio de webshop op niveau: ze voegden toegankelijke namen en alt-teksten toe (waarbij boekomslagen automatisch een beschrijving kregen op basis van titel en auteur), vervingen tijdelijke placeholders door permanente en zichtbare labels, herbouwden het filter en de autocomplete met toegankelijke componenten, pasten het kleurcontrast aan binnen Rosa's bestaande kleurenpalet, zorgden dat formulierfouten direct werden gekoppeld en voorgelezen door screenreaders, brachten logische HTML5-landmarks aan en integreerden geautomatiseerde axe-tests in de deployment pipeline. De klant die het probleem had gemeld testte de checkout mee vóór de livegang, waarna Rosa een officiële toegankelijkheidsverklaring publiceerde.
+In negen werkdagen voegden de engineers van LaunchStudio toegankelijke namen en alt-tekst toe (met alt-tekst voor boekomslagen gegenereerd uit titel en auteur), vervingen ze velden met alleen een placeholder door zichtbare labels, bouwden ze het filter en de automatische aanvulling opnieuw op toegankelijke patronen, pasten ze tekstkleuren aan om binnen Rosa's palet aan de contrasteisen te voldoen, koppelden en kondigden ze validatiefouten aan, voegden ze koppen en landmarks toe, en zetten ze axe-controles in CI. De klant die het probleem had gemeld, testte de checkout samen met hen vóór de release. Rosa publiceerde een toegankelijkheidsverklaring.
 
-**Resultaat:** De checkout van Boekenbus voldoet nu volledig aan WCAG 2.1 AA voor alle kritieke gebruikersstromen. Het totale afrekenpercentage op mobiele apparaten steeg in het daaropvolgende kwartaal met 9% — voor álle bezoekers — en de klant die de melding deed werd een trouwe, vaste abonnee.
+**Resultaat:** De checkout van Boekenbus voldoet voor de kritieke flows aan WCAG 2.1 AA. Het percentage voltooide checkouts op mobiel steeg in het kwartaal daarna met ongeveer 9% — voor alle klanten — en de klant die het probleem meldde, werd een vaste abonnee.
 
-> *"Ik bouwde deze winkel voor boekenliefhebbers en vergat even dat sommigen van hen met hun oren lezen. De aanpassingen hebben niets veranderd aan hoe de site eruitziet, maar wel aan wie hem kan gebruiken."*
+> *"Ik bouwde de winkel voor boekenliefhebbers en vergat dat sommigen van hen met hun oren lezen. De oplossingen veranderden niet hoe het eruitziet, alleen wie het kan gebruiken."*
 > — **Rosa Veenstra, Oprichter, Boekenbus (Drachten)**
 
-**Kosten & Tijdlijn:** € 2.500 (Launch Ready-pakket: toegankelijkheidsherstel, CI-checks, handmatige tests en ondersteuning bij de verklaring) — afgerond in 9 werkdagen.
+**Kosten & Tijdlijn:** € 2.500 (Launch Ready-pakket: herstel van toegankelijkheid, CI-controles, handmatig testen en ondersteuning bij de verklaring) — afgerond in 9 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Is de Europese Toegankelijkheidswet van toepassing op mijn met AI gebouwde webshop?
+### Is de Europese Toegankelijkheidswet van toepassing op mijn AI-gebouwde webwinkel?
 
-Als je online producten of diensten verkoopt aan consumenten en je onderneming is geen micro-onderneming (minder dan 10 medewerkers én minder dan 2 miljoen euro omzet of balanstotaal), dan is de wet vrijwel zeker van toepassing. Laat je situatie altijd toetsen door een deskundige.
+Verkoop je online aan consumenten en ben je geen micro-onderneming (minder dan 10 medewerkers en maximaal € 2 miljoen omzet of balanstotaal), dan zeer waarschijnlijk wel. Laat je situatie bevestigen door een adviseur.
 
-### Welke standaard moet een AI-applicatie halen voor de EAA?
+### Aan welke standaard moet een AI-gebouwde app voldoen voor de EAA?
 
-In de praktijk is dat de norm EN 301 549, die direct verwijst naar WCAG 2.1 niveau AA. Het behalen van WCAG 2.1 of 2.2 AA is de algemeen geaccepteerde aanpak.
+In de praktijk EN 301 549, die WCAG 2.1 niveau AA omvat. Mikken op WCAG 2.1 of 2.2 AA is de gangbare aanpak.
 
-### Kan digitale toegankelijkheid worden opgelost zonder het design van mijn app aan te passen?
+### Kan toegankelijkheid worden opgelost zonder mijn app opnieuw te ontwerpen?
 
-Vrijwel altijd wel. De meeste verbeteringen — zoals labels, alt-teksten, toetsenbordbediening, focusbeheer, semantische structuur en voorgelezen foutmeldingen — spelen zich volledig af in de code. Eventuele kleuraanpassingen voor contrast blijven meestal binnen je bestaande merkpalet.
+Meestal wel. De meeste problemen — labels, alt-tekst, toetsenbordondersteuning, focus, structuur, aankondiging van fouten — worden in de code opgelost zonder zichtbare ontwerpwijzigingen. Contrastaanpassingen kunnen doorgaans binnen je huisstijlpalet blijven.
 
-### Hoe pakt Manifera toegankelijkheidstrajecten aan?
+### Hoe pakt Manifera werk aan toegankelijkheid aan?
 
-Als een vast onderdeel van productiekwaliteit: geautomatiseerde analyses, grondige handmatige toetsing van kritieke stromen met toetsenbord en schermlezers, en geautomatiseerde vangnetten in CI/CD om regressies bij toekomstige updates te voorkomen.
+Als onderdeel van productiekwaliteit: geautomatiseerde controles, handmatig testen van kritieke flows met toetsenbord en schermlezer, en vangrails zodat regressies worden opgevangen. Manifera past deze praktijken toe in zijn bredere werk aan webapplicaties.
 
-### Verbetert digitale toegankelijkheid ook mijn SEO en vindbaarheid in AI-zoekmachines?
+### Verbetert toegankelijkheid de SEO en de zichtbaarheid in AI-antwoordmachines?
 
-Absoluut. Een semantische HTML-structuur, duidelijke koppen, alt-teksten en expliciete formulierlabels stellen zoekmachines en AI-zoekmodellen veel beter in staat om de context en inhoud van je pagina's nauwkeurig te begrijpen en hoog te indexeren.
+Vaak wel. Semantische structuur, koppen, alt-tekst en duidelijke labels helpen zoekmachines en AI-antwoordmachines je content te begrijpen, naast het helpen van gebruikers.
 
 <script type="application/ld+json">
 {
@@ -161,28 +199,28 @@ Absoluut. Een semantische HTML-structuur, duidelijke koppen, alt-teksten en expl
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is de Europese Toegankelijkheidswet van toepassing op mijn met AI gebouwde webshop?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Zeer waarschijnlijk wel als je aan consumenten verkoopt en geen micro-onderneming bent; laat je situatie controleren door een deskundige." }
+      "name": "Is de Europese Toegankelijkheidswet van toepassing op mijn AI-gebouwde webwinkel?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Zeer waarschijnlijk als je aan consumenten verkoopt en geen micro-onderneming bent; bevestig dit met een adviseur." }
     },
     {
       "@type": "Question",
-      "name": "Welke standaard moet een AI-applicatie halen voor de EAA?",
-      "acceptedAnswer": { "@type": "Answer", "text": "In de praktijk EN 301 549, wat overeenkomt met WCAG 2.1 niveau AA." }
+      "name": "Aan welke standaard moet een AI-gebouwde app voldoen voor de EAA?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In de praktijk EN 301 549, die WCAG 2.1 AA omvat." }
     },
     {
       "@type": "Question",
-      "name": "Kan digitale toegankelijkheid worden opgelost zonder het design van mijn app aan te passen?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Vrijwel altijd wel; de meeste aanpassingen betreffen semantische code, labels en toetsenbordondersteuning zonder visueel herontwerp." }
+      "name": "Kan toegankelijkheid worden opgelost zonder mijn app opnieuw te ontwerpen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Meestal wel; de meeste oplossingen zitten in de code, zonder zichtbare ontwerpwijzigingen." }
     },
     {
       "@type": "Question",
-      "name": "Hoe pakt Manifera toegankelijkheidstrajecten aan?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Via geautomatiseerde code-audits, handmatige toetsenbord- en screenreadertests en CI-vangnetten tegen regressie." }
+      "name": "Hoe pakt Manifera werk aan toegankelijkheid aan?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Geautomatiseerde controles, handmatig testen met toetsenbord en schermlezer, en vangrails tegen regressies." }
     },
     {
       "@type": "Question",
-      "name": "Verbetert digitale toegankelijkheid ook mijn SEO en vindbaarheid in AI-zoekmachines?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Jazeker; semantische HTML, duidelijke koppen en alt-teksten maken content beter begrijpelijk en indexeerbaar voor zoekmachines." }
+      "name": "Verbetert toegankelijkheid de SEO en de zichtbaarheid in AI-antwoordmachines?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Vaak; semantische structuur en labels helpen machines de content te begrijpen." }
     }
   ]
 }

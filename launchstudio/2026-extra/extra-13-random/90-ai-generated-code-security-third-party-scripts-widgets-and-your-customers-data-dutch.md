@@ -21,86 +21,86 @@ Doelgroep: Technische Solo-Oprichter / Indie Hacker
 }
 </script>
 
-*"Voeg een live chatwidget toe."* *"Installeer Google Analytics."* *"Plaats een heatmap-tool zodat ik kan zien waar bezoekers klikken."* Stuk voor stuk opdrachten van één regel in de promptbalk. AI-codeertools reageren hierop door simpelweg een `<script>`-tag in de globale lay-out van uw applicatie te plakken — op werkelijk elke pagina, inclusief de schermen waar klanten hun adres invullen, paspoortscans uploaden of bank- en creditcardgegevens invoeren. Externe scripts vormen een onderbelichte blinde vlek in de beveiliging van AI-gegenereerde software: programmacode die u niet zelf heeft geschreven, afkomstig van leveranciers die u nauwelijks kent, die met exact dezelfde verregaande bevoegdheden in de browser van uw klant draait als uw eigen applicatie.
+"Voeg een chatwidget toe." "Voeg Google Analytics toe." "Voeg een heatmaptool toe zodat ik zie waar mensen klikken." Elk is een prompt van één regel, en AI-codeertools reageren door een scripttag in de lay-out van uw app te plakken — op elke pagina, ook op de pagina's waar klanten hun adres typen, documenten uploaden of betaalgegevens invoeren. Scripts van derden zijn een stille hoek van de beveiliging van AI-gegenereerde code: code die u niet zelf schreef, van bedrijven die u nauwelijks kent, die met dezelfde toegang tot uw pagina's draait als uw eigen code.
 
-## Wat een extern script technisch kan doen
+## Wat een Script van Derden Kan Doen
 
-Een extern JavaScript-bestand dat op uw pagina wordt ingeladen, heeft in theorie onbeperkte mogelijkheden:
+Een script dat in uw pagina wordt geladen, kan technisch gezien:
 
-- Het kan letterlijk alles op de pagina meelezen, inclusief formuliervelden terwijl de bezoeker typt (keylogging).
-- Het kan alle niet-beveiligde cookies en lokale browseropslag (`localStorage`) uitlezen.
-- Het kan willekeurige data versturen naar servers over de hele wereld.
-- Het kan de pagina realtime manipuleren — knoppen aanpassen, bezoekers omleiden of formulieren onderscheppen.
+- Alles op de pagina lezen, inclusief formuliervelden terwijl gebruikers typen.
+- Cookies en opslag lezen waartoe JavaScript toegang heeft.
+- Data naar zijn eigen servers sturen.
+- De pagina wijzigen — inhoud invoegen, gebruikers doorsturen, formulieren aanpassen.
 
-Gerenommeerde softwareleveranciers misbruiken dit uiteraard niet met opzet. Maar hun scripts verzamelen vaak ongemerkt veel meer data dan u beseft (bijvoorbeeld sessierecorders die formulierinvoer vastleggen), en leveranciers kunnen zélf worden gehackt: bij meerdere beruchte 'supply chain'-aanvallen (zoals Magecart) werd kwaadaardige software geïnjecteerd in veelgebruikte externe scripts, waardoor creditcardgegevens werden afgetapt op duizenden webshops tegelijk.
+Gerenommeerde aanbieders misbruiken dit niet bewust. Maar hun scripts kunnen meer verzamelen dan u bedoelt (tools voor sessie-opname die formulierinvoer vastleggen, bijvoorbeeld), en aanbieders kunnen worden gecompromitteerd: verschillende bekende supply-chainaanvallen injecteerden code om kaartgegevens af te vangen in veelgebruikte scripts, met gevolgen voor elke site die ze laadde.
 
-## De concrete beveiligings- en privacyrisico's
+## De Risico's voor de Beveiliging van AI-Gegenereerde Code, Concreet
 
-**Datalekkages.** Heatmap- en session-replay-tools registreren wat gebruikers typen, tenzij invoervelden expliciet worden gemaskeerd. Analysetags vangen onbedoeld persoonsgegevens op uit URL-parameters of paginatitels. Chatwidgets slaan alles op wat een gebruiker erin plakt.
+**Datalekken.** Tools voor heatmaps en sessie-opname kunnen vastleggen wat gebruikers typen, tenzij ze zijn ingesteld om invoer te maskeren. Analyticstags kunnen persoonsgegevens in URL's of paginatitels oppikken. Chatwidgets ontvangen alles wat gebruikers erin plakken.
 
-**Supply chain-aanvallen.** Wanneer een script rechtstreeks vanaf de server van een derde partij wordt geladen en die server gehackt raakt, draait de code van de aanvaller direct in de browsers van uw klanten.
+**Supply-chaincompromittering.** Wordt een script van een server van derden geladen en wordt die server gecompromitteerd, dan draait de code van de aanvaller op uw pagina's.
 
-**Privacywetgeving en toestemming (AVG/GDPR).** Veel tracking- en advertentiescripts vereisen voorafgaande expliciete toestemming volgens Europese wetgeving. Door AI gegenereerde code laadt deze scripts echter vrijwel altijd direct in, nog vóórdat er een cookiebanner verschijnt.
+**Privacy en toestemming.** Veel trackingscripts vereisen onder EU-regels voorafgaande toestemming. AI-gegenereerde opzetten laden ze meestal direct, vóór welke toestemmingsbanner dan ook.
 
-**Prestatieverlies.** Elk extern script brengt extra netwerkverzoeken en rekenkracht met zich mee, wat de Core Web Vitals en laadtijden van uw website ernstig vertraagt.
+**Prestaties.** Elk script voegt gewicht en verzoeken toe, wat de laadsnelheid en de Core Web Vitals beïnvloedt.
 
-**Ongecontroleerde wildgroei.** Na maanden van iteratief prompten laden applicaties dikwijls tientallen scripts in die niemand zich meer herinnert, afkomstig van proefabonnementen die allang zijn stopgezet.
+**Wildgroei.** Na maanden prompten laden apps vaak scripts die niemand zich herinnert te hebben toegevoegd, ook van tools die niet meer worden gebruikt.
 
-## Maatregel 1: Houd een actuele scriptinventarisatie bij
+## Maatregel 1: Houd een Inventaris Bij
 
-Maak een overzicht van elk extern script: wat het doet, op welke pagina's het laadt, tot welke data het toegang heeft, of er toestemming voor vereist is en wie er intern voor getekend heeft. Verwijder direct alles wat niet strikt noodzakelijk is.
+Maak een lijst van elk script van derden, wat het doet, welke pagina's het laden, tot welke data het toegang heeft, of het toestemming vereist en wie het heeft goedgekeurd. Verwijder alles wat niet wordt gebruikt.
 
-## Maatregel 2: Laad scripts uitsluitend waar nodig
+## Maatregel 2: Laad Scripts Alleen Waar Nodig
 
-Een chatwidget hoeft niet aanwezig te zijn op de betaalpagina. Een marketingpixel hoort absoluut niet thuis in de afgeschermde beheeromgeving. Beperk externe scripts strikt tot de pagina's waar ze daadwerkelijk een functie vervullen, en houd ze ver weg van formulieren met gevoelige persoonsgegevens.
+Een chatwidget hoeft niet op de betaalpagina te draaien. Analytics hoeft niet in het beheergedeelte te draaien. Beperk scripts tot de pagina's waar ze een doel dienen, en houd ze weg van pagina's met gevoelige invoer.
 
-## Maatregel 3: Respecteer cookie-toestemming technisch
+## Maatregel 3: Respecteer Toestemming
 
-Laad analytics-, marketing- en sessierecording-scripts pas in nádat de bezoeker expliciet toestemming heeft gegeven, met een even laagdrempelige optie om te weigeren. Overweeg privacyvriendelijke webstatistieken die geen cookies vereisen en dus zonder cookiemelding mogen draaien.
+Laad analytics-, marketing- en sessie-opnamescripts waar vereist pas na toestemming, met een even makkelijke optie om te weigeren. Overweeg privacyvriendelijke analytics die voor basismetingen mogelijk geen toestemming vereisen.
 
-## Maatregel 4: Privacyvriendelijke configuratie
+## Maatregel 4: Configureer Tools Privacybewust
 
-Schakel strikte formuliermaskering in bij alle schermopname-tools, schakel het opslaan van IP-adressen uit, voorkom dat er e-mailadressen of namen in URL-parameters terechtkomen, kies datacenters binnen de Europese Economische Ruimte (EER) en sluit met elke leverancier een verwerkersovereenkomst (DPA) af.
+Maskeer alle formulierinvoer in tools voor sessie-opname, schakel het opslaan van IP-adressen waar mogelijk uit, stuur geen persoonsgegevens mee in URL's of events, kies dataregio's in de EU en sluit verwerkersovereenkomsten af.
 
-## Maatregel 5: Content Security Policy (CSP)
+## Maatregel 5: Content Security Policy
 
-Een Content Security Policy-header vertelt de browser exact welke externe domeinen scripts mogen uitvoeren en naar welke servers gegevens mogen worden verstuurd. Dit begrenst de schade van zowel XSS-aanvallen als gecompromitteerde externe diensten drastisch. Begin in `Report-Only`-modus, scherp de regels stapsgewijs aan en vermijd ruime uitzonderingen zoals `unsafe-inline`.
+Een Content Security Policy-header (CSP) vertelt de browser welke bronnen scripts mogen uitvoeren en waarheen data mag worden gestuurd. Die beperkt de schade van zowel geïnjecteerde scripts als gecompromitteerde derden. Begin in de modus report-only, scherp geleidelijk aan en vermijd brede uitzonderingen zoals `unsafe-inline` waar dat kan.
 
-## Maatregel 6: Subresource Integrity (SRI) en zelf hosten
+## Maatregel 6: Subresource Integrity of Zelf Hosten
 
-Voor vaste bibliotheken die u via een CDN inlaadt, garandeert Subresource Integrity (SRI) dat de browser het bestand alleen uitvoert als de cryptografische hash exact overeenkomt met wat u heeft goedgekeurd. Voor leverancierstags die continu dynamisch wijzigen is SRI niet toepasbaar; daar zijn paginabeperking en CSP de belangrijkste verdedigingslinies.
+Voor scripts die in vaste versies van CDN's worden geladen, zorgen Subresource Integrity-hashes (SRI) ervoor dat de browser alleen het exacte bestand uitvoert dat u hebt goedgekeurd. Voor scripts die voortdurend veranderen (veel tags van leveranciers) is SRI niet praktisch; beperk dan waar ze laden en vertrouw op CSP.
 
-## Maatregel 7: Isoleer het betalingsproces
+## Maatregel 7: Isoleer Gevoelige Flows
 
-Bank- en creditcardgegevens horen uitsluitend te worden ingevoerd in de beveiligde, gehoste velden (iFrames) of op de afrekensite van uw betaalprovider (zoals Stripe Elements of Mollie Checkout), nooit in eigen HTML-invoervelden. Zelfs als een extern script op uw pagina gehackt zou zijn, kan het de financiële data niet onderscheppen.
+Betaalgegevens horen te worden ingevoerd in de gehoste velden of checkoutpagina van de betaalaanbieder, niet in uw eigen formulieren, zodat zelfs een gecompromitteerd script op uw pagina geen kaartnummers kan lezen.
 
-## Een gestructureerde scriptinventaris opstellen
+## Een Inventaris van Scripts van Derden Opbouwen
 
-Het beheersen van risico's rondom externe scripts begint bij een overzichtelijke tabel:
+Het beheersen van de risico's van externe scripts voor de beveiliging van AI-gegenereerde code begint met een volledige inventaris:
 
-| Script | Doel | Pagina's | Toegang tot data | Toestemming nodig? | Verantwoordelijke | Actie |
+| Script | Doel | Pagina's | Data waartoe het toegang heeft | Toestemming nodig? | Eigenaar | Houden? |
 | --- | --- | --- | --- | --- | --- | --- |
-| Analysetag | Bezoekersaantallen meten | Alle | Pagina-URL's, interacties | Afhankelijk van tool | Marketing | Vervangen door privacyvriendelijk alternatief |
-| Advertentiepixel | Conversies bijhouden | Alle | URL's, klikgedrag | Ja | Marketing | Uitsluitend op marketingpagina's na opt-in |
-| Chatwidget | Klantenservice | Alle | Chatinhoud, paginacontext | Niet voor puur support | Klantenservice | Beperken tot help- en contactpagina's |
-| Schermopname | UX-onderzoek | Alle | Alles wat getypt en geklikt wordt | Ja | Product | Volledig verwijderen uit klantenportaal |
-| Kaartmodule | Locaties tonen | Bestemmingspagina's | Locatiezoekopdrachten | Beperkt | Product | Behouden, zelf lokaal hosten |
+| Analyticstag | Verkeer meten | Alle | Pagina-URL's, interacties | Afhankelijk van tool/configuratie | Marketing | Vervangen door privacyvriendelijke optie |
+| Advertentiepixel | Conversies volgen | Alle | Pagina-URL's, events | Ja | Marketing | Alleen op marketingpagina's, na toestemming |
+| Chatwidget | Support | Alle | Chatinhoud, paginacontext | Meestal niet voor de supportfunctie | Support | Beperken tot supportpagina's |
+| Sessie-opname | UX-onderzoek | Alle | Alles wat wordt getypt en aangeklikt | Ja | Product | Verwijderen uit het portaal |
+| Kaartbibliotheek | Locaties tonen | Bestemmingspagina's | Locatiezoekopdrachten | Afhankelijk | Product | Houden, waar mogelijk zelf hosten |
 
-Open de netwerktab in de browser, filter op scripts van externe domeinen en controleer uw broncode en tagmanager. De kolom "Actie" vormt uw directe to-do lijst.
+Open om hem op te bouwen de pagina's van uw site met het netwerkpaneel van de browser, maak een lijst van elk extern domein dat scripts laadt, en controleer in uw code en tagmanager wat ze laadt. De kolom "Houden?" wordt uw actielijst.
 
-## Tagmanagers: Handig voor marketing, riskant voor security
+## Tagmanagers: Handig en Riskant
 
-Google Tag Manager maakt het voor marketeers gemakkelijk om scripts toe te voegen zonder tussenkomst van ontwikkelaars. Dat gemak betekent echter ook dat trackingcodes zomaar op gevoelige schermen kunnen belanden zonder technische review. Gebruikt u een tagmanager, stel dan strikte publicatierechten in, sluit gevoelige pagina's (zoals afrekenen, accountbeheer en medische formulieren) per definitie uit via blokkeerregels, en auditeer wijzigingen maandelijks.
+Met tagmanagers kunnen marketeers scripts toevoegen zonder deployments. Dat gemak betekent ook dat scripts zonder review door engineers op gevoelige pagina's kunnen verschijnen. Gebruikt u er een, beperk dan wie wijzigingen mag publiceren, sluit gevoelige pagina's (checkout, account, formulieren met persoonsgegevens) via regels uit, vereis toestemmingsvoorwaarden voor trackingtags, controleer gepubliceerde wijzigingen maandelijks en neem de tagmanager zelf mee in de planning van uw Content Security Policy.
 
-## Een robuuste Content Security Policy in de praktijk
+## Een Content Security Policy voor Echte Sites
 
-Een Content Security Policy wordt via een HTTP-header meegestuurd en instrueert de browser:
+Een Content Security Policy wordt als header meegestuurd en vertelt de browser vanaf welke bronnen scripts mogen worden geladen, met welke servers verbinding mag worden gemaakt, welke frames mogen worden getoond, enzovoort. Een startpunt voor veel AI-gebouwde apps:
 
 ```
 Content-Security-Policy:
   default-src 'self';
   script-src 'self' https://js.stripe.com https://plausible.io;
-  connect-src 'self' https://api.stripe.com https://uw-project.supabase.co https://plausible.io;
+  connect-src 'self' https://api.stripe.com https://your-project.supabase.co https://plausible.io;
   frame-src https://js.stripe.com;
   img-src 'self' data: https:;
   style-src 'self' 'unsafe-inline';
@@ -108,105 +108,111 @@ Content-Security-Policy:
   report-uri /csp-report
 ```
 
-Activeer dit beleid eerst met de header `Content-Security-Policy-Report-Only`. Verzamel een week lang meldingen van geblokkeerde bronnen, werk de lijst bij en dwing het beleid daarna pas definitief af.
+Zet hem eerst live met `Content-Security-Policy-Report-Only`, verzamel een week lang meldingen van overtredingen, pas de toegestane bronnen aan en dwing hem daarna af. Vermijd `unsafe-inline` voor scripts; gebruik nonces of hashes als inline scripts onvermijdelijk zijn.
 
-## Prestatiewinst door het opruimen van overtollige scripts
+## Subresource Integrity voor Vaste Bibliotheken
 
-Elk extern script vereist DNS-lookups, TLS-handshakes en CPU-tijd om JavaScript te parsen. Het verwijderen van overbodige widgets halveert dikwijls de laadtijd en verbetert de Interaction to Next Paint (INP) en Largest Contentful Paint (LCP) aanzienlijk. Veiligheid, privacy en gebruikerssnelheid versterken elkaar direct.
+Laadt u een specifieke versie van een bibliotheek van een CDN, voeg dan een attribuut `integrity` toe met de hash van het bestand. De browser weigert het bestand uit te voeren als het is gewijzigd. Dat beschermt tegen gecompromitteerde CDN's voor bestanden met een vaste versie. Voor scripts die voortdurend veranderen — de meeste tags van leveranciers — kan SRI niet worden gebruikt; daar zijn het beperken van pagina's en CSP de belangrijkste verdediging, en is zelf hosten van stabiele bibliotheken vaak de betere keuze.
 
-## Waarom dit een specifiek AI-risico is
+## Betaalpagina's Verdienen een Speciale Behandeling
 
-AI-codeertools installeren externe widgets met verbijsterend gemak: vraag om websitestatistieken, een chatvenster of een interactieve landkaart, en het script verschijnt automatisch in de root-lay-out van uw project — actief op elk scherm, zonder enige cookietoestemming of beveiligingsfilter. Niemand heeft ooit bewust besloten om paspoortgegevens met een marketingleverancier te delen; het gebeurde simpelweg omdat een behulpzame AI-assistent overal dezelfde tag insloot. Daarom verdient het opruimen en isoleren van externe scripts een vaste plek in iedere productiereview.
+Betaalpagina's zijn een geliefd doelwit voor skimmingaanvallen via gecompromitteerde scripts van derden. Houd ze zo schoon mogelijk: geen analytics- of marketingtags, geen chatwidgets, een strikte CSP en het invoeren van kaartgegevens volledig afgehandeld door de gehoste velden of checkoutpagina van de betaalaanbieder. Eisen uit de betaalkaartindustrie richten zich steeds meer op het beheersen van scripts op betaalpagina's; door gehoste betaalcomponenten te gebruiken, blijft het grootste deel van die last bij de aanbieder.
+
+## Toestemmingsbeheer dat Technisch Werkt
+
+Toestemming moet bepalen wat er laadt, niet alleen wat er wordt getoond. Een consentmanager hoort niet-essentiële scripts te blokkeren tot er toestemming is, de keuze vast te leggen met een tijdstempel, gebruikers die later te laten wijzigen, en de toestemmingsstatus door te geven aan scripts die dat ondersteunen. Test door uw site vers te laden, toestemming te weigeren en het netwerkpaneel te controleren: er mogen geen trackingverzoeken verschijnen.
+
+## Due Diligence bij Leveranciers
+
+Vraag u vóór het toevoegen van een script van derden af: welke data ontvangt het, waar wordt die verwerkt, biedt de leverancier een verwerkersovereenkomst, hoe wordt het script geleverd en beveiligd, kan het alleen worden geladen waar het nodig is, en bestaat er een privacyvriendelijker alternatief? Leg de antwoorden vast in de inventaris. Dit kost per leverancier een paar minuten en voorkomt veel toekomstige problemen.
+
+## Zelf Hosten Waar Praktisch
+
+Sommige bronnen van derden kunnen zelf worden gehost in plaats van bij leveranciers te worden geladen: lettertypen, iconensets, stabiele JavaScript-bibliotheken en sommige analyticstools. Zelf hosten haalt een afhankelijkheid van een andere server tijdens het draaien weg, voorkomt dat IP-adressen van bezoekers naar derden worden gestuurd (een punt dat sommige Europese toezichthouders en rechters hebben opgebracht, vooral bij weblettertypen) en vereenvoudigt de Content Security Policy. Houd zelf gehoste bibliotheken bij via uw gewone proces voor afhankelijkheden.
+
+## Prestatievoordelen van Minder Scripts
+
+Elk script van derden voegt netwerkverzoeken toe, JavaScript dat moet worden verwerkt en vaak extra scripts die het zelf laadt. Niet-essentiële scripts verwijderen of uitstellen verbetert Interaction to Next Paint en Largest Contentful Paint vaak merkbaar, vooral op telefoons uit het middensegment. Laad de overgebleven scripts met `async` of `defer`, stel chatwidgets uit tot de gebruiker interactie heeft, en meet het verschil met real-user monitoring. Beveiliging, privacy en prestaties verbeteren samen.
+
+## Monitoren op Onverwachte Scripts
+
+Scripts kunnen verschijnen zonder dat iemand het merkt — via een wijziging in de tagmanager, een gecompromitteerde afhankelijkheid of een leverancier die extra scripts laadt. Monitor met CSP-meldingen van overtredingen (die pogingen tonen om niet-goedgekeurde bronnen te laden), periodieke geautomatiseerde scans van belangrijke pagina's met een lijst van geladen domeinen, en meldingen als er een nieuw domein verschijnt. Behandel op betaal- en accountpagina's elk onverwacht script als een te onderzoeken incident.
+
+## Wat U Gebruikers Vertelt
+
+Uw privacyverklaring hoort de diensten van derden te noemen die data van bezoekers ontvangen, met hun doelen en locaties, en uw informatie over cookies of toestemming hoort overeen te komen met wat er werkelijk laadt. Transparantie is hier zowel een wettelijke eis als een vertrouwenssignaal: gebruikers controleren steeds vaker welke trackers een site gebruikt, en browserextensies maken dat zichtbaar.
+
+## Een Checklist voor Scripts van Derden
+
+Vóór de lancering: inventaris compleet met eigenaren en doelen; ongebruikte scripts verwijderd; scripts beperkt tot de pagina's die ze nodig hebben; niets niet-essentieels op betaal- of accountpagina's; toestemmingsblokkering getest; sessie-opname gemaskeerd of uit gevoelige flows verwijderd; Content Security Policy afgedwongen na een periode in report-only; SRI of zelf hosten voor vaste bibliotheken; toegang tot de tagmanager beperkt; privacyverklaring in overeenstemming met de werkelijkheid. Met deze stappen is de code die u niet zelf schreef niet langer het zwakste deel van uw app.
+
+## Eerste Stap
+
+Open uw checkout- of accountpagina, bekijk het netwerkpaneel en tel de externe domeinen die scripts laden. Elk domein dat u niet kunt verklaren, is een vraag om deze week te beantwoorden.
+
+## Waarom Dit een AI-Specifiek Risico Is
+
+AI-codeertools voegen opmerkelijk gemakkelijk scripts van derden toe: vraag om analytics, een chatwidget of een kaart, en er verschijnt een scripttag in de globale lay-out, geladen op elke pagina, zonder afhandeling van toestemming of beperkingen. Over maanden prompten stapelen ze zich op. Niemand besloot paspoortnummers naar een leverancier van sessie-opname te sturen; het gebeurde omdat een behulpzame tool overal een fragment toevoegde. Daarom verdienen scripts van derden een plek in elke productiereview van AI-gebouwde apps — en daarom zijn een inventaris, beperking per pagina, toestemmingsblokkering en een Content Security Policy het waard om vóór de lancering in te richten in plaats van na een ongemakkelijke vraag van een klant of toezichthouder.
 
 ## Onthoud
 
-Elk extern script dat u inlaadt, opereert met uw volledige bevoegdheid in de browser van uw bezoeker. Laad uitsluitend wat strikt noodzakelijk is, uitsluitend op de pagina's waar het nodig is, en vraag altijd om toestemming wanneer de wet dat vereist.
+Elk script dat u laadt, handelt met uw gezag op de pagina's van uw gebruikers. Laad alleen wat u nodig hebt, alleen waar u het nodig hebt, en alleen nadat gebruikers ermee instemmen als toestemming vereist is.
 
-## Waar LaunchStudio u bij helpt
+## Waar LaunchStudio Past
 
-LaunchStudio screent externe scripts tijdens beveiligings- en privacy-audits: een grondige inventarisatie, het isoleren van widgets tot specifieke pagina's, het inrichten van waterdichte cookie-toestemming, het afschermen van betaalflows en het opstellen van een passende Content Security Policy. LaunchStudio wordt aangedreven door Manifera. De jarenlange ervaring van CEO Herre Roelevink in cybersecurity — waaronder monitoring van dreigingen in samenwerking met TNO — waarborgt een scherpe blik op risico's in de softwareketen. Manifera's software-engineers werken vanuit Ho Chi Minh City, met kantoor aan de Herengracht 420 in Amsterdam. Bekijk [Manifera's over ons pagina](https://www.manifera.com/about-us/); de [MDN Content Security Policy handleiding](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP) biedt een uitstekend technisch overzicht.
+LaunchStudio beoordeelt scripts van derden als onderdeel van zijn controles op beveiliging en privacy: inventaris en opschoning, beperking per pagina, laden na toestemming, privacybewuste configuratie, een Content Security Policy afgestemd op uw app en isolatie van betalingen. LaunchStudio wordt aangedreven door Manifera, wiens CEO Herre Roelevink een achtergrond in cybersecurity heeft — inclusief werk aan dark-webmonitoring met TNO — die een zorgvuldige kijk op supply-chainrisico's vormt. De engineers van Manifera werken vanuit Ho Chi Minh-stad, met klantcontact via Amsterdam en Singapore. Zie [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/); [de CSP-gids van MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP) is de helderste inleiding.
 
-[Stuur ons uw websitelink](https://launchstudio.eu/nl/#contact) en wij brengen direct in kaart welke externe partijen er momenteel meedraaien op uw schermen.
+[Stuur ons de link naar uw site](https://launchstudio.eu/nl/#contact) en we maken een lijst van elk script dat hij laadt.
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Een Reisbureauportaal Met Elf Ongenode Gasten
+### Een AI-Native Oprichter in Actie: Een Portaal van een Reisbureau met Elf Ongenode Gasten
 
-Yara Ouali, eigenares van een gespecialiseerd reisbureau in Leidschendam dat maatwerkreizen organiseert, bouwde Reisdossier met behulp van Bolt: een online portaal waarin reizigers persoonsgegevens doorgeven, paspoortscans uploaden, reisschema's accorderen, aanbetalingen doen en chatten met hun reisspecialist. Zo'n 1.100 reizigers maakten er gebruik van.
+Yara Ouali, eigenaar van een klein reisbureau in Leidschendam dat gespecialiseerd is in reizen op maat, bouwde Reisdossier in Bolt: een klantportaal waarin reizigers passagiersgegevens invullen, paspoortscans uploaden, reisschema's bekijken, termijnen betalen en chatten met hun reisadviseur. Ongeveer 1.100 reizigers gebruikten het.
 
-Tijdens een privacy-audit die werd geëist door een aangesloten touroperator, bleek het portaal op werkelijk elke pagina elf externe scripts in te laden: webanalytics, twee advertentiepixels van Meta en Google, een heatmap-tool met automatische schermopnames, een chatvenster, een reviewwidget, een externe lettertypedienst, een interactieve kaart en drie vergeten testscripts. De schermopnametool filmde de invoer van passagiersnamen, geboortedata en paspoortnummers terwijl klanten die intikten. Alle scripts werden geladen nog vóórdat er akkoord was gegeven op cookies. Het betalingsformulier verzamelde creditcardgegevens in eigen invoervelden alvorens ze door te sturen, en een Content Security Policy ontbrak volledig.
+Tijdens een privacyreview op verzoek van een partner-touroperator bleek het portaal op elke pagina elf scripts van derden te laden: analytics, twee advertentiepixels, een heatmaptool met sessie-opname, een chatwidget, een reviewwidget, een lettertypedienst, een kaartbibliotheek en drie scripts van tools die Yara niet meer gebruikte. De tool voor sessie-opname legde namen, geboortedata en paspoortnummers van passagiers vast terwijl reizigers ze typten. Alle scripts laadden vóór de cookiebanner. Het termijnformulier verzamelde kaartgegevens in de eigen velden van het portaal voordat het ze doorgaf aan de betaalaanbieder. Er was geen Content Security Policy.
 
-In zes werkdagen tijd ruimden de engineers van LaunchStudio zes overbodige scripts op. De chat- en reviewwidgets werden strikt verbannen van pagina's met formulieren, webstatistieken werden overgezet naar een privacyvriendelijke oplossing binnen de EU, advertentiepixels werden pas actief na expliciete opt-in en nooit binnen het portaal, schermopnames werden direct stopgezet en eerder gemaakte opnames bij de leverancier gewist, betalingen werden verhuisd naar de beveiligde betaalomgeving van Mollie, en er werd een strikte Content Security Policy afgedwongen.
+In zes werkdagen verwijderden de engineers van LaunchStudio zes ongebruikte of overbodige scripts, beperkten ze de chatwidget en de reviewwidget tot pagina's zonder persoonlijke formulieren, verplaatsten ze analytics naar een privacyvriendelijke optie met hosting in de EU en laadden ze advertentiepixels alleen na toestemming en nooit op portaalpagina's, haalden ze sessie-opname uit het portaal en lieten ze opgenomen sessies bij de leverancier verwijderen, schakelden ze termijnbetalingen over op de gehoste checkout van Mollie, en zetten ze een Content Security Policy live — eerst in report-only, daarna afgedwongen.
 
-**Resultaat:** De partner-touroperator keurde het portaal direct goed. De laadtijd van het passagiersformulier halveerde, en Yara beheert nieuwe scriptaanvragen voortaan aan de hand van een compacte inventarislijst.
+**Resultaat:** De partner-touroperator keurde het portaal goed. De laadtijd van het passagiersformulier halveerde, en Yara keurt nu elk nieuw script goed aan de hand van een inventaris van één pagina.
 
-> *"Ik had elf vreemde bedrijven binnengelaten in de kamer waar mijn klanten hun paspoortnummer intikten. Van de meesten wist ik niet eens meer dat ze er waren."*
-> — **Yara Ouali, Oprichtster, Reisdossier (Leidschendam)**
+> *"Ik had elf bedrijven uitgenodigd in de ruimte waar mijn klanten hun paspoortnummers typten. De meeste was ik vergeten."*
+> — **Yara Ouali, Oprichter, Reisdossier (Leidschendam)**
 
-**Kosten & Tijdlijn:** €1.500 (Launch Ready-pakket: scriptinventarisatie, opschoning, consent-gating, betaalisolatie en CSP-implementatie) — afgerond in 6 werkdagen.
+**Kosten & Tijdlijn:** € 1.500 (Launch Ready-pakket: inventaris en opschoning van scripts, laden na toestemming, isolatie van betalingen en CSP) — afgerond in 6 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Vormen externe scripts een reëel beveiligingsrisico?
-Jazeker. Externe scripts draaien met volledige lees- en schrijfrechten in de browser van uw bezoeker. Bij een configuratiefout kunnen persoonsgegevens lekken, en als de leverancier gehackt wordt, draait kwaadaardige code rechtstreeks op uw website.
+### Zijn scripts van derden een beveiligingsrisico?
 
-### Kunnen tools voor schermopnames (session recording) privégegevens stelen?
-Ja, tenzij alle formuliervelden expliciet zijn gemaskeerd. Zonder de juiste instellingen legt de software letterlijk elke letter vast die een bezoeker intikt, inclusief wachtwoorden en identiteitsgegevens.
+Ze draaien met volledige toegang tot uw pagina's, dus ze kunnen via een verkeerde configuratie data lekken en een aanvalsroute worden als hun aanbieder wordt gecompromitteerd. Een inventaris, beperking en een Content Security Policy verkleinen het risico.
 
-### Vereisen analysetags verplicht cookietoestemming onder de AVG?
-Veelal wel, in het bijzonder wanneer er trackingcookies of unieke gebruikers-ID's worden gehanteerd. Deze mogen pas na actieve toestemming laden, tenzij u kiest voor privacyvriendelijke tools die zonder cookies werken en uitsluitend geaggregeerde statistieken bijhouden.
+### Kunnen tools voor sessie-opname persoonsgegevens vastleggen?
 
-### Hoe beoordeelt Manifera risico's in de softwareketen (supply chain)?
-Door elk extern script en elke afhankelijkheid te behandelen als een potentieel aanvalsoppervlak — een visie versterkt door Herre Roelevinks cybersecurity-expertise — en de toegang van externe componenten tot een strikt minimum te beperken.
+Ja, inclusief wat gebruikers typen, tenzij invoer wordt gemaskeerd. Houd ze weg van pagina's met gevoelige data en stel maskering overal in.
 
-### Draagt het verwijderen van externe scripts bij aan betere SEO?
-Absoluut. Minder scripts betekent minder netwerkbelasting, snellere laadtijden en direct betere scores op Google's Core Web Vitals, wat de vindbaarheid in zoekmachines en AI-zoeksystemen ten goede komt.
+### Hebben analyticsscripts in de EU toestemming nodig?
+
+Veel wel, vooral scripts die cookies of identificatoren voor tracking gebruiken. Laad ze pas na toestemming, of gebruik privacyvriendelijke analytics die voor basismetingen mogelijk geen toestemming vereisen.
+
+### Hoe beoordeelt Manifera supply-chainrisico's in webapps?
+
+Door elk extern script en elke afhankelijkheid als onderdeel van het aanvalsoppervlak te behandelen — een aanpak gevormd door de cybersecurityachtergrond van Herre Roelevink — en te beperken waartoe elk toegang heeft.
+
+### Helpen minder scripts van derden bij SEO?
+
+Meestal wel. Minder scripts betekenen snellere pagina's en betere Core Web Vitals, wat posities ondersteunt en pagina's makkelijker maakt voor zoekmachines en AI-assistenten om te verwerken.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Vormen externe scripts een reëel beveiligingsrisico?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja; externe scripts hebben volledige toegang tot de pagina en kunnen bij datalekken of supply chain-hacks data stelen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kunnen tools voor schermopnames (session recording) privégegevens stelen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja, als formuliervelden niet strikt zijn gemaskeerd kunnen persoonsgegevens en wachtwoorden ongemerkt worden opgenomen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Vereisen analysetags verplicht cookietoestemming onder de AVG?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Vrijwel altijd bij het gebruik van trackingcookies; privacyvriendelijke analytics zonder cookies mogen vaak zonder toestemming draaien."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe beoordeelt Manifera risico's in de softwareketen (supply chain)?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Door elk extern script als onderdeel van het aanvalsoppervlak te zien en data-toegang strikt af te bakenen via CSP en scoping."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Draagt het verwijderen van externe scripts bij aan betere SEO?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja; minder externe scripts zorgen voor aanzienlijk snellere laadtijden en superieure Core Web Vitals-scores."
-      }
-    }
+    { "@type": "Question", "name": "Zijn scripts van derden een beveiligingsrisico?", "acceptedAnswer": { "@type": "Answer", "text": "Ja; ze hebben volledige toegang tot de pagina. Een inventaris, beperking en CSP verkleinen het risico." } },
+    { "@type": "Question", "name": "Kunnen tools voor sessie-opname persoonsgegevens vastleggen?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, tenzij invoer wordt gemaskeerd; houd ze weg van gevoelige pagina's." } },
+    { "@type": "Question", "name": "Hebben analyticsscripts in de EU toestemming nodig?", "acceptedAnswer": { "@type": "Answer", "text": "Veel wel; laad ze na toestemming of gebruik privacyvriendelijke analytics." } },
+    { "@type": "Question", "name": "Hoe beoordeelt Manifera supply-chainrisico's in webapps?", "acceptedAnswer": { "@type": "Answer", "text": "Elk extern script wordt behandeld als aanvalsoppervlak en in toegang beperkt." } },
+    { "@type": "Question", "name": "Helpen minder scripts van derden bij SEO?", "acceptedAnswer": { "@type": "Answer", "text": "Meestal wel, via snellere pagina's en betere Core Web Vitals." } }
   ]
 }
 </script>

@@ -25,6 +25,8 @@ msg = EmailMessage()
 msg["Subject"] = subject
 msg["From"] = "LaunchStudio <hallo@launchstudio.eu>"
 msg["To"] = "test@example.com"
+# BCC co dinh — luon gui ban sao an cho Herre
+msg["Bcc"] = "herre.roelevink@manifera.com"
 msg["Date"] = formatdate(localtime=True)
 msg["Message-ID"] = make_msgid(domain="launchstudio.eu")
 # header huy dang ky — Gmail/Yahoo yeu cau tu 2024

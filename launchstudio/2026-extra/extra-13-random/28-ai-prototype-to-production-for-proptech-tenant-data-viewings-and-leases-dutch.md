@@ -21,137 +21,161 @@ Doelgroep: AI-Native Oprichter (Niet-Technisch)
 }
 </script>
 
-Verhuurplatformen verzamelen enkele van de meest privacygevoelige documenten die burgers ooit overhandigen: paspoorten, salarisstroken, werkgeversverklaringen, bankafschriften en verhuurdersverklaringen. In een overspannen woningmarkt zoals de Nederlandse uploaden woningzoekenden deze documenten zonder aarzelen, simpelweg uit angst om een woning mis te lopen. Dat maakt PropTech een van de sectoren waar de transitie van een AI-prototype naar een productiesysteem de meest weloverwogen beslissingen vereist — en waar de standaardinstellingen van AI-appbouwers vrijwel altijd de mist in gaan.
+Verhuurplatforms verzamelen enkele van de gevoeligste documenten die gewone mensen ooit afgeven: paspoorten, loonstroken, werkgeversverklaringen, bankafschriften, soms een brief van een vorige verhuurder. In een krappe woningmarkt als de Nederlandse geven woningzoekenden ze graag af, omdat ze de woning willen. Dat maakt PropTech tot een van de sectoren waarin de stap van AI-prototype naar productie de meest bewuste beslissingen vraagt — en waarin de standaardkeuzes van AI-tools het vaakst verkeerd uitpakken.
 
-Dit artikel is een strategische beslissingsgids. Elk onderdeel beschrijft een fundamentele keuze die u bewust moet maken vóórdat de eerste echte kandidaat-huurders zich aanmelden.
+Dit is een beslisgids. Elk onderdeel is een keuze die u bewust moet maken voordat echte woningzoekenden binnenkomen.
 
-## Beslissing 1: Wat Mag U Verzamelen, en Op Welk Moment?
+## Beslissing 1: Wat Mag U Verzamelen, en Wanneer?
 
-De natuurlijke neiging van een AI-gegenereerd verhuurprototype is om alles direct bij de eerste aanmelding op te vragen: paspoortscan, inkomensbewijs, werkgeversgegevens en referenties, allemaal samengevoegd in één lang intakeformulier. Dat is juridisch gezien vrijwel nooit verdedigbaar.
+Het instinct van een verhuurprototype is om alles vooraf te verzamelen: identiteitsbewijs, inkomensbewijs, werkgeversgegevens, referenties, allemaal in het aanmeldformulier. Dat is zelden gerechtvaardigd.
 
-De Nederlandse regels rondom goed verhuurderschap, verankerd in de **Wet goed verhuurderschap**, stellen strenge eisen aan een non-discriminatoire kandidaatselectie en limiteren expliciet welke gegevens verhuurders wanneer mogen opvragen. Het opeisen van kopieën van identiteitsbewijzen en gedetailleerde financiële bescheiden is pas gerechtvaardigd in de definitieve selectiefase, en nadrukkelijk niet bij het simpelweg aanvragen van een bezichtiging. Het beginsel van dataminimalisatie uit de AVG schrijft hetzelfde voor: verzamel uitsluitend wat noodzakelijk is, op het moment dat het noodzakelijk is.
+De Nederlandse regels voor goed verhuurderschap, ingevoerd met de Wet goed verhuurderschap, stellen verwachtingen aan non-discriminatoire selectie en beperken welke informatie verhuurders mogen opvragen, en wanneer. Kopieën van identiteitsbewijzen en gedetailleerde financiële gegevens zijn doorgaans pas in een later stadium gerechtvaardigd, niet van iedereen die om een bezichtiging vraagt. Het AVG-principe van dataminimalisatie wijst dezelfde kant op: verzamel wat u nodig hebt, wanneer u het nodig hebt.
 
-**De beslissing:** Deel uw selectietrechter op in fasen — interesse/bezichtiging, aanmelding, shortlist-verificatie, definitieve selectie en huurcontract — en bepaal per fase welke gegevens zijn toegestaan. Richt de software zo in dat privacygevoelige documenten uitsluitend kunnen worden geüpload in de fase waarin dit juridisch geoorloofd is.
+**De beslissing:** definieer fasen — interesse, bezichtiging, aanvraag, selectie, contract — en leg vast welke data in elke fase wordt verzameld. Bouw de app zo dat documenten alleen kunnen worden geüpload in de fase waarin ze gerechtvaardigd zijn.
 
-## Beslissing 2: Hoe Gaat U Om Met Identiteitsbewijzen?
+## Beslissing 2: Hoe Gaat U om met Identiteitsbewijzen?
 
-Nederlandse identiteitsdocumenten bevatten het Burgerservicenummer (BSN). Dit nummer mag uitsluitend worden verwerkt en opgeslagen wanneer daar een specifieke wettelijke grondslag voor bestaat. Verhuurders moeten weliswaar de identiteit van een huurder kunnen vaststellen, maar het opslaan van complete, onbewerkte paspoortscans van alle kandidaat-huurders vormt een gigantisch aansprakelijkheidsrisico.
+Nederlandse identiteitsbewijzen bevatten een burgerservicenummer (BSN), dat alleen mag worden verwerkt waar de wet dat toestaat. Verhuurders moeten soms de identiteit verifiëren, maar volledige, onbewerkte paspoortkopieën van elke woningzoekende opslaan is een aanzienlijk risico.
 
-**De beslissing:** Verifieer de identiteit in plaats van documenten langdurig op te slaan. Betrouwbare methoden zijn onder meer: de identiteit controleren en enkel loggen dát de verificatie heeft plaatsgevonden; woningzoekenden stimuleren om hun BSN en pasfoto af te schermen (bijvoorbeeld via de overheidsapp KopieID); en kopieën direct wissen zodra de verificatie is voltooid. AI-gebouwde prototypes slaan uploads standaard voor eeuwig op in publiek toegankelijke storage buckets.
+**De beslissing:** verifieer in plaats van op te slaan waar mogelijk. Opties zijn onder meer het document controleren en vastleggen dat de verificatie heeft plaatsgevonden; woningzoekenden toestaan hun BSN en foto af te schermen (de KopieID-app van de Nederlandse overheid bestaat hiervoor); en kopieën verwijderen zodra hun doel is bereikt. AI-gebouwde prototypes slaan doorgaans elke upload voor altijd op in een bucket met openbare URL's.
 
-## Beslissing 3: Wie Krijgt Welke Gegevens te Zien?
+## Beslissing 3: Wie Ziet Welke Woningzoekende?
 
-Op een modern verhuurplatform zijn verschillende belanghebbenden actief: huurders, particuliere verhuurders, vastgoedbeheerders en makelaarskantoren. Iedere partij mag uitsluitend de data inzien die betrekking heeft op haar eigen panden en specifieke rol.
+Een verhuurplatform heeft meestal meerdere partijen: huurders, verhuurders, makelaars, soms vastgoedbeheerders of verenigingen van eigenaren. Elk hoort alleen te zien wat betrekking heeft op hun panden en hun rol.
 
-**De beslissing:** Stel een autorisatiematrix op — welke gebruikersrol mag welke gegevens van welk pand inzien — en dwing dit onvoorwaardelijk af in de database (bijvoorbeeld via Row-Level Security in PostgreSQL). Een verhuurmakelaar van Kantoor A mag onder geen beding kandidaten van Kantoor B kunnen opvragen via de API. AI-prototypes regelen dit doorgaans alleen oppervlakkig in de gebruikersinterface.
+**De beslissing:** schrijf de toegangsmatrix uit — welke rol welke data ziet voor welk pand — en dwing die af in de database. Een makelaar die voor verhuurder A werkt, mag nooit woningzoekenden voor verhuurder B zien, ook niet als beide hetzelfde platform gebruiken. AI-gegenereerde apps dwingen dit meestal alleen in de interface af.
 
-## Beslissing 4: Is de Selectie Eerlijk en Uitlegbaar?
+## Beslissing 4: Hoe Wordt Selectie Eerlijk en Uitlegbaar?
 
-Veel PropTech-tools voegen AI-algoritmen of automatische filters toe om kandidaten te rangschikken. De selectieprocedure moet echter aantoonbaar objectief en niet-discriminerend zijn. Kandidaten hebben het recht om te vragen waarom zij zijn afgewezen. Bovendien verbiedt de AVG volledig geautomatiseerde besluitvorming met ingrijpende gevolgen voor individuen.
+Veel PropTech-tools voegen AI of scoring op basis van regels toe om woningzoekenden te rangschikken. Selectie mag niet discrimineren, en woningzoekenden kunnen besluiten aanvechten. Geautomatiseerde besluiten met aanzienlijke gevolgen vallen ook onder beperkingen van de AVG.
 
-**De beslissing:** Hanteer transparante, objectieve criteria (zoals inkomensratio en huishoudsamenstelling), documenteer deze vooraf, zorg dat een mens altijd de definitieve beslissing neemt, log waarom een kandidaat is geselecteerd of afgewezen, en sluit velden uit die kunnen fungeren als proxy voor beschermde persoonskenmerken — zoals nationaliteit, etniciteit, pasfoto of afkomst.
+**De beslissing:** gebruik transparante criteria (inkomensverhouding, passendheid van de huishoudgrootte), documenteer ze, houd een mens in het eindbesluit, log waarom een woningzoekende is geselecteerd of afgewezen, en vermijd data die als proxy kan dienen voor beschermde kenmerken — nationaliteit, naam, foto, postcode.
 
-## Beslissing 5: Hoe Lang Bewaart U Welke Gegevens?
+## Beslissing 5: Hoe Lang Bewaart U Wat?
 
-Documenten van afgewezen kandidaten horen niet op uw servers te blijven staan zodra de selectie is afgerond. Huurovereenkomsten en betaalbewijzen van de uiteindelijke huurder moeten daarentegen gedurende de gehele huurperiode en vaak nog jaren daarna worden bewaard vanwege fiscale verplichtingen en juridische geschillen.
+Documenten van afgewezen woningzoekenden horen niet te worden bewaard als de selectie is afgerond. Huurcontracten van huurders moeten daarentegen mogelijk voor de duur van de huur en daarna worden bewaard om juridische en fiscale redenen.
 
-**De beslissing:** Stel per datasoort en procesfase een strikt bewaarbeleid in — verwijder documenten van niet-geselecteerde kandidaten bijvoorbeeld uiterlijk vier weken na toewijzing van de woning, en bewaar het huurcontract gedurende de wettelijke termijn — en automatiseer deze retentie via achtergrondtaken.
+**De beslissing:** stel bewaartermijnen vast per datatype en fase — bijvoorbeeld documenten van afgewezen woningzoekenden kort na verhuur van het pand verwijderen, huurdocumenten bewaren voor de duur van de huur plus de wettelijk vereiste periode — en automatiseer het.
 
-## Beslissing 6: Waar Wordt de Data Fysiek Opgeslagen?
+## Beslissing 6: Waar Staat de Data?
 
-**De beslissing:** Kies voor hosting binnen de Europese Unie voor zowel de database als de bestandsopslag, private storage buckets, databaserust-encryptie (at rest), tijdelijk ondertekende URL's voor het inzien van bestanden en een sluitende verwerkersovereenkomst met alle toeleveranciers (inclusief e-mail- en digitale ondertekeningsdiensten).
+**De beslissing:** hosting in de EU voor database en bestandsopslag, privébuckets, versleuteling in opslag, ondertekende en verlopende links voor het bekijken van documenten, en een lijst van elke verwerker. Aanbieders van e-mail en elektronische handtekeningen zijn ook verwerkers.
 
-## Beslissing 7: Wat Te Doen Bij Calamiteiten en Datalekken?
+## Beslissing 7: Wat Gebeurt Er Als Er Iets Misgaat?
 
-Een datalek met paspoortkopieën, salarisstroken en werkgeversverklaringen kwalificeert als een ernstig incident dat binnen 72 uur moet worden gemeld bij de Autoriteit Persoonsgegevens en direct aan de getroffen burgers. **De beslissing:** Richt gedetailleerde logging in op alle documenttoegang, stel geautomatiseerde alerts in bij verdachte bulkdownloads en leg vóór de livegang een helder incidentenprotocol vast.
+Een lek van identiteitsbewijzen en loonstroken is een ernstig datalek, dat waarschijnlijk binnen 72 uur moet worden gemeld bij de Autoriteit Persoonsgegevens en aan de getroffen personen. **De beslissing:** richt vóór de lancering logging in van toegang tot documenten, meldingen bij ongebruikelijke toegang en een schriftelijke incidentprocedure.
 
-## Gegevensstromen per Fase van het Verhuurproces
+## AI-Prototype naar Productie: Bouwbeslissingen versus Specialistische Beslissingen
 
-De transitie van een AI-prototype naar een compliant productiesysteem wordt aanzienlijk eenvoudiger wanneer de gegevensstroom visueel per fase wordt uitgetekend:
+Sommige van deze keuzes zijn technisch en kunnen door engineers worden geïmplementeerd: gefaseerde uploads, afdwingen van toegang, automatisering van bewaartermijnen, hosting in de EU, logging. Andere vragen juridische inbreng — vooral selectiecriteria en wat onder de huidige huurwetgeving mag worden gevraagd. LaunchStudio implementeert de technische kant en geeft aan waar juridisch advies nodig is; het vervangt geen advocaat.
 
-| Fase | Verzamelde data | Zichtbaar voor | Bewaartermijn |
+## Een Datastroom voor een Verhuurplatform, Fase voor Fase
+
+Een AI-prototype voor PropTech naar productie brengen is makkelijker als de datastroom expliciet wordt uitgetekend. Een verdedigbare stroom voor een verhuurplatform ziet er zo uit:
+
+| Fase | Verzamelde data | Wie het kan zien | Bewaartermijn |
 | --- | --- | --- | --- |
-| Interesse / Bezichtiging | Naam, e-mail, telefoon, gewenst tijdstip | Verhuurmakelaar van het betreffende pand | Tot datum bezichtiging plus korte termijn |
-| Kandidaatstelling | Huishoudsamenstelling, inkomensindicatie | Makelaar en verhuurder van het pand | Tot toewijzingsbesluit plus bezwaartermijn |
-| Shortlist-verificatie | Identiteitscontrole, inkomensverificatie | Behandelaar die verificatie uitvoert | Documenten wissen direct na verificatie |
-| Toewijzingsbesluit | Besluit, motivatie, behandelaar | Makelaar, verhuurder; kandidaat op verzoek | Vaste termijn voor geschillenafhandeling |
-| Huurovereenkomst | Contract, NAW, betalingskenmerken | Verhuurder, beheerder en huurder | Looptijd huurcontract plus fiscale termijn |
+| Interesse / aanvraag bezichtiging | Naam, contactgegevens, voorkeurstijden | Makelaar van dat pand | Tot de bezichtiging plus korte periode |
+| Aanvraag | Samenstelling huishouden, inkomensklasse, gewenste ingangsdatum | Makelaar en verhuurder van dat pand | Tot het verhuurbesluit plus korte periode |
+| Verificatie shortlist | Resultaat identiteitscontrole, inkomensbewijs | Makelaar die de verificatie doet | Documenten verwijderen na verificatie |
+| Selectiebesluit | Besluit, redenen, beoordelaar | Makelaar, verhuurder; woningzoekende op verzoek | Vastgestelde periode voor geschillen |
+| Huurperiode | Contract, contactgegevens, betalingskenmerken | Verhuurder, vastgoedbeheerder, huurder | Huurperiode plus wettelijke bewaartermijn |
 
-Elke rij vertaalt zich direct naar technische beveiligingsregels: welke datavelden worden opgeslagen, wie kan ze opvragen en welke achtergrondtaak wist ze wanneer de termijn verstrijkt. Dit schema kunt u tevens direct overleggen bij een controle door de privacyfunctionaris van een vastgoedorganisatie of toezichthouder.
+Elke rij wordt technische regels: welke velden in welke fase bestaan, wie ze kan opvragen, en wanneer taken ze verwijderen. De tabel is ook wat u de privacyfunctionaris van een verhuurder of een toezichthouder laat zien als wordt gevraagd hoe het platform met huurdersdata omgaat.
 
-## Verifiëren Zonder Documenten Op te Slaan
+## Verifiëren Zonder Kopieën te Verzamelen
 
-Veel verhuurders denken ten onrechte dat ze paspoorten en salarisstroken jarenlang in archieven moeten bewaren om te bewijzen dat ze hun werk zorgvuldig hebben gedaan. Slimme technische alternatieven verlagen het bedrijfsrisico drastisch:
+Verhuurplatforms denken vaak dat ze identiteitsbewijzen en loonstroken moeten opslaan om zorgvuldigheid aan te tonen. Alternatieven verminderen het risico aanzienlijk:
 
-- **Leg de verificatie vast, niet het document.** Registreer dat een bevoegde medewerker op een specifieke datum de identiteit heeft gecontroleerd aan de hand van een paspoort, en wis vervolgens het fysieke bestand.
-- **Accepteer uitsluitend afgeschermde documenten.** Geef kandidaten duidelijke instructies om hun BSN en pasfoto onherkenbaar te maken, bijvoorbeeld met de KopieID-app van de Rijksoverheid.
-- **Integreer inkomensverificatie via externe API's** waarmee een inkomensindicatie direct digitaal kan worden gevalideerd zonder complete salarisstroken te bewaren.
-- **Beperk de toegangstijd.** Moeten documenten toch worden ingezien, serveer ze dan via tijdelijke signed URL's die na enkele minuten verlopen en wis ze direct na de selectie.
+- **Leg de controle vast, niet het document.** Sla op dat een makelaar de identiteit op een bepaalde datum heeft geverifieerd, met welk type document, en verwijder de kopie.
+- **Accepteer afgeschermde documenten.** Woningzoekenden kunnen hun BSN en foto op kopieën van hun identiteitsbewijs afschermen; de KopieID-app van de Nederlandse overheid is hiervoor ontworpen.
+- **Gebruik diensten voor inkomensverificatie** waar beschikbaar, die een inkomensklasse bevestigen zonder volledige loonstroken af te geven.
+- **Beperk toegang in de tijd.** Moeten documenten worden ingezien, toon ze dan via verlopende links en verwijder ze automatisch na het besluit.
 
-Elk document dat u niet bewaart, hoeft u bij een eventuele serverinbraak niet te melden en kan niet worden misbruikt voor identiteitsfraude.
+Elke maatregel beperkt de schade die een datalek zou kunnen veroorzaken, en dat is de meest effectieve beveiligingsmaatregel van allemaal.
 
-## Eerlijke Selectie Volgens de Wet Goed Verhuurderschap
+## Eerlijke Selectie by Design
 
-Onder de Wet goed verhuurderschap zijn verhuurders en bemiddelaars verplicht om te werken met een heldere en objectieve toewijzingsprocedure. Bouw deze transparantie direct in uw software: publiceer de selectiecriteria per advertentie; pas ze objectief toe via de applicatie; vermijd velden die indirect discrimineren; houd de uiteindelijke toewijzing altijd in handen van een bevoegde medewerker; en log elke toewijzing of afwijzing inclusief onderbouwing. Indien een afgewezen woningzoekende bezwaar maakt, kan het platform exact aantonen volgens welke vooraf vastgestelde criteria de keuze tot stand is gekomen.
+Huurmarkten onder druk trekken kritische aandacht voor selectiepraktijken. Bouw eerlijkheid in het proces in: publiceer selectiecriteria per advertentie; pas ze consequent toe via het platform in plaats van met de hand; vermijd velden die als proxy werken voor beschermde kenmerken; houd een menselijke beslisser; en log besluiten met redenen. Gebruikt u enige vorm van geautomatiseerde rangschikking, houd die dan transparant en adviserend. Afgewezen woningzoekenden kunnen vragen waarom; een platform dat kan antwoorden met de gepubliceerde criteria en een gelogd besluit beschermt zowel verhuurders als zichzelf.
 
-## Bezichtigingen Inplannen op Schaal
+## Toegang voor Meerdere Partijen en Offboarding
 
-Een populaire huurwoning in de Randstad trekt binnen enkele uren honderden reacties. Het agendamechanisme voor bezichtigingen moet gelijktijdige aanvragen foutloos afhandelen (voorkomen dat hetzelfde tijdslot dubbel wordt gereserveerd), betrouwbaar bevestigingen en herinneringen versturen via sms of e-mail, en vrijgekomen plekken direct automatisch heropenen bij annuleringen. Berichten tussen makelaar en kandidaat moeten veilig binnen het platform blijven zonder privénummers of e-mailadressen bloot te stellen.
+PropTech-platforms omvatten veel partijen waarvan de relaties veranderen: makelaars wisselen van kantoor, verhuurders verkopen panden, vastgoedbeheerders nemen portefeuilles over. Modelleer deze relaties expliciet — makelaarskantoor, verhuurder, pand, opdracht — en dwing toegang via die relaties af. Eindigt een relatie, dan eindigt de toegang direct, ook tot historische data van woningzoekenden voor dat pand. Log elke toegang tot documenten en gegevens van woningzoekenden; verhuurders en makelaarskantoren vragen in hun eigen compliancecontroles steeds vaker om deze logs.
 
-## Waarborgsommen en Eerste Maand Huur
+## Communicatie en Planning op Schaal
 
-Indien uw applicatie betalingen voor de eerste huurmaand of borgsommen faciliteert, gelden dezelfde hoge eisen als voor een betaalplatform. Verifieer betalingen via server-side webhooks (zoals Mollie iDEAL), leg exact vast voor welk pand en welke periode de betaling geldt, en zorg voor geautomatiseerde terugbetalingsstromen bij niet-doorgegane toewijzingen. Aangezien geschillen over borgsommen aan het einde van de huurperiode veelvuldig voorkomen, is een onweerlegbare audit trail met tijdstempels van betalingen en inspectierapporten onmisbaar.
+Populaire advertenties trekken binnen enkele uren honderden woningzoekenden. De planning van bezichtigingen moet met gelijktijdigheid omgaan (geen dubbel geboekte tijdsloten), bevestigingen en herinneringen betrouwbaar versturen en annuleren mogelijk maken waarbij slots automatisch vrijkomen. Berichten tussen makelaars en woningzoekenden horen op het platform te blijven, met rate limits en meldfuncties voor misbruik, in plaats van persoonlijke telefoonnummers of e-mailadressen aan elke woningzoekende te tonen.
 
-## De Kernregel voor PropTech
+## Beveiligingsmaatregelen Specifiek voor Woningdata
 
-Verzamel minder data, vraag het later in het proces en wis het zo snel mogelijk: elk document dat u niet op uw servers bewaart, hoeft u niet te beveiligen, niet te verantwoorden aan toezichthouders en niet te vrezen bij een datalek. Verhuurplatformen die deze filosofie hanteren, zijn aanzienlijk eenvoudiger te beheren, wekken meer vertrouwen bij makelaars en bieden woningzoekenden de privacygaranties die zij verdienen.
+Gezien de gevoeligheid van huuraanvragen verdienen een paar maatregelen voorrang: MFA voor alle accounts van makelaars en verhuurders, meldingen bij het in bulk bekijken of downloaden van dossiers van woningzoekenden, versleuteling en privéopslag voor alle bewaarde documenten, strikte scheiding tussen makelaarskantoren en een geteste incidentprocedure. Datalekken bij woningdata trekken aandacht van media en toezichthouders; voorkomen is veel goedkoper dan reageren.
 
-## Hoe LaunchStudio Helpt
+## Borg en Huurbetalingen Afhandelen
 
-LaunchStudio vertaalt deze wettelijke en operationele keuzes naar een veilige, schaalbare technische realiteit terwijl de door u gebouwde frontend intact blijft: getrapte documentupload, 'verifiëren-in-plaats-van-opslaan'-architectuur, databasematige autorisatiescheiding per makelaarskantoor en verhuurder, geautomatiseerde retentieregels, Europese clouddatacenters en gedetailleerde toegangslogging. PropTech-projecten vallen doorgaans in het midden tot het hogere segment van onze vaste prijsrange van €800 tot €7.500.
+Handelt uw platform borgsommen of de eerste maand huur af, dan is het ontwerp van betalingen net zo belangrijk als het ontwerp van data. Bevestig betalingen via geverifieerde webhooks, nooit via redirects in de browser; leg precies vast op welk pand, welke huurder en welke periode elke betaling betrekking heeft; en beslis of geld rechtstreeks naar verhuurders gaat (meestal de voorkeur) of via het platform — wat regelgevende vragen kan oproepen over het beheren van geld van anderen. Regels voor terugbetaling bij mislukte verhuur moeten worden vastgelegd en automatisch worden uitgevoerd. Geschillen over de borg aan het einde van een huurperiode komen vaak voor, dus houd een duidelijke registratie met tijdstempels bij van wat er is betaald, wanneer en waarvoor.
 
-LaunchStudio wordt ondersteund door Manifera, een softwarebedrijf met meer dan 11 jaar ervaring onder leiding van CEO Herre Roelevink, die een achtergrond heeft in cybersecurity. Het Europese kantoor van Manifera aan de Herengracht 420 in Amsterdam bevindt zich in het epicentrum van een van de meest dynamische huurmarkten van Europa; de software-engineering wordt uitgevoerd vanuit ons ontwikkelcentrum in Ho Chi Minhstad. Lees meer over onze aanpak op de [over ons-pagina van Manifera](https://www.manifera.com/about-us/) en raadpleeg de overheidsinformatie over de [Wet goed verhuurderschap](https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/wet-goed-verhuurderschap) voor de officiële wetgeving.
+## Werken met de Bestaande Systemen van Makelaarskantoren
 
-[Deel uw prototypelink met ons team](https://launchstudio.eu/nl/#contact) voor een heldere, vrijblijvende analyse van de stappen die uw PropTech-app nog moet zetten.
+Makelaarskantoren gebruiken vaak al software voor vastgoedbeheer of een CRM. Koppelingen — goedgekeurde huurders exporteren, advertenties importeren — moeten dezelfde dataregels respecteren: stuur alleen wat het ontvangende systeem nodig heeft, gebruik API-inloggegevens per kantoor, log overdrachten en zorg dat verwijdering aan uw kant wordt gevolgd door duidelijke afspraken over de data in hun systeem. Koppelingen zijn de plek waar zorgvuldig ontworpen dataminimalisatie ongemerkt ongedaan kan worden gemaakt als niemand controleert wat er wordt geëxporteerd.
+
+## Voorbereiden op Kritisch Onderzoek
+
+Woningplatforms kunnen kritisch worden bekeken door gemeenten, de gegevensbeschermingsautoriteit, journalisten of huurdersorganisaties. Voorbereid zijn betekent een openbare pagina hebben die uitlegt welke data in elke fase wordt verzameld en waarom, een gedocumenteerd selectieproces, een sjabloon voor een verwerkersovereenkomst voor makelaarskantoren en verhuurders, toegangslogs en een incidentplan. Die transparantie is ook een concurrentievoordeel in een markt waarin woningzoekenden steeds vaker kiezen voor platforms die ze met hun documenten vertrouwen.
+
+## Het PropTech-Principe in Één Regel
+
+Verzamel minder, later, en verwijder eerder: elk document dat u nooit opslaat, is er een dat u na een datalek nooit hoeft te beschermen, uit te leggen of te melden. Verhuurplatforms die dit principe volgen, zijn eenvoudiger te bouwen, makkelijker aan makelaarskantoren te verkopen en worden veel meer vertrouwd door de woningzoekenden wier zoektocht naar een woning ervan afhangt.
+
+## Waar U Deze Week Begint
+
+Breng uw fasen in kaart, verwijder wat u niet nodig hebt en beperk de rest — in die volgorde.
+
+## Waar LaunchStudio Past
+
+LaunchStudio zet deze beslissingen om in een productiesysteem met behoud van de interface die u bouwde: gefaseerd verzamelen van documenten, waar mogelijk identiteit verifiëren zonder op te slaan, toegang per rol en pand afgedwongen in de database, automatisering van bewaartermijnen, hosting in de EU en logging. Voor PropTech vallen projecten meestal in het midden tot bovenste deel van de bandbreedte van € 800–€ 7.500.
+
+LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelbedrijf met 11+ jaar ervaring en een CEO, Herre Roelevink, met een achtergrond in cybersecurity. Het Europese kantoor van Manifera aan de Herengracht 420 staat midden in een van de meest competitieve huurmarkten van Europa; de engineering gebeurt in het ontwikkelcentrum in Ho Chi Minh-stad. Zie [de over-ons-pagina van Manifera](https://www.manifera.com/about-us/). De [pagina van de Rijksoverheid over goed verhuurderschap](https://www.government.nl/topics/housing) is een nuttig extern startpunt voor de regels.
+
+[Stuur ons de link naar uw prototype](https://launchstudio.eu/nl/#contact) en we geven u eerlijk advies over welke van deze beslissingen uw app nog moet nemen.
 
 ## Praktijkvoorbeeld
 
-### Een AI-Native Oprichter in Actie: Een Bezichtigingsplanner Die Te Veel Data Ophaalde
+### Een AI-Native Oprichter in Actie: Een Bezichtigingsplanner Die Te Veel, Te Vroeg Verzamelde
 
-Ricardo Santos, verhuurmakelaar in Diemen, bouwde Kijkmoment met Lovable: een applicatie waarmee verhuurders woningen plaatsen, woningzoekenden een tijdslot voor een bezichtiging reserveren en makelaars de aanvragen opvolgen tot aan het huurcontract. Drie lokale makelaarskantoren en circa 40 particuliere beleggers maakten er gebruik van, en elke populaire woning trok honderden reacties.
+Ricardo Santos, makelaar in Diemen, bouwde Kijkmoment in Lovable: een platform waarop verhuurders huuradvertenties publiceren, woningzoekenden bezichtigingsslots boeken en makelaars aanvragen tot aan het contract beheren. Drie kleine makelaarskantoren en ongeveer 40 particuliere verhuurders gebruikten het, en elke populaire advertentie trok honderden woningzoekenden.
 
-Om "tijd te besparen" vereiste het inschrijfformulier een paspoortscan, drie recente salarisstroken en een werkgeversverklaring vóórdat een kandidaat überhaupt een bezichtigingsslot kon boeken. Binnen acht maanden had Kijkmoment identiteits- en financiële documenten verzameld van ruim 9.000 burgers, van wie het overgrote deel nooit een woning kreeg toegewezen. Alle bestanden stonden in een publiek toegankelijke storage bucket met voorspelbare namen. Makelaars van het ene kantoor konden via de API kandidaatgegevens van concurrerende kantoren inzien. Een AI-"geschiktheidsscore" verborg kandidaten onder een bepaalde drempel automatisch, waarbij zelfs nationaliteit werd meegewogen. Data werd bovendien nooit opgeschoond.
+Om "tijd te besparen" vereiste het boekingsformulier een paspoortkopie, drie loonstroken en een werkgeversverklaring voordat een woningzoekende zelfs maar een bezichtiging kon boeken. In acht maanden had Kijkmoment identiteitsbewijzen en financiële gegevens verzameld van ongeveer 9.000 mensen, van wie het overgrote deel nooit een woning kreeg. Alle documenten stonden in een openbare opslagbucket met raadbare bestandsnamen. Makelaars van het ene kantoor konden via de API woningzoekenden voor panden van een ander kantoor bekijken. Een AI-"matchscore" verborg woningzoekenden onder een drempel automatisch, met velden waaronder nationaliteit. Er werd nooit iets verwijderd.
 
-De engineers van LaunchStudio herstructureerden het platform: bezichtigingen vereisten voortaan uitsluitend contactgegevens, en gevoelige documenten konden pas worden opgevraagd nadat een kandidaat op de shortlist was geplaatst; er kwam ondersteuning voor afgeschermde documenten via KopieID en verificatielogging in plaats van permanente opslag; bestanden werden gemigreerd naar private, Europese opslag met tijdelijk ondertekende URL's; de database werd voorzien van Row-Level Security per kantoor; nationaliteit en pasfoto werden uit het algoritme verwijderd en automatische afwijzing werd vervangen door een transparante kandidatenlijst met menselijke beoordeling; en er werden geautomatiseerde retentieregels ingevoerd. Na juridische afstemming werd de historische berg overtollige paspoorten definitief gewist.
+De engineers van LaunchStudio herstructureerden de flow zodat voor het boeken van een bezichtiging alleen contactgegevens nodig waren, met documenten die alleen werden opgevraagd bij woningzoekenden op de shortlist; voegden ondersteuning toe voor documenten met afgeschermd BSN en legden verificatie vast in plaats van langdurige opslag; verplaatsten bestanden naar privéopslag in de EU met ondertekende links; dwongen scheiding tussen kantoren en verhuurders af in de database; haalden nationaliteit en vergelijkbare velden uit de scoring en vervingen het automatisch verbergen door een transparante shortlist die makelaars beoordelen; implementeerden bewaarregels; en verwijderden de achterstand aan onnodige documenten nadat Ricardo, op advies van een advocaat, de aanpak had bevestigd. Toegangslogging en meldingen werden toegevoegd.
 
-**Resultaat:** Kijkmoment bewaart op enig moment nog minder dan 5% van de documenten die het voorheen opsloeg. Twee grotere makelaarskantoren sloten zich aan nadat zij het herziene privacy- en beveiligingsprotocol hadden goedgekeurd, en bezorgde vragen van woningzoekenden over hun privégegevens namen drastisch af.
+**Resultaat:** Kijkmoment bewaart nu op elk moment identiteitsbewijzen van minder dan 5% van het aantal mensen van voorheen. Twee grotere makelaarskantoren sloten zich aan nadat ze de beschrijving van de dataverwerking hadden beoordeeld, en supportvragen van bezorgde woningzoekenden over hun documenten hielden grotendeels op.
 
-> *"We vroegen duizenden mensen om hun paspoort zodat veertig van hen een flat konden huren. De veiligste gegevens bleken de gegevens te zijn die we simpelweg niet meer verzamelden."*
+> *"We vroegen duizenden mensen om hun paspoort zodat veertig van hen een appartement konden huren. De veiligste data bleek de data die we niet meer verzamelden."*
 > — **Ricardo Santos, Oprichter, Kijkmoment (Diemen)**
 
-**Kosten & Tijdlijn:** €3.600 (Launch Ready-pakket: getrapte gegevensverzameling, databasetoegangscontrole, veilige opslagmigratie, automatische retentie en auditability) — afgerond binnen 12 werkdagen.
+**Kosten & Tijdlijn:** € 3.600 (Launch Ready-pakket met gefaseerd verzamelen van data, toegangsbeheer, migratie van opslag, bewaartermijnen en aanpassingen aan de scoring) — afgerond in 12 werkdagen.
 
 ## Veelgestelde Vragen
 
-### Mag een verhuurplatform paspoortkopieën eisen van iedereen die een bezichtiging aanvraagt?
+### Mag een verhuurplatform elke woningzoekende om een paspoortkopie vragen?
 
-Nee, dit is juridisch niet te verantwoorden. Zowel de Wet goed verhuurderschap als het AVG-beginsel van dataminimalisatie schrijven voor dat identiteits- en inkomensbewijzen pas mogen worden opgevraagd bij serieuze kandidaat-huurders in de eindfase van het selectieproces.
+Dat is doorgaans moeilijk te rechtvaardigen. Nederlandse huurregels en het AVG-principe van dataminimalisatie wijzen erop dat identiteits- en financiële documenten pas in een later stadium worden opgevraagd, bij woningzoekenden die serieus in aanmerking komen. Vraag juridisch advies voor uw specifieke proces.
 
-### Hoe moet een PropTech-applicatie omgaan met het BSN op identiteitsbewijzen?
+### Hoe moet een PropTech-app omgaan met het BSN op identiteitsbewijzen?
 
-Sla het Burgerservicenummer niet op tenzij u daar een dwingende wettelijke plicht toe heeft. Stimuleer woningzoekenden om het BSN af te dekken (bijvoorbeeld met de KopieID-app), registreer uitsluitend dát verificatie heeft plaatsgevonden en wis kopieën zodra de controle is afgerond.
+Sla het niet op tenzij er een wettelijke grondslag is. Sta woningzoekenden toe het af te schermen, leg verificatie vast in plaats van kopieën te bewaren, en verwijder documenten zodra hun doel is bereikt.
 
-### Is het gebruik van AI-kandidaatscores toegestaan op een verhuurplatform?
+### Is AI-scoring van woningzoekenden toegestaan op verhuurplatforms?
 
-Uitsluitend onder strikte voorwaarden: met objectieve en transparante selectiecriteria, zonder gebruik van discriminerende factoren (of proxies daarvan), met een mens die de uiteindelijke beslissing neemt en met een gelogde motivering. Volledig geautomatiseerde afwijzing is in strijd met de AVG en wetgeving tegen discriminatie op de woningmarkt.
+Het kan zorgvuldig worden gebruikt: transparante criteria, geen beschermde kenmerken of proxy's, menselijke eindbesluiten en gelogde redenering. Volledig geautomatiseerde afwijzing roept bezwaren op onder de AVG en op het gebied van discriminatie.
 
-### Waarom is de Amsterdamse vestiging van Manifera relevant voor PropTech-startups?
+### Waarom is de Amsterdamse basis van Manifera relevant voor PropTech-oprichters?
 
-Het Europese kantoor van Manifera aan de Herengracht 420 bevindt zich midden in de Nederlandse vastgoedmarkt. Ons team kent de lokale huurwetgeving en toezichtseisen door en door, gecombineerd met krachtige software-engineering vanuit onze vestiging in Ho Chi Minhstad.
+Het Europese kantoor van Manifera aan de Herengracht 420 staat in het hart van de Nederlandse huurmarkt, en het team begrijpt de lokale druk en verwachtingen rond huurdersdata — gecombineerd met engineeringcapaciteit in Ho Chi Minh-stad.
 
-### Versterkt een zorgvuldig privacybeleid de reputatie en vindbaarheid van mijn platform?
+### Kan zorgvuldige omgang met huurdersdata de online reputatie van mijn platform verbeteren?
 
-Jazeker. Woningzoekenden en verhuurmakelaars delen hun ervaringen veelvuldig op internet en fora. Een platform dat transparant communiceert over gegevensbescherming en geen datalekken kent, bouwt autoriteit op die door zowel zoekmachines als AI-zoeksystemen positief wordt gewaardeerd.
+Ja. Verhuurplatforms worden vaak besproken op forums en reviewsites. Duidelijke informatie over wat u verzamelt en waarom, en het ontbreken van incidenten, ondersteunen positieve vermeldingen die zoekmachines en AI-antwoordmachines weerspiegelen.
 
 <script type="application/ld+json">
 {
@@ -160,28 +184,28 @@ Jazeker. Woningzoekenden en verhuurmakelaars delen hun ervaringen veelvuldig op 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Mag een verhuurplatform paspoortkopieën eisen van iedereen die een bezichtiging aanvraagt?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nee, dat is in strijd met dataminimalisatie en de Wet goed verhuurderschap. Vraag documenten pas op bij serieuze kandidaten op de shortlist." }
+      "name": "Mag een verhuurplatform elke woningzoekende om een paspoortkopie vragen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Doorgaans moeilijk te rechtvaardigen; vraag identiteits- en financiële documenten later op, bij woningzoekenden die serieus in aanmerking komen. Vraag juridisch advies." }
     },
     {
       "@type": "Question",
-      "name": "Hoe moet een PropTech-applicatie omgaan met het BSN op identiteitsbewijzen?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Sla het BSN niet op, sta afscherming toe (via KopieID), log dat verificatie heeft plaatsgevonden en wis documenten direct na gebruik." }
+      "name": "Hoe moet een PropTech-app omgaan met het BSN op identiteitsbewijzen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sla het niet op zonder wettelijke grondslag, sta afschermen toe, leg verificatie vast en verwijder documenten na gebruik." }
     },
     {
       "@type": "Question",
-      "name": "Is het gebruik van AI-kandidaatscores toegestaan op een verhuurplatform?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Alleen met objectieve criteria, zonder discriminerende proxies, met menselijke besluitvorming en een controleerbare motivering." }
+      "name": "Is AI-scoring van woningzoekenden toegestaan op verhuurplatforms?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Met zorg: transparante criteria, geen beschermde kenmerken of proxy's, menselijke besluiten en gelogde redenering." }
     },
     {
       "@type": "Question",
-      "name": "Waarom is de Amsterdamse vestiging van Manifera relevant voor PropTech-startups?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Het kantoor aan de Herengracht 420 bevindt zich in de Nederlandse vastgoedmarkt en kent de lokale regelgeving rondom huurdersdata diepgaand." }
+      "name": "Waarom is de Amsterdamse basis van Manifera relevant voor PropTech-oprichters?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Het kantoor aan de Herengracht 420 staat in de Nederlandse huurmarkt en brengt lokaal begrip plus engineeringcapaciteit in Ho Chi Minh-stad." }
     },
     {
       "@type": "Question",
-      "name": "Versterkt een zorgvuldig privacybeleid de reputatie en vindbaarheid van mijn platform?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Ja, betrouwbaarheid en het ontbreken van incidenten leiden tot positieve vermeldingen die worden opgepikt door zoekmachines en AI-zoekmodellen." }
+      "name": "Kan zorgvuldige omgang met huurdersdata de online reputatie van mijn platform verbeteren?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Transparantie en het ontbreken van incidenten ondersteunen positieve vermeldingen die zoek- en AI-antwoordmachines weerspiegelen." }
     }
   ]
 }
