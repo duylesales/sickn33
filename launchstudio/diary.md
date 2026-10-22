@@ -3,6 +3,14 @@
 ## 2026
 
 ### Tháng 10
+#### Ngày 22
+
+- **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-12-lovable-bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-12-lovable-bolt-replit/) từ bài 06**:
+  - **Quy chuẩn mỹ thuật & phong cách**: Tuân thủ nghiêm ngặt chỉ dẫn cập nhật trong `AGENTS.md` (Core Technical Focus, luân phiên 6 visual archetypes, tương phản góc máy liền kề N và N+1, cấm tiệt công thức "thiết bị để trên bàn"):
+    - **06 (Usage-Based Billing & Credit Drawdown)**: *Tactile Macro / Extreme Close-up* — Bàn tay kỹ sư phần mềm sử dụng bút stylus kỹ thuật số trên màn hình viễn trắc kính, hiệu chỉnh đường cong tính phí sử dụng cloud, ngưỡng trừ dần credit API và bộ đếm giao dịch bảo đảm tính lũy đẳng (idempotent).
+  - **Quy chuẩn kỹ thuật**: Crop trung tâm chuẩn tỉ lệ 16:9 và resize về kích thước chuẩn LaunchStudio **`1024x576` PNG** bằng công cụ [`launchstudio/sys/crop_to_launchstudio.py`](file:///Users/duyle/sickn33/launchstudio/sys/crop_to_launchstudio.py).
+  - **Trạng thái Quota**: Đã hoàn tất thành công bài 06 (6/100 ảnh). Gặp giới hạn quota gọi API native image (`gemini-3.1-flash-image`) ở bài 07 (`429 RESOURCE_EXHAUSTED`). Dừng và báo cáo người dùng theo đúng quy định tại `AGENTS.md`.
+
 #### Ngày 21
 
 - **Tạo ảnh banner siêu thực (photorealistic documentary style) cho cụm [`launchstudio/2026-extra/extra-11-lovable=bolt-replit/`](file:///Users/duyle/sickn33/launchstudio/2026-extra/extra-11-lovable=bolt-replit/) hoàn thành toàn bộ 100/100 bài**:
